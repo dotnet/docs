@@ -242,12 +242,12 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <summary>Adds a range of times for every day of the week to the schedule.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All of the parameters in this method are inclusive.  
-  
- This method is cumulative and does not remove any existing schedule information. If an existing schedule and the new schedule overlap, the result will still be cumulative. To clear the schedule, use the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule%2A> method.  
-  
+All of the parameters in this method are inclusive.  
+ 
+This method is cumulative and does not remove any existing schedule information. If an existing schedule and the new schedule overlap, the result will still be cumulative. To clear the schedule, use the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,12 +280,12 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <summary>Adds a range of times for a single day to the schedule.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All of the parameters in this method are inclusive.  
-  
- This method is cumulative and does not remove any existing schedule information. If an existing schedule and the new schedule overlap, the result will still be cumulative. To clear the schedule, use the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule%2A> method.  
-  
+All of the parameters in this method are inclusive.  
+ 
+This method is cumulative and does not remove any existing schedule information. If an existing schedule and the new schedule overlap, the result will still be cumulative. To clear the schedule, use the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The start time is after the end time.</exception>
@@ -322,12 +322,12 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <summary>Adds a range of times for multiple days to the schedule.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All of the parameters in this method are inclusive.  
-  
- This method is cumulative and does not remove any existing schedule information. If an existing schedule and the new schedule overlap, the result will still be cumulative. To clear the schedule, use the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule%2A> method.  
-  
+All of the parameters in this method are inclusive.  
+ 
+This method is cumulative and does not remove any existing schedule information. If an existing schedule and the new schedule overlap, the result will still be cumulative. To clear the schedule, use the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The start time is after the end time.</exception>

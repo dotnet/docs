@@ -14,10 +14,10 @@
     <summary>Defines the extension methods to the <see cref="T:System.Data.DataRow" /> class. This is a static class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataSet> API has been extended with two new methods of the <xref:System.Data.DataRow> class, <xref:System.Data.DataRowExtensions.Field%2A> and <xref:System.Data.DataRowExtensions.SetField%2A>. You can use these to form [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions and method queries against <xref:System.Data.DataTable> objects. They are the recommended methods to use for accessing column values within [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions and method queries. For more information, see [Generic Field and SetField Methods](~/docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md).  
-  
+The <xref:System.Data.DataSet> API has been extended with two new methods of the <xref:System.Data.DataRow> class, <xref:System.Data.DataRowExtensions.Field%2A> and <xref:System.Data.DataRowExtensions.SetField%2A>. You can use these to form [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions and method queries against <xref:System.Data.DataTable> objects. They are the recommended methods to use for accessing column values within [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions and method queries. For more information, see [Generic Field and SetField Methods](~/docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,14 +49,14 @@
         <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="column" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> does not support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is <xref:System.DBNull.Value> and `T` is a reference type or nullable type, the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
-  
- The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
-  
+The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> does not support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
+ 
+If the value of the specified <xref:System.Data.DataColumn> is <xref:System.DBNull.Value> and `T` is a reference type or nullable type, the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
+ 
+The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
@@ -91,14 +91,14 @@
         <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="columnIndex" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is **null** and `T` is a reference type or nullable type, then the return type will be **null**.  The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
-  
- The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
-  
+The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
+ 
+If the value of the specified <xref:System.Data.DataColumn> is **null** and `T` is a reference type or nullable type, then the return type will be **null**.  The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
+ 
+The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
@@ -133,14 +133,14 @@
         <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="columnName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class. A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> does not support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types. If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is **null** and `T` is a reference type or nullable type, the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
-  
- The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
-  
+The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class. A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> does not support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types. If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
+ 
+If the value of the specified <xref:System.Data.DataColumn> is **null** and `T` is a reference type or nullable type, the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
+ 
+The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
@@ -177,14 +177,14 @@
         <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="column" /> and <paramref name="version" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is null and `T` is a reference type or nullable type, then the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
-  
- The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
-  
+The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
+ 
+If the value of the specified <xref:System.Data.DataColumn> is null and `T` is a reference type or nullable type, then the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
+ 
+The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
@@ -221,14 +221,14 @@
         <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="ordinal" /> and <paramref name="version" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is null and `T` is a reference type or nullable type, then the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
-  
- The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
-  
+The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
+ 
+If the value of the specified <xref:System.Data.DataColumn> is null and `T` is a reference type or nullable type, then the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
+ 
+The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
@@ -265,14 +265,14 @@
         <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="columnName" /> and <paramref name="version" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is null and `T` is a reference type or nullable type, then the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
-  
- The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
-  
+The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The <xref:System.Data.DataRowExtensions.Field%2A> method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
+ 
+If the value of the specified <xref:System.Data.DataColumn> is null and `T` is a reference type or nullable type, then the return type will be **null**. The <xref:System.Data.DataRowExtensions.Field%2A> method will not return <xref:System.DBNull.Value>.  
+ 
+The <xref:System.Data.DataRowExtensions.Field%2A> method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the <xref:System.Data.DataRowExtensions.Field%2A> method. The column value should then be converted to another type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
@@ -308,14 +308,14 @@
         <summary>Sets a new value for the specified column in the <see cref="T:System.Data.DataRow" />. The <see cref="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.Data.DataColumn,``0)" /> method also supports nullable types.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `value` is **null**, the <xref:System.Data.DataRowExtensions.SetField%2A> method converts the **null** value to <xref:System.DBNull.Value> in the underlying <xref:System.Data.DataColumn>.  
-  
- The <xref:System.Data.DataRowExtensions.SetField%2A> method does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The <xref:System.Data.DataRowExtensions.SetField%2A> method exposes the [!INCLUDE[ado_whidbey_long](~/includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the row.  
-  
- Exceptions can be passed up through the <xref:System.Data.DataRowExtensions.SetField%2A> method from the underlying <xref:System.Data.DataRow> object.  
-  
+If `value` is **null**, the <xref:System.Data.DataRowExtensions.SetField%2A> method converts the **null** value to <xref:System.DBNull.Value> in the underlying <xref:System.Data.DataColumn>.  
+ 
+The <xref:System.Data.DataRowExtensions.SetField%2A> method does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The <xref:System.Data.DataRowExtensions.SetField%2A> method exposes the [!INCLUDE[ado_whidbey_long](~/includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the row.  
+ 
+Exceptions can be passed up through the <xref:System.Data.DataRowExtensions.SetField%2A> method from the underlying <xref:System.Data.DataRow> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The column specified by <paramref name="column" /> cannot be found.</exception>
@@ -352,14 +352,14 @@
         <summary>Sets a new value for the specified column in the <see cref="T:System.Data.DataRow" /> the method is called on. The <see cref="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.Int32,``0)" /> method also supports nullable types.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `value` is **null**, the <xref:System.Data.DataRowExtensions.SetField%2A> method converts the **null** value to <xref:System.DBNull.Value> in the underlying <xref:System.Data.DataColumn>.  
-  
- The <xref:System.Data.DataRowExtensions.SetField%2A> method does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The <xref:System.Data.DataRowExtensions.SetField%2A> method exposes the [!INCLUDE[ado_whidbey_long](~/includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the row.  
-  
- Exceptions can be passed up through the <xref:System.Data.DataRowExtensions.SetField%2A> method from the underlying <xref:System.Data.DataRow> object.  
-  
+If `value` is **null**, the <xref:System.Data.DataRowExtensions.SetField%2A> method converts the **null** value to <xref:System.DBNull.Value> in the underlying <xref:System.Data.DataColumn>.  
+ 
+The <xref:System.Data.DataRowExtensions.SetField%2A> method does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The <xref:System.Data.DataRowExtensions.SetField%2A> method exposes the [!INCLUDE[ado_whidbey_long](~/includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the row.  
+ 
+Exceptions can be passed up through the <xref:System.Data.DataRowExtensions.SetField%2A> method from the underlying <xref:System.Data.DataRow> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.DeletedRowInaccessibleException">Occurs when attempting to set a value on a deleted row.</exception>
@@ -395,14 +395,14 @@
         <summary>Sets a new value for the specified column in the <see cref="T:System.Data.DataRow" />. The <see cref="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.String,``0)" /> method also supports nullable types.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `value` is **null**, the <xref:System.Data.DataRowExtensions.SetField%2A> method converts the **null** value to <xref:System.DBNull.Value> in the underlying <xref:System.Data.DataColumn>.  
-  
- The <xref:System.Data.DataRowExtensions.SetField%2A> method does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The <xref:System.Data.DataRowExtensions.SetField%2A> method exposes the [!INCLUDE[ado_whidbey_long](~/includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the row.  
-  
- Exceptions can be passed up through the <xref:System.Data.DataRowExtensions.SetField%2A> method from the underlying <xref:System.Data.DataRow> object.  
-  
+If `value` is **null**, the <xref:System.Data.DataRowExtensions.SetField%2A> method converts the **null** value to <xref:System.DBNull.Value> in the underlying <xref:System.Data.DataColumn>.  
+ 
+The <xref:System.Data.DataRowExtensions.SetField%2A> method does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The <xref:System.Data.DataRowExtensions.SetField%2A> method exposes the [!INCLUDE[ado_whidbey_long](~/includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the row.  
+ 
+Exceptions can be passed up through the <xref:System.Data.DataRowExtensions.SetField%2A> method from the underlying <xref:System.Data.DataRow> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The column specified by <paramref name="columnName" /> cannot be found.</exception>

@@ -14,14 +14,14 @@
     <summary>Represents the configuration section for connection management. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class corresponds to the [\&lt;connectionManagement\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md) configuration element.  
-  
- This class is used to access information about the number of simultaneous connections allowed between the local computer and a remote computer.  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
+This class corresponds to the [\&lt;connectionManagement\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md) configuration element.  
+ 
+This class is used to access information about the number of simultaneous connections allowed between the local computer and a remote computer.  
+ 
+This class provides programmatic access to information that can be stored in configuration files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <value>A <see cref="T:System.Net.Configuration.ConnectionManagementElementCollection" /> that contains the connection management information for the local computer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Configuration.ConnectionManagementElementCollection> returned by this property contains one <xref:System.Net.Configuration.ConnectionManagementElement> for each `connectionManagement` element in the configuration file.  
-  
+The <xref:System.Net.Configuration.ConnectionManagementElementCollection> returned by this property contains one <xref:System.Net.Configuration.ConnectionManagementElement> for each `connectionManagement` element in the configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>

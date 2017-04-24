@@ -29,14 +29,14 @@
     <summary>Exposes the public members of the <see cref="T:System.Reflection.ConstructorInfo" /> class to unmanaged code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.ConstructorInfo?displayProperty=fullName> class discovers the attributes of a class constructor and provides access to constructor metadata.  
-  
- The <xref:System.Runtime.InteropServices._ConstructorInfo?displayProperty=fullName> interface preserves the vtable order of the <xref:System.Reflection.ConstructorInfo?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
-  
+This interface is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.ConstructorInfo?displayProperty=fullName> class discovers the attributes of a class constructor and provides access to constructor metadata.  
+ 
+The <xref:System.Runtime.InteropServices._ConstructorInfo?displayProperty=fullName> interface preserves the vtable order of the <xref:System.Reflection.ConstructorInfo?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,12 +59,12 @@
         <value>One of the <see cref="T:System.Reflection.MethodAttributes" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.Attributes%2A> property gets the attributes associated with this method.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.Attributes%2A> property gets the attributes associated with this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,12 +87,12 @@
         <value>The <see cref="T:System.Reflection.CallingConventions" /> for this method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.CallingConvention%2A> property gets a value indicating the calling conventions for this method.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.CallingConvention%2A> property gets a value indicating the calling conventions for this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,12 +115,12 @@
         <value>The <see cref="T:System.Type" /> object for the class that declares this member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.DeclaringType%2A> property gets the class that declares this member.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.DeclaringType%2A> property gets the class that declares this member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,12 +148,12 @@
           <see langword="true" /> if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Object.Equals%2A> method determines whether the specified <xref:System.Object> is equal to the current <xref:System.Object>.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Object.Equals%2A> method determines whether the specified <xref:System.Object> is equal to the current <xref:System.Object>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,12 +180,12 @@
         <returns>An array that contains all the custom attributes, or an array with zero elements if no attributes are defined.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method returns an array containing all the custom attributes.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method returns an array containing all the custom attributes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,12 +214,12 @@
         <returns>An array of custom attributes applied to this member, or an array with zero (0) elements if no attributes have been applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Emit.MethodBuilder.GetCustomAttributes%2A> method returns an array of custom attributes identified by <xref:System.Type>.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.Emit.MethodBuilder.GetCustomAttributes%2A> method returns an array of custom attributes identified by <xref:System.Type>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,12 +243,12 @@
         <returns>The hash code for the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Object.GetHashCode%2A> method serves as a hash function for a particular type. <xref:System.Object.GetHashCode%2A> is suitable for use in hashing algorithms and data structures like a hash table.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Object.GetHashCode%2A> method serves as a hash function for a particular type. <xref:System.Object.GetHashCode%2A> is suitable for use in hashing algorithms and data structures like a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,10 +282,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,12 +309,12 @@
         <returns>The <see cref="T:System.Reflection.MethodImplAttributes" /> flags.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.GetMethodImplementationFlags%2A> member returns the <xref:System.Reflection.MethodImplAttributes> flags.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.GetMethodImplementationFlags%2A> member returns the <xref:System.Reflection.MethodImplAttributes> flags.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,12 +338,12 @@
         <returns>An array of type <see cref="T:System.Reflection.ParameterInfo" /> containing information that matches the signature of the method (or constructor) reflected by this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.GetParameters%2A> method gets the parameters of the specified method or constructor.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.GetParameters%2A> method gets the parameters of the specified method or constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,12 +367,12 @@
         <returns>A <see cref="T:System.Type" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Object.GetType%2A> method gets the type of the current instance.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Object.GetType%2A> method gets the type of the current instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,10 +402,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -431,10 +431,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -474,10 +474,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -512,12 +512,12 @@
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.Invoke%2A> method invokes the constructor reflected by this <xref:System.Reflection.ConstructorInfo> with the specified arguments, under the constraints of the specified <xref:System.Reflection.Binder>.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.Invoke%2A> method invokes the constructor reflected by this <xref:System.Reflection.ConstructorInfo> with the specified arguments, under the constraints of the specified <xref:System.Reflection.Binder>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -548,12 +548,12 @@
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.Invoke%2A> method invokes the method or constructor represented by this object, using the specified parameters.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.Invoke%2A> method invokes the method or constructor represented by this object, using the specified parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -586,12 +586,12 @@
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.ConstructorInfo.Invoke%2A> method invokes the constructor reflected by this <xref:System.Reflection.ConstructorInfo> object with the specified arguments, under the constraints of the specified <xref:System.Reflection.Binder> object.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.ConstructorInfo.Invoke%2A> method invokes the constructor reflected by this <xref:System.Reflection.ConstructorInfo> object with the specified arguments, under the constraints of the specified <xref:System.Reflection.Binder> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -618,12 +618,12 @@
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.ConstructorInfo.Invoke%2A> method invokes the constructor reflected by the instance that has the specified parameters, providing default values for the parameters not commonly used.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.ConstructorInfo.Invoke%2A> method invokes the constructor reflected by the instance that has the specified parameters, providing default values for the parameters not commonly used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,12 +647,12 @@
           <see langword="true" /> if the method is abstract; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsAbstract%2A> property gets a value indicating whether the method is abstract.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsAbstract%2A> property gets a value indicating whether the method is abstract.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -676,12 +676,12 @@
           <see langword="true" /> if this method can be called by other classes in the same assembly; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsAssembly%2A> property gets a value indicating whether this method can be called by other classes in the same assembly.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsAssembly%2A> property gets a value indicating whether this method can be called by other classes in the same assembly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -705,12 +705,12 @@
           <see langword="true" /> if this method is a constructor; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsConstructor%2A> property gets a value indicating whether the method is a constructor.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsConstructor%2A> property gets a value indicating whether the method is a constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -740,12 +740,12 @@
           <see langword="true" /> if one or more instances of <paramref name="attributeType" /> is applied to this member; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.IsDefined%2A> member indicates whether one or more instances of `attributeType` is applied to this member.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.IsDefined%2A> member indicates whether one or more instances of `attributeType` is applied to this member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -769,12 +769,12 @@
           <see langword="true" /> if access to the class is restricted to members of the class itself and to members of its derived classes; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsFamily%2A> property gets a value indicating whether access to this method is restricted to members of the class and members of its derived classes.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsFamily%2A> property gets a value indicating whether access to this method is restricted to members of the class and members of its derived classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -798,12 +798,12 @@
           <see langword="true" /> if access to this method is restricted to members of the class itself and to members of derived classes that are in the same assembly; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> property gets a value indicating whether this method can be called by derived classes if they are in the same assembly.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> property gets a value indicating whether this method can be called by derived classes if they are in the same assembly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -827,12 +827,12 @@
           <see langword="true" /> if access to this method is restricted to members of the class itself, members of derived classes wherever they are, and members of other classes in the same assembly; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property gets a value indicating whether this method can be called by derived classes, wherever they are, and by all classes in the same assembly.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property gets a value indicating whether this method can be called by derived classes, wherever they are, and by all classes in the same assembly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -856,12 +856,12 @@
           <see langword="true" /> if this method is <see langword="final" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsFinal%2A> property gets a value indicating whether this method is `final`.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsFinal%2A> property gets a value indicating whether this method is `final`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -885,12 +885,12 @@
           <see langword="true" /> if the member is hidden by signature; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsHideBySig%2A> property gets a value indicating whether only a member of the same kind with exactly the same signature is hidden in the derived class.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsHideBySig%2A> property gets a value indicating whether only a member of the same kind with exactly the same signature is hidden in the derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -914,12 +914,12 @@
           <see langword="true" /> if access to this method is restricted to other members of the class itself; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsPrivate%2A> property gets a value indicating whether this member is private.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsPrivate%2A> property gets a value indicating whether this member is private.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -943,12 +943,12 @@
           <see langword="true" /> if this method is public; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsPublic%2A> property gets a value indicating whether this is a public method.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsPublic%2A> property gets a value indicating whether this is a public method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -972,12 +972,12 @@
           <see langword="true" /> if this method has a special name; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsSpecialName%2A> property gets a value indicating whether this method has a special name.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsSpecialName%2A> property gets a value indicating whether this method has a special name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1001,12 +1001,12 @@
           <see langword="true" /> if this method is <see langword="static" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsStatic%2A> property gets a value indicating whether the method is `static`.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsStatic%2A> property gets a value indicating whether the method is `static`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1030,12 +1030,12 @@
           <see langword="true" /> if this method is <see langword="virtual" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.IsVirtual%2A> property gets a value indicating whether the method is `virtual`.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.IsVirtual%2A> property gets a value indicating whether the method is `virtual`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1058,12 +1058,12 @@
         <value>A <see cref="T:System.Reflection.MemberTypes" /> value indicating the type of member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.ConstructorInfo.MemberType%2A> property gets a <xref:System.Reflection.MemberTypes> value indicating the type of the member — method, constructor, event, and so on.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.ConstructorInfo.MemberType%2A> property gets a <xref:System.Reflection.MemberTypes> value indicating the type of the member — method, constructor, event, and so on.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1086,12 +1086,12 @@
         <value>A <see cref="T:System.RuntimeMethodHandle" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MethodBase.MethodHandle%2A> property gets a handle to the internal metadata representation of a method.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MethodBase.MethodHandle%2A> property gets a handle to the internal metadata representation of a method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1114,12 +1114,12 @@
         <value>A <see cref="T:System.String" /> containing the name of this member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.Name%2A> property gets the name of the current member.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.Name%2A> property gets the name of the current member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1142,12 +1142,12 @@
         <value>The <see cref="T:System.Type" /> object through which this <see cref="T:System.Reflection.MemberInfo" /> object was obtained.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.ReflectedType%2A> property gets the class object that was used to obtain this instance of <xref:System.Reflection.MemberInfo>.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.ReflectedType%2A> property gets the class object that was used to obtain this instance of <xref:System.Reflection.MemberInfo>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1171,10 +1171,10 @@
         <returns>A string that represents the current <see cref="T:System.Object" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1189,10 +1189,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.MemberInfo.GetCustomAttributes" /> members.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> members return all attributes applied to this member.  
-  
+The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> members return all attributes applied to this member.  
+ 
  ]]></format>
         </remarks>
       </Docs>

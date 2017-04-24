@@ -198,10 +198,10 @@
           <see langword="true" /> if exceptions other than <see cref="T:System.OutOfMemoryException" />, <see cref="T:System.StackOverflowException" />, <see cref="T:System.Threading.ThreadAbortException" />, and <see cref="T:System.ArgumentException" /> that result from attempts to write audit events are handled by the system, and are not propagated to the application; <see langword="false" /> if all exceptions that result from attempts to write audit events are passed up to the application. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications should be notified for failures of writing to the audit log. If your application is not designed to handle audit failures, you should use this property to suppress failures in writing to the audit log.  
-  
+Applications should be notified for failures of writing to the audit log. If your application is not designed to handle audit failures, you should use this property to suppress failures in writing to the audit log.  
+ 
  ]]></format>
         </remarks>
       </Docs>

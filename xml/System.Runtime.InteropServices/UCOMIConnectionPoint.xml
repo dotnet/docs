@@ -23,10 +23,10 @@
     <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IConnectionPoint" /> instead.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IConnectionPoint` in the com subfolder of the MSDN library.  
-  
+For more information, please see the existing documentation for `IConnectionPoint` in the com subfolder of the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Establishes an advisory connection between the connection point and the caller's sink object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IConnectionPoint::Advise` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IConnectionPoint::Advise` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <summary>Creates an enumerator object for iteration through the connections that exist to this connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IConnectionPoint::EnumConnections` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IConnectionPoint::EnumConnections` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <summary>Returns the IID of the outgoing interface managed by this connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IConnectionPoint::GetConnectionInterface` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IConnectionPoint::GetConnectionInterface` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <summary>Retrieves the <see langword="IConnectionPointContainer" /> interface pointer to the connectable object that conceptually owns this connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IConnectionPoint::GetConnectionPointContainer` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IConnectionPoint::GetConnectionPointContainer` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <summary>Terminates an advisory connection previously established through <see cref="M:System.Runtime.InteropServices.UCOMIConnectionPoint.Advise(System.Object,System.Int32@)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IConnectionPoint::Unadvise` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IConnectionPoint::Unadvise` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

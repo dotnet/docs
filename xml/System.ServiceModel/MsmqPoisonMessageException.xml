@@ -14,10 +14,10 @@
     <summary>Encapsulates the exception that is thrown when the channel detects that the message is a poison message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception is thrown when the channel detects that Message Queuing (MSMQ) aborted processing in the message because the number of retry attempts exceeded the value specified by the <xref:System.ServiceModel.Configuration.MsmqElementBase.ReceiveRetryCount%2A> and <xref:System.ServiceModel.Configuration.MsmqElementBase.MaxRetryCycles%2A>.  
-  
+This exception is thrown when the channel detects that Message Queuing (MSMQ) aborted processing in the message because the number of retry attempts exceeded the value specified by the <xref:System.ServiceModel.Configuration.MsmqElementBase.ReceiveRetryCount%2A> and <xref:System.ServiceModel.Configuration.MsmqElementBase.MaxRetryCycles%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

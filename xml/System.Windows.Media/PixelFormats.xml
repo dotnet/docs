@@ -32,16 +32,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr101010" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Bgr101010"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Bgr101010"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,17 +63,17 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr24" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This format uses 24 bits of data per pixel (8 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)] for each of the three primary colors blue, green, and red). This translates to 256 shades of each primary color to provide up to 16 million colors for each image. To display <xref:System.Windows.Media.PixelFormats.Bgr24%2A> images, the monitor and controller must be capable of displaying at least 32,000 colors.  
-  
+This format uses 24 bits of data per pixel (8 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)] for each of the three primary colors blue, green, and red). This translates to 256 shades of each primary color to provide up to 16 million colors for each image. To display <xref:System.Windows.Media.PixelFormats.Bgr24%2A> images, the monitor and controller must be capable of displaying at least 32,000 colors.  
+ 
 <a name="xamlAttributeUsage_Bgr24"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Bgr24"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,16 +95,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr32" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Bgr32"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Bgr32"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,16 +126,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr555" /> pixel format</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Bgr555"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Bgr555"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,16 +157,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr565" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Bgr565"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Bgr565"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,16 +188,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgra32" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Bgra32"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Bgra32"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,16 +219,16 @@
         <value>The pixel format Black-and-White.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_BlackWhite"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="BlackWhite"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,17 +250,17 @@
         <value>The CMYK32 pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CMYK color system is often used in printing inks for paper. This type of color representation is of the form cmyk (C%, M%, Y%, K%), where C, M, Y, and K are the percent values for the cyan, magenta, yellow, and black values of the color.  
-  
+The CMYK color system is often used in printing inks for paper. This type of color representation is of the form cmyk (C%, M%, Y%, K%), where C, M, Y, and K are the percent values for the cyan, magenta, yellow, and black values of the color.  
+ 
 <a name="xamlAttributeUsage_Cmyk32"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Cmyk32"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,17 +282,17 @@
         <value>The <see cref="T:System.Windows.Media.PixelFormat" /> best suited for the particular operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.PixelFormats.Default%2A> is technically not a pixel format but rather a way to access the pixel format best suited for a particular operation. This format is used for situations where the specific pixel format is not important.  
-  
+<xref:System.Windows.Media.PixelFormats.Default%2A> is technically not a pixel format but rather a way to access the pixel format best suited for a particular operation. This format is used for situations where the specific pixel format is not important.  
+ 
 <a name="xamlAttributeUsage_Default"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Default"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.PixelFormat" /> properties are accessed.</exception>
@@ -315,16 +315,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray16" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Gray16"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Gray16"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,16 +346,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray2" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Gray2"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Gray2"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -377,16 +377,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray32Float" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Gray32Float"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Gray32Float"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -408,16 +408,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray4" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Gray4"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Gray4"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -439,16 +439,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray8" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Gray8"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Gray8"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -470,17 +470,17 @@
         <value>The pixel format which specifying a paletted bitmap with 2 colors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed1%2A> pixel format has 2 colors available in the table.  
-  
+Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed1%2A> pixel format has 2 colors available in the table.  
+ 
 <a name="xamlAttributeUsage_Indexed1"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Indexed1"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -502,17 +502,17 @@
         <value>The pixel format which specifying a paletted bitmap with 4 colors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed2%2A> pixel format has 4 colors available in the table.  
-  
+Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed2%2A> pixel format has 4 colors available in the table.  
+ 
 <a name="xamlAttributeUsage_Indexed2"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Indexed2"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -534,17 +534,17 @@
         <value>The pixel format which specifying a paletted bitmap with 16 colors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed4%2A> pixel format has 16 colors available in the table.  
-  
+Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed4%2A> pixel format has 16 colors available in the table.  
+ 
 <a name="xamlAttributeUsage_Indexed4"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Indexed4"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -566,17 +566,17 @@
         <value>The pixel format which specifying a paletted bitmap with 256 colors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed8%2A> pixel format has 256 colors available in the table.  
-  
+Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed8%2A> pixel format has 256 colors available in the table.  
+ 
 <a name="xamlAttributeUsage_Indexed8"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Indexed8"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -598,16 +598,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Pbgra32" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Pbgra32"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Pbgra32"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -629,16 +629,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Prgba128Float" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Prgba128Float"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Prgba128Float"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -660,16 +660,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Prgba64" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Prgba64"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Prgba64"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -691,16 +691,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgb128Float" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Rgb128Float"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Rgb128Float"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -722,19 +722,19 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgb24" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This format uses 24 bits of data per pixel (8 bits per pixel for each of the three primary colors red, green, and blue). This translates to 256 shades of each primary color to provide up to 16 million colors for each image.  
-  
- An <xref:System.Windows.Media.PixelFormats.Rgb24%2A> image is the same as a <xref:System.Windows.Media.PixelFormats.Bgr24%2A> image, but the color channels (red, green, and blue) are in a different order.  
-  
+This format uses 24 bits of data per pixel (8 bits per pixel for each of the three primary colors red, green, and blue). This translates to 256 shades of each primary color to provide up to 16 million colors for each image.  
+ 
+An <xref:System.Windows.Media.PixelFormats.Rgb24%2A> image is the same as a <xref:System.Windows.Media.PixelFormats.Bgr24%2A> image, but the color channels (red, green, and blue) are in a different order.  
+ 
 <a name="xamlAttributeUsage_Rgb24"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Rgb24"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -756,16 +756,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgb48" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Rgb48"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Rgb48"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -787,16 +787,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgba128Float" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Rgba128Float"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Rgba128Float"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -818,16 +818,16 @@
         <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgba64" /> pixel format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Rgba64"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Rgba64"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,15 +13,15 @@
     <summary>Specifies when a data source is updated when changes occur in the bound control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a control is bound to a data source using a <xref:System.Windows.Forms.Binding> object, you can specify when an update to the data source will occur using the <xref:System.Windows.Forms.DataSourceUpdateMode> enumeration.  
-  
- When the update mode is Never, you can force the data source to be updated by using the <xref:System.Windows.Forms.Binding.WriteValue%2A> method.  
-  
+When a control is bound to a data source using a <xref:System.Windows.Forms.Binding> object, you can specify when an update to the data source will occur using the <xref:System.Windows.Forms.DataSourceUpdateMode> enumeration.  
+ 
+When the update mode is Never, you can force the data source to be updated by using the <xref:System.Windows.Forms.Binding.WriteValue%2A> method.  
+ 
 > [!NOTE]
 >  Even when the update mode is set to Never, the data source will be updated when the binding is first created, so at that least one update will always occur.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,10 +74,10 @@
         <summary>Data source is updated when the control property is validated,</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After validation, the value in the control property will also be re-formatted.  
-  
+After validation, the value in the control property will also be re-formatted.  
+ 
  ]]></format>
         </remarks>
       </Docs>

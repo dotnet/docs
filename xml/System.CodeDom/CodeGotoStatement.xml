@@ -22,24 +22,24 @@
     <summary>Represents a <see langword="goto" /> statement.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeGotoStatement> can be used to represent a `goto` statement, which is used in some languages to redirect program flow to a specified label.  
-  
- The <xref:System.CodeDom.CodeGotoStatement.Label%2A> property indicates the name of the label at which to continue program execution.  
-  
+<xref:System.CodeDom.CodeGotoStatement> can be used to represent a `goto` statement, which is used in some languages to redirect program flow to a specified label.  
+ 
+The <xref:System.CodeDom.CodeGotoStatement.Label%2A> property indicates the name of the label at which to continue program execution.  
+ 
 > [!NOTE]
 >  Not all languages support `goto` statements. Call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag to determine whether a code generator supports `goto` statements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code demonstrates use of a <xref:System.CodeDom.CodeGotoStatement> and a <xref:System.CodeDom.CodeLabeledStatement> to redirect program flow.  
-  
- [!code-cpp[CodeGotoStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeGotoStatementExample/CPP/codegotostatementexample.cpp#2)]
- [!code-csharp[CodeGotoStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeGotoStatementExample/CS/codegotostatementexample.cs#2)]
- [!code-vb[CodeGotoStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeGotoStatementExample/VB/codegotostatementexample.vb#2)]  
-  
+The following example code demonstrates use of a <xref:System.CodeDom.CodeGotoStatement> and a <xref:System.CodeDom.CodeLabeledStatement> to redirect program flow.  
+ 
+[!code-cpp[CodeGotoStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeGotoStatementExample/CPP/codegotostatementexample.cpp#2)]
+[!code-csharp[CodeGotoStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeGotoStatementExample/CS/codegotostatementexample.cs#2)]
+[!code-vb[CodeGotoStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeGotoStatementExample/VB/codegotostatementexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeGotoStatement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you use this constructor you must also set the <xref:System.CodeDom.CodeGotoStatement.Label%2A> property to indicate the name of the label at which to continue program execution.  
-  
+If you use this constructor you must also set the <xref:System.CodeDom.CodeGotoStatement.Label%2A> property to indicate the name of the label at which to continue program execution.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,12 +103,12 @@
         <value>A string that indicates the name of the label at which to continue program execution.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the name of the label at which to continue program execution.  
-  
- A label can be represented by a <xref:System.CodeDom.CodeLabeledStatement>.  
-  
+This property indicates the name of the label at which to continue program execution.  
+ 
+A label can be represented by a <xref:System.CodeDom.CodeLabeledStatement>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The label cannot be set because<paramref name=" value" /> is <see langword="null" /> or an empty string.</exception>

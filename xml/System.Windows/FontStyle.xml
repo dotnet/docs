@@ -26,37 +26,37 @@
     <summary>Defines a structure that represents the style of a font face as normal, italic, or oblique.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Three terms categorize the slant of a font: normal, italic, and oblique.  
-  
+Three terms categorize the slant of a font: normal, italic, and oblique.  
+ 
 |Font style|Description|  
 |----------------|-----------------|  
 |Normal|The characters in a normal, or roman, font are upright.|  
 |Italic|The characters in an italic font are truly slanted and appear as they were designed.|  
 |Oblique|The characters in an oblique font are artificially slanted. The slant is achieved by performing a shear transformation on the characters from a normal font. When a true italic font is not available on a computer or printer, an oblique style can generated from the normal font and used to simulate an italic font.|  
-  
- You can use the enumerated values of the <xref:System.Windows.FontStyles> class to set the <xref:System.Windows.FontStyle> structure.  
-  
+ 
+You can use the enumerated values of the <xref:System.Windows.FontStyles> class to set the <xref:System.Windows.FontStyle> structure.  
+ 
 <a name="xamlAttributeUsage_FontWeight"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object fontStyleProperty="fontStylesValue"/>  
 ```  
-  
+ 
 <a name="xamlValues_FontWeight"></a>   
 ## XAML Values  
- *fontStylesValue*  
- A <xref:System.Windows.FontStyles> value, such as "Normal", "Italic", or "Oblique".  
+*fontStylesValue*  
+A <xref:System.Windows.FontStyles> value, such as "Normal", "Italic", or "Oblique".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example sets `"Italic"` as the <xref:System.Windows.FontStyle>.  
-  
- [!code-xml[FontSnippets#FontStyleSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontStyleSnippets.xaml#fontstylesnippet5)]  
-  
+The following example sets `"Italic"` as the <xref:System.Windows.FontStyle>.  
+ 
+[!code-xml[FontSnippets#FontStyleSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontStyleSnippets.xaml#fontstylesnippet5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -125,10 +125,10 @@
         <returns>A 32-bit hash code, which is a signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.  
-  
+The returned value serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>

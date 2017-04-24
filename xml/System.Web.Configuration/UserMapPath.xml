@@ -197,10 +197,10 @@
         <summary>Populates the site name and site ID based on a site argument value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `siteArgument` is `null`, or is equal to the default site name, or is equal to the default site identifier, the `siteName` and `siteID` values are populated with the default site values.  
-  
+If `siteArgument` is `null`, or is equal to the default site name, or is equal to the default site identifier, the `siteName` and `siteID` values are populated with the default site values.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,19 +13,19 @@
     <summary>Specifies the HTML styles available to an <see cref="T:System.Web.UI.HtmlTextWriter" /> or <see cref="T:System.Web.UI.Html32TextWriter" /> object output stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.HtmlTextWriter> and <xref:System.Web.UI.Html32TextWriter> objects use these enumeration values to register HTML strings to the proper HTML style.  
+<xref:System.Web.UI.HtmlTextWriter> and <xref:System.Web.UI.Html32TextWriter> objects use these enumeration values to register HTML strings to the proper HTML style.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Web.UI.HtmlTextWriterStyle> enumeration with the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method to add a `color` style attribute to an HTML element and sets its value.  
-  
- [!code-cpp[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/cpp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CPP/htmltextwriter.cpp#2)]
- [!code-csharp[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CS/htmltextwriter.cs#2)]
- [!code-vb[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/VB/htmltextwriter.vb#2)]  
-  
+The following example uses the <xref:System.Web.UI.HtmlTextWriterStyle> enumeration with the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method to add a `color` style attribute to an HTML element and sets its value.  
+ 
+[!code-cpp[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/cpp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CPP/htmltextwriter.cpp#2)]
+[!code-csharp[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CS/htmltextwriter.cs#2)]
+[!code-vb[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/VB/htmltextwriter.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

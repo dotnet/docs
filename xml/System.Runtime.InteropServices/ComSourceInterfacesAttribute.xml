@@ -35,21 +35,21 @@
     <summary>Identifies a list of interfaces that are exposed as COM event sources for the attributed class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can apply this attribute to classes.  
+You can apply this attribute to classes.  
+ 
+You apply this attribute to a managed class to identify the event interfaces that the class exposes as COM connection points. An event interface contains methods that map to the event members of the class. The class event name and the interface method name must be the same. This attribute can accommodate up to four source interfaces for a class by passing the type of the source interface to the appropriate constructor, which take between one and four type arguments. For classes that want to expose more than four source interfaces, the string version of the constructor can be used. For additional information about exposing.NET events to COM clients, see [How to: Raise Events Handled by a COM Sink](http://msdn.microsoft.com/en-us/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd).  
+ 
   
- You apply this attribute to a managed class to identify the event interfaces that the class exposes as COM connection points. An event interface contains methods that map to the event members of the class. The class event name and the interface method name must be the same. This attribute can accommodate up to four source interfaces for a class by passing the type of the source interface to the appropriate constructor, which take between one and four type arguments. For classes that want to expose more than four source interfaces, the string version of the constructor can be used. For additional information about exposing.NET events to COM clients, see [How to: Raise Events Handled by a COM Sink](http://msdn.microsoft.com/en-us/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to apply the <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> to connect the event sink interface to a class by passing the namespace and event sink interface.  
-  
- [!code-cpp[Classic ComSourceInterfacesAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ComSourceInterfacesAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ComSourceInterfacesAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ComSourceInterfacesAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic ComSourceInterfacesAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ComSourceInterfacesAttribute Example/VB/source.vb#1)]  
-  
+The following example shows how to apply the <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> to connect the event sink interface to a class by passing the namespace and event sink interface.  
+ 
+[!code-cpp[Classic ComSourceInterfacesAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ComSourceInterfacesAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ComSourceInterfacesAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ComSourceInterfacesAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic ComSourceInterfacesAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ComSourceInterfacesAttribute Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComSourceInterfacesAttribute" /> class with the name of the event source interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to expose more than four event source interfaces to COM clients.  
-  
+Use this constructor to expose more than four event source interfaces to COM clients.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComSourceInterfacesAttribute" /> class with the type to use as a source interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to expose a single event source interface to COM clients.  
-  
+Use this constructor to expose a single event source interface to COM clients.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComSourceInterfacesAttribute" /> class with the types to use as source interfaces.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to expose two event source interfaces to COM clients.  
-  
+Use this constructor to expose two event source interfaces to COM clients.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <summary>Initializes a new instance of the <see langword="ComSourceInterfacesAttribute" /> class with the types to use as source interfaces.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to expose three event source interfaces to COM clients.  
-  
+Use this constructor to expose three event source interfaces to COM clients.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComSourceInterfacesAttribute" /> class with the types to use as source interfaces.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to expose four event source interfaces to COM clients.  
-  
+Use this constructor to expose four event source interfaces to COM clients.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <value>The fully qualified name of the event source interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you specify more than one source interface, the value returned is a null-delimited list of fully qualified event source interface names.  
-  
+If you specify more than one source interface, the value returned is a null-delimited list of fully qualified event source interface names.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -11,16 +11,16 @@
     <summary>Provides an interface that designer developers can use to evaluate device filters by name.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Page developers and control authors do not use the <xref:System.Web.UI.IFilterResolutionService> interface. The <xref:System.Web.UI.IFilterResolutionService> interface is implemented by designer developers to provide device filter-related services when parsing and persisting controls in the designer environment.  
-  
- The <xref:System.Web.UI.IFilterResolutionService> interface is used when a designer developer needs to support the editing of filtered properties.  
-  
- The <xref:System.Web.UI.IFilterResolutionService> interface is specific to controls' use of device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> interface provides a way to determine whether the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
-  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase> class implements the <xref:System.Web.UI.IFilterResolutionService> interface.  
-  
+Page developers and control authors do not use the <xref:System.Web.UI.IFilterResolutionService> interface. The <xref:System.Web.UI.IFilterResolutionService> interface is implemented by designer developers to provide device filter-related services when parsing and persisting controls in the designer environment.  
+ 
+The <xref:System.Web.UI.IFilterResolutionService> interface is used when a designer developer needs to support the editing of filtered properties.  
+ 
+The <xref:System.Web.UI.IFilterResolutionService> interface is specific to controls' use of device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> interface provides a way to determine whether the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
+ 
+The <xref:System.Web.Configuration.HttpCapabilitiesBase> class implements the <xref:System.Web.UI.IFilterResolutionService> interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
           <see langword="true" /> if the specified filter is a type applicable to the current filter object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.IFilterResolutionService.EvaluateFilter%2A> method determines whether a named device filter is a type of filter supported by the <xref:System.Web.UI.IFilterResolutionService> object.  
-  
+The <xref:System.Web.UI.IFilterResolutionService.EvaluateFilter%2A> method determines whether a named device filter is a type of filter supported by the <xref:System.Web.UI.IFilterResolutionService> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

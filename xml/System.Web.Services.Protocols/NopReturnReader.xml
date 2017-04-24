@@ -15,14 +15,14 @@
     <summary>Serves as a non-acting reader of incoming response return values for Web service clients implemented using HTTP but without SOAP.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Services.Protocols.NopReturnReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard.  
-  
- The <xref:System.Web.Services.Protocols.NopReturnReader> class provides a non-reading implementation of the interface of the abstract class <xref:System.Web.Services.Protocols.MimeReturnReader>.  
-  
- You typically will not need to use the <xref:System.Web.Services.Protocols.NopReturnReader> class. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, .it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and, by default, sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> property to <xref:System.Web.Services.Protocols.XmlReturnReader>, another class derived from <xref:System.Web.Services.Protocols.MimeReturnReader>. Wsdl.exe sets the property to <xref:System.Web.Services.Protocols.NopReturnReader> if it is otherwise unable to determine a value.  
-  
+<xref:System.Web.Services.Protocols.NopReturnReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard.  
+ 
+The <xref:System.Web.Services.Protocols.NopReturnReader> class provides a non-reading implementation of the interface of the abstract class <xref:System.Web.Services.Protocols.MimeReturnReader>.  
+ 
+You typically will not need to use the <xref:System.Web.Services.Protocols.NopReturnReader> class. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, .it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and, by default, sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> property to <xref:System.Web.Services.Protocols.XmlReturnReader>, another class derived from <xref:System.Web.Services.Protocols.MimeReturnReader>. Wsdl.exe sets the property to <xref:System.Web.Services.Protocols.NopReturnReader> if it is otherwise unable to determine a value.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <returns>An initializer for the specified method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.NopReturnReader.Initialize%2A> method. For the <xref:System.Web.Services.Protocols.NopReturnReader> class, the initializer is the instance referred to by the keyword `this`.  
-  
+An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.NopReturnReader.Initialize%2A> method. For the <xref:System.Web.Services.Protocols.NopReturnReader> class, the initializer is the instance referred to by the keyword `this`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
         <summary>Initializes an instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Protocols.NopReturnReader.Initialize%2A> method does nothing. It is invoked at the time a response is processed. The input parameter, `initializer`, is another instance of the class that is obtained during client initialization.  
-  
+The <xref:System.Web.Services.Protocols.NopReturnReader.Initialize%2A> method does nothing. It is invoked at the time a response is processed. The input parameter, `initializer`, is another instance of the class that is obtained during client initialization.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
           <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Protocols.NopReturnReader> class's implementation of the <xref:System.Web.Services.Protocols.MimeReturnReader.Read%2A> method does no reading. Instead it returns `null`. It also closes the response stream.  
-  
+The <xref:System.Web.Services.Protocols.NopReturnReader> class's implementation of the <xref:System.Web.Services.Protocols.MimeReturnReader.Read%2A> method does no reading. Instead it returns `null`. It also closes the response stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>

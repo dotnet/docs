@@ -14,14 +14,14 @@
     <summary>Defines a decoder that requires delayed bitmap creation such as asynchronous image downloads.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> is used when <xref:System.Windows.Media.Imaging.BitmapCreateOptions> is specified. The <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Decoder%2A> property creates the necessary "real decoder" on an on-demand basis. All decoder properties return `null` while content is downloading.  
-  
- A <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> can also be created when the system has an image that is being asynchronously downloaded locally. In this case, the decoder also returns `null` for properties until the image has been downloaded. The application can check the <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder.IsDownloading%2A> property or add a delegate for the <xref:System.Windows.Media.Imaging.BitmapDecoder.DownloadCompleted> event to monitor the download status. Furthermore, any frames obtained from a <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> while the image is downloading will return a width/height of 1,1 until the frames have finished downloading.  
-  
- <xref:System.Windows.Media.Imaging.BitmapFrame> objects that are returned by this class are frozen and are therefore immutable.  
-  
+A <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> is used when <xref:System.Windows.Media.Imaging.BitmapCreateOptions> is specified. The <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Decoder%2A> property creates the necessary "real decoder" on an on-demand basis. All decoder properties return `null` while content is downloading.  
+ 
+A <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> can also be created when the system has an image that is being asynchronously downloaded locally. In this case, the decoder also returns `null` for properties until the image has been downloaded. The application can check the <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder.IsDownloading%2A> property or add a delegate for the <xref:System.Windows.Media.Imaging.BitmapDecoder.DownloadCompleted> event to monitor the download status. Furthermore, any frames obtained from a <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> while the image is downloading will return a width/height of 1,1 until the frames have finished downloading.  
+ 
+<xref:System.Windows.Media.Imaging.BitmapFrame> objects that are returned by this class are frozen and are therefore immutable.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,14 +48,14 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapCodecInfo" />. This property has no default value. If the late bound decoder is still downloading, this property returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to read information from a <xref:System.Windows.Media.Imaging.BitmapCodecInfo> object and send it to a string.  
-  
- [!code-cpp[bmpbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/CPP/anotherfile.cpp#3)]
- [!code-csharp[bmpbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/CSharp/BitmapFrame.cs#3)]
- [!code-vb[bmpbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/VB/BitmapFrame.vb#3)]  
-  
+The following example shows how to read information from a <xref:System.Windows.Media.Imaging.BitmapCodecInfo> object and send it to a string.  
+ 
+[!code-cpp[bmpbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/CPP/anotherfile.cpp#3)]
+[!code-csharp[bmpbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/CSharp/BitmapFrame.cs#3)]
+[!code-vb[bmpbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,24 +118,24 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because a <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> is downloaded asynchronously, it is possible for the underlying collection of <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Frames%2A> to change after content is downloaded and decoded. While content is downloading, the collection always returns at least one item. When downloading and decoding are complete, the <xref:System.Windows.Media.Imaging.BitmapFrame> automatically changes its underlying content. In other words, only the collection object can change; the actual frame object remains the same.  
+Because a <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> is downloaded asynchronously, it is possible for the underlying collection of <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Frames%2A> to change after content is downloaded and decoded. While content is downloading, the collection always returns at least one item. When downloading and decoding are complete, the <xref:System.Windows.Media.Imaging.BitmapFrame> automatically changes its underlying content. In other words, only the collection object can change; the actual frame object remains the same.  
+ 
+Any frame obtained from a <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> while the image is downloading will return a width/height of `1,1` until the frames have finished downloading.  
+ 
+Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] images support more than one frame.  
+ 
+Any <xref:System.Windows.Media.Imaging.BitmapFrame> objects that this property returns are frozen.  
+ 
   
- Any frame obtained from a <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> while the image is downloading will return a width/height of `1,1` until the frames have finished downloading.  
-  
- Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] images support more than one frame.  
-  
- Any <xref:System.Windows.Media.Imaging.BitmapFrame> objects that this property returns are frozen.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use a <xref:System.Windows.Media.Imaging.BitmapFrame> as a <xref:System.Windows.Media.Imaging.BitmapSource>.  
-  
- [!code-csharp[bitmapframeexample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#4)]
- [!code-vb[bitmapframeexample#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#4)]  
-  
+The following example demonstrates how to use a <xref:System.Windows.Media.Imaging.BitmapFrame> as a <xref:System.Windows.Media.Imaging.BitmapSource>.  
+ 
+[!code-csharp[bitmapframeexample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#4)]
+[!code-vb[bitmapframeexample#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <value>A <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents the global preview of the bitmap. If no preview is defined, or if the <see cref="T:System.Windows.Media.Imaging.LateBoundBitmapDecoder" /> is still downloading content, this property returns <see langword="null" />. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Imaging.BitmapSource> that this property returns is frozen.  
-  
+The <xref:System.Windows.Media.Imaging.BitmapSource> that this property returns is frozen.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,10 +234,10 @@
         <value>A <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents a thumbnail of the bitmap. If no thumbnail is defined, or if the <see cref="T:System.Windows.Media.Imaging.LateBoundBitmapDecoder" /> is still downloading content, this property returns <see langword="null" />. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Imaging.BitmapSource> that this property returns is frozen.  
-  
+The <xref:System.Windows.Media.Imaging.BitmapSource> that this property returns is frozen.  
+ 
  ]]></format>
         </remarks>
       </Docs>

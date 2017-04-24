@@ -19,10 +19,10 @@
     <summary>Encapsulates the HTTP intrinsic object that provides helper methods for processing Web requests.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpServerUtilityWrapper> class derives from the <xref:System.Web.HttpServerUtilityBase> class and serves as a wrapper for the <xref:System.Web.HttpServerUtility> class. This class exposes the functionality of the <xref:System.Web.HttpServerUtility> class while also exposing the <xref:System.Web.HttpServerUtilityBase> type. The <xref:System.Web.HttpServerUtilityBase> class enables you to replace the original implementation of the <xref:System.Web.HttpServerUtility> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
-  
+The <xref:System.Web.HttpServerUtilityWrapper> class derives from the <xref:System.Web.HttpServerUtilityBase> class and serves as a wrapper for the <xref:System.Web.HttpServerUtility> class. This class exposes the functionality of the <xref:System.Web.HttpServerUtility> class while also exposing the <xref:System.Web.HttpServerUtilityBase> type. The <xref:System.Web.HttpServerUtilityBase> class enables you to replace the original implementation of the <xref:System.Web.HttpServerUtility> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -221,10 +221,10 @@
         <summary>Executes the handler for the specified virtual path in the context of the current process, using a <see cref="T:System.IO.TextWriter" /> instance to capture output from the executed handler.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `writer` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityWrapper.Execute%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `writer` object. For an example, see <xref:System.Web.HttpServerUtilityWrapper.Execute%2A>.  
-  
+The `writer` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityWrapper.Execute%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `writer` object. For an example, see <xref:System.Web.HttpServerUtilityWrapper.Execute%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.  
@@ -370,10 +370,10 @@
         <summary>Decodes an HTML-encoded string and returns the results in a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityWrapper.HtmlDecode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtilityWrapper.HtmlDecode%2A>.  
-  
+The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityWrapper.HtmlDecode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtilityWrapper.HtmlDecode%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,10 +422,10 @@
         <summary>HTML-encodes a string and sends the resulting output to an output stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityWrapper.HtmlEncode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtilityWrapper.HtmlEncode%2A>.  
-  
+The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityWrapper.HtmlEncode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtilityWrapper.HtmlEncode%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -727,10 +727,10 @@
         <summary>Decodes a URL-encoded string and sends the resulting output to a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityWrapper.UrlDecode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.HtmlDecode%2A>.  
-  
+The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityWrapper.UrlDecode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.HtmlDecode%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -31,10 +31,10 @@
     <summary>The exception that is thrown when a feature does not run on a particular platform.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `PlatformNotSupportedException` uses the HRESULT COR_E_PLATFORMNOTSUPPORTED, which has the value 0x80131539.  
-  
+`PlatformNotSupportedException` uses the HRESULT COR_E_PLATFORMNOTSUPPORTED, which has the value 0x80131539.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,15 +65,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.PlatformNotSupportedException" /> class with default properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an instance of the <xref:System.PlatformNotSupportedException> class is created by a call to this constructor, the following properties are initialized to the specified values:  
-  
+When an instance of the <xref:System.PlatformNotSupportedException> class is created by a call to this constructor, the following properties are initialized to the specified values:  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The empty string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,15 +107,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.PlatformNotSupportedException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an instance of the <xref:System.PlatformNotSupportedException> class is created by a call to this constructor, the following properties are initialized to the specified values:  
-  
+When an instance of the <xref:System.PlatformNotSupportedException> class is created by a call to this constructor, the following properties are initialized to the specified values:  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,17 +176,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.PlatformNotSupportedException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.PlatformNotSupportedException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.PlatformNotSupportedException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

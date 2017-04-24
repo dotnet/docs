@@ -22,12 +22,12 @@
     <summary>Specifies how query command results are applied to the row being updated.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.UpdateRowSource> values are used by the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property of <xref:System.Data.IDbCommand> and any classes derived from it.  
-  
- For more information property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
-  
+The <xref:System.Data.UpdateRowSource> values are used by the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property of <xref:System.Data.IDbCommand> and any classes derived from it.  
+ 
+For more information property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>

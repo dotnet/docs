@@ -14,10 +14,10 @@
     <summary>Defines a reusable context for interpreting or mapping XAML types, and the types in the assemblies that underlie them.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A XAML schema context provides a layer of abstraction between a schema or vocabulary for XAML, and a specific parser implementation. By inserting the concept of a schema context, the schema can be used with different XAML parsers, and the schema context fills in the details that are needed to interact with a specific XAML parser. For example, the XAML schema context provides query APIs that relate to XAML concepts or to the CLR binding to the XAML type system. The XAML schema context is also responsible for maintaining the assembly list of loaded assemblies, which defines where a XAML parser looks for backing types.  
-  
+A XAML schema context provides a layer of abstraction between a schema or vocabulary for XAML, and a specific parser implementation. By inserting the concept of a schema context, the schema can be used with different XAML parsers, and the schema context fills in the details that are needed to interact with a specific XAML parser. For example, the XAML schema context provides query APIs that relate to XAML concepts or to the CLR binding to the XAML type system. The XAML schema context is also responsible for maintaining the assembly list of loaded assemblies, which defines where a XAML parser looks for backing types.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -79,10 +79,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContext" /> class, based on a settings object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The settings object stores information about text converter and markup extension specifics for the schema context. For more information, see <xref:System.Xaml.XamlSchemaContextSettings>.  
-  
+The settings object stores information about text converter and markup extension specifics for the schema context. For more information, see <xref:System.Xaml.XamlSchemaContextSettings>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,12 +124,12 @@
         <summary>Provides a nonstandard <see langword="Finalize" /> implementation that does not invoke <see langword="Dispose" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- XAML schema contexts should not be disposed by automatic garbage collection or by manual operations. Although XAML schema contexts  have no unmanaged resources, <xref:System.Windows.Markup.XamlDeferLoadAttribute> properties might still be active, and disposing a XAML schema context can interfere with the related defer-load operation.  
-  
- <xref:System.AppDomain.AssemblyLoad> event handlers, which are hooked internally as weak references, are cleaned up by this implementation.  
-  
+XAML schema contexts should not be disposed by automatic garbage collection or by manual operations. Although XAML schema contexts  have no unmanaged resources, <xref:System.Windows.Markup.XamlDeferLoadAttribute> properties might still be active, and disposing a XAML schema context can interfere with the related defer-load operation.  
+ 
+<xref:System.AppDomain.AssemblyLoad> event handlers, which are hooked internally as weak references, are cleaned up by this implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,12 +152,12 @@
           <see langword="true" /> if a XAML schema and its context use fully qualified assembly names in the values that are returned by the lookup APIs; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the <xref:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces%2A?displayProperty=fullName> value that is established in the settings for the <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Xaml.XamlSchemaContextSettings%29> constructor signature. If other signatures were used for construction or if <xref:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces%2A?displayProperty=fullName> is not specifically set to `true`, the value of this property is `false`.  
-  
- The value of this property influences the strings that are returned by <xref:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces%2A>. If <xref:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces%2A> is `true`, the assembly portion of the string reports the equivalent of <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName>.  
-  
+This property returns the <xref:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces%2A?displayProperty=fullName> value that is established in the settings for the <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Xaml.XamlSchemaContextSettings%29> constructor signature. If other signatures were used for construction or if <xref:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces%2A?displayProperty=fullName> is not specifically set to `true`, the value of this property is `false`.  
+ 
+The value of this property influences the strings that are returned by <xref:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces%2A>. If <xref:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces%2A> is `true`, the assembly portion of the string reports the equivalent of <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <returns>An enumerable set of namespace identifiers. These identifiers are provided as strings.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only searches the reference assemblies if they are passed in through construction or property setting. If no assemblies are established as reference assemblies, the logic of this method examines all loaded assemblies where this <xref:System.Xaml.XamlSchemaContext> is active.  
-  
+This method only searches the reference assemblies if they are passed in through construction or property setting. If no assemblies are established as reference assemblies, the logic of this method examines all loaded assemblies where this <xref:System.Xaml.XamlSchemaContext> is active.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -231,12 +231,12 @@
         <returns>A string that consumers should use when they map the specified XAML namespace for markup use.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The most immediate consumer of the information is typically a XAML writer. Other indirect consumers include design tools.  
-  
- As part of the XAML binding for the common language runtime (CLR), you can specify this information by applying <xref:System.Windows.Markup.XmlnsPrefixAttribute> at the assembly level.  
-  
+The most immediate consumer of the information is typically a XAML writer. Other indirect consumers include design tools.  
+ 
+As part of the XAML binding for the common language runtime (CLR), you can specify this information by applying <xref:System.Windows.Markup.XmlnsPrefixAttribute> at the assembly level.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -298,10 +298,10 @@
         <returns>A <see cref="T:System.Xaml.XamlDirective" /> object that represents the requested directive.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method if you create a derived class from <xref:System.Xaml.XamlDirective> as part of a XAML type system extension scenario.  
-  
+Override this method if you create a derived class from <xref:System.Xaml.XamlDirective> as part of a XAML type system extension scenario.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -329,10 +329,10 @@
         <returns>The <see cref="T:System.Xaml.XamlType" /> that matches the input <paramref name="type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload assumes that you are using the CLR for the backing type system. If you are not using the CLR type system, use <xref:System.Xaml.XamlSchemaContext.GetXamlType%28System.Xaml.Schema.XamlTypeName%29>.  
-  
+This overload assumes that you are using the CLR for the backing type system. If you are not using the CLR type system, use <xref:System.Xaml.XamlSchemaContext.GetXamlType%28System.Xaml.Schema.XamlTypeName%29>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -417,12 +417,12 @@
         <returns>The resolved assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The underlying assembly resolution technique, which is an internal API, has built-in tolerances for different string forms of an assembly name as based on the <xref:System.Reflection.AssemblyName> construction behavior.  
-  
- The purpose of this API is to enable first-opportunity resolution against known sets of assemblies, such as against reference assemblies instead of against a global assembly cache. If the list of reference assemblies is populated, the default implementation can access the known reference assemblies.  
-  
+The underlying assembly resolution technique, which is an internal API, has built-in tolerances for different string forms of an assembly name as based on the <xref:System.Reflection.AssemblyName> construction behavior.  
+ 
+The purpose of this API is to enable first-opportunity resolution against known sets of assemblies, such as against reference assemblies instead of against a global assembly cache. If the list of reference assemblies is populated, the default implementation can access the known reference assemblies.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,14 +463,14 @@
           <see langword="true" /> if the schema context permits markup extensions that have duplicate arity; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A?displayProperty=fullName> value that is established in the settings for the <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Xaml.XamlSchemaContextSettings%29> constructor signature. If other signatures are used for construction or if <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A?displayProperty=fullName> is not specifically set to `true`, the value of this property is `false`.  
-  
- Duplicate arity of markup extensions is not specifically addressed by the XAML specification [MS-XAML], section 6.6.7.2. This is because formation of the XAML information item for a markup extension is identical regardless of duplicate arity that might exist in the markup extension implementation. Only the actual invocation of the markup extension and its `ProvideValue` exposes any issues associated with duplicate arity. Behavior for handling duplicate arity is thus undefined and is left up to each implementing XAML schema context and its XAML writer integration. The default XAML schema context as implemented for .NET Framework XAML Services operations does not support duplicate arity; various .NET Framework XAML Services APIs will throw exceptions when processing markup extension usage with underlying duplicate arity.  
-  
- For more information about defining markup extensions, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
-  
+This property returns the <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A?displayProperty=fullName> value that is established in the settings for the <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Xaml.XamlSchemaContextSettings%29> constructor signature. If other signatures are used for construction or if <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A?displayProperty=fullName> is not specifically set to `true`, the value of this property is `false`.  
+ 
+Duplicate arity of markup extensions is not specifically addressed by the XAML specification [MS-XAML], section 6.6.7.2. This is because formation of the XAML information item for a markup extension is identical regardless of duplicate arity that might exist in the markup extension implementation. Only the actual invocation of the markup extension and its `ProvideValue` exposes any issues associated with duplicate arity. Behavior for handling duplicate arity is thus undefined and is left up to each implementing XAML schema context and its XAML writer integration. The default XAML schema context as implemented for .NET Framework XAML Services operations does not support duplicate arity; various .NET Framework XAML Services APIs will throw exceptions when processing markup extension usage with underlying duplicate arity.  
+ 
+For more information about defining markup extensions, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -499,16 +499,16 @@
           <see langword="true" /> if <paramref name="compatibleNamespace" /> contains a usable result; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Internally, this method uses the following lookup order:  
-  
+Internally, this method uses the following lookup order:  
+ 
 1.  An internally implemented compatibility dictionary, which may have been populated by an earlier lookup.  
-  
+ 
 2.  The <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> parameter evaluation.  
-  
- If no other compatible namespace is discovered and this method returns `false`, the `compatibleNamespace` parameter output might have the same value as the `xamlNamespace` input.  
-  
+ 
+If no other compatible namespace is discovered and this method returns `false`, the `compatibleNamespace` parameter output might have the same value as the `xamlNamespace` input.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

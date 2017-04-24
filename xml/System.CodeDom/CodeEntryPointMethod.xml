@@ -22,19 +22,19 @@
     <summary>Represents the entry point method of an executable.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.CodeDom.CodeEntryPointMethod> is a <xref:System.CodeDom.CodeMemberMethod> that represents the entry point method of an executable.  
+A <xref:System.CodeDom.CodeEntryPointMethod> is a <xref:System.CodeDom.CodeMemberMethod> that represents the entry point method of an executable.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates using a <xref:System.CodeDom.CodeEntryPointMethod> to indicate the method to start program execution at.  
-  
- [!code-cpp[CodeEntryPointMethod#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeEntryPointMethod/CPP/codeentrypointmethodexample.cpp#2)]
- [!code-csharp[CodeEntryPointMethod#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeEntryPointMethod/CS/codeentrypointmethodexample.cs#2)]
- [!code-vb[CodeEntryPointMethod#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeEntryPointMethod/VB/codeentrypointmethodexample.vb#2)]  
-  
+This example demonstrates using a <xref:System.CodeDom.CodeEntryPointMethod> to indicate the method to start program execution at.  
+ 
+[!code-cpp[CodeEntryPointMethod#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeEntryPointMethod/CPP/codeentrypointmethodexample.cpp#2)]
+[!code-csharp[CodeEntryPointMethod#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeEntryPointMethod/CS/codeentrypointmethodexample.cs#2)]
+[!code-vb[CodeEntryPointMethod#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeEntryPointMethod/VB/codeentrypointmethodexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

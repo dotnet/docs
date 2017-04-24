@@ -19,24 +19,24 @@
     <summary>Represents a complete, in-memory description of the service, including all the endpoints for the service and specifications for their respective addresses, bindings, contracts and behaviors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information contained in the <xref:System.ServiceModel.Description.ServiceDescription> is used by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system to building the run-time components for the service.  
+The information contained in the <xref:System.ServiceModel.Description.ServiceDescription> is used by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system to building the run-time components for the service.  
+ 
+Use this method when adding custom behaviors to extend <xref:System.ServiceModel.ServiceHost>. Programmatically, you must <xref:System.Collections.ObjectModel.Collection%601.Add%28%600%29> the custom service behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> prior to when you call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.ServiceHost> object.  
+ 
+The <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Object%29> and <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Type%29> methods are available to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+ 
+Export metadata about a service endpoint by passing <xref:System.ServiceModel.Description.ServiceEndpoint> as a parameter to <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%28System.ServiceModel.Description.ServiceEndpoint%29>. After calling this method, or one of the other export methods provided by <xref:System.ServiceModel.Description.WsdlExporter>, use the <xref:System.ServiceModel.Description.WsdlExporter.GeneratedWsdlDocuments%2A> property to return the collection of <xref:System.Web.Services.Description.ServiceDescription> objects.  
+ 
   
- Use this method when adding custom behaviors to extend <xref:System.ServiceModel.ServiceHost>. Programmatically, you must <xref:System.Collections.ObjectModel.Collection%601.Add%28%600%29> the custom service behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> prior to when you call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.ServiceHost> object.  
-  
- The <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Object%29> and <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Type%29> methods are available to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
-  
- Export metadata about a service endpoint by passing <xref:System.ServiceModel.Description.ServiceEndpoint> as a parameter to <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%28System.ServiceModel.Description.ServiceEndpoint%29>. After calling this method, or one of the other export methods provided by <xref:System.ServiceModel.Description.WsdlExporter>, use the <xref:System.ServiceModel.Description.WsdlExporter.GeneratedWsdlDocuments%2A> property to return the collection of <xref:System.Web.Services.Description.ServiceDescription> objects.  
-  
-   
-  
+ 
 ## Examples  
- The following example illustrates various ways to instantiate a <xref:System.ServiceModel.Description.ServiceDescription> object.  
-  
- [!code-csharp[S_UE_ServiceDescription#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#0)]
- [!code-vb[S_UE_ServiceDescription#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#0)]  
-  
+The following example illustrates various ways to instantiate a <xref:System.ServiceModel.Description.ServiceDescription> object.  
+ 
+[!code-csharp[S_UE_ServiceDescription#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#0)]
+[!code-vb[S_UE_ServiceDescription#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,11 +55,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceDescription" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceDescription#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#1)]
- [!code-vb[S_UE_ServiceDescription#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#1)]  
-  
+[!code-csharp[S_UE_ServiceDescription#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#1)]
+[!code-vb[S_UE_ServiceDescription#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,11 +81,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceDescription" /> class from a specified enumeration of service endpoints.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#2)]
- [!code-vb[S_UE_ServiceDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#2)]  
-  
+[!code-csharp[S_UE_ServiceDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#2)]
+[!code-vb[S_UE_ServiceDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -109,22 +109,22 @@
         <value>The <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> of type <see cref="T:System.ServiceModel.Description.IServiceBehavior" /> that contains the behaviors associated with the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method when adding custom behaviors to extend <xref:System.ServiceModel.ServiceHost>. Programmatically, you must <xref:System.Collections.ObjectModel.Collection%601.Add%28%600%29> the custom service behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> prior to when you call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.ServiceHost> object.  
+Use this method when adding custom behaviors to extend <xref:System.ServiceModel.ServiceHost>. Programmatically, you must <xref:System.Collections.ObjectModel.Collection%601.Add%28%600%29> the custom service behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> prior to when you call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.ServiceHost> object.  
+ 
+The type of behavior that is accessible from the description hierarchy is scoped to the specific level. From the <xref:System.ServiceModel.Description.ServiceDescription> the <xref:System.ServiceModel.Description.IServiceBehavior> is accessible.  
+ 
+If you want access to the <xref:System.ServiceModel.Description.IEndpointBehavior> associated with an endpoint instead, you can obtain the endpoints for the service using the <xref:System.ServiceModel.Description.ServiceDescription.Endpoints%2A> property. Then retrieve the <xref:System.ServiceModel.Description.ServiceEndpoint> from the collection with the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> method that employs the relevant search criteria, and call the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property to obtain the collection of the <xref:System.ServiceModel.Description.IEndpointBehavior> objects.  
+ 
   
- The type of behavior that is accessible from the description hierarchy is scoped to the specific level. From the <xref:System.ServiceModel.Description.ServiceDescription> the <xref:System.ServiceModel.Description.IServiceBehavior> is accessible.  
-  
- If you want access to the <xref:System.ServiceModel.Description.IEndpointBehavior> associated with an endpoint instead, you can obtain the endpoints for the service using the <xref:System.ServiceModel.Description.ServiceDescription.Endpoints%2A> property. Then retrieve the <xref:System.ServiceModel.Description.ServiceEndpoint> from the collection with the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> method that employs the relevant search criteria, and call the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property to obtain the collection of the <xref:System.ServiceModel.Description.IEndpointBehavior> objects.  
-  
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[S_UE_ServiceDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#3)]  -->
- [!code-csharp[S_UE_ServiceDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/snippets.cs#3)]
- <!-- TODO: review snippet reference [!code-vb[S_UE_ServiceDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#3)]  -->
- [!code-vb[S_UE_ServiceDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/snippets.vb#3)]  
-  
+<!-- TODO: review snippet reference [!code-csharp[S_UE_ServiceDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#3)]  -->
+[!code-csharp[S_UE_ServiceDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/snippets.cs#3)]
+<!-- TODO: review snippet reference [!code-vb[S_UE_ServiceDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#3)]  -->
+[!code-vb[S_UE_ServiceDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/snippets.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,16 +146,16 @@
         <value>The name of the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element used to configure the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This name is not coupled to our configuration model. This is used by service host base to wire up the service. The configuration name is a required string attribute for the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element.  
+This name is not coupled to our configuration model. This is used by service host base to wire up the service. The configuration name is a required string attribute for the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceDescription#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#4)]
- [!code-vb[S_UE_ServiceDescription#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#4)]  
-  
+[!code-csharp[S_UE_ServiceDescription#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#4)]
+[!code-vb[S_UE_ServiceDescription#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,18 +177,18 @@
         <value>The <see cref="T:System.ServiceModel.Description.ServiceEndpointCollection" /> that contains the endpoints defined for the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The endpoints in the <xref:System.ServiceModel.Description.ServiceEndpointCollection> returned by this method each contain the address, binding, contract, and behavior information required to communicate with the service. To access this information, you must retrieve the <xref:System.ServiceModel.Description.ServiceEndpoint> from the collection with the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> method that employs the relevant search criteria. Then the <xref:System.ServiceModel.Description.ServiceEndpoint> properties can be used to access the information. For example, the <xref:System.ServiceModel.Description.ContractDescription> is accessed by the <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A> property.  
+The endpoints in the <xref:System.ServiceModel.Description.ServiceEndpointCollection> returned by this method each contain the address, binding, contract, and behavior information required to communicate with the service. To access this information, you must retrieve the <xref:System.ServiceModel.Description.ServiceEndpoint> from the collection with the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> method that employs the relevant search criteria. Then the <xref:System.ServiceModel.Description.ServiceEndpoint> properties can be used to access the information. For example, the <xref:System.ServiceModel.Description.ContractDescription> is accessed by the <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A> property.  
+ 
+Export metadata about a service endpoint by passing <xref:System.ServiceModel.Description.ServiceEndpoint> as a parameter to <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%28System.ServiceModel.Description.ServiceEndpoint%29>.  
+ 
   
- Export metadata about a service endpoint by passing <xref:System.ServiceModel.Description.ServiceEndpoint> as a parameter to <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%28System.ServiceModel.Description.ServiceEndpoint%29>.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceDescription#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#5)]
- [!code-vb[S_UE_ServiceDescription#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#5)]  
-  
+[!code-csharp[S_UE_ServiceDescription#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#5)]
+[!code-vb[S_UE_ServiceDescription#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,22 +214,22 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the service object provided.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+Use this method to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+ 
+<xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Object%29> initializes the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A>, <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>, and <xref:System.ServiceModel.Description.ServiceDescription.ConfigurationName%2A> properties, and ensures that the <xref:System.ServiceModel.ServiceBehaviorAttribute> is attached to the service and adds any relevant service behaviors to <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>.  
+ 
   
- <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Object%29> initializes the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A>, <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>, and <xref:System.ServiceModel.Description.ServiceDescription.ConfigurationName%2A> properties, and ensures that the <xref:System.ServiceModel.ServiceBehaviorAttribute> is attached to the service and adds any relevant service behaviors to <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following sample shows how to iterate through the service behaviors contained in the service description.  
-  
- [!code-csharp[S_UE_ServiceDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#9)]
- [!code-csharp[S_UE_ServiceDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/snippets.cs#9)]
- [!code-vb[S_UE_ServiceDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#9)]
- [!code-vb[S_UE_ServiceDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/snippets.vb#9)]  
-  
+The following sample shows how to iterate through the service behaviors contained in the service description.  
+ 
+[!code-csharp[S_UE_ServiceDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#9)]
+[!code-csharp[S_UE_ServiceDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/snippets.cs#9)]
+[!code-vb[S_UE_ServiceDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#9)]
+[!code-vb[S_UE_ServiceDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/snippets.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -257,18 +257,18 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the service type provided.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+Use this method to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+ 
+<xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Type%29> initializes the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A>, <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>, and <xref:System.ServiceModel.Description.ServiceDescription.ConfigurationName%2A> properties, reflects on the type for any the <xref:System.ServiceModel.ServiceBehaviorAttribute> objects and adds them to <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>, and ensures that the <xref:System.ServiceModel.ServiceBehaviorAttribute> is attached to the service.  
+ 
   
- <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Type%29> initializes the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A>, <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>, and <xref:System.ServiceModel.Description.ServiceDescription.ConfigurationName%2A> properties, reflects on the type for any the <xref:System.ServiceModel.ServiceBehaviorAttribute> objects and adds them to <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>, and ensures that the <xref:System.ServiceModel.ServiceBehaviorAttribute> is attached to the service.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceDescription#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/snippets.cs#10)]
- [!code-vb[S_UE_ServiceDescription#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/snippets.vb#10)]  
-  
+[!code-csharp[S_UE_ServiceDescription#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/snippets.cs#10)]
+[!code-vb[S_UE_ServiceDescription#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/snippets.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -292,18 +292,18 @@
         <value>The name of the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the name is `null`, this property returns the name of the service type. If service type is also `null`, it returns the default service name.  
+If the name is `null`, this property returns the name of the service type. If service type is also `null`, it returns the default service name.  
+ 
+When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A> maps to the Web Service Development Language (WSDL) <`service`> element local name part of the (qualified) `name` attribute.  
+ 
   
- When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A> maps to the Web Service Development Language (WSDL) <`service`> element local name part of the (qualified) `name` attribute.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceDescription#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#6)]
- [!code-vb[S_UE_ServiceDescription#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#6)]  
-  
+[!code-csharp[S_UE_ServiceDescription#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#6)]
+[!code-vb[S_UE_ServiceDescription#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,16 +325,16 @@
         <value>The namespace for the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>maps to the Web Service Development Language (WSDL) <`service`> element namespace name part of the (qualified) `name` attribute.  
+When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>maps to the Web Service Development Language (WSDL) <`service`> element namespace name part of the (qualified) `name` attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceDescription#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#7)]
- [!code-vb[S_UE_ServiceDescription#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#7)]  
-  
+[!code-csharp[S_UE_ServiceDescription#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#7)]
+[!code-vb[S_UE_ServiceDescription#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,11 +356,11 @@
         <value>An instance of the <see cref="T:System.Type" /> that implements the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceDescription#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#8)]
- [!code-vb[S_UE_ServiceDescription#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#8)]  
-  
+[!code-csharp[S_UE_ServiceDescription#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#8)]
+[!code-vb[S_UE_ServiceDescription#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

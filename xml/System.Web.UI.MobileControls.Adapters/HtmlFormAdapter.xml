@@ -115,10 +115,10 @@
         <summary>Renders the <see langword="&lt;body&gt;" /> tag. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base implementation renders a `<body>` tag with the given attributes. Inheriting adapters can override this method and modify the dictionary of attributes before calling the base implementation. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.  
-  
+The base implementation renders a `<body>` tag with the given attributes. Inheriting adapters can override this method and modify the dictionary of attributes before calling the base implementation. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
           <see langword="true" /> if any extra head elements were written; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called twice. On the first call, the writer parameter is `null`, and the method returns `true` or `false`, indicating whether or not it has additional `<head>` elements to write. On the second call, the method writes the content by using the provided writer.  
-  
+This method is called twice. On the first call, the writer parameter is `null`, and the method returns `true` or `false`, indicating whether or not it has additional `<head>` elements to write. On the second call, the method writes the content by using the provided writer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <summary>Renders a pager tag on paginated forms. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method writes a link to the output stream. The link appears on paginated forms to enable to the user to navigate between a form's pages.  
-  
+This method writes a link to the output stream. The link appears on paginated forms to enable to the user to navigate between a form's pages.  
+ 
  ]]></format>
         </remarks>
       </Docs>

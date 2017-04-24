@@ -18,12 +18,12 @@
     <summary>Indicates where an element should be displayed on the horizontal axis relative to the allocated layout slot of the parent element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Stretch is the default layout behavior.  
-  
- Element <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties that are explicitly set take precedence over the Stretch property value.  
-  
+Stretch is the default layout behavior.  
+ 
+Element <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties that are explicitly set take precedence over the Stretch property value.  
+ 
  ]]></format>
     </remarks>
   </Docs>

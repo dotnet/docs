@@ -14,10 +14,10 @@
     <summary>A specialization of the ConsoleLogger that logs to a file instead of the console.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The output in terms of what is written and how it looks is identical. For example you can log verbosely to a file using the FileLogger while simultaneously logging only high priority events to the console using a ConsoleLogger.  
-  
+The output in terms of what is written and how it looks is identical. For example you can log verbosely to a file using the FileLogger while simultaneously logging only high priority events to the console using a ConsoleLogger.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,10 +98,10 @@
         <summary>Called when the build is finished.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method must flush and close the file log.  
-  
+The method must flush and close the file log.  
+ 
  ]]></format>
         </remarks>
       </Docs>

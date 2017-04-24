@@ -14,10 +14,10 @@
     <summary>Represents the contents of a WS-Trust BinaryExchange element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
-  
+For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,16 +41,16 @@
         <summary>Creates a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.BinaryExchange" /> class with the specified data and ValueType URI.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for the new instance.  
-  
+The following table shows the initial property values for the new instance.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.BinaryData%2A>|The specified binary data.|  
 |<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType%2A>|A <xref:System.Uri> based on the <xref:System.IdentityModel.WSSecurity10Constants.EncodingTypes.Base64> constant.|  
 |<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.ValueType%2A>|The specified value type <xref:System.Uri>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -84,16 +84,16 @@
         <summary>Creates a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.BinaryExchange" /> with the specified data, ValueType URI, and EncodingType URI.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for the new instance.  
-  
+The following table shows the initial property values for the new instance.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.BinaryData%2A>|The specified binary data.|  
 |<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType%2A>|The specified encoding type <xref:System.Uri>.|  
 |<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.ValueType%2A>|The specified value type <xref:System.Uri>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -131,10 +131,10 @@
         <value>An array of <see cref="T:System.Byte" /> that contains the binary data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the value of the BinaryExchange element.  
-  
+This property returns the value of the BinaryExchange element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <value>A <see cref="T:System.Uri" /> that contains the encoding type. This is the value of the EncodingType attribute of the BinaryExchange element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies the type of encoding used to encode the binary data contained in the element.  
-  
+Specifies the type of encoding used to encode the binary data contained in the element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,10 +181,10 @@
         <value>A <see cref="T:System.Uri" /> that contains the value type. This is the value of the ValueType attribute of the BinaryExchange element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies the type of the binary data contained in the element.  
-  
+Specifies the type of the binary data contained in the element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

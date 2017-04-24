@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object and name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType> type is RPC.  
-  
+The default <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType> type is RPC.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>

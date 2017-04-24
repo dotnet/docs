@@ -18,21 +18,21 @@
     <summary>Represents a collection of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> objects which persist in a Windows Address Book.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has no public constructors, since a reference to it is returned by the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> class.  
+This class has no public constructors, since a reference to it is returned by the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> class.  
+ 
+Address books that are associated with <xref:System.Net.PeerToPeer.Collaboration.PeerContact> management include those associated with the host peer and a remote peer.  Either computer may collaborate with other peers; when a peer is local to the remote peer but not the host peer, it can be added to the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> of the host peer. Certain operations on the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> class, such as <xref:System.Net.PeerToPeer.Collaboration.ContactManager.AddContact%2A> and <xref:System.Net.PeerToPeer.Collaboration.ContactManager.DeleteContact%2A>, correlate to the associated operations being performed on the Windows Address book of the remote peer.  
+ 
+The host peer has access to this persistent storage for <xref:System.Net.PeerToPeer.Collaboration.PeerContact> information, which can be associated with the applications in which a peer intends to participate. A <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> can identify itself as a user of a <xref:System.Net.PeerToPeer.Collaboration.ContactManager> persistent store on a computer.  
+ 
   
- Address books that are associated with <xref:System.Net.PeerToPeer.Collaboration.PeerContact> management include those associated with the host peer and a remote peer.  Either computer may collaborate with other peers; when a peer is local to the remote peer but not the host peer, it can be added to the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> of the host peer. Certain operations on the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> class, such as <xref:System.Net.PeerToPeer.Collaboration.ContactManager.AddContact%2A> and <xref:System.Net.PeerToPeer.Collaboration.ContactManager.DeleteContact%2A>, correlate to the associated operations being performed on the Windows Address book of the remote peer.  
-  
- The host peer has access to this persistent storage for <xref:System.Net.PeerToPeer.Collaboration.PeerContact> information, which can be associated with the applications in which a peer intends to participate. A <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> can identify itself as a user of a <xref:System.Net.PeerToPeer.Collaboration.ContactManager> persistent store on a computer.  
-  
-   
-  
+ 
 ## Examples  
- The following example code illustrates how to enumerate a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> and add it as a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> to the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
-  
- [!code-csharp[NCLPNRPContacts#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#3)]  
-  
+The following example code illustrates how to enumerate a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> and add it as a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> to the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
+ 
+[!code-csharp[NCLPNRPContacts#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,17 +62,17 @@
         <summary>Adds the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> to the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" /> of the local peer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code illustrates how to enumerate a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> and add it as a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> to the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
-  
- [!code-csharp[NCLPNRPContacts#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#3)]  
-  
+The following example code illustrates how to enumerate a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> and add it as a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> to the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
+ 
+[!code-csharp[NCLPNRPContacts#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> specified by <paramref name="peerContact" /> already exists.</exception>
@@ -108,14 +108,14 @@
         <summary>Raised whenever a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> associated with a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> in the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" /> has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only returns applications published by contacts of the calling peer.  
-  
- Before this event can be raised, the current user of the remote peer must subscribe to the collaboration events of the remote peer. Subscription is accomplished via the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> method.  
-  
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+This method only returns applications published by contacts of the calling peer.  
+ 
+Before this event can be raised, the current user of the remote peer must subscribe to the collaboration events of the remote peer. Subscription is accomplished via the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> method.  
+ 
+This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
@@ -147,10 +147,10 @@
         <returns>A <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance for the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -183,10 +183,10 @@
         <summary>Creates a contact instance for the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -213,12 +213,12 @@
         <summary>Raised whenever a <see cref="M:System.Net.PeerToPeer.Collaboration.ContactManager.CreateContact(System.Net.PeerToPeer.Collaboration.PeerNearMe)" /> method has completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is raised when the <xref:System.Net.PeerToPeer.Collaboration.ContactManager.CreateContactAsync%2A> method has completed. It is also raised if the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> operation completes in error or is cancelled.  
-  
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+This event is raised when the <xref:System.Net.PeerToPeer.Collaboration.ContactManager.CreateContactAsync%2A> method has completed. It is also raised if the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> operation completes in error or is cancelled.  
+ 
+This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
@@ -244,17 +244,17 @@
         <summary>Removes the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> from the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" /> of the local peer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to delete a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> from the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
-  
- [!code-csharp[NCLPNRPContacts#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#6)]  
-  
+The following code example illustrates how to delete a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> from the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
+ 
+[!code-csharp[NCLPNRPContacts#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -286,17 +286,17 @@
         <summary>Removes the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> associated with the specified <see cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName" /> from the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" /> of the local peer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to delete a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> from the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
-  
- [!code-csharp[NCLPNRPContacts#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#6)]  
-  
+The following code example illustrates how to delete a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> from the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
+ 
+[!code-csharp[NCLPNRPContacts#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> associated with <see cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName" /> could not be found in the contact manager.</exception>
@@ -356,10 +356,10 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> associated with the supplied <see cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -396,17 +396,17 @@
  If the contact manager is empty, then a collection of size zero (0) is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to retrieve a <xref:System.Net.PeerToPeer.Collaboration.PeerContactCollection> representing the contacts contained in the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
-  
- [!code-csharp[NCLPNRPContacts#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#3)]  
-  
+The following code example illustrates how to retrieve a <xref:System.Net.PeerToPeer.Collaboration.PeerContactCollection> representing the contacts contained in the local <xref:System.Net.PeerToPeer.Collaboration.ContactManager>:  
+ 
+[!code-csharp[NCLPNRPContacts#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" /> object has been disposed.</exception>
@@ -435,12 +435,12 @@
         <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance representing the local peer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null`.  
-  
- Using this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Unless specified, the default value for this property is `null`.  
+ 
+Using this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -469,12 +469,12 @@
         <summary>Raised whenever the <see cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName" /> associated with a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> in the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" /> has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The associated callback provides a reference to the new <xref:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName%2A>.  
-  
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+The associated callback provides a reference to the new <xref:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName%2A>.  
+ 
+This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
@@ -504,12 +504,12 @@
         <summary>Raised whenever an object within a contact’s registered <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> objects has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before this event can be raised, the current user of the remote peer must subscribe to the collaboration events of the host peer. Subscription is accomplished via the PeerContact <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> methods.  
-  
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Before this event can be raised, the current user of the remote peer must subscribe to the collaboration events of the host peer. Subscription is accomplished via the PeerContact <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> methods.  
+ 
+This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> object has been disposed.</exception>
@@ -539,12 +539,12 @@
         <summary>Raised whenever the presence status of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> in the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" /> has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before this event can be raised, the current user of the remote peer must subscribe to the collaboration events of the host peer. Subscription is accomplished via the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> method.  
-  
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Before this event can be raised, the current user of the remote peer must subscribe to the collaboration events of the host peer. Subscription is accomplished via the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> method.  
+ 
+This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
@@ -574,12 +574,12 @@
         <summary>Raised when the list of subscribed contacts changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Since subscriptions are per user and not per process or per application domain, another application running on the host may also cause this event to be raised.  
-  
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Since subscriptions are per user and not per process or per application domain, another application running on the host may also cause this event to be raised.  
+ 
+This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
@@ -613,12 +613,12 @@
         <value>Object that implements the <see cref="T:System.ComponentModel.ISynchronizeInvoke" /> interface and is used by instances of this type for event handler synchronization on the thread that created it.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default set value for this property is `null`, indicating that all event handlers are called on a system thread pool thread.  
-  
- This property is typically set to a UI element such as a <xref:System.Windows.Forms.Form> instance.  
-  
+The default set value for this property is `null`, indicating that all event handlers are called on a system thread pool thread.  
+ 
+This property is typically set to a UI element such as a <xref:System.Windows.Forms.Form> instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
@@ -649,10 +649,10 @@
         <summary>Updates the data associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">-   <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> not found in <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />.</exception>

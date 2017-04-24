@@ -32,12 +32,12 @@
     <summary>Provides the managed definition of the <see langword="IBindCtx" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx` in the MSDN library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For more information, see the existing documentation for `IBindCtx` in the MSDN library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <summary>Enumerates the strings that are the keys of the internally maintained table of contextual object parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::EnumObjectParam` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::EnumObjectParam` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <summary>Returns the current binding options stored in the current bind context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::GetBindOptions` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::GetBindOptions` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <summary>Looks up the given key in the internally maintained table of contextual object parameters and returns the corresponding object, if one exists.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::GetObjectParam` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::GetObjectParam` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,10 +200,10 @@
         <summary>Returns access to the Running Object Table (ROT) relevant to this binding process.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::GetRunningObjectTable` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::GetRunningObjectTable` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
         <summary>Registers the passed object as one of the objects that has been bound during a moniker operation and that should be released when the operation is complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::RegisterObjectBound` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::RegisterObjectBound` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,10 +284,10 @@
         <summary>Registers the specified object pointer under the specified name in the internally maintained table of object pointers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::RegisterObjectParam` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::RegisterObjectParam` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,10 +322,10 @@
         <summary>Releases all the objects currently registered with the bind context by using the <see cref="M:System.Runtime.InteropServices.ComTypes.IBindCtx.RegisterObjectBound(System.Object)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::ReleaseBoundObjects` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::ReleaseBoundObjects` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,10 +363,10 @@
         <summary>Removes the object from the set of registered objects that need to be released.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::RevokeObjectBound` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::RevokeObjectBound` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -405,10 +405,10 @@
         <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the specified key was successfully removed from the table; otherwise, an <see langword="S_FALSE" /><see langword="HRESULT" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::RevokeObjectParam` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::RevokeObjectParam` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@
         <summary>Stores a block of parameters in the bind context. These parameters will apply to later <see langword="UCOMIMoniker" /> operations that use this bind context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IBindCtx::SetBindOptions` in the MSDN library.  
-  
+For more information, see the existing documentation for `IBindCtx::SetBindOptions` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

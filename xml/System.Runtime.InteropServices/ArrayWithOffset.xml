@@ -32,10 +32,10 @@
     <summary>Encapsulates an array and an offset within the specified array.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used as an argument to a native method reached through platform invoke. In this case, the platform invoke marshaler will retrieve the starting address of the array, add the offset, and pass the resulting pointer to the underlying native function. This structure only supports arrays containing no references, such as primitive type arrays and value type arrays containing only fields of primitive types.  
-  
+Can be used as an argument to a native method reached through platform invoke. In this case, the platform invoke marshaler will retrieve the starting address of the array, add the offset, and pass the resulting pointer to the underlying native function. This structure only supports arrays containing no references, such as primitive type arrays and value type arrays containing only fields of primitive types.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -284,45 +284,45 @@
           <see langword="true" /> if the value of <paramref name="a" /> is the same as the value of <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.ArrayWithOffset.Equals%28System.Runtime.InteropServices.ArrayWithOffset%2CSystem.Runtime.InteropServices.ArrayWithOffset%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Runtime.InteropServices.ArrayWithOffset a, System.Runtime.InteropServices.ArrayWithOffset b);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Runtime.InteropServices.ArrayWithOffset a, valuetype System.Runtime.InteropServices.ArrayWithOffset b) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.op_Inequality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="a" Type="System.Runtime.InteropServices.ArrayWithOffset" />
-        <Parameter Name="b" Type="System.Runtime.InteropServices.ArrayWithOffset" />
-      </Parameters>
-      <Docs>
-        <param name="a">An <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object to compare with the <c>b</c> parameter.</param>
-        <param name="b">An <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object to compare with the <c>a</c> parameter.</param>
-        <summary>Determines whether two specified <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> objects no not have the same value.</summary>
-        <returns>
-          <see langword="true" /> if the value of <paramref name="a" /> is not the same as the value of <paramref name="b" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Runtime.InteropServices.ArrayWithOffset a, System.Runtime.InteropServices.ArrayWithOffset b);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Runtime.InteropServices.ArrayWithOffset a, valuetype System.Runtime.InteropServices.ArrayWithOffset b) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.op_Inequality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+       <AssemblyVersion>4.0.10.0</AssemblyVersion>
+       <AssemblyVersion>4.0.20.0</AssemblyVersion>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+       <AssemblyVersion>4.1.1.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>mscorlib</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="a" Type="System.Runtime.InteropServices.ArrayWithOffset" />
+       <Parameter Name="b" Type="System.Runtime.InteropServices.ArrayWithOffset" />
+     </Parameters>
+     <Docs>
+       <param name="a">An <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object to compare with the <c>b</c> parameter.</param>
+       <param name="b">An <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object to compare with the <c>a</c> parameter.</param>
+       <summary>Determines whether two specified <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> objects no not have the same value.</summary>
+       <returns>
+         <see langword="true" /> if the value of <paramref name="a" /> is not the same as the value of <paramref name="b" />; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.ArrayWithOffset.Compare%28System.Runtime.InteropServices.ArrayWithOffset%2CSystem.Runtime.InteropServices.ArrayWithOffset%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>

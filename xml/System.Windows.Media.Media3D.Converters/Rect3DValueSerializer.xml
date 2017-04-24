@@ -14,10 +14,10 @@
     <summary>Converts instances of <see cref="T:System.String" /> to and from instances of <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is only intended to be used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
-  
+This class is only intended to be used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
           <see langword="true" /> if the value can be converted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns `true`.  
-  
+This method always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

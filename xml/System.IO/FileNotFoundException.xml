@@ -33,12 +33,12 @@
     <summary>The exception that is thrown when an attempt to access a file that does not exist on disk fails.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `FileNotFoundException` uses the HRESULT COR_E_FILENOTFOUND which has the value 0x80070002.  
-  
- If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A> permission, the error message for this exception may only contain file or directory names instead of fully qualified paths.  
-  
+`FileNotFoundException` uses the HRESULT COR_E_FILENOTFOUND which has the value 0x80070002.  
+ 
+If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A> permission, the error message for this exception may only contain file or directory names instead of fully qualified paths.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileNotFoundException" /> class with its message string set to a system-supplied message and its HRESULT set to COR_E_FILENOTFOUND.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.IO.FileNotFoundException.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Could not find the specified file." This message takes into account the current system culture.  
-  
+This constructor initializes the <xref:System.IO.FileNotFoundException.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Could not find the specified file." This message takes into account the current system culture.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileNotFoundException" /> class with its message string set to <paramref name="message" /> and its HRESULT set to COR_E_FILENOTFOUND.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.IO.FileNotFoundException.Message%2A> property of the new instance using `message`.  
-  
+This constructor initializes the <xref:System.IO.FileNotFoundException.Message%2A> property of the new instance using `message`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,19 +176,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileNotFoundException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.IO.FileNotFoundException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.IO.FileNotFoundException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
- For more information on inner exceptions, see <xref:System.Exception.InnerException%2A>.  
-  
+ 
+For more information on inner exceptions, see <xref:System.Exception.InnerException%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,10 +226,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileNotFoundException" /> class with its message string set to <paramref name="message" />, specifying the file name that cannot be found, and its HRESULT set to COR_E_FILENOTFOUND.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor initializes the <xref:System.IO.FileNotFoundException.Message%2A> property of the new instance using `message` and the <xref:System.IO.FileNotFoundException.FileName%2A> property using `fileName`.  
-  
+The constructor initializes the <xref:System.IO.FileNotFoundException.Message%2A> property of the new instance using `message` and the <xref:System.IO.FileNotFoundException.FileName%2A> property using `fileName`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,19 +269,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileNotFoundException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.IO.FileNotFoundException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.IO.FileNotFoundException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
- For more information on inner exceptions, see <xref:System.Exception.InnerException%2A>.  
-  
+ 
+For more information on inner exceptions, see <xref:System.Exception.InnerException%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,10 +317,10 @@
         <value>The name of the file, or <see langword="null" /> if no file name was passed to the constructor for this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only.  
-  
+This property is read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,12 +421,12 @@
         <value>The error message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no message was supplied to the constructor for the current exception, this property returns a system-supplied error message. If the <xref:System.IO.FileLoadException.FileName%2A> property is not `null`, the message includes the file name.  
-  
- This property is read-only.  
-  
+If no message was supplied to the constructor for the current exception, this property returns a system-supplied error message. If the <xref:System.IO.FileLoadException.FileName%2A> property is not `null`, the message includes the file name.  
+ 
+This property is read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,12 +463,12 @@
         <returns>The fully qualified name of this exception and possibly the error message, the name of the inner exception, and the stack trace.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Object.ToString%2A>.  
-  
- The string representation returned by this method includes the name of the exception, the value of the <xref:System.IO.FileNotFoundException.Message%2A> property, the result of calling ToString on the inner exception, the value of the <xref:System.IO.FileNotFoundException.FileName%2A> property, and the result of calling <xref:System.Environment.StackTrace%2A>. If any of these members is a null reference, its value is not included in the returned string.  
-  
+This method overrides <xref:System.Object.ToString%2A>.  
+ 
+The string representation returned by this method includes the name of the exception, the value of the <xref:System.IO.FileNotFoundException.Message%2A> property, the result of calling ToString on the inner exception, the value of the <xref:System.IO.FileNotFoundException.FileName%2A> property, and the result of calling <xref:System.Environment.StackTrace%2A>. If any of these members is a null reference, its value is not included in the returned string.  
+ 
  ]]></format>
         </remarks>
       </Docs>

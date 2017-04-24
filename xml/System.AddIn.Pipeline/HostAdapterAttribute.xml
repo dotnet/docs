@@ -19,20 +19,20 @@
     <summary>Identifies an object as a host-side adapter segment of the pipeline.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.AddIn.Hosting.AddInStore.Rebuild%2A> and <xref:System.AddIn.Hosting.AddInStore.Update%2A> methods, which maintain the store of information about available pipeline segments, use this attribute to identify a host-side adapter.  
+The <xref:System.AddIn.Hosting.AddInStore.Rebuild%2A> and <xref:System.AddIn.Hosting.AddInStore.Update%2A> methods, which maintain the store of information about available pipeline segments, use this attribute to identify a host-side adapter.  
+ 
+This attribute should be used only on types that activate the segments of the pipeline. Types that represent objects passed between the host and the add-in do not need this attribute.  
+ 
   
- This attribute should be used only on types that activate the segments of the pipeline. Types that represent objects passed between the host and the add-in do not need this attribute.  
-  
-   
-  
+ 
 ## Examples  
- The following example identifies a host-side adapter.  
-  
- [!code-csharp[AddInP1HostSideAdapters#2](~/samples/snippets/csharp/VS_Snippets_CLR/AddInP1HostSideAdapters/cs/Calc1ContractToViewHostSideAdapter.cs#2)]
- [!code-vb[AddInP1HostSideAdapters#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInP1HostSideAdapters/vb/Calc1ContractToViewHostSideAdapter.vb#2)]  
-  
+The following example identifies a host-side adapter.  
+ 
+[!code-csharp[AddInP1HostSideAdapters#2](~/samples/snippets/csharp/VS_Snippets_CLR/AddInP1HostSideAdapters/cs/Calc1ContractToViewHostSideAdapter.cs#2)]
+[!code-vb[AddInP1HostSideAdapters#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInP1HostSideAdapters/vb/Calc1ContractToViewHostSideAdapter.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

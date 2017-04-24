@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ItemPropertyInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `descriptor` parameter can be any object that contains information about the property, such as a <xref:System.ComponentModel.PropertyDescriptor> or <xref:System.Reflection.PropertyInfo> object.  
-  
+The `descriptor` parameter can be any object that contains information about the property, such as a <xref:System.ComponentModel.PropertyDescriptor> or <xref:System.Reflection.PropertyInfo> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,10 +61,10 @@
         <value>An object that contains additional information about the property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.ItemPropertyInfo.Descriptor%2A> can be any object that contains information about the property, such as a <xref:System.ComponentModel.PropertyDescriptor> or <xref:System.Reflection.PropertyInfo> object.  
-  
+<xref:System.ComponentModel.ItemPropertyInfo.Descriptor%2A> can be any object that contains information about the property, such as a <xref:System.ComponentModel.PropertyDescriptor> or <xref:System.Reflection.PropertyInfo> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

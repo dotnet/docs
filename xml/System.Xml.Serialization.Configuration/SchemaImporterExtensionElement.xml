@@ -14,18 +14,18 @@
     <summary>Handles the configuration for the <see cref="T:System.Xml.Serialization.XmlSchemaImporter" /> class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used by the serialization infrastructure to handle the configuration elements and cannot be used directly. For more information about configuration files, see [Configuration File Schema](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38).  
-  
- Instead, to configure the <xref:System.Xml.Serialization.XmlSchemaImporter>, create an application configuration file and use the following XML elements to specify types used by the class when mapping XSD types to .Net Framework types:  
-  
+This class is used by the serialization infrastructure to handle the configuration elements and cannot be used directly. For more information about configuration files, see [Configuration File Schema](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38).  
+ 
+Instead, to configure the <xref:System.Xml.Serialization.XmlSchemaImporter>, create an application configuration file and use the following XML elements to specify types used by the class when mapping XSD types to .Net Framework types:  
+ 
 -   [\&lt;system.xml.serialization\&gt; Element](~/docs/framework/serialization/system-xml-serialization-element.md)  
-  
+ 
 -   [\&lt;schemaImporterExtensions\&gt; Element](~/docs/framework/serialization/schemaimporterextensions-element.md)  
-  
+ 
 -   [\&lt;add\&gt; Element for \&lt;xmlSchemaImporterExtensions\&gt;](~/docs/framework/serialization/add-element-for-xmlschemaimporterextensions.md)  
-  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -111,10 +111,10 @@
         <value>The name of the extension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name must be unique.  
-  
+The name must be unique.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -18,10 +18,10 @@
     <summary>Represents a parameter that is used for master-detail filters in which a data source gets information from another data control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.DynamicControlParameter> object is used in the `Where` parameters collection of the data source control's query. The parameter object automatically filters by primary key or foreign keys between the two controls and supports multi-part keys automatically.  
-  
+The <xref:System.Web.DynamicData.DynamicControlParameter> object is used in the `Where` parameters collection of the data source control's query. The parameter object automatically filters by primary key or foreign keys between the two controls and supports multi-part keys automatically.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,10 +100,10 @@
         <returns>A <see cref="T:System.InvalidOperationException" /> object that indicates the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control is missing.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should not be called by the page developer.  
-  
+This method should not be called by the page developer.  
+ 
  ]]></format>
         </remarks>
       </Docs>

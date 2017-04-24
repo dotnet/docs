@@ -14,22 +14,22 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> objects in a <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class is used to store and manage a collection of <xref:System.Web.UI.WebControls.SubMenuStyle> objects in a <xref:System.Web.UI.WebControls.Menu> control. The <xref:System.Web.UI.WebControls.Menu> control uses the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class as the underlying data type of the <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property.  
+The <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class is used to store and manage a collection of <xref:System.Web.UI.WebControls.SubMenuStyle> objects in a <xref:System.Web.UI.WebControls.Menu> control. The <xref:System.Web.UI.WebControls.Menu> control uses the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class as the underlying data type of the <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property.  
+ 
+The <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property provides additional style choices in addition to the <xref:System.Web.UI.WebControls.Menu.StaticMenuStyle%2A> and <xref:System.Web.UI.WebControls.Menu.DynamicMenuStyle%2A> properties. The first style in the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection corresponds to the submenu style for the first level of the menu. The second style in the collection corresponds to the submenu style for the second level of the menu, and so on. The <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property is most often used to generate a navigation menu, like a Web site map, where menu items at a certain level should have the same appearance, regardless of whether they have submenus.  
+ 
+The <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class inherits most of its members from the <xref:System.Web.UI.StateManagedCollection> class. For more information on the inherited members, see the <xref:System.Web.UI.StateManagedCollection> collection.  
+ 
   
- The <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property provides additional style choices in addition to the <xref:System.Web.UI.WebControls.Menu.StaticMenuStyle%2A> and <xref:System.Web.UI.WebControls.Menu.DynamicMenuStyle%2A> properties. The first style in the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection corresponds to the submenu style for the first level of the menu. The second style in the collection corresponds to the submenu style for the second level of the menu, and so on. The <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property is most often used to generate a navigation menu, like a Web site map, where menu items at a certain level should have the same appearance, regardless of whether they have submenus.  
-  
- The <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class inherits most of its members from the <xref:System.Web.UI.StateManagedCollection> class. For more information on the inherited members, see the <xref:System.Web.UI.StateManagedCollection> collection.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class to specify the style settings for the submenus in a <xref:System.Web.UI.WebControls.Menu> control based on the submenu's level. In this example, the <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property returns a <xref:System.Web.UI.WebControls.SubMenuStyleCollection> object.  
-  
- <!-- TODO: review snippet reference [!code-csharp[MenuLevelSubMenuStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelSubMenuStyles/CS/menulevelsubmenustylescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuLevelSubMenuStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelSubMenuStyles/VB/menulevelsubmenustylesvb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class to specify the style settings for the submenus in a <xref:System.Web.UI.WebControls.Menu> control based on the submenu's level. In this example, the <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property returns a <xref:System.Web.UI.WebControls.SubMenuStyleCollection> object.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[MenuLevelSubMenuStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelSubMenuStyles/CS/menulevelsubmenustylescs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[MenuLevelSubMenuStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelSubMenuStyles/VB/menulevelsubmenustylesvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <returns>The position in the collection at which the <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> instance was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert%2A> and <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> methods are called before the <xref:System.Web.UI.WebControls.SubMenuStyle> instance is added to the collection, and the <xref:System.Web.UI.StateManagedCollection.OnInsertComplete%2A> method is called after the <xref:System.Web.UI.WebControls.SubMenuStyle> instance is added.  
-  
+The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert%2A> and <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> methods are called before the <xref:System.Web.UI.WebControls.SubMenuStyle> instance is added to the collection, and the <xref:System.Web.UI.StateManagedCollection.OnInsertComplete%2A> method is called after the <xref:System.Web.UI.WebControls.SubMenuStyle> instance is added.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,10 +85,10 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> instance is found in the <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> collection; otherwise, <see langword="false" />. If <see langword="null" /> is passed as the <paramref name="style" /> parameter, <see langword="false" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the `style` parameter before the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection is checked.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the `style` parameter before the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection is checked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
         <summary>Copies the contents of a <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> collection to an array, starting at a specified array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SubMenuStyle> objects are copied to the destination array in the same order in which the enumerator iterates through the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
-  
+The <xref:System.Web.UI.WebControls.SubMenuStyle> objects are copied to the destination array in the same order in which the enumerator iterates through the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -158,15 +158,15 @@
         <returns>Always returns an empty <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType%2A> method is a helper function that is used to create an <xref:System.Object> of the data type that corresponds to the specified index. The index is often determined by using the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes%2A> method to create an array of supported data types and then searching the array for the desired data type.  
-  
- The `index` parameter is not used in this implementation of the method and is ignored. You should always pass in `null` for this parameter. This implementation of the method always returns an empty <xref:System.Web.UI.WebControls.SubMenuStyle> object.  
-  
+The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType%2A> method is a helper function that is used to create an <xref:System.Object> of the data type that corresponds to the specified index. The index is often determined by using the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes%2A> method to create an array of supported data types and then searching the array for the desired data type.  
+ 
+The `index` parameter is not used in this implementation of the method and is ignored. You should always pass in `null` for this parameter. This implementation of the method always returns an empty <xref:System.Web.UI.WebControls.SubMenuStyle> object.  
+ 
 > [!NOTE]
 >  This method is used only by control developers.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,13 +189,13 @@
         <returns>An array of <see cref="T:System.Type" /> objects that contains the data types supported by the <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes%2A> method is a helper function that is used to create an array of data types supported by the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class. The array is often searched to determine the index of a desired data type. The index is then passed to the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType%2A> method to create an <xref:System.Object?displayProperty=fullName> of the corresponding data type.  
-  
+The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes%2A> method is a helper function that is used to create an array of data types supported by the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class. The array is often searched to determine the index of a desired data type. The index is then passed to the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType%2A> method to create an <xref:System.Object?displayProperty=fullName> of the corresponding data type.  
+ 
 > [!NOTE]
 >  This method is used only by control developers.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,10 +221,10 @@
         <returns>The index of the specified <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> object if it is found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the `style` parameter before the index is returned.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the `style` parameter before the index is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,12 +251,12 @@
         <summary>Inserts a <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> object into the <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If index is -1, `style` is inserted at the beginning of the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection. If index equals the number of items in the collection, `style` is appended to the end of the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
-  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the style parameter before it is added to the collection. The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert%2A> method is called before the <xref:System.Web.UI.WebControls.SubMenuStyle> object is inserted into the collection, and the <xref:System.Web.UI.StateManagedCollection.OnInsertComplete%2A> method is called after the object is inserted.  
-  
+If index is -1, `style` is inserted at the beginning of the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection. If index equals the number of items in the collection, `style` is appended to the end of the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
+ 
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the style parameter before it is added to the collection. The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert%2A> method is called before the <xref:System.Web.UI.WebControls.SubMenuStyle> object is inserted into the collection, and the <xref:System.Web.UI.StateManagedCollection.OnInsertComplete%2A> method is called after the object is inserted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="index" /> is outside the range of the collection.</exception>
@@ -309,10 +309,10 @@
         <summary>Called before the <see cref="M:System.Web.UI.WebControls.SubMenuStyleCollection.Add(System.Web.UI.WebControls.SubMenuStyle)" /> and <see cref="M:System.Web.UI.WebControls.SubMenuStyleCollection.Insert(System.Int32,System.Web.UI.WebControls.SubMenuStyle)" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert%2A> method is called before the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.Add%2A> and <xref:System.Web.UI.WebControls.SubMenuStyleCollection.Insert%2A> methods. You can override the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert%2A> method in custom <xref:System.Web.UI.WebControls.SubMenuStyleCollection> classes to perform custom processing of <xref:System.Web.UI.WebControls.SubMenuStyle> objects before they are added to the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
-  
+The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert%2A> method is called before the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.Add%2A> and <xref:System.Web.UI.WebControls.SubMenuStyleCollection.Insert%2A> methods. You can override the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert%2A> method in custom <xref:System.Web.UI.WebControls.SubMenuStyleCollection> classes to perform custom processing of <xref:System.Web.UI.WebControls.SubMenuStyle> objects before they are added to the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -339,12 +339,12 @@
         <summary>Removes the first occurrence of the specified <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> object from the <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the style parameter before it is used to locate the <xref:System.Web.UI.WebControls.SubMenuStyle> object to remove from the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
-  
- The <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method is called before the <xref:System.Web.UI.WebControls.SubMenuStyle> object is removed, and the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method is called after the object is removed from the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the style parameter before it is used to locate the <xref:System.Web.UI.WebControls.SubMenuStyle> object to remove from the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
+ 
+The <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method is called before the <xref:System.Web.UI.WebControls.SubMenuStyle> object is removed, and the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method is called after the object is removed from the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> collection is read-only.</exception>
@@ -370,10 +370,10 @@
         <summary>Removes the <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> object at the specified location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method is called before the <xref:System.Web.UI.WebControls.SubMenuStyle> object is removed from the collection, and the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method is called after the object is removed from the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method is called before the <xref:System.Web.UI.WebControls.SubMenuStyle> object is removed from the collection, and the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method is called after the object is removed from the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> collection is read-only.</exception>
@@ -405,10 +405,10 @@
         <summary>Instructs a <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> object contained by the <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> collection to record its entire state to view state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.SetDirtyObject%2A> method is called internally by the <xref:System.Web.UI.IStateManager.SaveViewState%2A>, <xref:System.Web.UI.WebControls.SubMenuStyleCollection.Add%2A>, and <xref:System.Web.UI.WebControls.SubMenuStyleCollection.Insert%2A> methods.  
-  
+The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.SetDirtyObject%2A> method is called internally by the <xref:System.Web.UI.IStateManager.SaveViewState%2A>, <xref:System.Web.UI.WebControls.SubMenuStyleCollection.Add%2A>, and <xref:System.Web.UI.WebControls.SubMenuStyleCollection.Insert%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>

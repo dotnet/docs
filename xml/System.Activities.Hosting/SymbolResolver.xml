@@ -107,10 +107,10 @@
         <summary>Adds a symbol using the specified symbol name and type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The symbol is added with the default value for the specified type.  
-  
+The symbol is added with the default value for the specified type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,10 +306,10 @@
           <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `false`.  
-  
+This property always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,10 +418,10 @@
         <returns>An enumerator that iterates through a collection of key/value pairs.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.Hosting.SymbolResolver> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.Hosting.SymbolResolver> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

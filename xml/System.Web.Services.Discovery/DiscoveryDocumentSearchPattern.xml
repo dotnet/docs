@@ -15,10 +15,10 @@
     <summary>Obtains the file locations of Web services discovery documents for use in populating another Web services discovery document. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Discovery.DiscoveryDocumentSearchPattern> class inherits from the abstract <xref:System.Web.Services.Discovery.DiscoverySearchPattern> class and is employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. Normally, none of these classes need to be used directly by a developer.  
-  
+The <xref:System.Web.Services.Discovery.DiscoveryDocumentSearchPattern> class inherits from the abstract <xref:System.Web.Services.Discovery.DiscoverySearchPattern> class and is employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. Normally, none of these classes need to be used directly by a developer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,12 +61,12 @@
         <returns>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocumentReference" /> object that specifies the location of a .vsdisco file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The concrete <xref:System.Web.Services.Discovery.DiscoveryDocumentReference> class inherits from the abstract <xref:System.Web.Services.Discovery.DiscoveryReference> class.  
-  
- A <xref:System.Web.Services.Discovery.DiscoveryDocumentReference> instance contains the location of the .vsdisco file, which is also the file system directory corresponding to the HTTP request passed to the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method.  
-  
+The concrete <xref:System.Web.Services.Discovery.DiscoveryDocumentReference> class inherits from the abstract <xref:System.Web.Services.Discovery.DiscoveryReference> class.  
+ 
+A <xref:System.Web.Services.Discovery.DiscoveryDocumentReference> instance contains the location of the .vsdisco file, which is also the file system directory corresponding to the HTTP request passed to the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <value>The literal string "*.vsdisco".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The pattern "*.vsdisco" indicates a .vsdisco Web services discovery document extension. The <xref:System.Web.Services.Discovery.DiscoveryDocumentLinksPattern> class, on the other hand, indicates a .disco extension.  
-  
+The pattern "*.vsdisco" indicates a .vsdisco Web services discovery document extension. The <xref:System.Web.Services.Discovery.DiscoveryDocumentLinksPattern> class, on the other hand, indicates a .disco extension.  
+ 
  ]]></format>
         </remarks>
       </Docs>

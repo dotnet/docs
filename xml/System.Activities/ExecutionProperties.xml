@@ -18,14 +18,14 @@
     <summary>Represents the collection of properties at a particular scope.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Through thread local storage (TLS), the CLR maintains an execution context for each thread. This execution context governs well-known thread properties such as the thread identity, the ambient transaction, and the current permission set as well as user-defined thread properties like named slots.  
-  
- Unlike programs directly targeting the CLR, workflow programs are hierarchically-scoped trees that execute in a thread-agnostic environment. This implies that the standard TLS mechanisms cannot directly be used to determine what context is in scope for a given work item. For example, two parallel branches of execution might use different identities yet the scheduler might interleave their execution on the same CLR thread.  
-  
- Execution properties allow an activity to declare which properties are in scope for its sub-tree as well as provide hooks for setting up and tearing down TLS to properly interoperate with CLR objects.  
-  
+Through thread local storage (TLS), the CLR maintains an execution context for each thread. This execution context governs well-known thread properties such as the thread identity, the ambient transaction, and the current permission set as well as user-defined thread properties like named slots.  
+ 
+Unlike programs directly targeting the CLR, workflow programs are hierarchically-scoped trees that execute in a thread-agnostic environment. This implies that the standard TLS mechanisms cannot directly be used to determine what context is in scope for a given work item. For example, two parallel branches of execution might use different identities yet the scheduler might interleave their execution on the same CLR thread.  
+ 
+Execution properties allow an activity to declare which properties are in scope for its sub-tree as well as provide hooks for setting up and tearing down TLS to properly interoperate with CLR objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -99,10 +99,10 @@
         <returns>The nearest property of the given name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.ExecutionProperties.Find%2A> finds the nearest visible property using hierarchical scoping. If two properties have the same name, the closest property at the parent scope is returned.  
-  
+<xref:System.Activities.ExecutionProperties.Find%2A> finds the nearest visible property using hierarchical scoping. If two properties have the same name, the closest property at the parent scope is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
           <see langword="true" /> if the property was unregistered; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties are automatically unregistered when the activity completes. This method can be used to unregister a property before the activity completes.  
-  
+Properties are automatically unregistered when the activity completes. This method can be used to unregister a property before the activity completes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -27,12 +27,12 @@
     <summary>Contains statistical information about an open storage, stream, or byte-array object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <summary>Specifies the last access time for this storage, stream, or byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <summary>Specifies the size, in bytes, of the stream or byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,12 +140,12 @@
         <summary>Indicates the class identifier for the storage object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is initialized to `CLSID_NULL` for new storage objects.  
-  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+This field is initialized to `CLSID_NULL` for new storage objects.  
+ 
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <summary>Indicates the creation time for this storage, stream, or byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <summary>Indicates the types of region locking supported by the stream or byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -253,10 +253,10 @@
         <summary>Indicates the access mode that was specified when the object was opened.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,10 +290,10 @@
         <summary>Indicates the current state bits of the storage object (the value most recently set by the <see langword="IStorage::SetStateBits" /> method).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,10 +327,10 @@
         <summary>Indicates the last modification time for this storage, stream, or byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,10 +364,10 @@
         <summary>Represents a pointer to a null-terminated string containing the name of the object described by this structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,10 +401,10 @@
         <summary>Reserved for future use.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -438,10 +438,10 @@
         <summary>Indicates the type of storage object, which is one of the values from the <see langword="STGTY" /> enumeration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `STATSTG` in the MSDN library.  
-  
+For more information, see the existing documentation for `STATSTG` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

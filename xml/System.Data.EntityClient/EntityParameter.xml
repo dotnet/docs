@@ -14,10 +14,10 @@
     <summary>Represents a parameter used in EntityCommand.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No content here will be updated; please do not add material here.  
-  
+No content here will be updated; please do not add material here.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -198,10 +198,10 @@
         <value>The type of the parameter, expressed as an EdmType.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- May be null (which is what it will be if unset). This means that the DbType contains all the type information. Non-null values must not contradict DbType (only restate or specialize).  
-  
+May be null (which is what it will be if unset). This means that the DbType contains all the type information. Non-null values must not contradict DbType (only restate or specialize).  
+ 
  ]]></format>
         </remarks>
       </Docs>

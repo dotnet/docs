@@ -30,10 +30,10 @@
     <summary>The exception that is thrown in a thread upon cancellation of an operation that the thread was executing.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the task that was canceled had an associated cancellation token, it is returned by the <xref:System.OperationCanceledException.CancellationToken%2A> property, and the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=fullName> property of the token is set to `true`.  
-  
+If the task that was canceled had an associated cancellation token, it is returned by the <xref:System.OperationCanceledException.CancellationToken%2A> property, and the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=fullName> property of the token is set to `true`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,18 +62,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.OperationCanceledException" /> class with a system-supplied error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "The operation was canceled." This message takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "The operation was canceled." This message takes into account the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A nullreference (`Nothing` in Visual Basic).|  
 |<xref:System.Exception.Message%2A>|The localized error message string.|  
 |<xref:System.OperationCanceledException.CancellationToken%2A>|A cancellation token created in the non-canceled state.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,18 +105,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.OperationCanceledException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
-  
+The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
 |<xref:System.OperationCanceledException.CancellationToken%2A>|A cancellation token created in the non-canceled state.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,18 +148,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.OperationCanceledException" /> class with a cancellation token.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "The operation was canceled." This message takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "The operation was canceled." This message takes into account the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A nullreference (`Nothing` in Visual Basic).|  
 |<xref:System.Exception.Message%2A>|The localized error message string.|  
 |<xref:System.OperationCanceledException.CancellationToken%2A>|`token`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,10 +188,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.OperationCanceledException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md)  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,20 +225,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.OperationCanceledException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
-  
+The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
+ 
 |Property Type|Condition|  
 |-------------------|---------------|  
 |<xref:System.Exception.InnerException%2A>|`innerException`.|  
 |<xref:System.Exception.Message%2A>|`message`.|  
 |<xref:System.OperationCanceledException.CancellationToken%2A>|A cancellation token created in the non-canceled state.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,18 +272,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.OperationCanceledException" /> class with a specified error message and a cancellation token.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
-  
+The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.Exception.Message%2A>|`message`.|  
 |<xref:System.OperationCanceledException.CancellationToken%2A>|`token`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -319,20 +319,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.OperationCanceledException" /> class with a specified error message, a reference to the inner exception that is the cause of this exception, and a cancellation token.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
-  
+The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.OperationCanceledException>.  
+ 
 |Property Type|Condition|  
 |-------------------|---------------|  
 |<xref:System.Exception.InnerException%2A>|`innerException`.|  
 |<xref:System.Exception.Message%2A>|`message`.|  
 |<xref:System.OperationCanceledException.CancellationToken%2A>|`token`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,10 +364,10 @@
         <value>A token associated with the operation that was canceled, or a default token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the token is associated with a canceled operation, the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=fullName> property of the token returns `true`.  
-  
+If the token is associated with a canceled operation, the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=fullName> property of the token returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

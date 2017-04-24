@@ -136,10 +136,10 @@
         <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called once for each listen URI. For example, if a service has four endpoints, and two of them have the same listen URI, then this method gets called three times. The reason is that the `bindingParameters` target each channel stack and there is one channel stack for each listen URI. Because each call receives those endpoints at that listen URI, two calls each get a single <xref:System.ServiceModel.Description.ServiceEndpoint>, and one call gets a collection of two <xref:System.ServiceModel.Description.ServiceEndpoint> objects.  
-  
+This method is called once for each listen URI. For example, if a service has four endpoints, and two of them have the same listen URI, then this method gets called three times. The reason is that the `bindingParameters` target each channel stack and there is one channel stack for each listen URI. Because each call receives those endpoints at that listen URI, two calls each get a single <xref:System.ServiceModel.Description.ServiceEndpoint>, and one call gets a collection of two <xref:System.ServiceModel.Description.ServiceEndpoint> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>

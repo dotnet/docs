@@ -26,12 +26,12 @@
     <summary>Represents a content anchor or cargo resource for an <see cref="T:System.Windows.Annotations.Annotation" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Annotations.AnnotationResource> elements are used to model <xref:System.Windows.Annotations.Annotation.Anchors%2A> (the data that is being annotated) and <xref:System.Windows.Annotations.Annotation.Cargos%2A> (the data provided by the user such as a text note) in an <xref:System.Windows.Annotations.Annotation>.  
-  
- Through the use of <xref:System.Windows.Annotations.AnnotationResource.ContentLocators%2A> an <xref:System.Windows.Annotations.AnnotationResource> can refer to the content, directly contain the content, or both.  
-  
+<xref:System.Windows.Annotations.AnnotationResource> elements are used to model <xref:System.Windows.Annotations.Annotation.Anchors%2A> (the data that is being annotated) and <xref:System.Windows.Annotations.Annotation.Cargos%2A> (the data provided by the user such as a text note) in an <xref:System.Windows.Annotations.Annotation>.  
+ 
+Through the use of <xref:System.Windows.Annotations.AnnotationResource.ContentLocators%2A> an <xref:System.Windows.Annotations.AnnotationResource> can refer to the content, directly contain the content, or both.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is intended for annotation serializer use only.  For application needs, use the <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor that accepts a specified `name` parameter.  
-  
+This constructor is intended for annotation serializer use only.  For application needs, use the <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor that accepts a specified `name` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
         <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is intended for annotation serializer use only.  For application needs, use the <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor that accepts a specified `name` parameter.  
-  
+This constructor is intended for annotation serializer use only.  For application needs, use the <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor that accepts a specified `name` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -102,12 +102,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationResource" /> class with a specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `name` parameter is provided for convenience only and no validation is performed on the string.  
-  
- The <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor automatically creates a unique [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] that is accessible through the <xref:System.Windows.Annotations.AnnotationResource.Id%2A> property.  
-  
+The `name` parameter is provided for convenience only and no validation is performed on the string.  
+ 
+The <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor automatically creates a unique [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] that is accessible through the <xref:System.Windows.Annotations.AnnotationResource.Id%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -131,10 +131,10 @@
         <value>The collection of content locators contained in this resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Annotations.AnnotationResource.ContentLocators%2A> property will never return `null`, however the collection may be empty if the resource contains no content locators.  
-  
+The <xref:System.Windows.Annotations.AnnotationResource.ContentLocators%2A> property will never return `null`, however the collection may be empty if the resource contains no content locators.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <value>The collection of the <see cref="T:System.Xml.XmlElement" /> objects that define the content of this resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Annotations.AnnotationResource.Contents%2A> never returns `null`; however the <xref:System.Xml.XmlElement> collection may be empty if the resource contains no content.  
-  
+<xref:System.Windows.Annotations.AnnotationResource.Contents%2A> never returns `null`; however the <xref:System.Xml.XmlElement> collection may be empty if the resource contains no content.  
+ 
  ]]></format>
         </remarks>
       </Docs>

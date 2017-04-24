@@ -14,16 +14,16 @@
     <summary>Defines a set of default cursors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static class defines a set of default cursors common to applications.  
-  
- The various static properties defining cursors are not directly usable in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], but are indirectly used through two possible mechanisms:  
-  
+This static class defines a set of default cursors common to applications.  
+ 
+The various static properties defining cursors are not directly usable in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], but are indirectly used through two possible mechanisms:  
+ 
 -   The <xref:System.Windows.Input.Cursor> class performs type conversion on any [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute that takes type <xref:System.Windows.Input.Cursor>, such that a value of the <xref:System.Windows.Input.CursorType> enumeration specified as the attribute value will evaluate to one of the static <xref:System.Windows.Input.Cursors> properties.  
-  
+ 
 -   A static property value can be used through the [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,14 +45,14 @@
         <value>The AppStarting cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.Cursors.AppStarting%2A> typically indicates that the system is loading information, but the user interface can handle input.  
-  
+The <xref:System.Windows.Input.Cursors.AppStarting%2A> typically indicates that the system is loading information, but the user interface can handle input.  
+ 
 <a name="xamlTextUsage_AppStarting"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,14 +74,14 @@
         <value>The arrow cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The arrow <xref:System.Windows.Input.Cursor> is typically the default cursor.  
-  
+The arrow <xref:System.Windows.Input.Cursor> is typically the default cursor.  
+ 
 <a name="xamlTextUsage_Arrow"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,13 +103,13 @@
         <value>The arrowCd cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ArrowCD"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,14 +131,14 @@
         <value>The Crosshair cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This cursor typically appears over regions in which a drawing operation can be performed.  
-  
+This cursor typically appears over regions in which a drawing operation can be performed.  
+ 
 <a name="xamlTextUsage_Cross"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,14 +160,14 @@
         <value>The hand cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hand <xref:System.Windows.Input.Cursor> typically indicates the pointer is over a link.  
-  
+The hand <xref:System.Windows.Input.Cursor> typically indicates the pointer is over a link.  
+ 
 <a name="xamlTextUsage_Hand"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,14 +189,14 @@
         <value>The help cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this cursor is displayed when context-sensitive help is available.  
-  
+Typically, this cursor is displayed when context-sensitive help is available.  
+ 
 <a name="xamlTextUsage_Help"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,13 +218,13 @@
         <value>The IBeam cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_IBeam"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,13 +246,13 @@
         <value>The No cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_No"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,14 +274,14 @@
         <value>The none cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.Cursors.None%2A> cursor provides a means of hiding the cursor.  
-  
+The <xref:System.Windows.Input.Cursors.None%2A> cursor provides a means of hiding the cursor.  
+ 
 <a name="xamlTextUsage_None"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,13 +303,13 @@
         <value>The pen cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Pen"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,13 +331,13 @@
         <value>The scroll all cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollAll"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,13 +359,13 @@
         <value>A scroll east cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollE"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,13 +387,13 @@
         <value>A scroll north cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollN"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,13 +433,13 @@
         <value>A scroll north/south <see cref="T:System.Windows.Input.Cursor" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollNS"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,13 +461,13 @@
         <value>The scroll northwest <see cref="T:System.Windows.Input.Cursor" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollNW"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,13 +489,13 @@
         <value>The scroll south cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollS"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -517,13 +517,13 @@
         <value>The south/east scrolling cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollSE"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -545,13 +545,13 @@
         <value>The scroll southwest cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollSW"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -573,13 +573,13 @@
         <value>The scroll west cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollW"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -601,13 +601,13 @@
         <value>A west/east scrolling cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ScrollWE"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -629,13 +629,13 @@
         <value>A four-headed sizing cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_SizeAll"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,13 +657,13 @@
         <value>A two-headed northeast/southwest sizing cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_SizeNESW"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -685,13 +685,13 @@
         <value>A two-headed north/south sizing cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_SizeNS"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -713,13 +713,13 @@
         <value>A two-headed northwest/southwest sizing cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_SizeNWSE"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -759,13 +759,13 @@
         <value>An up arrow cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_UpArrow"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -787,14 +787,14 @@
         <value>A wait cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Windows.Input.Cursor> typically indicates that the application is busy performing an operation.  
-  
+This <xref:System.Windows.Input.Cursor> typically indicates that the application is busy performing an operation.  
+ 
 <a name="xamlTextUsage_Wait"></a>   
 ## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
+See Remark on <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

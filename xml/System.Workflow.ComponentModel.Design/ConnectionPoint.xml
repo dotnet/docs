@@ -19,14 +19,14 @@
     <summary>Represents a connection point that is displayed on the outer edges of an activity designer on a workflow design surface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A connection point appears as a small square on the edge of an activity designer surface. It is used as a point where a Connector can originate on the activity designer to connect it with another activity designer.  
-  
+ 
+A connection point appears as a small square on the edge of an activity designer surface. It is used as a point where a Connector can originate on the activity designer to connect it with another activity designer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -132,10 +132,10 @@
         <value>An integer that represents the connection index for the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An activity designer uses <xref:System.Workflow.ComponentModel.Design.ConnectionPoint.ConnectionIndex%2A> to identify a <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> in the read-only <xref:System.Drawing.Point> collection returned by <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.GetConnections%2A>.  
-  
+An activity designer uses <xref:System.Workflow.ComponentModel.Design.ConnectionPoint.ConnectionIndex%2A> to identify a <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> in the read-only <xref:System.Drawing.Point> collection returned by <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.GetConnections%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save%2A> method must be called to commit the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass> object that was created to the underlying directory store.  
-  
+The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save%2A> method must be called to commit the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass> object that was created to the underlying directory store.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -218,10 +218,10 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" /> collection of the properties of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />, including ancestor properties.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the method is called on an unbound object instance, an empty <xref:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection> collection is returned.  
-  
+If the method is called on an unbound object instance, an empty <xref:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection> collection is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
@@ -421,10 +421,10 @@
         <value>A <see cref="T:System.Guid" /> object that contains the schemaIDGUID for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object. For more information, see the topic "schemaIDGUID" or "Schema-ID-GUID" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.SchemaGuid%2A> is used in many Active Directory Domain Services configuration operations, such as managing extended rights.  
-  
+The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.SchemaGuid%2A> is used in many Active Directory Domain Services configuration operations, such as managing extended rights.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>

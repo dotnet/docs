@@ -48,15 +48,15 @@
         <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Xml.XPath.IXPathNavigable.CreateNavigator%2A> method is called from an <xref:System.Xml.XmlNode> object, the <xref:System.Xml.XPath.XPathNavigator> object is initially positioned on the node from which the method was called. If the <xref:System.Xml.XPath.IXPathNavigable.CreateNavigator%2A> method is called from an <xref:System.Xml.XPath.XPathDocument> object or an <xref:System.Xml.XmlDocument> object, the <xref:System.Xml.XPath.XPathNavigator> object is positioned on the root of the document.  
+If the <xref:System.Xml.XPath.IXPathNavigable.CreateNavigator%2A> method is called from an <xref:System.Xml.XmlNode> object, the <xref:System.Xml.XPath.XPathNavigator> object is initially positioned on the node from which the method was called. If the <xref:System.Xml.XPath.IXPathNavigable.CreateNavigator%2A> method is called from an <xref:System.Xml.XPath.XPathDocument> object or an <xref:System.Xml.XmlDocument> object, the <xref:System.Xml.XPath.XPathNavigator> object is positioned on the root of the document.  
+ 
   
-   
-  
+ 
 ## Examples  
- For examples of the <xref:System.Xml.XPath.IXPathNavigable.CreateNavigator%2A> method, see the <xref:System.Xml.XmlNode>, <xref:System.Xml.XPath.XPathDocument>, or <xref:System.Xml.XmlDocument> classes.  
-  
+For examples of the <xref:System.Xml.XPath.IXPathNavigable.CreateNavigator%2A> method, see the <xref:System.Xml.XmlNode>, <xref:System.Xml.XPath.XPathDocument>, or <xref:System.Xml.XmlDocument> classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

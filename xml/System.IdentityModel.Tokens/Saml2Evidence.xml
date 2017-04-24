@@ -14,12 +14,12 @@
     <summary>Represents the Evidence element specified in [Saml2Core, 2.7.4.3].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Contains one or more assertions or assertion references that the SAML authority relied on in issuing the authorization decision. [Saml2Core, 2.7.4.3]  
-  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+Contains one or more assertions or assertion references that the SAML authority relied on in issuing the authorization decision. [Saml2Core, 2.7.4.3]  
+ 
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Evidence" /> class with the specified assertion.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified assertion is added to the collection accessed through the <xref:System.IdentityModel.Tokens.Saml2Evidence.Assertions%2A> property.  
-  
+The specified assertion is added to the collection accessed through the <xref:System.IdentityModel.Tokens.Saml2Evidence.Assertions%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -83,10 +83,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Evidence" /> class with an ID that references an assertion.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified ID is added to the collection accessed through the <xref:System.IdentityModel.Tokens.Saml2Evidence.AssertionIdReferences%2A> property.  
-  
+The specified ID is added to the collection accessed through the <xref:System.IdentityModel.Tokens.Saml2Evidence.AssertionIdReferences%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -110,10 +110,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Evidence" /> class with a URI that references an assertion.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified URI is added to the collection accessed through the <xref:System.IdentityModel.Tokens.Saml2Evidence.AssertionUriReferences%2A> property.  
-  
+The specified URI is added to the collection accessed through the <xref:System.IdentityModel.Tokens.Saml2Evidence.AssertionUriReferences%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

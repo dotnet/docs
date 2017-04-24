@@ -19,14 +19,14 @@
     <summary>Represents a condition that compares the value of an activity member to a specified value by using a specified comparison operator.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- You can use an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition> to constrain a <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> or an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation>.  
-  
+ 
+You can use an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition> to constrain a <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> or an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingCondition" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you use the default constructor, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A>. You must also set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A>. The default value of <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A> is `Equals`.  
-  
+If you use the default constructor, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A>. You must also set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A>. The default value of <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A> is `Equals`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingCondition" /> class by specifying an activity member and a value for comparison.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A> is set to `member`, and <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A> is set to `value`. The default value of <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A> is `Equals`.  
-  
+<xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A> is set to `member`, and <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A> is set to `value`. The default value of <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A> is `Equals`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -99,22 +99,22 @@
         <value>The dot delineated name of the activity member</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can specify an activity property or field, a member of an activity property or field, or a single element of an activity property or field (or a member of either) that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, you can specify a single element of a collection.  
+You can specify an activity property or field, a member of an activity property or field, or a single element of an activity property or field (or a member of either) that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, you can specify a single element of a collection.  
+ 
+If you use the default constructor for <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition>, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A>.  
+ 
+The value of the specified activity member is compared with <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A> by applying <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A>.  
+ 
   
- If you use the default constructor for <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition>, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A>.  
-  
- The value of the specified activity member is compared with <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A> by applying <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates accessing the Member property.  This example is from the Tracking Profile Designer SDK sample.  For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
-  
- [!code-csharp[WF_Samples#120](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#120)]
- [!code-vb[WF_Samples#120](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#120)]  
-  
+The following code sample demonstrates accessing the Member property.  This example is from the Tracking Profile Designer SDK sample.  For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ 
+[!code-csharp[WF_Samples#120](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#120)]
+[!code-vb[WF_Samples#120](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#120)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The condition was evaluated and <see cref="P:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
@@ -139,10 +139,10 @@
         <value>One of the <see cref="T:System.Workflow.Runtime.Tracking.ComparisonOperator" /> values. The default is <see langword="Equals" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Currently only supports `Equals` and `NotEquals`.  
-  
+Currently only supports `Equals` and `NotEquals`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,22 +164,22 @@
         <value>The value used in the comparison.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A> is compared to the value of  
+<xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A> is compared to the value of  
+ 
+<xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A> by applying <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A>.  
+ 
+If you use the default constructor for <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition>, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A>.  
+ 
   
- <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A> by applying <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A>.  
-  
- If you use the default constructor for <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition>, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates accessing the Value property.  This example is from the Tracking Profile Designer SDK sample.  For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
-  
- [!code-csharp[WF_Samples#120](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#120)]
- [!code-vb[WF_Samples#120](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#120)]  
-  
+The following code sample demonstrates accessing the Value property.  This example is from the Tracking Profile Designer SDK sample.  For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ 
+[!code-csharp[WF_Samples#120](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#120)]
+[!code-vb[WF_Samples#120](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#120)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

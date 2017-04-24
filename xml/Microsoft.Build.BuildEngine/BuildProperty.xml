@@ -19,13 +19,13 @@
     <summary>Represents a single property in an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
- [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
+ 
+[!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
+[!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,12 +72,12 @@
         <returns>A copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A shallow copy of a <xref:Microsoft.Build.BuildEngine.BuildProperty> references the same XML element as the original. Modifications to the name or value of a shallow copy will be reflected in both copies. However, depending on property evaluation, the two copies could have different <xref:Microsoft.Build.BuildEngine.BuildProperty.FinalValue%2A> property values.  
-  
- A deep copy of a <xref:Microsoft.Build.BuildEngine.BuildProperty> creates a new XML element to reference so that both copies of the <xref:Microsoft.Build.BuildEngine.BuildProperty> can be independently modified.  
-  
+A shallow copy of a <xref:Microsoft.Build.BuildEngine.BuildProperty> references the same XML element as the original. Modifications to the name or value of a shallow copy will be reflected in both copies. However, depending on property evaluation, the two copies could have different <xref:Microsoft.Build.BuildEngine.BuildProperty.FinalValue%2A> property values.  
+ 
+A deep copy of a <xref:Microsoft.Build.BuildEngine.BuildProperty> creates a new XML element to reference so that both copies of the <xref:Microsoft.Build.BuildEngine.BuildProperty> can be independently modified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,13 +154,13 @@
         <value>The property name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
- [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
+ 
+[!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
+[!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,13 +223,13 @@
         <value>The property value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
- [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
+ 
+[!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
+[!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

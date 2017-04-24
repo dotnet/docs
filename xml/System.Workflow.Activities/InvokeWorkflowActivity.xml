@@ -35,16 +35,16 @@
     <summary>Asynchronously runs one workflow from another. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.Activities.InvokeWorkflowActivity> first calls the <xref:System.Workflow.Activities.InvokeWorkflowActivity.Invoking> code-beside method, if one is specified. Typically, this method is used to set up incoming parameters for the workflow instance to be invoked.  
-  
- <xref:System.Workflow.Activities.InvokeWorkflowActivity> then creates and invokes a workflow instance of the specified type, passing the parameters that are provided. As soon as the workflow is invoked, the <xref:System.Workflow.Activities.InvokeWorkflowActivity> finishes immediately.  
-  
+ 
+The <xref:System.Workflow.Activities.InvokeWorkflowActivity> first calls the <xref:System.Workflow.Activities.InvokeWorkflowActivity.Invoking> code-beside method, if one is specified. Typically, this method is used to set up incoming parameters for the workflow instance to be invoked.  
+ 
+<xref:System.Workflow.Activities.InvokeWorkflowActivity> then creates and invokes a workflow instance of the specified type, passing the parameters that are provided. As soon as the workflow is invoked, the <xref:System.Workflow.Activities.InvokeWorkflowActivity> finishes immediately.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,12 +129,12 @@
         <value>The <see cref="T:System.Guid" /> that indicates the newly created workflow instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once the workflow is started the <xref:System.Guid> of the created instance is assigned to the <xref:System.Workflow.Activities.InvokeWorkflowActivity.InstanceId%2A> property.  
-  
- This property is a bindable property. The instance can be retrieved in the code-beside.  
-  
+Once the workflow is started the <xref:System.Guid> of the created instance is assigned to the <xref:System.Workflow.Activities.InvokeWorkflowActivity.InstanceId%2A> property.  
+ 
+This property is a bindable property. The instance can be retrieved in the code-beside.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.InvokeWorkflowActivity.InstanceId" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <summary>Occurs before the workflow is invoked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is typically used for setting up workflow invoke parameters.  
-  
+This event is typically used for setting up workflow invoke parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.InvokeWorkflowActivity.Invoking" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,12 +241,12 @@
         <value>A <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBindingCollection" /> that contains the parameter bindings for the workflow being called. The default is an empty <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBindingCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The parameters in this collection are the parameters required to invoke the child workflow.  
-  
- This collection can only specify inbound parameters. Outbound and reference parameters cannot be specified, because the workflow invocation is asynchronous.  
-  
+The parameters in this collection are the parameters required to invoke the child workflow.  
+ 
+This collection can only specify inbound parameters. Outbound and reference parameters cannot be specified, because the workflow invocation is asynchronous.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="F:System.Workflow.Activities.InvokeWorkflowActivity.ParameterBindingsProperty" />property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,10 +367,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.InvokeWorkflowActivity.TargetWorkflow" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,21 +23,21 @@
     <summary>Represents Abstract Syntax Notation One (ASN.1)-encoded data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Abstract Syntax Notation One (ASN.1), which is defined in CCITT Recommendation X.208, is a way to specify abstract objects that will be serially transmitted. The set of ASN.1 rules for representing such objects as strings of ones and zeros is called the Distinguished Encoding Rules (DER), and is defined in CCITT Recommendation X.509, Section 8.7. These encoding methods are currently used by the cryptography namespace in the .NET Framework.  
+Abstract Syntax Notation One (ASN.1), which is defined in CCITT Recommendation X.208, is a way to specify abstract objects that will be serially transmitted. The set of ASN.1 rules for representing such objects as strings of ones and zeros is called the Distinguished Encoding Rules (DER), and is defined in CCITT Recommendation X.509, Section 8.7. These encoding methods are currently used by the cryptography namespace in the .NET Framework.  
+ 
+Note that if an unknown data type is encountered while accessing an instance of this class, data is returned as a hexadecimal string.  
+ 
   
- Note that if an unknown data type is encountered while accessing an instance of this class, data is returned as a hexadecimal string.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
-  
- [!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
- [!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
- [!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
+ 
+[!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
+[!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
+[!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,14 +65,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.AsnEncodedData" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
-  
- [!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
- [!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
- [!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
+ 
+[!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
+[!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
+[!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,19 +130,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.AsnEncodedData" /> class using an instance of the <see cref="T:System.Security.Cryptography.AsnEncodedData" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor makes a copy of the specified <xref:System.Security.Cryptography.AsnEncodedData> instance.  
+This constructor makes a copy of the specified <xref:System.Security.Cryptography.AsnEncodedData> instance.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
-  
- [!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
- [!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
- [!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
+ 
+[!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
+[!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
+[!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -177,14 +177,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.AsnEncodedData" /> class using an <see cref="T:System.Security.Cryptography.Oid" /> object and a byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
-  
- [!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
- [!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
- [!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
+ 
+[!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
+[!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
+[!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,14 +217,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.AsnEncodedData" /> class using a byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
-  
- [!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
- [!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
- [!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
+ 
+[!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
+[!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
+[!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,19 +258,19 @@
         <summary>Copies information from an <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method copies information to an <xref:System.Security.Cryptography.AsnEncodedData> object based on the specified <xref:System.Security.Cryptography.AsnEncodedData> object.  
+This method copies information to an <xref:System.Security.Cryptography.AsnEncodedData> object based on the specified <xref:System.Security.Cryptography.AsnEncodedData> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
-  
- [!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
- [!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
- [!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
+ 
+[!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
+[!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
+[!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -308,19 +308,19 @@
         <returns>A formatted string that represents the Abstract Syntax Notation One (ASN.1)-encoded data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you need to print Abstract Syntax Notation One (ASN.1)-encoded data or output the information to a text box. Use the `multiLine` parameter to control the layout of the output.  
+Use this method if you need to print Abstract Syntax Notation One (ASN.1)-encoded data or output the information to a text box. Use the `multiLine` parameter to control the layout of the output.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
-  
- [!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
- [!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
- [!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
+ 
+[!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
+[!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
+[!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,19 +351,19 @@
         <value>An <see cref="T:System.Security.Cryptography.Oid" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be used to provide information about the Abstract Syntax Notation One (ASN.1)-encoded data, such as the algorithm used to encrypt the data.  
+This property can be used to provide information about the Abstract Syntax Notation One (ASN.1)-encoded data, such as the algorithm used to encrypt the data.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
-  
- [!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
- [!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
- [!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
+ 
+[!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
+[!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
+[!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,19 +394,19 @@
         <value>A byte array that represents the Abstract Syntax Notation One (ASN.1)-encoded data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is the easiest way to access the information in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
+This property is the easiest way to access the information in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
-  
- [!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
- [!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
- [!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  
+ 
+[!code-cpp[Cryptography.AsnEncodedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CPP/asnencodeddata.cpp#1)]
+[!code-csharp[Cryptography.AsnEncodedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.AsnEncodedData/CS/asnencodeddata.cs#1)]
+[!code-vb[Cryptography.AsnEncodedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.AsnEncodedData/VB/asnencodeddata.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>

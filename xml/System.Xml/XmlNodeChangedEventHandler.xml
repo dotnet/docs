@@ -31,23 +31,23 @@
     <summary>Represents the method that handles <see cref="E:System.Xml.XmlDocument.NodeChanged" />, <see cref="E:System.Xml.XmlDocument.NodeChanging" />, <see cref="E:System.Xml.XmlDocument.NodeInserted" />, <see cref="E:System.Xml.XmlDocument.NodeInserting" />, <see cref="E:System.Xml.XmlDocument.NodeRemoved" /> and <see cref="E:System.Xml.XmlDocument.NodeRemoving" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create an `XmlNodeChangedEventHandler` delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+When you create an `XmlNodeChangedEventHandler` delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to handle the `NodeChanged` and `NodeInserted` events.  
-  
- [!code-cpp[XmlNodeChangedEventHandler#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNodeChangedEventHandler/CPP/nodeevent.cpp#1)]
- [!code-csharp[XmlNodeChangedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNodeChangedEventHandler/CS/nodeevent.cs#1)]
- [!code-vb[XmlNodeChangedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNodeChangedEventHandler/VB/nodeevent.vb#1)]  
-  
- The example uses the file `book.xml` as input.  
-  
- [!code-xml[XmlNodeChangedEventHandler#2](~/samples/snippets/xml/VS_Snippets_Data/XmlNodeChangedEventHandler/XML/book.xml#2)]  
-  
+The following example shows how to handle the `NodeChanged` and `NodeInserted` events.  
+ 
+[!code-cpp[XmlNodeChangedEventHandler#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNodeChangedEventHandler/CPP/nodeevent.cpp#1)]
+[!code-csharp[XmlNodeChangedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNodeChangedEventHandler/CS/nodeevent.cs#1)]
+[!code-vb[XmlNodeChangedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNodeChangedEventHandler/VB/nodeevent.vb#1)]  
+ 
+The example uses the file `book.xml` as input.  
+ 
+[!code-xml[XmlNodeChangedEventHandler#2](~/samples/snippets/xml/VS_Snippets_Data/XmlNodeChangedEventHandler/XML/book.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

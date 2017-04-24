@@ -14,10 +14,10 @@
     <summary>Contains arguments associated with changes to a <see cref="T:System.Windows.Input.TextComposition" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attached events supported by this delegate include are provided by the <xref:System.Windows.Input.TextCompositionManager> class, and include <xref:System.Windows.Input.TextCompositionManager.TextInput> (<xref:System.Windows.Input.TextCompositionManager.PreviewTextInput>), <xref:System.Windows.Input.TextCompositionManager.TextInputStart> (<xref:System.Windows.Input.TextCompositionManager.PreviewTextInputStart>), and <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> (<xref:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdate>).  
-  
+Attached events supported by this delegate include are provided by the <xref:System.Windows.Input.TextCompositionManager> class, and include <xref:System.Windows.Input.TextCompositionManager.TextInput> (<xref:System.Windows.Input.TextCompositionManager.PreviewTextInput>), <xref:System.Windows.Input.TextCompositionManager.TextInputStart> (<xref:System.Windows.Input.TextCompositionManager.PreviewTextInputStart>), and <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> (<xref:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdate>).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,10 +83,10 @@
         <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.Input.TextCompositionEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+This implementation casts the generic handler as a <xref:System.Windows.Input.TextCompositionEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

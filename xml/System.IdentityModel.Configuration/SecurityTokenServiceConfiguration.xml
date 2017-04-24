@@ -14,16 +14,16 @@
     <summary>Defines the configuration for a security token service (STS). Classes that implement STSs derive from the <see cref="T:System.IdentityModel.SecurityTokenService" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The code examples that are used in the <xref:System.IdentityModel.SecurityTokenService> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT) and it includes an implementation of a passive STS that is capable of serving an SWT token. For an example of how to implement an active STS, you can see the `Federation Metadata` sample. For information about these samples and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows a custom implementation of the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration> class to support a passive STS that processes SWT tokens. The configuration is initialized and stored in the HTTP application state the first time the static `Current` property is accessed. The constructor initializes the properties of the custom configuration with the type of the custom STS, a custom issuer token resolver, and the default token type (the URI of the SWT token type). It also adds an SWT token handler to the default handler collection.  
-  
- [!code-csharp[WIFCustomTokenSTS#2](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/customsecuritytokenserviceconfiguration.cs#2)]  
-  
- The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest%28System.Web.HttpRequest%2CSystem.Security.Claims.ClaimsPrincipal%2CSystem.IdentityModel.SecurityTokenService%2CSystem.Web.HttpResponse%29?displayProperty=fullName> method from the code behind in the `default.aspx.cs` file. The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService%2A> method initializes an instance of the `PassiveSTS.CustomSecurityTokenService` class using the properties set on the `CustomSecurityTokenServiceConfiguration` class shown in the previous example.  
-  
- [!code-csharp[WIFCustomTokenSTS#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/default.aspx.cs#1)]  
-  
+The code examples that are used in the <xref:System.IdentityModel.SecurityTokenService> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT) and it includes an implementation of a passive STS that is capable of serving an SWT token. For an example of how to implement an active STS, you can see the `Federation Metadata` sample. For information about these samples and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows a custom implementation of the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration> class to support a passive STS that processes SWT tokens. The configuration is initialized and stored in the HTTP application state the first time the static `Current` property is accessed. The constructor initializes the properties of the custom configuration with the type of the custom STS, a custom issuer token resolver, and the default token type (the URI of the SWT token type). It also adds an SWT token handler to the default handler collection.  
+ 
+[!code-csharp[WIFCustomTokenSTS#2](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/customsecuritytokenserviceconfiguration.cs#2)]  
+ 
+The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest%28System.Web.HttpRequest%2CSystem.Security.Claims.ClaimsPrincipal%2CSystem.IdentityModel.SecurityTokenService%2CSystem.Web.HttpResponse%29?displayProperty=fullName> method from the code behind in the `default.aspx.cs` file. The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService%2A> method initializes an instance of the `PassiveSTS.CustomSecurityTokenService` class using the properties set on the `CustomSecurityTokenServiceConfiguration` class shown in the previous example.  
+ 
+[!code-csharp[WIFCustomTokenSTS#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/default.aspx.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
-  
+The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,10 +68,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class. Optionally loads settings from the current configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
-  
+The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class that has the specified issuer name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
-  
+If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class that has the specified issuer name. Optionally loads settings from the current configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
-  
+If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class that has the specified issuer name and signing credentials.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
-  
+If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class that has the specified issuer name and signing credentials. Optionally loads settings from the current configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
-  
+If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,10 +207,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class that has the specified issuer name and signing credentials. Settings are loaded from the specified named configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
-  
+If `issuerName` is `null`, the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName%2A> property must be set before the security token service is used to create a token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,19 +233,19 @@
         <returns>An instance of the <see cref="T:System.Type" /> specified in the <see cref="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.SecurityTokenService" /> property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class specified in the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.SecurityTokenService%2A> property must implement a constructor that takes a parameter of type <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration>.  
+The class specified in the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.SecurityTokenService%2A> property must implement a constructor that takes a parameter of type <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The code examples that are used in the <xref:System.IdentityModel.SecurityTokenService> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT) and it includes an implementation of a passive STS that is capable of serving an SWT token. For an example of how to implement an active STS, you can see the `Federation Metadata` sample. For information about these samples and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows a custom implementation of the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration> class to support a passive STS that processes SWT tokens. The configuration is initialized and stored in the HTTP application state the first time the static `Current` property is accessed. The constructor initializes the properties of the custom configuration with the type of the custom STS, a custom issuer token resolver, and the default token type (the URI of the SWT token type). It also adds an SWT token handler to the default handler collection.  
-  
- The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest%28System.Web.HttpRequest%2CSystem.Security.Claims.ClaimsPrincipal%2CSystem.IdentityModel.SecurityTokenService%2CSystem.Web.HttpResponse%29?displayProperty=fullName> method from the code behind in the `default.aspx.cs` file. The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService%2A> method initializes an instance of the `PassiveSTS.CustomSecurityTokenService` class using the properties set on the current `CustomSecurityTokenServiceConfiguration` object. The `CustomSecurityTokenServiceConfiguration.Current` property is implemented by the `CustomSecurityTokenServiceConfiguration` class and returns the instance of the class that is saved in the HTTP application state.  
-  
- [!code-csharp[WIFCustomTokenSTS#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/default.aspx.cs#1)]  
-  
+The code examples that are used in the <xref:System.IdentityModel.SecurityTokenService> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT) and it includes an implementation of a passive STS that is capable of serving an SWT token. For an example of how to implement an active STS, you can see the `Federation Metadata` sample. For information about these samples and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows a custom implementation of the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration> class to support a passive STS that processes SWT tokens. The configuration is initialized and stored in the HTTP application state the first time the static `Current` property is accessed. The constructor initializes the properties of the custom configuration with the type of the custom STS, a custom issuer token resolver, and the default token type (the URI of the SWT token type). It also adds an SWT token handler to the default handler collection.  
+ 
+The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest%28System.Web.HttpRequest%2CSystem.Security.Claims.ClaimsPrincipal%2CSystem.IdentityModel.SecurityTokenService%2CSystem.Web.HttpResponse%29?displayProperty=fullName> method from the code behind in the `default.aspx.cs` file. The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService%2A> method initializes an instance of the `PassiveSTS.CustomSecurityTokenService` class using the properties set on the current `CustomSecurityTokenServiceConfiguration` object. The `CustomSecurityTokenServiceConfiguration.Current` property is implemented by the `CustomSecurityTokenServiceConfiguration` class and returns the instance of the class that is saved in the HTTP application state.  
+ 
+[!code-csharp[WIFCustomTokenSTS#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/default.aspx.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <value>The default key size limit, in bits. The default is 1024.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This only applies to the symmetric key case.  
-  
+This only applies to the symmetric key case.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,10 +292,10 @@
         <value>The key size used in the issued token, in bits. The default is 256.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This only applies to the symmetric key case.  
-  
+This only applies to the symmetric key case.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -335,12 +335,12 @@
         <value>Returns a string that contains the default token type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string values are specified in URI format; for example, for the SAML 1.1 token type, the following is the string value: http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1.  
-  
- The default token type is set to SAML 1.1.  
-  
+The string values are specified in URI format; for example, for the SAML 1.1 token type, the following is the string value: http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1.  
+ 
+The default token type is set to SAML 1.1.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified value is <see langword="null" /> or empty.</exception>
@@ -401,10 +401,10 @@
         <value>The type of the security token service. The type must derive from the <see cref="T:System.IdentityModel.SecurityTokenService" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class specified in the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.SecurityTokenService%2A> property must implement a constructor that takes a parameter of type <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration>.  
-  
+The class specified in the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.SecurityTokenService%2A> property must implement a constructor that takes a parameter of type <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value is not assignable as <see cref="T:System.IdentityModel.SecurityTokenService" />.</exception>
@@ -428,12 +428,12 @@
         <value>The signing credentials.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.SigningCredentials%2A> property is ignored when implementing an active security token service (STS). Instead you must set the service certificate through the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> property on the service host  that is hosting your STS. The service host used for an active STS is represented by the <xref:System.ServiceModel.Security.WSTrustServiceHost> class.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

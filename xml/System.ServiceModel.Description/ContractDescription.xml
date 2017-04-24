@@ -20,30 +20,30 @@
     <summary>Describes a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] contract that specifies what an endpoint communicates to the outside world.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A [!INCLUDE[indigo2](~/includes/indigo2-md.md)] contract is a collection of operations that specifies what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message form a request/reply message exchange.  
-  
- A <xref:System.ServiceModel.Description.ContractDescription> object is used to describe [!INCLUDE[indigo2](~/includes/indigo2-md.md)] contracts and their operations. Within a <xref:System.ServiceModel.Description.ContractDescription>, each contract operation has a corresponding <xref:System.ServiceModel.Description.OperationDescription> that describes aspects of the each operation that is part of the contract, such as whether the operation is one-way or request/reply. Each <xref:System.ServiceModel.Description.OperationDescription> also describes the messages that make up the operation using a <xref:System.ServiceModel.Description.MessageDescriptionCollection>. <xref:System.ServiceModel.Description.ContractDescription> contains a reference to an interface that defines the contract using the programming model. This interface is marked with <xref:System.ServiceModel.ServiceContractAttribute> and its methods that correspond to endpoint operations are marked with the <xref:System.ServiceModel.OperationContractAttribute>.  
-  
- A *duplex* contract defines the following logical sets of operations:  
-  
+A [!INCLUDE[indigo2](~/includes/indigo2-md.md)] contract is a collection of operations that specifies what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message form a request/reply message exchange.  
+ 
+A <xref:System.ServiceModel.Description.ContractDescription> object is used to describe [!INCLUDE[indigo2](~/includes/indigo2-md.md)] contracts and their operations. Within a <xref:System.ServiceModel.Description.ContractDescription>, each contract operation has a corresponding <xref:System.ServiceModel.Description.OperationDescription> that describes aspects of the each operation that is part of the contract, such as whether the operation is one-way or request/reply. Each <xref:System.ServiceModel.Description.OperationDescription> also describes the messages that make up the operation using a <xref:System.ServiceModel.Description.MessageDescriptionCollection>. <xref:System.ServiceModel.Description.ContractDescription> contains a reference to an interface that defines the contract using the programming model. This interface is marked with <xref:System.ServiceModel.ServiceContractAttribute> and its methods that correspond to endpoint operations are marked with the <xref:System.ServiceModel.OperationContractAttribute>.  
+ 
+A *duplex* contract defines the following logical sets of operations:  
+ 
 -   A set that the service exposes for the client to call.  
-  
+ 
 -   A set that the client exposes for the service to call.  
+ 
+The programming model for defining a duplex contract is to split each set in a separate interface and apply attributes to each interface. In this case, <xref:System.ServiceModel.Description.ContractDescription> contains a reference to each of the interfaces that groups them into one duplex contract.  
+ 
+Similar to bindings, each contract has a <xref:System.ServiceModel.Description.ContractDescription.Name%2A> and <xref:System.ServiceModel.Description.ContractDescription.Namespace%2A> that uniquely identify it in the metadata of the service.  
+ 
   
- The programming model for defining a duplex contract is to split each set in a separate interface and apply attributes to each interface. In this case, <xref:System.ServiceModel.Description.ContractDescription> contains a reference to each of the interfaces that groups them into one duplex contract.  
-  
- Similar to bindings, each contract has a <xref:System.ServiceModel.Description.ContractDescription.Name%2A> and <xref:System.ServiceModel.Description.ContractDescription.Namespace%2A> that uniquely identify it in the metadata of the service.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows a number of ways to create or retrieve a <xref:System.ServiceModel.Description.ContractDescription> object. It then displays the various pieces of information that are stored in the <xref:System.ServiceModel.Description.ContractDescription> object.  
-  
- [!code-csharp[S_UE_ContractDescription#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#0)]
- [!code-vb[S_UE_ContractDescription#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#0)]  
-  
+The following example shows a number of ways to create or retrieve a <xref:System.ServiceModel.Description.ContractDescription> object. It then displays the various pieces of information that are stored in the <xref:System.ServiceModel.Description.ContractDescription> object.  
+ 
+[!code-csharp[S_UE_ContractDescription#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#0)]
+[!code-vb[S_UE_ContractDescription#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,11 +66,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ContractDescription" /> class with a specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#1)]
- [!code-vb[S_UE_ContractDescription#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#1)]  
-  
+[!code-csharp[S_UE_ContractDescription#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#1)]
+[!code-vb[S_UE_ContractDescription#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -99,16 +99,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ContractDescription" /> class with a namespace-qualified name specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The namespace can be an empty string ("").  
+The namespace can be an empty string ("").  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#2)]
- [!code-vb[S_UE_ContractDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#2)]  
-  
+[!code-csharp[S_UE_ContractDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#2)]
+[!code-vb[S_UE_ContractDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -135,11 +135,11 @@
         <value>The <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> of type <see cref="T:System.ServiceModel.Description.IContractBehavior" /> associated with the contract description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#3)]
- [!code-vb[S_UE_ContractDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#3)]  
-  
+[!code-csharp[S_UE_ContractDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#3)]
+[!code-vb[S_UE_ContractDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,16 +162,16 @@
         <value>The <see cref="T:System.Type" /> of callback contract that the contract description specifies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.ContractDescription.CallbackContractType%2A> property is not serializable, so it is only available when the description is bound to runtime. It cannot be imported or exported as part of the metadata.  
+The <xref:System.ServiceModel.Description.ContractDescription.CallbackContractType%2A> property is not serializable, so it is only available when the description is bound to runtime. It cannot be imported or exported as part of the metadata.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#4)]
- [!code-vb[S_UE_ContractDescription#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#4)]  
-  
+[!code-csharp[S_UE_ContractDescription#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#4)]
+[!code-vb[S_UE_ContractDescription#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,11 +194,11 @@
         <value>The configuration name for the contract.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#2)]
- [!code-vb[S_UE_ContractDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#2)]  
-  
+[!code-csharp[S_UE_ContractDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#2)]
+[!code-vb[S_UE_ContractDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,16 +240,16 @@
         <value>The <see cref="T:System.Type" /> of contract that the contract description specifies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> property is not serializable, so it is only available when the description is bound to runtime. It cannot be imported or exported as part of the metadata.  
+The <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> property is not serializable, so it is only available when the description is bound to runtime. It cannot be imported or exported as part of the metadata.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#6)]
- [!code-vb[S_UE_ContractDescription#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#6)]  
-  
+[!code-csharp[S_UE_ContractDescription#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#6)]
+[!code-vb[S_UE_ContractDescription#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,16 +276,16 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the specified type of contract.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#13)]
- [!code-vb[S_UE_ContractDescription#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#13)]  
-  
+[!code-csharp[S_UE_ContractDescription#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#13)]
+[!code-vb[S_UE_ContractDescription#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,16 +314,16 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the specified type of contract and service implementation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#14)]
- [!code-vb[S_UE_ContractDescription#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#14)]  
-  
+[!code-csharp[S_UE_ContractDescription#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#14)]
+[!code-vb[S_UE_ContractDescription#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,16 +352,16 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the specified type of contract and type of service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#15](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#15)]
- [!code-vb[S_UE_ContractDescription#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#15)]  
-  
+[!code-csharp[S_UE_ContractDescription#15](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#15)]
+[!code-vb[S_UE_ContractDescription#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,11 +385,11 @@
         <returns>The <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.ServiceModel.Description.ContractDescription" /> that is inherited by the current contract description.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#16](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#16)]
- [!code-vb[S_UE_ContractDescription#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#16)]  
-  
+[!code-csharp[S_UE_ContractDescription#16](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#16)]
+[!code-vb[S_UE_ContractDescription#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -413,16 +413,16 @@
           <see langword="true" /> if the protection level has been set; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A> is set, the <xref:System.ServiceModel.Description.ContractDescription.HasProtectionLevel%2A> property is set to `true`.  
+When the <xref:System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A> is set, the <xref:System.ServiceModel.Description.ContractDescription.HasProtectionLevel%2A> property is set to `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#7)]
- [!code-vb[S_UE_ContractDescription#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#7)]  
-  
+[!code-csharp[S_UE_ContractDescription#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#7)]
+[!code-vb[S_UE_ContractDescription#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -445,11 +445,11 @@
         <value>The name of the contract description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#8)]
- [!code-vb[S_UE_ContractDescription#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#8)]  
-  
+[!code-csharp[S_UE_ContractDescription#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#8)]
+[!code-vb[S_UE_ContractDescription#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -472,16 +472,16 @@
         <value>The namespace of the contract.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The namespace can be an empty string ("").  
+The namespace can be an empty string ("").  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#9)]
- [!code-vb[S_UE_ContractDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#9)]  
-  
+[!code-csharp[S_UE_ContractDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#9)]
+[!code-vb[S_UE_ContractDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
@@ -505,11 +505,11 @@
         <value>The <see cref="T:System.ServiceModel.Description.OperationDescriptionCollection" /> that contains the operation descriptions associated with the contract description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#10)]
- [!code-vb[S_UE_ContractDescription#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#10)]  
-  
+[!code-csharp[S_UE_ContractDescription#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#10)]
+[!code-vb[S_UE_ContractDescription#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -532,16 +532,16 @@
         <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> for the operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A> is set, the <xref:System.ServiceModel.Description.ContractDescription.HasProtectionLevel%2A> property is set to `true`.  
+When the <xref:System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A> is set, the <xref:System.ServiceModel.Description.ContractDescription.HasProtectionLevel%2A> property is set to `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#11)]
- [!code-vb[S_UE_ContractDescription#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#11)]  
-  
+[!code-csharp[S_UE_ContractDescription#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#11)]
+[!code-vb[S_UE_ContractDescription#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -564,16 +564,16 @@
         <value>The <see cref="T:System.ServiceModel.SessionMode" /> that specifies the support for reliable sessions that a contract requires or supports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A reliable session is a way of correlating a set of messages exchanged between two or more endpoints (using the [WS-ReliableMessaging](http://go.microsoft.com/fwlink/?LinkId=96680) specification) to provide assurances of the reliability of the connection.  
+A reliable session is a way of correlating a set of messages exchanged between two or more endpoints (using the [WS-ReliableMessaging](http://go.microsoft.com/fwlink/?LinkId=96680) specification) to provide assurances of the reliability of the connection.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#12)]
- [!code-vb[S_UE_ContractDescription#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#12)]  
-  
+[!code-csharp[S_UE_ContractDescription#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#12)]
+[!code-vb[S_UE_ContractDescription#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,10 +608,10 @@
         <summary>Returns the contract description for a specified type of contract.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
-  
+The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+ 
  ]]></format>
         </remarks>
       </Docs>

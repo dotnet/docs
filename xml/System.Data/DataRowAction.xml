@@ -23,12 +23,12 @@
     <summary>Describes an action performed on a <see cref="T:System.Data.DataRow" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Data.DataRowAction> is returned as part of the <xref:System.Data.DataRowChangeEventArgs> to indicate the action that was taken on a row to raise the event.  
-  
- Use the members of this enumeration to determine the action that has occurred on a <xref:System.Data.DataRow> with regard to the <xref:System.Data.DataTable> to which it belongs.  
-  
+A <xref:System.Data.DataRowAction> is returned as part of the <xref:System.Data.DataRowChangeEventArgs> to indicate the action that was taken on a row to raise the event.  
+ 
+Use the members of this enumeration to determine the action that has occurred on a <xref:System.Data.DataRow> with regard to the <xref:System.Data.DataTable> to which it belongs.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -18,23 +18,23 @@
     <summary>Represents a collection of properties and values that are associated with an object in the <see cref="N:System.Printing" /> namespace.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection takes the form of a <xref:System.Collections.Hashtable> dictionary. The <xref:System.Collections.DictionaryEntry.Value%2A> property of each <xref:System.Collections.DictionaryEntry> in the collection is an instance of a class that is derived from <xref:System.Printing.IndexedProperties.PrintProperty>.  
+The collection takes the form of a <xref:System.Collections.Hashtable> dictionary. The <xref:System.Collections.DictionaryEntry.Value%2A> property of each <xref:System.Collections.DictionaryEntry> in the collection is an instance of a class that is derived from <xref:System.Printing.IndexedProperties.PrintProperty>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this class to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
-  
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
-  
- The following example shows how to use this class to discover at run time the properties, and the types of those properties, of a print system object, without using reflection.  
-  
- [!code-csharp[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/csharp/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/CSharp/Program.cs#showpropertytypeswithoutreflection)]
- [!code-vb[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/visualbasic/program.vb#showpropertytypeswithoutreflection)]  
-  
+The following example shows how to use this class to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+ 
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+ 
+The following example shows how to use this class to discover at run time the properties, and the types of those properties, of a print system object, without using reflection.  
+ 
+[!code-csharp[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/csharp/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/CSharp/Program.cs#showpropertytypeswithoutreflection)]
+[!code-vb[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/visualbasic/program.vb#showpropertytypeswithoutreflection)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,20 +94,20 @@
         <summary>Adds the specified object (of a class that is derived from <see cref="T:System.Printing.IndexedProperties.PrintProperty" />) into the dictionary.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Printing.IndexedProperties.PrintProperty.Name%2A> property of `attributeValue` becomes the <xref:System.Collections.DictionaryEntry.Key%2A> property of the new <xref:System.Collections.DictionaryEntry>. The <xref:System.Printing.IndexedProperties.PrintProperty> as a whole becomes the <xref:System.Collections.DictionaryEntry.Value%2A> property of the new <xref:System.Collections.DictionaryEntry>.  
+The <xref:System.Printing.IndexedProperties.PrintProperty.Name%2A> property of `attributeValue` becomes the <xref:System.Collections.DictionaryEntry.Key%2A> property of the new <xref:System.Collections.DictionaryEntry>. The <xref:System.Printing.IndexedProperties.PrintProperty> as a whole becomes the <xref:System.Collections.DictionaryEntry.Value%2A> property of the new <xref:System.Collections.DictionaryEntry>.  
+ 
+For another way to add an entry to the dictionary, see <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.SetProperty%2A>.  
+ 
   
- For another way to add an entry to the dictionary, see <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.SetProperty%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
-  
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
-  
+The following example shows how to use this method to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+ 
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,13 +129,13 @@
         <summary>Releases all the resources that are being used by the <see cref="T:System.Printing.IndexedProperties.PrintPropertyDictionary" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> when you are finished using the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>. The <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> method leaves the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> in an unusable state. After calling <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose>, you must release all references to the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> so that the garbage collector can reclaim the memory that the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> when you are finished using the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>. The <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> method leaves the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> in an unusable state. After calling <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose>, you must release all references to the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> so that the garbage collector can reclaim the memory that the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> before you release your last reference to the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>. Otherwise, the resources that it is using will not be freed until the garbage collector calls the <xref:System.Object.Finalize%2A> method of the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> object.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,12 +160,12 @@
         <summary>Releases the unmanaged resources that are being used by the <see cref="T:System.Printing.IndexedProperties.PrintPropertyDictionary" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> method and the <xref:System.Object.Finalize%2A> method. <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> invokes the protected <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose%28System.Boolean%29> method with the unnamed Boolean parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose%28System.Boolean%29> with the parameter set to `false`.  
-  
- When the Boolean parameter is `true`, this method releases all the resources that are held by any managed objects that this <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> method and the <xref:System.Object.Finalize%2A> method. <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> invokes the protected <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose%28System.Boolean%29> method with the unnamed Boolean parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose%28System.Boolean%29> with the parameter set to `false`.  
+ 
+When the Boolean parameter is `true`, this method releases all the resources that are held by any managed objects that this <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -225,10 +225,10 @@
         <returns>An object of a class that is derived from the <see cref="T:System.Printing.IndexedProperties.PrintProperty" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attribName` must be spelled exactly the same as the name of some particular property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.QueuePort%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "QueuePort", not "PrintPort", "Port", or "Queueport".  
-  
+The `attribName` must be spelled exactly the same as the name of some particular property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.QueuePort%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "QueuePort", not "PrintPort", "Port", or "Queueport".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,18 +276,18 @@
         <summary>Sets the value of the specified attribute to an object of a class that is derived from <see cref="T:System.Printing.IndexedProperties.PrintProperty" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the dictionary does not already contain `attribName`, `attribName` will be added and set to `attribValue`, provided that `attribName` is identical to `attribValue`.Name. If these values are not identical, this method does nothing.  
+If the dictionary does not already contain `attribName`, `attribName` will be added and set to `attribValue`, provided that `attribName` is identical to `attribValue`.Name. If these values are not identical, this method does nothing.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
-  
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
-  
+The following example shows how to use this method to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+ 
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

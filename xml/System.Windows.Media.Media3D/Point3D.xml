@@ -26,41 +26,41 @@
     <summary>Represents an x-, y-, and z-coordinate point in [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In XAML, the delimiter between the values of a <xref:System.Windows.Media.Media3D.Point3D> can be either a comma or a space.  
-  
- Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Media.Media3D.Point3D> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Media.Media3D.Point3D> attribute value into its components.  
-  
+In XAML, the delimiter between the values of a <xref:System.Windows.Media.Media3D.Point3D> can be either a comma or a space.  
+ 
+Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Media.Media3D.Point3D> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Media.Media3D.Point3D> attribute value into its components.  
+ 
 <a name="xamlAttributeUsage_Duration"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="x,y,z"/>  
 -or  
 <object property="x y z"/>  
 ```  
-  
+ 
 <a name="xamlValues_MinWidth"></a>   
 ## XAML Values  
- *x*  
- The x-coordinate of this <xref:System.Windows.Media.Media3D.Point3D>.  
+*x*  
+The x-coordinate of this <xref:System.Windows.Media.Media3D.Point3D>.  
+ 
+*y*  
+The y-coordinate of this <xref:System.Windows.Media.Media3D.Point3D>.  
+ 
+*z*  
+The z-coordinate of this <xref:System.Windows.Media.Media3D.Point3D>.  
+ 
   
- *y*  
- The y-coordinate of this <xref:System.Windows.Media.Media3D.Point3D>.  
-  
- *z*  
- The z-coordinate of this <xref:System.Windows.Media.Media3D.Point3D>.  
-  
-   
-  
+ 
 ## Examples  
- This example shows how to subtract <xref:System.Windows.Media.Media3D.Point3D> structures and <xref:System.Windows.Media.Media3D.Vector3D> structures using the overloaded subtraction (`-`) operator and the <xref:System.Windows.Media.Media3D.Point3D> static <xref:System.Windows.Media.Media3D.Point3D.Subtract%2A> method.  
-  
- The following code illustrates how to use the <xref:System.Windows.Media.Media3D.Point3D> subtraction methods.  First, the <xref:System.Windows.Media.Media3D.Point3D> structures and the <xref:System.Windows.Media.Media3D.Vector3D> structures are instantiated.  The <xref:System.Windows.Media.Media3D.Point3D> structures are subtracted using the overloaded subtraction (`-`) operator and then they are subtracted using the static <xref:System.Windows.Media.Media3D.Point3D.Subtract%2A> method. Next, the <xref:System.Windows.Media.Media3D.Vector3D> structure is subtracted from the first <xref:System.Windows.Media.Media3D.Point3D> structure using the static <xref:System.Windows.Media.Media3D.Point3D.Subtract%2A> method, and finally the <xref:System.Windows.Media.Media3D.Point3D> structure is subtract from the <xref:System.Windows.Media.Media3D.Vector3D> using the overloaded subtraction (`-`) operator.  
-  
- [!code-csharp[3DGallery_procedural_snip#Subtract3DPointsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#subtract3dpointsexample_csharp)]  
-  
+This example shows how to subtract <xref:System.Windows.Media.Media3D.Point3D> structures and <xref:System.Windows.Media.Media3D.Vector3D> structures using the overloaded subtraction (`-`) operator and the <xref:System.Windows.Media.Media3D.Point3D> static <xref:System.Windows.Media.Media3D.Point3D.Subtract%2A> method.  
+ 
+The following code illustrates how to use the <xref:System.Windows.Media.Media3D.Point3D> subtraction methods.  First, the <xref:System.Windows.Media.Media3D.Point3D> structures and the <xref:System.Windows.Media.Media3D.Vector3D> structures are instantiated.  The <xref:System.Windows.Media.Media3D.Point3D> structures are subtracted using the overloaded subtraction (`-`) operator and then they are subtracted using the static <xref:System.Windows.Media.Media3D.Point3D.Subtract%2A> method. Next, the <xref:System.Windows.Media.Media3D.Vector3D> structure is subtracted from the first <xref:System.Windows.Media.Media3D.Point3D> structure using the static <xref:System.Windows.Media.Media3D.Point3D.Subtract%2A> method, and finally the <xref:System.Windows.Media.Media3D.Point3D> structure is subtract from the <xref:System.Windows.Media.Media3D.Vector3D> using the overloaded subtraction (`-`) operator.  
+ 
+[!code-csharp[3DGallery_procedural_snip#Subtract3DPointsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#subtract3dpointsexample_csharp)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -110,18 +110,18 @@
         <returns>The sum of <paramref name="point" /> and <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding a <xref:System.Windows.Media.Media3D.Point3D> structure to a <xref:System.Windows.Media.Media3D.Vector3D> structure is prohibited.  
+Adding a <xref:System.Windows.Media.Media3D.Point3D> structure to a <xref:System.Windows.Media.Media3D.Vector3D> structure is prohibited.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to add a <xref:System.Windows.Media.Media3D.Point3D> and a <xref:System.Windows.Media.Media3D.Vector3D>.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn4)]
- [!code-vb[point3dsample#Mil3DPoints3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn4)]  
-  
+The following example shows how to add a <xref:System.Windows.Media.Media3D.Point3D> and a <xref:System.Windows.Media.Media3D.Vector3D>.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn4)]
+[!code-vb[point3dsample#Mil3DPoints3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,20 +150,20 @@
  <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure and if it is also identical to this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `o` is not a <xref:System.Windows.Media.Media3D.Point3D> structure, this method returns `false`.  
+If `o` is not a <xref:System.Windows.Media.Media3D.Point3D> structure, this method returns `false`.  
+ 
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
+ 
   
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to check whether an object and <xref:System.Windows.Media.Media3D.Point3D> structure are equal.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN14](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn14)]
- [!code-vb[point3dsample#Mil3DPoints3DN14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn14)]  
-  
+The following example shows how to check whether an object and <xref:System.Windows.Media.Media3D.Point3D> structure are equal.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN14](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn14)]
+[!code-vb[point3dsample#Mil3DPoints3DN14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
           <see langword="true" /> if instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
-  
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,20 +222,20 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Media.Media3D.Point3D.X" />, <see cref="P:System.Windows.Media.Media3D.Point3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Point3D.Z" /> values for <paramref name="point1" /> and <paramref name="point2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Windows.Media.Media3D.Point3D> structures are equal if the values of their <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Point3D.Z%2A> properties are the same.  
+Two <xref:System.Windows.Media.Media3D.Point3D> structures are equal if the values of their <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Point3D.Z%2A> properties are the same.  
+ 
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
+ 
   
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to check whether two <xref:System.Windows.Media.Media3D.Point3D> structures are equal.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn13)]
- [!code-vb[point3dsample#Mil3DPoints3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn13)]  
-  
+The following example shows how to check whether two <xref:System.Windows.Media.Media3D.Point3D> structures are equal.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn13)]
+[!code-vb[point3dsample#Mil3DPoints3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,13 +258,13 @@
         <returns>A hash code for this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the hash code of a <xref:System.Windows.Media.Media3D.Point3D> structure.  
-  
- [!code-csharp[point4dsample#Mil4DPoints3DN16](~/samples/snippets/csharp/VS_Snippets_Wpf/Point4DSample/CSharp/Window1.xaml.cs#mil4dpoints3dn16)]
- [!code-vb[point4dsample#Mil4DPoints3DN16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point4DSample/visualbasic/window1.xaml.vb#mil4dpoints3dn16)]  
-  
+The following example shows how to get the hash code of a <xref:System.Windows.Media.Media3D.Point3D> structure.  
+ 
+[!code-csharp[point4dsample#Mil4DPoints3DN16](~/samples/snippets/csharp/VS_Snippets_Wpf/Point4DSample/CSharp/Window1.xaml.cs#mil4dpoints3dn16)]
+[!code-vb[point4dsample#Mil4DPoints3DN16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point4DSample/visualbasic/window1.xaml.vb#mil4dpoints3dn16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,20 +317,20 @@
         <summary>Translates the <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure by the specified amounts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to adding a <xref:System.Windows.Media.Media3D.Vector3D> structure to a <xref:System.Windows.Media.Media3D.Point3D> structure with the corresponding <xref:System.Windows.Media.Media3D.Vector3D.X%2A>, <xref:System.Windows.Media.Media3D.Vector3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Vector3D.Z%2A> values.  
+This operation is equivalent to adding a <xref:System.Windows.Media.Media3D.Vector3D> structure to a <xref:System.Windows.Media.Media3D.Point3D> structure with the corresponding <xref:System.Windows.Media.Media3D.Vector3D.X%2A>, <xref:System.Windows.Media.Media3D.Vector3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Vector3D.Z%2A> values.  
+ 
+Note that calling the <xref:System.Windows.Media.Media3D.Point3D.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Point3D.Z%2A> properties directly. Because <xref:System.Windows.Media.Media3D.Point3D> is a value type, if you reference a <xref:System.Windows.Media.Media3D.Point3D> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A>, or <xref:System.Windows.Media.Media3D.Point3D.Z%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Media.Media3D.Point3D.Offset%2A> on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Media.Media3D.Point3D> that is referenced as a property or indexer, create a new <xref:System.Windows.Media.Media3D.Point3D>, modify its fields, and then assign the <xref:System.Windows.Media.Media3D.Point3D> back to the property or indexer.  
+ 
   
- Note that calling the <xref:System.Windows.Media.Media3D.Point3D.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Point3D.Z%2A> properties directly. Because <xref:System.Windows.Media.Media3D.Point3D> is a value type, if you reference a <xref:System.Windows.Media.Media3D.Point3D> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A>, or <xref:System.Windows.Media.Media3D.Point3D.Z%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Media.Media3D.Point3D.Offset%2A> on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Media.Media3D.Point3D> that is referenced as a property or indexer, create a new <xref:System.Windows.Media.Media3D.Point3D>, modify its fields, and then assign the <xref:System.Windows.Media.Media3D.Point3D> back to the property or indexer.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to offset a <xref:System.Windows.Media.Media3D.Point3D> structure.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN9](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn9)]
- [!code-vb[point3dsample#Mil3DPoints3DN9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn9)]  
-  
+The following example shows how to offset a <xref:System.Windows.Media.Media3D.Point3D> structure.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN9](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn9)]
+[!code-vb[point3dsample#Mil3DPoints3DN9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,18 +358,18 @@
         <returns>A <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure that is the sum of <paramref name="point" /> and <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding a <xref:System.Windows.Media.Media3D.Point3D> structure to a <xref:System.Windows.Media.Media3D.Point3D> structure is prohibited.  
+Adding a <xref:System.Windows.Media.Media3D.Point3D> structure to a <xref:System.Windows.Media.Media3D.Point3D> structure is prohibited.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to add a <xref:System.Windows.Media.Media3D.Vector3D> structure to a <xref:System.Windows.Media.Media3D.Point3D> structure.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn3)]
- [!code-vb[point3dsample#Mil3DPoints3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn3)]  
-  
+The following example shows how to add a <xref:System.Windows.Media.Media3D.Vector3D> structure to a <xref:System.Windows.Media.Media3D.Point3D> structure.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn3)]
+[!code-vb[point3dsample#Mil3DPoints3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,20 +398,20 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Media.Media3D.Point3D.X" />, <see cref="P:System.Windows.Media.Media3D.Point3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Point3D.Z" /> coordinates of <paramref name="point1" /> and <paramref name="point2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Windows.Media.Media3D.Point3D> structures are equal if the values of their <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A> , and <xref:System.Windows.Media.Media3D.Point3D.Z%2A> properties are the same.  
+Two <xref:System.Windows.Media.Media3D.Point3D> structures are equal if the values of their <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A> , and <xref:System.Windows.Media.Media3D.Point3D.Z%2A> properties are the same.  
+ 
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
+ 
   
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the overloaded equality operator to check whether two <xref:System.Windows.Media.Media3D.Point3D> structures are equal.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN12](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn12)]
- [!code-vb[point3dsample#Mil3DPoints3DN12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn12)]  
-  
+The following example shows how to use the overloaded equality operator to check whether two <xref:System.Windows.Media.Media3D.Point3D> structures are equal.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN12](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn12)]
+[!code-vb[point3dsample#Mil3DPoints3DN12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -484,20 +484,20 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Media.Media3D.Point3D.X" />, <see cref="P:System.Windows.Media.Media3D.Point3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Point3D.Z" /> coordinates of <paramref name="point1" /> and <paramref name="point2" /> are different; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Windows.Media.Media3D.Point3D> structures are not equal if the values of their <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Point3D.Z%2A> properties are different.  
+Two <xref:System.Windows.Media.Media3D.Point3D> structures are not equal if the values of their <xref:System.Windows.Media.Media3D.Point3D.X%2A>, <xref:System.Windows.Media.Media3D.Point3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Point3D.Z%2A> properties are different.  
+ 
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
+ 
   
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Point3D> instances that are logically equal might fail.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the overloaded inequality operator to check whether two <xref:System.Windows.Media.Media3D.Point3D> structures are not equal.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN16](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn16)]
- [!code-vb[point3dsample#Mil3DPoints3DN16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn16)]  
-  
+The following example shows how to use the overloaded inequality operator to check whether two <xref:System.Windows.Media.Media3D.Point3D> structures are not equal.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN16](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn16)]
+[!code-vb[point3dsample#Mil3DPoints3DN16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,13 +525,13 @@
         <returns>The result of transforming <paramref name="point" /> by using <paramref name="matrix" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the overloaded multiplication operator to transform a <xref:System.Windows.Media.Media3D.Point3D> structure by using a <xref:System.Windows.Media.Media3D.Matrix3D> structure.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN10](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn10)]
- [!code-vb[point3dsample#Mil3DPoints3DN10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn10)]  
-  
+The following example shows how to use the overloaded multiplication operator to transform a <xref:System.Windows.Media.Media3D.Point3D> structure by using a <xref:System.Windows.Media.Media3D.Matrix3D> structure.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN10](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn10)]
+[!code-vb[point3dsample#Mil3DPoints3DN10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -559,13 +559,13 @@
         <returns>A <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure that represents the difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the overloaded subtraction operator to subtract a <xref:System.Windows.Media.Media3D.Point3D> structure from a <xref:System.Windows.Media.Media3D.Point3D> structure.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN7](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn7)]
- [!code-vb[point3dsample#Mil3DPoints3DN7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn7)]  
-  
+The following example shows how to use the overloaded subtraction operator to subtract a <xref:System.Windows.Media.Media3D.Point3D> structure from a <xref:System.Windows.Media.Media3D.Point3D> structure.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN7](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn7)]
+[!code-vb[point3dsample#Mil3DPoints3DN7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,13 +593,13 @@
         <returns>The changed <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure, the result of subtracting <paramref name="vector" /> from <paramref name="point" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the overloaded subtraction operator to subtract a <xref:System.Windows.Media.Media3D.Vector3D> structure from a <xref:System.Windows.Media.Media3D.Point3D> structure.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN5](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn5)]
- [!code-vb[point3dsample#Mil3DPoints3DN5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn5)]  
-  
+The following example shows how to use the overloaded subtraction operator to subtract a <xref:System.Windows.Media.Media3D.Vector3D> structure from a <xref:System.Windows.Media.Media3D.Point3D> structure.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN5](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn5)]
+[!code-vb[point3dsample#Mil3DPoints3DN5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -625,13 +625,13 @@
         <returns>The equivalent <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to convert a string representation of a 3-D point into a <xref:System.Windows.Media.Media3D.Point3D> structure.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN15](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn15)]
- [!code-vb[point3dsample#Mil3DPoints3DN15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn15)]  
-  
+The following example shows how to convert a string representation of a 3-D point into a <xref:System.Windows.Media.Media3D.Point3D> structure.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN15](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn15)]
+[!code-vb[point3dsample#Mil3DPoints3DN15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -659,13 +659,13 @@
         <returns>A <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure that represents the difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to subtract a <xref:System.Windows.Media.Media3D.Point3D> structure from a <xref:System.Windows.Media.Media3D.Point3D> structure.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN8](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn8)]
- [!code-vb[point3dsample#Mil3DPoints3DN8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn8)]  
-  
+The following example shows how to subtract a <xref:System.Windows.Media.Media3D.Point3D> structure from a <xref:System.Windows.Media.Media3D.Point3D> structure.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN8](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn8)]
+[!code-vb[point3dsample#Mil3DPoints3DN8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -693,13 +693,13 @@
         <returns>The difference between <paramref name="point" /> and <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to subtract a <xref:System.Windows.Media.Media3D.Vector3D> structure from a <xref:System.Windows.Media.Media3D.Point3D> structure.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN6](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn6)]
- [!code-vb[point3dsample#Mil3DPoints3DN6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn6)]  
-  
+The following example shows how to subtract a <xref:System.Windows.Media.Media3D.Vector3D> structure from a <xref:System.Windows.Media.Media3D.Point3D> structure.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN6](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn6)]
+[!code-vb[point3dsample#Mil3DPoints3DN6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -794,13 +794,13 @@
         <value>The x-coordinate of this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how set <xref:System.Windows.Media.Media3D.Point3D> properties.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn13)]
- [!code-vb[point3dsample#Mil3DPoints3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn13)]  
-  
+The following example shows how set <xref:System.Windows.Media.Media3D.Point3D> properties.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn13)]
+[!code-vb[point3dsample#Mil3DPoints3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -822,13 +822,13 @@
         <value>The y-coordinate of this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how set <xref:System.Windows.Media.Media3D.Point3D> properties.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn13)]
- [!code-vb[point3dsample#Mil3DPoints3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn13)]  
-  
+The following example shows how set <xref:System.Windows.Media.Media3D.Point3D> properties.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn13)]
+[!code-vb[point3dsample#Mil3DPoints3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -850,13 +850,13 @@
         <value>The z-coordinate of this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how set <xref:System.Windows.Media.Media3D.Point3D> properties.  
-  
- [!code-csharp[point3dsample#Mil3DPoints3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn13)]
- [!code-vb[point3dsample#Mil3DPoints3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn13)]  
-  
+The following example shows how set <xref:System.Windows.Media.Media3D.Point3D> properties.  
+ 
+[!code-csharp[point3dsample#Mil3DPoints3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Point3DSample/CSharp/Window1.xaml.cs#mil3dpoints3dn13)]
+[!code-vb[point3dsample#Mil3DPoints3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Point3DSample/visualbasic/window1.xaml.vb#mil3dpoints3dn13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

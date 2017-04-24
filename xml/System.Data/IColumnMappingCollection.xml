@@ -20,22 +20,22 @@
     <summary>Contains a collection of DataColumnMapping objects, and is implemented by the <see cref="T:System.Data.Common.DataColumnMappingCollection" />, which is used in common by .NET Framework data providers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.IColumnMappingCollection> interface enables an inheriting class to implement a ColumnMapping collection. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
+The <xref:System.Data.IColumnMappingCollection> interface enables an inheriting class to implement a ColumnMapping collection. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
+ 
+An application does not create an instance of the <xref:System.Data.IColumnMappingCollection> interface directly, but creates an instance of a class that inherits <xref:System.Data.IColumnMappingCollection>.  
+ 
+Classes that inherit <xref:System.Data.IColumnMappingCollection> must implement all inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IColumnMappingCollection> interface defines the <xref:System.Data.IColumnMappingCollection.RemoveAt%2A> method. In turn, the <xref:System.Data.Common.DataTableMappingCollection> class inherits this method, and defines two additional overloads of <xref:System.Data.Common.DataTableMappingCollection.RemoveAt%2A>.  
+ 
   
- An application does not create an instance of the <xref:System.Data.IColumnMappingCollection> interface directly, but creates an instance of a class that inherits <xref:System.Data.IColumnMappingCollection>.  
-  
- Classes that inherit <xref:System.Data.IColumnMappingCollection> must implement all inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IColumnMappingCollection> interface defines the <xref:System.Data.IColumnMappingCollection.RemoveAt%2A> method. In turn, the <xref:System.Data.Common.DataTableMappingCollection> class inherits this method, and defines two additional overloads of <xref:System.Data.Common.DataTableMappingCollection.RemoveAt%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, to <xref:System.Data.Common.DataColumnMappingCollection.Add%2A> several <xref:System.Data.Common.DataColumnMapping> objects to its <xref:System.Data.Common.DataTableMapping.ColumnMappings%2A> collection, and then displays a list of those mapped source tables. This example assumes that a <xref:System.Data.Common.DataTableMapping> has already been created.  
-  
- [!code-csharp[Classic WebData DataColumnMappingCollection Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataColumnMappingCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection Example/VB/source.vb#1)]  
-  
+The following example uses an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, to <xref:System.Data.Common.DataColumnMappingCollection.Add%2A> several <xref:System.Data.Common.DataColumnMapping> objects to its <xref:System.Data.Common.DataTableMapping.ColumnMappings%2A> collection, and then displays a list of those mapped source tables. This example assumes that a <xref:System.Data.Common.DataTableMapping> has already been created.  
+ 
+[!code-csharp[Classic WebData DataColumnMappingCollection Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataColumnMappingCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -172,13 +172,13 @@
         <returns>The zero-based location of the <see langword="DataColumnMapping" /> object with the specified source column name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example searches for an instance of the derived class, <xref:System.Data.Common.DataColumnMapping>, with the given source column name within a <xref:System.Data.Common.DataColumnMappingCollection> collection. If the <xref:System.Data.Common.DataColumnMapping> exists, the example displays the name and the index of the mapping. If the mapping does not exist, the example displays an error. This example assumes that a <xref:System.Data.Common.DataColumnMappingCollection> collection has been created.  
-  
- [!code-csharp[Classic WebData DataColumnMappingCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection.this1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataColumnMappingCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection.this1 Example/VB/source.vb#1)]  
-  
+The following example searches for an instance of the derived class, <xref:System.Data.Common.DataColumnMapping>, with the given source column name within a <xref:System.Data.Common.DataColumnMappingCollection> collection. If the <xref:System.Data.Common.DataColumnMapping> exists, the example displays the name and the index of the mapping. If the mapping does not exist, the example displays an error. This example assumes that a <xref:System.Data.Common.DataColumnMappingCollection> collection has been created.  
+ 
+[!code-csharp[Classic WebData DataColumnMappingCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection.this1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataColumnMappingCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection.this1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,13 +235,13 @@
         <summary>Removes the <see cref="T:System.Data.IColumnMapping" /> object with the specified <see cref="P:System.Data.IColumnMapping.SourceColumn" /> name from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example searches for an instance of the derived class, <xref:System.Data.Common.DataColumnMapping>, with the given `SourceColumn` name within a <xref:System.Data.Common.DataColumnMappingCollection> collection. If the <xref:System.Data.Common.DataColumnMapping> exists, the mapping is removed. This example assumes that a <xref:System.Data.Common.DataColumnMappingCollection> collection has been created.  
-  
- [!code-csharp[Classic WebData DataColumnMappingCollection.RemoveAt1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection.RemoveAt1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataColumnMappingCollection.RemoveAt1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection.RemoveAt1 Example/VB/source.vb#1)]  
-  
+The following example searches for an instance of the derived class, <xref:System.Data.Common.DataColumnMapping>, with the given `SourceColumn` name within a <xref:System.Data.Common.DataColumnMappingCollection> collection. If the <xref:System.Data.Common.DataColumnMapping> exists, the mapping is removed. This example assumes that a <xref:System.Data.Common.DataColumnMappingCollection> collection has been created.  
+ 
+[!code-csharp[Classic WebData DataColumnMappingCollection.RemoveAt1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection.RemoveAt1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataColumnMappingCollection.RemoveAt1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMappingCollection.RemoveAt1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">A <see cref="T:System.Data.Common.DataColumnMapping" /> object does not exist with the specified <see langword="SourceColumn" /> name.</exception>

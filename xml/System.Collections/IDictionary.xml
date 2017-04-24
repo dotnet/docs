@@ -32,33 +32,33 @@
     <summary>Represents a nongeneric collection of key/value pairs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.IDictionary> interface is the base interface for nongeneric collections of key/value pairs. For the generic version of this interface, see <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>.  
+The <xref:System.Collections.IDictionary> interface is the base interface for nongeneric collections of key/value pairs. For the generic version of this interface, see <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>.  
+ 
+Each element is a key/value pair stored in a <xref:System.Collections.DictionaryEntry> object.  
+ 
+Each pair must have a unique key. Implementations can vary in whether they allow the key to be null.  The value can be null and does not have to be unique. The <xref:System.Collections.IDictionary> interface allows the contained keys and values to be enumerated, but it does not imply any particular sort order.  
+ 
+<xref:System.Collections.IDictionary> implementations fall into three categories: read-only, fixed-size, variable-size. A read-only <xref:System.Collections.IDictionary> object cannot be modified. A fixed-size <xref:System.Collections.IDictionary> object does not allow the addition or removal of elements, but does allow the modification of existing elements. A variable-size <xref:System.Collections.IDictionary> object allows the addition, removal, and modification of elements.  
+ 
+The `foreach` statement of the C# language (`For Each` in Visual Basic) returns an object of the type of the elements in the collection. Since each element of the <xref:System.Collections.IDictionary> object is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>. For example:  
+ 
+[!code-cpp[Dictionary#14](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/remarks.cpp#14)]
+[!code-csharp[Dictionary#14](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/remarks.cs#14)]
+[!code-vb[Dictionary#14](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/remarks.vb#14)]  
+ 
+The `foreach` statement is a wrapper around the enumerator, which allows only reading from but not writing to the collection.  
+ 
   
- Each element is a key/value pair stored in a <xref:System.Collections.DictionaryEntry> object.  
-  
- Each pair must have a unique key. Implementations can vary in whether they allow the key to be null.  The value can be null and does not have to be unique. The <xref:System.Collections.IDictionary> interface allows the contained keys and values to be enumerated, but it does not imply any particular sort order.  
-  
- <xref:System.Collections.IDictionary> implementations fall into three categories: read-only, fixed-size, variable-size. A read-only <xref:System.Collections.IDictionary> object cannot be modified. A fixed-size <xref:System.Collections.IDictionary> object does not allow the addition or removal of elements, but does allow the modification of existing elements. A variable-size <xref:System.Collections.IDictionary> object allows the addition, removal, and modification of elements.  
-  
- The `foreach` statement of the C# language (`For Each` in Visual Basic) returns an object of the type of the elements in the collection. Since each element of the <xref:System.Collections.IDictionary> object is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>. For example:  
-  
- [!code-cpp[Dictionary#14](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/remarks.cpp#14)]
- [!code-csharp[Dictionary#14](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/remarks.cs#14)]
- [!code-vb[Dictionary#14](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/remarks.vb#14)]  
-  
- The `foreach` statement is a wrapper around the enumerator, which allows only reading from but not writing to the collection.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to define a simple dictionary class that implements the <xref:System.Collections.IDictionary> interface.  
-  
- [!code-cpp[Dictionary#1](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#1)]
- [!code-csharp[Dictionary#1](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#1)]
- [!code-vb[Dictionary#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#1)]  
-  
+The following code example demonstrates how to define a simple dictionary class that implements the <xref:System.Collections.IDictionary> interface.  
+ 
+[!code-cpp[Dictionary#1](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#1)]
+[!code-csharp[Dictionary#1](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#1)]
+[!code-vb[Dictionary#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -100,21 +100,21 @@
         <summary>Adds an element with the provided key and value to the <see cref="T:System.Collections.IDictionary" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary (for example, `myCollection["myNonexistentKey"] = myValue`). However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
+You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary (for example, `myCollection["myNonexistentKey"] = myValue`). However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
+ 
+Implementations can vary in whether they allow the key to be `null`.  
+ 
   
- Implementations can vary in whether they allow the key to be `null`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
-  
- [!code-cpp[Dictionary#9](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#9)]
- [!code-csharp[Dictionary#9](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#9)]
- [!code-vb[Dictionary#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#9)]  
-  
+The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
+ 
+[!code-cpp[Dictionary#9](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#9)]
+[!code-csharp[Dictionary#9](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#9)]
+[!code-vb[Dictionary#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -156,14 +156,14 @@
         <summary>Removes all elements from the <see cref="T:System.Collections.IDictionary" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Clear%2A> method. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
-  
- [!code-cpp[Dictionary#8](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#8)]
- [!code-csharp[Dictionary#8](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#8)]
- [!code-vb[Dictionary#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#8)]  
-  
+The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Clear%2A> method. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
+ 
+[!code-cpp[Dictionary#8](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#8)]
+[!code-csharp[Dictionary#8](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#8)]
+[!code-vb[Dictionary#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.IDictionary" /> object is read-only.</exception>
@@ -203,21 +203,21 @@
           <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> contains an element with the key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implementations can vary in whether they allow the key to be `null`.  
+Implementations can vary in whether they allow the key to be `null`.  
+ 
+Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
+ 
   
- Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Contains%2A> method. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
-  
- [!code-cpp[Dictionary#5](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#5)]
- [!code-csharp[Dictionary#5](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#5)]
- [!code-vb[Dictionary#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#5)]  
-  
+The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Contains%2A> method. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
+ 
+[!code-cpp[Dictionary#5](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#5)]
+[!code-csharp[Dictionary#5](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#5)]
+[!code-vb[Dictionary#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -254,24 +254,24 @@
         <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> object for the <see cref="T:System.Collections.IDictionary" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [Visual Basic, C#]  
-  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, the <xref:System.Collections.IEnumerator.Current%2A> property is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
+[Visual Basic, C#]  
+ 
+The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, the <xref:System.Collections.IEnumerator.Current%2A> property is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,21 +306,21 @@
           <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> object has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but does allow the modification of existing elements.  
+A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but does allow the modification of existing elements.  
+ 
+A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements; therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
+ 
   
- A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements; therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.IsFixedSize%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
-  
- [!code-cpp[Dictionary#6](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#6)]
- [!code-csharp[Dictionary#6](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#6)]
- [!code-vb[Dictionary#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#6)]  
-  
+The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.IsFixedSize%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
+ 
+[!code-cpp[Dictionary#6](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#6)]
+[!code-csharp[Dictionary#6](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#6)]
+[!code-vb[Dictionary#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,19 +355,19 @@
           <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> object is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.IsReadOnly%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
-  
- [!code-cpp[Dictionary#4](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#4)]
- [!code-csharp[Dictionary#4](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#4)]
- [!code-vb[Dictionary#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#4)]  
-  
+The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.IsReadOnly%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
+ 
+[!code-cpp[Dictionary#4](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#4)]
+[!code-csharp[Dictionary#4](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#4)]
+[!code-vb[Dictionary#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -405,25 +405,25 @@
         <value>The element with the specified key, or <see langword="null" /> if the key does not exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[key]`.  
+This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[key]`.  
+ 
+You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary (for example, `myCollection["myNonexistentKey"] = myValue`). However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
+ 
+Implementations can vary in whether they allow the key to be `null`.  
+ 
+The C# language uses the `this`[this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.IDictionary.Item%2A> property. Visual Basic implements <xref:System.Collections.IDictionary.Item%2A> as a default property, which provides the same indexing functionality.  
+ 
   
- You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary (for example, `myCollection["myNonexistentKey"] = myValue`). However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
-  
- Implementations can vary in whether they allow the key to be `null`.  
-  
- The C# language uses the `this`[this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.IDictionary.Item%2A> property. Visual Basic implements <xref:System.Collections.IDictionary.Item%2A> as a default property, which provides the same indexing functionality.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Item%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
-  
- [!code-cpp[Dictionary#13](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#13)]
- [!code-csharp[Dictionary#13](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#13)]
- [!code-vb[Dictionary#13](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#13)]  
-  
+The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Item%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
+ 
+[!code-cpp[Dictionary#13](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#13)]
+[!code-csharp[Dictionary#13](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#13)]
+[!code-vb[Dictionary#13](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#13)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -464,19 +464,19 @@
         <value>An <see cref="T:System.Collections.ICollection" /> object containing the keys of the <see cref="T:System.Collections.IDictionary" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order of the keys in the returned <xref:System.Collections.ICollection> object is unspecified, but is guaranteed to be the same order as the corresponding values in the <xref:System.Collections.ICollection> returned by the <xref:System.Collections.IDictionary.Values%2A> property.  
+The order of the keys in the returned <xref:System.Collections.ICollection> object is unspecified, but is guaranteed to be the same order as the corresponding values in the <xref:System.Collections.ICollection> returned by the <xref:System.Collections.IDictionary.Values%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Keys%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
-  
- [!code-cpp[Dictionary#10](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#10)]
- [!code-csharp[Dictionary#10](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#10)]
- [!code-vb[Dictionary#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#10)]  
-  
+The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Keys%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
+ 
+[!code-cpp[Dictionary#10](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#10)]
+[!code-csharp[Dictionary#10](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#10)]
+[!code-vb[Dictionary#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -513,19 +513,19 @@
         <summary>Removes the element with the specified key from the <see cref="T:System.Collections.IDictionary" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Collections.IDictionary> object does not contain an element with the specified key, the <xref:System.Collections.IDictionary> remains unchanged. No exception is thrown.  
+If the <xref:System.Collections.IDictionary> object does not contain an element with the specified key, the <xref:System.Collections.IDictionary> remains unchanged. No exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
-  
- [!code-cpp[Dictionary#7](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#7)]
- [!code-csharp[Dictionary#7](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#7)]
- [!code-vb[Dictionary#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#7)]  
-  
+The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
+ 
+[!code-cpp[Dictionary#7](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#7)]
+[!code-csharp[Dictionary#7](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#7)]
+[!code-vb[Dictionary#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -566,19 +566,19 @@
         <value>An <see cref="T:System.Collections.ICollection" /> object containing the values in the <see cref="T:System.Collections.IDictionary" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order of the values in the returned <xref:System.Collections.ICollection> object is unspecified, but is guaranteed to be the same order as the corresponding keys in the <xref:System.Collections.ICollection> returned by the <xref:System.Collections.IDictionary.Keys%2A> property.  
+The order of the values in the returned <xref:System.Collections.ICollection> object is unspecified, but is guaranteed to be the same order as the corresponding keys in the <xref:System.Collections.ICollection> returned by the <xref:System.Collections.IDictionary.Keys%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Values%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
-  
- [!code-cpp[Dictionary#11](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#11)]
- [!code-csharp[Dictionary#11](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#11)]
- [!code-vb[Dictionary#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#11)]  
-  
+The following code example demonstrates how to implement the <xref:System.Collections.IDictionary.Values%2A> property. This code example is part of a larger example provided for the <xref:System.Collections.IDictionary> class.  
+ 
+[!code-cpp[Dictionary#11](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#11)]
+[!code-csharp[Dictionary#11](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#11)]
+[!code-vb[Dictionary#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

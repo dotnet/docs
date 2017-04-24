@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Windows.VisualStateGroup.CurrentStateChanging" /> and <see cref="E:System.Windows.VisualStateGroup.CurrentStateChanged" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.VisualStateGroup> that raises the event is set on the <xref:System.Windows.Controls.ControlTemplate> of a control, the <xref:System.Windows.VisualStateChangedEventArgs.Control%2A> property is the control that owns the <xref:System.Windows.Controls.ControlTemplate>. When the <xref:System.Windows.VisualStateGroup> is set on a <xref:System.Windows.FrameworkElement> that is not in a <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.VisualStateChangedEventArgs.Control%2A> property is `null` and you should use the <xref:System.Windows.VisualStateChangedEventArgs.StateGroupsRoot%2A> property.  
-  
+When the <xref:System.Windows.VisualStateGroup> that raises the event is set on the <xref:System.Windows.Controls.ControlTemplate> of a control, the <xref:System.Windows.VisualStateChangedEventArgs.Control%2A> property is the control that owns the <xref:System.Windows.Controls.ControlTemplate>. When the <xref:System.Windows.VisualStateGroup> is set on a <xref:System.Windows.FrameworkElement> that is not in a <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.VisualStateChangedEventArgs.Control%2A> property is `null` and you should use the <xref:System.Windows.VisualStateChangedEventArgs.StateGroupsRoot%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <value>The element that is transitioning states if the <see cref="T:System.Windows.VisualStateGroup" /> is in a <see cref="T:System.Windows.Controls.ControlTemplate" />; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.VisualStateGroup> is set on a <xref:System.Windows.FrameworkElement> that is not in a <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.VisualStateChangedEventArgs.Control%2A> property is `null` and you should use the <xref:System.Windows.VisualStateChangedEventArgs.StateGroupsRoot%2A> property.  
-  
+When the <xref:System.Windows.VisualStateGroup> is set on a <xref:System.Windows.FrameworkElement> that is not in a <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.VisualStateChangedEventArgs.Control%2A> property is `null` and you should use the <xref:System.Windows.VisualStateChangedEventArgs.StateGroupsRoot%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,23 +14,23 @@
     <summary>The <see cref="T:System.Windows.Localization" /> class defines attached properties for localization attributes and comments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Markup authors may have specific requirements for elements in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] UI, such as constraints for text length, font family, or font size. Localizers need to know about them in order to provide consistent localization. Localization properties can be specified inside [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], allowing authors to communicate their localization needs to localizers. These properties provide rules and hints for localization, which can be used to modify the application. There are two types of localization properties:  
-  
+Markup authors may have specific requirements for elements in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] UI, such as constraints for text length, font family, or font size. Localizers need to know about them in order to provide consistent localization. Localization properties can be specified inside [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], allowing authors to communicate their localization needs to localizers. These properties provide rules and hints for localization, which can be used to modify the application. There are two types of localization properties:  
+ 
 -   Localization attributes. The attributes specify which resources, such as <xref:System.Windows.Media.FontFamily>, are to be localized.  
-  
+ 
 -   Localization comments. The comments are free-form text that the markup author includes.  
+ 
+For more information on how to use these localization properties, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+ 
   
- For more information on how to use these localization properties, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows localization attributes and comments defined for a text block.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/AttributesSnippets/CSharp/Comments.xaml#attributessnippet4)]  
-  
+The following code example shows localization attributes and comments defined for a text block.  
+ 
+[!code-xml[AttributesSnippets#AttributesSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/AttributesSnippets/CSharp/Comments.xaml#attributessnippet4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,12 +51,12 @@
         <summary>Identifies the <see cref="P:System.Windows.Localization.Attributes" /> attached property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to get and set the <xref:System.Windows.Localization.Attributes%2A> attached property for a button.  
-  
-  
-  
+The following code example shows how to get and set the <xref:System.Windows.Localization.Attributes%2A> attached property for a button.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,12 +77,12 @@
         <summary>Identifies the <see cref="P:System.Windows.Localization.Comments" /> attached property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to get and set the <xref:System.Windows.Localization.Comments%2A> attached property for a text block.  
-  
-  
-  
+The following code example shows how to get and set the <xref:System.Windows.Localization.Comments%2A> attached property for a text block.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,17 +113,17 @@
         <returns>A <see cref="T:System.String" /> value that represents the localization attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Localization attributes specify which resources are to be localized.  
+Localization attributes specify which resources are to be localized.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to retrieve the localization attributes defined for a button.  
-  
-  
-  
+The following code example shows how to retrieve the localization attributes defined for a button.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,17 +154,17 @@
         <returns>A <see cref="T:System.String" /> value that represents the localization comment.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Localization comments are free-form text that the application developer includes.  
+Localization comments are free-form text that the application developer includes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to retrieve the localization comments defined for a text block.  
-  
-  
-  
+The following code example shows how to retrieve the localization comments defined for a text block.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,17 +191,17 @@
         <summary>Sets the <see cref="F:System.Windows.Localization.AttributesProperty" /> attached property for the specified element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Localization attributes specify which resources are to be localized. For more information on how to define localization attributes, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+Localization attributes specify which resources are to be localized. For more information on how to define localization attributes, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to set the localization attributes for a button.  
-  
-  
-  
+The following code example shows how to set the localization attributes for a button.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,17 +228,17 @@
         <summary>Sets the <see cref="F:System.Windows.Localization.CommentsProperty" /> attached property to the specified element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Localization comments are free-form text that the application developer includes. For more information on how to define localization comments, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+Localization comments are free-form text that the application developer includes. For more information on how to define localization comments, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to set the localization comments for a text block.  
-  
-  
-  
+The following code example shows how to set the localization comments for a text block.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>

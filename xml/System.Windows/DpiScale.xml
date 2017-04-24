@@ -52,10 +52,10 @@
         <value>The DPI scale for the X axis.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, if the DPI is 120 , DpiScaleX would be 1.25 (120/96).  
-  
+For example, if the DPI is 120 , DpiScaleX would be 1.25 (120/96).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,10 +77,10 @@
         <value>The DPI scale for the Y axis.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- DpiScaleY is always equal to the DpiScaleX, but still, the values are stored in separate properties.  
-  
+DpiScaleY is always equal to the DpiScaleX, but still, the values are stored in separate properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>The DPI along the X axis.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.DpiScale.PixelsPerInchX%2A> and <xref:System.Windows.DpiScale.PixelsPerInchY%2A> reference the number of pixels that are drawn within an inch on the screen.  
-  
+<xref:System.Windows.DpiScale.PixelsPerInchX%2A> and <xref:System.Windows.DpiScale.PixelsPerInchY%2A> reference the number of pixels that are drawn within an inch on the screen.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <value>The DPI along the Y axis.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.DpiScale.PixelsPerInchX%2A> and <xref:System.Windows.DpiScale.PixelsPerInchY%2A> reference the number of pixels that are drawn within an inch on the screen.  
-  
+<xref:System.Windows.DpiScale.PixelsPerInchX%2A> and <xref:System.Windows.DpiScale.PixelsPerInchY%2A> reference the number of pixels that are drawn within an inch on the screen.  
+ 
  ]]></format>
         </remarks>
       </Docs>

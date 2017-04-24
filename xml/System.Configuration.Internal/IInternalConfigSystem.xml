@@ -39,10 +39,10 @@
         <returns>A configuration object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by <xref:System.Configuration.ConfigurationSettings> class. The configuration key value is made up of the configuration group name and the configuration section name.  
-  
+This method is called by <xref:System.Configuration.ConfigurationSettings> class. The configuration key value is made up of the configuration group name and the configuration section name.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -68,10 +68,10 @@
         <summary>Refreshes the configuration system based on the specified section name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by <xref:System.Configuration.ConfigurationSettings> class.  
-  
+This method is called by <xref:System.Configuration.ConfigurationSettings> class.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

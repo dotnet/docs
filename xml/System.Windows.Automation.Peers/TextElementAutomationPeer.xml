@@ -79,10 +79,10 @@
           <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Windows.Automation.Peers.DocumentAutomationPeer> provides access to its content through <xref:System.Windows.Automation.TextPattern>, this method always returns `null`.  
-  
+Because <xref:System.Windows.Automation.Peers.DocumentAutomationPeer> provides access to its content through <xref:System.Windows.Automation.TextPattern>, this method always returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,10 +133,10 @@
           <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property does not indicate whether the element is visible. In some circumstances, the element can be on the screen but still not be visible. An example is an element that is obscured by other elements.  
-  
+This property does not indicate whether the element is visible. In some circumstances, the element can be on the screen but still not be visible. An example is an element that is obscured by other elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>

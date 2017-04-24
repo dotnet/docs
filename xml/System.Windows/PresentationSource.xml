@@ -48,10 +48,10 @@
         <summary>Adds a <see cref="T:System.Windows.PresentationSource" /> derived class instance to the list of known presentation sources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should be called by derived classes to indicate that they need to be tracked.  
-  
+This method should be called by derived classes to indicate that they need to be tracked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,20 +83,20 @@
         <summary>Adds a handler for the <see langword="SourceChanged" /> event to the provided element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Despite what the syntax block for this event states, there is no legitimate [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] attached property usage. You should not attempt to add handlers in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], and handlers in code should only be placed on objects that serve as hosts for presentation (<xref:System.Windows.PresentationSource> ) content. Such handlers should only be attached during object initialization, and should be explicitly removed in a Dispose method or equivalent object cleanup.  
-  
- Even though this is a routed event, there are special restrictions placed on this event that differ from normal routed event behavior, due to the relatively small number of elements in a typical application scenario that would concern themselves with handling this event.  
-  
+Despite what the syntax block for this event states, there is no legitimate [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] attached property usage. You should not attempt to add handlers in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], and handlers in code should only be placed on objects that serve as hosts for presentation (<xref:System.Windows.PresentationSource> ) content. Such handlers should only be attached during object initialization, and should be explicitly removed in a Dispose method or equivalent object cleanup.  
+ 
+Even though this is a routed event, there are special restrictions placed on this event that differ from normal routed event behavior, due to the relatively small number of elements in a typical application scenario that would concern themselves with handling this event.  
+ 
 -   You cannot use the <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> <xref:System.Windows.UIElement.AddHandler%2A> methods to add handlers. You must use <xref:System.Windows.PresentationSource.AddSourceChangedHandler%2A>.  
-  
+ 
 -   The [!INCLUDE[TLA#tla_cshrp](~/includes/tlasharptla-cshrp-md.md)] `+=` and `-=` event handler syntaxes, and related language specific handler syntaxes, are not supported, because the event itself is not exposed as public. Only the <xref:System.Windows.PresentationSource> utility methods for adding and removing the handlers directly are supported.  
-  
+ 
 -   Class handlers are not allowed. Specifically, you cannot call <xref:System.Windows.EventManager.RegisterClassHandler%2A> against this event in a class constructor because although an identifier field exists for SourceChanged, the identifier is not public.  
-  
+ 
 -   All registered handlers will receive the SourceChanged event even if one of the handlers attempts to mark the arguments as handled.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call or implement this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
@@ -142,10 +142,10 @@
         <value>A visual target (instance of a <see cref="T:System.Windows.Media.CompositionTarget" /> derived class).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return of this property relies on an implementation of <xref:System.Windows.PresentationSource.GetCompositionTargetCore%2A>.  
-  
+The return of this property relies on an implementation of <xref:System.Windows.PresentationSource.GetCompositionTargetCore%2A>.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -192,12 +192,12 @@
         <value>A list of weak references.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned list supports an enumerator over a read-only, thread-safe copy of the list of sources as added with <xref:System.Windows.PresentationSource.AddSource%2A>.  
-  
- The enumerator skips any dead weak references in the list.  
-  
+The returned list supports an enumerator over a read-only, thread-safe copy of the list of sources as added with <xref:System.Windows.PresentationSource.AddSource%2A>.  
+ 
+The enumerator skips any dead weak references in the list.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to get sources. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
@@ -347,14 +347,14 @@
         <summary>Removes a handler for the <see langword="SourceChanged" /> event from the provided element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Even though this is a routed event, there are special restrictions placed on this event that differ from normal routed event behavior, due to the relatively small number of elements in a typical application scenario that would concern themselves with handling this event.  
-  
+Even though this is a routed event, there are special restrictions placed on this event that differ from normal routed event behavior, due to the relatively small number of elements in a typical application scenario that would concern themselves with handling this event.  
+ 
 -   You cannot use the <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> <xref:System.Windows.UIElement.RemoveHandler%2A> methods to remove handlers. You must use <xref:System.Windows.PresentationSource.RemoveSourceChangedHandler%2A>.  
-  
+ 
 -   The [!INCLUDE[TLA#tla_cshrp](~/includes/tlasharptla-cshrp-md.md)] `+=` and `-=` event handler syntaxes, and other language specific handler syntaxes, are not supported, because the event itself is not exposed as public. Only the <xref:System.Windows.PresentationSource> utility methods for adding and removing the handlers directly are supported.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,16 +389,16 @@
         <summary>Provides notification that the root <see cref="T:System.Windows.Media.Visual" /> has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes should call this method to indicate that their root <xref:System.Windows.Media.Visual> has changed.  
-  
- Calling this method causes two object lifetime events to be raised on the specified root visuals, if and only if those root visuals are <xref:System.Windows.FrameworkElement> derived classes.  
-  
+Derived classes should call this method to indicate that their root <xref:System.Windows.Media.Visual> has changed.  
+ 
+Calling this method causes two object lifetime events to be raised on the specified root visuals, if and only if those root visuals are <xref:System.Windows.FrameworkElement> derived classes.  
+ 
 -   The old root visual will raise the <xref:System.Windows.FrameworkElement.Unloaded> event, and will process its tree of elements downward, broadcasting this event to each child element.  
-  
+ 
 -   The new root visual will raise the <xref:System.Windows.FrameworkElement.Loaded> event, and will process its tree of elements downward, broadcasting this event to each child element.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,18 +14,18 @@
     <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Vector" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="XAMLTextUsage_VectorConverter"></a>   
 ## XAML Text Usage  
-   
   
+ 
 ## Examples  
- The following example uses a <xref:System.Windows.VectorConverter> to convert a string into a <xref:System.Windows.Vector>.  
-  
- [!code-csharp[VectorExamples_snip#VectorConverterExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#vectorconverterexample_csharp)]  
-  
+The following example uses a <xref:System.Windows.VectorConverter> to convert a string into a <xref:System.Windows.Vector>.  
+ 
+[!code-csharp[VectorExamples_snip#VectorConverterExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#vectorconverterexample_csharp)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -120,10 +120,10 @@
         <returns>The <see cref="T:System.Windows.Vector" /> created from converting <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.VectorConverter.CanConvertFrom%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.VectorConverter.CanConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <returns>The object created from converting this <see cref="T:System.Windows.Vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.VectorConverter.CanConvertTo%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.VectorConverter.CanConvertTo%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

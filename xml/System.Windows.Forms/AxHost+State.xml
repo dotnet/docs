@@ -23,12 +23,12 @@
     <summary>Encapsulates the persisted state of an ActiveX control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.AxHost.State> can be retrieved using the <xref:System.Windows.Forms.AxHost.OcxState%2A?displayProperty=fullName> property, or by reading the control's state from a data stream.  
-  
- For more information, see the documentation for `IPersistStream` and `IPersistPropertyBag` in the MSDN library. `IPersistStream` can be found in the interface reference section of the COM SDK documentation, and `IPersistPropertyBag` can be found in the COM Fundamentals interface reference section of the COM SDK documentation.  
-  
+The <xref:System.Windows.Forms.AxHost.State> can be retrieved using the <xref:System.Windows.Forms.AxHost.OcxState%2A?displayProperty=fullName> property, or by reading the control's state from a data stream.  
+ 
+For more information, see the documentation for `IPersistStream` and `IPersistPropertyBag` in the MSDN library. `IPersistStream` can be found in the interface reference section of the COM SDK documentation, and `IPersistPropertyBag` can be found in the COM Fundamentals interface reference section of the COM SDK documentation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,12 +52,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.State" /> class for deserializing a state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,12 +86,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.State" /> class for serializing a state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `context` parameter, see the <xref:System.Runtime.Serialization.StreamingContext> class.  
-  
+For more information about the `context` parameter, see the <xref:System.Runtime.Serialization.StreamingContext> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>

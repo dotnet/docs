@@ -19,12 +19,12 @@
     <summary>A message query that evaluates XPath expressions to retrieve data from a message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> and specify a <xref:System.ServiceModel.MessageQuerySet> using a <xref:System.ServiceModel.XPathMessageQuery>.  
-  
- [!code-csharp[ContentBasedCorrelation#2](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/service.cs#2)]  
-  
+The following example shows how to create a <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> and specify a <xref:System.ServiceModel.MessageQuerySet> using a <xref:System.ServiceModel.XPathMessageQuery>.  
+ 
+[!code-csharp[ContentBasedCorrelation#2](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/service.cs#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -13,35 +13,35 @@
     <summary>Specifies how ASP.NET generates the <see cref="P:System.Web.UI.Control.ClientID" /> for a control that can be accessed in client script.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Web.UI.ClientIDMode> enumeration when you set the <xref:System.Web.UI.Control.ClientIDMode%2A> property for a control. The value that you assign to the <xref:System.Web.UI.Control.ClientIDMode%2A> property determines how the <xref:System.Web.UI.Control.ClientID%2A> property is generated. The value of the <xref:System.Web.UI.Control.ClientID%2A> property is rendered as the `id` attribute in markup, and it is the value that you use to access the control from client script. The value that you assign to the <xref:System.Web.UI.Control.ClientIDMode%2A> property does not affect the <xref:System.Web.UI.Control.ID%2A> property of the server control, only the `id` attribute of the corresponding HTML element.  
+You use the <xref:System.Web.UI.ClientIDMode> enumeration when you set the <xref:System.Web.UI.Control.ClientIDMode%2A> property for a control. The value that you assign to the <xref:System.Web.UI.Control.ClientIDMode%2A> property determines how the <xref:System.Web.UI.Control.ClientID%2A> property is generated. The value of the <xref:System.Web.UI.Control.ClientID%2A> property is rendered as the `id` attribute in markup, and it is the value that you use to access the control from client script. The value that you assign to the <xref:System.Web.UI.Control.ClientIDMode%2A> property does not affect the <xref:System.Web.UI.Control.ID%2A> property of the server control, only the `id` attribute of the corresponding HTML element.  
+ 
+The default value of <xref:System.Web.UI.Control.ClientIDMode%2A> for a page is Predictable. The default value of <xref:System.Web.UI.Control.ClientIDMode%2A> for a control is Inherit.  
+ 
+Because the default for controls is Inherit, the default generation mode is Predictable. (However, if you use Visual Studio to convert a Web project to ASP.NET 4 from an earlier version, Visual Studio automatically sets the site default to AutoID in the Web.config file.)  
+ 
+You can set the `ClientIDMode` value for all pages in a Web site by setting the  element in the site's Web.config file. You can set the `ClientIDMode` value for a page in the  directive.  
+ 
+For more information, see [ASP.NET Web Server Control Identification](http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7).  
+ 
   
- The default value of <xref:System.Web.UI.Control.ClientIDMode%2A> for a page is Predictable. The default value of <xref:System.Web.UI.Control.ClientIDMode%2A> for a control is Inherit.  
-  
- Because the default for controls is Inherit, the default generation mode is Predictable. (However, if you use Visual Studio to convert a Web project to ASP.NET 4 from an earlier version, Visual Studio automatically sets the site default to AutoID in the Web.config file.)  
-  
- You can set the `ClientIDMode` value for all pages in a Web site by setting the  element in the site's Web.config file. You can set the `ClientIDMode` value for a page in the  directive.  
-  
- For more information, see [ASP.NET Web Server Control Identification](http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows <xref:System.Web.UI.WebControls.Label> controls that are contained in a <xref:System.Web.UI.WebControls.ListView> control. On the <xref:System.Web.UI.WebControls.ListView> control, the <xref:System.Web.UI.Control.ClientIDMode%2A> property is set to Predictable and the <xref:System.Web.UI.WebControls.ListView.ClientIDRowSuffix%2A> property is set to `ProductID`. From client script, you can access a particular instance of a <xref:System.Web.UI.WebControls.Label> based on the `ProductID` value of the instance that you are trying to access.  
-  
- This example creates HTML with three `ProductIDLabel` controls. When the page runs, the IDs for the controls will be the following:  
-  
+The following example shows <xref:System.Web.UI.WebControls.Label> controls that are contained in a <xref:System.Web.UI.WebControls.ListView> control. On the <xref:System.Web.UI.WebControls.ListView> control, the <xref:System.Web.UI.Control.ClientIDMode%2A> property is set to Predictable and the <xref:System.Web.UI.WebControls.ListView.ClientIDRowSuffix%2A> property is set to `ProductID`. From client script, you can access a particular instance of a <xref:System.Web.UI.WebControls.Label> based on the `ProductID` value of the instance that you are trying to access.  
+ 
+This example creates HTML with three `ProductIDLabel` controls. When the page runs, the IDs for the controls will be the following:  
+ 
 -   `ListView1_ProductIDLabel_1`  
-  
+ 
 -   `ListView1_ProductIDLabel_34`  
-  
+ 
 -   `ListView1_ProductIDLabel_43`  
-  
- For more information, see [ASP.NET Web Server Control Identification](http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7)  
-  
-  
-  
+ 
+For more information, see [ASP.NET Web Server Control Identification](http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7)  
+ 
+ 
+ 
  ]]></format>
     </remarks>
   </Docs>

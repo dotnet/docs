@@ -13,10 +13,10 @@
     <summary>Provides values that specify the order in which the major parts of a package are streamed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you specify ResourceFirst, each dependent object is serialized before the object on which it depends. When you specify ResourceLast, information about how a resource will be used is streamed before the resource. To display text first so that users can read while the images are opening, specify the ImagesLast member.  
-  
+When you specify ResourceFirst, each dependent object is serialized before the object on which it depends. When you specify ResourceLast, information about how a resource will be used is streamed before the resource. To display text first so that users can read while the images are opening, specify the ImagesLast member.  
+ 
  ]]></format>
     </remarks>
   </Docs>

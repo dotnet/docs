@@ -18,10 +18,10 @@
     <summary>Dynamically manufactures Web service handler instances, whose type or types implement the <see cref="T:System.Web.IHttpHandler" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.IHttpHandler> interface establishes the contract that ASP.NET uses to process incoming HTTP Web requests with custom HTTP handlers. The <xref:System.Web.Services.Protocols.WebServiceHandlerFactory> class produces an instance of an <xref:System.Web.IHttpHandler> implementation for handling Web service requests.  
-  
+The <xref:System.Web.IHttpHandler> interface establishes the contract that ASP.NET uses to process incoming HTTP Web requests with custom HTTP handlers. The <xref:System.Web.Services.Protocols.WebServiceHandlerFactory> class produces an instance of an <xref:System.Web.IHttpHandler> implementation for handling Web service requests.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <summary>Releases the <see cref="T:System.Web.IHttpHandler" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are no resources associated with a handler instance that the <xref:System.Web.Services.Protocols.WebServiceHandlerFactory> class needs to release.  
-  
+There are no resources associated with a handler instance that the <xref:System.Web.Services.Protocols.WebServiceHandlerFactory> class needs to release.  
+ 
  ]]></format>
         </remarks>
       </Docs>

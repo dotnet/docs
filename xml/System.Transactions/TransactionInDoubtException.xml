@@ -19,14 +19,14 @@
     <summary>The exception that is thrown when an operation is attempted on a transaction that is in doubt, or an attempt is made to commit the transaction and the transaction becomes InDoubt.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception is thrown when an action is attempted on a transaction that is in doubt. A transaction is in doubt when the state of the transaction cannot be determined. Specifically, the final outcome of the transaction, whether it commits or aborts, is never known for this transaction.  
-  
- This exception is also thrown when an attempt is made to commit the transaction and the transaction becomes InDoubt.  
-  
- This is a recoverable error.  
-  
+This exception is thrown when an action is attempted on a transaction that is in doubt. A transaction is in doubt when the state of the transaction cannot be determined. Specifically, the final outcome of the transaction, whether it commits or aborts, is never known for this transaction.  
+ 
+This exception is also thrown when an attempt is made to commit the transaction and the transaction becomes InDoubt.  
+ 
+This is a recoverable error.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,37 +19,37 @@
     <summary>Serializes an object graph to a series of CodeDOM statements. This class provides an abstract base class for a serializer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can implement a custom <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> to control the generation of component initialization code for a type of component at design time.  
-  
- To implement a custom <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> for a type, you must:  
-  
+You can implement a custom <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> to control the generation of component initialization code for a type of component at design time.  
+ 
+To implement a custom <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> for a type, you must:  
+ 
 1.  Define a class that derives from <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer>.  
-  
+ 
 2.  Implement method overrides for serialization or deserialization methods. (See the information below for details.)  
-  
+ 
 3.  Associate your custom <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> implementation with a type of component using a <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute>.  
-  
- To implement a serialization method for generating configuration code for a component:  
-  
+ 
+To implement a serialization method for generating configuration code for a component:  
+ 
 1.  Within a class that derives from <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer>, override an appropriate serialization or deserialization method of the base class.  
-  
+ 
 2.  If you want the default serializer to generate code statements that perform the default component configuration, you must obtain and call the base serializer for the component. To obtain the base serializer for the component, call the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A> method of the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager> passed to your method override. Pass the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A> method the type of the component to serialize the configuration of, along with the base type of serializer you are requesting, which is <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer>. Call the method of the same name you are overriding on the base serializer, using the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager> and object passed to your method override. If you are implementing the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer.Serialize%2A> method, the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer.Serialize%2A> method of the base serializer will return an object. The type of this object depends on the type of base serializer which depends on the type of component you are serializing the values of. If you are implementing the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeEvents%2A>, <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeProperties%2A>, or <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializePropertiesToResources%2A> method, you must create a new <xref:System.CodeDom.CodeStatementCollection> to contain the generated code statements, and pass it to the method.  
-  
+ 
 3.  If you have called a base serializer method, you will have a <xref:System.CodeDom.CodeStatementCollection> that contains the statements to generate to initialize the component. Otherwise you should create a <xref:System.CodeDom.CodeStatementCollection>. You can add <xref:System.CodeDom.CodeStatement> objects representing statements to generate in the component configuration code to this collection.  
-  
+ 
 4.  Return the <xref:System.CodeDom.CodeStatementCollection> that represents the source code to generate to configure the component.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to create a custom CodeDOM serializer that derives from <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer>.  
-  
- [!code-cpp[IDesignerSerializationManagerSample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IDesignerSerializationManagerSample/CPP/idesignerserializationmanagersample.cpp#1)]
- [!code-csharp[IDesignerSerializationManagerSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IDesignerSerializationManagerSample/CS/idesignerserializationmanagersample.cs#1)]
- [!code-vb[IDesignerSerializationManagerSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDesignerSerializationManagerSample/VB/idesignerserializationmanagersample.vb#1)]  
-  
+The following code example illustrates how to create a custom CodeDOM serializer that derives from <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer>.  
+ 
+[!code-cpp[IDesignerSerializationManagerSample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IDesignerSerializationManagerSample/CPP/idesignerserializationmanagersample.cpp#1)]
+[!code-csharp[IDesignerSerializationManagerSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IDesignerSerializationManagerSample/CS/idesignerserializationmanagersample.cs#1)]
+[!code-vb[IDesignerSerializationManagerSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDesignerSerializationManagerSample/VB/idesignerserializationmanagersample.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -95,10 +95,10 @@
         <returns>The deserialized CodeDOM object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the serialization manager to create objects and resolve data types. The root of the object graph is returned.  
-  
+This method uses the serialization manager to create objects and resolve data types. The root of the object graph is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -130,10 +130,10 @@
         <returns>An object instance resulting from deserializing <paramref name="statement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer.DeserializeStatementToInstance%2A> is equivalent of calling <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializeStatement%2A>, except that it returns an object instance if the resulting statement was a variable assign statement, a variable declaration with an init expression, or a field assignment statement.  
-  
+The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer.DeserializeStatementToInstance%2A> is equivalent of calling <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializeStatement%2A>, except that it returns an object instance if the resulting statement was a variable assign statement, a variable declaration with an init expression, or a field assignment statement.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,10 +304,10 @@
         <returns>The serialized value. This returns <see langword="null" /> if no reference expression can be obtained for the specified value, or the value cannot be serialized.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is similar to <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToExpression%2A>, except that it stops if it cannot obtain a simple reference expression for the value. Call this method when you expect the resulting expression to be used as a parameter or target of a statement.  
-  
+This method is similar to <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToExpression%2A>, except that it stops if it cannot obtain a simple reference expression for the value. Call this method when you expect the resulting expression to be used as a parameter or target of a statement.  
+ 
  ]]></format>
         </remarks>
       </Docs>

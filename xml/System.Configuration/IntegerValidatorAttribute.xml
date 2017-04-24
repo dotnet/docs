@@ -19,20 +19,20 @@
     <summary>Declaratively instructs the .NET Framework to perform integer validation on a configuration property. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Configuration.IntegerValidatorAttribute> attribute to decorate a configuration property, which will instruct the .NET Framework to validate the property using the <xref:System.Configuration.IntegerValidator> object and pass to it the value of the decorating parameters.  
+You use the <xref:System.Configuration.IntegerValidatorAttribute> attribute to decorate a configuration property, which will instruct the .NET Framework to validate the property using the <xref:System.Configuration.IntegerValidator> object and pass to it the value of the decorating parameters.  
+ 
+You can apply <xref:System.Configuration.IntegerValidatorAttribute> attributes to property types only.  
+ 
   
- You can apply <xref:System.Configuration.IntegerValidatorAttribute> attributes to property types only.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to decorate the properties of a custom <xref:System.Configuration.ConfigurationSection> object using the <xref:System.Configuration.IntegerValidatorAttribute> attribute.  
-  
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#6)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#6)]  
-  
+The following example shows how to decorate the properties of a custom <xref:System.Configuration.ConfigurationSection> object using the <xref:System.Configuration.IntegerValidatorAttribute> attribute.  
+ 
+[!code-csharp[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#6)]
+[!code-vb[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,18 +51,18 @@
         <summary>Creates a new instance of the <see cref="T:System.Configuration.IntegerValidatorAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use this constructor in the attributed model to assure that the value assigned to the related property is an integer.  
+You use this constructor in the attributed model to assure that the value assigned to the related property is an integer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.%23ctor%2A> constructor.  
-  
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#5)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#5)]  
-  
+The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.%23ctor%2A> constructor.  
+ 
+[!code-csharp[System.Configuration.ConfigurationValidatorAttributes#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#5)]
+[!code-vb[System.Configuration.ConfigurationValidatorAttributes#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,18 +85,18 @@
           <see langword="true" /> if the value must be excluded; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The range is inclusive of the <xref:System.Configuration.IntegerValidatorAttribute.MinValue%2A> and <xref:System.Configuration.IntegerValidatorAttribute.MaxValue%2A> property values. When the <xref:System.Configuration.IntegerValidatorAttribute.ExcludeRange%2A> property value is `true`, the allowed values are outside the range.  
+The range is inclusive of the <xref:System.Configuration.IntegerValidatorAttribute.MinValue%2A> and <xref:System.Configuration.IntegerValidatorAttribute.MaxValue%2A> property values. When the <xref:System.Configuration.IntegerValidatorAttribute.ExcludeRange%2A> property value is `true`, the allowed values are outside the range.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.ExcludeRange%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#6)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#6)]  
-  
+The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.ExcludeRange%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#6)]
+[!code-vb[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,18 +118,18 @@
         <value>An integer that indicates the allowed maximum value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.IntegerValidatorAttribute.MaxValue%2A> property value is included in the allowed range.  
+The <xref:System.Configuration.IntegerValidatorAttribute.MaxValue%2A> property value is included in the allowed range.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.MaxValue%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#6)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#6)]  
-  
+The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.MaxValue%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#6)]
+[!code-vb[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see cref="P:System.Configuration.IntegerValidatorAttribute.MinValue" />.</exception>
@@ -152,18 +152,18 @@
         <value>An integer that indicates the allowed minimum value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.IntegerValidatorAttribute.MinValue%2A> property value is included in the allowed range.  
+The <xref:System.Configuration.IntegerValidatorAttribute.MinValue%2A> property value is included in the allowed range.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.MinValue%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#6)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#6)]  
-  
+The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.MinValue%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#6)]
+[!code-vb[System.Configuration.ConfigurationValidatorAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is greater than <see cref="P:System.Configuration.IntegerValidatorAttribute.MaxValue" />.</exception>
@@ -186,18 +186,18 @@
         <value>The <see cref="T:System.Configuration.ConfigurationValidatorBase" /> validator instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Configuration.IntegerValidatorAttribute.ValidatorInstance%2A> property to perform string validation by calling its <xref:System.Configuration.IntegerValidator.Validate%2A> method.  
+You use the <xref:System.Configuration.IntegerValidatorAttribute.ValidatorInstance%2A> property to perform string validation by calling its <xref:System.Configuration.IntegerValidator.Validate%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.ValidatorInstance%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#13)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#13)]  
-  
+The following example shows how to use the <xref:System.Configuration.IntegerValidatorAttribute.ValidatorInstance%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationValidatorAttributes#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#13)]
+[!code-vb[System.Configuration.ConfigurationValidatorAttributes#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

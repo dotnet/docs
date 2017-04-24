@@ -41,10 +41,10 @@
         <summary>Requests asynchronous processing of a method call on the sinks in the current sink stack.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.AsyncProcessResponse%2A> method initializes asynchronous processing on the top sink in the current sink stack. For additional information, see <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessResponse%2A?displayProperty=fullName>.  
-  
+The <xref:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.AsyncProcessResponse%2A> method initializes asynchronous processing on the top sink in the current sink stack. For additional information, see <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessResponse%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">The current sink stack is empty.</exception>
@@ -73,10 +73,10 @@
         <summary>Dispatches the specified exception on the reply sink.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchException%2A> method dispatches the specified exception to the server through the reply sink specified in the constructor of the current sink stack. If the current sink stack was created without a reply sink, the exception is not transmitted, and no new exception is thrown.  
-  
+The <xref:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchException%2A> method dispatches the specified exception to the server through the reply sink specified in the constructor of the current sink stack. If the current sink stack was created without a reply sink, the exception is not transmitted, and no new exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -104,10 +104,10 @@
         <summary>Dispatches the specified reply message on the reply sink.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchReplyMessage%2A> method dispatches the specified message to the server through the reply sink specified in the constructor of the current sink stack. If the current sink stack was created without a reply sink, the message is not transmitted, and no new exception is thrown.  
-  
+The <xref:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchReplyMessage%2A> method dispatches the specified message to the server through the reply sink specified in the constructor of the current sink stack. If the current sink stack was created without a reply sink, the message is not transmitted, and no new exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>

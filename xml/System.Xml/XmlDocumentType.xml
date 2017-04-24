@@ -19,10 +19,10 @@
     <summary>Represents the document type declaration.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlDocumentType> class can be used to return information about a document type declaration. Use the <xref:System.Xml.XmlDocument.CreateDocumentType%2A?displayProperty=fullName> method to create an <xref:System.Xml.XmlDocumentType> object.  
-  
+The <xref:System.Xml.XmlDocumentType> class can be used to return information about a document type declaration. Use the <xref:System.Xml.XmlDocument.CreateDocumentType%2A?displayProperty=fullName> method to create an <xref:System.Xml.XmlDocumentType> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDocumentType" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not instantiate an <xref:System.Xml.XmlDocumentType> directly; instead, use members such as <xref:System.Xml.XmlDocument.DocumentType%2A> to obtain one.  
-  
+Do not instantiate an <xref:System.Xml.XmlDocumentType> directly; instead, use members such as <xref:System.Xml.XmlDocument.DocumentType%2A> to obtain one.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,12 +92,12 @@
         <returns>The cloned node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
-  
- To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
-  
+This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
+ 
+To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,23 +124,23 @@
         <value>An <see cref="T:System.Xml.XmlNamedNodeMap" /> containing the <see langword="XmlEntity" /> nodes. The returned <see langword="XmlNamedNodeMap" /> is read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order in which the entities are returned is not based on the order in which these items may appear in the document. The order is also not guaranteed to be the same between similar documents, or between different implementations or versions of the class.  
+The order in which the entities are returned is not based on the order in which these items may appear in the document. The order is also not guaranteed to be the same between similar documents, or between different implementations or versions of the class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays information about the entities declared in the XML document.  
-  
- [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
- [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
- [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
-  
- The example uses the file `doment.xml` as input.  
-  
- [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
-  
+The following example displays information about the entities declared in the XML document.  
+ 
+[!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+[!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+[!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+ 
+The example uses the file `doment.xml` as input.  
+ 
+[!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,14 +167,14 @@
         <value>The DTD internal subset on the DOCTYPE. If there is no DTD internal subset, String.Empty is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information about the DocumentType node.  
-  
- [!code-cpp[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/VB/source.vb#1)]  
-  
+The following example displays information about the DocumentType node.  
+ 
+[!code-cpp[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,23 +204,23 @@
  Because DocumentType nodes are read-only, this property always returns <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A read-only node is one whose properties, attributes, or children cannot be changed. However, you can remove a read-only node from the tree and insert it somewhere else.  
+A read-only node is one whose properties, attributes, or children cannot be changed. However, you can remove a read-only node from the tree and insert it somewhere else.  
+ 
+You can remove a `XmlDocumentType` from a document and reinsert it back into the document as long as the document does not have an element node. Once a document has a root element, its `XmlDocumentType` cannot be changed.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- You can remove a `XmlDocumentType` from a document and reinsert it back into the document as long as the document does not have an element node. Once a document has a root element, its `XmlDocumentType` cannot be changed.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example displays information about the DocumentType node.  
-  
- [!code-cpp[Classic WebData XmlDocumentType.IsReadOnly Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentType.IsReadOnly Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocumentType.IsReadOnly Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentType.IsReadOnly Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocumentType.IsReadOnly Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentType.IsReadOnly Example/VB/source.vb#1)]  
-  
+The following example displays information about the DocumentType node.  
+ 
+[!code-cpp[Classic WebData XmlDocumentType.IsReadOnly Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentType.IsReadOnly Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocumentType.IsReadOnly Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentType.IsReadOnly Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocumentType.IsReadOnly Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentType.IsReadOnly Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,14 +270,14 @@
         <value>For DocumentType nodes, this property returns the name of the document type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information about the DocumentType node.  
-  
- [!code-cpp[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/VB/source.vb#1)]  
-  
+The following example displays information about the DocumentType node.  
+ 
+[!code-cpp[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocumentType.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentType.Name Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,23 +327,23 @@
         <value>An <see cref="T:System.Xml.XmlNamedNodeMap" /> containing the <see langword="XmlNotation" /> nodes. The returned <see langword="XmlNamedNodeMap" /> is read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order in which the notations are returned is not based on the order in which these items may appear in the document. The order is also not guaranteed to be the same between similar documents, or between different implementations or versions of the class.  
+The order in which the notations are returned is not based on the order in which these items may appear in the document. The order is also not guaranteed to be the same between similar documents, or between different implementations or versions of the class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays information about the notations declared in the XML document.  
-  
- [!code-cpp[XmlNotation#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNotation/CPP/notation.cpp#1)]
- [!code-csharp[XmlNotation#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNotation/CS/notation.cs#1)]
- [!code-vb[XmlNotation#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNotation/VB/notation.vb#1)]  
-  
- The example uses the file `doment.xml` as input.  
-  
- [!code-xml[XmlNotation#2](~/samples/snippets/xml/VS_Snippets_Data/XmlNotation/XML/doment.xml#2)]  
-  
+The following example displays information about the notations declared in the XML document.  
+ 
+[!code-cpp[XmlNotation#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNotation/CPP/notation.cpp#1)]
+[!code-csharp[XmlNotation#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNotation/CS/notation.cs#1)]
+[!code-vb[XmlNotation#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNotation/VB/notation.vb#1)]  
+ 
+The example uses the file `doment.xml` as input.  
+ 
+[!code-xml[XmlNotation#2](~/samples/snippets/xml/VS_Snippets_Data/XmlNotation/XML/doment.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

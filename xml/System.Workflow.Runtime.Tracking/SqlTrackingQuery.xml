@@ -19,14 +19,14 @@
     <summary>Contains methods and properties that are used to manage queries to the tracking data that is contained in the SQL database used by a <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery> provides methods and properties that you can use in order to access certain kinds of tracking data stored in a SQL database by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. Access to this data is provided through <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects. You can call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> to try to get a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> for a specific workflow instance. You can call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A> to get a collection of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects that correspond workflow instances that have tracking data that matches a set of query parameters contained in a <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> that is passed as a parameter to the method. See the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> class for more information about the kind of tracking data available and see the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> class for more information about the kind of queries that can be performed.  
-  
+ 
+<xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery> provides methods and properties that you can use in order to access certain kinds of tracking data stored in a SQL database by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. Access to this data is provided through <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects. You can call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> to try to get a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> for a specific workflow instance. You can call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A> to get a collection of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects that correspond workflow instances that have tracking data that matches a set of query parameters contained in a <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> that is passed as a parameter to the method. See the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> class for more information about the kind of tracking data available and see the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> class for more information about the kind of queries that can be performed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingQuery" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> to a null reference (`Nothing` in Visual Basic). You must set <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> before you call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A> or <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> or an <xref:System.InvalidOperationException> will be thrown.  
-  
+The default constructor initializes <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> to a null reference (`Nothing` in Visual Basic). You must set <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> before you call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A> or <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> or an <xref:System.InvalidOperationException> will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,20 +70,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingQuery" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> property is initialized to `connectionString`.  
+The <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> property is initialized to `connectionString`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.%23ctor%2A> to create an instance of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery> class.  
-  
- This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
-  
- [!code-csharp[WF_Samples#129](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#129)]
- [!code-vb[WF_Samples#129](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#129)]  
-  
+The following code example demonstrates how to use the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.%23ctor%2A> to create an instance of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery> class.  
+ 
+This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ 
+[!code-csharp[WF_Samples#129](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#129)]
+[!code-vb[WF_Samples#129](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#129)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -159,15 +159,15 @@
           <see langword="true" /> if tracking data is available for the requested workflow instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> method to retrieve a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance>.  
-  
- This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
-  
- [!code-csharp[WF_Samples#129](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#129)]
- [!code-vb[WF_Samples#129](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#129)]  
-  
+The following code example demonstrates how to use the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> method to retrieve a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance>.  
+ 
+This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ 
+[!code-csharp[WF_Samples#129](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#129)]
+[!code-vb[WF_Samples#129](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#129)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">

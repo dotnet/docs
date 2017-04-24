@@ -14,12 +14,12 @@
     <summary>Represents a queued binding that is suitable for cross-machine communication.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.NetMsmqBinding> binding provides support for queuing by leveraging Microsoft Message Queuing (MSMQ) as a transport and enables support for loosely coupled applications, failure isolation, load leveling and disconnected operations. For a discussion of these features, see [Queues Overview](~/docs/framework/wcf/feature-details/queues-overview.md).  
-  
- This is one of the standard bindings provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. The recommended procedure is to define the binding using configuration values and not to use a code-based approach, except in certain advanced scenarios in which configuration values must be set when a service is initialized.  
-  
+The <xref:System.ServiceModel.NetMsmqBinding> binding provides support for queuing by leveraging Microsoft Message Queuing (MSMQ) as a transport and enables support for loosely coupled applications, failure isolation, load leveling and disconnected operations. For a discussion of these features, see [Queues Overview](~/docs/framework/wcf/feature-details/queues-overview.md).  
+ 
+This is one of the standard bindings provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. The recommended procedure is to define the binding using configuration values and not to use a code-based approach, except in certain advanced scenarios in which configuration values must be set when a service is initialized.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,10 +121,10 @@
         <value>The maximum amount of memory, in bytes, available for use by the message buffer manager. The default value is 524288 (0x80000) bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.BufferManager> minimizes the cost of using buffers by using a buffer pool. Buffers are required to process messages by the service when they come out of the channel. If there is not sufficient memory in the buffer pool to process the message load, the <xref:System.ServiceModel.Channels.BufferManager> must allocate additional memory from the CLR heap, which increases the garbage collection overhead. Extensive allocation from the CLR garbage heap is an indication that the buffer pool size is too small and that performance can be improved with a larger allocation by increasing the <xref:System.ServiceModel.BasicHttpBinding.MaxBufferPoolSize%2A> limit.  
-  
+The <xref:System.ServiceModel.Channels.BufferManager> minimizes the cost of using buffers by using a buffer pool. Buffers are required to process messages by the service when they come out of the channel. If there is not sufficient memory in the buffer pool to process the message load, the <xref:System.ServiceModel.Channels.BufferManager> must allocate additional memory from the CLR heap, which increases the garbage collection overhead. Extensive allocation from the CLR garbage heap is an indication that the buffer pool size is too small and that performance can be improved with a larger allocation by increasing the <xref:System.ServiceModel.BasicHttpBinding.MaxBufferPoolSize%2A> limit.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
         <value>A <see cref="T:System.ServiceModel.QueueTransferProtocol" /> enumeration value that indicates the transport between queue managers that this binding uses.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- MSMQ does not support Active Directory addressing when using SOAP Reliable Messaging Protocol. Therefore, you should not set this property to <xref:System.ServiceModel.QueueTransferProtocol> or <xref:System.ServiceModel.QueueTransferProtocol> when <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.UseActiveDirectory%2A> is set to `true`.  
-  
+MSMQ does not support Active Directory addressing when using SOAP Reliable Messaging Protocol. Therefore, you should not set this property to <xref:System.ServiceModel.QueueTransferProtocol> or <xref:System.ServiceModel.QueueTransferProtocol> when <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.UseActiveDirectory%2A> is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,10 +220,10 @@
         <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> object that is associated with this binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlDictionaryReaderQuotas> object defines a number of constraints on the complexity of SOAP messages that can be processed by endpoints configured with a binding. These constraints include `maxArrayLength`, `maxBytesPerRead`, `maxDepth`, `maxNameTableCharCount`, and `maxStringContentLength`. These values aid in the prevention of denial of service attacks. For more information, see <xref:System.Xml.XmlDictionaryReaderQuotas>.  
-  
+The <xref:System.Xml.XmlDictionaryReaderQuotas> object defines a number of constraints on the complexity of SOAP messages that can be processed by endpoints configured with a binding. These constraints include `maxArrayLength`, `maxBytesPerRead`, `maxDepth`, `maxNameTableCharCount`, and `maxStringContentLength`. These values aid in the prevention of denial of service attacks. For more information, see <xref:System.Xml.XmlDictionaryReaderQuotas>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,10 +250,10 @@
         <value>The <see cref="T:System.ServiceModel.NetMsmqSecurity" /> that is associated with this binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.NetMsmqSecurity> is an encapsulation of both MSMQ transport and SOAP security. It specifies whether transport or SOAP security is enabled and, if so, what authentication mode and protection levels are in use.  
-  
+<xref:System.ServiceModel.NetMsmqSecurity> is an encapsulation of both MSMQ transport and SOAP security. It specifies whether transport or SOAP security is enabled and, if so, what authentication mode and protection levels are in use.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,12 +281,12 @@
           <see langword="true" /> if queue addresses should be converted using Active Directory; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- MSMQ queue addresses can consist of path names or direct format names. With a direct format name, MSMQ resolves the queue name using DNS, NetBIOS, or IP. With a path name, MSMQ resolves the queue name using Active Directory.  
-  
- By default, the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] queued transport converts the URI of a message queue to a direct format name. By setting the <xref:System.ServiceModel.NetMsmqBinding.UseActiveDirectory%2A> property to `true`, an application can specify that the queued transport should resolve the queue name using Active Directory rather than DNS, NetBIOS, or IP.  
-  
+MSMQ queue addresses can consist of path names or direct format names. With a direct format name, MSMQ resolves the queue name using DNS, NetBIOS, or IP. With a path name, MSMQ resolves the queue name using Active Directory.  
+ 
+By default, the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] queued transport converts the URI of a message queue to a direct format name. By setting the <xref:System.ServiceModel.NetMsmqBinding.UseActiveDirectory%2A> property to `true`, an application can specify that the queued transport should resolve the queue name using Active Directory rather than DNS, NetBIOS, or IP.  
+ 
  ]]></format>
         </remarks>
       </Docs>

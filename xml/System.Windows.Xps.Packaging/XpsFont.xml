@@ -14,25 +14,25 @@
     <summary>Represents a font in an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Xps.Packaging.XpsFont> class has no public constructor.  
+The <xref:System.Windows.Xps.Packaging.XpsFont> class has no public constructor.  
+ 
+Use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method to add a font and obtain a reference to it in a new document.  
+ 
+Use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader.GetFont%2A> method to obtain a font reference in an existing document.  
+ 
+Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method of the <xref:System.Windows.Xps.Packaging.XpsFont> class may be delayed until the whole <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
+ 
   
- Use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method to add a font and obtain a reference to it in a new document.  
-  
- Use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader.GetFont%2A> method to obtain a font reference in an existing document.  
-  
- Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method of the <xref:System.Windows.Xps.Packaging.XpsFont> class may be delayed until the whole <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to add fonts to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
-  
+The following example shows how to add fonts to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+[!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+[!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
           <see langword="true" /> if the font is obfuscated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
+For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
           <see langword="true" /> if text that uses this font can be changed or edited; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the use of restricted fonts, see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
+For more information about the use of restricted fonts, see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,14 +111,14 @@
         <summary>Obfuscates the font typeface data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData%2A> method is provided for use when you are legally obligated to obfuscate licensed proprietary fonts.  
-  
- While this method does not provide encryption, the <xref:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData%2A> method can be used to inhibit users from unzipping proprietary [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] fonts and installing them separately for other uses.  
-  
- For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
+The <xref:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData%2A> method is provided for use when you are legally obligated to obfuscate licensed proprietary fonts.  
+ 
+While this method does not provide encryption, the <xref:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData%2A> method can be used to inhibit users from unzipping proprietary [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] fonts and installing them separately for other uses.  
+ 
+For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -87,10 +87,10 @@
         <value>The public key that is used to verify the signature.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The only case that returns `null` is when <xref:System.Security.Cryptography.StrongNameSignatureInformation.IsValid%2A> is `false`.  If the signature is valid, there will always be a key.  
-  
+The only case that returns `null` is when <xref:System.Security.Cryptography.StrongNameSignatureInformation.IsValid%2A> is `false`.  If the signature is valid, there will always be a key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <value>The result codes for signature verification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property and the <xref:System.Security.Cryptography.StrongNameSignatureInformation.HResult%2A> property are two ways to determine whether an error occurred during verification. This property lists well-known errors that might occur. The <xref:System.Security.Cryptography.StrongNameSignatureInformation.HResult%2A> property can be checked if the error is not covered by the <xref:System.Security.Cryptography.SignatureVerificationResult> enumeration.  
-  
+This property and the <xref:System.Security.Cryptography.StrongNameSignatureInformation.HResult%2A> property are two ways to determine whether an error occurred during verification. This property lists well-known errors that might occur. The <xref:System.Security.Cryptography.StrongNameSignatureInformation.HResult%2A> property can be checked if the error is not covered by the <xref:System.Security.Cryptography.SignatureVerificationResult> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

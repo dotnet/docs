@@ -29,10 +29,10 @@
     <summary>Provides a thread-safe collection that contains objects of a type specified by a generic parameter and that are grouped by keys.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Inherited by <xref:System.ServiceModel.UriSchemeKeyedCollection> for use hosting.  
-  
+Inherited by <xref:System.ServiceModel.UriSchemeKeyedCollection> for use hosting.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedKeyedCollection`2" /> class with access synchronized by an explicitly specified object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If multiple instances of the <xref:System.Collections.Generic.SynchronizedKeyedCollection%602> are created using the same `syncRoot`, then access is protected across all instances.  
-  
+If multiple instances of the <xref:System.Collections.Generic.SynchronizedKeyedCollection%602> are created using the same `syncRoot`, then access is protected across all instances.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -101,10 +101,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedKeyedCollection`2" /> class with access synchronized by an explicitly specified object and with keys compared in a specified way.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The generic parameter `K` used by the <xref:System.Collections.Generic.IEqualityComparer%601> input parameter is the first generic parameter for this class.  This allows us to compare keys for equality in a customized way that can be used, for example, to optimize on the most critical aspects of the comparison.  
-  
+The generic parameter `K` used by the <xref:System.Collections.Generic.IEqualityComparer%601> input parameter is the first generic parameter for this class.  This allows us to compare keys for equality in a customized way that can be used, for example, to optimize on the most critical aspects of the comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -133,10 +133,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedKeyedCollection`2" /> class with access synchronized by an explicitly specified object and with keys compared in a specified way.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting `dictionaryCreationThreshold` to -1 assigns the <xref:System.Int32> (2,147,483,647; hexadecimal 0x7FFFFFFF) to it.  
-  
+Setting `dictionaryCreationThreshold` to -1 assigns the <xref:System.Int32> (2,147,483,647; hexadecimal 0x7FFFFFFF) to it.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

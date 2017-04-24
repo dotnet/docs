@@ -32,10 +32,10 @@
         <value>The compression option setting for the package stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.CompressionOption%2A> property returns CompressionOption.<xref:System.IO.Packaging.CompressionOption>.  
-  
+If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.CompressionOption%2A> property returns CompressionOption.<xref:System.IO.Packaging.CompressionOption>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -57,10 +57,10 @@
         <value>The encryption option setting for the package stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.EncryptionOption%2A> property returns EncryptionOption.<xref:System.IO.Packaging.EncryptionOption>.  
-  
+If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.EncryptionOption%2A> property returns EncryptionOption.<xref:System.IO.Packaging.EncryptionOption>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <returns>The I/O stream opened in a default <see cref="T:System.IO.Packaging.Package" /> root <see cref="T:System.IO.FileMode" /> and <see cref="T:System.IO.FileAccess" />..</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.IO.Packaging.StreamInfo.GetStream%2A> method (without parameters), opens the stream in file mode <xref:System.IO.FileMode> with the default storage root <xref:System.IO.FileAccess>.  
-  
+This <xref:System.IO.Packaging.StreamInfo.GetStream%2A> method (without parameters), opens the stream in file mode <xref:System.IO.FileMode> with the default storage root <xref:System.IO.FileAccess>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <returns>The stream opened in the specified file <paramref name="mode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.IO.Packaging.StreamInfo.GetStream%2A> method opens the stream with the default storage root <xref:System.IO.FileAccess>.  
-  
+This <xref:System.IO.Packaging.StreamInfo.GetStream%2A> method opens the stream with the default storage root <xref:System.IO.FileAccess>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <value>The name of this stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.Name%2A> property returns an empty string.  
-  
+If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.Name%2A> property returns an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>

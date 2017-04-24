@@ -14,16 +14,16 @@
     <summary>Specifies processing rules or option settings for a <see cref="T:System.Xaml.XamlReader" /> implementation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, an initialized <xref:System.Xaml.XamlReaderSettings> object uses values for its properties that correspond to expected defaults, such as `false` for Boolean properties or null values for reference-type properties. Default initialization results in the following values:  
-  
+By default, an initialized <xref:System.Xaml.XamlReaderSettings> object uses values for its properties that correspond to expected defaults, such as `false` for Boolean properties or null values for reference-type properties. Default initialization results in the following values:  
+ 
 -   The <xref:System.Xaml.XamlReaderSettings.BaseUri%2A> and <xref:System.Xaml.XamlReaderSettings.LocalAssembly%2A> properties are `null`.  
-  
+ 
 -   The <xref:System.Xaml.XamlReaderSettings.IgnoreUidsOnPropertyElements%2A> property is `false`.  
-  
+ 
 -   The <xref:System.Xaml.XamlReaderSettings.ProvideLineInfo%2A> property is `false` in the object model; however, it can be set to `true` at run time based on the loaded executables and their debug settings, or by XAML schema context.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlReaderSettings" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about initialization of a <xref:System.Xaml.XamlReaderSettings> default instance, see <xref:System.Xaml.XamlReaderSettings>.  
-  
+For more information about initialization of a <xref:System.Xaml.XamlReaderSettings> default instance, see <xref:System.Xaml.XamlReaderSettings>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlReaderSettings" /> class based on values in another <see cref="T:System.Xaml.XamlReaderSettings" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor supports the merging of settings for XAML readers where additional settings can also come from other participants in the reader process.  
-  
+This constructor supports the merging of settings for XAML readers where additional settings can also come from other participants in the reader process.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
           <see langword="true" /> if the root object may include members that have a protected code access model; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This setting is relevant to some XAML implementations such as WPF where the root object is often a "factory" for generating an instance from a pattern type, when that pattern type is not always a practical object instance. For example, a root of `UserControl` has a certain meaning for WPF and Silverlight application models, and `UserControl` might have protected properties (`UserControl.Content`) that the parser needs access to. Tools and design surfaces also need access to such properties. These cases should generally be reported to the XAML type system as writable properties even though they have protected access in the backing type system.  
-  
+This setting is relevant to some XAML implementations such as WPF where the root object is often a "factory" for generating an instance from a pattern type, when that pattern type is not always a practical object instance. For example, a root of `UserControl` has a certain meaning for WPF and Silverlight application models, and `UserControl` might have protected properties (`UserControl.Content`) that the parser needs access to. Tools and design surfaces also need access to such properties. These cases should generally be reported to the XAML type system as writable properties even though they have protected access in the backing type system.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <value>The base URI to use. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some URI-related properties in the .NET Framework XAML Services API treat URIs for XAML namespaces as strings; however, this property uses the true <xref:System.Uri> type.  
-  
+Some URI-related properties in the .NET Framework XAML Services API treat URIs for XAML namespaces as strings; however, this property uses the true <xref:System.Uri> type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
           <see langword="true" /> if the reader should ignore values for <see langword="x:Uid" /> attributes on property elements. <see langword="false" /> if the reader should process <see langword="x:Uid" /> attributes on property elements. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During localization, the `x:Uid` attribute is used to identify elements in markup so that localization tools can process XAML elements as discrete entities for localization. Attributes do not usually appear on property elements in XAML. However, `x:Uid` is an exception because some usages put localized text in a property element as content, instead of as a separate object that can receive its own `x:Uid`. Setting an <xref:System.Xaml.XamlReaderSettings.IgnoreUidsOnPropertyElements%2A> value to `true` enables a stricter mode. The default value of `false` continues to process property element `x:Uid` attributes.  
-  
+During localization, the `x:Uid` attribute is used to identify elements in markup so that localization tools can process XAML elements as discrete entities for localization. Attributes do not usually appear on property elements in XAML. However, `x:Uid` is an exception because some usages put localized text in a property element as content, instead of as a separate object that can receive its own `x:Uid`. Setting an <xref:System.Xaml.XamlReaderSettings.IgnoreUidsOnPropertyElements%2A> value to `true` enables a stricter mode. The default value of `false` continues to process property element `x:Uid` attributes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,10 +188,10 @@
           <see langword="true" /> if the reader can provide line number and position information; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlReaderSettings.ProvideLineInfo%2A> is `false` in the object model; however, it can be set to `true` at run time based on the loaded executables and their debug settings.  
-  
+<xref:System.Xaml.XamlReaderSettings.ProvideLineInfo%2A> is `false` in the object model; however, it can be set to `true` at run time based on the loaded executables and their debug settings.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
           <see langword="true" /> if the reader enforces that only <see langword="String" /> is contained in <see langword="Value" /> nodes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In addition to <xref:System.String>, a possible `Value` content under some XAML implementations is <xref:System.Windows.Markup.XData>.  
-  
+In addition to <xref:System.String>, a possible `Value` content under some XAML implementations is <xref:System.Windows.Markup.XData>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

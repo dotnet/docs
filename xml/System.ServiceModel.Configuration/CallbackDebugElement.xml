@@ -14,13 +14,13 @@
     <summary>Represents a configuration element that specifies service-side debugging for a Windows Communication Foundation (WCF) callback object. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set the <xref:System.ServiceModel.Configuration.CallbackDebugElement.IncludeExceptionDetailInFaults%2A> property to `true` programmatically, you can enable the flow of managed exception information in a client callback object back to the service for debugging purposes.  
-  
+If you set the <xref:System.ServiceModel.Configuration.CallbackDebugElement.IncludeExceptionDetailInFaults%2A> property to `true` programmatically, you can enable the flow of managed exception information in a client callback object back to the service for debugging purposes.  
+ 
 > [!CAUTION]
 >  Returning managed exception information to clients can be a security risk. This is because exception details expose information about the internal service implementation that could be used by unauthorized clients.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

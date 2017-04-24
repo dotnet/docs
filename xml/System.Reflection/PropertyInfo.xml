@@ -40,35 +40,35 @@
     <summary>Discovers the attributes of a property and provides access to property metadata.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties are logically the same as fields. A property is a named aspect of an object's state whose value is typically accessible through `get` and `set` accessors. Properties may be read-only, in which case a set routine is not supported.  
-  
+Properties are logically the same as fields. A property is a named aspect of an object's state whose value is typically accessible through `get` and `set` accessors. Properties may be read-only, in which case a set routine is not supported.  
+ 
 > [!NOTE]
 >  To determine whether a property is `static`, you must obtain the <xref:System.Reflection.MethodInfo> for the `get` or `set` accessor, by calling the <xref:System.Reflection.PropertyInfo.GetGetMethod%2A> or the <xref:System.Reflection.PropertyInfo.GetSetMethod%2A> method, and examine its <xref:System.Reflection.MethodBase.IsStatic%2A> property.  
-  
- Several methods in this class assume that the `get` accessor and `set` accessor methods of a property have certain formats. The signatures of the `get` and `set` methods must match the following convention:  
-  
+ 
+Several methods in this class assume that the `get` accessor and `set` accessor methods of a property have certain formats. The signatures of the `get` and `set` methods must match the following convention:  
+ 
 -   The return type of the `get` method and the last argument of the `set` method must be identical. This is the type of the property.  
-  
+ 
 -   The `get` and `set` methods must have the same number, type, and order of indices.  
+ 
+If this format is not followed, the behavior of the `GetValue` and `SetValue` methods is undefined.  
+ 
+Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=fullName> on `PropertyInfo` when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=fullName> to inherit custom attributes.  
+ 
   
- If this format is not followed, the behavior of the `GetValue` and `SetValue` methods is undefined.  
-  
- Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=fullName> on `PropertyInfo` when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=fullName> to inherit custom attributes.  
-  
-   
-  
+ 
 ## Examples  
- This example shows how to use various reflection classes to analyze the metadata contained in an assembly.  
-  
+This example shows how to use various reflection classes to analyze the metadata contained in an assembly.  
+ 
 > [!NOTE]
 >  This example generates about 55,000 lines of data, which you can redirect to a text file at the command prompt, as follows: **example.exe > propertyinfo.txt**  
-  
- [!code-cpp[Reflection#1](~/samples/snippets/cpp/VS_Snippets_CLR/Reflection/CPP/reflection.cpp#1)]
- [!code-csharp[Reflection#1](~/samples/snippets/csharp/VS_Snippets_CLR/Reflection/CS/Reflection.cs#1)]
- [!code-vb[Reflection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Reflection/VB/Reflection.vb#1)]  
-  
+ 
+[!code-cpp[Reflection#1](~/samples/snippets/cpp/VS_Snippets_CLR/Reflection/CPP/reflection.cpp#1)]
+[!code-csharp[Reflection#1](~/samples/snippets/csharp/VS_Snippets_CLR/Reflection/CS/Reflection.cs#1)]
+[!code-vb[Reflection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Reflection/VB/Reflection.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
@@ -127,23 +127,23 @@
         <value>The attributes of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.PropertyInfo.Attributes%2A> property returns the attributes associated with the property represented by this <xref:System.Reflection.PropertyInfo> object.  The attributes are primarily modifiers applied by a compiler when creating a property; they indicate whether a property is the default property, a `SpecialName` property, and so on. Note that, for almost all properties found in types in the .NET Framework class library, the value of the <xref:System.Reflection.PropertyInfo.Attributes%2A> property is <xref:System.Reflection.PropertyAttributes?displayProperty=fullName>.  
-  
+The <xref:System.Reflection.PropertyInfo.Attributes%2A> property returns the attributes associated with the property represented by this <xref:System.Reflection.PropertyInfo> object.  The attributes are primarily modifiers applied by a compiler when creating a property; they indicate whether a property is the default property, a `SpecialName` property, and so on. Note that, for almost all properties found in types in the .NET Framework class library, the value of the <xref:System.Reflection.PropertyInfo.Attributes%2A> property is <xref:System.Reflection.PropertyAttributes?displayProperty=fullName>.  
+ 
 > [!TIP]
 >  In most cases, you probably want to retrieve the custom attributes associated with a property. To do this, retrieve the value of the <xref:System.Reflection.MemberInfo.CustomAttributes%2A> property, or call one of the overloads of the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method.  
-  
- To get the <xref:System.Reflection.PropertyInfo.Attributes%2A> property:  
-  
+ 
+To get the <xref:System.Reflection.PropertyInfo.Attributes%2A> property:  
+ 
 1.  Get a <xref:System.Type> object that represents the type to which the property belongs.  
-  
+ 
 2.  Get the <xref:System.Reflection.PropertyInfo> object by calling an overload of the <xref:System.Type.GetProperty%2A?displayProperty=fullName> method.  
-  
+ 
 3.  Retrieve the property's attributes from the <xref:System.Reflection.PropertyInfo.Attributes%2A> property.  
-  
- You can define the attributes of a property for a type created dynamically using reflection emit by calling an overload of the <xref:System.Reflection.Emit.TypeBuilder.DefineProperty%2A> method and supplying a value for the `attributes` argument.  
-  
+ 
+You can define the attributes of a property for a type created dynamically using reflection emit by calling an overload of the <xref:System.Reflection.Emit.TypeBuilder.DefineProperty%2A> method and supplying a value for the `attributes` argument.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,21 +177,21 @@
           <see langword="true" /> if this property can be read; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the property does not have a `get` accessor, it cannot be read.  
+If the property does not have a `get` accessor, it cannot be read.  
+ 
+To get the `CanRead` property, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, get the `CanRead` value.  
+ 
   
- To get the `CanRead` property, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, get the `CanRead` value.  
-  
-   
-  
+ 
 ## Examples  
- The following example defines two properties. The first property is readable and the `CanRead` property is `true`. The second property is not readable (there is no get accessor), and the `CanRead` property is `false`.  
-  
- [!code-cpp[Classic PropertyInfo.CanRead Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.CanRead Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyInfo.CanRead Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.CanRead Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyInfo.CanRead Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.CanRead Example/VB/source.vb#1)]  
-  
+The following example defines two properties. The first property is readable and the `CanRead` property is `true`. The second property is not readable (there is no get accessor), and the `CanRead` property is `false`.  
+ 
+[!code-cpp[Classic PropertyInfo.CanRead Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.CanRead Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyInfo.CanRead Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.CanRead Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyInfo.CanRead Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.CanRead Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,27 +225,27 @@
           <see langword="true" /> if this property can be written to; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Reflection.PropertyInfo.CanWrite%2A> returns `true` if the property has a `set` accessor, even if the accessor is `private`, `internal` (or `Friend` in Visual Basic), or `protected`.   If the property does not have a `set` accessor, the method returns `false`.  
-  
- To get the value of the <xref:System.Reflection.PropertyInfo.CanWrite%2A> property:  
-  
+<xref:System.Reflection.PropertyInfo.CanWrite%2A> returns `true` if the property has a `set` accessor, even if the accessor is `private`, `internal` (or `Friend` in Visual Basic), or `protected`.   If the property does not have a `set` accessor, the method returns `false`.  
+ 
+To get the value of the <xref:System.Reflection.PropertyInfo.CanWrite%2A> property:  
+ 
 1.  Get the <xref:System.Type> object of the type that includes the property.  
-  
+ 
 2.  Call the <xref:System.Type.GetProperty%2A?displayProperty=fullName> to get the <xref:System.Reflection.PropertyInfo> object that represents the property.  
-  
+ 
 3.  Retrieve the value of the <xref:System.Reflection.PropertyInfo.CanWrite%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example defines two properties. The first property is writable and the `CanWrite` property is `true`. The second property is not writable (there is no `set` accessor), and the `CanWrite` property is `false`.  
-  
- [!code-cpp[Classic PropertyInfo.CanWrite Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.CanWrite Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyInfo.CanWrite Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.CanWrite Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyInfo.CanWrite Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.CanWrite Example/VB/source.vb#1)]  
-  
+The following example defines two properties. The first property is writable and the `CanWrite` property is `true`. The second property is not writable (there is no `set` accessor), and the `CanWrite` property is `false`.  
+ 
+[!code-cpp[Classic PropertyInfo.CanWrite Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.CanWrite Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyInfo.CanWrite Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.CanWrite Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyInfo.CanWrite Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.CanWrite Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,24 +311,24 @@
         <returns>An array of <see cref="T:System.Reflection.MethodInfo" /> objects that reflect the public <see langword="get" /> and <see langword="set" /> accessors of the property reflected by the current instance, if found; otherwise, this method returns an array with zero (0) elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To call the <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method:  
-  
+To call the <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method:  
+ 
 1.  Get a <xref:System.Type> object that represents the class.  
-  
+ 
 2.  From the <xref:System.Type> object, get the <xref:System.Reflection.PropertyInfo> object.  
-  
+ 
 3.  From the <xref:System.Reflection.PropertyInfo> object, call the <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example retrieves the public accessors of the `ClassWithProperty.Caption` property and displays information about them. It also calls the <xref:System.Reflection.MethodBase.Invoke%2A> method of the setter to set the property value and of the getter to retrieve the property value.  
-  
- [!code-csharp[System.Reflection.PropertyInfo.GetAccessors#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.propertyinfo.getaccessors/cs/source.cs#1)]
- [!code-vb[System.Reflection.PropertyInfo.GetAccessors#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.propertyinfo.getaccessors/vb/source.vb#1)]  
-  
+The following example retrieves the public accessors of the `ClassWithProperty.Caption` property and displays information about them. It also calls the <xref:System.Reflection.MethodBase.Invoke%2A> method of the setter to set the property value and of the getter to retrieve the property value.  
+ 
+[!code-csharp[System.Reflection.PropertyInfo.GetAccessors#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.propertyinfo.getaccessors/cs/source.cs#1)]
+[!code-vb[System.Reflection.PropertyInfo.GetAccessors#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.propertyinfo.getaccessors/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -364,25 +364,25 @@
         <returns>An array whose elements reflect the <see langword="get" /> and <see langword="set" /> accessors of the property reflected by the current instance. If <paramref name="nonPublic" /> is <see langword="true" />, this array contains public and non-public <see langword="get" /> and <see langword="set " />accessors. If <paramref name="nonPublic" /> is <see langword="false" />, this array contains only public <see langword="get" /> and <see langword="set" /> accessors. If no accessors with the specified visibility are found, this method returns an array with zero (0) elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To call the <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method:  
-  
+To call the <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method:  
+ 
 1.  Get a <xref:System.Type> object that represents the class.  
-  
+ 
 2.  From the <xref:System.Type> object, get the <xref:System.Reflection.PropertyInfo> object.  
-  
+ 
 3.  From the <xref:System.Reflection.PropertyInfo> object, call the <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example retrieves the accessors of the `ClassWithProperty.Caption` property and displays information about them. It also calls the <xref:System.Reflection.MethodBase.Invoke%2A> method of the setter to set the property value and of the getter to retrieve the property value.  
-  
- <!-- TODO: review snippet reference [!code-cpp[Classic PropertyInfo.GetAccessors1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetAccessors1 Example/CPP/source.cpp#1)]  -->
- [!code-csharp[Classic PropertyInfo.GetAccessors1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetAccessors1 Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyInfo.GetAccessors1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.GetAccessors1 Example/VB/source.vb#1)]  
-  
+The following example retrieves the accessors of the `ClassWithProperty.Caption` property and displays information about them. It also calls the <xref:System.Reflection.MethodBase.Invoke%2A> method of the setter to set the property value and of the getter to retrieve the property value.  
+ 
+<!-- TODO: review snippet reference [!code-cpp[Classic PropertyInfo.GetAccessors1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetAccessors1 Example/CPP/source.cpp#1)]  -->
+[!code-csharp[Classic PropertyInfo.GetAccessors1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetAccessors1 Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyInfo.GetAccessors1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.GetAccessors1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -417,18 +417,18 @@
         <returns>An <see cref="T:System.Object" /> that contains the literal value associated with the property. If the literal value is a class type with an element value of zero, the return value is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is provided for designers of managed compilers and code analyzers.  
-  
+This method is provided for designers of managed compilers and code analyzers.  
+ 
 > [!NOTE]
 >  Do not use this method in the reflection-only context, because it might cause code to execute. Use the <xref:System.Reflection.PropertyInfo.GetRawConstantValue%2A> method instead.  
-  
- In unmanaged metadata, the Constant table is used to store constant values for fields, parameters, and properties. Constant information does not directly influence runtime behavior. Compilers inspect this information, at compile time, when importing metadata. If used, the value of a constant is embedded in the Microsoft intermediate language (MSIL) stream the compiler emits. There are no MSIL instructions that can be used to access the Constant table at run time.  
-  
+ 
+In unmanaged metadata, the Constant table is used to store constant values for fields, parameters, and properties. Constant information does not directly influence runtime behavior. Compilers inspect this information, at compile time, when importing metadata. If used, the value of a constant is embedded in the Microsoft intermediate language (MSIL) stream the compiler emits. There are no MSIL instructions that can be used to access the Constant table at run time.  
+ 
 > [!NOTE]
 >  For more information on constant values and the Constant table, see the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The Constant table in unmanaged metadata does not contain a constant value for the current property.</exception>
@@ -462,12 +462,12 @@
         <returns>A <see langword="MethodInfo" /> object representing the public <see langword="get" /> accessor for this property, or <see langword="null" /> if the <see langword="get" /> accessor is non-public or does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a convenience method that provides an implementation for the abstract `GetGetMethod` method with the `nonPublic` parameter set to `false`.  
-  
- To use the `GetGetMethod` method, first get the class `Type`. From the `Type`, get the <xref:System.Reflection.PropertyInfo>. From the <xref:System.Reflection.PropertyInfo>, use the `GetGetMethod` method.  
-  
+This is a convenience method that provides an implementation for the abstract `GetGetMethod` method with the `nonPublic` parameter set to `false`.  
+ 
+To use the `GetGetMethod` method, first get the class `Type`. From the `Type`, get the <xref:System.Reflection.PropertyInfo>. From the <xref:System.Reflection.PropertyInfo>, use the `GetGetMethod` method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -503,21 +503,21 @@
         <returns>A <see langword="MethodInfo" /> object representing the <see langword="get" /> accessor for this property, if <paramref name="nonPublic" /> is <see langword="true" />. Returns <see langword="null" /> if <paramref name="nonPublic" /> is <see langword="false" /> and the <see langword="get" /> accessor is non-public, or if <paramref name="nonPublic" /> is <see langword="true" /> but no <see langword="get" /> accessors exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is the <xref:System.Reflection.MethodInfo> representing the get accessor.  
+This property is the <xref:System.Reflection.MethodInfo> representing the get accessor.  
+ 
+To use the `GetGetMethod` method, first get the class `Type`. From the `Type`, get the <xref:System.Reflection.PropertyInfo>. From the <xref:System.Reflection.PropertyInfo>, use the `GetGetMethod` method.  
+ 
   
- To use the `GetGetMethod` method, first get the class `Type`. From the `Type`, get the <xref:System.Reflection.PropertyInfo>. From the <xref:System.Reflection.PropertyInfo>, use the `GetGetMethod` method.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the public or non-public `get` accessor for the specified property.  
-  
- [!code-cpp[Classic PropertyInfo.GetGetMethod1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetGetMethod1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyInfo.GetGetMethod1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetGetMethod1 Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyInfo.GetGetMethod1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.GetGetMethod1 Example/VB/source.vb#1)]  
-  
+The following example displays the public or non-public `get` accessor for the specified property.  
+ 
+[!code-cpp[Classic PropertyInfo.GetGetMethod1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetGetMethod1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyInfo.GetGetMethod1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetGetMethod1 Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyInfo.GetGetMethod1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.GetGetMethod1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The requested method is non-public and the caller does not have <see cref="T:System.Security.Permissions.ReflectionPermission" /> to reflect on this non-public method.</exception>
@@ -583,21 +583,21 @@
         <returns>An array of type <see langword="ParameterInfo" /> containing the parameters for the indexes. If the property is not indexed, the array has 0 (zero) elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Extract any required parameter information from the returned array.  
+Extract any required parameter information from the returned array.  
+ 
+To use the `GetIndexParameters` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetIndexParameters` method.  
+ 
   
- To use the `GetIndexParameters` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetIndexParameters` method.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the index parameters of the specified property.  
-  
- [!code-cpp[Classic PropertyInfo.GetIndexParameters Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetIndexParameters Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyInfo.GetIndexParameters Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetIndexParameters Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyInfo.GetIndexParameters Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.GetIndexParameters Example/VB/source.vb#1)]  
-  
+The following example displays the index parameters of the specified property.  
+ 
+[!code-cpp[Classic PropertyInfo.GetIndexParameters Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetIndexParameters Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyInfo.GetIndexParameters Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetIndexParameters Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyInfo.GetIndexParameters Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.GetIndexParameters Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -659,10 +659,10 @@
         <returns>An array of <see cref="T:System.Type" /> objects that identify the optional custom modifiers of the current property, such as <see cref="T:System.Runtime.CompilerServices.IsConst" /> or <see cref="T:System.Runtime.CompilerServices.IsImplicitlyDereferenced" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.PropertyInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.PropertyInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+The <xref:System.Reflection.PropertyInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.PropertyInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -694,17 +694,17 @@
         <returns>An <see cref="T:System.Object" /> that contains the literal value associated with the property. If the literal value is a class type with an element value of zero, the return value is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is provided for designers of managed compilers and code analyzers.  
-  
- This method can be used in both the execution context and the reflection-only context.  
-  
- In unmanaged metadata, the Constant table is used to store constant values for fields, parameters, and properties. Constant information does not directly influence runtime behavior. Compilers inspect this information, at compile time, when importing metadata. If used, the value of a constant is embedded in the Microsoft intermediate language (MSIL) stream the compiler emits. There are no MSIL instructions that can be used to access the Constant table at run time.  
-  
+This method is provided for designers of managed compilers and code analyzers.  
+ 
+This method can be used in both the execution context and the reflection-only context.  
+ 
+In unmanaged metadata, the Constant table is used to store constant values for fields, parameters, and properties. Constant information does not directly influence runtime behavior. Compilers inspect this information, at compile time, when importing metadata. If used, the value of a constant is embedded in the Microsoft intermediate language (MSIL) stream the compiler emits. There are no MSIL instructions that can be used to access the Constant table at run time.  
+ 
 > [!NOTE]
 >  For more information on constant values and the Constant table, see the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The Constant table in unmanaged metadata does not contain a constant value for the current property.</exception>
@@ -738,10 +738,10 @@
         <returns>An array of <see cref="T:System.Type" /> objects that identify the required custom modifiers of the current property, such as <see cref="T:System.Runtime.CompilerServices.IsConst" /> or <see cref="T:System.Runtime.CompilerServices.IsImplicitlyDereferenced" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.PropertyInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.PropertyInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+The <xref:System.Reflection.PropertyInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.PropertyInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -773,12 +773,12 @@
         <returns>The <see langword="MethodInfo" /> object representing the <see langword="Set" /> method for this property if the <see langword="set" /> accessor is public, or <see langword="null" /> if the <see langword="set" /> accessor is not public.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a convenience method that provides an implementation for the abstract `GetSetMethod` method with the `nonPublic` parameter set to `false`.  
-  
- To use the `GetSetMethod` method, first get the class `Type`. From the `Type`, get the <xref:System.Reflection.PropertyInfo>. From the `PropertyInfo`, use the `GetSetMethod` method.  
-  
+This is a convenience method that provides an implementation for the abstract `GetSetMethod` method with the `nonPublic` parameter set to `false`.  
+ 
+To use the `GetSetMethod` method, first get the class `Type`. From the `Type`, get the <xref:System.Reflection.PropertyInfo>. From the `PropertyInfo`, use the `GetSetMethod` method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -853,19 +853,19 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use the `GetSetMethod` method, first get the class `Type`. From the `Type`, get the <xref:System.Reflection.PropertyInfo>. From the `PropertyInfo`, use the `GetSetMethod` method.  
+To use the `GetSetMethod` method, first get the class `Type`. From the `Type`, get the <xref:System.Reflection.PropertyInfo>. From the `PropertyInfo`, use the `GetSetMethod` method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the `set` accessor for the specified property.  
-  
- [!code-cpp[Classic PropertyInfo.GetSetMethod1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetSetMethod1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyInfo.GetSetMethod1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetSetMethod1 Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyInfo.GetSetMethod1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.GetSetMethod1 Example/VB/source.vb#1)]  
-  
+The following example displays the `set` accessor for the specified property.  
+ 
+[!code-cpp[Classic PropertyInfo.GetSetMethod1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetSetMethod1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyInfo.GetSetMethod1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetSetMethod1 Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyInfo.GetSetMethod1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.GetSetMethod1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The requested method is non-public and the caller does not have <see cref="T:System.Security.Permissions.ReflectionPermission" /> to reflect on this non-public method.</exception>
@@ -909,20 +909,20 @@
         <returns>The property value of the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You call the <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%29> overload to retrieve the value of a non-indexed property; if you try to retrieve the value of an indexed property, the method throws a <xref:System.Reflection.TargetParameterCountException> exception. You can determine whether a property is indexed or not by calling the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the length of the returned <xref:System.Reflection.ParameterInfo> array is zero, the property is not indexed.  
+You call the <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%29> overload to retrieve the value of a non-indexed property; if you try to retrieve the value of an indexed property, the method throws a <xref:System.Reflection.TargetParameterCountException> exception. You can determine whether a property is indexed or not by calling the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the length of the returned <xref:System.Reflection.ParameterInfo> array is zero, the property is not indexed.  
+ 
+This is a convenience method that provides an implementation for the abstract <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method with the <xref:System.Reflection.BindingFlags> parameter set to <xref:System.Reflection.BindingFlags?displayProperty=fullName>, the <xref:System.Reflection.Binder> set to `null`, the object array of index values set to `null`, and the <xref:System.Globalization.CultureInfo> set to `null`.  
+ 
   
- This is a convenience method that provides an implementation for the abstract <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method with the <xref:System.Reflection.BindingFlags> parameter set to <xref:System.Reflection.BindingFlags?displayProperty=fullName>, the <xref:System.Reflection.Binder> set to `null`, the object array of index values set to `null`, and the <xref:System.Globalization.CultureInfo> set to `null`.  
-  
-   
-  
+ 
 ## Examples  
- The following example defines a `Planet` class that has two properties: `Name`, the name of the planet; and `Distance`, the planet's distance from Earth. The example instantiates a `Planet` object that represents the planet Jupiter and passes it to a `GetPropertyValues` method that displays information about the properties and uses the <xref:System.Reflection.PropertyInfo.GetValue%2A> method to get the value of each `Planet` property.  
-  
- [!code-csharp[System.Reflection.PropertyInfo.GetValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.propertyinfo.getvalue/cs/getvalue1.cs#1)]
- [!code-vb[System.Reflection.PropertyInfo.GetValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.propertyinfo.getvalue/vb/getvalue1.vb#1)]  
-  
+The following example defines a `Planet` class that has two properties: `Name`, the name of the planet; and `Distance`, the planet's distance from Earth. The example instantiates a `Planet` object that represents the planet Jupiter and passes it to a `GetPropertyValues` method that displays information about the properties and uses the <xref:System.Reflection.PropertyInfo.GetValue%2A> method to get the value of each `Planet` property.  
+ 
+[!code-csharp[System.Reflection.PropertyInfo.GetValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.propertyinfo.getvalue/cs/getvalue1.cs#1)]
+[!code-vb[System.Reflection.PropertyInfo.GetValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.propertyinfo.getvalue/vb/getvalue1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -966,36 +966,36 @@
         <returns>The property value of the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a property is indexed, use the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed.  
-  
- This is a convenience method that provides an implementation for the abstract `GetValue` method with a `BindingFlags` parameter of `Default`, the `Binder` set to `null`, and the `CultureInfo` set to `null`.  
-  
- Because static properties belong to the type, not individual objects, get static properties by passing `null` as the object argument. For example, use the following code to get the static `CurrentCulture` property of `CultureInfo` :  
-  
+To determine whether a property is indexed, use the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed.  
+ 
+This is a convenience method that provides an implementation for the abstract `GetValue` method with a `BindingFlags` parameter of `Default`, the `Binder` set to `null`, and the `CultureInfo` set to `null`.  
+ 
+Because static properties belong to the type, not individual objects, get static properties by passing `null` as the object argument. For example, use the following code to get the static `CurrentCulture` property of `CultureInfo` :  
+ 
 ```  
 PropertyInfo CurCultProp =   
-    (typeof(CultureInfo)).GetProperty("CurrentCulture");   
+   (typeof(CultureInfo)).GetProperty("CurrentCulture");   
 Console.WriteLine("CurrCult: " +  
-    CurCultProp.GetValue(null,null));  
+   CurCultProp.GetValue(null,null));  
 ```  
-  
- To use the `GetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetValue` method.  
-  
+ 
+To use the `GetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetValue` method.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to get the value of an indexed property. The <xref:System.String.Chars%2A?displayProperty=fullName> property is the default property (the indexer in C#) of the <xref:System.String> class.  
-  
- [!code-csharp[System.Reflection.PropertyInfo.GetValue Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.PropertyInfo.GetValue Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.PropertyInfo.GetValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.PropertyInfo.GetValue Example/VB/source.vb#1)]  
-  
+The following example shows how to get the value of an indexed property. The <xref:System.String.Chars%2A?displayProperty=fullName> property is the default property (the indexer in C#) of the <xref:System.String> class.  
+ 
+[!code-csharp[System.Reflection.PropertyInfo.GetValue Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.PropertyInfo.GetValue Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.PropertyInfo.GetValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.PropertyInfo.GetValue Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="index" /> array does not contain the type of arguments needed.  
@@ -1060,26 +1060,26 @@ Console.WriteLine("CurrCult: " +
         <returns>The property value of the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a property is indexed, use the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed.  
-  
- Because static properties belong to the type, not individual objects, get static properties by passing `null` as the object argument. For example, use the following code to get the static `CurrentCulture` property of `CultureInfo` :  
-  
+To determine whether a property is indexed, use the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed.  
+ 
+Because static properties belong to the type, not individual objects, get static properties by passing `null` as the object argument. For example, use the following code to get the static `CurrentCulture` property of `CultureInfo` :  
+ 
 ```  
 PropertyInfo CurCultProp =   
-       (typeof(CultureInfo)).GetProperty("CurrentCulture");   
+      (typeof(CultureInfo)).GetProperty("CurrentCulture");   
 Console.WriteLine("CurrCult: " +  
-       CurCultProp.GetValue(null,null));  
+      CurCultProp.GetValue(null,null));  
 ```  
-  
- To use the `GetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetValue` method.  
-  
+ 
+To use the `GetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetValue` method.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="index" /> array does not contain the type of arguments needed.  
@@ -1123,12 +1123,12 @@ Console.WriteLine("CurrCult: " +
           <see langword="true" /> if this property is the special name; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `SpecialName` bit is set to flag members that are treated in a special way by some compilers (such as property accessors and operator overloading methods).  
-  
- To get the `IsSpecialName` property, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, get the `IsSpecialName` value.  
-  
+The `SpecialName` bit is set to flag members that are treated in a special way by some compilers (such as property accessors and operator overloading methods).  
+ 
+To get the `IsSpecialName` property, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, get the `IsSpecialName` value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1159,23 +1159,23 @@ Console.WriteLine("CurrCult: " +
         <value>A <see cref="T:System.Reflection.MemberTypes" /> value indicating that this member is a property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes> only when a given member is a property.  
+This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes> only when a given member is a property.  
+ 
+`MemberType` is a derived class of `MemberInfo` and specifies the type of member this is. Member types are constructors, properties, fields, and methods. Since this is a `PropertyInfo` property, the returned type is a property.  
+ 
+To get the `MemberType` property, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, get the `MemberType` value.  
+ 
   
- `MemberType` is a derived class of `MemberInfo` and specifies the type of member this is. Member types are constructors, properties, fields, and methods. Since this is a `PropertyInfo` property, the returned type is a property.  
-  
- To get the `MemberType` property, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, get the `MemberType` value.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the type of the specified member.  
-  
- [!code-cpp[Classic PropertyInfo.MemberType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.MemberType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyInfo.MemberType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.MemberType Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyInfo.MemberType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.MemberType Example/VB/source.vb#1)]  
-  
+The following example displays the type of the specified member.  
+ 
+[!code-cpp[Classic PropertyInfo.MemberType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.MemberType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyInfo.MemberType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.MemberType Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyInfo.MemberType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.MemberType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1268,24 +1268,24 @@ Console.WriteLine("CurrCult: " +
         <value>The type of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine the type of a particular property, do the following:  
-  
+To determine the type of a particular property, do the following:  
+ 
 1.  Get a <xref:System.Type> object that represents the type (the class or structure) that contains the property. If you are working with an object (an instance of a type), you can call its <xref:System.Object.GetType%2A> method. Otherwise, you can use the C#  operator or the Visual Basic  operator, as the example illustrates.  
-  
+ 
 2.  Get a <xref:System.Reflection.PropertyInfo> object that represents the property in which you're interested. You can do this by getting an array of all properties from the <xref:System.Type.GetProperties%2A?displayProperty=fullName> method and then iterating the elements in the array, or you can retrieve the <xref:System.Reflection.PropertyInfo> object that represents the property directly by calling the <xref:System.Type.GetProperty%2A?displayProperty=fullName> method and specifying the property name.  
-  
+ 
 3.  Retrieve the value of the <xref:System.Reflection.PropertyInfo.PropertyType%2A> property from the <xref:System.Reflection.PropertyInfo> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example defines an `Employee` class that has five properties. It then uses retrieves an array of <xref:System.Reflection.PropertyInfo> objects that represent those properties and displays the name and type of each.  
-  
- [!code-csharp[System.Reflection.PropertyInfo.PropertyType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.propertyinfo.propertytype/cs/propertytype1.cs#1)]
- [!code-vb[System.Reflection.PropertyInfo.PropertyType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.propertyinfo.propertytype/vb/propertytype1.vb#1)]  
-  
+The following example defines an `Employee` class that has five properties. It then uses retrieves an array of <xref:System.Reflection.PropertyInfo> objects that represent those properties and displays the name and type of each.  
+ 
+[!code-csharp[System.Reflection.PropertyInfo.PropertyType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.propertyinfo.propertytype/cs/propertytype1.cs#1)]
+[!code-vb[System.Reflection.PropertyInfo.PropertyType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.propertyinfo.propertytype/vb/propertytype1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1318,10 +1318,10 @@ Console.WriteLine("CurrCult: " +
         <value>The <see langword="set" /> accessor for this property, or <see langword="null" /> if the property is read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Retrieving the value of the <xref:System.Reflection.PropertyInfo.SetMethod%2A> property is equivalent to calling the <xref:System.Reflection.PropertyInfo.GetSetMethod%28System.Boolean%29> method with a value of `true` for the `nonPublic` argument.  
-  
+Retrieving the value of the <xref:System.Reflection.PropertyInfo.SetMethod%2A> property is equivalent to calling the <xref:System.Reflection.PropertyInfo.GetSetMethod%28System.Boolean%29> method with a value of `true` for the `nonPublic` argument.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1364,30 +1364,30 @@ Console.WriteLine("CurrCult: " +
         <summary>Sets the property value of a specified object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%29> overload sets the value of a non-indexed property. To determine whether a property is indexed, call the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed. To set the value of an indexed property, call the <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Object%5B%5D%29> overload.  
-  
- If the property type of this <xref:System.Reflection.PropertyInfo> object is a value type and `value` is `null`, the property will be set to the default value for that type.  
-  
- This is a convenience method that calls the runtime implementation of the abstract <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method, specifying <xref:System.Reflection.BindingFlags?displayProperty=fullName> for the `BindingFlags` parameter, `null` for `Binder`, `null` for `Object[]`, and `null` for `CultureInfo`.  
-  
- To use the <xref:System.Reflection.PropertyInfo.SetValue%2A> method, first get a <xref:System.Type> object that represents the class. From the <xref:System.Type>, get the <xref:System.Reflection.PropertyInfo> object. From the <xref:System.Reflection.PropertyInfo> object, call the <xref:System.Reflection.PropertyInfo.SetValue%2A> method.  
-  
+The <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%29> overload sets the value of a non-indexed property. To determine whether a property is indexed, call the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed. To set the value of an indexed property, call the <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Object%5B%5D%29> overload.  
+ 
+If the property type of this <xref:System.Reflection.PropertyInfo> object is a value type and `value` is `null`, the property will be set to the default value for that type.  
+ 
+This is a convenience method that calls the runtime implementation of the abstract <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method, specifying <xref:System.Reflection.BindingFlags?displayProperty=fullName> for the `BindingFlags` parameter, `null` for `Binder`, `null` for `Object[]`, and `null` for `CultureInfo`.  
+ 
+To use the <xref:System.Reflection.PropertyInfo.SetValue%2A> method, first get a <xref:System.Type> object that represents the class. From the <xref:System.Type>, get the <xref:System.Reflection.PropertyInfo> object. From the <xref:System.Reflection.PropertyInfo> object, call the <xref:System.Reflection.PropertyInfo.SetValue%2A> method.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example declares a class named `Example` with one `static` (`Shared` in Visual Basic) and one instance property. The example uses the <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%29> method to change the original property values and displays the original and final values.  
-  
- [!code-cpp[PropertyInfo.SetValue#2](~/samples/snippets/cpp/VS_Snippets_CLR/PropertyInfo.SetValue/cpp/example2.cpp#2)]
- [!code-csharp[PropertyInfo.SetValue#2](~/samples/snippets/csharp/VS_Snippets_CLR/PropertyInfo.SetValue/cs/example2.cs#2)]
- [!code-vb[PropertyInfo.SetValue#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/PropertyInfo.SetValue/vb/example2.vb#2)]  
-  
+The following example declares a class named `Example` with one `static` (`Shared` in Visual Basic) and one instance property. The example uses the <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%29> method to change the original property values and displays the original and final values.  
+ 
+[!code-cpp[PropertyInfo.SetValue#2](~/samples/snippets/cpp/VS_Snippets_CLR/PropertyInfo.SetValue/cpp/example2.cpp#2)]
+[!code-csharp[PropertyInfo.SetValue#2](~/samples/snippets/csharp/VS_Snippets_CLR/PropertyInfo.SetValue/cs/example2.cs#2)]
+[!code-vb[PropertyInfo.SetValue#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/PropertyInfo.SetValue/vb/example2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property's <see langword="set" /> accessor is not found.  
@@ -1457,46 +1457,46 @@ Console.WriteLine("CurrCult: " +
         <summary>Sets the property value of a specified object with optional index values for index properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this <xref:System.Reflection.PropertyInfo> object is a value type and `value` is `null`, then the property will be set to the default value for that type.  
-  
- To determine whether a property is indexed, use the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed.  
-  
- This is a convenience method that calls the runtime implementation of the abstract <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method, specifying <xref:System.Reflection.BindingFlags?displayProperty=fullName> for the `BindingFlags` parameter, `null` for `Binder`, and `null` for `CultureInfo`.  
-  
- To use the <xref:System.Reflection.PropertyInfo.SetValue%2A> method, first get a <xref:System.Type> object that represents the class. From the <xref:System.Type>, get the <xref:System.Reflection.PropertyInfo>. From the <xref:System.Reflection.PropertyInfo>, use the <xref:System.Reflection.PropertyInfo.SetValue%2A> method.  
-  
+If this <xref:System.Reflection.PropertyInfo> object is a value type and `value` is `null`, then the property will be set to the default value for that type.  
+ 
+To determine whether a property is indexed, use the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed.  
+ 
+This is a convenience method that calls the runtime implementation of the abstract <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method, specifying <xref:System.Reflection.BindingFlags?displayProperty=fullName> for the `BindingFlags` parameter, `null` for `Binder`, and `null` for `CultureInfo`.  
+ 
+To use the <xref:System.Reflection.PropertyInfo.SetValue%2A> method, first get a <xref:System.Type> object that represents the class. From the <xref:System.Type>, get the <xref:System.Reflection.PropertyInfo>. From the <xref:System.Reflection.PropertyInfo>, use the <xref:System.Reflection.PropertyInfo.SetValue%2A> method.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example defines a class named `TestClass` that has a read-write property named `Caption`. It  displays the default value of the `Caption` property, calls the <xref:System.Reflection.PropertyInfo.SetValue%2A> method to change the property value, and displays the result.  
-  
- [!code-cpp[Classic PropertyInfo.SetValue1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.SetValue1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyInfo.SetValue1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.SetValue1 Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyInfo.SetValue1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.SetValue1 Example/VB/source.vb#1)]  
-  
- Note that, because the `Caption` property is not a parameter array, the `index` argument is `null`.  
-  
- The following example declares a class named `Example` with three properties: a `static` property (`Shared` in Visual Basic), an instance property, and an indexed instance property. The example uses the <xref:System.Reflection.PropertyInfo.SetValue%2A> method to change the default values of the properties and displays the original and final values.  
-  
- The name that is used to search for an indexed instance property with reflection is different depending on the language and on attributes applied to the property.  
-  
+The following example defines a class named `TestClass` that has a read-write property named `Caption`. It  displays the default value of the `Caption` property, calls the <xref:System.Reflection.PropertyInfo.SetValue%2A> method to change the property value, and displays the result.  
+ 
+[!code-cpp[Classic PropertyInfo.SetValue1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.SetValue1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyInfo.SetValue1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.SetValue1 Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyInfo.SetValue1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.SetValue1 Example/VB/source.vb#1)]  
+ 
+Note that, because the `Caption` property is not a parameter array, the `index` argument is `null`.  
+ 
+The following example declares a class named `Example` with three properties: a `static` property (`Shared` in Visual Basic), an instance property, and an indexed instance property. The example uses the <xref:System.Reflection.PropertyInfo.SetValue%2A> method to change the default values of the properties and displays the original and final values.  
+ 
+The name that is used to search for an indexed instance property with reflection is different depending on the language and on attributes applied to the property.  
+ 
 -   In Visual Basic, the property name is always used to search for the property with reflection. You can use the `Default` keyword to make the property a default indexed property, in which case you can omit the name when accessing the property, as in this example. You can also use the property name.  
-  
+ 
 -   In C#, the indexed instance property is a default property called an indexer, and the name is never used when accessing the property in code. By default, the name of the property is `Item`, and you must use that name when you search for the property with reflection. You can use the <xref:System.Runtime.CompilerServices.IndexerNameAttribute> attribute to give the indexer a different name. In this example, the name is `IndexedInstanceProperty`.  
-  
+ 
 -   In C++, the `default` specifier can be used to make an indexed property a default indexed property (class indexer). In that case, the name of the property by default is `Item`, and you must use that name when you search for the property with reflection, as in this example. You can use the <xref:System.Runtime.CompilerServices.IndexerNameAttribute> attribute to give the class indexer a different name in reflection, but you cannot use that name to access the property in code. An indexed property that is not a class indexer is accessed using its name, both in code and in reflection.  
-  
- [!code-cpp[PropertyInfo.SetValue#1](~/samples/snippets/cpp/VS_Snippets_CLR/PropertyInfo.SetValue/cpp/Example.cpp#1)]
- [!code-csharp[PropertyInfo.SetValue#1](~/samples/snippets/csharp/VS_Snippets_CLR/PropertyInfo.SetValue/cs/Example.cs#1)]
- [!code-vb[PropertyInfo.SetValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PropertyInfo.SetValue/vb/Example.vb#1)]  
-  
+ 
+[!code-cpp[PropertyInfo.SetValue#1](~/samples/snippets/cpp/VS_Snippets_CLR/PropertyInfo.SetValue/cpp/Example.cpp#1)]
+[!code-csharp[PropertyInfo.SetValue#1](~/samples/snippets/csharp/VS_Snippets_CLR/PropertyInfo.SetValue/cs/Example.cs#1)]
+[!code-vb[PropertyInfo.SetValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PropertyInfo.SetValue/vb/Example.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="index" /> array does not contain the type of arguments needed.  
@@ -1566,21 +1566,21 @@ Console.WriteLine("CurrCult: " +
         <summary>When overridden in a derived class, sets the property value for a specified object that has the specified binding, index, and culture-specific information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this <xref:System.Reflection.PropertyInfo> object is a value type and `value` is `null`, then the property will be set to the default value for that type.  
-  
- To determine whether a property is indexed, use the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed.  
-  
- Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked via Reflection whenever the code is fully trusted.  
-  
- To use the `SetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `SetValue` method.  
-  
+If this <xref:System.Reflection.PropertyInfo> object is a value type and `value` is `null`, then the property will be set to the default value for that type.  
+ 
+To determine whether a property is indexed, use the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed.  
+ 
+Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked via Reflection whenever the code is fully trusted.  
+ 
+To use the `SetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `SetValue` method.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="index" /> array does not contain the type of arguments needed.  
@@ -1627,10 +1627,10 @@ Console.WriteLine("CurrCult: " +
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -1679,10 +1679,10 @@ Console.WriteLine("CurrCult: " +
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -1708,10 +1708,10 @@ Console.WriteLine("CurrCult: " +
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -1751,10 +1751,10 @@ Console.WriteLine("CurrCult: " +
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>

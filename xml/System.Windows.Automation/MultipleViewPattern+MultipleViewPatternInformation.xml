@@ -32,20 +32,20 @@
         <value>The integer value for the current view of the <see cref="T:System.Windows.Automation.AutomationElement" />. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection of view identifiers is identical across instances.  
+The collection of view identifiers is identical across instances.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, an integer identifier is obtained, representing the current view for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
-  
- [!code-csharp[UIAMultipleViewPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#101)]
- [!code-vb[UIAMultipleViewPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#101)]  
+In the following example, an integer identifier is obtained, representing the current view for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
+ 
+[!code-csharp[UIAMultipleViewPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#101)]
+[!code-vb[UIAMultipleViewPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#101)]  
 [!code-csharp[UIAMultipleViewPattern_snip#1035](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#1035)]
 [!code-vb[UIAMultipleViewPattern_snip#1035](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#1035)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,22 +68,22 @@
         <returns>A collection of integer values that identify the views available for an <see cref="T:System.Windows.Automation.AutomationElement" />. The default is an empty integer array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection of view identifiers is identical across instances.  
+The collection of view identifiers is identical across instances.  
+ 
+View identifier values can be passed to <xref:System.Windows.Automation.MultipleViewPattern.GetViewName%2A>.  
+ 
   
- View identifier values can be passed to <xref:System.Windows.Automation.MultipleViewPattern.GetViewName%2A>.  
-  
-   
-  
+ 
 ## Examples  
- In the following example, a collection of integer identifiers is obtained, representing the views available for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
-  
- [!code-csharp[UIAMultipleViewPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#101)]
- [!code-vb[UIAMultipleViewPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#101)]  
+In the following example, a collection of integer identifiers is obtained, representing the views available for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
+ 
+[!code-csharp[UIAMultipleViewPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#101)]
+[!code-vb[UIAMultipleViewPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#101)]  
 [!code-csharp[UIAMultipleViewPattern_snip#1025](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#1025)]
 [!code-vb[UIAMultipleViewPattern_snip#1025](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#1025)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -22,15 +22,15 @@
     <summary>Represents a control that enables a user to select a date by using a visual calendar display.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Calendar> control can be used on its own, or as a drop-down part of a <xref:System.Windows.Controls.DatePicker> control. For more information, see <xref:System.Windows.Controls.DatePicker>.  
-  
+A <xref:System.Windows.Controls.Calendar> control can be used on its own, or as a drop-down part of a <xref:System.Windows.Controls.DatePicker> control. For more information, see <xref:System.Windows.Controls.DatePicker>.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Controls.Calendar> supports only the Gregorian calendar.  
-  
- The following table provides information about tasks that are typically associated with the <xref:System.Windows.Controls.Calendar>.  
-  
+ 
+The following table provides information about tasks that are typically associated with the <xref:System.Windows.Controls.Calendar>.  
+ 
 |Task|Implementation|  
 |----------|--------------------|  
 |Have the <xref:System.Windows.Controls.Calendar> display a month, an entire year, or a decade.|Set the <xref:System.Windows.Controls.Calendar.DisplayMode%2A> property to Month, Year, or Decade.|  
@@ -39,9 +39,9 @@
 |Specify the range of dates that the <xref:System.Windows.Controls.Calendar> displays.|Use the <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> and <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> properties.|  
 |Specify whether the current date is highlighted.|Use the <xref:System.Windows.Controls.Calendar.IsTodayHighlighted%2A> property. By default, <xref:System.Windows.Controls.Calendar.IsTodayHighlighted%2A> is `true`.|  
 |Change the size of the <xref:System.Windows.Controls.Calendar>.|Use a <xref:System.Windows.Controls.Viewbox> or set the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property to a <xref:System.Windows.Media.ScaleTransform>.  Note that if you set the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties of a <xref:System.Windows.Controls.Calendar>, the actual calendar does not change its size.|  
-  
- The <xref:System.Windows.Controls.Calendar> control provides basic navigation using either the mouse or keyboard. The following table summarizes keyboard navigation.  
-  
+ 
+The <xref:System.Windows.Controls.Calendar> control provides basic navigation using either the mouse or keyboard. The following table summarizes keyboard navigation.  
+ 
 |Key Combination|<xref:System.Windows.Controls.Calendar.DisplayMode%2A>|Action|  
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|------------|  
 |ARROW|<xref:System.Windows.Controls.CalendarMode>|Changes the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> property if the <xref:System.Windows.Controls.Calendar.SelectionMode%2A> property is not set to <xref:System.Windows.Controls.CalendarSelectionMode>.|  
@@ -57,36 +57,36 @@
 |CTRL+UP ARROW|Any|Switches to the next larger <xref:System.Windows.Controls.Calendar.DisplayMode%2A>. If <xref:System.Windows.Controls.Calendar.DisplayMode%2A> is already <xref:System.Windows.Controls.CalendarMode>, no action.|  
 |CTRL+DOWN ARROW|Any|Switches to the next smaller <xref:System.Windows.Controls.Calendar.DisplayMode%2A>. If <xref:System.Windows.Controls.Calendar.DisplayMode%2A> is already <xref:System.Windows.Controls.CalendarMode>, no action.|  
 |SPACEBAR or ENTER|<xref:System.Windows.Controls.CalendarMode> or <xref:System.Windows.Controls.CalendarMode>|Switches <xref:System.Windows.Controls.Calendar.DisplayMode%2A> to the <xref:System.Windows.Controls.CalendarMode> or <xref:System.Windows.Controls.CalendarMode> represented by focused item.|  
-  
+ 
 ## Customizing the Calendar Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.Calendar> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Calendar>, see [Calendar Styles and Templates](~/docs/framework/wpf/controls/calendar-styles-and-templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
+To apply the same property settings to multiple <xref:System.Windows.Controls.Calendar> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Calendar>, see [Calendar Styles and Templates](~/docs/framework/wpf/controls/calendar-styles-and-templates.md).  
+ 
+Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
 > [!NOTE]
 >  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.Calendar> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
-  
+ 
 <a name="xamlObjectElementUsage_Calendar"></a>   
 ## XAML Object Element Usage  
-  
+ 
 ```  
 <Calendar .../>  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following illustration shows two <xref:System.Windows.Controls.Calendar> controls, one with selections and blackout dates and one without.  
-  
- ![Calendar controls](~/add/media/ndp-calendarcontrols.png "Calendar controls")  
+The following illustration shows two <xref:System.Windows.Controls.Calendar> controls, one with selections and blackout dates and one without.  
+ 
+![Calendar controls](~/add/media/ndp-calendarcontrols.png "Calendar controls")  
 Calendar controls  
-  
- The following code and XAML creates a page with two <xref:System.Windows.Controls.Calendar> controls that is similar to the previous illustration.  
-  
- [!code-csharp[CalendarSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#1)]
- [!code-vb[CalendarSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#1)]
- [!code-xml[CalendarSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#1)]  
-  
+ 
+The following code and XAML creates a page with two <xref:System.Windows.Controls.Calendar> controls that is similar to the previous illustration.  
+ 
+[!code-csharp[CalendarSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#1)]
+[!code-vb[CalendarSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#1)]
+[!code-xml[CalendarSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -123,42 +123,42 @@ Calendar controls
         <value>A collection of dates that cannot be selected. The default value is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dates in this collection will appear gray and crossed out on the calendar.  
-  
- To make all past dates not selectable, you can use the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast%2A> method provided by the collection returned by this property.  
-  
+Dates in this collection will appear gray and crossed out on the calendar.  
+ 
+To make all past dates not selectable, you can use the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast%2A> method provided by the collection returned by this property.  
+ 
 <a name="xamlPropertyElementUsage_BlackoutDates"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-  <object.BlackoutDates>  
-    oneOrMoreCalendarDateRanges  
-  </object.BlackoutDates>  
+ <object.BlackoutDates>  
+   oneOrMoreCalendarDateRanges  
+ </object.BlackoutDates>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_BlackoutDates"></a>   
 ## XAML Values  
- *oneOrMoreCalendarDateRanges*  
- One or more object elements of type <xref:System.Windows.Controls.CalendarDateRange>.  
+*oneOrMoreCalendarDateRanges*  
+One or more object elements of type <xref:System.Windows.Controls.CalendarDateRange>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Calendar> that has some dates that cannot be selected.  
-  
- [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
- [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
-  
- The preceding example produces output that is similar to the following illustration.  
-  
- ![Calendar with dates that cannot be selected.](~/add/media/ndp-calendarblackout.png "Calendar with dates that cannot be selected.")  
+The following example creates a <xref:System.Windows.Controls.Calendar> that has some dates that cannot be selected.  
+ 
+[!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+[!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+[!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ 
+The preceding example produces output that is similar to the following illustration.  
+ 
+![Calendar with dates that cannot be selected.](~/add/media/ndp-calendarblackout.png "Calendar with dates that cannot be selected.")  
 Calendar with dates that cannot be selected  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,33 +180,33 @@ Calendar with dates that cannot be selected
         <value>The current style of the <see cref="T:System.Windows.Controls.Primitives.CalendarButton" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_CalendarButtonStyle"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object CalendarButtonStyle="{resourceExtension styleResourceKey"/>  
-  
+ 
 ```  
-  
+ 
 <a name="xamlValues_CalendarButtonStyle"></a>   
 ## XAML Values  
- *resourceExtension*  
- One of the following: `StaticResource` or `DynamicResource`. For more information, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
-  
- *styleResourceKey*  
- The key that identifies the resource being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
-  
+*resourceExtension*  
+One of the following: `StaticResource` or `DynamicResource`. For more information, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+ 
+*styleResourceKey*  
+The key that identifies the resource being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+ 
 <a name="dependencyPropertyInfo_CalendarButtonStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.CalendarButtonStyleProperty>|  
 |Metadata properties set to **true**|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,33 +245,33 @@ Calendar with dates that cannot be selected
         <value>The current style of the <see cref="T:System.Windows.Controls.Primitives.CalendarDayButton" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_CalendarDayButtonStyle"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object CalendarDayButtonStyle="{resourceExtension styleResourceKey}"/>  
-  
+ 
 ```  
-  
+ 
 <a name="xamlValues_CalendarDayButtonStyle"></a>   
 ## XAML Values  
- *resourceExtension*  
- One of the following: `StaticResource` or `DynamicResource`. For more information, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
-  
- *styleResourceKey*  
- The key that identifies the resource being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
-  
+*resourceExtension*  
+One of the following: `StaticResource` or `DynamicResource`. For more information, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+ 
+*styleResourceKey*  
+The key that identifies the resource being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+ 
 <a name="dependencyPropertyInfo_CalendarDayButtonStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.CalendarDayButtonStyleProperty>|  
 |Metadata properties set to **true**|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,33 +310,33 @@ Calendar with dates that cannot be selected
         <value>The current style of the <see cref="T:System.Windows.Controls.Primitives.CalendarItem" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_CalendarItemStyle"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object CalendarItemStyle="{resourceExtension styleResourceKey}"/>  
-  
+ 
 ```  
-  
+ 
 <a name="xamlValues_CalendarItemStyle"></a>   
 ## XAML Values  
- *resourceExtension*  
- One of the following: `StaticResource` or `DynamicResource`. For more information, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
-  
- *styleResourceKey*  
- The key that identifies the resource being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
-  
+*resourceExtension*  
+One of the following: `StaticResource` or `DynamicResource`. For more information, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+ 
+*styleResourceKey*  
+The key that identifies the resource being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+ 
 <a name="dependencyPropertyInfo_CalendarItemStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.CalendarItemStyleProperty>|  
 |Metadata properties set to **true**|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,47 +375,47 @@ Calendar with dates that cannot be selected
         <value>The date to display. The default is <see cref="P:System.DateTime.Today" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Calendar.DisplayDate%2A> and <xref:System.Windows.Controls.Calendar.DisplayMode%2A> properties specify what the calendar displays and what has focus within the calendar.  The user can change the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> only when <xref:System.Windows.Controls.Calendar.DisplayMode%2A> is set to Month, but the user might change the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> when the Calendar is in Year and Decade mode.  The following table describes how the mode changes the <xref:System.Windows.Controls.Calendar.DisplayDate%2A>.  
-  
+The <xref:System.Windows.Controls.Calendar.DisplayDate%2A> and <xref:System.Windows.Controls.Calendar.DisplayMode%2A> properties specify what the calendar displays and what has focus within the calendar.  The user can change the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> only when <xref:System.Windows.Controls.Calendar.DisplayMode%2A> is set to Month, but the user might change the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> when the Calendar is in Year and Decade mode.  The following table describes how the mode changes the <xref:System.Windows.Controls.Calendar.DisplayDate%2A>.  
+ 
 |DisplayMode|Action|  
 |-----------------|------------|  
 |Month|<xref:System.Windows.Controls.Calendar.DisplayDate%2A> changes when the user navigates to a different month.|  
 |Year|The month of <xref:System.Windows.Controls.Calendar.DisplayDate%2A> changes when the user clicks or navigates to a different month.|  
 |Decade|The year of <xref:System.Windows.Controls.Calendar.DisplayDate%2A> changes when the user clicks or navigates to another year.|  
-  
- <xref:System.Windows.Controls.Calendar.DisplayDate%2A> is ignored if its value is outside of the range of dates that is specified by <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> and <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> properties.  
-  
+ 
+<xref:System.Windows.Controls.Calendar.DisplayDate%2A> is ignored if its value is outside of the range of dates that is specified by <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> and <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> properties.  
+ 
 <a name="dependencyPropertyInfo_DisplayDate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.DisplayDateProperty>|  
 |Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
+ 
 <a name="xamlAttributeUsage_DisplayDate"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <Calendar DisplayDate="dateTimeString"/>  
 ```  
-  
+ 
 <a name="xamlValues_DisplayDate"></a>   
 ## XAML Values  
- *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+*dateTimeString*  
+A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sets up a <xref:System.Windows.Controls.Calendar> with a particular range of displayable dates, and sets the currently selected and displayed date.  
-  
- [!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
- [!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
- [!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
-  
+The following code sets up a <xref:System.Windows.Controls.Calendar> with a particular range of displayable dates, and sets the currently selected and displayed date.  
+ 
+[!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
+[!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
+[!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -436,24 +436,24 @@ Calendar with dates that cannot be selected
         <summary>Occurs when the <see cref="P:System.Windows.Controls.Calendar.DisplayDate" /> property is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs after <xref:System.Windows.Controls.Calendar.DisplayDate%2A> is assigned its new value.  
-  
+This event occurs after <xref:System.Windows.Controls.Calendar.DisplayDate%2A> is assigned its new value.  
+ 
 <a name="xamlAttributeUsage_DisplayDateChanged"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <Calendar DisplayDateChanged="eventhandler"/>  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following event handler updates a <xref:System.Windows.Controls.TextBox> with information from the <xref:System.Windows.Controls.Calendar.DisplayDateChanged> event. This example is part of a larger example available in the <xref:System.Windows.Controls.Calendar> overview.  
-  
- [!code-xml[CalendarSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#6)]  
-  
+The following event handler updates a <xref:System.Windows.Controls.TextBox> with information from the <xref:System.Windows.Controls.Calendar.DisplayDateChanged> event. This example is part of a larger example available in the <xref:System.Windows.Controls.Calendar> overview.  
+ 
+[!code-xml[CalendarSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -475,39 +475,39 @@ Calendar with dates that cannot be selected
         <value>The last date that is available in the calendar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can restrict the range of a <xref:System.Windows.Controls.Calendar> by setting the <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> and <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> properties.  A user cannot scroll to or select dates outside of this range.  If you set the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> property to a date that is after <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A>, <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> is set to the same value as <xref:System.Windows.Controls.Calendar.SelectedDate%2A>.  
-  
+You can restrict the range of a <xref:System.Windows.Controls.Calendar> by setting the <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> and <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> properties.  A user cannot scroll to or select dates outside of this range.  If you set the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> property to a date that is after <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A>, <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> is set to the same value as <xref:System.Windows.Controls.Calendar.SelectedDate%2A>.  
+ 
 <a name="dependencyPropertyInfo_DisplayDateEnd"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.DisplayDateEndProperty>|  
 |Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
+ 
 <a name="xamlAttributeUsage_DisplayDateEnd"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <Calendar DisplayDateEnd="dateTimeString"/>  
 ```  
-  
+ 
 <a name="xamlValues_DisplayDateEnd"></a>   
 ## XAML Values  
- *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+*dateTimeString*  
+A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sets up a <xref:System.Windows.Controls.Calendar> with a particular range of displayable dates, and sets the currently selected and displayed date.  
-  
- [!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
- [!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
- [!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
-  
+The following code sets up a <xref:System.Windows.Controls.Calendar> with a particular range of displayable dates, and sets the currently selected and displayed date.  
+ 
+[!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
+[!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
+[!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -563,39 +563,39 @@ Calendar with dates that cannot be selected
         <value>The first date that is available in the calendar. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can restrict the range of a Calendar by setting the <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> and <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> properties.  A user cannot scroll to or select dates outside of this range.  If you set the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> property to a date that is before <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A>, <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> is set to the same value as <xref:System.Windows.Controls.Calendar.SelectedDate%2A>.  
-  
+You can restrict the range of a Calendar by setting the <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> and <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> properties.  A user cannot scroll to or select dates outside of this range.  If you set the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> property to a date that is before <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A>, <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> is set to the same value as <xref:System.Windows.Controls.Calendar.SelectedDate%2A>.  
+ 
 <a name="dependencyPropertyInfo_DisplayDateStart"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.DisplayDateStartProperty>|  
 |Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
+ 
 <a name="xamlAttributeUsage_DisplayDateStart"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <Calendar DisplayDateStart="dateTimeString"/>  
 ```  
-  
+ 
 <a name="xamlValues_DisplayDateStart"></a>   
 ## XAML Values  
- *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+*dateTimeString*  
+A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sets up a <xref:System.Windows.Controls.Calendar> with a particular range of displayable dates, and sets the currently selected and displayed date.  
-  
- [!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
- [!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
- [!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
-  
+The following code sets up a <xref:System.Windows.Controls.Calendar> with a particular range of displayable dates, and sets the currently selected and displayed date.  
+ 
+[!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
+[!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
+[!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -634,36 +634,36 @@ Calendar with dates that cannot be selected
         <value>A value that indicates what length of time the <see cref="T:System.Windows.Controls.Calendar" /> should display.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Calendar can display a month, a year, or a decade. The following table lists how the user navigates to each mode.  
-  
+A Calendar can display a month, a year, or a decade. The following table lists how the user navigates to each mode.  
+ 
 |DisplayMode|Action|  
 |-----------------|------------|  
 |Month|To navigate to Year mode, click the month heading.|  
 |Year|To navigate to Decade mode, click the year heading. To navigate to Month mode, click one of the displayed months.|  
 |Decade|To navigate to Year mode, click one of the displayed years.|  
-  
+ 
 <a name="dependencyPropertyInfo_DisplayMode"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar>|  
 |Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a calendar that displays the months in a year and handles the <xref:System.Windows.Controls.Calendar.DisplayModeChanged> event so that when the user clicks on a month or the year, the calendar does not change its <xref:System.Windows.Controls.Calendar.DisplayMode%2A>.  
-  
- [!code-csharp[CalendarSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#4)]
- [!code-vb[CalendarSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#4)]
- [!code-xml[CalendarSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#4)]  
-  
- [!code-csharp[CalendarSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#5)]
- [!code-vb[CalendarSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#5)]  
-  
+The following example creates a calendar that displays the months in a year and handles the <xref:System.Windows.Controls.Calendar.DisplayModeChanged> event so that when the user clicks on a month or the year, the calendar does not change its <xref:System.Windows.Controls.Calendar.DisplayMode%2A>.  
+ 
+[!code-csharp[CalendarSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#4)]
+[!code-vb[CalendarSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#4)]
+[!code-xml[CalendarSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#4)]  
+ 
+[!code-csharp[CalendarSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#5)]
+[!code-vb[CalendarSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,28 +684,28 @@ Calendar with dates that cannot be selected
         <summary>Occurs when the <see cref="P:System.Windows.Controls.Calendar.DisplayMode" /> property is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_DisplayModeChanged"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <Calendar DisplayModeChanged="eventhandler"/>  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a calendar that displays the months in a year and handles the <xref:System.Windows.Controls.Calendar.DisplayModeChanged> event so that when the user clicks on a month or the year, the calendar does not change its <xref:System.Windows.Controls.Calendar.DisplayMode%2A>.  
-  
- [!code-csharp[CalendarSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#4)]
- [!code-vb[CalendarSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#4)]
- [!code-xml[CalendarSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#4)]  
-  
- [!code-csharp[CalendarSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#5)]
- [!code-vb[CalendarSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#5)]  
-  
+The following example creates a calendar that displays the months in a year and handles the <xref:System.Windows.Controls.Calendar.DisplayModeChanged> event so that when the user clicks on a month or the year, the calendar does not change its <xref:System.Windows.Controls.Calendar.DisplayMode%2A>.  
+ 
+[!code-csharp[CalendarSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#4)]
+[!code-vb[CalendarSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#4)]
+[!code-xml[CalendarSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#4)]  
+ 
+[!code-csharp[CalendarSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#5)]
+[!code-vb[CalendarSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -744,28 +744,28 @@ Calendar with dates that cannot be selected
         <value>A <see cref="T:System.DayOfWeek" /> that represents the beginning of the week. The default is the <see cref="P:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek" /> that is determined by the current culture.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FirstDayOfWeek"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.FirstDayOfWeekProperty>|  
 |Metadata properties set to **true**|None|  
-  
+ 
 <a name="xamlAttributeUsage_FirstDayOfWeek"></a>   
 ## XAML Attribute Usage  
- \<Calendar **FirstDayOfWeek**="<xref:System.DayOfWeek>"/>  
+\<Calendar **FirstDayOfWeek**="<xref:System.DayOfWeek>"/>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example sets the <xref:System.Windows.Controls.Calendar.FirstDayOfWeek%2A> property to <xref:System.DayOfWeek>.  
-  
- [!code-xml[CalendarSnippets#8](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#8)]  
-  
+The following example sets the <xref:System.Windows.Controls.Calendar.FirstDayOfWeek%2A> property to <xref:System.DayOfWeek>.  
+ 
+[!code-xml[CalendarSnippets#8](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -805,33 +805,33 @@ Calendar with dates that cannot be selected
           <see langword="true" /> if the current date is highlighted; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsTodayHighlighted"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.IsTodayHighlightedProperty>|  
 |Metadata properties set to **true**|None|  
-  
+ 
 <a name="xamlAttributeUsage_IsTodayHighlighted"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <Calendar IsTodayHighlighted="bool"/>  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Calendar> where the current date is not highlighted.  
-  
- [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
- [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
-  
+The following example creates a <xref:System.Windows.Controls.Calendar> where the current date is not highlighted.  
+ 
+[!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+[!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+[!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -870,10 +870,10 @@ Calendar with dates that cannot be selected
         <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Calendar" /> control when a new template is applied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked whenever application code or an internal process, such as rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
+This method is invoked whenever application code or an internal process, such as rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -896,10 +896,10 @@ Calendar with dates that cannot be selected
         <returns>A <see cref="T:System.Windows.Automation.Peers.CalendarAutomationPeer" /> for the <see cref="T:System.Windows.Controls.Calendar" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance if one has not been created for the control instance; otherwise, it returns the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> previously created.  
-  
+This method creates a new <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance if one has not been created for the control instance; otherwise, it returns the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> previously created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -972,10 +972,10 @@ Calendar with dates that cannot be selected
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event that occurs when the user presses a key while this control has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Calendar> overrides the <xref:System.Windows.Controls.Calendar.OnKeyDown%2A> method to support keyboard navigation.  For more information, see the <xref:System.Windows.Controls.Calendar> class. This implementation marks the <xref:System.Windows.UIElement.KeyDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when a keystroke, such as pressing an ARROW key, performs a navigation action.  
-  
+<xref:System.Windows.Controls.Calendar> overrides the <xref:System.Windows.Controls.Calendar.OnKeyDown%2A> method to support keyboard navigation.  For more information, see the <xref:System.Windows.Controls.Calendar> class. This implementation marks the <xref:System.Windows.UIElement.KeyDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when a keystroke, such as pressing an ARROW key, performs a navigation action.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1003,10 +1003,10 @@ Calendar with dates that cannot be selected
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyUp" /> routed event that occurs when the user releases a key while this control has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Calendar> overrides the <xref:System.Windows.Controls.Calendar.OnKeyDown%2A> method to support keyboard navigation.  For more information, see the <xref:System.Windows.Controls.Calendar> class. This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.KeyUp> event data.  
-  
+<xref:System.Windows.Controls.Calendar> overrides the <xref:System.Windows.Controls.Calendar.OnKeyDown%2A> method to support keyboard navigation.  For more information, see the <xref:System.Windows.Controls.Calendar> class. This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.KeyUp> event data.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1034,10 +1034,10 @@ Calendar with dates that cannot be selected
         <summary>Raises the <see cref="E:System.Windows.Controls.Calendar.SelectedDatesChanged" /> routed event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The control raises the <xref:System.Windows.Controls.Calendar.SelectedDatesChanged> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+The control raises the <xref:System.Windows.Controls.Calendar.SelectedDatesChanged> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1086,40 +1086,40 @@ Calendar with dates that cannot be selected
         <value>The date currently selected. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_SelectedDate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.SelectedDateProperty>|  
 |Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
- Use this property when <xref:System.Windows.Controls.Calendar.SelectionMode%2A> is set to <xref:System.Windows.Controls.CalendarSelectionMode>. In other modes, this property will always be the first date in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.  
-  
+ 
+Use this property when <xref:System.Windows.Controls.Calendar.SelectionMode%2A> is set to <xref:System.Windows.Controls.CalendarSelectionMode>. In other modes, this property will always be the first date in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.  
+ 
 <a name="xamlAttributeUsage_SelectedDate"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <Calendar SelectedDate="dateTimeString"/>  
 ```  
-  
+ 
 <a name="xamlValues_SelectedDate"></a>   
 ## XAML Values  
- *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+*dateTimeString*  
+A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Calendar> with a particular range of displayable dates, and sets the currently selected and displayed date.  
-  
- [!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
- [!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
- [!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
-  
+The following example creates a <xref:System.Windows.Controls.Calendar> with a particular range of displayable dates, and sets the currently selected and displayed date.  
+ 
+[!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
+[!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
+[!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified date is outside the range specified by <see cref="P:System.Windows.Controls.Calendar.DisplayDateStart" /> and <see cref="P:System.Windows.Controls.Calendar.DisplayDateEnd" />  
@@ -1164,43 +1164,43 @@ Calendar with dates that cannot be selected
         <value>A <see cref="T:System.Windows.Controls.SelectedDatesCollection" /> object that contains the currently selected dates. The default is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dates can be added to the collection either individually or in a range using the <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> method. Depending on the value of the <xref:System.Windows.Controls.Calendar.SelectionMode%2A> property, adding a date or range to the collection may cause it to be cleared. The following table lists how <xref:System.Windows.Controls.CalendarSelectionMode> affects the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property.  
-  
+Dates can be added to the collection either individually or in a range using the <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> method. Depending on the value of the <xref:System.Windows.Controls.Calendar.SelectionMode%2A> property, adding a date or range to the collection may cause it to be cleared. The following table lists how <xref:System.Windows.Controls.CalendarSelectionMode> affects the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property.  
+ 
 |CalendarSelectionMode|Description|  
 |---------------------------|-----------------|  
 |<xref:System.Windows.Controls.CalendarSelectionMode>|No selections are allowed. <xref:System.Windows.Controls.Calendar.SelectedDate%2A> cannot be set and no values can be added to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
 |<xref:System.Windows.Controls.CalendarSelectionMode>|Only a single date can be selected, either by setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> or the first value in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> cannot be used.|  
 |<xref:System.Windows.Controls.CalendarSelectionMode>|A single range of dates can be selected. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A>, adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will clear all previous values from <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
 |<xref:System.Windows.Controls.CalendarSelectionMode>|Multiple non-contiguous ranges of dates can be selected. Adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A> or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will not clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> will still clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, but additional dates or ranges can then be added. Adding a range that includes some dates that are already selected or overlaps with another range results in the union of the ranges and does not cause an exception.|  
-  
+ 
 <a name="xamlPropertyElementUsage_SelectedDates"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-  <object.SelectedDates>  
-    oneOrMoreDateTimeObjects  
-  </object.SelectedDates>  
+ <object.SelectedDates>  
+   oneOrMoreDateTimeObjects  
+ </object.SelectedDates>  
 </object>  
-  
+ 
 ```  
-  
+ 
 <a name="xamlValues_SelectedDates"></a>   
 ## XAML Values  
- *oneOrMoreDateTimeObjects*  
- One or more <xref:System.DateTime> object elements.  
+*oneOrMoreDateTimeObjects*  
+One or more <xref:System.DateTime> object elements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Calendar> that has multiple ranges of dates selected.  
-  
- [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
- [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
-  
+The following example creates a <xref:System.Windows.Controls.Calendar> that has multiple ranges of dates selected.  
+ 
+[!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+[!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+[!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1221,16 +1221,16 @@ Calendar with dates that cannot be selected
         <summary>Occurs when the collection returned by the <see cref="P:System.Windows.Controls.Calendar.SelectedDates" /> property is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SelectedDatesChanged"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <Calendar SelectedDatesChanged="eventhandler"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1269,34 +1269,34 @@ Calendar with dates that cannot be selected
         <value>A value that indicates the current selection mode. The default is <see cref="F:System.Windows.Controls.CalendarSelectionMode.SingleDate" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_SelectionMode"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.SelectionModeProperty>|  
 |Metadata properties set to **true**|None|  
-  
- This property determines whether the <xref:System.Windows.Controls.Calendar> allows no selection, selection of a single date, or selection of multiple dates. The selection mode is specified with the <xref:System.Windows.Controls.CalendarSelectionMode> enumeration.  
-  
- When this property is changed, all selected dates will be cleared.  
-  
+ 
+This property determines whether the <xref:System.Windows.Controls.Calendar> allows no selection, selection of a single date, or selection of multiple dates. The selection mode is specified with the <xref:System.Windows.Controls.CalendarSelectionMode> enumeration.  
+ 
+When this property is changed, all selected dates will be cleared.  
+ 
 <a name="xamlAttributeUsage_SelectionMode"></a>   
 ## XAML Attribute Usage  
- \<Calendar **SelectionMode**="<xref:System.Windows.Controls.CalendarSelectionMode>"/>  
+\<Calendar **SelectionMode**="<xref:System.Windows.Controls.CalendarSelectionMode>"/>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Calendar> that has multiple ranges of dates selected.  
-  
- [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
- [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
-  
+The following example creates a <xref:System.Windows.Controls.Calendar> that has multiple ranges of dates selected.  
+ 
+[!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+[!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+[!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

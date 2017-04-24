@@ -94,10 +94,10 @@
         <returns>The new template field.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateTemplateField%2A> method is invoked when you click on the link to convert a data field into a <xref:System.Web.UI.WebControls.TemplateField> in the fields editor.  
-  
+The <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateTemplateField%2A> method is invoked when you click on the link to convert a data field into a <xref:System.Web.UI.WebControls.TemplateField> in the fields editor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <returns>A unique ID for the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetNewDataSourceName%2A> method is a helper method that can be used by the <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateTemplateField%2A> method to generate unique IDs for the controls that are created when you click the link to convert a data field into a <xref:System.Web.UI.WebControls.TemplateField> in the fields editor.  
-  
+The <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetNewDataSourceName%2A> method is a helper method that can be used by the <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateTemplateField%2A> method to generate unique IDs for the controls that are created when you click the link to convert a data field into a <xref:System.Web.UI.WebControls.TemplateField> in the fields editor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <returns>The new template field.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetTemplateField%2A> method is a helper method that can be used by the <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateTemplateField%2A> method to create a new <xref:System.Web.UI.WebControls.TemplateField> object and initialize its properties using the specified data field properties.  
-  
+The <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetTemplateField%2A> method is a helper method that can be used by the <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateTemplateField%2A> method to create a new <xref:System.Web.UI.WebControls.TemplateField> object and initialize its properties using the specified data field properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

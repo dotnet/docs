@@ -13,10 +13,10 @@
     <summary>Specifies the requested accuracy level for the location data that the application uses.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The requested accuracy can be specified in the constructor for <xref:System.Device.Location.GeoCoordinateWatcher>. If not specified, the <xref:System.Device.Location.GeoCoordinateWatcher> is created with an accuracy level of Default. An accuracy level of High may degrade system performance and should be used only when necessary.  
-  
+The requested accuracy can be specified in the constructor for <xref:System.Device.Location.GeoCoordinateWatcher>. If not specified, the <xref:System.Device.Location.GeoCoordinateWatcher> is created with an accuracy level of Default. An accuracy level of High may degrade system performance and should be used only when necessary.  
+ 
  ]]></format>
     </remarks>
   </Docs>

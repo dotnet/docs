@@ -23,12 +23,12 @@
     <summary>Serves as the base class for classes that provide access to files that were uploaded by a client.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpFileCollectionBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpFileCollection> class. The <xref:System.Web.HttpFileCollectionBase> class lets you create derived classes that are like the <xref:System.Web.HttpFileCollection> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario that you are testing.  
-  
- The <xref:System.Web.HttpFileCollectionWrapper> class derives from the <xref:System.Web.HttpFileCollectionBase> class. The <xref:System.Web.HttpFileCollectionWrapper> class serves as a wrapper for the <xref:System.Web.HttpFileCollection> class. At run time, you typically use an instance of the <xref:System.Web.HttpFileCollectionWrapper> class to call members of the <xref:System.Web.HttpFileCollection> object.  
-  
+The <xref:System.Web.HttpFileCollectionBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpFileCollection> class. The <xref:System.Web.HttpFileCollectionBase> class lets you create derived classes that are like the <xref:System.Web.HttpFileCollection> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario that you are testing.  
+ 
+The <xref:System.Web.HttpFileCollectionWrapper> class derives from the <xref:System.Web.HttpFileCollectionBase> class. The <xref:System.Web.HttpFileCollectionWrapper> class serves as a wrapper for the <xref:System.Web.HttpFileCollection> class. At run time, you typically use an instance of the <xref:System.Web.HttpFileCollectionWrapper> class to call members of the <xref:System.Web.HttpFileCollection> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>

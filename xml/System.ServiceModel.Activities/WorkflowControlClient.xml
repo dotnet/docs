@@ -17,10 +17,10 @@
     <summary>Allows a client to send control operations to a workflow service hosted with <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this class to control a workflow instance.  
-  
+Use this class to control a workflow instance.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,12 +57,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowControlClient" /> class with the specified <see cref="T:System.ServiceModel.Activities.WorkflowControlEndpoint" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.ServiceModel.Activities.WorkflowControlClient> instance using this constructor.  
-  
- [!code-csharp[ManagementEndpoint#2](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#2)]  
-  
+The following example shows how to create a <xref:System.ServiceModel.Activities.WorkflowControlClient> instance using this constructor.  
+ 
+[!code-csharp[ManagementEndpoint#2](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,12 +84,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowControlClient" /> class with the specified endpoint configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this constructor.  
-  
- [!code-csharp[ManagementEndpoint#3](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#3)]  
-  
+The following example shows how to use this constructor.  
+ 
+[!code-csharp[ManagementEndpoint#3](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,12 +113,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowControlClient" /> class with the specified binding, and <see cref="T:System.ServiceModel.Activities.WorkflowControlEndpoint" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this constructor.  
-  
- [!code-csharp[ManagementEndpoint#1](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#1)]  
-  
+The following example shows how to use this constructor.  
+ 
+[!code-csharp[ManagementEndpoint#1](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,12 +142,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowControlClient" /> class with the specified endpoint configuration and <see cref="T:System.ServiceModel.EndpointAddress" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this constructor.  
-  
- [!code-csharp[ManagementEndpoint#4](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#4)]  
-  
+The following example shows how to use this constructor.  
+ 
+[!code-csharp[ManagementEndpoint#4](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,12 +171,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowControlClient" /> class with the specified endpoint configuration and endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this constructor.  
-  
- [!code-csharp[ManagementEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#5)]  
-  
+The following example shows how to use this constructor.  
+ 
+[!code-csharp[ManagementEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,12 +201,12 @@
         <summary>Abandons the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to abandon a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
-  
- [!code-csharp[ManagementEndpoint#6](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#6)]  
-  
+The following example shows how to abandon a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
+ 
+[!code-csharp[ManagementEndpoint#6](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,12 +233,12 @@
         <summary>Abandons the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to abandon a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
-  
- [!code-csharp[ManagementEndpoint#7](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#7)]  
-  
+The following example shows how to abandon a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
+ 
+[!code-csharp[ManagementEndpoint#7](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -612,12 +612,12 @@
         <summary>Cancels the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to cancel a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
-  
- [!code-csharp[ManagementEndpoint#8](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#8)]  
-  
+The following example shows how to cancel a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
+ 
+[!code-csharp[ManagementEndpoint#8](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -829,12 +829,12 @@
         <summary>Runs the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to run a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
-  
- [!code-csharp[ManagementEndpoint#9](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#9)]  
-  
+The following example shows how to run a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
+ 
+[!code-csharp[ManagementEndpoint#9](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -920,12 +920,12 @@
         <summary>Suspends the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to suspend a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
-  
- [!code-csharp[ManagementEndpoint#10](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#10)]  
-  
+The following example shows how to suspend a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
+ 
+[!code-csharp[ManagementEndpoint#10](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -952,12 +952,12 @@
         <summary>Suspends the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to suspend a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
-  
- [!code-csharp[ManagementEndpoint#11](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#11)]  
-  
+The following example shows how to suspend a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
+ 
+[!code-csharp[ManagementEndpoint#11](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1091,12 +1091,12 @@
         <summary>Terminates the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to terminate a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
-  
- [!code-csharp[ManagementEndpoint#12](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#12)]  
-  
+The following example shows how to terminate a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
+ 
+[!code-csharp[ManagementEndpoint#12](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1123,12 +1123,12 @@
         <summary>Terminates the specified workflow instance with the specified reason.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to terminate a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
-  
- [!code-csharp[ManagementEndpoint#13](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#13)]  
-  
+The following example shows how to terminate a workflow instance with the <xref:System.ServiceModel.Activities.WorkflowControlClient>.  
+ 
+[!code-csharp[ManagementEndpoint#13](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1262,12 +1262,12 @@
         <summary>Unsuspends the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to unsuspend a workflow instance using the <xref:System.ServiceModel.Activities.WorkflowControlClient.Unsuspend%2A> method.  
-  
- [!code-csharp[ManagementEndpoint#1](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#1)]  
-  
+The following example shows how to unsuspend a workflow instance using the <xref:System.ServiceModel.Activities.WorkflowControlClient.Unsuspend%2A> method.  
+ 
+[!code-csharp[ManagementEndpoint#1](~/samples/snippets/csharp/VS_Snippets_CFX/managementendpoint/cs/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

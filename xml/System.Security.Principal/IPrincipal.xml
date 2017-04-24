@@ -25,12 +25,12 @@
     <summary>Defines the basic functionality of a principal object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A principal object represents the security context of the user on whose behalf the code is running, including that user's identity (<xref:System.Security.Principal.IIdentity>) and any roles to which they belong.  
-  
- All principal objects are required to implement the <xref:System.Security.Principal.IPrincipal> interface. For more information about <xref:System.Security.Principal.IPrincipal> implementations, see the <xref:System.Security.Claims.ClaimsPrincipal> class.  
-  
+A principal object represents the security context of the user on whose behalf the code is running, including that user's identity (<xref:System.Security.Principal.IIdentity>) and any roles to which they belong.  
+ 
+All principal objects are required to implement the <xref:System.Security.Principal.IPrincipal> interface. For more information about <xref:System.Security.Principal.IPrincipal> implementations, see the <xref:System.Security.Claims.ClaimsPrincipal> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>

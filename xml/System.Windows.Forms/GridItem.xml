@@ -14,12 +14,12 @@
     <summary>Implements one row in a <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Grid items represent the hierarchy of the view into a <xref:System.Windows.Forms.PropertyGrid>. You can use a <xref:System.Windows.Forms.GridItem> to obtain information about the grid's state and contents.  
-  
- <xref:System.Windows.Forms.GridItem> objects should not be cached because they represent a snapshot of the state of the <xref:System.Windows.Forms.PropertyGrid> at the time they are accessed, and grid activity might dispose them. The <xref:System.Windows.Forms.PropertyGrid> often recreates <xref:System.Windows.Forms.GridItem> objects internally without changing the view to the user.  
-  
+Grid items represent the hierarchy of the view into a <xref:System.Windows.Forms.PropertyGrid>. You can use a <xref:System.Windows.Forms.GridItem> to obtain information about the grid's state and contents.  
+ 
+<xref:System.Windows.Forms.GridItem> objects should not be cached because they represent a snapshot of the state of the <xref:System.Windows.Forms.PropertyGrid> at the time they are accessed, and grid activity might dispose them. The <xref:System.Windows.Forms.PropertyGrid> often recreates <xref:System.Windows.Forms.GridItem> objects internally without changing the view to the user.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
           <see langword="true" /> if the specified property can be expanded; otherwise, <see langword="false" />. The default is false.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a property is expandable, a plus (+) sign is displayed by the property name in the <xref:System.Windows.Forms.PropertyGrid>. If the plus sign is clicked and no nested properties are available, the plus sign is then removed.  
-  
+If a property is expandable, a plus (+) sign is displayed by the property name in the <xref:System.Windows.Forms.PropertyGrid>. If the plus sign is clicked and no nested properties are available, the plus sign is then removed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.GridItemType" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a <xref:System.Windows.Forms.GridItem> of type <xref:System.Windows.Forms.GridItemType?displayProperty=fullName>, you must also ensure that the <xref:System.Windows.Forms.GridItem.PropertyDescriptor%2A> has a valid value. For a <xref:System.Windows.Forms.GridItem> of type <xref:System.Windows.Forms.GridItemType?displayProperty=fullName> the <xref:System.Windows.Forms.GridItem.Parent%2A> property must be `null`.  
-  
+For a <xref:System.Windows.Forms.GridItem> of type <xref:System.Windows.Forms.GridItemType?displayProperty=fullName>, you must also ensure that the <xref:System.Windows.Forms.GridItem.PropertyDescriptor%2A> has a valid value. For a <xref:System.Windows.Forms.GridItem> of type <xref:System.Windows.Forms.GridItemType?displayProperty=fullName> the <xref:System.Windows.Forms.GridItem.Parent%2A> property must be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <value>A <see cref="T:System.String" /> representing the text associated with this <see cref="T:System.Windows.Forms.GridItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class gets the text that displays in the left column of the grid. The text retrieved can be different from the actual property name of the property represented by this <xref:System.Windows.Forms.GridItem>. You can get the name for a <xref:System.Windows.Forms.GridItem> of type <xref:System.Windows.Forms.GridItemType?displayProperty=fullName> by retrieving the <xref:System.Windows.Forms.GridItem.PropertyDescriptor%2A> and checking its <xref:System.ComponentModel.MemberDescriptor.Name%2A> property.  
-  
+This class gets the text that displays in the left column of the grid. The text retrieved can be different from the actual property name of the property represented by this <xref:System.Windows.Forms.GridItem>. You can get the name for a <xref:System.Windows.Forms.GridItem> of type <xref:System.Windows.Forms.GridItemType?displayProperty=fullName> by retrieving the <xref:System.Windows.Forms.GridItem.PropertyDescriptor%2A> and checking its <xref:System.ComponentModel.MemberDescriptor.Name%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <value>A <see cref="T:System.Windows.Forms.GridItem" /> representing the parent of the <see cref="T:System.Windows.Forms.GridItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Forms.GridItem.GridItemType%2A> for the <xref:System.Windows.Forms.GridItem> is <xref:System.Windows.Forms.GridItemType?displayProperty=fullName>, this value will be `null`.  
-  
+If the <xref:System.Windows.Forms.GridItem.GridItemType%2A> for the <xref:System.Windows.Forms.GridItem> is <xref:System.Windows.Forms.GridItemType?displayProperty=fullName>, this value will be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,12 +195,12 @@
         <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> associated with this <see cref="T:System.Windows.Forms.GridItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only valid for a <xref:System.Windows.Forms.GridItem> of type <xref:System.Windows.Forms.GridItemType?displayProperty=fullName>.  
-  
- You can use this property to retrieve information such as the property type of the grid item, the name of the grid item, or the type converter for the grid item.  
-  
+This property is only valid for a <xref:System.Windows.Forms.GridItem> of type <xref:System.Windows.Forms.GridItemType?displayProperty=fullName>.  
+ 
+You can use this property to retrieve information such as the property type of the grid item, the name of the grid item, or the type converter for the grid item.  
+ 
  ]]></format>
         </remarks>
       </Docs>

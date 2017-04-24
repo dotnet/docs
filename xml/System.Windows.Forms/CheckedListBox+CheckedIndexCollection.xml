@@ -18,12 +18,12 @@
     <summary>Encapsulates the collection of indexes of checked items (including items in an indeterminate state) in a <see cref="T:System.Windows.Forms.CheckedListBox" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The checked indexes collection is a subset of the indexes into the collection of all items in the <xref:System.Windows.Forms.CheckedListBox> control. These indexes specify items in a checked or indeterminate state.  
-  
- The following table is an example of the indexed collection of items in the control (all items contained in the control).  
-  
+The checked indexes collection is a subset of the indexes into the collection of all items in the <xref:System.Windows.Forms.CheckedListBox> control. These indexes specify items in a checked or indeterminate state.  
+ 
+The following table is an example of the indexed collection of items in the control (all items contained in the control).  
+ 
 |Index|Item|Check State|  
 |-----------|----------|-----------------|  
 |0|object 1|<xref:System.Windows.Forms.CheckState>|  
@@ -31,30 +31,30 @@
 |2|object 3|<xref:System.Windows.Forms.CheckState>|  
 |3|object 4|<xref:System.Windows.Forms.CheckState>|  
 |4|object 5|<xref:System.Windows.Forms.CheckState>|  
-  
- Based on the previous example, the following table shows the indexed collection of indexes of checked items.  
-  
+ 
+Based on the previous example, the following table shows the indexed collection of indexes of checked items.  
+ 
 |Index|Index of Item|  
 |-----------|-------------------|  
 |0|1|  
 |1|3|  
 |2|4|  
+ 
+The <xref:System.Windows.Forms.CheckedListBox> class has two members that allow you to access the stored indexes, the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.Item%2A> property and the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.IndexOf%2A> method.  
+ 
+Based on the previous example, a call to the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.Item%2A> property with a parameter value of 1 returns a value of 3. A call to <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.IndexOf%2A> with a parameter of 3 returns a value of 1.  
+ 
   
- The <xref:System.Windows.Forms.CheckedListBox> class has two members that allow you to access the stored indexes, the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.Item%2A> property and the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.IndexOf%2A> method.  
-  
- Based on the previous example, a call to the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.Item%2A> property with a parameter value of 1 returns a value of 3. A call to <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.IndexOf%2A> with a parameter of 3 returns a value of 1.  
-  
-   
-  
+ 
 ## Examples  
- The following example enumerates the checked items in the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> to see what check state an item is in. The example demonstrates using the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to set the check state of an item. The example also demonstrates using the <xref:System.Windows.Forms.CheckedListBox.CheckedIndices%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, and the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedItemCollection>.  
-  
- The first loop uses the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to get the <xref:System.Windows.Forms.CheckState> of each checked item, given the index of the item. The second loop also uses <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A>, but uses the <xref:System.Windows.Forms.ListBox.ObjectCollection.IndexOf%2A?displayProperty=fullName> method to retrieve the index for the item.  
-  
- [!code-cpp[CheckedListBox#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckedListBox/CPP/source.cpp#2)]
- [!code-csharp[CheckedListBox#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckedListBox/CS/source.cs#2)]
- [!code-vb[CheckedListBox#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckedListBox/VB/source.vb#2)]  
-  
+The following example enumerates the checked items in the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> to see what check state an item is in. The example demonstrates using the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to set the check state of an item. The example also demonstrates using the <xref:System.Windows.Forms.CheckedListBox.CheckedIndices%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, and the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedItemCollection>.  
+ 
+The first loop uses the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to get the <xref:System.Windows.Forms.CheckState> of each checked item, given the index of the item. The second loop also uses <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A>, but uses the <xref:System.Windows.Forms.ListBox.ObjectCollection.IndexOf%2A?displayProperty=fullName> method to retrieve the index for the item.  
+ 
+[!code-cpp[CheckedListBox#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckedListBox/CPP/source.cpp#2)]
+[!code-csharp[CheckedListBox#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckedListBox/CS/source.cs#2)]
+[!code-vb[CheckedListBox#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckedListBox/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
           <see langword="true" /> if the specified index from the <see cref="T:System.Windows.Forms.CheckedListBox.ObjectCollection" /> is an item in this collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to determine whether an index from the <xref:System.Windows.Forms.CheckedListBox.Items%2A> collection is in the <xref:System.Windows.Forms.CheckedListBox.CheckedIndices%2A> collection.  
-  
+You can use this method to determine whether an index from the <xref:System.Windows.Forms.CheckedListBox.Items%2A> collection is in the <xref:System.Windows.Forms.CheckedListBox.CheckedIndices%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to combine the selected indexes from multiple collections into a single array.  
-  
+You can use this method to combine the selected indexes from multiple collections into a single array.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -185,10 +185,10 @@
         <returns>The index that specifies the index of the checked item or -1 if the <paramref name="index" /> parameter is not in the checked indexes collection. For more information, see the examples in the <see cref="T:System.Windows.Forms.CheckedListBox.CheckedIndexCollection" /> class overview.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `index` parameter is the index of a checked item in the items collection. The return value is the corresponding index into the checked indexes collection.  
-  
+The `index` parameter is the index of a checked item in the items collection. The return value is the corresponding index into the checked indexes collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
         <value>The index of the checked item. For more information, see the examples in the <see cref="T:System.Windows.Forms.CheckedListBox.CheckedIndexCollection" /> class overview.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `index` parameter is an index into the checked indexes collection. The return value is the corresponding indexed value, which is the index of the checked item in the items collection.  
-  
+The `index` parameter is an index into the checked indexes collection. The return value is the corresponding indexed value, which is the index of the checked item in the items collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="index" /> is less than zero.  
@@ -272,10 +272,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
         <value>The <see cref="T:System.Object" /> used to synchronize to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
         <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To add an item to the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
-  
+You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To add an item to the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -352,10 +352,10 @@
         <summary>Removes all items from the <see cref="T:System.Windows.Forms.CheckedListBox.CheckedIndexCollection" />. For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To clear the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
-  
+You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To clear the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -383,10 +383,10 @@
           <see langword="true" /> if the specified index from the <see cref="T:System.Windows.Forms.CheckedListBox.ObjectCollection" /> for the <see cref="T:System.Windows.Forms.CheckedListBox" /> is an item in this collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -435,10 +435,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To add an item to the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
-  
+You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To add an item to the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -462,10 +462,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -491,10 +491,10 @@
         <value>The index value from the <see cref="T:System.Windows.Forms.CheckedListBox.ObjectCollection" /> that is stored at the specified location.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -519,10 +519,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To remove an item from the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
-  
+You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To remove an item from the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -548,10 +548,10 @@
         <summary>or a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To remove an item from the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
-  
+You cannot change the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> class directly. To remove an item from the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, use the <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> or <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>

@@ -14,10 +14,10 @@
     <summary>Represents the configuration section that contains child entries that are <see langword="behavior" /> elements identified by their unique <see langword="name" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `behavior` element contains a collection of settings for the behavior of a service. Each behavior is indexed by its `name`. Services use behaviors by linking to them using this name.  
-  
+A `behavior` element contains a collection of settings for the behavior of a service. Each behavior is indexed by its `name`. Services use behaviors by linking to them using this name.  
+ 
  ]]></format>
     </remarks>
   </Docs>

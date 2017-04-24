@@ -14,22 +14,22 @@
     <summary>Provides support for the behavior that enables [!INCLUDE[indigo1](~/includes/indigo1-md.md)] endpoints to receive HTTP requests from a browser-based ASP.NET AJAX client. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When applied to an endpoint, the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior enables [!INCLUDE[indigo2](~/includes/indigo2-md.md)] and ASP.NET AJAX integration, except for the support required for JavaScript Object Notation (JSON) encoding. Various types of encoding, including JSON, are enabled by the <xref:System.ServiceModel.Configuration.WebMessageEncodingElement> or by an appropriately configured <xref:System.ServiceModel.WebHttpBinding>. The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior implements the <xref:System.ServiceModel.Description.IEndpointBehavior> and inherits from <xref:System.ServiceModel.Description.WebHttpBehavior>, which enables the more general Web programming model for [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services exposing non-SOAP endpoints.  
-  
- Specifically, the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>:  
-  
+When applied to an endpoint, the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior enables [!INCLUDE[indigo2](~/includes/indigo2-md.md)] and ASP.NET AJAX integration, except for the support required for JavaScript Object Notation (JSON) encoding. Various types of encoding, including JSON, are enabled by the <xref:System.ServiceModel.Configuration.WebMessageEncodingElement> or by an appropriately configured <xref:System.ServiceModel.WebHttpBinding>. The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior implements the <xref:System.ServiceModel.Description.IEndpointBehavior> and inherits from <xref:System.ServiceModel.Description.WebHttpBehavior>, which enables the more general Web programming model for [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services exposing non-SOAP endpoints.  
+ 
+Specifically, the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>:  
+ 
 -   Enables the HTTP programming model, including dispatch to operations based on a URL suffix, support for HTTP verb selection (POST or GET) and HTTP cache duration control. [!INCLUDE[crabout](~/includes/crabout-md.md)] the HTTP programming model, see [WCF Web HTTP Programming Model Overview](~/docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md). Note that the default HTTP verb is POST when using this behavior.  
-  
+ 
 -   Enables the correct formatter for each operation's request and response messages - for example, support for URL parameters.  
-  
+ 
 -   Enables the JavaScript Proxy endpoint.  
-  
- To call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service from an ASP.NET AJAX client, the service must be configured with the <xref:System.ServiceModel.WebHttpBinding> binding and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> must be added to the endpoint behavior collection. This can be done either in configuration by adding the <xref:System.ServiceModel.Configuration.WebScriptEnablingElement> or without using configuration by activating the AJAX endpoint with the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> instead of the default factory in the [@ServiceHost](~/docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] different ways to enable a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service to respond to ASP.NET AJAX clients, see [Creating WCF Services for ASP.NET AJAX](~/docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
-  
+ 
+To call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service from an ASP.NET AJAX client, the service must be configured with the <xref:System.ServiceModel.WebHttpBinding> binding and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> must be added to the endpoint behavior collection. This can be done either in configuration by adding the <xref:System.ServiceModel.Configuration.WebScriptEnablingElement> or without using configuration by activating the AJAX endpoint with the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> instead of the default factory in the [@ServiceHost](~/docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] different ways to enable a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service to respond to ASP.NET AJAX clients, see [Creating WCF Services for ASP.NET AJAX](~/docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,12 +48,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WebScriptEnablingBehavior" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultBodyStyle%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
-  
- Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingRequestFormat%2A> and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingResponseFormat%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
-  
+Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultBodyStyle%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
+ 
+Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingRequestFormat%2A> and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingResponseFormat%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@
         <summary>Applies the behavior to the client across an endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implements the <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%28System.ServiceModel.Description.ServiceEndpoint%2CSystem.ServiceModel.Dispatcher.ClientRuntime%29> method to view, modify, or add custom extension to the client runtime across all messages used with an endpoint or for specific operations.  
-  
+Implements the <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%28System.ServiceModel.Description.ServiceEndpoint%2CSystem.ServiceModel.Dispatcher.ClientRuntime%29> method to view, modify, or add custom extension to the client runtime across all messages used with an endpoint or for specific operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <summary>Applies the behavior to the service endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normally, this method is called by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] automatically when the behavior is applied to an endpoint. So there is no need to call this method manually.  
-  
+Normally, this method is called by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] automatically when the behavior is applied to an endpoint. So there is no need to call this method manually.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
           <see langword="true" /> if automatic format selection is enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] automatic format selection, see [WCF Web HTTP Formatting](~/docs/framework/wcf/feature-details/wcf-web-http-formatting.md).  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] automatic format selection, see [WCF Web HTTP Formatting](~/docs/framework/wcf/feature-details/wcf-web-http-formatting.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,10 +207,10 @@
         <value>The <see cref="F:System.ServiceModel.Web.WebMessageBodyStyle.WrappedRequest" /> value. This default value is the only valid value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Web.WebMessageBodyStyle> value is the only <xref:System.ServiceModel.Web.WebMessageBodyStyle> supported and setting any other value results in a <xref:System.NotSupportedException> being thrown.  
-  
+The <xref:System.ServiceModel.Web.WebMessageBodyStyle> value is the only <xref:System.ServiceModel.Web.WebMessageBodyStyle> supported and setting any other value results in a <xref:System.NotSupportedException> being thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The body style set is not supported.</exception>
@@ -312,10 +312,10 @@
           <see langword="true" /> if the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST Help page is enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST Help page, see [WCF Web HTTP Service Help Page](~/docs/framework/wcf/feature-details/wcf-web-http-service-help-page.md).  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST Help page, see [WCF Web HTTP Service Help Page](~/docs/framework/wcf/feature-details/wcf-web-http-service-help-page.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,10 +340,10 @@
         <summary>Confirms that the endpoint meets the requirements that allow it to function as an ASP.NET AJAX endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Verifies that the endpoint is not `null`, uses the HTTP or HTTPS schemes, does not use the <xref:System.Xml.Serialization.XmlSerializer>, uses either the HTTP GET or POST verb, that the <xref:System.ServiceModel.Channels.MessageVersion> of the binding is set to <xref:System.ServiceModel.Channels.MessageVersion.None%2A>, and that the binding contains a <xref:System.ServiceModel.Channels.TransportBindingElement> where <xref:System.ServiceModel.Channels.TransportBindingElement.ManualAddressing%2A> is set to `true`. This method also checks that there are no SOAP headers or wrapper names on the methods, or other unsupported aspects of the operations.  
-  
+Verifies that the endpoint is not `null`, uses the HTTP or HTTPS schemes, does not use the <xref:System.Xml.Serialization.XmlSerializer>, uses either the HTTP GET or POST verb, that the <xref:System.ServiceModel.Channels.MessageVersion> of the binding is set to <xref:System.ServiceModel.Channels.MessageVersion.None%2A>, and that the binding contains a <xref:System.ServiceModel.Channels.TransportBindingElement> where <xref:System.ServiceModel.Channels.TransportBindingElement.ManualAddressing%2A> is set to `true`. This method also checks that there are no SOAP headers or wrapper names on the methods, or other unsupported aspects of the operations.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The endpoint does not meet one of the requirements for being an ASP.NET AJAX endpoint.</exception>

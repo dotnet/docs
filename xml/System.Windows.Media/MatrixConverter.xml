@@ -14,17 +14,17 @@
     <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Media.Matrix" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a <xref:System.Windows.Media.MatrixConverter> to create a <xref:System.Windows.Media.Matrix> from an attribute string; use a <xref:System.Windows.Media.Converters.MatrixValueSerializer> to create a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of a <xref:System.Windows.Media.Matrix> structure.  
+Use a <xref:System.Windows.Media.MatrixConverter> to create a <xref:System.Windows.Media.Matrix> from an attribute string; use a <xref:System.Windows.Media.Converters.MatrixValueSerializer> to create a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of a <xref:System.Windows.Media.Matrix> structure.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses a <xref:System.Windows.Media.MatrixConverter> to convert a string into a <xref:System.Windows.Media.Matrix>.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixConverterExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixconverterexample_csharp)]  
-  
+The following example uses a <xref:System.Windows.Media.MatrixConverter> to convert a string into a <xref:System.Windows.Media.Matrix>.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixConverterExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixconverterexample_csharp)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -119,10 +119,10 @@
         <returns>The <see cref="T:System.Windows.Media.Matrix" /> created from converting <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.MatrixConverter.CanConvertFrom%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.MatrixConverter.CanConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The specified object is null or is a type that cannot be converted to a <see cref="T:System.Windows.Media.Matrix" />.</exception>
@@ -155,10 +155,10 @@
         <returns>The object created from converting this <see cref="T:System.Windows.Media.Matrix" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.MatrixConverter.CanConvertTo%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.MatrixConverter.CanConvertTo%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <paramref name="value" /> is null or is not a <see cref="T:System.Windows.Media.Matrix" />, or the <paramref name="destinationType" /> is not a valid conversion type.</exception>

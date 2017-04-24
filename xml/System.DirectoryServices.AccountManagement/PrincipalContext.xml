@@ -23,10 +23,10 @@
     <summary>Encapsulates the server or domain against which all operations are performed, the container that is used as the base of those operations, and the credentials used to perform the operations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For search operations, the principal context defines the search base, and for insert operations the context defines the container into which the object is inserted.  
-  
+For search operations, the principal context defines the search base, and for insert operations the context defines the container into which the object is inserted.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,10 +102,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type, name, and container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
-  
+The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A container cannot be specified when the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type is specified in the <paramref name="contextType" /> parameter.  
@@ -143,10 +143,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type, name, container, and context options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
-  
+The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A container cannot be specified when the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type is specified in the <paramref name="contextType" /> parameter.  
@@ -218,10 +218,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type, name, container, username, and password.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
-  
+The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="username" /> and <paramref name="password" /> parameters must either be null or contain a value.  
@@ -265,10 +265,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type, name, container, context options, username, and password.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
-  
+The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="username" /> and <paramref name="password" /> parameters must either be null or contain a value.  
@@ -298,10 +298,10 @@
         <value>The name of the server to which the principal context is connected or null if the principal context is not connected to a server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the name of the domain controller or application directory instance. When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the machine name.  
-  
+When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the name of the domain controller or application directory instance. When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the machine name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,10 +323,10 @@
         <value>The container on the store to use as the root of the context or null if the container is not specified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All queries are performed under this root, and all inserts are performed into this container. For <xref:System.DirectoryServices.AccountManagement.ContextType> and <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property is the distinguished name of a container object. For <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property must be null.  
-  
+All queries are performed under this root, and all inserts are performed into this container. For <xref:System.DirectoryServices.AccountManagement.ContextType> and <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property is the distinguished name of a container object. For <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property must be null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,10 +348,10 @@
         <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value specifying the type of target to connect to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used when the application does not directly create the principal context and specify the context type. For example, when the application enumerates group membership, this property can be used to determine the type of store to which the principal belongs.  
-  
+This property is used when the application does not directly create the principal context and specify the context type. For example, when the application enumerates group membership, this property can be used to determine the type of store to which the principal belongs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,10 +427,10 @@
         <value>The username used to connect to the store, or null if no user name exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be set by passing it a user name in any one of various different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
-  
+This property can be set by passing it a user name in any one of various different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,10 +459,10 @@
           <see langword="true" /> if the credentials are valid; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
-  
+The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -493,10 +493,10 @@
           <see langword="true" /> if the credentials are valid; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
-  
+The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify Negotiate when the context type is <see cref="T:System.DirectoryServices.AccountManagement.ContextType.Machine." /></exception>
@@ -511,10 +511,10 @@
         <summary>Creates the connection to the server and validates the specified credentials if the connection is successful.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In each version of this function, the `userName` string can be in one of a variety of different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
-  
+In each version of this function, the `userName` string can be in one of a variety of different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,14 +528,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructors perform validation of the parameters and server, but not do not attempt to validate credentials.  
-  
- When the principal context object is created without specifying a container, it may be used to represent multiple distinct containers. One container may be used as the base of query operations, while additional containers can hold newly-created principal objects. For example, when users or groups are inserted into the domian context type, the Account Management API uses the default well-known user container, "CN=Users,DC=Fabrikam,DC=com". When computers are inserted in the store, the API uses the default "CN=Computers,DC=Fabrikam,DC=com" container. Note that the default container names can be changed by the domain administrator. Since the principal object constructors can only specify one principal context, additional contexts are exposed as the default behavior when the application creates a domain context without specifying a container. Since the application directory does not have well-known containers, the application must specify a container in the constructor or the <xref:System.ArgumentException> is thrown. Since SAM does not have containers, a <xref:System.ArgumentException> is thrown if the application attempts to specify a container in the constructor.  
-  
- In each version of the constructor that takes a user name as a parameter, the `userName` string can be in various different formats.  The three supported NameFormats for are Nt4Name, UserPrincipalName, and SamAccountName.  For more information about name formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
-  
+The <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructors perform validation of the parameters and server, but not do not attempt to validate credentials.  
+ 
+When the principal context object is created without specifying a container, it may be used to represent multiple distinct containers. One container may be used as the base of query operations, while additional containers can hold newly-created principal objects. For example, when users or groups are inserted into the domian context type, the Account Management API uses the default well-known user container, "CN=Users,DC=Fabrikam,DC=com". When computers are inserted in the store, the API uses the default "CN=Computers,DC=Fabrikam,DC=com" container. Note that the default container names can be changed by the domain administrator. Since the principal object constructors can only specify one principal context, additional contexts are exposed as the default behavior when the application creates a domain context without specifying a container. Since the application directory does not have well-known containers, the application must specify a container in the constructor or the <xref:System.ArgumentException> is thrown. Since SAM does not have containers, a <xref:System.ArgumentException> is thrown if the application attempts to specify a container in the constructor.  
+ 
+In each version of the constructor that takes a user name as a parameter, the `userName` string can be in various different formats.  The three supported NameFormats for are Nt4Name, UserPrincipalName, and SamAccountName.  For more information about name formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -28,18 +28,18 @@
     <summary>Indicates that the property grid should refresh when the associated property value changes. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.RefreshPropertiesAttribute> indicates the type of refresh mode to use when refreshing a <xref:System.Windows.Forms.PropertyGrid> control.  
+The <xref:System.ComponentModel.RefreshPropertiesAttribute> indicates the type of refresh mode to use when refreshing a <xref:System.Windows.Forms.PropertyGrid> control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.ComponentModel.RefreshPropertiesAttribute> class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
-  
- [!code-csharp[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#25)]
- [!code-vb[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#25)]  
-  
+The following code example demonstrates using the <xref:System.ComponentModel.RefreshPropertiesAttribute> class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ 
+[!code-csharp[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#25)]
+[!code-vb[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#25)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.RefreshPropertiesAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.RefreshPropertiesAttribute> class is used for refreshing the design-time view.  
-  
+The <xref:System.ComponentModel.RefreshPropertiesAttribute> class is used for refreshing the design-time view.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <summary>Indicates that all properties are queried again and refreshed if the property value is changed. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specify this attribute on a property to query again and refresh all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes. The <xref:System.Windows.Forms.PropertyGrid> caches data. The <xref:System.ComponentModel.RefreshProperties> mode causes the Properties window to query each property again and refresh its view.  
-  
+Specify this attribute on a property to query again and refresh all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes. The <xref:System.Windows.Forms.PropertyGrid> caches data. The <xref:System.ComponentModel.RefreshProperties> mode causes the Properties window to query each property again and refresh its view.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <summary>Indicates that no other properties are refreshed if the property value is changed. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specify this attribute on a property to refresh only the associated property when the property value is changed.  
-  
+Specify this attribute on a property to refresh only the associated property when the property value is changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,10 +281,10 @@
         <summary>Indicates that all properties are repainted if the property value is changed. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specify this attribute on a property to repaint all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes.  
-  
+Specify this attribute on a property to repaint all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -26,45 +26,45 @@
     <summary>Structure that represents a rotation in three dimensions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Quaternions allow you to interpolate between rotation transformations applied to an object, thereby making it easier to compute smooth animations of rotations. A quaternion represents an axis of rotation and a rotation around that axis. It's possible to individually define the axis and angle of rotation of the starting and ending positions of a rotated object ,but the intermediate positions of that object during an animation are computationally uncertain.  By determining a quaternion that represents the original orientation of a 3-D object and one that represents its destination orientation, you can smoothly interpolate between those orientations.  
-  
- In XAML, the delimiter between the values of a <xref:System.Windows.Media.Media3D.Quaternion> can be either a comma or a space.  
-  
- Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Media.Media3D.Quaternion> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Media.Media3D.Quaternion> attribute value into its components.  
-  
+Quaternions allow you to interpolate between rotation transformations applied to an object, thereby making it easier to compute smooth animations of rotations. A quaternion represents an axis of rotation and a rotation around that axis. It's possible to individually define the axis and angle of rotation of the starting and ending positions of a rotated object ,but the intermediate positions of that object during an animation are computationally uncertain.  By determining a quaternion that represents the original orientation of a 3-D object and one that represents its destination orientation, you can smoothly interpolate between those orientations.  
+ 
+In XAML, the delimiter between the values of a <xref:System.Windows.Media.Media3D.Quaternion> can be either a comma or a space.  
+ 
+Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Media.Media3D.Quaternion> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Media.Media3D.Quaternion> attribute value into its components.  
+ 
 <a name="xamlAttributeUsage_Duration"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="x,y,z,w"/>  
 -or-  
 <object property="x y z w"/>  
 ```  
-  
+ 
 <a name="xamlValues_MinWidth"></a>   
 ## XAML Values  
- *x*  
- The <xref:System.Windows.Media.Media3D.Quaternion.X%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
+*x*  
+The <xref:System.Windows.Media.Media3D.Quaternion.X%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
+ 
+*y*  
+The <xref:System.Windows.Media.Media3D.Quaternion.Y%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
+ 
+*z*  
+The <xref:System.Windows.Media.Media3D.Quaternion.Z%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
+ 
+*w*  
+The <xref:System.Windows.Media.Media3D.Quaternion.W%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
+ 
   
- *y*  
- The <xref:System.Windows.Media.Media3D.Quaternion.Y%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
-  
- *z*  
- The <xref:System.Windows.Media.Media3D.Quaternion.Z%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
-  
- *w*  
- The <xref:System.Windows.Media.Media3D.Quaternion.W%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
-  
-   
-  
+ 
 ## Examples  
- [!code-xml[animation3dgallery_snip#QuaternionAnimationExampleInline2](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/QuaternionAnimationExample.xaml#quaternionanimationexampleinline2)]  
-  
- [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn4)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn4)]  
-  
+[!code-xml[animation3dgallery_snip#QuaternionAnimationExampleInline2](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/QuaternionAnimationExample.xaml#quaternionanimationexampleinline2)]  
+ 
+[!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn4)]
+[!code-vb[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Quaternion.W%2A> property of the quaternion is computed automatically.  
-  
+The <xref:System.Windows.Media.Media3D.Quaternion.W%2A> property of the quaternion is computed automatically.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,14 +120,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the axis (x, y, z) and angle of rotation theta, the `w` value for the quaternion is:  
-  
- w = cos(theta/2)  
-  
- Note that if you use the <xref:System.Windows.Media.Media3D.Vector3D> constructor, the fourth parameter is the angle, in degrees, and the w calculation is performed for you.  
-  
+For the axis (x, y, z) and angle of rotation theta, the `w` value for the quaternion is:  
+ 
+w = cos(theta/2)  
+ 
+Note that if you use the <xref:System.Windows.Media.Media3D.Vector3D> constructor, the fourth parameter is the angle, in degrees, and the w calculation is performed for you.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
           <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
+<xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
           <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
+<xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
           <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
+<xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@
         <summary>Returns a normalized quaternion.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws <xref:System.InvalidOperationException> if the quaternion is zero and cannot be normalized.  
-  
+Throws <xref:System.InvalidOperationException> if the quaternion is zero and cannot be normalized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -493,10 +493,10 @@
           <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
+<xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,10 +525,10 @@
           <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
+<xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -603,11 +603,11 @@
           <see cref="T:System.Windows.Media.Media3D.Quaternion" /> represented by the string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[quaternionview#QuaternionView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/QuaternionView/CSharp/Window1.xaml.cs#quaternionview3dn3)]
- [!code-vb[quaternionview#QuaternionView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/QuaternionView/visualbasic/window1.xaml.vb#quaternionview3dn3)]  
-  
+[!code-csharp[quaternionview#QuaternionView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/QuaternionView/CSharp/Window1.xaml.cs#quaternionview3dn3)]
+[!code-vb[quaternionview#QuaternionView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/QuaternionView/visualbasic/window1.xaml.vb#quaternionview3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -640,10 +640,10 @@
           <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the orientation resulting from the interpolation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Spherical linear interpolation is useful for animating a three-dimensional models because it provides smooth transitions between different orientations of the model.  
-  
+Spherical linear interpolation is useful for animating a three-dimensional models because it provides smooth transitions between different orientations of the model.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -678,10 +678,10 @@
           <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the orientation resulting from the interpolation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Spherical linear interpolation is useful for animating a three-dimensional models because it provides smooth transitions between different orientations of the model.  
-  
+Spherical linear interpolation is useful for animating a three-dimensional models because it provides smooth transitions between different orientations of the model.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -800,16 +800,16 @@
         <value>The W component of the quaternion.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 0.  
+The default value is 0.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
-  
+[!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
+[!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -831,16 +831,16 @@
         <value>The X component of the quaternion.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 0.  
+The default value is 0.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
-  
+[!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
+[!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -862,16 +862,16 @@
         <value>The Y component of the quaternion.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 0.  
+The default value is 0.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
-  
+[!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
+[!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -893,16 +893,16 @@
         <value>The Z component of the quaternion.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 0.  
+The default value is 0.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
-  
+[!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
+[!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -916,10 +916,10 @@
         <summary>Creates a string representation of the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `provider` is `null`, the current culture setting is used.  
-  
+If `provider` is `null`, the current culture setting is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

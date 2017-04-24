@@ -14,10 +14,10 @@
     <summary>Provides a way to convert an <see cref="T:System.ServiceModel.Dispatcher.XPathMessageContext" /> to a format that can be serialized as XAML.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.XPathMessageContext> cannot be serialized as XAML. To solve this problem, use the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter> to convert an instance of the <xref:System.ServiceModel.Dispatcher.XPathMessageContext> class to an instance of the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension>.  
-  
+The <xref:System.ServiceModel.Dispatcher.XPathMessageContext> cannot be serialized as XAML. To solve this problem, use the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter> to convert an instance of the <xref:System.ServiceModel.Dispatcher.XPathMessageContext> class to an instance of the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

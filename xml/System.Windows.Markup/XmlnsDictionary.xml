@@ -21,12 +21,12 @@
     <summary>Represents a dictionary that contains xmlns mappings for XAML namespaces in WPF.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Markup.XmlnsDictionary> maps XAML namespace prefixes to the complete XAML namespace URI. For XAML usage in applications and XAML namespaces in general, the URI is often not a schema-style URI that includes `http://`. It is instead a user-defined mapping to a CLR namespace and assembly. That assembly contains the backing types being referred to. For details, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
-  
- The <xref:System.Windows.Markup.XmlnsDictionary> adds the concept of scope for a XAML namespace. A default <xref:System.Collections.IDictionary> might contain prefix keys and XML namespace URI values. The scope concept in <xref:System.Windows.Markup.XmlnsDictionary> parallels the XML concept that a prefix might be redefined. If so, the redefinition only applies at that level or below in a DOM view of the XML (the previous definition applies at higher level in the DOM). The scope concept is mostly abstracted away in the <xref:System.Windows.Markup.XmlnsDictionary> API, such that you can call APIs such as <xref:System.Windows.Markup.XmlnsDictionary.LookupNamespace%2A> without being concerned about scope. However, <xref:System.Windows.Markup.XmlnsDictionary> does expose <xref:System.Windows.Markup.XmlnsDictionary.PushScope%2A> and <xref:System.Windows.Markup.XmlnsDictionary.PopScope%2A> so that a custom <xref:System.Windows.Markup.ParserContext> implementation that changes scope can synchronize with the scope for the <xref:System.Windows.Markup.XmlnsDictionary>.  
-  
+<xref:System.Windows.Markup.XmlnsDictionary> maps XAML namespace prefixes to the complete XAML namespace URI. For XAML usage in applications and XAML namespaces in general, the URI is often not a schema-style URI that includes `http://`. It is instead a user-defined mapping to a CLR namespace and assembly. That assembly contains the backing types being referred to. For details, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+ 
+The <xref:System.Windows.Markup.XmlnsDictionary> adds the concept of scope for a XAML namespace. A default <xref:System.Collections.IDictionary> might contain prefix keys and XML namespace URI values. The scope concept in <xref:System.Windows.Markup.XmlnsDictionary> parallels the XML concept that a prefix might be redefined. If so, the redefinition only applies at that level or below in a DOM view of the XML (the previous definition applies at higher level in the DOM). The scope concept is mostly abstracted away in the <xref:System.Windows.Markup.XmlnsDictionary> API, such that you can call APIs such as <xref:System.Windows.Markup.XmlnsDictionary.LookupNamespace%2A> without being concerned about scope. However, <xref:System.Windows.Markup.XmlnsDictionary> does expose <xref:System.Windows.Markup.XmlnsDictionary.PushScope%2A> and <xref:System.Windows.Markup.XmlnsDictionary.PopScope%2A> so that a custom <xref:System.Windows.Markup.ParserContext> implementation that changes scope can synchronize with the scope for the <xref:System.Windows.Markup.XmlnsDictionary>.  
+ 
 <a name="xamlTextUsage_XmlnsDictionary"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -65,10 +65,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XmlnsDictionary" /> class by using the specified dictionary as a copy source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All values from the source `xmlnsDictionary` including the index entries are copied except for <xref:System.Windows.Markup.XmlnsDictionary.Sealed%2A>, which is set to `false` in the new instance.  
-  
+All values from the source `xmlnsDictionary` including the index entries are copied except for <xref:System.Windows.Markup.XmlnsDictionary.Sealed%2A>, which is set to `false` in the new instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -97,10 +97,10 @@
         <summary>Adds a prefix-URI pair to this <see cref="T:System.Windows.Markup.XmlnsDictionary" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After initial type-checking, this implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Add%2A?displayProperty=fullName>.  
-  
+After initial type-checking, this implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Add%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -260,10 +260,10 @@
         <returns>The namespace that corresponds to the default XML namespace if one exists; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- From a mapping perspective, the default XML namespace is the XML namespace that is mapped to empty string. In WPF XAML parsing for application purposes, the acting default namespace identifier is [!INCLUDE[TLA#tla_wpfxmlnsv1](~/includes/tlasharptla-wpfxmlnsv1-md.md)], but that value is not explicitly returned by this API.  
-  
+From a mapping perspective, the default XML namespace is the XML namespace that is mapped to empty string. In WPF XAML parsing for application purposes, the acting default namespace identifier is [!INCLUDE[TLA#tla_wpfxmlnsv1](~/includes/tlasharptla-wpfxmlnsv1-md.md)], but that value is not explicitly returned by this API.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <returns>The dictionary enumerator for this dictionary.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This API exists so that derived classes can obtain an enumerator where the scoping concept for the XML namespaces is reported as a dimension of the dictionary enumerator.  
-  
+This API exists so that derived classes can obtain an enumerator where the scoping concept for the XML namespaces is reported as a dimension of the dictionary enumerator.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
         <returns>The enumerator for this dictionary.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This API exists so that derived classes can obtain an enumerator. This enumerator provides enumeration over the <xref:System.Windows.Markup.XmlnsDictionary.Keys%2A> collection.  
-  
+This API exists so that derived classes can obtain an enumerator. This enumerator provides enumeration over the <xref:System.Windows.Markup.XmlnsDictionary.Keys%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,10 +384,10 @@
           <see langword="true" /> if the size is fixed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation always returns `false`, even if <xref:System.Windows.Markup.XmlnsDictionary.IsReadOnly%2A> is `true`.  
-  
+This implementation always returns `false`, even if <xref:System.Windows.Markup.XmlnsDictionary.IsReadOnly%2A> is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -410,10 +410,10 @@
           <see langword="true" /> if the dictionary is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.XmlnsDictionary> is read-only after <xref:System.Windows.Markup.XmlnsDictionary.Seal%2A> is called.  
-  
+The <xref:System.Windows.Markup.XmlnsDictionary> is read-only after <xref:System.Windows.Markup.XmlnsDictionary.Seal%2A> is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -458,9 +458,9 @@
         <value>The corresponding XAML namespace URI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Object"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -524,9 +524,9 @@
         <value>The collection of all the keys in the dictionary.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Keys"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -578,10 +578,10 @@
         <returns>The XML prefix that corresponds to the given namespace; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you request the prefix for the default namespace, an empty string is returned.  
-  
+If you request the prefix for the default namespace, an empty string is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -605,10 +605,10 @@
         <summary>Pops the scope of the <see cref="T:System.Windows.Markup.XmlnsDictionary" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method only if you are implementing a <xref:System.Windows.Markup.ParserContext> that also works at an element scope level.  
-  
+Use this method only if you are implementing a <xref:System.Windows.Markup.ParserContext> that also works at an element scope level.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Markup.XmlnsDictionary" /> is sealed.</exception>
@@ -631,10 +631,10 @@
         <summary>Pushes the scope of the <see cref="T:System.Windows.Markup.XmlnsDictionary" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method only if you are implementing a <xref:System.Windows.Markup.ParserContext> that also works at an element scope level.  
-  
+Use this method only if you are implementing a <xref:System.Windows.Markup.ParserContext> that also works at an element scope level.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Markup.XmlnsDictionary" /> is sealed.</exception>
@@ -660,10 +660,10 @@
         <summary>Removes the item with the specified prefix key from the <see cref="T:System.Windows.Markup.XmlnsDictionary" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Remove%28System.String%29?displayProperty=fullName>.  
-  
+This implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Remove%28System.String%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Markup.XmlnsDictionary" /> is sealed.</exception>
@@ -708,10 +708,10 @@
         <summary>Locks the dictionary so that it cannot be changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This must be done before setting the <xref:System.Windows.Markup.XmlnsDictionary> to a property (typically on a <xref:System.Windows.Markup.ParserContext>). Attempting to modify the dictionary after the <xref:System.Windows.Markup.XmlnsDictionary> is sealed throws an <xref:System.InvalidOperationException>.  
-  
+This must be done before setting the <xref:System.Windows.Markup.XmlnsDictionary> to a property (typically on a <xref:System.Windows.Markup.ParserContext>). Attempting to modify the dictionary after the <xref:System.Windows.Markup.XmlnsDictionary> is sealed throws an <xref:System.InvalidOperationException>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -734,10 +734,10 @@
           <see langword="true" /> if the dictionary is sealed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is an alias for <xref:System.Windows.Markup.XmlnsDictionary.IsReadOnly%2A>.  
-  
+This property is an alias for <xref:System.Windows.Markup.XmlnsDictionary.IsReadOnly%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

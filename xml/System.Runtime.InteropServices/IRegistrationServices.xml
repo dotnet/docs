@@ -20,10 +20,10 @@
     <summary>Provides a set of services for registering and unregistering managed assemblies for use from COM.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Registration is needed when the objects within an assembly are being used by COM clients.  
-  
+Registration is needed when the objects within an assembly are being used by COM clients.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -136,12 +136,12 @@
           <see langword="true" /> if <paramref name="assembly" /> contains types that were successfully registered; otherwise <see langword="false" /> if the assembly contains no eligible types.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `RegisterAssembly` adds the appropriate registry entries for the types in the specified assembly. This method also calls any registration functions found in the assembly.  
-  
- Use <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> to get an assembly.  
-  
+`RegisterAssembly` adds the appropriate registry entries for the types in the specified assembly. This method also calls any registration functions found in the assembly.  
+ 
+Use <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> to get an assembly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -190,10 +190,10 @@
         <summary>Registers the specified type with COM using the specified GUID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to calling `CoRegisterClassObject` in COM.  
-  
+This method is equivalent to calling `CoRegisterClassObject` in COM.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -281,10 +281,10 @@
           <see langword="true" /> if <paramref name="assembly" /> contains types that were successfully unregistered; otherwise <see langword="false" /> if the assembly contains no eligible types.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `UnregisterAssembly` removes the registry entries for the types in the specified assembly previously added by <xref:System.Runtime.InteropServices.IRegistrationServices.RegisterAssembly%2A>. This method also calls any unregistration functions found in the assembly.  
-  
+`UnregisterAssembly` removes the registry entries for the types in the specified assembly previously added by <xref:System.Runtime.InteropServices.IRegistrationServices.RegisterAssembly%2A>. This method also calls any unregistration functions found in the assembly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

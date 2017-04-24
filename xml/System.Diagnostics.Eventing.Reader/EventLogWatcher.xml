@@ -18,15 +18,15 @@
     <summary>Allows you to subscribe to incoming events. Each time a desired event is published to an event log, the <see cref="E:System.Diagnostics.Eventing.Reader.EventLogWatcher.EventRecordWritten" /> event is raised, and the method that handles this event will be executed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instances of this class are created from <xref:System.Diagnostics.Eventing.Reader.EventLogQuery> objects, which specify a query for the event subscription. When an event is logged that matches the criteria expressed in the query, then the <xref:System.Diagnostics.Eventing.Reader.EventLogWatcher.EventRecordWritten> event is raised.  
+The instances of this class are created from <xref:System.Diagnostics.Eventing.Reader.EventLogQuery> objects, which specify a query for the event subscription. When an event is logged that matches the criteria expressed in the query, then the <xref:System.Diagnostics.Eventing.Reader.EventLogWatcher.EventRecordWritten> event is raised.  
+ 
   
-   
-  
+ 
 ## Examples  
- For example code using this class, see [How to: Subscribe to Events in an Event Log](http://msdn.microsoft.com/en-us/62e006d3-9fab-4fdf-a8f8-e23d05498cd4).  
-  
+For example code using this class, see [How to: Subscribe to Events in an Event Log](http://msdn.microsoft.com/en-us/62e006d3-9fab-4fdf-a8f8-e23d05498cd4).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -188,10 +188,10 @@
         <summary>Allows setting a delegate (event handler method) that gets called every time an event is published that matches the criteria specified in the event query for this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For example code using this class, see [How to: Subscribe to Events in an Event Log](http://msdn.microsoft.com/en-us/62e006d3-9fab-4fdf-a8f8-e23d05498cd4).  
-  
+For example code using this class, see [How to: Subscribe to Events in an Event Log](http://msdn.microsoft.com/en-us/62e006d3-9fab-4fdf-a8f8-e23d05498cd4).  
+ 
  ]]></format>
         </remarks>
       </Docs>

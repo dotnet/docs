@@ -34,19 +34,19 @@
     <summary>Helps build custom attributes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `CustomAttributeBuilder` object returned by the constructor to describe the custom attribute. Associate the `CustomAttribute` with a builder instance by calling the `SetCustomAttribute` method on that builder instance. For example, create a `CustomAttributeBuilder` to describe an instance of `AssemblyCultureAttribute` by supplying the constructor of <xref:System.Reflection.AssemblyCultureAttribute> and its argument. Then call <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> on an `AssemblyBuilder` to establish the association.  
+Use the `CustomAttributeBuilder` object returned by the constructor to describe the custom attribute. Associate the `CustomAttribute` with a builder instance by calling the `SetCustomAttribute` method on that builder instance. For example, create a `CustomAttributeBuilder` to describe an instance of `AssemblyCultureAttribute` by supplying the constructor of <xref:System.Reflection.AssemblyCultureAttribute> and its argument. Then call <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> on an `AssemblyBuilder` to establish the association.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `CustomAttributeBuilder`.  
-  
- [!code-cpp[System.Reflection.Emit.CustomAttributeBuilder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.CustomAttributeBuilder Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.CustomAttributeBuilder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.CustomAttributeBuilder Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.CustomAttributeBuilder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.CustomAttributeBuilder Example/VB/source.vb#1)]  
-  
+The following code sample illustrates the use of `CustomAttributeBuilder`.  
+ 
+[!code-cpp[System.Reflection.Emit.CustomAttributeBuilder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.CustomAttributeBuilder Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.CustomAttributeBuilder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.CustomAttributeBuilder Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.CustomAttributeBuilder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.CustomAttributeBuilder Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <summary>Initializes an instance of the <see langword="CustomAttributeBuilder" /> class given the constructor for the custom attribute and the arguments to the constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements of the `constructorArgs` array are restricted to element types. They can be `byte`, `sbyte`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `String`, `char`, `bool`, an enum, a type, any of the previous types that was cast to an object, or a single-dimension, zero-based array of any of the previous types.  
-  
+The elements of the `constructorArgs` array are restricted to element types. They can be `byte`, `sbyte`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `String`, `char`, `bool`, an enum, a type, any of the previous types that was cast to an object, or a single-dimension, zero-based array of any of the previous types.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -127,13 +127,13 @@
         <summary>Initializes an instance of the <see langword="CustomAttributeBuilder" /> class given the constructor for the custom attribute, the arguments to the constructor, and a set of named field/value pairs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements of the `constructorArgs` and `fieldValues` arrays are restricted to element types. They can be `byte`, `sbyte`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `String`, `char`, `bool`, an enum, a type, any of the previous types that was cast to an object, or a single-dimension, zero-based array of any of the previous types.  
-  
+The elements of the `constructorArgs` and `fieldValues` arrays are restricted to element types. They can be `byte`, `sbyte`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `String`, `char`, `bool`, an enum, a type, any of the previous types that was cast to an object, or a single-dimension, zero-based array of any of the previous types.  
+ 
 > [!IMPORTANT]
 >  Do not include private fields in `namedFields`. Doing so will cause <xref:System.Reflection.CustomAttributeFormatException> to be thrown when the <xref:System.Attribute.GetCustomAttributes%2A> method is later called on the completed type.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The lengths of the <paramref name="namedFields" /> and <paramref name="fieldValues" /> arrays are different.  
@@ -192,13 +192,13 @@
         <summary>Initializes an instance of the <see langword="CustomAttributeBuilder" /> class given the constructor for the custom attribute, the arguments to the constructor, and a set of named property or value pairs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements of the `constructorArgs` and `propertyValues` arrays are restricted to element types. They can be `byte`, `sbyte`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `String`, `char`, `bool`, an enum, a type, any of the previous types that was cast to an object, or a single-dimension, zero-based array of any of the previous types.  
-  
+The elements of the `constructorArgs` and `propertyValues` arrays are restricted to element types. They can be `byte`, `sbyte`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `String`, `char`, `bool`, an enum, a type, any of the previous types that was cast to an object, or a single-dimension, zero-based array of any of the previous types.  
+ 
 > [!IMPORTANT]
 >  Do not include private properties in `namedProperties`. Doing so will cause <xref:System.Reflection.CustomAttributeFormatException> to be thrown when the <xref:System.Attribute.GetCustomAttributes%2A> method is later called on the completed type.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The lengths of the <paramref name="namedProperties" /> and <paramref name="propertyValues" /> arrays are different.  
@@ -265,13 +265,13 @@
         <summary>Initializes an instance of the <see langword="CustomAttributeBuilder" /> class given the constructor for the custom attribute, the arguments to the constructor, a set of named property or value pairs, and a set of named field or value pairs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements of the `constructorArgs`, `propertyValues`, or `fieldValues` arrays are restricted to element types. They can be `byte`, `sbyte`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `String`, `char`, `bool`, an enum, a type, any of the previous types that was cast to an object, or a single-dimension, zero-based array of any of the previous types.  
-  
+The elements of the `constructorArgs`, `propertyValues`, or `fieldValues` arrays are restricted to element types. They can be `byte`, `sbyte`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `String`, `char`, `bool`, an enum, a type, any of the previous types that was cast to an object, or a single-dimension, zero-based array of any of the previous types.  
+ 
 > [!IMPORTANT]
 >  Do not include private properties or fields in `namedProperties` or `namedFields`. Doing so will cause <xref:System.Reflection.CustomAttributeFormatException> to be thrown when the <xref:System.Attribute.GetCustomAttributes%2A> method is later called on the completed type.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The lengths of the <paramref name="namedProperties" /> and <paramref name="propertyValues" /> arrays are different.  
@@ -343,10 +343,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -377,10 +377,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -407,10 +407,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -451,10 +451,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>

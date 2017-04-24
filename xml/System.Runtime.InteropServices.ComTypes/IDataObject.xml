@@ -24,12 +24,12 @@
     <summary>Provides the managed definition of the <see langword="IDataObject" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `IDataObject` interface, see the MSDN Library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For more information about the `IDataObject` interface, see the MSDN Library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -117,10 +117,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IDataObject::DAdvise`, see the MSDN Library.  
-  
+For more information about `IDataObject::DAdvise`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <summary>Destroys a notification connection that had been previously established.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IDataObject::DUnAdvise`, see the MSDN Library.  
-  
+For more information about `IDataObject::DUnAdvise`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,10 +211,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IDataObject::EnumDAdvise`, see the MSDN Library.  
-  
+For more information about `IDataObject::EnumDAdvise`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IDataObject::EnumFormatEtc`, see the MSDN Library.  
-  
+For more information about `IDataObject::EnumFormatEtc`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,10 +367,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IDataObject::GetCanonicalFormatEtc`, see the MSDN Library.  
-  
+For more information about `IDataObject::GetCanonicalFormatEtc`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,10 +402,10 @@
         <summary>Obtains data from a source data object. The <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> method, which is called by a data consumer, renders the data described in the specified <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure and transfers it through the specified <see cref="T:System.Runtime.InteropServices.ComTypes.STGMEDIUM" /> structure. The caller then assumes responsibility for releasing the <see cref="T:System.Runtime.InteropServices.ComTypes.STGMEDIUM" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IDataObject::GetData`, see the MSDN Library.  
-  
+For more information about `IDataObject::GetData`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@
         <summary>Obtains data from a source data object. This method, which is called by a data consumer, differs from the <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> method in that the caller must allocate and free the specified storage medium.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IDataObject::GetDataHere`, see the MSDN Library.  
-  
+For more information about `IDataObject::GetDataHere`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -530,10 +530,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IDataObject::QueryGetData`, see the MSDN Library.  
-  
+For more information about `IDataObject::QueryGetData`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -568,10 +568,10 @@
         <summary>Transfers data to the object that implements this method. This method is called by an object that contains a data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IDataObject::SetData`, see the MSDN Library.  
-  
+For more information about `IDataObject::SetData`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,19 +18,19 @@
     <summary>Represents a range of dates in a <see cref="T:System.Windows.Controls.Calendar" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.CalendarDateRange> objects are primarily used by the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection> to specify a range of dates that are not selectable in a <xref:System.Windows.Controls.Calendar>.  
+<xref:System.Windows.Controls.CalendarDateRange> objects are primarily used by the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection> to specify a range of dates that are not selectable in a <xref:System.Windows.Controls.Calendar>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates <xref:System.Windows.Controls.CalendarDateRange> objects to specify which dates in a <xref:System.Windows.Controls.Calendar> cannot be selected.  
-  
- [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
- [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
-  
+The following example creates <xref:System.Windows.Controls.CalendarDateRange> objects to specify which dates in a <xref:System.Windows.Controls.Calendar> cannot be selected.  
+ 
+[!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+[!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+[!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,30 +105,30 @@
         <value>The last date in the represented range.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_End"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <CalendarDateRange End="dateTimeString"/>  
 ```  
-  
+ 
 <a name="xamlValues_End"></a>   
 ## XAML Values  
- *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+*dateTimeString*  
+A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates <xref:System.Windows.Controls.CalendarDateRange> objects to specify which dates in a <xref:System.Windows.Controls.Calendar> cannot be selected.  
-  
- [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
- [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
-  
+The following example creates <xref:System.Windows.Controls.CalendarDateRange> objects to specify which dates in a <xref:System.Windows.Controls.Calendar> cannot be selected.  
+ 
+[!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+[!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+[!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,30 +167,30 @@
         <value>The first date in the represented range.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Start"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <CalendarDateRange Start="dateTimeString"/>  
 ```  
-  
+ 
 <a name="xamlValues_Start"></a>   
 ## XAML Values  
- *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+*dateTimeString*  
+A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates <xref:System.Windows.Controls.CalendarDateRange> objects to specify which dates in a <xref:System.Windows.Controls.Calendar> cannot be selected.  
-  
- [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
- [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
-  
+The following example creates <xref:System.Windows.Controls.CalendarDateRange> objects to specify which dates in a <xref:System.Windows.Controls.Calendar> cannot be selected.  
+ 
+[!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+[!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+[!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

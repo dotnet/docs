@@ -13,12 +13,12 @@
     <summary>Specifies a hatching style for a chart element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.ChartHatchStyle> enumeration represents the hatching styles that can be used for numerous chart elements, such as the <xref:System.Web.UI.DataVisualization.Charting.ChartArea>, <xref:System.Web.UI.DataVisualization.Charting.Legend>, and so forth.  
-  
- Setting the `BackHatchStyle` property of a chart element object to any member of this enumeration except None will cause the corresponding hatching style to be applied to the chart element.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.ChartHatchStyle> enumeration represents the hatching styles that can be used for numerous chart elements, such as the <xref:System.Web.UI.DataVisualization.Charting.ChartArea>, <xref:System.Web.UI.DataVisualization.Charting.Legend>, and so forth.  
+ 
+Setting the `BackHatchStyle` property of a chart element object to any member of this enumeration except None will cause the corresponding hatching style to be applied to the chart element.  
+ 
  ]]></format>
     </remarks>
   </Docs>

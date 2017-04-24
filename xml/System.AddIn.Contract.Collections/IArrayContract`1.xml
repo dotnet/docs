@@ -23,12 +23,12 @@
     <summary>Represents a generic array of <see cref="T:System.AddIn.Contract.IContract" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use an <xref:System.AddIn.Contract.Collections.IArrayContract%601> to pass an array of <xref:System.AddIn.Contract.IContract> objects between contracts by reference.  
-  
- An <xref:System.AddIn.Contract.Collections.IArrayContract%601> does not dynamically resize itself.  
-  
+Use an <xref:System.AddIn.Contract.Collections.IArrayContract%601> to pass an array of <xref:System.AddIn.Contract.IContract> objects between contracts by reference.  
+ 
+An <xref:System.AddIn.Contract.Collections.IArrayContract%601> does not dynamically resize itself.  
+ 
  ]]></format>
     </remarks>
   </Docs>

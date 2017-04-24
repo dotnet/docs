@@ -14,24 +14,24 @@
     <summary>Displays a message box.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a prefabricated modal dialog box that displays a text message to a user. You show a message box by calling the static <xref:System.Windows.MessageBox.Show%2A> method of the <xref:System.Windows.MessageBox> class. The text message that is displayed is the string argument that you pass to <xref:System.Windows.MessageBox.Show%2A>. Several overloads of the <xref:System.Windows.MessageBox.Show%2A> method also enables you to provide a title bar caption.  
-  
- To enable a user to close a message box, <xref:System.Windows.MessageBox.Show%2A> displays a message box that has an **OK** button and a **Close** button in the title bar.  
-  
- You can also use a message box to ask a user a question. The user answers by clicking one of several buttons that you specify to display by using the <xref:System.Windows.MessageBoxButton> enumeration. You can pass this enumeration to several overloads of the <xref:System.Windows.MessageBox.Show%2A> method. The default value of the <xref:System.Windows.MessageBoxButton> enumeration is <xref:System.Windows.MessageBoxButton>.  
-  
- You can determine which button a user clicks by examining the value that <xref:System.Windows.MessageBox.Show%2A> returns. The return value is a value of the <xref:System.Windows.MessageBoxResult> enumeration, where each value equates to one of the buttons that a message box can display. The default value for message box is <xref:System.Windows.MessageBoxResult> because **OK** is the default message box button. However, some overloads of the <xref:System.Windows.MessageBox.Show%2A> method enable you to provide a different <xref:System.Windows.MessageBoxResult> default value.  
-  
- Message boxes can communicate information and can ask questions that have varying degrees of importance. Message boxes use icons to indicate importance. For example, icons can indicate whether the message is informational, is a warning, or is important. The <xref:System.Windows.MessageBoxImage> enumeration encapsulates the set of possible message box icons. By default, a message box does not display an icon. However, you can pass a <xref:System.Windows.MessageBoxImage> value to one of several <xref:System.Windows.MessageBox.Show%2A> method overloads in order to specify that the message box includes an icon.  
-  
- Message boxes sometimes provide special functionality, such as right-to-left reading. You can customize the behavior of a message box by using one or more <xref:System.Windows.MessageBoxOptions> enumeration values that are accepted by some overloads of the <xref:System.Windows.MessageBox.Show%2A> method.  
-  
- Message boxes always have an owner window. By default, the owner of a message box is the window that is currently active in an application at the time that a message box is opened. However, you can specify another owner for the <xref:System.Windows.Window> by using one of several <xref:System.Windows.MessageBox.Show%2A> overloads. For more information about owner windows, see <xref:System.Windows.Window.Owner%2A?displayProperty=fullName>.  
-  
- For more information, see [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023).  
-  
+A message box is a prefabricated modal dialog box that displays a text message to a user. You show a message box by calling the static <xref:System.Windows.MessageBox.Show%2A> method of the <xref:System.Windows.MessageBox> class. The text message that is displayed is the string argument that you pass to <xref:System.Windows.MessageBox.Show%2A>. Several overloads of the <xref:System.Windows.MessageBox.Show%2A> method also enables you to provide a title bar caption.  
+ 
+To enable a user to close a message box, <xref:System.Windows.MessageBox.Show%2A> displays a message box that has an **OK** button and a **Close** button in the title bar.  
+ 
+You can also use a message box to ask a user a question. The user answers by clicking one of several buttons that you specify to display by using the <xref:System.Windows.MessageBoxButton> enumeration. You can pass this enumeration to several overloads of the <xref:System.Windows.MessageBox.Show%2A> method. The default value of the <xref:System.Windows.MessageBoxButton> enumeration is <xref:System.Windows.MessageBoxButton>.  
+ 
+You can determine which button a user clicks by examining the value that <xref:System.Windows.MessageBox.Show%2A> returns. The return value is a value of the <xref:System.Windows.MessageBoxResult> enumeration, where each value equates to one of the buttons that a message box can display. The default value for message box is <xref:System.Windows.MessageBoxResult> because **OK** is the default message box button. However, some overloads of the <xref:System.Windows.MessageBox.Show%2A> method enable you to provide a different <xref:System.Windows.MessageBoxResult> default value.  
+ 
+Message boxes can communicate information and can ask questions that have varying degrees of importance. Message boxes use icons to indicate importance. For example, icons can indicate whether the message is informational, is a warning, or is important. The <xref:System.Windows.MessageBoxImage> enumeration encapsulates the set of possible message box icons. By default, a message box does not display an icon. However, you can pass a <xref:System.Windows.MessageBoxImage> value to one of several <xref:System.Windows.MessageBox.Show%2A> method overloads in order to specify that the message box includes an icon.  
+ 
+Message boxes sometimes provide special functionality, such as right-to-left reading. You can customize the behavior of a message box by using one or more <xref:System.Windows.MessageBoxOptions> enumeration values that are accepted by some overloads of the <xref:System.Windows.MessageBox.Show%2A> method.  
+ 
+Message boxes always have an owner window. By default, the owner of a message box is the window that is currently active in an application at the time that a message box is opened. However, you can specify another owner for the <xref:System.Windows.Window> by using one of several <xref:System.Windows.MessageBox.Show%2A> overloads. For more information about owner windows, see <xref:System.Windows.Window.Owner%2A?displayProperty=fullName>.  
+ 
+For more information, see [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,13 +62,13 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
-  
- [!code-csharp[MessageBoxSnippets#MessageBoxShow1CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show1Window.xaml.cs#messageboxshow1code)]
- [!code-vb[MessageBoxSnippets#MessageBoxShow1CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show1window.xaml.vb#messageboxshow1code)]  
-  
+The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+ 
+[!code-csharp[MessageBoxSnippets#MessageBoxShow1CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show1Window.xaml.cs#messageboxshow1code)]
+[!code-vb[MessageBoxSnippets#MessageBoxShow1CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show1window.xaml.vb#messageboxshow1code)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,13 +101,13 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
-  
- [!code-csharp[MessageBoxSnippets#MessageBoxShow2CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show2Window.xaml.cs#messageboxshow2code)]
- [!code-vb[MessageBoxSnippets#MessageBoxShow2CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show2window.xaml.vb#messageboxshow2code)]  
-  
+The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+ 
+[!code-csharp[MessageBoxSnippets#MessageBoxShow2CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show2Window.xaml.cs#messageboxshow2code)]
+[!code-vb[MessageBoxSnippets#MessageBoxShow2CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show2window.xaml.vb#messageboxshow2code)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the message box appears in front of the window that is currently active.  
-  
+By default, the message box appears in front of the window that is currently active.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,13 +178,13 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
-  
- [!code-csharp[MessageBoxSnippets#MessageBoxShow3CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show3Window.xaml.cs#messageboxshow3code)]
- [!code-vb[MessageBoxSnippets#MessageBoxShow3CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show3window.xaml.vb#messageboxshow3code)]  
-  
+The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+ 
+[!code-csharp[MessageBoxSnippets#MessageBoxShow3CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show3Window.xaml.cs#messageboxshow3code)]
+[!code-vb[MessageBoxSnippets#MessageBoxShow3CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show3window.xaml.vb#messageboxshow3code)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,10 +219,10 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the message box appears in front of the window that is currently active.  
-  
+By default, the message box appears in front of the window that is currently active.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,13 +259,13 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
-  
- [!code-csharp[MessageBoxSnippets#MessageBoxShow4CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show4Window.xaml.cs#messageboxshow4code)]
- [!code-vb[MessageBoxSnippets#MessageBoxShow4CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show4window.xaml.vb#messageboxshow4code)]  
-  
+The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+ 
+[!code-csharp[MessageBoxSnippets#MessageBoxShow4CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show4Window.xaml.cs#messageboxshow4code)]
+[!code-vb[MessageBoxSnippets#MessageBoxShow4CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show4window.xaml.vb#messageboxshow4code)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -302,10 +302,10 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the message box appears in front of the window that is currently active.  
-  
+By default, the message box appears in front of the window that is currently active.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,13 +344,13 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
-  
- [!code-csharp[MessageBoxSnippets#MessageBoxShow5CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show5Window.xaml.cs#messageboxshow5code)]
- [!code-vb[MessageBoxSnippets#MessageBoxShow5CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show5window.xaml.vb#messageboxshow5code)]  
-  
+The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+ 
+[!code-csharp[MessageBoxSnippets#MessageBoxShow5CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show5Window.xaml.cs#messageboxshow5code)]
+[!code-vb[MessageBoxSnippets#MessageBoxShow5CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show5window.xaml.vb#messageboxshow5code)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,10 +389,10 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the message box appears in front of the window that is currently active.  
-  
+By default, the message box appears in front of the window that is currently active.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,13 +433,13 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
-  
- [!code-csharp[MessageBoxSnippets#MessageBoxShow6CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show6Window.xaml.cs#messageboxshow6code)]
- [!code-vb[MessageBoxSnippets#MessageBoxShow6CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show6window.xaml.vb#messageboxshow6code)]  
-  
+The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+ 
+[!code-csharp[MessageBoxSnippets#MessageBoxShow6CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show6Window.xaml.cs#messageboxshow6code)]
+[!code-vb[MessageBoxSnippets#MessageBoxShow6CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show6window.xaml.vb#messageboxshow6code)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -480,10 +480,10 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the message box appears in front of the window that is currently active.  
-  
+By default, the message box appears in front of the window that is currently active.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -526,10 +526,10 @@
         <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the message box appears in front of the window that is currently active.  
-  
+By default, the message box appears in front of the window that is currently active.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -543,10 +543,10 @@
         <summary>Displays a message box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use an overload of the <xref:System.Windows.MessageBox.Show%2A> method, which enables you to specify an owner window. Otherwise, the message box is owned by the window that is currently active.  
-  
+Use an overload of the <xref:System.Windows.MessageBox.Show%2A> method, which enables you to specify an owner window. Otherwise, the message box is owned by the window that is currently active.  
+ 
  ]]></format>
         </remarks>
       </Docs>

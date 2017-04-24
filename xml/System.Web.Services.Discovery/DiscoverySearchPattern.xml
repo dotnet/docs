@@ -15,12 +15,12 @@
     <summary>Establishes an interface for file extension search patterns for discoverable file types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A?displayProperty=fullName> property to add a discoverable file type to a Web services document. While a discovery document is usually serialized as a file using a .disco extension, you can add multiple files to the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property, and those files can have other extensions, represented by implementations of <xref:System.Web.Services.Discovery.DiscoverySearchPattern> .  
-  
- The <xref:System.Web.Services.Discovery.DiscoverySearchPattern> class and its concrete derived classes are employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. Normally, none of these classes need to be used directly by a developer.  
-  
+You can use the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A?displayProperty=fullName> property to add a discoverable file type to a Web services document. While a discovery document is usually serialized as a file using a .disco extension, you can add multiple files to the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property, and those files can have other extensions, represented by implementations of <xref:System.Web.Services.Discovery.DiscoverySearchPattern> .  
+ 
+The <xref:System.Web.Services.Discovery.DiscoverySearchPattern> class and its concrete derived classes are employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. Normally, none of these classes need to be used directly by a developer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,12 +63,12 @@
         <returns>A file name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A class derived from <xref:System.Web.Services.Discovery.DiscoverySearchPattern> implements the <xref:System.Web.Services.Discovery.DiscoverySearchPattern.GetDiscoveryReference%2A> method by returning its associated concrete class derived from <xref:System.Web.Services.Discovery.DiscoveryReference>.  
-  
- For example, the <xref:System.Web.Services.Discovery.ContractSearchPattern> class returns a <xref:System.Web.Services.Discovery.ContractReference> instance that contains the location of an .asmx Web service file and the corresponding dynamically generated Web Services Description Language (WSDL) document.  
-  
+A class derived from <xref:System.Web.Services.Discovery.DiscoverySearchPattern> implements the <xref:System.Web.Services.Discovery.DiscoverySearchPattern.GetDiscoveryReference%2A> method by returning its associated concrete class derived from <xref:System.Web.Services.Discovery.DiscoveryReference>.  
+ 
+For example, the <xref:System.Web.Services.Discovery.ContractSearchPattern> class returns a <xref:System.Web.Services.Discovery.ContractReference> instance that contains the location of an .asmx Web service file and the corresponding dynamically generated Web Services Description Language (WSDL) document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,10 +91,10 @@
         <value>A file name pattern.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The pattern typically specifies a file name extension, for example, .disco or .asmx.  
-  
+The pattern typically specifies a file name extension, for example, .disco or .asmx.  
+ 
  ]]></format>
         </remarks>
       </Docs>

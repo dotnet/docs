@@ -19,10 +19,10 @@
     <summary>Provides data for the <see langword="RowUpdated" /> event of a .NET Framework data provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `RowUpdated` event message is typically raised when an <xref:System.Data.Common.DbDataAdapter.Update%2A> to a row is completed.  
-  
+The `RowUpdated` event message is typically raised when an <xref:System.Data.Common.DbDataAdapter.Update%2A> to a row is completed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -104,12 +104,12 @@
         <summary>Copies references to the modified rows into the provided array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `array` must be at least <xref:System.Data.Common.RowUpdatedEventArgs.RowCount%2A> in length.  
-  
- Throws an <xref:System.ArgumentNullException> for a null instance of <xref:System.Data.DataRow>.  
-  
+`array` must be at least <xref:System.Data.Common.RowUpdatedEventArgs.RowCount%2A> in length.  
+ 
+Throws an <xref:System.ArgumentNullException> for a null instance of <xref:System.Data.DataRow>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,12 +141,12 @@
         <summary>Copies references to the modified rows into the provided array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `array` must be at least <xref:System.Data.Common.RowUpdatedEventArgs.RowCount%2A> + `arrayIndex` in length.  
-  
- Throws an <xref:System.ArgumentNullException> for a null instance of <xref:System.Data.DataRow>.  
-  
+`array` must be at least <xref:System.Data.Common.RowUpdatedEventArgs.RowCount%2A> + `arrayIndex` in length.  
+ 
+Throws an <xref:System.ArgumentNullException> for a null instance of <xref:System.Data.DataRow>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,10 +219,10 @@
         <value>The <see cref="T:System.Data.DataRow" /> sent through an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When batching is enabled, the value of this property will be null. Updated rows can be accessed through one of the `RowUpdatedEventArgs.CopyToRows` methods.  
-  
+When batching is enabled, the value of this property will be null. Updated rows can be accessed through one of the `RowUpdatedEventArgs.CopyToRows` methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,18 +273,18 @@
         <value>The type of SQL statement executed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Common.RowUpdatedEventArgs.StatementType%2A> can be one of the following values:  
-  
+<xref:System.Data.Common.RowUpdatedEventArgs.StatementType%2A> can be one of the following values:  
+ 
 -   Select  
-  
+ 
 -   Insert  
-  
+ 
 -   Update  
-  
+ 
 -   Delete  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
         <summary>Lets you access the rows processed during a batch update operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Handling Batch Update-related Events and Errors](http://msdn.microsoft.com/en-us/c8ff901d-f4b0-44d1-a912-078c985010d3).  
-  
+For more information, see [Handling Batch Update-related Events and Errors](http://msdn.microsoft.com/en-us/c8ff901d-f4b0-44d1-a912-078c985010d3).  
+ 
  ]]></format>
         </remarks>
       </Docs>

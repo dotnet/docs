@@ -312,10 +312,10 @@
         <value>A value source that contains a dynamic resource reference.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dynamic resource provides a value for a XAML property by deferring that value to be a runtime reference to a resource. A dynamic resource reference forces a new lookup each time that such a resource is accessed.  
-  
+Dynamic resource provides a value for a XAML property by deferring that value to be a runtime reference to a resource. A dynamic resource reference forces a new lookup each time that such a resource is accessed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,10 +337,10 @@
         <value>A value source that contains a static resource reference.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A static resource provides a value for a XAML property by substituting the value of an already defined resource.  
-  
+A static resource provides a value for a XAML property by substituting the value of an already defined resource.  
+ 
  ]]></format>
         </remarks>
       </Docs>

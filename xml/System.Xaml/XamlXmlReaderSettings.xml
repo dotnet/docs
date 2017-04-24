@@ -85,18 +85,18 @@
           <see langword="true" /> if the initiating reader is directly used, which means that XML compatibility markup is processed as part of the main stream and compatibility is not considered. <see langword="false" /> if the default behavior is used, which processes XML compatibility separately. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default handling behavior for XML markup compatibility in <xref:System.Xaml.XamlXmlReader> is that the <xref:System.Xaml.XamlXmlReader>, as provided for initialization, is wrapped in a created internal helper class. This helper class reads the markup compatibility nodes separately and enters into the nodes based on markup compatibility of the schema context.  
-  
- Suggested scenarios for setting <xref:System.Xaml.XamlXmlReaderSettings.SkipXmlCompatibilityProcessing%2A> to `true` are:  
-  
+The default handling behavior for XML markup compatibility in <xref:System.Xaml.XamlXmlReader> is that the <xref:System.Xaml.XamlXmlReader>, as provided for initialization, is wrapped in a created internal helper class. This helper class reads the markup compatibility nodes separately and enters into the nodes based on markup compatibility of the schema context.  
+ 
+Suggested scenarios for setting <xref:System.Xaml.XamlXmlReaderSettings.SkipXmlCompatibilityProcessing%2A> to `true` are:  
+ 
 -   You want to keep any markup compatibility content in the primary XAML stream.  
-  
+ 
 -   You have already processed the markup compatibility because you are using a reader that can process markup compatibility content inline.  
-  
+ 
 -   You choose to ignore XML compatibility conventions in your XAML reader implementation for reasons of performance.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <value>The string to use for possible <see langword="xml:lang" /> output that is based on the reader.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The caller is responsible for making sure that the string you provide is appropriate for `xml:lang` usage.  
-  
+The caller is responsible for making sure that the string you provide is appropriate for `xml:lang` usage.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
           <see langword="true" /> if writers that are processing the XAML node stream can write <c>xml:space="preserve"</c> in output; <see langword="false" /> if <see langword="xml:space" /> attributes cannot be written in nodes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The XML whitespace concepts are not robust enough to apply to XAML, and are typically ignored by XAML readers.  
-  
+The XML whitespace concepts are not robust enough to apply to XAML, and are typically ignored by XAML readers.  
+ 
  ]]></format>
         </remarks>
       </Docs>

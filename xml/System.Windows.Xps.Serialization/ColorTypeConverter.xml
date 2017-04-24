@@ -14,12 +14,12 @@
     <summary>Provides type converters for converting <see cref="T:System.Windows.Media.Color" /> objects to and from objects of other types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class also has methods for writing a <xref:System.Windows.Media.ColorContext> to an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] package and reading a <xref:System.Windows.Media.ColorContext> from an [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)] package that is given a string that represents the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the <xref:System.Windows.Media.ColorContext>.  
-  
- See the base classes <xref:System.ComponentModel.TypeConverter> and <xref:System.ComponentModel.ExpandableObjectConverter> for important usage notes.  
-  
+This class also has methods for writing a <xref:System.Windows.Media.ColorContext> to an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] package and reading a <xref:System.Windows.Media.ColorContext> from an [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)] package that is given a string that represents the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the <xref:System.Windows.Media.ColorContext>.  
+ 
+See the base classes <xref:System.ComponentModel.TypeConverter> and <xref:System.ComponentModel.ExpandableObjectConverter> for important usage notes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.ColorTypeConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the base classes <xref:System.ComponentModel.TypeConverter> and <xref:System.ComponentModel.ExpandableObjectConverter> for important usage notes.  
-  
+See the base classes <xref:System.ComponentModel.TypeConverter> and <xref:System.ComponentModel.ExpandableObjectConverter> for important usage notes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,12 +70,12 @@
           <see langword="true" /> if objects of the specified type can be converted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As implemented in this class, this method returns `true` only if `sourceType` is a <xref:System.String>.  
-  
- The `context` parameter is not used. See **Notes for Inheritors**.  
-  
+As implemented in this class, this method returns `true` only if `sourceType` is a <xref:System.String>.  
+ 
+The `context` parameter is not used. See **Notes for Inheritors**.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -107,12 +107,12 @@
           <see langword="true" /> if conversion is possible; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As implemented in this class, this method returns `true` only if `destinationType` is a <xref:System.String>.  
-  
- The `context` parameter is not used. See **Notes for Inheritors**.  
-  
+As implemented in this class, this method returns `true` only if `destinationType` is a <xref:System.String>.  
+ 
+The `context` parameter is not used. See **Notes for Inheritors**.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -145,10 +145,10 @@
         <returns>The new <see cref="T:System.Windows.Media.Color" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not implemented in this class—except to throw exceptions. See **Notes for Inheritors**.  
-  
+This method is not implemented in this class—except to throw exceptions. See **Notes for Inheritors**.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method is called from this class instead of from a derived class.</exception>
@@ -186,12 +186,12 @@
         <returns>The new <see cref="T:System.Object" /> of the designated type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As implemented in this class, `destinationType` must be a <xref:System.String> or the exception is thrown. The format of the string varies according to the value of `context` and `culture`.  
-  
- If `culture` is `null`, the current system culture is used.  
-  
+As implemented in this class, `destinationType` must be a <xref:System.String> or the exception is thrown. The format of the string varies according to the value of `context` and `culture`.  
+ 
+If `culture` is `null`, the current system culture is used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <paramref name="destinationType" /> is not a type that <paramref name="value" /> can be converted to.  
@@ -226,10 +226,10 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the property descriptions that are exposed for the component; or <see langword="null" /> if no property descriptions are returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not implemented in this class—except to throw the exception. See **Notes for Inheritors**.  
-  
+This method is not implemented in this class—except to throw the exception. See **Notes for Inheritors**.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method is called from this class instead of from a derived class.</exception>

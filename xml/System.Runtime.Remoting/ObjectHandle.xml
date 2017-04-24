@@ -27,19 +27,19 @@
     <summary>Wraps marshal-by-value object references, allowing them to be returned through an indirection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.ObjectHandle> class is used to pass an object (in a wrapped state) between multiple application domains without loading the metadata for the wrapped object in each <xref:System.AppDomain> through which the <xref:System.Runtime.Remoting.ObjectHandle> travels. Thus, the <xref:System.Runtime.Remoting.ObjectHandle> class gives the caller control of when the <xref:System.Type> of the remote object is loaded into a domain.  
+The <xref:System.Runtime.Remoting.ObjectHandle> class is used to pass an object (in a wrapped state) between multiple application domains without loading the metadata for the wrapped object in each <xref:System.AppDomain> through which the <xref:System.Runtime.Remoting.ObjectHandle> travels. Thus, the <xref:System.Runtime.Remoting.ObjectHandle> class gives the caller control of when the <xref:System.Type> of the remote object is loaded into a domain.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to create an object in another <xref:System.AppDomain>, and retrieve a proxy to the object from a <xref:System.Runtime.Remoting.ObjectHandle>. In this example, you can assume that the code of the `MyType` class is compiled into an assembly called "ObjectHandleAssembly".  
-  
- [!code-cpp[ObjectHandle#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ObjectHandle/CPP/objecthandleassembly.cpp#1)]
- [!code-csharp[ObjectHandle#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ObjectHandle/CS/objecthandleassembly.cs#1)]
- [!code-vb[ObjectHandle#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ObjectHandle/VB/objecthandleassembly.vb#1)]  
-  
+The following code example shows how to create an object in another <xref:System.AppDomain>, and retrieve a proxy to the object from a <xref:System.Runtime.Remoting.ObjectHandle>. In this example, you can assume that the code of the `MyType` class is compiled into an assembly called "ObjectHandleAssembly".  
+ 
+[!code-cpp[ObjectHandle#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ObjectHandle/CPP/objecthandleassembly.cpp#1)]
+[!code-csharp[ObjectHandle#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ObjectHandle/CS/objecthandleassembly.cs#1)]
+[!code-vb[ObjectHandle#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ObjectHandle/VB/objecthandleassembly.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,14 +102,14 @@
         <returns>The wrapped object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to activate an object in another <xref:System.AppDomain>, retrieve a proxy to it with the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A> method, and use the proxy to access the remote object.  
-  
- [!code-cpp[ObjectHandle#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ObjectHandle/CPP/objecthandleassembly.cpp#2)]
- [!code-csharp[ObjectHandle#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ObjectHandle/CS/objecthandleassembly.cs#2)]
- [!code-vb[ObjectHandle#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ObjectHandle/VB/objecthandleassembly.vb#2)]  
-  
+The following code example demonstrates how to activate an object in another <xref:System.AppDomain>, retrieve a proxy to it with the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A> method, and use the proxy to access the remote object.  
+ 
+[!code-cpp[ObjectHandle#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ObjectHandle/CPP/objecthandleassembly.cpp#2)]
+[!code-csharp[ObjectHandle#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ObjectHandle/CS/objecthandleassembly.cs#2)]
+[!code-vb[ObjectHandle#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ObjectHandle/VB/objecthandleassembly.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">

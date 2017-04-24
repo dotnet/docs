@@ -19,12 +19,12 @@
     <summary>Specifies special services for application settings properties. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.SettingsManageabilityAttribute> indicates that special, predefined services are to be provided to individual application settings properties and property groups. Most of these services will be provided by the Windows operating system.  
-  
- For more information about application settings properties and their use, see [Application Settings for Windows Forms](~/docs/framework/winforms/advanced/application-settings-for-windows-forms.md).  
-  
+The <xref:System.Configuration.SettingsManageabilityAttribute> indicates that special, predefined services are to be provided to individual application settings properties and property groups. Most of these services will be provided by the Windows operating system.  
+ 
+For more information about application settings properties and their use, see [Application Settings for Windows Forms](~/docs/framework/winforms/advanced/application-settings-for-windows-forms.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsManageabilityAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Multiple services can be requested by combining together values defined by the <xref:System.Configuration.SettingsManageability> enumeration with the logical `OR` operator.  
-  
+Multiple services can be requested by combining together values defined by the <xref:System.Configuration.SettingsManageability> enumeration with the logical `OR` operator.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,10 +71,10 @@
         <value>A value that results from using the logical <see langword="OR" /> operator to combine all the <see cref="T:System.Configuration.SettingsManageability" /> enumeration values corresponding to the requested services.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set in the <xref:System.Configuration.SettingsManageabilityAttribute.%23ctor%2A> constructor.  
-  
+This property is set in the <xref:System.Configuration.SettingsManageabilityAttribute.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

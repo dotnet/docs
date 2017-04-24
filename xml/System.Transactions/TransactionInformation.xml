@@ -19,10 +19,10 @@
     <summary>Provides additional information regarding a transaction.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can query relevant information about a transaction by accessing the <xref:System.Transactions.Transaction.TransactionInformation%2A> proptery of the <xref:System.Transactions.Transaction> class. In this way, you can retrieve the status  of  any transaction object, including the current ambient transaction, by doing a call like `Transaction.Current.TransactionInfomation.Status`.  
-  
+You can query relevant information about a transaction by accessing the <xref:System.Transactions.Transaction.TransactionInformation%2A> proptery of the <xref:System.Transactions.Transaction> class. In this way, you can retrieve the status  of  any transaction object, including the current ambient transaction, by doing a call like `Transaction.Current.TransactionInfomation.Status`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <value>A <see cref="T:System.DateTime" /> that contains the creation time of the transaction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is mainly used to determine if the transaction has been created for a substantial length of time. This timestamp is only accurate to within 1 second of the actual creation time.  
-  
+This property is mainly used to determine if the transaction has been created for a substantial length of time. This timestamp is only accurate to within 1 second of the actual creation time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,12 +79,12 @@
         <value>A <see cref="T:System.Guid" /> that contains the unique identifier of the escalated transaction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the transaction is escalated to a two-phase commit transaction, this property returns its unique identifier. If the transaction is not escalated, the value is `null`.  
-  
- For more information on how a transaction's management is escalated, see [Transaction Management Escalation](http://msdn.microsoft.com/en-us/5b87ae58-8ccf-4b9b-9715-41e4aade89b7).  
-  
+If the transaction is escalated to a two-phase commit transaction, this property returns its unique identifier. If the transaction is not escalated, the value is `null`.  
+ 
+For more information on how a transaction's management is escalated, see [Transaction Management Escalation](http://msdn.microsoft.com/en-us/5b87ae58-8ccf-4b9b-9715-41e4aade89b7).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Encapsulates the output cache initialization settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.OutputCacheParameters> class is not used by ASP.NET page or control developers. It provides a data structure used to store cache settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET page and control parsers such as <xref:System.Web.UI.PageParser> and <xref:System.Web.UI.TemplateControlParser>. The <xref:System.Web.UI.OutputCacheParameters> object is used with the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=fullName> method to initialize the output cache for a page and its contents at run time.  
-  
+The <xref:System.Web.UI.OutputCacheParameters> class is not used by ASP.NET page or control developers. It provides a data structure used to store cache settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET page and control parsers such as <xref:System.Web.UI.PageParser> and <xref:System.Web.UI.TemplateControlParser>. The <xref:System.Web.UI.OutputCacheParameters> object is used with the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=fullName> method to initialize the output cache for a page and its contents at run time.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>An <see cref="T:System.Web.Configuration.OutputCacheProfile" /> name that is associated with the settings of the output cache entry.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The profile identifies a set of cache settings in the `<outputCacheSettings>` configuration that is used as the base settings for the output cache entry.  
-  
+The profile identifies a set of cache settings in the `<outputCacheSettings>` configuration that is used as the base settings for the output cache entry.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,10 +153,10 @@
         <value>A string that identifies a set of database and table name pairs that the cache entry depends on. The cache entry is expired when the table's data is updated or changes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.OutputCacheParameters.SqlDependency%2A> string identifies databases and tables according to the name of a SQL Server cache dependency in your configuration (typically added using the `<sqlcachedependency>` configuration elements). If you use SQL Server 2005, you can set the <xref:System.Web.UI.OutputCacheParameters.SqlDependency%2A> property to "CommandNotification", which instructs ASP.NET to create row-level dependencies for all SQL commands issued within the context of the current ASP.NET page.  
-  
+The <xref:System.Web.UI.OutputCacheParameters.SqlDependency%2A> string identifies databases and tables according to the name of a SQL Server cache dependency in your configuration (typically added using the `<sqlcachedependency>` configuration elements). If you use SQL Server 2005, you can set the <xref:System.Web.UI.OutputCacheParameters.SqlDependency%2A> property to "CommandNotification", which instructs ASP.NET to create row-level dependencies for all SQL commands issued within the context of the current ASP.NET page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,12 +178,12 @@
         <value>A list of character sets by which to vary the content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to multiple character sets, the output cache contains a different version of the requested document for each specified set.  
-  
- <xref:System.Web.UI.OutputCacheParameters.VaryByContentEncoding%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+When this property is set to multiple character sets, the output cache contains a different version of the requested document for each specified set.  
+ 
+<xref:System.Web.UI.OutputCacheParameters.VaryByContentEncoding%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <value>The list of custom strings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you specify "browser" for this property, the cache entry will be varied by browser type and major version number. If a custom string is entered, you must override the <xref:System.Web.HttpApplication.GetVaryByCustomString%2A?displayProperty=fullName> method in your application's Global.asax file.  
-  
+If you specify "browser" for this property, the cache entry will be varied by browser type and major version number. If a custom string is entered, you must override the <xref:System.Web.HttpApplication.GetVaryByCustomString%2A?displayProperty=fullName> method in your application's Global.asax file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
         <value>A list of headers by which to vary the content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to multiple headers, the output cache contains a different version of the requested document for each specified header.  
-  
+When this property is set to multiple headers, the output cache contains a different version of the requested document for each specified header.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,10 +273,10 @@
         <value>The list of query string or form POST parameters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to multiple parameters, the output cache contains a different version of the requested document for each specified parameter. Possible values include "none", "*", and any valid query string or POST parameter name.  
-  
+When this property is set to multiple parameters, the output cache contains a different version of the requested document for each specified parameter. Possible values include "none", "*", and any valid query string or POST parameter name.  
+ 
  ]]></format>
         </remarks>
       </Docs>

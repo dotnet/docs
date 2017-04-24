@@ -11,15 +11,15 @@
     <summary>Allows a customized view of a <see cref="T:System.Windows.Controls.ListView" /> that derives from <see cref="T:System.Windows.Controls.ViewBase" /> to implement automation peer features that are specific to the custom view.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows a custom view implementing <xref:System.Windows.Automation.Peers.IViewAutomationPeer> in a separate class to handle a button that appears at the top of the <xref:System.Windows.Controls.ListView> control.  
-  
- [!code-csharp[ListViewCustomView#IVAPCreate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/OneButtonHeaderView.cs#ivapcreate)]
- [!code-vb[ListViewCustomView#IVAPCreate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic/onebuttonheaderview.vb#ivapcreate)]  
+The following code shows a custom view implementing <xref:System.Windows.Automation.Peers.IViewAutomationPeer> in a separate class to handle a button that appears at the top of the <xref:System.Windows.Controls.ListView> control.  
+ 
+[!code-csharp[ListViewCustomView#IVAPCreate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/OneButtonHeaderView.cs#ivapcreate)]
+[!code-vb[ListViewCustomView#IVAPCreate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic/onebuttonheaderview.vb#ivapcreate)]  
 [!code-csharp[ListViewCustomView#IVAP](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/OneButtonHeaderView.cs#ivap)]
 [!code-vb[ListViewCustomView#IVAP](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic/onebuttonheaderview.vb#ivap)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

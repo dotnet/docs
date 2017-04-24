@@ -22,12 +22,12 @@
     <summary>Describes the original settings of the <see cref="T:System.Runtime.InteropServices.TYPEFLAGS" /> in the COM type library from which the type was imported.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `TypeLibTypeFlags` is used along with the <xref:System.Runtime.InteropServices.TypeLibTypeAttribute>. The flags are retained for reference only. They are not used by the common language runtime.  
-  
- For more information, see `TYPEFLAGS` in the MSDN library.  
-  
+`TypeLibTypeFlags` is used along with the <xref:System.Runtime.InteropServices.TypeLibTypeAttribute>. The flags are retained for reference only. They are not used by the common language runtime.  
+ 
+For more information, see `TYPEFLAGS` in the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -32,24 +32,24 @@
     <summary>Creates a container within which other controls can share horizontal or vertical space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a <xref:System.Windows.Forms.ToolStripPanel> to hold one or more <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, <xref:System.Windows.Forms.StatusStrip> or user-defined controls.  
+Use a <xref:System.Windows.Forms.ToolStripPanel> to hold one or more <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, <xref:System.Windows.Forms.StatusStrip> or user-defined controls.  
+ 
+You might find that one or more <xref:System.Windows.Forms.ToolStripPanel> controls meet the needs of your application better than a <xref:System.Windows.Forms.ToolStripContainer> if you do not need the four panels and the central <xref:System.Windows.Forms.ToolStripContentPanel>.  
+ 
+You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in Multiple Document Interface (MDI) scenarios.  
+ 
+Each <xref:System.Windows.Forms.ToolStripPanel> is expandable and collapsible.  
+ 
   
- You might find that one or more <xref:System.Windows.Forms.ToolStripPanel> controls meet the needs of your application better than a <xref:System.Windows.Forms.ToolStripContainer> if you do not need the four panels and the central <xref:System.Windows.Forms.ToolStripContentPanel>.  
-  
- You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in Multiple Document Interface (MDI) scenarios.  
-  
- Each <xref:System.Windows.Forms.ToolStripPanel> is expandable and collapsible.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.Windows.Forms.ToolStripPanel> controls with a multiple document interface (MDI).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#10)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#10)]  
-  
+The following code example demonstrates how to use <xref:System.Windows.Forms.ToolStripPanel> controls with a multiple document interface (MDI).  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#10)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,10 +98,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,20 +268,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripPanel.AutoSize" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripPanel> named `ToolStripPanel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripPanel.AutoSizeChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#606](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#606)]
- [!code-vb[System.Windows.Forms.EventExamples#606](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#606)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripPanel> named `ToolStripPanel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripPanel.AutoSizeChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#606](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#606)]
+[!code-vb[System.Windows.Forms.EventExamples#606](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#606)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -380,12 +380,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolStripPanel" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStripPanel> references. This method invokes the `Dispose` method of each referenced object.  
-  
+This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStripPanel> references. This method invokes the `Dispose` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -452,13 +452,13 @@
         <summary>Adds the specified <see cref="T:System.Windows.Forms.ToolStrip" /> to a <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.ToolStripPanel.Join%2A> constructor. This example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripPanel> class overview.  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#11)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#11)]  
-  
+The following code example demonstrates the use of the <xref:System.Windows.Forms.ToolStripPanel.Join%2A> constructor. This example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripPanel> class overview.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#11)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -603,14 +603,14 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.ControlAdded" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripPanel.OnControlAdded%2A> method is called when a child control is added to the <xref:System.Windows.Forms.ToolStrip>.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripPanel.OnControlAdded%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+The <xref:System.Windows.Forms.ToolStripPanel.OnControlAdded%2A> method is called when a child control is added to the <xref:System.Windows.Forms.ToolStrip>.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripPanel.OnControlAdded%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -638,14 +638,14 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.ControlRemoved" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripPanel.OnControlRemoved%2A> is called when a child control is removed from the <xref:System.Windows.Forms.ToolStrip>.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripPanel.OnControlRemoved%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+The <xref:System.Windows.Forms.ToolStripPanel.OnControlRemoved%2A> is called when a child control is removed from the <xref:System.Windows.Forms.ToolStrip>.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripPanel.OnControlRemoved%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -673,12 +673,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.DockChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripPanel.OnDockChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripPanel.OnDockChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -706,12 +706,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripPanel.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripPanel.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -786,12 +786,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripPanel.RendererChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripPanel.OnRendererChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripPanel.OnRendererChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -819,12 +819,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripPanel.OnRightToLeftChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripPanel.OnRightToLeftChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -914,20 +914,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripPanel.Renderer" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripPanel> named `ToolStripPanel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripPanel.RendererChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#607](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#607)]
- [!code-vb[System.Windows.Forms.EventExamples#607](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#607)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripPanel> named `ToolStripPanel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripPanel.RendererChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#607](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#607)]
+[!code-vb[System.Windows.Forms.EventExamples#607](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#607)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1022,10 +1022,10 @@
         <value>An <see cref="T:System.Int32" /> representing the tab index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1054,10 +1054,10 @@
         <summary>This event is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1091,10 +1091,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1123,10 +1123,10 @@
         <summary>This event is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1159,10 +1159,10 @@
         <value>A <see cref="T:System.String" /> representing the display text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1191,10 +1191,10 @@
         <summary>This event is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

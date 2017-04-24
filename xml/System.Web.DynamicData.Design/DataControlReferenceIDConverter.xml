@@ -14,10 +14,10 @@
     <summary>Creates a user-selectable collection of data controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- At design time, the <xref:System.Web.DynamicData.Design.DataControlReferenceIDConverter> class performs type conversion of the controls in the collection. This class is typically referenced by the <xref:System.ComponentModel.TypeConverterAttribute> attribute.  
-  
+At design time, the <xref:System.Web.DynamicData.Design.DataControlReferenceIDConverter> class performs type conversion of the controls in the collection. This class is typically referenced by the <xref:System.ComponentModel.TypeConverterAttribute> attribute.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.Design.DataControlReferenceIDConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new instance of the <xref:System.Web.DynamicData.Design.DataControlReferenceIDConverter> class is created when the converter class is called by a <xref:System.ComponentModel.TypeConverterAttribute> attribute.  
-  
+A new instance of the <xref:System.Web.DynamicData.Design.DataControlReferenceIDConverter> class is created when the converter class is called by a <xref:System.ComponentModel.TypeConverterAttribute> attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,10 +65,10 @@
         <returns>A collection that contains the names of the available controls.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.Design.DataControlReferenceIDConverter.GetStandardValues%2A?displayProperty=fullName> method gets the set of controls that can be converted. It creates a <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> instance that contains objects that are valid data types in `context`.  
-  
+The <xref:System.Web.DynamicData.Design.DataControlReferenceIDConverter.GetStandardValues%2A?displayProperty=fullName> method gets the set of controls that can be converted. It creates a <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> instance that contains objects that are valid data types in `context`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

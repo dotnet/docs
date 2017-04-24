@@ -24,10 +24,10 @@
     <summary>Represents a collection of <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> objects specify access rights for specific key containers.  
-  
+<xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> objects specify access rights for specific key containers.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <returns>The index at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object is added to the end of the collection.  
-  
+The <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object is added to the end of the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -82,10 +82,10 @@
         <summary>Removes all the <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to empty the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection>.  
-  
+Use this method to empty the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <value>The number of <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Count%2A> property to determine the number of <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> objects in the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection> collection. The <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Count%2A> property is commonly used when iterating through the collection to determine the upper bound of the collection.  
-  
+Use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Count%2A> property to determine the number of <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> objects in the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection> collection. The <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Count%2A> property is commonly used when iterating through the collection to determine the upper bound of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,19 +169,19 @@
         <returns>A <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to create a <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator> object that can be used to iterate through the collection to get each item.  
-  
- Use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.Current%2A> property of the enumerator to get the item currently pointed to in the collection.  
-  
- Use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.MoveNext%2A> method of the enumerator to move to the next item in the collection.  
-  
- Use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.Reset%2A> method of the enumerator to move to the initial position.  
-  
+Use this method to create a <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator> object that can be used to iterate through the collection to get each item.  
+ 
+Use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.Current%2A> property of the enumerator to get the item currently pointed to in the collection.  
+ 
+Use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.MoveNext%2A> method of the enumerator to move to the next item in the collection.  
+ 
+Use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.Reset%2A> method of the enumerator to move to the initial position.  
+ 
 > [!NOTE]
 >  After you create a <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator> object or use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.Reset%2A> method to move the enumerator to the first item in the collection, you must call the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.MoveNext%2A> method. Otherwise, the item represented by the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.Current%2A> property is undefined.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <returns>The index of the specified <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> object in the collection, or –1 if no match is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine the index number of the specified <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object in the collection. If the specified <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object is not found, an value of –1 is returned.  
-  
+Use this method to determine the index number of the specified <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object in the collection. If the specified <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object is not found, an value of –1 is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property implements the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property and always returns `false`.  
-  
+This property implements the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property and always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,10 +265,10 @@
         <value>The <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> object at the specified index in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this indexer to get a <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object from the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection> at the specified index, using array notation.  
-  
+Use this indexer to get a <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object from the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection> at the specified index, using array notation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -298,10 +298,10 @@
         <summary>Removes the specified <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> object from thecollection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you remove an item from the collection, the index values change for subsequent items in the collection. All information about the removed item is deleted. Use this method when you want to remove a specific item by specifying the actual item to remove. To remove all items from the list, use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Clear%2A> method.  
-  
+When you remove an item from the collection, the index values change for subsequent items in the collection. All information about the removed item is deleted. Use this method when you want to remove a specific item by specifying the actual item to remove. To remove all items from the list, use the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Clear%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -326,12 +326,12 @@
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object returned in this implementation is the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection> object itself.  
-  
- For more information on the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A>property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
-  
+The object returned in this implementation is the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection> object itself.  
+ 
+For more information on the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A>property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

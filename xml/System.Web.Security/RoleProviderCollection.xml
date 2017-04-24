@@ -14,18 +14,18 @@
     <summary>A collection of objects that inherit the <see cref="T:System.Web.Security.RoleProvider" /> abstract class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The role providers for an application are exposed as a read-only <xref:System.Web.Security.RoleProviderCollection> by the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class. You can access a specific role provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Security.SqlRoleProvider>. This enables you to manage role information from multiple data stores in a single application as well as access custom members of a role provider that are not part of the <xref:System.Web.Security.RoleProvider> abstract class.  
+The role providers for an application are exposed as a read-only <xref:System.Web.Security.RoleProviderCollection> by the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class. You can access a specific role provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Security.SqlRoleProvider>. This enables you to manage role information from multiple data stores in a single application as well as access custom members of a role provider that are not part of the <xref:System.Web.Security.RoleProvider> abstract class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example lists the providers enabled for an application and their respective types.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/Providerscs.aspx#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/Providersvb.aspx#7)]  -->  
-  
+The following code example lists the providers enabled for an application and their respective types.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/Providerscs.aspx#7)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/Providersvb.aspx#7)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <summary>Creates a new, empty role-provider collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is not intended to be used from your code.  
-  
+This constructor is not intended to be used from your code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <summary>Adds a role provider to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is not intended to be used from your code.  
-  
+This constructor is not intended to be used from your code.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -106,18 +106,18 @@
         <summary>Copies the role provider collection to a one-dimensional array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> to copy role provider objects to the specified array.  
+This method uses <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> to copy role provider objects to the specified array.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.Security.RoleProviderCollection.CopyTo%2A> method to copy the contents of a <xref:System.Web.Security.RoleProviderCollection> to an array of <xref:System.Web.Security.RoleProvider> objects.  
-  
- [!code-csharp[System.Web.Security.RoleProviderCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/CS/snippetscs.aspx#3)]
- [!code-vb[System.Web.Security.RoleProviderCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/VB/snippetsvb.aspx#3)]  
-  
+The following code example uses the <xref:System.Web.Security.RoleProviderCollection.CopyTo%2A> method to copy the contents of a <xref:System.Web.Security.RoleProviderCollection> to an array of <xref:System.Web.Security.RoleProvider> objects.  
+ 
+[!code-csharp[System.Web.Security.RoleProviderCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/CS/snippetscs.aspx#3)]
+[!code-vb[System.Web.Security.RoleProviderCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/VB/snippetsvb.aspx#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,18 +143,18 @@
         <value>An object that inherits the <see cref="T:System.Web.Security.RoleProvider" /> abstract class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The role providers for an application are exposed as a read-only <xref:System.Web.Security.RoleProviderCollection> by the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class. You can access a specific role provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Security.SqlRoleProvider>. This enables you to manage role information from multiple data stores in a single application as well as access custom members of a role provider that are not part of the <xref:System.Web.Security.RoleProvider> abstract class.  
+The role providers for an application are exposed as a read-only <xref:System.Web.Security.RoleProviderCollection> by the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class. You can access a specific role provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Security.SqlRoleProvider>. This enables you to manage role information from multiple data stores in a single application as well as access custom members of a role provider that are not part of the <xref:System.Web.Security.RoleProvider> abstract class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example accesses a <xref:System.Web.Security.SqlRoleProvider> configured for an application from the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class by name.  
-  
- [!code-csharp[System.Web.Security.RoleProviderCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/CS/snippetscs.aspx#2)]
- [!code-vb[System.Web.Security.RoleProviderCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/VB/snippetsvb.aspx#2)]  
-  
+The following code example accesses a <xref:System.Web.Security.SqlRoleProvider> configured for an application from the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class by name.  
+ 
+[!code-csharp[System.Web.Security.RoleProviderCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/CS/snippetscs.aspx#2)]
+[!code-vb[System.Web.Security.RoleProviderCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/VB/snippetsvb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

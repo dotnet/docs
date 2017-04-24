@@ -29,23 +29,23 @@
     <summary>Stores all the data needed to serialize or deserialize an object. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used by objects with custom serialization behavior. The <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> method on either <xref:System.Runtime.Serialization.ISerializable> or <xref:System.Runtime.Serialization.ISerializationSurrogate> populates the <xref:System.Runtime.Serialization.SerializationInfo> store with the name, type, and value of each piece of information it wants to serialize. During deserialization, the appropriate function can extract this information.  
+This class is used by objects with custom serialization behavior. The <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> method on either <xref:System.Runtime.Serialization.ISerializable> or <xref:System.Runtime.Serialization.ISerializationSurrogate> populates the <xref:System.Runtime.Serialization.SerializationInfo> store with the name, type, and value of each piece of information it wants to serialize. During deserialization, the appropriate function can extract this information.  
+ 
+Objects are added to the <xref:System.Runtime.Serialization.SerializationInfo> store at serialization time using the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A> methods and extracted from the <xref:System.Runtime.Serialization.SerializationInfo> store at deserialization using the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> methods.  
+ 
+For more information about customizing serialization, see [Custom Serialization](~/docs/framework/serialization/custom-serialization.md).  
+ 
   
- Objects are added to the <xref:System.Runtime.Serialization.SerializationInfo> store at serialization time using the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A> methods and extracted from the <xref:System.Runtime.Serialization.SerializationInfo> store at deserialization using the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> methods.  
-  
- For more information about customizing serialization, see [Custom Serialization](~/docs/framework/serialization/custom-serialization.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Runtime.Serialization.SerializationInfo> for custom serialization and deserialization of various values.  
-  
- [!code-cpp[ISerializable Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ISerializable Interface Example/CPP/iobjectreference.cpp#1)]
- [!code-csharp[ISerializable Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable Interface Example/CS/iobjectreference.cs#1)]
- [!code-vb[ISerializable Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable Interface Example/VB/iobjectreference.vb#1)]  
-  
+The following code example demonstrates the <xref:System.Runtime.Serialization.SerializationInfo> for custom serialization and deserialization of various values.  
+ 
+[!code-cpp[ISerializable Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ISerializable Interface Example/CPP/iobjectreference.cpp#1)]
+[!code-csharp[ISerializable Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable Interface Example/CS/iobjectreference.cs#1)]
+[!code-vb[ISerializable Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable Interface Example/VB/iobjectreference.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.IFormatterConverter> passed as the `converter` parameter converts data from its internal representation to the form the user requested. The internal representation of the data within the <xref:System.Runtime.Serialization.SerializationInfo> depends on the formatter that created it.  
-  
+The <xref:System.Runtime.Serialization.IFormatterConverter> passed as the `converter` parameter converts data from its internal representation to the form the user requested. The internal representation of the data within the <xref:System.Runtime.Serialization.SerializationInfo> depends on the formatter that created it.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -158,34 +158,34 @@
         <summary>Adds a Boolean value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown. For example:  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown. For example:  
+ 
 ```csharp  
 void ISerializable.GetObject(SerializationInfo info, StreamingContext context)  
 {  
-   // This will not cause an exception to be thrown.  
-   info.AddValue("ABC", true);  
-   info.AddValue("abc", false);  
-   // However, this will cause the SerializationException to be thrown.  
-   info.AddValue("XYZ", true);  
-   info.AddValue("XYZ", false);  
+  // This will not cause an exception to be thrown.  
+  info.AddValue("ABC", true);  
+  info.AddValue("abc", false);  
+  // However, this will cause the SerializationException to be thrown.  
+  info.AddValue("XYZ", true);  
+  info.AddValue("XYZ", false);  
 }  
 ```  
-  
+ 
 ```vb  
 Private Sub GetObjectData(ByVal info As SerializationInfo, _  
 ByVal context As StreamingContext)  
-   ' This will not cause an exception to be thrown.  
-   info.AddValue("ABC", "upper case")  
-   info.AddValue("abc", "lower case")  
-   ' However, this will cause the SerializationException to be thrown.  
-   info.AddValue("XYZ", "same case")  
-   info.AddValue("XYZ", "same case")  
+  ' This will not cause an exception to be thrown.  
+  info.AddValue("ABC", "upper case")  
+  info.AddValue("abc", "lower case")  
+  ' However, this will cause the SerializationException to be thrown.  
+  info.AddValue("XYZ", "same case")  
+  info.AddValue("XYZ", "same case")  
 End Sub  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -224,10 +224,10 @@ End Sub
         <summary>Adds an 8-bit unsigned integer value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -266,10 +266,10 @@ End Sub
         <summary>Adds a Unicode character value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -308,10 +308,10 @@ End Sub
         <summary>Adds a <see cref="T:System.DateTime" /> value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -350,10 +350,10 @@ End Sub
         <summary>Adds a decimal value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -392,10 +392,10 @@ End Sub
         <summary>Adds a double-precision floating-point value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -434,10 +434,10 @@ End Sub
         <summary>Adds a 16-bit signed integer value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -476,17 +476,17 @@ End Sub
         <summary>Adds a 32-bit signed integer value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ISerializable Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ISerializable Interface Example/CPP/iobjectreference.cpp#1)]
- [!code-csharp[ISerializable Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable Interface Example/CS/iobjectreference.cs#1)]
- [!code-vb[ISerializable Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable Interface Example/VB/iobjectreference.vb#1)]  
-  
+[!code-cpp[ISerializable Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ISerializable Interface Example/CPP/iobjectreference.cpp#1)]
+[!code-csharp[ISerializable Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable Interface Example/CS/iobjectreference.cs#1)]
+[!code-vb[ISerializable Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable Interface Example/VB/iobjectreference.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -525,10 +525,10 @@ End Sub
         <summary>Adds a 64-bit signed integer value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -567,12 +567,12 @@ End Sub
         <summary>Adds the specified object into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store, where it is associated with a specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object contained in the `value` parameter is serialized as the type returned by `value`.  
-  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+The object contained in the `value` parameter is serialized as the type returned by `value`.  
+ 
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -617,10 +617,10 @@ End Sub
         <summary>Adds an 8-bit signed integer value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -659,10 +659,10 @@ End Sub
         <summary>Adds a single-precision floating-point value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -706,10 +706,10 @@ End Sub
         <summary>Adds a 16-bit unsigned integer value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -753,18 +753,18 @@ End Sub
         <summary>Adds a 32-bit unsigned integer value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A> method to customize the serialization of a type. The code adds a string and an integer to an instance of the <xref:System.Runtime.Serialization.SerializationInfo> class in the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> method of the <xref:System.Runtime.Serialization.ISerializable> interface. The code also uses the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> method to retrieve values from the <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
- [!code-csharp[ISerializable_GetObjectData#0](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable_GetObjectData/cs/ISerializable_GetObjectData.cs#0)]
- [!code-vb[ISerializable_GetObjectData#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable_GetObjectData/vb/ISerializable_GetObjectData.vb#0)]  
-  
+The following example uses the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A> method to customize the serialization of a type. The code adds a string and an integer to an instance of the <xref:System.Runtime.Serialization.SerializationInfo> class in the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> method of the <xref:System.Runtime.Serialization.ISerializable> interface. The code also uses the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> method to retrieve values from the <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
+[!code-csharp[ISerializable_GetObjectData#0](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable_GetObjectData/cs/ISerializable_GetObjectData.cs#0)]
+[!code-vb[ISerializable_GetObjectData#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable_GetObjectData/vb/ISerializable_GetObjectData.vb#0)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -808,10 +808,10 @@ End Sub
         <summary>Adds a 64-bit unsigned integer value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -852,12 +852,12 @@ End Sub
         <summary>Adds a value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store, where <paramref name="value" /> is associated with <paramref name="name" /> and is serialized as being of <see cref="T:System.Type" /><paramref name="type" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The assigned type is always the type of the object, or one of its parents.  
-  
- If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
-  
+The assigned type is always the type of the object, or one of its parents.  
+ 
+If two values are added with names that differ only by case, no exception will be thrown, which is not a recommended practice. However, adding two values with the exact same name will cause the <xref:System.Runtime.Serialization.SerializationException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="name" /> or <paramref name="type" /> is <see langword="null" />.</exception>
@@ -896,17 +896,17 @@ End Sub
         <value>The full name of the assembly of the type to serialize.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.SerializationInfo.AssemblyName%2A> is the same as the value returned by <xref:System.Reflection.Assembly.FullName%2A> property of the assembly of the containing type. This is the assembly name that the formatter uses when serializing type information for this object.  
-  
- The assembly name contains the name of the assembly, version, culture, and some security information about the object.  
-  
- Users who are changing the type being serialized (for example, to send a proxy for a particular type) will set the value of this property.  
-  
+The <xref:System.Runtime.Serialization.SerializationInfo.AssemblyName%2A> is the same as the value returned by <xref:System.Reflection.Assembly.FullName%2A> property of the assembly of the containing type. This is the assembly name that the formatter uses when serializing type information for this object.  
+ 
+The assembly name contains the name of the assembly, version, culture, and some security information about the object.  
+ 
+Users who are changing the type being serialized (for example, to send a proxy for a particular type) will set the value of this property.  
+ 
 > [!CAUTION]
 >  Do not use this property during deserialization because the value of this property is undefined.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value the property is set to is <see langword="null" />.</exception>
@@ -939,15 +939,15 @@ End Sub
         <value>The full name of the type to serialize.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.SerializationInfo.FullTypeName%2A> is the same as what would be returned by calling the <xref:System.Type.FullName%2A> on <xref:System.Type>. This is the type name the formatter uses when serializing type information for this object.  
-  
- Users who are changing the type to serialize (for example, to send a proxy for a particular type) will want to set the value of this property.  
-  
+The <xref:System.Runtime.Serialization.SerializationInfo.FullTypeName%2A> is the same as what would be returned by calling the <xref:System.Type.FullName%2A> on <xref:System.Type>. This is the type name the formatter uses when serializing type information for this object.  
+ 
+Users who are changing the type to serialize (for example, to send a proxy for a particular type) will want to set the value of this property.  
+ 
 > [!CAUTION]
 >  Do not use this property during deserialization because the value of this property is undefined.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value this property is set to is <see langword="null" />.</exception>
@@ -984,10 +984,10 @@ End Sub
         <returns>The Boolean value associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a Boolean, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a Boolean, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1027,10 +1027,10 @@ End Sub
         <returns>The 8-bit unsigned integer associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is an 8-bit unsigned integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is an 8-bit unsigned integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1070,10 +1070,10 @@ End Sub
         <returns>The Unicode character associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a Unicode character, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a Unicode character, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1113,10 +1113,10 @@ End Sub
         <returns>The <see cref="T:System.DateTime" /> value associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a <xref:System.DateTime>, or can be converted to a <xref:System.DateTime>, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a <xref:System.DateTime>, or can be converted to a <xref:System.DateTime>, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1156,10 +1156,10 @@ End Sub
         <returns>A decimal value from the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a decimal, or can be converted to a decimal, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a decimal, or can be converted to a decimal, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1199,10 +1199,10 @@ End Sub
         <returns>The double-precision floating-point value associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a double, or can be converted to a double, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a double, or can be converted to a double, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1239,10 +1239,10 @@ End Sub
         <returns>A <see cref="T:System.Runtime.Serialization.SerializationInfoEnumerator" /> for parsing the name-value pairs contained in the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function will most often be used by formatters that need to enumerate through the values before writing them out to the stream.  
-  
+This function will most often be used by formatters that need to enumerate through the values before writing them out to the stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1278,10 +1278,10 @@ End Sub
         <returns>The 16-bit signed integer associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a 16-bit signed integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a 16-bit signed integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1321,17 +1321,17 @@ End Sub
         <returns>The 32-bit signed integer associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a 32-bit signed integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+If the value is a 32-bit signed integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ISerializable Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ISerializable Interface Example/CPP/iobjectreference.cpp#1)]
- [!code-csharp[ISerializable Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable Interface Example/CS/iobjectreference.cs#1)]
- [!code-vb[ISerializable Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable Interface Example/VB/iobjectreference.vb#1)]  
-  
+[!code-cpp[ISerializable Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ISerializable Interface Example/CPP/iobjectreference.cpp#1)]
+[!code-csharp[ISerializable Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable Interface Example/CS/iobjectreference.cs#1)]
+[!code-vb[ISerializable Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable Interface Example/VB/iobjectreference.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1371,10 +1371,10 @@ End Sub
         <returns>The 64-bit signed integer associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a 64-bit signed integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a 64-bit signed integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1419,10 +1419,10 @@ End Sub
         <returns>The 8-bit signed integer associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is an `Int8`, or can be converted to an `Int8`, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is an `Int8`, or can be converted to an `Int8`, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1462,10 +1462,10 @@ End Sub
         <returns>The single-precision floating-point value associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a single-precision floating-point number, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a single-precision floating-point number, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1505,10 +1505,10 @@ End Sub
         <returns>The <see cref="T:System.String" /> associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a <xref:System.String>, or can be converted to a <xref:System.String>, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a <xref:System.String>, or can be converted to a <xref:System.String>, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1553,10 +1553,10 @@ End Sub
         <returns>The 16-bit unsigned integer associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a 16-bit unsigned integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a 16-bit unsigned integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1601,10 +1601,10 @@ End Sub
         <returns>The 32-bit unsigned integer associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a 32-bit signed integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a 32-bit signed integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1649,10 +1649,10 @@ End Sub
         <returns>The 64-bit unsigned integer associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a 64-bit unsigned integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
+If the value is a 64-bit unsigned integer, or can be converted to one, that value is returned; otherwise, a <xref:System.InvalidCastException> is thrown. All conversions are done by the <xref:System.Runtime.Serialization.IFormatterConverter> associated with this <xref:System.Runtime.Serialization.SerializationInfo>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1699,21 +1699,21 @@ End Sub
         <returns>The object of the specified <see cref="T:System.Type" /> associated with <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the data stored in the <xref:System.Runtime.Serialization.SerializationInfo> is of the type requested (or one of its derived classes), that value is returned directly. Otherwise, <xref:System.Runtime.Serialization.IFormatterConverter.Convert%2A?displayProperty=fullName> is called to convert it to the appropriate type.  
+If the data stored in the <xref:System.Runtime.Serialization.SerializationInfo> is of the type requested (or one of its derived classes), that value is returned directly. Otherwise, <xref:System.Runtime.Serialization.IFormatterConverter.Convert%2A?displayProperty=fullName> is called to convert it to the appropriate type.  
+ 
+The value returned by the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> method can always be safely cast to the type specified in the `type` parameter.  
+ 
   
- The value returned by the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> method can always be safely cast to the type specified in the `type` parameter.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> method:  
-  
- [!code-cpp[Classic SerializationInfo.GetValue Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic SerializationInfo.GetValue Example/CPP/source.cpp#1)]
- [!code-csharp[Classic SerializationInfo.GetValue Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SerializationInfo.GetValue Example/CS/source.cs#1)]
- [!code-vb[Classic SerializationInfo.GetValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SerializationInfo.GetValue Example/VB/source.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> method:  
+ 
+[!code-cpp[Classic SerializationInfo.GetValue Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic SerializationInfo.GetValue Example/CPP/source.cpp#1)]
+[!code-csharp[Classic SerializationInfo.GetValue Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SerializationInfo.GetValue Example/CS/source.cs#1)]
+[!code-vb[Classic SerializationInfo.GetValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SerializationInfo.GetValue Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1861,17 +1861,17 @@ End Sub
         <summary>Sets the <see cref="T:System.Type" /> of the object to serialize.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.Formatter> is responsible for setting the <xref:System.Type> of the <xref:System.Runtime.Serialization.SerializationInfo> instance before passing it to <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>. However, users who want to send proxies for their objects will need to change the type represented by this <xref:System.Runtime.Serialization.SerializationInfo> instance. Using the <xref:System.Runtime.Serialization.SerializationInfo.SetType%2A> method is equivalent to setting both the <xref:System.Runtime.Serialization.SerializationInfo.FullTypeName%2A> and the <xref:System.Runtime.Serialization.SerializationInfo.AssemblyName%2A>.  
+The <xref:System.Runtime.Serialization.Formatter> is responsible for setting the <xref:System.Type> of the <xref:System.Runtime.Serialization.SerializationInfo> instance before passing it to <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>. However, users who want to send proxies for their objects will need to change the type represented by this <xref:System.Runtime.Serialization.SerializationInfo> instance. Using the <xref:System.Runtime.Serialization.SerializationInfo.SetType%2A> method is equivalent to setting both the <xref:System.Runtime.Serialization.SerializationInfo.FullTypeName%2A> and the <xref:System.Runtime.Serialization.SerializationInfo.AssemblyName%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[IObjectReference Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IObjectReference Interface Example/CPP/iobjectreference.cpp#1)]
- [!code-csharp[IObjectReference Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IObjectReference Interface Example/CS/iobjectreference.cs#1)]
- [!code-vb[IObjectReference Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IObjectReference Interface Example/VB/iobjectreference.vb#1)]  
-  
+[!code-cpp[IObjectReference Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IObjectReference Interface Example/CPP/iobjectreference.cpp#1)]
+[!code-csharp[IObjectReference Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IObjectReference Interface Example/CS/iobjectreference.cs#1)]
+[!code-vb[IObjectReference Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IObjectReference Interface Example/VB/iobjectreference.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>

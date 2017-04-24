@@ -22,14 +22,14 @@
     <summary>Contains a collection of <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocation" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- An <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> maintains two <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> objects: <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A> specifies parameters used for matching activity status events and <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A> specifies parameters used to exclude activity status events from matching.  
-  
+ 
+An <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> maintains two <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> objects: <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A> specifies parameters used for matching activity status events and <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A> specifies parameters used to exclude activity status events from matching.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> to an empty list.  
-  
+The default constructor initializes the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> to an empty list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> class by using a list of activity locations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> objects specified in `locations`.  
-  
+The <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> objects specified in `locations`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

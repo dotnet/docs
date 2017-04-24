@@ -19,10 +19,10 @@
     <summary>A collection of <see cref="T:System.Xml.Schema.XmlSchemaObject" />s.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaObject> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaObject> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,36 +96,36 @@
         <returns>The index at which the item has been added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `Count` already equals the capacity, the capacity of list is doubled by automatically reallocating the internal array and copying the existing elements to the new array before the new element is added.  
-  
- If `Count` is less than the capacity, this method is an 0(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an 0(n) operation, where n is `Count`.  
-  
- The <xref:System.Xml.Schema.XmlSchemaObjectCollection.Add%2A> method expects only <xref:System.Xml.Schema.XmlSchemaExternal> and its derived types (<xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude>, and <xref:System.Xml.Schema.XmlSchemaRedefine>) as parameters. The following example illustrates adding an included schema to the <xref:System.Xml.Schema.XmlSchema.Includes%2A> collection of an existing <xref:System.Xml.Schema.XmlSchema> object.  
-  
+If `Count` already equals the capacity, the capacity of list is doubled by automatically reallocating the internal array and copying the existing elements to the new array before the new element is added.  
+ 
+If `Count` is less than the capacity, this method is an 0(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an 0(n) operation, where n is `Count`.  
+ 
+The <xref:System.Xml.Schema.XmlSchemaObjectCollection.Add%2A> method expects only <xref:System.Xml.Schema.XmlSchemaExternal> and its derived types (<xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude>, and <xref:System.Xml.Schema.XmlSchemaRedefine>) as parameters. The following example illustrates adding an included schema to the <xref:System.Xml.Schema.XmlSchema.Includes%2A> collection of an existing <xref:System.Xml.Schema.XmlSchema> object.  
+ 
 ```vb  
 Dim schema As XmlSchema = New XmlSchema()  
-  
+ 
 Dim textReader As XmlTextReader = New XmlTextReader("include.xsd")  
 Dim includeSchema As XmlSchema = XmlSchema.Read(textReader, null)  
-  
+ 
 Dim include As XmlSchemaInclude = New XmlSchemaInclude()  
 include.Schema = includeSchema;  
 schema.Includes.Add(include);  
 ```  
-  
+ 
 ```csharp  
 XmlSchema schema = new XmlSchema();  
-  
+ 
 XmlTextReader textReader = new XmlTextReader("include.xsd");  
 XmlSchema includeSchema = XmlSchema.Read(textReader, null);  
-  
+ 
 XmlSchemaInclude include = new XmlSchemaInclude();  
 include.Schema = includeSchema;  
 schema.Includes.Add(include);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -192,12 +192,12 @@ schema.Includes.Add(include);
         <summary>Copies all the <see cref="T:System.Xml.Schema.XmlSchemaObject" />s from the collection into the given array, starting at the given index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified array must be of a compatible type.  
-  
- This method uses <xref:System.Array.Copy%2A> to copy the elements.  
-  
+The specified array must be of a compatible type.  
+ 
+This method uses <xref:System.Array.Copy%2A> to copy the elements.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -295,14 +295,14 @@ schema.Includes.Add(include);
         <summary>Inserts an <see cref="T:System.Xml.Schema.XmlSchemaObject" /> to the <see langword="XmlSchemaObjectCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `Count` already equals the capacity, the capacity of the list is doubled by automatically reallocating the internal array before the new element is inserted.  
-  
- If `index` is equal to `Count`, `value` is added to the end of `XmlSchemaObjectCollection`.  
-  
- The elements that follow the insertion point move down to accommodate the new element.  
-  
+If `Count` already equals the capacity, the capacity of the list is doubled by automatically reallocating the internal array before the new element is inserted.  
+ 
+If `index` is equal to `Count`, `value` is added to the end of `XmlSchemaObjectCollection`.  
+ 
+The elements that follow the insertion point move down to accommodate the new element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -478,14 +478,14 @@ schema.Includes.Add(include);
         <summary>Removes an <see cref="T:System.Xml.Schema.XmlSchemaObject" /> from the <see langword="XmlSchemaObjectCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.CollectionBase.Count%2A>.  
-  
- This method determines equality by calling <xref:System.Object.Equals%2A>.  
-  
- The elements that follow the removed element move up to occupy the vacated spot.  
-  
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.CollectionBase.Count%2A>.  
+ 
+This method determines equality by calling <xref:System.Object.Equals%2A>.  
+ 
+The elements that follow the removed element move up to occupy the vacated spot.  
+ 
  ]]></format>
         </remarks>
       </Docs>

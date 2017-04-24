@@ -14,10 +14,10 @@
     <summary>Represents the navigation from one entity type to another entity type in the conceptual model .</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to use the <xref:System.Data.Metadata.Edm.NavigationProperty> in a conceptual model, see [NavigationProperty Element (CSDL)](http://msdn.microsoft.com/en-us/5829a238-a50e-4c81-901d-7b54fc00f27e).  
-  
+For more information about how to use the <xref:System.Data.Metadata.Edm.NavigationProperty> in a conceptual model, see [NavigationProperty Element (CSDL)](http://msdn.microsoft.com/en-us/5829a238-a50e-4c81-901d-7b54fc00f27e).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,12 +76,12 @@
         <returns>A collection of the foreign key properties.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a navigation property that is on the dependent end of a referential constraint, the <xref:System.Data.Metadata.Edm.NavigationProperty.GetDependentProperties%2A> method returns the corresponding foreign key properties. The returned properties will be in the same order as the principal end key properties.  
-  
- If the navigation property is not on the dependent end of a referential constraint, the <xref:System.Data.Metadata.Edm.NavigationProperty.GetDependentProperties%2A> method returns an empty collection.  
-  
+For a navigation property that is on the dependent end of a referential constraint, the <xref:System.Data.Metadata.Edm.NavigationProperty.GetDependentProperties%2A> method returns the corresponding foreign key properties. The returned properties will be in the same order as the principal end key properties.  
+ 
+If the navigation property is not on the dependent end of a referential constraint, the <xref:System.Data.Metadata.Edm.NavigationProperty.GetDependentProperties%2A> method returns an empty collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

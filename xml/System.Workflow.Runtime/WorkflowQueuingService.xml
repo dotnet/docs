@@ -19,24 +19,24 @@
     <summary>Provides the services for management of <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+<xref:System.Workflow.Runtime.WorkflowQueuingService> provides methods that you can use to manage the workflow queues associated with a workflow instance.  
+ 
   
- <xref:System.Workflow.Runtime.WorkflowQueuingService> provides methods that you can use to manage the workflow queues associated with a workflow instance.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
-  
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
-  
- [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
- [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
-  
+The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
+ 
+This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ 
+[!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
+[!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,20 +64,20 @@
         <returns>A <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Workflow.Runtime.WorkflowQueue> is created with the specified `queueName`. If transactional is `true`, the <xref:System.Workflow.Runtime.WorkflowQueue> is only visible inside the current transaction.  
+A <xref:System.Workflow.Runtime.WorkflowQueue> is created with the specified `queueName`. If transactional is `true`, the <xref:System.Workflow.Runtime.WorkflowQueue> is only visible inside the current transaction.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
-  
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
-  
- [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
- [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
-  
+The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
+ 
+This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ 
+[!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
+[!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -105,15 +105,15 @@
         <summary>Deletes the specified <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates a method that writes a string to the console, creates an instance of <xref:System.Workflow.Runtime.WorkflowQueuingService> by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. Finally, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.DeleteWorkflowQueue%2A> method to delete the queue associated with a `QueueName` property on the current workflow.  
-  
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
-  
- [!code-csharp[WF_Samples#224](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#224)]
- [!code-vb[WF_Samples#224](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#224)]  
-  
+The following code example demonstrates a method that writes a string to the console, creates an instance of <xref:System.Workflow.Runtime.WorkflowQueuingService> by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. Finally, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.DeleteWorkflowQueue%2A> method to delete the queue associated with a `QueueName` property on the current workflow.  
+ 
+This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ 
+[!code-csharp[WF_Samples#224](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#224)]
+[!code-vb[WF_Samples#224](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#224)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -142,15 +142,15 @@
           <see langword="true" /> if the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> exists; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
-  
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
-  
- [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
- [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
-  
+The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
+ 
+This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ 
+[!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
+[!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -178,15 +178,15 @@
         <returns>A <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
-  
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
-  
- [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
- [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
-  
+The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
+ 
+This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ 
+[!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
+[!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -210,10 +210,10 @@
         <summary>Contains the unconsumed items in the workflow queues associated with this <see cref="T:System.Workflow.Runtime.WorkflowQueuingService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a workflow instance completes or terminates all of the unconsumed items in its workflow queues that are associated with this <xref:System.Workflow.Runtime.WorkflowQueuingService> are moved to the <xref:System.Workflow.Runtime.WorkflowQueuingService.PendingMessagesProperty>.  
-  
+When a workflow instance completes or terminates all of the unconsumed items in its workflow queues that are associated with this <xref:System.Workflow.Runtime.WorkflowQueuingService> are moved to the <xref:System.Workflow.Runtime.WorkflowQueuingService.PendingMessagesProperty>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

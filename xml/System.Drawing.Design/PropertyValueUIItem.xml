@@ -14,14 +14,14 @@
     <summary>Provides information about a property displayed in the Properties window, including the associated event handler, pop-up information string, and the icon to display for the property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example provides a <xref:System.Drawing.Design.PropertyValueUIItem> object for any properties of the component named `HorizontalMargin` or `VerticalMargin`. The <xref:System.Drawing.Design.PropertyValueUIItem> for these properties provides an image, a ToolTip, and an event handler that displays a message box when the image for the property is clicked. This code example is part of a larger example provided for the <xref:System.Drawing.Design.IPropertyValueUIService> interface.  
-  
- [!code-cpp[IPropertyValueUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CPP/propertyuicomponent.cpp#2)]
- [!code-csharp[IPropertyValueUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CS/propertyuicomponent.cs#2)]
- [!code-vb[IPropertyValueUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IPropertyValueUIServiceExample/VB/propertyuicomponent.vb#2)]  
-  
+The following code example provides a <xref:System.Drawing.Design.PropertyValueUIItem> object for any properties of the component named `HorizontalMargin` or `VerticalMargin`. The <xref:System.Drawing.Design.PropertyValueUIItem> for these properties provides an image, a ToolTip, and an event handler that displays a message box when the image for the property is clicked. This code example is part of a larger example provided for the <xref:System.Drawing.Design.IPropertyValueUIService> interface.  
+ 
+[!code-cpp[IPropertyValueUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CPP/propertyuicomponent.cpp#2)]
+[!code-csharp[IPropertyValueUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CS/propertyuicomponent.cs#2)]
+[!code-vb[IPropertyValueUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IPropertyValueUIServiceExample/VB/propertyuicomponent.vb#2)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -48,14 +48,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example provides a <xref:System.Drawing.Design.PropertyValueUIItem> object for any properties of the component named `HorizontalMargin` or `VerticalMargin`. The <xref:System.Drawing.Design.PropertyValueUIItem> for these properties provides an image, a ToolTip, and an event handler that displays a message box when the image for the property is clicked. This code example is part of a larger example provided for the <xref:System.Drawing.Design.IPropertyValueUIService> interface.  
-  
- [!code-cpp[IPropertyValueUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CPP/propertyuicomponent.cpp#2)]
- [!code-csharp[IPropertyValueUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CS/propertyuicomponent.cs#2)]
- [!code-vb[IPropertyValueUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IPropertyValueUIServiceExample/VB/propertyuicomponent.vb#2)]  
-  
+The following code example provides a <xref:System.Drawing.Design.PropertyValueUIItem> object for any properties of the component named `HorizontalMargin` or `VerticalMargin`. The <xref:System.Drawing.Design.PropertyValueUIItem> for these properties provides an image, a ToolTip, and an event handler that displays a message box when the image for the property is clicked. This code example is part of a larger example provided for the <xref:System.Drawing.Design.IPropertyValueUIService> interface.  
+ 
+[!code-cpp[IPropertyValueUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CPP/propertyuicomponent.cpp#2)]
+[!code-csharp[IPropertyValueUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CS/propertyuicomponent.cs#2)]
+[!code-vb[IPropertyValueUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IPropertyValueUIServiceExample/VB/propertyuicomponent.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -79,10 +79,10 @@
         <value>The image to use for the property icon.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This image must be 8 x 8 pixels. It is advisable to have the image support transparency.  
-  
+This image must be 8 x 8 pixels. It is advisable to have the image support transparency.  
+ 
  ]]></format>
         </remarks>
       </Docs>

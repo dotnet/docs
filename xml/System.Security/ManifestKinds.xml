@@ -18,14 +18,14 @@
     <summary>Represents the type of manifest that the signature information applies to.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration has two purposes:  
-  
+This enumeration has two purposes:  
+ 
 -   In the <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method, it specifies which manifests you want to generate signature information for.  
-  
+ 
 -   In a <xref:System.Security.Cryptography.ManifestSignatureInformation> object, it shows you which manifest the signature information is generated from.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

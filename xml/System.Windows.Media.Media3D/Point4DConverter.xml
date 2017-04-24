@@ -14,28 +14,28 @@
     <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [C#]  
-  
- The following sample uses a <xref:System.Windows.Media.Media3D.Point4DConverter> structure to convert a string into a <xref:System.Windows.Media.Media3D.Point4D> structure.  
-  
+[C#]  
+ 
+The following sample uses a <xref:System.Windows.Media.Media3D.Point4DConverter> structure to convert a string into a <xref:System.Windows.Media.Media3D.Point4D> structure.  
+ 
 ```csharp  
 ...  
-  
+ 
 // Converts a String to a Point4D using a Point4DConverter  
 // Returns a Point4D.  
-  
+ 
 Point4DConverter p4DConverter = new Point4DConverter();  
 Point4D point4DResult = new Point4D();  
 string string4 = "10,20,30,40";  
-  
+ 
 point4DResult = (Point4D)p4DConverter.ConvertFromString(string4);  
 // point4DResult is equal to (10, 20, 30)  
-  
+ 
 ...  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -18,10 +18,10 @@
     <summary>Specifies how to handle existing schema mappings when performing a <see cref="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" /> operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SchemaType> usually should be set to `Mapped`, because any established table and column mappings are used.  
-  
+The <xref:System.Data.SchemaType> usually should be set to `Mapped`, because any established table and column mappings are used.  
+ 
  ]]></format>
     </remarks>
   </Docs>

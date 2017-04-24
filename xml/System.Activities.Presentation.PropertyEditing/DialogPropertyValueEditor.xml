@@ -14,27 +14,27 @@
     <summary>Container for all dialog-editing logic for <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyContainer.PropertyEntry" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class to show an inline editor that can have an associated dialog box editor.  
+Use the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class to show an inline editor that can have an associated dialog box editor.  
+ 
+The <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class can hold either a <xref:System.Windows.DataTemplate> for a dialog box editor or custom logic that is called when the dialog box is invoked.  
+ 
+Use the <xref:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton> in your <xref:System.Windows.DataTemplate> to invoke your custom <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class.  
+ 
+You can provide a <xref:System.Windows.DataTemplate> which is shown in a host dialog box, or you can override the <xref:Systems.Windows.Forms.ShowDialog> method, which enables the reuse of existing or system dialog boxes.  
+ 
+The following list shows the rules for determining whether the <xref:System.Windows.DataTemplate> or <xref:Systems.Windows.Forms.ShowDialog> method is used.  
+ 
+If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is not a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), that <xref:System.Windows.DataTemplate> is hosted in a host-specific dialog box, which provides host styling. The <xref:Systems.Windows.Forms.ShowDialog> is not called.  
+ 
+If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), the virtual <xref:Systems.Windows.Forms.ShowDialog> method is called and you can override this method to show any dialog box.  
+ 
   
- The <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class can hold either a <xref:System.Windows.DataTemplate> for a dialog box editor or custom logic that is called when the dialog box is invoked.  
-  
- Use the <xref:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton> in your <xref:System.Windows.DataTemplate> to invoke your custom <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class.  
-  
- You can provide a <xref:System.Windows.DataTemplate> which is shown in a host dialog box, or you can override the <xref:Systems.Windows.Forms.ShowDialog> method, which enables the reuse of existing or system dialog boxes.  
-  
- The following list shows the rules for determining whether the <xref:System.Windows.DataTemplate> or <xref:Systems.Windows.Forms.ShowDialog> method is used.  
-  
- If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is not a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), that <xref:System.Windows.DataTemplate> is hosted in a host-specific dialog box, which provides host styling. The <xref:Systems.Windows.Forms.ShowDialog> is not called.  
-  
- If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), the virtual <xref:Systems.Windows.Forms.ShowDialog> method is called and you can override this method to show any dialog box.  
-  
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_DialogPropertyValueEditor#0](WFD_DialogPropertyValueEditor#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,10 +91,10 @@
         <value>The <see cref="T:System.Windows.DataTemplate" /> object that is hosted by a host-specific dialog.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property returns `null`, the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.ShowDialog%2A> method is called instead.  
-  
+If this property returns `null`, the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.ShowDialog%2A> method is called instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <summary>Called when the <see cref="P:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate" /> is null and a dialog has been invoked by the user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Since the commands get handled by the host and since custom dialogs are not going to be part of that visual tree, the `commandSource` exposes an <xref:System.Windows.IInputElement> that is part of the host's visual tree and that, therefore, can be used to execute property editing commands in such a way that they are handled correctly. Overriding this method enables you to implement any custom dialog logic, such as invoking existing system dialogs.  
-  
+Since the commands get handled by the host and since custom dialogs are not going to be part of that visual tree, the `commandSource` exposes an <xref:System.Windows.IInputElement> that is part of the host's visual tree and that, therefore, can be used to execute property editing commands in such a way that they are handled correctly. Overriding this method enables you to implement any custom dialog logic, such as invoking existing system dialogs.  
+ 
  ]]></format>
         </remarks>
       </Docs>

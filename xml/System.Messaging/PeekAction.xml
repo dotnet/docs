@@ -13,10 +13,10 @@
     <summary>Indicates whether to peek the current message in a queue, or the next message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Messaging.PeekAction> enumeration with <xref:System.Messaging.MessageQueue.BeginPeek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%2CSystem.Object%2CSystem.AsyncCallback%29> and <xref:System.Messaging.MessageQueue.Peek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%29> to indicate whether you want to peek at the current message in the queue, or the next message.  
-  
+Use the <xref:System.Messaging.PeekAction> enumeration with <xref:System.Messaging.MessageQueue.BeginPeek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%2CSystem.Object%2CSystem.AsyncCallback%29> and <xref:System.Messaging.MessageQueue.Peek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%29> to indicate whether you want to peek at the current message in the queue, or the next message.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -82,10 +82,10 @@
         <summary>Initiates an animation sequence for the <see cref="T:System.Windows.DependencyProperty" /> object, based on the specified <see cref="T:System.Windows.Media.Animation.AnimationTimeline" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The animation sequence is triggered once the next frame is rendered.  
-  
+The animation sequence is triggered once the next frame is rendered.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <summary>Initiates an animation sequence for the <see cref="T:System.Windows.DependencyProperty" />.object, based on both the specified <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> and <see cref="T:System.Windows.Media.Animation.HandoffBehavior" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The animation sequence is triggered once the next frame is rendered.  
-  
+The animation sequence is triggered once the next frame is rendered.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <returns>The object representing the base value of <paramref name="Dp" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method instead of <xref:System.Windows.DependencyObject.GetValue%2A> when you want to retrieve the non-animated value of an animated property. This method takes advantage of the fact that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] animations do not remove the target property's original value. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
-  
+Use this method instead of <xref:System.Windows.DependencyObject.GetValue%2A> when you want to retrieve the non-animated value of an animated property. This method takes advantage of the fact that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] animations do not remove the target property's original value. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
           <see langword="true" /> if a <see cref="T:System.Windows.Media.Animation.Clock" /> is associated with at least one of the current object's properties; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that this property returns `true` even if the associated animation is <xref:System.Windows.Media.Animation.ClockState> or <xref:System.Windows.Media.Animation.ClockState>.  
-  
+Note that this property returns `true` even if the associated animation is <xref:System.Windows.Media.Animation.ClockState> or <xref:System.Windows.Media.Animation.ClockState>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@
         <summary>Initiates an animation sequence for this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The animation sequence is triggered once the next frame is rendered.  
-  
+The animation sequence is triggered once the next frame is rendered.  
+ 
  ]]></format>
         </remarks>
       </Docs>

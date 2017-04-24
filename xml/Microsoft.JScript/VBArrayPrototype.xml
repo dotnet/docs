@@ -97,10 +97,10 @@
         <returns>The value at the specified position in <paramref name="thisob" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `thisob` has three or fewer dimensions, `args` can contain a comma-separated list of indexes. If `thisob` has four or more dimensions, `args` can contain an array of indexes.  
-  
+If `thisob` has three or fewer dimensions, `args` can contain a comma-separated list of indexes. If `thisob` has four or more dimensions, `args` can contain an array of indexes.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

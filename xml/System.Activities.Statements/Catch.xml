@@ -14,10 +14,10 @@
     <summary>Contains the actions to be executed after an exception is thrown in the corresponding <see langword="Try" /> block of a <see cref="T:System.Activities.Statements.TryCatchFinally" /> activity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once placed in the designer, <xref:System.Activities.Statements.Catch> activities cannot be reordered in the designer.  To reorder the collection of <xref:System.Activities.Statements.Catch> activities, either delete and re-add them in the correct order, or use the xaml (code) view for the workflow.  
-  
+Once placed in the designer, <xref:System.Activities.Statements.Catch> activities cannot be reordered in the designer.  To reorder the collection of <xref:System.Activities.Statements.Catch> activities, either delete and re-add them in the correct order, or use the xaml (code) view for the workflow.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -125,10 +125,10 @@
         <value>A <see cref="T:System.Windows.Controls.DataGridLength" /> structure that represents the standard automatic sizing mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of both cells and column headers.  
-  
+The standard automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of both cells and column headers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,10 +418,10 @@
         <value>A <see cref="T:System.Windows.Controls.DataGridLength" /> structure that represents the cell-based automatic sizing mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The cell-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of cells in the column, not including column headers. This sizing mode will cause columns to expand if content that is larger than the current column size is scrolled into view. The column will not shrink after the content is scrolled out of view.  
-  
+The cell-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of cells in the column, not including column headers. This sizing mode will cause columns to expand if content that is larger than the current column size is scrolled into view. The column will not shrink after the content is scrolled out of view.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,10 +443,10 @@
         <value>A <see cref="T:System.Windows.Controls.DataGridLength" /> structure that represents the header-based automatic sizing mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The header-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of column headers only.  
-  
+The header-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of column headers only.  
+ 
  ]]></format>
         </remarks>
       </Docs>

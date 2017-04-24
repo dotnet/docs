@@ -16,10 +16,10 @@
     <summary>Defines the interface to a control adapter. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All control adapters must implement the <xref:System.Web.UI.MobileControls.IControlAdapter> interface. Usually, a control adapter inherits directly or indirectly from the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> base class, which provides a default implementation of this interface.  
-  
+All control adapters must implement the <xref:System.Web.UI.MobileControls.IControlAdapter> interface. Usually, a control adapter inherits directly or indirectly from the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> base class, which provides a default implementation of this interface.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -86,10 +86,10 @@
           <see langword="true" /> if the postback event was handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by a control when it receives a postback event notification, to check whether the event is adapter specific. If the control implements <xref:System.Web.UI.IPostBackEventHandler> and receives a postback event, the <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A> method of the control adapter is called. If events sent to the control can vary depending on the target device, the control implementation of this method must call the <xref:System.Web.UI.MobileControls.IControlAdapter.HandlePostBackEvent%2A> method of the control adapter. This method returns `true` or `false`, indicating whether the device adapter handled the event. It returns `false` by default.  
-  
+This method is called by a control when it receives a postback event notification, to check whether the event is adapter specific. If the control implements <xref:System.Web.UI.IPostBackEventHandler> and receives a postback event, the <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A> method of the control adapter is called. If events sent to the control can vary depending on the target device, the control implementation of this method must call the <xref:System.Web.UI.MobileControls.IControlAdapter.HandlePostBackEvent%2A> method of the control adapter. This method returns `true` or `false`, indicating whether the device adapter handled the event. It returns `false` by default.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <value>The approximate weight of a single item in the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A value of `-1` indicates that the default weight for the element must be used. The inheriting class must override this property. For further information about overriding this property, see [Pagination](http://msdn.microsoft.com/en-us/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
-  
+A value of `-1` indicates that the default weight for the element must be used. The inheriting class must override this property. For further information about overriding this property, see [Pagination](http://msdn.microsoft.com/en-us/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <summary>Returns the adapter-specific view for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when the control loads its private view state. A device adapter can save the adapter-specific view for a control.  
-  
+This method is called when the control loads its private view state. A device adapter can save the adapter-specific view for a control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,13 +175,13 @@
           <see langword="true" /> if the adapter handles loading the post data; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when a control that implements the <xref:System.Web.UI.IPostBackDataHandler> interface has its own <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A> method invoked.  
-  
+This method is called when a control that implements the <xref:System.Web.UI.IPostBackDataHandler> interface has its own <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A> method invoked.  
+ 
 > [!NOTE]
 >  Different devices might provide their data back to the calling server in different ways. An example is the difference between how WML and HTML report back the results of a <xref:System.Web.UI.MobileControls.SelectionList>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <summary>Called after an object, such as a form or a page, is initialized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override this method to set device-specific properties. Inheriting classes can override this method to perform other tasks. If this method is overridden in an inheriting class, you must call the base implementation.  
-  
+You can override this method to set device-specific properties. Inheriting classes can override this method to perform other tasks. If this method is overridden in an inheriting class, you must call the base implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,10 +234,10 @@
         <summary>Loads data that pertains to a control, a page, or a device adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.IControlAdapter.OnLoad%2A> method is inherited from the control's parent. If the control is a MobileControl control, then this method is inherited from the <xref:System.Web.UI.Control?displayProperty=fullName> class; if the control is a <xref:System.Web.UI.MobileControls.MobilePage> control, then this method is inherited from the <xref:System.Web.UI.Page?displayProperty=fullName> class.  
-  
+The <xref:System.Web.UI.MobileControls.IControlAdapter.OnLoad%2A> method is inherited from the control's parent. If the control is a MobileControl control, then this method is inherited from the <xref:System.Web.UI.Control?displayProperty=fullName> class; if the control is a <xref:System.Web.UI.MobileControls.MobilePage> control, then this method is inherited from the <xref:System.Web.UI.Page?displayProperty=fullName> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <summary>Unloads data that pertains to a control, a page, or a device adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the control's <xref:System.Web.UI.MobileControls.IControlAdapter.OnUnload%2A> method to perform adapter-specific unloading.  
-  
+This method is called by the control's <xref:System.Web.UI.MobileControls.IControlAdapter.OnUnload%2A> method to perform adapter-specific unloading.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,10 +308,10 @@
         <value>The page associated with the device adapter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Equivalent to calling the <xref:System.Web.UI.MobileControls.MobileControl.MobilePage%2A>.  
-  
+Equivalent to calling the <xref:System.Web.UI.MobileControls.MobileControl.MobilePage%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <summary>Called by the control's <see cref="M:System.Web.UI.MobileControls.IControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> method to perform rendering. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> class, this method renders all the children of the control.  
-  
+For the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> class, this method renders all the children of the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,10 +362,10 @@
         <returns>The newly saved adapter state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An adapter can save adapter-specific state for a control. If no such functionality is required, the adapter returns `null` (`Nothing` in Visual Basic).  
-  
+An adapter can save adapter-specific state for a control. If no such functionality is required, the adapter returns `null` (`Nothing` in Visual Basic).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,10 +387,10 @@
         <value>The approximate weight of the control, in characters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used for form pagination. A value of `-1` indicates that the default weight for the element must be used. For further information, see [Pagination Support](http://msdn.microsoft.com/en-us/78f2786d-0b5b-4760-9616-5027357713c2).  
-  
+This property is used for form pagination. A value of `-1` indicates that the default weight for the element must be used. For further information, see [Pagination Support](http://msdn.microsoft.com/en-us/78f2786d-0b5b-4760-9616-5027357713c2).  
+ 
  ]]></format>
         </remarks>
       </Docs>

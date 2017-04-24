@@ -23,19 +23,19 @@
     <summary>Customizes SOAP generation and processing for target types. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute> attribute is a custom attribute that can be applied to objects, value types, and interface objects. This attribute is used to specify information on an object type that controls how SOAP will generate the SOAP XML wire format.  
+The <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute> attribute is a custom attribute that can be applied to objects, value types, and interface objects. This attribute is used to specify information on an object type that controls how SOAP will generate the SOAP XML wire format.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates customization of SOAP generated for a class with the <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute>. The SOAP can be produced by the code shown in the <xref:System.SerializableAttribute> class example.  
-  
- [!code-cpp[SoapAttributes1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapAttributes1/CPP/s.cpp#1)]
- [!code-csharp[SoapAttributes1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapAttributes1/CS/s.cs#1)]
- [!code-vb[SoapAttributes1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapAttributes1/VB/s.vb#1)]  
-  
+The following code example demonstrates customization of SOAP generated for a class with the <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute>. The SOAP can be produced by the code shown in the <xref:System.SerializableAttribute> class example.  
+ 
+[!code-cpp[SoapAttributes1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapAttributes1/CPP/s.cpp#1)]
+[!code-csharp[SoapAttributes1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapAttributes1/CS/s.cs#1)]
+[!code-vb[SoapAttributes1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapAttributes1/VB/s.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,13 +74,13 @@
         <value>A <see cref="T:System.Runtime.Remoting.Metadata.SoapOption" /> configuration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Runtime.Remoting.Metadata.SoapOption> value indicates the SOAP configuration options that will be used with a <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute> attribute.  
-  
+A <xref:System.Runtime.Remoting.Metadata.SoapOption> value indicates the SOAP configuration options that will be used with a <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute> attribute.  
+ 
 > [!NOTE]
 >  The <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute.SoapOptions%2A> enumeration has no effect on serialization of objects with the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <value>The current implementation always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute.UseAttribute%2A> property cannot be set on the <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute> attribute.  
-  
+The <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute.UseAttribute%2A> property cannot be set on the <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute> attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">An attempt was made to set the current property.</exception>

@@ -19,14 +19,14 @@
     <summary>Wrapper class that represents attributes on a type at design time. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This class is used to represent attributes on design-time types (types that are yet to be compiled). This occurs only when validation is triggered through the designer.  
-  
+ 
+This class is used to represent attributes on design-time types (types that are yet to be compiled). This occurs only when validation is triggered through the designer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <value>A collection that contains values for each of the arguments associated with this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection is read-only.  
-  
+This collection is read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>

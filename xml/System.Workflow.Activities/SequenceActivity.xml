@@ -32,26 +32,26 @@
     <summary>Runs a set of child activities according to a single defined ordering.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+The <xref:System.Workflow.Activities.SequenceActivity> is a <xref:System.Workflow.ComponentModel.CompositeActivity>, meaning the <xref:System.Workflow.Activities.SequenceActivity> can contain other activities.  
+ 
+The <xref:System.Workflow.Activities.SequenceActivity> class coordinates the running of a set of child activities in an ordered manner, one at a time.  The <xref:System.Workflow.Activities.SequenceActivity> is completed when the final child activity is finished.  
+ 
+Classes that derive from <xref:System.Workflow.Activities.SequenceActivity> should not implement the <xref:System.Workflow.ComponentModel.IActivityEventListener%601> interface, or the derived class will not execute correctly.  
+ 
   
- The <xref:System.Workflow.Activities.SequenceActivity> is a <xref:System.Workflow.ComponentModel.CompositeActivity>, meaning the <xref:System.Workflow.Activities.SequenceActivity> can contain other activities.  
-  
- The <xref:System.Workflow.Activities.SequenceActivity> class coordinates the running of a set of child activities in an ordered manner, one at a time.  The <xref:System.Workflow.Activities.SequenceActivity> is completed when the final child activity is finished.  
-  
- Classes that derive from <xref:System.Workflow.Activities.SequenceActivity> should not implement the <xref:System.Workflow.ComponentModel.IActivityEventListener%601> interface, or the derived class will not execute correctly.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.SequenceActivity> class and add the <xref:System.Workflow.Activities.SequenceActivity> classes to the <xref:System.Workflow.Activities.ParallelActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
-  
- [!code-csharp[wf_samples#181](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#181)]
- [!code-vb[wf_samples#181](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#181)]  
-  
+The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.SequenceActivity> class and add the <xref:System.Workflow.Activities.SequenceActivity> classes to the <xref:System.Workflow.Activities.ParallelActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
+ 
+[!code-csharp[wf_samples#181](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#181)]
+[!code-vb[wf_samples#181](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#181)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,13 +70,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SequenceActivity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.SequenceActivity> class and add the <xref:System.Workflow.Activities.SequenceActivity> classes to the <xref:System.Workflow.Activities.ParallelActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
-  
- [!code-csharp[wf_samples#277](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#277)]
- [!code-vb[wf_samples#277](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#277)]  
-  
+The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.SequenceActivity> class and add the <xref:System.Workflow.Activities.SequenceActivity> classes to the <xref:System.Workflow.Activities.ParallelActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
+ 
+[!code-csharp[wf_samples#277](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#277)]
+[!code-vb[wf_samples#277](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#277)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

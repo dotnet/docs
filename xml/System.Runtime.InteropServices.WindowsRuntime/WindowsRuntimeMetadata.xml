@@ -15,13 +15,13 @@
     <summary>Provides an event for resolving reflection-only type requests for types that are provided by Windows Metadata files, and methods for performing the resolution.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the .NET Framework, assembly identity isn’t important for [!INCLUDE[wrt](~/includes/wrt-md.md)] types. In the [!INCLUDE[wrt](~/includes/wrt-md.md)], Windows Metadata files (.WinMD files) contain only metadata, not code. Types can move from one Windows Metadata file to another in a service pack release, so it’s important to be able to locate the Windows Metadata files that are associated with a namespace.  
-  
+Unlike the .NET Framework, assembly identity isn’t important for [!INCLUDE[wrt](~/includes/wrt-md.md)] types. In the [!INCLUDE[wrt](~/includes/wrt-md.md)], Windows Metadata files (.WinMD files) contain only metadata, not code. Types can move from one Windows Metadata file to another in a service pack release, so it’s important to be able to locate the Windows Metadata files that are associated with a namespace.  
+ 
 > [!NOTE]
 >  Sub-namespaces don’t imply containment. That is, namespace A.B isn't contained in namespace A.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,15 +62,15 @@
         <summary>Occurs when the resolution of a Windows Metadata file fails in the reflection-only context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After this event is raised and handled, it is not raised again for the lifetime of the application domain. The list of files that defines the namespace cannot be changed. This event is analogous to the <xref:System.AppDomain.ReflectionOnlyAssemblyResolve> event for managed assemblies.  
-  
- See the <xref:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs> class.  
-  
+After this event is raised and handled, it is not raised again for the lifetime of the application domain. The list of files that defines the namespace cannot be changed. This event is analogous to the <xref:System.AppDomain.ReflectionOnlyAssemblyResolve> event for managed assemblies.  
+ 
+See the <xref:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs> class.  
+ 
 > [!IMPORTANT]
 >  The event handler for this event should not throw exceptions.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -100,10 +100,10 @@
         <returns>An enumerable list of strings that represent the Windows Metadata files that define <paramref name="namespaceName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method overload is equivalent to calling the <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.ResolveNamespace%28System.String%2CSystem.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29> method overload and specifying `null` for the `windowsSdkFilePath` parameter.  
-  
+Calling this method overload is equivalent to calling the <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.ResolveNamespace%28System.String%2CSystem.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29> method overload and specifying `null` for the `windowsSdkFilePath` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operating system version does not support the [!INCLUDE[wrt](~/includes/wrt-md.md)].</exception>
@@ -138,10 +138,10 @@
         <returns>An enumerable list of strings that represent the Windows Metadata files that define <paramref name="namespaceName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The path you specify for `windowsSdkFilePath` is searched only for namespaces that begin with Windows.  
-  
+The path you specify for `windowsSdkFilePath` is searched only for namespaces that begin with Windows.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operating system version does not support the [!INCLUDE[wrt](~/includes/wrt-md.md)].</exception>

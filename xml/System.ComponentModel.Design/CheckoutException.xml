@@ -19,14 +19,14 @@
     <summary>The exception that is thrown when an attempt to check out a file that is checked into a source code management program is canceled or fails.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates throwing a <xref:System.ComponentModel.Design.CheckoutException>.  
-  
- [!code-cpp[CheckoutExceptionExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckoutExceptionExample/CPP/checkoutexceptionexample.cpp#1)]
- [!code-csharp[CheckoutExceptionExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckoutExceptionExample/CS/checkoutexceptionexample.cs#1)]
- [!code-vb[CheckoutExceptionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckoutExceptionExample/VB/checkoutexceptionexample.vb#1)]  
-  
+The following code example demonstrates throwing a <xref:System.ComponentModel.Design.CheckoutException>.  
+ 
+[!code-cpp[CheckoutExceptionExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckoutExceptionExample/CPP/checkoutexceptionexample.cpp#1)]
+[!code-csharp[CheckoutExceptionExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckoutExceptionExample/CS/checkoutexceptionexample.cs#1)]
+[!code-vb[CheckoutExceptionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckoutExceptionExample/VB/checkoutexceptionexample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -170,10 +170,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.CheckoutException" /> class that specifies that the check out was canceled. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception occurs if the user selects `Cancel` on the checkout dialog box.  
-  
+This exception occurs if the user selects `Cancel` on the checkout dialog box.  
+ 
  ]]></format>
         </remarks>
       </Docs>

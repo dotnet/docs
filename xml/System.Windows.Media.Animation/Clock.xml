@@ -14,21 +14,21 @@
     <summary>Maintains run-time timing state for a <see cref="T:System.Windows.Media.Animation.Timeline" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Animation.Timeline>, by itself, doesn't actually do anything other than describe a segment of time. It's the timeline's <xref:System.Windows.Media.Animation.Clock> object that does the real work: it maintains timing-related run-time state for the timeline.  
-  
- In most cases, a clock is created automatically for your timeline. When you animate by using a <xref:System.Windows.Media.Animation.Storyboard> or the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method, clocks are automatically created for your timelines and animations and applied to their targeted properties. For examples, see [How to: Animate a Property by Using a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md) and [How to: Animate a Property Without Using a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-without-using-a-storyboard.md).  
-  
- You can also create a <xref:System.Windows.Media.Animation.Clock> explicitly by using the <xref:System.Windows.Media.Animation.Timeline.CreateClock%2A> method. In performance-intensive scenarios, such as animating large numbers of similar objects, managing your own <xref:System.Windows.Media.Animation.Clock> use can provide performance benefits.  
-  
- Clocks are arranged in trees that match the structure of the <xref:System.Windows.Media.Animation.Timeline> objects tree from which they are created. The root clock of such a timing tree can be interactively manipulated (paused, resumed, stopped, and so on) by retrieving its <xref:System.Windows.Media.Animation.Clock.Controller%2A>. Non-root clocks cannot be directly controlled.  
-  
- Once created, a clock cannot be modified (but it can be manipulated).  
-  
+A <xref:System.Windows.Media.Animation.Timeline>, by itself, doesn't actually do anything other than describe a segment of time. It's the timeline's <xref:System.Windows.Media.Animation.Clock> object that does the real work: it maintains timing-related run-time state for the timeline.  
+ 
+In most cases, a clock is created automatically for your timeline. When you animate by using a <xref:System.Windows.Media.Animation.Storyboard> or the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method, clocks are automatically created for your timelines and animations and applied to their targeted properties. For examples, see [How to: Animate a Property by Using a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md) and [How to: Animate a Property Without Using a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-without-using-a-storyboard.md).  
+ 
+You can also create a <xref:System.Windows.Media.Animation.Clock> explicitly by using the <xref:System.Windows.Media.Animation.Timeline.CreateClock%2A> method. In performance-intensive scenarios, such as animating large numbers of similar objects, managing your own <xref:System.Windows.Media.Animation.Clock> use can provide performance benefits.  
+ 
+Clocks are arranged in trees that match the structure of the <xref:System.Windows.Media.Animation.Timeline> objects tree from which they are created. The root clock of such a timing tree can be interactively manipulated (paused, resumed, stopped, and so on) by retrieving its <xref:System.Windows.Media.Animation.Clock.Controller%2A>. Non-root clocks cannot be directly controlled.  
+ 
+Once created, a clock cannot be modified (but it can be manipulated).  
+ 
 ## Using a Timeline as a Timer  
- A timeline's clock will only progress when there's an event handler associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
-  
+A timeline's clock will only progress when there's an event handler associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -70,12 +70,12 @@
         <summary>Occurs when this clock has completely finished playing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this clock is the root clock of a clock tree, it has completed playing after it reaches the end of its active duration (which includes repeats) and all its children have reached the end of their active durations. If this clock is a child clock, it is considered to have completely finished playing when the root clock of the clock tree to which it belongs reaches the end of its active duration and all its child clocks have finished playing.  
-  
- Stopping a clock does not trigger its completed event, but advancing it to its fill period does.  
-  
+If this clock is the root clock of a clock tree, it has completed playing after it reaches the end of its active duration (which includes repeats) and all its children have reached the end of their active durations. If this clock is a child clock, it is considered to have completely finished playing when the root clock of the clock tree to which it belongs reaches the end of its active duration and all its child clocks have finished playing.  
+ 
+Stopping a clock does not trigger its completed event, but advancing it to its fill period does.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <value>A <see cref="T:System.Windows.Media.Animation.ClockController" /> if this is a root clock; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only root clocks can be interactively controlled.  
-  
+Only root clocks can be interactively controlled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,12 +139,12 @@
         <summary>Occurs when the clock's speed is updated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Pausing, resuming, reversing, accelerating, decelerating, seeking, stopping, or changing a clock's interactive speed using a <xref:System.Windows.Media.Animation.ClockController> triggers this event.  
-  
- Although this event occurs when the <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed%2A> property becomes invalid, that doesn't necessarily mean the property changed.  
-  
+Pausing, resuming, reversing, accelerating, decelerating, seeking, stopping, or changing a clock's interactive speed using a <xref:System.Windows.Media.Animation.ClockController> triggers this event.  
+ 
+Although this event occurs when the <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed%2A> property becomes invalid, that doesn't necessarily mean the property changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,14 +184,14 @@
         <value>This clock's current iteration within its current active period, or <see langword="null" /> if this clock is stopped.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A clock's first iteration has a value of 1.  
-  
- If this clock's timeline has an <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> setting of `true`, a full iteration consists of a forward-reverse pair, not just one of these segments.  
-  
- Regardless of its current iteration, seeking a clock returns its current iteration to 1. Restarting a clock also returns its current iteration to 1.  
-  
+A clock's first iteration has a value of 1.  
+ 
+If this clock's timeline has an <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> setting of `true`, a full iteration consists of a forward-reverse pair, not just one of these segments.  
+ 
+Regardless of its current iteration, seeking a clock returns its current iteration to 1. Restarting a clock also returns its current iteration to 1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,15 +214,15 @@
           <see langword="null" /> if this clock is <see cref="F:System.Windows.Media.Animation.ClockState.Stopped" />, or 0.0 if this clock is active and its <see cref="P:System.Windows.Media.Animation.Clock.Timeline" /> has a <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> of <see cref="P:System.Windows.Duration.Forever" />; otherwise, a value between 0.0 and 1.0 that indicates the current progress of this Clock within its current iteration. A value of 0.0 indicates no progress, and a value of 1.0 indicates that the clock is at the end of its current iteration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property indicates the <xref:System.Windows.Media.Animation.Clock.CurrentTime%2A> normalized by the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of this clock's <xref:System.Windows.Media.Animation.Clock.Timeline%2A>.  
-  
- A clock that is <xref:System.Windows.Media.Animation.ClockState> has a <xref:System.Windows.Media.Animation.Clock.CurrentProgress%2A> of 1.0.  
-  
+The value of this property indicates the <xref:System.Windows.Media.Animation.Clock.CurrentTime%2A> normalized by the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of this clock's <xref:System.Windows.Media.Animation.Clock.Timeline%2A>.  
+ 
+A clock that is <xref:System.Windows.Media.Animation.ClockState> has a <xref:System.Windows.Media.Animation.Clock.CurrentProgress%2A> of 1.0.  
+ 
 ## Using a Timeline as a Timer  
- A timeline's clock will only progress when there's an event hander associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
-  
+A timeline's clock will only progress when there's an event hander associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,12 +244,12 @@
         <value>The current state of the clock: <see cref="F:System.Windows.Media.Animation.ClockState.Active" />, <see cref="F:System.Windows.Media.Animation.ClockState.Filling" />, or <see cref="F:System.Windows.Media.Animation.ClockState.Stopped" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note the clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> property doesn't tell you whether it's paused. To determine whether a clock is paused, use the <xref:System.Windows.Media.Animation.Clock.IsPaused%2A> property.  
-  
- The <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> occurs whenever the value of this property changes.  
-  
+Note the clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> property doesn't tell you whether it's paused. To determine whether a clock is paused, use the <xref:System.Windows.Media.Animation.Clock.IsPaused%2A> property.  
+ 
+The <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> occurs whenever the value of this property changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,14 +270,14 @@
         <summary>Occurs when the clock's <see cref="P:System.Windows.Media.Animation.Clock.CurrentState" /> property is updated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> event when you want to be notified if when the clock starts, stops, or fills. The <xref:System.Object> parameter of the <xref:System.EventHandler> event handler is the <xref:System.Windows.Media.Animation.Clock> whose state was invalidated.  
-  
- Pausing a <xref:System.Windows.Media.Animation.Clock> does not change its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A>. To be notified when a clock becomes paused, use the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
-  
- Although this event occurs when the <xref:System.Windows.Media.Animation.ClockState> becomes invalid, that doesn't necessarily mean the <xref:System.Windows.Media.Animation.ClockState> changed: a <xref:System.Windows.Media.Animation.Clock> that switches from <xref:System.Windows.Media.Animation.ClockState> to <xref:System.Windows.Media.Animation.ClockState> and then back to <xref:System.Windows.Media.Animation.ClockState> in the same tick will cause this event to fire, but its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> property won't actually change.  
-  
+Use the <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> event when you want to be notified if when the clock starts, stops, or fills. The <xref:System.Object> parameter of the <xref:System.EventHandler> event handler is the <xref:System.Windows.Media.Animation.Clock> whose state was invalidated.  
+ 
+Pausing a <xref:System.Windows.Media.Animation.Clock> does not change its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A>. To be notified when a clock becomes paused, use the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
+ 
+Although this event occurs when the <xref:System.Windows.Media.Animation.ClockState> becomes invalid, that doesn't necessarily mean the <xref:System.Windows.Media.Animation.ClockState> changed: a <xref:System.Windows.Media.Animation.Clock> that switches from <xref:System.Windows.Media.Animation.ClockState> to <xref:System.Windows.Media.Animation.ClockState> and then back to <xref:System.Windows.Media.Animation.ClockState> in the same tick will cause this event to fire, but its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> property won't actually change.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,12 +300,12 @@
           <see langword="null" /> if this clock is <see cref="F:System.Windows.Media.Animation.ClockState.Stopped" />; otherwise, the current time of this clock.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Using a Timeline as a Timer  
- A timeline's clock will only progress when there's an event hander associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
-  
+A timeline's clock will only progress when there's an event hander associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
         <summary>Occurs when this clock's <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> becomes invalid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A clock's <xref:System.Windows.Media.Animation.Clock.CurrentTime%2A> becomes invalid when the clock progresses. The following interactive operations also trigger the CurrentTimeInvalidated event: <xref:System.Windows.Media.Animation.ClockController.Begin%2A>, <xref:System.Windows.Media.Animation.ClockController.SkipToFill%2A>, <xref:System.Windows.Media.Animation.ClockController.Seek%2A>, <xref:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick%2A>, and <xref:System.Windows.Media.Animation.ClockController.Stop%2A>.  
-  
+A clock's <xref:System.Windows.Media.Animation.Clock.CurrentTime%2A> becomes invalid when the clock progresses. The following interactive operations also trigger the CurrentTimeInvalidated event: <xref:System.Windows.Media.Animation.ClockController.Begin%2A>, <xref:System.Windows.Media.Animation.ClockController.SkipToFill%2A>, <xref:System.Windows.Media.Animation.ClockController.Seek%2A>, <xref:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick%2A>, and <xref:System.Windows.Media.Animation.ClockController.Stop%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,10 +370,10 @@
         <returns>Returns **true** if the <see cref="T:System.Windows.Media.Animation.Clock" /> has its own external source for time, which may require synchronization with the timing system; otherwise, **false**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Media being played using <xref:System.Windows.Media.MediaTimeline> within a <xref:System.Windows.Media.Animation.Storyboard> is an example of creating a <xref:System.Windows.Media.Animation.Clock> that would have an external time source (a video clip for example) which may require synchronization with other timelines within the <xref:System.Windows.Media.Animation.Storyboard>. See <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> for more information.  
-  
+Media being played using <xref:System.Windows.Media.MediaTimeline> within a <xref:System.Windows.Media.Animation.Storyboard> is an example of creating a <xref:System.Windows.Media.Animation.Clock> that would have an external time source (a video clip for example) which may require synchronization with other timelines within the <xref:System.Windows.Media.Animation.Storyboard>. See <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> for more information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,10 +396,10 @@
         <returns>The current time of this clock if it is active or filling; otherwise, <see cref="F:System.TimeSpan.Zero" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used in the implementation of the <xref:System.Windows.Media.Animation.Clock.CurrentTime%2A> method and should not be called directly from your code.  
-  
+This method is used in the implementation of the <xref:System.Windows.Media.Animation.Clock.CurrentTime%2A> method and should not be called directly from your code.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -462,10 +462,10 @@
         <value>The natural duration of this clock, as determined by its <see cref="P:System.Windows.Media.Animation.Clock.Timeline" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about natural duration, see the <xref:System.Windows.Media.Animation.Timeline.GetNaturalDuration%2A?displayProperty=fullName> method.  
-  
+For more information about natural duration, see the <xref:System.Windows.Media.Animation.Timeline.GetNaturalDuration%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,10 +558,10 @@
         <value>The <see cref="P:System.Windows.Media.Animation.Clock.Timeline" /> from which this <see cref="T:System.Windows.Media.Animation.Clock" /> was created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Modifying a clock's <xref:System.Windows.Media.MediaTimeline> does not update the clock; a new clock must be created from the modified <xref:System.Windows.Media.Animation.Timeline>.  
-  
+Modifying a clock's <xref:System.Windows.Media.MediaTimeline> does not update the clock; a new clock must be created from the modified <xref:System.Windows.Media.Animation.Timeline>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

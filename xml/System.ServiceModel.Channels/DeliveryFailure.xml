@@ -13,18 +13,18 @@
     <summary>Specifies the possible types of delivery failure for a message read from the queue.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can get the <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> property to determine why a message failed delivery and was sent to the dead-letter queue. For additional information about message processing in a dead-letter queue, see [Using Dead-Letter Queues to Handle Message Transfer Failures](~/docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md).  
+You can get the <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> property to determine why a message failed delivery and was sent to the dead-letter queue. For additional information about message processing in a dead-letter queue, see [Using Dead-Letter Queues to Handle Message Transfer Failures](~/docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The example below shows how to access the <xref:System.ServiceModel.Channels.DeliveryFailure> of a message within a service operation.  
-  
- [!code-csharp[S_DeadLetter#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_deadletter/cs/dlservice.cs#0)]
- [!code-vb[S_DeadLetter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_deadletter/vb/dlservice.vb#0)]  
-  
+The example below shows how to access the <xref:System.ServiceModel.Channels.DeliveryFailure> of a message within a service operation.  
+ 
+[!code-csharp[S_DeadLetter#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_deadletter/cs/dlservice.cs#0)]
+[!code-vb[S_DeadLetter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_deadletter/vb/dlservice.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

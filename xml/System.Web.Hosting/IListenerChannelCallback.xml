@@ -19,10 +19,10 @@
     <summary>Provides listener-channel notifications from protocol handlers to the worker process framework. Also enables protocol handlers to access additional parameters, such as the ID of the listener channel.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.IListenerChannelCallback> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.IListenerChannelCallback> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -50,10 +50,10 @@
         <summary>Retrieves data that the protocol manager will pass to a listener channel when the protocol manager is starting that listener channel.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.IListenerChannelCallback.GetBlob%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.IListenerChannelCallback.GetBlob%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -77,10 +77,10 @@
         <returns>The size, in bytes, of the data that is in the listener channel buffer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.IListenerChannelCallback.GetBlobLength%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.IListenerChannelCallback.GetBlobLength%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -104,10 +104,10 @@
         <returns>The ID of the listener channel.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.IListenerChannelCallback.GetId%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.IListenerChannelCallback.GetId%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -130,12 +130,12 @@
         <summary>Notifies the worker process framework that a new message was received.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method supports the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] infrastructure and is not intended to be used directly from your code.  
-  
- <xref:System.Web.Hosting.IListenerChannelCallback.ReportMessageReceived%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+This method supports the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] infrastructure and is not intended to be used directly from your code.  
+ 
+<xref:System.Web.Hosting.IListenerChannelCallback.ReportMessageReceived%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -158,10 +158,10 @@
         <summary>Notifies the worker process framework that a listener channel has started.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.IListenerChannelCallback.ReportStarted%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.IListenerChannelCallback.ReportStarted%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -187,10 +187,10 @@
         <summary>Notifies the worker process framework that a listener channel has stopped.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.IListenerChannelCallback.ReportStopped%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.IListenerChannelCallback.ReportStopped%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

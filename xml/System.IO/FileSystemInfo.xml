@@ -33,33 +33,33 @@
     <summary>Provides the base class for both <see cref="T:System.IO.FileInfo" /> and <see cref="T:System.IO.DirectoryInfo" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.FileSystemInfo> class contains methods that are common to file and directory manipulation. A <xref:System.IO.FileSystemInfo> object can represent either a file or a directory, thus serving as the basis for <xref:System.IO.FileInfo> or <xref:System.IO.DirectoryInfo> objects. Use this base class when parsing a lot of files and directories.  
-  
- A derived class can inherit from <xref:System.IO.FileSystemInfo> only if the derived class has the AllAccess permission from the <xref:System.Security.Permissions.FileIOPermissionAccess> enumeration.  
-  
- In members that accept a path, the path can refer to a file or just a directory. The specified path can also refer to a relative path or a Universal Naming Convention (UNC) path for a server and share name. For example, all the following are acceptable paths:  
-  
+The <xref:System.IO.FileSystemInfo> class contains methods that are common to file and directory manipulation. A <xref:System.IO.FileSystemInfo> object can represent either a file or a directory, thus serving as the basis for <xref:System.IO.FileInfo> or <xref:System.IO.DirectoryInfo> objects. Use this base class when parsing a lot of files and directories.  
+ 
+A derived class can inherit from <xref:System.IO.FileSystemInfo> only if the derived class has the AllAccess permission from the <xref:System.Security.Permissions.FileIOPermissionAccess> enumeration.  
+ 
+In members that accept a path, the path can refer to a file or just a directory. The specified path can also refer to a relative path or a Universal Naming Convention (UNC) path for a server and share name. For example, all the following are acceptable paths:  
+ 
 -   "c:\\\MyDir\\\MyFile.txt" in C#, or "c:\MyDir\MyFile.txt" in Visual Basic.  
-  
+ 
 -   "c:\\\MyDir" in C#, or "c:\MyDir" in Visual Basic.  
-  
+ 
 -   "MyDir\\\MySubdir" in C#, or "MyDir\MySubDir" in Visual Basic.  
-  
+ 
 -   "\\\\\\\MyServer\\\MyShare" in C#, or "\\\MyServer\MyShare" in Visual Basic.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to loop through all the files and directories, querying some information about each entry.  
-  
- [!code-cpp[FileSystemInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/FileSystemInfo/cpp/program.cpp#1)]
- [!code-csharp[FileSystemInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemInfo/CS/program.cs#1)]
- [!code-vb[FileSystemInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemInfo/VB/FileSystemInfo.vb#1)]  
-  
+The following example shows how to loop through all the files and directories, querying some information about each entry.  
+ 
+[!code-cpp[FileSystemInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/FileSystemInfo/cpp/program.cpp#1)]
+[!code-csharp[FileSystemInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemInfo/CS/program.cs#1)]
+[!code-vb[FileSystemInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemInfo/VB/FileSystemInfo.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to inherit from this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />  
@@ -90,10 +90,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileSystemInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileSystemInfo" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> is null.</exception>
@@ -166,39 +166,39 @@
           <see cref="T:System.IO.FileAttributes" /> of the current <see cref="T:System.IO.FileSystemInfo" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.IO.FileSystemInfo.Attributes%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
-  
+The value of the <xref:System.IO.FileSystemInfo.Attributes%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
+ 
 -   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+ 
+To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
+ 
+The value of this property is a combination of the archive, compressed, directory, hidden, offline, read-only, system, and temporary file attribute flags.  
+ 
+When you set this value, use the bitwise OR operator (`|` in C# or `Or` in Visual Basic) to apply more than one value. To retain any existing values in the <xref:System.IO.FileSystemInfo.Attributes%2A> property, include the value of the <xref:System.IO.FileSystemInfo.Attributes%2A> property in your assignment. For example:  
+ 
+`exampleFile.Attributes = exampleFile.Attributes | FileAttributes.ReadOnly;`  
+ 
   
- To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
-  
- The value of this property is a combination of the archive, compressed, directory, hidden, offline, read-only, system, and temporary file attribute flags.  
-  
- When you set this value, use the bitwise OR operator (`|` in C# or `Or` in Visual Basic) to apply more than one value. To retain any existing values in the <xref:System.IO.FileSystemInfo.Attributes%2A> property, include the value of the <xref:System.IO.FileSystemInfo.Attributes%2A> property in your assignment. For example:  
-  
- `exampleFile.Attributes = exampleFile.Attributes | FileAttributes.ReadOnly;`  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.IO.FileSystemInfo.Attributes%2A> property. This code example is part of a larger example provided for the <xref:System.IO.FileSystemInfo> class.  
-  
- [!code-cpp[FileSystemInfo#2](~/samples/snippets/cpp/VS_Snippets_CLR/FileSystemInfo/cpp/program.cpp#2)]
- [!code-csharp[FileSystemInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemInfo/CS/program.cs#2)]
- [!code-vb[FileSystemInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemInfo/VB/FileSystemInfo.vb#2)]  
-  
+The following example demonstrates the <xref:System.IO.FileSystemInfo.Attributes%2A> property. This code example is part of a larger example provided for the <xref:System.IO.FileSystemInfo> class.  
+ 
+[!code-cpp[FileSystemInfo#2](~/samples/snippets/cpp/VS_Snippets_CLR/FileSystemInfo/cpp/program.cpp#2)]
+[!code-csharp[FileSystemInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemInfo/CS/program.cs#2)]
+[!code-vb[FileSystemInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemInfo/VB/FileSystemInfo.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.FileNotFoundException">The specified file does not exist.</exception>
@@ -240,41 +240,41 @@
         <value>The creation date and time of the current <see cref="T:System.IO.FileSystemInfo" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
- The value of the <xref:System.IO.FileSystemInfo.CreationTime%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
-  
+**Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+The value of the <xref:System.IO.FileSystemInfo.CreationTime%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
+ 
 -   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+ 
+To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
+ 
+If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
+NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. This process is known as file tunneling. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
+ 
+This property value is `null` if the file system containing the <xref:System.IO.FileSystemInfo> object does not support this information.  
+ 
   
- To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
-  
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. This process is known as file tunneling. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
-  
- This property value is `null` if the file system containing the <xref:System.IO.FileSystemInfo> object does not support this information.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.IO.FileSystemInfo.CreationTime%2A> property. This code example is part of a larger example provided for the <xref:System.IO.FileSystemInfo> class.  
-  
- [!code-cpp[FileSystemInfo#2](~/samples/snippets/cpp/VS_Snippets_CLR/FileSystemInfo/cpp/program.cpp#2)]
- [!code-csharp[FileSystemInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemInfo/CS/program.cs#2)]
- [!code-vb[FileSystemInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemInfo/VB/FileSystemInfo.vb#2)]  
-  
+The following example demonstrates the <xref:System.IO.FileSystemInfo.CreationTime%2A> property. This code example is part of a larger example provided for the <xref:System.IO.FileSystemInfo> class.  
+ 
+[!code-cpp[FileSystemInfo#2](~/samples/snippets/cpp/VS_Snippets_CLR/FileSystemInfo/cpp/program.cpp#2)]
+[!code-csharp[FileSystemInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemInfo/CS/program.cs#2)]
+[!code-vb[FileSystemInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemInfo/VB/FileSystemInfo.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">
@@ -319,32 +319,32 @@
         <value>The creation date and time in UTC format of the current <see cref="T:System.IO.FileSystemInfo" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
- The value of the <xref:System.IO.FileSystemInfo.CreationTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
-  
+**Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+The value of the <xref:System.IO.FileSystemInfo.CreationTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
+ 
 -   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
-  
- To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
-  
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
-  
- NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. This process is known as file tunneling. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
-  
- This property value is `null` if the file system containing the <xref:System.IO.FileSystemInfo> object does not support this information.  
-  
+ 
+To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
+ 
+If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
+ 
+NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. This process is known as file tunneling. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
+ 
+This property value is `null` if the file system containing the <xref:System.IO.FileSystemInfo> object does not support this information.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">
@@ -411,10 +411,10 @@
           <see langword="true" /> if the file or directory exists; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -445,12 +445,12 @@
         <value>A string containing the <see cref="T:System.IO.FileSystemInfo" /> extension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Extension` property returns the <xref:System.IO.FileSystemInfo> extension, including the period (.). For example, for a file c:\NewFile.txt, this property returns ".txt".  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+The `Extension` property returns the <xref:System.IO.FileSystemInfo> extension, including the period (.). For example, for a file c:\NewFile.txt, this property returns ".txt".  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -460,7 +460,7 @@
 |Retrieve only the file name a path.|<xref:System.IO.Path.GetFileNameWithoutExtension%2A>|  
 |Retrieve only the directory name from a path.|<xref:System.IO.Path.GetDirectoryName%2A>|  
 |Change the extension of a file.|<xref:System.IO.Path.ChangeExtension%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -496,21 +496,21 @@
         <value>A string containing the full path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, for a file c:\NewFile.txt, this property returns "c:\NewFile.txt".  
+For example, for a file c:\NewFile.txt, this property returns "c:\NewFile.txt".  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.IO.FileSystemInfo.FullName%2A> property. This code example is part of a larger example provided for the <xref:System.IO.FileSystemInfo> class.  
-  
- [!code-cpp[FileSystemInfo#2](~/samples/snippets/cpp/VS_Snippets_CLR/FileSystemInfo/cpp/program.cpp#2)]
- [!code-csharp[FileSystemInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemInfo/CS/program.cs#2)]
- [!code-vb[FileSystemInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemInfo/VB/FileSystemInfo.vb#2)]  
-  
+The following example demonstrates the <xref:System.IO.FileSystemInfo.FullName%2A> property. This code example is part of a larger example provided for the <xref:System.IO.FileSystemInfo> class.  
+ 
+[!code-cpp[FileSystemInfo#2](~/samples/snippets/cpp/VS_Snippets_CLR/FileSystemInfo/cpp/program.cpp#2)]
+[!code-csharp[FileSystemInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemInfo/CS/program.cs#2)]
+[!code-vb[FileSystemInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemInfo/VB/FileSystemInfo.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.PathTooLongException">The fully qualified path and file name is 260 or more characters.</exception>
@@ -585,10 +585,10 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the file name and additional exception information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to access information about the path described by the current instance. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" />  
@@ -626,36 +626,36 @@
         <value>The time that the current file or directory was last accessed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- The value of the <xref:System.IO.FileSystemInfo.LastAccessTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
-  
+**Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
+The value of the <xref:System.IO.FileSystemInfo.LastAccessTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
+ 
 -   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+ 
+To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
+ 
   
- To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the updating of the <xref:System.IO.FileSystemInfo.LastAccessTime%2A> property through a "touch" operation. In this example, the file is "touched", updating the <xref:System.IO.FileSystemInfo.CreationTime%2A>, <xref:System.IO.FileSystemInfo.LastAccessTime%2A> and <xref:System.IO.FileSystemInfo.LastWriteTime%2A> properties to the current date and time.  
-  
- [!code-csharp[System.IO.FileSystemInfo_touch#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileSystemInfo_touch/cs/touch.cs#00)]
- [!code-vb[System.IO.FileSystemInfo_touch#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileSystemInfo_touch/vb/touch.vb#00)]  
-  
+The following code example demonstrates the updating of the <xref:System.IO.FileSystemInfo.LastAccessTime%2A> property through a "touch" operation. In this example, the file is "touched", updating the <xref:System.IO.FileSystemInfo.CreationTime%2A>, <xref:System.IO.FileSystemInfo.LastAccessTime%2A> and <xref:System.IO.FileSystemInfo.LastWriteTime%2A> properties to the current date and time.  
+ 
+[!code-csharp[System.IO.FileSystemInfo_touch#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileSystemInfo_touch/cs/touch.cs#00)]
+[!code-vb[System.IO.FileSystemInfo_touch#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileSystemInfo_touch/vb/touch.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">
@@ -699,30 +699,30 @@
         <value>The UTC time that the current file or directory was last accessed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
- The value of the <xref:System.IO.FileSystemInfo.LastAccessTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
-  
+**Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+The value of the <xref:System.IO.FileSystemInfo.LastAccessTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
+ 
 -   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
-  
- To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
-  
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
+ 
+If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">
@@ -758,38 +758,38 @@
         <value>The time the current file was last written.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
- The value of the <xref:System.IO.FileSystemInfo.LastWriteTime%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
-  
+**Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+The value of the <xref:System.IO.FileSystemInfo.LastWriteTime%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
+ 
 -   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+ 
+To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
+ 
+If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
+This property value is `null` if the file system containing the file does not support this information.  
+ 
   
- To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
-  
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- This property value is `null` if the file system containing the file does not support this information.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the updating of the <xref:System.IO.FileSystemInfo.LastWriteTime%2A> property through a "touch" operation. In this example, the file is "touched", updating the <xref:System.IO.FileSystemInfo.CreationTime%2A>, <xref:System.IO.FileSystemInfo.LastAccessTime%2A> and <xref:System.IO.FileSystemInfo.LastWriteTime%2A> properties to the current date and time.  
-  
- [!code-csharp[System.IO.FileSystemInfo_touch#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileSystemInfo_touch/cs/touch.cs#00)]
- [!code-vb[System.IO.FileSystemInfo_touch#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileSystemInfo_touch/vb/touch.vb#00)]  
-  
+The following code example demonstrates the updating of the <xref:System.IO.FileSystemInfo.LastWriteTime%2A> property through a "touch" operation. In this example, the file is "touched", updating the <xref:System.IO.FileSystemInfo.CreationTime%2A>, <xref:System.IO.FileSystemInfo.LastAccessTime%2A> and <xref:System.IO.FileSystemInfo.LastWriteTime%2A> properties to the current date and time.  
+ 
+[!code-csharp[System.IO.FileSystemInfo_touch#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileSystemInfo_touch/cs/touch.cs#00)]
+[!code-vb[System.IO.FileSystemInfo_touch#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileSystemInfo_touch/vb/touch.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">
@@ -833,30 +833,30 @@
         <value>The UTC time when the current file was last written to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
- The value of the <xref:System.IO.FileSystemInfo.LastWriteTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
-  
+**Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+The value of the <xref:System.IO.FileSystemInfo.LastWriteTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
+ 
 -   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
-  
+ 
 -   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
-  
- To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
-  
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
-  
- This property value is `null` if the file system containing the file does not support this information.  
-  
+ 
+To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
+ 
+If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
+ 
+This property value is `null` if the file system containing the file does not support this information.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">
@@ -892,12 +892,12 @@
         <value>A string that is the name of the parent directory, the name of the last directory in the hierarchy, or the name of a file, including the file name extension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a directory, `Name` returns only the name of the parent directory, such as Dir, not c:\Dir. For a subdirectory, `Name` returns only the name of the subdirectory, such as Sub1, not c:\Dir\Sub1.  
-  
- For a file, `Name` returns only the file name and file name extension, such as MyFile.txt, not c:\Dir\Myfile.txt.  
-  
+For a directory, `Name` returns only the name of the parent directory, such as Dir, not c:\Dir. For a subdirectory, `Name` returns only the name of the subdirectory, such as Sub1, not c:\Dir\Sub1.  
+ 
+For a file, `Name` returns only the file name and file name extension, such as MyFile.txt, not c:\Dir\Myfile.txt.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -927,10 +927,10 @@
         <summary>The path originally specified by the user, whether relative or absolute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -966,12 +966,12 @@
         <summary>Refreshes the state of the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `FileSystemInfo.Refresh` takes a snapshot of the file from the current file system. `Refresh` cannot correct the underlying file system even if the file system returns incorrect or outdated information. This can happen on platforms such as Windows 98.  
-  
- Calls must be made to `Refresh` before attempting to get the attribute information, or the information will be outdated.  
-  
+`FileSystemInfo.Refresh` takes a snapshot of the file from the current file system. `Refresh` cannot correct the underlying file system even if the file system returns incorrect or outdated information. This can happen on platforms such as Windows 98.  
+ 
+Calls must be made to `Refresh` before attempting to get the attribute information, or the information will be outdated.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">A device such as a disk drive is not ready.</exception>

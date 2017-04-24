@@ -24,12 +24,12 @@
     <summary>Specifies how to handle line breaks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is passed to the <xref:System.Xml.XmlWriter.Create%2A> method to specify whether the <xref:System.Xml.XmlWriter> object will normalize line breaks in the output.  
-  
- See the <xref:System.Xml.XmlWriterSettings.NewLineHandling%2A> property to see a table detailing the behavior of each of the validation types.  
-  
+This enumeration is passed to the <xref:System.Xml.XmlWriter.Create%2A> method to specify whether the <xref:System.Xml.XmlWriter> object will normalize line breaks in the output.  
+ 
+See the <xref:System.Xml.XmlWriterSettings.NewLineHandling%2A> property to see a table detailing the behavior of each of the validation types.  
+ 
  ]]></format>
     </remarks>
   </Docs>

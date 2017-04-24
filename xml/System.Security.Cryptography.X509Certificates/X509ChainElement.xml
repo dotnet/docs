@@ -24,10 +24,10 @@
     <summary>Represents an element of an X.509 chain.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This object is constructed internally and is returned as part of an <xref:System.Security.Cryptography.X509Certificates.X509ChainElementCollection> when calling the <xref:System.Security.Cryptography.X509Certificates.X509Chain.ChainElements%2A> property.  
-  
+This object is constructed internally and is returned as part of an <xref:System.Security.Cryptography.X509Certificates.X509ChainElementCollection> when calling the <xref:System.Security.Cryptography.X509Certificates.X509Chain.ChainElements%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,19 +59,19 @@
         <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns an X.509 certificate for this element.  
+This property returns an X.509 certificate for this element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate the user selects.  
-  
- [!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
- [!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
- [!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
-  
+The following code example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate the user selects.  
+ 
+[!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
+[!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
+[!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <value>An array of <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainStatus" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns an array of <xref:System.Security.Cryptography.X509Certificates.X509ChainStatus> objects, each consisting of an error code bit and a descriptive localized error message.  
-  
+This property returns an array of <xref:System.Security.Cryptography.X509Certificates.X509ChainStatus> objects, each consisting of an error code bit and a descriptive localized error message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,19 +138,19 @@
         <value>A string representing the <see langword="pwszExtendedErrorInfo" /> member of the unmanaged <see langword="CERT_CHAIN_ELEMENT" /> structure in the Crypto API.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This string is available only on computers with Windows XP Professional or later operating systems. An empty string ("") is returned if the operating system is not Windows XP Professional or later.  
+This string is available only on computers with Windows XP Professional or later operating systems. An empty string ("") is returned if the operating system is not Windows XP Professional or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate the user selects.  
-  
- [!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
- [!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
- [!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
-  
+The following code example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate the user selects.  
+ 
+[!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
+[!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
+[!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

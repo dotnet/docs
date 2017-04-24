@@ -14,13 +14,13 @@
     <summary>Provides a regular expression to parse an ASP.NET directive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.RegularExpressions.DirectiveRegex> class provides a compiled regular expression to parse an ASP.NET directive (`<%@` … `%>`).  
-  
+The <xref:System.Web.RegularExpressions.DirectiveRegex> class provides a compiled regular expression to parse an ASP.NET directive (`<%@` … `%>`).  
+ 
 > [!NOTE]
 >  The <xref:System.Web.RegularExpressions> classes are used internally by the .NET Framework to parse ASP.NET pages.  
-  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -40,12 +40,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.DirectiveRegex" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor instantiates a compiled regular expression whose predefined regular expression pattern is the following:  
-  
- `\G<%\s*@(\s*(?<attrname>\w[\w:]*(?=\W))(\s*(?<equal>=)\s*"(?<attrval>[^"]*)"|\s*(?<equal>=)\s*'(?<attrval>[^']*)'|\s*(?<equal>=)\s*(?<attrval>[^\s%>]*)|(?<equal>)(?<attrval>\s*?)))*\s*?%>`  
-  
+This constructor instantiates a compiled regular expression whose predefined regular expression pattern is the following:  
+ 
+`\G<%\s*@(\s*(?<attrname>\w[\w:]*(?=\W))(\s*(?<equal>=)\s*"(?<attrval>[^"]*)"|\s*(?<equal>=)\s*'(?<attrval>[^']*)'|\s*(?<equal>=)\s*(?<attrval>[^\s%>]*)|(?<equal>)(?<attrval>\s*?)))*\s*?%>`  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -68,10 +68,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.DirectiveRegex" /> class with a specified time-out value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `A_1` parameter represents the maximum time interval during which the regular expression engine tries to find a match before the operation times out and a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> expression is thrown.  
-  
+The `A_1` parameter represents the maximum time interval during which the regular expression engine tries to find a match before the operation times out and a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> expression is thrown.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

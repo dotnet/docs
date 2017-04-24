@@ -52,12 +52,12 @@
         <value>An <see cref="T:System.Web.UI.Design.IHtmlControlDesignerBehavior" /> that is associated with the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.HtmlControlDesigner.Behavior%2A> property is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property to map properties to styles. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes%2A> method on the <xref:System.Web.UI.Design.ContainerControlDesigner> class to set styles for the control at design time.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <value>The design-time object representing the control associated with the <see cref="T:System.Web.UI.Design.HtmlControlDesigner" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.HtmlControlDesigner.DesignTimeElement%2A> property is used by the designer to retrieve the design-time object representing the control that is associated with the <xref:System.Web.UI.Design.HtmlControlDesigner> object on the design surface.  
-  
+The <xref:System.Web.UI.Design.HtmlControlDesigner.DesignTimeElement%2A> property is used by the designer to retrieve the design-time object representing the control that is associated with the <xref:System.Web.UI.Design.HtmlControlDesigner> object on the design surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,12 +131,12 @@
         <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Web.UI.Design.HtmlControlDesigner" /> object and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Web.UI.Design.HtmlControlDesigner> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Web.UI.Design.HtmlControlDesigner> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -164,12 +164,12 @@
         <value>An <see cref="T:System.Web.UI.ExpressionBindingCollection" /> that contains the expressions strings set for properties in the current control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.Compilation.ExpressionBuilder> class to get the <xref:System.Web.UI.Design.ExpressionEditor> class to get the <xref:System.Web.UI.Design.ExpressionEditorSheet> to set expressions for control properties at design time. Expression strings reference a localizable resource, an application setting, a connection string, or a custom expression type.  
-  
- The <xref:System.Web.UI.Design.HtmlControlDesigner.Expressions%2A> collection contains an <xref:System.Web.UI.ExpressionBinding> element for each control property that has an associated expression string. Each <xref:System.Web.UI.ExpressionBinding.ExpressionPrefix%2A> property for each element indicates the associated expression builder implementation. The expression string is parsed and evaluated by its associated <xref:System.Web.Compilation.ExpressionBuilder> to determine the control property value at run time.  
-  
+The design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.Compilation.ExpressionBuilder> class to get the <xref:System.Web.UI.Design.ExpressionEditor> class to get the <xref:System.Web.UI.Design.ExpressionEditorSheet> to set expressions for control properties at design time. Expression strings reference a localizable resource, an application setting, a connection string, or a custom expression type.  
+ 
+The <xref:System.Web.UI.Design.HtmlControlDesigner.Expressions%2A> collection contains an <xref:System.Web.UI.ExpressionBinding> element for each control property that has an associated expression string. Each <xref:System.Web.UI.ExpressionBinding.ExpressionPrefix%2A> property for each element indicates the associated expression builder implementation. The expression string is parsed and evaluated by its associated <xref:System.Web.Compilation.ExpressionBuilder> to determine the control property value at run time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <summary>Initializes the designer and sets the component for design.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.ControlDesigner.Initialize%2A> method should be called by the designer host to initialize the designer.  
-  
+The <xref:System.Web.UI.Design.ControlDesigner.Initialize%2A> method should be called by the designer host to initialize the designer.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -227,12 +227,12 @@
         <summary>Called when a behavior is associated with the element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorAttached%2A> method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property to map properties to styles. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes%2A> method on the <xref:System.Web.UI.Design.ContainerControlDesigner> class to set styles for the control at design time. Override the <xref:System.Web.UI.Design.HtmlControlDesigner.Initialize%2A> method to manipulate the initial styles for the control at design time.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -262,12 +262,12 @@
         <summary>Called when a behavior disassociates from the element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorDetaching%2A> method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property to map properties to styles. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes%2A> method on the <xref:System.Web.UI.Design.ContainerControlDesigner> class to set styles for the control at design time. Override the <xref:System.Web.UI.Design.HtmlControlDesigner.Dispose%2A> method for the control designer to perform actions before the designer object is released.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -300,13 +300,13 @@
         <summary>Provides a method that can be used to indicate when a data binding has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.HtmlControlDesigner.OnBindingsCollectionChanged%2A> method should be called by a control designer after the control designer has made a change to the data bindings for the control.  
-  
+The <xref:System.Web.UI.Design.HtmlControlDesigner.OnBindingsCollectionChanged%2A> method should be called by a control designer after the control designer has made a change to the data bindings for the control.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.HtmlControlDesigner.OnBindingsCollectionChanged%2A> method is obsolete. Use the <xref:System.Web.UI.DataBindingCollection.Changed> event on the <xref:System.Web.UI.Design.HtmlControlDesigner.DataBindings%2A> collection for equivalent control designer functionality.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -355,12 +355,12 @@
         <summary>Sets the list of events that are exposed at design-time for the <see cref="T:System.ComponentModel.TypeDescriptor" /> object for the component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.HtmlControlDesigner.PreFilterEvents%2A> method provides a way to add items to or remove items from the dictionary of events that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor> object.  
-  
- The keys in the dictionary of events are the names of the events. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>.  
-  
+The <xref:System.Web.UI.Design.HtmlControlDesigner.PreFilterEvents%2A> method provides a way to add items to or remove items from the dictionary of events that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor> object.  
+ 
+The keys in the dictionary of events are the names of the events. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -388,12 +388,12 @@
         <summary>Allows the designer to expose a specific set of properties through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object at design time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.HtmlControlDesigner.PreFilterProperties%2A> method provides a way to add items to or remove items from the dictionary of properties that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor> object.  
-  
- The keys in the dictionary of properties are the names of the properties. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>.  
-  
+The <xref:System.Web.UI.Design.HtmlControlDesigner.PreFilterProperties%2A> method provides a way to add items to or remove items from the dictionary of properties that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor> object.  
+ 
+The keys in the dictionary of properties are the names of the properties. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

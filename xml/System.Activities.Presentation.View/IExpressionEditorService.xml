@@ -11,27 +11,27 @@
     <summary>Creates or closes expression editors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An expression editor is a Visual Basic control used to edit expressions inside Visual Studio. This control provides a full-fledged IDE editing experience, including IntelliSense, colorization, ParamInfo, error squiggles, among other features.  
+An expression editor is a Visual Basic control used to edit expressions inside Visual Studio. This control provides a full-fledged IDE editing experience, including IntelliSense, colorization, ParamInfo, error squiggles, among other features.  
+ 
+The <xref:System.Activities.Presentation.View.IExpressionEditorService> can also be used to manage instances of custom expression editors. To register a custom expression editor, you must publish the <xref:System.Activities.Presentation.View.IExpressionEditorService> using the following code :  
+ 
+`this.expressionEditorService = new ExpressionEditorService();`  
+ 
+`this.workflowDesigner.Context.Services.Publish<IExpressionEditorService>(this.expressionEditorService);`  
+ 
+An expression editor is created when an <xref:System.Activities.Presentation.View.ExpressionTextBox> instance gains focus and is destroyed on losing focus of a valid expression, or on reloading of the designer.  
+ 
+The default expression editor is not available for use in rehosted applications. If the default expression editor is used in a rehosted application, a text box is available for editing. However, custom expression editors can be used in a rehosted application by publishing the <xref:System.Activities.Presentation.View.IExpressionEditorService> in the application.  
+ 
+If you are using an <xref:System.Activities.Presentation.View.ExpressionTextBox> control in a custom activity designer, it is not necessary to create and destroy expression editors using this interface. The <xref:System.Activities.Presentation.View.ExpressionTextBox> class manages this for you.  
+ 
   
- The <xref:System.Activities.Presentation.View.IExpressionEditorService> can also be used to manage instances of custom expression editors. To register a custom expression editor, you must publish the <xref:System.Activities.Presentation.View.IExpressionEditorService> using the following code :  
-  
- `this.expressionEditorService = new ExpressionEditorService();`  
-  
- `this.workflowDesigner.Context.Services.Publish<IExpressionEditorService>(this.expressionEditorService);`  
-  
- An expression editor is created when an <xref:System.Activities.Presentation.View.ExpressionTextBox> instance gains focus and is destroyed on losing focus of a valid expression, or on reloading of the designer.  
-  
- The default expression editor is not available for use in rehosted applications. If the default expression editor is used in a rehosted application, a text box is available for editing. However, custom expression editors can be used in a rehosted application by publishing the <xref:System.Activities.Presentation.View.IExpressionEditorService> in the application.  
-  
- If you are using an <xref:System.Activities.Presentation.View.ExpressionTextBox> control in a custom activity designer, it is not necessary to create and destroy expression editors using this interface. The <xref:System.Activities.Presentation.View.ExpressionTextBox> class manages this for you.  
-  
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_IExpressionEditorService#0](WFD_IExpressionEditorService#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

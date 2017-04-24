@@ -64,10 +64,10 @@
         <summary>Adds the specified extension provider to the collection of default extension providers for the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the host does not provide an extension of type `T`, then this extension provider function is evaluated to provide one.  
-  
+If the host does not provide an extension of type `T`, then this extension provider function is evaluated to provide one.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <summary>Adds the specified validation error to the metadata’s collection of validation errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <summary>Adds a validation error to the metadata’s collection of validation errors using the specified description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,10 +210,10 @@
         <returns>A collection of arguments.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Argument> and returns them in a collection.  
-  
+This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Argument> and returns them in a collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
         <summary>Specifies that the activity requires an extension of the specified type at runtime.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the host fails to provide an extension of the specified type, validation fails.  
-  
+If the host fails to provide an extension of the specified type, validation fails.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <summary>Specifies that the activity requires an extension of the specified generic type at runtime.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the host fails to provide an extension of the specified type, validation fails.  
-  
+If the host fails to provide an extension of the specified type, validation fails.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,10 +418,10 @@
         <summary>Adds a validation error to the metadata’s collection of validation errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

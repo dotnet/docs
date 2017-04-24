@@ -40,38 +40,38 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> class by using the specified context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The user principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+The user principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example connects to the LDAP domain "fabrikam.com" with the username and password initialized in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor to "administrator" and "securelyStoredPassword."  
-  
- The properties set in the example, such as user name and e-mail address, are created under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  
-  
+The following code example connects to the LDAP domain "fabrikam.com" with the username and password initialized in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor to "administrator" and "securelyStoredPassword."  
+ 
+The properties set in the example, such as user name and e-mail address, are created under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  
+ 
 ```  
-  
+ 
 PrincipalContext ctx = new PrincipalContext(  
-                                         ContextType.Domain,  
-                                         "fabrikam.com",   
-                                         "CN=Users,DC=fabrikam,DC=com",  
-                                         "administrator",   
-                                         "securelyStoredPassword");   
-  
+                                        ContextType.Domain,  
+                                        "fabrikam.com",   
+                                        "CN=Users,DC=fabrikam,DC=com",  
+                                        "administrator",   
+                                        "securelyStoredPassword");   
+ 
 UserPrincipal usr = new UserPrincipal(ctx);  
-  
+ 
 usr.Name = "Jim Daly";  
 usr.Description = "This is the user account for Jim Daly";  
 usr.EmailAddress = "jimdaly@fabrikam.com";  
 usr.SetPassword("securelyStoredPassword");  
 usr.Save();  
-  
+ 
 usr.Dispose();  
 ctx.Dispose();   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,10 +99,10 @@ ctx.Dispose();
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> class by using the specified context, SAM account name, password, and enabled value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The user principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
-  
+The user principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,32 +300,32 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code connects to the local computer store. Since the credentials are not specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor, the credentials of the user running the current thread are used.  
-  
- A search is performed to find the user who has SamAccountName "Guest".  
-  
- If the user is found, a check is performed to determine whether this user's account is enabled. If the account is not enabled, the example code enables it.  
-  
+The following code connects to the local computer store. Since the credentials are not specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor, the credentials of the user running the current thread are used.  
+ 
+A search is performed to find the user who has SamAccountName "Guest".  
+ 
+If the user is found, a check is performed to determine whether this user's account is enabled. If the account is not enabled, the example code enables it.  
+ 
 ```  
 PrincipalContext ctx = new PrincipalContext(ContextType.Machine);  
-  
+ 
 UserPrincipal usr = UserPrincipal.FindByIdentity(ctx,   
-                                           IdentityType.SamAccountName,   
-                                           "Guest");  
-  
+                                          IdentityType.SamAccountName,   
+                                          "Guest");  
+ 
 if(usr != null)  
 {  
-    if (usr.Enabled == false)  
-        usr.Enabled = true;  
-  
-    usr.Save();  
-    usr.Dispose();  
+   if (usr.Enabled == false)  
+       usr.Enabled = true;  
+ 
+   usr.Save();  
+   usr.Dispose();  
 }  
 ctx.Dispose();   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple user principal objects matching the current user object were found.</exception>
@@ -357,10 +357,10 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -390,10 +390,10 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -449,12 +449,12 @@ ctx.Dispose();
         <returns>A collection of <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects that contain the groups of which the user is a member, or null if the user does not belong to any groups.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method searches all groups recursively and returns the groups in which the user is a member. The returned set may also include additional groups that system would consider the user a member of for authorization purposes.  
-  
- The groups that are returned by this method may include groups from a different scope and store than the principal. For example, if the principal is an AD DS object that has a DN of "CN=SpecialGroups,DC=Fabrikam,DC=com, the returned set can contain groups that belong to the "CN=NormalGroups,DC=Fabrikam,DC=com.  
-  
+This method searches all groups recursively and returns the groups in which the user is a member. The returned set may also include additional groups that system would consider the user a member of for authorization purposes.  
+ 
+The groups that are returned by this method may include groups from a different scope and store than the principal. For example, if the principal is an AD DS object that has a DN of "CN=SpecialGroups,DC=Fabrikam,DC=com, the returned set can contain groups that belong to the "CN=NormalGroups,DC=Fabrikam,DC=com.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">The attempt to retrieve authorization groups failed.</exception>

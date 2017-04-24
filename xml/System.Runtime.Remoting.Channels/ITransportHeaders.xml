@@ -17,12 +17,12 @@
     <summary>Stores a collection of headers used in the channel sinks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ITransportHeaders_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ITransportHeaders_Item/CPP/itransportheaders_3_server.cpp#1)]
- [!code-csharp[ITransportHeaders_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ITransportHeaders_Item/CS/itransportheaders_3_server.cs#1)]
- [!code-vb[ITransportHeaders_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ITransportHeaders_Item/VB/itransportheaders_3_server.vb#1)]  
-  
+[!code-cpp[ITransportHeaders_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ITransportHeaders_Item/CPP/itransportheaders_3_server.cpp#1)]
+[!code-csharp[ITransportHeaders_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ITransportHeaders_Item/CS/itransportheaders_3_server.cs#1)]
+[!code-vb[ITransportHeaders_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ITransportHeaders_Item/VB/itransportheaders_3_server.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,12 +46,12 @@
         <returns>A <see cref="T:System.Collections.IEnumerator" /> that iterates over all entries in the <see cref="T:System.Runtime.Remoting.Channels.ITransportHeaders" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ITransportHeaders_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ITransportHeaders_Item/CPP/itransportheaders_3_server.cpp#1)]
- [!code-csharp[ITransportHeaders_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ITransportHeaders_Item/CS/itransportheaders_3_server.cs#1)]
- [!code-vb[ITransportHeaders_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ITransportHeaders_Item/VB/itransportheaders_3_server.vb#1)]  
-  
+[!code-cpp[ITransportHeaders_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ITransportHeaders_Item/CPP/itransportheaders_3_server.cpp#1)]
+[!code-csharp[ITransportHeaders_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ITransportHeaders_Item/CS/itransportheaders_3_server.cs#1)]
+[!code-vb[ITransportHeaders_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ITransportHeaders_Item/VB/itransportheaders_3_server.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -80,17 +80,17 @@
         <value>A transport header associated with the given key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a stored header is set to `null`, the key-value pair is removed.  
+If a stored header is set to `null`, the key-value pair is removed.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ITransportHeaders_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ITransportHeaders_Item/CPP/itransportheaders_3_server.cpp#1)]
- [!code-csharp[ITransportHeaders_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ITransportHeaders_Item/CS/itransportheaders_3_server.cs#1)]
- [!code-vb[ITransportHeaders_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ITransportHeaders_Item/VB/itransportheaders_3_server.vb#1)]  
-  
+[!code-cpp[ITransportHeaders_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ITransportHeaders_Item/CPP/itransportheaders_3_server.cpp#1)]
+[!code-csharp[ITransportHeaders_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ITransportHeaders_Item/CS/itransportheaders_3_server.cs#1)]
+[!code-vb[ITransportHeaders_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ITransportHeaders_Item/VB/itransportheaders_3_server.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>

@@ -429,10 +429,10 @@
         <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Get method of <xref:System.DirectoryServices.Protocols.DirectoryAttribute.Item%2A> always attempts to convert and return the value object as a string; otherwise it returns a byte array. To get a better performance, use the <xref:System.DirectoryServices.Protocols.DirectoryAttribute.GetValues%2A> method if you know the return type of the attribute value.  
-  
+The Get method of <xref:System.DirectoryServices.Protocols.DirectoryAttribute.Item%2A> always attempts to convert and return the value object as a string; otherwise it returns a byte array. To get a better performance, use the <xref:System.DirectoryServices.Protocols.DirectoryAttribute.GetValues%2A> method if you know the return type of the attribute value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -481,10 +481,10 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.OnValidate(System.Object)" /> method verifies that <paramref name="value" /> is a <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not return a value. Instead, an exception is thrown if the specified object is null or is an invalid <xref:System.DirectoryServices.Protocols.DirectoryAttribute> object.  
-  
+This method does not return a value. Instead, an exception is thrown if the specified object is null or is an invalid <xref:System.DirectoryServices.Protocols.DirectoryAttribute> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -19,14 +19,14 @@
     <summary>Provides the <see langword="abstract" /> base class for implementing a license provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a licensed control using the <xref:System.ComponentModel.LicenseManager.Validate%2A> method. It uses a <xref:System.ComponentModel.LicenseProvider> that is implemented by the <xref:System.ComponentModel.LicFileLicenseProvider> class.  
-  
- [!code-cpp[Classic LicenseManager Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LicenseManager Example/CPP/source.cpp#1)]
- [!code-csharp[Classic LicenseManager Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LicenseManager Example/CS/source.cs#1)]
- [!code-vb[Classic LicenseManager Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic LicenseManager Example/VB/source.vb#1)]  
-  
+The following code example creates a licensed control using the <xref:System.ComponentModel.LicenseManager.Validate%2A> method. It uses a <xref:System.ComponentModel.LicenseProvider> that is implemented by the <xref:System.ComponentModel.LicFileLicenseProvider> class.  
+ 
+[!code-cpp[Classic LicenseManager Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LicenseManager Example/CPP/source.cpp#1)]
+[!code-csharp[Classic LicenseManager Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LicenseManager Example/CS/source.cs#1)]
+[!code-vb[Classic LicenseManager Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic LicenseManager Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">

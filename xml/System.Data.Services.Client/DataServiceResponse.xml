@@ -38,10 +38,10 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> object containing the name-value pairs of an HTTP response.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The headers property on the <xref:System.Data.Services.Client.DataServiceResponse> instance returned will be an empty collection when batching is not used because there is no set of headers that represents the entire save operation.  
-  
+The headers property on the <xref:System.Data.Services.Client.DataServiceResponse> instance returned will be an empty collection when batching is not used because there is no set of headers that represents the entire save operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,10 +64,10 @@
         <value>An integer based on status codes defined in [Hypertext Transfer Protocol](http://go.microsoft.com/fwlink/?LinkId=119520).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For batching operations, this is the status code from the HTTP response associated with the entire batch. For non-batching requests, the value is always 200, which means the caller must inspect each operation to determine its result.  
-  
+For batching operations, this is the status code from the HTTP response associated with the entire batch. For non-batching requests, the value is always 200, which means the caller must inspect each operation to determine its result.  
+ 
  ]]></format>
         </remarks>
       </Docs>

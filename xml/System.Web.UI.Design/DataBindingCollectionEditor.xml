@@ -19,10 +19,10 @@
     <summary>Provides a user interface for editing a collection of data bindings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DataBindingCollectionEditor> class is obsolete. At design time, editing of data bindings is accomplished from a <xref:System.ComponentModel.Design.DesignerActionList> instead of the property grid. For more information, see <xref:System.Web.UI.Design.ControlDesigner.ActionLists%2A>.  
-  
+The <xref:System.Web.UI.Design.DataBindingCollectionEditor> class is obsolete. At design time, editing of data bindings is accomplished from a <xref:System.ComponentModel.Design.DesignerActionList> instead of the property grid. For more information, see <xref:System.Web.UI.Design.ControlDesigner.ActionLists%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> object that specifies the editor style of the component or control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This editor provides a modal editor style.  
-  
+This editor provides a modal editor style.  
+ 
  ]]></format>
         </remarks>
       </Docs>

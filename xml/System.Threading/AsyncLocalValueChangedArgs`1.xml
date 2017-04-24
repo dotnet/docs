@@ -27,10 +27,10 @@
     <summary>The class that provides data change information to <see cref="T:System.Threading.AsyncLocal`1" /> instances that register for change notifications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Threading.AsyncLocal%601> objects receives change notifications when it is instantiated by calling its <xref:System.Threading.AsyncLocal%601.%23ctor%28System.Action%7BSystem.Threading.AsyncLocalValueChangedArgs%7B%600%7D%7D%29> constructor.  
-  
+An <xref:System.Threading.AsyncLocal%601> objects receives change notifications when it is instantiated by calling its <xref:System.Threading.AsyncLocal%601.%23ctor%28System.Action%7BSystem.Threading.AsyncLocalValueChangedArgs%7B%600%7D%7D%29> constructor.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -116,10 +116,10 @@
           <see langword="true" /> if the value changed because of a change of execution context; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The property value is `false` if the <xref:System.Threading.AsyncLocal%601.Value%2A?displayProperty=fullName> property is changed explicitly.  
-  
+The property value is `false` if the <xref:System.Threading.AsyncLocal%601.Value%2A?displayProperty=fullName> property is changed explicitly.  
+ 
  ]]></format>
         </remarks>
       </Docs>

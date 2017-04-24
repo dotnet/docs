@@ -14,10 +14,10 @@
     <summary>Provides the base implementation for the remoting XML Web services.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Services.RemotingService> is used to access ASP.NET from within a remoting XML Web service that derives from the <xref:System.Runtime.Remoting.Services.RemotingService> class.  
-  
+The <xref:System.Runtime.Remoting.Services.RemotingService> is used to access ASP.NET from within a remoting XML Web service that derives from the <xref:System.Runtime.Remoting.Services.RemotingService> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -126,10 +126,10 @@
         <value>The security context of the user.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about identities, see <xref:System.Security.Principal.IIdentity>.  
-  
+For more information about identities, see <xref:System.Security.Principal.IIdentity>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -12,42 +12,42 @@
     <summary>Defines the contract for the basic state machine for all communication-oriented objects in the system, including channels, the channel managers, factories, listeners, and dispatchers, and service hosts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.ICommunicationObject> interface defines:  
-  
+The <xref:System.ServiceModel.ICommunicationObject> interface defines:  
+ 
 -   A set of open, close and abort methods for initiating state transitions:  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.Open%2A>  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.Close%2A>  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.Abort%2A>  
-  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.Open%2A>  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.Close%2A>  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.Abort%2A>  
+ 
 -   Asynchronous versions of the open and close methods:  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A>  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.EndOpen%28System.IAsyncResult%29>  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A>  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.EndClose%2A>  
-  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A>  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.EndOpen%28System.IAsyncResult%29>  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A>  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.EndClose%2A>  
+ 
 -   A set of events that provide notifications of state transitions:  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.Opening>  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.Opened>  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.Closing>  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.Closed>  
-  
-    -   <xref:System.ServiceModel.ICommunicationObject.Faulted>  
-  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.Opening>  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.Opened>  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.Closing>  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.Closed>  
+ 
+   -   <xref:System.ServiceModel.ICommunicationObject.Faulted>  
+ 
 -   A common <xref:System.ServiceModel.ICommunicationObject.State%2A> property for inspecting the state of an object  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,12 +70,12 @@
         <summary>Causes a communication object to transition immediately from its current state into the closed state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method indicates that any unfinished work should be ignored or ungracefully terminated before returning. The <xref:System.ServiceModel.ICommunicationObject.Abort%2A> method can be used to cancel any outstanding operations, including outstanding calls to <xref:System.ServiceModel.ICommunicationObject.Close%2A>.  
-  
- To gracefully transition an <xref:System.ServiceModel.ICommunicationObject> from the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state call <xref:System.ServiceModel.ICommunicationObject.Close%2A>.  
-  
+This method indicates that any unfinished work should be ignored or ungracefully terminated before returning. The <xref:System.ServiceModel.ICommunicationObject.Abort%2A> method can be used to cancel any outstanding operations, including outstanding calls to <xref:System.ServiceModel.ICommunicationObject.Close%2A>.  
+ 
+To gracefully transition an <xref:System.ServiceModel.ICommunicationObject> from the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state call <xref:System.ServiceModel.ICommunicationObject.Close%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous close operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from any state, other than the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state. The <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> method allows any unfinished work to be completed before returning. For example, finish sending any buffered messages).  
-  
+This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from any state, other than the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state. The <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> method allows any unfinished work to be completed before returning. For example, finish sending any buffered messages).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">
@@ -141,10 +141,10 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous close operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from any state, other than the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state with in a specified interval of time. The <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> method allows any unfinished work to be completed before returning. For example, finish sending any buffered messages).  
-  
+This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from any state, other than the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state with in a specified interval of time. The <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> method allows any unfinished work to be completed before returning. For example, finish sending any buffered messages).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">
@@ -176,12 +176,12 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous open operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an <xref:System.ServiceModel.ICommunicationObject> is instantiated, it begins in the <xref:System.ServiceModel.CommunicationState> state. In the <xref:System.ServiceModel.CommunicationState> state, the object can be configured (for example, properties can be set, or events can be registered), but it is not yet usable to send or receive messages. The <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until the open operation succeeds, the open operation times out or fails and the object becomes faulted, or the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
-  
- In the <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is usable (for example, messages can be received), but it is no longer configurable.  
-  
+When an <xref:System.ServiceModel.ICommunicationObject> is instantiated, it begins in the <xref:System.ServiceModel.CommunicationState> state. In the <xref:System.ServiceModel.CommunicationState> state, the object can be configured (for example, properties can be set, or events can be registered), but it is not yet usable to send or receive messages. The <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until the open operation succeeds, the open operation times out or fails and the object becomes faulted, or the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
+ 
+In the <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is usable (for example, messages can be received), but it is no longer configurable.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationException">The <see cref="T:System.ServiceModel.ICommunicationObject" /> was unable to be opened and has entered the <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
@@ -214,12 +214,12 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous open operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an <xref:System.ServiceModel.ICommunicationObject> is instantiated, it begins in the <xref:System.ServiceModel.CommunicationState> state. In the <xref:System.ServiceModel.CommunicationState> state, the object can be configured (for example, properties can be set, or events can be registered), but it is not yet usable to send or receive messages. The <xref:System.ServiceModel.ICommunicationObject.Open%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until the open operation succeeds, the open operation times out or fails and the object becomes faulted, or the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
-  
- In the <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is usable (for example, messages can be received), but it is no longer configurable.  
-  
+When an <xref:System.ServiceModel.ICommunicationObject> is instantiated, it begins in the <xref:System.ServiceModel.CommunicationState> state. In the <xref:System.ServiceModel.CommunicationState> state, the object can be configured (for example, properties can be set, or events can be registered), but it is not yet usable to send or receive messages. The <xref:System.ServiceModel.ICommunicationObject.Open%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until the open operation succeeds, the open operation times out or fails and the object becomes faulted, or the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
+ 
+In the <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is usable (for example, messages can be received), but it is no longer configurable.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationException">The <see cref="T:System.ServiceModel.ICommunicationObject" /> was unable to be opened and has entered the <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
@@ -247,20 +247,20 @@
         <summary>Causes a communication object to transition from its current state into the closed state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state. The <xref:System.ServiceModel.ICommunicationObject.Close%2A> method allows any unfinished work to be completed before returning. For example, finish sending any buffered messages).  
-  
- The <xref:System.ServiceModel.ICommunicationObject> enters the <xref:System.ServiceModel.CommunicationState> state and remains in it until the transition to the <xref:System.ServiceModel.CommunicationState> state is completed.  
-  
- <xref:System.ServiceModel.ICommunicationObject.Close%2A> returns once the <xref:System.ServiceModel.CommunicationState> state is reached.  
-  
- If the default close timeout elapses before the <xref:System.ServiceModel.ICommunicationObject> is able to close gracefully, the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
-  
- If <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called on an <xref:System.ServiceModel.ICommunicationObject> in the <xref:System.ServiceModel.CommunicationState>, <xref:System.ServiceModel.CommunicationState>, or <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is aborted. If <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called on an <xref:System.ServiceModel.ICommunicationObject> in the <xref:System.ServiceModel.CommunicationState> or <xref:System.ServiceModel.CommunicationState> state, the call returns immediately.  
-  
- There is also an asynchronous version of the close method that is initiated by calling <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> and completed by calling <xref:System.ServiceModel.ICommunicationObject.Close%2A>.  
-  
+This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state. The <xref:System.ServiceModel.ICommunicationObject.Close%2A> method allows any unfinished work to be completed before returning. For example, finish sending any buffered messages).  
+ 
+The <xref:System.ServiceModel.ICommunicationObject> enters the <xref:System.ServiceModel.CommunicationState> state and remains in it until the transition to the <xref:System.ServiceModel.CommunicationState> state is completed.  
+ 
+<xref:System.ServiceModel.ICommunicationObject.Close%2A> returns once the <xref:System.ServiceModel.CommunicationState> state is reached.  
+ 
+If the default close timeout elapses before the <xref:System.ServiceModel.ICommunicationObject> is able to close gracefully, the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
+ 
+If <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called on an <xref:System.ServiceModel.ICommunicationObject> in the <xref:System.ServiceModel.CommunicationState>, <xref:System.ServiceModel.CommunicationState>, or <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is aborted. If <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called on an <xref:System.ServiceModel.ICommunicationObject> in the <xref:System.ServiceModel.CommunicationState> or <xref:System.ServiceModel.CommunicationState> state, the call returns immediately.  
+ 
+There is also an asynchronous version of the close method that is initiated by calling <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> and completed by calling <xref:System.ServiceModel.ICommunicationObject.Close%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">
@@ -289,20 +289,20 @@
         <summary>Causes a communication object to transition from its current state into the closed state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state within a specified interval of time. The <xref:System.ServiceModel.ICommunicationObject.Close%2A> method allows any unfinished work to be completed before returning. For example, finish sending any buffered messages).  
-  
- The <xref:System.ServiceModel.ICommunicationObject> enters the <xref:System.ServiceModel.CommunicationState> state and remains in it until the transition to the <xref:System.ServiceModel.CommunicationState> state is completed.  
-  
- <xref:System.ServiceModel.ICommunicationObject.Close%2A> returns once the <xref:System.ServiceModel.CommunicationState> state is reached.  
-  
- If the timeout elapses before the <xref:System.ServiceModel.ICommunicationObject> is able to gracefully close, the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
-  
- If <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called on an <xref:System.ServiceModel.ICommunicationObject> in the <xref:System.ServiceModel.CommunicationState>, <xref:System.ServiceModel.CommunicationState>, or <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is aborted.  If <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called on an <xref:System.ServiceModel.ICommunicationObject> in the <xref:System.ServiceModel.CommunicationState> or <xref:System.ServiceModel.CommunicationState> state, the call returns immediately.  
-  
- There is also an asynchronous version of the close method that is initiated by calling <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> and completed by calling <xref:System.ServiceModel.ICommunicationObject.Close%2A>.  
-  
+This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state within a specified interval of time. The <xref:System.ServiceModel.ICommunicationObject.Close%2A> method allows any unfinished work to be completed before returning. For example, finish sending any buffered messages).  
+ 
+The <xref:System.ServiceModel.ICommunicationObject> enters the <xref:System.ServiceModel.CommunicationState> state and remains in it until the transition to the <xref:System.ServiceModel.CommunicationState> state is completed.  
+ 
+<xref:System.ServiceModel.ICommunicationObject.Close%2A> returns once the <xref:System.ServiceModel.CommunicationState> state is reached.  
+ 
+If the timeout elapses before the <xref:System.ServiceModel.ICommunicationObject> is able to gracefully close, the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
+ 
+If <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called on an <xref:System.ServiceModel.ICommunicationObject> in the <xref:System.ServiceModel.CommunicationState>, <xref:System.ServiceModel.CommunicationState>, or <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is aborted.  If <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called on an <xref:System.ServiceModel.ICommunicationObject> in the <xref:System.ServiceModel.CommunicationState> or <xref:System.ServiceModel.CommunicationState> state, the call returns immediately.  
+ 
+There is also an asynchronous version of the close method that is initiated by calling <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> and completed by calling <xref:System.ServiceModel.ICommunicationObject.Close%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">
@@ -348,10 +348,10 @@
         <summary>Occurs when the communication object first enters the closing state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs when the communication object first begins to transition from the <xref:System.ServiceModel.CommunicationState> state into the <xref:System.ServiceModel.CommunicationState> state, immediately after either the <xref:System.ServiceModel.ICommunicationObject.Close%2A> or <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> method is invoked.  
-  
+This event occurs when the communication object first begins to transition from the <xref:System.ServiceModel.CommunicationState> state into the <xref:System.ServiceModel.CommunicationState> state, immediately after either the <xref:System.ServiceModel.ICommunicationObject.Close%2A> or <xref:System.ServiceModel.ICommunicationObject.BeginClose%2A> method is invoked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -441,14 +441,14 @@
         <summary>Causes a communication object to transition from the created state into the opened state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an <xref:System.ServiceModel.ICommunicationObject> is instantiated, it begins in the <xref:System.ServiceModel.CommunicationState> state. In the <xref:System.ServiceModel.CommunicationState> state, the object can be configured (for example, properties can be set, or events can be registered), but it is not yet usable to send or receive messages. The <xref:System.ServiceModel.ICommunicationObject.Open%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until the open operation succeeds, the open operation times out or fails and the object becomes faulted, or the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
-  
- In the <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is usable (for example, messages can be received), but it is no longer configurable.  
-  
- There is also an asynchronous version of the open method that is initiated by calling <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> and completed by calling <xref:System.ServiceModel.ICommunicationObject.EndOpen%28System.IAsyncResult%29>.  
-  
+When an <xref:System.ServiceModel.ICommunicationObject> is instantiated, it begins in the <xref:System.ServiceModel.CommunicationState> state. In the <xref:System.ServiceModel.CommunicationState> state, the object can be configured (for example, properties can be set, or events can be registered), but it is not yet usable to send or receive messages. The <xref:System.ServiceModel.ICommunicationObject.Open%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until the open operation succeeds, the open operation times out or fails and the object becomes faulted, or the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
+ 
+In the <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is usable (for example, messages can be received), but it is no longer configurable.  
+ 
+There is also an asynchronous version of the open method that is initiated by calling <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> and completed by calling <xref:System.ServiceModel.ICommunicationObject.EndOpen%28System.IAsyncResult%29>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationException">The <see cref="T:System.ServiceModel.ICommunicationObject" /> was unable to be opened and has entered the <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
@@ -476,14 +476,14 @@
         <summary>Causes a communication object to transition from the created state into the opened state within a specified interval of time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an <xref:System.ServiceModel.ICommunicationObject> is instantiated, it begins in the <xref:System.ServiceModel.CommunicationState> state. In the <xref:System.ServiceModel.CommunicationState> state, the object can be configured (for example, properties can be set, or events can be registered), but it is not yet usable to send or receive messages. The <xref:System.ServiceModel.ICommunicationObject.Open%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until the open operation succeeds, the open operation times out or fails and the object becomes faulted, or the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
-  
- In the <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is usable (for example, messages can be received), but it is no longer configurable.  
-  
- There is also an asynchronous version of the open method that is initiated by calling <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> and completed by calling <xref:System.ServiceModel.ICommunicationObject.EndOpen%28System.IAsyncResult%29>.  
-  
+When an <xref:System.ServiceModel.ICommunicationObject> is instantiated, it begins in the <xref:System.ServiceModel.CommunicationState> state. In the <xref:System.ServiceModel.CommunicationState> state, the object can be configured (for example, properties can be set, or events can be registered), but it is not yet usable to send or receive messages. The <xref:System.ServiceModel.ICommunicationObject.Open%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until the open operation succeeds, the open operation times out or fails and the object becomes faulted, or the <xref:System.ServiceModel.ICommunicationObject> is aborted.  
+ 
+In the <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.ICommunicationObject> is usable (for example, messages can be received), but it is no longer configurable.  
+ 
+There is also an asynchronous version of the open method that is initiated by calling <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> and completed by calling <xref:System.ServiceModel.ICommunicationObject.EndOpen%28System.IAsyncResult%29>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.CommunicationException">The <see cref="T:System.ServiceModel.ICommunicationObject" /> was unable to be opened and has entered the <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
@@ -528,10 +528,10 @@
         <summary>Occurs when the communication object first enters the opening state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs when the communication object first begins to transition from the <xref:System.ServiceModel.CommunicationState> state into the <xref:System.ServiceModel.CommunicationState> state, immediately after either the <xref:System.ServiceModel.ICommunicationObject.Open%2A> or <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> method is invoked.  
-  
+This event occurs when the communication object first begins to transition from the <xref:System.ServiceModel.CommunicationState> state into the <xref:System.ServiceModel.CommunicationState> state, immediately after either the <xref:System.ServiceModel.ICommunicationObject.Open%2A> or <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> method is invoked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,24 +554,24 @@
         <value>The value of the <see cref="T:System.ServiceModel.CommunicationState" /> of the object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The main communication states available to an <xref:System.ServiceModel.ICommunicationObject> are:  
-  
+The main communication states available to an <xref:System.ServiceModel.ICommunicationObject> are:  
+ 
 -   <xref:System.ServiceModel.CommunicationState> <xref:System.ServiceModel.CommunicationState>  
-  
+ 
 -   <xref:System.ServiceModel.CommunicationState>  
-  
+ 
 -   <xref:System.ServiceModel.CommunicationState>  
-  
- There are also transitory states that such an object can occupy when transitioning between the first three main states:  
-  
+ 
+There are also transitory states that such an object can occupy when transitioning between the first three main states:  
+ 
 -   <xref:System.ServiceModel.CommunicationState>  
-  
+ 
 -   <xref:System.ServiceModel.CommunicationState>  
-  
- This <xref:System.ServiceModel.CommunicationState> defines the states that are valid for all communication-oriented objects in the system, including channels, listeners, the channel and listener factories, and the <xref:System.ServiceModel.ServiceHost> class.  
-  
+ 
+This <xref:System.ServiceModel.CommunicationState> defines the states that are valid for all communication-oriented objects in the system, including channels, listeners, the channel and listener factories, and the <xref:System.ServiceModel.ServiceHost> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -586,12 +586,12 @@
         <summary>Begins an asynchronous operation to close a communication object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until its transition to the <xref:System.ServiceModel.CommunicationState> state is completed or fails.  
-  
- Versions with and without an explicit timeout are provided.  
-  
+The <xref:System.ServiceModel.ICommunicationObject.BeginOpen%2A> method causes an <xref:System.ServiceModel.ICommunicationObject> to enter into the <xref:System.ServiceModel.CommunicationState> state where it remains until its transition to the <xref:System.ServiceModel.CommunicationState> state is completed or fails.  
+ 
+Versions with and without an explicit timeout are provided.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -606,12 +606,12 @@
         <summary>Begins an asynchronous operation to close a communication object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state.  
-  
- Versions with and without an explicit timeout are provided.  
-  
+This method causes an <xref:System.ServiceModel.ICommunicationObject> to gracefully transition from the <xref:System.ServiceModel.CommunicationState> state to the <xref:System.ServiceModel.CommunicationState> state.  
+ 
+Versions with and without an explicit timeout are provided.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -626,10 +626,10 @@
         <summary>Causes a communication object to transition from the created state into the opened state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Versions with and without an explicit timeout are provided.  
-  
+Versions with and without an explicit timeout are provided.  
+ 
  ]]></format>
         </remarks>
       </Docs>

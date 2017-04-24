@@ -13,16 +13,16 @@
     <summary>Indicates the first day of the week to use when calling date-related functions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
+ 
+The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
+ 
+Date-related functions also return `FirstDayOfWeek` values (except `System`).  
+ 
  ]]></format>
     </remarks>
   </Docs>

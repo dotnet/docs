@@ -73,10 +73,10 @@
         <value>A string that contains information about the connection to the instance store database.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Examples of connection string contents include provider, data source, instance store database, and integrated security information.  
-  
+Examples of connection string contents include provider, data source, instance store database, and integrated security information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,10 +106,10 @@
         <value>A string name that represents a connection to a database server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of a named connection string is “DefaultConnectionString”.  
-  
+An example of a named connection string is “DefaultConnectionString”.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <value>A timespan object that represents the lock renewal period.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the host does not renew the lock in the specified time period, the instance is unlocked and may be picked up by another host.  
-  
+If the host does not renew the lock in the specified time period, the instance is unlocked and may be picked up by another host.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,10 +191,10 @@
         <value>An enumeration of the actions that can occur when an instance completes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The enumerated actions consist of deleting the instance data from the persistence store or not deleting the instance data from the persistence store, when the instance has completed its operation.  
-  
+The enumerated actions consist of deleting the instance data from the persistence store or not deleting the instance data from the persistence store, when the instance has completed its operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,10 +221,10 @@
         <value>An option that determines the manner in which data compression is performed, if at all.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible values for this property are “None”, which specifies no compression, and “GZip”, which specifies that instance data is compressed and uses the gzip algorithm.  
-  
+Possible values for this property are “None”, which specifies no compression, and “GZip”, which specifies that instance data is compressed and uses the gzip algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <value>An action response to an exception thrown.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Examples of the resulting <xref:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceLockedExceptionAction%2A> responses can include graceful shutdown and overlapped recycling of app domains, as well as failover and recovery from host failures.  
-  
+Examples of the resulting <xref:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceLockedExceptionAction%2A> responses can include graceful shutdown and overlapped recycling of app domains, as well as failover and recovery from host failures.  
+ 
  ]]></format>
         </remarks>
       </Docs>

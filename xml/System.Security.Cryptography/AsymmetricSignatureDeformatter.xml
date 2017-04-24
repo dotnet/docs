@@ -24,10 +24,10 @@
     <summary>Represents the abstract base class from which all implementations of asymmetric signature deformatters derive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Asymmetric signature deformatters verify the digital signatures that are created using implementations of <xref:System.Security.Cryptography.AsymmetricSignatureFormatter>.  
-  
+Asymmetric signature deformatters verify the digital signatures that are created using implementations of <xref:System.Security.Cryptography.AsymmetricSignatureFormatter>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,12 +51,12 @@
         <summary>Initializes a new instance of <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of an abstract class. Application code will create a new instance of a derived class.  
-  
- Use implementations of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.SetKey%2A> and <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.SetHashAlgorithm%2A> to set the key and hash algorithm before calling an implementation of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature%2A>.  
-  
+You cannot create an instance of an abstract class. Application code will create a new instance of a derived class.  
+ 
+Use implementations of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.SetKey%2A> and <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.SetHashAlgorithm%2A> to set the key and hash algorithm before calling an implementation of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <summary>When overridden in a derived class, sets the hash algorithm to use for verifying the signature.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must set a hash algorithm before calling an implementation of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature%2A>.  
-  
+You must set a hash algorithm before calling an implementation of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <summary>When overridden in a derived class, sets the public key to use for verifying the signature.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must set a key before calling an implementation of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature%2A>.  
-  
+You must set a key before calling an implementation of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
           <see langword="true" /> if <paramref name="rgbSignature" /> matches the signature computed using the specified hash algorithm and key on <paramref name="rgbHash" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must specify a public key and a hash algorithm before calling this method.  
-  
+You must specify a public key and a hash algorithm before calling this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@
           <see langword="true" /> if the signature is valid for the hash; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets the hash algorithm to be used before verifying the signature of the input hash algorithm value.  
-  
+This method sets the hash algorithm to be used before verifying the signature of the input hash algorithm value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="hash" /> parameter is <see langword="null" />.</exception>

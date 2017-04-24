@@ -41,35 +41,35 @@
     <summary>Represents a collection of <see cref="T:System.Windows.DependencyObject" />, <see cref="T:System.Windows.Freezable" />, or <see cref="T:System.Windows.Media.Animation.Animatable" /> objects. <see cref="T:System.Windows.FreezableCollection`1" /> is itself an <see cref="T:System.Windows.Media.Animation.Animatable" /> type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is provided to enable the creation of custom collection types that fully support data binding, change notification, property invalidation, and animation of its contents.  
-  
+This class is provided to enable the creation of custom collection types that fully support data binding, change notification, property invalidation, and animation of its contents.  
+ 
 ### XAML Usage for FreezableCollection  
- <xref:System.Windows.FreezableCollection%601> supports a limited [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax.  
-  
+<xref:System.Windows.FreezableCollection%601> supports a limited [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax.  
+ 
 -   As an object element at the root, you can theoretically specify an unconstrained <xref:System.Windows.FreezableCollection%601> object element, which must also specify the [x:TypeArguments Directive](~/docs/framework/xaml-services/x-typearguments-directive.md) to declare the constraint. However, this is not a common scenario, because to do this, the <xref:System.Windows.FreezableCollection%601> must be the root element. This limitation exists because the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] can only support [x:TypeArguments Directive](~/docs/framework/xaml-services/x-typearguments-directive.md) when the element it is being set on is the root element, and you must use  on any open constraint generic if you want to instantiate a generic type in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. It is unlikely that you want a <xref:System.Windows.FreezableCollection%601> as the root element, even as loose [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+ 
 -   If you derive from <xref:System.Windows.FreezableCollection%601> and apply a type constraint in the derived collection, the derived collection can support a variety of usages. This is possible because the constraint in your derivation eliminates the need to pass .  
-  
-    -   The typical [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage for such a derived collection is through implicit collection syntax. Collections that support certain interfaces do not need to specify the collection itself as an object element. For details on collection syntax in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md). For instance, an *object* with a *property* where the *property* was of type <xref:System.Windows.FreezableCollection%601> constrained by <xref:System.Windows.DependencyObject> could support the following syntax:  
-  
-        ```  
-        <object>  
-          <object.property>  
-            oneOrMoreDependencyObjectElements  
-          </object.property>  
-        </object>  
-        ```  
-  
-    -   As long as you do not hide the default constructor, the derived collection can also support an object element syntax (where the object element is explicit, as opposed to the implicit usage shown above). It does not need to be the root element. Or, you can also use the derived collection as a root element, without needing to specify , although using a collection as a root element is uncommon.  
-  
+ 
+   -   The typical [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage for such a derived collection is through implicit collection syntax. Collections that support certain interfaces do not need to specify the collection itself as an object element. For details on collection syntax in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md). For instance, an *object* with a *property* where the *property* was of type <xref:System.Windows.FreezableCollection%601> constrained by <xref:System.Windows.DependencyObject> could support the following syntax:  
+ 
+       ```  
+       <object>  
+         <object.property>  
+           oneOrMoreDependencyObjectElements  
+         </object.property>  
+       </object>  
+       ```  
+ 
+   -   As long as you do not hide the default constructor, the derived collection can also support an object element syntax (where the object element is explicit, as opposed to the implicit usage shown above). It does not need to be the root element. Or, you can also use the derived collection as a root element, without needing to specify , although using a collection as a root element is uncommon.  
+ 
 -   Any child elements of the collection in either of the above scenarios must be of the type of either the implemented constraint, or as specified by .  
-  
+ 
 <a name="xamlTextUsage_FreezableCollection_g"></a>   
 ## XAML Text Usage  
- See Remarks.  
-  
+See Remarks.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -106,12 +106,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.FreezableCollection`1" /> class that contains the same elements as the specified collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation performs a shallow copy on the specified collection; only references to the collection's elements are copied, the elements themselves are not cloned. Modifying an element of the new <xref:System.Windows.FreezableCollection%601> also modifies that element for `collection`.  
-  
- The elements are placed in the new <xref:System.Windows.FreezableCollection%601> in the same order they are read by the enumerator of the specified collection.  
-  
+This operation performs a shallow copy on the specified collection; only references to the collection's elements are copied, the elements themselves are not cloned. Modifying an element of the new <xref:System.Windows.FreezableCollection%601> also modifies that element for `collection`.  
+ 
+The elements are placed in the new <xref:System.Windows.FreezableCollection%601> in the same order they are read by the enumerator of the specified collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -198,10 +198,10 @@
         <returns>A modifiable copy of this collection and its contents. The copy's <see cref="P:System.Windows.Freezable.IsFrozen" /> value is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method shadows the inherited <xref:System.Windows.Media.Animation.Animatable.Clone%2A?displayProperty=fullName> method with a strongly typed implementation for convenience.  
-  
+This method shadows the inherited <xref:System.Windows.Media.Animation.Animatable.Clone%2A?displayProperty=fullName> method with a strongly typed implementation for convenience.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,10 +226,10 @@
         <summary>Makes this instance a clone (deep copy) of the specified <see cref="T:System.Windows.FreezableCollection`1" /> using base (non-animated) property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.FreezableCollection%601.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.FreezableCollection%601.Clone%2A> instead of calling this method directly.  
-  
+This method is called by the <xref:System.Windows.FreezableCollection%601.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.FreezableCollection%601.Clone%2A> instead of calling this method directly.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -255,10 +255,10 @@
         <returns>A modifiable clone of the collection and its contents. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method shadows the inherited <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName> method with a strongly typed implementation for convenience.  
-  
+This method shadows the inherited <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName> method with a strongly typed implementation for convenience.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <summary>Makes this instance a modifiable clone (deep copy) of the specified <see cref="T:System.Windows.FreezableCollection`1" /> using current property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.FreezableCollection%601.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.FreezableCollection%601.CloneCurrentValue%2A> instead of calling this method directly.  
-  
+This method is called by the <xref:System.Windows.FreezableCollection%601.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.FreezableCollection%601.CloneCurrentValue%2A> instead of calling this method directly.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -339,10 +339,10 @@
         <summary>Copies the entire <see cref="T:System.Windows.FreezableCollection`1" /> to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that this operation performs a shallow copy. The elements are copied to the target array in the same order in which the enumerator iterates through this <xref:System.Windows.FreezableCollection%601>.  
-  
+Note that this operation performs a shallow copy. The elements are copied to the target array in the same order in which the enumerator iterates through this <xref:System.Windows.FreezableCollection%601>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -388,18 +388,18 @@
         <returns>The new instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not call this method directly (except when calling base in an implementation). This method is called internally by <xref:System.Windows.Freezable.CreateInstance%2A>, whenever a new instance of the <xref:System.Windows.Freezable> is created.  
+Do not call this method directly (except when calling base in an implementation). This method is called internally by <xref:System.Windows.Freezable.CreateInstance%2A>, whenever a new instance of the <xref:System.Windows.Freezable> is created.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
-  
- [!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
- [!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
-  
+The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
+ 
+[!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
+[!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -431,10 +431,10 @@
  If <paramref name="isChecking" /> is <see langword="false" />, this method returns <see langword="true" /> if the if the specified <see cref="T:System.Windows.FreezableCollection`1" /> is now unmodifiable, or <see langword="false" /> if it cannot be made unmodifiable, with the side effect of having begun to change the frozen status of this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not call this method directly (except when calling base in an implementation). This method is called internally by <xref:System.Windows.Freezable.CanFreeze%2A> (with `isChecking` equal to `true`) and  <xref:System.Windows.Freezable.Freeze%2A> (with `isChecking` equal to `false`).  
-  
+Do not call this method directly (except when calling base in an implementation). This method is called internally by <xref:System.Windows.Freezable.CanFreeze%2A> (with `isChecking` equal to `true`) and  <xref:System.Windows.Freezable.Freeze%2A> (with `isChecking` equal to `false`).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -462,10 +462,10 @@
         <summary>Makes this instance a frozen clone of the specified <see cref="T:System.Windows.FreezableCollection`1" /> using base (non-animated) property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by <xref:System.Windows.Freezable.GetAsFrozen%2A> and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
-  
+This method is called by <xref:System.Windows.Freezable.GetAsFrozen%2A> and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -493,10 +493,10 @@
         <summary>Makes this instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" />. If this object has animated dependency properties, their current animated values are copied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
-  
+This method is called by <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -677,10 +677,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.FreezableCollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -703,10 +703,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -733,10 +733,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -759,10 +759,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Windows.FreezableCollection`1" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -784,10 +784,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.FreezableCollection`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -810,10 +810,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -839,10 +839,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -869,10 +869,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.FreezableCollection`1" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -898,10 +898,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -928,10 +928,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -954,10 +954,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.FreezableCollection`1" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -980,10 +980,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.FreezableCollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,10 +1009,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1037,10 +1037,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

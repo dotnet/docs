@@ -18,13 +18,13 @@
     <summary>Provides an example implementation of the <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.Compiler.CodeCompiler> is a useful utility base class for code generators to derive from in order to provide code compilation functions.  
-  
+<xref:System.CodeDom.Compiler.CodeCompiler> is a useful utility base class for code generators to derive from in order to provide code compilation functions.  
+ 
 > [!NOTE]
 >  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
@@ -86,10 +86,10 @@
         <value>The name of the compiler executable.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the name of the compiler executable to invoke.  
-  
+This property indicates the name of the compiler executable to invoke.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <value>The file name extension to use for source files.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the file name extension of the source files that are to be compiled.  
-  
+This property indicates the file name extension of the source files that are to be compiled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,10 +397,10 @@
         <returns>The results of compilation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -431,10 +431,10 @@
         <returns>The results of compilation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for compilation. The associated enumeration is <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -463,10 +463,10 @@
         <returns>The results of compilation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -497,10 +497,10 @@
         <returns>The results of compilation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for compilation. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -529,10 +529,10 @@
         <returns>The results of compilation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -563,10 +563,10 @@
         <returns>The results of compilation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.CodeCompiler> instance is cast to an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

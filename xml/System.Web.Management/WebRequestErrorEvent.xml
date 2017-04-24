@@ -14,37 +14,37 @@
     <summary>Defines the event that carries information about Web-request errors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Management.WebRequestErrorEvent> is raised if an error occurs during a Web request. Your application should use this event to obtain request-related information as defined by the <xref:System.Web.Management.WebRequestInformation> and the <xref:System.Web.Management.WebThreadInformation> classes.  
-  
+The <xref:System.Web.Management.WebRequestErrorEvent> is raised if an error occurs during a Web request. Your application should use this event to obtain request-related information as defined by the <xref:System.Web.Management.WebRequestInformation> and the <xref:System.Web.Management.WebThreadInformation> classes.  
+ 
 > [!NOTE]
 >  In most cases you will use the standard ASP.NET health monitoring types and control their behavior by setting the `healthMonitoring` configuration section. You can also create custom types, as shown in the next example. If you create your custom event type and you need to add your own information, customize the <xref:System.Web.Management.WebBaseEvent.FormatCustomEventDetails%2A> method, this will avoid overwriting or tampering with sensitive system information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example has two parts. The first part is an excerpt of a configuration file that enables ASP.NET to use a custom event. The second part shows how to derive from the <xref:System.Web.Management.WebRequestErrorEvent> class to create the custom event.  
-  
+The following code example has two parts. The first part is an excerpt of a configuration file that enables ASP.NET to use a custom event. The second part shows how to derive from the <xref:System.Web.Management.WebRequestErrorEvent> class to create the custom event.  
+ 
 ```  
 <healthMonitoring enabled="true" heartBeatInterval="0">  
-  <eventMappings>  
-    <add  name="SampleWebRequestErrorEvent" type="SamplesAspNet.SampleWebRequestErrorEvent,webrequesterrorevent,Version=1.0.1573.21654, Culture=neutral, PublicKeyToken=63ada862a6c5af13, processorArchitecture=MSIL"/>  
-  </eventMappings>  
-  
-  <rules>  
-    <add   
-      name="Custom Web Request Error Events"  
-      eventName="SampleWebRequestErrorEvent"   
-      provider="EventLogProvider"    
-      profile="Critical"/>  
-  </rules>  
+ <eventMappings>  
+   <add  name="SampleWebRequestErrorEvent" type="SamplesAspNet.SampleWebRequestErrorEvent,webrequesterrorevent,Version=1.0.1573.21654, Culture=neutral, PublicKeyToken=63ada862a6c5af13, processorArchitecture=MSIL"/>  
+ </eventMappings>  
+ 
+ <rules>  
+   <add   
+     name="Custom Web Request Error Events"  
+     eventName="SampleWebRequestErrorEvent"   
+     provider="EventLogProvider"    
+     profile="Critical"/>  
+ </rules>  
 </healthMonitoring>  
 ```  
-  
- [!code-csharp[System.Web.Management.WebRequestErrorEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#1)]
- [!code-vb[System.Web.Management.WebRequestErrorEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#1)]  
-  
+ 
+[!code-csharp[System.Web.Management.WebRequestErrorEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#1)]
+[!code-vb[System.Web.Management.WebRequestErrorEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,18 +72,18 @@
         <summary>Initializes the <see cref="T:System.Web.Management.WebRequestErrorEvent" /> class with specified event parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor allows you to create a <xref:System.Web.Management.WebRequestErrorEvent> event without needing to specify detailed code information about the event itself.  
+This constructor allows you to create a <xref:System.Web.Management.WebRequestErrorEvent> event without needing to specify detailed code information about the event itself.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-csharp[System.Web.Management.WebRequestErrorEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#2)]
- [!code-vb[System.Web.Management.WebRequestErrorEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#2)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-csharp[System.Web.Management.WebRequestErrorEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#2)]
+[!code-vb[System.Web.Management.WebRequestErrorEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,18 +113,18 @@
         <summary>Initializes the <see cref="T:System.Web.Management.WebRequestErrorEvent" /> class with specified event parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if you need to specify detailed code information about the event.  
+Use this constructor if you need to specify detailed code information about the event.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-csharp[System.Web.Management.WebRequestErrorEvent#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#3)]
- [!code-vb[System.Web.Management.WebRequestErrorEvent#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#3)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-csharp[System.Web.Management.WebRequestErrorEvent#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#3)]
+[!code-vb[System.Web.Management.WebRequestErrorEvent#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,18 +164,18 @@
         <value>The application request information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard request information is defined by the <xref:System.Web.Management.WebRequestInformation> class.  
+The standard request information is defined by the <xref:System.Web.Management.WebRequestInformation> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to obtain the <xref:System.Web.Management.WebRequestErrorEvent.RequestInformation%2A> property value.  
-  
- [!code-csharp[System.Web.Management.WebRequestErrorEvent#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#5)]
- [!code-vb[System.Web.Management.WebRequestErrorEvent#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#5)]  
-  
+The following code example shows how to obtain the <xref:System.Web.Management.WebRequestErrorEvent.RequestInformation%2A> property value.  
+ 
+[!code-csharp[System.Web.Management.WebRequestErrorEvent#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#5)]
+[!code-vb[System.Web.Management.WebRequestErrorEvent#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,18 +197,18 @@
         <value>The application thread information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard thread information is defined by the <xref:System.Web.Management.WebThreadInformation> class.  
+The standard thread information is defined by the <xref:System.Web.Management.WebThreadInformation> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to obtain the <xref:System.Web.Management.WebRequestErrorEvent.ThreadInformation%2A> property value.  
-  
- [!code-csharp[System.Web.Management.WebRequestErrorEvent#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#6)]
- [!code-vb[System.Web.Management.WebRequestErrorEvent#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#6)]  
-  
+The following code example shows how to obtain the <xref:System.Web.Management.WebRequestErrorEvent.ThreadInformation%2A> property value.  
+ 
+[!code-csharp[System.Web.Management.WebRequestErrorEvent#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/CS/webrequesterrorevent.cs#6)]
+[!code-vb[System.Web.Management.WebRequestErrorEvent#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestErrorEvent/VB/webrequesterrorevent.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebRequestErrorEvent" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value you use to define your event code or identifier must be greater than the <xref:System.Web.Management.WebEventCodes.WebExtendedBase> field constant.  
-  
+The value you use to define your event code or identifier must be greater than the <xref:System.Web.Management.WebEventCodes.WebExtendedBase> field constant.  
+ 
  ]]></format>
         </remarks>
       </Docs>

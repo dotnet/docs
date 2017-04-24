@@ -14,12 +14,12 @@
     <summary>Defines access control to assemblies and types for purposes of XAML loading.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Static methods of <xref:System.Xaml.Permissions.XamlAccessLevel> return instances of <xref:System.Xaml.Permissions.XamlAccessLevel>, based on input. This is the only way to generate a <xref:System.Xaml.Permissions.XamlAccessLevel> value (the constructor is private).  
-  
- <xref:System.Xaml.Permissions.XamlAccessLevel> is generally only used in conjunction with <xref:System.Xaml.Permissions.XamlLoadPermission>.  
-  
+Static methods of <xref:System.Xaml.Permissions.XamlAccessLevel> return instances of <xref:System.Xaml.Permissions.XamlAccessLevel>, based on input. This is the only way to generate a <xref:System.Xaml.Permissions.XamlAccessLevel> value (the constructor is private).  
+ 
+<xref:System.Xaml.Permissions.XamlAccessLevel> is generally only used in conjunction with <xref:System.Xaml.Permissions.XamlLoadPermission>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -22,10 +22,10 @@
     <summary>Specifies SQL Server-specific data type of a field, property, for use in a <see cref="T:System.Data.SqlClient.SqlParameter" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When setting command parameters, the <xref:System.Data.SqlDbType> and <xref:System.Data.DbType> are linked. Therefore, setting the `DbType` changes the `SqlDbType` to a supporting `SqlDbType`.  
-  
+When setting command parameters, the <xref:System.Data.SqlDbType> and <xref:System.Data.DbType> are linked. Therefore, setting the `DbType` changes the `SqlDbType` to a supporting `SqlDbType`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,21 +14,21 @@
     <summary>Supports installing and removing the SQL Server database elements of ASP.NET features.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use SQL Server databases to store information for ASP.NET features such as session state, membership, Web parts personalization, and role management. These features require that the SQL Server database to which they are connected be properly configured before use. You can use the ASP.NET Register SQL tool (aspnet_regsql.exe) to do this, or you can call the static methods exposed by the <xref:System.Web.Management.SqlServices> class directly from your code.  
-  
+You can use SQL Server databases to store information for ASP.NET features such as session state, membership, Web parts personalization, and role management. These features require that the SQL Server database to which they are connected be properly configured before use. You can use the ASP.NET Register SQL tool (aspnet_regsql.exe) to do this, or you can call the static methods exposed by the <xref:System.Web.Management.SqlServices> class directly from your code.  
+ 
 > [!NOTE]
 >  Using the aspnet_regsql.exe tool or the <xref:System.Web.Management.SqlServices> class to configure the database only sets up the database that the providers will use with the proper tables, triggers, and stored procedures. Configuring the database in this way does not modify configuration files to specify that these features use the SQL Providers for these services.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#1)]
- [!code-vb[System.Web.Management.SqlServices#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#1)]
+[!code-vb[System.Web.Management.SqlServices#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,21 +112,21 @@
         <summary>Installs components for selected ASP.NET features on a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
+If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+ 
 > [!NOTE]
 >  The connection to the database server is made with a trusted connection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.Install%28System.String%2CSystem.String%2CSystem.Web.Management.SqlFeatures%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#4)]
- [!code-vb[System.Web.Management.SqlServices#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#4)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.Install%28System.String%2CSystem.String%2CSystem.Web.Management.SqlFeatures%29> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#4)]
+[!code-vb[System.Web.Management.SqlServices#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
@@ -158,18 +158,18 @@
         <summary>Installs components for selected ASP.NET services on a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`.  
+If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.Install%28System.String%2CSystem.Web.Management.SqlFeatures%2CSystem.String%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#2)]
- [!code-vb[System.Web.Management.SqlServices#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#2)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.Install%28System.String%2CSystem.Web.Management.SqlFeatures%2CSystem.String%29> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#2)]
+[!code-vb[System.Web.Management.SqlServices#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
@@ -205,13 +205,13 @@
         <summary>Installs components for selected ASP.NET features on a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
+If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+ 
 > [!NOTE]
 >  The connection to the database server is made with a trusted connection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
@@ -243,21 +243,21 @@
         <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
+If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+ 
 > [!NOTE]
 >  The connection to the database server is made with a trusted connection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.InstallSessionState%2A> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#10)]
- [!code-vb[System.Web.Management.SqlServices#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#10)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.InstallSessionState%2A> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#10)]
+[!code-vb[System.Web.Management.SqlServices#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
@@ -289,13 +289,13 @@
         <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.InstallSessionState%28System.String%2CSystem.Web.Management.SessionStateType%2CSystem.String%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#8)]
- [!code-vb[System.Web.Management.SqlServices#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#8)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.InstallSessionState%28System.String%2CSystem.Web.Management.SessionStateType%2CSystem.String%29> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#8)]
+[!code-vb[System.Web.Management.SqlServices#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
@@ -331,21 +331,21 @@
         <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
+If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+ 
 > [!NOTE]
 >  The connection to the database server is made with a trusted connection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.InstallSessionState%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Web.Management.SessionStateType%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#12)]
- [!code-vb[System.Web.Management.SqlServices#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#12)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.InstallSessionState%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Web.Management.SessionStateType%29> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#12)]
+[!code-vb[System.Web.Management.SqlServices#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#12)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
@@ -377,21 +377,21 @@
         <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
+If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+ 
 > [!NOTE]
 >  The connection to the database server is made with a trusted connection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.Uninstall%28System.String%2CSystem.String%2CSystem.Web.Management.SqlFeatures%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#5)]
- [!code-vb[System.Web.Management.SqlServices#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#5)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.Uninstall%28System.String%2CSystem.String%2CSystem.Web.Management.SqlFeatures%29> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#5)]
+[!code-vb[System.Web.Management.SqlServices#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
@@ -423,21 +423,21 @@
         <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database `aspnetdb`.  
-  
+If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database `aspnetdb`.  
+ 
 > [!NOTE]
 >  The connection to the database server is made with a trusted connection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.Uninstall%2A> method of the <xref:System.Web.Management.SqlServices> type.  
-  
- [!code-csharp[System.Web.Management.SqlServices#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#3)]
- [!code-vb[System.Web.Management.SqlServices#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#3)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.Uninstall%2A> method of the <xref:System.Web.Management.SqlServices> type.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#3)]
+[!code-vb[System.Web.Management.SqlServices#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
@@ -473,13 +473,13 @@
         <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
+If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+ 
 > [!NOTE]
 >  The connection to the database server is made with a trusted connection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
@@ -511,20 +511,20 @@
         <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+ 
+**Note** The connection to the database server is made with a trusted connection.  
+ 
   
- **Note** The connection to the database server is made with a trusted connection.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.UninstallSessionState%2A> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#11)]
- [!code-vb[System.Web.Management.SqlServices#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#11)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.UninstallSessionState%2A> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#11)]
+[!code-vb[System.Web.Management.SqlServices#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#11)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
@@ -556,13 +556,13 @@
         <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.UninstallSessionState%28System.String%2CSystem.String%2CSystem.Web.Management.SessionStateType%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#9)]
- [!code-vb[System.Web.Management.SqlServices#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#9)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.UninstallSessionState%28System.String%2CSystem.String%2CSystem.Web.Management.SessionStateType%29> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#9)]
+[!code-vb[System.Web.Management.SqlServices#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
@@ -598,20 +598,20 @@
         <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
+ 
+**Note** The connection to the database server is made with a trusted connection.  
+ 
   
- **Note** The connection to the database server is made with a trusted connection.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.UninstallSessionState%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Web.Management.SessionStateType%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#13)]
- [!code-vb[System.Web.Management.SqlServices#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#13)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlServices.UninstallSessionState%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Web.Management.SessionStateType%29> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#13)]
+[!code-vb[System.Web.Management.SqlServices#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#13)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>

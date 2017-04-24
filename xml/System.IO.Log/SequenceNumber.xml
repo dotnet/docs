@@ -18,10 +18,10 @@
     <summary>Represents a sequence number assigned to a log record in a record sequence.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each log record in a sequence is assigned a sequence number greater than the sequence numbers of the records appended before it. A sequence number can be compared, but not otherwise manipulated.  
-  
+Each log record in a sequence is assigned a sequence number greater than the sequence numbers of the records appended before it. A sequence number can be compared, but not otherwise manipulated.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -229,32 +229,32 @@
           <see langword="true" /> if both <see cref="T:System.IO.Log.SequenceNumber" /> instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Equals%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_GreaterThan(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="c1" Type="System.IO.Log.SequenceNumber" />
-        <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
-      </Parameters>
-      <Docs>
-        <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
-        <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
-        <summary>Performs a logical comparison of two <see cref="T:System.IO.Log.SequenceNumber" /> instances to determine whether the first is greater than the second.</summary>
-        <returns>
-          <see langword="true" /> if the first instance is greater than the second instance, otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_GreaterThan">
+     <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_GreaterThan(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.IO.Log</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="c1" Type="System.IO.Log.SequenceNumber" />
+       <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
+     </Parameters>
+     <Docs>
+       <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
+       <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
+       <summary>Performs a logical comparison of two <see cref="T:System.IO.Log.SequenceNumber" /> instances to determine whether the first is greater than the second.</summary>
+       <returns>
+         <see langword="true" /> if the first instance is greater than the second instance, otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -283,32 +283,32 @@
           <see langword="true" /> if the first instance is greater than or equal to the second instance, otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_Inequality(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="c1" Type="System.IO.Log.SequenceNumber" />
-        <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
-      </Parameters>
-      <Docs>
-        <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
-        <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
-        <summary>Compares two <see cref="T:System.IO.Log.SequenceNumber" /> instances to determine whether they are not equal.</summary>
-        <returns>
-          <see langword="true" /> if both <see cref="T:System.IO.Log.SequenceNumber" /> instances are not equal, otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_Inequality(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.IO.Log</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="c1" Type="System.IO.Log.SequenceNumber" />
+       <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
+     </Parameters>
+     <Docs>
+       <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
+       <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
+       <summary>Compares two <see cref="T:System.IO.Log.SequenceNumber" /> instances to determine whether they are not equal.</summary>
+       <returns>
+         <see langword="true" /> if both <see cref="T:System.IO.Log.SequenceNumber" /> instances are not equal, otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -337,32 +337,32 @@
           <see langword="true" /> if the first instance is less than the second instance, otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_LessThanOrEqual(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="c1" Type="System.IO.Log.SequenceNumber" />
-        <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
-      </Parameters>
-      <Docs>
-        <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
-        <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.IO.Log.SequenceNumber" /> parameters to determine whether the first is less than or equal to the second.</summary>
-        <returns>
-          <see langword="true" /> if the first instance is less than or equal to the second instance, otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_LessThanOrEqual">
+     <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_LessThanOrEqual(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.IO.Log</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="c1" Type="System.IO.Log.SequenceNumber" />
+       <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
+     </Parameters>
+     <Docs>
+       <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
+       <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
+       <summary>Performs a logical comparison of the two <see cref="T:System.IO.Log.SequenceNumber" /> parameters to determine whether the first is less than or equal to the second.</summary>
+       <returns>
+         <see langword="true" /> if the first instance is less than or equal to the second instance, otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>

@@ -42,12 +42,12 @@
         <returns>The cloned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,20 +72,20 @@
         <summary>Parses the query string and sets the property values accordingly. If the query is valid, the class name property and condition property of the query will be parsed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example parses a query into class name and condition properties.  
-  
- [!code-csharp[wminet_ManagementQuery_ParseQuery#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementQuery_ParseQuery/cs/ManagementQuery_ParseQuery.cs#1)]
- [!code-vb[wminet_ManagementQuery_ParseQuery#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementQuery_ParseQuery/vb/ManagementQuery.vb#1)]  
-  
+The following example parses a query into class name and condition properties.  
+ 
+[!code-csharp[wminet_ManagementQuery_ParseQuery#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementQuery_ParseQuery/cs/ManagementQuery_ParseQuery.cs#1)]
+[!code-vb[wminet_ManagementQuery_ParseQuery#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementQuery_ParseQuery/vb/ManagementQuery.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,15 +107,15 @@
         <value>Returns a <see cref="T:System.String" /> value containing the format of the query string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- Can be set to any supported query language. "WQL" is the only value supported intrinsically by WMI.  
-  
+Can be set to any supported query language. "WQL" is the only value supported intrinsically by WMI.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,15 +137,15 @@
         <value>Returns a <see cref="T:System.String" /> value containing the query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- If the query object is constructed with no parameters, the property is null until specifically set. If the object was constructed with a specified query, the property returns the specified query string.  
-  
+If the query object is constructed with no parameters, the property is null until specifically set. If the object was constructed with a specified query, the property returns the specified query string.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,15 +23,15 @@
     <summary>Provides a type converter to convert collection objects to and from various other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.CollectionConverter.GetProperties%2A> method for this type converter always returns `null`, and the <xref:System.ComponentModel.TypeConverter.GetPropertiesSupported%2A> method always returns `false`.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
+The <xref:System.ComponentModel.CollectionConverter.GetProperties%2A> method for this type converter always returns `null`, and the <xref:System.ComponentModel.TypeConverter.GetPropertiesSupported%2A> method always returns `false`.  
+ 
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
 > [!NOTE]
 >  You should never create an instance of the <xref:System.ComponentModel.CollectionConverter> class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,13 +96,13 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
 > [!NOTE]
 >  The converted result will be shown in the property browser. For example, if you are converting a char collection into a string, it will be displayed as `char[] collection`.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -144,22 +144,22 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> with the properties that are exposed for this data type, or <see langword="null" /> if there are no properties. This method always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- The attributes array that you pass in will be used to filter the array. The attributes can have a mix of <xref:System.Type> and <xref:System.Attribute> objects. Filtering is defined by the following rules:  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
+The attributes array that you pass in will be used to filter the array. The attributes can have a mix of <xref:System.Type> and <xref:System.Attribute> objects. Filtering is defined by the following rules:  
+ 
 -   A <xref:System.Type> object will be treated as a wildcard; it will match any property that has the <xref:System.Type> in its set of attributes.  
-  
+ 
 -   If a property does not have an <xref:System.Attribute> of the same class, the property will not be included in the returned array.  
-  
+ 
 -   If the attribute is an instance of <xref:System.Attribute>, the property must be an exact match or it will not be included in the returned array.  
-  
+ 
 -   If an <xref:System.Attribute> instance is specified and it is the default property, it will be included in the returned array even if there is no instance of the <xref:System.Attribute> in the property.  
-  
- Collections do not support properties; therefore, this method always returns `null`.  
-  
+ 
+Collections do not support properties; therefore, this method always returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,12 +195,12 @@
           <see langword="false" /> because <see cref="M:System.ComponentModel.CollectionConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" /> should not be called to find the properties of this object. This method never returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- Collections do not support properties; therefore, this method always returns `false`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
+Collections do not support properties; therefore, this method always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

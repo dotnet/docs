@@ -14,16 +14,16 @@
     <summary>Represents a route that is used by ASP.NET Dynamic Data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use routes to configure Dynamic Data behavior.  
-  
- The static <xref:System.Web.Routing.RouteTable.Routes%2A> property of the <xref:System.Web.Routing.RouteTable> type holds a collection of routes. For Dynamic Data, one or more routes are typically registered (added to the <xref:System.Web.Routing.RouteTable.Routes%2A> property) in the `Application_Start` event in the Global.asax file. For example, routes determine whether the details for a row of data should be shown on the same page as the list of rows. They can also determine whether details should appear on the same page as the list of rows for some tables but not others.  
-  
- You set the <xref:System.Web.DynamicData.DynamicDataRoute.Action%2A>, <xref:System.Web.DynamicData.DynamicDataRoute.ViewName%2A>, <xref:System.Web.DynamicData.DynamicDataRoute.Table%2A>, and <xref:System.Web.DynamicData.DynamicDataRoute.Model%2A> properties and provide a pattern for the URL in the <xref:System.Web.Routing.Route.%23ctor%2A> constructor.  
-  
- Dynamic Data uses the URL pattern that you provide to match URL patterns for requests and to create URLs. For more information, see <xref:System.Web.DynamicData.DynamicDataRoute.%23ctor%2A>.  
-  
+You use routes to configure Dynamic Data behavior.  
+ 
+The static <xref:System.Web.Routing.RouteTable.Routes%2A> property of the <xref:System.Web.Routing.RouteTable> type holds a collection of routes. For Dynamic Data, one or more routes are typically registered (added to the <xref:System.Web.Routing.RouteTable.Routes%2A> property) in the `Application_Start` event in the Global.asax file. For example, routes determine whether the details for a row of data should be shown on the same page as the list of rows. They can also determine whether details should appear on the same page as the list of rows for some tables but not others.  
+ 
+You set the <xref:System.Web.DynamicData.DynamicDataRoute.Action%2A>, <xref:System.Web.DynamicData.DynamicDataRoute.ViewName%2A>, <xref:System.Web.DynamicData.DynamicDataRoute.Table%2A>, and <xref:System.Web.DynamicData.DynamicDataRoute.Model%2A> properties and provide a pattern for the URL in the <xref:System.Web.Routing.Route.%23ctor%2A> constructor.  
+ 
+Dynamic Data uses the URL pattern that you provide to match URL patterns for requests and to create URLs. For more information, see <xref:System.Web.DynamicData.DynamicDataRoute.%23ctor%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,12 +45,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicDataRoute" /> class by using the specified URL pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, you specify the URLs that Dynamic Data will create by using substitution parameters. For example, if you pass the string "{table}/{action}", the result would be the URL "~/Products/ListDetails.aspx" when you view the Product table by using the ListDetails action.  
-  
- Using substitution parameters is not required. You could pass the string "Table/DynamicData", which would produce "~/Table/DynamicData.aspx". You could pass "MyPageName" to produce "~/MyPageName.aspx". Dynamic Data does not rely on the URL to determine table and action information.  
-  
+Typically, you specify the URLs that Dynamic Data will create by using substitution parameters. For example, if you pass the string "{table}/{action}", the result would be the URL "~/Products/ListDetails.aspx" when you view the Product table by using the ListDetails action.  
+ 
+Using substitution parameters is not required. You could pass the string "Table/DynamicData", which would produce "~/Table/DynamicData.aspx". You could pass "MyPageName" to produce "~/MyPageName.aspx". Dynamic Data does not rely on the URL to determine table and action information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <value>The action name for a route.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of possible action names, see <xref:System.Web.DynamicData.PageAction?displayProperty=fullName>. If you do not set this property when you create an instance of <xref:System.Web.DynamicData.DynamicDataRoute>, the route will apply to all actions.  
-  
+For a list of possible action names, see <xref:System.Web.DynamicData.PageAction?displayProperty=fullName>. If you do not set this property when you create an instance of <xref:System.Web.DynamicData.DynamicDataRoute>, the route will apply to all actions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <returns>The routing information for the Web request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `httpContext` parameter provides Web request information that is required so that the requested table and action can be identified.  
-  
+The `httpContext` parameter provides Web request information that is required so that the requested table and action can be identified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <value>The data-model metadata that the route applies to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not set this property when you create an instance of <xref:System.Web.DynamicData.DynamicDataRoute>, the default model for the registered <xref:System.Data.Linq.DataContext> instance is used.  
-  
+If you do not set this property when you create an instance of <xref:System.Web.DynamicData.DynamicDataRoute>, the default model for the registered <xref:System.Data.Linq.DataContext> instance is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,10 +221,10 @@
         <value>The handler that is used to process requests for the route.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.DynamicDataRoute.RouteHandler%2A> property is identical to the <xref:System.Web.Routing.Route.RouteHandler%2A?displayProperty=fullName> property. It is provided as a strongly typed version of the <xref:System.Web.Routing.Route.RouteHandler%2A?displayProperty=fullName> property for coding convenience.  
-  
+The <xref:System.Web.DynamicData.DynamicDataRoute.RouteHandler%2A> property is identical to the <xref:System.Web.Routing.Route.RouteHandler%2A?displayProperty=fullName> property. It is provided as a strongly typed version of the <xref:System.Web.Routing.Route.RouteHandler%2A?displayProperty=fullName> property for coding convenience.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,10 +246,10 @@
         <value>The name of the table that is associated with the route.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not set this property when you create an instance of <xref:System.Web.DynamicData.DynamicDataRoute>, the route will apply to all tables in the data model that are indicated by <xref:System.Web.DynamicData.DynamicDataRoute.Model%2A>.  
-  
+If you do not set this property when you create an instance of <xref:System.Web.DynamicData.DynamicDataRoute>, the route will apply to all tables in the data model that are indicated by <xref:System.Web.DynamicData.DynamicDataRoute.Model%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,10 +271,10 @@
         <value>The name of the .aspx page that is associated with the route. If no page is specified for the route, the property returns the value of the <see cref="P:System.Web.DynamicData.DynamicDataRoute.Action" /> property with ".aspx" appended to it.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dynamic data uses several standard .aspx page names to create the UI to let users view, update, and delete data from a given table. These page names include List.aspx, Details.aspx, Edit.aspx, Insert.aspx, and ListDetails.aspx. The <xref:System.Web.DynamicData.DynamicDataRoute.ViewName%2A> property specifies which of these pages should be used for a given table and action.  
-  
+Dynamic data uses several standard .aspx page names to create the UI to let users view, update, and delete data from a given table. These page names include List.aspx, Details.aspx, Edit.aspx, Insert.aspx, and ListDetails.aspx. The <xref:System.Web.DynamicData.DynamicDataRoute.ViewName%2A> property specifies which of these pages should be used for a given table and action.  
+ 
  ]]></format>
         </remarks>
       </Docs>

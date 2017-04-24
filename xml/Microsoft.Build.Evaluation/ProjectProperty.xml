@@ -46,10 +46,10 @@
         <value>Returns the evaluated property value, which is never null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Cannot be set directly; only the unevaluated value can be set. The evaluated value contains no character escape sequences.  
-  
+Cannot be set directly; only the unevaluated value can be set. The evaluated value contains no character escape sequences.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,12 +189,12 @@
         <value>Returns the last property whose value was overridden by this property during evaluation. Returns null if the property has not been overridden.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method searches for all properties with the same name that lie above in the logical project file, and whose conditions evaluate to true.  
-  
- If the project has not been reevaluated since the last modification, this value may be incorrect.  
-  
+This method searches for all properties with the same name that lie above in the logical project file, and whose conditions evaluate to true.  
+ 
+If the project has not been reevaluated since the last modification, this value may be incorrect.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,12 +269,12 @@
         <value>Returns the unevaluated property value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The setter method updates both the unevaluated value and the evaluated value, but does not affect anything else in the project until reevaluation.  
-  
- The containing project is marked as modified. Unevaluated values are assumed to contain escaped character sequences as needed.  
-  
+The setter method updates both the unevaluated value and the evaluated value, but does not affect anything else in the project until reevaluation.  
+ 
+The containing project is marked as modified. Unevaluated values are assumed to contain escaped character sequences as needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

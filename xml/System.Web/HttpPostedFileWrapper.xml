@@ -19,10 +19,10 @@
     <summary>Encapsulates the HTTP intrinsic object that provides access to individual files that have been uploaded by a client.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpPostedFileWrapper> class derives from the <xref:System.Web.HttpPostedFileBase> class and serves as a wrapper for the <xref:System.Web.HttpPostedFile> class. This class exposes the functionality of the <xref:System.Web.HttpPostedFile> class while also exposing the <xref:System.Web.HttpPostedFileBase> type. The <xref:System.Web.HttpPostedFileBase> class enables you to replace the original implementation of the <xref:System.Web.HttpPostedFile> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
-  
+The <xref:System.Web.HttpPostedFileWrapper> class derives from the <xref:System.Web.HttpPostedFileBase> class and serves as a wrapper for the <xref:System.Web.HttpPostedFile> class. This class exposes the functionality of the <xref:System.Web.HttpPostedFile> class while also exposing the <xref:System.Web.HttpPostedFileBase> type. The <xref:System.Web.HttpPostedFileBase> class enables you to replace the original implementation of the <xref:System.Web.HttpPostedFile> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
+ 
  ]]></format>
     </remarks>
   </Docs>

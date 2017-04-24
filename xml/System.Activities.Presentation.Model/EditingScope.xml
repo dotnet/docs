@@ -14,10 +14,10 @@
     <summary>An editing scope represents a collection of changes to the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> tree that can be committed or rolled back as one atomic unit of work.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is useful for batching together a set of changes to multiple <xref:System.Activities.Presentation.Model.ModelItem> objects. As an example, in the messaging activities, the changes made from the raised dialogs will impact multiple property values. However, as all of the changes come from the raised dialog, the changes need to be considered as a batch and undone as a single unit of work. For more details on usage, see the Editing Scope sample  
-  
+This is useful for batching together a set of changes to multiple <xref:System.Activities.Presentation.Model.ModelItem> objects. As an example, in the messaging activities, the changes made from the raised dialogs will impact multiple property values. However, as all of the changes come from the raised dialog, the changes need to be considered as a batch and undone as a single unit of work. For more details on usage, see the Editing Scope sample  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -31,37 +31,37 @@
     <summary>The exception that is thrown when an operation is performed on a disposed object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.ObjectDisposedException> is thrown when you try to access a member of an object that implements the <xref:System.IDisposable> interface, and that object has been disposed. Typically, this exception is caused by one of the following conditions:  
-  
+An <xref:System.ObjectDisposedException> is thrown when you try to access a member of an object that implements the <xref:System.IDisposable> interface, and that object has been disposed. Typically, this exception is caused by one of the following conditions:  
+ 
 -   You've called an object's `Dispose` method, and you’re trying to access an instance member that gets or sets the object's state. The following example illustrates the <xref:System.ObjectDisposedException> that is thrown when you try to reset the frequency of timer notifications after you call the <xref:System.Threading.Timer.Dispose%2A?displayProperty=fullName> method.  
-  
-     [!code-csharp[System.ObjectDisposedException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.objectdisposedexception/cs/dispose1.cs#1)]
-     [!code-vb[System.ObjectDisposedException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.objectdisposedexception/vb/dispose1.vb#1)]  
-  
+ 
+    [!code-csharp[System.ObjectDisposedException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.objectdisposedexception/cs/dispose1.cs#1)]
+    [!code-vb[System.ObjectDisposedException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.objectdisposedexception/vb/dispose1.vb#1)]  
+ 
 -   You've called an object's `Close` method, and you’re trying to access an instance member that gets or sets the object's state. Often, the `Close` method provides a type's public implementation of the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method.  
-  
+ 
 -   You've called an object's `Dispose` method multiple times. Typically, this doesn’t throw an exception. However, depending on how a type implements <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>, it may not allow multiple calls to `Dispose`.  
+ 
+In most cases, this exception results from developer error. Instead of handling the error in a `try`/`catch` block, you should correct the error, typically by reinstantiating the object.  
+ 
   
- In most cases, this exception results from developer error. Instead of handling the error in a `try`/`catch` block, you should correct the error, typically by reinstantiating the object.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates an error that causes the `ObjectDisposedException` exception to be thrown.  
-  
- [!code-cpp[ObjDispEx#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjDispEx/CPP/objdispexc.cpp#1)]
- [!code-csharp[ObjDispEx#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjDispEx/CS/objdispexc.cs#1)]
- [!code-vb[ObjDispEx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjDispEx/VB/objdispexc.vb#1)]  
-  
- This code produces the following output:  
-  
+The following example demonstrates an error that causes the `ObjectDisposedException` exception to be thrown.  
+ 
+[!code-cpp[ObjDispEx#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjDispEx/CPP/objdispexc.cpp#1)]
+[!code-csharp[ObjDispEx#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjDispEx/CS/objdispexc.cs#1)]
+[!code-vb[ObjDispEx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjDispEx/VB/objdispexc.vb#1)]  
+ 
+This code produces the following output:  
+ 
 ```  
 Caught:  
-  Cannot access a closed Stream.  
+ Cannot access a closed Stream.  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,14 +95,14 @@ Caught:
         <summary>Initializes a new instance of the <see cref="T:System.ObjectDisposedException" /> class with a string containing the name of the disposed object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ObjectDisposedException.Message%2A> property is initialized to a system-supplied message that describes the error and includes the `objectName` parameter. This message takes into account the current system culture.  
-  
- The `InnerException` property of the new instance is initialized to `null`.  
-  
- If `objectName` is `null`, the `Message` property contains only an error message.  
-  
+The <xref:System.ObjectDisposedException.Message%2A> property is initialized to a system-supplied message that describes the error and includes the `objectName` parameter. This message takes into account the current system culture.  
+ 
+The `InnerException` property of the new instance is initialized to `null`.  
+ 
+If `objectName` is `null`, the `Message` property contains only an error message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@ Caught:
         <summary>Initializes a new instance of the <see cref="T:System.ObjectDisposedException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,12 +202,12 @@ Caught:
         <summary>Initializes a new instance of the <see cref="T:System.ObjectDisposedException" /> class with the specified object name and message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `InnerException` property of the new instance is initialized to `null`.  
-  
- If `objectName` is `null`, the `Message` property contains only an error message.  
-  
+The `InnerException` property of the new instance is initialized to `null`.  
+ 
+If `objectName` is `null`, the `Message` property contains only an error message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,12 +276,12 @@ Caught:
         <value>A string that describes the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ObjectDisposedException.ObjectName%2A> property is not `null`, the message includes the name of the object.  
-  
- This property overrides <xref:System.Exception.Message%2A?displayProperty=fullName>.  
-  
+If the <xref:System.ObjectDisposedException.ObjectName%2A> property is not `null`, the message includes the name of the object.  
+ 
+This property overrides <xref:System.Exception.Message%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -315,10 +315,10 @@ Caught:
         <value>A string containing the name of the disposed object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current property is not `null` or <xref:System.String?displayProperty=fullName>, the value of this property is included in the string returned by the <xref:System.ObjectDisposedException.Message%2A> property.  
-  
+If the current property is not `null` or <xref:System.String?displayProperty=fullName>, the value of this property is included in the string returned by the <xref:System.ObjectDisposedException.Message%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

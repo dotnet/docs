@@ -14,19 +14,19 @@
     <summary>Starts a URL editor that allows a user to select or create a URL. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method starts a user interface for selecting a URL.  
+The <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method starts a user interface for selecting a URL.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method to launch a URL builder from a menu command at design time.  
-  
- [!code-cpp[UrlBuilderExample#1](~/samples/snippets/cpp/VS_Snippets_WebNet/UrlBuilderExample/CPP/urlbuilderdesigner.cpp#1)]
- [!code-csharp[UrlBuilderExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UrlBuilderExample/CS/urlbuilderdesigner.cs#1)]
- [!code-vb[UrlBuilderExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UrlBuilderExample/VB/urlbuilderdesigner.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method to launch a URL builder from a menu command at design time.  
+ 
+[!code-cpp[UrlBuilderExample#1](~/samples/snippets/cpp/VS_Snippets_WebNet/UrlBuilderExample/CPP/urlbuilderdesigner.cpp#1)]
+[!code-csharp[UrlBuilderExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UrlBuilderExample/CS/urlbuilderdesigner.cs#1)]
+[!code-vb[UrlBuilderExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UrlBuilderExample/VB/urlbuilderdesigner.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,14 +60,14 @@
         <returns>The URL returned from the UI.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method to launch a URL builder from a menu command at design time.  
-  
- [!code-cpp[UrlBuilderExample#1](~/samples/snippets/cpp/VS_Snippets_WebNet/UrlBuilderExample/CPP/urlbuilderdesigner.cpp#1)]
- [!code-csharp[UrlBuilderExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UrlBuilderExample/CS/urlbuilderdesigner.cs#1)]
- [!code-vb[UrlBuilderExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UrlBuilderExample/VB/urlbuilderdesigner.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method to launch a URL builder from a menu command at design time.  
+ 
+[!code-cpp[UrlBuilderExample#1](~/samples/snippets/cpp/VS_Snippets_WebNet/UrlBuilderExample/CPP/urlbuilderdesigner.cpp#1)]
+[!code-csharp[UrlBuilderExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UrlBuilderExample/CS/urlbuilderdesigner.cs#1)]
+[!code-vb[UrlBuilderExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UrlBuilderExample/VB/urlbuilderdesigner.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,12 +103,12 @@
         <returns>The URL returned from the UI.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[UrlBuilderExample#1](~/samples/snippets/cpp/VS_Snippets_WebNet/UrlBuilderExample/CPP/urlbuilderdesigner.cpp#1)]
- [!code-csharp[UrlBuilderExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UrlBuilderExample/CS/urlbuilderdesigner.cs#1)]
- [!code-vb[UrlBuilderExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UrlBuilderExample/VB/urlbuilderdesigner.vb#1)]  
-  
+[!code-cpp[UrlBuilderExample#1](~/samples/snippets/cpp/VS_Snippets_WebNet/UrlBuilderExample/CPP/urlbuilderdesigner.cpp#1)]
+[!code-csharp[UrlBuilderExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UrlBuilderExample/CS/urlbuilderdesigner.cs#1)]
+[!code-vb[UrlBuilderExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UrlBuilderExample/VB/urlbuilderdesigner.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <returns>The URL returned from the UI.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IServiceProvider> interface is used to obtain the <xref:System.ComponentModel.Design.IDesignerHost> implementation for the designer host.  
-  
+The <xref:System.IServiceProvider> interface is used to obtain the <xref:System.ComponentModel.Design.IDesignerHost> implementation for the designer host.  
+ 
  ]]></format>
         </remarks>
       </Docs>

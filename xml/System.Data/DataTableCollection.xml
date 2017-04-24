@@ -30,24 +30,24 @@
     <summary>Represents the collection of tables for the <see cref="T:System.Data.DataSet" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataTableCollection> contains all the <xref:System.Data.DataTable> objects for a particular <xref:System.Data.DataSet>. To access the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>, use the <xref:System.Data.DataSet.Tables%2A> property.  
+The <xref:System.Data.DataTableCollection> contains all the <xref:System.Data.DataTable> objects for a particular <xref:System.Data.DataSet>. To access the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>, use the <xref:System.Data.DataSet.Tables%2A> property.  
+ 
+The <xref:System.Data.DataTableCollection> uses methods such as <xref:System.Data.DataTableCollection.Add%2A>, <xref:System.Data.DataTableCollection.Clear%2A>, and <xref:System.Data.DataTableCollection.Remove%2A> to manage the items in the collection.  
+ 
+Use the <xref:System.Data.DataTableCollection.Contains%2A> method to determine whether a particular table (specified by either index or name) is in the collection.  
+ 
+To navigate from one table to another, use the <xref:System.Data.DataTable.ChildRelations%2A> or <xref:System.Data.DataTable.ParentRelations%2A> property of the <xref:System.Data.DataTable> to access its collection of <xref:System.Data.DataRelation> objects. You can also use the <xref:System.Data.DataSet.Relations%2A> property to navigate through the parent/child relationships of the `DataTables` in a particular <xref:System.Data.DataSet> collection.  
+ 
   
- The <xref:System.Data.DataTableCollection> uses methods such as <xref:System.Data.DataTableCollection.Add%2A>, <xref:System.Data.DataTableCollection.Clear%2A>, and <xref:System.Data.DataTableCollection.Remove%2A> to manage the items in the collection.  
-  
- Use the <xref:System.Data.DataTableCollection.Contains%2A> method to determine whether a particular table (specified by either index or name) is in the collection.  
-  
- To navigate from one table to another, use the <xref:System.Data.DataTable.ChildRelations%2A> or <xref:System.Data.DataTable.ParentRelations%2A> property of the <xref:System.Data.DataTable> to access its collection of <xref:System.Data.DataRelation> objects. You can also use the <xref:System.Data.DataSet.Relations%2A> property to navigate through the parent/child relationships of the `DataTables` in a particular <xref:System.Data.DataSet> collection.  
-  
-   
-  
+ 
 ## Examples  
- The first procedure in this example retrieves the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet> and prints the value of each column, in each row, of each table. The second procedure creates a new <xref:System.Data.DataTable> with two columns, and adds it to the <xref:System.Data.DataTableCollection>.  
-  
- [!code-csharp[Classic WebData DataTableCollection Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection Example/VB/source.vb#1)]  
-  
+The first procedure in this example retrieves the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet> and prints the value of each column, in each row, of each table. The second procedure creates a new <xref:System.Data.DataTable> with two columns, and adds it to the <xref:System.Data.DataTableCollection>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
@@ -76,20 +76,20 @@
         <returns>The newly created <see cref="T:System.Data.DataTable" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because no name is specified, the `DataTable` is created by using a default name, relative to its order of addition. The default name is "Table1."  
+Because no name is specified, the `DataTable` is created by using a default name, relative to its order of addition. The default name is "Table1."  
+ 
+The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully added to the collection.  
+ 
   
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully added to the collection.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds three new <xref:System.Data.DataTable> objects to the <xref:System.Data.DataTableCollection> using the <xref:System.Data.DataTableCollection.Add%2A> method without arguments.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Add2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add2 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.Add2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add2 Example/VB/source.vb#1)]  
-  
+The following example adds three new <xref:System.Data.DataTable> objects to the <xref:System.Data.DataTableCollection> using the <xref:System.Data.DataTableCollection.Add%2A> method without arguments.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Add2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add2 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.Add2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,17 +119,17 @@
         <summary>Adds the specified <see langword="DataTable" /> to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully added to the collection.  
+The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully added to the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.DataTable> and adds it to the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add Example/CS/source.cs#1)]  
-  
+The following example creates a <xref:System.Data.DataTable> and adds it to the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add Example/CS/source.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value specified for the table is <see langword="null" />.</exception>
@@ -163,20 +163,20 @@
         <returns>The newly created <see cref="T:System.Data.DataTable" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If either `null` or an empty string ("") is passed in, a default name is given to the newly created `DataTable`. This name is based on the order in which the table was added ("Table1", "Table2", and so on).  
+If either `null` or an empty string ("") is passed in, a default name is given to the newly created `DataTable`. This name is based on the order in which the table was added ("Table1", "Table2", and so on).  
+ 
+The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs if the table is successfully added to the collection.  
+ 
   
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs if the table is successfully added to the collection.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a <xref:System.Data.DataTable> with the given name to the <xref:System.Data.DataTableCollection>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Add1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add1 Example/VB/source.vb#1)]  
-  
+The following example adds a <xref:System.Data.DataTable> with the given name to the <xref:System.Data.DataTableCollection>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Add1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.DuplicateNameException">A table in the collection has the same name. (The comparison is not case sensitive.)</exception>
@@ -210,20 +210,20 @@
         <returns>The newly created <see cref="T:System.Data.DataTable" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If either `null` or an empty string ("") is passed in, a default name is given to the newly created `DataTable`. This name is based on the order in which the table was added ("Table1", "Table2", and so on).  
+If either `null` or an empty string ("") is passed in, a default name is given to the newly created `DataTable`. This name is based on the order in which the table was added ("Table1", "Table2", and so on).  
+ 
+The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs if the table is successfully added to the collection.  
+ 
   
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs if the table is successfully added to the collection.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a <xref:System.Data.DataTable> with the given name to the <xref:System.Data.DataTableCollection>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Add1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add1 Example/VB/source.vb#1)]  
-  
+The following example adds a <xref:System.Data.DataTable> with the given name to the <xref:System.Data.DataTableCollection>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Add1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Add1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.DuplicateNameException">A table in the collection has the same name. (The comparison is not case sensitive.)</exception>
@@ -254,13 +254,13 @@
         <summary>Copies the elements of the specified <see cref="T:System.Data.DataTable" /> array to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates two <xref:System.Data.DataTable> objects and adds them to the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.AddRange Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.AddRange Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.AddRange Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.AddRange Example/VB/source.vb#1)]  
-  
+The following example creates two <xref:System.Data.DataTable> objects and adds them to the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.AddRange Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.AddRange Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.AddRange Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.AddRange Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,13 +292,13 @@
           <see langword="true" /> if the table can be removed; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Data.DataTableCollection.CanRemove%2A> to test whether each table can be removed from a <xref:System.Data.DataSet>. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
-  
- [!code-csharp[Classic WebData DataTableCollection.CanRemove Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CanRemove Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.CanRemove Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CanRemove Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Data.DataTableCollection.CanRemove%2A> to test whether each table can be removed from a <xref:System.Data.DataSet>. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.CanRemove Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CanRemove Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.CanRemove Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CanRemove Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,18 +325,18 @@
         <summary>Clears the collection of all <see cref="T:System.Data.DataTable" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To remove a particular `DataTable` from the collection, use the <xref:System.Data.DataTableCollection.Remove%2A> method.  
+To remove a particular `DataTable` from the collection, use the <xref:System.Data.DataTableCollection.Remove%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example gets the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>, and then clears the collection of all tables.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Clear Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Clear Example/VB/source.vb#1)]  
-  
+The following example gets the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>, and then clears the collection of all tables.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Clear Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Clear Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,18 +362,18 @@
         <summary>Occurs after the <see cref="T:System.Data.DataTableCollection" /> is changed because of <see cref="T:System.Data.DataTable" /> objects being added or removed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Data.DataTableCollection.CollectionChanged> event.  
-  
- [!code-csharp[Classic WebData DataTableCollection.CollectionChanged Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CollectionChanged Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.CollectionChanged Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CollectionChanged Example/VB/source.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Data.DataTableCollection.CollectionChanged> event.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.CollectionChanged Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CollectionChanged Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.CollectionChanged Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CollectionChanged Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -399,18 +399,18 @@
         <summary>Occurs while the <see cref="T:System.Data.DataTableCollection" /> is changing because of <see cref="T:System.Data.DataTable" /> objects being added or removed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Data.DataTableCollection.CollectionChanging> event.  
-  
- [!code-csharp[Classic WebData DataTableCollection.CollectionChanging Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CollectionChanging Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.CollectionChanging Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CollectionChanging Example/VB/source.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Data.DataTableCollection.CollectionChanging> event.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.CollectionChanging Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CollectionChanging Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.CollectionChanging Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.CollectionChanging Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -442,23 +442,23 @@
           <see langword="true" /> if the specified table exists; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You specify the name of the <xref:System.Data.DataTable> object by using the <xref:System.Data.DataTable.TableName%2A> property. If you add a <xref:System.Data.DataTable> to the collection with the <xref:System.Data.DataTableCollection.Add%2A> method, passing no arguments, the table is given a default name, based on the order in which the table was added ("Table1", "Table2", and so on).  
-  
- To get the index of a <xref:System.Data.DataTable>, use the <xref:System.Data.DataTableCollection.IndexOf%2A> method.  
-  
+You specify the name of the <xref:System.Data.DataTable> object by using the <xref:System.Data.DataTable.TableName%2A> property. If you add a <xref:System.Data.DataTable> to the collection with the <xref:System.Data.DataTableCollection.Add%2A> method, passing no arguments, the table is given a default name, based on the order in which the table was added ("Table1", "Table2", and so on).  
+ 
+To get the index of a <xref:System.Data.DataTable>, use the <xref:System.Data.DataTableCollection.IndexOf%2A> method.  
+ 
 > [!NOTE]
 >  Returns `false` when two or more tables have the same name but different namespaces. The call does not succeed if there is any ambiguity when matching a table name to exactly one table.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example tests whether a table with the name "Suppliers" exists in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Contains Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Contains Example/VB/source.vb#1)]  
-  
+The following example tests whether a table with the name "Suppliers" exists in the <xref:System.Data.DataTableCollection>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Contains Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Contains Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,23 +492,23 @@
           <see langword="true" /> if the specified table exists; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You specify the name of the <xref:System.Data.DataTable> object by using the <xref:System.Data.DataTable.TableName%2A> property. If you add a <xref:System.Data.DataTable> to the collection with the <xref:System.Data.DataTableCollection.Add%2A> method, passing no arguments, the table is given a default name, based on the order in which the table was added ("Table1", "Table2", and so on).  
-  
+You specify the name of the <xref:System.Data.DataTable> object by using the <xref:System.Data.DataTable.TableName%2A> property. If you add a <xref:System.Data.DataTable> to the collection with the <xref:System.Data.DataTableCollection.Add%2A> method, passing no arguments, the table is given a default name, based on the order in which the table was added ("Table1", "Table2", and so on).  
+ 
 > [!NOTE]
 >  Returns `false` when two or more tables have the same name but different namespaces. The call does not succeed if there is any ambiguity when matching a table name to exactly one table.  
+ 
+To get the index of a <xref:System.Data.DataTable>, use the <xref:System.Data.DataTableCollection.IndexOf%2A> method.  
+ 
   
- To get the index of a <xref:System.Data.DataTable>, use the <xref:System.Data.DataTableCollection.IndexOf%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example tests whether a table with the name "Suppliers" exists in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Contains Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Contains Example/VB/source.vb#1)]  
-  
+The following example tests whether a table with the name "Suppliers" exists in the <xref:System.Data.DataTableCollection>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Contains Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Contains Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,10 +540,10 @@
         <summary>Copies all the elements of the current <see cref="T:System.Data.DataTableCollection" /> to a one-dimensional <see cref="T:System.Array" />, starting at the specified destination array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden by a derived class.  
-  
+This method can be overridden by a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -574,20 +574,20 @@
         <returns>The zero-based index of the table, or -1 if the table is not found in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.DataTableCollection.IndexOf%2A> method to determine the exact index of a given table.  
+Use the <xref:System.Data.DataTableCollection.IndexOf%2A> method to determine the exact index of a given table.  
+ 
+Before calling <xref:System.Data.DataTableCollection.IndexOf%2A>, you can test for the existence of a table (specified by either index or name) by using the <xref:System.Data.DataTableCollection.Contains%2A> method.  
+ 
   
- Before calling <xref:System.Data.DataTableCollection.IndexOf%2A>, you can test for the existence of a table (specified by either index or name) by using the <xref:System.Data.DataTableCollection.Contains%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example returns the index of each table in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.IndexOf Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.IndexOf Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf Example/VB/source.vb#1)]  
-  
+The following example returns the index of each table in the <xref:System.Data.DataTableCollection>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.IndexOf Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.IndexOf Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -625,18 +625,18 @@
 </block></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You specify the name of the `DataTable` object by using the <xref:System.Data.DataTable.TableName%2A> property.  
+You specify the name of the `DataTable` object by using the <xref:System.Data.DataTable.TableName%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example returns the index of a named table in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.IndexOf1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.IndexOf1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf1 Example/VB/source.vb#1)]  
-  
+The following example returns the index of a named table in the <xref:System.Data.DataTableCollection>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.IndexOf1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.IndexOf1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -669,18 +669,18 @@
         <returns>The zero-based index of the <see cref="T:System.Data.DataTable" /> with the specified name, or -1 if the table does not exist in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You specify the name of the <xref:System.Data.DataTable> object by using the <xref:System.Data.DataTable.TableName%2A> property.  
+You specify the name of the <xref:System.Data.DataTable> object by using the <xref:System.Data.DataTable.TableName%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example returns the index of a named table in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.IndexOf1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.IndexOf1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf1 Example/VB/source.vb#1)]  
-  
+The following example returns the index of a named table in the <xref:System.Data.DataTableCollection>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.IndexOf1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.IndexOf1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.IndexOf1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -711,20 +711,20 @@
         <value>A <see cref="T:System.Data.DataTable" />with the specified index; otherwise <see langword="null" /> if the <see cref="T:System.Data.DataTable" /> does not exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.DataTableCollection.Contains%2A> method to determine whether a table with a specific index exists.  
+Use the <xref:System.Data.DataTableCollection.Contains%2A> method to determine whether a table with a specific index exists.  
+ 
+If you have the name of a table, but not its index, use the <xref:System.Data.DataTableCollection.IndexOf%2A> method to return the index.  
+ 
   
- If you have the name of a table, but not its index, use the <xref:System.Data.DataTableCollection.IndexOf%2A> method to return the index.  
-  
-   
-  
+ 
 ## Examples  
- The following example retrieves a <xref:System.Data.DataTable> by its index.  
-  
- [!code-csharp[Classic WebData DataTableCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.this Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.this Example/VB/source.vb#1)]  
-  
+The following example retrieves a <xref:System.Data.DataTable> by its index.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.this Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.this Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index value is greater than the number of items in the collection.</exception>
@@ -756,20 +756,20 @@
         <value>A <see cref="T:System.Data.DataTable" /> with the specified name; otherwise <see langword="null" /> if the <see cref="T:System.Data.DataTable" /> does not exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Data.DataTable> name exists that matches the case of the search string, it is returned. Otherwise a case-insensitive search is performed, and if a <xref:System.Data.DataTable> name is found that matches this search, it is returned.  
+If a <xref:System.Data.DataTable> name exists that matches the case of the search string, it is returned. Otherwise a case-insensitive search is performed, and if a <xref:System.Data.DataTable> name is found that matches this search, it is returned.  
+ 
+Use the <xref:System.Data.DataTableCollection.Contains%2A> method to determine whether a table with a specific name or index exists.  
+ 
   
- Use the <xref:System.Data.DataTableCollection.Contains%2A> method to determine whether a table with a specific name or index exists.  
-  
-   
-  
+ 
 ## Examples  
- The following example retrieves a single table by name from the <xref:System.Data.DataTableCollection>.  
-  
- [!code-csharp[Classic WebData DataTableCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.this1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.this1 Example/VB/source.vb#1)]  
-  
+The following example retrieves a single table by name from the <xref:System.Data.DataTableCollection>.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.this1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.this1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -851,20 +851,20 @@
         <summary>Removes the specified <see cref="T:System.Data.DataTable" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
+The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
+ 
+To determine whether a given table exists and can be removed before invoking <xref:System.Data.DataTableCollection.Remove%2A>, use the <xref:System.Data.DataTableCollection.Contains%2A> and the <xref:System.Data.DataTableCollection.CanRemove%2A> methods.  
+ 
   
- To determine whether a given table exists and can be removed before invoking <xref:System.Data.DataTableCollection.Remove%2A>, use the <xref:System.Data.DataTableCollection.Contains%2A> and the <xref:System.Data.DataTableCollection.CanRemove%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Data.DataTableCollection.CanRemove%2A> method to test whether each table can be removed from a <xref:System.Data.DataSet>. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Data.DataTableCollection.CanRemove%2A> method to test whether each table can be removed from a <xref:System.Data.DataSet>. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value specified for the table is <see langword="null" />.</exception>
@@ -900,20 +900,20 @@
         <summary>Removes the <see cref="T:System.Data.DataTable" /> object with the specified name from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
+The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
+ 
+To determine whether a given table exists and can be removed before invoking <xref:System.Data.DataTableCollection.Remove%2A>, use the <xref:System.Data.DataTableCollection.Contains%2A> and the <xref:System.Data.DataTableCollection.CanRemove%2A> methods.  
+ 
   
- To determine whether a given table exists and can be removed before invoking <xref:System.Data.DataTableCollection.Remove%2A>, use the <xref:System.Data.DataTableCollection.Contains%2A> and the <xref:System.Data.DataTableCollection.CanRemove%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Data.DataTableCollection.Contains%2A> and <xref:System.Data.DataTableCollection.CanRemove%2A> methods to test whether a named table exists and can be removed. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Remove1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.Remove1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove1 Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Data.DataTableCollection.Contains%2A> and <xref:System.Data.DataTableCollection.CanRemove%2A> methods to test whether a named table exists and can be removed. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Remove1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.Remove1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The collection does not have a table with the specified name.</exception>
@@ -946,20 +946,20 @@
         <summary>Removes the <see cref="T:System.Data.DataTable" /> object with the specified name from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
+The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
+ 
+To determine whether a given table exists and can be removed before invoking <xref:System.Data.DataTableCollection.Remove%2A>, use the <xref:System.Data.DataTableCollection.Contains%2A> and the <xref:System.Data.DataTableCollection.CanRemove%2A> methods.  
+ 
   
- To determine whether a given table exists and can be removed before invoking <xref:System.Data.DataTableCollection.Remove%2A>, use the <xref:System.Data.DataTableCollection.Contains%2A> and the <xref:System.Data.DataTableCollection.CanRemove%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Data.DataTableCollection.Contains%2A> and <xref:System.Data.DataTableCollection.CanRemove%2A> methods to test whether a named table exists and can be removed. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
-  
- [!code-csharp[Classic WebData DataTableCollection.Remove1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.Remove1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove1 Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Data.DataTableCollection.Contains%2A> and <xref:System.Data.DataTableCollection.CanRemove%2A> methods to test whether a named table exists and can be removed. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.Remove1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.Remove1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.Remove1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The collection does not have a table with the specified name.</exception>
@@ -990,18 +990,18 @@
         <summary>Removes the <see cref="T:System.Data.DataTable" /> object at the specified index from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
+The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Data.DataTableCollection.Contains%2A> and <xref:System.Data.DataTableCollection.CanRemove%2A> methods to test whether a table exists with the index 10. If so, the <xref:System.Data.DataTableCollection.RemoveAt%2A> method is called to remove the table.  
-  
- [!code-csharp[Classic WebData DataTableCollection.RemoveAt#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.RemoveAt/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableCollection.RemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.RemoveAt/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Data.DataTableCollection.Contains%2A> and <xref:System.Data.DataTableCollection.CanRemove%2A> methods to test whether a table exists with the index 10. If so, the <xref:System.Data.DataTableCollection.RemoveAt%2A> method is called to remove the table.  
+ 
+[!code-csharp[Classic WebData DataTableCollection.RemoveAt#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.RemoveAt/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableCollection.RemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableCollection.RemoveAt/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The collection does not have a table at the specified index.</exception>

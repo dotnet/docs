@@ -18,12 +18,12 @@
     <summary>Specifies which properties should be reported by type descriptors, specifically the <see cref="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Object)" /> method. This enumeration is used to specify the value of the <see cref="P:System.ComponentModel.PropertyFilterAttribute.Filter" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This filter mechanism is only implemented by the custom <xref:System.ComponentModel.DependencyPropertyDescriptor> for <xref:System.Windows.DependencyObject>.  
-  
- Invalid and Valid are relevant only for attached properties. The validity of a property is determined by working with the following attributes: <xref:System.Windows.AttachedPropertyBrowsableForChildrenAttribute> , <xref:System.Windows.AttachedPropertyBrowsableForTypeAttribute>, <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute> which define the intended scope of the attached property in the object tree once the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] is loaded. Designer applications that populate property grids and include attached properties in the grid must examine the value or presence of these attributes and the relative position of the current element versus either a parent or child element that "owns" the attached property. The owner-setter relationship together with the attribute values and <xref:System.ComponentModel.PropertyFilterOptions> will define whether a given attached property that is set on an element is valid or invalid.  
-  
+This filter mechanism is only implemented by the custom <xref:System.ComponentModel.DependencyPropertyDescriptor> for <xref:System.Windows.DependencyObject>.  
+ 
+Invalid and Valid are relevant only for attached properties. The validity of a property is determined by working with the following attributes: <xref:System.Windows.AttachedPropertyBrowsableForChildrenAttribute> , <xref:System.Windows.AttachedPropertyBrowsableForTypeAttribute>, <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute> which define the intended scope of the attached property in the object tree once the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] is loaded. Designer applications that populate property grids and include attached properties in the grid must examine the value or presence of these attributes and the relative position of the current element versus either a parent or child element that "owns" the attached property. The owner-setter relationship together with the attribute values and <xref:System.ComponentModel.PropertyFilterOptions> will define whether a given attached property that is set on an element is valid or invalid.  
+ 
  ]]></format>
     </remarks>
   </Docs>

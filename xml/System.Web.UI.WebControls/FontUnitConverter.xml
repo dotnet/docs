@@ -14,13 +14,13 @@
     <summary>Converts a <see cref="T:System.Web.UI.WebControls.FontUnit" /> to a string. It also converts a string to a <see cref="T:System.Web.UI.WebControls.FontUnit" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.FontUnitConverter> class is used to convert data to and from <xref:System.Web.UI.WebControls.FontUnit> and string types.  
-  
+The <xref:System.Web.UI.WebControls.FontUnitConverter> class is used to convert data to and from <xref:System.Web.UI.WebControls.FontUnit> and string types.  
+ 
 > [!CAUTION]
 >  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=fullName> base class.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,12 +39,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontUnitConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,13 +73,13 @@
           <see langword="true" /> if the data type specified by the <paramref name="sourceType" /> parameter can be converted to a <see cref="T:System.Web.UI.WebControls.FontUnit" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnitConverter.CanConvertFrom%2A> method to determine whether the data type specified by the `sourceType` parameter can be converted to a <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnitConverter.CanConvertFrom%2A> method to determine whether the data type specified by the `sourceType` parameter can be converted to a <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 > [!NOTE]
 >  This method will return true only if the `sourceType` is <xref:System.String>. The only type this converter can convert into <xref:System.Web.UI.WebControls.FontUnit> is <xref:System.String>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,16 +141,16 @@
         <returns>A <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnitConverter.ConvertFrom%2A> method to convert the object specified by the `value` parameter to a <xref:System.Web.UI.WebControls.FontUnit> in the culture specified by the `culture` parameter.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnitConverter.ConvertFrom%2A> method to convert the object specified by the `value` parameter to a <xref:System.Web.UI.WebControls.FontUnit> in the culture specified by the `culture` parameter.  
+ 
 > [!NOTE]
 >  If the specified object is `null`, the returned value is also `null`. Similarly, if the specified object is <xref:System.String.Empty?displayProperty=fullName>, <xref:System.Web.UI.WebControls.FontUnit.Empty> is returned.  
-  
+ 
 > [!NOTE]
 >  This method can only convert a string to a  <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,16 +182,16 @@
         <returns>A <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnitConverter.ConvertTo%2A> method to convert the <xref:System.Web.UI.WebControls.FontUnit> specified by the `value` parameter to an object with the data type specified by the `destinationType` parameter.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnitConverter.ConvertTo%2A> method to convert the <xref:System.Web.UI.WebControls.FontUnit> specified by the `value` parameter to an object with the data type specified by the `destinationType` parameter.  
+ 
 > [!NOTE]
 >  <xref:System.String.Empty?displayProperty=fullName> is returned from this method if the `value` parameter contains `null`. <xref:System.String.Empty?displayProperty=fullName> is also returned if the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property of the <xref:System.Web.UI.WebControls.FontUnit> specified by the `value` parameter contains the value `FontSize.NotSet`.  
-  
+ 
 > [!NOTE]
 >  This method can only convert a <xref:System.Web.UI.WebControls.FontUnit> to a string.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> containing the standard values for a <see cref="T:System.Web.UI.WebControls.FontUnit" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValues%2A> method to retrieve a <xref:System.ComponentModel.TypeConverter.StandardValuesCollection?displayProperty=fullName> containing the standard values for a <xref:System.Web.UI.WebControls.FontUnit>. This collection contains all the fields in the <xref:System.Web.UI.WebControls.FontUnit> class.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValues%2A> method to retrieve a <xref:System.ComponentModel.TypeConverter.StandardValuesCollection?displayProperty=fullName> containing the standard values for a <xref:System.Web.UI.WebControls.FontUnit>. This collection contains all the fields in the <xref:System.Web.UI.WebControls.FontUnit> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,10 +247,10 @@
           <see langword="false" /> for all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValuesExclusive%2A> method to determine whether the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection?displayProperty=fullName> returned by the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValues%2A> method is an exclusive list of values. This method is overridden to always return `false` to indicate that the list of values is not an exclusive list.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValuesExclusive%2A> method to determine whether the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection?displayProperty=fullName> returned by the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValues%2A> method is an exclusive list of values. This method is overridden to always return `false` to indicate that the list of values is not an exclusive list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -277,10 +277,10 @@
           <see langword="true" /> for all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValuesSupported%2A> method to determine whether the instance of the <xref:System.Web.UI.WebControls.FontUnitConverter> class that this method is called from supports a standard set of values that can be picked from a list, using the specified format context. This method is overridden to always return `true` to indicate that this class supports a standard set of values that can be picked from a list.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValuesSupported%2A> method to determine whether the instance of the <xref:System.Web.UI.WebControls.FontUnitConverter> class that this method is called from supports a standard set of values that can be picked from a list, using the specified format context. This method is overridden to always return `true` to indicate that this class supports a standard set of values that can be picked from a list.  
+ 
  ]]></format>
         </remarks>
       </Docs>

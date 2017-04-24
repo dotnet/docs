@@ -14,10 +14,10 @@
     <summary>Represents a configuration element that defines a binding that is secure, reliable and optimized for on-machine cross process communication.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this binding generates a run-time communication stack with WS-ReliableMessaging for reliability, transport security for transfer security, named pipes for message delivery, and binary message encoding.  
-  
+By default, this binding generates a run-time communication stack with WS-ReliableMessaging for reliability, transport security for transfer security, named pipes for message delivery, and binary message encoding.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -142,10 +142,10 @@
         <value>The maximum size of the buffer pool. The default is 524,288 bytes (512 * 1024).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Many parts of [!INCLUDE[indigo1](~/includes/indigo1-md.md)] use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.  
-  
+Many parts of [!INCLUDE[indigo1](~/includes/indigo1-md.md)] use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,16 +175,16 @@
         <value>The maximum number of bytes that are used to buffer incoming messages in memory. The default value is 65,536 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property only applies to the headers of streamed messages. This value should be at least the maximum possible size of the SOAP headers, which are read in buffered mode.  
-  
- If the buffer is full, excess data remains in the underlying socket until the buffer has space again.  
-  
- The value of this property must be less than or equal to MaxMessageSize and must be larger than the size of the headers of the message or the channel throws an exception.  
-  
- If you receive more data than you can buffer, the channel throws a <xref:System.ServiceModel.CommunicationException>, which contains <xref:System.ServiceModel.QuotaExceededException> as an inner exception.  
-  
+This property only applies to the headers of streamed messages. This value should be at least the maximum possible size of the SOAP headers, which are read in buffered mode.  
+ 
+If the buffer is full, excess data remains in the underlying socket until the buffer has space again.  
+ 
+The value of this property must be less than or equal to MaxMessageSize and must be larger than the size of the headers of the message or the channel throws an exception.  
+ 
+If you receive more data than you can buffer, the channel throws a <xref:System.ServiceModel.CommunicationException>, which contains <xref:System.ServiceModel.QuotaExceededException> as an inner exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <value>The maximum number of outbound and inbound connections the service creates and accepts respectively. The default is 10.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Incoming and outgoing connections are counted against a separate limit specified by this property. Any connection in excess of the limit is queued until a space below the limit becomes available.  
-  
+Incoming and outgoing connections are counted against a separate limit specified by this property. Any connection in excess of the limit is queued until a space below the limit becomes available.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,10 +309,10 @@
         <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complexity constraints include items such as a maximum element depth, a maximum length for string content within the message. The constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
-  
+The complexity constraints include items such as a maximum element depth, a maximum length for string content within the message. The constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
+ 
  ]]></format>
         </remarks>
       </Docs>

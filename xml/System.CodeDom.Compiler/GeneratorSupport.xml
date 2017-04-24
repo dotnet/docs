@@ -18,19 +18,19 @@
     <summary>Defines identifiers used to determine whether a code generator supports certain types of code elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These identifiers are used when calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method of a code generator to determine whether the code generator supports generating certain types of code.  
+These identifiers are used when calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method of a code generator to determine whether the code generator supports generating certain types of code.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options.  
-  
- [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
- [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
- [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
-  
+The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options.  
+ 
+[!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+[!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+[!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

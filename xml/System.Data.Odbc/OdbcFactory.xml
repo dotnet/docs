@@ -33,20 +33,20 @@
         <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbCommand" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance:  
-  
+The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance:  
+ 
 ```vb  
 Dim newFactory As OdbcFactory = OdbcFactory.Instance  
 Dim cmd As DbCommand = newFactory.CreateCommand()  
 ```  
-  
+ 
 ```csharp  
 OdbcFactory newFactory = OdbcFactory.Instance;  
 DbCommand cmd = newFactory.CreateCommand();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -69,20 +69,20 @@ DbCommand cmd = newFactory.CreateCommand();
         <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbCommandBuilder" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbCommandBuilder> instance:  
-  
+The following code fragment returns a strongly-typed <xref:System.Data.Common.DbCommandBuilder> instance:  
+ 
 ```vb  
 Dim newFactory As OdbcFactory = OdbcFactory.Instance  
 Dim cmd As DbCommandBuilder = newFactory.CreateCommandBuilder()  
 ```  
-  
+ 
 ```csharp  
 OdbcFactory newFactory = OdbcFactory.Instance;  
 DbCommandBuilder cmd = newFactory.CreateCommandBuilder();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,20 +105,20 @@ DbCommandBuilder cmd = newFactory.CreateCommandBuilder();
         <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbConnection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbConnection> instance:  
-  
+The following code fragment returns a strongly-typed <xref:System.Data.Common.DbConnection> instance:  
+ 
 ```vb  
 Dim newFactory As OdbcFactory = OdbcFactory.Instance  
 Dim cmd As DbConnection = newFactory.CreateConnection()  
 ```  
-  
+ 
 ```csharp  
 OdbcFactory newFactory = OdbcFactory.Instance;  
 DbConnection cmd = newFactory.CreateConnection();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,20 +141,20 @@ DbConnection cmd = newFactory.CreateConnection();
         <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbConnectionStringBuilder> instance:  
-  
+The following code fragment returns a strongly-typed <xref:System.Data.Common.DbConnectionStringBuilder> instance:  
+ 
 ```vb  
 Dim newFactory As OdbcFactory = OdbcFactory.Instance  
 Dim cmd As DbConnectionStringBuilder = newFactory.CreateConnectionStringBuilder()  
 ```  
-  
+ 
 ```csharp  
 OdbcFactory newFactory = OdbcFactory.Instance;  
 DbConnectionStringBuilder cmd = newFactory.CreateConnectionStringBuilder();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,20 +177,20 @@ DbConnectionStringBuilder cmd = newFactory.CreateConnectionStringBuilder();
         <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbDataAdapter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbDataAdapter> instance:  
-  
+The following code fragment returns a strongly-typed <xref:System.Data.Common.DbDataAdapter> instance:  
+ 
 ```vb  
 Dim newFactory As OdbcFactory = OdbcFactory.Instance  
 Dim cmd As DbDataAdapter = newFactory.CreateDataAdapter()  
 ```  
-  
+ 
 ```csharp  
 OdbcFactory newFactory = OdbcFactory.Instance;  
 DbDataAdapter cmd = newFactory.CreateDataAdapter();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,20 +213,20 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
         <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbParameter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbParameter> instance:  
-  
+The following code fragment returns a strongly-typed <xref:System.Data.Common.DbParameter> instance:  
+ 
 ```vb  
 Dim newFactory As OdbcFactory = OdbcFactory.Instance  
 Dim cmd As DbParameter = newFactory.CreateParameter()  
 ```  
-  
+ 
 ```csharp  
 OdbcFactory newFactory = OdbcFactory.Instance;  
 DbParameter cmd = newFactory.CreateParameter();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,20 +269,20 @@ DbParameter cmd = newFactory.CreateParameter();
         <summary>Gets an instance of the <see cref="T:System.Data.Odbc.OdbcFactory" />, which can be used to retrieve strongly-typed data objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment uses the <xref:System.Data.Odbc.OdbcFactory.Instance%2A> property to retrieve an <xref:System.Data.Odbc.OdbcFactory> instance, and then return a strongly-typed <xref:System.Data.Common.DbCommand> instance:  
-  
+The following code fragment uses the <xref:System.Data.Odbc.OdbcFactory.Instance%2A> property to retrieve an <xref:System.Data.Odbc.OdbcFactory> instance, and then return a strongly-typed <xref:System.Data.Common.DbCommand> instance:  
+ 
 ```vb  
 Dim newFactory As OdbcFactory = OdbcFactory.Instance  
 Dim cmd As DbCommand = newFactory.CreateCommand()  
 ```  
-  
+ 
 ```csharp  
 OdbcFactory newFactory = OdbcFactory.Instance;  
 DbCommand cmd = newFactory.CreateCommand();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

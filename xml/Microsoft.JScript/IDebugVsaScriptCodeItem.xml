@@ -39,10 +39,10 @@
         <returns>Returns a value that represents the evaluation of the statement, expression, or block.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the <xref:Microsoft.JScript.IDebugVsaScriptCodeItem.Evaluate%2A> method is functionally identical to the <xref:Microsoft.JScript.IVsaScriptCodeItem.Execute%2A> method. Only the marshaling attributes differ. This version of the interface allows an unmanaged debugger to obtain the return value as an `IUnknown` pointer rather than a `VARIANT`.  
-  
+Note that the <xref:Microsoft.JScript.IDebugVsaScriptCodeItem.Evaluate%2A> method is functionally identical to the <xref:Microsoft.JScript.IVsaScriptCodeItem.Execute%2A> method. Only the marshaling attributes differ. This version of the interface allows an unmanaged debugger to obtain the return value as an `IUnknown` pointer rather than a `VARIANT`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

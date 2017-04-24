@@ -56,10 +56,10 @@
         <returns>The final size of the arranged <see cref="T:System.Windows.Shapes.Shape" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `finalsize` is an invalid value (a null reference or `empty`), nothing is drawn on the screen.  
-  
+If `finalsize` is an invalid value (a null reference or `empty`), nothing is drawn on the screen.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,27 +99,27 @@
         <value>A <see cref="T:System.Windows.Media.Brush" /> that describes how the shape's interior is painted. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Fill"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Shapes.Shape.FillProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, f <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.Windows.Shapes.Shape.Fill%2A> property to set the background color of an <xref:System.Windows.Shapes.Ellipse> element.  
-  
- [!code-xml[BrushesMiscSnippets_snip#SetBackgroundColorOfShapeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_snip/CS/SetBackgroundColorOfShapeExample.xaml#setbackgroundcolorofshapeexamplewholepage)]  
-  
- [!code-csharp[BrushesMiscSnippets_procedural_snip#SetBackgroundColorOfShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/CSharp/SetBackgroundColorOfShapeExample.cs#setbackgroundcolorofshapecodeexamplewholepage)]
- [!code-vb[BrushesMiscSnippets_procedural_snip#SetBackgroundColorOfShapeCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/visualbasic/setbackgroundcolorofshapeexample.vb#setbackgroundcolorofshapecodeexamplewholepage)]  
-  
+This example shows how to use the <xref:System.Windows.Shapes.Shape.Fill%2A> property to set the background color of an <xref:System.Windows.Shapes.Ellipse> element.  
+ 
+[!code-xml[BrushesMiscSnippets_snip#SetBackgroundColorOfShapeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_snip/CS/SetBackgroundColorOfShapeExample.xaml#setbackgroundcolorofshapeexamplewholepage)]  
+ 
+[!code-csharp[BrushesMiscSnippets_procedural_snip#SetBackgroundColorOfShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/CSharp/SetBackgroundColorOfShapeExample.cs#setbackgroundcolorofshapecodeexamplewholepage)]
+[!code-vb[BrushesMiscSnippets_procedural_snip#SetBackgroundColorOfShapeCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/visualbasic/setbackgroundcolorofshapeexample.vb#setbackgroundcolorofshapecodeexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,17 +272,17 @@
         <value>A <see cref="T:System.Windows.Media.Brush" /> that specifies how the <see cref="T:System.Windows.Shapes.Shape" /> outline is painted. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Stroke"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Shapes.Shape>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,14 +304,14 @@
         <value>A collection of <see cref="T:System.Double" /> values that specify the pattern of dashes and gaps.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.Double> in the collection specifies the length of a dash or gap relative to the <xref:System.Windows.Thickness> of the pen. For example, a value of `1` creates a dash or gap that has the same length as the thickness of the pen (a square).  
-  
- The first item in the collection, which is located at index 0, specifies the length of a dash; the second item, which is located at index 1, specifies the length of a gap.  
-  
- Objects with an even index value specify dashes; objects with an odd index value specify gaps.  
-  
+Each <xref:System.Double> in the collection specifies the length of a dash or gap relative to the <xref:System.Windows.Thickness> of the pen. For example, a value of `1` creates a dash or gap that has the same length as the thickness of the pen (a square).  
+ 
+The first item in the collection, which is located at index 0, specifies the length of a dash; the second item, which is located at index 1, specifies the length of a gap.  
+ 
+Objects with an even index value specify dashes; objects with an odd index value specify gaps.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -350,10 +350,10 @@
         <value>One of the enumeration values for <see cref="T:System.Windows.Media.PenLineCap" />. The default is <see cref="F:System.Windows.Media.PenLineCap.Flat" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This setting applies to both ends of each dash.  
-  
+This setting applies to both ends of each dash.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,10 +427,10 @@
         <value>One of the enumeration values for <see cref="T:System.Windows.Media.PenLineCap" />. The default is <see cref="F:System.Windows.Media.PenLineCap.Flat" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property has no effect if you set it on a shape that has no <xref:System.Windows.Shapes.Shape.Stroke%2A> or that has no start or end points. For example, this property has no effect if you set it on an <xref:System.Windows.Shapes.Ellipse>.  
-  
+This property has no effect if you set it on a shape that has no <xref:System.Windows.Shapes.Shape.Stroke%2A> or that has no start or end points. For example, this property has no effect if you set it on an <xref:System.Windows.Shapes.Ellipse>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -469,21 +469,21 @@
         <value>One of the enumeration values for <see cref="T:System.Windows.Media.PenLineJoin" /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property has no effect if you set it on an element that has no vertices, such as on a <xref:System.Windows.Shapes.Line> element.  
+This property has no effect if you set it on an element that has no vertices, such as on a <xref:System.Windows.Shapes.Line> element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows several different joints used at the vertices of a shape.  
-  
- [!code-xml[drawingwithshapeelements#PolylineExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/polylineexample.xaml#polylineexample1)]  
-  
- The following illustration shows the different line joins.  
-  
- ![Example of line joins.](~/add/media/graphicslinejoins.png "Example of line joins.")  
-  
+The following example shows several different joints used at the vertices of a shape.  
+ 
+[!code-xml[drawingwithshapeelements#PolylineExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/polylineexample.xaml#polylineexample1)]  
+ 
+The following illustration shows the different line joins.  
+ 
+![Example of line joins.](~/add/media/graphicslinejoins.png "Example of line joins.")  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,10 +522,10 @@
         <value>The limit on the ratio of the miter length to the <see cref="P:System.Windows.Shapes.Shape.StrokeThickness" /> of a <see cref="T:System.Windows.Shapes.Shape" /> element. This value is always a positive number that is greater than or equal to 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A miter forms a corner by beveling the ends of two joined lines.When two line segments meet at a sharp angle, the miter may extend beyond the thickness of the line that strokes the path.  
-  
+A miter forms a corner by beveling the ends of two joined lines.When two line segments meet at a sharp angle, the miter may extend beyond the thickness of the line that strokes the path.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -581,10 +581,10 @@
         <value>One of the <see cref="T:System.Windows.Media.PenLineCap" /> enumeration values. The default is <see cref="F:System.Windows.Media.PenLineCap.Flat" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property has no effect if you set it on a shape that has no <xref:System.Windows.Shapes.Shape.Stroke%2A> or that has no start or end points. For example, this property has no effect if you set it on an <xref:System.Windows.Shapes.Ellipse>.  
-  
+This property has no effect if you set it on a shape that has no <xref:System.Windows.Shapes.Shape.Stroke%2A> or that has no start or end points. For example, this property has no effect if you set it on an <xref:System.Windows.Shapes.Ellipse>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

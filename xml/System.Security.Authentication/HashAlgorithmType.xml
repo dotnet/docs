@@ -22,18 +22,18 @@
     <summary>Specifies the algorithm used for generating message authentication codes (MACs).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration specifies valid values for the <xref:System.Net.Security.SslStream.HashAlgorithm%2A?displayProperty=fullName> property.  
+This enumeration specifies valid values for the <xref:System.Net.Security.SslStream.HashAlgorithm%2A?displayProperty=fullName> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the properties of an <xref:System.Net.Security.SslStream> after authentication has succeeded.  
-  
- [!code-cpp[NCLSslClientAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#3)]
- [!code-csharp[NCLSslClientAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#3)]  
-  
+The following example displays the properties of an <xref:System.Net.Security.SslStream> after authentication has succeeded.  
+ 
+[!code-cpp[NCLSslClientAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#3)]
+[!code-csharp[NCLSslClientAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

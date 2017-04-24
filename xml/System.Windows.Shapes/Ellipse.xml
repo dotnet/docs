@@ -14,19 +14,19 @@
     <summary>Draws an ellipse.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.Windows.Media.Stretch> value for an Ellipse is <xref:System.Windows.Media.Stretch>.  
+The default <xref:System.Windows.Media.Stretch> value for an Ellipse is <xref:System.Windows.Media.Stretch>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an <xref:System.Windows.Shapes.Ellipse> and set its properties by using code.  
-  
- [!code-cpp[shapesprocedural#ShapesProceduralEllipse](~/samples/snippets/cpp/VS_Snippets_Wpf/ShapesProcedural/CPP/ShapesProcedural.cpp#shapesproceduralellipse)]
- [!code-csharp[shapesprocedural#ShapesProceduralEllipse](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapesProcedural/Csharp/ShapesProcedural.cs#shapesproceduralellipse)]
- [!code-vb[shapesprocedural#ShapesProceduralEllipse](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ShapesProcedural/VisualBasic/ShapesProceduralVB.vb#shapesproceduralellipse)]  
-  
+The following example shows how to create an <xref:System.Windows.Shapes.Ellipse> and set its properties by using code.  
+ 
+[!code-cpp[shapesprocedural#ShapesProceduralEllipse](~/samples/snippets/cpp/VS_Snippets_Wpf/ShapesProcedural/CPP/ShapesProcedural.cpp#shapesproceduralellipse)]
+[!code-csharp[shapesprocedural#ShapesProceduralEllipse](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapesProcedural/Csharp/ShapesProcedural.cs#shapesproceduralellipse)]
+[!code-vb[shapesprocedural#ShapesProceduralEllipse](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ShapesProcedural/VisualBasic/ShapesProceduralVB.vb#shapesproceduralellipse)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

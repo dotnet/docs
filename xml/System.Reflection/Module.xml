@@ -46,22 +46,22 @@
     <summary>Performs reflection on a module.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A module is a portable executable file, such as type.dll or application.exe, consisting of one or more classes and interfaces. There may be multiple namespaces contained in a single module, and a namespace may span multiple modules.  
+A module is a portable executable file, such as type.dll or application.exe, consisting of one or more classes and interfaces. There may be multiple namespaces contained in a single module, and a namespace may span multiple modules.  
+ 
+One or more modules deployed as a unit compose an assembly. For information about creating an assembly with more than one module, see [Multifile Assemblies](~/docs/framework/app-domains/multifile-assemblies.md).  
+ 
+Note that a .NET Framework module is not the same as a module in Visual Basic, which is used by a programmers to organize functions and subroutines in an application.  
+ 
   
- One or more modules deployed as a unit compose an assembly. For information about creating an assembly with more than one module, see [Multifile Assemblies](~/docs/framework/app-domains/multifile-assemblies.md).  
-  
- Note that a .NET Framework module is not the same as a module in Visual Basic, which is used by a programmers to organize functions and subroutines in an application.  
-  
-   
-  
+ 
 ## Examples  
- The following code examples show how to use reflection to get information about modules:  
-  
- [!code-csharp[System.Reflection.Module#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module/CS/source.cs#1)]
- [!code-vb[System.Reflection.Module#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module/VB/source.vb#1)]  
-  
+The following code examples show how to use reflection to get information about modules:  
+ 
+[!code-csharp[System.Reflection.Module#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module/CS/source.cs#1)]
+[!code-vb[System.Reflection.Module#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
@@ -86,10 +86,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Module" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is invoked by derived classes during the construction of <xref:System.Reflection.Module> objects.  
-  
+This constructor is invoked by derived classes during the construction of <xref:System.Reflection.Module> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,14 +122,14 @@
         <value>An <see langword="Assembly" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the full name of the specified assembly in the specified module.  
-  
- [!code-cpp[System.Reflection.Module.Assembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.Assembly Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.Assembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.Assembly Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.Assembly Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.Assembly Example/VB/class1.vb#1)]  
-  
+The following example displays the full name of the specified assembly in the specified module.  
+ 
+[!code-cpp[System.Reflection.Module.Assembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.Assembly Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.Assembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.Assembly Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.Assembly Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.Assembly Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,19 +222,19 @@
         <summary>A <see langword="TypeFilter" /> object that filters the list of types defined in this module based upon the name. This field is case-sensitive and read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The filter supports a trailing "*" wildcard.  
+The filter supports a trailing "*" wildcard.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the module names that match the specified search criteria.  
-  
- [!code-cpp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/VB/class1.vb#1)]  
-  
+The following example displays the module names that match the specified search criteria.  
+ 
+[!code-cpp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,19 +264,19 @@
         <summary>A <see langword="TypeFilter" /> object that filters the list of types defined in this module based upon the name. This field is case-insensitive and read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The filter supports a trailing "*" wildcard.  
+The filter supports a trailing "*" wildcard.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the module names that match the specified search criteria, ignoring the case.  
-  
- [!code-cpp[System.Reflection.Module.FilterTypeNameIgnoreCase Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeNameIgnoreCase Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.FilterTypeNameIgnoreCase Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeNameIgnoreCase Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.FilterTypeNameIgnoreCase Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeNameIgnoreCase Example/VB/class1.vb#1)]  
-  
+The following example displays the module names that match the specified search criteria, ignoring the case.  
+ 
+[!code-cpp[System.Reflection.Module.FilterTypeNameIgnoreCase Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeNameIgnoreCase Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.FilterTypeNameIgnoreCase Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeNameIgnoreCase Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.FilterTypeNameIgnoreCase Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeNameIgnoreCase Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,23 +313,23 @@
         <returns>An array of type <see langword="Type" /> containing classes that were accepted by the filter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Reflection.ReflectionTypeLoadException> is a special class load exception. The `ReflectionTypeLoadException.Types` property contains the array of classes that were defined in the module and were loaded. This array may contain some null values. The `ReflectionTypeLoadException.LoaderExceptions` property is an array of exceptions that represent the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.  
+<xref:System.Reflection.ReflectionTypeLoadException> is a special class load exception. The `ReflectionTypeLoadException.Types` property contains the array of classes that were defined in the module and were loaded. This array may contain some null values. The `ReflectionTypeLoadException.LoaderExceptions` property is an array of exceptions that represent the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.  
+ 
+The delegate given by `filter` is called for each class in the module, passing along the `Type` object representing the class as well as the given `filterCriteria`. If `filter` returns a particular class, that class will be included in the returned array. If `filter` returns `null`, all classes are returned and `filterCriteria` is ignored.  
+ 
+`FindTypes` cannot be used to look up parameterized types such as arrays.  
+ 
   
- The delegate given by `filter` is called for each class in the module, passing along the `Type` object representing the class as well as the given `filterCriteria`. If `filter` returns a particular class, that class will be included in the returned array. If `filter` returns `null`, all classes are returned and `filterCriteria` is ignored.  
-  
- `FindTypes` cannot be used to look up parameterized types such as arrays.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the `FindTypes` method.  
-  
- [!code-cpp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/VB/class1.vb#1)]  
-  
+The following example demonstrates the `FindTypes` method.  
+ 
+[!code-cpp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.ReflectionTypeLoadException">One or more classes in a module could not be loaded.</exception>
@@ -363,24 +363,24 @@
         <value>The fully qualified module name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the name without the path, use <xref:System.Reflection.Module.Name%2A>.  
-  
- If the assembly for this module was loaded from a byte array then the `FullyQualifiedName` for the module will be: \<Unknown>.  
-  
+To get the name without the path, use <xref:System.Reflection.Module.Name%2A>.  
+ 
+If the assembly for this module was loaded from a byte array then the `FullyQualifiedName` for the module will be: \<Unknown>.  
+ 
 > [!NOTE]
 >  The case of module name is platform-dependent.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the fully qualified name of the specified module.  
-  
- [!code-cpp[System.Reflection.Module.FullyQualifiedName#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FullyQualifiedName/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.FullyQualifiedName#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FullyQualifiedName/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.FullyQualifiedName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FullyQualifiedName/VB/class1.vb#1)]  
-  
+The following example displays the fully qualified name of the specified module.  
+ 
+[!code-cpp[System.Reflection.Module.FullyQualifiedName#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FullyQualifiedName/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.FullyQualifiedName#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FullyQualifiedName/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.FullyQualifiedName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FullyQualifiedName/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions.</exception>
@@ -413,14 +413,14 @@
         <returns>An array of type <see langword="Object" /> containing all custom attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the module names that match the specified search criteria.  
-  
- [!code-cpp[System.Reflection.Module.GetCustomAttributes 1Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 1Arg Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.GetCustomAttributes 1Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 1Arg Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.GetCustomAttributes 1Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 1Arg Example/VB/class1.vb#1)]  
-  
+The following example displays the module names that match the specified search criteria.  
+ 
+[!code-cpp[System.Reflection.Module.GetCustomAttributes 1Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 1Arg Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.GetCustomAttributes 1Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 1Arg Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.GetCustomAttributes 1Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 1Arg Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,14 +453,14 @@
         <returns>An array of type <see langword="Object" /> containing all custom attributes of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the module names of the specified type that match the specified search criteria.  
-  
- [!code-cpp[System.Reflection.Module.GetCustomAttributes 2Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 2Arg Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.GetCustomAttributes 2Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 2Arg Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.GetCustomAttributes 2Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 2Arg Example/VB/class1.vb#1)]  
-  
+The following example displays the module names of the specified type that match the specified search criteria.  
+ 
+[!code-cpp[System.Reflection.Module.GetCustomAttributes 2Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 2Arg Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.GetCustomAttributes 2Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 2Arg Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.GetCustomAttributes 2Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 2Arg Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -492,10 +492,10 @@
         <returns>A generic list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the current module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Module.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and example code, see the <xref:System.Reflection.CustomAttributeData> class.  
-  
+Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Module.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,10 +593,10 @@
         <returns>An array of <see cref="T:System.Reflection.FieldInfo" /> objects representing the global fields defined on the module; if there are no global fields, an empty array is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.Module.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
-  
+The <xref:System.Reflection.Module.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -631,10 +631,10 @@
         <returns>An array of type <see cref="T:System.Reflection.FieldInfo" /> representing the global fields defined on the module that match the specified binding flags; if no global fields match the binding flags, an empty array is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.Module.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
-  
+The <xref:System.Reflection.Module.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -988,23 +988,23 @@
         <returns>A <see langword="Type" /> object representing the given type, if the type is in this module; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
+ 
+A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+ 
   
- A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the name of a type in the specified module.  
-  
- [!code-cpp[System.Reflection.Module.GetType 1Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 1Arg Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.GetType 1Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 1Arg Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.GetType 1Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetType 1Arg Example/VB/class1.vb#1)]  
-  
+The following example displays the name of a type in the specified module.  
+ 
+[!code-cpp[System.Reflection.Module.GetType 1Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 1Arg Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.GetType 1Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 1Arg Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.GetType 1Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetType 1Arg Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1066,23 +1066,23 @@
         <returns>A <see langword="Type" /> object representing the given type, if the type is in this module; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
+ 
+A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+ 
   
- A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the name of a type in the specified module, specifying `false` for the `ignoreCase` parameter so that case will not be ignored.  
-  
- [!code-cpp[System.Reflection.Module.GetType 2Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 2Arg Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.GetType 2Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 2Arg Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.GetType 2Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetType 2Arg Example/VB/class1.vb#1)]  
-  
+The following example displays the name of a type in the specified module, specifying `false` for the `ignoreCase` parameter so that case will not be ignored.  
+ 
+[!code-cpp[System.Reflection.Module.GetType 2Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 2Arg Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.GetType 2Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 2Arg Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.GetType 2Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetType 2Arg Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1148,24 +1148,24 @@
         <returns>A <see cref="T:System.Type" /> object representing the specified type, if the type is declared in this module; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `throwOnError` parameter affects only what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
-  
+The `throwOnError` parameter affects only what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
+ 
 > [!NOTE]
 >  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
+ 
+A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+ 
   
- A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the name of a type in the specified module. The `throwOnError` and `ignoreCase` parameters are specified as `false`.  
-  
- [!code-cpp[System.Reflection.Module.GetType 3Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 3Arg Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.GetType 3Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 3Arg Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.GetType 3Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetType 3Arg Example/VB/class1.vb#1)]  
-  
+The following example displays the name of a type in the specified module. The `throwOnError` and `ignoreCase` parameters are specified as `false`.  
+ 
+[!code-cpp[System.Reflection.Module.GetType 3Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 3Arg Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.GetType 3Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 3Arg Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.GetType 3Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetType 3Arg Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1218,15 +1218,15 @@
         <returns>An array of type <see langword="Type" /> containing types defined within the module that is reflected by this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `ReflectionTypeLoadException` is a special load exception. The `ReflectionTypeLoadException.Types` property contains the array of types that were defined in the module and were loaded. This array may contain some null values. The `ReflectionTypeLoadException.LoaderExceptions` property is an array of exceptions that represent the exceptions that were thrown by the loader. The holes in the class array line up with the exceptions.  
-  
- For example, if the class initializers of one of the classes throws an exception while it is being loaded, a `TargetInvocationException` is stored in the corresponding element of the `LoaderExceptions` array.  
-  
+`ReflectionTypeLoadException` is a special load exception. The `ReflectionTypeLoadException.Types` property contains the array of types that were defined in the module and were loaded. This array may contain some null values. The `ReflectionTypeLoadException.LoaderExceptions` property is an array of exceptions that represent the exceptions that were thrown by the loader. The holes in the class array line up with the exceptions.  
+ 
+For example, if the class initializers of one of the classes throws an exception while it is being loaded, a `TargetInvocationException` is stored in the corresponding element of the `LoaderExceptions` array.  
+ 
 > [!NOTE]
 >  If a type has been forwarded to another assembly, it is not included in the returned array. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.ReflectionTypeLoadException">One or more classes in a module could not be loaded.</exception>
@@ -1263,14 +1263,14 @@
           <see langword="true" /> if one or more instances of <paramref name="attributeType" /> have been applied to this module; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates a use of the `IsDefined` method.  
-  
- [!code-cpp[System.Reflection.Module.IsDefined Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.IsDefined Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.IsDefined Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.IsDefined Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.IsDefined Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.IsDefined Example/VB/class1.vb#1)]  
-  
+The following example demonstrates a use of the `IsDefined` method.  
+ 
+[!code-cpp[System.Reflection.Module.IsDefined Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.IsDefined Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.IsDefined Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.IsDefined Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.IsDefined Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.IsDefined Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1303,14 +1303,14 @@
           <see langword="true" /> if the object is a resource; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates a use of the `IsResource` method.  
-  
- [!code-cpp[System.Reflection.Module.IsResource Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.IsResource Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.IsResource Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.IsResource Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.IsResource Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.IsResource Example/VB/class1.vb#1)]  
-  
+The following example demonstrates a use of the `IsResource` method.  
+ 
+[!code-cpp[System.Reflection.Module.IsResource Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.IsResource Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.IsResource Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.IsResource Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.IsResource Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.IsResource Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1337,12 +1337,12 @@
         <value>A 32-bit integer representing the metadata stream version. The high-order two bytes represent the major version number, and the low-order two bytes represent the minor version number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For more information on the metadata header, see "Partition II: Metadata Definition and Semantics" in the Common Language Infrastructure (CLI) documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1369,13 +1369,13 @@
         <value>An integer token that identifies the current module in metadata.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
-  
+The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1429,13 +1429,13 @@
         <value>A <see cref="T:System.Guid" /> that can be used to distinguish between two versions of a module.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In unmanaged metadata, the GUID returned by the <xref:System.Reflection.Module.ModuleVersionId%2A> property is referred to as the `mvid`, and is stored in the GUID heap.  
-  
+In unmanaged metadata, the GUID returned by the <xref:System.Reflection.Module.ModuleVersionId%2A> property is referred to as the `mvid`, and is stored in the GUID heap.  
+ 
 > [!NOTE]
 >  More information about metadata can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1468,23 +1468,23 @@
         <value>The module name with no path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Name` is a platform-dependent string.  
+`Name` is a platform-dependent string.  
+ 
+If the assembly for this module was loaded from a byte array then the `FullyQualifiedName` for the module will be: \<Unknown>.  
+ 
+To get the name and the path, use <xref:System.Reflection.Module.FullyQualifiedName%2A>.  
+ 
   
- If the assembly for this module was loaded from a byte array then the `FullyQualifiedName` for the module will be: \<Unknown>.  
-  
- To get the name and the path, use <xref:System.Reflection.Module.FullyQualifiedName%2A>.  
-  
-   
-  
+ 
 ## Examples  
- This example shows the effect of the `ScopeName`, `FullyQualifiedName`, and `Name` properties.  
-  
- [!code-cpp[Classic Module.Name Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Module.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Module.Name Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Module.Name Example/CS/source.cs#1)]
- [!code-vb[Classic Module.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Module.Name Example/VB/source.vb#1)]  
-  
+This example shows the effect of the `ScopeName`, `FullyQualifiedName`, and `Name` properties.  
+ 
+[!code-cpp[Classic Module.Name Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Module.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Module.Name Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Module.Name Example/CS/source.cs#1)]
+[!code-vb[Classic Module.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Module.Name Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1575,15 +1575,15 @@
         <returns>A <see cref="T:System.Reflection.FieldInfo" /> object representing the field that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To resolve a metadata token that identifies a field whose parent `TypeSpec` has a signature containing element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveField%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a field that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
-  
+To resolve a metadata token that identifies a field whose parent `TypeSpec` has a signature containing element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveField%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a field that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
-  
+ 
+For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1626,15 +1626,15 @@
         <returns>A <see cref="T:System.Reflection.FieldInfo" /> object representing the field that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
+Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
-  
+ 
+For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1673,15 +1673,15 @@
         <returns>A <see cref="T:System.Reflection.MemberInfo" /> object representing the type or member that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To resolve a metadata token for a `MethodSpec` or `TypeSpec` whose signature contains element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveMember%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a member that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
-  
+To resolve a metadata token for a `MethodSpec` or `TypeSpec` whose signature contains element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveMember%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a member that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
-  
+ 
+For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1728,15 +1728,15 @@
         <returns>A <see cref="T:System.Reflection.MemberInfo" /> object representing the type or member that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
+Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
-  
+ 
+For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1779,41 +1779,41 @@
         <returns>A <see cref="T:System.Reflection.MethodBase" /> object representing the method or constructor that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To resolve a metadata token for a `MethodSpec` whose signature contains element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a method that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
-  
+To resolve a metadata token for a `MethodSpec` whose signature contains element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a method that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the two overloads of the <xref:System.Reflection.Module.ResolveMethod%2A> method to resolve metadata tokens from call sites in generic and non-generic contexts.  
-  
- The code example defines two generic types, `G1<Tg1>` and `G2<Tg2>` (`G1(Of Tg1)` and `G2(Of Tg2)` in Visual Basic), each of which has a generic method. `G1<Tg1>` also has a non-generic method that uses the type parameter `Tg1` for its parameter. The generic method `GM2<Tgm2>` in type `G2<Tg2>` contains several method calls:  
-  
+The following example shows how to use the two overloads of the <xref:System.Reflection.Module.ResolveMethod%2A> method to resolve metadata tokens from call sites in generic and non-generic contexts.  
+ 
+The code example defines two generic types, `G1<Tg1>` and `G2<Tg2>` (`G1(Of Tg1)` and `G2(Of Tg2)` in Visual Basic), each of which has a generic method. `G1<Tg1>` also has a non-generic method that uses the type parameter `Tg1` for its parameter. The generic method `GM2<Tgm2>` in type `G2<Tg2>` contains several method calls:  
+ 
 -   Case 1: The generic method `GM1<Tgm1>` is called, using the type parameters of `G2<Tg2>` and `GM2<Tgm2>` as the type arguments. In other words, the parameter types of the called method will depend on the types that are used to construct a closed generic type from the type definition for `G2<Tg2>`.  
-  
+ 
 -   Case 2: The non-generic method `M1` is called. The parameter of this method uses the type parameter of the defining type, `G1<Tg1>`, which is replaced in this case by the type parameter of the enclosing type, `G2<Tg2>`.  
-  
+ 
 -   Case 3: The generic method `GM1<Tgm1>` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. This method call does not depend on the type parameters of the enclosing type or method.  
-  
+ 
 -   Case 4: The non-generic method `M1` of the `Example` class is called. This method call does not depend on the type parameters of the enclosing type or method.  
-  
- In addition, the example defines the non-generic `Example` class. This class has a method `M` that makes a call to a generic method:  
-  
+ 
+In addition, the example defines the non-generic `Example` class. This class has a method `M` that makes a call to a generic method:  
+ 
 -   Case 5: The generic method `GM1` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. The context for this method has no enclosing generic type or generic method.  
-  
- For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=fullName> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
-  
- The example then attempts to use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%29> method overload to resolve the token. This works in cases 3, 4, and 5, because the method calls do not depend on the generic context. In cases 1 and 2, an exception is thrown because there is insufficient information to resolve the token.  
-  
- The metadata token values are hard-coded as an enumeration. If you change this code example, the token values are likely to change. To determine the new token values, compile the code and use Ildasm.exe with the **/TOKENS** option to examine the assembly. The tokens can be found at the points of call. Insert the new values into the enumeration, and recompile the example.  
-  
- [!code-csharp[Module.MethodResolve#1](~/samples/snippets/csharp/VS_Snippets_CLR/Module.MethodResolve/cs/source.cs#1)]
- [!code-vb[Module.MethodResolve#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Module.MethodResolve/vb/source.vb#1)]  
-  
+ 
+For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=fullName> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
+ 
+The example then attempts to use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%29> method overload to resolve the token. This works in cases 3, 4, and 5, because the method calls do not depend on the generic context. In cases 1 and 2, an exception is thrown because there is insufficient information to resolve the token.  
+ 
+The metadata token values are hard-coded as an enumeration. If you change this code example, the token values are likely to change. To determine the new token values, compile the code and use Ildasm.exe with the **/TOKENS** option to examine the assembly. The tokens can be found at the points of call. Insert the new values into the enumeration, and recompile the example.  
+ 
+[!code-csharp[Module.MethodResolve#1](~/samples/snippets/csharp/VS_Snippets_CLR/Module.MethodResolve/cs/source.cs#1)]
+[!code-vb[Module.MethodResolve#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Module.MethodResolve/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1856,41 +1856,41 @@
         <returns>A <see cref="T:System.Reflection.MethodBase" /> object representing the method that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
+Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the two overloads of the <xref:System.Reflection.Module.ResolveMethod%2A> method to resolve metadata tokens from call sites in generic and non-generic contexts.  
-  
- The code example defines two generic types, `G1<Tg1>` and `G2<Tg2>`, each of which has a generic method. `G1<Tg1>` also has a non-generic method that uses the type parameter `Tg1` for its parameter. The generic method `GM2<Tgm2>` in type `G2<Tg2>` contains several method calls:  
-  
+The following example shows how to use the two overloads of the <xref:System.Reflection.Module.ResolveMethod%2A> method to resolve metadata tokens from call sites in generic and non-generic contexts.  
+ 
+The code example defines two generic types, `G1<Tg1>` and `G2<Tg2>`, each of which has a generic method. `G1<Tg1>` also has a non-generic method that uses the type parameter `Tg1` for its parameter. The generic method `GM2<Tgm2>` in type `G2<Tg2>` contains several method calls:  
+ 
 -   Case 1: The generic method `GM1<Tgm1>` is called, using the type parameters of `G2<Tg2>` and `GM2<Tgm2>` as the type arguments. In other words, the parameter types of the called method will depend on the types that are used to construct a closed generic type from the type definition for `G2<Tg2>`.  
-  
+ 
 -   Case 2: The non-generic method `M1` is called. The parameter of this method uses the type parameter of the defining type, `G1<Tg1>`, which is replaced in this case by the type parameter of the enclosing type, `G2<Tg2>`.  
-  
+ 
 -   Case 3: The generic method `GM1<Tgm1>` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. This method call does not depend on the type parameters of the enclosing type or method.  
-  
+ 
 -   Case 4: The non-generic method `M1` of the `Example` class is called. This method call does not depend on the type parameters of the enclosing type or method.  
-  
- In addition, the example defines the non-generic `Example` class. This class has a method `M` that makes a call to a generic method.  
-  
+ 
+In addition, the example defines the non-generic `Example` class. This class has a method `M` that makes a call to a generic method.  
+ 
 -   Case 5: The generic method `GM1<Tgm1>` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. The context for this method has no enclosing generic type or generic method.  
-  
- For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=fullName> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
-  
- The example then attempts to use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%29> method overload to resolve the token. This works in cases 3, 4, and 5, because the method calls do not depend on the generic context. In cases 1 and 2, an exception is thrown because there is insufficient information to resolve the token.  
-  
- The metadata token values are hard-coded as an enumeration. If you change this code example, the token values are likely to change. To determine the new token values, compile the code and use Ildasm.exe with the **/TOKENS** option to examine the assembly. The tokens can be found at the points of call. Insert the new values into the enumeration, and recompile the example.  
-  
- [!code-csharp[Module.MethodResolve#1](~/samples/snippets/csharp/VS_Snippets_CLR/Module.MethodResolve/cs/source.cs#1)]
- [!code-vb[Module.MethodResolve#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Module.MethodResolve/vb/source.vb#1)]  
-  
+ 
+For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=fullName> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
+ 
+The example then attempts to use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%29> method overload to resolve the token. This works in cases 3, 4, and 5, because the method calls do not depend on the generic context. In cases 1 and 2, an exception is thrown because there is insufficient information to resolve the token.  
+ 
+The metadata token values are hard-coded as an enumeration. If you change this code example, the token values are likely to change. To determine the new token values, compile the code and use Ildasm.exe with the **/TOKENS** option to examine the assembly. The tokens can be found at the points of call. Insert the new values into the enumeration, and recompile the example.  
+ 
+[!code-csharp[Module.MethodResolve#1](~/samples/snippets/csharp/VS_Snippets_CLR/Module.MethodResolve/cs/source.cs#1)]
+[!code-vb[Module.MethodResolve#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Module.MethodResolve/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1929,12 +1929,12 @@
         <returns>An array of bytes representing the signature blob.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Information about metadata tokens and signatures can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1969,12 +1969,12 @@
         <returns>A <see cref="T:System.String" /> containing a string value from the metadata string heap.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2009,13 +2009,13 @@
         <returns>A <see cref="T:System.Type" /> object representing the type that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To resolve a metadata token for a `TypeSpec` whose signature contains `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveType%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a type that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
-  
+To resolve a metadata token for a `TypeSpec` whose signature contains `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveType%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a type that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2058,15 +2058,15 @@
         <returns>A <see cref="T:System.Type" /> object representing the type that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
+Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
-  
+ 
+For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2105,19 +2105,19 @@
         <value>The module name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `ScopeName` property is not used by the common language runtime, but you can use it to store any string you want in the property when you emit a module using the metadata APIs. Reflection itself does not allow you to set the `ScopeName` property.  
+The `ScopeName` property is not used by the common language runtime, but you can use it to store any string you want in the property when you emit a module using the metadata APIs. Reflection itself does not allow you to set the `ScopeName` property.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows the effect of the `ScopeName`, `FullyQualifiedName`, and `Name` properties.  
-  
- [!code-cpp[Classic Module.ScopeName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Module.ScopeName Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Module.ScopeName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Module.ScopeName Example/CS/source.cs#1)]
- [!code-vb[Classic Module.ScopeName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Module.ScopeName Example/VB/source.vb#1)]  
-  
+This example shows the effect of the `ScopeName`, `FullyQualifiedName`, and `Name` properties.  
+ 
+[!code-cpp[Classic Module.ScopeName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Module.ScopeName Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Module.ScopeName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Module.ScopeName Example/CS/source.cs#1)]
+[!code-vb[Classic Module.ScopeName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Module.ScopeName Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2220,10 +2220,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -2253,10 +2253,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -2282,10 +2282,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -2325,10 +2325,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -2363,14 +2363,14 @@
         <returns>A <see langword="String" /> representing the name of this module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates a use of the `ToString` method.  
-  
- [!code-cpp[System.Reflection.Module.ToString Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.ToString Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Reflection.Module.ToString Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.ToString Example/CS/class1.cs#1)]
- [!code-vb[System.Reflection.Module.ToString Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.ToString Example/VB/class1.vb#1)]  
-  
+The following example demonstrates a use of the `ToString` method.  
+ 
+[!code-cpp[System.Reflection.Module.ToString Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.ToString Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Reflection.Module.ToString Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.ToString Example/CS/class1.cs#1)]
+[!code-vb[System.Reflection.Module.ToString Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.ToString Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

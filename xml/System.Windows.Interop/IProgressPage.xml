@@ -29,10 +29,10 @@
         <value>Name of the application that originates the progress page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Establishing the application name must wait until the manifest download is complete, because the manifest itself contains the information needed.  
-  
+Establishing the application name must wait until the manifest download is complete, because the manifest itself contains the information needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <value>The publisher identifying string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Establishing the application publisher must wait until the manifest download is complete, because the manifest itself contains the information needed.  
-  
+Establishing the application publisher must wait until the manifest download is complete, because the manifest itself contains the information needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

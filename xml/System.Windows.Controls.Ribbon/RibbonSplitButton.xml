@@ -26,28 +26,28 @@
     <summary>Represents a composite control that has a primary button that responds to a <see cref="E:System.Windows.Controls.Ribbon.RibbonSplitButton.Click" /> event and a secondary button that displays a drop-down list of mutually exclusive values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows examples of <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> controls in large, medium, and small variations, and with no images.  
-  
- ![Ribbon split button controls](~/add/media/wpfribbon-splitbutton.png "Ribbon split button controls")  
+The following illustration shows examples of <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> controls in large, medium, and small variations, and with no images.  
+ 
+![Ribbon split button controls](~/add/media/wpfribbon-splitbutton.png "Ribbon split button controls")  
 Ribbon split button controls  
-  
- The following illustrations show <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> controls when the drop-down is opened.  
-  
- ![Ribbon split button control with drop&#45;down open](~/add/media/wpfribbon-splitbutton-selection.png "Ribbon split button control with drop-down open")  
+ 
+The following illustrations show <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> controls when the drop-down is opened.  
+ 
+![Ribbon split button control with drop&#45;down open](~/add/media/wpfribbon-splitbutton-selection.png "Ribbon split button control with drop-down open")  
 Ribbon split button control with drop-down open  
-  
- ![Ribbon split button control with drop&#45;down open](~/add/media/wpfribbon-splitbutton-selection2.png "Ribbon split button control with drop-down open")  
+ 
+![Ribbon split button control with drop&#45;down open](~/add/media/wpfribbon-splitbutton-selection2.png "Ribbon split button control with drop-down open")  
 Ribbon split button control with drop-down open  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the markup to create a split button with three available items.  
-  
- [!code-xml[Ribbon_ControlsSample#RibbonSplitButton](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbonsplitbutton)]  
-  
+The following example shows the markup to create a split button with three available items.  
+ 
+[!code-xml[Ribbon_ControlsSample#RibbonSplitButton](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbonsplitbutton)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,17 +84,17 @@ Ribbon split button control with drop-down open
         <value>The brush that is used to draw the background of the control when it is in the Checked state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CheckedBackground"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBackgroundProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,17 +133,17 @@ Ribbon split button control with drop-down open
         <value>The brush that is used to draw the outer border of the control when it is in the Checked state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CheckedBorderBrush"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBorderBrushProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,17 +216,17 @@ Ribbon split button control with drop-down open
         <value>The command that is associated with this control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Command"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.CommandProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,17 +248,17 @@ Ribbon split button control with drop-down open
         <value>A user-defined data value to pass to the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CommandParameter"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.CommandParameterProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,17 +314,17 @@ Ribbon split button control with drop-down open
         <value>The element on which to invoke the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CommandTarget"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.CommandTargetProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,17 +363,17 @@ Ribbon split button control with drop-down open
         <value>The descriptive text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_DropDownToolTipDescription"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipDescriptionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -412,17 +412,17 @@ Ribbon split button control with drop-down open
         <value>The descriptive text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_DropDownToolTipFooterDescription"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterDescriptionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,17 +461,17 @@ Ribbon split button control with drop-down open
         <value>The image to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_DropDownToolTipFooterImageSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterImageSourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -510,17 +510,17 @@ Ribbon split button control with drop-down open
         <value>The title text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_DropDownToolTipFooterTitle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterTitleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -559,17 +559,17 @@ Ribbon split button control with drop-down open
         <value>The image to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_DropDownToolTipImageSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipImageSourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,17 +608,17 @@ Ribbon split button control with drop-down open
         <value>The title text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_DropDownToolTipTitle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipTitleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,20 +657,20 @@ Ribbon split button control with drop-down open
         <value>The keyboard shortcut for the header area of this control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A KeyTip must be from 1 to 3 uppercase characters, and must not contain spaces, tabs, or newline characters.  
-  
- KeyTips are sometimes known as access keys or accelerators and are used as shortcut key combinations that activate controls. KeyTips appear on the <xref:System.Windows.Controls.Ribbon.Ribbon> when you press the ALT key.  
-  
+A KeyTip must be from 1 to 3 uppercase characters, and must not contain spaces, tabs, or newline characters.  
+ 
+KeyTips are sometimes known as access keys or accelerators and are used as shortcut key combinations that activate controls. KeyTips appear on the <xref:System.Windows.Controls.Ribbon.Ribbon> when you press the ALT key.  
+ 
 <a name="dependencyPropertyInfo_HeaderKeyTip"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderKeyTipProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -709,17 +709,17 @@ Ribbon split button control with drop-down open
         <value>A unique identifier for a control in the Quick Access Toolbar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_HeaderQuickAccessToolBarId"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderQuickAccessToolBarIdProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -759,18 +759,18 @@ Ribbon split button control with drop-down open
           <see langword="true" /> if the user can check and uncheck the button; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is `true`, the button behaves as a <xref:System.Windows.Controls.Ribbon.RibbonToggleButton>.  
-  
+When this property is `true`, the button behaves as a <xref:System.Windows.Controls.Ribbon.RibbonToggleButton>.  
+ 
 <a name="dependencyPropertyInfo_IsCheckable"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.IsCheckableProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -810,17 +810,17 @@ Ribbon split button control with drop-down open
           <see langword="true" /> if the button is checked; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsChecked"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.IsCheckedProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -859,17 +859,17 @@ Ribbon split button control with drop-down open
         <value>A value that indicates the relative position of the label.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_LabelPosition"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSplitButton.LabelPositionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -929,10 +929,10 @@ Ribbon split button control with drop-down open
         <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> when a new template is applied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
+This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

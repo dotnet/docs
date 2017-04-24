@@ -73,10 +73,10 @@
         <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonFilterMenuButton" /> when a new template is applied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.Controls.Ribbon.RibbonFilterMenuButton.OnApplyTemplate%2A> method.  
-  
+This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.Controls.Ribbon.RibbonFilterMenuButton.OnApplyTemplate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.Controls.Ribbon.RibbonControlService.DismissPopup" /> attached event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method closes the filter menu drop-down and then marks the <xref:System.Windows.Controls.Ribbon.RibbonControlService.DismissPopup> attached event as handled so that the parent drop-down is not closed.  
-  
+This method closes the filter menu drop-down and then marks the <xref:System.Windows.Controls.Ribbon.RibbonControlService.DismissPopup> attached event as handled so that the parent drop-down is not closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

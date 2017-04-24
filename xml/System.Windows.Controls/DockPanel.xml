@@ -14,18 +14,18 @@
     <summary>Defines an area where you can arrange child elements either horizontally or vertically, relative to each other.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.DockPanel> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property.  
-  
- The <xref:System.Windows.Controls.DockPanel.SetDock%2A> method changes the position of an element relative to other elements within the same container. Alignment properties, such as <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, change the position of an element relative to its parent element.  
-  
- If you set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `true`, which is the default setting, the last child element of a <xref:System.Windows.Controls.DockPanel> always fills the remaining space, regardless of any other dock value that you set on the last child element. To dock a child element in another direction, you must set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `false` and must also specify an explicit dock direction for the last child element.  
-  
- Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
-  
- **Note:** The position of child elements of a <xref:System.Windows.Controls.DockPanel> on the screen is determined by the <xref:System.Windows.Controls.DockPanel.Dock%2A> property of the respective child elements *and* the relative order of those child elements under the <xref:System.Windows.Controls.DockPanel>. Therefore, a set of child elements with the same Dock property values can be positioned differently on the screen depending on the order of these children under the <xref:System.Windows.Controls.DockPanel>. Child ordering effects positioning because the <xref:System.Windows.Controls.DockPanel> iterates through its child elements in order, setting the position of each element depending on remaining space.  
-  
+A <xref:System.Windows.Controls.DockPanel> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property.  
+ 
+The <xref:System.Windows.Controls.DockPanel.SetDock%2A> method changes the position of an element relative to other elements within the same container. Alignment properties, such as <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, change the position of an element relative to its parent element.  
+ 
+If you set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `true`, which is the default setting, the last child element of a <xref:System.Windows.Controls.DockPanel> always fills the remaining space, regardless of any other dock value that you set on the last child element. To dock a child element in another direction, you must set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `false` and must also specify an explicit dock direction for the last child element.  
+ 
+Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
+ 
+**Note:** The position of child elements of a <xref:System.Windows.Controls.DockPanel> on the screen is determined by the <xref:System.Windows.Controls.DockPanel.Dock%2A> property of the respective child elements *and* the relative order of those child elements under the <xref:System.Windows.Controls.DockPanel>. Therefore, a set of child elements with the same Dock property values can be positioned differently on the screen depending on the order of these children under the <xref:System.Windows.Controls.DockPanel>. Child ordering effects positioning because the <xref:System.Windows.Controls.DockPanel> iterates through its child elements in order, setting the position of each element depending on remaining space.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,18 +129,18 @@
           <see langword="true" /> if the last child element stretches to fill the remaining space; otherwise <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `true`, which is the default setting, the last child element of a <xref:System.Windows.Controls.DockPanel> always fills the remaining space, regardless of any other dock value that you set on the last child element. To dock a child element in another direction, you must set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `false` and must also specify an explicit dock direction on the last child element.  
-  
+If you set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `true`, which is the default setting, the last child element of a <xref:System.Windows.Controls.DockPanel> always fills the remaining space, regardless of any other dock value that you set on the last child element. To dock a child element in another direction, you must set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `false` and must also specify an explicit dock direction on the last child element.  
+ 
 <a name="dependencyPropertyInfo_LastChildFill"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DockPanel>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <returns>A <see cref="T:System.Windows.Size" /> that represents the element size you want.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.DockPanel> determines its size by analyzing the sizing properties and <xref:System.Windows.Controls.DockPanel.Dock%2A> property value of its child elements. A child element can occupy all the space on the side where it is docked. Child elements that are docked to the `Left` or `Right` are granted all the vertical space for their entire width. Child elements that are docked to the `Top` or `Bottom` are granted all the horizontal space for their entire height.  
-  
+A <xref:System.Windows.Controls.DockPanel> determines its size by analyzing the sizing properties and <xref:System.Windows.Controls.DockPanel.Dock%2A> property value of its child elements. A child element can occupy all the space on the side where it is docked. Child elements that are docked to the `Left` or `Right` are granted all the vertical space for their entire width. Child elements that are docked to the `Top` or `Bottom` are granted all the horizontal space for their entire height.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.DockPanel.Dock" /> attached property to a specified element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DockPanel.SetDock%2A> method changes the position of a child element relative to other child elements within the same container. Alignment properties, such as <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, change the position of a child element relative to its parent element.  
-  
+The <xref:System.Windows.Controls.DockPanel.SetDock%2A> method changes the position of a child element relative to other child elements within the same container. Alignment properties, such as <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, change the position of a child element relative to its parent element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

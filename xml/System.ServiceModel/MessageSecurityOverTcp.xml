@@ -15,10 +15,10 @@
     <summary>Configures the message-level security for a message sent using the TCP transport.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This object is accessed from the binding by using the <xref:System.ServiceModel.NetTcpBinding.Security%2A> property, which returns a <xref:System.ServiceModel.NetTcpSecurity> object. The <xref:System.ServiceModel.NetTcpSecurity.Message%2A> property provides a reference to the <xref:System.ServiceModel.MessageSecurityOverTcp> object.  
-  
+This object is accessed from the binding by using the <xref:System.ServiceModel.NetTcpBinding.Security%2A> property, which returns a <xref:System.ServiceModel.NetTcpSecurity> object. The <xref:System.ServiceModel.NetTcpSecurity.Message%2A> property provides a reference to the <xref:System.ServiceModel.MessageSecurityOverTcp> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,20 +61,20 @@
         <value>A <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />. The default is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should be aware of the strengths and weaknesses of the relevant algorithms when making modifications to this setting.  
+You should be aware of the strengths and weaknesses of the relevant algorithms when making modifications to this setting.  
+ 
+If you set this property to a value other than the default and generate a configuration file using [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md), it is not generated correctly and you must manually edit the configuration file to set the corresponding configuration attribute to the desired value.  
+ 
   
- If you set this property to a value other than the default and generate a configuration file using [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md), it is not generated correctly and you must manually edit the configuration file to set the corresponding configuration attribute to the desired value.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to access and set this property.  
-  
- [!code-csharp[S_UEMessageSecurityOverTcp#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uemessagesecurityovertcp/cs/source.cs#2)]
- [!code-vb[S_UEMessageSecurityOverTcp#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uemessagesecurityovertcp/vb/source.vb#2)]  
-  
+The following code shows how to access and set this property.  
+ 
+[!code-csharp[S_UEMessageSecurityOverTcp#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uemessagesecurityovertcp/cs/source.cs#2)]
+[!code-vb[S_UEMessageSecurityOverTcp#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uemessagesecurityovertcp/vb/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of <see cref="P:System.ServiceModel.MessageSecurityOverTcp.AlgorithmSuite" /> is <see langword="null" />.</exception>
@@ -98,30 +98,30 @@
         <value>A <see cref="T:System.ServiceModel.MessageCredentialType" />. The default is <see cref="F:System.ServiceModel.MessageCredentialType.Windows" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value can be one of the following enumeration members:  
-  
+The return value can be one of the following enumeration members:  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to access and set this property.  
-  
- [!code-csharp[S_UEMessageSecurityOverTcp#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uemessagesecurityovertcp/cs/source.cs#2)]
- [!code-vb[S_UEMessageSecurityOverTcp#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uemessagesecurityovertcp/vb/source.vb#2)]  
-  
+The following code shows how to access and set this property.  
+ 
+[!code-csharp[S_UEMessageSecurityOverTcp#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uemessagesecurityovertcp/cs/source.cs#2)]
+[!code-vb[S_UEMessageSecurityOverTcp#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uemessagesecurityovertcp/vb/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of <see cref="P:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType" /> is not a valid <see cref="T:System.ServiceModel.MessageCredentialType" />.</exception>

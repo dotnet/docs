@@ -13,10 +13,10 @@
     <summary>Specifies the manner in which records should be read from a <see cref="T:System.IO.Log.LogRecordSequence" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is provided to the <xref:System.IO.Log.IRecordSequence.ReadLogRecords%2A> method to control the order in which records should be read. Each value corresponds to one of the metadata sequence numbers stored in a log record.  
-  
+This enumeration is provided to the <xref:System.IO.Log.IRecordSequence.ReadLogRecords%2A> method to control the order in which records should be read. Each value corresponds to one of the metadata sequence numbers stored in a log record.  
+ 
  ]]></format>
     </remarks>
   </Docs>

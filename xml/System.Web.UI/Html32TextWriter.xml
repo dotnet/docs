@@ -14,20 +14,20 @@
     <summary>Writes a series of HTML 3.2–specific characters and text to the output stream for an ASP.NET server control. The <see cref="T:System.Web.UI.Html32TextWriter" /> class provides formatting capabilities that ASP.NET server controls use when rendering HTML 3.2 content to clients.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Html32TextWriter> class is an alternative to the <xref:System.Web.UI.HtmlTextWriter> class. It converts HTML 4.0 style attributes into the equivalent HTML 3.2 tags and attributes. It standardizes the propagation of attributes, such as colors and fonts, using HTML tables. ASP.NET automatically uses this class for HTML 3.2 and earlier browsers by checking the <xref:System.Web.Configuration.HttpCapabilitiesBase.TagWriter%2A> property of the <xref:System.Web.HttpBrowserCapabilities> class. Unless you create a custom page or control adapter that targets devices that use HTML 3.2 markup, you do not need to create an instance of the <xref:System.Web.UI.Html32TextWriter> class explicitly.  
+The <xref:System.Web.UI.Html32TextWriter> class is an alternative to the <xref:System.Web.UI.HtmlTextWriter> class. It converts HTML 4.0 style attributes into the equivalent HTML 3.2 tags and attributes. It standardizes the propagation of attributes, such as colors and fonts, using HTML tables. ASP.NET automatically uses this class for HTML 3.2 and earlier browsers by checking the <xref:System.Web.Configuration.HttpCapabilitiesBase.TagWriter%2A> property of the <xref:System.Web.HttpBrowserCapabilities> class. Unless you create a custom page or control adapter that targets devices that use HTML 3.2 markup, you do not need to create an instance of the <xref:System.Web.UI.Html32TextWriter> class explicitly.  
+ 
+For more information about customizing page and control rendering, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ 
   
- For more information about customizing page and control rendering, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use a class, named `CustomHtml32TextWriter`, that derives from the <xref:System.Web.UI.Html32TextWriter> class. `CustomHtml32TextWriter` creates two constructors that follow the pattern that is established by the <xref:System.Web.UI.HtmlTextWriter> class and overrides the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A>, <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A>, <xref:System.Web.UI.Html32TextWriter.RenderBeforeTag%2A>, and <xref:System.Web.UI.Html32TextWriter.RenderAfterTag%2A> methods.  
-  
- [!code-csharp[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#1)]
- [!code-vb[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#1)]  
-  
+The following code example demonstrates how to use a class, named `CustomHtml32TextWriter`, that derives from the <xref:System.Web.UI.Html32TextWriter> class. `CustomHtml32TextWriter` creates two constructors that follow the pattern that is established by the <xref:System.Web.UI.HtmlTextWriter> class and overrides the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A>, <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A>, <xref:System.Web.UI.Html32TextWriter.RenderBeforeTag%2A>, and <xref:System.Web.UI.Html32TextWriter.RenderAfterTag%2A> methods.  
+ 
+[!code-csharp[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#1)]
+[!code-vb[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,22 +49,22 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Html32TextWriter" /> class that uses the line indentation that is specified in the <see cref="F:System.Web.UI.HtmlTextWriter.DefaultTabString" /> field when the requesting browser requires line indentation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Html32TextWriter.%23ctor%2A> constructor passes the <xref:System.Web.UI.HtmlTextWriter.DefaultTabString> field value to a second version that has the following two parameters:  
-  
+The <xref:System.Web.UI.Html32TextWriter.%23ctor%2A> constructor passes the <xref:System.Web.UI.HtmlTextWriter.DefaultTabString> field value to a second version that has the following two parameters:  
+ 
 -   `writer`, which takes an instance of the  <xref:System.IO.TextWriter> class.  
-  
+ 
 -   `tabString`, which takes a string that defines line indentation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use a custom class that derives from the <xref:System.Web.UI.Html32TextWriter> class. It has two constructors, which is standard for all classes that derive directly or indirectly from the <xref:System.Web.UI.HtmlTextWriter> class.  
-  
- [!code-csharp[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#1)]
- [!code-vb[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#1)]  
-  
+The following code example demonstrates how to use a custom class that derives from the <xref:System.Web.UI.Html32TextWriter> class. It has two constructors, which is standard for all classes that derive directly or indirectly from the <xref:System.Web.UI.HtmlTextWriter> class.  
+ 
+[!code-csharp[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#1)]
+[!code-vb[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,13 +88,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Html32TextWriter" /> class that uses the specified line indentation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use a custom class that derives from the <xref:System.Web.UI.Html32TextWriter> class. It has two constructors, which is standard for all classes that derive directly or indirectly from the <xref:System.Web.UI.HtmlTextWriter> class.  
-  
- [!code-csharp[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#1)]
- [!code-vb[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#1)]  
-  
+The following code example demonstrates how to use a custom class that derives from the <xref:System.Web.UI.Html32TextWriter> class. It has two constructors, which is standard for all classes that derive directly or indirectly from the <xref:System.Web.UI.HtmlTextWriter> class.  
+ 
+[!code-csharp[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#1)]
+[!code-vb[System.Web.UI.Html32TextWriter_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <returns>The HTML element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName> field is passed in `tagKey` and the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property is `true`, the <xref:System.Web.UI.Html32TextWriter.GetTagName%2A> method returns the `table` element.  
-  
+If the <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName> field is passed in `tagKey` and the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property is `true`, the <xref:System.Web.UI.Html32TextWriter.GetTagName%2A> method returns the `table` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
           <see langword="true" /> if the HTML style attribute and its value will be rendered to the output stream; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Html32TextWriter.OnStyleAttributeRender%2A> method supports a smaller number of HTML style attributes than the <xref:System.Web.UI.Html32TextWriter.OnStyleAttributeRender%2A> method that it overrides.  
-  
+The <xref:System.Web.UI.Html32TextWriter.OnStyleAttributeRender%2A> method supports a smaller number of HTML style attributes than the <xref:System.Web.UI.Html32TextWriter.OnStyleAttributeRender%2A> method that it overrides.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
           <see langword="true" /> if the HTML element is written to the output stream; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property is `true`, the <xref:System.Web.UI.Html32TextWriter.OnTagRender%2A> method replaces any `div` elements that are rendered by a control with `table` elements.  
-  
+If the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property is `true`, the <xref:System.Web.UI.Html32TextWriter.OnTagRender%2A> method replaces any `div` elements that are rendered by a control with `table` elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,17 +230,17 @@
         <returns>The spacing or text to write after the content of the HTML element; otherwise, if there is no such information to render, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method. Each overridden method first checks whether a `th` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsBold%2A> method to check whether the requesting device can display bold formatting. If the device supports bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag of a `b` element. If the device does not support bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag of a `font` element.  
-  
- Next, the code checks whether an `h4` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsItalic%2A> property to check whether the requesting device can display italic formatting. If the device supports italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag of an `i` element. If the device does not support italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag of a `font` element.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
-  
- [!code-csharp[System.Web.UI.Html32TextWriter_Samples1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#4)]
- [!code-vb[System.Web.UI.Html32TextWriter_Samples1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#4)]  
-  
+The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method. Each overridden method first checks whether a `th` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsBold%2A> method to check whether the requesting device can display bold formatting. If the device supports bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag of a `b` element. If the device does not support bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag of a `font` element.  
+ 
+Next, the code checks whether an `h4` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsItalic%2A> property to check whether the requesting device can display italic formatting. If the device supports italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag of an `i` element. If the device does not support italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag of a `font` element.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
+ 
+[!code-csharp[System.Web.UI.Html32TextWriter_Samples1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#4)]
+[!code-vb[System.Web.UI.Html32TextWriter_Samples1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,15 +263,15 @@
         <returns>The spacing or text to write after the closing tag of the HTML element; otherwise, if there is no such information to render, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderAfterTag%2A> method. The code checks whether an `a` element is being rendered. If so, the <xref:System.Web.UI.Html32TextWriter.RenderAfterTag%2A> method writes the closing tag of a `small` element. The example for the <xref:System.Web.UI.Html32TextWriter.RenderBeforeTag%2A> method performs the same check for the `a` element, and then writes the opening tag of the `small` element.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
-  
- [!code-csharp[System.Web.UI.Html32TextWriter_Samples1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#5)]
- [!code-vb[System.Web.UI.Html32TextWriter_Samples1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#5)]  
-  
+The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderAfterTag%2A> method. The code checks whether an `a` element is being rendered. If so, the <xref:System.Web.UI.Html32TextWriter.RenderAfterTag%2A> method writes the closing tag of a `small` element. The example for the <xref:System.Web.UI.Html32TextWriter.RenderBeforeTag%2A> method performs the same check for the `a` element, and then writes the opening tag of the `small` element.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
+ 
+[!code-csharp[System.Web.UI.Html32TextWriter_Samples1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#5)]
+[!code-vb[System.Web.UI.Html32TextWriter_Samples1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,17 +294,17 @@
         <returns>The font information or spacing to write before rendering the content of the HTML element; otherwise, if there is no such information to render, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method. The code checks whether a `th` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsBold%2A> method to check whether the requesting device can display bold formatting. If the device supports bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `b` element. If the device does not support bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `font` element with a `color` attribute set to the hexadecimal value for red.  
-  
- Next, each method checks whether an `h4` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsItalic%2A> property to check whether the requesting device can display italic formatting. If the device supports italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of an `i` element. If the device does not support italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `font` element with a `color` attribute set to the hexadecimal value for navy blue.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
-  
- [!code-csharp[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#2)]
- [!code-vb[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#2)]  
-  
+The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method. The code checks whether a `th` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsBold%2A> method to check whether the requesting device can display bold formatting. If the device supports bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `b` element. If the device does not support bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `font` element with a `color` attribute set to the hexadecimal value for red.  
+ 
+Next, each method checks whether an `h4` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsItalic%2A> property to check whether the requesting device can display italic formatting. If the device supports italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of an `i` element. If the device does not support italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `font` element with a `color` attribute set to the hexadecimal value for navy blue.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
+ 
+[!code-csharp[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#2)]
+[!code-vb[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,15 +327,15 @@
         <returns>The HTML font and spacing information to render before the tag; otherwise, if there is no such information to render, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderBeforeTag%2A> method. The code checks whether an `a` element is being rendered. If so, the overridden <xref:System.Web.UI.Html32TextWriter.RenderBeforeTag%2A> method writes the opening tag of a `small` element. The sample for the <xref:System.Web.UI.Html32TextWriter.RenderAfterTag%2A> performs the same check for the `a` element, and then writes the closing tag of the `small` element.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
-  
- [!code-csharp[System.Web.UI.Html32TextWriter_Samples1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#3)]
- [!code-vb[System.Web.UI.Html32TextWriter_Samples1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#3)]  
-  
+The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderBeforeTag%2A> method. The code checks whether an `a` element is being rendered. If so, the overridden <xref:System.Web.UI.Html32TextWriter.RenderBeforeTag%2A> method writes the opening tag of a `small` element. The sample for the <xref:System.Web.UI.Html32TextWriter.RenderAfterTag%2A> performs the same check for the `a` element, and then writes the closing tag of the `small` element.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
+ 
+[!code-csharp[System.Web.UI.Html32TextWriter_Samples1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#3)]
+[!code-vb[System.Web.UI.Html32TextWriter_Samples1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,10 +360,10 @@
         <summary>Writes the opening tag of the specified element to the HTML 3.2 output stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a `div` element is specified and the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property value is `true`, the <xref:System.Web.UI.Html32TextWriter.RenderBeginTag%2A> method performs basic `table` element formatting to present the content that is contained in the `div` element.  
-  
+If a `div` element is specified and the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property value is `true`, the <xref:System.Web.UI.Html32TextWriter.RenderBeginTag%2A> method performs basic `table` element formatting to present the content that is contained in the `div` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,15 +423,15 @@
           <see langword="true" /> if the requesting device supports bold text; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> and <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> methods. Each override checks whether a `Label` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsBold%2A> method to check whether the requesting device can display bold formatting. If the device supports bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `b` element and the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes its closing tag. If the device does not support bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `Font` element with a `color` attribute set to the hexadecimal value for red, and the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
-  
- [!code-csharp[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#2)]
- [!code-vb[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#2)]  
-  
+The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> and <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> methods. Each override checks whether a `Label` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsBold%2A> method to check whether the requesting device can display bold formatting. If the device supports bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `b` element and the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes its closing tag. If the device does not support bold formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `Font` element with a `color` attribute set to the hexadecimal value for red, and the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
+ 
+[!code-csharp[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#2)]
+[!code-vb[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -454,15 +454,15 @@
           <see langword="true" /> if the requesting device supports italic text; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> and <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> methods. Each override checks whether a `span` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsItalic%2A> property to check whether the requesting device can display italic formatting. If the device supports italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of an `i` element and the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes its closing tag. If the device does not support italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `Font` element with a `color` attribute set to the hexadecimal value for navy blue, and the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
-  
- [!code-csharp[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#2)]
- [!code-vb[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#2)]  
-  
+The following code example demonstrates how to override the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> and <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> methods. Each override checks whether a `span` element is being rendered, and then uses the <xref:System.Web.UI.Html32TextWriter.SupportsItalic%2A> property to check whether the requesting device can display italic formatting. If the device supports italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of an `i` element and the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes its closing tag. If the device does not support italic formatting, the <xref:System.Web.UI.Html32TextWriter.RenderBeforeContent%2A> method writes the opening tag of a `Font` element with a `color` attribute set to the hexadecimal value for navy blue, and the <xref:System.Web.UI.Html32TextWriter.RenderAfterContent%2A> method writes the closing tag.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.Html32TextWriter> class.  
+ 
+[!code-csharp[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/cs/html32textwritersamps.cs#2)]
+[!code-vb[System.Web.UI.Html32TextWriter_Samples1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Html32TextWriter_Samples1/VB/html32textwritersamps.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

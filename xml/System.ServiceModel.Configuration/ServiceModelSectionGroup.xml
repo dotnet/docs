@@ -14,10 +14,10 @@
     <summary>Represents the main configuration section for [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All [!INCLUDE[indigo2](~/includes/indigo2-md.md)] configuration elements are nested in the `system.serviceModel` element of the configuration file. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not add elements to the configuration sections of other products.  
-  
+All [!INCLUDE[indigo2](~/includes/indigo2-md.md)] configuration elements are nested in the `system.serviceModel` element of the configuration file. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not add elements to the configuration sections of other products.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>The configuration section that contains child entries that are behavior elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `behavior` section defines behavior elements. Each entry is identified by its unique `name`, which is used by services when linking to behaviors.  
-  
+The `behavior` section defines behavior elements. Each entry is identified by its unique `name`, which is used by services when linking to behaviors.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <value>The configuration section that contains all the bindings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This section holds a collection of standard and custom bindings. Each entry is identified by its unique name, which is used by services when linking to bindings.  
-  
+This section holds a collection of standard and custom bindings. Each entry is identified by its unique name, which is used by services when linking to bindings.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <value>The configuration section that contains a list of behaviors that is applied to all [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services on the machine before the behaviors in the <see langword="behaviors" /> section are applied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This section is defined in the Machine.config file. It contains a list of behaviors that is applied to all [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services on the machine before the behaviors in the behaviors collection are applied. If a behavior is defined in both sections, the behavior in the behaviors sections is given preference.  
-  
+This section is defined in the Machine.config file. It contains a list of behaviors that is applied to all [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services on the machine before the behaviors in the behaviors collection are applied. If a behavior is defined in both sections, the behavior in the behaviors sections is given preference.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <value>The configuration section for the diagnostics features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)].</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `diagnostics` section contains settings for the diagnostics features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)]. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.  
-  
+The `diagnostics` section contains settings for the diagnostics features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)]. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,10 +268,10 @@
         <value>The configuration section that defines a collection of services.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For each service defined in the assembly, this section contains a service element with the settings for the service.  
-  
+For each service defined in the assembly, this section contains a service element with the settings for the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>

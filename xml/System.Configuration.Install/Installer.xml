@@ -19,41 +19,41 @@
     <summary>Provides the foundation for custom installations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the base class for all custom installers in the .NET Framework. Installers are components that help install applications on a computer.  
-  
- There are several steps you must follow to use an <xref:System.Configuration.Install.Installer>:  
-  
+This is the base class for all custom installers in the .NET Framework. Installers are components that help install applications on a computer.  
+ 
+There are several steps you must follow to use an <xref:System.Configuration.Install.Installer>:  
+ 
 -   Inherit the <xref:System.Configuration.Install.Installer> class.  
-  
+ 
 -   Override the <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
-  
+ 
 -   Add the <xref:System.ComponentModel.RunInstallerAttribute> to your derived class and set it to `true`.  
-  
+ 
 -   Put your derived class in the assembly with your application to install.  
-  
+ 
 -   Invoke the installers. For example, use the InstallUtil.exe to invoke the installers.  
+ 
+The <xref:System.Configuration.Install.Installer.Installers%2A> property contains a collection of installers. If this instance of <xref:System.Configuration.Install.Installer> is part of an installer collection, the <xref:System.Configuration.Install.Installer.Parent%2A> property is set to the <xref:System.Configuration.Install.Installer> instance that contains the collection. For an example of the use of the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see the <xref:System.Configuration.Install.AssemblyInstaller> class.  
+ 
+The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the <xref:System.Configuration.Install.Installer> class go through the collection of installers stored in the <xref:System.Configuration.Install.Installer.Installers%2A> property, and invokes the corresponding method of each installer.  
+ 
+The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods are not always called on the same <xref:System.Configuration.Install.Installer> instance. For example, one <xref:System.Configuration.Install.Installer> instance might be used while installing and committing an application, and then the reference to that instance is released. Later, uninstalling the application creates a reference to a new <xref:System.Configuration.Install.Installer> instance, meaning that the <xref:System.Configuration.Install.Installer.Uninstall%2A> method is called by a different instance of <xref:System.Configuration.Install.Installer>. For this reason, in your derived class, do not save the state of a computer in an installer. Instead, use an <xref:System.Collections.IDictionary> that is preserved across calls and passed into your <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
+ 
+Two situations illustrate the need to save information in the state-saver <xref:System.Collections.IDictionary>. First, suppose that your installer sets a registry key. It should save the key's original value in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the original value can be restored. Second, suppose the installer replaces an existing file. Save the existing file in a temporary directory and the location of the new location of the file in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the newer file is deleted and replaced by the original from the temporary location.  
+ 
+The <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> property contains information about the installation. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
+ 
   
- The <xref:System.Configuration.Install.Installer.Installers%2A> property contains a collection of installers. If this instance of <xref:System.Configuration.Install.Installer> is part of an installer collection, the <xref:System.Configuration.Install.Installer.Parent%2A> property is set to the <xref:System.Configuration.Install.Installer> instance that contains the collection. For an example of the use of the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see the <xref:System.Configuration.Install.AssemblyInstaller> class.  
-  
- The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the <xref:System.Configuration.Install.Installer> class go through the collection of installers stored in the <xref:System.Configuration.Install.Installer.Installers%2A> property, and invokes the corresponding method of each installer.  
-  
- The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods are not always called on the same <xref:System.Configuration.Install.Installer> instance. For example, one <xref:System.Configuration.Install.Installer> instance might be used while installing and committing an application, and then the reference to that instance is released. Later, uninstalling the application creates a reference to a new <xref:System.Configuration.Install.Installer> instance, meaning that the <xref:System.Configuration.Install.Installer.Uninstall%2A> method is called by a different instance of <xref:System.Configuration.Install.Installer>. For this reason, in your derived class, do not save the state of a computer in an installer. Instead, use an <xref:System.Collections.IDictionary> that is preserved across calls and passed into your <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
-  
- Two situations illustrate the need to save information in the state-saver <xref:System.Collections.IDictionary>. First, suppose that your installer sets a registry key. It should save the key's original value in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the original value can be restored. Second, suppose the installer replaces an existing file. Save the existing file in a temporary directory and the location of the new location of the file in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the newer file is deleted and replaced by the original from the temporary location.  
-  
- The <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> property contains information about the installation. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Configuration.Install.Installer> class. It creates a class which inherits from <xref:System.Configuration.Install.Installer>. When <xref:System.Configuration.Install.Installer.Commit%2A> is about to complete, <xref:System.Configuration.Install.Installer.Committing> event occurs and a message is displayed. To use the <xref:System.Configuration.Install.Installer> class, you must reference the **System.Configuration.Install** assembly in your project.  
-  
- [!code-cpp[Installer#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer/CPP/installer.cpp#1)]
- [!code-csharp[Installer#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer/CS/installer.cs#1)]
- [!code-vb[Installer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer/VB/installer.vb#1)]  
-  
+The following example demonstrates the use of the <xref:System.Configuration.Install.Installer> class. It creates a class which inherits from <xref:System.Configuration.Install.Installer>. When <xref:System.Configuration.Install.Installer.Commit%2A> is about to complete, <xref:System.Configuration.Install.Installer.Committing> event occurs and a message is displayed. To use the <xref:System.Configuration.Install.Installer> class, you must reference the **System.Configuration.Install** assembly in your project.  
+ 
+[!code-cpp[Installer#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer/CPP/installer.cpp#1)]
+[!code-csharp[Installer#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer/CS/installer.cs#1)]
+[!code-vb[Installer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer/VB/installer.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,14 +89,14 @@
         <summary>Occurs after the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> methods of all the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property have run.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.AfterInstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method.  
-  
- [!code-cpp[Installer_AfterInstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_AfterInstall/CPP/installer_afterinstall.cpp#1)]
- [!code-csharp[Installer_AfterInstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_AfterInstall/CS/installer_afterinstall.cs#1)]
- [!code-vb[Installer_AfterInstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_AfterInstall/VB/installer_afterinstall.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.AfterInstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method.  
+ 
+[!code-cpp[Installer_AfterInstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_AfterInstall/CPP/installer_afterinstall.cpp#1)]
+[!code-csharp[Installer_AfterInstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_AfterInstall/CS/installer_afterinstall.cs#1)]
+[!code-vb[Installer_AfterInstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_AfterInstall/VB/installer_afterinstall.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,14 +117,14 @@
         <summary>Occurs after the installations of all the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property are rolled back.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.AfterRollback> event. It overrides the <xref:System.Configuration.Install.Installer.Install%2A> method and explicitly throws an <xref:System.ArgumentException> so that the <xref:System.Configuration.Install.Installer.Rollback%2A> method is called. When the <xref:System.Configuration.Install.Installer.Rollback%2A> is completed, the <xref:System.Configuration.Install.Installer.AfterRollback> event occurs and a message is displayed.  
-  
- [!code-cpp[Installer_AfterRollback#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_AfterRollback/CPP/installer_afterrollback.cpp#1)]
- [!code-csharp[Installer_AfterRollback#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_AfterRollback/CS/installer_afterrollback.cs#1)]
- [!code-vb[Installer_AfterRollback#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_AfterRollback/VB/installer_afterrollback.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.AfterRollback> event. It overrides the <xref:System.Configuration.Install.Installer.Install%2A> method and explicitly throws an <xref:System.ArgumentException> so that the <xref:System.Configuration.Install.Installer.Rollback%2A> method is called. When the <xref:System.Configuration.Install.Installer.Rollback%2A> is completed, the <xref:System.Configuration.Install.Installer.AfterRollback> event occurs and a message is displayed.  
+ 
+[!code-cpp[Installer_AfterRollback#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_AfterRollback/CPP/installer_afterrollback.cpp#1)]
+[!code-csharp[Installer_AfterRollback#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_AfterRollback/CS/installer_afterrollback.cs#1)]
+[!code-vb[Installer_AfterRollback#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_AfterRollback/VB/installer_afterrollback.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,14 +145,14 @@
         <summary>Occurs after all the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property perform their uninstallation operations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.AfterUninstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnAfterUninstall%2A> method.  
-  
- [!code-cpp[Installer_AfterUninstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_AfterUninstall/CPP/installer_afteruninstall.cpp#1)]
- [!code-csharp[Installer_AfterUninstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_AfterUninstall/CS/installer_afteruninstall.cs#1)]
- [!code-vb[Installer_AfterUninstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_AfterUninstall/VB/installer_afteruninstall.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.AfterUninstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnAfterUninstall%2A> method.  
+ 
+[!code-cpp[Installer_AfterUninstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_AfterUninstall/CPP/installer_afteruninstall.cpp#1)]
+[!code-csharp[Installer_AfterUninstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_AfterUninstall/CS/installer_afteruninstall.cs#1)]
+[!code-vb[Installer_AfterUninstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_AfterUninstall/VB/installer_afteruninstall.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,14 +173,14 @@
         <summary>Occurs before the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method of each installer in the installer collection has run.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.BeforeInstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method.  
-  
- [!code-cpp[Installer_BeforeInstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_BeforeInstall/CPP/installer_beforeinstall.cpp#1)]
- [!code-csharp[Installer_BeforeInstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_BeforeInstall/CS/installer_beforeinstall.cs#1)]
- [!code-vb[Installer_BeforeInstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_BeforeInstall/VB/installer_beforeinstall.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.BeforeInstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method.  
+ 
+[!code-cpp[Installer_BeforeInstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_BeforeInstall/CPP/installer_beforeinstall.cpp#1)]
+[!code-csharp[Installer_BeforeInstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_BeforeInstall/CS/installer_beforeinstall.cs#1)]
+[!code-vb[Installer_BeforeInstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_BeforeInstall/VB/installer_beforeinstall.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,14 +201,14 @@
         <summary>Occurs before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property are rolled back.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.BeforeRollback> event. It overrides the <xref:System.Configuration.Install.Installer.Install%2A> method and explicitly throws an <xref:System.ArgumentException> so that the <xref:System.Configuration.Install.Installer.Rollback%2A> method is called. When the <xref:System.Configuration.Install.Installer.Rollback%2A> is complete, the <xref:System.Configuration.Install.Installer.BeforeRollback> event occurs and a message is displayed.  
-  
- [!code-cpp[Installer_BeforeRollback#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_BeforeRollback/CPP/installer_beforerollback.cpp#1)]
- [!code-csharp[Installer_BeforeRollback#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_BeforeRollback/CS/installer_beforerollback.cs#1)]
- [!code-vb[Installer_BeforeRollback#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_BeforeRollback/VB/installer_beforerollback.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.BeforeRollback> event. It overrides the <xref:System.Configuration.Install.Installer.Install%2A> method and explicitly throws an <xref:System.ArgumentException> so that the <xref:System.Configuration.Install.Installer.Rollback%2A> method is called. When the <xref:System.Configuration.Install.Installer.Rollback%2A> is complete, the <xref:System.Configuration.Install.Installer.BeforeRollback> event occurs and a message is displayed.  
+ 
+[!code-cpp[Installer_BeforeRollback#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_BeforeRollback/CPP/installer_beforerollback.cpp#1)]
+[!code-csharp[Installer_BeforeRollback#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_BeforeRollback/CS/installer_beforerollback.cs#1)]
+[!code-vb[Installer_BeforeRollback#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_BeforeRollback/VB/installer_beforerollback.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,14 +229,14 @@
         <summary>Occurs before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property perform their uninstall operations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.BeforeUninstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnBeforeUninstall%2A> method.  
-  
- [!code-cpp[Installer_BeforeUninstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_BeforeUninstall/CPP/installer_beforeuninstall.cpp#1)]
- [!code-csharp[Installer_BeforeUninstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_BeforeUninstall/CS/installer_beforeuninstall.cs#1)]
- [!code-vb[Installer_BeforeUninstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_BeforeUninstall/VB/installer_beforeuninstall.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.BeforeUninstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnBeforeUninstall%2A> method.  
+ 
+[!code-cpp[Installer_BeforeUninstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_BeforeUninstall/CPP/installer_beforeuninstall.cpp#1)]
+[!code-csharp[Installer_BeforeUninstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_BeforeUninstall/CS/installer_beforeuninstall.cs#1)]
+[!code-vb[Installer_BeforeUninstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_BeforeUninstall/VB/installer_beforeuninstall.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,14 +261,14 @@
         <summary>When overridden in a derived class, completes the install transaction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.Commit%2A> method of the <xref:System.Configuration.Install.Installer> class. A class is derived from the <xref:System.Configuration.Install.Installer> base class and the <xref:System.Configuration.Install.Installer.Commit%2A> method are overridden.  
-  
- [!code-cpp[Installer_Install#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Install/CPP/installer_install.cpp#2)]
- [!code-csharp[Installer_Install#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Install/CS/installer_install.cs#2)]
- [!code-vb[Installer_Install#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Install/VB/installer_install.vb#2)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.Commit%2A> method of the <xref:System.Configuration.Install.Installer> class. A class is derived from the <xref:System.Configuration.Install.Installer> base class and the <xref:System.Configuration.Install.Installer.Commit%2A> method are overridden.  
+ 
+[!code-cpp[Installer_Install#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Install/CPP/installer_install.cpp#2)]
+[!code-csharp[Installer_Install#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Install/CS/installer_install.cs#2)]
+[!code-vb[Installer_Install#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Install/VB/installer_install.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="savedState" /> parameter is <see langword="null" />.  
@@ -298,14 +298,14 @@
         <summary>Occurs after all the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property have committed their installations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.Committed> event. It is raised by the <xref:System.Configuration.Install.Installer.OnCommitted%2A> method.  
-  
- [!code-cpp[Installer_Committed1#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committed1/CPP/installer_committed.cpp#1)]
- [!code-csharp[Installer_Committed1#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committed1/CS/installer_committed.cs#1)]
- [!code-vb[Installer_Committed1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committed1/VB/installer_committed.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.Committed> event. It is raised by the <xref:System.Configuration.Install.Installer.OnCommitted%2A> method.  
+ 
+[!code-cpp[Installer_Committed1#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committed1/CPP/installer_committed.cpp#1)]
+[!code-csharp[Installer_Committed1#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committed1/CS/installer_committed.cs#1)]
+[!code-vb[Installer_Committed1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committed1/VB/installer_committed.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,14 +326,14 @@
         <summary>Occurs before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property committ their installations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.Committing> event. It is raised by the <xref:System.Configuration.Install.Installer.OnCommitting%2A> method.  
-  
- [!code-cpp[Installer_Committing#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committing/CPP/installer_committing.cpp#1)]
- [!code-csharp[Installer_Committing#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committing/CS/installer_committing.cs#1)]
- [!code-vb[Installer_Committing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committing/VB/installer_committing.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.Committing> event. It is raised by the <xref:System.Configuration.Install.Installer.OnCommitting%2A> method.  
+ 
+[!code-cpp[Installer_Committing#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committing/CPP/installer_committing.cpp#1)]
+[!code-csharp[Installer_Committing#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committing/CS/installer_committing.cs#1)]
+[!code-vb[Installer_Committing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committing/VB/installer_committing.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,23 +363,23 @@
         <value>An <see cref="T:System.Configuration.Install.InstallContext" /> that contains information about the current installation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Install.Installer.Context%2A> property contains installation information. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
+The <xref:System.Configuration.Install.Installer.Context%2A> property contains installation information. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
+ 
+The program that calls the <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A> methods sets the <xref:System.Configuration.Install.Installer.Context%2A> property with information that the methods need.  
+ 
+If an installer belongs to an installer collection, the parent installer sets the <xref:System.Configuration.Install.Installer.Context%2A> property before calling any of these methods. The parent installer can be accessed through the <xref:System.Configuration.Install.Installer.Parent%2A> property.  
+ 
   
- The program that calls the <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A> methods sets the <xref:System.Configuration.Install.Installer.Context%2A> property with information that the methods need.  
-  
- If an installer belongs to an installer collection, the parent installer sets the <xref:System.Configuration.Install.Installer.Context%2A> property before calling any of these methods. The parent installer can be accessed through the <xref:System.Configuration.Install.Installer.Parent%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.Context%2A> property of the <xref:System.Configuration.Install.Installer> class. The contents of the <xref:System.Configuration.Install.Installer.Context%2A> property contain information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run. These contents are then displayed on the console.  
-  
- [!code-cpp[Installer_Context#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Context/CPP/installer_context.cpp#1)]
- [!code-csharp[Installer_Context#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Context/CS/installer_context.cs#1)]
- [!code-vb[Installer_Context#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Context/VB/installer_context.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.Context%2A> property of the <xref:System.Configuration.Install.Installer> class. The contents of the <xref:System.Configuration.Install.Installer.Context%2A> property contain information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run. These contents are then displayed on the console.  
+ 
+[!code-cpp[Installer_Context#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Context/CPP/installer_context.cpp#1)]
+[!code-csharp[Installer_Context#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Context/CS/installer_context.cs#1)]
+[!code-vb[Installer_Context#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Context/VB/installer_context.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,14 +401,14 @@
         <value>The help text for all the installers in the installer collection, including the description of what the installer does and the command line options for the installation executable, such as the InstallUtil.exe utility, that can be passed to and understood by this installer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.HelpText%2A> property. This property is defined in the <xref:System.Configuration.Install.Installer> class, which, when called, returns the description of the <xref:System.Configuration.Install.Installer> and the command line options for the installation executable, such as the Installutil.exe utility, that can be passed to and understood by the <xref:System.Configuration.Install.Installer>.  
-  
- [!code-cpp[Installer_HelpText#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_HelpText/CPP/installer_helptext.cpp#1)]
- [!code-csharp[Installer_HelpText#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_HelpText/CS/installer_helptext.cs#1)]
- [!code-vb[Installer_HelpText#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_HelpText/VB/installer_helptext.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.HelpText%2A> property. This property is defined in the <xref:System.Configuration.Install.Installer> class, which, when called, returns the description of the <xref:System.Configuration.Install.Installer> and the command line options for the installation executable, such as the Installutil.exe utility, that can be passed to and understood by the <xref:System.Configuration.Install.Installer>.  
+ 
+[!code-cpp[Installer_HelpText#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_HelpText/CPP/installer_helptext.cpp#1)]
+[!code-csharp[Installer_HelpText#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_HelpText/CS/installer_helptext.cs#1)]
+[!code-vb[Installer_HelpText#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_HelpText/VB/installer_helptext.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">One of the installers in the installer collection specifies a null reference instead of help text. A likely cause for this exception is that a field to contain the help text is defined but not initialized.</exception>
@@ -434,14 +434,14 @@
         <summary>When overridden in a derived class, performs the installation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.Install%2A> method of the <xref:System.Configuration.Install.Installer> class. A class is derived from the <xref:System.Configuration.Install.Installer> base class and the <xref:System.Configuration.Install.Installer.Install%2A> method is overridden.  
-  
- [!code-cpp[Installer_Install#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Install/CPP/installer_install.cpp#1)]
- [!code-csharp[Installer_Install#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Install/CS/installer_install.cs#1)]
- [!code-vb[Installer_Install#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Install/VB/installer_install.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.Install%2A> method of the <xref:System.Configuration.Install.Installer> class. A class is derived from the <xref:System.Configuration.Install.Installer> base class and the <xref:System.Configuration.Install.Installer.Install%2A> method is overridden.  
+ 
+[!code-cpp[Installer_Install#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Install/CPP/installer_install.cpp#1)]
+[!code-csharp[Installer_Install#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Install/CS/installer_install.cs#1)]
+[!code-vb[Installer_Install#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Install/VB/installer_install.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="stateSaver" /> parameter is <see langword="null" />.</exception>
@@ -474,21 +474,21 @@
         <value>An <see cref="T:System.Configuration.Install.InstallerCollection" /> containing the collection of installers associated with this installer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Install.Installer.Installers%2A> property contains a collection of installers that install objects needed by this <xref:System.Configuration.Install.Installer> instance to correctly install the component. The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the <xref:System.Configuration.Install.Installer> class go through the collection of installers and invokes the corresponding method of each installer.  
+The <xref:System.Configuration.Install.Installer.Installers%2A> property contains a collection of installers that install objects needed by this <xref:System.Configuration.Install.Installer> instance to correctly install the component. The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the <xref:System.Configuration.Install.Installer> class go through the collection of installers and invokes the corresponding method of each installer.  
+ 
+If this instance of <xref:System.Configuration.Install.Installer> is contained in an installer collection, the <xref:System.Configuration.Install.Installer.Parent%2A> property is the <xref:System.Configuration.Install.Installer> instance that contains the collection. For an example of the use of the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see the <xref:System.Configuration.Install.AssemblyInstaller> class.  
+ 
   
- If this instance of <xref:System.Configuration.Install.Installer> is contained in an installer collection, the <xref:System.Configuration.Install.Installer.Parent%2A> property is the <xref:System.Configuration.Install.Installer> instance that contains the collection. For an example of the use of the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see the <xref:System.Configuration.Install.AssemblyInstaller> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.Installers%2A> and <xref:System.Configuration.Install.Installer.Parent%2A> properties. The <xref:System.Configuration.Install.Installer.Installers%2A> property shows the <xref:System.Configuration.Install.InstallerCollection> associated with an <xref:System.Configuration.Install.Installer>.  
-  
- [!code-cpp[Installer_Installers#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Installers/CPP/installer_installers.cpp#1)]
- [!code-csharp[Installer_Installers#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Installers/CS/installer_installers.cs#1)]
- [!code-vb[Installer_Installers#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Installers/VB/installer_installers.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.Installers%2A> and <xref:System.Configuration.Install.Installer.Parent%2A> properties. The <xref:System.Configuration.Install.Installer.Installers%2A> property shows the <xref:System.Configuration.Install.InstallerCollection> associated with an <xref:System.Configuration.Install.Installer>.  
+ 
+[!code-cpp[Installer_Installers#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Installers/CPP/installer_installers.cpp#1)]
+[!code-csharp[Installer_Installers#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Installers/CS/installer_installers.cs#1)]
+[!code-vb[Installer_Installers#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Installers/VB/installer_installers.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -513,23 +513,23 @@
         <summary>Raises the <see cref="E:System.Configuration.Install.Installer.AfterInstall" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called after the <xref:System.Configuration.Install.Installer.Install%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> run.  
+This method is called after the <xref:System.Configuration.Install.Installer.Install%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> run.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method. This method is overridden in the derived class. Space is provided to add steps to be done after the installation in the <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method.  
-  
- [!code-cpp[Installer_OnInstall#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_OnInstall/CPP/installer_oninstall.cpp#2)]
- [!code-csharp[Installer_OnInstall#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_OnInstall/CS/installer_oninstall.cs#2)]
- [!code-vb[Installer_OnInstall#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_OnInstall/VB/installer_oninstall.vb#2)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method. This method is overridden in the derived class. Space is provided to add steps to be done after the installation in the <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method.  
+ 
+[!code-cpp[Installer_OnInstall#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_OnInstall/CPP/installer_oninstall.cpp#2)]
+[!code-csharp[Installer_OnInstall#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_OnInstall/CS/installer_oninstall.cs#2)]
+[!code-vb[Installer_OnInstall#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_OnInstall/VB/installer_oninstall.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -557,14 +557,14 @@
         <summary>Raises the <see cref="E:System.Configuration.Install.Installer.AfterRollback" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called after the <xref:System.Configuration.Install.Installer.Rollback%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> have run.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Configuration.Install.Installer.OnAfterRollback%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+This method is called after the <xref:System.Configuration.Install.Installer.Rollback%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> have run.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Configuration.Install.Installer.OnAfterRollback%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -592,14 +592,14 @@
         <summary>Raises the <see cref="E:System.Configuration.Install.Installer.AfterUninstall" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called after the <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> have run.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Configuration.Install.Installer.OnAfterUninstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+This method is called after the <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> have run.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Configuration.Install.Installer.OnAfterUninstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -627,23 +627,23 @@
         <summary>Raises the <see cref="E:System.Configuration.Install.Installer.BeforeInstall" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called before the <xref:System.Configuration.Install.Installer.Install%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are called.  
+This method is called before the <xref:System.Configuration.Install.Installer.Install%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are called.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method. This method is overridden in the derived class. Space is provided to add steps to be done before the installation in the <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method.  
-  
- [!code-cpp[Installer_OnInstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_OnInstall/CPP/installer_oninstall.cpp#1)]
- [!code-csharp[Installer_OnInstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_OnInstall/CS/installer_oninstall.cs#1)]
- [!code-vb[Installer_OnInstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_OnInstall/VB/installer_oninstall.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method. This method is overridden in the derived class. Space is provided to add steps to be done before the installation in the <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method.  
+ 
+[!code-cpp[Installer_OnInstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_OnInstall/CPP/installer_oninstall.cpp#1)]
+[!code-csharp[Installer_OnInstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_OnInstall/CS/installer_oninstall.cs#1)]
+[!code-vb[Installer_OnInstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_OnInstall/VB/installer_oninstall.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -671,14 +671,14 @@
         <summary>Raises the <see cref="E:System.Configuration.Install.Installer.BeforeRollback" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called before the <xref:System.Configuration.Install.Installer.Rollback%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are called.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Configuration.Install.Installer.OnBeforeRollback%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+This method is called before the <xref:System.Configuration.Install.Installer.Rollback%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are called.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Configuration.Install.Installer.OnBeforeRollback%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -706,14 +706,14 @@
         <summary>Raises the <see cref="E:System.Configuration.Install.Installer.BeforeUninstall" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called before the <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are uninstalled.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Configuration.Install.Installer.OnBeforeUninstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+This method is called before the <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are uninstalled.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Configuration.Install.Installer.OnBeforeUninstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -741,23 +741,23 @@
         <summary>Raises the <see cref="E:System.Configuration.Install.Installer.Committed" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called after the <xref:System.Configuration.Install.Installer.Commit%2A> methods of all the installers contained in this instance's installer collection run.  
+This method is called after the <xref:System.Configuration.Install.Installer.Commit%2A> methods of all the installers contained in this instance's installer collection run.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Configuration.Install.Installer.OnCommitted%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Configuration.Install.Installer.OnCommitted%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.OnCommitted%2A> method of the <xref:System.Configuration.Install.Installer> class. The <xref:System.Configuration.Install.Installer.OnCommitted%2A> method is overridden in the derived class. Space is provided for the user to add the steps to be performed before committing and after committing.  
-  
- [!code-cpp[Installer_Committed#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committed/CPP/installer_committed.cpp#2)]
- [!code-csharp[Installer_Committed#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committed/CS/installer_committed.cs#2)]
- [!code-vb[Installer_Committed#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committed/VB/installer_committed.vb#2)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.OnCommitted%2A> method of the <xref:System.Configuration.Install.Installer> class. The <xref:System.Configuration.Install.Installer.OnCommitted%2A> method is overridden in the derived class. Space is provided for the user to add the steps to be performed before committing and after committing.  
+ 
+[!code-cpp[Installer_Committed#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committed/CPP/installer_committed.cpp#2)]
+[!code-csharp[Installer_Committed#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committed/CS/installer_committed.cs#2)]
+[!code-vb[Installer_Committed#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committed/VB/installer_committed.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -785,23 +785,23 @@
         <summary>Raises the <see cref="E:System.Configuration.Install.Installer.Committing" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called before the <xref:System.Configuration.Install.Installer.Commit%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> run.  
+This method is called before the <xref:System.Configuration.Install.Installer.Commit%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> run.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Configuration.Install.Installer.OnCommitting%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Configuration.Install.Installer.OnCommitting%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.OnCommitting%2A> method of the <xref:System.Configuration.Install.Installer> class. The <xref:System.Configuration.Install.Installer.OnCommitting%2A> method is overridden in the derived class. Space is provided for the user to add the steps to be performed before committing and after committing.  
-  
- [!code-cpp[Installer_Committed#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committed/CPP/installer_committed.cpp#1)]
- [!code-csharp[Installer_Committed#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committed/CS/installer_committed.cs#1)]
- [!code-vb[Installer_Committed#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committed/VB/installer_committed.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.OnCommitting%2A> method of the <xref:System.Configuration.Install.Installer> class. The <xref:System.Configuration.Install.Installer.OnCommitting%2A> method is overridden in the derived class. Space is provided for the user to add the steps to be performed before committing and after committing.  
+ 
+[!code-cpp[Installer_Committed#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committed/CPP/installer_committed.cpp#1)]
+[!code-csharp[Installer_Committed#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committed/CS/installer_committed.cs#1)]
+[!code-vb[Installer_Committed#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committed/VB/installer_committed.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -826,21 +826,21 @@
         <value>An <see cref="T:System.Configuration.Install.Installer" /> containing the collection that this instance belongs to, or <see langword="null" /> if this instance does not belong to a collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this instance of <xref:System.Configuration.Install.Installer> is part of an installer collection, the <xref:System.Configuration.Install.Installer.Parent%2A> property is set to the <xref:System.Configuration.Install.Installer> instance that contains the collection. For an example of the use of the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see the <xref:System.Configuration.Install.AssemblyInstaller> class.  
+If this instance of <xref:System.Configuration.Install.Installer> is part of an installer collection, the <xref:System.Configuration.Install.Installer.Parent%2A> property is set to the <xref:System.Configuration.Install.Installer> instance that contains the collection. For an example of the use of the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see the <xref:System.Configuration.Install.AssemblyInstaller> class.  
+ 
+The <xref:System.Configuration.Install.Installer.Installers%2A> property contains a collection of installers. The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the <xref:System.Configuration.Install.Installer> class go through the collection of installers and invokes the corresponding method of each installer.  
+ 
   
- The <xref:System.Configuration.Install.Installer.Installers%2A> property contains a collection of installers. The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the <xref:System.Configuration.Install.Installer> class go through the collection of installers and invokes the corresponding method of each installer.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.Parent%2A> property. The <xref:System.Configuration.Install.Installer.Parent%2A> property gets the <xref:System.Configuration.Install.Installer> containing the collection that this <xref:System.Configuration.Install.Installer> belongs to.  
-  
- [!code-cpp[Installer_Installers#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Installers/CPP/installer_installers.cpp#2)]
- [!code-csharp[Installer_Installers#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Installers/CS/installer_installers.cs#2)]
- [!code-vb[Installer_Installers#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Installers/VB/installer_installers.vb#2)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.Parent%2A> property. The <xref:System.Configuration.Install.Installer.Parent%2A> property gets the <xref:System.Configuration.Install.Installer> containing the collection that this <xref:System.Configuration.Install.Installer> belongs to.  
+ 
+[!code-cpp[Installer_Installers#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Installers/CPP/installer_installers.cpp#2)]
+[!code-csharp[Installer_Installers#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Installers/CS/installer_installers.cs#2)]
+[!code-vb[Installer_Installers#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Installers/VB/installer_installers.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -865,14 +865,14 @@
         <summary>When overridden in a derived class, restores the pre-installation state of the computer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.Rollback%2A> method of <xref:System.Configuration.Install.Installer>. The <xref:System.Configuration.Install.Installer.Rollback%2A> method is overridden in the derived class of <xref:System.Configuration.Install.Installer>. An exception is generated to force an installation rollback.  
-  
- [!code-cpp[Installer_Rollback#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Rollback/CPP/installer_rollback.cpp#1)]
- [!code-csharp[Installer_Rollback#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Rollback/CS/installer_rollback.cs#1)]
- [!code-vb[Installer_Rollback#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Rollback/VB/installer_rollback.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.Rollback%2A> method of <xref:System.Configuration.Install.Installer>. The <xref:System.Configuration.Install.Installer.Rollback%2A> method is overridden in the derived class of <xref:System.Configuration.Install.Installer>. An exception is generated to force an installation rollback.  
+ 
+[!code-cpp[Installer_Rollback#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Rollback/CPP/installer_rollback.cpp#1)]
+[!code-csharp[Installer_Rollback#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Rollback/CS/installer_rollback.cs#1)]
+[!code-vb[Installer_Rollback#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Rollback/VB/installer_rollback.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="savedState" /> parameter is <see langword="null" />.  
@@ -906,14 +906,14 @@
         <summary>When overridden in a derived class, removes an installation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.Installer.Uninstall%2A> method of <xref:System.Configuration.Install.Installer>. The <xref:System.Configuration.Install.Installer.Uninstall%2A> method is overridden in the derived class of <xref:System.Configuration.Install.Installer>.  
-  
- [!code-cpp[Installer_Uninstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Uninstall/CPP/installer_uninstall.cpp#1)]
- [!code-csharp[Installer_Uninstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Uninstall/CS/installer_uninstall.cs#1)]
- [!code-vb[Installer_Uninstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Uninstall/VB/installer_uninstall.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.Installer.Uninstall%2A> method of <xref:System.Configuration.Install.Installer>. The <xref:System.Configuration.Install.Installer.Uninstall%2A> method is overridden in the derived class of <xref:System.Configuration.Install.Installer>.  
+ 
+[!code-cpp[Installer_Uninstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Uninstall/CPP/installer_uninstall.cpp#1)]
+[!code-csharp[Installer_Uninstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Uninstall/CS/installer_uninstall.cs#1)]
+[!code-vb[Installer_Uninstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Uninstall/VB/installer_uninstall.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The saved-state <see cref="T:System.Collections.IDictionary" /> might have been corrupted.</exception>

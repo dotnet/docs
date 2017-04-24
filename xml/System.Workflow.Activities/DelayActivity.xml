@@ -41,28 +41,28 @@
     <summary>Provides the logic to establish a timer and to wait, asynchronously, for timer's expiration.  This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+When notified that its timer has expired, a <xref:System.Workflow.Activities.DelayActivity> completes its execution.  
+ 
+You can set a time out on the <xref:System.Workflow.Activities.DelayActivity> so that your workflow pauses before resuming execution. You specify the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> using <xref:System.TimeSpan>. This causes your workflow to pause until the specified <xref:System.TimeSpan> has elapsed.  
+ 
+The <xref:System.Workflow.Activities.DelayActivity> class runs the code method associated with the <xref:System.Workflow.Activities.DelayActivity.InitializeTimeoutDuration> event before the activity starts and the code-beside method can be used to initialize the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> property.  
+ 
+The <xref:System.Workflow.Activities.DelayActivity> is guaranteed to complete no sooner than the indicated <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A>. The delay can take longer because the timer notification might occur some time after the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> is reached. One reason for a longer delay is if the workflow is running under high system stress in a server environment.  
+ 
   
- When notified that its timer has expired, a <xref:System.Workflow.Activities.DelayActivity> completes its execution.  
-  
- You can set a time out on the <xref:System.Workflow.Activities.DelayActivity> so that your workflow pauses before resuming execution. You specify the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> using <xref:System.TimeSpan>. This causes your workflow to pause until the specified <xref:System.TimeSpan> has elapsed.  
-  
- The <xref:System.Workflow.Activities.DelayActivity> class runs the code method associated with the <xref:System.Workflow.Activities.DelayActivity.InitializeTimeoutDuration> event before the activity starts and the code-beside method can be used to initialize the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> property.  
-  
- The <xref:System.Workflow.Activities.DelayActivity> is guaranteed to complete no sooner than the indicated <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A>. The delay can take longer because the timer notification might occur some time after the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> is reached. One reason for a longer delay is if the workflow is running under high system stress in a server environment.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.DelayActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see Simple State Machine.  
-  
- [!code-csharp[wf_samples#188](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#188)]
- [!code-vb[wf_samples#188](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#188)]  
-  
+The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.DelayActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see Simple State Machine.  
+ 
+[!code-csharp[wf_samples#188](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#188)]
+[!code-vb[wf_samples#188](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#188)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,13 +81,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.DelayActivity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a new instance of the <xref:System.Workflow.Activities.DelayActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
-  
- [!code-csharp[wf_samples#188](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#188)]
- [!code-vb[wf_samples#188](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#188)]  
-  
+The following code example demonstrates how to initialize a new instance of the <xref:System.Workflow.Activities.DelayActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+ 
+[!code-csharp[wf_samples#188](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#188)]
+[!code-vb[wf_samples#188](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#188)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,10 +220,10 @@
         <summary>Occurs before the time-out duration starts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event should not be used to set the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> for a <xref:System.Workflow.Activities.DelayActivity>. The time-out duration should be set in the workflow's `InitializeComponent` method instead.  
-  
+This event should not be used to set the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> for a <xref:System.Workflow.Activities.DelayActivity>. The time-out duration should be set in the workflow's `InitializeComponent` method instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.DelayActivity.InitializeTimeoutDuration" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,10 +290,10 @@
         <value>The name of the workflow queue.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of the workflow queue is set by the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method.  
-  
+The name of the workflow queue is set by the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,18 +396,18 @@
         <value>A <see cref="T:System.TimeSpan" /> that indicates the length of the delay in the workflow.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time period set in this property determines the time the workflow will sit idle before the workflow proceeds to the next activity.  
+The time period set in this property determines the time the workflow will sit idle before the workflow proceeds to the next activity.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the value of the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> property to 3 seconds. This code assumes that `delay2` is of type <xref:System.Workflow.Activities.DelayActivity>. This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
-  
- [!code-csharp[wf_samples#190](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#190)]
- [!code-vb[wf_samples#190](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#190)]  
-  
+The following code example demonstrates how to set the value of the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> property to 3 seconds. This code assumes that `delay2` is of type <xref:System.Workflow.Activities.DelayActivity>. This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+ 
+[!code-csharp[wf_samples#190](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#190)]
+[!code-vb[wf_samples#190](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#190)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -428,18 +428,18 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.DelayActivity.TimeoutDuration" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Workflow.Activities.DelayActivity.TimeoutDurationProperty> field.  
-  
- [!code-csharp[WF_Samples#190](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#190)]
- [!code-vb[WF_Samples#190](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#190)]  
-  
+The following code example demonstrates how to use the <xref:System.Workflow.Activities.DelayActivity.TimeoutDurationProperty> field.  
+ 
+[!code-csharp[WF_Samples#190](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#190)]
+[!code-vb[WF_Samples#190](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#190)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

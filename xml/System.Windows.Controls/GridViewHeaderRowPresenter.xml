@@ -19,14 +19,14 @@
     <summary>Represents an object that is used to define the layout of a row of column headers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Windows.Controls.GridViewRowPresenter> object and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> objects are support objects for the <xref:System.Windows.Controls.GridView> <xref:System.Windows.Controls.ListView.View%2A> mode that displays data in columns for a <xref:System.Windows.Controls.ListView>. For more information about how to define a <xref:System.Windows.Controls.GridView> view, see the [GridView Overview](~/docs/framework/wpf/controls/gridview-overview.md).  
-  
- You can determine when a column is moving to a new location by monitoring the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event that is defined for the <xref:System.Windows.Controls.GridViewColumnCollection>.  
-  
- You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
-  
+This <xref:System.Windows.Controls.GridViewRowPresenter> object and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> objects are support objects for the <xref:System.Windows.Controls.GridView> <xref:System.Windows.Controls.ListView.View%2A> mode that displays data in columns for a <xref:System.Windows.Controls.ListView>. For more information about how to define a <xref:System.Windows.Controls.GridView> view, see the [GridView Overview](~/docs/framework/wpf/controls/gridview-overview.md).  
+ 
+You can determine when a column is moving to a new location by monitoring the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event that is defined for the <xref:System.Windows.Controls.GridViewColumnCollection>.  
+ 
+You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,18 +64,18 @@
           <see langword="true" /> if columns can be moved by the drag-and-drop operation of a column header; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.AllowsColumnReorder%2A> property on the <xref:System.Windows.Controls.GridView>.  
-  
+When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.AllowsColumnReorder%2A> property on the <xref:System.Windows.Controls.GridView>.  
+ 
 <a name="dependencyPropertyInfo_AllowsColumnReorder"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorderProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,43 +143,43 @@
         <value>The <see cref="T:System.Windows.Style" /> to use for the column header container. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderContainerStyle%2A> property on the <xref:System.Windows.Controls.GridView>.  
-  
- You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
-  
- When you set styles, some restrictions apply. For more information, see the [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
-  
+When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderContainerStyle%2A> property on the <xref:System.Windows.Controls.GridView>.  
+ 
+You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+ 
+When you set styles, some restrictions apply. For more information, see the [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
+ 
 <a name="xamlAttributeUsage_ColumnHeaderContainerStyle"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object ColumnHeaderContainerStyle="{ResourceExtension StyleResourceKey}"/>  
 ```  
-  
+ 
 <a name="xamlPropertyElementUsage_ColumnHeaderContainerStyle"></a>   
 ## XAML Property Element Usage  
-  
+ 
 <a name="xamlValues_ColumnHeaderContainerStyle"></a>   
 ## XAML Values  
- *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
-  
- *StyleResourceKey*  
- The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
-  
+*ResourceExtension*  
+One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+ 
+*StyleResourceKey*  
+The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+ 
 > [!NOTE]
 >  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
-  
+ 
 <a name="dependencyPropertyInfo_ColumnHeaderContainerStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,10 +200,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyle" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyle%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyle%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,20 +225,20 @@
         <value>The <see cref="T:System.Windows.Controls.ContextMenu" /> for the column header row. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderContextMenu%2A> property on the <xref:System.Windows.Controls.GridView>.  
-  
- You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
-  
+When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderContextMenu%2A> property on the <xref:System.Windows.Controls.GridView>.  
+ 
+You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+ 
 <a name="dependencyPropertyInfo_ColumnHeaderContextMenu"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenuProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,10 +259,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenu" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenu%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenu%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,26 +289,26 @@
         <value>A composite string that specifies how to format the column headers if they are displayed as strings. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A?displayProperty=fullName>, <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A?displayProperty=fullName>, or <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A?displayProperty=fullName> property is set, this property is ignored.  
-  
- You can use several properties to specify the format of the column headers.  If more than one property is set, the column header is formatted with the value of the property that has the highest priority. The format for a column can be set on several types. The following list shows the properties that can be used to format the column headers, ordered from lowest to highest priority:  
-  
+If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A?displayProperty=fullName>, <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A?displayProperty=fullName>, or <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A?displayProperty=fullName> property is set, this property is ignored.  
+ 
+You can use several properties to specify the format of the column headers.  If more than one property is set, the column header is formatted with the value of the property that has the highest priority. The format for a column can be set on several types. The following list shows the properties that can be used to format the column headers, ordered from lowest to highest priority:  
+ 
 -   <xref:System.Windows.Controls.GridView.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.GridViewColumn.HeaderStringFormat%2A?displayProperty=fullName>  
-  
+ 
 <a name="dependencyPropertyInfo_ColumnHeaderStringFormat"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormatProperty>|  
 |Metadata properties set to **true**|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,35 +347,35 @@
         <value>The <see cref="T:System.Windows.DataTemplate" /> that is used to display the column header content. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> property on the <xref:System.Windows.Controls.GridView>.  
-  
- If the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> property and the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector%2A> property are both set, the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> takes precedence.  
-  
- You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
-  
+When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> property on the <xref:System.Windows.Controls.GridView>.  
+ 
+If the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> property and the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector%2A> property are both set, the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> takes precedence.  
+ 
+You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+ 
 <a name="xamlAttributeUsage_ColumnHeaderTemplate"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object ColumnHeaderTemplate="{ResourceExtension TemplateResourceKey}"/>  
 ```  
-  
+ 
 <a name="xamlPropertyElementUsage_ColumnHeaderTemplate"></a>   
 ## XAML Property Element Usage  
-  
+ 
 <a name="xamlValues_ColumnHeaderTemplate"></a>   
 ## XAML Values  
- *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
-  
- *TemplateResourceKey*  
- The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
-  
+*ResourceExtension*  
+One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+ 
+*TemplateResourceKey*  
+The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+ 
 > [!NOTE]
 >  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,10 +396,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> dependency property.  
-  
+The identifier for <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -426,43 +426,43 @@
         <value>The <see cref="T:System.Windows.Controls.DataTemplateSelector" /> that chooses the <see cref="T:System.Windows.DataTemplate" /> to use to display each column header. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> property and the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector%2A> property are both set, the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> takes precedence.  
-  
- When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplateSelector%2A> property on the <xref:System.Windows.Controls.GridView>.  
-  
- You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
-  
+If the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> property and the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector%2A> property are both set, the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> takes precedence.  
+ 
+When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplateSelector%2A> property on the <xref:System.Windows.Controls.GridView>.  
+ 
+You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+ 
 <a name="xamlAttributeUsage_ColumnHeaderTemplateSelector"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object ColumnHeaderTemplateSelector="{ResourceExtension DataTemplateSelectorClassKey}"/>  
 ```  
-  
+ 
 <a name="xamlPropertyElementUsage_ColumnHeaderTemplateSelector"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-  <object.ColumnHeaderTemplateSelector>  
-    <MyDataTemplateSelectorImplementation .../>  
-  </object.ColumnHeaderTemplateSelector>  
+ <object.ColumnHeaderTemplateSelector>  
+   <MyDataTemplateSelectorImplementation .../>  
+ </object.ColumnHeaderTemplateSelector>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_ColumnHeaderTemplateSelector"></a>   
 ## XAML Values  
- *MyDataTemplateSelectorImplementation*  
- A class derived from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
-  
- *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
-  
- *DataTemplateSelectorClassKey*  
- The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
-  
+*MyDataTemplateSelectorImplementation*  
+A class derived from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+ 
+*ResourceExtension*  
+One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+ 
+*DataTemplateSelectorClassKey*  
+The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -483,10 +483,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,55 +508,55 @@
         <value>An object that represents the content of a tooltip for the column headers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderToolTip%2A> property on the <xref:System.Windows.Controls.GridView>.  
-  
- You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
-  
+When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderToolTip%2A> property on the <xref:System.Windows.Controls.GridView>.  
+ 
+You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+ 
 <a name="xamlAttributeUsage_ColumnHeaderToolTip"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object ToolTip="toolTipContent"/>  
 ```  
-  
+ 
 <a name="xamlPropertyElementUsage_ColumnHeaderToolTip"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-  <object.ToolTip>  
-    <ToolTip .../>  
-  </object.ToolTip>  
+ <object.ToolTip>  
+   <ToolTip .../>  
+ </object.ToolTip>  
 </object>  
 - or -  
 <object>  
-  <object.ToolTip>  
-    toolTipObjectContent  
-  </object.ToolTip>  
+ <object.ToolTip>  
+   toolTipObjectContent  
+ </object.ToolTip>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_ColumnHeaderToolTip"></a>   
 ## XAML Values  
- `toolTipContent`  
- A string that becomes the display text for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A>.  
-  
- `toolTipObjectContent`  
- An object to use as the content for the tooltip. Typically, this object is a <xref:System.Windows.FrameworkElement> or some other element that defines a layout for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A>, such as a text element. In this usage, a <xref:System.Windows.Controls.ToolTip> element is implicitly created from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the `toolTipObjectContent` content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=fullName> property.  
-  
- <`ToolTip` .../>  
- See <xref:System.Windows.Controls.ToolTip>.  
-  
+`toolTipContent`  
+A string that becomes the display text for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A>.  
+ 
+`toolTipObjectContent`  
+An object to use as the content for the tooltip. Typically, this object is a <xref:System.Windows.FrameworkElement> or some other element that defines a layout for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A>, such as a text element. In this usage, a <xref:System.Windows.Controls.ToolTip> element is implicitly created from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the `toolTipObjectContent` content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=fullName> property.  
+ 
+<`ToolTip` .../>  
+See <xref:System.Windows.Controls.ToolTip>.  
+ 
 <a name="dependencyPropertyInfo_ColumnHeaderToolTip"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTipProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -577,10 +577,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -646,12 +646,12 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.LostMouseCapture" /> event for the <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.UIElement.LostMouseCapture> event occurs while a column is moving to a new position, the move is canceled.  
-  
- This implementation does not handle the <xref:System.Windows.UIElement.LostMouseCapture> event.  
-  
+If a <xref:System.Windows.UIElement.LostMouseCapture> event occurs while a column is moving to a new position, the move is canceled.  
+ 
+This implementation does not handle the <xref:System.Windows.UIElement.LostMouseCapture> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -676,12 +676,12 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> event that occurs when the user presses the left mouse button inside a <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> is `true`, this method prepares a column to be dragged to another location in the column header row.  
-  
- This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonDown> event by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
-  
+If <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> is `true`, this method prepares a column to be dragged to another location in the column header row.  
+ 
+This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonDown> event by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -706,12 +706,12 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> event that occurs when the user releases the left mouse button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> is `true`, and if the <xref:System.Windows.UIElement.MouseLeftButtonUp> event occurs after a column is dragged to a new location, the column is moved.  
-  
- This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
-  
+If <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> is `true`, and if the <xref:System.Windows.UIElement.MouseLeftButtonUp> event occurs after a column is dragged to a new location, the column is moved.  
+ 
+This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -736,10 +736,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseMove" /> event that occurs when the user moves the mouse.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> property is set to `true` and the user presses the left mouse button, this method implements the visual behavior that occurs when the user drags a <xref:System.Windows.Controls.GridViewColumnHeader> to a new location. This method override sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true` for the <xref:System.Windows.UIElement.MouseMove> event even if the user does not press the left mouse button.  
-  
+If the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> property is set to `true` and the user presses the left mouse button, this method implements the visual behavior that occurs when the user drags a <xref:System.Windows.Controls.GridViewColumnHeader> to a new location. This method override sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true` for the <xref:System.Windows.UIElement.MouseMove> event even if the user does not press the left mouse button.  
+ 
  ]]></format>
         </remarks>
       </Docs>

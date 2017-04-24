@@ -22,19 +22,19 @@
     <summary>Represents a collection of <see cref="T:System.CodeDom.CodeCatchClause" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeCatchClauseCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeCatchClause> objects.  
+The <xref:System.CodeDom.CodeCatchClauseCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeCatchClause> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the  <xref:System.CodeDom.CodeCatchClauseCollection> class methods. The example creates a new instance of the class and uses the methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
-  
- [!code-cpp[CodeCatchClauseCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#1)]
- [!code-csharp[CodeCatchClauseCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#1)]
- [!code-vb[CodeCatchClauseCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#1)]  
-  
+The following example demonstrates the use of the  <xref:System.CodeDom.CodeCatchClauseCollection> class methods. The example creates a new instance of the class and uses the methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+ 
+[!code-cpp[CodeCatchClauseCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#1)]
+[!code-csharp[CodeCatchClauseCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#1)]
+[!code-vb[CodeCatchClauseCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,14 +114,14 @@
         <returns>The index at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to add a <xref:System.CodeDom.CodeCatchClause> object to the <xref:System.CodeDom.CodeCatchClauseCollection> instance.  
-  
- [!code-cpp[CodeCatchClauseCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#3)]
- [!code-csharp[CodeCatchClauseCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#3)]
- [!code-vb[CodeCatchClauseCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#3)]  
-  
+The following example demonstrates how to add a <xref:System.CodeDom.CodeCatchClause> object to the <xref:System.CodeDom.CodeCatchClauseCollection> instance.  
+ 
+[!code-cpp[CodeCatchClauseCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#3)]
+[!code-csharp[CodeCatchClauseCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#3)]
+[!code-vb[CodeCatchClauseCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,14 +146,14 @@
         <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeCatchClause" /> array to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.AddRange%28System.CodeDom.CodeCatchClause%5B%5D%29> method overload to add the members of an array of <xref:System.CodeDom.CodeCatchClause> objects to the <xref:System.CodeDom.CodeCatchClauseCollection>.  
-  
- [!code-cpp[CodeCatchClauseCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CodeCatchClauseCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeCatchClauseCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#4)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.AddRange%28System.CodeDom.CodeCatchClause%5B%5D%29> method overload to add the members of an array of <xref:System.CodeDom.CodeCatchClause> objects to the <xref:System.CodeDom.CodeCatchClauseCollection>.  
+ 
+[!code-cpp[CodeCatchClauseCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CodeCatchClauseCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeCatchClauseCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -180,14 +180,14 @@
         <summary>Copies the contents of another <see cref="T:System.CodeDom.CodeCatchClauseCollection" /> object to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.AddRange%28System.CodeDom.CodeCatchClauseCollection%29> method overload to add the members of one <xref:System.CodeDom.CodeCatchClauseCollection> object to another <xref:System.CodeDom.CodeCatchClauseCollection>.  
-  
- [!code-cpp[CodeCatchClauseCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CodeCatchClauseCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeCatchClauseCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#4)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.AddRange%28System.CodeDom.CodeCatchClauseCollection%29> method overload to add the members of one <xref:System.CodeDom.CodeCatchClauseCollection> object to another <xref:System.CodeDom.CodeCatchClauseCollection>.  
+ 
+[!code-cpp[CodeCatchClauseCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CodeCatchClauseCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeCatchClauseCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -216,14 +216,14 @@
           <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.CodeDom.CodeCatchClauseCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeCatchClause> instance and gets the index value at which it was found.  
-  
- [!code-cpp[CodeCatchClauseCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CodeCatchClauseCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeCatchClauseCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#5)]  
-  
+The following example uses the <xref:System.CodeDom.CodeCatchClauseCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeCatchClause> instance and gets the index value at which it was found.  
+ 
+[!code-cpp[CodeCatchClauseCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CodeCatchClauseCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeCatchClauseCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,14 +250,14 @@
         <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance beginning at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeCatchClauseCollection> to a <xref:System.CodeDom.CodeCatchClause> array beginning at index value 0.  
-  
- [!code-cpp[CodeCatchClauseCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#6)]
- [!code-csharp[CodeCatchClauseCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#6)]
- [!code-vb[CodeCatchClauseCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#6)]  
-  
+The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeCatchClauseCollection> to a <xref:System.CodeDom.CodeCatchClause> array beginning at index value 0.  
+ 
+[!code-cpp[CodeCatchClauseCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#6)]
+[!code-csharp[CodeCatchClauseCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#6)]
+[!code-vb[CodeCatchClauseCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
@@ -290,14 +290,14 @@
         <returns>The index of the specified object, if found, in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example searches for the presence of a specific <xref:System.CodeDom.CodeCatchClause> object and uses the <xref:System.CodeDom.CodeCatchClauseCollection.IndexOf%2A> method to get the index value at which it was found.  
-  
- [!code-cpp[CodeCatchClauseCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CodeCatchClauseCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeCatchClauseCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#5)]  
-  
+The following example searches for the presence of a specific <xref:System.CodeDom.CodeCatchClause> object and uses the <xref:System.CodeDom.CodeCatchClauseCollection.IndexOf%2A> method to get the index value at which it was found.  
+ 
+[!code-cpp[CodeCatchClauseCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CodeCatchClauseCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeCatchClauseCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,14 +324,14 @@
         <summary>Inserts the specified <see cref="T:System.CodeDom.CodeCatchClause" /> object into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeCatchClause> object to a <xref:System.CodeDom.CodeCatchClauseCollection>.  
-  
- [!code-cpp[CodeCatchClauseCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#8)]
- [!code-csharp[CodeCatchClauseCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#8)]
- [!code-vb[CodeCatchClauseCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#8)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeCatchClause> object to a <xref:System.CodeDom.CodeCatchClauseCollection>.  
+ 
+[!code-cpp[CodeCatchClauseCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#8)]
+[!code-csharp[CodeCatchClauseCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#8)]
+[!code-vb[CodeCatchClauseCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <value>A <see cref="T:System.CodeDom.CodeCatchClause" /> object at each valid index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is an indexer that can be used to access the collection.  
-  
+This property is an indexer that can be used to access the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
@@ -386,14 +386,14 @@
         <summary>Removes the specified <see cref="T:System.CodeDom.CodeCatchClause" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeCatchClause> object from a <xref:System.CodeDom.CodeCatchClauseCollection>.  
-  
- [!code-cpp[CodeCatchClauseCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#9)]
- [!code-csharp[CodeCatchClauseCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#9)]
- [!code-vb[CodeCatchClauseCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#9)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeCatchClause> object from a <xref:System.CodeDom.CodeCatchClauseCollection>.  
+ 
+[!code-cpp[CodeCatchClauseCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#9)]
+[!code-csharp[CodeCatchClauseCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#9)]
+[!code-vb[CodeCatchClauseCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>

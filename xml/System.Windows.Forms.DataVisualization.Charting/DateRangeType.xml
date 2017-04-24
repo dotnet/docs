@@ -13,10 +13,10 @@
     <summary>Specifies a date/time interval that determines the ranges that will be filtered when you invoke one of the <c>Filter</c> method definitionsfound in the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataManipulator" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.DateRangeType> enumeration is passed in the `DateRange` parameter of some `Filter` methods, which combined with the `rangeElements` parameter determines the date/time ranges that are filtered.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.DateRangeType> enumeration is passed in the `DateRange` parameter of some `Filter` methods, which combined with the `rangeElements` parameter determines the date/time ranges that are filtered.  
+ 
  ]]></format>
     </remarks>
   </Docs>

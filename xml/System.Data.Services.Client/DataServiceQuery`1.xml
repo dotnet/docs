@@ -26,10 +26,10 @@
     <summary>Represents a single query request to a data service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No public constructors are defined on this class. Object instances are created by using <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> or <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> on the <xref:System.Data.Services.Client.DataServiceContext> class.  
-  
+No public constructors are defined on this class. Object instances are created by using <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> or <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> on the <xref:System.Data.Services.Client.DataServiceContext> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,25 +58,25 @@
         <returns>A new query that includes the requested query option appended to the URI of the supplied query</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The query options are added to the resultant URI using `?name=value&name2=value2`… syntax where the name maps directly to the `name` parameter and the `value` is obtained by calling ToString on the `value` parameter. The `name` starts with `$`.  
+The query options are added to the resultant URI using `?name=value&name2=value2`… syntax where the name maps directly to the `name` parameter and the `value` is obtained by calling ToString on the `value` parameter. The `name` starts with `$`.  
+ 
+Non-[!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] syntax does not start with `$`. Non-[!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] query options can be added using this method. It is legal to add the same query option twice if the option is not an [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] query option. If a query option is added that is already present in the underlying URI, an exception is thrown.  
+ 
   
- Non-[!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] syntax does not start with `$`. Non-[!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] query options can be added using this method. It is legal to add the same query option twice if the option is not an [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] query option. If a query option is added that is already present in the underlying URI, an exception is thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows a <xref:System.Data.Services.Client.DataServiceQuery%601> that is used with sequential <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method calls to only return orders with a freight cost of more than $30 and to order the results by the ship date in descending order.  
-  
- [!code-csharp[Astoria Northwind Client#AddQueryOptions](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#addqueryoptions)]
- [!code-vb[Astoria Northwind Client#AddQueryOptions](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#addqueryoptions)]  
-  
- The following example shows how to compose a LINQ query that is equivalent to the previous query that used <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A>.  
-  
- [!code-csharp[Astoria Northwind Client#AddQueryOptionsLinq](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#addqueryoptionslinq)]
- [!code-vb[Astoria Northwind Client#AddQueryOptionsLinq](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#addqueryoptionslinq)]  
-  
+The following example shows a <xref:System.Data.Services.Client.DataServiceQuery%601> that is used with sequential <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method calls to only return orders with a freight cost of more than $30 and to order the results by the ship date in descending order.  
+ 
+[!code-csharp[Astoria Northwind Client#AddQueryOptions](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#addqueryoptions)]
+[!code-vb[Astoria Northwind Client#AddQueryOptions](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#addqueryoptions)]  
+ 
+The following example shows how to compose a LINQ query that is equivalent to the previous query that used <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A>.  
+ 
+[!code-csharp[Astoria Northwind Client#AddQueryOptionsLinq](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#addqueryoptionslinq)]
+[!code-vb[Astoria Northwind Client#AddQueryOptionsLinq](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#addqueryoptionslinq)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <value>Returns <see cref="T:System.Type" /> representing the type used in the template when the query is created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets the type represented by T in the generic methods: <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> or <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A>.  
-  
+Gets the type represented by T in the generic methods: <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> or <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> in which <paramref name="T" /> represents the type of the query results.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When iterating over the returned collection, if an object is encountered in the input stream that cannot be deserialized to an instance of `T` then a <xref:System.NotSupportedException> is thrown.  
-  
+When iterating over the returned collection, if an object is encountered in the input stream that cannot be deserialized to an instance of `T` then a <xref:System.NotSupportedException> is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Services.Client.DataServiceQueryException">When the data service returns an HTTP 404: Resource Not Found error.</exception>
@@ -245,10 +245,10 @@
         <returns>A typed enumerator over the results in which <paramref name="TEntity" /> represents the type of the query results.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Data.Services.Client.DataServiceQuery%601.GetEnumerator%2A> method is called, the <xref:System.Data.Services.Client.DataServiceQuery%601> is executed against the service.  
-  
+When the <xref:System.Data.Services.Client.DataServiceQuery%601.GetEnumerator%2A> method is called, the <xref:System.Data.Services.Client.DataServiceQuery%601> is executed against the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,18 +272,18 @@
         <returns>A new <see cref="T:System.Data.Services.Client.DataServiceQuery`1" /> object that has the inline count option set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling the <xref:System.Data.Services.Client.DataServiceQuery%601.IncludeTotalCount%2A> method is equivalent to including the `$inlinecount` query option in the query URI.  
+Calling the <xref:System.Data.Services.Client.DataServiceQuery%601.IncludeTotalCount%2A> method is equivalent to including the `$inlinecount` query option in the query URI.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example executes a query after it calls the <xref:System.Data.Services.Client.DataServiceQuery%601.IncludeTotalCount%2A> method. The <xref:System.Data.Services.Client.QueryOperationResponse%601.TotalCount%2A> property is used to determine number of entities returned by the query.  
-  
- [!code-csharp[Astoria Northwind Client#CountAllCustomers](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#countallcustomers)]
- [!code-vb[Astoria Northwind Client#CountAllCustomers](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#countallcustomers)]  
-  
+This example executes a query after it calls the <xref:System.Data.Services.Client.DataServiceQuery%601.IncludeTotalCount%2A> method. The <xref:System.Data.Services.Client.QueryOperationResponse%601.TotalCount%2A> property is used to determine number of entities returned by the query.  
+ 
+[!code-csharp[Astoria Northwind Client#CountAllCustomers](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#countallcustomers)]
+[!code-vb[Astoria Northwind Client#CountAllCustomers](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#countallcustomers)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,12 +345,12 @@
         <returns>An enumerator over the query results.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Data.Services.Client.DataServiceQuery%601.System%23Collections%23IEnumerable%23GetEnumerator%2A> method is called, the <xref:System.Data.Services.Client.DataServiceQuery%601> is executed against the service.  
-  
- <xref:System.Data.Services.Client.DataServiceQuery%601.GetEnumerator%2A> returns an enumerable the first time it is called. On successive calls it returns null.  
-  
+When the <xref:System.Data.Services.Client.DataServiceQuery%601.System%23Collections%23IEnumerable%23GetEnumerator%2A> method is called, the <xref:System.Data.Services.Client.DataServiceQuery%601> is executed against the service.  
+ 
+<xref:System.Data.Services.Client.DataServiceQuery%601.GetEnumerator%2A> returns an enumerable the first time it is called. On successive calls it returns null.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,10 +18,10 @@
     <summary>Specifies the type of protocol that an instance of the <see cref="T:System.Net.Sockets.Socket" /> class can use.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.ProtocolFamily> enumeration specifies the protocol scheme that is used by the <xref:System.Net.Sockets.Socket> class to resolve an address. For example, InterNetwork indicates that the IP version 4 protocol is expected when a <xref:System.Net.Sockets.Socket> connects to an endpoint.  
-  
+The <xref:System.Net.Sockets.ProtocolFamily> enumeration specifies the protocol scheme that is used by the <xref:System.Net.Sockets.Socket> class to resolve an address. For example, InterNetwork indicates that the IP version 4 protocol is expected when a <xref:System.Net.Sockets.Socket> connects to an endpoint.  
+ 
  ]]></format>
     </remarks>
   </Docs>

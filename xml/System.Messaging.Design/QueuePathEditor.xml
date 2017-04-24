@@ -55,10 +55,10 @@
         <returns>The new value of the message queue path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `value` is not a <xref:System.Messaging.MessageQueue> or a string that specifies a message queue path, this method returns `value`. Otherwise, this method returns the new message queue path.  
-  
+If `value` is not a <xref:System.Messaging.MessageQueue> or a string that specifies a message queue path, this method returns `value`. Otherwise, this method returns the new message queue path.  
+ 
  ]]></format>
         </remarks>
       </Docs>

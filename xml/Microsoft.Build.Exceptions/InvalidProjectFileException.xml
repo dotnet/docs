@@ -14,10 +14,10 @@
     <summary>This exception is thrown whenever there is a problem with the user's XML project file. The problem might be semantic or syntactical. The latter would be of a type typically caught by XSD validation (if it was performed by the project writer).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- WARNING: marking a type [Serializable] without implementing ISerializable imposes a serialization contract -- it is a promise to never change the type's fields i.e. the type is immutable; adding new fields in the next version of the type without following certain special FX guidelines, can break both forward and backward compatibility  
-  
+WARNING: marking a type [Serializable] without implementing ISerializable imposes a serialization contract -- it is a promise to never change the type's fields i.e. the type is immutable; adding new fields in the next version of the type without following certain special FX guidelines, can break both forward and backward compatibility  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.  
-  
+This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,10 +61,10 @@
         <summary>Creates an instance of this exception using the specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.  
-  
+This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <summary>Creates an instance of this exception using the specified error message and inner exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.  
-  
+This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <summary>Creates an instance of this exception using rich error information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is preferred over the basic constructors.  
-  
+This constructor is preferred over the basic constructors.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <value>Project filename/path string, or null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name is poorly chosen as this may be a targets file, but the name has shipped now.  
-  
+The name is poorly chosen as this may be a targets file, but the name has shipped now.  
+ 
  ]]></format>
         </remarks>
       </Docs>

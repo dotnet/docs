@@ -14,10 +14,10 @@
     <summary>Provides colors used for Microsoft Office display elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of this class is called by <xref:System.Windows.Forms.ToolStripProfessionalRenderer>.  
-  
+An instance of this class is called by <xref:System.Windows.Forms.ToolStripProfessionalRenderer>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -450,10 +450,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
-  
+<xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -475,10 +475,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
-  
+<xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -500,10 +500,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
-  
+<xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,10 +525,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> when an item is revealed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
-  
+<xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -550,10 +550,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> when an item is revealed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
-  
+<xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,10 +575,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> when an item is revealed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
-  
+<xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1105,10 +1105,10 @@
           <see langword="true" /> to use <see cref="T:System.Drawing.SystemColors" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If visual styles or themes are turned off, the <xref:System.Windows.Forms.ToolStripProfessionalRenderer> uses the colors in <xref:System.Drawing.SystemColors>.  
-  
+If visual styles or themes are turned off, the <xref:System.Windows.Forms.ToolStripProfessionalRenderer> uses the colors in <xref:System.Drawing.SystemColors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

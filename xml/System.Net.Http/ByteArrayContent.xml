@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Http.ByteArrayContent" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the range specified by the `offset` parameter and the `count`  parameter is used as content. Syntax  
-  
+Only the range specified by the `offset` parameter and the `count`  parameter is used as content. Syntax  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="content" /> parameter is <see langword="null" />.</exception>
@@ -119,10 +119,10 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601>object will complete after all of the content stream has been created.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601>object will complete after all of the content stream has been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation does not block. When the returned <xref:System.Threading.Tasks.Task> object completes, the whole byte array has been written to the `stream` parameter.  
-  
+This operation does not block. When the returned <xref:System.Threading.Tasks.Task> object completes, the whole byte array has been written to the `stream` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,12 +192,12 @@
           <see langword="true" /> if <paramref name="length" /> is a valid length; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.ByteArrayContent.TryComputeLength%2A> method gives a derived content type the ability to calculate the content length. This is useful for content types which are able to easily calculate the content length. If computing the content length is not possible or expensive (would require the system to buffer the whole content where the serialization would be expensive or require the system to allocate a lot of memory), this method can return `false`. If this method returns `false`, this implies that either chunked transfer is needed or the content must get buffered before being sent to the server.  
-  
- This method always returned `true` for <xref:System.Net.Http.ByteArrayContent>.  
-  
+The <xref:System.Net.Http.ByteArrayContent.TryComputeLength%2A> method gives a derived content type the ability to calculate the content length. This is useful for content types which are able to easily calculate the content length. If computing the content length is not possible or expensive (would require the system to buffer the whole content where the serialization would be expensive or require the system to allocate a lot of memory), this method can return `false`. If this method returns `false`, this implies that either chunked transfer is needed or the content must get buffered before being sent to the server.  
+ 
+This method always returned `true` for <xref:System.Net.Http.ByteArrayContent>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -203,10 +203,10 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSession" /> method instructs the DSML server to start a new session.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method will block while waiting for a response from the DSML server and will time out according to the <xref:System.DirectoryServices.Protocols.DirectoryConnection.Timeout%2A> property.  
-  
+The method will block while waiting for a response from the DSML server and will time out according to the <xref:System.DirectoryServices.Protocols.DirectoryConnection.Timeout%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Thrown when a session is already open on the connection.</exception>
@@ -261,12 +261,12 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.EndSession" /> method ends the session with the DSML server and clears the <see cref="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SessionId" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method will block while waiting for a response from the DSML server and will time out according to the <xref:System.DirectoryServices.Protocols.DirectoryConnection.Timeout%2A> property.  
-  
- If the DSML server has already terminated the session on its own, a <xref:System.Net.WebException> will be thrown.  If the <xref:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SessionId%2A> is still valid after the exception is thrown, the request never reached the server and the connection is still considered valid.  
-  
+The method will block while waiting for a response from the DSML server and will time out according to the <xref:System.DirectoryServices.Protocols.DirectoryConnection.Timeout%2A> property.  
+ 
+If the DSML server has already terminated the session on its own, a <xref:System.Net.WebException> will be thrown.  If the <xref:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SessionId%2A> is still valid after the exception is thrown, the request never reached the server and the connection is still considered valid.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">Thrown when there is a communications failure with the DSML server.</exception>
@@ -367,10 +367,10 @@
         <value>The SOAP Action Header sent with other HTTP headers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property is "#batchRequest".  
-  
+The default value of this property is "#batchRequest".  
+ 
  ]]></format>
         </remarks>
       </Docs>

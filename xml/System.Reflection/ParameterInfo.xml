@@ -46,21 +46,21 @@
     <summary>Discovers the attributes of a parameter and provides access to parameter metadata.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use an instance of `ParameterInfo` to obtain information about the parameter's data type, default value, and so on.  
+Use an instance of `ParameterInfo` to obtain information about the parameter's data type, default value, and so on.  
+ 
+<xref:System.Reflection.MethodBase.GetParameters%2A> returns an array of `ParameterInfo` objects representing the parameters of a method, in order.  
+ 
   
- <xref:System.Reflection.MethodBase.GetParameters%2A> returns an array of `ParameterInfo` objects representing the parameters of a method, in order.  
-  
-   
-  
+ 
 ## Examples  
- This example shows how to use various reflection classes to analyze the metadata contained in an assembly.  
-  
- [!code-cpp[Reflection#1](~/samples/snippets/cpp/VS_Snippets_CLR/Reflection/CPP/reflection.cpp#1)]
- [!code-csharp[Reflection#1](~/samples/snippets/csharp/VS_Snippets_CLR/Reflection/CS/Reflection.cs#1)]
- [!code-vb[Reflection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Reflection/VB/Reflection.vb#1)]  
-  
+This example shows how to use various reflection classes to analyze the metadata contained in an assembly.  
+ 
+[!code-cpp[Reflection#1](~/samples/snippets/cpp/VS_Snippets_CLR/Reflection/CPP/reflection.cpp#1)]
+[!code-csharp[Reflection#1](~/samples/snippets/csharp/VS_Snippets_CLR/Reflection/CS/Reflection.cs#1)]
+[!code-vb[Reflection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Reflection/VB/Reflection.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
@@ -114,21 +114,21 @@
         <value>A <see langword="ParameterAttributes" /> object representing the attributes for this parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method utilizes the <xref:System.Reflection.ParameterInfo.AttrsImpl> method.  
+This method utilizes the <xref:System.Reflection.ParameterInfo.AttrsImpl> method.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ 
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example defines a method with three parameters. It uses the <xref:System.Reflection.ParameterInfo.Attributes%2A> property to get the attributes of the second parameter and display them at the console.  
-  
- [!code-cpp[ParameterInfo_Attributes1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_Attributes1/CPP/parameterinfo_attributes1.cpp#1)]
- [!code-csharp[ParameterInfo_Attributes1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_Attributes1/CS/parameterinfo_attributes1.cs#1)]
- [!code-vb[ParameterInfo_Attributes1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_Attributes1/VB/parameterinfo_attributes1.vb#1)]  
-  
+The following example defines a method with three parameters. It uses the <xref:System.Reflection.ParameterInfo.Attributes%2A> property to get the attributes of the second parameter and display them at the console.  
+ 
+[!code-cpp[ParameterInfo_Attributes1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_Attributes1/CPP/parameterinfo_attributes1.cpp#1)]
+[!code-csharp[ParameterInfo_Attributes1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_Attributes1/CS/parameterinfo_attributes1.cs#1)]
+[!code-vb[ParameterInfo_Attributes1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_Attributes1/VB/parameterinfo_attributes1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,12 +154,12 @@
         <summary>The attributes of the parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is intended only for users who are deriving classes from `ParameterInfo`.  
-  
- Typical access to parameter attributes is through <xref:System.Reflection.ParameterInfo.Attributes%2A>.  
-  
+This field is intended only for users who are deriving classes from `ParameterInfo`.  
+ 
+Typical access to parameter attributes is through <xref:System.Reflection.ParameterInfo.Attributes%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,12 +185,12 @@
         <summary>The <see langword="Type" /> of the parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is intended only for users who are deriving classes from `ParameterInfo`.  
-  
- Typical access to parameter types is through <xref:System.Reflection.ParameterInfo.ParameterType%2A>.  
-  
+This field is intended only for users who are deriving classes from `ParameterInfo`.  
+ 
+Typical access to parameter types is through <xref:System.Reflection.ParameterInfo.ParameterType%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,16 +252,16 @@
         <value>The default value of the parameter, or <see cref="F:System.DBNull.Value" /> if the parameter has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used only in the execution context. In the reflection-only context, use the <xref:System.Reflection.ParameterInfo.RawDefaultValue%2A> property instead.  
-  
- The default value is used when an actual value is not specified in the method call. A parameter can have a default value that is `null`. This is distinct from the case where a default value is not defined.  
-  
- This method utilizes the <xref:System.Reflection.ParameterInfo.DefaultValueImpl> method.  
-  
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
-  
+This property is used only in the execution context. In the reflection-only context, use the <xref:System.Reflection.ParameterInfo.RawDefaultValue%2A> property instead.  
+ 
+The default value is used when an actual value is not specified in the method call. A parameter can have a default value that is `null`. This is distinct from the case where a default value is not defined.  
+ 
+This method utilizes the <xref:System.Reflection.ParameterInfo.DefaultValueImpl> method.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,12 +287,12 @@
         <summary>The default value of the parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is intended only for users who are deriving classes from `ParameterInfo`.  
-  
- Typical access to the default value of the parameter is through <xref:System.Reflection.ParameterInfo.DefaultValue%2A>.  
-  
+This field is intended only for users who are deriving classes from `ParameterInfo`.  
+ 
+Typical access to the default value of the parameter is through <xref:System.Reflection.ParameterInfo.DefaultValue%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,21 +323,21 @@
         <returns>An array that contains all the custom attributes applied to this parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> method.  
+This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how custom attributes that have been applied to the parameters of methods can be retrieved at run time. The example defines a custom attribute named `MyAttribute` that can be applied to parameters. The example then defines a class named `MyClass` with a method named `MyMethod`, and applies `MyAttribute` to a parameter of the method.  
-  
- When the example is run, it uses the <xref:System.Reflection.ParameterInfo.GetCustomAttributes%28System.Boolean%29> method to retrieve the custom attributes that have been applied to all parameters of all methods in `MyClass`, and displays them at the console.  
-  
- [!code-cpp[ParameterInfo_GetCustomAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_GetCustomAttributes/CPP/source.cpp#1)]
- [!code-csharp[ParameterInfo_GetCustomAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_GetCustomAttributes/CS/source.cs#1)]
- [!code-vb[ParameterInfo_GetCustomAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_GetCustomAttributes/VB/source.vb#1)]  
-  
+The following example shows how custom attributes that have been applied to the parameters of methods can be retrieved at run time. The example defines a custom attribute named `MyAttribute` that can be applied to parameters. The example then defines a class named `MyClass` with a method named `MyMethod`, and applies `MyAttribute` to a parameter of the method.  
+ 
+When the example is run, it uses the <xref:System.Reflection.ParameterInfo.GetCustomAttributes%28System.Boolean%29> method to retrieve the custom attributes that have been applied to all parameters of all methods in `MyClass`, and displays them at the console.  
+ 
+[!code-cpp[ParameterInfo_GetCustomAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_GetCustomAttributes/CPP/source.cpp#1)]
+[!code-csharp[ParameterInfo_GetCustomAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_GetCustomAttributes/CS/source.cs#1)]
+[!code-vb[ParameterInfo_GetCustomAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_GetCustomAttributes/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.TypeLoadException">A custom attribute type could not be loaded.</exception>
@@ -371,10 +371,10 @@
         <returns>An array that contains the custom attributes of the specified type or its derived types.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> method.  
-  
+This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The type must be a type provided by the underlying runtime system.</exception>
@@ -406,10 +406,10 @@
         <returns>A generic list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the current parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.ParameterInfo.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and example code, see the <xref:System.Reflection.CustomAttributeData> class.  
-  
+Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.ParameterInfo.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -441,10 +441,10 @@
         <returns>An array of <see cref="T:System.Type" /> objects that identify the optional custom modifiers of the current parameter, such as <see cref="T:System.Runtime.CompilerServices.IsConst" /> or <see cref="T:System.Runtime.CompilerServices.IsImplicitlyDereferenced" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.ParameterInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.ParameterInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace, and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+The <xref:System.Reflection.ParameterInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.ParameterInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace, and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -475,10 +475,10 @@
         <returns>The actual object that is put into the graph.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method implements the <xref:System.Runtime.Serialization.IObjectReference.GetRealObject%2A?displayProperty=fullName> method.  
-  
+This method implements the <xref:System.Runtime.Serialization.IObjectReference.GetRealObject%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The parameter's position in the parameter list of its associated member is not valid for that member's type.</exception>
@@ -512,10 +512,10 @@
         <returns>An array of <see cref="T:System.Type" /> objects that identify the required custom modifiers of the current parameter, such as <see cref="T:System.Runtime.CompilerServices.IsConst" /> or <see cref="T:System.Runtime.CompilerServices.IsImplicitlyDereferenced" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.ParameterInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.ParameterInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace, and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+The <xref:System.Reflection.ParameterInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.ParameterInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace, and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -579,21 +579,21 @@
           <see langword="true" /> if one or more instances of <paramref name="attributeType" /> or its derived types are applied to this parameter; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.IsDefined%2A?displayProperty=fullName> method.  
+This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.IsDefined%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example defines two custom attributes, `MyAttribute` and `MyDerivedAttribute`. `MyDerivedAttribute` is derived from `MyAttribute`. The example then applies these attributes to the parameters of a method of an example class.  
-  
- When the example is run, it uses the <xref:System.Reflection.ParameterInfo.IsDefined%2A> method to test all parameters of all methods in the example class. It then displays the parameters that have `MyAttribute` or `MyDerivedAttribute`.  
-  
- [!code-cpp[ParameterInfo_GetCustomAttribute_IsDefined#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_GetCustomAttribute_IsDefined/CPP/ParameterInfo_GetCustomAttribute_IsDefined.cpp#1)]
- [!code-csharp[ParameterInfo_GetCustomAttribute_IsDefined#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_GetCustomAttribute_IsDefined/CS/parameterinfo_getcustomattribute_isdefined.cs#1)]
- [!code-vb[ParameterInfo_GetCustomAttribute_IsDefined#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_GetCustomAttribute_IsDefined/VB/parameterinfo_getcustomattribute_isdefined.vb#1)]  
-  
+The following example defines two custom attributes, `MyAttribute` and `MyDerivedAttribute`. `MyDerivedAttribute` is derived from `MyAttribute`. The example then applies these attributes to the parameters of a method of an example class.  
+ 
+When the example is run, it uses the <xref:System.Reflection.ParameterInfo.IsDefined%2A> method to test all parameters of all methods in the example class. It then displays the parameters that have `MyAttribute` or `MyDerivedAttribute`.  
+ 
+[!code-cpp[ParameterInfo_GetCustomAttribute_IsDefined#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_GetCustomAttribute_IsDefined/CPP/ParameterInfo_GetCustomAttribute_IsDefined.cpp#1)]
+[!code-csharp[ParameterInfo_GetCustomAttribute_IsDefined#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_GetCustomAttribute_IsDefined/CS/parameterinfo_getcustomattribute_isdefined.cs#1)]
+[!code-vb[ParameterInfo_GetCustomAttribute_IsDefined#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_GetCustomAttribute_IsDefined/VB/parameterinfo_getcustomattribute_isdefined.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -631,33 +631,33 @@
           <see langword="true" /> if the parameter is an input parameter; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
+This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
+ 
+This method utilizes the `In` flag of the `ParameterAttributes` enumerator.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ 
   
- This method utilizes the `In` flag of the `ParameterAttributes` enumerator.  
-  
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and <xref:System.Reflection.ParameterAttributes?displayProperty=fullName> attributes.  
-  
- The example contains a `DefineMethod` method that does the following:  
-  
+The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and <xref:System.Reflection.ParameterAttributes?displayProperty=fullName> attributes.  
+ 
+The example contains a `DefineMethod` method that does the following:  
+ 
 -   Creates a dynamic assembly containing a `MyType` type.  
-  
+ 
 -   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>.  
-  
+ 
 -   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> to complete the type.  
-  
- After executing `DefineMethod`, the example searches the assemblies that are currently loaded until it finds the dynamic assembly. It loads `MyType` from the assembly, gets a <xref:System.Reflection.MethodInfo> object for the `MyMethod` method, and examines the parameters. The example uses the <xref:System.Reflection.ParameterInfo.IsIn%2A>, <xref:System.Reflection.ParameterInfo.IsOut%2A>, and <xref:System.Reflection.ParameterInfo.IsOptional%2A> properties to display information about the parameters.  
-  
- [!code-cpp[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/CPP/ParameterInfo_IsIn_IsOut_IsOptional.cpp#1)]
- [!code-csharp[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/CS/parameterinfo_isin_isout_isoptional.cs#1)]
- [!code-vb[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/VB/parameterinfo_isin_isout_isoptional.vb#1)]  
-  
+ 
+After executing `DefineMethod`, the example searches the assemblies that are currently loaded until it finds the dynamic assembly. It loads `MyType` from the assembly, gets a <xref:System.Reflection.MethodInfo> object for the `MyMethod` method, and examines the parameters. The example uses the <xref:System.Reflection.ParameterInfo.IsIn%2A>, <xref:System.Reflection.ParameterInfo.IsOut%2A>, and <xref:System.Reflection.ParameterInfo.IsOptional%2A> properties to display information about the parameters.  
+ 
+[!code-cpp[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/CPP/ParameterInfo_IsIn_IsOut_IsOptional.cpp#1)]
+[!code-csharp[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/CS/parameterinfo_isin_isout_isoptional.cs#1)]
+[!code-vb[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/VB/parameterinfo_isin_isout_isoptional.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -685,14 +685,14 @@
           <see langword="true" /> if the parameter is a locale identifier; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
-  
- This method utilizes the `Lcid` flag of the `ParameterAttributes` enumerator.  
-  
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
-  
+This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
+ 
+This method utilizes the `Lcid` flag of the `ParameterAttributes` enumerator.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -726,33 +726,33 @@
           <see langword="true" /> if the parameter is optional; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
+This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
+ 
+This method utilizes the `Optional` flag of the `ParameterAttributes` enumerator.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ 
   
- This method utilizes the `Optional` flag of the `ParameterAttributes` enumerator.  
-  
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and <xref:System.Reflection.ParameterAttributes?displayProperty=fullName> attributes.  
-  
- The example contains a `DefineMethod` method that does the following:  
-  
+The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and <xref:System.Reflection.ParameterAttributes?displayProperty=fullName> attributes.  
+ 
+The example contains a `DefineMethod` method that does the following:  
+ 
 -   Creates a dynamic assembly containing a `MyType` type.  
-  
+ 
 -   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>.  
-  
+ 
 -   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> to complete the type.  
-  
- After executing `DefineMethod`, the example searches the assemblies that are currently loaded until it finds the dynamic assembly. It loads `MyType` from the assembly, gets a <xref:System.Reflection.MethodInfo> object for the `MyMethod` method, and examines the parameters. The example uses the <xref:System.Reflection.ParameterInfo.IsIn%2A>, <xref:System.Reflection.ParameterInfo.IsOut%2A>, and <xref:System.Reflection.ParameterInfo.IsOptional%2A> properties to display information about the parameters.  
-  
- [!code-cpp[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/CPP/ParameterInfo_IsIn_IsOut_IsOptional.cpp#1)]
- [!code-csharp[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/CS/parameterinfo_isin_isout_isoptional.cs#1)]
- [!code-vb[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/VB/parameterinfo_isin_isout_isoptional.vb#1)]  
-  
+ 
+After executing `DefineMethod`, the example searches the assemblies that are currently loaded until it finds the dynamic assembly. It loads `MyType` from the assembly, gets a <xref:System.Reflection.MethodInfo> object for the `MyMethod` method, and examines the parameters. The example uses the <xref:System.Reflection.ParameterInfo.IsIn%2A>, <xref:System.Reflection.ParameterInfo.IsOut%2A>, and <xref:System.Reflection.ParameterInfo.IsOptional%2A> properties to display information about the parameters.  
+ 
+[!code-cpp[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/cpp/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/CPP/ParameterInfo_IsIn_IsOut_IsOptional.cpp#1)]
+[!code-csharp[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/CS/parameterinfo_isin_isout_isoptional.cs#1)]
+[!code-vb[ParameterInfo_IsIn_IsOut_IsOptional#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParameterInfo_IsIn_IsOut_IsOptional/VB/parameterinfo_isin_isout_isoptional.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -786,33 +786,33 @@
           <see langword="true" /> if the parameter is an output parameter; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
+This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
+ 
+This method utilizes the `Out` flag of the `ParameterAttributes` enumerator.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ 
   
- This method utilizes the `Out` flag of the `ParameterAttributes` enumerator.  
-  
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and <xref:System.Reflection.ParameterAttributes?displayProperty=fullName> attributes.  
-  
- The example contains a `DefineMethod` method that does the following:  
-  
+The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and <xref:System.Reflection.ParameterAttributes?displayProperty=fullName> attributes.  
+ 
+The example contains a `DefineMethod` method that does the following:  
+ 
 -   Creates a dynamic assembly containing a `MyType` type.  
-  
+ 
 -   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>.  
-  
+ 
 -   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> to complete the type.  
-  
- After executing `DefineMethod`, the example searches the assemblies that are currently loaded until it finds the dynamic assembly. It loads `MyType` from the assembly, gets a <xref:System.Reflection.MethodInfo> object for the `MyMethod` method, and examines the parameters. The example uses the <xref:System.Reflection.ParameterInfo.IsIn%2A>, <xref:System.Reflection.ParameterInfo.IsOut%2A>, and <xref:System.Reflection.ParameterInfo.IsOptional%2A> properties to display information about the parameters.  
-  
- [!code-cpp[Classic ParameterInfo.IsOut Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ParameterInfo.IsOut Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ParameterInfo.IsOut Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ParameterInfo.IsOut Example/CS/source.cs#1)]
- [!code-vb[Classic ParameterInfo.IsOut Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ParameterInfo.IsOut Example/VB/source.vb#1)]  
-  
+ 
+After executing `DefineMethod`, the example searches the assemblies that are currently loaded until it finds the dynamic assembly. It loads `MyType` from the assembly, gets a <xref:System.Reflection.MethodInfo> object for the `MyMethod` method, and examines the parameters. The example uses the <xref:System.Reflection.ParameterInfo.IsIn%2A>, <xref:System.Reflection.ParameterInfo.IsOut%2A>, and <xref:System.Reflection.ParameterInfo.IsOptional%2A> properties to display information about the parameters.  
+ 
+[!code-cpp[Classic ParameterInfo.IsOut Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ParameterInfo.IsOut Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ParameterInfo.IsOut Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ParameterInfo.IsOut Example/CS/source.cs#1)]
+[!code-vb[Classic ParameterInfo.IsOut Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ParameterInfo.IsOut Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -846,14 +846,14 @@
           <see langword="true" /> if the parameter is a <see langword="Retval" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
-  
- This method utilizes the `Retval` flag of the `ParameterAttributes` enumerator.  
-  
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
-  
+This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
+ 
+This method utilizes the `Retval` flag of the `ParameterAttributes` enumerator.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -908,12 +908,12 @@
         <summary>The member in which the field is implemented.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is intended only for users who are deriving classes from `ParameterInfo`.  
-  
- Typical access to the parameter name is through the <xref:System.Reflection.ParameterInfo.Member%2A>.  
-  
+This field is intended only for users who are deriving classes from `ParameterInfo`.  
+ 
+Typical access to the parameter name is through the <xref:System.Reflection.ParameterInfo.Member%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -940,12 +940,12 @@
         <value>A value which, in combination with the module, uniquely identifies this parameter in metadata.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the module, use the <xref:System.Reflection.MemberInfo.Module%2A> property of the member that defines this parameter.  
-  
- The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, please see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
-  
+To get the module, use the <xref:System.Reflection.MemberInfo.Module%2A> property of the member that defines this parameter.  
+ 
+The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, please see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -978,24 +978,24 @@
         <value>The simple name of this parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property utilizes the protected <xref:System.Reflection.ParameterInfo.NameImpl> field, and depends on an optional metadata flag that might not be available in all compilers.  
-  
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call the <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName> method.  
-  
+This property utilizes the protected <xref:System.Reflection.ParameterInfo.NameImpl> field, and depends on an optional metadata flag that might not be available in all compilers.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call the <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName> method.  
+ 
 > [!WARNING]
 >  If this <xref:System.Reflection.ParameterInfo> represents a return value (that is, if it was obtained by using the <xref:System.Reflection.MethodInfo.ReturnParameter%2A?displayProperty=fullName> property), this property will be `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to get <xref:System.Reflection.ParameterInfo> objects for the parameters of a method, and then use the <xref:System.Reflection.ParameterInfo.Name%2A> property to obtain the parameter names.  
-  
- [!code-cpp[Classic ParameterInfo.Name Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ParameterInfo.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ParameterInfo.Name Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ParameterInfo.Name Example/CS/source.cs#1)]
- [!code-vb[Classic ParameterInfo.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ParameterInfo.Name Example/VB/source.vb#1)]  
-  
+The following example shows how to get <xref:System.Reflection.ParameterInfo> objects for the parameters of a method, and then use the <xref:System.Reflection.ParameterInfo.Name%2A> property to obtain the parameter names.  
+ 
+[!code-cpp[Classic ParameterInfo.Name Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ParameterInfo.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ParameterInfo.Name Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ParameterInfo.Name Example/CS/source.cs#1)]
+[!code-vb[Classic ParameterInfo.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ParameterInfo.Name Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1021,12 +1021,12 @@
         <summary>The name of the parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is intended only for users who are deriving classes from `ParameterInfo`.  
-  
- Typical access to the parameter name is through the <xref:System.Reflection.ParameterInfo.Name%2A>.  
-  
+This field is intended only for users who are deriving classes from `ParameterInfo`.  
+ 
+Typical access to the parameter name is through the <xref:System.Reflection.ParameterInfo.Name%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1059,21 +1059,21 @@
         <value>The <see langword="Type" /> object that represents the <see langword="Type" /> of this parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method depends on an optional metadata and might not be available in all compilers.  
+This method depends on an optional metadata and might not be available in all compilers.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ 
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to get <xref:System.Reflection.ParameterInfo> objects for the parameters of a method, and then use the <xref:System.Reflection.ParameterInfo.ParameterType%2A> property to display the type of each parameter.  
-  
- [!code-cpp[Classic ParameterInfo.ParameterType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ParameterInfo.ParameterType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ParameterInfo.ParameterType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ParameterInfo.ParameterType Example/CS/source.cs#1)]
- [!code-vb[Classic ParameterInfo.ParameterType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ParameterInfo.ParameterType Example/VB/source.vb#1)]  
-  
+The following example shows how to get <xref:System.Reflection.ParameterInfo> objects for the parameters of a method, and then use the <xref:System.Reflection.ParameterInfo.ParameterType%2A> property to display the type of each parameter.  
+ 
+[!code-cpp[Classic ParameterInfo.ParameterType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ParameterInfo.ParameterType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ParameterInfo.ParameterType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ParameterInfo.ParameterType Example/CS/source.cs#1)]
+[!code-vb[Classic ParameterInfo.ParameterType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ParameterInfo.ParameterType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1106,14 +1106,14 @@
         <value>An integer representing the position this parameter occupies in the parameter list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only parameters in the method signature (that is, in the formal parameter list) are considered when calculating the position. For instance methods, the hidden parameter that represents `this` (`Me` in Visual Basic) is not counted.  
-  
- This method utilizes the <xref:System.Reflection.ParameterInfo.PositionImpl> method.  
-  
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
-  
+Only parameters in the method signature (that is, in the formal parameter list) are considered when calculating the position. For instance methods, the hidden parameter that represents `this` (`Me` in Visual Basic) is not counted.  
+ 
+This method utilizes the <xref:System.Reflection.ParameterInfo.PositionImpl> method.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1139,12 +1139,12 @@
         <summary>The zero-based position of the parameter in the parameter list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is intended only for users who are deriving classes from `ParameterInfo`.  
-  
- Typical access to the name of the parameter is through <xref:System.Reflection.ParameterInfo.Position%2A>.  
-  
+This field is intended only for users who are deriving classes from `ParameterInfo`.  
+ 
+Typical access to the name of the parameter is through <xref:System.Reflection.ParameterInfo.Position%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1175,14 +1175,14 @@
         <value>The default value of the parameter, or <see cref="F:System.DBNull.Value" /> if the parameter has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be used in both the execution context and the reflection-only context.  
-  
- The default value is used when an actual value is not specified in the method call. A parameter can have a default value that is `null`. This is distinct from the case where a default value is not defined.  
-  
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call the <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName> method.  
-  
+This property can be used in both the execution context and the reflection-only context.  
+ 
+The default value is used when an actual value is not specified in the method call. A parameter can have a default value that is `null`. This is distinct from the case where a default value is not defined.  
+ 
+To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call the <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1285,10 +1285,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -1318,10 +1318,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -1347,10 +1347,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -1390,10 +1390,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>

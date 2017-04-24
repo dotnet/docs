@@ -18,12 +18,12 @@
     <summary>Provides the default implementation of an <see cref="T:System.Web.UI.IBindableTemplate" /> object, which ASP.NET uses whenever it parses two-way data-binding within the templated content of an ASP.NET control such as <see cref="T:System.Web.UI.WebControls.FormView" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET uses the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class whenever it parses declarative two-way data-binding within the templated content of an ASP.NET control such as <xref:System.Web.UI.WebControls.FormView>. It is not meant to be used directly in your code.  
-  
- For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
-  
+ASP.NET uses the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class whenever it parses declarative two-way data-binding within the templated content of an ASP.NET control such as <xref:System.Web.UI.WebControls.FormView>. It is not meant to be used directly in your code.  
+ 
+For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -71,10 +71,10 @@
         <returns>An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> of name/value pairs. The name represents the name of the data item field specified as the first parameter to bind within templated content. The value is the current value of a property value bound using two-way ASP.NET data-binding syntax.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.CompiledBindableTemplateBuilder.ExtractValues%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.IBindableTemplate.ExtractValues%28System.Web.UI.Control%29?displayProperty=fullName> method.  
-  
+The <xref:System.Web.UI.CompiledBindableTemplateBuilder.ExtractValues%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.IBindableTemplate.ExtractValues%28System.Web.UI.Control%29?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -100,10 +100,10 @@
         <summary>Defines the <see cref="T:System.Web.UI.Control" /> object that child controls and templates belong to. These child controls are in turn defined within an inline template.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%28System.Web.UI.Control%29?displayProperty=fullName> method.  
-  
+The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%28System.Web.UI.Control%29?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -31,21 +31,21 @@
     <summary>Identifies how to marshal parameters or fields to unmanaged code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration with the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> attribute to specify how types are marshaled during interoperation with unmanaged code.  You can use this enumeration to marshal code using simple value types (I1, I2, I4, I8, R4, R8, U2, U4, and U8), unmanaged types that are unavailable in the .NET Framework, and various miscellaneous types.  
+Use the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration with the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> attribute to specify how types are marshaled during interoperation with unmanaged code.  You can use this enumeration to marshal code using simple value types (I1, I2, I4, I8, R4, R8, U2, U4, and U8), unmanaged types that are unavailable in the .NET Framework, and various miscellaneous types.  
+ 
+For more information, see [Interoperating with Unmanaged Code](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258).  
+ 
   
- For more information, see [Interoperating with Unmanaged Code](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258).  
-  
-   
-  
+ 
 ## Examples  
- The following code fragment demonstrates how to declare, in managed source code, an unmanaged interface implemented by a COM component. The <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=fullName> attribute prevents the `IMyStorage` interface from being exported back for use by COM. (COM clients should use the existing COM component directly.) In this example, <xref:System.Runtime.InteropServices.MarshalAsAttribute> specifies serveral <xref:System.Runtime.InteropServices.UnmanagedType> members, which represent the types used by the original COM interface.  
-  
- [!code-cpp[ImprovedInteropSnippets#2](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile2.cpp#2)]
- [!code-csharp[ImprovedInteropSnippets#2](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile2.cs#2)]
- [!code-vb[ImprovedInteropSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile2.vb#2)]  
-  
+The following code fragment demonstrates how to declare, in managed source code, an unmanaged interface implemented by a COM component. The <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=fullName> attribute prevents the `IMyStorage` interface from being exported back for use by COM. (COM clients should use the existing COM component directly.) In this example, <xref:System.Runtime.InteropServices.MarshalAsAttribute> specifies serveral <xref:System.Runtime.InteropServices.UnmanagedType> members, which represent the types used by the original COM interface.  
+ 
+[!code-cpp[ImprovedInteropSnippets#2](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile2.cpp#2)]
+[!code-csharp[ImprovedInteropSnippets#2](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile2.cs#2)]
+[!code-vb[ImprovedInteropSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile2.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -224,10 +224,10 @@
         <summary>Used for in-line, fixed-length character arrays that appear within a structure. The character type used with <see cref="F:System.Runtime.InteropServices.UnmanagedType.ByValTStr" /> is determined by the <see cref="T:System.Runtime.InteropServices.CharSet" /> argument of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> attribute applied to the containing structure. Always use the <see cref="F:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst" /> field to indicate the size of the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- .NET Framework ByValTStr types behave like C-style, fixed-size strings inside a structure (for example, `char s[5]`). The behavior in managed code differs from the Microsoft Visual Basic 6.0 behavior, which is not null terminated (for example, `MyString As String * 5`).  
-  
+.NET Framework ByValTStr types behave like C-style, fixed-size strings inside a structure (for example, `char s[5]`). The behavior in managed code differs from the Microsoft Visual Basic 6.0 behavior, which is not null terminated (for example, `MyString As String * 5`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -781,10 +781,10 @@
         <summary>A 2-byte, null-terminated Unicode character string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that you cannot use the LPWStr value with an unmanaged string unless the string was created by using the unmanaged `CoTaskMemAlloc` function.  
-  
+Note that you cannot use the LPWStr value with an unmanaged string unless the string was created by using the unmanaged `CoTaskMemAlloc` function.  
+ 
  ]]></format>
         </remarks>
       </Docs>

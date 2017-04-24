@@ -14,12 +14,12 @@
     <summary>Handles <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> subelements that do not have specific implementations or handlers registered on the machine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.KeyInfo> subelements with specific implementations are <xref:System.Security.Cryptography.Xml.KeyInfoName>, <xref:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod>, and <xref:System.Security.Cryptography.Xml.KeyInfoX509Data>.  
-  
- For more information about the `<KeyInfo>` element, see Section 4.4 of the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/, or see the XML Encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
-  
+The <xref:System.Security.Cryptography.Xml.KeyInfo> subelements with specific implementations are <xref:System.Security.Cryptography.Xml.KeyInfoName>, <xref:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod>, and <xref:System.Security.Cryptography.Xml.KeyInfoX509Data>.  
+ 
+For more information about the `<KeyInfo>` element, see Section 4.4 of the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/, or see the XML Encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <returns>An XML representation of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoNode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlElement> returned by this method is suitable for use as a subelement of an XMLDSIG or an XML encryption `<KeyInfo>` element.  
-  
+The <xref:System.Xml.XmlElement> returned by this method is suitable for use as a subelement of an XMLDSIG or an XML encryption `<KeyInfo>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

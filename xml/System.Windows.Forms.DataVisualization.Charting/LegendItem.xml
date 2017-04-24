@@ -19,18 +19,18 @@
     <summary>Represents a legend item, which is stored in the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> class represents a legend item, which can be either a default or custom item:  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> class represents a legend item, which can be either a default or custom item:  
+ 
 -   Default legend items are automatically inserted into the legend for either data series or data points. Default entries for pie and doughnut charts represent the plotted data points, whereas entries for all other chart types represent the plotted series. By default, these legend entries use the data point or series color for the symbol color, and the name of the series or data point for the legend item text. Default legend items can be customized or deleted at run time by using the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event of the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control.  
-  
+ 
 -   Custom legend items have user-defined text, symbol color, and so forth. Unlike the default entries, they are not connected with the plotted data. Custom legend items can be added at either design time or run time, using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Legend> object.  
-  
- Legend symbols can be rectangles, lines or markers, depending on the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property setting of a <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> object.  
-  
- The text of a custom legend item is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.Name%2A> property.  
-  
+ 
+Legend symbols can be rectangles, lines or markers, depending on the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property setting of a <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> object.  
+ 
+The text of a custom legend item is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.Name%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,12 +49,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> class.  
-  
- Note that you can also add custom legend items using the `Add` and `Insert` methods associated with the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> collection property of the <xref:System.Windows.Forms.DataVisualization.Charting.Legend> object.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> class.  
+ 
+Note that you can also add custom legend items using the `Add` and `Insert` methods associated with the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> collection property of the <xref:System.Windows.Forms.DataVisualization.Charting.Legend> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,10 +80,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> class with the specified name, color and image path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the `image` or `color` parameter needs to be specified. If both are specified, the `image` parameter has precedence.  
-  
+Only the `image` or `color` parameter needs to be specified. If both are specified, the `image` parameter has precedence.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,25 +116,25 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> enumeration that specifies the orientation for the background gradient of a legend item. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackGradientStyle%2A> property to determine whether a title will display a gradient, and to determine the orientation of the gradient if one is used.  
-  
- This property is only implemented if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle>.  
-  
- For a listing of available patterns, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.GradientStyle> enumeration.  
-  
- To use gradient colors:  
-  
+Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackGradientStyle%2A> property to determine whether a title will display a gradient, and to determine the orientation of the gradient if one is used.  
+ 
+This property is only implemented if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle>.  
+ 
+For a listing of available patterns, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.GradientStyle> enumeration.  
+ 
+To use gradient colors:  
+ 
 -   Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.Color%2A> property to set the primary color.  
-  
+ 
 -   Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackGradientStyle%2A> property to set the secondary color.  
-  
+ 
 -   Use this <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackGradientStyle%2A> property to set the desired gradient style.  
-  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,18 +167,18 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> enumeration that specifies the hatching style of a legend item. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle> enumeration specifies the hatch pattern used by a brush of type <xref:System.Drawing.Drawing2D.HatchBrush>. The hatch pattern consists of a solid background color and lines drawn over the background.  
-  
- For a listing of available hatching styles, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle> enumeration.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle> enumeration specifies the hatch pattern used by a brush of type <xref:System.Drawing.Drawing2D.HatchBrush>. The hatch pattern consists of a solid background color and lines drawn over the background.  
+ 
+For a listing of available hatching styles, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle> enumeration.  
+ 
 > [!NOTE]
 >  The color of hatching lines is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackSecondaryColor%2A> property.  
-  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that will be displayed as transparent  when the background image is drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,29 +256,29 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used for the secondary color of background with hatching or gradient fill. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackSecondaryColor%2A> property is one of several related properties that determine the secondary background color of many <xref:System.Windows.Forms.DataVisualization.Charting.Chart> objects; it is used when gradient colors are being applied.  
-  
- This property is only implemented if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle>.  
-  
- You can set <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackSecondaryColor%2A> to any valid ARGB (alpha, red, green, blue) value.  
-  
- If hatching is used, the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackSecondaryColor%2A> property determines the color of the hatching lines for the legend item.  
-  
- To use gradient colors for a legend cell's background:  
-  
- To use gradient colors:  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackSecondaryColor%2A> property is one of several related properties that determine the secondary background color of many <xref:System.Windows.Forms.DataVisualization.Charting.Chart> objects; it is used when gradient colors are being applied.  
+ 
+This property is only implemented if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle>.  
+ 
+You can set <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackSecondaryColor%2A> to any valid ARGB (alpha, red, green, blue) value.  
+ 
+If hatching is used, the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackSecondaryColor%2A> property determines the color of the hatching lines for the legend item.  
+ 
+To use gradient colors for a legend cell's background:  
+ 
+To use gradient colors:  
+ 
 -   Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.Color%2A> property to set the primary color.  
-  
+ 
 -   Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackGradientStyle%2A> property to set the secondary color.  
-  
+ 
 -   Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackGradientStyle%2A> property to set the desired gradient style.  
-  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,16 +314,16 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used to draw the border color of a legend item. The default color is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set this property to any valid ARGB (alpha, red, green, blue) value.  
-  
+You can set this property to any valid ARGB (alpha, red, green, blue) value.  
+ 
 > [!NOTE]
 >  If you use a marker for a custom legend item. this property will set the border color of the marker. However, if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerBorderColor%2A> property is also set, its value has precedence.  
-  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,15 +353,15 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value that determines the border style of the legend item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property determines the line style used for a border. The line can be solid, dotted, and so forth.  
-  
- For other border styles, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle> enumeration topic.  
-  
+This property determines the line style used for a border. The line can be solid, dotted, and so forth.  
+ 
+For other border styles, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle> enumeration topic.  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,12 +391,12 @@
         <value>An<see langword=" integer" /> value that determines the width, in pixels, of the legend item border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BorderWidth%2A> property can also be used to set the width of lines when, for example, custom legend items are displayed with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle> style.  
-  
- **Note** This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BorderWidth%2A> property can also be used to set the width of lines when, for example, custom legend items are displayed with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle> style.  
+ 
+**Note** This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -426,13 +426,13 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellCollection" /> object that represents the collection of cells in the legend item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A legend item consists of one or more legend cells, each represented by a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> object and stored in a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellCollection>.  
-  
+A legend item consists of one or more legend cells, each represented by a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> object and stored in a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellCollection>.  
+ 
 > [!NOTE]
 >  This property is applicable to the entire <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -471,19 +471,19 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that is used to draw the legend item. The default color is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.Color%2A> property is one several related properties that get or set the color of many chart elements; it can be set to any ARGB (alpha, red, green, blue) value.  
-  
- If this property is set for both a data point and its series, the data point color will have precedence. The series color will only be used for data points that do not define their own color.  
-  
- If a custom legend item uses a marker, this property will determine the marker color. However, if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerColor%2A> property is set, its value then has precedence.  
-  
- This property will be ignored if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.Image%2A> property specifies an image to be used for the legend item symbol.  
-  
+This <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.Color%2A> property is one several related properties that get or set the color of many chart elements; it can be set to any ARGB (alpha, red, green, blue) value.  
+ 
+If this property is set for both a data point and its series, the data point color will have precedence. The series color will only be used for data points that do not define their own color.  
+ 
+If a custom legend item uses a marker, this property will determine the marker color. However, if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerColor%2A> property is set, its value then has precedence.  
+ 
+This property will be ignored if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.Image%2A> property specifies an image to be used for the legend item symbol.  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -536,10 +536,10 @@
           <see langword="true" /> if the legend item is enabled; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is applicable to the entire <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem>.  
-  
+This property is applicable to the entire <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,19 +575,19 @@
         <value>A <see langword="string" /> value that represents the URL of an image file. The default value is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property determines the image file to be used for the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> symbol.  
-  
- The path can be an absolute or a relative URL.  
-  
- If you set a background image, that image will be displayed regardless of the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property setting.  
-  
- Set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackImageTransparentColor%2A> property to enable one color used by the image to appear transparent.  
-  
+This property determines the image file to be used for the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> symbol.  
+ 
+The path can be an absolute or a relative URL.  
+ 
+If you set a background image, that image will be displayed regardless of the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property setting.  
+ 
+Set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BackImageTransparentColor%2A> property to enable one color used by the image to appear transparent.  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -620,15 +620,15 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle" /> enumeration value that specifies the display style of the legend item image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These styles determine how the item's corresponding symbol will be displayed.  
-  
- A <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle> style can be combined with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle> style. To accomplish this, first set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property to <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle>. Then use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerImage%2A> property to specify a marker image, or the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerStyle%2A> property to specify a marker style. The resulting symbol will be a combination of a line and an image or marker.  
-  
+These styles determine how the item's corresponding symbol will be displayed.  
+ 
+A <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle> style can be combined with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle> style. To accomplish this, first set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property to <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle>. Then use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerImage%2A> property to specify a marker image, or the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerStyle%2A> property to specify a marker style. The resulting symbol will be a combination of a line and an image or marker.  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -696,17 +696,17 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the ARGB (alpha, red, green, blue) color of a marker border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use markers, set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerStyle%2A> property to a value other than <xref:System.Windows.Forms.DataVisualization.Charting.MarkerStyle>.  
-  
- Note that markers will not be applied to pie, doughnut, and any stacked chart types.  
-  
- For custom legends, the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BorderColor%2A> property will also set the border color of markers. The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerBorderColor%2A> property setting has precedence over the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BorderColor%2A> property setting.  
-  
+To use markers, set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerStyle%2A> property to a value other than <xref:System.Windows.Forms.DataVisualization.Charting.MarkerStyle>.  
+ 
+Note that markers will not be applied to pie, doughnut, and any stacked chart types.  
+ 
+For custom legends, the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BorderColor%2A> property will also set the border color of markers. The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerBorderColor%2A> property setting has precedence over the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.BorderColor%2A> property setting.  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -733,10 +733,10 @@
         <value>An <see langword="integer" /> value that represents the border width of the markers. The default value is one (1) pixel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -775,10 +775,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the color of the markers. The default color is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -814,21 +814,21 @@
         <value>A <see langword="string" /> value that represents the URL of an image file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents a path to an image file, which can be an absolute or relative URL.  
-  
- To use markers, set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerStyle%2A> property to a value other than <xref:System.Windows.Forms.DataVisualization.Charting.MarkerStyle>.  
-  
- The  <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerImage%2A> property takes precedence over the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerColor%2A> property.  
-  
- A marker image can be any valid graphics file supported by .NET Framework, including icons.  
-  
- To set one color of the marker image to be transparent, use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerImageTransparentColor%2A> property.  
-  
+Represents a path to an image file, which can be an absolute or relative URL.  
+ 
+To use markers, set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerStyle%2A> property to a value other than <xref:System.Windows.Forms.DataVisualization.Charting.MarkerStyle>.  
+ 
+The  <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerImage%2A> property takes precedence over the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerColor%2A> property.  
+ 
+A marker image can be any valid graphics file supported by .NET Framework, including icons.  
+ 
+To set one color of the marker image to be transparent, use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerImageTransparentColor%2A> property.  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -867,15 +867,15 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that represents an ARGB (alpha, red, green, blue) color that will be replaced with a transparent color when the marker image is drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerImageTransparentColor%2A> property is used to select one color in a marker image that will be displayed as transparent.  
-  
- You can set this property to any valid ARGB (alpha, red, green, blue) value.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerImageTransparentColor%2A> property is used to select one color in a marker image that will be displayed as transparent.  
+ 
+You can set this property to any valid ARGB (alpha, red, green, blue) value.  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -908,15 +908,15 @@
         <value>An <see langword="integer" /> expression that represents the height and width of the plotting area of markers, in pixels. The default value is 5 pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use markers, set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerStyle%2A> property to a value other than <xref:System.Windows.Forms.DataVisualization.Charting.MarkerStyle>.  
-  
- Note that markers will not be applied to data points of pie, doughnut and any stacked chart types.  
-  
+To use markers, set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerStyle%2A> property to a value other than <xref:System.Windows.Forms.DataVisualization.Charting.MarkerStyle>.  
+ 
+Note that markers will not be applied to data points of pie, doughnut and any stacked chart types.  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -952,13 +952,13 @@
         <value>A <see cref="P:System.Windows.Forms.DataVisualization.Charting.LegendItem.MarkerStyle" /> integer enumeration that specifies a legend item marker style. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.MarkerStyle.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To disable markers, set this property to <xref:System.Windows.Forms.DataVisualization.Charting.MarkerStyle>.  
-  
+To disable markers, set this property to <xref:System.Windows.Forms.DataVisualization.Charting.MarkerStyle>.  
+ 
 > [!NOTE]
 >  This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1020,10 +1020,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used to draw the color of the legend item separator. The default value is <see cref="P:System.Drawing.Color.Black" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is applicable to the entire <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem>.  
-  
+This property is applicable to the entire <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1079,17 +1079,17 @@
         <value>A <see langword="string" /> value that determines the name of the series associated with a default legend item. The default value is a zero-length string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should only be used in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event, to determine which data series a default legend entry represents.  
-  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.SeriesName%2A> property applies to all charts except pie and sphere charts; their default legend items correspond to plotted data points, and not to plotted series. When you deal with pie and sphere charts, use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.SeriesPointIndex%2A> property instead.  
-  
- This property should not be set by the developer.  
-  
+This property should only be used in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event, to determine which data series a default legend entry represents.  
+ 
+The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.SeriesName%2A> property applies to all charts except pie and sphere charts; their default legend items correspond to plotted data points, and not to plotted series. When you deal with pie and sphere charts, use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.SeriesPointIndex%2A> property instead.  
+ 
+This property should not be set by the developer.  
+ 
 > [!NOTE]
 >  This property is applicable to the entire <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1122,17 +1122,17 @@
         <value>An <see langword="integer" /> value that represents the location of the default legend's associated data point in a zero-based index. All chart types except for pie and doughnut charts will return a negative one (-1).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should only be used in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event to determine the <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint> object that is represented by a default pie or sphere chart legend entry.  
-  
- Chart types other than pie or sphere charts will return a negative one (-1), because the default legend items correspond to plotted series, and not plotted data points. Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.SeriesName%2A> property for these chart types.  
-  
- This property should not be set by the developer.  
-  
+This property should only be used in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event to determine the <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint> object that is represented by a default pie or sphere chart legend entry.  
+ 
+Chart types other than pie or sphere charts will return a negative one (-1), because the default legend items correspond to plotted series, and not plotted data points. Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.SeriesName%2A> property for these chart types.  
+ 
+This property should not be set by the developer.  
+ 
 > [!NOTE]
 >  This property is applicable to the entire <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1168,16 +1168,16 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the shadow color of a legend item. The default color is <see cref="P:System.Drawing.Color.Black" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets or sets the shadow color of several chart elements, and can be set to any valid ARGB (alpha, red, green, blue) value.  
-  
- The alpha value can be used to achieve a "realistic" shadowing effect; try using a color of "128,0,0,0" for shadows.  
-  
- To implement a shadow, set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ShadowOffset%2A> property to a value other than zero (0).  
-  
- **Note** This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+Gets or sets the shadow color of several chart elements, and can be set to any valid ARGB (alpha, red, green, blue) value.  
+ 
+The alpha value can be used to achieve a "realistic" shadowing effect; try using a color of "128,0,0,0" for shadows.  
+ 
+To implement a shadow, set the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ShadowOffset%2A> property to a value other than zero (0).  
+ 
+**Note** This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1207,12 +1207,12 @@
         <value>An <see langword="integer" /> value that represents the shadow offset, in pixels, of the relevant chart element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To implement shadowing, use a value other than zero (0). A positive value will result in a shadow that shifts down and to the right. A negative value will result in a shadow that shifts up and to the left.  
-  
- **Note** This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
-  
+To implement shadowing, use a value other than zero (0). A positive value will result in a shadow that shifts down and to the right. A negative value will result in a shadow that shifts up and to the left.  
+ 
+**Note** This property is applicable only to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell> objects with a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> of either <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType> or <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1242,13 +1242,13 @@
         <value>A <see langword="string" /> value that represents the tooltip for the legend item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property allows you to set special keywords to display different types of chart-related data. For more information, see [Keywords &#91;rs_vsDataVis&#93;](http://msdn.microsoft.com/library/8a19d422-4eee-45ff-a5c3-feff7b76fa8c).  
-  
+This property allows you to set special keywords to display different types of chart-related data. For more information, see [Keywords &#91;rs_vsDataVis&#93;](http://msdn.microsoft.com/library/8a19d422-4eee-45ff-a5c3-feff7b76fa8c).  
+ 
 > [!NOTE]
 >  This property is applicable to the entire <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

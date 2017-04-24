@@ -20,12 +20,12 @@
     <summary>Provides a base implementation for channels that want to expose a dictionary interface to their properties.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> class handles the complexity of asking the sinks in a channel sink chain for their properties. After the channel constructs its sink chain (if applicable), it must set the <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties.SinksWithProperties> property.  
-  
- This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
+The <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> class handles the complexity of asking the sinks in a channel sink chain for their properties. After the channel constructs its sink chain (if applicable), it must set the <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties.SinksWithProperties> property.  
+ 
+This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -69,10 +69,10 @@
         <value>A <see cref="T:System.Collections.IDictionary" /> of the channel properties associated with the current channel object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channel properties are used to configure the channel at run time.  
-  
+Channel properties are used to configure the channel at run time.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -96,10 +96,10 @@
         <summary>Indicates the top channel sink in the channel sink stack.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channel sinks provide a plug-in point that allows access to the underlying messages that are flowing through the channel as well as the stream that is used by the transport mechanism to send messages to a remote object. Channel sinks are linked together in a chain of channel sink providers, and all channel messages flow through this chain of sinks before the messages are serialized and transported.  
-  
+Channel sinks provide a plug-in point that allows access to the underlying messages that are flowing through the channel as well as the stream that is used by the transport mechanism to send messages to a remote object. Channel sinks are linked together in a chain of channel sink providers, and all channel messages flow through this chain of sinks before the messages are serialized and transported.  
+ 
  ]]></format>
         </remarks>
       </Docs>

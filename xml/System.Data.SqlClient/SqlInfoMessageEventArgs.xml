@@ -23,12 +23,12 @@
     <summary>Provides data for the <see cref="E:System.Data.SqlClient.SqlConnection.InfoMessage" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event contains a <xref:System.Data.SqlClient.SqlErrorCollection> collection which contains the warnings sent from the server.  
-  
- An <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event is generated when a SQL Server message with a severity level of 10 or less occurs.  
-  
+The <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event contains a <xref:System.Data.SqlClient.SqlErrorCollection> collection which contains the warnings sent from the server.  
+ 
+An <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event is generated when a SQL Server message with a severity level of 10 or less occurs.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,10 +86,10 @@
         <value>The full text of the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a wrapper for the <xref:System.Data.SqlClient.SqlError.Message%2A> property of the first <xref:System.Data.SqlClient.SqlError> in the <xref:System.Data.SqlClient.SqlInfoMessageEventArgs.Errors%2A> collection.  
-  
+This is a wrapper for the <xref:System.Data.SqlClient.SqlError.Message%2A> property of the first <xref:System.Data.SqlClient.SqlError> in the <xref:System.Data.SqlClient.SqlInfoMessageEventArgs.Errors%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>The name of the object that generated the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a wrapper for the <xref:System.Data.SqlClient.SqlError.Source%2A> property of the first <xref:System.Data.SqlClient.SqlError> in the <xref:System.Data.SqlClient.SqlInfoMessageEventArgs.Errors%2A> collection.  
-  
+This is a wrapper for the <xref:System.Data.SqlClient.SqlError.Source%2A> property of the first <xref:System.Data.SqlClient.SqlError> in the <xref:System.Data.SqlClient.SqlInfoMessageEventArgs.Errors%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

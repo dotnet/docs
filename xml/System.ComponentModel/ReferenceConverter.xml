@@ -19,19 +19,19 @@
     <summary>Provides a type converter to convert object references to and from other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ReferenceConverter> is typically used within the context of sited components or a design environment. Without a component site or a usable <xref:System.ComponentModel.ITypeDescriptorContext>, this converter is of little use.  
-  
- This converter converts a reference of an object that implements the <xref:System.ComponentModel.IComponent> interface and displays its properties in the **Properties** window.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
+The <xref:System.ComponentModel.ReferenceConverter> is typically used within the context of sited components or a design environment. Without a component site or a usable <xref:System.ComponentModel.ITypeDescriptorContext>, this converter is of little use.  
+ 
+This converter converts a reference of an object that implements the <xref:System.ComponentModel.IComponent> interface and displays its properties in the **Properties** window.  
+ 
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
 > [!NOTE]
 >  You should never create an instance of the <xref:System.ComponentModel.ReferenceConverter> class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
- This class provides the <xref:System.ComponentModel.ReferenceConverter.IsValueAllowed%2A> method to check whether a particular value can be added to the standard values collection. If you do not want to add the value to the collection, override this method.  
-  
+ 
+This class provides the <xref:System.ComponentModel.ReferenceConverter.IsValueAllowed%2A> method to check whether a particular value can be added to the standard values collection. If you do not want to add the value to the collection, override this method.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -91,10 +91,10 @@
           <see langword="true" /> if this object can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
@@ -170,12 +170,12 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method most commonly converts types to and from string objects.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+This method most commonly converts types to and from string objects.  
+ 
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -209,10 +209,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a standard set of valid values, or <see langword="null" /> if the data type does not support a standard set of values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
           <see langword="true" /> because the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> returned from <see cref="M:System.ComponentModel.ReferenceConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> is an exhaustive list of possible values. This method never returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
           <see langword="true" /> because <see cref="M:System.ComponentModel.ReferenceConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> can be called to find a common set of values the object supports. This method never returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,10 +316,10 @@
           <see langword="true" /> if the value is allowed and can be added to the standard values collection; <see langword="false" /> if the value cannot be added to the standard values collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called for each value that matches the type associated with this <xref:System.ComponentModel.ReferenceConverter> and for each component found that is of the associated type. By default, this method returns `true`, that is, it allows adding the value into the standard values collection.  
-  
+This method is called for each value that matches the type associated with this <xref:System.ComponentModel.ReferenceConverter> and for each component found that is of the associated type. By default, this method returns `true`, that is, it allows adding the value into the standard values collection.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

@@ -24,19 +24,19 @@
     <summary>Defines the usage of a key contained within an X.509 certificate.  This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension> class uses the flags in the <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags> enumeration to define or determine key usage.  
+The <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension> class uses the flags in the <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags> enumeration to define or determine key usage.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension> class to display the information.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension> class to display the information.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,14 +65,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension> class to display the information.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension> class to display the information.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension" /> class using an <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object and a value that identifies whether the extension is critical.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if the information to create the extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
-  
+Use this constructor if the information to create the extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <value>One of the <see cref="P:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.KeyUsages" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns a value from the <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.KeyUsages%2A> enumeration that indicates how to use the certificate key.  
-  
+This property returns a value from the <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.KeyUsages%2A> enumeration that indicates how to use the certificate key.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The extension cannot be decoded.</exception>

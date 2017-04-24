@@ -22,19 +22,19 @@
     <summary>Represents a statement consisting of a single comment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeCommentStatement> can be used to represent a single-line comment statement. <xref:System.CodeDom.CodeCommentStatement> is a statement, so it can be inserted into a statements collection and will appear on its own line. <xref:System.CodeDom.CodeCommentStatement> can also be added to the comments collection of <xref:System.CodeDom.CodeNamespace> or any object that derives from <xref:System.CodeDom.CodeTypeMember>.  
+<xref:System.CodeDom.CodeCommentStatement> can be used to represent a single-line comment statement. <xref:System.CodeDom.CodeCommentStatement> is a statement, so it can be inserted into a statements collection and will appear on its own line. <xref:System.CodeDom.CodeCommentStatement> can also be added to the comments collection of <xref:System.CodeDom.CodeNamespace> or any object that derives from <xref:System.CodeDom.CodeTypeMember>.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates using a <xref:System.CodeDom.CodeCommentStatement> to represent a comment in source code.  
-  
- [!code-cpp[CodeCommentExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCommentExample/CPP/codecommentexample.cpp#2)]
- [!code-csharp[CodeCommentExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCommentExample/CS/codecommentexample.cs#2)]
- [!code-vb[CodeCommentExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCommentExample/VB/codecommentexample.vb#2)]  
-  
+This example demonstrates using a <xref:System.CodeDom.CodeCommentStatement> to represent a comment in source code.  
+ 
+[!code-cpp[CodeCommentExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCommentExample/CPP/codecommentexample.cpp#2)]
+[!code-csharp[CodeCommentExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCommentExample/CS/codecommentexample.cs#2)]
+[!code-vb[CodeCommentExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCommentExample/VB/codecommentexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -110,23 +110,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCommentStatement" /> class using the specified text and documentation comment flag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `docComment` parameter is `true`, the <xref:System.CodeDom.CodeCommentStatement> is a documentation comment and the comment is structured using triple delimiter characters. For example, in C# the comment is "`///`", in Visual Basic "`'''`". Documentation comments are used to identify an XML comment field, such as a type or member summary identified by the `<summary>` element.  
+If the `docComment` parameter is `true`, the <xref:System.CodeDom.CodeCommentStatement> is a documentation comment and the comment is structured using triple delimiter characters. For example, in C# the comment is "`///`", in Visual Basic "`'''`". Documentation comments are used to identify an XML comment field, such as a type or member summary identified by the `<summary>` element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.CodeDom.CodeCommentStatement.%23ctor%28System.String%2CSystem.Boolean%29> constructor to create a comment statement to be used as an XML comment field. This example is part of a larger example that follows.  
-  
- [!code-csharp[CodeDomHelloWorldSample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#3)]
- [!code-vb[CodeDomHelloWorldSample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#3)]  
-  
- The following code example demonstrates the creation of a simple "Hello World" console application and the generation of an XML documentation file for the compiled application.  
-  
- [!code-csharp[CodeDomHelloWorldSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#1)]
- [!code-vb[CodeDomHelloWorldSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.CodeDom.CodeCommentStatement.%23ctor%28System.String%2CSystem.Boolean%29> constructor to create a comment statement to be used as an XML comment field. This example is part of a larger example that follows.  
+ 
+[!code-csharp[CodeDomHelloWorldSample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#3)]
+[!code-vb[CodeDomHelloWorldSample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#3)]  
+ 
+The following code example demonstrates the creation of a simple "Hello World" console application and the generation of an XML documentation file for the compiled application.  
+ 
+[!code-csharp[CodeDomHelloWorldSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#1)]
+[!code-vb[CodeDomHelloWorldSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

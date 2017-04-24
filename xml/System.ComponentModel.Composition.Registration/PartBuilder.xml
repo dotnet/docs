@@ -193,10 +193,10 @@
         <returns>The current object, to allow chaining.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will not export <xref:System.IDisposable> or <xref:System.ComponentModel.Composition.IPartImportsSatisfiedNotification> objects.  
-  
+This method will not export <xref:System.IDisposable> or <xref:System.ComponentModel.Composition.IPartImportsSatisfiedNotification> objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -226,10 +226,10 @@
         <returns>The current object, to allow chaining.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will not export <xref:System.IDisposable> or <xref:System.ComponentModel.Composition.IPartImportsSatisfiedNotification> objects.  
-  
+This method will not export <xref:System.IDisposable> or <xref:System.ComponentModel.Composition.IPartImportsSatisfiedNotification> objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

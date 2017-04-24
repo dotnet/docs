@@ -114,12 +114,12 @@
         <summary>Signs a ClickOnce manifest or PE file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can only sign a PE file if the X509Certificate2 parameter represents a certificate in the current user's personal certificate store.  
-  
- This overload of the method calls SignTool.exe and therefore requires the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to be installed.  
-  
+This function can only sign a PE file if the X509Certificate2 parameter represents a certificate in the current user's personal certificate store.  
+ 
+This overload of the method calls SignTool.exe and therefore requires the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to be installed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <summary>Signs a ClickOnce manifest or PE file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload of the method calls SignTool.exe and therefore requires the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to be installed.  
-  
+This overload of the method calls SignTool.exe and therefore requires the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to be installed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <summary>Signs a ClickOnce manifest.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function is only for signing a manifest, not a PE file.  
-  
+This function is only for signing a manifest, not a PE file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,10 +211,10 @@
         <returns>The converted permission set object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Converts an <xref:System.Xml.XmlElement> object to a <xref:System.Security.PermissionSet> object.  
-  
+Converts an <xref:System.Xml.XmlElement> object to a <xref:System.Security.PermissionSet> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

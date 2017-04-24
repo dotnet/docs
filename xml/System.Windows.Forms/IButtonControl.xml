@@ -11,19 +11,19 @@
     <summary>Allows a control to act like a button on a form.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of where this interface might be implemented is default and cancel button processing. Default buttons are notified when an unprocessed ENTER key is entered for a form, just like a dialog box would be closed. Similarly, cancel buttons are notified whenever an unprocessed ESC key is entered on a form, much like a dialog box would be dismissed.  
+An example of where this interface might be implemented is default and cancel button processing. Default buttons are notified when an unprocessed ENTER key is entered for a form, just like a dialog box would be closed. Similarly, cancel buttons are notified whenever an unprocessed ESC key is entered on a form, much like a dialog box would be dismissed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
-  
- [!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
- [!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
- [!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
-  
+The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
+ 
+[!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
+[!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
+[!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -48,19 +48,19 @@
         <value>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a form is shown as a dialog box using the <xref:System.Windows.Forms.Form.ShowDialog%2A> method and one of its buttons is clicked, the button's <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> value is assigned to the form's <xref:System.Windows.Forms.Form.DialogResult%2A> property.  
+When a form is shown as a dialog box using the <xref:System.Windows.Forms.Form.ShowDialog%2A> method and one of its buttons is clicked, the button's <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> value is assigned to the form's <xref:System.Windows.Forms.Form.DialogResult%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
-  
- [!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
- [!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
- [!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
-  
+The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
+ 
+[!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
+[!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
+[!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,19 +86,19 @@
         <summary>Notifies a control that it is the default button so that its appearance and behavior is adjusted accordingly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by a parent form to make a control the default button. Default buttons are set to have an extra thick border.  
+This method is called by a parent form to make a control the default button. Default buttons are set to have an extra thick border.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
-  
- [!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
- [!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
- [!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
-  
+The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
+ 
+[!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
+[!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
+[!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,19 +120,19 @@
         <summary>Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called for the button that has focus, or for the default button (if no other button has focus) when the user presses the ENTER key. This method is also called when the user presses the ESC key if the button is set as the cancel button.  
+This method is called for the button that has focus, or for the default button (if no other button has focus) when the user presses the ENTER key. This method is also called when the user presses the ESC key if the button is set as the cancel button.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
-  
- [!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
- [!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
- [!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
-  
+The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
+ 
+[!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
+[!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
+[!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -28,14 +28,14 @@
     <summary>Represents a vector that is used to encode three-dimensional physical rotations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Quaternion> structure is used to efficiently rotate an object about the (x,y,z) vector by the angle theta, where:  
-  
+The <xref:System.Numerics.Quaternion> structure is used to efficiently rotate an object about the (x,y,z) vector by the angle theta, where:  
+ 
 ```  
 w = cos(theta/2)  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -406,10 +406,10 @@ w = cos(theta/2)
           <see langword="true" /> if the two quaternions are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two quaternions are equal if each of their corresponding components is equal.  
-  
+Two quaternions are equal if each of their corresponding components is equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@ w = cos(theta/2)
           <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" /><see langword="" />. If <paramref name="obj" /> is <see langword="null" />, the method returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance and `obj` are equal if `obj` is a <xref:System.Numerics.Quaternion> object and the corresponding components of each matrix are equal.  
-  
+The current instance and `obj` are equal if `obj` is a <xref:System.Numerics.Quaternion> object and the corresponding components of each matrix are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -831,10 +831,10 @@ w = cos(theta/2)
         <returns>The quaternion that contains the summed values of <paramref name="value1" /> and <paramref name="value2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Quaternion.op_Addition%2A> method defines the operaton of the addition operator for <xref:System.Numerics.Quaternion> objects.  
-  
+The <xref:System.Numerics.Quaternion.op_Addition%2A> method defines the operaton of the addition operator for <xref:System.Numerics.Quaternion> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -872,10 +872,10 @@ w = cos(theta/2)
         <returns>The quaternion that results from dividing <paramref name="value1" /> by <paramref name="value2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Quaternion.op_Division%2A> method defines the division operation for <xref:System.Numerics.Quaternion> objects.  
-  
+The <xref:System.Numerics.Quaternion.op_Division%2A> method defines the division operation for <xref:System.Numerics.Quaternion> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -914,12 +914,12 @@ w = cos(theta/2)
           <see langword="true" /> if the two quaternions are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two quaternions are equal if each of their corresponding components is equal.  
-  
- The <xref:System.Numerics.Quaternion.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Numerics.Quaternion> objects.  
-  
+Two quaternions are equal if each of their corresponding components is equal.  
+ 
+The <xref:System.Numerics.Quaternion.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Numerics.Quaternion> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -992,10 +992,10 @@ w = cos(theta/2)
         <returns>The product quaternion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Quaternion.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Quaternion> objects.  
-  
+The <xref:System.Numerics.Quaternion.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Quaternion> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1033,10 +1033,10 @@ w = cos(theta/2)
         <returns>The scaled quaternion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Quaternion.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Quaternion> objects.  
-  
+The <xref:System.Numerics.Quaternion.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Quaternion> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1074,10 +1074,10 @@ w = cos(theta/2)
         <returns>The quaternion containing the values that result from subtracting each element in <paramref name="value2" /> from its corresponding element in <paramref name="value1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Quaternion.op_Subtraction%2A> method defines the operation of the subtraction operator for <xref:System.Numerics.Quaternion> objects.  
-  
+The <xref:System.Numerics.Quaternion.op_Subtraction%2A> method defines the operation of the subtraction operator for <xref:System.Numerics.Quaternion> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1113,10 +1113,10 @@ w = cos(theta/2)
         <returns>The negated quaternion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Quaternion.op_UnaryNegation%2A> method defines the operation of the unary negation operator for <xref:System.Numerics.Quaternion> objects.  
-  
+The <xref:System.Numerics.Quaternion.op_UnaryNegation%2A> method defines the operation of the unary negation operator for <xref:System.Numerics.Quaternion> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1219,10 +1219,10 @@ w = cos(theta/2)
         <returns>The string representation of this quaternion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The numeric values in the returned string are formatted by using the conventions of the current culture. For example, for the en-US culture, the returned string might appear as `{X:1.1 Y:2.2 Z:3.3 W:4.4}`.  
-  
+The numeric values in the returned string are formatted by using the conventions of the current culture. For example, for the en-US culture, the returned string might appear as `{X:1.1 Y:2.2 Z:3.3 W:4.4}`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

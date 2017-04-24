@@ -19,29 +19,29 @@
     <summary>Represents a configuration element that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.BackupEndpointElement" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection> contains an ordered collection of endpoints that a message will be transmitted to in the event of a communications exception when sending to the primary endpoint.  
-  
- If a send to the primary endpoint contained in <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.EndpointName%2A> fails with a communications exception, the Routing Service will attempt to send the message to the first endpoint contained in the **BackupEndpointCollection**. If this also fails with a communications exception, the Routing Service will attempt to send the message to the next endpoint contained in the collection until the send attempt succeeds, returns a failure other than a communication exception, or all endpoints in the collection have returned a failure.  
-  
- In the following example, if a send to the primary endpoint named “Destination” returns a communication exception, the service will attempt to send the message to the “alternateServiceQueue”. If this attempt also returns a communication exception, the Routing Service will attempt to send the message to the next endpoint in the collection.  
-  
+The <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection> contains an ordered collection of endpoints that a message will be transmitted to in the event of a communications exception when sending to the primary endpoint.  
+ 
+If a send to the primary endpoint contained in <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.EndpointName%2A> fails with a communications exception, the Routing Service will attempt to send the message to the first endpoint contained in the **BackupEndpointCollection**. If this also fails with a communications exception, the Routing Service will attempt to send the message to the next endpoint contained in the collection until the send attempt succeeds, returns a failure other than a communication exception, or all endpoints in the collection have returned a failure.  
+ 
+In the following example, if a send to the primary endpoint named “Destination” returns a communication exception, the service will attempt to send the message to the “alternateServiceQueue”. If this attempt also returns a communication exception, the Routing Service will attempt to send the message to the next endpoint in the collection.  
+ 
 ```xml  
 <filterTables>  
-     <filterTable name="filterTable1">  
-          <add filterName="MatchAllFilter1" endpointName="Destination" backupList="backupEndpointList"/>  
-     </filterTable>  
+    <filterTable name="filterTable1">  
+         <add filterName="MatchAllFilter1" endpointName="Destination" backupList="backupEndpointList"/>  
+    </filterTable>  
 </filterTables>  
 <backupLists>  
-     <backupList name="backupEndpointList">  
-          <add endpointName="backupServiceQueue" />  
-          <add endpointName="alternateServiceQueue" />  
-     </backupList>  
+    <backupList name="backupEndpointList">  
+         <add endpointName="backupServiceQueue" />  
+         <add endpointName="alternateServiceQueue" />  
+    </backupList>  
 </backupLists>  
-  
+ 
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

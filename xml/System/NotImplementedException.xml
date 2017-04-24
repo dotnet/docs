@@ -32,39 +32,39 @@
     <summary>The exception that is thrown when a requested method or operation is not implemented.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.NotImplementedException> exception is thrown when a particular method, get accessor, or set accessor is present as a member of a type but is not implemented.  
-  
- <xref:System.NotImplementedException> uses the default <xref:System.Object.Equals%2A?displayProperty=fullName> implementation, which supports reference equality. For a list of initial values for an instance of <xref:System.NotImplementedException>, see the <xref:System.NotImplementedException.%23ctor%2A> constructors.  
-  
+The <xref:System.NotImplementedException> exception is thrown when a particular method, get accessor, or set accessor is present as a member of a type but is not implemented.  
+ 
+<xref:System.NotImplementedException> uses the default <xref:System.Object.Equals%2A?displayProperty=fullName> implementation, which supports reference equality. For a list of initial values for an instance of <xref:System.NotImplementedException>, see the <xref:System.NotImplementedException.%23ctor%2A> constructors.  
+ 
 ## Throwing the exception  
- You might choose to throw a  <xref:System.NotImplementedException> exception in properties or methods in your own types when the that member is still in development and will only later be implemented in production code. In other words,  a <xref:System.NotImplementedException> exception should be synonymous with "still in development."  
-  
+You might choose to throw a  <xref:System.NotImplementedException> exception in properties or methods in your own types when the that member is still in development and will only later be implemented in production code. In other words,  a <xref:System.NotImplementedException> exception should be synonymous with "still in development."  
+ 
 ## Handling the exception  
- The <xref:System.NotImplementedException> exception indicates that the method or property that you are attempting to invoke has no implementation and therefore provides no functionality. As a result, you should not handle this error in a `try/catch` block.   Instead, you should remove the member invocation from your code.  You can include a call to the member when it is implemented in the production version of a library.  
-  
- In some cases, a <xref:System.NotImplementedException> exception may not be used to indicate functionality that is still in development in a pre-production library. However, this still indicates that the functionality is unavailable, and you should remove the member invocation from your code.  
-  
+The <xref:System.NotImplementedException> exception indicates that the method or property that you are attempting to invoke has no implementation and therefore provides no functionality. As a result, you should not handle this error in a `try/catch` block.   Instead, you should remove the member invocation from your code.  You can include a call to the member when it is implemented in the production version of a library.  
+ 
+In some cases, a <xref:System.NotImplementedException> exception may not be used to indicate functionality that is still in development in a pre-production library. However, this still indicates that the functionality is unavailable, and you should remove the member invocation from your code.  
+ 
 ## NotImplementedException and other exception types  
- The .NET Framework also includes two other exception types, <xref:System.NotSupportedException> and <xref:System.PlatformNotSupportedException>, that indicate that no implementation exists for a particular member of a type. You should use throw one of these instead of a <xref:System.NotImplementedException> exception under the following conditions.  
+The .NET Framework also includes two other exception types, <xref:System.NotSupportedException> and <xref:System.PlatformNotSupportedException>, that indicate that no implementation exists for a particular member of a type. You should use throw one of these instead of a <xref:System.NotImplementedException> exception under the following conditions.  
+ 
+<xref:System.PlatformNotSupportedException> exception  
+If you've designed a type with one or more members that are available on some platforms or in some versions but not on others, you can throw  this exception on platforms on which the functionality is not supported.  
+ 
+<xref:System.NotSupportedException> exception  
+Throw a <xref:System.NotSupportedException> exception if the implementation of an interface  member or an override to an abstract base class method is not possible. For example, the   <xref:System.Convert.ToInt32%28System.DateTime%29?displayProperty=fullName> method throws a <xref:System.NotSupportedException> exception because no meaningful conversion between a date and time and a 32-bit signed integer exists. The method must be present in this case because the <xref:System.Convert> class implements the <xref:System.IConvertible> interface.  
+ 
+You should also throw a <xref:System.NotSupportedException> exception if you've implemented an abstract base class and add a new member to it that must be overridden by derived classes. In that case, making the member abstract causes existing subclasses to fail to load.  
+ 
   
- <xref:System.PlatformNotSupportedException> exception  
- If you've designed a type with one or more members that are available on some platforms or in some versions but not on others, you can throw  this exception on platforms on which the functionality is not supported.  
-  
- <xref:System.NotSupportedException> exception  
- Throw a <xref:System.NotSupportedException> exception if the implementation of an interface  member or an override to an abstract base class method is not possible. For example, the   <xref:System.Convert.ToInt32%28System.DateTime%29?displayProperty=fullName> method throws a <xref:System.NotSupportedException> exception because no meaningful conversion between a date and time and a 32-bit signed integer exists. The method must be present in this case because the <xref:System.Convert> class implements the <xref:System.IConvertible> interface.  
-  
- You should also throw a <xref:System.NotSupportedException> exception if you've implemented an abstract base class and add a new member to it that must be overridden by derived classes. In that case, making the member abstract causes existing subclasses to fail to load.  
-  
-   
-  
+ 
 ## Examples  
- The following example throws this exception for a method that has not been developed.  
-  
- [!code-csharp[System.NotImplementedException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.notimplementedexception/cs/program.cs#1)]
- [!code-vb[System.NotImplementedException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.notimplementedexception/vb/program.vb#1)]  
-  
+The following example throws this exception for a method that has not been developed.  
+ 
+[!code-csharp[System.NotImplementedException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.notimplementedexception/cs/program.cs#1)]
+[!code-vb[System.NotImplementedException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.notimplementedexception/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,15 +95,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.NotImplementedException" /> class with default properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.NotImplementedException>.  
-  
+The following table shows the initial property values for an instance of <xref:System.NotImplementedException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The empty string ("").|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,15 +137,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.NotImplementedException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.NotImplementedException>.  
-  
+The following table shows the initial property values for an instance of <xref:System.NotImplementedException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,17 +206,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.NotImplementedException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.NotImplementedException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.NotImplementedException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -20,12 +20,12 @@
     <summary>Allows security actions for <see cref="T:System.Net.NetworkInformation.NetworkInformationPermission" /> to be applied to code using declarative security.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This permission is used by classes that provide information about network connections and traffic statistics such as those in the <xref:System.Net.NetworkInformation> namespace.  
-  
- The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the <xref:System.Net.NetworkInformation.NetworkInformationPermission> class.  
-  
+This permission is used by classes that provide information about network connections and traffic statistics such as those in the <xref:System.Net.NetworkInformation> namespace.  
+ 
+The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the <xref:System.Net.NetworkInformation.NetworkInformationPermission> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInformationPermissionAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The security action defines which callers must have the permission.  
-  
+The security action defines which callers must have the permission.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,16 +74,16 @@
         <value>A string that specifies the access level.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The valid values for this property are shown in the following table.  
-  
+The valid values for this property are shown in the following table.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |"Read"|Read access to network information.|  
 |"Full"|Full access to network information.|  
 |"None"|No access to network information.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <returns>A <see cref="T:System.Net.NetworkInformation.NetworkInformationPermission" /> that corresponds to this attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should only be called by the security system, never by application code.  
-  
+This method should only be called by the security system, never by application code.  
+ 
  ]]></format>
         </remarks>
       </Docs>

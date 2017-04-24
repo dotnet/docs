@@ -57,10 +57,10 @@
         <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.Input.StylusDownEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+This implementation casts the generic handler as a <xref:System.Windows.Input.StylusDownEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

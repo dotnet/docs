@@ -14,10 +14,10 @@
     <summary>Provides static methods to manipulate bindings, including <see cref="T:System.Windows.Data.Binding" />, <see cref="T:System.Windows.Data.MultiBinding" />, and <see cref="T:System.Windows.Data.PriorityBinding" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class exposes a set of static methods that serve as helper operations for data bindings.  
-  
+This class exposes a set of static methods that serve as helper operations for data bindings.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <summary>Removes all bindings, including bindings of type <see cref="T:System.Windows.Data.Binding" />, <see cref="T:System.Windows.Data.MultiBinding" />, and <see cref="T:System.Windows.Data.PriorityBinding" />, from the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified object is not data-bound, this method has no effect.  
-  
+If the specified object is not data-bound, this method has no effect.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="target" /> is <see langword="null" />.</exception>
@@ -99,12 +99,12 @@
         <summary>Removes the binding from a property if there is one.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the given property is data-bound with a <xref:System.Windows.Data.Binding>, <xref:System.Windows.Data.PriorityBinding>, or <xref:System.Windows.Data.MultiBinding>, this method removes the corresponding binding expression and restores the value of the property to what it was before any local value was set through the binding.  
-  
- If the given property is not data-bound, this method has no effect.  
-  
+If the given property is data-bound with a <xref:System.Windows.Data.Binding>, <xref:System.Windows.Data.PriorityBinding>, or <xref:System.Windows.Data.MultiBinding>, this method removes the corresponding binding expression and restores the value of the property to what it was before any local value was set through the binding.  
+ 
+If the given property is not data-bound, this method has no effect.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
@@ -182,10 +182,10 @@
         <value>An object that replaces the <see cref="P:System.Windows.FrameworkElement.DataContext" /> when an item container is removed from the visual tree.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property if you need to deal with the <xref:System.Windows.FrameworkElement.DataContext%2A> of an item container.  An item container is the UI element that displays an item in an <xref:System.Windows.Controls.ItemsControl>.  When an <xref:System.Windows.Controls.ItemsControl> is data bound to a collection, an item container is generated for each item.  In some cases, item containers are removed from the visual tree.  Two typical cases where an item container is removed are when an item is removed from the underlying collection and when virtualization is enabled on the <xref:System.Windows.Controls.ItemsControl>.  In these cases, the <xref:System.Windows.FrameworkElement.DataContext%2A> property of the item container will be set to the <xref:System.Windows.Data.BindingOperations.DisconnectedSource%2A> property  You should check whether the <xref:System.Windows.FrameworkElement.DataContext%2A> is equal to the <xref:System.Windows.Data.BindingOperations.DisconnectedSource%2A> before accessing the <xref:System.Windows.FrameworkElement.DataContext%2A> in the <xref:System.Windows.FrameworkElement.DataContextChanged> event for item containers. For more information about item containers and virtualization, see the remarks in the <xref:System.Windows.Controls.VirtualizingStackPanel> class.  
-  
+Use this property if you need to deal with the <xref:System.Windows.FrameworkElement.DataContext%2A> of an item container.  An item container is the UI element that displays an item in an <xref:System.Windows.Controls.ItemsControl>.  When an <xref:System.Windows.Controls.ItemsControl> is data bound to a collection, an item container is generated for each item.  In some cases, item containers are removed from the visual tree.  Two typical cases where an item container is removed are when an item is removed from the underlying collection and when virtualization is enabled on the <xref:System.Windows.Controls.ItemsControl>.  In these cases, the <xref:System.Windows.FrameworkElement.DataContext%2A> property of the item container will be set to the <xref:System.Windows.Data.BindingOperations.DisconnectedSource%2A> property  You should check whether the <xref:System.Windows.FrameworkElement.DataContext%2A> is equal to the <xref:System.Windows.Data.BindingOperations.DisconnectedSource%2A> before accessing the <xref:System.Windows.FrameworkElement.DataContext%2A> in the <xref:System.Windows.FrameworkElement.DataContextChanged> event for item containers. For more information about item containers and virtualization, see the remarks in the <xref:System.Windows.Controls.VirtualizingStackPanel> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
         <summary>Enables a collection to be accessed across multiple threads and specifies the lock object that should be used to synchronize access to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you have a lot of data to collect or modify, you might want to use a background thread to collect and modify the data so that the user interface will remain reactive to input.  To enable multiple threads to access a collection, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.  When you call this overload of the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%29> method, the system locks the collection when you access it.  To specify a callback to lock the collection yourself, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%2CSystem.Windows.Data.CollectionSynchronizationCallback%29> overload.  
-  
+If you have a lot of data to collect or modify, you might want to use a background thread to collect and modify the data so that the user interface will remain reactive to input.  To enable multiple threads to access a collection, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.  When you call this overload of the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%29> method, the system locks the collection when you access it.  To specify a callback to lock the collection yourself, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%2CSystem.Windows.Data.CollectionSynchronizationCallback%29> overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <summary>Enables a collection to be accessed across multiple threads and specifies the callback that should be used to synchronize access to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you have a lot of data to collect or modify, you might want to use a background thread to collect and modify the data so that the user interface will remain reactive to input.  To enable multiple threads to access a collection, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.  This overload of the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%2CSystem.Windows.Data.CollectionSynchronizationCallback%29> method enables you to specify a callback that ensures that the collection is accessed by one thread at a time.  You can have the system lock the collection by calling the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%29> overload.  The `context` parameter is an arbitrary object that you can use to information known when you enable collection synchronization. This is passed to the callback and you can use it to determine the synchronization mechanism to use to control access to `collection`. `Context` can be `null`.  
-  
+If you have a lot of data to collect or modify, you might want to use a background thread to collect and modify the data so that the user interface will remain reactive to input.  To enable multiple threads to access a collection, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.  This overload of the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%2CSystem.Windows.Data.CollectionSynchronizationCallback%29> method enables you to specify a callback that ensures that the collection is accessed by one thread at a time.  You can have the system lock the collection by calling the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%29> overload.  The `context` parameter is an arbitrary object that you can use to information known when you enable collection synchronization. This is passed to the callback and you can use it to determine the synchronization mechanism to use to control access to `collection`. `Context` can be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,10 +300,10 @@
         <returns>The <see cref="T:System.Windows.Data.BindingBase" /> object that is set on the given property or <see langword="null" /> if no binding object has been set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Data.BindingBase> class is the common base class for the <xref:System.Windows.Data.Binding>, <xref:System.Windows.Data.PriorityBinding>, and <xref:System.Windows.Data.MultiBinding> classes. You can use the <xref:System.Windows.Data.BindingOperations.GetBinding%2A>, <xref:System.Windows.Data.BindingOperations.GetPriorityBinding%2A>, and <xref:System.Windows.Data.BindingOperations.GetMultiBinding%2A> methods if you know in advance the type of binding that is set on the property.  
-  
+The <xref:System.Windows.Data.BindingBase> class is the common base class for the <xref:System.Windows.Data.Binding>, <xref:System.Windows.Data.PriorityBinding>, and <xref:System.Windows.Data.MultiBinding> classes. You can use the <xref:System.Windows.Data.BindingOperations.GetBinding%2A>, <xref:System.Windows.Data.BindingOperations.GetPriorityBinding%2A>, and <xref:System.Windows.Data.BindingOperations.GetMultiBinding%2A> methods if you know in advance the type of binding that is set on the property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
@@ -332,20 +332,20 @@
         <returns>The <see cref="T:System.Windows.Data.BindingExpression" /> object associated with the given property or <see langword="null" /> if none exists. If a <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object is set on the property, the <see cref="P:System.Windows.Data.PriorityBindingExpression.ActiveBindingExpression" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Data.BindingExpression> object maintains the connection between the binding source and the binding target. You can obtain the <xref:System.Windows.Data.BindingExpression> object by calling this static method or by calling the <xref:System.Windows.FrameworkElement.GetBindingExpression%2A> method on a data-bound <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> object.  
+The <xref:System.Windows.Data.BindingExpression> object maintains the connection between the binding source and the binding target. You can obtain the <xref:System.Windows.Data.BindingExpression> object by calling this static method or by calling the <xref:System.Windows.FrameworkElement.GetBindingExpression%2A> method on a data-bound <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the implementation of a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler that uses the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A> method to obtain the <xref:System.Windows.Data.BindingExpression> and then calls the <xref:System.Windows.Data.BindingExpression.DataItem%2A> property to access the binding source object.  
-  
- The <xref:System.Windows.Controls.TextBlock>`SavingsText` is the binding target object and <xref:System.Windows.Controls.TextBlock.Text%2A> is the binding target property.  
-  
- [!code-csharp[DirectionalBinding#OnRentRaise](~/samples/snippets/csharp/VS_Snippets_Wpf/DirectionalBinding/CSharp/Page1.xaml.cs#onrentraise)]
- [!code-vb[DirectionalBinding#OnRentRaise](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DirectionalBinding/VisualBasic/DirectionalBinding.vb#onrentraise)]  
-  
+The following example shows the implementation of a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler that uses the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A> method to obtain the <xref:System.Windows.Data.BindingExpression> and then calls the <xref:System.Windows.Data.BindingExpression.DataItem%2A> property to access the binding source object.  
+ 
+The <xref:System.Windows.Controls.TextBlock>`SavingsText` is the binding target object and <xref:System.Windows.Controls.TextBlock.Text%2A> is the binding target property.  
+ 
+[!code-csharp[DirectionalBinding#OnRentRaise](~/samples/snippets/csharp/VS_Snippets_Wpf/DirectionalBinding/CSharp/Page1.xaml.cs#onrentraise)]
+[!code-vb[DirectionalBinding#OnRentRaise](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DirectionalBinding/VisualBasic/DirectionalBinding.vb#onrentraise)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
@@ -374,10 +374,10 @@
         <returns>The <see cref="T:System.Windows.Data.BindingExpressionBase" /> object that is set on the given property or <see langword="null" /> if no binding object has been set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Data.BindingExpressionBase> class is the common base class for the <xref:System.Windows.Data.BindingExpression>, <xref:System.Windows.Data.PriorityBindingExpression>, and <xref:System.Windows.Data.MultiBindingExpression> classes. You can use the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A>, <xref:System.Windows.Data.BindingOperations.GetPriorityBindingExpression%2A>, and <xref:System.Windows.Data.BindingOperations.GetMultiBindingExpression%2A> methods if you know in advance type of binding that is set on the property.  
-  
+The <xref:System.Windows.Data.BindingExpressionBase> class is the common base class for the <xref:System.Windows.Data.BindingExpression>, <xref:System.Windows.Data.PriorityBindingExpression>, and <xref:System.Windows.Data.MultiBindingExpression> classes. You can use the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A>, <xref:System.Windows.Data.BindingOperations.GetPriorityBindingExpression%2A>, and <xref:System.Windows.Data.BindingOperations.GetMultiBindingExpression%2A> methods if you know in advance type of binding that is set on the property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
@@ -431,10 +431,10 @@
         <returns>The <see cref="T:System.Windows.Data.MultiBindingExpression" /> object associated with the given property or <see langword="null" /> if none exists.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Data.MultiBindingExpression> object associated with the given property or `null` if none exists.  
-  
+The <xref:System.Windows.Data.MultiBindingExpression> object associated with the given property or `null` if none exists.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
@@ -511,10 +511,10 @@
         <returns>A collection of <see cref="T:System.Windows.Data.BindingGroup" /> objects that are associated with the specified element and have invalid values or target values have not been updated the source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `root` is `null`, <xref:System.Windows.Data.BindingOperations.GetSourceUpdatingBindingGroups%2A> returns all <xref:System.Windows.Data.BindingGroup> objects that are invalid or have not been updated.  
-  
+If `root` is `null`, <xref:System.Windows.Data.BindingOperations.GetSourceUpdatingBindingGroups%2A> returns all <xref:System.Windows.Data.BindingGroup> objects that are invalid or have not been updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,10 +540,10 @@
         <returns>A collection of <see cref="T:System.Windows.Data.BindingExpressionBase" /> objects that are associated with the specified element and have invalid values or target values have not been updated the source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `root` is `null`, <xref:System.Windows.Data.BindingOperations.GetSourceUpdatingBindings%2A> returns all <xref:System.Windows.Data.BindingExpressionBase> objects that are invalid or have not been updated.  
-  
+If `root` is `null`, <xref:System.Windows.Data.BindingOperations.GetSourceUpdatingBindings%2A> returns all <xref:System.Windows.Data.BindingExpressionBase> objects that are invalid or have not been updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -599,18 +599,18 @@
         <returns>The instance of <see cref="T:System.Windows.Data.BindingExpressionBase" /> created for and associated with the specified property. The <see cref="T:System.Windows.Data.BindingExpressionBase" /> class is the base class of <see cref="T:System.Windows.Data.BindingExpression" />, <see cref="T:System.Windows.Data.MultiBindingExpression" />, and <see cref="T:System.Windows.Data.PriorityBindingExpression" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new instance of a <xref:System.Windows.Data.BindingExpressionBase> and associates the instance with the given dependency property of the given object. This method is the way to attach a binding to an arbitrary <xref:System.Windows.DependencyObject> that may not expose its own SetBinding method.  
+This method creates a new instance of a <xref:System.Windows.Data.BindingExpressionBase> and associates the instance with the given dependency property of the given object. This method is the way to attach a binding to an arbitrary <xref:System.Windows.DependencyObject> that may not expose its own SetBinding method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to set a binding. In this example, `myNewBindDef` is a <xref:System.Windows.Data.Binding> object that describes the binding. The binding target is `myDateText`, an instance of the <xref:System.Windows.Controls.TextBlock> class.  
-  
- [!code-csharp[BindConversion#BOSetBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/BindConversion/CSharp/Window1.xaml.cs#bosetbinding)]
- [!code-vb[BindConversion#BOSetBinding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindConversion/visualbasic/window1.xaml.vb#bosetbinding)]  
-  
+The following example shows how to use this method to set a binding. In this example, `myNewBindDef` is a <xref:System.Windows.Data.Binding> object that describes the binding. The binding target is `myDateText`, an instance of the <xref:System.Windows.Controls.TextBlock> class.  
+ 
+[!code-csharp[BindConversion#BOSetBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/BindConversion/CSharp/Window1.xaml.cs#bosetbinding)]
+[!code-vb[BindConversion#BOSetBinding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindConversion/visualbasic/window1.xaml.vb#bosetbinding)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> parameter cannot be <see langword="null" />.</exception>

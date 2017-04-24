@@ -14,10 +14,10 @@
     <summary>Contains arguments for the <see cref="E:System.Windows.DragDrop.GiveFeedback" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.DragDrop.GiveFeedback> event occurs when a drag-and-drop operation is started. The <xref:System.Windows.DragDrop.GiveFeedback> event enables the source of a drag event to modify the appearance of the mouse pointer to provide the user with visual feedback during a drag-and-drop operation.  
-  
+The <xref:System.Windows.DragDrop.GiveFeedback> event occurs when a drag-and-drop operation is started. The <xref:System.Windows.DragDrop.GiveFeedback> event enables the source of a drag event to modify the appearance of the mouse pointer to provide the user with visual feedback during a drag-and-drop operation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <value>A Boolean value that indicating whether default cursor feedback behavior should be used for the associated drag-and-drop operation. <see langword="true" /> to use default feedback cursor behavior; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the mouse cursor changes to provide feedback about permissible actions during a drag-and-drop operation.  
-  
+By default, the mouse cursor changes to provide feedback about permissible actions during a drag-and-drop operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

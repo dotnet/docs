@@ -14,10 +14,10 @@
     <summary>The .NET Framework creates an instance of the <see cref="T:System.Web.Services.Protocols.SoapServerProtocol" /> class to process XML Web service requests.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override the <xref:System.Web.Services.Protocols.SoapServerProtocol.RouteRequest%2A> method to process XML Web service requests that are not explicitly declared and handled by users through a method in their XML Web service marked with `WebMethodAttribute`.  
-  
+You can override the <xref:System.Web.Services.Protocols.SoapServerProtocol.RouteRequest%2A> method to process XML Web service requests that are not explicitly declared and handled by users through a method in their XML Web service marked with `WebMethodAttribute`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -130,10 +130,10 @@
         <returns>The <see cref="T:System.Web.Services.Protocols.SoapServerMethod" /> to which the <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> specified by <paramref name="message" /> should be routed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override the <xref:System.Web.Services.Protocols.SoapServerProtocol.RouteRequest%2A> method to process XML Web service requests that are not explicitly declared and handled by users through a method in their XML Web service marked with `WebMethodAttribute`.  
-  
+You can override the <xref:System.Web.Services.Protocols.SoapServerProtocol.RouteRequest%2A> method to process XML Web service requests that are not explicitly declared and handled by users through a method in their XML Web service marked with `WebMethodAttribute`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Exposes properties that contain federation settings that control the behavior of the WS-Federation Authentication Module (<see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />) and the Session Authentication Module (<see cref="T:System.IdentityModel.Services.SessionAuthenticationModule" />) in web applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default web applications have a single <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration?displayProperty=fullName> property. The first time the property is accessed a new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is initialized from settings in the configuration file and the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=fullName> event is raised. You can use the properties and methods exposed by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> class to modify or replace the object initialized from configuration in an event handler. This object is available through the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=fullName> property inside the event handler.  
-  
+By default web applications have a single <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration?displayProperty=fullName> property. The first time the property is accessed a new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is initialized from settings in the configuration file and the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=fullName> event is raised. You can use the properties and methods exposed by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> class to modify or replace the object initialized from configuration in an event handler. This object is available through the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=fullName> property inside the event handler.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,13 +36,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> class by loading settings from the <see langword="system.identityModel.services" /> section of the configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The properties in the new instance are initialized by loading settings from the `<system.identityModel.services>` configuration section. This constructor calls the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor with the `loadConfig` parameter `true`.  
-  
+The properties in the new instance are initialized by loading settings from the `<system.identityModel.services>` configuration section. This constructor calls the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor with the `loadConfig` parameter `true`.  
+ 
 > [!WARNING]
 >  Before the new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is used by any of the configured HTTP modules, call the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method to ensure that the instance is properly initialized.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,25 +65,25 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> class by optionally loading settings from the <see langword="system.identityModel.services" /> section of the configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  Before the new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is used by any of the configured HTTP modules, call the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method to ensure that the instance is properly initialized.  
-  
- The `system.identityModel` section must be specified in a `<section>` element under the `<configSections>` element in the configuration file or an exception is thrown.  
-  
+ 
+The `system.identityModel` section must be specified in a `<section>` element under the `<configSections>` element in the configuration file or an exception is thrown.  
+ 
 ```  
 <configSections>  
-  <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />  
+ <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />  
 </configSections>  
 ```  
-  
- If `loadConfig` is `true` and only a single `<federationConfiguration>` element is specified, settings are loaded using that element. If multiple `<federationConfiguration>` elements are specified, the method attempts to load settings from the element that is unnamed of that has the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.DefaultFederationConfigurationName>. If such an element does not exist, the method returns without loading settings. This results in an exception when the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method is called.  
-  
+ 
+If `loadConfig` is `true` and only a single `<federationConfiguration>` element is specified, settings are loaded using that element. If multiple `<federationConfiguration>` elements are specified, the method attempts to load settings from the element that is unnamed of that has the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.DefaultFederationConfigurationName>. If such an element does not exist, the method returns without loading settings. This results in an exception when the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method is called.  
+ 
 > [!WARNING]
 >  Microsoft recommends that if you specify multiple `<federationConfiguration>` elements in the `system.identityModel.services` configuration section that at least one of them is unnamed or has its name set to an empty string.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see langword="system.identityModel" /> configuration section is not defined in the configuration file.</exception>
@@ -106,23 +106,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> class from the [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element with the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  Before the new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is used by any of the configured HTTP modules, call the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method to ensure that the instance is properly initialized.  
-  
- If this constructor is called then a `<system.identityModel.services>` configuration section with a `<federationConfiguration>` element that has the specified name must exist in the configuration file.  
-  
- Both the `system.identityModel` section and the `system.identityModel.services` must be specified in a `<section>` elements under the `<configSections>` element in the configuration file or an exception is thrown.  
-  
+ 
+If this constructor is called then a `<system.identityModel.services>` configuration section with a `<federationConfiguration>` element that has the specified name must exist in the configuration file.  
+ 
+Both the `system.identityModel` section and the `system.identityModel.services` must be specified in a `<section>` elements under the `<configSections>` element in the configuration file or an exception is thrown.  
+ 
 ```  
 <configSections>  
-  <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />  
-  <section name="system.identityModel.services" type="System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />  
+ <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />  
+ <section name="system.identityModel.services" type="System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />  
 </configSections>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is no <see langword="system.identityModel.services" /> section defined in the configuration file.  
@@ -153,12 +153,12 @@
         <value>The cookie handler to be used by the Session Authentication Module (SAM).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies the cookie handler that is used to read and write session cookies by the SAM.  
-  
- When initialized from a configuration file, this property is set by the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
-  
+Specifies the cookie handler that is used to read and write session cookies by the SAM.  
+ 
+When initialized from a configuration file, this property is set by the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
@@ -216,10 +216,10 @@
         <value>The identity configuration object associated with this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When initialized from a configuration file, this property is set by the [\&lt;identityConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element.  
-  
+When initialized from a configuration file, this property is set by the [\&lt;identityConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
@@ -242,14 +242,14 @@
         <summary>Initializes the current instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ensures that the current instance is properly initialized before it is used by the HTTP Modules to process incoming requests. It should only be called once. Check the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized%2A> property before calling the method. This method sets the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized%2A> property is set `true`.  
-  
- The default implementation creates a default cookie handler if there is not one already configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> property and calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.Initialize%2A?displayProperty=fullName> method on the identity configuration object that is configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IdentityConfiguration%2A> property. You can override this method to modify this behavior or to provide additional initialization in derived classes.  
-  
- This method should be invoked before the class is used by the HTTP Modules to process incoming requests.  
-  
+This method ensures that the current instance is properly initialized before it is used by the HTTP Modules to process incoming requests. It should only be called once. Check the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized%2A> property before calling the method. This method sets the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized%2A> property is set `true`.  
+ 
+The default implementation creates a default cookie handler if there is not one already configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> property and calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.Initialize%2A?displayProperty=fullName> method on the identity configuration object that is configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IdentityConfiguration%2A> property. You can override this method to modify this behavior or to provide additional initialization in derived classes.  
+ 
+This method should be invoked before the class is used by the HTTP Modules to process incoming requests.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current instance has already been initialized (The <see cref="P:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized" /> property is <see langword="true" />.)</exception>
@@ -273,12 +273,12 @@
           <see langword="true" /> if the configuration object has been configured; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to check whether the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object has already been initialized. The <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method should be called once and only once.  
-  
- The `set` operation is `protected`.  
-  
+Use this property to check whether the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object has already been initialized. The <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method should be called once and only once.  
+ 
+The `set` operation is `protected`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,14 +303,14 @@
         <summary>Loads the properties for the current instance from the configuration file. This method is called by constructors that initialize the newly created <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> from configuration settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.LoadConfiguration%2A> method is called by the constructors to set the properties of the newly created <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object from the specified `<federationConfiguration>` element.  
-  
- If `element` is `null`, the instance is loaded with default values.  
-  
- If the there is no configuration file, or, if the named section does not exist, then no exception is thrown, instead the instance is loaded with default values.  
-  
+The <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.LoadConfiguration%2A> method is called by the constructors to set the properties of the newly created <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object from the specified `<federationConfiguration>` element.  
+ 
+If `element` is `null`, the instance is loaded with default values.  
+ 
+If the there is no configuration file, or, if the named section does not exist, then no exception is thrown, instead the instance is loaded with default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,10 +332,10 @@
         <value>The name associated with this federation configuration instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `name` attribute of a [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element.  
-  
+Corresponds to the `name` attribute of a [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <value>The X.509 certificate used to sign WS-Federation protocol messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When initialized from a configuration file, this property is set by the [\&lt;serviceCertificate\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/servicecertificate.md) element.  
-  
+When initialized from a configuration file, this property is set by the [\&lt;serviceCertificate\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/servicecertificate.md) element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,10 +382,10 @@
         <value>The configuration settings for the WS-Federation Authentication Module.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When initialized from a configuration file, this property is set by the [\&lt;wsFederation\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element.  
-  
+When initialized from a configuration file, this property is set by the [\&lt;wsFederation\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
@@ -400,12 +400,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Before the new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is used by any of the configured HTTP modules, call the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method to ensure that the instance is properly initialized.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

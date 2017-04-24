@@ -14,18 +14,18 @@
     <summary>Contains information about a single data-binding expression in an ASP.NET server control, which allows rapid-application development (RAD) designers, such as Microsoft Visual Studio, to create data-binding expressions at design time. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each data-binding expression in a server control is represented at design time by an instance of the <xref:System.Web.UI.DataBinding> class. Any server control that contains one or more data-binding expressions has a <xref:System.Web.UI.DataBindingCollection> object that contains the <xref:System.Web.UI.DataBinding> objects. This collection is accessible through the <xref:System.Web.UI.Control> class implementing the <xref:System.Web.UI.IDataBindingsAccessor> interface. When you create a custom RAD designer, use that implementation to access the collection. Any <xref:System.Web.UI.DataBinding> or <xref:System.Web.UI.DataBindingCollection> objects associated with a server control exist only at design time. They do not exist at run time and, therefore, are not accessible during run time.  
+Each data-binding expression in a server control is represented at design time by an instance of the <xref:System.Web.UI.DataBinding> class. Any server control that contains one or more data-binding expressions has a <xref:System.Web.UI.DataBindingCollection> object that contains the <xref:System.Web.UI.DataBinding> objects. This collection is accessible through the <xref:System.Web.UI.Control> class implementing the <xref:System.Web.UI.IDataBindingsAccessor> interface. When you create a custom RAD designer, use that implementation to access the collection. Any <xref:System.Web.UI.DataBinding> or <xref:System.Web.UI.DataBindingCollection> objects associated with a server control exist only at design time. They do not exist at run time and, therefore, are not accessible during run time.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Web.UI.DataBinding> object and sets it equal to an existing object in the control's <xref:System.Web.UI.DataBindingCollection> collection that has a `propertyName` parameter with a value of `Text`. If the collection contains a <xref:System.Web.UI.DataBinding> object with a `propertyName` value of `Text`, this code returns the value of the object's <xref:System.Web.UI.DataBinding.Expression%2A> property. If there is no such object, it returns an empty string ("").  
-  
- [!code-csharp[DataBinding_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#2)]
- [!code-vb[DataBinding_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#2)]  
-  
+The following code example creates a <xref:System.Web.UI.DataBinding> object and sets it equal to an existing object in the control's <xref:System.Web.UI.DataBindingCollection> collection that has a `propertyName` parameter with a value of `Text`. If the collection contains a <xref:System.Web.UI.DataBinding> object with a `propertyName` value of `Text`, this code returns the value of the object's <xref:System.Web.UI.DataBinding.Expression%2A> property. If there is no such object, it returns an empty string ("").  
+ 
+[!code-csharp[DataBinding_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#2)]
+[!code-vb[DataBinding_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,13 +51,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataBinding" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Web.UI.DataBinding> object and sets it equal to an existing object in the control's <xref:System.Web.UI.DataBindingCollection> collection that has a `propertyName` parameter with a value of `Text`. If the collection contains a <xref:System.Web.UI.DataBinding> object with a `propertyName` value of `Text`, this code returns the value of the object's <xref:System.Web.UI.DataBinding.Expression%2A> property. If there is no such object, it returns an empty string ("").  
-  
- [!code-csharp[DataBinding_Sample1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#3)]
- [!code-vb[DataBinding_Sample1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#3)]  
-  
+The following code example creates a <xref:System.Web.UI.DataBinding> object and sets it equal to an existing object in the control's <xref:System.Web.UI.DataBindingCollection> collection that has a `propertyName` parameter with a value of `Text`. If the collection contains a <xref:System.Web.UI.DataBinding> object with a `propertyName` value of `Text`, this code returns the value of the object's <xref:System.Web.UI.DataBinding.Expression%2A> property. If there is no such object, it returns an empty string ("").  
+ 
+[!code-csharp[DataBinding_Sample1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#3)]
+[!code-vb[DataBinding_Sample1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,13 +102,13 @@
         <value>The data-binding expression to be evaluated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Web.UI.DataBinding> object and sets it equal to an existing object in the control's <xref:System.Web.UI.DataBindingCollection> collection that has a `propertyName` parameter with a value of `Text`. If the collection contains a <xref:System.Web.UI.DataBinding> object with a `propertyName` value of `Text`, this code returns the value of the object's <xref:System.Web.UI.DataBinding.Expression%2A> property. If there is no such object, it returns an empty string ("").  
-  
- [!code-csharp[DataBinding_Sample1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#3)]
- [!code-vb[DataBinding_Sample1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#3)]  
-  
+The following code example creates a <xref:System.Web.UI.DataBinding> object and sets it equal to an existing object in the control's <xref:System.Web.UI.DataBindingCollection> collection that has a `propertyName` parameter with a value of `Text`. If the collection contains a <xref:System.Web.UI.DataBinding> object with a `propertyName` value of `Text`, this code returns the value of the object's <xref:System.Web.UI.DataBinding.Expression%2A> property. If there is no such object, it returns an empty string ("").  
+ 
+[!code-csharp[DataBinding_Sample1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#3)]
+[!code-vb[DataBinding_Sample1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.DataBinding> objects are placed in a <xref:System.Web.UI.DataBindingCollection> object, accessible only at design time. The collection is a hash table that represents the bindings on a control. There can only be one binding per property, so the hash code computation matches the <xref:System.Web.UI.DataBinding.Equals%2A?displayProperty=fullName> implementation and only takes the property name into account.  
-  
+<xref:System.Web.UI.DataBinding> objects are placed in a <xref:System.Web.UI.DataBindingCollection> object, accessible only at design time. The collection is a hash table that represents the bindings on a control. There can only be one binding per property, so the hash code computation matches the <xref:System.Web.UI.DataBinding.Equals%2A?displayProperty=fullName> implementation and only takes the property name into account.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,13 +156,13 @@
         <value>The property to bind data to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example declares three variables, `dataBindingOutput1`, `dataBindingOutput2`, and `dataBindingOutput3`, which access the different properties of a <xref:System.Web.UI.DataBinding> object, `myDataBinding2`. It then assigns the value of the <xref:System.Web.UI.DataBinding.PropertyName%2A> property to `dataBindingOutput1`, concatenates it with the string "The property name is ", and writes the value to a file.  
-  
- [!code-csharp[DataBinding_Sample1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#6)]
- [!code-vb[DataBinding_Sample1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#6)]  
-  
+The following code example declares three variables, `dataBindingOutput1`, `dataBindingOutput2`, and `dataBindingOutput3`, which access the different properties of a <xref:System.Web.UI.DataBinding> object, `myDataBinding2`. It then assigns the value of the <xref:System.Web.UI.DataBinding.PropertyName%2A> property to `dataBindingOutput1`, concatenates it with the string "The property name is ", and writes the value to a file.  
+ 
+[!code-csharp[DataBinding_Sample1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#6)]
+[!code-vb[DataBinding_Sample1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,13 +184,13 @@
         <value>The .NET Framework type of the data-bound property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example declares three variables, `dataBindingOutput1`, `dataBindingOutput2`, and `dataBindingOutput3`, which access the different properties of a <xref:System.Web.UI.DataBinding> object, `myDataBinding2`. The <xref:System.Web.UI.DataBinding.PropertyType%2A> property value is assigned to `dataBindingOutput2` and concatenated with the string "The property type is ", and writes the value to a file.  
-  
- [!code-csharp[DataBinding_Sample1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#6)]
- [!code-vb[DataBinding_Sample1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#6)]  
-  
+The following code example declares three variables, `dataBindingOutput1`, `dataBindingOutput2`, and `dataBindingOutput3`, which access the different properties of a <xref:System.Web.UI.DataBinding> object, `myDataBinding2`. The <xref:System.Web.UI.DataBinding.PropertyType%2A> property value is assigned to `dataBindingOutput2` and concatenated with the string "The property type is ", and writes the value to a file.  
+ 
+[!code-csharp[DataBinding_Sample1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/DataBinding_Sample1/CS/databinding_samp1.cs#6)]
+[!code-vb[DataBinding_Sample1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataBinding_Sample1/VB/databinding_samp1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

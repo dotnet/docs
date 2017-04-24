@@ -19,55 +19,55 @@
     <summary>Defines the metadata attribute that enables an embedded resource in an assembly. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebResourceAttribute> class is valid only when used on assembly declarations. It is used to enable a specified embedded resource in an assembly for use as a Web resource.  
+The <xref:System.Web.UI.WebResourceAttribute> class is valid only when used on assembly declarations. It is used to enable a specified embedded resource in an assembly for use as a Web resource.  
+ 
+For more information on resources, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd).  
+ 
   
- For more information on resources, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd).  
-  
-   
-  
+ 
 ## Examples  
- This section contains two code examples. The first code example demonstrates how to apply the <xref:System.Web.UI.WebResourceAttribute> attribute to a namespace that defines a custom control, `MyCustomControl`. The second code example demonstrates how to use the `MyCustomControl` class in a Web page.  
-  
- The following code example demonstrates how to apply the <xref:System.Web.UI.WebResourceAttribute> attribute on a custom assembly to define an image Web resource and an HTML Web resource. The `MyCustomControl` class defines a composite control that uses the resources to set the value of the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property of an <xref:System.Web.UI.WebControls.Image> control that is contained within the composite control and to set the <xref:System.Web.UI.HtmlControls.HtmlAnchor.HRef%2A> property of an <xref:System.Web.UI.HtmlControls.HtmlAnchor> control linking to the HTML resource.  
-  
- [!code-csharp[System.Web.UI.WebResourceAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.cs#2)]
- [!code-vb[System.Web.UI.WebResourceAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.vb#2)]  
-  
- The following code example demonstrates how to use the `MyCustomControl` class in a Web page.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
-  
- This example requires that you compile the Image1.jpg and Help.htm resources with the assembly that contains `MyCustomControl`. For more information, see, [/resource (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/resource-compiler-option.md) or [/resource (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/resource.md).  
-  
- An example of an HTML Web resource that could be used in this example is shown next. Note the use of the `WebResource` syntax, which is used when you set the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property to `true` for a Web resource.  
-  
- `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">`  
-  
- `<html >`  
-  
- `<head>`  
-  
- `<title>Included Help Page</title>`  
-  
- `</head>`  
-  
- `<body>`  
-  
- `<div>`  
-  
- `<img alt="help image" src=<% = WebResource("image1.jpg") %> />`  
-  
- `Included help file.`  
-  
- `</div>`  
-  
- `</body>`  
-  
- `</html>`  
-  
+This section contains two code examples. The first code example demonstrates how to apply the <xref:System.Web.UI.WebResourceAttribute> attribute to a namespace that defines a custom control, `MyCustomControl`. The second code example demonstrates how to use the `MyCustomControl` class in a Web page.  
+ 
+The following code example demonstrates how to apply the <xref:System.Web.UI.WebResourceAttribute> attribute on a custom assembly to define an image Web resource and an HTML Web resource. The `MyCustomControl` class defines a composite control that uses the resources to set the value of the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property of an <xref:System.Web.UI.WebControls.Image> control that is contained within the composite control and to set the <xref:System.Web.UI.HtmlControls.HtmlAnchor.HRef%2A> property of an <xref:System.Web.UI.HtmlControls.HtmlAnchor> control linking to the HTML resource.  
+ 
+[!code-csharp[System.Web.UI.WebResourceAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.cs#2)]
+[!code-vb[System.Web.UI.WebResourceAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.vb#2)]  
+ 
+The following code example demonstrates how to use the `MyCustomControl` class in a Web page.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+ 
+This example requires that you compile the Image1.jpg and Help.htm resources with the assembly that contains `MyCustomControl`. For more information, see, [/resource (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/resource-compiler-option.md) or [/resource (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/resource.md).  
+ 
+An example of an HTML Web resource that could be used in this example is shown next. Note the use of the `WebResource` syntax, which is used when you set the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property to `true` for a Web resource.  
+ 
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">`  
+ 
+`<html >`  
+ 
+`<head>`  
+ 
+`<title>Included Help Page</title>`  
+ 
+`</head>`  
+ 
+`<body>`  
+ 
+`<div>`  
+ 
+`<img alt="help image" src=<% = WebResource("image1.jpg") %> />`  
+ 
+`Included help file.`  
+ 
+`</div>`  
+ 
+`</body>`  
+ 
+`</html>`  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -134,10 +134,10 @@
           <see langword="true" /> if the CDN should be accessed using HTTPS; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebResourceAttribute.CdnSupportsSecureConnection%2A> property to check whether the associated script resource should be accessed by the <xref:System.Web.UI.ScriptManager> using a secure connection (using SSL) to a CDN. By using the <xref:System.Web.UI.WebResourceAttribute.CdnSupportsSecureConnection%2A> property, you can avoid a warning message from the browser when your Web application attempts to request secure content from a CDN that supports SSL.  
-  
+Use the <xref:System.Web.UI.WebResourceAttribute.CdnSupportsSecureConnection%2A> property to check whether the associated script resource should be accessed by the <xref:System.Web.UI.ScriptManager> using a secure connection (using SSL) to a CDN. By using the <xref:System.Web.UI.WebResourceAttribute.CdnSupportsSecureConnection%2A> property, you can avoid a warning message from the browser when your Web application attempts to request secure content from a CDN that supports SSL.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,20 +159,20 @@
         <value>The content type of the resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Examples of content types are `"image/jpeg"` and `"text/xml"`. For more information on MIME types, go to the [Internet Assigned Numbers Authority](http://go.microsoft.com/fwlink/?LinkId=43988) Web site and refer to the section on media types.  
+Examples of content types are `"image/jpeg"` and `"text/xml"`. For more information on MIME types, go to the [Internet Assigned Numbers Authority](http://go.microsoft.com/fwlink/?LinkId=43988) Web site and refer to the section on media types.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to query the value of the <xref:System.Web.UI.WebResourceAttribute.ContentType%2A> property.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
-  
+The following code example demonstrates how to query the value of the <xref:System.Web.UI.WebResourceAttribute.ContentType%2A> property.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,46 +213,46 @@
           <see langword="true" /> if embedded resources are resolved during processing of the resource; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a resource is streamed from the assembly to the response, references to other Web resources in the embedded resources can be resolved at this time, if the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property is set to `true`.  
+When a resource is streamed from the assembly to the response, references to other Web resources in the embedded resources can be resolved at this time, if the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property is set to `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to query the value of the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property. In this example, the <xref:System.Web.UI.WebResourceAttribute> attribute of the HTML file Help.htm is defined with the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property set to `true`.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
-  
- An example of an HTML Web resource that could be used in this example is shown next. Note that the `WebResource` syntax is used when you set the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property to `true` for the resource.  
-  
- `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">`  
-  
- `<html >`  
-  
- `<head>`  
-  
- `<title>Included Help Page</title>`  
-  
- `</head>`  
-  
- `<body>`  
-  
- `<div>`  
-  
- `<img alt="help image" src=<% = WebResource("image1.jpg") %> />`  
-  
- `Included help file.`  
-  
- `</div>`  
-  
- `</body>`  
-  
- `</html>`  
-  
+The following code example demonstrates how to query the value of the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property. In this example, the <xref:System.Web.UI.WebResourceAttribute> attribute of the HTML file Help.htm is defined with the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property set to `true`.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+ 
+An example of an HTML Web resource that could be used in this example is shown next. Note that the `WebResource` syntax is used when you set the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property to `true` for the resource.  
+ 
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">`  
+ 
+`<html >`  
+ 
+`<head>`  
+ 
+`<title>Included Help Page</title>`  
+ 
+`</head>`  
+ 
+`<body>`  
+ 
+`<div>`  
+ 
+`<img alt="help image" src=<% = WebResource("image1.jpg") %> />`  
+ 
+`Included help file.`  
+ 
+`</div>`  
+ 
+`</body>`  
+ 
+`</html>`  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,15 +274,15 @@
         <value>The name of the resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to query the value of the <xref:System.Web.UI.WebResourceAttribute.WebResource%2A> property.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
-  
+The following code example demonstrates how to query the value of the <xref:System.Web.UI.WebResourceAttribute.WebResource%2A> property.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

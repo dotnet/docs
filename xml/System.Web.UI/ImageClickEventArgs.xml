@@ -14,23 +14,23 @@
     <summary>Provides data for any events that occur when a user clicks an image-based ASP.NET server control, such as the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> or <see cref="T:System.Web.UI.WebControls.ImageButton" /> server controls. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class passes the location where a user clicked an <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control or an <xref:System.Web.UI.WebControls.ImageButton> Web server control. Clicking an <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control causes a <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event to occur, while clicking an <xref:System.Web.UI.WebControls.ImageButton> server control causes a <xref:System.Web.UI.WebControls.ImageButton.Click> event to occur. You can then use event handlers to programmatically respond to the event based on the value of these coordinates.  
-  
+This class passes the location where a user clicked an <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control or an <xref:System.Web.UI.WebControls.ImageButton> Web server control. Clicking an <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control causes a <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event to occur, while clicking an <xref:System.Web.UI.WebControls.ImageButton> server control causes a <xref:System.Web.UI.WebControls.ImageButton.Click> event to occur. You can then use event handlers to programmatically respond to the event based on the value of these coordinates.  
+ 
 > [!NOTE]
 >  The origin coordinates (0,0) are located at the upper left corner of the image.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates an ASP.NET page that uses the information provided by this class to display the coordinates of a user's click on an image.  
-  
- [!code-csharp[SystemWebUI.ImageClickEventArgs Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI.ImageClickEventArgs Sample/CS/imageclickeventargscs.aspx#1)]
- [!code-vb[SystemWebUI.ImageClickEventArgs Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI.ImageClickEventArgs Sample/VB/imageclickeventargsvb.aspx#1)]  
-  
+The following code example demonstrates an ASP.NET page that uses the information provided by this class to display the coordinates of a user's click on an image.  
+ 
+[!code-csharp[SystemWebUI.ImageClickEventArgs Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI.ImageClickEventArgs Sample/CS/imageclickeventargscs.aspx#1)]
+[!code-vb[SystemWebUI.ImageClickEventArgs Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI.ImageClickEventArgs Sample/VB/imageclickeventargsvb.aspx#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

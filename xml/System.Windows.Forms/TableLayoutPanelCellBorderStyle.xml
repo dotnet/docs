@@ -13,18 +13,18 @@
     <summary>Specifies the border style of a cell in a table layout control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutPanelCellBorderStyle> enumeration represents the different border style options for a cell in a <xref:System.Windows.Forms.TableLayoutPanel>. The width of the cell border for each style is determined by the <xref:System.Windows.Forms.TableLayoutPanel> class. The space for the border is taken from the <xref:System.Windows.Forms.TableLayoutPanel> control's <xref:System.Windows.Forms.Control.DisplayRectangle%2A>.  
+The <xref:System.Windows.Forms.TableLayoutPanelCellBorderStyle> enumeration represents the different border style options for a cell in a <xref:System.Windows.Forms.TableLayoutPanel>. The width of the cell border for each style is determined by the <xref:System.Windows.Forms.TableLayoutPanel> class. The space for the border is taken from the <xref:System.Windows.Forms.TableLayoutPanel> control's <xref:System.Windows.Forms.Control.DisplayRectangle%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Forms.TableLayoutPanelCellBorderStyle> enumeration to set the <xref:System.Windows.Forms.TableLayoutPanel.CellBorderStyle%2A> for a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
-  
- [!code-csharp[System.Windows.Forms.TableLayoutPanel#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#6)]
- [!code-vb[System.Windows.Forms.TableLayoutPanel#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#6)]  
-  
+The following example shows how to use the <xref:System.Windows.Forms.TableLayoutPanelCellBorderStyle> enumeration to set the <xref:System.Windows.Forms.TableLayoutPanel.CellBorderStyle%2A> for a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+ 
+[!code-csharp[System.Windows.Forms.TableLayoutPanel#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#6)]
+[!code-vb[System.Windows.Forms.TableLayoutPanel#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

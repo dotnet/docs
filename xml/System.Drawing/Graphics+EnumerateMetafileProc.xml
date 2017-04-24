@@ -29,17 +29,17 @@
     <returns>Return <see langword="true" /> if you want to continue enumerating records; otherwise, <see langword="false" />.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used in conjunction with the <xref:System.Drawing.Graphics.EnumerateMetafile%2A> method of the <xref:System.Drawing.Graphics> class. Certain overloads of the <xref:System.Drawing.Graphics.EnumerateMetafile%2A> method call an application-defined callback method of this type for each record in a specified metafile. The callback function can display each record (or selected records) by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+This method is used in conjunction with the <xref:System.Drawing.Graphics.EnumerateMetafile%2A> method of the <xref:System.Drawing.Graphics> class. Certain overloads of the <xref:System.Drawing.Graphics.EnumerateMetafile%2A> method call an application-defined callback method of this type for each record in a specified metafile. The callback function can display each record (or selected records) by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ 
+A user declaration of this callback method must have the same parameters as the <xref:System.Drawing.Graphics.EnumerateMetafileProc> delegate declaration.  
+ 
   
- A user declaration of this callback method must have the same parameters as the <xref:System.Drawing.Graphics.EnumerateMetafileProc> delegate declaration.  
-  
-   
-  
+ 
 ## Examples  
- For an example see <xref:System.Drawing.Graphics.EnumerateMetafile%2A>.  
-  
+For an example see <xref:System.Drawing.Graphics.EnumerateMetafile%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

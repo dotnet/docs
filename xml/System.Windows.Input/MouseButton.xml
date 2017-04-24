@@ -13,13 +13,13 @@
     <summary>Defines values that specify the buttons on a mouse device.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Input.Mouse.MouseDown> event handler that uses the <xref:System.Windows.Input.MouseButton> enumeration to determine which button was pressed. Depending on which button was pressed, the background of the control that fired the event is changed.  
-  
- [!code-csharp[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargschangedbutton)]
- [!code-vb[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargschangedbutton)]  
-  
+The following example creates a <xref:System.Windows.Input.Mouse.MouseDown> event handler that uses the <xref:System.Windows.Input.MouseButton> enumeration to determine which button was pressed. Depending on which button was pressed, the background of the control that fired the event is changed.  
+ 
+[!code-csharp[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargschangedbutton)]
+[!code-vb[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargschangedbutton)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

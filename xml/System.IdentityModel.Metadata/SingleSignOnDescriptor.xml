@@ -47,10 +47,10 @@
         <value>The <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" /> that contains the indexed endpoints for the artifact resolution services.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dictionary contains zero or more entries that describe indexed endpoints that support the Artifact Resolution profile defined in [SAMLProf].  
-  
+The dictionary contains zero or more entries that describe indexed endpoints that support the Artifact Resolution profile defined in [SAMLProf].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <value>The collection of URIs that represent the supported name identifier formats.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection contains zero or more elements that enumerate the name identifier formats supported by the service provider.  
-  
+The collection contains zero or more elements that enumerate the name identifier formats supported by the service provider.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <value>The collection of single logout service endpoints.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection contains zero or more elements that describe endpoints that support the Single Logout profiles defined in [SAMLProf].  
-  
+The collection contains zero or more elements that describe endpoints that support the Single Logout profiles defined in [SAMLProf].  
+ 
  ]]></format>
         </remarks>
       </Docs>

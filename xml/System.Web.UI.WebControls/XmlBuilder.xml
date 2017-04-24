@@ -50,10 +50,10 @@
         <summary>Adds literal content to the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.XmlBuilder.AppendLiteralString%2A> method of the <xref:System.Web.UI.WebControls.XmlBuilder> class overrides the <xref:System.Web.UI.ControlBuilder.AppendLiteralString%2A> method of the <xref:System.Web.UI.ControlBuilder> class so that the method of the base class has no effect.  
-  
+The <xref:System.Web.UI.WebControls.XmlBuilder.AppendLiteralString%2A> method of the <xref:System.Web.UI.WebControls.XmlBuilder> class overrides the <xref:System.Web.UI.ControlBuilder.AppendLiteralString%2A> method of the <xref:System.Web.UI.ControlBuilder> class so that the method of the base class has no effect.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <returns>The <see cref="M:System.Web.UI.ControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" /> method is overridden to always return <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.XmlBuilder.GetChildControlType%2A> method of the <xref:System.Web.UI.WebControls.XmlBuilder> class overrides the <xref:System.Web.UI.ControlBuilder.GetChildControlType%2A> method of the <xref:System.Web.UI.ControlBuilder> class. This implementation of the <xref:System.Web.UI.WebControls.XmlBuilder.GetChildControlType%2A> method always returns `null`.  
-  
+The <xref:System.Web.UI.WebControls.XmlBuilder.GetChildControlType%2A> method of the <xref:System.Web.UI.WebControls.XmlBuilder> class overrides the <xref:System.Web.UI.ControlBuilder.GetChildControlType%2A> method of the <xref:System.Web.UI.ControlBuilder> class. This implementation of the <xref:System.Web.UI.WebControls.XmlBuilder.GetChildControlType%2A> method always returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,12 +107,12 @@
         <returns>The <see cref="M:System.Web.UI.ControlBuilder.NeedsTagInnerText" /> method is overridden to always return <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.XmlBuilder.NeedsTagInnerText%2A> method of the <xref:System.Web.UI.WebControls.XmlBuilder> class overrides the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method of the <xref:System.Web.UI.ControlBuilder> class to always return `true`.  
-  
- The inner text is the text between the opening and closing tags of the control.  
-  
+The <xref:System.Web.UI.WebControls.XmlBuilder.NeedsTagInnerText%2A> method of the <xref:System.Web.UI.WebControls.XmlBuilder> class overrides the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method of the <xref:System.Web.UI.ControlBuilder> class to always return `true`.  
+ 
+The inner text is the text between the opening and closing tags of the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <summary>Sets the <see cref="T:System.Web.UI.WebControls.Xml" /> control's inner text.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method loads the <xref:System.String> passed in to an XML document to determine whether it is well-formed. If it is, the code calls the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> method of the <xref:System.Web.UI.ControlBuilder> class.  
-  
+This method loads the <xref:System.String> passed in to an XML document to determine whether it is well-formed. If it is, the code calls the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> method of the <xref:System.Web.UI.ControlBuilder> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The <see cref="T:System.String" /> object passed in is not well-formed XML.</exception>

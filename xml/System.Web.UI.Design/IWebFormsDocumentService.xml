@@ -16,12 +16,12 @@
     <summary>Provides methods to access services for tracking the loading state of a Web Forms document, handling events at load time, accessing a document's location, managing a document's undo service, and setting a new selection within the document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IWebFormsDocumentService> interface is obsolete. Use the <xref:System.Web.UI.Design.WebFormsRootDesigner> class for equivalent designer functionality.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <returns>The new discardable undo unit.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is obsolete and there is no equivalent functionality.  
-  
+This method is obsolete and there is no equivalent functionality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <summary>Discards the specified undo unit.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is obsolete and there is no equivalent functionality.  
-  
+This method is obsolete and there is no equivalent functionality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,12 +97,12 @@
         <value>The URL at which the document is located, or <see langword="null" /> if the document has no associated URL.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IWebFormsDocumentService.DocumentUrl%2A> interface property is obsolete. Use the <xref:System.Web.UI.Design.WebFormsRootDesigner.DocumentUrl%2A> property on the <xref:System.Web.UI.Design.WebFormsRootDesigner> class for equivalent designer functionality.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <summary>Enables the ability to undo actions that occur within undoable action units or transactions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is obsolete and there is no equivalent functionality.  
-  
+This method is obsolete and there is no equivalent functionality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,12 +154,12 @@
           <see langword="true" /> if the document service is loading; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IWebFormsDocumentService.IsLoading%2A> interface property is obsolete. Use the <xref:System.Web.UI.Design.WebFormsRootDesigner.IsLoading%2A> property on the <xref:System.Web.UI.Design.WebFormsRootDesigner> class for equivalent designer functionality.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,14 +180,14 @@
         <summary>Occurs when the service has finished loading.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IWebFormsDocumentService.LoadComplete> interface event is obsolete. Use the <xref:System.Web.UI.Design.WebFormsRootDesigner.LoadComplete> event on the <xref:System.Web.UI.Design.WebFormsRootDesigner> class for equivalent designer functionality.  
-  
- This event provides an opportunity to perform operations immediately after loading has completed. Events that should occur at load time can be registered as event handlers for this event.  
-  
+ 
+This event provides an opportunity to perform operations immediately after loading has completed. Events that should occur at load time can be registered as event handlers for this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
         <summary>When implemented in a derived class, updates the current selection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is obsolete and there is no equivalent functionality.  
-  
+This method is obsolete and there is no equivalent functionality.  
+ 
  ]]></format>
         </remarks>
       </Docs>

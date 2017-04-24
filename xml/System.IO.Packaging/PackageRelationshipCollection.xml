@@ -22,18 +22,18 @@
     <summary>Represents a collection of <see cref="T:System.IO.Packaging.PackageRelationship" /> elements that are owned by a given <see cref="T:System.IO.Packaging.PackagePart" /> or the <see cref="T:System.IO.Packaging.Package" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Packaging.PackageRelationshipCollection> class has no public constructor.  This class is created and returned by the following methods.  
-  
+The <xref:System.IO.Packaging.PackageRelationshipCollection> class has no public constructor.  This class is created and returned by the following methods.  
+ 
 -   **Package**.<xref:System.IO.Packaging.Package.GetRelationships%2A>  
-  
+ 
 -   **Package**.<xref:System.IO.Packaging.Package.GetRelationshipsByType%2A>  
-  
+ 
 -   **PackagePart**.<xref:System.IO.Packaging.PackagePart.GetRelationships%2A>  
-  
+ 
 -   **PackagePart**.<xref:System.IO.Packaging.PackagePart.GetRelationshipsByType%2A>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,18 +60,18 @@
         <returns>An enumerator for iterating through the <see cref="T:System.IO.Packaging.PackageRelationship" /> elements in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection accessed by the enumerator is invalidated after any change occurs to the underlying collection.  The underlying collection can change when any of the following methods are called.  
-  
+The collection accessed by the enumerator is invalidated after any change occurs to the underlying collection.  The underlying collection can change when any of the following methods are called.  
+ 
 -   **Package**.<xref:System.IO.Packaging.Package.CreateRelationship%2A>  
-  
+ 
 -   **Package**.<xref:System.IO.Packaging.Package.DeleteRelationship%2A>  
-  
+ 
 -   **PackagePart**.<xref:System.IO.Packaging.PackagePart.CreateRelationship%2A>  
-  
+ 
 -   **PackagePart**.<xref:System.IO.Packaging.PackagePart.DeleteRelationship%2A>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

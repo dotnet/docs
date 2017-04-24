@@ -14,12 +14,12 @@
     <summary>References a directory location that is used during compilation of a dynamic resource. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.Configuration.CodeSubDirectory> is referenced as an attribute of the `Add` element within the `codeSubDirectories` node of the `compilation` section of the configuration.  
-  
- The build order is inferred from the top-down order of the `codeSubDirectories` in the configuration. The `\App_Code` directory is built last. However, there are no build-order dependencies, which means the build order does not matter here.  
-  
+A <xref:System.Web.Configuration.CodeSubDirectory> is referenced as an attribute of the `Add` element within the `codeSubDirectories` node of the `compilation` section of the configuration.  
+ 
+The build order is inferred from the top-down order of the `codeSubDirectories` in the configuration. The `\App_Code` directory is built last. However, there are no build-order dependencies, which means the build order does not matter here.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,10 +67,10 @@
         <value>A string value specifying the name of the directory reference used during compilation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `directoryName` attribute of an `add` element of the configuration is searched only from the `\App_Code` path; therefore, adding `directoryName="\App_Code\Applogic"` is not valid.  
-  
+A `directoryName` attribute of an `add` element of the configuration is searched only from the `\App_Code` path; therefore, adding `directoryName="\App_Code\Applogic"` is not valid.  
+ 
  ]]></format>
         </remarks>
       </Docs>

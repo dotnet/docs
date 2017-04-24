@@ -14,20 +14,20 @@
     <summary>Represents a property identifier and the property value for a locally set dependency property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class are returned when getting the value of the <xref:System.Windows.LocalValueEnumerator.Current%2A> property of a <xref:System.Windows.LocalValueEnumerator>. All <xref:System.Windows.LocalValueEntry> properties are read-only.  
+Instances of this class are returned when getting the value of the <xref:System.Windows.LocalValueEnumerator.Current%2A> property of a <xref:System.Windows.LocalValueEnumerator>. All <xref:System.Windows.LocalValueEntry> properties are read-only.  
+ 
+This class has no public constructor. In order to obtain instances of this class you must call <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A>, and then get the value of <xref:System.Windows.LocalValueEnumerator.Current%2A> from the returned <xref:System.Windows.LocalValueEnumerator>.  
+ 
   
- This class has no public constructor. In order to obtain instances of this class you must call <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A>, and then get the value of <xref:System.Windows.LocalValueEnumerator.Current%2A> from the returned <xref:System.Windows.LocalValueEnumerator>.  
-  
-   
-  
+ 
 ## Examples  
- The following example iterates locally set values of a <xref:System.Windows.DependencyObject> and queries <xref:System.Windows.LocalValueEntry> properties.  
-  
- [!code-csharp[DPClearValue#IterateLocalValuesAndClear](~/samples/snippets/csharp/VS_Snippets_Wpf/DPClearValue/CSharp/default.xaml.cs#iteratelocalvaluesandclear)]
- [!code-vb[DPClearValue#IterateLocalValuesAndClear](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DPClearValue/VisualBasic/default.xaml.vb#iteratelocalvaluesandclear)]  
-  
+The following example iterates locally set values of a <xref:System.Windows.DependencyObject> and queries <xref:System.Windows.LocalValueEntry> properties.  
+ 
+[!code-csharp[DPClearValue#IterateLocalValuesAndClear](~/samples/snippets/csharp/VS_Snippets_Wpf/DPClearValue/CSharp/default.xaml.cs#iteratelocalvaluesandclear)]
+[!code-vb[DPClearValue#IterateLocalValuesAndClear](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DPClearValue/VisualBasic/default.xaml.vb#iteratelocalvaluesandclear)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -97,12 +97,12 @@
           <see langword="true" /> if the <paramref name="obj1" /> <see cref="T:System.Windows.LocalValueEntry" /> is equal to the <paramref name="obj2" /> <see cref="T:System.Windows.LocalValueEntry" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Windows.LocalValueEntry.op_Equality%2A> implementation compares the values of the <xref:System.Windows.LocalValueEntry.Property%2A>, and potentially compares the values of <xref:System.Windows.LocalValueEntry.Value%2A>. The <xref:System.Windows.LocalValueEntry.Property%2A> component of a <xref:System.Windows.LocalValueEntry> is always a value type, so this comparison will always be a bitwise value comparison. For the <xref:System.Windows.LocalValueEntry.Value%2A> component, this implementation employs a bitwise comparison if it is a value type.  
-  
- For locally set properties that have reference types, the behavior is deferred to that type's equality determination mechanisms, because it uses the `==` operator on the two values internally. By default, this is a reference equality of the values.  
-  
+This <xref:System.Windows.LocalValueEntry.op_Equality%2A> implementation compares the values of the <xref:System.Windows.LocalValueEntry.Property%2A>, and potentially compares the values of <xref:System.Windows.LocalValueEntry.Value%2A>. The <xref:System.Windows.LocalValueEntry.Property%2A> component of a <xref:System.Windows.LocalValueEntry> is always a value type, so this comparison will always be a bitwise value comparison. For the <xref:System.Windows.LocalValueEntry.Value%2A> component, this implementation employs a bitwise comparison if it is a value type.  
+ 
+For locally set properties that have reference types, the behavior is deferred to that type's equality determination mechanisms, because it uses the `==` operator on the two values internally. By default, this is a reference equality of the values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <value>The identifier for the locally set dependency property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to query the identifier of the locally set dependency property and to obtain its metadata. This obtained metadata may include the initial default value of the property and whether the property supports property value inheritance.  
-  
+Use this property to query the identifier of the locally set dependency property and to obtain its metadata. This obtained metadata may include the initial default value of the property and whether the property supports property value inheritance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <value>The value of the locally set dependency property as an object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine a more specific type for this value, check the <xref:System.Windows.LocalValueEntry.Property%2A> for the current <xref:System.Windows.LocalValueEntry> and get its <xref:System.Windows.DependencyProperty.PropertyType%2A>.  
-  
+To determine a more specific type for this value, check the <xref:System.Windows.LocalValueEntry.Property%2A> for the current <xref:System.Windows.LocalValueEntry> and get its <xref:System.Windows.DependencyProperty.PropertyType%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

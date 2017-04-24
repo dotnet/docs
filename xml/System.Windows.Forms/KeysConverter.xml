@@ -18,18 +18,18 @@
     <summary>Provides a <see cref="T:System.ComponentModel.TypeConverter" /> to convert <see cref="T:System.Windows.Forms.Keys" /> objects to and from other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Most commonly, the <xref:System.Windows.Forms.KeysConverter> type converter is used to convert <xref:System.Windows.Forms.Keys> instances to and from their corresponding localized <xref:System.String> representations.  
+Most commonly, the <xref:System.Windows.Forms.KeysConverter> type converter is used to convert <xref:System.Windows.Forms.Keys> instances to and from their corresponding localized <xref:System.String> representations.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.KeysConverter> class to convert a <xref:System.Windows.Forms.Keys> to a <xref:System.String>. This example assumes that you have a <xref:System.Windows.Forms.TextBox> named `TextBox1` on a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-csharp[SystemWindowsFormsKeys#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemWindowsFormsKeys/CS/Form1.cs#1)]
- [!code-vb[SystemWindowsFormsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemWindowsFormsKeys/VB/Form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.KeysConverter> class to convert a <xref:System.Windows.Forms.Keys> to a <xref:System.String>. This example assumes that you have a <xref:System.Windows.Forms.TextBox> named `TextBox1` on a <xref:System.Windows.Forms.Form> named `Form1`.  
+ 
+[!code-csharp[SystemWindowsFormsKeys#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemWindowsFormsKeys/CS/Form1.cs#1)]
+[!code-vb[SystemWindowsFormsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemWindowsFormsKeys/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,12 +48,12 @@
         <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.KeysConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the default, compiler-supplied constructor for the <xref:System.Windows.Forms.KeysConverter> class.  
-  
- Typically, you do not directly create an instance of a <xref:System.Windows.Forms.KeysConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+This is the default, compiler-supplied constructor for the <xref:System.Windows.Forms.KeysConverter> class.  
+ 
+Typically, you do not directly create an instance of a <xref:System.Windows.Forms.KeysConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
           <see langword="true" /> if the conversion can be performed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.KeysConverter.CanConvertFrom%2A> method is specialized to return `true` if the `sourceType` parameter is of type <xref:System.String> or <xref:System.Enum> array; otherwise, it defers evaluation to the base implementation of this method.  
-  
+The <xref:System.Windows.Forms.KeysConverter.CanConvertFrom%2A> method is specialized to return `true` if the `sourceType` parameter is of type <xref:System.String> or <xref:System.Enum> array; otherwise, it defers evaluation to the base implementation of this method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -119,10 +119,10 @@
           <see langword="true" /> if the conversion can be performed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.KeysConverter.CanConvertTo%2A> method is specialized to return `true` if the `destinationType` parameter is of type <xref:System.Enum> array; otherwise, it defers evaluation to the base implementation of this method.  
-  
+The <xref:System.Windows.Forms.KeysConverter.CanConvertTo%2A> method is specialized to return `true` if the `destinationType` parameter is of type <xref:System.Enum> array; otherwise, it defers evaluation to the base implementation of this method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -190,10 +190,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses <xref:System.String.Compare%2A?displayProperty=fullName> to compare the two objects.  
-  
+This method uses <xref:System.String.Compare%2A?displayProperty=fullName> to compare the two objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <returns>An object that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.KeysConverter.ConvertFrom%2A> method is specialized to convert objects of type <xref:System.String> or <xref:System.Enum> array. In this case, it will return an object of type <xref:System.Windows.Forms.Keys>. Otherwise, it defers evaluation to the base implementation of this method.  
-  
+The <xref:System.Windows.Forms.KeysConverter.ConvertFrom%2A> method is specialized to convert objects of type <xref:System.String> or <xref:System.Enum> array. In this case, it will return an object of type <xref:System.Windows.Forms.Keys>. Otherwise, it defers evaluation to the base implementation of this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">An invalid key combination was supplied.  
@@ -266,10 +266,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.KeysConverter.ConvertTo%2A> method is specialized to convert objects of type <xref:System.Windows.Forms.Keys> or <xref:System.Int32>. In this case, it will return an object of type <xref:System.String>. Otherwise, it defers evaluation to the base implementation of this method.  
-  
+The <xref:System.Windows.Forms.KeysConverter.ConvertTo%2A> method is specialized to convert objects of type <xref:System.Windows.Forms.Keys> or <xref:System.Int32>. In this case, it will return an object of type <xref:System.String>. Otherwise, it defers evaluation to the base implementation of this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -302,10 +302,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a standard set of valid values, which can be empty if the data type does not support a standard set of values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection returned contains the values of the keys that can be converted.  
-  
+The collection returned contains the values of the keys that can be converted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,12 +332,12 @@
           <see langword="true" /> if the collection returned from <see cref="Overload:System.Windows.Forms.KeysConverter.GetStandardValues" /> is an exhaustive list of possible values; otherwise, <see langword="false" /> if other values are possible. The default implementation for this method always returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter is not used in the standard implementation of this method.  
-  
- If the list is exclusive, then no other values are valid, such as in an <xref:System.Enum> data type. If the list is not exclusive, then there are other valid values besides the list of standard values <xref:System.Windows.Forms.KeysConverter.GetStandardValues%2A> provides.  
-  
+The `context` parameter is not used in the standard implementation of this method.  
+ 
+If the list is exclusive, then no other values are valid, such as in an <xref:System.Enum> data type. If the list is not exclusive, then there are other valid values besides the list of standard values <xref:System.Windows.Forms.KeysConverter.GetStandardValues%2A> provides.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,10 +363,10 @@
         <returns>Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter is not used in the standard implementation of this method.  
-  
+The `context` parameter is not used in the standard implementation of this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

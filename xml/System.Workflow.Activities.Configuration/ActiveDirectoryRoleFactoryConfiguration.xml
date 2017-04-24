@@ -19,14 +19,14 @@
     <summary>Represents the section in the configuration file that addresses the role class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This class derives from <xref:System.Configuration.ConfigurationSection> which represents a section in a configuration file when implemented in a derived class.  More information may be obtained by reference to this class.  
-  
+ 
+This class derives from <xref:System.Configuration.ConfigurationSection> which represents a section in a configuration file when implemented in a derived class.  More information may be obtained by reference to this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <value>The names of the direct reports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DirectReports%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`DirectReports`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
-  
+<xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DirectReports%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`DirectReports`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <value>The distinguished name for this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DistinguishedName%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`DistiguishedName`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
-  
+<xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DistinguishedName%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`DistiguishedName`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <value>The name of the manager associated with this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Manager%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`Manager`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
-  
+<xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Manager%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`Manager`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,10 +181,10 @@
         <value>The member for this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Member%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`Member`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
-  
+<xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Member%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`Member`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,10 +211,10 @@
         <value>The root path for this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.RootPath%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`RootPath` ". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
-  
+<xref:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.RootPath%2A> is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`RootPath` ". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>

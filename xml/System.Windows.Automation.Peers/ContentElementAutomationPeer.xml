@@ -54,12 +54,12 @@
         <returns>The <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> for the specified <see cref="T:System.Windows.ContentElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer> remains in memory until the associated <xref:System.Windows.ContentElement> is destroyed.  
-  
- The same instance of the <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer> is returned from subsequent calls to this method and to calls to <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer.FromElement%2A>. The type of the peer is determined by the <xref:System.Windows.UIElement.OnCreateAutomationPeer%2A> virtual callback. If <xref:System.Windows.FrameworkContentElement> does not implement the callback, no <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer> is created and this method returns `null`.  
-  
+This <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer> remains in memory until the associated <xref:System.Windows.ContentElement> is destroyed.  
+ 
+The same instance of the <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer> is returned from subsequent calls to this method and to calls to <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer.FromElement%2A>. The type of the peer is determined by the <xref:System.Windows.UIElement.OnCreateAutomationPeer%2A> virtual callback. If <xref:System.Windows.FrameworkContentElement> does not implement the callback, no <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer> is created and this method returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <returns>A string containing the automation identifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the automation identifier is the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property, and if that isn't set, it's the <xref:System.Windows.FrameworkElement.Name%2A> property.  
-  
+The value of the automation identifier is the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property, and if that isn't set, it's the <xref:System.Windows.FrameworkElement.Name%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <returns>The point that represents the clickable space that is on the element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, if the element is a <xref:System.Windows.Controls.Button>, the clickable point is any point that is within the visible client area of the <xref:System.Windows.Controls.Button> that would result in issuing the command that the button represents, when the user clicks the <xref:System.Windows.Controls.Button> by using the mouse.  
-  
+For example, if the element is a <xref:System.Windows.Controls.Button>, the clickable point is any point that is within the visible client area of the <xref:System.Windows.Controls.Button> that would result in issuing the command that the button represents, when the user clicks the <xref:System.Windows.Controls.Button> by using the mouse.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,10 +270,10 @@
         <returns>The string that describes the functionality of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string that is returned generally is the same text that is provided in the tooltip for the control.  
-  
+The string that is returned generally is the same text that is provided in the tooltip for the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,10 +296,10 @@
         <returns>A string containing the status.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, the status of a messenger contact could be "Busy" or "Online".  
-  
+For example, the status of a messenger contact could be "Busy" or "Online".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,10 +322,10 @@
         <returns>The string that contains the item type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Examples are "Mail Message", "Contact", and "Document".  
-  
+Examples are "Mail Message", "Contact", and "Document".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,10 +348,10 @@
         <returns>The <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for the element that is targeted by the <see cref="T:System.Windows.Controls.Label" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, if the element is a <xref:System.Windows.Controls.ComboBox> control, the <xref:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy%2A> method could get the <xref:System.Windows.Automation.Peers.AutomationPeer> for the <xref:System.Windows.Controls.Label> that is associated with the <xref:System.Windows.Controls.ComboBox>.  
-  
+For example, if the element is a <xref:System.Windows.Controls.ComboBox> control, the <xref:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy%2A> method could get the <xref:System.Windows.Automation.Peers.AutomationPeer> for the <xref:System.Windows.Controls.Label> that is associated with the <xref:System.Windows.Controls.ComboBox>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,10 +374,10 @@
         <returns>The string that contains the label.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name property can be thought of as the string of text that a user would use to explain which control is being referred to. It is important to have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
-  
+The name property can be thought of as the string of text that a user would use to explain which control is being referred to. It is important to have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -542,10 +542,10 @@
           <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property does not indicate whether the element is visible. In some circumstances, an element can be on the screen but still not be visible, for example if the element is obscured by other elements. In this case the method would return `false`.  
-  
+This property does not indicate whether the element is visible. In some circumstances, an element can be on the screen but still not be visible, for example if the element is obscured by other elements. In this case the method would return `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

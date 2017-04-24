@@ -22,20 +22,20 @@
     <summary>Represents the method implemented by the UI Automation client application to handle an event raised by a UI Automation provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use an <xref:System.Windows.Automation.AutomationEventHandler> delegate to specify the method that is called by a client to handle [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] events.  
+Use an <xref:System.Windows.Automation.AutomationEventHandler> delegate to specify the method that is called by a client to handle [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] events.  
+ 
+The <xref:System.Windows.Automation.AutomationElement> represented by `sender` might not have any cached properties or patterns, depending on whether the application subscribed to this event while a <xref:System.Windows.Automation.CacheRequest> was active.  
+ 
   
- The <xref:System.Windows.Automation.AutomationElement> represented by `sender` might not have any cached properties or patterns, depending on whether the application subscribed to this event while a <xref:System.Windows.Automation.CacheRequest> was active.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to subscribe to and handle an event.  
-  
- [!code-csharp[UIAClient_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#101)]
- [!code-vb[UIAClient_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#101)]  
-  
+The following example shows how to subscribe to and handle an event.  
+ 
+[!code-csharp[UIAClient_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#101)]
+[!code-vb[UIAClient_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#101)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

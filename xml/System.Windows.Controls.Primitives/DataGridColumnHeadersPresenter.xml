@@ -19,10 +19,10 @@
     <summary>Used within the template of a <see cref="T:System.Windows.Controls.DataGrid" /> to specify the location in the control's visual tree where the column headers are to be added.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class generates the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> instances that are added to the <xref:System.Windows.Controls.DataGrid> visual tree.  
-  
+This class generates the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> instances that are added to the <xref:System.Windows.Controls.DataGrid> visual tree.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -127,10 +127,10 @@
         <returns>The clipping geometry.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method override always returns a clipping geometry that is the same size as the column header, regardless of the <xref:System.Windows.UIElement.ClipToBounds%2A> property value.  
-  
+This method override always returns a clipping geometry that is the same size as the column header, regardless of the <xref:System.Windows.UIElement.ClipToBounds%2A> property value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <returns>The child.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method override includes the column header drag indicator as a visual child.  
-  
+This method override includes the column header drag indicator as a visual child.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <value>The number of visual children.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method override includes the column header drag indicator as a visual child.  
-  
+This method override includes the column header drag indicator as a visual child.  
+ 
  ]]></format>
         </remarks>
       </Docs>

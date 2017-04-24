@@ -56,10 +56,10 @@
         <value>The <paramref name="declaringType" /> component value of the <see cref="T:System.Xaml.AttachableMemberIdentifier" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.AttachableMemberIdentifier.DeclaringType%2A> value should match the name of the <xref:System.Xaml.XamlMember.Type%2A?displayProperty=fullName> of the attachable member's XAML type system information.  
-  
+The <xref:System.Xaml.AttachableMemberIdentifier.DeclaringType%2A> value should match the name of the <xref:System.Xaml.XamlMember.Type%2A?displayProperty=fullName> of the attachable member's XAML type system information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
           <see langword="true" /> if the objects have the same value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values that this method checks for equality are <xref:System.Xaml.AttachableMemberIdentifier.DeclaringType%2A> and <xref:System.Xaml.AttachableMemberIdentifier.MemberName%2A>.  
-  
+The values that this method checks for equality are <xref:System.Xaml.AttachableMemberIdentifier.DeclaringType%2A> and <xref:System.Xaml.AttachableMemberIdentifier.MemberName%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,10 +153,10 @@
         <value>The <paramref name="memberName" /> component value of the <see cref="T:System.Xaml.AttachableMemberIdentifier" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.AttachableMemberIdentifier.MemberName%2A> value should match the <xref:System.Xaml.XamlMember.Name%2A?displayProperty=fullName> of the attachable member's XAML type system information.  
-  
+The <xref:System.Xaml.AttachableMemberIdentifier.MemberName%2A> value should match the <xref:System.Xaml.XamlMember.Name%2A?displayProperty=fullName> of the attachable member's XAML type system information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Xaml.AttachableMemberIdentifier" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation returns a string form that parallels the XAML attachable member usage in markup. That string form is `declaringType``.``memberName`.  
-  
+This implementation returns a string form that parallels the XAML attachable member usage in markup. That string form is `declaringType``.``memberName`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

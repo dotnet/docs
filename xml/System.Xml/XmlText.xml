@@ -52,10 +52,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlText" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not instantiate an <xref:System.Xml.XmlText> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateTextNode%2A>.  
-  
+Do not instantiate an <xref:System.Xml.XmlText> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateTextNode%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,12 +91,12 @@
         <returns>The cloned node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `CloneNode` serves as a copy constructor for nodes. For text nodes, the cloned node always includes the data value. To see how this method behaves with other node types, see the <xref:System.Xml.XmlNode.CloneNode%2A> method in the `XmlNode` class.  
-  
- The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
-  
+`CloneNode` serves as a copy constructor for nodes. For text nodes, the cloned node always includes the data value. To see how this method behaves with other node types, see the <xref:System.Xml.XmlNode.CloneNode%2A> method in the `XmlNode` class.  
+ 
+The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,10 +266,10 @@
         <returns>The new node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After `SplitText` is called, the original node contains all the content up to the offset point. A new node of the same type contains all the content at and after the offset point and is inserted as the next sibling of the original node. When the offset is equal to the length of this node, the new node has no data.  
-  
+After `SplitText` is called, the original node contains all the content up to the offset point. A new node of the same type contains all the content at and after the offset point and is inserted as the next sibling of the original node. When the offset is equal to the length of this node, the new node has no data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,10 +330,10 @@
         <summary>Saves all the children of the node to the specified <see cref="T:System.Xml.XmlWriter" />. <see langword="XmlText" /> nodes do not have children, so this method has no effect.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,10 +367,10 @@
         <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>

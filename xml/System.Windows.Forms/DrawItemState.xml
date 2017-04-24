@@ -18,19 +18,19 @@
     <summary>Specifies the state of an item that is being drawn.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.DrawItemEventArgs.State%2A?displayProperty=fullName>.  
+This enumeration is used by members such as <xref:System.Windows.Forms.DrawItemEventArgs.State%2A?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
-  
- [!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
- [!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
- [!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
-  
+The following code example demonstrates using the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
+ 
+[!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
+[!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
+[!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

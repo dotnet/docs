@@ -24,20 +24,20 @@
     <summary>The exception that is thrown when an attempt to unload an application domain fails.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CannotUnloadAppDomainException> is thrown when there is an attempt to unload the following:  
-  
+<xref:System.CannotUnloadAppDomainException> is thrown when there is an attempt to unload the following:  
+ 
 -   The default application domain, which must remain loaded during the lifetime of the application.  
-  
+ 
 -   An application domain with a running thread that cannot immediately stop execution.  
-  
+ 
 -   An application domain that has already been unloaded.  
-  
- <xref:System.CannotUnloadAppDomainException> uses the HRESULT COR_E_CANNOTUNLOADAPPDOMAIN, which has the value 0x80131015.  
-  
- For a list of initial property values for an instance of <xref:System.CannotUnloadAppDomainException>, see the <xref:System.CannotUnloadAppDomainException.%23ctor%2A> constructors.  
-  
+ 
+<xref:System.CannotUnloadAppDomainException> uses the HRESULT COR_E_CANNOTUNLOADAPPDOMAIN, which has the value 0x80131015.  
+ 
+For a list of initial property values for an instance of <xref:System.CannotUnloadAppDomainException>, see the <xref:System.CannotUnloadAppDomainException.%23ctor%2A> constructors.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,17 +61,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.CannotUnloadAppDomainException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Attempt to unload the AppDomain failed." This message takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.CannotUnloadAppDomainException>.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Attempt to unload the AppDomain failed." This message takes into account the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.CannotUnloadAppDomainException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.Exception.Message%2A>|The localized error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,17 +98,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.CannotUnloadAppDomainException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.CannotUnloadAppDomainException>.  
-  
+The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.CannotUnloadAppDomainException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.CannotUnloadAppDomainException" /> class from serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,17 +169,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.CannotUnloadAppDomainException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.CannotUnloadAppDomainException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.CannotUnloadAppDomainException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

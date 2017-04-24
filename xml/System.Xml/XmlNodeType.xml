@@ -52,10 +52,10 @@
         <summary>An attribute (for example, <c>id='123'</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An `Attribute` node can have the following child node types: `Text` and `EntityReference`. The `Attribute` node does not appear as the child node of any other node type. It is not considered a child node of an `Element`.  
-  
+An `Attribute` node can have the following child node types: `Text` and `EntityReference`. The `Attribute` node does not appear as the child node of any other node type. It is not considered a child node of an `Element`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,10 +87,10 @@
         <summary>A CDATA section (for example, <c>&lt;![CDATA[my escaped text]]&gt;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- CDATA sections are used to escape blocks of text that would otherwise be recognized as markup. A `CDATA` node cannot have any child nodes. It can appear as the child of the `DocumentFragment`, `EntityReference`, and `Element` nodes.  
-  
+CDATA sections are used to escape blocks of text that would otherwise be recognized as markup. A `CDATA` node cannot have any child nodes. It can appear as the child of the `DocumentFragment`, `EntityReference`, and `Element` nodes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <summary>A comment (for example, <c>&lt;!-- my comment --&gt;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `Comment` node cannot have any child nodes. It can appear as the child of the `Document`, `DocumentFragment`, `Element`, and `EntityReference` nodes.  
-  
+A `Comment` node cannot have any child nodes. It can appear as the child of the `Document`, `DocumentFragment`, `Element`, and `EntityReference` nodes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,10 +157,10 @@
         <summary>A document object that, as the root of the document tree, provides access to the entire XML document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `Document` node can have the following child node types: `XmlDeclaration`, `Element` (maximum of one), `ProcessingInstruction`, `Comment`, and `DocumentType`. It cannot appear as the child of any node types.  
-  
+A `Document` node can have the following child node types: `XmlDeclaration`, `Element` (maximum of one), `ProcessingInstruction`, `Comment`, and `DocumentType`. It cannot appear as the child of any node types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,10 +192,10 @@
         <summary>A document fragment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `DocumentFragment` node associates a node or subtree with a document without actually being contained within the document. A `DocumentFragment` node can have the following child node types: `Element`, `ProcessingInstruction`, `Comment`, `Text`, `CDATA`, and `EntityReference`. It cannot appear as the child of any node types.  
-  
+The `DocumentFragment` node associates a node or subtree with a document without actually being contained within the document. A `DocumentFragment` node can have the following child node types: `Element`, `ProcessingInstruction`, `Comment`, `Text`, `CDATA`, and `EntityReference`. It cannot appear as the child of any node types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,10 +227,10 @@
         <summary>The document type declaration, indicated by the following tag (for example, <c>&lt;!DOCTYPE...&gt;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `DocumentType` node can have the following child node types: `Notation` and `Entity`. It can appear as the child of the `Document` node.  
-  
+A `DocumentType` node can have the following child node types: `Notation` and `Entity`. It can appear as the child of the `Document` node.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,10 +262,10 @@
         <summary>An element (for example, <c>&lt;item&gt;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An `Element` node can have the following child node types: `Element`, `Text`, `Comment`, `ProcessingInstruction`, `CDATA`, and `EntityReference`. It can be the child of the `Document`, `DocumentFragment`, `EntityReference`, and `Element` nodes.  
-  
+An `Element` node can have the following child node types: `Element`, `Text`, `Comment`, `ProcessingInstruction`, `CDATA`, and `EntityReference`. It can be the child of the `Document`, `DocumentFragment`, `EntityReference`, and `Element` nodes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
         <summary>An end element tag (for example, <c>&lt;/item&gt;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `EndElement` nodes are returned when <xref:System.Xml.XmlReader> gets to the end of an element.  
-  
+`EndElement` nodes are returned when <xref:System.Xml.XmlReader> gets to the end of an element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <summary>An entity declaration (for example, <c>&lt;!ENTITY...&gt;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An `Entity` node can have child nodes that represent the expanded entity (for example, `Text` and `EntityReference` nodes). It can appear as the child of the `DocumentType` node.  
-  
+An `Entity` node can have child nodes that represent the expanded entity (for example, `Text` and `EntityReference` nodes). It can appear as the child of the `DocumentType` node.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,10 +394,10 @@
         <summary>A reference to an entity (for example, <c>&amp;num;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An `EntityReference` node can have the following child node types: `Element`, `ProcessingInstruction`, `Comment`, `Text`, `CDATA`, and `EntityReference`. It can appear as the child of the `Attribute`, `DocumentFragment`, `Element`, and `EntityReference` nodes.  
-  
+An `EntityReference` node can have the following child node types: `Element`, `ProcessingInstruction`, `Comment`, `Text`, `CDATA`, and `EntityReference`. It can appear as the child of the `Attribute`, `DocumentFragment`, `Element`, and `EntityReference` nodes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -456,10 +456,10 @@
         <summary>A notation in the document type declaration (for example, <c>&lt;!NOTATION...&gt;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `Notation` node cannot have any child nodes. It can appear as the child of the `DocumentType` node.  
-  
+A `Notation` node cannot have any child nodes. It can appear as the child of the `DocumentType` node.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -491,10 +491,10 @@
         <summary>A processing instruction (for example, <c>&lt;?pi test?&gt;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `ProcessingInstruction` node cannot have any child nodes. It can appear as the child of the `Document`, `DocumentFragment`, `Element`, and `EntityReference` nodes.  
-  
+A `ProcessingInstruction` node cannot have any child nodes. It can appear as the child of the `Document`, `DocumentFragment`, `Element`, and `EntityReference` nodes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -553,10 +553,10 @@
         <summary>The text content of a node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `Text` node cannot have any child nodes. It can appear as the child node of the `Attribute`, `DocumentFragment`, `Element`, and `EntityReference` nodes.  
-  
+A `Text` node cannot have any child nodes. It can appear as the child node of the `Attribute`, `DocumentFragment`, `Element`, and `EntityReference` nodes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -615,10 +615,10 @@
         <summary>The XML declaration (for example, <c>&lt;?xml version='1.0'?&gt;</c> ).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `XmlDeclaration` node must be the first node in the document. It cannot have children. It is a child of the `Document` node. It can have attributes that provide version and encoding information.  
-  
+The `XmlDeclaration` node must be the first node in the document. It cannot have children. It is a child of the `Document` node. It can have attributes that provide version and encoding information.  
+ 
  ]]></format>
         </remarks>
       </Docs>

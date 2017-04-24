@@ -15,17 +15,17 @@
     <summary>Describes a reference to a collection of XML Web services.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.Services.Description.WebReference> object is used to pass information about a set of Web services to the static <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method of the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class.  
+A <xref:System.Web.Services.Description.WebReference> object is used to pass information about a set of Web services to the static <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method of the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this class.  
-  
- [!code-csharp[WebServices_GenerateWebReferences#0](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#0)]  
-  
+The following code example illustrates the use of this class.  
+ 
+[!code-csharp[WebServices_GenerateWebReferences#0](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,17 +64,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.WebReference" /> class with the given description document collection and proxy code namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `documents` collection should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:System.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
+The `documents` collection should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:System.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this constructor. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
-  
- [!code-csharp[WebServices_GenerateWebReferences#4](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#4)]  
-  
+The following code example illustrates the use of this constructor. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
+ 
+[!code-csharp[WebServices_GenerateWebReferences#4](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.WebReference" /> class with the given data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `documents` collection should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:Sytem.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
-  
+The `documents` collection should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:Sytem.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,17 +135,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.WebReference" /> class with the given data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `documents` collection should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:System.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
+The `documents` collection should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:System.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-csharp[System.Web.Services.Description.WebReference#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReference/CS/webreference.cs#11)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-csharp[System.Web.Services.Description.WebReference#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReference/CS/webreference.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,12 +168,12 @@
         <value>A <see cref="T:System.String" /> containing the base URL of the Web reference.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this property. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
-  
- [!code-csharp[WebServices_GenerateWebReferences#5](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#5)]  
-  
+The following code example illustrates the use of this property. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
+ 
+[!code-csharp[WebServices_GenerateWebReferences#5](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,12 +196,12 @@
         <value>A <see cref="T:System.String" /> containing the URL key of the Web reference.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this property. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
-  
- [!code-csharp[WebServices_GenerateWebReferences#5](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#5)]  
-  
+The following code example illustrates the use of this property. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
+ 
+[!code-csharp[WebServices_GenerateWebReferences#5](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,17 +224,17 @@
         <value>The <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" /> used to initialize the <see cref="T:System.Web.Services.Description.WebReference" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The description document collection associated with a Web reference should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:System.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
+The description document collection associated with a Web reference should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:System.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this property. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
-  
- [!code-csharp[WebServices_GenerateWebReferences#5](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#5)]  
-  
+The following code example illustrates the use of this property. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
+ 
+[!code-csharp[WebServices_GenerateWebReferences#5](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,19 +257,19 @@
         <value>A <see cref="T:System.String" /> containing the name of the protocol associated with the Web reference.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Allowed protocol strings include "Soap" (indicating SOAP 1.0) and "Soap12" (indicating SOAP 1.2). The value of this property determines the protocol used by proxy clients when contacting any XML Web service in the <xref:System.Web.Services.Description.WebReference.Documents%2A> collection.  
+Allowed protocol strings include "Soap" (indicating SOAP 1.0) and "Soap12" (indicating SOAP 1.2). The value of this property determines the protocol used by proxy clients when contacting any XML Web service in the <xref:System.Web.Services.Description.WebReference.Documents%2A> collection.  
+ 
+For more information on SOAP, see the World Wide Web Consortium Web site, at www.w3.org.  
+ 
   
- For more information on SOAP, see the World Wide Web Consortium Web site, at www.w3.org.  
-  
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this property. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
-  
- [!code-csharp[WebServices_GenerateWebReferences#4](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#4)]  
-  
+The following code example illustrates the use of this property. This code example is part of a larger example provided for the <xref:System.Web.Services.Description.WebReference> class.  
+ 
+[!code-csharp[WebServices_GenerateWebReferences#4](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_GenerateWebReferences/CS/webreference.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,12 +291,12 @@
         <value>The <see cref="T:System.CodeDom.CodeNamespace" /> in which proxy code will be generated when the <see cref="M:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences(System.Web.Services.Description.WebReferenceCollection,System.CodeDom.Compiler.CodeDomProvider,System.CodeDom.CodeCompileUnit,System.Web.Services.Description.WebReferenceOptions)" /> method is called.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Services.Description.WebReference.ProxyCode%2A> property.  
-  
- [!code-csharp[System.Web.Services.Description.WebReference#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReference/CS/webreference.cs#11)]  
-  
+The following code example shows how to use the <xref:System.Web.Services.Description.WebReference.ProxyCode%2A> property.  
+ 
+[!code-csharp[System.Web.Services.Description.WebReference#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReference/CS/webreference.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -319,12 +319,12 @@
         <value>A <see cref="T:System.Collections.Specialized.StringCollection" /> of validation warning text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Services.Description.WebReference.ValidationWarnings%2A> property.  
-  
- [!code-csharp[System.Web.Services.Description.WebReference#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReference/CS/webreference.cs#11)]  
-  
+The following code example shows how to use the <xref:System.Web.Services.Description.WebReference.ValidationWarnings%2A> property.  
+ 
+[!code-csharp[System.Web.Services.Description.WebReference#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReference/CS/webreference.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,12 +346,12 @@
         <value>A <see cref="T:System.Web.Services.Description.ServiceDescriptionImportWarnings" /> collection of warnings generated when importing WSDL service description documents.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Services.Description.WebReference.Warnings%2A> property.  
-  
- [!code-csharp[System.Web.Services.Description.WebReference#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReference/CS/webreference.cs#11)]  
-  
+The following code example shows how to use the <xref:System.Web.Services.Description.WebReference.Warnings%2A> property.  
+ 
+[!code-csharp[System.Web.Services.Description.WebReference#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Web.Services.Description.WebReference/CS/webreference.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -29,11 +29,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.ScaleTransform3D" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[3dgallery_procedural_snip#Multiple3DTransformationsCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/MultipleTransformationsExample.cs#multiple3dtransformationscodeexamplewholepage)]
- [!code-vb[3dgallery_procedural_snip#Multiple3DTransformationsCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/multipletransformationsexample.vb#multiple3dtransformationscodeexamplewholepage)]  
-  
+[!code-csharp[3dgallery_procedural_snip#Multiple3DTransformationsCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/MultipleTransformationsExample.cs#multiple3dtransformationscodeexamplewholepage)]
+[!code-vb[3dgallery_procedural_snip#Multiple3DTransformationsCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/multipletransformationsexample.vb#multiple3dtransformationscodeexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,11 +97,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.ScaleTransform3D" /> class using the specified scale factors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[3dgallery_procedural_snip#Multiple3DTransformationsCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/MultipleTransformationsExample.cs#multiple3dtransformationscodeexamplewholepage)]
- [!code-vb[3dgallery_procedural_snip#Multiple3DTransformationsCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/multipletransformationsexample.vb#multiple3dtransformationscodeexamplewholepage)]  
-  
+[!code-csharp[3dgallery_procedural_snip#Multiple3DTransformationsCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/MultipleTransformationsExample.cs#multiple3dtransformationscodeexamplewholepage)]
+[!code-vb[3dgallery_procedural_snip#Multiple3DTransformationsCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/multipletransformationsexample.vb#multiple3dtransformationscodeexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,17 +151,17 @@
         <value>The x-coordinate of the transform's center point. The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CenterX"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.ScaleTransform3D.CenterXProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,17 +200,17 @@
         <value>The y-coordinate of the transform's center point. The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CenterY"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.ScaleTransform3D.CenterYProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,17 +249,17 @@
         <value>The z-coordinate of the transform's center point. The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CenterZ"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.ScaleTransform3D.CenterZProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,12 +299,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,12 +327,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,17 +373,17 @@
         <value>Scale factor in the x-direction. The default value is <c>1</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_ScaleX"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.ScaleTransform3D.ScaleXProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,17 +422,17 @@
         <value>Scale factor in the y-direction. The default value is <c>1</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_ScaleY"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.ScaleTransform3D.ScaleYProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -471,17 +471,17 @@
         <value>Scale factor in the z-direction. The default value is <c>1</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_ScaleZ"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.ScaleTransform3D.ScaleZProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Specifies the message formats to which content types of incoming messages can be mapped.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A value of <xref:System.ServiceModel.Channels.WebContentFormat> is returned by an instance of <xref:System.ServiceModel.Channels.WebContentTypeMapper> to indicate the format to which the content type of an incoming message is mapped.  
-  
+A value of <xref:System.ServiceModel.Channels.WebContentFormat> is returned by an instance of <xref:System.ServiceModel.Channels.WebContentTypeMapper> to indicate the format to which the content type of an incoming message is mapped.  
+ 
  ]]></format>
     </remarks>
   </Docs>

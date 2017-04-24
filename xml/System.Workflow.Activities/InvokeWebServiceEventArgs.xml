@@ -19,12 +19,12 @@
     <summary>Contains event data used to invoke a Web service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <value>The proxy <see cref="T:System.Object" /> that communicates with the Web service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The proxy <xref:System.Object> accessed by this property can be used for outgoing Web service calls for header manipulation, security, and encryption.  
-  
+The proxy <xref:System.Object> accessed by this property can be used for outgoing Web service calls for header manipulation, security, and encryption.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -22,12 +22,12 @@
     <summary>Represents a control that defines choices for users to select.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Primitives.MenuBase> is the base class for controls that define choices for users to select. The <xref:System.Windows.Controls.Menu> and <xref:System.Windows.Controls.ContextMenu> inherit from <xref:System.Windows.Controls.Primitives.MenuBase> and allow the user to select an item to invoke some action.  
-  
- <xref:System.Windows.Controls.Primitives.MenuBase> is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
-  
+The <xref:System.Windows.Controls.Primitives.MenuBase> is the base class for controls that define choices for users to select. The <xref:System.Windows.Controls.Menu> and <xref:System.Windows.Controls.ContextMenu> inherit from <xref:System.Windows.Controls.Primitives.MenuBase> and allow the user to select an item to invoke some action.  
+ 
+<xref:System.Windows.Controls.Primitives.MenuBase> is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -127,18 +127,18 @@
         <value>A custom object that provides logic and returns an item container.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use an <xref:System.Windows.Controls.ItemContainerTemplateSelector> to choose different item containers if the items in your collection are the same type and you need to provide custom logic to choose the item container.  
-  
+Use an <xref:System.Windows.Controls.ItemContainerTemplateSelector> to choose different item containers if the items in your collection are the same type and you need to provide custom logic to choose the item container.  
+ 
 <a name="dependencyPropertyInfo_ItemContainerTemplateSelector"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.MenuBase.ItemContainerTemplateSelectorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event that occurs when the user presses a key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the user presses ESC, ALT+ALT, or ALT+F10, this implementation marks the <xref:System.Windows.UIElement.KeyDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true`.  
-  
+If the user presses ESC, ALT+ALT, or ALT+F10, this implementation marks the <xref:System.Windows.UIElement.KeyDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true`.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -232,10 +232,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeave" /> routed event that occurs when the mouse leaves the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseLeave> event data.  
-  
+This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseLeave> event data.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -263,18 +263,18 @@
  The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is useful if you want to create a menu by binding to a collection.  The item container is the UI element that displays the object in a collection. If you want to bind to a collection to create a menu that contains <xref:System.Windows.Controls.MenuItem> objects and <xref:System.Windows.Controls.Separator> objects, set the <xref:System.Windows.Controls.Primitives.MenuBase.UsesItemContainerTemplate%2A> property to true and create an <xref:System.Windows.Controls.ItemContainerTemplate> for each type of object in your collection.  Each <xref:System.Windows.Controls.ItemContainerTemplate> must contain either a <xref:System.Windows.Controls.MenuItem> or a <xref:System.Windows.Controls.Separator>.  
-  
+This property is useful if you want to create a menu by binding to a collection.  The item container is the UI element that displays the object in a collection. If you want to bind to a collection to create a menu that contains <xref:System.Windows.Controls.MenuItem> objects and <xref:System.Windows.Controls.Separator> objects, set the <xref:System.Windows.Controls.Primitives.MenuBase.UsesItemContainerTemplate%2A> property to true and create an <xref:System.Windows.Controls.ItemContainerTemplate> for each type of object in your collection.  Each <xref:System.Windows.Controls.ItemContainerTemplate> must contain either a <xref:System.Windows.Controls.MenuItem> or a <xref:System.Windows.Controls.Separator>.  
+ 
 <a name="dependencyPropertyInfo_UsesItemContainerTemplate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.MenuBase.UsesItemContainerTemplateProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

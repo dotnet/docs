@@ -11,12 +11,12 @@
     <summary>Defines methods that ASP.NET server controls must implement to define ECMAScript (JavaScript) resources in AJAX-enabled applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When implemented by a class, the methods of the <xref:System.Web.UI.IScriptControl> interface provide references to script libraries that define client components and script descriptors that represent instances of client types. Implement this interface in custom server controls that will include script control functionality.  
-  
- For more information, see [Adding Client Capabilities to a Web Server Control](http://msdn.microsoft.com/library/1d365cbe-1bde-4cef-9fe7-2cd04d3cbdea).  
-  
+When implemented by a class, the methods of the <xref:System.Web.UI.IScriptControl> interface provide references to script libraries that define client components and script descriptors that represent instances of client types. Implement this interface in custom server controls that will include script control functionality.  
+ 
+For more information, see [Adding Client Capabilities to a Web Server Control](http://msdn.microsoft.com/library/1d365cbe-1bde-4cef-9fe7-2cd04d3cbdea).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,12 +39,12 @@
         <returns>An <see cref="T:System.Collections.IEnumerable" /> collection of <see cref="T:System.Web.UI.ScriptDescriptor" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implement this method to define components, behaviors, or client controls from the Microsoft Ajax Library that the server control requires. This method enables you to pass declaratively specified parameters to Microsoft Ajax Library functions.  
-  
- To use this method, you must also implement the abstract <xref:System.Web.UI.ScriptDescriptor> class.  
-  
+Implement this method to define components, behaviors, or client controls from the Microsoft Ajax Library that the server control requires. This method enables you to pass declaratively specified parameters to Microsoft Ajax Library functions.  
+ 
+To use this method, you must also implement the abstract <xref:System.Web.UI.ScriptDescriptor> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,10 +67,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerable" /> collection of <see cref="T:System.Web.UI.ScriptReference" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implement this method to define custom script library dependencies that the server control requires, such as scripts in a Scripts folder of the current Web application, or resources in an assembly. Scripts from the Microsoft Ajax Library do not have to be registered in this manner.  
-  
+Implement this method to define custom script library dependencies that the server control requires, such as scripts in a Scripts folder of the current Web application, or resources in an assembly. Scripts from the Microsoft Ajax Library do not have to be registered in this manner.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,10 +13,10 @@
     <summary>Specifies errors that occur on the <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration can be useful when handling the <xref:System.IO.Ports.SerialPort.ErrorReceived> event to detect and respond to errors when communicating data through a <xref:System.IO.Ports.SerialPort>. You examine the type of error by retrieving the eceivedEventArgs.EventType property of the eceivedEventArgs class. The eceivedEventArgs.EventType property contains one of the values from the <xref:System.IO.Ports.SerialError> enumeration.  
-  
+This enumeration can be useful when handling the <xref:System.IO.Ports.SerialPort.ErrorReceived> event to detect and respond to errors when communicating data through a <xref:System.IO.Ports.SerialPort>. You examine the type of error by retrieving the eceivedEventArgs.EventType property of the eceivedEventArgs class. The eceivedEventArgs.EventType property contains one of the values from the <xref:System.IO.Ports.SerialError> enumeration.  
+ 
  ]]></format>
     </remarks>
   </Docs>

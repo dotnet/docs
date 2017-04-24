@@ -27,15 +27,15 @@
     <summary>Represents an ordered collection of <see cref="T:System.Windows.Media.Media3D.Transform3D" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Transform3DGroup.Children%2A> property of <xref:System.Windows.Media.Media3D.Transform3DGroup> is a <xref:System.Windows.Media.Media3D.Transform3DCollection>.  
+The <xref:System.Windows.Media.Media3D.Transform3DGroup.Children%2A> property of <xref:System.Windows.Media.Media3D.Transform3DGroup> is a <xref:System.Windows.Media.Media3D.Transform3DCollection>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[hittest3d#HitTest3D3DN2](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml#hittest3d3dn2)]  
-  
+[!code-xml[hittest3d#HitTest3D3DN2](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml#hittest3d3dn2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -148,12 +148,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,20 +393,20 @@
         <returns>An enumerator that can iterate the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first item in the collection. also brings the enumerator back to this position. At this position, calling <xref:System.Windows.Media.Media3D.Transform3DCollection.Enumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Windows.Media.Media3D.Transform3DCollection.Enumerator.MoveNext%2A> to advance the enumerator to the first item of the collection before reading the value of Current.  
-  
- Current returns the same object until either MoveNext or <xref:System.Windows.Media.Media3D.Transform3DCollection.Enumerator.Reset%2A> is called. MoveNext sets Current to the next item.  
-  
- After the end of the collection is passed, the enumerator is positioned after the last item in the collection, and calling MoveNext returns false. If the last call to MoveNext returned false, calling Current throws an exception. To set Current to the first item of the collection again, you can call Reset followed by MoveNext.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting items, the enumerator is irrecoverably invalidated and the next call to MoveNext or Reset throws an InvalidOperationException. If the collection is modified between MoveNext and Current, Current will return the item that it is set to, even if the enumerator is already invalidated.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
+Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first item in the collection. also brings the enumerator back to this position. At this position, calling <xref:System.Windows.Media.Media3D.Transform3DCollection.Enumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Windows.Media.Media3D.Transform3DCollection.Enumerator.MoveNext%2A> to advance the enumerator to the first item of the collection before reading the value of Current.  
+ 
+Current returns the same object until either MoveNext or <xref:System.Windows.Media.Media3D.Transform3DCollection.Enumerator.Reset%2A> is called. MoveNext sets Current to the next item.  
+ 
+After the end of the collection is passed, the enumerator is positioned after the last item in the collection, and calling MoveNext returns false. If the last call to MoveNext returned false, calling Current throws an exception. To set Current to the first item of the collection again, you can call Reset followed by MoveNext.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting items, the enumerator is irrecoverably invalidated and the next call to MoveNext or Reset throws an InvalidOperationException. If the collection is modified between MoveNext and Current, Current will return the item that it is set to, even if the enumerator is already invalidated.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,10 +540,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -566,10 +566,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -596,10 +596,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -622,10 +622,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,10 +647,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -673,10 +673,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -702,10 +702,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -732,10 +732,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -761,10 +761,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -791,10 +791,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -816,10 +816,10 @@
         <value>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -842,10 +842,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -871,10 +871,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -899,10 +899,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.Transform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

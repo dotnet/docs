@@ -18,13 +18,13 @@
     <summary>Specifies how records are appended.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this enumeration with the <xref:System.IO.Log.LogRecordSequence.Append%2A> method to append a record to a log sequence.  
-  
- [!code-csharp[S_UELogRecordSequence#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#5)]
- [!code-vb[S_UELogRecordSequence#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#5)]  
-  
+The following example shows how to use this enumeration with the <xref:System.IO.Log.LogRecordSequence.Append%2A> method to append a record to a log sequence.  
+ 
+[!code-csharp[S_UELogRecordSequence#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#5)]
+[!code-vb[S_UELogRecordSequence#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

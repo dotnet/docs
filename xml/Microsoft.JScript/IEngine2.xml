@@ -204,10 +204,10 @@
         <summary>When implemented in a class, calls <see cref="M:System.Threading.Thread.Abort" /> on the thread that is running the script code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should not be called on the thread that is used to run code. If you do this, you stop your own thread.  
-  
+This method should not be called on the thread that is used to run code. If you do this, you stop your own thread.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

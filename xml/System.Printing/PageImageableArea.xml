@@ -14,17 +14,17 @@
     <summary>Represents the area of a page that can be printed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Most laser and inkjet printers must leave an unprinted area around the edges of a page to prevent toner from getting on the parts of the printer that move the sheets. For many photographic printers, however, the entire page is imageable.  
-  
- For a class that includes the same information about the imageable area as <xref:System.Printing.PageImageableArea> and also includes page size, see <xref:System.Printing.PrintDocumentImageableArea>.  
-  
+Most laser and inkjet printers must leave an unprinted area around the edges of a page to prevent toner from getting on the parts of the printer that move the sheets. For many photographic printers, however, the entire page is imageable.  
+ 
+For a class that includes the same information about the imageable area as <xref:System.Printing.PageImageableArea> and also includes page size, see <xref:System.Printing.PrintDocumentImageableArea>.  
+ 
 > [!CAUTION]
 >  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
-  
- If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
-  
+ 
+If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <value>A <see cref="T:System.Double" /> that represents the height of the imageable area in pixels (1/96 of an inch).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Printing.PageImageableArea.ExtentHeight%2A> property gets the distance from the upper-left corner of the imageable area (also called the "origin" of the imageable area) to the lower-left corner.  
-  
+The <xref:System.Printing.PageImageableArea.ExtentHeight%2A> property gets the distance from the upper-left corner of the imageable area (also called the "origin" of the imageable area) to the lower-left corner.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,10 +71,10 @@
         <value>A <see cref="T:System.Double" /> that represents the width of the imageable area in pixels (1/96 of an inch).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Printing.PageImageableArea.ExtentWidth%2A> property gets the distance from the upper-left corner of the imageable area (also called the "origin" of the imageable area) to the upper-right corner.  
-  
+The <xref:System.Printing.PageImageableArea.ExtentWidth%2A> property gets the distance from the upper-left corner of the imageable area (also called the "origin" of the imageable area) to the upper-right corner.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,12 +133,12 @@
         <returns>A <see cref="T:System.String" /> that represents the property values of the <see cref="T:System.Printing.PageImageableArea" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string that is returned has the following format:  
-  
- (<xref:System.Printing.PageImageableArea.OriginWidth%2A>, <xref:System.Printing.PageImageableArea.OriginHeight%2A>), (<xref:System.Printing.PageImageableArea.ExtentWidth%2A>, <xref:System.Printing.PageImageableArea.ExtentHeight%2A>)  
-  
+The string that is returned has the following format:  
+ 
+(<xref:System.Printing.PageImageableArea.OriginWidth%2A>, <xref:System.Printing.PageImageableArea.OriginHeight%2A>), (<xref:System.Printing.PageImageableArea.ExtentWidth%2A>, <xref:System.Printing.PageImageableArea.ExtentHeight%2A>)  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -31,12 +31,12 @@
         <summary>Identifies the <see cref="T:System.Windows.Automation.VirtualizedItemPattern" /> control pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.VirtualizedItemPatternIdentifiers>.  
-  
- The pattern identifier is passed to methods, such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A>, to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
-  
+This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.VirtualizedItemPatternIdentifiers>.  
+ 
+The pattern identifier is passed to methods, such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A>, to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

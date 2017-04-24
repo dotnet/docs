@@ -23,10 +23,10 @@
     <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IPersistFile" /> instead.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IPersistFile` and `IPersist` in the com subfolder of the MSDN library.  
-  
+For more information, please see the existing documentation for `IPersistFile` and `IPersist` in the com subfolder of the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Retrieves the class identifier (CLSID) of an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IPersist::GetClassID` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IPersist::GetClassID` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <summary>Retrieves either the absolute path to current working file of the object, or if there is no current working file, the default filename prompt of the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IPersistFile::GetCurFile` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IPersistFile::GetCurFile` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
           <see langword="S_OK" /> if the file has changed since it was last saved; <see langword="S_FALSE" /> if the file has not changed since it was last saved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IPersistFile::IsDirty` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IPersistFile::IsDirty` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,12 +140,12 @@
         <summary>Opens the specified file and initializes an object from the file contents.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `STGM` enumeration is not part of the .NET Framework, but is documented in the MSDN library.  
-  
- For more information, please see the existing documentation for `IPersistFile::Load` in the MSDN library.  
-  
+The `STGM` enumeration is not part of the .NET Framework, but is documented in the MSDN library.  
+ 
+For more information, please see the existing documentation for `IPersistFile::Load` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <summary>Saves a copy of the object into the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IPersistFile::Save` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IPersistFile::Save` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <summary>Notifies the object that it can write to its file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IPersistFile::SaveCompleted` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IPersistFile::SaveCompleted` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

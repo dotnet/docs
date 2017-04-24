@@ -76,10 +76,10 @@
         <value>A valid <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> value. The default is <see cref="F:System.Security.Principal.TokenImpersonationLevel.Identification" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The impersonation mode that the client chooses is not enforced on the server.  
-  
+The impersonation mode that the client chooses is not enforced on the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>

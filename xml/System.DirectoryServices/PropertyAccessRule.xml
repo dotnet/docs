@@ -14,10 +14,10 @@
     <summary>The <see cref="T:System.DirectoryServices.PropertyAccessRule" /> class represents a specific type of access rule that is used to allow or deny access to an Active Directory Domain Services property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is provided to simplify construction of an access rule for an Active Directory Domain Services property.  
-  
+This class is provided to simplify construction of an access rule for an Active Directory Domain Services property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.PropertyAccessRule" /> class with the specified identity reference, access control type, and property access.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use this constructor, it creates a property access rule that applies to all property types.  
-  
+When you use this constructor, it creates a property access rule that applies to all property types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,10 +74,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.PropertyAccessRule" /> class with the specified identity reference, access control type, property access, and Active Directory Domain Services security inheritance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use this constructor, it creates a property access rule that applies to all property types.  
-  
+When you use this constructor, it creates a property access rule that applies to all property types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.PropertyAccessRule" /> class with the specified identity reference, access control type, property access, Active Directory Domain Services security inheritance, and inherited object type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use this constructor, it creates a property access rule that applies to all property types.  
-  
+When you use this constructor, it creates a property access rule that applies to all property types.  
+ 
  ]]></format>
         </remarks>
       </Docs>

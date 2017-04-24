@@ -14,13 +14,13 @@
     <summary>Exposes <see cref="F:System.Windows.Automation.ControlType.Document" /> control types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Automation.Peers.DocumentAutomationPeer> represents documents and supports the <xref:System.Windows.Automation.TextPattern>.  Objects such as a <xref:System.Windows.Documents.FixedDocument> or <xref:System.Windows.Documents.FlowDocument> can contain embedded objects, such as images and hyperlinks.  Initially, when you try to get the child elements of the document, <xref:System.Windows.Automation.Peers.DocumentAutomationPeer.GetChildrenCore%2A?displayProperty=fullName> does not return the embedded objects.  To get the embedded elements, obtain a <xref:System.Windows.Automation.Text.TextPatternRange> from the <xref:System.Windows.Automation.TextPattern> and call <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A?displayProperty=fullName>.  After <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A?displayProperty=fullName> is called, any elements in that <xref:System.Windows.Automation.Text.TextPatternRange> are returned by <xref:System.Windows.Automation.Peers.DocumentAutomationPeer.GetChildrenCore%2A?displayProperty=fullName>.  
-  
+The <xref:System.Windows.Automation.Peers.DocumentAutomationPeer> represents documents and supports the <xref:System.Windows.Automation.TextPattern>.  Objects such as a <xref:System.Windows.Documents.FixedDocument> or <xref:System.Windows.Documents.FlowDocument> can contain embedded objects, such as images and hyperlinks.  Initially, when you try to get the child elements of the document, <xref:System.Windows.Automation.Peers.DocumentAutomationPeer.GetChildrenCore%2A?displayProperty=fullName> does not return the embedded objects.  To get the embedded elements, obtain a <xref:System.Windows.Automation.Text.TextPatternRange> from the <xref:System.Windows.Automation.TextPattern> and call <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A?displayProperty=fullName>.  After <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A?displayProperty=fullName> is called, any elements in that <xref:System.Windows.Automation.Text.TextPatternRange> are returned by <xref:System.Windows.Automation.Peers.DocumentAutomationPeer.GetChildrenCore%2A?displayProperty=fullName>.  
+ 
 > [!NOTE]
 >  Unless you know the document is a <xref:System.Windows.Documents.FlowDocument>, you should not call <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> on the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A?displayProperty=fullName> property. If the document is loaded from a network location, calling <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> on the entire document is resource intensive.  Instead, you should use one of the methods on <xref:System.Windows.Automation.TextPattern> that returns a <xref:System.Windows.Automation.Text.TextPatternRange> that represents a portion of the document.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -216,10 +216,10 @@
           <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property does not indicate whether the element is visible. In some circumstances, an element is on the screen but is still not visible. For example, if the element is obscured by other elements, it might not be visible. In this case, the method returns `false`.  
-  
+This property does not indicate whether the element is visible. In some circumstances, an element is on the screen but is still not visible. For example, if the element is obscured by other elements, it might not be visible. In this case, the method returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

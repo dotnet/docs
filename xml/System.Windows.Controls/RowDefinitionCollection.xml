@@ -48,15 +48,15 @@
         <summary>Adds a <see cref="T:System.Windows.Controls.RowDefinition" /> element to a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Add%2A> method to add a <xref:System.Windows.Controls.RowDefinition> to a <xref:System.Windows.Controls.RowDefinitionCollection>.  
-  
- [!code-csharp[columndefinitionsgrid#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#3)]
- [!code-vb[columndefinitionsgrid#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#3)]  
-  
- To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Add%2A> method to add a <xref:System.Windows.Controls.RowDefinition> to a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+ 
+[!code-csharp[columndefinitionsgrid#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#3)]
+[!code-vb[columndefinitionsgrid#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#3)]  
+ 
+To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,15 +78,15 @@
         <summary>Clears the content of the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Clear%2A> method to clear the content of a <xref:System.Windows.Controls.RowDefinitionCollection>.  
-  
- [!code-csharp[columndefinitionsgrid#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#4)]
- [!code-vb[columndefinitionsgrid#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#4)]  
-  
- To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Clear%2A> method to clear the content of a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+ 
+[!code-csharp[columndefinitionsgrid#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#4)]
+[!code-vb[columndefinitionsgrid#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#4)]  
+ 
+To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,15 +113,15 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.RowDefinition" /> exists within the collection; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Contains%2A> method to determine whether a <xref:System.Windows.Controls.RowDefinition> exists in a <xref:System.Windows.Controls.RowDefinitionCollection>.  
-  
- [!code-csharp[columndefinitionsgrid#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#8)]
- [!code-vb[columndefinitionsgrid#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#8)]  
-  
- To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Contains%2A> method to determine whether a <xref:System.Windows.Controls.RowDefinition> exists in a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+ 
+[!code-csharp[columndefinitionsgrid#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#8)]
+[!code-vb[columndefinitionsgrid#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#8)]  
+ 
+To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <summary>Copies an array of <see cref="T:System.Windows.Controls.RowDefinition" /> objects to a given index position within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
-  
+<xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -183,20 +183,20 @@
         <value>The total number of items in the collection. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+<xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Count%2A> property.  
-  
- [!code-csharp[columndefinitionsgrid#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#7)]
- [!code-vb[columndefinitionsgrid#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#7)]  
-  
- To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Count%2A> property.  
+ 
+[!code-csharp[columndefinitionsgrid#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#7)]
+[!code-vb[columndefinitionsgrid#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#7)]  
+ 
+To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,15 +222,15 @@
         <returns>The index of <paramref name="value" /> if found in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.IndexOf%2A> method to determine the index position of a <xref:System.Windows.Controls.RowDefinition> within a <xref:System.Windows.Controls.RowDefinitionCollection>.  
-  
- [!code-csharp[columndefinitionsgrid#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#9)]
- [!code-vb[columndefinitionsgrid#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#9)]  
-  
- To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.IndexOf%2A> method to determine the index position of a <xref:System.Windows.Controls.RowDefinition> within a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+ 
+[!code-csharp[columndefinitionsgrid#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#9)]
+[!code-vb[columndefinitionsgrid#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#9)]  
+ 
+To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,20 +257,20 @@
         <summary>Inserts a <see cref="T:System.Windows.Controls.RowDefinition" /> at the specified index position within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+<xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Insert%2A> method to insert a <xref:System.Windows.Controls.RowDefinition> to a specific `index` position within a <xref:System.Windows.Controls.RowDefinitionCollection>.  
-  
- [!code-csharp[columndefinitionsgrid#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#9)]
- [!code-vb[columndefinitionsgrid#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#9)]  
-  
- To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Insert%2A> method to insert a <xref:System.Windows.Controls.RowDefinition> to a specific `index` position within a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+ 
+[!code-csharp[columndefinitionsgrid#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#9)]
+[!code-vb[columndefinitionsgrid#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#9)]  
+ 
+To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -295,15 +295,15 @@
           <see langword="true" /> if the collection is read-only; otherwise <see langword="false" />. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to get the value of the <xref:System.Windows.Controls.RowDefinitionCollection.IsReadOnly%2A> property.  
-  
- [!code-csharp[columndefinitionsgrid#10](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#10)]
- [!code-vb[columndefinitionsgrid#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#10)]  
-  
- To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
-  
+The following example demonstrates how to get the value of the <xref:System.Windows.Controls.RowDefinitionCollection.IsReadOnly%2A> property.  
+ 
+[!code-csharp[columndefinitionsgrid#10](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#10)]
+[!code-vb[columndefinitionsgrid#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#10)]  
+ 
+To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
           <see langword="true" /> if access to this collection is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions that result from changes made by other threads.  
-  
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions that result from changes made by other threads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,10 +355,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
-  
+<xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -408,20 +408,20 @@
         <summary>Removes a <see cref="T:System.Windows.Controls.RowDefinition" /> from a <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> at the specified index position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+<xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.RemoveAt%2A> method to remove a <xref:System.Windows.Controls.RowDefinition> to a <xref:System.Windows.Controls.RowDefinitionCollection> at a specific `index` position.  
-  
- [!code-csharp[columndefinitionsgrid#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#5)]
- [!code-vb[columndefinitionsgrid#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#5)]  
-  
- To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.RemoveAt%2A> method to remove a <xref:System.Windows.Controls.RowDefinition> to a <xref:System.Windows.Controls.RowDefinitionCollection> at a specific `index` position.  
+ 
+[!code-csharp[columndefinitionsgrid#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#5)]
+[!code-vb[columndefinitionsgrid#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#5)]  
+ 
+To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,20 +448,20 @@
         <summary>Removes a range of <see cref="T:System.Windows.Controls.RowDefinition" /> objects from a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+<xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.RemoveRange%2A> method to remove a range of <xref:System.Windows.Controls.RowDefinition> elements from a <xref:System.Windows.Controls.RowDefinitionCollection>.  
-  
- [!code-csharp[columndefinitionsgrid#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#6)]
- [!code-vb[columndefinitionsgrid#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#6)]  
-  
- To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.RemoveRange%2A> method to remove a range of <xref:System.Windows.Controls.RowDefinition> elements from a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+ 
+[!code-csharp[columndefinitionsgrid#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#6)]
+[!code-vb[columndefinitionsgrid#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#6)]  
+ 
+To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -483,10 +483,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions that result from changes made by other threads.  
-  
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions that result from changes made by other threads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -509,10 +509,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -539,10 +539,10 @@
         <summary>Copies the elements of the collection to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -565,10 +565,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -594,10 +594,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -624,10 +624,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -653,10 +653,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -683,10 +683,10 @@
         <summary>Inserts an item to the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -709,10 +709,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -738,12 +738,12 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -770,10 +770,10 @@
         <summary>Removes the first occurrence of a specific object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

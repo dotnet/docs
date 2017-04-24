@@ -22,23 +22,23 @@
     <summary>Represents a declaration for a field of a type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeMemberField> can be used to represent the declaration for a field of a type.  
+<xref:System.CodeDom.CodeMemberField> can be used to represent the declaration for a field of a type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of a <xref:System.CodeDom.CodeMemberField> to declare a field of type `string` named `testStringField`.  
-  
- [!code-cpp[CodeMemberFieldExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberFieldExample/CPP/codememberfieldexample.cpp#2)]
- [!code-csharp[CodeMemberFieldExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberFieldExample/CS/codememberfieldexample.cs#2)]
- [!code-vb[CodeMemberFieldExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberFieldExample/VB/codememberfieldexample.vb#2)]  
-  
- [!code-cpp[CodeMemberFieldPublicConstExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberFieldPublicConstExample/CPP/class1.cpp#1)]
- [!code-csharp[CodeMemberFieldPublicConstExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberFieldPublicConstExample/CS/class1.cs#1)]
- [!code-vb[CodeMemberFieldPublicConstExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberFieldPublicConstExample/VB/class1.vb#1)]  
-  
+The following example demonstrates use of a <xref:System.CodeDom.CodeMemberField> to declare a field of type `string` named `testStringField`.  
+ 
+[!code-cpp[CodeMemberFieldExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberFieldExample/CPP/codememberfieldexample.cpp#2)]
+[!code-csharp[CodeMemberFieldExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberFieldExample/CS/codememberfieldexample.cs#2)]
+[!code-vb[CodeMemberFieldExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberFieldExample/VB/codememberfieldexample.vb#2)]  
+ 
+[!code-cpp[CodeMemberFieldPublicConstExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberFieldPublicConstExample/CPP/class1.cpp#1)]
+[!code-csharp[CodeMemberFieldPublicConstExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberFieldPublicConstExample/CS/class1.cs#1)]
+[!code-vb[CodeMemberFieldPublicConstExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberFieldPublicConstExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -97,15 +97,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMemberField" /> class using the specified field type and field name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `type` parameter references a generic type, it must follow the syntax conventions for generic types. Generic types are formatted as follows: the name of the type, followed by a grave accent ("`"), followed by a count of the generic type arguments, followed by the parameters delimited with brackets.  
-  
+If the `type` parameter references a generic type, it must follow the syntax conventions for generic types. Generic types are formatted as follows: the name of the type, followed by a grave accent ("`"), followed by a count of the generic type arguments, followed by the parameters delimited with brackets.  
+ 
 > [!NOTE]
 >  You must use square brackets ([]) and not the C# angle brackets (<>) to delimit generic parameters.  
-  
- To avoid the possibility of making a syntactic mistake, consider using the <xref:System.CodeDom.CodeMemberField.%23ctor%28System.Type%2CSystem.String%29> constructor that takes a type instead of a string as a parameter.  
-  
+ 
+To avoid the possibility of making a syntactic mistake, consider using the <xref:System.CodeDom.CodeMemberField.%23ctor%28System.Type%2CSystem.String%29> constructor that takes a type instead of a string as a parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,13 +147,13 @@
         <value>The initialization expression for the field.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.CodeDom.CodeMemberField.InitExpression%2A> property.  
-  
- [!code-csharp[CodeMemberFieldInit#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberFieldInit/CS/program.cs#1)]
- [!code-vb[CodeMemberFieldInit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberFieldInit/VB/program.vb#1)]  
-  
+The following example demonstrates the use of the <xref:System.CodeDom.CodeMemberField.InitExpression%2A> property.  
+ 
+[!code-csharp[CodeMemberFieldInit#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberFieldInit/CS/program.cs#1)]
+[!code-vb[CodeMemberFieldInit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberFieldInit/VB/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

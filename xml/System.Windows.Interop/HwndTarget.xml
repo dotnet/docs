@@ -57,10 +57,10 @@
         <value>The background color, as a <see cref="T:System.Windows.Media.Color" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The background is drawn before any other visual component. The color used must have an alpha component of 1.0. If you attempt to specify a different alpha value in the provided <xref:System.Windows.Media.Color>, it automatically resets to 1.0.  
-  
+The background is drawn before any other visual component. The color used must have an alpha component of 1.0. If you attempt to specify a different alpha value in the provided <xref:System.Windows.Media.Color>, it automatically resets to 1.0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,12 +133,12 @@
         <value>The root visual object of the hosted page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This class only overrides the set{} implementation of this property. Although a get{} implementation exists, it comes from the <xref:System.Windows.Media.CompositionTarget> base class that originally declared this virtual property. On <xref:System.Windows.Interop.HwndTarget> instances, this property is really read-write, despite how the syntax reads in this documentation topic.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
           <see langword="true" /> if using per-pixel opacity; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you enable  per-pixel opacity, the rendering subsystem no longer draws the non-client area (edge of window).  
-  
+If you enable  per-pixel opacity, the rendering subsystem no longer draws the non-client area (edge of window).  
+ 
  ]]></format>
         </remarks>
       </Docs>

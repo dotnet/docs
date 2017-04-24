@@ -26,24 +26,24 @@
     <summary>Represents a setter that applies a property value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Style>s and the different types of triggers (classes that inherit from <xref:System.Windows.TriggerBase>) use <xref:System.Windows.Setter>s to apply property values.  
+<xref:System.Windows.Style>s and the different types of triggers (classes that inherit from <xref:System.Windows.TriggerBase>) use <xref:System.Windows.Setter>s to apply property values.  
+ 
+Note that you must specify both the <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.Value%2A> properties on a <xref:System.Windows.Setter> for the setter to be meaningful. If one or both properties are not set, an exception will be thrown.  
+ 
   
- Note that you must specify both the <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.Value%2A> properties on a <xref:System.Windows.Setter> for the setter to be meaningful. If one or both properties are not set, an exception will be thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. This <xref:System.Windows.Style> applies values to several <xref:System.Windows.Controls.TextBlock> properties with the use of <xref:System.Windows.Setter>s.  
-  
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
-  
- The following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
-  
- [!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
-  
+The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. This <xref:System.Windows.Style> applies values to several <xref:System.Windows.Controls.TextBlock> properties with the use of <xref:System.Windows.Setter>s.  
+ 
+[!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
+<!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
+ 
+The following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
+ 
+[!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
+ 
  ]]></format>
     </remarks>
     <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Windows.Setter.Property" /> property cannot be null.</exception>
@@ -135,23 +135,23 @@
         <value>A <see cref="T:System.Windows.DependencyProperty" /> to which the <see cref="P:System.Windows.Setter.Value" /> will be applied. The default value is null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that you must specify both the <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.Value%2A> properties on a <xref:System.Windows.Setter> or an exception will be thrown.  
+Note that you must specify both the <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.Value%2A> properties on a <xref:System.Windows.Setter> or an exception will be thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example defines a style that will be applied to every <xref:System.Windows.Controls.TextBlock> element.  
-  
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
-  
- The following example shows a style declaration that will affect the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Control>. Note that property name in this example is qualified with the name of the class (<xref:System.Windows.Controls.Control>) because the <xref:System.Windows.Style> does not specify a <xref:System.Windows.Style.TargetType%2A>.  
-  
- [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimple)]
- <!-- TODO: review snippet reference [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#stylesimple)]  -->  
-  
+The following example defines a style that will be applied to every <xref:System.Windows.Controls.TextBlock> element.  
+ 
+[!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
+<!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
+ 
+The following example shows a style declaration that will affect the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Control>. Note that property name in this example is qualified with the name of the class (<xref:System.Windows.Controls.Control>) because the <xref:System.Windows.Style> does not specify a <xref:System.Windows.Style.TargetType%2A>.  
+ 
+[!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimple)]
+<!-- TODO: review snippet reference [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#stylesimple)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Windows.Setter.Property" /> property cannot be <see langword="null" />.</exception>
@@ -181,10 +181,10 @@
         <summary>Handles cases where a markup extension provides a value for a property of <see cref="T:System.Windows.Setter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Setter> with a markup extension. You do not typically call this method directly.  
-  
+This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Setter> with a markup extension. You do not typically call this method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,10 +211,10 @@
         <summary>Handles cases where a type converter provides a value for a property of a <see cref="T:System.Windows.Setter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Setter> with a type converter. You do not typically call this method directly.  
-  
+This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Setter> with a type converter. You do not typically call this method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,10 +236,10 @@
         <summary>Signals the object that initialization is starting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Setter> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Setter> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
         <summary>Signals the object that initialization is complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Setter> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Setter> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,17 +294,17 @@
         <value>The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set this property to the name of any element within the scope of where the setter collection (the collection that this setter is part of) is applied. This is typically a named element that is within the template that contains this setter.  
+You can set this property to the name of any element within the scope of where the setter collection (the collection that this setter is part of) is applied. This is typically a named element that is within the template that contains this setter.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, the <xref:System.Windows.Setter.TargetName%2A> is used for the trigger <xref:System.Windows.Setter> to specify that the <xref:System.Windows.Setter> is intended for the <xref:System.Windows.Shapes.Ellipse> named `ThumbCover` within the <xref:System.Windows.Controls.ControlTemplate>.  
-  
- [!code-xml[ColorPicker_snip#StyleTargetNameRef](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
-  
+In the following example, the <xref:System.Windows.Setter.TargetName%2A> is used for the trigger <xref:System.Windows.Setter> to specify that the <xref:System.Windows.Setter> is intended for the <xref:System.Windows.Shapes.Ellipse> named `ThumbCover` within the <xref:System.Windows.Controls.ControlTemplate>.  
+ 
+[!code-xml[ColorPicker_snip#StyleTargetNameRef](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,56 +340,56 @@
         <value>The default value is <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Value"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object Value="value"/>  
 ```  
-  
+ 
 <a name="xamlPropertyElementUsage_Value"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-  <object.Value>  
-    value  
-  </object.Value>  
+ <object.Value>  
+   value  
+ </object.Value>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_Value"></a>   
 ## XAML Values  
- *value*  
- An object or a markup extension. See [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md).  
+*value*  
+An object or a markup extension. See [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md).  
+ 
+Note that you must specify both the <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.Value%2A> properties on a <xref:System.Windows.Setter> or an exception will be thrown.  
+ 
+Data binding and dynamic resources within the object is supported if the specified value is a <xref:System.Windows.Freezable> object. See [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md) and [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md).  
+ 
   
- Note that you must specify both the <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.Value%2A> properties on a <xref:System.Windows.Setter> or an exception will be thrown.  
-  
- Data binding and dynamic resources within the object is supported if the specified value is a <xref:System.Windows.Freezable> object. See [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md) and [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. For the complete example, see [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
-  
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
-  
- The following example defines a <xref:System.Windows.Style> with <xref:System.Windows.Setter>s that reference system resources.  
-  
- [!code-xml[BtnStyles#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#1)]  
-  
- The following example defines a <xref:System.Windows.Style> for the <xref:System.Windows.Controls.Primitives.RepeatButton>.  
-  
- [!code-xml[ColorPicker_snip#StyleTargetNameRef](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
-  
- The following example shows a <xref:System.Windows.Setter.Value%2A> property that uses the <xref:System.Windows.Data.Binding> declaration. For the complete example, see [Binding Validation Sample](http://go.microsoft.com/fwlink/?LinkID=159972).  
-  
- [!code-xml[bindvalidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
-  
+The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. For the complete example, see [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
+ 
+[!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
+<!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
+ 
+The following example defines a <xref:System.Windows.Style> with <xref:System.Windows.Setter>s that reference system resources.  
+ 
+[!code-xml[BtnStyles#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#1)]  
+ 
+The following example defines a <xref:System.Windows.Style> for the <xref:System.Windows.Controls.Primitives.RepeatButton>.  
+ 
+[!code-xml[ColorPicker_snip#StyleTargetNameRef](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
+ 
+The following example shows a <xref:System.Windows.Setter.Value%2A> property that uses the <xref:System.Windows.Data.Binding> declaration. For the complete example, see [Binding Validation Sample](http://go.microsoft.com/fwlink/?LinkID=159972).  
+ 
+[!code-xml[bindvalidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If the specified <see cref="P:System.Windows.Setter.Value" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>

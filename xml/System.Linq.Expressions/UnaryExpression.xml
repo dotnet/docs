@@ -30,10 +30,10 @@
     <summary>Represents an expression that has a unary operator.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table summarizes the factory methods that can be used to create a <xref:System.Linq.Expressions.UnaryExpression> that has a specific node type.  
-  
+The following table summarizes the factory methods that can be used to create a <xref:System.Linq.Expressions.UnaryExpression> that has a specific node type.  
+ 
 |<xref:System.Linq.Expressions.Expression.NodeType%2A>|Factory Method|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.ArrayLength%2A>|  
@@ -45,17 +45,17 @@
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Quote%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.TypeAs%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.UnaryPlus%2A>|  
+ 
+In addition, the <xref:System.Linq.Expressions.Expression.MakeUnary%2A> methods can also be used to create a <xref:System.Linq.Expressions.UnaryExpression>. These factory methods can be used to create a <xref:System.Linq.Expressions.UnaryExpression> of any node type that represents a unary operation. The parameter of these methods that is of type <xref:System.Linq.Expressions.Expression.NodeType%2A> specifies the desired node type.  
+ 
   
- In addition, the <xref:System.Linq.Expressions.Expression.MakeUnary%2A> methods can also be used to create a <xref:System.Linq.Expressions.UnaryExpression>. These factory methods can be used to create a <xref:System.Linq.Expressions.UnaryExpression> of any node type that represents a unary operation. The parameter of these methods that is of type <xref:System.Linq.Expressions.Expression.NodeType%2A> specifies the desired node type.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Linq.Expressions.UnaryExpression> object that represents the reference conversion of a non-nullable integer expression to the nullable integer type.  
-  
- [!code-csharp[System.Linq.Expressions.Expression#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#11)]
- [!code-vb[System.Linq.Expressions.Expression#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#11)]  
-  
+The following example creates a <xref:System.Linq.Expressions.UnaryExpression> object that represents the reference conversion of a non-nullable integer expression to the nullable integer type.  
+ 
+[!code-csharp[System.Linq.Expressions.Expression#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#11)]
+[!code-vb[System.Linq.Expressions.Expression#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#11)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -151,10 +151,10 @@
           <see langword="true" /> if the node represents a lifted call; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An operator call is *lifted* if the operator expects a non-nullable operand but a nullable operand is passed to it.  
-  
+An operator call is *lifted* if the operator expects a non-nullable operand but a nullable operand is passed to it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,10 +188,10 @@
           <see langword="true" /> if the operator's return type is lifted to a nullable type; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An operator call is *lifted* if the operator expects a non-nullable operand but a nullable operand is passed to it. If the value of <xref:System.Linq.Expressions.UnaryExpression.IsLiftedToNull%2A> is `true`, the operator returns a nullable type and if the nullable operand evaluates to `null`, the operator returns `null`.  
-  
+An operator call is *lifted* if the operator expects a non-nullable operand but a nullable operand is passed to it. If the value of <xref:System.Linq.Expressions.UnaryExpression.IsLiftedToNull%2A> is `true`, the operator returns a nullable type and if the nullable operand evaluates to `null`, the operator returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,12 +312,12 @@
         <returns>The reduced expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `CanReduce` method returns true, this should return a valid expression.  
-  
- This method can return another node which itself must be reduced.  
-  
+If the `CanReduce` method returns true, this should return a valid expression.  
+ 
+This method can return another node which itself must be reduced.  
+ 
  ]]></format>
         </remarks>
       </Docs>

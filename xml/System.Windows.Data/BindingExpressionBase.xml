@@ -18,10 +18,10 @@
     <summary>Represents the base class for <see cref="T:System.Windows.Data.BindingExpression" />, <see cref="T:System.Windows.Data.PriorityBindingExpression" />, and <see cref="T:System.Windows.Data.MultiBindingExpression" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about bindings and binding expressions, see "Binding and BindingExpression" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+For information about bindings and binding expressions, see "Binding and BindingExpression" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
           <see langword="true" /> if the parent binding has a failed validation rule; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is identical to the <xref:System.Windows.Data.BindingExpressionBase.HasValidationError%2A> property.  
-  
+This property is identical to the <xref:System.Windows.Data.BindingExpressionBase.HasValidationError%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
           <see langword="true" /> if the parent binding has a failed validation rule; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is identical to the <xref:System.Windows.Data.BindingExpressionBase.HasValidationError%2A> property.  
-  
+This property is identical to the <xref:System.Windows.Data.BindingExpressionBase.HasValidationError%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
           <see langword="true" /> if the target has a value that has not been written to the source; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property applies only if <xref:System.Windows.Data.Binding.Mode%2A> property of the parent <xref:System.Windows.Data.Binding> is set to <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode>.  
-  
+This property applies only if <xref:System.Windows.Data.Binding.Mode%2A> property of the parent <xref:System.Windows.Data.Binding> is set to <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
         <summary>Sends the current binding target value to the binding source in <see cref="F:System.Windows.Data.BindingMode.TwoWay" /> or <see cref="F:System.Windows.Data.BindingMode.OneWayToSource" /> bindings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is no default implementation on the base class.  
-  
+There is no default implementation on the base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <summary>Forces a data transfer from the binding source to the binding target.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is no default implementation on the base class.  
-  
+There is no default implementation on the base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,29 +290,29 @@
           <see langword="true" /> if the validation rules succeed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A> method enables you to run validation rules on a binding without updating the source of the binding. This is useful when you want to validate user input and update the source at different times in an application.  
+The <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A> method enables you to run validation rules on a binding without updating the source of the binding. This is useful when you want to validate user input and update the source at different times in an application.  
+ 
+For example, suppose you have a form to update a data source that contains a submit button. You want to provide feedback to the user if an invalid value is entered before the user attempts to submit the form. You can check the validity of a field by setting the binding's <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property to <xref:System.Windows.Data.UpdateSourceTrigger> and calling <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A> when the <xref:System.Windows.Controls.TextBox> loses focus.  
+ 
   
- For example, suppose you have a form to update a data source that contains a submit button. You want to provide feedback to the user if an invalid value is entered before the user attempts to submit the form. You can check the validity of a field by setting the binding's <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property to <xref:System.Windows.Data.UpdateSourceTrigger> and calling <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A> when the <xref:System.Windows.Controls.TextBox> loses focus.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the scenario that is discussed in the Remarks section. The example enables a user to enter data for a library item and submit the data. The binding for the <xref:System.Windows.Controls.TextBox> named `callNum` has a <xref:System.Windows.Controls.ValidationRule> associated with it. When the <xref:System.Windows.Controls.TextBox> loses focus, the example calls <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A>. When the user clicks the submit button, the example calls <xref:System.Windows.Data.BindingExpressionBase.UpdateSource%2A> to commit the changes. The following XAML creates the user interface for the application.  
-  
- [!code-xml[BindingExpressionBaseValidateWithoutUpdating#WindowXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/csharp/window1.xaml#windowxaml)]  
-  
- The following example shows the logic for the user interface.  
-  
- [!code-csharp[BindingExpressionBaseValidateWithoutUpdating#WindowLogic](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/csharp/window1.xaml.cs#windowlogic)]
- [!code-vb[BindingExpressionBaseValidateWithoutUpdating#WindowLogic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/visualbasic/window1.xaml.vb#windowlogic)]  
-  
- The following example shows the data object and <xref:System.Windows.Controls.ValidationRule> for the application.  
-  
- [!code-csharp[BindingExpressionBaseValidateWithoutUpdating#Data](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/csharp/data.cs#data)]
- [!code-vb[BindingExpressionBaseValidateWithoutUpdating#Data](~/samples/snippets/visualbasic/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/visualbasic/data.vb#data)]  
-  
+The following example demonstrates the scenario that is discussed in the Remarks section. The example enables a user to enter data for a library item and submit the data. The binding for the <xref:System.Windows.Controls.TextBox> named `callNum` has a <xref:System.Windows.Controls.ValidationRule> associated with it. When the <xref:System.Windows.Controls.TextBox> loses focus, the example calls <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A>. When the user clicks the submit button, the example calls <xref:System.Windows.Data.BindingExpressionBase.UpdateSource%2A> to commit the changes. The following XAML creates the user interface for the application.  
+ 
+[!code-xml[BindingExpressionBaseValidateWithoutUpdating#WindowXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/csharp/window1.xaml#windowxaml)]  
+ 
+The following example shows the logic for the user interface.  
+ 
+[!code-csharp[BindingExpressionBaseValidateWithoutUpdating#WindowLogic](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/csharp/window1.xaml.cs#windowlogic)]
+[!code-vb[BindingExpressionBaseValidateWithoutUpdating#WindowLogic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/visualbasic/window1.xaml.vb#windowlogic)]  
+ 
+The following example shows the data object and <xref:System.Windows.Controls.ValidationRule> for the application.  
+ 
+[!code-csharp[BindingExpressionBaseValidateWithoutUpdating#Data](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/csharp/data.cs#data)]
+[!code-vb[BindingExpressionBaseValidateWithoutUpdating#Data](~/samples/snippets/visualbasic/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/visualbasic/data.vb#data)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

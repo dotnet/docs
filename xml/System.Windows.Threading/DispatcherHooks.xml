@@ -39,10 +39,10 @@
         <summary>Occurs when the dispatcher has no more operations to process.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is raised by the dispatcher thread when there are no more pending work items.  
-  
+This event is raised by the dispatcher thread when there are no more pending work items.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -72,10 +72,10 @@
         <summary>Occurs when an operation is aborted.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any thread can abort an operation; therefore, this event can be raised by any thread.  
-  
+Any thread can abort an operation; therefore, this event can be raised by any thread.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -105,10 +105,10 @@
         <summary>Occurs when an operation completes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is raised by the dispatcher thread after the operation has completed.  
-  
+This event is raised by the dispatcher thread after the operation has completed.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -138,14 +138,14 @@
         <summary>Occurs when an operation is posted to the dispatcher.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this event occurs during a call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>.  
-  
- This event can occur during a call to <xref:System.Windows.Threading.Dispatcher.Invoke%2A> if any priority other than <xref:System.Windows.Threading.DispatcherPriority> is specified, or if the destination dispatcher is owned by a different thread.  
-  
- Any thread can post operations; therefore, this event can be raised by any thread.  
-  
+Typically, this event occurs during a call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>.  
+ 
+This event can occur during a call to <xref:System.Windows.Threading.Dispatcher.Invoke%2A> if any priority other than <xref:System.Windows.Threading.DispatcherPriority> is specified, or if the destination dispatcher is owned by a different thread.  
+ 
+Any thread can post operations; therefore, this event can be raised by any thread.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -175,10 +175,10 @@
         <summary>Occurs when the priority of an operation is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any thread can change the priority of operations; therefore, this event can be raised by any thread.  
-  
+Any thread can change the priority of operations; therefore, this event can be raised by any thread.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>

@@ -18,10 +18,10 @@
     <summary>This class controls the discoverability of service endpoints.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> makes all endpoints of a service discoverable. Use <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> to control the discoverability of a particular endpoint as well as discoverable metadata.  
-  
+A <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> makes all endpoints of a service discoverable. Use <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> to control the discoverability of a particular endpoint as well as discoverable metadata.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <value>A <see cref="T:System.Collections.ObjectModel.Collection`1" /> instance that contains a collection of announcement endpoints.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] announcement endpoints, see <xref:System.ServiceModel.Discovery.AnnouncementEndpoint>.  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] announcement endpoints, see <xref:System.ServiceModel.Discovery.AnnouncementEndpoint>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

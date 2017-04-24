@@ -14,13 +14,13 @@
     <summary>Contains a set of GUIDs that identify the properties in the <see cref="T:System.Windows.Ink.DrawingAttributes" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Ink.DrawingAttributeIds> class to detect the property that changed within a <xref:System.Windows.Ink.DrawingAttributes.PropertyDataChanged> event.  
-  
- [!code-csharp[DrawingAttributes#6](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#6)]
- [!code-vb[DrawingAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#6)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Ink.DrawingAttributeIds> class to detect the property that changed within a <xref:System.Windows.Ink.DrawingAttributes.PropertyDataChanged> event.  
+ 
+[!code-csharp[DrawingAttributes#6](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#6)]
+[!code-vb[DrawingAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

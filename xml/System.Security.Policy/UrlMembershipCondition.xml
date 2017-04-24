@@ -24,12 +24,12 @@
     <summary>Determines whether an assembly belongs to a code group by testing its URL. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file. For example, http://www.fourthcoffee.com/process/grind.htm is a complete URL.  
-  
- URLs can be matched exactly or by a wildcard in the final position. For example, http://www.fourthcoffee.com/process/* is a wildcard URL.  
-  
+The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file. For example, http://www.fourthcoffee.com/process/grind.htm is a complete URL.  
+ 
+URLs can be matched exactly or by a wildcard in the final position. For example, http://www.fourthcoffee.com/process/* is a wildcard URL.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,12 +52,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.UrlMembershipCondition" /> class with the URL that determines membership.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file, for example: http://www.fourthcoffee.com/process/grind.htm.  
-  
- URLs can be matched exactly or by a wildcard in the final position, for example: http://www.fourthcoffee.com/process/*.  
-  
+The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file, for example: http://www.fourthcoffee.com/process/grind.htm.  
+ 
+URLs can be matched exactly or by a wildcard in the final position, for example: http://www.fourthcoffee.com/process/*.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="url" /> parameter is <see langword="null" />.</exception>
@@ -88,10 +88,10 @@
           <see langword="true" /> if the specified evidence satisfies the membership condition; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This membership condition tests only the <xref:System.Security.Policy.Url> evidence object.  
-  
+This membership condition tests only the <xref:System.Security.Policy.Url> evidence object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Security.Policy.UrlMembershipCondition.Url" /> property is <see langword="null" />.</exception>
@@ -297,12 +297,12 @@
         <value>The URL for which the membership condition tests.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file. For example, http://www.fourthcoffee.com/process/grind.htm is a complete URL.  
-  
- URLs can be matched exactly or by a wildcard in the final position. For example, http://www.fourthcoffee.com/process/* is a wildcard URL.  
-  
+The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file. For example, http://www.fourthcoffee.com/process/grind.htm is a complete URL.  
+ 
+URLs can be matched exactly or by a wildcard in the final position. For example, http://www.fourthcoffee.com/process/* is a wildcard URL.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set <see cref="P:System.Security.Policy.UrlMembershipCondition.Url" /> to <see langword="null" />.</exception>

@@ -12,35 +12,35 @@
     <summary>Defines the contract implemented by custom parameter inspectors that enables inspection or modification of information prior to and subsequent to calls on either the client or the service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implement the <xref:System.ServiceModel.Dispatcher.IParameterInspector> interface to create a custom parameter inspector that can view and modify the contents of a call both before the call and after the call in either client or service applications.  
+Implement the <xref:System.ServiceModel.Dispatcher.IParameterInspector> interface to create a custom parameter inspector that can view and modify the contents of a call both before the call and after the call in either client or service applications.  
+ 
+On outbound calls from a client, the inspector is invoked before the request contents are serialized and sent to the service. The inspector is also called after the response has been deserialized but before the return values have been dispatched to the proxy method.  
+ 
+On inbound calls to a service, the inspector is invoked after parameters are deserialized but before they are dispatched to the service operation.  
+ 
+Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors%2A?displayProperty=fullName> or the <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A?displayProperty=fullName> properties to add an <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation to the inspectors collection for a particular operation.  
+ 
+**Note** Developers and administrators must ensure that the interaction with other <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementations is understood.  
+ 
   
- On outbound calls from a client, the inspector is invoked before the request contents are serialized and sent to the service. The inspector is also called after the response has been deserialized but before the return values have been dispatched to the proxy method.  
-  
- On inbound calls to a service, the inspector is invoked after parameters are deserialized but before they are dispatched to the service operation.  
-  
- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors%2A?displayProperty=fullName> or the <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A?displayProperty=fullName> properties to add an <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation to the inspectors collection for a particular operation.  
-  
- **Note** Developers and administrators must ensure that the interaction with other <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementations is understood.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows an <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation that:  
-  
+The following code example shows an <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation that:  
+ 
 -   Writes the operation name and return value to the console after a response has been deserialized by the service or a request has been serialized by a client.  
-  
+ 
 -   Writes the operation name to the console after deserializing a response on the client or after a response has been serialized on the service.  
-  
- [!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
- [!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
-  
- The following code example shows how to use either <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=fullName>, <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> or <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> to insert <xref:System.ServiceModel.Dispatcher.IParameterInspector> objects.  
-  
- [!code-csharp[Interceptors#5](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#5)]
- [!code-vb[Interceptors#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#5)]  
-  
+ 
+[!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
+[!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
+ 
+The following code example shows how to use either <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=fullName>, <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> or <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> to insert <xref:System.ServiceModel.Dispatcher.IParameterInspector> objects.  
+ 
+[!code-csharp[Interceptors#5](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#5)]
+[!code-vb[Interceptors#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,29 +72,29 @@
         <summary>Called after client calls are returned and before service responses are sent.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- On outbound calls from a client, the inspector is invoked before the request contents are serialized and sent to the service. The inspector is also called after the response has been deserialized but before the return values have been dispatched to the proxy method.  
+On outbound calls from a client, the inspector is invoked before the request contents are serialized and sent to the service. The inspector is also called after the response has been deserialized but before the return values have been dispatched to the proxy method.  
+ 
+On inbound calls to a service, the inspector is invoked after parameters are deserialized but before they are dispatched to the service operation.  
+ 
   
- On inbound calls to a service, the inspector is invoked after parameters are deserialized but before they are dispatched to the service operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows an <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation that:  
-  
+The following code example shows an <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation that:  
+ 
 -   Writes the operation name and return value to the console after a response has been deserialized by the service or a request has been serialized by a client.  
-  
+ 
 -   Writes the operation name to the console after deserializing a response on the client or after a response has been serialized on the service.  
-  
- [!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
- [!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
-  
- The following code example shows how to use either <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=fullName>, <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName>, or <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> to insert <xref:System.ServiceModel.Dispatcher.IParameterInspector> objects.  
-  
- [!code-csharp[Interceptors#5](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#5)]
- [!code-vb[Interceptors#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#5)]  
-  
+ 
+[!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
+[!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
+ 
+The following code example shows how to use either <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=fullName>, <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName>, or <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> to insert <xref:System.ServiceModel.Dispatcher.IParameterInspector> objects.  
+ 
+[!code-csharp[Interceptors#5](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#5)]
+[!code-vb[Interceptors#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,29 +123,29 @@
         <returns>The correlation state that is returned as the <paramref name="correlationState" /> parameter in <see cref="M:System.ServiceModel.Dispatcher.IParameterInspector.AfterCall(System.String,System.Object[],System.Object,System.Object)" />. Return <see langword="null" /> if you do not intend to use correlation state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- On outbound calls from a client, the inspector is invoked before the request contents are serialized and sent to the service. The inspector is also called after the response has been deserialized but before the return values have been dispatched to the proxy method.  
+On outbound calls from a client, the inspector is invoked before the request contents are serialized and sent to the service. The inspector is also called after the response has been deserialized but before the return values have been dispatched to the proxy method.  
+ 
+On inbound calls to a service, the inspector is invoked after the request contents are deserialized and dispatched to the service operation and before the response contents are serialized and sent to the client.  
+ 
   
- On inbound calls to a service, the inspector is invoked after the request contents are deserialized and dispatched to the service operation and before the response contents are serialized and sent to the client.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows an <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation that:  
-  
+The following code example shows an <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation that:  
+ 
 -   Writes the operation name and return value to the console after a response has been deserialized by the service or a request has been serialized by a client.  
-  
+ 
 -   Writes the operation name to the console after deserializing a response on the client or after a response is serialized on the service.  
-  
- [!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
- [!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
-  
- The following code example shows how to use either <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=fullName>, <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> or <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> to insert <xref:System.ServiceModel.Dispatcher.IParameterInspector> objects.  
-  
- [!code-csharp[Interceptors#5](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#5)]
- [!code-vb[Interceptors#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#5)]  
-  
+ 
+[!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
+[!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
+ 
+The following code example shows how to use either <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=fullName>, <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> or <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> to insert <xref:System.ServiceModel.Dispatcher.IParameterInspector> objects.  
+ 
+[!code-csharp[Interceptors#5](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#5)]
+[!code-vb[Interceptors#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -34,27 +34,27 @@
     <summary>Creates the theme specific-look for headers in .NET Framework 4.5 <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Controls.Control.Background%2A> or <xref:System.Windows.Controls.Border.BorderBrush%2A> properties are set on the <xref:System.Windows.Controls.DataGrid>, the rendering reverts back to the default <xref:System.Windows.Controls.Border> implementation.  
-  
+If the <xref:System.Windows.Controls.Control.Background%2A> or <xref:System.Windows.Controls.Border.BorderBrush%2A> properties are set on the <xref:System.Windows.Controls.DataGrid>, the rendering reverts back to the default <xref:System.Windows.Controls.Border> implementation.  
+ 
 <a name="xamlObjectElementUsage_DGHB"></a>   
 ## XAML Object Element Usage  
-  
+ 
 ```  
 <theme:DataGridHeaderBorder ...>  
   singleChild  
 </theme:DataGridHeaderBorder>  
 ```  
-  
+ 
 <a name="xamlValues_DGHB"></a>   
 ## XAML Values  
- `theme:`  
- An xmlns prefix for the <xref:Microsoft.Windows.Themes> CLR namespace. Typically, xmlns prefixes and mappings are defined in a XAML root element (not shown).  
-  
- *singleChild*  
- A single object element child, representing the object that the border is drawn around. This object must be a <xref:System.Windows.UIElement>.  
-  
+`theme:`  
+An xmlns prefix for the <xref:Microsoft.Windows.Themes> CLR namespace. Typically, xmlns prefixes and mappings are defined in a XAML root element (not shown).  
+ 
+*singleChild*  
+A single object element child, representing the object that the border is drawn around. This object must be a <xref:System.Windows.UIElement>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -174,10 +174,10 @@
           <see langword="true" /> if the header clickable; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:Microsoft.Windows.Themes.DataGridHeaderBorder.IsClickable%2A> is `false`, the hover look will not be applied even when <xref:Microsoft.Windows.Themes.DataGridHeaderBorder.IsHovered%2A> is `true`.  
-  
+If <xref:Microsoft.Windows.Themes.DataGridHeaderBorder.IsClickable%2A> is `false`, the hover look will not be applied even when <xref:Microsoft.Windows.Themes.DataGridHeaderBorder.IsHovered%2A> is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

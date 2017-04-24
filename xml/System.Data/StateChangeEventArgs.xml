@@ -23,18 +23,18 @@
     <summary>Provides data for the state change event of a .NET Framework data provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data is used by the `StateChange` property of the <xref:System.Data.OleDb.OleDbConnection> and the `StateChange` property of the <xref:System.Data.SqlClient.SqlConnection>.  
+The data is used by the `StateChange` property of the <xref:System.Data.OleDb.OleDbConnection> and the `StateChange` property of the <xref:System.Data.SqlClient.SqlConnection>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the `StateChange` event within the <xref:System.Data.SqlClient.SqlConnection> class.  
-  
- [!code-csharp[Classic WebData StateChangeEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData StateChangeEventArgs Example/CS/source.cs#1)]
- [!code-vb[Classic WebData StateChangeEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData StateChangeEventArgs Example/VB/source.vb#1)]  
-  
+The following example shows how to use the `StateChange` event within the <xref:System.Data.SqlClient.SqlConnection> class.  
+ 
+[!code-csharp[Classic WebData StateChangeEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData StateChangeEventArgs Example/CS/source.cs#1)]
+[!code-vb[Classic WebData StateChangeEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData StateChangeEventArgs Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

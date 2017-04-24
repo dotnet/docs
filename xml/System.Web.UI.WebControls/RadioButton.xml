@@ -22,30 +22,30 @@
     <summary>Represents a radio button control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this topic:  
-  
+In this topic:  
+ 
 -   [Introduction](#introduction)  
-  
+ 
 -   [Accessibility](#accessibility)  
-  
+ 
 -   [Declarative Syntax](#declarative_syntax)  
-  
+ 
 <a name="introduction"></a>   
 ## Introduction  
- The <xref:System.Web.UI.WebControls.RadioButton> server control permits you to intersperse the radio buttons in a group with other content in the page. The buttons are grouped logically if they all share the same <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property.  
-  
+The <xref:System.Web.UI.WebControls.RadioButton> server control permits you to intersperse the radio buttons in a group with other content in the page. The buttons are grouped logically if they all share the same <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property.  
+ 
 > [!NOTE]
 >  You can use the <xref:System.Web.UI.WebControls.RadioButton> control to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
-  
+ 
 <a name="accessibility"></a>   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
-  
+The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ 
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
-  
+ 
 ```  
 <asp:RadioButton  
     AccessKey="string"  
@@ -53,7 +53,7 @@
     BackColor="color name|#dddddd"  
     BorderColor="color name|#dddddd"  
     BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-        Inset|Outset"  
+       Inset|Outset"  
     BorderWidth="size"  
     CausesValidation="True|False"  
     Checked="True|False"  
@@ -66,7 +66,7 @@
     Font-Names="string"  
     Font-Overline="True|False"  
     Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-        Large|X-Large|XX-Large"  
+       Large|X-Large|XX-Large"  
     Font-Strikeout="True|False"  
     Font-Underline="True|False"  
     ForeColor="color name|#dddddd"  
@@ -92,15 +92,15 @@
     Width="size"  
 />  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to use the <xref:System.Web.UI.WebControls.RadioButton> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButton Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton Example 2/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButton Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton Example 2/VB/sourcevb.aspx#1)]  -->  
-  
+The following code example illustrates how to use the <xref:System.Web.UI.WebControls.RadioButton> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic RadioButton Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton Example 2/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic RadioButton Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton Example 2/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -119,13 +119,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RadioButton" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates how to create new instance of the <xref:System.Web.UI.WebControls.RadioButton> class using the <xref:System.Web.UI.WebControls.RadioButton.%23ctor%2A> constructor.  
-  
- [!code-csharp[Classic RadioButton Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton Example/CS/source.cs#1)]
- [!code-vb[Classic RadioButton Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton Example/VB/source.vb#1)]  
-  
+The following code example illustrates how to create new instance of the <xref:System.Web.UI.WebControls.RadioButton> class using the <xref:System.Web.UI.WebControls.RadioButton.%23ctor%2A> constructor.  
+ 
+[!code-csharp[Classic RadioButton Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton Example/CS/source.cs#1)]
+[!code-vb[Classic RadioButton Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,24 +155,24 @@
         <value>The name of the group that the radio button belongs to. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property to specify a grouping of radio buttons to create a mutually exclusive set of controls. You can use the <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property when only one selection is possible from a list of available options.  
+Use the <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property to specify a grouping of radio buttons to create a mutually exclusive set of controls. You can use the <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property when only one selection is possible from a list of available options.  
+ 
+When this property is set, only one <xref:System.Web.UI.WebControls.RadioButton> in the specified group can be selected at a time.  
+ 
+The value of this property is stored in view state.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
   
- When this property is set, only one <xref:System.Web.UI.WebControls.RadioButton> in the specified group can be selected at a time.  
-  
- The value of this property is stored in view state.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to set the <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property programmatically.  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButton.GroupName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton.GroupName Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButton.GroupName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton.GroupName Example/VB/sourcevb.aspx#1)]  -->  
-  
+The following code example illustrates how to set the <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property programmatically.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic RadioButton.GroupName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton.GroupName Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic RadioButton.GroupName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton.GroupName Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
           <see langword="true" /> if the data for the <see cref="T:System.Web.UI.WebControls.RadioButton" /> has changed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.RadioButton.LoadPostData%2A> method is called by the <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A> method. It is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.RadioButton> control.  
-  
+The <xref:System.Web.UI.WebControls.RadioButton.LoadPostData%2A> method is called by the <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A> method. It is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.RadioButton> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.RadioButton.OnPreRender%2A> method notifies the <xref:System.Web.UI.WebControls.RadioButton> control to perform any necessary prerendering steps prior to saving view state and rendering content.  
-  
+The <xref:System.Web.UI.WebControls.RadioButton.OnPreRender%2A> method notifies the <xref:System.Web.UI.WebControls.RadioButton> control to perform any necessary prerendering steps prior to saving view state and rendering content.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.RadioButton.CheckedChanged" /> event, if the <see cref="P:System.Windows.Forms.RadioButton.Checked" /> property has changed on postback.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.RadioButton.RaisePostDataChangedEvent%2A> method is called by the <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A> method. It is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.RadioButton> control.  
-  
+The <xref:System.Web.UI.WebControls.RadioButton.RaisePostDataChangedEvent%2A> method is called by the <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A> method. It is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.RadioButton> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
           <see langword="true" /> if <see cref="T:System.Web.UI.WebControls.RadioButton" /> is checked; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButton> control is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButton> control is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,12 +311,12 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButton> control is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
-  
- If the <xref:System.Web.UI.WebControls.CheckBox.Checked%2A> property has changed on postback, the <xref:System.Web.UI.WebControls.RadioButton.RaisePostDataChangedEvent%2A> method raises a <xref:System.Web.UI.WebControls.CheckBox.CheckedChanged> event.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButton> control is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ 
+If the <xref:System.Web.UI.WebControls.CheckBox.Checked%2A> property has changed on postback, the <xref:System.Web.UI.WebControls.RadioButton.RaisePostDataChangedEvent%2A> method raises a <xref:System.Web.UI.WebControls.CheckBox.CheckedChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

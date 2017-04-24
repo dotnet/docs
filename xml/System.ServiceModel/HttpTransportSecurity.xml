@@ -15,10 +15,10 @@
     <summary>Represents the transport-level security settings for the <see cref="T:System.ServiceModel.WSHttpBinding" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used by <xref:System.ServiceModel.WSHttpSecurity.Transport%2A> to set the transport-level security settings for a binding.  
-  
+This class is used by <xref:System.ServiceModel.WSHttpSecurity.Transport%2A> to set the transport-level security settings for a binding.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,30 +57,30 @@
         <value>Returns the <see cref="T:System.ServiceModel.HttpClientCredentialType" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value can be one of the following enumeration members:  
-  
+The return value can be one of the following enumeration members:  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to access and set this property.  
-  
- [!code-csharp[c_ProgrammingSecurity#11](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#11)]
- [!code-vb[c_ProgrammingSecurity#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#11)]  
-  
+The following code shows how to access and set this property.  
+ 
+[!code-csharp[c_ProgrammingSecurity#11](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#11)]
+[!code-vb[c_ProgrammingSecurity#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#11)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Setting the property to an undefined value.</exception>
@@ -123,20 +123,20 @@
         <value>Returns the <see cref="T:System.ServiceModel.HttpProxyCredentialType" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value can be one of the following enumeration members:  
-  
+The return value can be one of the following enumeration members:  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Setting the property to an undefined value.</exception>
@@ -160,10 +160,10 @@
         <value>The authentication realm. The default value is "".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An *authentication realm* is a string that contains at least the name of the host performing the authentication and can additionally indicate the collection of users who might have access. An example might be "registered_someone@example.com". The authentication realm is displayed to a user to show which one of several possible user names and passwords can be used.  
-  
+An *authentication realm* is a string that contains at least the name of the host performing the authentication and can additionally indicate the collection of users who might have access. An example might be "registered_someone@example.com". The authentication realm is displayed to a user to show which one of several possible user names and passwords can be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

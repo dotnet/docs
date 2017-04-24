@@ -22,19 +22,19 @@
     <summary>Represents a collection of <see cref="T:System.CodeDom.CodeTypeMember" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeTypeMemberCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeTypeMember> objects.  
+The <xref:System.CodeDom.CodeTypeMemberCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeTypeMember> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.CodeDom.CodeTypeMemberCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#1)]
- [!code-csharp[CodeTypeMemberCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#1)]
- [!code-vb[CodeTypeMemberCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.CodeDom.CodeTypeMemberCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#1)]
+[!code-csharp[CodeTypeMemberCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#1)]
+[!code-vb[CodeTypeMemberCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,14 +53,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to create an empty instance of the <xref:System.CodeDom.CodeTypeMemberCollection> class.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#2)]
- [!code-csharp[CodeTypeMemberCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#2)]
- [!code-vb[CodeTypeMemberCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#2)]  
-  
+The following code example demonstrates how to create an empty instance of the <xref:System.CodeDom.CodeTypeMemberCollection> class.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#2)]
+[!code-csharp[CodeTypeMemberCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#2)]
+[!code-vb[CodeTypeMemberCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,14 +122,14 @@
         <returns>The index at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to add a <xref:System.CodeDom.CodeTypeMember> object to a <xref:System.CodeDom.CodeTypeMemberCollection> instance.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#3)]
- [!code-csharp[CodeTypeMemberCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#3)]
- [!code-vb[CodeTypeMemberCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#3)]  
-  
+The following code example demonstrates how to add a <xref:System.CodeDom.CodeTypeMember> object to a <xref:System.CodeDom.CodeTypeMemberCollection> instance.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#3)]
+[!code-csharp[CodeTypeMemberCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#3)]
+[!code-vb[CodeTypeMemberCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,14 +154,14 @@
         <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeTypeMember" /> array to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the two <xref:System.CodeDom.CodeTypeMemberCollection.AddRange%2A> method overloads to add the members of an array to a <xref:System.CodeDom.CodeTypeMemberCollection> object, and to add the members of one <xref:System.CodeDom.CodeTypeMemberCollection> to another.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CodeTypeMemberCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeTypeMemberCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#4)]  
-  
+The following example demonstrates how to use the two <xref:System.CodeDom.CodeTypeMemberCollection.AddRange%2A> method overloads to add the members of an array to a <xref:System.CodeDom.CodeTypeMemberCollection> object, and to add the members of one <xref:System.CodeDom.CodeTypeMemberCollection> to another.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CodeTypeMemberCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeTypeMemberCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -188,14 +188,14 @@
         <summary>Adds the contents of another <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the two <xref:System.CodeDom.CodeTypeMemberCollection.AddRange%2A> method overloads to add the members of an array to a <xref:System.CodeDom.CodeTypeMemberCollection> object, and to add the members of one <xref:System.CodeDom.CodeTypeMemberCollection> to another.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CodeTypeMemberCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeTypeMemberCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#4)]  
-  
+The following code example demonstrates how to use the two <xref:System.CodeDom.CodeTypeMemberCollection.AddRange%2A> method overloads to add the members of an array to a <xref:System.CodeDom.CodeTypeMemberCollection> object, and to add the members of one <xref:System.CodeDom.CodeTypeMemberCollection> to another.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CodeTypeMemberCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeTypeMemberCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -224,14 +224,14 @@
           <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.CodeDom.CodeTypeMemberCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeTypeMember> object and retrieve the index value at which it was found.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CodeTypeMemberCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeTypeMemberCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#5)]  
-  
+The following code example uses the <xref:System.CodeDom.CodeTypeMemberCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeTypeMember> object and retrieve the index value at which it was found.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CodeTypeMemberCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeTypeMemberCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,14 +258,14 @@
         <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance, beginning at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeTypeMemberCollection> to an array, beginning at the specified index value.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#6)]
- [!code-csharp[CodeTypeMemberCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#6)]
- [!code-vb[CodeTypeMemberCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#6)]  
-  
+The following code example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeTypeMemberCollection> to an array, beginning at the specified index value.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#6)]
+[!code-csharp[CodeTypeMemberCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#6)]
+[!code-vb[CodeTypeMemberCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
@@ -298,14 +298,14 @@
         <returns>The index in the collection of the specified object, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example searches for the presence of a specific <xref:System.CodeDom.CodeTypeMember> object and uses the <xref:System.CodeDom.CodeTypeMemberCollection.IndexOf%2A> method to retrieve the index value at which it was found.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CodeTypeMemberCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeTypeMemberCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#5)]  
-  
+The following code example searches for the presence of a specific <xref:System.CodeDom.CodeTypeMember> object and uses the <xref:System.CodeDom.CodeTypeMemberCollection.IndexOf%2A> method to retrieve the index value at which it was found.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CodeTypeMemberCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeTypeMemberCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,14 +332,14 @@
         <summary>Inserts the specified <see cref="T:System.CodeDom.CodeTypeMember" /> into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.CodeDom.CodeTypeMemberCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeTypeMember> object to a <xref:System.CodeDom.CodeTypeMemberCollection>.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#8)]
- [!code-csharp[CodeTypeMemberCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#8)]
- [!code-vb[CodeTypeMemberCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#8)]  
-  
+The following code example demonstrates how to use the <xref:System.CodeDom.CodeTypeMemberCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeTypeMember> object to a <xref:System.CodeDom.CodeTypeMemberCollection>.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#8)]
+[!code-csharp[CodeTypeMemberCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#8)]
+[!code-vb[CodeTypeMemberCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,10 +365,10 @@
         <value>A <see cref="T:System.CodeDom.CodeTypeMember" /> at each valid index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an indexer that can be used to access the collection.  
-  
+This method is an indexer that can be used to access the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
@@ -394,14 +394,14 @@
         <summary>Removes a specific <see cref="T:System.CodeDom.CodeTypeMember" /> from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.CodeDom.CodeTypeMemberCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeTypeMember> object from a <xref:System.CodeDom.CodeTypeMemberCollection>.  
-  
- [!code-cpp[CodeTypeMemberCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#9)]
- [!code-csharp[CodeTypeMemberCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#9)]
- [!code-vb[CodeTypeMemberCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#9)]  
-  
+The following code example demonstrates how to use the <xref:System.CodeDom.CodeTypeMemberCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeTypeMember> object from a <xref:System.CodeDom.CodeTypeMemberCollection>.  
+ 
+[!code-cpp[CodeTypeMemberCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#9)]
+[!code-csharp[CodeTypeMemberCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#9)]
+[!code-vb[CodeTypeMemberCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>

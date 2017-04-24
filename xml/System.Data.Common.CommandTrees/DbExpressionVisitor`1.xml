@@ -18,10 +18,10 @@
     <summary>Defines the basic functionality that should be implemented by visitors that return a result value of a specific type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.CommandTrees.DbExpressionVisitor%601> is an abstract class that describes expression traversal.  
-  
+The <xref:System.Data.Common.CommandTrees.DbExpressionVisitor%601> is an abstract class that describes expression traversal.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -348,10 +348,10 @@
         <returns>A result value of a specific type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when an expression of an otherwise unrecognized type is encountered.  
-  
+This method is called when an expression of an otherwise unrecognized type is encountered.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,40 +19,40 @@
     <summary>Facilitates interaction between <see cref="N:System.Transactions" /> and components that were previously written to interact with MSDTC, COM+, or <see cref="N:System.EnterpriseServices" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides methods for transaction propagation. For more information on how this process works, see [Transaction Propagation](http://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/b09541e6-4baf-4e37-b879-62884fbb0969.asp).  
-  
- Using the methods provided by this class, you can engage in two types of transaction propagations, Export/Import (push model) and Transmitter/Receiver (pull model).  
-  
- The Export/Import (push model) propagation involves these steps,  
-  
+This class provides methods for transaction propagation. For more information on how this process works, see [Transaction Propagation](http://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/b09541e6-4baf-4e37-b879-62884fbb0969.asp).  
+ 
+Using the methods provided by this class, you can engage in two types of transaction propagations, Export/Import (push model) and Transmitter/Receiver (pull model).  
+ 
+The Export/Import (push model) propagation involves these steps,  
+ 
 1.  On the remote machine, obtain the "whereabouts" of the transaction manager of that machine by calling the <xref:System.Transactions.TransactionInterop.GetWhereabouts%2A> method. You can then cache this piece of information on the client machine for future usage.  
-  
+ 
 2.  Send the data containing the whereabouts to the client machine using any preferred method  
-  
+ 
 3.  On the client machine, use the whereabouts to "export" the transaction to the remote machine and generate a transaction "cookie".  This is done by calling <xref:System.Transactions.TransactionInterop.GetExportCookie%2A> and passing in the remote machine's whereabouts.  
-  
+ 
 4.  Send the data containing the transaction "cookie" to the remote machine using any preferred method  
-  
+ 
 5.  On the remote machine, use the transaction "cookie" to obtain a clone of the client transaction by calling the <xref:System.Transactions.TransactionInterop.GetTransactionFromExportCookie%2A> method.  
-  
+ 
 6.  On the remote machine, use the clone transaction to enlist the resource manager using the <xref:System.Transactions.Transaction.EnlistVolatile%2A> or <xref:System.Transactions.Transaction.EnlistDurable%2A> methods of the <xref:System.Transactions.Transaction> class.  
-  
- The Transmitter/Receiver (pull model) propagation involves these steps,  
-  
+ 
+The Transmitter/Receiver (pull model) propagation involves these steps,  
+ 
 -   On the client machine, using the transaction generates a corresponding "propagation token" by calling <xref:System.Transactions.TransactionInterop.GetTransmitterPropagationToken%2A>  
-  
+ 
 -   Send the data containing the "propagation token" of the transaction to the remote machine using any preferred method  
-  
+ 
 -   On the remote machine, use the "propagation token" to obtain a clone of the client transaction by calling <xref:System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken%2A>  
-  
- The Transmitter/Receiver model provides better performance in scenarios where the transaction token is sent to a remote machine, but the remote machine may not use it to obtain the transaction.  This is because the transaction is not propagated until <xref:System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken%2A> is called. Another advantage is that the propagation token can be sent to any remote machine, while the export cookie can be used only on the machine that provided the whereabouts.  
-  
- However, you should also note that the whereabouts of remote transaction managers are encapsulated in all the propagation tokens, making them bigger than the corresponding transaction cookies from the Export/Import model.  
-  
- **Note** This type uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
-  
+ 
+The Transmitter/Receiver model provides better performance in scenarios where the transaction token is sent to a remote machine, but the remote machine may not use it to obtain the transaction.  This is because the transaction is not propagated until <xref:System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken%2A> is called. Another advantage is that the propagation token can be sent to any remote machine, while the export cookie can be used only on the machine that provided the whereabouts.  
+ 
+However, you should also note that the whereabouts of remote transaction managers are encapsulated in all the propagation tokens, making them bigger than the corresponding transaction cookies from the Export/Import model.  
+ 
+**Note** This type uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,12 +112,12 @@
         <returns>An export transaction cookie representing the specified <see cref="T:System.Transactions.Transaction" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method if you want to export a transaction. The `transaction` that is passed along is marshaled into a transaction cookie. You can then send the transaction cookie to the destination process. This is referred to as propagating the transaction between processes or systems. The propagation is considered to be a push model where the local transaction is pushed to the destination.  Therefore, information contained in `whereabouts` must describe the destination transaction manager.  
-  
- For more information on different propagation models, see the Remarks section of the <xref:System.Transactions.TransactionInterop> class.  
-  
+Call this method if you want to export a transaction. The `transaction` that is passed along is marshaled into a transaction cookie. You can then send the transaction cookie to the destination process. This is referred to as propagating the transaction between processes or systems. The propagation is considered to be a push model where the local transaction is pushed to the destination.  Therefore, information contained in `whereabouts` must describe the destination transaction manager.  
+ 
+For more information on different propagation models, see the Remarks section of the <xref:System.Transactions.TransactionInterop> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <returns>A <see cref="T:System.Transactions.Transaction" /> instance that represents the given <see cref="T:System.Transactions.IDtcTransaction" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `transactionNative` is compatible with the unmanaged form of [ITransaction](http://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/d40264be-f9b2-4044-aac6-84b43e5be666.asp) used by MSDTC and with the Managed form of <xref:System.EnterpriseServices.ITransaction> used by <xref:System.EnterpriseServices>.  
-  
+The `transactionNative` is compatible with the unmanaged form of [ITransaction](http://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/d40264be-f9b2-4044-aac6-84b43e5be666.asp) used by MSDTC and with the Managed form of <xref:System.EnterpriseServices.ITransaction> used by <xref:System.EnterpriseServices>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <returns>A <see cref="T:System.Transactions.Transaction" /> from the specified export cookie.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on different propagation models, see the Remarks section of the <xref:System.Transactions.TransactionInterop> class.  
-  
+For more information on different propagation models, see the Remarks section of the <xref:System.Transactions.TransactionInterop> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,12 +216,12 @@
         <returns>A <see cref="T:System.Transactions.Transaction" /> from the specified transmitter propagation token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method, together with the <xref:System.Transactions.TransactionInterop.GetTransmitterPropagationToken%2A> method, provide functionality for "pull" propagation, in which the transaction is "pulled" from the remote machine when this method is called to unmarshal the transaction.  
-  
- For more information on different propagation models, see the Remarks section of the <xref:System.Transactions.TransactionInterop> class.  
-  
+This method, together with the <xref:System.Transactions.TransactionInterop.GetTransmitterPropagationToken%2A> method, provide functionality for "pull" propagation, in which the transaction is "pulled" from the remote machine when this method is called to unmarshal the transaction.  
+ 
+For more information on different propagation models, see the Remarks section of the <xref:System.Transactions.TransactionInterop> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Transactions.TransactionManagerCommunicationException">The deserialization of a transaction fails because the transaction manager cannot be contacted. This may be caused by network firewall or security settings.</exception>
@@ -279,12 +279,12 @@
         <returns>The Whereabouts of the distributed transaction manager that <see cref="N:System.Transactions" /> uses.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Whereabouts contains an address that describes the location of a transaction manager. This permits two transaction managers to communicate with one another and thereby propagate a transaction from one system to the other. The information returned by this method can be used to provide location information for push model transaction propagation with the <xref:System.Transactions.TransactionInterop.GetExportCookie%2A> method.  
-  
- For more information on different propagation models, see the Remarks section of the <xref:System.Transactions.TransactionInterop> class.  
-  
+The Whereabouts contains an address that describes the location of a transaction manager. This permits two transaction managers to communicate with one another and thereby propagate a transaction from one system to the other. The information returned by this method can be used to provide location information for push model transaction propagation with the <xref:System.Transactions.TransactionInterop.GetExportCookie%2A> method.  
+ 
+For more information on different propagation models, see the Remarks section of the <xref:System.Transactions.TransactionInterop> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,10 +310,10 @@
         <summary>The type of the distributed transaction processor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is used for the `Transaction.PromoterType` property if the transaction is or will be promoted to MSDTC and the `Transaction.GetPromotedToken` method will return an MSDTC transaction propagation token for the `byte[]` result.  
-  
+This value is used for the `Transaction.PromoterType` property if the transaction is or will be promoted to MSDTC and the `Transaction.GetPromotedToken` method will return an MSDTC transaction propagation token for the `byte[]` result.  
+ 
  ]]></format>
         </remarks>
       </Docs>

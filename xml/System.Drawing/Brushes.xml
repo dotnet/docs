@@ -14,19 +14,19 @@
     <summary>Brushes for all the standard colors. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Brushes> class contains `static` read-only properties that return a <xref:System.Drawing.Brush> object of the color indicated by the property name. You typically do not have to explicitly dispose of the brush returned by a property in this class, unless it is used to construct a new brush. For more information about the colors represented by the brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+The <xref:System.Drawing.Brushes> class contains `static` read-only properties that return a <xref:System.Drawing.Brush> object of the color indicated by the property name. You typically do not have to explicitly dispose of the brush returned by a property in this class, unless it is used to construct a new brush. For more information about the colors represented by the brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the how to use a member of the <xref:System.Drawing.Brushes> class to fill a <xref:System.Drawing.Rectangle>. This example should be used with a Windows Form. Paste this code into a form and call this method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#2)]
- [!code-vb[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#2)]  
-  
+The following code example demonstrates the how to use a member of the <xref:System.Drawing.Brushes> class to fill a <xref:System.Drawing.Rectangle>. This example should be used with a Windows Form. Paste this code into a form and call this method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#2)]
+[!code-vb[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,10 +273,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,10 +298,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,10 +323,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,10 +348,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,10 +448,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,10 +473,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -498,10 +498,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -523,10 +523,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -548,10 +548,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -573,10 +573,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -598,10 +598,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -623,10 +623,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -648,10 +648,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -673,10 +673,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -698,10 +698,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -723,10 +723,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -748,10 +748,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -773,10 +773,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -798,10 +798,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -823,10 +823,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -848,10 +848,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -873,10 +873,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -898,10 +898,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -923,10 +923,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -948,10 +948,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -973,10 +973,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -998,10 +998,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1023,10 +1023,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1048,10 +1048,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1073,10 +1073,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1098,10 +1098,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1123,10 +1123,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1148,10 +1148,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1173,10 +1173,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1198,10 +1198,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1223,10 +1223,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1248,10 +1248,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1273,10 +1273,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1298,10 +1298,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1323,10 +1323,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1348,10 +1348,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1373,10 +1373,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1398,10 +1398,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1423,10 +1423,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1448,10 +1448,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1473,10 +1473,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1498,10 +1498,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1523,10 +1523,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1548,10 +1548,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1573,10 +1573,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1598,10 +1598,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1623,10 +1623,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1648,10 +1648,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1673,10 +1673,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1698,10 +1698,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1723,10 +1723,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1748,10 +1748,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1773,10 +1773,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1798,10 +1798,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1823,10 +1823,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1848,10 +1848,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1873,10 +1873,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1898,10 +1898,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1923,10 +1923,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1948,10 +1948,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1973,10 +1973,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1998,10 +1998,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2023,10 +2023,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2048,10 +2048,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2073,10 +2073,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2098,10 +2098,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2123,10 +2123,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2148,10 +2148,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2173,10 +2173,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2198,10 +2198,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2223,10 +2223,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2248,10 +2248,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2273,12 +2273,12 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
- .  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
+.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2300,10 +2300,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2325,10 +2325,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2350,10 +2350,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2375,10 +2375,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2400,10 +2400,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2425,10 +2425,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2450,10 +2450,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2475,10 +2475,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2500,10 +2500,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2525,10 +2525,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2550,10 +2550,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2575,10 +2575,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2600,10 +2600,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2625,10 +2625,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2650,10 +2650,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2675,10 +2675,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2700,10 +2700,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2725,10 +2725,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2750,10 +2750,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2775,10 +2775,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2800,10 +2800,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2825,10 +2825,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2850,10 +2850,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2875,10 +2875,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2900,10 +2900,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2925,10 +2925,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2950,10 +2950,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2975,10 +2975,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3000,10 +3000,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3025,10 +3025,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3050,10 +3050,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3075,10 +3075,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3100,10 +3100,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3125,10 +3125,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3150,10 +3150,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3175,10 +3175,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3200,10 +3200,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3225,10 +3225,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3250,10 +3250,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3275,10 +3275,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3300,10 +3300,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3325,10 +3325,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3350,10 +3350,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3375,10 +3375,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3400,10 +3400,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3425,10 +3425,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3450,10 +3450,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3475,10 +3475,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3500,10 +3500,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3525,10 +3525,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3550,10 +3550,10 @@
         <value>A <see cref="T:System.Drawing.Brush" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this brush and other brushes in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>

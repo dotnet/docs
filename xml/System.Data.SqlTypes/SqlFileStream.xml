@@ -14,21 +14,21 @@
     <summary>Exposes SQL Server data that is stored with the FILESTREAM column attribute as a sequence of bytes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlTypes.SqlFileStream> class is used to work with `varbinary(max)` data stored with the FILESTREAM attribute in a SQL Server 2008 database. You must install the .NET Framework 3.5 SP1 (or later) to use <xref:System.Data.SqlTypes.SqlFileStream> to work with FILESTREAM data.  
-  
- Specifying the FILESTREAM attribute on a `varbinary(max)` column causes SQL Server to store the data in the local NTFS file system instead of in the database file. Transact-SQL statements provide data manipulation capabilities within the server, and Win32 file system interfaces provide streaming access to the data.  
-  
+The <xref:System.Data.SqlTypes.SqlFileStream> class is used to work with `varbinary(max)` data stored with the FILESTREAM attribute in a SQL Server 2008 database. You must install the .NET Framework 3.5 SP1 (or later) to use <xref:System.Data.SqlTypes.SqlFileStream> to work with FILESTREAM data.  
+ 
+Specifying the FILESTREAM attribute on a `varbinary(max)` column causes SQL Server to store the data in the local NTFS file system instead of in the database file. Transact-SQL statements provide data manipulation capabilities within the server, and Win32 file system interfaces provide streaming access to the data.  
+ 
 > [!NOTE]
 >  Individual files stored in a FILESTREAM column cannot be opened directly from the NTFS file system. Streaming FILESTREAM data works only in the context of a SQL Server transaction.  
-  
- The <xref:System.Data.SqlTypes.SqlFileStream> class is derived from the <xref:System.IO.Stream> class, which represents an abstraction of a sequence of bytes from some arbitrary data source such as a file or a block of memory. You can read from a FILESTREAM by transferring data from a stream into a data structure such as an array of bytes. You can write to a FILESTREAM by transferring the data from a data structure into a stream. You can also seek within the stream, which allows you to query and modify data at the current position within the stream.  
-  
- For conceptual documentation and code examples, see [FILESTREAM Data](~/docs/framework/data/adonet/sql/filestream-data.md).  
-  
- For documentation about setting up and configuring FILESTREAM data on SQL Server,  see [Designing and Implementing FILESTREAM Storage](http://go.microsoft.com/fwlink/?LinkId=121499) in SQL Server 2008 Books Online.  
-  
+ 
+The <xref:System.Data.SqlTypes.SqlFileStream> class is derived from the <xref:System.IO.Stream> class, which represents an abstraction of a sequence of bytes from some arbitrary data source such as a file or a block of memory. You can read from a FILESTREAM by transferring data from a stream into a data structure such as an array of bytes. You can write to a FILESTREAM by transferring the data from a data structure into a stream. You can also seek within the stream, which allows you to query and modify data at the current position within the stream.  
+ 
+For conceptual documentation and code examples, see [FILESTREAM Data](~/docs/framework/data/adonet/sql/filestream-data.md).  
+ 
+For documentation about setting up and configuring FILESTREAM data on SQL Server,  see [Designing and Implementing FILESTREAM Storage](http://go.microsoft.com/fwlink/?LinkId=121499) in SQL Server 2008 Books Online.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlFileStream" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an exception is thrown, any open transactions should be rolled back. Otherwise, data loss can occur.  
-  
+If an exception is thrown, any open transactions should be rolled back. Otherwise, data loss can occur.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -115,10 +115,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlFileStream" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an exception is thrown, any open transactions should be rolled back. Otherwise, data loss can occur.  
-  
+If an exception is thrown, any open transactions should be rolled back. Otherwise, data loss can occur.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -168,10 +168,10 @@
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous read, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports reading.  
-  
+Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports reading.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Reading data is not supported on the stream.</exception>
@@ -206,10 +206,10 @@
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous write, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanWrite%2A> property to determine whether the current instance supports writing.  
-  
+Use the <xref:System.Data.SqlTypes.SqlFileStream.CanWrite%2A> property to determine whether the current instance supports writing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Writing data is not supported on the stream.</exception>
@@ -477,10 +477,10 @@
         <returns>The total number of bytes read into the buffer. This can be less than the number of bytes requested if that many bytes are not currently available, or zero (0) if the end of the stream has been reached.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports writing.  
-  
+Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports writing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support reading of data.</exception>
@@ -504,10 +504,10 @@
         <returns>The unsigned byte cast to an <see cref="T:System.Int32" />, or -1 if at the end of the stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports reading.  
-  
+Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports reading.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support reading of data.</exception>
@@ -580,10 +580,10 @@
         <summary>Sets the length of the current stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports reading.  
-  
+Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports reading.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support reading of data.</exception>
@@ -631,10 +631,10 @@
         <summary>Writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanWrite%2A> property to determine whether the current instance supports writing.  
-  
+Use the <xref:System.Data.SqlTypes.SqlFileStream.CanWrite%2A> property to determine whether the current instance supports writing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support writing of data.</exception>
@@ -660,10 +660,10 @@
         <summary>Writes a byte to the current position in the stream and advances the position within the stream by one byte.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanWrite%2A> property to determine whether the current instance supports writing.  
-  
+Use the <xref:System.Data.SqlTypes.SqlFileStream.CanWrite%2A> property to determine whether the current instance supports writing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support writing of data.</exception>
@@ -701,18 +701,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlFileStream" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table lists the code access security (CAS) permissions that all callers in the stack must have to use the `SqlFileStream` constructors.  
-  
+The following table lists the code access security (CAS) permissions that all callers in the stack must have to use the `SqlFileStream` constructors.  
+ 
 |File access|Permission|  
 |-----------------|----------------|  
 |Read|<xref:System.Security.Permissions.FileIOPermissionAccess>|  
 |Write|<xref:System.Security.Permissions.FileIOPermissionAccess>|  
 |ReadWrite|<xref:System.Security.Permissions.FileIOPermissionAccess> and <xref:System.Security.Permissions.FileIOPermissionAccess>|  
-  
- For more information about CAS, see [Code Access Security and ADO.NET](~/docs/framework/data/adonet/code-access-security.md).  
-  
+ 
+For more information about CAS, see [Code Access Security and ADO.NET](~/docs/framework/data/adonet/code-access-security.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

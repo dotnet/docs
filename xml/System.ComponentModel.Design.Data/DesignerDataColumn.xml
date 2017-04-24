@@ -14,10 +14,10 @@
     <summary>Represents a column of a table or view in the data store accessed through a data connection. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.Data.DesignerDataColumn> class is one of several types that represent the schema of a data store at design-time. These schema items are made available to controls by designers implementing the <xref:System.ComponentModel.Design.Data.IDataEnvironment> interface. Controls access schema objects by calling the <xref:System.ComponentModel.Design.Data.IDataEnvironment.GetConnectionSchema%2A> method of the interface.  
-  
+The <xref:System.ComponentModel.Design.Data.DesignerDataColumn> class is one of several types that represent the schema of a data store at design-time. These schema items are made available to controls by designers implementing the <xref:System.ComponentModel.Design.Data.IDataEnvironment> interface. Controls access schema objects by calling the <xref:System.ComponentModel.Design.Data.IDataEnvironment.GetConnectionSchema%2A> method of the interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> class with the specified name and data type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.%23ctor%2A> to set the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.Name%2A> and <xref:System.ComponentModel.Design.Data.DesignerDataColumn.DataType%2A> properties. All other properties are set to their default values.  
-  
+Use the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.%23ctor%2A> to set the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.Name%2A> and <xref:System.ComponentModel.Design.Data.DesignerDataColumn.DataType%2A> properties. All other properties are set to their default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> class with the specified name, data type, and default value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.%23ctor%2A> constructor to set the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.Name%2A>, <xref:System.ComponentModel.Design.Data.DesignerDataColumn.DataType%2A>, and <xref:System.ComponentModel.Design.Data.DesignerDataColumn.DefaultValue%2A> properties. All other properties are set to their default values.  
-  
+Use the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.%23ctor%2A> constructor to set the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.Name%2A>, <xref:System.ComponentModel.Design.Data.DesignerDataColumn.DataType%2A>, and <xref:System.ComponentModel.Design.Data.DesignerDataColumn.DefaultValue%2A> properties. All other properties are set to their default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> class with the specified values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.%23ctor%2A> constructor to set all the properties of a <xref:System.ComponentModel.Design.Data.DesignerDataColumn> object.  
-  
+Use the <xref:System.ComponentModel.Design.Data.DesignerDataColumn.%23ctor%2A> constructor to set all the properties of a <xref:System.ComponentModel.Design.Data.DesignerDataColumn> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -37,18 +37,18 @@
     <summary>Represents an abstract class for an expression, which evaluates to a <see langword="Boolean" />. This class must be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A condition is an expression, which evaluates to a `Boolean` value.  
-  
- Windows Workflow Foundation offers two condition types: <xref:System.Workflow.Activities.CodeCondition> and <xref:System.Workflow.Activities.Rules.RuleConditionReference>.  
-  
- You can create a custom condition type by deriving from this class and implementing the <xref:System.Workflow.ComponentModel.ActivityCondition.Evaluate%2A> method.  
-  
+ 
+A condition is an expression, which evaluates to a `Boolean` value.  
+ 
+Windows Workflow Foundation offers two condition types: <xref:System.Workflow.Activities.CodeCondition> and <xref:System.Workflow.Activities.Rules.RuleConditionReference>.  
+ 
+You can create a custom condition type by deriving from this class and implementing the <xref:System.Workflow.ComponentModel.ActivityCondition.Evaluate%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -78,10 +78,10 @@
         <value>A <see cref="T:System.TimeSpan" /> value that specifies the maximum duration the channel allows the other communicating party not to send any messages before faulting the channel. The default is 00:10:00.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Activity on a channel is defined as receiving an application or infrastructure message. This property controls the maximum amount of time to keep an inactive session alive. If there is a longer time with no activity, the session is terminated by the infrastructure and the channel faults.  
-  
+Activity on a channel is defined as receiving an application or infrastructure message. This property controls the maximum amount of time to keep an inactive session alive. If there is a longer time with no activity, the session is terminated by the infrastructure and the channel faults.  
+ 
  ]]></format>
         </remarks>
       </Docs>

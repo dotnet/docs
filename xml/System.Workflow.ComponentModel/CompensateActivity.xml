@@ -35,14 +35,14 @@
     <summary>Triggers the compensation of a completed child <see cref="T:System.Workflow.ComponentModel.Activity" /> that implements the <see cref="T:System.Workflow.ComponentModel.ICompensatableActivity" /> interface. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Any <xref:System.Workflow.ComponentModel.Activity> that implements <xref:System.Workflow.ComponentModel.ICompensatableActivity> is compensateable. A compensatable activity is a valid target of a <xref:System.Workflow.ComponentModel.CompensateActivity>, as long as that activity is a child <xref:System.Workflow.ComponentModel.Activity> of the <xref:System.Workflow.ComponentModel.CompositeActivity> associated with the <xref:System.Workflow.ComponentModel.CompensateActivity>.  
-  
+ 
+Any <xref:System.Workflow.ComponentModel.Activity> that implements <xref:System.Workflow.ComponentModel.ICompensatableActivity> is compensateable. A compensatable activity is a valid target of a <xref:System.Workflow.ComponentModel.CompensateActivity>, as long as that activity is a child <xref:System.Workflow.ComponentModel.Activity> of the <xref:System.Workflow.ComponentModel.CompositeActivity> associated with the <xref:System.Workflow.ComponentModel.CompensateActivity>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,13 +61,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompensateActivity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates creating a <xref:System.Workflow.ComponentModel.CompensateActivity> object.  This example is from the Compensation SDK sample.  For more information, see [Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
-  
- [!code-csharp[WF_Samples#144](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#144)]
- [!code-vb[WF_Samples#144](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#144)]  
-  
+The following example demonstrates creating a <xref:System.Workflow.ComponentModel.CompensateActivity> object.  This example is from the Compensation SDK sample.  For more information, see [Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+ 
+[!code-csharp[WF_Samples#144](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#144)]
+[!code-vb[WF_Samples#144](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#144)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,13 +184,13 @@
         <value>A string that contains the name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> to compensate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates accessing the `TargetActivityName` property. This sample is from the Compensation SDK sample. For more information, see [Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
-  
- [!code-csharp[WF_Samples#149](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#149)]
- [!code-vb[WF_Samples#149](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#149)]  
-  
+The following example demonstrates accessing the `TargetActivityName` property. This sample is from the Compensation SDK sample. For more information, see [Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+ 
+[!code-csharp[WF_Samples#149](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#149)]
+[!code-vb[WF_Samples#149](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#149)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,10 +211,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.ComponentModel.CompensateActivity.TargetActivityName" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

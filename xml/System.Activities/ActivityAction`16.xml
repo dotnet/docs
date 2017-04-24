@@ -48,12 +48,12 @@
     <summary>Defines an activity delegate that has sixteen in arguments and does not return a value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An activity delegate allows a developer to define the required signature of an activity that will be specified by a third party.  
-  
- There are multiple generic versions of this type that take from 1 to 16 arguments for the activity that is called.  There are also **ActivityFunc** types for activity delegates that return values.  
-  
+An activity delegate allows a developer to define the required signature of an activity that will be specified by a third party.  
+ 
+There are multiple generic versions of this type that take from 1 to 16 arguments for the activity that is called.  There are also **ActivityFunc** types for activity delegates that return values.  
+ 
  ]]></format>
     </remarks>
   </Docs>

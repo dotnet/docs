@@ -23,12 +23,12 @@
     <summary>Serves as the base class for classes that enable the server to gather information about the capabilities of the browser that made the current request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpBrowserCapabilitiesBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpBrowserCapabilities> class. The <xref:System.Web.HttpBrowserCapabilitiesBase> class enables you to create derived classes that are like the <xref:System.Web.HttpBrowserCapabilities> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
-  
- The <xref:System.Web.HttpBrowserCapabilitiesWrapper> class derives from the <xref:System.Web.HttpBrowserCapabilitiesBase> class. The <xref:System.Web.HttpBrowserCapabilitiesWrapper> class serves as a wrapper for the <xref:System.Web.HttpBrowserCapabilities> class. At run time, you typically use an instance of the <xref:System.Web.HttpBrowserCapabilitiesWrapper> class to call members of the <xref:System.Web.HttpBrowserCapabilities> object.  
-  
+The <xref:System.Web.HttpBrowserCapabilitiesBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpBrowserCapabilities> class. The <xref:System.Web.HttpBrowserCapabilitiesBase> class enables you to create derived classes that are like the <xref:System.Web.HttpBrowserCapabilities> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
+ 
+The <xref:System.Web.HttpBrowserCapabilitiesWrapper> class derives from the <xref:System.Web.HttpBrowserCapabilitiesBase> class. The <xref:System.Web.HttpBrowserCapabilitiesWrapper> class serves as a wrapper for the <xref:System.Web.HttpBrowserCapabilities> class. At run time, you typically use an instance of the <xref:System.Web.HttpBrowserCapabilitiesWrapper> class to call members of the <xref:System.Web.HttpBrowserCapabilities> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -966,10 +966,10 @@
         <value>The version of JScript that the browser supports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For version number of ECMAScript supported by the browser, see <xref:System.Web.HttpBrowserCapabilitiesBase.EcmaScriptVersion%2A>.  
-  
+For version number of ECMAScript supported by the browser, see <xref:System.Web.HttpBrowserCapabilitiesBase.EcmaScriptVersion%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>

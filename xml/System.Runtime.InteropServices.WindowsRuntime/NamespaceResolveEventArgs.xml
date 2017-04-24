@@ -98,10 +98,10 @@
         <value>A collection of assemblies that define the requested namespace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event handler adds to this collection all assemblies that define the namespace that is specified by the <xref:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.NamespaceName%2A> property.  
-  
+The event handler adds to this collection all assemblies that define the namespace that is specified by the <xref:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.NamespaceName%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

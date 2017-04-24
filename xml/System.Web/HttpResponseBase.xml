@@ -19,12 +19,12 @@
     <summary>Represents the base class for classes that provides HTTP-response information from an ASP.NET operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpResponseBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpResponse> class. The <xref:System.Web.HttpResponseBase> class enables you to create derived classes that are like the <xref:System.Web.HttpResponse> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members that have customized behavior that fulfills the scenario you are testing.  
-  
- The <xref:System.Web.HttpResponseWrapper> class derives from the <xref:System.Web.HttpResponseBase> class. The <xref:System.Web.HttpResponseWrapper> class serves as a wrapper for the <xref:System.Web.HttpResponse> class. At run time, you typically use an instance of the <xref:System.Web.HttpResponseWrapper> class to call members of the <xref:System.Web.HttpResponse> object.  
-  
+The <xref:System.Web.HttpResponseBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpResponse> class. The <xref:System.Web.HttpResponseBase> class enables you to create derived classes that are like the <xref:System.Web.HttpResponse> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members that have customized behavior that fulfills the scenario you are testing.  
+ 
+The <xref:System.Web.HttpResponseWrapper> class derives from the <xref:System.Web.HttpResponseBase> class. The <xref:System.Web.HttpResponseWrapper> class serves as a wrapper for the <xref:System.Web.HttpResponse> class. At run time, you typically use an instance of the <xref:System.Web.HttpResponseWrapper> class to call members of the <xref:System.Web.HttpResponse> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -251,20 +251,20 @@
         <returns>Returns  an<see cref="T:System.Web.ISubscriptionToken" /> object that represents the subscription to the OnSendingHeaders pseudo event..</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The pseudo event OnSendingHeaders differs from the IHttpModule-level pipeline event in that it is a per-request subscription rather than a per-application subscription. The intent is that the callback may modify the response status code or may set a response cookie or header. Other usage notes and caveats:  
-  
+The pseudo event OnSendingHeaders differs from the IHttpModule-level pipeline event in that it is a per-request subscription rather than a per-application subscription. The intent is that the callback may modify the response status code or may set a response cookie or header. Other usage notes and caveats:  
+ 
 -   This method is effective only when IIS runs in integrated pipeline mode pipeline and only if response headers haven't yet been sent for the current request.  
-  
+ 
 -   The ASP.NET runtime does not guarantee anything about the thread that the callback is invoked on. For example, the callback may be invoked synchronously in a background thread if a background flush is being performed. <xref:System.Web.HttpContext.Current%2A> is not guaranteed to be available in such a thread.  
-  
+ 
 -   The callback must not call any method that manipulates the response entity body or that results in a flush. For example, the callback must not call <xref:System.Web.HttpResponseBase.Redirect%2A>, as that method may manipulate the response entity body.  
-  
+ 
 -   The callback must contain only short-running synchronous code. Attempting to invoke an asynchronous operation or wait on such an operation could result in a deadlock.  
-  
+ 
 -   The callback must not throw an exception; otherwise behavior is undefined.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,10 +424,10 @@
           <see langword="true" /> if the output is buffered; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpResponseBase.Buffer%2A> property of the <xref:System.Web.HttpResponseBase> class has been deprecated in favor of the <xref:System.Web.HttpResponseBase.BufferOutput%2A> property and is provided only for compatibility with earlier versions of ASP.  
-  
+The <xref:System.Web.HttpResponseBase.Buffer%2A> property of the <xref:System.Web.HttpResponseBase> class has been deprecated in favor of the <xref:System.Web.HttpResponseBase.BufferOutput%2A> property and is provided only for compatibility with earlier versions of ASP.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -584,10 +584,10 @@
         <value>The <see cref="T:System.Threading.CancellationToken" /> object that is tripped when the client disconnects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Web.HttpResponse.ClientDisconnectedToken%2A?displayProperty=fullName>.  
-  
+For more information, see <xref:System.Web.HttpResponse.ClientDisconnectedToken%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -704,10 +704,10 @@
         <summary>Disables IIS user-mode caching for this response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.DisableUserCache%2A?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.DisableUserCache%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1026,10 +1026,10 @@
         <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](http://http2.github.io/http2-spec/#PushResources).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- PushPromise is non-deterministic and applications shouldn't have logic that depends on it. Its only purpose is performance advantage in some cases. There are many conditions (protocol and implementation) that may cause to ignore the push requests completely. The expectation is based on fire-and-forget.  
-  
+PushPromise is non-deterministic and applications shouldn't have logic that depends on it. Its only purpose is performance advantage in some cases. There are many conditions (protocol and implementation) that may cause to ignore the push requests completely. The expectation is based on fire-and-forget.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1058,10 +1058,10 @@
         <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](http://http2.github.io/http2-spec/#PushResources).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- PushPromise is non-deterministic and applications shouldn't have logic that depends on it. Its only purpose is performance advantage in some cases. There are many conditions (protocol and implementation) that may cause to ignore the push requests completely. The expectation is based on fire-and-forget.  
-  
+PushPromise is non-deterministic and applications shouldn't have logic that depends on it. Its only purpose is performance advantage in some cases. There are many conditions (protocol and implementation) that may cause to ignore the push requests completely. The expectation is based on fire-and-forget.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1152,12 +1152,12 @@
         <summary>Performs a permanent redirect from the requested URL to the specified URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpResponseBase.RedirectPermanent%28System.String%29> method overload provides a 301 HTTP status code in the response and includes the URL to redirect the request to. A 301 HTTP status code is a standard code in an HTTP response. It indicates that a permanent redirect exists, and it provides the redirect location.  
-  
- Calling the <xref:System.Web.HttpResponseBase.RedirectPermanent%28System.String%29> method terminates the rest of the response.  
-  
+The <xref:System.Web.HttpResponseBase.RedirectPermanent%28System.String%29> method overload provides a 301 HTTP status code in the response and includes the URL to redirect the request to. A 301 HTTP status code is a standard code in an HTTP response. It indicates that a permanent redirect exists, and it provides the redirect location.  
+ 
+Calling the <xref:System.Web.HttpResponseBase.RedirectPermanent%28System.String%29> method terminates the rest of the response.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1186,10 +1186,10 @@
         <summary>Performs a permanent redirect from the requested URL to the specified URL, and provides the option to complete the response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpResponseBase.RedirectPermanent%28System.String%2CSystem.Boolean%29> overload method provides a 301 HTTP status code in the response and includes the URL to redirect the request to. This overload also provides the option to specify whether to terminate or to complete the response after the redirect has been performed. A 301 HTTP status code is a standard code in an HTTP response. It indicates that a permanent redirect exists, and it provides the redirect location.  
-  
+The <xref:System.Web.HttpResponseBase.RedirectPermanent%28System.String%2CSystem.Boolean%29> overload method provides a 301 HTTP status code in the response and includes the URL to redirect the request to. This overload also provides the option to specify whether to terminate or to complete the response after the redirect has been performed. A 301 HTTP status code is a standard code in an HTTP response. It indicates that a permanent redirect exists, and it provides the redirect location.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1215,10 +1215,10 @@
         <summary>Redirects the request to a new URL by using route parameter values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Object%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Object%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1244,10 +1244,10 @@
         <summary>Redirects the request to a new URL by using a route name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1273,10 +1273,10 @@
         <summary>Redirects the request to a new URL by using route parameter values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1304,10 +1304,10 @@
         <summary>Redirects the request to a new URL by using route parameter values and a route name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Object%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Object%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1335,10 +1335,10 @@
         <summary>Redirects the request to a new URL by using route parameter values and a route name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1364,10 +1364,10 @@
         <summary>Performs a permanent redirection from the requested URL to a new URL by using route parameter values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Object%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Object%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1393,10 +1393,10 @@
         <summary>Performs a permanent redirection from the requested URL to a new URL by using a route name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1422,10 +1422,10 @@
         <summary>Performs a permanent redirection from the requested URL to a new URL by using route parameter values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1453,10 +1453,10 @@
         <summary>Performs a permanent redirection from the requested URL to a new URL by using the route parameter values and the name of the route that correspond to the new URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Object%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Object%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1484,10 +1484,10 @@
         <summary>Performs a permanent redirection from the requested URL to a new URL by using route parameter values and a route name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1537,10 +1537,10 @@
         <summary>Uses the specified output-cache provider to remove all output-cache artifacts that are associated with the specified path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to remove output-cache items that are associated with the custom output-cache providers that are specified in the Web site configuration file. To remove output-cache items that are associated with the default output-cache provider, call the <xref:System.Web.HttpResponseBase.RemoveOutputCacheItem%28System.String%29> method overload.  
-  
+Call this method to remove output-cache items that are associated with the custom output-cache providers that are specified in the Web site configuration file. To remove output-cache items that are associated with the default output-cache provider, call the <xref:System.Web.HttpResponseBase.RemoveOutputCacheItem%28System.String%29> method overload.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -1702,12 +1702,12 @@
         <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
-  
- Use caution when suppressing the default `Cache-Control: private` header, as proxies and other intermediaries may treat responses without this header as cacheable by default. This treatment can lead to the inadvertent caching of sensitive information. See [RFC 2616, Sec. 13.4](http://tools.ietf.org/html/rfc2616) for more information.  
-  
+By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
+ 
+Use caution when suppressing the default `Cache-Control: private` header, as proxies and other intermediaries may treat responses without this header as cacheable by default. This treatment can lead to the inadvertent caching of sensitive information. See [RFC 2616, Sec. 13.4](http://tools.ietf.org/html/rfc2616) for more information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1730,10 +1730,10 @@
           <see langword="true" /> if forms authentication redirection should be suppressed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.SuppressFormsAuthenticationRedirect%2A?displayProperty=fullName>.  
-  
+For information about this member, see <xref:System.Web.HttpResponse.SuppressFormsAuthenticationRedirect%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

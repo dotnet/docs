@@ -18,12 +18,12 @@
     <summary>Represents a collection of integers in a <see cref="T:System.Windows.Forms.ListBox" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ListBox.IntegerCollection> is a sorted collection to which items are appended by using the <xref:System.Windows.Forms.ListBox.IntegerCollection.Add%2A> and <xref:System.Windows.Forms.ListBox.IntegerCollection.AddRange%2A> methods. Duplicate values are removed.  
-  
- The <xref:System.Windows.Forms.ListBox.IntegerCollection> is used mainly by the <xref:System.Windows.Forms.ListBox.CustomTabOffsets%2A> property.  
-  
+<xref:System.Windows.Forms.ListBox.IntegerCollection> is a sorted collection to which items are appended by using the <xref:System.Windows.Forms.ListBox.IntegerCollection.Add%2A> and <xref:System.Windows.Forms.ListBox.IntegerCollection.AddRange%2A> methods. Duplicate values are removed.  
+ 
+The <xref:System.Windows.Forms.ListBox.IntegerCollection> is used mainly by the <xref:System.Windows.Forms.ListBox.CustomTabOffsets%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of the <xref:System.Windows.Forms.ListBox.IntegerCollection> class without associating it with a <xref:System.Windows.Forms.ListBox> control.  
-  
+You cannot create an instance of the <xref:System.Windows.Forms.ListBox.IntegerCollection> class without associating it with a <xref:System.Windows.Forms.ListBox> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <summary>Adds an array of integers to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array of integers is appended to the collection, and duplicates are removed from the collection.  
-  
+The array of integers is appended to the collection, and duplicates are removed from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <summary>Adds the contents of an existing <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" /> to another collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contents of the existing <xref:System.Windows.Forms.ListBox.IntegerCollection> are appended to the current collection, and duplicates are removed from the combined collection.  
-  
+The contents of the existing <xref:System.Windows.Forms.ListBox.IntegerCollection> are appended to the current collection, and duplicates are removed from the combined collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
           <see langword="true" /> if the specified integer is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Contains%2A> method to determine whether an integer is a member of the <xref:System.Windows.Forms.ListBox.IntegerCollection>. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.ListBox.IntegerCollection.IndexOf%2A> method to determine where the item is located within the collection.  
-  
+Use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Contains%2A> method to determine whether an integer is a member of the <xref:System.Windows.Forms.ListBox.IntegerCollection>. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.ListBox.IntegerCollection.IndexOf%2A> method to determine where the item is located within the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <summary>Copies the entire <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" /> into an existing array of integers at a specified location within the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ListBox.IntegerCollection.CopyTo%2A> method to combine the integers from multiple collections into a single array. You can then use this array to populate the contents of another <xref:System.Windows.Forms.ListBox> control using the <xref:System.Windows.Forms.ListBox.IntegerCollection.AddRange%2A> method.  
-  
+Use the <xref:System.Windows.Forms.ListBox.IntegerCollection.CopyTo%2A> method to combine the integers from multiple collections into a single array. You can then use this array to populate the contents of another <xref:System.Windows.Forms.ListBox> control using the <xref:System.Windows.Forms.ListBox.IntegerCollection.AddRange%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <value>The number of selected items in the <see cref="T:System.Windows.Forms.ListBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Count%2A> property to determine the number of selected items in the <xref:System.Windows.Forms.ListBox.IntegerCollection>. You can then use this value when you are looping through the items and you need to provide a number of iterations to perform the loop.  
-  
+Use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Count%2A> property to determine the number of selected items in the <xref:System.Windows.Forms.ListBox.IntegerCollection>. You can then use this value when you are looping through the items and you need to provide a number of iterations to perform the loop.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
         <returns>The zero-based index of the integer in the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />; otherwise, negative one (-1).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ListBox.IntegerCollection.IndexOf%2A> method to determine where an item is located within the collection. To determine whether an item is located within the collection before calling this method, use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Contains%2A> method.  
-  
+Use the <xref:System.Windows.Forms.ListBox.IntegerCollection.IndexOf%2A> method to determine where an item is located within the collection. To determine whether an item is located within the collection before calling this method, use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Contains%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,12 +311,12 @@
         <summary>Removes the specified integer from the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you remove an integer from the <xref:System.Windows.Forms.ListBox.IntegerCollection>, the indexes change for subsequent integers in the collection. All information about the removed integer is deleted. You can use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Remove%2A> method to remove a specific item from the list by specifying the actual item to remove from the list. To specify the index of the integer to remove instead of the integer itself, use the <xref:System.Windows.Forms.ListBox.IntegerCollection.RemoveAt%2A> method.  
-  
- If the integer is not in the <xref:System.Windows.Forms.ListBox.IntegerCollection>, this method does nothing.  
-  
+When you remove an integer from the <xref:System.Windows.Forms.ListBox.IntegerCollection>, the indexes change for subsequent integers in the collection. All information about the removed integer is deleted. You can use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Remove%2A> method to remove a specific item from the list by specifying the actual item to remove from the list. To specify the index of the integer to remove instead of the integer itself, use the <xref:System.Windows.Forms.ListBox.IntegerCollection.RemoveAt%2A> method.  
+ 
+If the integer is not in the <xref:System.Windows.Forms.ListBox.IntegerCollection>, this method does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -341,10 +341,10 @@
         <summary>Removes the integer at the specified index from the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you remove an integer from the <xref:System.Windows.Forms.ListBox.IntegerCollection>, the indexes change for subsequent integers in the collection. All information about the removed integer is deleted. You can use the <xref:System.Windows.Forms.ListBox.IntegerCollection.RemoveAt%2A> method to remove a specific integer from the list by specifying the index of the integer to remove from the list. To specify the item to remove instead of the index to the item, use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Remove%2A> method.  
-  
+When you remove an integer from the <xref:System.Windows.Forms.ListBox.IntegerCollection>, the indexes change for subsequent integers in the collection. All information about the removed integer is deleted. You can use the <xref:System.Windows.Forms.ListBox.IntegerCollection.RemoveAt%2A> method to remove a specific integer from the list by specifying the index of the integer to remove from the list. To specify the item to remove instead of the index to the item, use the <xref:System.Windows.Forms.ListBox.IntegerCollection.Remove%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,10 +367,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -392,10 +392,10 @@
         <value>The object used to synchronize to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,14 +418,14 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates an enumerator that contains a snapshot of the collection. You can change the collection by changing the enumerator; however, multiple enumerators can simultaneously access the same collection. Changing the collection (either directly or through another enumerator) can thus cause <xref:System.Collections.IEnumerator.Current%2A> or <xref:System.Collections.IEnumerator.MoveNext%2A> to throw an exception.  
-  
- Two enumerators created from the same collection at the same time can contain different snapshots.  
-  
- Removing objects from the enumerator also removes them from the collection.  
-  
+This method creates an enumerator that contains a snapshot of the collection. You can change the collection by changing the enumerator; however, multiple enumerators can simultaneously access the same collection. Changing the collection (either directly or through another enumerator) can thus cause <xref:System.Collections.IEnumerator.Current%2A> or <xref:System.Collections.IEnumerator.MoveNext%2A> to throw an exception.  
+ 
+Two enumerators created from the same collection at the same time can contain different snapshots.  
+ 
+Removing objects from the enumerator also removes them from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,10 +451,10 @@
         <returns>The index at which the integer was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -481,10 +481,10 @@
         <summary>Clears all the tab stops from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -511,10 +511,10 @@
           <see langword="true" /> if item is an integer located in the IntegerCollection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,10 +540,10 @@
         <returns>The zero-based index of item if it was found in the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -570,10 +570,10 @@
         <summary>Inserts an item into the collection at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -597,10 +597,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -623,10 +623,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -652,10 +652,10 @@
         <value>The tab stop that is stored at the specified location in the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The object is not an integer.</exception>
@@ -681,10 +681,10 @@
         <summary>Removes the first occurrence of an item from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -710,10 +710,10 @@
         <summary>Removes the item at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.IntegerCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>

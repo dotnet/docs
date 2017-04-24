@@ -23,10 +23,10 @@
     <summary>Contains a set of <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- <xref:System.Security.Cryptography.CryptographicAttributeObject>  
-  
+<xref:System.Security.Cryptography.CryptographicAttributeObject>  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -132,10 +132,10 @@
           <see langword="true" /> if the method returns the zero-based index of the added item; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- <xref:System.Security.Cryptography.CryptographicAttributeObjectCollection.Remove%2A>  
-  
+<xref:System.Security.Cryptography.CryptographicAttributeObjectCollection.Remove%2A>  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -243,10 +243,10 @@
           <see langword="true" /> if access to the collection is thread safe; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `false`, which means that the collection is not thread safe.  
-  
+This property always returns `false`, which means that the collection is not thread safe.  
+ 
  ]]></format>
         </remarks>
       </Docs>

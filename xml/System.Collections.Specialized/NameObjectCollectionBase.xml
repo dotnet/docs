@@ -33,34 +33,34 @@
     <summary>Provides the <see langword="abstract" /> base class for a collection of associated <see cref="T:System.String" /> keys and <see cref="T:System.Object" /> values that can be accessed either with the key or with the index.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The underlying structure for this class is a hash table.  
-  
- Each element is a key/value pair.  
-  
- The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required through reallocation.  
-  
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
-  
- The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
-  
- In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
-  
- `null` is allowed as a key or as a value.  
-  
+The underlying structure for this class is a hash table.  
+ 
+Each element is a key/value pair.  
+ 
+The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required through reallocation.  
+ 
+The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
+ 
+The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
+ 
+In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
+ 
+`null` is allowed as a key or as a value.  
+ 
 > [!CAUTION]
 >  The <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> method does not distinguish between `null` which is returned because the specified key is not found and `null` which is returned because the value associated with the key is `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to implement and use the <xref:System.Collections.Specialized.NameObjectCollectionBase> class.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CPP/nameobjectcollectionbase.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CS/nameobjectcollectionbase.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/VB/nameobjectcollectionbase.vb#1)]  
-  
+The following code example shows how to implement and use the <xref:System.Collections.Specialized.NameObjectCollectionBase> class.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CPP/nameobjectcollectionbase.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CS/nameobjectcollectionbase.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/VB/nameobjectcollectionbase.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
@@ -93,18 +93,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> class that is empty.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
-  
- If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
-  
- The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
-  
- This constructor is an O(1) operation.  
-  
+The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
+ 
+If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
+ 
+The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
+ 
+This constructor is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,16 +135,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> class that is empty, has the default initial capacity, and uses the specified <see cref="T:System.Collections.IEqualityComparer" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> object is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
-  
- If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- The <xref:System.Collections.IEqualityComparer> object combines the comparer and the hash code provider.  The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  The comparer determines whether two keys are equal.  
-  
- This constructor is an O(1) operation.  
-  
+The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> object is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
+ 
+If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+The <xref:System.Collections.IEqualityComparer> object combines the comparer and the hash code provider.  The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  The comparer determines whether two keys are equal.  
+ 
+This constructor is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,18 +175,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> class that is empty, has the specified initial capacity, and uses the default hash code provider and the default comparer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
-  
- If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
-  
- The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
-  
- This constructor is an O(`n`) operation, where `n` is `capacity`.  
-  
+The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
+ 
+If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
+ 
+The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
+ 
+This constructor is an O(`n`) operation, where `n` is `capacity`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -222,18 +222,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> class that is empty, has the default initial capacity, and uses the specified hash code provider and the specified comparer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
-  
- If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
-  
- The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
-  
- This constructor is an O(1) operation.  
-  
+The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
+ 
+If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
+ 
+The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
+ 
+This constructor is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,16 +266,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> class that is empty, has the specified initial capacity, and uses the specified <see cref="T:System.Collections.IEqualityComparer" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> object is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
-  
- If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- The <xref:System.Collections.IEqualityComparer> object combines the comparer and the hash code provider.  The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  The comparer determines whether two keys are equal.  
-  
- This constructor is an O(`n`) operation, where `n` is the `capacity` parameter.  
-  
+The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> object is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
+ 
+If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+The <xref:System.Collections.IEqualityComparer> object combines the comparer and the hash code provider.  The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  The comparer determines whether two keys are equal.  
+ 
+This constructor is an O(`n`) operation, where `n` is the `capacity` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -306,10 +306,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> class that is serializable and uses the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is an O(1) operation.  
-  
+This constructor is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,18 +345,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> class that is empty, has the specified initial capacity and uses the specified hash code provider and the specified comparer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
-  
- If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
-  
- The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
-  
- This constructor is an O(`n`) operation, where `n` is `capacity`.  
-  
+The capacity of a <xref:System.Collections.Specialized.NameObjectCollectionBase> is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can hold. As elements are added to a <xref:System.Collections.Specialized.NameObjectCollectionBase>, the capacity is automatically increased as required by reallocating the internal array.  
+ 
+If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameObjectCollectionBase> instance. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
+ 
+The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
+ 
+This constructor is an O(`n`) operation, where `n` is `capacity`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -394,21 +394,21 @@
         <summary>Adds an entry with the specified key and value into the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> already equals the capacity, the capacity of the <xref:System.Collections.Specialized.NameObjectCollectionBase> is increased by automatically reallocating the internal array, and the existing elements are copied to the new array before the new element is added.  
+If <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> already equals the capacity, the capacity of the <xref:System.Collections.Specialized.NameObjectCollectionBase> is increased by automatically reallocating the internal array, and the existing elements are copied to the new array before the new element is added.  
+ 
+If <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> is less than the capacity, this method is an O(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+ 
   
- If <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> is less than the capacity, this method is an O(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseAdd%2A> to create a new <xref:System.Collections.Specialized.NameObjectCollectionBase> with elements from an <xref:System.Collections.IDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseAdd#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseAdd/CPP/nocb_baseadd.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseAdd#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseAdd/CS/nocb_baseadd.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseAdd#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseAdd/VB/nocb_baseadd.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseAdd%2A> to create a new <xref:System.Collections.Specialized.NameObjectCollectionBase> with elements from an <xref:System.Collections.IDictionary>.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseAdd#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseAdd/CPP/nocb_baseadd.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseAdd#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseAdd/CS/nocb_baseadd.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseAdd#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseAdd/VB/nocb_baseadd.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -440,21 +440,21 @@
         <summary>Removes all entries from the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+<xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+ 
+This method is an O(1) operation.  
+ 
   
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseClear%2A> to remove all elements from a <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseClear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseClear/CPP/nocb_baseclear.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseClear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseClear/CS/nocb_baseclear.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseClear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseClear/VB/nocb_baseclear.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseClear%2A> to remove all elements from a <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseClear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseClear/CPP/nocb_baseclear.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseClear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseClear/CS/nocb_baseclear.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseClear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseClear/VB/nocb_baseclear.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -490,19 +490,19 @@
         <returns>An <see cref="T:System.Object" /> that represents the value of the entry at the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(1) operation.  
+This method is an O(1) operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetKey%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> to get specific keys and values.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CPP/nocb_baseget.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CS/nocb_baseget.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/VB/nocb_baseget.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetKey%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> to get specific keys and values.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CPP/nocb_baseget.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CS/nocb_baseget.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/VB/nocb_baseget.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -539,24 +539,24 @@
         <returns>An <see cref="T:System.Object" /> that represents the value of the first entry with the specified key, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the collection contains multiple entries with the specified key, this method returns only the first entry. To get the values of subsequent entries with the same key, use the enumerator to iterate through the collection and compare the keys.  
-  
+If the collection contains multiple entries with the specified key, this method returns only the first entry. To get the values of subsequent entries with the same key, use the enumerator to iterate through the collection and compare the keys.  
+ 
 > [!CAUTION]
 >  This method returns `null` in the following cases: 1) if the specified key is not found; and 2) if the specified key is found and its associated value is `null`. This method does not distinguish between the two cases.  
+ 
+This method is an O(1) operation.  
+ 
   
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetKey%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> to get specific keys and values.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CPP/nocb_baseget.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CS/nocb_baseget.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/VB/nocb_baseget.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetKey%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> to get specific keys and values.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CPP/nocb_baseget.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CS/nocb_baseget.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/VB/nocb_baseget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -588,19 +588,19 @@
         <returns>A <see cref="T:System.String" /> array that contains all the keys in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllKeys%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues%2A> to get an array of the keys or an array of the values.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/CPP/nocb_basegetall.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/CS/nocb_basegetall.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/VB/nocb_basegetall.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllKeys%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues%2A> to get an array of the keys or an array of the values.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/CPP/nocb_basegetall.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/CS/nocb_basegetall.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/VB/nocb_basegetall.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -632,19 +632,19 @@
         <returns>An <see cref="T:System.Object" /> array that contains all the values in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllKeys%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues%2A> to get an array of the keys or an array of the values.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/CPP/nocb_basegetall.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/CS/nocb_basegetall.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/VB/nocb_basegetall.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllKeys%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues%2A> to get an array of the keys or an array of the values.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/CPP/nocb_basegetall.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/CS/nocb_basegetall.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGetAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGetAll/VB/nocb_basegetall.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -679,10 +679,10 @@
         <returns>An array of the specified type that contains all the values in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
-  
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -721,19 +721,19 @@
         <returns>A <see cref="T:System.String" /> that represents the key of the entry at the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(1) operation.  
+This method is an O(1) operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetKey%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> to get specific keys and values.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CPP/nocb_baseget.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CS/nocb_baseget.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/VB/nocb_baseget.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGetKey%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseGet%2A> to get specific keys and values.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CPP/nocb_baseget.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/CS/nocb_baseget.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseGet/VB/nocb_baseget.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -768,19 +768,19 @@
           <see langword="true" /> if the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance contains entries whose keys are not <see langword="null" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(1) operation.  
+This method is an O(1) operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys%2A> to determine if the collection contains keys that are not `null`.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys/CPP/nocb_basehaskeys.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys/CS/nocb_basehaskeys.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys/VB/nocb_basehaskeys.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys%2A> to determine if the collection contains keys that are not `null`.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys/CPP/nocb_basehaskeys.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys/CS/nocb_basehaskeys.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys/VB/nocb_basehaskeys.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -814,23 +814,23 @@
         <summary>Removes the entries with the specified key from the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Collections.Specialized.NameObjectCollectionBase> does not contain an element with the specified key, the <xref:System.Collections.Specialized.NameObjectCollectionBase> remains unchanged. No exception is thrown.  
+If the <xref:System.Collections.Specialized.NameObjectCollectionBase> does not contain an element with the specified key, the <xref:System.Collections.Specialized.NameObjectCollectionBase> remains unchanged. No exception is thrown.  
+ 
+In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+ 
   
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseRemove%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseRemoveAt%2A> to remove elements from a <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/CPP/nocb_baseremove.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/CS/nocb_baseremove.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/VB/nocb_baseremove.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseRemove%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseRemoveAt%2A> to remove elements from a <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/CPP/nocb_baseremove.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/CS/nocb_baseremove.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/VB/nocb_baseremove.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -865,21 +865,21 @@
         <summary>Removes the entry at the specified index of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
+In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+ 
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseRemove%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseRemoveAt%2A> to remove elements from a <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/CPP/nocb_baseremove.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/CS/nocb_baseremove.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/VB/nocb_baseremove.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseRemove%2A> and <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseRemoveAt%2A> to remove elements from a <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/CPP/nocb_baseremove.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/CS/nocb_baseremove.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseRemove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseRemove/VB/nocb_baseremove.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -918,19 +918,19 @@
         <summary>Sets the value of the entry at the specified index of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(1) operation.  
+This method is an O(1) operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseSet%2A> to set the value of a specific element.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/CPP/nocb_baseset.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/CS/nocb_baseset.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/VB/nocb_baseset.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseSet%2A> to set the value of a specific element.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/CPP/nocb_baseset.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/CS/nocb_baseset.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/VB/nocb_baseset.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -969,21 +969,21 @@
         <summary>Sets the value of the first entry with the specified key in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance, if found; otherwise, adds an entry with the specified key and value into the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the collection contains multiple entries with the specified key, this method sets only the first entry. To set the values of subsequent entries with the same key, use the enumerator to iterate through the collection and compare the keys.  
+If the collection contains multiple entries with the specified key, this method sets only the first entry. To set the values of subsequent entries with the same key, use the enumerator to iterate through the collection and compare the keys.  
+ 
+This method is an O(1) operation.  
+ 
   
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseSet%2A> to set the value of a specific element.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/CPP/nocb_baseset.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/CS/nocb_baseset.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/VB/nocb_baseset.vb#1)]  
-  
+The following code example uses <xref:System.Collections.Specialized.NameObjectCollectionBase.BaseSet%2A> to set the value of a specific element.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/CPP/nocb_baseset.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/CS/nocb_baseset.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.BaseSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.BaseSet/VB/nocb_baseset.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -1015,14 +1015,14 @@
         <value>The number of key/value pairs contained in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can store. <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> is the number of elements that are actually in the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
-  
- The capacity is always greater than or equal to <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>. If <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> exceeds the capacity while adding elements, the capacity is automatically increased by reallocating the internal array before copying the old elements and adding the new elements.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+The capacity is the number of elements that the <xref:System.Collections.Specialized.NameObjectCollectionBase> can store. <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> is the number of elements that are actually in the <xref:System.Collections.Specialized.NameObjectCollectionBase>.  
+ 
+The capacity is always greater than or equal to <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>. If <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A> exceeds the capacity while adding elements, the capacity is automatically increased by reallocating the internal array before copying the old elements and adding the new elements.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1054,26 +1054,26 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumerator returns the keys of the collection as strings.  
-  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- This method is an O(1) operation.  
-  
+This enumerator returns the keys of the collection as strings.  
+ 
+The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1105,10 +1105,10 @@
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
-  
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1143,23 +1143,23 @@
           <see langword="true" /> if the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+ 
+A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
   
- A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a read-only collection.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.IsReadOnly#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.IsReadOnly/CPP/nocb_isreadonly.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.IsReadOnly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.IsReadOnly/CS/nocb_isreadonly.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.IsReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.IsReadOnly/VB/nocb_isreadonly.vb#1)]  
-  
+The following code example creates a read-only collection.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.IsReadOnly#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.IsReadOnly/CPP/nocb_isreadonly.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.IsReadOnly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.IsReadOnly/CS/nocb_isreadonly.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.IsReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase.IsReadOnly/VB/nocb_isreadonly.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1190,10 +1190,10 @@
         <value>A <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> instance that contains all the keys in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Retrieving the value of this property is an O(1) operation.  
-  
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1223,12 +1223,12 @@
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and raises the deserialization event when the deserialization is complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- While the <xref:System.Collections.Specialized.NameObjectCollectionBase.OnDeserialization%2A> method is not visible to COM clients by default, inheriting the <xref:System.Collections.Specialized.NameObjectCollectionBase> class can expose it and can cause undesirable behavior in COM clients.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
-  
+While the <xref:System.Collections.Specialized.NameObjectCollectionBase.OnDeserialization%2A> method is not visible to COM clients by default, inheriting the <xref:System.Collections.Specialized.NameObjectCollectionBase> class can expose it and can cause undesirable behavior in COM clients.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object associated with the current <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> instance is invalid.</exception>
@@ -1265,16 +1265,16 @@
         <summary>Copies the entire <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified array must be of a compatible type.  
-  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
-  
- While the <xref:System.Collections.Specialized.NameObjectCollectionBase.System%23Collections%23ICollection%23CopyTo%2A> method is not visible to COM clients by default, inheriting the <xref:System.Collections.Specialized.NameObjectCollectionBase> class can expose it and can cause undesirable behavior in COM clients.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
-  
+The specified array must be of a compatible type.  
+ 
+This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ 
+While the <xref:System.Collections.Specialized.NameObjectCollectionBase.System%23Collections%23ICollection%23CopyTo%2A> method is not visible to COM clients by default, inheriting the <xref:System.Collections.Specialized.NameObjectCollectionBase> class can expose it and can cause undesirable behavior in COM clients.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1317,20 +1317,20 @@
           <see langword="true" /> if access to the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> object is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Collections.Specialized.NameObjectCollectionBase> object is not synchronized. Derived classes can provide a synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase> using the <xref:System.Collections.ICollection.SyncRoot%2A> property.  
-  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CPP/remarks.cpp#2)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CS/remarks.cs#2)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/VB/remarks.vb#2)]  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+A <xref:System.Collections.Specialized.NameObjectCollectionBase> object is not synchronized. Derived classes can provide a synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase> using the <xref:System.Collections.ICollection.SyncRoot%2A> property.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
+The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CPP/remarks.cpp#2)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CS/remarks.cs#2)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/VB/remarks.vb#2)]  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1361,20 +1361,20 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes can provide their own synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase> class using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> property of the <xref:System.Collections.Specialized.NameObjectCollectionBase> object, not directly on the <xref:System.Collections.Specialized.NameObjectCollectionBase> object. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.Specialized.NameObjectCollectionBase> object.  
-  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CPP/remarks.cpp#2)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CS/remarks.cs#2)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/VB/remarks.vb#2)]  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+Derived classes can provide their own synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase> class using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> property of the <xref:System.Collections.Specialized.NameObjectCollectionBase> object, not directly on the <xref:System.Collections.Specialized.NameObjectCollectionBase> object. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.Specialized.NameObjectCollectionBase> object.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
+The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CPP/remarks.cpp#2)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/CS/remarks.cs#2)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.NameObjectCollectionBase/VB/remarks.vb#2)]  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -26,30 +26,30 @@
     <summary>Provides the event data for creating fast <see cref="Overload:System.Diagnostics.Tracing.EventSource.WriteEvent" /> overloads by using the <see cref="M:System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" /> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventSource.EventData> structure.  
-  
+The following example shows how to use the <xref:System.Diagnostics.Tracing.EventSource.EventData> structure.  
+ 
 ```  
-  
+ 
 [NonEvent]  
 public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg4) {  
-    EventData* dataDesc = stackalloc EventProvider.EventData[4];  
-  
-    dataDesc[0].DataPointer = (IntPtr)(&arg1);  
-    dataDesc[0].Size = 4;  
-    dataDesc[1].DataPointer = (IntPtr)(&arg2);  
-    dataDesc[1].Size = 4;  
-    dataDesc[2].DataPointer = (IntPtr)(&arg3);  
-    dataDesc[2].Size = 4;  
-    dataDesc[3].DataPointer = (IntPtr)(&arg4);  
-    dataDesc[3].Size = 4;  
-  
-    WriteEventCore(eventId, 4, (IntPtr)dataDesc);  
+   EventData* dataDesc = stackalloc EventProvider.EventData[4];  
+ 
+   dataDesc[0].DataPointer = (IntPtr)(&arg1);  
+   dataDesc[0].Size = 4;  
+   dataDesc[1].DataPointer = (IntPtr)(&arg2);  
+   dataDesc[1].Size = 4;  
+   dataDesc[2].DataPointer = (IntPtr)(&arg3);  
+   dataDesc[2].Size = 4;  
+   dataDesc[3].DataPointer = (IntPtr)(&arg4);  
+   dataDesc[3].Size = 4;  
+ 
+   WriteEventCore(eventId, 4, (IntPtr)dataDesc);  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

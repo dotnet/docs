@@ -51,10 +51,10 @@
         <returns>The value of <see cref="P:System.Windows.Automation.AutomationProperties.Name" /> or <see cref="P:System.Windows.Automation.AutomationProperties.LabeledBy" /> if either is set; otherwise this method returns an empty string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name property can be thought of as the string of text that a user would use to explain which control is being referred to. It is important to have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
-  
+The name property can be thought of as the string of text that a user would use to explain which control is being referred to. It is important to have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
+ 
  ]]></format>
         </remarks>
       </Docs>

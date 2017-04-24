@@ -33,20 +33,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameters" /> class that can contain one <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some of the <xref:System.Drawing.Image.Save%2A> and <xref:System.Drawing.Image.SaveAdd%2A> methods receive an <xref:System.Drawing.Imaging.EncoderParameters> object as an argument. The <xref:System.Drawing.Image.GetEncoderParameterList%2A> method returns an <xref:System.Drawing.Imaging.EncoderParameters> object.  
+Some of the <xref:System.Drawing.Image.Save%2A> and <xref:System.Drawing.Image.SaveAdd%2A> methods receive an <xref:System.Drawing.Imaging.EncoderParameters> object as an argument. The <xref:System.Drawing.Image.GetEncoderParameterList%2A> method returns an <xref:System.Drawing.Imaging.EncoderParameters> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create and use a <xref:System.Drawing.Imaging.EncoderParameters> object. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
-  
- [!code-csharp[UsingImageEncodersDecoders#8](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#8)]
- [!code-vb[UsingImageEncodersDecoders#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#8)]  
+The following code example demonstrates how to create and use a <xref:System.Drawing.Imaging.EncoderParameters> object. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
+ 
+[!code-csharp[UsingImageEncodersDecoders#8](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#8)]
+[!code-vb[UsingImageEncodersDecoders#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#8)]  
 [!code-csharp[UsingImageEncodersDecoders#6](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#6)]
 [!code-vb[UsingImageEncodersDecoders#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#6)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <summary>Releases all resources used by this <see cref="T:System.Drawing.Imaging.EncoderParameters" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `Dispose` allows the resources used by this <xref:System.Drawing.Imaging.EncoderParameters> object to be reallocated for other purposes.  
-  
+Calling `Dispose` allows the resources used by this <xref:System.Drawing.Imaging.EncoderParameters> object to be reallocated for other purposes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -17,12 +17,12 @@
     <summary>Provides the basic functionality for a remoting activator class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Activators control and participate in the activation of marshal by reference objects. Some activators create contexts, whereas others create actual objects.  
-  
- Activators use the <xref:System.Runtime.Remoting.Activation.IActivator.NextActivator%2A> property to form a hierarchy that must be observed.  
-  
+Activators control and participate in the activation of marshal by reference objects. Some activators create contexts, whereas others create actual objects.  
+ 
+Activators use the <xref:System.Runtime.Remoting.Activation.IActivator.NextActivator%2A> property to form a hierarchy that must be observed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <value>The <see cref="T:System.Runtime.Remoting.Activation.ActivatorLevel" /> where this activator is active.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Activation.IActivator.Level%2A> is used to locate the right position in the chain when adding an activator.  
-  
+The <xref:System.Runtime.Remoting.Activation.IActivator.Level%2A> is used to locate the right position in the chain when adding an activator.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>

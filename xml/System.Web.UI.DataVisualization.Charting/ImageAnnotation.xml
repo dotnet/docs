@@ -52,10 +52,10 @@
         <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the alignment of the annotation image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to align a non-scaled image.  
-  
+This property is used to align a non-scaled image.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,12 +91,12 @@
         <value>The annotation type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This abstract property is used to get the name of each annotation type such as <xref:System.Web.UI.DataVisualization.Charting.LineAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.EllipseAnnotation>, and so forth.  
-  
- This property is for internal use.  
-  
+This abstract property is used to get the name of each annotation type such as <xref:System.Web.UI.DataVisualization.Charting.LineAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.EllipseAnnotation>, and so forth.  
+ 
+This property is for internal use.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the image annotation type.  
-  
+This property is not applicable to the image annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.GradientStyle" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the image annotation type.  
-  
+This property is not applicable to the image annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHatchStyle" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the image annotation type.  
-  
+This property is not applicable to the image annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,10 +255,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the image annotation type.  
-  
+This property is not applicable to the image annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -288,10 +288,10 @@
         <value>A <see cref="T:System.Drawing.Font" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the image annotation type.  
-  
+This property is not applicable to the image annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,10 +327,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the image annotation type.  
-  
+This property is not applicable to the image annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,10 +363,10 @@
         <value>A <see langword="string" /> value that represents the name of the annotation image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The image name can be a file name, a URL or a named image—that is, its name component—from the <xref:System.Web.UI.DataVisualization.Charting.NamedImagesCollection> class.  
-  
+The image name can be a file name, a URL or a named image—that is, its name component—from the <xref:System.Web.UI.DataVisualization.Charting.NamedImagesCollection> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the image annotation type.  
-  
+This property is not applicable to the image annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -493,10 +493,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartDashStyle" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the image annotation type.  
-  
+This property is not applicable to the image annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -526,10 +526,10 @@
         <value>An <see langword="integer" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the image annotation type.  
-  
+This property is not applicable to the image annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

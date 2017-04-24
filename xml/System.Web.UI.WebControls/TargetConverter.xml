@@ -14,10 +14,10 @@
     <summary>Converts a value that represents the location (target) in which to display the content resulting from a Web navigation to a string. This class also converts a string to a target value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TargetConverter> class creates a collection of values that can be used to specify the location in which to display content resulting from a Web navigation, such as the page navigated to when a <xref:System.Web.UI.WebControls.HyperLink> control is clicked. This collection is commonly used in a designer to display a list of values that can be used for the `Target` property of a navigation control, such as the <xref:System.Web.UI.WebControls.HyperLink> control.  
-  
+The <xref:System.Web.UI.WebControls.TargetConverter> class creates a collection of values that can be used to specify the location in which to display content resulting from a Web navigation, such as the page navigated to when a <xref:System.Web.UI.WebControls.HyperLink> control is clicked. This collection is commonly used in a designer to display a list of values that can be used for the `Target` property of a navigation control, such as the <xref:System.Web.UI.WebControls.HyperLink> control.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> containing a standard set of valid values, or <see langword="null" /> if the data type does not support a standard set of values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an internal-only class.  
-  
+This is an internal-only class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
           <see langword="true" /> if the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> returned from <see cref="M:System.Web.UI.WebControls.TargetConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> is an exhaustive list of possible values; <see langword="false" /> if other values are possible.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an internal-only class.  
-  
+This is an internal-only class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
           <see langword="true" /> if <see cref="M:System.Web.UI.WebControls.TargetConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> should be called to find a common set of values the object supports; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an internal-only class.  
-  
+This is an internal-only class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

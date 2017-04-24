@@ -32,10 +32,10 @@
     <summary>Provides standard facilities for creating and managing a type-safe, ordered collection of <see cref="T:System.Windows.Documents.TextElement" /> objects.  This is a generic collection for working with objects of a specified type that derives from <see cref="T:System.Windows.Documents.TextElement" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection supports zero-based indexing.  
-  
+This collection supports zero-based indexing.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -258,10 +258,10 @@
         <value>**true** if the collection is read-only; otherwise, **false**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Currently, this property always returns **false**.  
-  
+Currently, this property always returns **false**.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <returns>**true** if the specified item was found and removed; otherwise, **false**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns **false** if *item* is **null**.  
-  
+This method returns **false** if *item* is **null**.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,10 +19,10 @@
     <summary>Represents a configuration element that contains a collection of protocols.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProtocolCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.%23ctor%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.%23ctor%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -71,10 +71,10 @@
         <summary>Adds a configuration element to the <see cref="T:System.Web.Configuration.ProtocolCollection" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.Add%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.Add%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -97,10 +97,10 @@
         <value>The array that contains the collection keys.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.AllKeys%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.AllKeys%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -123,10 +123,10 @@
         <summary>Removes all configuration element objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.Clear%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.Clear%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -194,10 +194,10 @@
         <value>A <see cref="T:System.Web.Configuration.ProtocolElement" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.Item%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.Item%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -224,10 +224,10 @@
         <value>A <see cref="T:System.Web.Configuration.ProtocolElement" /> object that represents the value of the first entry with the specified key, if found; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.Item%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.Item%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -271,10 +271,10 @@
         <summary>Removes the <see cref="T:System.Web.Configuration.ProtocolElement" /> object that has the specified key from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.Remove%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.Remove%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -300,10 +300,10 @@
         <summary>Removes the specified <see cref="T:System.Web.Configuration.ProtocolElement" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.Remove%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.Remove%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -329,10 +329,10 @@
         <summary>Removes the <see cref="T:System.Web.Configuration.ProtocolElement" /> object at the specified index location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.RemoveAt%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.RemoveAt%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -347,10 +347,10 @@
         <summary>Gets the specified <see cref="T:System.Web.Configuration.ProtocolElement" /> collection item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.Item%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.Item%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,10 +364,10 @@
         <summary>Removes a <see cref="T:System.Web.Configuration.ProtocolElement" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ProtocolCollection.Remove%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Configuration.ProtocolCollection.Remove%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

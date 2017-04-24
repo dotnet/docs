@@ -27,12 +27,12 @@
     <summary>Specifies the levels of trace messages filtered by the source switch and event type filter.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source levels identify the <xref:System.Diagnostics.TraceEventType> events that are to be traced. The <xref:System.Diagnostics.SourceSwitch> class uses the <xref:System.Diagnostics.SourceLevels> enumeration to define the event level of the trace message to use for filtering messages to send to the trace listener.  
-  
- The <xref:System.Diagnostics.EventTypeFilter> class uses the <xref:System.Diagnostics.SourceLevels> enumeration to determine whether a trace listener should emit a trace.  
-  
+The source levels identify the <xref:System.Diagnostics.TraceEventType> events that are to be traced. The <xref:System.Diagnostics.SourceSwitch> class uses the <xref:System.Diagnostics.SourceLevels> enumeration to define the event level of the trace message to use for filtering messages to send to the trace listener.  
+ 
+The <xref:System.Diagnostics.EventTypeFilter> class uses the <xref:System.Diagnostics.SourceLevels> enumeration to determine whether a trace listener should emit a trace.  
+ 
  ]]></format>
     </remarks>
   </Docs>

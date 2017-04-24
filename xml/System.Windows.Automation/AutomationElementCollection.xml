@@ -18,10 +18,10 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Automation.AutomationElement" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Automation.AutomationElementCollection> is used as the return type for methods such as <xref:System.Windows.Automation.AutomationElement.FindAll%2A>. It is not intended to be used for application-defined collections, for which you should use a more generic class such as <xref:System.Collections.ArrayList>.  
-  
+<xref:System.Windows.Automation.AutomationElementCollection> is used as the return type for methods such as <xref:System.Windows.Automation.AutomationElement.FindAll%2A>. It is not intended to be used for application-defined collections, for which you should use a more generic class such as <xref:System.Collections.ArrayList>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,13 +48,13 @@
         <summary>Copies the collection's elements to an array, starting at the specified index in the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to copy an <xref:System.Windows.Automation.AutomationElementCollection> to an array of objects.  
-  
- [!code-csharp[UIAClient_snip#118](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#118)]
- [!code-vb[UIAClient_snip#118](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#118)]  
-  
+The following example shows how to copy an <xref:System.Windows.Automation.AutomationElementCollection> to an array of objects.  
+ 
+[!code-csharp[UIAClient_snip#118](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#118)]
+[!code-vb[UIAClient_snip#118](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#118)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,13 +81,13 @@
         <summary>Copies the collection's elements to a specialized array instance, starting at the specified index in the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to copy an <xref:System.Windows.Automation.AutomationElementCollection> to an array of <xref:System.Windows.Automation.AutomationElement> objects.  
-  
- [!code-csharp[UIAClient_snip#117](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#117)]
- [!code-vb[UIAClient_snip#117](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#117)]  
-  
+The following example shows how to copy an <xref:System.Windows.Automation.AutomationElementCollection> to an array of <xref:System.Windows.Automation.AutomationElement> objects.  
+ 
+[!code-csharp[UIAClient_snip#117](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#117)]
+[!code-vb[UIAClient_snip#117](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#117)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The destination array is not large enough, or <paramref name="index" /> is outside the bounds of the array.</exception>
@@ -110,13 +110,13 @@
         <value>The number of elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the <xref:System.Windows.Automation.AutomationElementCollection.Count%2A> property being used.  
-  
- [!code-csharp[UIAClient_snip#117](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#117)]
- [!code-vb[UIAClient_snip#117](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#117)]  
-  
+The following example shows the <xref:System.Windows.Automation.AutomationElementCollection.Count%2A> property being used.  
+ 
+[!code-csharp[UIAClient_snip#117](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#117)]
+[!code-vb[UIAClient_snip#117](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#117)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,10 +157,10 @@
         <value>Always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElementCollection> is not thread-safe.  
-  
+An <xref:System.Windows.Automation.AutomationElementCollection> is not thread-safe.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,13 +186,13 @@
         <value>The <see cref="T:System.Windows.Automation.AutomationElement" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, the first element is retrieved from an <xref:System.Windows.Automation.AutomationElementCollection>.  
-  
- [!code-csharp[UIAClient_snip#182](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#182)]
- [!code-vb[UIAClient_snip#182](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#182)]  
-  
+In the following example, the first element is retrieved from an <xref:System.Windows.Automation.AutomationElementCollection>.  
+ 
+[!code-csharp[UIAClient_snip#182](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#182)]
+[!code-vb[UIAClient_snip#182](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#182)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">A negative integer was specified for <paramref name="index" />, or <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Automation.AutomationElementCollection.Count" />.</exception>

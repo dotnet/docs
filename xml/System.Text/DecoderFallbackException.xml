@@ -24,14 +24,14 @@
     <summary>The exception that is thrown when a decoder fallback operation fails. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Text.DecoderExceptionFallback> and <xref:System.Text.DecoderFallbackException> classes.  
-  
- [!code-cpp[sys.txt.fallbackDecExc#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.txt.fallbackDecExc/cpp/fallDecExc.cpp#1)]
- [!code-csharp[sys.txt.fallbackDecExc#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.fallbackDecExc/cs/fallDecExc.cs#1)]
- [!code-vb[sys.txt.fallbackDecExc#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.txt.fallbackDecExc/vb/fallDecExc.vb#1)]  
-  
+The following code example demonstrates the <xref:System.Text.DecoderExceptionFallback> and <xref:System.Text.DecoderFallbackException> classes.  
+ 
+[!code-cpp[sys.txt.fallbackDecExc#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.txt.fallbackDecExc/cpp/fallDecExc.cpp#1)]
+[!code-csharp[sys.txt.fallbackDecExc#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.fallbackDecExc/cs/fallDecExc.cs#1)]
+[!code-vb[sys.txt.fallbackDecExc#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.txt.fallbackDecExc/vb/fallDecExc.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.DecoderFallbackException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
-  
+The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.DecoderFallbackException" /> class. A parameter specifies the error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
-  
+The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.DecoderFallbackException" /> class. Parameters specify the error message and the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
-  
+The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.DecoderFallbackException" /> class. Parameters specify the error message, the array of bytes being decoded, and the index of the byte that cannot be decoded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
-  
+The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <value>The input byte array that cannot be decoded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application uses the <xref:System.Text.DecoderFallbackException.Index%2A> property to get the position in the input byte array of the byte that cannot be decoded.  
-  
+The application uses the <xref:System.Text.DecoderFallbackException.Index%2A> property to get the position in the input byte array of the byte that cannot be decoded.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
         <value>The index position in the input byte array of the byte that cannot be decoded. The index position is zero-based.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application uses the <xref:System.Text.DecoderFallbackException.BytesUnknown%2A> property to retrieve the input byte array that contains the byte that cannot be decoded.  
-  
+The application uses the <xref:System.Text.DecoderFallbackException.BytesUnknown%2A> property to retrieve the input byte array that contains the byte that cannot be decoded.  
+ 
  ]]></format>
         </remarks>
       </Docs>

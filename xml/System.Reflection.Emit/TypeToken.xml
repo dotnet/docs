@@ -20,10 +20,10 @@
     <summary>Represents the <see langword="Token" /> returned by the metadata to represent a type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of an object is also known as the class of an object.  
-  
+The type of an object is also known as the class of an object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -139,33 +139,33 @@
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.TypeToken.Equals%28System.Reflection.Emit.TypeToken%2CSystem.Reflection.Emit.TypeToken%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.TypeToken a, System.Reflection.Emit.TypeToken b);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.TypeToken a, valuetype System.Reflection.Emit.TypeToken b) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.TypeToken.op_Inequality(System.Reflection.Emit.TypeToken,System.Reflection.Emit.TypeToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="a" Type="System.Reflection.Emit.TypeToken" />
-        <Parameter Name="b" Type="System.Reflection.Emit.TypeToken" />
-      </Parameters>
-      <Docs>
-        <param name="a">The <see cref="T:System.Reflection.Emit.TypeToken" /> to compare to <c>b</c>.</param>
-        <param name="b">The <see cref="T:System.Reflection.Emit.TypeToken" /> to compare to <c>a</c>.</param>
-        <summary>Indicates whether two <see cref="T:System.Reflection.Emit.TypeToken" /> structures are not equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.TypeToken a, System.Reflection.Emit.TypeToken b);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.TypeToken a, valuetype System.Reflection.Emit.TypeToken b) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.TypeToken.op_Inequality(System.Reflection.Emit.TypeToken,System.Reflection.Emit.TypeToken)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>mscorlib</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="a" Type="System.Reflection.Emit.TypeToken" />
+       <Parameter Name="b" Type="System.Reflection.Emit.TypeToken" />
+     </Parameters>
+     <Docs>
+       <param name="a">The <see cref="T:System.Reflection.Emit.TypeToken" /> to compare to <c>b</c>.</param>
+       <param name="b">The <see cref="T:System.Reflection.Emit.TypeToken" /> to compare to <c>a</c>.</param>
+       <summary>Indicates whether two <see cref="T:System.Reflection.Emit.TypeToken" /> structures are not equal.</summary>
+       <returns>
+         <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.TypeToken.Compare%28System.Reflection.Emit.TypeToken%2CSystem.Reflection.Emit.TypeToken%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>

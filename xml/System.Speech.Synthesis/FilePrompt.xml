@@ -39,61 +39,61 @@
         <summary>Creates a new instance of the <see cref="T:System.Speech.Synthesis.FilePrompt" /> class, and specifies the path to the file and its media type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this class to create an object from an existing Speech Synthesis Markup Language (SSML) file that the <xref:System.Speech.Synthesis.SpeechSynthesizer> can consume to generate speech.  
+You can use this class to create an object from an existing Speech Synthesis Markup Language (SSML) file that the <xref:System.Speech.Synthesis.SpeechSynthesizer> can consume to generate speech.  
+ 
   
-   
-  
+ 
 ## Examples  
- The example that follows creates a <xref:System.Speech.Synthesis.FilePrompt> object that specifies a path to an SSML prompt. To speak the contents of the prompt, the example then provides the <xref:System.Speech.Synthesis.FilePrompt> object as the argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
-  
+The example that follows creates a <xref:System.Speech.Synthesis.FilePrompt> object that specifies a path to an SSML prompt. To speak the contents of the prompt, the example then provides the <xref:System.Speech.Synthesis.FilePrompt> object as the argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
-  
+ 
 namespace SampleSynthesis  
 {  
-    class Program  
-    {  
-        static void Main(string[] args)  
-        {  
-  
-            // Initialize a new instance of the SpeechSynthesizer.  
-            using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-            {  
-  
-                // Configure the audio output.   
-                synth.SetOutputToDefaultAudioDevice();  
-  
-                // Create a FilePrompt object that references an SSML prompt.  
-                FilePrompt ssmlFile = new FilePrompt("c:\\test\\Weather.ssml", SynthesisMediaType.Ssml);  
-  
-                // Speak the contents of the SSML prompt.  
-                synth.Speak(ssmlFile);  
-            }  
-  
-            Console.WriteLine();  
-            Console.WriteLine("Press any key to exit...");  
-            Console.ReadKey();  
-        }  
-    }  
+   class Program  
+   {  
+       static void Main(string[] args)  
+       {  
+ 
+           // Initialize a new instance of the SpeechSynthesizer.  
+           using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+           {  
+ 
+               // Configure the audio output.   
+               synth.SetOutputToDefaultAudioDevice();  
+ 
+               // Create a FilePrompt object that references an SSML prompt.  
+               FilePrompt ssmlFile = new FilePrompt("c:\\test\\Weather.ssml", SynthesisMediaType.Ssml);  
+ 
+               // Speak the contents of the SSML prompt.  
+               synth.Speak(ssmlFile);  
+           }  
+ 
+           Console.WriteLine();  
+           Console.WriteLine("Press any key to exit...");  
+           Console.ReadKey();  
+       }  
+   }  
 }  
 ```  
-  
- The following is the SSML file that the preceding example references.  
-  
+ 
+The following is the SSML file that the preceding example references.  
+ 
 ```xml  
 <?xml version="1.0" encoding="ISO-8859-1"?>  
 <speak version="1.0"  
- xmlns="http://www.w3.org/2001/10/synthesis"  
- xml:lang="en-US">  
-  
-  <s> The weather forecast for today is partly cloudy with some sun breaks. </s>  
-  
+xmlns="http://www.w3.org/2001/10/synthesis"  
+xml:lang="en-US">  
+ 
+ <s> The weather forecast for today is partly cloudy with some sun breaks. </s>  
+ 
 </speak>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,10 +19,10 @@
     <summary>Represents an abstract base class from which all dynamic update notifications of changes to a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> must be derived. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class can be used by a tracking service to determine that a <xref:System.Workflow.Activities.Rules.RuleSet> has been dynamically updated. The derived classes indicate which <xref:System.Workflow.Activities.Rules.RuleSet> is being dynamically updated, and what operation is being performed (added to the workflow, removed from the workflow, or changed).  
-  
+This class can be used by a tracking service to determine that a <xref:System.Workflow.Activities.Rules.RuleSet> has been dynamically updated. The derived classes indicate which <xref:System.Workflow.Activities.Rules.RuleSet> is being dynamically updated, and what operation is being performed (added to the workflow, removed from the workflow, or changed).  
+ 
  ]]></format>
     </remarks>
   </Docs>

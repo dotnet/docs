@@ -73,10 +73,10 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the stream object passed as the `stream` parameter.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the stream object passed as the `stream` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the stream object passed as the `stream` parameter.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the stream object passed as the `stream` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,14 +150,14 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the memory stream.  
-  
- Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the memory stream that that represents the HTTP content. The returned stream can then be used to read the content using various stream APIs.  
-  
- The <xref:System.Net.Http.HttpContent.CreateContentReadStreamAsync%2A> method buffers the content to a memory stream. Derived classes can override this behavior if there is a better way to retrieve the content as stream. For example, a byte array or a string could use a more efficient method way such as wrapping a read-only <xref:System.IO.MemoryStream> around the bytes or string.)  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the memory stream.  
+ 
+Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the memory stream that that represents the HTTP content. The returned stream can then be used to read the content using various stream APIs.  
+ 
+The <xref:System.Net.Http.HttpContent.CreateContentReadStreamAsync%2A> method buffers the content to a memory stream. Derived classes can override this behavior if there is a better way to retrieve the content as stream. For example, a byte array or a string could use a more efficient method way such as wrapping a read-only <xref:System.IO.MemoryStream> around the bytes or string.)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpContent" /> and optionally disposes of the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Http.HttpContent> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Http.HttpContent> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,12 +269,12 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after all of the content has been serialized to the memory buffer.  
-  
- After content is serialized to a memory buffer, calls to one of the  <xref:System.Net.Http.HttpContent.CopyToAsync%2A> methods will copy the content of the memory buffer to the target stream.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after all of the content has been serialized to the memory buffer.  
+ 
+After content is serialized to a memory buffer, calls to one of the  <xref:System.Net.Http.HttpContent.CopyToAsync%2A> methods will copy the content of the memory buffer to the target stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,14 +314,14 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after all of the content has been serialized to the memory buffer.  
-  
- After content is serialized to a memory buffer, calls to one of the  <xref:System.Net.Http.HttpContent.CopyToAsync%2A> methods will copy the content of the memory buffer to the target stream.  
-  
- If the content exceeds the value  passed in the `maxBufferSize` parameter , an exception is thrown.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after all of the content has been serialized to the memory buffer.  
+ 
+After content is serialized to a memory buffer, calls to one of the  <xref:System.Net.Http.HttpContent.CopyToAsync%2A> methods will copy the content of the memory buffer to the target stream.  
+ 
+If the content exceeds the value  passed in the `maxBufferSize` parameter , an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,12 +358,12 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written as a byte array.  
-  
- Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the byte array with the HTTP content.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written as a byte array.  
+ 
+Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the byte array with the HTTP content.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,12 +400,12 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the stream that represents content has been read.  
-  
- Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the stream that that represents the HTTP content. The returned stream can then be used to read the content using various stream APIs.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the stream that represents content has been read.  
+ 
+Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the stream that that represents the HTTP content. The returned stream can then be used to read the content using various stream APIs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -442,12 +442,12 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written as a string.  
-  
- Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the string with the HTTP content.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written as a string.  
+ 
+Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the string with the HTTP content.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -481,10 +481,10 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been serialized to the stream object passed in the `stream` parameter.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been serialized to the stream object passed in the `stream` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -517,10 +517,10 @@
           <see langword="true" /> if <paramref name="length" /> is a valid length; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.HttpContent.TryComputeLength%2A> method gives a HTTP content the ability to calculate the content length. This is useful for content types which are able to easily calculate the content length. If computing the content length is not possible or expensive (would require the system to buffer the whole content where the serialization would be expensive or require the system to allocate a lot of memory), this method can return `false`. If this method returns `false`, this implies that either chunked transfer is needed or the content must get buffered before being sent to the server.  
-  
+The <xref:System.Net.Http.HttpContent.TryComputeLength%2A> method gives a HTTP content the ability to calculate the content length. This is useful for content types which are able to easily calculate the content length. If computing the content length is not possible or expensive (would require the system to buffer the whole content where the serialization would be expensive or require the system to allocate a lot of memory), this method can return `false`. If this method returns `false`, this implies that either chunked transfer is needed or the content must get buffered before being sent to the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -536,10 +536,10 @@
         <summary>Serialize the HTTP content into a stream of bytes and copies it to the stream object provided as the <paramref name="stream" /> parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation does not block.  
-  
+This operation does not block.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,10 +555,10 @@
         <summary>Serialize the HTTP content to a memory buffer as an asynchronous operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block.  
-  
+This operation will not block.  
+ 
  ]]></format>
         </remarks>
       </Docs>

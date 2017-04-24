@@ -14,16 +14,16 @@
     <summary>Implements a set of predefined <see cref="T:System.Windows.Media.DashStyle" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
+The following illustration shows examples of different dash styles applied to an underline.  
+ 
+![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
+ 
 <a name="xamlTextUsage_DashStyles"></a>   
 ## XAML Text Usage  
- You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], but you can use its static properties to assign values in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], but you can use its static properties to assign values in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,16 +45,16 @@
         <value>A dash sequence of 2,2, which describes a sequence composed of a dash that is twice as long as the pen <see cref="P:System.Windows.Media.Pen.Thickness" /> followed by a space that is twice as long as the <see cref="P:System.Windows.Media.Pen.Thickness" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
+The following illustration shows examples of different dash styles applied to an underline.  
+ 
+![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
+ 
 <a name="xamlAttributeUsage_Dash"></a>   
 ## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.Dash`}"/>  
-  
+<*object* *property* ="{ `DashStyles.Dash`}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,16 +76,16 @@
         <value>A dash sequence of <c>2</c>,<c>2</c>,<c>0</c>,<c>2</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
+The following illustration shows examples of different dash styles applied to an underline.  
+ 
+![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
+ 
 <a name="xamlAttributeUsage_DashDot"></a>   
 ## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.DashDot`}"/>  
-  
+<*object* *property* ="{ `DashStyles.DashDot`}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,16 +107,16 @@
         <value>A dash sequence of <c>2</c>,<c>2</c>,<c>0</c>,<c>2</c>,<c>0</c>,<c>2</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
+The following illustration shows examples of different dash styles applied to an underline.  
+ 
+![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
+ 
 <a name="xamlAttributeUsage_DashDotDot"></a>   
 ## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.DashDotDot`}"/>  
-  
+<*object* *property* ="{ `DashStyles.DashDotDot`}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,16 +138,16 @@
         <value>A dash sequence of <c>0</c>,<c>2</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
+The following illustration shows examples of different dash styles applied to an underline.  
+ 
+![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
+ 
 <a name="xamlAttributeUsage_Dot"></a>   
 ## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.Dot`}"/>  
-  
+<*object* *property* ="{ `DashStyles.Dot`}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,18 +169,18 @@
         <value>A dash sequence with no dashes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property produces a solid line and is equivalent to not defining a dash sequence.  
-  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
+This property produces a solid line and is equivalent to not defining a dash sequence.  
+ 
+The following illustration shows examples of different dash styles applied to an underline.  
+ 
+![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
+ 
 <a name="xamlAttributeUsage_Solid"></a>   
 ## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.Solid`}"/>  
-  
+<*object* *property* ="{ `DashStyles.Solid`}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>

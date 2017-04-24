@@ -14,10 +14,10 @@
     <summary>The exception that is thrown when a filter or filter table attempts to access the body of an unbuffered message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception is thrown when a filter or filter table attempts to access the body of an instance of <xref:System.ServiceModel.Channels.Message>.  
-  
+This exception is thrown when a filter or filter table attempts to access the body of an instance of <xref:System.ServiceModel.Channels.Message>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -154,10 +154,10 @@
         <value>The <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> that contains the filters that caused the exception to be thrown.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the case of a filter table, this collection does not necessarily contain all offending filters. It only contains the filter(s) that caused the violation. It is quite possible there are other filters that would have committed a similar violation had processing not been aborted.  
-  
+In the case of a filter table, this collection does not necessarily contain all offending filters. It only contains the filter(s) that caused the violation. It is quite possible there are other filters that would have committed a similar violation had processing not been aborted.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,14 +19,14 @@
     <summary>Represents a class that provides the CodeDOM serialization services to an activity at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializer> controls the generation of component initialization code for the <xref:System.Workflow.ComponentModel.Activity> class at design time.  
-  
+ 
+<xref:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializer> controls the generation of component initialization code for the <xref:System.Workflow.ComponentModel.Activity> class at design time.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <summary>The name of the markup file to write to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <returns>A CodeDOM object representing the object that has been serialized.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Serialize returns a null reference (`Nothing`) if the activity it attempts to serialize is the child activity of a custom composite activity.  
-  
+Serialize returns a null reference (`Nothing`) if the activity it attempts to serialize is the child activity of a custom composite activity.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

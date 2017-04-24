@@ -34,20 +34,20 @@
     <summary>Represents a constructor call.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Linq.Expressions.Expression.New%2A> factory methods to create a <xref:System.Linq.Expressions.NewExpression>.  
+Use the <xref:System.Linq.Expressions.Expression.New%2A> factory methods to create a <xref:System.Linq.Expressions.NewExpression>.  
+ 
+The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.NewExpression> object is <xref:System.Linq.Expressions.ExpressionType>.  
+ 
   
- The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.NewExpression> object is <xref:System.Linq.Expressions.ExpressionType>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Linq.Expressions.NewExpression> that represents the construction of a new instance of a dictionary object.  
-  
- [!code-csharp[System.Linq.Expressions.Expression#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#10)]
- [!code-vb[System.Linq.Expressions.Expression#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#10)]  
-  
+The following example creates a <xref:System.Linq.Expressions.NewExpression> that represents the construction of a new instance of a dictionary object.  
+ 
+[!code-csharp[System.Linq.Expressions.Expression#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#10)]
+[!code-vb[System.Linq.Expressions.Expression#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <returns>The result of visiting this node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
-  
+This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>A collection of <see cref="T:System.Linq.Expressions.Expression" /> objects that represent the arguments to the constructor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.Expressions.NewExpression.Arguments%2A> property is an empty collection if the constructor takes no arguments.  
-  
+The <xref:System.Linq.Expressions.NewExpression.Arguments%2A> property is an empty collection if the constructor takes no arguments.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
         <value>A collection of <see cref="T:System.Reflection.MemberInfo" /> objects that represent the members that can retrieve the values of the fields that were initialized with constructor arguments.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.Expressions.NewExpression.Members%2A> property provides a mapping between the constructor arguments and the type members that correspond to those values. In the case of the construction of an anonymous type, this property maps the constructor arguments to the properties that are exposed by the anonymous type. This mapping information is important because the fields that are initialized by the construction of an anonymous type, or the properties that access those fields, are not discoverable through the <xref:System.Linq.Expressions.NewExpression.Constructor%2A> or <xref:System.Linq.Expressions.NewExpression.Arguments%2A> properties of a <xref:System.Linq.Expressions.NewExpression> node.  
-  
+The <xref:System.Linq.Expressions.NewExpression.Members%2A> property provides a mapping between the constructor arguments and the type members that correspond to those values. In the case of the construction of an anonymous type, this property maps the constructor arguments to the properties that are exposed by the anonymous type. This mapping information is important because the fields that are initialized by the construction of an anonymous type, or the properties that access those fields, are not discoverable through the <xref:System.Linq.Expressions.NewExpression.Constructor%2A> or <xref:System.Linq.Expressions.NewExpression.Arguments%2A> properties of a <xref:System.Linq.Expressions.NewExpression> node.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,20 +19,20 @@
     <summary>Represents the base class for Web Parts controls that under certain conditions must replace other Web Parts controls on a page.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> is the base class for a set of Web Parts controls, such as <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> and <xref:System.Web.UI.WebControls.WebParts.ErrorWebPart>, that can be used as placeholders for other Web Parts controls on a page. Typically, a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> control will replace another Web Parts control when some type of error or failure has occurred. For example, when a user is not authorized to view a Web Parts control on a page, the intended Web Parts control is replaced with the <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control. When a Web Parts control cannot be loaded or a new instance of it cannot be created, the original Web Parts control is replaced with the <xref:System.Web.UI.WebControls.WebParts.ErrorWebPart> control. If the intended Web Parts control later becomes available to the user, it will be restored to the page and the object derived from the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> class will be removed.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> class does not save view state or control state. If a Web Parts control is replaced by a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object and then later becomes available, its view state and control state will be empty.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object preserves personalization data for the Web Parts control that it replaced. If the original Web Parts control becomes available, its personalization data will be restored.  
-  
- When the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control saves personalization data, it does not save the properties of a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object. Instead, it saves the properties of the control that the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaced. If the original Web Parts control becomes available, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control will automatically load it.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object contains the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object. The ID of the intended Web Parts control can be retrieved from the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID%2A> property or the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.GenericWebPartID%2A> property.  
-  
- If a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a Web Parts control that is either the provider or consumer of a Web Parts connection, the connection is not activated but will not be deleted. If the original Web Parts control becomes available, the connection will be reactivated.  
-  
+<xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> is the base class for a set of Web Parts controls, such as <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> and <xref:System.Web.UI.WebControls.WebParts.ErrorWebPart>, that can be used as placeholders for other Web Parts controls on a page. Typically, a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> control will replace another Web Parts control when some type of error or failure has occurred. For example, when a user is not authorized to view a Web Parts control on a page, the intended Web Parts control is replaced with the <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control. When a Web Parts control cannot be loaded or a new instance of it cannot be created, the original Web Parts control is replaced with the <xref:System.Web.UI.WebControls.WebParts.ErrorWebPart> control. If the intended Web Parts control later becomes available to the user, it will be restored to the page and the object derived from the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> class will be removed.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> class does not save view state or control state. If a Web Parts control is replaced by a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object and then later becomes available, its view state and control state will be empty.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object preserves personalization data for the Web Parts control that it replaced. If the original Web Parts control becomes available, its personalization data will be restored.  
+ 
+When the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control saves personalization data, it does not save the properties of a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object. Instead, it saves the properties of the control that the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaced. If the original Web Parts control becomes available, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control will automatically load it.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object contains the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object. The ID of the intended Web Parts control can be retrieved from the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID%2A> property or the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.GenericWebPartID%2A> property.  
+ 
+If a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a Web Parts control that is either the provider or consumer of a Web Parts connection, the connection is not activated but will not be deleted. If the original Web Parts control becomes available, the connection will be reactivated.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> class when a static Web Parts control (or server or user control) must be replaced.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used to create a proxy Web Parts control to replace a static Web Parts control. To replace a dynamically created Web Parts control, use the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.%23ctor%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor to create the proxy Web Parts control.  
-  
+This constructor is used to create a proxy Web Parts control to replace a static Web Parts control. To replace a dynamically created Web Parts control, use the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.%23ctor%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor to create the proxy Web Parts control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -97,10 +97,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> class when a dynamic Web Parts control must be replaced.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used to create a proxy Web Parts control to replace a dynamic Web Parts control. To replace a static Web Parts control, use the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.%23ctor%28System.Web.UI.WebControls.WebParts.WebPart%29> constructor to create a proxy Web Parts control.  
-  
+This constructor is used to create a proxy Web Parts control to replace a dynamic Web Parts control. To replace a static Web Parts control, use the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.%23ctor%28System.Web.UI.WebControls.WebParts.WebPart%29> constructor to create a proxy Web Parts control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -124,10 +124,10 @@
         <value>A string containing the <see cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.ID" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control, this property contains the value from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ID%2A?displayProperty=fullName> property.  
-  
+When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control, this property contains the value from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ID%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <value>A <see cref="T:System.String" /> containing the identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object will contain the same value in its <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.ID%2A> property as the control it replaced.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object will contain the same value in its <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.ID%2A> property as the control it replaced.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,10 +177,10 @@
         <summary>Overrides <see cref="M:System.Web.UI.Control.LoadControlState(System.Object)" /> to prevent loading previously saved state for a <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadControlState%2A> method overrides <xref:System.Web.UI.Control.LoadControlState%2A?displayProperty=fullName> to prevent loading the control state. The method does not load the control state or perform any other action.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadControlState%2A> method overrides <xref:System.Web.UI.Control.LoadControlState%2A?displayProperty=fullName> to prevent loading the control state. The method does not load the control state or perform any other action.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,10 +205,10 @@
         <summary>Overrides <see cref="M:System.Web.UI.Control.LoadViewState(System.Object)" /> to prevent loading previously saved view state for a <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadViewState%2A> method overrides <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=fullName> to prevent loading the view state. The method does not load the view state or perform any other action.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadViewState%2A> method overrides <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=fullName> to prevent loading the view state. The method does not load the view state or perform any other action.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <value>A string containing the <see cref="P:System.Web.UI.Control.ID" /> value of the Web Parts control replaced by the proxy Web Parts control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a Web Parts control, the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID%2A> property contains the <xref:System.Web.UI.Control.ID%2A> of the replaced control. If the replaced control is a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object, this property contains the ID from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A?displayProperty=fullName> property.  
-  
+When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a Web Parts control, the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID%2A> property contains the <xref:System.Web.UI.Control.ID%2A> of the replaced control. If the replaced control is a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object, this property contains the ID from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,10 +273,10 @@
         <value>A string containing the <see cref="T:System.Type" /> of the control replaced by the proxy Web Parts control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a control, this property contains the <xref:System.Type> of the control that the proxy Web Parts control replaces.  
-  
+When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a control, this property contains the <xref:System.Type> of the control that the proxy Web Parts control replaces.  
+ 
  ]]></format>
         </remarks>
       </Docs>

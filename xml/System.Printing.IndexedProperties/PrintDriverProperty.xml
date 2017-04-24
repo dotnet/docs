@@ -32,10 +32,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintDriverProperty" /> class for the specified property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintDriver> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.QueueDriver%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "QueueDriver", not "PrintDriver" or "Queuedriver".  
-  
+The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintDriver> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.QueueDriver%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "QueueDriver", not "PrintDriver" or "Queuedriver".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -59,10 +59,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintDriverProperty" /> class that has the specified value for the specified attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintDriver> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.QueueDriver%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "QueueDriver", not "PrintDriver" or "Queuedriver".  
-  
+The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintDriver> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.QueueDriver%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "QueueDriver", not "PrintDriver" or "Queuedriver".  
+ 
  ]]></format>
         </remarks>
       </Docs>

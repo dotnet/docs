@@ -18,14 +18,14 @@
     <summary>Specifies a type of workflow status event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A workflow instance can pass through several states during the course of its execution. For example, a workflow instance may become idle, or it may be suspended. Every time the workflow instance changes state, it emits a workflow status event to the runtime tracking infrastructure. <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> enumerates the possible types of workflow status event.  
-  
+ 
+A workflow instance can pass through several states during the course of its execution. For example, a workflow instance may become idle, or it may be suspended. Every time the workflow instance changes state, it emits a workflow status event to the runtime tracking infrastructure. <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> enumerates the possible types of workflow status event.  
+ 
  ]]></format>
     </remarks>
   </Docs>

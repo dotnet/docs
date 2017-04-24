@@ -24,15 +24,15 @@
     <summary>Represents the base class from which all asymmetric key exchange formatters derive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Asymmetric key exchange formatters encrypt key exchange data.  
-  
- Key exchange allows a sender to create secret information, such as random data that can be used as a key in a symmetric encryption algorithm, and use encryption to send it to the intended recipient.  
-  
+Asymmetric key exchange formatters encrypt key exchange data.  
+ 
+Key exchange allows a sender to create secret information, such as random data that can be used as a key in a symmetric encryption algorithm, and use encryption to send it to the intended recipient.  
+ 
 > [!CAUTION]
 >  It is highly recommended that you not attempt to create your own key exchange method from the basic functionality provided, because many details of the operation must be performed carefully in order for the key exchange to be successful.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,12 +56,12 @@
         <summary>Initializes a new instance of <see cref="T:System.Security.Cryptography.AsymmetricKeyExchangeFormatter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of an abstract class. Application code will create a new instance of a derived class.  
-  
- Use <xref:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.SetKey%2A> to set the key before calling <xref:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange%2A>.  
-  
+You cannot create an instance of an abstract class. Application code will create a new instance of a derived class.  
+ 
+Use <xref:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.SetKey%2A> to set the key before calling <xref:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <returns>The encrypted key exchange data to be sent to the intended recipient.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data can only be interpreted by the holder of the private key corresponding to the public key used to encrypt the data. This helps to ensure that only the intended recipient can access the secret information.  
-  
+This data can only be interpreted by the holder of the private key corresponding to the public key used to encrypt the data. This helps to ensure that only the intended recipient can access the secret information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <returns>The encrypted key exchange data to be sent to the intended recipient.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data can only be interpreted by the holder of the private key corresponding to the public key used to encrypt the data. This helps to ensure that only the intended recipient can access the secret information.  
-  
+This data can only be interpreted by the holder of the private key corresponding to the public key used to encrypt the data. This helps to ensure that only the intended recipient can access the secret information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <summary>When overridden in a derived class, sets the public key to use for encrypting the secret information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must set a key before calling a <xref:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange%2A> implementation.  
-  
+You must set a key before calling a <xref:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange%2A> implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

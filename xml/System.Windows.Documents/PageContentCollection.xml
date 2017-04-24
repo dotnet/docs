@@ -80,12 +80,12 @@
         <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
-  
- See <xref:System.Collections.IEnumerable>.<xref:System.Collections.IEnumerable.GetEnumerator%2A> for other remarks about how enumerators should be used.  
-  
+Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
+ 
+See <xref:System.Collections.IEnumerable>.<xref:System.Collections.IEnumerable.GetEnumerator%2A> for other remarks about how enumerators should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

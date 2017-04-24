@@ -19,10 +19,10 @@
     <summary>Indicates that a class can use a markup extension to provide a value, and references a handler to use for markup extension set operations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default implementation for a XAML object writer uses CLR reflection and this CLR attribute to determine if there is an intentional callback for markup extension usages that set values of a type or member. For example, a <xref:System.Xaml.XamlServices> load or parse, or a <xref:System.Xaml.XamlXmlReader> / <xref:System.Xaml.XamlObjectWriter> sequence, will use this attribute and invoke the named callback as part of the operation whenever writing the object node based on a markup extension usage.  
-  
+Default implementation for a XAML object writer uses CLR reflection and this CLR attribute to determine if there is an intentional callback for markup extension usages that set values of a type or member. For example, a <xref:System.Xaml.XamlServices> load or parse, or a <xref:System.Xaml.XamlXmlReader> / <xref:System.Xaml.XamlObjectWriter> sequence, will use this attribute and invoke the named callback as part of the operation whenever writing the object node based on a markup extension usage.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlSetMarkupExtensionAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method referenced by name through the `xamlSetMarkupExtensionHandler` value should be based on a generic <xref:System.EventHandler%601> delegate with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data constraint.  
-  
+The method referenced by name through the `xamlSetMarkupExtensionHandler` value should be based on a generic <xref:System.EventHandler%601> delegate with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data constraint.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -69,10 +69,10 @@
         <value>The name of the handler to use for markup extension set operations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The  handler should be based on a generic <xref:System.EventHandler%601> delegate with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data constraint.  
-  
+The  handler should be based on a generic <xref:System.EventHandler%601> delegate with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data constraint.  
+ 
  ]]></format>
         </remarks>
       </Docs>

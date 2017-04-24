@@ -28,20 +28,20 @@
     <summary>Specifies that the field is an enumeration member and should be serialized.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.EnumMemberAttribute> enables fine control of the names of the enumerations as they are serialized.  
+The <xref:System.Runtime.Serialization.EnumMemberAttribute> enables fine control of the names of the enumerations as they are serialized.  
+ 
+To use <xref:System.Runtime.Serialization.EnumMemberAttribute>, create an enumeration and apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the enumeration. Then apply the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute to each member that needs to be in the serialization stream.  
+ 
   
- To use <xref:System.Runtime.Serialization.EnumMemberAttribute>, create an enumeration and apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the enumeration. Then apply the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute to each member that needs to be in the serialization stream.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows <xref:System.Runtime.Serialization.EnumMemberAttribute> applied to members of an enumeration.  
-  
- [!code-csharp[EnumMemberAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/enummemberattribute/cs/source.cs#1)]
- [!code-vb[EnumMemberAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/enummemberattribute/vb/source.vb#1)]  
-  
+The following example shows <xref:System.Runtime.Serialization.EnumMemberAttribute> applied to members of an enumeration.  
+ 
+[!code-csharp[EnumMemberAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/enummemberattribute/cs/source.cs#1)]
+[!code-vb[EnumMemberAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/enummemberattribute/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -124,46 +124,46 @@
         <value>The value associated with the enumeration member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the value of an enumeration is the name of the enumeration. When a value is specified, that value will appear in the XML document or stream.  
+By default, the value of an enumeration is the name of the enumeration. When a value is specified, that value will appear in the XML document or stream.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code:  
-  
- [!code-csharp[EnumMemberAttribute#0](~/samples/snippets/csharp/VS_Snippets_CFX/enummemberattribute/cs/source.cs#0)]  
-  
- results in the following XML when serialized with the <xref:System.Runtime.Serialization.DataContractSerializer>:  
-  
+The following code:  
+ 
+[!code-csharp[EnumMemberAttribute#0](~/samples/snippets/csharp/VS_Snippets_CFX/enummemberattribute/cs/source.cs#0)]  
+ 
+results in the following XML when serialized with the <xref:System.Runtime.Serialization.DataContractSerializer>:  
+ 
 ```  
 <Shapes>Circle</Shapes>  
 ```  
-  
- or  
-  
+ 
+or  
+ 
 ```  
 <Shapes>Square</Shapes>  
 ```  
-  
- The following code, with the Value property set:  
-  
- [!code-csharp[EnumMemberAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/enummemberattribute/cs/source.cs#3)]
- [!code-vb[EnumMemberAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/enummemberattribute/vb/source.vb#3)]  
-  
- results in the following XML:  
-  
+ 
+The following code, with the Value property set:  
+ 
+[!code-csharp[EnumMemberAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/enummemberattribute/cs/source.cs#3)]
+[!code-vb[EnumMemberAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/enummemberattribute/vb/source.vb#3)]  
+ 
+results in the following XML:  
+ 
 ```  
 <Shapes>1</Shapes>  
 ```  
-  
- or  
-  
+ 
+or  
+ 
 ```  
 <Shapes>2</Shapes>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

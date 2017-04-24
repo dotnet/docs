@@ -18,10 +18,10 @@
     <summary>A binding element used to communicate with a [!INCLUDE[infocard](~/includes/infocard-md.md)] Security Token Service that supports the [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile of WS-Trust.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used by an identity provider to express in its policy the fact that it supports the [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile of WS-Trust. Identity providers that publish such a policy assertion should be able to issue tokens based on that [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile.  
-  
+This class is used by an identity provider to express in its policy the fact that it supports the [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile of WS-Trust. Identity providers that publish such a policy assertion should be able to issue tokens based on that [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the binding stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no binding layer supported the requested object, then the method returns `null`.  
-  
+Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the binding stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no binding layer supported the requested object, then the method returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

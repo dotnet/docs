@@ -20,17 +20,17 @@
     <summary>Groups together a set of related instances of the <see cref="T:System.Web.Services.Description.Port" /> class that are associated with an XML Web service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Service` class corresponds to the Web Services Description Language (WSDL) `<service>` element enclosed by the `<definitions>` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+The `Service` class corresponds to the Web Services Description Language (WSDL) `<service>` element enclosed by the `<definitions>` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ServiceClass#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceClass/CPP/serviceclass.cpp#1)]
- [!code-csharp[ServiceClass#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceClass/CS/serviceclass.cs#1)]
- [!code-vb[ServiceClass#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceClass/VB/serviceclass.vb#1)]  
-  
+[!code-cpp[ServiceClass#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceClass/CPP/serviceclass.cpp#1)]
+[!code-csharp[ServiceClass#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceClass/CS/serviceclass.cs#1)]
+[!code-vb[ServiceClass#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceClass/VB/serviceclass.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,12 +74,12 @@
         <value>The collection of extensibility elements associated with the <see cref="T:System.Web.Services.Description.Service" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[Service_Class4#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Service_Class4/CPP/service_class.cpp#2)]
- [!code-csharp[Service_Class4#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Service_Class4/CS/service_class.cs#2)]
- [!code-vb[Service_Class4#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Service_Class4/VB/service_class.vb#2)]  
-  
+[!code-cpp[Service_Class4#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Service_Class4/CPP/service_class.cpp#2)]
+[!code-csharp[Service_Class4#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Service_Class4/CS/service_class.cs#2)]
+[!code-vb[Service_Class4#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Service_Class4/VB/service_class.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,12 +107,12 @@
         <value>A collection of port instances contained in the <see cref="T:System.Web.Services.Description.Service" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[Service_Class4#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Service_Class4/CPP/service_class.cpp#1)]
- [!code-csharp[Service_Class4#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Service_Class4/CS/service_class.cs#1)]
- [!code-vb[Service_Class4#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Service_Class4/VB/service_class.vb#1)]  
-  
+[!code-cpp[Service_Class4#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Service_Class4/CPP/service_class.cpp#1)]
+[!code-csharp[Service_Class4#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Service_Class4/CS/service_class.cs#1)]
+[!code-vb[Service_Class4#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Service_Class4/VB/service_class.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
         <value>A <see cref="T:System.Web.Services.Description.ServiceDescription" /> of which the <see cref="T:System.Web.Services.Description.Service" /> is a member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- Service_ServiceDescription#1  
-  
+Service_ServiceDescription#1  
+ 
  ]]></format>
         </remarks>
       </Docs>

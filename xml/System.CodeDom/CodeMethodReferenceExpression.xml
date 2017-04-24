@@ -22,23 +22,23 @@
     <summary>Represents a reference to a method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.CodeDom.CodeMethodReferenceExpression> can be used to represent an expression of the form Object.Method.  
+A <xref:System.CodeDom.CodeMethodReferenceExpression> can be used to represent an expression of the form Object.Method.  
+ 
+The <xref:System.CodeDom.CodeMethodReferenceExpression.TargetObject%2A> property indicates the object that contains the method. The <xref:System.CodeDom.CodeMethodReferenceExpression.MethodName%2A> property indicates the name of the method.  
+ 
+A <xref:System.CodeDom.CodeMethodReferenceExpression> is used with a <xref:System.CodeDom.CodeMethodInvokeExpression> to indicate the method to invoke, and with a <xref:System.CodeDom.CodeDelegateCreateExpression> to indicate the method to handle the event.  
+ 
   
- The <xref:System.CodeDom.CodeMethodReferenceExpression.TargetObject%2A> property indicates the object that contains the method. The <xref:System.CodeDom.CodeMethodReferenceExpression.MethodName%2A> property indicates the name of the method.  
-  
- A <xref:System.CodeDom.CodeMethodReferenceExpression> is used with a <xref:System.CodeDom.CodeMethodInvokeExpression> to indicate the method to invoke, and with a <xref:System.CodeDom.CodeDelegateCreateExpression> to indicate the method to handle the event.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.CodeDom.CodeMethodReferenceExpression> to refer to a method:  
-  
- [!code-cpp[CodeMethodReferenceExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMethodReferenceExample/CPP/codemethodreferenceexample.cpp#3)]
- [!code-csharp[CodeMethodReferenceExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMethodReferenceExample/CS/codemethodreferenceexample.cs#3)]
- [!code-vb[CodeMethodReferenceExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMethodReferenceExample/VB/codemethodreferenceexample.vb#3)]  
-  
+The following code example uses a <xref:System.CodeDom.CodeMethodReferenceExpression> to refer to a method:  
+ 
+[!code-cpp[CodeMethodReferenceExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMethodReferenceExample/CPP/codemethodreferenceexample.cpp#3)]
+[!code-csharp[CodeMethodReferenceExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMethodReferenceExample/CS/codemethodreferenceexample.cs#3)]
+[!code-vb[CodeMethodReferenceExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMethodReferenceExample/VB/codemethodreferenceexample.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,19 +105,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReferenceExpression" /> class using the specified target object, method name, and generic type arguments.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `typeParameters` parameter represents a collection of type references to be substituted for the type parameter references of the current generic method.  
+The `typeParameters` parameter represents a collection of type references to be substituted for the type parameter references of the current generic method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of this constructor.  
-  
- [!code-cpp[System.CodeDom.CodeMethodReferenceExpression#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.codedom.codemethodreferenceexpression/cpp/source.cpp#1)]
- [!code-csharp[System.CodeDom.CodeMethodReferenceExpression#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.codedom.codemethodreferenceexpression/cs/source.cs#1)]
- [!code-vb[System.CodeDom.CodeMethodReferenceExpression#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.codedom.codemethodreferenceexpression/vb/source.vb#1)]  
-  
+The following code example shows the use of this constructor.  
+ 
+[!code-cpp[System.CodeDom.CodeMethodReferenceExpression#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.codedom.codemethodreferenceexpression/cpp/source.cpp#1)]
+[!code-csharp[System.CodeDom.CodeMethodReferenceExpression#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.codedom.codemethodreferenceexpression/cs/source.cs#1)]
+[!code-vb[System.CodeDom.CodeMethodReferenceExpression#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.codedom.codemethodreferenceexpression/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <value>A <see cref="T:System.CodeDom.CodeTypeReferenceCollection" /> containing the type arguments for the current code <see cref="T:System.CodeDom.CodeMethodReferenceExpression" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeMethodReferenceExpression.TypeArguments%2A> property represents a collection of type references to be substituted for the type parameter references of the current generic method.  
-  
+The <xref:System.CodeDom.CodeMethodReferenceExpression.TypeArguments%2A> property represents a collection of type references to be substituted for the type parameter references of the current generic method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

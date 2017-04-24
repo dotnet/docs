@@ -30,10 +30,10 @@
     <summary>Represents a method to be called when a message is to be dispatched to a synchronization context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Threading.SendOrPostCallback> represents a callback method that you want to execute when a message is to be dispatched to a synchronization context.  Create the delegate by passing your callback method to the <xref:System.Threading.SendOrPostCallback> constructor. Your method must have the signature shown here.  
-  
+<xref:System.Threading.SendOrPostCallback> represents a callback method that you want to execute when a message is to be dispatched to a synchronization context.  Create the delegate by passing your callback method to the <xref:System.Threading.SendOrPostCallback> constructor. Your method must have the signature shown here.  
+ 
  ]]></format>
     </remarks>
   </Docs>

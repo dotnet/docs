@@ -14,14 +14,14 @@
     <summary>The <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> class represents a signer associated with a <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> object that represents a CMS/PKCS #7 message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The signatures represented by the <xref:System.Security.Cryptography.Pkcs.SignerInfo> class can be either over message content or a signature. The latter kind of signature is referred to as a *countersignature*.  
-  
- This implementation of CMS/PKCS #7 supports only one level of countersignature.  That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
-  
- This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos%2A?displayProperty=fullName> property.  
-  
+The signatures represented by the <xref:System.Security.Cryptography.Pkcs.SignerInfo> class can be either over message content or a signature. The latter kind of signature is referred to as a *countersignature*.  
+ 
+This implementation of CMS/PKCS #7 supports only one level of countersignature.  That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
+ 
+This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object that represents the signing certificate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the signing certificate is not included at signing time by using the <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A?displayProperty=fullName> property, then the certificate will not be returned.  
-  
+If the signing certificate is not included at signing time by using the <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A?displayProperty=fullName> property, then the certificate will not be returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,10 +68,10 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckHash" /> method verifies the data integrity of the CMS/PKCS #7 message signer information. <see cref="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckHash" /> is a specialized method used in specific security infrastructure applications in which the subject uses the **HashOnly** member of the <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" /> enumeration when setting up a <see cref="T:System.Security.Cryptography.Pkcs.CmsSigner" /> object. <see cref="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckHash" /> does not authenticate the signer information because this method does not involve verifying a digital signature. For general-purpose checking of the integrity and authenticity of CMS/PKCS #7 message signer information and countersignatures, use the <see cref="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckSignature(System.Boolean)" /> or <see cref="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckSignature(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.Boolean)" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not provide authentication of the CMS/PKCS #7 message signer information.  
-  
+This method does not provide authentication of the CMS/PKCS #7 message signer information.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
@@ -97,12 +97,12 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckSignature(System.Boolean)" /> method verifies the digital signature of the message and, optionally, validates the certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws an exception if the verification of the digital signature fails or any validation requirements are not met.  
-  
- If more complex validation is required, the caller can specify that only the signature is verified and then use an <xref:System.Security.Cryptography.X509Certificates.X509Chain> object to perform custom validation.  
-  
+This method throws an exception if the verification of the digital signature fails or any validation requirements are not met.  
+ 
+If more complex validation is required, the caller can specify that only the signature is verified and then use an <xref:System.Security.Cryptography.X509Certificates.X509Chain> object to perform custom validation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -132,12 +132,12 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckSignature(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.Boolean)" /> method verifies the digital signature of the message by using the specified collection of certificates and, optionally, validates the certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws an exception if the verification of the digital signature fails or any validation requirements are not met.  
-  
- If more complex validation is required, the caller can specify that only the signature is verified and then use an <xref:System.Security.Cryptography.X509Certificates.X509Chain> object to perform custom validation.  
-  
+This method throws an exception if the verification of the digital signature fails or any validation requirements are not met.  
+ 
+If more complex validation is required, the caller can specify that only the signature is verified and then use an <xref:System.Security.Cryptography.X509Certificates.X509Chain> object to perform custom validation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -162,33 +162,33 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature" /> method prompts the user to select a signing certificate, creates a countersignature, and adds the signature to the CMS/PKCS #7 message. Countersignatures are restricted to one level.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of CMS/PKCS #7 supports only one level of countersignature.  That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
-  
- This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=fullName> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
-  
- Signers whose certificates meet the following conditions will be displayed in the list:  
-  
+This implementation of CMS/PKCS #7 supports only one level of countersignature.  That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
+ 
+This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=fullName> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
+ 
+Signers whose certificates meet the following conditions will be displayed in the list:  
+ 
 -   The certificate has an associated private key.  
-  
+ 
 -   The certificate is within its validity period.  
-  
+ 
 -   The certificate has no key usage or a key usage that supports digital signatures or nonrepudiation.  
-  
- Signer certificates are chosen from the My store.  
-  
+ 
+Signer certificates are chosen from the My store.  
+ 
 ## .NET Framework Security  
- The following permissions are required to display the user interface:  
-  
+The following permissions are required to display the user interface:  
+ 
 -   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
-  
- The following permissions are required to access the signature key:  
-  
+ 
+The following permissions are required to access the signature key:  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -215,17 +215,17 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature(System.Security.Cryptography.Pkcs.CmsSigner)" /> method creates a countersignature by using the specified signer and adds the signature to the CMS/PKCS #7 message. Countersignatures are restricted to one level.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of CMS/PKCS #7 supports only one level of countersignature.  That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
-  
+This implementation of CMS/PKCS #7 supports only one level of countersignature.  That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
+ 
 ## .NET Framework Security  
- The following permissions are required to access the signature key:  
-  
+The following permissions are required to access the signature key:  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -249,10 +249,10 @@
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection that represents the counter signers for the signer information. If there are no counter signers, the property is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of CMS/PKCS #7 supports only one level of countersignature. That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
-  
+This implementation of CMS/PKCS #7 supports only one level of countersignature. That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,14 +338,14 @@
         <value>A <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection that represents the signed attributes. If there are no signed attributes, the property is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of a signed attribute that might be included in the <xref:System.Security.Cryptography.CryptographicAttributeObjectCollection> collection retrieved by the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A> property is the <xref:System.Security.Cryptography.Pkcs.Pkcs9SigningTime> signing time attribute.  
-  
- Signed attributes are signed along with the rest of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message content. This means that a party that successfully verifies the signature can have confidence that the contents of these attributes are authentic and have not been altered.  
-  
- A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object and a <xref:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A> property whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A?displayProperty=fullName> property for the corresponding signer is not empty.  
-  
+An example of a signed attribute that might be included in the <xref:System.Security.Cryptography.CryptographicAttributeObjectCollection> collection retrieved by the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A> property is the <xref:System.Security.Cryptography.Pkcs.Pkcs9SigningTime> signing time attribute.  
+ 
+Signed attributes are signed along with the rest of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message content. This means that a party that successfully verifies the signature can have confidence that the contents of these attributes are authentic and have not been altered.  
+ 
+A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object and a <xref:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A> property whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A?displayProperty=fullName> property for the corresponding signer is not empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,12 +385,12 @@
         <value>A <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection that represents the unsigned attributes. If there are no unsigned attributes, the property is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unsigned attributes are not signed along with the rest of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message content. Even though a party successfully verifies the signature, the unsigned attributes may have been altered and should not be considered to have authenticity or integrity.  
-  
- An example of an unsigned attribute that might be included in the <xref:System.Security.Cryptography.CryptographicAttributeObjectCollection> collection retrieved by the <xref:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes%2A> property is a countersignature.  
-  
+Unsigned attributes are not signed along with the rest of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message content. Even though a party successfully verifies the signature, the unsigned attributes may have been altered and should not be considered to have authenticity or integrity.  
+ 
+An example of an unsigned attribute that might be included in the <xref:System.Security.Cryptography.CryptographicAttributeObjectCollection> collection retrieved by the <xref:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes%2A> property is a countersignature.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -412,10 +412,10 @@
         <value>An int value that specifies the signer information version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The version determines whether the message is a PKCS #7 message or a Cryptographic Message Syntax (CMS) message. CMS is a newer superset of PKCS #7.  
-  
+The version determines whether the message is a PKCS #7 message or a Cryptographic Message Syntax (CMS) message. CMS is a newer superset of PKCS #7.  
+ 
  ]]></format>
         </remarks>
       </Docs>

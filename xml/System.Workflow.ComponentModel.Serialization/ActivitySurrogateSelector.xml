@@ -19,14 +19,14 @@
     <summary>Selects the surrogate that can be used to serialize an <see cref="T:System.Workflow.ComponentModel.Activity" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A serialization surrogate gives you an object that can handle the serialization requirements of a different object and, if necessary, can transform the serialized data.  
-  
+ 
+A serialization surrogate gives you an object that can handle the serialization requirements of a different object and, if necessary, can transform the serialized data.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <returns>The appropriate surrogate for the specified type and context.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of surrogate returned is dependent upon what type is assignable from `type`.  
-  
+The type of surrogate returned is dependent upon what type is assignable from `type`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -19,20 +19,20 @@
     <summary>An activity that demarcates a transaction boundary.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this activity begins executing, a new <xref:System.Transactions.Transaction> is started if one does not already exist. The transaction commits when the activity and all other participants in the transaction have completed successfully.  
-  
+When this activity begins executing, a new <xref:System.Transactions.Transaction> is started if one does not already exist. The transaction commits when the activity and all other participants in the transaction have completed successfully.  
+ 
 > [!NOTE]
 >  The <xref:System.Activities.Statements.TryCatch.Finally%2A> activity member of a <xref:System.Activities.Statements.TryCatch> activity that is the child of a <xref:System.Activities.Statements.TransactionScope> will not execute if an unhandled exception propagates past the <xref:System.Activities.Statements.TransactionScope> boundary.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Basic TransactionScope](~/docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md) sample.  
-  
- [!code-csharp[wfs_NestedTransactionScope#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nestedtransactionscope/cs/program.cs#1)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Basic TransactionScope](~/docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md) sample.  
+ 
+[!code-csharp[wfs_NestedTransactionScope#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nestedtransactionscope/cs/program.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,12 +51,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Statements.TransactionScope" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Basic TransactionScope](~/docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md) sample.  
-  
- [!code-csharp[wfs_NestedTransactionScope#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nestedtransactionscope/cs/program.cs#1)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Basic TransactionScope](~/docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md) sample.  
+ 
+[!code-csharp[wfs_NestedTransactionScope#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nestedtransactionscope/cs/program.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,10 +84,10 @@
           <see langword="true" /> if the workflow should be aborted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <value>The activity that is scheduled when the <see cref="T:System.Activities.Statements.TransactionScope" /> executes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@
         <value>The <see cref="T:System.Transactions.IsolationLevel" /> for this <see cref="T:System.Activities.Statements.TransactionScope" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,17 +274,17 @@
         <value>The <see cref="T:System.TimeSpan" /> that indicates the timeout period for the transaction used for this <see cref="T:System.Activities.Statements.TransactionScope" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
+This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates setting the Timeout property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Basic TransactionScope](~/docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md) sample.  
-  
- [!code-csharp[wfs_NestedTransactionScope#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nestedtransactionscope/cs/program.cs#1)]  
-  
+The following code sample demonstrates setting the Timeout property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Basic TransactionScope](~/docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md) sample.  
+ 
+[!code-csharp[wfs_NestedTransactionScope#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nestedtransactionscope/cs/program.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

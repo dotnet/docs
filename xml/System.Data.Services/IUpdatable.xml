@@ -11,16 +11,16 @@
     <summary>An interface used to insert or update a resource by the HTTP POST method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.IUpdatable> interface is resource independent. The methods that return objects representing resources can return anything.  
-  
- The returned object is an opaque object that represents the resource. To use the reference to read or update a value, the same opaque object is passed back to <xref:System.Data.Services.IUpdatable>.  
-  
- Implementation of <xref:System.Data.Services.IUpdatable> must track the mapping between this opaque object to the object it represents. When the resource is serialized and a common language runtime (CLR) instance of the correct type is needed, the ResolveResource method on <xref:System.Data.Services.IUpdatable> is called with the opaque object.  
-  
- To serialize the object, call the <xref:System.Data.Services.IUpdatable.ResolveResource%2A> method on <xref:System.Data.Services.IUpdatable>.  
-  
+The <xref:System.Data.Services.IUpdatable> interface is resource independent. The methods that return objects representing resources can return anything.  
+ 
+The returned object is an opaque object that represents the resource. To use the reference to read or update a value, the same opaque object is passed back to <xref:System.Data.Services.IUpdatable>.  
+ 
+Implementation of <xref:System.Data.Services.IUpdatable> must track the mapping between this opaque object to the object it represents. When the resource is serialized and a common language runtime (CLR) instance of the correct type is needed, the ResolveResource method on <xref:System.Data.Services.IUpdatable> is called with the opaque object.  
+ 
+To serialize the object, call the <xref:System.Data.Services.IUpdatable.ResolveResource%2A> method on <xref:System.Data.Services.IUpdatable>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,12 +91,12 @@
         <returns>The object representing a resource of specified type and belonging to the specified container.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Services.IUpdatable.CreateResource%2A> is called to insert a new resource by the HTTP POST method. The first parameter points to the container that the resource belongs to and the second parameter is the namespace-qualified name of the resource type that needs to be created.  
-  
- The second parameter is most useful when using inheritance. The return type need not be the actual CLR instance of the resource. It can be anything, for example, a cookie, that the implementation requires.  
-  
+<xref:System.Data.Services.IUpdatable.CreateResource%2A> is called to insert a new resource by the HTTP POST method. The first parameter points to the container that the resource belongs to and the second parameter is the namespace-qualified name of the resource type that needs to be created.  
+ 
+The second parameter is most useful when using inheritance. The return type need not be the actual CLR instance of the resource. It can be anything, for example, a cookie, that the implementation requires.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <summary>Deletes the specified resource.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `targetResource` is the opaque object returned by <xref:System.Data.Services.IUpdatable.GetResource%2A> or <xref:System.Data.Services.IUpdatable.CreateResource%2A>.  
-  
+The `targetResource` is the opaque object returned by <xref:System.Data.Services.IUpdatable.GetResource%2A> or <xref:System.Data.Services.IUpdatable.CreateResource%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,10 +176,10 @@
         <returns>The value of the object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called for scalar properties or complex properties. For a scalar property, the returned object should be the actual value.  
-  
+This method is called for scalar properties or complex properties. For a scalar property, the returned object should be the actual value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <summary>Removes the specified value from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the specified resource from the collection identified by a navigation property on the target object. This operation deletes the relationship between the two resource objects bound by the relationship.  
-  
+Removes the specified resource from the collection identified by a navigation property on the target object. This operation deletes the relationship between the two resource objects bound by the relationship.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,12 +259,12 @@
         <returns>Returns the instance of the resource represented by the specified resource object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called to resolve the opaque object returned by the <xref:System.Data.Services.IUpdatable.CreateResource%2A> or <xref:System.Data.Services.IUpdatable.GetResource%2A> API into the CLR instance. This is normally called after <xref:System.Data.Services.IUpdatable.SaveChanges%2A> to serialize the resource for POST methods.  
-  
- This method is also called if there are update interceptors invoked with the common language runtime (CLR) resource instances. It can be used if the provider supports optimistic concurrency and the resource type has concurrency tokens defined by <xref:System.Data.Services.ETagAttribute> in a CLR-based provider.  
-  
+This method is called to resolve the opaque object returned by the <xref:System.Data.Services.IUpdatable.CreateResource%2A> or <xref:System.Data.Services.IUpdatable.GetResource%2A> API into the CLR instance. This is normally called after <xref:System.Data.Services.IUpdatable.SaveChanges%2A> to serialize the resource for POST methods.  
+ 
+This method is also called if there are update interceptors invoked with the common language runtime (CLR) resource instances. It can be used if the provider supports optimistic concurrency and the resource type has concurrency tokens defined by <xref:System.Data.Services.ETagAttribute> in a CLR-based provider.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <summary>Saves all the changes that have been made by using the <see cref="T:System.Data.Services.IUpdatable" /> APIs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.IUpdatable> implementation must track all changes until <xref:System.Data.Services.IUpdatable.SaveChanges%2A> is called and then save all changes when <xref:System.Data.Services.IUpdatable.SaveChanges%2A> is called. The <xref:System.Data.Services.IUpdatable> implementation is expected to save all of the changes or to reject all of the changes together.  
-  
+The <xref:System.Data.Services.IUpdatable> implementation must track all changes until <xref:System.Data.Services.IUpdatable.SaveChanges%2A> is called and then save all changes when <xref:System.Data.Services.IUpdatable.SaveChanges%2A> is called. The <xref:System.Data.Services.IUpdatable> implementation is expected to save all of the changes or to reject all of the changes together.  
+ 
  ]]></format>
         </remarks>
       </Docs>

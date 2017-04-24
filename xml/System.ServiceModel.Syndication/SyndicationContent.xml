@@ -18,16 +18,16 @@
     <summary>A base class that represents syndication content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an abstract class and cannot be instantiated directly. It is used as the base class for the following syndication content types:  
-  
+This is an abstract class and cannot be instantiated directly. It is used as the base class for the following syndication content types:  
+ 
 -   <xref:System.ServiceModel.Syndication.TextSyndicationContent>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.UrlSyndicationContent>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.XmlSyndicationContent>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,19 +94,19 @@
         <value>A dictionary that contains the attribute extensions for this object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. The syndication object model allows you to add custom attributes to a syndication content type (for example, <xref:System.ServiceModel.Syndication.TextSyndicationContent>). When serialized to Atom 1.0, these attributes appear within the `<content>` element. When serialized to RSS 2.0, these attribute are ignored.  
+Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. The syndication object model allows you to add custom attributes to a syndication content type (for example, <xref:System.ServiceModel.Syndication.TextSyndicationContent>). When serialized to Atom 1.0, these attributes appear within the `<content>` element. When serialized to RSS 2.0, these attribute are ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following XML shows how a custom attribute added to a <xref:System.ServiceModel.Syndication.TextSyndicationContent> instance is serialized to Atom 1.0.  
-  
+The following XML shows how a custom attribute added to a <xref:System.ServiceModel.Syndication.TextSyndicationContent> instance is serialized to Atom 1.0.  
+ 
 ```  
 <content type="text" customAttribute="value">Some text content</content>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <returns>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string passed into this method should contain HTML.  
-  
+The string passed into this method should contain HTML.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,10 +220,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The media type parameter can be set to any known MIME type value as defined in [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95720).  
-  
+The media type parameter can be set to any known MIME type value as defined in [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95720).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,32 +383,32 @@
         <value>The name of the type of syndication content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is abstract, so it must be accessed on an instance of a syndication content type (a class derived from <xref:System.ServiceModel.Syndication.SyndicationContent>). The .NET Framework defines the following syndication content types:  
-  
+This property is abstract, so it must be accessed on an instance of a syndication content type (a class derived from <xref:System.ServiceModel.Syndication.SyndicationContent>). The .NET Framework defines the following syndication content types:  
+ 
 -   <xref:System.ServiceModel.Syndication.TextSyndicationContent>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.UrlSyndicationContent>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.XmlSyndicationContent>  
-  
+ 
 -   This class contains a number of static helper methods for creating the various types of syndication content:  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateHtmlContent%28System.String%29>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationContent.CreatePlaintextContent%28System.String%29>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateUrlContent%28System.Uri%2CSystem.String%29>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateXhtmlContent%28System.String%29>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent%28System.Object%29>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent%28System.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent%28System.Object%2CSystem.Xml.Serialization.XmlSerializer%29>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@
         <summary>Writes the contents of this <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> object to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only writes the content contained in the <xref:System.ServiceModel.Syndication.SyndicationContent>.  
-  
+This method only writes the content contained in the <xref:System.ServiceModel.Syndication.SyndicationContent>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,10 +473,10 @@
         <summary>Writes the contents of this object to the specified <see cref="T:System.Xml.XmlWriter" /> within the specified element and element namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content contained in this object is written within the specified outer element.  
-  
+The content contained in this object is written within the specified outer element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

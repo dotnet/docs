@@ -12,15 +12,15 @@
     <summary>Defines methods that deserialize request messages and serialize response messages in a service application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implement the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> interface to create a formatter extension that controls the serialization of parameters into a message and the deserialization from a message into parameters in a service application. To insert the custom formatter into the service application, assign the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> object to the <xref:System.ServiceModel.Dispatcher.DispatchOperation.Formatter%2A> property using a behavior.  
+Implement the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> interface to create a formatter extension that controls the serialization of parameters into a message and the deserialization from a message into parameters in a service application. To insert the custom formatter into the service application, assign the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> object to the <xref:System.ServiceModel.Dispatcher.DispatchOperation.Formatter%2A> property using a behavior.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a complete example, see [Operation Formatter and Operation Selector](~/docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).  
-  
+For a complete example, see [Operation Formatter and Operation Selector](~/docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Deserializes a message into an array of parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a complete example, see [Operation Formatter and Operation Selector](~/docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).  
-  
+For a complete example, see [Operation Formatter and Operation Selector](~/docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <returns>The serialized reply message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a complete example, see [Operation Formatter and Operation Selector](~/docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).  
-  
+For a complete example, see [Operation Formatter and Operation Selector](~/docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

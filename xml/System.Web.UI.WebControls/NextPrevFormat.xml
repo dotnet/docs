@@ -13,22 +13,22 @@
     <summary>Represents the display format for the previous and next month navigation controls within the <see cref="T:System.Web.UI.WebControls.Calendar" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.NextPrevFormat> enumeration represents the different styles for the next and previous month buttons on the <xref:System.Web.UI.WebControls.Calendar>.  
+The <xref:System.Web.UI.WebControls.NextPrevFormat> enumeration represents the different styles for the next and previous month buttons on the <xref:System.Web.UI.WebControls.Calendar>.  
+ 
+CustomText allows the programmer to specify custom text for the navigation controls.  
+ 
+ShortMonth displays a three-letter abbreviation for the month.  
+ 
+FullMonth displays the entire month name.  
+ 
   
- CustomText allows the programmer to specify custom text for the navigation controls.  
-  
- ShortMonth displays a three-letter abbreviation for the month.  
-  
- FullMonth displays the entire month name.  
-  
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[CalendarNextPrevFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevFormat/CS/calendarnextprevformatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CalendarNextPrevFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevFormat/VB/calendarnextprevformatvb.aspx#1)]  -->  
-  
+<!-- TODO: review snippet reference [!code-csharp[CalendarNextPrevFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevFormat/CS/calendarnextprevformatcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[CalendarNextPrevFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevFormat/VB/calendarnextprevformatvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>

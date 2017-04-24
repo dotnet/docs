@@ -14,17 +14,17 @@
     <summary>Serves as the base class for design-time data source view classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to create a custom <xref:System.Web.UI.Design.DesignerDataSourceView> object along with a custom <xref:System.Web.UI.Design.IDataSourceViewSchema> class and two custom <xref:System.Web.UI.Design.IDataSourceFieldSchema> classes.  
-  
- This example is part of a larger sample for the <xref:System.Web.UI.Design.DataSourceDesigner> class.  
-  
- [!code-csharp[DataSourceDesignerSample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceDesignerSample/CS/DataSourceDesignerSample.cs#2)]
- [!code-vb[DataSourceDesignerSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceDesignerSample/VB/DataSourceDesignerSample.vb#2)]  
+The following code example shows how to create a custom <xref:System.Web.UI.Design.DesignerDataSourceView> object along with a custom <xref:System.Web.UI.Design.IDataSourceViewSchema> class and two custom <xref:System.Web.UI.Design.IDataSourceFieldSchema> classes.  
+ 
+This example is part of a larger sample for the <xref:System.Web.UI.Design.DataSourceDesigner> class.  
+ 
+[!code-csharp[DataSourceDesignerSample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceDesignerSample/CS/DataSourceDesignerSample.cs#2)]
+[!code-vb[DataSourceDesignerSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceDesignerSample/VB/DataSourceDesignerSample.vb#2)]  
 [!code-csharp[DataSourceDesignerSample#5](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceDesignerSample/CS/DataSourceDesignerSample.cs#5)]
 [!code-vb[DataSourceDesignerSample#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceDesignerSample/VB/DataSourceDesignerSample.vb#5)]  
-  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -214,10 +214,10 @@
         <returns>A <see cref="T:System.Web.UI.DataSourceView" /> object containing data to display at design time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a complete example of using the <xref:System.Web.UI.Design.DesignerDataSourceView.GetDesignTimeData%2A> method with views, schemas, and a data source designer, see <xref:System.Web.UI.Design.DataSourceDesigner>.  
-  
+For a complete example of using the <xref:System.Web.UI.Design.DesignerDataSourceView.GetDesignTimeData%2A> method with views, schemas, and a data source designer, see <xref:System.Web.UI.Design.DataSourceDesigner>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,10 +257,10 @@
         <value>An <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a complete example of using the <xref:System.Web.UI.Design.DesignerDataSourceView.Schema%2A> method with views, schemas, and a data source designer, see <xref:System.Web.UI.Design.DataSourceDesigner>.  
-  
+For a complete example of using the <xref:System.Web.UI.Design.DesignerDataSourceView.Schema%2A> method with views, schemas, and a data source designer, see <xref:System.Web.UI.Design.DataSourceDesigner>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

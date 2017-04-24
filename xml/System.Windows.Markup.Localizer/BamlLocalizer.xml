@@ -14,18 +14,18 @@
     <summary>Extracts resources from a BAML file and generates a localized version of a BAML source.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is the primary entry point to the BAML localization API. You must create an instance of this class for each BAML source that you localize.  
+This class is the primary entry point to the BAML localization API. You must create an instance of this class for each BAML source that you localize.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizer>.  
-  
- [!code-csharp[GrabBaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GrabBaml/CSharp/GrabBaml.cs#1)]
- [!code-vb[GrabBaml#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GrabBaml/visualbasic/grabbaml.vb#1)]  
-  
+The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizer>.  
+ 
+[!code-csharp[GrabBaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GrabBaml/CSharp/GrabBaml.cs#1)]
+[!code-vb[GrabBaml#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GrabBaml/visualbasic/grabbaml.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,12 +112,12 @@
         <summary>Occurs when the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" /> encounters abnormal conditions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Under normal circumstances, <xref:System.Windows.Markup.Localizer.BamlLocalizer> ignores errors and continues localizing the source BAML input. As a result, the output BAML is partially localized. By listening for errors this event can be used to stop the <xref:System.Windows.Markup.Localizer.BamlLocalizer> and stop processing a source BAML file.  
-  
- The most common user case where <xref:System.Windows.Markup.Localizer.BamlLocalizer.ErrorNotify> might be raised is as a result of an <xref:System.Windows.Markup.Localizer.BamlLocalizer.UpdateBaml%2A> call where the update contained errors. For example, the event is raised if an attempted update set a duplicate key, or if the original and update did not have UID values that align.  
-  
+Under normal circumstances, <xref:System.Windows.Markup.Localizer.BamlLocalizer> ignores errors and continues localizing the source BAML input. As a result, the output BAML is partially localized. By listening for errors this event can be used to stop the <xref:System.Windows.Markup.Localizer.BamlLocalizer> and stop processing a source BAML file.  
+ 
+The most common user case where <xref:System.Windows.Markup.Localizer.BamlLocalizer.ErrorNotify> might be raised is as a result of an <xref:System.Windows.Markup.Localizer.BamlLocalizer.UpdateBaml%2A> call where the update contained errors. For example, the event is raised if an attempted update set a duplicate key, or if the original and update did not have UID values that align.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,13 +140,13 @@
         <returns>A copy of the localizable resources from a BAML stream, in the form of a <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Markup.Localizer.BamlLocalizer.ExtractResources%2A> method.  
-  
- [!code-csharp[GrabBaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GrabBaml/CSharp/GrabBaml.cs#1)]
- [!code-vb[GrabBaml#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GrabBaml/visualbasic/grabbaml.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Markup.Localizer.BamlLocalizer.ExtractResources%2A> method.  
+ 
+[!code-csharp[GrabBaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GrabBaml/CSharp/GrabBaml.cs#1)]
+[!code-vb[GrabBaml#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GrabBaml/visualbasic/grabbaml.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <summary>Raises the <see cref="E:System.Windows.Markup.Localizer.BamlLocalizer.ErrorNotify" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you override this method, call base, unless you do not want the derived class to raise the event.  
-  
+If you override this method, call base, unless you do not want the derived class to raise the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

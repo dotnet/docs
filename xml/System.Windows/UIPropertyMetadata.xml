@@ -14,10 +14,10 @@
     <summary>Provides property metadata for non-framework properties that do have rendering/user interface impact at the core level.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.FrameworkPropertyMetadata> (derived from this class) is the more common metadata class used for framework-level properties that also have rendering/user interface impact.  
-  
+<xref:System.Windows.FrameworkPropertyMetadata> (derived from this class) is the more common metadata class used for framework-level properties that also have rendering/user interface impact.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -157,14 +157,14 @@
           <see langword="true" /> indicates that animations are disallowed; <see langword="false" /> indicates that animations are allowed. The default is <see langword="false" /> (animations allowed).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In general, the default dependency properties available in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] framework implementation [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] can be animated. You might set this property to `true` in the metadata of your own custom dependency property to disable animations on it.  
-  
- If a property with this value `true` attempts to be used as an animation target, a runtime exception will be raised.  
-  
- Properties on any derived classes of <xref:System.Windows.PropertyMetadata> are normally defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, once the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and any properties that convey the specifics of the metadata are now considered immutable. Attempting to set <xref:System.Windows.UIPropertyMetadata.IsAnimationProhibited%2A> once <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
-  
+In general, the default dependency properties available in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] framework implementation [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] can be animated. You might set this property to `true` in the metadata of your own custom dependency property to disable animations on it.  
+ 
+If a property with this value `true` attempts to be used as an animation target, a runtime exception will be raised.  
+ 
+Properties on any derived classes of <xref:System.Windows.PropertyMetadata> are normally defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, once the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and any properties that convey the specifics of the metadata are now considered immutable. Attempting to set <xref:System.Windows.UIPropertyMetadata.IsAnimationProhibited%2A> once <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,18 +14,18 @@
     <summary>A collection of objects that inherit the <see cref="T:System.Web.Profile.ProfileProvider" /> abstract class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The profile providers for an application are exposed as a read-only <xref:System.Web.Profile.ProfileProviderCollection> through the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class. You can access a specific profile provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Profile.SqlProfileProvider>. This enables you to manage user profile properties from multiple data stores in a single application. It also allows you to access members of a specific profile provider that are not members of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
+The profile providers for an application are exposed as a read-only <xref:System.Web.Profile.ProfileProviderCollection> through the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class. You can access a specific profile provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Profile.SqlProfileProvider>. This enables you to manage user profile properties from multiple data stores in a single application. It also allows you to access members of a specific profile provider that are not members of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example lists the providers enabled for an application and their respective types.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/Providerscs.aspx#9)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/Providersvb.aspx#9)]  -->  
-  
+The following code example lists the providers enabled for an application and their respective types.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/Providerscs.aspx#9)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/Providersvb.aspx#9)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <summary>Creates a new, empty profile provider collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is not intended to be used from your code. The profile providers for an application are exposed as a read-only <xref:System.Web.Profile.ProfileProviderCollection> through the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
-  
+This constructor is not intended to be used from your code. The profile providers for an application are exposed as a read-only <xref:System.Web.Profile.ProfileProviderCollection> through the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,12 +72,12 @@
         <summary>Adds a profile provider to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be used from your code.  
-  
- Profile provider instances are added to the `ProfileProviderCollection` for an application using the [providers Element for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/9e998377-b07f-44c1-ad9b-20a60e83c18f) section of the  configuration element. You can access the profile provider collection using the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
-  
+This method is not intended to be used from your code.  
+ 
+Profile provider instances are added to the `ProfileProviderCollection` for an application using the [providers Element for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/9e998377-b07f-44c1-ad9b-20a60e83c18f) section of the  configuration element. You can access the profile provider collection using the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -107,10 +107,10 @@
         <value>An object that inherits the <see cref="T:System.Web.Profile.ProfileProvider" /> abstract class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The profile providers for an application are exposed as a read-only <xref:System.Web.Profile.ProfileProviderCollection> through the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class. You can access a specific profile provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Profile.SqlProfileProvider>. This enables you to manage user profile properties from multiple data stores in a single application. It also allows you to access members of a specific profile provider that are not members of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
-  
+The profile providers for an application are exposed as a read-only <xref:System.Web.Profile.ProfileProviderCollection> through the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class. You can access a specific profile provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Profile.SqlProfileProvider>. This enables you to manage user profile properties from multiple data stores in a single application. It also allows you to access members of a specific profile provider that are not members of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

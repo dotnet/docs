@@ -34,47 +34,47 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.PackagingProgressEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In certain situations and for specific types, multiple packaging progress events occur at the same time. These logically distinct, but temporally identical, events are combined into a single <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy.PackagingProgressEvent> and `numberCompleted` is more than 1. For example, when you print, font subsetting is performed every four pages. Each page must be cached until the subsetting is complete, and then all four <xref:System.Windows.Xps.Packaging.PackagingAction> events occur at the same time. The constructor for the resulting <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs> sets `action` to <xref:System.Windows.Xps.Packaging.PackagingAction> and sets `numberCompleted` to 4.  
-  
- For example, if a package consists of a single four-page document that uses one font and no images or other resources, the sequence of events might occur as shown in the following table.  
-  
- **The sequence of events for a simple package**  
-  
- AddingDocumentSequence  
- 1  
-  
- AddingFixedDocument  
- 1  
-  
- AddingFixedPage  
- 1  
-  
- AddingFixedPage  
- 1  
-  
- AddingFixedPage  
- 1  
-  
- AddingFixedPage  
- 1  
-  
- FontAdded  
- 1  
-  
- FixedPageCompleted  
- 4  
-  
- FixedDocumentCompleted  
- 1  
-  
- DocumentSequenceCompleted  
- 1  
-  
- XpsDocumentCommitted  
- 1  
-  
+In certain situations and for specific types, multiple packaging progress events occur at the same time. These logically distinct, but temporally identical, events are combined into a single <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy.PackagingProgressEvent> and `numberCompleted` is more than 1. For example, when you print, font subsetting is performed every four pages. Each page must be cached until the subsetting is complete, and then all four <xref:System.Windows.Xps.Packaging.PackagingAction> events occur at the same time. The constructor for the resulting <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs> sets `action` to <xref:System.Windows.Xps.Packaging.PackagingAction> and sets `numberCompleted` to 4.  
+ 
+For example, if a package consists of a single four-page document that uses one font and no images or other resources, the sequence of events might occur as shown in the following table.  
+ 
+**The sequence of events for a simple package**  
+ 
+AddingDocumentSequence  
+1  
+ 
+AddingFixedDocument  
+1  
+ 
+AddingFixedPage  
+1  
+ 
+AddingFixedPage  
+1  
+ 
+AddingFixedPage  
+1  
+ 
+AddingFixedPage  
+1  
+ 
+FontAdded  
+1  
+ 
+FixedPageCompleted  
+4  
+ 
+FixedDocumentCompleted  
+1  
+ 
+DocumentSequenceCompleted  
+1  
+ 
+XpsDocumentCommitted  
+1  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,47 +114,47 @@
         <value>An <see cref="T:System.Int32" /> that represents the number of simultaneous times that the action that is identified in <see cref="P:System.Windows.Xps.Packaging.PackagingProgressEventArgs.Action" /> has occurred.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In certain situations and for specific types, multiple packaging progress events occur at the same time. These logically distinct, but temporally identical, events are combined into a single <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy.PackagingProgressEvent> and <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs.NumberCompleted%2A> is more than 1. For example, when you print, font subsetting is performed every four pages. Each page must be cached until the subsetting is complete, and then all four <xref:System.Windows.Xps.Packaging.PackagingAction> events occur at the same time. The resulting <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs> sets <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs.Action%2A> to <xref:System.Windows.Xps.Packaging.PackagingAction> and sets <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs.NumberCompleted%2A> to 4.  
-  
- For example, if a package consists of a single four-page document that uses one font and no images or other resources, the sequence of events might occur as shown in the following table:  
-  
- **The sequence of events for a simple package**  
-  
- AddingDocumentSequence  
- 1  
-  
- AddingFixedDocument  
- 1  
-  
- AddingFixedPage  
- 1  
-  
- AddingFixedPage  
- 1  
-  
- AddingFixedPage  
- 1  
-  
- AddingFixedPage  
- 1  
-  
- FontAdded  
- 1  
-  
- FixedPageCompleted  
- 4  
-  
- FixedDocumentCompleted  
- 1  
-  
- DocumentSequenceCompleted  
- 1  
-  
- XpsDocumentCommitted  
- 1  
-  
+In certain situations and for specific types, multiple packaging progress events occur at the same time. These logically distinct, but temporally identical, events are combined into a single <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy.PackagingProgressEvent> and <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs.NumberCompleted%2A> is more than 1. For example, when you print, font subsetting is performed every four pages. Each page must be cached until the subsetting is complete, and then all four <xref:System.Windows.Xps.Packaging.PackagingAction> events occur at the same time. The resulting <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs> sets <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs.Action%2A> to <xref:System.Windows.Xps.Packaging.PackagingAction> and sets <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs.NumberCompleted%2A> to 4.  
+ 
+For example, if a package consists of a single four-page document that uses one font and no images or other resources, the sequence of events might occur as shown in the following table:  
+ 
+**The sequence of events for a simple package**  
+ 
+AddingDocumentSequence  
+1  
+ 
+AddingFixedDocument  
+1  
+ 
+AddingFixedPage  
+1  
+ 
+AddingFixedPage  
+1  
+ 
+AddingFixedPage  
+1  
+ 
+AddingFixedPage  
+1  
+ 
+FontAdded  
+1  
+ 
+FixedPageCompleted  
+4  
+ 
+FixedDocumentCompleted  
+1  
+ 
+DocumentSequenceCompleted  
+1  
+ 
+XpsDocumentCommitted  
+1  
+ 
  ]]></format>
         </remarks>
       </Docs>

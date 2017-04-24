@@ -67,10 +67,10 @@
         <value>A collection that contains the attributes that will be added to the type. The collection is empty if no attributes will be added to the type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The members are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated> event is raised  
-  
+The members are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated> event is raised  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <value>A collection that contains the interfaces that will be added to the type. The collection is empty if no interfaces will be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The members are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated> event is raised.  
-  
+The members are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,10 +117,10 @@
         <value>A collection that contains the members that will be added to the type. The collection is empty if no members will be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The members are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated> event is raised.  
-  
+The members are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>

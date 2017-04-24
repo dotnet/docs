@@ -18,14 +18,14 @@
     <summary>Marshals the COM <see langword="IDispatchEx" /> interface to either the .NET Framework <see cref="T:System.Runtime.InteropServices.Expando.IExpando" /> interface, or to the <see cref="T:System.Reflection.IReflect" /> interface, and vice versa.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because the CLR does not use this custom marshaler automatically, it must be declared as follows:  
-  
+Because the CLR does not use this custom marshaler automatically, it must be declared as follows:  
+ 
 ```  
 void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef=typeof(ExpandoToDispatchExMarhsaler))] IExpando expando);  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
         <summary>Performs necessary cleanup of the managed data when it is no longer needed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CLR calls this method to clean up managed data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.MarshalManagedToNative%2A> method.  
-  
+The CLR calls this method to clean up managed data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.MarshalManagedToNative%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,10 +78,10 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
         <summary>Performs necessary cleanup of the unmanaged data when it is no longer needed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CLR calls this method to clean up the unmanaged data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.MarshalManagedToNative%2A> method.  
-  
+The CLR calls this method to clean up the unmanaged data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.MarshalManagedToNative%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
         <returns>An instance of the custom marshaler.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All custom marshalers must implement this method, although it is not part of the <xref:System.Runtime.InteropServices.ICustomMarshaler> interface definition.  
-  
+All custom marshalers must implement this method, although it is not part of the <xref:System.Runtime.InteropServices.ICustomMarshaler> interface definition.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -135,10 +135,10 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
         <returns>-1 to indicate the type this marshaler handles is not a value type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because custom marshaling of value types is not supported in the .NET Framework, this method always returns -1.  
-  
+Because custom marshaling of value types is not supported in the .NET Framework, this method always returns -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
         <returns>A pointer to the unmanaged object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CLR calls this method with the specified instance of a managed object to convert that object from managed code to unmanaged code, and it returns a pointer to the appropriate unmanaged object, representing the COM view of that object.  
-  
+The CLR calls this method with the specified instance of a managed object to convert that object from managed code to unmanaged code, and it returns a pointer to the appropriate unmanaged object, representing the COM view of that object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -195,10 +195,10 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
         <returns>A managed object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CLR calls this method with the specified pointer to an unmanaged object to convert that object from unmanaged code to managed code, and returns a managed object representing the managed view of the unmanaged data.  
-  
+The CLR calls this method with the specified pointer to an unmanaged object to convert that object from unmanaged code to managed code, and returns a managed object representing the managed view of the unmanaged data.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

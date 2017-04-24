@@ -18,10 +18,10 @@
     <summary>Represents a top-level feed object, &lt;<see langword="feed" />&gt; in Atom 1.0 and &lt;<see langword="rss" />&gt; in RSS 2.0.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to a <`feed`> element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to Atom 1.0.  
-  
+When serialized to Atom 1.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to a <`feed`> element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to Atom 1.0.  
+ 
 |SyndicationFeed property|Serialized form|  
 |------------------------------|---------------------|  
 |`AttributeExtensions`|An attribute in the <`feed`> element for each attribute in the collection.|  
@@ -39,9 +39,9 @@
 |`LastUpdatedTime`|An <`updated`> element.|  
 |`Links`|A <`link`> element for each <xref:System.ServiceModel.Syndication.SyndicationLink> in the collection.|  
 |`Title`|A <`title`> element.|  
-  
- When serialized to RSS 2.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to an <`rss`> element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to RSS 2.0.  
-  
+ 
+When serialized to RSS 2.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to an <`rss`> element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to RSS 2.0.  
+ 
 |SyndicationFeed property|Serialized form|  
 |------------------------------|---------------------|  
 |`AttributeExtensions`|An attribute in the <`channel`> element for each attribute in the collection.|  
@@ -59,23 +59,23 @@
 |`LastUpdatedTime`|A <`lastBuildDate`> element.|  
 |`Links`|An <`a10:link`> element for each <xref:System.ServiceModel.Syndication.SyndicationLink> in the collection.|  
 |`Title`|A <`title`> element.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance and serialize it to both Atom 1.0 and RSS 2.0.  
-  
- [!code-csharp[SyndicationFeed#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#0)]
- [!code-vb[SyndicationFeed#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#0)]  
-  
- The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationFeed> is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#1](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#1)]  
-  
- The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#2](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#2)]  
-  
+The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance and serialize it to both Atom 1.0 and RSS 2.0.  
+ 
+[!code-csharp[SyndicationFeed#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#0)]
+[!code-vb[SyndicationFeed#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#0)]  
+ 
+The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationFeed> is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#1](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#1)]  
+ 
+The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#2](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -120,18 +120,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class with the specified collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection of <xref:System.ServiceModel.Syndication.SyndicationItem> objects passed into this constructor is buffered.  
+The collection of <xref:System.ServiceModel.Syndication.SyndicationItem> objects passed into this constructor is buffered.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to call this constructor.  
-  
- [!code-csharp[SyndicationFeed#3](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#3)]
- [!code-vb[SyndicationFeed#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#3)]  
-  
+The following example demonstrates how to call this constructor.  
+ 
+[!code-csharp[SyndicationFeed#3](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#3)]
+[!code-vb[SyndicationFeed#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class with the specified feed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `cloneItems` parameter is `true`, all <xref:System.ServiceModel.Syndication.SyndicationItem> instances in the source <xref:System.ServiceModel.Syndication.SyndicationFeed> instance are cloned and added to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection of the new <xref:System.ServiceModel.Syndication.SyndicationFeed> instance. If the `cloneItems` parameter is `false`, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection of the new <xref:System.ServiceModel.Syndication.SyndicationFeed> instance contains references to the existing <xref:System.ServiceModel.Syndication.SyndicationItem> instances.  
-  
+If the `cloneItems` parameter is `true`, all <xref:System.ServiceModel.Syndication.SyndicationItem> instances in the source <xref:System.ServiceModel.Syndication.SyndicationFeed> instance are cloned and added to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection of the new <xref:System.ServiceModel.Syndication.SyndicationFeed> instance. If the `cloneItems` parameter is `false`, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection of the new <xref:System.ServiceModel.Syndication.SyndicationFeed> instance contains references to the existing <xref:System.ServiceModel.Syndication.SyndicationItem> instances.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,13 +192,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class with the specified title, description, and Uniform Resource Identifier (URI).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to call this constructor.  
-  
- [!code-csharp[SyndicationFeed#4](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#4)]
- [!code-vb[SyndicationFeed#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#4)]  
-  
+The following example demonstrates how to call this constructor.  
+ 
+[!code-csharp[SyndicationFeed#4](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#4)]
+[!code-vb[SyndicationFeed#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,13 +230,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class with the specified title, description, URI, and collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to call this constructor.  
-  
- [!code-csharp[SyndicationFeed#5](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#5)]
- [!code-vb[SyndicationFeed#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#5)]  
-  
+The following example demonstrates how to call this constructor.  
+ 
+[!code-csharp[SyndicationFeed#5](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#5)]
+[!code-vb[SyndicationFeed#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,13 +270,13 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to call this constructor.  
-  
- [!code-csharp[SyndicationFeed#49](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#49)]
- [!code-vb[SyndicationFeed#49](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#49)]  
-  
+The following code shows how to call this constructor.  
+ 
+[!code-csharp[SyndicationFeed#49](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#49)]
+[!code-vb[SyndicationFeed#49](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#49)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,13 +312,13 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to call this constructor.  
-  
- [!code-csharp[SyndicationFeed#50](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#50)]
- [!code-vb[SyndicationFeed#50](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#50)]  
-  
+The following code shows how to call this constructor.  
+ 
+[!code-csharp[SyndicationFeed#50](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#50)]
+[!code-vb[SyndicationFeed#50](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#50)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,26 +344,26 @@
         <value>A dictionary that contains a collection of attribute extensions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications. When serialized to Atom 1.0, each custom attribute in the collection is written to the <`atom`> element. When serialized to RSS 2.0, each custom attribute is written to the <`channel`> element. [!INCLUDE[crexample](~/includes/crexample-md.md)] adding an attribute extension, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
+An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications. When serialized to Atom 1.0, each custom attribute in the collection is written to the <`atom`> element. When serialized to RSS 2.0, each custom attribute is written to the <`channel`> element. [!INCLUDE[crexample](~/includes/crexample-md.md)] adding an attribute extension, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to add an attribute extension to a syndication feed.  
-  
- [!code-csharp[LooselyTypedExtensions#0](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/program.cs#0)]
- <!-- TODO: review snippet reference [!code-vb[LooselyTypedExtensions#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/program.vb#0)]  -->  
-  
- The following XML shows how an attribute extension is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#14](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#14)]  
-  
- The following XML shows how an attribute extension is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#15](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#15)]  
-  
+The following code shows how to add an attribute extension to a syndication feed.  
+ 
+[!code-csharp[LooselyTypedExtensions#0](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/program.cs#0)]
+<!-- TODO: review snippet reference [!code-vb[LooselyTypedExtensions#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/program.vb#0)]  -->  
+ 
+The following XML shows how an attribute extension is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#14](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#14)]  
+ 
+The following XML shows how an attribute extension is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#15](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,26 +389,26 @@
         <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> objects that represents the authors of the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an <`author`> element. When serialized to RSS 2.0, if only a single <xref:System.ServiceModel.Syndication.SyndicationPerson> exists in the collection, it is written to a <`managingEditor`> element. Otherwise, each <xref:System.ServiceModel.Syndication.SyndicationPerson> is written to an <`a10:author`> element.  
+When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an <`author`> element. When serialized to RSS 2.0, if only a single <xref:System.ServiceModel.Syndication.SyndicationPerson> exists in the collection, it is written to a <`managingEditor`> element. Otherwise, each <xref:System.ServiceModel.Syndication.SyndicationPerson> is written to an <`a10:author`> element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to add an author to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
-  
- [!code-csharp[SyndicationFeed#8](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#8)]
- [!code-vb[SyndicationFeed#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#8)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> collection is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#16](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#16)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> collection is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#17](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#17)]  
-  
+The following code shows how to add an author to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+ 
+[!code-csharp[SyndicationFeed#8](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#8)]
+[!code-vb[SyndicationFeed#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#8)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> collection is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#16](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#16)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> collection is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#17](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,13 +434,13 @@
         <value>The base URI for the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to access the base URI of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- [!code-csharp[SyndicationFeed#48](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#48)]
- [!code-vb[SyndicationFeed#48](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#48)]  
-  
+The following code shows how to access the base URI of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
+[!code-csharp[SyndicationFeed#48](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#48)]
+[!code-vb[SyndicationFeed#48](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#48)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -466,28 +466,28 @@
         <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> objects that represent the categories for the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a <`category`> element.  
+When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a <`category`> element.  
+ 
+When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a <`category`> element.  
+ 
   
- When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a <`category`> element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to add a category to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
-  
- [!code-csharp[SyndicationFeed#10](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#10)]
- [!code-vb[SyndicationFeed#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#10)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#18](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#18)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#19](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#19)]  
-  
+The following code shows how to add a category to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+ 
+[!code-csharp[SyndicationFeed#10](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#10)]
+[!code-vb[SyndicationFeed#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#10)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#18](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#18)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#19](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#19)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -517,18 +517,18 @@
         <returns>A duplicate <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `cloneItems` parameter is `true`, all items within the <xref:System.ServiceModel.Syndication.SyndicationFeed> object are cloned; otherwise, the new <xref:System.ServiceModel.Syndication.SyndicationFeed> instance's items collection contain references to the original <xref:System.ServiceModel.Syndication.SyndicationFeed> instance's items.  
+If the `cloneItems` parameter is `true`, all items within the <xref:System.ServiceModel.Syndication.SyndicationFeed> object are cloned; otherwise, the new <xref:System.ServiceModel.Syndication.SyndicationFeed> instance's items collection contain references to the original <xref:System.ServiceModel.Syndication.SyndicationFeed> instance's items.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to call this method.  
-  
- [!code-csharp[SyndicationFeed#47](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#47)]
- [!code-vb[SyndicationFeed#47](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#47)]  
-  
+The following code shows how to call this method.  
+ 
+[!code-csharp[SyndicationFeed#47](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#47)]
+[!code-vb[SyndicationFeed#47](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#47)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,28 +554,28 @@
         <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> objects that represents the contributors to the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to a <`contributor`> element.  
+When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to a <`contributor`> element.  
+ 
+When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an <`a10:contributor`> element.  
+ 
   
- When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an <`a10:contributor`> element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to add a contributor to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
-  
- [!code-csharp[SyndicationFeed#11](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#11)]
- [!code-vb[SyndicationFeed#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#11)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collection is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#20](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#20)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collection is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#21](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#21)]  
-  
+The following code shows how to add a contributor to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+ 
+[!code-csharp[SyndicationFeed#11](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#11)]
+[!code-vb[SyndicationFeed#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#11)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collection is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#20](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#20)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collection is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#21](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -601,32 +601,32 @@
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> object that represents copyright information for the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a <`rights`> element.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a <`rights`> element.  
+ 
+When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a <`copyright`> element.  
+ 
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a <`copyright`> element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the copyright information for a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
-  
- [!code-csharp[SyndicationFeed#12](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#12)]
- [!code-vb[SyndicationFeed#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#12)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#22](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#22)]  
-  
+The following code shows how to set the copyright information for a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+ 
+[!code-csharp[SyndicationFeed#12](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#12)]
+[!code-vb[SyndicationFeed#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#12)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#22](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#22)]  
+ 
 ```  
 <rights type="text">Copyright 2007</rights>  
 ```  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#23](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#23)]  
-  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#23](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -653,10 +653,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not add the <xref:System.ServiceModel.Syndication.SyndicationCategory> object to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection.  
-  
+This method does not add the <xref:System.ServiceModel.Syndication.SyndicationCategory> object to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -683,10 +683,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not add the <xref:System.ServiceModel.Syndication.SyndicationItem> object to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection.  
-  
+This method does not add the <xref:System.ServiceModel.Syndication.SyndicationItem> object to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -713,10 +713,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new <xref:System.ServiceModel.Syndication.SyndicationLink> instance is not added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
-  
+The new <xref:System.ServiceModel.Syndication.SyndicationLink> instance is not added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -743,10 +743,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not add the <xref:System.ServiceModel.Syndication.SyndicationPerson> object to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> or <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collections.  
-  
+This method does not add the <xref:System.ServiceModel.Syndication.SyndicationPerson> object to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> or <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collections.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -772,28 +772,28 @@
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> object that represents the description of the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a <`subtitle`> element.  
+When serialized to Atom 1.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a <`subtitle`> element.  
+ 
+When serialized to RSS 2.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a <`description`> element.  
+ 
   
- When serialized to RSS 2.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a <`description`> element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
-  
- [!code-csharp[SyndicationFeed#13](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#13)]
- [!code-vb[SyndicationFeed#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#13)]  
-  
- The following XML shows how <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#24](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#24)]  
-  
- The following XML shows how <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#25](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#25)]  
-  
+The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+ 
+[!code-csharp[SyndicationFeed#13](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#13)]
+[!code-vb[SyndicationFeed#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#13)]  
+ 
+The following XML shows how <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#24](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#24)]  
+ 
+The following XML shows how <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#25](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -819,22 +819,22 @@
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" /> instance that contains the element extensions in the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
+ 
+`<mg:MyElement xmlns:mg="http://myserver/elements" />`  
+ 
+[!INCLUDE[crexample](~/includes/crexample-md.md)] adding element extensions, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
+ 
   
- `<mg:MyElement xmlns:mg="http://myserver/elements" />`  
-  
- [!INCLUDE[crexample](~/includes/crexample-md.md)] adding element extensions, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to add element extensions to a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- [!code-csharp[LooselyTypedExtensions#1](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs#1)]
- [!code-vb[LooselyTypedExtensions#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb#1)]  
-  
+The following code shows how to add element extensions to a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
+[!code-csharp[LooselyTypedExtensions#1](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs#1)]
+[!code-vb[LooselyTypedExtensions#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -860,23 +860,23 @@
         <value>The name of the tool that generated the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> is written to a <`generator`> element.  
+When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> is written to a <`generator`> element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
-  
- [!code-csharp[SyndicationFeed#39](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#39)]
- [!code-vb[SyndicationFeed#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#39)]
- [!code-xml[SyndicationFeed#39](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#39)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> property is serialized to Atom 1.0 and RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#26](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#26)]  
-  
+The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+ 
+[!code-csharp[SyndicationFeed#39](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#39)]
+[!code-vb[SyndicationFeed#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#39)]
+[!code-xml[SyndicationFeed#39](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#39)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> property is serialized to Atom 1.0 and RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#26](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#26)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -952,10 +952,10 @@
         <returns>An <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The RSS 2.0 specification allows elements and attributes that are not specified in its specification only if they are within a namespace. When the `serializedExtensionsAsAtom` parameter is `true`, the formatter automatically adds the `a10` namespace qualifier to all extensions; otherwise, the extensions are not serialized.  
-  
+The RSS 2.0 specification allows elements and attributes that are not specified in its specification only if they are within a namespace. When the `serializedExtensionsAsAtom` parameter is `true`, the formatter automatically adds the `a10` namespace qualifier to all extensions; otherwise, the extensions are not serialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -981,28 +981,28 @@
         <value>The ID of the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an <`id`> element.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an <`id`> element.  
+ 
+When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an <`a10:id`> element.  
+ 
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an <`a10:id`> element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- [!code-csharp[SyndicationFeed#40](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#40)]
- [!code-vb[SyndicationFeed#40](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#40)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> property is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#27](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#27)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#28](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#28)]  
-  
+The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
+[!code-csharp[SyndicationFeed#40](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#40)]
+[!code-vb[SyndicationFeed#40](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#40)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> property is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#27](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#27)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#28](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1028,28 +1028,28 @@
         <value>The URL for the image for the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to a <`logo`> element.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to a <`logo`> element.  
+ 
+When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to an <`image`> element.  
+ 
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to an <`image`> element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- [!code-csharp[SyndicationFeed#41](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#41)]
- [!code-vb[SyndicationFeed#41](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#41)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#29](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#29)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#30](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#30)]  
-  
+The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
+[!code-csharp[SyndicationFeed#41](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#41)]
+[!code-vb[SyndicationFeed#41](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#41)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#29](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#29)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#30](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#30)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1075,28 +1075,28 @@
         <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to <`entry`> elements.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to <`entry`> elements.  
+ 
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to <`item`> elements.  
+ 
   
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to <`item`> elements.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- [!code-csharp[SyndicationFeed#42](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#42)]
- [!code-vb[SyndicationFeed#42](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#42)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#31](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#31)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#32](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#32)]  
-  
+The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
+[!code-csharp[SyndicationFeed#42](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#42)]
+[!code-vb[SyndicationFeed#42](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#42)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#31](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#31)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#32](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#32)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1122,28 +1122,28 @@
         <value>The name of the language the feed is written in.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the `lang` attribute in the <`feed`> element.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the `lang` attribute in the <`feed`> element.  
+ 
+When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the <`language`> element.  
+ 
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the <`language`> element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- [!code-csharp[SyndicationFeed#43](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#43)]
- [!code-vb[SyndicationFeed#43](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#43)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#14](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#14)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#33](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#33)]  
-  
+The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
+[!code-csharp[SyndicationFeed#43](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#43)]
+[!code-vb[SyndicationFeed#43](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#43)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#14](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#14)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#33](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1169,28 +1169,28 @@
         <value>A <see cref="T:System.DateTimeOffset" /> instance set to the time the feed was last updated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to an <`updated`>element.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to an <`updated`>element.  
+ 
+When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to a <`lastBuildDate`> element.  
+ 
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to a <`lastBuildDate`> element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to se the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- [!code-csharp[SyndicationFeed#44](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#44)]
- [!code-vb[SyndicationFeed#44](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#44)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#34](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#34)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#35](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#35)]  
-  
+The following code shows how to se the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
+[!code-csharp[SyndicationFeed#44](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#44)]
+[!code-vb[SyndicationFeed#44](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#44)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#34](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#34)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#35](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#35)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1216,28 +1216,28 @@
         <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of <`link`> elements.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of <`link`> elements.  
+ 
+When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of <`a10:link`> elements.  
+ 
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of <`a10:link`> elements.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to add a link to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- [!code-csharp[SyndicationFeed#45](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#45)]
- [!code-vb[SyndicationFeed#45](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#45)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationFeed#36](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#36)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#36](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#36)]  
-  
+The following code shows how to add a link to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
+[!code-csharp[SyndicationFeed#45](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#45)]
+[!code-vb[SyndicationFeed#45](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#45)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationFeed#36](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#36)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#36](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#36)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1267,13 +1267,13 @@
         <returns>A <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> that contains the loaded contents.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to call this method.  
-  
- [!code-csharp[SyndicationFeed#9](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#9)]
- [!code-vb[SyndicationFeed#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#9)]  
-  
+The following example demonstrates how to call this method.  
+ 
+[!code-csharp[SyndicationFeed#9](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#9)]
+[!code-vb[SyndicationFeed#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1312,18 +1312,18 @@
         <returns>A <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived instance that contains the feed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method when you are loading a syndication item into a class derived from <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+Use this method when you are loading a syndication item into a class derived from <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to load a syndication feed from an <xref:System.Xml.XmlReader> instance.  
-  
- [!code-csharp[SyndicationFeed#9](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#9)]
- [!code-vb[SyndicationFeed#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#9)]  
-  
+The following code shows how to load a syndication feed from an <xref:System.Xml.XmlReader> instance.  
+ 
+[!code-csharp[SyndicationFeed#9](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#9)]
+[!code-vb[SyndicationFeed#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
@@ -1353,13 +1353,13 @@
         <summary>Write the syndication feed to the specified <see cref="T:System.Xml.XmlWriter" /> in Atom 1.0 format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to write out a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance in the Atom 1.0 format.  
-  
- [!code-csharp[SyndicationFeed#52](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#52)]
- [!code-vb[SyndicationFeed#52](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#52)]  
-  
+The following code shows how to write out a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance in the Atom 1.0 format.  
+ 
+[!code-csharp[SyndicationFeed#52](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#52)]
+[!code-vb[SyndicationFeed#52](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#52)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1388,13 +1388,13 @@
         <summary>Write the syndication feed to the specified <see cref="T:System.Xml.XmlWriter" /> in RSS 2.0 format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to write out a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance in the RSS 2.0 format.  
-  
- [!code-csharp[SyndicationFeed#51](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#51)]
- [!code-vb[SyndicationFeed#51](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#51)]  
-  
+The following code shows how to write out a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance in the RSS 2.0 format.  
+ 
+[!code-csharp[SyndicationFeed#51](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#51)]
+[!code-vb[SyndicationFeed#51](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#51)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1420,28 +1420,28 @@
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance that contains the title of the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is written to a <`title`> element.  
+When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is written to a <`title`> element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- [!code-csharp[SyndicationFeed#46](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#46)]
- [!code-vb[SyndicationFeed#46](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#46)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is serialized to Atom 1.0.  
-  
- [!code-csharp[SyndicationFeed#39](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#39)]
- [!code-vb[SyndicationFeed#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#39)]
- [!code-xml[SyndicationFeed#39](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#39)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationFeed#38](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#38)]  
-  
+The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
+[!code-csharp[SyndicationFeed#46](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#46)]
+[!code-vb[SyndicationFeed#46](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#46)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is serialized to Atom 1.0.  
+ 
+[!code-csharp[SyndicationFeed#39](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#39)]
+[!code-vb[SyndicationFeed#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#39)]
+[!code-xml[SyndicationFeed#39](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#39)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationFeed#38](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#38)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1477,10 +1477,10 @@
         <returns>A value that specifies whether the attribute extension was parsed successfully.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the <`feed`> (for Atom 1.0) or <`rss`> (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
-  
+Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the <`feed`> (for Atom 1.0) or <`rss`> (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">Invalid XML Encountered during read.</exception>
@@ -1513,10 +1513,10 @@
         <returns>A value that specifies whether the element extension was parsed successfully.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized element extensions.  
-  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized element extensions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
@@ -1548,10 +1548,10 @@
         <summary>Writes the attribute extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the <`feed`> (for Atom 1.0) or <`rss`> (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
-  
+Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the <`feed`> (for Atom 1.0) or <`rss`> (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1582,10 +1582,10 @@
         <summary>Writes the element extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized element extensions.  
-  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized element extensions.  
+ 
  ]]></format>
         </remarks>
       </Docs>

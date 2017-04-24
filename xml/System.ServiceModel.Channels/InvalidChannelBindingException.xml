@@ -47,12 +47,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.InvalidChannelBindingException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you want to pass an error message to the user. The content of the message parameter should be understandable to the user. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- If you also want to pass a reference to the inner exception that is the cause of the exception as well as a specified error message to the user, use the <xref:System.ServiceModel.Channels.InvalidChannelBindingException.%23ctor%28System.String%2CSystem.Exception%29> constructor.  
-  
+Use this constructor when you want to pass an error message to the user. The content of the message parameter should be understandable to the user. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+If you also want to pass a reference to the inner exception that is the cause of the exception as well as a specified error message to the user, use the <xref:System.ServiceModel.Channels.InvalidChannelBindingException.%23ctor%28System.String%2CSystem.Exception%29> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.InvalidChannelBindingException" /> class with serialization information and streaming context specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstruct the exception object transmitted over a stream.  
-  
+This constructor is called during deserialization to reconstruct the exception object transmitted over a stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,12 +103,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.InvalidChannelBindingException" /> class with a specified error message and a reference to the inner exception that is the cause of the exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you want to pass an error message and information about an inner exception to the user.  
-  
- An exception that is thrown as a direct result of a previous exception can include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor or a `null` reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
+Use this constructor when you want to pass an error message and information about an inner exception to the user.  
+ 
+An exception that is thrown as a direct result of a previous exception can include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor or a `null` reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

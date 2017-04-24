@@ -14,12 +14,12 @@
     <summary>Represents a key identifier clause that identifies a security tokens specified in the security header of the SOAP message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens Attached references refer to security tokens that are contained within the security header of the SOAP message and unattached references are security tokens that are not included within the security header of the SOAP message. These references typically affirm the authenticity of the issued security token.  
-  
- The <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause> key identifier is placed within an `<SecurityTokenReference>` element.  
-  
+Typically, the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens Attached references refer to security tokens that are contained within the security header of the SOAP message and unattached references are security tokens that are not included within the security header of the SOAP message. These references typically affirm the authenticity of the issued security token.  
+ 
+The <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause> key identifier is placed within an `<SecurityTokenReference>` element.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,10 +93,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class using the specified identifier, nonce, derived key length an owner security token type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers.  However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] will process and consume an incoming SOAP message with implied derived key identifiers.  
-  
+[!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers.  However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] will process and consume an incoming SOAP message with implied derived key identifiers.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -145,16 +145,16 @@
           <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> and the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties match the current instance; otherwise, <see langword="false" />. See the remarks for more details.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A match on the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property occurs when one of the following happens:  
-  
+A match on the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property occurs when one of the following happens:  
+ 
 -   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property for the instance represented by the `keyIdentifierClause` parameter is `null`.  
-  
+ 
 -   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property for the current instance is `null`.  
-  
+ 
 -   The <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property for the two instances are identical.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,16 +183,16 @@
           <see langword="true" /> if the <paramref name="localId" /> and <paramref name="ownerType" /> parameters match the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties; otherwise, <see langword="false" />. See the remarks for more details.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A match on the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property occurs when one of the following happens:  
-  
+A match on the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property occurs when one of the following happens:  
+ 
 -   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> propertyfor the current instance is `null`.  
-  
+ 
 -   The value of the `ownerType` parameter is `null`.  
-  
+ 
 -   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property is identical to the `ownerType` parameter for the current method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <returns>A <see cref="T:System.String" /> that represents the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.ToString%2A> method returns a string that contains the values of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId%2A> and <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> properties.  
-  
+The <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.ToString%2A> method returns a string that contains the values of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId%2A> and <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

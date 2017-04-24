@@ -35,10 +35,10 @@
     <summary>Represents XML data stored in or retrieved from a server.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class contains an instance of an <xref:System.Xml.XmlReader>-derived type, and adds SQL-specific features such as database-style null semantics by implementing the <xref:System.Data.SqlTypes.INullable> interface. When you use SqlXml, the XML value that you assign to the SqlXml instance must be consumable by an <xref:System.Xml.XmlReader>. For unicode data, the Byte Order Mark (`BOM`) must be present in the stream of data.  
-  
+This class contains an instance of an <xref:System.Xml.XmlReader>-derived type, and adds SQL-specific features such as database-style null semantics by implementing the <xref:System.Data.SqlTypes.INullable> interface. When you use SqlXml, the XML value that you assign to the SqlXml instance must be consumable by an <xref:System.Xml.XmlReader>. For unicode data, the Byte Order Mark (`BOM`) must be present in the stream of data.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -120,10 +120,10 @@
         <summary>Creates a new <see cref="T:System.Data.SqlTypes.SqlXml" /> instance and associates it with the content of the supplied <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this value is null (`Nothing` in Visual Basic), the instance is set so that <xref:System.Data.SqlTypes.INullable.IsNull%2A> returns `true`.  
-  
+If this value is null (`Nothing` in Visual Basic), the instance is set so that <xref:System.Data.SqlTypes.INullable.IsNull%2A> returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <returns>A <see cref="T:System.Xml.XmlReader" />-derived instance that contains the XML content. The actual type may vary (for example, the return value might be <see cref="T:System.Xml.XmlTextReader" />) depending on how the information is represented internally, on the server.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Data.SqlTypes.SqlXml> instance was initialized to null (`Nothing` in Visual Basic), this method returns null.  
-  
+If the <xref:System.Data.SqlTypes.SqlXml> instance was initialized to null (`Nothing` in Visual Basic), this method returns null.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">Attempt was made to access this property on a null instance of <see cref="T:System.Data.SqlTypes.SqlXml" />.</exception>
@@ -269,10 +269,10 @@
         <returns>An <see cref="T:System.Xml.Schema.XmlSchema" /> that describes the XML representation of the object that is produced by the <see cref="M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)" /> method and consumed by the <see cref="M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlTypes.SqlXml> instance is cast to an <xref:System.Xml.Serialization.IXmlSerializable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlTypes.SqlXml> instance is cast to an <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -302,10 +302,10 @@
         <summary>For a description of this member, see <see cref="M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlTypes.SqlXml> instance is cast to an <xref:System.Xml.Serialization.IXmlSerializable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlTypes.SqlXml> instance is cast to an <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -335,10 +335,10 @@
         <summary>For a description of this member, see <see cref="M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlTypes.SqlXml> instance is cast to an <xref:System.Xml.Serialization.IXmlSerializable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlTypes.SqlXml> instance is cast to an <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,10 +369,10 @@
         <value>The string representation of the XML content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve the content represented as an <xref:System.Xml.XmlReader>, call the <xref:System.Data.SqlTypes.SqlXml.CreateReader%2A> method.  
-  
+To retrieve the content represented as an <xref:System.Xml.XmlReader>, call the <xref:System.Data.SqlTypes.SqlXml.CreateReader%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

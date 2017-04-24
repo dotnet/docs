@@ -14,28 +14,28 @@
     <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [C#]  
-  
- The following sample uses a <xref:System.Windows.Media.Media3D.Vector3DConverter> structure to convert a string into a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
-  
+[C#]  
+ 
+The following sample uses a <xref:System.Windows.Media.Media3D.Vector3DConverter> structure to convert a string into a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+ 
 ```csharp  
 ...  
-  
+ 
 // Converts a String to a Vector3D using a Vector3DConverter  
 // Returns a Vector3D.  
-  
+ 
 Vector3DConverter v3DConverter = new Vector3DConverter();  
 Vector3D vector3DResult = new Vector3D();  
 string string3 = "10,20,30";      
-  
+ 
 vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);  
 // vector3DResult is equal to (10, 20, 30)  
-  
+ 
 ...  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

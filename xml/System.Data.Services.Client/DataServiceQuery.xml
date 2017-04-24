@@ -22,10 +22,10 @@
     <summary>An abstract class that represents a single query request to [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No public constructors are defined on this class. Object instances are created by using <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> or <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> on the <xref:System.Data.Services.Client.DataServiceContext> class.  
-  
+No public constructors are defined on this class. Object instances are created by using <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> or <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> on the <xref:System.Data.Services.Client.DataServiceContext> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,12 +54,12 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object that is used to track the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned <xref:System.IAsyncResult> object is used to determine when the asynchronous operation has completed. For more information, see [Asynchronous Operations](~/docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).  
-  
- The <xref:System.Data.Services.Client.DataServiceQuery.BeginExecute%2A> method uses the same semantics as the <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method, however <xref:System.Data.Services.Client.DataServiceQuery.BeginExecute%2A> asynchronously sends the request so that the call does not block processing while waiting for the results from the service. According to the standard begin-end asynchronous pattern, the provided callback is invoked when query results are retrieved.  
-  
+The returned <xref:System.IAsyncResult> object is used to determine when the asynchronous operation has completed. For more information, see [Asynchronous Operations](~/docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).  
+ 
+The <xref:System.Data.Services.Client.DataServiceQuery.BeginExecute%2A> method uses the same semantics as the <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method, however <xref:System.Data.Services.Client.DataServiceQuery.BeginExecute%2A> asynchronously sends the request so that the call does not block processing while waiting for the results from the service. According to the standard begin-end asynchronous pattern, the provided callback is invoked when query results are retrieved.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,12 +107,12 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains the results of the query operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method is used to execute the given data service query.  
-  
- The <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method generates an HTTP GET request that is set to the data service.  
-  
+The <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method is used to execute the given data service query.  
+ 
+The <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method generates an HTTP GET request that is set to the data service.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Services.Client.DataServiceQueryException">When the data service returns an HTTP 404: Resource Not Found error.</exception>
@@ -175,10 +175,10 @@
         <returns>An enumerator over the query results.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

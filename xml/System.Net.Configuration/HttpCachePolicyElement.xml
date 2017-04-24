@@ -14,14 +14,14 @@
     <summary>Represents the default HTTP cache policy for network resources. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class corresponds to the [\&lt;defaultHttpCachePolicy\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/defaulthttpcachepolicy-element-network-settings.md) configuration element.  
-  
- This class is used to specify the HTTP caching configuration that applies to network resources obtained by using the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
+This class corresponds to the [\&lt;defaultHttpCachePolicy\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/defaulthttpcachepolicy-element-network-settings.md) configuration element.  
+ 
+This class is used to specify the HTTP caching configuration that applies to network resources obtained by using the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
+ 
+This class provides programmatic access to information that can be stored in configuration files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.HttpCachePolicyElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor adds the <xref:System.Net.Configuration.HttpCachePolicyElement.MaximumAge%2A>, <xref:System.Net.Configuration.HttpCachePolicyElement.MaximumStale%2A>, <xref:System.Net.Configuration.HttpCachePolicyElement.MinimumFresh%2A>, and <xref:System.Net.Configuration.HttpCachePolicyElement.PolicyLevel%2A> properties to the collection.  
-  
+This constructor adds the <xref:System.Net.Configuration.HttpCachePolicyElement.MaximumAge%2A>, <xref:System.Net.Configuration.HttpCachePolicyElement.MaximumStale%2A>, <xref:System.Net.Configuration.HttpCachePolicyElement.MinimumFresh%2A>, and <xref:System.Net.Configuration.HttpCachePolicyElement.PolicyLevel%2A> properties to the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <value>A <see cref="T:System.TimeSpan" /> value that specifies the maximum age for cached resources specified in the configuration file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the cached copy of the resource is older than the specified time value, the resource must be revalidated by comparing the cached resource to the resource on the server.  
-  
+If the cached copy of the resource is older than the specified time value, the resource must be revalidated by comparing the cached resource to the resource on the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <value>A <see cref="T:System.TimeSpan" /> value that is set to the maximum staleness value specified in the configuration file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies the amount of time after content expiration during which the cached copy of the resource is acceptable.  
-  
+This property specifies the amount of time after content expiration during which the cached copy of the resource is acceptable.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,10 +158,10 @@
         <value>A <see cref="T:System.TimeSpan" /> value that specifies the minimum freshness specified in the configuration file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value specifies the amount of time before content expiration, during which the cached copy of the resource is acceptable.  
-  
+This value specifies the amount of time before content expiration, during which the cached copy of the resource is acceptable.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,10 +188,10 @@
         <value>A <see cref="T:System.Net.Cache.HttpRequestCacheLevel" /> value that specifies the cache behavior.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request.  
-  
+Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request.  
+ 
  ]]></format>
         </remarks>
       </Docs>

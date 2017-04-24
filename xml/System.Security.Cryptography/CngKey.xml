@@ -27,10 +27,10 @@
     <summary>Defines the core functionality for keys that are used with Cryptography Next Generation (CNG) objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class wraps NCrypt keys, not BCrypt keys. NCrypt is a subset of CNG that provides key storage functionality. BCrypt is a subset that provides base cryptographic services such as random number generation, hash functions, signatures, and encryption keys.  
-  
+This class wraps NCrypt keys, not BCrypt keys. NCrypt is a subset of CNG that provides key storage functionality. BCrypt is a subset that provides base cryptographic services such as random number generation, hash functions, signatures, and encryption keys.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -145,10 +145,10 @@
         <returns>An ephemeral key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload creates a key without a name, which means that the key is ephemeral (that is, it will not be persisted). It also creates a default <xref:System.Security.Cryptography.CngKeyCreationParameters> object that specifies a default <xref:System.Security.Cryptography.CngProvider> and other advanced parameters for the key.  
-  
+This overload creates a key without a name, which means that the key is ephemeral (that is, it will not be persisted). It also creates a default <xref:System.Security.Cryptography.CngKeyCreationParameters> object that specifies a default <xref:System.Security.Cryptography.CngProvider> and other advanced parameters for the key.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -190,10 +190,10 @@
         <returns>A persisted or ephemeral key that provides the specified algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `keyName` is provided, this overload creates a persisted key. If `keyName` is not provided, the key will be ephemeral. This overload also creates a default <xref:System.Security.Cryptography.CngKeyCreationParameters> object that specifies a default <xref:System.Security.Cryptography.CngProvider> and other advanced parameters for the key.  
-  
+If `keyName` is provided, this overload creates a persisted key. If `keyName` is not provided, the key will be ephemeral. This overload also creates a default <xref:System.Security.Cryptography.CngKeyCreationParameters> object that specifies a default <xref:System.Security.Cryptography.CngProvider> and other advanced parameters for the key.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -242,10 +242,10 @@
         <returns>A persisted or ephemeral key that provides the specified algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `keyName` is provided, this overload creates a persisted key. If `keyName` is not provided, the key will be ephemeral.  
-  
+If `keyName` is provided, this overload creates a persisted key. If `keyName` is not provided, the key will be ephemeral.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -286,13 +286,13 @@
         <summary>Removes the key that is associated with the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 -   When you call the <xref:System.Security.Cryptography.CngKey.Delete%2A> method on an ephemeral key, it closes the handle to the key.  
-  
- When you call the <xref:System.Security.Cryptography.CngKey.Delete%2A> method on a named key, the <xref:System.Security.Cryptography.CngKey> object can no longer be used after the named key is deleted.  
-  
+ 
+When you call the <xref:System.Security.Cryptography.CngKey.Delete%2A> method on a named key, the <xref:System.Security.Cryptography.CngKey> object can no longer be used after the named key is deleted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">An attempt was made to access a deleted key.</exception>
@@ -331,13 +331,13 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.CngKey" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Security.Cryptography.CngKey.Dispose%2A> when you are finished using the <xref:System.Security.Cryptography.CngKey>. The <xref:System.Security.Cryptography.CngKey.Dispose%2A> method leaves the <xref:System.Security.Cryptography.CngKey> in an unusable state. After calling <xref:System.Security.Cryptography.CngKey.Dispose%2A>, you must release all references to the <xref:System.Security.Cryptography.CngKey> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.CngKey> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call <xref:System.Security.Cryptography.CngKey.Dispose%2A> when you are finished using the <xref:System.Security.Cryptography.CngKey>. The <xref:System.Security.Cryptography.CngKey.Dispose%2A> method leaves the <xref:System.Security.Cryptography.CngKey> in an unusable state. After calling <xref:System.Security.Cryptography.CngKey.Dispose%2A>, you must release all references to the <xref:System.Security.Cryptography.CngKey> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.CngKey> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.Security.Cryptography.CngKey.Dispose%2A> before you release your last reference to the <xref:System.Security.Cryptography.CngKey>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.CngKey> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
           <see langword="true" /> if the named key exists in the default KSP; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default KSP is <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>.  
-  
+The default KSP is <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -418,10 +418,10 @@
           <see langword="true" /> if the named key exists in the specified provider; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this overload to check for the existence of a key in a KSP other than the default KSP, which is <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>.  
-  
+Use this overload to check for the existence of a key in a KSP other than the default KSP, which is <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -470,10 +470,10 @@
           <see langword="true" /> if the named key exists in the specified provider; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this overload to check for the existence of a key in a KSP other than the default <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>, and to specify key open options.  
-  
+Use this overload to check for the existence of a key in a KSP other than the default <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>, and to specify key open options.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -517,10 +517,10 @@
         <returns>A BLOB that contains the key material in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Cryptography Next Generation (CNG) allows export in any format that the underlying key storage provider (KSP) supports. For example, on Windows Vista,the default KSP (which is <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>) only allows export of private keys in the <xref:System.Security.Cryptography.CngKeyBlobFormat.Pkcs8PrivateBlob%2A>, <xref:System.Security.Cryptography.CngKeyBlobFormat.EccPrivateBlob%2A>, and <xref:System.Security.Cryptography.CngKeyBlobFormat.OpaqueTransportBlob%2A> formats. This restriction is controlled by the underlying KSP. If you use a different KSP, other formats may apply.  
-  
+Cryptography Next Generation (CNG) allows export in any format that the underlying key storage provider (KSP) supports. For example, on Windows Vista,the default KSP (which is <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>) only allows export of private keys in the <xref:System.Security.Cryptography.CngKeyBlobFormat.Pkcs8PrivateBlob%2A>, <xref:System.Security.Cryptography.CngKeyBlobFormat.EccPrivateBlob%2A>, and <xref:System.Security.Cryptography.CngKeyBlobFormat.OpaqueTransportBlob%2A> formats. This restriction is controlled by the underlying KSP. If you use a different KSP, other formats may apply.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -560,10 +560,10 @@
         <value>An object that specifies the export policy for the key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The export policy controls the export frequency and format for the key.  
-  
+The export policy controls the export frequency and format for the key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -605,26 +605,26 @@
         <returns>An object that contains the raw value of the specified property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The purpose of this method is to return the value of an arbitrary property of the key. The typical way to retrieve properties is by using the property accessors provided by the <xref:System.Security.Cryptography.CngKey> class. <xref:System.Security.Cryptography.CngKey> provides wrappers for several, but not all, properties. The <xref:System.Security.Cryptography.CngKey.GetProperty%2A> method is primarily used to access the value of a property that is not wrapped.  
-  
- This method is useful in the following cases:  
-  
+The purpose of this method is to return the value of an arbitrary property of the key. The typical way to retrieve properties is by using the property accessors provided by the <xref:System.Security.Cryptography.CngKey> class. <xref:System.Security.Cryptography.CngKey> provides wrappers for several, but not all, properties. The <xref:System.Security.Cryptography.CngKey.GetProperty%2A> method is primarily used to access the value of a property that is not wrapped.  
+ 
+This method is useful in the following cases:  
+ 
 -   A new version of the operating system supports a new Cryptography Next Generation (CNG) key property that does not have a wrapper.  
-  
+ 
 -   You add a custom property to the key.  
-  
- The `options` parameter is specifically used to indicate the following:  
-  
+ 
+The `options` parameter is specifically used to indicate the following:  
+ 
 -   Whether the property is built-in, or custom.  
-  
+ 
 -   Whether the property should be persisted with the key.  
-  
- These options must match the value that the property was set with, or the property will not be found.  
-  
- <xref:System.Security.Cryptography.CryptographicException> is thrown if the property cannot be found. You should call the <xref:System.Security.Cryptography.CngKey.HasProperty%2A> method first to avoid the exception instead of wrapping the method call in a `try/catch` block.  
-  
+ 
+These options must match the value that the property was set with, or the property will not be found.  
+ 
+<xref:System.Security.Cryptography.CryptographicException> is thrown if the property cannot be found. You should call the <xref:System.Security.Cryptography.CngKey.HasProperty%2A> method first to avoid the exception instead of wrapping the method call in a `try/catch` block.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -664,12 +664,12 @@
         <value>A safe handle that represents the key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned handle is a duplicate of the handle in the current <xref:System.Security.Cryptography.CngKey> object. It will persist even if the current <xref:System.Security.Cryptography.CngKey> is disposed, and must be disposed of separately.  
-  
- You can release the current object and the handle in any order without any adverse effects.  
-  
+The returned handle is a duplicate of the handle in the current <xref:System.Security.Cryptography.CngKey> object. It will persist even if the current <xref:System.Security.Cryptography.CngKey> is disposed, and must be disposed of separately.  
+ 
+You can release the current object and the handle in any order without any adverse effects.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -713,18 +713,18 @@
           <see langword="true" /> if the specified property is found; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `options` parameter is specifically used to indicate the following:  
-  
+The `options` parameter is specifically used to indicate the following:  
+ 
 -   Whether the property is built-in, or custom.  
-  
+ 
 -   Whether the property should be persisted with the key.  
-  
- These options must match the value that the property was set with, or the property will not be found.  
-  
- This method operates correctly even if the property is set to `false` or zero.  
-  
+ 
+These options must match the value that the property was set with, or the property will not be found.  
+ 
+This method operates correctly even if the property is set to `false` or zero.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -764,13 +764,13 @@
         <returns>A new key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default KSP is <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>.  
-  
+The default KSP is <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>.  
+ 
 > [!IMPORTANT]
 >  On Windows operating systems before Windows 7 and Windows Server 2008 R2, some CNG key binary large object (BLOB) formats are not supported.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -818,12 +818,12 @@
         <returns>A new key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  On Windows operating systems before Windows 7 and Windows Server 2008 R2, some CNG key binary large object (BLOB) formats are not supported.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -868,18 +868,18 @@
           <see langword="true" /> if the key is ephemeral; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property determines whether the key is ephemeral (that is, the key exists only for the lifetime of the handle), or persisted (that is, the key exists independently of the handle).  
-  
- The return value depends on the method that is used to obtain the key:  
-  
+This property determines whether the key is ephemeral (that is, the key exists only for the lifetime of the handle), or persisted (that is, the key exists independently of the handle).  
+ 
+The return value depends on the method that is used to obtain the key:  
+ 
 -   If the key was not opened by the <xref:System.Security.Cryptography.CngKey.Open%28Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle%2CSystem.Security.Cryptography.CngKeyHandleOpenOptions%29> method overload, the common language runtime (CLR) is managing the key and can determine whether it is ephemeral.  
-  
+ 
 -   If the key was opened by the <xref:System.Security.Cryptography.CngKey.Open%28Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle%2CSystem.Security.Cryptography.CngKeyHandleOpenOptions%29> method overload, the CLR cannot determine whether it is ephemeral. Therefore, the key is assumed to be persisted. However, if this method is used to open a handle to a key that is created by the CLR, the CLR will be able to determine whether it is ephemeral.  
-  
- This property does not have a public setter; it is read-only.  
-  
+ 
+This property does not have a public setter; it is read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1043,14 +1043,14 @@
         <returns>An existing key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload uses the following defaults:  
-  
+This overload uses the following defaults:  
+ 
 -   Key storage provider (KSP): <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>. Use the <xref:System.Security.Cryptography.CngKey.Open%28System.String%2CSystem.Security.Cryptography.CngProvider%29> overload if you want to specify another KSP.  
-  
+ 
 -   Key open options: <xref:System.Security.Cryptography.CngKeyOpenOptions?displayProperty=fullName>.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1097,12 +1097,12 @@
         <returns>An existing key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload enables advanced users to use the CNG classes even if they rely on platform invoke or the managed interop capability of C++. For example, if you have a native library that returns the key as an NCRYPT_KEY_HANDLE, this overload lets you create a managed wrapper around the key and use the CNG classes to manipulate it.  
-  
- When you open a key by using its handle, you cannot determine the key's ephemeral state and must specify it yourself. Several properties of the <xref:System.Security.Cryptography.CngKey> class rely on this value to be correct. Therefore, make sure that you pass the correct flag value to the <xref:System.Security.Cryptography.CngKey.Open%2A> methods.  
-  
+This overload enables advanced users to use the CNG classes even if they rely on platform invoke or the managed interop capability of C++. For example, if you have a native library that returns the key as an NCRYPT_KEY_HANDLE, this overload lets you create a managed wrapper around the key and use the CNG classes to manipulate it.  
+ 
+When you open a key by using its handle, you cannot determine the key's ephemeral state and must specify it yourself. Several properties of the <xref:System.Security.Cryptography.CngKey> class rely on this value to be correct. Therefore, make sure that you pass the correct flag value to the <xref:System.Security.Cryptography.CngKey.Open%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1146,10 +1146,10 @@
         <returns>An existing key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the <xref:System.Security.Cryptography.CngKey.Open%28System.String%29> method overload, this overload lets you specify the provider. In addition, a default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> is created and bound to the key.  
-  
+Unlike the <xref:System.Security.Cryptography.CngKey.Open%28System.String%29> method overload, this overload lets you specify the provider. In addition, a default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> is created and bound to the key.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1198,10 +1198,10 @@
         <returns>An existing key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the <xref:System.Security.Cryptography.CngKey.Open%28System.String%29> method overload, this overload lets you specify both the provider and the key open options.  
-  
+Unlike the <xref:System.Security.Cryptography.CngKey.Open%28System.String%29> method overload, this overload lets you specify both the provider and the key open options.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1245,12 +1245,12 @@
         <value>The parent window handle for the key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The parent window handle for the key is used in UI prompts, such as smart card PIN prompts. This value is not persisted with persisted keys.  
-  
- We recommend that you always set this property for keys that display a user interface. Do not use the default value of `null` for such keys.  
-  
+The parent window handle for the key is used in UI prompts, such as smart card PIN prompts. This value is not persisted with persisted keys.  
+ 
+We recommend that you always set this property for keys that display a user interface. Do not use the default value of `null` for such keys.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1319,12 +1319,12 @@
         <value>A handle to the KSP.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned handle is a duplicate of the handle in the current <xref:System.Security.Cryptography.CngKey> object. It will persist even if the current <xref:System.Security.Cryptography.CngKey> is disposed, and must be disposed of separately.  
-  
- You can release the current object and the handle in any order without any adverse effects.  
-  
+The returned handle is a duplicate of the handle in the current <xref:System.Security.Cryptography.CngKey> object. It will persist even if the current <xref:System.Security.Cryptography.CngKey> is disposed, and must be disposed of separately.  
+ 
+You can release the current object and the handle in any order without any adverse effects.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1364,10 +1364,10 @@
         <summary>Sets a named property on the key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to add a new custom property to an existing key by using a <xref:System.Security.Cryptography.CngProperty> object. The options set on the <xref:System.Security.Cryptography.CngProperty> object must exactly match the options in the <xref:System.Security.Cryptography.CngKey.GetProperty%2A> call. Otherwise, the property will not be found.  
-  
+This method enables you to add a new custom property to an existing key by using a <xref:System.Security.Cryptography.CngProperty> object. The options set on the <xref:System.Security.Cryptography.CngProperty> object must exactly match the options in the <xref:System.Security.Cryptography.CngKey.GetProperty%2A> call. Otherwise, the property will not be found.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1404,10 +1404,10 @@
         <value>An object that contains configuration parameters for displaying the UI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The key UI policy is used with UI prompts such as smart card PIN prompts. This policy also controls password dialog boxes for protected keys.  
-  
+The key UI policy is used with UI prompts such as smart card PIN prompts. This policy also controls password dialog boxes for protected keys.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1443,10 +1443,10 @@
         <value>An alternate name for the key. If the key is ephemeral, the value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets an alternate name that can be used when accessing the key. You can use this property if the original key name does not uniquely identify the persisted key. The <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A> property will return the file name of the key as this property. The name returned by the <xref:System.Security.Cryptography.CngProvider.MicrosoftSmartCardKeyStorageProvider%2A> is implementation-dependent.  
-  
+This property gets an alternate name that can be used when accessing the key. You can use this property if the original key name does not uniquely identify the persisted key. The <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A> property will return the file name of the key as this property. The name returned by the <xref:System.Security.Cryptography.CngProvider.MicrosoftSmartCardKeyStorageProvider%2A> is implementation-dependent.  
+ 
  ]]></format>
         </remarks>
       </Docs>

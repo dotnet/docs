@@ -27,12 +27,12 @@
     <summary>Defines a function description.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <summary>Specifies the calling convention of a function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <summary>Counts the total number of parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <summary>Counts the optional parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,10 +177,10 @@
         <summary>Counts the permitted return values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <summary>Contains the return type of the function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <summary>Specifies whether the function is virtual, static, or dispatch-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -288,10 +288,10 @@
         <summary>Specifies the type of a property function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@
         <summary>Indicates the size of <see cref="F:System.Runtime.InteropServices.FUNCDESC.cParams" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,10 +362,10 @@
         <summary>Stores the count of errors a function can return on a 16-bit system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -399,10 +399,10 @@
         <summary>Identifies the function member ID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -436,10 +436,10 @@
         <summary>Specifies the offset in the VTBL for <see cref="F:System.Runtime.InteropServices.FUNCKIND.FUNC_VIRTUAL" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,10 +473,10 @@
         <summary>Indicates the <see cref="T:System.Runtime.InteropServices.FUNCFLAGS" /> of a function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `FUNCDESC`, see the MSDN Library.  
-  
+For additional information about `FUNCDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

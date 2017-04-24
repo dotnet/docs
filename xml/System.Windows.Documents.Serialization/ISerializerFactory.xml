@@ -11,10 +11,10 @@
     <summary>Provides a means for creating a software component that can serialize any part of a [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] application's content to a manufacturer's proprietary format.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Serialization.XpsSerializerFactory> in the <xref:System.Windows.Xps.Serialization> namespace is Microsoft's implementation of this interface for serialized [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] content.  
-  
+<xref:System.Windows.Xps.Serialization.XpsSerializerFactory> in the <xref:System.Windows.Xps.Serialization> namespace is Microsoft's implementation of this interface for serialized [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] content.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="usage">
@@ -64,10 +64,10 @@
         <value>A <see cref="T:System.String" /> representing the proprietary format's default file extension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is most useful if the leading period is included, for example, ".zzz"  
-  
+This method is most useful if the leading period is included, for example, ".zzz"  
+ 
  ]]></format>
         </remarks>
       </Docs>

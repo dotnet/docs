@@ -29,18 +29,18 @@
     <summary>Specifies the position in a stream to use for seeking.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.SeekOrigin> is used by the `Seek` methods of <xref:System.IO.Stream>, <xref:System.IO.BufferedStream>, <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream>, <xref:System.IO.BinaryWriter>, and other classes. The `Seek` methods take an offset parameter that is relative to the position specified by <xref:System.IO.SeekOrigin>.  
+<xref:System.IO.SeekOrigin> is used by the `Seek` methods of <xref:System.IO.Stream>, <xref:System.IO.BufferedStream>, <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream>, <xref:System.IO.BinaryWriter>, and other classes. The `Seek` methods take an offset parameter that is relative to the position specified by <xref:System.IO.SeekOrigin>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to read backwards starting at the end of the stream, and how to read from a specified point in the stream.  
-  
- [!code-csharp[System.IO.FileStream.Seek#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.filestream.seek/cs/source.cs#1)]
- [!code-vb[System.IO.FileStream.Seek#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.filestream.seek/vb/source.vb#1)]  
-  
+The following example shows how to read backwards starting at the end of the stream, and how to read from a specified point in the stream.  
+ 
+[!code-csharp[System.IO.FileStream.Seek#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.filestream.seek/cs/source.cs#1)]
+[!code-vb[System.IO.FileStream.Seek#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.filestream.seek/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

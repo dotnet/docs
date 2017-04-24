@@ -19,12 +19,12 @@
     <summary>Allows a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> to create and manage execution contexts for its child activities. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,12 +49,12 @@
         <summary>Marks an execution context as completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist``Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
-  
- The overload of <xref:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext%2A> that does not have the `forcePersist` parameter effectively uses a value of `false`, so that by default, completed execution contexts are not persisted.  
-  
+The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist``Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
+ 
+The overload of <xref:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext%2A> that does not have the `forcePersist` parameter effectively uses a value of `false`, so that by default, completed execution contexts are not persisted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -86,12 +86,12 @@
         <summary>Marks an execution context as completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist``Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
-  
- The overload of <xref:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext%2A> that does not have the `forcePersist` parameter effectively uses a value of `false`, so that by default, completed execution contexts are not persisted.  
-  
+The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist``Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
+ 
+The overload of <xref:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext%2A> that does not have the `forcePersist` parameter effectively uses a value of `false`, so that by default, completed execution contexts are not persisted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -165,10 +165,10 @@
         <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> associated with the designated <see cref="T:System.Workflow.ComponentModel.Activity" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns the first context for an activity with the same qualified name as the designated activity.  
-  
+Returns the first context for an activity with the same qualified name as the designated activity.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

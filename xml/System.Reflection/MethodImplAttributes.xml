@@ -27,49 +27,49 @@
     <summary>Specifies flags for the attributes of a method implementation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The attributes are combined using the bitwise OR operation as follows:  
-  
- **Code implementation masks:**  
-  
+The attributes are combined using the bitwise OR operation as follows:  
+ 
+**Code implementation masks:**  
+ 
 -   `CodeTypeMask`  
-  
+ 
 -   `IL`  
-  
+ 
 -   `Native`  
-  
+ 
 -   `OPTIL`  
-  
+ 
 -   `Runtime`  
-  
- **Managed masks:**  
-  
+ 
+**Managed masks:**  
+ 
 -   `ManagedMask`  
-  
+ 
 -   `Unmanaged`  
-  
+ 
 -   `Managed`  
-  
- **Implementation information and interop masks:**  
-  
+ 
+**Implementation information and interop masks:**  
+ 
 -   `ForwardRef`  
-  
+ 
 -   `PreserveSig`  
-  
+ 
 -   `InternalCall`  
-  
+ 
 -   `Synchronized`  
-  
+ 
 -   `NoInlining`  
-  
+ 
 -   `NoOptimization`  
-  
+ 
 -   `MaxMethodImplVal`  
-  
+ 
 > [!NOTE]
 >  Locking on the instance or on the type, as with the Synchronized flag, is not recommended for public types, because code other than your own can take locks on public types and instances. This might cause deadlocks or other synchronization problems.  
-  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

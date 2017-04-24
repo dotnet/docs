@@ -24,22 +24,22 @@
     <summary>Represents an SQL statement that is executed while connected to a data source, and is implemented by .NET Framework data providers that access relational databases.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.IDbCommand> interface enables an inheriting class to implement a Command class, which represents an SQL statement that is executed at a data source. For more information about Command classes, see [Executing a Command](~/docs/framework/data/adonet/executing-a-command.md).  
+The <xref:System.Data.IDbCommand> interface enables an inheriting class to implement a Command class, which represents an SQL statement that is executed at a data source. For more information about Command classes, see [Executing a Command](~/docs/framework/data/adonet/executing-a-command.md).  
+ 
+An application does not create an instance of the <xref:System.Data.IDbCommand> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbCommand>.  
+ 
+Classes that inherit <xref:System.Data.IDbCommand> must implement all inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDbCommand> interface defines the <xref:System.Data.IDbCommand.ExecuteNonQuery%2A> method. In turn, the <xref:System.Data.SqlClient.SqlCommand> class inherits this method, and also defines the <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> method.  
+ 
   
- An application does not create an instance of the <xref:System.Data.IDbCommand> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbCommand>.  
-  
- Classes that inherit <xref:System.Data.IDbCommand> must implement all inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDbCommand> interface defines the <xref:System.Data.IDbCommand.ExecuteNonQuery%2A> method. In turn, the <xref:System.Data.SqlClient.SqlCommand> class inherits this method, and also defines the <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates instances of the derived classes, <xref:System.Data.SqlClient.SqlConnection>, <xref:System.Data.SqlClient.SqlCommand>, and <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it to the console. Finally, the example closes the <xref:System.Data.SqlClient.SqlDataReader>, then the <xref:System.Data.SqlClient.SqlConnection>.  
-  
- [!code-csharp[Classic WebData SqlCommand Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlCommand Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlCommand Example/VB/source.vb#1)]  
-  
+The following example creates instances of the derived classes, <xref:System.Data.SqlClient.SqlConnection>, <xref:System.Data.SqlClient.SqlCommand>, and <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it to the console. Finally, the example closes the <xref:System.Data.SqlClient.SqlDataReader>, then the <xref:System.Data.SqlClient.SqlConnection>.  
+ 
+[!code-csharp[Classic WebData SqlCommand Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlCommand Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlCommand Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -118,10 +118,10 @@
         <summary>Attempts to cancels the execution of an <see cref="T:System.Data.IDbCommand" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is nothing to cancel, nothing happens. However, if there is a command in process, and the attempt to cancel fails, no exception is generated.  
-  
+If there is nothing to cancel, nothing happens. However, if there is a command in process, and the attempt to cancel fails, no exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,18 +152,18 @@
         <value>The text command to execute. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Data.IDbCommand.CommandType%2A> property is set to `StoredProcedure`, set the <xref:System.Data.IDbCommand.CommandText%2A> property to the name of the stored procedure. The user may be required to use escape character syntax if the stored procedure name contains any special characters. The command will call this stored procedure when you call one of the Execute methods.  
+When the <xref:System.Data.IDbCommand.CommandType%2A> property is set to `StoredProcedure`, set the <xref:System.Data.IDbCommand.CommandText%2A> property to the name of the stored procedure. The user may be required to use escape character syntax if the stored procedure name contains any special characters. The command will call this stored procedure when you call one of the Execute methods.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an instance of a derived class, <xref:System.Data.OleDb.OleDbCommand> and sets some of its properties.  
-  
- [!code-csharp[Classic WebData IDbCommand.CommandText Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandText Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbCommand.CommandText Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandText Example/VB/source.vb#1)]  
-  
+The following example creates an instance of a derived class, <xref:System.Data.OleDb.OleDbCommand> and sets some of its properties.  
+ 
+[!code-csharp[Classic WebData IDbCommand.CommandText Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandText Example/CS/source.cs#1)]
+[!code-vb[Classic WebData IDbCommand.CommandText Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandText Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,13 +194,13 @@
         <value>The time (in seconds) to wait for the command to execute. The default value is 30 seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of a derived class, <xref:System.Data.SqlClient.SqlCommand> and sets some of its properties.  
-  
- [!code-csharp[Classic WebData IDbCommand.CommandTimeout Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandTimeout Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbCommand.CommandTimeout Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandTimeout Example/VB/source.vb#1)]  
-  
+The following example creates an instance of a derived class, <xref:System.Data.SqlClient.SqlCommand> and sets some of its properties.  
+ 
+[!code-csharp[Classic WebData IDbCommand.CommandTimeout Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandTimeout Example/CS/source.cs#1)]
+[!code-vb[Classic WebData IDbCommand.CommandTimeout Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandTimeout Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value assigned is less than 0.</exception>
@@ -232,10 +232,10 @@
         <value>One of the <see cref="T:System.Data.CommandType" /> values. The default is <see langword="Text" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you set the <xref:System.Data.IDbCommand.CommandType%2A> property to `StoredProcedure`, you should set the <xref:System.Data.IDbCommand.CommandText%2A> property to the name of the stored procedure. The command executes this stored procedure when you call one of the Execute methods.  
-  
+When you set the <xref:System.Data.IDbCommand.CommandType%2A> property to `StoredProcedure`, you should set the <xref:System.Data.IDbCommand.CommandText%2A> property to the name of the stored procedure. The command executes this stored procedure when you call one of the Execute methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,10 +294,10 @@
         <returns>An <see langword="IDbDataParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When inheriting from <xref:System.Data.IDbCommand>, a .NET Framework data provider implements a strongly-typed version of <xref:System.Data.IDbCommand.CreateParameter%2A>.  
-  
+When inheriting from <xref:System.Data.IDbCommand>, a .NET Framework data provider implements a strongly-typed version of <xref:System.Data.IDbCommand.CreateParameter%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,22 +329,22 @@
         <returns>The number of rows affected.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.IDbCommand.ExecuteNonQuery%2A> to perform catalog operations (for example, querying the structure of a database or creating database objects such as tables), or to change the data in a database without using a <xref:System.Data.DataSet> by executing UPDATE, INSERT, or DELETE statements.  
+You can use the <xref:System.Data.IDbCommand.ExecuteNonQuery%2A> to perform catalog operations (for example, querying the structure of a database or creating database objects such as tables), or to change the data in a database without using a <xref:System.Data.DataSet> by executing UPDATE, INSERT, or DELETE statements.  
+ 
+Although the <xref:System.Data.IDbCommand.ExecuteNonQuery%2A> does not return any rows, any output parameters or return values mapped to parameters are populated with data.  
+ 
+For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For all other types of statements, the return value is -1.  
+ 
   
- Although the <xref:System.Data.IDbCommand.ExecuteNonQuery%2A> does not return any rows, any output parameters or return values mapped to parameters are populated with data.  
-  
- For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For all other types of statements, the return value is -1.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the derived class, <xref:System.Data.OleDb.OleDbCommand>, and then executes it. To accomplish this, the method is passed a string that is a SQL SELECT statement and a string to use to connect to the data source.  
-  
- [!code-csharp[Classic WebData OleDbCommand.ExecuteNonQuery Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteNonQuery Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbCommand.ExecuteNonQuery Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteNonQuery Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the derived class, <xref:System.Data.OleDb.OleDbCommand>, and then executes it. To accomplish this, the method is passed a string that is a SQL SELECT statement and a string to use to connect to the data source.  
+ 
+[!code-csharp[Classic WebData OleDbCommand.ExecuteNonQuery Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteNonQuery Example/CS/source.cs#1)]
+[!code-vb[Classic WebData OleDbCommand.ExecuteNonQuery Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteNonQuery Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection does not exist.  
@@ -412,17 +412,17 @@
         <returns>An <see cref="T:System.Data.IDataReader" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The caller must call the <xref:System.Data.IDbConnection.Open%2A> method of the <xref:System.Data.IDbCommand.Connection%2A> property.  
-  
- When the <xref:System.Data.IDbCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.IDbCommand.CommandText%2A> property should be set to the name of the stored procedure. The command executes this stored procedure when you call <xref:System.Data.IDbCommand.ExecuteReader%2A>.  
-  
+The caller must call the <xref:System.Data.IDbConnection.Open%2A> method of the <xref:System.Data.IDbCommand.Connection%2A> property.  
+ 
+When the <xref:System.Data.IDbCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.IDbCommand.CommandText%2A> property should be set to the name of the stored procedure. The command executes this stored procedure when you call <xref:System.Data.IDbCommand.ExecuteReader%2A>.  
+ 
 > [!NOTE]
 >  Use <xref:System.Data.CommandBehavior> to retrieve large values and binary data. Otherwise, an <xref:System.OutOfMemoryException> might occur and the connection will be closed.  
-  
- While the <xref:System.Data.IDataReader> is in use, the associated <xref:System.Data.IDbConnection> is busy serving the <xref:System.Data.IDataReader>. While in this state, no other operations can be performed on the <xref:System.Data.IDbConnection> other than closing it. This is the case until the <xref:System.Data.IDataReader.Close%2A> method of the DataReader is called. If the DataReader is created with <xref:System.Data.CommandBehavior> set to `CloseConnection`, closing the DataReader closes the connection automatically.  
-  
+ 
+While the <xref:System.Data.IDataReader> is in use, the associated <xref:System.Data.IDbConnection> is busy serving the <xref:System.Data.IDataReader>. While in this state, no other operations can be performed on the <xref:System.Data.IDbConnection> other than closing it. This is the case until the <xref:System.Data.IDataReader.Close%2A> method of the DataReader is called. If the DataReader is created with <xref:System.Data.CommandBehavior> set to `CloseConnection`, closing the DataReader closes the connection automatically.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -454,27 +454,27 @@
         <returns>The first column of the first row in the resultset.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.IDbCommand.ExecuteScalar%2A> method to retrieve a single value (for example, an aggregate value) from a database. This requires less code than using the <xref:System.Data.IDbCommand.ExecuteReader%2A> method, and then performing the operations necessary to generate the single value using the data returned by an <xref:System.Data.IDataReader>.  
-  
- A typical <xref:System.Data.IDbCommand.ExecuteScalar%2A> query can be formatted as in the following C# example:  
-  
+Use the <xref:System.Data.IDbCommand.ExecuteScalar%2A> method to retrieve a single value (for example, an aggregate value) from a database. This requires less code than using the <xref:System.Data.IDbCommand.ExecuteReader%2A> method, and then performing the operations necessary to generate the single value using the data returned by an <xref:System.Data.IDataReader>.  
+ 
+A typical <xref:System.Data.IDbCommand.ExecuteScalar%2A> query can be formatted as in the following C# example:  
+ 
 ```  
 CommandText = "select count(*) as NumberOfRegions from region";  
 Int32 count = (int) ExecuteScalar();  
 ```  
+ 
+If the first column of the first row in the result set is not found, a null reference (`Nothing` in Visual Basic) is returned. If the value in the database is `null`, the query returns `DBNull.Value`.  
+ 
   
- If the first column of the first row in the result set is not found, a null reference (`Nothing` in Visual Basic) is returned. If the value in the database is `null`, the query returns `DBNull.Value`.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the derived class, <xref:System.Data.SqlClient.SqlCommand>, and then executes it using <xref:System.Data.SqlClient.SqlCommand.ExecuteScalar%2A>. The example is passed a string that is a Transact-SQL statement that returns an aggregate result, and a string to use to connect to the data source.  
-  
- [!code-csharp[Classic WebData SqlCommand.ExecuteScalar#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlCommand.ExecuteScalar/CS/mysample.cs#1)]
- [!code-vb[Classic WebData SqlCommand.ExecuteScalar#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlCommand.ExecuteScalar/VB/mysample.vb#1)]  
-  
+The following example creates an instance of the derived class, <xref:System.Data.SqlClient.SqlCommand>, and then executes it using <xref:System.Data.SqlClient.SqlCommand.ExecuteScalar%2A>. The example is passed a string that is a Transact-SQL statement that returns an aggregate result, and a string to use to connect to the data source.  
+ 
+[!code-csharp[Classic WebData SqlCommand.ExecuteScalar#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlCommand.ExecuteScalar/CS/mysample.cs#1)]
+[!code-vb[Classic WebData SqlCommand.ExecuteScalar#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlCommand.ExecuteScalar/VB/mysample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -505,13 +505,13 @@ Int32 count = (int) ExecuteScalar();
         <value>The parameters of the SQL statement or stored procedure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the derived class, <xref:System.Data.SqlClient.SqlCommand>, and displays its parameters. In the example, the application passes a <xref:System.Data.SqlClient.SqlConnection>, a query string that is a Transact-SQL SELECT statement, and an array of <xref:System.Data.SqlClient.SqlParameter> objects.  
-  
- [!code-csharp[Classic WebData IDbCommand.Parameters Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.Parameters Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbCommand.Parameters Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.Parameters Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the derived class, <xref:System.Data.SqlClient.SqlCommand>, and displays its parameters. In the example, the application passes a <xref:System.Data.SqlClient.SqlConnection>, a query string that is a Transact-SQL SELECT statement, and an array of <xref:System.Data.SqlClient.SqlParameter> objects.  
+ 
+[!code-csharp[Classic WebData IDbCommand.Parameters Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.Parameters Example/CS/source.cs#1)]
+[!code-vb[Classic WebData IDbCommand.Parameters Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.Parameters Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -542,18 +542,18 @@ Int32 count = (int) ExecuteScalar();
         <summary>Creates a prepared (or compiled) version of the command on the data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Data.IDbCommand.CommandType%2A> property is set to `TableDirect`, <xref:System.Data.IDbCommand.Prepare%2A> does nothing. If <xref:System.Data.IDbCommand.CommandType%2A> is set to `StoredProcedure`, the call to <xref:System.Data.IDbCommand.Prepare%2A> should succeed, although it may result in a no-op. The server automatically caches plans for reuse as necessary; therefore, there is no need to call this method directly in your client application.  
+If the <xref:System.Data.IDbCommand.CommandType%2A> property is set to `TableDirect`, <xref:System.Data.IDbCommand.Prepare%2A> does nothing. If <xref:System.Data.IDbCommand.CommandType%2A> is set to `StoredProcedure`, the call to <xref:System.Data.IDbCommand.Prepare%2A> should succeed, although it may result in a no-op. The server automatically caches plans for reuse as necessary; therefore, there is no need to call this method directly in your client application.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the derived class, <xref:System.Data.OleDb.OleDbCommand>, and opens the connection. The example then prepares a stored procedure on the data source by passing a string that is a SQL Select statement and a string to use to connect to the data source.  
-  
- [!code-csharp[Classic WebData OleDbCommand.Prepare Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.Prepare Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbCommand.Prepare Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.Prepare Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the derived class, <xref:System.Data.OleDb.OleDbCommand>, and opens the connection. The example then prepares a stored procedure on the data source by passing a string that is a SQL Select statement and a string to use to connect to the data source.  
+ 
+[!code-csharp[Classic WebData OleDbCommand.Prepare Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.Prepare Example/CS/source.cs#1)]
+[!code-vb[Classic WebData OleDbCommand.Prepare Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.Prepare Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.OleDb.OleDbCommand.Connection" /> is not set.  

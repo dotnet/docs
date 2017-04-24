@@ -14,17 +14,17 @@
     <summary>Represents a row header of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The row status images (pencil, asterisk, and arrow) are resized according to the system DPI setting when the app.config file contains the following entry:  
-  
+The row status images (pencil, asterisk, and arrow) are resized according to the system DPI setting when the app.config file contains the following entry:  
+ 
 ```  
 <appSettings>  
-  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+ <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
-  
+ 
 ```  
-  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -84,13 +84,13 @@
         <returns>A new <see cref="T:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject" /> for the <see cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewRowHeaderCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A> property is referenced.  
-  
+If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewRowHeaderCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A> property is referenced.  
+ 
 > [!NOTE]
 >  To get or set <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A>, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,16 +130,16 @@
         <returns>A <see cref="T:System.Object" /> that represents the value of the cell to copy to the <see cref="T:System.Windows.Forms.Clipboard" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Depending on the value of the <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control, this method is called by the control's <xref:System.Windows.Forms.DataGridView.GetClipboardContent%2A> method to retrieve a clipboard-formatted value that represents the cell.  
-  
- The position-related parameters of this method indicate where this cell is located in the table of data representing the region defined by the selected cells in the <xref:System.Windows.Forms.DataGridView> control. Depending on the cell's position, formatting information may be returned by this method in addition to the cell value. For example, the HTML format for a cell in the first column of a row will include the tag that indicates the beginning of a row.  
-  
- The supported clipboard formats include <xref:System.Windows.Forms.DataFormats.Text?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.UnicodeText?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.Html?displayProperty=fullName>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue?displayProperty=fullName>.  
-  
- For more information, see the <xref:System.Windows.Forms.Clipboard> class.  
-  
+Depending on the value of the <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control, this method is called by the control's <xref:System.Windows.Forms.DataGridView.GetClipboardContent%2A> method to retrieve a clipboard-formatted value that represents the cell.  
+ 
+The position-related parameters of this method indicate where this cell is located in the table of data representing the region defined by the selected cells in the <xref:System.Windows.Forms.DataGridView> control. Depending on the cell's position, formatting information may be returned by this method in addition to the cell value. For example, the HTML format for a cell in the first column of a row will include the tag that indicates the beginning of a row.  
+ 
+The supported clipboard formats include <xref:System.Windows.Forms.DataFormats.Text?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.UnicodeText?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.Html?displayProperty=fullName>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue?displayProperty=fullName>.  
+ 
+For more information, see the <xref:System.Windows.Forms.Clipboard> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -319,10 +319,10 @@
         <returns>The value contained in the <see cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `rowIndex` value of -1 indicates a shared row.  
-  
+A `rowIndex` value of -1 indicates a shared row.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the <see cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" /> property of the cell is not <see langword="null" /> and <paramref name="rowIndex" /> is less than -1 or greater than or equal to the number of rows in the parent <see cref="T:System.Windows.Forms.DataGridView" />.</exception>

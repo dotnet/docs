@@ -116,10 +116,10 @@
           <see cref="T:System.ServiceModel.PeerTransportSecuritySettings" /> that contains the transport security settings for the peer channel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set only if <xref:System.ServiceModel.PeerSecuritySettings.Mode%2A> is set to <xref:System.ServiceModel.SecurityMode> or <xref:System.ServiceModel.SecurityMode>.  
-  
+This property is set only if <xref:System.ServiceModel.PeerSecuritySettings.Mode%2A> is set to <xref:System.ServiceModel.SecurityMode> or <xref:System.ServiceModel.SecurityMode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

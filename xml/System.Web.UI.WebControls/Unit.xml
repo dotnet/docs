@@ -19,27 +19,27 @@
     <summary>Represents a length measurement.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Unit> structure represents a length measurement that can be expressed in any HTML-compatible size unit. The <xref:System.Web.UI.WebControls.UnitType> enumeration lists the units of measurement that can be represented. The <xref:System.Web.UI.WebControls.Unit> is used by properties such as `BorderWidth` and `Height` to represent the length or width of the property. For example, you can set the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property of a Web Server control to a <xref:System.Web.UI.WebControls.Unit> that represents five pixels.  
-  
+The <xref:System.Web.UI.WebControls.Unit> structure represents a length measurement that can be expressed in any HTML-compatible size unit. The <xref:System.Web.UI.WebControls.UnitType> enumeration lists the units of measurement that can be represented. The <xref:System.Web.UI.WebControls.Unit> is used by properties such as `BorderWidth` and `Height` to represent the length or width of the property. For example, you can set the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property of a Web Server control to a <xref:System.Web.UI.WebControls.Unit> that represents five pixels.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Unit> class can represent values only between -32768 and 32767.  
+ 
+Use the <xref:System.Web.UI.WebControls.Unit.Value%2A> property to determine the length of the measurement. The unit of measurement is determined using the <xref:System.Web.UI.WebControls.Unit.Type%2A> property. You can convert other data types to a <xref:System.Web.UI.WebControls.Unit> by using the <xref:System.Web.UI.WebControls.Unit.Parse%2A>, <xref:System.Web.UI.WebControls.Unit.Percentage%2A>, <xref:System.Web.UI.WebControls.Unit.Pixel%2A>, and <xref:System.Web.UI.WebControls.Unit.Point%2A> methods.  
+ 
+For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>, see the <xref:System.Web.UI.WebControls.Unit> constructor.  
+ 
   
- Use the <xref:System.Web.UI.WebControls.Unit.Value%2A> property to determine the length of the measurement. The unit of measurement is determined using the <xref:System.Web.UI.WebControls.Unit.Type%2A> property. You can convert other data types to a <xref:System.Web.UI.WebControls.Unit> by using the <xref:System.Web.UI.WebControls.Unit.Parse%2A>, <xref:System.Web.UI.WebControls.Unit.Percentage%2A>, <xref:System.Web.UI.WebControls.Unit.Pixel%2A>, and <xref:System.Web.UI.WebControls.Unit.Point%2A> methods.  
-  
- For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>, see the <xref:System.Web.UI.WebControls.Unit> constructor.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
- <!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
+The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
 <!-- TODO: review snippet reference [!code-csharp[StyleClass#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#3)]  -->
 <!-- TODO: review snippet reference [!code-vb[StyleClass#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#3)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,20 +61,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Unit" /> structure with the specified double precision floating point number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified double precision floating point number.  
-  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified double precision floating point number.  
+ 
+The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.Unit.Type%2A>|<xref:System.Web.UI.WebControls.UnitType>|  
 |<xref:System.Web.UI.WebControls.Unit.Value%2A>|The value specified by `value`.|  
-  
+ 
 > [!CAUTION]
 >  If `value` is not between -32768 and 32767, an exception is thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -98,20 +98,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Unit" /> structure with the specified 32-bit signed integer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified 32-bit signed integer.  
-  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified 32-bit signed integer.  
+ 
+The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.Unit.Type%2A>|<xref:System.Web.UI.WebControls.UnitType>|  
 |<xref:System.Web.UI.WebControls.Unit.Value%2A>|The value specified by `value`.|  
-  
+ 
 > [!CAUTION]
 >  If `value` is not between -32768 and 32767, an exception is thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -135,12 +135,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Unit" /> structure with the specified length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified length. The length is specified in two parts, the length's value and the length's unit type. For example, "200Cm" represents a length of 200 centimeters. You can use any valid CSS-compliant unit expression.  
-  
- The following table lists the common unit types.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified length. The length is specified in two parts, the length's value and the length's unit type. For example, "200Cm" represents a length of 200 centimeters. You can use any valid CSS-compliant unit expression.  
+ 
+The following table lists the common unit types.  
+ 
 |Unit type|Description|  
 |---------------|-----------------|  
 |`Pixel`|Length in pixels.|  
@@ -149,17 +149,17 @@
 |`Mm`|Length in millimeters.|  
 |`Cm`|Length in centimeters.|  
 |`Percentage`|Length as a percentage of the parent element.|  
-  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
-  
+ 
+The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.Unit.Type%2A>|The unit type specified in `value`.|  
 |<xref:System.Web.UI.WebControls.Unit.Value%2A>|The value specified in `value`.|  
-  
+ 
 > [!CAUTION]
 >  If `value` is not between -32768 and 32767, an exception is thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified length is not between -32768 and 32767.</exception>
@@ -186,20 +186,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Unit" /> structure with the specified double precision floating point number and <see cref="T:System.Web.UI.WebControls.UnitType" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified double precision floating point number and <xref:System.Web.UI.WebControls.UnitType>.  
-  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified double precision floating point number and <xref:System.Web.UI.WebControls.UnitType>.  
+ 
+The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.Unit.Type%2A>|The value of `type`.|  
 |<xref:System.Web.UI.WebControls.Unit.Value%2A>|The value specified by `value`.|  
-  
+ 
 > [!CAUTION]
 >  If `value` is not between -32768 and 32767, an exception is thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -225,12 +225,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Unit" /> structure with the specified length and <see cref="T:System.Globalization.CultureInfo" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified length and <xref:System.Globalization.CultureInfo?displayProperty=fullName>. The length is specified in two parts, the length's value and the length's unit type. For example, "200Cm" represents a length of 200 centimeters. You can use any valid CSS-compliant unit expression.  
-  
- The following table lists the common unit types.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified length and <xref:System.Globalization.CultureInfo?displayProperty=fullName>. The length is specified in two parts, the length's value and the length's unit type. For example, "200Cm" represents a length of 200 centimeters. You can use any valid CSS-compliant unit expression.  
+ 
+The following table lists the common unit types.  
+ 
 |Unit type|Description|  
 |---------------|-----------------|  
 |`Pixel`|Length in pixels.|  
@@ -239,17 +239,17 @@
 |`Mm`|Length in millimeters.|  
 |`Cm`|Length in centimeters.|  
 |`Percentage`|Length as a percentage of the parent element.|  
-  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
-  
+ 
+The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.Unit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.Unit.Type%2A>|The unit type specified in `value`.|  
 |<xref:System.Web.UI.WebControls.Unit.Value%2A>|The value specified in `value`.|  
-  
+ 
 > [!CAUTION]
 >  If `value` is not between -32768 and 32767, an exception is thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified length is not between -32768 and 32767.</exception>
@@ -296,13 +296,13 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.Unit" /> that this method is called from is equal to the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Equals%2A> method to compare the <xref:System.Web.UI.WebControls.Unit> that this method is called from with the object specified by `obj`. For both objects to be equal, they must have the same values for both the <xref:System.Web.UI.WebControls.Unit.Type%2A> and <xref:System.Web.UI.WebControls.Unit.Value%2A> properties.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.Equals%2A> method to compare the <xref:System.Web.UI.WebControls.Unit> that this method is called from with the object specified by `obj`. For both objects to be equal, they must have the same values for both the <xref:System.Web.UI.WebControls.Unit.Type%2A> and <xref:System.Web.UI.WebControls.Unit.Value%2A> properties.  
+ 
 > [!NOTE]
 >  The object specified by `obj` must by a <xref:System.Web.UI.WebControls.Unit> type object for the comparison to succeed. If the object is `null`, `false` is returned.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,10 +344,10 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.Unit" /> is empty; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.IsEmpty%2A> property to determine whether the <xref:System.Web.UI.WebControls.Unit> is empty. The <xref:System.Web.UI.WebControls.Unit> is empty if the <xref:System.Web.UI.WebControls.Unit.Type%2A> property contains an enumeration value of 0.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.IsEmpty%2A> property to determine whether the <xref:System.Web.UI.WebControls.Unit> is empty. The <xref:System.Web.UI.WebControls.Unit> is empty if the <xref:System.Web.UI.WebControls.Unit.Type%2A> property contains an enumeration value of 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -376,10 +376,10 @@
           <see langword="true" /> if both <see cref="T:System.Web.UI.WebControls.Unit" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this operator to compare two <xref:System.Web.UI.WebControls.Unit> objects for equality. For both objects to be equal, they must have the same values for both the <xref:System.Web.UI.WebControls.Unit.Type%2A> and <xref:System.Web.UI.WebControls.Unit.Value%2A> properties.  
-  
+Use this operator to compare two <xref:System.Web.UI.WebControls.Unit> objects for equality. For both objects to be equal, they must have the same values for both the <xref:System.Web.UI.WebControls.Unit.Type%2A> and <xref:System.Web.UI.WebControls.Unit.Value%2A> properties.  
+ 
  The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Equals%28System.Object%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -430,10 +430,10 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.Unit" /> objects are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this operator to compare two <xref:System.Web.UI.WebControls.Unit> objects for inequality. For the objects to not be equal, they must have different values for the <xref:System.Web.UI.WebControls.Unit.Type%2A> property or the <xref:System.Web.UI.WebControls.Unit.Value%2A> property.  
-  
+Use this operator to compare two <xref:System.Web.UI.WebControls.Unit> objects for inequality. For the objects to not be equal, they must have different values for the <xref:System.Web.UI.WebControls.Unit.Type%2A> property or the <xref:System.Web.UI.WebControls.Unit.Value%2A> property.  
+ 
  The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Equals%28System.Object%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -459,21 +459,21 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the specified string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Parse%2A> static method to convert the string specified by the `s` parameter to a <xref:System.Web.UI.WebControls.Unit>.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.Parse%2A> static method to convert the string specified by the `s` parameter to a <xref:System.Web.UI.WebControls.Unit>.  
+ 
 > [!NOTE]
 >  The unit of measurement when using this method is <xref:System.Web.UI.WebControls.UnitType>.  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
 <!-- TODO: review snippet reference [!code-csharp[StyleClass#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#3)]  -->
 <!-- TODO: review snippet reference [!code-vb[StyleClass#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#3)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -501,13 +501,13 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the specified string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Parse%2A> static method to convert the string specified by `s` to a <xref:System.Web.UI.WebControls.Unit> in the culture specified by `culture`.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.Parse%2A> static method to convert the string specified by `s` to a <xref:System.Web.UI.WebControls.Unit> in the culture specified by `culture`.  
+ 
 > [!NOTE]
 >  The unit of measurement when using this method is <xref:System.Web.UI.WebControls.UnitType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -533,13 +533,13 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> of type <see cref="F:System.Web.UI.WebControls.UnitType.Percentage" /> that represents the length specified by the double-precision floating-point number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Percentage%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType> that represents the length specified by the `n` parameter. For example, if you specify 80 for *n* and use the returned unit to set the <xref:System.Web.UI.WebControls.WebControl.Height%2A> of a Web server control, the `height` attribute is set to 80%.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.Percentage%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType> that represents the length specified by the `n` parameter. For example, if you specify 80 for *n* and use the returned unit to set the <xref:System.Web.UI.WebControls.WebControl.Height%2A> of a Web server control, the `height` attribute is set to 80%.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Unit> class can represent values only between -32768 and 32767.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -565,20 +565,20 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> of type <see cref="F:System.Web.UI.WebControls.UnitType.Pixel" /> that represents the length specified by the <paramref name="n" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Pixel%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType> that represents the length specified by the `n` parameter.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.Pixel%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType> that represents the length specified by the `n` parameter.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Unit> class can represent values only between -32768 and 32767.  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  -->  
-  
-  
+<!-- TODO: review snippet reference [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  -->  
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,13 +604,13 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> of type <see cref="F:System.Web.UI.WebControls.UnitType.Point" /> that represents the length specified by the 32-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Point%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType> that represents the length specified by the `n` parameter.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.Point%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType> that represents the length specified by the `n` parameter.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Unit> class can represent values only between -32768 and 32767.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -655,10 +655,10 @@
         <returns>A <see cref="T:System.String" /> represents this <see cref="T:System.Web.UI.WebControls.Unit" /> in the culture specified by <paramref name="culture" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.ToString%2A> method to convert the <xref:System.Web.UI.WebControls.Unit> that this method is called from to a string equivalent in the specified culture.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.ToString%2A> method to convert the <xref:System.Web.UI.WebControls.Unit> that this method is called from to a string equivalent in the specified culture.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,10 +684,10 @@
         <returns>A <see cref="T:System.String" /> representing this <see cref="T:System.Web.UI.WebControls.Unit" /> in the format specified by <paramref name="formatProvider" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Unit.ToString%2A> method returns a string representation formatted with a unit <xref:System.Web.UI.WebControls.Unit.Value%2A> and an abbreviation representing the unit <xref:System.Web.UI.WebControls.Unit.Type%2A>. The following table lists <xref:System.Web.UI.WebControls.UnitType> values and their corresponding abbreviation.  
-  
+The <xref:System.Web.UI.WebControls.Unit.ToString%2A> method returns a string representation formatted with a unit <xref:System.Web.UI.WebControls.Unit.Value%2A> and an abbreviation representing the unit <xref:System.Web.UI.WebControls.Unit.Type%2A>. The following table lists <xref:System.Web.UI.WebControls.UnitType> values and their corresponding abbreviation.  
+ 
 |Unit type|Abbreviation|  
 |---------------|------------------|  
 |<xref:System.Web.UI.WebControls.UnitType>|px|  
@@ -699,9 +699,9 @@
 |<xref:System.Web.UI.WebControls.UnitType>|%|  
 |<xref:System.Web.UI.WebControls.UnitType>|em|  
 |<xref:System.Web.UI.WebControls.UnitType>|ex|  
-  
- Use `formatProvider` to specify culture-specific information used to format the <xref:System.Web.UI.WebControls.Unit.Value%2A>. If `formatProvider` is `null`, the numeric portion of the string is formatted using a default <xref:System.Globalization.NumberFormatInfo> object set for the current culture.  
-  
+ 
+Use `formatProvider` to specify culture-specific information used to format the <xref:System.Web.UI.WebControls.Unit.Value%2A>. If `formatProvider` is `null`, the numeric portion of the string is formatted using a default <xref:System.Globalization.NumberFormatInfo> object set for the current culture.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -723,13 +723,13 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.UnitType" /> enumeration values. The default is <see cref="F:System.Web.UI.WebControls.UnitType.Pixel" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Type%2A> property to determine the unit of measurement that the <xref:System.Web.UI.WebControls.Unit> represents, such as pixels. The <xref:System.Web.UI.WebControls.Unit.Type%2A> property is represented by one of the <xref:System.Web.UI.WebControls.UnitType> enumeration values.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.Type%2A> property to determine the unit of measurement that the <xref:System.Web.UI.WebControls.Unit> represents, such as pixels. The <xref:System.Web.UI.WebControls.Unit.Type%2A> property is represented by one of the <xref:System.Web.UI.WebControls.UnitType> enumeration values.  
+ 
 > [!NOTE]
 >  If <xref:System.Web.UI.WebControls.Unit.IsEmpty%2A> property is set to `true`, the <xref:System.Web.UI.WebControls.UnitType> enumeration value is returned.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -751,10 +751,10 @@
         <value>A double-precision floating point number that represents the length of the <see cref="T:System.Web.UI.WebControls.Unit" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Value%2A> property to determine the length of the <xref:System.Web.UI.WebControls.Unit>.  
-  
+Use the <xref:System.Web.UI.WebControls.Unit.Value%2A> property to determine the length of the <xref:System.Web.UI.WebControls.Unit>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

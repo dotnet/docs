@@ -27,14 +27,14 @@
     <summary>Represents the collection view for collections that implement <see cref="T:System.Collections.IList" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you bind to a data collection, you may want to sort, filter, or group the data. To do that, you use collection views. You can think of a <xref:System.Windows.Data.CollectionView> as the layer on top of the binding source collection that allows you to navigate and display the source collection based on sort, filter, and group queries, all without having to manipulate the underlying source collection itself. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes raised by the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.  
-  
- All collections have a default <xref:System.Windows.Data.CollectionView>. For all collections implementing <xref:System.Collections.IList>, the <xref:System.Windows.Data.ListCollectionView> object is the default view object. The <xref:System.Windows.Data.BindingListCollectionView> is the collection view class used for collections that implement <xref:System.ComponentModel.IBindingList>. To get the default view, you use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A> method. For an example, see [How to: Get the Default View of a Data Collection](~/docs/framework/wpf/data/how-to-get-the-default-view-of-a-data-collection.md).  
-  
- For more information about collection views, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+When you bind to a data collection, you may want to sort, filter, or group the data. To do that, you use collection views. You can think of a <xref:System.Windows.Data.CollectionView> as the layer on top of the binding source collection that allows you to navigate and display the source collection based on sort, filter, and group queries, all without having to manipulate the underlying source collection itself. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes raised by the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.  
+ 
+All collections have a default <xref:System.Windows.Data.CollectionView>. For all collections implementing <xref:System.Collections.IList>, the <xref:System.Windows.Data.ListCollectionView> object is the default view object. The <xref:System.Windows.Data.BindingListCollectionView> is the collection view class used for collections that implement <xref:System.ComponentModel.IBindingList>. To get the default view, you use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A> method. For an example, see [How to: Get the Default View of a Data Collection](~/docs/framework/wpf/data/how-to-get-the-default-view-of-a-data-collection.md).  
+ 
+For more information about collection views, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -111,10 +111,10 @@
         <returns>The pending new item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.Windows.Data.ListCollectionView.AddNew%2A> starts an add transaction. You should call <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> or <xref:System.Windows.Data.ListCollectionView.CancelNew%2A> to end the add transaction. A new item always appears in the collection view. Any filtering, sorting, or grouping that is applied to the view is applied to the new item when <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> is called.  
-  
+Calling <xref:System.Windows.Data.ListCollectionView.AddNew%2A> starts an add transaction. You should call <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> or <xref:System.Windows.Data.ListCollectionView.CancelNew%2A> to end the add transaction. A new item always appears in the collection view. Any filtering, sorting, or grouping that is applied to the view is applied to the new item when <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <returns>The object that was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling the <xref:System.Windows.Data.ListCollectionView.AddNewItem%2A> method starts an add transaction. You should call the <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> or <xref:System.Windows.Data.ListCollectionView.CancelNew%2A> methods to end the add transaction. A new item always appears in the collection view. Any filtering, sorting, or grouping that is applied to the view is applied to the new item when <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> is called.  
-  
+Calling the <xref:System.Windows.Data.ListCollectionView.AddNewItem%2A> method starts an add transaction. You should call the <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> or <xref:System.Windows.Data.ListCollectionView.CancelNew%2A> methods to end the add transaction. A new item always appears in the collection view. Any filtering, sorting, or grouping that is applied to the view is applied to the new item when <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An object cannot be added to the <see cref="T:System.Windows.Data.ListCollectionView" /> by using the <see cref="M:System.Windows.Data.ListCollectionView.AddNewItem(System.Object)" /> method.</exception>
@@ -167,10 +167,10 @@
           <see langword="true" /> if a new item can be added to the collection; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Data.ListCollectionView> can create a new item for the collection if there is no edit transaction occurring, if the collection is not a fixed size, and if the <xref:System.Windows.Data.ListCollectionView> can create an object of the correct type.  
-  
+The <xref:System.Windows.Data.ListCollectionView> can create a new item for the collection if there is no edit transaction occurring, if the collection is not a fixed size, and if the <xref:System.Windows.Data.ListCollectionView> can create an object of the correct type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@
           <see langword="true" /> if a specified object can be added to the collection; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Data.ListCollectionView.CanAddNewItem%2A> property is `true`, you can specify an object to add to the collection by calling the <xref:System.Windows.Data.ListCollectionView.AddNewItem%2A> method. <xref:System.Windows.Data.ListCollectionView.CanAddNewItem%2A> is `false` if items cannot be added to the collection.  
-  
+If the <xref:System.Windows.Data.ListCollectionView.CanAddNewItem%2A> property is `true`, you can specify an object to add to the collection by calling the <xref:System.Windows.Data.ListCollectionView.AddNewItem%2A> method. <xref:System.Windows.Data.ListCollectionView.CanAddNewItem%2A> is `false` if items cannot be added to the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,10 +219,10 @@
           <see langword="true" /> if the collection view can discard pending changes and restore the original values of an edited object; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `true` if the edited item implements the <xref:System.ComponentModel.IEditableObject?displayProperty=fullName> interface. If <xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `false`, call <xref:System.Windows.Data.ListCollectionView.CancelEdit%2A> to cause the view to exit the edit state and provide logic to revert the changes on the object that was edited.  
-  
+<xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `true` if the edited item implements the <xref:System.ComponentModel.IEditableObject?displayProperty=fullName> interface. If <xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `false`, call <xref:System.Windows.Data.ListCollectionView.CancelEdit%2A> to cause the view to exit the edit state and provide logic to revert the changes on the object that was edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <summary>Ends the edit transaction, and if possible, restores the original value to the item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.ListCollectionView.CancelEdit%2A> sets <xref:System.Windows.Data.ListCollectionView.CurrentEditItem%2A> to `null` and causes the collection view to exit the edit state. If <xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `true`, <xref:System.Windows.Data.ListCollectionView.CancelEdit%2A> also restores the original values of the edited object.  
-  
+<xref:System.Windows.Data.ListCollectionView.CancelEdit%2A> sets <xref:System.Windows.Data.ListCollectionView.CurrentEditItem%2A> to `null` and causes the collection view to exit the edit state. If <xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `true`, <xref:System.Windows.Data.ListCollectionView.CancelEdit%2A> also restores the original values of the edited object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,10 +344,10 @@
         <value>For a default instance of <see cref="T:System.Windows.Data.ListCollectionView" />, this property always returns <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to test whether the current implementation supports filtering before assigning a callback to the inherited <xref:System.Windows.Data.CollectionView.Filter%2A> property.  
-  
+Use this property to test whether the current implementation supports filtering before assigning a callback to the inherited <xref:System.Windows.Data.CollectionView.Filter%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,10 +389,10 @@
           <see langword="true" /> if an item can be removed from the collection; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.ListCollectionView.CanRemove%2A> is `true` if the collection is not a fixed size and if an add or edit transaction is not occurring.  
-  
+<xref:System.Windows.Data.ListCollectionView.CanRemove%2A> is `true` if the collection is not a fixed size and if an add or edit transaction is not occurring.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,10 +450,10 @@
         <summary>Ends the add transaction and saves the pending new item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any filtering, sorting, or grouping that is applied to the <xref:System.Windows.Data.ListCollectionView> is applied to the new item when <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> is called.  
-  
+Any filtering, sorting, or grouping that is applied to the <xref:System.Windows.Data.ListCollectionView> is applied to the new item when <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -504,10 +504,10 @@
           <see langword="true" /> if the item belongs to the collection view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not make any assumptions about whether the item belongs to the underlying collection. If you know that the item belongs to the underlying collection, it is more efficient to call <xref:System.Windows.Data.ListCollectionView.PassesFilter%2A>.  
-  
+This method does not make any assumptions about whether the item belongs to the underlying collection. If you know that the item belongs to the underlying collection, it is more efficient to call <xref:System.Windows.Data.ListCollectionView.PassesFilter%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -556,10 +556,10 @@
 </list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that this count represents the filtered count.  
-  
+Note that this count represents the filtered count.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -617,12 +617,12 @@
         <value>The sort criteria as an implementation of <see cref="T:System.Collections.IComparer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property causes an immediate refresh unless a <xref:System.Windows.Data.CollectionView.DeferRefresh%2A> is in effect.  
-  
- Setting this property clears a previously set <xref:System.Windows.Data.ListCollectionView.SortDescriptions%2A> value.  
-  
+Setting this property causes an immediate refresh unless a <xref:System.Windows.Data.CollectionView.DeferRefresh%2A> is in effect.  
+ 
+Setting this property clears a previously set <xref:System.Windows.Data.ListCollectionView.SortDescriptions%2A> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,10 +684,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in the view.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerator instances are typically used for making asynchronous checks of the contents of a collection, or in this case, the contents of the view. For example, if you are about to start a `foreach` iteration over the contents of the view, it may be better to obtain an asynchronous copy to ensure that the length of the view items does not change unexpectedly midway through the loop.  
-  
+Enumerator instances are typically used for making asynchronous checks of the contents of a collection, or in this case, the contents of the view. For example, if you are about to start a `foreach` iteration over the contents of the view, it may be better to obtain an asynchronous copy to ensure that the length of the view items does not change unexpectedly midway through the loop.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -713,10 +713,10 @@
         <returns>The item at the specified position in the view.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method evaluates the index with any <xref:System.Windows.Data.ListCollectionView.SortDescriptions%2A>, <xref:System.Windows.Data.ListCollectionView.GroupDescriptions%2A>, <xref:System.Windows.Data.CollectionView.Filter%2A>, and <xref:System.Windows.Data.ListCollectionView.CustomSort%2A> properties that are set on the view.  
-  
+This method evaluates the index with any <xref:System.Windows.Data.ListCollectionView.SortDescriptions%2A>, <xref:System.Windows.Data.ListCollectionView.GroupDescriptions%2A>, <xref:System.Windows.Data.CollectionView.Filter%2A>, and <xref:System.Windows.Data.ListCollectionView.CustomSort%2A> properties that are set on the view.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="index" /> is out of range.</exception>
@@ -762,22 +762,22 @@
         <value>A collection of <see cref="T:System.ComponentModel.GroupDescription" /> objects that describe how the items in the collection are grouped in the view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This property can only be set by accessing the collection object and using its various methods such as `Add`. The property to access the collection object itself is read-only; the collection itself is read/write.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this property:  
-  
- [!code-csharp[DataBindingLab#6](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#6)]
- [!code-vb[DataBindingLab#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#6)]  
-  
- For the complete example, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
-  
+The following example shows how to use this property:  
+ 
+[!code-csharp[DataBindingLab#6](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#6)]
+[!code-vb[DataBindingLab#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#6)]  
+ 
+For the complete example, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -799,10 +799,10 @@
         <value>A read-only collection of the top-level groups, or <see langword="null" /> if there are no groups.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The items in the collection are of type <xref:System.Windows.Data.CollectionViewGroup>.  
-  
+The items in the collection are of type <xref:System.Windows.Data.CollectionViewGroup>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -969,10 +969,10 @@
           <see langword="true" /> if an add transaction is in progress; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You begin an add transaction by calling the <xref:System.Windows.Data.ListCollectionView.AddNew%2A> method, and you end the add transaction by calling <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> or <xref:System.Windows.Data.ListCollectionView.CancelNew%2A>.  
-  
+You begin an add transaction by calling the <xref:System.Windows.Data.ListCollectionView.AddNew%2A> method, and you end the add transaction by calling <xref:System.Windows.Data.ListCollectionView.CommitNew%2A> or <xref:System.Windows.Data.ListCollectionView.CancelNew%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -995,14 +995,14 @@
           <see langword="true" /> if the list of items is already in the correct order for grouping; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property to `true` informs the view that the list of items is already in the correct order for grouping and allows the view to use a more efficient algorithm to build the groups. The data is in the correct order if:  
-  
+Setting this property to `true` informs the view that the list of items is already in the correct order for grouping and allows the view to use a more efficient algorithm to build the groups. The data is in the correct order if:  
+ 
 1.  All items belonging to a given group appear consecutively, and  
-  
+ 
 2.  If the <xref:System.ComponentModel.GroupDescription.GroupNames%2A> collection is non-empty, the groups in <xref:System.ComponentModel.GroupDescription.GroupNames%2A> appear before any other groups, and in the same order as in <xref:System.ComponentModel.GroupDescription.GroupNames%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1025,10 +1025,10 @@
           <see langword="true" /> if an edit transaction is in progress; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You begin an edit transaction by calling the <xref:System.Windows.Data.ListCollectionView.EditItem%2A> method, and you end the transaction by calling <xref:System.Windows.Data.ListCollectionView.CommitEdit%2A> or <xref:System.Windows.Data.ListCollectionView.CancelEdit%2A>.  
-  
+You begin an edit transaction by calling the <xref:System.Windows.Data.ListCollectionView.EditItem%2A> method, and you end the transaction by calling <xref:System.Windows.Data.ListCollectionView.CommitEdit%2A> or <xref:System.Windows.Data.ListCollectionView.CancelEdit%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1291,10 +1291,10 @@
         <summary>Called by the base class to notify the derived class that a <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event has been posted to the message queue.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The purpose of this notification is to allow collection views to take a snapshot of the information, which is often the state of the data collection, that is needed at the time of the post.  
-  
+The purpose of this notification is to allow collection views to take a snapshot of the information, which is often the state of the data collection, that is needed at the time of the post.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="args" /> is <see langword="null" />.</exception>
@@ -1322,10 +1322,10 @@
           <see langword="true" /> if the specified item belongs to the view or if there is not filter set on the collection view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the <xref:System.Windows.Data.ListCollectionView.Contains%2A> method, this method assumes that the specified item belongs to the underlying collection. This method takes filters into account. Typically, you use this method during collection-changed notifications to determine whether the added or removed item requires processing.  
-  
+Unlike the <xref:System.Windows.Data.ListCollectionView.Contains%2A> method, this method assumes that the specified item belongs to the underlying collection. This method takes filters into account. Typically, you use this method during collection-changed notifications to determine whether the added or removed item requires processing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1390,10 +1390,10 @@
         <summary>Removes the specified item from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `item` is not in the collection, <xref:System.Windows.Data.ListCollectionView.Remove%2A> does nothing.  
-  
+If `item` is not in the collection, <xref:System.Windows.Data.ListCollectionView.Remove%2A> does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1418,10 +1418,10 @@
         <summary>Removes the item at the specified position from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `index` is relative to the collection view, not the collection.  For example, if the collection has 10 items and the view has a <xref:System.ComponentModel.ICollectionView.Filter%2A> so that 7 items appear, the valid values of `index` are 0 through 6.  
-  
+`index` is relative to the collection view, not the collection.  For example, if the collection has 10 items and the view has a <xref:System.ComponentModel.ICollectionView.Filter%2A> so that 7 items appear, the valid values of `index` are 0 through 6.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1445,12 +1445,12 @@
         <value>A collection of <see cref="T:System.ComponentModel.SortDescription" /> objects that describe how the items in the collection are sorted in the view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This property can only be set by accessing the collection object and using its various methods such as `Add`. The property to access the collection object itself is read-only; the collection itself is read/write.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

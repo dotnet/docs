@@ -14,10 +14,10 @@
     <summary>Represents a base class for key identifier clauses that are based upon binary data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of the SOAP message. These references typically affirm the authenticity of the issued security token.  
-  
+Typically, the <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of the SOAP message. These references typically affirm the authenticity of the issued security token.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,12 +75,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> class using the specified key identifier clause type, binary data, a value that indicates whether the binary data must be cloned, a nonce and the key length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the `derivationNonce` and `derivationLength` parameters are specified, the implied derived key is used instead of the direct security key of the token.  
-  
- Regardless of the value passed into the `cloneBuffer` parameter, the <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer%2A> method always returns a clone of the array passed into the `identificationData` parameter.  
-  
+When the `derivationNonce` and `derivationLength` parameters are specified, the implied derived key is used instead of the direct security key of the token.  
+ 
+Regardless of the value passed into the `cloneBuffer` parameter, the <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer%2A> method always returns a clone of the array passed into the `identificationData` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -107,10 +107,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the binary data that represents the key identifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Regardless of the value passed into the constructor's `cloneBuffer` parameter, the <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer%2A> method always returns a clone of the array passed into the constructor's `identificationData` parameter.  
-  
+Regardless of the value passed into the constructor's `cloneBuffer` parameter, the <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer%2A> method always returns a clone of the array passed into the constructor's `identificationData` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,12 +133,12 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the binary data that represents the key identifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array returned by the <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetRawBuffer%2A> method is a clone of the constructor's `identificationData` parameter when the value passed into the `cloneBuffer` is `true`; otherwise it is same array.  
-  
- The <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer%2A> method always returns a clone of the array passed into the constructor's `identificationData` parameter.  
-  
+The array returned by the <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetRawBuffer%2A> method is a clone of the constructor's `identificationData` parameter when the value passed into the `cloneBuffer` is `true`; otherwise it is same array.  
+ 
+The <xref:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer%2A> method always returns a clone of the array passed into the constructor's `identificationData` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>

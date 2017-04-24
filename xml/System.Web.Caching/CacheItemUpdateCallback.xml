@@ -30,16 +30,16 @@
     <summary>Defines a callback method for notifying applications before a cached item is removed from the cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an object expires in the cache, ASP.NET calls the <xref:System.Web.Caching.CacheItemUpdateCallback> method with the key for the cache item and the reason you might want to update the item. The remaining parameters of this method are out parameters. You supply the new cached item and optional expiration and dependency values to use when refreshing the cached item.  
-  
- The update callback is not called if the cached item is explicitly removed by using a call to <xref:System.Web.Caching.Cache.Remove%2A>.  
-  
- If you want the cached item to be removed from the cache, you must return `null` in the `expensiveObject` parameter. Otherwise, you return a reference to the new cached data by using the `expensiveObject` parameter. If you do not specify expiration or dependency values, the item will be removed from the cache only when memory is needed.  
-  
- If the callback method throws an exception, ASP.NET suppresses the exception and removes the cached value.  
-  
+When an object expires in the cache, ASP.NET calls the <xref:System.Web.Caching.CacheItemUpdateCallback> method with the key for the cache item and the reason you might want to update the item. The remaining parameters of this method are out parameters. You supply the new cached item and optional expiration and dependency values to use when refreshing the cached item.  
+ 
+The update callback is not called if the cached item is explicitly removed by using a call to <xref:System.Web.Caching.Cache.Remove%2A>.  
+ 
+If you want the cached item to be removed from the cache, you must return `null` in the `expensiveObject` parameter. Otherwise, you return a reference to the new cached data by using the `expensiveObject` parameter. If you do not specify expiration or dependency values, the item will be removed from the cache only when memory is needed.  
+ 
+If the callback method throws an exception, ASP.NET suppresses the exception and removes the cached value.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -16,12 +16,12 @@
     <summary>Indicates whether a class converts property change events to <see cref="E:System.ComponentModel.IBindingList.ListChanged" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.IRaiseItemChangedEvents> interface is typically implemented together with the <xref:System.ComponentModel.IBindingList> interface and indicates that the list converts property change events to <xref:System.ComponentModel.IBindingList.ListChanged> events.  
-  
- You rarely need to implement the <xref:System.ComponentModel.IRaiseItemChangedEvents> interface. However, for performance purposes, your data source should implement <xref:System.ComponentModel.IRaiseItemChangedEvents> if it provides the functionality described previously, and your data source is interacting with the <xref:System.Windows.Forms.BindingSource> component, because this functionality is built into the <xref:System.Windows.Forms.BindingSource>.  
-  
+The <xref:System.ComponentModel.IRaiseItemChangedEvents> interface is typically implemented together with the <xref:System.ComponentModel.IBindingList> interface and indicates that the list converts property change events to <xref:System.ComponentModel.IBindingList.ListChanged> events.  
+ 
+You rarely need to implement the <xref:System.ComponentModel.IRaiseItemChangedEvents> interface. However, for performance purposes, your data source should implement <xref:System.ComponentModel.IRaiseItemChangedEvents> if it provides the functionality described previously, and your data source is interacting with the <xref:System.Windows.Forms.BindingSource> component, because this functionality is built into the <xref:System.Windows.Forms.BindingSource>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -18,27 +18,27 @@
     <summary>Describes visual content using draw, push, and pop commands.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a <xref:System.Windows.Media.DrawingContext> to populate a <xref:System.Windows.Media.Visual> or a <xref:System.Windows.Media.Drawing> with visual content.  
+Use a <xref:System.Windows.Media.DrawingContext> to populate a <xref:System.Windows.Media.Visual> or a <xref:System.Windows.Media.Drawing> with visual content.  
+ 
+Although the <xref:System.Windows.Media.DrawingContext> draw methods appear similar to the draw methods of the <xref:System.Drawing.Graphics?displayProperty=fullName> type, they function very differently: <xref:System.Windows.Media.DrawingContext> is used with a retained mode graphics system, while the <xref:System.Drawing.Graphics?displayProperty=fullName> type is used with an immediate mode graphics system. When you use a <xref:System.Windows.Media.DrawingContext> object's draw commands, you are actually storing a set of rendering instructions (although the exact storage mechanism depends on the type of object that supplies the <xref:System.Windows.Media.DrawingContext>) that will later be used by the graphics system; you are not drawing to the screen in real-time. For more information about how the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] graphics system works, see [WPF Graphics Rendering Overview](~/docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md).  
+ 
+You never directly instantiate a <xref:System.Windows.Media.DrawingContext>; you can, however, acquire a drawing context from certain methods, such as <xref:System.Windows.Media.DrawingGroup.Open%2A?displayProperty=fullName> and <xref:System.Windows.Media.DrawingVisual.RenderOpen%2A?displayProperty=fullName>.  
+ 
   
- Although the <xref:System.Windows.Media.DrawingContext> draw methods appear similar to the draw methods of the <xref:System.Drawing.Graphics?displayProperty=fullName> type, they function very differently: <xref:System.Windows.Media.DrawingContext> is used with a retained mode graphics system, while the <xref:System.Drawing.Graphics?displayProperty=fullName> type is used with an immediate mode graphics system. When you use a <xref:System.Windows.Media.DrawingContext> object's draw commands, you are actually storing a set of rendering instructions (although the exact storage mechanism depends on the type of object that supplies the <xref:System.Windows.Media.DrawingContext>) that will later be used by the graphics system; you are not drawing to the screen in real-time. For more information about how the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] graphics system works, see [WPF Graphics Rendering Overview](~/docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md).  
-  
- You never directly instantiate a <xref:System.Windows.Media.DrawingContext>; you can, however, acquire a drawing context from certain methods, such as <xref:System.Windows.Media.DrawingGroup.Open%2A?displayProperty=fullName> and <xref:System.Windows.Media.DrawingVisual.RenderOpen%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example retrieves a <xref:System.Windows.Media.DrawingContext> from a <xref:System.Windows.Media.DrawingVisual> and uses it to draw a rectangle.  
-  
- [!code-csharp[drawingvisualsample#101](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#101)]
- [!code-vb[drawingvisualsample#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#101)]  
-  
- The next example demonstrates the <xref:System.Windows.Media.DrawingContext.PushOpacity%2A>, <xref:System.Windows.Media.DrawingContext.PushEffect%2A>, and <xref:System.Windows.Media.DrawingContext.Pop%2A> commands. The <xref:System.Windows.Media.DrawingContext> is obtained from a <xref:System.Windows.Media.DrawingGroup> and displayed using an <xref:System.Windows.Controls.Image> control.  
-  
- [!code-csharp[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingContext_procedural_snip/CSharp/PushEffectExample.cs#pusheffectexamplewholepage)]
- [!code-vb[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingContext_procedural_snip/visualbasic/pusheffectexample.vb#pusheffectexamplewholepage)]  
-  
+The following example retrieves a <xref:System.Windows.Media.DrawingContext> from a <xref:System.Windows.Media.DrawingVisual> and uses it to draw a rectangle.  
+ 
+[!code-csharp[drawingvisualsample#101](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#101)]
+[!code-vb[drawingvisualsample#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#101)]  
+ 
+The next example demonstrates the <xref:System.Windows.Media.DrawingContext.PushOpacity%2A>, <xref:System.Windows.Media.DrawingContext.PushEffect%2A>, and <xref:System.Windows.Media.DrawingContext.Pop%2A> commands. The <xref:System.Windows.Media.DrawingContext> is obtained from a <xref:System.Windows.Media.DrawingGroup> and displayed using an <xref:System.Windows.Controls.Image> control.  
+ 
+[!code-csharp[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingContext_procedural_snip/CSharp/PushEffectExample.cs#pusheffectexamplewholepage)]
+[!code-vb[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingContext_procedural_snip/visualbasic/pusheffectexample.vb#pusheffectexamplewholepage)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Closes the <see cref="T:System.Windows.Media.DrawingContext" /> and flushes the content. Afterward, the <see cref="T:System.Windows.Media.DrawingContext" /> cannot be modified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.DrawingContext> must be closed before its content can be rendered, but after it has been closed, it cannot be modified. This call does not require all Push calls to have been Popped.  
-  
+A <xref:System.Windows.Media.DrawingContext> must be closed before its content can be rendered, but after it has been closed, it cannot be modified. This call does not require all Push calls to have been Popped.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This object has already been closed or disposed.</exception>
@@ -86,10 +86,10 @@
         <summary>Releases all resources used by the <see cref="T:System.Windows.Media.DrawingContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not call this method directly from your code; use the <xref:System.Windows.Media.DrawingContext.System%23IDisposable%23Dispose%2A> method instead.  
-  
+Do not call this method directly from your code; use the <xref:System.Windows.Media.DrawingContext.System%23IDisposable%23Dispose%2A> method instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The object has already been closed or disposed.</exception>
@@ -144,10 +144,10 @@
         <summary>Draws an ellipse with the specified <see cref="T:System.Windows.Media.Brush" /> and <see cref="T:System.Windows.Media.Pen" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
-  
+The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@
         <summary>Draws an ellipse with the specified <see cref="T:System.Windows.Media.Brush" /> and <see cref="T:System.Windows.Media.Pen" /> and applies the specified animation clocks.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
-  
+The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,10 +370,10 @@
         <summary>Draws a rectangle with the specified <see cref="T:System.Windows.Media.Brush" /> and <see cref="T:System.Windows.Media.Pen" />. The pen and the brush can be <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
-  
+The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -404,10 +404,10 @@
         <summary>Draws a rectangle with the specified <see cref="T:System.Windows.Media.Brush" /> and <see cref="T:System.Windows.Media.Pen" /> and applies the specified animation clocks.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
-  
+The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,10 +440,10 @@
         <summary>Draws a rounded rectangle with the specified <see cref="T:System.Windows.Media.Brush" /> and <see cref="T:System.Windows.Media.Pen" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
-  
+The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,10 +482,10 @@
         <summary>Draws a rounded rectangle with the specified <see cref="T:System.Windows.Media.Brush" /> and <see cref="T:System.Windows.Media.Pen" /> and applies the specified animation clocks.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
-  
+The brush and the pen can both be `null`.  If the brush is `null`, then no fill is performed.  If the pen is `null`, then no stoke is performed.  If both the pen and the brush are `null`, then the drawing is not visible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -536,10 +536,10 @@
         <summary>Draws a video into the specified region.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the media will be stretched to fit inside the area defined by the rectangle parameter. If rectangle and media have different aspect ratios, distortion will occur. For more control over how media is used to fill an area, use the <xref:System.Windows.Media.DrawingContext.DrawRectangle%2A> command to draw a rectangle and fill it with a <xref:System.Windows.Media.VisualBrush> that contains media.  
-  
+Note that the media will be stretched to fit inside the area defined by the rectangle parameter. If rectangle and media have different aspect ratios, distortion will occur. For more control over how media is used to fill an area, use the <xref:System.Windows.Media.DrawingContext.DrawRectangle%2A> command to draw a rectangle and fill it with a <xref:System.Windows.Media.VisualBrush> that contains media.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.MediaPermission">to display media that you do not have <see cref="T:System.Net.WebPermission" /> or <see cref="T:System.Security.Permissions.FileIOPermission" /> access for. Associated enumeration: <see cref="F:System.Security.Permissions.MediaPermissionImage.SafeImage" />.</permission>
@@ -569,10 +569,10 @@
         <summary>Draws a video into the specified region and applies the specified animation clock.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the media will be stretched to fit inside the area defined by the rectangle parameter. If rectangle and media have different aspect ratios, distortion will occur. For more control over how media is used to fill an area, use the <xref:System.Windows.Media.DrawingContext.DrawRectangle%2A> command to draw a rectangle and fill it with a <xref:System.Windows.Media.VisualBrush> that contains media.  
-  
+Note that the media will be stretched to fit inside the area defined by the rectangle parameter. If rectangle and media have different aspect ratios, distortion will occur. For more control over how media is used to fill an area, use the <xref:System.Windows.Media.DrawingContext.DrawRectangle%2A> command to draw a rectangle and fill it with a <xref:System.Windows.Media.VisualBrush> that contains media.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.MediaPermission">to display media that you do not have <see cref="T:System.Net.WebPermission" /> or <see cref="T:System.Security.Permissions.FileIOPermission" /> access for. Associated enumeration: <see cref="F:System.Security.Permissions.MediaPermissionImage.SafeImage" />.</permission>
@@ -595,22 +595,22 @@
         <summary>Pops the last opacity mask, opacity, clip, effect, or transform operation that was pushed onto the drawing context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once an operation is popped, it is no longer applied to subsequent drawing commands.  
+Once an operation is popped, it is no longer applied to subsequent drawing commands.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the effect of the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
-  
- [!code-csharp[DrawingContext_procedural_snip#PopExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingContext_procedural_snip/CSharp/PopExample.cs#popexamplewholepage)]
- [!code-vb[DrawingContext_procedural_snip#PopExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingContext_procedural_snip/visualbasic/popexample.vb#popexamplewholepage)]  
-  
- The following illustration shows this example's output:  
-  
- ![Rectangles drawn with different opacity values](~/add/media/graphicsmm-drawingcontextpopexample.gif "Rectangles drawn with different opacity values")  
-  
+The following example shows the effect of the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
+ 
+[!code-csharp[DrawingContext_procedural_snip#PopExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingContext_procedural_snip/CSharp/PopExample.cs#popexamplewholepage)]
+[!code-vb[DrawingContext_procedural_snip#PopExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingContext_procedural_snip/visualbasic/popexample.vb#popexamplewholepage)]  
+ 
+The following illustration shows this example's output:  
+ 
+![Rectangles drawn with different opacity values](~/add/media/graphicsmm-drawingcontextpopexample.gif "Rectangles drawn with different opacity values")  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -635,10 +635,10 @@
         <summary>Pushes the specified clip region onto the drawing context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The clip region applies to all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
-  
+The clip region applies to all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,18 +670,18 @@
         <summary>Pushes the specified <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> onto the drawing context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The effect is applied to all subsequent drawing operations until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
+The effect is applied to all subsequent drawing operations until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Media.DrawingContext.PushOpacity%2A>, <xref:System.Windows.Media.DrawingContext.PushEffect%2A>, and <xref:System.Windows.Media.DrawingContext.Pop%2A> commands.  
-  
- [!code-csharp[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingContext_procedural_snip/CSharp/PushEffectExample.cs#pusheffectexamplewholepage)]
- [!code-vb[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingContext_procedural_snip/visualbasic/pusheffectexample.vb#pusheffectexamplewholepage)]  
-  
+The following example demonstrates the <xref:System.Windows.Media.DrawingContext.PushOpacity%2A>, <xref:System.Windows.Media.DrawingContext.PushEffect%2A>, and <xref:System.Windows.Media.DrawingContext.Pop%2A> commands.  
+ 
+[!code-csharp[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingContext_procedural_snip/CSharp/PushEffectExample.cs#pusheffectexamplewholepage)]
+[!code-vb[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingContext_procedural_snip/visualbasic/pusheffectexample.vb#pusheffectexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -706,10 +706,10 @@
         <summary>Pushes the specified <see cref="T:System.Windows.Media.GuidelineSet" /> onto the drawing context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The guideline set applies to all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> operation.  
-  
+The guideline set applies to all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -734,18 +734,18 @@
         <summary>Pushes the specified opacity setting onto the drawing context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The opacity is blended into all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
+The opacity is blended into all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Media.DrawingContext.PushOpacity%2A>, <xref:System.Windows.Media.DrawingContext.PushEffect%2A>, and <xref:System.Windows.Media.DrawingContext.Pop%2A> commands.  
-  
- [!code-csharp[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingContext_procedural_snip/CSharp/PushEffectExample.cs#pusheffectexamplewholepage)]
- [!code-vb[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingContext_procedural_snip/visualbasic/pusheffectexample.vb#pusheffectexamplewholepage)]  
-  
+The following example demonstrates the <xref:System.Windows.Media.DrawingContext.PushOpacity%2A>, <xref:System.Windows.Media.DrawingContext.PushEffect%2A>, and <xref:System.Windows.Media.DrawingContext.Pop%2A> commands.  
+ 
+[!code-csharp[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingContext_procedural_snip/CSharp/PushEffectExample.cs#pusheffectexamplewholepage)]
+[!code-vb[DrawingContext_procedural_snip#PushEffectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingContext_procedural_snip/visualbasic/pusheffectexample.vb#pusheffectexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -772,10 +772,10 @@
         <summary>Pushes the specified opacity setting onto the drawing context and applies the specified animation clock.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The opacity is blended into all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
-  
+The opacity is blended into all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -800,12 +800,12 @@
         <summary>Pushes the specified opacity mask onto the drawing context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The mask is applied to all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> operation.  
-  
- For more information about creating opacity masks, see [Opacity Masks Overview](~/docs/framework/wpf/graphics-multimedia/opacity-masks-overview.md).  
-  
+The mask is applied to all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> operation.  
+ 
+For more information about creating opacity masks, see [Opacity Masks Overview](~/docs/framework/wpf/graphics-multimedia/opacity-masks-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -830,10 +830,10 @@
         <summary>Pushes the specified <see cref="T:System.Windows.Media.Transform" /> onto the drawing context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The transform applies to all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
-  
+The transform applies to all subsequent drawing commands until it is removed by the <xref:System.Windows.Media.DrawingContext.Pop%2A> command.  
+ 
  ]]></format>
         </remarks>
       </Docs>

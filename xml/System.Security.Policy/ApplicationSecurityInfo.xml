@@ -20,10 +20,10 @@
     <summary>Holds the security evidence for an application. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Policy.ApplicationSecurityInfo> provides security information about a manifest-activated application using information obtained from the application's manifests and its <xref:System.ActivationContext>.  
-  
+<xref:System.Security.Policy.ApplicationSecurityInfo> provides security information about a manifest-activated application using information obtained from the application's manifests and its <xref:System.ActivationContext>.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -47,10 +47,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.ApplicationSecurityInfo" /> class using the provided activation context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ActivationContext> object contains an <xref:System.ApplicationIdentity> object that uniquely identifies an application by its full name and location.  
-  
+The <xref:System.ActivationContext> object contains an <xref:System.ApplicationIdentity> object that uniquely identifies an application by its full name and location.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -76,10 +76,10 @@
         <value>An <see cref="T:System.Security.Policy.Evidence" /> object for the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Evidence is the set of information that constitutes input for security policy decisions, such as deciding which permissions can be granted to code.  
-  
+Evidence is the set of information that constitutes input for security policy decisions, such as deciding which permissions can be granted to code.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -104,10 +104,10 @@
         <value>An <see cref="T:System.ApplicationId" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An application identity consists of the publisher's public key, the application name, the target processor architecture, the application culture, and the application version.  
-  
+An application identity consists of the publisher's public key, the application name, the target processor architecture, the application culture, and the application version.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -132,10 +132,10 @@
         <value>A <see cref="T:System.Security.PermissionSet" /> object representing the default permissions for the application. The default is a <see cref="T:System.Security.PermissionSet" /> with a permission state of <see cref="F:System.Security.Permissions.PermissionState.None" /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the property has not been set, the get accessor returns a <xref:System.Security.PermissionSet> with a permission state of <xref:System.Security.Permissions.PermissionState>.  
-  
+If the property has not been set, the get accessor returns a <xref:System.Security.PermissionSet> with a permission state of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -160,10 +160,10 @@
         <value>An <see cref="T:System.ApplicationId" /> object describing the top element of the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A deployment identity consists of the publisher's public key, the application name, the target processor architecture, the application culture, and the application version.  
-  
+A deployment identity consists of the publisher's public key, the application name, the target processor architecture, the application culture, and the application version.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

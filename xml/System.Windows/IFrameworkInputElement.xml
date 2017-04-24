@@ -15,10 +15,10 @@
     <summary>Declares a namescope contract for framework elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is not intended for implementation. Its purpose is to support the WPF framework-level infrastructure. To implement a namescope, see <xref:System.Windows.Markup.INameScope>.  
-  
+This interface is not intended for implementation. Its purpose is to support the WPF framework-level infrastructure. To implement a namescope, see <xref:System.Windows.Markup.INameScope>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

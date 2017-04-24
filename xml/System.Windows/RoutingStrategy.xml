@@ -13,10 +13,10 @@
     <summary>Indicates the routing strategy of a routed event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Routing strategy for each routed event must be only one of these values. However, input events often exist in pairs on base classes, where one event is the bubbling version and one event is the tunneling version. For input events uniquely, the tunneling and bubbling versions have shared arguments and are raised in succession in response to the input device condition that raises the events.  
-  
+Routing strategy for each routed event must be only one of these values. However, input events often exist in pairs on base classes, where one event is the bubbling version and one event is the tunneling version. For input events uniquely, the tunneling and bubbling versions have shared arguments and are raised in succession in response to the input device condition that raises the events.  
+ 
  ]]></format>
     </remarks>
   </Docs>

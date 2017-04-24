@@ -24,12 +24,12 @@
     <summary>Represents an XML processing instruction.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use processing instructions in XML to indicate that an XML document can be processed by some processor, such as XSLT.  
-  
- Processing instructions are nodes in the XML tree. When a processing instruction is found in the XML being parsed, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] creates an <xref:System.Xml.Linq.XProcessingInstruction> node.  
-  
+You can use processing instructions in XML to indicate that an XML document can be processed by some processor, such as XSLT.  
+ 
+Processing instructions are nodes in the XML tree. When a processing instruction is found in the XML being parsed, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] creates an <xref:System.Xml.Linq.XProcessingInstruction> node.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XProcessingInstruction" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is primarily used internally to make a deep copy of an XML tree.  
-  
+This constructor is primarily used internally to make a deep copy of an XML tree.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,28 +98,28 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XProcessingInstruction" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Xml.Linq.XProcessingInstruction>, and specifies a target and the string data for the processing instruction.  
-  
+The following example creates an <xref:System.Xml.Linq.XProcessingInstruction>, and specifies a target and the string data for the processing instruction.  
+ 
 ```csharp  
-  
-                XProcessingInstruction pi = new XProcessingInstruction("xml-stylesheet", "type='text/xsl' href='hello.xsl'");  
+ 
+               XProcessingInstruction pi = new XProcessingInstruction("xml-stylesheet", "type='text/xsl' href='hello.xsl'");  
 Console.WriteLine(pi);  
 ```  
-  
+ 
 ```vb  
-  
-                Dim pi As XProcessingInstruction = <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
+ 
+               Dim pi As XProcessingInstruction = <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
 Console.WriteLine(pi)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> or <paramref name="data" /> parameter is <see langword="null" />.</exception>
@@ -153,39 +153,39 @@ Console.WriteLine(pi)
         <value>A <see cref="T:System.String" /> that contains the string value of this processing instruction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this property to modify an XML tree. This property will cause events to occur.  
+You can use this property to modify an XML tree. This property will cause events to occur.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Xml.Linq.XProcessingInstruction.Data%2A> property to retrieve the string value of a processing instruction.  
-  
+The following example uses the <xref:System.Xml.Linq.XProcessingInstruction.Data%2A> property to retrieve the string value of a processing instruction.  
+ 
 ```csharp  
-  
-                XProcessingInstruction pi =  
-    new XProcessingInstruction("xml-stylesheet", "type='text/xsl' href='hello.xsl'");  
+ 
+               XProcessingInstruction pi =  
+   new XProcessingInstruction("xml-stylesheet", "type='text/xsl' href='hello.xsl'");  
 Console.WriteLine(pi.Data);  
 pi.Data = "type='text/xsl' href='xform.xsl'";  
 Console.WriteLine(pi.Data);  
 ```  
-  
+ 
 ```vb  
-  
-                Dim pi As XProcessingInstruction = <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
+ 
+               Dim pi As XProcessingInstruction = <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
 Console.WriteLine(pi.Data)  
 pi.Data = "type='text/xsl' href='xform.xsl'"  
 Console.WriteLine(pi.Data)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 type='text/xsl' href='hello.xsl'  
 type='text/xsl' href='xform.xsl'  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The string <paramref name="value" /> is <see langword="null" />.</exception>
@@ -218,35 +218,35 @@ type='text/xsl' href='xform.xsl'
         <value>The node type. For <see cref="T:System.Xml.Linq.XProcessingInstruction" /> objects, this value is <see cref="F:System.Xml.XmlNodeType.ProcessingInstruction" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because all classes that derive from <xref:System.Xml.Linq.XObject> contain a <xref:System.Xml.Linq.XObject.NodeType%2A> property, you can write code that operates on collections of concrete subclass of <xref:System.Xml.Linq.XObject>. Your code can then test for the node type of each node in the collection.  
+Because all classes that derive from <xref:System.Xml.Linq.XObject> contain a <xref:System.Xml.Linq.XObject.NodeType%2A> property, you can write code that operates on collections of concrete subclass of <xref:System.Xml.Linq.XObject>. Your code can then test for the node type of each node in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a processing instruction, and then prints its node type.  
-  
+The following example creates a processing instruction, and then prints its node type.  
+ 
 ```csharp  
-  
-                XProcessingInstruction pi =  
-    new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\"");  
+ 
+               XProcessingInstruction pi =  
+   new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\"");  
 Console.WriteLine(pi.NodeType);  
 ```  
-  
+ 
 ```vb  
-  
-                Dim pi As XProcessingInstruction = _  
-    <?xml-stylesheet type="text/xsl" href="hello.xsl"?>  
+ 
+               Dim pi As XProcessingInstruction = _  
+   <?xml-stylesheet type="text/xsl" href="hello.xsl"?>  
 Console.WriteLine(pi.NodeType.ToString)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 ProcessingInstruction  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,30 +278,30 @@ ProcessingInstruction
         <value>A <see cref="T:System.String" /> containing the target application for this processing instruction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Xml.Linq.XProcessingInstruction.Target%2A> property to retrieve the target application for a processing instruction.  
-  
+The following example uses the <xref:System.Xml.Linq.XProcessingInstruction.Target%2A> property to retrieve the target application for a processing instruction.  
+ 
 ```csharp  
-  
-                XProcessingInstruction pi =  
-    new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\"");  
+ 
+               XProcessingInstruction pi =  
+   new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\"");  
 Console.WriteLine(pi.Target);  
 ```  
-  
+ 
 ```vb  
-  
-                Dim pi As XProcessingInstruction = _  
-    <?xml-stylesheet type="text/xsl" href="hello.xsl"?>  
+ 
+               Dim pi As XProcessingInstruction = _  
+   <?xml-stylesheet type="text/xsl" href="hello.xsl"?>  
 Console.WriteLine(pi.Target)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 xml-stylesheet  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The string <paramref name="value" /> is <see langword="null" />.</exception>
@@ -338,10 +338,10 @@ xml-stylesheet
         <summary>Writes this processing instruction to an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is primarily used internally by the methods that write an XML tree to an <xref:System.Xml.XmlWriter>.  
-  
+This method is primarily used internally by the methods that write an XML tree to an <xref:System.Xml.XmlWriter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

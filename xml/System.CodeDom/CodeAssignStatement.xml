@@ -22,19 +22,19 @@
     <summary>Represents a simple assignment statement.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeAssignStatement> can be used to represent a statement that assigns the value of an object to another object, or a reference to another reference. Simple assignment statements are usually of the form " `value1` = `value2` ", where `value1` is the object being assigned to, and `value2` is being assigned. The <xref:System.CodeDom.CodeAssignStatement.Left%2A> property indicates the object to assign to. The <xref:System.CodeDom.CodeAssignStatement.Right%2A> property indicates the object to assign.  
+<xref:System.CodeDom.CodeAssignStatement> can be used to represent a statement that assigns the value of an object to another object, or a reference to another reference. Simple assignment statements are usually of the form " `value1` = `value2` ", where `value1` is the object being assigned to, and `value2` is being assigned. The <xref:System.CodeDom.CodeAssignStatement.Left%2A> property indicates the object to assign to. The <xref:System.CodeDom.CodeAssignStatement.Right%2A> property indicates the object to assign.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code creates a <xref:System.CodeDom.CodeAssignStatement> that assigns the value 10 to an integer variable named `i` :  
-  
- [!code-cpp[CodeAssignStatement#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeAssignStatement/CPP/codeassignstatementsnippet.cpp#1)]
- [!code-csharp[CodeAssignStatement#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeAssignStatement/CS/codeassignstatementsnippet.cs#1)]
- [!code-vb[CodeAssignStatement#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeAssignStatement/VB/codeassignstatementsnippet.vb#1)]  
-  
+The following code creates a <xref:System.CodeDom.CodeAssignStatement> that assigns the value 10 to an integer variable named `i` :  
+ 
+[!code-cpp[CodeAssignStatement#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeAssignStatement/CPP/codeassignstatementsnippet.cpp#1)]
+[!code-csharp[CodeAssignStatement#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeAssignStatement/CS/codeassignstatementsnippet.cs#1)]
+[!code-vb[CodeAssignStatement#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeAssignStatement/VB/codeassignstatementsnippet.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

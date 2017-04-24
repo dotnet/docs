@@ -24,12 +24,12 @@
     <summary>Determines whether an assembly belongs to a code group by testing the site from which it originated. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A code assembly satisfies a site membership condition if that code originates from the Web site specified by <xref:System.Security.Policy.SiteMembershipCondition.Site%2A>. Site identity is defined for code from URLs with any protocol except FILE. A site is the string between the "//" after the protocol of a URL and the following "/", if present. For example, www.fourthcoffee.com is the site identity in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
-  
- Sites can be matched exactly, or by a wildcard ("*") prefix at the dot delimiter. For example, the site name *.fourthcoffee.com matches fourthcoffee.com as well as www.fourthcoffee.com. Without a wildcard, the site name must be a precise match. The site name * will match any site, but will not match code that has no site evidence.  
-  
+A code assembly satisfies a site membership condition if that code originates from the Web site specified by <xref:System.Security.Policy.SiteMembershipCondition.Site%2A>. Site identity is defined for code from URLs with any protocol except FILE. A site is the string between the "//" after the protocol of a URL and the following "/", if present. For example, www.fourthcoffee.com is the site identity in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+ 
+Sites can be matched exactly, or by a wildcard ("*") prefix at the dot delimiter. For example, the site name *.fourthcoffee.com matches fourthcoffee.com as well as www.fourthcoffee.com. Without a wildcard, the site name must be a precise match. The site name * will match any site, but will not match code that has no site evidence.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.SiteMembershipCondition" /> class with name of the site that determines membership.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Code satisfies this membership condition if it is downloaded from a site whose DNS name matches the site specified by <xref:System.Security.Policy.SiteMembershipCondition.Site%2A>.  
-  
+Code satisfies this membership condition if it is downloaded from a site whose DNS name matches the site specified by <xref:System.Security.Policy.SiteMembershipCondition.Site%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="site" /> parameter is <see langword="null" />.</exception>
@@ -85,10 +85,10 @@
           <see langword="true" /> if the specified evidence satisfies the membership condition; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This membership condition tests only <xref:System.Security.Policy.Site> evidence.  
-  
+This membership condition tests only <xref:System.Security.Policy.Site> evidence.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Policy.SiteMembershipCondition.Site" /> property is <see langword="null" />.</exception>
@@ -229,10 +229,10 @@
         <value>The site for which the membership condition tests.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is matched against the site from which a code assembly originates to test the membership condition.  
-  
+This property is matched against the site from which a code assembly originates to test the membership condition.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set <see cref="P:System.Security.Policy.SiteMembershipCondition.Site" /> to <see langword="null" />.</exception>

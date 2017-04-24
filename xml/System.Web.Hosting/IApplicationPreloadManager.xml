@@ -68,10 +68,10 @@
         <summary>Calls [!INCLUDE[iisver](~/includes/iisver-md.md)] to get information that is required in order to preload an application.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- IIS calls ASP.NET through this interface, supplying a reference to an object that implements the <xref:System.Web.Hosting.IApplicationPreloadUtil> interface. ASP.NET uses that interface later to perform a callback into IIS to get preload information for individual applications.  
-  
+IIS calls ASP.NET through this interface, supplying a reference to an object that implements the <xref:System.Web.Hosting.IApplicationPreloadUtil> interface. ASP.NET uses that interface later to perform a callback into IIS to get preload information for individual applications.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

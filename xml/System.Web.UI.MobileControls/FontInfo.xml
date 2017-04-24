@@ -22,10 +22,10 @@
     <summary>Provides access to all font-related style information about an ASP.NET mobile control. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.FontInfo> class provides a subset of the functionality of the Web Forms <xref:System.Web.UI.WebControls.FontInfo?displayProperty=fullName> class.  
-  
+The <xref:System.Web.UI.MobileControls.FontInfo> class provides a subset of the functionality of the Web Forms <xref:System.Web.UI.WebControls.FontInfo?displayProperty=fullName> class.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -59,10 +59,10 @@
         <value>An enumerated value indicating whether the font is bold.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.FontInfo.Bold%2A> property takes a <xref:System.Web.UI.MobileControls.BooleanOption> enumeration, not a Boolean value.  
-  
+The <xref:System.Web.UI.MobileControls.FontInfo.Bold%2A> property takes a <xref:System.Web.UI.MobileControls.BooleanOption> enumeration, not a Boolean value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <value>An enumerated value indicating whether the font is italic.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.FontInfo.Italic%2A> property takes a <xref:System.Web.UI.MobileControls.BooleanOption>, not a Boolean value.  
-  
+The <xref:System.Web.UI.MobileControls.FontInfo.Italic%2A> property takes a <xref:System.Web.UI.MobileControls.BooleanOption>, not a Boolean value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <value>An enumerated value indicating the specified font size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use any of the following font sizes: `Large`, `Normal`, `NotSet`, or `Small`.  
-  
+You can use any of the following font sizes: `Large`, `Normal`, `NotSet`, or `Small`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -22,12 +22,12 @@
     <summary>Replaces the standard common language runtime (CLR) free-threaded marshaler with the standard OLE STA marshaler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.InteropServices.StandardOleMarshalObject> class prevents calls made into a hosting object by OLE from entering threads other than the UI thread.  
-  
- You should derive your class from the <xref:System.Runtime.InteropServices.StandardOleMarshalObject> class to gain this functionality.  
-  
+The <xref:System.Runtime.InteropServices.StandardOleMarshalObject> class prevents calls made into a hosting object by OLE from entering threads other than the UI thread.  
+ 
+You should derive your class from the <xref:System.Runtime.InteropServices.StandardOleMarshalObject> class to gain this functionality.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.StandardOleMarshalObject" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should derive your class from the <xref:System.Runtime.InteropServices.StandardOleMarshalObject> class-.  
-  
+You should derive your class from the <xref:System.Runtime.InteropServices.StandardOleMarshalObject> class-.  
+ 
  ]]></format>
         </remarks>
       </Docs>

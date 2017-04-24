@@ -32,14 +32,14 @@
     <summary>The exception that is thrown when type-loading failures occur.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.TypeLoadException> is thrown when the common language runtime cannot find the assembly, the type within the assembly, or cannot load the type. The <xref:System.TypeLoadException.Message%2A> property contains more detailed information that can help you identify the cause of the exception.  
-  
- <xref:System.TypeLoadException> uses the HRESULT COR_E_TYPELOAD, that has the value 0x80131522.  
-  
- For a list of initial property values for an instance of <xref:System.TypeLoadException>, see the <xref:System.TypeLoadException.%23ctor%2A> constructors.  
-  
+<xref:System.TypeLoadException> is thrown when the common language runtime cannot find the assembly, the type within the assembly, or cannot load the type. The <xref:System.TypeLoadException.Message%2A> property contains more detailed information that can help you identify the cause of the exception.  
+ 
+<xref:System.TypeLoadException> uses the HRESULT COR_E_TYPELOAD, that has the value 0x80131522.  
+ 
+For a list of initial property values for an instance of <xref:System.TypeLoadException>, see the <xref:System.TypeLoadException.%23ctor%2A> constructors.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,17 +70,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.TypeLoadException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.TypeLoadException.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "A failure has occurred while loading a type." This message takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.TypeLoadException>.  
-  
+This constructor initializes the <xref:System.TypeLoadException.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "A failure has occurred while loading a type." This message takes into account the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.TypeLoadException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.TypeLoadException.Message%2A>|The localized error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,26 +114,26 @@
         <summary>Initializes a new instance of the <see cref="T:System.TypeLoadException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of the `message` parameter should be understandable to the user. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.TypeLoadException>.  
-  
+The content of the `message` parameter should be understandable to the user. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.TypeLoadException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.TypeLoadException.Message%2A>|The error message string.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.TypeLoadException.%23ctor%28System.String%29> constructor. It contains a method that generates a <xref:System.TypeLoadException> with a custom message, and displays the error message to the console.  
-  
- [!code-cpp[TypeLoadException_Constructor2#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_Constructor2/CPP/typeloadexception_constructor2.cpp#1)]
- [!code-csharp[TypeLoadException_Constructor2#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_Constructor2/CS/typeloadexception_constructor2.cs#1)]
- [!code-vb[TypeLoadException_Constructor2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_Constructor2/VB/typeloadexception_constructor2.vb#1)]  
-  
+The following code example demonstrates the <xref:System.TypeLoadException.%23ctor%28System.String%29> constructor. It contains a method that generates a <xref:System.TypeLoadException> with a custom message, and displays the error message to the console.  
+ 
+[!code-cpp[TypeLoadException_Constructor2#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_Constructor2/CPP/typeloadexception_constructor2.cpp#1)]
+[!code-csharp[TypeLoadException_Constructor2#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_Constructor2/CS/typeloadexception_constructor2.cs#1)]
+[!code-vb[TypeLoadException_Constructor2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_Constructor2/VB/typeloadexception_constructor2.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,19 +162,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.TypeLoadException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example generates an exception, and serializes the exception data to a file, and then reconstitutes the exception. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
-  
- [!code-cpp[TypeLoadException_GetObjectData#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CPP/typeloadexception_getobjectdata.cpp#1)]
- [!code-csharp[TypeLoadException_GetObjectData#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CS/typeloadexception_getobjectdata.cs#1)]
- [!code-vb[TypeLoadException_GetObjectData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_GetObjectData/VB/typeloadexception_getobjectdata.vb#1)]  
-  
+The following example generates an exception, and serializes the exception data to a file, and then reconstitutes the exception. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
+ 
+[!code-cpp[TypeLoadException_GetObjectData#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CPP/typeloadexception_getobjectdata.cpp#1)]
+[!code-csharp[TypeLoadException_GetObjectData#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CS/typeloadexception_getobjectdata.cs#1)]
+[!code-vb[TypeLoadException_GetObjectData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_GetObjectData/VB/typeloadexception_getobjectdata.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> object is <see langword="null" />.</exception>
@@ -211,26 +211,26 @@
         <summary>Initializes a new instance of the <see cref="T:System.TypeLoadException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception can include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.TypeLoadException>.  
-  
+An exception that is thrown as a direct result of a previous exception can include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.TypeLoadException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.TypeLoadException.Message%2A>|The error message string.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.TypeLoadException.%23ctor%28System.String%2CSystem.Exception%29> constructor. It contains a method that generates a <xref:System.TypeLoadException>, catches that exception, and throws a new <xref:System.TypeLoadException> with a custom message, including the original <xref:System.TypeLoadException> as the inner exception.  
-  
- [!code-cpp[TypeLoadException_Constructor3#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_Constructor3/CPP/typeloadexception_constructor3.cpp#1)]
- [!code-csharp[TypeLoadException_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_Constructor3/CS/typeloadexception_constructor3.cs#1)]
- [!code-vb[TypeLoadException_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_Constructor3/VB/typeloadexception_constructor3.vb#1)]  
-  
+The following code example demonstrates the <xref:System.TypeLoadException.%23ctor%28System.String%2CSystem.Exception%29> constructor. It contains a method that generates a <xref:System.TypeLoadException>, catches that exception, and throws a new <xref:System.TypeLoadException> with a custom message, including the original <xref:System.TypeLoadException> as the inner exception.  
+ 
+[!code-cpp[TypeLoadException_Constructor3#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_Constructor3/CPP/typeloadexception_constructor3.cpp#1)]
+[!code-csharp[TypeLoadException_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_Constructor3/CS/typeloadexception_constructor3.cs#1)]
+[!code-vb[TypeLoadException_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_Constructor3/VB/typeloadexception_constructor3.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,23 +267,23 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the class name, method name, resource ID, and additional exception information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.TypeLoadException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During deserialization, the exception object is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
+<xref:System.TypeLoadException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During deserialization, the exception object is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
+ 
+For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+ 
   
- For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
-  
-   
-  
+ 
 ## Examples  
- [Visual Basic, C#]  
-  
- The following example generates an exception, and serializes the exception data to a file, and then reconstitutes the exception. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
-  
- [!code-cpp[TypeLoadException_GetObjectData#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CPP/typeloadexception_getobjectdata.cpp#1)]
- [!code-csharp[TypeLoadException_GetObjectData#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CS/typeloadexception_getobjectdata.cs#1)]
- [!code-vb[TypeLoadException_GetObjectData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_GetObjectData/VB/typeloadexception_getobjectdata.vb#1)]  
-  
+[Visual Basic, C#]  
+ 
+The following example generates an exception, and serializes the exception data to a file, and then reconstitutes the exception. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
+ 
+[!code-cpp[TypeLoadException_GetObjectData#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CPP/typeloadexception_getobjectdata.cpp#1)]
+[!code-csharp[TypeLoadException_GetObjectData#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CS/typeloadexception_getobjectdata.cs#1)]
+[!code-vb[TypeLoadException_GetObjectData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_GetObjectData/VB/typeloadexception_getobjectdata.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> object is <see langword="null" />.</exception>
@@ -324,21 +324,21 @@
         <value>The error message string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property overrides <xref:System.Exception.Message%2A>. The error message should be localized.  
+This property overrides <xref:System.Exception.Message%2A>. The error message should be localized.  
+ 
+This property is read-only.  
+ 
   
- This property is read-only.  
-  
-   
-  
+ 
 ## Examples  
- The following example attempts to load a non-existent type from the mscorlib assembly. The resulting exception is caught, and the <xref:System.TypeLoadException.TypeName%2A> and <xref:System.TypeLoadException.Message%2A> values are displayed. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
-  
- [!code-cpp[TypeLoadException_TypeName#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_TypeName/CPP/typeloadexception_typename.cpp#1)]
- [!code-csharp[TypeLoadException_TypeName#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_TypeName/CS/typeloadexception_typename.cs#1)]
- [!code-vb[TypeLoadException_TypeName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_TypeName/VB/typeloadexception_typename.vb#1)]  
-  
+The following example attempts to load a non-existent type from the mscorlib assembly. The resulting exception is caught, and the <xref:System.TypeLoadException.TypeName%2A> and <xref:System.TypeLoadException.Message%2A> values are displayed. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
+ 
+[!code-cpp[TypeLoadException_TypeName#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_TypeName/CPP/typeloadexception_typename.cpp#1)]
+[!code-csharp[TypeLoadException_TypeName#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_TypeName/CS/typeloadexception_typename.cs#1)]
+[!code-vb[TypeLoadException_TypeName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_TypeName/VB/typeloadexception_typename.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,14 +372,14 @@
         <value>The fully qualified type name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example attempts to load a non-existent type from the mscorlib assembly. The resulting exception is caught, and the <xref:System.TypeLoadException.TypeName%2A> and <xref:System.TypeLoadException.Message%2A> values are displayed. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
-  
- [!code-cpp[TypeLoadException_TypeName#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_TypeName/CPP/typeloadexception_typename.cpp#1)]
- [!code-csharp[TypeLoadException_TypeName#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_TypeName/CS/typeloadexception_typename.cs#1)]
- [!code-vb[TypeLoadException_TypeName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_TypeName/VB/typeloadexception_typename.vb#1)]  
-  
+The following example attempts to load a non-existent type from the mscorlib assembly. The resulting exception is caught, and the <xref:System.TypeLoadException.TypeName%2A> and <xref:System.TypeLoadException.Message%2A> values are displayed. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
+ 
+[!code-cpp[TypeLoadException_TypeName#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_TypeName/CPP/typeloadexception_typename.cpp#1)]
+[!code-csharp[TypeLoadException_TypeName#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_TypeName/CS/typeloadexception_typename.cs#1)]
+[!code-vb[TypeLoadException_TypeName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeLoadException_TypeName/VB/typeloadexception_typename.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

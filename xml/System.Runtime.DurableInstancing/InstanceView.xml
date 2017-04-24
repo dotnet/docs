@@ -14,12 +14,12 @@
     <summary>Represents a view of an instance. For example, the <see cref="M:System.Runtime.DurableInstancing.InstanceStore.Execute(System.Runtime.DurableInstancing.InstanceHandle,System.Runtime.DurableInstancing.InstancePersistenceCommand,System.TimeSpan)" /> method implementations return an <see cref="T:System.Runtime.DurableInstancing.InstanceView" /> object that provides a view into the instance data in the persistence store.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each InstanceView object is associated with an InstanceHandle. For an InstanceView returned from InstanceStore.Execute, the associated handle is the one passed to Execute. For an InstanceView returned from InstancePersistenceContext.InstanceView, the associated handle is the one passed to TryCommand.  
-  
- An InstanceHandle may have zero or more InstanceView objects associated with it at any given time. InstanceView objects returned from InstanceStore.Execute are immutable and represent a snapshot of the known instance state after the successful execution of that command. InstanceView objects returned from InstancePersistenceContext are mutable and represent the current known instance state as it is being updated during the execution of the command.  (If the command ultimately fails, this intermediate state is discarded).  
-  
+Each InstanceView object is associated with an InstanceHandle. For an InstanceView returned from InstanceStore.Execute, the associated handle is the one passed to Execute. For an InstanceView returned from InstancePersistenceContext.InstanceView, the associated handle is the one passed to TryCommand.  
+ 
+An InstanceHandle may have zero or more InstanceView objects associated with it at any given time. InstanceView objects returned from InstanceStore.Execute are immutable and represent a snapshot of the known instance state after the successful execution of that command. InstanceView objects returned from InstancePersistenceContext are mutable and represent the current known instance state as it is being updated during the execution of the command.  (If the command ultimately fails, this intermediate state is discarded).  
+ 
  ]]></format>
     </remarks>
   </Docs>

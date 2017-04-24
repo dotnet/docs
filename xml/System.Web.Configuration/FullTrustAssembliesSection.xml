@@ -14,24 +14,24 @@
     <summary>Configures a set of full-trust assemblies. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.FullTrustAssembliesSection> class enables you to specify full-trust assemblies within an ASP.NET partial-trust application domain.  
+The <xref:System.Web.Configuration.FullTrustAssembliesSection> class enables you to specify full-trust assemblies within an ASP.NET partial-trust application domain.  
+ 
+To configure an assembly, you must have the hexadecimal string representation of its public key. You get this key by using the Strong Name (Sn.exe) tool. This tool produces the public-key hexadecimal string representation that you use in configuration. It also produces the public-key token. For more information, see [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md).  
+ 
   
- To configure an assembly, you must have the hexadecimal string representation of its public key. You get this key by using the Strong Name (Sn.exe) tool. This tool produces the public-key hexadecimal string representation that you use in configuration. It also produces the public-key token. For more information, see [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to specify a full-trust assembly by using the `fullTrustAssemblies` section in a configuration file.  
-  
+The following example shows how to specify a full-trust assembly by using the `fullTrustAssemblies` section in a configuration file.  
+ 
 ```  
 <fullTrustAssemblies>  
-  <add assemblyName="MyAssembly" version="1.0.0.0"   
-    publicKey="hex_key_representation" />  
+ <add assemblyName="MyAssembly" version="1.0.0.0"   
+   publicKey="hex_key_representation" />  
 </fullTrustAssemblies>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

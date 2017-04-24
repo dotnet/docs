@@ -14,10 +14,10 @@
     <summary>A class that wraps a specified writer and delegates all <see cref="T:System.Xml.XmlDictionaryWriter" /> calls to the wrapped writer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The writer that is wrapped can be accessed through the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InnerWriter%2A> property. Call the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InitializeInnerWriter%2A> method to set the wrapped writer and initialize the property. You can call the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InitializeTracingWriter%2A> method to set an <xref:System.Xml.XmlWriter> to which non-canonical XML will be echoed.  
-  
+The writer that is wrapped can be accessed through the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InnerWriter%2A> property. Call the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InitializeInnerWriter%2A> method to set the wrapped writer and initialize the property. You can call the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InitializeTracingWriter%2A> method to set an <xref:System.Xml.XmlWriter> to which non-canonical XML will be echoed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,10 +129,10 @@
         <summary>Initializes this instance with the specified inner writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Sets the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InnerWriter%2A> property to the writer specified by the `innerWriter` parameter.  
-  
+Sets the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InnerWriter%2A> property to the writer specified by the `innerWriter` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>

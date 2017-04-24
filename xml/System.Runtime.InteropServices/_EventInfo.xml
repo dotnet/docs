@@ -29,12 +29,12 @@
     <summary>Exposes the public members of the <see cref="T:System.Reflection.EventInfo" /> class to unmanaged code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- This interface preserves the vtable order of the <xref:System.Reflection.EventInfo?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
-  
+This interface is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+This interface preserves the vtable order of the <xref:System.Reflection.EventInfo?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,12 +62,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.EventInfo.AddEventHandler(System.Object,System.Delegate)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.AddEventHandler%2A> method adds an event handler to an event source.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.AddEventHandler%2A> method adds an event handler to an event source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,12 +90,12 @@
         <value>The read-only attributes for this event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.Attributes%2A> property gets the attributes for this event.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.Attributes%2A> property gets the attributes for this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,12 +118,12 @@
         <value>The <see langword="Type" /> object for the class that declares this member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.DeclaringType%2A> property gets the class that declares this member.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.DeclaringType%2A> property gets the class that declares this member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,12 +151,12 @@
           <see langword="true" /> if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Object.Equals%2A> method determines whether the specified <xref:System.Object> is equal to the current <xref:System.Object>.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Object.Equals%2A> method determines whether the specified <xref:System.Object> is equal to the current <xref:System.Object>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,12 +179,12 @@
         <value>A read-only <see cref="T:System.Type" /> object representing the delegate event handler.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.EventHandlerType%2A> property gets the <xref:System.Type> object of the underlying event-handler delegate associated with this event.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.EventHandlerType%2A> property gets the <xref:System.Type> object of the underlying event-handler delegate associated with this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,12 +208,12 @@
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object representing the method used to add an event-handler delegate to the event source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.GetAddMethod%2A> method returns the method used to add an event-handler delegate to the event source.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.GetAddMethod%2A> method returns the method used to add an event-handler delegate to the event source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,12 +241,12 @@
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object representing the method used to add an event-handler delegate to the event source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.GetAddMethod%2A> method retrieves the <xref:System.Reflection.MethodInfo> object for the <xref:System.Reflection.EventInfo.AddEventHandler%2A> method of the event and specifies whether to return non-public methods  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.GetAddMethod%2A> method retrieves the <xref:System.Reflection.MethodInfo> object for the <xref:System.Reflection.EventInfo.AddEventHandler%2A> method of the event and specifies whether to return non-public methods  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,12 +274,12 @@
         <returns>An array that contains all the custom attributes, or an array with zero (0) elements if no attributes are defined.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method retrieves the <xref:System.Reflection.MethodInfo> object for the <xref:System.Reflection.EventInfo.AddEventHandler%2A> method of the event and specifies whether to return non-public methods  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method retrieves the <xref:System.Reflection.MethodInfo> object for the <xref:System.Reflection.EventInfo.AddEventHandler%2A> method of the event and specifies whether to return non-public methods  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,12 +309,12 @@
         <returns>An array of custom attributes applied to this member, or an array with zero (0) elements if no attributes have been applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method returns an array of custom attributes identified by <xref:System.Type>.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method returns an array of custom attributes identified by <xref:System.Type>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,12 +338,12 @@
         <returns>The hash code for the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Object.GetHashCode%2A> method serves as a hash function for a particular type. <xref:System.Object.GetHashCode%2A> is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Object.GetHashCode%2A> method serves as a hash function for a particular type. <xref:System.Object.GetHashCode%2A> is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -377,10 +377,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -404,12 +404,12 @@
         <returns>The method that is called when the event is raised.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.GetRaiseMethod%2A> method returns the method that is called when the event is raised.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.GetRaiseMethod%2A> method returns the method that is called when the event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,12 +437,12 @@
         <returns>The <see cref="T:System.Reflection.MethodInfo" /> object that was called when the event was raised.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.GetRaiseMethod%2A> method returns the method that is called when the event is raised and specifies whether to return non-public methods.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.GetRaiseMethod%2A> method returns the method that is called when the event is raised and specifies whether to return non-public methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -466,12 +466,12 @@
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object representing the method used to remove an event-handler delegate from the event source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.GetRemoveMethod%2A> method returns the method used to remove an event-handler delegate from the event source.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.GetRemoveMethod%2A> method returns the method used to remove an event-handler delegate from the event source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -499,12 +499,12 @@
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object representing the method used to remove an event-handler delegate from the event source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.GetRemoveMethod%2A> method retrieves the <xref:System.Reflection.MethodInfo> object for removing a method of the event and specifies whether to return non-public methods.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.GetRemoveMethod%2A> method retrieves the <xref:System.Reflection.MethodInfo> object for removing a method of the event and specifies whether to return non-public methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,12 +528,12 @@
         <returns>A <see cref="T:System.Type" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Object.GetType%2A> method gets the type of the current instance.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Object.GetType%2A> method gets the type of the current instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -563,10 +563,10 @@
         <summary>Retrieves the type information for an object, which can be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -592,10 +592,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -635,10 +635,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -669,12 +669,12 @@
           <see langword="true" /> if one or more instance of the <paramref name="attributeType" /> parameter is applied to this member; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.IsDefined%2A> method indicates whether one or more instances of the `attributeType` parameter are applied to this member.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.IsDefined%2A> method indicates whether one or more instances of the `attributeType` parameter are applied to this member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -698,12 +698,12 @@
           <see langword="true" /> if the delegate is an instance of a multicast delegate; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.IsMulticast%2A> property gets a value indicating whether the event is multicast.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.IsMulticast%2A> property gets a value indicating whether the event is multicast.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -727,12 +727,12 @@
           <see langword="true" /> if this event has a special name; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.IsSpecialName%2A> property gets a value indicating whether the <xref:System.Reflection.EventInfo> object has a name with a special meaning.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.IsSpecialName%2A> property gets a value indicating whether the <xref:System.Reflection.EventInfo> object has a name with a special meaning.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -755,12 +755,12 @@
         <value>A <see cref="T:System.Reflection.MemberTypes" /> value indicating that this member is an event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.MemberType%2A> property gets a <xref:System.Reflection.MemberTypes> value indicating that this member is an event.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.MemberType%2A> property gets a <xref:System.Reflection.MemberTypes> value indicating that this member is an event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -783,12 +783,12 @@
         <value>A <see cref="T:System.String" /> object containing the name of this member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.Name%2A> property gets the name of the current member.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.Name%2A> property gets the name of the current member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -811,12 +811,12 @@
         <value>The <see cref="T:System.Type" /> object that was used to obtain this object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.ReflectedType%2A> property gets the class object that was used to obtain this instance.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.ReflectedType%2A> property gets the class object that was used to obtain this instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -844,12 +844,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.EventInfo.RemoveEventHandler(System.Object,System.Delegate)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.RemoveEventHandler%2A> method removes an event handler from an event source.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.RemoveEventHandler%2A> method removes an event handler from an event source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -873,10 +873,10 @@
         <returns>A string that represents the current <see cref="T:System.Object" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -891,12 +891,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.EventInfo.GetAddMethod" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.GetAddMethod%2A> methods return the method used to add an event-handler delegate to the event source.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.GetAddMethod%2A> methods return the method used to add an event-handler delegate to the event source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -911,12 +911,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.EventInfo.GetRaiseMethod" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.GetRaiseMethod%2A> methods return the method that is called when the event is raised.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.GetRaiseMethod%2A> methods return the method that is called when the event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -931,12 +931,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.MemberInfo.GetCustomAttributes" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> methods return all attributes applied to this member.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> methods return all attributes applied to this member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -951,12 +951,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.EventInfo.GetRemoveMethod" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.EventInfo.GetRemoveMethod%2A> method returns the method used to remove an event-handler delegate from the event source.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.EventInfo.GetRemoveMethod%2A> method returns the method used to remove an event-handler delegate from the event source.  
+ 
  ]]></format>
         </remarks>
       </Docs>

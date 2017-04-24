@@ -14,13 +14,13 @@
     <summary>Contains information about an area of a <see cref="T:System.Windows.Forms.MonthCalendar" /> control. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.MonthCalendar.HitTestInfo> objects are returned by <xref:System.Windows.Forms.MonthCalendar> controls in response to the <xref:System.Windows.Forms.MonthCalendar.HitTest%2A> method.  
-  
+<xref:System.Windows.Forms.MonthCalendar.HitTestInfo> objects are returned by <xref:System.Windows.Forms.MonthCalendar> controls in response to the <xref:System.Windows.Forms.MonthCalendar.HitTest%2A> method.  
+ 
 > [!CAUTION]
 >  <xref:System.Windows.Forms.MonthCalendar.HitTestInfo> is for informational purposes only; you should not construct these objects and cannot modify any of the members.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <value>The time information specific to the location that was hit-tested.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.MonthCalendar.HitTestInfo.Time%2A> property contains a valid date when the <xref:System.Windows.Forms.MonthCalendar.HitArea> property is set to <xref:System.Windows.Forms.MonthCalendar.HitArea> or <xref:System.Windows.Forms.MonthCalendar.HitArea>.  
-  
+The <xref:System.Windows.Forms.MonthCalendar.HitTestInfo.Time%2A> property contains a valid date when the <xref:System.Windows.Forms.MonthCalendar.HitArea> property is set to <xref:System.Windows.Forms.MonthCalendar.HitArea> or <xref:System.Windows.Forms.MonthCalendar.HitArea>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

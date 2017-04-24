@@ -23,12 +23,12 @@
     <summary>Specifies whether the type should be marshaled using the Automation marshaler or a custom proxy and stub.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can apply this attribute to assemblies, classes, or interfaces.  
-  
- When applied to a class, it extends to the class interface for that class, if present.  
-  
+You can apply this attribute to assemblies, classes, or interfaces.  
+ 
+When applied to a class, it extends to the class interface for that class, if present.  
+ 
  ]]></format>
     </remarks>
   </Docs>

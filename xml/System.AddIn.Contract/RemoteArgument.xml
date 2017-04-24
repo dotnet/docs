@@ -14,26 +14,26 @@
     <summary>Represents an instance of a type that can be passed across process and application domain boundaries.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.AddIn.Contract.RemoteArgument> structure to pass arguments of types that are not determined until run time across process and application domain boundaries. The purpose of <xref:System.AddIn.Contract.RemoteArgument> is similar to that of the `VARIANT` type in COM.  
-  
- You can use <xref:System.AddIn.Contract.RemoteArgument> to pass the following types and values as remote arguments:  
-  
+Use the <xref:System.AddIn.Contract.RemoteArgument> structure to pass arguments of types that are not determined until run time across process and application domain boundaries. The purpose of <xref:System.AddIn.Contract.RemoteArgument> is similar to that of the `VARIANT` type in COM.  
+ 
+You can use <xref:System.AddIn.Contract.RemoteArgument> to pass the following types and values as remote arguments:  
+ 
 -   <xref:System.Type.Missing?displayProperty=fullName>.  
-  
+ 
 -   <xref:System.AddIn.Contract.IContract>.  
-  
+ 
 -   Intrinsic data types.  
-  
+ 
 -   Arrays that contain elements of intrinsic data types.  
-  
- An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
- <xref:System.AddIn.Contract.RemoteArgument> provides constructors for each of the types that it supports. You can also use the <xref:System.AddIn.Contract.RemoteArgument.CreateRemoteArgument%2A> methods to create <xref:System.AddIn.Contract.RemoteArgument> objects. The <xref:System.AddIn.Contract.RemoteArgument.CreateRemoteArgument%2A> methods automatically call the appropriate <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor for your argument type.  
-  
- If you create a <xref:System.AddIn.Contract.RemoteArgument> using the default parameterless constructor, the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property is set to the value <xref:System.AddIn.Contract.RemoteArgumentKind?displayProperty=fullName> and the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property is set to the value <xref:System.TypeCode?displayProperty=fullName>.  
-  
+ 
+An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
+ 
+<xref:System.AddIn.Contract.RemoteArgument> provides constructors for each of the types that it supports. You can also use the <xref:System.AddIn.Contract.RemoteArgument.CreateRemoteArgument%2A> methods to create <xref:System.AddIn.Contract.RemoteArgument> objects. The <xref:System.AddIn.Contract.RemoteArgument.CreateRemoteArgument%2A> methods automatically call the appropriate <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor for your argument type.  
+ 
+If you create a <xref:System.AddIn.Contract.RemoteArgument> using the default parameterless constructor, the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property is set to the value <xref:System.AddIn.Contract.RemoteArgumentKind?displayProperty=fullName> and the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property is set to the value <xref:System.TypeCode?displayProperty=fullName>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.AddIn.Contract.IContract" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,10 +80,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Array" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to the type code of the array element type, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to the type code of the array element type, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The array element type is not a base type (that is, the <see cref="M:System.Type.GetTypeCode(System.Type)" /> method for the array element type returns <see cref="F:System.TypeCode.Object" />).</exception>
@@ -108,10 +108,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Boolean" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,10 +133,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Byte" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,10 +158,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Char" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DateTime" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DBNull" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Decimal" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Double" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int16" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,10 +308,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int32" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int64" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,10 +363,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.SByte" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Single" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -413,10 +413,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.String" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,10 +443,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt16" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,10 +473,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt32" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,10 +503,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt64" /> argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -531,10 +531,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.AddIn.Contract.IContract" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,12 +558,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class using the specified <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> and <see cref="T:System.TypeCode" /> for an argument that is not passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor assigns the default value of the data type specified by the `typeCode` parameter to the <xref:System.AddIn.Contract.RemoteArgument>.  
-  
- An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
+This constructor assigns the default value of the data type specified by the `typeCode` parameter to the <xref:System.AddIn.Contract.RemoteArgument>.  
+ 
+An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -598,10 +598,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Array" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to the type code of the array element type, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to the type code of the array element type, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The array element type is not a base type (that is, the <see cref="M:System.Type.GetTypeCode(System.Type)" /> method returns <see cref="F:System.TypeCode.Object" /> for the array element type).</exception>
@@ -629,10 +629,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Boolean" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,10 +657,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Byte" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -685,10 +685,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Char" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -713,10 +713,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DateTime" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -741,10 +741,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DBNull" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -769,10 +769,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Decimal" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -797,10 +797,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Double" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -825,10 +825,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int16" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -853,10 +853,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int32" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -881,10 +881,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int64" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -914,10 +914,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.SByte" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -942,10 +942,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Single" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -970,10 +970,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.String" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1003,10 +1003,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt16" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1036,10 +1036,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt32" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1069,10 +1069,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt64" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
+This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1099,12 +1099,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class using the specified <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> and <see cref="T:System.TypeCode" /> for an argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor assigns the default value of the data type specified by the `typeCode` parameter to the <xref:System.AddIn.Contract.RemoteArgument>.  
-  
- An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
+This constructor assigns the default value of the data type specified by the `typeCode` parameter to the <xref:System.AddIn.Contract.RemoteArgument>.  
+ 
+An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1277,10 +1277,10 @@
         <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the specified argument.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor that applies to the type of the `value` parameter.  
-  
+This method calls the <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor that applies to the type of the `value` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1324,10 +1324,10 @@
         <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the specified argument.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor that applies to the type of the `value` parameter.  
-  
+This method calls the <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor that applies to the type of the `value` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1373,12 +1373,12 @@
         <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the specified argument.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor that applies to the type of the `value` parameter.  
-  
- You cannot use this method to create a <xref:System.AddIn.Contract.RemoteArgument> that represents a `null` array that contains elements of intrinsic data types. An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
+This method calls the <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor that applies to the type of the `value` parameter.  
+ 
+You cannot use this method to create a <xref:System.AddIn.Contract.RemoteArgument> that represents a `null` array that contains elements of intrinsic data types. An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.TypeCode" /> of <paramref name="value" /> is <see cref="F:System.TypeCode.Object" />, <paramref name="value" /> is not an <see cref="T:System.AddIn.Contract.IContract" />, and <paramref name="value" /> is not <see langword="null" />.  
@@ -1647,10 +1647,10 @@
         <value>One of the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> values that indicates whether the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an intrinsic type, an array of intrinsic types, an <see cref="T:System.AddIn.Contract.IContract" />, or the <see cref="F:System.Type.Missing" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
+An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

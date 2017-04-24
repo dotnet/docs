@@ -15,12 +15,12 @@
     <summary>Represents a file system directory path that should not be searched for references to add to a Web services discovery document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Discovery.ExcludePathInfo> class is employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. The <xref:System.Web.Services.Discovery.DynamicDiscoveryDocument> class's <xref:System.Web.Services.Discovery.DynamicDiscoveryDocument.ExcludePaths%2A> property contains a collection of <xref:System.Web.Services.Discovery.ExcludePathInfo> instances.  
-  
- Normally, none of these classes need to be used directly by a developer.  
-  
+The <xref:System.Web.Services.Discovery.ExcludePathInfo> class is employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. The <xref:System.Web.Services.Discovery.DynamicDiscoveryDocument> class's <xref:System.Web.Services.Discovery.DynamicDiscoveryDocument.ExcludePaths%2A> property contains a collection of <xref:System.Web.Services.Discovery.ExcludePathInfo> instances.  
+ 
+Normally, none of these classes need to be used directly by a developer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.ExcludePathInfo" /> class and specifies the file system path to exclude from searches.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the `path` parameter becomes the return value of the <xref:System.Web.Services.Discovery.ExcludePathInfo.Path%2A> property.  
-  
+The value of the `path` parameter becomes the return value of the <xref:System.Web.Services.Discovery.ExcludePathInfo.Path%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

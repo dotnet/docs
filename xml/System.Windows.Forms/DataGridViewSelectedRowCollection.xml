@@ -23,10 +23,10 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects that are selected in a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order of rows in the collection is not guaranteed to match the order in which they were selected.  
-  
+The order of rows in the collection is not guaranteed to match the order in which they were selected.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Clears the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=fullName> method.  
-  
+This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -146,10 +146,10 @@
         <summary>Inserts a row into the collection at the specified position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To insert a row into the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
-  
+This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To insert a row into the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -223,10 +223,10 @@
         <summary>Copies the elements of the collection to the specified array, starting at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -259,10 +259,10 @@
         <value>The number of elements in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,10 +310,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.DataGridViewSelectedRowCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,12 +365,12 @@
         <returns>The index at which <paramref name="value" /> was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To add a row to the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To add a row to the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -393,12 +393,12 @@
         <summary>Implements the <see cref="M:System.Collections.IList.Clear" /> method. Always throws <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=fullName> method.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=fullName> method.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -426,10 +426,10 @@
           <see langword="true" /> if the <paramref name="value" /> parameter is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,10 +455,10 @@
         <returns>The zero-based index of the <paramref name="value" /> parameter if it is found in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -485,12 +485,12 @@
         <summary>Implements the <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" /> method. Always throws <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To add a row to the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To add a row to the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -514,10 +514,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,10 +540,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -569,10 +569,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The property is set.</exception>
@@ -604,12 +604,12 @@
         <summary>Implements the <see cref="M:System.Collections.IList.Remove(System.Object)" /> method. Always throws <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To remove a row from the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To remove a row from the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -635,12 +635,12 @@
         <summary>Implements the <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" /> method. Always throws <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To remove a row from the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class directly. To remove a row from the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>

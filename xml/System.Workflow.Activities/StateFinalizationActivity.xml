@@ -34,14 +34,14 @@
     <summary>Represents an activity that executes contained activities before transitioning to another state in a state machine workflow. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This activity acts as a container to a group of activities that will be executed before the <xref:System.Workflow.Activities.StateActivity> transitions to another state.  The activity container acts as a sequence.  
-  
+ 
+This activity acts as a container to a group of activities that will be executed before the <xref:System.Workflow.Activities.StateActivity> transitions to another state.  The activity container acts as a sequence.  
+ 
  ]]></format>
     </remarks>
   </Docs>

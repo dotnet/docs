@@ -49,20 +49,20 @@
     <summary>Represents a thread-safe first in-first out (FIFO) collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  <xref:System.Collections.Concurrent.ConcurrentQueue%601> implements the <xref:System.Collections.Generic.IReadOnlyCollection%601> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Collections.Concurrent.ConcurrentQueue%601> class did not implement this interface.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.Collections.Concurrent.ConcurrentQueue%601> to enqueue and dequeue items:  
-  
- [!code-csharp[System.Collections.Concurrent.ConcurrentQueue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentqueue/cs/concqueue.cs#1)]
- [!code-vb[System.Collections.Concurrent.ConcurrentQueue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentqueue/vb/concqueue.vb#1)]  
-  
+The following example shows how to use a <xref:System.Collections.Concurrent.ConcurrentQueue%601> to enqueue and dequeue items:  
+ 
+[!code-csharp[System.Collections.Concurrent.ConcurrentQueue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentqueue/cs/concqueue.cs#1)]
+[!code-vb[System.Collections.Concurrent.ConcurrentQueue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentqueue/vb/concqueue.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
@@ -188,10 +188,10 @@
         <value>The number of elements contained in the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For determining whether the collection contains any items, use of the <xref:System.Collections.Concurrent.ConcurrentQueue%601.IsEmpty%2A> property is recommended rather than retrieving the number of items from the <xref:System.Collections.Concurrent.ConcurrentQueue%601.Count%2A> property and comparing it to 0.  
-  
+For determining whether the collection contains any items, use of the <xref:System.Collections.Concurrent.ConcurrentQueue%601.IsEmpty%2A> property is recommended rather than retrieving the number of items from the <xref:System.Collections.Concurrent.ConcurrentQueue%601.Count%2A> property and comparing it to 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,12 +255,12 @@
         <returns>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The enumeration represents a moment-in-time snapshot of the contents of the queue. It does not reflect any updates to the collection after <xref:System.Collections.Concurrent.ConcurrentQueue%601.GetEnumerator%2A> was called. The enumerator is safe to use concurrently with reads from and writes to the queue.  
-  
- The enumerator returns the collection elements in the order in which they were added, which is FIFO order (first-in, first-out).  
-  
+The enumeration represents a moment-in-time snapshot of the contents of the queue. It does not reflect any updates to the collection after <xref:System.Collections.Concurrent.ConcurrentQueue%601.GetEnumerator%2A> was called. The enumerator is safe to use concurrently with reads from and writes to the queue.  
+ 
+The enumerator returns the collection elements in the order in which they were added, which is FIFO order (first-in, first-out).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,10 +292,10 @@
         <value>true if the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" /> is empty; otherwise, false.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For determining whether the collection contains any items, use of this property is recommended rather than retrieving the number of items from the <xref:System.Collections.Concurrent.ConcurrentQueue%601.Count%2A> property and comparing it to 0. However, as this collection is intended to be accessed concurrently, it may be the case that another thread will modify the collection after <xref:System.Collections.Concurrent.ConcurrentQueue%601.IsEmpty%2A> returns, thus invalidating the result.  
-  
+For determining whether the collection contains any items, use of this property is recommended rather than retrieving the number of items from the <xref:System.Collections.Concurrent.ConcurrentQueue%601.Count%2A> property and comparing it to 0. However, as this collection is intended to be accessed concurrently, it may be the case that another thread will modify the collection after <xref:System.Collections.Concurrent.ConcurrentQueue%601.IsEmpty%2A> returns, thus invalidating the result.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,10 +331,10 @@
         <returns>true if the object was added successfully; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For <xref:System.Collections.Concurrent.ConcurrentQueue%601>, this operation will always add the object to the end of the <xref:System.Collections.Concurrent.ConcurrentQueue%601> and return true.  
-  
+For <xref:System.Collections.Concurrent.ConcurrentQueue%601>, this operation will always add the object to the end of the <xref:System.Collections.Concurrent.ConcurrentQueue%601> and return true.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,10 +370,10 @@
         <returns>true if an element was removed and returned succesfully; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For <xref:System.Collections.Concurrent.ConcurrentQueue%601>, this operation will attempt to remove the object from the beginning of the <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
-  
+For <xref:System.Collections.Concurrent.ConcurrentQueue%601>, this operation will attempt to remove the object from the beginning of the <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -564,12 +564,12 @@
           <see langword="true" /> if an element was removed and returned from the beginning of the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" /> successfully; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.Concurrent.ConcurrentQueue%601> handles all synchronization internally. If two threads call <xref:System.Collections.Concurrent.ConcurrentQueue%601.TryDequeue%2A> at precisely the same moment, neither operation is blocked. When a conflict is detected between two threads, one thread has to try again to retrieve the next element, and the synchronization is handled internally.  
-  
- <xref:System.Collections.Concurrent.ConcurrentQueue%601.TryDequeue%2A> tries to remove an element from the queue. If the method is successful, the item is removed and the method returns `true`; otherwise, it returns `false`. That happens atomically with respect to other operations on the queue. If the queue was populated with code such as `q.Enqueue("a"); q.Enqueue("b"); q.Enqueue("c");` and two threads concurrently try to dequeue an element, one thread will dequeue `a` and the other thread will dequeue `b`. Both calls to <xref:System.Collections.Concurrent.ConcurrentQueue%601.TryDequeue%2A> will return `true`, because they were both able to dequeue an element. If each thread goes back to dequeue an additional element, one of the threads will dequeue `c` and return `true`, whereas the other thread will find the queue empty and will return `false`.  
-  
+<xref:System.Collections.Concurrent.ConcurrentQueue%601> handles all synchronization internally. If two threads call <xref:System.Collections.Concurrent.ConcurrentQueue%601.TryDequeue%2A> at precisely the same moment, neither operation is blocked. When a conflict is detected between two threads, one thread has to try again to retrieve the next element, and the synchronization is handled internally.  
+ 
+<xref:System.Collections.Concurrent.ConcurrentQueue%601.TryDequeue%2A> tries to remove an element from the queue. If the method is successful, the item is removed and the method returns `true`; otherwise, it returns `false`. That happens atomically with respect to other operations on the queue. If the queue was populated with code such as `q.Enqueue("a"); q.Enqueue("b"); q.Enqueue("c");` and two threads concurrently try to dequeue an element, one thread will dequeue `a` and the other thread will dequeue `b`. Both calls to <xref:System.Collections.Concurrent.ConcurrentQueue%601.TryDequeue%2A> will return `true`, because they were both able to dequeue an element. If each thread goes back to dequeue an additional element, one of the threads will dequeue `c` and return `true`, whereas the other thread will find the queue empty and will return `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

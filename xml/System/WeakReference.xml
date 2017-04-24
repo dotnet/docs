@@ -35,20 +35,20 @@
     <summary>Represents a weak reference, which references an object while still allowing that object to be reclaimed by garbage collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A weak reference allows the garbage collector to collect an object while still allowing an application to access the object. If you need the object, you can still obtain a strong reference to it and prevent it from being collected. For more information about how to use short and long weak references, see [Weak References](~/docs/standard/garbage-collection/weak-references.md).  
+A weak reference allows the garbage collector to collect an object while still allowing an application to access the object. If you need the object, you can still obtain a strong reference to it and prevent it from being collected. For more information about how to use short and long weak references, see [Weak References](~/docs/standard/garbage-collection/weak-references.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how you can use weak references to maintain a cache of objects as a resource for an application. The cache is constructed using an <xref:System.Collections.Generic.IDictionary%602> of <xref:System.WeakReference> objects keyed by an index value. The <xref:System.WeakReference.Target%2A> property for the <xref:System.WeakReference> objects is an object in a byte array that represents data.  
-  
- The example randomly accesses objects in the cache. If an object is reclaimed for garbage collection, a new data object is regenerated; otherwise, the object is available to access because of the weak reference.  
-  
- [!code-csharp[WeakReference#1](~/samples/snippets/csharp/VS_Snippets_CLR/WeakReference/cs/program.cs#1)]
- [!code-vb[WeakReference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/WeakReference/vb/Module1.vb#1)]  
-  
+The following example demonstrates how you can use weak references to maintain a cache of objects as a resource for an application. The cache is constructed using an <xref:System.Collections.Generic.IDictionary%602> of <xref:System.WeakReference> objects keyed by an index value. The <xref:System.WeakReference.Target%2A> property for the <xref:System.WeakReference> objects is an object in a byte array that represents data.  
+ 
+The example randomly accesses objects in the cache. If an object is reclaimed for garbage collection, a new data object is regenerated; otherwise, the object is available to access because of the weak reference.  
+ 
+[!code-csharp[WeakReference#1](~/samples/snippets/csharp/VS_Snippets_CLR/WeakReference/cs/program.cs#1)]
+[!code-vb[WeakReference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/WeakReference/vb/Module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -98,10 +98,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.WeakReference" /> class, referencing the specified object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a short weak reference to `target`.  
-  
+This constructor creates a short weak reference to `target`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,18 +137,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.WeakReference" /> class, referencing the specified object and using the specified resurrection tracking.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `trackResurrection` is `false`, a short weak reference is created. If `trackResurrection` is `true`, a long weak reference is created.  
+If `trackResurrection` is `false`, a short weak reference is created. If `trackResurrection` is `true`, a long weak reference is created.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a cache of data objects with short weak references. This example is part of a larger example provided for the <xref:System.WeakReference> class.  
-  
- [!code-csharp[WeakReference#2](~/samples/snippets/csharp/VS_Snippets_CLR/WeakReference/cs/program.cs#2)]
- [!code-vb[WeakReference#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/WeakReference/vb/Module1.vb#2)]  
-  
+The following example creates a cache of data objects with short weak references. This example is part of a larger example provided for the <xref:System.WeakReference> class.  
+ 
+[!code-csharp[WeakReference#2](~/samples/snippets/csharp/VS_Snippets_CLR/WeakReference/cs/program.cs#2)]
+[!code-vb[WeakReference#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/WeakReference/vb/Module1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,10 +177,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.WeakReference" /> class, using deserialized data from the specified serialization and stream objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter is reserved, and does not currently participate in this operation.  
-  
+The `context` parameter is reserved, and does not currently participate in this operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -244,12 +244,12 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with all the data needed to serialize the current <see cref="T:System.WeakReference" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method stores all the information in `info` necessary to serialize the current <xref:System.WeakReference> object.  
-  
- The `context` parameter is reserved and is not currently used in the execution of this method.  
-  
+This method stores all the information in `info` necessary to serialize the current <xref:System.WeakReference> object.  
+ 
+The `context` parameter is reserved and is not currently used in the execution of this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -287,10 +287,10 @@
           <see langword="true" /> if the object referenced by the current <see cref="T:System.WeakReference" /> object has not been garbage collected and is still accessible; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because an object could potentially be reclaimed for garbage collection immediately after the <xref:System.WeakReference.IsAlive%2A> property returns `true`, using this property is not recommended unless you are testing only for a `false` return value.  
-  
+Because an object could potentially be reclaimed for garbage collection immediately after the <xref:System.WeakReference.IsAlive%2A> property returns `true`, using this property is not recommended unless you are testing only for a `false` return value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,18 +325,18 @@
           <see langword="null" /> if the object referenced by the current <see cref="T:System.WeakReference" /> object has been garbage collected; otherwise, a reference to the object referenced by the current <see cref="T:System.WeakReference" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After setting this property to the target object, make sure that there are no other strong references to the object; otherwise, it will not be collected.  
+After setting this property to the target object, make sure that there are no other strong references to the object; otherwise, it will not be collected.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example tries to obtain an object from a cache of objects with weak references. If the object was reclaimed for garbage collection, a new object is generated. This example is part of a larger example provided for the <xref:System.WeakReference> class.  
-  
- [!code-csharp[WeakReference#3](~/samples/snippets/csharp/VS_Snippets_CLR/WeakReference/cs/program.cs#3)]
- [!code-vb[WeakReference#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/WeakReference/vb/Module1.vb#3)]  
-  
+The following example tries to obtain an object from a cache of objects with weak references. If the object was reclaimed for garbage collection, a new object is generated. This example is part of a larger example provided for the <xref:System.WeakReference> class.  
+ 
+[!code-csharp[WeakReference#3](~/samples/snippets/csharp/VS_Snippets_CLR/WeakReference/cs/program.cs#3)]
+[!code-vb[WeakReference#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/WeakReference/vb/Module1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The reference to the target object is invalid. This exception can be thrown while setting this property if the value is a null reference or if the object has been finalized during the set operation.</exception>
@@ -372,10 +372,10 @@
           <see langword="true" /> if the object the current <see cref="T:System.WeakReference" /> object refers to is tracked after finalization; or <see langword="false" /> if the object is only tracked until finalization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true`, the weak reference is a long weak reference and `true` was specified for the `trackResurrection` parameter in the <xref:System.WeakReference> constructor.  
-  
+If `true`, the weak reference is a long weak reference and `true` was specified for the `trackResurrection` parameter in the <xref:System.WeakReference> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

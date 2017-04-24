@@ -21,23 +21,23 @@
     <summary>Provides a forward-only cursor to enumerate through messages in a message queue.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Messaging.MessageQueueEnumerator> for dynamic interaction with queues on the network. Methods available through the <xref:System.Messaging.MessageQueue> class can return either a <xref:System.Messaging.MessageQueueEnumerator> containing a dynamic list of queues, or an array that contains a snapshot of the queue collection at the time the specified method was called.  
+Use <xref:System.Messaging.MessageQueueEnumerator> for dynamic interaction with queues on the network. Methods available through the <xref:System.Messaging.MessageQueue> class can return either a <xref:System.Messaging.MessageQueueEnumerator> containing a dynamic list of queues, or an array that contains a snapshot of the queue collection at the time the specified method was called.  
+ 
+There is no defined ordering of queues in a network. They are not ordered, for example, by computer, label, public or private status, or other user-accessible criteria. A <xref:System.Messaging.MessageQueueEnumerator> is a cursor, initialized to the head of a dynamic list. You can move the cursor to the first queue of the enumeration by calling <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A>. After the enumerator has been initialized, you can use <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> to step forward through the remaining queues.  
+ 
+It is not possible to step backward with a <xref:System.Messaging.MessageQueueEnumerator>. A cursor only allows forward movement through the queue enumeration. However, you can call <xref:System.Messaging.MessageQueueEnumerator.Reset%2A> to reset the enumeration and put the cursor at the beginning of the list again. Because the enumerator is dynamic, a queue that is appended beyond the cursor's current position can be accessed by the enumerator. A queue that is inserted before the cursor's current position cannot be accessed without first calling Reset.  
+ 
   
- There is no defined ordering of queues in a network. They are not ordered, for example, by computer, label, public or private status, or other user-accessible criteria. A <xref:System.Messaging.MessageQueueEnumerator> is a cursor, initialized to the head of a dynamic list. You can move the cursor to the first queue of the enumeration by calling <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A>. After the enumerator has been initialized, you can use <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> to step forward through the remaining queues.  
-  
- It is not possible to step backward with a <xref:System.Messaging.MessageQueueEnumerator>. A cursor only allows forward movement through the queue enumeration. However, you can call <xref:System.Messaging.MessageQueueEnumerator.Reset%2A> to reset the enumeration and put the cursor at the beginning of the list again. Because the enumerator is dynamic, a queue that is appended beyond the cursor's current position can be accessed by the enumerator. A queue that is inserted before the cursor's current position cannot be accessed without first calling Reset.  
-  
-   
-  
+ 
 ## Examples  
- The following code example iterates through all the message queues in the network, and examines the path for each queue. Finally, it displays the number of public queues on the network.  
-  
- [!code-cpp[MessageQueue.GetMessageQueueEnumerator_noparms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.GetMessageQueueEnumerator_noparms/CPP/mqgetmessagequeueenumerator.cpp#1)]
- [!code-csharp[MessageQueue.GetMessageQueueEnumerator_noparms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.GetMessageQueueEnumerator_noparms/CS/mqgetmessagequeueenumerator.cs#1)]
- [!code-vb[MessageQueue.GetMessageQueueEnumerator_noparms#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageQueue.GetMessageQueueEnumerator_noparms/VB/mqgetmessagequeueenumerator.vb#1)]  
-  
+The following code example iterates through all the message queues in the network, and examines the path for each queue. Finally, it displays the number of public queues on the network.  
+ 
+[!code-cpp[MessageQueue.GetMessageQueueEnumerator_noparms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.GetMessageQueueEnumerator_noparms/CPP/mqgetmessagequeueenumerator.cpp#1)]
+[!code-csharp[MessageQueue.GetMessageQueueEnumerator_noparms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.GetMessageQueueEnumerator_noparms/CS/mqgetmessagequeueenumerator.cs#1)]
+[!code-vb[MessageQueue.GetMessageQueueEnumerator_noparms#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageQueue.GetMessageQueueEnumerator_noparms/VB/mqgetmessagequeueenumerator.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Frees the resources associated with the enumerator.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The operating system retains an open handle, <xref:System.Messaging.MessageQueueEnumerator.LocatorHandle%2A>, to the queue enumerator during the lifetime of the cursor. When you finish working with the enumerator, call <xref:System.Messaging.MessageQueueEnumerator.Close%2A> to release the resources associated with the handle.  
-  
+The operating system retains an open handle, <xref:System.Messaging.MessageQueueEnumerator.LocatorHandle%2A>, to the queue enumerator during the lifetime of the cursor. When you finish working with the enumerator, call <xref:System.Messaging.MessageQueueEnumerator.Close%2A> to release the resources associated with the handle.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,12 +84,12 @@
         <value>The queue at which the cursor is currently positioned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the enumerator is created, it does not point to anything, so <xref:System.Messaging.MessageQueueEnumerator.Current%2A> is not valid and will throw an exception if it is accessed. You must call <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> to position the cursor at the first queue in the enumeration.  
-  
- Multiple calls to <xref:System.Messaging.MessageQueueEnumerator.Current%2A> with no intervening calls to <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> will return the same <xref:System.Messaging.MessageQueue> object.  
-  
+When the enumerator is created, it does not point to anything, so <xref:System.Messaging.MessageQueueEnumerator.Current%2A> is not valid and will throw an exception if it is accessed. You must call <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> to position the cursor at the first queue in the enumeration.  
+ 
+Multiple calls to <xref:System.Messaging.MessageQueueEnumerator.Current%2A> with no intervening calls to <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> will return the same <xref:System.Messaging.MessageQueue> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">You called <see cref="P:System.Messaging.MessageQueueEnumerator.Current" /> before the first call to <see cref="M:System.Messaging.MessageQueueEnumerator.MoveNext" />. The cursor is located before the first queue in the enumeration.  
@@ -116,10 +116,10 @@
         <summary>Releases all resources used by the <see cref="T:System.Messaging.MessageQueueEnumerator" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.Messaging.MessageQueueEnumerator.Dispose%2A> allows the resources used by the <xref:System.Messaging.MessageQueueEnumerator> to be reallocated for other purposes. For more information about <xref:System.Messaging.MessageQueueEnumerator.Dispose%2A>, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
-  
+Calling <xref:System.Messaging.MessageQueueEnumerator.Dispose%2A> allows the resources used by the <xref:System.Messaging.MessageQueueEnumerator> to be reallocated for other purposes. For more information about <xref:System.Messaging.MessageQueueEnumerator.Dispose%2A>, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,12 +145,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Messaging.MessageQueueEnumerator" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public <xref:System.Messaging.MessageQueueEnumerator.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Messaging.MessageQueueEnumerator> references. This method invokes the `Dispose` method of each referenced object.  
-  
+This method is called by the public <xref:System.Messaging.MessageQueueEnumerator.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Messaging.MessageQueueEnumerator> references. This method invokes the `Dispose` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -196,10 +196,10 @@
         <value>The native handle to the current queue.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you no longer need this <xref:System.Messaging.MessageQueueEnumerator> instance, call <xref:System.Messaging.MessageQueueEnumerator.Close%2A> to free this handle to the resource.  
-  
+When you no longer need this <xref:System.Messaging.MessageQueueEnumerator> instance, call <xref:System.Messaging.MessageQueueEnumerator.Close%2A> to free this handle to the resource.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">The handle does not exist.</exception>
@@ -225,14 +225,14 @@
           <see langword="true" /> if the enumerator was successfully advanced to the next queue; <see langword="false" /> if the enumerator has reached the end of the enumeration.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> returns `false` immediately if there are no queues associated with the enumeration.  
-  
- <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> will return `true` until it has reached the end of the collection. It will then return `false` for each successive call. However once <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> has returned `false`, accessing the <xref:System.Messaging.MessageQueueEnumerator.Current%2A> property will throw an exception.  
-  
- Upon creation, an enumerator is conceptually positioned before the first <xref:System.Messaging.MessageQueue> of the enumeration, and the first call to <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> brings the first queue of the enumeration into view.  
-  
+<xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> returns `false` immediately if there are no queues associated with the enumeration.  
+ 
+<xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> will return `true` until it has reached the end of the collection. It will then return `false` for each successive call. However once <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> has returned `false`, accessing the <xref:System.Messaging.MessageQueueEnumerator.Current%2A> property will throw an exception.  
+ 
+Upon creation, an enumerator is conceptually positioned before the first <xref:System.Messaging.MessageQueue> of the enumeration, and the first call to <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> brings the first queue of the enumeration into view.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The calling code does not have browse permissions.</exception>
@@ -255,12 +255,12 @@
         <summary>Resets the cursor, so it points to the beginning of the enumeration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An enumerator moves in a forward-only direction. Use this method to return to the beginning of the enumeration of queues.  
-  
- <xref:System.Messaging.MessageQueueEnumerator.Reset%2A> positions the cursor at the first queue in the list. You do not need to call <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> after calling <xref:System.Messaging.MessageQueueEnumerator.Reset%2A> to move the cursor forward to the first queue in the enumeration.  
-  
+An enumerator moves in a forward-only direction. Use this method to return to the beginning of the enumeration of queues.  
+ 
+<xref:System.Messaging.MessageQueueEnumerator.Reset%2A> positions the cursor at the first queue in the list. You do not need to call <xref:System.Messaging.MessageQueueEnumerator.MoveNext%2A> after calling <xref:System.Messaging.MessageQueueEnumerator.Reset%2A> to move the cursor forward to the first queue in the enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

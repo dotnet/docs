@@ -149,10 +149,10 @@
         <value>Returns a semicolon-delimited list of mappings from the platform names used by most VS types to those used by .vcxprojs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- E.g. "AnyCPU=Win32"  
-  
+E.g. "AnyCPU=Win32"  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -296,10 +296,10 @@
         <value>The list of project reference items that could not be resolved using the pre-resolved list of outputs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Since [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] only pre-resolves non-[!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] projects, this means that project references in this list are in the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] format.  
-  
+Since [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] only pre-resolves non-[!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] projects, this means that project references in this list are in the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] format.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -322,10 +322,10 @@
         <value>Returns the semicolon-delimited list of mappings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- E.g. "Win32=AnyCPU"  
-  
+E.g. "Win32=AnyCPU"  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

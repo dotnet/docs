@@ -14,10 +14,10 @@
     <summary>Represents a supporting security token and its authorization policies.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Supporting tokens augment the claims provided by the token associated with the message signature. There are 4 different kinds of supporting tokens, and the <xref:System.ServiceModel.Security.SupportingTokenSpecification.SecurityTokenAttachmentMode%2A> enumeration specifies which kind this instance is.  
-  
+Supporting tokens augment the claims provided by the token associated with the message signature. There are 4 different kinds of supporting tokens, and the <xref:System.ServiceModel.Security.SupportingTokenSpecification.SecurityTokenAttachmentMode%2A> enumeration specifies which kind this instance is.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,18 +87,18 @@
         <value>The security token attachment mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode> is an enumeration of the ways in which security tokens can be attached to messages. It includes the following members:  
-  
+The <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode> is an enumeration of the ways in which security tokens can be attached to messages. It includes the following members:  
+ 
 -   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
-  
+ 
 -   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
-  
+ 
 -   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
-  
+ 
 -   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

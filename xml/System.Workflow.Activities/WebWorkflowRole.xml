@@ -19,14 +19,14 @@
     <summary>Represents a Workflow role that is backed by a <see cref="T:System.Web.Security.RoleProvider" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- For more information about roles in ASP.NET, see [Role Providers](http://go.microsoft.com/fwlink/?LinkId=96709).  
-  
+ 
+For more information about roles in ASP.NET, see [Role Providers](http://go.microsoft.com/fwlink/?LinkId=96709).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebWorkflowRole" /> class by using the specified role name and role provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The most commonly used role providers for <xref:System.Workflow.Activities.WebWorkflowRole> are classes that inherit from <xref:System.Web.Security.RoleProvider>. These classes include <xref:System.Web.Security.AuthorizationStoreRoleProvider>, <xref:System.Web.Security.SqlRoleProvider> and <xref:System.Web.Security.WindowsTokenRoleProvider>.  
-  
+The most commonly used role providers for <xref:System.Workflow.Activities.WebWorkflowRole> are classes that inherit from <xref:System.Web.Security.RoleProvider>. These classes include <xref:System.Web.Security.AuthorizationStoreRoleProvider>, <xref:System.Web.Security.SqlRoleProvider> and <xref:System.Web.Security.WindowsTokenRoleProvider>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -98,12 +98,12 @@
         <returns>A generic list of string values that represent the ASP.NET accounts associated with the <see cref="T:System.Workflow.Activities.WebWorkflowRole" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Security.WindowsTokenRoleProvider> supports only <xref:System.Web.Security.Roles.IsUserInRole%2A> and <xref:System.Web.Security.Roles.GetRolesForUser%2A>. Furthermore, it supports these methods only for the user account that is currently the WindowsPrincipal associated with the request context, so you cannot call <xref:System.Web.Security.Roles.GetRolesForUser%2A> for any user account in the domain. When using the <xref:System.Workflow.Activities.WebWorkflowRole.GetIdentities%2A> method with the <xref:System.Web.Security.WindowsTokenRoleProvider>, the following provider exception is thrown:  
-  
- The configured Role Provider (WindowsTokenRoleProvider) relies upon Windows authentication to determine the groups that the user is allowed to be a member of. ASP.NET Role Manager cannot be used to manage Windows users and groups. Use the SQLRoleProvider if you want to support custom user/role assignment.  
-  
+<xref:System.Web.Security.WindowsTokenRoleProvider> supports only <xref:System.Web.Security.Roles.IsUserInRole%2A> and <xref:System.Web.Security.Roles.GetRolesForUser%2A>. Furthermore, it supports these methods only for the user account that is currently the WindowsPrincipal associated with the request context, so you cannot call <xref:System.Web.Security.Roles.GetRolesForUser%2A> for any user account in the domain. When using the <xref:System.Workflow.Activities.WebWorkflowRole.GetIdentities%2A> method with the <xref:System.Web.Security.WindowsTokenRoleProvider>, the following provider exception is thrown:  
+ 
+The configured Role Provider (WindowsTokenRoleProvider) relies upon Windows authentication to determine the groups that the user is allowed to be a member of. ASP.NET Role Manager cannot be used to manage Windows users and groups. Use the SQLRoleProvider if you want to support custom user/role assignment.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <value>A string that contains the role provider for the <see cref="T:System.Workflow.Activities.WebWorkflowRole" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The most commonly used role providers for <xref:System.Workflow.Activities.WebWorkflowRole> are classes that inherit from <xref:System.Web.Security.RoleProvider>. These classes include <xref:System.Web.Security.AuthorizationStoreRoleProvider>, <xref:System.Web.Security.SqlRoleProvider> and <xref:System.Web.Security.WindowsTokenRoleProvider>.  
-  
+The most commonly used role providers for <xref:System.Workflow.Activities.WebWorkflowRole> are classes that inherit from <xref:System.Web.Security.RoleProvider>. These classes include <xref:System.Web.Security.AuthorizationStoreRoleProvider>, <xref:System.Web.Security.SqlRoleProvider> and <xref:System.Web.Security.WindowsTokenRoleProvider>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Encapsulates properties related to scrolling.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an abstract class. The actual derived classes used directly by Windows Forms are <xref:System.Windows.Forms.HScrollProperties> and <xref:System.Windows.Forms.VScrollProperties>, which are returned by the <xref:System.Windows.Forms.ScrollableControl.HorizontalScroll%2A> and <xref:System.Windows.Forms.ScrollableControl.VerticalScroll%2A> properties of <xref:System.Windows.Forms.ScrollableControl>.  
-  
+This is an abstract class. The actual derived classes used directly by Windows Forms are <xref:System.Windows.Forms.HScrollProperties> and <xref:System.Windows.Forms.VScrollProperties>, which are returned by the <xref:System.Windows.Forms.ScrollableControl.HorizontalScroll%2A> and <xref:System.Windows.Forms.ScrollableControl.VerticalScroll%2A> properties of <xref:System.Windows.Forms.ScrollableControl>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ScrollProperties" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot instantiate this class directly, as it is abstract. You must instantiate one of its derived classes instead, such as <xref:System.Windows.Forms.HScrollProperties> or <xref:System.Windows.Forms.VScrollProperties>.  
-  
+You cannot instantiate this class directly, as it is abstract. You must instantiate one of its derived classes instead, such as <xref:System.Windows.Forms.HScrollProperties> or <xref:System.Windows.Forms.VScrollProperties>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <value>An <see cref="T:System.Int32" /> describing how far, in pixels, to move the scroll bar in response to a large change.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ScrollProperties.LargeChange%2A> is used to determine how far the scroll bar is moved in response to a request to move a considerable distance, such as when the user presses the PAGE UP or PAGE DOWN button.  
-  
+<xref:System.Windows.Forms.ScrollProperties.LargeChange%2A> is used to determine how far the scroll bar is moved in response to a request to move a considerable distance, such as when the user presses the PAGE UP or PAGE DOWN button.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -131,10 +131,10 @@
         <value>An <see cref="T:System.Int32" /> representing the maximum range of the scroll bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the new value of <xref:System.Windows.Forms.ScrollProperties.Maximum%2A> is less than <xref:System.Windows.Forms.ScrollProperties.Minimum%2A>, then <xref:System.Windows.Forms.ScrollProperties.Minimum%2A> is set equal to <xref:System.Windows.Forms.ScrollProperties.Maximum%2A>.  
-  
+If the new value of <xref:System.Windows.Forms.ScrollProperties.Maximum%2A> is less than <xref:System.Windows.Forms.ScrollProperties.Minimum%2A>, then <xref:System.Windows.Forms.ScrollProperties.Minimum%2A> is set equal to <xref:System.Windows.Forms.ScrollProperties.Maximum%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <value>An <see cref="T:System.Int32" /> representing the lower range of the scroll bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the new value of <xref:System.Windows.Forms.ScrollProperties.Minimum%2A> is greater than <xref:System.Windows.Forms.ScrollProperties.Maximum%2A>, then <xref:System.Windows.Forms.ScrollProperties.Maximum%2A> is set equal to <xref:System.Windows.Forms.ScrollProperties.Minimum%2A>.  
-  
+If the new value of <xref:System.Windows.Forms.ScrollProperties.Minimum%2A> is greater than <xref:System.Windows.Forms.ScrollProperties.Maximum%2A>, then <xref:System.Windows.Forms.ScrollProperties.Maximum%2A> is set equal to <xref:System.Windows.Forms.ScrollProperties.Minimum%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -214,10 +214,10 @@
         <value>An <see cref="T:System.Int32" /> representing how far, in pixels, to move the scroll bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ScrollProperties.SmallChange%2A> is used to calculate how far to move the scroll bar in response to an arrow key click or a click on a scroll bar button.  
-  
+<xref:System.Windows.Forms.ScrollProperties.SmallChange%2A> is used to calculate how far to move the scroll bar in response to an arrow key click or a click on a scroll bar button.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,31 +14,31 @@
     <summary>Represents an <see langword="&lt;X509Data&gt;" /> subelement of an XMLDSIG or XML Encryption <see langword="&lt;KeyInfo&gt;" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class represents the `<X509Data>` element that contains X.509v3 certificate information related to the validation or encryption key. For example, an `<X509Data>` element might contain an X.509 certificate whose subject public key is the validation key, or a chain of X.509 certificates that terminate in a certificate for the validating key, or other identifiers for related X.509 certificates.  
+The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class represents the `<X509Data>` element that contains X.509v3 certificate information related to the validation or encryption key. For example, an `<X509Data>` element might contain an X.509 certificate whose subject public key is the validation key, or a chain of X.509 certificates that terminate in a certificate for the validating key, or other identifiers for related X.509 certificates.  
+ 
+Use the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class whenever you need to include X.509 certificate data in an encrypted or signed XML document.  
+ 
+For more information about the `<X509Data>` element, see Section 4.4.4 of the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/, or see the XML Encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ 
   
- Use the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class whenever you need to include X.509 certificate data in an encrypted or signed XML document.  
-  
- For more information about the `<X509Data>` element, see Section 4.4.4 of the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/, or see the XML Encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
-  
-   
-  
+ 
 ## Examples  
- This section contains two code examples. The first example demonstrates how to sign an XML file using a detached signature. The second example demonstrates how to sign an XML file using an envelope signature.  
-  
- **Example #1**  
-  
- [!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CPP/examplecreatedetached.cpp#1)]
- [!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CS/examplecreatedetached.cs#1)]
- [!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/VB/examplecreatedetached.vb#1)]  
-  
- **Example #2**  
-  
- [!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CPP/examplecreateenvelope.cpp#1)]
- [!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CS/examplecreateenvelope.cs#1)]
- [!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/VB/examplecreateenvelope.vb#1)]  
-  
+This section contains two code examples. The first example demonstrates how to sign an XML file using a detached signature. The second example demonstrates how to sign an XML file using an envelope signature.  
+ 
+**Example #1**  
+ 
+[!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CPP/examplecreatedetached.cpp#1)]
+[!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CS/examplecreatedetached.cs#1)]
+[!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/VB/examplecreatedetached.vb#1)]  
+ 
+**Example #2**  
+ 
+[!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CPP/examplecreateenvelope.cpp#1)]
+[!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CS/examplecreateenvelope.cs#1)]
+[!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/VB/examplecreateenvelope.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,22 +93,22 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> class from the specified X.509v3 certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This section contains two code examples. The first example demonstrates how to sign an XML file using a detached signature. The second example demonstrates how to sign an XML file using an envelope signature.  
-  
- **Example #1**  
-  
- [!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CPP/examplecreatedetached.cpp#2)]
- [!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CS/examplecreatedetached.cs#2)]
- [!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/VB/examplecreatedetached.vb#2)]  
-  
- **Example #2**  
-  
- [!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CPP/examplecreateenvelope.cpp#2)]
- [!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CS/examplecreateenvelope.cs#2)]
- [!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/VB/examplecreateenvelope.vb#2)]  
-  
+This section contains two code examples. The first example demonstrates how to sign an XML file using a detached signature. The second example demonstrates how to sign an XML file using an envelope signature.  
+ 
+**Example #1**  
+ 
+[!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CPP/examplecreatedetached.cpp#2)]
+[!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CS/examplecreatedetached.cs#2)]
+[!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/VB/examplecreatedetached.vb#2)]  
+ 
+**Example #2**  
+ 
+[!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CPP/examplecreateenvelope.cpp#2)]
+[!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CS/examplecreateenvelope.cs#2)]
+[!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/VB/examplecreateenvelope.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="cert" /> parameter is <see langword="null" />.</exception>
@@ -133,13 +133,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> class from the specified X.509v3 certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> object while signing and verifying an XML document.  
-  
- [!code-csharp[System.Security.Cryptography.Xml.KeyInfoX509Data#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.KeyInfoX509Data/cs/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.Xml.KeyInfoX509Data#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.KeyInfoX509Data/vb/sample.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> object while signing and verifying an XML document.  
+ 
+[!code-csharp[System.Security.Cryptography.Xml.KeyInfoX509Data#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.KeyInfoX509Data/cs/sample.cs#1)]
+[!code-vb[System.Security.Cryptography.Xml.KeyInfoX509Data#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.KeyInfoX509Data/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="cert" /> parameter is <see langword="null" />.</exception>
@@ -190,12 +190,12 @@
         <summary>Adds the specified issuer name and serial number pair to the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For identification, each X.509v3 certificate carries the name of the certification authority that issued the certificate paired with a unique serial number assigned by the certification authority.  
-  
- The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial%2A> method adds information about an issuer name and serial number pair to a list of <xref:System.Security.Cryptography.Xml.X509IssuerSerial> objects that are accessible through the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property.  
-  
+For identification, each X.509v3 certificate carries the name of the certification authority that issued the certificate paired with a unique serial number assigned by the certification authority.  
+ 
+The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial%2A> method adds information about an issuer name and serial number pair to a list of <xref:System.Security.Cryptography.Xml.X509IssuerSerial> objects that are accessible through the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,10 +220,10 @@
         <summary>Adds the specified subject key identifier (SKI) byte array to the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subject key identifiers (SKIs) are a way of identifying certificates that contain a certain public key.  
-  
+Subject key identifiers (SKIs) are a way of identifying certificates that contain a certain public key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -253,10 +253,10 @@
         <summary>Adds the specified subject key identifier (SKI) string to the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subject key identifiers (SKIs) are a shorthand way to identify certificates that contain a certain public key.  
-  
+Subject key identifiers (SKIs) are a shorthand way to identify certificates that contain a certain public key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <returns>An XML representation of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlElement> object returned by this method is suitable for use as a subelement of an XMLDSIG or XML encryption `<KeyInfo>` element.  
-  
+The <xref:System.Xml.XmlElement> object returned by this method is suitable for use as a subelement of an XMLDSIG or XML encryption `<KeyInfo>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -361,14 +361,14 @@
         <value>A list of <see cref="T:System.Security.Cryptography.Xml.X509IssuerSerial" /> structures that represent an issuer name and serial number pair.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property represents the `<X509IssuerSerial`> element of an XML digital signature using a list of <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structures contained within.  The `<X509IssuerSerial`> element represents an issuer name and serial number pair, which identify a specific X.509v3 certificate.  
-  
- The issuer of an X.509 certificate is the name of the certification authority that issued the certificate. Certification authorities assign each certificate they issue a unique serial number.  
-  
- You can add a name and serial number pair using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial%2A> method.  
-  
+The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property represents the `<X509IssuerSerial`> element of an XML digital signature using a list of <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structures contained within.  The `<X509IssuerSerial`> element represents an issuer name and serial number pair, which identify a specific X.509v3 certificate.  
+ 
+The issuer of an X.509 certificate is the name of the certification authority that issued the certificate. Certification authorities assign each certificate they issue a unique serial number.  
+ 
+You can add a name and serial number pair using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,10 +393,10 @@
         <summary>Parses the input <see cref="T:System.Xml.XmlElement" /> object and configures the internal state of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object to match.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is typically used to process an `<X509Data>` subelement of a `<KeyInfo>` element.  
-  
+This method is typically used to process an `<X509Data>` subelement of a `<KeyInfo>` element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
@@ -424,10 +424,10 @@
         <value>A list of the subject key identifiers (SKIs) contained in the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subject key identifiers (SKIs) are a way to identify certificates that contain a certain public key. An SKI can be used to identify one or more certificates issued to a particular subject key pair.  
-  
+Subject key identifiers (SKIs) are a way to identify certificates that contain a certain public key. An SKI can be used to identify one or more certificates issued to a particular subject key pair.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -449,10 +449,10 @@
         <value>A list of the subject names of the entities contained in the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every X.509v3 certificate includes a subject name. This name can be used to identify one or more certificates.  
-  
+Every X.509v3 certificate includes a subject name. This name can be used to identify one or more certificates.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -466,10 +466,10 @@
         <summary>Adds a subject key identifier (SKI) to the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subject key identifiers (SKIs) are a shorthand way to identify certificates that contain a certain public key.  
-  
+Subject key identifiers (SKIs) are a shorthand way to identify certificates that contain a certain public key.  
+ 
  ]]></format>
         </remarks>
       </Docs>

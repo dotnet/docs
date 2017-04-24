@@ -15,31 +15,31 @@
     <summary>The encoder is the component that is used to write messages to a stream and to read messages from a stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Channels.MessageEncoder> is a base class that provides implementations that support a Multipurpose Internet Mail Extensions (MIME) content type and message version, and defines the interface for the serialization and deserialization of messages according to that content type. Use it as a base class for writing your own custom encoder.  
-  
- Use this class if you want to implement a custom message encoder. To implement your own custom message encoder, you must provide custom implementations of the following abstract base classes:  
-  
+<xref:System.ServiceModel.Channels.MessageEncoder> is a base class that provides implementations that support a Multipurpose Internet Mail Extensions (MIME) content type and message version, and defines the interface for the serialization and deserialization of messages according to that content type. Use it as a base class for writing your own custom encoder.  
+ 
+Use this class if you want to implement a custom message encoder. To implement your own custom message encoder, you must provide custom implementations of the following abstract base classes:  
+ 
 -   <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
-  
+ 
 -   <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
-  
+ 
 -   <xref:System.ServiceModel.Channels.MessageEncoder>  
+ 
+Override the <xref:System.ServiceModel.Channels.MessageEncoderFactory.Encoder%2A> to return an instance of your custom <xref:System.ServiceModel.Channels.MessageEncoder>. Then wire up your custom <xref:System.ServiceModel.Channels.MessageEncoderFactory> to the binding element stack used to configure the service or client by overriding the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method to return an instance of this factory.  
+ 
+The task of converting between the in-memory representation of a message and an XML Information Set (Infoset) representation that can be written to a stream is encapsulated within the <xref:System.ServiceModel.Channels.MessageEncoder> class, which most commonly serves as a factory for XML readers and XML writers that support specific types of XML encodings.  
+ 
+The key methods on <xref:System.ServiceModel.Channels.MessageEncoder> are <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> and <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A>. <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> takes a <xref:System.ServiceModel.Channels.Message> object and writes it into a <xref:System.IO.Stream> object. <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A> takes a <xref:System.IO.Stream> object and a maximum header size and returns a <xref:System.ServiceModel.Channels.Message> object.  
+ 
   
- Override the <xref:System.ServiceModel.Channels.MessageEncoderFactory.Encoder%2A> to return an instance of your custom <xref:System.ServiceModel.Channels.MessageEncoder>. Then wire up your custom <xref:System.ServiceModel.Channels.MessageEncoderFactory> to the binding element stack used to configure the service or client by overriding the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method to return an instance of this factory.  
-  
- The task of converting between the in-memory representation of a message and an XML Information Set (Infoset) representation that can be written to a stream is encapsulated within the <xref:System.ServiceModel.Channels.MessageEncoder> class, which most commonly serves as a factory for XML readers and XML writers that support specific types of XML encodings.  
-  
- The key methods on <xref:System.ServiceModel.Channels.MessageEncoder> are <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> and <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A>. <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> takes a <xref:System.ServiceModel.Channels.Message> object and writes it into a <xref:System.IO.Stream> object. <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A> takes a <xref:System.IO.Stream> object and a maximum header size and returns a <xref:System.ServiceModel.Channels.Message> object.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows an example of a class that is derived from <xref:System.ServiceModel.Channels.MessageEncoder>.  
-  
- [!code-csharp[S_UE_CustomTextMessageEncoder#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#0)]  
-  
+The following code shows an example of a class that is derived from <xref:System.ServiceModel.Channels.MessageEncoder>.  
+ 
+[!code-csharp[S_UE_CustomTextMessageEncoder#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -106,17 +106,17 @@
         <value>The content type that is supported by the message encoder.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content type is a Multipurpose Internet Mail Exchange (MIME) header that appears at the beginning of a MIME message as well as within the separate body parts. Content-type headers are used to specify the media type and subtype of data in the body of a message and to fully specify the media type and subtype of data in the body of a message and to specify the character encoding (optional) of the data. An example of a MIME content type that can be supported: “application/soap+xml; charset=’utf8’”.  
+The content type is a Multipurpose Internet Mail Exchange (MIME) header that appears at the beginning of a MIME message as well as within the separate body parts. Content-type headers are used to specify the media type and subtype of data in the body of a message and to fully specify the media type and subtype of data in the body of a message and to specify the character encoding (optional) of the data. An example of a MIME content type that can be supported: “application/soap+xml; charset=’utf8’”.  
+ 
+A grammar that details the syntax of the content-type header is described in [RFC 2045](http://go.microsoft.com/fwlink/?LinkId=95945), Section 5.1. [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95944) provides detailed information on MIME media types and their parameters.  
+ 
   
- A grammar that details the syntax of the content-type header is described in [RFC 2045](http://go.microsoft.com/fwlink/?LinkId=95945), Section 5.1. [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95944) provides detailed information on MIME media types and their parameters.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_CustomTextMessageEncoder#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#1)]  
-  
+[!code-csharp[S_UE_CustomTextMessageEncoder#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
         <returns>The typed object <paramref name="T " />requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the channel stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no channel layer supported the requested object, then the method returns `null`.  
-  
+Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the channel stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no channel layer supported the requested object, then the method returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,20 +200,20 @@
           <see langword="true" /> if the message-level content-type specified is supported; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to determine whether the message encoder can be used to read a particular style of message, based on its content-type. The information in the <xref:System.Net.Mime.ContentType> class is used to describe the data that is contained in a message and is used to determine if there is a content-type match.  
+This method is used to determine whether the message encoder can be used to read a particular style of message, based on its content-type. The information in the <xref:System.Net.Mime.ContentType> class is used to describe the data that is contained in a message and is used to determine if there is a content-type match.  
+ 
+A grammar that details the syntax of the content-type header is described in [RFC 2045](http://go.microsoft.com/fwlink/?LinkId=95945) Section 5.1. [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95944) provides detailed information on Multipurpose Internet Mail Extensions (MIME) media types and their parameters.  
+ 
   
- A grammar that details the syntax of the content-type header is described in [RFC 2045](http://go.microsoft.com/fwlink/?LinkId=95945) Section 5.1. [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95944) provides detailed information on Multipurpose Internet Mail Extensions (MIME) media types and their parameters.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to override this method to handle different content types with the same media type.  
-  
- [!code-csharp[S_UE_CustomTextMessageEncoder#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#8)]
- [!code-csharp[S_UE_CustomTextMessageEncoder#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoderfactory.cs#8)]  
-  
+The following code example shows how to override this method to handle different content types with the same media type.  
+ 
+[!code-csharp[S_UE_CustomTextMessageEncoder#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#8)]
+[!code-csharp[S_UE_CustomTextMessageEncoder#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoderfactory.cs#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,17 +236,17 @@
         <value>The media type that is supported by the message encoder.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The media type is part of the content-type header.  
+The media type is part of the content-type header.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to implement the `MediaType` property.  
-  
- [!code-csharp[S_UE_CustomTextMessageEncoder#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#2)]  
-  
+The following code shows how to implement the `MediaType` property.  
+ 
+[!code-csharp[S_UE_CustomTextMessageEncoder#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,17 +269,17 @@
         <value>The <see cref="T:System.ServiceModel.Channels.MessageVersion" /> that is used by the encoder.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange. If SOAP versions are not to be used, this property should be overridden to return <xref:System.ServiceModel.Channels.MessageVersion.None%2A>.  
+Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange. If SOAP versions are not to be used, this property should be overridden to return <xref:System.ServiceModel.Channels.MessageVersion.None%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.MessageVersion%2A> property.  
-  
- [!code-csharp[S_UE_CustomTextMessageEncoder#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#3)]  
-  
+The following code shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.MessageVersion%2A> property.  
+ 
+[!code-csharp[S_UE_CustomTextMessageEncoder#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,12 +360,12 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> that is read from the stream specified.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%28System.ArraySegment%7BSystem.Byte%7D%2CSystem.ServiceModel.Channels.BufferManager%2CSystem.String%29> method.  
-  
- [!code-csharp[S_UE_CustomTextMessageEncoder#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#4)]  
-  
+The following code example shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%28System.ArraySegment%7BSystem.Byte%7D%2CSystem.ServiceModel.Channels.BufferManager%2CSystem.String%29> method.  
+ 
+[!code-csharp[S_UE_CustomTextMessageEncoder#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,12 +396,12 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> that is read from the stream specified.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%28System.IO.Stream%2CSystem.Int32%2CSystem.String%29> method.  
-  
- [!code-csharp[S_UE_CustomTextMessageEncoder#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#5)]  
-  
+The following code example shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%28System.IO.Stream%2CSystem.Int32%2CSystem.String%29> method.  
+ 
+[!code-csharp[S_UE_CustomTextMessageEncoder#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -449,12 +449,12 @@
         <summary>When overridden in a derived class, writes a message to a specified stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%28System.ServiceModel.Channels.Message%2CSystem.IO.Stream%29> method.  
-  
- [!code-csharp[S_UE_CustomTextMessageEncoder#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#7)]  
-  
+The following code shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%28System.ServiceModel.Channels.Message%2CSystem.IO.Stream%29> method.  
+ 
+[!code-csharp[S_UE_CustomTextMessageEncoder#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -485,10 +485,10 @@
         <returns>A <see cref="T:System.ArraySegment`1" /> of type <see langword="byte" /> that provides the buffer to which the message is serialized.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the abstract method <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%28System.ServiceModel.Channels.Message%2CSystem.Int32%2CSystem.ServiceModel.Channels.BufferManager%2CSystem.Int32%29> with `messageOffset` = 0.  
-  
+This method calls the abstract method <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%28System.ServiceModel.Channels.Message%2CSystem.Int32%2CSystem.ServiceModel.Channels.BufferManager%2CSystem.Int32%29> with `messageOffset` = 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -521,17 +521,17 @@
         <returns>A <see cref="T:System.ArraySegment`1" /> of type <see langword="byte" /> that provides the buffer to which the message is serialized.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%28System.ServiceModel.Channels.Message%2CSystem.Int32%2CSystem.ServiceModel.Channels.BufferManager%2CSystem.Int32%29>.  
+This method is called by <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%28System.ServiceModel.Channels.Message%2CSystem.Int32%2CSystem.ServiceModel.Channels.BufferManager%2CSystem.Int32%29>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%28System.ServiceModel.Channels.Message%2CSystem.Int32%2CSystem.ServiceModel.Channels.BufferManager%2CSystem.Int32%29> method.  
-  
- [!code-csharp[S_UE_CustomTextMessageEncoder#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#6)]  
-  
+The following code shows how to implement the <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%28System.ServiceModel.Channels.Message%2CSystem.Int32%2CSystem.ServiceModel.Channels.BufferManager%2CSystem.Int32%29> method.  
+ 
+[!code-csharp[S_UE_CustomTextMessageEncoder#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_customtextmessageencoder/cs/customtextmessageencoder.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

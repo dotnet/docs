@@ -14,21 +14,21 @@
     <summary>Configures the <see langword="sessionPageState" /> section. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.SessionPageStateSection> refers to the `sessionPageState` section of the configuration file.  
-  
+The <xref:System.Web.Configuration.SessionPageStateSection> refers to the `sessionPageState` section of the configuration file.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.Configuration.SessionPageStateSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to obtain the <xref:System.Web.Configuration.SessionPageStateSection> object from the configuration file associated with an existing Web application.  
-  
- [!code-csharp[System.Web.Configuration.SessionPageStateSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SessionPageStateSection/CS/sessionpagestatesection.cs#1)]
- [!code-vb[System.Web.Configuration.SessionPageStateSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SessionPageStateSection/VB/sessionpagestatesection.vb#1)]  
-  
+The following code example shows how to obtain the <xref:System.Web.Configuration.SessionPageStateSection> object from the configuration file associated with an existing Web application.  
+ 
+[!code-csharp[System.Web.Configuration.SessionPageStateSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SessionPageStateSection/CS/sessionpagestatesection.cs#1)]
+[!code-vb[System.Web.Configuration.SessionPageStateSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SessionPageStateSection/VB/sessionpagestatesection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <summary>Creates a new instance of <see cref="T:System.Web.Configuration.SessionPageStateSection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.SessionPageStateSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.SessionPageStateSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
+The <xref:System.Web.Configuration.SessionPageStateSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.SessionPageStateSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,13 +72,13 @@
         <summary>Defines the size of the page history.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to obtain the <xref:System.Web.Configuration.SessionPageStateSection.DefaultHistorySize> property from the configuration file associated with an existing Web application.  
-  
- [!code-csharp[System.Web.Configuration.SessionPageStateSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SessionPageStateSection/CS/sessionpagestatesection.cs#2)]
- [!code-vb[System.Web.Configuration.SessionPageStateSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SessionPageStateSection/VB/sessionpagestatesection.vb#2)]  
-  
+The following code example shows how to obtain the <xref:System.Web.Configuration.SessionPageStateSection.DefaultHistorySize> property from the configuration file associated with an existing Web application.  
+ 
+[!code-csharp[System.Web.Configuration.SessionPageStateSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SessionPageStateSection/CS/sessionpagestatesection.cs#2)]
+[!code-vb[System.Web.Configuration.SessionPageStateSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SessionPageStateSection/VB/sessionpagestatesection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

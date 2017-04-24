@@ -24,14 +24,14 @@
     <summary>The exception that is thrown when an encoder fallback operation fails. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Text.EncoderExceptionFallback> and <xref:System.Text.EncoderFallbackException> classes.  
-  
- [!code-cpp[sys.txt.fallbackEncExc#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.txt.fallbackEncExc/cpp/fallEncExc.cpp#1)]
- [!code-csharp[sys.txt.fallbackEncExc#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.fallbackEncExc/cs/fallEncExc.cs#1)]
- [!code-vb[sys.txt.fallbackEncExc#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.txt.fallbackEncExc/vb/fallEncExc.vb#1)]  
-  
+The following code example demonstrates the <xref:System.Text.EncoderExceptionFallback> and <xref:System.Text.EncoderFallbackException> classes.  
+ 
+[!code-cpp[sys.txt.fallbackEncExc#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.txt.fallbackEncExc/cpp/fallEncExc.cpp#1)]
+[!code-csharp[sys.txt.fallbackEncExc#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.fallbackEncExc/cs/fallEncExc.cs#1)]
+[!code-vb[sys.txt.fallbackEncExc#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.txt.fallbackEncExc/vb/fallEncExc.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderFallbackException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
-  
+The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderFallbackException" /> class. A parameter specifies the error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
-  
+The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderFallbackException" /> class. Parameters specify the error message and the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
-  
+The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <value>The index position in the input buffer of the character that cannot be encoded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The index is zero-based.  
-  
+The index is zero-based.  
+ 
  ]]></format>
         </remarks>
       </Docs>

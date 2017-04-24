@@ -34,10 +34,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteChildAccessRule" /> class with the specified identity reference and access control type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you use this constructor, it creates a delete child access rule that applies to all child types.  
-  
+If you use this constructor, it creates a delete child access rule that applies to all child types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteChildAccessRule" /> class with the specified identity reference, access control type, and Active Directory Domain Services security inheritance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you use this constructor, it creates a delete child access rule that applies to all child types.  
-  
+If you use this constructor, it creates a delete child access rule that applies to all child types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteChildAccessRule" /> class with the specified identity reference, access control type, Active Directory Domain Services security inheritance, and inherited object type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you use this constructor, it creates a delete child access rule that applies to all child types.  
-  
+If you use this constructor, it creates a delete child access rule that applies to all child types.  
+ 
  ]]></format>
         </remarks>
       </Docs>

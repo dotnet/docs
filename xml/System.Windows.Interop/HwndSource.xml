@@ -24,56 +24,56 @@
     <summary>Presents [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] content in a [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] window.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Many members of this class are unavailable in the Internet security zone.  
-  
- An <xref:System.Windows.Interop.HwndSource> implements a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window that can contain [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] content. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] content in the window is arranged, measured, and rendered; and is interactive to input. Because the <xref:System.Windows.Interop.HwndSource> is specifically designed to interoperate with [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)], this class exposes several low-level [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] features. You can use this class to do the following:  
-  
+ 
+An <xref:System.Windows.Interop.HwndSource> implements a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window that can contain [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] content. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] content in the window is arranged, measured, and rendered; and is interactive to input. Because the <xref:System.Windows.Interop.HwndSource> is specifically designed to interoperate with [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)], this class exposes several low-level [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] features. You can use this class to do the following:  
+ 
 -   Specify window styles, window class styles, and extended window styles.  
-  
+ 
 -   Hook the window procedure.  
-  
+ 
 -   Provide access to the window handle (HWND).  
-  
+ 
 -   Destroy the window.  
-  
- The <xref:System.Windows.Interop.HwndSource> class is designed for general interoperability and is not designed as a managed HWND wrapper. In general, it does not provide managed methods for manipulating the window or properties for inspecting its state. Instead, the <xref:System.Windows.Interop.HwndSource> class provides access to the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window handle (HWND) through the <xref:System.Windows.Interop.HwndSource.Handle%2A> property, which can be passed by means of PInvoke techniques to [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] in order to manipulate the window.  
-  
- **Construction**  
-  
- Many aspects of the <xref:System.Windows.Interop.HwndSource> can only be specified at construction time. To create an <xref:System.Windows.Interop.HwndSource>, first create an <xref:System.Windows.Interop.HwndSourceParameters> structure and populate it with the desired parameters. These parameters include the following:  
-  
+ 
+The <xref:System.Windows.Interop.HwndSource> class is designed for general interoperability and is not designed as a managed HWND wrapper. In general, it does not provide managed methods for manipulating the window or properties for inspecting its state. Instead, the <xref:System.Windows.Interop.HwndSource> class provides access to the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window handle (HWND) through the <xref:System.Windows.Interop.HwndSource.Handle%2A> property, which can be passed by means of PInvoke techniques to [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] in order to manipulate the window.  
+ 
+**Construction**  
+ 
+Many aspects of the <xref:System.Windows.Interop.HwndSource> can only be specified at construction time. To create an <xref:System.Windows.Interop.HwndSource>, first create an <xref:System.Windows.Interop.HwndSourceParameters> structure and populate it with the desired parameters. These parameters include the following:  
+ 
 -   The class, window, and extended window styles. You must use PInvoke to change the styles after the window is created. Not all styles can be changed after the window is created. Consult the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] documentation before changing window styles.  
-  
+ 
 -   The initial position of the window.  
-  
+ 
 -   The initial size of the window, which includes whether the size is specified or should be determined from the determined size of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] content.  
-  
+ 
 -   The parent window.  
-  
+ 
 -   The <xref:System.Windows.Interop.HwndSourceHook> to include in the window procedure chain. If you specify a hook at construction time, it receives all messages for the window. You can use <xref:System.Windows.Interop.HwndSource.AddHook%2A> to add a hook after the window is created.  
-  
+ 
 -   The transparency settings. A top-level window can be configured to blend with the other windows on the desktop according to the per-pixel transparency of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] content. To enable this, set the <xref:System.Windows.Interop.HwndSourceParameters.UsesPerPixelOpacity%2A> property in the <xref:System.Windows.Interop.HwndSourceParameters> to `true`. This property can only be specified at construction time, and only through the <xref:System.Windows.Interop.HwndSource.%23ctor%28System.Windows.Interop.HwndSourceParameters%29> constructor signature, and it imposes several limitations.  
-  
- After you populate the <xref:System.Windows.Interop.HwndSourceParameters> structure, pass it to the <xref:System.Windows.Interop.HwndSource.%23ctor%28System.Windows.Interop.HwndSourceParameters%29> constructor for the <xref:System.Windows.Interop.HwndSource>.  
-  
- **Object Lifetime**  
-  
- An <xref:System.Windows.Interop.HwndSource> is a regular [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] object, and its lifetime is managed by the garbage collector. Because the <xref:System.Windows.Interop.HwndSource> represents an unmanaged resource, <xref:System.Windows.Interop.HwndSource> implements <xref:System.IDisposable>. Synchronously calling <xref:System.Windows.Interop.HwndSource.Dispose%2A> immediately destroys the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window if called from the owner thread. If called from another thread, the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window is destroyed asynchronously. Calling <xref:System.Windows.Interop.HwndSource.Dispose%2A> explicitly from the interoperating code might be necessary for certain interoperation scenarios.  
-  
- **Window Procedures**  
-  
- The <xref:System.Windows.Interop.HwndSource> class implements its own window procedure. This window procedure is used to process important window messages, such as those related to layout, rendering, and input. However, you can also hook the window procedure for your own use. You can specify your own hook during construction by setting the <xref:System.Windows.Interop.HwndSourceParameters.HwndSourceHook%2A?displayProperty=fullName> property, or you can also use <xref:System.Windows.Interop.HwndSource.AddHook%2A> and <xref:System.Windows.Interop.HwndSource.RemoveHook%2A> to add and remove hooks after the window is created. The hooks are called by last-in first-out order, which enables your hooks to execute before the built-in processing. The actual hooks are held by a weak reference. Therefore, make sure that you manage the lifetime of your hook delegate.  
-  
- For more information about <xref:System.Windows.Interop.HwndSource> and other interoperation classes, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md).  
-  
- Notice how the constructors for <xref:System.Windows.Interop.HwndSource> take parameters that resemble the parameters for [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] functions such as [CreateWindowEx](http://go.microsoft.com/fwlink/?LinkID=98462).  
-  
- Scale transformations should not be applied to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> of an <xref:System.Windows.Interop.HwndSource>. See Remarks for <xref:System.Windows.Interop.HwndSource.RootVisual%2A>.  
-  
+ 
+After you populate the <xref:System.Windows.Interop.HwndSourceParameters> structure, pass it to the <xref:System.Windows.Interop.HwndSource.%23ctor%28System.Windows.Interop.HwndSourceParameters%29> constructor for the <xref:System.Windows.Interop.HwndSource>.  
+ 
+**Object Lifetime**  
+ 
+An <xref:System.Windows.Interop.HwndSource> is a regular [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] object, and its lifetime is managed by the garbage collector. Because the <xref:System.Windows.Interop.HwndSource> represents an unmanaged resource, <xref:System.Windows.Interop.HwndSource> implements <xref:System.IDisposable>. Synchronously calling <xref:System.Windows.Interop.HwndSource.Dispose%2A> immediately destroys the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window if called from the owner thread. If called from another thread, the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window is destroyed asynchronously. Calling <xref:System.Windows.Interop.HwndSource.Dispose%2A> explicitly from the interoperating code might be necessary for certain interoperation scenarios.  
+ 
+**Window Procedures**  
+ 
+The <xref:System.Windows.Interop.HwndSource> class implements its own window procedure. This window procedure is used to process important window messages, such as those related to layout, rendering, and input. However, you can also hook the window procedure for your own use. You can specify your own hook during construction by setting the <xref:System.Windows.Interop.HwndSourceParameters.HwndSourceHook%2A?displayProperty=fullName> property, or you can also use <xref:System.Windows.Interop.HwndSource.AddHook%2A> and <xref:System.Windows.Interop.HwndSource.RemoveHook%2A> to add and remove hooks after the window is created. The hooks are called by last-in first-out order, which enables your hooks to execute before the built-in processing. The actual hooks are held by a weak reference. Therefore, make sure that you manage the lifetime of your hook delegate.  
+ 
+For more information about <xref:System.Windows.Interop.HwndSource> and other interoperation classes, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md).  
+ 
+Notice how the constructors for <xref:System.Windows.Interop.HwndSource> take parameters that resemble the parameters for [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] functions such as [CreateWindowEx](http://go.microsoft.com/fwlink/?LinkID=98462).  
+ 
+Scale transformations should not be applied to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> of an <xref:System.Windows.Interop.HwndSource>. See Remarks for <xref:System.Windows.Interop.HwndSource.RootVisual%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,17 +100,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndSource" /> class by using a structure that contains the initial settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This method is not available in the Internet security zone.  
-  
- This constructor signature might be more convenient in certain situations, because the default structure contains some appropriate initial default values.  
-  
+ 
+This constructor signature might be more convenient in certain situations, because the default structure contains some appropriate initial default values.  
+ 
 > [!IMPORTANT]
 >  If you use this signature, do not use the default <xref:System.Windows.Interop.HwndSourceParameters> constructor to construct the <xref:System.Windows.Interop.HwndSourceParameters> structure for the `parameters` value. You must use the <xref:System.Windows.Interop.HwndSourceParameters> constructor that enables you to specify an initial window name. If you use the default <xref:System.Windows.Interop.HwndSourceParameters> constructor and create an <xref:System.Windows.Interop.HwndSource> with it, that <xref:System.Windows.Interop.HwndSource> does not display because an initial window name is a construction requirement for the represented HWND.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to create instances of this class. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -150,12 +150,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndSource" /> class with a specified class style, style, extended style, x-y position, name, and parent window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This method is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to create instances of this class. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -199,12 +199,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndSource" /> class with a specified class style, style, extended style, x-y position, width, height, name, and parent window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This method is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to create instances of this class. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -251,12 +251,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndSource" /> class with a specified class style, style, extended style, x-y position, width, height, name, and parent window, and by specifying whether the window is autosized.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This method is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to create instances of this class. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -280,12 +280,12 @@
           <see langword="true" /> to acquire Win32 focus for the WPF containing window when the user interacts with menus; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is set when you create the <xref:System.Windows.Interop.HwndSource> by setting the <xref:System.Windows.Interop.HwndSourceParameters.AcquireHwndFocusInMenuMode%2A> parameter.  
-  
- The default value is determined by the <xref:System.Windows.Interop.HwndSource.DefaultAcquireHwndFocusInMenuMode%2A> property.  
-  
+This value is set when you create the <xref:System.Windows.Interop.HwndSource> by setting the <xref:System.Windows.Interop.HwndSourceParameters.AcquireHwndFocusInMenuMode%2A> parameter.  
+ 
+The default value is determined by the <xref:System.Windows.Interop.HwndSource.DefaultAcquireHwndFocusInMenuMode%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -315,18 +315,18 @@
         <summary>Adds an event handler that receives all window messages.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This method is not available in the Internet security zone.  
-  
- Most [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] messages that reach the <xref:System.Windows.Interop.HwndSource> have an approximate [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] equivalent. You use <xref:System.Windows.Interop.HwndSource.AddHook%2A> to handle the cases where the message has no [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] equivalent.  
-  
- The <xref:System.Windows.Interop.HwndSourceHook> delegate resembles the parameter profile of a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] main window procedure. All window messages that the main window procedure of the <xref:System.Windows.Interop.HwndSource> parent window receives are also forwarded to the <xref:System.Windows.Interop.HwndSourceHook> delegates.  
-  
- Hooks are called in the order that they were added. If any hook returns `handled`=`true` for a message, the hooks after it in the call order are not called for that message.  
-  
+ 
+Most [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] messages that reach the <xref:System.Windows.Interop.HwndSource> have an approximate [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] equivalent. You use <xref:System.Windows.Interop.HwndSource.AddHook%2A> to handle the cases where the message has no [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] equivalent.  
+ 
+The <xref:System.Windows.Interop.HwndSourceHook> delegate resembles the parameter profile of a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] main window procedure. All window messages that the main window procedure of the <xref:System.Windows.Interop.HwndSource> parent window receives are also forwarded to the <xref:System.Windows.Interop.HwndSourceHook> delegates.  
+ 
+Hooks are called in the order that they were added. If any hook returns `handled`=`true` for a message, the hooks after it in the call order are not called for that message.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to add handling. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -348,10 +348,10 @@
         <summary>Occurs when layout causes the <see cref="T:System.Windows.Interop.HwndSource" /> to automatically resize.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The native behavior of <xref:System.Windows.Interop.HwndSource> is to automatically resize content and the window region based on changes reported through the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] layout system. The window does not resize if it is currently minimized or if <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent>.  
-  
+The native behavior of <xref:System.Windows.Interop.HwndSource> is to automatically resize content and the window region based on changes reported through the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] layout system. The window does not resize if it is currently minimized or if <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,10 +401,10 @@
         <value>The visual manager.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override <xref:System.Windows.Interop.HwndSource.GetCompositionTargetCore%2A> in order to override the value that <xref:System.Windows.Interop.HwndSource.CompositionTarget%2A> returns.  
-  
+Override <xref:System.Windows.Interop.HwndSource.GetCompositionTargetCore%2A> in order to override the value that <xref:System.Windows.Interop.HwndSource.CompositionTarget%2A> returns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,12 +427,12 @@
         <returns>A structure that contains the window handle for this <see cref="T:System.Windows.Interop.HwndSource" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the handle that is obtained from <xref:System.Windows.Interop.HwndSource.CreateHandleRef%2A> to reference the <xref:System.Windows.Interop.HwndSource> from [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] code. Use the handle for operations such as message handling and window behavior.  
-  
- To get just the handle, use <xref:System.Windows.Interop.HwndSource.Handle%2A>.  
-  
+You can use the handle that is obtained from <xref:System.Windows.Interop.HwndSource.CreateHandleRef%2A> to reference the <xref:System.Windows.Interop.HwndSource> from [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] code. Use the handle for operations such as message handling and window behavior.  
+ 
+To get just the handle, use <xref:System.Windows.Interop.HwndSource.Handle%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,10 +455,10 @@
           <see langword="true" /> to acquire Win32 focus for the WPF containing window when the user interacts with menus; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- New instances of <xref:System.Windows.Interop.HwndSource> have <xref:System.Windows.Interop.HwndSource.AcquireHwndFocusInMenuMode%2A> set to this default value, unless a different value is passed as a parameter to the <xref:System.Windows.Interop.HwndSource> constructor for a specific instance, by using the <xref:System.Windows.Interop.HwndSourceParameters.AcquireHwndFocusInMenuMode%2A> property.  
-  
+New instances of <xref:System.Windows.Interop.HwndSource> have <xref:System.Windows.Interop.HwndSource.AcquireHwndFocusInMenuMode%2A> set to this default value, unless a different value is passed as a parameter to the <xref:System.Windows.Interop.HwndSource> constructor for a specific instance, by using the <xref:System.Windows.Interop.HwndSourceParameters.AcquireHwndFocusInMenuMode%2A> property.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -481,16 +481,16 @@
         <summary>Releases all managed resources that are used by the <see cref="T:System.Windows.Interop.HwndSource" />, and raises the <see cref="E:System.Windows.Interop.HwndSource.Disposed" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This method is not available in the Internet security zone.  
-  
- <xref:System.Windows.Interop.HwndSource.Dispose%2A> initiates related cleanup work for the HWND. If <xref:System.Windows.Interop.HwndSource.Dispose%2A> is called through a thread that is different from the main UI thread, the cleanup work may be deferred until it can be posted to the main UI thread.  
-  
- Calling <xref:System.Windows.Interop.HwndSource.Dispose%2A> explicitly from the interoperating code might be necessary for certain interoperation scenarios, because an <xref:System.Windows.Interop.HwndSource> in some interoperation scenarios can generate several references to it across the interoperation boundaries that might prevent timely garbage collection.  
-  
+ 
+<xref:System.Windows.Interop.HwndSource.Dispose%2A> initiates related cleanup work for the HWND. If <xref:System.Windows.Interop.HwndSource.Dispose%2A> is called through a thread that is different from the main UI thread, the cleanup work may be deferred until it can be posted to the main UI thread.  
+ 
+Calling <xref:System.Windows.Interop.HwndSource.Dispose%2A> explicitly from the interoperating code might be necessary for certain interoperation scenarios, because an <xref:System.Windows.Interop.HwndSource> in some interoperation scenarios can generate several references to it across the interoperation boundaries that might prevent timely garbage collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -511,12 +511,12 @@
         <summary>Occurs when the <see cref="M:System.Windows.Interop.HwndSource.Dispose" /> method is called on this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Interop.HwndSource.Disposed> event is raised before any resources are released by the <xref:System.Windows.Interop.HwndSource>. The <xref:System.Windows.Interop.HwndSource.Disposed> event indicates that the object that raises the event is about to have all references to it removed.  
-  
- Use <xref:System.Windows.Interop.HwndSource.Disposed> and the <xref:System.Windows.Interop.HwndSource.IsDisposed%2A> property to avoid calling <xref:System.Windows.Interop.HwndSource.Dispose%2A> twice (which raises an exception).  
-  
+The <xref:System.Windows.Interop.HwndSource.Disposed> event is raised before any resources are released by the <xref:System.Windows.Interop.HwndSource>. The <xref:System.Windows.Interop.HwndSource.Disposed> event indicates that the object that raises the event is about to have all references to it removed.  
+ 
+Use <xref:System.Windows.Interop.HwndSource.Disposed> and the <xref:System.Windows.Interop.HwndSource.IsDisposed%2A> property to avoid calling <xref:System.Windows.Interop.HwndSource.Dispose%2A> twice (which raises an exception).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -564,22 +564,22 @@
         <returns>The <see cref="T:System.Windows.Interop.HwndSource" /> object for the window that is specified by the <paramref name="hwnd" /> window handle.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This method is not available in the Internet security zone, or for partial trust in general.  
-  
- You can use this method to return an <xref:System.Windows.Interop.HwndSource> for a window that is not explicitly an interoperation window. The procedure for this is:  
-  
+ 
+You can use this method to return an <xref:System.Windows.Interop.HwndSource> for a window that is not explicitly an interoperation window. The procedure for this is:  
+ 
 1.  Create a <xref:System.Windows.Interop.WindowInteropHelper> instance (providing the main <xref:System.Windows.Window> as a constructor parameter).  
-  
+ 
 2.  Get the value of the <xref:System.Windows.Interop.WindowInteropHelper.Handle%2A> property from that <xref:System.Windows.Interop.WindowInteropHelper> instance.  
-  
+ 
 3.  Pass that HWND value as a parameter to <xref:System.Windows.Interop.HwndSource.FromHwnd%2A>.  
-  
- This technique can be useful if you then want to add general <xref:System.Windows.Interop.HwndSource.AddHook%2A> message processing to the window. However, whenever you create an <xref:System.Windows.Interop.HwndSource>, you are also responsible for destroying it. This is true even if the <xref:System.Windows.Application> object for an application <xref:System.Windows.Interop.HwndSource> is disposed. For more information, see Remarks on <xref:System.Windows.Interop.HwndSource>.  
-  
+ 
+This technique can be useful if you then want to add general <xref:System.Windows.Interop.HwndSource.AddHook%2A> message processing to the window. However, whenever you create an <xref:System.Windows.Interop.HwndSource>, you are also responsible for destroying it. This is true even if the <xref:System.Windows.Application> object for an application <xref:System.Windows.Interop.HwndSource> is disposed. For more information, see Remarks on <xref:System.Windows.Interop.HwndSource>.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -608,10 +608,10 @@
         <returns>Returns the visual target of the window.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns the same result as <xref:System.Windows.Interop.HwndSource.CompositionTarget%2A>.  
-  
+The default implementation returns the same result as <xref:System.Windows.Interop.HwndSource.CompositionTarget%2A>.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -641,12 +641,12 @@
         <value>The window handle.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This property is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to access this pointer. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -690,10 +690,10 @@
           <see langword="true" /> if the object has had <see cref="M:System.Windows.Interop.HwndSource.Dispose" /> called on it; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Interop.HwndSource.Dispose%2A> initiates related cleanup work for the HWND. If <xref:System.Windows.Interop.HwndSource.Dispose%2A> is called through a thread that is different from the main UI thread, the cleanup work may be deferred until it can be posted to the main UI thread. The <xref:System.Windows.Interop.HwndSource.Disposed> event is raised and the value of <xref:System.Windows.Interop.HwndSource.IsDisposed%2A> becomes `false` as soon as <xref:System.Windows.Interop.HwndSource.Dispose%2A> is called. During this time, if you call <xref:System.Windows.Interop.HwndSource.Dispose%2A> again, <xref:System.Windows.Interop.HwndSource.Dispose%2A> raises an exception.  
-  
+<xref:System.Windows.Interop.HwndSource.Dispose%2A> initiates related cleanup work for the HWND. If <xref:System.Windows.Interop.HwndSource.Dispose%2A> is called through a thread that is different from the main UI thread, the cleanup work may be deferred until it can be posted to the main UI thread. The <xref:System.Windows.Interop.HwndSource.Disposed> event is raised and the value of <xref:System.Windows.Interop.HwndSource.IsDisposed%2A> becomes `false` as soon as <xref:System.Windows.Interop.HwndSource.Dispose%2A> is called. During this time, if you call <xref:System.Windows.Interop.HwndSource.Dispose%2A> again, <xref:System.Windows.Interop.HwndSource.Dispose%2A> raises an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -750,13 +750,13 @@
         <summary>Called when the DPI is going to change for the window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the user handles this event,         WPF does not scale any visuals.  
-  
+If the user handles this event,         WPF does not scale any visuals.  
+ 
 > [!IMPORTANT]
 >  This method accesses critical data <xref:System.Windows.Interop.HwndTarget>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -847,12 +847,12 @@
         <summary>Removes the event handlers that were added by <see cref="M:System.Windows.Interop.HwndSource.AddHook(System.Windows.Interop.HwndSourceHook)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This method is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to remove handlers. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -875,10 +875,10 @@
         <value>The <see cref="T:System.Windows.Input.RestoreFocusMode" /> for the window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be set only in the <xref:System.Windows.Interop.HwndSource.%23ctor%28System.Windows.Interop.HwndSourceParameters%29?displayProperty=fullName> constructor by using the <xref:System.Windows.Interop.HwndSourceParameters.RestoreFocusMode%2A?displayProperty=fullName> property.  
-  
+This property can be set only in the <xref:System.Windows.Interop.HwndSource.%23ctor%28System.Windows.Interop.HwndSourceParameters%29?displayProperty=fullName> constructor by using the <xref:System.Windows.Interop.HwndSourceParameters.RestoreFocusMode%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -908,14 +908,14 @@
         <value>The root visual object of the window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to connect a <xref:System.Windows.Controls.Page> or another root visual to the <xref:System.Windows.Interop.HwndSource>.  
-  
- Scale transformations should not be applied to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> of an <xref:System.Windows.Interop.HwndSource> because this can disable <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> behavior. The content will scale, but the enclosing window will not. Instead of applying the transformation to the object that is the <xref:System.Windows.Interop.HwndSource.RootVisual%2A>, apply the transformation to an object that is a child element of the <xref:System.Windows.Interop.HwndSource.RootVisual%2A>. You might need to add an extra enclosing element to the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] content, such as a panel, in order to provide a scaleable object.  
-  
- You can add a <xref:System.Windows.Window> as the root visual, but only as a top-level window (with WS_OVERLAPPED), not as a child window.  
-  
+Use this property to connect a <xref:System.Windows.Controls.Page> or another root visual to the <xref:System.Windows.Interop.HwndSource>.  
+ 
+Scale transformations should not be applied to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> of an <xref:System.Windows.Interop.HwndSource> because this can disable <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> behavior. The content will scale, but the enclosing window will not. Instead of applying the transformation to the object that is the <xref:System.Windows.Interop.HwndSource.RootVisual%2A>, apply the transformation to an object that is a child element of the <xref:System.Windows.Interop.HwndSource.RootVisual%2A>. You might need to add an extra enclosing element to the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] content, such as a panel, in order to provide a scaleable object.  
+ 
+You can add a <xref:System.Windows.Window> as the root visual, but only as a top-level window (with WS_OVERLAPPED), not as a child window.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -938,12 +938,12 @@
         <value>One of the enumeration values. The default value is <see cref="F:System.Windows.SizeToContent.Manual" />, which specifies that the window is not sized to its content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- End users might indirectly set this property through application UI, if that functionality is exposed by the application.  
-  
- Scale transformations should not be applied to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> of an <xref:System.Windows.Interop.HwndSource>, because this can disable <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> behavior. See Remarks for <xref:System.Windows.Interop.HwndSource.RootVisual%2A>.  
-  
+End users might indirectly set this property through application UI, if that functionality is exposed by the application.  
+ 
+Scale transformations should not be applied to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> of an <xref:System.Windows.Interop.HwndSource>, because this can disable <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> behavior. See Remarks for <xref:System.Windows.Interop.HwndSource.RootVisual%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -964,10 +964,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Interop.HwndSource.SizeToContent" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Interop.HwndSource.SizeToContentChanged> event is only raised when user interaction causes the change. If you set <xref:System.Windows.Window.SizeToContent%2A> in code, the <xref:System.Windows.Interop.HwndSource.SizeToContentChanged> event is not raised.  
-  
+The <xref:System.Windows.Interop.HwndSource.SizeToContentChanged> event is only raised when user interaction causes the change. If you set <xref:System.Windows.Window.SizeToContent%2A> in code, the <xref:System.Windows.Interop.HwndSource.SizeToContentChanged> event is not raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -991,10 +991,10 @@
           <see langword="true" /> if the sink or one of its contained components has focus; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1021,10 +1021,10 @@
         <value>A reference to the container's <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1059,10 +1059,10 @@
           <see langword="true" /> if the message was handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1093,10 +1093,10 @@
         <returns>The <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> site of the contained component.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -1124,10 +1124,10 @@
           <see langword="true" /> if the focus has been set as requested; <see langword="false" />, if there are no tab stops.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -1162,10 +1162,10 @@
           <see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1200,10 +1200,10 @@
           <see langword="true" /> if the message was processed and <see cref="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" /> should not be called; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndSource> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1318,10 +1318,10 @@
           <see langword="true" /> if the system uses per-pixel opacity; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you enable per-pixel opacity, the system no longer draws the non-client area. This is because the intended purpose of <xref:System.Windows.Interop.HwndSource.UsesPerPixelOpacity%2A> is to show non-rectangular top-level UI that works in interoperation scenarios. Therefore, showing the rectangular non-client area defeats that purpose.  
-  
+When you enable per-pixel opacity, the system no longer draws the non-client area. This is because the intended purpose of <xref:System.Windows.Interop.HwndSource.UsesPerPixelOpacity%2A> is to show non-rectangular top-level UI that works in interoperation scenarios. Therefore, showing the rectangular non-client area defeats that purpose.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1335,12 +1335,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndSource" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This method is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

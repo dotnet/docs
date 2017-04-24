@@ -18,10 +18,10 @@
     <summary>Encapsulates a set of related projects, their toolsets, a default set of global properties, and the loggers that should be used to build them. A global version of this class acts as the default project collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Multiple project collections can exist within an app domain. However, these must not build concurrently.  
-  
+Multiple project collections can exist within an app domain. However, these must not build concurrently.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,10 +76,10 @@
         <summary>Instantiates a project collection with specified global properties, no loggers, and that reads toolset information from the configuration file and registry.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- May throw InvalidToolsetDefinitionException.  
-  
+May throw InvalidToolsetDefinitionException.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <summary>Instantiates a project collection with specified global properties and loggers and using the specified toolset locations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- May throw InvalidToolsetDefinitionException.  
-  
+May throw InvalidToolsetDefinitionException.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <summary>Creates a project collection with specified global properties, loggers, node count, and onlyLogCriticalEvents value. The project collection toolset is initialized from toolsets in the given locations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws InvalidProjectFileException if any of the global properties are reserved.  
-  
+Throws InvalidProjectFileException if any of the global properties are reserved.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,12 +226,12 @@
         <value>Returns the default tools version of this project collection, which is always defined.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This default value is obtained from the .exe.config file, from the system registry, or if neither is present, from the hard-coded tools version "2.0".  
-  
- The set method throws InvalidOperationException if a toolset with the provided tools version has not been defined.  
-  
+This default value is obtained from the .exe.config file, from the system registry, or if neither is present, from the hard-coded tools version "2.0".  
+ 
+The set method throws InvalidOperationException if a toolset with the provided tools version has not been defined.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,10 +271,10 @@
         <summary>Releases both managed and unmanaged resources.  Called when a host no longer needs the project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject() before the ProjectCollection goes out of scope.”  
-  
+In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject() before the ProjectCollection goes out of scope.”  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,10 +299,10 @@
         <summary>Releases both managed and unmanaged resources.  Called when a host no longer needs the project collection.. Shuts down any logging services that the project collection owns and releases the logger thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Follows the garbage disposal guidelines of .NET.  
-  
+Follows the garbage disposal guidelines of .NET.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,10 +328,10 @@
         <returns>Returns the converted string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, "%3b" for ";". Only characters that are especially significant to MSBuild parsing are converted. Callers can use this method to make a string safe to be parsed by other methods that would otherwise expand it. Callers can also use this method to make a string safe to be written to a project file.  
-  
+For example, "%3b" for ";". Only characters that are especially significant to MSBuild parsing are converted. Callers can use this method to make a string safe to be parsed by other methods that would otherwise expand it. Callers can also use this method to make a string safe to be written to a project file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,10 +379,10 @@
         <returns>Returns all projects whose project path matches the given path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There may be more than one project with the given path because projects are also distinguished by global properties and/or tools version.  
-  
+There may be more than one project with the given path because projects are also distinguished by global properties and/or tools version.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -426,10 +426,10 @@
         <value>Returns the global project collection object. This is a singleton project collection with no global properties or loggers. Toolset information is obtained from the configuration file and registry.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Thread safe.  
-  
+Thread safe.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,10 +451,10 @@
         <value>Returns the read-only default global properties for all projects in this collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:Microsoft.Build.Evaluation.ProjectCollection.SetGlobalProperty%2A> and <xref:Microsoft.Build.Evaluation.ProjectCollection.RemoveGlobalProperty%2A> to add, set, and remove global properties.  
-  
+Use <xref:Microsoft.Build.Evaluation.ProjectCollection.SetGlobalProperty%2A> and <xref:Microsoft.Build.Evaluation.ProjectCollection.RemoveGlobalProperty%2A> to add, set, and remove global properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -476,10 +476,10 @@
         <value>Returns the host services object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, returns <xref:Microsoft.Build.Evaluation.ProjectCollection.HostServices%2A>, which may be null.  
-  
+By default, returns <xref:Microsoft.Build.Evaluation.ProjectCollection.HostServices%2A>, which may be null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -509,10 +509,10 @@
         <value>Gets or sets a property that selects by default whether the targets and tasks of projects in this project collection can be built.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used for security purposes. By default, a new project has the same IsBuildEnabled setting as the parent project collection that contains it. When IsBuildEnabled is false, the Build method on this project fails.  
-  
+Can be used for security purposes. By default, a new project has the same IsBuildEnabled setting as the parent project collection that contains it. When IsBuildEnabled is false, the Build method on this project fails.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -534,10 +534,10 @@
         <value>Returns all the projects currently loaded into this collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each project has a unique combination of path, global properties, and tools version.  
-  
+Each project has a unique combination of path, global properties, and tools version.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -563,10 +563,10 @@
         <returns>If an existing project in the collection has already been evaluated from the given project file, the existing project is returned. Otherwise, a new project is created, evaluated, added to the project collection, and returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
-  
+In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -592,12 +592,12 @@
         <returns>Returns the new project.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is added to this project collection when either this project or the given project root is given the full path to a project file.  
-  
- In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
-  
+The project is added to this project collection when either this project or the given project root is given the full path to a project file.  
+ 
+In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -625,10 +625,10 @@
         <returns>If an existing project in the collection has already been evaluated from the given project file, and with the given tools version, then the existing project is returned. Otherwise, a new project is created, evaluated, added to the project collection, and returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
-  
+In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -656,12 +656,12 @@
         <returns>Returns the new project.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is added to this project collection when either this project or the given project root is given the full path to a project file.  
-  
- In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
-  
+The project is added to this project collection when either this project or the given project root is given the full path to a project file.  
+ 
+In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -691,10 +691,10 @@
         <returns>If an existing project in the collection has already been evaluated from the given project file, and with the given global properties and tools version, then the existing project is returned. Otherwise, a new project is created, evaluated, added to the project collection, and returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
-  
+In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -724,12 +724,12 @@
         <returns>Returns the new project.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is added to this project collection when either this project or the given project root is given the full path to a project file.  
-  
- In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
-  
+The project is added to this project collection when either this project or the given project root is given the full path to a project file.  
+ 
+In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -756,10 +756,10 @@
         <value>Returns all loggers that projects in this collection can use for their builds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Loggers are added with the <xref:Microsoft.Build.Evaluation.ProjectCollection.RegisterLogger%2A> method.  
-  
+Loggers are added with the <xref:Microsoft.Build.Evaluation.ProjectCollection.RegisterLogger%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -815,10 +815,10 @@
         <summary>Raised when a <see cref="T:Microsoft.Build.Evaluation.Project" /> contained by this instance is directly changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is NOT raised for direct project XML changes via the construction model.  
-  
+This event is NOT raised for direct project XML changes via the construction model.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -839,10 +839,10 @@
         <summary>Raised when state is changed on this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is NOT raised for changes in individual projects.  
-  
+This event is NOT raised for changes in individual projects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -863,10 +863,10 @@
         <summary>Raised when a <see cref="T:Microsoft.Build.Construction.ProjectRootElement" /> contained by this instance is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is NOT raised for changes to global properties, or any other change that doesn't actually dirty the XML.  
-  
+This event is NOT raised for changes to global properties, or any other change that doesn't actually dirty the XML.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -912,10 +912,10 @@
         <summary>Adds the given logger to the collection of loggers used for builds of projects in this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the logger object is already in the collection, does nothing.  
-  
+If the logger object is already in the collection, does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -940,10 +940,10 @@
         <summary>Adds the given loggers to the collection of loggers used for builds of projects in this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Skips any logger objects that are already in the collection.  
-  
+Skips any logger objects that are already in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1032,10 +1032,10 @@
         <summary>Sets the value of a property in the default set of global properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no matching property is found, the property is created and initialized with the given value.  
-  
+If no matching property is found, the property is created and initialized with the given value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1142,10 +1142,10 @@
         <returns>Returns the converted string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, "%3b" is converted to ";".  
-  
+For example, "%3b" is converted to ";".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1167,10 +1167,10 @@
         <summary>Removes all projects in this project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The host should call this method when it no longer needs the projects.  
-  
+The host should call this method when it no longer needs the projects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1195,10 +1195,10 @@
         <summary>Removes a project root element from the project root cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is useful for the case where the host knows that all projects using this root element have been removed, and that any unsaved changes should be discarded.  
-  
+This method is useful for the case where the host knows that all projects using this root element have been removed, and that any unsaved changes should be discarded.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Thrown if the project root element to unload is still in use by a loaded project or its imports.</exception>
@@ -1224,12 +1224,12 @@
         <summary>Removes the given project from the project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The host should call this method when it no longer needs the project.  
-  
- Throws InvalidOperationException if the given project is not present in the project collection.  
-  
+The host should call this method when it no longer needs the project.  
+ 
+Throws InvalidOperationException if the given project is not present in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1269,12 +1269,12 @@
         <value>Returns the file version of the assembly file that contains the MSBuild engine.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the Windows file version (specifically the value of the ProductVersion resource), which is not necessarily the assembly version. To obtain the assembly version, use Constants.AssemblyVersion.  
-  
- See also the <xref:Microsoft.Build.Evaluation.ProjectCollection.ToolsetsVersion%2A>.  
-  
+This is the Windows file version (specifically the value of the ProductVersion resource), which is not necessarily the assembly version. To obtain the assembly version, use Constants.AssemblyVersion.  
+ 
+See also the <xref:Microsoft.Build.Evaluation.ProjectCollection.ToolsetsVersion%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1288,10 +1288,10 @@
         <summary>Evaluates a project from the source code in the given project file. The source code is evaluated with the global properties and tools version of this project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
-  
+In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject before the ProjectCollection goes out of scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>

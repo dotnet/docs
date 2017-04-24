@@ -14,12 +14,12 @@
     <summary>Represents an audience URI value configured under an <see langword="&lt;audienceUris&gt;" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `<audienceUris>` element is represented by the <xref:System.IdentityModel.Configuration.AudienceUriElementCollection> class It specifies the set of URIs which are acceptable as identifying a relying party. Tokens will not be accepted unless they are scoped for one of the allowed audience URIs.  
-  
- The <xref:System.IdentityModel.Configuration.AudienceUriElement> class represents a single audience URI value that has been added to the collection.  
-  
+The `<audienceUris>` element is represented by the <xref:System.IdentityModel.Configuration.AudienceUriElementCollection> class It specifies the set of URIs which are acceptable as identifying a relying party. Tokens will not be accepted unless they are scoped for one of the allowed audience URIs.  
+ 
+The <xref:System.IdentityModel.Configuration.AudienceUriElement> class represents a single audience URI value that has been added to the collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>

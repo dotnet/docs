@@ -59,10 +59,10 @@
         <value>An <see cref="T:System.Object" /> representing the underlying ActiveX <see langword="WebBrowser" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [WebBrowser Control](http://go.microsoft.com/fwlink/?LinkId=198812).  
-  
+For more information, see [WebBrowser Control](http://go.microsoft.com/fwlink/?LinkId=198812).  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
@@ -122,10 +122,10 @@
         <summary>Called by the control when the underlying ActiveX control is created.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does nothing.  
-  
+This implementation does nothing.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
@@ -416,10 +416,10 @@
         <summary>Called by the control to prepare it for listening to events.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does nothing.  
-  
+This implementation does nothing.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
@@ -546,10 +546,10 @@
         <summary>Called by the control when the underlying ActiveX control is discarded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does nothing.  
-  
+This implementation does nothing.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
@@ -576,10 +576,10 @@
         <summary>Called by the control when it stops listening to events.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does nothing.  
-  
+This implementation does nothing.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
@@ -1661,12 +1661,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.WebBrowserBase.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.WebBrowserBase.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Threading.ThreadStateException">The <see cref="P:System.Threading.Thread.ApartmentState" /> property of the application is not set to <see cref="F:System.Threading.ApartmentState.STA" />.</exception>
@@ -1844,10 +1844,10 @@
           <see langword="true" /> if the key was processed by the <see cref="T:System.Windows.Forms.WebBrowserBase" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the WebBrowser ActiveX control does not process the key. In this case, this method delegates the call to the base <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=fullName> method.  
-  
+This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the WebBrowser ActiveX control does not process the key. In this case, this method delegates the call to the base <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>

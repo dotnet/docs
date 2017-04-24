@@ -19,14 +19,14 @@
     <summary>Holds an <see cref="T:System.Xml.Serialization.XmlSerializationCollectionFixupCallback" /> delegate instance, plus the method's inputs; also supplies the method's parameters.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization derived from the <xref:System.Xml.Serialization.XmlSerializationReader> class. During this process, the infrastructure generates methods that implement the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> delegate. Additionally, it instantiates <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup> class objects to store the fix-up methods along with their inputs. The infrastructure does so for SOAP-encoded arrays or SOAP-encoded, multireferenced elements whose data types, in either case, map to .NET Framework collections or enumerations. Then, as necessary, the methods are invoked during deserialization to fill in array items or multireferenced objects.  
-  
- Do not directly instantiate <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> or <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup>.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization derived from the <xref:System.Xml.Serialization.XmlSerializationReader> class. During this process, the infrastructure generates methods that implement the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> delegate. Additionally, it instantiates <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup> class objects to store the fix-up methods along with their inputs. The infrastructure does so for SOAP-encoded arrays or SOAP-encoded, multireferenced elements whose data types, in either case, map to .NET Framework collections or enumerations. Then, as necessary, the methods are invoked during deserialization to fill in array items or multireferenced objects.  
+ 
+Do not directly instantiate <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> or <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup>.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializationReader.CollectionFixup" /> class with parameters for a callback method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not directly create and instance of the <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup> class or the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> delegate.  
-  
+Do not directly create and instance of the <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup> class or the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> delegate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <value>The collection that is used for the fixup.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection%2A> property gets the collection into which the method that implements the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> delegate copies the array that is obtained through the <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems%2A> property.  
-  
+The <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection%2A> property gets the collection into which the method that implements the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> delegate copies the array that is obtained through the <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <value>The array into which the callback method copies a collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems%2A> property gets the array that the method that implements the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> delegate copies into the collection object that is obtained through the <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection%2A> property.  
-  
+The <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems%2A> property gets the array that the method that implements the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> delegate copies into the collection object that is obtained through the <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

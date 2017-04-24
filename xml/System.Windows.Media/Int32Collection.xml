@@ -38,28 +38,28 @@
     <summary>Represents a collection of <see cref="T:System.Int32" /> values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation, except that this implementation throws an <xref:System.ArgumentException> if you attempt to insert `null` into the collection.  
-  
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Int32Collection> class provides several special features: <xref:System.Windows.Media.Int32Collection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+Members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation, except that this implementation throws an <xref:System.ArgumentException> if you attempt to insert `null` into the collection.  
+ 
+**Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Int32Collection> class provides several special features: <xref:System.Windows.Media.Int32Collection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
 <a name="xamlAttributeUsage_DoubleCollection"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="oneOrMoreInt32Values"/>  
 ```  
-  
+ 
 <a name="xamlValues_DoubleCollection"></a>   
 ## XAML Values  
- *oneOrMoreKInt32Values*  
- One or more <xref:System.Int32> values, with each pair delimited by a single comma and/or one or more spaces:  
-  
- <xref:System.Int32> *[delimeter* <xref:System.Int32> *]\**  
-  
- For example, `"5 10 43"` and `"5,10,43"` are both valid.  
-  
+*oneOrMoreKInt32Values*  
+One or more <xref:System.Int32> values, with each pair delimited by a single comma and/or one or more spaces:  
+ 
+<xref:System.Int32> *[delimeter* <xref:System.Int32> *]\**  
+ 
+For example, `"5 10 43"` and `"5,10,43"` are both valid.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -158,10 +158,10 @@
         <summary>Removes all <see cref="T:System.Int32" /> values from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not change the capacity of the <xref:System.Windows.Media.Int32Collection>.  
-  
+This method does not change the capacity of the <xref:System.Windows.Media.Int32Collection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,12 +184,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,12 +233,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,10 +585,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.Int32Collection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -611,10 +611,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -641,10 +641,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -667,10 +667,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Windows.Media.Int32Collection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -692,10 +692,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Media.Int32Collection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -718,10 +718,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -747,10 +747,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -777,10 +777,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Media.Int32Collection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -806,10 +806,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -836,10 +836,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -862,10 +862,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.Int32Collection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -888,10 +888,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.Int32Collection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -917,10 +917,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -945,10 +945,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -984,10 +984,10 @@
         <returns>A <see cref="T:System.String" /> containing the value of the current instance in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.IFormattable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Int32Collection> instance is cast to an <xref:System.IFormattable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

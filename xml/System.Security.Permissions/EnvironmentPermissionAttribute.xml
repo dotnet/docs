@@ -23,14 +23,14 @@
     <summary>Allows security actions for <see cref="T:System.Security.Permissions.EnvironmentPermission" /> to be applied to code using declarative security. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> that is used.  
-  
- The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the corresponding permission class.  
-  
- Environment variable names are case-insensitive. Multiple environment variable names are specified by separating the names using <xref:System.IO.Path.PathSeparator>.  
-  
+The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> that is used.  
+ 
+The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the corresponding permission class.  
+ 
+Environment variable names are case-insensitive. Multiple environment variable names are specified by separating the names using <xref:System.IO.Path.PathSeparator>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,10 +73,10 @@
         <value>A list of environment variables for full access.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Environment variable names are case-insensitive. Multiple environment variable names are specified by separating the names using <xref:System.IO.Path.PathSeparator>.  
-  
+Environment variable names are case-insensitive. Multiple environment variable names are specified by separating the names using <xref:System.IO.Path.PathSeparator>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The get method is not supported for this property.</exception>
@@ -101,12 +101,12 @@
         <returns>An <see cref="T:System.Security.Permissions.EnvironmentPermission" /> that corresponds to this attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should only be called by the security system, never by application code.  
-  
- At compile time, attributes convert security declarations to a serialized form in metadata. Declarative security data in metadata is created from the permission that this method returns that corresponds to this attribute.  
-  
+This method should only be called by the security system, never by application code.  
+ 
+At compile time, attributes convert security declarations to a serialized form in metadata. Declarative security data in metadata is created from the permission that this method returns that corresponds to this attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <value>A list of environment variables for read access.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Environment variable names are case-insensitive. Multiple environment variable names are specified by separating the names using <xref:System.IO.Path.PathSeparator>.  
-  
+Environment variable names are case-insensitive. Multiple environment variable names are specified by separating the names using <xref:System.IO.Path.PathSeparator>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>A list of environment variables for write access.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Environment variable names are case-insensitive. Multiple environment variable names are specified by separating the names using <xref:System.IO.Path.PathSeparator>.  
-  
+Environment variable names are case-insensitive. Multiple environment variable names are specified by separating the names using <xref:System.IO.Path.PathSeparator>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

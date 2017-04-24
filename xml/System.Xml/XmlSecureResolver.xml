@@ -19,98 +19,98 @@
     <summary>Helps to secure another implementation of <see cref="T:System.Xml.XmlResolver" /> by wrapping the <see cref="T:System.Xml.XmlResolver" /> object and restricting the resources that the underlying <see cref="T:System.Xml.XmlResolver" /> has access to.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlUrlResolver> class is the default resolver for all classes in the <xref:System.Xml> namespace. It is used to load XML documents and to resolve external resources such as entities, DTDs or schemas, and import or include directives.  
-  
- You can override this default by specifying the <xref:System.Xml.XmlResolver> object to use. For example, if you want to restrict the resources that the underlying <xref:System.Xml.XmlResolver> can access, you can use an <xref:System.Xml.XmlSecureResolver> object.  
-  
- <xref:System.Xml.XmlSecureResolver> wraps around a concrete implementation of <xref:System.Xml.XmlResolver> and restricts the resources that the underlying <xref:System.Xml.XmlResolver> has access to. For example, <xref:System.Xml.XmlSecureResolver> has the ability to prohibit cross-domain redirection, which occurs from an embedded Uniform Resource Identifier (URI) reference.  
-  
- When you construct an <xref:System.Xml.XmlSecureResolver> object, you provide a valid <xref:System.Xml.XmlResolver> implementation along with a URL, an instance of an evidence object, or a permission set, which is used by the <xref:System.Xml.XmlSecureResolver> to determine security. Either a <xref:System.Security.PermissionSet?displayProperty=fullName> is generated or the existing one is used and <xref:System.Security.PermissionSet.PermitOnly%2A?displayProperty=fullName> is called on it to help secure the underlying <xref:System.Xml.XmlResolver>.  
-  
+The <xref:System.Xml.XmlUrlResolver> class is the default resolver for all classes in the <xref:System.Xml> namespace. It is used to load XML documents and to resolve external resources such as entities, DTDs or schemas, and import or include directives.  
+ 
+You can override this default by specifying the <xref:System.Xml.XmlResolver> object to use. For example, if you want to restrict the resources that the underlying <xref:System.Xml.XmlResolver> can access, you can use an <xref:System.Xml.XmlSecureResolver> object.  
+ 
+<xref:System.Xml.XmlSecureResolver> wraps around a concrete implementation of <xref:System.Xml.XmlResolver> and restricts the resources that the underlying <xref:System.Xml.XmlResolver> has access to. For example, <xref:System.Xml.XmlSecureResolver> has the ability to prohibit cross-domain redirection, which occurs from an embedded Uniform Resource Identifier (URI) reference.  
+ 
+When you construct an <xref:System.Xml.XmlSecureResolver> object, you provide a valid <xref:System.Xml.XmlResolver> implementation along with a URL, an instance of an evidence object, or a permission set, which is used by the <xref:System.Xml.XmlSecureResolver> to determine security. Either a <xref:System.Security.PermissionSet?displayProperty=fullName> is generated or the existing one is used and <xref:System.Security.PermissionSet.PermitOnly%2A?displayProperty=fullName> is called on it to help secure the underlying <xref:System.Xml.XmlResolver>.  
+ 
 > [!IMPORTANT]
 >  <xref:System.Xml.XmlSecureResolver> objects can contain sensitive information such as user credentials. You should be careful when caching <xref:System.Xml.XmlSecureResolver> objects and should not pass the <xref:System.Xml.XmlSecureResolver> object to an untrusted component.  
-  
+ 
 > [!IMPORTANT]
 >  There are differences in the security infrastructure for code running on the .NET Framework common language runtime (CLR) and for code running on the CLR that is integrated within Microsoft SQL Server 2005. This can lead to cases where code developed for the .NET Framework CLR operates differently when used on the SQL Server integrated CLR. One of these differences affects the <xref:System.Xml.XmlSecureResolver> class when you have evidence that is based on a URL (that is, when you use the <xref:System.Xml.XmlSecureResolver.CreateEvidenceForUrl%28System.String%29> method or the <xref:System.Xml.XmlSecureResolver.%23ctor%2A> constructor). The policy resolution mechanism of the SQL Server integrated CLR does not use the <xref:System.Security.Policy.Url> or <xref:System.Security.Policy.Zone> information. Instead, it grants permissions based on the GUID that the server adds when assemblies are loaded. When you use the <xref:System.Xml.XmlSecureResolver> in the SQL Server integrated CLR, provide any required evidence directly by using a specified <xref:System.Security.PermissionSet>.  
-  
+ 
 ## To use a secure resolver  
-  
+ 
 1.  Create an <xref:System.Xml.XmlSecureResolver> with the correct permission set.  
-  
+ 
 2.  Create an <xref:System.Xml.XmlReaderSettings> object that uses the <xref:System.Xml.XmlSecureResolver> object.  
-  
-     [!code-csharp[XmlSecureResolver_Samples#5a](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#5a)]
-     [!code-vb[XmlSecureResolver_Samples#5a](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#5a)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#5a](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#5a)]
+    [!code-vb[XmlSecureResolver_Samples#5a](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#5a)]  
+ 
 3.  Pass  the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create%2A> method when you're creating the <xref:System.Xml.XmlReader> object.  
-  
-     [!code-csharp[XmlSecureResolver_Samples#5b](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#5b)]
-     [!code-vb[XmlSecureResolver_Samples#5b](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#5b)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#5b](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#5b)]
+    [!code-vb[XmlSecureResolver_Samples#5b](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#5b)]  
+ 
 ## To restrict access by using a URL  
- Use the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.String%29> constructor to create an <xref:System.Xml.XmlSecureResolver> object that is allowed to access your local intranet site only.  
-  
- [!code-csharp[XmlSecureResolver_Samples#3](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#3)]
- [!code-vb[XmlSecureResolver_Samples#3](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#3)]  
-  
+Use the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.String%29> constructor to create an <xref:System.Xml.XmlSecureResolver> object that is allowed to access your local intranet site only.  
+ 
+[!code-csharp[XmlSecureResolver_Samples#3](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#3)]
+[!code-vb[XmlSecureResolver_Samples#3](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#3)]  
+ 
 ## To restrict access by using a permission set  
-  
+ 
 1.  Create a <xref:System.Net.WebPermission> object.  
-  
-     [!code-csharp[XmlSecureResolver_Samples#4a](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#4a)]
-     [!code-vb[XmlSecureResolver_Samples#4a](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#4a)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#4a](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#4a)]
+    [!code-vb[XmlSecureResolver_Samples#4a](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#4a)]  
+ 
 2.  Specify the URLs that you want to allow access to.  
-  
-     [!code-csharp[XmlSecureResolver_Samples#4b](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#4b)]
-     [!code-vb[XmlSecureResolver_Samples#4b](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#4b)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#4b](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#4b)]
+    [!code-vb[XmlSecureResolver_Samples#4b](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#4b)]  
+ 
 3.  Add the web permissions to the <xref:System.Security.PermissionSet> object.  
-  
-     [!code-csharp[XmlSecureResolver_Samples#4c](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#4c)]
-     [!code-vb[XmlSecureResolver_Samples#4c](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#4c)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#4c](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#4c)]
+    [!code-vb[XmlSecureResolver_Samples#4c](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#4c)]  
+ 
 4.  Use the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.PermissionSet%29> constructor to create an <xref:System.Xml.XmlSecureResolver> object by using the permission set.  
-  
-     [!code-csharp[XmlSecureResolver_Samples#4d](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#4d)]
-     [!code-vb[XmlSecureResolver_Samples#4d](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#4d)]  
-  
-     See the <xref:System.Xml.XmlSecureResolver.%23ctor%2A> reference page for another example.  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#4d](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#4d)]
+    [!code-vb[XmlSecureResolver_Samples#4d](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#4d)]  
+ 
+    See the <xref:System.Xml.XmlSecureResolver.%23ctor%2A> reference page for another example.  
+ 
 ## To restrict access by using evidence  
- You can restrict access by using the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> constructor and specifying <xref:System.Security.Policy.Evidence>. The <xref:System.Security.Policy.Evidence> is used to create the <xref:System.Security.PermissionSet> that is applied to the underlying <xref:System.Xml.XmlResolver>. The <xref:System.Xml.XmlSecureResolver> calls <xref:System.Security.PermissionSet.PermitOnly%2A> on the created <xref:System.Security.PermissionSet> before opening any resources.  
-  
- Here are some common scenarios and the type of evidence to provide for each:  
-  
+You can restrict access by using the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> constructor and specifying <xref:System.Security.Policy.Evidence>. The <xref:System.Security.Policy.Evidence> is used to create the <xref:System.Security.PermissionSet> that is applied to the underlying <xref:System.Xml.XmlResolver>. The <xref:System.Xml.XmlSecureResolver> calls <xref:System.Security.PermissionSet.PermitOnly%2A> on the created <xref:System.Security.PermissionSet> before opening any resources.  
+ 
+Here are some common scenarios and the type of evidence to provide for each:  
+ 
 -   If you are working in a fully trusted environment, use your assembly to create the evidence:  
-  
-     [!code-csharp[XmlSecureResolver_Samples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#1)]
-     [!code-vb[XmlSecureResolver_Samples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#1)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#1)]
+    [!code-vb[XmlSecureResolver_Samples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#1)]  
+ 
 -   If you are working in a semi-trusted environment, you have code or data coming from an outside source, and you know the origin of the outside source and have a verifiable URI, use the URI to create the evidence:  
-  
-     [!code-csharp[XmlSecureResolver_Samples#2](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#2)]
-     [!code-vb[XmlSecureResolver_Samples#2](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#2)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#2](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#2)]
+    [!code-vb[XmlSecureResolver_Samples#2](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#2)]  
+ 
 -   If you are working in a semi-trusted environment and you have code or data coming from an outside source, but you don't know the origin of the outside source, either:  
-  
-     Set the `evidence` parameter to `null`. This allows no access to resources.  
-  
-     -or-  
-  
-     If your application requires some access to resources, request evidence from the caller.  
-  
+ 
+    Set the `evidence` parameter to `null`. This allows no access to resources.  
+ 
+    -or-  
+ 
+    If your application requires some access to resources, request evidence from the caller.  
+ 
 ## To use the secure resolver to load an XSLT style sheet  
-  
+ 
 1.  Create an <xref:System.Xml.XmlSecureResolver> with the correct permission set.  
-  
+ 
 2.  Pass the <xref:System.Xml.XmlSecureResolver> to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
-  
-     [!code-csharp[XmlSecureResolver_Samples#6](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#6)]
-     [!code-vb[XmlSecureResolver_Samples#6](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#6)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#6](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#6)]
+    [!code-vb[XmlSecureResolver_Samples#6](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#6)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -138,14 +138,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlSecureResolver" /> class with the <see cref="T:System.Xml.XmlResolver" /> and <see cref="T:System.Security.PermissionSet" /> specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example constructs an <xref:System.Xml.XmlSecureResolver> object by using a customized permission set.  
-  
- [!code-cpp[XmlSecureResolver.cctor#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlSecureResolver.cctor/CPP/secresolver.cpp#1)]
- [!code-csharp[XmlSecureResolver.cctor#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver.cctor/CS/secresolver.cs#1)]
- [!code-vb[XmlSecureResolver.cctor#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver.cctor/VB/secresolver.vb#1)]  
-  
+The following example constructs an <xref:System.Xml.XmlSecureResolver> object by using a customized permission set.  
+ 
+[!code-cpp[XmlSecureResolver.cctor#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlSecureResolver.cctor/CPP/secresolver.cpp#1)]
+[!code-csharp[XmlSecureResolver.cctor#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver.cctor/CS/secresolver.cs#1)]
+[!code-vb[XmlSecureResolver.cctor#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver.cctor/VB/secresolver.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,28 +170,28 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlSecureResolver" /> class with the <see cref="T:System.Xml.XmlResolver" /> and <see cref="T:System.Security.Policy.Evidence" /> specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Here are some possible scenarios and the type of evidence to provide for each scenario:  
-  
+Here are some possible scenarios and the type of evidence to provide for each scenario:  
+ 
 -   If you are working in a fully trusted environment, use your assembly to create the evidence:  
-  
-     [!code-csharp[XmlSecureResolver_Samples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#1)]
-     [!code-vb[XmlSecureResolver_Samples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#1)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#1)]
+    [!code-vb[XmlSecureResolver_Samples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#1)]  
+ 
 -   If you are working in a semi-trusted environment, you have code or data coming from an outside source, and you know the origin of the outside source and have a verifiable URI, use the URI to create the evidence:  
-  
-     [!code-csharp[XmlSecureResolver_Samples#2](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#2)]
-     [!code-vb[XmlSecureResolver_Samples#2](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#2)]  
-  
+ 
+    [!code-csharp[XmlSecureResolver_Samples#2](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#2)]
+    [!code-vb[XmlSecureResolver_Samples#2](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#2)]  
+ 
 -   If you are working in a semi-trusted environment and you have code or data coming from an outside source, but you don't know the origin of the outside source, either:  
-  
-     Set the `evidence` parameter to `null`. This allows no access to resources.  
-  
-     -or-  
-  
-     If your application requires some access to resources, request evidence from the caller.  
-  
+ 
+    Set the `evidence` parameter to `null`. This allows no access to resources.  
+ 
+    -or-  
+ 
+    If your application requires some access to resources, request evidence from the caller.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,20 +220,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlSecureResolver" /> class with the <see cref="T:System.Xml.XmlResolver" /> and URL provided.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  There are differences in the security infrastructure for code running on the .NET Framework common language runtime (CLR) and for code running on the CLR that is integrated within Microsoft SQL Server 2005. This can lead to cases where code developed for the .NET Framework CLR operates differently when used on the SQL Server integrated CLR. One of these differences affects the <xref:System.Xml.XmlSecureResolver> class when you have evidence that is based on a URL (that is, when you use the <xref:System.Xml.XmlSecureResolver.CreateEvidenceForUrl%2A> method or the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.String%29> constructor). The policy resolution mechanism of the SQL Server integrated CLR does not use the <xref:System.Security.Policy.Url> or <xref:System.Security.Policy.Zone> information. Instead, it grants permissions based on the GUID that the server adds when assemblies are loaded. When you use the <xref:System.Xml.XmlSecureResolver> in the SQL Server integrated CLR, provide any required evidence directly by using a specified <xref:System.Security.PermissionSet>.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.String%29> constructor to create an <xref:System.Xml.XmlSecureResolver> object that is allowed to access your local intranet site only.  
-  
- [!code-csharp[XmlSecureResolver_Samples#3](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#3)]
- [!code-vb[XmlSecureResolver_Samples#3](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#3)]  
-  
+This example uses the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.String%29> constructor to create an <xref:System.Xml.XmlSecureResolver> object that is allowed to access your local intranet site only.  
+ 
+[!code-csharp[XmlSecureResolver_Samples#3](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver_Samples/CS/XmlSecureResolver_ex.cs#3)]
+[!code-vb[XmlSecureResolver_Samples#3](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver_Samples/VB/XmlSecureResolver_ex.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,12 +260,12 @@
         <returns>The evidence generated from the supplied URL as defined by the default policy.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  There are differences in the security infrastructure for code running on the .NET Framework common language runtime (CLR) and for code running on the CLR that is integrated within Microsoft SQL Server 2005. This can lead to cases where code developed for the .NET Framework CLR operates differently when used on the SQL Server integrated CLR. One of these differences affects the <xref:System.Xml.XmlSecureResolver> class when you have evidence that is based on a URL (that is, when you use the <xref:System.Xml.XmlSecureResolver.CreateEvidenceForUrl%2A> method or the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.String%29> constructor). The policy resolution mechanism of the SQL Server integrated CLR doesn't use the <xref:System.Security.Policy.Url> or <xref:System.Security.Policy.Zone> information. Instead, it grants permissions based on the GUID that the server adds when assemblies are loaded. When you use the <xref:System.Xml.XmlSecureResolver> in the SQL Server integrated CLR, provide any required evidence directly by using a specified <xref:System.Security.PermissionSet>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,14 +292,14 @@
         <value>The credentials to be used to authenticate web requests. The <see cref="T:System.Xml.XmlSecureResolver" /> sets the given credentials on the underlying <see cref="T:System.Xml.XmlResolver" />. If this property is not set, the value defaults to <see langword="null" />; that is, the <see cref="T:System.Xml.XmlSecureResolver" /> has no user credentials.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses an <xref:System.Xml.XmlSecureResolver> with default credentials to resolve and open network resources needed by the <xref:System.Xml.XmlTextReader>.  
-  
- [!code-cpp[XmlSecureResolver.Credentials#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlSecureResolver.Credentials/CPP/secresolver2.cpp#1)]
- [!code-csharp[XmlSecureResolver.Credentials#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver.Credentials/CS/secresolver2.cs#1)]
- [!code-vb[XmlSecureResolver.Credentials#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver.Credentials/VB/secresolver2.vb#1)]  
-  
+The following example uses an <xref:System.Xml.XmlSecureResolver> with default credentials to resolve and open network resources needed by the <xref:System.Xml.XmlTextReader>.  
+ 
+[!code-cpp[XmlSecureResolver.Credentials#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlSecureResolver.Credentials/CPP/secresolver2.cpp#1)]
+[!code-csharp[XmlSecureResolver.Credentials#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSecureResolver.Credentials/CS/secresolver2.cs#1)]
+[!code-vb[XmlSecureResolver.Credentials#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSecureResolver.Credentials/VB/secresolver2.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,12 +334,12 @@
         <returns>The stream returned by calling <see langword="GetEntity" /> on the underlying <see cref="T:System.Xml.XmlResolver" />. If a type other than <see cref="T:System.IO.Stream" /> is specified, the method returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Your application can mitigate memory denial of service threats to the <xref:System.Xml.XmlSecureResolver.GetEntity%2A> method by implementing an <xref:System.Runtime.InteropServices.ComTypes.IStream> that limits the number of bytes read. This helps guard against situations where malicious code attempts to pass an infinite stream of bytes to the <xref:System.Xml.XmlSecureResolver.GetEntity%2A> method.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">
@@ -422,18 +422,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlSecureResolver" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The three constructors provide three types of access restrictions:  
-  
+The three constructors provide three types of access restrictions:  
+ 
 -   The <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.String%29> constructor restricts access by using a URL.  
-  
+ 
 -   The <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.PermissionSet%29> constructor restricts access by using a permission set.  
-  
+ 
 -   The <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> constructor restricts access by using evidence.  
-  
- See the constructor reference topics for examples of these types of restrictions.  
-  
+ 
+See the constructor reference topics for examples of these types of restrictions.  
+ 
  ]]></format>
         </remarks>
       </Docs>

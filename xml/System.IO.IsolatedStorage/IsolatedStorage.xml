@@ -24,13 +24,13 @@
     <summary>Represents the abstract base class from which all isolated storage implementations must derive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about file-based isolated storage, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class.  
-  
+For information about file-based isolated storage, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class.  
+ 
 > [!IMPORTANT]
 >  Isolated storage is not available for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](~/includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](http://go.microsoft.com/fwlink/?LinkId=229175) in the Windows Dev Center.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <value>An <see cref="T:System.Object" /> that represents the <see cref="F:System.IO.IsolatedStorage.IsolatedStorageScope.Application" /> identity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Since the definition of an application includes all assemblies associated with the application, you can use this type of identity to ensure that only assemblies associated with the application have access to the isolated storage.  
-  
+Since the definition of an application includes all assemblies associated with the application, you can use this type of identity to ensure that only assemblies associated with the application have access to the isolated storage.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The code lacks the required <see cref="T:System.Security.Permissions.SecurityPermission" /> to access this object. These permissions are granted by the runtime based on security policy.</exception>
@@ -142,10 +142,10 @@
         <value>The available free space for isolated storage, in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.AvailableFreeSpace%2A?displayProperty=fullName> property overrides this property.  
-  
+The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.AvailableFreeSpace%2A?displayProperty=fullName> property overrides this property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An operation was performed that requires access to <see cref="P:System.IO.IsolatedStorage.IsolatedStorage.AvailableFreeSpace" />, but that property is not defined for this store. Stores that are obtained by using enumerations do not have a well-defined <see cref="P:System.IO.IsolatedStorage.IsolatedStorage.AvailableFreeSpace" /> property, because partial evidence is used to open the store.</exception>
@@ -181,10 +181,10 @@
         <value>The number of storage units currently used within the isolated storage scope.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the total usage of all storage resources within the isolated storage scope. <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A?displayProperty=fullName> implements this property. In the case of <xref:System.IO.IsolatedStorage.IsolatedStorageFile> objects, this value is in bytes. In the case of implementations of other storage objects, such as a database, this value might be in other units of storage.  
-  
+This property represents the total usage of all storage resources within the isolated storage scope. <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A?displayProperty=fullName> implements this property. In the case of <xref:System.IO.IsolatedStorage.IsolatedStorageFile> objects, this value is in bytes. In the case of implementations of other storage objects, such as a database, this value might be in other units of storage.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current size of the isolated store is undefined.</exception>
@@ -238,10 +238,10 @@
         <returns>An <see cref="T:System.Security.Permissions.IsolatedStoragePermission" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You call this method on derived classes to determine what permission type governs their use, and to return the permission of the type that has been granted. Use this information to determine the allowable quota and any other derived class-specific isolated storage settings.  
-  
+You call this method on derived classes to determine what permission type governs their use, and to return the permission of the type that has been granted. Use this information to determine the allowable quota and any other derived class-specific isolated storage settings.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,10 +278,10 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A?displayProperty=fullName> method overrides this method.  
-  
+The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A?displayProperty=fullName> method overrides this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,10 +313,10 @@
         <summary>Initializes a new <see cref="T:System.IO.IsolatedStorage.IsolatedStorage" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes use this method to initialize a new object.  
-  
+Derived classes use this method to initialize a new object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The assembly specified has insufficient permissions to create isolated stores.</exception>
@@ -364,10 +364,10 @@
         <summary>Initializes a new <see cref="T:System.IO.IsolatedStorage.IsolatedStorage" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes use this method to initialize a new object.  
-  
+Derived classes use this method to initialize a new object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The assembly specified has insufficient permissions to create isolated stores.</exception>
@@ -416,12 +416,12 @@
         <value>The maximum amount of isolated storage space in bytes. Derived classes can return different units of value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of the <xref:System.IO.IsolatedStorage.IsolatedStorage.MaximumSize%2A> property returns the value of <xref:System.Security.Permissions.IsolatedStoragePermission.UserQuota%2A?displayProperty=fullName>, which is expressed in bytes. Derived classes can express the value in other units of measure. A potential example of such an implementation is an isolated storage database.  
-  
- You cannot set <xref:System.IO.IsolatedStorage.IsolatedStorage.MaximumSize%2A>, but the quota is configured in the security policy, and can be set. Code receives a quota of space on the basis of its evidence, so the same code can receive a different quota if it is run with different evidence (for example, the same application run locally and from a share on an intranet can receive different quotas). <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A?displayProperty=fullName> implements this property.  
-  
+The default implementation of the <xref:System.IO.IsolatedStorage.IsolatedStorage.MaximumSize%2A> property returns the value of <xref:System.Security.Permissions.IsolatedStoragePermission.UserQuota%2A?displayProperty=fullName>, which is expressed in bytes. Derived classes can express the value in other units of measure. A potential example of such an implementation is an isolated storage database.  
+ 
+You cannot set <xref:System.IO.IsolatedStorage.IsolatedStorage.MaximumSize%2A>, but the quota is configured in the security policy, and can be set. Code receives a quota of space on the basis of its evidence, so the same code can receive a different quota if it is run with different evidence (for example, the same application run locally and from a share on an intranet can receive different quotas). <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A?displayProperty=fullName> implements this property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The quota has not been defined.</exception>
@@ -454,10 +454,10 @@
         <value>The limit of isolated storage space, in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Quota%2A?displayProperty=fullName> property overrides this property.  
-  
+The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Quota%2A?displayProperty=fullName> property overrides this property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An operation was performed that requires access to <see cref="P:System.IO.IsolatedStorage.IsolatedStorage.Quota" />, but that property is not defined for this store. Stores that are obtained by using enumerations do not have a well-defined <see cref="P:System.IO.IsolatedStorage.IsolatedStorage.Quota" /> property, because partial evidence is used to open the store.</exception>
@@ -485,10 +485,10 @@
         <summary>When overridden in a derived class, removes the individual isolated store and all contained data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=fullName> implements this method.  
-  
+<xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=fullName> implements this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -515,10 +515,10 @@
         <value>A bitwise combination of <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" /> values specifying the scope used to isolate the store.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Stores are isolated by a combination of factors (user, assembly, domain, and so on).  
-  
+Stores are isolated by a combination of factors (user, assembly, domain, and so on).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -545,10 +545,10 @@
         <value>The default implementation returns the '\\' (backslash) character.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be used to get a character that is used in a directory string.  
-  
+This property can be used to get a character that is used in a directory string.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -578,10 +578,10 @@
         <value>The default implementation returns the '.' (period) character.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be used to get a character that is used in a directory string.  
-  
+This property can be used to get a character that is used in a directory string.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -616,10 +616,10 @@
         <value>The used amount of isolated storage space, in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.UsedSize%2A?displayProperty=fullName> property overrides this property.  
-  
+The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.UsedSize%2A?displayProperty=fullName> property overrides this property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An operation was performed that requires access to <see cref="P:System.IO.IsolatedStorage.IsolatedStorage.UsedSize" />, but that property is not defined for this store. Stores that are obtained by using enumerations do not have a well-defined <see cref="P:System.IO.IsolatedStorage.IsolatedStorage.UsedSize" /> property, because partial evidence is used to open the store.</exception>

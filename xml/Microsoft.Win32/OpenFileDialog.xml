@@ -14,26 +14,26 @@
     <summary>Represents a common dialog box that allows a user to specify a filename for one or more files to open.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following figure shows an <xref:Microsoft.Win32.OpenFileDialog> for [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)].  
-  
- ![Open dialog box](~/add/media/dialogboxesoverviewfigure2.png "Open dialog box")  
-  
- Starting in [!INCLUDE[TLA2#tla_winvista](~/includes/tla2sharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. Use the <xref:Microsoft.Win32.FileDialog.CustomPlaces%2A> property to set this list of links.  
-  
+The following figure shows an <xref:Microsoft.Win32.OpenFileDialog> for [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)].  
+ 
+![Open dialog box](~/add/media/dialogboxesoverviewfigure2.png "Open dialog box")  
+ 
+Starting in [!INCLUDE[TLA2#tla_winvista](~/includes/tla2sharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. Use the <xref:Microsoft.Win32.FileDialog.CustomPlaces%2A> property to set this list of links.  
+ 
 <a name="xamlTextUsage_OpenFileDialog"></a>   
 ## XAML Text Usage  
- You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an <xref:Microsoft.Win32.OpenFileDialog> that contains a default file name and extension type.  
-  
- [!code-csharp[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#openfiledialogboxcodebehind)]
- [!code-vb[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#openfiledialogboxcodebehind)]  
-  
+The following example shows how to create an <xref:Microsoft.Win32.OpenFileDialog> that contains a default file name and extension type.  
+ 
+[!code-csharp[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#openfiledialogboxcodebehind)]
+[!code-vb[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#openfiledialogboxcodebehind)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -132,12 +132,12 @@
         <returns>A new <see cref="T:System.IO.Stream" /> that contains the selected file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file is opened with read-only permission (<xref:System.IO.FileMode>, <xref:System.IO.FileAccess>, and <xref:System.IO.FileShare>), whether or not the Read Only checkbox is checked in the dialog. Because the file is opened without the ability to overwrite or write to the file, an application can safely load a file while executing within partial trust restrictions.  
-  
- If more than one file is selected, the first selected file is opened.  
-  
+The file is opened with read-only permission (<xref:System.IO.FileMode>, <xref:System.IO.FileAccess>, and <xref:System.IO.FileShare>), whether or not the Read Only checkbox is checked in the dialog. Because the file is opened without the ability to overwrite or write to the file, an application can safely load a file while executing within partial trust restrictions.  
+ 
+If more than one file is selected, the first selected file is opened.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No files were selected in the dialog.</exception>
@@ -167,10 +167,10 @@
         <returns>An array of multiple new <see cref="T:System.IO.Stream" /> objects that contain the selected files.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each file is opened with read-only permission (<xref:System.IO.FileMode>, <xref:System.IO.FileAccess>, and <xref:System.IO.FileShare>), whether or not the Read Only checkbox is checked in the dialog. Because each file is opened without the ability to overwrite or write to the file, an application can safely load one or more files while executing within partial trust restrictions.  
-  
+Each file is opened with read-only permission (<xref:System.IO.FileMode>, <xref:System.IO.FileAccess>, and <xref:System.IO.FileShare>), whether or not the Read Only checkbox is checked in the dialog. Because each file is opened without the ability to overwrite or write to the file, an application can safely load one or more files while executing within partial trust restrictions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No files were selected in the dialog.</exception>

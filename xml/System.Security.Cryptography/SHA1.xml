@@ -30,21 +30,21 @@
     <summary>Computes the <see cref="T:System.Security.Cryptography.SHA1" /> hash for the input data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if the corresponding data also matches. Small changes to the data result in large, unpredictable changes in the hash.  
+The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if the corresponding data also matches. Small changes to the data result in large, unpredictable changes in the hash.  
+ 
+The hash size for the <xref:System.Security.Cryptography.SHA1> algorithm is 160 bits.  
+ 
   
- The hash size for the <xref:System.Security.Cryptography.SHA1> algorithm is 160 bits.  
-  
-   
-  
+ 
 ## Examples  
- The following example computes the <xref:System.Security.Cryptography.SHA1> hash for `data` and stores it in `result`. This example assumes that there is a predefined constant `DATA_SIZE`.  
-  
- [!code-cpp[Classic SHA1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SHA1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic SHA1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SHA1 Example/CS/source.cs#1)]
- [!code-vb[Classic SHA1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SHA1 Example/VB/source.vb#1)]  
-  
+The following example computes the <xref:System.Security.Cryptography.SHA1> hash for `data` and stores it in `result`. This example assumes that there is a predefined constant `DATA_SIZE`.  
+ 
+[!code-cpp[Classic SHA1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SHA1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic SHA1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SHA1 Example/CS/source.cs#1)]
+[!code-vb[Classic SHA1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SHA1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,10 +74,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Security.Cryptography.SHA1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of an abstract class. Application code will create a new instance of a derived class.  
-  
+You cannot create an instance of an abstract class. Application code will create a new instance of a derived class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The policy on this object is not compliant with the FIPS algorithm.</exception>
@@ -112,10 +112,10 @@
         <returns>A new instance of <see cref="T:System.Security.Cryptography.SHA1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of <xref:System.Security.Cryptography.SHA1> is <xref:System.Security.Cryptography.SHA1CryptoServiceProvider>.  
-  
+The default implementation of <xref:System.Security.Cryptography.SHA1> is <xref:System.Security.Cryptography.SHA1CryptoServiceProvider>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

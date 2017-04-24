@@ -15,23 +15,23 @@
     <summary>Provides a unique network address that a client uses to communicate with a service endpoint.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An endpoint address uniquely identifies the endpoint for a service.  
+An endpoint address uniquely identifies the endpoint for a service.  
+ 
+The endpoint address belongs to the service endpoint, which also contains the binding, contract and behaviors for the endpoint.  
+ 
+The <xref:System.ServiceModel.EndpointAddress> contains a URI and address properties that include an identity, WSDL elements, and a collection of optional headers. The optional headers are used to provide additional, more detailed addressing information to identify or interact with the endpoint. For example, they can be used to indicate which instance of a service is to be used to process an incoming message from a particular user when multiple instances are available.  
+ 
+The endpoint address for a service can be specified either imperatively using code or declaratively through configuration. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. It is more practical to define service endpoints using configuration.  
+ 
+<xref:System.ServiceModel.EndpointAddress> does not implement the <xref:System.Runtime.Serialization.ISerializable> interface and so is not serializable. For an endpoint to be exposed as part of a service contract it must be serializable and it must also be compliant with the Web Service Addressing (WS-Addressing) protocol. Serializable endpoints that are compliant with version 1.0 and the August 2004 version of WS-Addressing are provided, respectively, by the <xref:System.ServiceModel.EndpointAddress10> and <xref:System.ServiceModel.EndpointAddressAugust2004> classes.  
+ 
   
- The endpoint address belongs to the service endpoint, which also contains the binding, contract and behaviors for the endpoint.  
-  
- The <xref:System.ServiceModel.EndpointAddress> contains a URI and address properties that include an identity, WSDL elements, and a collection of optional headers. The optional headers are used to provide additional, more detailed addressing information to identify or interact with the endpoint. For example, they can be used to indicate which instance of a service is to be used to process an incoming message from a particular user when multiple instances are available.  
-  
- The endpoint address for a service can be specified either imperatively using code or declaratively through configuration. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. It is more practical to define service endpoints using configuration.  
-  
- <xref:System.ServiceModel.EndpointAddress> does not implement the <xref:System.Runtime.Serialization.ISerializable> interface and so is not serializable. For an endpoint to be exposed as part of a service contract it must be serializable and it must also be compliant with the Web Service Addressing (WS-Addressing) protocol. Serializable endpoints that are compliant with version 1.0 and the August 2004 version of WS-Addressing are provided, respectively, by the <xref:System.ServiceModel.EndpointAddress10> and <xref:System.ServiceModel.EndpointAddressAugust2004> classes.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#0](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/hostapplication.cs#0)]  
-  
+[!code-csharp[EndpointAddress#0](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/hostapplication.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddress" /> class with a specified URI string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#13](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#13)]  
-  
+[!code-csharp[EndpointAddress#13](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,12 +88,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddress" /> class with a specified URI and headers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows the use of this constructor.  
-  
-  
-  
+The following code shows the use of this constructor.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,12 +126,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddress" /> class with a specified URI, identity, and headers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to construct an <xref:System.ServiceModel.EndpointAddress> object with a <xref:System.Uri>, <xref:System.ServiceModel.EndpointIdentity> and an array of <xref:System.ServiceModel.Channels.AddressHeader> objects.  
-  
- [!code-csharp[EndpointAddress#2](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#2)]  
-  
+The following code shows how to construct an <xref:System.ServiceModel.EndpointAddress> object with a <xref:System.Uri>, <xref:System.ServiceModel.EndpointIdentity> and an array of <xref:System.ServiceModel.Channels.AddressHeader> objects.  
+ 
+[!code-csharp[EndpointAddress#2](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,12 +158,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddress" /> class with a specified URI, identity, and header collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to construct a <xref:System.ServiceModel.EndpointAddress> object with a <xref:System.Uri>, <xref:System.ServiceModel.EndpointIdentity> and an <xref:System.ServiceModel.Channels.AddressHeaderCollection> object.  
-  
- [!code-csharp[EndpointAddress#3](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#3)]  
-  
+The following code shows how to construct a <xref:System.ServiceModel.EndpointAddress> object with a <xref:System.Uri>, <xref:System.ServiceModel.EndpointIdentity> and an <xref:System.ServiceModel.Channels.AddressHeaderCollection> object.  
+ 
+[!code-csharp[EndpointAddress#3](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,17 +194,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddress" /> class with a specified URI, identity, header collection, and metadata and extension readers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The WS-Addressing specification allows for arbitrary extension elements to appear at the end of an Endpoint Reference (EPR) that can be obtained using an <xref:System.Xml.XmlDictionaryReader>.  
+The WS-Addressing specification allows for arbitrary extension elements to appear at the end of an Endpoint Reference (EPR) that can be obtained using an <xref:System.Xml.XmlDictionaryReader>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to instantiate a <xref:System.ServiceModel.EndpointAddress> that specifies a <xref:System.Uri>, an <xref:System.ServiceModel.EndpointIdentity>, a headers collection, a metadata <xref:System.Xml.XmlDictionaryReader> and an extension <xref:System.Xml.XmlDictionaryReader>.  
-  
- [!code-csharp[EndpointAddress#6](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#6)]  
-  
+The following code shows how to instantiate a <xref:System.ServiceModel.EndpointAddress> that specifies a <xref:System.Uri>, an <xref:System.ServiceModel.EndpointIdentity>, a headers collection, a metadata <xref:System.Xml.XmlDictionaryReader> and an extension <xref:System.Xml.XmlDictionaryReader>.  
+ 
+[!code-csharp[EndpointAddress#6](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,21 +227,21 @@
         <value>A <see cref="T:System.Uri" /> with the value http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of the URI used to initialize the constructor is the <xref:System.ServiceModel.EndpointAddress.AnonymousUri%2A>, then <xref:System.ServiceModel.EndpointAddress.IsAnonymous%2A> is set to `true`.  
+If the value of the URI used to initialize the constructor is the <xref:System.ServiceModel.EndpointAddress.AnonymousUri%2A>, then <xref:System.ServiceModel.EndpointAddress.IsAnonymous%2A> is set to `true`.  
+ 
+<xref:System.ServiceModel.EndpointAddress> is a version-neutral class and the <xref:System.ServiceModel.EndpointAddress.AnonymousUri%2A> property returns a value is a neutral representation. When you write this out or convert this to one version or the other, then it turns into the right value for that version.  
+ 
+Due to the range of network technologies currently in widespread use (for example, NAT, DHCP, and firewalls), many deployments cannot assign a meaningful global URI to a given endpoint. To allow these *anonymous* endpoints to initiate message exchange patterns and receive replies, the Web Services Addressing specification defines a [URI](http://go.microsoft.com/fwlink/?LinkId=96169) for use by endpoints that cannot have a stable, resolvable URI.  
+ 
+Requests that use this address must provide some mechanism for delivering replies or faults (for example, returning the reply on the same transport connection). This mechanism can be a request/reply transport protocol (for example, HTTP GET or POST). This URI can be used as the destination for reply messages and should not be used as the destination in other circumstances.  
+ 
   
- <xref:System.ServiceModel.EndpointAddress> is a version-neutral class and the <xref:System.ServiceModel.EndpointAddress.AnonymousUri%2A> property returns a value is a neutral representation. When you write this out or convert this to one version or the other, then it turns into the right value for that version.  
-  
- Due to the range of network technologies currently in widespread use (for example, NAT, DHCP, and firewalls), many deployments cannot assign a meaningful global URI to a given endpoint. To allow these *anonymous* endpoints to initiate message exchange patterns and receive replies, the Web Services Addressing specification defines a [URI](http://go.microsoft.com/fwlink/?LinkId=96169) for use by endpoints that cannot have a stable, resolvable URI.  
-  
- Requests that use this address must provide some mechanism for delivering replies or faults (for example, returning the reply on the same transport connection). This mechanism can be a request/reply transport protocol (for example, HTTP GET or POST). This URI can be used as the destination for reply messages and should not be used as the destination in other circumstances.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#13](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#13)]  
-  
+[!code-csharp[EndpointAddress#13](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,17 +267,17 @@
         <summary>Assigns the URI and properties of the endpoint address to the values of the headers of a specified message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.EndpointAddress.ApplyTo%28System.ServiceModel.Channels.Message%29> method sets the "To" of the message with the <xref:System.ServiceModel.EndpointAddress.Uri%2A> of the current <xref:System.ServiceModel.EndpointAddress>. Remember that "ApplyTo" means here "apply this address to the 'To' header of the message".  
+The <xref:System.ServiceModel.EndpointAddress.ApplyTo%28System.ServiceModel.Channels.Message%29> method sets the "To" of the message with the <xref:System.ServiceModel.EndpointAddress.Uri%2A> of the current <xref:System.ServiceModel.EndpointAddress>. Remember that "ApplyTo" means here "apply this address to the 'To' header of the message".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to apply the URI and properties of an endpoint address to the headers of a message.  
-  
- [!code-csharp[EndpointAddress#4](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#4)]  
-  
+The following code shows how to apply the URI and properties of an endpoint address to the headers of a message.  
+ 
+[!code-csharp[EndpointAddress#4](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -307,10 +307,10 @@
           <see langword="true" /> if the specified object is equivalent to the current address; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#20](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#20)]  
-  
+[!code-csharp[EndpointAddress#20](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#20)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,15 +334,15 @@
         <returns>A unique hash code for the current endpoint address.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.EndpointAddress.GetHashCode%2A> is suitable for use in hashing algorithms and with data structures such as a hash table.  
+<xref:System.ServiceModel.EndpointAddress.GetHashCode%2A> is suitable for use in hashing algorithms and with data structures such as a hash table.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#21](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#21)]  
-  
+[!code-csharp[EndpointAddress#21](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,15 +366,15 @@
         <returns>The <see cref="T:System.Xml.XmlDictionaryReader" /> that provides access to the extensions.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader provides access to the information that is not contained in the model of the endpoint reference defined by WS-Addressing.  
+The reader provides access to the information that is not contained in the model of the endpoint reference defined by WS-Addressing.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#7](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#7)]  
-  
+[!code-csharp[EndpointAddress#7](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <returns>The <see cref="T:System.Xml.XmlDictionaryReader" /> that provides access to the metadata for an endpoint.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#8](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#8)]  
-  
+[!code-csharp[EndpointAddress#8](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,10 +424,10 @@
         <value>The <see cref="T:System.ServiceModel.Channels.AddressHeaderCollection" /> that contains address information for the endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#14](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#14)]  
-  
+[!code-csharp[EndpointAddress#14](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,15 +450,15 @@
         <value>The <see cref="T:System.ServiceModel.EndpointIdentity" /> for the endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Provides an identity that enables the authentication of an endpoint by other endpoints that exchange messages with it.  
+Provides an identity that enables the authentication of an endpoint by other endpoints that exchange messages with it.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#15](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#15)]  
-  
+[!code-csharp[EndpointAddress#15](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,19 +482,19 @@
           <see langword="true" /> if the endpoint is <see cref="P:System.ServiceModel.EndpointAddress.AnonymousUri" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to check for the <xref:System.ServiceModel.EndpointAddress.AnonymousUri%2A> when manually copying the URI from an <xref:System.ServiceModel.EndpointAddress> to the URI of either a <xref:System.ServiceModel.EndpointAddress10> or a <xref:System.ServiceModel.EndpointAddressAugust2004>. This must be done because both <xref:System.ServiceModel.EndpointAddress10> and <xref:System.ServiceModel.EndpointAddressAugust2004> have special anonymous values. Users must use these values if the URI being copied is anonymous.  
+Use this method to check for the <xref:System.ServiceModel.EndpointAddress.AnonymousUri%2A> when manually copying the URI from an <xref:System.ServiceModel.EndpointAddress> to the URI of either a <xref:System.ServiceModel.EndpointAddress10> or a <xref:System.ServiceModel.EndpointAddressAugust2004>. This must be done because both <xref:System.ServiceModel.EndpointAddress10> and <xref:System.ServiceModel.EndpointAddressAugust2004> have special anonymous values. Users must use these values if the URI being copied is anonymous.  
+ 
+Due to the range of network technologies currently in widespread use (for example, NAT, DHCP, and firewalls), many deployments cannot assign a meaningful global URI to a given endpoint. To allow these *anonymous* endpoints to initiate message exchange patterns and receive replies, the Web Services Addressing specification defines a [URI](http://go.microsoft.com/fwlink/?LinkId=96169) for use by endpoints that cannot have a stable, resolvable URI.  
+ 
+Requests that use this address must provide some mechanism for delivering replies or faults (for example, returning the reply on the same transport connection). This mechanism can be a request/reply transport protocol (for example, HTTP GET or POST). This URI can be used as the destination for reply messages and should not be used as the destination in other circumstances.  
+ 
   
- Due to the range of network technologies currently in widespread use (for example, NAT, DHCP, and firewalls), many deployments cannot assign a meaningful global URI to a given endpoint. To allow these *anonymous* endpoints to initiate message exchange patterns and receive replies, the Web Services Addressing specification defines a [URI](http://go.microsoft.com/fwlink/?LinkId=96169) for use by endpoints that cannot have a stable, resolvable URI.  
-  
- Requests that use this address must provide some mechanism for delivering replies or faults (for example, returning the reply on the same transport connection). This mechanism can be a request/reply transport protocol (for example, HTTP GET or POST). This URI can be used as the destination for reply messages and should not be used as the destination in other circumstances.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#16](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#16)]  
-  
+[!code-csharp[EndpointAddress#16](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -518,15 +518,15 @@
           <see langword="true" /> if the URI of the endpoint is <see cref="P:System.ServiceModel.EndpointAddress.NoneUri" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to check for the <xref:System.ServiceModel.EndpointAddress.NoneUri%2A> when manually copying the URI from an <xref:System.ServiceModel.EndpointAddress> to the URI of either a <xref:System.ServiceModel.EndpointAddress10> or a <xref:System.ServiceModel.EndpointAddressAugust2004>. This must be done because both <xref:System.ServiceModel.EndpointAddress10> and <xref:System.ServiceModel.EndpointAddressAugust2004> have special none URI values. Users must use these values if the URI being copied is none.  
+Use this method to check for the <xref:System.ServiceModel.EndpointAddress.NoneUri%2A> when manually copying the URI from an <xref:System.ServiceModel.EndpointAddress> to the URI of either a <xref:System.ServiceModel.EndpointAddress10> or a <xref:System.ServiceModel.EndpointAddressAugust2004>. This must be done because both <xref:System.ServiceModel.EndpointAddress10> and <xref:System.ServiceModel.EndpointAddressAugust2004> have special none URI values. Users must use these values if the URI being copied is none.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#17](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#17)]  
-  
+[!code-csharp[EndpointAddress#17](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -549,15 +549,15 @@
         <value>A <see cref="T:System.Uri" /> with the value http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/None.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of the URI used to initialize the constructor is the <xref:System.ServiceModel.EndpointAddress.NoneUri%2A>, then <xref:System.ServiceModel.EndpointAddress.IsNone%2A> is set to `true`.  
+If the value of the URI used to initialize the constructor is the <xref:System.ServiceModel.EndpointAddress.NoneUri%2A>, then <xref:System.ServiceModel.EndpointAddress.IsNone%2A> is set to `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#18](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#18)]  
-  
+[!code-csharp[EndpointAddress#18](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#18)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -587,10 +587,10 @@
           <see langword="true" /> if the endpoint addresses are equivalent; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ServiceModel.EndpointAddress.Equals%28System.ServiceModel.EndpointAddress%2CSystem.ServiceModel.EndpointAddress%29?displayProperty=fullName>  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#5](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#5)]  
-  
+[!code-csharp[EndpointAddress#5](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -620,10 +620,10 @@
           <see langword="true" /> if the endpoint addresses are not equivalent; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ServiceModel.EndpointAddress.Compare%28System.ServiceModel.EndpointAddress%2CSystem.ServiceModel.EndpointAddress%29?displayProperty=fullName>  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#22](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#22)]  
-  
+[!code-csharp[EndpointAddress#22](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -650,12 +650,12 @@
         <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> read from the XML dictionary reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to read an endpoint address from a XML dictionary reader.  
-  
- [!code-csharp[EndpointAddress#10](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#10)]  
-  
+The following code shows how to read an endpoint address from a XML dictionary reader.  
+ 
+[!code-csharp[EndpointAddress#10](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,10 +684,10 @@
         <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> read from the XML dictionary reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#25](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#25)]  
-  
+[!code-csharp[EndpointAddress#25](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,12 +716,12 @@
         <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> read from the XML reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to read in an endpoint address from an XML dictionary reader.  
-  
- [!code-csharp[EndpointAddress#12](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#12)]  
-  
+The following code shows how to read in an endpoint address from an XML dictionary reader.  
+ 
+[!code-csharp[EndpointAddress#12](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -752,12 +752,12 @@
         <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> with the qualified name read from the XML dictionary reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to read in an endpoint address from an XML dictionary reader.  
-  
- [!code-csharp[EndpointAddress#11](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#11)]  
-  
+The following code shows how to read in an endpoint address from an XML dictionary reader.  
+ 
+[!code-csharp[EndpointAddress#11](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -790,10 +790,10 @@
         <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> with the qualified name read from the XML reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#26](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#26)]  
-  
+[!code-csharp[EndpointAddress#26](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#26)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -826,10 +826,10 @@
         <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> with the qualified name read from the XML reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#26](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#26)]  
-  
+[!code-csharp[EndpointAddress#26](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#26)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -853,10 +853,10 @@
         <returns>The URI that identifies the endpoint.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#27](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#27)]  
-  
+[!code-csharp[EndpointAddress#27](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -879,15 +879,15 @@
         <value>The <see cref="T:System.Uri" /> for the endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The URI identifies where a message is being sent. To set a URI for an endpoint address, use <xref:System.ServiceModel.EndpointAddressBuilder.Uri%2A>.  
+The URI identifies where a message is being sent. To set a URI for an endpoint address, use <xref:System.ServiceModel.EndpointAddressBuilder.Uri%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#19](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#19)]  
-  
+[!code-csharp[EndpointAddress#19](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#19)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -915,10 +915,10 @@
         <summary>Saves all the child nodes of the node to the XML dictionary writer specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#29](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#29)]  
-  
+[!code-csharp[EndpointAddress#29](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#29)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -948,10 +948,10 @@
         <summary>Saves all the child nodes of the node to the XML writer specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#30](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#30)]  
-  
+[!code-csharp[EndpointAddress#30](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#30)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -981,10 +981,10 @@
         <summary>Saves the current endpoint address of a specified version to a specified XML dictionary writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#31](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#31)]  
-  
+[!code-csharp[EndpointAddress#31](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#31)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1014,10 +1014,10 @@
         <summary>Saves the current endpoint address of a specified version to a specified XML writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#32](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#32)]  
-  
+[!code-csharp[EndpointAddress#32](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#32)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1051,10 +1051,10 @@
         <summary>Saves the current endpoint address of a specified version to an XML dictionary writer with a specified namespace and local name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#33](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#33)]  
-  
+[!code-csharp[EndpointAddress#33](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#33)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1088,10 +1088,10 @@
         <summary>Saves the current endpoint address of a specified version to an XML writer with a specified namespace and local name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddress#33](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#33)]  
-  
+[!code-csharp[EndpointAddress#33](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#33)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

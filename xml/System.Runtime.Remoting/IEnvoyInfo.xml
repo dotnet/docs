@@ -17,12 +17,12 @@
     <summary>Provides envoy information.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this interface to provide custom envoy information that is carried along with the <xref:System.Runtime.Remoting.ObjRef> objects.  
-  
- Classes that implement the current interface hold a serialized chain of message sinks that is regenerated when a proxy is created to represent the object. Such functionality is used for <xref:System.Runtime.Remoting.Contexts.Context> bound object types only, and represents the groups of objects that provide run-time services such as transactions.  
-  
+Use this interface to provide custom envoy information that is carried along with the <xref:System.Runtime.Remoting.ObjRef> objects.  
+ 
+Classes that implement the current interface hold a serialized chain of message sinks that is regenerated when a proxy is created to represent the object. Such functionality is used for <xref:System.Runtime.Remoting.Contexts.Context> bound object types only, and represents the groups of objects that provide run-time services such as transactions.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -35,26 +35,26 @@
     <summary>Specifies the value of the <see cref="T:System.Runtime.InteropServices.CharSet" /> enumeration. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Apply the <xref:System.Runtime.InteropServices.DefaultCharSetAttribute> attribute at the assembly level or module level to set the <xref:System.Runtime.InteropServices.DllImportAttribute> value for any call to <xref:System.Runtime.InteropServices.DllImportAttribute> that does not include a <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> named argument specified by the user.  
-  
- A <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> named argument specified by the user overrides the setting of <xref:System.Runtime.InteropServices.DefaultCharSetAttribute>.  
-  
+Apply the <xref:System.Runtime.InteropServices.DefaultCharSetAttribute> attribute at the assembly level or module level to set the <xref:System.Runtime.InteropServices.DllImportAttribute> value for any call to <xref:System.Runtime.InteropServices.DllImportAttribute> that does not include a <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> named argument specified by the user.  
+ 
+A <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> named argument specified by the user overrides the setting of <xref:System.Runtime.InteropServices.DefaultCharSetAttribute>.  
+ 
 > [!NOTE]
 >  Only the C# and Visual Basic compilers recognize this attribute; it is not used by the C++ compiler.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example changes the default <xref:System.Runtime.InteropServices.CharSet> value from <xref:System.Runtime.InteropServices.CharSet> to <xref:System.Runtime.InteropServices.CharSet>.  
-  
- `using System.Runtime.InteropServices;`  
-  
- `[module: DefaultCharSet(CharSet.Auto)]`  
-  
- `// …`  
-  
+The following code example changes the default <xref:System.Runtime.InteropServices.CharSet> value from <xref:System.Runtime.InteropServices.CharSet> to <xref:System.Runtime.InteropServices.CharSet>.  
+ 
+`using System.Runtime.InteropServices;`  
+ 
+`[module: DefaultCharSet(CharSet.Auto)]`  
+ 
+`// …`  
+ 
  ]]></format>
     </remarks>
   </Docs>

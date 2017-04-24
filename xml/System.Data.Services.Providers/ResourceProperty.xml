@@ -19,20 +19,20 @@
     <summary>Provides a type to describe a property on a resource.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following Unicode characters are allowed in XML names but not in identifiers in EDM:  
-  
+The following Unicode characters are allowed in XML names but not in identifiers in EDM:  
+ 
 1.  U+00B7 '•'  
-  
+ 
 2.  U+0387 '·'  
-  
+ 
 3.  U+06DE '۞'  
-  
+ 
 4.  U+212E '℮'  
-  
- If your property names can contain these characters, make sure that they are escaped properly in your provider implementation. The <xref:System.Xml.XmlConvert.EncodeName%2A> method will not properly escape these invalid EDM characters."  
-  
+ 
+If your property names can contain these characters, make sure that they are escaped properly in your provider implementation. The <xref:System.Xml.XmlConvert.EncodeName%2A> method will not properly escape these invalid EDM characters."  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,20 +59,20 @@
         <summary>Initializes a new <see cref="T:System.Data.Services.Providers.ResourceProperty" /> for an open property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following Unicode characters are allowed in XML names but not in identifiers in EDM:  
-  
+The following Unicode characters are allowed in XML names but not in identifiers in EDM:  
+ 
 1.  U+00B7 '•'  
-  
+ 
 2.  U+0387 '·'  
-  
+ 
 3.  U+06DE '۞'  
-  
+ 
 4.  U+212E '℮'  
-  
- If your property names can contain these characters, make sure that they are escaped properly in your provider implementation. The <xref:System.Xml.XmlConvert.EncodeName%2A> method will not properly escape these invalid EDM characters."  
-  
+ 
+If your property names can contain these characters, make sure that they are escaped properly in your provider implementation. The <xref:System.Xml.XmlConvert.EncodeName%2A> method will not properly escape these invalid EDM characters."  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,12 +95,12 @@
           <see langword="true" /> when the property can be accessed through reflection; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Data.Services.Providers.ResourceProperty.CanReflectOnInstanceTypeProperty%2A> property returns `true`, the data service runtime uses reflection to get the property information on the declaring.<xref:System.Data.Services.Providers.ResourceType.InstanceType%2A> of the <xref:System.Data.Services.Providers.ResourceType>.  
-  
- When the <xref:System.Data.Services.Providers.ResourceProperty.CanReflectOnInstanceTypeProperty%2A> property returns `false`, the data service runtime uses the <xref:System.Data.Services.Providers.IDataServiceQueryProvider> interface to get or set this property value.  
-  
+When the <xref:System.Data.Services.Providers.ResourceProperty.CanReflectOnInstanceTypeProperty%2A> property returns `true`, the data service runtime uses reflection to get the property information on the declaring.<xref:System.Data.Services.Providers.ResourceType.InstanceType%2A> of the <xref:System.Data.Services.Providers.ResourceType>.  
+ 
+When the <xref:System.Data.Services.Providers.ResourceProperty.CanReflectOnInstanceTypeProperty%2A> property returns `false`, the data service runtime uses the <xref:System.Data.Services.Providers.IDataServiceQueryProvider> interface to get or set this property value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
         <value>String value that indicates MIME type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Null MIME type is not specified.  
-  
+Null MIME type is not specified.  
+ 
  ]]></format>
         </remarks>
       </Docs>

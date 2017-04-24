@@ -13,16 +13,16 @@
     <summary>Describes the unit type associated with the width or height of a <see cref="T:System.Windows.FigureLength" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, when the user clicks on the <xref:System.Windows.Documents.Figure>, the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure> decreases. Below is the XAML for the sample.  
-  
- [!code-xml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
-  
- Below is the code used to decrease the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure> using the Pixel to specify the unit type.  
-  
- [!code-csharp[FlowMiscSnippets_snip#FigureLengthCodeBehindExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml.cs#figurelengthcodebehindexamplewholepage)]  
-  
+In the following example, when the user clicks on the <xref:System.Windows.Documents.Figure>, the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure> decreases. Below is the XAML for the sample.  
+ 
+[!code-xml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
+ 
+Below is the code used to decrease the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure> using the Pixel to specify the unit type.  
+ 
+[!code-csharp[FlowMiscSnippets_snip#FigureLengthCodeBehindExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml.cs#figurelengthcodebehindexamplewholepage)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -137,10 +137,10 @@
         <returns>The string that contains the label.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name property can be thought of as the string of text that a user would use to explain which control is being referred to. It is important to have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
-  
+The name property can be thought of as the string of text that a user would use to explain which control is being referred to. It is important to have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,18 +166,18 @@
         <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If one of the following cases occurs, this method returns the current <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> object.  
-  
+If one of the following cases occurs, this method returns the current <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> object.  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.MenuItem> that is associated with this <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> has child <xref:System.Windows.Controls.MenuItem> objects.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.MenuItem> that is associated with this <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> does not have child <xref:System.Windows.Controls.MenuItem> objects.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.MenuItem> that is associated with this <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> has its checkable property set to `true`.  
-  
- If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
-  
+ 
+If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

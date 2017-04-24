@@ -24,21 +24,21 @@
     <summary>Accesses the managed version of the <see cref="T:System.Security.Cryptography.Rijndael" /> algorithm. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This algorithm supports key lengths of 128, 192, or 256 bits; defaulting to 256 bits. This algorithm supports block sizes of 128, 192, or 256 bits; defaulting to 128 bits (<xref:System.Security.Cryptography.Aes>-compatible).  
+This algorithm supports key lengths of 128, 192, or 256 bits; defaulting to 256 bits. This algorithm supports block sizes of 128, 192, or 256 bits; defaulting to 128 bits (<xref:System.Security.Cryptography.Aes>-compatible).  
+ 
+The <xref:System.Security.Cryptography.Rijndael> algorithm is the predecessor of <xref:System.Security.Cryptography.Aes>. You should use the <xref:System.Security.Cryptography.Aes> class instead of <xref:System.Security.Cryptography.RijndaelManaged>. For more information, see the entry [The Differences Between Rijndael and AES](http://go.microsoft.com/fwlink/?LinkId=200932) in the .NET Security blog.  
+ 
   
- The <xref:System.Security.Cryptography.Rijndael> algorithm is the predecessor of <xref:System.Security.Cryptography.Aes>. You should use the <xref:System.Security.Cryptography.Aes> class instead of <xref:System.Security.Cryptography.RijndaelManaged>. For more information, see the entry [The Differences Between Rijndael and AES](http://go.microsoft.com/fwlink/?LinkId=200932) in the .NET Security blog.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to encrypt and decrypt sample data using the `RijndaelManaged` class.  
-  
- [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
- [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
- [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
-  
+The following example demonstrates how to encrypt and decrypt sample data using the `RijndaelManaged` class.  
+ 
+[!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+[!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+[!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,14 +62,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RijndaelManaged" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new instance of the `RijndaelManaged` class.  
-  
- [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
- [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
- [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
-  
+The following example creates a new instance of the `RijndaelManaged` class.  
+ 
+[!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+[!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+[!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This class is not compliant with the FIPS algorithm.</exception>
@@ -103,21 +103,21 @@
         <returns>A symmetric <see cref="T:System.Security.Cryptography.Rijndael" /> decryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.RijndaelManaged.CreateEncryptor%2A> overload with the same signature.  
+This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.RijndaelManaged.CreateEncryptor%2A> overload with the same signature.  
+ 
+The `rgbkey` size must be 128, 192, or 256 bits.  
+ 
   
- The `rgbkey` size must be 128, 192, or 256 bits.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> method to decrypt messages encoded with the same signature parameter.  
-  
- [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
- [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
- [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> method to decrypt messages encoded with the same signature parameter.  
+ 
+[!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+[!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+[!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rgbKey" /> parameter is <see langword="null" />.  
@@ -156,21 +156,21 @@
         <returns>A symmetric <see cref="T:System.Security.Cryptography.Rijndael" /> encryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> overload with the same signature to decrypt the result of this method.  
+Use the <xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> overload with the same signature to decrypt the result of this method.  
+ 
+The `rgbkey` size must be 128, 192, or 256 bits.  
+ 
   
- The `rgbkey` size must be 128, 192, or 256 bits.  
-  
-   
-  
+ 
 ## Examples  
- The following code examples demonstrates how to encrypt a message using the `CreateEncryptor` method.  
-  
- [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
- [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
- [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
-  
+The following code examples demonstrates how to encrypt a message using the `CreateEncryptor` method.  
+ 
+[!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+[!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+[!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rgbKey" /> parameter is <see langword="null" />.  
@@ -203,17 +203,17 @@
         <summary>Generates a random initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />) to be used for the algorithm.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to generate a random IV when none is specified.  
+Use this method to generate a random IV when none is specified.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
- [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
- [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
-  
+[!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+[!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+[!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,17 +240,17 @@
         <summary>Generates a random <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> to be used for the algorithm.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to generate a random key when none is specified.  
+Use this method to generate a random key when none is specified.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
- [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
- [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
-  
+[!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+[!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+[!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

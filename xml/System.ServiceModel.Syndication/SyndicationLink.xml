@@ -18,18 +18,18 @@
     <summary>Represents a link within a syndication feed or item.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Syndication.SyndicationLink> can be added to a <xref:System.ServiceModel.Syndication.SyndicationFeed> or <xref:System.ServiceModel.Syndication.SyndicationItem>. When serialized to Atom 1.0 a <xref:System.ServiceModel.Syndication.SyndicationLink> is written out as a `<link>` element, with the <xref:System.ServiceModel.Syndication.SyndicationLink> properties written out as attributes of the `<link>` element. When serialized to RSS 2.0, the first <xref:System.ServiceModel.Syndication.SyndicationLink> with a relationship value of ‘alternate’ is written out as a `<link>` element. Any additional links are written out as a `<a10:link>` elements.  
+<xref:System.ServiceModel.Syndication.SyndicationLink> can be added to a <xref:System.ServiceModel.Syndication.SyndicationFeed> or <xref:System.ServiceModel.Syndication.SyndicationItem>. When serialized to Atom 1.0 a <xref:System.ServiceModel.Syndication.SyndicationLink> is written out as a `<link>` element, with the <xref:System.ServiceModel.Syndication.SyndicationLink> properties written out as attributes of the `<link>` element. When serialized to RSS 2.0, the first <xref:System.ServiceModel.Syndication.SyndicationLink> with a relationship value of ‘alternate’ is written out as a `<link>` element. Any additional links are written out as a `<a10:link>` elements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.ServiceModel.Syndication.SyndicationLink> class.  
-  
- [!code-csharp[SyndicationLink#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#0)]
- [!code-vb[SyndicationLink#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#0)]  
-  
+The following example shows how to use the <xref:System.ServiceModel.Syndication.SyndicationLink> class.  
+ 
+[!code-csharp[SyndicationLink#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#0)]
+[!code-vb[SyndicationLink#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,13 +96,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> class with the specified <see cref="T:System.Uri" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to call this constructor.  
-  
- [!code-csharp[SyndicationLink#1](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#1)]
- [!code-vb[SyndicationLink#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#1)]  
-  
+The following example shows how to call this constructor.  
+ 
+[!code-csharp[SyndicationLink#1](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#1)]
+[!code-vb[SyndicationLink#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,28 +136,28 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> class with the specified <see cref="T:System.Uri" />, relation type, title, media type, and length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Well-known relationship types include:  
-  
+Well-known relationship types include:  
+ 
 -   `alternate` - The link identifies an alternate version of the resource described by the containing Feed or Item.  
-  
+ 
 -   `related` - The link identifies a resource related to the containing Feed or Item.  
-  
+ 
 -   `self` - The link identifies a resource equivalent to the containing Feed or Item.  
-  
+ 
 -   `enclosure` - The link identifies a related resource that is potentially large in size and might require special handling. This link relation is often used when podcasts or audio files are distributed in a Feed.  
-  
+ 
 -   `via` - The link identifies a resource that is the source of the information provided in the containing Feed or Item.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to call this constructor.  
-  
- [!code-csharp[SyndicationLink#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#0)]
- [!code-vb[SyndicationLink#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#0)]  
-  
+The following example shows how to call this constructor.  
+ 
+[!code-csharp[SyndicationLink#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#0)]
+[!code-vb[SyndicationLink#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,18 +183,18 @@
         <value>A dictionary that contains a collection of attribute extensions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Syndication.SyndicationLink.AttributeExtensions%2A> allows you to add custom attributes to the <xref:System.ServiceModel.Syndication.SyndicationLink>. When serialized to Atom 1.0, the custom attributes appear within the `<link>` element. When serialized to RSS 2.0, the custom attributes appear in the `<a10:link>` element. Any valid XML attribute can be added.  
+<xref:System.ServiceModel.Syndication.SyndicationLink.AttributeExtensions%2A> allows you to add custom attributes to the <xref:System.ServiceModel.Syndication.SyndicationLink>. When serialized to Atom 1.0, the custom attributes appear within the `<link>` element. When serialized to RSS 2.0, the custom attributes appear in the `<a10:link>` element. Any valid XML attribute can be added.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to add an attribute extension to a syndication link.  
-  
- [!code-csharp[LooselyTypedExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs#4)]
- [!code-vb[LooselyTypedExtensions#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb#4)]  
-  
+The following code shows how to add an attribute extension to a syndication link.  
+ 
+[!code-csharp[LooselyTypedExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs#4)]
+[!code-vb[LooselyTypedExtensions#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,12 +220,12 @@
         <value>A <see cref="T:System.Uri" /> instance that contains the base URI of the syndication link.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to set the base URI of a syndication link.  
-  
-  
-  
+The following code shows how to set the base URI of a syndication link.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,12 +252,12 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to create a clone of a syndication link.  
-  
-  
-  
+The following code shows how to create a clone of a syndication link.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,13 +287,13 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an alternate link.  
-  
- [!code-csharp[SyndicationLink#4](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#4)]
- [!code-vb[SyndicationLink#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#4)]  
-  
+The following example shows how to create an alternate link.  
+ 
+[!code-csharp[SyndicationLink#4](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#4)]
+[!code-vb[SyndicationLink#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,13 +325,13 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an alternate link.  
-  
- [!code-csharp[SyndicationLink#5](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#5)]
- [!code-vb[SyndicationLink#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#5)]  
-  
+The following example shows how to create an alternate link.  
+ 
+[!code-csharp[SyndicationLink#5](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#5)]
+[!code-vb[SyndicationLink#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,18 +365,18 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `enclosure`.  
+This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `enclosure`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a media enclosure link.  
-  
- [!code-csharp[SyndicationLink#6](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#6)]
- [!code-vb[SyndicationLink#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#6)]  
-  
+The following example shows how to create a media enclosure link.  
+ 
+[!code-csharp[SyndicationLink#6](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#6)]
+[!code-vb[SyndicationLink#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,13 +406,13 @@
         <returns>A <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a self link.  
-  
- [!code-csharp[SyndicationLink#7](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#7)]
- [!code-vb[SyndicationLink#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#7)]  
-  
+The following example shows how to create a self link.  
+ 
+[!code-csharp[SyndicationLink#7](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#7)]
+[!code-vb[SyndicationLink#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -444,13 +444,13 @@
         <returns>A <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a self link.  
-  
- [!code-csharp[SyndicationLink#8](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#8)]
- [!code-vb[SyndicationLink#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#8)]  
-  
+The following example shows how to create a self link.  
+ 
+[!code-csharp[SyndicationLink#8](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#8)]
+[!code-vb[SyndicationLink#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -476,18 +476,18 @@
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" /> that contains the element extensions for the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to add an element extension to a syndication link.  
-  
- [!code-csharp[LooselyTypedExtensions#5](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs#5)]
- [!code-vb[LooselyTypedExtensions#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb#5)]  
-  
+The following code shows how to add an element extension to a syndication link.  
+ 
+[!code-csharp[LooselyTypedExtensions#5](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs#5)]
+[!code-vb[LooselyTypedExtensions#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -514,12 +514,12 @@
         <returns>A <see cref="T:System.Uri" /> instance that contains the absolute URI of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to get the absolute URI of a syndication link.  
-  
-  
-  
+The following code shows how to get the absolute URI of a syndication link.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -545,27 +545,27 @@
         <value>The length of the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0 the <xref:System.ServiceModel.Syndication.SyndicationLink.Length%2A> property is written as a `length` attribute in the `<link>` element.  
+When serialized to Atom 1.0 the <xref:System.ServiceModel.Syndication.SyndicationLink.Length%2A> property is written as a `length` attribute in the `<link>` element.  
+ 
+When serialized to RSS 2.0 this value is written as the `length` attribute of the `<a10:link>` element.  
+ 
   
- When serialized to RSS 2.0 this value is written as the `length` attribute of the `<a10:link>` element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the length of a syndication link.  
-  
-  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Length%2A> property is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Length%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
-  
+The following code shows how to set the length of a syndication link.  
+ 
+ 
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Length%2A> property is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Length%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -591,25 +591,25 @@
         <value>The media type of the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0 this value is written as a `type` attribute in the `<link>` element. When serialized to RSS 2.0 this value is written as the `type` attribute in the `<a10:link>` element.  
+When serialized to Atom 1.0 this value is written as a `type` attribute in the `<link>` element. When serialized to RSS 2.0 this value is written as the `type` attribute in the `<a10:link>` element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set the media type on a syndication link.  
-  
-  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.MediaType%2A> property is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.MediaType%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
-  
+The following code shows how to set the media type on a syndication link.  
+ 
+ 
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.MediaType%2A> property is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.MediaType%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -635,37 +635,37 @@
         <value>The relationship type of the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Well-known relationship types include:  
-  
+Well-known relationship types include:  
+ 
 -   `alternate` - The link identifies an alternate version of the resource described by the containing Feed or Item.  
-  
+ 
 -   `related` - The link identifies a resource related to the containing Feed or Item.  
-  
+ 
 -   `self` - The link identifies a resource equivalent to the containing Feed or Item.  
-  
+ 
 -   `enclosure` - The link identifies a related resource that is potentially large in size and might require special handling. This link relation is often used when podcasts or audio files are distributed in a Feed.  
-  
+ 
 -   `via` - The link identifies a resource that is the source of the information provided in the containing Feed or Item.  
+ 
+When serialized to Atom 1.0 this value is written out as the `rel` attribute of the `<link>` element. When serialized to RSS 2.0, this value is written out as the `rel` attribute in the `<a10:link>` element.  
+ 
   
- When serialized to Atom 1.0 this value is written out as the `rel` attribute of the `<link>` element. When serialized to RSS 2.0, this value is written out as the `rel` attribute in the `<a10:link>` element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the relationship type of a syndication link.  
-  
-  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> property is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
-  
+The following code shows how to set the relationship type of a syndication link.  
+ 
+ 
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> property is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -691,28 +691,28 @@
         <value>The title of the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0 this value is written out as the `title` attribute in the `<link>` element.  
+When serialized to Atom 1.0 this value is written out as the `title` attribute in the `<link>` element.  
+ 
+When serialized to RSS 2.0 the title is written out as the `title` attribute in the `<a10:link>` element.  
+ 
   
- When serialized to RSS 2.0 the title is written out as the `title` attribute in the `<a10:link>` element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the title of a syndication link.  
-  
- [!code-csharp[SyndicationLink#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#0)]
- [!code-vb[SyndicationLink#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#0)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Title%2A> property is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Title%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
-  
+The following code shows how to set the title of a syndication link.  
+ 
+[!code-csharp[SyndicationLink#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationlink/cs/program.cs#0)]
+[!code-vb[SyndicationLink#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationlink/vb/snippets.vb#0)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Title%2A> property is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Title%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -748,10 +748,10 @@
         <returns>A value that specifies whether the attribute extension was parsed successfully.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<link`> element. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized attribute extensions.  
-  
+Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<link`> element. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized attribute extensions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
@@ -784,10 +784,10 @@
         <returns>A value that specifies whether the element extension was parsed successfully.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized element extensions.  
-  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized element extensions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
@@ -814,27 +814,27 @@
         <value>A <see cref="T:System.Uri" /> instance that contains the URI for the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0 this value is written out as the `href` attribute in the `<link>` element.  
+When serialized to Atom 1.0 this value is written out as the `href` attribute in the `<link>` element.  
+ 
+When serialized to RSS 2.0, this value is written out as the `href` attribute in the `<a10:link>` element.  
+ 
   
- When serialized to RSS 2.0, this value is written out as the `href` attribute in the `<a10:link>` element.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set the URI of a syndication link.  
-  
-  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Uri%2A> property is serialized to Atom 1.0.  
-  
- [!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Uri%2A> property is serialized to RSS 2.0.  
-  
- [!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
-  
+The following code shows how to set the URI of a syndication link.  
+ 
+ 
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Uri%2A> property is serialized to Atom 1.0.  
+ 
+[!code-xml[SyndicationLink#2](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/atom.xml#2)]  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationLink.Uri%2A> property is serialized to RSS 2.0.  
+ 
+[!code-xml[SyndicationLink#3](~/samples/snippets/xml/VS_Snippets_CFX/syndicationlink/XML/rss.xml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -865,10 +865,10 @@
         <summary>Writes the attribute extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<link>` element. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized attribute extensions.  
-  
+Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<link>` element. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized attribute extensions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -899,10 +899,10 @@
         <summary>Writes the element extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized element extensions.  
-  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized element extensions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -916,10 +916,10 @@
         <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `alternate`.  
-  
+This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `alternate`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -933,10 +933,10 @@
         <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> with the relationship type set to <see langword="self" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `self`.  
-  
+This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `self`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

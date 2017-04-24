@@ -75,10 +75,10 @@
         <summary>Exits any secondary user interface (UI) mode for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to setting the <xref:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.SecondaryUIMode%2A> property to <xref:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.NotSecondaryUI>.  
-  
+This method is equivalent to setting the <xref:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.SecondaryUIMode%2A> property to <xref:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.NotSecondaryUI>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <returns>The postback value (or empty string) of the selected item in the selection list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is overridden in child classes.  
-  
+This method is overridden in child classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <summary>Returns a constant that defines a mode where no secondary user interface (UI) is displayed. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way that a Windows-based application shows dialog boxes. For more information about secondary user interfaces, see the [Adapter Sets Functionality](http://msdn.microsoft.com/en-us/903adf84-e45c-407e-8b55-98796c084ff7) documentation.  
-  
+The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way that a Windows-based application shows dialog boxes. For more information about secondary user interfaces, see the [Adapter Sets Functionality](http://msdn.microsoft.com/en-us/903adf84-e45c-407e-8b55-98796c084ff7) documentation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -231,10 +231,10 @@
         <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> class, this method renders all the children of the control.  
-  
+For the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> class, this method renders all the children of the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <summary>Renders the opening tag of a link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method automatically checks for the type of link and renders the appropriate markup language. The specified target can refer to another URL or to a form on the same page.  
-  
+This method automatically checks for the type of link and renders the appropriate markup language. The specified target can refer to another URL or to a form on the same page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,10 +299,10 @@
         <summary>Renders the end tag of a link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified target can refer to another URL or to a form on the same page.  
-  
+The specified target can refer to another URL or to a form on the same page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -339,10 +339,10 @@
         <summary>Renders an entire link, with the specified text inside. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed.  
-  
+If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -377,10 +377,10 @@
         <summary>Renders a postback event with the control as a target. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed.  
-  
+If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,17 +417,17 @@
         <summary>Renders a postback event with the control as a target. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload sets the default value for the postback type to <xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>. If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed. The following table shows the postback types used for the `postBackType` argument.  
-  
+This overload sets the default value for the postback type to <xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>. If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed. The following table shows the postback types used for the `postBackType` argument.  
+ 
 |Type|Description|  
 |----------|-----------------|  
 |<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains a name and an encoded argument.|  
 |<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains the control used to submit the form, typically an _EVENTTARGET and a command.|  
 |<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains a name and a variable reference.|  
 |<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains a name and an argument.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -496,10 +496,10 @@
         <value>The secondary UI mode for the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way as a dialog box in a Windows-based application. For more information about secondary user interfaces, see [Adapter Sets Functionality](http://msdn.microsoft.com/en-us/903adf84-e45c-407e-8b55-98796c084ff7).  
-  
+The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way as a dialog box in a Windows-based application. For more information about secondary user interfaces, see [Adapter Sets Functionality](http://msdn.microsoft.com/en-us/903adf84-e45c-407e-8b55-98796c084ff7).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,11 +14,11 @@
     <summary>Interacts with the parser to build a <see cref="T:System.Web.UI.WebControls.HyperLink" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[Classic HyperLink.Text Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.Text Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HyperLink.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.Text Example/VB/sourcevb.aspx#1)]  -->  
-  
+<!-- TODO: review snippet reference [!code-csharp[Classic HyperLink.Text Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.Text Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic HyperLink.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.Text Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -59,10 +59,10 @@
         <returns>Overloaded to always returns <see langword="false" /> to indicate that white spaces are not allowed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> property to ignore white space in the <xref:System.Web.UI.WebControls.HyperLink> control.  
-  
+This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> property to ignore white space in the <xref:System.Web.UI.WebControls.HyperLink> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

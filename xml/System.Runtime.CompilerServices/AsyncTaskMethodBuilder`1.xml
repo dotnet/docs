@@ -28,10 +28,10 @@
     <summary>Represents a builder for asynchronous methods that returns a task and provides a parameter for the result.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type and its members are intended for use by the compiler.  
-  
+This type and its members are intended for use by the compiler.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -163,10 +163,10 @@
         <returns>A new instance of the builder.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type and its members are intended for use by the compiler.  
-  
+This type and its members are intended for use by the compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <summary>Marks the task as failed and binds the specified exception to the task.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type and its members are intended for use by the compiler.  
-  
+This type and its members are intended for use by the compiler.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -242,10 +242,10 @@
         <summary>Marks the task as successfully completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type and its members are intended for use by the compiler.  
-  
+This type and its members are intended for use by the compiler.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The task has already completed.</exception>
@@ -361,10 +361,10 @@
         <value>The task for this builder.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type and its members are intended for use by the compiler.  
-  
+This type and its members are intended for use by the compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>

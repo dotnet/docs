@@ -14,35 +14,35 @@
     <summary>Provides data for the <see cref="E:System.IO.Log.IRecordSequence.TailPinned" /> event. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Log.IRecordSequence.TailPinned> event can be fired when the record sequence has run out of space. When this event is fired, the tail of the sequence (that is, the base sequence number) is moved forward to free up space.  
+The <xref:System.IO.Log.IRecordSequence.TailPinned> event can be fired when the record sequence has run out of space. When this event is fired, the tail of the sequence (that is, the base sequence number) is moved forward to free up space.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free up space in a log sequence.  
-  
+This example shows how to use the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free up space in a log sequence.  
+ 
 ```  
 recordSequence.RetryAppend = true;  
 recordSequence.TailPinned += new EventHandler<TailPinnedEventArgs>(HandleTailPinned);  
-  
+ 
 void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)  
 {  
-   // tailPinnedEventArgs.TargetSequenceNumber is the target   
-   // sequence number to free up space to.    
-   // However, this sequence number is not necessarily valid.  We have  
-   // to use this sequence number as a starting point for finding a  
-   // valid point within the log to advance toward. You need to  
-   // identify a record with a sequence number equal to, or greater  
-   // than TargetSequenceNumber; let's call this   
-   // realTargetSequenceNumber. Once found, move the base  
-  
-   recordSequence.AdvanceBaseSequenceNumber(realTargetSequenceNumber);  
-  
+  // tailPinnedEventArgs.TargetSequenceNumber is the target   
+  // sequence number to free up space to.    
+  // However, this sequence number is not necessarily valid.  We have  
+  // to use this sequence number as a starting point for finding a  
+  // valid point within the log to advance toward. You need to  
+  // identify a record with a sequence number equal to, or greater  
+  // than TargetSequenceNumber; let's call this   
+  // realTargetSequenceNumber. Once found, move the base  
+ 
+  recordSequence.AdvanceBaseSequenceNumber(realTargetSequenceNumber);  
+ 
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

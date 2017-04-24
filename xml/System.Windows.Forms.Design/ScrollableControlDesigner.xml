@@ -14,15 +14,15 @@
     <summary>Base designer class for extending the design mode behavior of a <see cref="T:System.Windows.Forms.Control" /> which should receive scroll messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.Design.ScrollableControlDesigner> provides a base class for designers of controls that respond to scroll messages. In addition to the methods and functionality inherited from the <xref:System.Windows.Forms.Design.ParentControlDesigner>, <xref:System.Windows.Forms.Design.ControlDesigner>, and <xref:System.ComponentModel.Design.ComponentDesigner> classes, <xref:System.Windows.Forms.Design.ScrollableControlDesigner> provides a <xref:System.Windows.Forms.Control.WndProc%2A> method override that passes WM_HSCROLL and WM_VSCROLL messages to the control at design time.  
-  
+<xref:System.Windows.Forms.Design.ScrollableControlDesigner> provides a base class for designers of controls that respond to scroll messages. In addition to the methods and functionality inherited from the <xref:System.Windows.Forms.Design.ParentControlDesigner>, <xref:System.Windows.Forms.Design.ControlDesigner>, and <xref:System.ComponentModel.Design.ComponentDesigner> classes, <xref:System.Windows.Forms.Design.ScrollableControlDesigner> provides a <xref:System.Windows.Forms.Control.WndProc%2A> method override that passes WM_HSCROLL and WM_VSCROLL messages to the control at design time.  
+ 
 > [!NOTE]
 >  If a form has its <xref:System.Windows.Forms.Form.AutoScroll%2A> property set to active, the scroll bars are always active in the design-time environment.  
-  
- You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design time behavior, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
-  
+ 
+You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design time behavior, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,13 +64,13 @@
           <see langword="true" /> if a click at the specified point is to be handled by the control; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.ScrollableControlDesigner.GetHitTest%2A> method determines whether a click at the specified point should be passed to the control, while the control is in design mode. You can override and implement this method to enable your control to receive clicks in the design-time environment.  
-  
+The <xref:System.Windows.Forms.Design.ScrollableControlDesigner.GetHitTest%2A> method determines whether a click at the specified point should be passed to the control, while the control is in design mode. You can override and implement this method to enable your control to receive clicks in the design-time environment.  
+ 
 > [!NOTE]
 >  You can pass a point in screen coordinates to the <xref:System.Windows.Forms.Control.PointToClient%2A> method of the <xref:System.Windows.Forms.Control> class to obtain the coordinates of the point relative to the upper-left corner of the control.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <summary>Processes Windows messages and passes WM_HSCROLL and WM_VSCROLL messages to the control at design time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This override of the <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> method passes any WM_HSCROLL and WM_VSCROLL messages to the control at design time. All messages are first passed to the base <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> method.  
-  
+This override of the <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> method passes any WM_HSCROLL and WM_VSCROLL messages to the control at design time. All messages are first passed to the base <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

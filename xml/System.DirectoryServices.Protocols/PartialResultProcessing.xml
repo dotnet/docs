@@ -13,14 +13,14 @@
     <summary>The <see cref="T:System.DirectoryServices.Protocols.PartialResultProcessing" /> enumeration specifies the required type of partial results processing.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An application performing an asynchronous operation can use the <xref:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest%2A> method, <xref:System.DirectoryServices.Protocols.LdapConnection.EndSendRequest%2A> method, and (optionally) the <xref:System.AsyncCallback> delegate in the standard .NET style.  
-  
- An application retrieving partial results can call the <xref:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest%2A> and pass either ReturnPartialResults or ReturnPartialResultsAndNotifyCallback as the `partialMode` parameter.  
-  
- In most scenarios, use NoPartialResultSupport for better performance and scalability. The use of ReturnPartialResults or ReturnPartialResultsAndNotifyCallback is only recommended in the scenario where the retrieval of partial results is desired. For example, when performing a search with the <xref:System.DirectoryServices.Protocols.DirectoryNotificationControl> specified, the search results are returned only when changes are made to that object. The search never completes and partial results are returned.  
-  
+An application performing an asynchronous operation can use the <xref:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest%2A> method, <xref:System.DirectoryServices.Protocols.LdapConnection.EndSendRequest%2A> method, and (optionally) the <xref:System.AsyncCallback> delegate in the standard .NET style.  
+ 
+An application retrieving partial results can call the <xref:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest%2A> and pass either ReturnPartialResults or ReturnPartialResultsAndNotifyCallback as the `partialMode` parameter.  
+ 
+In most scenarios, use NoPartialResultSupport for better performance and scalability. The use of ReturnPartialResults or ReturnPartialResultsAndNotifyCallback is only recommended in the scenario where the retrieval of partial results is desired. For example, when performing a search with the <xref:System.DirectoryServices.Protocols.DirectoryNotificationControl> specified, the search results are returned only when changes are made to that object. The search never completes and partial results are returned.  
+ 
  ]]></format>
     </remarks>
   </Docs>

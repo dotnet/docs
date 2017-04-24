@@ -19,10 +19,10 @@
     <summary>Provides data for the <see cref="E:System.Net.WebClient.UploadProgressChanged" /> event of a <see cref="T:System.Net.WebClient" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class are passed to the <xref:System.Net.UploadProgressChangedEventHandler>.  
-  
+Instances of this class are passed to the <xref:System.Net.UploadProgressChangedEventHandler>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,12 +49,12 @@
         <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
-  
- To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
-  
+Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
+ 
+To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,12 +81,12 @@
         <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
-  
- To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
-  
+Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
+ 
+To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,14 +113,14 @@
         <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes that will be received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine the number of bytes already received, use the <xref:System.Net.DownloadProgressChangedEventArgs.BytesReceived%2A> property.  
-  
- Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
-  
- To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
-  
+To determine the number of bytes already received, use the <xref:System.Net.DownloadProgressChangedEventArgs.BytesReceived%2A> property.  
+ 
+Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
+ 
+To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,14 +147,14 @@
         <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes that will be sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine the number of bytes already sent, use the <xref:System.Net.UploadProgressChangedEventArgs.BytesSent%2A> property.  
-  
- Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
-  
- To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
-  
+To determine the number of bytes already sent, use the <xref:System.Net.UploadProgressChangedEventArgs.BytesSent%2A> property.  
+ 
+Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
+ 
+To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
+ 
  ]]></format>
         </remarks>
       </Docs>

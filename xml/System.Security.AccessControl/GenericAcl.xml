@@ -65,10 +65,10 @@
         <summary>The revision level of the current <see cref="T:System.Security.AccessControl.GenericAcl" />. This value is returned by the <see cref="P:System.Security.AccessControl.GenericAcl.Revision" /> property for Access Control Lists (ACLs) that are not associated with Directory Services objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The revision level cannot be changed after an instance of the <xref:System.Security.AccessControl.GenericAcl> class has been created.  
-  
+The revision level cannot be changed after an instance of the <xref:System.Security.AccessControl.GenericAcl> class has been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>

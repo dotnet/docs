@@ -15,34 +15,34 @@
     <summary>Represents a customizable reflection context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Reflection.Context.CustomReflectionContext> provides a way for you to add or remove custom attributes from reflection objects, or add dummy properties to those objects, without re-implementing the complete reflection model. The default <xref:System.Reflection.Context.CustomReflectionContext> simply wraps reflection objects without making any changes, but by subclassing and overriding the relevant methods, you can add, remove, or change the attributes that apply to any reflected parameter or member, or add new properties to a reflected type.  
-  
- For example, suppose that your code follows the convention of applying a particular attribute to factory methods, but you are now required to work with third-party code that lacks attributes. You can use <xref:System.Reflection.Context.CustomReflectionContext> to specify a rule for identifying the objects that should have attributes and to supply the objects with those attributes when they are viewed from your code.  
-  
- To use <xref:System.Reflection.Context.CustomReflectionContext> effectively, the code that uses the reflected objects must support the notion of specifying a reflection context, instead of assuming that all reflected objects are associated with the runtime reflection context. Many reflection methods in the .NET Framework provide a <xref:System.Reflection.ReflectionContext> parameter for this purpose.  
-  
- To modify the attributes that are applied to a reflected parameter or member, override the <xref:System.Reflection.Context.CustomReflectionContext.GetCustomAttributes%28System.Reflection.ParameterInfo%2CSystem.Collections.Generic.IEnumerable%7BSystem.Object%7D%29> or <xref:System.Reflection.Context.CustomReflectionContext.GetCustomAttributes%28System.Reflection.MemberInfo%2CSystem.Collections.Generic.IEnumerable%7BSystem.Object%7D%29> method. These methods take the reflected object and the list of attributes under its current reflection context, and return the list of attributes it should have under the custom reflection context.  
-  
+<xref:System.Reflection.Context.CustomReflectionContext> provides a way for you to add or remove custom attributes from reflection objects, or add dummy properties to those objects, without re-implementing the complete reflection model. The default <xref:System.Reflection.Context.CustomReflectionContext> simply wraps reflection objects without making any changes, but by subclassing and overriding the relevant methods, you can add, remove, or change the attributes that apply to any reflected parameter or member, or add new properties to a reflected type.  
+ 
+For example, suppose that your code follows the convention of applying a particular attribute to factory methods, but you are now required to work with third-party code that lacks attributes. You can use <xref:System.Reflection.Context.CustomReflectionContext> to specify a rule for identifying the objects that should have attributes and to supply the objects with those attributes when they are viewed from your code.  
+ 
+To use <xref:System.Reflection.Context.CustomReflectionContext> effectively, the code that uses the reflected objects must support the notion of specifying a reflection context, instead of assuming that all reflected objects are associated with the runtime reflection context. Many reflection methods in the .NET Framework provide a <xref:System.Reflection.ReflectionContext> parameter for this purpose.  
+ 
+To modify the attributes that are applied to a reflected parameter or member, override the <xref:System.Reflection.Context.CustomReflectionContext.GetCustomAttributes%28System.Reflection.ParameterInfo%2CSystem.Collections.Generic.IEnumerable%7BSystem.Object%7D%29> or <xref:System.Reflection.Context.CustomReflectionContext.GetCustomAttributes%28System.Reflection.MemberInfo%2CSystem.Collections.Generic.IEnumerable%7BSystem.Object%7D%29> method. These methods take the reflected object and the list of attributes under its current reflection context, and return the list of attributes it should have under the custom reflection context.  
+ 
 > [!WARNING]
 >  <xref:System.Reflection.Context.CustomReflectionContext> methods should not access the list of attributes of a reflected object or method directly by calling the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method on the provided <xref:System.Reflection.MemberInfo> or <xref:System.Reflection.ParameterInfo> instance, but should instead use the `declaredAttributes` list, which is passed as a parameter to the <xref:System.Reflection.Context.CustomReflectionContext.GetCustomAttributes%2A> method overloads.  
-  
- To add properties to a reflected type, override the <xref:System.Reflection.Context.CustomReflectionContext.AddProperties%2A> method. The method accepts a parameter that specifies the reflected type, and returns a list of additional properties. You should use the <xref:System.Reflection.Context.CustomReflectionContext.CreateProperty%2A> method to create property objects to return. You can specify delegates when creating the property that will serve as the property accessor, and you can omit one of the accessors to create a read-only or write-only property. Note that such dummy properties have no metadata or Common Intermediate Language (CIL) backing.  
-  
+ 
+To add properties to a reflected type, override the <xref:System.Reflection.Context.CustomReflectionContext.AddProperties%2A> method. The method accepts a parameter that specifies the reflected type, and returns a list of additional properties. You should use the <xref:System.Reflection.Context.CustomReflectionContext.CreateProperty%2A> method to create property objects to return. You can specify delegates when creating the property that will serve as the property accessor, and you can omit one of the accessors to create a read-only or write-only property. Note that such dummy properties have no metadata or Common Intermediate Language (CIL) backing.  
+ 
 > [!WARNING]
 >  Be cautious about equality among reflected objects when you work with reflection contexts, because objects may represent the same reflected object in multiple contexts. You can use the <xref:System.Reflection.Context.CustomReflectionContext.MapType%2A> method to obtain a particular reflection context's version of a reflected object.  
-  
+ 
 > [!WARNING]
 >  A <xref:System.Reflection.Context.CustomReflectionContext> object alters the attributes returned by a particular reflection object, such as those obtained by the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method. It does not alter the custom attribute data returned by the <xref:System.Reflection.MemberInfo.GetCustomAttributesData%2A> method, and these two lists will not match when you use a custom reflection context.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to subclass  <xref:System.Reflection.Context.CustomReflectionContext> to add a custom attribute to all the members of a given type whose names begin with "To". To run this code, paste it into an empty console project, and make sure to include a reference to System.Reflection.Context.dll.  
-  
- [!code-csharp[System.Reflection.Context.CustomReflectionContext#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.context.customreflectioncontext/cs/program.cs#1)]  
-  
+The following example demonstrates how to subclass  <xref:System.Reflection.Context.CustomReflectionContext> to add a custom attribute to all the members of a given type whose names begin with "To". To run this code, paste it into an empty console project, and make sure to include a reference to System.Reflection.Context.dll.  
+ 
+[!code-csharp[System.Reflection.Context.CustomReflectionContext#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.context.customreflectioncontext/cs/program.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -104,10 +104,10 @@
         <returns>A collection of additional properties for the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method to specify which properties should be added to a given type. To create the properties, use the <xref:System.Reflection.Context.CustomReflectionContext.CreateProperty%2A> method.  
-  
+Override this method to specify which properties should be added to a given type. To create the properties, use the <xref:System.Reflection.Context.CustomReflectionContext.CreateProperty%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <returns>An object that represents the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Objects that are returned by this method are not complete <xref:System.Reflection.PropertyInfo> objects, and should be used only in the context of the <xref:System.Reflection.Context.CustomReflectionContext.AddProperties%2A> method.  
-  
+Objects that are returned by this method are not complete <xref:System.Reflection.PropertyInfo> objects, and should be used only in the context of the <xref:System.Reflection.Context.CustomReflectionContext.AddProperties%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <returns>An object that represents the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Objects that are returned by this method are not complete <xref:System.Reflection.PropertyInfo> objects, and should be used only in the context of the <xref:System.Reflection.Context.CustomReflectionContext.AddProperties%2A> method.  
-  
+Objects that are returned by this method are not complete <xref:System.Reflection.PropertyInfo> objects, and should be used only in the context of the <xref:System.Reflection.Context.CustomReflectionContext.AddProperties%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

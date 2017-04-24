@@ -16,22 +16,22 @@
     <summary>Provides a mechanism to create uniquely named identifiers throughout a specified range of activities.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+<xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService> provides a mechanism to create uniquely named identifiers throughout a range of activities.  
+ 
   
- <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService> provides a mechanism to create uniquely named identifiers throughout a range of activities.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
-  
- [!code-csharp[WF_Samples#41](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#41)]
- [!code-vb[WF_Samples#41](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#41)]  
-  
+The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
+ 
+[!code-csharp[WF_Samples#41](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#41)]
+[!code-vb[WF_Samples#41](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#41)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,18 +58,18 @@
         <summary>Provides a mechanism to ensure that Activities added to a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> are uniquely named.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService.EnsureUniqueIdentifiers%2A> to ensure activities inserted into a <xref:System.Workflow.ComponentModel.CompositeActivity> have unique identifiers.  
+Use <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService.EnsureUniqueIdentifiers%2A> to ensure activities inserted into a <xref:System.Workflow.ComponentModel.CompositeActivity> have unique identifiers.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
-  
- [!code-csharp[WF_Samples#43](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#43)]
- [!code-vb[WF_Samples#43](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#43)]  
-  
+The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
+ 
+[!code-csharp[WF_Samples#43](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#43)]
+[!code-vb[WF_Samples#43](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#43)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,18 +96,18 @@
         <summary>Provides a mechanism to test that an identifier is unique within an <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService.ValidateIdentifier%2A> to make sure an identifier is unique and properly formatted for use within a specified <xref:System.Workflow.ComponentModel.Activity>.  
+Use <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService.ValidateIdentifier%2A> to make sure an identifier is unique and properly formatted for use within a specified <xref:System.Workflow.ComponentModel.Activity>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
-  
- [!code-csharp[WF_Samples#42](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#42)]
- [!code-vb[WF_Samples#42](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#42)]  
-  
+The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
+ 
+[!code-csharp[WF_Samples#42](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#42)]
+[!code-vb[WF_Samples#42](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#42)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

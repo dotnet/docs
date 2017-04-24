@@ -18,19 +18,19 @@
     <summary>Represents an ordered collection of <see cref="T:System.Windows.UIElement" /> child elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Panel> base class uses a <xref:System.Windows.Controls.UIElementCollection> to represent its collection of child elements. Methods and properties defined by the <xref:System.Windows.Controls.UIElementCollection> affect all objects derived from <xref:System.Windows.Controls.Panel> and define a common feature-set for the manipulation of <xref:System.Windows.Controls.Panel> child elements.  
+The <xref:System.Windows.Controls.Panel> base class uses a <xref:System.Windows.Controls.UIElementCollection> to represent its collection of child elements. Methods and properties defined by the <xref:System.Windows.Controls.UIElementCollection> affect all objects derived from <xref:System.Windows.Controls.Panel> and define a common feature-set for the manipulation of <xref:System.Windows.Controls.Panel> child elements.  
+ 
+A <xref:System.Windows.Controls.UIElementCollection> has affinity to its own context (class). You must access the collection from the context of the owning <xref:System.Windows.Controls.Panel>.  
+ 
   
- A <xref:System.Windows.Controls.UIElementCollection> has affinity to its own context (class). You must access the collection from the context of the owning <xref:System.Windows.Controls.Panel>.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method to add child content to a parent <xref:System.Windows.Controls.StackPanel>. You do this by using the <xref:System.Windows.Controls.Panel.Children%2A> property, which is of type <xref:System.Windows.Controls.UIElementCollection>.  
-  
- [!code-csharp[UIElementCollection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#1)]  
-  
+The following example uses the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method to add child content to a parent <xref:System.Windows.Controls.StackPanel>. You do this by using the <xref:System.Windows.Controls.Panel.Children%2A> property, which is of type <xref:System.Windows.Controls.UIElementCollection>.  
+ 
+[!code-csharp[UIElementCollection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,12 +76,12 @@
         <returns>The index position of the added element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method to add child content to a parent <xref:System.Windows.Controls.StackPanel>. You do this by using the <xref:System.Windows.Controls.Panel.Children%2A> property, which is of type <xref:System.Windows.Controls.UIElementCollection>.  
-  
- [!code-csharp[UIElementCollection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#1)]  
-  
+The following example uses the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method to add child content to a parent <xref:System.Windows.Controls.StackPanel>. You do this by using the <xref:System.Windows.Controls.Panel.Children%2A> property, which is of type <xref:System.Windows.Controls.UIElementCollection>.  
+ 
+[!code-csharp[UIElementCollection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,12 +121,12 @@
         <summary>Removes all elements from a <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.UIElementCollection.Clear%2A> method to clear child content from a parent <xref:System.Windows.Controls.StackPanel>. You do this by using the <xref:System.Windows.Controls.Panel.Children%2A> property, which is of type <xref:System.Windows.Controls.UIElementCollection>.  
-  
- [!code-csharp[UIElementCollection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#1)]  
-  
+The following example uses the <xref:System.Windows.Controls.UIElementCollection.Clear%2A> method to clear child content from a parent <xref:System.Windows.Controls.StackPanel>. You do this by using the <xref:System.Windows.Controls.Panel.Children%2A> property, which is of type <xref:System.Windows.Controls.UIElementCollection>.  
+ 
+[!code-csharp[UIElementCollection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,13 +174,13 @@
           <see langword="true" /> if the specified <see cref="T:System.Windows.UIElement" /> is found in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.UIElementCollection.Contains%2A> method to determine if a specific <xref:System.Windows.UIElement> exists within a <xref:System.Windows.Controls.UIElementCollection>.  
-  
- [!code-csharp[UIElementCollection#10](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#10)]
- [!code-vb[UIElementCollection#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIElementCollection/VisualBasic/Pane1.xaml.vb#10)]  
-  
+The following example uses the <xref:System.Windows.Controls.UIElementCollection.Contains%2A> method to determine if a specific <xref:System.Windows.UIElement> exists within a <xref:System.Windows.Controls.UIElementCollection>.  
+ 
+[!code-csharp[UIElementCollection#10](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#10)]
+[!code-vb[UIElementCollection#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIElementCollection/VisualBasic/Pane1.xaml.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,12 +248,12 @@
         <value>The actual number of elements in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.UIElementCollection.Count%2A> property to count the number of child elements in a <xref:System.Windows.Controls.UIElementCollection>.  
-  
- [!code-csharp[UIElementCollection#12](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#12)]  
-  
+The following example uses the <xref:System.Windows.Controls.UIElementCollection.Count%2A> property to count the number of child elements in a <xref:System.Windows.Controls.UIElementCollection>.  
+ 
+[!code-csharp[UIElementCollection#12](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,17 +298,17 @@
         <returns>The index position of the element.  -1 if the element is not in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example finds the index position of a <xref:System.Windows.UIElement> within a <xref:System.Windows.Controls.UIElementCollection>.  
-  
- [!code-xml[UIElementCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollectionIndexOf/CSharp/Default.xaml#1)]  
-  
- ...  
-  
- [!code-csharp[UIElementCollectionIndexOf#2](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollectionIndexOf/CSharp/default.xaml.cs#2)]
- [!code-vb[UIElementCollectionIndexOf#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIElementCollectionIndexOf/VisualBasic/default.xaml.vb#2)]  
-  
+The following example finds the index position of a <xref:System.Windows.UIElement> within a <xref:System.Windows.Controls.UIElementCollection>.  
+ 
+[!code-xml[UIElementCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollectionIndexOf/CSharp/Default.xaml#1)]  
+ 
+...  
+ 
+[!code-csharp[UIElementCollectionIndexOf#2](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollectionIndexOf/CSharp/default.xaml.cs#2)]
+[!code-vb[UIElementCollectionIndexOf#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIElementCollectionIndexOf/VisualBasic/default.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -335,12 +335,12 @@
         <summary>Inserts an element into a <see cref="T:System.Windows.Controls.UIElementCollection" /> at the specified index position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.UIElementCollection.Insert%2A> method to insert child content at a specified index position.  
-  
- [!code-csharp[UIElementCollection#5](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#5)]  
-  
+The following example uses the <xref:System.Windows.Controls.UIElementCollection.Insert%2A> method to insert child content at a specified index position.  
+ 
+[!code-csharp[UIElementCollection#5](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,12 +385,12 @@
         <value>A <see cref="T:System.Windows.UIElement" /> at the specified <paramref name="index" /> position.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.UIElementCollection.Item%2A> property to identify the child element at a specified index position.  
-  
- [!code-csharp[UIElementCollection#11](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#11)]  
-  
+The following example uses the <xref:System.Windows.Controls.UIElementCollection.Item%2A> property to identify the child element at a specified index position.  
+ 
+[!code-csharp[UIElementCollection#11](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -436,12 +436,12 @@
         <summary>Removes the <see cref="T:System.Windows.UIElement" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.UIElementCollection.RemoveAt%2A> method to remove child content at a specified index position.  
-  
- [!code-csharp[UIElementCollection#7](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#7)]  
-  
+The following example uses the <xref:System.Windows.Controls.UIElementCollection.RemoveAt%2A> method to remove child content at a specified index position.  
+ 
+[!code-csharp[UIElementCollection#7](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

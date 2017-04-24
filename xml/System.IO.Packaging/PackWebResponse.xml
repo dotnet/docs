@@ -14,12 +14,12 @@
     <summary>Represents a response of a <see cref="T:System.IO.Packaging.PackWebRequest" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use the pack URI protocol, you can reference a package and its part elements either locally from inside a package or externally from a Web source.  
-  
- For the pack URI protocol, the forward-slash characters (//) of an embedded [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] are represented by commas (,,). For example: `pack://http:,,www.adatum.com,folder,file.package/images/picture1.jpg` references the file `/images/picture1.jpg` that is contained in `http://www.adatum.com/folder/file.package`.  
-  
+When you use the pack URI protocol, you can reference a package and its part elements either locally from inside a package or externally from a Web source.  
+ 
+For the pack URI protocol, the forward-slash characters (//) of an embedded [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] are represented by commas (,,). For example: `pack://http:,,www.adatum.com,folder,file.package/images/picture1.jpg` references the file `/images/picture1.jpg` that is contained in `http://www.adatum.com/folder/file.package`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Closes the stream for this request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Make certain that objects close when they are no longer in use so that resources are not exhausted.  
-  
+Make certain that objects close when they are no longer in use so that resources are not exhausted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,12 +66,12 @@
         <value>The content length, in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Checking this property on an actual Web request and matching response has performance implications because in some circumstances it requires that the whole response stream is read.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,18 +93,18 @@
         <value>The [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type of the stream's content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a request does not specify a part in the package, it returns the [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type of the package.  
-  
- Requests that specify a part in the package return one of the following:  
-  
+If a request does not specify a part in the package, it returns the [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type of the package.  
+ 
+Requests that specify a part in the package return one of the following:  
+ 
 1.  If the requested part contains a <xref:System.IO.Packaging.PackagePart.ContentType%2A> value, the <xref:System.IO.Packaging.PackagePart.ContentType%2A> value is returned.  
-  
+ 
 2.  If the requested part contains no <xref:System.IO.Packaging.PackagePart.ContentType%2A> value but the stream name contains a recognized [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] extension type, the [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type corresponding to the extension is returned.  
-  
+ 
 3.  If the requested part does not contain a <xref:System.IO.Packaging.PackagePart.ContentType%2A> value nor a recognized [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] extension type, <xref:System.IO.Packaging.PackWebResponse.ContentType%2A> returns an empty string.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,10 +192,10 @@
         <value>The response data as a <see cref="T:System.Net.WebResponse" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.Packaging.PackWebResponse.InnerResponse%2A> returns `null` when the response is from the package cache (when <xref:System.IO.Packaging.PackWebResponse.IsFromCache%2A> is `true`).  
-  
+<xref:System.IO.Packaging.PackWebResponse.InnerResponse%2A> returns `null` when the response is from the package cache (when <xref:System.IO.Packaging.PackWebResponse.IsFromCache%2A> is `true`).  
+ 
  ]]></format>
         </remarks>
       </Docs>

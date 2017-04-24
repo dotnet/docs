@@ -62,10 +62,10 @@
         <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a binary type by using the specified facet values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the binary types, see [Binary (EDM)](http://msdn.microsoft.com/en-us/ca858ce4-62d3-4516-bfb1-8a943dc66c61).  
-  
+For more information about the binary types, see [Binary (EDM)](http://msdn.microsoft.com/en-us/ca858ce4-62d3-4516-bfb1-8a943dc66c61).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a binary type by using the specified facet values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the binary types, see [Binary (EDM)](http://msdn.microsoft.com/en-us/ca858ce4-62d3-4516-bfb1-8a943dc66c61).  
-  
+For more information about the binary types, see [Binary (EDM)](http://msdn.microsoft.com/en-us/ca858ce4-62d3-4516-bfb1-8a943dc66c61).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a decimal type with unbounded precision and scale facet values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the decimal types, see [Decimal(EDM)](http://msdn.microsoft.com/en-us/99239537-0336-4705-b581-a79d89430bc7).  
-  
+For more information about the decimal types, see [Decimal(EDM)](http://msdn.microsoft.com/en-us/99239537-0336-4705-b581-a79d89430bc7).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a decimal type by using the specified facet values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the decimal types, see [Decimal(EDM)](http://msdn.microsoft.com/en-us/99239537-0336-4705-b581-a79d89430bc7).  
-  
+For more information about the decimal types, see [Decimal(EDM)](http://msdn.microsoft.com/en-us/99239537-0336-4705-b581-a79d89430bc7).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
         <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object with the default facet values for the specified <see cref="T:System.Data.Metadata.Edm.EdmType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Data.Metadata.Edm.EdmType> is a primitive type, such as `String`, `Decimal`, `Binary` or `DateTime`, this method invokes one of the corresponding methods declared in the <xref:System.Data.Metadata.Edm.TypeUsage> class. Otherwise, it creates a <xref:System.Data.Metadata.Edm.TypeUsage> object with the specified <xref:System.Data.Metadata.Edm.EdmType> directly.  
-  
+If the <xref:System.Data.Metadata.Edm.EdmType> is a primitive type, such as `String`, `Decimal`, `Binary` or `DateTime`, this method invokes one of the corresponding methods declared in the <xref:System.Data.Metadata.Edm.TypeUsage> class. Otherwise, it creates a <xref:System.Data.Metadata.Edm.TypeUsage> object with the specified <xref:System.Data.Metadata.Edm.EdmType> directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,10 +270,10 @@
         <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a string type by using the specified facet values and unbounded <see langword="MaxLength" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the string types, see [String (EDM)](http://msdn.microsoft.com/en-us/66035587-41f3-4c36-8be0-71b035700c82).  
-  
+For more information about the string types, see [String (EDM)](http://msdn.microsoft.com/en-us/66035587-41f3-4c36-8be0-71b035700c82).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,10 +308,10 @@
         <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a string type by using the specified facet values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the string types, see [String (EDM)](http://msdn.microsoft.com/en-us/66035587-41f3-4c36-8be0-71b035700c82).  
-  
+For more information about the string types, see [String (EDM)](http://msdn.microsoft.com/en-us/66035587-41f3-4c36-8be0-71b035700c82).  
+ 
  ]]></format>
         </remarks>
       </Docs>

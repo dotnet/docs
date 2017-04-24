@@ -13,12 +13,12 @@
     <summary>Represents possible color variants for the [!INCLUDE[TLA#tla_ms](~/includes/tlasharptla-ms-md.md)] themes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each theme potentially has multiple color variants, which, presumably, are visually similar but in different colors. Luna, for example, has all three color variants: Homestead, Metallic, and NormalColor. Aero and Royale have NormalColor.  
-  
- Classic doesn't have a color variant, but instead uses color schemes, including Pumpkin, Rose, and Spruce. A color scheme, unlike a color variant, defines values for each of the colors which make up the system palette as well as certain values for certain metrics like font names and sizes.  
-  
+Each theme potentially has multiple color variants, which, presumably, are visually similar but in different colors. Luna, for example, has all three color variants: Homestead, Metallic, and NormalColor. Aero and Royale have NormalColor.  
+ 
+Classic doesn't have a color variant, but instead uses color schemes, including Pumpkin, Rose, and Spruce. A color scheme, unlike a color variant, defines values for each of the colors which make up the system palette as well as certain values for certain metrics like font names and sizes.  
+ 
  ]]></format>
     </remarks>
   </Docs>

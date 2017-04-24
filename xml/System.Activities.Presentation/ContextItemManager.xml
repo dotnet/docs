@@ -18,10 +18,10 @@
     <summary>Represents a class that maintains a set of context items published into the designer editing context. This class is abstract.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.Activities.Presentation.ContextItem> contained in the <xref:System.Activities.Presentation.ContextItemManager> represents a piece of transient state in a <xref:System.Activities.Presentation.WorkflowDesigner>.  
-  
+Each <xref:System.Activities.Presentation.ContextItem> contained in the <xref:System.Activities.Presentation.ContextItemManager> represents a piece of transient state in a <xref:System.Activities.Presentation.WorkflowDesigner>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,10 +93,10 @@
           <see langword="true" /> if the context contains an instance of the specified item type; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This generic method invokes the abstract <xref:System.Activities.Presentation.ContextItemManager.Contains%2A> method, which must be implemented for this method to provide the type checking functionality.  
-  
+This generic method invokes the abstract <xref:System.Activities.Presentation.ContextItemManager.Contains%2A> method, which must be implemented for this method to provide the type checking functionality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <returns>Returns <see cref="T:System.Activities.Presentation.ContextItem" />, which contains a context item of the requested type. If there is no item in the context for this type, a default one is created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This generic method invokes the abstract <xref:System.Activities.Presentation.ContextItemManager.GetValue%2A> method, which must be implemented for this method to provide the get type functionality.  
-  
+This generic method invokes the abstract <xref:System.Activities.Presentation.ContextItemManager.GetValue%2A> method, which must be implemented for this method to provide the get type functionality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,10 +252,10 @@
         <returns>Returns <see cref="T:System.Delegate" />, which contains the new delegate that should be assigned to <paramref name="existing" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method in your implementations of the <xref:System.Activities.Presentation.ContextItemManager.Unsubscribe%2A> method.  
-  
+Use this method in your implementations of the <xref:System.Activities.Presentation.ContextItemManager.Unsubscribe%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@
         <summary>When overridden in a derived class, sets a context item to the specified value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not pass a `null` value. To set a <xref:System.Activities.Presentation.ContextItem>?qualifyHint=False&autoUpgrade=True) to an empty value, create an instance of the item using a default constructor.  
-  
+Do not pass a `null` value. To set a <xref:System.Activities.Presentation.ContextItem>?qualifyHint=False&autoUpgrade=True) to an empty value, create an instance of the item using a default constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

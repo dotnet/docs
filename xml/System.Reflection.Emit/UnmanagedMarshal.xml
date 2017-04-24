@@ -23,23 +23,23 @@
     <summary>Represents the class that describes how to marshal a field from managed to unmanaged code. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The code example shows the workaround for this obsolete type.  
+The code example shows the workaround for this obsolete type.  
+ 
+Marshaling is the process of packaging and unpackaging parameters so remote procedure calls can occur. During marshaling, a field might undergo a format conversion when the format of the managed type is different from the format of the corresponding unmanaged type. For example, you might want to marshal a `String` type as an unmanaged BSTR. Some format conversions are handled automatically by the runtime. To override the default behavior, you must use the `UnmanagedMarshal` class to define the format conversion.  
+ 
   
- Marshaling is the process of packaging and unpackaging parameters so remote procedure calls can occur. During marshaling, a field might undergo a format conversion when the format of the managed type is different from the format of the corresponding unmanaged type. For example, you might want to marshal a `String` type as an unmanaged BSTR. Some format conversions are handled automatically by the runtime. To override the default behavior, you must use the `UnmanagedMarshal` class to define the format conversion.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows replacement code for the obsolete <xref:System.Reflection.Emit.UnmanagedMarshal> type. The example emits a single-module assembly named `EmitMarshalAs.dll`, containing a type named `Sample`. The type has a method named `Test`, with one parameter of type <xref:System.String>. The code example applies the <xref:System.Runtime.InteropServices.MarshalAsAttribute> with <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> to the parameter.  
-  
- You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the emitted assembly and observe that the parameter is marked `marshal(bstr)`.  
-  
- [!code-cpp[UnmanagedMarshalObsolete#1](~/samples/snippets/cpp/VS_Snippets_CLR/UnmanagedMarshalObsolete/cpp/source.cpp#1)]
- [!code-csharp[UnmanagedMarshalObsolete#1](~/samples/snippets/csharp/VS_Snippets_CLR/UnmanagedMarshalObsolete/cs/source.cs#1)]
- [!code-vb[UnmanagedMarshalObsolete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/UnmanagedMarshalObsolete/vb/source.vb#1)]  
-  
+The following code example shows replacement code for the obsolete <xref:System.Reflection.Emit.UnmanagedMarshal> type. The example emits a single-module assembly named `EmitMarshalAs.dll`, containing a type named `Sample`. The type has a method named `Test`, with one parameter of type <xref:System.String>. The code example applies the <xref:System.Runtime.InteropServices.MarshalAsAttribute> with <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> to the parameter.  
+ 
+You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the emitted assembly and observe that the parameter is marked `marshal(bstr)`.  
+ 
+[!code-cpp[UnmanagedMarshalObsolete#1](~/samples/snippets/cpp/VS_Snippets_CLR/UnmanagedMarshalObsolete/cpp/source.cpp#1)]
+[!code-csharp[UnmanagedMarshalObsolete#1](~/samples/snippets/csharp/VS_Snippets_CLR/UnmanagedMarshalObsolete/cs/source.cs#1)]
+[!code-vb[UnmanagedMarshalObsolete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/UnmanagedMarshalObsolete/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,14 +86,14 @@
         <returns>An <see cref="T:System.Reflection.Emit.UnmanagedMarshal" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `DefineByValArray` method is not a simple native marshal.  
-  
- Only unmanaged marshal constructs can be made using these static constructors.  
-  
- Marshaling an array is a more complex process than marshaling an integer parameter. Array members are copied in a specific order so that the other side can reconstruct the array exactly.  
-  
+The `DefineByValArray` method is not a simple native marshal.  
+ 
+Only unmanaged marshal constructs can be made using these static constructors.  
+ 
+Marshaling an array is a more complex process than marshaling an integer parameter. Array members are copied in a specific order so that the other side can reconstruct the array exactly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
@@ -121,14 +121,14 @@
         <returns>An <see cref="T:System.Reflection.Emit.UnmanagedMarshal" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `DefineByValStr` method is not a simple native marshal.  
-  
- Only unmanaged marshal constructs can be made using these static constructors.  
-  
- Marshaling an array is a more complex process than marshaling an integer parameter. Array members are copied in a specific order so that the other side can reconstruct the array exactly.  
-  
+The `DefineByValStr` method is not a simple native marshal.  
+ 
+Only unmanaged marshal constructs can be made using these static constructors.  
+ 
+Marshaling an array is a more complex process than marshaling an integer parameter. Array members are copied in a specific order so that the other side can reconstruct the array exactly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
@@ -156,14 +156,14 @@
         <returns>An <see cref="T:System.Reflection.Emit.UnmanagedMarshal" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `DefineLPArray` method is not a simple native marshal.  
-  
- Only unmanaged marshal constructs can be made using these static constructors.  
-  
- Marshaling an array is a more complex process than marshaling an integer parameter. Array members are copied in a specific order so that the other side can reconstruct the array exactly.  
-  
+The `DefineLPArray` method is not a simple native marshal.  
+ 
+Only unmanaged marshal constructs can be made using these static constructors.  
+ 
+Marshaling an array is a more complex process than marshaling an integer parameter. Array members are copied in a specific order so that the other side can reconstruct the array exactly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
@@ -191,14 +191,14 @@
         <returns>An <see cref="T:System.Reflection.Emit.UnmanagedMarshal" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `DefineSafeArray` method is not a simple native marshal.  
-  
- Only unmanaged marshal constructs can be made using these static constructors.  
-  
- Marshaling an array is a more complex process than marshaling an integer parameter. Array members are copied in a specific order so that the other side can reconstruct the array exactly.  
-  
+The `DefineSafeArray` method is not a simple native marshal.  
+ 
+Only unmanaged marshal constructs can be made using these static constructors.  
+ 
+Marshaling an array is a more complex process than marshaling an integer parameter. Array members are copied in a specific order so that the other side can reconstruct the array exactly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
@@ -226,12 +226,12 @@
         <returns>An <see cref="T:System.Reflection.Emit.UnmanagedMarshal" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.InteropServices.UnmanagedType> passed to this method must be a simple native type. None of the following values may be used: <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, or <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>.  
-  
- Only unmanaged marshal constructs can be made using this method.  
-  
+The <xref:System.Runtime.InteropServices.UnmanagedType> passed to this method must be a simple native type. None of the following values may be used: <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, or <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>.  
+ 
+Only unmanaged marshal constructs can be made using this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
@@ -255,10 +255,10 @@
         <value>An integer indicating the element count.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is an `ElementCount` only if there is a `NativeTypeFixedArray`.  
-  
+There is an `ElementCount` only if there is a `NativeTypeFixedArray`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not an unmanaged element count.</exception>
@@ -282,10 +282,10 @@
         <value>An <see cref="T:System.Runtime.InteropServices.UnmanagedType" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `GetUnmanagedType` property is an accessor function for the native type.  
-  
+The `GetUnmanagedType` property is an accessor function for the native type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,10 +308,10 @@
         <value>A <see cref="T:System.Guid" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns Guid.Empty. This property might be removed in a future release.  
-  
+This property always returns Guid.Empty. This property might be removed in a future release.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a custom marshaler.</exception>

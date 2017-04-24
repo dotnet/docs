@@ -28,19 +28,19 @@
     <summary>Represents a collection of <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainElement" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of this class is returned when the <xref:System.Security.Cryptography.X509Certificates.X509Chain.ChainElements%2A> property is called.  
+An instance of this class is returned when the <xref:System.Security.Cryptography.X509Certificates.X509Chain.ChainElements%2A> property is called.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens the current user's personal certificate store, allows the user to select a certificate, and then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
-  
- [!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
- [!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
- [!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
-  
+The following code example opens the current user's personal certificate store, allows the user to select a certificate, and then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
+ 
+[!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
+[!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
+[!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -110,19 +110,19 @@
         <value>An integer representing the number of elements in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to determine how many elements are in the collection.  
+Use this property to determine how many elements are in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens the current user's personal certificate store, allows the user to select a certificate, and then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
-  
- [!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
- [!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
- [!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
-  
+The following code example opens the current user's personal certificate store, allows the user to select a certificate, and then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
+ 
+[!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
+[!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
+[!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator> class implements <xref:System.Collections.IEnumerator>, which enables you to use methods such as <xref:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator.Current%2A>, <xref:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator.MoveNext%2A> and <xref:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator.Reset%2A> to view the contents of the collection.  
-  
+The <xref:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator> class implements <xref:System.Collections.IEnumerator>, which enables you to use methods such as <xref:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator.Current%2A>, <xref:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator.MoveNext%2A> and <xref:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator.Reset%2A> to view the contents of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,19 +185,19 @@
         <value>Always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is always `false` because an <xref:System.Security.Cryptography.X509Certificates.X509ChainElementCollection> object is not thread safe.  
+This value is always `false` because an <xref:System.Security.Cryptography.X509Certificates.X509ChainElementCollection> object is not thread safe.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens the current user's personal certificate store, allows the user to select a certificate, and then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
-  
- [!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
- [!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
- [!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
-  
+The following code example opens the current user's personal certificate store, allows the user to select a certificate, and then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
+ 
+[!code-cpp[x509chaintest#4](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#4)]
+[!code-csharp[x509chaintest#4](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#4)]
+[!code-vb[x509chaintest#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainElement" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to access an <xref:System.Security.Cryptography.X509Certificates.X509ChainElement> object in the collection.  
-  
+Use this method to access an <xref:System.Security.Cryptography.X509Certificates.X509ChainElement> object in the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -267,10 +267,10 @@
         <value>A pointer reference to the current object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the `this` pointer, which is a reference to an instance of the current class.  
-  
+This property returns the `this` pointer, which is a reference to an instance of the current class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,10 +379,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns an enumerator interface.  
-  
+This method returns an enumerator interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

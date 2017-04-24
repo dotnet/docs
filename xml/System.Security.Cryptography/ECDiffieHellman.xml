@@ -14,10 +14,10 @@
     <summary>Provides an abstract base class that Elliptic Curve Diffie-Hellman (ECDH) algorithm implementations can derive from. This class provides the basic set of operations that all ECDH implementations must support.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class serves as the abstract base class for ECDH implementations.  
-  
+This class serves as the abstract base class for ECDH implementations.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellman" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by classes that derive from the <xref:System.Security.Cryptography.ECDiffieHellman> class. The <xref:System.Security.Cryptography.ECDiffieHellmanCng> class is the only implementation that is currently included in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For information about how to create a new implementation of the Elliptic Curve Diffie-Hellman (ECDH) algorithm, see the <xref:System.Security.Cryptography.ECDiffieHellman.Create%2A> method.  
-  
+This constructor is called by classes that derive from the <xref:System.Security.Cryptography.ECDiffieHellman> class. The <xref:System.Security.Cryptography.ECDiffieHellmanCng> class is the only implementation that is currently included in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For information about how to create a new implementation of the Elliptic Curve Diffie-Hellman (ECDH) algorithm, see the <xref:System.Security.Cryptography.ECDiffieHellman.Create%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,12 +84,12 @@
         <returns>A new instance of the default implementation of the Elliptic Curve Diffie-Hellman (ECDH) algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- curve must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method.  
-  
- Characteristic-2 curves are not supported on Windows.  
-  
+curve must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method.  
+ 
+Characteristic-2 curves are not supported on Windows.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
@@ -117,12 +117,12 @@
         <returns>A new instance of the default implementation of the Elliptic Curve Diffie-Hellman (ECDH) algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=fullName> method. Parameters over implicit curves are not supported.  
-  
- Characteristic-2 curves are not supported on Windows.  
-  
+`parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=fullName> method. Parameters over implicit curves are not supported.  
+ 
+Characteristic-2 curves are not supported on Windows.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
@@ -150,22 +150,22 @@
         <returns>A new instance of the specified implementation of this class. If the specified algorithm name does not map to an ECDH implementation, this method returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you develop your own implementation of an <xref:System.Security.Cryptography.ECDiffieHellman> object, you can use the <xref:System.Security.Cryptography.ECDiffieHellman.Create%28System.String%29> method overload to create a custom `algorithm` string that specifies your implementation.  
-  
- The `algorithm` parameter specifies the name of an implementation of the ECDH algorithm. The following strings all refer to the same implementation, which is the only implementation currently supported in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]:  
-  
+If you develop your own implementation of an <xref:System.Security.Cryptography.ECDiffieHellman> object, you can use the <xref:System.Security.Cryptography.ECDiffieHellman.Create%28System.String%29> method overload to create a custom `algorithm` string that specifies your implementation.  
+ 
+The `algorithm` parameter specifies the name of an implementation of the ECDH algorithm. The following strings all refer to the same implementation, which is the only implementation currently supported in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]:  
+ 
 -   "ECDH"  
-  
+ 
 -   "ECDiffieHellman"  
-  
+ 
 -   "ECDiffieHellmanCng"  
-  
+ 
 -   "System.Security.Cryptography.ECDiffieHellmanCng"  
-  
- You can also provide the name of a custom ECDH implementation for the `algorithm` parameter. If you do that, the <xref:System.Security.Cryptography.CryptoConfig> object will use it to determine whether an ECDH object can be created.  
-  
+ 
+You can also provide the name of a custom ECDH implementation for the `algorithm` parameter. If you do that, the <xref:System.Security.Cryptography.CryptoConfig> object will use it to determine whether an ECDH object can be created.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="algorithm" /> parameter is <see langword="null" />.</exception>
@@ -194,10 +194,10 @@
         <returns>The key material from the key exchange with the other party’s public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload calls the <xref:System.Security.Cryptography.ECDiffieHellman.DeriveKeyFromHash%2A> method passing `null` as the prepend and append values.  
-  
+This overload calls the <xref:System.Security.Cryptography.ECDiffieHellman.DeriveKeyFromHash%2A> method passing `null` as the prepend and append values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <returns>The key material from the key exchange with the other party’s public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload calls the <xref:System.Security.Cryptography.ECDiffieHellman.DeriveKeyFromHmac%2A> method passing `null` as the prepend and append values.  
-  
+This overload calls the <xref:System.Security.Cryptography.ECDiffieHellman.DeriveKeyFromHmac%2A> method passing `null` as the prepend and append values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,10 +316,10 @@
         <returns>The key material from the key exchange with the other party’s public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about public keys, see the <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey> class.  
-  
+For more information about public keys, see the <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,10 +397,10 @@
         <returns>An object that represents the point on the curve for this key. It can be passed to the <see cref="M:System.Security.Cryptography.ECDiffieHellman.ImportParameters(System.Security.Cryptography.ECParameters)" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the curve has a name, the <xref:System.Security.Cryptography.ECParameters> property contains named curve parameters; otherwise, it will contain explicit parameters.  
-  
+If the curve has a name, the <xref:System.Security.Cryptography.ECParameters> property contains named curve parameters; otherwise, it will contain explicit parameters.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">A derived class must override this method.</exception>
@@ -426,12 +426,12 @@
         <summary>When overridden in a derived class, generates a new ephemeral public/private key pair for the specified curve.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method) and must not be implicit.  
-  
- Characteristic-2 curves are not supported on Windows.  
-  
+`curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method) and must not be implicit.  
+ 
+Characteristic-2 curves are not supported on Windows.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
@@ -459,12 +459,12 @@
         <summary>When overridden in a derived class, imports the specified parameters for an <see cref="T:System.Security.Cryptography.ECCurve" /> as an ephemeral key into the current <see cref="T:System.Security.Cryptography.ECDiffieHellman" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=fullName> method. Parameters over implicit curves are not supported.  
-  
- Characteristic-2 curves are not supported on Windows.  
-  
+`parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=fullName> method. Parameters over implicit curves are not supported.  
+ 
+Characteristic-2 curves are not supported on Windows.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
@@ -489,12 +489,12 @@
         <value>The name of the key exchange algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default (non-overridden) implementation of this property returns the string "ECDiffieHellman".  
-  
- This property is inherited from the <xref:System.Security.Cryptography.AsymmetricAlgorithm> base class.  
-  
+The default (non-overridden) implementation of this property returns the string "ECDiffieHellman".  
+ 
+This property is inherited from the <xref:System.Security.Cryptography.AsymmetricAlgorithm> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -534,12 +534,12 @@
         <value>Always <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is inherited from the <xref:System.Security.Cryptography.AsymmetricAlgorithm> base class.  
-  
- The Elliptic Curve Diffie-Hellman (ECDH) algorithm is used for key derivation, not digital signature generation. Therefore, this property returns `null`.  
-  
+This property is inherited from the <xref:System.Security.Cryptography.AsymmetricAlgorithm> base class.  
+ 
+The Elliptic Curve Diffie-Hellman (ECDH) algorithm is used for key derivation, not digital signature generation. Therefore, this property returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

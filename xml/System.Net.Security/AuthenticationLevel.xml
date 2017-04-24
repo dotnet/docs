@@ -22,21 +22,21 @@
     <summary>Specifies client requirements for authentication and impersonation when using the <see cref="T:System.Net.WebRequest" /> class and derived classes to request a resource.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of this enumeration are used to set the <xref:System.Net.WebRequest.AuthenticationLevel%2A> property.  
-  
+The values of this enumeration are used to set the <xref:System.Net.WebRequest.AuthenticationLevel%2A> property.  
+ 
 > [!NOTE]
 >  The MutualAuthRequired and MutualAuthRequested values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](~/docs/framework/network-programming/internet-authentication.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates setting the authentication flags for a request.  
-  
- [!code-cpp[NCLCredPolicy#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCredPolicy/CPP/NCLCredPolicy.cpp#1)]
- [!code-csharp[NCLCredPolicy#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCredPolicy/CS/websample.cs#1)]  
-  
+The following code example demonstrates setting the authentication flags for a request.  
+ 
+[!code-cpp[NCLCredPolicy#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCredPolicy/CPP/NCLCredPolicy.cpp#1)]
+[!code-csharp[NCLCredPolicy#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCredPolicy/CS/websample.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

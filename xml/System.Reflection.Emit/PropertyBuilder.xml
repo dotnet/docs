@@ -34,19 +34,19 @@
     <summary>Defines the properties for a type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `PropertyBuilder` is always associated with a `TypeBuilder`. The `TypeBuilder`. `DefineProperty` method will return a new `PropertyBuilder` to a client.  
+A `PropertyBuilder` is always associated with a `TypeBuilder`. The `TypeBuilder`. `DefineProperty` method will return a new `PropertyBuilder` to a client.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates how to implement properties in a dynamic type using a `PropertyBuilder` obtained via <xref:System.Reflection.Emit.TypeBuilder.DefineProperty%2A?displayProperty=fullName> to create the property framework and an associated <xref:System.Reflection.Emit.MethodBuilder> to implement the IL logic within the property.  
-  
- [!code-cpp[System.Reflection.Emit.PropertyBuilder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.PropertyBuilder Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.PropertyBuilder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.PropertyBuilder Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.PropertyBuilder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.PropertyBuilder Example/VB/source.vb#1)]  
-  
+The following code sample demonstrates how to implement properties in a dynamic type using a `PropertyBuilder` obtained via <xref:System.Reflection.Emit.TypeBuilder.DefineProperty%2A?displayProperty=fullName> to create the property framework and an associated <xref:System.Reflection.Emit.MethodBuilder> to implement the IL logic within the property.  
+ 
+[!code-cpp[System.Reflection.Emit.PropertyBuilder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.PropertyBuilder Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.PropertyBuilder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.PropertyBuilder Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.PropertyBuilder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.PropertyBuilder Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -142,10 +142,10 @@
           <see langword="true" /> if this property can be read; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Boolean property indicating if the property can be read. If the property does not have a get accessor, it cannot be read.  
-  
+Boolean property indicating if the property can be read. If the property does not have a get accessor, it cannot be read.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
           <see langword="true" /> if this property can be written to; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Boolean property indicating if the property can be written to. If the property does not have a set accessor, it cannot be written to.  
-  
+Boolean property indicating if the property can be written to. If the property does not have a set accessor, it cannot be written to.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,10 +226,10 @@
         <returns>An array of type <see langword="MethodInfo" /> containing the matching public or non-public accessors, or an empty array if matching accessors do not exist on this property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the accessors of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetAccessors.  
-  
+To get the accessors of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetAccessors.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -257,10 +257,10 @@
         <returns>An array of all the custom attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetCustomAttributes.  
-  
+Reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetCustomAttributes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -290,10 +290,10 @@
         <returns>An array of custom attributes defined on this reflected member, or <see langword="null" /> if no attributes are defined on this member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetCustomAttributes.  
-  
+Reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetCustomAttributes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -321,10 +321,10 @@
         <returns>A <see langword="MethodInfo" /> object representing the get accessor for this property, if <paramref name="nonPublic" /> is <see langword="true" />. Returns <see langword="null" /> if <paramref name="nonPublic" /> is <see langword="false" /> and the get accessor is non-public, or if <paramref name="nonPublic" /> is <see langword="true" /> but no get accessors exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the getter of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetGetMethod.  
-  
+To get the getter of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetGetMethod.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,10 +352,10 @@
         <returns>An array of type <see langword="ParameterInfo" /> containing the parameters for the indexes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the index parameters of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetIndexParameters.  
-  
+To get the index parameters of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetIndexParameters.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -414,10 +414,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the setter of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetSetMethod.  
-  
+To get the setter of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetSetMethod.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,10 +450,10 @@
         <returns>The value of the specified indexed property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the value of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the `Reflection` property object from the type, and call `PropertyInfo.GetValue`.  
-  
+To get the value of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the `Reflection` property object from the type, and call `PropertyInfo.GetValue`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -489,10 +489,10 @@
         <returns>The property value for <paramref name="obj" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the value of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetValue.  
-  
+To get the value of a property, reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.GetValue.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -523,10 +523,10 @@
           <see langword="true" /> if one or more instance of <paramref name="attributeType" /> is defined on this property; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.IsDefined.  
-  
+Reflect on the property's parent type using Type.GetType or Assembly.GetType, retrieve the Reflection property object from the type, and call PropertyInfo.IsDefined.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -550,10 +550,10 @@
         <value>The <see cref="T:System.Reflection.Module" /> in which the type that declares the current property is defined.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is provided as a convenience for the user. It is equivalent to using the <xref:System.Reflection.Emit.PropertyBuilder.DeclaringType%2A> property to get the type in which the property is declared, and then calling the <xref:System.Type.Module%2A> property of the resulting <xref:System.Type> object.  
-  
+This property is provided as a convenience for the user. It is equivalent to using the <xref:System.Reflection.Emit.PropertyBuilder.DeclaringType%2A> property to get the type in which the property is declared, and then calling the <xref:System.Type.Module%2A> property of the resulting <xref:System.Type> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -667,10 +667,10 @@
         <summary>Sets the default value of this property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `defaultValue` is restricted to the following types: `Boolean`, `SByte`, `Int16`, `Int32`, `Int64`, `Byte`, `UInt16`, `UInt32`, `UInt64`, `Single`, `Double`, `DateTime`, `Char`, `String`, and `Enum`. If the property type is a reference type, CLS compliance requires `defaultValue` to be `null`. However, starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], `defaultValue` can be non-null for reference types as long as the value can be assigned to that reference type. For example, an `Int32` value can be assigned to a property of type <xref:System.Object>. This is not CLS-compliant, but it can be useful in interop scenarios.  
-  
+`defaultValue` is restricted to the following types: `Boolean`, `SByte`, `Int16`, `Int32`, `Int64`, `Byte`, `UInt16`, `UInt32`, `UInt64`, `Single`, `Double`, `DateTime`, `Char`, `String`, and `Enum`. If the property type is a reference type, CLS compliance requires `defaultValue` to be `null`. However, starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], `defaultValue` can be non-null for reference types as long as the value can be assigned to that reference type. For example, an `Int32` value can be assigned to a property of type <xref:System.Object>. This is not CLS-compliant, but it can be useful in interop scenarios.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -747,10 +747,10 @@
         <summary>Set a custom attribute using a specified custom attribute blob.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The Partition II documentation is available online on MSDN ([ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?linkid=65555) Web page) and on the ECMA Web site ([Standard ECMA-335 Common Language Infrastructure](http://go.microsoft.com/fwlink/?linkid=65552) document).  
-  
+See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The Partition II documentation is available online on MSDN ([ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?linkid=65555) Web page) and on the ECMA Web site ([Standard ECMA-335 Common Language Infrastructure](http://go.microsoft.com/fwlink/?linkid=65552) document).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -784,14 +784,14 @@
         <summary>Sets the method that gets the property value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates how to attach a dynamic method to a `get` property created with `PropertyBuilder` using `SetGetMethod`.  
-  
- [!code-cpp[PropertyBuilder_SetGetMethod_4#1](~/samples/snippets/cpp/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/CPP/propertybuilder_setgetmethod_4.cpp#1)]
- [!code-csharp[PropertyBuilder_SetGetMethod_4#1](~/samples/snippets/csharp/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/CS/propertybuilder_setgetmethod_4.cs#1)]
- [!code-vb[PropertyBuilder_SetGetMethod_4#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/VB/propertybuilder_setgetmethod_4.vb#1)]  
-  
+The following code sample demonstrates how to attach a dynamic method to a `get` property created with `PropertyBuilder` using `SetGetMethod`.  
+ 
+[!code-cpp[PropertyBuilder_SetGetMethod_4#1](~/samples/snippets/cpp/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/CPP/propertybuilder_setgetmethod_4.cpp#1)]
+[!code-csharp[PropertyBuilder_SetGetMethod_4#1](~/samples/snippets/csharp/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/CS/propertybuilder_setgetmethod_4.cs#1)]
+[!code-vb[PropertyBuilder_SetGetMethod_4#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/VB/propertybuilder_setgetmethod_4.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -825,14 +825,14 @@
         <summary>Sets the method that sets the property value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates how to attach a dynamic method to a `set` property created with `PropertyBuilder` using `SetSetMethod`.  
-  
- [!code-cpp[PropertyBuilder_SetGetMethod_4#2](~/samples/snippets/cpp/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/CPP/propertybuilder_setgetmethod_4.cpp#2)]
- [!code-csharp[PropertyBuilder_SetGetMethod_4#2](~/samples/snippets/csharp/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/CS/propertybuilder_setgetmethod_4.cs#2)]
- [!code-vb[PropertyBuilder_SetGetMethod_4#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/VB/propertybuilder_setgetmethod_4.vb#2)]  
-  
+The following code sample demonstrates how to attach a dynamic method to a `set` property created with `PropertyBuilder` using `SetSetMethod`.  
+ 
+[!code-cpp[PropertyBuilder_SetGetMethod_4#2](~/samples/snippets/cpp/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/CPP/propertybuilder_setgetmethod_4.cpp#2)]
+[!code-csharp[PropertyBuilder_SetGetMethod_4#2](~/samples/snippets/csharp/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/CS/propertybuilder_setgetmethod_4.cs#2)]
+[!code-vb[PropertyBuilder_SetGetMethod_4#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/PropertyBuilder_SetGetMethod_4/VB/propertybuilder_setgetmethod_4.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -870,10 +870,10 @@
         <summary>Sets the value of the property with optional index values for index properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set the value of a property, reflect on the property's parent type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>, retrieve the <xref:System.Reflection.PropertyInfo> object from the type, and call <xref:System.Reflection.PropertyInfo.SetValue%2A?displayProperty=fullName>.  
-  
+To set the value of a property, reflect on the property's parent type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>, retrieve the <xref:System.Reflection.PropertyInfo> object from the type, and call <xref:System.Reflection.PropertyInfo.SetValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -910,10 +910,10 @@
         <summary>Sets the property value for the given object to the given value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set the value of a property, reflect on the property's parent type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>, retrieve the <xref:System.Reflection.PropertyInfo> object from the type, and call <xref:System.Reflection.PropertyInfo.SetValue%2A?displayProperty=fullName>.  
-  
+To set the value of a property, reflect on the property's parent type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>, retrieve the <xref:System.Reflection.PropertyInfo> object from the type, and call <xref:System.Reflection.PropertyInfo.SetValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -948,10 +948,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -982,10 +982,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1012,10 +1012,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1056,10 +1056,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>

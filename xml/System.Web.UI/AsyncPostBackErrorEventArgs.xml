@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.ScriptManager.AsyncPostBackError" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.AsyncPostBackErrorEventArgs> object is used to pass event data when the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> is raised during partial-page rendering. The event data is information about server exceptions. Use the <xref:System.Web.UI.AsyncPostBackErrorEventArgs.Exception%2A> property to access the event data.  
-  
+The <xref:System.Web.UI.AsyncPostBackErrorEventArgs> object is used to pass event data when the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> is raised during partial-page rendering. The event data is information about server exceptions. Use the <xref:System.Web.UI.AsyncPostBackErrorEventArgs.Exception%2A> property to access the event data.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,20 +19,20 @@
     <summary>Represents the exception that is thrown when an action is tried on a <see cref="T:System.Data.DataRow" /> that has been deleted.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To delete a <xref:System.Data.DataRow>, use the <xref:System.Data.DataRow.Delete%2A> method of a <xref:System.Data.DataRow> class. As soon as you have deleted a row, any attempts to modify it will generate the <xref:System.Data.DeletedRowInaccessibleException>.  
-  
- The <xref:System.Data.DeletedRowInaccessibleException> is thrown when you use one of the following properties or methods that try to get or set the value of a deleted <xref:System.Data.DataRow>:  
-  
+To delete a <xref:System.Data.DataRow>, use the <xref:System.Data.DataRow.Delete%2A> method of a <xref:System.Data.DataRow> class. As soon as you have deleted a row, any attempts to modify it will generate the <xref:System.Data.DeletedRowInaccessibleException>.  
+ 
+The <xref:System.Data.DeletedRowInaccessibleException> is thrown when you use one of the following properties or methods that try to get or set the value of a deleted <xref:System.Data.DataRow>:  
+ 
 -   <xref:System.Data.DataRow.Item%2A> property  
-  
+ 
 -   <xref:System.Data.DataRow.ItemArray%2A> property  
-  
+ 
 -   <xref:System.Data.DataRow.BeginEdit%2A> method  
-  
- Use the <xref:System.Data.DataRow.RowState%2A> of a <xref:System.Data.DataRow> class to determine whether a row has been deleted. If it has been deleted, you can use the <xref:System.Data.DataRow.Original%2A> method to retrieve it because deleted rows have no values available for the <xref:System.Data.DataRow.Current%2A> state.  
-  
+ 
+Use the <xref:System.Data.DataRow.RowState%2A> of a <xref:System.Data.DataRow> class to determine whether a row has been deleted. If it has been deleted, you can use the <xref:System.Data.DataRow.Original%2A> method to retrieve it because deleted rows have no values available for the <xref:System.Data.DataRow.Current%2A> state.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.DeletedRowInaccessibleException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.DataRow.RowState%2A> of a <xref:System.Data.DataRow> class to determine whether a row has been deleted.  
-  
+Use the <xref:System.Data.DataRow.RowState%2A> of a <xref:System.Data.DataRow> class to determine whether a row has been deleted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.DeletedRowInaccessibleException" /> class with the specified string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.DataRow.RowState%2A> of a <xref:System.Data.DataRow> class to determine whether a row has been deleted.  
-  
+Use the <xref:System.Data.DataRow.RowState%2A> of a <xref:System.Data.DataRow> class to determine whether a row has been deleted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.DeletedRowInaccessibleException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.DataRow.RowState%2A> of a <xref:System.Data.DataRow> class to determine whether a row has been deleted.  
-  
+Use the <xref:System.Data.DataRow.RowState%2A> of a <xref:System.Data.DataRow> class to determine whether a row has been deleted.  
+ 
  ]]></format>
         </remarks>
       </Docs>

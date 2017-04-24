@@ -24,12 +24,12 @@
     <summary>Creates a Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) signature.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CPP/sample.cpp#1)]
- [!code-csharp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CS/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/VB/sample.vb#1)]  
-  
+[!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CPP/sample.cpp#1)]
+[!code-csharp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CS/sample.cs#1)]
+[!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/VB/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,12 +76,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSASignatureFormatter" /> class with the specified key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CPP/sample.cpp#1)]
- [!code-csharp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CS/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/VB/sample.vb#1)]  
-  
+[!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CPP/sample.cpp#1)]
+[!code-csharp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CS/sample.cs#1)]
+[!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -114,17 +114,17 @@
         <returns>The digital signature for the specified data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The resulting signature data can be verified by using <xref:System.Security.Cryptography.DSASignatureDeformatter.VerifySignature%2A>.  
+The resulting signature data can be verified by using <xref:System.Security.Cryptography.DSASignatureDeformatter.VerifySignature%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CPP/sample.cpp#1)]
- [!code-csharp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CS/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/VB/sample.vb#1)]  
-  
+[!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CPP/sample.cpp#1)]
+[!code-csharp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CS/sample.cs#1)]
+[!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -161,12 +161,12 @@
         <summary>Specifies the hash algorithm for the Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) signature formatter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CPP/sample.cpp#1)]
- [!code-csharp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CS/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/VB/sample.vb#1)]  
-  
+[!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CPP/sample.cpp#1)]
+[!code-csharp[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/CS/sample.cs#1)]
+[!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureFormatter/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The <paramref name="strName" /> parameter does not map to the <see cref="T:System.Security.Cryptography.SHA1" /> hash algorithm.</exception>

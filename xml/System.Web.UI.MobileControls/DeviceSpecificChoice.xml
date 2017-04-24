@@ -35,25 +35,25 @@
     <summary>Provides a single choice within a DeviceSpecific/Choice construct. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is analogous to the [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. Choices are tested in the order that they appear within a [\<DeviceSpecific>](http://msdn.microsoft.com/en-us/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element. If you specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property of the `<Choice>` element, its value must be the name of a device filter defined in the `<deviceFilters>` section of the Machine.config file. At run time, ASP.NET evaluates the specified device filter against the capabilities of the current device. If successful, the choice is selected. If you do not specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, the defaults for the `<Choice>` element are selected.  
+This class is analogous to the [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. Choices are tested in the order that they appear within a [\<DeviceSpecific>](http://msdn.microsoft.com/en-us/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element. If you specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property of the `<Choice>` element, its value must be the name of a device filter defined in the `<deviceFilters>` section of the Machine.config file. At run time, ASP.NET evaluates the specified device filter against the capabilities of the current device. If successful, the choice is selected. If you do not specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, the defaults for the `<Choice>` element are selected.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows a `<Choice>` element within an image. The `Source` attribute overrides the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property of the <xref:System.Web.UI.MobileControls.Image> control.  
-  
- Although the example uses functions to determine whether the browser requires WML (`isWML11`) or supports color (`supportsColor`), you can instead use a Web.config file to define a `<DeviceSpecific>` element that the .NET Framework automatically uses to make the determination for you.  
-  
-  
-  
+The following code example shows a `<Choice>` element within an image. The `Source` attribute overrides the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property of the <xref:System.Web.UI.MobileControls.Image> control.  
+ 
+Although the example uses functions to determine whether the browser requires WML (`isWML11`) or supports color (`supportsColor`), you can instead use a Web.config file to define a `<DeviceSpecific>` element that the .NET Framework automatically uses to make the determination for you.  
+ 
+ 
+ 
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
-  
- <!-- TODO: review snippet reference [!code-csharp[MobileDeviceSpecificChoiceSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileDeviceSpecificChoiceSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileDeviceSpecificChoiceSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileDeviceSpecificChoiceSample/vb/Default.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[MobileDeviceSpecificChoiceSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileDeviceSpecificChoiceSample/cs/Default.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[MobileDeviceSpecificChoiceSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileDeviceSpecificChoiceSample/vb/Default.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">For operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -94,10 +94,10 @@
         <summary>Adds the <see cref="T:System.Object" /> to the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object's <see cref="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Templates" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by control designers and is not intended for general use.  
-  
+This method is used primarily by control designers and is not intended for general use.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <value>The argument used for a <see cref="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the filter is a comparison filter, the value of <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Argument%2A> is used in place of the argument value defined in Web.config. If the value of <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> is the name of a method (either on the page or off in an assembly pointed to by Web.config), the value of <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Argument%2A> is supplied as an argument to that method.  
-  
+If the filter is a comparison filter, the value of <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Argument%2A> is used in place of the argument value defined in Web.config. If the value of <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> is the name of a method (either on the page or off in an assembly pointed to by Web.config), the value of <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Argument%2A> is supplied as an argument to that method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <value>The overridden properties defined for a choice in a DeviceSpecific/Choice construct.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Changing this collection after overridden properties have been processed (in the <xref:System.Web.UI.MobileControls.MobilePage.OnDeviceCustomize%2A> method) has no effect. This method is used primarily by control designers and is not intended for general use.  
-  
+Changing this collection after overridden properties have been processed (in the <xref:System.Web.UI.MobileControls.MobilePage.OnDeviceCustomize%2A> method) has no effect. This method is used primarily by control designers and is not intended for general use.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,27 +179,27 @@
         <value>The name of a device filter. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The filter name must be the name of a method on the page, in the associated `.ascx` file, or the name of a valid device filter defined in the <`deviceFilters`> section of Web.config. If a method name is specified with the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, that method must match the following prototype.  
-  
+The filter name must be the name of a method on the page, in the associated `.ascx` file, or the name of a valid device filter defined in the <`deviceFilters`> section of Web.config. If a method name is specified with the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, that method must match the following prototype.  
+ 
 ```  
 public bool methodName(System.Web.Mobile.MobileCapabilities   
-    capabilities, String optionalArgument)  
+   capabilities, String optionalArgument)  
 ```  
-  
- For example, if the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property was set to `myChoiceMethod`, a method with the following signature must exist.  
-  
+ 
+For example, if the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property was set to `myChoiceMethod`, a method with the following signature must exist.  
+ 
 ```  
 public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities   
-    capabilities, String optionalArgument);  
+   capabilities, String optionalArgument);  
 ```  
-  
- When evaluating the [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element, a check is made to determine whether a method of the appropriate signature exists on the page. If not, ASP.NET checks the <`deviceFilters`> section of Web.config.  
-  
+ 
+When evaluating the [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element, a check is made to determine whether a method of the appropriate signature exists on the page. If not, ASP.NET checks the <`deviceFilters`> section of Web.config.  
+ 
 > [!NOTE]
 >  Device filters are case-sensitive.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <returns>A <see cref="T:System.String" /> that contains the value of the specified attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the attribute.  
-  
+The value of the attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice> instance is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice> instance is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,10 +353,10 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice> instance is cast to an <xref:System.Web.UI.IParserAccessor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice> instance is cast to an <xref:System.Web.UI.IParserAccessor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,10 +406,10 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <value>The type of markup inside templates of a choice.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used primarily by control designers and is not intended for general developer use. The <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Xmlns%2A> value is inherited from the containing control or page.  
-  
+This property is used primarily by control designers and is not intended for general developer use. The <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Xmlns%2A> value is inherited from the containing control or page.  
+ 
  ]]></format>
         </remarks>
       </Docs>

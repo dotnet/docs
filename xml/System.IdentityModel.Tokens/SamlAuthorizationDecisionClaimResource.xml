@@ -19,10 +19,10 @@
     <summary>Represents a claim for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token that asserts an authorization decision regarding access to a specific resource.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>. A <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> asserts an authorization decision by a SAML authority regarding access to a specific resource. The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource> class represents a claim resource for the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>.  
-  
+<xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>. A <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> asserts an authorization decision by a SAML authority regarding access to a specific resource. The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource> class represents a claim resource for the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,17 +50,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource" /> class using the specified resource the subject is seeking access to, the authorization decision regarding the resource, the action sought on the resource, and the XML namespace in which the action is defined.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table details the properties set by the parameters passed to this constructor.  
-  
+The following table details the properties set by the parameters passed to this constructor.  
+ 
 |Parameter|Property|  
 |---------------|--------------|  
 |`resource`|<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.Resource%2A>|  
 |`accessDecision`|<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.AccessDecision%2A>|  
 |`actionNamespace`|<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.ActionNamespace%2A>|  
 |`actionName`|<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.ActionName%2A>|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -88,10 +88,10 @@
         <value>The authorization decision rendered by the SAML authority regarding the access to the resource by the subject.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.AccessDecision%2A> property corresponds to the `Decision` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.AccessDecision%2A> property corresponds to the `Decision` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <value>The action sought by the subject on the resource specified in the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.Resource" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.ActionName%2A> property corresponds to the `<Action>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.ActionName%2A> property corresponds to the `<Action>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <value>The XML namespace in which the action specified in the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.ActionName" /> property is defined.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.AccessDecision%2A> property corresponds to the `Namespace` attribute of the `<Action>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.AccessDecision%2A> property corresponds to the `Namespace` attribute of the `<Action>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,10 +205,10 @@
         <value>A URI that represents the resource the subject is seeking access to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.AccessDecision%2A> property corresponds to the `Resource` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.AccessDecision%2A> property corresponds to the `Resource` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,10 +18,10 @@
     <summary>Controls the content of the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> returned by a discovery endpoint.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This behavior is used to configure the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata. A user creates a new instance of this type and adds it to the specific endpoint whose <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> must be configured. It can also be used to turn off discovery for specific endpoint using the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Enabled%2A> property. Note that the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> on an endpoint is ignored if <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> is not present. You cannot make an endpoint discoverable through <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> without first adding a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> to your service.  
-  
+This behavior is used to configure the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata. A user creates a new instance of this type and adds it to the specific endpoint whose <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> must be configured. It can also be used to turn off discovery for specific endpoint using the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Enabled%2A> property. Note that the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> on an endpoint is ignored if <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> is not present. You cannot make an endpoint discoverable through <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> without first adding a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> to your service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,10 +95,10 @@
         <value>A collection of extensions associated with the endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The extension is any custom XML metadata you want to add to an endpoint.  
-  
+The extension is any custom XML metadata you want to add to an endpoint.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>A collection of scopes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A scope is a URI used as an element to identify a service or group of services.  
-  
+A scope is a URI used as an element to identify a service or group of services.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,18 +14,18 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.DataPagerField" /> objects that are used by the <see cref="T:System.Web.UI.WebControls.DataPager" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class to programmatically manage a set of <xref:System.Web.UI.WebControls.DataPagerField> objects. Note that it is more typical to define these fields declaratively instead of programmatically.  
-  
- You can access the properties and methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class through the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> property. You can add, insert, and remove <xref:System.Web.UI.WebControls.DataPagerField> objects by using the appropriate methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class. To programmatically retrieve <xref:System.Web.UI.WebControls.DataPagerField> objects from a collection, do one of following:  
-  
+You can use the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class to programmatically manage a set of <xref:System.Web.UI.WebControls.DataPagerField> objects. Note that it is more typical to define these fields declaratively instead of programmatically.  
+ 
+You can access the properties and methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class through the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> property. You can add, insert, and remove <xref:System.Web.UI.WebControls.DataPagerField> objects by using the appropriate methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class. To programmatically retrieve <xref:System.Web.UI.WebControls.DataPagerField> objects from a collection, do one of following:  
+ 
 -   Use the indexer to get a single <xref:System.Web.UI.WebControls.DataPagerField> object from the collection.  
-  
+ 
 -   Use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A> method to create an object that implements <xref:System.Collections.IEnumerator?displayProperty=fullName>, which you can then use to get items from the collection.  
-  
- The <xref:System.Web.UI.StateManagedCollection.Count%2A> property gets the total number of items in the collection. It is typically used to determine the upper bound of the collection. You can add items and remove items in the collection by using the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Add%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A>, and <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> methods.  
-  
+ 
+The <xref:System.Web.UI.StateManagedCollection.Count%2A> property gets the total number of items in the collection. It is typically used to determine the upper bound of the collection. You can add items and remove items in the collection by using the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Add%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A>, and <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> methods.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is primarily used by control developers.  
-  
+This constructor is primarily used by control developers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,18 +75,18 @@
         <summary>Appends the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPagerField> object is added to the end of the collection.  
+The <xref:System.Web.UI.WebControls.DataPagerField> object is added to the end of the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Add%2A> method to add a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to a <xref:System.Web.UI.WebControls.DataPager> control.  
-  
- [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/CS/NextPreviousPagerFieldCtorCS.aspx#2)]
- [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/VB/NextPreviousPagerFieldCtorVB.aspx#2)]  
-  
+The following example shows how to use the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Add%2A> method to add a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to a <xref:System.Web.UI.WebControls.DataPager> control.  
+ 
+[!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/CS/NextPreviousPagerFieldCtorCS.aspx#2)]
+[!code-vb[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/VB/NextPreviousPagerFieldCtorVB.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <returns>An object that contains a copy of each <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object that is in the current collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is primarily used in design-time dialog boxes to implement rollback behavior when an operation is canceled.  
-  
+This method is primarily used in design-time dialog boxes to implement rollback behavior when an operation is canceled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <returns>An object that represents an instance of a class that is derived from the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> class, according to the index provided.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType%2A> method is called internally by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23LoadViewState%2A> method. The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType%2A> method creates an instance of an object by using the type identified by the specified `index`, which maps to one of the types returned by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.GetKnownTypes%2A> method.  
-  
+The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType%2A> method is called internally by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23LoadViewState%2A> method. The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType%2A> method creates an instance of an object by using the type identified by the specified `index`, which maps to one of the types returned by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.GetKnownTypes%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is not in the recognized range.</exception>
@@ -212,12 +212,12 @@
         <summary>Occurs when the fields in the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection change.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event is usually raised as a result of a call to the <xref:System.Web.UI.StateManagedCollection.Clear%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A>, or <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> methods.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event is usually raised as a result of a call to the <xref:System.Web.UI.StateManagedCollection.Clear%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A>, or <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> methods.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,10 +330,10 @@
         <summary>Performs additional processing after all items are removed from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method to perform additional processing after all items are removed from the collection. This method raises the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event.  
-  
+This method is called by the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method to perform additional processing after all items are removed from the collection. This method raises the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,10 +360,10 @@
         <summary>Performs additional processing after an item is added to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A> method to perform additional processing after an item is added to the collection. This method raises the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event.  
-  
+This method is called by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A> method to perform additional processing after an item is added to the collection. This method raises the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -390,10 +390,10 @@
         <summary>Performs additional processing after an item is removed from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A> or <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> method to perform additional processing after an item is removed from the collection. This method raises the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event.  
-  
+This method is called by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A> or <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> method to perform additional processing after an item is removed from the collection. This method raises the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,10 +418,10 @@
         <summary>Verifies that the specified object is a <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called internally to validate an element of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> collection. The method performs type-checking and verifies that the object specified in the `o` parameter is not `null`.  
-  
+This method is called internally to validate an element of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> collection. The method performs type-checking and verifies that the object specified in the `o` parameter is not `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -492,10 +492,10 @@
         <summary>Instructs the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to record its complete state to view state, instead of recording only changed information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is primarily used by control developers.  
-  
+This method is primarily used by control developers.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,14 +18,14 @@
     <summary>Specifies a set of object-specific access rights for operations specific to Message Queuing.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Messaging.MessageQueueAccessRights> enumeration enables you to specify Message Queuing object-specific rights such as receiving, peeking, or writing messages, or setting queue properties. It is one of two enumerations to which the <xref:System.Messaging.GenericAccessRights> enumeration maps extensive read, write, or execute abilities. The other, <xref:System.Messaging.StandardAccessRights>, enables you to specify rights common to most objects, for example, deleting the object or reading a security descriptor.  
-  
- Both <xref:System.Messaging.StandardAccessRights> and <xref:System.Messaging.MessageQueueAccessRights> provide a member for deleting a queue. The needs of the application define which set of flags you use.  
-  
- The access rights associated with the <xref:System.Messaging.MessageQueueAccessRights> enumeration are listed in the Permissions box of the queue properties window.  
-  
+The <xref:System.Messaging.MessageQueueAccessRights> enumeration enables you to specify Message Queuing object-specific rights such as receiving, peeking, or writing messages, or setting queue properties. It is one of two enumerations to which the <xref:System.Messaging.GenericAccessRights> enumeration maps extensive read, write, or execute abilities. The other, <xref:System.Messaging.StandardAccessRights>, enables you to specify rights common to most objects, for example, deleting the object or reading a security descriptor.  
+ 
+Both <xref:System.Messaging.StandardAccessRights> and <xref:System.Messaging.MessageQueueAccessRights> provide a member for deleting a queue. The needs of the application define which set of flags you use.  
+ 
+The access rights associated with the <xref:System.Messaging.MessageQueueAccessRights> enumeration are listed in the Permissions box of the queue properties window.  
+ 
  ]]></format>
     </remarks>
   </Docs>

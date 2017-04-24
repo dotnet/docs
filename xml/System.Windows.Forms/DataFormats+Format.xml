@@ -14,21 +14,21 @@
     <summary>Represents a Clipboard format type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A format type consists of a text-based format name and an ID number. The format name/ID number pair can define a system <xref:System.Windows.Forms.Clipboard> or other format.  
+A format type consists of a text-based format name and an ID number. The format name/ID number pair can define a system <xref:System.Windows.Forms.Clipboard> or other format.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to retrieve a <xref:System.Windows.Forms.DataFormats.Format> representing a format name/ID pair. The <xref:System.Windows.Forms.DataFormats.UnicodeText> format is requested, and the contents of the retrieved <xref:System.Windows.Forms.DataFormats.Format> are displayed in a text box.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataFormats.GetFormat Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataFormats.GetFormat Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataFormats.GetFormat Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataFormats.GetFormat Example/CS/source.cs#1)]
- [!code-vb[Classic DataFormats.GetFormat Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataFormats.GetFormat Example/VB/source.vb#1)]  
-  
+The following code example shows how to retrieve a <xref:System.Windows.Forms.DataFormats.Format> representing a format name/ID pair. The <xref:System.Windows.Forms.DataFormats.UnicodeText> format is requested, and the contents of the retrieved <xref:System.Windows.Forms.DataFormats.Format> are displayed in a text box.  
+ 
+This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataFormats.GetFormat Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataFormats.GetFormat Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataFormats.GetFormat Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataFormats.GetFormat Example/CS/source.cs#1)]
+[!code-vb[Classic DataFormats.GetFormat Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataFormats.GetFormat Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,14 +52,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataFormats.Format" /> class with a Boolean that indicates whether a <see langword="Win32" /> handle is expected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a new format for a name and unique ID number. The new format does not require a Windows handle. It requires that `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic DataFormats.Format.Format Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataFormats.Format.Format Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataFormats.Format.Format Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataFormats.Format.Format Example/CS/source.cs#1)]
- [!code-vb[Classic DataFormats.Format.Format Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataFormats.Format.Format Example/VB/source.vb#1)]  
-  
+The following code example creates a new format for a name and unique ID number. The new format does not require a Windows handle. It requires that `textBox1` has been instantiated.  
+ 
+[!code-cpp[Classic DataFormats.Format.Format Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataFormats.Format.Format Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataFormats.Format.Format Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataFormats.Format.Format Example/CS/source.cs#1)]
+[!code-vb[Classic DataFormats.Format.Format Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataFormats.Format.Format Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

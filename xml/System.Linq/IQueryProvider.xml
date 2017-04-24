@@ -22,12 +22,12 @@
     <summary>Defines methods to create and execute queries that are described by an <see cref="T:System.Linq.IQueryable" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.IQueryProvider> interface is intended for implementation by query providers.  
-  
- For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](http://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
-  
+The <xref:System.Linq.IQueryProvider> interface is intended for implementation by query providers.  
+ 
+For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](http://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,16 +64,16 @@
         <returns>An <see cref="T:System.Linq.IQueryable" /> that can evaluate the query represented by the specified expression tree.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Linq.IQueryable.Expression%2A> property of the returned <xref:System.Linq.IQueryable> object is equal to `expression`.  
-  
- The <xref:System.Linq.IQueryProvider.CreateQuery%2A> method is used to create new <xref:System.Linq.IQueryable> objects, given an expression tree. The query that is represented by the returned object is associated with a specific LINQ provider.  
-  
- Several of the standard query operator methods defined in <xref:System.Linq.Queryable>, such as <xref:System.Linq.Queryable.OfType%2A> and <xref:System.Linq.Queryable.Cast%2A>, call this method. They pass it a <xref:System.Linq.Expressions.MethodCallExpression> that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.  
-  
+ 
+The <xref:System.Linq.IQueryProvider.CreateQuery%2A> method is used to create new <xref:System.Linq.IQueryable> objects, given an expression tree. The query that is represented by the returned object is associated with a specific LINQ provider.  
+ 
+Several of the standard query operator methods defined in <xref:System.Linq.Queryable>, such as <xref:System.Linq.Queryable.OfType%2A> and <xref:System.Linq.Queryable.Cast%2A>, call this method. They pass it a <xref:System.Linq.Expressions.MethodCallExpression> that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,16 +114,16 @@
         <returns>An <see cref="T:System.Linq.IQueryable`1" /> that can evaluate the query represented by the specified expression tree.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Linq.IQueryable.Expression%2A> property of the returned <xref:System.Linq.IQueryable%601> object is equal to `expression`.  
-  
- The <xref:System.Linq.IQueryProvider.CreateQuery%2A> method is used to create new <xref:System.Linq.IQueryable%601> objects, given an expression tree. The query that is represented by the returned object is associated with a specific LINQ provider.  
-  
- Most of the <xref:System.Linq.Queryable> standard query operator methods that return enumerable results call this method. They pass it a <xref:System.Linq.Expressions.MethodCallExpression> that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.  
-  
+ 
+The <xref:System.Linq.IQueryProvider.CreateQuery%2A> method is used to create new <xref:System.Linq.IQueryable%601> objects, given an expression tree. The query that is represented by the returned object is associated with a specific LINQ provider.  
+ 
+Most of the <xref:System.Linq.Queryable> standard query operator methods that return enumerable results call this method. They pass it a <xref:System.Linq.Expressions.MethodCallExpression> that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,10 +160,10 @@
         <returns>The value that results from executing the specified query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.IQueryProvider.Execute%2A> method executes queries that return a single value (instead of an enumerable sequence of values). Expression trees that represent queries that return enumerable results are executed when their associated <xref:System.Linq.IQueryable> object is enumerated.  
-  
+The <xref:System.Linq.IQueryProvider.Execute%2A> method executes queries that return a single value (instead of an enumerable sequence of values). Expression trees that represent queries that return enumerable results are executed when their associated <xref:System.Linq.IQueryable> object is enumerated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,12 +204,12 @@
         <returns>The value that results from executing the specified query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.IQueryProvider.Execute%2A> method executes queries that return a single value (instead of an enumerable sequence of values). Expression trees that represent queries that return enumerable results are executed when the <xref:System.Linq.IQueryable%601> object that contains the expression tree is enumerated.  
-  
- The <xref:System.Linq.Queryable> standard query operator methods that return singleton results call <xref:System.Linq.IQueryProvider.Execute%2A>. They pass it a <xref:System.Linq.Expressions.MethodCallExpression> that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.  
-  
+The <xref:System.Linq.IQueryProvider.Execute%2A> method executes queries that return a single value (instead of an enumerable sequence of values). Expression trees that represent queries that return enumerable results are executed when the <xref:System.Linq.IQueryable%601> object that contains the expression tree is enumerated.  
+ 
+The <xref:System.Linq.Queryable> standard query operator methods that return singleton results call <xref:System.Linq.IQueryProvider.Execute%2A>. They pass it a <xref:System.Linq.Expressions.MethodCallExpression> that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.  
+ 
  ]]></format>
         </remarks>
       </Docs>

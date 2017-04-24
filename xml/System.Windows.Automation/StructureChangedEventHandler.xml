@@ -22,10 +22,10 @@
     <summary>Represents the method implemented by the client application to handle the event raised when the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree structure has changed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table describes the information in the event received by the delegate for different structure changes.  
-  
+The following table describes the information in the event received by the delegate for different structure changes.  
+ 
 |`e.structureChangeType`|`sender`|`e.runtimeId`|  
 |-----------------------------|--------------|-------------------|  
 |<xref:System.Windows.Automation.StructureChangeType>|The child that was added.|The child that was added.|  
@@ -33,7 +33,7 @@
 |<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were added.|The parent of the children that were added.|  
 |<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were removed.|The parent of the children that were removed.|  
 |<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were invalidated.|The parent of the children that were invalidated|  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

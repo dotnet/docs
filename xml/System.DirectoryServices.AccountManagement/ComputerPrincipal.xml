@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class and assigns it to the specified context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The computer principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
-  
+The computer principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class by using the specified context, SAM account name, password, and enabled value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The computer principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
-  
+The computer principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
+The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
+The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
+The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
+The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,10 +289,10 @@
         <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
+The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,10 +324,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class. The Context property must be set on the object prior to calling <see cref="M:System.DirectoryServices.AccountManagement.Principal.Save" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The computer principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
-  
+The computer principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

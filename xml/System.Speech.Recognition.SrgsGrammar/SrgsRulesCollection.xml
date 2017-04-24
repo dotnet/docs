@@ -18,10 +18,10 @@
     <summary>Represents a collection of <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After you define the content for an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object, you must add it to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> collection of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add%2A> method. An <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> cannot be used for recognition until it has been added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> collection of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance.  
-  
+After you define the content for an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object, you must add it to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> collection of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add%2A> method. An <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> cannot be used for recognition until it has been added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> collection of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -18,10 +18,10 @@
     <summary>Used to access the Event Log service on the local computer or a remote computer so you can manage and gather information about the event logs and event providers on the computer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/en-us/5231a436-4cf2-4539-90d2-a04813aba069), [How to: Retrieve Information About an Event Publisher](http://msdn.microsoft.com/en-us/2a3e897f-25a9-4dad-8541-171ac49970a3) or [How to: Configure and Read Event Log Properties](http://msdn.microsoft.com/en-us/2d2b00b3-2d1d-4567-a47e-3f5a7c1955ac).  
-  
+For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/en-us/5231a436-4cf2-4539-90d2-a04813aba069), [How to: Retrieve Information About an Event Publisher](http://msdn.microsoft.com/en-us/2a3e897f-25a9-4dad-8541-171ac49970a3) or [How to: Configure and Read Event Log Properties](http://msdn.microsoft.com/en-us/2d2b00b3-2d1d-4567-a47e-3f5a7c1955ac).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -133,10 +133,10 @@
         <summary>Clears events from the specified event log.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
-  
+For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
         <summary>Clears events from the specified event log, and saves the cleared events to the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
-  
+For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,15 +299,15 @@
         <summary>Exports events and their messages into an external log file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event messages are exported in the default language.  
+The event messages are exported in the default language.  
+ 
   
-   
-  
+ 
 ## Examples  
- For example code using this class, see [How to: Export, Archive, and Clear Event Logs](https://msdn.microsoft.com/library/bb671203.aspx).  
-  
+For example code using this class, see [How to: Export, Archive, and Clear Event Logs](https://msdn.microsoft.com/library/bb671203.aspx).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,10 +343,10 @@
         <summary>Exports events and their messages into an external log file. A flag can be set to indicate that the method will continue exporting events even if the specified query fails for some logs. The event messages are exported in the specified language.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For example code using this class, see [How to: Export, Archive, and Clear Event Logs](https://msdn.microsoft.com/library/bb671203.aspx).  
-  
+For example code using this class, see [How to: Export, Archive, and Clear Event Logs](https://msdn.microsoft.com/library/bb671203.aspx).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,10 +450,10 @@
         <summary>Clears events from the specified event log.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
-  
+For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -56,10 +56,10 @@
         <summary>Adds the specified activity to the metadata’s list of child activities.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An activity added using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> is a child activity that the parent activity can schedule directly. These activities are to be provided by the consumer of the activity. An example of this is the <xref:System.Activities.Statements.Sequence.Activities%2A> collection of a <xref:System.Activities.Statements.Sequence> activity. These activities (and any activities they add using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A>) have access to variables added through <xref:System.Activities.NativeActivityMetadata.AddVariable%2A>.  
-  
+An activity added using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> is a child activity that the parent activity can schedule directly. These activities are to be provided by the consumer of the activity. An example of this is the <xref:System.Activities.Statements.Sequence.Activities%2A> collection of a <xref:System.Activities.Statements.Sequence> activity. These activities (and any activities they add using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A>) have access to variables added through <xref:System.Activities.NativeActivityMetadata.AddVariable%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
         <summary>Adds the specified extension provider to the collection of default extension providers for the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the host does not provide an extension of type `T`, then this extension provider is evaluated to provide one.  
-  
+If the host does not provide an extension of type `T`, then this extension provider is evaluated to provide one.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <summary>Adds the specified activity to the metadata’s list of implementation activities.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An activity added using <xref:System.Activities.NativeActivityMetadata.AddImplementationChild%2A> is a child activity that the parent activity can schedule directly.  These activities are implementation details of the activity. These activities (and any activities they add using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A>) have access to this activity’s arguments as well as variables added through <xref:System.Activities.NativeActivityMetadata.AddImplementationVariable%2A>.  
-  
+An activity added using <xref:System.Activities.NativeActivityMetadata.AddImplementationChild%2A> is a child activity that the parent activity can schedule directly.  These activities are implementation details of the activity. These activities (and any activities they add using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A>) have access to this activity’s arguments as well as variables added through <xref:System.Activities.NativeActivityMetadata.AddImplementationVariable%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,10 +257,10 @@
         <summary>Adds the specified activity to the metadata’s list of imported child activities.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An imported child activity is a child activity that the parent activity does not schedule directly. Rather, then parent uses this activity to configure some other child activity.  
-  
+An imported child activity is a child activity that the parent activity does not schedule directly. Rather, then parent uses this activity to configure some other child activity.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,10 +352,10 @@
         <summary>Adds the specified validation error to the metadata’s collection of validation errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -380,10 +380,10 @@
         <summary>Adds a validation error to the metadata’s collection of validation errors using the specified description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -408,10 +408,10 @@
         <summary>Adds the specified variable to the metadata’s collection of variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Variables added using this method are considered part of the activity’s publicly configurable surface, that is, they are to be provided by the consumer of the activity. An activity’s implementation cannot access variables added using this method. Activities added through <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddChild%2A> (and any of their non-implementation child activities) can access variables added using this method.  
-  
+Variables added using this method are considered part of the activity’s publicly configurable surface, that is, they are to be provided by the consumer of the activity. An activity’s implementation cannot access variables added using this method. Activities added through <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddChild%2A> (and any of their non-implementation child activities) can access variables added using this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -521,10 +521,10 @@
         <returns>A collection of arguments.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Argument> and returns them in a collection.  
-  
+This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Argument> and returns them in a collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -547,10 +547,10 @@
         <returns>A collection of child activities.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Activity>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Activity>, and returns them in a collection.  
-  
+This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Activity>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Activity>, and returns them in a collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -573,10 +573,10 @@
         <returns>A collection of delegates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.ActivityDelegate>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.ActivityDelegate>, and returns them in a collection.  
-  
+This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.ActivityDelegate>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.ActivityDelegate>, and returns them in a collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -618,10 +618,10 @@
         <returns>A collection of variables.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Variable>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Variable>, and returns them in a collection.  
-  
+This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Variable>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Variable>, and returns them in a collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -715,10 +715,10 @@
         <summary>Specifies that the activity requires an extension of the specified type at runtime.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the host fails to provide an extension of the specified type, validation fails.  
-  
+If the host fails to provide an extension of the specified type, validation fails.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -748,10 +748,10 @@
         <summary>Specifies that the activity requires an extension of the specified generic type at runtime.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the host fails to provide an extension of the specified type, validation fails.  
-  
+If the host fails to provide an extension of the specified type, validation fails.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -797,10 +797,10 @@
         <summary>Adds the specified collection as child activities of the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddChild%2A> for each item in the collection.  
-  
+This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddChild%2A> for each item in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -825,10 +825,10 @@
         <summary>Adds the specified collection as delegates of the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddDelegate%2A> for each item in the collection.  
-  
+This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddDelegate%2A> for each item in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -853,10 +853,10 @@
         <summary>Adds the specified collection as implementation child activities of the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImplementationChild%2A> for each item in the collection.  
-  
+This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImplementationChild%2A> for each item in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -881,10 +881,10 @@
         <summary>Adds the specified collection as implementation delegates of the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImplementationDelegate%2A> for each item in the collection.  
-  
+This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImplementationDelegate%2A> for each item in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -909,10 +909,10 @@
         <summary>Adds the specified collection as implementation variables of the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImplementationVariable%2A> for each item in the collection.  
-  
+This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImplementationVariable%2A> for each item in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -937,10 +937,10 @@
         <summary>Adds the specified collection as imported child activities of the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A> for each item in the collection.  
-  
+This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A> for each item in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -965,10 +965,10 @@
         <summary>Adds the specified collection as imported delegates of the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImportedDelegate%2A> for each item in the collection.  
-  
+This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImportedDelegate%2A> for each item in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1024,10 +1024,10 @@
         <summary>Adds a validation error to the metadata’ collection of validation errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

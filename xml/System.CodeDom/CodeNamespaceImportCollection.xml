@@ -26,19 +26,19 @@
     <summary>Represents a collection of <see cref="T:System.CodeDom.CodeNamespaceImport" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeNamespaceImportCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeNamespaceImport> objects.  
+The <xref:System.CodeDom.CodeNamespaceImportCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeNamespaceImport> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates some of the members of the <xref:System.CodeDom.CodeNamespaceImportCollection> class. The example initializes a new instance of the class, adds <xref:System.CodeDom.CodeNamespaceImport> objects to it, and gets the total number of objects in the collection.  
-  
- [!code-cpp[CodeDomSampleBatch#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#3)]
- [!code-csharp[CodeDomSampleBatch#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#3)]
- [!code-vb[CodeDomSampleBatch#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#3)]  
-  
+The following example demonstrates some of the members of the <xref:System.CodeDom.CodeNamespaceImportCollection> class. The example initializes a new instance of the class, adds <xref:System.CodeDom.CodeNamespaceImport> objects to it, and gets the total number of objects in the collection.  
+ 
+[!code-cpp[CodeDomSampleBatch#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#3)]
+[!code-csharp[CodeDomSampleBatch#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#3)]
+[!code-vb[CodeDomSampleBatch#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,14 +78,14 @@
         <summary>Adds a <see cref="T:System.CodeDom.CodeNamespaceImport" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to add a <xref:System.CodeDom.CodeNamespaceImport> object to a <xref:System.CodeDom.CodeNamespaceImportCollection> instance.  
-  
- [!code-cpp[CodeDomSampleBatch#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#5)]
- [!code-csharp[CodeDomSampleBatch#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#5)]
- [!code-vb[CodeDomSampleBatch#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#5)]  
-  
+The following example demonstrates how to add a <xref:System.CodeDom.CodeNamespaceImport> object to a <xref:System.CodeDom.CodeNamespaceImportCollection> instance.  
+ 
+[!code-cpp[CodeDomSampleBatch#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#5)]
+[!code-csharp[CodeDomSampleBatch#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#5)]
+[!code-vb[CodeDomSampleBatch#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,14 +110,14 @@
         <summary>Adds a set of <see cref="T:System.CodeDom.CodeNamespaceImport" /> objects to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeNamespaceImportCollection.AddRange%2A> method to add the members of a <xref:System.CodeDom.CodeNamespaceImport> array to a <xref:System.CodeDom.CodeNamespaceImportCollection>.  
-  
- [!code-cpp[CodeDomSampleBatch#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#6)]
- [!code-csharp[CodeDomSampleBatch#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#6)]
- [!code-vb[CodeDomSampleBatch#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#6)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeNamespaceImportCollection.AddRange%2A> method to add the members of a <xref:System.CodeDom.CodeNamespaceImport> array to a <xref:System.CodeDom.CodeNamespaceImportCollection>.  
+ 
+[!code-cpp[CodeDomSampleBatch#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#6)]
+[!code-csharp[CodeDomSampleBatch#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#6)]
+[!code-vb[CodeDomSampleBatch#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -159,14 +159,14 @@
         <value>The number of namespaces in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code gets the count of items in a <xref:System.CodeDom.CodeNamespaceImportCollection> object.  
-  
- [!code-cpp[CodeDomSampleBatch#7](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#7)]
- [!code-csharp[CodeDomSampleBatch#7](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#7)]
- [!code-vb[CodeDomSampleBatch#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#7)]  
-  
+The following code gets the count of items in a <xref:System.CodeDom.CodeNamespaceImportCollection> object.  
+ 
+[!code-cpp[CodeDomSampleBatch#7](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#7)]
+[!code-csharp[CodeDomSampleBatch#7](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#7)]
+[!code-vb[CodeDomSampleBatch#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
         <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,10 +338,10 @@
         <returns>The position at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,10 +363,10 @@
         <summary>Removes all items from the <see cref="T:System.Collections.IList" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,10 +393,10 @@
           <see langword="true" /> if the value is in the list; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,10 +422,10 @@
         <returns>The index of <paramref name="value" /> if it is found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -452,10 +452,10 @@
         <summary>Inserts an item in the <see cref="T:System.Collections.IList" /> at the specified position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,10 +540,10 @@
         <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.IList" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -568,10 +568,10 @@
         <summary>Removes the element at the specified index of the <see cref="T:System.Collections.IList" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.CodeNamespaceImportCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

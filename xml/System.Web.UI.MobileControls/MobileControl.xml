@@ -44,13 +44,13 @@
     <summary>Provides a base class for all ASP.NET mobile control classes. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As the base class for all ASP.NET mobile controls, the <xref:System.Web.UI.MobileControls.MobileControl> class primarily contains style and context information common to all controls. For more information about style and context information, see the <xref:System.Web.UI.WebControls.Style> and <xref:System.Web.UI.MobileControls.Form> classes.  
-  
+As the base class for all ASP.NET mobile controls, the <xref:System.Web.UI.MobileControls.MobileControl> class primarily contains style and context information common to all controls. For more information about style and context information, see the <xref:System.Web.UI.WebControls.Style> and <xref:System.Web.UI.MobileControls.Form> classes.  
+ 
 > [!NOTE]
 >  Because this class derives from the ASP.NET <xref:System.Web.UI.Control> base class, all <xref:System.Web.UI.Control> base class properties, methods, and events are available in each of the mobile controls.  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -99,10 +99,10 @@
         <value>An adapter specific to the device on which the page will be displayed, which is also usually specific to the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.IControlAdapter> instance returned is specific to the current <xref:System.Web.UI.MobileControls.MobileControl> object. Any child controls of the current control will use their specific adapter as well.  
-  
+The <xref:System.Web.UI.MobileControls.IControlAdapter> instance returned is specific to the current <xref:System.Web.UI.MobileControls.MobileControl> object. Any child controls of the current control will use their specific adapter as well.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,18 +150,18 @@
         <summary>Adds the set of forms that contains links to the specified control to the provided list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a form contains navigation elements that activate another form without interaction from the server, it is considered a linked form. There are several criteria for a form to be considered linked. For example, if the following three conditions are met, Form B is considered to be linked to Form A:  
-  
+When a form contains navigation elements that activate another form without interaction from the server, it is considered a linked form. There are several criteria for a form to be considered linked. For example, if the following three conditions are met, Form B is considered to be linked to Form A:  
+ 
 -   Form A contains a <xref:System.Web.UI.MobileControls.Link> with its destination as Form B.  
-  
+ 
 -   Form A does not contain an <xref:System.Web.UI.MobileControls.Form.OnDeactivate%2A> event handler.  
-  
+ 
 -   Form B has no <xref:System.Web.UI.MobileControls.Form.OnActivate%2A> event handler.  
-  
- The base implementation does nothing, but other controls, such as the <xref:System.Web.UI.MobileControls.Link>, override the default implementation.  
-  
+ 
+The base implementation does nothing, but other controls, such as the <xref:System.Web.UI.MobileControls.Link>, override the default implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,17 +212,17 @@
         <value>An enumerated value specifying the alignment for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.MobileControl.Alignment%2A> property can be set to any of the following values.  
-  
+The <xref:System.Web.UI.MobileControls.MobileControl.Alignment%2A> property can be set to any of the following values.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |`NotSet`|No alignment is set for the specified object.|  
 |`Alignment.Left`|Aligns to the left.|  
 |`Alignment.Center`|Aligns to the center.|  
 |`Alignment.Right`|Aligns to the right.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,10 +252,10 @@
         <summary>Applies the style properties defined in the page style sheet to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.MobileControl> class does not support theming.  If an attempt to call the <xref:System.Web.UI.MobileControls.MobileControl.ApplyStyleSheetSkin%2A> method is made, a <xref:System.NotSupportedException> is thrown.  
-  
+The <xref:System.Web.UI.MobileControls.MobileControl> class does not support theming.  If an attempt to call the <xref:System.Web.UI.MobileControls.MobileControl.ApplyStyleSheetSkin%2A> method is made, a <xref:System.NotSupportedException> is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -289,10 +289,10 @@
         <value>The specified background color for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the other properties, the <xref:System.Web.UI.MobileControls.MobileControl.BackColor%2A> property is not inherited from its parent. For example, if you set the <xref:System.Web.UI.MobileControls.MobileControl.BackColor%2A> property to cyan on a parent control, a child control will not inherit a background color of cyan; you must explicitly set the child control's <xref:System.Web.UI.MobileControls.MobileControl.BackColor%2A> property to cyan, or you must set the <xref:System.Web.UI.MobileControls.MobileControl.BackColor%2A> property of the parent control and apply the style sheet to the child control. This is consistent with the behavior of cascading style sheets.  
-  
+Unlike the other properties, the <xref:System.Web.UI.MobileControls.MobileControl.BackColor%2A> property is not inherited from its parent. For example, if you set the <xref:System.Web.UI.MobileControls.MobileControl.BackColor%2A> property to cyan on a parent control, a child control will not inherit a background color of cyan; you must explicitly set the child control's <xref:System.Web.UI.MobileControls.MobileControl.BackColor%2A> property to cyan, or you must set the <xref:System.Web.UI.MobileControls.MobileControl.BackColor%2A> property of the parent control and apply the style sheet to the child control. This is consistent with the behavior of cascading style sheets.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,14 +326,14 @@
           <see langword="true" /> if an additional trailing break is rendered after the control; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Do not set this property to `true` on a <xref:System.Web.UI.MobileControls.Form> control. If you set this property to `true`, the control will throw an exception.  
-  
- This property is ignored by controls for which a trailing break does not make sense. The following table lists the controls that support the <xref:System.Web.UI.MobileControls.MobileControl.BreakAfter%2A> property for certain kinds of devices. The following table shows the controls with the types of devices that support the <xref:System.Web.UI.MobileControls.MobileControl.BreakAfter%2A> property. Check with device manufacturers to determine the effects of this property on their devices.  
-  
+ 
+This property is ignored by controls for which a trailing break does not make sense. The following table lists the controls that support the <xref:System.Web.UI.MobileControls.MobileControl.BreakAfter%2A> property for certain kinds of devices. The following table shows the controls with the types of devices that support the <xref:System.Web.UI.MobileControls.MobileControl.BreakAfter%2A> property. Check with device manufacturers to determine the effects of this property on their devices.  
+ 
 |Control|Device With HTML Browser|Device With WML Browser|Device with WML/UP Browser|  
 |-------------|------------------------------|-----------------------------|---------------------------------|  
 |`AdRotator`||||  
@@ -351,7 +351,7 @@
 |`TextView`|Yes|Yes||  
 |`TextViewElement`|Yes|Yes||  
 |`Validator`|Yes|Yes|Yes|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,10 +395,10 @@
         <returns>The style object to be associated with the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Inheriting classes can override this method to return a more specific style class.  
-  
+Inheriting classes can override this method to return a more specific style class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <summary>Called by base classes to create a templated UI. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation calls the <xref:System.Web.UI.MobileControls.MobileControl.CreateTemplatedUI%2A> method of the corresponding control adapter, which can in turn call back the control's <xref:System.Web.UI.MobileControls.MobileControl.CreateDefaultTemplatedUI%2A> method or create its own device-specific templated UI.  
-  
+The default implementation calls the <xref:System.Web.UI.MobileControls.MobileControl.CreateTemplatedUI%2A> method of the corresponding control adapter, which can in turn call back the control's <xref:System.Web.UI.MobileControls.MobileControl.CreateDefaultTemplatedUI%2A> method or create its own device-specific templated UI.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,10 +459,10 @@
         <value>The set of custom attributes defined for the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must set the <xref:System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes%2A> to `true` to enable custom attributes.  
-  
+You must set the <xref:System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes%2A> to `true` to enable custom attributes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -519,10 +519,10 @@
           <see langword="False " />in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.MobileControl> class does not support theming.  If an attempt to set the <xref:System.Web.UI.MobileControls.MobileControl.EnableTheming%2A> property is made, a <xref:System.NotSupportedException> exception is thrown.  
-  
+The <xref:System.Web.UI.MobileControls.MobileControl> class does not support theming.  If an attempt to set the <xref:System.Web.UI.MobileControls.MobileControl.EnableTheming%2A> property is made, a <xref:System.NotSupportedException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt to set the <see cref="P:System.Web.UI.MobileControls.MobileControl.EnableTheming" /> property is made.</exception>
@@ -545,24 +545,24 @@
         <summary>Use this method to ensure that the templates are instantiated to allow programmatic access to the instantiated contents of a template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is overridden by the <xref:System.Web.UI.MobileControls.List> and <xref:System.Web.UI.MobileControls.ObjectList> classes.  
-  
+This method is overridden by the <xref:System.Web.UI.MobileControls.List> and <xref:System.Web.UI.MobileControls.ObjectList> classes.  
+ 
 ```  
 public override void EnsureTemplatedUI()  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobileControl.EnsureTemplatedUI%2A> method to access the contents of the `Label1` control within details view of the <xref:System.Web.UI.MobileControls.ObjectList>. This complete example also demonstrates several other features of the <xref:System.Web.UI.MobileControls.MobileControl> class.  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobileControl.EnsureTemplatedUI%2A> method to access the contents of the `Label1` control within details view of the <xref:System.Web.UI.MobileControls.ObjectList>. This complete example also demonstrates several other features of the <xref:System.Web.UI.MobileControls.MobileControl> class.  
+ 
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the ASP.NET Web page code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
-  
+ 
 <!-- TODO: review snippet reference  [!CODE [MobileMobileFormSample#1](MobileMobileFormSample#1)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -595,10 +595,10 @@ public override void EnsureTemplatedUI()
         <value>The first page of the form on which this control appears.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used for form pagination.  
-  
+This property is used for form pagination.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -631,17 +631,17 @@ public override void EnsureTemplatedUI()
         <value>The <see cref="T:System.Web.UI.MobileControls.FontInfo" /> that contains the font information about the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.FontInfo> class has the following properties.  
-  
+The <xref:System.Web.UI.MobileControls.FontInfo> class has the following properties.  
+ 
 |Property|Description|  
 |--------------|-----------------|  
 |<xref:System.Web.UI.MobileControls.FontInfo.Bold%2A>|The font is bold.|  
 |<xref:System.Web.UI.MobileControls.FontInfo.Italic%2A>|The font is italic.|  
 |<xref:System.Web.UI.MobileControls.FontInfo.Name%2A>|An identifier for this font instance.|  
 |<xref:System.Web.UI.MobileControls.FontInfo.Size%2A>|The font size.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -674,14 +674,14 @@ public override void EnsureTemplatedUI()
         <value>The specified foreground color for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.UI.MobileControls.MobileControl.ForeColor%2A> property to display text in different colors for all the controls and classes listed in the Inheritance section that follows. For example, in the <xref:System.Web.UI.MobileControls.AdRotator>, setting the <xref:System.Web.UI.MobileControls.MobileControl.ForeColor%2A> property changes the color of the text in the control; in the <xref:System.Web.UI.MobileControls.Calendar>, it changes the color of the text in the calendar; and in the <xref:System.Web.UI.MobileControls.ValidationSummary>, it changes the color of the text of the error messages.  
-  
- The strings that can be used for colors are a set of fixed colors and hexadecimal RGB values. These values can also be specified in the form "#RRGGBB." For example, "#bb7023".  
-  
- You can also use the Microsoft Windows color constants. For specific details, see <xref:System.Drawing.SystemColors>.  
-  
+You can use the <xref:System.Web.UI.MobileControls.MobileControl.ForeColor%2A> property to display text in different colors for all the controls and classes listed in the Inheritance section that follows. For example, in the <xref:System.Web.UI.MobileControls.AdRotator>, setting the <xref:System.Web.UI.MobileControls.MobileControl.ForeColor%2A> property changes the color of the text in the control; in the <xref:System.Web.UI.MobileControls.Calendar>, it changes the color of the text in the calendar; and in the <xref:System.Web.UI.MobileControls.ValidationSummary>, it changes the color of the text of the error messages.  
+ 
+The strings that can be used for colors are a set of fixed colors and hexadecimal RGB values. These values can also be specified in the form "#RRGGBB." For example, "#bb7023".  
+ 
+You can also use the Microsoft Windows color constants. For specific details, see <xref:System.Drawing.SystemColors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -714,12 +714,12 @@ public override void EnsureTemplatedUI()
         <value>The form that contains this control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobileControl.Form%2A> property to determine whether the active form is a particular form in the ASP.NET mobile Web application. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.MobileControl.EnsureTemplatedUI%2A> property.  
-  
-  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobileControl.Form%2A> property to determine whether the active form is a particular form in the ASP.NET mobile Web application. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.MobileControl.EnsureTemplatedUI%2A> property.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">the control is not in a form as required. The only mobile controls not required to be in a <see cref="T:System.Web.UI.MobileControls.Form" /> are a <see cref="T:System.Web.UI.MobileControls.Form" /> and a <see cref="T:System.Web.UI.MobileControls.StyleSheet" />.</exception>
@@ -746,10 +746,10 @@ public override void EnsureTemplatedUI()
         <returns>A <see cref="T:System.String" /> representing the value of the specified attribute; if no attribute with the specified <paramref name="name" /> exists, then <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.MobileControl.GetAttribute%2A> method returns attributes stored in the <xref:System.Web.UI.MobileControls.MobileControl.CustomAttributes%2A> property.  If <xref:System.Web.UI.MobileControls.MobileControl.CustomAttributes%2A> is `null`, then <xref:System.Web.UI.MobileControls.MobileControl.GetAttribute%2A> will also return `null`.  
-  
+The <xref:System.Web.UI.MobileControls.MobileControl.GetAttribute%2A> method returns attributes stored in the <xref:System.Web.UI.MobileControls.MobileControl.CustomAttributes%2A> property.  If <xref:System.Web.UI.MobileControls.MobileControl.CustomAttributes%2A> is `null`, then <xref:System.Web.UI.MobileControls.MobileControl.GetAttribute%2A> will also return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -775,10 +775,10 @@ public override void EnsureTemplatedUI()
         <returns>The template with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns `null` if the control is not templated, or if the template does not exist in the selected template set.  
-  
+Returns `null` if the control is not templated, or if the template does not exist in the selected template set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -830,15 +830,15 @@ public override void EnsureTemplatedUI()
           <see langword="true" /> if the control submits the form; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Mobile controls, such as the <xref:System.Web.UI.MobileControls.Command>, can override this method to determine whether this is a control used for form submission.  
-  
- Other controls can be extended by providing logic to programmatically determine whether or not they must be `submit` controls, for example, by checking for specific properties.  
-  
+Mobile controls, such as the <xref:System.Web.UI.MobileControls.Command>, can override this method to determine whether this is a control used for form submission.  
+ 
+Other controls can be extended by providing logic to programmatically determine whether or not they must be `submit` controls, for example, by checking for specific properties.  
+ 
 > [!NOTE]
 >  A control is considered to be a form-submit control only if it implements <xref:System.Web.UI.IPostBackEventHandler> method to capture the postback event. Otherwise, it is not registered for the default event handler, even if the method returns `true`.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -872,10 +872,10 @@ public override void EnsureTemplatedUI()
           <see langword="true" /> if the control has an active template set; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To be considered templated, an object must have a [\<DeviceSpecific> element](http://msdn.microsoft.com/en-us/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) with a [\<Choice> element](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) successfully evaluated for the target device. The selected choice must have templates defined.  
-  
+To be considered templated, an object must have a [\<DeviceSpecific> element](http://msdn.microsoft.com/en-us/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) with a [\<Choice> element](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) successfully evaluated for the target device. The selected choice must have templates defined.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -931,10 +931,10 @@ public override void EnsureTemplatedUI()
         <value>The last page of the form on which the specified control is displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used for form pagination.  
-  
+This property is used for form pagination.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,10 +1009,10 @@ public override void EnsureTemplatedUI()
         <value>The containing page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is similar to the Web Forms <xref:System.Web.UI.Control.Page%2A> property except that it is strongly typed.  
-  
+This property is similar to the Web Forms <xref:System.Web.UI.Control.Page%2A> property except that it is strongly typed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">the control is not in a <see cref="T:System.Web.UI.MobileControls.MobilePage" />. (Only occurs at run time.)</exception>
@@ -1080,12 +1080,12 @@ public override void EnsureTemplatedUI()
         <summary>Raises the <see cref="E:System.Web.UI.Control.Unload" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method notifies the server control that it should perform actions common to each HTTP request for the page it is associated with, such as setting up a database query. At this stage in the page lifecycle, server controls in the hierarchy are created and initialized, view state is restored, and form controls reflect client-side data.  
-  
- Use the <xref:System.Web.UI.Page.IsPostBack%2A> property to determine whether the page is being loaded in response to a client postback, or if it is being loaded and accessed for the first time.  
-  
+This method notifies the server control that it should perform actions common to each HTTP request for the page it is associated with, such as setting up a database query. At this stage in the page lifecycle, server controls in the hierarchy are created and initialized, view state is restored, and form controls reflect client-side data.  
+ 
+Use the <xref:System.Web.UI.Page.IsPostBack%2A> property to determine whether the page is being loaded in response to a client postback, or if it is being loaded and accessed for the first time.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">the control contains custom attributes and the current page does not allow custom attributes on controls.</exception>
@@ -1113,10 +1113,10 @@ public override void EnsureTemplatedUI()
         <summary>Paginates a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When all the contents of a control cannot be displayed on the browsing device's screen at once, this function is called to paginate the control. The index numbers are zero-based.  
-  
+When all the contents of a control cannot be displayed on the browsing device's screen at once, this function is called to paginate the control. The index numbers are zero-based.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1286,10 +1286,10 @@ public override void EnsureTemplatedUI()
         <summary>Outputs the content of a server control's child controls using the provided <see cref="T:System.Web.UI.HtmlTextWriter" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method iterates through the child controls and renders each control.  
-  
+This method iterates through the child controls and renders each control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1315,13 +1315,13 @@ public override void EnsureTemplatedUI()
         <returns>The form referenced by the name parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you have a link of the format "#form1" in a control contained in a user control, this method looks for a form with `id=form1` in the user control. If not found, it goes up the chain of any nested user controls, and then searches for the form on the page.  
-  
+If you have a link of the format "#form1" in a control contained in a user control, this method looks for a form with `id=form1` in the user control. If not found, it goes up the chain of any nested user controls, and then searches for the form on the page.  
+ 
 > [!NOTE]
 >  Scoping rules walk up, not down, the chain. If you want to browse to a form that is contained in a user control, you must use the ":" syntax used by <xref:System.Web.UI.Control.FindControl%2A> method to refer to the form.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">
@@ -1368,10 +1368,10 @@ public override void EnsureTemplatedUI()
         <returns>An object containing the altered private view state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override this method to store a private view state. In addition to information saved with the ordinary view state, ASP.NET mobile Web Forms store information such as whether or not the form is paginated. This added information is stored in the private view state and is stored on the client rather than the server. A private view state is saved in an optimized manner. Default behavior, such as making the first form the active form, is never included in the saved private view state.  
-  
+You can override this method to store a private view state. In addition to information saved with the ordinary view state, ASP.NET mobile Web Forms store information such as whether or not the form is paginated. This added information is stored in the private view state and is stored on the client rather than the server. A private view state is saved in an optimized manner. Default behavior, such as making the first form the active form, is never included in the saved private view state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1417,10 +1417,10 @@ public override void EnsureTemplatedUI()
         <summary>Designates an attribute and its value to assign to the <see cref="T:System.Web.UI.MobileControls.MobileControl" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The attributes set through calls to the <xref:System.Web.UI.MobileControls.MobileControl.SetAttribute%2A> method are stored in the <xref:System.Web.UI.MobileControls.MobileControl.CustomAttributes%2A> property.  
-  
+The attributes set through calls to the <xref:System.Web.UI.MobileControls.MobileControl.SetAttribute%2A> method are stored in the <xref:System.Web.UI.MobileControls.MobileControl.CustomAttributes%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1447,10 +1447,10 @@ public override void EnsureTemplatedUI()
         <value>An empty <see cref="T:System.String" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.MobileControl> class does not support theming.  If an attempt to set the <xref:System.Web.UI.MobileControls.MobileControl.SkinID%2A> property is made, a <xref:System.NotSupportedException> exception is thrown.  
-  
+The <xref:System.Web.UI.MobileControls.MobileControl> class does not support theming.  If an attempt to set the <xref:System.Web.UI.MobileControls.MobileControl.SkinID%2A> property is made, a <xref:System.NotSupportedException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt to set the <see cref="P:System.Web.UI.MobileControls.MobileControl.SkinID" /> property is made.</exception>
@@ -1513,10 +1513,10 @@ public override void EnsureTemplatedUI()
         <value>A reference to the style properties for a control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property must be the <xref:System.Web.UI.MobileControls.Style.Name%2A> property of a <xref:System.Web.UI.MobileControls.Style> object. You can use the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property to share styles across controls, either by using inheritance or by using the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property of a style sheet. For more information, see the Styles documentation. To find out how to create a new style, see [Creating New Styles](http://msdn.microsoft.com/en-us/da7f9825-3cc7-4c0f-9800-7d3cb15041d1).  
-  
+The value of the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property must be the <xref:System.Web.UI.MobileControls.Style.Name%2A> property of a <xref:System.Web.UI.MobileControls.Style> object. You can use the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property to share styles across controls, either by using inheritance or by using the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property of a style sheet. For more information, see the Styles documentation. To find out how to create a new style, see [Creating New Styles](http://msdn.microsoft.com/en-us/da7f9825-3cc7-4c0f-9800-7d3cb15041d1).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1542,10 +1542,10 @@ public override void EnsureTemplatedUI()
         <returns>The value of the specified attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileControl> instance is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileControl> instance is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1572,10 +1572,10 @@ public override void EnsureTemplatedUI()
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileControl> instance is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileControl> instance is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1626,10 +1626,10 @@ public override void EnsureTemplatedUI()
         <value>The approximate weight of the control, in characters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used for form pagination. A value of -1 indicates that the default weight for the element must be used. For further information, see [Pagination Support](http://msdn.microsoft.com/en-us/78f2786d-0b5b-4760-9616-5027357713c2).  
-  
+This property is used for form pagination. A value of -1 indicates that the default weight for the element must be used. For further information, see [Pagination Support](http://msdn.microsoft.com/en-us/78f2786d-0b5b-4760-9616-5027357713c2).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1659,23 +1659,23 @@ public override void EnsureTemplatedUI()
         <value>An enumerated value that specifies the wrapping mode for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table contains the definitions of the <xref:System.Web.UI.MobileControls.Wrapping> enumeration.  
-  
+The following table contains the definitions of the <xref:System.Web.UI.MobileControls.Wrapping> enumeration.  
+ 
 |Enumerations|Value|Description|  
 |------------------|-----------|-----------------|  
 |`NotSet`|0|No size is set for the specified object. This is the default value.|  
 |`Wrap`|1|Wrap to the next line.|  
 |`NoWrap`|2|The text is not wrapped to the next line.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobileControl.Wrapping%2A> property by setting the `FirstForm`<xref:System.Web.UI.MobileControls.MobileControl.Wrapping%2A> property based on the capabilities of the browser. This code sample is part of a larger example for the <xref:System.Web.UI.MobileControls.MobileControl.EnsureTemplatedUI%2A> property.  
-  
-  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobileControl.Wrapping%2A> property by setting the `FirstForm`<xref:System.Web.UI.MobileControls.MobileControl.Wrapping%2A> property based on the capabilities of the browser. This code sample is part of a larger example for the <xref:System.Web.UI.MobileControls.MobileControl.EnsureTemplatedUI%2A> property.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>

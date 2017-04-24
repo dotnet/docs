@@ -50,10 +50,10 @@
         <value>A URI that indicates the intended recipient of the message header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is empty, the header is interpreted as targeted for the ultimate recipient of the message.  
-  
+If this property is empty, the header is interpreted as targeted for the ultimate recipient of the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,10 +77,10 @@
           <see langword="true" /> if the message header represents reference parameters of an endpoint reference; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A reference parameter corresponds to the <`ReferenceParameters`> element described in the in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkID=96163).  
-  
+A reference parameter corresponds to the <`ReferenceParameters`> element described in the in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkID=96163).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
           <see langword="true" /> if processing the message header is mandatory; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `true` and the message receiver cannot interpret the message header, the message is not processed and an exception is thrown. If this property is `false`, the receiver can ignore the message header and continue processing.  
-  
+If this property is `true` and the message receiver cannot interpret the message header, the message is not processed and an exception is thrown. If this property is `false`, the receiver can ignore the message header and continue processing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
           <see langword="true" /> if the message header can be relayed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SOAP specification defines a header block as one that can be relayed in the forwarded message if the header block is targeted at a role acted on by the SOAP intermediary, but not otherwise processed by the intermediary.  
-  
+The SOAP specification defines a header block as one that can be relayed in the forwarded message if the header block is targeted at a role acted on by the SOAP intermediary, but not otherwise processed by the intermediary.  
+ 
  ]]></format>
         </remarks>
       </Docs>

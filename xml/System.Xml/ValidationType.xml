@@ -18,12 +18,12 @@
     <summary>Specifies the type of validation to perform.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlReader> class can enforce validation using a schema or document type definition (DTD). The <xref:System.Xml.ValidationType> enumeration specifies the type of validation the created <xref:System.Xml.XmlReader> instance should perform. The <xref:System.Xml.XmlReader> instance can be either a validating <xref:System.Xml.XmlReader> object created by the <xref:System.Xml.XmlReader.Create%2A> method, or an <xref:System.Xml.XmlValidatingReader> object.  
-  
- The validation model has three characteristics, strict, informative, and status. Strict, does not allow the mixing of validation types, informative provides a warning if the schema or document type definition (DTD) cannot be found, and status provides warnings if validation cannot be performed for elements and attributes from schemas.  
-  
+The <xref:System.Xml.XmlReader> class can enforce validation using a schema or document type definition (DTD). The <xref:System.Xml.ValidationType> enumeration specifies the type of validation the created <xref:System.Xml.XmlReader> instance should perform. The <xref:System.Xml.XmlReader> instance can be either a validating <xref:System.Xml.XmlReader> object created by the <xref:System.Xml.XmlReader.Create%2A> method, or an <xref:System.Xml.XmlValidatingReader> object.  
+ 
+The validation model has three characteristics, strict, informative, and status. Strict, does not allow the mixing of validation types, informative provides a warning if the schema or document type definition (DTD) cannot be found, and status provides warnings if validation cannot be performed for elements and attributes from schemas.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,12 +54,12 @@
         <summary>Validates if DTD or schema information is found.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This field is obsolete in the Microsoft .NET Framework version 2.0 and is applicable only to the <xref:System.Xml.XmlValidatingReader> class.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,12 +106,12 @@
         <summary>No validation is performed. This setting creates an XML 1.0 compliant non-validating parser.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default attributes are reported and general entities can be resolved by calling <xref:System.Xml.XmlReader.ResolveEntity%2A>. The DOCTYPE is not used for validation purposes.  
-  
- No validation errors are thrown.  
-  
+Default attributes are reported and general entities can be resolved by calling <xref:System.Xml.XmlReader.ResolveEntity%2A>. The DOCTYPE is not used for validation purposes.  
+ 
+No validation errors are thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,12 +163,12 @@
         <summary>Validate according to XML-Data Reduced (XDR) schemas, including inline XDR schemas. XDR schemas are recognized using the <see langword="x-schema" /> namespace prefix or the <see cref="P:System.Xml.XmlValidatingReader.Schemas" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This field is obsolete in the Microsoft .NET Framework version 2.0 and is applicable only to the <xref:System.Xml.XmlValidatingReader> class.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

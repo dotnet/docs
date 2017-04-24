@@ -28,18 +28,18 @@
     <summary>Specifies the display name for a property, event, or public void method which takes no arguments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is the name of the property or event. The default implementation of <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> uses reflection to search the public properties and public void methods that take no arguments. <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> searches for the <xref:System.ComponentModel.DisplayNameAttribute> on each property and method and, if found, uses that string instead of the property or method name.  
+The default is the name of the property or event. The default implementation of <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> uses reflection to search the public properties and public void methods that take no arguments. <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> searches for the <xref:System.ComponentModel.DisplayNameAttribute> on each property and method and, if found, uses that string instead of the property or method name.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.ComponentModel.DisplayNameAttribute> class to change the name of a property called `MisnamedProperty` to `RenamedProperty` in a <xref:System.Windows.Forms.PropertyGrid> control. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
-  
- [!code-csharp[System.ComponentModel.AttributesDemoControl#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#30)]
- [!code-vb[System.ComponentModel.AttributesDemoControl#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#30)]  
-  
+The following code example demonstrates using the <xref:System.ComponentModel.DisplayNameAttribute> class to change the name of a property called `MisnamedProperty` to `RenamedProperty` in a <xref:System.Windows.Forms.PropertyGrid> control. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ 
+[!code-csharp[System.ComponentModel.AttributesDemoControl#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#30)]
+[!code-vb[System.ComponentModel.AttributesDemoControl#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#30)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

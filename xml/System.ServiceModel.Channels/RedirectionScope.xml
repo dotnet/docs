@@ -56,10 +56,10 @@
         <value>The endpoint redirection scope.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The endpoint redirection scope indicates the endpoint and all of its service operations are relocated to the specified location(s).  
-  
+The endpoint redirection scope indicates the endpoint and all of its service operations are relocated to the specified location(s).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <value>The message redirection scope.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The message redirection scope indicates the redirection is valid for a single message. The interpretation of a single message may mean a single message instance or it may mean a specific message type, for example, any message that results in the invocation of a specific service method. This is the default value for <xref:System.ServiceModel.Channels.RedirectionScope>.  
-  
+The message redirection scope indicates the redirection is valid for a single message. The interpretation of a single message may mean a single message instance or it may mean a specific message type, for example, any message that results in the invocation of a specific service method. This is the default value for <xref:System.ServiceModel.Channels.RedirectionScope>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <value>The session redirection scope.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The session redirection scope indicates the redirection is valid for the scope of the logical session. What the application deems a session is not defined in this protocol. An example may be the transport's physical connection lifetime.  
-  
+The session redirection scope indicates the redirection is valid for the scope of the logical session. What the application deems a session is not defined in this protocol. An example may be the transport's physical connection lifetime.  
+ 
  ]]></format>
         </remarks>
       </Docs>

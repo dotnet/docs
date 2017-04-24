@@ -14,10 +14,10 @@
     <summary>Converts to and from the <see cref="T:System.Nullable`1" /> type (using the <see cref="T:System.Boolean" /> type constraint on the generic).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Nullable\<bool> type is used for selection state in certain controls. This converter enables that non-set attribute values do not mean either `true` or `false` but instead mean an unset state.  
-  
+The Nullable\<bool> type is used for selection state in certain controls. This converter enables that non-set attribute values do not mean either `true` or `false` but instead mean an unset state.  
+ 
 <a name="XAMLTextUsage_NullableBoolConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -60,10 +60,10 @@
         <returns>A collection that holds a standard set of valid values. For this implementation, those values are <see langword="true" />, <see langword="false" />, and <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` is not used by this converter and can be `null`.  
-  
+The `context` is not used by this converter and can be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <returns>This implementation always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` is not used by this converter and can be `null`.  
-  
+The `context` is not used by this converter and can be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <returns>This implementation always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` is not used by this converter and can be `null`.  
-  
+The `context` is not used by this converter and can be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

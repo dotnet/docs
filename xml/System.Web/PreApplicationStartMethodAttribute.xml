@@ -19,13 +19,13 @@
     <summary>Provides expanded support for application startup.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 -   There is no guarantee of the order in which the assembly-defined application start methods are called. As a result, each registered start method should be coded to run in isolation and should not depend on side effects from other registered start methods.  
-  
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+ 
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.PreApplicationStartMethodAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method referenced by the `methodName` parameter must be public and can be either an instance method or static method.  
-  
+The method referenced by the `methodName` parameter must be public and can be either an instance method or static method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

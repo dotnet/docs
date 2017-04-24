@@ -14,16 +14,16 @@
     <summary>Result from using <see cref="T:System.Windows.Documents.TextEffectResolver" /> to set an effect on text. This consists of the <see cref="T:System.Windows.Media.TextEffect" /> created and the <see cref="T:System.Windows.DependencyObject" /> to which the <see cref="T:System.Windows.Media.TextEffect" /> should be set.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
-  
- [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
-  
- Below is the code behind for the example.  
-  
- [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
-  
+The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+ 
+[!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+ 
+Below is the code behind for the example.  
+ 
+[!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,16 +45,16 @@
         <summary>Disables the <see cref="T:System.Windows.Media.TextEffect" /> on the effect target.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
-  
- [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
-  
- Below is the code behind for the example.  
-  
- [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
-  
+The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+ 
+[!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+ 
+Below is the code behind for the example.  
+ 
+[!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,21 +94,21 @@
         <summary>Enables the <see cref="T:System.Windows.Media.TextEffect" /> on the target text.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Media.TextEffect> is already enabled, the method will be a no-op (no operation).  
+If the <xref:System.Windows.Media.TextEffect> is already enabled, the method will be a no-op (no operation).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
-  
- [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
-  
- Below is the code behind for the example.  
-  
- [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
-  
+The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+ 
+[!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+ 
+Below is the code behind for the example.  
+ 
+[!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

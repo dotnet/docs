@@ -19,10 +19,10 @@
     <summary>Provides a mechanism for enumerating all available instances of database servers within the local network.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides the basis for other strongly typed data source enumerators.  
-  
+This class provides the basis for other strongly typed data source enumerators.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Data.Common.DbDataSourceEnumerator" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.DbDataSourceEnumerator> class provides the basis for strongly typed enumerators such as <xref:System.Data.Sql.SqlDataSourceEnumerator>.  
-  
+The <xref:System.Data.Common.DbDataSourceEnumerator> class provides the basis for strongly typed enumerators such as <xref:System.Data.Sql.SqlDataSourceEnumerator>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,10 +77,10 @@
         <returns>Returns a <see cref="T:System.Data.DataTable" /> containing information about the visible instances of the associated data source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The table returned by this method contains the following columns, all of which contain strings. Individual providers may add additional columns.  
-  
+The table returned by this method contains the following columns, all of which contain strings. Individual providers may add additional columns.  
+ 
 |Column ordinal|Column|Description|  
 |--------------------|------------|-----------------|  
 |0|**ServerName**|Name of the server.|  
@@ -88,7 +88,7 @@
 |2|**IsClustered**|Indicates whether the server is part of a cluster.|  
 |3|**Version**|Version of the server. Exact format varies by provider.|  
 |4|**FactoryName**|Name of the corresponding provider factory.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

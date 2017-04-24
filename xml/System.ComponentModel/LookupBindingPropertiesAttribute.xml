@@ -24,35 +24,35 @@
     <summary>Specifies the properties that support lookup-based binding. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute> is used to specify the properties used with lookup-based binding, particularly <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls.  
+The <xref:System.ComponentModel.LookupBindingPropertiesAttribute> is used to specify the properties used with lookup-based binding, particularly <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls.  
+ 
+The <xref:System.ComponentModel.LookupBindingPropertiesAttribute> is specified at the class level. The class can be inherited and does not allow multiple attributes on the same class.  
+ 
   
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute> is specified at the class level. The class can be inherited and does not allow multiple attributes on the same class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows properties used with lookup-based binding.  
-  
- [!code-csharp[System.ComponentModel.LookupBindingPropertiesAttribute#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/CS/DemoControl.cs#2)]
- [!code-vb[System.ComponentModel.LookupBindingPropertiesAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/VB/DemoControl.vb#2)]  
-  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute> attribute must include all four members, except when unsetting values. The following code example shows the <xref:System.Windows.Forms.ComboBox> control.  
-  
- [!code-csharp[System.ComponentModel.LookupBindingPropertiesAttribute#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/CS/DemoControl.cs#3)]
- [!code-vb[System.ComponentModel.LookupBindingPropertiesAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/VB/DemoControl.vb#3)]  
-  
- The following code example shows that a control can support both simple binding as well as list binding.  
-  
- [!code-csharp[System.ComponentModel.LookupBindingPropertiesAttribute#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/CS/DemoControl.cs#4)]
- [!code-vb[System.ComponentModel.LookupBindingPropertiesAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/VB/DemoControl.vb#4)]  
-  
- The following code example shows that the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> attribute can be unset by specifying no arguments.  
-  
- [!code-csharp[System.ComponentModel.LookupBindingPropertiesAttribute#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/CS/DemoControl.cs#5)]
- [!code-vb[System.ComponentModel.LookupBindingPropertiesAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/VB/DemoControl.vb#5)]  
-  
+The following code example shows properties used with lookup-based binding.  
+ 
+[!code-csharp[System.ComponentModel.LookupBindingPropertiesAttribute#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/CS/DemoControl.cs#2)]
+[!code-vb[System.ComponentModel.LookupBindingPropertiesAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/VB/DemoControl.vb#2)]  
+ 
+The <xref:System.ComponentModel.LookupBindingPropertiesAttribute> attribute must include all four members, except when unsetting values. The following code example shows the <xref:System.Windows.Forms.ComboBox> control.  
+ 
+[!code-csharp[System.ComponentModel.LookupBindingPropertiesAttribute#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/CS/DemoControl.cs#3)]
+[!code-vb[System.ComponentModel.LookupBindingPropertiesAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/VB/DemoControl.vb#3)]  
+ 
+The following code example shows that a control can support both simple binding as well as list binding.  
+ 
+[!code-csharp[System.ComponentModel.LookupBindingPropertiesAttribute#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/CS/DemoControl.cs#4)]
+[!code-vb[System.ComponentModel.LookupBindingPropertiesAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/VB/DemoControl.vb#4)]  
+ 
+The following code example shows that the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> attribute can be unset by specifying no arguments.  
+ 
+[!code-csharp[System.ComponentModel.LookupBindingPropertiesAttribute#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/CS/DemoControl.cs#5)]
+[!code-vb[System.ComponentModel.LookupBindingPropertiesAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.LookupBindingPropertiesAttribute/VB/DemoControl.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" /> class using no parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor sets the <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A>, and <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A> properties to `null`.  
-  
+The default constructor sets the <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A>, and <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A> properties to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets each of its public properties to the corresponding supplied parameter; for example, the <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A> property is set to `dataSource`.  
-  
+This constructor sets each of its public properties to the corresponding supplied parameter; for example, the <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A> property is set to `dataSource`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <value>The data source property for the component to which the <see cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" /> is bound.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A> property is set in the constructors for this class.  
-  
+The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A> property is set in the constructors for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <summary>Represents the default value for the <see cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.Default> member is a static, read-only field that defines an instance of the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> class initialized with the default constructor.  
-  
+The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.Default> member is a static, read-only field that defines an instance of the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> class initialized with the default constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <value>The name of the display member property for the component to which the <see cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" /> is bound.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A> property is set in the constructors for this class.  
-  
+The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A> property is set in the constructors for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,10 +236,10 @@
           <see langword="true" /> if the object is equal to the current instance; otherwise, <see langword="false" />, indicating they are not equal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.Equals%2A> method returns `true` if the `obj` parameter is of type <xref:System.ComponentModel.LookupBindingPropertiesAttribute> and all the public properties—<xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A>, and <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A>—are equal to each other.  
-  
+The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.Equals%2A> method returns `true` if the `obj` parameter is of type <xref:System.ComponentModel.LookupBindingPropertiesAttribute> and all the public properties—<xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A>, and <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A>—are equal to each other.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,10 +290,10 @@
         <value>The name of the lookup member for the component to which the <see cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" /> is bound.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A> property is set in the constructors for this class.  
-  
+The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A> property is set in the constructors for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,10 +320,10 @@
         <value>The name of the value member property for the component to which the <see cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" /> is bound.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A> property is set in the constructors for this class.  
-  
+The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A> property is set in the constructors for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

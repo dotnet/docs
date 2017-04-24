@@ -20,18 +20,18 @@
     <summary>Provides static methods for the serialization and deserialization of <see cref="T:System.TimeSpan" /> to a string that is formatted as XSD <see langword="duration" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about XSD data types, see the "XML Data Types Reference" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+For more information about XSD data types, see the "XML Data Types Reference" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the methods in the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class to convert between a <xref:System.TimeSpan> object and an XSD `duration` string.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#10](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CPP/demo.cpp#10)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CS/demo.cs#10)]  
-  
+The following code example shows how to use the methods in the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class to convert between a <xref:System.TimeSpan> object and an XSD `duration` string.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#10](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CPP/demo.cpp#10)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CS/demo.cs#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,13 +74,13 @@
         <returns>A <see cref="T:System.TimeSpan" /> object that is obtained from <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.Parse%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#11](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CPP/demo.cpp#11)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CS/demo.cs#11)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.Parse%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#11](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CPP/demo.cpp#11)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CS/demo.cs#11)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">
@@ -109,13 +109,13 @@
         <returns>A <see cref="T:System.String" /> representation of <paramref name="timeSpan" /> in the format "PxxYxxDTxxHxxMxx.xxxS" or "PxxYxxDTxxHxxMxxS". The "PxxYxxDTxxHxxMxx.xxxS" is used if <see cref="P:System.TimeSpan.Milliseconds" /> does not equal zero.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.ToString%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#12](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CPP/demo.cpp#12)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#12](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CS/demo.cs#12)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.ToString%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#12](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CPP/demo.cpp#12)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#12](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CS/demo.cs#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,13 +138,13 @@
         <value>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.XsdType%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#13](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CPP/demo.cpp#13)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#13](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CS/demo.cs#13)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.XsdType%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#13](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CPP/demo.cpp#13)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#13](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration/CS/demo.cs#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

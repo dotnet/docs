@@ -19,10 +19,10 @@
     <summary>Wraps an [OnError Element (MSBuild)](http://msdn.microsoft.com/library/765767d3-ecb7-4cd9-ba1e-d9468964dddc).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an immutable class.  
-  
+This is an immutable class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <value>Returns the unevaluated ExecuteTargets attribute value, which may be an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The targets to execute if a task fails.  
-  
+The targets to execute if a task fails.  
+ 
  ]]></format>
         </remarks>
       </Docs>

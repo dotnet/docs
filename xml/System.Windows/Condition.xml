@@ -26,31 +26,31 @@
     <summary>Represents a condition for the <see cref="T:System.Windows.MultiTrigger" /> and the <see cref="T:System.Windows.MultiDataTrigger" />, which apply changes to property values based on a set of conditions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.MultiTrigger>s and <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the property value of the element or data item matches the specified <xref:System.Windows.Condition.Value%2A> (reference equality check). If all specified conditions are satisfied, then the trigger is applied.  
-  
- The following is a list of cases that will cause an exception:  
-  
+<xref:System.Windows.MultiTrigger>s and <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the property value of the element or data item matches the specified <xref:System.Windows.Condition.Value%2A> (reference equality check). If all specified conditions are satisfied, then the trigger is applied.  
+ 
+The following is a list of cases that will cause an exception:  
+ 
 -   For each <xref:System.Windows.Condition>, you can only set either the <xref:System.Windows.Condition.Property%2A> property or the <xref:System.Windows.Condition.Binding%2A> property. If both properties are set, an exception is thrown.  
-  
+ 
 -   If the <xref:System.Windows.Condition> is for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> property cannot be null.  
-  
+ 
 -   If the <xref:System.Windows.Condition> is for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> property cannot be null.  
-  
+ 
 -   An exception is thrown if the specified <xref:System.Windows.Condition.Value%2A> is not valid for the type of the specified <xref:System.Windows.Condition.Property%2A>.  
+ 
+Note that if the <xref:System.Windows.Condition> is for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. If it is for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set.  
+ 
   
- Note that if the <xref:System.Windows.Condition> is for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. If it is for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set.  
-  
-   
-  
+ 
 ## Examples  
- The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
-  
- [!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
-  
- See the <xref:System.Windows.Condition.Binding%2A> property for examples of conditions used in a <xref:System.Windows.MultiDataTrigger>.  
-  
+The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
+ 
+[!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
+ 
+See the <xref:System.Windows.Condition.Binding%2A> property for examples of conditions used in a <xref:System.Windows.MultiDataTrigger>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -155,46 +155,46 @@
         <value>The default value is null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on values of the data that is returned. For example, if you are displaying a list of task items, you may want to display a task with a red background if it is of high priority and has not been looked at for more than two weeks.  
-  
- You create a binding and use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to a property of a certain object (the binding source object). For example, you may bind to the *Priority* property of a *Task*. For more information, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
- Note that if it is a condition for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. Setting the <xref:System.Windows.Condition.Property%2A> value would cause an exception in that case.  
-  
+<xref:System.Windows.MultiDataTrigger>s allow you to set property values based on values of the data that is returned. For example, if you are displaying a list of task items, you may want to display a task with a red background if it is of high priority and has not been looked at for more than two weeks.  
+ 
+You create a binding and use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to a property of a certain object (the binding source object). For example, you may bind to the *Priority* property of a *Task*. For more information, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
+Note that if it is a condition for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. Setting the <xref:System.Windows.Condition.Property%2A> value would cause an exception in that case.  
+ 
 <a name="xamlAttributeUsage_PriorityBinding"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{Binding  declaration}"/>  
 ```  
-  
+ 
 <a name="xamlPropertyElementUsage_Binding"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-  <object.Binding>  
-    <Binding …/>  
-  </object.Binding>  
+ <object.Binding>  
+   <Binding …/>  
+ </object.Binding>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_PriorityBinding"></a>   
 ## XAML Values  
- *declaration*  
- A binding declaration. See [Binding Declarations Overview](~/docs/framework/wpf/data/binding-declarations-overview.md) for more information.  
+*declaration*  
+A binding declaration. See [Binding Declarations Overview](~/docs/framework/wpf/data/binding-declarations-overview.md) for more information.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> of the <xref:System.Windows.Controls.ListBox> is bound to *Places*, an <xref:System.Collections.ObjectModel.ObservableCollection%601> of *Place* objects. *Place* objects have properties *Name* and *State*.  
-  
- Each <xref:System.Windows.Controls.ListBoxItem> of the <xref:System.Windows.Controls.ListBox> displays a *Place* object. The <xref:System.Windows.Style> in the example is applied to each <xref:System.Windows.Controls.ListBoxItem>. The <xref:System.Windows.Condition>s of the <xref:System.Windows.MultiDataTrigger> are specified such that if the *Name* and *State* of the *Place* data item is "Portland" and "OR" respectively, then the background of corresponding <xref:System.Windows.Controls.ListBoxItem> is set to Cyan.  
-  
- [!code-xml[DataTrigger#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTrigger/CSharp/Window1.xaml#1)]  
-  
+In the following example, the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> of the <xref:System.Windows.Controls.ListBox> is bound to *Places*, an <xref:System.Collections.ObjectModel.ObservableCollection%601> of *Place* objects. *Place* objects have properties *Name* and *State*.  
+ 
+Each <xref:System.Windows.Controls.ListBoxItem> of the <xref:System.Windows.Controls.ListBox> displays a *Place* object. The <xref:System.Windows.Style> in the example is applied to each <xref:System.Windows.Controls.ListBoxItem>. The <xref:System.Windows.Condition>s of the <xref:System.Windows.MultiDataTrigger> are specified such that if the *Name* and *State* of the *Place* data item is "Portland" and "OR" respectively, then the background of corresponding <xref:System.Windows.Controls.ListBoxItem> is set to Cyan.  
+ 
+[!code-xml[DataTrigger#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTrigger/CSharp/Window1.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,23 +224,23 @@
         <value>A <see cref="T:System.Windows.DependencyProperty" /> that specifies the property of the condition. The default value is null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.MultiTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the value of the property (specified by the <xref:System.Windows.Condition.Property%2A> property) of the element matches the specified <xref:System.Windows.Condition.Value%2A> (reference equality check). If all specified conditions are satisfied, then the trigger is applied.  
+<xref:System.Windows.MultiTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the value of the property (specified by the <xref:System.Windows.Condition.Property%2A> property) of the element matches the specified <xref:System.Windows.Condition.Value%2A> (reference equality check). If all specified conditions are satisfied, then the trigger is applied.  
+ 
+If `TargetType` is not set on the style of the template that contains the triggers. Then you need to qualify the property name using the `ClassName.PropertyName` syntax.  
+ 
+Note that if it is a condition for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. Setting the <xref:System.Windows.Condition.Binding%2A> value would cause an exception in that case.  
+ 
+For <xref:System.Windows.Condition>s in <xref:System.Windows.MultiDataTrigger>s, the <xref:System.Windows.Condition.Binding%2A> property should be used instead of this property.  
+ 
   
- If `TargetType` is not set on the style of the template that contains the triggers. Then you need to qualify the property name using the `ClassName.PropertyName` syntax.  
-  
- Note that if it is a condition for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. Setting the <xref:System.Windows.Condition.Binding%2A> value would cause an exception in that case.  
-  
- For <xref:System.Windows.Condition>s in <xref:System.Windows.MultiDataTrigger>s, the <xref:System.Windows.Condition.Binding%2A> property should be used instead of this property.  
-  
-   
-  
+ 
 ## Examples  
- The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
-  
- [!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
-  
+The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
+ 
+[!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <summary>Handles cases where a markup extension provides a value for a property of a <see cref="T:System.Windows.Condition" /> object</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Condition> with a markup extension. You do not typically call this method directly.  
-  
+This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Condition> with a markup extension. You do not typically call this method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
         <summary>Handles cases where a type converter provides a value for a property of on a<see cref="T:System.Windows.Condition" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Condition> with a type converter. You do not typically call this method directly.  
-  
+This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Condition> with a type converter. You do not typically call this method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,12 +327,12 @@
         <value>The default property is <see langword="null" />. If this property is <see langword="null" />, then the property of the object being styled causes the associated setters to be applied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set this property to the name of any element within the scope of where the trigger collection (the collection that the trigger that contains this condition is part of) is applied. This is typically a named element that is within the template that contains the trigger.  
-  
- You can name an object using the [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) syntax.  
-  
+You can set this property to the name of any element within the scope of where the trigger collection (the collection that the trigger that contains this condition is part of) is applied. This is typically a named element that is within the template that contains the trigger.  
+ 
+You can name an object using the [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) syntax.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">After a <see cref="T:System.Windows.Condition" /> is in use, it cannot be modified.</exception>
@@ -355,10 +355,10 @@
         <summary>Signals the object that initialization is starting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Condition> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Condition> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -380,10 +380,10 @@
         <summary>Signals the object that initialization is complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Condition> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Condition> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -412,19 +412,19 @@
  See also the Exceptions section. The default value is null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.MultiTrigger>s and <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the property value of the element or data item matches the specified <xref:System.Windows.Condition.Value%2A>. If all specified conditions are satisfied, then the trigger is applied. If all specified conditions are satisfied, then the trigger is applied.  
+<xref:System.Windows.MultiTrigger>s and <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the property value of the element or data item matches the specified <xref:System.Windows.Condition.Value%2A>. If all specified conditions are satisfied, then the trigger is applied. If all specified conditions are satisfied, then the trigger is applied.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
-  
- [!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
-  
- See the <xref:System.Windows.Condition.Binding%2A> property for examples of conditions used in a <xref:System.Windows.MultiDataTrigger>.  
-  
+The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
+ 
+[!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
+ 
+See the <xref:System.Windows.Condition.Binding%2A> property for examples of conditions used in a <xref:System.Windows.MultiDataTrigger>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Expressions are not supported.</exception>

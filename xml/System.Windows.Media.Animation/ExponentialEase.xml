@@ -14,41 +14,41 @@
     <summary>Represents an easing function that creates an animation that accelerates and/or decelerates using an exponential formula.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can control whether the animation accelerates, decelerates or both by specifying the <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>. The following graph demonstrates the different values of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A> where *f*(*t*) represents the animation progress and *t* represents time.  
-  
- ![ExponentialEase graphs of different easingmodes.](~/add/media/exponentialease-graph.png "ExponentialEase graphs of different easingmodes.")  
-  
- The formula used for this function is the following.  
-  
- ![Mathematical formula for ExponentialEase](~/add/media/exponentialease-formula.png "Mathematical formula for ExponentialEase")  
-  
- Using the formula above, the following graph illustrates the effect of several different values for the <xref:System.Windows.Media.Animation.ExponentialEase.Exponent%2A> property:  
-  
- ![Exponential Ease for three Exponent values](~/add/media/expo-easeproperty.png "Exponential Ease for three Exponent values")  
-  
- There are several other easing functions besides <xref:System.Windows.Media.Animation.ExponentialEase> which you can explore using the following Silverlight sample.  
-  
- [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
-  
- In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
-  
+You can control whether the animation accelerates, decelerates or both by specifying the <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>. The following graph demonstrates the different values of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A> where *f*(*t*) represents the animation progress and *t* represents time.  
+ 
+![ExponentialEase graphs of different easingmodes.](~/add/media/exponentialease-graph.png "ExponentialEase graphs of different easingmodes.")  
+ 
+The formula used for this function is the following.  
+ 
+![Mathematical formula for ExponentialEase](~/add/media/exponentialease-formula.png "Mathematical formula for ExponentialEase")  
+ 
+Using the formula above, the following graph illustrates the effect of several different values for the <xref:System.Windows.Media.Animation.ExponentialEase.Exponent%2A> property:  
+ 
+![Exponential Ease for three Exponent values](~/add/media/expo-easeproperty.png "Exponential Ease for three Exponent values")  
+ 
+There are several other easing functions besides <xref:System.Windows.Media.Animation.ExponentialEase> which you can explore using the following Silverlight sample.  
+ 
+[Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
+ 
+In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
+ 
 <a name="xamlObjectElementUsage_ExponentialEase"></a>   
 ## XAML Object Element Usage  
-  
+ 
 ```  
 <ExponentialEase .../>  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example applies a <xref:System.Windows.Media.Animation.ExponentialEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create a decelerating animation.  
-  
- [!code-xml[ExponentialEase#ExponentialEase](~/samples/snippets/csharp/VS_Snippets_Wpf/exponentialease/CS/window1.xaml#exponentialease)]
- <!-- TODO: review snippet reference [!code-xml[ExponentialEase#ExponentialEase](~/samples/snippets/xaml/VS_Snippets_Wpf/exponentialease/xaml/window1.xaml#exponentialease)]  -->  
-  
+The following example applies a <xref:System.Windows.Media.Animation.ExponentialEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create a decelerating animation.  
+ 
+[!code-xml[ExponentialEase#ExponentialEase](~/samples/snippets/csharp/VS_Snippets_Wpf/exponentialease/CS/window1.xaml#exponentialease)]
+<!-- TODO: review snippet reference [!code-xml[ExponentialEase#ExponentialEase](~/samples/snippets/xaml/VS_Snippets_Wpf/exponentialease/xaml/window1.xaml#exponentialease)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,18 +86,18 @@
         <returns>The new instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
+Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
-  
- [!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
- [!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
-  
+The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
+ 
+[!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
+[!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,12 +123,12 @@
         <returns>A double that represents the transformed progress.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
-  
- You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode> and <xref:System.Windows.Media.Animation.EasingMode> cases.  
-  
+This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
+ 
+You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode> and <xref:System.Windows.Media.Animation.EasingMode> cases.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,25 +150,25 @@
         <value>The exponent used to determine the interpolation of the animation. The default is 2.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DP_ID_field_label](~/includes/dp-id-field-label-md.md)] <xref:System.Windows.Media.Animation.ExponentialEase.ExponentProperty>  
-  
- The formula used by <xref:System.Windows.Media.Animation.ExponentialEase> is the following.  
-  
- ![Mathematical formula for ExponentialEase](~/add/media/exponentialease-formula.png "Mathematical formula for ExponentialEase")  
-  
- Using the previous formula, the following graph illustrates the effect of several different values for the <xref:System.Windows.Media.Animation.ExponentialEase.Exponent%2A> property:  
-  
- ![Exponential Ease for three Exponent values](~/add/media/expo-easeproperty.png "Exponential Ease for three Exponent values")  
-  
+[!INCLUDE[DP_ID_field_label](~/includes/dp-id-field-label-md.md)] <xref:System.Windows.Media.Animation.ExponentialEase.ExponentProperty>  
+ 
+The formula used by <xref:System.Windows.Media.Animation.ExponentialEase> is the following.  
+ 
+![Mathematical formula for ExponentialEase](~/add/media/exponentialease-formula.png "Mathematical formula for ExponentialEase")  
+ 
+Using the previous formula, the following graph illustrates the effect of several different values for the <xref:System.Windows.Media.Animation.ExponentialEase.Exponent%2A> property:  
+ 
+![Exponential Ease for three Exponent values](~/add/media/expo-easeproperty.png "Exponential Ease for three Exponent values")  
+ 
 <a name="xamlAttributeUsage_Exponent"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object Exponent="double" .../>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

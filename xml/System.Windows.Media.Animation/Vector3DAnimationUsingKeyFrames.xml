@@ -26,14 +26,14 @@
     <summary>Animates the value of a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> property along a set of <see cref="P:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.KeyFrames" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A key frame animation's target values are defined by its <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.KeyFrames%2A> property, which contains a collection of <xref:System.Windows.Media.Animation.Vector3DKeyFrame> objects. Each <xref:System.Windows.Media.Animation.Vector3DKeyFrame> defines a segment of the animation with its own target <xref:System.Windows.Media.Animation.Vector3DKeyFrame.Value%2A> and <xref:System.Windows.Media.Animation.Vector3DKeyFrame.KeyTime%2A>. When the animation runs, it progresses from one key value to the next at the specified key times.  
-  
- There are three types of <xref:System.Windows.Media.Animation.Vector3DKeyFrame> classes, one for each supported interpolation method: <xref:System.Windows.Media.Animation.LinearVector3DKeyFrame>, <xref:System.Windows.Media.Animation.DiscreteVector3DKeyFrame>, and <xref:System.Windows.Media.Animation.SplineVector3DKeyFrame>.  
-  
- Unlike a <xref:System.Windows.Media.Animation.Vector3DAnimation>, a <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames> can have more than two of target values. You can also control the interpolation method of individual <xref:System.Windows.Media.Animation.Vector3DKeyFrame> segments.  
-  
+A key frame animation's target values are defined by its <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.KeyFrames%2A> property, which contains a collection of <xref:System.Windows.Media.Animation.Vector3DKeyFrame> objects. Each <xref:System.Windows.Media.Animation.Vector3DKeyFrame> defines a segment of the animation with its own target <xref:System.Windows.Media.Animation.Vector3DKeyFrame.Value%2A> and <xref:System.Windows.Media.Animation.Vector3DKeyFrame.KeyTime%2A>. When the animation runs, it progresses from one key value to the next at the specified key times.  
+ 
+There are three types of <xref:System.Windows.Media.Animation.Vector3DKeyFrame> classes, one for each supported interpolation method: <xref:System.Windows.Media.Animation.LinearVector3DKeyFrame>, <xref:System.Windows.Media.Animation.DiscreteVector3DKeyFrame>, and <xref:System.Windows.Media.Animation.SplineVector3DKeyFrame>.  
+ 
+Unlike a <xref:System.Windows.Media.Animation.Vector3DAnimation>, a <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames> can have more than two of target values. You can also control the interpolation method of individual <xref:System.Windows.Media.Animation.Vector3DKeyFrame> segments.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <summary>Adds a child <see cref="T:System.Windows.Media.Animation.Vector3DKeyFrame" /> to this <see cref="T:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows <xref:System.Windows.Media.Animation.Vector3DKeyFrame> objects to be direct children of a <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames> object in markup.  
-  
+This method allows <xref:System.Windows.Media.Animation.Vector3DKeyFrame> objects to be direct children of a <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames> object in markup.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The parameter <paramref name="child" /> is not a <see cref="T:System.Windows.Media.Animation.Vector3DKeyFrame" />.</exception>
@@ -112,10 +112,10 @@
         <summary>Adds a text string as a child of this <see cref="T:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames> does not accept text as a child, so this method will raise an `InvalididOperationException` unless a derived class has overridden this behavior which allows text to be added.  
-  
+A <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames> does not accept text as a child, so this method will raise an `InvalididOperationException` unless a derived class has overridden this behavior which allows text to be added.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" /> does not accept text as a child, so this method will raise this exception unless a derived class has overridden this behavior which allows text to be added.</exception>
@@ -139,10 +139,10 @@
         <returns>A modifiable clone of this instance. The returned clone is effectively a deep copy of the current object, although some copying might be deferred until necessary for improved performance. The copy's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.Clone%2A> method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited <xref:System.Windows.Media.Animation.Vector3DAnimationBase.Clone%2A?displayProperty=fullName> method to provide a strongly typed implementation.  
-  
+The <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.Clone%2A> method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited <xref:System.Windows.Media.Animation.Vector3DAnimationBase.Clone%2A?displayProperty=fullName> method to provide a strongly typed implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,12 +326,12 @@
         <returns>The calculated value of the property, as determined by the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
-  
- The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
-  
+If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+ 
+The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,10 +395,10 @@
           <see langword="true" /> if the animation accumulates its values when its <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> property causes it to repeat its simple duration; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to `true`, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
-  
+When this property is set to `true`, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
+ 
  ]]></format>
         </remarks>
       </Docs>

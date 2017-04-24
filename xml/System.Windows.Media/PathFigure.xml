@@ -26,13 +26,13 @@
     <summary>Represents a subsection of a geometry, a single connected series of two-dimensional geometric segments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.PathGeometry> is made up of one or more figures, represented by the <xref:System.Windows.Media.PathFigure> class. Each figure is itself made up of one or more segments, defined by the <xref:System.Windows.Media.PathSegment> class.  
-  
+A <xref:System.Windows.Media.PathGeometry> is made up of one or more figures, represented by the <xref:System.Windows.Media.PathFigure> class. Each figure is itself made up of one or more segments, defined by the <xref:System.Windows.Media.PathSegment> class.  
+ 
 <a name="xamlObjectElementUsage_PathFigure"></a>   
 ## XAML Object Element Usage  
-  
+ 
 ```  
 <PathFigure .../>  
 -or-  
@@ -40,14 +40,14 @@
   oneOrMoreSegments  
 </PathFigure>  
 ```  
-  
+ 
 <a name="xamlValues_PathFigure"></a>   
 ## XAML Values  
- `oneOrMoreSegments`  
- One or more object elements for objects that derive from <xref:System.Windows.Media.PathSegment>. Typically these are: <xref:System.Windows.Media.ArcSegment>,  
-  
- <xref:System.Windows.Media.BezierSegment>, <xref:System.Windows.Media.LineSegment>, <xref:System.Windows.Media.PolyBezierSegment>, <xref:System.Windows.Media.PolyLineSegment>, <xref:System.Windows.Media.PolyQuadraticBezierSegment>, <xref:System.Windows.Media.QuadraticBezierSegment>.  
-  
+`oneOrMoreSegments`  
+One or more object elements for objects that derive from <xref:System.Windows.Media.PathSegment>. Typically these are: <xref:System.Windows.Media.ArcSegment>,  
+ 
+<xref:System.Windows.Media.BezierSegment>, <xref:System.Windows.Media.LineSegment>, <xref:System.Windows.Media.PolyBezierSegment>, <xref:System.Windows.Media.PolyLineSegment>, <xref:System.Windows.Media.PolyQuadraticBezierSegment>, <xref:System.Windows.Media.QuadraticBezierSegment>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -107,12 +107,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,12 +135,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <returns>The polygonal approximation of this <see cref="T:System.Windows.Media.PathFigure" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The flattening process is lossy with respect to animation and curve segment parameters.  
-  
+The flattening process is lossy with respect to animation and curve segment parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,12 +213,12 @@
         <returns>The polygonal approximation of this <see cref="T:System.Windows.Media.PathFigure" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The flattening process is lossy with respect to animation and curve segment parameters.  
-  
- `tolerance` determines how closely the curve is approximated.  
-  
+The flattening process is lossy with respect to animation and curve segment parameters.  
+ 
+`tolerance` determines how closely the curve is approximated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,17 +241,17 @@
           <see langword="true" /> if this figure's first and last segments are connected; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsClosed"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.PathFigure.IsClosedProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,23 +290,23 @@
         <value>Determines whether the contained area of this <see cref="T:System.Windows.Media.PathFigure" /> is to be used for hit-testing, rendering, and clipping.  The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set to `false`, then only the outline of the <xref:System.Windows.Media.PathFigure> will be used, and its contained area will not contribute to the overall area of the <xref:System.Windows.Media.PathFigure>.  
-  
- One use of this property is to allow unfilled strokes in an otherwise filled <xref:System.Windows.Media.Geometry>, like the mouth in the left Smiley below.  Setting the mouth's <xref:System.Windows.Media.PathFigure.IsFilled%2A> to `true` may produce the undesired effect of the mouth in the right Smiley.  
-  
- ![smiley path is filled](~/add/media/ref-mil-pathfigure-isfilled-smiley.PNG "smiley path is filled")  
+If this property is set to `false`, then only the outline of the <xref:System.Windows.Media.PathFigure> will be used, and its contained area will not contribute to the overall area of the <xref:System.Windows.Media.PathFigure>.  
+ 
+One use of this property is to allow unfilled strokes in an otherwise filled <xref:System.Windows.Media.Geometry>, like the mouth in the left Smiley below.  Setting the mouth's <xref:System.Windows.Media.PathFigure.IsFilled%2A> to `true` may produce the undesired effect of the mouth in the right Smiley.  
+ 
+![smiley path is filled](~/add/media/ref-mil-pathfigure-isfilled-smiley.PNG "smiley path is filled")  
 IsFilled Example  
-  
+ 
 <a name="dependencyPropertyInfo_IsFilled"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.PathFigure.IsFilledProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,33 +365,33 @@ IsFilled Example
         <value>The collection of segments that define the shape of this <see cref="T:System.Windows.Media.PathFigure" /> object. The default value is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlPropertyElementUsage_Segments"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-    oneOrMorePathSegments  
+   oneOrMorePathSegments  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_Segments"></a>   
 ## XAML Values  
- `oneOrMorePathSegments`  
- One or more object elements for objects that derive from <xref:System.Windows.Media.PathSegment>. Typically these are: <xref:System.Windows.Media.ArcSegment>,  
-  
- <xref:System.Windows.Media.BezierSegment>, <xref:System.Windows.Media.LineSegment>, <xref:System.Windows.Media.PolyBezierSegment>, <xref:System.Windows.Media.PolyLineSegment>, <xref:System.Windows.Media.PolyQuadraticBezierSegment>, <xref:System.Windows.Media.QuadraticBezierSegment>.  
-  
+`oneOrMorePathSegments`  
+One or more object elements for objects that derive from <xref:System.Windows.Media.PathSegment>. Typically these are: <xref:System.Windows.Media.ArcSegment>,  
+ 
+<xref:System.Windows.Media.BezierSegment>, <xref:System.Windows.Media.LineSegment>, <xref:System.Windows.Media.PolyBezierSegment>, <xref:System.Windows.Media.PolyLineSegment>, <xref:System.Windows.Media.PolyQuadraticBezierSegment>, <xref:System.Windows.Media.QuadraticBezierSegment>.  
+ 
 <a name="dependencyPropertyInfo_Segments"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.PathFigure.SegmentsProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -430,17 +430,17 @@ IsFilled Example
         <value>The <see cref="T:System.Windows.Point" /> where the <see cref="T:System.Windows.Media.PathFigure" /> begins. The default value is <c>0,0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_StartPoint"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.PathFigure>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -512,10 +512,10 @@ IsFilled Example
         <returns>A string representation of this <see cref="T:System.Windows.Media.PathFigure" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method produces a series of move and draw commands; for more information about the format of these commands, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
-  
+This method produces a series of move and draw commands; for more information about the format of these commands, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -541,10 +541,10 @@ IsFilled Example
         <returns>A formatted string representation of this <see cref="T:System.Windows.Media.PathFigure" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method produces a series of move and draw commands; for more information about the format of these commands, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
-  
+This method produces a series of move and draw commands; for more information about the format of these commands, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,10 +558,10 @@ IsFilled Example
         <summary>Gets a <see cref="T:System.Windows.Media.PathFigure" /> object that is an polygonal approximation of this <see cref="T:System.Windows.Media.PathFigure" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The flattening process is lossy with respect to animation and curve segment parameters.  
-  
+The flattening process is lossy with respect to animation and curve segment parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,10 +575,10 @@ IsFilled Example
         <summary>Creates a string representation of this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method produces a series of move and draw commands; for more information about the format of these commands, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
-  
+This method produces a series of move and draw commands; for more information about the format of these commands, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>

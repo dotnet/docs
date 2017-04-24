@@ -19,13 +19,13 @@
     <summary>Provides support for design-time license context serialization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides a serialization method that can serialize a specified design-time license context.  
-  
+This class provides a serialization method that can serialize a specified design-time license context.  
+ 
 > [!IMPORTANT]
 >  Using an instance of this object with untrusted data is a security risk. Use this class only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

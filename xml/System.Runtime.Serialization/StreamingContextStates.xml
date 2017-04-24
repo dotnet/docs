@@ -26,13 +26,13 @@
     <summary>Defines a set of flags that specifies the source or destination context for the stream during serialization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Runtime.Serialization.StreamingContextStates> enum.  
-  
- [!code-csharp[StreamingContext Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext Example/CS/streamingcontext.cs#1)]
- [!code-vb[StreamingContext Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext Example/VB/streamingcontext.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Runtime.Serialization.StreamingContextStates> enum.  
+ 
+[!code-csharp[StreamingContext Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext Example/CS/streamingcontext.cs#1)]
+[!code-vb[StreamingContext Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext Example/VB/streamingcontext.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

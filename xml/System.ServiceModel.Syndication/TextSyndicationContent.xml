@@ -18,18 +18,18 @@
     <summary>Represents any <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> content intended to be displayed to an end user.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Text content is HTML (with escaped markup), XHTML (valid XML, and is not escaped), or plain text.  
+Text content is HTML (with escaped markup), XHTML (valid XML, and is not escaped), or plain text.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.ServiceModel.Syndication.TextSyndicationContent> class.  
-  
- [!code-csharp[SyndicationContent#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#0)]
- [!code-vb[SyndicationContent#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#0)]  
-  
+The following example demonstrates how to use the <xref:System.ServiceModel.Syndication.TextSyndicationContent> class.  
+ 
+[!code-csharp[SyndicationContent#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#0)]
+[!code-vb[SyndicationContent#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,14 +77,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> with the specified text.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to call this constructor.  
-  
- [!code-csharp[SyndicationContent#1](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#1)]
- [!code-vb[SyndicationContent#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#1)]
- [!code-xml[SyndicationContent#1](~/samples/snippets/common/VS_Snippets_CFX/syndicationcontent/common/rss.xml#1)]  
-  
+The following example demonstrates how to call this constructor.  
+ 
+[!code-csharp[SyndicationContent#1](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#1)]
+[!code-vb[SyndicationContent#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#1)]
+[!code-xml[SyndicationContent#1](~/samples/snippets/common/VS_Snippets_CFX/syndicationcontent/common/rss.xml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,24 +112,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> with the specified text and <see cref="T:System.ServiceModel.Syndication.TextSyndicationContentKind" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Syndication.TextSyndicationContentKind> parameter may be set to one of the following values:  
-  
+The <xref:System.ServiceModel.Syndication.TextSyndicationContentKind> parameter may be set to one of the following values:  
+ 
 -   <xref:System.ServiceModel.Syndication.TextSyndicationContentKind>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.TextSyndicationContentKind>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.TextSyndicationContentKind>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to call this constructor.  
-  
- [!code-csharp[SyndicationContent#2](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#2)]
- [!code-vb[SyndicationContent#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#2)]  
-  
+The following example demonstrates how to call this constructor.  
+ 
+[!code-csharp[SyndicationContent#2](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#2)]
+[!code-vb[SyndicationContent#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,16 +200,16 @@
         <value>A <see cref="T:System.String" /> that represents the kind of Text Syndication Content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property may have the following values:  
-  
+This property may have the following values:  
+ 
 -   "text" for plain text content.  
-  
+ 
 -   "html" for HTML content.  
-  
+ 
 -   "xhtml" for XHTML content.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

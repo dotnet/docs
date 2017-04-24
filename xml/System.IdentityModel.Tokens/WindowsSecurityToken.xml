@@ -15,10 +15,10 @@
     <summary>Represents a security token that is based on the identity of a Windows domain or user account.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, application developers do not need to use the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class, unless a Web service must gain access to details about the Windows domain or user account associated with the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token. To get the details of the Windows domain or user account, access the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity%2A> property.  
-  
+Typically, application developers do not need to use the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class, unless a Web service must gain access to details about the Windows domain or user account associated with the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token. To get the details of the Windows domain or user account, access the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -37,10 +37,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor does nothing, by default.  
-  
+This constructor does nothing, by default.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -62,10 +62,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the Windows user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a unique identifier for the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token and assigns that value to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Id%2A> property.  
-  
+This constructor creates a unique identifier for the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token and assigns that value to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Id%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -91,10 +91,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the Windows user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor calls the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize%2A> method to initialize the properties of this class.  
-  
+This constructor calls the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize%2A> method to initialize the properties of this class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -162,13 +162,13 @@
         <summary>Releases all resources used by the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method when you are finished using the <xref:System.IdentityModel.Tokens.WindowsSecurityToken>. The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method leaves the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> in an unusable state. After calling the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method, you must release all references to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> so the garbage collector can reclaim the memory that the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> was occupying.  
-  
+Call the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method when you are finished using the <xref:System.IdentityModel.Tokens.WindowsSecurityToken>. The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method leaves the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> in an unusable state. After calling the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method, you must release all references to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> so the garbage collector can reclaim the memory that the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> was occupying.  
+ 
 > [!NOTE]
 >  Always call the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method before you release your last reference to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,10 +220,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the specified unique identifier, Windows user, and the first and last instants in time when the security token is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize%2A> method is called by the constructors for the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class.  
-  
+The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize%2A> method is called by the constructors for the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -283,10 +283,10 @@
         <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.SecurityKeys%2A> method returns an empty collection, by default.  
-  
+The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.SecurityKeys%2A> method returns an empty collection, by default.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,10 +327,10 @@
         <value>A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom%2A> property is set to the instant in time when the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class is created.  
-  
+The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom%2A> property is set to the instant in time when the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,10 +352,10 @@
         <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token is valid for 10 hours, by default. The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo%2A> property is set to the instant in time when the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class is created plus 10 hours.  
-  
+A <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token is valid for 10 hours, by default. The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo%2A> property is set to the instant in time when the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class is created plus 10 hours.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -87,10 +87,10 @@
         <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#IDuplexSessionRouter#EndProcessMessage(System.IAsyncResult)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using the IDuplexSessionRouter contract, see <xref:System.ServiceModel.Routing.IDuplexSessionRouter>.  
-  
+For more information on using the IDuplexSessionRouter contract, see <xref:System.ServiceModel.Routing.IDuplexSessionRouter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
         <summary>Completes the asynchronous execution of message processing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using the IDuplexSessionRouter contract, see <xref:System.ServiceModel.Routing.IDuplexSessionRouter>.  
-  
+For more information on using the IDuplexSessionRouter contract, see <xref:System.ServiceModel.Routing.IDuplexSessionRouter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,10 +153,10 @@
         <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#IRequestReplyRouter#EndProcessRequest(System.IAsyncResult)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using the IRequestReplyRouter contract, see <xref:System.ServiceModel.Routing.IRequestReplyRouter>.  
-  
+For more information on using the IRequestReplyRouter contract, see <xref:System.ServiceModel.Routing.IRequestReplyRouter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that contains the reply.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using the IRequestReplyRouter contract, see <xref:System.ServiceModel.Routing.IRequestReplyRouter>.  
-  
+For more information on using the IRequestReplyRouter contract, see <xref:System.ServiceModel.Routing.IRequestReplyRouter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,10 +220,10 @@
         <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#ISimplexDatagramRouter#EndProcessMessage(System.IAsyncResult)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using the ISimplexDatagramRouter contract, see <xref:System.ServiceModel.Routing.ISimplexDatagramRouter>.  
-  
+For more information on using the ISimplexDatagramRouter contract, see <xref:System.ServiceModel.Routing.ISimplexDatagramRouter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
         <summary>Finishes asynchronous execution of message processing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using the ISimplexDatagramRouter contract, see <xref:System.ServiceModel.Routing.ISimplexDatagramRouter>.  
-  
+For more information on using the ISimplexDatagramRouter contract, see <xref:System.ServiceModel.Routing.ISimplexDatagramRouter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#ISimplexSessionRouter#EndProcessMessage(System.IAsyncResult)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using the ISimplexSessionRouter contract, see <xref:System.ServiceModel.Routing.ISimplexSessionRouter>.  
-  
+For more information on using the ISimplexSessionRouter contract, see <xref:System.ServiceModel.Routing.ISimplexSessionRouter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,10 +314,10 @@
         <summary>Finishes asynchronous execution of message processing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using the ISimplexSessionRouter contract, see <xref:System.ServiceModel.Routing.ISimplexSessionRouter>.  
-  
+For more information on using the ISimplexSessionRouter contract, see <xref:System.ServiceModel.Routing.ISimplexSessionRouter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

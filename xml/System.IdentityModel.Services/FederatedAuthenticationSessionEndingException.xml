@@ -14,10 +14,10 @@
     <summary>Indicates that the sign-in session should being terminated, and the current request is unauthenticated.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Thrown from <xref:System.IdentityModel.Services.SessionAuthenticationModule.ValidateSessionToken%2A> to indicate that the current sign-in session should be terminated.  
-  
+Thrown from <xref:System.IdentityModel.Services.SessionAuthenticationModule.ValidateSessionToken%2A> to indicate that the current sign-in session should be terminated.  
+ 
  ]]></format>
     </remarks>
   </Docs>

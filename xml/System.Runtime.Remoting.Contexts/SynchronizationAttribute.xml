@@ -30,25 +30,25 @@
     <summary>Enforces a synchronization domain for the current context and all contexts that share the same instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this attribute is applied to an object, only one thread can be executing in all contexts that share an instance of this property. This is done by contributing sinks that intercept and serialize incoming calls for the respective contexts. If the property is marked for reentry, then callouts are intercepted too. The callout interception allows other waiting threads to enter the synchronization domain for maximal throughput.  
-  
+When this attribute is applied to an object, only one thread can be executing in all contexts that share an instance of this property. This is done by contributing sinks that intercept and serialize incoming calls for the respective contexts. If the property is marked for reentry, then callouts are intercepted too. The callout interception allows other waiting threads to enter the synchronization domain for maximal throughput.  
+ 
 > [!NOTE]
 >  There are two classes named `SynchronizationAttribute` : one in the <xref:System.Runtime.Remoting.Contexts> namespace, and the other in the <xref:System.EnterpriseServices> namespace. The <xref:System.EnterpriseServices.SynchronizationAttribute?displayProperty=fullName> class supports only synchronous calls, and can be used only with serviced components. (For more information on serviced components, see [&#91;\<topic://cpconservicedcomponentoverview>&#93;](http://msdn.microsoft.com/en-us/5133a620-9c8c-47bd-8e36-130e722fe463).) The <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute?displayProperty=fullName> supports both synchronous and asynchronous calls, and can be used only with context bound objects. (For more information on context bound objects, see the <xref:System.ContextBoundObject> class.)  
-  
+ 
 > [!NOTE]
 >  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>. For the complete example code, see the example for the <xref:System.Runtime.Remoting.Messaging.AsyncResult> class.  
-  
- [!code-cpp[AsyncResult.NewExamples#2](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncResult.NewExamples/CPP/ad.cpp#2)]
- [!code-csharp[AsyncResult.NewExamples#2](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncResult.NewExamples/CS/ad.cs#2)]
- [!code-vb[AsyncResult.NewExamples#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncResult.NewExamples/VB/ad.vb#2)]  
-  
+The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>. For the complete example code, see the example for the <xref:System.Runtime.Remoting.Messaging.AsyncResult> class.  
+ 
+[!code-cpp[AsyncResult.NewExamples#2](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncResult.NewExamples/CPP/ad.cpp#2)]
+[!code-csharp[AsyncResult.NewExamples#2](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncResult.NewExamples/CS/ad.cs#2)]
+[!code-vb[AsyncResult.NewExamples#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncResult.NewExamples/VB/ad.vb#2)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -88,10 +88,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Contexts.SynchronizationAttribute" /> class with a Boolean value indicating whether reentry is required.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If reentry is required, callouts out of the <xref:System.Runtime.Remoting.Contexts.Context> to which the current attribute is applied must be intercepted and serialized.  
-  
+If reentry is required, callouts out of the <xref:System.Runtime.Remoting.Contexts.Context> to which the current attribute is applied must be intercepted and serialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Contexts.SynchronizationAttribute" /> class with a flag indicating the behavior of the object to which this attribute is applied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `flag` parameter must be either <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED>, or <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW>.  
-  
+The `flag` parameter must be either <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED>, or <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="flag" /> parameter was not one of the defined flags.</exception>
@@ -144,10 +144,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Contexts.SynchronizationAttribute" /> class with a flag indicating the behavior of the object to which this attribute is applied, and a Boolean value indicating whether reentry is required.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `flag` parameter must be either <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED>, or <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW>.  
-  
+The `flag` parameter must be either <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED>, or <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="flag" /> parameter was not one of the defined flags.</exception>
@@ -175,10 +175,10 @@
         <returns>The composite sink chain with the new CallOut sink.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method is an implementation of <xref:System.Runtime.Remoting.Contexts.IContributeClientContextSink.GetClientContextSink%2A?displayProperty=fullName>.  
-  
+The current method is an implementation of <xref:System.Runtime.Remoting.Contexts.IContributeClientContextSink.GetClientContextSink%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <returns>The composite sink chain with the new synchronized dispatch sink.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method is an implementation of <xref:System.Runtime.Remoting.Contexts.IContributeServerContextSink.GetServerContextSink%2A?displayProperty=fullName>.  
-  
+The current method is an implementation of <xref:System.Runtime.Remoting.Contexts.IContributeServerContextSink.GetServerContextSink%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,10 +290,10 @@
         <value>A Boolean value indicating whether reentry is required.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If reentry is required, callouts out of the <xref:System.Runtime.Remoting.Contexts.Context> to which the current attribute is applied must be intercepted and serialized.  
-  
+If reentry is required, callouts out of the <xref:System.Runtime.Remoting.Contexts.Context> to which the current attribute is applied must be intercepted and serialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,10 +316,10 @@
         <value>A Boolean value indicating whether the <see cref="T:System.Runtime.Remoting.Contexts.Context" /> implementing this instance of <see cref="T:System.Runtime.Remoting.Contexts.SynchronizationAttribute" /> is locked.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a synchronized <xref:System.Runtime.Remoting.Contexts.Context> is locked, only the thread currently executing in it has access to objects in the <xref:System.Runtime.Remoting.Contexts.Context>.  
-  
+When a synchronized <xref:System.Runtime.Remoting.Contexts.Context> is locked, only the thread currently executing in it has access to objects in the <xref:System.Runtime.Remoting.Contexts.Context>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

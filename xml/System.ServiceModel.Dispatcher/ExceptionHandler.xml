@@ -14,23 +14,23 @@
     <summary>Extend the <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> class to create an exception handler for unhandled exceptions that occur within the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Extend the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and override the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method to determine whether an exception should terminate the application. Then create a new instance of your custom <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and assign it to the static <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> or <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property prior to creating [!INCLUDE[indigo2](~/includes/indigo2-md.md)] clients or services.  
+Extend the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and override the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method to determine whether an exception should terminate the application. Then create a new instance of your custom <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and assign it to the static <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> or <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property prior to creating [!INCLUDE[indigo2](~/includes/indigo2-md.md)] clients or services.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows an implementation of the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> abstract class that overrides the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method.  
-  
- [!code-csharp[S_UEExceptionHandler#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueexceptionhandler/cs/program.cs#0)]
- [!code-vb[S_UEExceptionHandler#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueexceptionhandler/vb/module1.vb#0)]  
-  
- The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime.  
-  
- [!code-csharp[S_UEExceptionHandler#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueexceptionhandler/cs/program.cs#1)]
- [!code-vb[S_UEExceptionHandler#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueexceptionhandler/vb/module1.vb#1)]  
-  
+The following code example shows an implementation of the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> abstract class that overrides the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method.  
+ 
+[!code-csharp[S_UEExceptionHandler#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueexceptionhandler/cs/program.cs#0)]
+[!code-vb[S_UEExceptionHandler#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueexceptionhandler/vb/module1.vb#0)]  
+ 
+The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime.  
+ 
+[!code-csharp[S_UEExceptionHandler#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueexceptionhandler/cs/program.cs#1)]
+[!code-vb[S_UEExceptionHandler#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueexceptionhandler/vb/module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,12 +93,12 @@
         <value>Assign a custom <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> object that receives unhandled exceptions that occur on asynchronous [!INCLUDE[indigo1](~/includes/indigo1-md.md)] threads.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> property is `null`, and unhandled exceptions on asynchronous [!INCLUDE[indigo2](~/includes/indigo2-md.md)] threads terminate the application.  Set this property to an <xref:System.ServiceModel.Dispatcher.ExceptionHandler> object to receive and react to these exceptions.  
-  
- If an unhandled exception occurs on an asynchronous [!INCLUDE[indigo2](~/includes/indigo2-md.md)] thread and reaches this handler, the state of the application domain may be compromised.  <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> should not return `true` for these exceptions.  
-  
+By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> property is `null`, and unhandled exceptions on asynchronous [!INCLUDE[indigo2](~/includes/indigo2-md.md)] threads terminate the application.  Set this property to an <xref:System.ServiceModel.Dispatcher.ExceptionHandler> object to receive and react to these exceptions.  
+ 
+If an unhandled exception occurs on an asynchronous [!INCLUDE[indigo2](~/includes/indigo2-md.md)] thread and reaches this handler, the state of the application domain may be compromised.  <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> should not return `true` for these exceptions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,21 +125,21 @@
           <see langword="true" /> if the exception has been handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> property returns `true` if the exception has been handled. If it returns `false` or throws a different exception, the original exception is rethrown.  
+The <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> property returns `true` if the exception has been handled. If it returns `false` or throws a different exception, the original exception is rethrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows an implementation of the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> abstract class that overrides the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method.  
-  
-  
-  
- The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime.  
-  
-  
-  
+The following code example shows an implementation of the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> abstract class that overrides the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method.  
+ 
+ 
+ 
+The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,12 +161,12 @@
         <value>A custom <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> object that receives unhandled exceptions that occur within the global [!INCLUDE[indigo1](~/includes/indigo1-md.md)] transports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property is set to the value of <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle%2A>, causing unhandled exceptions within [!INCLUDE[indigo2](~/includes/indigo2-md.md)] transports to be ignored.  Set this property to an instance of <xref:System.ServiceModel.Dispatcher.ExceptionHandler> to receive and react to these exceptions.  
-  
- If an unhandled exception occurs within a global [!INCLUDE[indigo2](~/includes/indigo2-md.md)] transport and reaches this handler, there is a possibility that the state of the application domain is compromised. <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> can return `false` for these exceptions to cause the application to be terminated.  
-  
+By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property is set to the value of <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle%2A>, causing unhandled exceptions within [!INCLUDE[indigo2](~/includes/indigo2-md.md)] transports to be ignored.  Set this property to an instance of <xref:System.ServiceModel.Dispatcher.ExceptionHandler> to receive and react to these exceptions.  
+ 
+If an unhandled exception occurs within a global [!INCLUDE[indigo2](~/includes/indigo2-md.md)] transport and reaches this handler, there is a possibility that the state of the application domain is compromised. <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> can return `false` for these exceptions to cause the application to be terminated.  
+ 
  ]]></format>
         </remarks>
       </Docs>

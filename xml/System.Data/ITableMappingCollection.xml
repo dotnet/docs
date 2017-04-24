@@ -20,22 +20,22 @@
     <summary>Contains a collection of TableMapping objects, and is implemented by the <see cref="T:System.Data.Common.DataTableMappingCollection" />, which is used in common by .NET Framework data providers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.ITableMappingCollection> interface allows an inheriting class to implement a TableMapping collection. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
+The <xref:System.Data.ITableMappingCollection> interface allows an inheriting class to implement a TableMapping collection. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
+ 
+An application does not create an instance of the <xref:System.Data.ITableMappingCollection> interface directly, but creates an instance of a class that inherits <xref:System.Data.ITableMappingCollection>.  
+ 
+Classes that inherit <xref:System.Data.ITableMappingCollection> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.ITableMappingCollection> interface defines one implementation of the <xref:System.Data.ITableMappingCollection.RemoveAt%2A> method. In turn, the <xref:System.Data.Common.DataTableMappingCollection> class inherits this method, and defines two additional overloads of <xref:System.Data.Common.DataTableMappingCollection.RemoveAt%2A>.  
+ 
   
- An application does not create an instance of the <xref:System.Data.ITableMappingCollection> interface directly, but creates an instance of a class that inherits <xref:System.Data.ITableMappingCollection>.  
-  
- Classes that inherit <xref:System.Data.ITableMappingCollection> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.ITableMappingCollection> interface defines one implementation of the <xref:System.Data.ITableMappingCollection.RemoveAt%2A> method. In turn, the <xref:System.Data.Common.DataTableMappingCollection> class inherits this method, and defines two additional overloads of <xref:System.Data.Common.DataTableMappingCollection.RemoveAt%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, and adds it to a <xref:System.Data.Common.DataTableMappingCollection> collection. It then informs the user that the mapping was added to the collection.  
-  
- [!code-csharp[Classic WebData DataTableMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableMapping Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataTableMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableMapping Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, and adds it to a <xref:System.Data.Common.DataTableMappingCollection> collection. It then informs the user that the mapping was added to the collection.  
+ 
+[!code-csharp[Classic WebData DataTableMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableMapping Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataTableMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableMapping Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">

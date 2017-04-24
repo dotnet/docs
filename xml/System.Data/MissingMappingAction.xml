@@ -18,10 +18,10 @@
     <summary>Determines the action that occurs when a mapping is missing from a source table or a source column.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.MissingMappingAction> values are used as arguments in the <xref:System.Data.Common.DataColumnMappingCollection.GetColumnMappingBySchemaAction%2A> method, and the <xref:System.Data.Common.DataTableMappingCollection.GetTableMappingBySchemaAction%2A> method.  
-  
+The <xref:System.Data.MissingMappingAction> values are used as arguments in the <xref:System.Data.Common.DataColumnMappingCollection.GetColumnMappingBySchemaAction%2A> method, and the <xref:System.Data.Common.DataTableMappingCollection.GetTableMappingBySchemaAction%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>

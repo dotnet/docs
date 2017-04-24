@@ -44,18 +44,18 @@
           <see langword="true" /> if a <see cref="T:System.Data.Sql.SqlDataSourceEnumerator" /> can be created; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.DbProviderFactory> class provides the <xref:System.Data.Common.DbProviderFactory.CanCreateDataSourceEnumerator%2A> property so that inheritors can indicate whether they can provide a data source enumerator. The <xref:System.Data.SqlClient.SqlClientFactory> displays this property, but its value is always `true`.  
+The <xref:System.Data.Common.DbProviderFactory> class provides the <xref:System.Data.Common.DbProviderFactory.CanCreateDataSourceEnumerator%2A> property so that inheritors can indicate whether they can provide a data source enumerator. The <xref:System.Data.SqlClient.SqlClientFactory> displays this property, but its value is always `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays a list of all available SQL Server data sources, using code that could enumerate data sources for any provider.  
-  
- [!code-csharp[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClientFactory.DataSourceEnumerator/CS/source.cs#1)]
- [!code-vb[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClientFactory.DataSourceEnumerator/VB/source.vb#1)]  
-  
+The following example displays a list of all available SQL Server data sources, using code that could enumerate data sources for any provider.  
+ 
+[!code-csharp[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClientFactory.DataSourceEnumerator/CS/source.cs#1)]
+[!code-vb[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClientFactory.DataSourceEnumerator/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,20 +87,20 @@
         <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbCommand" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance:  
-  
+The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance:  
+ 
 ```vb  
 Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
 Dim cmd As DbCommand = newFactory.CreateCommand()  
 ```  
-  
+ 
 ```csharp  
 SqlClientFactory newFactory = SqlClientFactory.Instance;  
 DbCommand cmd = newFactory.CreateCommand();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,20 +124,20 @@ DbCommand cmd = newFactory.CreateCommand();
         <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbCommandBuilder" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommandBuilder> instance:  
-  
+The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommandBuilder> instance:  
+ 
 ```vb  
 Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
 Dim cmd As DbCommandBuilder = newFactory.CreateCommandBuilder()  
 ```  
-  
+ 
 ```csharp  
 SqlClientFactory newFactory = SqlClientFactory.Instance;  
 DbCommandBuilder cmd = newFactory.CreateCommandBuilder();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,21 +169,21 @@ DbCommandBuilder cmd = newFactory.CreateCommandBuilder();
         <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbConnection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnection> instance:  
-  
+The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnection> instance:  
+ 
 ```vb  
 Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
 Dim cmd As DbConnection = newFactory.CreateConnection()  
 ```  
-  
+ 
 ```csharp  
 SqlClientFactory newFactory = SqlClientFactory.Instance;  
 DbConnection cmd = newFactory.CreateConnection();  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,22 +215,22 @@ DbConnection cmd = newFactory.CreateConnection();
         <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnectionStringBuilder> instance:  
-  
+The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnectionStringBuilder> instance:  
+ 
 ```vb  
 Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
 Dim cmd As DbConnectionStringBuilder = _  
-    newFactory.CreateConnectionStringBuilder()  
+   newFactory.CreateConnectionStringBuilder()  
 ```  
-  
+ 
 ```csharp  
 SqlClientFactory newFactory = SqlClientFactory.Instance;  
 DbConnectionStringBuilder cmd =   
-    newFactory.CreateConnectionStringBuilder();  
+   newFactory.CreateConnectionStringBuilder();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,20 +254,20 @@ DbConnectionStringBuilder cmd =
         <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbDataAdapter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbDataAdapter> instance:  
-  
+The following code fragment returns a strongly typed <xref:System.Data.Common.DbDataAdapter> instance:  
+ 
 ```vb  
 Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
 Dim cmd As DbDataAdapter = newFactory.CreateDataAdapter()  
 ```  
-  
+ 
 ```csharp  
 SqlClientFactory newFactory = SqlClientFactory.Instance;  
 DbDataAdapter cmd = newFactory.CreateDataAdapter();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,13 +291,13 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
         <returns>A new data source enumerator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays a list of all available SQL Server data sources, using code that could enumerate data sources for any provider.  
-  
- [!code-csharp[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClientFactory.DataSourceEnumerator/CS/source.cs#1)]
- [!code-vb[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClientFactory.DataSourceEnumerator/VB/source.vb#1)]  
-  
+The following example displays a list of all available SQL Server data sources, using code that could enumerate data sources for any provider.  
+ 
+[!code-csharp[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClientFactory.DataSourceEnumerator/CS/source.cs#1)]
+[!code-vb[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClientFactory.DataSourceEnumerator/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,20 +329,20 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
         <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbParameter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbParameter> instance:  
-  
+The following code fragment returns a strongly typed <xref:System.Data.Common.DbParameter> instance:  
+ 
 ```vb  
 Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
 Dim cmd As DbParameter = newFactory.CreateParameter()  
 ```  
-  
+ 
 ```csharp  
 SqlClientFactory newFactory = SqlClientFactory.Instance;  
 DbParameter cmd = newFactory.CreateParameter();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,20 +395,20 @@ DbParameter cmd = newFactory.CreateParameter();
         <summary>Gets an instance of the <see cref="T:System.Data.SqlClient.SqlClientFactory" />. This can be used to retrieve strongly typed data objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code fragment uses the <xref:System.Data.SqlClient.SqlClientFactory.Instance> property to retrieve a **SqlClientFactory** instance, and then return a strongly typed <xref:System.Data.Common.DbCommand> instance:  
-  
+The following code fragment uses the <xref:System.Data.SqlClient.SqlClientFactory.Instance> property to retrieve a **SqlClientFactory** instance, and then return a strongly typed <xref:System.Data.Common.DbCommand> instance:  
+ 
 ```vb  
 Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
 Dim cmd As DbCommand = newFactory.CreateCommand()  
 ```  
-  
+ 
 ```csharp  
 SqlClientFactory newFactory = SqlClientFactory.Instance;  
 DbCommand cmd = newFactory.CreateCommand();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

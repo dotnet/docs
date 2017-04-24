@@ -23,52 +23,52 @@
     <summary>During the relative course of an animation, a <see cref="T:System.Windows.Media.Animation.KeyTime" /> instance specifies the precise timing when a particular key frame should take place.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each key frame's <xref:System.Windows.Media.Animation.KeyTime> specifies when that key frame ends. It does not specify how long the key time plays. The amount of time a key frame plays is determined by when the key frame ends, when the previous key frame ended, and the animation's duration. See [Key-Frame Animations Overview](~/docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md) for more information.  
-  
- A <xref:System.Windows.Media.Animation.KeyTime> may be expressed in several different formats, including a numeric time value, as a percentage, or as one of the special sentinel values <xref:System.Windows.Media.Animation.KeyTime.Uniform%2A> or <xref:System.Windows.Media.Animation.KeyTime.Paced%2A>.  
-  
+Each key frame's <xref:System.Windows.Media.Animation.KeyTime> specifies when that key frame ends. It does not specify how long the key time plays. The amount of time a key frame plays is determined by when the key frame ends, when the previous key frame ended, and the animation's duration. See [Key-Frame Animations Overview](~/docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md) for more information.  
+ 
+A <xref:System.Windows.Media.Animation.KeyTime> may be expressed in several different formats, including a numeric time value, as a percentage, or as one of the special sentinel values <xref:System.Windows.Media.Animation.KeyTime.Uniform%2A> or <xref:System.Windows.Media.Animation.KeyTime.Paced%2A>.  
+ 
 <a name="xamlAttributeUsage_KeyTime"></a>   
 ## XAML Attribute Usage  
- \<*object* *property*="[*days*.]*hours*:*minutes*:*seconds*[.*fractionalSeconds*]"/>  
-  
- \- or -  
-  
- \<*object* *property*="[*days*.]*hours*:*minutes*"/>  
-  
- \- or -  
-  
- \<*object* *property*="*pctValue*%"/>  
-  
- \- or -  
-  
- \<*object* *property*="<xref:System.Windows.Media.Animation.KeyTime.Uniform%2A>"/>  
-  
- \- or -  
-  
- \<*object* *property*="<xref:System.Windows.Media.Animation.KeyTime.Paced%2A>"/>  
-  
+\<*object* *property*="[*days*.]*hours*:*minutes*:*seconds*[.*fractionalSeconds*]"/>  
+ 
+\- or -  
+ 
+\<*object* *property*="[*days*.]*hours*:*minutes*"/>  
+ 
+\- or -  
+ 
+\<*object* *property*="*pctValue*%"/>  
+ 
+\- or -  
+ 
+\<*object* *property*="<xref:System.Windows.Media.Animation.KeyTime.Uniform%2A>"/>  
+ 
+\- or -  
+ 
+\<*object* *property*="<xref:System.Windows.Media.Animation.KeyTime.Paced%2A>"/>  
+ 
 <a name="xamlValues_KeyTime"></a>   
 ## XAML Values  
- *days*  
- An integer value greater than or equal to 0 that specifies the number of days spanned by this <xref:System.Windows.Media.Animation.KeyTime>. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
-  
- *hours*  
- An integer value between 0 and 23 that specifies the number of hours spanned by this <xref:System.Windows.Media.Animation.KeyTime>. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
-  
- *minutes*  
- An integer value between 0 and 59 that specifies the number of minutes spanned by this <xref:System.Windows.Media.Animation.KeyTime>. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
-  
- *seconds*  
- A floating-point value between 0 and 59 that specifies the number of seconds spanned by this <xref:System.Windows.Media.Animation.KeyTime>. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
-  
- *fractionalSeconds*  
- An integer value consisting of 1 to 7 digits that specifies fractional seconds. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
-  
- *pctValue*  
- A floating-point value between 0 and 100, inclusive, that specifies this <xref:System.Windows.Media.Animation.KeyTime> as a percentage of the animation's total duration. This should be followed by the literal character `%`.For more information, see the <xref:System.Windows.Media.Animation.KeyTime.Percent%2A> property.  
-  
+*days*  
+An integer value greater than or equal to 0 that specifies the number of days spanned by this <xref:System.Windows.Media.Animation.KeyTime>. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
+ 
+*hours*  
+An integer value between 0 and 23 that specifies the number of hours spanned by this <xref:System.Windows.Media.Animation.KeyTime>. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
+ 
+*minutes*  
+An integer value between 0 and 59 that specifies the number of minutes spanned by this <xref:System.Windows.Media.Animation.KeyTime>. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
+ 
+*seconds*  
+A floating-point value between 0 and 59 that specifies the number of seconds spanned by this <xref:System.Windows.Media.Animation.KeyTime>. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
+ 
+*fractionalSeconds*  
+An integer value consisting of 1 to 7 digits that specifies fractional seconds. For more information, see the <xref:System.Windows.Media.Animation.KeyTime.TimeSpan%2A> property.  
+ 
+*pctValue*  
+A floating-point value between 0 and 100, inclusive, that specifies this <xref:System.Windows.Media.Animation.KeyTime> as a percentage of the animation's total duration. This should be followed by the literal character `%`.For more information, see the <xref:System.Windows.Media.Animation.KeyTime.Percent%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,10 +95,10 @@
           <see langword="true" /> if <paramref name="value" /> is a <see cref="T:System.Windows.Media.Animation.KeyTime" /> that represents the same length of time as this instance; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Comparing two <xref:System.Windows.Media.Animation.KeyTime> instances with differently typed <xref:System.Windows.Media.Animation.KeyTimeType> properties, including the special values Uniform or Paced, elicits a false return value.  
-  
+Comparing two <xref:System.Windows.Media.Animation.KeyTime> instances with differently typed <xref:System.Windows.Media.Animation.KeyTimeType> properties, including the special values Uniform or Paced, elicits a false return value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
           <see langword="true" /> if the values of <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are equal; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Comparing two <xref:System.Windows.Media.Animation.KeyTime> instances with differently typed <xref:System.Windows.Media.Animation.KeyTimeType> properties, including the special values Uniform or Paced, elicits a false return value.  
-  
+Comparing two <xref:System.Windows.Media.Animation.KeyTime> instances with differently typed <xref:System.Windows.Media.Animation.KeyTimeType> properties, including the special values Uniform or Paced, elicits a false return value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <returns>A new <see cref="T:System.Windows.Media.Animation.KeyTime" /> instance, initialized to the value of <paramref name="percent" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The percent parameter is passed as a double, ranging between the values 0.0 and 1.0.  
-  
+The percent parameter is passed as a double, ranging between the values 0.0 and 1.0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -254,10 +254,10 @@
           <see langword="true" /> if <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Comparing <xref:System.Windows.Media.Animation.KeyTime> instances with differently typed <xref:System.Windows.Media.Animation.KeyTimeType> properties, including the special values Uniform or Paced, elicits a false return value.  
-  
+Comparing <xref:System.Windows.Media.Animation.KeyTime> instances with differently typed <xref:System.Windows.Media.Animation.KeyTimeType> properties, including the special values Uniform or Paced, elicits a false return value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
         <value>A <see cref="P:System.Windows.Media.Animation.KeyTime.Paced" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a key time is set to <xref:System.Windows.Media.Animation.KeyTime.Paced%2A>, available time is allocated according to the length of each of the key frames to determine the duration of each frame.  This will provide the behavior that the "velocity" or pace of the animation will remain constant.  
-  
+When a key time is set to <xref:System.Windows.Media.Animation.KeyTime.Paced%2A>, available time is allocated according to the length of each of the key frames to determine the duration of each frame.  This will provide the behavior that the "velocity" or pace of the animation will remain constant.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,10 +351,10 @@
         <value>A <see cref="P:System.Windows.Media.Animation.KeyTime.Percent" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a key time is expressed as a percentage, the key frame ending time is specified as a percentage of the duration of the key frame animation. For example, if a key frame animation has a duration of four seconds and 75% is given as the <xref:System.Windows.Media.Animation.KeyTime> percentage for the key frame, the key frame will end after the 3rd second.  
-  
+When a key time is expressed as a percentage, the key frame ending time is specified as a percentage of the duration of the key frame animation. For example, if a key frame animation has a duration of four seconds and 75% is given as the <xref:System.Windows.Media.Animation.KeyTime> percentage for the key frame, the key frame will end after the 3rd second.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If this instance is not of type <see cref="P:System.Windows.Media.Animation.KeyTime.Percent" />.</exception>
@@ -377,10 +377,10 @@
         <value>A <see cref="P:System.Windows.Media.Animation.KeyTime.TimeSpan" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a key time is expressed as a time span, the key frame ending time is specified as a time relative to the beginning of the animation. For example, if the time span is set to "0:0:2", the key frame will end two seconds after the animation begins.  
-  
+When a key time is expressed as a time span, the key frame ending time is specified as a time relative to the beginning of the animation. For example, if the time span is set to "0:0:2", the key frame will end two seconds after the animation begins.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If this instance is not of type <see cref="P:System.Windows.Media.Animation.KeyTime.TimeSpan" />.</exception>
@@ -440,10 +440,10 @@
         <value>A <see cref="P:System.Windows.Media.Animation.KeyTime.Uniform" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a key time is set to <xref:System.Windows.Media.Animation.KeyTime.Uniform%2A>, the total allotted time of the animation is divided evenly between key frames. For example, if the key frame animation has a duration of four seconds and there are four key frames, each key frame will last for one second and begin immediately after the preceding one ends.  
-  
+When a key time is set to <xref:System.Windows.Media.Animation.KeyTime.Uniform%2A>, the total allotted time of the animation is divided evenly between key frames. For example, if the key frame animation has a duration of four seconds and there are four key frames, each key frame will last for one second and begin immediately after the preceding one ends.  
+ 
  ]]></format>
         </remarks>
       </Docs>

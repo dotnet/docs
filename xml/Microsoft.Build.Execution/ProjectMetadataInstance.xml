@@ -23,10 +23,10 @@
     <summary>Wraps an evaluated metadata for build purposes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Added and removed via methods on the <xref:Microsoft.Build.Execution.ProjectItemInstance> object.  
-  
+Added and removed via methods on the <xref:Microsoft.Build.Execution.ProjectItemInstance> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,10 +98,10 @@
         <value>Returns the name of the metadata.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This cannot be set, as it is used as the key into the item's metadata table.  
-  
+This cannot be set, as it is used as the key into the item's metadata table.  
+ 
  ]]></format>
         </remarks>
       </Docs>

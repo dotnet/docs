@@ -108,12 +108,12 @@
         <returns>An enumeration that represents all activities associated with the input activity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The enumeration contains all child activities, delegate handlers, variable defaults, and argument expressions. If the input activity is `null`, an <xref:System.ArgumentNullException> is thrown. The activity tree must remain unmodified and <xref:System.Activities.WorkflowInspectionServices.CacheMetadata%2A> must not be called while the tree is being enumerated or else an <xref:System.InvalidOperationException> is thrown when <xref:System.Collections.IEnumerator.MoveNext%2A> is called.  
-  
- Calling this method causes a full cache metadata to occur. If you make changes to the workflow after calling this method, you must call the <xref:System.Activities.Validation.ActivityValidationServices> <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> method after making the changes in order to re-cache the metadata.  
-  
+The enumeration contains all child activities, delegate handlers, variable defaults, and argument expressions. If the input activity is `null`, an <xref:System.ArgumentNullException> is thrown. The activity tree must remain unmodified and <xref:System.Activities.WorkflowInspectionServices.CacheMetadata%2A> must not be called while the tree is being enumerated or else an <xref:System.InvalidOperationException> is thrown when <xref:System.Collections.IEnumerator.MoveNext%2A> is called.  
+ 
+Calling this method causes a full cache metadata to occur. If you make changes to the workflow after calling this method, you must call the <xref:System.Activities.Validation.ActivityValidationServices> <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> method after making the changes in order to re-cache the metadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>

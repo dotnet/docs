@@ -13,20 +13,20 @@
     <summary>Specifies the different methods by which two geometries can be combined.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows the different geometry combine modes.  
-  
- ![Different combine modes applied to two geometries](~/add/media/mmgraphics-geometrycombinemodes.png "Different combine modes applied to two geometries")  
+The following illustration shows the different geometry combine modes.  
+ 
+![Different combine modes applied to two geometries](~/add/media/mmgraphics-geometrycombinemodes.png "Different combine modes applied to two geometries")  
 Geometry Combine Modes  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to combine two geometries using the Union combine mode.  
-  
- [!code-xml[geometrysample#23](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/combininggeometriesexample.xaml#23)]  
-  
+The following example shows how to combine two geometries using the Union combine mode.  
+ 
+[!code-xml[geometrysample#23](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/combininggeometriesexample.xaml#23)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

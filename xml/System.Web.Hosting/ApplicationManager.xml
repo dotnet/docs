@@ -14,18 +14,18 @@
     <summary>Manages ASP.NET application domains for an ASP.NET hosting application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.ApplicationManager> object provides lifetime management of objects in the hosting environment for an ASP.NET application. It is responsible for:  
-  
+The <xref:System.Web.Hosting.ApplicationManager> object provides lifetime management of objects in the hosting environment for an ASP.NET application. It is responsible for:  
+ 
 -   Activating and initializing ASP.NET applications.  
-  
+ 
 -   Managing the application lifetime and the lifetime of objects registered in the application.  
-  
+ 
 -   Exposing objects used by the hosting environment to process ASP.NET application requests.  
-  
+ 
 -   Providing a list of applications running in the hosting process at any given moment.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <summary>Shuts down all application domains.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a call to the <xref:System.Web.Hosting.ApplicationManager.Close%2A> method reduces the reference count of applications using the application manager to 0, the <xref:System.Web.Hosting.ApplicationManager.Close%2A> method calls the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method.  
-  
+If a call to the <xref:System.Web.Hosting.ApplicationManager.Close%2A> method reduces the reference count of applications using the application manager to 0, the <xref:System.Web.Hosting.ApplicationManager.Close%2A> method calls the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,10 +78,10 @@
         <returns>A new object of the type specified in <paramref name="type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A physical path for the application does not exist.</exception>
@@ -123,26 +123,26 @@
         <returns>A new object of the specified <paramref name="type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method is used to create and register objects in the application. Only one object of each type can be created. If you need to create multiple objects of the same type, you must implement an object factory. For more information, see the code example in this topic.  
+The <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method is used to create and register objects in the application. Only one object of each type can be created. If you need to create multiple objects of the same type, you must implement an object factory. For more information, see the code example in this topic.  
+ 
+Each application, identified by a unique application identifier, runs in its own application domain. The <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method creates an object of the specified type in the application domain of the application specified in the `appID` parameter. If an application domain does not exist for the specified application, one is created before the object is created.  
+ 
+The `failIfExists` parameter controls the behavior of the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method when an object of the specified type already exists in the application. When `failIfExists` is `true`, the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method throws an <xref:System.InvalidOperationException> exception.  
+ 
+When `failIfExists` is `false`, the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method returns the existing registered object of the specified type.  
+ 
+The <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method calls the overload that takes an additional `throwOnError` parameter with `throwOnError` set to `false`.  
+ 
   
- Each application, identified by a unique application identifier, runs in its own application domain. The <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method creates an object of the specified type in the application domain of the application specified in the `appID` parameter. If an application domain does not exist for the specified application, one is created before the object is created.  
-  
- The `failIfExists` parameter controls the behavior of the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method when an object of the specified type already exists in the application. When `failIfExists` is `true`, the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method throws an <xref:System.InvalidOperationException> exception.  
-  
- When `failIfExists` is `false`, the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method returns the existing registered object of the specified type.  
-  
- The <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method calls the overload that takes an additional `throwOnError` parameter with `throwOnError` set to `false`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example is an implementation of the object-factory design pattern for registered objects. Using the factory pattern enables you to register multiple instances of an object. The example contains two objects: `SampleComponent`, which is the object the application will use multiple instances of, and `SampleComponentFactory`, which manages a list of `SampleComponent` instances.  
-  
- [!code-csharp[System.Web.Hosting.ApplicationManager#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/CS/appManagercs.aspx.cs#1)]
- [!code-vb[System.Web.Hosting.ApplicationManager#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/VB/appManagervb.aspx.vb#1)]  
-  
+The following code example is an implementation of the object-factory design pattern for registered objects. Using the factory pattern enables you to register multiple instances of an object. The example contains two objects: `SampleComponent`, which is the object the application will use multiple instances of, and `SampleComponentFactory`, which manages a list of `SampleComponent` instances.  
+ 
+[!code-csharp[System.Web.Hosting.ApplicationManager#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/CS/appManagercs.aspx.cs#1)]
+[!code-vb[System.Web.Hosting.ApplicationManager#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/VB/appManagervb.aspx.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -198,10 +198,10 @@
         <returns>A new object of the specified <paramref name="type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload of the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method provides the `throwOnError` parameter, which allows you to control whether hosting initialization exceptions are thrown. The overload of the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method that does not provide `throwOnError` calls this overload with the parameter set to `false`.  
-  
+This overload of the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method provides the `throwOnError` parameter, which allows you to control whether hosting initialization exceptions are thrown. The overload of the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method that does not provide `throwOnError` calls this overload with the parameter set to `false`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -286,18 +286,18 @@
         <returns>The single instance of the <see cref="T:System.Web.Hosting.ApplicationManager" /> object associated with the ASP.NET host process that is running.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only one instance of the <xref:System.Web.Hosting.ApplicationManager> object is created by an ASP.NET host process in the default application domain. If an instance of the <xref:System.Web.Hosting.ApplicationManager> class is not available, the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method first creates an instance of the <xref:System.Web.Hosting.ApplicationManager> class and then returns the newly created object. If an instance of the <xref:System.Web.Hosting.ApplicationManager> class was previously created, the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method returns the existing object.  
+Only one instance of the <xref:System.Web.Hosting.ApplicationManager> object is created by an ASP.NET host process in the default application domain. If an instance of the <xref:System.Web.Hosting.ApplicationManager> class is not available, the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method first creates an instance of the <xref:System.Web.Hosting.ApplicationManager> class and then returns the newly created object. If an instance of the <xref:System.Web.Hosting.ApplicationManager> class was previously created, the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method returns the existing object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method to retrieve the <xref:System.Web.Hosting.ApplicationManager> instance for a Web application.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  -->  
-  
+The following code example uses the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method to retrieve the <xref:System.Web.Hosting.ApplicationManager> instance for a Web application.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -350,13 +350,13 @@
         <returns>An array of <see cref="T:System.Web.Hosting.ApplicationInfo" /> objects that contain information about the applications managed by this <see cref="T:System.Web.Hosting.ApplicationManager" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.Hosting.ApplicationManager.GetRunningApplications%2A> method to display information about the applications managed by an <xref:System.Web.Hosting.ApplicationManager> instance.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  -->  
-  
+The following code example uses the <xref:System.Web.Hosting.ApplicationManager.GetRunningApplications%2A> method to display information about the applications managed by an <xref:System.Web.Hosting.ApplicationManager> instance.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,10 +379,10 @@
         <returns>Always <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method in its base class. It always returns `null` and thereby prevents a lease from being created that would limit the application domain's lifetime.  
-  
+This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method in its base class. It always returns `null` and thereby prevents a lease from being created that would limit the application domain's lifetime.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,10 +406,10 @@
           <see langword="true" /> if all applications in the process are idle; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.ApplicationManager.IsIdle%2A> method returns `true` if all applications hosted by the process are idle.  
-  
+The <xref:System.Web.Hosting.ApplicationManager.IsIdle%2A> method returns `true` if all applications hosted by the process are idle.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -449,10 +449,10 @@
         <summary>Unloads all application resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method in all application domains managed by this <xref:System.Web.Hosting.ApplicationManager> instance; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method can be called from outside the managed application domains.  
-  
+Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method in all application domains managed by this <xref:System.Web.Hosting.ApplicationManager> instance; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method can be called from outside the managed application domains.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -477,10 +477,10 @@
         <summary>Unloads the specified application.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method for a specific application domain; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method can be called from outside managed application domains.  
-  
+Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method for a specific application domain; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method can be called from outside managed application domains.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

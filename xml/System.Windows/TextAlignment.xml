@@ -18,17 +18,17 @@
     <summary>Specifies whether the text in the object is left-aligned, right-aligned, centered, or justified.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The enumerated values for the <xref:System.Windows.TextAlignment> class are Left, Right, Center, and Justify.  
+The enumerated values for the <xref:System.Windows.TextAlignment> class are Left, Right, Center, and Justify.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, the <xref:System.Windows.Documents.Block.TextAlignment%2A> property is set to Left.  
-  
- [!code-xml[flowdocumentsnippets#_FlowDocumentLineHeightXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentlineheightxaml)]  
-  
+In the following example, the <xref:System.Windows.Documents.Block.TextAlignment%2A> property is set to Left.  
+ 
+[!code-xml[flowdocumentsnippets#_FlowDocumentLineHeightXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentlineheightxaml)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

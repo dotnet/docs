@@ -24,12 +24,12 @@
     <summary>Represents a value which can either be a product or a comment in a User-Agent header.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.Headers.ProductInfoHeaderValue> class provides support for the product and comment tokens values used in  a User-Agent header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
-  
- The User-Agent field contains information about the user agent originating the request. The field can contain multiple product tokens and comments identifying the user agent and any sub-products.  
-  
+The <xref:System.Net.Http.Headers.ProductInfoHeaderValue> class provides support for the product and comment tokens values used in  a User-Agent header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+ 
+The User-Agent field contains information about the user agent originating the request. The field can contain multiple product tokens and comments identifying the user agent and any sub-products.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -185,12 +185,12 @@
         <returns>A hash code for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
-  
- The <xref:System.Net.Http.Headers.ProductInfoHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
+ 
+The <xref:System.Net.Http.Headers.ProductInfoHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>

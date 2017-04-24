@@ -13,20 +13,20 @@
     <summary>Specifies the available cap styles with which a <see cref="T:System.Drawing.Pen" /> object can end a line.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can draw the start or end of a line in one of several shapes called line caps. [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] supports several line caps, such as round, square, diamond, and arrowhead. The following illustration shows a line with a round cap and an arrow cap.  
+You can draw the start or end of a line in one of several shapes called line caps. [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] supports several line caps, such as round, square, diamond, and arrowhead. The following illustration shows a line with a round cap and an arrow cap.  
+ 
+![Pens](~/add/media/pens4.gif "Pens")  
+ 
   
- ![Pens](~/add/media/pens4.gif "Pens")  
-  
-   
-  
+ 
 ## Examples  
- The following example draws a line with an arrowhead at one end and a round cap at the other end. To run this example, Create a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Paste the example code into the <xref:System.Windows.Forms.Control.Paint> event handler passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-csharp[System.Drawing.UsingAPen#71](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#71)]
- [!code-vb[System.Drawing.UsingAPen#71](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#71)]  
-  
+The following example draws a line with an arrowhead at one end and a round cap at the other end. To run this example, Create a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Paste the example code into the <xref:System.Windows.Forms.Control.Paint> event handler passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-csharp[System.Drawing.UsingAPen#71](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#71)]
+[!code-vb[System.Drawing.UsingAPen#71](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#71)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

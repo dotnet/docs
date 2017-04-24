@@ -15,17 +15,17 @@
     <summary>Represents a collection of <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> property of <xref:System.Web.Services.Discovery.DiscoveryClientProtocol> is of type <xref:System.Web.Services.Discovery.DiscoveryClientReferenceCollection>.  
+The <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> property of <xref:System.Web.Services.Discovery.DiscoveryClientProtocol> is of type <xref:System.Web.Services.Discovery.DiscoveryClientReferenceCollection>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryClientReferenceCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection/CPP/discoveryclientreferencecollection.cpp#1)]
- [!code-csharp[DiscoveryClientReferenceCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection/CS/discoveryclientreferencecollection.cs#1)]
- [!code-vb[DiscoveryClientReferenceCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection/VB/discoveryclientreferencecollection.vb#1)]  
-  
+[!code-cpp[DiscoveryClientReferenceCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection/CPP/discoveryclientreferencecollection.cpp#1)]
+[!code-csharp[DiscoveryClientReferenceCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection/CS/discoveryclientreferencecollection.cs#1)]
+[!code-vb[DiscoveryClientReferenceCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection/VB/discoveryclientreferencecollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,12 +67,12 @@
         <summary>Adds a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryClientReferenceCollection_Items#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CPP/discoveryclientreferencecollection_items.cpp#2)]
- [!code-csharp[DiscoveryClientReferenceCollection_Items#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CS/discoveryclientreferencecollection_items.cs#2)]
- [!code-vb[DiscoveryClientReferenceCollection_Items#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/VB/discoveryclientreferencecollection_items.vb#2)]  
-  
+[!code-cpp[DiscoveryClientReferenceCollection_Items#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CPP/discoveryclientreferencecollection_items.cpp#2)]
+[!code-csharp[DiscoveryClientReferenceCollection_Items#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CS/discoveryclientreferencecollection_items.cs#2)]
+[!code-vb[DiscoveryClientReferenceCollection_Items#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/VB/discoveryclientreferencecollection_items.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,12 +100,12 @@
         <summary>Adds a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> with the specified URL and value to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryClientReferenceCollection_Items#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CPP/discoveryclientreferencecollection_items.cpp#3)]
- [!code-csharp[DiscoveryClientReferenceCollection_Items#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CS/discoveryclientreferencecollection_items.cs#3)]
- [!code-vb[DiscoveryClientReferenceCollection_Items#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/VB/discoveryclientreferencecollection_items.vb#3)]  
-  
+[!code-cpp[DiscoveryClientReferenceCollection_Items#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CPP/discoveryclientreferencecollection_items.cpp#3)]
+[!code-csharp[DiscoveryClientReferenceCollection_Items#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CS/discoveryclientreferencecollection_items.cs#3)]
+[!code-vb[DiscoveryClientReferenceCollection_Items#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/VB/discoveryclientreferencecollection_items.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,12 +133,12 @@
           <see langword="true" /> if the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" /> contains a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> with the specified URL; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryClientReferenceCollection_Keys#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/CPP/discoveryclientreferencecollection_keys.cpp#3)]
- [!code-csharp[DiscoveryClientReferenceCollection_Keys#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/CS/discoveryclientreferencecollection_keys.cs#3)]
- [!code-vb[DiscoveryClientReferenceCollection_Keys#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/VB/discoveryclientreferencecollection_keys.vb#3)]  
-  
+[!code-cpp[DiscoveryClientReferenceCollection_Keys#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/CPP/discoveryclientreferencecollection_keys.cpp#3)]
+[!code-csharp[DiscoveryClientReferenceCollection_Keys#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/CS/discoveryclientreferencecollection_keys.cs#3)]
+[!code-vb[DiscoveryClientReferenceCollection_Keys#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/VB/discoveryclientreferencecollection_keys.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,12 +165,12 @@
         <value>An <see langword="DiscoveryReference" /> representing a reference to a discovery document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryClientReferenceCollection_Items#5](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CPP/discoveryclientreferencecollection_items.cpp#5)]
- [!code-csharp[DiscoveryClientReferenceCollection_Items#5](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CS/discoveryclientreferencecollection_items.cs#5)]
- [!code-vb[DiscoveryClientReferenceCollection_Items#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/VB/discoveryclientreferencecollection_items.vb#5)]  
-  
+[!code-cpp[DiscoveryClientReferenceCollection_Items#5](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CPP/discoveryclientreferencecollection_items.cpp#5)]
+[!code-csharp[DiscoveryClientReferenceCollection_Items#5](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CS/discoveryclientreferencecollection_items.cs#5)]
+[!code-vb[DiscoveryClientReferenceCollection_Items#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/VB/discoveryclientreferencecollection_items.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,12 +193,12 @@
         <value>An <see cref="T:System.Collections.ICollection" /> containing the keys of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryClientReferenceCollection_Keys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/CPP/discoveryclientreferencecollection_keys.cpp#1)]
- [!code-csharp[DiscoveryClientReferenceCollection_Keys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/CS/discoveryclientreferencecollection_keys.cs#1)]
- [!code-vb[DiscoveryClientReferenceCollection_Keys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/VB/discoveryclientreferencecollection_keys.vb#1)]  
-  
+[!code-cpp[DiscoveryClientReferenceCollection_Keys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/CPP/discoveryclientreferencecollection_keys.cpp#1)]
+[!code-csharp[DiscoveryClientReferenceCollection_Keys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/CS/discoveryclientreferencecollection_keys.cs#1)]
+[!code-vb[DiscoveryClientReferenceCollection_Keys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Keys/VB/discoveryclientreferencecollection_keys.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,12 +224,12 @@
         <summary>Removes a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> with the specified URL from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryClientReferenceCollection_Items#4](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CPP/discoveryclientreferencecollection_items.cpp#4)]
- [!code-csharp[DiscoveryClientReferenceCollection_Items#4](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CS/discoveryclientreferencecollection_items.cs#4)]
- [!code-vb[DiscoveryClientReferenceCollection_Items#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/VB/discoveryclientreferencecollection_items.vb#4)]  
-  
+[!code-cpp[DiscoveryClientReferenceCollection_Items#4](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CPP/discoveryclientreferencecollection_items.cpp#4)]
+[!code-csharp[DiscoveryClientReferenceCollection_Items#4](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/CS/discoveryclientreferencecollection_items.cs#4)]
+[!code-vb[DiscoveryClientReferenceCollection_Items#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientReferenceCollection_Items/VB/discoveryclientreferencecollection_items.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,10 +252,10 @@
         <value>An <see cref="T:System.Collections.ICollection" /> containing the values in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- DiscoveryClientReferenceCollection_Keys#2  
-  
+DiscoveryClientReferenceCollection_Keys#2  
+ 
  ]]></format>
         </remarks>
       </Docs>

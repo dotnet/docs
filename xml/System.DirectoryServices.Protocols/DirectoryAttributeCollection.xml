@@ -146,18 +146,18 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.CopyTo(System.DirectoryServices.Protocols.DirectoryAttribute[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Exceptions  
-  
+ 
 |Exception|Condition|  
 |---------------|---------------|  
 |ArgumentNullException|`array` is a null reference (`Nothing` in Visual Basic).|  
 |ArgumentOutOfRangeException|`index` is less than zero.|  
 |ArgumentException|`array` is multidimensional<br /><br /> -or-<br /><br /> The number of elements in the source <xref:System.DirectoryServices.Protocols.DirectoryAttributeCollection> is greater than the available space from `index` to the end of the destination `array`.|  
 |InvalidCastException|The type of the source <xref:System.DirectoryServices.Protocols.DirectoryAttributeCollection> cannot be cast automatically to the type of the destination `array`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,15 +232,15 @@
         <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Exceptions  
-  
+ 
 |Exception|Condition|  
 |---------------|---------------|  
 |ArgumentException|You attempted to set the property to `null`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,15 +291,15 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Remove(System.DirectoryServices.Protocols.DirectoryAttribute)" /> method removes the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Exceptions  
-  
+ 
 |Exception|Condition|  
 |---------------|---------------|  
 |NotSupportedException|<xref:System.DirectoryServices.Protocols.DirectoryAttributeCollection> is read-only or has a fixed size.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

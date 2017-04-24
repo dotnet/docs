@@ -102,10 +102,10 @@
           <paramref name="value" /> converted to <paramref name="type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not allow conversions that cause a loss of information, such as converting 1.5 to an integer.  
-  
+This method does not allow conversions that cause a loss of information, such as converting 1.5 to an integer.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

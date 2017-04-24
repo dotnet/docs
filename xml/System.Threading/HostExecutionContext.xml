@@ -23,10 +23,10 @@
     <summary>Encapsulates and propagates the host execution context across threads.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Threading.HostExecutionContext> is part of a larger <xref:System.Threading.ExecutionContext>. The host context migrates, or flows, with the execution context.  
-  
+The <xref:System.Threading.HostExecutionContext> is part of a larger <xref:System.Threading.ExecutionContext>. The host context migrates, or flows, with the execution context.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.HostExecutionContext" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor creates a host execution context whose <xref:System.Threading.HostExecutionContext.State%2A> property value is `null`.  
-  
+The default constructor creates a host execution context whose <xref:System.Threading.HostExecutionContext.State%2A> property value is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,10 +80,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.HostExecutionContext" /> class using the specified state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Threading.HostExecutionContext> is included with the <xref:System.Threading.ExecutionContext>. The `state` represents a safe handle containing the `IUnknown` pointer for the host.  
-  
+The <xref:System.Threading.HostExecutionContext> is included with the <xref:System.Threading.ExecutionContext>. The `state` represents a safe handle containing the `IUnknown` pointer for the host.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <returns>A <see cref="T:System.Threading.HostExecutionContext" /> object representing the host context for the current thread.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The copy can be used as the parameter to a <xref:System.Threading.HostExecutionContextManager.SetHostExecutionContext%2A?displayProperty=fullName> method call.  
-  
+The copy can be used as the parameter to a <xref:System.Threading.HostExecutionContextManager.SetHostExecutionContext%2A?displayProperty=fullName> method call.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,15 +141,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.HostExecutionContext" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Threading.HostExecutionContext>. The `Dispose` method leaves the <xref:System.Threading.HostExecutionContext> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.HostExecutionContext> so the garbage collector can reclaim the memory that the <xref:System.Threading.HostExecutionContext> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Threading.HostExecutionContext>. The `Dispose` method leaves the <xref:System.Threading.HostExecutionContext> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.HostExecutionContext> so the garbage collector can reclaim the memory that the <xref:System.Threading.HostExecutionContext> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.HostExecutionContext>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.HostExecutionContext> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,14 +180,14 @@
         <summary>When overridden in a derived class, releases the unmanaged resources used by the <see cref="T:System.Threading.WaitHandle" />, and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Threading.HostExecutionContext.Dispose> method overload and the finalizer. <xref:System.Threading.HostExecutionContext.Dispose> invokes this protected method with the `disposing` parameter set to `true`. The finalizer invokes this method with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Threading.HostExecutionContext> references. This method invokes the `Dispose` method of each referenced object.  
-  
- This method can be called multiple times by other objects. When overriding this method, be careful not to reference objects that have been previously disposed in an earlier call.  
-  
+This method is called by the <xref:System.Threading.HostExecutionContext.Dispose> method overload and the finalizer. <xref:System.Threading.HostExecutionContext.Dispose> invokes this protected method with the `disposing` parameter set to `true`. The finalizer invokes this method with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Threading.HostExecutionContext> references. This method invokes the `Dispose` method of each referenced object.  
+ 
+This method can be called multiple times by other objects. When overriding this method, be careful not to reference objects that have been previously disposed in an earlier call.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <value>An object representing the host execution context state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Threading.HostExecutionContext.State%2A> property value represents a safe handle containing the `IUnknown` pointer for the host.  
-  
+The <xref:System.Threading.HostExecutionContext.State%2A> property value represents a safe handle containing the `IUnknown` pointer for the host.  
+ 
  ]]></format>
         </remarks>
       </Docs>

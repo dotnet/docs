@@ -14,10 +14,10 @@
     <summary>Specifies that serializers should handle default values. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService> supports absolute serialization. This means that instead of serializing only values that differ from an object's default values, all values are serialized, allowing values to be reset to their defaults for objects that may have already been initialized. When a component serialization service wishes to indicate this behavior to <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> objects, it will place a <xref:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext> object on the context stack. The member in this context may be `null`, to indicate that all members are serialized, or it can indicate that only a specific member is being serialized at this time.  
-  
+The <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService> supports absolute serialization. This means that instead of serializing only values that differ from an object's default values, all values are serialized, allowing values to be reset to their defaults for objects that may have already been initialized. When a component serialization service wishes to indicate this behavior to <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> objects, it will place a <xref:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext> object on the context stack. The member in this context may be `null`, to indicate that all members are serialized, or it can indicate that only a specific member is being serialized at this time.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using the default constructor indicates that this context should be used for all members.  
-  
+Using the default constructor indicates that this context should be used for all members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext" /> class with the option of binding to a specific member.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `member` is `null`, this context will be used for all members.  
-  
+If `member` is `null`, this context will be used for all members.  
+ 
  ]]></format>
         </remarks>
       </Docs>

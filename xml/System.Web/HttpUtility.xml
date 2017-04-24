@@ -23,20 +23,20 @@
     <summary>Provides methods for encoding and decoding URLs when processing Web requests. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpUtility> class is used internally by the <xref:System.Web.HttpServerUtility> class, whose methods and properties are exposed through the intrinsic ASP.NET <xref:System.Web.HttpContext.Server%2A> object. Additionally, the <xref:System.Web.HttpUtility> class contains encoding and decoding utility methods that are not accessible from the <xref:System.Web.HttpContext.Server%2A>.  
+The <xref:System.Web.HttpUtility> class is used internally by the <xref:System.Web.HttpServerUtility> class, whose methods and properties are exposed through the intrinsic ASP.NET <xref:System.Web.HttpContext.Server%2A> object. Additionally, the <xref:System.Web.HttpUtility> class contains encoding and decoding utility methods that are not accessible from the <xref:System.Web.HttpContext.Server%2A>.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
   
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Web.HttpUtility.UrlEncode%2A>, <xref:System.Web.HttpUtility.UrlDecode%2A> and <xref:System.Web.HttpUtility.ParseQueryString%2A> methods of the <xref:System.Web.HttpUtility> class.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpUtilityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtilityExample/cs/httputilityexample.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpUtilityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtilityExample/vb/httputilityexample.aspx#1)]  -->  
-  
+The following code example demonstrates the use of the <xref:System.Web.HttpUtility.UrlEncode%2A>, <xref:System.Web.HttpUtility.UrlDecode%2A> and <xref:System.Web.HttpUtility.ParseQueryString%2A> methods of the <xref:System.Web.HttpUtility> class.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpUtilityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtilityExample/cs/httputilityexample.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpUtilityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtilityExample/vb/httputilityexample.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.HttpUtility" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpUtility> class exposes methods for encoding and decoding string based URLs, URL tokens, and paths. The <xref:System.Web.HttpUtility> is used internally by the <xref:System.Web.HttpServerUtility> class.  
-  
+The <xref:System.Web.HttpUtility> class exposes methods for encoding and decoding string based URLs, URL tokens, and paths. The <xref:System.Web.HttpUtility> is used internally by the <xref:System.Web.HttpServerUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,12 +102,12 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method encodes characters appropriate for insertion into an HTML attribute value.  
-  
- The string result from the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method should be used only for double-quoted attributes. Security issues might arise when using the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method with single-quoted attributes.  
-  
+The <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method encodes characters appropriate for insertion into an HTML attribute value.  
+ 
+The string result from the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method should be used only for double-quoted attributes. Security issues might arise when using the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method with single-quoted attributes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,12 +143,12 @@
         <summary>Minimally converts a string into an HTML-encoded string and sends the encoded string to a <see cref="T:System.IO.TextWriter" /> output stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method converts only quotation marks ("), ampersands (&), and left angle brackets (<) to equivalent character entities. It is considerably faster than the <xref:System.Web.HttpUtility.HtmlEncode%2A> method.  
-  
- The string result from the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method should be used only for double-quoted attributes. Security issues might arise when using the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method with single-quoted attributes.  
-  
+The <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method converts only quotation marks ("), ampersands (&), and left angle brackets (<) to equivalent character entities. It is considerably faster than the <xref:System.Web.HttpUtility.HtmlEncode%2A> method.  
+ 
+The string result from the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method should be used only for double-quoted attributes. Security issues might arise when using the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method with single-quoted attributes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,20 +183,20 @@
         <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
   
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Web.HttpUtility.HtmlEncode%2A> and <xref:System.Web.HttpUtility.HtmlDecode%2A> methods of the <xref:System.Web.HttpUtility> class. The input string is encoded using the <xref:System.Web.HttpUtility.HtmlEncode%2A> method. The encoded string obtained is then decoded using the <xref:System.Web.HttpUtility.HtmlDecode%2A> method.  
-  
- [!code-csharp[HttpUtility_HtmlDecode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_HtmlDecode/CS/httputility_htmldecode.cs#1)]
- [!code-vb[HttpUtility_HtmlDecode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_HtmlDecode/VB/httputility_htmldecode.vb#1)]  
-  
+The following code example demonstrates the <xref:System.Web.HttpUtility.HtmlEncode%2A> and <xref:System.Web.HttpUtility.HtmlDecode%2A> methods of the <xref:System.Web.HttpUtility> class. The input string is encoded using the <xref:System.Web.HttpUtility.HtmlEncode%2A> method. The encoded string obtained is then decoded using the <xref:System.Web.HttpUtility.HtmlDecode%2A> method.  
+ 
+[!code-csharp[HttpUtility_HtmlDecode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_HtmlDecode/CS/httputility_htmldecode.cs#1)]
+[!code-vb[HttpUtility_HtmlDecode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_HtmlDecode/VB/httputility_htmldecode.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,12 +232,12 @@
         <summary>Converts a string that has been HTML-encoded into a decoded string, and sends the decoded string to a <see cref="T:System.IO.TextWriter" /> output stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,10 +272,10 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,20 +310,20 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
   
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Web.HttpUtility.HtmlEncode%2A> and <xref:System.Web.HttpUtility.HtmlDecode%2A> methods of the <xref:System.Web.HttpUtility> class. The input string is encoded using the <xref:System.Web.HttpUtility.HtmlEncode%2A> method. The encoded string obtained is then decoded using the <xref:System.Web.HttpUtility.HtmlDecode%2A> method.  
-  
- [!code-csharp[HttpUtility_HtmlDecode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_HtmlDecode/CS/httputility_htmldecode.cs#1)]
- [!code-vb[HttpUtility_HtmlDecode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_HtmlDecode/VB/httputility_htmldecode.vb#1)]  
-  
+The following code example demonstrates the <xref:System.Web.HttpUtility.HtmlEncode%2A> and <xref:System.Web.HttpUtility.HtmlDecode%2A> methods of the <xref:System.Web.HttpUtility> class. The input string is encoded using the <xref:System.Web.HttpUtility.HtmlEncode%2A> method. The encoded string obtained is then decoded using the <xref:System.Web.HttpUtility.HtmlDecode%2A> method.  
+ 
+[!code-csharp[HttpUtility_HtmlDecode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_HtmlDecode/CS/httputility_htmldecode.cs#1)]
+[!code-vb[HttpUtility_HtmlDecode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_HtmlDecode/VB/httputility_htmldecode.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,12 +359,12 @@
         <summary>Converts a string into an HTML-encoded string, and returns the output as a <see cref="T:System.IO.TextWriter" /> stream of output.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and >, are encoded as &lt; and &gt; for HTTP transmission.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and >, are encoded as &lt; and &gt; for HTTP transmission.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,21 +463,21 @@
         <returns>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> of query parameters and values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpUtility.ParseQueryString%2A> method uses <xref:System.Text.Encoding.UTF8%2A> format to parse the query string In the returned <xref:System.Collections.Specialized.NameValueCollection>, URL-encoded characters are decoded and multiple occurrences of the same query string parameter are listed as a single entry with a comma separating each value.  
-  
+The <xref:System.Web.HttpUtility.ParseQueryString%2A> method uses <xref:System.Text.Encoding.UTF8%2A> format to parse the query string In the returned <xref:System.Collections.Specialized.NameValueCollection>, URL-encoded characters are decoded and multiple occurrences of the same query string parameter are listed as a single entry with a comma separating each value.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Web.HttpUtility.ParseQueryString%2A> method uses query strings that might contain user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.HttpUtility.ParseQueryString%2A> method. Multiple occurrences of the same query string variable are consolidated in one entry of the returned <xref:System.Collections.Specialized.NameValueCollection>.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpUtility_ParseQueryString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_ParseQueryString/cs/httputility_parsequerystring.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpUtility_ParseQueryString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_ParseQueryString/vb/httputility_parsequerystring.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.HttpUtility.ParseQueryString%2A> method. Multiple occurrences of the same query string variable are consolidated in one entry of the returned <xref:System.Collections.Specialized.NameValueCollection>.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpUtility_ParseQueryString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_ParseQueryString/cs/httputility_parsequerystring.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpUtility_ParseQueryString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_ParseQueryString/vb/httputility_parsequerystring.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -516,13 +516,13 @@
         <returns>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> of query parameters and values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the returned <xref:System.Collections.Specialized.NameValueCollection>, URL-encoded characters are decoded and multiple occurrences of the same query string parameter are listed as a single entry with a comma separating each value.  
-  
+In the returned <xref:System.Collections.Specialized.NameValueCollection>, URL-encoded characters are decoded and multiple occurrences of the same query string parameter are listed as a single entry with a comma separating each value.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Web.HttpUtility.ParseQueryString%2A> method uses query strings that might contain user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -563,12 +563,12 @@
         <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -605,12 +605,12 @@
         <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,12 +647,12 @@
         <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -693,12 +693,12 @@
         <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -741,12 +741,12 @@
         <returns>A decoded array of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -781,12 +781,12 @@
         <returns>A decoded array of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -823,12 +823,12 @@
         <returns>A decoded array of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -867,12 +867,12 @@
         <returns>A decoded array of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -915,12 +915,12 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpUtility.UrlEncode%2A> method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+The <xref:System.Web.HttpUtility.UrlEncode%2A> method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -955,18 +955,18 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpUtility.UrlEncode%28System.String%29> method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream without encoding, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
-  
- You can encode a URL using with the <xref:System.Web.HttpUtility.UrlEncode%2A> method or the <xref:System.Web.HttpUtility.UrlPathEncode%2A> method. However, the methods return different results. The <xref:System.Web.HttpUtility.UrlEncode%2A> method converts each space character to a plus character (+). The <xref:System.Web.HttpUtility.UrlPathEncode%2A> method converts each space character into the string "%20", which represents a space in hexadecimal notation. Use the <xref:System.Web.HttpUtility.UrlPathEncode%2A> method when you encode the path portion of a URL in order to guarantee a consistent decoded URL, regardless of which platform or browser performs the decoding.  
-  
- The <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> method uses UTF-8 encoding by default. Therefore, using the <xref:System.Web.HttpUtility.UrlEncode%2A> method provides the same results as using the <xref:System.Web.HttpUtility.UrlEncode%2A> method and specifying <xref:System.Text.Encoding.UTF8%2A> as the second parameter.  
-  
- <xref:System.Web.HttpServerUtility.UrlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlEncode%2A> uses the <xref:System.Web.HttpUtility.UrlEncode%2A> method to encode strings.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+The <xref:System.Web.HttpUtility.UrlEncode%28System.String%29> method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream without encoding, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
+ 
+You can encode a URL using with the <xref:System.Web.HttpUtility.UrlEncode%2A> method or the <xref:System.Web.HttpUtility.UrlPathEncode%2A> method. However, the methods return different results. The <xref:System.Web.HttpUtility.UrlEncode%2A> method converts each space character to a plus character (+). The <xref:System.Web.HttpUtility.UrlPathEncode%2A> method converts each space character into the string "%20", which represents a space in hexadecimal notation. Use the <xref:System.Web.HttpUtility.UrlPathEncode%2A> method when you encode the path portion of a URL in order to guarantee a consistent decoded URL, regardless of which platform or browser performs the decoding.  
+ 
+The <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> method uses UTF-8 encoding by default. Therefore, using the <xref:System.Web.HttpUtility.UrlEncode%2A> method provides the same results as using the <xref:System.Web.HttpUtility.UrlEncode%2A> method and specifying <xref:System.Text.Encoding.UTF8%2A> as the second parameter.  
+ 
+<xref:System.Web.HttpServerUtility.UrlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlEncode%2A> uses the <xref:System.Web.HttpUtility.UrlEncode%2A> method to encode strings.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1003,12 +1003,12 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+This method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1047,12 +1047,12 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpUtility.UrlEncode%28System.String%29> method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+The <xref:System.Web.HttpUtility.UrlEncode%28System.String%29> method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1087,12 +1087,12 @@
         <returns>An encoded array of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1127,12 +1127,12 @@
         <returns>An encoded array of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1169,12 +1169,12 @@
         <returns>An encoded array of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1213,12 +1213,12 @@
         <returns>An encoded array of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
+To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1261,10 +1261,10 @@
         <returns>A Unicode string in %<paramref name="UnicodeValue" /> notation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not valid in a URL to character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not valid in a URL to character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1299,10 +1299,10 @@
         <returns>A byte array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not valid in a URL to character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
-  
+If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not valid in a URL to character-entity equivalents; URL decoding reverses the encoding. For example, when embedded in a block of text to be transmitted in a URL, the characters \< and > are encoded as %3c and %3e.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1347,12 +1347,12 @@
         <summary>Encodes a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes strings. For instance, single quotation marks and double quotation marks are included as `\'` and `\"` in the encoded string.  
-  
- URL encoding makes sure that all browsers correctly transmit text in URL strings. Characters such as a question mark (?), ampersand (&), slash (/), and spaces might be truncated or corrupted by some browsers. Therefore, these characters must be encoded in `a` elements or in query strings where the strings can be re-sent by a browser in a request string.  
-  
+This method encodes strings. For instance, single quotation marks and double quotation marks are included as `\'` and `\"` in the encoded string.  
+ 
+URL encoding makes sure that all browsers correctly transmit text in URL strings. Characters such as a question mark (?), ampersand (&), slash (/), and spaces might be truncated or corrupted by some browsers. Therefore, these characters must be encoded in `a` elements or in query strings where the strings can be re-sent by a browser in a request string.  
+ 
  ]]></format>
         </remarks>
       </Docs>

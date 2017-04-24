@@ -13,13 +13,13 @@
     <summary>Specifies the mode of interpretation for speech input.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to specify the speech mode using the <xref:System.Windows.Input.SpeechMode> enumeration.  
-  
- [!code-csharp[languagemanager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
- [!code-vb[languagemanager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
-  
+The following example shows how to specify the speech mode using the <xref:System.Windows.Input.SpeechMode> enumeration.  
+ 
+[!code-csharp[languagemanager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+[!code-vb[languagemanager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

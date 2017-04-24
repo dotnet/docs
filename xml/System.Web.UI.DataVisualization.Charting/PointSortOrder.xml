@@ -13,10 +13,10 @@
     <summary>Indicates whether the sort order for data point values is ascending or descending.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.PointSortOrder> enumeration represents the order for the sort to be performed on data point values. It is used with the `Sort` method definitions in the <xref:System.Web.UI.DataVisualization.Charting.DataManipulator> class that include a `pointSortOrder` parameter.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.PointSortOrder> enumeration represents the order for the sort to be performed on data point values. It is used with the `Sort` method definitions in the <xref:System.Web.UI.DataVisualization.Charting.DataManipulator> class that include a `pointSortOrder` parameter.  
+ 
  ]]></format>
     </remarks>
   </Docs>

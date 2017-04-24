@@ -96,10 +96,10 @@
         <summary>Converts a method that handles the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" /> event to the <see cref="T:System.Windows.Controls.Primitives.DragCompletedEventHandler" /> type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the `genericHandler` as a <xref:System.Windows.Controls.Primitives.DragCompletedEventHandler>.  
-  
+This implementation casts the `genericHandler` as a <xref:System.Windows.Controls.Primitives.DragCompletedEventHandler>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

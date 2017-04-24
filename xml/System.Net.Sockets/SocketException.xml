@@ -24,12 +24,12 @@
     <summary>The exception that is thrown when a socket error occurs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Net.Sockets.SocketException> is thrown by the <xref:System.Net.Sockets.Socket> and <xref:System.Net.Dns> classes when an error occurs with the network.  
-  
- The default constructor for the <xref:System.Net.Sockets.SocketException.%23ctor%2A> class sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system socket error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation on MSDN.  
-  
+A <xref:System.Net.Sockets.SocketException> is thrown by the <xref:System.Net.Sockets.Socket> and <xref:System.Net.Dns> classes when an error occurs with the network.  
+ 
+The default constructor for the <xref:System.Net.Sockets.SocketException.%23ctor%2A> class sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system socket error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation on MSDN.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SocketException" /> class with the last operating system error code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.SocketException.%23ctor%2A> constructor sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system socket error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation (http://msdn.microsoft.com/library/default.asp?url=/library/winsock/winsock/windows_sockets_error_codes_2.asp).  
-  
+The <xref:System.Net.Sockets.SocketException.%23ctor%2A> constructor sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system socket error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation (http://msdn.microsoft.com/library/default.asp?url=/library/winsock/winsock/windows_sockets_error_codes_2.asp).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,10 +91,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SocketException" /> class with the specified error code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.SocketException.%23ctor%2A> constructor sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to `errorCode`.  
-  
+The <xref:System.Net.Sockets.SocketException.%23ctor%2A> constructor sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to `errorCode`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SocketException" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Sockets.SocketException> class.  
-  
+This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Sockets.SocketException> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,12 +153,12 @@
         <value>An integer error code that is associated with this exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property contains the error code that is associated with the error that caused the exception.  
-  
- The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation in MSDN.  
-  
+The <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property contains the error code that is associated with the error that caused the exception.  
+ 
+The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation in MSDN.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,12 +216,12 @@
         <value>An integer error code that is associated with this exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.SocketException.SocketErrorCode%2A> property contains the error code that is associated with the error that caused the exception.  
-  
- The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation in MSDN.  
-  
+The <xref:System.Net.Sockets.SocketException.SocketErrorCode%2A> property contains the error code that is associated with the error that caused the exception.  
+ 
+The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation in MSDN.  
+ 
  ]]></format>
         </remarks>
       </Docs>

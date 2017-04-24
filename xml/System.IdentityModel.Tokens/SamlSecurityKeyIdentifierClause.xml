@@ -32,10 +32,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityKeyIdentifierClause" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The assertion can be queried to obtain information about the issuer when resolving the key needed to check the signature. The assertion will be read completely when this clause is passed to the <xref:System.IdentityModel.Selectors.SecurityTokenResolver> object.  
-  
+The assertion can be queried to obtain information about the issuer when resolving the key needed to check the signature. The assertion will be read completely when this clause is passed to the <xref:System.IdentityModel.Selectors.SecurityTokenResolver> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -57,12 +57,12 @@
         <value>The SamlAssertion that is currently associated with this instance. Can be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The assertion can be queried to obtain information about the issuer when resolving the key needed to check the signature.  
-  
- The assertion returned may be `null`.  
-  
+The assertion can be queried to obtain information about the issuer when resolving the key needed to check the signature.  
+ 
+The assertion returned may be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

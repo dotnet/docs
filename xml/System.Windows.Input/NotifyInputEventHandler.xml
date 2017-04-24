@@ -22,24 +22,24 @@
     <summary>Represents the method that will handle <see cref="E:System.Windows.Input.InputManager.PreNotifyInput" /> and <see cref="E:System.Windows.Input.InputManager.PostNotifyInput" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The input staging area processes input into [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] events.  
-  
- The <xref:System.Windows.Input.NotifyInputEventHandler> is used with the <xref:System.Windows.Input.InputManager.PreNotifyInput> and <xref:System.Windows.Input.InputManager.PostNotifyInput> events.  
-  
- Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
-  
+The input staging area processes input into [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] events.  
+ 
+The <xref:System.Windows.Input.NotifyInputEventHandler> is used with the <xref:System.Windows.Input.InputManager.PreNotifyInput> and <xref:System.Windows.Input.InputManager.PostNotifyInput> events.  
+ 
+Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+ 
 1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
-  
+ 
 2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
-  
+ 
 3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
-  
+ 
 4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
-  
+ 
 5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

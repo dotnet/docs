@@ -14,10 +14,10 @@
     <summary>Represents a rectangle annotation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A rectangle annotation can display text inside the rectangle, in addition to being displayed as a rectangle only. So you can annotate using a rectangle or a rectangle with text inside it.  
-  
+A rectangle annotation can display text inside the rectangle, in addition to being displayed as a rectangle only. So you can annotate using a rectangle or a rectangle with text inside it.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <value>The annotation type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For internal use, should not be used.  
-  
+For internal use, should not be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> value used to draw an annotation background.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two colors are used to draw the gradient, a primary color that is specified the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> and a secondary color that is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackSecondaryColor%2A>.  
-  
+Two colors are used to draw the gradient, a primary color that is specified the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> and a secondary color that is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackSecondaryColor%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,10 +181,10 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the background.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two colors are used to draw the hatching, a primary color that is specified the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> property, and a secondary color that is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> property.  
-  
+Two colors are used to draw the hatching, a primary color that is specified the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> property, and a secondary color that is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation background with hatching or gradient fill.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is used with <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> when the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackHatchStyle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackGradientStyle%2A> property is used.  
-  
+This color is used with <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> when the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackHatchStyle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackGradientStyle%2A> property is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents a WS-Federation Pseudonym Request message. This message is created when the received message wa parameter is “wpseudo1.0”.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the message that this class represents, see the WS-Federation specification.  
-  
+For more information about the message that this class represents, see the WS-Federation specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <value>A string that contains the value of the wpseudo parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wpseudo parameter from the message.  
-  
+Set to `null` or an empty string to remove the wpseudo parameter from the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <value>A string that contains the value of the wpseudoptr parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wpseudoptr parameter from the message.  
-  
+Set to `null` or an empty string to remove the wpseudoptr parameter from the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid URI occurs.</exception>
@@ -108,10 +108,10 @@
         <value>A string that contains the value of the wreply parameter. This is the URL to which the reply should be sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wreply parameter from the message.  
-  
+Set to `null` or an empty string to remove the wreply parameter from the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid URI occurs.</exception>
@@ -134,10 +134,10 @@
         <value>A string that contains the value of the wresult parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wresult parameter from the message.  
-  
+Set to `null` or an empty string to remove the wresult parameter from the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <value>A string that contains the value of the wresultptr parameter. This is a URI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wresultptr parameter from the message.  
-  
+Set to `null` or an empty string to remove the wresultptr parameter from the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid URI occurs.</exception>
@@ -185,10 +185,10 @@
         <summary>No validation is performed by the framework. Users of this class should validate externally.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No validation is performed by the framework. Users of this class should validate externally.  
-  
+No validation is performed by the framework. Users of this class should validate externally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <summary>Writes this message in a query string form to the specified text writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.IdentityModel.Services.PseudonymReqeustMessage.Validate%2A> method before writing the message.  
-  
+This method calls the <xref:System.IdentityModel.Services.PseudonymReqeustMessage.Validate%2A> method before writing the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

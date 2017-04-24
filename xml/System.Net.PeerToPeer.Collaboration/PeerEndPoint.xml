@@ -24,12 +24,12 @@
     <summary>Represents the location of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />, or <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance specified with a unique network address configuration by describing the current instance of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> or <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> within the Peer-to-Peer Collaboration Infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A peer "endpoint" describes a contact's presence location — the unique network address configuration that describes the currently available instance of the contact within the peer collaboration network. A single contact can be available at multiple endpoints within the peer collaboration network.  
-  
- A peer watching a contact can query any of the endpoints associated with that contact for specific peer presence, application, or object updates.  
-  
+A peer "endpoint" describes a contact's presence location — the unique network address configuration that describes the currently available instance of the contact within the peer collaboration network. A single contact can be available at multiple endpoints within the peer collaboration network.  
+ 
+A peer watching a contact can query any of the endpoints associated with that contact for specific peer presence, application, or object updates.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -175,10 +175,10 @@
         <value>IP address associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To avoid corrupting the instance state, the caller should not change the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint.EndPoint%2A> value if the instance was obtained from <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
-  
+To avoid corrupting the instance state, the caller should not change the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint.EndPoint%2A> value if the instance was obtained from <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The specified <see cref="P:System.Net.PeerToPeer.Collaboration.PeerEndPoint.EndPoint" /> endpoint is not a valid IPv6 endpoint.</exception>
@@ -314,10 +314,10 @@
           <see cref="T:System.String" /> representing the display name of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To avoid corrupting the instance state, the caller should not change the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint.EndPoint%2A> value if the instance was obtained from <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
-  
+To avoid corrupting the instance state, the caller should not change the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint.EndPoint%2A> value if the instance was obtained from <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,12 +397,12 @@
         <value>Object that implements the <see cref="T:System.ComponentModel.ISynchronizeInvoke" /> interface and is used by instances of this type for event handler synchronization on the thread that created it.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default set value for this property is `null`, indicating that all event handlers are called on a system thread pool thread.  
-  
- This property is typically set to a UI element such as a <xref:System.Windows.Forms.Form> instance.  
-  
+The default set value for this property is `null`, indicating that all event handlers are called on a system thread pool thread.  
+ 
+This property is typically set to a UI element such as a <xref:System.Windows.Forms.Form> instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
@@ -466,12 +466,12 @@
         <summary>Generates a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is provided in the event a developer already knows the IP address of the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> they wish to contact.  
-  
- Utilizing this constructor to generate an explicit <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> instance facilitates the creation of a <xref:System.Net.PeerToPeer.Collaboration.Peer> class instance that can in turn be used to interact with the peer identified by an IP address, using the Peer Collaboration Infrastructure.  
-  
+This constructor is provided in the event a developer already knows the IP address of the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> they wish to contact.  
+ 
+Utilizing this constructor to generate an explicit <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> instance facilitates the creation of a <xref:System.Net.PeerToPeer.Collaboration.Peer> class instance that can in turn be used to interact with the peer identified by an IP address, using the Peer Collaboration Infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>

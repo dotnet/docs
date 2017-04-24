@@ -17,15 +17,15 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection> class represents a collection of <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects, which in turn represent the custom labels that an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object can use. This class is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.CustomLabels%2A> collection property of an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection> class represents a collection of <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects, which in turn represent the custom labels that an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object can use. This class is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.CustomLabels%2A> collection property of an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
+ 
 > [!NOTE]
 >  You can automatically populate the entire label row of an axis with custom <xref:System.DateTime> labels using any <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add%2A> method definition that includes a `DateTimeIntervalType` argument.  
-  
- The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Count%2A> property indicates the total number of items in the collection, and is commonly used to find the upper bound of the collection.  
-  
+ 
+The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Count%2A> property indicates the total number of items in the collection, and is commonly used to find the upper bound of the collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,15 +52,15 @@
         <summary>Adds multiple <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> objects of type <see cref="T:System.DateTime" /> to the collection. Populates the entire first row of an axis with labels.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add%2A> method creates and initializes <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects for the entire first label row of an axis with <xref:System.DateTime> labels of the specified type.  
-  
- The `labelsStep` parameter determines how often the custom labels will be drawn.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add%2A> method creates and initializes <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects for the entire first label row of an axis with <xref:System.DateTime> labels of the specified type.  
+ 
+The `labelsStep` parameter determines how often the custom labels will be drawn.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.RecalculateAxesScale%2A> method must be called prior to calling this particular method definition.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,15 +90,15 @@
         <returns>The newly added <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adds one custom label to the first label row of the relevant axis. No label mark is used.  
-  
- If a custom label is used anywhere in the first label row, no labels are automatically generated for that first row.  
-  
+Adds one custom label to the first label row of the relevant axis. No label mark is used.  
+ 
+If a custom label is used anywhere in the first label row, no labels are automatically generated for that first row.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.RecalculateAxesScale%2A> method must be called prior to calling this particular method definition.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,15 +127,15 @@
         <summary>Adds multiple <see cref="T:System.DateTime" /><see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection" /> objects to the collection. Populates the entire first row of an axis with labels with the specified format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates and initializes <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects for an axis' entire first label row with <xref:System.DateTime> labels of the specified type.  
-  
- The step determines how often the custom labels will be drawn, and optional label formatting can be specified as well.  
-  
+This method creates and initializes <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects for an axis' entire first label row with <xref:System.DateTime> labels of the specified type.  
+ 
+The step determines how often the custom labels will be drawn, and optional label formatting can be specified as well.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.RecalculateAxesScale%2A> method must be called prior to calling this particular method definition.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

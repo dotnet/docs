@@ -14,10 +14,10 @@
     <summary>A binding element that can be added to a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client application to take advantage of the Discovery client channel. The Discovery client channel allows a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client application to access a discoverable service without knowing the endpoint address in advance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Discovery client channel is used by creating a custom binding element and adding a <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> to the top of the binding stack. [!INCLUDE[crabout](~/includes/crabout-md.md)] the Discovery client channel, see [Using the Discovery Client Channel](~/docs/framework/wcf/feature-details/using-the-discovery-client-channel.md).  
-  
+The Discovery client channel is used by creating a custom binding element and adding a <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> to the top of the binding stack. [!INCLUDE[crabout](~/includes/crabout-md.md)] the Discovery client channel, see [Using the Discovery Client Channel](~/docs/framework/wcf/feature-details/using-the-discovery-client-channel.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryClientBindingElement" /> class with default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> is set to <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria%2A> is empty.  
-  
+By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> is set to <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria%2A> is empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>

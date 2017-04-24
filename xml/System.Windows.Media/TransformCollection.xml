@@ -27,28 +27,28 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Media.Transform" /> objects that can be individually accessed by index.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Except as noted, members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation.  
-  
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.TransformCollection> class provides several special features: <xref:System.Windows.Media.TransformCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+Except as noted, members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation.  
+ 
+**Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.TransformCollection> class provides several special features: <xref:System.Windows.Media.TransformCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
 <a name="xamlImplicitCollectionUsage_CharKeyFrameCollection"></a>   
 ## XAML Implicit Collection Usage  
-  
+ 
 ```  
 <object>  
-  <object.property>  
-    oneOrMoreTransformObjectElements  
-  </object.property>  
+ <object.property>  
+   oneOrMoreTransformObjectElements  
+ </object.property>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_CharKeyFrameCollection"></a>   
 ## XAML Values  
- *oneOrMoreTransformKeyFrameObjectElements*  
- One or more <xref:System.Windows.Media.Transform> objects, declared using object element syntax.  
-  
+*oneOrMoreTransformKeyFrameObjectElements*  
+One or more <xref:System.Windows.Media.Transform> objects, declared using object element syntax.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -126,10 +126,10 @@
         <summary>Adds a <see cref="T:System.Windows.Media.Transform" /> to the end of the <see cref="T:System.Windows.Media.TransformCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
-  
+Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -158,10 +158,10 @@
         <summary>Removes all items from the <see cref="T:System.Windows.Media.TransformCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not change the capacity of the <xref:System.Windows.Media.TransformCollection>.  
-  
+This method does not change the capacity of the <xref:System.Windows.Media.TransformCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.TransformCollection" /> is read-only.</exception>
@@ -185,12 +185,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,12 +234,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -485,10 +485,10 @@
         <summary>Inserts a <see cref="T:System.Windows.Media.Transform" /> into the <see cref="T:System.Windows.Media.TransformCollection" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
-  
+Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -523,10 +523,10 @@
         <value>The <see cref="T:System.Windows.Media.Transform" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
-  
+Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -607,10 +607,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Media.TransformCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -633,10 +633,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -663,10 +663,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -689,10 +689,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Windows.Media.TransformCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -714,10 +714,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Media.TransformCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -740,10 +740,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -769,10 +769,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -799,10 +799,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Media.TransformCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -828,10 +828,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -858,10 +858,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -884,10 +884,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Media.TransformCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -910,10 +910,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Media.TransformCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -939,10 +939,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -967,10 +967,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TransformCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

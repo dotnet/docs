@@ -14,22 +14,22 @@
     <summary>Represents a collection of <see cref="T:System.CodeDom.Compiler.CompilerError" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.Compiler.CompilerErrorCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.Compiler.CompilerError> objects.  
-  
+The <xref:System.CodeDom.Compiler.CompilerErrorCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.Compiler.CompilerError> objects.  
+ 
 > [!NOTE]
 >  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about inheritance demands, see  [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
-  
- [!code-cpp[CompilerErrorCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#1)]
- [!code-csharp[CompilerErrorCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#1)]
- [!code-vb[CompilerErrorCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#1)]
+[!code-csharp[CompilerErrorCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#1)]
+[!code-vb[CompilerErrorCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> class. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; <see cref="T:System.Security.PermissionSet" />: <see langword="FullTrust" />.</permission>
@@ -49,14 +49,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create an empty instance of the <xref:System.CodeDom.Compiler.CompilerErrorCollection> class.  
-  
- [!code-cpp[CompilerErrorCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#2)]
- [!code-csharp[CompilerErrorCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#2)]
- [!code-vb[CompilerErrorCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#2)]  
-  
+The following example demonstrates how to create an empty instance of the <xref:System.CodeDom.Compiler.CompilerErrorCollection> class.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#2)]
+[!code-csharp[CompilerErrorCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#2)]
+[!code-vb[CompilerErrorCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,14 +122,14 @@
         <returns>The index at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.Add%2A> method to add a <xref:System.CodeDom.Compiler.CompilerError> object to a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#3)]
- [!code-csharp[CompilerErrorCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#3)]
- [!code-vb[CompilerErrorCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#3)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.Add%2A> method to add a <xref:System.CodeDom.Compiler.CompilerError> object to a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#3)]
+[!code-csharp[CompilerErrorCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#3)]
+[!code-vb[CompilerErrorCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,14 +154,14 @@
         <summary>Copies the elements of an array to the end of the error collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.AddRange%28System.CodeDom.Compiler.CompilerError%5B%5D%29> method overload to add an array of <xref:System.CodeDom.Compiler.CompilerError> objects to a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CompilerErrorCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#4)]
- [!code-vb[CompilerErrorCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#4)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.AddRange%28System.CodeDom.Compiler.CompilerError%5B%5D%29> method overload to add an array of <xref:System.CodeDom.Compiler.CompilerError> objects to a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CompilerErrorCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#4)]
+[!code-vb[CompilerErrorCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -188,14 +188,14 @@
         <summary>Adds the contents of the specified compiler error collection to the end of the error collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.AddRange%28System.CodeDom.Compiler.CompilerErrorCollection%29> method overload to add <xref:System.CodeDom.Compiler.CompilerError> objects from one <xref:System.CodeDom.Compiler.CompilerErrorCollection> to another <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CompilerErrorCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#4)]
- [!code-vb[CompilerErrorCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#4)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.AddRange%28System.CodeDom.Compiler.CompilerErrorCollection%29> method overload to add <xref:System.CodeDom.Compiler.CompilerError> objects from one <xref:System.CodeDom.Compiler.CompilerErrorCollection> to another <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CompilerErrorCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#4)]
+[!code-vb[CompilerErrorCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -224,14 +224,14 @@
           <see langword="true" /> if the <see cref="T:System.CodeDom.Compiler.CompilerError" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.CodeDom.Compiler.CompilerErrorCollection.Contains%2A> method to locate a specific <xref:System.CodeDom.Compiler.CompilerError> object and determine the index value at which it was found.  
-  
- [!code-cpp[CompilerErrorCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CompilerErrorCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#5)]
- [!code-vb[CompilerErrorCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#5)]  
-  
+The following example uses the <xref:System.CodeDom.Compiler.CompilerErrorCollection.Contains%2A> method to locate a specific <xref:System.CodeDom.Compiler.CompilerError> object and determine the index value at which it was found.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CompilerErrorCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#5)]
+[!code-vb[CompilerErrorCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,14 +258,14 @@
         <summary>Copies the collection values to a one-dimensional <see cref="T:System.Array" /> instance at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.CopyTo%2A> method to copy the contents of a <xref:System.CodeDom.Compiler.CompilerErrorCollection> to an array, starting at the specified index value.  
-  
- [!code-cpp[CompilerErrorCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#6)]
- [!code-csharp[CompilerErrorCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#6)]
- [!code-vb[CompilerErrorCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#6)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.CopyTo%2A> method to copy the contents of a <xref:System.CodeDom.Compiler.CompilerErrorCollection> to an array, starting at the specified index value.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#6)]
+[!code-csharp[CompilerErrorCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#6)]
+[!code-vb[CompilerErrorCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The array indicated by the <paramref name="array" /> parameter is multidimensional.  
@@ -336,14 +336,14 @@
         <returns>The index of the specified <see cref="T:System.CodeDom.Compiler.CompilerError" /> in the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" />, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example searches for a specific <xref:System.CodeDom.Compiler.CompilerError> object and uses the <xref:System.CodeDom.Compiler.CompilerErrorCollection.IndexOf%2A> method to determine the index value at which it was found.  
-  
- [!code-cpp[CompilerErrorCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CompilerErrorCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#5)]
- [!code-vb[CompilerErrorCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#5)]  
-  
+The following example searches for a specific <xref:System.CodeDom.Compiler.CompilerError> object and uses the <xref:System.CodeDom.Compiler.CompilerErrorCollection.IndexOf%2A> method to determine the index value at which it was found.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CompilerErrorCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#5)]
+[!code-vb[CompilerErrorCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,14 +370,14 @@
         <summary>Inserts the specified <see cref="T:System.CodeDom.Compiler.CompilerError" /> into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.Insert%2A> method to insert a <xref:System.CodeDom.Compiler.CompilerError> object into a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#8)]
- [!code-csharp[CompilerErrorCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#8)]
- [!code-vb[CompilerErrorCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#8)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.Compiler.CompilerErrorCollection.Insert%2A> method to insert a <xref:System.CodeDom.Compiler.CompilerError> object into a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#8)]
+[!code-csharp[CompilerErrorCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#8)]
+[!code-vb[CompilerErrorCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,14 +425,14 @@
         <summary>Removes a specific <see cref="T:System.CodeDom.Compiler.CompilerError" /> from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to remove a <xref:System.CodeDom.Compiler.CompilerError> item from a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#9)]
- [!code-csharp[CompilerErrorCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#9)]
- [!code-vb[CompilerErrorCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#9)]  
-  
+The following example demonstrates how to remove a <xref:System.CodeDom.Compiler.CompilerError> item from a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
+ 
+[!code-cpp[CompilerErrorCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerErrorCollectionExample/CPP/class1.cpp#9)]
+[!code-csharp[CompilerErrorCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerErrorCollectionExample/CS/class1.cs#9)]
+[!code-vb[CompilerErrorCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerErrorCollectionExample/VB/class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>

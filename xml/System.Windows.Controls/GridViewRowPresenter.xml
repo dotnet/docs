@@ -14,18 +14,18 @@
     <summary>Represents an object that specifies the layout of a row of data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.GridViewRowPresenter> and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> classes support the <xref:System.Windows.Controls.GridView> view mode for a <xref:System.Windows.Controls.ListView> control.  
+The <xref:System.Windows.Controls.GridViewRowPresenter> and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> classes support the <xref:System.Windows.Controls.GridView> view mode for a <xref:System.Windows.Controls.ListView> control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.Windows.Controls.GridViewRowPresenter> to style rows in a <xref:System.Windows.Controls.ListView> control.  
-  
- <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#gridviewrowpresenter)]  -->
- <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#gridviewrowpresenter)]  -->  
-  
+The following example shows how to use a <xref:System.Windows.Controls.GridViewRowPresenter> to style rows in a <xref:System.Windows.Controls.ListView> control.  
+ 
+<!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#gridviewrowpresenter)]  -->
+<!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#gridviewrowpresenter)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,25 +84,25 @@
         <value>The object that represents the content of a row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The typical usage of the <xref:System.Windows.Controls.GridViewRowPresenter> in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] is to place it in a <xref:System.Windows.Controls.ControlTemplate> of a control. The template binds the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property to a property of the control by using [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md). The following example shows how to bind the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property of a <xref:System.Windows.Controls.GridViewRowPresenter> to the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.ListViewItem> control.  
-  
- <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#controltemplate)]  -->
- <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#controltemplate)]  -->  
-  
+The typical usage of the <xref:System.Windows.Controls.GridViewRowPresenter> in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] is to place it in a <xref:System.Windows.Controls.ControlTemplate> of a control. The template binds the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property to a property of the control by using [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md). The following example shows how to bind the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property of a <xref:System.Windows.Controls.GridViewRowPresenter> to the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.ListViewItem> control.  
+ 
+<!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#controltemplate)]  -->
+<!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#controltemplate)]  -->  
+ 
 <a name="xamlTextUsage_Content"></a>   
 ## XAML Text Usage  
- See Remarks.  
-  
+See Remarks.  
+ 
 <a name="dependencyPropertyInfo_Content"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.GridViewRowPresenter.ContentProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,15 +123,15 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> dependency property.  
+The identifier for the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> dependency property.  
+ 
   
-   
-  
+ 
 ## Examples  
- [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
-  
+[Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,23 +18,23 @@
     <summary>Provides functionality for resolving a coordinate-based location to a civic address.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Device.Location.CivicAddressResolver> class provides an implementation of <xref:System.Device.Location.ICivicAddressResolver> that resolves a coordinate-based location to a civic address if the location provider provides both coordinates and civic address data.  
+The <xref:System.Device.Location.CivicAddressResolver> class provides an implementation of <xref:System.Device.Location.ICivicAddressResolver> that resolves a coordinate-based location to a civic address if the location provider provides both coordinates and civic address data.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> to resolve a civic address synchronously.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
-  
- The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddressAsync%2A> to resolve a civic address asynchronously.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
-  
+The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> to resolve a civic address synchronously.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
+[!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
+ 
+The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddressAsync%2A> to resolve a civic address asynchronously.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
+[!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,15 +53,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Device.Location.CivicAddressResolver" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to initialize a new instance of the <xref:System.Device.Location.CivicAddressResolver> class.  
-  
+The following example shows how to initialize a new instance of the <xref:System.Device.Location.CivicAddressResolver> class.  
+ 
 ```csharp  
 CivicAddressResolver resolver = new CivicAddressResolver();  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,18 +87,18 @@ CivicAddressResolver resolver = new CivicAddressResolver();
         <returns>The civic address that is resolved from the <paramref name="coordinate" /> parameter. <see cref="F:System.Device.Location.CivicAddress.Unknown" /> is returned if the address cannot be resolved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted> event is raised when the address resolve operation completes. The civic address that is resolved from the `coordinate` parameter is returned by the <xref:System.Device.Location.ResolveAddressCompletedEventArgs.Address%2A> member of the <xref:System.Device.Location.ResolveAddressCompletedEventArgs> object that is passed to the event handler.  
+The <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted> event is raised when the address resolve operation completes. The civic address that is resolved from the `coordinate` parameter is returned by the <xref:System.Device.Location.ResolveAddressCompletedEventArgs.Address%2A> member of the <xref:System.Device.Location.ResolveAddressCompletedEventArgs> object that is passed to the event handler.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following program demonstrates how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> to resolve a civic address synchronously.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
-  
+The following program demonstrates how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> to resolve a civic address synchronously.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
+[!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -127,13 +127,13 @@ CivicAddressResolver resolver = new CivicAddressResolver();
         <summary>Resolves an address asynchronously from a location that is based on latitude and longitude. The call does not block execution of the calling thread while the address is being resolved.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddressAsync%2A> to resolve a civic address asynchronously.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#1)]  
-  
+The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddressAsync%2A> to resolve a civic address asynchronously.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#1)]
+[!code-vb[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -158,13 +158,13 @@ CivicAddressResolver resolver = new CivicAddressResolver();
         <summary>Occurs when the address resolution that was initiated by a call to <see cref="M:System.Device.Location.CivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)" /> completes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddressAsync%2A> to resolve a civic address asynchronously.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#1)]  
-  
+The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddressAsync%2A> to resolve a civic address asynchronously.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#1)]
+[!code-vb[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

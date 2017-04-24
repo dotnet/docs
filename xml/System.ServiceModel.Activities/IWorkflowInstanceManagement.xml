@@ -47,10 +47,10 @@
         <summary>Attempts to abandon the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is only valid for a workflow instance that is currently loaded in memory. If the specified workflow instance is not loaded or has completed, this operation is a no-op. This operation is not transaction aware.  
-  
+This operation is only valid for a workflow instance that is currently loaded in memory. If the specified workflow instance is not loaded or has completed, this operation is a no-op. This operation is not transaction aware.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,10 +87,10 @@
         <returns>The <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The abandon process terminates the workflow instance, destroys all the associated objects, and releases the associated resources.  
-  
+The abandon process terminates the workflow instance, destroys all the associated objects, and releases the associated resources.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <returns>An <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The cancel process quits a workflow instance and returns to the previous state without saving any changes that the workflow may have made.  
-  
+The cancel process quits a workflow instance and returns to the previous state without saving any changes that the workflow may have made.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <returns>The <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The suspend process temporarily halts a workflow instance.  
-  
+The suspend process temporarily halts a workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,10 +236,10 @@
         <returns>The <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The terminate process brings a workflow instance to an end.  
-  
+The terminate process brings a workflow instance to an end.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,10 +274,10 @@
         <returns>The <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The cancel process quits a workflow instance and returns to the previous state without saving any changes that the workflow may have made.  
-  
+The cancel process quits a workflow instance and returns to the previous state without saving any changes that the workflow may have made.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
         <returns>The <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The suspend process temporarily halts a workflow instance.  
-  
+The suspend process temporarily halts a workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,10 +385,10 @@
         <returns>The <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The terminate process brings a workflow instance to an end.  
-  
+The terminate process brings a workflow instance to an end.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <returns>The <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The unsuspend process resumes a temporarily halted workflow instance.  
-  
+The unsuspend process resumes a temporarily halted workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,10 +461,10 @@
         <returns>The <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The unsuspend process resumes a temporarily halted workflow instance.  
-  
+The unsuspend process resumes a temporarily halted workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -494,10 +494,10 @@
         <summary>Cancels the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the instance identified by the instance ID does not exist in-memory, an attempt is made to load the instance from the  instance store (if persistence has been enabled). If  persistence has not been enabled or the instance was not persisted a fault is returned to the caller. Once the in-memory instance has been loaded or identified, this operation cancels the workflow instance.  
-  
+If the instance identified by the instance ID does not exist in-memory, an attempt is made to load the instance from the  instance store (if persistence has been enabled). If  persistence has not been enabled or the instance was not persisted a fault is returned to the caller. Once the in-memory instance has been loaded or identified, this operation cancels the workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -543,10 +543,10 @@
         <summary>Completes an asynchronous cancel operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The cancel process quits a workflow instance and returns to the previous state without saving any changes that the workflow may have made.  
-  
+The cancel process quits a workflow instance and returns to the previous state without saving any changes that the workflow may have made.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -592,10 +592,10 @@
         <summary>Completes an asynchronous suspend operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The suspend process temporarily halts a workflow instance.  
-  
+The suspend process temporarily halts a workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -620,10 +620,10 @@
         <summary>Completes an asynchronous terminate operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The terminate process brings a workflow instance to an end.  
-  
+The terminate process brings a workflow instance to an end.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -690,10 +690,10 @@
         <summary>Completes an asynchronous transacted suspend operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The suspend process temporarily halts a workflow instance.  
-  
+The suspend process temporarily halts a workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -718,10 +718,10 @@
         <summary>Completes an asynchronous transacted terminate operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The terminate process brings a workflow instance to an end.  
-  
+The terminate process brings a workflow instance to an end.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -746,10 +746,10 @@
         <summary>Completes an asynchronous transacted unsuspend operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The unsuspend process resumes a temporarily halted workflow instance.  
-  
+The unsuspend process resumes a temporarily halted workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -774,10 +774,10 @@
         <summary>Completes an asynchronous unsuspend operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The unsuspend process resumes a temporarily halted workflow instance.  
-  
+The unsuspend process resumes a temporarily halted workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -835,10 +835,10 @@
         <summary>Suspends the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The suspend process temporarily halts a workflow instance.  
-  
+The suspend process temporarily halts a workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -870,10 +870,10 @@
         <summary>Terminates the specified workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation combines the functionality of an abort operation followed by a persist operation.  
-  
+This operation combines the functionality of an abort operation followed by a persist operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -966,10 +966,10 @@
         <summary>Suspends the specified workflow instance within a transaction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The suspend process temporarily halts a workflow instance.  
-  
+The suspend process temporarily halts a workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1004,10 +1004,10 @@
         <summary>Terminates the specified workflow instance within a transaction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The terminate process brings a workflow instance to an end.  
-  
+The terminate process brings a workflow instance to an end.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1040,10 +1040,10 @@
         <summary>Resumes the specified workflow instance within a transaction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The unsuspend process resumes a temporarily halted workflow instance.  
-  
+The unsuspend process resumes a temporarily halted workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Converts the string name of an event setter handler to a delegate representation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how XAML for WPF processes event handler names, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
-  
+For more information about how XAML for WPF processes event handler names, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
+ 
 <a name="xamlTextUsage_EventSetterHandlerConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -63,10 +63,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only when `sourceType` is a <xref:System.String> type. All other `sourceType` types return `false`.  
-  
+This method returns `true` only when `sourceType` is a <xref:System.String> type. All other `sourceType` types return `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <returns>A new <see cref="T:System.Delegate" /> that represents the referenced event handler.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `typeDescriptorContext` must provide services for <xref:System.Xaml.IRootObjectProvider> and <xref:System.Windows.Markup.IProvideValueTarget>.  
-  
+The `typeDescriptorContext` must provide services for <xref:System.Xaml.IRootObjectProvider> and <xref:System.Windows.Markup.IProvideValueTarget>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The necessary services are not available.  

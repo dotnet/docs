@@ -23,19 +23,19 @@
     <summary>Represents a reference to a metadata document returned from a metadata exchange endpoint.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using [!INCLUDE[indigo1](~/includes/indigo1-md.md)], a metadata endpoint can be created for any service. The endpoint can be queried for metadata that allows a client to communicate with the endpoint. For example, a metadata endpoint can return a Web Services Description Language (WSDL) document that describes the methods and data types of a service.  
-  
- The <xref:System.ServiceModel.Description.MetadataReference> class is used with WS-MetadataExchange responses where references are directly encoded as `<mex:MetadataReference>` or `<mex:MetadataLocation``>`.  
-  
- Metadata documents can reference many other documents that describe types and those documents can contain even more references. The <xref:System.ServiceModel.Description.MetadataReference> class represents a single endpoint that returns a document that can itself contain multiple WSDL or XSD items as well as other metadata references to other WS-MetadataExchange endpoints.  
-  
- Instances of the <xref:System.ServiceModel.Description.MetadataReference> class are commonly used when processing a <xref:System.ServiceModel.Description.MetadataSet>, which represents the total metadata exchange point. The <xref:System.ServiceModel.Description.MetadataResolver> class is designed to resolve all references used to return the metadata. If, however, you need to examine each reference, use the <xref:System.ServiceModel.Description.MetadataReference> class to represent each endpoint.  
-  
+When using [!INCLUDE[indigo1](~/includes/indigo1-md.md)], a metadata endpoint can be created for any service. The endpoint can be queried for metadata that allows a client to communicate with the endpoint. For example, a metadata endpoint can return a Web Services Description Language (WSDL) document that describes the methods and data types of a service.  
+ 
+The <xref:System.ServiceModel.Description.MetadataReference> class is used with WS-MetadataExchange responses where references are directly encoded as `<mex:MetadataReference>` or `<mex:MetadataLocation``>`.  
+ 
+Metadata documents can reference many other documents that describe types and those documents can contain even more references. The <xref:System.ServiceModel.Description.MetadataReference> class represents a single endpoint that returns a document that can itself contain multiple WSDL or XSD items as well as other metadata references to other WS-MetadataExchange endpoints.  
+ 
+Instances of the <xref:System.ServiceModel.Description.MetadataReference> class are commonly used when processing a <xref:System.ServiceModel.Description.MetadataSet>, which represents the total metadata exchange point. The <xref:System.ServiceModel.Description.MetadataResolver> class is designed to resolve all references used to return the metadata. If, however, you need to examine each reference, use the <xref:System.ServiceModel.Description.MetadataReference> class to represent each endpoint.  
+ 
 ## Specifications  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implements the Web Services Metadata Exchange (WS-MetadataExchange) specification for returning metadata. That specification further uses the Web Services Transfer (WS-Transfer) specification to define the mechanism for retrieving XML-based data.  
-  
+[!INCLUDE[indigo2](~/includes/indigo2-md.md)] implements the Web Services Metadata Exchange (WS-MetadataExchange) specification for returning metadata. That specification further uses the Web Services Transfer (WS-Transfer) specification to define the mechanism for retrieving XML-based data.  
+ 
  ]]></format>
     </remarks>
   </Docs>

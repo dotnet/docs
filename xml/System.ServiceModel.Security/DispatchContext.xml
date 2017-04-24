@@ -137,10 +137,10 @@
         <value>The STS which should process the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The request message is accessed through the <xref:System.ServiceModel.Security.DispatchContext.RequestMessage%2A> property.  
-  
+The request message is accessed through the <xref:System.ServiceModel.Security.DispatchContext.RequestMessage%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

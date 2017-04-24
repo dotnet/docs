@@ -23,22 +23,22 @@
     <summary>Enables you to define which HTTP verbs are allowed when ASP.NET routing determines whether a URL matches a route.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Routing.HttpMethodConstraint> class enables you to limit route matching to certain HTTP verbs. For example, you can specify that a route is considered a match for a URL only when the HTTP verb for the request is `POST`.  
+The <xref:System.Web.Routing.HttpMethodConstraint> class enables you to limit route matching to certain HTTP verbs. For example, you can specify that a route is considered a match for a URL only when the HTTP verb for the request is `POST`.  
+ 
+To set constraints for route matching, you set the <xref:System.Web.Routing.Route.Constraints%2A> property of the <xref:System.Web.Routing.Route> class to an instance of the <xref:System.Web.Routing.RouteValueDictionary> class. To set an HTTP verb constraint, you set the value of one dictionary element to an <xref:System.Web.Routing.HttpMethodConstraint> object and the key to any name.  
+ 
+In the <xref:System.Web.Routing.HttpMethodConstraint.%23ctor%2A> method, you include all the HTTP verbs that are allowed for the route when ASP.NET routing determines whether the route matches a URL.  
+ 
   
- To set constraints for route matching, you set the <xref:System.Web.Routing.Route.Constraints%2A> property of the <xref:System.Web.Routing.Route> class to an instance of the <xref:System.Web.Routing.RouteValueDictionary> class. To set an HTTP verb constraint, you set the value of one dictionary element to an <xref:System.Web.Routing.HttpMethodConstraint> object and the key to any name.  
-  
- In the <xref:System.Web.Routing.HttpMethodConstraint.%23ctor%2A> method, you include all the HTTP verbs that are allowed for the route when ASP.NET routing determines whether the route matches a URL.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows a <xref:System.Web.Routing.Route> object whose <xref:System.Web.Routing.Route.Constraints%2A> property contains an item that has a key named `httpMethod` and that has a value that is an instance of the <xref:System.Web.Routing.HttpMethodConstraint> class.  
-  
- [!code-csharp[System.Web.Routing.Route.Constraints#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/cs/Global.asax#1)]
- [!code-vb[System.Web.Routing.Route.Constraints#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/vb/Global.asax#1)]  
-  
+The following example shows a <xref:System.Web.Routing.Route> object whose <xref:System.Web.Routing.Route.Constraints%2A> property contains an item that has a key named `httpMethod` and that has a value that is an instance of the <xref:System.Web.Routing.HttpMethodConstraint> class.  
+ 
+[!code-csharp[System.Web.Routing.Route.Constraints#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/cs/Global.asax#1)]
+[!code-vb[System.Web.Routing.Route.Constraints#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/vb/Global.asax#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,13 +66,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.HttpMethodConstraint" /> class by using the HTTP verbs that are allowed for the route.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows a <xref:System.Web.Routing.Route> object whose <xref:System.Web.Routing.Route.Constraints%2A> property contains an item that has a key named `httpMethod` and that has a value that is an instance of the <xref:System.Web.Routing.HttpMethodConstraint> class.  
-  
- [!code-csharp[System.Web.Routing.Route.Constraints#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/cs/Global.asax#1)]
- [!code-vb[System.Web.Routing.Route.Constraints#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/vb/Global.asax#1)]  
-  
+The following example shows a <xref:System.Web.Routing.Route> object whose <xref:System.Web.Routing.Route.Constraints%2A> property contains an item that has a key named `httpMethod` and that has a value that is an instance of the <xref:System.Web.Routing.HttpMethodConstraint> class.  
+ 
+[!code-csharp[System.Web.Routing.Route.Constraints#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/cs/Global.asax#1)]
+[!code-vb[System.Web.Routing.Route.Constraints#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/vb/Global.asax#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="allowedMethods" /> parameter is <see langword="null" />.</exception>
@@ -157,10 +157,10 @@
           <see langword="true" /> if the request was made by using an allowed HTTP verb; otherwise, <see langword="false" />. The default is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.HttpMethodConstraint> instance is cast to an <xref:System.Web.Routing.IRouteConstraint> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.HttpMethodConstraint> instance is cast to an <xref:System.Web.Routing.IRouteConstraint> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or more of the following parameters is <see langword="null" />: <paramref name="httpContext" />, <paramref name="route" />, <paramref name="parameterName" />, or <paramref name="values" />.</exception>

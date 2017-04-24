@@ -24,18 +24,18 @@
     <summary>Wraps an XSD <see langword="gDay" /> type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about XSD data types, see "XML Data Types Reference" in the MSDN Library at http://msdn.microsoft.com/library.  
+For more information about XSD data types, see "XML Data Types Reference" in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the members in the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class to convert between a <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> object and an XSD `gDay` string.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#10](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#10)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#10)]  
-  
+The following code example shows how to use the members in the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class to convert between a <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> object and an XSD `gDay` string.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#10](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#10)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,13 +55,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#21](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo2.cpp#21)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#21](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo2.cs#21)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#21](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo2.cpp#21)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#21](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo2.cs#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,13 +84,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay" /> class with a specified <see cref="T:System.DateTime" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#22](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo2.cpp#22)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#22](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo2.cs#22)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#22](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo2.cpp#22)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#22](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo2.cs#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,13 +114,13 @@
         <returns>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.GetXsdType%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#13](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#13)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#13](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#13)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.GetXsdType%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#13](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#13)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#13](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,23 +147,23 @@
         <returns>A <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay" /> object that is obtained from <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Parse%2A> method is capable of parsing strings in various formats. The recognizable string formats are "---ddzzz" and "---dd", which are composed out of the following format patterns.  
-  
+The <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Parse%2A> method is capable of parsing strings in various formats. The recognizable string formats are "---ddzzz" and "---dd", which are composed out of the following format patterns.  
+ 
 |Format Pattern|Description|Examples|  
 |--------------------|-----------------|--------------|  
 |dd|The day of the month. Single-digit days have a leading zero.|23, 09|  
 |zzz|The full time zone offset (hour and minutes) from the Universal Time Coordinate (Greenwich Mean Time). Single-digit hours have a leading zero. "Z" means the current time zone.|-07:00, +08:00, Z|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Parse%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#11](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#11)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#11)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Parse%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#11](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#11)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#11)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">
@@ -189,13 +189,13 @@
         <returns>A <see cref="T:System.String" /> obtained from <see cref="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Value" /> in the format "---dd".</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.ToString%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#12](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#12)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#12](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#12)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.ToString%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#12](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#12)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#12](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,13 +218,13 @@
         <value>The <see cref="T:System.DateTime" /> object that contains the date and time of the current instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Value%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#14](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#14)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#14](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#14)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Value%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#14](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#14)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#14](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,13 +247,13 @@
         <value>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.XsdType%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#16](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#16)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#16](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#16)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.XsdType%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#16](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CPP/demo.cpp#16)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay#16](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay/CS/demo.cs#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

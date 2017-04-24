@@ -14,10 +14,10 @@
     <summary>Provides a wrapper class for the <see cref="T:System.Web.UnvalidatedRequestValuesBase" /> class, and provides access to HTTP request values without triggering ASP.NET request validation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about request validation, see <xref:System.Web.UnvalidatedRequestValues>.  
-  
+For information about request validation, see <xref:System.Web.UnvalidatedRequestValues>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,12 +58,12 @@
         <value>The cookies from the HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,12 +85,12 @@
         <value>The files from the HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,12 +112,12 @@
         <value>The form variables from the HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,12 +139,12 @@
         <value>The headers from the HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,12 +170,12 @@
         <value>The requested object, or <see langword="null" /> if the object is not found.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
         <value>The virtual path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,12 +224,12 @@
         <value>A string that contains additional path information for a resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property you must manually check the data for potential cross-site scripting attacks.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,12 +251,12 @@
         <value>The collection of query string variables sent by the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,14 +278,14 @@
         <value>The part of the URL that follows the website name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
- If the complete request URL is `http://www.contoso.com/default.aspx?id=44`, the value of <xref:System.Web.UnvalidatedRequestValuesWrapper.RawUrl%2A> is `/default.aspx?id=44`.  
-  
+ 
+If the complete request URL is `http://www.contoso.com/default.aspx?id=44`, the value of <xref:System.Web.UnvalidatedRequestValuesWrapper.RawUrl%2A> is `/default.aspx?id=44`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -307,14 +307,14 @@
         <value>An object that contains the URL data for the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
- You can retrieve URL data such as the port number, host name, path information, and data about the user from the <xref:System.Uri> object that this property returns.  
-  
+ 
+You can retrieve URL data such as the port number, host name, path information, and data about the user from the <xref:System.Uri> object that this property returns.  
+ 
  ]]></format>
         </remarks>
       </Docs>

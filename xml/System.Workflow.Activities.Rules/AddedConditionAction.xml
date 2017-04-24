@@ -14,10 +14,10 @@
     <summary>Represents the addition of a <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to a workflow during dynamic update. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class can be used by a tracking service to determine which <xref:System.Workflow.Activities.Rules.RuleCondition>s have been added during a dynamic update. An instance of this object is generated for every <xref:System.Workflow.Activities.Rules.RuleCondition> that is added (that is, that did not exist in the workflow before this dynamic update).  
-  
+This class can be used by a tracking service to determine which <xref:System.Workflow.Activities.Rules.RuleCondition>s have been added during a dynamic update. An instance of this object is generated for every <xref:System.Workflow.Activities.Rules.RuleCondition> that is added (that is, that did not exist in the workflow before this dynamic update).  
+ 
  ]]></format>
     </remarks>
   </Docs>

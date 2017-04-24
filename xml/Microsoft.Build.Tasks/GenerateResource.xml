@@ -54,10 +54,10 @@
         <value>The additional inputs for the dependency checking that the <c>GenerateResource</c> task performs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, the project and targets files should be inputs to ensure that if they are updated all resources are regenerated.  
-  
+For example, the project and targets files should be inputs to ensure that if they are updated all resources are regenerated.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -80,10 +80,10 @@
         <value>Returns an array of name-value pairs of environment variables.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These aren't currently used when resgen is run in-process.  
-  
+These aren't currently used when resgen is run in-process.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -165,10 +165,10 @@
         <value>Returns the flag.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Requires additional input filtering.  
-  
+Requires additional input filtering.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -235,10 +235,10 @@
           <see langword="true" /> if the <c>GenerateResource</c> task should create a new <see cref="T:System.AppDomain" /> to evaluate the resources (.resx) files; <see langword="false" /> if the <c>GenerateResource</c> task should create a new <see cref="T:System.AppDomain" /> only when the resources (.resx) files reference a user's assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`.  
-  
+The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -261,10 +261,10 @@
         <value>Returns the value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Could be the intermediate directory.  
-  
+Could be the intermediate directory.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -292,10 +292,10 @@
         <value>The name of the generated files, such as .resources files.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not specify a name, the name of the matching input file is used and the .resources file that is created is placed in the directory that contains the input file.  
-  
+If you do not specify a name, the name of the matching input file is used and the .resources file that is created is placed in the directory that contains the input file.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -338,12 +338,12 @@
         <value>The references to load types in .resx files from.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Resx file data elements may have a .NET type. When the .resx file is read, this must be resolved. Typically, it is resolved successfully by using standard type loading rules. If you provide assemblies in <xref:Microsoft.Build.Tasks.GenerateResource.References%2A>, they take precedence.  
-  
- This parameter is not required for strongly typed resources.  
-  
+Resx file data elements may have a .NET type. When the .resx file is read, this must be resolved. Typically, it is resolved successfully by using standard type loading rules. If you provide assemblies in <xref:Microsoft.Build.Tasks.GenerateResource.References%2A>, they take precedence.  
+ 
+This parameter is not required for strongly typed resources.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -393,18 +393,18 @@
         <value>The items to convert.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Items passed to this parameter must have one of the following file extensions:  
-  
+Items passed to this parameter must have one of the following file extensions:  
+ 
 -   `.txt`: Specifies the extension for a text file to convert. Text files can only contain string resources.  
-  
+ 
 -   `.resx`: Specifies the extension for an XML-based resource file to convert.  
-  
+ 
 -   `.restext`: Specifies the same format as .txt. This different extension is useful if you want to clearly distinguish source files that contain resources from other source files in your build process.  
-  
- `.resources`: Specifies the extension for a resource file to convert.  
-  
+ 
+`.resources`: Specifies the extension for a resource file to convert.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -451,10 +451,10 @@
         <value>The class name for the strongly typed resource class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not specified, the base name of the resource file is used.  
-  
+If this property is not specified, the base name of the resource file is used.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -482,10 +482,10 @@
         <value>The filename for the source file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not specified, the name of the class is used as the base filename, with the extension dependent on the language. For example: `MyClass.cs`.  
-  
+If this property is not specified, the name of the class is used as the base filename, with the extension dependent on the language. For example: `MyClass.cs`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -508,12 +508,12 @@
         <value>The language to use when generating the class source for the strongly typed resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must match exactly one of the languages used by the CodeDomProvider. For example: `VB` or `C#`.  
-  
- By passing a value to this parameter, you instruct the task to generate strongly typed resources.  
-  
+This property must match exactly one of the languages used by the CodeDomProvider. For example: `VB` or `C#`.  
+ 
+By passing a value to this parameter, you instruct the task to generate strongly typed resources.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -555,10 +555,10 @@
         <value>The namespace to use for the generated class source for the strongly typed resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not specified, any strongly typed resources are in the global namespace.  
-  
+If this property is not specified, any strongly typed resources are in the global namespace.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -695,10 +695,10 @@
         <value>True if we should be tracking file access patterns; false otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To support incremental build, it is necessary to track file access patterns.  
-  
+To support incremental build, it is necessary to track file access patterns.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

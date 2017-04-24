@@ -14,20 +14,20 @@
     <summary>Provides a type converter to convert 32-bit signed integer objects to and from data source control cache duration representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET data source controls that support caching typically provide a `CacheDuration` property that you can set to the number of seconds that the control caches data. The value 0 represents "Infinite" in these caching contexts, and the <xref:System.Web.UI.DataSourceCacheDurationConverter> class takes care of this explicit conversion.  
+ASP.NET data source controls that support caching typically provide a `CacheDuration` property that you can set to the number of seconds that the control caches data. The value 0 represents "Infinite" in these caching contexts, and the <xref:System.Web.UI.DataSourceCacheDurationConverter> class takes care of this explicit conversion.  
+ 
+Page developers do not use the <xref:System.Web.UI.DataSourceCacheDurationConverter> class. Control developers who are developing data source controls that support caching use this type converter along with the <xref:System.ComponentModel.TypeConverterAttribute> attribute to decorate a property that represents a cache duration setting of a custom data source control.  
+ 
   
- Page developers do not use the <xref:System.Web.UI.DataSourceCacheDurationConverter> class. Control developers who are developing data source controls that support caching use this type converter along with the <xref:System.ComponentModel.TypeConverterAttribute> attribute to decorate a property that represents a cache duration setting of a custom data source control.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how you can decorate a property on a data source control that supports caching with a <xref:System.ComponentModel.TypeConverterAttribute> attribute. In this example, the data source control supports caching semantics and exposes three properties modeled after other ASP.NET data source controls: `EnableCaching`, `CacheDuration`, and `CacheExpirationPolicy`. The `CacheDuration` property uses the <xref:System.Web.UI.DataSourceCacheDurationConverter> type converter.  
-  
- [!code-csharp[System.Web.UI.DataSourceCacheDurationConverter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.DataSourceCacheDurationConverter/CS/somedatasourcecdc.cs#1)]
- [!code-vb[System.Web.UI.DataSourceCacheDurationConverter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.DataSourceCacheDurationConverter/VB/somedatasourcecdc.vb#1)]  
-  
+The following code example demonstrates how you can decorate a property on a data source control that supports caching with a <xref:System.ComponentModel.TypeConverterAttribute> attribute. In this example, the data source control supports caching semantics and exposes three properties modeled after other ASP.NET data source controls: `EnableCaching`, `CacheDuration`, and `CacheExpirationPolicy`. The `CacheDuration` property uses the <xref:System.Web.UI.DataSourceCacheDurationConverter> type converter.  
+ 
+[!code-csharp[System.Web.UI.DataSourceCacheDurationConverter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.DataSourceCacheDurationConverter/CS/somedatasourcecdc.cs#1)]
+[!code-vb[System.Web.UI.DataSourceCacheDurationConverter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.DataSourceCacheDurationConverter/VB/somedatasourcecdc.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
           <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataSourceCacheDurationConverter> class explicitly handles `string` types. Otherwise, it calls on its base class, <xref:System.ComponentModel.Int32Converter>, to make the determination.  
-  
+The <xref:System.Web.UI.DataSourceCacheDurationConverter> class explicitly handles `string` types. Otherwise, it calls on its base class, <xref:System.ComponentModel.Int32Converter>, to make the determination.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
           <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataSourceCacheDurationConverter> explicitly handles conversion to `string` and <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> types. Otherwise, it calls on its base class, <xref:System.ComponentModel.Int32Converter>, to make the determination.  
-  
+The <xref:System.Web.UI.DataSourceCacheDurationConverter> explicitly handles conversion to `string` and <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> types. Otherwise, it calls on its base class, <xref:System.ComponentModel.Int32Converter>, to make the determination.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <returns>An object that represents the converted value. If <see langword="null" /> is passed in the value parameter, <see langword="null" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataSourceCacheDurationConverter.ConvertFrom%2A?displayProperty=fullName> method converts an <xref:System.String.Empty?displayProperty=fullName> string or the string "Infinite" to the value 0. Other values are handled by the base class, <xref:System.ComponentModel.Int32Converter>.  
-  
+The <xref:System.Web.UI.DataSourceCacheDurationConverter.ConvertFrom%2A?displayProperty=fullName> method converts an <xref:System.String.Empty?displayProperty=fullName> string or the string "Infinite" to the value 0. Other values are handled by the base class, <xref:System.ComponentModel.Int32Converter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <returns>An object that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataSourceCacheDurationConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> method converts a valid value of 0 to the string "Infinite". Other values are handled by the base class, <xref:System.ComponentModel.Int32Converter>.  
-  
+The <xref:System.Web.UI.DataSourceCacheDurationConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> method converts a valid value of 0 to the string "Infinite". Other values are handled by the base class, <xref:System.ComponentModel.Int32Converter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataSourceCacheDurationConverter> class always returns `false` to indicate that the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> collection returned from the <xref:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValues%2A> method is not an exhaustive list of possible values.  
-  
+The <xref:System.Web.UI.DataSourceCacheDurationConverter> class always returns `false` to indicate that the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> collection returned from the <xref:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValues%2A> method is not an exhaustive list of possible values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -253,10 +253,10 @@
           <see langword="true" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataSourceCacheDurationConverter> object always returns `true` to indicate that the <xref:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValues%2A> method should be called to find a common set of values the converter supports.  
-  
+The <xref:System.Web.UI.DataSourceCacheDurationConverter> object always returns `true` to indicate that the <xref:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValues%2A> method should be called to find a common set of values the converter supports.  
+ 
  ]]></format>
         </remarks>
       </Docs>

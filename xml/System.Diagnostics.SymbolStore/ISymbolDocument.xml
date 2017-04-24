@@ -21,15 +21,15 @@
     <summary>Represents a document referenced by a symbol store.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A document is defined by a URL and a document type GUID. Using the document type GUID and the URL, you can locate the document. You can optionally store document source in the symbol store.  
-  
- This interface also provides access to that source, if present.  
-  
+A document is defined by a URL and a document type GUID. Using the document type GUID and the URL, you can locate the document. You can optionally store document source in the symbol store.  
+ 
+This interface also provides access to that source, if present.  
+ 
 > [!NOTE]
 >  This interface is the managed counterpart of the `ISymUnmanagedDocument` interface, one of the unmanaged symbol store interfaces that provide an alternative way to read and write debug symbol information.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

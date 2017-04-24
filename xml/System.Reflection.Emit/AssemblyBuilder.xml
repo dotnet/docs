@@ -34,58 +34,58 @@
     <summary>Defines and represents a dynamic assembly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A dynamic assembly is an assembly that is created using the Reflection Emit APIs. The dynamic modules in the assembly are saved when the dynamic assembly is saved using the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> method. To generate an executable, the <xref:System.Reflection.Emit.AssemblyBuilder.SetEntryPoint%2A> method must be called to identify the method that is the entry point to the assembly. Assemblies are saved as DLLs by default, unless the <xref:System.Reflection.Emit.AssemblyBuilder.SetEntryPoint%2A> method requests the generation of a console application or a Windows-based application.  
-  
- If a dynamic assembly contains more than one dynamic module, the assembly's manifest file name should match the module's name that is specified as the first argument to the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A> method.  
-  
- Some methods on the base <xref:System.Reflection.Assembly> class, such as `GetModules` and `GetLoadedModules`, will not work correctly when called from <xref:System.Reflection.Emit.AssemblyBuilder> objects. You can load the defined dynamic assembly and call the methods on the loaded assembly. For example, to ensure that resource modules are included in the returned module list, call `GetModules` on the loaded <xref:System.Reflection.Assembly> object.  
-  
- The signing of a dynamic assembly using <xref:System.Reflection.AssemblyName.KeyPair%2A> is not effective until the assembly is saved to disk. So, strong names will not work with transient dynamic assemblies.  
-  
- To get an <xref:System.Reflection.Emit.AssemblyBuilder> object, use the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=fullName> method.  
-  
+A dynamic assembly is an assembly that is created using the Reflection Emit APIs. The dynamic modules in the assembly are saved when the dynamic assembly is saved using the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> method. To generate an executable, the <xref:System.Reflection.Emit.AssemblyBuilder.SetEntryPoint%2A> method must be called to identify the method that is the entry point to the assembly. Assemblies are saved as DLLs by default, unless the <xref:System.Reflection.Emit.AssemblyBuilder.SetEntryPoint%2A> method requests the generation of a console application or a Windows-based application.  
+ 
+If a dynamic assembly contains more than one dynamic module, the assembly's manifest file name should match the module's name that is specified as the first argument to the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A> method.  
+ 
+Some methods on the base <xref:System.Reflection.Assembly> class, such as `GetModules` and `GetLoadedModules`, will not work correctly when called from <xref:System.Reflection.Emit.AssemblyBuilder> objects. You can load the defined dynamic assembly and call the methods on the loaded assembly. For example, to ensure that resource modules are included in the returned module list, call `GetModules` on the loaded <xref:System.Reflection.Assembly> object.  
+ 
+The signing of a dynamic assembly using <xref:System.Reflection.AssemblyName.KeyPair%2A> is not effective until the assembly is saved to disk. So, strong names will not work with transient dynamic assemblies.  
+ 
+To get an <xref:System.Reflection.Emit.AssemblyBuilder> object, use the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=fullName> method.  
+ 
 ## Reflection emit dynamic assembly scenarios  
- The following are some things to consider when using the <xref:System.Reflection.Emit.AssemblyBuilder> class to create dynamic assemblies.  
-  
+The following are some things to consider when using the <xref:System.Reflection.Emit.AssemblyBuilder> class to create dynamic assemblies.  
+ 
 ### Dynamic modules  
- Reflection emit supports the creation of dynamic modules defined in dynamic assemblies. A dynamic module created in a dynamic assembly can be transient or persistable.  
-  
+Reflection emit supports the creation of dynamic modules defined in dynamic assemblies. A dynamic module created in a dynamic assembly can be transient or persistable.  
+ 
 ### Restrictions on type references  
- Assemblies can reference types defined in another assembly. A transient dynamic assembly can safely reference types defined in another transient dynamic assembly, a persistable dynamic assembly, or a static assembly. However, the common language runtime does not allow a persistable dynamic module to reference a type defined in a transient dynamic module. This is because when the persisted dynamic module is loaded after being saved to disk, the runtime cannot resolve the references to types defined in the transient dynamic module.  
-  
+Assemblies can reference types defined in another assembly. A transient dynamic assembly can safely reference types defined in another transient dynamic assembly, a persistable dynamic assembly, or a static assembly. However, the common language runtime does not allow a persistable dynamic module to reference a type defined in a transient dynamic module. This is because when the persisted dynamic module is loaded after being saved to disk, the runtime cannot resolve the references to types defined in the transient dynamic module.  
+ 
 ### Restrictions on emitting to remote application domains  
- Some scenarios require a dynamic assembly to be created and executed in a remote application domain. Reflection emit does not allow a dynamic assembly to be emitted directly to a remote application domain. The solution is to emit the dynamic assembly in the current application domain, save the emitted dynamic assembly to disk, and then load the dynamic assembly into the remote application domain.  
-  
+Some scenarios require a dynamic assembly to be created and executed in a remote application domain. Reflection emit does not allow a dynamic assembly to be emitted directly to a remote application domain. The solution is to emit the dynamic assembly in the current application domain, save the emitted dynamic assembly to disk, and then load the dynamic assembly into the remote application domain.  
+ 
 ### Dynamic assembly access modes  
- Dynamic assemblies can be created using one of the following access modes:  
-  
+Dynamic assemblies can be created using one of the following access modes:  
+ 
 -   <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName>  
-  
-     The dynamic assembly represented by an <xref:System.Reflection.Emit.AssemblyBuilder> object is transient. The dynamic assembly can only be used to execute the emitted code.  
-  
+ 
+    The dynamic assembly represented by an <xref:System.Reflection.Emit.AssemblyBuilder> object is transient. The dynamic assembly can only be used to execute the emitted code.  
+ 
 -   <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName>  
-  
-     The dynamic assembly represented by an <xref:System.Reflection.Emit.AssemblyBuilder> object is persistable but cannot be executed until the saved portable executable (PE) file has been loaded from disk.  
-  
+ 
+    The dynamic assembly represented by an <xref:System.Reflection.Emit.AssemblyBuilder> object is persistable but cannot be executed until the saved portable executable (PE) file has been loaded from disk.  
+ 
 -   <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName>  
+ 
+    The dynamic assembly represented by an <xref:System.Reflection.Emit.AssemblyBuilder> object is persistable, but can also be executed before and/or after the assembly is saved to disk.  
+ 
+The access mode must be specified by providing the appropriate <xref:System.Reflection.Emit.AssemblyBuilderAccess> value in the call to the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly%2A?displayProperty=fullName> method when the dynamic assembly is defined and cannot be changed later. The runtime uses the access mode of a dynamic assembly to optimize the assembly's internal representation.  
+ 
   
-     The dynamic assembly represented by an <xref:System.Reflection.Emit.AssemblyBuilder> object is persistable, but can also be executed before and/or after the assembly is saved to disk.  
-  
- The access mode must be specified by providing the appropriate <xref:System.Reflection.Emit.AssemblyBuilderAccess> value in the call to the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly%2A?displayProperty=fullName> method when the dynamic assembly is defined and cannot be changed later. The runtime uses the access mode of a dynamic assembly to optimize the assembly's internal representation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to define a dynamic assembly with one module. The module in the example assembly contains one type, `MyDynamicType`, which has a private field, a property that gets and sets the private field, constructors that initialize the private field, and a method that multiplies a user-supplied number by the private field value and returns the result.  
-  
- <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> is specified when the assembly is created. The assembly code is used immediately, and the assembly is also saved to disk so that it can be examined with [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) or used in another program.  
-  
- [!code-cpp[AssemblyBuilderClass#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilderClass/cpp/24895.cpp#1)]
- [!code-csharp[AssemblyBuilderClass#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilderClass/cs/24895.cs#1)]
- [!code-vb[AssemblyBuilderClass#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilderClass/vb/24895.vb#1)]  
-  
+The following code example shows how to define a dynamic assembly with one module. The module in the example assembly contains one type, `MyDynamicType`, which has a private field, a property that gets and sets the private field, constructors that initialize the private field, and a method that multiplies a user-supplied number by the private field value and returns the result.  
+ 
+<xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> is specified when the assembly is created. The assembly code is used immediately, and the assembly is also saved to disk so that it can be examined with [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) or used in another program.  
+ 
+[!code-cpp[AssemblyBuilderClass#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilderClass/cpp/24895.cpp#1)]
+[!code-csharp[AssemblyBuilderClass#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilderClass/cs/24895.cs#1)]
+[!code-vb[AssemblyBuilderClass#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilderClass/vb/24895.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -129,26 +129,26 @@
         <summary>Adds an existing resource file to this assembly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `fileName` should not be the same as that of any other persistable module, standalone managed resource, or the standalone manifest file.  
-  
- The managed resources in the file are assumed to be public.  
-  
- The specified resource file must be in the directory where the assembly will be saved.  
-  
+`fileName` should not be the same as that of any other persistable module, standalone managed resource, or the standalone manifest file.  
+ 
+The managed resources in the file are assumed to be public.  
+ 
+The specified resource file must be in the directory where the assembly will be saved.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates how to attach a resource file to a dynamically created assembly, using `AddResourceFile`.  
-  
- [!code-cpp[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/VB/source.vb#1)]  
-  
+The following code sample demonstrates how to attach a resource file to a dynamically created assembly, using `AddResourceFile`.  
+ 
+[!code-cpp[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -198,26 +198,26 @@
         <summary>Adds an existing resource file to this assembly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `fileName` should not be the same as that of any other persistable module, standalone managed resource, or the standalone manifest file.  
-  
- Attributes can be specified for the managed resource.  
-  
- The specified resource file must be in the directory where the assembly will be saved.  
-  
+`fileName` should not be the same as that of any other persistable module, standalone managed resource, or the standalone manifest file.  
+ 
+Attributes can be specified for the managed resource.  
+ 
+The specified resource file must be in the directory where the assembly will be saved.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates how to attach a resource file to a dynamically created assembly, using `AddResourceFile`.  
-  
- [!code-cpp[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/VB/source.vb#1)]  
-  
+The following code sample demonstrates how to attach a resource file to a dynamically created assembly, using `AddResourceFile`.  
+ 
+[!code-cpp[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.AssemblyBuilder.AddResourceFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.AddResourceFile Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -260,10 +260,10 @@
         <value>The location of the assembly, as specified originally.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the absolute path to the loaded manifest-containing file, use the <xref:System.Reflection.Assembly.Location%2A?displayProperty=fullName> property.  
-  
+To get the absolute path to the loaded manifest-containing file, use the <xref:System.Reflection.Assembly.Location%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported.</exception>
@@ -375,29 +375,29 @@
         <returns>A <see cref="T:System.Reflection.Emit.ModuleBuilder" /> representing the defined dynamic module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is an error to define multiple dynamic modules with the same name in an assembly.  
-  
- The defined dynamic module is transient. The dynamic module is not saved, even if the parent dynamic assembly was created with <xref:System.Reflection.Emit.AssemblyBuilderAccess>.  
-  
+It is an error to define multiple dynamic modules with the same name in an assembly.  
+ 
+The defined dynamic module is transient. The dynamic module is not saved, even if the parent dynamic assembly was created with <xref:System.Reflection.Emit.AssemblyBuilderAccess>.  
+ 
 > [!NOTE]
 >  To suppress optimizations when debugging dynamic modules, apply the <xref:System.Diagnostics.DebuggableAttribute> attribute to the dynamic assembly before calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A>. Create an instance of <xref:System.Diagnostics.DebuggableAttribute> with the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> flag and apply it using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method. The attribute must be applied to the dynamic assembly. It has no effect if applied to the module.  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- [Visual Basic, C#]  
-  
- The code example below demonstrates how to create a transient dynamic module using `DefineDynamicModule`.  
-  
- [!code-cpp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/VB/source.vb#1)]  
-  
+[Visual Basic, C#]  
+ 
+The code example below demonstrates how to create a transient dynamic module using `DefineDynamicModule`.  
+ 
+[!code-cpp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -446,29 +446,29 @@
         <returns>A <see cref="T:System.Reflection.Emit.ModuleBuilder" /> representing the defined dynamic module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is an error to define multiple dynamic modules with the same name in an assembly.  
-  
- The dynamic module is not saved, even if the parent dynamic assembly was created with <xref:System.Reflection.Emit.AssemblyBuilderAccess>.  
-  
+It is an error to define multiple dynamic modules with the same name in an assembly.  
+ 
+The dynamic module is not saved, even if the parent dynamic assembly was created with <xref:System.Reflection.Emit.AssemblyBuilderAccess>.  
+ 
 > [!NOTE]
 >  To suppress optimizations when debugging dynamic modules, apply the <xref:System.Diagnostics.DebuggableAttribute> attribute to the dynamic assembly before calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A>. Create an instance of <xref:System.Diagnostics.DebuggableAttribute> with the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> flag and apply it using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method. The attribute must be applied to the dynamic assembly. It has no effect if applied to the module.  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- [Visual Basic, C#]  
-  
- The code example below demonstrates how to create a transient dynamic module using `DefineDynamicModule`, suppressing symbol information.  
-  
- [!code-cpp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CPP/source.cpp#2)]
- [!code-csharp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CS/source.cs#2)]
- [!code-vb[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/VB/source.vb#2)]  
-  
+[Visual Basic, C#]  
+ 
+The code example below demonstrates how to create a transient dynamic module using `DefineDynamicModule`, suppressing symbol information.  
+ 
+[!code-cpp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CPP/source.cpp#2)]
+[!code-csharp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CS/source.cs#2)]
+[!code-vb[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/VB/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -516,31 +516,31 @@
         <returns>A <see cref="T:System.Reflection.Emit.ModuleBuilder" /> object representing the defined dynamic module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To define a persistable dynamic module, this assembly needs to be created with the <xref:System.Reflection.Emit.AssemblyBuilderAccess> or the <xref:System.Reflection.Emit.AssemblyBuilderAccess> attribute.  
-  
- If you want the module to contain the assembly manifest, `name` should be the same as the name of the assembly (that is, the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> used to create the dynamic assembly) and `fileName` should be the same as the filename you specify when you save the assembly.  
-  
- In an assembly with only one module, that module should contain the assembly manifest.  
-  
+To define a persistable dynamic module, this assembly needs to be created with the <xref:System.Reflection.Emit.AssemblyBuilderAccess> or the <xref:System.Reflection.Emit.AssemblyBuilderAccess> attribute.  
+ 
+If you want the module to contain the assembly manifest, `name` should be the same as the name of the assembly (that is, the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> used to create the dynamic assembly) and `fileName` should be the same as the filename you specify when you save the assembly.  
+ 
+In an assembly with only one module, that module should contain the assembly manifest.  
+ 
 > [!NOTE]
 >  To suppress optimizations when debugging dynamic modules, apply the <xref:System.Diagnostics.DebuggableAttribute> attribute to the dynamic assembly before calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A>. Create an instance of <xref:System.Diagnostics.DebuggableAttribute> with the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> flag and apply it using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method. The attribute must be applied to the dynamic assembly. It has no effect if applied to the module.  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- [Visual Basic, C#]  
-  
- The code example below demonstrates how to create a persistent dynamic module using `DefineDynamicModule`.  
-  
- [!code-cpp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CPP/source.cpp#3)]
- [!code-csharp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CS/source.cs#3)]
- [!code-vb[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/VB/source.vb#3)]  
-  
+[Visual Basic, C#]  
+ 
+The code example below demonstrates how to create a persistent dynamic module using `DefineDynamicModule`.  
+ 
+[!code-cpp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CPP/source.cpp#3)]
+[!code-csharp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CS/source.cs#3)]
+[!code-vb[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/VB/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -596,31 +596,31 @@
         <returns>A <see cref="T:System.Reflection.Emit.ModuleBuilder" /> object representing the defined dynamic module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To define a persistable dynamic module, this assembly needs to be created with the <xref:System.Reflection.Emit.AssemblyBuilderAccess> or the <xref:System.Reflection.Emit.AssemblyBuilderAccess> attribute.  
-  
- If you want the module to contain the assembly manifest, `name` should be the same as the name of the assembly (that is, the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> used to create the dynamic assembly) and `fileName` should be the same as the filename you specify when you save the assembly.  
-  
- In an assembly with only one module, that module should contain the assembly manifest.  
-  
+To define a persistable dynamic module, this assembly needs to be created with the <xref:System.Reflection.Emit.AssemblyBuilderAccess> or the <xref:System.Reflection.Emit.AssemblyBuilderAccess> attribute.  
+ 
+If you want the module to contain the assembly manifest, `name` should be the same as the name of the assembly (that is, the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> used to create the dynamic assembly) and `fileName` should be the same as the filename you specify when you save the assembly.  
+ 
+In an assembly with only one module, that module should contain the assembly manifest.  
+ 
 > [!NOTE]
 >  To suppress optimizations when debugging dynamic modules, apply the <xref:System.Diagnostics.DebuggableAttribute> attribute to the dynamic assembly before calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A>. Create an instance of <xref:System.Diagnostics.DebuggableAttribute> with the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> flag and apply it using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method. The attribute must be applied to the dynamic assembly. It has no effect if applied to the module.  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- [Visual Basic, C#]  
-  
- The code example below demonstrates how to create a persistent dynamic module with symbol emission using `DefineDynamicModule`.  
-  
- [!code-cpp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CPP/source.cpp#4)]
- [!code-csharp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CS/source.cs#4)]
- [!code-vb[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/VB/source.vb#4)]  
-  
+[Visual Basic, C#]  
+ 
+The code example below demonstrates how to create a persistent dynamic module with symbol emission using `DefineDynamicModule`.  
+ 
+[!code-cpp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CPP/source.cpp#4)]
+[!code-csharp[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/CS/source.cs#4)]
+[!code-vb[System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.DefineDynamicModule Example/VB/source.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -676,26 +676,26 @@
         <returns>A <see cref="T:System.Resources.ResourceWriter" /> object for the specified resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Fine grain resources can be added with the returned <xref:System.Resources.ResourceWriter> by calling <xref:System.Resources.ResourceWriter.AddResource%2A>.  
-  
- `fileName` should not be the same as that of any other persistable module, stand-alone managed resource, or the stand-alone manifest file.  
-  
- The runtime calls the <xref:System.Resources.ResourceWriter.Close%2A> method when the dynamic assembly is saved.  
-  
+Fine grain resources can be added with the returned <xref:System.Resources.ResourceWriter> by calling <xref:System.Resources.ResourceWriter.AddResource%2A>.  
+ 
+`fileName` should not be the same as that of any other persistable module, stand-alone managed resource, or the stand-alone manifest file.  
+ 
+The runtime calls the <xref:System.Resources.ResourceWriter.Close%2A> method when the dynamic assembly is saved.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A> method to get a resource writer. The example uses the resource writer to add three resource strings.  
-  
- [!code-cpp[AssemblyBuilder.DefineResource Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder.DefineResource Example 2/CPP/assemblybuilder_defineresource.cpp#1)]
- [!code-csharp[AssemblyBuilder.DefineResource Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder.DefineResource Example 2/CS/assemblybuilder_defineresource.cs#1)]
- [!code-vb[AssemblyBuilder.DefineResource Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder.DefineResource Example 2/VB/assemblybuilder_defineresource.vb#1)]  
-  
+The following example uses the <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A> method to get a resource writer. The example uses the resource writer to add three resource strings.  
+ 
+[!code-cpp[AssemblyBuilder.DefineResource Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder.DefineResource Example 2/CPP/assemblybuilder_defineresource.cpp#1)]
+[!code-csharp[AssemblyBuilder.DefineResource Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder.DefineResource Example 2/CS/assemblybuilder_defineresource.cs#1)]
+[!code-vb[AssemblyBuilder.DefineResource Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder.DefineResource Example 2/VB/assemblybuilder_defineresource.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -751,17 +751,17 @@
         <returns>A <see cref="T:System.Resources.ResourceWriter" /> object for the specified resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Fine-grain resources can be added with the returned <xref:System.Resources.ResourceWriter> by calling <xref:System.Resources.ResourceWriter.AddResource%2A>.  
-  
- `fileName` should not be the same as that of any other persistable module, standalone managed resource, or the standalone manifest file.  
-  
- The runtime calls the <xref:System.Resources.ResourceWriter.Close%2A> method when the dynamic assembly is saved.  
-  
+Fine-grain resources can be added with the returned <xref:System.Resources.ResourceWriter> by calling <xref:System.Resources.ResourceWriter.AddResource%2A>.  
+ 
+`fileName` should not be the same as that of any other persistable module, standalone managed resource, or the standalone manifest file.  
+ 
+The runtime calls the <xref:System.Resources.ResourceWriter.Close%2A> method when the dynamic assembly is saved.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -806,19 +806,19 @@
         <summary>Defines an unmanaged resource for this assembly as an opaque blob of bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An assembly can be associated with only one unmanaged resource. This means that calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource%2A> or <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A> after either one of the methods was called previously will throw the System.ArgumentException being throw. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
+An assembly can be associated with only one unmanaged resource. This means that calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource%2A> or <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A> after either one of the methods was called previously will throw the System.ArgumentException being throw. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample creates and attaches an array of bytes representing an unmanaged resource to a dynamic assembly, using `DefineUnmanagedResource`.  
-  
- [!code-cpp[AssemblyBuilder_DefineUnmanagedResource2#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource2/CPP/assemblybuilder_defineunmanagedresource2.cpp#1)]
- [!code-csharp[AssemblyBuilder_DefineUnmanagedResource2#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource2/CS/assemblybuilder_defineunmanagedresource2.cs#1)]
- [!code-vb[AssemblyBuilder_DefineUnmanagedResource2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource2/VB/assemblybuilder_defineunmanagedresource2.vb#1)]  
-  
+The following code sample creates and attaches an array of bytes representing an unmanaged resource to a dynamic assembly, using `DefineUnmanagedResource`.  
+ 
+[!code-cpp[AssemblyBuilder_DefineUnmanagedResource2#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource2/CPP/assemblybuilder_defineunmanagedresource2.cpp#1)]
+[!code-csharp[AssemblyBuilder_DefineUnmanagedResource2#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource2/CS/assemblybuilder_defineunmanagedresource2.cs#1)]
+[!code-vb[AssemblyBuilder_DefineUnmanagedResource2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource2/VB/assemblybuilder_defineunmanagedresource2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An unmanaged resource was previously defined.</exception>
@@ -849,22 +849,22 @@
         <summary>Defines an unmanaged resource file for this assembly given the name of the resource file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An assembly can be associated with only one unmanaged resource. This means that calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource%2A> or <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A> after either one of the methods was called previously will throw the System.ArgumentException. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
-  
+An assembly can be associated with only one unmanaged resource. This means that calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource%2A> or <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A> after either one of the methods was called previously will throw the System.ArgumentException. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The example below demonstrates a call to `DefineUnmanagedResource`, passing an external resource file.  
-  
- [!code-cpp[AssemblyBuilder_DefineUnmanagedResource#3](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource/CPP/assemblybuilder_defineunmanagedresource.cpp#3)]
- [!code-csharp[AssemblyBuilder_DefineUnmanagedResource#3](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource/CS/assemblybuilder_defineunmanagedresource.cs#3)]
- [!code-vb[AssemblyBuilder_DefineUnmanagedResource#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource/VB/assemblybuilder_defineunmanagedresource.vb#3)]  
-  
+The example below demonstrates a call to `DefineUnmanagedResource`, passing an external resource file.  
+ 
+[!code-cpp[AssemblyBuilder_DefineUnmanagedResource#3](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource/CPP/assemblybuilder_defineunmanagedresource.cpp#3)]
+[!code-csharp[AssemblyBuilder_DefineUnmanagedResource#3](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource/CS/assemblybuilder_defineunmanagedresource.cs#3)]
+[!code-vb[AssemblyBuilder_DefineUnmanagedResource#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_DefineUnmanagedResource/VB/assemblybuilder_defineunmanagedresource.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An unmanaged resource was previously defined.  
@@ -907,26 +907,26 @@
         <summary>Defines an unmanaged version information resource using the information specified in the assembly's AssemblyName object and the assembly's custom attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An assembly can be associated with only one unmanaged resource. This means that calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource%2A> or <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A> after either one of the methods was called previously will throw the System.ArgumentException. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime SDK).  
-  
- Empty argument strings get written as a single space. Spaces are substituted for null characters in the argument strings.  
-  
- The information is inferred from the `AssemblyName` object used to define this dynamic assembly. This assembly's custom attributes override information specified in the `AssemblyName` object.  
-  
+An assembly can be associated with only one unmanaged resource. This means that calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource%2A> or <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A> after either one of the methods was called previously will throw the System.ArgumentException. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime SDK).  
+ 
+Empty argument strings get written as a single space. Spaces are substituted for null characters in the argument strings.  
+ 
+The information is inferred from the `AssemblyName` object used to define this dynamic assembly. This assembly's custom attributes override information specified in the `AssemblyName` object.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The example below illustrates the usage of `DefineVersionInfoResource`.  
-  
- [!code-cpp[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/CPP/assemblybuilder_defineversioninforesource.cpp#1)]
- [!code-csharp[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/CS/assemblybuilder_defineversioninforesource.cs#1)]
- [!code-vb[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/VB/assemblybuilder_defineversioninforesource.vb#1)]  
-  
+The example below illustrates the usage of `DefineVersionInfoResource`.  
+ 
+[!code-cpp[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/CPP/assemblybuilder_defineversioninforesource.cpp#1)]
+[!code-csharp[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/CS/assemblybuilder_defineversioninforesource.cs#1)]
+[!code-vb[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/VB/assemblybuilder_defineversioninforesource.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An unmanaged version information resource was previously defined.  
@@ -967,26 +967,26 @@
         <summary>Defines an unmanaged version information resource for this assembly with the given specifications.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An assembly can be associated with only one unmanaged resource. This means that calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource%2A> or <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A> after either one of the methods was called previously will throw the System.ArgumentException. Multiple unmanaged resources need to be merged with a tool such as the Microsoft `ResMerge` utility (not supplied with the common language runtime SDK).  
-  
- Empty argument strings get written as a single space. Spaces are substituted for null characters in the argument strings.  
-  
- The structure of the version resource includes data that identifies the version, language, and distribution of the file. Installation programs use the functions in the file installation library (VER.DLL) to retrieve the version information resource from a file and to extract the version information blocks from the resource.  
-  
+An assembly can be associated with only one unmanaged resource. This means that calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource%2A> or <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A> after either one of the methods was called previously will throw the System.ArgumentException. Multiple unmanaged resources need to be merged with a tool such as the Microsoft `ResMerge` utility (not supplied with the common language runtime SDK).  
+ 
+Empty argument strings get written as a single space. Spaces are substituted for null characters in the argument strings.  
+ 
+The structure of the version resource includes data that identifies the version, language, and distribution of the file. Installation programs use the functions in the file installation library (VER.DLL) to retrieve the version information resource from a file and to extract the version information blocks from the resource.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The example below illustrates the usage of `DefineVersionInfoResource`.  
-  
- [!code-cpp[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/CPP/assemblybuilder_defineversioninforesource.cpp#1)]
- [!code-csharp[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/CS/assemblybuilder_defineversioninforesource.cs#1)]
- [!code-vb[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/VB/assemblybuilder_defineversioninforesource.vb#1)]  
-  
+The example below illustrates the usage of `DefineVersionInfoResource`.  
+ 
+[!code-cpp[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/CPP/assemblybuilder_defineversioninforesource.cpp#1)]
+[!code-csharp[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/CS/assemblybuilder_defineversioninforesource.cs#1)]
+[!code-vb[AssemblyBuilder_DefineVersionInfoResource#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_DefineVersionInfoResource/VB/assemblybuilder_defineversioninforesource.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An unmanaged version information resource was previously defined.  
@@ -1087,10 +1087,10 @@
         <value>The display name of the dynamic assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:System.Reflection.AssemblyName> for a description of the format of the display name of an assembly.  
-  
+See <xref:System.Reflection.AssemblyName> for a description of the format of the display name of an assembly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1165,10 +1165,10 @@
         <returns>A generic list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the current module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
-  
+Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1250,10 +1250,10 @@
         <returns>A <see cref="T:System.IO.FileStream" /> for the specified file, or <see langword="null" />, if the file is not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `name` should not include the path to the file.  
-  
+`name` should not include the path to the file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported.</exception>
@@ -1448,15 +1448,15 @@
         <returns>A <see cref="T:System.IO.Stream" /> representing this manifest resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned <xref:System.IO.Stream> has its file pointer set to the beginning of the resource.  
+The returned <xref:System.IO.Stream> has its file pointer set to the beginning of the resource.  
+ 
   
-   
-  
+ 
 ## Examples  
- If the full name of `type` is "MyNameSpace.MyClasses" and `name` is "Dot", `GetManifestResourceStream` will search for a resource named MyNameSpace.Dot.  
-  
+If the full name of `type` is "MyNameSpace.MyClasses" and `name` is "Dot", `GetManifestResourceStream` will search for a resource named MyNameSpace.Dot.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported.</exception>
@@ -1554,12 +1554,12 @@
         <returns>An array of assembly names for the referenced assemblies. This array is not a complete list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not return a complete list of referenced assemblies. For example, if you apply a custom attribute to the <xref:System.Reflection.Emit.AssemblyBuilder>, the assembly in which the attribute was defined is included in the list returned by this method. However, if you use a <xref:System.Type> object to specify the type of a method parameter, that type is not included.  
-  
- To get a complete list of referenced assemblies, save the assembly, load it into another application domain, and call the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=fullName> method.  
-  
+This method does not return a complete list of referenced assemblies. For example, if you apply a custom attribute to the <xref:System.Reflection.Emit.AssemblyBuilder>, the assembly in which the attribute was defined is included in the list returned by this method. However, if you use a <xref:System.Type> object to specify the type of a method parameter, that type is not included.  
+ 
+To get a complete list of referenced assemblies, save the assembly, load it into another application domain, and call the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1586,12 +1586,12 @@
         <returns>The specified satellite assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Satellite assemblies contain localized resources, as distinct from main application assemblies, which contain non-localizable executable code and resources for a single culture that serve as the default or neutral culture.  
-  
- Call this method to use your current assembly version.  
-  
+Satellite assemblies contain localized resources, as distinct from main application assemblies, which contain non-localizable executable code and resources for a single culture that serve as the default or neutral culture.  
+ 
+Call this method to use your current assembly version.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1625,12 +1625,12 @@
         <returns>The specified satellite assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Satellite assemblies contain localized resources, as distinct from main application assemblies, which contain non-localizable executable code and resources for a single culture that serve as the default or neutral culture.  
-  
- Call the <xref:System.Reflection.Assembly.GetSatelliteAssembly%28System.Globalization.CultureInfo%29> overload to use your current assembly version.  
-  
+Satellite assemblies contain localized resources, as distinct from main application assemblies, which contain non-localizable executable code and resources for a single culture that serve as the default or neutral culture.  
+ 
+Call the <xref:System.Reflection.Assembly.GetSatelliteAssembly%28System.Globalization.CultureInfo%29> overload to use your current assembly version.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1668,10 +1668,10 @@
         <returns>The specified type, or <see langword="null" /> if the type is not found or has not been created yet.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A type cannot be found until it has been created by calling the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A> method.  
-  
+A type cannot be found until it has been created by calling the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1694,10 +1694,10 @@
         <value>Always <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Reflection.Emit.AssemblyBuilder> objects always represent dynamic assemblies, and therefore are never loaded from the global assembly cache.  
-  
+<xref:System.Reflection.Emit.AssemblyBuilder> objects always represent dynamic assemblies, and therefore are never loaded from the global assembly cache.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1789,10 +1789,10 @@
         <value>Always <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Reflection.Emit.AssemblyBuilder> object always represents a dynamic assembly.  
-  
+An <xref:System.Reflection.Emit.AssemblyBuilder> object always represents a dynamic assembly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1882,10 +1882,10 @@
         <value>The grant set of the current dynamic assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.PermissionSet> objects can contain sensitive information such as paths. Therefore, full trust is required to access these objects.  
-  
+<xref:System.Security.PermissionSet> objects can contain sensitive information such as paths. Therefore, full trust is required to access these objects.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1910,13 +1910,13 @@
           <see langword="true" /> if the dynamic assembly is in the reflection-only context; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To emit a dynamic assembly in the reflection-only context, specify <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> when you create the <xref:System.Reflection.Emit.AssemblyBuilder>. If a dynamic assembly is emitted in the reflection-only context, its code cannot be executed.  
-  
+To emit a dynamic assembly in the reflection-only context, specify <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> when you create the <xref:System.Reflection.Emit.AssemblyBuilder>. If a dynamic assembly is emitted in the reflection-only context, its code cannot be executed.  
+ 
 > [!NOTE]
 >  After you have saved a dynamic assembly to disk, you can use the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=fullName> method to load the completed assembly into the reflection-only context. However, the assembly can no longer be modified.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1942,25 +1942,25 @@
         <summary>Saves this dynamic assembly to disk.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method saves all non-transient dynamic modules defined in this dynamic assembly. Transient dynamic modules are not saved. The assembly file name can be the same as the name of one of the modules. If so, the assembly manifest is stored within that module. `assemblyFileName` can be different from the names of all of the modules contained within the assembly. If so, the assembly file contains only the assembly manifest.  
+This method saves all non-transient dynamic modules defined in this dynamic assembly. Transient dynamic modules are not saved. The assembly file name can be the same as the name of one of the modules. If so, the assembly manifest is stored within that module. `assemblyFileName` can be different from the names of all of the modules contained within the assembly. If so, the assembly file contains only the assembly manifest.  
+ 
+For each <xref:System.Resources.ResourceWriter> obtained using <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A>, this method writes the .resources file and calls <xref:System.Resources.ResourceWriter.Close%2A> to close the stream.  
+ 
+The `assemblyFileName` needs to be a simple file name without a drive or directory component. To create an assembly in a specific directory, use one of the <xref:System.AppDomain.DefineDynamicAssembly%2A> methods that takes a target directory argument.  
+ 
+In the .NET Framework version 2.0, this overload of the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> method is equivalent to calling the <xref:System.Reflection.Emit.AssemblyBuilder.Save%28System.String%2CSystem.Reflection.PortableExecutableKinds%2CSystem.Reflection.ImageFileMachine%29> method overload with <xref:System.Reflection.PortableExecutableKinds> for the `portableExecutableKind` parameter and <xref:System.Reflection.ImageFileMachine> for the `imageFileMachine` parameter.  
+ 
   
- For each <xref:System.Resources.ResourceWriter> obtained using <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A>, this method writes the .resources file and calls <xref:System.Resources.ResourceWriter.Close%2A> to close the stream.  
-  
- The `assemblyFileName` needs to be a simple file name without a drive or directory component. To create an assembly in a specific directory, use one of the <xref:System.AppDomain.DefineDynamicAssembly%2A> methods that takes a target directory argument.  
-  
- In the .NET Framework version 2.0, this overload of the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> method is equivalent to calling the <xref:System.Reflection.Emit.AssemblyBuilder.Save%28System.String%2CSystem.Reflection.PortableExecutableKinds%2CSystem.Reflection.ImageFileMachine%29> method overload with <xref:System.Reflection.PortableExecutableKinds> for the `portableExecutableKind` parameter and <xref:System.Reflection.ImageFileMachine> for the `imageFileMachine` parameter.  
-  
-   
-  
+ 
 ## Examples  
- The following code sample creates a dynamic assembly and then persists it to a local disk using `Save`.  
-  
- [!code-cpp[System.Reflection.Emit.AssemblyBuilder.Save Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.Save Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.AssemblyBuilder.Save Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.Save Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.AssemblyBuilder.Save Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.Save Example/VB/source.vb#1)]  
-  
+The following code sample creates a dynamic assembly and then persists it to a local disk using `Save`.  
+ 
+[!code-cpp[System.Reflection.Emit.AssemblyBuilder.Save Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.Save Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.AssemblyBuilder.Save Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.Save Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.AssemblyBuilder.Save Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.AssemblyBuilder.Save Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="assemblyFileName" /> is 0.  
@@ -2019,16 +2019,16 @@
         <summary>Saves this dynamic assembly to disk, specifying the nature of code in the assembly's executables and the target platform.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `imageFileMachine` and `portableExecutableKind` are incompatible, `imageFileMachine` takes precedence over `portableExecutableKind`. No exception is thrown. For example, if you specify <xref:System.Reflection.ImageFileMachine?displayProperty=fullName> with <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName>, <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName> is ignored.  
-  
- This method saves all non-transient dynamic modules defined in this dynamic assembly. Transient dynamic modules are not saved. The assembly file name can be the same as the name of one of the module. If so, the assembly manifest is stored within that module. `assemblyFileName` can be different from the names of all of the modules contained within the assembly. If so, the assembly file contains only the assembly manifest.  
-  
- For each <xref:System.Resources.ResourceWriter> obtained using <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A>, this method writes the .resources file and calls <xref:System.Resources.ResourceWriter.Close%2A> to close the stream.  
-  
- The `assemblyFileName` needs to be a simple file name without a drive or directory component. To create an assembly in a specific directory, use one of the <xref:System.AppDomain.DefineDynamicAssembly%2A> methods that takes a target directory argument.  
-  
+If `imageFileMachine` and `portableExecutableKind` are incompatible, `imageFileMachine` takes precedence over `portableExecutableKind`. No exception is thrown. For example, if you specify <xref:System.Reflection.ImageFileMachine?displayProperty=fullName> with <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName>, <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName> is ignored.  
+ 
+This method saves all non-transient dynamic modules defined in this dynamic assembly. Transient dynamic modules are not saved. The assembly file name can be the same as the name of one of the module. If so, the assembly manifest is stored within that module. `assemblyFileName` can be different from the names of all of the modules contained within the assembly. If so, the assembly file contains only the assembly manifest.  
+ 
+For each <xref:System.Resources.ResourceWriter> obtained using <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A>, this method writes the .resources file and calls <xref:System.Resources.ResourceWriter.Close%2A> to close the stream.  
+ 
+The `assemblyFileName` needs to be a simple file name without a drive or directory component. To create an assembly in a specific directory, use one of the <xref:System.AppDomain.DefineDynamicAssembly%2A> methods that takes a target directory argument.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="assemblyFileName" /> is 0.  
@@ -2079,10 +2079,10 @@
         <value>The security rule set that the CLR enforces for this dynamic assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] always enforces level 2 transparency (<xref:System.Security.SecurityRuleSet?displayProperty=fullName>) for the dynamic assemblies it generates.  
-  
+The [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] always enforces level 2 transparency (<xref:System.Security.SecurityRuleSet?displayProperty=fullName>) for the dynamic assemblies it generates.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2112,24 +2112,24 @@
         <summary>Set a custom attribute on this assembly using a custom attribute builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> cannot be used to set declarative security attributes. Use one of the overloads of <xref:System.AppDomain.DefineDynamicAssembly%2A> that takes required, optional, and refused permissions.  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `SetCustomAttribute` within <xref:System.Reflection.Emit.AssemblyBuilder>, using a <xref:System.Reflection.Emit.CustomAttributeBuilder>.  
-  
- [!code-cpp[AssemblyBuilder_SetCustomAttribute1#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute1/CPP/assemblybuilder_setcustomattribute1.cpp#1)]
- [!code-csharp[AssemblyBuilder_SetCustomAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute1/CS/assemblybuilder_setcustomattribute1.cs#1)]
- [!code-vb[AssemblyBuilder_SetCustomAttribute1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute1/VB/assemblybuilder_setcustomattribute1.vb#1)]  
-  
+The following code sample illustrates the use of `SetCustomAttribute` within <xref:System.Reflection.Emit.AssemblyBuilder>, using a <xref:System.Reflection.Emit.CustomAttributeBuilder>.  
+ 
+[!code-cpp[AssemblyBuilder_SetCustomAttribute1#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute1/CPP/assemblybuilder_setcustomattribute1.cpp#1)]
+[!code-csharp[AssemblyBuilder_SetCustomAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute1/CS/assemblybuilder_setcustomattribute1.cs#1)]
+[!code-vb[AssemblyBuilder_SetCustomAttribute1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute1/VB/assemblybuilder_setcustomattribute1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2170,27 +2170,27 @@
         <summary>Set a custom attribute on this assembly using a specified custom attribute blob.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
- `RuntimeConstructorInfo` is a special type generated by the system. It derives from the <xref:System.Reflection.ConstructorInfo> class, and any <xref:System.Reflection.ConstructorInfo> object you obtain through reflection is actually an instance of `RuntimeConstructorInfo`.  
-  
+See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ 
+`RuntimeConstructorInfo` is a special type generated by the system. It derives from the <xref:System.Reflection.ConstructorInfo> class, and any <xref:System.Reflection.ConstructorInfo> object you obtain through reflection is actually an instance of `RuntimeConstructorInfo`.  
+ 
 > [!NOTE]
 >  <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> cannot be used to set declarative security attributes. Use one of the overloads of <xref:System.AppDomain.DefineDynamicAssembly%2A> that takes required, optional, and refused permissions.  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `SetCustomAttribute` to attach a custom attribute to a dynamically generated assembly.  
-  
- [!code-cpp[AssemblyBuilder_SetCustomAttribute2#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute2/CPP/assemblybuilder_setcustomattribute2.cpp#1)]
- [!code-csharp[AssemblyBuilder_SetCustomAttribute2#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute2/CS/assemblybuilder_setcustomattribute2.cs#1)]
- [!code-vb[AssemblyBuilder_SetCustomAttribute2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute2/VB/assemblybuilder_setcustomattribute2.vb#1)]  
-  
+The following code sample illustrates the use of `SetCustomAttribute` to attach a custom attribute to a dynamically generated assembly.  
+ 
+[!code-cpp[AssemblyBuilder_SetCustomAttribute2#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute2/CPP/assemblybuilder_setcustomattribute2.cpp#1)]
+[!code-csharp[AssemblyBuilder_SetCustomAttribute2#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute2/CS/assemblybuilder_setcustomattribute2.cs#1)]
+[!code-vb[AssemblyBuilder_SetCustomAttribute2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyBuilder_SetCustomAttribute2/VB/assemblybuilder_setcustomattribute2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2252,12 +2252,12 @@
         <summary>Sets the entry point for this assembly and defines the type of the portable executable (PE file) being built.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2297,10 +2297,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -2331,10 +2331,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -2361,10 +2361,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -2405,10 +2405,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>

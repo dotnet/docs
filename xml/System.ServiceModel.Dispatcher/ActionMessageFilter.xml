@@ -19,20 +19,20 @@
     <summary>Represents a query that tests whether the action of a message is one of a specified set of actions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is invalid to construct an <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> with no actions.  
+It is invalid to construct an <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> with no actions.  
+ 
+This type is serializable as a <xref:System.Runtime.Serialization.DataContractAttribute>.  
+ 
   
- This type is serializable as a <xref:System.Runtime.Serialization.DataContractAttribute>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates two <xref:System.ServiceModel.Dispatcher.ActionMessageFilter>s, gets the action string out of one of the filters using the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter.Actions%2A> property, tests a message against the action filters directly, and displays the result of applying the filter.  
-  
- [!code-csharp[UEActionFilter#1](~/samples/snippets/csharp/VS_Snippets_CFX/ueactionfilter/cs/actionfilter.cs#1)]
- [!code-vb[UEActionFilter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/ueactionfilter/vb/actionfilter.vb#1)]  
-  
+The following example creates two <xref:System.ServiceModel.Dispatcher.ActionMessageFilter>s, gets the action string out of one of the filters using the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter.Actions%2A> property, tests a message against the action filters directly, and displays the result of applying the filter.  
+ 
+[!code-csharp[UEActionFilter#1](~/samples/snippets/csharp/VS_Snippets_CFX/ueactionfilter/cs/actionfilter.cs#1)]
+[!code-vb[UEActionFilter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/ueactionfilter/vb/actionfilter.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,16 +60,16 @@
         <summary>Initializes a new instance of this class with the set of actions for which it tests.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the array of `actions` provided to populate the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> contains duplicate actions, the duplicates are removed and only one of them is added to the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter>. The <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of `actions` contained in the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> is accessed by the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter.Actions%2A> property and cannot be modified after the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> object is instantiated.  
+If the array of `actions` provided to populate the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> contains duplicate actions, the duplicates are removed and only one of them is added to the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter>. The <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of `actions` contained in the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> is accessed by the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter.Actions%2A> property and cannot be modified after the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> object is instantiated.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[UEActionFilter#2](~/samples/snippets/csharp/VS_Snippets_CFX/ueactionfilter/cs/actionfilter.cs#2)]
- [!code-vb[UEActionFilter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/ueactionfilter/vb/actionfilter.vb#2)]  
-  
+[!code-csharp[UEActionFilter#2](~/samples/snippets/csharp/VS_Snippets_CFX/ueactionfilter/cs/actionfilter.cs#2)]
+[!code-vb[UEActionFilter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/ueactionfilter/vb/actionfilter.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -94,10 +94,10 @@
         <value>The <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains the action strings for which this <see cref="T:System.ServiceModel.Dispatcher.ActionMessageFilter" /> tests.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The actions in the read-only collection returned cannot be modified after the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> object is instantiated.  
-  
+The actions in the read-only collection returned cannot be modified after the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> object is instantiated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,12 +124,12 @@
         <returns>An <see cref="T:System.ServiceModel.Dispatcher.IMessageFilterTable`1" /> object to which <see cref="T:System.ServiceModel.Dispatcher.ActionMessageFilter" />s and associated <paramref name="FilterData" /> can be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method returns an instance of <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601>.  
-  
- This method is not intended to be called directly. If you require an instance of <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601>, create one by calling a constructor on the desired type of filter table. In general, <xref:System.ServiceModel.Dispatcher.ActionMessageFilter>s should be added to instances of <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601>.  
-  
+The method returns an instance of <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601>.  
+ 
+This method is not intended to be called directly. If you require an instance of <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601>, create one by calling a constructor on the desired type of filter table. In general, <xref:System.ServiceModel.Dispatcher.ActionMessageFilter>s should be added to instances of <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
           <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.Message" /> action header matches one of the specified actions; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this overload of <xref:System.ServiceModel.Dispatcher.ActionMessageFilter.Match%2A> when a message must be tested against the actions in a single filter and the <xref:System.ServiceModel.Channels.Message> is available.  
-  
+Use this overload of <xref:System.ServiceModel.Dispatcher.ActionMessageFilter.Match%2A> when a message must be tested against the actions in a single filter and the <xref:System.ServiceModel.Channels.Message> is available.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -188,10 +188,10 @@
           <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> action header matches one of the specified actions; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this overload of the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter.Match%2A> method when a message must be tested against the actions in a single filter and the <xref:System.ServiceModel.Channels.MessageBuffer> is available.  
-  
+Use this overload of the <xref:System.ServiceModel.Dispatcher.ActionMessageFilter.Match%2A> method when a message must be tested against the actions in a single filter and the <xref:System.ServiceModel.Channels.MessageBuffer> is available.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -207,12 +207,12 @@
         <summary>Tests whether a message or a buffered message matches one of the actions configured for the filter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The difference between the two overloads is that one takes a <xref:System.ServiceModel.Channels.Message> parameter and cannot examine the message body; the other takes a <xref:System.ServiceModel.Channels.MessageBuffer> parameter and can examine any part of the message.  Because an action filter does not examine the body, these methods are equivalent.  
-  
- If you must check the message against multiple <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> objects, put the filters into an <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601> and then use the matching functionality provided by the table.  
-  
+The difference between the two overloads is that one takes a <xref:System.ServiceModel.Channels.Message> parameter and cannot examine the message body; the other takes a <xref:System.ServiceModel.Channels.MessageBuffer> parameter and can examine any part of the message.  Because an action filter does not examine the body, these methods are equivalent.  
+ 
+If you must check the message against multiple <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> objects, put the filters into an <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601> and then use the matching functionality provided by the table.  
+ 
  ]]></format>
         </remarks>
       </Docs>

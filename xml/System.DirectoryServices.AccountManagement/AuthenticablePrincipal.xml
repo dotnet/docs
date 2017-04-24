@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> class by using the specified context. This constructor is called by derived-class constructors to initialize the base class and is not intended for use directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
-  
+Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> class by using the specified context, SAM account name, password, and enabled value. This constructor is called by derived-class constructors to initialize the base class and is not intended for use directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
-  
+Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,12 +96,12 @@
         <value>A <see cref="T:System.DateTime" /> that specifies the date and time that the account expires, or null if the account never expires.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
-  
- When you set the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate%2A>, the time will default to UTC.  If you want to write in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:DateTimeKind.Local>.  
-  
+As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+ 
+When you set the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate%2A>, the time will default to UTC.  If you want to write in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:DateTimeKind.Local>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
@@ -124,14 +124,14 @@
         <value>A <see cref="T:System.DateTime" /> that specifies the date and time that the account was locked out, or null if no lockout time is set on the account.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The account lockout time is system dependent, and cannot be set by the Account Management API. To unlock the account, use the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.UnlockAccount%2A> method.  
-  
- It is possible that an account may not be locked out when the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime%2A> returns a non-null value. Applications should use the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.IsAccountLockedOut%2A> method to determine whether the account is locked out.  
-  
- As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
-  
+The account lockout time is system dependent, and cannot be set by the Account Management API. To unlock the account, use the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.UnlockAccount%2A> method.  
+ 
+It is possible that an account may not be locked out when the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime%2A> returns a non-null value. Applications should use the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.IsAccountLockedOut%2A> method to determine whether the account is locked out.  
+ 
+As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
@@ -154,10 +154,10 @@
         <value>An <see cref="T:System.DirectoryServices.AccountManagement.AdvancedSearchFilter" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) documentation for examples.  
-  
+See the [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) documentation for examples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <summary>Changes the account password from the old password to the new password. Do not use this with a <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended for computer principals. Calling this with a <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> will cause a <xref:System.NotSupportedException> to be thrown.  
-  
+This method is not intended for computer principals. Calling this with a <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> will cause a <xref:System.NotSupportedException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The principal has not been persisted.</exception>
@@ -291,10 +291,10 @@
           <see langword="true" /> if the principal is enabled, or null if the account has not been persisted; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the principal has not been persisted in the store, this property returns null. After the principal is persisted, the default enabled setting depends on the store. The AD DS and AD LDS stores disable new principals when they are persisted, whereas SAM enables new principals when they are persisted. The application can only set this property to a value after it has been persisted in the store.  
-  
+If the principal has not been persisted in the store, this property returns null. After the principal is persisted, the default enabled setting depends on the store. The AD DS and AD LDS stores disable new principals when they are persisted, whereas SAM enables new principals when they are persisted. The application can only set this property to a value after it has been persisted in the store.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
@@ -318,10 +318,10 @@
         <summary>Expires the password for this account. This will force the user to change his/her password at the next logon.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to force the user to change the password at the next logon.  
-  
+Call this method to force the user to change the password at the next logon.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
@@ -352,10 +352,10 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
+The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,10 +389,10 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,10 +422,10 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,10 +459,10 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,10 +492,10 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -529,10 +529,10 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -562,39 +562,39 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code connects to the ADAM instance hosted by the server "adamHost1.fabrikam.com" on port number "5000." The username (adamAdmin), and password (SecretPwd123) are specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
-  
- A search is performed for all authenticable principals under the container "DC=adamApp1,DC=fabrikam,DC=com" that have not logged on to this ADAM instance for the last 45 days. The principals returned by the search are then deleted.  
-  
+The following code connects to the ADAM instance hosted by the server "adamHost1.fabrikam.com" on port number "5000." The username (adamAdmin), and password (SecretPwd123) are specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
+ 
+A search is performed for all authenticable principals under the container "DC=adamApp1,DC=fabrikam,DC=com" that have not logged on to this ADAM instance for the last 45 days. The principals returned by the search are then deleted.  
+ 
 ```  
 PrincipalContext ctx = new PrincipalContext(  
-                                      ContextType.ApplicationDirectory,   
-                                      "adamHost1.fabrikam.com:5000",   
-                                      "DC=adamApp1,DC=fabrikam,DC=com",   
-                                      "adamAdmin", "SecretPwd123");  
-  
+                                     ContextType.ApplicationDirectory,   
+                                     "adamHost1.fabrikam.com:5000",   
+                                     "DC=adamApp1,DC=fabrikam,DC=com",   
+                                     "adamAdmin", "SecretPwd123");  
+ 
 PrincipalSearchResult<AuthenticablePrincipal> oldPrincipals =   
-                     AuthenticablePrincipal.FindByLogonTime(ctx,   
-                            (DateTime.Now - new TimeSpan(45, 0, 0, 0)),   
-                            MatchType.LessThan);  
-  
+                    AuthenticablePrincipal.FindByLogonTime(ctx,   
+                           (DateTime.Now - new TimeSpan(45, 0, 0, 0)),   
+                           MatchType.LessThan);  
+ 
 foreach (Principal p in oldPrincipals)  
 {  
-    p.Delete();  
+   p.Delete();  
 }  
-  
+ 
 oldPrincipals.Dispose();  
 ctx.Dispose();  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -628,10 +628,10 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -661,10 +661,10 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -698,10 +698,10 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -763,10 +763,10 @@ ctx.Dispose();
           <see langword="true" /> if the account is locked out; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is possible that an account may not be locked out when the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime%2A> returns a non-null value. This method computes the correct store-specific lockout value to determine whether the account is locked out.  
-  
+It is possible that an account may not be locked out when the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime%2A> returns a non-null value. This method computes the correct store-specific lockout value to determine whether the account is locked out.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -788,10 +788,10 @@ ctx.Dispose();
         <value>A Nullable <see cref="T:System.DateTime" /> that specifies the date and time of the last incorrect password attempt on this account, or null if no incorrect password tries are recorded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
-  
+As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
@@ -814,10 +814,10 @@ ctx.Dispose();
         <value>A Nullable <see cref="T:System.DateTime" /> that specifies the date and time of the last logon for this account.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
-  
+As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
@@ -840,10 +840,10 @@ ctx.Dispose();
         <value>A Nullable <see cref="T:System.DateTime" /> that specifies the last date and time that the password was set for this account.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
-  
+As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
@@ -1024,30 +1024,30 @@ ctx.Dispose();
         <summary>Unlocks the account if it is currently locked out.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example code connects to the LDAP domain "fabrikam.com" with the username (administrator) and password (SecretPwd123) initialized in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
-  
- A search is performed to find the user with name "John Smith" under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  If the user is found, a check is performed to determine whether this user's account has been locked out. If the account has been locked out, the code example unlocks the account.  
-  
+The following example code connects to the LDAP domain "fabrikam.com" with the username (administrator) and password (SecretPwd123) initialized in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
+ 
+A search is performed to find the user with name "John Smith" under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  If the user is found, a check is performed to determine whether this user's account has been locked out. If the account has been locked out, the code example unlocks the account.  
+ 
 ```  
 PrincipalContext ctx = new PrincipalContext(ContextType.Domain,   
-                                         "fabrikam.com",   
-                                         "CN=Users,DC=fabrikam,DC=com",   
-                                         "administrator",   
-                                         "SecretPwd123");  
-  
+                                        "fabrikam.com",   
+                                        "CN=Users,DC=fabrikam,DC=com",   
+                                        "administrator",   
+                                        "SecretPwd123");  
+ 
 UserPrincipal usr = UserPrincipal.FindByIdentity(ctx, "John Smith");  
 if (usr != null)  
 {  
-    if (usr.IsAccountLockedOut())  
-        usr.UnlockAccount();  
-  
-    usr.Dispose();  
+   if (usr.IsAccountLockedOut())  
+       usr.UnlockAccount();  
+ 
+   usr.Dispose();  
 }  
 ctx.Dispose();   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
@@ -1071,10 +1071,10 @@ ctx.Dispose();
           <see langword="true" /> if the user is not permitted to change the password; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended for computer principals. Calling this with a <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> will cause a <xref:System.NotSupportedException> to be thrown.  
-  
+This method is not intended for computer principals. Calling this with a <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> will cause a <xref:System.NotSupportedException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
@@ -1090,10 +1090,10 @@ ctx.Dispose();
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> class. This constructor is called by derived-class constructors to initialize the base class and is not intended for use directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
-  
+Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ 
  ]]></format>
         </remarks>
       </Docs>

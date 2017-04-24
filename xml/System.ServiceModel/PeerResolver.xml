@@ -14,10 +14,10 @@
     <summary>Specifies a base type used to define the contract for the registration and resolution of a peer mesh ID to the endpoint addresses of nodes participating in the mesh.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is the base class for the implementation of custom peer name resolvers. A peer name resolver is a discovery service used by peer channels to find peer nodes participating in a peer mesh. It is also used to "register" a node with a peer mesh, the mechanism by which the peer node becomes known and available from the peer mesh.  
-  
+This class is the base class for the implementation of custom peer name resolvers. A peer name resolver is a discovery service used by peer channels to find peer nodes participating in a peer mesh. It is also used to "register" a node with a peer mesh, the mechanism by which the peer node becomes known and available from the peer mesh.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,10 +85,10 @@
         <summary>Initializes the current peer resolver instance with the new supplied endpoint address and settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method simply initializes the existing peer resolver instance; it does not create a new one. To create a new peer resolver, call the CreatePeerResolver method on the corresponding binding element (for example, <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>).  
-  
+This method simply initializes the existing peer resolver instance; it does not create a new one. To create a new peer resolver, call the CreatePeerResolver method on the corresponding binding element (for example, <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,16 +167,16 @@
         <summary>Removes the registration entry for a node from a peer mesh.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A registration ID is a peer resolver token, that, at the very minimum, represents the tuple of a peer node ID and the mesh ID. This ID value must have been obtained in a previous call to <xref:System.ServiceModel.PeerResolver.Register%2A>.  
-  
- <xref:System.ServiceModel.PeerResolver.Unregister%2A> is called in two specific cases:  
-  
+A registration ID is a peer resolver token, that, at the very minimum, represents the tuple of a peer node ID and the mesh ID. This ID value must have been obtained in a previous call to <xref:System.ServiceModel.PeerResolver.Register%2A>.  
+ 
+<xref:System.ServiceModel.PeerResolver.Unregister%2A> is called in two specific cases:  
+ 
 -   When the <xref:System.ServiceModel.PeerNode> is leaving the peer mesh (usually as the result of closing the last peer channel or service host that is associated with it).  
-  
+ 
 -   When the <xref:System.ServiceModel.PeerNode> can find no available endpoint addresses of other nodes participating in the peer mesh. As a result, the <xref:System.ServiceModel.PeerNode> is no longer reachable, and it will attempt to call <xref:System.ServiceModel.PeerResolver.Unregister%2A> to unregister itself from the <xref:System.ServiceModel.PeerResolver>. If other peer nodes within the mesh become available subsequent to unregistration, the node can re-register itself by calling <xref:System.ServiceModel.PeerResolver.Register%2A> and obtaining a new registration ID.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,10 +205,10 @@
         <summary>Updates the <see cref="T:System.ServiceModel.PeerNodeAddress" /> for a node registered with a specific peer mesh.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.PeerResolver.Update%2A> is called when the address of the <xref:System.ServiceModel.PeerNode> changes on the local machine.  
-  
+<xref:System.ServiceModel.PeerResolver.Update%2A> is called when the address of the <xref:System.ServiceModel.PeerNode> changes on the local machine.  
+ 
  ]]></format>
         </remarks>
       </Docs>

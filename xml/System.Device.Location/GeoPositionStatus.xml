@@ -13,13 +13,13 @@
     <summary>Indicates the ability of the location provider to provide location updates.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to handle <xref:System.Device.Location.GeoCoordinateWatcher.StatusChanged> events and print out the current <xref:System.Device.Location.GeoPositionStatus>.  
-  
- [!code-csharp[System.Device.Location.ShowStatusUpdates#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.showstatusupdates/cs/showstatusupdates.cs#1)]
- [!code-vb[System.Device.Location.ShowStatusUpdates#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.showstatusupdates/vb/ShowStatusUpdates.vb#1)]  
-  
+The following example shows how to handle <xref:System.Device.Location.GeoCoordinateWatcher.StatusChanged> events and print out the current <xref:System.Device.Location.GeoPositionStatus>.  
+ 
+[!code-csharp[System.Device.Location.ShowStatusUpdates#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.showstatusupdates/cs/showstatusupdates.cs#1)]
+[!code-vb[System.Device.Location.ShowStatusUpdates#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.showstatusupdates/vb/ShowStatusUpdates.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <summary>No location data is available from any location provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the conditions for Disabled do not apply, <xref:System.Device.Location.GeoCoordinateWatcher> has this status before it has been started and after it has been stopped.  
-  
+If the conditions for Disabled do not apply, <xref:System.Device.Location.GeoCoordinateWatcher> has this status before it has been started and after it has been stopped.  
+ 
  ]]></format>
         </remarks>
       </Docs>

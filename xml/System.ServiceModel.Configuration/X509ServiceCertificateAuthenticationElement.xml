@@ -102,10 +102,10 @@
         <value>The type of <see cref="T:System.IdentityModel.Selectors.X509CertificateValidator" /> to be used.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a default service certificate validator that verifies the service certificate against the trusted people store. It also verifies that the certificate chains up to a valid root. You can implement a custom validator to specify a different behavior and use this property to point to the custom validator.  
-  
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a default service certificate validator that verifies the service certificate against the trusted people store. It also verifies that the certificate chains up to a valid root. You can implement a custom validator to specify a different behavior and use this property to point to the custom validator.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <value>The certificate revocation mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system verifies that the service certificate has not been revoked by looking it up in the revoked certificate list. This check can be performed either by checking online or against a cached revocation list. Revocation checking can be turned off by setting this property to <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>.  
-  
+The system verifies that the service certificate has not been revoked by looking it up in the revoked certificate list. This check can be performed either by checking online or against a cached revocation list. Revocation checking can be turned off by setting this property to <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <value>The trusted store location where the service certificate is validated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security system validates the service certificate against a <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The store location is specified using this property.  
-  
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] security system validates the service certificate against a <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The store location is specified using this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

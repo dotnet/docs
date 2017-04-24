@@ -20,25 +20,25 @@
     <summary>Sets the default format of SOAP requests and responses sent to and from XML Web service methods within the XML Web service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> allows you to set the default encoding style for XML Web service methods within an XML Web service to `RPC` method encoding and <xref:System.Web.Services.Description.SoapBindingUse> parameter encoding.  
+The <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> allows you to set the default encoding style for XML Web service methods within an XML Web service to `RPC` method encoding and <xref:System.Web.Services.Description.SoapBindingUse> parameter encoding.  
+ 
+Web Services Description Language (WSDL) defines two styles for how an XML Web service method, or operation, can be encoded in a SOAP request or a SOAP response: `RPC` and `Document`. The `RPC` style refers to encoding the XML Web service method according to section 7 of the SOAP specification for using SOAP for RPC. This style specifies that all parameters are encapsulated within a single element named after the XML Web service method, and that each element within that element represents a parameter named after its respective parameter name.  
+ 
+To set the default method level encoding to `Document`, apply a <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> to the class implementing the XML Web service.  
+ 
+For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
+ 
+This attribute can be applied to a class implementing an XML Web service.  
+ 
   
- Web Services Description Language (WSDL) defines two styles for how an XML Web service method, or operation, can be encoded in a SOAP request or a SOAP response: `RPC` and `Document`. The `RPC` style refers to encoding the XML Web service method according to section 7 of the SOAP specification for using SOAP for RPC. This style specifies that all parameters are encapsulated within a single element named after the XML Web service method, and that each element within that element represents a parameter named after its respective parameter name.  
-  
- To set the default method level encoding to `Document`, apply a <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> to the class implementing the XML Web service.  
-  
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
-  
- This attribute can be applied to a class implementing an XML Web service.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> class.  
-  
-  
-  
+The following example shows how to use the <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> class.  
+ 
+ 
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,12 +58,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapRpcServiceAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an instance of the <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> class.  
-  
-  
-  
+The following example shows how to create an instance of the <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> class.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <value>A member of the <see cref="T:System.Web.Services.Description.SoapBindingUse" /> enumeration specifying the binding used when invoking the Web service's methods.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property is <xref:System.Web.Services.Description.SoapBindingUse>.  
-  
+The default value of this property is <xref:System.Web.Services.Description.SoapBindingUse>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

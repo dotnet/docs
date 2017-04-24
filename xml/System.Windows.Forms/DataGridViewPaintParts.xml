@@ -18,18 +18,18 @@
     <summary>Defines values for specifying the parts of a <see cref="T:System.Windows.Forms.DataGridViewCell" /> that are to be painted.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by the protected <xref:System.Windows.Forms.DataGridViewCell.Paint%2A?displayProperty=fullName> method and by handlers for the <xref:System.Windows.Forms.DataGridView.CellPainting>, <xref:System.Windows.Forms.DataGridView.RowPrePaint>, and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events of the <xref:System.Windows.Forms.DataGridView> control.  
+This enumeration is used by the protected <xref:System.Windows.Forms.DataGridViewCell.Paint%2A?displayProperty=fullName> method and by handlers for the <xref:System.Windows.Forms.DataGridView.CellPainting>, <xref:System.Windows.Forms.DataGridView.RowPrePaint>, and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events of the <xref:System.Windows.Forms.DataGridView> control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this type. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
- [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
-  
+The following code example illustrates the use of this type. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
+[!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

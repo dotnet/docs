@@ -15,14 +15,14 @@
     <summary>Represents the content of a SOAP header.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message header contains optional metadata that describe a message encapsulated by the <xref:System.ServiceModel.Channels.Message> class.  
-  
- A <xref:System.ServiceModel.Channels.Message> can have zero or more headers that are used as an extension mechanism to pass information in messages that are application-specific. You can use <xref:System.ServiceModel.Channels.Message.Headers%2A> to add message headers to a message by calling the <xref:System.ServiceModel.Channels.MessageHeaders.Add%2A> method.  
-  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a number of predefined message headers, as shown in the following table.  
-  
+A message header contains optional metadata that describe a message encapsulated by the <xref:System.ServiceModel.Channels.Message> class.  
+ 
+A <xref:System.ServiceModel.Channels.Message> can have zero or more headers that are used as an extension mechanism to pass information in messages that are application-specific. You can use <xref:System.ServiceModel.Channels.Message.Headers%2A> to add message headers to a message by calling the <xref:System.ServiceModel.Channels.MessageHeaders.Add%2A> method.  
+ 
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a number of predefined message headers, as shown in the following table.  
+ 
 |Header Name|Description|  
 |-----------------|-----------------|  
 |To|Contains the role that the message is targeting.|  
@@ -33,7 +33,7 @@
 |MessageID|Contains the unique ID of the message.|  
 |RelatesTo|Contains the IDs of messages that are related to this message.|  
 |ReplyTo|Contains the address of the node to which a reply should be sent for a request.|  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <value>The targeted recipient of the message header. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is empty, the header is interpreted as targeted for the ultimate recipient of the message.  
-  
+If this property is empty, the header is interpreted as targeted for the ultimate recipient of the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -371,10 +371,10 @@
           <see langword="true" /> if this message header contains reference parameters of an endpoint reference; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A reference parameter corresponds to the <`ReferenceParameters`> element described in the in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkID=96163).  
-  
+A reference parameter corresponds to the <`ReferenceParameters`> element described in the in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkID=96163).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
           <see langword="true" /> if the header must be understood; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `true` and the message receiver cannot interpret the message header, the message is not processed and an exception is thrown. If this property is `false`, the receiver can ignore the message header and continue processing.  
-  
+If this property is `true` and the message receiver cannot interpret the message header, the message is not processed and an exception is thrown. If this property is `false`, the receiver can ignore the message header and continue processing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,10 +473,10 @@
           <see langword="true" /> if the header should be relayed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- According to SOAP 1.1 spec, this value is always `false`.  
-  
+According to SOAP 1.1 spec, this value is always `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

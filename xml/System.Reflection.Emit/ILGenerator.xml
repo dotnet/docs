@@ -34,12 +34,12 @@
     <summary>Generates Microsoft intermediate language (MSIL) instructions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Reflection.Emit.ILGenerator> is used to generate method bodies for methods and constructors in dynamic assemblies (represented by the <xref:System.Reflection.Emit.MethodBuilder> and <xref:System.Reflection.Emit.ConstructorBuilder> classes) and for standalone dynamic methods (represented by the <xref:System.Reflection.Emit.DynamicMethod> class). To obtain an <xref:System.Reflection.Emit.ILGenerator>, use the <xref:System.Reflection.Emit.ConstructorBuilder.GetILGenerator%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.DynamicMethod.GetILGenerator%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.MethodBuilder.GetILGenerator%2A?displayProperty=fullName> methods.  
-  
- MSIL is used as input to a just-in-time (JIT) compiler.  
-  
+<xref:System.Reflection.Emit.ILGenerator> is used to generate method bodies for methods and constructors in dynamic assemblies (represented by the <xref:System.Reflection.Emit.MethodBuilder> and <xref:System.Reflection.Emit.ConstructorBuilder> classes) and for standalone dynamic methods (represented by the <xref:System.Reflection.Emit.DynamicMethod> class). To obtain an <xref:System.Reflection.Emit.ILGenerator>, use the <xref:System.Reflection.Emit.ConstructorBuilder.GetILGenerator%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.DynamicMethod.GetILGenerator%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.MethodBuilder.GetILGenerator%2A?displayProperty=fullName> methods.  
+ 
+MSIL is used as input to a just-in-time (JIT) compiler.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,22 +69,22 @@
         <summary>Begins a catch block.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Emits a branch instruction to the end of the current exception block.  
-  
+Emits a branch instruction to the end of the current exception block.  
+ 
 > [!NOTE]
 >  If the filter exception block returns the `constant exception_execute_handler` (see the documentation for the Common Language Infrastructure Instruction Set), the argument to the `BeginCatchBlock` is not checked.  
+ 
   
-   
-  
+ 
 ## Examples  
- The code sample below demonstrates the contextual usage of the `BeginCatchBlock` method.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
-  
+The code sample below demonstrates the contextual usage of the `BeginCatchBlock` method.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The catch block is within a filtered exception.</exception>
@@ -115,12 +115,12 @@
         <summary>Begins an exception block for a filtered exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Emits a branch instruction to the end of the current exception block.  
-  
- If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, emitting filtered exception blocks is not supported. <xref:System.Reflection.Emit.DynamicILInfo> can be used to construct a dynamic method that uses filtered exception blocks.  
-  
+Emits a branch instruction to the end of the current exception block.  
+ 
+If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, emitting filtered exception blocks is not supported. <xref:System.Reflection.Emit.DynamicILInfo> can be used to construct a dynamic method that uses filtered exception blocks.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The Microsoft intermediate language (MSIL) being generated is not currently in an exception block.  
@@ -153,19 +153,19 @@
         <returns>The label for the end of the block. This will leave you in the correct place to execute finally blocks or to finish the try.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creating an exception block records some information, but does not actually emit any Microsoft intermediate language (MSIL) onto the stream.  
+Creating an exception block records some information, but does not actually emit any Microsoft intermediate language (MSIL) onto the stream.  
+ 
   
-   
-  
+ 
 ## Examples  
- The code sample below demonstrates the contextual usage of the `BeginExceptionBlock` method.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
-  
+The code sample below demonstrates the contextual usage of the `BeginExceptionBlock` method.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,19 +192,19 @@
         <summary>Begins an exception fault block in the Microsoft intermediate language (MSIL) stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, emitting exception fault blocks is not supported. <xref:System.Reflection.Emit.DynamicILInfo> can be used to construct a dynamic method that uses exception fault blocks.  
+If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, emitting exception fault blocks is not supported. <xref:System.Reflection.Emit.DynamicILInfo> can be used to construct a dynamic method that uses exception fault blocks.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `BeginFaultBlock`.  
-  
- [!code-cpp[ILGenerator_BeginFaultBlock#1](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_BeginFaultBlock/CPP/ilgenerator_beginfaultblock.cpp#1)]
- [!code-csharp[ILGenerator_BeginFaultBlock#1](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_BeginFaultBlock/CS/ilgenerator_beginfaultblock.cs#1)]
- [!code-vb[ILGenerator_BeginFaultBlock#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_BeginFaultBlock/VB/ilgenerator_beginfaultblock.vb#1)]  
-  
+The following code sample illustrates the use of `BeginFaultBlock`.  
+ 
+[!code-cpp[ILGenerator_BeginFaultBlock#1](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_BeginFaultBlock/CPP/ilgenerator_beginfaultblock.cpp#1)]
+[!code-csharp[ILGenerator_BeginFaultBlock#1](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_BeginFaultBlock/CS/ilgenerator_beginfaultblock.cs#1)]
+[!code-vb[ILGenerator_BeginFaultBlock#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_BeginFaultBlock/VB/ilgenerator_beginfaultblock.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The MSIL being generated is not currently in an exception block.  
@@ -236,14 +236,14 @@
         <summary>Begins a finally block in the Microsoft intermediate language (MSIL) instruction stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `BeginFinallyBlock`.  
-  
- [!code-cpp[ILGenerator_BeginFinallyBlock_2#2](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_BeginFinallyBlock_2/CPP/ILGenerator_BeginFinallyBlock_2.cpp#2)]
- [!code-csharp[ILGenerator_BeginFinallyBlock_2#2](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_BeginFinallyBlock_2/CS/ilgenerator_beginfinallyblock_2.cs#2)]
- [!code-vb[ILGenerator_BeginFinallyBlock_2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_BeginFinallyBlock_2/VB/ilgenerator_beginfinallyblock_2.vb#2)]  
-  
+The following code sample illustrates the use of `BeginFinallyBlock`.  
+ 
+[!code-cpp[ILGenerator_BeginFinallyBlock_2#2](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_BeginFinallyBlock_2/CPP/ILGenerator_BeginFinallyBlock_2.cpp#2)]
+[!code-csharp[ILGenerator_BeginFinallyBlock_2#2](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_BeginFinallyBlock_2/CS/ilgenerator_beginfinallyblock_2.cs#2)]
+[!code-vb[ILGenerator_BeginFinallyBlock_2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_BeginFinallyBlock_2/VB/ilgenerator_beginfinallyblock_2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The MSIL being generated is not currently in an exception block.</exception>
@@ -271,21 +271,21 @@
         <summary>Begins a lexical scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to emit symbolic information. Local variables declared after <xref:System.Reflection.Emit.ILGenerator.BeginScope%2A> are scoped until the corresponding <xref:System.Reflection.Emit.ILGenerator.EndScope%2A> is called.  
+This method is used to emit symbolic information. Local variables declared after <xref:System.Reflection.Emit.ILGenerator.BeginScope%2A> are scoped until the corresponding <xref:System.Reflection.Emit.ILGenerator.EndScope%2A> is called.  
+ 
+If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, it does not support symbolic information.  
+ 
   
- If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, it does not support symbolic information.  
-  
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `BeginScope` and `EndScope`.  
-  
- [!code-cpp[ILGenerator_Begin_EndScope#2](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CPP/ilgenerator_begin_endscope.cpp#2)]
- [!code-csharp[ILGenerator_Begin_EndScope#2](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CS/ilgenerator_begin_endscope.cs#2)]
- [!code-vb[ILGenerator_Begin_EndScope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_Begin_EndScope/VB/ilgenerator_begin_endscope.vb#2)]  
-  
+The following code sample illustrates the use of `BeginScope` and `EndScope`.  
+ 
+[!code-cpp[ILGenerator_Begin_EndScope#2](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CPP/ilgenerator_begin_endscope.cpp#2)]
+[!code-csharp[ILGenerator_Begin_EndScope#2](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CS/ilgenerator_begin_endscope.cs#2)]
+[!code-vb[ILGenerator_Begin_EndScope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_Begin_EndScope/VB/ilgenerator_begin_endscope.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
@@ -317,21 +317,21 @@
         <returns>The declared local variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The local variable is created in the current lexical scope; for example, if code is being emitted in a `for` loop (`For` loop in Visual Basic), the scope of the variable is the loop.  
+The local variable is created in the current lexical scope; for example, if code is being emitted in a `for` loop (`For` loop in Visual Basic), the scope of the variable is the loop.  
+ 
+A local variable created with this overload is not pinned. To create a pinned variable for use with unmanaged pointers, use the <xref:System.Reflection.Emit.ILGenerator.DeclareLocal%28System.Type%2CSystem.Boolean%29> method overload.  
+ 
   
- A local variable created with this overload is not pinned. To create a pinned variable for use with unmanaged pointers, use the <xref:System.Reflection.Emit.ILGenerator.DeclareLocal%28System.Type%2CSystem.Boolean%29> method overload.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the `DeclareLocal` method. This code is part of a larger code example for the <xref:System.Reflection.Emit.LocalBuilder> class.  
-  
- [!code-cpp[LocalBuilder_Sample_SetLocalSymInfo#2](~/samples/snippets/cpp/VS_Snippets_CLR/LocalBuilder_Sample_SetLocalSymInfo/CPP/localbuilder_sample_4.cpp#2)]
- [!code-csharp[LocalBuilder_Sample_SetLocalSymInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR/LocalBuilder_Sample_SetLocalSymInfo/CS/localbuilder_sample_4.cs#2)]
- [!code-vb[LocalBuilder_Sample_SetLocalSymInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/LocalBuilder_Sample_SetLocalSymInfo/VB/localbuilder_sample_4.vb#2)]  
-  
+The following code example demonstrates the use of the `DeclareLocal` method. This code is part of a larger code example for the <xref:System.Reflection.Emit.LocalBuilder> class.  
+ 
+[!code-cpp[LocalBuilder_Sample_SetLocalSymInfo#2](~/samples/snippets/cpp/VS_Snippets_CLR/LocalBuilder_Sample_SetLocalSymInfo/CPP/localbuilder_sample_4.cpp#2)]
+[!code-csharp[LocalBuilder_Sample_SetLocalSymInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR/LocalBuilder_Sample_SetLocalSymInfo/CS/localbuilder_sample_4.cs#2)]
+[!code-vb[LocalBuilder_Sample_SetLocalSymInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/LocalBuilder_Sample_SetLocalSymInfo/VB/localbuilder_sample_4.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -368,12 +368,12 @@
         <returns>A <see cref="T:System.Reflection.Emit.LocalBuilder" /> object that represents the local variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The local variable is created in the current lexical scope; for example, if code is being emitted in a `for` loop (`For` loop in Visual Basic), the scope of the variable is the loop.  
-  
- In unsafe code, an object must be pinned before it can be referred to by an unmanaged pointer. While the referenced object is pinned, it cannot be moved by garbage collection.  
-  
+The local variable is created in the current lexical scope; for example, if code is being emitted in a `for` loop (`For` loop in Visual Basic), the scope of the variable is the loop.  
+ 
+In unsafe code, an object must be pinned before it can be referred to by an unmanaged pointer. While the referenced object is pinned, it cannot be moved by garbage collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -409,21 +409,21 @@
         <returns>Returns a new label that can be used as a token for branching.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set the position of the label within the stream, you must call <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>.  
+To set the position of the label within the stream, you must call <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>.  
+ 
+This is just a token and does not yet represent any particular location within the stream.  
+ 
   
- This is just a token and does not yet represent any particular location within the stream.  
-  
-   
-  
+ 
 ## Examples  
- The code sample below demonstrates the contextual usage of the `DefineLabel` method.  
-  
- [!code-cpp[System.Reflection.Emit.Label Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.Label Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.Label Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.Label Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.Label Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.Label Example/VB/source.vb#1)]  
-  
+The code sample below demonstrates the contextual usage of the `DefineLabel` method.  
+ 
+[!code-cpp[System.Reflection.Emit.Label Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.Label Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.Label Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.Label Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.Label Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.Label Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,21 +453,21 @@
         <summary>Puts the specified instruction onto the stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `opcode` parameter requires an argument, the caller must ensure that the argument length matches the length of the declared parameter. Otherwise, results will be unpredictable. For example, if the Emit instruction requires a 2-byte operand and the caller supplies a 4-byte operand, the runtime will emit two additional bytes to the instruction stream. These extra bytes will be <xref:System.Reflection.Emit.OpCodes.Nop> instructions.  
+If the `opcode` parameter requires an argument, the caller must ensure that the argument length matches the length of the declared parameter. Otherwise, results will be unpredictable. For example, if the Emit instruction requires a 2-byte operand and the caller supplies a 4-byte operand, the runtime will emit two additional bytes to the instruction stream. These extra bytes will be <xref:System.Reflection.Emit.OpCodes.Nop> instructions.  
+ 
+The instruction values are defined in <xref:System.Reflection.Emit.OpCodes>.  
+ 
   
- The instruction values are defined in <xref:System.Reflection.Emit.OpCodes>.  
-  
-   
-  
+ 
 ## Examples  
- The code sample below demonstrates the use of `Emit` to generate MSIL output via an instance of <xref:System.Reflection.Emit.ILGenerator>.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
-  
+The code sample below demonstrates the use of `Emit` to generate MSIL output via an instance of <xref:System.Reflection.Emit.ILGenerator>.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -499,10 +499,10 @@
         <summary>Puts the specified instruction and character argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -534,10 +534,10 @@
         <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -569,10 +569,10 @@
         <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,10 +604,10 @@
         <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -639,10 +639,10 @@
         <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -679,12 +679,12 @@
         <summary>Puts the specified instruction and metadata token for the specified constructor onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
- The location of `con` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
+The location of `con` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -718,21 +718,21 @@
         <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream and leaves space to include a label when fixes are done.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
+Labels are created using <xref:System.Reflection.Emit.ILGenerator.DefineLabel%2A>, and their location within the stream is fixed by using <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>. If a single-byte instruction is used, the label can represent a jump of at most 127 bytes along the stream. `opcode` must represent a branch instruction. Because branches are relative instructions, `label` will be replaced with the correct offset to branch during the fixup process.  
+ 
   
- Labels are created using <xref:System.Reflection.Emit.ILGenerator.DefineLabel%2A>, and their location within the stream is fixed by using <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>. If a single-byte instruction is used, the label can represent a jump of at most 127 bytes along the stream. `opcode` must represent a branch instruction. Because branches are relative instructions, `label` will be replaced with the correct offset to branch during the fixup process.  
-  
-   
-  
+ 
 ## Examples  
- The code sample below illustrates the creation of a dynamic method with a jump table. The jump table is built using an array of <xref:System.Reflection.Emit.Label>.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
-  
+The code sample below illustrates the creation of a dynamic method with a jump table. The jump table is built using an array of <xref:System.Reflection.Emit.Label>.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -764,23 +764,23 @@
         <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream and leaves space to include a label when fixes are done.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Emits a switch table.  
+Emits a switch table.  
+ 
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
+Labels are created using <xref:System.Reflection.Emit.ILGenerator.DefineLabel%2A> and their location within the stream is fixed by using <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>. If a single-byte instruction is used, the label can represent a jump of at most 127 bytes along the stream. `opcode` must represent a branch instruction. Because branches are relative instructions, `label` will be replaced with the correct offset to branch during the fixup process.  
+ 
   
- The instruction values are defined in the `OpCodes` enumeration.  
-  
- Labels are created using <xref:System.Reflection.Emit.ILGenerator.DefineLabel%2A> and their location within the stream is fixed by using <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>. If a single-byte instruction is used, the label can represent a jump of at most 127 bytes along the stream. `opcode` must represent a branch instruction. Because branches are relative instructions, `label` will be replaced with the correct offset to branch during the fixup process.  
-  
-   
-  
+ 
 ## Examples  
- The code sample below illustrates the creation of a dynamic method with a jump table. The jump table is built using an array of <xref:System.Reflection.Emit.Label>.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
-  
+The code sample below illustrates the creation of a dynamic method with a jump table. The jump table is built using an array of <xref:System.Reflection.Emit.Label>.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -814,10 +814,10 @@
         <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the index of the given local variable.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The parent method of the <paramref name="local" /> parameter does not match the method associated with this <see cref="T:System.Reflection.Emit.ILGenerator" />.</exception>
@@ -854,10 +854,10 @@
         <summary>Puts the specified instruction and a signature token onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -891,10 +891,10 @@
         <summary>Puts the specified instruction and metadata token for the specified field onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration. The location of `field` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
-  
+The instruction values are defined in the `OpCodes` enumeration. The location of `field` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -926,14 +926,14 @@
         <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the metadata token for the given method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
- The location of `meth` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
-  
- If `meth` represents a generic method, it must be a generic method definition. That is, its <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A?displayProperty=fullName> property must be `true`.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
+The location of `meth` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
+ 
+If `meth` represents a generic method, it must be a generic method definition. That is, its <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A?displayProperty=fullName> property must be `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -974,10 +974,10 @@
         <summary>Puts the specified instruction and character argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,10 +1009,10 @@
         <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration.  
-  
+The instruction values are defined in the `OpCodes` enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1044,10 +1044,10 @@
         <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the metadata token for the given string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration. The location of `str` is recorded for future fixups if the module is persisted to a portable executable (PE) file.  
-  
+The instruction values are defined in the `OpCodes` enumeration. The location of `str` is recorded for future fixups if the module is persisted to a portable executable (PE) file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1079,10 +1079,10 @@
         <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the metadata token for the given type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instruction values are defined in the `OpCodes` enumeration. The location of `cls` is recorded so that the token can be patched if necessary when persisting the module to a portable executable (PE) file.  
-  
+The instruction values are defined in the `OpCodes` enumeration. The location of `cls` is recorded so that the token can be patched if necessary when persisting the module to a portable executable (PE) file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1118,24 +1118,24 @@
         <summary>Puts a <see langword="call" /> or <see langword="callvirt" /> instruction onto the Microsoft intermediate language (MSIL) stream to call a <see langword="varargs" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.Emit.ILGenerator.EmitCall%2A> method is used to emit calls to `varargs` methods because there is no overload of the <xref:System.Reflection.Emit.ILGenerator.Emit%2A> method that specifies the parameter types of the variable arguments.  
-  
- To emit calls to methods that do not use the <xref:System.Reflection.CallingConventions> calling convention, use the <xref:System.Reflection.Emit.ILGenerator.Emit%28System.Reflection.Emit.OpCode%2CSystem.Reflection.MethodInfo%29> method overload.  
-  
+The <xref:System.Reflection.Emit.ILGenerator.EmitCall%2A> method is used to emit calls to `varargs` methods because there is no overload of the <xref:System.Reflection.Emit.ILGenerator.Emit%2A> method that specifies the parameter types of the variable arguments.  
+ 
+To emit calls to methods that do not use the <xref:System.Reflection.CallingConventions> calling convention, use the <xref:System.Reflection.Emit.ILGenerator.Emit%28System.Reflection.Emit.OpCode%2CSystem.Reflection.MethodInfo%29> method overload.  
+ 
 ## Version Information  
- Beginning with the .NET Framework version 2.0, the <xref:System.Reflection.Emit.ILGenerator.EmitCall%2A> method does not throw an exception when optional parameter types are specified for a method that is not `varargs`. <xref:System.InvalidProgramException> is thrown when the call is executed.  
+Beginning with the .NET Framework version 2.0, the <xref:System.Reflection.Emit.ILGenerator.EmitCall%2A> method does not throw an exception when optional parameter types are specified for a method that is not `varargs`. <xref:System.InvalidProgramException> is thrown when the call is executed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example emits two methods, a `varargs` method and a method that calls the `varargs` method. The `EmitCall` method is used to emit the call to the `varargs` method.  
-  
- [!code-cpp[Emit.ArgIterator#1](~/samples/snippets/cpp/VS_Snippets_CLR/Emit.ArgIterator/cpp/source.cpp#1)]
- [!code-csharp[Emit.ArgIterator#1](~/samples/snippets/csharp/VS_Snippets_CLR/Emit.ArgIterator/cs/source.cs#1)]
- [!code-vb[Emit.ArgIterator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Emit.ArgIterator/vb/source.vb#1)]  
-  
+The following code example emits two methods, a `varargs` method and a method that calls the `varargs` method. The `EmitCall` method is used to emit the call to the `varargs` method.  
+ 
+[!code-cpp[Emit.ArgIterator#1](~/samples/snippets/cpp/VS_Snippets_CLR/Emit.ArgIterator/cpp/source.cpp#1)]
+[!code-csharp[Emit.ArgIterator#1](~/samples/snippets/csharp/VS_Snippets_CLR/Emit.ArgIterator/cs/source.cs#1)]
+[!code-vb[Emit.ArgIterator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Emit.ArgIterator/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1172,19 +1172,19 @@
         <summary>Puts a <see cref="F:System.Reflection.Emit.OpCodes.Calli" /> instruction onto the Microsoft intermediate language (MSIL) stream, specifying an unmanaged calling convention for the indirect call.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use<xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
+Use<xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates the contextual usage of the <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> method to call an unmanaged type method external to the dynamic class.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.EmitCalli Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.EmitCalli Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.EmitCalli Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.EmitCalli Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.EmitCalli Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.EmitCalli Example/VB/source.vb#1)]  
-  
+The following code sample demonstrates the contextual usage of the <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> method to call an unmanaged type method external to the dynamic class.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.EmitCalli Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.EmitCalli Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.EmitCalli Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.EmitCalli Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.EmitCalli Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.EmitCalli Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1222,12 +1222,12 @@
         <summary>Puts a <see cref="F:System.Reflection.Emit.OpCodes.Calli" /> instruction onto the Microsoft intermediate language (MSIL) stream, specifying a managed calling convention for the indirect call.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
-  
- If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions?displayProperty=fullName> flag.  
-  
+Use <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
+ 
+If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions?displayProperty=fullName> flag.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -1259,19 +1259,19 @@
         <summary>Emits the Microsoft intermediate language (MSIL) necessary to call <see cref="Overload:System.Console.WriteLine" /> with the given local variable.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of `localBuilder` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+The type of `localBuilder` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The code sample below demonstrates the contextual usage of the <xref:System.Reflection.Emit.ILGenerator.EmitWriteLine%2A> method to write a string to the console in a dynamic method.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/VB/source.vb#1)]  
-  
+The code sample below demonstrates the contextual usage of the <xref:System.Reflection.Emit.ILGenerator.EmitWriteLine%2A> method to write a string to the console in a dynamic method.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The type of <paramref name="localBuilder" /> is <see cref="T:System.Reflection.Emit.TypeBuilder" /> or <see cref="T:System.Reflection.Emit.EnumBuilder" />, which are not supported.  
@@ -1308,19 +1308,19 @@
         <summary>Emits the Microsoft intermediate language (MSIL) necessary to call <see cref="Overload:System.Console.WriteLine" /> with the given field.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of `fld` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+The type of `fld` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates the use of the <xref:System.Reflection.Emit.ILGenerator.EmitWriteLine%2A> method to write a string to the console in a dynamic method.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/VB/source.vb#1)]  
-  
+The following code sample demonstrates the use of the <xref:System.Reflection.Emit.ILGenerator.EmitWriteLine%2A> method to write a string to the console in a dynamic method.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">There is no overload of the <see cref="Overload:System.Console.WriteLine" /> method that accepts the type of the specified field.</exception>
@@ -1354,19 +1354,19 @@
         <summary>Emits the Microsoft intermediate language (MSIL) to call <see cref="Overload:System.Console.WriteLine" /> with a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string must have already been defined.  
+The string must have already been defined.  
+ 
   
-   
-  
+ 
 ## Examples  
- The code sample below demonstrates the contextual usage of the `EmitWriteLine` method to write a string to the console in a dynamic method.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/VB/source.vb#1)]  
-  
+The code sample below demonstrates the contextual usage of the `EmitWriteLine` method to write a string to the console in a dynamic method.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1393,14 +1393,14 @@
         <summary>Ends an exception block.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The code sample below demonstrates the contextual usage of the `EndExceptionBlock` method.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
-  
+The code sample below demonstrates the contextual usage of the `EndExceptionBlock` method.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The end exception block occurs in an unexpected place in the code stream.</exception>
@@ -1429,21 +1429,21 @@
         <summary>Ends a lexical scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to emit symbolic information. It is used with <xref:System.Reflection.Emit.ILGenerator.BeginScope%2A>.  
+This method is used to emit symbolic information. It is used with <xref:System.Reflection.Emit.ILGenerator.BeginScope%2A>.  
+ 
+If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, it does not support symbolic information.  
+ 
   
- If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, it does not support symbolic information.  
-  
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `BeginScope` and `EndScope`.  
-  
- [!code-cpp[ILGenerator_Begin_EndScope#2](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CPP/ilgenerator_begin_endscope.cpp#2)]
- [!code-csharp[ILGenerator_Begin_EndScope#2](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CS/ilgenerator_begin_endscope.cs#2)]
- [!code-vb[ILGenerator_Begin_EndScope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_Begin_EndScope/VB/ilgenerator_begin_endscope.vb#2)]  
-  
+The following code sample illustrates the use of `BeginScope` and `EndScope`.  
+ 
+[!code-cpp[ILGenerator_Begin_EndScope#2](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CPP/ilgenerator_begin_endscope.cpp#2)]
+[!code-csharp[ILGenerator_Begin_EndScope#2](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CS/ilgenerator_begin_endscope.cs#2)]
+[!code-vb[ILGenerator_Begin_EndScope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_Begin_EndScope/VB/ilgenerator_begin_endscope.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
@@ -1471,14 +1471,14 @@
         <value>The offset in the MSIL stream at which the next instruction will be emitted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is transparent, and can be called from partially trusted code.  
-  
- If the <xref:System.Reflection.Emit.ILGenerator.ILOffset%2A> property is accessed before any MSIL instructions have been emitted, it returns 0 (zero).  
-  
- When MSIL is generated for dynamic languages, this property can be used to map offsets in the MSIL stream to source code line numbers. The resulting information can be used to provide stack traces when exceptions are thrown.  
-  
+This method is transparent, and can be called from partially trusted code.  
+ 
+If the <xref:System.Reflection.Emit.ILGenerator.ILOffset%2A> property is accessed before any MSIL instructions have been emitted, it returns 0 (zero).  
+ 
+When MSIL is generated for dynamic languages, this property can be used to map offsets in the MSIL stream to source code line numbers. The resulting information can be used to provide stack traces when exceptions are thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1508,19 +1508,19 @@
         <summary>Marks the Microsoft intermediate language (MSIL) stream's current position with the given label.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A label cannot be defined more than once.  
+A label cannot be defined more than once.  
+ 
   
-   
-  
+ 
 ## Examples  
- The code sample below demonstrates the contextual usage of `MarkLabel` to implement MSIL branching in a dynamic method.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
-  
+The code sample below demonstrates the contextual usage of `MarkLabel` to implement MSIL branching in a dynamic method.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1560,14 +1560,14 @@
         <summary>Marks a sequence point in the Microsoft intermediate language (MSIL) stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Line numbers are indexed from 1. Columns are indexed from 0.  
-  
- The symbolic information normally includes at least one MSIL offset for each source line. When the just-in-time (JIT) compiler is about to compile a method, it asks the profiling services for a list of MSIL offsets that should be preserved. These MSIL offsets are called *sequence points*.  
-  
- If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, it does not support symbolic information.  
-  
+Line numbers are indexed from 1. Columns are indexed from 0.  
+ 
+The symbolic information normally includes at least one MSIL offset for each source line. When the just-in-time (JIT) compiler is about to compile a method, it asks the profiling services for a list of MSIL offsets that should be preserved. These MSIL offsets are called *sequence points*.  
+ 
+If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, it does not support symbolic information.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1604,10 +1604,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1638,10 +1638,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1668,10 +1668,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1712,10 +1712,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1746,14 +1746,14 @@
         <summary>Emits an instruction to throw an exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates the contextual usage of `ThrowException` to throw an exception inside the MSIL of a dynamic method.  
-  
- [!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
- [!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
- [!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
-  
+The following code sample demonstrates the contextual usage of `ThrowException` to throw an exception inside the MSIL of a dynamic method.  
+ 
+[!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
+[!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
+[!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1791,10 +1791,10 @@
         <summary>Specifies the namespace to be used in evaluating locals and watches for the current active lexical scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, this method is not supported.  
-  
+If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, this method is not supported.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Length of <paramref name="usingNamespace" /> is zero.</exception>

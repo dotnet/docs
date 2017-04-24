@@ -61,10 +61,10 @@
         <summary>Schedules the continuation action that's invoked when the instance completes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike OnCompleted, UnsafeOnCompleted doesn't have to propagate ExecutionContext information.  
-  
+Unlike OnCompleted, UnsafeOnCompleted doesn't have to propagate ExecutionContext information.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="continuation" /> argument is null (Nothing in Visual Basic).</exception>

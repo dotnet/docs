@@ -14,19 +14,19 @@
     <summary>Converts a time span expressed in seconds.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
+This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
+ 
+In particular, the <xref:System.Configuration.TimeSpanSecondsConverter> converts <xref:System.String> seconds, assigned to a configuration property, to <xref:System.TimeSpan> seconds and vice versa.  
+ 
+The <xref:System.Configuration.TimeSpanMinutesConverter> persists values of type `long` that represent a number of seconds.  
+ 
   
- In particular, the <xref:System.Configuration.TimeSpanSecondsConverter> converts <xref:System.String> seconds, assigned to a configuration property, to <xref:System.TimeSpan> seconds and vice versa.  
-  
- The <xref:System.Configuration.TimeSpanMinutesConverter> persists values of type `long` that represent a number of seconds.  
-  
-   
-  
+ 
 ## Examples  
- Refer to the code examples in <xref:System.Configuration.InfiniteTimeSpanConverter> and <xref:System.Configuration.TimeSpanMinutesConverter>.  
-  
+Refer to the code examples in <xref:System.Configuration.InfiniteTimeSpanConverter> and <xref:System.Configuration.TimeSpanMinutesConverter>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.TimeSpanSecondsConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normally, you use the converter types provided by the system. The only time you need to use the <xref:System.Configuration.TimeSpanSecondsConverter.%23ctor%2A> constructor is when you create your own conversion type.  
-  
+Normally, you use the converter types provided by the system. The only time you need to use the <xref:System.Configuration.TimeSpanSecondsConverter.%23ctor%2A> constructor is when you create your own conversion type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,10 +78,10 @@
         <returns>The <see cref="T:System.TimeSpan" /> representing the <paramref name="data" /> parameter in seconds.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system uses the <xref:System.Configuration.TimeSpanSecondsConverter.ConvertFrom%2A> method when it reads from a configuration file to convert a <xref:System.String> value to <xref:System.TimeSpan>.  
-  
+The system uses the <xref:System.Configuration.TimeSpanSecondsConverter.ConvertFrom%2A> method when it reads from a configuration file to convert a <xref:System.String> value to <xref:System.TimeSpan>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -115,10 +115,10 @@
         <returns>The <see cref="T:System.String" /> that represents the <paramref name="value" /> parameter in minutes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system uses the <xref:System.Configuration.TimeSpanSecondsConverter.ConvertTo%2A> method when it writes to a configuration file to convert a <xref:System.TimeSpan> to a <xref:System.String>.  
-  
+The system uses the <xref:System.Configuration.TimeSpanSecondsConverter.ConvertTo%2A> method when it writes to a configuration file to convert a <xref:System.TimeSpan> to a <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

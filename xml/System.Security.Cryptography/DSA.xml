@@ -24,16 +24,16 @@
     <summary>Represents the abstract base class from which all implementations of the Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) must inherit.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Security.Cryptography.DSA> class and derived classes to create digital signatures that help protect the integrity of your data.  The <xref:System.Security.Cryptography.DSACryptoServiceProvider> provides an implementation of this class.  
-  
- To use a public-key system to digitally sign a message, the sender first applies a hash function to the message to create a message digest. The sender then encrypts the message digest with the sender's private key to create the sender's personal signature. Upon receiving the message and signature, the receiver decrypts the signature using the sender's public key to recover the message digest and hashes the message using the same hash algorithm that the sender used. If the message digest that the receiver computes exactly matches the message digest received from the sender, the receiver can assume that the message was not altered while in transit. Note that a signature can be verified by anyone, because the sender's public key is common knowledge.  
-  
- Newer asymmetric algorithms are available. Consider using the <xref:System.Security.Cryptography.RSA> class, the <xref:System.Security.Cryptography.ECDsa> class, or the <xref:System.Security.Cryptography.ECDiffieHellman> class instead of the <xref:System.Security.Cryptography.DSA> class. Use <xref:System.Security.Cryptography.DSA> only for compatibility with legacy applications and data.  
-  
- This algorithm supports key lengths from 512 bits to 1024 bits in increments of 64 bits.  
-  
+You can use the <xref:System.Security.Cryptography.DSA> class and derived classes to create digital signatures that help protect the integrity of your data.  The <xref:System.Security.Cryptography.DSACryptoServiceProvider> provides an implementation of this class.  
+ 
+To use a public-key system to digitally sign a message, the sender first applies a hash function to the message to create a message digest. The sender then encrypts the message digest with the sender's private key to create the sender's personal signature. Upon receiving the message and signature, the receiver decrypts the signature using the sender's public key to recover the message digest and hashes the message using the same hash algorithm that the sender used. If the message digest that the receiver computes exactly matches the message digest received from the sender, the receiver can assume that the message was not altered while in transit. Note that a signature can be verified by anyone, because the sender's public key is common knowledge.  
+ 
+Newer asymmetric algorithms are available. Consider using the <xref:System.Security.Cryptography.RSA> class, the <xref:System.Security.Cryptography.ECDsa> class, or the <xref:System.Security.Cryptography.ECDiffieHellman> class instead of the <xref:System.Security.Cryptography.DSA> class. Use <xref:System.Security.Cryptography.DSA> only for compatibility with legacy applications and data.  
+ 
+This algorithm supports key lengths from 512 bits to 1024 bits in increments of 64 bits.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@
         <returns>A cryptographic object used to perform the asymmetric algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For <xref:System.Security.Cryptography.DSA>, use the name System.Security.Cryptography.DSA.  
-  
+For <xref:System.Security.Cryptography.DSA>, use the name System.Security.Cryptography.DSA.  
+ 
  ]]></format>
         </remarks>
       </Docs>

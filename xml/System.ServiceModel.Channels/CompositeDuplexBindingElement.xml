@@ -18,12 +18,12 @@
     <summary>Represents the binding element that is used when the client must expose an endpoint for the service to send messages back to the client.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is commonly used with transports, such as HTTP, that do not allow duplex communications natively. TCP, by contrast, does allow duplex communications natively and so does not require the use of this binding element for the service to send messages back to a client.  
-  
- The client must expose an address at which the service can contact it to establish a connection from the service to the client. This client address is provided by the <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement.ClientBaseAddress%2A> property. Note that [!INCLUDE[indigo1](~/includes/indigo1-md.md)] auto-generates a <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement.ClientBaseAddress%2A> if one is not explicitly set by the user.  
-  
+This is commonly used with transports, such as HTTP, that do not allow duplex communications natively. TCP, by contrast, does allow duplex communications natively and so does not require the use of this binding element for the service to send messages back to a client.  
+ 
+The client must expose an address at which the service can contact it to establish a connection from the service to the client. This client address is provided by the <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement.ClientBaseAddress%2A> property. Note that [!INCLUDE[indigo1](~/includes/indigo1-md.md)] auto-generates a <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement.ClientBaseAddress%2A> if one is not explicitly set by the user.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <returns>A <see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> that creates a composite duplex channel of type <paramref name="TChannel" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The build context requires an <xref:System.ServiceModel.Channels.IOutputChannel> for the `TChannel`.  
-  
+The build context requires an <xref:System.ServiceModel.Channels.IOutputChannel> for the `TChannel`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -109,10 +109,10 @@
         <returns>An <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> that accepts a composite duplex channel of type <paramref name="TChannel" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The build context requires an <xref:System.ServiceModel.Channels.IInputChannel> for the `TChannel`.  
-  
+The build context requires an <xref:System.ServiceModel.Channels.IInputChannel> for the `TChannel`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -146,10 +146,10 @@
           <see langword="true" /> if the binding can build the channel factory; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `true` if `TChannel` == <xref:System.ServiceModel.Channels.IOutputChannel> and the inner binding can also build <xref:System.ServiceModel.Channels.IOutputChannel>; otherwise, `false`.  
-  
+`true` if `TChannel` == <xref:System.ServiceModel.Channels.IOutputChannel> and the inner binding can also build <xref:System.ServiceModel.Channels.IOutputChannel>; otherwise, `false`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -187,10 +187,10 @@
           <see langword="true" /> if the channel listener can be built for the build required to accept the specified type of channel; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `true` if `TChannel` == <xref:System.ServiceModel.Channels.IInputChannel> and the inner binding can also build <xref:System.ServiceModel.Channels.IInputChannel>; otherwise, `false`.  
-  
+`true` if `TChannel` == <xref:System.ServiceModel.Channels.IInputChannel> and the inner binding can also build <xref:System.ServiceModel.Channels.IInputChannel>; otherwise, `false`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -219,12 +219,12 @@
         <value>A <see cref="T:System.Uri" /> that contains the base address for the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides an address at which the service can contact the client. A `null` value causes the system to automatically generate a client base address.  
-  
- This is a base address, not an absolute address. A GUID is appended to the base address when generating client endpoints from this binding.  
-  
+This property provides an address at which the service can contact the client. A `null` value causes the system to automatically generate a client base address.  
+ 
+This is a base address, not an absolute address. A GUID is appended to the base address when generating client endpoints from this binding.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,12 +247,12 @@
         <returns>A <see cref="T:System.ServiceModel.Channels.CompositeDuplexBindingElement" /> that is a deep clone of the current binding element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returning a clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a clone is not returned, the run-time behavior is undefined.  
-  
- A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. (This is also called copying the entire object graph.) A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects. In particular, a deep copy of <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement> copies over the <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement.ClientBaseAddress%2A> value.  
-  
+Returning a clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a clone is not returned, the run-time behavior is undefined.  
+ 
+A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. (This is also called copying the entire object graph.) A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects. In particular, a deep copy of <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement> copies over the <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement.ClientBaseAddress%2A> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <returns>The typed object <paramref name="T" /> requested if it is supported; or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this to request a typed object, such as an interface for setting properties or getting status, from the appropriate layer in the stacked binding. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no layer supports getting the requested object then the caller is returned a `null` value.  
-  
+Use this to request a typed object, such as an interface for setting properties or getting status, from the appropriate layer in the stacked binding. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no layer supports getting the requested object then the caller is returned a `null` value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -318,10 +318,10 @@
         <summary>Exports custom policy assertions about bindings that represent the presence of composite duplex in the binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.IPolicyExportExtension>.  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.IPolicyExportExtension>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

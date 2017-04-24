@@ -19,10 +19,10 @@
     <summary>Used by a form to paginate its controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During pagination, a <xref:System.Web.UI.MobileControls.ControlPager> object is passed to each control on the form, and is used by the control to determine the control's page index.  
-  
+During pagination, a <xref:System.Web.UI.MobileControls.ControlPager> object is passed to each control on the form, and is used by the control to determine the control's page index.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -64,10 +64,10 @@
         <summary>Returns the assigned weight for a page. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The choice of units that you use for optimum page weight and control weights is flexible. Because device adapters can provide both types of weights, a set of adapters can coordinate an appropriate convention for weight units. However, if you follow the default unit system, your adapters can use the default weights of controls. The default unit system is based on one line equaling 100 units, as indicated by the constant <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight>.  
-  
+The choice of units that you use for optimum page weight and control weights is flexible. Because device adapters can provide both types of weights, a set of adapters can coordinate an appropriate convention for weight units. However, if you follow the default unit system, your adapters can use the default weights of controls. The default unit system is based on one line equaling 100 units, as indicated by the constant <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <returns>A newly assigned page index based on the weight of the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Controls call this method iteratively during pagination to retrieve their assigned pages.  
-  
+Controls call this method iteratively during pagination to retrieve their assigned pages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@
         <summary>Returns whether to use the value of the <see cref="F:System.Web.UI.MobileControls.ControlPager.DefaultWeight" /> field for pagination. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Extend the <xref:System.Web.UI.MobileControls.ControlPager> class and change this field and the <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight> field, if you need to use some value other than the <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight> field as the default weight for a page.  
-  
+Extend the <xref:System.Web.UI.MobileControls.ControlPager> class and change this field and the <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight> field, if you need to use some value other than the <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight> field as the default weight for a page.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,12 +19,12 @@
     <summary>Specifies the set of execution contexts in which a class object will be made available for requests to construct instances.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values in the <xref:System.Runtime.InteropServices.RegistrationClassContext> enumeration are used in the `classContext` parameter of the <xref:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients%2A> method. These values are the same as those defined in the COM **CLSCTX** enumeration, which is used as the `dwClsContext` parameter in calls to the COM API `CoRegisterClassObject`.  
-  
- For more information about `CoRegisterClassObject` and the **CLSCTX** enumeration, see the MSDN library.  
-  
+The values in the <xref:System.Runtime.InteropServices.RegistrationClassContext> enumeration are used in the `classContext` parameter of the <xref:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients%2A> method. These values are the same as those defined in the COM **CLSCTX** enumeration, which is used as the `dwClsContext` parameter in calls to the COM API `CoRegisterClassObject`.  
+ 
+For more information about `CoRegisterClassObject` and the **CLSCTX** enumeration, see the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>

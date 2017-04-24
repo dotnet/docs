@@ -22,18 +22,18 @@
     <summary>Specifies the operational state of a network interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration defines valid values for the <xref:System.Net.NetworkInformation.NetworkInterface.OperationalStatus%2A> property.  
+This enumeration defines valid values for the <xref:System.Net.NetworkInformation.NetworkInterface.OperationalStatus%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays a summary for all interfaces on the local computer.  
-  
- [!code-cpp[NCLNetInfoReport#16](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#16)]
- [!code-csharp[NCLNetInfoReport#16](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#16)]  
-  
+The following code example displays a summary for all interfaces on the local computer.  
+ 
+[!code-cpp[NCLNetInfoReport#16](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#16)]
+[!code-csharp[NCLNetInfoReport#16](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#16)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

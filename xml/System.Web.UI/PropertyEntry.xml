@@ -14,12 +14,12 @@
     <summary>Acts as the base class for all property entry classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.PropertyEntry> is the base class for all property entry classes; you cannot create an instance of this class. It defines fields that are used in the derived classes <xref:System.Web.UI.BoundPropertyEntry>, <xref:System.Web.UI.BuilderPropertyEntry>, <xref:System.Web.UI.ComplexPropertyEntry>, <xref:System.Web.UI.TemplatePropertyEntry>, and <xref:System.Web.UI.SimplePropertyEntry>.  
-  
- The page parser uses property entry classes during parsing to represent expressions found within server control tags.  
-  
+<xref:System.Web.UI.PropertyEntry> is the base class for all property entry classes; you cannot create an instance of this class. It defines fields that are used in the derived classes <xref:System.Web.UI.BoundPropertyEntry>, <xref:System.Web.UI.BuilderPropertyEntry>, <xref:System.Web.UI.ComplexPropertyEntry>, <xref:System.Web.UI.TemplatePropertyEntry>, and <xref:System.Web.UI.SimplePropertyEntry>.  
+ 
+The page parser uses property entry classes during parsing to represent expressions found within server control tags.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

@@ -18,14 +18,14 @@
     <summary>Defines the base class for resources that can be added to an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to add <xref:System.Windows.Xps.Packaging.XpsResource> derived types to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
-  
+The following example shows how to add <xref:System.Windows.Xps.Packaging.XpsResource> derived types to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+[!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+[!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,19 +47,19 @@
         <summary>Commits all changes and flushes the resource to the document package.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method may be delayed until the whole <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
+Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method may be delayed until the whole <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method (in a derived class) when you add resources to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method (in a derived class) when you add resources to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+[!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+[!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,14 +82,14 @@
         <returns>The <see cref="T:System.IO.Stream" /> for reading or writing the resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method (in a derived class) to add resources to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
-  
+The following example shows how to use this method (in a derived class) to add resources to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+[!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+[!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,17 +14,17 @@
     <summary>Allows a custom control to prevent the <see cref="E:System.Windows.Forms.Control.MouseWheel" /> event from being sent to its parent container.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You will want to use <xref:System.Windows.Forms.HandledMouseEventArgs> primarily when developing a control that needs to handle mouse wheel events itself, and prevent them from being seen by the control's immediate parent container. <xref:System.Windows.Forms.HandledMouseEventArgs> is not passed directly by <xref:System.Windows.Forms.MouseEventHandler> when it handles the <xref:System.Windows.Forms.Control.MouseWheel> event. Rather, <xref:System.Windows.Forms.MouseEventHandler> uses a <xref:System.Windows.Forms.MouseEventArgs>, which you must cast to a <xref:System.Windows.Forms.HandledMouseEventArgs> in order to cancel an occurrence of <xref:System.Windows.Forms.Control.MouseWheel>.  
+You will want to use <xref:System.Windows.Forms.HandledMouseEventArgs> primarily when developing a control that needs to handle mouse wheel events itself, and prevent them from being seen by the control's immediate parent container. <xref:System.Windows.Forms.HandledMouseEventArgs> is not passed directly by <xref:System.Windows.Forms.MouseEventHandler> when it handles the <xref:System.Windows.Forms.Control.MouseWheel> event. Rather, <xref:System.Windows.Forms.MouseEventHandler> uses a <xref:System.Windows.Forms.MouseEventArgs>, which you must cast to a <xref:System.Windows.Forms.HandledMouseEventArgs> in order to cancel an occurrence of <xref:System.Windows.Forms.Control.MouseWheel>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to mark the mouse wheel event as handled in a custom control.  
-  
- [!code-vb[System.Windows.Forms.HandledMouseEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HandledMouseEventArgs/VB/MouseWheelControl.vb#1)]  
-  
+The following code example demonstrates how to mark the mouse wheel event as handled in a custom control.  
+ 
+[!code-vb[System.Windows.Forms.HandledMouseEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HandledMouseEventArgs/VB/MouseWheelControl.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,12 +102,12 @@
           <see langword="true" /> if the mouse event should go to the parent control; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to mark the mouse wheel event as handled in a custom control.  
-  
- [!code-vb[System.Windows.Forms.HandledMouseEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HandledMouseEventArgs/VB/MouseWheelControl.vb#1)]  
-  
+The following code example demonstrates how to mark the mouse wheel event as handled in a custom control.  
+ 
+[!code-vb[System.Windows.Forms.HandledMouseEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HandledMouseEventArgs/VB/MouseWheelControl.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

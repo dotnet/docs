@@ -18,35 +18,35 @@
     <summary>Provides a visual editor to edit <see langword="ModelItem" /> objects, and provides an area for the user to drag and drop, and otherwise edit composed elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a WPF control that acts as an editing container that displays the visualization for the data it is bound to in the <xref:System.Activities.Presentation.WorkflowItemPresenter.Item%2A> property. The <xref:System.Activities.Presentation.WorkflowItemPresenter> is one of two controls (the other being <xref:System.Activities.Presentation.WorkflowItemsPresenter>) that can be used to create a container for visualizing and editing a composed element. It is important to note that the visualization of the composed element is not controlled by the <xref:System.Activities.Presentation.WorkflowItemPresenter> but it renders with the visualization associated in the metadata store for a given type. The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a specialized subclass of the [!INCLUDE[avalon1](~/includes/avalon1-md.md)]<xref:System.Windows.Controls.ContentControl> that has been modified to support drag and drop, copy and paste, and other visual editing actions.  
+This is a WPF control that acts as an editing container that displays the visualization for the data it is bound to in the <xref:System.Activities.Presentation.WorkflowItemPresenter.Item%2A> property. The <xref:System.Activities.Presentation.WorkflowItemPresenter> is one of two controls (the other being <xref:System.Activities.Presentation.WorkflowItemsPresenter>) that can be used to create a container for visualizing and editing a composed element. It is important to note that the visualization of the composed element is not controlled by the <xref:System.Activities.Presentation.WorkflowItemPresenter> but it renders with the visualization associated in the metadata store for a given type. The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a specialized subclass of the [!INCLUDE[avalon1](~/includes/avalon1-md.md)]<xref:System.Windows.Controls.ContentControl> that has been modified to support drag and drop, copy and paste, and other visual editing actions.  
+ 
   
-   
-  
+ 
 ## Examples  
- The primary use of this control will be in an activity designer, as seen in the sample code below. The XAML below shows the declarative usage of the control to build a simple designer for the If activity. The If activity has two properties of type Activity, Then and Else, and the Item for each WorkflowItemPresenter is linked to that respective property.  
-  
- For an example of the <xref:System.Activities.Presentation.WorkflowItemPresenter> in use, see the [Custom Composite Designers - Workflow Item Presenter](~/docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-item-presenter.md) sample.  
-  
+The primary use of this control will be in an activity designer, as seen in the sample code below. The XAML below shows the declarative usage of the control to build a simple designer for the If activity. The If activity has two properties of type Activity, Then and Else, and the Item for each WorkflowItemPresenter is linked to that respective property.  
+ 
+For an example of the <xref:System.Activities.Presentation.WorkflowItemPresenter> in use, see the [Custom Composite Designers - Workflow Item Presenter](~/docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-item-presenter.md) sample.  
+ 
 ```xaml  
 <sap:ActivityDesigner x:Class="Microsoft.Documentation.SimpleIfDesigner"  
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
-    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
-    <StackPanel>  
-        <StackPanel Orientation="Horizontal">  
-            <sap:WorkflowItemPresenter Margin="4" HintText="Drop Then Here" Item="{Binding Path=ModelItem.Then, Mode=TwoWay}" />  
-            <sap:WorkflowItemPresenter Margin="4" HintText="Drop Else Here" Item="{Binding Path=ModelItem.Else, Mode=TwoWay}" />  
-        </StackPanel>  
-    </StackPanel>  
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+   xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
+   xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
+   <StackPanel>  
+       <StackPanel Orientation="Horizontal">  
+           <sap:WorkflowItemPresenter Margin="4" HintText="Drop Then Here" Item="{Binding Path=ModelItem.Then, Mode=TwoWay}" />  
+           <sap:WorkflowItemPresenter Margin="4" HintText="Drop Else Here" Item="{Binding Path=ModelItem.Else, Mode=TwoWay}" />  
+       </StackPanel>  
+   </StackPanel>  
 </sap:ActivityDesigner>  
-  
+ 
 ```  
-  
+ 
 <!-- TODO: review snippet reference  [!CODE [WorkflowItemPresenter#1](WorkflowItemPresenter#1)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,10 +83,10 @@
         <value>A <see langword="Type" /> that contains the allowed item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set, the <xref:System.Activities.Presentation.WorkflowItemPresenter> disallows dropping objects that do not conform to the `Type`.  
-  
+When this property is set, the <xref:System.Activities.Presentation.WorkflowItemPresenter> disallows dropping objects that do not conform to the `Type`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

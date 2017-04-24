@@ -19,34 +19,34 @@
     <summary>Represents an abstraction of an access control entry (ACE) that defines an audit rule for a file or directory. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.AccessControl.FileSystemAuditRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to perform auditing.  This class can also specify how audit rules are inherited from and propagated to objects.  
-  
- To permit file and directory auditing on Windows NT or later, you must enable Audit Access Security policy on your machine.  By default, this policy is set to No Auditing.  
-  
- To enable the Audit Access Security policy, perform the following steps:  
-  
+The <xref:System.Security.AccessControl.FileSystemAuditRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to perform auditing.  This class can also specify how audit rules are inherited from and propagated to objects.  
+ 
+To permit file and directory auditing on Windows NT or later, you must enable Audit Access Security policy on your machine.  By default, this policy is set to No Auditing.  
+ 
+To enable the Audit Access Security policy, perform the following steps:  
+ 
 1.  Open the **Local Security Settings** Microsoft Management Console (MMC) snap-in, located in the Administrative Tools folder.  
-  
+ 
 2.  Expand the Local Policies folder and left-click the Audit Policy folder.  
-  
+ 
 3.  Double-click the **Audit object access** entry on the right pane of the MMC snap-in, or right-click and choose Properties to display the **Audit object access properties** dialog box.  
-  
+ 
 4.  Select the **Success** or **Failure** check boxes to log successes or failures.  
+ 
+Note that an audit rule for a user account requires a corresponding access rule for the same user account.  
+ 
+Use the <xref:System.Security.AccessControl.FileSystemAuditRule> class to create a new audit rule.  You can persist this rule using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  
+ 
   
- Note that an audit rule for a user account requires a corresponding access rule for the same user account.  
-  
- Use the <xref:System.Security.AccessControl.FileSystemAuditRule> class to create a new audit rule.  You can persist this rule using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Security.AccessControl.FileSystemAuditRule> class to add and then remove an audit rule from a file.  You must supply a valid user or group account to run this example.  
-  
- [!code-csharp[AccessControl.FileSystemAuditRule#1](~/samples/snippets/csharp/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/cs/sample.cs#1)]
- [!code-vb[AccessControl.FileSystemAuditRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/vb/sample.vb#1)]  
-  
+The following code example uses the <xref:System.Security.AccessControl.FileSystemAuditRule> class to add and then remove an audit rule from a file.  You must supply a valid user or group account to run this example.  
+ 
+[!code-csharp[AccessControl.FileSystemAuditRule#1](~/samples/snippets/csharp/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/cs/sample.cs#1)]
+[!code-vb[AccessControl.FileSystemAuditRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/vb/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,10 +77,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> class using a reference to a user account, a value that specifies the type of operation associated with the audit rule, and a value that specifies when to perform auditing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an audit rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Audit rules determine when and how actions performed on system objects, such as files and folders, are logged.  
-  
+Use this constructor to create an audit rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Audit rules determine when and how actions performed on system objects, such as files and folders, are logged.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="identity" /> parameter is not an <see cref="T:System.Security.Principal.IdentityReference" /> object.</exception>
@@ -118,20 +118,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> class using a user account name, a value that specifies the type of operation associated with the audit rule, and a value that specifies when to perform auditing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an audit rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Audit rules determine when and how actions performed on system objects, such as files and folders, are logged.  
+Use this constructor to create an audit rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Audit rules determine when and how actions performed on system objects, such as files and folders, are logged.  
+ 
+The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
+ 
   
- The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Security.AccessControl.FileSystemAuditRule> class to add and then remove an audit rule from a file.  You must supply a valid user or group account to run this example.  
-  
- [!code-csharp[AccessControl.FileSystemAuditRule#1](~/samples/snippets/csharp/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/cs/sample.cs#1)]
- [!code-vb[AccessControl.FileSystemAuditRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/vb/sample.vb#1)]  
-  
+The following code example uses the <xref:System.Security.AccessControl.FileSystemAuditRule> class to add and then remove an audit rule from a file.  You must supply a valid user or group account to run this example.  
+ 
+[!code-csharp[AccessControl.FileSystemAuditRule#1](~/samples/snippets/csharp/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/cs/sample.cs#1)]
+[!code-vb[AccessControl.FileSystemAuditRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="flags" /> parameter.  
@@ -171,10 +171,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> class using the name of a reference to a user account, a value that specifies the type of operation associated with the audit rule, a value that determines how rights are inherited, a value that determines how rights are propagated, and a value that specifies when to perform auditing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an audit rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Audit rules determine when and how actions performed on system objects, such as files and folders, are logged.  
-  
+Use this constructor to create an audit rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Audit rules determine when and how actions performed on system objects, such as files and folders, are logged.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="identity" /> parameter is not an <see cref="T:System.Security.Principal.IdentityReference" /> object.</exception>
@@ -216,12 +216,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> class using the name of a user account, a value that specifies the type of operation associated with the audit rule, a value that determines how rights are inherited, a value that determines how rights are propagated, and a value that specifies when to perform auditing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an audit rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Audit rules determine when and how actions performed on system objects, such as files and folders, are logged.  
-  
- The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
-  
+Use this constructor to create an audit rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Audit rules determine when and how actions performed on system objects, such as files and folders, are logged.  
+ 
+The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="flags" /> parameter.  

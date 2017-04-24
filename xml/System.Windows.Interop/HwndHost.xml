@@ -24,13 +24,13 @@
     <summary>Hosts a [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] window as an element within [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To host a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window, create a class that derives from <xref:System.Windows.Interop.HwndHost>. Override the <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A> method and create your [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window as a child of the parent window that is passed into the method.  
-  
+To host a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window, create a class that derives from <xref:System.Windows.Interop.HwndHost>. Override the <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A> method and create your [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window as a child of the parent window that is passed into the method.  
+ 
 > [!IMPORTANT]
 >  Although <xref:System.Windows.Interop.HwndHost> derives from <xref:System.Windows.FrameworkElement>, various properties of <xref:System.Windows.Interop.HwndHost> that come from <xref:System.Windows.FrameworkElement> and other intermediate classes such as <xref:System.Windows.UIElement> are not generally mapped to possible [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] equivalents. Also, not all <xref:System.Windows.FrameworkElement> / <xref:System.Windows.UIElement> input events transfer across the interoperation boundary. <xref:System.Windows.Interop.HwndHost> derives from <xref:System.Windows.FrameworkElement> primarily so that an <xref:System.Windows.Interop.HwndHost> instance can be inserted into the widest variety of possible content models, and so that default <xref:System.Windows.FrameworkElement> layout characteristics can apply. For more details on <xref:System.Windows.Interop.HwndHost>, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,12 +54,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,12 +85,12 @@
         <returns>The handle to the child [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] window to create.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method's implementation is called from within the internal implementation of <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A>.  
-  
- The child window will be created only if the window is owned by the calling thread.  
-  
+This method's implementation is called from within the internal implementation of <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A>.  
+ 
+The child window will be created only if the window is owned by the calling thread.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -122,12 +122,12 @@
         <summary>When overridden in a derived class, destroys the hosted window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -152,14 +152,14 @@
         <summary>Immediately frees any system resources that the object might hold.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
 >   
 >  This method can be overridden, but not by this signature. See <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> for the overridable signature. This parameterless signature is the one required by the interface contract, and it effectively calls the active <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> implementation with `disposing``true`.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,18 +192,18 @@
         <summary>Immediately frees any system resources that the object might hold.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
-  
- Derived classes can override this method if they need to do additional cleanup. However, they should also call the base implementation to ensure that all resources are freed. The base implementation does fairly substantial work to free resources that are known to the base class.  
-  
- If a window is being hosted, it will be destroyed.  
-  
- The calling thread must be the same as the dispatcher.  
-  
+ 
+Derived classes can override this method if they need to do additional cleanup. However, they should also call the base implementation to ensure that all resources are freed. The base implementation does fairly substantial work to free resources that are known to the base class.  
+ 
+If a window is being hosted, it will be destroyed.  
+ 
+The calling thread must be the same as the dispatcher.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,10 +259,10 @@
         <summary>Performs the final cleanup before the garbage collector destroys the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Like most finalizers, this calls `Dispose(false)`.  
-  
+Like most finalizers, this calls `Dispose(false)`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,12 +348,12 @@
         <returns>The size of the <see cref="T:System.Windows.Interop.HwndHost" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">in order to adjust the layout (by having the layout engine act upon the hosted region). Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -388,12 +388,12 @@
         <summary>Occurs for each unhandled message that is received by the hosted window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to add or remove handlers of this event. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -417,10 +417,10 @@
         <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The implementation of this method is typically to call the constructor of a specific <xref:System.Windows.Automation.Peers.AutomationPeer> implementation, and return it as the return value. The <xref:System.Windows.Interop.HwndHost> implementation of <xref:System.Windows.Interop.HwndHost.OnCreateAutomationPeer%2A> does this, but the automation peer that it returns is an internal class.  
-  
+The implementation of this method is typically to call the constructor of a specific <xref:System.Windows.Automation.Peers.AutomationPeer> implementation, and return it as the return value. The <xref:System.Windows.Interop.HwndHost> implementation of <xref:System.Windows.Interop.HwndHost.OnCreateAutomationPeer%2A> does this, but the automation peer that it returns is an internal class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -476,14 +476,14 @@
         <summary>Called when the hosted window receives a [WM_KEYDOWN](http://go.microsoft.com/fwlink/?LinkId=161282) message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
 >   
 >  This is an override of the class handler <xref:System.Windows.UIElement.OnKeyDown%2A> and provides the behavior of translating the [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] message into a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] event, marking the event as handled whenever appropriate.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -516,14 +516,14 @@
         <summary>Called when the hosted window receives a [WM_KEYUP](http://go.microsoft.com/fwlink/?LinkId=161283) message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
 >   
 >  This is an override of the class handler <xref:System.Windows.UIElement.OnKeyUp%2A> and provides the behavior of translating the [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] message into a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] event, marking the event as handled whenever appropriate.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -582,12 +582,12 @@
         <summary>Called when the hosted window's position changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -641,10 +641,10 @@
           <see langword="true" /> if the sink or one of its contained components has focus; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -671,10 +671,10 @@
         <value>A reference to the container's <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -709,10 +709,10 @@
           <see langword="true" /> if the message was handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -743,10 +743,10 @@
         <returns>The <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> site of the contained component.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -774,10 +774,10 @@
           <see langword="true" /> if the focus has been set as requested; <see langword="false" />, if there are no tab stops.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -812,10 +812,10 @@
           <see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -850,10 +850,10 @@
           <see langword="true" /> if the message was processed and <see cref="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" /> should not be called; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -960,12 +960,12 @@
         <summary>Updates the child window's size, visibility, and position to reflect the current state of the element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1004,12 +1004,12 @@
         <returns>The window handle of the child window.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1027,14 +1027,14 @@
         <summary>Immediately frees any system resources that the object might hold.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
-  
- Derived classes can override this method (by the <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> signature) if they need to do additional cleanup.  
-  
+ 
+Derived classes can override this method (by the <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> signature) if they need to do additional cleanup.  
+ 
  ]]></format>
         </remarks>
       </Docs>

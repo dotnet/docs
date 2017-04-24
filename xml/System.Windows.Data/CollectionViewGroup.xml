@@ -18,14 +18,14 @@
     <summary>Represents a group created by a <see cref="T:System.Windows.Data.CollectionView" /> object based on the <see cref="P:System.Windows.Data.CollectionView.GroupDescriptions" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you define groups using the <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A>, your view object (a <xref:System.Windows.Data.CollectionViewSource> object or an object that derives from <xref:System.Windows.Data.CollectionView>) wraps each group in a <xref:System.Windows.Data.CollectionViewGroup> object.  
-  
+When you define groups using the <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A>, your view object (a <xref:System.Windows.Data.CollectionViewSource> object or an object that derives from <xref:System.Windows.Data.CollectionView>) wraps each group in a <xref:System.Windows.Data.CollectionViewGroup> object.  
+ 
 <a name="xamlTextUsage_CollectionViewGroup"></a>   
 ## XAML Text Usage  
- You cannot use this class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+You cannot use this class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <value>The number of items (leaves) in the subtree under this group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subclasses use the <xref:System.Windows.Data.CollectionViewGroup.ProtectedItemCount%2A> property to change the count.  
-  
+Subclasses use the <xref:System.Windows.Data.CollectionViewGroup.ProtectedItemCount%2A> property to change the count.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <value>A read-only collection of the immediate items in this group. This is either a collection of subgroups or a collection of items if this group does not have any subgroups.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subclasses use the <xref:System.Windows.Data.CollectionViewGroup.ProtectedItems%2A> property to add or remove items.  
-  
+Subclasses use the <xref:System.Windows.Data.CollectionViewGroup.ProtectedItems%2A> property to add or remove items.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
         <value>The number of items (leaves) in the subtree under this group</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subclasses use this property to change the count; the changes are reflected in the <xref:System.Windows.Data.CollectionViewGroup.ItemCount%2A> property.  
-  
+Subclasses use this property to change the count; the changes are reflected in the <xref:System.Windows.Data.CollectionViewGroup.ItemCount%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,10 +215,10 @@
         <value>A collection of immediate items in this group. This is either a collection of subgroups or a collection of items if this group does not have any subgroups.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subclasses use this property to add or remove items; the changes are reflected in the <xref:System.Windows.Data.CollectionViewGroup.Items%2A> property.  
-  
+Subclasses use this property to add or remove items; the changes are reflected in the <xref:System.Windows.Data.CollectionViewGroup.Items%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

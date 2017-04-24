@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IdentityConfiguration" /> class. Settings are loaded from the default configuration, if it exists.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property values are loaded from the unnamed `<identityConfiguration>` element in the configuration file, if such an element exists; otherwise, properties are set to their default values.  
-  
+Property values are loaded from the unnamed `<identityConfiguration>` element in the configuration file, if such an element exists; otherwise, properties are set to their default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -55,10 +55,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IdentityConfiguration" /> class by using a value that specifies whether settings should be loaded from the default configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `loadConfig` is `true`, property values are loaded from the unnamed `<identityConfiguration>` element in the configuration file; otherwise properties are set to their default values.  
-  
+If `loadConfig` is `true`, property values are loaded from the unnamed `<identityConfiguration>` element in the configuration file; otherwise properties are set to their default values.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -82,10 +82,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IdentityConfiguration" /> class that has the specified service certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property values are loaded from the unnamed `<identityConfiguration>` element in the configuration file, if such an element exists; otherwise, properties are set to their default values.  
-  
+Property values are loaded from the unnamed `<identityConfiguration>` element in the configuration file, if such an element exists; otherwise, properties are set to their default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IdentityConfiguration" /> class. Settings are loaded from the named configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this constructor is called then a System.IdentityModel configuration section with the provided name must exist in the configuration file.  
-  
+If this constructor is called then a System.IdentityModel configuration section with the provided name must exist in the configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is no <see langword="&lt;system.identityModel&gt;" /> configuration element.</exception>
@@ -136,10 +136,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IdentityConfiguration" /> class that has the specified service certificate. Settings are optionally loading the default configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `loadConfig` is `true`, property values are loaded from the unnamed `<identityConfiguration>` element in the configuration file; otherwise properties are set to their default values.  
-  
+If `loadConfig` is `true`, property values are loaded from the unnamed `<identityConfiguration>` element in the configuration file; otherwise properties are set to their default values.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -202,10 +202,10 @@
         <value>The configured caches.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Configuration.IdentityModelCaches> contains the token replay cache and session token cache that are configured for this instance.  
-  
+The <xref:System.IdentityModel.Configuration.IdentityModelCaches> contains the token replay cache and session token cache that are configured for this instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,10 +422,10 @@
         <summary>Updates properties in the <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration" /> objects for the <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" /> objects contained in the <see cref="P:System.IdentityModel.Configuration.IdentityConfiguration.SecurityTokenHandlerCollectionManager" /> to be consistent with the property values on this <see cref="T:System.IdentityModel.Configuration.IdentityConfiguration" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should be invoked prior to using the token handlers to process tokens. The <xref:System.IdentityModel.Configuration.IdentityConfiguration.SecurityTokenHandlerCollectionManager%2A> property specifies the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager> that contains the security token handlers configured for this instance.  
-  
+This method should be invoked prior to using the token handlers to process tokens. The <xref:System.IdentityModel.Configuration.IdentityConfiguration.SecurityTokenHandlerCollectionManager%2A> property specifies the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager> that contains the security token handlers configured for this instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This method is invoked more than once.</exception>
@@ -508,10 +508,10 @@
         <summary>Loads the settings for this <see cref="T:System.IdentityModel.Configuration.IdentityConfiguration" /> instance from the application or Web configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is no configuration file, if the named section does not exist, or if `element` is `null`, then no exception is thrown; instead the instance is loaded with a set of default values. This method calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.LoadHandlers%2A> method to load the token handler configuration.  
-  
+If there is no configuration file, if the named section does not exist, or if `element` is `null`, then no exception is thrown; instead the instance is loaded with a set of default values. This method calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.LoadHandlers%2A> method to load the token handler configuration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -583,10 +583,10 @@
         <returns>The handler collection manager.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.LoadHandlerConfiguration%2A> methods to configure the token handlers.  
-  
+This method calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.LoadHandlerConfiguration%2A> methods to configure the token handlers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -699,10 +699,10 @@
         <value>The collection of token handlers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To register your own token handler, add it to this collection.  
-  
+To register your own token handler, add it to this collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -724,10 +724,10 @@
         <value>The X.509 certificate to use as the service certificate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the service certificate that is used to initialize the <xref:System.IdentityModel.Selectors.SecurityTokenResolver> specified in the <xref:System.IdentityModel.Configuration.IdentityConfiguration.ServiceTokenResolver%2A> property and the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>.  
-  
+This is the service certificate that is used to initialize the <xref:System.IdentityModel.Selectors.SecurityTokenResolver> specified in the <xref:System.IdentityModel.Configuration.IdentityConfiguration.ServiceTokenResolver%2A> property and the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

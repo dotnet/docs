@@ -27,14 +27,14 @@
     <summary>Represents the abstract base class for composable part catalogs, which collect and return <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartDefinition" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
- This type is thread safe.  
-  
+ 
+This type is thread safe.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,15 +73,15 @@
         <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog>. The `Dispose` method leaves the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog>. The `Dispose` method leaves the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <returns>A collection of <see cref="T:System.Tuple`2" /> containing the <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" /> objects and their associated <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartDefinition" /> objects for objects that match the constraint specified by <paramref name="definition" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides of this method should never return `null`. If no <xref:System.ComponentModel.Composition.Primitives.ExportDefinition> matches the conditions defined by `definition`, return an empty <xref:System.Collections.Generic.IEnumerable%601> object.  
-  
+Overrides of this method should never return `null`. If no <xref:System.ComponentModel.Composition.Primitives.ExportDefinition> matches the conditions defined by `definition`, return an empty <xref:System.Collections.Generic.IEnumerable%601> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" /> object has been disposed of.</exception>
@@ -185,10 +185,10 @@
         <value>The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartDefinition" /> contained in the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides of this property should never return `null`.  
-  
+Overrides of this property should never return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" /> object has been disposed of.</exception>
@@ -213,10 +213,10 @@
         <returns>An enumerator that can be used to iterate through the catalog.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Primitives.ComposablePartCatalog> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

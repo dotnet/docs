@@ -14,19 +14,19 @@
     <summary>The exception that is thrown when line number information is available for a serialization error.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception is thrown when the serializer encounters an error. This exception allows the serializer to return information about the location and type of the error.  
+This exception is thrown when the serializer encounters an error. This exception allows the serializer to return information about the location and type of the error.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example throws a <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerException> with an example message and a <xref:System.CodeDom.CodeLinePragma>.  
-  
- [!code-cpp[CodeDomSerializerExceptionExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/CodeDomSerializerExceptionExample/CPP/source.cpp#1)]
- [!code-csharp[CodeDomSerializerExceptionExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/CodeDomSerializerExceptionExample/CS/source.cs#1)]
- [!code-vb[CodeDomSerializerExceptionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CodeDomSerializerExceptionExample/VB/source.vb#1)]  
-  
+The following code example throws a <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerException> with an example message and a <xref:System.CodeDom.CodeLinePragma>.  
+ 
+[!code-cpp[CodeDomSerializerExceptionExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/CodeDomSerializerExceptionExample/CPP/source.cpp#1)]
+[!code-csharp[CodeDomSerializerExceptionExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/CodeDomSerializerExceptionExample/CS/source.cs#1)]
+[!code-vb[CodeDomSerializerExceptionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CodeDomSerializerExceptionExample/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

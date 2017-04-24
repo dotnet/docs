@@ -18,23 +18,23 @@
     <summary>Represents the scrollbar of a chart axis.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar> class is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ScrollBar%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> class.  
-  
- Scrollbars allow the end user to scroll through data when a subset of data is being displayed. A subset of data is referred to as a view, and is represented by the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class.  
-  
- Scrollbars are only shown when zooming occurs. In other words, even if a scrollbar is enabled, it will only be visible when a view is being displayed.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar> class is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ScrollBar%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> class.  
+ 
+Scrollbars allow the end user to scroll through data when a subset of data is being displayed. A subset of data is referred to as a view, and is represented by the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class.  
+ 
+Scrollbars are only shown when zooming occurs. In other words, even if a scrollbar is enabled, it will only be visible when a view is being displayed.  
+ 
 > [!IMPORTANT]
 >  To fix the position of scrollbars, the plotting area position of a chart area must not be set to <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A>. To explicitly set the plotting area position, use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.InnerPlotPosition%2A> property.  
-  
- To display scrollbars when a chart is first displayed, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class properties and methods so that a view is initially displayed to end users.  
-  
- The background color, button color and width of scrollbars can be set using this <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar> class.  
-  
- Note that there are two main types of scrolling: large scrolling, which occurs when the end user clicks in the background of a scrollbar—that is, that part of a scrollbar not covered by the thumb; and small scrolling, which occurs when the end user clicks a left/right or up/down button. To control the large scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Size%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ScaleView%2A> object. To set the small scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SmallScrollSize%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class.  
-  
+ 
+To display scrollbars when a chart is first displayed, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class properties and methods so that a view is initially displayed to end users.  
+ 
+The background color, button color and width of scrollbars can be set using this <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar> class.  
+ 
+Note that there are two main types of scrolling: large scrolling, which occurs when the end user clicks in the background of a scrollbar—that is, that part of a scrollbar not covered by the thumb; and small scrolling, which occurs when the end user clicks a left/right or up/down button. To control the large scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Size%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ScaleView%2A> object. To set the small scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SmallScrollSize%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,12 +114,12 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the background color of the scrollbar. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be set to any valid ARGB (alpha, red, green, blue) color.  
-  
- If the value of this property is <xref:System.Drawing.Color>, the background color of the scrollbar will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackColor%2A> property value of the chart area the scrollbar is being used for.  
-  
+This property can be set to any valid ARGB (alpha, red, green, blue) color.  
+ 
+If the value of this property is <xref:System.Drawing.Color>, the background color of the scrollbar will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackColor%2A> property value of the chart area the scrollbar is being used for.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,12 +155,12 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the color of the scrollbar buttons.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to get or set the color of the left/right, up/down, reset and thumb buttons of a scrollbar.  
-  
- If the value of this property is <xref:System.Drawing.Color>, the color used for the buttons will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
-  
+Use this property to get or set the color of the left/right, up/down, reset and thumb buttons of a scrollbar.  
+ 
+If the value of this property is <xref:System.Drawing.Color>, the color used for the buttons will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,12 +372,12 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the line color of the scrollbar. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the color used for the arrows in up/down and left/right buttons, the symbol inside the reset button, as well as the border of the entire scrollbar.  
-  
- If the value of this property is <xref:System.Drawing.Color>, the line color used will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
-  
+This property represents the color used for the arrows in up/down and left/right buttons, the symbol inside the reset button, as well as the border of the entire scrollbar.  
+ 
+If the value of this property is <xref:System.Drawing.Color>, the line color used will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -407,15 +407,15 @@
         <value>The width of a scrollbar in pixels. The default value is 14 pixels. The value can range from 5 to 20 pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets or sets the width of a scrollbar, which can be from 5 to 20 pixels.  
-  
- Set this property to zero to disable a scrollbar.  
-  
+Gets or sets the width of a scrollbar, which can be from 5 to 20 pixels.  
+ 
+Set this property to zero to disable a scrollbar.  
+ 
 > [!IMPORTANT]
 >  To fix the position of scrollbars, the plotting area position of a chart area must not be set to <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A>. To explicitly set the plotting area position, use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.InnerPlotPosition%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

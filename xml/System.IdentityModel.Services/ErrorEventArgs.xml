@@ -14,12 +14,12 @@
     <summary>Provides data for the <see cref="E:System.IdentityModel.Services.SessionAuthenticationModule.SignOutError" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.Services.ErrorEventArgs> derives from the <xref:System.ComponentModel.CancelEventArgs> class, which provides data for a cancelable event. In an event handler you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` to cancel the event. For the <xref:System.IdentityModel.Services.SessionAuthenticationModule.SignOutError> event, setting this property to `true` indicates that processing of the sign-out request should stop and the exception should not be propagated to the client.  
-  
- The <xref:System.IdentityModel.Services.ErrorEventArgs.Exception%2A> property contains the underlying exception that resulted in the event being raised.  
-  
+<xref:System.IdentityModel.Services.ErrorEventArgs> derives from the <xref:System.ComponentModel.CancelEventArgs> class, which provides data for a cancelable event. In an event handler you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` to cancel the event. For the <xref:System.IdentityModel.Services.SessionAuthenticationModule.SignOutError> event, setting this property to `true` indicates that processing of the sign-out request should stop and the exception should not be propagated to the client.  
+ 
+The <xref:System.IdentityModel.Services.ErrorEventArgs.Exception%2A> property contains the underlying exception that resulted in the event being raised.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.ErrorEventArgs" /> class with the specified exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the new <xref:System.IdentityModel.Services.ErrorEventArgs> instance is initialized to `false`; the event is not cancelled.  
-  
+The <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the new <xref:System.IdentityModel.Services.ErrorEventArgs> instance is initialized to `false`; the event is not cancelled.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -90,10 +90,10 @@
         <value>The exception that occurred.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The exception that caused the event to be raised.  
-  
+The exception that caused the event to be raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>

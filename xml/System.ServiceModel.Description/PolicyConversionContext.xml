@@ -14,37 +14,37 @@
     <summary>Defines a class used to retrieve binding assertions in metadata and to attach implementing binding elements at the appropriate scope.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An implementation of the <xref:System.ServiceModel.Description.PolicyConversionContext> is passed to <xref:System.ServiceModel.Description.IPolicyExportExtension> and <xref:System.ServiceModel.Description.IPolicyImportExtension> objects to export and import, respectively, custom policy assertions to and from metadata. On export, a collection of policy assertions are retrieved in order to add custom assertions. On import, the assertions are retrieved in order to import specific ones and configure binding elements appropriately.  
-  
+An implementation of the <xref:System.ServiceModel.Description.PolicyConversionContext> is passed to <xref:System.ServiceModel.Description.IPolicyExportExtension> and <xref:System.ServiceModel.Description.IPolicyImportExtension> objects to export and import, respectively, custom policy assertions to and from metadata. On export, a collection of policy assertions are retrieved in order to add custom assertions. On import, the assertions are retrieved in order to import specific ones and configure binding elements appropriately.  
+ 
 -   The <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A> method returns all policy assertions that are for the binding.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.PolicyConversionContext.GetFaultBindingAssertions%2A> method returns all policy assertions for a specific fault message.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A> method returns all policy assertions for a specific message.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> method returns all policy assertions for a specific operation.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.PolicyConversionContext.BindingElements%2A> property gets the binding elements for the binding being described or configured.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property gets the contract description for which the binding is being described or configured.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows an implementation of the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method that writes all policy assertions to the console. The code comments describe how to locate a specific custom policy assertion, create and insert an implementing binding element, and remove the assertion from the collection.  
-  
- [!code-csharp[S_UEPolicyConversionContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#0)]  
-  
- The following code example shows how to register <xref:System.ServiceModel.Description.IPolicyImportExtension> implementations using the `<policyImporters>` configuration section.  
-  
- <!-- TODO: review snippet reference [!code[S_UEPolicyConversionContext#100](~/samples/snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]  -->  
-  
- The following code example demonstrates how a custom binding element can implement <xref:System.ServiceModel.Description.IPolicyExportExtension> to attach a custom policy assertion to the binding assertions.  
-  
- [!code-csharp[S_UEPolicyConversionContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#1)]  
-  
+The following code example shows an implementation of the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method that writes all policy assertions to the console. The code comments describe how to locate a specific custom policy assertion, create and insert an implementing binding element, and remove the assertion from the collection.  
+ 
+[!code-csharp[S_UEPolicyConversionContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#0)]  
+ 
+The following code example shows how to register <xref:System.ServiceModel.Description.IPolicyImportExtension> implementations using the `<policyImporters>` configuration section.  
+ 
+<!-- TODO: review snippet reference [!code[S_UEPolicyConversionContext#100](~/samples/snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]  -->  
+ 
+The following code example demonstrates how a custom binding element can implement <xref:System.ServiceModel.Description.IPolicyExportExtension> to attach a custom policy assertion to the binding assertions.  
+ 
+[!code-csharp[S_UEPolicyConversionContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,25 +121,25 @@
         <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> of type <see cref="T:System.Xml.XmlElement" /> that contains binding policy assertions.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A> is not a copy. You can add and remove assertions as necessary.  
+The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A> is not a copy. You can add and remove assertions as necessary.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows an implementation of the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method that writes all policy assertions to the console. The code comments describe how to locate a specific custom policy assertion, create and insert an implementing binding element, and remove the assertion from the collection.  
-  
- [!code-csharp[S_UEPolicyConversionContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#0)]  
-  
- The following code example shows how to register <xref:System.ServiceModel.Description.IPolicyImportExtension> implementations using the `<policyImporters>` configuration section.  
-  
- <!-- TODO: review snippet reference [!code[S_UEPolicyConversionContext#100](~/samples/snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]  -->  
-  
- The following code example demonstrates how a custom binding element can implement <xref:System.ServiceModel.Description.IPolicyExportExtension> to attach a custom policy assertion to the binding assertions.  
-  
- [!code-csharp[S_UEPolicyConversionContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#1)]  
-  
+The following code example shows an implementation of the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method that writes all policy assertions to the console. The code comments describe how to locate a specific custom policy assertion, create and insert an implementing binding element, and remove the assertion from the collection.  
+ 
+[!code-csharp[S_UEPolicyConversionContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#0)]  
+ 
+The following code example shows how to register <xref:System.ServiceModel.Description.IPolicyImportExtension> implementations using the `<policyImporters>` configuration section.  
+ 
+<!-- TODO: review snippet reference [!code[S_UEPolicyConversionContext#100](~/samples/snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]  -->  
+ 
+The following code example demonstrates how a custom binding element can implement <xref:System.ServiceModel.Description.IPolicyExportExtension> to attach a custom policy assertion to the binding assertions.  
+ 
+[!code-csharp[S_UEPolicyConversionContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <returns>A collection of policy assertions for the specified SOAP fault.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetFaultBindingAssertions%2A> is not a copy. You can add and remove assertions as necessary.  
-  
+The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetFaultBindingAssertions%2A> is not a copy. You can add and remove assertions as necessary.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <returns>A collection of policy assertions for the specified message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A> is not a copy. You can add and remove assertions as needed.  
-  
+The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A> is not a copy. You can add and remove assertions as needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <returns>The policy assertions for the operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> is not a copy. You can add and remove assertions as necessary.  
-  
+The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> is not a copy. You can add and remove assertions as necessary.  
+ 
  ]]></format>
         </remarks>
       </Docs>

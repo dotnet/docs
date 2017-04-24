@@ -17,14 +17,14 @@
     <summary>Specifies the known system colors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.KnownColor> enumeration to print out the names and colors of all its values. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `DisplayKnownColors` method in the form's `Paint` event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#6)]
- [!code-csharp[System.Drawing.MiscExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#6)]
- [!code-vb[System.Drawing.MiscExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#6)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.KnownColor> enumeration to print out the names and colors of all its values. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `DisplayKnownColors` method in the form's `Paint` event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#6)]
+[!code-csharp[System.Drawing.MiscExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#6)]
+[!code-vb[System.Drawing.MiscExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

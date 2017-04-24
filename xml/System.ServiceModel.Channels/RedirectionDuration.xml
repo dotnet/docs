@@ -166,10 +166,10 @@
         <value>A <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> that contains a value that represents a permanent redirection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A permanent redirection duration indicates the new location(s) specified should be used permanently for the given scope.  
-  
+A permanent redirection duration indicates the new location(s) specified should be used permanently for the given scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,10 +191,10 @@
         <value>A <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> that contains a value that represents a temporary redirection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A temporary redirection duration indicates the new location(s) that are valid for a limited time frame for the given scope. This is the default value for <xref:System.ServiceModel.Channels.RedirectionDuration>.  
-  
+A temporary redirection duration indicates the new location(s) that are valid for a limited time frame for the given scope. This is the default value for <xref:System.ServiceModel.Channels.RedirectionDuration>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

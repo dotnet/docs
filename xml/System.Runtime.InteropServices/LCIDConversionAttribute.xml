@@ -27,21 +27,21 @@
     <summary>Indicates that a method's unmanaged signature expects a locale identifier (LCID) parameter.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can apply this attribute to methods.  
+You can apply this attribute to methods.  
+ 
+This attribute indicates that the marshaler should expect an LCID to be passed after the designated method argument. When calls are made from managed to unmanaged code, the marshaler supplies the LCID argument automatically.  
+ 
   
- This attribute indicates that the marshaler should expect an LCID to be passed after the designated method argument. When calls are made from managed to unmanaged code, the marshaler supplies the LCID argument automatically.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates different signature translations based on different values supplied to `LCIDConversionAttribute`.  
-  
- [!code-cpp[LCIDConversionAttributeSample2#1](~/samples/snippets/cpp/VS_Snippets_CLR/LCIDConversionAttributeSample2/CPP/lcidattrsample.cpp#1)]
- [!code-csharp[LCIDConversionAttributeSample2#1](~/samples/snippets/csharp/VS_Snippets_CLR/LCIDConversionAttributeSample2/CS/lcidattrsample.cs#1)]
- [!code-vb[LCIDConversionAttributeSample2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/LCIDConversionAttributeSample2/VB/lcidattrsample.vb#1)]  
-  
+The following example demonstrates different signature translations based on different values supplied to `LCIDConversionAttribute`.  
+ 
+[!code-cpp[LCIDConversionAttributeSample2#1](~/samples/snippets/cpp/VS_Snippets_CLR/LCIDConversionAttributeSample2/CPP/lcidattrsample.cpp#1)]
+[!code-csharp[LCIDConversionAttributeSample2#1](~/samples/snippets/csharp/VS_Snippets_CLR/LCIDConversionAttributeSample2/CS/lcidattrsample.cs#1)]
+[!code-vb[LCIDConversionAttributeSample2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/LCIDConversionAttributeSample2/VB/lcidattrsample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

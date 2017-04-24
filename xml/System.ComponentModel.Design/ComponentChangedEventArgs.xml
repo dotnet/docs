@@ -24,31 +24,31 @@
     <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" /> event. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.Design.ComponentChangedEventArgs> provides data for a <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event. The <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event notifies the <xref:System.ComponentModel.Design.IComponentChangeService> and registered event handlers that a particular component in the currently active document has been changed.  
-  
- A <xref:System.ComponentModel.Design.ComponentChangedEventArgs> provides the following information:  
-  
+<xref:System.ComponentModel.Design.ComponentChangedEventArgs> provides data for a <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event. The <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event notifies the <xref:System.ComponentModel.Design.IComponentChangeService> and registered event handlers that a particular component in the currently active document has been changed.  
+ 
+A <xref:System.ComponentModel.Design.ComponentChangedEventArgs> provides the following information:  
+ 
 -   A <xref:System.ComponentModel.Design.ComponentChangedEventArgs.Component%2A> property that indicates the component that was modified.  
-  
+ 
 -   A <xref:System.ComponentModel.Design.ComponentChangedEventArgs.Member%2A> property that indicates the member that was changed.  
-  
+ 
 -   A <xref:System.ComponentModel.Design.ComponentChangedEventArgs.NewValue%2A> property that indicates the new value of the member.  
-  
+ 
 -   An <xref:System.ComponentModel.Design.ComponentChangedEventArgs.OldValue%2A> property that indicates the old value of the member.  
+ 
+Component designers typically raise the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event automatically when components are added, removed, or modified. A <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event is not raised during form load and unload because changes at this time are expected. A component designer might raise the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event after it changes a property of the component; this ensures that the Properties window will display the updated property.  
+ 
   
- Component designers typically raise the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event automatically when components are added, removed, or modified. A <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event is not raised during form load and unload because changes at this time are expected. A component designer might raise the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event after it changes a property of the component; this ensures that the Properties window will display the updated property.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates creating a <xref:System.ComponentModel.Design.ComponentChangedEventArgs>.  
-  
- [!code-cpp[ComponentChangedEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentChangedEventArgsExample/CPP/componentchangedeventargsexample.cpp#1)]
- [!code-csharp[ComponentChangedEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentChangedEventArgsExample/CS/componentchangedeventargsexample.cs#1)]
- [!code-vb[ComponentChangedEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentChangedEventArgsExample/VB/componentchangedeventargsexample.vb#1)]  
-  
+The following example demonstrates creating a <xref:System.ComponentModel.Design.ComponentChangedEventArgs>.  
+ 
+[!code-cpp[ComponentChangedEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentChangedEventArgsExample/CPP/componentchangedeventargsexample.cpp#1)]
+[!code-csharp[ComponentChangedEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentChangedEventArgsExample/CS/componentchangedeventargsexample.cs#1)]
+[!code-vb[ComponentChangedEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentChangedEventArgsExample/VB/componentchangedeventargsexample.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -84,10 +84,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The designer for a component calls this constructor after it has changed a property of the component. This ensures that the Properties window will display the property's updated value.  
-  
+The designer for a component calls this constructor after it has changed a property of the component. This ensures that the Properties window will display the property's updated value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <value>A <see cref="T:System.ComponentModel.MemberDescriptor" /> that indicates the member that has been changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be `null` if the member is unknown.  
-  
+This property can be `null` if the member is unknown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <value>The new value of the changed member. This property can be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property has meaning only if the member is not `null`.  
-  
+This property has meaning only if the member is not `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <value>The old value of the changed member. This property can be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property has meaning only if the member is not `null`.  
-  
+This property has meaning only if the member is not `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

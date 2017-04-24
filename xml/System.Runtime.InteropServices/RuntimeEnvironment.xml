@@ -24,14 +24,14 @@
     <summary>Provides a collection of <see langword="static" /> methods that return information about the common language runtime environment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to call many of the methods defined by the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
-  
- [!code-cpp[RuntimeEnvironment#1](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#1)]
- [!code-csharp[RuntimeEnvironment#1](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#1)]
- [!code-vb[RuntimeEnvironment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#1)]  
-  
+This example shows how to call many of the methods defined by the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
+ 
+[!code-cpp[RuntimeEnvironment#1](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#1)]
+[!code-csharp[RuntimeEnvironment#1](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#1)]
+[!code-vb[RuntimeEnvironment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,14 +84,14 @@
           <see langword="true" /> if the assembly is loaded in the global assembly cache; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates calling the <xref:System.Runtime.InteropServices.RuntimeEnvironment.FromGlobalAccessCache%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
-  
- [!code-cpp[RuntimeEnvironment#2](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#2)]
- [!code-csharp[RuntimeEnvironment#2](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#2)]
- [!code-vb[RuntimeEnvironment#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#2)]  
-  
+The following example demonstrates calling the <xref:System.Runtime.InteropServices.RuntimeEnvironment.FromGlobalAccessCache%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
+ 
+[!code-cpp[RuntimeEnvironment#2](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#2)]
+[!code-csharp[RuntimeEnvironment#2](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#2)]
+[!code-vb[RuntimeEnvironment#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,14 +124,14 @@
         <returns>A string that contains the path to the directory where the common language runtime is installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates calling the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
-  
- [!code-cpp[RuntimeEnvironment#3](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#3)]
- [!code-csharp[RuntimeEnvironment#3](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#3)]
- [!code-vb[RuntimeEnvironment#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#3)]  
-  
+The following example demonstrates calling the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
+ 
+[!code-cpp[RuntimeEnvironment#3](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#3)]
+[!code-csharp[RuntimeEnvironment#3](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#3)]
+[!code-vb[RuntimeEnvironment#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for accessing files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
@@ -173,12 +173,12 @@
         <returns>An unmanaged pointer to the requested interface.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is similar to calling the  method on the  interface that represents this runtime.  
-  
- The following table shows the supported combinations for `clsid` and `riid`.  
-  
+This method is similar to calling the  method on the  interface that represents this runtime.  
+ 
+The following table shows the supported combinations for `clsid` and `riid`.  
+ 
 |`clsid`|`riid`|  
 |-------------|------------|  
 |CLSID_CorMetaDataDispenser|IID_IMetaDataDispenser, IID_IMetaDataDispenserEx|  
@@ -187,9 +187,9 @@
 |CLSID_CLRRuntimeHost|IID_CLRRuntimeHost (not valid for the common language runtime that is provided by the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]), IID_CLRRuntimeHost3|  
 |CLSID_TypeNameFactory|IID_TypeNameFactory|  
 |CLSID_CLRStrongName|IID_CLRStrongName|  
-  
- <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr%2A> is similar to the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject%2A> method.  
-  
+ 
+<xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr%2A> is similar to the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkId=144867) failure.</exception>
@@ -232,10 +232,10 @@
         <returns>An object that represents the specified unmanaged COM object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject%2A> is similar to the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr%2A> method.  
-  
+<xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject%2A> is similar to the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkId=144867) failure.</exception>
@@ -270,14 +270,14 @@
         <returns>A string containing the version number of the common language runtime.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates calling the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
-  
- [!code-cpp[RuntimeEnvironment#4](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#4)]
- [!code-csharp[RuntimeEnvironment#4](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#4)]
- [!code-vb[RuntimeEnvironment#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#4)]  
-  
+The following example demonstrates calling the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
+ 
+[!code-cpp[RuntimeEnvironment#4](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#4)]
+[!code-csharp[RuntimeEnvironment#4](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#4)]
+[!code-vb[RuntimeEnvironment#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,14 +309,14 @@
         <value>The path to the system configuration file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
-  
- [!code-cpp[RuntimeEnvironment#5](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#5)]
- [!code-csharp[RuntimeEnvironment#5](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#5)]
- [!code-vb[RuntimeEnvironment#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#5)]  
-  
+The following code example demonstrates the <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
+ 
+[!code-cpp[RuntimeEnvironment#5](~/samples/snippets/cpp/VS_Snippets_CLR/RuntimeEnvironment/cpp/RuntimeEnvironment.cpp#5)]
+[!code-csharp[RuntimeEnvironment#5](~/samples/snippets/csharp/VS_Snippets_CLR/RuntimeEnvironment/CS/RuntimeEnvironment.cs#5)]
+[!code-vb[RuntimeEnvironment#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/RuntimeEnvironment/VB/RuntimeEnvironment.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for accessing files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>

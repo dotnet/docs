@@ -76,10 +76,10 @@
         <value>The command to run.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The command to run can be a system command, such as attrib, or an executable, such as program.exe.  
-  
+The command to run can be a system command, such as attrib, or an executable, such as program.exe.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -147,10 +147,10 @@
         <value>A regular expression to spot error lines in the tool output.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is useful for tools that produce unusually formatted output.  
-  
+This property is useful for tools that produce unusually formatted output.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -173,10 +173,10 @@
         <value>A regular expression to spot warning lines in the tool output.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is useful for tools that produce unusually formatted output.  
-  
+This property is useful for tools that produce unusually formatted output.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -207,10 +207,10 @@
         <returns>The exit code that the tool returns.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If errors were logged and the tool has an exit code of zero, then this method sets the exit code to -1.  
-  
+If errors were logged and the tool has an exit code of zero, then this method sets the exit code to -1.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -254,10 +254,10 @@
         <returns>The working directory to use for the tool process.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the working directory is UNC, returns the system path %SystemRoot%\System32.  
-  
+If the working directory is UNC, returns the system path %SystemRoot%\System32.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -282,10 +282,10 @@
           <see langword="true" /> if exit code was ignored; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will only be called with a non-zero exit code.  
-  
+This method will only be called with a non-zero exit code.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -329,10 +329,10 @@
           <see langword="true" /> if the <c>Exec</c> task should ignore the standard error and warning format and should log errors and warnings as regular messages; <see langword="false" /> if the <c>Exec</c> task should log the errors and warnings that match the standard error and warning format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`.  
-  
+The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -430,10 +430,10 @@
         <value>The output items from the task.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Exec` task does not set the output items. Instead, you can provide the output items as if they were set by the task, so that they can be used later in the project.  
-  
+The `Exec` task does not set the output items. Instead, you can provide the output items as if they were set by the task, so that they can be used later in the project.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

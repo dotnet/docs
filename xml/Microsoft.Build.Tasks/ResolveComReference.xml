@@ -14,10 +14,10 @@
     <summary>Implements the <c>ResolveComReference</c> task. Use the <c>ResolveComReference</c> element in your project file to create and execute this task. For usage and parameter information, see [ResolveComReference Task](http://msdn.microsoft.com/library/c9bf5fcf-6453-40ea-b50f-a212adc3e9b5).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- On a 64-bit machine, Framework64/\<version>/msbuild cannot resolve COM objects registered as 32-bit components. For example, if you register a COM object with regsvr32 and then try to build a project targeting the x86 platform with Framework64/\<version>/msbuild, the build is unable to resolve the COM object. If instead you build with Framework/\<version>/msbuild, the build is able to resolve the COM object.  
-  
+On a 64-bit machine, Framework64/\<version>/msbuild cannot resolve COM objects registered as 32-bit components. For example, if you register a COM object with regsvr32 and then try to build a project targeting the x86 platform with Framework64/\<version>/msbuild, the build is unable to resolve the COM object. If instead you build with Framework/\<version>/msbuild, the build is able to resolve the COM object.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -374,10 +374,10 @@
         <value>The type library file path to COM references.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property may contain item metadata. For more information, see the section "TypeLibFiles Item Metadata" in [ResolveComReference Task](http://msdn.microsoft.com/library/c9bf5fcf-6453-40ea-b50f-a212adc3e9b5).  
-  
+This property may contain item metadata. For more information, see the section "TypeLibFiles Item Metadata" in [ResolveComReference Task](http://msdn.microsoft.com/library/c9bf5fcf-6453-40ea-b50f-a212adc3e9b5).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -400,10 +400,10 @@
         <value>The type library names to resolve.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property may contain item metadata. For more information, see the section "TypeLibFiles Item Metadata" in [ResolveComReference Task](http://msdn.microsoft.com/library/c9bf5fcf-6453-40ea-b50f-a212adc3e9b5).  
-  
+This property may contain item metadata. For more information, see the section "TypeLibFiles Item Metadata" in [ResolveComReference Task](http://msdn.microsoft.com/library/c9bf5fcf-6453-40ea-b50f-a212adc3e9b5).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -28,39 +28,39 @@
     <summary>Represents an X.509 store, which is a physical store where certificates are persisted and managed. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this class to work with an X.509 store.  
-  
+Use this class to work with an X.509 store.  
+ 
 > [!IMPORTANT]
 >  Starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], this type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
 >   
 >  For apps that target the [!INCLUDE[net_v452](~/includes/net-v452-md.md)] and earlier versions, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class does not implement the <xref:System.IDisposable> interface and therefore does not have a `Dispose` method.  
+ 
   
-   
-  
+ 
 ## Examples  
- This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
-  
- The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
-  
- **Example 1**  
-  
- This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
-  
- The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
-  
- [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
- [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
-  
- **Example 2**  
-  
- This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
+ 
+The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
+ 
+**Example 1**  
+ 
+This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
+ 
+The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+ 
+[!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
+[!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
+ 
+**Example 2**  
+ 
+This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,19 +89,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the personal certificates of the current user store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object using the personal X.509 certificate store for the current user.  
+Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object using the personal X.509 certificate store for the current user.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
@@ -134,12 +134,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using an Intptr handle to an <see langword="HCERTSTORE" /> store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to provide compatibility with the unmanaged Microsoft Cryptographic API (CAPI).  
-  
- For more information about the `HCERTSTORE` handle, see the unmanaged CAPI documentation in the Platform SDK section of the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
-  
+Use this constructor to provide compatibility with the unmanaged Microsoft Cryptographic API (CAPI).  
+ 
+For more information about the `HCERTSTORE` handle, see the unmanaged CAPI documentation in the Platform SDK section of the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="storeHandle" /> parameter is <see langword="null" />.</exception>
@@ -169,19 +169,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the specified <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object, specifying the store location, which is either the location for the current user or the local computer.  
+Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object, specifying the store location, which is either the location for the current user or the local computer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
@@ -209,19 +209,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the specified <see cref="T:System.Security.Cryptography.X509Certificates.StoreName" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an X.509 store for the current user that corresponds to values enumerated by <xref:System.Security.Cryptography.X509Certificates.StoreName>.  
+Use this constructor to create an X.509 store for the current user that corresponds to values enumerated by <xref:System.Security.Cryptography.X509Certificates.StoreName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
@@ -249,19 +249,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the specified store name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object using a particular X.509 store name for the current user. To create a new store, specify a name that does not exist. A new store will be created with that name.  
+Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object using a particular X.509 store name for the current user. To create a new store, specify a name that does not exist. A new store will be created with that name.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
@@ -296,19 +296,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the specified <see cref="T:System.Security.Cryptography.X509Certificates.StoreName" /> and <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" /> values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object, specifying both the store name and the store location.  
+Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object, specifying both the store name and the store location.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -345,19 +345,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using a string that represents a value from the <see cref="T:System.Security.Cryptography.X509Certificates.StoreName" /> enumeration and a value from the <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" /> enumeration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object using a store name and location. To create a new store, specify a name that does not exist. A new store will be created with that name.  
+Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object using a store name and location. To create a new store, specify a name that does not exist. A new store will be created with that name.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -395,19 +395,19 @@
         <summary>Adds a certificate to an X.509 certificate store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to add a single certificate to an X.509 store.  
+Use this method to add a single certificate to an X.509 store.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -446,19 +446,19 @@
         <summary>Adds a collection of certificates to an X.509 certificate store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds more than one certificate to an X.509 certificate store; if one certificate addition fails, the operation is reverted and no certificates are added.  
+This method adds more than one certificate to an X.509 certificate store; if one certificate addition fails, the operation is reverted and no certificates are added.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -494,34 +494,34 @@
         <value>A collection of certificates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a snapshot of the X.509 certificate store. Note that subsequent <xref:System.Security.Cryptography.X509Certificates.X509Store.Add%2A> or <xref:System.Security.Cryptography.X509Certificates.X509Store.Remove%2A> operations performed on the store will not have any effect on the collection that is returned. This snapshot is recalculated each time the property is called, so the use of this property inside an iterative function is not recommended.  
+This method returns a snapshot of the X.509 certificate store. Note that subsequent <xref:System.Security.Cryptography.X509Certificates.X509Store.Add%2A> or <xref:System.Security.Cryptography.X509Certificates.X509Store.Remove%2A> operations performed on the store will not have any effect on the collection that is returned. This snapshot is recalculated each time the property is called, so the use of this property inside an iterative function is not recommended.  
+ 
   
-   
-  
+ 
 ## Examples  
- This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
-  
- The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
-  
- **Example 1**  
-  
- This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
-  
- The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
-  
- [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
- [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
-  
- **Example 2**  
-  
- This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
+ 
+The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
+ 
+**Example 1**  
+ 
+This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
+ 
+The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+ 
+[!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
+[!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
+ 
+**Example 2**  
+ 
+This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.StorePermission">for enumerating certificates in an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
@@ -549,19 +549,19 @@
         <summary>Closes an X.509 certificate store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method releases all resources associated with the store. You should always close an X.509 certificate store after use.  
+This method releases all resources associated with the store. You should always close an X.509 certificate store after use.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,12 +593,12 @@
         <summary>Releases the resources used by this <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  <xref:System.Security.Cryptography.X509Certificates.X509Store> implements the <xref:System.IDisposable> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class does not implement this interface, and therefore the `Dispose` method does not exist.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -630,34 +630,34 @@
         <value>The location of the certificate store.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the X.509 certificate store location of either the store for the current user or the store for the local computer.  
+This property returns the X.509 certificate store location of either the store for the current user or the store for the local computer.  
+ 
   
-   
-  
+ 
 ## Examples  
- This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
-  
- The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
-  
- **Example 1**  
-  
- This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
-  
- The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
-  
- [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
- [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
-  
- **Example 2**  
-  
- This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
+ 
+The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
+ 
+**Example 1**  
+ 
+This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
+ 
+The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+ 
+[!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
+[!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
+ 
+**Example 2**  
+ 
+This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -689,34 +689,34 @@
         <value>The name of the certificate store.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the X.509 certificate store name. This value can indicate the type of certificates stored, such as root certificates or certificates from trusted publishers.  
+This property returns the X.509 certificate store name. This value can indicate the type of certificates stored, such as root certificates or certificates from trusted publishers.  
+ 
   
-   
-  
+ 
 ## Examples  
- This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
-  
- The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
-  
- **Example 1**  
-  
- This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
-  
- The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
-  
- [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
- [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
-  
- **Example 2**  
-  
- This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
+ 
+The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
+ 
+**Example 1**  
+ 
+This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
+ 
+The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+ 
+[!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
+[!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
+ 
+**Example 2**  
+ 
+This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -751,19 +751,19 @@
         <summary>Opens an X.509 certificate store or creates a new store, depending on <see cref="T:System.Security.Cryptography.X509Certificates.OpenFlags" /> flag settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to open an existing X.509 store. Note that you must have additional permissions, specified by <xref:System.Security.Permissions.StorePermissionFlags>, to enumerate the certificates in the store. You can create a new store by passing a store name that does not exist to the class constructor, and then using any of the <xref:System.Security.Cryptography.X509Certificates.OpenFlags> flags except <xref:System.Security.Cryptography.X509Certificates.OpenFlags>.  
+Use this method to open an existing X.509 store. Note that you must have additional permissions, specified by <xref:System.Security.Permissions.StorePermissionFlags>, to enumerate the certificates in the store. You can create a new store by passing a store name that does not exist to the class constructor, and then using any of the <xref:System.Security.Cryptography.X509Certificates.OpenFlags> flags except <xref:System.Security.Cryptography.X509Certificates.OpenFlags>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The store is unreadable.</exception>
@@ -802,19 +802,19 @@
         <summary>Removes a certificate from an X.509 certificate store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to remove a single certificate from an X.509 store.  
+Use this method to remove a single certificate from an X.509 store.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -853,23 +853,23 @@
         <summary>Removes a range of certificates from an X.509 certificate store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+ 
+This method removes more than one certificate from an X.509 certificate store; if one certificate removal fails, the operation is reverted and no certificates are removed.  
+ 
   
- This method removes more than one certificate from an X.509 certificate store; if one certificate removal fails, the operation is reverted and no certificates are removed.  
-  
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -905,12 +905,12 @@
         <value>A handle to an <see langword="HCERTSTORE" /> store.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.X509Certificates.X509Store.StoreHandle%2A> property to provide compatibility with the unmanaged Microsoft Cryptographic API (CAPI).  
-  
- For more information about the `HCERTSTORE` handle, see the unmanaged CAPI documentation in the Platform SDK section of the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
-  
+Use the <xref:System.Security.Cryptography.X509Certificates.X509Store.StoreHandle%2A> property to provide compatibility with the unmanaged Microsoft Cryptographic API (CAPI).  
+ 
+For more information about the `HCERTSTORE` handle, see the unmanaged CAPI documentation in the Platform SDK section of the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The store is not open.</exception>

@@ -14,10 +14,10 @@
     <summary>Provides an abstract class for supporting typography properties for <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The text layout client uses the <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties> class to generate a set of features that are processed by the OpenType layout engine.  
-  
+The text layout client uses the <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties> class to generate a set of features that are processed by the OpenType layout engine.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,12 +54,12 @@
         <value>The index of the alternate annotation form. The default is 0 (zero).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Annotation forms include glyphs placed in open or solid circles, squares, parentheses, diamonds, or rounded boxes.  
-  
- If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.AnnotationAlternates%2A> is greater than 0 and the selected font does not support annotation alternates, the default form of the letter is displayed.  
-  
+Annotation forms include glyphs placed in open or solid circles, squares, parentheses, diamonds, or rounded boxes.  
+ 
+If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.AnnotationAlternates%2A> is greater than 0 and the selected font does not support annotation alternates, the default form of the letter is displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,15 +81,15 @@
         <value>One of the <see cref="T:System.Windows.FontCapitals" /> values. The default is <see cref="F:System.Windows.FontCapitals.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Capitals are a set of typographical forms that render text in capital-styled glyphs. Typically, when text is rendered as all capitals, the spacing between letters can appear too tight, and the weight and proportion of the letters too heavy. OpenType supports a number of styling formats for capitals, including small capitals, petite capitals, titling, and capital spacing. These styling formats allow you to control the appearance of capitals.  
-  
- The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
-  
- ![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
+Capitals are a set of typographical forms that render text in capital-styled glyphs. Typically, when text is rendered as all capitals, the spacing between letters can appear too tight, and the weight and proportion of the letters too heavy. OpenType supports a number of styling formats for capitals, including small capitals, petite capitals, titling, and capital spacing. These styling formats allow you to control the appearance of capitals.  
+ 
+The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
+ 
+![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
 Example of capitals  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,13 +112,13 @@ Example of capitals
           <see langword="true" /> if spacing is adjusted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Capital spacing is a feature that allows you to provide more spacing when using all capitals in text. Capital letters are typically designed to blend with lowercase letters. Spacing that appears attractive between and a capital letter and a lowercase letter may look too tight when all capital letters are used. The following text displays normal and capital spacing for the Pescadero font.  
-  
- ![Text using OpenType capital spacing](~/add/media/opentypefont21.gif "Text using OpenType capital spacing")  
+Capital spacing is a feature that allows you to provide more spacing when using all capitals in text. Capital letters are typically designed to blend with lowercase letters. Spacing that appears attractive between and a capital letter and a lowercase letter may look too tight when all capital letters are used. The following text displays normal and capital spacing for the Pescadero font.  
+ 
+![Text using OpenType capital spacing](~/add/media/opentypefont21.gif "Text using OpenType capital spacing")  
 Example of normal and capital spacing  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,13 +160,13 @@ Example of normal and capital spacing
           <see langword="true" /> if custom glyph forms can be used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Random contextual alternates provide multiple substitute glyphs for a single character. When implemented with script-type fonts, this feature can simulate handwriting by using of a set of randomly chosen glyphs with slight differences in appearance. The following text uses random contextual alternates for the Lindsey font. Notice that the letter "a" varies slightly in appearance  
-  
- ![Text using OpenType random contextual alternates](~/add/media/opentypefont23.gif "Text using OpenType random contextual alternates")  
+Random contextual alternates provide multiple substitute glyphs for a single character. When implemented with script-type fonts, this feature can simulate handwriting by using of a set of randomly chosen glyphs with slight differences in appearance. The following text uses random contextual alternates for the Lindsey font. Notice that the letter "a" varies slightly in appearance  
+ 
+![Text using OpenType random contextual alternates](~/add/media/opentypefont23.gif "Text using OpenType random contextual alternates")  
 Example of random contextual alternates  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,12 +189,12 @@ Example of random contextual alternates
           <see langword="true" /> if contextual ligatures are enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Contextual ligatures are designed to enhance readability by providing better joining behavior between the characters that make up the ligature.  
-  
- If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualLigatures%2A> is `true` and the selected font does not support contextual ligatures, the default form of the letter is displayed.  
-  
+Contextual ligatures are designed to enhance readability by providing better joining behavior between the characters that make up the ligature.  
+ 
+If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualLigatures%2A> is `true` and the selected font does not support contextual ligatures, the default form of the letter is displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,13 +216,13 @@ Example of random contextual alternates
         <value>The index of the standard swashes form. The default is 0 (zero).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Certain combinations of swash glyphs can cause an unattractive appearance, such as overlapping descenders on adjacent letters. Using a contextual swash allows you to use a substitute swash glyph that produces a better appearance. The following text shows the same word before and after a contextual swash is applied.  
-  
- ![Text using OpenType contextual swashes](~/add/media/opentypefont19.gif "Text using OpenType contextual swashes")  
+Certain combinations of swash glyphs can cause an unattractive appearance, such as overlapping descenders on adjacent letters. Using a contextual swash allows you to use a substitute swash glyph that produces a better appearance. The following text shows the same word before and after a contextual swash is applied.  
+ 
+![Text using OpenType contextual swashes](~/add/media/opentypefont19.gif "Text using OpenType contextual swashes")  
 Example of a contextual swash  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,13 +245,13 @@ Example of a contextual swash
           <see langword="true" /> if discretionary ligatures are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Discretionary ligatures are designed to be ornamental and are not specifically designed for readability. The following text displays discretionary ligature glyphs for the Pericles font.  
-  
- ![Text using OpenType discretionary ligatures](~/add/media/opentypefont05.gif "Text using OpenType discretionary ligatures")  
+Discretionary ligatures are designed to be ornamental and are not specifically designed for readability. The following text displays discretionary ligature glyphs for the Pericles font.  
+ 
+![Text using OpenType discretionary ligatures](~/add/media/opentypefont05.gif "Text using OpenType discretionary ligatures")  
 Example of discretionary set of ligatures  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,15 +328,15 @@ Example of discretionary set of ligatures
         <value>One of the <see cref="T:System.Windows.FontFraction" /> values. The default is <see cref="F:System.Windows.FontFraction.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- OpenType fonts support styles for fractions, including slashed and stacked.  
-  
- The following text displays fraction styles for the Palatino Linotype font.  
-  
- ![Text using OpenType slashed and stacked fractions](~/add/media/opentypefont12.gif "Text using OpenType slashed and stacked fractions")  
+OpenType fonts support styles for fractions, including slashed and stacked.  
+ 
+The following text displays fraction styles for the Palatino Linotype font.  
+ 
+![Text using OpenType slashed and stacked fractions](~/add/media/opentypefont12.gif "Text using OpenType slashed and stacked fractions")  
 Example of slashed and stacked fraction styles  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,13 +359,13 @@ Example of slashed and stacked fraction styles
           <see langword="true" /> if historical forms are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Historical forms are typographic conventions that were common in the past. The following text displays the phrase "Boston, Massachusetts" using an historical form of glyphs for the Palatino Linotype font.  
-  
- ![Text using OpenType historical forms](~/add/media/opentypefont10.gif "Text using OpenType historical forms")  
+Historical forms are typographic conventions that were common in the past. The following text displays the phrase "Boston, Massachusetts" using an historical form of glyphs for the Palatino Linotype font.  
+ 
+![Text using OpenType historical forms](~/add/media/opentypefont10.gif "Text using OpenType historical forms")  
 Example of historical forms  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@ Example of historical forms
           <see langword="true" /> if historical ligatures are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Historical ligatures are typographic forms used in historical typography that font designers may add to their fonts.  
-  
+Historical ligatures are typographic forms used in historical typography that font designers may add to their fonts.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -414,10 +414,10 @@ Example of historical forms
           <see langword="true" /> if kerning is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Kerning is a typographic function that adjusts the spacing between characters to enhance word shape.  
-  
+Kerning is a typographic function that adjusts the spacing between characters to enhance word shape.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,10 +440,10 @@ Example of historical forms
           <see langword="true" /> if mathematical Greek forms are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.MathematicalGreek%2A> is `true` and the selected font does not support mathematical Greek forms, the default form of the letter is displayed.  
-  
+If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.MathematicalGreek%2A> is `true` and the selected font does not support mathematical Greek forms, the default form of the letter is displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -465,15 +465,15 @@ Example of historical forms
         <value>One of the <see cref="T:System.Windows.FontNumeralAlignment" /> values. The default is <see cref="F:System.Windows.FontNumeralAlignment.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- OpenType fonts support a proportional and tabular figure feature to control the alignment of widths when using numerals. Proportional figures treat each numeral as having a different width—"1" is narrower than "5". Tabular figures are treated as equal-width numerals so that they align vertically, which increases the readability of numerical information.  
-  
- The following text displays two proportional figures in the first column using the Miramonte font. Note the difference in width between the numerals "5" and "1". The second column shows the same two numeric values with the widths adjusted by using the tabular figure feature.  
-  
- ![Text using OpenType proportional & tabular figures](~/add/media/opentypefont22.gif "Text using OpenType proportional & tabular figures")  
+OpenType fonts support a proportional and tabular figure feature to control the alignment of widths when using numerals. Proportional figures treat each numeral as having a different width—"1" is narrower than "5". Tabular figures are treated as equal-width numerals so that they align vertically, which increases the readability of numerical information.  
+ 
+The following text displays two proportional figures in the first column using the Miramonte font. Note the difference in width between the numerals "5" and "1". The second column shows the same two numeric values with the widths adjusted by using the tabular figure feature.  
+ 
+![Text using OpenType proportional & tabular figures](~/add/media/opentypefont22.gif "Text using OpenType proportional & tabular figures")  
 Example of proportional and tabbed figures  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,18 +495,18 @@ Example of proportional and tabbed figures
         <value>One of the <see cref="T:System.Windows.FontNumeralStyle" /> values. The default is <see cref="F:System.Windows.FontNumeralStyle.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- OpenType fonts support an old-style numeral format. This format is useful for displaying numerals in styles that are no longer standard. The following text displays an 18th-century date in standard and old-style numeral formats for the Palatino Linotype font.  
-  
- ![Text using OpenType old style numerals](~/add/media/opentypefont24.gif "Text using OpenType old style numerals")  
+OpenType fonts support an old-style numeral format. This format is useful for displaying numerals in styles that are no longer standard. The following text displays an 18th-century date in standard and old-style numeral formats for the Palatino Linotype font.  
+ 
+![Text using OpenType old style numerals](~/add/media/opentypefont24.gif "Text using OpenType old style numerals")  
 Example of standard and old-style numerals  
-  
- The following text displays standard numerals for the Palatino Linotype font, followed by old-style numerals.  
-  
- ![Text using OpenType old style numeral sets](~/add/media/opentypefont13.gif "Text using OpenType old style numeral sets")  
+ 
+The following text displays standard numerals for the Palatino Linotype font, followed by old-style numerals.  
+ 
+![Text using OpenType old style numeral sets](~/add/media/opentypefont13.gif "Text using OpenType old style numeral sets")  
 Example of standard and old-style numeral sets  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,10 +528,10 @@ Example of standard and old-style numeral sets
         <summary>Corrects internal state for a <see cref="T:System.Windows.Media.TextFormatting.TextRunTypographyProperties" /> derived class whenever any <see cref="T:System.Windows.Media.TextFormatting.TextRunTypographyProperties" /> property changes its value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method from set accessors of a <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties> property override, if the value changes as part of the setter.  
-  
+Call this method from set accessors of a <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties> property override, if the value changes as part of the setter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,17 +554,17 @@ Example of standard and old-style numeral sets
           <see langword="true" /> if slashed zero forms are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- OpenType fonts support a slashed zero numeral format to emphasize the difference between the letter "O" and the numeral "0". The slashed zero numeral is often used for identifiers in financial and business information.  
-  
- The following text displays a sample order identifier using the Miramonte font. The first line uses standard numerals. The second line used slashed zero numerals to provide better contrast with the uppercase "O" letter.  
-  
- ![Text using OpenType slashed zero numerals](~/add/media/opentypefont17.gif "Text using OpenType slashed zero numerals")  
+OpenType fonts support a slashed zero numeral format to emphasize the difference between the letter "O" and the numeral "0". The slashed zero numeral is often used for identifiers in financial and business information.  
+ 
+The following text displays a sample order identifier using the Miramonte font. The first line uses standard numerals. The second line used slashed zero numerals to provide better contrast with the uppercase "O" letter.  
+ 
+![Text using OpenType slashed zero numerals](~/add/media/opentypefont17.gif "Text using OpenType slashed zero numerals")  
 Example of slashed zero numerals  
-  
- If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.SlashedZero%2A> is `true` and the selected font does not support slashed zero forms, the default form of the numeral is displayed.  
-  
+ 
+If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.SlashedZero%2A> is `true` and the selected font does not support slashed zero forms, the default form of the numeral is displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -587,25 +587,25 @@ Example of slashed zero numerals
           <see langword="true" /> if standard ligatures are enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following text displays standard ligature glyphs for the Pericles font.  
-  
- ![Text using OpenType standard ligatures](~/add/media/opentypefont04.gif "Text using OpenType standard ligatures")  
+The following text displays standard ligature glyphs for the Pericles font.  
+ 
+![Text using OpenType standard ligatures](~/add/media/opentypefont04.gif "Text using OpenType standard ligatures")  
 Example of a standard set of ligatures  
-  
- By default, OpenType fonts in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] enable standard ligatures. For example, if you use the Palatino Linotype font, the standard ligatures "fi", "ff", and "fl" appear as a combined character glyph. Notice that the characters of each standard ligature touch each other.  
-  
- ![Text using OpenType standard ligatures](~/add/media/opentypefont06.gif "Text using OpenType standard ligatures")  
+ 
+By default, OpenType fonts in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] enable standard ligatures. For example, if you use the Palatino Linotype font, the standard ligatures "fi", "ff", and "fl" appear as a combined character glyph. Notice that the characters of each standard ligature touch each other.  
+ 
+![Text using OpenType standard ligatures](~/add/media/opentypefont06.gif "Text using OpenType standard ligatures")  
 Example of standard ligatures enabled by default  
-  
- However, you can disable standard ligature features so that a standard ligature such as "ff" displays as two separate glyphs, rather than as a combined character glyph.  
-  
- ![Text using disabled OpenType standard ligatures](~/add/media/opentypefont07.gif "Text using disabled OpenType standard ligatures")  
+ 
+However, you can disable standard ligature features so that a standard ligature such as "ff" displays as two separate glyphs, rather than as a combined character glyph.  
+ 
+![Text using disabled OpenType standard ligatures](~/add/media/opentypefont07.gif "Text using disabled OpenType standard ligatures")  
 Example of disabled standard ligatures  
-  
- If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardLigatures%2A> is `true` and the selected font does not support standard ligatures, the default form of the letter is displayed.  
-  
+ 
+If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardLigatures%2A> is `true` and the selected font does not support standard ligatures, the default form of the letter is displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -627,20 +627,20 @@ Example of disabled standard ligatures
         <value>The index of the standard swashes form. The default is 0 (zero).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
-  
- ![Text using OpenType standard and swash glyphs](~/add/media/opentypefont08.gif "Text using OpenType standard and swash glyphs")  
+Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
+ 
+![Text using OpenType standard and swash glyphs](~/add/media/opentypefont08.gif "Text using OpenType standard and swash glyphs")  
 Example of standard and swash glyphs  
-  
- Swashes are often used as decorative elements in short phrases such as event announcements. The following text uses swashes to emphasize the capital letters of the name of the event.  
-  
- ![Text using OpenType swashes](~/add/media/opentypefont09.gif "Text using OpenType swashes")  
+ 
+Swashes are often used as decorative elements in short phrases such as event announcements. The following text uses swashes to emphasize the capital letters of the name of the event.  
+ 
+![Text using OpenType swashes](~/add/media/opentypefont09.gif "Text using OpenType swashes")  
 Example of swashes used for capital letters  
-  
- If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardSwashes%2A> is greater than 0 and the selected font does not support standard swashes forms at the given index value, the default form of the letter is displayed.  
-  
+ 
+If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardSwashes%2A> is greater than 0 and the selected font does not support standard swashes forms at the given index value, the default form of the letter is displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -662,23 +662,23 @@ Example of swashes used for capital letters
         <value>The index of the stylistic alternates form. The default is 0 (zero).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Alternates are glyphs that can be substituted for a standard glyph. OpenType fonts, such as the Pericles font used in the following examples, contain alternate glyphs that you can use to create different appearances for text. The following text displays standard glyphs for the Pericles font.  
-  
- ![Text using OpenType standard glyphs](~/add/media/opentypefont01.gif "Text using OpenType standard glyphs")  
+Alternates are glyphs that can be substituted for a standard glyph. OpenType fonts, such as the Pericles font used in the following examples, contain alternate glyphs that you can use to create different appearances for text. The following text displays standard glyphs for the Pericles font.  
+ 
+![Text using OpenType standard glyphs](~/add/media/opentypefont01.gif "Text using OpenType standard glyphs")  
 Example of a standard set of glyphs  
-  
- The Pericles OpenType font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
-  
- ![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont02.gif "Text using OpenType stylistic alternate glyphs")  
+ 
+The Pericles OpenType font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
+ 
+![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont02.gif "Text using OpenType stylistic alternate glyphs")  
 Example of stylistic alternate glyphs  
-  
- The following text displays several stylistic alternate glyphs for the Pericles font.  
-  
- ![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont03.gif "Text using OpenType stylistic alternate glyphs")  
+ 
+The following text displays several stylistic alternate glyphs for the Pericles font.  
+ 
+![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont03.gif "Text using OpenType stylistic alternate glyphs")  
 Example of other stylistic alternate glyphs  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -701,10 +701,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -727,10 +727,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -753,10 +753,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -779,10 +779,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -805,10 +805,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -831,10 +831,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -857,10 +857,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -883,10 +883,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -909,10 +909,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -935,10 +935,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -961,10 +961,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -987,10 +987,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1013,10 +1013,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1039,10 +1039,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1065,10 +1065,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1091,10 +1091,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1117,10 +1117,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1143,10 +1143,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1169,10 +1169,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1195,10 +1195,10 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1220,22 +1220,22 @@ Example of other stylistic alternate glyphs
         <value>One of the <see cref="T:System.Windows.FontVariants" /> values. The default is <see cref="F:System.Windows.FontVariants.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Variants are similar to superscript or subscript font forms. It is possible for a font form to contain differing glyph sets between superscript and the ordinal form, or between subscript and inferior forms. The <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Variants%2A> property allows you to set superscript and subscript values for an OpenType font.  
-  
- The following text displays superscripts for the Palatino Linotype font.  
-  
- ![Text using OpenType superscripts](~/add/media/opentypefont14.gif "Text using OpenType superscripts")  
+Variants are similar to superscript or subscript font forms. It is possible for a font form to contain differing glyph sets between superscript and the ordinal form, or between subscript and inferior forms. The <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Variants%2A> property allows you to set superscript and subscript values for an OpenType font.  
+ 
+The following text displays superscripts for the Palatino Linotype font.  
+ 
+![Text using OpenType superscripts](~/add/media/opentypefont14.gif "Text using OpenType superscripts")  
 Example of superscripts  
-  
- The following text displays subscripts for the Palatino Linotype font.  
-  
- ![Text using OpenType subscripts](~/add/media/opentypefont15.gif "Text using OpenType subscripts")  
+ 
+The following text displays subscripts for the Palatino Linotype font.  
+ 
+![Text using OpenType subscripts](~/add/media/opentypefont15.gif "Text using OpenType subscripts")  
 Example of subscripts  
-  
- Fonts that do not support variants may have an algorithmic approximation of the font form.  
-  
+ 
+Fonts that do not support variants may have an algorithmic approximation of the font form.  
+ 
  ]]></format>
         </remarks>
       </Docs>

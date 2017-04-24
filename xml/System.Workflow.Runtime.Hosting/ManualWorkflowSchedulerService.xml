@@ -19,14 +19,14 @@
     <summary>Provides a threading service that allows the host application creating a workflow instance to donate the <see cref="T:System.Threading.Thread" /> on which the workflow instance is run. Using this threading service, host applications can run a workflow instance on a single <see cref="T:System.Threading.Thread" /> in synchronous mode (although if the workflow contains a delay activity, the work is postponed until after the delay activity is executed on a separate thread spawned by <see cref="System.Threading.Timer" />).This mode blocks the execution of the host application until the workflow instance becomes idle. Subsequently, the workflow instance can only be executed using the <see cref="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.RunWorkflow(System.Guid)" /> method of this service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService> does not automatically run a workflow instance that is in the queue. The host must call <xref:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.RunWorkflow%2A> to run a specified workflow.  
-  
+ 
+<xref:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService> does not automatically run a workflow instance that is in the queue. The host must call <xref:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.RunWorkflow%2A> to run a specified workflow.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -144,10 +144,10 @@
           <see langword="true" /> if the workflow starts running; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a synchronous call that uses the current thread to run the workflow. It does not return until the workflow idles, suspends, completes, terminates, or aborts.  
-  
+This is a synchronous call that uses the current thread to run the workflow. It does not return until the workflow idles, suspends, completes, terminates, or aborts.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

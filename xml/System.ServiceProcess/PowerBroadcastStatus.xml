@@ -13,10 +13,10 @@
     <summary>Indicates the system's power status.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceProcess.PowerBroadcastStatus> is used by the <xref:System.ServiceProcess.ServiceBase> class to indicate a change in the system's power status. You can design your application to react to any power status change.  
-  
+<xref:System.ServiceProcess.PowerBroadcastStatus> is used by the <xref:System.ServiceProcess.ServiceBase> class to indicate a change in the system's power status. You can design your application to react to any power status change.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -117,12 +117,12 @@
         <summary>The computer has woken up automatically to handle an event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  If the system detects any user activity after broadcasting `ResumeAutomatic`, it will broadcast a `ResumeSuspend` event to let applications know they can resume full interaction with the user.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,12 +143,12 @@
         <summary>The system has resumed operation after a critical suspension caused by a failing battery.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Because a critical suspension occurs without prior notification, resources and data previously available may not be present when the application receives this event. The application should attempt to restore its state to the best of its ability.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

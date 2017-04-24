@@ -52,10 +52,10 @@
         <value>The number of continuous pages that changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.PagesChangedEventArgs.Start%2A> property identifies the first page that changed.  
-  
+The <xref:System.Windows.Documents.PagesChangedEventArgs.Start%2A> property identifies the first page that changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,10 +77,10 @@
         <value>The page number (zero-based) of first page that changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.PagesChangedEventArgs.Count%2A> property defines the number of continuous pages that changed.  
-  
+The <xref:System.Windows.Documents.PagesChangedEventArgs.Count%2A> property defines the number of continuous pages that changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

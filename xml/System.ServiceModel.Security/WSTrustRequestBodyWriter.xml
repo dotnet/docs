@@ -14,10 +14,10 @@
     <summary>Represents a message body writer that writes an RST to an outgoing message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.WSTrustRequestBodyWriter> class is an implementation of the <xref:System.ServiceModel.Channels.BodyWriter> class that supports <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> objects.  
-  
+The <xref:System.ServiceModel.Security.WSTrustRequestBodyWriter> class is an implementation of the <xref:System.ServiceModel.Channels.BodyWriter> class that supports <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,10 +74,10 @@
         <summary>Override of the base class method. Serializes the RST to the outgoing stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Serializes the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> object associated with this instance to the outgoing stream.  
-  
+Serializes the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> object associated with this instance to the outgoing stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>

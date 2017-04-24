@@ -26,42 +26,42 @@
     <summary>Implements a basic data transfer mechanism.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataObject> implements the <xref:System.Windows.Forms.IDataObject> interface, whose methods provide a format-independent mechanism for data transfer.  
-  
- A <xref:System.Windows.Forms.DataObject> is typically used with the <xref:System.Windows.Forms.Clipboard> and in drag-and-drop operations. The <xref:System.Windows.Forms.DataObject> class provides the recommended implementation of the <xref:System.Windows.Forms.IDataObject> interface. It is suggested that you use the <xref:System.Windows.Forms.DataObject> class rather than implementing <xref:System.Windows.Forms.IDataObject> yourself.  
-  
- Multiple pieces of data in different formats can be stored in a <xref:System.Windows.Forms.DataObject>. Data is retrieved from a <xref:System.Windows.Forms.DataObject> by its associated format. Because the target application might not be known, you can increase the likelihood that the data will be in the appropriate format for an application by placing the data in a <xref:System.Windows.Forms.DataObject> in multiple formats. See <xref:System.Windows.Forms.DataFormats> for the predefined formats. You can implement your own format by creating an instance of the <xref:System.Windows.Forms.DataFormats.Format> class.  
-  
- To store data in a <xref:System.Windows.Forms.DataObject>, pass the data to the constructor or call <xref:System.Windows.Forms.DataObject.SetData%2A>. You can add data in multiple formats to the same <xref:System.Windows.Forms.DataObject>. If you want the data you add to be retrieved in its native format only, call <xref:System.Windows.Forms.DataObject.SetData%28System.String%2CSystem.Boolean%2CSystem.Object%29> with the `autoConvert` parameter set to `false`.  
-  
- Data can be retrieved from a <xref:System.Windows.Forms.DataObject> in any format which is compatible with <xref:System.Windows.Forms.DataObject.GetData%2A>. For example, text can be converted to Unicode. To retrieve data in the format in which it was stored, call <xref:System.Windows.Forms.DataObject.GetData%2A> with the `autoConvert` parameter set to `false`.  
-  
- To determine what formats the data is stored in, call <xref:System.Windows.Forms.DataObject.GetFormats%2A>. To determine if a format is available, call <xref:System.Windows.Forms.DataObject.GetDataPresent%2A> with the desired format.  
-  
- In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Windows.Forms.DataObject> class provides additional methods that make it easier to work with data in common formats. To add data of a particular format to the <xref:System.Windows.Forms.DataObject>, use the appropriate `Set`*Format* method, such as <xref:System.Windows.Forms.DataObject.SetText%2A>. To retrieve data of a particular format from the <xref:System.Windows.Forms.DataObject>, first call the appropriate `Contains`*Format* method (such as <xref:System.Windows.Forms.DataObject.ContainsText%2A>) to determine whether the <xref:System.Windows.Forms.DataObject> contains data in that format, then call the appropriate `Get`*Format* method (such as <xref:System.Windows.Forms.DataObject.GetText%2A>) to retrieve the data if the <xref:System.Windows.Forms.DataObject> contains it.  
-  
+<xref:System.Windows.Forms.DataObject> implements the <xref:System.Windows.Forms.IDataObject> interface, whose methods provide a format-independent mechanism for data transfer.  
+ 
+A <xref:System.Windows.Forms.DataObject> is typically used with the <xref:System.Windows.Forms.Clipboard> and in drag-and-drop operations. The <xref:System.Windows.Forms.DataObject> class provides the recommended implementation of the <xref:System.Windows.Forms.IDataObject> interface. It is suggested that you use the <xref:System.Windows.Forms.DataObject> class rather than implementing <xref:System.Windows.Forms.IDataObject> yourself.  
+ 
+Multiple pieces of data in different formats can be stored in a <xref:System.Windows.Forms.DataObject>. Data is retrieved from a <xref:System.Windows.Forms.DataObject> by its associated format. Because the target application might not be known, you can increase the likelihood that the data will be in the appropriate format for an application by placing the data in a <xref:System.Windows.Forms.DataObject> in multiple formats. See <xref:System.Windows.Forms.DataFormats> for the predefined formats. You can implement your own format by creating an instance of the <xref:System.Windows.Forms.DataFormats.Format> class.  
+ 
+To store data in a <xref:System.Windows.Forms.DataObject>, pass the data to the constructor or call <xref:System.Windows.Forms.DataObject.SetData%2A>. You can add data in multiple formats to the same <xref:System.Windows.Forms.DataObject>. If you want the data you add to be retrieved in its native format only, call <xref:System.Windows.Forms.DataObject.SetData%28System.String%2CSystem.Boolean%2CSystem.Object%29> with the `autoConvert` parameter set to `false`.  
+ 
+Data can be retrieved from a <xref:System.Windows.Forms.DataObject> in any format which is compatible with <xref:System.Windows.Forms.DataObject.GetData%2A>. For example, text can be converted to Unicode. To retrieve data in the format in which it was stored, call <xref:System.Windows.Forms.DataObject.GetData%2A> with the `autoConvert` parameter set to `false`.  
+ 
+To determine what formats the data is stored in, call <xref:System.Windows.Forms.DataObject.GetFormats%2A>. To determine if a format is available, call <xref:System.Windows.Forms.DataObject.GetDataPresent%2A> with the desired format.  
+ 
+In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Windows.Forms.DataObject> class provides additional methods that make it easier to work with data in common formats. To add data of a particular format to the <xref:System.Windows.Forms.DataObject>, use the appropriate `Set`*Format* method, such as <xref:System.Windows.Forms.DataObject.SetText%2A>. To retrieve data of a particular format from the <xref:System.Windows.Forms.DataObject>, first call the appropriate `Contains`*Format* method (such as <xref:System.Windows.Forms.DataObject.ContainsText%2A>) to determine whether the <xref:System.Windows.Forms.DataObject> contains data in that format, then call the appropriate `Get`*Format* method (such as <xref:System.Windows.Forms.DataObject.GetText%2A>) to retrieve the data if the <xref:System.Windows.Forms.DataObject> contains it.  
+ 
 > [!NOTE]
 >  Special considerations may be necessary when using the metafile format with the Clipboard. Due to a limitation in the current implementation of the <xref:System.Windows.Forms.DataObject> class, the metafile format used by the .NET Framework may not be recognized by applications that use an older metafile format. In this case, you must interoperate with the Win32 Clipboard application programming interfaces (APIs). For more information, see article 323530, "Metafiles on Clipboard Are Not Visible to All Applications," in the Microsoft Knowledge Base at http://support.microsoft.com.  
 >   
 >  An object must be serializable for it to be put on the Clipboard. See <xref:System.Runtime.Serialization> for more information on serialization. If your target application requires a very specific data format, the headers added to the data in the serialization process may prevent the application from recognizing your data. To preserve your data format, add your data as a <xref:System.Byte> array to a <xref:System.IO.MemoryStream> and pass the <xref:System.IO.MemoryStream> to the <xref:System.Windows.Forms.DataObject.SetData%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example adds data in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created and a component is stored in it. Then, it checks to see if data in the appropriate type exists in the <xref:System.Windows.Forms.DataObject>. The result is displayed in a text box. This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject Example/VB/source.vb#1)]  
-  
- The next example retrieves the data stored in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created with text data. Then, the data is retrieved, specifying its format as a string, and displayed in a text box. The data format is automatically converted from text to string. This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject Example/CPP/source.cpp#2)]
- [!code-csharp[Classic DataObject Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject Example/CS/source.cs#2)]
- [!code-vb[Classic DataObject Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject Example/VB/source.vb#2)]  
-  
+The following code example adds data in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created and a component is stored in it. Then, it checks to see if data in the appropriate type exists in the <xref:System.Windows.Forms.DataObject>. The result is displayed in a text box. This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject Example/VB/source.vb#1)]  
+ 
+The next example retrieves the data stored in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created with text data. Then, the data is retrieved, specifying its format as a string, and displayed in a text box. The data format is automatically converted from text to string. This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject Example/CPP/source.cpp#2)]
+[!code-csharp[Classic DataObject Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject Example/CS/source.cs#2)]
+[!code-vb[Classic DataObject Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,14 +80,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.DataObject> and adds data to it. The example then retrieves and displays the data. This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.DataObject2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.DataObject2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.DataObject2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.DataObject2 Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.DataObject2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.DataObject2 Example/VB/source.vb#1)]  
-  
+The following code example creates a <xref:System.Windows.Forms.DataObject> and adds data to it. The example then retrieves and displays the data. This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.DataObject2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.DataObject2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.DataObject2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.DataObject2 Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.DataObject2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.DataObject2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,19 +109,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" /> class and adds the specified object to it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can add data in any format to the <xref:System.Windows.Forms.DataObject> when you use this constructor, or you can add data as an <xref:System.Windows.Forms.IDataObject> to provide multiple formats at once. If you are familiar with COM programming, you can also add a data object that implements the COM `IDataObject` interface. For more information, see `IDataObject` in the MSDN library at http://msdn.microsoft.com/library.  
+You can add data in any format to the <xref:System.Windows.Forms.DataObject> when you use this constructor, or you can add data as an <xref:System.Windows.Forms.IDataObject> to provide multiple formats at once. If you are familiar with COM programming, you can also add a data object that implements the COM `IDataObject` interface. For more information, see `IDataObject` in the MSDN library at http://msdn.microsoft.com/library.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.DataObject> that contains a string. The data is retrieved using its data format. The results are displayed in a text box. This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.DataObject3 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.DataObject3 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.DataObject3 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.DataObject3 Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.DataObject3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.DataObject3 Example/VB/source.vb#1)]  
-  
+The following code example creates a <xref:System.Windows.Forms.DataObject> that contains a string. The data is retrieved using its data format. The results are displayed in a text box. This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.DataObject3 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.DataObject3 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.DataObject3 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.DataObject3 Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.DataObject3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.DataObject3 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,14 +145,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" /> class and adds the specified object in the specified format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.DataObject> class using a string that is specified as the string type. The data is retrieved from the <xref:System.Windows.Forms.DataObject> by specifying its format as text. The results are displayed in a text box. This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.DataObject4 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.DataObject4 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.DataObject4 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.DataObject4 Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.DataObject4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.DataObject4 Example/VB/source.vb#1)]  
-  
+The following code example creates a <xref:System.Windows.Forms.DataObject> class using a string that is specified as the string type. The data is retrieved from the <xref:System.Windows.Forms.DataObject> by specifying its format as text. The results are displayed in a text box. This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.DataObject4 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.DataObject4 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.DataObject4 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.DataObject4 Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.DataObject4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.DataObject4 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,10 +176,10 @@
           <see langword="true" /> if the data object contains audio data; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine whether the data object contains audio data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetAudioStream%2A> method.  
-  
+Use this method to determine whether the data object contains audio data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetAudioStream%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,12 +203,12 @@
           <see langword="true" /> if the data object contains a file drop list; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A file drop list is a collection of strings containing path information for files.  
-  
- Use this method to determine whether the data object contains a file drop list before retrieving it with the <xref:System.Windows.Forms.DataObject.GetFileDropList%2A> method.  
-  
+A file drop list is a collection of strings containing path information for files.  
+ 
+Use this method to determine whether the data object contains a file drop list before retrieving it with the <xref:System.Windows.Forms.DataObject.GetFileDropList%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
           <see langword="true" /> if the data object contains image data; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine whether the data object contains image data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetImage%2A> method.  
-  
+Use this method to determine whether the data object contains image data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetImage%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,10 +259,10 @@
           <see langword="true" /> if the data object contains text data; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine whether the data object contains text data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetText%2A> method.  
-  
+Use this method to determine whether the data object contains text data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetText%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,10 +289,10 @@
           <see langword="true" /> if the data object contains text data in the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine whether the data object contains text data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetText%2A> method.  
-  
+Use this method to determine whether the data object contains text data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetText%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -317,12 +317,12 @@
         <returns>A <see cref="T:System.IO.Stream" /> containing audio data or <see langword="null" /> if the data object does not contain any data in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.DataObject.ContainsAudio%2A> method to determine whether the data object contains audio data before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.DataObject.SetAudio%2A> method to add audio data to the data object.  
-  
+Use the <xref:System.Windows.Forms.DataObject.ContainsAudio%2A> method to determine whether the data object contains audio data before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.DataObject.SetAudio%2A> method to add audio data to the data object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,28 +348,28 @@
         <returns>The data associated with the specified format, or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this method cannot find data in the specified format, it attempts to convert the data to the format. If the data cannot be converted to the specified format, or if the data was stored with automatic conversion set to `false`, this method returns `null`.  
-  
- To determine whether data is associated with, or can be converted to, a format, call <xref:System.Windows.Forms.DataObject.GetDataPresent%2A> before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for a list of valid formats for the data stored in this <xref:System.Windows.Forms.DataObject>.  
-  
+If this method cannot find data in the specified format, it attempts to convert the data to the format. If the data cannot be converted to the specified format, or if the data was stored with automatic conversion set to `false`, this method returns `null`.  
+ 
+To determine whether data is associated with, or can be converted to, a format, call <xref:System.Windows.Forms.DataObject.GetDataPresent%2A> before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for a list of valid formats for the data stored in this <xref:System.Windows.Forms.DataObject>.  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
 >   
 >  When `format` is <xref:System.Windows.Forms.DataFormats.Html>, this method returns a UTF-8 encoded string in applications that target .NET 4.5 or higher, and an ANSI encoded string in applications that target .NET 4.0 or lower.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example retrieves the data stored in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created with text data. Then, the data is retrieved, specifying its format as a string, and displayed in a text box.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cpp[classic dataobject example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject Example/CPP/source.cpp#1)]
- [!code-csharp[classic dataobject example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject Example/CS/source.cs#1)]
- [!code-vb[classic dataobject example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject Example/VB/source.vb#1)]  
-  
+The following code example retrieves the data stored in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created with text data. Then, the data is retrieved, specifying its format as a string, and displayed in a text box.  
+ 
+This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[classic dataobject example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject Example/CPP/source.cpp#1)]
+[!code-csharp[classic dataobject example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject Example/CS/source.cs#1)]
+[!code-vb[classic dataobject example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,26 +395,26 @@
         <returns>The data associated with the specified format, or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this method cannot find data in the specified format, it attempts to convert the data to the format. If the data cannot be converted to the specified format, or if the data was stored with automatic conversion set to `false`, this method returns `null`.  
-  
- To determine whether data is associated with, or can be converted to, a format, call <xref:System.Windows.Forms.DataObject.GetDataPresent%2A> before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for a list of valid formats for the data stored in this <xref:System.Windows.Forms.DataObject>.  
-  
+If this method cannot find data in the specified format, it attempts to convert the data to the format. If the data cannot be converted to the specified format, or if the data was stored with automatic conversion set to `false`, this method returns `null`.  
+ 
+To determine whether data is associated with, or can be converted to, a format, call <xref:System.Windows.Forms.DataObject.GetDataPresent%2A> before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for a list of valid formats for the data stored in this <xref:System.Windows.Forms.DataObject>.  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example retrieves the data stored in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created with a component. Then, the data is retrieved, specifying its type. The type of the retrieved data is displayed in a text box.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.GetData2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetData2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.GetData2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetData2 Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.GetData2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetData2 Example/VB/source.vb#1)]  
-  
+The following code example retrieves the data stored in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created with a component. Then, the data is retrieved, specifying its type. The type of the retrieved data is displayed in a text box.  
+ 
+This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.GetData2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetData2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.GetData2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetData2 Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.GetData2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetData2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,34 +443,34 @@
         <returns>The data associated with the specified format, or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `autoConvert` parameter is `true` and this method cannot find data in the specified format, it attempts to convert the data to the format. If the data cannot be converted to the specified format, or if the data was stored with the automatic conversion set to `false`, this method returns `null`.  
-  
- If the `autoConvert` parameter is `false`, this method returns data in the specified format, or `null` if no data in this format can be found.  
-  
- To determine whether data is associated with, or can be converted to, a format, call <xref:System.Windows.Forms.DataObject.GetDataPresent%2A> before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for a list of valid formats for the data stored in this <xref:System.Windows.Forms.DataObject>.  
-  
+If the `autoConvert` parameter is `true` and this method cannot find data in the specified format, it attempts to convert the data to the format. If the data cannot be converted to the specified format, or if the data was stored with the automatic conversion set to `false`, this method returns `null`.  
+ 
+If the `autoConvert` parameter is `false`, this method returns data in the specified format, or `null` if no data in this format can be found.  
+ 
+To determine whether data is associated with, or can be converted to, a format, call <xref:System.Windows.Forms.DataObject.GetDataPresent%2A> before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for a list of valid formats for the data stored in this <xref:System.Windows.Forms.DataObject>.  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
 >   
 >  When `format` is <xref:System.Windows.Forms.DataFormats.Html>, this method returns a UTF-8 encoded string in applications that target .NET 4.5 or higher, and an ANSI encoded string in applications that target .NET 4.0 or lower.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example retrieves the data stored in a <xref:System.Windows.Forms.DataObject>, using the `autoConvert` parameter to specify whether to convert the data format.  
-  
- First, a new <xref:System.Windows.Forms.DataObject> is created with text data. Then the example tries to retrieve the data, specifying its format as a string and no format conversion, that is, the `autoConvert` parameter is `false`. This operation fails because there is no string data in the <xref:System.Windows.Forms.DataObject>.  
-  
- Next, the example tries to retrieve the data again, with the `autoConvert` parameter set to `true`. This operation succeeds and the results are displayed in a <xref:System.Windows.Forms.MessageBox>.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.GetData Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetData Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.GetData Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetData Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.GetData Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetData Example/VB/source.vb#1)]  
-  
+The following code example retrieves the data stored in a <xref:System.Windows.Forms.DataObject>, using the `autoConvert` parameter to specify whether to convert the data format.  
+ 
+First, a new <xref:System.Windows.Forms.DataObject> is created with text data. Then the example tries to retrieve the data, specifying its format as a string and no format conversion, that is, the `autoConvert` parameter is `false`. This operation fails because there is no string data in the <xref:System.Windows.Forms.DataObject>.  
+ 
+Next, the example tries to retrieve the data again, with the `autoConvert` parameter set to `true`. This operation succeeds and the results are displayed in a <xref:System.Windows.Forms.MessageBox>.  
+ 
+This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.GetData Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetData Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.GetData Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetData Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.GetData Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetData Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -497,25 +497,25 @@
           <see langword="true" /> if data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to determine whether a format exists before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for the formats that are available in this <xref:System.Windows.Forms.DataObject>.  
-  
+Call this method to determine whether a format exists before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for the formats that are available in this <xref:System.Windows.Forms.DataObject>.  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
-  
+ 
 > [!NOTE]
 >  If no data can be retrieved, no exception will be thrown. Instead, `false` will be returned.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example determines whether data currently stored in this <xref:System.Windows.Forms.DataObject> is associated with, or can be converted to, a specified format. A new <xref:System.Windows.Forms.DataObject> is initialized with a string and its associated format specified as text.  
-  
- Then the examples prints whether text data exists in the <xref:System.Windows.Forms.DataObject>. This code requires that `textBox1` has been created.  
-  
-  
-  
+The following code example determines whether data currently stored in this <xref:System.Windows.Forms.DataObject> is associated with, or can be converted to, a specified format. A new <xref:System.Windows.Forms.DataObject> is initialized with a string and its associated format specified as text.  
+ 
+Then the examples prints whether text data exists in the <xref:System.Windows.Forms.DataObject>. This code requires that `textBox1` has been created.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -542,25 +542,25 @@
           <see langword="true" /> if data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to determine whether a format exists before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for the formats that are available in this <xref:System.Windows.Forms.DataObject>.  
-  
+Call this method to determine whether a format exists before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for the formats that are available in this <xref:System.Windows.Forms.DataObject>.  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
-  
+ 
 > [!NOTE]
 >  If no data can be retrieved, no exception will be thrown. Instead, `false` will be returned.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example determines whether data of the specified type exists in a <xref:System.Windows.Forms.DataObject>, or whether the data can be converted to the specified type. The result is displayed in a text box. The code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.GetDataPresent Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetDataPresent Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.GetDataPresent Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetDataPresent Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.GetDataPresent Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetDataPresent Example/VB/source.vb#1)]  
-  
+The following code example determines whether data of the specified type exists in a <xref:System.Windows.Forms.DataObject>, or whether the data can be converted to the specified type. The result is displayed in a text box. The code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.GetDataPresent Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetDataPresent Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.GetDataPresent Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetDataPresent Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.GetDataPresent Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetDataPresent Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -590,41 +590,41 @@
           <see langword="true" /> if the data is in, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to determine whether a format exists before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for the formats that are available in this <xref:System.Windows.Forms.DataObject>.  
-  
- This method returns `true` when:  
-  
+Call this method to determine whether a format exists before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. Call <xref:System.Windows.Forms.DataObject.GetFormats%2A> for the formats that are available in this <xref:System.Windows.Forms.DataObject>.  
+ 
+This method returns `true` when:  
+ 
 -   The `autoConvert` parameter is `true` and the data is in a format that can be converted to the appropriate format.  
-  
+ 
 -   The `autoConvert` parameter is `false` and the data is in the appropriate format.  
-  
- This method returns `false` when:  
-  
+ 
+This method returns `false` when:  
+ 
 -   The `autoConvert` parameter is `true` and this method cannot find data in the specified format, and it cannot convert data to the specified format, or the data was stored with automatic conversion set to `false`.  
-  
+ 
 -   The `autoConvert` parameter is `false` and data does not exist in this <xref:System.Windows.Forms.DataObject> in the specified format.  
-  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
-  
+ 
 > [!NOTE]
 >  If no data can be retrieved, no exception will be thrown. Instead, `false` will be returned.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example determines whether data currently stored in the <xref:System.Windows.Forms.DataObject> is associated with a specified format. First, a new <xref:System.Windows.Forms.DataObject> is initialized with a string, specifying its format as text.  
-  
- Then the <xref:System.Windows.Forms.DataObject> is queried for data associated with the text format, specifying the `autoConvert` parameter as `false`. The result of this query is printed in a text box.  
-  
- Then the <xref:System.Windows.Forms.DataObject> is queried for data associated with string format, specifying the `autoConvert` parameter as `true`. The results are printed in the text box. This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.GetDataPresent1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetDataPresent1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.GetDataPresent1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetDataPresent1 Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.GetDataPresent1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetDataPresent1 Example/VB/source.vb#1)]  
-  
+The following code example determines whether data currently stored in the <xref:System.Windows.Forms.DataObject> is associated with a specified format. First, a new <xref:System.Windows.Forms.DataObject> is initialized with a string, specifying its format as text.  
+ 
+Then the <xref:System.Windows.Forms.DataObject> is queried for data associated with the text format, specifying the `autoConvert` parameter as `false`. The result of this query is printed in a text box.  
+ 
+Then the <xref:System.Windows.Forms.DataObject> is queried for data associated with string format, specifying the `autoConvert` parameter as `true`. The results are printed in the text box. This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.GetDataPresent1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetDataPresent1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.GetDataPresent1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetDataPresent1 Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.GetDataPresent1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetDataPresent1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,16 +647,16 @@
         <returns>A <see cref="T:System.Collections.Specialized.StringCollection" /> containing file names or <see langword="null" /> if the data object does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format or can be converted to that format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A file drop list is a collection of strings containing path information for files.  
-  
- A file drop list is stored in a data object as a <xref:System.String> array. This method converts this array to a <xref:System.Collections.Specialized.StringCollection> and returns the collection.  
-  
- Use the <xref:System.Windows.Forms.DataObject.ContainsFileDropList%2A> method to determine whether the data object contains a file drop list before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.DataObject.SetFileDropList%2A> method to add a file drop list to the data object.  
-  
+A file drop list is a collection of strings containing path information for files.  
+ 
+A file drop list is stored in a data object as a <xref:System.String> array. This method converts this array to a <xref:System.Collections.Specialized.StringCollection> and returns the collection.  
+ 
+Use the <xref:System.Windows.Forms.DataObject.ContainsFileDropList%2A> method to determine whether the data object contains a file drop list before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.DataObject.SetFileDropList%2A> method to add a file drop list to the data object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -679,22 +679,22 @@
         <returns>An array of type <see cref="T:System.String" />, containing a list of all formats that are supported by the data stored in this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to get the supported data formats before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. See <xref:System.Windows.Forms.DataFormats> for the predefined formats.  
-  
+Call this method to get the supported data formats before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. See <xref:System.Windows.Forms.DataFormats> for the predefined formats.  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example queries a <xref:System.Windows.Forms.DataObject> for the formats associated with its data, and the formats that the data can be converted to. The resulting list is displayed in a text box. This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.GetFormats1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetFormats1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.GetFormats1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetFormats1 Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.GetFormats1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetFormats1 Example/VB/source.vb#1)]  
-  
+The following code example queries a <xref:System.Windows.Forms.DataObject> for the formats associated with its data, and the formats that the data can be converted to. The resulting list is displayed in a text box. This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.GetFormats1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetFormats1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.GetFormats1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetFormats1 Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.GetFormats1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetFormats1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -721,24 +721,24 @@
         <returns>An array of type <see cref="T:System.String" />, containing a list of all formats that are supported by the data stored in this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to get the supported data formats before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. See <xref:System.Windows.Forms.DataFormats> for the predefined formats.  
-  
+Call this method to get the supported data formats before calling <xref:System.Windows.Forms.DataObject.GetData%2A>. See <xref:System.Windows.Forms.DataFormats> for the predefined formats.  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example queries a <xref:System.Windows.Forms.DataObject> for the formats associated with its data. The first query specifies the `autoConvert` parameter as `false`, so only the native format of the data is returned. The second query specifies the `autoConvert` parameter as `true`, so the list of formats includes the formats that the data can be converted to.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.GetFormats Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetFormats Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.GetFormats Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetFormats Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.GetFormats Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetFormats Example/VB/source.vb#1)]  
-  
+The following code example queries a <xref:System.Windows.Forms.DataObject> for the formats associated with its data. The first query specifies the `autoConvert` parameter as `false`, so only the native format of the data is returned. The second query specifies the `autoConvert` parameter as `true`, so the list of formats includes the formats that the data can be converted to.  
+ 
+This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.GetFormats Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.GetFormats Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.GetFormats Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.GetFormats Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.GetFormats Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.GetFormats Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -761,12 +761,12 @@
         <returns>An <see cref="T:System.Drawing.Image" /> representing the image data in the data object or <see langword="null" /> if the data object does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format or can be converted to that format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.DataObject.ContainsImage%2A> method to determine whether the data object contains image data before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.DataObject.SetImage%2A> method to add image data to the data object.  
-  
+Use the <xref:System.Windows.Forms.DataObject.ContainsImage%2A> method to determine whether the data object contains image data before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.DataObject.SetImage%2A> method to add image data to the data object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -789,12 +789,12 @@
         <returns>The text data in the data object or <see cref="F:System.String.Empty" /> if the data object does not contain data in the <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.DataObject.ContainsText%2A> method to determine whether the data object contains text data before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.DataObject.SetText%2A> method to add text data to the data object.  
-  
+Use the <xref:System.Windows.Forms.DataObject.ContainsText%2A> method to determine whether the data object contains text data before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.DataObject.SetText%2A> method to add text data to the data object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -820,12 +820,12 @@
         <returns>The text data in the data object or <see cref="F:System.String.Empty" /> if the data object does not contain data in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.DataObject.ContainsText%2A> method to determine whether the data object contains text data before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.DataObject.SetText%2A> method to add text data to the data object.  
-  
+Use the <xref:System.Windows.Forms.DataObject.ContainsText%2A> method to determine whether the data object contains text data before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.DataObject.SetText%2A> method to add text data to the data object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -852,10 +852,10 @@
         <summary>Adds a <see cref="T:System.Byte" /> array to the data object in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format after converting it to a <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve audio data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsAudio%2A> method to determine whether the data object contains audio data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetAudioStream%2A> method.  
-  
+To retrieve audio data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsAudio%2A> method to determine whether the data object contains audio data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetAudioStream%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -882,10 +882,10 @@
         <summary>Adds a <see cref="T:System.IO.Stream" /> to the data object in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve audio data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsAudio%2A> method to determine whether the data object contains audio data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetAudioStream%2A> method.  
-  
+To retrieve audio data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsAudio%2A> method to determine whether the data object contains audio data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetAudioStream%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -912,23 +912,23 @@
         <summary>Adds the specified object to the <see cref="T:System.Windows.Forms.DataObject" /> using the object type as the data format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not know the format of the target application, you can store data in multiple formats using this method. Data stored using this method can be converted to a compatible format when it is retrieved.  
+If you do not know the format of the target application, you can store data in multiple formats using this method. Data stored using this method can be converted to a compatible format when it is retrieved.  
+ 
+The <xref:System.Windows.Forms.DataObject.SetData%28System.Object%29> overload stores the `data` value in a format that it determines by calling the <xref:System.Object.GetType%2A?displayProperty=fullName> method. If `data` implements the <xref:System.Runtime.Serialization.ISerializable> interface, this overload also stores the value in the <xref:System.Windows.DataFormats.Serializable> format.  
+ 
   
- The <xref:System.Windows.Forms.DataObject.SetData%28System.Object%29> overload stores the `data` value in a format that it determines by calling the <xref:System.Object.GetType%2A?displayProperty=fullName> method. If `data` implements the <xref:System.Runtime.Serialization.ISerializable> interface, this overload also stores the value in the <xref:System.Windows.DataFormats.Serializable> format.  
-  
-   
-  
+ 
 ## Examples  
- The following code example stores data in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created and a component is stored in it. Then, the data is retrieved by specifying the class. The result is displayed in a text box.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.SetData3 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.SetData3 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.SetData3 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.SetData3 Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.SetData3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.SetData3 Example/VB/source.vb#1)]  
-  
+The following code example stores data in a <xref:System.Windows.Forms.DataObject>. First, a new <xref:System.Windows.Forms.DataObject> is created and a component is stored in it. Then, the data is retrieved by specifying the class. The result is displayed in a text box.  
+ 
+This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.SetData3 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.SetData3 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.SetData3 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.SetData3 Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.SetData3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.SetData3 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -955,25 +955,25 @@
         <summary>Adds the specified object to the <see cref="T:System.Windows.Forms.DataObject" /> using the specified format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not know the format of the target application, you can store data in multiple formats using this method.  
+If you do not know the format of the target application, you can store data in multiple formats using this method.  
+ 
+Data stored using this method can be converted to a compatible format when it is retrieved.  
+ 
   
- Data stored using this method can be converted to a compatible format when it is retrieved.  
-  
-   
-  
+ 
 ## Examples  
- The following code example stores data in a <xref:System.Windows.Forms.DataObject>, specifying its format as Unicode.  
-  
- Then the data is retrieved by specifying the text format, since the default is to convert the data when the final format is compatible. The result is displayed in a text box.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.SetData1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.SetData1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.SetData1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.SetData1 Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.SetData1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.SetData1 Example/VB/source.vb#1)]  
-  
+The following code example stores data in a <xref:System.Windows.Forms.DataObject>, specifying its format as Unicode.  
+ 
+Then the data is retrieved by specifying the text format, since the default is to convert the data when the final format is compatible. The result is displayed in a text box.  
+ 
+This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.SetData1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.SetData1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.SetData1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.SetData1 Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.SetData1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.SetData1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1000,23 +1000,23 @@
         <summary>Adds the specified object to the <see cref="T:System.Windows.Forms.DataObject" /> using the specified type as the format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not know the format of the target application, you can store data in multiple formats using this method.  
+If you do not know the format of the target application, you can store data in multiple formats using this method.  
+ 
+Data stored using this method can be converted to a compatible format when it is retrieved.  
+ 
   
- Data stored using this method can be converted to a compatible format when it is retrieved.  
-  
-   
-  
+ 
 ## Examples  
- The following code example stores data in a <xref:System.Windows.Forms.DataObject> using a <xref:System.Type> as the data format. The data is then retrieved by calling <xref:System.Windows.Forms.DataObject.GetData%2A> using the <xref:System.Type> to specify the data format. The result is displayed in a text box.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.SetData2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.SetData2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.SetData2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.SetData2 Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.SetData2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.SetData2 Example/VB/source.vb#1)]  
-  
+The following code example stores data in a <xref:System.Windows.Forms.DataObject> using a <xref:System.Type> as the data format. The data is then retrieved by calling <xref:System.Windows.Forms.DataObject.GetData%2A> using the <xref:System.Type> to specify the data format. The result is displayed in a text box.  
+ 
+This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.SetData2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.SetData2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.SetData2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.SetData2 Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.SetData2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.SetData2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1046,25 +1046,25 @@
         <summary>Adds the specified object to the <see cref="T:System.Windows.Forms.DataObject" /> using the specified format and indicating whether the data can be converted to another format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not know the format of the target application, you can store data in multiple formats using this method.  
+If you do not know the format of the target application, you can store data in multiple formats using this method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example stores data in a <xref:System.Windows.Forms.DataObject> and specifies that the data can only be retrieved in its native format.  
-  
- First, a new <xref:System.Windows.Forms.DataObject> is created. Data in the Unicode format is stored in the <xref:System.Windows.Forms.DataObject>, with `autoConvert` set to `false`.  
-  
- Then, the <xref:System.Windows.Forms.DataObject> is queried for the list of available data formats. Only the Unicode format is returned, although Unicode data can be converted to text and other formats.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cpp[Classic DataObject.SetData Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.SetData Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataObject.SetData Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.SetData Example/CS/source.cs#1)]
- [!code-vb[Classic DataObject.SetData Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.SetData Example/VB/source.vb#1)]  
-  
+The following code example stores data in a <xref:System.Windows.Forms.DataObject> and specifies that the data can only be retrieved in its native format.  
+ 
+First, a new <xref:System.Windows.Forms.DataObject> is created. Data in the Unicode format is stored in the <xref:System.Windows.Forms.DataObject>, with `autoConvert` set to `false`.  
+ 
+Then, the <xref:System.Windows.Forms.DataObject> is queried for the list of available data formats. Only the Unicode format is returned, although Unicode data can be converted to text and other formats.  
+ 
+This code requires that `textBox1` has been created.  
+ 
+[!code-cpp[Classic DataObject.SetData Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataObject.SetData Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataObject.SetData Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataObject.SetData Example/CS/source.cs#1)]
+[!code-vb[Classic DataObject.SetData Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataObject.SetData Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1089,14 +1089,14 @@
         <summary>Adds a collection of file names to the data object in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A file drop list is a collection of strings containing path information for files.  
-  
- A file drop list is stored in a data object as a <xref:System.String> array. This method converts `filePaths` to a <xref:System.String> array before adding it to the data object.  
-  
- To retrieve a file drop list from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsFileDropList%2A> method to determine whether the data object contains data in that format before retrieving it with the <xref:System.Windows.Forms.DataObject.GetFileDropList%2A> method.  
-  
+A file drop list is a collection of strings containing path information for files.  
+ 
+A file drop list is stored in a data object as a <xref:System.String> array. This method converts `filePaths` to a <xref:System.String> array before adding it to the data object.  
+ 
+To retrieve a file drop list from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsFileDropList%2A> method to determine whether the data object contains data in that format before retrieving it with the <xref:System.Windows.Forms.DataObject.GetFileDropList%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1123,10 +1123,10 @@
         <summary>Adds an <see cref="T:System.Drawing.Image" /> to the data object in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve image data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsImage%2A> method to determine whether the data object contains image data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetImage%2A> method.  
-  
+To retrieve image data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsImage%2A> method to determine whether the data object contains image data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetImage%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1153,10 +1153,10 @@
         <summary>Adds text data to the data object in the <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve text data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsText%2A> method to determine whether the data object contains image data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetText%2A> method.  
-  
+To retrieve text data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsText%2A> method to determine whether the data object contains image data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetText%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1185,10 +1185,10 @@
         <summary>Adds text data to the data object in the format indicated by the specified <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve text data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsText%2A> method to determine whether the data object contains image data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetText%2A> method.  
-  
+To retrieve text data from the data object, first use the <xref:System.Windows.Forms.DataObject.ContainsText%2A> method to determine whether the data object contains image data before retrieving it with the <xref:System.Windows.Forms.DataObject.GetText%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1275,10 +1275,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1304,10 +1304,10 @@
         <summary>Destroys a notification connection that had been previously established.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1361,10 +1361,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1426,10 +1426,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1509,10 +1509,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1540,10 +1540,10 @@
         <summary>Obtains data from a source data object. The <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> method, which is called by a data consumer, renders the data described in the specified <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure and transfers it through the specified <see cref="T:System.Runtime.InteropServices.ComTypes.STGMEDIUM" /> structure. The caller then assumes responsibility for releasing the <see cref="T:System.Runtime.InteropServices.ComTypes.STGMEDIUM" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to perform this operation.</exception>
@@ -1572,10 +1572,10 @@
         <summary>Obtains data from a source data object. This method, which is called by a data consumer, differs from the <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> method in that the caller must allocate and free the specified storage medium.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1661,10 +1661,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -1695,10 +1695,10 @@
         <summary>Transfers data to the object that implements this method. This method is called by an object that contains a data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataObject> is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method does not support the type of the underlying data object.</exception>

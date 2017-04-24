@@ -14,10 +14,10 @@
     <summary>Defines a cacheable command plan.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.DbCommandDefinition> class is used by the Entity Framework and is not intended for use as a stand-alone component.  
-  
+The <xref:System.Data.Common.DbCommandDefinition> class is used by the Entity Framework and is not intended for use as a stand-alone component.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbCommandDefinition" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor is used by classes that derive from <xref:System.Data.Common.DbCommandDefinition>.  
-  
+The default constructor is used by classes that derive from <xref:System.Data.Common.DbCommandDefinition>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,12 +61,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbCommandDefinition" /> class using the supplied <see cref="T:System.Data.Common.DbCommand" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The supplied <xref:System.Data.Common.DbCommand> must implement <xref:System.ICloneable>; otherwise a <xref:System.Data.ProviderIncompatibleException> is raised.  
-  
- This constructor is used by classes that derive from <xref:System.Data.Common.DbCommandDefinition>.  
-  
+The supplied <xref:System.Data.Common.DbCommand> must implement <xref:System.ICloneable>; otherwise a <xref:System.Data.ProviderIncompatibleException> is raised.  
+ 
+This constructor is used by classes that derive from <xref:System.Data.Common.DbCommandDefinition>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

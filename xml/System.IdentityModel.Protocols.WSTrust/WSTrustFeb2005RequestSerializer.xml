@@ -146,10 +146,10 @@
         <summary>Writes the supported elements on the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object to the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method if the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> class has been subclassed and had more properties added to it.  
-  
+Override this method if the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> class has been subclassed and had more properties added to it.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

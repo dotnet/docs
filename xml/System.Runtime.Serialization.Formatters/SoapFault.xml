@@ -87,10 +87,10 @@
         <value>Additional information required for the <see cref="T:System.Runtime.Serialization.Formatters.SoapFault" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The detail element carries application specific error information related to the `Body` element of a SOAP message.  
-  
+The detail element carries application specific error information related to the `Body` element of a SOAP message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <value>The fault actor for the <see cref="T:System.Runtime.Serialization.Formatters.SoapFault" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.Formatters.SoapFault.FaultActor%2A> property provides information about the cause of the fault within the message path.  
-  
+The <xref:System.Runtime.Serialization.Formatters.SoapFault.FaultActor%2A> property provides information about the cause of the fault within the message path.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <value>The fault code for this <see cref="T:System.Runtime.Serialization.Formatters.SoapFault" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The fault code element provides an algorithmic mechanism to identify the fault.  
-  
+The fault code element provides an algorithmic mechanism to identify the fault.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <value>The fault message for the <see cref="T:System.Runtime.Serialization.Formatters.SoapFault" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The fault string element provides a human readable explanation of the fault and is not intended for algorithmic processing.  
-  
+The fault string element provides a human readable explanation of the fault and is not intended for algorithmic processing.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -51,12 +51,12 @@
         <value>A custom comparer that sorts groups using an object that implements <see cref="T:System.Collections.IComparer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Setting the custom comparer object will clear previously set <xref:System.ComponentModel.GroupDescription.SortDescriptions%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <value>The collection of names that are used to initialize a group with a set of subgroups with the given names.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can add additional subgroups later if there are items that do not match any of the given names.  
-  
+You can add additional subgroups later if there are items that do not match any of the given names.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,10 +157,10 @@
         <summary>Raises the <see cref="E:System.ComponentModel.GroupDescription.PropertyChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subclasses need to call this method to raise the <xref:System.ComponentModel.GroupDescription.PropertyChanged> event.  
-  
+Subclasses need to call this method to raise the <xref:System.ComponentModel.GroupDescription.PropertyChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

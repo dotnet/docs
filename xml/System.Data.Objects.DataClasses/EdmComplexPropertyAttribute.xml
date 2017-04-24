@@ -19,12 +19,12 @@
     <summary>Attribute that indicates that the property represents a complex property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Objects.DataClasses.EdmComplexPropertyAttribute> links the complex property of a class to the complex property of an entity type or complex type defined in the conceptual model.  
-  
- This attribute is applied to properties that return complex types.  
-  
+The <xref:System.Data.Objects.DataClasses.EdmComplexPropertyAttribute> links the complex property of a class to the complex property of an entity type or complex type defined in the conceptual model.  
+ 
+This attribute is applied to properties that return complex types.  
+ 
  ]]></format>
     </remarks>
   </Docs>

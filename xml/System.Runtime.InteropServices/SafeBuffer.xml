@@ -28,17 +28,17 @@
     <summary>Provides a controlled memory buffer that can be used for reading and writing. Attempts to access memory outside the controlled buffer (underruns and overruns) raise exceptions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must call the <xref:System.Runtime.InteropServices.SafeBuffer.Initialize%2A?displayProperty=fullName> method before you use any instance of <xref:System.Runtime.InteropServices.SafeBuffer>. To avoid races when you store an instance of a <xref:System.Runtime.InteropServices.SafeBuffer> object in a static variable, you should use one of the following approaches:  
-  
+You must call the <xref:System.Runtime.InteropServices.SafeBuffer.Initialize%2A?displayProperty=fullName> method before you use any instance of <xref:System.Runtime.InteropServices.SafeBuffer>. To avoid races when you store an instance of a <xref:System.Runtime.InteropServices.SafeBuffer> object in a static variable, you should use one of the following approaches:  
+ 
 -   Create a lock when publishing the <xref:System.Runtime.InteropServices.SafeBuffer>.  
-  
+ 
 -   Create a local variable, initialize the <xref:System.Runtime.InteropServices.SafeBuffer>, and then assign the <xref:System.Runtime.InteropServices.SafeBuffer> to the static variable, for example, by using the <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=fullName> method.  
-  
+ 
 > [!NOTE]
 >  Assignments in a static class constructor are implicitly locked.  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -118,31 +118,31 @@
         <summary>Obtains a pointer from a <see cref="T:System.Runtime.InteropServices.SafeBuffer" /> object for a block of memory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> returns, you should perform bounds checking by verifying that the `pointer` parameter is `null`. If it is not `null`, you must call the <xref:System.Runtime.InteropServices.SafeBuffer.ReleasePointer%2A?displayProperty=fullName> method in a constrained execution region (CER).  
-  
- <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> calls the <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A?displayProperty=fullName> method and exposes the pointer. Unlike the <xref:System.Runtime.InteropServices.SafeBuffer.Read%2A> method, it does not change the current position of the pointer.  
-  
- The following exampledemonstrates how to use the <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> method:  
-  
+When <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> returns, you should perform bounds checking by verifying that the `pointer` parameter is `null`. If it is not `null`, you must call the <xref:System.Runtime.InteropServices.SafeBuffer.ReleasePointer%2A?displayProperty=fullName> method in a constrained execution region (CER).  
+ 
+<xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> calls the <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A?displayProperty=fullName> method and exposes the pointer. Unlike the <xref:System.Runtime.InteropServices.SafeBuffer.Read%2A> method, it does not change the current position of the pointer.  
+ 
+The following exampledemonstrates how to use the <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> method:  
+ 
 ```  
 byte* pointer = null;  
 RuntimeHelpers.PrepareConstrainedRegions();  
 try {  
-    MySafeBuffer.AcquirePointer(ref pointer);  
-    // Use pointer here, with your own bounds checking.  
-    }  
+   MySafeBuffer.AcquirePointer(ref pointer);  
+   // Use pointer here, with your own bounds checking.  
+   }  
 finally {  
-    if (pointer != null)  
-        MySafeBuffer.ReleasePointer();  
-    }  
+   if (pointer != null)  
+       MySafeBuffer.ReleasePointer();  
+   }  
 ```  
-  
- If you cast `pointer` (which is a pointer to a byte) as a pointer to a different type (T*), you may have pointer alignment issues.  
-  
- You must take responsibility for all bounds checking with this pointer.  
-  
+ 
+If you cast `pointer` (which is a pointer to a byte) as a pointer to a different type (T*), you may have pointer alignment issues.  
+ 
+You must take responsibility for all bounds checking with this pointer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
@@ -270,10 +270,10 @@ finally {
         <summary>Specifies the allocation size of the memory buffer by using the specified number of elements and element size. You must call this method before you use the <see cref="T:System.Runtime.InteropServices.SafeBuffer" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method defines the required size of the memory region as the number of elements in an array multiplied by the size of each element.  
-  
+This method defines the required size of the memory region as the number of elements in an array multiplied by the size of each element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -522,10 +522,10 @@ finally {
         <summary>Releases a pointer that was obtained by the <see cref="M:System.Runtime.InteropServices.SafeBuffer.AcquirePointer(System.Byte*@)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After this method returns, the pointer cannot be used.  
-  
+After this method returns, the pointer cannot be used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
@@ -584,14 +584,14 @@ finally {
         <summary>Writes a value type to memory at the given location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to the following code:  
-  
+This method is equivalent to the following code:  
+ 
 ```  
 *(T*)(bytePtr + byteOffset) = value;  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
@@ -654,10 +654,10 @@ finally {
         <summary>Writes the specified number of value types to a memory location by reading bytes starting from the specified location in the input array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each element in the input array consists of the generic value type of the class.  
-  
+Each element in the input array consists of the generic value type of the class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

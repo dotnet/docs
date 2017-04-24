@@ -37,10 +37,10 @@
         <returns>The value of the named property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- MSBuild calls this method after executing the task to get output parameters. All exceptions from this method will be caught in the taskExecution host and logged as a fatal task error.  
-  
+MSBuild calls this method after executing the task to get output parameters. All exceptions from this method will be caught in the taskExecution host and logged as a fatal task error.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -29,16 +29,16 @@
     <summary>Hosts a portable, high fidelity, fixed-format document with read access for user text selection, keyboard navigation, and search.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.FixedDocument> logically binds an ordered sequence of pages together into a single, multi-page, fixed-layout document.  
-  
- <xref:System.Windows.Documents.PageContent> is the only allowable child element of the <xref:System.Windows.Documents.FixedDocument> element.  Each <xref:System.Windows.Documents.PageContent> element refers to the source of the content for a single page. <xref:System.Windows.Documents.PageContent> elements must be in sequential markup order, matching the page order of the document.  
-  
- <xref:System.Windows.Documents.FixedDocument> is designed for [!INCLUDE[TLA#tla_wys](~/includes/tlasharptla-wys-md.md)] applications where the document layout is defined and controlled by the application for rendering to the highest accuracy of the display or print device.  
-  
- <xref:System.Windows.Documents.FlowDocument>, on the other hand, is designed to maximize user readability, and dynamically adjusts the document layout based on user preferences (for example, a user-chosen type size or font) and other variables, such as display size and resolution.  
-  
+<xref:System.Windows.Documents.FixedDocument> logically binds an ordered sequence of pages together into a single, multi-page, fixed-layout document.  
+ 
+<xref:System.Windows.Documents.PageContent> is the only allowable child element of the <xref:System.Windows.Documents.FixedDocument> element.  Each <xref:System.Windows.Documents.PageContent> element refers to the source of the content for a single page. <xref:System.Windows.Documents.PageContent> elements must be in sequential markup order, matching the page order of the document.  
+ 
+<xref:System.Windows.Documents.FixedDocument> is designed for [!INCLUDE[TLA#tla_wys](~/includes/tlasharptla-wys-md.md)] applications where the document layout is defined and controlled by the application for rendering to the highest accuracy of the display or print device.  
+ 
+<xref:System.Windows.Documents.FlowDocument>, on the other hand, is designed to maximize user readability, and dynamically adjusts the document layout based on user preferences (for example, a user-chosen type size or font) and other variables, such as display size and resolution.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,13 +57,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.FixedDocument" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the **FixedDocument** constructor.  
-  
- [!code-csharp[XpsSave#CreateFixedDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpfContent.cs#createfixeddocument)]
- [!code-vb[XpsSave#CreateFixedDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpfcontent.vb#createfixeddocument)]  
-  
+The following example shows use of the **FixedDocument** constructor.  
+ 
+[!code-csharp[XpsSave#CreateFixedDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpfContent.cs#createfixeddocument)]
+[!code-vb[XpsSave#CreateFixedDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpfcontent.vb#createfixeddocument)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,23 +85,23 @@
         <value>An object of a class derived from <see cref="T:System.Windows.Documents.DocumentPaginator" /> that provides pagination services.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you need a paginator with automatic repagination in responses to changes, such as adding content to the document, derive a class from <xref:System.Windows.Documents.DynamicDocumentPaginator> which itself inherits from <xref:System.Windows.Documents.DocumentPaginator>.  
+If you need a paginator with automatic repagination in responses to changes, such as adding content to the document, derive a class from <xref:System.Windows.Documents.DynamicDocumentPaginator> which itself inherits from <xref:System.Windows.Documents.DocumentPaginator>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Documents.FixedDocument> that has a paginator configured for a particular page size.  
-  
- [!code-csharp[XpsPrint#CreateFixedDocumentWithConfiguredPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/WpfContent.cs#createfixeddocumentwithconfiguredpaginator)]
- [!code-vb[XpsPrint#CreateFixedDocumentWithConfiguredPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/wpfcontent.vb#createfixeddocumentwithconfiguredpaginator)]  
-  
- The following example also shows use of the <xref:System.Windows.Documents.FixedDocument.DocumentPaginator%2A> property.  
-  
- [!code-csharp[XpsSave#CreateFixedDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpfContent.cs#createfixeddocument)]
- [!code-vb[XpsSave#CreateFixedDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpfcontent.vb#createfixeddocument)]  
-  
+The following example shows how to create a <xref:System.Windows.Documents.FixedDocument> that has a paginator configured for a particular page size.  
+ 
+[!code-csharp[XpsPrint#CreateFixedDocumentWithConfiguredPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/WpfContent.cs#createfixeddocumentwithconfiguredpaginator)]
+[!code-vb[XpsPrint#CreateFixedDocumentWithConfiguredPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/wpfcontent.vb#createfixeddocumentwithconfiguredpaginator)]  
+ 
+The following example also shows use of the <xref:System.Windows.Documents.FixedDocument.DocumentPaginator%2A> property.  
+ 
+[!code-csharp[XpsSave#CreateFixedDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpfContent.cs#createfixeddocument)]
+[!code-vb[XpsSave#CreateFixedDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpfcontent.vb#createfixeddocument)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,20 +186,20 @@
         <value>The <see cref="T:System.Printing.PrintTicket" /> for this document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Printing.PrintTicket> contains printing information such as whether to print on both sides of each sheet.  
-  
- Setting this <xref:System.Windows.Documents.FixedDocument.PrintTicket%2A> property does not validate or modify the specified <xref:System.Printing.PrintTicket> for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
+A <xref:System.Printing.PrintTicket> contains printing information such as whether to print on both sides of each sheet.  
+ 
+Setting this <xref:System.Windows.Documents.FixedDocument.PrintTicket%2A> property does not validate or modify the specified <xref:System.Printing.PrintTicket> for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ 
 <a name="dependencyPropertyInfo_PrintTicket"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.FixedDocument.PrintTicketProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -20,17 +20,17 @@
     <summary>Defines a permission set that has a name and description associated with it. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Named permission sets are used in security policy administration to specify the permissions to be granted to code that belongs to certain code groups. Names are strings of alphanumeric characters. Description strings can consist of any printable characters.  
+Named permission sets are used in security policy administration to specify the permissions to be granted to code that belongs to certain code groups. Names are strings of alphanumeric characters. Description strings can consist of any printable characters.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of members of the <xref:System.Security.NamedPermissionSet> class.  
-  
+The following code example shows the use of members of the <xref:System.Security.NamedPermissionSet> class.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#1](System.Security.NamedPermissionSet#1)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <summary>Initializes a new, empty instance of the <see cref="T:System.Security.NamedPermissionSet" /> class with the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this constructor creates a named permission set with no permissions but with an <xref:System.Security.Permissions.PermissionState> permission state. A named permission set in an unrestricted state effectively contains all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. The named permission set will contain all built-in permissions as well as all custom user-defined permissions that implement <xref:System.Security.Permissions.IUnrestrictedPermission>. All permissions will have the equivalent of an `Unrestricted` permission state. Permissions that do not implement <xref:System.Security.Permissions.IUnrestrictedPermission> will be empty instances.  
-  
+Using this constructor creates a named permission set with no permissions but with an <xref:System.Security.Permissions.PermissionState> permission state. A named permission set in an unrestricted state effectively contains all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. The named permission set will contain all built-in permissions as well as all custom user-defined permissions that implement <xref:System.Security.Permissions.IUnrestrictedPermission>. All permissions will have the equivalent of an `Unrestricted` permission state. Permissions that do not implement <xref:System.Security.Permissions.IUnrestrictedPermission> will be empty instances.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="name" /> parameter is <see langword="null" /> or is an empty string ("").</exception>
@@ -101,10 +101,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.NamedPermissionSet" /> class with the specified name in either an unrestricted or a fully restricted state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A named permission set in an unrestricted state effectively contains all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. The named permission set will contain all built-in permissions as well as all custom permissions. All permissions will have an `Unrestricted`<xref:System.Security.Permissions.PermissionState>. Permissions that do not implement <xref:System.Security.Permissions.IUnrestrictedPermission>, such as identity permissions, will be empty instances.  
-  
+A named permission set in an unrestricted state effectively contains all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. The named permission set will contain all built-in permissions as well as all custom permissions. All permissions will have an `Unrestricted`<xref:System.Security.Permissions.PermissionState>. Permissions that do not implement <xref:System.Security.Permissions.IUnrestrictedPermission>, such as identity permissions, will be empty instances.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="name" /> parameter is <see langword="null" /> or is an empty string ("").</exception>
@@ -130,12 +130,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.NamedPermissionSet" /> class with the specified name from a permission set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.NamedPermissionSet.%23ctor%2A> constructor to create a new <xref:System.Security.NamedPermissionSet> object. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
-  
+The following code example shows the use of the <xref:System.Security.NamedPermissionSet.%23ctor%2A> constructor to create a new <xref:System.Security.NamedPermissionSet> object. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#6](System.Security.NamedPermissionSet#6)]  -->  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="name" /> parameter is <see langword="null" /> or is an empty string ("").</exception>
@@ -160,12 +160,12 @@
         <returns>A permission set that is a copy of the permissions in the named permission set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Copy%2A> method to create a copy of the current <xref:System.Security.NamedPermissionSet>. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
-  
+The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Copy%2A> method to create a copy of the current <xref:System.Security.NamedPermissionSet>. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#5](System.Security.NamedPermissionSet#5)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,17 +212,17 @@
         <value>A text description of the named permission set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The description helps the administrator understand in words what permissions the set contains and its intended use.  
+The description helps the administrator understand in words what permissions the set contains and its intended use.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Description%2A> property to display the description of the current <xref:System.Security.NamedPermissionSet>. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
-  
+The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Description%2A> property to display the description of the current <xref:System.Security.NamedPermissionSet>. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#3](System.Security.NamedPermissionSet#3)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,17 +255,17 @@
           <see langword="true" /> if the specified <see cref="T:System.Security.NamedPermissionSet" /> is equal to the current <see cref="T:System.Security.NamedPermissionSet" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Object.Equals%2A>.  
+For more information, see <xref:System.Object.Equals%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Equals%2A> method to compare two <xref:System.Security.NamedPermissionSet> objects. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
-  
+The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Equals%2A> method to compare two <xref:System.Security.NamedPermissionSet> objects. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#5](System.Security.NamedPermissionSet#5)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,17 +291,17 @@
         <summary>Reconstructs a named permission set with a specified state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method recreates the state of a named permission set from an XML element previously created by <xref:System.Security.NamedPermissionSet.ToXml%2A>.  
+This method recreates the state of a named permission set from an XML element previously created by <xref:System.Security.NamedPermissionSet.ToXml%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.NamedPermissionSet.FromXml%2A> method to recreate a <xref:System.Security.NamedPermissionSet> object. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
-  
+The following code example shows the use of the <xref:System.Security.NamedPermissionSet.FromXml%2A> method to recreate a <xref:System.Security.NamedPermissionSet> object. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#4](System.Security.NamedPermissionSet#4)]  -->  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="et" /> parameter is not a valid representation of a named permission set.</exception>
@@ -332,10 +332,10 @@
         <returns>A hash code for the current <see cref="T:System.Security.NamedPermissionSet" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash code for two instances of the same permission might differ, hence a hash code should not be used to compare two <xref:System.Security.NamedPermissionSet> objects.  
-  
+The hash code for two instances of the same permission might differ, hence a hash code should not be used to compare two <xref:System.Security.NamedPermissionSet> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,17 +358,17 @@
         <value>The name of the named permission set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Code groups refer to permission sets by name.  
+Code groups refer to permission sets by name.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Name%2A> property to display the name of a <xref:System.Security.NamedPermissionSet>. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
-  
+The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Name%2A> property to display the name of a <xref:System.Security.NamedPermissionSet>. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#2](System.Security.NamedPermissionSet#2)]  -->  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The name is <see langword="null" /> or is an empty string ("").</exception>
@@ -393,17 +393,17 @@
         <returns>The XML representation of the named permission set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Security.NamedPermissionSet.FromXml%2A> to recreate the state represented by the returned element.  
+Use <xref:System.Security.NamedPermissionSet.FromXml%2A> to recreate the state represented by the returned element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.NamedPermissionSet.ToXml%2A> method to recreate a <xref:System.Security.NamedPermissionSet> object. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
-  
+The following code example shows the use of the <xref:System.Security.NamedPermissionSet.ToXml%2A> method to recreate a <xref:System.Security.NamedPermissionSet> object. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#4](System.Security.NamedPermissionSet#4)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

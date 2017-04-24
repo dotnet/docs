@@ -41,12 +41,12 @@
     <summary>Represents the activity class used to handle an <see cref="T:System.Exception" /> of the type specified by the <see cref="P:System.Workflow.ComponentModel.FaultHandlerActivity.FaultType" /> property. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,13 +65,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.FaultHandlerActivity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an instance of the <xref:System.Workflow.ComponentModel.FaultHandlerActivity> class.  This example is from the Compensation SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
-  
- [!code-csharp[wf_samples#145](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#145)]
- [!code-vb[wf_samples#145](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#145)]  
-  
+The following example shows how to create an instance of the <xref:System.Workflow.ComponentModel.FaultHandlerActivity> class.  This example is from the Compensation SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+ 
+[!code-csharp[wf_samples#145](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#145)]
+[!code-vb[wf_samples#145](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#145)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,18 +191,18 @@
         <value>The <see cref="T:System.Type" /> of the associated <see cref="T:System.Exception" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be set to use the <xref:System.Workflow.ComponentModel.FaultHandlerActivity>.  
+This property must be set to use the <xref:System.Workflow.ComponentModel.FaultHandlerActivity>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the `FaultType` property. This example is from the Compensation SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
-  
- [!code-csharp[WF_Samples#151](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#151)]
- [!code-vb[WF_Samples#151](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#151)]  
-  
+The following example shows how to set the `FaultType` property. This example is from the Compensation SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+ 
+[!code-csharp[WF_Samples#151](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#151)]
+[!code-vb[WF_Samples#151](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#151)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.ComponentModel.FaultHandlerActivity.FaultType" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read only.  
-  
+This property is read only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,10 +385,10 @@
         <returns>An <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> enumeration value that denotes the access level of the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one another. Without this interface this information is inferred directly from property getter/setters.  
-  
+Used at compile time to validate whether the properties are correctly bound to one another. Without this interface this information is inferred directly from property getter/setters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -416,10 +416,10 @@
         <returns>The <see cref="T:System.Type" /> for the property whose name is passed as the <paramref name="propertyName " />parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one another.  
-  
+Used at compile time to validate whether the properties are correctly bound to one another.  
+ 
  ]]></format>
         </remarks>
       </Docs>

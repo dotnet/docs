@@ -23,10 +23,10 @@
     <summary>Encapsulates optional configuration parameters for the user interface (UI) that Cryptography Next Generation (CNG) displays when you access a protected key.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class enables you to create a UI policy for displaying prompts about key operations such as smart card PIN prompts. It also enables you to enforce user interaction to access a key, even if the key is stored in a software key storage provider (KSP) instead of in a smart card. CNG displays these configuration parameters for the UI when you access a protected key.  
-  
+This class enables you to create a UI policy for displaying prompts about key operations such as smart card PIN prompts. It also enables you to enforce user interaction to access a key, even if the key is stored in a software key storage provider (KSP) instead of in a smart card. CNG displays these configuration parameters for the UI when you access a protected key.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CngUIPolicy" /> class by using the specified protection level.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the protection level for the key in UI prompting scenarios.  
-  
+This constructor sets the protection level for the key in UI prompting scenarios.  
+ 
  ]]></format>
         </remarks>
       </Docs>

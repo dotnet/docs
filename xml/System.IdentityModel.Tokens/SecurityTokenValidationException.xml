@@ -14,10 +14,10 @@
     <summary>The exception that is thrown when a received security token is invalid.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> is typically thrown by the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateToken%2A> method.  
-  
+The <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> is typically thrown by the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateToken%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>

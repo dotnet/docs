@@ -28,33 +28,33 @@
     <summary>Provides information about an event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.ComponentModel.EventDescriptor> consists of a name, its attributes, the component that the event is bound to, the event delegate, the type of delegate, and whether the delegate is multicast.  
-  
- <xref:System.ComponentModel.EventDescriptor> provides the following `abstract` properties and methods:  
-  
+An <xref:System.ComponentModel.EventDescriptor> consists of a name, its attributes, the component that the event is bound to, the event delegate, the type of delegate, and whether the delegate is multicast.  
+ 
+<xref:System.ComponentModel.EventDescriptor> provides the following `abstract` properties and methods:  
+ 
 -   <xref:System.ComponentModel.EventDescriptor.ComponentType%2A> contains the type of the component this event is declared on.  
-  
+ 
 -   <xref:System.ComponentModel.EventDescriptor.EventType%2A> contains the type of delegate for the event.  
-  
+ 
 -   <xref:System.ComponentModel.EventDescriptor.IsMulticast%2A> contains a value indicating whether the event delegate is a multicast delegate.  
-  
+ 
 -   <xref:System.ComponentModel.EventDescriptor.AddEventHandler%2A> binds the event to a component.  
-  
+ 
 -   <xref:System.ComponentModel.EventDescriptor.RemoveEventHandler%2A> unbinds the delegate from the component so that the delegate no longer receives events from the component.  
+ 
+For more information about events, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2). For more information about reflection, see the topics in [Reflection](~/docs/framework/reflection-and-codedom/reflection.md).  
+ 
   
- For more information about events, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2). For more information about reflection, see the topics in [Reflection](~/docs/framework/reflection-and-codedom/reflection.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example is built upon the example in the <xref:System.ComponentModel.EventDescriptorCollection> class. It prints the information (category, description, and display name) of each event on a button in a text box. It requires that `button1` and `textbox1` have been instantiated on a form.  
-  
- [!code-cpp[EventDescriptor#1](~/samples/snippets/cpp/VS_Snippets_Winforms/EventDescriptor/CPP/eventdescriptor.cpp#1)]
- [!code-csharp[EventDescriptor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/EventDescriptor/CS/eventdescriptor.cs#1)]
- [!code-vb[EventDescriptor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EventDescriptor/VB/eventdescriptor.vb#1)]  
-  
+The following code example is built upon the example in the <xref:System.ComponentModel.EventDescriptorCollection> class. It prints the information (category, description, and display name) of each event on a button in a text box. It requires that `button1` and `textbox1` have been instantiated on a form.  
+ 
+[!code-cpp[EventDescriptor#1](~/samples/snippets/cpp/VS_Snippets_Winforms/EventDescriptor/CPP/eventdescriptor.cpp#1)]
+[!code-csharp[EventDescriptor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/EventDescriptor/CS/eventdescriptor.cs#1)]
+[!code-vb[EventDescriptor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EventDescriptor/VB/eventdescriptor.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,10 +114,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EventDescriptor" /> class with the name in the specified <see cref="T:System.ComponentModel.MemberDescriptor" /> and the attributes in both the <see cref="T:System.ComponentModel.MemberDescriptor" /> and the <see cref="T:System.Attribute" /> array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor appends the attributes in the <xref:System.Attribute> array to the attributes in the <xref:System.ComponentModel.MemberDescriptor>.  
-  
+This constructor appends the attributes in the <xref:System.Attribute> array to the attributes in the <xref:System.ComponentModel.MemberDescriptor>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,12 +182,12 @@
         <summary>When overridden in a derived class, binds the event to the component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this method is implemented through reflection. For more information about reflection, see the topics in [Reflection](~/docs/framework/reflection-and-codedom/reflection.md).  
-  
- For more information about delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
+Typically, this method is implemented through reflection. For more information about reflection, see the topics in [Reflection](~/docs/framework/reflection-and-codedom/reflection.md).  
+ 
+For more information about delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -221,10 +221,10 @@
         <value>A <see cref="T:System.Type" /> that represents the type of component the event is bound to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this property is implemented through reflection.  
-  
+Typically, this property is implemented through reflection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,10 +255,10 @@
         <value>A <see cref="T:System.Type" /> that represents the type of delegate for the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this property is implemented through reflection.  
-  
+Typically, this property is implemented through reflection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,12 +290,12 @@
           <see langword="true" /> if the event delegate is multicast; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this property is implemented through reflection.  
-  
- A multicast delegate differs from a regular delegate in that it can contain references to more than just one method. Methods in a multicast delegate are executed synchronously when the delegate is invoked, in the order in which they appear. If one of the called methods raises an exception, then the delegate ceases and the exception is propagated to the delegate caller.  
-  
+Typically, this property is implemented through reflection.  
+ 
+A multicast delegate differs from a regular delegate in that it can contain references to more than just one method. Methods in a multicast delegate are executed synchronously when the delegate is invoked, in the order in which they appear. If one of the called methods raises an exception, then the delegate ceases and the exception is propagated to the delegate caller.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,12 +331,12 @@
         <summary>When overridden in a derived class, unbinds the delegate from the component so that the delegate will no longer receive events from the component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this method is implemented through reflection. For more information, see the topics in [Reflection](~/docs/framework/reflection-and-codedom/reflection.md).  
-  
- For more information about delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
+Typically, this method is implemented through reflection. For more information, see the topics in [Reflection](~/docs/framework/reflection-and-codedom/reflection.md).  
+ 
+For more information about delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

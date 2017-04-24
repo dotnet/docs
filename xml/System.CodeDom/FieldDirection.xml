@@ -18,19 +18,19 @@
     <summary>Defines identifiers used to indicate the direction of parameter and argument declarations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.FieldDirection> allows for passing arguments to functions by reference, or using incoming or outgoing parameters.  
+<xref:System.CodeDom.FieldDirection> allows for passing arguments to functions by reference, or using incoming or outgoing parameters.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of <xref:System.CodeDom.FieldDirection> to indicate the field direction types of the parameters of a method in a method declaration.  
-  
- [!code-cpp[CodeParameterDeclarationExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExample/CPP/codeparameterdeclarationexample.cpp#3)]
- [!code-csharp[CodeParameterDeclarationExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExample/CS/codeparameterdeclarationexample.cs#3)]
- [!code-vb[CodeParameterDeclarationExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExample/VB/codeparameterdeclarationexample.vb#3)]  
-  
+The following example demonstrates use of <xref:System.CodeDom.FieldDirection> to indicate the field direction types of the parameters of a method in a method declaration.  
+ 
+[!code-cpp[CodeParameterDeclarationExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExample/CPP/codeparameterdeclarationexample.cpp#3)]
+[!code-csharp[CodeParameterDeclarationExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExample/CS/codeparameterdeclarationexample.cs#3)]
+[!code-vb[CodeParameterDeclarationExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExample/VB/codeparameterdeclarationexample.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

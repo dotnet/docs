@@ -19,10 +19,10 @@
     <summary>Serves as the base class for all validation attributes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class enforces validation, based on the metadata that is associated with the data table. You can override this class to create custom validation attributes.  
-  
+This class enforces validation, based on the metadata that is associated with the data table. You can override this class to create custom validation attributes.  
+ 
  ]]></format>
     </remarks>
     <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The <see cref="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType" /> and <see cref="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName" /> properties for localized error message are set at the same time that the non-localized <see cref="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage" /> property error message is set.</exception>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" /> class by using the function that enables access to validation resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor provides a resource accessor function that is used by the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString%2A> property to retrieve an error message.  
-  
+This constructor provides a resource accessor function that is used by the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString%2A> property to retrieve an error message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -125,10 +125,10 @@
         <value>The error message that is associated with the validation control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is the error message that you associate with the validation control. It is used for non-localized error messages.  
-  
+This property is the error message that you associate with the validation control. It is used for non-localized error messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>The error message resource that is associated with a validation control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName%2A> property together with the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType%2A> property in order to provide a localized error message.  
-  
+You use the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName%2A> property together with the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType%2A> property in order to provide a localized error message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
         <value>The type of error message that is associated with a validation control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType%2A> property together with the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName%2A> property in to provide a localized error message.  
-  
+You use the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType%2A> property together with the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName%2A> property in to provide a localized error message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,10 +215,10 @@
         <value>The localized validation error message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The error message string is obtained by evaluating the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A> property or by evaluating the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType%2A> and <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName%2A> properties. The two cases are mutually exclusive. The second case is used if you want to display a localized error message.  
-  
+The error message string is obtained by evaluating the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A> property or by evaluating the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType%2A> and <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName%2A> properties. The two cases are mutually exclusive. The second case is used if you want to display a localized error message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <returns>An instance of the formatted error message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method formats an error message by using the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString%2A> property. This method appends the name of the data field that triggered the error to the formatted error message. You can customize how the error message is formatted by creating a derived class that overrides this method.  
-  
+This method formats an error message by using the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString%2A> property. This method appends the name of the data field that triggered the error to the formatted error message. You can customize how the error message is formatted by creating a derived class that overrides this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
         <returns>An instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult" /> class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult%2A> method checks validity without throwing an exception.  
-  
+The <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult%2A> method checks validity without throwing an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,10 +320,10 @@
           <see langword="true" /> if the specified value is valid; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you inherit from the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> class, you must implement the validation logic in this method.  
-  
+If you inherit from the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> class, you must implement the validation logic in this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -408,10 +408,10 @@
         <summary>Validates the specified object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid%2A> method to determine whether the object that is specified by the `value` parameter is valid. If the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.Validate%2A> method returns `false`, this method calls the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage%2A> method to get a localized message that states the problem. It then throws a <xref:System.ComponentModel.DataAnnotations.ValidationException> exception.  
-  
+This method calls the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid%2A> method to determine whether the object that is specified by the `value` parameter is valid. If the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.Validate%2A> method returns `false`, this method calls the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage%2A> method to get a localized message that states the problem. It then throws a <xref:System.ComponentModel.DataAnnotations.ValidationException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">Validation failed.</exception>
@@ -444,10 +444,10 @@
         <summary>Validates the specified object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method validates the value of the object or property on which the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> attribute is declared. It calls the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid%2A> method and passes `value` as a parameter. If validation fails, a <xref:System.ComponentModel.DataAnnotations.ValidationException> exception is thrown.  
-  
+This method validates the value of the object or property on which the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> attribute is declared. It calls the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid%2A> method and passes `value` as a parameter. If validation fails, a <xref:System.ComponentModel.DataAnnotations.ValidationException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">

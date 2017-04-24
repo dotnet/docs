@@ -14,10 +14,10 @@
     <summary>Provides a <see cref="T:System.Windows.WeakEventManager" /> implementation so that you can use the "weak event listener" pattern to attach listeners for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In order to be listeners in this pattern, your listener objects must implement <xref:System.Windows.IWeakEventListener>. You do not need to implement <xref:System.Windows.IWeakEventListener> on the class that is the source of the events.  
-  
+In order to be listeners in this pattern, your listener objects must implement <xref:System.Windows.IWeakEventListener>. You do not need to implement <xref:System.Windows.IWeakEventListener> on the class that is the source of the events.  
+ 
  ]]></format>
     </remarks>
   </Docs>

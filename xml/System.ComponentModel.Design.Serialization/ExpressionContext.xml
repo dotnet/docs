@@ -14,22 +14,22 @@
     <summary>Provides a means of passing context state among serializers. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.ComponentModel.Design.Serialization.ExpressionContext> is placed on the context stack and contains the most relevant expression during serialization. The following C# code demonstrates an assignment.  
-  
+An <xref:System.ComponentModel.Design.Serialization.ExpressionContext> is placed on the context stack and contains the most relevant expression during serialization. The following C# code demonstrates an assignment.  
+ 
 ```  
 button1.Text = "Hello";  
 ```  
-  
- During serialization, several serializers are responsible for creating this single statement. One of those serializers is responsible for creating "Hello". There are times when that serializer may need to know the context in which it is creating its expression. In the previous example, this context is not needed. The following C# code shows a situation in which knowledge of the context is necessary.  
-  
+ 
+During serialization, several serializers are responsible for creating this single statement. One of those serializers is responsible for creating "Hello". There are times when that serializer may need to know the context in which it is creating its expression. In the previous example, this context is not needed. The following C# code shows a situation in which knowledge of the context is necessary.  
+ 
 ```  
 button1.Text = rm.GetString("button1_Text");  
 ```  
-  
- In this case, the serializer responsible for creating the resource expression needs to be informed of the names of the target objects. The <xref:System.ComponentModel.Design.Serialization.ExpressionContext> class can be used for this. As each serializer creates an expression and invokes a serializer to handle a smaller part of the statement as a whole, the serializer pushes an expression context on the context stack. Each expression context has a parent property that locates the next expression context on the stack. This provides a convenient traversal capability.  
-  
+ 
+In this case, the serializer responsible for creating the resource expression needs to be informed of the names of the target objects. The <xref:System.ComponentModel.Design.Serialization.ExpressionContext> class can be used for this. As each serializer creates an expression and invokes a serializer to handle a smaller part of the statement as a whole, the serializer pushes an expression context on the context stack. Each expression context has a parent property that locates the next expression context on the stack. This provides a convenient traversal capability.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -119,10 +119,10 @@ button1.Text = rm.GetString("button1_Text");
         <value>The <see cref="T:System.Type" /> of the expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use <xref:System.ComponentModel.Design.Serialization.ExpressionContext> to determine if a cast is needed when assigning to the expression.  
-  
+You can use <xref:System.ComponentModel.Design.Serialization.ExpressionContext> to determine if a cast is needed when assigning to the expression.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@ button1.Text = rm.GetString("button1_Text");
         <value>The object owning this expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the expression is a property reference to the <xref:System.Windows.Forms.Control.Text%2A> property of an instance of <xref:System.Windows.Forms.Button> called `button1`, <xref:System.ComponentModel.Design.Serialization.ExpressionContext.Owner%2A> returns `button1`.  
-  
+If the expression is a property reference to the <xref:System.Windows.Forms.Control.Text%2A> property of an instance of <xref:System.Windows.Forms.Button> called `button1`, <xref:System.ComponentModel.Design.Serialization.ExpressionContext.Owner%2A> returns `button1`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,24 +169,24 @@ button1.Text = rm.GetString("button1_Text");
         <value>The preset value of this expression, or <see langword="null" /> if not assigned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Contains the preset value of an expression, should one exist. For example, if the expression is a property reference expression referring to the <xref:System.Windows.Forms.Control.Controls%2A> property of a <xref:System.Windows.Forms.Button>, the <xref:System.ComponentModel.Design.Serialization.ExpressionContext.PresetValue%2A> property contains the instance of the <xref:System.Windows.Forms.Control.Controls%2A> property. This is because the property is read-only and preset by the object to contain a value. On the other hand, a property such as <xref:System.Windows.Forms.Control.Text%2A> or <xref:System.Windows.Forms.Control.Visible%2A> does not have a preset value and therefore the <xref:System.ComponentModel.Design.Serialization.ExpressionContext.PresetValue%2A> property returns `null`.  
-  
- The following C# code shows how serializers can use this information to guide serialization.  
-  
- [C#]  
-  
+Contains the preset value of an expression, should one exist. For example, if the expression is a property reference expression referring to the <xref:System.Windows.Forms.Control.Controls%2A> property of a <xref:System.Windows.Forms.Button>, the <xref:System.ComponentModel.Design.Serialization.ExpressionContext.PresetValue%2A> property contains the instance of the <xref:System.Windows.Forms.Control.Controls%2A> property. This is because the property is read-only and preset by the object to contain a value. On the other hand, a property such as <xref:System.Windows.Forms.Control.Text%2A> or <xref:System.Windows.Forms.Control.Visible%2A> does not have a preset value and therefore the <xref:System.ComponentModel.Design.Serialization.ExpressionContext.PresetValue%2A> property returns `null`.  
+ 
+The following C# code shows how serializers can use this information to guide serialization.  
+ 
+[C#]  
+ 
 ```  
 Padding p = new Padding();  
 p.Left = 5;  
 button1.Padding = p;  
-  
+ 
 button1.Padding.Left = 5;  
 ```  
-  
- The serializer of the <xref:System.Windows.Forms.Padding> structure needs to be informed if it should generate the first or second form. The first form is generated by default. The second form is only generated if there is an <xref:System.ComponentModel.Design.Serialization.ExpressionContext> on the context stack that contains a <xref:System.ComponentModel.Design.Serialization.ExpressionContext.PresetValue%2A> equal to the value of the <xref:System.Windows.Forms.Padding> currently being serialized.  
-  
+ 
+The serializer of the <xref:System.Windows.Forms.Padding> structure needs to be informed if it should generate the first or second form. The first form is generated by default. The second form is only generated if there is an <xref:System.ComponentModel.Design.Serialization.ExpressionContext> on the context stack that contains a <xref:System.ComponentModel.Design.Serialization.ExpressionContext.PresetValue%2A> equal to the value of the <xref:System.Windows.Forms.Padding> currently being serialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>

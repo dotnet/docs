@@ -11,18 +11,18 @@
     <summary>Defines an interface for invoking compilation of source code or a CodeDOM tree using a specific compiler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the .NET Framework versions 1.0 and 1.1, code providers consist of implementations of <xref:System.CodeDom.Compiler.CodeDomProvider>, <xref:System.CodeDom.Compiler.ICodeGenerator>, <xref:System.CodeDom.Compiler.ICodeParser>, and <xref:System.CodeDom.Compiler.ICodeCompiler>. In the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A>, <xref:System.CodeDom.Compiler.CodeDomProvider.CreateParser%2A>, and <xref:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A> methods are obsolete, and the methods of <xref:System.CodeDom.Compiler.ICodeGenerator> and <xref:System.CodeDom.Compiler.ICodeCompiler> are directly available in the <xref:System.CodeDom.Compiler.CodeDomProvider> class. You should override those methods in your code provider implementation and not call the base methods.  
-  
- The <xref:System.CodeDom.Compiler.ICodeCompiler> interface can be implemented for a specific compiler to enable developers to programmatically compile assemblies from Code Document Object Model (CodeDOM) compile units, strings containing source code, or source code files.  
-  
- The <xref:System.CodeDom.Compiler.ICodeCompiler> interface provides the capability to invoke compilation with specified parameters at runtime and access information related to compilation after compilation occurs, including the result code, and any errors or warnings the compiler returns. Each compile method accepts a <xref:System.CodeDom.Compiler.CompilerParameters> object that indicates settings for the compiler, and returns a <xref:System.CodeDom.Compiler.CompilerResults> object that indicates the results of the compilation.  
-  
- Compiler developers should provide an implementation of this interface to support dynamic compilation. <xref:System.CodeDom.Compiler.CodeDomProvider> implementers should also consider implementing this interface to provide programmatic compilation capability for the language that they are providing CodeDom support for.  
-  
+ 
+The <xref:System.CodeDom.Compiler.ICodeCompiler> interface can be implemented for a specific compiler to enable developers to programmatically compile assemblies from Code Document Object Model (CodeDOM) compile units, strings containing source code, or source code files.  
+ 
+The <xref:System.CodeDom.Compiler.ICodeCompiler> interface provides the capability to invoke compilation with specified parameters at runtime and access information related to compilation after compilation occurs, including the result code, and any errors or warnings the compiler returns. Each compile method accepts a <xref:System.CodeDom.Compiler.CompilerParameters> object that indicates settings for the compiler, and returns a <xref:System.CodeDom.Compiler.CompilerResults> object that indicates the results of the compilation.  
+ 
+Compiler developers should provide an implementation of this interface to support dynamic compilation. <xref:System.CodeDom.Compiler.CodeDomProvider> implementers should also consider implementing this interface to provide programmatic compilation capability for the language that they are providing CodeDom support for.  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This interface cannot be used by partially trusted code.</permission>

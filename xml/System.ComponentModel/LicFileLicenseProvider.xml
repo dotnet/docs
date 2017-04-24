@@ -19,23 +19,23 @@
     <summary>Provides an implementation of a <see cref="T:System.ComponentModel.LicenseProvider" />. The provider works in a similar fashion to the Microsoft .NET Framework standard licensing model.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.LicFileLicenseProvider> offers <xref:System.ComponentModel.LicFileLicenseProvider.GetLicense%2A> and <xref:System.ComponentModel.LicFileLicenseProvider.IsKeyValid%2A> methods. The <xref:System.ComponentModel.LicFileLicenseProvider.IsKeyValid%2A> method determines whether the <xref:System.ComponentModel.License.LicenseKey%2A> retrieved by the <xref:System.ComponentModel.LicFileLicenseProvider.GetLicense%2A> method is valid. When you inherit from this class, you can override the <xref:System.ComponentModel.LicFileLicenseProvider.IsKeyValid%2A> method to provide your own validation logic.  
+The <xref:System.ComponentModel.LicFileLicenseProvider> offers <xref:System.ComponentModel.LicFileLicenseProvider.GetLicense%2A> and <xref:System.ComponentModel.LicFileLicenseProvider.IsKeyValid%2A> methods. The <xref:System.ComponentModel.LicFileLicenseProvider.IsKeyValid%2A> method determines whether the <xref:System.ComponentModel.License.LicenseKey%2A> retrieved by the <xref:System.ComponentModel.LicFileLicenseProvider.GetLicense%2A> method is valid. When you inherit from this class, you can override the <xref:System.ComponentModel.LicFileLicenseProvider.IsKeyValid%2A> method to provide your own validation logic.  
+ 
+This class exists to provide similar licensing functionality to COM licensing and uses text license files.  
+ 
+For more information on licensing, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).  
+ 
   
- This class exists to provide similar licensing functionality to COM licensing and uses text license files.  
-  
- For more information on licensing, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a licensed control using the <xref:System.ComponentModel.LicenseManager.Validate%2A> method. It uses <xref:System.ComponentModel.LicFileLicenseProvider> for the license manager.  
-  
- [!code-cpp[Classic LicenseManager Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LicenseManager Example/CPP/source.cpp#1)]
- [!code-csharp[Classic LicenseManager Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LicenseManager Example/CS/source.cs#1)]
- [!code-vb[Classic LicenseManager Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic LicenseManager Example/VB/source.vb#1)]  
-  
+The following example creates a licensed control using the <xref:System.ComponentModel.LicenseManager.Validate%2A> method. It uses <xref:System.ComponentModel.LicFileLicenseProvider> for the license manager.  
+ 
+[!code-cpp[Classic LicenseManager Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LicenseManager Example/CPP/source.cpp#1)]
+[!code-csharp[Classic LicenseManager Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LicenseManager Example/CS/source.cs#1)]
+[!code-vb[Classic LicenseManager Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic LicenseManager Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -120,12 +120,12 @@
         <returns>A valid <see cref="T:System.ComponentModel.License" />. If this method cannot find a valid <see cref="T:System.ComponentModel.License" /> or a valid <paramref name="context" /> parameter, it returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- At design time, the <xref:System.ComponentModel.LicFileLicenseProvider.GetLicense%2A> method looks for a license file named `myClassName.LIC`, where `myClassName` is the <xref:System.Type.FullName%2A> of the component to create. This file must be in the same directory as the .dll file that contains the component.  
-  
- Next, this method checks the first line of the license file against a key specified in the <xref:System.ComponentModel.LicFileLicenseProvider.IsKeyValid%2A> method. If the key is valid, this line is used as the <xref:System.ComponentModel.License.LicenseKey%2A>.  
-  
+At design time, the <xref:System.ComponentModel.LicFileLicenseProvider.GetLicense%2A> method looks for a license file named `myClassName.LIC`, where `myClassName` is the <xref:System.Type.FullName%2A> of the component to create. This file must be in the same directory as the .dll file that contains the component.  
+ 
+Next, this method checks the first line of the license file against a key specified in the <xref:System.ComponentModel.LicFileLicenseProvider.IsKeyValid%2A> method. If the key is valid, this line is used as the <xref:System.ComponentModel.License.LicenseKey%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
           <see langword="true" /> if the key is a valid <see cref="P:System.ComponentModel.License.LicenseKey" /> for the specified type; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method checks the key against the phrase: " `myClassName is a licensed component.` ", where `myClassName` is the <xref:System.Type.FullName%2A> of the component you want to create.  
-  
+This method checks the key against the phrase: " `myClassName is a licensed component.` ", where `myClassName` is the <xref:System.Type.FullName%2A> of the component you want to create.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

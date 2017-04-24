@@ -14,10 +14,10 @@
     <summary>Represents the schema of an enumeration property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class inherits the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Default%2A> property from the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> class, which has no meaning for this class. Use the <xref:Microsoft.Build.Framework.XamlTypes.EnumValue.IsDefault%2A> property on the <xref:Microsoft.Build.Framework.XamlTypes.EnumValue> instead to mark the default value for this property.  
-  
+This class inherits the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Default%2A> property from the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> class, which has no meaning for this class. Use the <xref:Microsoft.Build.Framework.XamlTypes.EnumValue.IsDefault%2A> property on the <xref:Microsoft.Build.Framework.XamlTypes.EnumValue> instead to mark the default value for this property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>Returns the provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be set during deserialization.  
-  
+This property must be set during deserialization.  
+ 
  ]]></format>
         </remarks>
       </Docs>

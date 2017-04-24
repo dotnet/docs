@@ -19,14 +19,14 @@
     <summary>Returns result information for the <see cref="T:System.Workflow.Activities.CodeCondition" /> class.  This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.Activities.CodeCondition> class exposes an event of type EventHandler\<ConditionalEventArgs>. The purpose of the event is to provide information about the result of the condition evaluation (`true` or `false`) through the <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> property of the event args.  
-  
+ 
+The <xref:System.Workflow.Activities.CodeCondition> class exposes an event of type EventHandler\<ConditionalEventArgs>. The purpose of the event is to provide information about the result of the condition evaluation (`true` or `false`) through the <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> property of the event args.  
+ 
  ]]></format>
     </remarks>
   </Docs>

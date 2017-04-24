@@ -18,10 +18,10 @@
     <summary>Represents a security token provider that provides <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" /> security tokens for a SOAP message sender.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In most instances it is not necessary to call the <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider> class directly, as it is called when a client sends a SOAP message that requires a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token. Specifically, a client specifies the type of security token required, using the <xref:System.ServiceModel.Description.ClientCredentials> class and the <xref:System.ServiceModel.Description.ClientCredentials> class calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method to get a security token. When the security token required is an <xref:System.IdentityModel.Tokens.X509SecurityToken> security token, the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method calls the <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method.  
-  
+In most instances it is not necessary to call the <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider> class directly, as it is called when a client sends a SOAP message that requires a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token. Specifically, a client specifies the type of security token required, using the <xref:System.ServiceModel.Description.ClientCredentials> class and the <xref:System.ServiceModel.Description.ClientCredentials> class calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method to get a security token. When the security token required is an <xref:System.IdentityModel.Tokens.X509SecurityToken> security token, the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method calls the <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.X509SecurityTokenProvider" /> class using the specified X.509 certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method gets a security token based on the certificate specified in the `certificate` parameter.  
-  
+The <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method gets a security token based on the certificate specified in the `certificate` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.X509SecurityTokenProvider" /> class by getting an X.509 certificate from the specified certificate store criteria.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method gets a security token based on the certificate that matches the specified certificate store criteria.  
-  
+The <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method gets a security token based on the certificate that matches the specified certificate store criteria.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -108,10 +108,10 @@
         <value>Gets an <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that represents the X.509 certificate of a security token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method gets a security token based on the certificate represented by the <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.Certificate%2A> property.  
-  
+The <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method gets a security token based on the certificate represented by the <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.Certificate%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,12 +155,12 @@
         <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token to get.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method is called by the <xref:System.ServiceModel.Description.ClientCredentials> class when a client sends a SOAP message and an <xref:System.IdentityModel.Tokens.X509SecurityToken> security token is required.  
-  
- The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method calls the <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method is called by the <xref:System.ServiceModel.Description.ClientCredentials> class when a client sends a SOAP message and an <xref:System.IdentityModel.Tokens.X509SecurityToken> security token is required.  
+ 
+The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method calls the <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

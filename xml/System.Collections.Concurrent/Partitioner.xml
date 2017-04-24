@@ -24,10 +24,10 @@
     <summary>Provides common partitioning strategies for arrays, lists, and enumerables.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <returns>A partitioner.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="toExclusive" /> argument is less than or equal to the <paramref name="fromInclusive" /> argument.</exception>
@@ -107,10 +107,10 @@
         <returns>A partitioner.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="toExclusive" /> argument is less than or equal to the <paramref name="fromInclusive" /> argument.</exception>
@@ -151,10 +151,10 @@
         <returns>A partitioner.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="toExclusive" /> argument is less than or equal to the <paramref name="fromInclusive" /> argument.  
@@ -199,10 +199,10 @@
         <returns>A partitioner.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="toExclusive" /> argument is less than or equal to the <paramref name="fromInclusive" /> argument.  
@@ -247,10 +247,10 @@
         <returns>An orderable partitioner based on the input array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ordering used in the created partitioner is determined by the natural order of the elements as retrieved from the source enumerable. For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+The ordering used in the created partitioner is determined by the natural order of the elements as retrieved from the source enumerable. For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,10 +292,10 @@
         <returns>An orderable partitioner based on the input array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ordering used in the created partitioner is determined by the natural order of the elements as retrieved from the source enumerable.  
-  
+The ordering used in the created partitioner is determined by the natural order of the elements as retrieved from the source enumerable.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="partitionerOptions" /> argument specifies an invalid value for <see cref="T:System.Collections.Concurrent.EnumerablePartitionerOptions" />.</exception>
@@ -338,10 +338,10 @@
         <returns>An orderable partitioner based on the input list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,10 +383,10 @@
         <returns>An orderable partitioner based on the input array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

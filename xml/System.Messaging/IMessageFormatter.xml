@@ -20,12 +20,12 @@
     <summary>Serializes or deserializes objects from the body of a Message Queuing message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an application sends a message to the queue using an instance of the <xref:System.Messaging.MessageQueue> class, the formatter serializes the object (which can be an instance of any class) into a stream and inserts it into the message body. When reading from a queue using a <xref:System.Messaging.MessageQueue>, the formatter deserializes the message data into the <xref:System.Messaging.Message.Body%2A> property of a <xref:System.Messaging.Message>.  
-  
- <xref:System.Messaging.BinaryMessageFormatter> and <xref:System.Messaging.ActiveXMessageFormatter> provide faster throughput than the <xref:System.Messaging.XmlMessageFormatter>. The <xref:System.Messaging.ActiveXMessageFormatter> allows interoperability with Visual Basic 6.0 Message Queuing applications. The <xref:System.Messaging.XmlMessageFormatter> is loosely coupled, which means that the server and client can version the type that is sent and received independently.  
-  
+When an application sends a message to the queue using an instance of the <xref:System.Messaging.MessageQueue> class, the formatter serializes the object (which can be an instance of any class) into a stream and inserts it into the message body. When reading from a queue using a <xref:System.Messaging.MessageQueue>, the formatter deserializes the message data into the <xref:System.Messaging.Message.Body%2A> property of a <xref:System.Messaging.Message>.  
+ 
+<xref:System.Messaging.BinaryMessageFormatter> and <xref:System.Messaging.ActiveXMessageFormatter> provide faster throughput than the <xref:System.Messaging.XmlMessageFormatter>. The <xref:System.Messaging.ActiveXMessageFormatter> allows interoperability with Visual Basic 6.0 Message Queuing applications. The <xref:System.Messaging.XmlMessageFormatter> is loosely coupled, which means that the server and client can version the type that is sent and received independently.  
+ 
  ]]></format>
     </remarks>
   </Docs>

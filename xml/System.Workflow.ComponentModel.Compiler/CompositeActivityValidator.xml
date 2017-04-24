@@ -19,14 +19,14 @@
     <summary>Derivative of <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidator" /> that is the base class for all composite activity validator components.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The class provides validation logic for a <xref:System.Workflow.ComponentModel.CompositeActivity>.  
-  
+ 
+The class provides validation logic for a <xref:System.Workflow.ComponentModel.CompositeActivity>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,10 +69,10 @@
         <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> of errors found during validation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls <xref:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator.Validate%2A> on every child <xref:System.Workflow.ComponentModel.Activity> in the <xref:System.Workflow.ComponentModel.CompositeActivity.EnabledActivities%2A> collection. It also checks that no more than one <xref:System.Workflow.ComponentModel.CancellationHandlerActivity>, <xref:System.Workflow.ComponentModel.FaultHandlersActivity>, or <xref:System.Workflow.ComponentModel.CompensationHandlerActivity> is attached to the <xref:System.Workflow.ComponentModel.CompositeActivity>.  
-  
+This method calls <xref:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator.Validate%2A> on every child <xref:System.Workflow.ComponentModel.Activity> in the <xref:System.Workflow.ComponentModel.CompositeActivity.EnabledActivities%2A> collection. It also checks that no more than one <xref:System.Workflow.ComponentModel.CancellationHandlerActivity>, <xref:System.Workflow.ComponentModel.FaultHandlersActivity>, or <xref:System.Workflow.ComponentModel.CompensationHandlerActivity> is attached to the <xref:System.Workflow.ComponentModel.CompositeActivity>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -102,10 +102,10 @@
         <returns>The <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> by the validation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If validation occurs without error, a null reference (`Nothing`) is returned.  
-  
+If validation occurs without error, a null reference (`Nothing`) is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

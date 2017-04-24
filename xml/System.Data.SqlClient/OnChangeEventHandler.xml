@@ -23,10 +23,10 @@
     <summary>Handles the <see cref="E:System.Data.SqlClient.SqlDependency.OnChange" /> event that is fired when a notification is received for any of the commands associated with a <see cref="T:System.Data.SqlClient.SqlDependency" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDependency.OnChange> event does not necessarily imply a change in the data. Other circumstances, such as time-out expired and failure to set the notification request, also generate <xref:System.Data.SqlClient.SqlDependency.OnChange>.  
-  
+The <xref:System.Data.SqlClient.SqlDependency.OnChange> event does not necessarily imply a change in the data. Other circumstances, such as time-out expired and failure to set the notification request, also generate <xref:System.Data.SqlClient.SqlDependency.OnChange>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

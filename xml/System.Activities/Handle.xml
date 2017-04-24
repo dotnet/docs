@@ -19,10 +19,10 @@
     <summary>Represents a type that has its lifetime controlled by the workflow runtime.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Types derived from <xref:System.Activities.Handle> have their lifetimes controlled by the workflow runtime. For workflow variables of handle types, the runtime uses the required default constructor to create an instance of the type, assigns it to the <xref:System.Activities.Variable>, and calls <xref:System.Activities.Handle.OnInitialize%2A> when initializing the environment. When the variable goes out of scope, <xref:System.Activities.Handle.OnUninitialize%2A> is called.  
-  
+Types derived from <xref:System.Activities.Handle> have their lifetimes controlled by the workflow runtime. For workflow variables of handle types, the runtime uses the required default constructor to create an instance of the type, assigns it to the <xref:System.Activities.Variable>, and calls <xref:System.Activities.Handle.OnInitialize%2A> when initializing the environment. When the variable goes out of scope, <xref:System.Activities.Handle.OnUninitialize%2A> is called.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Handle" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from <xref:System.Activities.Handle> must provide a default constructor.  
-  
+Classes that derive from <xref:System.Activities.Handle> must provide a default constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <summary>Throws an <see cref="T:System.InvalidOperationException" /> if the <see cref="T:System.Activities.Handle" /> has not been initialized.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Handle.ThrowIfUninitialized%2A> gives custom handle derived class authors a convenient method to call from any methods or properties of the derived class that are not valid if the <xref:System.Activities.Handle> is uninitialized.  
-  
+<xref:System.Activities.Handle.ThrowIfUninitialized%2A> gives custom handle derived class authors a convenient method to call from any methods or properties of the derived class that are not valid if the <xref:System.Activities.Handle> is uninitialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>

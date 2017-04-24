@@ -23,17 +23,17 @@
     <summary>Indicates whether a listener should trace a message based on the source of a trace.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- One of several different types of filters can be assigned to a trace listener to provide a layer of screening beyond that provided by the trace switch. The filter can be used to control the level of tracing that is produced by the listener.  
-  
- This class filters events based on a specific trace source set by the user.  
-  
- <xref:System.Diagnostics.SourceFilter> overrides the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method and defines a <xref:System.Diagnostics.SourceFilter.Source%2A> property that specifies the name of the trace source to be traced by the listener.  
-  
+One of several different types of filters can be assigned to a trace listener to provide a layer of screening beyond that provided by the trace switch. The filter can be used to control the level of tracing that is produced by the listener.  
+ 
+This class filters events based on a specific trace source set by the user.  
+ 
+<xref:System.Diagnostics.SourceFilter> overrides the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method and defines a <xref:System.Diagnostics.SourceFilter.Source%2A> property that specifies the name of the trace source to be traced by the listener.  
+ 
 > [!NOTE]
 >  This filter is provided because multiple trace sources can simultaneously use the same trace listener.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,18 +64,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SourceFilter" /> class, specifying the name of the trace source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the `source` parameter is used to initialize the <xref:System.Diagnostics.SourceFilter.Source%2A> property.  
+The value of the `source` parameter is used to initialize the <xref:System.Diagnostics.SourceFilter.Source%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example calls the <xref:System.Diagnostics.TraceSource.TraceData%2A> method using two different source filters, one with a fictitious name, the other with the name of the current trace source. In the first case, the trace is not written to the console; in the second case, the trace is written. This code example is part of a larger example provided for the <xref:System.Diagnostics.TraceSource> class.  
-  
- [!code-csharp[System.Diagnostics.TraceSource#28](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.TraceSource/CS/program.cs#28)]
- [!code-vb[System.Diagnostics.TraceSource#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.TraceSource/VB/program.vb#28)]  
-  
+The following code example calls the <xref:System.Diagnostics.TraceSource.TraceData%2A> method using two different source filters, one with a fictitious name, the other with the name of the current trace source. In the first case, the trace is not written to the console; in the second case, the trace is written. This code example is part of a larger example provided for the <xref:System.Diagnostics.TraceSource> class.  
+ 
+[!code-csharp[System.Diagnostics.TraceSource#28](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.TraceSource/CS/program.cs#28)]
+[!code-vb[System.Diagnostics.TraceSource#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.TraceSource/VB/program.vb#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
           <see langword="true" /> if the trace should be produced; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of the `source` parameter matches the value of the <xref:System.Diagnostics.SourceFilter.Source%2A> property, the method returns `true`.  
-  
+If the value of the `source` parameter matches the value of the <xref:System.Diagnostics.SourceFilter.Source%2A> property, the method returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -161,10 +161,10 @@
         <value>The name of the trace source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Diagnostics.SourceFilter.Source%2A> identifies the trace source for which to write trace information. Trace information will not be written for other trace sources. The name of the trace source is the `name` parameter from the constructor for the <xref:System.Diagnostics.TraceSource>.  
-  
+<xref:System.Diagnostics.SourceFilter.Source%2A> identifies the trace source for which to write trace information. Trace information will not be written for other trace sources. The name of the trace source is the `name` parameter from the constructor for the <xref:System.Diagnostics.TraceSource>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>

@@ -19,10 +19,10 @@
     <summary>Represents a persistence service configuration element that specifies the type of the persistence provider implementation to use, as well as the time-out to use for persistence operations. Additional attributes that appear in this element are passed into the constructor for the specified persistence provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Persistence provider configuration elements are typically defined in the application configuration file, under the `system.serviceModel` node, in the `serviceBehaviors` subsection of the `behaviors` section.  
-  
+Persistence provider configuration elements are typically defined in the application configuration file, under the `system.serviceModel` node, in the `serviceBehaviors` subsection of the `behaviors` section.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -152,10 +152,10 @@
         <value>A <see cref="T:System.TimeSpan" /> that specifies the time-out used for persistence operations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 30 seconds.  
-  
+The default value is 30 seconds.  
+ 
  ]]></format>
         </remarks>
       </Docs>

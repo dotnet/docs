@@ -26,24 +26,24 @@
     <summary>Creates the theme-specific look for [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] <see cref="T:System.Windows.Controls.Button" /> elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The actual appearance of the <xref:System.Windows.Controls.Button> is dependent on which theme is active on the user's system. The properties of this class allow [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] to set the appearance based on the current theme.  
-  
- In XAML usage, a <xref:Microsoft.Windows.Themes.ButtonChrome> object element can also have child content, which can be a single <xref:System.Windows.UIElement> that sets the <xref:System.Windows.Controls.Decorator.Child%2A> property.  
-  
+The actual appearance of the <xref:System.Windows.Controls.Button> is dependent on which theme is active on the user's system. The properties of this class allow [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] to set the appearance based on the current theme.  
+ 
+In XAML usage, a <xref:Microsoft.Windows.Themes.ButtonChrome> object element can also have child content, which can be a single <xref:System.Windows.UIElement> that sets the <xref:System.Windows.Controls.Decorator.Child%2A> property.  
+ 
 <a name="xamlObjectElementUsage_ButtonChrome"></a>   
 ## XAML Object Element Usage  
-  
+ 
 ```  
 <theme:ButtonChrome .../>  
 ```  
-  
+ 
 <a name="xamlValues_ButtonChrome"></a>   
 ## XAML Values  
- `theme:`  
- An xmlns prefix for the <xref:Microsoft.Windows.Themes> CLR namespace. Typically, xmlns prefixes and mappings are defined in a XAML root element (not shown).  
-  
+`theme:`  
+An xmlns prefix for the <xref:Microsoft.Windows.Themes> CLR namespace. Typically, xmlns prefixes and mappings are defined in a XAML root element (not shown).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -130,17 +130,17 @@
         <value>The brush used to fill the background of the <see cref="T:System.Windows.Controls.Button" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Background"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.ButtonChrome.BackgroundProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,17 +195,17 @@
         <value>The brush used to draw the outer border of the <see cref="T:System.Windows.Controls.Button" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_BorderBrush"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.ButtonChrome.BorderBrushProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,18 +260,18 @@
         <value>The brush.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not available in the [!INCLUDE[TLA#tla_aero](~/includes/tlasharptla-aero-md.md)] theme.  
-  
+This property is not available in the [!INCLUDE[TLA#tla_aero](~/includes/tlasharptla-aero-md.md)] theme.  
+ 
 <a name="dependencyPropertyInfo_Fill"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.ButtonChrome.FillProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,18 +394,18 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.Button" /> has the appearance of the default button; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default button generally has a darker outer border or other visual indicator that shows the user which button will be clicked if the Enter key is pressed.  
-  
+The default button generally has a darker outer border or other visual indicator that shows the user which button will be clicked if the Enter key is pressed.  
+ 
 <a name="dependencyPropertyInfo_RenderDefaulted"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.ButtonChrome.RenderDefaultedProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A> (however, this property might not be set in all themes)|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -469,17 +469,17 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.Button" /> appears as if the mouse is over it; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_RenderMouseOver"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.ButtonChrome.RenderMouseOverProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A> (however, this property might not be set in all themes)|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -543,17 +543,17 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.Button" /> appears pressed; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_RenderPressed"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.ButtonChrome.RenderPressedProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A> (however, this property might not be set in all themes)|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -609,18 +609,18 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.Button" /> has round corners; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set to `false`, the corners are square.  
-  
+When set to `false`, the corners are square.  
+ 
 <a name="dependencyPropertyInfo_RoundCorners"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.ButtonChrome.RoundCornersProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -663,18 +663,18 @@
         <value>A value in the enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only available in the Luna theme.  
-  
+This property is only available in the Luna theme.  
+ 
 <a name="dependencyPropertyInfo_ThemeColor"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.ButtonChrome.ThemeColorProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

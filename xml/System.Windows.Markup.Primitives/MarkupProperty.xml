@@ -14,14 +14,14 @@
     <summary>Abstract class that provides a property description to be used while writing to markup which encapsulates access to properties and their values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A property is either represented as a string or a list of items.  
-  
- If the property can be represented as a string, <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `false`.  
-  
- If <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `true`, the property is a list of items.  
-  
+A property is either represented as a string or a list of items.  
+ 
+If the property can be represented as a string, <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `false`.  
+ 
+If <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `true`, the property is a list of items.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <value>The dependency property identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior returns `null`.  
-  
+The default behavior returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,12 +87,12 @@
           <see langword="true" /> if the property is an attached <see cref="T:System.Windows.DependencyProperty" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior is to return `false`.  
-  
- When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsAttached%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> is not `null` and <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> can be `null`, but is not required to be.  
-  
+The default behavior is to return `false`.  
+ 
+When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsAttached%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> is not `null` and <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> can be `null`, but is not required to be.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,14 +115,14 @@
           <see langword="true" /> is this property is a composite property; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior is to return `false`.  
-  
- If <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `false`, the property can be represented as a string and <xref:System.Windows.Markup.Primitives.MarkupProperty.Value%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.StringValue%2A> are valid to use.  
-  
- If <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `true`, the property is one or more items and <xref:System.Windows.Markup.Primitives.MarkupProperty.Items%2A> is valid to use.  
-  
+The default behavior is to return `false`.  
+ 
+If <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `false`, the property can be represented as a string and <xref:System.Windows.Markup.Primitives.MarkupProperty.Value%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.StringValue%2A> are valid to use.  
+ 
+If <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `true`, the property is one or more items and <xref:System.Windows.Markup.Primitives.MarkupProperty.Items%2A> is valid to use.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,14 +145,14 @@
           <see langword="true" /> if this property represents a constructor argument; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior is return `false`.  
-  
- When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
-  
- XAML only uses <xref:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument%2A> for representing the constructor arguments of instances of <xref:System.Windows.Markup.MarkupExtension>. See [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
-  
+The default behavior is return `false`.  
+ 
+When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
+ 
+XAML only uses <xref:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument%2A> for representing the constructor arguments of instances of <xref:System.Windows.Markup.MarkupExtension>. See [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,14 +175,14 @@
           <see langword="true" /> if the property represents direct content; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior is to return `false`.  
-  
- When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsContent%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
-  
- Dictionaries are included when determining whether this <xref:System.Windows.Markup.Primitives.MarkupProperty> represents direct content.  
-  
+The default behavior is to return `false`.  
+ 
+When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsContent%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
+ 
+Dictionaries are included when determining whether this <xref:System.Windows.Markup.Primitives.MarkupProperty> represents direct content.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,14 +205,14 @@
           <see langword="true" /> if this property represents a key; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior is to return `false`.  
-  
- When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsKey%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are `null`.  
-  
- XAML will use the identified property as an `x:Key` attribute.  
-  
+The default behavior is to return `false`.  
+ 
+When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsKey%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are `null`.  
+ 
+XAML will use the identified property as an `x:Key` attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,14 +235,14 @@
           <see langword="true" />, if this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" /> represents a string; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior is to return `false.`  
-  
- When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
-  
- If the property is provided through <xref:System.Windows.Markup.Primitives.MarkupObject.Properties%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString%2A> is `true`, it will be the only property the type will provide.  
-  
+The default behavior is to return `false.`  
+ 
+When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
+ 
+If the property is provided through <xref:System.Windows.Markup.Primitives.MarkupObject.Properties%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString%2A> is `true`, it will be the only property the type will provide.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,14 +264,14 @@
         <value>The items that make up the value of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the property is not an enumeration, only one item will be returned.  
-  
- If the property is an enumeration, or enumerable, all the items will be returned.  
-  
- At least one item is always returned, because <xref:System.Windows.Markup.Primitives.MarkupObject> will not create a <xref:System.Windows.Markup.Primitives.MarkupProperty> for properties with no items.  
-  
+If the property is not an enumeration, only one item will be returned.  
+ 
+If the property is an enumeration, or enumerable, all the items will be returned.  
+ 
+At least one item is always returned, because <xref:System.Windows.Markup.Primitives.MarkupObject> will not create a <xref:System.Windows.Markup.Primitives.MarkupProperty> for properties with no items.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,10 +293,10 @@
         <value>The identifier property name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A serializer should not use this value. It should use the <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and/or <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> instead.  
-  
+A serializer should not use this value. It should use the <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and/or <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,10 +318,10 @@
         <value>The property descriptor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior returns `null`.  
-  
+The default behavior returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,10 +379,10 @@
         <value>The set of types.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Markup.Primitives.MarkupProperty.TypeReferences%2A> enables a serializer to ensure that the de-serializer has enough information to convert references to these type from the string representations.  
-  
+<xref:System.Windows.Markup.Primitives.MarkupProperty.TypeReferences%2A> enables a serializer to ensure that the de-serializer has enough information to convert references to these type from the string representations.  
+ 
  ]]></format>
         </remarks>
       </Docs>

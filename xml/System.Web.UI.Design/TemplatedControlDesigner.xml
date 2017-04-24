@@ -14,19 +14,19 @@
     <summary>Extends design-time behavior for template-based server controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a control designer class that uses templates and derives from the <xref:System.Web.UI.Design.ControlDesigner> class.  
-  
- To run the example, compile the code, and then in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], view the page in Design view. Select the control, click the action list to select a template to modify, and then use the drag-and-drop feature to move controls into the template.  
-  
+The following code example demonstrates how to create a control designer class that uses templates and derives from the <xref:System.Web.UI.Design.ControlDesigner> class.  
+ 
+To run the example, compile the code, and then in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], view the page in Design view. Select the control, click the action list to select a template to modify, and then use the drag-and-drop feature to move controls into the template.  
+ 
 > [!NOTE]
 >  Your project must have a reference to the `System.Design` assembly.  
-  
- [!code-csharp[DesignerTemplateGroupSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerTemplateGroupSample/CS/TemplateGroupsSample.cs#1)]
- [!code-vb[DesignerTemplateGroupSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.vb#1)]  
+ 
+[!code-csharp[DesignerTemplateGroupSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerTemplateGroupSample/CS/TemplateGroupsSample.cs#1)]
+[!code-vb[DesignerTemplateGroupSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.vb#1)]  
 <!-- TODO: review snippet reference [!code-vb[DesignerTemplateGroupSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.aspx#2)]  -->  
-  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -71,12 +71,12 @@
         <value>An <see cref="T:System.Web.UI.Design.ITemplateEditingFrame" /> that is the currently active template editing frame.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.TemplatedControlDesigner.ActiveTemplateEditingFrame%2A> property is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to expose or enumerate templates within a designer for template-based controls.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,14 +171,14 @@
         <summary>Opens a particular template frame object for editing in the designer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.TemplatedControlDesigner.EnterTemplateMode%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to manipulate templates within a designer for template-based controls.  
-  
- If already in template mode and editing a different template frame, this method calls <xref:System.Web.UI.Design.TemplatedControlDesigner.ExitTemplateMode%2A> to save all its templates and close that frame.  
-  
+ 
+If already in template mode and editing a different template frame, this method calls <xref:System.Web.UI.Design.TemplatedControlDesigner.ExitTemplateMode%2A> to save all its templates and close that frame.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,12 +215,12 @@
         <summary>Closes the currently active template editing frame after saving any relevant changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.TemplatedControlDesigner.ExitTemplateMode%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to manipulate templates within a designer for template-based controls.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,12 +248,12 @@
         <returns>An array of <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> objects, if any.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.TemplatedControlDesigner.GetCachedTemplateEditingVerbs%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to manipulate templates within a designer for template-based controls.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,12 +284,12 @@
         <returns>A string representing the data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataItemProperty%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.Templates%2A> property of the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> collection elements to examine template metadata within a designer for template-based controls.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,12 +425,12 @@
         <returns>The type of the object that has the template property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.TemplatedControlDesigner.GetTemplatePropertyParentType%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.Templates%2A> property of the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> collection elements to examine template metadata within a designer for template-based controls.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,14 +503,14 @@
           <see langword="true" /> if the designer document is in template mode; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.TemplatedControlDesigner.InTemplateMode%2A?displayProperty=fullName> property is obsolete. Use the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A?displayProperty=fullName> property for equivalent control designer functionality.  
-  
- A document is in template mode when a template is currently being viewed or edited in the forms designer.  
-  
+ 
+A document is in template mode when a template is currently being viewed or edited in the forms designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,12 +537,12 @@
         <summary>Provides an opportunity to perform additional processing when a behavior is attached to the designer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.TemplatedControlDesigner.OnBehaviorAttached%2A> method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property to map properties to styles.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -569,10 +569,10 @@
         <summary>Delegate to handle the component changed event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called after a property has been changed. It allows the implementer to perform any post-processing that may be needed after a property change.  
-  
+This method is called after a property has been changed. It allows the implementer to perform any post-processing that may be needed after a property change.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -612,18 +612,18 @@
         <summary>Provides an opportunity to perform additional processing when the template mode is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event is raised by the designer host for certain actions on a control in the design surface. For example, an event is raised when the user enters or exits template editing mode for a control.  
-  
- The <xref:System.Web.UI.Design.TemplatedControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event. Classes deriving from the <xref:System.Web.UI.Design.TemplatedControlDesigner> override the <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method to process events that are raised when the template mode changes for the associated control.  
-  
- The <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- The default delegate performs the updates that are required for a template mode change event in the base <xref:System.Web.UI.Design.TemplatedControlDesigner> class, and then calls the <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method. The base <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method in the <xref:System.Web.UI.Design.TemplatedControlDesigner> class returns without performing any additional processing for the event. If a class derives from the <xref:System.Web.UI.Design.TemplatedControlDesigner> and overrides the base <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method, the default delegate calls the override method in the derived class.  
-  
- Use the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A> property to determine whether the control designer is in template editing mode currently.  
-  
+The <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event is raised by the designer host for certain actions on a control in the design surface. For example, an event is raised when the user enters or exits template editing mode for a control.  
+ 
+The <xref:System.Web.UI.Design.TemplatedControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event. Classes deriving from the <xref:System.Web.UI.Design.TemplatedControlDesigner> override the <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method to process events that are raised when the template mode changes for the associated control.  
+ 
+The <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
+The default delegate performs the updates that are required for a template mode change event in the base <xref:System.Web.UI.Design.TemplatedControlDesigner> class, and then calls the <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method. The base <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method in the <xref:System.Web.UI.Design.TemplatedControlDesigner> class returns without performing any additional processing for the event. If a class derives from the <xref:System.Web.UI.Design.TemplatedControlDesigner> and overrides the base <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method, the default delegate calls the override method in the derived class.  
+ 
+Use the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A> property to determine whether the control designer is in template editing mode currently.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -714,10 +714,10 @@
         <summary>Updates the design-time HTML.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should call this method to refresh the design-time display if the template frames have been changed without calling methods that update the design-time HTML automatically.  
-  
+You should call this method to refresh the design-time display if the template frames have been changed without calling methods that update the design-time HTML automatically.  
+ 
  ]]></format>
         </remarks>
       </Docs>

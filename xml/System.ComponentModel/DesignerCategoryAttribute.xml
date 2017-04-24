@@ -28,38 +28,38 @@
     <summary>Specifies that the designer for a class belongs to a certain category.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A visual designer can use a designer category to inform a development environment of the type of designer that will be implemented. If no designer category is provided on a class, a development environment may or may not allow the class to be designed. A category can be created for any name.  
-  
- When you mark a class with this attribute, it is set to a constant member. When you want to check the value of this attribute in your code, you must specify the constant member. The Description column in the table below lists the constant member that each value is set to.  
-  
- The <xref:System.ComponentModel.DesignerCategoryAttribute> class defines the following common categories:  
-  
+A visual designer can use a designer category to inform a development environment of the type of designer that will be implemented. If no designer category is provided on a class, a development environment may or may not allow the class to be designed. A category can be created for any name.  
+ 
+When you mark a class with this attribute, it is set to a constant member. When you want to check the value of this attribute in your code, you must specify the constant member. The Description column in the table below lists the constant member that each value is set to.  
+ 
+The <xref:System.ComponentModel.DesignerCategoryAttribute> class defines the following common categories:  
+ 
 |Category|Description|  
 |--------------|-----------------|  
 |Component|Designers that are used with components. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Component?displayProperty=fullName>.|  
 |Form|Designers that are used with forms. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Form?displayProperty=fullName>.|  
 |Designer|Designers that are used with designers. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Generic?displayProperty=fullName>.|  
 |Empty String ("")|This is the default category.|  
+ 
+For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a class called `MyForm`. `MyForm` has two attributes, a <xref:System.ComponentModel.DesignerAttribute> that specifies this class uses the <xref:System.Windows.Forms.Design.DocumentDesigner>, and a <xref:System.ComponentModel.DesignerCategoryAttribute> that specifies the <xref:System.ComponentModel.DesignerCategoryAttribute.Form> category.  
-  
- [!code-cpp[Classic DesignerCategoryAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DesignerCategoryAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic DesignerCategoryAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/VB/source.vb#1)]  
-  
- The next example creates an instance of `MyForm`. Then it gets the attributes for the class, extracts the <xref:System.ComponentModel.DesignerCategoryAttribute>, and prints the name of the designer.  
-  
- [!code-cpp[Classic DesignerCategoryAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CPP/source.cpp#2)]
- [!code-csharp[Classic DesignerCategoryAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CS/source.cs#2)]
- [!code-vb[Classic DesignerCategoryAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/VB/source.vb#2)]  
-  
+The following example creates a class called `MyForm`. `MyForm` has two attributes, a <xref:System.ComponentModel.DesignerAttribute> that specifies this class uses the <xref:System.Windows.Forms.Design.DocumentDesigner>, and a <xref:System.ComponentModel.DesignerCategoryAttribute> that specifies the <xref:System.ComponentModel.DesignerCategoryAttribute.Form> category.  
+ 
+[!code-cpp[Classic DesignerCategoryAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DesignerCategoryAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic DesignerCategoryAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/VB/source.vb#1)]  
+ 
+The next example creates an instance of `MyForm`. Then it gets the attributes for the class, extracts the <xref:System.ComponentModel.DesignerCategoryAttribute>, and prints the name of the designer.  
+ 
+[!code-cpp[Classic DesignerCategoryAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CPP/source.cpp#2)]
+[!code-csharp[Classic DesignerCategoryAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CS/source.cs#2)]
+[!code-vb[Classic DesignerCategoryAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -193,10 +193,10 @@
         <summary>Specifies that a component marked with this category cannot use a visual designer. This <see langword="static" /> field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the default category.  
-  
+This is the default category.  
+ 
  ]]></format>
         </remarks>
       </Docs>

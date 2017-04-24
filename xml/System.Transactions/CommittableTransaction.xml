@@ -29,26 +29,26 @@
     <summary>Describes a committable transaction.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Transactions.CommittableTransaction> class provides an explicit way for applications to use a transaction, as opposed to using the <xref:System.Transactions.TransactionScope> class implicitly. Unlike the <xref:System.Transactions.TransactionScope> class, the application writer needs to specifically call the <xref:System.Transactions.CommittableTransaction.Commit%2A> and <xref:System.Transactions.Transaction.Rollback%2A> methods in order to commit or abort the transaction. However, only the creator of a transaction can commit the transaction. Therefore, copies of a committable transaction, obtained through the <xref:System.Transactions.Transaction.Clone%2A> method are not committable.  
-  
+The <xref:System.Transactions.CommittableTransaction> class provides an explicit way for applications to use a transaction, as opposed to using the <xref:System.Transactions.TransactionScope> class implicitly. Unlike the <xref:System.Transactions.TransactionScope> class, the application writer needs to specifically call the <xref:System.Transactions.CommittableTransaction.Commit%2A> and <xref:System.Transactions.Transaction.Rollback%2A> methods in order to commit or abort the transaction. However, only the creator of a transaction can commit the transaction. Therefore, copies of a committable transaction, obtained through the <xref:System.Transactions.Transaction.Clone%2A> method are not committable.  
+ 
 > [!NOTE]
 >  It is recommended that you create implicit transactions using the <xref:System.Transactions.TransactionScope> class, so that the ambient transaction context is automatically managed for you. You should also use the <xref:System.Transactions.TransactionScope> and <xref:System.Transactions.DependentTransaction> class for applications that require the use of the same transaction across multiple function calls or multiple thread calls. For more information on this model, see the [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199) topic.  
+ 
+Creating a <xref:System.Transactions.CommittableTransaction> does not automatically set the ambient transaction, which is the transaction your code executes in. You can get or set the ambient transaction by calling the static <xref:System.Transactions.Transaction.Current%2A> property of the global <xref:System.Transactions.Transaction> object. For more information on ambient transactions, see the " Managing Transaction Flow using TransactionScopeOption" section of the [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199) topic. If the ambient transaction is not set, any operation on a resource manager is not part of that transaction. You need to explicitly set and reset the ambient transaction, to ensure that resource managers operate under the right transaction context.  
+ 
+Until a <xref:System.Transactions.CommittableTransaction> has been committed, all the resources involved with the transaction are still locked.  
+ 
+A <xref:System.Transactions.CommittableTransaction> object cannot be reused. Once it has been committed or rolled back, it cannot be used again in a transaction or set as the current ambient transaction context.  
+ 
   
- Creating a <xref:System.Transactions.CommittableTransaction> does not automatically set the ambient transaction, which is the transaction your code executes in. You can get or set the ambient transaction by calling the static <xref:System.Transactions.Transaction.Current%2A> property of the global <xref:System.Transactions.Transaction> object. For more information on ambient transactions, see the " Managing Transaction Flow using TransactionScopeOption" section of the [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199) topic. If the ambient transaction is not set, any operation on a resource manager is not part of that transaction. You need to explicitly set and reset the ambient transaction, to ensure that resource managers operate under the right transaction context.  
-  
- Until a <xref:System.Transactions.CommittableTransaction> has been committed, all the resources involved with the transaction are still locked.  
-  
- A <xref:System.Transactions.CommittableTransaction> object cannot be reused. Once it has been committed or rolled back, it cannot be used again in a transaction or set as the current ambient transaction context.  
-  
-   
-  
+ 
 ## Examples  
- The following sample creates two new instances of <xref:System.Transactions.CommittableTransaction>, commits and rolls back them respectively.  
-  
-  
-  
+The following sample creates two new instances of <xref:System.Transactions.CommittableTransaction>, commits and rolls back them respectively.  
+ 
+ 
+ 
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
@@ -73,13 +73,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.CommittableTransaction" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following sample creates a new instance of <xref:System.Transactions.CommittableTransaction> and commits it.  
-  
- [!code-csharp[Tx_CommittableTx#1](~/samples/snippets/csharp/VS_Snippets_CFX/tx_committabletx/cs/committabletxwithsql.cs#1)]
- [!code-vb[Tx_CommittableTx#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/tx_committabletx/vb/committabletxwithsql.vb#1)]  
-  
+The following sample creates a new instance of <xref:System.Transactions.CommittableTransaction> and commits it.  
+ 
+[!code-csharp[Tx_CommittableTx#1](~/samples/snippets/csharp/VS_Snippets_CFX/tx_committabletx/cs/committabletxwithsql.cs#1)]
+[!code-vb[Tx_CommittableTx#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/tx_committabletx/vb/committabletxwithsql.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">An attempt to create a transaction under Windows 98, Windows 98 Second Edition or Windows Millennium Edition.</exception>
@@ -131,12 +131,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.CommittableTransaction" /> class with the specified transaction options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following sample creates a new instance of <xref:System.Transactions.CommittableTransaction> with options, and aborts it.  
-  
-  
-  
+The following sample creates a new instance of <xref:System.Transactions.CommittableTransaction> with options, and aborts it.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">An attempt to create a transaction under Windows 98, Windows 98 Second Edition or Windows Millennium Edition.</exception>
@@ -172,13 +172,13 @@
         <returns>An <see cref="T:System.IAsyncResult" /> interface that can be used by the caller to check the status of the asynchronous operation, or to wait for the operation to complete.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns immediately, before the transaction has been completed. The transaction then commits on a different thread, and the `asyncCallback` delegate is invoked when it has completed. After this method is called, you do not receive the outcome of the transaction until you call <xref:System.Transactions.CommittableTransaction.EndCommit%2A>.  
-  
+This method returns immediately, before the transaction has been completed. The transaction then commits on a different thread, and the `asyncCallback` delegate is invoked when it has completed. After this method is called, you do not receive the outcome of the transaction until you call <xref:System.Transactions.CommittableTransaction.EndCommit%2A>.  
+ 
 > [!NOTE]
 >  The commit process may complete synchronously inside this method call.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,14 +205,14 @@
         <summary>Attempts to commit the transaction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this method is called, all objects that have registered to participate in the transaction are polled and can independently indicate their vote to either commit or roll back the transaction. If any participant votes to roll back the transaction, it is rolled back and this method throws a <xref:System.Transactions.TransactionException> exception. This is a normal occurrence for a transaction and your code should catch and process such exceptions.  
-  
- <xref:System.Transactions.CommittableTransaction.Commit%2A> and <xref:System.Transactions.CommittableTransaction.EndCommit%2A> block until the first phase of transaction processing is complete. The first phase ends after all resource managers and enlistments in the transaction have voted on the transaction outcome and the <xref:System.Transactions.TransactionManager> has durably decided to commit or abort the transaction. The second phase of processing is always asynchronous. Therefore, there is no guarantee that data just committed from within a given transaction will be immediately available afterwards when not using another transaction to view this data.  
-  
- Because this method blocks until the first phase of transaction processing is complete, you should be extremely careful when using this method in a Windows Form (WinForm) application, or a deadlock can occur. If you call this method inside one WinForm Control event (for example, clicking a button), and use the synchronous <xref:System.Windows.Forms.Control.Invoke%2A> method to direct the control to perform some UI tasks (for example, changing colors) in the middle of processing the transaction, a deadlock will happen. This is because the <xref:System.Windows.Forms.Control.Invoke%2A> method is synchronous and blocks the worker thread until the UI thread finishes its job. However, in our scenario, the UI thread is also waiting for the worker thread to commit the transaction. The result is that none is able to proceed and the scope waits indefinitely for the Commit to finish. You should use <xref:System.Windows.Forms.Control.BeginInvoke%2A> rather than <xref:System.Windows.Forms.Control.Invoke%2A> wherever possible, because it is asynchronous and thus less prone to deadlock.  
-  
+When this method is called, all objects that have registered to participate in the transaction are polled and can independently indicate their vote to either commit or roll back the transaction. If any participant votes to roll back the transaction, it is rolled back and this method throws a <xref:System.Transactions.TransactionException> exception. This is a normal occurrence for a transaction and your code should catch and process such exceptions.  
+ 
+<xref:System.Transactions.CommittableTransaction.Commit%2A> and <xref:System.Transactions.CommittableTransaction.EndCommit%2A> block until the first phase of transaction processing is complete. The first phase ends after all resource managers and enlistments in the transaction have voted on the transaction outcome and the <xref:System.Transactions.TransactionManager> has durably decided to commit or abort the transaction. The second phase of processing is always asynchronous. Therefore, there is no guarantee that data just committed from within a given transaction will be immediately available afterwards when not using another transaction to view this data.  
+ 
+Because this method blocks until the first phase of transaction processing is complete, you should be extremely careful when using this method in a Windows Form (WinForm) application, or a deadlock can occur. If you call this method inside one WinForm Control event (for example, clicking a button), and use the synchronous <xref:System.Windows.Forms.Control.Invoke%2A> method to direct the control to perform some UI tasks (for example, changing colors) in the middle of processing the transaction, a deadlock will happen. This is because the <xref:System.Windows.Forms.Control.Invoke%2A> method is synchronous and blocks the worker thread until the UI thread finishes its job. However, in our scenario, the UI thread is also waiting for the worker thread to commit the transaction. The result is that none is able to proceed and the scope waits indefinitely for the Commit to finish. You should use <xref:System.Windows.Forms.Control.BeginInvoke%2A> rather than <xref:System.Windows.Forms.Control.Invoke%2A> wherever possible, because it is asynchronous and thus less prone to deadlock.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Transactions.TransactionInDoubtException">
@@ -246,15 +246,15 @@
         <summary>Ends an attempt to commit the transaction asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should call this method in the callback delegate specified as a parameter to the <xref:System.Transactions.CommittableTransaction.BeginCommit%2A> method, when you have finished any cleanup work associated with the asynchronous commitment. You can also call this method early without waiting for the delegate. If, by the time you call this method, the transaction has not completed, this method waits for its completion.  
-  
+You should call this method in the callback delegate specified as a parameter to the <xref:System.Transactions.CommittableTransaction.BeginCommit%2A> method, when you have finished any cleanup work associated with the asynchronous commitment. You can also call this method early without waiting for the delegate. If, by the time you call this method, the transaction has not completed, this method waits for its completion.  
+ 
 > [!CAUTION]
 >  The <xref:System.IAsyncResult.CompletedSynchronously%2A> property returned by `asyncResult` is always `false`, even if the operation completed synchronously.  
-  
- <xref:System.Transactions.CommittableTransaction.Commit%2A> and <xref:System.Transactions.CommittableTransaction.EndCommit%2A> block until the first phase of transaction processing is complete. The first phase ends after all resource managers and enlistments in the transaction have voted on the transaction outcome and the <xref:System.Transactions.TransactionManager> has durably decided to commit or abort the transaction. The second phase of processing is always asynchronous. Therefore, there is no guarantee that data just committed from within a given transaction will be immediately available afterwards when not using another transaction to view this data.  
-  
+ 
+<xref:System.Transactions.CommittableTransaction.Commit%2A> and <xref:System.Transactions.CommittableTransaction.EndCommit%2A> block until the first phase of transaction processing is complete. The first phase ends after all resource managers and enlistments in the transaction have voted on the transaction outcome and the <xref:System.Transactions.TransactionManager> has durably decided to commit or abort the transaction. The second phase of processing is always asynchronous. Therefore, there is no guarantee that data just committed from within a given transaction will be immediately available afterwards when not using another transaction to view this data.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Transactions.TransactionAbortedException">

@@ -14,10 +14,10 @@
     <summary>Creates and maintains the <see cref="T:System.ServiceModel.Activities.Description.EtwTrackingBehavior" /> sub-element in the service behaviors section of a Sql workflow configuration file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The  <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior> object contains settings to control event tracking behavior in a workflow application.  
-  
+The  <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior> object contains settings to control event tracking behavior in a workflow application.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -99,10 +99,10 @@
         <value>A string profile name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The tracking profile filters for specific event tracking data that the workflow runtime generates.  
-  
+The tracking profile filters for specific event tracking data that the workflow runtime generates.  
+ 
  ]]></format>
         </remarks>
       </Docs>

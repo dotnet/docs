@@ -14,23 +14,23 @@
     <summary>Allows the transformation of a set of XML schema files (.xsd) into common language runtime (CLR) types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Serialization.XsdDataContractImporter> if you are creating a Web service that must interoperate with an existing Web service, or to create data contract types from XML schemas. <xref:System.Runtime.Serialization.XsdDataContractImporter> will transform a set of XML schemas and create the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] types that represent the data contract in a selected programming language. To create the code, use the classes in the <xref:System.CodeDom> namespace.  
-  
- Conversely, use the <xref:System.Runtime.Serialization.XsdDataContractExporter> class when you have created a Web service that incorporates data represented by CLR types and when you need to export XML schemas for each data type to be consumed by other Web services. That is, <xref:System.Runtime.Serialization.XsdDataContractExporter> transforms a set of CLR types into a set of XML schemas.  
-  
+Use the <xref:System.Runtime.Serialization.XsdDataContractImporter> if you are creating a Web service that must interoperate with an existing Web service, or to create data contract types from XML schemas. <xref:System.Runtime.Serialization.XsdDataContractImporter> will transform a set of XML schemas and create the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] types that represent the data contract in a selected programming language. To create the code, use the classes in the <xref:System.CodeDom> namespace.  
+ 
+Conversely, use the <xref:System.Runtime.Serialization.XsdDataContractExporter> class when you have created a Web service that incorporates data represented by CLR types and when you need to export XML schemas for each data type to be consumed by other Web services. That is, <xref:System.Runtime.Serialization.XsdDataContractExporter> transforms a set of CLR types into a set of XML schemas.  
+ 
 > [!NOTE]
 >  To generate CLR types from XML schemas at design time, use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). To generated code from XSD files, use the `/dataContractOnly` switch of the tool. You can also use the <xref:System.Runtime.Serialization.XsdDataContractImporter> if you need more control over the process or need to do it programmatically.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Xml.Schema.XmlSchemaSet> and calls the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%2A> method to create a <xref:System.CodeDom.CodeCompileUnit>. The <xref:System.CodeDom.CodeCompileUnit> is then used to create both Visual C# and Visual Basic code files.  
-  
- [!code-csharp[XsdDataContractImporter#0](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#0)]
- [!code-vb[XsdDataContractImporter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#0)]  
-  
+The following example creates an <xref:System.Xml.Schema.XmlSchemaSet> and calls the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%2A> method to create a <xref:System.CodeDom.CodeCompileUnit>. The <xref:System.CodeDom.CodeCompileUnit> is then used to create both Visual C# and Visual Basic code files.  
+ 
+[!code-csharp[XsdDataContractImporter#0](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#0)]
+[!code-vb[XsdDataContractImporter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,18 +67,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.XsdDataContractImporter" /> class with the <see cref="T:System.CodeDom.CodeCompileUnit" /> that will be used to generate CLR code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to add more code into a <xref:System.CodeDom.CodeCompileUnit> that has already been generated.  
+Use this constructor to add more code into a <xref:System.CodeDom.CodeCompileUnit> that has already been generated.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Xml.Schema.XmlSchemaSet> and calls the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%2A> method to create a <xref:System.CodeDom.CodeCompileUnit>. The <xref:System.CodeDom.CodeCompileUnit> is then used to create both Visual C# and Visual Basic code files.  
-  
- [!code-csharp[XsdDataContractImporter#1](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#1)]
- [!code-vb[XsdDataContractImporter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#1)]  
-  
+The following example creates an <xref:System.Xml.Schema.XmlSchemaSet> and calls the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%2A> method to create a <xref:System.CodeDom.CodeCompileUnit>. The <xref:System.CodeDom.CodeCompileUnit> is then used to create both Visual C# and Visual Basic code files.  
+ 
+[!code-csharp[XsdDataContractImporter#1](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#1)]
+[!code-vb[XsdDataContractImporter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,13 +105,13 @@
           <see langword="true" /> if the schemas can be transformed to data contract types; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example calls the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> method to determine whether the <xref:System.CodeDom.CodeCompileUnit> can be generated.  
-  
- [!code-csharp[XsdDataContractImporter#2](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#2)]
- [!code-vb[XsdDataContractImporter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#2)]  
-  
+The following example calls the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> method to determine whether the <xref:System.CodeDom.CodeCompileUnit> can be generated.  
+ 
+[!code-csharp[XsdDataContractImporter#2](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#2)]
+[!code-vb[XsdDataContractImporter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="schemas" /> parameter is <see langword="null" />.</exception>
@@ -169,10 +169,10 @@
           <see langword="true" /> if the element can be imported; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method checks the type and all schema types referenced from it.  
-  
+This method checks the type and all schema types referenced from it.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="schemas" /> or <paramref name="element" /> parameter is <see langword="null" />.</exception>
@@ -203,10 +203,10 @@
           <see langword="true" /> if the schemas can be transformed to data contract types; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
-  
+For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="schemas" /> or <paramref name="typeName" /> parameter is <see langword="null" />.</exception>
@@ -230,18 +230,18 @@
         <value>A <see cref="T:System.CodeDom.CodeCompileUnit" /> used to store the CLR types generated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this property after importing schemas using the <xref:System.Runtime.Serialization.XsdDataContractImporter> to access the <xref:System.CodeDom.CodeCompileUnit> in which all the generated code is stored.  
+Call this property after importing schemas using the <xref:System.Runtime.Serialization.XsdDataContractImporter> to access the <xref:System.CodeDom.CodeCompileUnit> in which all the generated code is stored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses creates a <xref:System.CodeDom.CodeCompileUnit>. The <xref:System.CodeDom.CodeCompileUnit> is then used to create both a Visual C# and Visual Basic code file.  
-  
- [!code-csharp[XsdDataContractImporter#1](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#1)]
- [!code-vb[XsdDataContractImporter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#1)]  
-  
+The following example uses creates a <xref:System.CodeDom.CodeCompileUnit>. The <xref:System.CodeDom.CodeCompileUnit> is then used to create both a Visual C# and Visual Basic code file.  
+ 
+[!code-csharp[XsdDataContractImporter#1](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#1)]
+[!code-vb[XsdDataContractImporter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <returns>A <see cref="T:System.CodeDom.CodeTypeReference" /> reference to the CLR type generated for the schema type with the <paramref name="typeName" /> specified.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to look up the reference to a generated CLR type after calling the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%2A> method. The <xref:System.CodeDom.CodeTypeReference> contains the name of the generated type and can be used to look up the corresponding <xref:System.CodeDom.CodeTypeDeclaration> in the <xref:System.CodeDom.CodeCompileUnit>.  
-  
+Use this method to look up the reference to a generated CLR type after calling the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%2A> method. The <xref:System.CodeDom.CodeTypeReference> contains the name of the generated type and can be used to look up the corresponding <xref:System.CodeDom.CodeTypeDeclaration> in the <xref:System.CodeDom.CodeCompileUnit>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,12 +298,12 @@
         <returns>A <see cref="T:System.CodeDom.CodeTypeReference" /> that represents the type that was generated for the specified schema type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The schema element is needed for data about the type that is specified at the element scope. The main example of this is the XSD attribute `nillable`. In schema, setting `nillable` to `true` is specified on the containing schema element whereas the concept of null is expressed in the CLR type <xref:System.Nullable%601>. The element is passed in so that this importer can look up the element-level information and return the correct type reference accordingly.  
-  
- When importing WSDL, each parameter is imported separately and therefore the parameter elements need to be passed in separately.  
-  
+The schema element is needed for data about the type that is specified at the element scope. The main example of this is the XSD attribute `nillable`. In schema, setting `nillable` to `true` is specified on the containing schema element whereas the concept of null is expressed in the CLR type <xref:System.Nullable%601>. The element is passed in so that this importer can look up the element-level information and return the correct type reference accordingly.  
+ 
+When importing WSDL, each parameter is imported separately and therefore the parameter elements need to be passed in separately.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,12 +329,12 @@
         <returns>A <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.CodeDom.CodeTypeReference" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When generating CLR types for schema types, known types are also generated for all derived types that are present in the schema. In many cases, these known types are added using attributes to the generated code. (For example, see the <xref:System.Runtime.Serialization.KnownTypeAttribute> class. ) However, for the top-level type, there needs to be a way to return the set of known types generated. This method returns the <xref:System.CodeDom.CodeTypeReference> for known types that were generated for a specific schema type.  
-  
- For more information, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
-  
+When generating CLR types for schema types, known types are also generated for all derived types that are present in the schema. In many cases, these known types are added using attributes to the generated code. (For example, see the <xref:System.Runtime.Serialization.KnownTypeAttribute> class. ) However, for the top-level type, there needs to be a way to return the set of known types generated. This method returns the <xref:System.CodeDom.CodeTypeReference> for known types that were generated for a specific schema type.  
+ 
+For more information, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,13 +359,13 @@
         <summary>Transforms the specified set of XML schemas contained in an <see cref="T:System.Xml.Schema.XmlSchemaSet" /> into a <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> method to test whether a set of schemas can be imported. If the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> method returns `true`, the code invokes the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%2A> method.  
-  
- [!code-csharp[XsdDataContractImporter#2](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#2)]
- [!code-vb[XsdDataContractImporter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#2)]  
-  
+The following example uses the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> method to test whether a set of schemas can be imported. If the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> method returns `true`, the code invokes the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%2A> method.  
+ 
+[!code-csharp[XsdDataContractImporter#2](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#2)]
+[!code-vb[XsdDataContractImporter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="schemas" /> parameter is <see langword="null" />.</exception>
@@ -460,10 +460,10 @@
         <value>A <see cref="T:System.Runtime.Serialization.ImportOptions" /> that contains settable options.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Serialization.ImportOptions> class to customize how the CLR types are generated during schema import.  
-  
+Use the <xref:System.Runtime.Serialization.ImportOptions> class to customize how the CLR types are generated during schema import.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -477,10 +477,10 @@
         <summary>Gets a value that indicates whether the schemas can be transformed into a <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
-  
+For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Provides the base class for Dynamic Data table providers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Table providers must extend this class. LINQ to SQL classes and the ADO.NET Entity data model are providers that extend this class.  
-  
+Table providers must extend this class. LINQ to SQL classes and the ADO.NET Entity data model are providers that extend this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -203,10 +203,10 @@
         <value>The <see cref="T:System.Web.DynamicData.ModelProviders.DataModelProvider" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [ASP.NET Dynamic Data](http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512).  
-  
+For more information, see [ASP.NET Dynamic Data](http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,10 +311,10 @@
         <value>The name of the table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this is the name of the table property in the data-context class.  
-  
+Typically, this is the name of the table property in the data-context class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <returns>The name of the <see cref="T:System.Web.DynamicData.ModelProviders.TableProvider" /> instance. If the <see cref="P:System.Web.DynamicData.ModelProviders.TableProvider.Name" /> property is <see langword="null" />, the base class <see langword="Name" /> property is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is intended for debugging purposes.  
-  
+This method is intended for debugging purposes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

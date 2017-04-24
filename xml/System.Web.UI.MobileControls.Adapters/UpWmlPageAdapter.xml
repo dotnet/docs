@@ -80,15 +80,15 @@
           <see langword="true" /> if the device adapter set applies to the specified request; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 |Class|Returns|Preferred rendering type|Check value of JavaScript property|  
 |-----------|-------------|------------------------------|----------------------------------------|  
 |<xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> property is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10>.|The <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> property returns `true`.|  
 |<xref:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> property is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10>.|The <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> property returns `false`.|  
 |<xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> property is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml11> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml12>.|Not applicable.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

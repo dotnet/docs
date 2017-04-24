@@ -30,13 +30,13 @@
     <summary>Represents the default value of a type or an empty expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to create an expression that represents a default value for a given type by using the <xref:System.Linq.Expressions.Expression.Default%2A> method.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#6)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#6)]  
-  
+The following code example shows how to create an expression that represents a default value for a given type by using the <xref:System.Linq.Expressions.Expression.Default%2A> method.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#6)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -23,39 +23,39 @@
     <summary>Provides extension methods for the <see cref="T:System.IO.Compression.ZipArchive" /> and <see cref="T:System.IO.Compression.ZipArchiveEntry" /> classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Compression.ZipFileExtensions> class contains only static methods that extend the <xref:System.IO.Compression.ZipArchive> and <xref:System.IO.Compression.ZipArchiveEntry> classes. You do not create an instance of the <xref:System.IO.Compression.ZipFileExtensions> class; instead, you use these methods from instances of <xref:System.IO.Compression.ZipArchive> or <xref:System.IO.Compression.ZipArchiveEntry>.  
-  
- To use the extension methods, you must reference the `System.IO.Compression.FileSystem` assembly in your project. The `System.IO.Compression.FileSystem` assembly is not available in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. Therefore, the <xref:System.IO.Compression.ZipFileExtensions> and <xref:System.IO.Compression.ZipFile> classes (both of which are in the `System.IO.Compression.FileSystem` assembly) are not available in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, you work with compressed files by using the methods in <xref:System.IO.Compression.ZipArchive>, <xref:System.IO.Compression.ZipArchiveEntry>, <xref:System.IO.Compression.DeflateStream>, and <xref:System.IO.Compression.GZipStream>.  
-  
- The <xref:System.IO.Compression.ZipFileExtensions> class contains three methods that extend <xref:System.IO.Compression.ZipArchive>:  
-  
+The <xref:System.IO.Compression.ZipFileExtensions> class contains only static methods that extend the <xref:System.IO.Compression.ZipArchive> and <xref:System.IO.Compression.ZipArchiveEntry> classes. You do not create an instance of the <xref:System.IO.Compression.ZipFileExtensions> class; instead, you use these methods from instances of <xref:System.IO.Compression.ZipArchive> or <xref:System.IO.Compression.ZipArchiveEntry>.  
+ 
+To use the extension methods, you must reference the `System.IO.Compression.FileSystem` assembly in your project. The `System.IO.Compression.FileSystem` assembly is not available in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. Therefore, the <xref:System.IO.Compression.ZipFileExtensions> and <xref:System.IO.Compression.ZipFile> classes (both of which are in the `System.IO.Compression.FileSystem` assembly) are not available in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, you work with compressed files by using the methods in <xref:System.IO.Compression.ZipArchive>, <xref:System.IO.Compression.ZipArchiveEntry>, <xref:System.IO.Compression.DeflateStream>, and <xref:System.IO.Compression.GZipStream>.  
+ 
+The <xref:System.IO.Compression.ZipFileExtensions> class contains three methods that extend <xref:System.IO.Compression.ZipArchive>:  
+ 
 -   <xref:System.IO.Compression.ZipFileExtensions.CreateEntryFromFile%28System.IO.Compression.ZipArchive%2CSystem.String%2CSystem.String%29>  
-  
+ 
 -   <xref:System.IO.Compression.ZipFileExtensions.CreateEntryFromFile%28System.IO.Compression.ZipArchive%2CSystem.String%2CSystem.String%2CSystem.IO.Compression.CompressionLevel%29>  
-  
+ 
 -   <xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory%28System.IO.Compression.ZipArchive%2CSystem.String%29>  
-  
- The <xref:System.IO.Compression.ZipFileExtensions> class contains two methods that extend <xref:System.IO.Compression.ZipArchiveEntry>:  
-  
+ 
+The <xref:System.IO.Compression.ZipFileExtensions> class contains two methods that extend <xref:System.IO.Compression.ZipArchiveEntry>:  
+ 
 -   <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%28System.IO.Compression.ZipArchiveEntry%2CSystem.String%29>  
-  
+ 
 -   <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%28System.IO.Compression.ZipArchiveEntry%2CSystem.String%2CSystem.Boolean%29>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a new entry in a zip archive from an existing file, and extract the contents of the archive to a directory.  
-  
- [!code-csharp[System.IO.Compression.ZipArchive#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program3.cs#3)]
- [!code-vb[System.IO.Compression.ZipArchive#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program3.vb#3)]  
-  
- The following example shows how to iterate through the contents of a zip archive and extract files that have a .txt extension.  
-  
- [!code-csharp[System.IO.Compression.ZipArchive#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program1.cs#1)]
- [!code-vb[System.IO.Compression.ZipArchive#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program1.vb#1)]  
-  
+The following example shows how to create a new entry in a zip archive from an existing file, and extract the contents of the archive to a directory.  
+ 
+[!code-csharp[System.IO.Compression.ZipArchive#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program3.cs#3)]
+[!code-vb[System.IO.Compression.ZipArchive#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program3.vb#3)]  
+ 
+The following example shows how to iterate through the contents of a zip archive and extract files that have a .txt extension.  
+ 
+[!code-csharp[System.IO.Compression.ZipArchive#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program1.cs#1)]
+[!code-vb[System.IO.Compression.ZipArchive#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,18 +94,18 @@
         <returns>A wrapper for the new entry in the zip archive.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new entry in the archive contains the contents of the file specified by `sourceFileName`. If an entry with the specified name (`entryName`) already exists in the archive, a second entry is created with an identical name. The <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property of the entry is set to the last time the file on the file system was changed.  
+The new entry in the archive contains the contents of the file specified by `sourceFileName`. If an entry with the specified name (`entryName`) already exists in the archive, a second entry is created with an identical name. The <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property of the entry is set to the last time the file on the file system was changed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a new entry in a zip archive from an existing file.  
-  
- [!code-csharp[System.IO.Compression.ZipArchive#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program3.cs#3)]
- [!code-vb[System.IO.Compression.ZipArchive#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program3.vb#3)]  
-  
+The following example shows how to create a new entry in a zip archive from an existing file.  
+ 
+[!code-csharp[System.IO.Compression.ZipArchive#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program3.cs#3)]
+[!code-vb[System.IO.Compression.ZipArchive#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program3.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -171,18 +171,18 @@
         <returns>A wrapper for the new entry in the zip archive.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new entry in the archive contains the contents of the file specified by `sourceFileName`. If an entry with the specified name (`entryName`) already exists in the archive, a second entry is created with an identical name. The <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property of the entry is set to the last time the file on the file system was changed.  
+The new entry in the archive contains the contents of the file specified by `sourceFileName`. If an entry with the specified name (`entryName`) already exists in the archive, a second entry is created with an identical name. The <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property of the entry is set to the last time the file on the file system was changed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a new entry in a zip archive from an existing file, and specify the compression level.  
-  
- [!code-csharp[System.IO.Compression.ZipArchive#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program4.cs#4)]
- [!code-vb[System.IO.Compression.ZipArchive#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program4.vb#4)]  
-  
+The following example shows how to create a new entry in a zip archive from an existing file, and specify the compression level.  
+ 
+[!code-csharp[System.IO.Compression.ZipArchive#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program4.cs#4)]
+[!code-vb[System.IO.Compression.ZipArchive#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program4.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -243,18 +243,18 @@
         <summary>Extracts all the files in the zip archive to a directory on the file system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates the directory specified by `destinationDirectoryName`. If the destination directory already exists, this method does not overwrite it; it throws an <xref:System.IO.IOException> exception. The method also creates subdirectories that reflect the hierarchy in the zip archive. If an error occurs during extraction, the archive remains partially extracted. Each extracted file has the same relative path to the directory specified by `destinationDirectoryName` as its source entry has to the root of the archive.  
+This method creates the directory specified by `destinationDirectoryName`. If the destination directory already exists, this method does not overwrite it; it throws an <xref:System.IO.IOException> exception. The method also creates subdirectories that reflect the hierarchy in the zip archive. If an error occurs during extraction, the archive remains partially extracted. Each extracted file has the same relative path to the directory specified by `destinationDirectoryName` as its source entry has to the root of the archive.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a new entry in a zip archive from an existing file, and extract the archive to a new directory. In order to compiler this code example, you must reference the `System.IO.Compression` and `System.IO.Compression.FileSystem` assemblies in your project.  
-  
- [!code-csharp[System.IO.Compression.ZipArchive#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program3.cs#3)]
- [!code-vb[System.IO.Compression.ZipArchive#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program3.vb#3)]  
-  
+The following example shows how to create a new entry in a zip archive from an existing file, and extract the archive to a new directory. In order to compiler this code example, you must reference the `System.IO.Compression` and `System.IO.Compression.FileSystem` assemblies in your project.  
+ 
+[!code-csharp[System.IO.Compression.ZipArchive#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program3.cs#3)]
+[!code-vb[System.IO.Compression.ZipArchive#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program3.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -317,22 +317,22 @@
         <summary>Extracts an entry in the zip archive to a file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the destination file already exists, this method does not overwrite it; it throws an <xref:System.IO.IOException> exception. To overwrite an existing file, use the <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%28System.IO.Compression.ZipArchiveEntry%2CSystem.String%2CSystem.Boolean%29> method overload instead.  
+If the destination file already exists, this method does not overwrite it; it throws an <xref:System.IO.IOException> exception. To overwrite an existing file, use the <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%28System.IO.Compression.ZipArchiveEntry%2CSystem.String%2CSystem.Boolean%29> method overload instead.  
+ 
+The last write time of the file is set to the last time the entry in the zip archive was changed; this value is stored in the <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property.  
+ 
+You cannot use this method to extract a directory; use the <xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory%2A> method instead.  
+ 
   
- The last write time of the file is set to the last time the entry in the zip archive was changed; this value is stored in the <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property.  
-  
- You cannot use this method to extract a directory; use the <xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory%2A> method instead.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to iterate through the contents of a zip archive file and extract files that have a .txt extension.  
-  
- [!code-csharp[System.IO.Compression.ZipArchive#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program1.cs#1)]
- [!code-vb[System.IO.Compression.ZipArchive#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program1.vb#1)]  
-  
+The following example shows how to iterate through the contents of a zip archive file and extract files that have a .txt extension.  
+ 
+[!code-csharp[System.IO.Compression.ZipArchive#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program1.cs#1)]
+[!code-vb[System.IO.Compression.ZipArchive#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -408,20 +408,20 @@
         <summary>Extracts an entry in the zip archive to a file, and optionally overwrites an existing file that has the same name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The last write time of the file is set to the last time the entry in the zip archive was changed; this value is stored in the <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property.  
+The last write time of the file is set to the last time the entry in the zip archive was changed; this value is stored in the <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property.  
+ 
+You cannot use this method to extract a directory; use the <xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory%2A> method instead.  
+ 
   
- You cannot use this method to extract a directory; use the <xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory%2A> method instead.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to iterate through the contents of a zip archive file, and extract files that have a .txt extension. It overwrites an existing file that has the same name in the destination folder. In order to compiler this code example, you must reference the `System.IO.Compression` and `System.IO.Compression.FileSystem` assemblies in your project.  
-  
- [!code-csharp[System.IO.Compression.ZipArchive#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program2.cs#2)]
- [!code-vb[System.IO.Compression.ZipArchive#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program2.vb#2)]  
-  
+The following example shows how to iterate through the contents of a zip archive file, and extract files that have a .txt extension. It overwrites an existing file that has the same name in the destination folder. In order to compiler this code example, you must reference the `System.IO.Compression` and `System.IO.Compression.FileSystem` assemblies in your project.  
+ 
+[!code-csharp[System.IO.Compression.ZipArchive#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program2.cs#2)]
+[!code-vb[System.IO.Compression.ZipArchive#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

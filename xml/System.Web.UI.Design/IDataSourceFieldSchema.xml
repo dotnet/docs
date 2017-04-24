@@ -11,12 +11,12 @@
     <summary>Provides basic functionality for describing the structure of a data field at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface allows a class to implement a set of properties that describe a field in a data source. The <xref:System.Web.UI.Design.DataSetFieldSchema> class implements the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface.  
-  
- Classes that implement the <xref:System.Web.UI.Design.IDataSourceFieldSchema> are used by custom control designer components to provide lists of data source fields and properties for data-bound controls at design time.  
-  
+The <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface allows a class to implement a set of properties that describe a field in a data source. The <xref:System.Web.UI.Design.DataSetFieldSchema> class implements the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface.  
+ 
+Classes that implement the <xref:System.Web.UI.Design.IDataSourceFieldSchema> are used by custom control designer components to provide lists of data source fields and properties for data-bound controls at design time.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
           <see langword="true" /> if the field's <see cref="P:System.Web.UI.Design.IDataSourceFieldSchema.DataType" /> is numeric and the underlying field increments automatically as new rows are added; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Identity%2A> property corresponds to the <xref:System.Data.DataColumn.AutoIncrement%2A> property. In SQL Server, an Identity column is a numerical column that automatically increments with each added record, thereby ensuring that the value uniquely identifies that record.  
-  
+For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Identity%2A> property corresponds to the <xref:System.Data.DataColumn.AutoIncrement%2A> property. In SQL Server, an Identity column is a numerical column that automatically increments with each added record, thereby ensuring that the value uniquely identifies that record.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
           <see langword="true" /> if the field is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a <xref:System.Data.DataColumn>, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.IsReadOnly%2A> property corresponds to the <xref:System.Data.DataColumn.ReadOnly%2A> property.  
-  
+For a <xref:System.Data.DataColumn>, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.IsReadOnly%2A> property corresponds to the <xref:System.Data.DataColumn.ReadOnly%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
           <see langword="true" /> if data in the field must be unique; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.IsUnique%2A> property corresponds to the <xref:System.Data.DataColumn.Unique%2A> property.  
-  
+For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.IsUnique%2A> property corresponds to the <xref:System.Data.DataColumn.Unique%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <value>The number of bytes the field can store.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Length%2A> property corresponds to the <xref:System.Data.DataColumn.MaxLength%2A> property.  
-  
+For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Length%2A> property corresponds to the <xref:System.Data.DataColumn.MaxLength%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <value>The name of the field.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a <xref:System.Data.DataColumn>object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Name%2A> property corresponds to the <xref:System.Data.DataColumn.ColumnName%2A> property.  
-  
+For a <xref:System.Data.DataColumn>object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Name%2A> property corresponds to the <xref:System.Data.DataColumn.ColumnName%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
           <see langword="true" /> if the field can accept <see langword="null" /> values; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Nullable%2A> property corresponds to the <xref:System.Data.DataColumn.AllowDBNull%2A> property.  
-  
+For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Nullable%2A> property corresponds to the <xref:System.Data.DataColumn.AllowDBNull%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

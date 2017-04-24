@@ -49,10 +49,10 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttribute)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> class using the specified distinguished name and attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an object that compares `attributeName` on the object    `distinguishedName`.  
-  
+This constructor creates an object that compares `attributeName` on the object    `distinguishedName`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -82,10 +82,10 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.Byte[])" /> constructor creates an instance of <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> using the specified distinguished name, attribute, and attribute value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an object that compares `attributeName` on the object  `distinguishedName` against `value`.  
-  
+This constructor creates an object that compares `attributeName` on the object  `distinguishedName` against `value`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -113,10 +113,10 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> class using the specified distinguished name, attribute, and attribute value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an object that compares `attributeName` on the object `distinguishedName` against `value`.  
-  
+This constructor creates an object that compares `attributeName` on the object `distinguishedName` against `value`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -144,10 +144,10 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.Uri)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> class using the specified distinguished name, attribute, and attribute value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an object that compares `attributeName` on the object `distinguishedName` against `value`.  
-  
+This constructor creates an object that compares `attributeName` on the object `distinguishedName` against `value`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

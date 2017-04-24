@@ -20,12 +20,12 @@
     <summary>Represents the public key information (called a blob) for a strong name. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class facilitates the use of strong names for identification purposes.  
-  
- For a complete description of strong names, see <xref:System.Security.Policy.StrongName>.  
-  
+This class facilitates the use of strong names for identification purposes.  
+ 
+For a complete description of strong names, see <xref:System.Security.Policy.StrongName>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,10 +93,10 @@
         <returns>The hash code based on the public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Hash functions map binary strings of an arbitrary length to small binary strings of a fixed length, known as hash values.  
-  
+Hash functions map binary strings of an arbitrary length to small binary strings of a fixed length, known as hash values.  
+ 
  ]]></format>
         </remarks>
       </Docs>

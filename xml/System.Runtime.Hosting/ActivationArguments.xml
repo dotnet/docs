@@ -20,20 +20,20 @@
     <summary>Provides data for manifest-based activation of an application. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Hosting.ActivationArguments> class is used by the <xref:System.AppDomainSetup> class.  
+The <xref:System.Runtime.Hosting.ActivationArguments> class is used by the <xref:System.AppDomainSetup> class.  
+ 
+The manifest-based activation model uses an application manifest rather than an assembly for activation. A manifest fully describes the application, its dependencies, security requirements, and so forth. The manifest model has several advantages over the assembly-based activation model, especially for Web applications. For example, the manifest contains the security requirements of the application, which enables the user to decide whether to allow the application to execute before downloading the code. The manifest also contains information about the application dependencies.  
+ 
   
- The manifest-based activation model uses an application manifest rather than an assembly for activation. A manifest fully describes the application, its dependencies, security requirements, and so forth. The manifest model has several advantages over the assembly-based activation model, especially for Web applications. For example, the manifest contains the security requirements of the application, which enables the user to decide whether to allow the application to execute before downloading the code. The manifest also contains information about the application dependencies.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to obtain the current <xref:System.Runtime.Hosting.ActivationArguments> object from the <xref:System.AppDomainSetup> for the <xref:System.AppDomain> of a manifest-based application.  
-  
- [!code-csharp[System.Runtime.Hosting.ApplicationActivator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/cs/program.cs#1)]
- [!code-vb[System.Runtime.Hosting.ApplicationActivator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/vb/program.vb#1)]  
-  
+The following code example shows how to obtain the current <xref:System.Runtime.Hosting.ActivationArguments> object from the <xref:System.AppDomainSetup> for the <xref:System.AppDomain> of a manifest-based application.  
+ 
+[!code-csharp[System.Runtime.Hosting.ApplicationActivator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/cs/program.cs#1)]
+[!code-vb[System.Runtime.Hosting.ApplicationActivator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class with the specified activation context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ActivationContext> object represented by the `activationData` parameter contains the <xref:System.ApplicationIdentity> and context information for manifest-based activation.  
-  
+The <xref:System.ActivationContext> object represented by the `activationData` parameter contains the <xref:System.ApplicationIdentity> and context information for manifest-based activation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -84,10 +84,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class with the specified application identity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application identity uniquely identifies a manifest-based application to be activated in a new domain.  
-  
+The application identity uniquely identifies a manifest-based application to be activated in a new domain.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -114,10 +114,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class with the specified activation context and activation data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ActivationContext> object represented by the `activationContext` parameter contains the <xref:System.ApplicationIdentity> and context information for manifest-based activation. The activation data consists of information such as the query string portion of a URL.  
-  
+The <xref:System.ActivationContext> object represented by the `activationContext` parameter contains the <xref:System.ApplicationIdentity> and context information for manifest-based activation. The activation data consists of information such as the query string portion of a URL.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -144,10 +144,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class with the specified application identity and activation data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application identity uniquely identifies a manifest-based application to be activated in a new domain. The activation data consists of information such as the query string portion of a URL.  
-  
+The application identity uniquely identifies a manifest-based application to be activated in a new domain. The activation data consists of information such as the query string portion of a URL.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -172,20 +172,20 @@
         <value>An object that identifies a manifest-based activation application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ActivationContext> object contains an <xref:System.ApplicationIdentity> and provides internal-only access to the application manifest. The activation context is used during manifest-based activation to set up the domain policy and provide an application-based security model.  
+The <xref:System.ActivationContext> object contains an <xref:System.ApplicationIdentity> and provides internal-only access to the application manifest. The activation context is used during manifest-based activation to set up the domain policy and provide an application-based security model.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to obtain the value of the <xref:System.Runtime.Hosting.ActivationArguments.ActivationContext%2A> property from the <xref:System.Runtime.Hosting.ActivationArguments> for a manifest-based application.  
-  
- This code example is part of a larger example provided for the <xref:System.Runtime.Hosting.ActivationArguments> class.  
-  
- [!code-csharp[System.Runtime.Hosting.ApplicationActivator#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/cs/program.cs#4)]
- [!code-vb[System.Runtime.Hosting.ApplicationActivator#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/vb/program.vb#4)]  
-  
+The following code example shows how to obtain the value of the <xref:System.Runtime.Hosting.ActivationArguments.ActivationContext%2A> property from the <xref:System.Runtime.Hosting.ActivationArguments> for a manifest-based application.  
+ 
+This code example is part of a larger example provided for the <xref:System.Runtime.Hosting.ActivationArguments> class.  
+ 
+[!code-csharp[System.Runtime.Hosting.ApplicationActivator#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/cs/program.cs#4)]
+[!code-vb[System.Runtime.Hosting.ApplicationActivator#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/vb/program.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <value>An array of strings containing host-provided activation data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The activation data consists of information such as the query string portion of a URL.  
-  
+The activation data consists of information such as the query string portion of a URL.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,10 +234,10 @@
         <value>An object that identifies an application for manifest-based activation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application identity uniquely identifies a manifest-based application to be activated in a new domain.  
-  
+The application identity uniquely identifies a manifest-based application to be activated in a new domain.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,10 +260,10 @@
         <returns>A copy of the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.Runtime.Hosting.ActivationArguments> object, and then populates it with copies of the members of the current <xref:System.Runtime.Hosting.ActivationArguments> object  
-  
+This method creates a new <xref:System.Runtime.Hosting.ActivationArguments> object, and then populates it with copies of the members of the current <xref:System.Runtime.Hosting.ActivationArguments> object  
+ 
  ]]></format>
         </remarks>
       </Docs>

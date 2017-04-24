@@ -22,23 +22,23 @@
     <summary>Represents the type of the service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The service type indicates how the service is used by the system. The <xref:System.ServiceProcess.ServiceController> that passes commands to the service stores a value for the service type.  
+The service type indicates how the service is used by the system. The <xref:System.ServiceProcess.ServiceController> that passes commands to the service stores a value for the service type.  
+ 
+The value of a ServiceType instance represents a set of flags combined using the bitwise OR operator.  
+ 
+The creation of interactive services is not supported. To workaround this, you can create a non-interactive service and a separate control GUI application that communicates with the service using sockets or remoting.  
+ 
   
- The value of a ServiceType instance represents a set of flags combined using the bitwise OR operator.  
-  
- The creation of interactive services is not supported. To workaround this, you can create a non-interactive service and a separate control GUI application that communicates with the service using sockets or remoting.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the device driver services on the local computer.  
-  
- [!code-cpp[ServiceController#5](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#5)]
- [!code-csharp[ServiceController#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#5)]
- [!code-vb[ServiceController#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#5)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the device driver services on the local computer.  
+ 
+[!code-cpp[ServiceController#5](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#5)]
+[!code-csharp[ServiceController#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#5)]
+[!code-vb[ServiceController#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

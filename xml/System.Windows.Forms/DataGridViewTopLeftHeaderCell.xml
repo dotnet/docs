@@ -14,10 +14,10 @@
     <summary>Represents the cell in the top left corner of the <see cref="T:System.Windows.Forms.DataGridView" /> that sits above the row headers and to the left of the column headers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Clicking on the top left header cell selects all of the cells in the <xref:System.Windows.Forms.DataGridView>.  
-  
+Clicking on the top left header cell selects all of the cells in the <xref:System.Windows.Forms.DataGridView>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,13 +55,13 @@
         <returns>A new <see cref="T:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject" /> for the <see cref="T:System.Windows.Forms.DataGridViewTopLeftHeaderCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A> property is referenced.  
-  
+If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A> property is referenced.  
+ 
 > [!NOTE]
 >  To get or set <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A>, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,12 +91,12 @@
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's contents.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the cell's contents is computed dynamically when this method is called.  
-  
- This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ContentBounds%2A> property is read.  
-  
+The size of the cell's contents is computed dynamically when this method is called.  
+ 
+This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ContentBounds%2A> property is read.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -128,12 +128,12 @@
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's error icon, if one is displayed; otherwise, <see cref="F:System.Drawing.Rectangle.Empty" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the cell's error icon area is computed dynamically when this method is called.  
-  
- This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ErrorIconBounds%2A> property is read.  
-  
+The size of the cell's error icon area is computed dynamically when this method is called.  
+ 
+This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ErrorIconBounds%2A> property is read.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -167,10 +167,10 @@
         <returns>A <see cref="T:System.Drawing.Size" /> that represents the preferred size, in pixels, of the cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method relies on the <xref:System.Windows.Forms.DataGridViewCell.GetFormattedValue%2A?displayProperty=fullName> method.  
-  
+This method relies on the <xref:System.Windows.Forms.DataGridViewCell.GetFormattedValue%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

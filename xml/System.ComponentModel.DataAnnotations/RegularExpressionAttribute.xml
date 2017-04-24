@@ -24,22 +24,22 @@
     <summary>Specifies that a data field value in ASP.NET Dynamic Data must match the specified regular expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You apply the RegularExpressionAttribute attribute to a property when you need to validate values for the property against a regular expression. The regular expression enables you to specify very precisely the format of valid values. The Pattern property contains the regular expression.If the value of the property is null or an empty string (""), the value automatically passes validation for the RegularExpressionAttribute attribute. To validate that the value is not `null` or an empty string, use the **RequiredAttribute** attribute.  
+You apply the RegularExpressionAttribute attribute to a property when you need to validate values for the property against a regular expression. The regular expression enables you to specify very precisely the format of valid values. The Pattern property contains the regular expression.If the value of the property is null or an empty string (""), the value automatically passes validation for the RegularExpressionAttribute attribute. To validate that the value is not `null` or an empty string, use the **RequiredAttribute** attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.ComponentModel.DataAnnotations.RegularExpressionAttribute> attribute to validate the FirstName and LastName data fields. The regular expression allows up to 40 uppercase and lowercase characters. The example performs the following tasks:  
-  
+The following example shows how to use the <xref:System.ComponentModel.DataAnnotations.RegularExpressionAttribute> attribute to validate the FirstName and LastName data fields. The regular expression allows up to 40 uppercase and lowercase characters. The example performs the following tasks:  
+ 
 -   Implements a metadata partial class and the associated metadata class.  
-  
+ 
 -   In the associated metadata class, applies the <xref:System.ComponentModel.DataAnnotations.RegularExpressionAttribute> attribute to the FirstName and LastName data fields, specifying the pattern and custom error messages.  
-  
- [!code-csharp[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RegularExpressionAttribute/CS/Customer.cs#1)]
- [!code-vb[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RegularExpressionAttribute/VB/Customer.vb#1)]  
-  
+ 
+[!code-csharp[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RegularExpressionAttribute/CS/Customer.cs#1)]
+[!code-vb[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RegularExpressionAttribute/VB/Customer.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,13 +66,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.RegularExpressionAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to apply the <xref:System.ComponentModel.DataAnnotations.RegularExpressionAttribute> to a data field. If validation fails, the code in the example displays the validation error message that is provided by Dynamic Data.  
-  
- [!code-csharp[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RegularExpressionAttribute/CS/Customer.cs#2)]
- [!code-vb[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RegularExpressionAttribute/VB/Customer.vb#2)]  
-  
+The following example shows how to apply the <xref:System.ComponentModel.DataAnnotations.RegularExpressionAttribute> to a data field. If validation fails, the code in the example displays the validation error message that is provided by Dynamic Data.  
+ 
+[!code-csharp[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RegularExpressionAttribute/CS/Customer.cs#2)]
+[!code-vb[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.RegularExpressionAttribute/VB/Customer.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -105,10 +105,10 @@
         <returns>The formatted error message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.RegularExpressionAttribute.FormatErrorMessage%2A> creates the error message by using the name of the data field that caused the validation failure. You can override this method in custom validation attributes to customize how errors are created or to provide a more complex message that contains parameters that you evaluate at run time.  
-  
+The <xref:System.ComponentModel.DataAnnotations.RegularExpressionAttribute.FormatErrorMessage%2A> creates the error message by using the name of the data field that caused the validation failure. You can override this method in custom validation attributes to customize how errors are created or to provide a more complex message that contains parameters that you evaluate at run time.  
+ 
  ]]></format>
         </remarks>
       </Docs>

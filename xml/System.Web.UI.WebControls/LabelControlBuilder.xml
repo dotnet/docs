@@ -14,10 +14,10 @@
     <summary>Interacts with the parser to build a <see cref="T:System.Web.UI.WebControls.Label" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.LabelControlBuilder> causes the parser to ignore inner text if it contains only white space characters.  
-  
+The <xref:System.Web.UI.WebControls.LabelControlBuilder> causes the parser to ignore inner text if it contains only white space characters.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -59,10 +59,10 @@
           <see langword="false" /> for all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> property to ignore white space in the <xref:System.Web.UI.WebControls.Label> control.  
-  
+This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> property to ignore white space in the <xref:System.Web.UI.WebControls.Label> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

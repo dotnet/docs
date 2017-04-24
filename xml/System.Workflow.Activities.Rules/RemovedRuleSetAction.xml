@@ -14,10 +14,10 @@
     <summary>Represents the removal of a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> during dynamic update. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class can be used by a tracking service to determine which <xref:System.Workflow.Activities.Rules.RuleSet>s have been removed during a dynamic update. An instance of this object is generated for every <xref:System.Workflow.Activities.Rules.RuleSet> that is removed (that is, that existed in the workflow before this dynamic update, but is gone afterward).  
-  
+This class can be used by a tracking service to determine which <xref:System.Workflow.Activities.Rules.RuleSet>s have been removed during a dynamic update. An instance of this object is generated for every <xref:System.Workflow.Activities.Rules.RuleSet> that is removed (that is, that existed in the workflow before this dynamic update, but is gone afterward).  
+ 
  ]]></format>
     </remarks>
   </Docs>

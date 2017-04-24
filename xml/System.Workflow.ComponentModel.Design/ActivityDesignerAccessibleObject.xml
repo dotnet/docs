@@ -19,12 +19,12 @@
     <summary>Implements an accessible object that <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> classes use to adjust the designer user interface for users who have impairments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,10 +100,10 @@
         <value>A description of the default action associated with the activity designer, or a null reference (<see langword="Nothing" /> in Visual Basic) if the object has no default action.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is displayed on the designer surface for users with impairments. Not all activity designers have a default action.  
-  
+This property is displayed on the designer surface for users with impairments. Not all activity designers have a default action.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <value>A description of the activity designer's visual appearance, or a null reference (<see langword="Nothing" /> in Visual Basic) if the object has no description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is displayed on the designer surface for users with impairments. Not all activity designers have a description.  
-  
+This property is displayed on the designer surface for users with impairments. Not all activity designers have a description.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <summary>Performs the default action associated with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Clients can retrieve the designer's default action by using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.DefaultAction%2A>.  
-  
+Clients can retrieve the designer's default action by using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.DefaultAction%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,12 +215,12 @@
         <value>The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> or a null reference (<see langword="Nothing" /> in Visual Basic) if the property has not been set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Name%2A> property is a string used by clients to identify, find, or announce an activity for the user. To access the name of a child activity, you must first call <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> with the index of the name of the child activity you are retrieving.  
-  
- You cannot perform a set operation on <xref:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Name%2A>.  
-  
+The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Name%2A> property is a string used by clients to identify, find, or announce an activity for the user. To access the name of a child activity, you must first call <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> with the index of the name of the child activity you are retrieving.  
+ 
+You cannot perform a set operation on <xref:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Name%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,10 +282,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values, or <see cref="F:System.Windows.Forms.AccessibleRole.None" /> if no role has been specified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A graphical image used to diagram data can be obtained using the <xref:System.Windows.Forms.AccessibleRole> member of <xref:System.Windows.Forms.AccessibleRole>.  
-  
+A graphical image used to diagram data can be obtained using the <xref:System.Windows.Forms.AccessibleRole> member of <xref:System.Windows.Forms.AccessibleRole>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,12 +328,12 @@
         <value>A combination of <see cref="T:System.Windows.Forms.AccessibleStates" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.State%2A> has the following possible values:  
-  
- <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, and <xref:System.Windows.Forms.AccessibleStates>.  
-  
+<xref:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.State%2A> has the following possible values:  
+ 
+<xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, and <xref:System.Windows.Forms.AccessibleStates>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

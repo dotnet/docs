@@ -19,12 +19,12 @@
     <summary>Contains event arguments for the <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> activity handlers called at initialization of child <see cref="T:System.Workflow.ComponentModel.Activity" /> instances in addition to when the child <see cref="T:System.Workflow.ComponentModel.Activity" /> instances are finished.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <value>The current item in the <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> enumerable collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data for this item is frequently used to initialize values in the data context of the current child activity instance.  
-  
+The data for this item is frequently used to initialize values in the data context of the current child activity instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>

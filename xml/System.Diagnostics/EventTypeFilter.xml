@@ -23,29 +23,29 @@
     <summary>Indicates whether a listener should trace based on the event type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- One of several different types of filters can be assigned to a trace listener through the <xref:System.Diagnostics.TraceListener.Filter%2A> property to provide a layer of screening beyond that provided by the <xref:System.Diagnostics.TraceSwitch>. The filter can be used to control the event types that are produced by the listener.  
-  
- This class filters events based on the value of the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property.  This property can be set by code or in a configuration file to specify the event type of messages that should be traced by the listener. The value of the property indicates the threshold at which to begin tracing. Event types at and above the specified level are traced. The <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method, called by listeners  to determine if an event should be traced, uses the value of the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property.  
-  
- To set the event type at which to begin tracing, edit the configuration file that corresponds to the name of your application. Within this file, you can add a listener, set its filter type, and specify the event type to trace. The configuration file should be formatted as follows.  
-  
+One of several different types of filters can be assigned to a trace listener through the <xref:System.Diagnostics.TraceListener.Filter%2A> property to provide a layer of screening beyond that provided by the <xref:System.Diagnostics.TraceSwitch>. The filter can be used to control the event types that are produced by the listener.  
+ 
+This class filters events based on the value of the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property.  This property can be set by code or in a configuration file to specify the event type of messages that should be traced by the listener. The value of the property indicates the threshold at which to begin tracing. Event types at and above the specified level are traced. The <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method, called by listeners  to determine if an event should be traced, uses the value of the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property.  
+ 
+To set the event type at which to begin tracing, edit the configuration file that corresponds to the name of your application. Within this file, you can add a listener, set its filter type, and specify the event type to trace. The configuration file should be formatted as follows.  
+ 
 ```  
 <configuration>  
-  <system.diagnostics>  
-    <sharedListeners>  
-      <add name="Console" type="System.Diagnostics.ConsoleTraceListener">  
-        <filter type="System.Diagnostics.EventTypeFilter"   
-          initializeData="Warning" />  
-      </add>  
-    </sharedListeners>  
-  </system.diagnostics>  
+ <system.diagnostics>  
+   <sharedListeners>  
+     <add name="Console" type="System.Diagnostics.ConsoleTraceListener">  
+       <filter type="System.Diagnostics.EventTypeFilter"   
+         initializeData="Warning" />  
+     </add>  
+   </sharedListeners>  
+ </system.diagnostics>  
 </configuration>  
 ```  
-  
- For more information about how to initialize data for an <xref:System.Diagnostics.EventTypeFilter>, see [\&lt;filter\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-sharedlisteners.md).  
-  
+ 
+For more information about how to initialize data for an <xref:System.Diagnostics.EventTypeFilter>, see [\&lt;filter\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-sharedlisteners.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventTypeFilter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the `level` parameter is used to initialize the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property.  
-  
+The value of the `level` parameter is used to initialize the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <value>A bitwise combination of the <see cref="T:System.Diagnostics.SourceLevels" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property indicates the level at which to trace.  
-  
+The <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property indicates the level at which to trace.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
           <see langword="true" />if the trace should be produced; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of the `eventType` parameter is greater than or equal to the value of the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property, the method returns `true`.  
-  
+If the value of the `eventType` parameter is greater than or equal to the value of the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property, the method returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

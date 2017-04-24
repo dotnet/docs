@@ -14,12 +14,12 @@
     <summary>Contains methods to get and update information about a manipulation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A manipulation occurs when touch is interpreted as a physical action that is applied to an object. In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], manipulation events interpret input as a translation, expansion, or rotation manipulation. You usually interact with manipulations through the manipulation events that are defined on the <xref:System.Windows.UIElement>. However, the <xref:System.Windows.Input.Manipulation> class defines static methods that you can use to interact with manipulations.  
-  
- For more information about manipulations, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
-  
+A manipulation occurs when touch is interpreted as a physical action that is applied to an object. In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], manipulation events interpret input as a translation, expansion, or rotation manipulation. You usually interact with manipulations through the manipulation events that are defined on the <xref:System.Windows.UIElement>. However, the <xref:System.Windows.Input.Manipulation> class defines static methods that you can use to interact with manipulations.  
+ 
+For more information about manipulations, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Associates a <see cref="T:System.Windows.Input.IManipulator" /> object with the specified element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `element` already has a manipulation associated with it, `manipulator` is added to the existing manipulation. Otherwise, a new manipulation is created.  
-  
+If `element` already has a manipulation associated with it, `manipulator` is added to the existing manipulation. Otherwise, a new manipulation is created.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -81,10 +81,10 @@
         <summary>Completes the active manipulation on the specified element. When called, manipulation input is no longer tracked and inertia on the specified element stops.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Input.Manipulation.CompleteManipulation%2A> method is called, the <xref:System.Windows.UIElement.ManipulationCompleted> event is raised.  
-  
+When the <xref:System.Windows.Input.Manipulation.CompleteManipulation%2A> method is called, the <xref:System.Windows.UIElement.ManipulationCompleted> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>

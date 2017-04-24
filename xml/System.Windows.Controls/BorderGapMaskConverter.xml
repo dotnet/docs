@@ -18,10 +18,10 @@
     <summary>Represents a converter that converts the dimensions of a <see cref="T:System.Windows.Controls.GroupBox" /> control into a <see cref="T:System.Windows.Media.VisualBrush" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.VisualBrush> created by this converter applies an <xref:System.Windows.UIElement.OpacityMask%2A> to the <xref:System.Windows.Controls.Border> of the <xref:System.Windows.Controls.GroupBox> so that it does not appear in the area defined for the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of the <xref:System.Windows.Controls.GroupBox>.  
-  
+The <xref:System.Windows.Media.VisualBrush> created by this converter applies an <xref:System.Windows.UIElement.OpacityMask%2A> to the <xref:System.Windows.Controls.Border> of the <xref:System.Windows.Controls.GroupBox> so that it does not appear in the area defined for the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of the <xref:System.Windows.Controls.GroupBox>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,20 +68,20 @@
         <returns>A <see cref="T:System.Windows.Media.VisualBrush" /> that draws the border around a <see cref="T:System.Windows.Controls.GroupBox" /> control that includes a gap for the <see cref="P:System.Windows.Controls.HeaderedContentControl.Header" /> content.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The three numbers that are in the `values` parameter represent the following <xref:System.Windows.Controls.GroupBox> control parameters:  
-  
+The three numbers that are in the `values` parameter represent the following <xref:System.Windows.Controls.GroupBox> control parameters:  
+ 
 -   The width of the <xref:System.Windows.Controls.GroupBox> <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> content.  
-  
+ 
 -   The width of the <xref:System.Windows.Controls.GroupBox> control.  
-  
+ 
 -   The height of the <xref:System.Windows.Controls.GroupBox> control.  
-  
- The following illustration provides a graphical representation of the `values` parameter.  
-  
- ![A GroupBox and the valiues for the Convert method](~/add/media/bordergapmaskconverterillustration.png "A GroupBox and the valiues for the Convert method")  
-  
+ 
+The following illustration provides a graphical representation of the `values` parameter.  
+ 
+![A GroupBox and the valiues for the Convert method](~/add/media/bordergapmaskconverterillustration.png "A GroupBox and the valiues for the Convert method")  
+ 
  ]]></format>
         </remarks>
       </Docs>

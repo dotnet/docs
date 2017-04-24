@@ -14,13 +14,13 @@
     <summary>The exception that is thrown when a configuration system error has occurred.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationException> exception is thrown if the application attempts to read or write data to the configuration file but is unsuccessful. Some possible reasons for this can include malformed XML in the configuration file, file permission issues, and configuration properties with values that are not valid.  
-  
+The <xref:System.Configuration.ConfigurationException> exception is thrown if the application attempts to read or write data to the configuration file but is unsuccessful. Some possible reasons for this can include malformed XML in the configuration file, file permission issues, and configuration properties with values that are not valid.  
+ 
 > [!NOTE]
 >  The <xref:System.Configuration.ConfigurationException> object is maintained for backward compatibility. The <xref:System.Configuration.ConfigurationErrorsException> object replaces it for the configuration system.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -238,10 +238,10 @@
         <value>A description of why this <see cref="T:System.Configuration.ConfigurationException" /> exception was thrown.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationException.BareMessage%2A> property does not contain the name of the configuration file, nor the line number at which this <xref:System.Configuration.ConfigurationException> exception occurred. If you want a message that contains the name of the configuration file and the line number, along with the message returned by the <xref:System.Configuration.ConfigurationException.BareMessage%2A> property, use the <xref:System.Configuration.ConfigurationException.Message%2A> property.  
-  
+The <xref:System.Configuration.ConfigurationException.BareMessage%2A> property does not contain the name of the configuration file, nor the line number at which this <xref:System.Configuration.ConfigurationException> exception occurred. If you want a message that contains the name of the configuration file and the line number, along with the message returned by the <xref:System.Configuration.ConfigurationException.BareMessage%2A> property, use the <xref:System.Configuration.ConfigurationException.Message%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the file name and line number at which this configuration exception occurred.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationException.GetObjectData%2A> method sets a <xref:System.Runtime.Serialization.SerializationInfo> object with the file name and line number at which this <xref:System.Configuration.ConfigurationException> exception occurred. During deserialization, the <xref:System.Configuration.ConfigurationException> exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> object that is transmitted over the stream.  
-  
+The <xref:System.Configuration.ConfigurationException.GetObjectData%2A> method sets a <xref:System.Runtime.Serialization.SerializationInfo> object with the file name and line number at which this <xref:System.Configuration.ConfigurationException> exception occurred. During deserialization, the <xref:System.Configuration.ConfigurationException> exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> object that is transmitted over the stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,10 +383,10 @@
         <value>An extended description of why this <see cref="T:System.Configuration.ConfigurationException" /> exception was thrown.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationException.Message%2A> property contains a concatenation of the <xref:System.Configuration.ConfigurationException.BareMessage%2A>, <xref:System.Configuration.ConfigurationException.Filename%2A>, and <xref:System.Configuration.ConfigurationException.Line%2A> properties.  
-  
+The <xref:System.Configuration.ConfigurationException.Message%2A> property contains a concatenation of the <xref:System.Configuration.ConfigurationException.BareMessage%2A>, <xref:System.Configuration.ConfigurationException.Filename%2A>, and <xref:System.Configuration.ConfigurationException.Line%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

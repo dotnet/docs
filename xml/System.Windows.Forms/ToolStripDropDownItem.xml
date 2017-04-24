@@ -22,18 +22,18 @@
     <summary>Provides basic functionality for controls that display a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> when a <see cref="T:System.Windows.Forms.ToolStripDropDownButton" />, <see cref="T:System.Windows.Forms.ToolStripMenuItem" />, or <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> control is clicked.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripDropDownItem> is the abstract base class for <xref:System.Windows.Forms.ToolStripMenuItem>, <xref:System.Windows.Forms.ToolStripDropDownButton>, and <xref:System.Windows.Forms.ToolStripSplitButton>, which can host items directly or host additional items in a drop-down container. You do this by setting the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property to a <xref:System.Windows.Forms.ToolStripDropDown> and setting the <xref:System.Windows.Forms.ToolStrip.Items%2A> property of the <xref:System.Windows.Forms.ToolStripDropDown>. Access these drop-down items directly through the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A> property.  
+<xref:System.Windows.Forms.ToolStripDropDownItem> is the abstract base class for <xref:System.Windows.Forms.ToolStripMenuItem>, <xref:System.Windows.Forms.ToolStripDropDownButton>, and <xref:System.Windows.Forms.ToolStripSplitButton>, which can host items directly or host additional items in a drop-down container. You do this by setting the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property to a <xref:System.Windows.Forms.ToolStripDropDown> and setting the <xref:System.Windows.Forms.ToolStrip.Items%2A> property of the <xref:System.Windows.Forms.ToolStripDropDown>. Access these drop-down items directly through the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show and hide <xref:System.Windows.Forms.ToolStripMenuItem> controls.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownItem#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#1)]  
-  
+The following code example demonstrates how to show and hide <xref:System.Windows.Forms.ToolStripMenuItem> controls.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownItem#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,18 +52,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must derive a drop-down control from the <xref:System.Windows.Forms.ToolStripDropDownItem> class in order to have any drop-down functionality for a <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripMenuItem>, or <xref:System.Windows.Forms.ToolStripSplitButton> control.  
+You must derive a drop-down control from the <xref:System.Windows.Forms.ToolStripDropDownItem> class in order to have any drop-down functionality for a <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripMenuItem>, or <xref:System.Windows.Forms.ToolStripSplitButton> control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create and initialize <xref:System.Windows.Forms.ToolStripDropDownItem> controls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownItem#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownItem#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#2)]  
-  
+The following code example demonstrates how to create and initialize <xref:System.Windows.Forms.ToolStripDropDownItem> controls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownItem#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownItem#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> class with the specified display text, image, and action to take when the drop-down control is clicked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must derive a drop-down control from the <xref:System.Windows.Forms.ToolStripDropDownItem> class in order to have any drop-down functionality for a <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripMenuItem>, or <xref:System.Windows.Forms.ToolStripSplitButton> control.  
-  
+You must derive a drop-down control from the <xref:System.Windows.Forms.ToolStripDropDownItem> class in order to have any drop-down functionality for a <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripMenuItem>, or <xref:System.Windows.Forms.ToolStripSplitButton> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> class with the specified display text, image, and <see cref="T:System.Windows.Forms.ToolStripItem" /> collection that the drop-down control contains.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must derive a drop-down control from the <xref:System.Windows.Forms.ToolStripDropDownItem> class in order to have any drop-down functionality for a <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripMenuItem>, or <xref:System.Windows.Forms.ToolStripSplitButton> control.  
-  
+You must derive a drop-down control from the <xref:System.Windows.Forms.ToolStripDropDownItem> class in order to have any drop-down functionality for a <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripMenuItem>, or <xref:System.Windows.Forms.ToolStripSplitButton> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@
         <returns>The created <see cref="T:System.Windows.Forms.ToolStripDropDown" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripDropDownItem.CreateDefaultDropDown%2A> method is automatically called if the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property finds no <xref:System.Windows.Forms.ToolStripDropDown> associated with the <xref:System.Windows.Forms.ToolStripDropDownItem>.  
-  
+The <xref:System.Windows.Forms.ToolStripDropDownItem.CreateDefaultDropDown%2A> method is automatically called if the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property finds no <xref:System.Windows.Forms.ToolStripDropDown> associated with the <xref:System.Windows.Forms.ToolStripDropDownItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,12 +222,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStripDropDownItem> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStripDropDownItem> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -260,21 +260,21 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripDropDown" /> that is associated with the <see cref="T:System.Windows.Forms.ToolStripDropDownItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no <xref:System.Windows.Forms.ToolStripDropDown> is associated with the <xref:System.Windows.Forms.ToolStripDropDownItem>, a call to <xref:System.Windows.Forms.ToolStripDropDownItem.CreateDefaultDropDown%2A> creates a generic drop-down control.  
-  
+If no <xref:System.Windows.Forms.ToolStripDropDown> is associated with the <xref:System.Windows.Forms.ToolStripDropDownItem>, a call to <xref:System.Windows.Forms.ToolStripDropDownItem.CreateDefaultDropDown%2A> creates a generic drop-down control.  
+ 
 > [!NOTE]
 >  If a drop-down control is automatically generated, which means that items are added to the collection, and you then set the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property to an explicit drop-down control, you might lose data.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to assign a <xref:System.Windows.Forms.ContextMenuStrip> control to a <xref:System.Windows.Forms.ToolStripDropDownItem> control's <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownItem#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownItem#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#2)]  
-  
+The following code example demonstrates how to assign a <xref:System.Windows.Forms.ContextMenuStrip> control to a <xref:System.Windows.Forms.ToolStripDropDownItem> control's <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownItem#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownItem#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,18 +295,18 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> closes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to handle the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownClosed> event for multiple <xref:System.Windows.Forms.ToolStripDropDownItem> controls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownItem#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#5)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownItem#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#5)]  
-  
+The following code example demonstrates how to handle the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownClosed> event for multiple <xref:System.Windows.Forms.ToolStripDropDownItem> controls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownItem#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#5)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownItem#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,18 +351,18 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> is clicked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to handle the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItemClicked> event for multiple <xref:System.Windows.Forms.ToolStripDropDownItem> controls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownItem#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#4)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownItem#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#4)]  
-  
+The following code example demonstrates how to handle the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItemClicked> event for multiple <xref:System.Windows.Forms.ToolStripDropDownItem> controls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownItem#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#4)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownItem#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,18 +389,18 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> of controls.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A> property to get all the items in the <xref:System.Windows.Forms.ToolStripDropDown> that is referred to by the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property.  
+Use the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A> property to get all the items in the <xref:System.Windows.Forms.ToolStripDropDown> that is referred to by the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A> property to create a menu with sub-menus. For the complete code example, see [How to: Display Option Buttons in a MenuStrip](~/docs/framework/winforms/controls/how-to-display-option-buttons-in-a-menustrip-windows-forms.md).  
-  
- [!code-csharp[ToolStripRadioButtonMenuItem#200](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolStripRadioButtonMenuItem/cs/ToolStripRadioButtonMenuItem.cs#200)]
- [!code-vb[ToolStripRadioButtonMenuItem#200](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolStripRadioButtonMenuItem/vb/ToolStripRadioButtonMenuItem.vb#200)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A> property to create a menu with sub-menus. For the complete code example, see [How to: Display Option Buttons in a MenuStrip](~/docs/framework/winforms/controls/how-to-display-option-buttons-in-a-menustrip-windows-forms.md).  
+ 
+[!code-csharp[ToolStripRadioButtonMenuItem#200](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolStripRadioButtonMenuItem/cs/ToolStripRadioButtonMenuItem.cs#200)]
+[!code-vb[ToolStripRadioButtonMenuItem#200](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolStripRadioButtonMenuItem/vb/ToolStripRadioButtonMenuItem.vb#200)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -439,20 +439,20 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> has opened.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs when the user clicks the drop down item or when you call the <xref:System.Windows.Forms.ToolStripDropDownItem.ShowDropDown%2A> method. You can use this event to dynamically populate the <xref:System.Windows.Forms.ToolStripDropDown>.  
+This event occurs when the user clicks the drop down item or when you call the <xref:System.Windows.Forms.ToolStripDropDownItem.ShowDropDown%2A> method. You can use this event to dynamically populate the <xref:System.Windows.Forms.ToolStripDropDown>.  
+ 
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to handle the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownOpened> event for multiple <xref:System.Windows.Forms.ToolStripDropDownItem> controls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownItem#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#3)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownItem#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#3)]  
-  
+The following code example demonstrates how to handle the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownOpened> event for multiple <xref:System.Windows.Forms.ToolStripDropDownItem> controls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownItem#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#3)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownItem#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,20 +473,20 @@
         <summary>Occurs as the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> is opening.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownOpening> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripDropDownItem>, such as a <xref:System.Windows.Forms.ToolStripMenuItem> or <xref:System.Windows.Forms.ToolStripDropDownButton>. Then name the instance `ToolStripDropDownItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownOpening> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#492](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#492)]
- [!code-vb[System.Windows.Forms.EventExamples#492](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#492)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownOpening> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripDropDownItem>, such as a <xref:System.Windows.Forms.ToolStripMenuItem> or <xref:System.Windows.Forms.ToolStripDropDownButton>. Then name the instance `ToolStripDropDownItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownOpening> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#492](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#492)]
+[!code-vb[System.Windows.Forms.EventExamples#492](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#492)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -538,13 +538,13 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> has <see cref="T:System.Windows.Forms.ToolStripDropDown" /> controls; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to query the <xref:System.Windows.Forms.ToolStripDropDownItem.HasDropDownItems%2A> property to conditionally show a <xref:System.Windows.Forms.ToolStripDropDownItem> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownItem#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#6)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownItem#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#6)]  
-  
+The following code example demonstrates how to query the <xref:System.Windows.Forms.ToolStripDropDownItem.HasDropDownItems%2A> property to conditionally show a <xref:System.Windows.Forms.ToolStripDropDownItem> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownItem#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#6)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownItem#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -566,18 +566,18 @@
         <summary>Makes a visible <see cref="T:System.Windows.Forms.ToolStripDropDown" /> hidden.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripDropDownItem.HideDropDown%2A> method to prevent the user from choosing one of the options available on the associated <xref:System.Windows.Forms.ToolStripDropDown> control.  
+Use the <xref:System.Windows.Forms.ToolStripDropDownItem.HideDropDown%2A> method to prevent the user from choosing one of the options available on the associated <xref:System.Windows.Forms.ToolStripDropDown> control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to hide a <xref:System.Windows.Forms.ToolStripDropDownItem> control when a button is pressed. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownItem#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#7)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownItem#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#7)]  
-  
+The following code example demonstrates how to hide a <xref:System.Windows.Forms.ToolStripDropDownItem> control when a button is pressed. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownItem#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#7)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownItem#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -620,12 +620,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDownItem.DropDownClosed" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownClosed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownClosed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -653,12 +653,12 @@
         <summary>Raised in response to the <see cref="M:System.Windows.Forms.ToolStripDropDownItem.HideDropDown" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownHide%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownHide%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -686,12 +686,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDownItem.DropDownItemClicked" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownItemClicked%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownItemClicked%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -719,12 +719,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDownItem.DropDownOpened" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownOpened%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownOpened%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -752,12 +752,12 @@
         <summary>Raised in response to the <see cref="M:System.Windows.Forms.ToolStripDropDownItem.ShowDropDown" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownShow%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownItem.OnDropDownShow%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -785,12 +785,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.FontChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownItem.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownItem.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -870,12 +870,12 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called during message preprocessing to handle command keys. Command keys are keys that always take precedence over regular input keys. Examples of command keys include accelerators and menu shortcuts. The method must return `true` to indicate that it has processed the command key, or `false` to indicate that the key is not a command key.  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownItem> implementation of this method calls the <xref:System.Windows.Forms.ToolStrip.ProcessCmdKey%2A> of the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> if there are items in the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A> collection. Otherwise, this implementation calls the base class implementation.  
-  
+This method is called during message preprocessing to handle command keys. Command keys are keys that always take precedence over regular input keys. Examples of command keys include accelerators and menu shortcuts. The method must return `true` to indicate that it has processed the command key, or `false` to indicate that the key is not a command key.  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownItem> implementation of this method calls the <xref:System.Windows.Forms.ToolStrip.ProcessCmdKey%2A> of the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> if there are items in the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A> collection. Otherwise, this implementation calls the base class implementation.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller and inheriting classes to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
@@ -906,10 +906,10 @@
           <see langword="true" /> if the key was processed by the item; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called during message preprocessing to handle the UP, DOWN, LEFT, RIGHT, ENTER, and SPACEBAR keys in order to navigate the hierarchy of drop-down menus.  
-  
+This method is called during message preprocessing to handle the UP, DOWN, LEFT, RIGHT, ENTER, and SPACEBAR keys in order to navigate the hierarchy of drop-down menus.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
@@ -935,18 +935,18 @@
         <summary>Displays the <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> control associated with this <see cref="T:System.Windows.Forms.ToolStripDropDownItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripDropDownItem.ShowDropDown%2A> method to display the drop-down controls that have been set by the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property.  
+Use the <xref:System.Windows.Forms.ToolStripDropDownItem.ShowDropDown%2A> method to display the drop-down controls that have been set by the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a <xref:System.Windows.Forms.ToolStripDropDownItem> control when a button is pressed. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownItem#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#6)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownItem#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#6)]  
-  
+The following code example demonstrates how to show a <xref:System.Windows.Forms.ToolStripDropDownItem> control when a button is pressed. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripDropDownItem> class.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownItem#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/CS/Form1.cs#6)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownItem#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownItem/VB/Form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> is the same as the parent <see cref="T:System.Windows.Forms.ToolStrip" />.</exception>
@@ -961,10 +961,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must derive a drop-down control from the <xref:System.Windows.Forms.ToolStripDropDownItem> class in order to have any drop-down functionality for a <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripMenuItem>, or <xref:System.Windows.Forms.ToolStripSplitButton> control.  
-  
+You must derive a drop-down control from the <xref:System.Windows.Forms.ToolStripDropDownItem> class in order to have any drop-down functionality for a <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripMenuItem>, or <xref:System.Windows.Forms.ToolStripSplitButton> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

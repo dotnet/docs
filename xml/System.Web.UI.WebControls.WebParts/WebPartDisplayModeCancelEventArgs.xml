@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanging" /> cancelable event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs> class contains information for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanging> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartEventArgs> class provides access to the display mode that will be applied to the Web Parts control. The display mode is accessed through the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs.NewDisplayMode%2A> property.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs> class contains information for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanging> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartEventArgs> class provides access to the display mode that will be applied to the Web Parts control. The display mode is accessed through the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs.NewDisplayMode%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -21,12 +21,12 @@
     <summary>Represents a section of content in a document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.DocumentStructures.SectionStructure> elements are used to mark abstract blocks of content within the document.  Example uses of <xref:System.Windows.Documents.DocumentStructures.SectionStructure> elements would be to mark a summary that describes the main topic of the document, or to identify titled sections of a document that might include a header followed by paragraphs, lists, figures, and tables.  
-  
- <xref:System.Windows.Documents.DocumentStructures.StoryFragment> is the only allowable parent of a <xref:System.Windows.Documents.DocumentStructures.SectionStructure>.  
-  
+<xref:System.Windows.Documents.DocumentStructures.SectionStructure> elements are used to mark abstract blocks of content within the document.  Example uses of <xref:System.Windows.Documents.DocumentStructures.SectionStructure> elements would be to mark a summary that describes the main topic of the document, or to identify titled sections of a document that might include a header followed by paragraphs, lists, figures, and tables.  
+ 
+<xref:System.Windows.Documents.DocumentStructures.StoryFragment> is the only allowable parent of a <xref:System.Windows.Documents.DocumentStructures.SectionStructure>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

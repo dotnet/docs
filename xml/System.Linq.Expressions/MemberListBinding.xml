@@ -25,12 +25,12 @@
     <summary>Represents initializing the elements of a collection member of a newly created object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Linq.Expressions.Expression.ListBind%2A> factory methods to create a <xref:System.Linq.Expressions.MemberListBinding>.  
-  
- A <xref:System.Linq.Expressions.MemberListBinding> has the <xref:System.Linq.Expressions.MemberBinding.BindingType%2A> property equal to <xref:System.Linq.Expressions.MemberBindingType>.  
-  
+Use the <xref:System.Linq.Expressions.Expression.ListBind%2A> factory methods to create a <xref:System.Linq.Expressions.MemberListBinding>.  
+ 
+A <xref:System.Linq.Expressions.MemberListBinding> has the <xref:System.Linq.Expressions.MemberBinding.BindingType%2A> property equal to <xref:System.Linq.Expressions.MemberBindingType>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

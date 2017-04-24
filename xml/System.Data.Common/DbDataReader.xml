@@ -108,10 +108,10 @@
         <value>The depth of nesting for the current row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The outermost table has a depth of zero.  
-  
+The outermost table has a depth of zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,15 +147,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Data.Common.DbDataReader" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Data.Common.DbDataReader>. The `Dispose` method leaves the <xref:System.Data.Common.DbDataReader> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Data.Common.DbDataReader> so the garbage collector can reclaim the memory that the <xref:System.Data.Common.DbDataReader> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Data.Common.DbDataReader>. The `Dispose` method leaves the <xref:System.Data.Common.DbDataReader> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Data.Common.DbDataReader> so the garbage collector can reclaim the memory that the <xref:System.Data.Common.DbDataReader> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Data.Common.DbDataReader>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Data.Common.DbDataReader> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
         <summary>Releases the managed resources used by the <see cref="T:System.Data.Common.DbDataReader" /> and optionally releases the unmanaged resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls <xref:System.Data.SqlClient.SqlDataReader.Close%2A>.  
-  
+This method calls <xref:System.Data.SqlClient.SqlDataReader.Close%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <value>The number of columns in the current row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Includes hidden fields. Use <xref:System.Data.Common.DbDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
-  
+Includes hidden fields. Use <xref:System.Data.Common.DbDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">There is no current connection to an instance of SQL Server.</exception>
@@ -474,25 +474,25 @@
         <returns>A string representing the name of the data type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ```  
 private static void GetDataTypes(String connectiongString) {       
-   using (SqlConnection conn = new SqlConnection(connectiongString)) {  
-      String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course]";  
-      using (DbCommand command = new SqlCommand(queryString, conn)) {  
-         conn.Open();               
-         using (DbDataReader reader = command.ExecuteReader()) {  
-            for (Int32 i = 0; i < reader.FieldCount; i++) {  
-               Console.WriteLine("ColumnName:{0,-15}DataType:{1,-15}",reader.GetName(i),reader.GetDataTypeName(i));  
-            }  
-         }  
-      }  
-   }  
+  using (SqlConnection conn = new SqlConnection(connectiongString)) {  
+     String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course]";  
+     using (DbCommand command = new SqlCommand(queryString, conn)) {  
+        conn.Open();               
+        using (DbDataReader reader = command.ExecuteReader()) {  
+           for (Int32 i = 0; i < reader.FieldCount; i++) {  
+              Console.WriteLine("ColumnName:{0,-15}DataType:{1,-15}",reader.GetName(i),reader.GetDataTypeName(i));  
+           }  
+        }  
+     }  
+  }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -657,12 +657,12 @@ private static void GetDataTypes(String connectiongString) {
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the rows in the data reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although you can use this method to retrieve an explicit constructor, in languages that support an explicit **foreach** construct, it is simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
-  
- If you implement this method, it should return a new instance of <xref:System.Data.Common.DbEnumerator> or ensure that your enumerator returns <xref:System.Data.IDataRecord> objects.  
-  
+Although you can use this method to retrieve an explicit constructor, in languages that support an explicit **foreach** construct, it is simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
+ 
+If you implement this method, it should return a new instance of <xref:System.Data.Common.DbEnumerator> or ensure that your enumerator returns <xref:System.Data.IDataRecord> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -733,10 +733,10 @@ private static void GetDataTypes(String connectiongString) {
         <returns>The column to be retrieved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -787,19 +787,19 @@ private static void GetDataTypes(String connectiongString) {
         <returns>The type of the value to be returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `T` can be one of the following types:  
-  
+`T` can be one of the following types:  
+ 
 |||||  
 |-|-|-|-|  
 |Boolean|Byte|Char|DateTime|  
 |DateTimeOffset|Decimal|Double|Float|  
 |Guid|Int16|Int32|Int64|  
 |String||||  
-  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+ 
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -852,19 +852,19 @@ private static void GetDataTypes(String connectiongString) {
         <returns>The type of the value to be returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `T` can be one of the following types:  
-  
+`T` can be one of the following types:  
+ 
 |||||  
 |-|-|-|-|  
 |Boolean|Byte|Char|DateTime|  
 |DateTimeOffset|Decimal|Double|Float|  
 |Guid|Int16|Int32|Int64|  
 |String||||  
-  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+ 
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -1007,27 +1007,27 @@ private static void GetDataTypes(String connectiongString) {
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ```  
 private static void GetCredits(String connectiongString) {  
-   using (SqlConnection conn = new SqlConnection(connectiongString)) {  
-      String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course]";   
-      using (DbCommand command = new SqlCommand(queryString, conn)) {  
-         conn.Open();   
-         using (DbDataReader reader = command.ExecuteReader()) {  
-            while (reader.Read()) {  
-               // Credits column is the integer column, and you can use the GetInt32 method                        
-               // to return a a 32-bit signed integer.                       
-               Console.WriteLine("Course:{0,-15} Credits:{1}",reader[1],reader.GetInt32(2));   
-            }  
-         }  
-      }  
-   }  
+  using (SqlConnection conn = new SqlConnection(connectiongString)) {  
+     String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course]";   
+     using (DbCommand command = new SqlCommand(queryString, conn)) {  
+        conn.Open();   
+        using (DbDataReader reader = command.ExecuteReader()) {  
+           while (reader.Read()) {  
+              // Credits column is the integer column, and you can use the GetInt32 method                        
+              // to return a a 32-bit signed integer.                       
+              Console.WriteLine("Course:{0,-15} Credits:{1}",reader[1],reader.GetInt32(2));   
+           }  
+        }  
+     }  
+  }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -1199,10 +1199,10 @@ private static void GetCredits(String connectiongString) {
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine the specific type of the object returned, use <xref:System.Data.Common.DbDataReader.GetProviderSpecificFieldType%2A>.  
-  
+To determine the specific type of the object returned, use <xref:System.Data.Common.DbDataReader.GetProviderSpecificFieldType%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1298,12 +1298,12 @@ private static void GetCredits(String connectiongString) {
         <returns>The returned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Common.DbDataReader.GetStream%2A> only supports the retrieval of values that can be converted to byte arrays.  
-  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+<xref:System.Data.Common.DbDataReader.GetStream%2A> only supports the retrieval of values that can be converted to byte arrays.  
+ 
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -1389,12 +1389,12 @@ private static void GetCredits(String connectiongString) {
         <returns>The returned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Common.DbDataReader.GetTextReader%2A> only supports the retrieval of values that can be converted to character arrays (strings).  
-  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+<xref:System.Data.Common.DbDataReader.GetTextReader%2A> only supports the retrieval of values that can be converted to character arrays (strings).  
+ 
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -1575,10 +1575,10 @@ private static void GetCredits(String connectiongString) {
           <see langword="true" /> if the specified column is equivalent to <see cref="T:System.DBNull" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to check for null column values before calling the typed get methods (for example, <xref:System.Data.Common.DbDataReader.GetByte%2A>, <xref:System.Data.Common.DbDataReader.GetChar%2A>, and so on) to avoid raising an error.  
-  
+Call this method to check for null column values before calling the typed get methods (for example, <xref:System.Data.Common.DbDataReader.GetByte%2A>, <xref:System.Data.Common.DbDataReader.GetChar%2A>, and so on) to avoid raising an error.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1614,10 +1614,10 @@ private static void GetCredits(String connectiongString) {
           <see langword="true" /> if the specified column value is equivalent to <see langword="DBNull" /> otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -1665,10 +1665,10 @@ private static void GetCredits(String connectiongString) {
           <see langword="true" /> if the specified column value is equivalent to <see langword="DBNull" /> otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -1775,10 +1775,10 @@ private static void GetCredits(String connectiongString) {
           <see langword="true" /> if there are more result sets; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows you to process multiple result sets returned when a batch is submitted to the data provider.  
-  
+This method allows you to process multiple result sets returned when a batch is submitted to the data provider.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1812,10 +1812,10 @@ private static void GetCredits(String connectiongString) {
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -1855,10 +1855,10 @@ private static void GetCredits(String connectiongString) {
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -1892,10 +1892,10 @@ private static void GetCredits(String connectiongString) {
           <see langword="true" /> if there are more rows; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default position of a data reader is before the first record. Therefore, you must call <xref:System.Data.Common.DbDataReader.Read%2A> to begin accessing data.  
-  
+The default position of a data reader is before the first record. Therefore, you must call <xref:System.Data.Common.DbDataReader.Read%2A> to begin accessing data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1927,10 +1927,10 @@ private static void GetCredits(String connectiongString) {
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -1970,10 +1970,10 @@ private static void GetCredits(String connectiongString) {
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -2005,10 +2005,10 @@ private static void GetCredits(String connectiongString) {
         <value>The number of rows changed, inserted, or deleted. -1 for SELECT statements; 0 if no rows were affected or the statement failed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `RecordsAffected` property is not set until all rows are read and you close the `DataReader`.  
-  
+The `RecordsAffected` property is not set until all rows are read and you close the `DataReader`.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -2083,10 +2083,10 @@ private static void GetCredits(String connectiongString) {
         <returns>An instance of <see cref="T:System.Data.IDataReader" /> to be used when the field points to more remote structured data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataReader> instance is cast to an <xref:System.Data.IDataRecord> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataReader> instance is cast to an <xref:System.Data.IDataRecord> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2117,10 +2117,10 @@ private static void GetCredits(String connectiongString) {
         <value>The number of fields that are not hidden.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is used to determine how many fields in the <xref:System.Data.Common.DbDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
-  
+This value is used to determine how many fields in the <xref:System.Data.Common.DbDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2134,10 +2134,10 @@ private static void GetCredits(String connectiongString) {
         <summary>Asynchronously gets the value of the specified column as a type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2151,10 +2151,10 @@ private static void GetCredits(String connectiongString) {
         <summary>Implements the asynchronous version of <see cref="M:System.Data.Common.DbDataReader.Read" />, but returns a Task synchronously, blocking the calling thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2168,10 +2168,10 @@ private static void GetCredits(String connectiongString) {
         <summary>Implements the asynchronous version of <see cref="M:System.Data.Common.DbDataReader.NextResult" />, but returns a Task synchronously, blocking the calling thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

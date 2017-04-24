@@ -18,16 +18,16 @@
     <summary>Scales and rotates a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.TransformedBitmap> supports only orthogonal transforms such as rotation transforms of 90° increments and scale transforms. Transforms that skew the image are not supported.  
-  
- <xref:System.Windows.Media.Imaging.TransformedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
-  
- <xref:System.Windows.Media.Imaging.TransformedBitmap> objects created using the <xref:System.Windows.Media.Imaging.TransformedBitmap.%23ctor%28System.Windows.Media.Imaging.BitmapSource%2CSystem.Windows.Media.Transform%29> constructor are automatically initialized and property changes are ignored.  
-  
- Metadata tags related to image data must be updated if an image is saved to a file after a transform is applied.  
-  
+<xref:System.Windows.Media.Imaging.TransformedBitmap> supports only orthogonal transforms such as rotation transforms of 90° increments and scale transforms. Transforms that skew the image are not supported.  
+ 
+<xref:System.Windows.Media.Imaging.TransformedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
+ 
+<xref:System.Windows.Media.Imaging.TransformedBitmap> objects created using the <xref:System.Windows.Media.Imaging.TransformedBitmap.%23ctor%28System.Windows.Media.Imaging.BitmapSource%2CSystem.Windows.Media.Transform%29> constructor are automatically initialized and property changes are ignored.  
+ 
+Metadata tags related to image data must be updated if an image is saved to a file after a transform is applied.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.TransformedBitmap" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.TransformedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. To initialize a <xref:System.Windows.Media.Imaging.TransformedBitmap> created using this constructor, you must perform property initialization between <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> calls.  
-  
+<xref:System.Windows.Media.Imaging.TransformedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. To initialize a <xref:System.Windows.Media.Imaging.TransformedBitmap> created using this constructor, you must perform property initialization between <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> calls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.TransformedBitmap" /> class that has the specified <see cref="P:System.Windows.Media.Imaging.TransformedBitmap.Source" /> and <see cref="P:System.Windows.Media.Imaging.TransformedBitmap.Transform" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.TransformedBitmap> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
-  
+<xref:System.Windows.Media.Imaging.TransformedBitmap> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> parameter is <see langword="null" />.</exception>
@@ -104,18 +104,18 @@
         <summary>Signals the start of the <see cref="T:System.Windows.Media.Imaging.TransformedBitmap" /> initialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property initialization must be done between <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.TransformedBitmap> has been initialized, property changes are ignored.  
+Property initialization must be done between <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.TransformedBitmap> has been initialized, property changes are ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.TransformedBitmap> with a set of properties by using the <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> methods.  
-  
- [!code-csharp[ImagingSnippetGallery_procedural_snip#TransformedBitmapPropInit](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/TransformedBitmapExample.cs#transformedbitmappropinit)]
- [!code-vb[ImagingSnippetGallery_procedural_snip#TransformedBitmapPropInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/TransformedBitmapExample.vb#transformedbitmappropinit)]  
-  
+The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.TransformedBitmap> with a set of properties by using the <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> methods.  
+ 
+[!code-csharp[ImagingSnippetGallery_procedural_snip#TransformedBitmapPropInit](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/TransformedBitmapExample.cs#transformedbitmappropinit)]
+[!code-vb[ImagingSnippetGallery_procedural_snip#TransformedBitmapPropInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/TransformedBitmapExample.vb#transformedbitmappropinit)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.Imaging.TransformedBitmap" /> is currently being initialized. <see cref="M:System.Windows.Media.Imaging.TransformedBitmap.BeginInit" /> has already been called.  
@@ -143,12 +143,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,12 +192,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,18 +264,18 @@
         <summary>Signals the end of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> initialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property initialization must be done between <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.TransformedBitmap> has been initialized, property changes are ignored.  
+Property initialization must be done between <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.TransformedBitmap> has been initialized, property changes are ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.TransformedBitmap> with a set of properties by using the <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> methods.  
-  
- [!code-csharp[ImagingSnippetGallery_procedural_snip#TransformedBitmapPropInit](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/TransformedBitmapExample.cs#transformedbitmappropinit)]
- [!code-vb[ImagingSnippetGallery_procedural_snip#TransformedBitmapPropInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/TransformedBitmapExample.vb#transformedbitmappropinit)]  
-  
+The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.TransformedBitmap> with a set of properties by using the <xref:System.Windows.Media.Imaging.TransformedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.TransformedBitmap.EndInit%2A> methods.  
+ 
+[!code-csharp[ImagingSnippetGallery_procedural_snip#TransformedBitmapPropInit](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/TransformedBitmapExample.cs#transformedbitmappropinit)]
+[!code-vb[ImagingSnippetGallery_procedural_snip#TransformedBitmapPropInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/TransformedBitmapExample.vb#transformedbitmappropinit)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Media.Imaging.TransformedBitmap.Source" /> or <see cref="P:System.Windows.Media.Imaging.TransformedBitmap.Transform" /> properties are <see langword="null" />.  
@@ -348,18 +348,18 @@
         <value>The source for the bitmap. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can chain a <xref:System.Windows.Media.Imaging.TransformedBitmap> to another <xref:System.Windows.Media.Imaging.BitmapSource> by setting the <xref:System.Windows.Media.Imaging.TransformedBitmap.Source%2A> property of the <xref:System.Windows.Media.Imaging.TransformedBitmap> to the <xref:System.Windows.Media.Imaging.BitmapSource> that you want. See [How to: Chain BitmapSource Objects Together](~/docs/framework/wpf/graphics-multimedia/how-to-chain-bitmapsource-objects-together.md) for an example of chaining.  
-  
+You can chain a <xref:System.Windows.Media.Imaging.TransformedBitmap> to another <xref:System.Windows.Media.Imaging.BitmapSource> by setting the <xref:System.Windows.Media.Imaging.TransformedBitmap.Source%2A> property of the <xref:System.Windows.Media.Imaging.TransformedBitmap> to the <xref:System.Windows.Media.Imaging.BitmapSource> that you want. See [How to: Chain BitmapSource Objects Together](~/docs/framework/wpf/graphics-multimedia/how-to-chain-bitmapsource-objects-together.md) for an example of chaining.  
+ 
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.TransformedBitmap.SourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,28 +398,28 @@
         <value>The <see cref="T:System.Windows.Media.Transform" />, which specifies the scale or rotation of the bitmap. The default value is <see cref="P:System.Windows.Media.Transform.Identity" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.TransformedBitmap> supports only orthogonal transforms such as rotation transforms of 90 increments and scale transforms. Transforms that skew the image are not supported.  
-  
+<xref:System.Windows.Media.Imaging.TransformedBitmap> supports only orthogonal transforms such as rotation transforms of 90 increments and scale transforms. Transforms that skew the image are not supported.  
+ 
 <a name="dependencyPropertyInfo_Transform"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.TransformedBitmap.TransformProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to apply a <xref:System.Windows.Media.Imaging.TransformedBitmap.Transform%2A> to a bitmap.  
-  
- [!code-xml[imageelementexample#TransformedXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/TransformedImageExample.xaml#transformedxaml2)]  
-  
- [!code-csharp[imageelementexample#TransformedCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/TransformedImageExample.xaml.cs#transformedcsharp1)]
- [!code-vb[imageelementexample#TransformedCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/TransformedImageExample.xaml.vb#transformedcsharp1)]  
-  
+The following example shows how to apply a <xref:System.Windows.Media.Imaging.TransformedBitmap.Transform%2A> to a bitmap.  
+ 
+[!code-xml[imageelementexample#TransformedXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/TransformedImageExample.xaml#transformedxaml2)]  
+ 
+[!code-csharp[imageelementexample#TransformedCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/TransformedImageExample.xaml.cs#transformedcsharp1)]
+[!code-vb[imageelementexample#TransformedCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/TransformedImageExample.xaml.vb#transformedcsharp1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

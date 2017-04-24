@@ -19,19 +19,19 @@
     <summary>Defines the metadata attribute that specifies how an ASP.NET server control property or event is persisted to an ASP.NET page at design time. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
 > [!NOTE]
 >  The Web page designer in Visual Studio does not support the `ResetPropertyName` method that is optionally exposed by Windows Forms controls for property persistence. Server controls are serialized using methods provided by the <xref:System.Web.UI.Design.ControlPersister> class. The implementation of these methods is driven by metadata attributes such as <xref:System.ComponentModel.DefaultValueAttribute>, <xref:System.Web.UI.PersistenceModeAttribute>, and <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[PersistenceMode#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistenceMode/CS/persistencemodeattributesamples.cs#2)]
- [!code-vb[PersistenceMode#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistenceMode/VB/persistencemodeattributesamples.vb#2)]  
-  
+[!code-csharp[PersistenceMode#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistenceMode/CS/persistencemodeattributesamples.cs#2)]
+[!code-vb[PersistenceMode#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistenceMode/VB/persistencemodeattributesamples.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,10 +129,10 @@
           <see langword="true" /> if the objects are considered equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PersistenceModeAttribute.Equals%2A> method first compares the current object with the given object and returns `true` if they are equal.  Otherwise, if the given object is also a <xref:System.Web.UI.PersistenceModeAttribute> object and is not `null`, the <xref:System.Web.UI.PersistenceModeAttribute.Mode%2A> properties of each object are compared for equality and the result returned.  
-  
+The <xref:System.Web.UI.PersistenceModeAttribute.Equals%2A> method first compares the current object with the given object and returns `true` if they are equal.  Otherwise, if the given object is also a <xref:System.Web.UI.PersistenceModeAttribute> object and is not `null`, the <xref:System.Web.UI.PersistenceModeAttribute.Mode%2A> properties of each object are compared for equality and the result returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.PersistenceModeAttribute" /> is of the default type; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs calls the <xref:System.Web.UI.PersistenceModeAttribute.Equals%2A> method while passing in the object referenced by the <xref:System.Web.UI.PersistenceModeAttribute.Default> property.  
-  
+This method performs calls the <xref:System.Web.UI.PersistenceModeAttribute.Equals%2A> method while passing in the object referenced by the <xref:System.Web.UI.PersistenceModeAttribute.Default> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,11 +234,11 @@
         <value>A <see cref="T:System.Web.UI.PersistenceMode" /> that represents the current value of the enumeration. This value can be <see langword="Attribute" />, <see langword="InnerProperty" />, <see langword="InnerDefaultProperty" />, or <see langword="EncodedInnerDefaultProperty" />. The default is <see langword="Attribute" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[PersistenceMode#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistenceMode/CS/persistencemodeattributesamples.cs#2)]
- [!code-vb[PersistenceMode#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistenceMode/VB/persistencemodeattributesamples.vb#2)]  
-  
+[!code-csharp[PersistenceMode#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistenceMode/CS/persistencemodeattributesamples.cs#2)]
+[!code-vb[PersistenceMode#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistenceMode/VB/persistencemodeattributesamples.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

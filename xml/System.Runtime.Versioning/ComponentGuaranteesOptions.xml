@@ -23,12 +23,12 @@
     <summary>Describes the compatibility guarantee of a component, type, or type member that may span multiple versions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> enumeration is used by the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> class to indicate the level of compatibility that is guaranteed for a component or class library that spans multiple versions. Exchange provides the strongest compatibility guarantee, followed by Stable and SideBySide. None does not promise compatibility across versions.  
-  
- For a detailed discussion of the meaning of each guarantee, see the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> topic.  
-  
+The <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> enumeration is used by the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> class to indicate the level of compatibility that is guaranteed for a component or class library that spans multiple versions. Exchange provides the strongest compatibility guarantee, followed by Stable and SideBySide. None does not promise compatibility across versions.  
+ 
+For a detailed discussion of the meaning of each guarantee, see the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> topic.  
+ 
  ]]></format>
     </remarks>
   </Docs>

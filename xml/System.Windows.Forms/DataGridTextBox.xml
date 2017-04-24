@@ -31,21 +31,21 @@
     <summary>Represents a <see cref="T:System.Windows.Forms.TextBox" /> control that is hosted in a <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridTextBox> and the <xref:System.Windows.Forms.DataGridTextBoxColumn> work together so that users can directly edit values in a <xref:System.Windows.Forms.DataGrid> control column. The <xref:System.Windows.Forms.DataGridTextBoxColumn> derives from <xref:System.Windows.Forms.DataGridColumnStyle>, and is designed to host the <xref:System.Windows.Forms.DataGridTextBox>, which derives from the <xref:System.Windows.Forms.TextBox> control.  
+The <xref:System.Windows.Forms.DataGridTextBox> and the <xref:System.Windows.Forms.DataGridTextBoxColumn> work together so that users can directly edit values in a <xref:System.Windows.Forms.DataGrid> control column. The <xref:System.Windows.Forms.DataGridTextBoxColumn> derives from <xref:System.Windows.Forms.DataGridColumnStyle>, and is designed to host the <xref:System.Windows.Forms.DataGridTextBox>, which derives from the <xref:System.Windows.Forms.TextBox> control.  
+ 
+In addition to the properties, events, and methods of the base control, you can call the <xref:System.Windows.Forms.Control.KeyPress> and <xref:System.Windows.Forms.Control.KeyDown> events with the <xref:System.Windows.Forms.Control.OnKeyPress%2A> and <xref:System.Windows.Forms.Control.OnMouseDown%2A> methods.  
+ 
   
- In addition to the properties, events, and methods of the base control, you can call the <xref:System.Windows.Forms.Control.KeyPress> and <xref:System.Windows.Forms.Control.KeyDown> events with the <xref:System.Windows.Forms.Control.OnKeyPress%2A> and <xref:System.Windows.Forms.Control.OnMouseDown%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to get the <xref:System.Windows.Forms.DataGridTextBox> hosted by a <xref:System.Windows.Forms.DataGridTextBoxColumn>.  
-  
- [!code-cpp[Classic DataGridTextBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBox Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridTextBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBox Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridTextBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBox Example/VB/source.vb#1)]  
-  
+The following code example demonstrates how to get the <xref:System.Windows.Forms.DataGridTextBox> hosted by a <xref:System.Windows.Forms.DataGridTextBoxColumn>.  
+ 
+[!code-cpp[Classic DataGridTextBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBox Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridTextBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBox Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridTextBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBox Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,19 +83,19 @@
           <see langword="true" /> if the controls is in navigation mode, and editing has not begun; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridTextBox.IsInEditOrNavigateMode%2A> property is used within the <xref:System.Windows.Forms.Control.ProcessKeyMessage%2A> to determine how to process key press events, to check the state of the <xref:System.Windows.Forms.DataGridTextBox>. For example, if one of the navigation (arrow) keys is pressed, the appropriate action for the state of the control must occur.  
+The <xref:System.Windows.Forms.DataGridTextBox.IsInEditOrNavigateMode%2A> property is used within the <xref:System.Windows.Forms.Control.ProcessKeyMessage%2A> to determine how to process key press events, to check the state of the <xref:System.Windows.Forms.DataGridTextBox>. For example, if one of the navigation (arrow) keys is pressed, the appropriate action for the state of the control must occur.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cpp[DataGridTextBox_IsInEditOrNavigateMode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBox_IsInEditOrNavigateMode/CPP/datagridtextbox_isineditornavigatemode.cpp#1)]
- [!code-csharp[DataGridTextBox_IsInEditOrNavigateMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBox_IsInEditOrNavigateMode/CS/datagridtextbox_isineditornavigatemode.cs#1)]
- [!code-vb[DataGridTextBox_IsInEditOrNavigateMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBox_IsInEditOrNavigateMode/VB/datagridtextbox_isineditornavigatemode.vb#1)]  
-  
+The following code example demonstrates the use of this member.  
+ 
+[!code-cpp[DataGridTextBox_IsInEditOrNavigateMode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBox_IsInEditOrNavigateMode/CPP/datagridtextbox_isineditornavigatemode.cpp#1)]
+[!code-csharp[DataGridTextBox_IsInEditOrNavigateMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBox_IsInEditOrNavigateMode/CS/datagridtextbox_isineditornavigatemode.cs#1)]
+[!code-vb[DataGridTextBox_IsInEditOrNavigateMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBox_IsInEditOrNavigateMode/VB/datagridtextbox_isineditornavigatemode.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
           <see langword="true" /> if the key is consumed, <see langword="false" /> to if the key is further processed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when a control receives a keyboard message.  
-  
+This method is called when a control receives a keyboard message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,14 +192,14 @@
         <summary>Sets the <see cref="T:System.Windows.Forms.DataGrid" /> to which this <see cref="T:System.Windows.Forms.TextBox" /> control belongs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cpp[DataGridTextBox_SetDataGrid#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBox_SetDataGrid/CPP/datagridtextbox_setdatagrid.cpp#2)]
- [!code-csharp[DataGridTextBox_SetDataGrid#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBox_SetDataGrid/CS/datagridtextbox_setdatagrid.cs#2)]
- [!code-vb[DataGridTextBox_SetDataGrid#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBox_SetDataGrid/VB/datagridtextbox_setdatagrid.vb#2)]  
-  
+The following code example demonstrates the use of this member.  
+ 
+[!code-cpp[DataGridTextBox_SetDataGrid#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBox_SetDataGrid/CPP/datagridtextbox_setdatagrid.cpp#2)]
+[!code-csharp[DataGridTextBox_SetDataGrid#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBox_SetDataGrid/CS/datagridtextbox_setdatagrid.cs#2)]
+[!code-vb[DataGridTextBox_SetDataGrid#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBox_SetDataGrid/VB/datagridtextbox_setdatagrid.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,10 +18,10 @@
     <summary>Represents an OLE compound file that contains an encrypted package.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.Packaging.EncryptedPackageEnvelope> has no public constructors.  An <xref:System.IO.Packaging.EncryptedPackageEnvelope> is created by use of the static <xref:System.IO.Packaging.EncryptedPackageEnvelope.Create%2A>, <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A>, or <xref:System.IO.Packaging.EncryptedPackageEnvelope.Open%2A> methods.  
-  
+<xref:System.IO.Packaging.EncryptedPackageEnvelope> has no public constructors.  An <xref:System.IO.Packaging.EncryptedPackageEnvelope> is created by use of the static <xref:System.IO.Packaging.EncryptedPackageEnvelope.Create%2A>, <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A>, or <xref:System.IO.Packaging.EncryptedPackageEnvelope.Open%2A> methods.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,13 +43,13 @@
         <summary>Closes the encrypted package and the OLE compound file that holds it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to close an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
-  
+The following example shows how to use this method to close an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
+[!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <returns>The newly created <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current user has read/write access to the new file.  
-  
+The current user has read/write access to the new file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -116,12 +116,12 @@
         <returns>The newly created <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a file with the specified name already exists, it is overwritten.  
-  
- The current user has read/write access to the file.  
-  
+If a file with the specified name already exists, it is overwritten.  
+ 
+The current user has read/write access to the file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -155,18 +155,18 @@
         <returns>The newly created <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current user has read/write access to the new file.  
+The current user has read/write access to the new file.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A> method to instantiate an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
-  
+The following example shows how to use the <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A> method to instantiate an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
+[!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -202,20 +202,20 @@
         <returns>The newly created <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a file with the specified name already exists, it is overwritten.  
+If a file with the specified name already exists, it is overwritten.  
+ 
+The current user has read/write access to the file.  
+ 
   
- The current user has read/write access to the file.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A> method to instantiate an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
-  
+The following example shows how to use the <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A> method to instantiate an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
+[!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -239,13 +239,13 @@
         <summary>Releases all resources used by the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.IO.Packaging.EncryptedPackageEnvelope.Dispose%2A> when finished with a <xref:System.IO.Packaging.EncryptedPackageEnvelope>. The <xref:System.IO.Packaging.EncryptedPackageEnvelope.Dispose%2A> method leaves the <xref:System.IO.Packaging.EncryptedPackageEnvelope> in an unusable state. After calling <xref:System.IO.Packaging.EncryptedPackageEnvelope.Dispose%2A>, you must release all references to the <xref:System.IO.Packaging.EncryptedPackageEnvelope> so the garbage collector can reclaim the memory that the <xref:System.IO.Packaging.EncryptedPackageEnvelope> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call <xref:System.IO.Packaging.EncryptedPackageEnvelope.Dispose%2A> when finished with a <xref:System.IO.Packaging.EncryptedPackageEnvelope>. The <xref:System.IO.Packaging.EncryptedPackageEnvelope.Dispose%2A> method leaves the <xref:System.IO.Packaging.EncryptedPackageEnvelope> in an unusable state. After calling <xref:System.IO.Packaging.EncryptedPackageEnvelope.Dispose%2A>, you must release all references to the <xref:System.IO.Packaging.EncryptedPackageEnvelope> so the garbage collector can reclaim the memory that the <xref:System.IO.Packaging.EncryptedPackageEnvelope> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.IO.Packaging.EncryptedPackageEnvelope.Dispose%2A> before you release your last reference to the <xref:System.IO.Packaging.EncryptedPackageEnvelope>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IO.Packaging.EncryptedPackageEnvelope> object's <xref:System.Object.Finalize%2A> method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,12 +271,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.IO.Packaging.EncryptedPackageEnvelope> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.IO.Packaging.EncryptedPackageEnvelope> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -389,13 +389,13 @@
           <see langword="true" /> if the specified file is an OLE compound file with an encrypted package stream; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to test for encryption.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
-  
+The following example shows how to use this method to test for encryption.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
+[!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -423,10 +423,10 @@
         <returns>The <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that is opened.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The stream must have an encrypted package.  
-  
+The stream must have an encrypted package.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -452,12 +452,12 @@
         <returns>The <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that is opened.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file must have an encrypted package.  
-  
- The opened file is read only and unshared.  
-  
+The file must have an encrypted package.  
+ 
+The opened file is read only and unshared.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -485,12 +485,12 @@
         <returns>The <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that is opened.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file must have an encrypted package.  
-  
- The opened file is unshared.  
-  
+The file must have an encrypted package.  
+ 
+The opened file is unshared.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -520,10 +520,10 @@
         <returns>The <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that is opened.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file must have an encrypted package.  
-  
+The file must have an encrypted package.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -545,10 +545,10 @@
         <value>The <see cref="T:System.IO.Packaging.PackageProperties" /> for the package.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These core properties are stored in the standard OLE property streams (\005SummaryInformation and \005DocumentSummaryInformation). The core properties are also stored in the package itself. It is the responsibility of the application to keep the two sets of properties synchronized.  
-  
+These core properties are stored in the standard OLE property streams (\005SummaryInformation and \005DocumentSummaryInformation). The core properties are also stored in the package itself. It is the responsibility of the application to keep the two sets of properties synchronized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -570,13 +570,13 @@
         <value>The <see cref="T:System.IO.Packaging.RightsManagementInformation" /> for the package.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to obtain <xref:System.IO.Packaging.RightsManagementInformation> for an encrypted package by use the <xref:System.IO.Packaging.EncryptedPackageEnvelope.RightsManagementInformation%2A> property.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
-  
+The following example shows how to obtain <xref:System.IO.Packaging.RightsManagementInformation> for an encrypted package by use the <xref:System.IO.Packaging.EncryptedPackageEnvelope.RightsManagementInformation%2A> property.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
+[!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,13 +608,13 @@
         <summary>Creates and returns an <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that uses an existing unencrypted package as the source of its content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A> method to instantiate an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
-  
+The following example shows how to use the <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A> method to instantiate an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
+[!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

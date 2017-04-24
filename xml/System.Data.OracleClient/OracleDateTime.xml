@@ -21,12 +21,12 @@
     <summary>Represents date and time data ranging in value from January 1, 4712 BC to December 31, 4712 AD.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To obtain an <xref:System.Data.OracleClient.OracleDateTime> object, call the <xref:System.Data.OracleClient.OracleDataReader.GetOracleDateTime%2A> method.  
-  
- The minimum valid date for an <xref:System.Data.OracleClient.OracleDateTime> structure is 1/1/0001 00:00:00. However, Oracle supports dates as early as January 1, 4712 BC. To bind BC dates, use a `String` parameter and the Oracle TO_DATE or TO_CHAR conversion functions for input and output parameters respectively.  
-  
+To obtain an <xref:System.Data.OracleClient.OracleDateTime> object, call the <xref:System.Data.OracleClient.OracleDataReader.GetOracleDateTime%2A> method.  
+ 
+The minimum valid date for an <xref:System.Data.OracleClient.OracleDateTime> structure is 1/1/0001 00:00:00. However, Oracle supports dates as early as January 1, 4712 BC. To bind BC dates, use a `String` parameter and the Oracle TO_DATE or TO_CHAR conversion functions for input and output parameters respectively.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -544,10 +544,10 @@
         <summary>Represents the maximum valid date value for an <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum valid date for an <xref:System.Data.OracleClient.OracleDateTime> structure is December, 31, 4712 AD.  
-  
+The maximum valid date for an <xref:System.Data.OracleClient.OracleDateTime> structure is December, 31, 4712 AD.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,10 +604,10 @@
         <summary>Represents the minimum valid date value for an <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The minimum valid date for an <xref:System.Data.OracleClient.OracleDateTime> structure is 1/1/0001 00:00:00. However, Oracle supports dates as early as January 1, 4712 BC. To bind BC dates, use a String parameter and the Oracle TO_DATE or TO_CHAR conversion functions for input and output parameters respectively.  
-  
+The minimum valid date for an <xref:System.Data.OracleClient.OracleDateTime> structure is 1/1/0001 00:00:00. However, Oracle supports dates as early as January 1, 4712 BC. To bind BC dates, use a String parameter and the Oracle TO_DATE or TO_CHAR conversion functions for input and output parameters respectively.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,10 +670,10 @@
         <summary>Represents a null value that can be assigned to the <see cref="P:System.Data.OracleClient.OracleDateTime.Value" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Null` functions as a constant for the <xref:System.Data.OracleClient.OracleDateTime> structure.  
-  
+`Null` functions as a constant for the <xref:System.Data.OracleClient.OracleDateTime> structure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -702,75 +702,75 @@
           <see langword="true" /> if the two values are equal, otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleDateTime.Equals%28System.Object%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static DateTime op_Explicit (System.Data.OracleClient.OracleDateTime x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTime op_Explicit(valuetype System.Data.OracleClient.OracleDateTime x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Explicit(System.Data.OracleClient.OracleDateTime)~System.DateTime" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.OracleClient.OracleDateTime" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleDateTime op_Explicit (string x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleDateTime op_Explicit(string x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Explicit(System.String)~System.Data.OracleClient.OracleDateTime" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.OracleClient.OracleDateTime</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThan (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_GreaterThan(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.OracleClient.OracleDateTime" />
-        <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
-      </Parameters>
-      <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if the first is greater than the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static DateTime op_Explicit (System.Data.OracleClient.OracleDateTime x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTime op_Explicit(valuetype System.Data.OracleClient.OracleDateTime x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Explicit(System.Data.OracleClient.OracleDateTime)~System.DateTime" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.OracleClient</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.DateTime</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.OracleClient.OracleDateTime" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleDateTime op_Explicit (string x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleDateTime op_Explicit(string x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Explicit(System.String)~System.Data.OracleClient.OracleDateTime" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.OracleClient</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.OracleClient.OracleDateTime</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.String" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_GreaterThan">
+     <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThan (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_GreaterThan(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.OracleClient</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.OracleClient.OracleDateTime" />
+       <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
+     </Parameters>
+     <Docs>
+       <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
+       <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
+       <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if the first is greater than the second.</summary>
+       <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleDateTime.GreaterThan%28System.Data.OracleClient.OracleDateTime%2CSystem.Data.OracleClient.OracleDateTime%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -798,31 +798,31 @@
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleDateTime.GreaterThanOrEqual%28System.Data.OracleClient.OracleDateTime%2CSystem.Data.OracleClient.OracleDateTime%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Inequality(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.OracleClient.OracleDateTime" />
-        <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
-      </Parameters>
-      <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if they are equal.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Inequality(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.OracleClient</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.OracleClient.OracleDateTime" />
+       <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
+     </Parameters>
+     <Docs>
+       <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
+       <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
+       <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if they are equal.</summary>
+       <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleDateTime.NotEquals%28System.Data.OracleClient.OracleDateTime%2CSystem.Data.OracleClient.OracleDateTime%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -850,31 +850,31 @@
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleDateTime.LessThan%28System.Data.OracleClient.OracleDateTime%2CSystem.Data.OracleClient.OracleDateTime%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThanOrEqual (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_LessThanOrEqual(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.OracleClient.OracleDateTime" />
-        <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
-      </Parameters>
-      <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if the first is less than or equal to the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_LessThanOrEqual">
+     <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThanOrEqual (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_LessThanOrEqual(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.OracleClient</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.OracleClient.OracleDateTime" />
+       <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
+     </Parameters>
+     <Docs>
+       <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
+       <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
+       <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if the first is less than or equal to the second.</summary>
+       <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleDateTime.LessThanOrEqual%28System.Data.OracleClient.OracleDateTime%2CSystem.Data.OracleClient.OracleDateTime%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>

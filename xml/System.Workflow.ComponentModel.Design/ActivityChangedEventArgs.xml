@@ -19,14 +19,14 @@
     <summary>Contains information about changes made to the activity associated with the designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- When changes are made to an activity associated with a designer, the <xref:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs> will contain information about the change.  
-  
+ 
+When changes are made to an activity associated with a designer, the <xref:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs> will contain information about the change.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <value>The <see cref="T:System.Workflow.ComponentModel.Activity" /> that has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets the Activity that has changed in the designer.  
-  
+Gets the Activity that has changed in the designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <value>A <see cref="T:System.ComponentModel.MemberDescriptor" /> that describes the member that has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.MemberDescriptor> contains information about the member of the Activity that has changed.  
-  
+The <xref:System.ComponentModel.MemberDescriptor> contains information about the member of the Activity that has changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <value>The new value of the member that has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- NewValue is an object that contains information about the new value.  
-  
+NewValue is an object that contains information about the new value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <value>The old value of the member that has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- OldValue is an object that contains information about the old value.  
-  
+OldValue is an object that contains information about the old value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

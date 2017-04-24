@@ -21,10 +21,10 @@
     <summary>Provides a default implementation of <see cref="T:System.AddIn.Contract.IContract" /> members.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Contracts define the types and methods used by the host and the add-in. All contracts must derive from <xref:System.AddIn.Contract.IContract>. This class provides the default implementation of <xref:System.AddIn.Contract.IContract> members.  
-  
+Contracts define the types and methods used by the host and the add-in. All contracts must derive from <xref:System.AddIn.Contract.IContract>. This class provides the default implementation of <xref:System.AddIn.Contract.IContract> members.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,10 +100,10 @@
         <summary>When overridden in an add-in-side adapter, releases native resources held by the adapter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the system when all the lifetime tokens that have been acquired from the current <xref:System.AddIn.Pipeline.ContractBase> instance have been revoked. Use this method to clean up any native resources held by the adapter, and to signal to the adapted views that they should do the same.  
-  
+This method is called by the system when all the lifetime tokens that have been acquired from the current <xref:System.AddIn.Pipeline.ContractBase> instance have been revoked. Use this method to clean up any native resources held by the adapter, and to signal to the adapted views that they should do the same.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <returns>The <see langword="this" /> pointer to an <see cref="T:System.AddIn.Contract.IContract" /> interface, or <see langword="null" /> if the contract is not implemented.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden.  
-  
+This method can be overridden.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -236,10 +236,10 @@
         <summary>Removes the specified token from the list of outstanding lifetime tokens.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the token is not in the list of outstanding lifetime tokens, this method throws an <xref:System.InvalidOperationException>.  
-  
+If the token is not in the list of outstanding lifetime tokens, this method throws an <xref:System.InvalidOperationException>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">

@@ -14,12 +14,12 @@
     <summary>Provides programmatic access to the output-cache providers that are specified in the configuration file for a Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Output caching stores the generated output of pages, controls, and HTTP responses in memory. Output caching enables you to cache different versions of content depending on the query string and on form-post parameters to a page, on browser type, or on the language of the user. You can configure ASP.NET to cache an output-cache entry for a specific period. You can also configure ASP.NET to evict a cache entry automatically based on an external event such as changes in the database that the cache depends on.  
-  
- The <xref:System.Web.Caching.OutputCache> class enables you to extend output caching. For example, you can configure one or more custom output-cache providers that target other storage devices such as local or remote disks, databases, cloud storage, and distributed cache engines.  
-  
+Output caching stores the generated output of pages, controls, and HTTP responses in memory. Output caching enables you to cache different versions of content depending on the query string and on form-post parameters to a page, on browser type, or on the language of the user. You can configure ASP.NET to cache an output-cache entry for a specific period. You can also configure ASP.NET to evict a cache entry automatically based on an external event such as changes in the database that the cache depends on.  
+ 
+The <xref:System.Web.Caching.OutputCache> class enables you to extend output caching. For example, you can configure one or more custom output-cache providers that target other storage devices such as local or remote disks, databases, cloud storage, and distributed cache engines.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <value>The name of the default provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, all HTTP responses, rendered pages, and controls use `AspNetInternalProvider`, the in-memory output cache provider. To use a different provider, set the `defaultProvider` attribute to the name of the alternative provider.  
-  
+By default, all HTTP responses, rendered pages, and controls use `AspNetInternalProvider`, the in-memory output cache provider. To use a different provider, set the `defaultProvider` attribute to the name of the alternative provider.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,10 +70,10 @@
         <returns>An object that contains the deserialized data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by output-cache providers that are operating under partial trust.  
-  
+This method is used by output-cache providers that are operating under partial trust.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The deserialized object that is returned by the method is not a valid output-cache type.</exception>
@@ -98,10 +98,10 @@
         <value>The collection of configured providers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You configure one or more custom output-cache providers that target other storage devices, such as local or remote disks, databases, cloud storage, and distributed cache engines. To configure custom output-cache providers, you add a provider to the collection that is represented by the <xref:System.Web.Caching.OutputCache.Providers%2A> property.  
-  
+You configure one or more custom output-cache providers that target other storage devices, such as local or remote disks, databases, cloud storage, and distributed cache engines. To configure custom output-cache providers, you add a provider to the collection that is represented by the <xref:System.Web.Caching.OutputCache.Providers%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <summary>Serializes output-cache data into binary data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by output-cache providers that are operating under partial trust.  
-  
+This method is used by output-cache providers that are operating under partial trust.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

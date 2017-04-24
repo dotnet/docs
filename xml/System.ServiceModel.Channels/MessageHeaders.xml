@@ -19,14 +19,14 @@
     <summary>Represents a collection of message headers for a message. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message header contains optional metadata that describe a message encapsulated by the <xref:System.ServiceModel.Channels.Message> class.  
-  
- A <xref:System.ServiceModel.Channels.Message> can have zero or more headers that are used as an extension mechanism to pass information in messages that are application-specific. You can use <xref:System.ServiceModel.Channels.Message.Headers%2A> to add message headers to a message by calling the <xref:System.ServiceModel.Channels.MessageHeaders.Add%2A> method.  
-  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a number of predefined message headers:  
-  
+A message header contains optional metadata that describe a message encapsulated by the <xref:System.ServiceModel.Channels.Message> class.  
+ 
+A <xref:System.ServiceModel.Channels.Message> can have zero or more headers that are used as an extension mechanism to pass information in messages that are application-specific. You can use <xref:System.ServiceModel.Channels.Message.Headers%2A> to add message headers to a message by calling the <xref:System.ServiceModel.Channels.MessageHeaders.Add%2A> method.  
+ 
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a number of predefined message headers:  
+ 
 |Header Name|Description|  
 |-----------------|-----------------|  
 |To|Contains the role that the message is targeting.|  
@@ -37,15 +37,15 @@
 |MessageID|Contains the unique ID of the message.|  
 |RelatesTo|Contains the IDs of messages that are related to this message.|  
 |ReplyTo|Contains the address of the node to which a reply should be sent for a request.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a basic client using the channel factory to send a message and read the action header from the reply.  
-  
- [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
- [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
-  
+The following code example demonstrates a basic client using the channel factory to send a message and read the action header from the reply.  
+ 
+[!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
+[!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -127,18 +127,18 @@
         <value>A description of how the message should be processed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the <`Action`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+This property corresponds to the <`Action`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a simple client using the channel factory to send a message and read the action header from the reply.  
-  
- [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
- [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
-  
+The following code example demonstrates a simple client using the channel factory to send a message and read the action header from the reply.  
+ 
+[!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
+[!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,10 +337,10 @@
         <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> of the node to which faults should be sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the <`FaultTo`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
-  
+This property corresponds to the <`FaultTo`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,10 +425,10 @@
         <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> of the node that sent the message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the <`From`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
-  
+This property corresponds to the <`From`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -479,10 +479,10 @@
         <returns>A message header at the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only uses the <xref:System.Runtime.Serialization.DataContractSerializer>. It does not try to detect from the type whether it should use the <xref:System.Runtime.Serialization.XmlObjectSerializer> or `DataContractSerializer`. To use the XML serializer, call <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.String%2CSystem.String%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> or obtain the reader at the contents and call directly into the serializer.  
-  
+This method only uses the <xref:System.Runtime.Serialization.DataContractSerializer>. It does not try to detect from the type whether it should use the <xref:System.Runtime.Serialization.XmlObjectSerializer> or `DataContractSerializer`. To use the XML serializer, call <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.String%2CSystem.String%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> or obtain the reader at the contents and call directly into the serializer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -544,10 +544,10 @@
         <returns>A message header with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only uses the <xref:System.Runtime.Serialization.DataContractSerializer>. It does not try to detect from the type whether it should use the <xref:System.Runtime.Serialization.XmlObjectSerializer> or the `DataContractSerializer`. To use the XML serializer, call <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.String%2CSystem.String%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> or obtain the reader at the contents and call directly into the serializer.  
-  
+This method only uses the <xref:System.Runtime.Serialization.DataContractSerializer>. It does not try to detect from the type whether it should use the <xref:System.Runtime.Serialization.XmlObjectSerializer> or the `DataContractSerializer`. To use the XML serializer, call <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.String%2CSystem.String%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> or obtain the reader at the contents and call directly into the serializer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -619,10 +619,10 @@
         <returns>A message header with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only uses the <xref:System.Runtime.Serialization.DataContractSerializer>. It does not try to detect from the type whether it should use the <xref:System.Runtime.Serialization.XmlObjectSerializer> or `DataContractSerializer`. To use the XML serializer, call <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.String%2CSystem.String%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> or obtain the reader at the contents and call directly into the serializer.  
-  
+This method only uses the <xref:System.Runtime.Serialization.DataContractSerializer>. It does not try to detect from the type whether it should use the <xref:System.Runtime.Serialization.XmlObjectSerializer> or `DataContractSerializer`. To use the XML serializer, call <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.String%2CSystem.String%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> or obtain the reader at the contents and call directly into the serializer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,10 +670,10 @@
           <see langword="true" /> if the recipients specified by <paramref name="actors" /> have properly interpreted and processed all the message headers marked with <see langword="MustUnderstand" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the message receiver cannot interpret the message headers marked with `MustUnderstand`, the message is not processed and an exception is thrown.  
-  
+If the message receiver cannot interpret the message headers marked with `MustUnderstand`, the message is not processed and an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -707,10 +707,10 @@
           <see langword="true" /> if the recipients specified by <paramref name="actors" /> have properly interpreted and processed all the message headers marked with <see langword="MustUnderstand" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the message receiver cannot interpret the message headers marked with `MustUnderstand`, the message is not processed and an exception is thrown.  
-  
+If the message receiver cannot interpret the message headers marked with `MustUnderstand`, the message is not processed and an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -780,10 +780,10 @@
         <value>The unique ID of the message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the <`MessageID`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
-  
+This property corresponds to the <`MessageID`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -825,10 +825,10 @@
         <value>The IDs of messages that are related to this message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the <`RelateTo`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
-  
+This property corresponds to the <`RelateTo`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -897,10 +897,10 @@
         <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> of the node to which a reply should be sent for a request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the <`ReplyTo`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
-  
+This property corresponds to the <`ReplyTo`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -965,10 +965,10 @@
         <value>A URI that contains the destination endpoint of a message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the <`To`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
-  
+This property corresponds to the <`To`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -991,10 +991,10 @@
         <value>A <see cref="T:System.ServiceModel.Channels.UnderstoodHeaders" /> that represents the message headers that must be understood.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the message receiver cannot interpret the message headers contained in this property, the message is not processed and an exception is thrown.  
-  
+If the message receiver cannot interpret the message headers contained in this property, the message is not processed and an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

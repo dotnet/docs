@@ -18,24 +18,24 @@
     <summary>An enumeration used to define access rights to data that is deployed by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example sets read-only access to all data deployed by the `AccountingService`.  
-  
+The following example sets read-only access to all data deployed by the `AccountingService`.  
+ 
 ```  
 namespace AccountingServiceWebApp  
 {  
-    public class AccountingService :  
-                DataService<DataModel>  
-    {  
-        config.SetResourceContainerAccessRule("*",   
-                                ResourceContainerRights.AllRead);  
-  
-    }  
+   public class AccountingService :  
+               DataService<DataModel>  
+   {  
+       config.SetResourceContainerAccessRule("*",   
+                               ResourceContainerRights.AllRead);  
+ 
+   }  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

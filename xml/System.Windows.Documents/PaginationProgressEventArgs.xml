@@ -52,10 +52,10 @@
         <value>The number of continuous pages that were paginated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.PaginationProgressEventArgs.Start%2A> property identifies the first page that was paginated.  
-  
+The <xref:System.Windows.Documents.PaginationProgressEventArgs.Start%2A> property identifies the first page that was paginated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,10 +77,10 @@
         <value>The page number (zero-based) of first page that was paginated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.PaginationProgressEventArgs.Count%2A> property specifies the number of continuous pages that were paginated.  
-  
+The <xref:System.Windows.Documents.PaginationProgressEventArgs.Count%2A> property specifies the number of continuous pages that were paginated.  
+ 
  ]]></format>
         </remarks>
       </Docs>

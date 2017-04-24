@@ -14,19 +14,19 @@
     <summary>Represents a perspective projection camera.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.PerspectiveCamera> specifies a projection of a [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] model to a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] visual surface. This projection includes perspective foreshortening.  In other words, the <xref:System.Windows.Media.Media3D.PerspectiveCamera> describes a frustrum whose sides converge toward a point on the horizon.  Objects closer to the camera appear larger, and objects farther from the camera appear smaller.  
+<xref:System.Windows.Media.Media3D.PerspectiveCamera> specifies a projection of a [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] model to a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] visual surface. This projection includes perspective foreshortening.  In other words, the <xref:System.Windows.Media.Media3D.PerspectiveCamera> describes a frustrum whose sides converge toward a point on the horizon.  Objects closer to the camera appear larger, and objects farther from the camera appear smaller.  
+ 
+The following diagram shows the difference between orthographic and perspective-foreshortened camera projections.  
+ 
+![Orthographic and perspective projection](~/add/media/camera-projections4.png "Orthographic and perspective projection")  
+ 
   
- The following diagram shows the difference between orthographic and perspective-foreshortened camera projections.  
-  
- ![Orthographic and perspective projection](~/add/media/camera-projections4.png "Orthographic and perspective projection")  
-  
-   
-  
+ 
 ## Examples  
- [!code-xml[3dgallery_snip#ApplyDrawingToMaterialExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialexamplewholepage)]  
-  
+[!code-xml[3dgallery_snip#ApplyDrawingToMaterialExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialexamplewholepage)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.PerspectiveCamera" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-xml[basic3d#Basic3DXAML3DN1](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn1)]  
-  
+[!code-xml[basic3d#Basic3DXAML3DN1](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,11 +76,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.PerspectiveCamera" /> class using the specified position, direction, and field of view.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[hittest3d#HitTest3D3DN12](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn12)]
- [!code-vb[hittest3d#HitTest3D3DN12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn12)]  
-  
+[!code-csharp[hittest3d#HitTest3D3DN12](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn12)]
+[!code-vb[hittest3d#HitTest3D3DN12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,12 +103,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,12 +131,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,23 +177,23 @@
         <value>The camera's horizontal field of view, in degrees. The default value is <c>45</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For <xref:System.Windows.Media.Media3D.PerspectiveCamera>, "field of view" is the horizontal bounds of the camera's projection between the camera's position and the image plane.  
-  
+For <xref:System.Windows.Media.Media3D.PerspectiveCamera>, "field of view" is the horizontal bounds of the camera's projection between the camera's position and the image plane.  
+ 
 <a name="dependencyPropertyInfo_FieldOfView"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier Field|<xref:System.Windows.Media.Media3D.PerspectiveCamera.FieldOfViewProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
-  
+[!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

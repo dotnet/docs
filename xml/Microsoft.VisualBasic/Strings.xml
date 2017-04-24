@@ -19,17 +19,17 @@
     <summary>The <see langword="Strings" /> module contains procedures used to perform string operations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This module supports the Visual Basic language keywords and run-time library members that manipulate strings.  
+This module supports the Visual Basic language keywords and run-time library members that manipulate strings.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to split a string at its spaces.  
-  
- [!code-vb[VbVbalrStrings#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#13)]  
-  
+The following example demonstrates how to split a string at its spaces.  
+ 
+[!code-vb[VbVbalrStrings#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#13)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,22 +55,22 @@
         <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
-  
- `AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
-  
+`Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
+ 
+`AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
+ 
 > [!NOTE]
 >  The `AscB` function of earlier versions of Visual Basic returns a code for a byte, rather than a character. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `AscB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
-  
- [!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
-  
+The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
+ 
+[!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,22 +96,22 @@
         <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
-  
- `AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
-  
+`Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
+ 
+`AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
+ 
 > [!NOTE]
 >  The `AscB` function of earlier versions of Visual Basic returns a code for a byte, rather than a character. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `AscB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
-  
- [!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
-  
+The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
+ 
+[!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,22 +137,22 @@
         <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
-  
- `AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
-  
+`Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
+ 
+`AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
+ 
 > [!NOTE]
 >  The `AscB` function of earlier versions of Visual Basic returns a code for a byte, rather than a character. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `AscB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
-  
- [!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
-  
+The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
+ 
+[!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,22 +178,22 @@
         <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
-  
- `AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
-  
+`Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
+ 
+`AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
+ 
 > [!NOTE]
 >  The `AscB` function of earlier versions of Visual Basic returns a code for a byte, rather than a character. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `AscB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
-  
- [!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
-  
+The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
+ 
+[!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,28 +219,28 @@
         <returns>Returns the character associated with the specified character code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
-  
- `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
-  
- The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
-  
- `ChrW` takes `CharCode` as a Unicode code point. The range is independent of the culture and code page settings for the current thread. Values from -32768 through -1 are treated the same as values in the range +32768 through +65535.  
-  
- Numbers from 0 through 31 are the same as standard nonprintable ASCII codes. For example, `Chr(10)` returns a line feed character.  
-  
+The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
+ 
+`Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
+ 
+The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
+ 
+`ChrW` takes `CharCode` as a Unicode code point. The range is independent of the culture and code page settings for the current thread. Values from -32768 through -1 are treated the same as values in the range +32768 through +65535.  
+ 
+Numbers from 0 through 31 are the same as standard nonprintable ASCII codes. For example, `Chr(10)` returns a line feed character.  
+ 
 > [!NOTE]
 >  The `ChrB` function in earlier versions of Visual Basic returns a single byte. It is used primarily for converting strings in double-byte character set (DBCS) applications. All strings in Visual Basic and the .NET Framework are in Unicode, and `ChrB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Chr` function to return the character associated with the specified character code.  
-  
- [!code-vb[VbVbalrStrings#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#7)]  
-  
+The following example uses the `Chr` function to return the character associated with the specified character code.  
+ 
+[!code-vb[VbVbalrStrings#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -268,28 +268,28 @@
         <returns>Returns the character associated with the specified character code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
-  
- `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
-  
- The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
-  
- `ChrW` takes `CharCode` as a Unicode code point. The range is independent of the culture and code page settings for the current thread. Values from -32768 through -1 are treated the same as values in the range +32768 through +65535.  
-  
- Numbers from 0 through 31 are the same as standard nonprintable ASCII codes. For example, `Chr(10)` returns a line feed character.  
-  
+The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
+ 
+`Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
+ 
+The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
+ 
+`ChrW` takes `CharCode` as a Unicode code point. The range is independent of the culture and code page settings for the current thread. Values from -32768 through -1 are treated the same as values in the range +32768 through +65535.  
+ 
+Numbers from 0 through 31 are the same as standard nonprintable ASCII codes. For example, `Chr(10)` returns a line feed character.  
+ 
 > [!NOTE]
 >  The `ChrB` function in earlier versions of Visual Basic returns a single byte. It is used primarily for converting strings in double-byte character set (DBCS) applications. All strings in Visual Basic and the .NET Framework are in Unicode, and `ChrB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Chr` function to return the character associated with the specified character code.  
-  
- [!code-vb[VbVbalrStrings#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#7)]  
-  
+The following example uses the `Chr` function to return the character associated with the specified character code.  
+ 
+[!code-vb[VbVbalrStrings#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -329,27 +329,27 @@
         <returns>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no matches of `Match` are found within `Source`, the `Filter` function returns an empty array. An error occurs if `Source` is set to `Nothing` or is not a one-dimensional array.  
-  
- The array returned by the `Filter` function contains only enough elements to contain the number of matched items.  
-  
- The `Compare` argument can have the following values.  
-  
+If no matches of `Match` are found within `Source`, the `Filter` function returns an empty array. An error occurs if `Source` is set to `Nothing` or is not a one-dimensional array.  
+ 
+The array returned by the `Filter` function contains only enough elements to contain the number of matched items.  
+ 
+The `Compare` argument can have the following values.  
+ 
 |Constant|Description|  
 |-|-|  
 |Constant|Description|  
 |`CompareMethod.Binary`|Performs a binary comparison|  
 |`CompareMethod.Text`|Performs a textual comparison|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the use of the `Filter` function.  
-  
- [!code-vb[VbVbalrStrings#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#24)]  
-  
+This example demonstrates the use of the `Filter` function.  
+ 
+[!code-vb[VbVbalrStrings#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#24)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -389,26 +389,26 @@
         <returns>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no matches of `Match` are found within `Source`, the `Filter` function returns an empty array. An error occurs if `Source` is set to `Nothing` or is not a one-dimensional array.  
-  
- The array returned by the `Filter` function contains only enough elements to contain the number of matched items.  
-  
- The `Compare` argument can have the following values.  
-  
+If no matches of `Match` are found within `Source`, the `Filter` function returns an empty array. An error occurs if `Source` is set to `Nothing` or is not a one-dimensional array.  
+ 
+The array returned by the `Filter` function contains only enough elements to contain the number of matched items.  
+ 
+The `Compare` argument can have the following values.  
+ 
 |Constant|Description|  
 |-|-|  
 |`CompareMethod.Binary`|Performs a binary comparison|  
 |`CompareMethod.Text`|Performs a textual comparison|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the use of the `Filter` function.  
-  
- [!code-vb[VbVbalrStrings#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#24)]  
-  
+This example demonstrates the use of the `Filter` function.  
+ 
+[!code-vb[VbVbalrStrings#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#24)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -438,34 +438,34 @@
         <returns>Returns a string formatted according to instructions contained in a format <see langword="String" /> expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.String.Format%2A?displayProperty=fullName> method also provides similar functionality.  
-  
- If you are formatting a nonlocalized numeric string, you should use a user-defined numeric format to ensure that you get the look you want.  
-  
- If you try to format a number without specifying `Style`, the `Format` function provides functionality similar to the `Str` function, although it is internationally aware. However, positive numbers formatted as strings using the `Format` function don't include a leading space reserved for the sign of the value; those converted using the `Str` function retain the leading space.  
-  
+The <xref:System.String.Format%2A?displayProperty=fullName> method also provides similar functionality.  
+ 
+If you are formatting a nonlocalized numeric string, you should use a user-defined numeric format to ensure that you get the look you want.  
+ 
+If you try to format a number without specifying `Style`, the `Format` function provides functionality similar to the `Str` function, although it is internationally aware. However, positive numbers formatted as strings using the `Format` function don't include a leading space reserved for the sign of the value; those converted using the `Str` function retain the leading space.  
+ 
 ## Different Formats for Different Numeric Values  
- A user-defined format expression for numbers can have from one to three sections separated by semicolons. If the `Style` argument of the `Format` function contains one of the predefined numeric formats, only one section is allowed.  
-  
+A user-defined format expression for numbers can have from one to three sections separated by semicolons. If the `Style` argument of the `Format` function contains one of the predefined numeric formats, only one section is allowed.  
+ 
 |If you use|This is the result|  
 |-|-|  
 |One section only|The format expression applies to all values.|  
 |Two sections|The first section applies to positive values and zeros; the second applies to negative values.|  
 |Three sections|The first section applies to positive values, the second applies to negative values, and the third applies to zeros.|  
-  
- The following example has two sections: the first defines the format for positive values and zeros; the second section defines the format for negative values. Since the `Style` argument of the `Format` function takes a string, it is enclosed by quotation marks.  
-  
- [!code-vb[VbVbalrStrings#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#18)]  
-  
- If you include semicolons with nothing between them, the missing section is printed using the format of the positive value. For example, the following format displays positive and negative values using the format in the first section and displays `Zero` if the value is zero.  
-  
- [!code-vb[VbVbalrStrings#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#19)]  
-  
+ 
+The following example has two sections: the first defines the format for positive values and zeros; the second section defines the format for negative values. Since the `Style` argument of the `Format` function takes a string, it is enclosed by quotation marks.  
+ 
+[!code-vb[VbVbalrStrings#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#18)]  
+ 
+If you include semicolons with nothing between them, the missing section is printed using the format of the positive value. For example, the following format displays positive and negative values using the format in the first section and displays `Zero` if the value is zero.  
+ 
+[!code-vb[VbVbalrStrings#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#19)]  
+ 
 ## Predefined Numeric Formats  
- The following table identifies the predefined numeric format names. These may be used by name as the `Style` argument for the `Format` function:  
-  
+The following table identifies the predefined numeric format names. These may be used by name as the `Style` argument for the `Format` function:  
+ 
 |Format name|Description|  
 |-|-|  
 |`General Number`, `G`, or `g`|Displays number with no thousand separator.<br /><br /> For example, `Format(&H3FA, "g")` returns `1018`.|  
@@ -481,13 +481,13 @@
 |`Yes/No`|Displays `No` if number is 0; otherwise, displays `Yes`.<br /><br /> For example, `Format(0, "Yes/No")` returns `No`.|  
 |`True/False`|Displays `False` if number is 0; otherwise, displays `True`.<br /><br /> For example, `Format(1, "True/False")` returns `True`.|  
 |`On/Off`|Displays `Off` if number is 0; otherwise, displays `On`.<br /><br /> For example, `Format(1, "On/Off")` returns `On`.|  
-  
+ 
 ### Smart Device Developer Notes  
- The `Yes/No`, `True/False`, and `On/Off` formats are not supported.  
-  
+The `Yes/No`, `True/False`, and `On/Off` formats are not supported.  
+ 
 ## User-Defined Numeric Formats  
- The following table identifies characters you can use to create user-defined number formats. These may be used to build the `Style` argument for the `Format` function:  
-  
+The following table identifies characters you can use to create user-defined number formats. These may be used to build the `Style` argument for the `Format` function:  
+ 
 |Character|Description|  
 |-|-|  
 |None|Displays the number with no formatting.|  
@@ -502,10 +502,10 @@
 |`-` `+` `$` ( )|Literal characters. These characters are displayed exactly as typed in the format string. To display a character other than one of those listed, precede it with a backslash (`\`) or enclose it in double quotation marks (" ").|  
 |(`\`)|Displays the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (`\`). The backslash itself isn't displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (`\\`).<br /><br /> Examples of characters that can't be displayed as literal characters are the date-formatting and time-formatting characters (`a`, `c`, `d`, `h`, `m`, `n`, `p`, `q`, `s`, `t`, `w`, `y`, `/`, and `:`), the numeric-formatting characters (`#`, `0`, `%`, `E`, `e`, comma, and period), and the string-formatting characters (`@`, `&`, `<`, `>`, and `!`).|  
 |(`"``ABC``"`)|Displays the string inside the double quotation marks (" "). To include a string in the style argument from within code, you must use `Chr(34)` to enclose the text (`34` is the character code for a quotation mark (")).|  
-  
+ 
 ### Legacy Code Example  
- The following table contains some sample format expressions for numbers. (These examples all assume that your system's locale setting is English-U.S.) The first column contains the format strings for the `Style` argument of the `Format` function; the other columns contain the resulting output if the formatted data has the value given in the column headings.  
-  
+The following table contains some sample format expressions for numbers. (These examples all assume that your system's locale setting is English-U.S.) The first column contains the format strings for the `Style` argument of the `Format` function; the other columns contain the resulting output if the formatted data has the value given in the column headings.  
+ 
 |Format (`Style`)|"5" formatted as|"-5" formatted as|"0.5" formatted as|  
 |-|-|-|-|  
 |`Zero-length string ("")`|`5`|`-5`|`0.5`|  
@@ -518,10 +518,10 @@
 |`0.00%`|`500.00%`|`-500.00%`|`50.00%`|  
 |`0.00E+00`|`5.00E+00`|`-5.00E+00`|`5.00E-01`|  
 |`0.00E-00`|`5.00E00`|`-5.00E00`|`5.00E-01`|  
-  
+ 
 ## Predefined Date/Time Formats  
- The following table identifies the predefined date and time format names. These may be used by name as the style argument for the `Format` function:  
-  
+The following table identifies the predefined date and time format names. These may be used by name as the style argument for the `Format` function:  
+ 
 |Format Name|Description|  
 |-|-|  
 |`General Date`, or `G`|Displays a date and/or time. For example, `3/12/2008 11:07:31 AM`. Date display is determined by your application's current culture value.|  
@@ -538,12 +538,12 @@
 |`u`|Formats the date and time as a GMT sortable index. For example, `2008-03-12 11:07:31Z`.|  
 |`U`|Formats the date and time with the long date and long time as GMT. For example, `Wednesday, March 12, 2008 6:07:31 PM`.|  
 |`Y`, `y`|Formats the date as the year and month. For example, `March, 2008`.<br /><br /> The `Y` and `y` characters display the year in a user-defined date format.|  
-  
- For more information about the application's current culture information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
-  
+ 
+For more information about the application's current culture information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+ 
 ## User-Defined Date/Time Formats  
- The following table shows characters you can use to create user-defined date/time formats. Unlike in earlier versions of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], these format characters are case-sensitive.  
-  
+The following table shows characters you can use to create user-defined date/time formats. Unlike in earlier versions of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], these format characters are case-sensitive.  
+ 
 |Character|Description|  
 |-|-|  
 |(`:`)|Time separator. In some locales, other characters may be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character that is used as the time separator in formatted output is determined by your application's current culture value.|  
@@ -576,10 +576,10 @@
 |`z`|Displays the timezone offset without a leading zero (for example, `-8`). Use `%z` if this is the only character in your user-defined numeric format.|  
 |`zz`|Displays the timezone offset with a leading zero (for example, `-08`)|  
 |`zzz`|Displays the full timezone offset (for example, `-08:00`)|  
-  
+ 
 ### Legacy Code Example  
- The following are examples of user-defined date and time formats for `December 7, 1958, 8:50 PM, 35 seconds`:  
-  
+The following are examples of user-defined date and time formats for `December 7, 1958, 8:50 PM, 35 seconds`:  
+ 
 |Format|Displays|  
 |-|-|  
 |`M/d/yy`|`12/7/58`|  
@@ -592,20 +592,20 @@
 |`H:mm`|`20:50`|  
 |`H:mm:ss`|`20:50:35`|  
 |`M/d/yyyy H:mm`|`12/7/1958 20:50`|  
-  
+ 
 ### Smart Device Developer Notes  
- The minimum time resolution for a device is determined by the manufacturer of the device. If the time resolution for the device is coarse enough, the `f` format character returns 0 when run on that device.  
+The minimum time resolution for a device is determined by the manufacturer of the device. If the time resolution for the device is coarse enough, the `f` format character returns 0 when run on that device.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows various uses of the `Format` function to format values using both `String` formats and user-defined formats. For the date separator (`/`), time separator (`:`), and the AM/PM indicators (`t` and `tt`), the actual formatted output displayed by your system depends on the locale settings the code is using. When times and dates are displayed in the development environment, the short time format and short date format of the code locale are used.  
-  
+This example shows various uses of the `Format` function to format values using both `String` formats and user-defined formats. For the date separator (`/`), time separator (`:`), and the AM/PM indicators (`t` and `tt`), the actual formatted output displayed by your system depends on the locale settings the code is using. When times and dates are displayed in the development environment, the short time format and short date format of the code locale are used.  
+ 
 > [!NOTE]
 >  For locales that use a 24-hour clock, the AM/PM indicators (`t` and `tt`) display nothing.  
-  
- [!code-vb[VbVbalrStrings#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#27)]  
-  
+ 
+[!code-vb[VbVbalrStrings#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -639,30 +639,30 @@
         <returns>Returns an expression formatted as a currency value using the currency symbol defined in the system control panel.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When one or more optional arguments are omitted, the computer's matching regional-settings values are used instead.  
-  
- The position of the currency symbol relative to the currency value is determined by the system's regional settings.  
-  
+When one or more optional arguments are omitted, the computer's matching regional-settings values are used instead.  
+ 
+The position of the currency symbol relative to the currency value is determined by the system's regional settings.  
+ 
 > [!NOTE]
 >  All settings information comes from the locale of the application. By default, that will be the locale set in the control panel. However, it may be changed programmatically by using the .NET Framework, except leading zero, which comes from the `Number` tab.  
-  
- The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments take the following TriState enumeration values.  
-  
+ 
+The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments take the following TriState enumeration values.  
+ 
 |Value|Description|  
 |-|-|  
 |`TriState.True`|True|  
 |`TriState.False`|False|  
 |`TriState.UseDefault`|The computer's regional settings|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the use of the `FormatCurrency` function.  
-  
- [!code-vb[VbVbalrStrings#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#32)]  
-  
+The following example illustrates the use of the `FormatCurrency` function.  
+ 
+[!code-vb[VbVbalrStrings#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#32)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Number of digits after decimal point is greater than 99.</exception>
@@ -692,15 +692,15 @@
         <returns>Returns a string expression representing a date/time value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Date` data type always contains both date and time information. For purposes of type conversion, Visual Basic considers 1/1/1 (January 1 of the year 1) to be a neutral value for the date, and 00:00:00 (midnight) to be a neutral value for the time. If you format a `Date` value as a date/time string, `FormatDateTime` does not include neutral values in the resulting string. For example, if you convert #1/1/0001 9:30:00# to a string, the result is "9:30:00 AM"; the date information is suppressed. However, the date information is still present in the original `Date` value and can be recovered with functions such as `DatePart`.  
-  
+The `Date` data type always contains both date and time information. For purposes of type conversion, Visual Basic considers 1/1/1 (January 1 of the year 1) to be a neutral value for the date, and 00:00:00 (midnight) to be a neutral value for the time. If you format a `Date` value as a date/time string, `FormatDateTime` does not include neutral values in the resulting string. For example, if you convert #1/1/0001 9:30:00# to a string, the result is "9:30:00 AM"; the date information is suppressed. However, the date information is still present in the original `Date` value and can be recovered with functions such as `DatePart`.  
+ 
 > [!NOTE]
 >  If you pass the `Expression` argument as a `String` literal, `FormatDateTime` interprets it according to the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> setting of your application. However, if you pass it as a `Date` literal, use the format #mm/dd/yyyy#, because `FormatDateTime` always interprets a `Date` literal according to the English (US) culture. This is necessary because, if an application is developed and coded using `Date` literals from one culture, but is then executed on a platform with a different culture, the `Date` literals could be parsed incorrectly.  
-  
- The `NamedFormat` argument has the following settings.  
-  
+ 
+The `NamedFormat` argument has the following settings.  
+ 
 |Constant|Description|  
 |-|-|  
 |`DateFormat.GeneralDate`|Display a date and/or time. Display a date part as a short date. If there is a time part, display it as a long time. If present, both parts display.|  
@@ -708,14 +708,14 @@
 |`DateFormat.ShortDate`|Display a date using the short date format specified in your computer's regional settings.|  
 |`DateFormat.LongTime`|Display a time using the time format specified in your computer's regional settings.|  
 |`DateFormat.ShortTime`|Display a time using the 24-hour format (hh:mm).|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the use of the `FormatDateTime` function.  
-  
- [!code-vb[VbVbalrStrings#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#3)]  
-  
+This example demonstrates the use of the `FormatDateTime` function.  
+ 
+[!code-vb[VbVbalrStrings#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -751,28 +751,28 @@
         <returns>Returns an expression formatted as a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When one or more optional arguments are omitted the values for omitted arguments are provided by the locale settings.  
-  
+When one or more optional arguments are omitted the values for omitted arguments are provided by the locale settings.  
+ 
 > [!NOTE]
 >  All settings information comes from the locale of the application. By default, that will be the locale set in the control panel. However, it may be changed programmatically by using the .NET Framework.  
-  
- The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments have the following settings.  
-  
+ 
+The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments have the following settings.  
+ 
 |Constant|Description|  
 |-|-|  
 |`TriState.True`|True|  
 |`TriState.False`|False|  
 |`TriState.UseDefault`|The computer's regional settings|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the `FormatNumber` function.  
-  
- [!code-vb[VbVbalrStrings#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#15)]  
-  
+This example demonstrates the `FormatNumber` function.  
+ 
+[!code-vb[VbVbalrStrings#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#15)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Type is not numeric.</exception>
@@ -807,28 +807,28 @@
         <returns>Returns an expression formatted as a percentage (that is, multiplied by 100) with a trailing % character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When one or more optional arguments are omitted, the values for omitted arguments are provided by the locale settings.  
-  
+When one or more optional arguments are omitted, the values for omitted arguments are provided by the locale settings.  
+ 
 > [!NOTE]
 >  All settings information comes from the locale of the application. By default, that will be the locale set in the control panel. However, it may be changed programmatically by using the .NET Framework.  
-  
- The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments have the following settings.  
-  
+ 
+The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments have the following settings.  
+ 
 |Constant|Description|  
 |-|-|  
 |`TriState.True`|True|  
 |`TriState.False`|False|  
 |`TriState.Default`|The computer's regional settings|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example illustrates the use of the `FormatPercent` function.  
-  
- [!code-vb[VbVbalrStrings#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#28)]  
-  
+This example illustrates the use of the `FormatPercent` function.  
+ 
+[!code-vb[VbVbalrStrings#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#28)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Type is not numeric.</exception>
@@ -858,17 +858,17 @@
           <see langword="Char" /> value representing the character from the specified index in the supplied string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `Index` is less than 1 or greater than the index of the last character in `str`, an `ArgumentException` is thrown.  
+If `Index` is less than 1 or greater than the index of the last character in `str`, an `ArgumentException` is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to use the `GetChar` function to return a character from a specified index in a `String`.  
-  
- [!code-vb[VbVbalrStrings#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#23)]  
-  
+This example shows how to use the `GetChar` function to return a character from a specified index in a `String`.  
+ 
+[!code-vb[VbVbalrStrings#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#23)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -953,27 +953,27 @@
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the `InStr` function is used when parsing strings.  
-  
+Typically, the `InStr` function is used when parsing strings.  
+ 
 > [!NOTE]
 >  The `InStrB` function in previous versions of Visual Basic returns a number of bytes rather than a character position. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `InStrB` is no longer supported.  
-  
- The `Compare` argument settings are:  
-  
+ 
+The `Compare` argument settings are:  
+ 
 |Constant|Value|Description|  
 |-|-|-|  
 |`Binary`|0|Performs a binary comparison|  
 |`Text`|1|Performs a text comparison|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `InStr` function to return the position of the first occurrence of one string within another.  
-  
- [!code-vb[VbVbalrStrings#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#8)]  
-  
+This example uses the `InStr` function to return the position of the first occurrence of one string within another.  
+ 
+[!code-vb[VbVbalrStrings#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1062,27 +1062,27 @@
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the `InStr` function is used when parsing strings.  
-  
+Typically, the `InStr` function is used when parsing strings.  
+ 
 > [!NOTE]
 >  The `InStrB` function in previous versions of Visual Basic returns a number of bytes rather than a character position. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `InStrB` is no longer supported.  
-  
- The `Compare` argument settings are:  
-  
+ 
+The `Compare` argument settings are:  
+ 
 |Constant|Value|Description|  
 |-|-|-|  
 |`Binary`|0|Performs a binary comparison|  
 |`Text`|1|Performs a text comparison|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `InStr` function to return the position of the first occurrence of one string within another.  
-  
- [!code-vb[VbVbalrStrings#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#8)]  
-  
+This example uses the `InStr` function to return the position of the first occurrence of one string within another.  
+ 
+[!code-vb[VbVbalrStrings#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1173,24 +1173,24 @@
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the syntax for the `InStrRev` function is not the same as the syntax for the `InStr` function.  
-  
- The `Compare` argument can have the following values.  
-  
+Note that the syntax for the `InStrRev` function is not the same as the syntax for the `InStr` function.  
+ 
+The `Compare` argument can have the following values.  
+ 
 |Constant|Description|  
 |-|-|  
 |`Binary`|Performs a binary comparison.|  
 |`Text`|Performs a textual comparison.|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the use of the `InStrRev` function.  
-  
- [!code-vb[VbVbalrStrings#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#26)]  
-  
+This example demonstrates the use of the `InStrRev` function.  
+ 
+[!code-vb[VbVbalrStrings#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#26)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1220,17 +1220,17 @@
         <returns>Returns a string created by joining a number of substrings contained in an array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is a parity between the `Join` and `Split` functions. The `Join` function takes an array of strings and joins them using a delimiter string, to return a single string. The `Split` function takes a string and separates it at the delimiter, to return an array of strings. However, a key difference is that `Join` can concatenate strings with any delimiter string, `Split` can only separate strings using a single character delimiter.  
+There is a parity between the `Join` and `Split` functions. The `Join` function takes an array of strings and joins them using a delimiter string, to return a single string. The `Split` function takes a string and separates it at the delimiter, to return an array of strings. However, a key difference is that `Join` can concatenate strings with any delimiter string, `Split` can only separate strings using a single character delimiter.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the `Join` function to create a list from several strings.  
-  
- [!code-vb[VbVbalrStrings#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#10)]  
-  
+The following example demonstrates how to use the `Join` function to create a list from several strings.  
+ 
+[!code-vb[VbVbalrStrings#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1260,17 +1260,17 @@
         <returns>Returns a string created by joining a number of substrings contained in an array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is a parity between the `Join` and `Split` functions. The `Join` function takes an array of strings and joins them using a delimiter string, to return a single string. The `Split` function takes a string and separates it at the delimiter, to return an array of strings. However, a key difference is that `Join` can concatenate strings with any delimiter string, `Split` can only separate strings using a single character delimiter.  
+There is a parity between the `Join` and `Split` functions. The `Join` function takes an array of strings and joins them using a delimiter string, to return a single string. The `Split` function takes a string and separates it at the delimiter, to return an array of strings. However, a key difference is that `Join` can concatenate strings with any delimiter string, `Split` can only separate strings using a single character delimiter.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the `Join` function to create a list from several strings.  
-  
- [!code-vb[VbVbalrStrings#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#10)]  
-  
+The following example demonstrates how to use the `Join` function to create a list from several strings.  
+ 
+[!code-vb[VbVbalrStrings#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1298,22 +1298,22 @@
         <returns>Returns a string or character converted to lowercase.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only uppercase letters are converted to lowercase; all lowercase letters and nonletter characters remain unchanged.  
-  
- This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
-  
+Only uppercase letters are converted to lowercase; all lowercase letters and nonletter characters remain unchanged.  
+ 
+This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+ 
 > [!IMPORTANT]
 >  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `LCase` function to return a lowercase version of a string.  
-  
- [!code-vb[VbVbalrStrings#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#12)]  
-  
+This example uses the `LCase` function to return a lowercase version of a string.  
+ 
+[!code-vb[VbVbalrStrings#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1339,22 +1339,22 @@
         <returns>Returns a string or character converted to lowercase.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only uppercase letters are converted to lowercase; all lowercase letters and nonletter characters remain unchanged.  
-  
- This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
-  
+Only uppercase letters are converted to lowercase; all lowercase letters and nonletter characters remain unchanged.  
+ 
+This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+ 
 > [!IMPORTANT]
 >  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `LCase` function to return a lowercase version of a string.  
-  
- [!code-vb[VbVbalrStrings#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#12)]  
-  
+This example uses the `LCase` function to return a lowercase version of a string.  
+ 
+[!code-vb[VbVbalrStrings#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1382,20 +1382,20 @@
         <returns>Returns a string containing a specified number of characters from the left side of a string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine the number of characters in `str`, use the `Len` function. If used in a Windows Forms application, or any other class that has a `Left` property, you must fully qualify the function with `Microsoft.VisualBasic.Left`.  
-  
+To determine the number of characters in `str`, use the `Len` function. If used in a Windows Forms application, or any other class that has a `Left` property, you must fully qualify the function with `Microsoft.VisualBasic.Left`.  
+ 
 > [!NOTE]
 >  The `LeftB` function in previous versions of Visual Basic returns a string in bytes rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LeftB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the use of the `Left` function to return a substring of a given `String`. In a class that has a `Left` property, it may be necessary to fully qualify the `Left` function.  
-  
- [!code-vb[VbVbalrStrings#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#20)]  
-  
+This example demonstrates the use of the `Left` function to return a substring of a given `String`. In a class that has a `Left` property, it may be necessary to fully qualify the `Left` function.  
+ 
+[!code-vb[VbVbalrStrings#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1423,28 +1423,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1470,28 +1470,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1517,28 +1517,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1564,28 +1564,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1611,28 +1611,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1658,28 +1658,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1705,28 +1705,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1752,28 +1752,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1799,28 +1799,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1851,28 +1851,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1903,28 +1903,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
         <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Byte)" />
@@ -1951,28 +1951,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1998,28 +1998,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2050,28 +2050,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
         <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Int16)" />
@@ -2103,28 +2103,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
         <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Int32)" />
@@ -2156,28 +2156,28 @@
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
-  
- The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
-  
+With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+ 
+The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+ 
 > [!NOTE]
 >  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
-  
+ 
 > [!NOTE]
 >  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
-  
+ 
 ## Smart Device Developer Notes  
- The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `Len` to return the number of characters in a string.  
-  
- [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
-  
+This example uses `Len` to return the number of characters in a string.  
+ 
+[!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+ 
  ]]></format>
         </remarks>
         <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Int64)" />
@@ -2206,17 +2206,17 @@
         <returns>Returns a left-aligned string containing the specified string adjusted to the specified length.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified string is longer than the specified length, the returned string is shortened to the specified length. If the specified string is shorter than the specified length, spaces are added to the right end of the returned string to produce the appropriate length.  
+If the specified string is longer than the specified length, the returned string is shortened to the specified length. If the specified string is shorter than the specified length, spaces are added to the right end of the returned string to produce the appropriate length.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the use of the `LSet` function.  
-  
- [!code-vb[VbVbalrStrings#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#11)]  
-  
+This example demonstrates the use of the `LSet` function.  
+ 
+[!code-vb[VbVbalrStrings#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2242,17 +2242,17 @@
         <returns>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `LTrim`, `RTrim`, and `Trim` functions remove spaces from the ends of strings.  
+The `LTrim`, `RTrim`, and `Trim` functions remove spaces from the ends of strings.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `LTrim` function to strip leading spaces and the `RTrim` function to strip trailing spaces from a string variable. It uses the `Trim` function to strip both types of spaces.  
-  
- [!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
-  
+This example uses the `LTrim` function to strip leading spaces and the `RTrim` function to strip trailing spaces from a string variable. It uses the `Trim` function to strip both types of spaces.  
+ 
+[!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2280,22 +2280,22 @@
         <returns>A string that consists of all the characters starting from the specified position in the string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine the number of characters in `str`, use the `Len` function.  
-  
- Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](~/docs/visual-basic/language-reference/statements/mid-statement.md).  
-  
+To determine the number of characters in `str`, use the `Len` function.  
+ 
+Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](~/docs/visual-basic/language-reference/statements/mid-statement.md).  
+ 
 > [!NOTE]
 >  The `MidB` function in previous versions of Visual Basic returns a string in bytes rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The last line in this example uses this overload of the `Mid` function to return the fifth and subsequent characters from a string.  
-  
- [!code-vb[VbVbalrStrings#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#17)]  
-  
+The last line in this example uses this overload of the `Mid` function to return the fifth and subsequent characters from a string.  
+ 
+[!code-vb[VbVbalrStrings#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#17)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2327,22 +2327,22 @@
         <returns>A string that consists of the specified number of characters starting from the specified position in the string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine the number of characters in `str`, use the `Len` function.  
-  
- Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](~/docs/visual-basic/language-reference/statements/mid-statement.md).  
-  
+To determine the number of characters in `str`, use the `Len` function.  
+ 
+Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](~/docs/visual-basic/language-reference/statements/mid-statement.md).  
+ 
 > [!NOTE]
 >  The `MidB` function in previous versions of Visual Basic returns a string in bytes rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The first two `Mid` functions in this example return the specified number of characters from a string, starting from the given positions. (The last function illustrates the <xref:Microsoft.VisualBasic.Strings.Mid%28System.String%2CSystem.Int32%29> overload and only specifies the starting point for the string extraction.)  
-  
- [!code-vb[VbVbalrStrings#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#17)]  
-  
+The first two `Mid` functions in this example return the specified number of characters from a string, starting from the given positions. (The last function illustrates the <xref:Microsoft.VisualBasic.Strings.Mid%28System.String%2CSystem.Int32%29> overload and only specifies the starting point for the string extraction.)  
+ 
+[!code-vb[VbVbalrStrings#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#17)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2430,28 +2430,28 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value of the `Replace` function is a string that begins at the position specified by `Start` and concludes at the end of the `Expression` string, with the substitutions made as specified by the `Find` and `Replace` values.  
-  
- The `Compare` argument can have the following values.  
-  
+The return value of the `Replace` function is a string that begins at the position specified by `Start` and concludes at the end of the `Expression` string, with the substitutions made as specified by the `Find` and `Replace` values.  
+ 
+The `Compare` argument can have the following values.  
+ 
 |Constant|Description|  
 |-|-|  
 |`Binary`|Performs a binary comparison|  
 |`Text`|Performs a textual comparison|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the `Replace` function.  
-  
+This example demonstrates the `Replace` function.  
+ 
 ```vb  
 Dim TestString As String = "Shopping List"  
 ' Returns "Shipping List".  
 Dim aString As String = Replace(TestString, "o", "i")  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2481,20 +2481,20 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string containing a specified number of characters from the right side of a string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine the number of characters in `str`, use the `Len` function. If used in a Windows Form, or any other class that has a `Right` property, you must fully qualify the function with `Microsoft.VisualBasic.Strings.Right`.  
-  
+To determine the number of characters in `str`, use the `Len` function. If used in a Windows Form, or any other class that has a `Right` property, you must fully qualify the function with `Microsoft.VisualBasic.Strings.Right`.  
+ 
 > [!NOTE]
 >  The `RightB` function in earlier versions of Visual Basic returns a string in bytes, rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `RightB` is no longer supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the use of the `Right` function to return a substring of a given `String`. In a class that has a `Right` property, it may be necessary to fully qualify the `Right` function.  
-  
- [!code-vb[VbVbalrStrings#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#21)]  
-  
+This example demonstrates the use of the `Right` function to return a substring of a given `String`. In a class that has a `Right` property, it may be necessary to fully qualify the `Right` function.  
+ 
+[!code-vb[VbVbalrStrings#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#21)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2524,17 +2524,17 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a right-aligned string containing the specified string adjusted to the specified length.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `Source` is longer than `Length`, `RSet` places only the leftmost characters, up to the length of `Source`, in the returned string. If the specified string is shorter than the specified length, spaces are added to the left end of the string to produce the appropriate length. If the specified string is longer than the specified length, it is shortened to the specified length.  
+If `Source` is longer than `Length`, `RSet` places only the leftmost characters, up to the length of `Source`, in the returned string. If the specified string is shorter than the specified length, spaces are added to the left end of the string to produce the appropriate length. If the specified string is longer than the specified length, it is shortened to the specified length.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates the use of the `RSet` function.  
-  
- [!code-vb[VbVbalrStrings#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#9)]  
-  
+This example demonstrates the use of the `RSet` function.  
+ 
+[!code-vb[VbVbalrStrings#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2560,17 +2560,17 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `LTrim`, `RTrim`, and `Trim` functions remove spaces from the ends of strings.  
+The `LTrim`, `RTrim`, and `Trim` functions remove spaces from the ends of strings.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `LTrim` function to strip leading spaces and the `RTrim` function to strip trailing spaces from a string variable. It uses the `Trim` function to strip both types of spaces.  
-  
- [!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
-  
+This example uses the `LTrim` function to strip leading spaces and the `RTrim` function to strip trailing spaces from a string variable. It uses the `Trim` function to strip both types of spaces.  
+ 
+[!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2596,17 +2596,17 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string consisting of the specified number of spaces.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Space` function is useful for formatting output and clearing data in fixed-length strings.  
+The `Space` function is useful for formatting output and clearing data in fixed-length strings.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `Space` function to return a string consisting of a specified number of spaces.  
-  
- [!code-vb[VbVbalrStrings#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#2)]  
-  
+This example uses the `Space` function to return a string consisting of a specified number of spaces.  
+ 
+[!code-vb[VbVbalrStrings#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2647,14 +2647,14 @@ Dim aString As String = Replace(TestString, "o", "i")
           <see langword="String" /> array. If <paramref name="Expression" /> is a zero-length string (""), <see langword="Split" /> returns a single-element array containing a zero-length string. If <paramref name="Delimiter" /> is a zero-length string, or if it does not appear anywhere in <paramref name="Expression" />, <see langword="Split" /> returns a single-element array containing the entire <paramref name="Expression" /> string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, or when `Limit` equals -1, the `Split` function splits the input string at every occurrence of the delimiter string, and returns the substrings in an array. When the `Limit` parameter is greater than zero, the `Split` function splits the string at the first `Limit`-1 occurrences of the delimiter, and returns an array with the resulting substrings. For example, `Split("a:b:c", ":")` returns the array `{"a", "b", "c"}`, while `Split("a:b:c", ":", 2)` returns the array `{"a", "b:c"}`.  
-  
- When the `Split` function encounters two delimiters in a row, or a delimiter at the beginning or end of the string, it interprets them as surrounding an empty string (""). For example, `Split("xx", "x")` returns the array containing three empty strings: one from between the beginning of the string and the first "x", one from between the two "x" strings, and one from between the last "x" and the end of the string.  
-  
- This table demonstrates how the optional `Delimiter`, `Limit`, and `Compare` parameters can change the behavior of the `Split` function.  
-  
+By default, or when `Limit` equals -1, the `Split` function splits the input string at every occurrence of the delimiter string, and returns the substrings in an array. When the `Limit` parameter is greater than zero, the `Split` function splits the string at the first `Limit`-1 occurrences of the delimiter, and returns an array with the resulting substrings. For example, `Split("a:b:c", ":")` returns the array `{"a", "b", "c"}`, while `Split("a:b:c", ":", 2)` returns the array `{"a", "b:c"}`.  
+ 
+When the `Split` function encounters two delimiters in a row, or a delimiter at the beginning or end of the string, it interprets them as surrounding an empty string (""). For example, `Split("xx", "x")` returns the array containing three empty strings: one from between the beginning of the string and the first "x", one from between the two "x" strings, and one from between the last "x" and the end of the string.  
+ 
+This table demonstrates how the optional `Delimiter`, `Limit`, and `Compare` parameters can change the behavior of the `Split` function.  
+ 
 |Split Call|Return Value|  
 |-|-|  
 |`Split("42, 12, 19")`|{"42," , "12," , "19"}|  
@@ -2665,25 +2665,25 @@ Dim aString As String = Replace(TestString, "o", "i")
 |`Split("Alice and Bob", " AND ", ,CompareMethod.Text)`|{"Alice", "Bob"}|  
 |`Split("someone@example.com", "@",1)`|{"someone@example.com"}|  
 |`Split("someone@example.com", "@",2)`|{"someone", "example.com"}|  
-  
- The `Compare` argument can have the following values.  
-  
+ 
+The `Compare` argument can have the following values.  
+ 
 |Constant|Description|Value|  
 |-|-|-|  
 |`CompareMethod.Binary`|Performs a binary comparison|0|  
 |`CompareMethod.Text`|Performs a textual comparison|1|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to split a string at its spaces.  
-  
- [!code-vb[VbVbalrStrings#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#13)]  
-  
- The following example demonstrates how to split strings with multiple delimiters in a row and filter out the empty strings.  
-  
- [!code-vb[VbVbalrStrings#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#14)]  
-  
+The following example demonstrates how to split a string at its spaces.  
+ 
+[!code-vb[VbVbalrStrings#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#13)]  
+ 
+The following example demonstrates how to split strings with multiple delimiters in a row and filter out the empty strings.  
+ 
+[!code-vb[VbVbalrStrings#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2754,24 +2754,24 @@ Dim aString As String = Replace(TestString, "o", "i")
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The strings are compared by alphanumeric sort values beginning with the first character. For further information on binary comparisons, textual comparisons, and sort order, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
-  
- The `Compare` argument settings are:  
-  
+The strings are compared by alphanumeric sort values beginning with the first character. For further information on binary comparisons, textual comparisons, and sort order, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
+ 
+The `Compare` argument settings are:  
+ 
 |Constant|Description|  
 |-|-|  
 |`Binary`|Performs a binary comparison, based on a sort order derived from the internal binary representations of the characters.|  
 |`Text`|Performs a text comparison, based on a case-insensitive text sort order determined by your system's `LocaleID` value.|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `StrComp` function to return the results of a string comparison.  
-  
- [!code-vb[VbVbalrStrings#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#22)]  
-  
+This example uses the `StrComp` function to return the results of a string comparison.  
+ 
+[!code-vb[VbVbalrStrings#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#22)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2803,17 +2803,17 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string converted as specified.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constants `VbStrConv.Wide`, `VbStrConv.Narrow`, `VbStrConv.SimplifiedChinese`, `VbStrConv.TraditionalChinese`, `VbStrConv.Katakana`, and `VbStrConv.Hiragana` can cause run-time errors when used in locales where they do not apply, but not always: the constants `VbStrConv.Katakana` and `VbStrConv.Hiragana` can be used in a non-Japanese system with the Japanese Language Pack installed. In addition, use of the constants `VbStrConv.Wide` and `VbStrConv.Narrow` is supported on any system with an East Asian language installed.  
-  
- This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
-  
+The constants `VbStrConv.Wide`, `VbStrConv.Narrow`, `VbStrConv.SimplifiedChinese`, `VbStrConv.TraditionalChinese`, `VbStrConv.Katakana`, and `VbStrConv.Hiragana` can cause run-time errors when used in locales where they do not apply, but not always: the constants `VbStrConv.Katakana` and `VbStrConv.Hiragana` can be used in a non-Japanese system with the Japanese Language Pack installed. In addition, use of the constants `VbStrConv.Wide` and `VbStrConv.Narrow` is supported on any system with an East Asian language installed.  
+ 
+This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+ 
 > [!IMPORTANT]
 >  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
-  
- The `Conversion` argument settings are:  
-  
+ 
+The `Conversion` argument settings are:  
+ 
 |Enumeration member|Description|  
 |-|-|  
 |`VbStrConv.None`|Performs no conversion|  
@@ -2827,23 +2827,23 @@ Dim aString As String = Replace(TestString, "o", "i")
 |`VbStrConv.Hiragana` <sup>**</sup>|Converts Katakana characters in the string to Hiragana characters.|  
 |`VbStrConv.SimplifiedChinese` <sup>*</sup>|Converts Traditional Chinese characters to Simplified Chinese.|  
 |`VbStrConv.TraditionalChinese` <sup>*</sup>|Converts Simplified Chinese characters to Traditional Chinese.|  
-  
- <sup>*</sup> Applies to Asian locales.  
-  
- <sup>**</sup> Applies to Japan only.  
-  
+ 
+<sup>*</sup> Applies to Asian locales.  
+ 
+<sup>**</sup> Applies to Japan only.  
+ 
 > [!NOTE]
 >  These constants are specified in the .NET Framework common language runtime. As a result, they can be used anywhere in your code in place of the actual values. Most can be combined (for example, `UpperCase + Wide`), except when they are mutually exclusive (for example, `VbStrConv.Wide + VbStrConv.Narrow`).  
+ 
+The following are valid word separators for proper casing: Null (`Chr$(0)`), horizontal tab (`Chr$(9)`), line feed (`Chr$(10)`), vertical tab (`Chr$(11)`), form feed (`Chr$(12)`), carriage return (`Chr$(13)`), space (single-byte character set) (`Chr$(32)`). The actual value for a space, which can be full or half width, varies by country/region for East Asian cultures.  
+ 
   
- The following are valid word separators for proper casing: Null (`Chr$(0)`), horizontal tab (`Chr$(9)`), line feed (`Chr$(10)`), vertical tab (`Chr$(11)`), form feed (`Chr$(12)`), carriage return (`Chr$(13)`), space (single-byte character set) (`Chr$(32)`). The actual value for a space, which can be full or half width, varies by country/region for East Asian cultures.  
-  
-   
-  
+ 
 ## Examples  
- This example converts text into all lowercase letters.  
-  
- [!code-vb[VbVbalrStrings#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#6)]  
-  
+This example converts text into all lowercase letters.  
+ 
+[!code-vb[VbVbalrStrings#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Unsupported <paramref name="LocaleID" />, <paramref name="Conversion" /> &lt; 0 or &gt; 2048, or unsupported conversion for specified locale.</exception>
@@ -2872,17 +2872,17 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function returns a `String` made up of repeated characters. The character that makes up the string is the first character in the `Character` argument, and it is duplicated `Number` number of times.  
+This function returns a `String` made up of repeated characters. The character that makes up the string is the first character in the `Character` argument, and it is duplicated `Number` number of times.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `StrDup` function to return a string of duplicated characters.  
-  
- [!code-vb[VbVbalrStrings#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#34)]  
-  
+This example uses the `StrDup` function to return a string of duplicated characters.  
+ 
+[!code-vb[VbVbalrStrings#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#34)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2914,17 +2914,17 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function returns a `String` made up of repeated characters. The character that makes up the string is the first character in the `Character` argument, and it is duplicated `Number` number of times.  
+This function returns a `String` made up of repeated characters. The character that makes up the string is the first character in the `Character` argument, and it is duplicated `Number` number of times.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `StrDup` function to return a string of duplicated characters.  
-  
- [!code-vb[VbVbalrStrings#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#34)]  
-  
+This example uses the `StrDup` function to return a string of duplicated characters.  
+ 
+[!code-vb[VbVbalrStrings#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#34)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2956,17 +2956,17 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function returns a `String` made up of repeated characters. The character that makes up the string is the first character in the `Character` argument, and it is duplicated `Number` number of times.  
+This function returns a `String` made up of repeated characters. The character that makes up the string is the first character in the `Character` argument, and it is duplicated `Number` number of times.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `StrDup` function to return a string of duplicated characters.  
-  
- [!code-vb[VbVbalrStrings#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#34)]  
-  
+This example uses the `StrDup` function to return a string of duplicated characters.  
+ 
+[!code-vb[VbVbalrStrings#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#34)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2996,15 +2996,15 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string in which the character order of a specified string is reversed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `StrReverse` function returns a string that contains the same characters as `Expression`, but in the opposite order.  
+The `StrReverse` function returns a string that contains the same characters as `Expression`, but in the opposite order.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-vb[VbVbalrStrings#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#29)]  
-  
+[!code-vb[VbVbalrStrings#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#29)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3030,17 +3030,17 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `LTrim`, `RTrim`, and `Trim` functions remove spaces from the ends of strings.  
+The `LTrim`, `RTrim`, and `Trim` functions remove spaces from the ends of strings.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `LTrim` function to strip leading spaces and the `RTrim` function to strip trailing spaces from a string variable. It uses the `Trim` function to strip both types of spaces.  
-  
- [!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
-  
+This example uses the `LTrim` function to strip leading spaces and the `RTrim` function to strip trailing spaces from a string variable. It uses the `Trim` function to strip both types of spaces.  
+ 
+[!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3066,22 +3066,22 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string or character containing the specified string converted to uppercase.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only lowercase letters are converted to uppercase; all uppercase letters and nonletter characters remain unchanged.  
-  
- This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
-  
+Only lowercase letters are converted to uppercase; all uppercase letters and nonletter characters remain unchanged.  
+ 
+This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+ 
 > [!IMPORTANT]
 >  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `UCase` function to return an uppercase version of a string.  
-  
- [!code-vb[VbVbalrStrings#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#31)]  
-  
+This example uses the `UCase` function to return an uppercase version of a string.  
+ 
+[!code-vb[VbVbalrStrings#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#31)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3107,22 +3107,22 @@ Dim aString As String = Replace(TestString, "o", "i")
         <returns>Returns a string or character containing the specified string converted to uppercase.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only lowercase letters are converted to uppercase; all uppercase letters and nonletter characters remain unchanged.  
-  
- This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
-  
+Only lowercase letters are converted to uppercase; all uppercase letters and nonletter characters remain unchanged.  
+ 
+This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+ 
 > [!IMPORTANT]
 >  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `UCase` function to return an uppercase version of a string.  
-  
- [!code-vb[VbVbalrStrings#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#31)]  
-  
+This example uses the `UCase` function to return an uppercase version of a string.  
+ 
+[!code-vb[VbVbalrStrings#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#31)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

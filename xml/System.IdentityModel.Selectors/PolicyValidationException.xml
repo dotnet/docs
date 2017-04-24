@@ -47,10 +47,10 @@
         <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Selectors.PolicyValidationException" /> class with the specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error and takes into account the current system culture. The content of the message should also be understandable to the user.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error and takes into account the current system culture. The content of the message should also be understandable to the user.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,10 +74,10 @@
         <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Selectors.PolicyValidationException" /> class with serialization information and streaming context specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Selectors.PolicyValidationException" /> class with the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

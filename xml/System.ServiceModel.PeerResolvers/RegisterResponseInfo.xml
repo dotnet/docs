@@ -19,12 +19,12 @@
     <summary>Contains response information returned by a peer resolver as the result of a registration operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register%2A> (or an implementation of  <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract.Register%2A>) is called with a <xref:System.ServiceModel.PeerResolvers.RegisterInfo> instance passed to it, this object is returned to the caller to indicate the results of the registration operation.  
-  
- Instances of this class are primarily used to pass registration response information from the resolver service to a network client of that service.  
-  
+When <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register%2A> (or an implementation of  <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract.Register%2A>) is called with a <xref:System.ServiceModel.PeerResolvers.RegisterInfo> instance passed to it, this object is returned to the caller to indicate the results of the registration operation.  
+ 
+Instances of this class are primarily used to pass registration response information from the resolver service to a network client of that service.  
+ 
  ]]></format>
     </remarks>
   </Docs>

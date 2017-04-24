@@ -23,19 +23,19 @@
     <summary>Represents a collection of designers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection object can store references to a set of designers.  
+This collection object can store references to a set of designers.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.ComponentModel.Design.DesignerCollection> initialized with a specified array of <xref:System.ComponentModel.Design.IDesignerHost> objects.  
-  
- [!code-cpp[DesignerCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerCollectionExample/CPP/examplecomponent.cpp#1)]
- [!code-csharp[DesignerCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerCollectionExample/CS/examplecomponent.cs#1)]
- [!code-vb[DesignerCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerCollectionExample/VB/examplecomponent.vb#1)]  
-  
+The following code example creates a <xref:System.ComponentModel.Design.DesignerCollection> initialized with a specified array of <xref:System.ComponentModel.Design.IDesignerHost> objects.  
+ 
+[!code-cpp[DesignerCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerCollectionExample/CPP/examplecomponent.cpp#1)]
+[!code-csharp[DesignerCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerCollectionExample/CS/examplecomponent.cs#1)]
+[!code-vb[DesignerCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerCollectionExample/VB/examplecomponent.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -87,10 +87,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerCollection" /> class that contains the specified designers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new designer collection from an array of designers. The collection does not clone the array.  
-  
+Creates a new designer collection from an array of designers. The collection does not clone the array.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -118,14 +118,14 @@
         <value>The number of designers in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example gets the number of elements in the collection.  
-  
- [!code-cpp[DesignerCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerCollectionExample/CPP/examplecomponent.cpp#2)]
- [!code-csharp[DesignerCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerCollectionExample/CS/examplecomponent.cs#2)]
- [!code-vb[DesignerCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerCollectionExample/VB/examplecomponent.vb#2)]  
-  
+The following code example gets the number of elements in the collection.  
+ 
+[!code-cpp[DesignerCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerCollectionExample/CPP/examplecomponent.cpp#2)]
+[!code-csharp[DesignerCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerCollectionExample/CS/examplecomponent.cs#2)]
+[!code-vb[DesignerCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerCollectionExample/VB/examplecomponent.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>

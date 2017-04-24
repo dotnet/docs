@@ -19,20 +19,20 @@
     <summary>Represents a claim that is associated with an entity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Identity Model is a claims-based authorization system. Claims describe the capabilities associated with some entity in the system, often a user of that system. The set of claims associated with a given entity can be thought of as a key. The particular claims define the shape of that key; much like a physical key is used to open a lock in a door. In this way, claims are used to gain access to resources. Access to a given protected resource is determined by comparing the claims required to access that resource with the claims associated with the entity that attempts access.  
+The Identity Model is a claims-based authorization system. Claims describe the capabilities associated with some entity in the system, often a user of that system. The set of claims associated with a given entity can be thought of as a key. The particular claims define the shape of that key; much like a physical key is used to open a lock in a door. In this way, claims are used to gain access to resources. Access to a given protected resource is determined by comparing the claims required to access that resource with the claims associated with the entity that attempts access.  
+ 
+A claim is the expression of a right with respect to a particular value. A right could be read, write, or possess. A value could be a database, a file, a mailbox, or a property. Claims also have a claim type. The combination of claim type and right provides the mechanism for capabilities being specified with respect to the value. For example, a claim of type `file` with the right `read` over the value `biography.doc` indicates that the entity with such a claim has read access to the file biography.doc. A claim of type name with the right <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> over the value `Martin` indicates that the entity with the claim possesses a `Name` property with the value `Martin`.  
+ 
+Although various claim types and rights are defined as part of Identity Model, the system is extensible. The various systems building on top of the Identity Model infrastructure can define claim types and rights as required.  
+ 
   
- A claim is the expression of a right with respect to a particular value. A right could be read, write, or possess. A value could be a database, a file, a mailbox, or a property. Claims also have a claim type. The combination of claim type and right provides the mechanism for capabilities being specified with respect to the value. For example, a claim of type `file` with the right `read` over the value `biography.doc` indicates that the entity with such a claim has read access to the file biography.doc. A claim of type name with the right <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> over the value `Martin` indicates that the entity with the claim possesses a `Name` property with the value `Martin`.  
-  
- Although various claim types and rights are defined as part of Identity Model, the system is extensible. The various systems building on top of the Identity Model infrastructure can define claim types and rights as required.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[c_Claim#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_claim/cs/source.cs#1)]
- [!code-vb[c_Claim#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claim/vb/source.vb#1)]  
-  
+[!code-csharp[c_Claim#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_claim/cs/source.cs#1)]
+[!code-vb[c_Claim#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claim/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.Claim" /> class with the specified type, resource, and right.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] ships a set of pre-defined claim types and rights that are represented as members of the <xref:System.IdentityModel.Claims.ClaimTypes> and <xref:System.IdentityModel.Claims.Rights> classes.  
-  
+[!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] ships a set of pre-defined claim types and rights that are represented as members of the <xref:System.IdentityModel.Claims.ClaimTypes> and <xref:System.IdentityModel.Claims.Rights> classes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -95,18 +95,18 @@
         <value>A URI that represents the type of the claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property can be one of the pre-defined claim types that are represented by the static properties of the <xref:System.IdentityModel.Claims.ClaimTypes> class.  
+The <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property can be one of the pre-defined claim types that are represented by the static properties of the <xref:System.IdentityModel.Claims.ClaimTypes> class.  
+ 
+Claim types specify the type of claim that is being asserted, such as an email address.  
+ 
   
- Claim types specify the type of claim that is being asserted, such as an email address.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[c_Claim#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_claim/cs/source.cs#2)]
- [!code-vb[c_Claim#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claim/vb/source.vb#2)]  
-  
+[!code-csharp[c_Claim#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_claim/cs/source.cs#2)]
+[!code-vb[c_Claim#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claim/vb/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,18 +132,18 @@
         <returns>A <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the SID specified in the <paramref name="sid" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The deny-only SID is a SID_AND_ATTRIBUTES structure with the SE_GROUP_USE_FOR_SENY_ONLY flag set.  
-  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The deny-only SID is a SID_AND_ATTRIBUTES structure with the SE_GROUP_USE_FOR_SENY_ONLY flag set.  
+ 
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.DenyOnlySid%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `sid` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -171,16 +171,16 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Dns%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `dns` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="dns" /> parameter is <see langword="null" />.</exception>
@@ -207,16 +207,16 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Hash%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `hash` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="hash" /> parameter is <see langword="null" />.</exception>
@@ -243,16 +243,16 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Email%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `mailAddress` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="mailAddress" /> parameter is <see langword="null" />.</exception>
@@ -279,16 +279,16 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Name%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `name` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -315,16 +315,16 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `rsa` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rsa" /> parameter is <see langword="null" />.</exception>
@@ -351,16 +351,16 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Spn%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `spn` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="spn" /> parameter is <see langword="null" />.</exception>
@@ -387,16 +387,16 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Thumbprint%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `thumbprint` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="thumbprint" /> parameter is <see langword="null" />.</exception>
@@ -423,16 +423,16 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Upn%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `upn` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="upn" /> parameter is <see langword="null" />.</exception>
@@ -459,16 +459,16 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Uri%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `uri` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="uri" /> parameter is <see langword="null" />.</exception>
@@ -495,16 +495,16 @@
         <returns>A <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the SID specified in the <paramref name="sid" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>|<xref:System.IdentityModel.Claims.ClaimTypes.Sid%2A>|  
 |<xref:System.IdentityModel.Claims.Claim.Resource%2A>|The value of the `sid` parameter.|  
 |<xref:System.IdentityModel.Claims.Claim.Right%2A>|<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -532,19 +532,19 @@
         <returns>The <see cref="T:System.IdentityModel.Claims.Claim" /> object this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
-  
- <xref:System.IdentityModel.Claims.Claim.ClaimType%2A>  
- <xref:System.IdentityModel.Claims.ClaimTypes.X500DistinguishedName%2A>  
-  
- <xref:System.IdentityModel.Claims.Claim.Resource%2A>  
- The value of the `x500DistinguishedName` parameter.  
-  
- <xref:System.IdentityModel.Claims.Claim.Right%2A>  
- <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.  
-  
+The <xref:System.IdentityModel.Claims.Claim> object this method creates has the property values shown in the following table.  
+ 
+<xref:System.IdentityModel.Claims.Claim.ClaimType%2A>  
+<xref:System.IdentityModel.Claims.ClaimTypes.X500DistinguishedName%2A>  
+ 
+<xref:System.IdentityModel.Claims.Claim.Resource%2A>  
+The value of the `x500DistinguishedName` parameter.  
+ 
+<xref:System.IdentityModel.Claims.Claim.Right%2A>  
+<xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="x500DistinguishedName" /> parameter is <see langword="null" />.</exception>
@@ -567,10 +567,10 @@
         <value>A <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> interface implementation that compares two <see cref="T:System.IdentityModel.Claims.Claim" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the value of the <xref:System.IdentityModel.Claims.Claim.DefaultComparer%2A> property to match any of the pre-defined claim types.  
-  
+Use the value of the <xref:System.IdentityModel.Claims.Claim.DefaultComparer%2A> property to match any of the pre-defined claim types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -597,10 +597,10 @@
           <see langword="true" /> if <paramref name="obj" /> represents the same claim as the current <see cref="T:System.IdentityModel.Claims.Claim" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the <xref:System.Object.Equals%2A> method to provide equality comparisons for <xref:System.IdentityModel.Claims.Claim> objects. The comparison consists of three comparisons on the values of the <xref:System.IdentityModel.Claims.Claim.Right%2A>, <xref:System.IdentityModel.Claims.Claim.ClaimType%2A>, and <xref:System.IdentityModel.Claims.Claim.Resource%2A> properties. The comparison algorithm that is used on the <xref:System.IdentityModel.Claims.Claim.Resource%2A> property depends upon the value of the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property. The following table details the comparison algorithm that is used for the specified claim type.  
-  
+This method overrides the <xref:System.Object.Equals%2A> method to provide equality comparisons for <xref:System.IdentityModel.Claims.Claim> objects. The comparison consists of three comparisons on the values of the <xref:System.IdentityModel.Claims.Claim.Right%2A>, <xref:System.IdentityModel.Claims.Claim.ClaimType%2A>, and <xref:System.IdentityModel.Claims.Claim.Resource%2A> properties. The comparison algorithm that is used on the <xref:System.IdentityModel.Claims.Claim.Resource%2A> property depends upon the value of the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property. The following table details the comparison algorithm that is used for the specified claim type.  
+ 
 |Claim type|Comparison|  
 |----------------|----------------|  
 |<xref:System.IdentityModel.Claims.ClaimTypes.Dns%2A>|Case insensitive string comparison on the resource.|  
@@ -609,7 +609,7 @@
 |<xref:System.IdentityModel.Claims.ClaimTypes.Thumbprint%2A>|Byte-by-byte comparison.|  
 |<xref:System.IdentityModel.Claims.ClaimTypes.Upn%2A>|SID comparison.|  
 |<xref:System.IdentityModel.Claims.ClaimTypes.X500DistinguishedName%2A>|Normalized X.500 raw data comparison.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -632,10 +632,10 @@
         <returns>The hash code for the claim.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method generates the same hash code for two objects that are equal according to the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method.  
-  
+This method generates the same hash code for two objects that are equal according to the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,11 +657,11 @@
         <value>The resource with which this <see cref="T:System.IdentityModel.Claims.Claim" /> object is associated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[c_Claim#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_claim/cs/source.cs#2)]
- [!code-vb[c_Claim#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claim/vb/source.vb#2)]  
-  
+[!code-csharp[c_Claim#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_claim/cs/source.cs#2)]
+[!code-vb[c_Claim#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claim/vb/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -683,16 +683,16 @@
         <value>A URI that specifies the right associated with this <see cref="T:System.IdentityModel.Claims.Claim" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Pre-defined values include <xref:System.IdentityModel.Claims.Rights.Identity%2A>and <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.  
+Pre-defined values include <xref:System.IdentityModel.Claims.Rights.Identity%2A>and <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[c_Claim#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_claim/cs/source.cs#2)]
- [!code-vb[c_Claim#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claim/vb/source.vb#2)]  
-  
+[!code-csharp[c_Claim#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_claim/cs/source.cs#2)]
+[!code-vb[c_Claim#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claim/vb/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -768,10 +768,10 @@
         <returns>This <see cref="T:System.IdentityModel.Claims.Claim" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string that is returns contains the values of the <xref:System.IdentityModel.Claims.Claim.Right%2A> and <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> properties.  
-  
+The string that is returns contains the values of the <xref:System.IdentityModel.Claims.Claim.Right%2A> and <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

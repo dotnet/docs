@@ -22,26 +22,26 @@
     <summary>Represents the method that handles the events that render the background of objects derived from <see cref="T:System.Windows.Forms.ToolStripItem" /> in the <see cref="T:System.Windows.Forms.ToolStripRenderer" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripItemRenderEventHandler> represents the method that handles the following events:  
-  
+The <xref:System.Windows.Forms.ToolStripItemRenderEventHandler> represents the method that handles the following events:  
+ 
 -   <xref:System.Windows.Forms.ToolStripRenderer.RenderButtonBackground>  
-  
+ 
 -   <xref:System.Windows.Forms.ToolStripRenderer.RenderDropDownButtonBackground>  
-  
+ 
 -   <xref:System.Windows.Forms.ToolStripRenderer.RenderItemBackground>  
-  
+ 
 -   <xref:System.Windows.Forms.ToolStripRenderer.RenderLabelBackground>  
-  
+ 
 -   <xref:System.Windows.Forms.ToolStripRenderer.RenderMenuItemBackground>  
-  
+ 
 -   <xref:System.Windows.Forms.ToolStripRenderer.RenderOverflowButtonBackground>  
-  
+ 
 -   <xref:System.Windows.Forms.ToolStripRenderer.RenderSplitButtonBackground>  
-  
- When you create a <xref:System.Windows.Forms.ToolStripItemRenderEventHandler> delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+ 
+When you create a <xref:System.Windows.Forms.ToolStripItemRenderEventHandler> delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
     </remarks>
   </Docs>

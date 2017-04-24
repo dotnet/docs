@@ -27,20 +27,20 @@
     <summary>Represents a single row of data and its metadata. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used together with <xref:Microsoft.SqlServer.Server.SqlPipe> to send result sets to the client from managed code stored-procedures.  
+This class is used together with <xref:Microsoft.SqlServer.Server.SqlPipe> to send result sets to the client from managed code stored-procedures.  
+ 
+When writing common language runtime (CLR) applications, you should re-use existing `SqlDataRecord` objects instead of creating new ones every time. Creating many new `SqlDataRecord` objects could severely deplete memory and adversely affect performance.  
+ 
   
- When writing common language runtime (CLR) applications, you should re-use existing `SqlDataRecord` objects instead of creating new ones every time. Creating many new `SqlDataRecord` objects could severely deplete memory and adversely affect performance.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to create several <xref:Microsoft.SqlServer.Server.SqlMetaData> objects, which describe the column metadata of a record, and creating a <xref:Microsoft.SqlServer.Server.SqlDataRecord>.  The column values of the <xref:Microsoft.SqlServer.Server.SqlDataRecord> are set and the <xref:Microsoft.SqlServer.Server.SqlDataRecord> is sent to the calling program by using the <xref:Microsoft.SqlServer.Server.SqlContext> class.  
-  
- [!code-csharp[DataWorks SqlDataRecord Samples#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDataRecord Samples/CS/source.cs#1)]
- [!code-vb[DataWorks SqlDataRecord Samples#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDataRecord Samples/VB/source.vb#1)]  
-  
+The following example shows how to create several <xref:Microsoft.SqlServer.Server.SqlMetaData> objects, which describe the column metadata of a record, and creating a <xref:Microsoft.SqlServer.Server.SqlDataRecord>.  The column values of the <xref:Microsoft.SqlServer.Server.SqlDataRecord> are set and the <xref:Microsoft.SqlServer.Server.SqlDataRecord> is sent to the calling program by using the <xref:Microsoft.SqlServer.Server.SqlContext> class.  
+ 
+[!code-csharp[DataWorks SqlDataRecord Samples#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDataRecord Samples/CS/source.cs#1)]
+[!code-vb[DataWorks SqlDataRecord Samples#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDataRecord Samples/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,13 +77,13 @@
         <summary>Inititializes a new <see cref="T:Microsoft.SqlServer.Server.SqlDataRecord" /> instance with the schema based on the array of <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> objects passed as an argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a new <xref:Microsoft.SqlServer.Server.SqlDataRecord> object from two  <xref:Microsoft.SqlServer.Server.SqlMetaData> objects, which indicate the column name and data type.  
-  
- [!code-csharp[DataWorks SqlDataRecord Samples#2](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDataRecord Samples/CS/source.cs#2)]
- [!code-vb[DataWorks SqlDataRecord Samples#2](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDataRecord Samples/VB/source.vb#2)]  
-  
+The following example shows how to create a new <xref:Microsoft.SqlServer.Server.SqlDataRecord> object from two  <xref:Microsoft.SqlServer.Server.SqlMetaData> objects, which indicate the column name and data type.  
+ 
+[!code-csharp[DataWorks SqlDataRecord Samples#2](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDataRecord Samples/CS/source.cs#2)]
+[!code-vb[DataWorks SqlDataRecord Samples#2](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDataRecord Samples/VB/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="metaData" /> is <see langword="null" />.</exception>
@@ -222,12 +222,12 @@
         <returns>The number of bytes copied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to obtain a binary value either in a single call or in chunks. Getting the value in chunks is useful for large values or values of unknown size.  
-  
- To obtain the value in several chunks, allocate a byte array of the chunk-size and call <xref:Microsoft.SqlServer.Server.SqlDataRecord.GetBytes%2A> repeatedly, adjusting the `fieldOffset` parameter accordingly in each call.  
-  
+This method enables you to obtain a binary value either in a single call or in chunks. Getting the value in chunks is useful for large values or values of unknown size.  
+ 
+To obtain the value in several chunks, allocate a byte array of the chunk-size and call <xref:Microsoft.SqlServer.Server.SqlDataRecord.GetBytes%2A> repeatedly, adjusting the `fieldOffset` parameter accordingly in each call.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>
@@ -307,12 +307,12 @@
         <returns>The number of characters copied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to obtain a character value either in a single call or in chunks. Getting the value in chunks is useful for large values or values of unknown size.  
-  
- To obtain the value in several chunks, allocate a char array of the chunk-size and call <xref:Microsoft.SqlServer.Server.SqlDataRecord.GetChars%2A> repeatedly adjusting the `fieldOffset` parameter accordingly in each call.  
-  
+This method enables you to obtain a character value either in a single call or in chunks. Getting the value in chunks is useful for large values or values of unknown size.  
+ 
+To obtain the value in several chunks, allocate a char array of the chunk-size and call <xref:Microsoft.SqlServer.Server.SqlDataRecord.GetChars%2A> repeatedly adjusting the `fieldOffset` parameter accordingly in each call.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>
@@ -373,10 +373,10 @@
         <returns>A <see cref="T:System.String" /> that contains the data type of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the type name as known in the SQL Server type-system. For user-defined types (UDTs), it returns the three-part name that was used to register the type with SQL Server.  
-  
+This method returns the type name as known in the SQL Server type-system. For user-defined types (UDTs), it returns the three-part name that was used to register the type with SQL Server.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>
@@ -1382,10 +1382,10 @@
         <returns>The value of the column, expressed as a SQL Server type, as a <see cref="T:System.Object" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For null values, a SQL Server type instance is returned where the <xref:System.Data.SqlTypes.INullable.IsNull%2A> property is true.  
-  
+For null values, a SQL Server type instance is returned where the <xref:System.Data.SqlTypes.INullable.IsNull%2A> property is true.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>
@@ -1422,12 +1422,12 @@
         <returns>An <see cref="T:System.Int32" /> that indicates the number of columns copied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SQL Server type values of the column are copied into the `values` array that is passed as a parameter. For null values, a Sql type instance is returned where the <xref:System.Data.SqlTypes.INullable.IsNull%2A> property is true.  
-  
- The length of the `values` array does not need to match the number of columns in the record. If the array length is greater than the number of columns, all of the column values are copied into the array; if it is less, only the array length number of column values are copied into the array, starting at the column value with ordinal 0.  
-  
+The SQL Server type values of the column are copied into the `values` array that is passed as a parameter. For null values, a Sql type instance is returned where the <xref:System.Data.SqlTypes.INullable.IsNull%2A> property is true.  
+ 
+The length of the `values` array does not need to match the number of columns in the record. If the array length is greater than the number of columns, all of the column values are copied into the array; if it is less, only the array length number of column values are copied into the array, starting at the column value with ordinal 0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1562,10 +1562,10 @@
         <returns>The CLR type value of the column specified by the ordinal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For columns with null value, <xref:System.DBNull.Value> is returned.  
-  
+For columns with null value, <xref:System.DBNull.Value> is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>
@@ -1602,12 +1602,12 @@
         <returns>An <see cref="T:System.Int32" /> that indicates the number of columns copied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CLR type values of the column are copied into the `values` array that is passed as a parameter. For columns with null value, <xref:System.DBNull.Value> is returned.  
-  
- The length of the `values` array does not need to match the number of columns in the record. If the array length is greater than the number of columns, all of the column values are copied into the array; if it is less, only the array length number of column values is copied into the array, starting at the column value with ordinal 0.  
-  
+The CLR type values of the column are copied into the `values` array that is passed as a parameter. For columns with null value, <xref:System.DBNull.Value> is returned.  
+ 
+The length of the `values` array does not need to match the number of columns in the record. If the array length is greater than the number of columns, all of the column values are copied into the array; if it is less, only the array length number of column values is copied into the array, starting at the column value with ordinal 0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1678,10 +1678,10 @@
         <value>The CLR type value of the column specified by the <paramref name="ordinal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For columns with null value, <xref:System.DBNull.Value> is returned.  
-  
+For columns with null value, <xref:System.DBNull.Value> is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>
@@ -1717,10 +1717,10 @@
         <value>The CLR type value of the column specified by the <paramref name="name" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For columns with null value, <xref:System.DBNull.Value> is returned.  
-  
+For columns with null value, <xref:System.DBNull.Value> is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2853,10 +2853,10 @@
         <summary>Sets a new value, expressed as a common language runtime (CLR) type, for the column specified by the column ordinal.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `value` is a SQL type boxed as a <xref:System.Object> instance.  
-  
+`value` is a SQL type boxed as a <xref:System.Object> instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>
@@ -2898,10 +2898,10 @@
         <returns>The number of column values set as an integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The length of values must match the number of columns in the <xref:Microsoft.SqlServer.Server.SqlDataRecord> instance.  
-  
+The length of values must match the number of columns in the <xref:Microsoft.SqlServer.Server.SqlDataRecord> instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2938,10 +2938,10 @@
  Always throws an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not supported in this release, and throws <xref:System.NotSupportedException> if called.  
-  
+This method is not supported in this release, and throws <xref:System.NotSupportedException> if called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>

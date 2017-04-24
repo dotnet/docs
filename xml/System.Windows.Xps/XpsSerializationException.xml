@@ -87,10 +87,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.XpsSerializationException" /> class that provides a specific error condition and includes the cause of the exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `innerException` parameter is not `null` (`Nothing` in Visual Basic), the current exception is raised in a `catch` block that handles the inner exception.  
-  
+If the `innerException` parameter is not `null` (`Nothing` in Visual Basic), the current exception is raised in a `catch` block that handles the inner exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>

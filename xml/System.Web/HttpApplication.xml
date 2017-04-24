@@ -29,125 +29,125 @@
     <summary>Defines the methods, properties, and events that are common to all application objects in an ASP.NET application. This class is the base class for applications that are defined by the user in the Global.asax file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of the <xref:System.Web.HttpApplication> class are created in the ASP.NET infrastructure, not by the user directly. One instance of the <xref:System.Web.HttpApplication> class is used to process many requests in its lifetime. However, it can process only one request at a time. Thus, member variables can be used to store per-request data.  
-  
- An application raises events that can be handled by custom modules that implement the <xref:System.Web.IHttpModule> interface or by event handler code that is defined in the Global.asax file. Custom modules that implement the <xref:System.Web.IHttpModule> interface can be put in the App_Code folder or in a DLL in the Bin folder.  
-  
- <xref:System.Web.HttpApplication> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+Instances of the <xref:System.Web.HttpApplication> class are created in the ASP.NET infrastructure, not by the user directly. One instance of the <xref:System.Web.HttpApplication> class is used to process many requests in its lifetime. However, it can process only one request at a time. Thus, member variables can be used to store per-request data.  
+ 
+An application raises events that can be handled by custom modules that implement the <xref:System.Web.IHttpModule> interface or by event handler code that is defined in the Global.asax file. Custom modules that implement the <xref:System.Web.IHttpModule> interface can be put in the App_Code folder or in a DLL in the Bin folder.  
+ 
+<xref:System.Web.HttpApplication> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
 > [!NOTE]
 >  When running IIS 7.0 in Integrated mode, custom modules in the App_Code folder or Bin folder apply to all requests in the request pipeline. Event handler code in the Global.asax file only applies to requests that are mapped to an ASP.NET handler.  
-  
- The application events are raised in the following order:  
-  
+ 
+The application events are raised in the following order:  
+ 
 1.  <xref:System.Web.HttpApplication.BeginRequest>  
-  
+ 
 2.  <xref:System.Web.HttpApplication.AuthenticateRequest>  
-  
+ 
 3.  <xref:System.Web.HttpApplication.PostAuthenticateRequest>  
-  
+ 
 4.  <xref:System.Web.HttpApplication.AuthorizeRequest>  
-  
+ 
 5.  <xref:System.Web.HttpApplication.PostAuthorizeRequest>  
-  
+ 
 6.  <xref:System.Web.HttpApplication.ResolveRequestCache>  
-  
+ 
 7.  <xref:System.Web.HttpApplication.PostResolveRequestCache>  
-  
-     After the <xref:System.Web.HttpApplication.PostResolveRequestCache> event and before the <xref:System.Web.HttpApplication.PostMapRequestHandler> event, an event handler (which is a page that corresponds to the request URL) is created. When a server is running IIS 7.0 in Integrated mode and at least the .NET Framework version 3.0, the <xref:System.Web.HttpApplication.MapRequestHandler> event is raised. When a server is running IIS 7.0 in Classic mode or an earlier version of IIS, this event cannot be handled.  
-  
+ 
+    After the <xref:System.Web.HttpApplication.PostResolveRequestCache> event and before the <xref:System.Web.HttpApplication.PostMapRequestHandler> event, an event handler (which is a page that corresponds to the request URL) is created. When a server is running IIS 7.0 in Integrated mode and at least the .NET Framework version 3.0, the <xref:System.Web.HttpApplication.MapRequestHandler> event is raised. When a server is running IIS 7.0 in Classic mode or an earlier version of IIS, this event cannot be handled.  
+ 
 8.  <xref:System.Web.HttpApplication.PostMapRequestHandler>  
-  
+ 
 9. <xref:System.Web.HttpApplication.AcquireRequestState>  
-  
+ 
 10. <xref:System.Web.HttpApplication.PostAcquireRequestState>  
-  
+ 
 11. <xref:System.Web.HttpApplication.PreRequestHandlerExecute>  
-  
-     The event handler is executed.  
-  
+ 
+    The event handler is executed.  
+ 
 12. <xref:System.Web.HttpApplication.PostRequestHandlerExecute>  
-  
+ 
 13. <xref:System.Web.HttpApplication.ReleaseRequestState>  
-  
+ 
 14. <xref:System.Web.HttpApplication.PostReleaseRequestState>  
-  
-     After the <xref:System.Web.HttpApplication.PostReleaseRequestState> event is raised, any existing response filters will filter the output.  
-  
+ 
+    After the <xref:System.Web.HttpApplication.PostReleaseRequestState> event is raised, any existing response filters will filter the output.  
+ 
 15. <xref:System.Web.HttpApplication.UpdateRequestCache>  
-  
+ 
 16. <xref:System.Web.HttpApplication.PostUpdateRequestCache>  
-  
+ 
 17. <xref:System.Web.HttpApplication.LogRequest>.  
-  
-     This event is supported in IIS 7.0 Integrated mode and at least the .NET Framework 3.0  
-  
+ 
+    This event is supported in IIS 7.0 Integrated mode and at least the .NET Framework 3.0  
+ 
 18. <xref:System.Web.HttpApplication.PostLogRequest>  
-  
-     This event is supported IIS 7.0 Integrated mode and at least the .NET Framework 3.0  
-  
+ 
+    This event is supported IIS 7.0 Integrated mode and at least the .NET Framework 3.0  
+ 
 19. <xref:System.Web.HttpApplication.EndRequest>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following two examples demonstrate how to use the <xref:System.Web.HttpApplication> class and its events. The first example demonstrates how to create a custom HTTP module and connect an event to it. The second example demonstrates how to modify the Web.config file.  
-  
- The following example demonstrates how to create a custom HTTP module and connect the <xref:System.Web.HttpApplication.AcquireRequestState> event to the HTTP module. HTTP modules intercept each request to Web application resources, thereby allowing you to filter client requests. Any HTTP module that subscribes to an <xref:System.Web.HttpApplication> event must implement the <xref:System.Web.IHttpModule> interface.  
-  
- [!code-csharp[System.Web.HttpApplication1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpApplication1/cs/source.cs#1)]
- [!code-vb[System.Web.HttpApplication1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpApplication1/vb/source.vb#1)]  
-  
- Before an event in a custom HTTP module can occur, you must modify the configuration settings in the Web.config file to notify ASP.NET about the HTTP module. The following example shows the appropriate configuration setting in the `httpModules` section of the Web.config file. The following setting applies to IIS 7.0 Classic mode and to earlier versions of IIS.  
-  
+The following two examples demonstrate how to use the <xref:System.Web.HttpApplication> class and its events. The first example demonstrates how to create a custom HTTP module and connect an event to it. The second example demonstrates how to modify the Web.config file.  
+ 
+The following example demonstrates how to create a custom HTTP module and connect the <xref:System.Web.HttpApplication.AcquireRequestState> event to the HTTP module. HTTP modules intercept each request to Web application resources, thereby allowing you to filter client requests. Any HTTP module that subscribes to an <xref:System.Web.HttpApplication> event must implement the <xref:System.Web.IHttpModule> interface.  
+ 
+[!code-csharp[System.Web.HttpApplication1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpApplication1/cs/source.cs#1)]
+[!code-vb[System.Web.HttpApplication1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpApplication1/vb/source.vb#1)]  
+ 
+Before an event in a custom HTTP module can occur, you must modify the configuration settings in the Web.config file to notify ASP.NET about the HTTP module. The following example shows the appropriate configuration setting in the `httpModules` section of the Web.config file. The following setting applies to IIS 7.0 Classic mode and to earlier versions of IIS.  
+ 
 ```csharp  
 <configuration>  
-  <system.web>  
-    <httpModules>  
-      <add type="Samples.AspNet.CS.CustomHTTPModule"  
-        name="CustomHttpModule" />  
-      </httpModules>  
-  </system.web>  
+ <system.web>  
+   <httpModules>  
+     <add type="Samples.AspNet.CS.CustomHTTPModule"  
+       name="CustomHttpModule" />  
+     </httpModules>  
+ </system.web>  
 </configuration>  
 ```  
-  
+ 
 ```vb  
 <configuration>  
-  <system.web>  
-    <httpModules>  
-      <add type="Samples.AspNet.VB.CustomHTTPModule"  
-        name="CustomHttpModule" />  
-      </httpModules>  
-  </system.web>  
+ <system.web>  
+   <httpModules>  
+     <add type="Samples.AspNet.VB.CustomHTTPModule"  
+       name="CustomHttpModule" />  
+     </httpModules>  
+ </system.web>  
 </configuration>  
 ```  
-  
- The following setting applies to IIS 7.0 Integrated mode.  
-  
+ 
+The following setting applies to IIS 7.0 Integrated mode.  
+ 
 ```csharp  
 <configuration>  
-  <system.webServer>  
-    <modules>  
-      <add type="Samples.AspNet.CS.CustomHTTPModule"  
-        name="CustomHttpModule" />  
-      </modules>  
-  </system.webServer>  
+ <system.webServer>  
+   <modules>  
+     <add type="Samples.AspNet.CS.CustomHTTPModule"  
+       name="CustomHttpModule" />  
+     </modules>  
+ </system.webServer>  
 </configuration>  
 ```  
-  
+ 
 ```vb  
 <configuration>  
-  <system.webServer>  
-    <modules>  
-      <add type="Samples.AspNet.VB.CustomHTTPModule"  
-        name="CustomHttpModule" />  
-      <modules>  
-  </system.webServer>  
+ <system.webServer>  
+   <modules>  
+     <add type="Samples.AspNet.VB.CustomHTTPModule"  
+       name="CustomHttpModule" />  
+     <modules>  
+ </system.webServer>  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -183,17 +183,17 @@
         <summary>Occurs when ASP.NET acquires the current state (for example, session state) that is associated with the current request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.AcquireRequestState> event is raised after the event handler has been created.  
+The <xref:System.Web.HttpApplication.AcquireRequestState> event is raised after the event handler has been created.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
+ 
 ## Examples  
- For an example of handling the <xref:System.Web.HttpApplication.AcquireRequestState> event, see the <xref:System.Web.HttpApplication> overview topic.  
-  
+For an example of handling the <xref:System.Web.HttpApplication.AcquireRequestState> event, see the <xref:System.Web.HttpApplication> overview topic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@
         <summary>Adds the specified <see cref="E:System.Web.HttpApplication.LogRequest" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.LogRequest" /> event handlers for the current request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -515,10 +515,10 @@
         <summary>Adds the specified <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event handlers for the current request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -714,10 +714,10 @@
         <summary>Adds the specified <see cref="E:System.Web.HttpApplication.PostLogRequest" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.PostLogRequest" /> event handlers for the current request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1204,10 +1204,10 @@
         <value>The <see cref="T:System.Web.HttpApplicationState" /> for the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current state of an application consists of a key/value dictionary of application-wide objects that you can use to store both .NET Framework objects and scalar values that are related to multiple Web requests from multiple clients.  
-  
+The current state of an application consists of a key/value dictionary of application-wide objects that you can use to store both .NET Framework objects and scalar values that are related to multiple Web requests from multiple clients.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1228,12 +1228,12 @@
         <summary>Occurs when a security module has established the identity of the user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.AuthenticateRequest> event signals that the configured authentication mechanism has authenticated the current request. Subscribing to the <xref:System.Web.HttpApplication.AuthenticateRequest> event ensures that the request will be authenticated before processing the attached module or event handler.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.HttpApplication.AuthenticateRequest> event signals that the configured authentication mechanism has authenticated the current request. Subscribing to the <xref:System.Web.HttpApplication.AuthenticateRequest> event ensures that the request will be authenticated before processing the attached module or event handler.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1254,12 +1254,12 @@
         <summary>Occurs when a security module has verified user authorization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.AuthorizeRequest> event signals that ASP.NET has authorized the current request. Subscribing to the <xref:System.Web.HttpApplication.AuthorizeRequest> event ensures that the request will be authenticated and authorized before processing the attached module or event handler.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.HttpApplication.AuthorizeRequest> event signals that ASP.NET has authorized the current request. Subscribing to the <xref:System.Web.HttpApplication.AuthorizeRequest> event ensures that the request will be authenticated and authorized before processing the attached module or event handler.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1280,12 +1280,12 @@
         <summary>Occurs as the first event in the HTTP pipeline chain of execution when ASP.NET responds to a request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.BeginRequest> event signals the creation of any given new request. This event is always raised and is always the first event to occur during the processing of a request.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.HttpApplication.BeginRequest> event signals the creation of any given new request. This event is always raised and is always the first event to occur during the processing of a request.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1351,12 +1351,12 @@
         <summary>Disposes the <see cref="T:System.Web.HttpApplication" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.Request%2A>, <xref:System.Web.HttpApplication.Response%2A>, <xref:System.Web.HttpApplication.Session%2A>, and <xref:System.Web.HttpApplication.Application%2A> properties are not available for use when the <xref:System.Web.HttpApplication.Dispose%2A> method executes.  
-  
- The <xref:System.Web.HttpApplication.Dispose%2A> method calls the <xref:System.Web.IHttpModule.Dispose%2A> method on each of the registered <xref:System.Web.Configuration.SystemWebSectionGroup.HttpModules%2A> in the application instance and raises the <xref:System.Web.HttpApplication.Disposed> event.  
-  
+The <xref:System.Web.HttpApplication.Request%2A>, <xref:System.Web.HttpApplication.Response%2A>, <xref:System.Web.HttpApplication.Session%2A>, and <xref:System.Web.HttpApplication.Application%2A> properties are not available for use when the <xref:System.Web.HttpApplication.Dispose%2A> method executes.  
+ 
+The <xref:System.Web.HttpApplication.Dispose%2A> method calls the <xref:System.Web.IHttpModule.Dispose%2A> method on each of the registered <xref:System.Web.Configuration.SystemWebSectionGroup.HttpModules%2A> in the application instance and raises the <xref:System.Web.HttpApplication.Disposed> event.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1380,12 +1380,12 @@
         <summary>Occurs when the application is disposed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create a <xref:System.Web.HttpApplication.Disposed> delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the <xref:System.Web.HttpApplication.Disposed> delegate to the event. The event handler is called whenever the event occurs, unless you remove the <xref:System.Web.HttpApplication.Disposed> delegate.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+When you create a <xref:System.Web.HttpApplication.Disposed> delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the <xref:System.Web.HttpApplication.Disposed> delegate to the event. The event handler is called whenever the event occurs, unless you remove the <xref:System.Web.HttpApplication.Disposed> delegate.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1406,12 +1406,12 @@
         <summary>Occurs as the last event in the HTTP pipeline chain of execution when ASP.NET responds to a request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.EndRequest> event is always raised when the <xref:System.Web.HttpApplication.CompleteRequest%2A> method is called.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.HttpApplication.EndRequest> event is always raised when the <xref:System.Web.HttpApplication.CompleteRequest%2A> method is called.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1432,15 +1432,15 @@
         <summary>Occurs when an unhandled exception is thrown.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The exception that raises the <xref:System.Web.HttpApplication.Error> event can be accessed by a call to the <xref:System.Web.HttpServerUtility.GetLastError%2A> method. If your application generates custom error output, suppress the default error message that is generated by ASP.NET by a call to the <xref:System.Web.HttpServerUtility.ClearError%2A> method.  
-  
+The exception that raises the <xref:System.Web.HttpApplication.Error> event can be accessed by a call to the <xref:System.Web.HttpServerUtility.GetLastError%2A> method. If your application generates custom error output, suppress the default error message that is generated by ASP.NET by a call to the <xref:System.Web.HttpServerUtility.ClearError%2A> method.  
+ 
 > [!NOTE]
 >  If your Web application contains XML Web services, you cannot use the <xref:System.Web.HttpApplication.Error> event for global exception handling of those services. The HTTP handler for XML Web services consumes any exception that occurs in an XML Web service and converts it to a SOAP fault before the <xref:System.Web.HttpApplication.Error> being called. To handle XML Web service exceptions, build a SOAP extension to process Web service exceptions in a custom global exception handler.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1484,49 +1484,49 @@
         <returns>The name of the default provider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override this method and use it to return the name of any output-cache provider that is configured for a Web site. ASP.NET retrieves a reference to the named provider and uses it to store output-cache data for the currently executing request.  
-  
- By default, in ASP.NET, all HTTP responses, rendered pages, and controls use the in-memory output cache. You can change the default output-cache provider that is used for a Web application by specifying a different provider name for `defaultProvider`.  
-  
- In addition, you can select different output-cache providers for individual control and for individual requests. The easiest way to choose a different output-cache provider for different Web user controls is to do so declaratively by using the new `providerName` attribute in a page or control directive, as shown in the following example:  
-  
+You can override this method and use it to return the name of any output-cache provider that is configured for a Web site. ASP.NET retrieves a reference to the named provider and uses it to store output-cache data for the currently executing request.  
+ 
+By default, in ASP.NET, all HTTP responses, rendered pages, and controls use the in-memory output cache. You can change the default output-cache provider that is used for a Web application by specifying a different provider name for `defaultProvider`.  
+ 
+In addition, you can select different output-cache providers for individual control and for individual requests. The easiest way to choose a different output-cache provider for different Web user controls is to do so declaratively by using the new `providerName` attribute in a page or control directive, as shown in the following example:  
+ 
 ```  
 <%@ OutputCache Duration="60" VaryByParam="None"   
-    providerName="DiskCache" %>  
+   providerName="DiskCache" %>  
 ```  
+ 
+To specify a different output cache provider for an HTTP request, you override this method in the Global.asax file to programmatically specify which provider to use for a specific request. For more information, see [ASP.NET Caching Overview](http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
+ 
   
- To specify a different output cache provider for an HTTP request, you override this method in the Global.asax file to programmatically specify which provider to use for a specific request. For more information, see [ASP.NET Caching Overview](http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to programmatically specify the cache provider named `DiskCache` for any HTTP request that goes to the Advanced.aspx page.  
-  
- [Visual Basic]  
-  
+The following example shows how to programmatically specify the cache provider named `DiskCache` for any HTTP request that goes to the Advanced.aspx page.  
+ 
+[Visual Basic]  
+ 
 ```  
 Public Overloads Overrides Sub GetOutputCacheProviderName(ByVal context _  
-        As HttpContext) As String   
-    If context.Request.Path.EndsWith("Advanced.aspx") Then   
-        Return "DiskCache"   
-    Else   
-        Return MyBase.GetOutputCacheProviderName(context)   
-    End If   
+       As HttpContext) As String   
+   If context.Request.Path.EndsWith("Advanced.aspx") Then   
+       Return "DiskCache"   
+   Else   
+       Return MyBase.GetOutputCacheProviderName(context)   
+   End If   
 End Sub  
 ```  
-  
+ 
 ```csharp  
 public override string GetOutputCacheProviderName(HttpContext context)  
 {  
-    if (context.Request.Path.EndsWith("Advanced.aspx"))  
-        return "DiskCache";  
-    else  
-        return base.GetOutputCacheProviderName(context);  
+   if (context.Request.Path.EndsWith("Advanced.aspx"))  
+       return "DiskCache";  
+   else  
+       return base.GetOutputCacheProviderName(context);  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">
@@ -1556,10 +1556,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <returns>If the value of the <paramref name="custom" /> parameter is <see langword="&quot;browser&quot;" />, the browser's <see cref="P:System.Web.Configuration.HttpCapabilitiesBase.Type" />; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override <xref:System.Web.HttpApplication.GetVaryByCustomString%2A> to add a new method for calculating custom vary-by values that are based on the current request. The implementation has to call the base class for custom values that it does not recognize. For more information, see [How to: Cache Versions of a Page Using Custom Strings](http://msdn.microsoft.com/library/b6c73735-a3cd-4d19-ba4d-0431881b0db0).  
-  
+You can override <xref:System.Web.HttpApplication.GetVaryByCustomString%2A> to add a new method for calculating custom vary-by values that are based on the current request. The implementation has to call the base class for custom values that it does not recognize. For more information, see [How to: Cache Versions of a Page Using Custom Strings](http://msdn.microsoft.com/library/b6c73735-a3cd-4d19-ba4d-0431881b0db0).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1581,10 +1581,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Executes custom initialization code after all event handler modules have been added.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a derived class, you can override the <xref:System.Web.HttpApplication.Init%2A> method to add custom one-time initialization code.  
-  
+In a derived class, you can override the <xref:System.Web.HttpApplication.Init%2A> method to add custom one-time initialization code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1605,22 +1605,22 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs just before ASP.NET performs any logging for the current request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.LogRequest> event is raised even if an error occurs. You can provide an event handler for the <xref:System.Web.HttpApplication.LogRequest> event to provide custom logging for the request.  
+The <xref:System.Web.HttpApplication.LogRequest> event is raised even if an error occurs. You can provide an event handler for the <xref:System.Web.HttpApplication.LogRequest> event to provide custom logging for the request.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
+<xref:System.Web.HttpApplication.LogRequest> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- <xref:System.Web.HttpApplication.LogRequest> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to provide an event handler for the <xref:System.Web.HttpApplication.LogRequest> event. The event handler also handles several other events. Therefore, the <xref:System.Web.HttpContext.CurrentNotification%2A> and <xref:System.Web.HttpContext.IsPostNotification%2A> properties are used to determine what code to run.  
-  
- [!code-csharp[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/CS/App_Code/TestModule.cs#1)]
- [!code-vb[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/VB/App_Code/TestModule.vb#1)]  
-  
+The following example demonstrates how to provide an event handler for the <xref:System.Web.HttpApplication.LogRequest> event. The event handler also handles several other events. Therefore, the <xref:System.Web.HttpContext.CurrentNotification%2A> and <xref:System.Web.HttpContext.IsPostNotification%2A> properties are used to determine what code to run.  
+ 
+[!code-csharp[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/CS/App_Code/TestModule.cs#1)]
+[!code-vb[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/VB/App_Code/TestModule.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1641,14 +1641,14 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when the handler is selected to respond to the request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.MapRequestHandler> event is used by the ASP.NET infrastructure to determine the request handler for the current request. For more information, see [How to: Register HTTP Handlers](http://msdn.microsoft.com/library/d5633f9a-03fb-4ccc-a799-dc67d656fa60).  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- <xref:System.Web.HttpApplication.MapRequestHandler> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+The <xref:System.Web.HttpApplication.MapRequestHandler> event is used by the ASP.NET infrastructure to determine the request handler for the current request. For more information, see [How to: Register HTTP Handlers](http://msdn.microsoft.com/library/d5633f9a-03fb-4ccc-a799-dc67d656fa60).  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
+<xref:System.Web.HttpApplication.MapRequestHandler> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1695,12 +1695,12 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when the request state (for example, session state) that is associated with the current request has been obtained.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.PostAcquireRequestState> event is raised after the <xref:System.Web.HttpApplication.AcquireRequestState> event has occurred. Functionality that subscribes to the <xref:System.Web.HttpApplication.AcquireRequestState> event can access any data that is processed by the <xref:System.Web.HttpApplication.PostAcquireRequestState>.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.HttpApplication.PostAcquireRequestState> event is raised after the <xref:System.Web.HttpApplication.AcquireRequestState> event has occurred. Functionality that subscribes to the <xref:System.Web.HttpApplication.AcquireRequestState> event can access any data that is processed by the <xref:System.Web.HttpApplication.PostAcquireRequestState>.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1721,12 +1721,12 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when a security module has established the identity of the user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.PostAuthenticateRequest> event is raised after the <xref:System.Web.HttpApplication.AuthenticateRequest> event has occurred. Functionality that subscribes to the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event can access any data that is processed by the <xref:System.Web.HttpApplication.PostAuthenticateRequest>.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.HttpApplication.PostAuthenticateRequest> event is raised after the <xref:System.Web.HttpApplication.AuthenticateRequest> event has occurred. Functionality that subscribes to the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event can access any data that is processed by the <xref:System.Web.HttpApplication.PostAuthenticateRequest>.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1747,12 +1747,12 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when the user for the current request has been authorized.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.PostAuthorizeRequest> event signals that ASP.NET has authorized the current request. Subscribing to the <xref:System.Web.HttpApplication.PostAuthorizeRequest> event ensures authentication and authorization of the request before processing the attached module or event handler.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.HttpApplication.PostAuthorizeRequest> event signals that ASP.NET has authorized the current request. Subscribing to the <xref:System.Web.HttpApplication.PostAuthorizeRequest> event ensures authentication and authorization of the request before processing the attached module or event handler.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1773,12 +1773,12 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when ASP.NET has completed processing all the event handlers for the <see cref="E:System.Web.HttpApplication.LogRequest" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- <xref:System.Web.HttpApplication.PostLogRequest> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
+<xref:System.Web.HttpApplication.PostLogRequest> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1799,10 +1799,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when ASP.NET has mapped the current request to the appropriate event handler.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1823,10 +1823,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when ASP.NET has completed executing all request event handlers and the request state data has been stored.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1847,10 +1847,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when the ASP.NET event handler (for example, a page or an XML Web service) finishes execution.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1871,10 +1871,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when ASP.NET bypasses execution of the current event handler and allows a caching module to serve a request from the cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1895,12 +1895,12 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when ASP.NET finishes updating caching modules and storing responses that are used to serve subsequent requests from the cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.PostUpdateRequestCache> event is raised after the <xref:System.Web.HttpApplication.UpdateRequestCache> event has occurred. When the <xref:System.Web.HttpApplication.PostUpdateRequestCache> is raised, ASP.NET has completed processing code and the content of the cache is finalized.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.HttpApplication.PostUpdateRequestCache> event is raised after the <xref:System.Web.HttpApplication.UpdateRequestCache> event has occurred. When the <xref:System.Web.HttpApplication.PostUpdateRequestCache> is raised, ASP.NET has completed processing code and the content of the cache is finalized.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1921,10 +1921,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs just before ASP.NET starts executing an event handler (for example, a page or an XML Web service).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1945,12 +1945,12 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs just before ASP.NET sends content to the client.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.PreSendRequestContent> event may occur multiple times.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.HttpApplication.PreSendRequestContent> event may occur multiple times.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1971,10 +1971,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs just before ASP.NET sends HTTP headers to the client.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2016,12 +2016,12 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs after ASP.NET finishes executing all request event handlers. This event causes state modules to save the current state data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Web.HttpApplication.ReleaseRequestState> event is raised, the application is finished with the request and ASP.NET is signaled to store the request state.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+When the <xref:System.Web.HttpApplication.ReleaseRequestState> event is raised, the application is finished with the request and ASP.NET is signaled to store the request state.  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2069,10 +2069,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when the managed objects that are associated with the request have been released.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplication.RequestCompleted> event is called after all managed modules and handlers in the ASP.NET pipeline have been called. It enables modules to clean up resources after all managed modules and handlers have executed. Use this event if you require a specific time to explicitly dispose of managed resources that you created during a request.  
-  
+The <xref:System.Web.HttpApplication.RequestCompleted> event is called after all managed modules and handlers in the ASP.NET pipeline have been called. It enables modules to clean up resources after all managed modules and handlers have executed. Use this event if you require a specific time to explicitly dispose of managed resources that you created during a request.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2093,10 +2093,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when ASP.NET finishes an authorization event to let the caching modules serve requests from the cache, bypassing execution of the event handler (for example, a page or an XML Web service).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2253,10 +2253,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Provides an asynchronous process <see langword="End" /> method when the process finishes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.HttpApplication.System%23Web%23IHttpAsyncHandler%23EndProcessRequest%2A> method to raise any exceptions that are caught during the asynchronous process.  
-  
+You can use the <xref:System.Web.HttpApplication.System%23Web%23IHttpAsyncHandler%23EndProcessRequest%2A> method to raise any exceptions that are caught during the asynchronous process.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2279,10 +2279,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
           <see langword="true" /> if the <see cref="T:System.Web.IHttpHandler" /> object is reusable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To explicitly set the `IsReusable` property to `true` or `false`, provide code that overrides the `IsReusable` property accessor.  
-  
+To explicitly set the `IsReusable` property to `true` or `false`, provide code that overrides the `IsReusable` property accessor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2307,10 +2307,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Enables processing of HTTP Web requests by a custom HTTP handler that implements the <see cref="T:System.Web.IHttpHandler" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit the <xref:System.Web.IHttpModule> and <xref:System.Web.IHttpHandler> interfaces are provided as a reference to an <xref:System.Web.HttpContext> object for the current HTTP request. The object provides access to the intrinsic `Request`, `Response`, and `Server` objects for the request.  
-  
+Classes that inherit the <xref:System.Web.IHttpModule> and <xref:System.Web.IHttpHandler> interfaces are provided as a reference to an <xref:System.Web.HttpContext> object for the current HTTP request. The object provides access to the intrinsic `Request`, `Response`, and `Server` objects for the request.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">In all cases.</exception>
@@ -2332,10 +2332,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Occurs when ASP.NET finishes executing an event handler in order to let caching modules store responses that will be used to serve subsequent requests from the cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2376,10 +2376,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Adds the specified <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event handlers for the current request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2393,10 +2393,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Adds the specified <see cref="E:System.Web.HttpApplication.PostLogRequest" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.PostLogRequest" /> event handlers for the current request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2410,10 +2410,10 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <summary>Adds the specified <see cref="E:System.Web.HttpApplication.LogRequest" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.LogRequest" /> event handlers for the current request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

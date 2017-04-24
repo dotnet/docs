@@ -14,10 +14,10 @@
     <summary>Implements a parser for .aspx files. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET uses this class to parse .aspx pages.  
-  
+ASP.NET uses this class to parse .aspx pages.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -37,10 +37,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PageParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets default values to be used during page parsing.  
-  
+This constructor sets default values to be used during page parsing.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -63,10 +63,10 @@
         <value>The type from which the <see cref="T:System.Web.HttpApplication" /> instance is derived.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should be accessed  in the Global.asax file before the `PreApplicationStart` event occurs.  
-  
+This property should be accessed  in the Global.asax file before the `PreApplicationStart` event occurs.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -89,10 +89,10 @@
         <value>The type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can only be set before the `PreApplicationStart` event occurs in the Global.asax file. This property can be read at any time.  
-  
+This property can only be set before the `PreApplicationStart` event occurs in the Global.asax file. This property can be read at any time.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -115,10 +115,10 @@
         <value>The type of the page parser filter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should be accessed before the `PreApplicationStart` event occurs in the Global.asax file.  
-  
+This property should be accessed before the `PreApplicationStart` event occurs in the Global.asax file.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -141,10 +141,10 @@
         <value>The type from which user controls are derived.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should be accessed before the `PreApplicationStart` event occurs in the Global.asax file.  
-  
+This property should be accessed before the `PreApplicationStart` event occurs in the Global.asax file.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -168,10 +168,10 @@
           <see langword="true" /> if ASP.NET should optimize its internal handling of long strings; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the ASP.NET page parser converts literal strings that contain 256 or more characters into a temporary resource string. This property can be set to `false` in order to disable this behavior and instead to write the literal string directly to the response stream. This property can only be set in the Global.asax file before the `PreApplicationStart` event occurs. This property can be read at any time.  
-  
+By default, the ASP.NET page parser converts literal strings that contain 256 or more characters into a temporary resource string. This property can be set to `false` in order to disable this behavior and instead to write the literal string directly to the response stream. This property can only be set in the Global.asax file before the `PreApplicationStart` event occurs. This property can be read at any time.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

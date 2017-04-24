@@ -23,26 +23,26 @@
     <summary>Collects the characteristics associated with table layouts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutSettings> class collects and manages the characteristics associated with the table layout scheme. This class is used internally by the <xref:System.Windows.Forms.TableLayoutPanel> and <xref:System.Windows.Forms.ToolStrip> classes, as well as the table layout engine. The <xref:System.Windows.Forms.TableLayoutSettings> class is used by the layout engine to determine how to lay out the container's child controls.  
-  
- The <xref:System.Windows.Forms.TableLayoutSettings> class manages the following information:  
-  
+The <xref:System.Windows.Forms.TableLayoutSettings> class collects and manages the characteristics associated with the table layout scheme. This class is used internally by the <xref:System.Windows.Forms.TableLayoutPanel> and <xref:System.Windows.Forms.ToolStrip> classes, as well as the table layout engine. The <xref:System.Windows.Forms.TableLayoutSettings> class is used by the layout engine to determine how to lay out the container's child controls.  
+ 
+The <xref:System.Windows.Forms.TableLayoutSettings> class manages the following information:  
+ 
 -   The <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> being used.  
-  
+ 
 -   The maximum number of columns and rows in the layout.  
-  
+ 
 -   The collection of styles used for the contained columns and rows.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Windows.Forms.TableLayoutSettings> object for a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
-  
+The following example shows how to initialize a <xref:System.Windows.Forms.TableLayoutSettings> object for a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
+[!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,20 +69,20 @@
         <value>The maximum number of columns allowed in the table layout. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.TableLayoutSettings.ColumnCount%2A> property does not allocate the columns or any backing memory. This allocation occurs when the columns are created.  
+Setting the <xref:System.Windows.Forms.TableLayoutSettings.ColumnCount%2A> property does not allocate the columns or any backing memory. This allocation occurs when the columns are created.  
+ 
+Setting this property causes the table to undergo another layout operation.  
+ 
   
- Setting this property causes the table to undergo another layout operation.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Windows.Forms.TableLayoutSettings> object for a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
-  
+The following example shows how to initialize a <xref:System.Windows.Forms.TableLayoutSettings> object for a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
+[!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property value is less than 0.</exception>
@@ -110,10 +110,10 @@
         <value>A <see cref="T:System.Windows.Forms.TableLayoutColumnStyleCollection" /> that contains the column styles for the layout table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.TableLayoutSettings.ColumnStyles%2A> property to access the style properties of specific columns. The order of the styles in a <xref:System.Windows.Forms.TableLayoutColumnStyleCollection?displayProperty=fullName> matches the order of the corresponding columns in the layout table.  
-  
+Use the <xref:System.Windows.Forms.TableLayoutSettings.ColumnStyles%2A> property to access the style properties of specific columns. The order of the styles in a <xref:System.Windows.Forms.TableLayoutColumnStyleCollection?displayProperty=fullName> matches the order of the corresponding columns in the layout table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,13 +144,13 @@
         <returns>A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the cell position.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.Windows.Forms.TableLayoutSettings> object to get a cell position in a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
-  
+The following example shows how to use a <xref:System.Windows.Forms.TableLayoutSettings> object to get a cell position in a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
+[!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -281,10 +281,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.TableLayoutPanelGrowStyle" /> values. The default is <see cref="F:System.Windows.Forms.TableLayoutPanelGrowStyle.AddRows" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutSettings.GrowStyle%2A> property determines how the layout engine should add a new cell to a full table. This property can be set to <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to indicate that rows should be added, <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to indicate that columns should be added, or <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to disallow expansion.  
-  
+The <xref:System.Windows.Forms.TableLayoutSettings.GrowStyle%2A> property determines how the layout engine should add a new cell to a full table. This property can be set to <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to indicate that rows should be added, <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to indicate that columns should be added, or <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to disallow expansion.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value is not valid for the enumeration type.</exception>
@@ -307,14 +307,14 @@
         <value>The <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> currently being used.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutSettings.LayoutEngine%2A> property is typically used in two contexts:  
-  
+The <xref:System.Windows.Forms.TableLayoutSettings.LayoutEngine%2A> property is typically used in two contexts:  
+ 
 -   A container that uses a table layout.  
-  
+ 
 -   A control contained within a table layout container, such as a button contained in a cell of a <xref:System.Windows.Forms.TableLayoutPanel>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -341,20 +341,20 @@
         <value>The maximum number of rows allowed in the table layout. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.TableLayoutSettings.RowCount%2A> property does not allocate the rows or any backing memory. This allocation occurs when the rows are created.  
+Setting the <xref:System.Windows.Forms.TableLayoutSettings.RowCount%2A> property does not allocate the rows or any backing memory. This allocation occurs when the rows are created.  
+ 
+Setting this property causes the table to undergo another layout operation.  
+ 
   
- Setting this property causes the table to undergo another layout operation.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Windows.Forms.TableLayoutSettings> object for a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
-  
+The following example shows how to initialize a <xref:System.Windows.Forms.TableLayoutSettings> object for a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
+[!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property value is less than 0.</exception>
@@ -382,10 +382,10 @@
         <value>A <see cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" /> that contains the row styles for the layout table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.TableLayoutSettings.RowStyles%2A> property to access the style properties of specific rows. The order of the styles in a <xref:System.Windows.Forms.TableLayoutRowStyleCollection?displayProperty=fullName> matches the order of the corresponding rows in the layout table.  
-  
+Use the <xref:System.Windows.Forms.TableLayoutSettings.RowStyles%2A> property to access the style properties of specific rows. The order of the styles in a <xref:System.Windows.Forms.TableLayoutRowStyleCollection?displayProperty=fullName> matches the order of the corresponding rows in the layout table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,13 +417,13 @@
         <summary>Sets the <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the row and the column of the cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.Windows.Forms.TableLayoutSettings> object to set a cell position in a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
-  
+The following example shows how to use a <xref:System.Windows.Forms.TableLayoutSettings> object to set a cell position in a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#2)]
+[!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -560,10 +560,10 @@
         <summary>For a description of this member, see <see cref="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TableLayoutSettings> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TableLayoutSettings> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -28,18 +28,18 @@
     <summary>Describes the source and destination of a given serialized stream, and provides an additional caller-defined context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indicates the source or destination of the bits that the formatter uses. Classes with surrogates or that implement <xref:System.Runtime.Serialization.ISerializable> can serialize or ignore fields and values based on the information stored in the streaming context. For example, a window handle is still valid if the <xref:System.Runtime.Serialization.StreamingContext.State%2A> property is set to `System.Runtime.Serialization.StreamingContextStates.CrossProcess`.  
+Indicates the source or destination of the bits that the formatter uses. Classes with surrogates or that implement <xref:System.Runtime.Serialization.ISerializable> can serialize or ignore fields and values based on the information stored in the streaming context. For example, a window handle is still valid if the <xref:System.Runtime.Serialization.StreamingContext.State%2A> property is set to `System.Runtime.Serialization.StreamingContextStates.CrossProcess`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Runtime.Serialization.StreamingContext> structure.  
-  
- [!code-csharp[StreamingContext Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext Example/CS/streamingcontext.cs#1)]
- [!code-vb[StreamingContext Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext Example/VB/streamingcontext.vb#1)]  
-  
+The following code example demonstrates the <xref:System.Runtime.Serialization.StreamingContext> structure.  
+ 
+[!code-csharp[StreamingContext Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext Example/CS/streamingcontext.cs#1)]
+[!code-vb[StreamingContext Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext Example/VB/streamingcontext.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,13 +91,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.StreamingContext" /> class with a given context state, and some additional information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.StreamingContext> class using the `state` and `additional` parameters.  
-  
- [!code-csharp[StreamingContext_Context#0](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext_Context/CS/StreamingContext_Context.cs#0)]
- [!code-vb[StreamingContext_Context#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext_Context/VB/StreamingContext_Context.vb#0)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.StreamingContext> class using the `state` and `additional` parameters.  
+ 
+[!code-csharp[StreamingContext_Context#0](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext_Context/CS/StreamingContext_Context.cs#0)]
+[!code-vb[StreamingContext_Context#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext_Context/VB/StreamingContext_Context.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,18 +124,18 @@
         <value>The context specified as part of the additional context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be `null`.  
+Can be `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.StreamingContext> class using the `state` and `additional` parameters. The code also shows the deserialization of an object and retrieving the value of the <xref:System.Runtime.Serialization.StreamingContext.Context%2A> property.  
-  
- [!code-csharp[StreamingContext_Context#0](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext_Context/CS/StreamingContext_Context.cs#0)]
- [!code-vb[StreamingContext_Context#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext_Context/VB/StreamingContext_Context.vb#0)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.StreamingContext> class using the `state` and `additional` parameters. The code also shows the deserialization of an object and retrieving the value of the <xref:System.Runtime.Serialization.StreamingContext.Context%2A> property.  
+ 
+[!code-csharp[StreamingContext_Context#0](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext_Context/CS/StreamingContext_Context.cs#0)]
+[!code-vb[StreamingContext_Context#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext_Context/VB/StreamingContext_Context.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
           <see langword="true" /> if the specified object is an instance of <see cref="T:System.Runtime.Serialization.StreamingContext" /> and equals the value of the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two code groups are equivalent if they have the same <xref:System.Runtime.Serialization.StreamingContext.Context%2A> and <xref:System.Runtime.Serialization.StreamingContext.State%2A>.  
-  
+Two code groups are equivalent if they have the same <xref:System.Runtime.Serialization.StreamingContext.Context%2A> and <xref:System.Runtime.Serialization.StreamingContext.State%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,16 +229,16 @@
         <value>During serialization, the destination of the transmitted data. During deserialization, the source of the data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During serialization, the current property specifies the destination of the transmitted data. For example, when serializing data from cross-AppDomain remoting, the <xref:System.Runtime.Serialization.StreamingContextStates> is <xref:System.Runtime.Serialization.StreamingContextStates>. During deserialization, the state indicates the source of the deserialized stream.  
+During serialization, the current property specifies the destination of the transmitted data. For example, when serializing data from cross-AppDomain remoting, the <xref:System.Runtime.Serialization.StreamingContextStates> is <xref:System.Runtime.Serialization.StreamingContextStates>. During deserialization, the state indicates the source of the deserialized stream.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[StreamingContext Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext Example/CS/streamingcontext.cs#1)]
- [!code-vb[StreamingContext Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext Example/VB/streamingcontext.vb#1)]  
-  
+[!code-csharp[StreamingContext Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/StreamingContext Example/CS/streamingcontext.cs#1)]
+[!code-vb[StreamingContext Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/StreamingContext Example/VB/streamingcontext.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

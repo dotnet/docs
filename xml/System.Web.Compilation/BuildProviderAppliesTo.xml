@@ -18,10 +18,10 @@
     <summary>Specifies the locations where the <see cref="T:System.Web.Compilation.BuildProviderAppliesToAttribute" /> attribute is respected during code generation for a resource by a <see cref="T:System.Web.Compilation.BuildProvider" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.Compilation.BuildProvider> object provides functionality to parse a particular file type and generate code during compilation of a resource. A build provider generates code for those resources that correspond to the ttribute attribute and which have the extension mapped to the build provider.  
-  
+A <xref:System.Web.Compilation.BuildProvider> object provides functionality to parse a particular file type and generate code during compilation of a resource. A build provider generates code for those resources that correspond to the ttribute attribute and which have the extension mapped to the build provider.  
+ 
  ]]></format>
     </remarks>
   </Docs>

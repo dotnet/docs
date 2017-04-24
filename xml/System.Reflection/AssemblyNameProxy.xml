@@ -71,10 +71,10 @@
         <returns>An <see langword="AssemblyName" /> object representing the given file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This will only work if the file contains an assembly manifest. This method causes the file to be opened and closed.  
-  
+This will only work if the file contains an assembly manifest. This method causes the file to be opened and closed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

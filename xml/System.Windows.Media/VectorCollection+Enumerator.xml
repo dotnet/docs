@@ -18,10 +18,10 @@
     <summary>Enumerates <see cref="T:System.Windows.Vector" /> items in a <see cref="T:System.Windows.Media.VectorCollection" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Except where noted, members of this structure behave exactly as described by the <xref:System.Collections.IEnumerator> interface.  
-  
+Except where noted, members of this structure behave exactly as described by the <xref:System.Collections.IEnumerator> interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
           <see langword="true" /> if the enumerator successfully advanced to the next element; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method also returns `false` if the enumerator has passed the final element in the collection.  
-  
+This method also returns `false` if the enumerator has passed the final element in the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.VectorCollection" /> was modified after the enumerator was created.</exception>

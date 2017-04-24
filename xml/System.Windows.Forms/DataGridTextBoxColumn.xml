@@ -14,28 +14,28 @@
     <summary>Hosts a <see cref="T:System.Windows.Forms.TextBox" /> control in a cell of a <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> for editing strings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridTextBoxColumn> class derives from the `abstract` class <xref:System.Windows.Forms.DataGridColumnStyle>. At run time, the <xref:System.Windows.Forms.DataGridTextBoxColumn> hosts a <xref:System.Windows.Forms.DataGridTextBox> control that allows users to edit text.  
-  
- Special properties added to the class include <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A>, and <xref:System.Windows.Forms.DataGridTextBoxColumn.HideEditBox%2A>. These properties allow you to access the hosted <xref:System.Windows.Forms.DataGridTextBox> control and its attributes, and set the format for displaying values.  
-  
- If the data source is a <xref:System.Data.DataTable> containing <xref:System.Data.DataColumn> objects, the <xref:System.Data.DataColumn.DataType%2A> property of the <xref:System.Data.DataColumn> should be set to a data type that can logically be edited in a text box control. The following data types are automatically associated with a <xref:System.Windows.Forms.DataGridTextBoxColumn> : <xref:System.Byte>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Single>, and <xref:System.String>.  
-  
- [Visual Basic]  
-  
+The <xref:System.Windows.Forms.DataGridTextBoxColumn> class derives from the `abstract` class <xref:System.Windows.Forms.DataGridColumnStyle>. At run time, the <xref:System.Windows.Forms.DataGridTextBoxColumn> hosts a <xref:System.Windows.Forms.DataGridTextBox> control that allows users to edit text.  
+ 
+Special properties added to the class include <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A>, and <xref:System.Windows.Forms.DataGridTextBoxColumn.HideEditBox%2A>. These properties allow you to access the hosted <xref:System.Windows.Forms.DataGridTextBox> control and its attributes, and set the format for displaying values.  
+ 
+If the data source is a <xref:System.Data.DataTable> containing <xref:System.Data.DataColumn> objects, the <xref:System.Data.DataColumn.DataType%2A> property of the <xref:System.Data.DataColumn> should be set to a data type that can logically be edited in a text box control. The following data types are automatically associated with a <xref:System.Windows.Forms.DataGridTextBoxColumn> : <xref:System.Byte>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Single>, and <xref:System.String>.  
+ 
+[Visual Basic]  
+ 
 > [!NOTE]
 >  The following types are not fully supported by Visual Basic: <xref:System.DateTime>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.TimeSpan>. (Operators are not allowed.)  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Forms.DataGridTextBoxColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> of a <xref:System.Windows.Forms.DataGrid>. To run this code example, paste it into a form that has a <xref:System.Windows.Forms.DataGrid> named `dataGrid1` and call it from the constructor of the <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Windows.Forms.DataGridTextBoxColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> of a <xref:System.Windows.Forms.DataGrid>. To run this code example, paste it into a form that has a <xref:System.Windows.Forms.DataGrid> named `dataGrid1` and call it from the constructor of the <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,14 +54,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Forms.DataGridTextBoxColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> collection.  
-  
- [!code-cpp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Windows.Forms.DataGridTextBoxColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> collection.  
+ 
+[!code-cpp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,19 +83,19 @@
         <summary>Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> with a specified <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
+The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Forms.DataGridTextBoxColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> collection.  
-  
- [!code-cpp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Windows.Forms.DataGridTextBoxColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> collection.  
+ 
+[!code-cpp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> class using the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />. Specifies whether the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> is a default column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
-  
+The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,23 +146,23 @@
         <summary>Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> with the specified <see cref="T:System.ComponentModel.PropertyDescriptor" /> and format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create a custom format for the displayed data.  
+Use this constructor to create a custom format for the displayed data.  
+ 
+The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
+ 
+For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+ 
   
- The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
-  
- For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cpp[DataGridTextBoxColumn_DataGridTextBoxColumn_2#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBoxColumn_DataGridTextBoxColumn_2/CPP/datagridtextboxcolumn_2.cpp#2)]
- [!code-csharp[DataGridTextBoxColumn_DataGridTextBoxColumn_2#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBoxColumn_DataGridTextBoxColumn_2/CS/datagridtextboxcolumn_datagridtextboxcolumn_2.cs#2)]
- [!code-vb[DataGridTextBoxColumn_DataGridTextBoxColumn_2#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBoxColumn_DataGridTextBoxColumn_2/VB/datagridtextboxcolumn_datagridtextboxcolumn_2.vb#2)]  
-  
+The following code example demonstrates the use of this member.  
+ 
+[!code-cpp[DataGridTextBoxColumn_DataGridTextBoxColumn_2#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBoxColumn_DataGridTextBoxColumn_2/CPP/datagridtextboxcolumn_2.cpp#2)]
+[!code-csharp[DataGridTextBoxColumn_DataGridTextBoxColumn_2#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBoxColumn_DataGridTextBoxColumn_2/CS/datagridtextboxcolumn_datagridtextboxcolumn_2.cs#2)]
+[!code-vb[DataGridTextBoxColumn_DataGridTextBoxColumn_2#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBoxColumn_DataGridTextBoxColumn_2/VB/datagridtextboxcolumn_datagridtextboxcolumn_2.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,10 +188,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> class with a specified <see cref="T:System.ComponentModel.PropertyDescriptor" /> and format. Specifies whether the column is the default column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
-  
+The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <summary>Initiates a request to interrupt an edit procedure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method rolls back any change made to the column and invokes the <xref:System.Windows.Forms.DataGridTextBoxColumn.HideEditBox%2A> and <xref:System.Windows.Forms.DataGridTextBoxColumn.EndEdit%2A> methods.  
-  
+This method rolls back any change made to the column and invokes the <xref:System.Windows.Forms.DataGridTextBoxColumn.HideEditBox%2A> and <xref:System.Windows.Forms.DataGridTextBoxColumn.EndEdit%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,12 +248,12 @@
           <see langword="true" /> if the value was successfully committed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method checks to ensure that an edit is indeed occurring. If so, it formats the value appropriately. If the value is `null`, the method enters <xref:System.Convert.DBNull> into the column; otherwise, it uses the <xref:System.Windows.Forms.DataGridColumnStyle.SetColumnValueAtRow%2A> method to commit the value.  
-  
- The method is called by the <xref:System.Windows.Forms.DataGrid> when an editing operation is committed.  
-  
+The method checks to ensure that an edit is indeed occurring. If so, it formats the value appropriately. If the value is `null`, the method enters <xref:System.Convert.DBNull> into the column; otherwise, it uses the <xref:System.Windows.Forms.DataGridColumnStyle.SetColumnValueAtRow%2A> method to commit the value.  
+ 
+The method is called by the <xref:System.Windows.Forms.DataGrid> when an editing operation is committed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,10 +275,10 @@
         <summary>Informs the column that the focus is being conceded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this overridden method, the <xref:System.Windows.Forms.TextBox> control hosted by the <xref:System.Windows.Forms.DataGridTextBoxColumn> is hidden.  
-  
+In this overridden method, the <xref:System.Windows.Forms.TextBox> control hosted by the <xref:System.Windows.Forms.DataGridTextBoxColumn> is hidden.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,19 +313,19 @@
         <summary>Prepares a cell for editing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridColumnStyle.Edit%2A> sites a <xref:System.Windows.Forms.TextBox> control on the grid at the location of the cell being edited. The method is called by the <xref:System.Windows.Forms.DataGrid> class's <xref:System.Windows.Forms.DataGrid.BeginEdit%2A> method when an editing operation is about to begin.  
+The <xref:System.Windows.Forms.DataGridColumnStyle.Edit%2A> sites a <xref:System.Windows.Forms.TextBox> control on the grid at the location of the cell being edited. The method is called by the <xref:System.Windows.Forms.DataGrid> class's <xref:System.Windows.Forms.DataGrid.BeginEdit%2A> method when an editing operation is about to begin.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.Edit%2A> method to change the text of a clicked cell in the <xref:System.Windows.Forms.DataGrid> control.  
-  
- [!code-cpp[Classic DataGridTextBoxColumn.Edit Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Edit Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridTextBoxColumn.Edit Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Edit Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridTextBoxColumn.Edit Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Edit Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.Edit%2A> method to change the text of a clicked cell in the <xref:System.Windows.Forms.DataGrid> control.  
+ 
+[!code-cpp[Classic DataGridTextBoxColumn.Edit Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Edit Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridTextBoxColumn.Edit Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Edit Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridTextBoxColumn.Edit Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Edit Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,17 +347,17 @@
         <summary>Ends an edit operation on the <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To edit the value of a cell, call the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.BeginEdit%2A> before changing the value. You must invoke the <xref:System.Data.DataRow.AcceptChanges%2A> method on both the <xref:System.Data.DataRow> and <xref:System.Data.DataTable> objects before the change is committed.  
+To edit the value of a cell, call the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.BeginEdit%2A> before changing the value. You must invoke the <xref:System.Data.DataRow.AcceptChanges%2A> method on both the <xref:System.Data.DataRow> and <xref:System.Data.DataTable> objects before the change is committed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example invokes the <xref:System.Windows.Forms.DataGridTextBoxColumn.EndEdit%2A> method before editing a column's value.  
-  
- [!code-vb[Classic DataGridTextBoxColumn.EndEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.EndEdit Example/VB/source.vb#1)]  
-  
+The following example invokes the <xref:System.Windows.Forms.DataGridTextBoxColumn.EndEdit%2A> method before editing a column's value.  
+ 
+[!code-vb[Classic DataGridTextBoxColumn.EndEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.EndEdit Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,17 +379,17 @@
         <summary>Enters a <see cref="F:System.DBNull.Value" /> in the column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enters the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> value into the cell.  
+Enters the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> value into the cell.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example tests a <xref:System.Windows.Forms.DataGridColumnStyle> to determine its column type. If the column is a <xref:System.Windows.Forms.DataGridTextBoxColumn>, and the <xref:System.Data.DataColumn> allows `null` values, then the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> property is set and the <xref:System.Windows.Forms.DataGridTextBoxColumn.EnterNullValue%2A> method invoked.  
-  
- [!code-vb[Classic DataGridTextBoxColumn.EnterNullValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.EnterNullValue Example/VB/source.vb#1)]  
-  
+The following example tests a <xref:System.Windows.Forms.DataGridColumnStyle> to determine its column type. If the column is a <xref:System.Windows.Forms.DataGridTextBoxColumn>, and the <xref:System.Data.DataColumn> allows `null` values, then the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> property is set and the <xref:System.Windows.Forms.DataGridTextBoxColumn.EnterNullValue%2A> method invoked.  
+ 
+[!code-vb[Classic DataGridTextBoxColumn.EnterNullValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.EnterNullValue Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -419,27 +419,27 @@
         <value>The character or characters that specify how text is formatted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property specifies how values are displayed in the column. For example, set the property to "c" to specify that the values will be formatted as the local currency. The <xref:System.Globalization.CultureInfo> for the computer is used to determine the actual currency format. The values are automatically unformatted to the native type when data is changed.  
+The <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property specifies how values are displayed in the column. For example, set the property to "c" to specify that the values will be formatted as the local currency. The <xref:System.Globalization.CultureInfo> for the computer is used to determine the actual currency format. The values are automatically unformatted to the native type when data is changed.  
+ 
+For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+ 
+The format you apply should be appropriate to the data type. For example, if the data is numeric in nature use one of the numeric format strings.  
+ 
+You can change the <xref:System.Globalization.CultureInfo> for a <xref:System.Windows.Forms.DataGridTextBoxColumn> by setting the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to a new <xref:System.Globalization.CultureInfo> instance constructed with an appropriate culture ID.  
+ 
+To set the <xref:System.Globalization.CultureInfo> for the application, set the <xref:System.Windows.Forms.Application.CurrentCulture%2A> property of the <xref:System.Windows.Forms.Application> object to a new <xref:System.Globalization.CultureInfo> instance constructed with an appropriate culture ID.  
+ 
   
- For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
-  
- The format you apply should be appropriate to the data type. For example, if the data is numeric in nature use one of the numeric format strings.  
-  
- You can change the <xref:System.Globalization.CultureInfo> for a <xref:System.Windows.Forms.DataGridTextBoxColumn> by setting the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to a new <xref:System.Globalization.CultureInfo> instance constructed with an appropriate culture ID.  
-  
- To set the <xref:System.Globalization.CultureInfo> for the application, set the <xref:System.Windows.Forms.Application.CurrentCulture%2A> property of the <xref:System.Windows.Forms.Application> object to a new <xref:System.Globalization.CultureInfo> instance constructed with an appropriate culture ID.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Globalization.CultureInfo> object and assigns it to the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property of a <xref:System.Windows.Forms.DataGridTextBoxColumn> object. The example also sets the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to "c" to specify that the column should display values as currency.  
-  
- [!code-cpp[DataGridTextBoxColumn Format#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CPP/datagridtextboxcolumn format.cpp#1)]
- [!code-csharp[DataGridTextBoxColumn Format#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CS/datagridtextboxcolumn format.cs#1)]
- [!code-vb[DataGridTextBoxColumn Format#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBoxColumn Format/VB/datagridtextboxcolumn format.vb#1)]  
-  
+The following example creates a new <xref:System.Globalization.CultureInfo> object and assigns it to the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property of a <xref:System.Windows.Forms.DataGridTextBoxColumn> object. The example also sets the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to "c" to specify that the column should display values as currency.  
+ 
+[!code-cpp[DataGridTextBoxColumn Format#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CPP/datagridtextboxcolumn format.cpp#1)]
+[!code-csharp[DataGridTextBoxColumn Format#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CS/datagridtextboxcolumn format.cs#1)]
+[!code-vb[DataGridTextBoxColumn Format#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBoxColumn Format/VB/datagridtextboxcolumn format.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -469,21 +469,21 @@
         <value>An object that implements the <see cref="T:System.IFormatProvider" /> interface, such as the <see cref="T:System.Globalization.CultureInfo" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When setting the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to one of the formatting characters, the <xref:System.Windows.Forms.DataGridTextBoxColumn> uses the information provided by the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to further specify what cultural-specific formatting to use. For example, when the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property is set to the format character "c" (for currency), you can further specify that the symbol for the lira be used. To do this, create a new <xref:System.Globalization.CultureInfo> object with the locale ID for Italy, and set the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to the new <xref:System.Globalization.CultureInfo> object.  
+When setting the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to one of the formatting characters, the <xref:System.Windows.Forms.DataGridTextBoxColumn> uses the information provided by the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to further specify what cultural-specific formatting to use. For example, when the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property is set to the format character "c" (for currency), you can further specify that the symbol for the lira be used. To do this, create a new <xref:System.Globalization.CultureInfo> object with the locale ID for Italy, and set the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to the new <xref:System.Globalization.CultureInfo> object.  
+ 
+For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+ 
   
- For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Globalization.CultureInfo> object and assigns it to the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property of a <xref:System.Windows.Forms.DataGridTextBoxColumn> object. The example also sets the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to "c" to specify that the column should display values as currency.  
-  
- [!code-cpp[DataGridTextBoxColumn Format#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CPP/datagridtextboxcolumn format.cpp#1)]
- [!code-csharp[DataGridTextBoxColumn Format#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CS/datagridtextboxcolumn format.cs#1)]
- [!code-vb[DataGridTextBoxColumn Format#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBoxColumn Format/VB/datagridtextboxcolumn format.vb#1)]  
-  
+The following example creates a new <xref:System.Globalization.CultureInfo> object and assigns it to the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property of a <xref:System.Windows.Forms.DataGridTextBoxColumn> object. The example also sets the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to "c" to specify that the column should display values as currency.  
+ 
+[!code-cpp[DataGridTextBoxColumn Format#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CPP/datagridtextboxcolumn format.cpp#1)]
+[!code-csharp[DataGridTextBoxColumn Format#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CS/datagridtextboxcolumn format.cs#1)]
+[!code-vb[DataGridTextBoxColumn Format#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBoxColumn Format/VB/datagridtextboxcolumn format.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -506,10 +506,10 @@
         <returns>The height of a cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value returned by <xref:System.Windows.Forms.DataGridTextBoxColumn.GetMinimumHeight%2A> is calculated by adding the size of the column's font plus a margin value.  
-  
+The value returned by <xref:System.Windows.Forms.DataGridTextBoxColumn.GetMinimumHeight%2A> is calculated by adding the size of the column's font plus a margin value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,14 +537,14 @@
         <returns>The height the cells automatically resize to.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredHeight%2A> to return the height a column is automatically resized to.  
-  
- [!code-cpp[Classic DataGridTextBoxColumn.GetPreferredHeight Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredHeight Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridTextBoxColumn.GetPreferredHeight Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredHeight Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridTextBoxColumn.GetPreferredHeight Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredHeight Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredHeight%2A> to return the height a column is automatically resized to.  
+ 
+[!code-cpp[Classic DataGridTextBoxColumn.GetPreferredHeight Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredHeight Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridTextBoxColumn.GetPreferredHeight Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredHeight Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridTextBoxColumn.GetPreferredHeight Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredHeight Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -572,19 +572,19 @@
         <returns>A <see cref="T:System.Drawing.Size" /> that contains the dimensions of the cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The optimum width and height is calculated by measuring the string size, taking into account its font and attributes, and adding margin values.  
+The optimum width and height is calculated by measuring the string size, taking into account its font and attributes, and adding margin values.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredSize%2A> to return a <xref:System.Drawing.Size>.  
-  
- [!code-cpp[Classic DataGridTextBoxColumn.GetPreferredSize Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredSize Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridTextBoxColumn.GetPreferredSize Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredSize Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridTextBoxColumn.GetPreferredSize Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredSize Example/VB/source.vb#1)]  
-  
+The following example uses <xref:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredSize%2A> to return a <xref:System.Drawing.Size>.  
+ 
+[!code-cpp[Classic DataGridTextBoxColumn.GetPreferredSize Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredSize Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridTextBoxColumn.GetPreferredSize Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredSize Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridTextBoxColumn.GetPreferredSize Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredSize Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -662,10 +662,10 @@
         <summary>Paints a <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> with the specified <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" />, row number, and alignment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridTextBoxColumn.Paint%2A> method uses the <xref:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow%2A> to determine the value to draw in the cell. The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method is called to draw the cell and its contents.  
-  
+The <xref:System.Windows.Forms.DataGridTextBoxColumn.Paint%2A> method uses the <xref:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow%2A> to determine the value to draw in the cell. The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method is called to draw the cell and its contents.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -702,19 +702,19 @@
         <summary>Paints a <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> with the specified <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" />, row number, <see cref="T:System.Drawing.Brush" />, and foreground color.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridTextBoxColumn.Paint%2A> method uses the <xref:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow%2A> to determine the value to draw in the cell. The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method is called to draw the cell and its contents.  
+The <xref:System.Windows.Forms.DataGridTextBoxColumn.Paint%2A> method uses the <xref:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow%2A> to determine the value to draw in the cell. The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method is called to draw the cell and its contents.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.Paint%2A> method to paint a clicked cell with new foreground and background color.  
-  
- [!code-cpp[Classic DataGridTextBoxColumn.Paint2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Paint2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridTextBoxColumn.Paint2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Paint2 Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridTextBoxColumn.Paint2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Paint2 Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.Paint%2A> method to paint a clicked cell with new foreground and background color.  
+ 
+[!code-cpp[Classic DataGridTextBoxColumn.Paint2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Paint2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridTextBoxColumn.Paint2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Paint2 Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridTextBoxColumn.Paint2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Paint2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -745,12 +745,12 @@
         <summary>Draws the text and rectangle at the given location with the specified alignment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method uses the <xref:System.Windows.Forms.DataFormats.Format> object set with the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to format the value before drawing it to the screen.  
-  
- The <xref:System.Windows.Forms.DataGridColumnStyle.Paint%2A> method calls the <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method.  
-  
+The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method uses the <xref:System.Windows.Forms.DataFormats.Format> object set with the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to format the value before drawing it to the screen.  
+ 
+The <xref:System.Windows.Forms.DataGridColumnStyle.Paint%2A> method calls the <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -785,12 +785,12 @@
         <summary>Draws the text and rectangle at the specified location with the specified colors and alignment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to format the value before drawing it to the screen.  
-  
- The <xref:System.Windows.Forms.DataGridColumnStyle.Paint%2A> method calls the <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method.  
-  
+The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to format the value before drawing it to the screen.  
+ 
+The <xref:System.Windows.Forms.DataGridColumnStyle.Paint%2A> method calls the <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -817,14 +817,14 @@
         <value>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that formats the values displayed in the column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example sets the <xref:System.ComponentModel.PropertyDescriptor> property of the <xref:System.Windows.Forms.DataGridTextBoxColumn>.  
-  
+The following example sets the <xref:System.ComponentModel.PropertyDescriptor> property of the <xref:System.Windows.Forms.DataGridTextBoxColumn>.  
+ 
 ```  
 [SampleID='Classic DataGridTextBoxColumn.PropertyDescriptor Example' SnippetID='1']  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -865,10 +865,10 @@
         <summary>Removes the reference that the <see cref="T:System.Windows.Forms.DataGrid" /> holds to the control used to edit data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method removes the reference that the <xref:System.Windows.Forms.DataGrid> holds to the <xref:System.Windows.Forms.DataGridTextBox> control, in order to free system resources.  
-  
+This method removes the reference that the <xref:System.Windows.Forms.DataGrid> holds to the <xref:System.Windows.Forms.DataGridTextBox> control, in order to free system resources.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -893,10 +893,10 @@
         <summary>Adds a <see cref="T:System.Windows.Forms.TextBox" /> control to the <see cref="T:System.Windows.Forms.DataGrid" /> control's <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this methods is called, the hosted <xref:System.Windows.Forms.TextBox> control is added to the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.Control.ControlCollection>. This allows the <xref:System.Windows.Forms.CurrencyManager> to associate both controls with the same data source.  
-  
+When this methods is called, the hosted <xref:System.Windows.Forms.TextBox> control is added to the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.Control.ControlCollection>. This allows the <xref:System.Windows.Forms.CurrencyManager> to associate both controls with the same data source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -923,12 +923,12 @@
         <value>A <see cref="T:System.Windows.Forms.TextBox" /> control hosted by the column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example changes the background color of the hosted <xref:System.Windows.Forms.TextBox> control.  
-  
- [!code-vb[Classic DataGridTextBoxColumn.TextBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.TextBox Example/VB/source.vb#1)]  
-  
+The following example changes the background color of the hosted <xref:System.Windows.Forms.TextBox> control.  
+ 
+[!code-vb[Classic DataGridTextBoxColumn.TextBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.TextBox Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

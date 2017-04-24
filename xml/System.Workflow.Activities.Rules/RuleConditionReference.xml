@@ -58,10 +58,10 @@
         <value>The <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to evaluate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The actual condition definition behind a <xref:System.Workflow.Activities.Rules.RuleConditionReference> is of type <xref:System.Workflow.Activities.Rules.RuleExpressionCondition>, which is derived from <xref:System.Workflow.Activities.Rules.RuleCondition>. This defines the rule condition.  
-  
+The actual condition definition behind a <xref:System.Workflow.Activities.Rules.RuleConditionReference> is of type <xref:System.Workflow.Activities.Rules.RuleExpressionCondition>, which is derived from <xref:System.Workflow.Activities.Rules.RuleCondition>. This defines the rule condition.  
+ 
  ]]></format>
         </remarks>
       </Docs>

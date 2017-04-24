@@ -26,10 +26,10 @@
     <summary>Provides a base class for viewers that are intended to display fixed or flow content (represented by a <see cref="T:System.Windows.Documents.FixedDocument" /> or <see cref="T:System.Windows.Documents.FlowDocument" />, respectively).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.DocumentViewerBase> is a minimal base class, intended to provide only basic functionality that is common across document viewing scenarios. This base class provides no user interface.  
-  
+<xref:System.Windows.Controls.Primitives.DocumentViewerBase> is a minimal base class, intended to provide only basic functionality that is common across document viewing scenarios. This base class provides no user interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <summary>Cancels any current printing job.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Print%2A>  
-  
+<xref:System.Windows.Controls.Primitives.DocumentViewerBase.Print%2A>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,17 +93,17 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CanGoToNextPage"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPageProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage" /> dependency property key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPagePropertyKey> as the `key` parameter.  
-  
+If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPagePropertyKey> as the `key` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,17 +190,17 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CanGoToPreviousPage"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPageProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage" /> dependency property key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPagePropertyKey> as the `key` parameter.  
-  
+If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPagePropertyKey> as the `key` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,17 +265,17 @@
  The default property is **null**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Document"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.DocumentProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <returns>The value of the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage" /> attached property, read from the dependency object specified by *element*.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
+The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised if <paramref name="element" /> is <see langword="null" />.</exception>
@@ -363,10 +363,10 @@
         <returns>The current master <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> for this viewer, or **null** if no master <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> can be found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
+A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -392,10 +392,10 @@
         <returns>A read-only collection of <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> objects that are associated with the current display document.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  
-  
+A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -420,10 +420,10 @@
         <summary>Causes the viewer to jump to a specified page number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If *pageNumber* specifies an invalid page to go to (as indicated by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage%2A> method), this method does nothing.  
-  
+If *pageNumber* specifies an invalid page to go to (as indicated by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage%2A> method), this method does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -500,10 +500,10 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the viewer has no logical children, an empty enumerator is returned.  
-  
+If the viewer has no logical children, an empty enumerator is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -527,18 +527,18 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
+The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ 
 <a name="dependencyPropertyInfo_MasterPageNumber"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumberProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,10 +576,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber" /> dependency property key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing <xref:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumberPropertyKey> as the `key` parameter.  
-  
+If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing <xref:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumberPropertyKey> as the `key` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -619,12 +619,12 @@
         <summary>Builds the visual tree for the viewer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked whenever <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> is called.  
-  
- This method overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A>.  
-  
+This method is invoked whenever <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> is called.  
+ 
+This method overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -653,10 +653,10 @@
         <summary>Invoked whenever the <see cref="E:System.Windows.FrameworkElement.RequestBringIntoView" /> event reaches an element derived from this class in its route.  Implement this method to add class handling for this event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base implementation of this method will cause the viewer to jump to the page indicated by *pageNumber*.  
-  
+The base implementation of this method will cause the viewer to jump to the page indicated by *pageNumber*.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised if *element* is **null**.</exception>
@@ -679,10 +679,10 @@
         <summary>Handles the <see cref="P:System.Windows.Input.ApplicationCommands.CancelPrint" /> routed command.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when the <xref:System.Windows.Input.ApplicationCommands.CancelPrint%2A> command is invoked.  
-  
+This method is called when the <xref:System.Windows.Input.ApplicationCommands.CancelPrint%2A> command is invoked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -705,10 +705,10 @@
         <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this viewer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A>.  
-  
+This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -730,10 +730,10 @@
         <summary>Called whenever the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" /> property is modified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method causes the working set of <xref:System.Windows.Controls.Primitives.DocumentPageView> objects (represented by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> property) to be invalidated and regenerated.  
-  
+This method causes the working set of <xref:System.Windows.Controls.Primitives.DocumentPageView> objects (represented by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> property) to be invalidated and regenerated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -778,10 +778,10 @@
         <summary>Handles the <see cref="P:System.Windows.Input.NavigationCommands.FirstPage" /> routed command.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.FirstPage%2A> routed command causes the viewer to jump to the first page in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  
-  
+The <xref:System.Windows.Input.NavigationCommands.FirstPage%2A> routed command causes the viewer to jump to the first page in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -806,12 +806,12 @@
         <summary>Handles the <see cref="P:System.Windows.Input.NavigationCommands.GoToPage" /> routed command.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.GoToPage%2A> routed command cause the viewer to jump to an indicated page number in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage%2A> method indicates whether or not a specified page number is a valid page to jump to in the current document.  
-  
- If *pageNumber* specifies an invalid page to go to (as indicated by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage%2A> method), this method does nothing.  
-  
+The <xref:System.Windows.Input.NavigationCommands.GoToPage%2A> routed command cause the viewer to jump to an indicated page number in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage%2A> method indicates whether or not a specified page number is a valid page to jump to in the current document.  
+ 
+If *pageNumber* specifies an invalid page to go to (as indicated by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage%2A> method), this method does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -833,10 +833,10 @@
         <summary>Handles the <see cref="P:System.Windows.Input.NavigationCommands.LastPage" /> routed command.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.LastPage%2A> routed command causes the viewer to jump to the last page in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  
-  
+The <xref:System.Windows.Input.NavigationCommands.LastPage%2A> routed command causes the viewer to jump to the last page in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -858,10 +858,10 @@
         <summary>Called whenever the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber" /> property is modified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
+The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -883,10 +883,10 @@
         <summary>Handles the <see cref="P:System.Windows.Input.NavigationCommands.NextPage" /> routed command.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.NextPage%2A> routed command causes the viewer to jump to the next page (if available) in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage%2A> property indicates whether or not there is a next page to go to in the current document.  
-  
+The <xref:System.Windows.Input.NavigationCommands.NextPage%2A> routed command causes the viewer to jump to the next page (if available) in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage%2A> property indicates whether or not there is a next page to go to in the current document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -926,10 +926,10 @@
         <summary>Handles the <see cref="P:System.Windows.Input.NavigationCommands.PreviousPage" /> routed command.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.PreviousPage%2A> routed command causes the viewer to jump to the next page (if available) in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage%2A> property indicates whether or not there is a previous page to go to in the current document.  
-  
+The <xref:System.Windows.Input.NavigationCommands.PreviousPage%2A> routed command causes the viewer to jump to the next page (if available) in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage%2A> property indicates whether or not there is a previous page to go to in the current document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -951,10 +951,10 @@
         <summary>Handles the <see cref="P:System.Windows.Input.ApplicationCommands.Print" /> routed command.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called whenever the <xref:System.Windows.Input.ApplicationCommands.Print%2A> command is invoked.  
-  
+This method is called whenever the <xref:System.Windows.Input.ApplicationCommands.Print%2A> command is invoked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -978,18 +978,18 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is updated as content is paginated.  Because flow content has no notion of fixed pages, the value of this property may change if the viewer is resized, or if the content being displayed is modified.  
-  
+This value is updated as content is paginated.  Because flow content has no notion of fixed pages, the value of this property may change if the viewer is resized, or if the content being displayed is modified.  
+ 
 <a name="dependencyPropertyInfo_PageCount"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageCountProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1027,10 +1027,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.PageCount" /> dependency property key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageCount%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageCountPropertyKey> as the `key` parameter.  
-  
+If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageCount%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageCountPropertyKey> as the `key` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1059,12 +1059,12 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  The set of <xref:System.Windows.Controls.Primitives.DocumentPageView> objects represented by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> property is used by the viewer in order to display content.  
-  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
+A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  The set of <xref:System.Windows.Controls.Primitives.DocumentPageView> objects represented by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> property is used by the viewer in order to display content.  
+ 
+The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1121,12 +1121,12 @@
         <summary>Invokes a standard **Print** dialog which can be used to print the contents of the viewer and configure printing preferences.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following figure shows an example of a standard **Print** dialog.  Note that the specific appearance of the **Print** dialog may vary depending on the hosting computer's configuration.  
-  
- ![Screenshot: Print dialog box](~/add/media/flowdocrdr-print.png "Screenshot: Print dialog box")  
-  
+The following figure shows an example of a standard **Print** dialog.  Note that the specific appearance of the **Print** dialog may vary depending on the hosting computer's configuration.  
+ 
+![Screenshot: Print dialog box](~/add/media/flowdocrdr-print.png "Screenshot: Print dialog box")  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1153,10 +1153,10 @@
         <summary>Sets the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage" /> attached property on a specified dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
+The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised if *element* is **null**.</exception>

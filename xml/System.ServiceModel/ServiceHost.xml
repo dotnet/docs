@@ -14,22 +14,22 @@
     <summary>Provides a host for services.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implements the host used by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service model programming model.  
+Implements the host used by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service model programming model.  
+ 
+Use the <xref:System.ServiceModel.ServiceHost> class to configure and expose a service for use by client applications when you are not using Internet Information Services (IIS) or Windows Activation Services (WAS) to expose a service. Both IIS and WAS interact with a <xref:System.ServiceModel.ServiceHost> object on your behalf.  
+ 
+To expose a service for use by callers, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] requires a complete service description (represented by the <xref:System.ServiceModel.Description.ServiceDescription> class). The <xref:System.ServiceModel.ServiceHost> class creates a <xref:System.ServiceModel.Description.ServiceDescription> from the service type and configuration information and then uses that description to create <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects for each endpoint in the description.  
+ 
+Use a <xref:System.ServiceModel.ServiceHost> object to load a service, configure endpoints, apply security settings, and start listeners to handle incoming requests.  
+ 
   
- Use the <xref:System.ServiceModel.ServiceHost> class to configure and expose a service for use by client applications when you are not using Internet Information Services (IIS) or Windows Activation Services (WAS) to expose a service. Both IIS and WAS interact with a <xref:System.ServiceModel.ServiceHost> object on your behalf.  
-  
- To expose a service for use by callers, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] requires a complete service description (represented by the <xref:System.ServiceModel.Description.ServiceDescription> class). The <xref:System.ServiceModel.ServiceHost> class creates a <xref:System.ServiceModel.Description.ServiceDescription> from the service type and configuration information and then uses that description to create <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects for each endpoint in the description.  
-  
- Use a <xref:System.ServiceModel.ServiceHost> object to load a service, configure endpoints, apply security settings, and start listeners to handle incoming requests.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#1)]
- [!code-vb[S_SelfHost#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_selfhost/vb/wholeenchilada.vb#1)]  
-  
+[!code-csharp[S_SelfHost#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#1)]
+[!code-vb[S_SelfHost#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_selfhost/vb/wholeenchilada.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are two constructors used to create an instance of the <xref:System.ServiceModel.ServiceHost> class. Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Type%2CSystem.Uri%5B%5D%29> constructor which takes the service type as an input parameter, most of the time. The host can use this to create new services as needed. Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor instead only when you want the service host to use a specific singleton instance of the service.  
-  
+There are two constructors used to create an instance of the <xref:System.ServiceModel.ServiceHost> class. Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Type%2CSystem.Uri%5B%5D%29> constructor which takes the service type as an input parameter, most of the time. The host can use this to create new services as needed. Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor instead only when you want the service host to use a specific singleton instance of the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,18 +81,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceHost" /> class with the instance of the service and its base addresses specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor as an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=fullName> when you want to provide a specific object instance for use by a singleton service. You may want to use this overload when your service implementation type is difficult to construct (for example, if it does not implement a default public constructor that has no parameters).  
+Use this constructor as an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=fullName> when you want to provide a specific object instance for use by a singleton service. You may want to use this overload when your service implementation type is difficult to construct (for example, if it does not implement a default public constructor that has no parameters).  
+ 
+Note that when an object is provided to this overload, some features related to the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=fullName> have no effect when a well-known object instance is provided using this constructor overload. Similarly, any other instance release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=fullName> property is set to <xref:System.ServiceModel.ReleaseInstanceMode?displayProperty=fullName> for all operations.  
+ 
   
- Note that when an object is provided to this overload, some features related to the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=fullName> have no effect when a well-known object instance is provided using this constructor overload. Similarly, any other instance release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=fullName> property is set to <xref:System.ServiceModel.ReleaseInstanceMode?displayProperty=fullName> for all operations.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEServiceHost2#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost2/cs/service.cs#1)]
- [!code-vb[S_UEServiceHost2#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost2/vb/service.vb#1)]  
-  
+[!code-csharp[S_UEServiceHost2#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost2/cs/service.cs#1)]
+[!code-vb[S_UEServiceHost2#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost2/vb/service.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -124,18 +124,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceHost" /> class with the type of service and its base addresses specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you have the service type and you can create new instances of it when needed, even when you need a singleton instance. Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor instead only when you want the service host to use a specific singleton instance of the service.  
+Use this constructor when you have the service type and you can create new instances of it when needed, even when you need a singleton instance. Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor instead only when you want the service host to use a specific singleton instance of the service.  
+ 
   
-   
-  
+ 
 ## Examples  
- This sample illustrates how to use the <xref:System.ServiceModel.ServiceHost> class to host a Windows Communication Foundation service:  
-  
- [!code-csharp[S_UEServiceHost#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#1)]
- [!code-vb[S_UEServiceHost#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#1)]  
-  
+This sample illustrates how to use the <xref:System.ServiceModel.ServiceHost> class to host a Windows Communication Foundation service:  
+ 
+[!code-csharp[S_UEServiceHost#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#1)]
+[!code-vb[S_UEServiceHost#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -167,11 +167,11 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEServiceHost#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#3)]
- [!code-vb[S_UEServiceHost#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#3)]  
-  
+[!code-csharp[S_UEServiceHost#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#3)]
+[!code-vb[S_UEServiceHost#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -203,11 +203,11 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEServiceHost#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#4)]
- [!code-vb[S_UEServiceHost#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#4)]  
-  
+[!code-csharp[S_UEServiceHost#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#4)]
+[!code-vb[S_UEServiceHost#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -241,16 +241,16 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this version of the method when you have multiple endpoints that need to listen on the same, specified URI.  
+Use this version of the method when you have multiple endpoints that need to listen on the same, specified URI.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEServiceHost#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#5)]
- [!code-vb[S_UEServiceHost#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#5)]  
-  
+[!code-csharp[S_UEServiceHost#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#5)]
+[!code-vb[S_UEServiceHost#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -284,16 +284,16 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this version of the method when you have multiple endpoints that need to listen on the same, specified URI.  
+Use this version of the method when you have multiple endpoints that need to listen on the same, specified URI.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEServiceHost#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#6)]
- [!code-vb[S_UEServiceHost#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#6)]  
-  
+[!code-csharp[S_UEServiceHost#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueservicehost/cs/service.cs#6)]
+[!code-vb[S_UEServiceHost#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueservicehost/vb/service.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -340,10 +340,10 @@
         <returns>A <see cref="T:System.ServiceModel.Description.ServiceDescription" /> of the hosted service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to construct contract descriptions from customized programming models. Override the corresponding base class method, <xref:System.ServiceModel.ServiceHostBase.CreateDescription%28System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.ServiceModel.Description.ContractDescription%7D%40%29>, to implement the customized model.  
-  
+This method is used to construct contract descriptions from customized programming models. Override the corresponding base class method, <xref:System.ServiceModel.ServiceHostBase.CreateDescription%28System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.ServiceModel.Description.ContractDescription%7D%40%29>, to implement the customized model.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The type of service hosted is <see langword="null" />.</exception>
@@ -416,29 +416,29 @@
         <summary>Disposes of disposable services that are being hosted when the service host is closed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overriding the <xref:System.ServiceModel.ServiceHost.OnClosed%2A> method you must ensure the base.OnClosed method is called, even if an exception occurs. The following code illustrates how to do this.  
-  
+When overriding the <xref:System.ServiceModel.ServiceHost.OnClosed%2A> method you must ensure the base.OnClosed method is called, even if an exception occurs. The following code illustrates how to do this.  
+ 
 ```  
 protected override void OnClosed()  
 {  
-    try  
-    {  
-        if (FaultFlagService.faultFlag == ThrowDuring.OnClosed)  
-        {  
-            FaultFlagService.faultFlag = ThrowDuring.Never;  
-            throw new ServiceActivationException("Faulting the service because FaultFlagService.faultFlag = ThrowDuring.OnClosed");  
-        }  
-    }  
-    finally  
-    {  
-        base.OnClosed();  
-    }  
+   try  
+   {  
+       if (FaultFlagService.faultFlag == ThrowDuring.OnClosed)  
+       {  
+           FaultFlagService.faultFlag = ThrowDuring.Never;  
+           throw new ServiceActivationException("Faulting the service because FaultFlagService.faultFlag = ThrowDuring.OnClosed");  
+       }  
+   }  
+   finally  
+   {  
+       base.OnClosed();  
+   }  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@ protected override void OnClosed()
         <value>The hosted service object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor to initialize a singleton instance of the service to be hosted when you want to control the instance of the service that is used.  
-  
+Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor to initialize a singleton instance of the service to be hosted when you want to control the instance of the service that is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -477,10 +477,10 @@ protected override void OnClosed()
         <summary>Initializes a description of the service hosted based on its type or instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method removes the requirement for passing base addresses as part of <xref:System.ServiceModel.ServiceHost.%23ctor%2A>. Classes that inherit from <xref:System.ServiceModel.ServiceHost> can call <xref:System.ServiceModel.ServiceHost.%23ctor%2A> and then can call one of the <xref:System.ServiceModel.ServiceHost.InitializeDescription%2A> when a base address is available. This is how the Service Model Metadata Utility Tool (Svcutil.exe) is implemented.  
-  
+This method removes the requirement for passing base addresses as part of <xref:System.ServiceModel.ServiceHost.%23ctor%2A>. Classes that inherit from <xref:System.ServiceModel.ServiceHost> can call <xref:System.ServiceModel.ServiceHost.%23ctor%2A> and then can call one of the <xref:System.ServiceModel.ServiceHost.InitializeDescription%2A> when a base address is available. This is how the Service Model Metadata Utility Tool (Svcutil.exe) is implemented.  
+ 
  ]]></format>
         </remarks>
       </Docs>

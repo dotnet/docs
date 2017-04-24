@@ -35,20 +35,20 @@
     <summary>A section of workflow which demarcates a transaction boundary. A new <see cref="T:System.Transactions.Transaction" /> is started when this <see cref="T:System.Workflow.ComponentModel.Activity" /> begins executing and the transaction commits when the <see cref="T:System.Workflow.ComponentModel.Activity" /> closes successfully. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A <xref:System.Workflow.ComponentModel.TransactionScopeActivity> cannot be nested in another <xref:System.Workflow.ComponentModel.TransactionScopeActivity>.  
-  
- The workflow instance is always persisted when a <xref:System.Workflow.ComponentModel.TransactionScopeActivity> completes its execution successfully.  
-  
- A <xref:System.Workflow.ComponentModel.TransactionScopeActivity> cannot have a <xref:System.Workflow.ComponentModel.FaultHandlersActivity>.  
-  
- A <xref:System.Workflow.ComponentModel.TransactionScopeActivity> cannot have a <xref:System.Workflow.ComponentModel.CancellationHandlerActivity>.  
-  
+ 
+A <xref:System.Workflow.ComponentModel.TransactionScopeActivity> cannot be nested in another <xref:System.Workflow.ComponentModel.TransactionScopeActivity>.  
+ 
+The workflow instance is always persisted when a <xref:System.Workflow.ComponentModel.TransactionScopeActivity> completes its execution successfully.  
+ 
+A <xref:System.Workflow.ComponentModel.TransactionScopeActivity> cannot have a <xref:System.Workflow.ComponentModel.FaultHandlersActivity>.  
+ 
+A <xref:System.Workflow.ComponentModel.TransactionScopeActivity> cannot have a <xref:System.Workflow.ComponentModel.CancellationHandlerActivity>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

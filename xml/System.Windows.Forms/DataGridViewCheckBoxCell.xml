@@ -18,27 +18,27 @@
     <summary>Displays a check box user interface (UI) to use in a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewCheckBoxCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display binary or ternary information presented through a check box UI. In the default binary mode, the cells can hold values of `true` or `false`. In ternary mode, the cells take on one of the <xref:System.Windows.Forms.CheckState> values. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property determines whether binary or ternary mode is in effect.  
+The <xref:System.Windows.Forms.DataGridViewCheckBoxCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display binary or ternary information presented through a check box UI. In the default binary mode, the cells can hold values of `true` or `false`. In ternary mode, the cells take on one of the <xref:System.Windows.Forms.CheckState> values. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property determines whether binary or ternary mode is in effect.  
+ 
+The <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewCheckBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
+ 
+The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
+ 
+When the current cell is a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode%2A?displayProperty=fullName> property is always `true`.  
+ 
+Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=fullName> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=fullName> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=fullName> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value.  
+ 
   
- The <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewCheckBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
-  
- The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
-  
- When the current cell is a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode%2A?displayProperty=fullName> property is always `true`.  
-  
- Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=fullName> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=fullName> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=fullName> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> to track which employees are in the office. The column is made up of <xref:System.Windows.Forms.DataGridViewCheckBoxCell> objects. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#20)]
- [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#20)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#20)]  
-  
+The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> to track which employees are in the office. The column is made up of <xref:System.Windows.Forms.DataGridViewCheckBoxCell> objects. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#20)]
+[!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#20)]
+[!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#20)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" /> class to its default state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `false`.  
-  
+This constructor initializes the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" /> class, enabling binary or ternary state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard operation of a check box allows for two states: checked and unchecked. When the `threeState` parameter is set to `true`, an additional, indeterminate state is allowed, which is visually denoted by a grey partial check.  
-  
+The standard operation of a check box allows for two states: checked and unchecked. When the `threeState` parameter is set to `true`, an additional, indeterminate state is allowed, which is visually denoted by a grey partial check.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the cloned <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.Clone%2A> method whenever you derive from <xref:System.Windows.Forms.DataGridViewCheckBoxCell> and add new properties to the derived class.  
-  
+Override the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.Clone%2A> method whenever you derive from <xref:System.Windows.Forms.DataGridViewCheckBoxCell> and add new properties to the derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -145,12 +145,12 @@
           <see langword="true" /> if the cell is in edit mode; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ContentClickUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentClick%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentClick%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewCheckBoxCell.ContentClickUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentClick%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentClick%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,12 +177,12 @@
           <see langword="true" /> if the cell is in edit mode; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ContentDoubleClickUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentDoubleClick%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentDoubleClick%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewCheckBoxCell.ContentDoubleClickUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentDoubleClick%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentDoubleClick%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,13 +205,13 @@
         <returns>A new <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject" /> for the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A> property is referenced.  
-  
+If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A> property is referenced.  
+ 
 > [!NOTE]
 >  To get or set <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A>, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,10 +262,10 @@
           <see langword="true" /> if the cell's value has changed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a cell's value changes, it is marked as modified until that value is saved or the cell is reinitialized with data from its data source.  
-  
+When a cell's value changes, it is marked as modified until that value is saved or the cell is reinitialized with data from its data source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <value>The <see cref="T:System.Type" /> of the underlying editing control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overridden property always returns `null` because check boxes only allow selection and deselection, not editing.  
-  
+This overridden property always returns `null` because check boxes only allow selection and deselection, not editing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,21 +317,21 @@
         <value>An <see cref="T:System.Object" /> corresponding to a cell value of <see langword="false" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties determine the associated values of these states as they occur in the underlying data source.  
+The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties determine the associated values of these states as they occur in the underlying data source.  
+ 
+Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
- Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxCell> to track the status of office lighting. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property associates "turnedOff" with `false`, the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property associates "turnedOn" with `true`, and the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property associates "unknown" to indeterminate.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/cpp/trivaluevirtualcheckbox.cpp#0)]
- [!code-csharp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/CS/trivaluevirtualcheckbox.cs#0)]
- [!code-vb[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/VB/trivaluevirtualcheckbox.vb#0)]  
-  
+The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxCell> to track the status of office lighting. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property associates "turnedOff" with `false`, the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property associates "turnedOn" with `true`, and the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property associates "unknown" to indeterminate.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/cpp/trivaluevirtualcheckbox.cpp#0)]
+[!code-csharp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/CS/trivaluevirtualcheckbox.cs#0)]
+[!code-vb[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/VB/trivaluevirtualcheckbox.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,21 +358,21 @@
         <value>One of the <see cref="T:System.Windows.Forms.FlatStyle" /> values. The default is <see cref="F:System.Windows.Forms.FlatStyle.Standard" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.FlatStyle> flat style is not supported by this cell type.  
+The <xref:System.Windows.Forms.FlatStyle> flat style is not supported by this cell type.  
+ 
+Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FlatStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
- Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FlatStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#20)]
- [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#20)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#20)]  
-  
+The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#20)]
+[!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#20)]
+[!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.FlatStyle" /> value.</exception>
@@ -395,18 +395,18 @@
         <value>A <see cref="T:System.Type" /> representing the display type of the cell.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value is `false`, the value of this property is the <xref:System.Boolean> type; otherwise, it is the <xref:System.Windows.Forms.CheckState> type.  
+If the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value is `false`, the value of this property is the <xref:System.Boolean> type; otherwise, it is the <xref:System.Windows.Forms.CheckState> type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
- [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
+[!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -458,10 +458,10 @@
         <returns>An <see cref="T:System.Object" /> representing the formatted value of the editing cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When `context` includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value, this method returns an <xref:System.Object> that you can cast to a <xref:System.String> representation of the value. Otherwise, this method returns a <xref:System.Boolean> or a <xref:System.Windows.Forms.CheckState> value, depending on the value of the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType%2A> property.  
-  
+When `context` includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value, this method returns an <xref:System.Object> that you can cast to a <xref:System.String> representation of the value. Otherwise, this method returns a <xref:System.Boolean> or a <xref:System.Windows.Forms.CheckState> value, depending on the value of the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType" /> property value is <see langword="null" />.</exception>
@@ -524,20 +524,20 @@
         <returns>The value of the cell's data after formatting has been applied or <see langword="null" /> if the cell is not part of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView> control calls this method to convert a cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType%2A> property. The control passes the cell value to this method in the `value` parameter.  
-  
- This method first attempts to convert `value` to a <xref:System.Boolean> or <xref:System.Windows.Forms.CheckState> value using the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties if they have been set.  
-  
- If the conversion is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
-  
- If the conversion is successful or there is a handler for the <xref:System.Windows.Forms.DataGridView.DataError> event and it does not set the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event occurs.  
-  
- A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object. This can result in an additional <xref:System.Windows.Forms.DataGridView.DataError> event.  
-  
- If formatting is successful and the `context` parameter value includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value, this method returns the <xref:System.String> version of the formatted value for copying to the Clipboard. Otherwise, this method returns the formatted value for display in the <xref:System.Windows.Forms.DataGridView> control.  
-  
+The <xref:System.Windows.Forms.DataGridView> control calls this method to convert a cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType%2A> property. The control passes the cell value to this method in the `value` parameter.  
+ 
+This method first attempts to convert `value` to a <xref:System.Boolean> or <xref:System.Windows.Forms.CheckState> value using the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties if they have been set.  
+ 
+If the conversion is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ 
+If the conversion is successful or there is a handler for the <xref:System.Windows.Forms.DataGridView.DataError> event and it does not set the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event occurs.  
+ 
+A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object. This can result in an additional <xref:System.Windows.Forms.DataGridView.DataError> event.  
+ 
+If formatting is successful and the `context` parameter value includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value, this method returns the <xref:System.String> version of the formatted value for copying to the Clipboard. Otherwise, this method returns the formatted value for display in the <xref:System.Windows.Forms.DataGridView> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -592,21 +592,21 @@
         <value>An <see cref="T:System.Object" /> corresponding to an indeterminate or <see langword="null" /> cell value. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties determine the associated values of these states as they occur in the underlying data source.  
+The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties determine the associated values of these states as they occur in the underlying data source.  
+ 
+Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
- Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxCell> to track the status of office lighting. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property associates "turnedOff" with `false`, the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property associates "turnedOn" with `true`, and the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property associates "unknown" to indeterminate.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/cpp/trivaluevirtualcheckbox.cpp#0)]
- [!code-csharp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/CS/trivaluevirtualcheckbox.cs#0)]
- [!code-vb[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/VB/trivaluevirtualcheckbox.vb#0)]  
-  
+The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxCell> to track the status of office lighting. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property associates "turnedOff" with `false`, the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property associates "turnedOn" with `true`, and the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property associates "unknown" to indeterminate.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/cpp/trivaluevirtualcheckbox.cpp#0)]
+[!code-csharp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/CS/trivaluevirtualcheckbox.cs#0)]
+[!code-vb[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/VB/trivaluevirtualcheckbox.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -635,12 +635,12 @@
           <see langword="true" /> if the SPACE key is pressed and the CTRL, ALT, and SHIFT keys are all not pressed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewCheckBoxCell.KeyDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyDown%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewCheckBoxCell.KeyDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyDown%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -669,12 +669,12 @@
           <see langword="true" /> if the SPACE key is released; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewCheckBoxCell.KeyUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyUp%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewCheckBoxCell.KeyUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyUp%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -700,14 +700,14 @@
         <returns>Always <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Pressing the mouse button always unshares a row containing a cell of this type.  
-  
- <xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseDown%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+Pressing the mouse button always unshares a row containing a cell of this type.  
+ 
+<xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseDown%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -734,12 +734,12 @@
           <see langword="true" /> if the cell was the last cell receiving a mouse click; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -766,12 +766,12 @@
           <see langword="true" /> if the button is not in the normal state; <see langword="false" /> if the button is in the pressed state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseLeaveUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseLeave%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseLeave%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseLeaveUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseLeave%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseLeave%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -797,14 +797,14 @@
         <returns>Always <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For this cell type, releasing the mouse while the pointer is over the cell always unshares the row containing the cell.  
-  
- <xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+For this cell type, releasing the mouse while the pointer is over the cell always unshares the row containing the cell.  
+ 
+<xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -873,12 +873,12 @@
         <summary>Called when a character key is pressed while the focus is on a cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When activated by the space key, this method causes the cell's user interface (UI) to be updated.  
-  
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
-  
+When activated by the space key, this method causes the cell's user interface (UI) to be updated.  
+ 
+This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -905,12 +905,12 @@
         <summary>Called when a character key is released while the focus is on a cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When activated by the SPACEBAR key (equivalent to the <xref:System.Windows.Forms.Keys?displayProperty=fullName> value), this method updates the cell's user interface (UI) and raises the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A> event on the owning <xref:System.Windows.Forms.DataGridView>.  
-  
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
-  
+When activated by the SPACEBAR key (equivalent to the <xref:System.Windows.Forms.Keys?displayProperty=fullName> value), this method updates the cell's user interface (UI) and raises the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A> event on the owning <xref:System.Windows.Forms.DataGridView>.  
+ 
+This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -938,12 +938,12 @@
         <summary>Called when the focus moves from a cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the button is in a pushed state, this method updates the cell's user interface (UI).  
-  
- This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
-  
+If the button is in a pushed state, this method updates the cell's user interface (UI).  
+ 
+This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -968,12 +968,12 @@
         <summary>Called when the mouse button is held down while the pointer is on a cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method causes the cell's user interface (UI) to be updated.  
-  
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
-  
+This method causes the cell's user interface (UI) to be updated.  
+ 
+This method is similar to the <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -998,12 +998,12 @@
         <summary>Called when the mouse pointer moves from a cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the cell's current <xref:System.Windows.Forms.ButtonState> is normal, this method causes the cell's user interface (UI) to be updated.  
-  
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseLeave%2A> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseLeave> event is raised, but it does not actually raise the event.  
-  
+If the cell's current <xref:System.Windows.Forms.ButtonState> is normal, this method causes the cell's user interface (UI) to be updated.  
+ 
+This method is similar to the <xref:System.Windows.Forms.Control.OnMouseLeave%2A> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseLeave> event is raised, but it does not actually raise the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1028,12 +1028,12 @@
         <summary>Called when the mouse pointer moves within a cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method causes the cell's user interface (UI) to be updated.  
-  
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName> event is raised, but it does not actually raise the event.  
-  
+This method causes the cell's user interface (UI) to be updated.  
+ 
+This method is similar to the <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1058,12 +1058,12 @@
         <summary>Called when the mouse button is released while the pointer is on a cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method updates the cell's user interface (UI).  
-  
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseUp%2A> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseUp> event is raised, but it does not actually raise the event.  
-  
+This method updates the cell's user interface (UI).  
+ 
+This method is similar to the <xref:System.Windows.Forms.Control.OnMouseUp%2A> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseUp> event is raised, but it does not actually raise the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1136,12 +1136,12 @@
         <returns>The cell value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the user edits a cell value and commits the change, the <xref:System.Windows.Forms.DataGridView> control calls this method to convert the displayed value from the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> to the <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A>. The control then sets the underlying cell value or data source value to the converted value.  
-  
- This method converts the display value of the cell to an actual cell value using the values of the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties if they have been set.  
-  
+When the user edits a cell value and commits the change, the <xref:System.Windows.Forms.DataGridView> control calls this method to convert the displayed value from the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> to the <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A>. The control then sets the underlying cell value or data source value to the converted value.  
+ 
+This method converts the display value of the cell to an actual cell value using the values of the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties if they have been set.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1175,10 +1175,10 @@
         <summary>This method is not meaningful for this type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No preparation is necessary for this cell type.  
-  
+No preparation is necessary for this cell type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1206,23 +1206,23 @@
           <see langword="true" /> if ternary mode is enabled; <see langword="false" /> if binary mode is enabled. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The third state in ternary mode typically represents an uninitialized or indeterminate value.  
+The third state in ternary mode typically represents an uninitialized or indeterminate value.  
+ 
+Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
+Unlike the column <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property, the cell <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property does not automatically update the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the associated cell style when you change its value. When you change the cell <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `true`, be sure to set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property to <xref:System.Windows.Forms.CheckState>. When you change the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `false`, be sure to set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property to `false`.  
+ 
   
- Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
- Unlike the column <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property, the cell <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property does not automatically update the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the associated cell style when you change its value. When you change the cell <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `true`, be sure to set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property to <xref:System.Windows.Forms.CheckState>. When you change the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `false`, be sure to set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property to `false`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxCell> to track the status of office lighting. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property associates "turnedOff" with `false`, the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property associates "turnedOn" with `true`, and the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property associates "unknown" to indeterminate.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/cpp/trivaluevirtualcheckbox.cpp#0)]
- [!code-csharp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/CS/trivaluevirtualcheckbox.cs#0)]
- [!code-vb[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/VB/trivaluevirtualcheckbox.vb#0)]  
-  
+The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxCell> to track the status of office lighting. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property associates "turnedOff" with `false`, the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property associates "turnedOn" with `true`, and the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property associates "unknown" to indeterminate.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/cpp/trivaluevirtualcheckbox.cpp#0)]
+[!code-csharp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/CS/trivaluevirtualcheckbox.cs#0)]
+[!code-vb[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/VB/trivaluevirtualcheckbox.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1245,10 +1245,10 @@
         <returns>A <see cref="T:System.String" /> that represents the current cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string representation of the cell includes the row index and column index of the cell.  
-  
+The string representation of the cell includes the row index and column index of the cell.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1275,21 +1275,21 @@
         <value>An <see cref="T:System.Object" /> corresponding to a cell value of <see langword="true" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties determine the associated values of these states as they occur in the underlying data source.  
+The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties determine the associated values of these states as they occur in the underlying data source.  
+ 
+Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
- Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxCell> to track the status of office lighting. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property associates "turnedOff" with `false`, the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property associates "turnedOn" with `true`, and the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property associates "unknown" to indeterminate.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/cpp/trivaluevirtualcheckbox.cpp#0)]
- [!code-csharp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/CS/trivaluevirtualcheckbox.cs#0)]
- [!code-vb[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/VB/trivaluevirtualcheckbox.vb#0)]  
-  
+The following code example uses a <xref:System.Windows.Forms.DataGridViewCheckBoxCell> to track the status of office lighting. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A> property associates "turnedOff" with `false`, the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A> property associates "turnedOn" with `true`, and the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> property associates "unknown" to indeterminate.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/cpp/trivaluevirtualcheckbox.cpp#0)]
+[!code-csharp[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/CS/trivaluevirtualcheckbox.cs#0)]
+[!code-vb[System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewTrinaryVirtualCheckBox/VB/trivaluevirtualcheckbox.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1311,14 +1311,14 @@
         <value>The <see cref="T:System.Type" /> of the underlying value of the cell.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ValueType%2A> property of the cell has not been set, then the <xref:System.Windows.Forms.DataGridViewColumn.ValueType%2A> property for the owning <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> is used, if the column exists.  
-  
- If no owning column exists, then this property is set to the default type appropriate for its mode: <xref:System.Boolean> for binary mode and <xref:System.Windows.Forms.CheckState> for ternary mode.  
-  
- The <xref:System.Windows.Forms.DataGridViewCell.Value%2A> is the actual data object contained in the cell, whereas the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property is the formatted representation of this object. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ValueType%2A> and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType%2A> properties correspond to the data types of these values, respectively.  
-  
+If the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ValueType%2A> property of the cell has not been set, then the <xref:System.Windows.Forms.DataGridViewColumn.ValueType%2A> property for the owning <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> is used, if the column exists.  
+ 
+If no owning column exists, then this property is set to the default type appropriate for its mode: <xref:System.Boolean> for binary mode and <xref:System.Windows.Forms.CheckState> for ternary mode.  
+ 
+The <xref:System.Windows.Forms.DataGridViewCell.Value%2A> is the actual data object contained in the cell, whereas the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property is the formatted representation of this object. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ValueType%2A> and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType%2A> properties correspond to the data types of these values, respectively.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents a security token that is based upon key that is created using the RSA algorithm.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, application developers do not need to use the <xref:System.IdentityModel.Tokens.RsaSecurityToken> class, unless a Web service must get the RSA algorithm that is associated with the security token. To get the RSA algorithm, get the value of the <xref:System.IdentityModel.Tokens.RsaSecurityToken.Rsa%2A> property.  
-  
+Typically, application developers do not need to use the <xref:System.IdentityModel.Tokens.RsaSecurityToken> class, unless a Web service must get the RSA algorithm that is associated with the security token. To get the RSA algorithm, get the value of the <xref:System.IdentityModel.Tokens.RsaSecurityToken.Rsa%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.RsaSecurityToken" /> class using the specified RSA algorithm.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor generates a unique identifier for the security token and sets that to the value of the <xref:System.IdentityModel.Tokens.RsaSecurityToken.Id%2A> property.  
-  
+This constructor generates a unique identifier for the security token and sets that to the value of the <xref:System.IdentityModel.Tokens.RsaSecurityToken.Id%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -102,10 +102,10 @@
           <see langword="true" /> when <paramref name="T" /> is of type <see cref="T:System.IdentityModel.Tokens.RsaKeyIdentifierClause" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To create the key identifier clause, call the <xref:System.IdentityModel.Tokens.RsaSecurityToken.CreateKeyIdentifierClause%2A> method.  
-  
+To create the key identifier clause, call the <xref:System.IdentityModel.Tokens.RsaSecurityToken.CreateKeyIdentifierClause%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.RsaKeyIdentifierClause" /> that is a key identifier clause for the security token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether the <xref:System.IdentityModel.Tokens.RsaSecurityToken> class can create the specified key identifier clause, call the <xref:System.IdentityModel.Tokens.RsaSecurityToken.CanCreateKeyIdentifierClause%2A> method.  
-  
+To determine whether the <xref:System.IdentityModel.Tokens.RsaSecurityToken> class can create the specified key identifier clause, call the <xref:System.IdentityModel.Tokens.RsaSecurityToken.CanCreateKeyIdentifierClause%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
         <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection contains an asymmetric key that is created using the RSA algorithm. The key is of type <xref:System.IdentityModel.Tokens.RsaSecurityKey>.  
-  
+The collection contains an asymmetric key that is created using the RSA algorithm. The key is of type <xref:System.IdentityModel.Tokens.RsaSecurityKey>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <value>A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.RsaSecurityToken.ValidFrom%2A> property is set to the instant in time when the security token is created in Coordinated Universal Time (UTC).  
-  
+The <xref:System.IdentityModel.Tokens.RsaSecurityToken.ValidFrom%2A> property is set to the instant in time when the security token is created in Coordinated Universal Time (UTC).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -288,10 +288,10 @@
         <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.RsaSecurityToken> security token never expires.  
-  
+The <xref:System.IdentityModel.Tokens.RsaSecurityToken> security token never expires.  
+ 
  ]]></format>
         </remarks>
       </Docs>

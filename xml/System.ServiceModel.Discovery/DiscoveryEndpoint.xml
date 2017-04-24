@@ -29,10 +29,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryEndpoint" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryVersion%2A> is set to <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005> and <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode%2A> is set to <xref:System.ServiceModel.Discovery.DiscoveryMode.Managed>.  
-  
+By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryVersion%2A> is set to <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005> and <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode%2A> is set to <xref:System.ServiceModel.Discovery.DiscoveryMode.Managed>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -56,10 +56,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryEndpoint" /> class with the specified binding and endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryVersion%2A> is set to <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode%2A> is set to <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode>.  
-  
+By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryVersion%2A> is set to <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode%2A> is set to <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <value>One of the <see cref="P:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Discovery can be accomplished in two different modes: Ad-Hoc or Managed. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][WCF Discovery Overview](~/docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
-  
+Discovery can be accomplished in two different modes: Ad-Hoc or Managed. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][WCF Discovery Overview](~/docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <value>A <see cref="T:System.TimeSpan" /> instance that contains the maximum time span within which all of the <see langword="ProbeMatches" /> for a service that respond to a probe operation are sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is a <xref:System.TimeSpan> that specifies a time span in which all `ProbeMatches` for a service that respond to a single probe operation are sent. If all `ProbeMatches` are sent at the same time, a network storm may result. To prevent this from occurring, `ProbeMatches` are sent with a random delay between each ProbeMatch. The random delay is in the range of 0 to <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.MaxResponseDelay%2A>. If <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.MaxResponseDelay%2A> is set to 0, then the `ProbeMatches` messages are sent in a tight loop without any delay. Otherwise, the `ProbeMatches` messages are sent with some random delay such that the total time taken to send all `ProbeMatches` messages does not exceed the <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.MaxResponseDelay%2A>. This value is only relevant for services, it is not used by clients.  
-  
+This value is a <xref:System.TimeSpan> that specifies a time span in which all `ProbeMatches` for a service that respond to a single probe operation are sent. If all `ProbeMatches` are sent at the same time, a network storm may result. To prevent this from occurring, `ProbeMatches` are sent with a random delay between each ProbeMatch. The random delay is in the range of 0 to <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.MaxResponseDelay%2A>. If <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.MaxResponseDelay%2A> is set to 0, then the `ProbeMatches` messages are sent in a tight loop without any delay. Otherwise, the `ProbeMatches` messages are sent with some random delay such that the total time taken to send all `ProbeMatches` messages does not exceed the <xref:System.ServiceModel.Discovery.DiscoveryEndpoint.MaxResponseDelay%2A>. This value is only relevant for services, it is not used by clients.  
+ 
  ]]></format>
         </remarks>
       </Docs>

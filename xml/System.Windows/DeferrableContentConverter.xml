@@ -14,9 +14,9 @@
     <summary>Converts a stream to a <see cref="T:System.Windows.DeferrableContent" /> instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="XAMLTextUsage_DeferrableContentConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -62,10 +62,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation returns `true` only for a `sourceType` that is assignable to <xref:System.IO.Stream>. All other `sourceType` types return `false`.  
-  
+This implementation returns `true` only for a `sourceType` that is assignable to <xref:System.IO.Stream>. All other `sourceType` types return `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <returns>A new <see cref="T:System.Windows.DeferrableContent" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value for `context` must provide services for <xref:System.Xaml.IXamlSchemaContextProvider>, <xref:System.Xaml.IRootObjectProvider>, <xref:System.Xaml.IXamlObjectWriterFactory>, and <xref:System.Windows.Markup.IProvideValueTarget>. The schema context when <xref:System.Xaml.IXamlSchemaContextProvider> is queried must be an internally implemented XAML schema context that is particular for BAML usages. This prevents most user code scenarios from using <xref:System.Windows.DeferrableContentConverter>.  
-  
+The value for `context` must provide services for <xref:System.Xaml.IXamlSchemaContextProvider>, <xref:System.Xaml.IRootObjectProvider>, <xref:System.Xaml.IXamlObjectWriterFactory>, and <xref:System.Windows.Markup.IProvideValueTarget>. The schema context when <xref:System.Xaml.IXamlSchemaContextProvider> is queried must be an internally implemented XAML schema context that is particular for BAML usages. This prevents most user code scenarios from using <xref:System.Windows.DeferrableContentConverter>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

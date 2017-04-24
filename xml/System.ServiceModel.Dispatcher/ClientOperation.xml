@@ -16,50 +16,50 @@
     <summary>Used to modify or extend the execution behavior of a specific contract operation in a client object or client channel object. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ClientOperation> class is the location for client run-time modifications and insertion point for custom extensions that are scoped to only one service operation. (To modify client run-time behavior for all messages in a contract, use the <xref:System.ServiceModel.Dispatcher.ClientRuntime> class. )  
-  
- Install <xref:System.ServiceModel.Dispatcher.ClientOperation> modifications using a custom client behavior object, either of type <xref:System.ServiceModel.Description.IContractBehavior> (to find a particular operation to modify) or of type <xref:System.ServiceModel.Description.IOperationBehavior> (which can then be applied by creating a custom attribute).  
-  
- Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.ClientOperation> object that represents a particular service operation.  
-  
- For more information about clients and the client architecture, see [Accessing Services Using a WCF Client](~/docs/framework/wcf/feature-details/accessing-services-using-a-client.md) and [WCF Client Architecture](~/docs/framework/wcf/feature-details/client-architecture.md). For more information about customizing the client runtime, see [Extending Clients](~/docs/framework/wcf/extending/extending-clients.md). For more information about using behaviors, see [Configuring and Extending the Runtime with Behaviors](~/docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
-  
- The following properties enable you to insert custom objects or modify the client execution behavior:  
-  
+The <xref:System.ServiceModel.Dispatcher.ClientOperation> class is the location for client run-time modifications and insertion point for custom extensions that are scoped to only one service operation. (To modify client run-time behavior for all messages in a contract, use the <xref:System.ServiceModel.Dispatcher.ClientRuntime> class. )  
+ 
+Install <xref:System.ServiceModel.Dispatcher.ClientOperation> modifications using a custom client behavior object, either of type <xref:System.ServiceModel.Description.IContractBehavior> (to find a particular operation to modify) or of type <xref:System.ServiceModel.Description.IOperationBehavior> (which can then be applied by creating a custom attribute).  
+ 
+Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.ClientOperation> object that represents a particular service operation.  
+ 
+For more information about clients and the client architecture, see [Accessing Services Using a WCF Client](~/docs/framework/wcf/feature-details/accessing-services-using-a-client.md) and [WCF Client Architecture](~/docs/framework/wcf/feature-details/client-architecture.md). For more information about customizing the client runtime, see [Extending Clients](~/docs/framework/wcf/extending/extending-clients.md). For more information about using behaviors, see [Configuring and Extending the Runtime with Behaviors](~/docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
+ 
+The following properties enable you to insert custom objects or modify the client execution behavior:  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> implementation for an operation or modify the current formatter.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation or to modify the current one.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest%2A> property to control who serializes an outbound message.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply%2A> property to control who deserializes an inbound message.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Action%2A> property to access the WS-Addressing action of the request message and the <xref:System.ServiceModel.Dispatcher.ClientOperation.ReplyAction%2A> property to access the response message action.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.BeginMethod%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.EndMethod%2A> to specify which client methods are associated with an asynchronous operation.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A> property to get a collection of specified types that can appear in SOAP faults as the detail type.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.IsInitiating%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.IsTerminating%2A> properties to control whether a session is initiated or is torn down, respectively, when the operation is called.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.IsOneWay%2A> property to control whether the client waits for a response before completing the invocation.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Parent%2A> property to obtain the containing <xref:System.ServiceModel.Dispatcher.ClientRuntime> object.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Name%2A> property to get the name of the operation.  
-  
+ 
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SyncMethod%2A> property to control which method is mapped to the operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=fullName> property.  
-  
- [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
- [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
-  
+The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=fullName> property.  
+ 
+[!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
+[!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -130,10 +130,10 @@
         <value>The action of the operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Action%2A?displayProperty=fullName>.  
-  
+By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Action%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <value>A collection of parameter inspector objects used to view or modify parameters prior to or subsequent to a client call.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ClientParameterInspectors is a thread-safe collection.  
-  
+ClientParameterInspectors is a thread-safe collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,12 +202,12 @@
           <see langword="true " />if the return type is not a <see cref="T:System.ServiceModel.Channels.Message" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply%2A> property to control whether the formatter deserializes the return value from an inbound message or whether the inbound message is returned directly as the return value.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply%2A> property to control whether the formatter deserializes the return value from an inbound message or whether the inbound message is returned directly as the return value.  
+ 
 -   **Note** If `false`, the return type must be of type <xref:System.ServiceModel.Channels.Message> and there can be no out parameters or an <xref:System.InvalidCastException> is thrown at run-time. If the message is `null`, a <xref:System.InvalidOperationException> is thrown at run-time.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <value>A collection of SOAP faults specified for this operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A> property to get a collection of all contractually specified SOAP faults.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A> property to get a collection of all contractually specified SOAP faults.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,12 +275,12 @@
         <value>An <see cref="T:System.ServiceModel.Dispatcher.IClientMessageFormatter" /> implementation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> implementation for an operation or modify the current formatter. The use of the formatter can be controlled by the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply%2A> properties.  
-  
- The <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> interface defines the  <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter.SerializeRequest%2A> and <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter.DeserializeReply%2A> methods, which are used to convert a set of object parameters to a message and from a message to a set of return values, respectively.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> implementation for an operation or modify the current formatter. The use of the formatter can be controlled by the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply%2A> properties.  
+ 
+The <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> interface defines the  <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter.SerializeRequest%2A> and <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter.DeserializeReply%2A> methods, which are used to convert a set of object parameters to a message and from a message to a set of return values, respectively.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,10 +304,10 @@
           <see langword="true" /> if a message to this operation can initiate a session; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A?displayProperty=fullName>.  
-  
+By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,10 +331,10 @@
           <see langword="true" /> if the indigo2 client should not expect a reply; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=fullName>. For issues related to one-way operations, see [One-Way Services](~/docs/framework/wcf/feature-details/one-way-services.md).  
-  
+By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=fullName>. For issues related to one-way operations, see [One-Way Services](~/docs/framework/wcf/feature-details/one-way-services.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,10 +358,10 @@
           <see langword="true" /> if the associated session is closed after the operation is invoked; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=fullName>.  
-  
+By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,10 +384,10 @@
         <value>The name of the operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Name%2A?displayProperty=fullName>.  
-  
+By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Name%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -410,18 +410,18 @@
         <value>A collection of <see cref="T:System.ServiceModel.Dispatcher.IParameterInspector" /> implementations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation or to modify the current one. Parameter inspectors are invoked in the order in which they are added to the collection for requests and in the reverse order for replies.  
+Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation or to modify the current one. Parameter inspectors are invoked in the order in which they are added to the collection for requests and in the reverse order for replies.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=fullName> property.  
-  
- [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
- [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
-  
+The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=fullName> property.  
+ 
+[!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
+[!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,10 +463,10 @@
         <value>The action of the reply.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A?displayProperty=fullName>.  
-  
+By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -490,13 +490,13 @@
           <see langword="true" /> if the <see cref="P:System.ServiceModel.Dispatcher.ClientOperation.Formatter" /> property serializes the return values into a reply message; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest%2A> property to indicate whether the formatter serializes operation parameters into a reply message or to determine if the first parameter is sent as the outbound message.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest%2A> property to indicate whether the formatter serializes operation parameters into a reply message or to determine if the first parameter is sent as the outbound message.  
+ 
 > [!NOTE]
 >  If set to `false`, the operation must have exactly one parameter of type <xref:System.ServiceModel.Channels.Message> or an exception is thrown.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

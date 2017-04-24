@@ -34,17 +34,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ClientSideProviderDescription" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When UI Automation encounters a window of class `className`, it calls `clientSideProviderFactoryCallback` to create an instance of the client-side provider.  
+When UI Automation encounters a window of class `className`, it calls `clientSideProviderFactoryCallback` to create an instance of the client-side provider.  
+ 
+If `className` is `null`, the provider is used for all windows for which no other provider is found.  
+ 
   
- If `className` is `null`, the provider is used for all windows for which no other provider is found.  
-  
-   
-  
+ 
 ## Examples  
- For example code, see [Create a Client-Side UI Automation Provider](~/docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md).  
-  
+For example code, see [Create a Client-Side UI Automation Provider](~/docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,14 +72,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ClientSideProviderDescription" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] encounters a window of class `className` within the process specified by `imageName`, it calls `clientSideProviderFactoryCallback` to create an instance of the client-side provider.  
-  
- If `className` is `null`, the provider is used for all windows for which no other provider is found.  
-  
- If `imageName` is `null`, the provider is used for all processes containing the window class.  
-  
+When [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] encounters a window of class `className` within the process specified by `imageName`, it calls `clientSideProviderFactoryCallback` to create an instance of the client-side provider.  
+ 
+If `className` is `null`, the provider is used for all windows for which no other provider is found.  
+ 
+If `imageName` is `null`, the provider is used for all processes containing the window class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <value>The window class name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Automation.ClientSideProviderDescription.ClassName%2A> is `null`, the provider is called for all windows for which no other provider is found.  
-  
+If <xref:System.Windows.Automation.ClientSideProviderDescription.ClassName%2A> is `null`, the provider is called for all windows for which no other provider is found.  
+ 
  ]]></format>
         </remarks>
       </Docs>

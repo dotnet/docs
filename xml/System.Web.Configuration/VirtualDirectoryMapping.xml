@@ -74,10 +74,10 @@
         <value>A value that indicates the name of the configuration file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the name of the configuration file is not specified, Web.config is used.  
-  
+If the name of the configuration file is not specified, Web.config is used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The selected value is null or an empty string ("").</exception>

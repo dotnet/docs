@@ -19,10 +19,10 @@
     <summary>The <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9ContentType" /> class defines the type of the content of a CMS/PKCS #7 message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A?displayProperty=fullName> property  whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A?displayProperty=fullName> property for the corresponding signer is not empty.  
-  
+A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A?displayProperty=fullName> property  whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A?displayProperty=fullName> property for the corresponding signer is not empty.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,10 +95,10 @@
         <summary>Copies information from an <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method replaces the current <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object with the specified <xref:System.Security.Cryptography.AsnEncodedData> object.  
-  
+This method replaces the current <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object with the specified <xref:System.Security.Cryptography.AsnEncodedData> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

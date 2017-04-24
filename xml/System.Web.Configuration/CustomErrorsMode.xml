@@ -13,18 +13,18 @@
     <summary>Specifies the values for the custom errors modality.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.CustomErrorsMode> enumerates the values you can use when setting the <xref:System.Web.Configuration.CustomErrorsSection.Mode%2A> property. These values define whether custom errors are enabled, disabled, or shown only to remote clients.  
+The <xref:System.Web.Configuration.CustomErrorsMode> enumerates the values you can use when setting the <xref:System.Web.Configuration.CustomErrorsSection.Mode%2A> property. These values define whether custom errors are enabled, disabled, or shown only to remote clients.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to set the <xref:System.Web.Configuration.CustomErrorsSection.Mode%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.CustomErrorsSection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.CustomErrorsSection/CS/customerrorssection.cs#9)]
- [!code-vb[System.Web.Configuration.CustomErrorsSection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.CustomErrorsSection/VB/customerrorssection.vb#9)]  
-  
+The following code example shows how to set the <xref:System.Web.Configuration.CustomErrorsSection.Mode%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.CustomErrorsSection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.CustomErrorsSection/CS/customerrorssection.cs#9)]
+[!code-vb[System.Web.Configuration.CustomErrorsSection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.CustomErrorsSection/VB/customerrorssection.vb#9)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,10 +14,10 @@
     <summary>Provides attached properties used to communicate with a designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DesignerProperties> class provides attached properties that can be used to query the state of a control when it is running in a designer. Designer tools will set values for properties on objects that are running in the designer.  
-  
+The <xref:System.ComponentModel.DesignerProperties> class provides attached properties that can be used to query the state of a control when it is running in a designer. Designer tools will set values for properties on objects that are running in the designer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,10 +67,10 @@
         <summary>Identifies the <see cref="P:System.ComponentModel.DesignerProperties.IsInDesignMode" /> attached property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.ComponentModel.DesignerProperties.IsInDesignMode%2A> attached property.  
-  
+The identifier for the <xref:System.ComponentModel.DesignerProperties.IsInDesignMode%2A> attached property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

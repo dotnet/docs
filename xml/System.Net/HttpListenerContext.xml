@@ -19,21 +19,21 @@
     <summary>Provides access to the request and response objects used by the <see cref="T:System.Net.HttpListener" /> class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides the information related to a client's Hypertext Transfer Protocol (HTTP) request being processed by an <xref:System.Net.HttpListener> object. This class also has methods that allow an <xref:System.Net.HttpListener> object to accept a WebSocket connection.  
+This class provides the information related to a client's Hypertext Transfer Protocol (HTTP) request being processed by an <xref:System.Net.HttpListener> object. This class also has methods that allow an <xref:System.Net.HttpListener> object to accept a WebSocket connection.  
+ 
+The <xref:System.Net.HttpListener.GetContext%2A> method returns instances of the <xref:System.Net.HttpListenerContext> class. To get the object that represents the client request, use the <xref:System.Net.HttpListenerContext.Request%2A> property. To get the object that represents the response that will be sent to the client by the <xref:System.Net.HttpListener>, use the <xref:System.Net.HttpListenerContext.Response%2A> property. To get user information about the client sending the request, such as its login name and whether it has been authenticated, you can query the properties in the <xref:System.Security.Principal.IPrincipal> object returned by the <xref:System.Net.HttpListenerContext.User%2A> property.  
+ 
+Closing an <xref:System.Net.HttpListenerContext> object sends the response to the client and frees any resources used by the <xref:System.Net.HttpListenerContext>. Aborting an <xref:System.Net.HttpListenerContext> object discards the response to the client if it has not already been sent, and frees any resources used by the <xref:System.Net.HttpListenerContext>. After closing or aborting an <xref:System.Net.HttpListenerContext> object, you cannot reference its methods or properties. If you do so, you will receive an <xref:System.ObjectDisposedException> exception.  
+ 
   
- The <xref:System.Net.HttpListener.GetContext%2A> method returns instances of the <xref:System.Net.HttpListenerContext> class. To get the object that represents the client request, use the <xref:System.Net.HttpListenerContext.Request%2A> property. To get the object that represents the response that will be sent to the client by the <xref:System.Net.HttpListener>, use the <xref:System.Net.HttpListenerContext.Response%2A> property. To get user information about the client sending the request, such as its login name and whether it has been authenticated, you can query the properties in the <xref:System.Security.Principal.IPrincipal> object returned by the <xref:System.Net.HttpListenerContext.User%2A> property.  
-  
- Closing an <xref:System.Net.HttpListenerContext> object sends the response to the client and frees any resources used by the <xref:System.Net.HttpListenerContext>. Aborting an <xref:System.Net.HttpListenerContext> object discards the response to the client if it has not already been sent, and frees any resources used by the <xref:System.Net.HttpListenerContext>. After closing or aborting an <xref:System.Net.HttpListenerContext> object, you cannot reference its methods or properties. If you do so, you will receive an <xref:System.ObjectDisposedException> exception.  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays the user information for a client request.  
-  
- [!code-csharp[Net_Listener_Basic#8](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#8)]  
-  
+The following code example displays the user information for a client request.  
+ 
+[!code-csharp[Net_Listener_Basic#8](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,12 +71,12 @@
  The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the WebSocket connection has been accepted.  
-  
- The size of the receive buffer is 16,385 bytes. The WebSocket keep-alive interval is set to the default value of 30,000 (30 seconds).  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the WebSocket connection has been accepted.  
+ 
+The size of the receive buffer is 16,385 bytes. The WebSocket keep-alive interval is set to the default value of 30,000 (30 seconds).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -123,12 +123,12 @@
  The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the WebSocket connection has been accepted.  
-  
- The size of the receive buffer is 16,385 bytes.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the WebSocket connection has been accepted.  
+ 
+The size of the receive buffer is 16,385 bytes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -179,10 +179,10 @@
  The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> > object will complete after the WebSocket connection has been accepted.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> > object will complete after the WebSocket connection has been accepted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -243,10 +243,10 @@
  The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the WebSocket connection has been accepted.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the WebSocket connection has been accepted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -290,17 +290,17 @@
         <value>An <see cref="T:System.Net.HttpListenerRequest" /> object that represents the client request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you close this <xref:System.Net.HttpListenerContext>, it will send the response to the client, close the <xref:System.Net.HttpListenerResponse> that contains the response, and close the <xref:System.Net.HttpListenerRequest> object returned by this property.  
+If you close this <xref:System.Net.HttpListenerContext>, it will send the response to the client, close the <xref:System.Net.HttpListenerResponse> that contains the response, and close the <xref:System.Net.HttpListenerRequest> object returned by this property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates calling this method. The `listener` variable holds an <xref:System.Net.HttpListener> object.  
-  
- [!code-csharp[Net_Listener_Basic#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#3)]  
-  
+The following code example demonstrates calling this method. The `listener` variable holds an <xref:System.Net.HttpListener> object.  
+ 
+[!code-csharp[Net_Listener_Basic#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,17 +327,17 @@
         <value>An <see cref="T:System.Net.HttpListenerResponse" /> object used to send a response back to the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Your application configures the response by setting properties in the <xref:System.Net.HttpListenerResponse> object returned by this property. After configuring the response, you send it to the client by closing the response, or by closing this <xref:System.Net.HttpListenerContext> object.  
+Your application configures the response by setting properties in the <xref:System.Net.HttpListenerResponse> object returned by this property. After configuring the response, you send it to the client by closing the response, or by closing this <xref:System.Net.HttpListenerContext> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates getting the response to a client's request and adding the response body.  
-  
- [!code-csharp[Net_Listener_Basic#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#3)]  
-  
+The following code example demonstrates getting the response to a client's request and adding the response body.  
+ 
+[!code-csharp[Net_Listener_Basic#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#3)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -367,19 +367,19 @@
         <value>An <see cref="T:System.Security.Principal.IPrincipal" /> object that describes the client, or <see langword="null" /> if the <see cref="T:System.Net.HttpListener" /> that supplied this <see cref="T:System.Net.HttpListenerContext" /> does not require authentication.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Net.HttpListener> indicates that it requires authentication using the <xref:System.Net.HttpListener.AuthenticationSchemes%2A> property or by specifying an <xref:System.Net.AuthenticationSchemeSelector> delegate using the <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property.  
+An <xref:System.Net.HttpListener> indicates that it requires authentication using the <xref:System.Net.HttpListener.AuthenticationSchemes%2A> property or by specifying an <xref:System.Net.AuthenticationSchemeSelector> delegate using the <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property.  
+ 
+To determine the client's login name and authentication information, check the <xref:System.Security.Principal.IPrincipal.Identity%2A?displayProperty=fullName> property in the object returned by this property.  
+ 
   
- To determine the client's login name and authentication information, check the <xref:System.Security.Principal.IPrincipal.Identity%2A?displayProperty=fullName> property in the object returned by this property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates accessing identity and authentication information about the client, and returning it to the client in the response.  
-  
- [!code-csharp[Net_Listener_Basic#8](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#8)]  
-  
+The following code example demonstrates accessing identity and authentication information about the client, and returning it to the client in the response.  
+ 
+[!code-csharp[Net_Listener_Basic#8](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#8)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />  

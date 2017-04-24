@@ -24,27 +24,27 @@
     <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRename" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ComponentModel.Design.ComponentRenameEventArgs> provides data about a <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRename> event.  
-  
- A <xref:System.ComponentModel.Design.ComponentRenameEventArgs> object provides the following information:  
-  
+A <xref:System.ComponentModel.Design.ComponentRenameEventArgs> provides data about a <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRename> event.  
+ 
+A <xref:System.ComponentModel.Design.ComponentRenameEventArgs> object provides the following information:  
+ 
 -   A <xref:System.ComponentModel.Design.ComponentRenameEventArgs.Component%2A> property that references the component being renamed.  
-  
+ 
 -   An <xref:System.ComponentModel.Design.ComponentRenameEventArgs.OldName%2A> property that indicates the old name of the component.  
-  
+ 
 -   A <xref:System.ComponentModel.Design.ComponentRenameEventArgs.NewName%2A> property that indicates the new name of the component.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates creating a <xref:System.ComponentModel.Design.ComponentRenameEventArgs>.  
-  
- [!code-cpp[ComponentRenameEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentRenameEventArgsExample/CPP/componentrenameeventargsexample.cpp#1)]
- [!code-csharp[ComponentRenameEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentRenameEventArgsExample/CS/componentrenameeventargsexample.cs#1)]
- [!code-vb[ComponentRenameEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentRenameEventArgsExample/VB/componentrenameeventargsexample.vb#1)]  
-  
+The following example demonstrates creating a <xref:System.ComponentModel.Design.ComponentRenameEventArgs>.  
+ 
+[!code-cpp[ComponentRenameEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentRenameEventArgsExample/CPP/componentrenameeventargsexample.cpp#1)]
+[!code-csharp[ComponentRenameEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentRenameEventArgsExample/CS/componentrenameeventargsexample.cs#1)]
+[!code-vb[ComponentRenameEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentRenameEventArgsExample/VB/componentrenameeventargsexample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

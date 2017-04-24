@@ -70,10 +70,10 @@
         <value>The name as a string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not specify <xref:System.Data.Linq.Mapping.ParameterAttribute.Name%2A>, the name is assumed to be the same as the name of the parameter in the database.  
-  
+If you do not specify <xref:System.Data.Linq.Mapping.ParameterAttribute.Name%2A>, the name is assumed to be the same as the name of the parameter in the database.  
+ 
  ]]></format>
         </remarks>
       </Docs>

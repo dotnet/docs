@@ -14,10 +14,10 @@
     <summary>Converts instances of <see cref="T:System.String" /> to and from instances of <see cref="T:System.Windows.Media.CacheMode" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is typically only used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
-  
+This class is typically only used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
           <see langword="true" /> if <paramref name="value" /> can be converted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns `true`.  
-  
+This method always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

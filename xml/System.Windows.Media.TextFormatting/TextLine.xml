@@ -52,10 +52,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor must be called for every class that is inherited from <xref:System.Windows.Media.TextFormatting.TextLine>.  
-  
+This constructor must be called for every class that is inherited from <xref:System.Windows.Media.TextFormatting.TextLine>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,10 +228,10 @@
         <returns>The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object at the specified <paramref name="distance" /> from the beginning of the line.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The text flow direction determines how the distance is measured.  
-  
+The text flow direction determines how the distance is measured.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,10 +257,10 @@
         <returns>A <see cref="T:System.Double" /> that represents the distance from the beginning of the line.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The text flow direction determines how the distance is measured.  
-  
+The text flow direction determines how the distance is measured.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <returns>An enumerator that allows you to enumerate each <see cref="T:System.Windows.Media.TextFormatting.IndexedGlyphRun" /> object in the <see cref="T:System.Windows.Media.TextFormatting.TextLine" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By enumerating through the list of <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun> objects, the text layout client can obtain glyph information for each text source character.  
-  
+By enumerating through the list of <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun> objects, the text layout client can obtain glyph information for each text source character.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,12 +396,12 @@
         <returns>A <see cref="T:System.Windows.Media.TextFormatting.TextLineBreak" /> value that represents the line break.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value is `null` when the line ends at the end of the paragraph.  
-  
- The text formatter client may pass the return value back as a parameter to the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method, which allows the value to be used when formatting the next line within the same paragraph.  
-  
+The return value is `null` when the line ends at the end of the paragraph.  
+ 
+The text formatter client may pass the return value back as a parameter to the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method, which allows the value to be used when formatting the next line within the same paragraph.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -499,10 +499,10 @@
           <see langword="true" /> if the text line is truncated in the middle of a word; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.TextFormatting.TextLine.IsTruncated%2A> property value is set only when the <xref:System.Windows.TextWrapping> property of <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> is set to <xref:System.Windows.TextWrapping>, and a single word is wider than the formatting paragraph width. In such situation, <xref:System.Windows.Media.TextFormatting.TextFormatter> truncates the line in the middle of the word to honor the desired behavior specified by <xref:System.Windows.TextWrapping> setting.  
-  
+The <xref:System.Windows.Media.TextFormatting.TextLine.IsTruncated%2A> property value is set only when the <xref:System.Windows.TextWrapping> property of <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> is set to <xref:System.Windows.TextWrapping>, and a single word is wider than the formatting paragraph width. In such situation, <xref:System.Windows.Media.TextFormatting.TextFormatter> truncates the line in the middle of the word to honor the desired behavior specified by <xref:System.Windows.TextWrapping> setting.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -704,10 +704,10 @@
         <value>A <see cref="T:System.Double" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.TextFormatting.TextLine.TextHeight%2A> may differ from the <xref:System.Windows.Media.TextFormatting.TextLine.Height%2A> property if the client specified the line height.  
-  
+The <xref:System.Windows.Media.TextFormatting.TextLine.TextHeight%2A> may differ from the <xref:System.Windows.Media.TextFormatting.TextLine.Height%2A> property if the client specified the line height.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,18 +14,18 @@
     <summary>Contains a collection of <see cref="T:System.Configuration.PropertyInformation" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.PropertyInformationCollection> object contains a collection of <xref:System.Configuration.PropertyInformation> objects. A <xref:System.Configuration.PropertyInformation> object contains the details of an individual attribute within the configuration. The <xref:System.Configuration.PropertyInformationCollection> object is derived from the associated <xref:System.Collections.Specialized.NameObjectCollectionBase> object.  
+The <xref:System.Configuration.PropertyInformationCollection> object contains a collection of <xref:System.Configuration.PropertyInformation> objects. A <xref:System.Configuration.PropertyInformation> object contains the details of an individual attribute within the configuration. The <xref:System.Configuration.PropertyInformationCollection> object is derived from the associated <xref:System.Collections.Specialized.NameObjectCollectionBase> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformationCollection> class.  
-  
- [!code-csharp[System.Configuration.PropertyInformation#14](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#14)]
- [!code-vb[System.Configuration.PropertyInformation#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#14)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformationCollection> class.  
+ 
+[!code-csharp[System.Configuration.PropertyInformation#14](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#14)]
+[!code-vb[System.Configuration.PropertyInformation#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#14)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

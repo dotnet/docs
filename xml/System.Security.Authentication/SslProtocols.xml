@@ -27,13 +27,13 @@
     <summary>Defines the possible versions of <see cref="T:System.Security.Authentication.SslProtocols" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates creating a <xref:System.Net.Sockets.TcpClient> that uses the <xref:System.Net.Security.SslStream> class to communicate with a server.  
-  
- [!code-cpp[NclSslClientSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#0)]
- [!code-csharp[NclSslClientSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#0)]  
-  
+The following code example demonstrates creating a <xref:System.Net.Sockets.TcpClient> that uses the <xref:System.Net.Security.SslStream> class to communicate with a server.  
+ 
+[!code-cpp[NclSslClientSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#0)]
+[!code-csharp[NclSslClientSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

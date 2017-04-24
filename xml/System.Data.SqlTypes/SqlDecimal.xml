@@ -38,10 +38,10 @@
     <summary>Represents a numeric value between - 10^38 +1 and 10^38 - 1, with fixed precision and scale.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlTypes.SqlDecimal> has different underlying data structures from its corresponding .NET Framework <xref:System.Decimal> data type. <xref:System.Decimal> has no concept of precision. It uses 3 bytes to store the actual data, and therefore has a maximum scale of 28. The data range is -79,228,162,514,264,337,593,543,950,335 through 79,228,162,514,264,337,593,543,950,335. <xref:System.Data.SqlTypes.SqlDecimal> has both precision and scale. It uses 4 unsigned 4-byte integers to store the actual data, and therefore has maximum precision and scale of 38. The data range is - 10^38 +1 through 10^38 - 1.  
-  
+<xref:System.Data.SqlTypes.SqlDecimal> has different underlying data structures from its corresponding .NET Framework <xref:System.Decimal> data type. <xref:System.Decimal> has no concept of precision. It uses 3 bytes to store the actual data, and therefore has a maximum scale of 28. The data range is -79,228,162,514,264,337,593,543,950,335 through 79,228,162,514,264,337,593,543,950,335. <xref:System.Data.SqlTypes.SqlDecimal> has both precision and scale. It uses 4 unsigned 4-byte integers to store the actual data, and therefore has maximum precision and scale of 38. The data range is - 10^38 +1 through 10^38 - 1.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -289,335 +289,335 @@
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the sum.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Add%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AdjustScale">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal AdjustScale (System.Data.SqlTypes.SqlDecimal n, int digits, bool fRound);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDecimal AdjustScale(valuetype System.Data.SqlTypes.SqlDecimal n, int32 digits, bool fRound) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.AdjustScale(System.Data.SqlTypes.SqlDecimal,System.Int32,System.Boolean)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="digits" Type="System.Int32" />
-        <Parameter Name="fRound" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure to be adjusted.</param>
-        <param name="digits">The number of digits in the adjusted structure.</param>
-        <param name="fRound">If this parameter is <see langword="true" />, the new Value will be rounded, if <see langword="false" />, the value will be truncated.</param>
-        <summary>The scale of the <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand will be adjusted to the number of digits indicated by the digits parameter. Depending on the value of the fRound parameter, the value will either be rounded to the appropriate number of digits or truncated.</summary>
-        <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the adjusted number.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="BinData">
-      <MemberSignature Language="C#" Value="public byte[] BinData { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] BinData" />
-      <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.BinData" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Byte[]</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Get the binary representation of the value of this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure as an array of bytes.</summary>
-        <value>An array of bytes that contains the binary representation of the <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure's value.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Ceiling">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal Ceiling (System.Data.SqlTypes.SqlDecimal n);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDecimal Ceiling(valuetype System.Data.SqlTypes.SqlDecimal n) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Ceiling(System.Data.SqlTypes.SqlDecimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure for which the ceiling value is to be calculated.</param>
-        <summary>Returns the smallest whole number greater than or equal to the specified <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> representing the smallest whole number greater than or equal to the specified <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CompareTo">
-      <MemberSignature Language="C#" Value="public int CompareTo (System.Data.SqlTypes.SqlDecimal value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CompareTo(valuetype System.Data.SqlTypes.SqlDecimal value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.CompareTo(System.Data.SqlTypes.SqlDecimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="value">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> to be compared.</param>
-        <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> instance to the supplied <see cref="T:System.Data.SqlTypes.SqlDecimal" /> object and returns an indication of their relative values.</summary>
-        <returns>A signed number that indicates the relative values of the instance and the object.  
-  
- <list type="table">  
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="AdjustScale">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal AdjustScale (System.Data.SqlTypes.SqlDecimal n, int digits, bool fRound);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDecimal AdjustScale(valuetype System.Data.SqlTypes.SqlDecimal n, int32 digits, bool fRound) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.AdjustScale(System.Data.SqlTypes.SqlDecimal,System.Int32,System.Boolean)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
+       <Parameter Name="digits" Type="System.Int32" />
+       <Parameter Name="fRound" Type="System.Boolean" />
+     </Parameters>
+     <Docs>
+       <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure to be adjusted.</param>
+       <param name="digits">The number of digits in the adjusted structure.</param>
+       <param name="fRound">If this parameter is <see langword="true" />, the new Value will be rounded, if <see langword="false" />, the value will be truncated.</param>
+       <summary>The scale of the <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand will be adjusted to the number of digits indicated by the digits parameter. Depending on the value of the fRound parameter, the value will either be rounded to the appropriate number of digits or truncated.</summary>
+       <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the adjusted number.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="BinData">
+     <MemberSignature Language="C#" Value="public byte[] BinData { get; }" />
+     <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] BinData" />
+     <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.BinData" />
+     <MemberType>Property</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Byte[]</ReturnType>
+     </ReturnValue>
+     <Docs>
+       <summary>Get the binary representation of the value of this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure as an array of bytes.</summary>
+       <value>An array of bytes that contains the binary representation of the <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure's value.</value>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="Ceiling">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal Ceiling (System.Data.SqlTypes.SqlDecimal n);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDecimal Ceiling(valuetype System.Data.SqlTypes.SqlDecimal n) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Ceiling(System.Data.SqlTypes.SqlDecimal)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure for which the ceiling value is to be calculated.</param>
+       <summary>Returns the smallest whole number greater than or equal to the specified <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> representing the smallest whole number greater than or equal to the specified <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="CompareTo">
+     <MemberSignature Language="C#" Value="public int CompareTo (System.Data.SqlTypes.SqlDecimal value);" />
+     <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CompareTo(valuetype System.Data.SqlTypes.SqlDecimal value) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.CompareTo(System.Data.SqlTypes.SqlDecimal)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Int32</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="value" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="value">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> to be compared.</param>
+       <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> instance to the supplied <see cref="T:System.Data.SqlTypes.SqlDecimal" /> object and returns an indication of their relative values.</summary>
+       <returns>A signed number that indicates the relative values of the instance and the object.  
+ 
+<list type="table">  
 <listheader>  
 <term> Return value  
-  
- </term>  
+ 
+</term>  
 <description> Condition  
-  
- </description>  
+ 
+</description>  
 </listheader>  
 <item>  
 <term> Less than zero  
-  
- </term>  
+ 
+</term>  
 <description> This instance is less than the object.  
-  
- </description>  
+ 
+</description>  
 </item>  
 <item>  
 <term> Zero  
-  
- </term>  
+ 
+</term>  
 <description> This instance is the same as the object.  
-  
- </description>  
+ 
+</description>  
 </item>  
 <item>  
 <term> Greater than zero  
-  
- </term>  
+ 
+</term>  
 <description> This instance is greater than the object  
-  
- -or-  
-  
- The object is a null reference (<see langword="Nothing" /> in Visual Basic)  
-  
- </description>  
+ 
+-or-  
+ 
+The object is a null reference (<see langword="Nothing" /> in Visual Basic)  
+ 
+</description>  
 </item>  
 </list></returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CompareTo">
-      <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.CompareTo(System.Object)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Object" />
-      </Parameters>
-      <Docs>
-        <param name="value">The <see cref="T:System.Object" /> to be compared.</param>
-        <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> instance to the supplied <see cref="T:System.Object" /> and returns an indication of their relative values.</summary>
-        <returns>A signed number that indicates the relative values of the instance and the object.  
-  
- <list type="table">  
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="CompareTo">
+     <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
+     <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.CompareTo(System.Object)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Int32</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="value" Type="System.Object" />
+     </Parameters>
+     <Docs>
+       <param name="value">The <see cref="T:System.Object" /> to be compared.</param>
+       <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> instance to the supplied <see cref="T:System.Object" /> and returns an indication of their relative values.</summary>
+       <returns>A signed number that indicates the relative values of the instance and the object.  
+ 
+<list type="table">  
 <listheader>  
 <term> Return Value  
-  
- </term>  
+ 
+</term>  
 <description> Condition  
-  
- </description>  
+ 
+</description>  
 </listheader>  
 <item>  
 <term> Less than zero  
-  
- </term>  
+ 
+</term>  
 <description> This instance is less than the object.  
-  
- </description>  
+ 
+</description>  
 </item>  
 <item>  
 <term> Zero  
-  
- </term>  
+ 
+</term>  
 <description> This instance is the same as the object.  
-  
- </description>  
+ 
+</description>  
 </item>  
 <item>  
 <term> Greater than zero  
-  
- </term>  
+ 
+</term>  
 <description> This instance is greater than the object  
-  
- -or-  
-  
- The object is a null reference (<see langword="Nothing" /> in Visual Basic)  
-  
- </description>  
+ 
+-or-  
+ 
+The object is a null reference (<see langword="Nothing" /> in Visual Basic)  
+ 
+</description>  
 </item>  
 </list></returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ConvertToPrecScale">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal ConvertToPrecScale (System.Data.SqlTypes.SqlDecimal n, int precision, int scale);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDecimal ConvertToPrecScale(valuetype System.Data.SqlTypes.SqlDecimal n, int32 precision, int32 scale) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ConvertToPrecScale(System.Data.SqlTypes.SqlDecimal,System.Int32,System.Int32)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="precision" Type="System.Int32" />
-        <Parameter Name="scale" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose value is to be adjusted.</param>
-        <param name="precision">The precision for the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <param name="scale">The scale for the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <summary>Adjusts the value of the <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand to the indicated precision and scale.</summary>
-        <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose Value has been adjusted to the precision and scale indicated in the parameters.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Data">
-      <MemberSignature Language="C#" Value="public int[] Data { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32[] Data" />
-      <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.Data" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32[]</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the binary representation of this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure as an array of integers.</summary>
-        <value>An array of integers that contains the binary representation of this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Divide">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal Divide (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDecimal Divide(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Divide(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <summary>The division operator calculates the results of dividing the first <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand by the second.</summary>
-        <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the results of the division.</returns>
-        <remarks>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="ConvertToPrecScale">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal ConvertToPrecScale (System.Data.SqlTypes.SqlDecimal n, int precision, int scale);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDecimal ConvertToPrecScale(valuetype System.Data.SqlTypes.SqlDecimal n, int32 precision, int32 scale) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ConvertToPrecScale(System.Data.SqlTypes.SqlDecimal,System.Int32,System.Int32)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
+       <Parameter Name="precision" Type="System.Int32" />
+       <Parameter Name="scale" Type="System.Int32" />
+     </Parameters>
+     <Docs>
+       <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose value is to be adjusted.</param>
+       <param name="precision">The precision for the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <param name="scale">The scale for the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <summary>Adjusts the value of the <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand to the indicated precision and scale.</summary>
+       <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose Value has been adjusted to the precision and scale indicated in the parameters.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="Data">
+     <MemberSignature Language="C#" Value="public int[] Data { get; }" />
+     <MemberSignature Language="ILAsm" Value=".property instance int32[] Data" />
+     <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.Data" />
+     <MemberType>Property</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Int32[]</ReturnType>
+     </ReturnValue>
+     <Docs>
+       <summary>Gets the binary representation of this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure as an array of integers.</summary>
+       <value>An array of integers that contains the binary representation of this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</value>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="Divide">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal Divide (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDecimal Divide(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Divide(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <summary>The division operator calculates the results of dividing the first <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand by the second.</summary>
+       <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the results of the division.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Divide%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -867,10 +867,10 @@
           <see langword="true" /> if this <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure is null. Otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
-  
+For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -994,10 +994,10 @@
         <summary>A constant representing the largest possible value for the <see cref="P:System.Data.SqlTypes.SqlDecimal.Precision" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this constant is 38.  
-  
+The value of this constant is 38.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1053,10 +1053,10 @@
         <summary>A constant representing the maximum value of a <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this constant is 99,999,999,999,999,999,999,999,999,999,999,999,999.  
-  
+The value of this constant is 99,999,999,999,999,999,999,999,999,999,999,999,999.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1086,10 +1086,10 @@
         <summary>A constant representing the minimum value for a <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this constant is -99,999,999,999,999,999,999,999,999,999,999,999,999.  
-  
+The value of this constant is -99,999,999,999,999,999,999,999,999,999,999,999,999.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1126,71 +1126,71 @@
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the product of the multiplication.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecim%2A> al.Multiply(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NotEquals">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean NotEquals (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean NotEquals(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether they are not equal.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Null">
-      <MemberSignature Language="C#" Value="public static readonly System.Data.SqlTypes.SqlDecimal Null;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlDecimal Null" />
-      <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDecimal.Null" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Represents a <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlDecimal" />class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="NotEquals">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean NotEquals (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean NotEquals(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether they are not equal.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="Null">
+     <MemberSignature Language="C#" Value="public static readonly System.Data.SqlTypes.SqlDecimal Null;" />
+     <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlDecimal Null" />
+     <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDecimal.Null" />
+     <MemberType>Field</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Docs>
+       <summary>Represents a <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlDecimal" />class.</summary>
+       <remarks>
+         <format type="text/markdown"><![CDATA[  
+ 
 ## Remarks  
- For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
-  
+For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1227,40 +1227,40 @@
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the sum.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Syste%2A> m.Data.SqlTypes.SqlDecimal.Add(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Division (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Division(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Division(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <summary>The division operator calculates the results of dividing the first <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand by the second.</summary>
-        <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the results of the division.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Division">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Division (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Division(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Division(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <summary>The division operator calculates the results of dividing the first <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand by the second.</summary>
+       <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the results of the division.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Sy%2A> stem.Data.SqlTypes.SqlDecimal.Divide(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
         </remarks>
       </Docs>
@@ -1297,226 +1297,226 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Equals%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlBoolean x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Explicit (System.Data.SqlTypes.SqlDecimal x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Decimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Decimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlDouble x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlDouble x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlSingle x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlSingle x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlString x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (double x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(float64 x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Double)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_GreaterThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structures to determine whether the first is greater than the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlBoolean x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static decimal op_Explicit (System.Data.SqlTypes.SqlDecimal x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Decimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Decimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlDouble x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlDouble x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlSingle x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlSingle x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlString x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (double x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(float64 x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Double)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Double" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_GreaterThan">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_GreaterThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structures to determine whether the first is greater than the second.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThan%2A> .SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
         </remarks>
       </Docs>
@@ -1553,257 +1553,257 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlByte x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlByte x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlInt16 x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlInt32 x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlInt32 x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlInt64 x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlMoney x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlMoney x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (decimal x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Decimal x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Decimal)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Decimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (long x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(int64 x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Int64)~System.Data.SqlTypes.SqlDecimal" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Int64" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Inequality (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Inequality(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether they are not equal.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlByte x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlByte x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlInt16 x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlInt32 x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlInt32 x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlInt64 x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlMoney x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlMoney x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (decimal x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Decimal x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Decimal)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Decimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (long x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(int64 x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Int64)~System.Data.SqlTypes.SqlDecimal" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Int64" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Inequality (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Inequality(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether they are not equal.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>]]></format> 
         </remarks>
       </Docs>
@@ -1840,40 +1840,40 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThan%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_LessThanOrEqual(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether the first is less than or equal to the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_LessThanOrEqual">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_LessThanOrEqual(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether the first is less than or equal to the second.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1910,40 +1910,40 @@
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the product of the multiplication.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Multiply%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Subtraction (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Subtraction(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Subtraction(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
-        <summary>Calculates the results of subtracting the second <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand from the first.</summary>
-        <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose Value property contains the results of the subtraction.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Subtraction">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Subtraction (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Subtraction(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Subtraction(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
+       <summary>Calculates the results of subtracting the second <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand from the first.</summary>
+       <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose Value property contains the results of the subtraction.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Subtract%2A> )?qualifyHint=True&autoUpgrade=False]]></format>
         </remarks>
       </Docs>

@@ -38,23 +38,23 @@
     <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> used for establishing an SSL connection.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This delegate is used to construct instances of the <xref:System.Net.Security.SslStream> class. The <xref:System.Net.Security.SslStream> class is used to help secure information exchanged between a client and server. The client and server use this delegate to select a certificate to be used for authentication.  
+This delegate is used to construct instances of the <xref:System.Net.Security.SslStream> class. The <xref:System.Net.Security.SslStream> class is used to help secure information exchanged between a client and server. The client and server use this delegate to select a certificate to be used for authentication.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a method implementation for this delegate.  
-  
- [!code-cpp[NclSslClientAsync#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#2)]
- [!code-csharp[NclSslClientAsync#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#2)]  
-  
- The following code example demonstrates creating an instance of this delegate.  
-  
- [!code-cpp[NclSslClientAsync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#6)]
- [!code-csharp[NclSslClientAsync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#6)]  
-  
+The following code example demonstrates a method implementation for this delegate.  
+ 
+[!code-cpp[NclSslClientAsync#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#2)]
+[!code-csharp[NclSslClientAsync#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#2)]  
+ 
+The following code example demonstrates creating an instance of this delegate.  
+ 
+[!code-cpp[NclSslClientAsync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#6)]
+[!code-csharp[NclSslClientAsync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

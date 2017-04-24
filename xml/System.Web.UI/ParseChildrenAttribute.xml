@@ -19,33 +19,33 @@
     <summary>Defines a metadata attribute that you can use when developing ASP.NET server controls. Use the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class to indicate how the page parser should treat content nested inside a server control tag declared on a page. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ParseChildrenAttribute> class allows you to specify parsing logic for a custom server control by marking the server control with the <xref:System.Web.UI.ParseChildrenAttribute> metadata attribute.  
+The <xref:System.Web.UI.ParseChildrenAttribute> class allows you to specify parsing logic for a custom server control by marking the server control with the <xref:System.Web.UI.ParseChildrenAttribute> metadata attribute.  
+ 
+Marking your server control with the metadata attribute `ParseChildren(true)` instructs the parser to interpret the elements that are contained within the server control's tags as properties. In this scenario, the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property is `true`.  
+ 
+Marking your server control with the metadata attribute `ParseChildren(true,"<Default Property>")` sets the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property to the name of the property that is passed into the attribute.  
+ 
+Marking your server control with the metadata attribute `ParseChildren(false)`, the default value, instructs the parser to interpret the elements that are contained within the server control's tags as content that will be parsed with an associated <xref:System.Web.UI.ControlBuilder> that is, as controls. In this scenario, the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property is `false`.  
+ 
+For information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- Marking your server control with the metadata attribute `ParseChildren(true)` instructs the parser to interpret the elements that are contained within the server control's tags as properties. In this scenario, the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property is `true`.  
-  
- Marking your server control with the metadata attribute `ParseChildren(true,"<Default Property>")` sets the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property to the name of the property that is passed into the attribute.  
-  
- Marking your server control with the metadata attribute `ParseChildren(false)`, the default value, instructs the parser to interpret the elements that are contained within the server control's tags as content that will be parsed with an associated <xref:System.Web.UI.ControlBuilder> that is, as controls. In this scenario, the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property is `false`.  
-  
- For information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The code example in this section contains two parts. The first code example demonstrates how to set properties for the <xref:System.Web.UI.ParseChildrenAttribute> class. The second code example demonstrates how to use classes in an ASP.NET page.  
-  
- The following code example demonstrates how to set the <xref:System.Web.UI.ParseChildrenAttribute> object of a custom server control named `CollectionPropertyControl`. The <xref:System.Web.UI.ParseChildrenAttribute> sets the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property to `true` and the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property to the `Employee` class.  
-  
- [!code-csharp[ParseChildrenAttribute_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.cs#1)]
- [!code-vb[ParseChildrenAttribute_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.vb#1)]  
-  
- The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page. Instances of the `Employee` class are added declaratively.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
-  
+The code example in this section contains two parts. The first code example demonstrates how to set properties for the <xref:System.Web.UI.ParseChildrenAttribute> class. The second code example demonstrates how to use classes in an ASP.NET page.  
+ 
+The following code example demonstrates how to set the <xref:System.Web.UI.ParseChildrenAttribute> object of a custom server control named `CollectionPropertyControl`. The <xref:System.Web.UI.ParseChildrenAttribute> sets the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property to `true` and the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property to the `Employee` class.  
+ 
+[!code-csharp[ParseChildrenAttribute_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.cs#1)]
+[!code-vb[ParseChildrenAttribute_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.vb#1)]  
+ 
+The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page. Instances of the `Employee` class are added declaratively.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new instance of the <xref:System.Web.UI.ParseChildrenAttribute> class is created with the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property set to `false`.  
-  
+A new instance of the <xref:System.Web.UI.ParseChildrenAttribute> class is created with the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property set to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,25 +90,25 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class using the <see cref="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" /> property to determine if the elements that are contained within a server control are parsed as properties of the server control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `childrenAsProperties` is `false`, the elements that are contained within the server control are parsed as a control. `false` is the default for <xref:System.Web.UI.ParseChildrenAttribute>.  
+If `childrenAsProperties` is `false`, the elements that are contained within the server control are parsed as a control. `false` is the default for <xref:System.Web.UI.ParseChildrenAttribute>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The code example in this section contains two parts. The first code example demonstrates how to set properties for the <xref:System.Web.UI.ParseChildrenAttribute> class. The second code example demonstrates how to use classes in an ASP.NET page.  
-  
- The following code example demonstrates how to set the <xref:System.Web.UI.ParseChildrenAttribute> object for a custom server control named `CollectionPropertyControl`. When the <xref:System.Web.UI.ParseChildrenAttribute> is declared before the class defining `CollectionPropertyControl`, the <xref:System.Web.UI.ParseChildrenAttribute> sets the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property to `true`.  
-  
- [!code-csharp[ParseChildrenAttribute_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.cs#1)]
- [!code-vb[ParseChildrenAttribute_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.vb#1)]  
-  
- The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page. One instance of the `Employee` class is added declaratively and another is added programmatically.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.aspx#3)]  -->  
-  
+The code example in this section contains two parts. The first code example demonstrates how to set properties for the <xref:System.Web.UI.ParseChildrenAttribute> class. The second code example demonstrates how to use classes in an ASP.NET page.  
+ 
+The following code example demonstrates how to set the <xref:System.Web.UI.ParseChildrenAttribute> object for a custom server control named `CollectionPropertyControl`. When the <xref:System.Web.UI.ParseChildrenAttribute> is declared before the class defining `CollectionPropertyControl`, the <xref:System.Web.UI.ParseChildrenAttribute> sets the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property to `true`.  
+ 
+[!code-csharp[ParseChildrenAttribute_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.cs#1)]
+[!code-vb[ParseChildrenAttribute_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.vb#1)]  
+ 
+The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page. One instance of the `Employee` class is added declaratively and another is added programmatically.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.aspx#3)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,25 +153,25 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class using the <paramref name="childrenAsProperties" /> and <paramref name="defaultProperty" /> parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `childrenAsProperties` is `false`, the elements are parsed as controls.  
+If `childrenAsProperties` is `false`, the elements are parsed as controls.  
+ 
   
-   
-  
+ 
 ## Examples  
- The code example in this section contains two parts. The first code example demonstrates how to set properties for the <xref:System.Web.UI.ParseChildrenAttribute> class. The second code example demonstrates how to use classes in an ASP.NET page.  
-  
- The following code example demonstrates how to set the <xref:System.Web.UI.ParseChildrenAttribute> object of a custom server control named `CollectionPropertyControl`. The <xref:System.Web.UI.ParseChildrenAttribute> sets the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property to `true` and the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property to the `Employee` class.  
-  
- [!code-csharp[ParseChildrenAttribute_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.cs#2)]
- [!code-vb[ParseChildrenAttribute_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.vb#2)]  
-  
- The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
-  
+The code example in this section contains two parts. The first code example demonstrates how to set properties for the <xref:System.Web.UI.ParseChildrenAttribute> class. The second code example demonstrates how to use classes in an ASP.NET page.  
+ 
+The following code example demonstrates how to set the <xref:System.Web.UI.ParseChildrenAttribute> object of a custom server control named `CollectionPropertyControl`. The <xref:System.Web.UI.ParseChildrenAttribute> sets the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property to `true` and the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property to the `Employee` class.  
+ 
+[!code-csharp[ParseChildrenAttribute_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.cs#2)]
+[!code-vb[ParseChildrenAttribute_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.vb#2)]  
+ 
+The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,18 +193,18 @@
         <value>The control type. The default is <see cref="T:System.Web.UI.Control" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the allowed control type is `null`, meaning that it has not been specified, the default type, which is a <xref:System.Web.UI.Control?displayProperty=fullName> control, is returned.  
+If the allowed control type is `null`, meaning that it has not been specified, the default type, which is a <xref:System.Web.UI.Control?displayProperty=fullName> control, is returned.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.ChildControlType%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute.%23ctor%2A>.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.aspx#3)]  -->  
-  
+The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.ChildControlType%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute.%23ctor%2A>.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.aspx#3)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,18 +227,18 @@
           <see langword="true" /> to parse the elements as properties; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property is set to `false`, the elements that are contained within a server control are parsed as a control.  
+If the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property is set to `false`, the elements that are contained within a server control are parsed as a control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
-  
+The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Web.UI.ParseChildrenAttribute" /> was invoked with <paramref name="childrenAsProperties" /> set to <see langword="false" />.</exception>
@@ -260,10 +260,10 @@
         <summary>Defines the default value for the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value for the <xref:System.Web.UI.ParseChildrenAttribute.Default> field is `false`, which means that elements are not parsed as properties of the server control.  
-  
+The default value for the <xref:System.Web.UI.ParseChildrenAttribute.Default> field is `false`, which means that elements are not parsed as properties of the server control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,18 +285,18 @@
         <value>The name of the default collection property of the server control into which the elements are parsed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property is used only if a string is passed to the <xref:System.Web.UI.ParseChildrenAttribute> constructor. When the <xref:System.Web.UI.ParseChildrenAttribute> class is created, the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property defines the default property for the server control that is being parsed.  
+The <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property is used only if a string is passed to the <xref:System.Web.UI.ParseChildrenAttribute> constructor. When the <xref:System.Web.UI.ParseChildrenAttribute> class is created, the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property defines the default property for the server control that is being parsed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
-  
+The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Web.UI.ParseChildrenAttribute" /> was invoked with <paramref name="childrenAsProperties" /> set to <see langword="false" />.</exception>
@@ -363,18 +363,18 @@
           <see langword="true" /> if the current <see cref="T:System.Web.UI.ParseChildrenAttribute" /> value is the default instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value for the <xref:System.Web.UI.ParseChildrenAttribute> class is the <xref:System.Web.UI.ParseChildrenAttribute> field.  
+The default value for the <xref:System.Web.UI.ParseChildrenAttribute> class is the <xref:System.Web.UI.ParseChildrenAttribute> field.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.IsDefaultAttribute%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
-  
+The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.IsDefaultAttribute%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,10 +395,10 @@
         <summary>Indicates that the nested content that is contained within the server control is parsed as controls.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.ParseChildrenAttribute.ParseAsChildren> field is called, the nested content that are contained within the server control are not parsed as properties; rather, they are parsed as a control.  
-  
+If the <xref:System.Web.UI.ParseChildrenAttribute.ParseAsChildren> field is called, the nested content that are contained within the server control are not parsed as properties; rather, they are parsed as a control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -419,10 +419,10 @@
         <summary>Indicates that the nested content that is contained within a server control is parsed as properties of the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.ParseChildrenAttribute.ParseAsProperties> field is called, the nested content contained within a server control is parsed as properties.  
-  
+If the <xref:System.Web.UI.ParseChildrenAttribute.ParseAsProperties> field is called, the nested content contained within a server control is parsed as properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -21,12 +21,12 @@
     <summary>Provides a top-level mapping layer between a COM object and a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. Add a <xref:System.ComponentModel.TypeDescriptionProvider> to handle a <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A> instead.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,12 +57,12 @@
         <returns>A collection of attributes for <paramref name="component" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,12 +93,12 @@
         <returns>The name of the class that corresponds with <paramref name="component" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,12 +129,12 @@
         <returns>The <see cref="T:System.ComponentModel.TypeConverter" /> for <paramref name="component" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,12 +165,12 @@
         <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> that represents <paramref name="component" />'s default event.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,12 +201,12 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents <paramref name="component" />'s default property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,12 +239,12 @@
         <returns>The editor for <paramref name="component" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,12 +275,12 @@
         <returns>A collection of event descriptors for <paramref name="component" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,12 +313,12 @@
         <returns>A collection of event descriptors for <paramref name="component" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -349,12 +349,12 @@
         <returns>The name of <paramref name="component" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,12 +387,12 @@
         <returns>A collection of property descriptors for <paramref name="component" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,12 +427,12 @@
         <returns>The value of the property that has the specified dispatch identifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,12 +467,12 @@
         <returns>The value of the property that has the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

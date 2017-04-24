@@ -22,12 +22,12 @@
     <summary>Attribute that contains information about a Workflow markup file. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <value>A <see cref="T:System.String" /> that contains the checksum associated with the workflow markup source file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is used to compare if the workflow markup file has been changed.  
-  
+This value is used to compare if the workflow markup file has been changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -34,10 +34,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SimpleSecurityTokenProvider" /> class by using the specified token and token binding requirements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a security token provider that produces a security token as an issued token for federated bindings.  
-  
+Creates a security token provider that produces a security token as an issued token for federated bindings.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

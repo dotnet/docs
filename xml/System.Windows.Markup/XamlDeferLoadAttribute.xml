@@ -19,13 +19,13 @@
     <summary>Indicates that a class or property has a deferred load usage for XAML (such as a template behavior), and reports the class that enables the deferring behavior and its destination/content type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlDeferringLoader> is possibly involved in defer load scenarios as a support class.  
-  
+<xref:System.Xaml.XamlDeferringLoader> is possibly involved in defer load scenarios as a support class.  
+ 
 ## WPF Usage Notes  
- An example class where this attribute is applied in the WPF XAML implementation is <xref:System.Windows.TemplateContent>.  
-  
+An example class where this attribute is applied in the WPF XAML implementation is <xref:System.Windows.TemplateContent>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

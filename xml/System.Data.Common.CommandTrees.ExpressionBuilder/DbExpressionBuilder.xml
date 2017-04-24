@@ -1122,10 +1122,10 @@
         <returns>A new DbGroupByExpression with the specified input set, grouping keys and aggregates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- DbGroupByExpression allows either the list of keys or the list of aggregates to be empty, but not both.  
-  
+DbGroupByExpression allows either the list of keys or the list of aggregates to be empty, but not both.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1413,10 +1413,10 @@
         <returns>A new DbIsOfExpression with the specified instance and type and DbExpressionKind IsOf.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- DbIsOfExpression requires that `argument` has a polymorphic result type, and that `type` is a type from the same type hierarchy as that result type.  
-  
+DbIsOfExpression requires that `argument` has a polymorphic result type, and that `type` is a type from the same type hierarchy as that result type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1448,10 +1448,10 @@
         <returns>A new DbIsOfExpression with the specified instance and type and DbExpressionKind IsOfOnly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- DbIsOfExpression requires that `argument` has a polymorphic result type, and that `type` is a type from the same type hierarchy as that result type.  
-  
+DbIsOfExpression requires that `argument` has a polymorphic result type, and that `type` is a type from the same type hierarchy as that result type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1523,22 +1523,22 @@
         <returns>A new DbProjectExpression with the specified selector as its projection, and a new DbJoinExpression as its input. The input DbJoinExpression is created with an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of InnerJoin, that represents the inner join operation applied to the left and right input sets under a join condition that compares the outer and inner key values for equality.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To be compatible with Join, `TSelector` must be derived from <xref:System.Data.Common.CommandTrees.DbExpression>,     or must be an anonymous type with DbExpression-derived properties. The following are examples of supported types for `TSelector`:  
-  
+To be compatible with Join, `TSelector` must be derived from <xref:System.Data.Common.CommandTrees.DbExpression>,     or must be an anonymous type with DbExpression-derived properties. The following are examples of supported types for `TSelector`:  
+ 
 ```  
 outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => o.Property("Name"))  
 ```  
-  
- (`TSelector` is <xref:System.Data.Common.CommandTrees.DbPropertyExpression>).  
-  
+ 
+(`TSelector` is <xref:System.Data.Common.CommandTrees.DbPropertyExpression>).  
+ 
 ```  
 outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { OName = o.Property("Name"), IName = i.Property("Name") })  
 ```  
-  
- (`TSelector` is an anonymous type with DbExpression-derived properties).  
-  
+ 
+(`TSelector` is an anonymous type with DbExpression-derived properties).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The result of <paramref name="selector" /> is null after conversion to DbExpression.</exception>
@@ -1911,10 +1911,10 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbRelationshipNavigationExpression representing the navigation of the specified from and to relation ends of the specified relation type from the specified navigation source instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression> requires that navigation always occur from a reference, and so `navigateFrom` must always have a reference result type.  
-  
+<xref:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression> requires that navigation always occur from a reference, and so `navigateFrom` must always have a reference result type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1950,10 +1950,10 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbRelationshipNavigationExpression representing the navigation of the specified from and to relation ends of the specified relation type from the specified navigation source instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression> requires that navigation always occur from a reference, and so `navigateFrom` must always have a reference result type.  
-  
+<xref:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression> requires that navigation always occur from a reference, and so `navigateFrom` must always have a reference result type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2010,10 +2010,10 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbNewInstanceExpression with the specified type and arguments.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `instanceType` is a a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
-  
+If `instanceType` is a a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2051,10 +2051,10 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbNewInstanceExpression with the specified type and arguments.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `instanceType` is a a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
-  
+If `instanceType` is a a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2273,10 +2273,10 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbOfTypeExpression with the specified set argument and type, and an ExpressionKind of <see cref="F:System.Data.Common.CommandTrees.DbExpressionKind.OfType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- DbOfTypeExpression requires that `argument` has a collection result type with a polymorphic element type, and that `type` is a type from the same type hierarchy as that element type.  
-  
+DbOfTypeExpression requires that `argument` has a collection result type with a polymorphic element type, and that `type` is a type from the same type hierarchy as that element type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2308,10 +2308,10 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbOfTypeExpression with the specified set argument and type, and an ExpressionKind of <see cref="F:System.Data.Common.CommandTrees.DbExpressionKind.OfTypeOnly" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- DbOfTypeExpression requires that `argument` has a collection result type with a polymorphic element type, and that `type` is a type from the same type hierarchy as that element type.  
-  
+DbOfTypeExpression requires that `argument` has a collection result type with a polymorphic element type, and that `type` is a type from the same type hierarchy as that element type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2717,10 +2717,10 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbRefExpression that references the element with the specified key values in the given Entity set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `keyRow` should be an expression that specifies the key values that identify the referenced entity within the given entity set. The result type of `keyRow` should contain a corresponding column for each key property defined by `entitySet's` entity type.  
-  
+`keyRow` should be an expression that specifies the key values that identify the referenced entity within the given entity set. The result type of `keyRow` should contain a corresponding column for each key property defined by `entitySet's` entity type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2754,10 +2754,10 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbRefExpression that references the element with the specified key values in the given Entity set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `keyRow` should be an expression that specifies the key values that identify the referenced entity within the given entity set. The result type of `keyRow` should contain a corresponding column for each key property defined by `entitySet's` entity type.  
-  
+`keyRow` should be an expression that specifies the key values that identify the referenced entity within the given entity set. The result type of `keyRow` should contain a corresponding column for each key property defined by `entitySet's` entity type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2817,22 +2817,22 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbProjectExpression that represents the select operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To be compatible with Select, `TProjection` must be derived from <xref:System.Data.Common.CommandTrees.DbExpression>,     or must be an anonymous type with DbExpression-derived properties. The following are examples of supported types for `TProjection`:  
-  
+To be compatible with Select, `TProjection` must be derived from <xref:System.Data.Common.CommandTrees.DbExpression>,     or must be an anonymous type with DbExpression-derived properties. The following are examples of supported types for `TProjection`:  
+ 
 ```  
 source.Select(x => x.Property("Name"))  
 ```  
-  
- `TProjection` is <xref:System.Data.Common.CommandTrees.DbPropertyExpression>).  
-  
+ 
+`TProjection` is <xref:System.Data.Common.CommandTrees.DbPropertyExpression>).  
+ 
 ```  
 source.Select(x => new { Name = x.Property("Name") })  
 ```  
-  
- (`TProjection` is an anonymous type with a DbExpression-derived property).  
-  
+ 
+(`TProjection` is an anonymous type with a DbExpression-derived property).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The result of <paramref name="projection" /> is null.</exception>
@@ -2893,22 +2893,22 @@ source.Select(x => new { Name = x.Property("Name") })
         <returns>An new DbProjectExpression that selects the result of the given selector from a new DbApplyExpression with the specified input and apply bindings and an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of CrossApply.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To be compatible with SelectMany, `TSelector` must be derived from <xref:System.Data.Common.CommandTrees.DbExpression>,     or must be an anonymous type with DbExpression-derived properties. The following are examples of supported types for `TSelector`:  
-  
+To be compatible with SelectMany, `TSelector` must be derived from <xref:System.Data.Common.CommandTrees.DbExpression>,     or must be an anonymous type with DbExpression-derived properties. The following are examples of supported types for `TSelector`:  
+ 
 ```  
 source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => apply.Property("Name"))  
 ```  
-  
- (`TSelector` is <xref:System.Data.Common.CommandTrees.DbPropertyExpression>).  
-  
+ 
+(`TSelector` is <xref:System.Data.Common.CommandTrees.DbPropertyExpression>).  
+ 
 ```  
 source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new { SourceName = source.Property("Name"), RelatedName = apply.Property("Name") })  
 ```  
-  
- (`TSelector` is an anonymous type with DbExpression-derived properties).  
-  
+ 
+(`TSelector` is an anonymous type with DbExpression-derived properties).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The result of <paramref name="selector" /> is null on conversion to DbExpression.</exception>
@@ -3277,10 +3277,10 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <returns>A new DbTreatExpression with the specified argument and type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- DbTreatExpression requires that `argument` has a polymorphic result type, and that `treatType` is a type from the same type hierarchy as that result type.  
-  
+DbTreatExpression requires that `argument` has a polymorphic result type, and that `treatType` is a type from the same type hierarchy as that result type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

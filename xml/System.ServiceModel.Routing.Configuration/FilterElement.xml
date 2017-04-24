@@ -52,12 +52,12 @@
         <value>The fully-qualified type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterType%2A> is set to custom, <xref:System.ServiceModel.Routing.Configuration.FilterElement.CustomType%2A> is the fully-qualified type name of the class to create. <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> can also contain values to be used during evaluation of the <xref:System.ServiceModel.Routing.Configuration.FilterElement.CustomType%2A> filter. The <xref:System.ServiceModel.Routing.Configuration.FilterElement.CustomType%2A> must implement a constructor that accepts a string value, which contains the <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> information.  
-  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
-  
+If <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterType%2A> is set to custom, <xref:System.ServiceModel.Routing.Configuration.FilterElement.CustomType%2A> is the fully-qualified type name of the class to create. <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> can also contain values to be used during evaluation of the <xref:System.ServiceModel.Routing.Configuration.FilterElement.CustomType%2A> filter. The <xref:System.ServiceModel.Routing.Configuration.FilterElement.CustomType%2A> must implement a constructor that accepts a string value, which contains the <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> information.  
+ 
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <value>The filter1 value of this element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of <xref:System.ServiceModel.Routing.Configuration.FilterElement.Filter1%2A> is only used during evaluation of the AND filter. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
-  
+The content of <xref:System.ServiceModel.Routing.Configuration.FilterElement.Filter1%2A> is only used during evaluation of the AND filter. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <value>The filter2 value of this element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of <xref:System.ServiceModel.Routing.Configuration.FilterElement.Filter2%2A> is only used during evaluation of the AND filters. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
-  
+The content of <xref:System.ServiceModel.Routing.Configuration.FilterElement.Filter2%2A> is only used during evaluation of the AND filters. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <value>The filter data of this element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table describes the meaning of <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> based on the value of <xref:System.ServiceModel.Routing.Configuration.FilterType>.  
-  
+The following table describes the meaning of <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> based on the value of <xref:System.ServiceModel.Routing.Configuration.FilterType>.  
+ 
 |Filter  Type|Description|Filter Data Meaning|Example Filter|  
 |------------------|-----------------|-------------------------|--------------------|  
 |Action|Uses the ActionMessageFilter that comes with WCF.|The Action to filter upon.|\<filter name="action1" filterType="Action" filterData="http://ACTION" />|  
@@ -158,7 +158,7 @@
 |EndpointName|A custom message filter for use solely in the Routing Service, which filters messages based on the name of the service endpoint.|The name of the service endpoint, for example: “serviceEndpoint1”.  This should be one of the endpoints exposed on the Routing Service.|\<filter name="stock1" filterType="Endpoint" filterData="SvcEndpoint" />|  
 |MatchAll|Uses the MatchAllMessageFilter that comes with WCF.|N/A|\<filter name="matchAll1" filterType="MatchAll" />|  
 |XPath|Uses the XPathMessageFilter that comes with WCF.|The XPath query to use when matching messages.|\<filter name="XPath1" filterType="XPath" filterData="//ns:element" />|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

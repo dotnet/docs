@@ -193,10 +193,10 @@
         <value>The item at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set an item at an index where an item already exists, the existing item is removed and the new item is then assigned to its index position in the collection.  
-  
+If you set an item at an index where an item already exists, the existing item is removed and the new item is then assigned to its index position in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
         <value>The specified item in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property can only get an item. To set an item, use the <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property, which can both set and get an item.  
-  
+The <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property can only get an item. To set an item, use the <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property, which can both set and get an item.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,10 +289,10 @@
         <summary>Removes the specified item from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload gets the key from the object referenced by the `deviceFilter` parameter and then calls the <xref:System.Web.Mobile.DeviceFilterElementCollection.Remove%2A?displayProperty=fullName> method with the key as the argument.  
-  
+This overload gets the key from the object referenced by the `deviceFilter` parameter and then calls the <xref:System.Web.Mobile.DeviceFilterElementCollection.Remove%2A?displayProperty=fullName> method with the key as the argument.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,10 +327,10 @@
         <summary>Gets or sets an item in the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property takes either a 32-bit signed integer or a string as an argument. When specifying the item by string, only the `get` accessor is available. However, when specifying the item by integer, both the `get` and `set` accessors are available.  
-  
+This property takes either a 32-bit signed integer or a string as an argument. When specifying the item by string, only the `get` accessor is available. However, when specifying the item by integer, both the `get` and `set` accessors are available.  
+ 
  ]]></format>
         </remarks>
       </Docs>

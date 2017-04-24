@@ -115,10 +115,10 @@
         <value>The name of the current <see cref="T:System.Web.UI.ScriptBehaviorDescriptor" /> instance, if set; otherwise, a generated name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.ScriptBehaviorDescriptor.Name%2A> property has not been set, getting the property will set it to a generated value that consists of the last segment of the `type` argument that is passed to the constructor. For example, if `type` is "System.Object", the <xref:System.Web.UI.ScriptBehaviorDescriptor.Name%2A> property defaults to "Object".  
-  
+If the <xref:System.Web.UI.ScriptBehaviorDescriptor.Name%2A> property has not been set, getting the property will set it to a generated value that consists of the last segment of the `type` argument that is passed to the constructor. For example, if `type` is "System.Object", the <xref:System.Web.UI.ScriptBehaviorDescriptor.Name%2A> property defaults to "Object".  
+ 
  ]]></format>
         </remarks>
       </Docs>

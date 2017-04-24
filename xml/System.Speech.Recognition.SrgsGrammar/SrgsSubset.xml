@@ -19,10 +19,10 @@
     <summary>Defines methods and properties that can be used to match a given string with a spoken phrase.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The spoken phrase can include the given string as a subset.  
-  
+The spoken phrase can include the given string as a subset.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSubset" /> class, specifying the portion to be matched and the mode in which the text should be matched.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `matchingMode` parameter must a member of the <xref:System.Speech.Recognition.SubsetMatchingMode> enumeration.  
-  
+The `matchingMode` parameter must a member of the <xref:System.Speech.Recognition.SubsetMatchingMode> enumeration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

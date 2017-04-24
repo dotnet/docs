@@ -54,10 +54,10 @@
           <see langword="true" /> if the converter can convert from the specified type to an instance of <see cref="T:System.Windows.Media.FontFamily" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.FontFamilyConverter> supports conversion to and from the <xref:System.String> type.  
-  
+<xref:System.Windows.Media.FontFamilyConverter> supports conversion to and from the <xref:System.String> type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
           <see langword="true" /> if the converter can convert this instance of <see cref="T:System.Windows.Media.FontFamily" /> to the specified type; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversion is possible only if `context` is a <xref:System.Windows.Media.FontFamily> type, and `destinationType` is a <xref:System.String> type. In addition, the <xref:System.Windows.Media.FontFamily.Source%2A> property for `context` cannot be null or equal to <xref:System.String.Empty>, which identifies `context` as an anonymous <xref:System.Windows.Media.FontFamily>.  
-  
+Conversion is possible only if `context` is a <xref:System.Windows.Media.FontFamily> type, and `destinationType` is a <xref:System.String> type. In addition, the <xref:System.Windows.Media.FontFamily.Source%2A> property for `context` cannot be null or equal to <xref:System.String.Empty>, which identifies `context` as an anonymous <xref:System.Windows.Media.FontFamily>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <returns>The instance of <see cref="T:System.Windows.Media.FontFamily" /> that is created from the converted <paramref name="o" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.FontFamilyConverter> supports conversion to and from the <xref:System.String> type.  
-  
+<xref:System.Windows.Media.FontFamilyConverter> supports conversion to and from the <xref:System.String> type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -158,10 +158,10 @@
         <returns>The object that is created from the converted instance of <see cref="T:System.Windows.Media.FontFamily" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.FontFamilyConverter> supports conversion to and from the <xref:System.String> type.  
-  
+<xref:System.Windows.Media.FontFamilyConverter> supports conversion to and from the <xref:System.String> type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Occurs if <paramref name="value" /> or <paramref name="destinationType" /> is not a valid type for conversion.</exception>

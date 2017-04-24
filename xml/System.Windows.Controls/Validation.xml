@@ -14,10 +14,10 @@
     <summary>Provides methods and attached properties that support data validation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a detailed discussion of the validation process, see "Data Validation" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+For a detailed discussion of the validation process, see "Data Validation" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Removes all <see cref="T:System.Windows.Controls.ValidationError" /> objects from the specified <see cref="T:System.Windows.Data.BindingExpressionBase" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `bindingExpression` object may have been invalid from a <xref:System.Windows.Controls.Validation.MarkInvalid%2A> call or a previously failed validation. The object is valid after this call.  
-  
+The `bindingExpression` object may have been invalid from a <xref:System.Windows.Controls.Validation.MarkInvalid%2A> call or a previously failed validation. The object is valid after this call.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="bindingExpression" /> is <see langword="null" />.</exception>
@@ -292,10 +292,10 @@
         <summary>Marks the specified <see cref="T:System.Windows.Data.BindingExpression" /> object as invalid with the specified <see cref="T:System.Windows.Controls.ValidationError" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Data.BindingExpression> object stays invalid until <xref:System.Windows.Controls.Validation.ClearInvalid%2A> is called or another transfer to the binding source validates successfully.  
-  
+The <xref:System.Windows.Data.BindingExpression> object stays invalid until <xref:System.Windows.Controls.Validation.ClearInvalid%2A> is called or another transfer to the binding source validates successfully.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="validationError" /> is <see langword="null" />.</exception>

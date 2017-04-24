@@ -26,10 +26,10 @@
     <summary>Represents a symbol writer for managed code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.SymbolStore.SymWriter> class provides methods that define documents, sequence points, lexical scopes, and variables.  
-  
+The <xref:System.Diagnostics.SymbolStore.SymWriter> class provides methods that define documents, sequence points, lexical scopes, and variables.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,10 +86,10 @@
         <summary>Closes the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> and commits the symbols to the symbol store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After this call, the <xref:System.Diagnostics.SymbolStore.SymWriter> becomes invalid for further updates.  
-  
+After this call, the <xref:System.Diagnostics.SymbolStore.SymWriter> becomes invalid for further updates.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <summary>Closes the current method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After a method is closed, you cannot define a symbol from within the method.  
-  
+After a method is closed, you cannot define a symbol from within the method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,10 +157,10 @@
         <summary>Closes the current lexical scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After a scope is closed, you cannot define a variable from within the method.  
-  
+After a scope is closed, you cannot define a variable from within the method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,12 +299,12 @@
         <summary>Defines a single variable in the current lexical scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `startOffset` and `endOffset` parameters are optional. If their value is zero, they are ignored and the variable is defined throughout the entire scope. If their value is nonzero, they fall within the offsets of the current scope.  
-  
- You can call <xref:System.Diagnostics.SymbolStore.SymWriter.DefineLocalVariable%2A> multiple times for a variable of the same name that occurs multiple times in different offset ranges throughout a scope. (In this case, start and end offsets must not overlap.)  
-  
+The `startOffset` and `endOffset` parameters are optional. If their value is zero, they are ignored and the variable is defined throughout the entire scope. If their value is nonzero, they fall within the offsets of the current scope.  
+ 
+You can call <xref:System.Diagnostics.SymbolStore.SymWriter.DefineLocalVariable%2A> multiple times for a variable of the same name that occurs multiple times in different offset ranges throughout a scope. (In this case, start and end offsets must not overlap.)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <summary>Defines a group of sequence points within the current method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Sequence points are used to map between source file locations and IL offsets.  Each sequence point consists of an IL offset and source file region, specified by start and end line/column numbers relative to an <xref:System.Diagnostics.SymbolStore.ISymbolDocument> object.  Each element at a specific index of every array corresponds to a specific sequence point. Each line and each column defines the start of a statement within a method. The arrays should be sorted in the increasing order of offsets. The offset is always the offset from the start of the method, in bytes.  
-  
+Sequence points are used to map between source file locations and IL offsets.  Each sequence point consists of an IL offset and source file region, specified by start and end line/column numbers relative to an <xref:System.Diagnostics.SymbolStore.ISymbolDocument> object.  Each element at a specific index of every array corresponds to a specific sequence point. Each line and each column defines the start of a statement within a method. The arrays should be sorted in the increasing order of offsets. The offset is always the offset from the start of the method, in bytes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,10 +425,10 @@
         <summary>Called by the <see cref="M:System.Diagnostics.SymbolStore.SymWriter.Dispose" /> and <see cref="M:System.Diagnostics.SymbolStore.SymWriter.Finalize" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymWriter.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize%2A> methods; do not call this method directly.  
-  
+This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymWriter.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize%2A> methods; do not call this method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,10 +450,10 @@
         <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> is reclaimed by garbage collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
+This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -502,10 +502,10 @@
         <summary>Sets the metadata emitter interface to associate with this writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Diagnostics.SymbolStore.ISymbolWriter.Initialize%2A> also sets the output file name where the debugging symbols are written. This method can be called only once and must be called before any other writer methods are called.  
-  
+<xref:System.Diagnostics.SymbolStore.ISymbolWriter.Initialize%2A> also sets the output file name where the debugging symbols are written. This method can be called only once and must be called before any other writer methods are called.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code.</permission>
@@ -554,10 +554,10 @@
         <summary>Opens a method in which to place symbol information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified method becomes the current method for calls to define sequence points, parameters, and lexical scopes. There is an implicit lexical scope around the entire method. Reopening a method that has been previously closed erases any previously defined symbols for the method.  
-  
+The specified method becomes the current method for calls to define sequence points, parameters, and lexical scopes. There is an implicit lexical scope around the entire method. Reopening a method that has been previously closed erases any previously defined symbols for the method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -582,10 +582,10 @@
         <summary>Opens a new namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method before defining methods or variables that exist within a namespace. Namespaces can be nested.  
-  
+Call this method before defining methods or variables that exist within a namespace. Namespaces can be nested.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -611,12 +611,12 @@
         <returns>An opaque scope identifier that can be used with <see cref="M:System.Diagnostics.SymbolStore.SymWriter.SetScopeRange(System.Int32,System.Int32,System.Int32)" /> to define the start and end offsets of a scope at a later time. In this case, the offsets passed to <see cref="M:System.Diagnostics.SymbolStore.SymWriter.OpenScope(System.Int32)" /> and <see cref="M:System.Diagnostics.SymbolStore.SymWriter.CloseScope(System.Int32)" /> are ignored. A scope identifier is valid only in the current method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This scope becomes the new current scope and is pushed onto a stack of scopes. Scopes must form a hierarchy. Siblings are not allowed to overlap.  
-  
- Scope identifiers are only valid in the current method.  
-  
+This scope becomes the new current scope and is pushed onto a stack of scopes. Scopes must form a hierarchy. Siblings are not allowed to overlap.  
+ 
+Scope identifiers are only valid in the current method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -702,10 +702,10 @@
         <summary>Defines an attribute when given the attribute name and the attribute value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.SymbolStore.SymWriter.SetSymAttribute%2A> method is only associated with symbolic information and is not a metadata custom attribute.  
-  
+The <xref:System.Diagnostics.SymbolStore.SymWriter.SetSymAttribute%2A> method is only associated with symbolic information and is not a metadata custom attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -730,10 +730,10 @@
         <summary>Sets the underlying [ISymUnmanagedWriter Interface](~/docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md) (the corresponding unmanaged API) that a managed <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> uses to emit symbols.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The underlying [ISymUnmanagedWriter Interface](~/docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md) (the corresponding unmanaged API) interface represents a symbol writer for managed code. The interface provides methods to define documents, sequence points, lexical scopes, and variables.  
-  
+The underlying [ISymUnmanagedWriter Interface](~/docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md) (the corresponding unmanaged API) interface represents a symbol writer for managed code. The interface provides methods to define documents, sequence points, lexical scopes, and variables.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code.</permission>
@@ -759,10 +759,10 @@
         <summary>Identifies the user-defined method as the entry point for the current module.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is normally the main method.  
-  
+This is normally the main method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -787,10 +787,10 @@
         <summary>Specifies that the given, fully qualified namespace name is used within the open lexical scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Closing the current scope prevents this scope from using the namespace. The namespace remains in use in all scopes that inherit from the current open scope.  
-  
+Closing the current scope prevents this scope from using the namespace. The namespace remains in use in all scopes that inherit from the current open scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>

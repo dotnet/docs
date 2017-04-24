@@ -26,10 +26,10 @@
     <summary>A container for <see cref="T:Microsoft.Build.Framework.XamlTypes.Rule" /> instances.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Concerns only <xref:Microsoft.Build.Framework.XamlTypes.Rule> rules, relative to property pages. The <xref:Microsoft.Build.Framework.XamlTypes.RuleBag> is only used as a container for more than one <xref:Microsoft.Build.Framework.XamlTypes.Rule>. The containing <xref:Microsoft.Build.Framework.XamlTypes.Rule> rules are immediately stripped off after the XAML file is loaded.  
-  
+Concerns only <xref:Microsoft.Build.Framework.XamlTypes.Rule> rules, relative to property pages. The <xref:Microsoft.Build.Framework.XamlTypes.RuleBag> is only used as a container for more than one <xref:Microsoft.Build.Framework.XamlTypes.Rule>. The containing <xref:Microsoft.Build.Framework.XamlTypes.Rule> rules are immediately stripped off after the XAML file is loaded.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -32,13 +32,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.NotCondition" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.NotCondition> is used to retrieve all elements that were not retrieved using another <xref:System.Windows.Automation.Condition>.  
-  
- [!code-csharp[UIAClient_snip#177](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ConditionSnips.cs#177)]
- [!code-vb[UIAClient_snip#177](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ConditionSnips.vb#177)]  
-  
+In the following example, a <xref:System.Windows.Automation.NotCondition> is used to retrieve all elements that were not retrieved using another <xref:System.Windows.Automation.Condition>.  
+ 
+[!code-csharp[UIAClient_snip#177](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ConditionSnips.cs#177)]
+[!code-vb[UIAClient_snip#177](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ConditionSnips.vb#177)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

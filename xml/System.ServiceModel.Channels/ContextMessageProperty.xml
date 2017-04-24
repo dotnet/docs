@@ -23,14 +23,14 @@
     <summary>A property used to communicate context between the application and channel layers on either the client or the service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection of properties that are added to a <xref:System.ServiceModel.Channels.Message> that correlates messages that form part of a conversation between a client and a service.  
-  
- If <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is `true`, context is established at the channel layer, and all incoming messages on the client and the service have this context property attached by the context channel. If <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is `false` the <xref:System.ServiceModel.Channels.ContextMessageProperty> is used to attach context to an outgoing message on the client or the service at the application layer.  
-  
- The <xref:System.ServiceModel.Channels.ContextMessageProperty> can be used on the client or on the service. Alternatively, on the client only, the current context can be obtained or a new context can be set on channel instance using <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> and <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A>properties.  
-  
+A collection of properties that are added to a <xref:System.ServiceModel.Channels.Message> that correlates messages that form part of a conversation between a client and a service.  
+ 
+If <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is `true`, context is established at the channel layer, and all incoming messages on the client and the service have this context property attached by the context channel. If <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is `false` the <xref:System.ServiceModel.Channels.ContextMessageProperty> is used to attach context to an outgoing message on the client or the service at the application layer.  
+ 
+The <xref:System.ServiceModel.Channels.ContextMessageProperty> can be used on the client or on the service. Alternatively, on the client only, the current context can be obtained or a new context can be set on channel instance using <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> and <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A>properties.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,10 +90,10 @@
         <summary>Sets the value of the <see langword="ContextMessageProperty" /> property in a specified <see cref="T:System.ServiceModel.Channels.Message" /> from the current instance of <see cref="T:System.ServiceModel.Channels.ContextMessageProperty" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.ContextMessageProperty.AddOrReplaceInMessage%28System.ServiceModel.Channels.Message%29?displayProperty=fullName> method overwrites the value of the `ContextMessageProperty` property if a value is already set.  
-  
+The <xref:System.ServiceModel.Channels.ContextMessageProperty.AddOrReplaceInMessage%28System.ServiceModel.Channels.Message%29?displayProperty=fullName> method overwrites the value of the `ContextMessageProperty` property if a value is already set.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -22,10 +22,10 @@
     <summary>Exposes methods and properties to support UI Automation client access to controls that visually expand to display content and collapse to hide content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.ExpandCollapsePattern> control pattern.  
-  
+Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.ExpandCollapsePattern> control pattern.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <summary>Hides all nodes, controls, or content that are descendants of the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a blocking method that returns after the control has been collapsed.  
-  
+This is a blocking method that returns after the control has been collapsed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <summary>Displays all child nodes, controls, or content of the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a blocking method that returns after the control has been expanded.  
-  
+This is a blocking method that returns after the control has been expanded.  
+ 
  ]]></format>
         </remarks>
       </Docs>

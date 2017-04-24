@@ -25,19 +25,19 @@
     <summary>Represents a collection of <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> objects used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> to override the default way it serializes a class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlElementAttributes> is returned by the <xref:System.Xml.Serialization.XmlAttributes.XmlElements%2A> property of the <xref:System.Xml.Serialization.XmlAttributes> class. By using the <xref:System.Xml.Serialization.XmlAttributeOverrides> class and the <xref:System.Xml.Serialization.XmlAttributes> class, you can override the default way that the <xref:System.Xml.Serialization.XmlSerializer> serializes a class.  
+The <xref:System.Xml.Serialization.XmlElementAttributes> is returned by the <xref:System.Xml.Serialization.XmlAttributes.XmlElements%2A> property of the <xref:System.Xml.Serialization.XmlAttributes> class. By using the <xref:System.Xml.Serialization.XmlAttributeOverrides> class and the <xref:System.Xml.Serialization.XmlAttributes> class, you can override the default way that the <xref:System.Xml.Serialization.XmlSerializer> serializes a class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example serializes the `Transportation` class, which contains a single field named `Vehicles` that returns an <xref:System.Collections.ArrayList>. The example first applies two instances of the <xref:System.Xml.Serialization.XmlElementAttribute> class to the `Vehicles` field that specifies the types of objects the <xref:System.Xml.Serialization.XmlSerializer> inserts into the array. The example then creates two <xref:System.Xml.Serialization.XmlElementAttribute> objects to override the behavior of the attributes applied to the `Vehicles` property. The two overriding objects are added to the <xref:System.Xml.Serialization.XmlElementAttributes> collection of an <xref:System.Xml.Serialization.XmlAttributes>. Lastly, the example adds the <xref:System.Xml.Serialization.XmlAttributes> to an <xref:System.Xml.Serialization.XmlAttributeOverrides>, allowing the <xref:System.Xml.Serialization.XmlSerializer> to insert the new object types into the <xref:System.Collections.ArrayList> returned by the `Vehicles` field.  
-  
- [!code-cpp[Classic XmlElementAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlElementAttributes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic XmlElementAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlElementAttributes Example/CS/source.cs#1)]
- [!code-vb[Classic XmlElementAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlElementAttributes Example/VB/source.vb#1)]  
-  
+The following example serializes the `Transportation` class, which contains a single field named `Vehicles` that returns an <xref:System.Collections.ArrayList>. The example first applies two instances of the <xref:System.Xml.Serialization.XmlElementAttribute> class to the `Vehicles` field that specifies the types of objects the <xref:System.Xml.Serialization.XmlSerializer> inserts into the array. The example then creates two <xref:System.Xml.Serialization.XmlElementAttribute> objects to override the behavior of the attributes applied to the `Vehicles` property. The two overriding objects are added to the <xref:System.Xml.Serialization.XmlElementAttributes> collection of an <xref:System.Xml.Serialization.XmlAttributes>. Lastly, the example adds the <xref:System.Xml.Serialization.XmlAttributes> to an <xref:System.Xml.Serialization.XmlAttributeOverrides>, allowing the <xref:System.Xml.Serialization.XmlSerializer> to insert the new object types into the <xref:System.Collections.ArrayList> returned by the `Vehicles` field.  
+ 
+[!code-cpp[Classic XmlElementAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlElementAttributes Example/CPP/source.cpp#1)]
+[!code-csharp[Classic XmlElementAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlElementAttributes Example/CS/source.cs#1)]
+[!code-vb[Classic XmlElementAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlElementAttributes Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,14 +96,14 @@
         <returns>The zero-based index of the newly added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates two <xref:System.Xml.Serialization.XmlElementAttribute> objects and calls the <xref:System.Xml.Serialization.XmlElementAttributes.Add%2A> method to add them to an <xref:System.Xml.Serialization.XmlElementAttributes>. The example then adds the <xref:System.Xml.Serialization.XmlElementAttributes> to an <xref:System.Xml.Serialization.XmlAttributeOverrides>, which is used to create an <xref:System.Xml.Serialization.XmlSerializer> that can serialize an instance of the `Transportation` class.  
-  
- [!code-cpp[Classic XmlElementAttributes.Add Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlElementAttributes.Add Example/CPP/source.cpp#1)]
- [!code-csharp[Classic XmlElementAttributes.Add Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlElementAttributes.Add Example/CS/source.cs#1)]
- [!code-vb[Classic XmlElementAttributes.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlElementAttributes.Add Example/VB/source.vb#1)]  
-  
+The following example creates two <xref:System.Xml.Serialization.XmlElementAttribute> objects and calls the <xref:System.Xml.Serialization.XmlElementAttributes.Add%2A> method to add them to an <xref:System.Xml.Serialization.XmlElementAttributes>. The example then adds the <xref:System.Xml.Serialization.XmlElementAttributes> to an <xref:System.Xml.Serialization.XmlAttributeOverrides>, which is used to create an <xref:System.Xml.Serialization.XmlSerializer> that can serialize an instance of the `Transportation` class.  
+ 
+[!code-cpp[Classic XmlElementAttributes.Add Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlElementAttributes.Add Example/CPP/source.cpp#1)]
+[!code-csharp[Classic XmlElementAttributes.Add Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlElementAttributes.Add Example/CS/source.cs#1)]
+[!code-vb[Classic XmlElementAttributes.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlElementAttributes.Add Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

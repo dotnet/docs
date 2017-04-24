@@ -14,20 +14,20 @@
     <summary>Provides a <see cref="T:System.ServiceModel.ServiceHost" /> for registering a <see cref="T:System.IdentityModel.SecurityTokenService" /> The service host will have multiple endpoints registered based on the number of listeners registered in the configuration.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.ServiceModel.Security.WSTrustServiceHost> class provides the following:  
-  
+By default, the <xref:System.ServiceModel.Security.WSTrustServiceHost> class provides the following:  
+ 
 -   It adds WS-Trust endpoints to the <xref:System.ServiceModel.ServiceHost> based on the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TrustEndpoints%2A> property.  
-  
+ 
 -   It enables metadata over the base addresses if the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.DisableWsdl%2A> property is set to `false`.  
-  
+ 
 -   It configures the service certificate on the <xref:System.ServiceModel.ServiceHost> service credentials if a WIF configuration section specifies a service certificate. Note that this will override the equivalent service certificate settings in WCF configuration.  
-  
+ 
 -   It integrates IdentityModel token handlers into the security processing pipeline by calling the ExtensibleSecurityCredentials.ConfigureServiceHost method on itself.  
-  
- The <xref:System.ServiceModel.Security.WSTrustServiceHost> class may be overridden to customize this behavior.  
-  
+ 
+The <xref:System.ServiceModel.Security.WSTrustServiceHost> class may be overridden to customize this behavior.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,12 +57,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustServiceHost" /> class with the specified base addresses and service (STS) configuration settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A default <xref:System.ServiceModel.Security.WSTrustServiceContract> is created using the specified <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration> instance.  
-  
- The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration> instance is used for one-time initialization of the <xref:System.ServiceModel.ServiceHost>; for this reason, setting properties on the configuration instance after the host is initialized may not result in behavior changes.  
-  
+A default <xref:System.ServiceModel.Security.WSTrustServiceContract> is created using the specified <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration> instance.  
+ 
+The <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration> instance is used for one-time initialization of the <xref:System.ServiceModel.ServiceHost>; for this reason, setting properties on the configuration instance after the host is initialized may not result in behavior changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <summary>Configures metadata (WSDL) for the service host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method evaluates the base addresses of the service host, and adds mex endpoints for http, https, net.tcp, and net.pipe addresses, only when no mex endpoints have been previously added by the user. For http and https addresses, HTTP and HTTPS, the GET mechanism for WSDL retrieval is enabled.  
-  
+This method evaluates the base addresses of the service host, and adds mex endpoints for http, https, net.tcp, and net.pipe addresses, only when no mex endpoints have been previously added by the user. For http and https addresses, HTTP and HTTPS, the GET mechanism for WSDL retrieval is enabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <summary>Override of the base class method. Configures the <see cref="T:System.ServiceModel.ServiceConfiguration" /> on the service host and then invokes the base implementation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Invokes the <xref:System.ServiceModel.Security.WSTrustServiceHost.UpdateServiceConfiguration%2A> method and then invokes the base implementation.  
-  
+Invokes the <xref:System.ServiceModel.Security.WSTrustServiceHost.UpdateServiceConfiguration%2A> method and then invokes the base implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

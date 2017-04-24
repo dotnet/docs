@@ -27,18 +27,18 @@
     <summary>Indicates that the value of a static field is unique for a particular context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A static field marked with `ContextStaticAttribute` is not shared between contexts. If the indicated static field is accessed on a different context, it will contain a different value. Use this attribute as it is, and do not derive from it.  
-  
- The following example shows the syntax of this attribute:  
-  
- [ContextStatic]  
-  
- static int f=7;  
-  
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+A static field marked with `ContextStaticAttribute` is not shared between contexts. If the indicated static field is accessed on a different context, it will contain a different value. Use this attribute as it is, and do not derive from it.  
+ 
+The following example shows the syntax of this attribute:  
+ 
+[ContextStatic]  
+ 
+static int f=7;  
+ 
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
  ]]></format>
     </remarks>
   </Docs>

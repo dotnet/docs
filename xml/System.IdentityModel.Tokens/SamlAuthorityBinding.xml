@@ -19,12 +19,12 @@
     <summary>Specifies how to retrieve additional information about the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding> class to specify how to retrieve additional information about an authenticated subject within a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token. <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify when the subject was authenticated. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>. An <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement> asserts that the statement's subject was authenticated by a particular means at a particular time. An <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement> also has an optional <xref:System.IdentityModel.Tokens.SamlAuthorityBinding>, which specifies how to retrieve additional information about an authenticated subject.  
-  
- Use the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Location%2A>, <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind%2A>, and <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding%2A> properties to retrieve additional information about an authenticated subject.  
-  
+Use the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding> class to specify how to retrieve additional information about an authenticated subject within a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token. <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify when the subject was authenticated. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>. An <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement> asserts that the statement's subject was authenticated by a particular means at a particular time. An <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement> also has an optional <xref:System.IdentityModel.Tokens.SamlAuthorityBinding>, which specifies how to retrieve additional information about an authenticated subject.  
+ 
+Use the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Location%2A>, <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind%2A>, and <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding%2A> properties to retrieve additional information about an authenticated subject.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,10 +88,10 @@
         <value>An <see cref="T:System.Xml.XmlQualifiedName" /> that represents the type of queries that the SAML authority that has additional information about the subject, responds to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind%2A> property corresponds to the `AuthorityKind` attribute of the `<AuthorityBinding>` element, as defined in the Assertions and Protocol for the OASIS SAML specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind%2A> property corresponds to the `AuthorityKind` attribute of the `<AuthorityBinding>` element, as defined in the Assertions and Protocol for the OASIS SAML specification.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly" /> property is <see langword="true" />.</exception>
@@ -120,10 +120,10 @@
         <value>A URI reference that identifies the SAML protocol binding to use when communicating with the SAML authority that has additional information that has additional information about the subject.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding%2A> property corresponds to the `Binding` attribute of the `<AuthorityBinding>` element defined in the Assertions and Protocol for the OASIS SAML specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding%2A> property corresponds to the `Binding` attribute of the `<AuthorityBinding>` element defined in the Assertions and Protocol for the OASIS SAML specification.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly" /> property is <see langword="true" />.</exception>
@@ -148,10 +148,10 @@
           <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To make this instance of the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.MakeReadOnly%2A> method.  
-  
+To make this instance of the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.MakeReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
         <value>A URI reference that describes how to locate and communicate with the SAML authority that has additional information about the subject.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Location%2A> property corresponds to the `Location` attribute of the `<AuthorityBinding>` element defined in the Assertions and Protocol for the OASIS SAML specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Location%2A> property corresponds to the `Location` attribute of the `<AuthorityBinding>` element defined in the Assertions and Protocol for the OASIS SAML specification.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.Location" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly" /> property is <see langword="true" />.</exception>
@@ -205,10 +205,10 @@
         <summary>Causes this instance to be read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly%2A> property is set to `true`.  
-  
+When the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly%2A> property is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

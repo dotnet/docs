@@ -13,12 +13,12 @@
     <summary>Specifies whether the <see cref="T:System.Web.UI.WebControls.Menu" /> control renders HTML <see langword="table" /> elements and inline styles, or <see langword="listitem" /> elements and cascading style sheet (CSS) styles.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Web.UI.WebControls.MenuRenderingMode> enumeration when you set the <xref:System.Web.UI.WebControls.Menu.RenderingMode%2A> property of the <xref:System.Web.UI.WebControls.Menu> control. The value that you assign to the <xref:System.Web.UI.WebControls.Menu.RenderingMode%2A> property determines how the <xref:System.Web.UI.WebControls.Menu> control renders markup.  
-  
- In ASP.NET 3.5 and earlier versions, the <xref:System.Web.UI.WebControls.Menu> control uses HTML `table` elements and inline styles to control the appearance of the menu in a browser. In ASP.NET 4 and later versions, by default the <xref:System.Web.UI.WebControls.Menu> control uses `listitem` elements and cascading style sheet (CSS) styles. This enumeration is provided for backward compatibility. In ASP.NET 4 and later versions, you can use this enumeration to specify that you want the menu control to generate markup the way it does in earlier versions of ASP.NET.  
-  
+You use the <xref:System.Web.UI.WebControls.MenuRenderingMode> enumeration when you set the <xref:System.Web.UI.WebControls.Menu.RenderingMode%2A> property of the <xref:System.Web.UI.WebControls.Menu> control. The value that you assign to the <xref:System.Web.UI.WebControls.Menu.RenderingMode%2A> property determines how the <xref:System.Web.UI.WebControls.Menu> control renders markup.  
+ 
+In ASP.NET 3.5 and earlier versions, the <xref:System.Web.UI.WebControls.Menu> control uses HTML `table` elements and inline styles to control the appearance of the menu in a browser. In ASP.NET 4 and later versions, by default the <xref:System.Web.UI.WebControls.Menu> control uses `listitem` elements and cascading style sheet (CSS) styles. This enumeration is provided for backward compatibility. In ASP.NET 4 and later versions, you can use this enumeration to specify that you want the menu control to generate markup the way it does in earlier versions of ASP.NET.  
+ 
  ]]></format>
     </remarks>
   </Docs>

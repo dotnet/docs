@@ -29,10 +29,10 @@
         <value>The data-key value for the selected record in a data-bound control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.IPersistedSelector.DataKey%2A> property differs from the default selection made by the data-bound control because the item selected can be persisted across paging and the item may not be on the current page.  
-  
+The <xref:System.Web.UI.WebControls.IPersistedSelector.DataKey%2A> property differs from the default selection made by the data-bound control because the item selected can be persisted across paging and the item may not be on the current page.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Contains an event level that is defined in an event provider. The level signifies the severity of the event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class cannot be instantiated. A <xref:System.Diagnostics.Eventing.Reader.ProviderMetadata> object defies a list of <xref:System.Diagnostics.Eventing.Reader.EventLevel> objects, one for each level defined in the provider. The standard level values and their meanings are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventLevel> enumeration.  
-  
+This class cannot be instantiated. A <xref:System.Diagnostics.Eventing.Reader.ProviderMetadata> object defies a list of <xref:System.Diagnostics.Eventing.Reader.EventLevel> objects, one for each level defined in the provider. The standard level values and their meanings are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventLevel> enumeration.  
+ 
  ]]></format>
     </remarks>
   </Docs>

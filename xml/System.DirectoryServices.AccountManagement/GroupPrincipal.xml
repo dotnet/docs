@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> class by using the specified context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The group principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
-  
+The group principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> class and assigns it to the specified context and SAM account name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The group principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
-  
+The group principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,12 +164,12 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> object that contains the principal objects that are members of the group, or an empty collection if the group has no members.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not search the current group recursively. Therefore, group objects may be returned in the principal object collection.  
-  
- Members are returned without respect to the context. For example, if an AD DS context based at "CN=SpecialUsers,DC=Fabrikam,DC=com", the PrincipalFindResult set will include group members that are located under "CN=NormalUsers,DC=Fabrikam,DC=com" also, even though they fall under a scope that is not part of the context that is searched. The returned principal collection may also contain members that are located in a different store than the group.  
-  
+This method does not search the current group recursively. Therefore, group objects may be returned in the principal object collection.  
+ 
+Members are returned without respect to the context. For example, if an AD DS context based at "CN=SpecialUsers,DC=Fabrikam,DC=com", the PrincipalFindResult set will include group members that are located under "CN=NormalUsers,DC=Fabrikam,DC=com" also, even though they fall under a scope that is not part of the context that is searched. The returned principal collection may also contain members that are located in a different store than the group.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,42 +195,42 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> object that contains the principal objects that are members of the group, or an empty collection if the group has no members.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned principal collection does not contain group objects when the recursive flag is set to `true`; only leaf nodes are returned. For example, when a group that contains a computer object and a group object (with only user principals) is searched recursively, the returned collection contains the computer object and the user principal objects in the nested group. Since the group object is not a leaf, even when it is empty, it is not returned in the recursive search.  When the recursive flag is set to `false`, the returned collection may contain group objects.  
+The returned principal collection does not contain group objects when the recursive flag is set to `true`; only leaf nodes are returned. For example, when a group that contains a computer object and a group object (with only user principals) is searched recursively, the returned collection contains the computer object and the user principal objects in the nested group. Since the group object is not a leaf, even when it is empty, it is not returned in the recursive search.  When the recursive flag is set to `false`, the returned collection may contain group objects.  
+ 
+Members are returned without respect to the context. For example, if an AD DS context based at "CN=SpecialUsers,DC=Fabrikam,DC=com", the PrincipalFindResult set will include group members that are located under "CN=NormalUsers,DC=Fabrikam,DC=com" also, even though they fall under a scope that is not part of the context that is searched. The returned principal collection may also contain members that are located in a different store than the group.  
+ 
   
- Members are returned without respect to the context. For example, if an AD DS context based at "CN=SpecialUsers,DC=Fabrikam,DC=com", the PrincipalFindResult set will include group members that are located under "CN=NormalUsers,DC=Fabrikam,DC=com" also, even though they fall under a scope that is not part of the context that is searched. The returned principal collection may also contain members that are located in a different store than the group.  
-  
-   
-  
+ 
 ## Examples  
- The following code connects to the LDAP domain "fabrikam.com" with the username set to "administrator" and the password set to "SecretPwd123" in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
-  
- A search is performed to find the group that has the name "Domain Admins" under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor "DC=fabrikam,DC=com." If the group is found, all the principals that are members of this group, which includes recursive members, are then enumerated  
-  
+The following code connects to the LDAP domain "fabrikam.com" with the username set to "administrator" and the password set to "SecretPwd123" in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
+ 
+A search is performed to find the group that has the name "Domain Admins" under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor "DC=fabrikam,DC=com." If the group is found, all the principals that are members of this group, which includes recursive members, are then enumerated  
+ 
 ```  
 PrincipalContext ctx = new PrincipalContext(ContextType.Domain,                                                                      
-                                            "fabrikam.com",   
-                                            "DC=fabrikam,DC=com",   
-                                            "administrator",   
-                                            "SecretPwd123");  
-  
+                                           "fabrikam.com",   
+                                           "DC=fabrikam,DC=com",   
+                                           "administrator",   
+                                           "SecretPwd123");  
+ 
 GroupPrincipal grp = GroupPrincipal.FindByIdentity(ctx,   
-                                                   IdentityType.Name,   
-                                                   "Domain Admins");  
-  
+                                                  IdentityType.Name,   
+                                                  "Domain Admins");  
+ 
 if (grp != null)  
 {  
-    foreach (Principal p in grp.GetMembers(true))  
-    {  
-         Console.WriteLine(p.Name);  
-    }  
-    grp.Dispose();  
+   foreach (Principal p in grp.GetMembers(true))  
+   {  
+        Console.WriteLine(p.Name);  
+   }  
+   grp.Dispose();  
 }  
-  
+ 
 ctx.Dispose();   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,12 +272,12 @@ ctx.Dispose();
           <see langword="true" /> if the group is security enabled, or null if the group has not been persisted; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property returns false, the group is temporarily not security-enabled. When the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.IsSecurityGroup> property is reset to true later, the group will have the same properties as before it was set to false.  
-  
- If the principal has not been persisted in the store, this property returns null. After the principal is persisted, the default security-enabled setting depends on the store. The AD DS and AD LDS stores disable new principals when they are persisted, whereas SAM enables new principals when they are persisted.  
-  
+When this property returns false, the group is temporarily not security-enabled. When the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.IsSecurityGroup> property is reset to true later, the group will have the same properties as before it was set to false.  
+ 
+If the principal has not been persisted in the store, this property returns null. After the principal is persisted, the default security-enabled setting depends on the store. The AD DS and AD LDS stores disable new principals when they are persisted, whereas SAM enables new principals when they are persisted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The application may not set this property to null.</exception>
@@ -300,42 +300,42 @@ ctx.Dispose();
         <value>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object that contains the principal objects that represent the members of the group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For AD DS groups, the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members%2A> property includes user principals that are members of the group because of their primaryId Attribute. When the group contains these types of members, the following restrictions apply:  
-  
+For AD DS groups, the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members%2A> property includes user principals that are members of the group because of their primaryId Attribute. When the group contains these types of members, the following restrictions apply:  
+ 
 -   The <xref:System.DirectoryServices.AccountManagment.PrincipalCollection.Remove%2A> method cannot be used to remove members that are part of the group because of their primaryId Attribute.  
-  
+ 
 -   The <xref:System.DirectoryServices.AccountManagment.PrincipalCollection.Clear%2A> method cannot be used to clear members that are part of the group because of their primaryId Attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code connects to the LDAP domain "fabrikam.com" with the username set to "administrator" and the password set to "SecretPwd123" in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
-  
- A search is performed to find the group that has name "Domain Admins" under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor, "DC=fabrikam,DC=com." If the group is found, the user who has name "John Smith" is removed from the group and the user who has name "Jim Daly" is added to the group  
-  
+The following code connects to the LDAP domain "fabrikam.com" with the username set to "administrator" and the password set to "SecretPwd123" in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
+ 
+A search is performed to find the group that has name "Domain Admins" under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor, "DC=fabrikam,DC=com." If the group is found, the user who has name "John Smith" is removed from the group and the user who has name "Jim Daly" is added to the group  
+ 
 ```  
 PrincipalContext ctx = new PrincipalContext(ContextType.Domain,                                                                       
-                                            "fabrikam.com",                                                                               
-                                            "DC=fabrikam,DC=com",                                                                 
-                                            "administrator",   
-                                            "SecretPwd123");  
-  
+                                           "fabrikam.com",                                                                               
+                                           "DC=fabrikam,DC=com",                                                                 
+                                           "administrator",   
+                                           "SecretPwd123");  
+ 
 GroupPrincipal grp = GroupPrincipal.FindByIdentity(ctx,   
-                                                   IdentityType.Name,   
-                                                   "Domain Admins");  
-  
+                                                  IdentityType.Name,   
+                                                  "Domain Admins");  
+ 
 if (grp != null)  
 {  
-    grp.Members.Remove(ctx, IdentityType.Name, "John Smith");            
-    grp.Members.Add(ctx, IdentityType.Name, "Jim Daly");  
-    grp.Save();  
-    grp.Dispose();  
+   grp.Members.Remove(ctx, IdentityType.Name, "John Smith");            
+   grp.Members.Add(ctx, IdentityType.Name, "Jim Daly");  
+   grp.Save();  
+   grp.Dispose();  
 }  
 ctx.Dispose();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

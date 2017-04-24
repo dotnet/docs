@@ -11,21 +11,21 @@
     <summary>Specifies a standard interface for retrieving feature information from the current system.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When implemented in a class, <xref:System.Windows.Forms.IFeatureSupport> provides methods you can use to determine whether a feature is currently installed on the system and to get the version number of a feature. Call <xref:System.Windows.Forms.IFeatureSupport.IsPresent%2A> to determine whether a feature, or a specific version of a feature, is currently installed. Call <xref:System.Windows.Forms.IFeatureSupport.GetVersionPresent%2A> to determine the version number of an installed feature.  
+When implemented in a class, <xref:System.Windows.Forms.IFeatureSupport> provides methods you can use to determine whether a feature is currently installed on the system and to get the version number of a feature. Call <xref:System.Windows.Forms.IFeatureSupport.IsPresent%2A> to determine whether a feature, or a specific version of a feature, is currently installed. Call <xref:System.Windows.Forms.IFeatureSupport.GetVersionPresent%2A> to determine the version number of an installed feature.  
+ 
+See the <xref:System.Windows.Forms.FeatureSupport> and <xref:System.Windows.Forms.OSFeature> classes for implementations of this interface.  
+ 
   
- See the <xref:System.Windows.Forms.FeatureSupport> and <xref:System.Windows.Forms.OSFeature> classes for implementations of this interface.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
-  
- [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
- [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
- [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+ 
+[!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+[!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+[!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,19 +51,19 @@
         <returns>A <see cref="T:System.Version" /> representing the version number of the specified feature; or <see langword="null" /> if the feature is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.Forms.OSFeature.GetVersionPresent%2A>.  
+For an implementation of this method, see <xref:System.Windows.Forms.OSFeature.GetVersionPresent%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
-  
- [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
- [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
- [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+ 
+[!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+[!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+[!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,14 +90,14 @@
           <see langword="true" /> if the feature is present; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
-  
- [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
- [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
- [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+ 
+[!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+[!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+[!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,14 +126,14 @@
           <see langword="true" /> if the requested version of the feature is present; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
-  
- [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
- [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
- [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+ 
+[!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+[!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+[!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,12 +19,12 @@
     <summary>Declaratively instructs the .NET Framework to perform validation on a configuration property. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Configuration.IntegerValidatorAttribute> attribute to decorate a configuration property. This is to instruct the .NET Framework to validate the property using a <xref:System.Configuration.SubclassTypeValidatorAttribute> attribute, and pass to it the value of the decorating parameters.  
-  
- You can apply <xref:System.Configuration.SubclassTypeValidatorAttribute> attributes to property types only.  
-  
+You use the <xref:System.Configuration.IntegerValidatorAttribute> attribute to decorate a configuration property. This is to instruct the .NET Framework to validate the property using a <xref:System.Configuration.SubclassTypeValidatorAttribute> attribute, and pass to it the value of the decorating parameters.  
+ 
+You can apply <xref:System.Configuration.SubclassTypeValidatorAttribute> attributes to property types only.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.SubclassTypeValidatorAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use this constructor in the attributed model to ensure that the value assigned to the related property is a base class.  
-  
+You use this constructor in the attributed model to ensure that the value assigned to the related property is a base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

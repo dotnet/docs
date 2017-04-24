@@ -72,10 +72,10 @@
         <value>The maximum response delay.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In an ad hoc mode of operation, the discovery client multicasts the find or resolve request. Based on the criteria specified in the request, more than one service may respond to the client. To prevent all of the responses from arriving at the same time and overwhelming the client, the discovery service runtime delays sending the responses to the request for a random period of time between 0 and the value of <xref:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.MaxResponseDelay%2A>.  
-  
+In an ad hoc mode of operation, the discovery client multicasts the find or resolve request. Based on the criteria specified in the request, more than one service may respond to the client. To prevent all of the responses from arriving at the same time and overwhelming the client, the discovery service runtime delays sending the responses to the request for a random period of time between 0 and the value of <xref:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.MaxResponseDelay%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

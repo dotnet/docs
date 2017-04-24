@@ -14,10 +14,10 @@
     <summary>Defines the location of a script resource.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.UI.ScriptResourceDefinition> object represents a single logical script resource. This resource might have several different physical representations, such as a debug version, a release version, and a version on a content delivery network (CDN).  
-  
+A <xref:System.Web.UI.ScriptResourceDefinition> object represents a single logical script resource. This resource might have several different physical representations, such as a debug version, a release version, and a version on a content delivery network (CDN).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>The path of a CDN that contains debug script resources.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you reference a CDN path, you can enable CDN support for the page by setting the <xref:System.Web.UI.ScriptManager.EnableCdn%2A> property of <xref:System.Web.UI.ScriptManager> to `true`.  
-  
+When you reference a CDN path, you can enable CDN support for the page by setting the <xref:System.Web.UI.ScriptManager.EnableCdn%2A> property of <xref:System.Web.UI.ScriptManager> to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <value>The path of a CDN.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you reference a CDN path, you can enable CDN support for the page by setting the <xref:System.Web.UI.ScriptManager.EnableCdn%2A> property of <xref:System.Web.UI.ScriptManager> to `true`.  
-  
+When you reference a CDN path, you can enable CDN support for the page by setting the <xref:System.Web.UI.ScriptManager.EnableCdn%2A> property of <xref:System.Web.UI.ScriptManager> to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
           <see langword="true" /> if the CDN should be accessed using HTTPS; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection%2A> property to check whether the associated script resource should be accessed by the <xref:System.Web.UI.ScriptManager> using a secure connection (SSL) to a CDN. By using the <xref:System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection%2A> property, you can avoid a warning message from the browser when your Web application attempts to request secure content from a CDN that supports SSL.  
-  
+Use the <xref:System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection%2A> property to check whether the associated script resource should be accessed by the <xref:System.Web.UI.ScriptManager> using a secure connection (SSL) to a CDN. By using the <xref:System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection%2A> property, you can avoid a warning message from the browser when your Web application attempts to request secure content from a CDN that supports SSL.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,14 +148,14 @@
         <value>The JavaScript expression. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used in conjunction with the <xref:System.Web.UI.ScriptManager.EnableCdnFallback%2A?displayProperty=fullName> property to render inline script that will revert to loading the library from a local server location if the script fails to load from the CDN.  
-  
- For script libraries from Microsoft, this value is already set. If you want to register a script yourself and get CDN fallback support, you would set this property to an expression. For example, to test whether a jQuery library has been loaded, you can use an expression like the following:  
-  
- `typeof(window.jQuery) !== "undefined"`  
-  
+This property is used in conjunction with the <xref:System.Web.UI.ScriptManager.EnableCdnFallback%2A?displayProperty=fullName> property to render inline script that will revert to loading the library from a local server location if the script fails to load from the CDN.  
+ 
+For script libraries from Microsoft, this value is already set. If you want to register a script yourself and get CDN fallback support, you would set this property to an expression. For example, to test whether a jQuery library has been loaded, you can use an expression like the following:  
+ 
+`typeof(window.jQuery) !== "undefined"`  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -21,12 +21,12 @@
     <summary>An abstract base class that implements the <see cref="T:System.IAsyncResult" /> interface. Serves as a base class from which to derive <see cref="T:System.IAsyncResult" /> objects that can be used for common asynchronous programming scenarios.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information see the <xref:System.IAsyncResult?displayProperty=fullName> interface.  
-  
- The <xref:System.IdentityModel.TypedAsyncResult%601> class derives from <xref:System.IdentityModel.AsyncResult>.  
-  
+For more information see the <xref:System.IAsyncResult?displayProperty=fullName> interface.  
+ 
+The <xref:System.IdentityModel.TypedAsyncResult%601> class derives from <xref:System.IdentityModel.AsyncResult>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -101,10 +101,10 @@
         <value>A user-defined object that qualifies or contains information about an asynchronous operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information see the <xref:System.IAsyncResult.AsyncState%2A?displayProperty=fullName> property.  
-  
+For more information see the <xref:System.IAsyncResult.AsyncState%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@
         <value>A <see cref="T:System.Threading.WaitHandle" /> that is used to wait for an asynchronous operation to complete.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information see the <xref:System.IAsyncResult.AsyncWaitHandle%2A?displayProperty=fullName> property.  
-  
+For more information see the <xref:System.IAsyncResult.AsyncWaitHandle%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
           <see langword="true" /> if the asynchronous operation completed synchronously; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information see the <xref:System.IAsyncResult.CompletedSynchronously%2A?displayProperty=fullName> property.  
-  
+For more information see the <xref:System.IAsyncResult.CompletedSynchronously%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

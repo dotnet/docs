@@ -160,12 +160,12 @@
         <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the `propertyId` parameter to `0` to retrieve the next item after `startAfter`, regardless of the value specified in `value`. Set `startAfter` to `null` to start the search with the first item.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
-  
+Set the `propertyId` parameter to `0` to retrieve the next item after `startAfter`, regardless of the value specified in `value`. Set `startAfter` to `null` to start the search with the first item.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

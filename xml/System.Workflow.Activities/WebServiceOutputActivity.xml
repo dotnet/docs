@@ -35,16 +35,16 @@
     <summary>Enables sending data to a Web service from within a workflow. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A <xref:System.Workflow.Activities.WebServiceOutputActivity> activity can only be included in a workflow that has a <xref:System.Workflow.Activities.WebServiceInputActivity> activity. The <xref:System.Workflow.Activities.WebServiceOutputActivity> activity requires that the <xref:System.Workflow.Activities.WebServiceOutputActivity.InputActivityNameProperty> is set, and only <xref:System.Workflow.Activities.WebServiceInputActivity> activities located in the same workflow are valid values.  
-  
- The <xref:System.Workflow.Activities.WebServiceOutputActivity> activity models the return value of a Web service method call. It is intended to be paired with a <xref:System.Workflow.Activities.WebServiceInputActivity> that represents the input parameters to a Web service method call. <xref:System.Workflow.Activities.WebServiceOutputActivity> activities are used only if the method on the Web service interface contract contains a return value.  
-  
+ 
+A <xref:System.Workflow.Activities.WebServiceOutputActivity> activity can only be included in a workflow that has a <xref:System.Workflow.Activities.WebServiceInputActivity> activity. The <xref:System.Workflow.Activities.WebServiceOutputActivity> activity requires that the <xref:System.Workflow.Activities.WebServiceOutputActivity.InputActivityNameProperty> is set, and only <xref:System.Workflow.Activities.WebServiceInputActivity> activities located in the same workflow are valid values.  
+ 
+The <xref:System.Workflow.Activities.WebServiceOutputActivity> activity models the return value of a Web service method call. It is intended to be paired with a <xref:System.Workflow.Activities.WebServiceInputActivity> that represents the input parameters to a Web service method call. <xref:System.Workflow.Activities.WebServiceOutputActivity> activities are used only if the method on the Web service interface contract contains a return value.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -173,10 +173,10 @@
         <summary>Defines the name of the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> that this <see cref="T:System.Workflow.Activities.WebServiceOutputActivity" /> is matched with.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyObject" /> that targets the <see cref="P:System.Workflow.Activities.WebServiceOutputActivity.ParameterBindings" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,10 +269,10 @@
         <summary>Defines an event delegate that is executed before the activity sends the output of the Web service invocation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,10 +300,10 @@
         <returns>An <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> enumeration value denoting the access level of the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one another. Without this interface, this information is inferred directly from property getter/setters.  
-  
+Used at compile time to validate whether the properties are correctly bound to one another. Without this interface, this information is inferred directly from property getter/setters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,10 +331,10 @@
         <returns>The <see cref="T:System.Type" /> for the property whose name is passed as the <paramref name="propertyName " />parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one another.  
-  
+Used at compile time to validate whether the properties are correctly bound to one another.  
+ 
  ]]></format>
         </remarks>
       </Docs>

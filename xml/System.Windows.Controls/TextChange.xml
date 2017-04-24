@@ -14,18 +14,18 @@
     <summary>Contains information about the changes that occur in the <see cref="E:System.Windows.Controls.Primitives.TextBoxBase.TextChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.TextChange> object specifies where a change occurred in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox>. The <xref:System.Windows.Controls.TextChange.Offset%2A> property specifies the position of the change, the <xref:System.Windows.Controls.TextChange.AddedLength%2A> property specifies how many symbols were added, and the <xref:System.Windows.Controls.TextChange.RemovedLength%2A> property specifies how many symbols were removed. When the change occurs in a <xref:System.Windows.Controls.TextBox>, a symbol is a single character.  When a change occurs in a <xref:System.Windows.Controls.RichTextBox>, a symbol is one of the following:  
-  
+A <xref:System.Windows.Controls.TextChange> object specifies where a change occurred in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox>. The <xref:System.Windows.Controls.TextChange.Offset%2A> property specifies the position of the change, the <xref:System.Windows.Controls.TextChange.AddedLength%2A> property specifies how many symbols were added, and the <xref:System.Windows.Controls.TextChange.RemovedLength%2A> property specifies how many symbols were removed. When the change occurs in a <xref:System.Windows.Controls.TextBox>, a symbol is a single character.  When a change occurs in a <xref:System.Windows.Controls.RichTextBox>, a symbol is one of the following:  
+ 
 -   An opening or closing tag for a <xref:System.Windows.Documents.TextElement> element.  
-  
+ 
 -   A <xref:System.Windows.UIElement> element contained within an <xref:System.Windows.Documents.InlineUIContainer> or <xref:System.Windows.Documents.BlockUIContainer>.  Note that such a <xref:System.Windows.UIElement> is always counted as exactly one symbol; any additional content or elements contained by the <xref:System.Windows.UIElement> are not counted as symbols.  
-  
+ 
 -   Each 16-bit [!INCLUDE[TLA#tla_unicode](~/includes/tlasharptla-unicode-md.md)] character inside of a text <xref:System.Windows.Documents.Run> element.  
-  
- <xref:System.Windows.Controls.TextChange> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+ 
+<xref:System.Windows.Controls.TextChange> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <value>The number of symbols that have been added to the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.TextChange> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Controls.TextChange> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <value>The position at which the change occurred.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.TextChange> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Controls.TextChange> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <value>The number of symbols that have been removed from the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.TextChange> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Controls.TextChange> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

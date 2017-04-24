@@ -14,17 +14,17 @@
     <summary>Provides implicit <see cref="T:System.ServiceModel.Activities.CorrelationHandle" /> management for child messaging activities.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Activities.CorrelationScope> activity maintains an implicit <xref:System.ServiceModel.Activities.CorrelationHandle> that is only visible to child activities. When the <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> property is set by the user, it will be used as the <xref:System.ServiceModel.Activities.CorrelationScope> implicit handle. In the case of nested <xref:System.ServiceModel.Activities.CorrelationScope>, children of the inner scope cannot access implicit handle of the outer scope.  
+The <xref:System.ServiceModel.Activities.CorrelationScope> activity maintains an implicit <xref:System.ServiceModel.Activities.CorrelationHandle> that is only visible to child activities. When the <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> property is set by the user, it will be used as the <xref:System.ServiceModel.Activities.CorrelationScope> implicit handle. In the case of nested <xref:System.ServiceModel.Activities.CorrelationScope>, children of the inner scope cannot access implicit handle of the outer scope.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.ServiceModel.Activities.CorrelationScope>. This example creates a <xref:System.ServiceModel.Activities.Sequence> and adds a <xref:System.ServiceModel.Activities.CorrelationScope> (among other activites). The <xref:System.ServiceModel.Activities.CorrelationScope> contains a <xref:System.ServiceModel.Activities.Sequence> that is composed of a <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.ReceiveReply> activity.  
-  
- [!code-csharp[ContentBasedCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#3)]  
-  
+The following example shows how to create a <xref:System.ServiceModel.Activities.CorrelationScope>. This example creates a <xref:System.ServiceModel.Activities.Sequence> and adds a <xref:System.ServiceModel.Activities.CorrelationScope> (among other activites). The <xref:System.ServiceModel.Activities.CorrelationScope> contains a <xref:System.ServiceModel.Activities.Sequence> that is composed of a <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.ReceiveReply> activity.  
+ 
+[!code-csharp[ContentBasedCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,12 +100,12 @@
         <value>The correlation handle used by the child messaging activities.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
- The runtime uses the <xref:System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle%2A> for correlation if it is present, otherwise the **CorrelatesWith** property of the messaging activity will be used.  If both are absent, the ambient handle provided by <xref:System.ServiceModel.Activities.CorrelationScope> or the workflow service is used.  
-  
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
+The runtime uses the <xref:System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle%2A> for correlation if it is present, otherwise the **CorrelatesWith** property of the messaging activity will be used.  If both are absent, the ambient handle provided by <xref:System.ServiceModel.Activities.CorrelationScope> or the workflow service is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

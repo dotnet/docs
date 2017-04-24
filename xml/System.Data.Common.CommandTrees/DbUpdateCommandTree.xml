@@ -14,10 +14,10 @@
     <summary>Represents a single-row update operation expressed as a command tree. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Data.Common.CommandTrees.DbUpdateCommandTree.Returning%2A> property is set, the command returns a reader; otherwise, it returns a scalar value indicating the number of rows affected.  
-  
+When the <xref:System.Data.Common.CommandTrees.DbUpdateCommandTree.Returning%2A> property is set, the command returns a reader; otherwise, it returns a scalar value indicating the number of rows affected.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the predicate used to determine which members of the target collection should be updated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The predicate can include only the following elements: a <xref:System.Data.Common.CommandTrees.DbComparisonExpression> representing equality; <xref:System.Data.Common.CommandTrees.DbConstantExpression>; <xref:System.Data.Common.CommandTrees.DbIsNullExpression>; <xref:System.Data.Common.CommandTrees.DbPropertyExpression>; a <xref:System.Data.Common.CommandTrees.DbVariableReferenceExpression> that references the target; <xref:System.Data.Common.CommandTrees.DbAndExpression>; <xref:System.Data.Common.CommandTrees.DbOrExpression>; <xref:System.Data.Common.CommandTrees.DbNotExpression>.  
-  
+The predicate can include only the following elements: a <xref:System.Data.Common.CommandTrees.DbComparisonExpression> representing equality; <xref:System.Data.Common.CommandTrees.DbConstantExpression>; <xref:System.Data.Common.CommandTrees.DbIsNullExpression>; <xref:System.Data.Common.CommandTrees.DbPropertyExpression>; a <xref:System.Data.Common.CommandTrees.DbVariableReferenceExpression> that references the target; <xref:System.Data.Common.CommandTrees.DbAndExpression>; <xref:System.Data.Common.CommandTrees.DbOrExpression>; <xref:System.Data.Common.CommandTrees.DbNotExpression>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,10 +64,10 @@
         <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies a projection of results to be returned based, on the modified rows. <see langword="null" /> indicates that no results should be returned from this command.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returning projection includes only the following elements: <xref:System.Data.Common.CommandTrees.DbNewInstanceExpression>; <xref:System.Data.Common.CommandTrees.DbPropertyExpression>.  
-  
+The returning projection includes only the following elements: <xref:System.Data.Common.CommandTrees.DbNewInstanceExpression>; <xref:System.Data.Common.CommandTrees.DbPropertyExpression>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

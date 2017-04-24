@@ -23,16 +23,16 @@
     <summary>Contains conversion routines used by XSLT.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These conversions fall into the following three categories:  
-  
+These conversions fall into the following three categories:  
+ 
 -   Internal type to internal type: These are conversions from one of the five XSLT types to another of the five types.  
-  
+ 
 -   External type to internal type: These are conversions from any of the Xsd types to one of the five XSLT types.  
-  
+ 
 -   Internal type to external type: These are conversions from one of the five XSLT types to any of the Xsd types.  
-  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

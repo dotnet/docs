@@ -36,20 +36,20 @@
     <summary>Represents a missing <see cref="T:System.Object" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The              <xref:System.Reflection.Missing> class is used to invoke a method with a default argument, typically when using reflection.  
+The              <xref:System.Reflection.Missing> class is used to invoke a method with a default argument, typically when using reflection.  
+ 
+Only one instance of <xref:System.Reflection.Missing>, which is returned by the <xref:System.Reflection.Missing.Value> field,  ever exists.  
+ 
   
- Only one instance of <xref:System.Reflection.Missing>, which is returned by the <xref:System.Reflection.Missing.Value> field,  ever exists.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Reflection.Missing> object to invoke a method with a default argument by using reflection.  
-  
- [!code-csharp[System.Reflection.Missing#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Reflection.Missing/cs/Missing1.cs#1)]
- [!code-vb[System.Reflection.Missing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Reflection.Missing/vb/Missing1.vb#1)]  
-  
+The following example shows how to use the <xref:System.Reflection.Missing> object to invoke a method with a default argument by using reflection.  
+ 
+[!code-csharp[System.Reflection.Missing#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Reflection.Missing/cs/Missing1.cs#1)]
+[!code-vb[System.Reflection.Missing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Reflection.Missing/vb/Missing1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -119,10 +119,10 @@
         <summary>Represents the sole instance of the <see cref="T:System.Reflection.Missing" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this instance of the <xref:System.Reflection.Missing> class to represent missing values, for example, when you invoke methods that have default parameter values. For a code example, see the <xref:System.Reflection.Missing> class.  
-  
+Use this instance of the <xref:System.Reflection.Missing> class to represent missing values, for example, when you invoke methods that have default parameter values. For a code example, see the <xref:System.Reflection.Missing> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

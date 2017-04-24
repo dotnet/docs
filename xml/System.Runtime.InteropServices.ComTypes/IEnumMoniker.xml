@@ -32,12 +32,12 @@
     <summary>Manages the definition of the <see langword="IEnumMoniker" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `IEnumMoniker` interface, see the MSDN Library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For more information about the `IEnumMoniker` interface, see the MSDN Library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <summary>Creates a new enumerator that contains the same enumeration state as the current one.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IEnumMoniker::Clone`, see the MSDN Library.  
-  
+For more information about `IEnumMoniker::Clone`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
           <see langword="S_OK" /> if the <paramref name="pceltFetched" /> parameter equals the <paramref name="celt" /> parameter; otherwise, <see langword="S_FALSE" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IEnumMoniker::Next`, see the MSDN Library.  
-  
+For more information about `IEnumMoniker::Next`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
           <see langword="S_OK" /> if the number of elements skipped equals the <paramref name="celt" /> parameter; otherwise, <see langword="S_FALSE" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IEnumMoniker::Skip`, see the MSDN Library.  
-  
+For more information about `IEnumMoniker::Skip`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

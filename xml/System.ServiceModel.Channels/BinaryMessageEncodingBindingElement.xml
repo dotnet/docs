@@ -22,24 +22,24 @@
     <summary>The binding element that specifies the .NET Binary Format for XML used to encode messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
+Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
+ 
+The <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> is the binding element that specified the .NET Binary Format for XML should be used for encoding messages, and has options to specify the character encoding and the SOAP and WS-Addressing version to be used. Binary encoding is most efficient but least interoperable of the encoding options.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using a textual representation of XML, see <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the MTOM message encoding, see <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>.  
+ 
+To implement a custom message encoder, use the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class.  
+ 
   
- The <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> is the binding element that specified the .NET Binary Format for XML should be used for encoding messages, and has options to specify the character encoding and the SOAP and WS-Addressing version to be used. Binary encoding is most efficient but least interoperable of the encoding options.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using a textual representation of XML, see <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the MTOM message encoding, see <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>.  
-  
- To implement a custom message encoder, use the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#0)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#0)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#0)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,11 +59,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#1)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#1)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#1)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,11 +94,11 @@
         <returns>An <see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> of type <paramref name="TChannel" /> for the specified context.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#7)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#7)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#7)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,11 +133,11 @@
         <returns>An <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <paramref name="TChannel" /> for the specified context.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#8)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#8)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#8)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,11 +173,11 @@
           <see langword="true" /> if the specified channel listener stack can be built on the service; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#9)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#9)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#9)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,18 +201,18 @@
         <returns>A <see cref="T:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement" /> object with property values equal to those of the current element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This creates a complete copy of the current binding element object tree, also called a deep clone. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. (This can also be described as copying the entire object graph.) Returning a deep clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a deep clone is not returned, the runtime behavior is undefined.  
+This creates a complete copy of the current binding element object tree, also called a deep clone. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. (This can also be described as copying the entire object graph.) Returning a deep clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a deep clone is not returned, the runtime behavior is undefined.  
+ 
+A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
+ 
   
- A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#10)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#10)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#10)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,16 +255,16 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.MessageEncoderFactory" /> that this binding element creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The<xref:System.ServiceModel.Channels.MessageEncoder> objects that the factory produces can read and write messages using the binary message encoding.  
+The<xref:System.ServiceModel.Channels.MessageEncoder> objects that the factory produces can read and write messages using the binary message encoding.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#11)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#11)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#11)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,16 +299,16 @@
         <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this to request a typed object for setting properties or getting status from the appropriate layer in the binding element stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no binding element layer supported the requested object, then the method returns `null`.  
+Use this to request a typed object for setting properties or getting status from the appropriate layer in the binding element stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no binding element layer supported the requested object, then the method returns `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#12)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#12)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#12)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,16 +331,16 @@
         <value>The maximum number of readers to be kept in the pool. The default value is 64 readers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of incoming messages because it is able to use readers from the pool are already created instead of having to create new ones.  
+Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of incoming messages because it is able to use readers from the pool are already created instead of having to create new ones.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#2)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#2)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#2)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value set is less than or equal to zero.</exception>
@@ -364,16 +364,16 @@
         <value>The maximum size, in bytes, of a session. The default value is 2048 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Binary Format for XML can optimize the transmission of strings when they are used in multiple messages within a session. Once a string is sent in a message, additional messages that contain that string can refer to it using only the string's ID. This requires that the strings and their IDs be stored in memory. This allows the ID to be retransmitted in subsequent messages instead of the entire string. This lookup increases the efficiency of message transmission when using the binary format. The <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxSessionSize%2A> gets and sets the maximum amount of memory that is allocated to store these strings.  
+The .NET Binary Format for XML can optimize the transmission of strings when they are used in multiple messages within a session. Once a string is sent in a message, additional messages that contain that string can refer to it using only the string's ID. This requires that the strings and their IDs be stored in memory. This allows the ID to be retransmitted in subsequent messages instead of the entire string. This lookup increases the efficiency of message transmission when using the binary format. The <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxSessionSize%2A> gets and sets the maximum amount of memory that is allocated to store these strings.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#3)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#3)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#3)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than or equal to zero.</exception>
@@ -397,16 +397,16 @@
         <value>The maximum number of writers to be kept in the pool. The default value is 16 writers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of outgoing messages because it is able to use writers from the pool that are already created instead of having to create new ones.  
+Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of outgoing messages because it is able to use writers from the pool that are already created instead of having to create new ones.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#4)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#4)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#4)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than or equal to zero.</exception>
@@ -430,16 +430,16 @@
         <value>The <see cref="T:System.ServiceModel.Channels.MessageVersion" /> that is used or expected.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange.  
+Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#5)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#5)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#5)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
@@ -464,26 +464,26 @@
         <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints on SOAP messages exchanged. The default values for these constraints are provided in the following remarks section.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complexity constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values are as follows:  
-  
+The complexity constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values are as follows:  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A> = 32  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A> = 8192  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A> = 16384  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A> = 4096  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A> = 16384  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BinaryMessageEncodingBindingElement#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#6)]
- [!code-vb[S_UE_BinaryMessageEncodingBindingElement#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#6)]  
-  
+[!code-csharp[S_UE_BinaryMessageEncodingBindingElement#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/cs/program.cs#6)]
+[!code-vb[S_UE_BinaryMessageEncodingBindingElement#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_binarymessageencodingbindingelement/vb/module1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -512,10 +512,10 @@
           <see langword="true" /> if the SOAP message structure version should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The version of the SOAP message determines the structure of the message.  
-  
+The version of the SOAP message determines the structure of the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>

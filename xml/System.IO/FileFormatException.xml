@@ -37,10 +37,10 @@
         <summary>Creates a new instance of the <see cref="T:System.IO.FileFormatException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses a default system message that describes the error, such as "An input file or a data stream does not conform to the expected file format specification." This message takes into account the current system culture.  
-  
+This constructor uses a default system message that describes the error, such as "An input file or a data stream does not conform to the expected file format specification." This message takes into account the current system culture.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,12 +88,12 @@
         <summary>Creates a new instance of the <see cref="T:System.IO.FileFormatException" /> class with a source [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new <xref:System.IO.FileFormatException> instance to a system-supplied message that describes the error and includes the file name, such as "The file '`sourceUri`' does not conform to the expected file format specification." This message takes into account the current system culture.  
-  
- The <xref:System.IO.FileFormatException.SourceUri%2A> property is initialized using the `sourceUri` parameter.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new <xref:System.IO.FileFormatException> instance to a system-supplied message that describes the error and includes the file name, such as "The file '`sourceUri`' does not conform to the expected file format specification." This message takes into account the current system culture.  
+ 
+The <xref:System.IO.FileFormatException.SourceUri%2A> property is initialized using the `sourceUri` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <summary>Creates a new instance of the <see cref="T:System.IO.FileFormatException" /> class with a specified error message and exception type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new <xref:System.IO.FileFormatException> instance with the specified error message represented by `message`.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new <xref:System.IO.FileFormatException> instance with the specified error message represented by `message`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,12 +172,12 @@
         <summary>Creates a new instance of the <see cref="T:System.IO.FileFormatException" /> class with a source [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value and an exception type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the Message property of the new instance to a system-supplied message that describes the error and includes the file name, such as "The file '`sourceUri`' does not conform to the expected file format specification." This message takes into account the current system culture.  
-  
- The <xref:System.IO.FileFormatException.SourceUri%2A> property is initialized using the `sourceUri` parameter.  
-  
+This constructor initializes the Message property of the new instance to a system-supplied message that describes the error and includes the file name, such as "The file '`sourceUri`' does not conform to the expected file format specification." This message takes into account the current system culture.  
+ 
+The <xref:System.IO.FileFormatException.SourceUri%2A> property is initialized using the `sourceUri` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,12 +205,12 @@
         <summary>Creates a new instance of the <see cref="T:System.IO.FileFormatException" /> class with a source [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value and a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new <xref:System.IO.FileFormatException> instance with the specified error message represented by `message`. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- The <xref:System.IO.FileFormatException.SourceUri%2A> property is initialized using the `sourceUri` parameter.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new <xref:System.IO.FileFormatException> instance with the specified error message represented by `message`. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+The <xref:System.IO.FileFormatException.SourceUri%2A> property is initialized using the `sourceUri` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,12 +240,12 @@
         <summary>Creates a new instance of the <see cref="T:System.IO.FileFormatException" /> class with a source [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value, a specified error message, and an exception type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the Message property of the new instance using the message parameter. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- The <xref:System.IO.FileFormatException.SourceUri%2A> property is initialized using the `sourceUri` parameter.  
-  
+This constructor initializes the Message property of the new instance using the message parameter. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+The <xref:System.IO.FileFormatException.SourceUri%2A> property is initialized using the `sourceUri` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,10 +304,10 @@
         <value>A <see cref="T:System.Uri" /> that represents the name the file that caused the exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there was an error in obtaining the name the file that caused the exception, the return value is `null`, and SourceUri.<xref:System.Object.ToString%2A> returns an empty string.  
-  
+If there was an error in obtaining the name the file that caused the exception, the return value is `null`, and SourceUri.<xref:System.Object.ToString%2A> returns an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>

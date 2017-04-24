@@ -14,10 +14,10 @@
     <summary>Converts <see cref="T:System.Windows.Forms.AxHost.State" /> objects from one data type to another.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should never create an instance of the <xref:System.Windows.Forms.AxHost.StateConverter> class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+You should never create an instance of the <xref:System.Windows.Forms.AxHost.StateConverter> class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

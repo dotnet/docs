@@ -14,18 +14,18 @@
     <summary>Provides access to and organizes files uploaded by a client.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Clients encode files and transmit them in the content body using multipart MIME format with an HTTP `Content-Type` header of `multipart/form-data`. ASP.NET extracts the encoded file(s) from the content body into individual members of an <xref:System.Web.HttpFileCollection>. Methods and properties of the <xref:System.Web.HttpPostedFile> class provide access to the contents and properties of each file.  
+Clients encode files and transmit them in the content body using multipart MIME format with an HTTP `Content-Type` header of `multipart/form-data`. ASP.NET extracts the encoded file(s) from the content body into individual members of an <xref:System.Web.HttpFileCollection>. Methods and properties of the <xref:System.Web.HttpPostedFile> class provide access to the contents and properties of each file.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to access the <xref:System.Web.HttpFileCollection> collection returned from the <xref:System.Web.HttpRequest.Files%2A> property of the <xref:System.Web.HttpRequest> object. The <xref:System.Web.HttpFileCollection> collection is populated by two <xref:System.Web.UI.WebControls.FileUpload> controls on the Web page. Items in the file collection are displayed in a <xref:System.Web.UI.WebControls.BulletedList> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpFileCollection1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpFileCollection1/cs/HttpFileCollectionCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpFileCollection1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpFileCollection1/vb/HttpFileCollectionVB.aspx#1)]  -->  
-  
+The following example demonstrates how to access the <xref:System.Web.HttpFileCollection> collection returned from the <xref:System.Web.HttpRequest.Files%2A> property of the <xref:System.Web.HttpRequest> object. The <xref:System.Web.HttpFileCollection> collection is populated by two <xref:System.Web.UI.WebControls.FileUpload> controls on the Web page. Items in the file collection are displayed in a <xref:System.Web.UI.WebControls.BulletedList> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpFileCollection1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpFileCollection1/cs/HttpFileCollectionCS.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpFileCollection1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpFileCollection1/vb/HttpFileCollectionVB.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,13 +47,13 @@
         <value>An array of file names.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example loads the <xref:System.Web.HttpFileCollection> names transmitted from a client into a string array.  
-  
- [!code-csharp[Classic HttpFileCollection.AllKeys Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.AllKeys Example/CS/source.cs#1)]
- [!code-vb[Classic HttpFileCollection.AllKeys Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.AllKeys Example/VB/source.vb#1)]  
-  
+The following example loads the <xref:System.Web.HttpFileCollection> names transmitted from a client into a string array.  
+ 
+[!code-csharp[Classic HttpFileCollection.AllKeys Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.AllKeys Example/CS/source.cs#1)]
+[!code-vb[Classic HttpFileCollection.AllKeys Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.AllKeys Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,13 +80,13 @@
         <summary>Copies members of the file collection to an <see cref="T:System.Array" /> beginning at the specified index of the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example copies the entire file collection into a new <xref:System.Array> object.  
-  
- [!code-csharp[Classic HttpFileCollection.CopyTo Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.CopyTo Example/CS/source.cs#1)]
- [!code-vb[Classic HttpFileCollection.CopyTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.CopyTo Example/VB/source.vb#1)]  
-  
+The following example copies the entire file collection into a new <xref:System.Array> object.  
+ 
+[!code-csharp[Classic HttpFileCollection.CopyTo Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.CopyTo Example/CS/source.cs#1)]
+[!code-vb[Classic HttpFileCollection.CopyTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.CopyTo Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,13 +112,13 @@
         <returns>An <see cref="T:System.Web.HttpPostedFile" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example retrieves the first file object (index = 0) from the collection sent by the client and retrieves the name of the file represented by the object.  
-  
- [!code-csharp[Classic HttpFileCollection.Get1 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.Get1 Example/CS/source.cs#1)]
- [!code-vb[Classic HttpFileCollection.Get1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.Get1 Example/VB/source.vb#1)]  
-  
+The following example retrieves the first file object (index = 0) from the collection sent by the client and retrieves the name of the file represented by the object.  
+ 
+[!code-csharp[Classic HttpFileCollection.Get1 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.Get1 Example/CS/source.cs#1)]
+[!code-vb[Classic HttpFileCollection.Get1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.Get1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,13 +144,13 @@
         <returns>An <see cref="T:System.Web.HttpPostedFile" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example retrieves the file object named "CustInfo" from the collection sent by the client and retrieves the name of the actual file represented by the object.  
-  
- [!code-csharp[Classic HttpFileCollection.Get Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.Get Example/CS/source.cs#1)]
- [!code-vb[Classic HttpFileCollection.Get Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.Get Example/VB/source.vb#1)]  
-  
+The following example retrieves the file object named "CustInfo" from the collection sent by the client and retrieves the name of the actual file represented by the object.  
+ 
+[!code-csharp[Classic HttpFileCollection.Get Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.Get Example/CS/source.cs#1)]
+[!code-vb[Classic HttpFileCollection.Get Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.Get Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,13 +176,13 @@
         <returns>The name of the <see cref="T:System.Web.HttpFileCollection" /> member specified by <paramref name="index" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example loops through the file collection and takes action if a file collection member with the name "CustInfo" is found.  
-  
- [!code-csharp[Classic HttpFileCollection.GetKey Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.GetKey Example/CS/source.cs#1)]
- [!code-vb[Classic HttpFileCollection.GetKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.GetKey Example/VB/source.vb#1)]  
-  
+The following example loops through the file collection and takes action if a file collection member with the name "CustInfo" is found.  
+ 
+[!code-csharp[Classic HttpFileCollection.GetKey Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.GetKey Example/CS/source.cs#1)]
+[!code-vb[Classic HttpFileCollection.GetKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.GetKey Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <returns>The collection of files.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a new collection instance each time it is called. This method should be called once per name per request.  
-  
+This method returns a new collection instance each time it is called. This method should be called once per name per request.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,13 +237,13 @@
         <value>The <see cref="T:System.Web.HttpPostedFile" /> specified by <paramref name="index" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example retrieves the first file object (index = 0) from the collection sent by the client and retrieves the name of the actual file represented by the object.  
-  
- [!code-csharp[Classic HttpFileCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.this1 Example/CS/source.cs#1)]
- [!code-vb[Classic HttpFileCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.this1 Example/VB/source.vb#1)]  
-  
+The following example retrieves the first file object (index = 0) from the collection sent by the client and retrieves the name of the actual file represented by the object.  
+ 
+[!code-csharp[Classic HttpFileCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.this1 Example/CS/source.cs#1)]
+[!code-vb[Classic HttpFileCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.this1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,13 +269,13 @@
         <value>The <see cref="T:System.Web.HttpPostedFile" /> specified by <paramref name="name" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example retrieves the file object named "CustInfo" from the collection sent by the client and retrieves the name of the actual file represented by the object.  
-  
- [!code-csharp[Classic HttpFileCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.this Example/CS/source.cs#1)]
- [!code-vb[Classic HttpFileCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.this Example/VB/source.vb#1)]  
-  
+The following example retrieves the file object named "CustInfo" from the collection sent by the client and retrieves the name of the actual file represented by the object.  
+ 
+[!code-csharp[Classic HttpFileCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpFileCollection.this Example/CS/source.cs#1)]
+[!code-vb[Classic HttpFileCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpFileCollection.this Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

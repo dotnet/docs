@@ -50,14 +50,14 @@
         <value>The <see cref="T:System.Xml.XmlNode" /> immediately following this node or <see langword="null" /> if one does not exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the first two book nodes.  
-  
- [!code-cpp[Classic WebData XmlLinkedNode.NextSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlLinkedNode.NextSibling Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlLinkedNode.NextSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlLinkedNode.NextSibling Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlLinkedNode.NextSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlLinkedNode.NextSibling Example/VB/source.vb#1)]  
-  
+The following example displays the first two book nodes.  
+ 
+[!code-cpp[Classic WebData XmlLinkedNode.NextSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlLinkedNode.NextSibling Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlLinkedNode.NextSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlLinkedNode.NextSibling Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlLinkedNode.NextSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlLinkedNode.NextSibling Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,14 +88,14 @@
         <value>The preceding <see cref="T:System.Xml.XmlNode" /> or <see langword="null" /> if one does not exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the last two books.  
-  
- [!code-cpp[Classic WebData XmlLinkedNode.PreviousSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlLinkedNode.PreviousSibling Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlLinkedNode.PreviousSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlLinkedNode.PreviousSibling Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlLinkedNode.PreviousSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlLinkedNode.PreviousSibling Example/VB/source.vb#1)]  
-  
+The following example displays the last two books.  
+ 
+[!code-cpp[Classic WebData XmlLinkedNode.PreviousSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlLinkedNode.PreviousSibling Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlLinkedNode.PreviousSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlLinkedNode.PreviousSibling Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlLinkedNode.PreviousSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlLinkedNode.PreviousSibling Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

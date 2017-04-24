@@ -13,10 +13,10 @@
     <summary>Specifies the page size or roll width of the paper or other print media.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used to provide values for the <xref:System.Printing.PageMediaSize.PageMediaSizeName%2A> property. The <xref:System.Printing.PageMediaSize> class, in turn, is used to provide values for the <xref:System.Printing.PrintCapabilities.PageMediaSizeCapability%2A> property where it specifies the various page sizes a printer can use, and the <xref:System.Printing.PrintTicket.PageMediaSize%2A> property, where it instructs a printer which page size to use.  
-  
+This enumeration is used to provide values for the <xref:System.Printing.PageMediaSize.PageMediaSizeName%2A> property. The <xref:System.Printing.PageMediaSize> class, in turn, is used to provide values for the <xref:System.Printing.PrintCapabilities.PageMediaSizeCapability%2A> property where it specifies the various page sizes a printer can use, and the <xref:System.Printing.PrintTicket.PageMediaSize%2A> property, where it instructs a printer which page size to use.  
+ 
  ]]></format>
     </remarks>
   </Docs>

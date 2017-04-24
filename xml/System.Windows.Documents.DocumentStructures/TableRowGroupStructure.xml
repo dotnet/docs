@@ -21,17 +21,17 @@
     <summary>Represents a set of one or more rows in a table.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Documents.DocumentStructures.TableRowGroupStructure> can only have a <xref:System.Windows.Documents.DocumentStructures.TableStructure> as a parent.  
+A <xref:System.Windows.Documents.DocumentStructures.TableRowGroupStructure> can only have a <xref:System.Windows.Documents.DocumentStructures.TableStructure> as a parent.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the `<TableRowGroupStructure>` part of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document.  
-  
- [!code-xml[DocumentStructure#DocStructTableStruct1](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage1_structure.xaml#docstructtablestruct1)]  
-  
+The following example shows the `<TableRowGroupStructure>` part of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document.  
+ 
+[!code-xml[DocumentStructure#DocStructTableStruct1](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage1_structure.xaml#docstructtablestruct1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -131,12 +131,12 @@
         <summary>This member supports the [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adds a child object to the <xref:System.Windows.Documents.DocumentStructures.TableRowGroupStructure>.  
-  
- Only <xref:System.Windows.Documents.DocumentStructures.TableRowStructure> can be a child of <xref:System.Windows.Documents.DocumentStructures.TableRowGroupStructure> and there must be at least one child.  
-  
+Adds a child object to the <xref:System.Windows.Documents.DocumentStructures.TableRowGroupStructure>.  
+ 
+Only <xref:System.Windows.Documents.DocumentStructures.TableRowStructure> can be a child of <xref:System.Windows.Documents.DocumentStructures.TableRowGroupStructure> and there must be at least one child.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

@@ -23,20 +23,20 @@
     <summary>Provides data for the <see cref="E:System.Data.DataColumnCollection.CollectionChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Data.DataColumnCollection.CollectionChanged> event is raised when you change which items are in a collection, for example, by adding an element to a collection or removing an element from the collection. This event is not raised when an individual element changes its value.  
+A <xref:System.Data.DataColumnCollection.CollectionChanged> event is raised when you change which items are in a collection, for example, by adding an element to a collection or removing an element from the collection. This event is not raised when an individual element changes its value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.AutoCompleteStringCollection> named `AutoCompleteStringCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#76](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#76)]
- [!code-vb[System.Windows.Forms.EventExamples#76](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#76)]  
-  
+The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.AutoCompleteStringCollection> named `AutoCompleteStringCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#76](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#76)]
+[!code-vb[System.Windows.Forms.EventExamples#76](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#76)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,26 +96,26 @@
         <value>One of the <see cref="T:System.ComponentModel.CollectionChangeAction" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can have one of the following values:  
-  
+This property can have one of the following values:  
+ 
 |Action|Property value|  
 |------------|--------------------|  
 |An element was added to the collection|`CollectionChangeAction.Add`|  
 |An element was removed from the collection|`CollectionChangeAction.Remove`|  
 |The collection was completely changed|`CollectionChangeAction.Refresh`|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.AutoCompleteStringCollection> named `AutoCompleteStringCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#76](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#76)]
- [!code-vb[System.Windows.Forms.EventExamples#76](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#76)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.AutoCompleteStringCollection> named `AutoCompleteStringCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#76](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#76)]
+[!code-vb[System.Windows.Forms.EventExamples#76](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#76)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,15 +146,15 @@
         <value>An <see cref="T:System.Object" /> that represents the instance of the collection with the change, or <see langword="null" /> if you refresh the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.AutoCompleteStringCollection> named `AutoCompleteStringCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#76](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#76)]
- [!code-vb[System.Windows.Forms.EventExamples#76](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#76)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.AutoCompleteStringCollection> named `AutoCompleteStringCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#76](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#76)]
+[!code-vb[System.Windows.Forms.EventExamples#76](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#76)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

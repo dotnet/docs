@@ -73,10 +73,10 @@
         <value>The standard file name extension (including the leading period) for [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] documents.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns the string ".xps".  
-  
+This method always returns the string ".xps".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <value>The public name for serializers that the factory produces.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns the string "XPS Serializer".  
-  
+This method always returns the string "XPS Serializer".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <value>The manufacturer's name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns the string "Microsoft".  
-  
+This method always returns the string "Microsoft".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <value>The manufacturer's Web site.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] "http://www.microsoft.com".  
-  
+This method always returns the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] "http://www.microsoft.com".  
+ 
  ]]></format>
         </remarks>
       </Docs>

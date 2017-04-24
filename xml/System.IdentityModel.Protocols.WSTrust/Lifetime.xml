@@ -14,12 +14,12 @@
     <summary>Represents the <see langword="&lt;wst:Lifetime&gt;" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element is used in `wst:RequestSecurityToken` or `wst:RequestSecurityTokenResponse` messages to indicate the desired or required lifetime of a token. All times are specified in UTC time.  
-  
- [!INCLUDE[wif_wstrust_ref](~/includes/wif-wstrust-ref-md.md)]  
-  
+This optional element is used in `wst:RequestSecurityToken` or `wst:RequestSecurityTokenResponse` messages to indicate the desired or required lifetime of a token. All times are specified in UTC time.  
+ 
+[!INCLUDE[wif_wstrust_ref](~/includes/wif-wstrust-ref-md.md)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,12 +83,12 @@
         <value>A <see cref="T:System.DateTime" /> that represents the UTC time at which the token is created. Can be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the `<wst:Created>` child element. This optional element specifies the time at which the token is created.  
-  
- [!INCLUDE[wif_wstrust_ref](~/includes/wif-wstrust-ref-md.md)]  
-  
+Represents the `<wst:Created>` child element. This optional element specifies the time at which the token is created.  
+ 
+[!INCLUDE[wif_wstrust_ref](~/includes/wif-wstrust-ref-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,12 +110,12 @@
         <value>A <see cref="T:System.DateTime" /> that represents the UTC time at which the token expires. Can be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the `<wst:Expires>` child element. This optional element specifies the time at which the token expires.  
-  
- [!INCLUDE[wif_wstrust_ref](~/includes/wif-wstrust-ref-md.md)]  
-  
+Represents the `<wst:Expires>` child element. This optional element specifies the time at which the token expires.  
+ 
+[!INCLUDE[wif_wstrust_ref](~/includes/wif-wstrust-ref-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

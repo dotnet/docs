@@ -23,36 +23,36 @@
     <summary>A contract behavior that allows you to set the URL query string parameter name to something other than the default “callback”.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- JSONP is a mechanism used to enable cross-site, scripting support in Web browsers. It involves sending a request with a callback function name provided as a URL query string parameter value. The service returns a response with the usual JSON payload wrapped in the call to the provided callback function as if it were a line of executable code.  
-  
- The following is an example of a URL used to call a service: `http://baseAddress/Service/RESTService?callback=functionName`. When invoked, the service responds with the following JSON.  
-  
+JSONP is a mechanism used to enable cross-site, scripting support in Web browsers. It involves sending a request with a callback function name provided as a URL query string parameter value. The service returns a response with the usual JSON payload wrapped in the call to the provided callback function as if it were a line of executable code.  
+ 
+The following is an example of a URL used to call a service: `http://baseAddress/Service/RESTService?callback=functionName`. When invoked, the service responds with the following JSON.  
+ 
 ```  
 functionName({ “root”:”Something});  
 ```  
-  
- The <xref:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute> allows developers to specify the name of the URL query string parameter to interpret as the callback parameter. The default value is “callback” (not case sensitive).  
-  
- The following example shows how this attribute is applied to a service contract.  
-  
+ 
+The <xref:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute> allows developers to specify the name of the URL query string parameter to interpret as the callback parameter. The default value is “callback” (not case sensitive).  
+ 
+The following example shows how this attribute is applied to a service contract.  
+ 
 ```  
 [ServiceContract]  
 [JavascriptCallbackBehavior]  
 public class Service1  
 {  
-    [OperationContract]  
-    [WebGet(ResponseFormat=WebMessageFormat.Json)]  
-    public string GetData()  
-    {              
-         // ...  
-    }  
+   [OperationContract]  
+   [WebGet(ResponseFormat=WebMessageFormat.Json)]  
+   public string GetData()  
+   {              
+        // ...  
+   }  
 }  
 ```  
-  
- This attribute only applies when it marks a service contract type that is used with the <xref:System.ServiceModel.WebHttpBinding> and the <xref:System.ServiceModel.WebHttpBinding.CrossDomainScriptAccessEnabled%2A> property of the binding is set to `true`.  
-  
+ 
+This attribute only applies when it marks a service contract type that is used with the <xref:System.ServiceModel.WebHttpBinding> and the <xref:System.ServiceModel.WebHttpBinding.CrossDomainScriptAccessEnabled%2A> property of the binding is set to `true`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -164,10 +164,10 @@ public class Service1
         <value>The URL query string parameter name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property allows you to specify the name of the URL query string parameter used to identify the JSONP callback function name. The default value is “callback”.  
-  
+This property allows you to specify the name of the URL query string parameter used to identify the JSONP callback function name. The default value is “callback”.  
+ 
  ]]></format>
         </remarks>
       </Docs>

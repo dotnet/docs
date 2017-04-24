@@ -14,10 +14,10 @@
     <summary>Represents a WS-Federation Sign-Out Cleanup message. The message is created when the received message has the action parameter (wa) set to “wsignoutcleanup1.0”.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[wif_wsfed_ref](~/includes/wif-wsfed-ref-md.md)]  
-  
+[!INCLUDE[wif_wsfed_ref](~/includes/wif-wsfed-ref-md.md)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" /> class with the specified base URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignoutcleanup1.0”.  
-  
+The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignoutcleanup1.0”.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,10 +66,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" /> class with the specified base URL and wreply parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignoutcleanup1.0”.  
-  
+The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignoutcleanup1.0”.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -97,10 +97,10 @@
         <value>The value of the wreply parameter. This is the URL to which the reply should be sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wreply parameter from the message.  
-  
+Set to `null` or an empty string to remove the wreply parameter from the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid, absolute URI occurs.</exception>
@@ -145,10 +145,10 @@
         <summary>Writes the message in query string form to the specified text writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.IdentityModel.Services.SignOutCleanupRequestMessage.Validate%2A> method before writing the message.  
-  
+This method calls the <xref:System.IdentityModel.Services.SignOutCleanupRequestMessage.Validate%2A> method before writing the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

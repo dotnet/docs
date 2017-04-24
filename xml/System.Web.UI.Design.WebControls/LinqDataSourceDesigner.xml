@@ -14,12 +14,12 @@
     <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a visual designer, when you switch to a designer view (such as **Design** view in [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)]), the <xref:System.Web.UI.WebControls.LinqDataSource> control markup is parsed. A design-time version of the control is then created on the design surface. When you switch to source view, the design-time control is persisted as the markup for the Web page.  
-  
- The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.LinqDataSource> control in a visual designer.  
-  
+In a visual designer, when you switch to a designer view (such as **Design** view in [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)]), the <xref:System.Web.UI.WebControls.LinqDataSource> control markup is parsed. A design-time version of the control is then created on the design surface. When you switch to source view, the design-time control is persisted as the markup for the Web page.  
+ 
+The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.LinqDataSource> control in a visual designer.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -80,12 +80,12 @@
           <see langword="true" /> if the <see cref="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure" /> method can be called; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method can be called if the <xref:System.Web.UI.Control.Site%2A?displayProperty=fullName> property of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control implements the <xref:System.ComponentModel.Design.ITypeDiscoveryService?displayProperty=fullName> interface. In that case, the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property value is `true`.  
-  
- If the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property is `true`, the **Configure Data Source** menu item is displayed in the **LinqDataSource Tasks** menu of the associated control on the visual designer surface. When this item is selected, the **Configure Data Source** wizard is started.  
-  
+The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method can be called if the <xref:System.Web.UI.Control.Site%2A?displayProperty=fullName> property of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control implements the <xref:System.ComponentModel.Design.ITypeDiscoveryService?displayProperty=fullName> interface. In that case, the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property value is `true`.  
+ 
+If the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property is `true`, the **Configure Data Source** menu item is displayed in the **LinqDataSource Tasks** menu of the associated control on the visual designer surface. When this item is selected, the **Configure Data Source** wizard is started.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,18 +108,18 @@
           <see langword="true" /> if the <see cref="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema%2A> method can be called if all the following conditions are true:  
-  
+The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema%2A> method can be called if all the following conditions are true:  
+ 
 -   The <xref:System.Web.UI.Control.Site%2A?displayProperty=fullName> property of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control implements the <xref:System.ComponentModel.Design.ITypeDiscoveryService?displayProperty=fullName> interface.  
-  
+ 
 -   The <xref:System.Web.UI.WebControls.LinqDataSourceView.ContextTypeName%2A> property contains a value.  
-  
- If these conditions are true, the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema%2A> property value is `true`.  
-  
- If the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema%2A> is `true`, the **Refresh Schema** menu item is displayed in the **LinqDataSource Tasks** menu of the associated control on the visual designer surface.  
-  
+ 
+If these conditions are true, the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema%2A> property value is `true`.  
+ 
+If the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema%2A> is `true`, the **Refresh Schema** menu item is displayed in the **LinqDataSource Tasks** menu of the associated control on the visual designer surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,12 +141,12 @@
         <summary>Launches the data source configuration wizard in the design host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method starts the **Configure Data Source** wizard on the visual designer surface.  
-  
- The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method is called when the **Configure Data Source** menu item is selected on the **LinqDataSource Tasks** menu of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control. The **Configure Data Source** menu item appears on the **LinqDataSource Tasks** menu when the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property is `true`.  
-  
+The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method starts the **Configure Data Source** wizard on the visual designer surface.  
+ 
+The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method is called when the **Configure Data Source** menu item is selected on the **LinqDataSource Tasks** menu of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control. The **Configure Data Source** menu item appears on the **LinqDataSource Tasks** menu when the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,10 +227,10 @@
           <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a <xref:System.Web.UI.WebControls.LinqDataSource> instance, setting this property has no effect. This property shadows a property in the associated control, and is intended for internal use only.  
-  
+In a <xref:System.Web.UI.WebControls.LinqDataSource> instance, setting this property has no effect. This property shadows a property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -430,10 +430,10 @@
           <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a <xref:System.Web.UI.WebControls.LinqDataSource> instance, setting this property has no effect. This property shadows a property in the associated control, and is intended for internal use only.  
-  
+In a <xref:System.Web.UI.WebControls.LinqDataSource> instance, setting this property has no effect. This property shadows a property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -550,10 +550,10 @@
         <summary>Refreshes the schema from the underlying data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The design host calls the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema%2A> method only if <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema%2A> is `true`.  
-  
+The design host calls the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema%2A> method only if <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema%2A> is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -687,10 +687,10 @@
           <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a <xref:System.Web.UI.WebControls.LinqDataSource> instance, setting this property has no effect. This property shadows a property in the associated control, and is intended for internal use only.  
-  
+In a <xref:System.Web.UI.WebControls.LinqDataSource> instance, setting this property has no effect. This property shadows a property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>

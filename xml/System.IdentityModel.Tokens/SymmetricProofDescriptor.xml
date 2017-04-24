@@ -32,10 +32,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class with the specified encrypting credentials.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if you want the STS to use the specified <xref:System.IdentityModel.Tokens.EncryptingCredentials>.  
-  
+Use this constructor if you want the STS to use the specified <xref:System.IdentityModel.Tokens.EncryptingCredentials>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -59,10 +59,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class with the specified key material.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if you want the STS to use the specified key bytes. This happens when client sends the entropy, and the STS would just use that as the key for the issued token.  
-  
+Use this constructor if you want the STS to use the specified key bytes. This happens when client sends the entropy, and the STS would just use that as the key for the issued token.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -88,10 +88,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class with an auto-generated key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if you want the STS to auto-generate the key using a random number generator and send it in the proof token as a binary secret.  
-  
+Use this constructor if you want the STS to auto-generate the key using a random number generator and send it in the proof token as a binary secret.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,14 +117,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class with an auto-generated key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if you want the STS to auto-generate the key and send it in the proof token as encrypted key. Two cases can be covered by using this constructor:  
-  
+Use this constructor if you want the STS to auto-generate the key and send it in the proof token as encrypted key. Two cases can be covered by using this constructor:  
+ 
 1.  The client sends the entropy, but the server rejects it.  
-  
+ 
 2.  The client does not send the entropy, so the server's entropy is used.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -154,10 +154,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class to use for sending combined entropy.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if you want to send a combined entropy.  
-  
+Use this constructor if you want to send a combined entropy.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -189,16 +189,16 @@
         <summary>Use this constructor to have the STS autogenerate a key and send it in the proof token as encrypted key. Two cases are covered here 1. client sends the entropy, but server rejects it 2. client did not send a entropy, so just use server's entropy</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `encryptWith` is a DES algorithm, the key is guaranteed not to be a weak DES key.  
-  
- Use this constructor if you want the STS to auto-generate the key and send it in the proof token as encrypted key. Two cases can be covered by using this constructor:  
-  
+If `encryptWith` is a DES algorithm, the key is guaranteed not to be a weak DES key.  
+ 
+Use this constructor if you want the STS to auto-generate the key and send it in the proof token as encrypted key. Two cases can be covered by using this constructor:  
+ 
 1.  The client sends the entropy, but the server rejects it.  
-  
+ 
 2.  The client does not send the entropy, so the server's entropy is used.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -230,10 +230,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class to use for sending combined entropy.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to send combined entropy.  
-  
+Use this constructor to send combined entropy.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -262,10 +262,10 @@
         <summary>Modifies the specified RSTR based on the settings in this proof descriptor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Sets the appropriate artifacts, such as the requested proof token, inside the RSTR based on what is inside the proof descriptor instance.  
-  
+Sets the appropriate artifacts, such as the requested proof token, inside the RSTR based on what is inside the proof descriptor instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -14,10 +14,10 @@
     <summary>Defines a configuration element for a UDP announcement endpoint.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A UDP announcement endpoint is a standard endpoint that utilizes UDP transport protocol that specifies where a discoverable service sends announcement messages and where an announcement service listens for announcement messages.  
-  
+A UDP announcement endpoint is a standard endpoint that utilizes UDP transport protocol that specifies where a discoverable service sends announcement messages and where an announcement service listens for announcement messages.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -149,10 +149,10 @@
         <value>A URI address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The multicast address is the IP address from which messages are sent simultaneously to multiple host computers.  
-  
+The multicast address is the IP address from which messages are sent simultaneously to multiple host computers.  
+ 
  ]]></format>
         </remarks>
       </Docs>

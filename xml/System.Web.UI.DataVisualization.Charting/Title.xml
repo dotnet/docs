@@ -21,24 +21,24 @@
     <summary>Represents a title for the entire chart image.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.Title> class encapsulates all the functionality of a title for the <xref:System.Web.UI.DataVisualization.Charting.Chart> control. This class is exposed using the <xref:System.Web.UI.DataVisualization.Charting.Chart.Titles%2A> collection property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object.  
-  
- There can be any number of titles for an entire chart image.  
-  
- Titles are able to:  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.Title> class encapsulates all the functionality of a title for the <xref:System.Web.UI.DataVisualization.Charting.Chart> control. This class is exposed using the <xref:System.Web.UI.DataVisualization.Charting.Chart.Titles%2A> collection property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object.  
+ 
+There can be any number of titles for an entire chart image.  
+ 
+Titles are able to:  
+ 
 -   Be docked and aligned or custom-positioned.  
-  
+ 
 -   Be displayed inside or outside the plotted chart areas.  
-  
+ 
 -   Use a predefined <xref:System.Web.UI.DataVisualization.Charting.TextStyle> such as <xref:System.Web.UI.DataVisualization.Charting.TextStyle> or <xref:System.Web.UI.DataVisualization.Charting.TextStyle>.  
-  
+ 
 -   Use hatching, gradient colors and background images.  
-  
+ 
 -   Be sized and positioned anywhere within the chart image.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -151,10 +151,10 @@
         <value>A <see cref="T:System.Drawing.ContentAlignment" /> enumeration value that represents the title alignment within the text drawing area. The default value is <see cref="F:System.Drawing.ContentAlignment.MiddleCenter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.Title.Alignment%2A> property has no effect on alignment if the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property is not set to <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto%2A>.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.Title.Alignment%2A> property has no effect on alignment if the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property is not set to <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,14 +196,14 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the background color of the title. The default color is <see cref="P:System.Drawing.Color.White" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set this property to any valid ARGB (alpha, red, green, blue) value.  
-  
- The <xref:System.Web.UI.DataVisualization.Charting.Title.BackColor%2A> value will be the first color used if you have specified gradient colors for the background.  
-  
- The alpha value controls the opacity of a color. If you set this color to "transparent"—that is, if you use an alpha value of 0—no color will be assigned to the background of the title. As a result, the background will be transparent.  
-  
+You can set this property to any valid ARGB (alpha, red, green, blue) value.  
+ 
+The <xref:System.Web.UI.DataVisualization.Charting.Title.BackColor%2A> value will be the first color used if you have specified gradient colors for the background.  
+ 
+The alpha value controls the opacity of a color. If you set this color to "transparent"—that is, if you use an alpha value of 0—no color will be assigned to the background of the title. As a result, the background will be transparent.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,20 +242,20 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.GradientStyle" /> enumeration that represents the orientation for the background gradient of a title. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.GradientStyle.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.DataVisualization.Charting.Title.BackGradientStyle%2A> property to determine whether a title will display a gradient, and to determine the orientation of the gradient if one is used.  
-  
- For a listing of available patterns, refer to the <xref:System.Web.UI.DataVisualization.Charting.GradientStyle> enumeration.  
-  
- To use gradient colors:  
-  
- Set the primary color of the title background with the <xref:System.Web.UI.DataVisualization.Charting.Title.BackColor%2A> property.  
-  
- Set the secondary color of the title background with the <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> property.  
-  
- Set this <xref:System.Web.UI.DataVisualization.Charting.Title.BackGradientStyle%2A> property to the desired gradient style.  
-  
+Use the <xref:System.Web.UI.DataVisualization.Charting.Title.BackGradientStyle%2A> property to determine whether a title will display a gradient, and to determine the orientation of the gradient if one is used.  
+ 
+For a listing of available patterns, refer to the <xref:System.Web.UI.DataVisualization.Charting.GradientStyle> enumeration.  
+ 
+To use gradient colors:  
+ 
+Set the primary color of the title background with the <xref:System.Web.UI.DataVisualization.Charting.Title.BackColor%2A> property.  
+ 
+Set the secondary color of the title background with the <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> property.  
+ 
+Set this <xref:System.Web.UI.DataVisualization.Charting.Title.BackGradientStyle%2A> property to the desired gradient style.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,14 +294,14 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHatchStyle" /> enumeration that represents the hatching style for the title. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.ChartHatchStyle.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.ChartHatchStyle> enumeration specifies the hatch pattern used by a brush of type <xref:System.Drawing.Drawing2D.HatchBrush>. The hatch pattern consists of a solid background color and lines drawn over the background.  
-  
- For a listing of available hatching styles, refer to the <xref:System.Web.UI.DataVisualization.Charting.ChartHatchStyle> enumeration.  
-  
- **Note** The color of hatching lines is determined by the <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> property.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.ChartHatchStyle> enumeration specifies the hatch pattern used by a brush of type <xref:System.Drawing.Drawing2D.HatchBrush>. The hatch pattern consists of a solid background color and lines drawn over the background.  
+ 
+For a listing of available hatching styles, refer to the <xref:System.Web.UI.DataVisualization.Charting.ChartHatchStyle> enumeration.  
+ 
+**Note** The color of hatching lines is determined by the <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,18 +340,18 @@
         <value>A <see langword="string" /> value that represents the URL of an image file. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property defines a path to a background image for a <xref:System.Web.UI.DataVisualization.Charting.Chart> title, and can be an absolute or relative URL.  
-  
- To position the image, use the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageAlignment%2A> and <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> properties.  
-  
- You can also specify one of the colors displayed by the image as "transparent", by setting the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageTransparentColor%2A> property.  
-  
- An image be any valid graphics file supported by .NET Framework, including icons.  
-  
- Background images take precedence over other background properties such as gradient color.  
-  
+This property defines a path to a background image for a <xref:System.Web.UI.DataVisualization.Charting.Chart> title, and can be an absolute or relative URL.  
+ 
+To position the image, use the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageAlignment%2A> and <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> properties.  
+ 
+You can also specify one of the colors displayed by the image as "transparent", by setting the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageTransparentColor%2A> property.  
+ 
+An image be any valid graphics file supported by .NET Framework, including icons.  
+ 
+Background images take precedence over other background properties such as gradient color.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,10 +387,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle" /> enumeration value that represents the alignment of the title background image. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle.TopLeft" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used when the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>.  
-  
+This property is used when the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -432,10 +432,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that will be drawn as transparent when the background image is drawn. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color will be displayed as transparent when the chart is rendered.  
-  
+This color will be displayed as transparent when the chart is rendered.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -471,16 +471,16 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode" /> enumeration value that represents the drawing mode for the background image of the title. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode.Tile" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property determines how the image is displayed; the image can be tiled, scaled, and so forth.  
-  
- If an image is scaled, it will be stretched to fit within the bounds of the title. If the image is tiled, it is repeatedly drawn, starting from the top-left corner of the title.  
-  
- For more information about the available wrapping modes, see the <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
-  
- If the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageAlignment%2A> property setting.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property determines how the image is displayed; the image can be tiled, scaled, and so forth.  
+ 
+If an image is scaled, it will be stretched to fit within the bounds of the title. If the image is tiled, it is repeatedly drawn, starting from the top-left corner of the title.  
+ 
+For more information about the available wrapping modes, see the <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
+ 
+If the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageAlignment%2A> property setting.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,22 +522,22 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used for the secondary color of a background with hatching or gradient fill. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> property is one of several related properties that determine the secondary background color of <xref:System.Web.UI.DataVisualization.Charting.Chart> objects, and is used when gradient colors are being applied.  
-  
- You can set <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> to any valid ARGB (alpha, red, green, blue) value.  
-  
- If hatching is used, the <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> property determines the color of the hatching lines for the title.  
-  
- To use gradient colors for the background of a title:  
-  
+This <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> property is one of several related properties that determine the secondary background color of <xref:System.Web.UI.DataVisualization.Charting.Chart> objects, and is used when gradient colors are being applied.  
+ 
+You can set <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> to any valid ARGB (alpha, red, green, blue) value.  
+ 
+If hatching is used, the <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> property determines the color of the hatching lines for the title.  
+ 
+To use gradient colors for the background of a title:  
+ 
 -   Set the primary color with the <xref:System.Web.UI.DataVisualization.Charting.Title.BackColor%2A> property.  
-  
+ 
 -   Set the secondary color with the <xref:System.Web.UI.DataVisualization.Charting.Title.BackSecondaryColor%2A> property.  
-  
+ 
 -   Set the <xref:System.Web.UI.DataVisualization.Charting.Title.BackGradientStyle%2A> property to the desired gradient style.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -579,10 +579,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used to draw the border color of the title. The default color is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set the <xref:System.Web.UI.DataVisualization.Charting.Title.BorderColor%2A> property to any valid ARGB (alpha, red, green, blue) value.  
-  
+You can set the <xref:System.Web.UI.DataVisualization.Charting.Title.BorderColor%2A> property to any valid ARGB (alpha, red, green, blue) value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -618,12 +618,12 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartDashStyle" /> enumeration value that determines the border style of the title.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.Title.BorderDashStyle%2A> property determines the line style to use for a border. The line can be solid, dotted, and so forth.  
-  
- For other border styles, see the <xref:System.Web.UI.DataVisualization.Charting.ChartDashStyle> enumeration topic.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.Title.BorderDashStyle%2A> property determines the line style to use for a border. The line can be solid, dotted, and so forth.  
+ 
+For other border styles, see the <xref:System.Web.UI.DataVisualization.Charting.ChartDashStyle> enumeration topic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -748,12 +748,12 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.Docking" /> enumeration value that specifies the docking location of the title. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.Docking.Top" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.Title> can be docked to the top, left, bottom or right of either the entire chart image, or the inside or outside of a chart area. If the <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property is set to `false`, docking applies to the entire chart image. If the <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property is set to `true`, docking applies to the <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object specified by the <xref:System.Web.UI.DataVisualization.Charting.Title.DockedToChartArea%2A> property  
-  
- This property has no effect if the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property is not set to <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto%2A>.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.Title> can be docked to the top, left, bottom or right of either the entire chart image, or the inside or outside of a chart area. If the <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property is set to `false`, docking applies to the entire chart image. If the <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property is set to `true`, docking applies to the <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object specified by the <xref:System.Web.UI.DataVisualization.Charting.Title.DockedToChartArea%2A> property  
+ 
+This property has no effect if the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property is not set to <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -821,10 +821,10 @@
         <value>A <see cref="T:System.Drawing.Font" /> object that specifies the font for the title. Defaults to "Microsoft Sans Serif, 8pt".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a new <xref:System.Drawing.Font> object when setting this property. Assign the entire object to the property.  
-  
+Use a new <xref:System.Drawing.Font> object when setting this property. Assign the entire object to the property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -866,10 +866,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value that specifies the color of the title text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.Title.ForeColor%2A> property is used to set the title text color.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.Title.ForeColor%2A> property is used to set the title text color.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -906,12 +906,12 @@
           <see langword="true" /> if the title will be docked within a chart area; <see langword="false" /> if the title will be docked outside the chart area. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property is set to `false`, the title is docked to the outside edge of the plotted chart areas; if this property is set to `true`, the title will be docked to the inside edge of the chart area. This property will have no effect if the name of a <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object is not assigned to the <xref:System.Web.UI.DataVisualization.Charting.Title.DockedToChartArea%2A> property.  
-  
- **Note** This behavior only applies if the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto%2A>. If this is not the case, setting the <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property has no effect, because the position of the title is then determined by the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property value.  
-  
+If the <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property is set to `false`, the title is docked to the outside edge of the plotted chart areas; if this property is set to `true`, the title will be docked to the inside edge of the chart area. This property will have no effect if the name of a <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object is not assigned to the <xref:System.Web.UI.DataVisualization.Charting.Title.DockedToChartArea%2A> property.  
+ 
+**Note** This behavior only applies if the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto%2A>. If this is not the case, setting the <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property has no effect, because the position of the title is then determined by the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -944,20 +944,20 @@
         <value>A <see langword="string" /> value that represents the map area attributes of the title. The default is a zero-length string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set the <xref:System.Web.UI.DataVisualization.Charting.Title.MapAreaAttributes%2A> property, a client-side image map will automatically be created. A map area will also be created, with its attribute string appended to the \<MAP> tag that corresponds to the chart object for which this property is being set.  
-  
- Because the entire attribute string is appended to the \<MAP> tag, multiple attributes should be separated with a space.  
-  
- The <xref:System.Web.UI.DataVisualization.Charting.Title.MapAreaAttributes%2A> property can be used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.Title.Url%2A> property to specify map area attributes, for example, Target= _Blank, as well as client-side event handlers, for example, OnClick="MyEvent()".  
-  
- Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. Its default value is `true`.  
-  
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
-  
- Special keywords may be used when setting this property; each keyword will be replaced with some type of data from the applicable chart element. Refer to the following table for a listing of all available keywords:  
-  
+If you set the <xref:System.Web.UI.DataVisualization.Charting.Title.MapAreaAttributes%2A> property, a client-side image map will automatically be created. A map area will also be created, with its attribute string appended to the \<MAP> tag that corresponds to the chart object for which this property is being set.  
+ 
+Because the entire attribute string is appended to the \<MAP> tag, multiple attributes should be separated with a space.  
+ 
+The <xref:System.Web.UI.DataVisualization.Charting.Title.MapAreaAttributes%2A> property can be used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.Title.Url%2A> property to specify map area attributes, for example, Target= _Blank, as well as client-side event handlers, for example, OnClick="MyEvent()".  
+ 
+Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. Its default value is `true`.  
+ 
+**Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ 
+Special keywords may be used when setting this property; each keyword will be replaced with some type of data from the applicable chart element. Refer to the following table for a listing of all available keywords:  
+ 
 |Keyword|Replaced by|  
 |-------------|-----------------|  
 |#VALX|X-value of the data point.|  
@@ -968,9 +968,9 @@
 |#PERCENT|Percentage of the data point Y-value.|  
 |#TOTAL|Total of all Y-values in the series.|  
 |#LEGENDTEXT|Legend text.|  
-  
- To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
-  
+ 
+To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1003,14 +1003,14 @@
         <value>A <see langword="string" /> value that represents the unique name of the title object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of a title object must be unique; otherwise an exception will be thrown.  
-  
- This property can be used as the indexer when you retrieve a <xref:System.Web.UI.DataVisualization.Charting.Title> object from the <xref:System.Web.UI.DataVisualization.Charting.TitleCollection> object.  
-  
- If this property is set to a zero-length string, an exception will be thrown.  
-  
+The name of a title object must be unique; otherwise an exception will be thrown.  
+ 
+This property can be used as the indexer when you retrieve a <xref:System.Web.UI.DataVisualization.Charting.Title> object from the <xref:System.Web.UI.DataVisualization.Charting.TitleCollection> object.  
+ 
+If this property is set to a zero-length string, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1046,12 +1046,12 @@
         <value>An <see cref="T:System.Web.UI.DataVisualization.Charting.ElementPosition" /> value that represents the position of the title. The default value is <see cref="P:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property is automatic (that is, Title.Position.Auto = `true`) the title position is calculated automatically by the <xref:System.Web.UI.DataVisualization.Charting.Chart> control, taking into account the <xref:System.Web.UI.DataVisualization.Charting.Title.Docking%2A>, <xref:System.Web.UI.DataVisualization.Charting.Title.Alignment%2A> and <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property settings.  
-  
- If it is not automatic, the <xref:System.Web.UI.DataVisualization.Charting.Title.Docking%2A>, <xref:System.Web.UI.DataVisualization.Charting.Title.DockedToChartArea%2A> and <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> properties are ignored, and the title position is solely determined by the value of the returned <xref:System.Web.UI.DataVisualization.Charting.ElementPosition> object.  
-  
+If the <xref:System.Web.UI.DataVisualization.Charting.Title.Position%2A> property is automatic (that is, Title.Position.Auto = `true`) the title position is calculated automatically by the <xref:System.Web.UI.DataVisualization.Charting.Chart> control, taking into account the <xref:System.Web.UI.DataVisualization.Charting.Title.Docking%2A>, <xref:System.Web.UI.DataVisualization.Charting.Title.Alignment%2A> and <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> property settings.  
+ 
+If it is not automatic, the <xref:System.Web.UI.DataVisualization.Charting.Title.Docking%2A>, <xref:System.Web.UI.DataVisualization.Charting.Title.DockedToChartArea%2A> and <xref:System.Web.UI.DataVisualization.Charting.Title.IsDockedInsideChartArea%2A> properties are ignored, and the title position is solely determined by the value of the returned <xref:System.Web.UI.DataVisualization.Charting.ElementPosition> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1116,14 +1116,14 @@
         <value>A <see cref="T:System.Drawing.Color" /> value for the title. The default color is <see cref="P:System.Drawing.Color.Black" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be set to any valid ARGB (alpha, red, green, blue) value.  
-  
- The alpha value can be used to achieve a "realistic" shadowing effect; try a color value of "128,0,0,0" for shadows.  
-  
- To implement a shadow, set the <xref:System.Web.UI.DataVisualization.Charting.Title.ShadowOffset%2A> property to a value other than zero (0).  
-  
+This property can be set to any valid ARGB (alpha, red, green, blue) value.  
+ 
+The alpha value can be used to achieve a "realistic" shadowing effect; try a color value of "128,0,0,0" for shadows.  
+ 
+To implement a shadow, set the <xref:System.Web.UI.DataVisualization.Charting.Title.ShadowOffset%2A> property to a value other than zero (0).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1159,10 +1159,10 @@
         <value>An <see langword="integer" /> value that represents the shadow offset, in pixels, of the title.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To implement shadowing, set this property to a value other than zero (0). A positive value will result in a shadow that shifts down and to the right; a negative value will result in a shadow that shifts up and to the left.  
-  
+To implement shadowing, set this property to a value other than zero (0). A positive value will result in a shadow that shifts down and to the right; a negative value will result in a shadow that shifts up and to the left.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1265,10 +1265,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.TextStyle" /> enumeration value that determines the style of the text for the title. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.TextStyle.Default" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are five possible styles for title text: <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, and <xref:System.Web.UI.DataVisualization.Charting.TextStyle>. Refer to the table below for a summary of these styles:  
-  
+There are five possible styles for title text: <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, and <xref:System.Web.UI.DataVisualization.Charting.TextStyle>. Refer to the table below for a summary of these styles:  
+ 
 |Style|Description|  
 |-----------|-----------------|  
 |Default|Text is displayed using the desired font and color, with no additional effects.|  
@@ -1276,7 +1276,7 @@
 |Emboss|Text is displayed using the desired font and color but drawn with an embossing effect.|  
 |Embed|Text is displayed using the desired font and color but drawn with an embedding effect.|  
 |Frame|Text is displayed using the desired font and color but drawn as an outline of the text, that is, with no fill.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1309,14 +1309,14 @@
         <value>A <see langword="string" /> value that represents the tooltip for the title.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set the <xref:System.Web.UI.DataVisualization.Charting.Title.ToolTip%2A> property, a client-side image map will automatically be created. A map area will also be created with its Title attribute set to the specified tooltip string. The map area will use the dimensions that correspond to the title.  
-  
- Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
-  
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
-  
+If you set the <xref:System.Web.UI.DataVisualization.Charting.Title.ToolTip%2A> property, a client-side image map will automatically be created. A map area will also be created with its Title attribute set to the specified tooltip string. The map area will use the dimensions that correspond to the title.  
+ 
+Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
+ 
+**Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1352,20 +1352,20 @@
         <value>A <see langword="string" /> value that represents the target URL of the hyperlink for the title. The default value is a zero-length string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set this property, a client-side image map will be automatically created. A map area will also be created with its HREF attribute set to the specified anchor or URL.  
-  
- Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
-  
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
-  
- Attributes of the map area(s), for example, TARGET=_Blank, can be specified by using the <xref:System.Web.UI.DataVisualization.Charting.Title.MapAreaAttributes%2A> property.  
-  
- The <xref:System.Web.UI.DataVisualization.Charting.Title.Url%2A> property allows you to set special keywords to display different types of chart-related data.  
-  
- To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
-  
+If you set this property, a client-side image map will be automatically created. A map area will also be created with its HREF attribute set to the specified anchor or URL.  
+ 
+Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
+ 
+**Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ 
+Attributes of the map area(s), for example, TARGET=_Blank, can be specified by using the <xref:System.Web.UI.DataVisualization.Charting.Title.MapAreaAttributes%2A> property.  
+ 
+The <xref:System.Web.UI.DataVisualization.Charting.Title.Url%2A> property allows you to set special keywords to display different types of chart-related data.  
+ 
+To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1396,10 +1396,10 @@
           <see langword="true" /> if the title visible; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Example  
-  
+Example  
+ 
  ]]></format>
         </remarks>
       </Docs>

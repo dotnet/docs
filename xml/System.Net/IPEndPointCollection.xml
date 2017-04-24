@@ -18,14 +18,14 @@
     <summary>Represents a collection used to store network endpoints as <see cref="T:System.Net.IPEndPoint" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPEndPointCollection> class is derived from the <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> class.  
-  
- The <xref:System.Net.IPEndPoint> class contains the host and local or remote port information needed by an application to connect to a service on a host. By combining the host's IP address and port number of a service, the <xref:System.Net.IPEndPoint> class forms a connection point to a service.  
-  
- The <xref:System.Net.IPEndPointCollection> class is used by classes in the <xref:System.Net.PeerToPeer?displayProperty=fullName> namespace.  
-  
+The <xref:System.Net.IPEndPointCollection> class is derived from the <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> class.  
+ 
+The <xref:System.Net.IPEndPoint> class contains the host and local or remote port information needed by an application to connect to a service on a host. By combining the host's IP address and port number of a service, the <xref:System.Net.IPEndPoint> class forms a connection point to a service.  
+ 
+The <xref:System.Net.IPEndPointCollection> class is used by classes in the <xref:System.Net.PeerToPeer?displayProperty=fullName> namespace.  
+ 
  ]]></format>
     </remarks>
     <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
@@ -72,14 +72,14 @@
         <summary>Inserts an <see cref="T:System.Net.IPEndPoint" /> element into the <see cref="T:System.Net.IPEndPointCollection" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.IPEndPointCollection> does not accept `null` as a valid value. <xref:System.Net.IPEndPointCollection> allows duplicate elements.  
-  
- If `index` is equal to current count of items in the <xref:System.Net.IPEndPointCollection> , then the `item` is added to the end of <xref:System.Net.IPEndPointCollection>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A?displayProperty=fullName>.  
-  
+<xref:System.Net.IPEndPointCollection> does not accept `null` as a valid value. <xref:System.Net.IPEndPointCollection> allows duplicate elements.  
+ 
+If `index` is equal to current count of items in the <xref:System.Net.IPEndPointCollection> , then the `item` is added to the end of <xref:System.Net.IPEndPointCollection>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero  
@@ -113,12 +113,12 @@
         <summary>Replaces the <see cref="T:System.Net.IPEndPoint" /> element at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.IPEndPointCollection> does not accept `null` as a valid value. <xref:System.Net.IPEndPointCollection> allows duplicate elements.  
-  
- This method is an O(1) operation.  
-  
+<xref:System.Net.IPEndPointCollection> does not accept `null` as a valid value. <xref:System.Net.IPEndPointCollection> allows duplicate elements.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero  

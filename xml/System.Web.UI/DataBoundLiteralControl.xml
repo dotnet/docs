@@ -23,18 +23,18 @@
     <summary>Retains data-binding expressions and static literal text. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataBoundLiteralControl> class persists the value of its <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property to view state.  
+The <xref:System.Web.UI.DataBoundLiteralControl> class persists the value of its <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property to view state.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a class that obtains a <xref:System.Web.UI.DataBoundLiteralControl> object and displays the <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property of the object.  
-  
- [!code-csharp[SystemWebUI_DataBoundLiteralControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/CS/mydataboundliteralcontrol.cs#1)]
- [!code-vb[SystemWebUI_DataBoundLiteralControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/VB/mydataboundliteralcontrol.vb#1)]  
-  
+The following code example creates a class that obtains a <xref:System.Web.UI.DataBoundLiteralControl> object and displays the <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property of the object.  
+ 
+[!code-csharp[SystemWebUI_DataBoundLiteralControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/CS/mydataboundliteralcontrol.cs#1)]
+[!code-vb[SystemWebUI_DataBoundLiteralControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/VB/mydataboundliteralcontrol.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -202,12 +202,12 @@
         <value>A <see cref="T:System.String" /> that represents the text content of the <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of the <xref:System.Web.UI.ITextControl> interface returns the value of the <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property. The value of the <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property is persisted in the view state.  
-  
- The <xref:System.Web.UI.DataBoundLiteralControl> object implements <xref:System.Web.UI.ITextControl> but does not support the `set` method on the <xref:System.Web.UI.ITextControl.Text%2A> property. All attempts to use this method will return a <xref:System.NotSupportedException> exception.  
-  
+This implementation of the <xref:System.Web.UI.ITextControl> interface returns the value of the <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property. The value of the <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property is persisted in the view state.  
+ 
+The <xref:System.Web.UI.DataBoundLiteralControl> object implements <xref:System.Web.UI.ITextControl> but does not support the `set` method on the <xref:System.Web.UI.ITextControl.Text%2A> property. All attempts to use this method will return a <xref:System.NotSupportedException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt to set the value is made.</exception>
@@ -230,33 +230,33 @@
         <value>A <see cref="T:System.String" /> that represents the text content of the <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataBoundLiteralControl> class persists the value of its <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property to view state.  
+The <xref:System.Web.UI.DataBoundLiteralControl> class persists the value of its <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property to view state.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a custom control and uses that control from within an .aspx file to display the text of a <xref:System.Web.UI.DataBoundLiteralControl> object. The custom control obtains a <xref:System.Web.UI.DataBoundLiteralControl> object and outputs the text property in its `Render` method.  
-  
- [!code-csharp[SystemWebUI_DataBoundLiteralControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/CS/mydataboundliteralcontrol.cs#1)]
- [!code-vb[SystemWebUI_DataBoundLiteralControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/VB/mydataboundliteralcontrol.vb#1)]  
-  
- You can compile the control with the Visual Basic Compiler (vbc.exe) or C# Compiler (csc.exe). You must place the resulting .dll file in the Bin directory of the Web project, as shown in the following code example.  
-  
+The following code example creates a custom control and uses that control from within an .aspx file to display the text of a <xref:System.Web.UI.DataBoundLiteralControl> object. The custom control obtains a <xref:System.Web.UI.DataBoundLiteralControl> object and outputs the text property in its `Render` method.  
+ 
+[!code-csharp[SystemWebUI_DataBoundLiteralControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/CS/mydataboundliteralcontrol.cs#1)]
+[!code-vb[SystemWebUI_DataBoundLiteralControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/VB/mydataboundliteralcontrol.vb#1)]  
+ 
+You can compile the control with the Visual Basic Compiler (vbc.exe) or C# Compiler (csc.exe). You must place the resulting .dll file in the Bin directory of the Web project, as shown in the following code example.  
+ 
 ```vb  
 vbc /r:System.dll /r:System.Web.dll /t:library /out:myWebAppPath/bin/vb_myDataBoundLiteralControl.dll myDataBoundLiteralControl.vb  
 ```  
-  
+ 
 ```csharp  
 csc /t:library /out:myWebAppPath/bin/cs_myDataBoundLiteralControl.dll myDataBoundLiteralControl.cs  
 ```  
-  
- The following code example demonstrates how the custom control is registered and used within an .aspx file.  
-  
- <!-- TODO: review snippet reference [!code-csharp[SystemWebUI_DataBoundLiteralControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/CS/databoundform.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[SystemWebUI_DataBoundLiteralControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/VB/databoundform.aspx#2)]  -->  
-  
+ 
+The following code example demonstrates how the custom control is registered and used within an .aspx file.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[SystemWebUI_DataBoundLiteralControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/CS/databoundform.aspx#2)]  -->
+<!-- TODO: review snippet reference [!code-vb[SystemWebUI_DataBoundLiteralControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/VB/databoundform.aspx#2)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

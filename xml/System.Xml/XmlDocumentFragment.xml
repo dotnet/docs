@@ -50,10 +50,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDocumentFragment" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not instantiate an <xref:System.Xml.XmlDocumentFragment> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateDocumentFragment%2A>.  
-  
+Do not instantiate an <xref:System.Xml.XmlDocumentFragment> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateDocumentFragment%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,21 +89,21 @@
         <returns>The cloned node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `CloneNode` serves as a copy constructor for nodes. To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
+`CloneNode` serves as a copy constructor for nodes. To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
+ 
+The cloned node has no parent (<xref:System.Xml.XmlDocumentFragment.ParentNode%2A> returns `null`).  
+ 
   
- The cloned node has no parent (<xref:System.Xml.XmlDocumentFragment.ParentNode%2A> returns `null`).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows the difference between a deep and shallow clone.  
-  
- [!code-cpp[Classic WebData XmlDocumentFragment.CloneNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.CloneNode Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocumentFragment.CloneNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.CloneNode Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocumentFragment.CloneNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentFragment.CloneNode Example/VB/source.vb#1)]  
-  
+The following example shows the difference between a deep and shallow clone.  
+ 
+[!code-cpp[Classic WebData XmlDocumentFragment.CloneNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.CloneNode Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocumentFragment.CloneNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.CloneNode Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocumentFragment.CloneNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentFragment.CloneNode Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,21 +134,21 @@
         <value>The markup of the children of this node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property replaces the children of the node with the parsed contents of the given string. The parsing is done in the current namespace context.  
+Setting this property replaces the children of the node with the parsed contents of the given string. The parsing is done in the current namespace context.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the InnerXml property to set the contents of the document fragment.  
-  
- [!code-cpp[Classic WebData XmlDocumentFragment.InnerXml Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.InnerXml Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocumentFragment.InnerXml Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.InnerXml Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocumentFragment.InnerXml Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentFragment.InnerXml Example/VB/source.vb#1)]  
-  
+The following example uses the InnerXml property to set the contents of the document fragment.  
+ 
+[!code-cpp[Classic WebData XmlDocumentFragment.InnerXml Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.InnerXml Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocumentFragment.InnerXml Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.InnerXml Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocumentFragment.InnerXml Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentFragment.InnerXml Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The XML specified when setting this property is not well-formed.</exception>
@@ -261,19 +261,19 @@
         <value>The <see langword="XmlDocument" /> to which this node belongs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When adding nodes to the current node, use the `XmlDocument` returned by the `OwnerDocument` property to create the node.  
+When adding nodes to the current node, use the `XmlDocument` returned by the `OwnerDocument` property to create the node.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example adds a new node to the document fragment.  
-  
- [!code-cpp[Classic WebData XmlDocumentFragment.OwnerDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.OwnerDocument Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocumentFragment.OwnerDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.OwnerDocument Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocumentFragment.OwnerDocument Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentFragment.OwnerDocument Example/VB/source.vb#1)]  
-  
+The following example adds a new node to the document fragment.  
+ 
+[!code-cpp[Classic WebData XmlDocumentFragment.OwnerDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.OwnerDocument Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocumentFragment.OwnerDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocumentFragment.OwnerDocument Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocumentFragment.OwnerDocument Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocumentFragment.OwnerDocument Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <summary>Saves all the children of the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>

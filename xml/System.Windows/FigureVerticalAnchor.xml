@@ -13,22 +13,22 @@
     <summary>Describes the point of reference of a figure in the vertical direction.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The term **content**, as it pertains to the members below, refers to the page minus the page padding or in other words the content is everything inside of the page padding.  
+The term **content**, as it pertains to the members below, refers to the page minus the page padding or in other words the content is everything inside of the page padding.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Figure.VerticalAnchor%2A> attribute of a <xref:System.Windows.Documents.Figure> element.  
-  
- [!code-xml[FloaterFigureSnippets#_FigurePropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_figurepropsxaml)]  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Figure.VerticalAnchor%2A> property programmatically.  
-  
- [!code-csharp[FloaterFigureSnippets#_FigureProps](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml.cs#_figureprops)]
- [!code-vb[FloaterFigureSnippets#_FigureProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FloaterFigureSnippets/visualbasic/window1.xaml.vb#_figureprops)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Figure.VerticalAnchor%2A> attribute of a <xref:System.Windows.Documents.Figure> element.  
+ 
+[!code-xml[FloaterFigureSnippets#_FigurePropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_figurepropsxaml)]  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Figure.VerticalAnchor%2A> property programmatically.  
+ 
+[!code-csharp[FloaterFigureSnippets#_FigureProps](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml.cs#_figureprops)]
+[!code-vb[FloaterFigureSnippets#_FigureProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FloaterFigureSnippets/visualbasic/window1.xaml.vb#_figureprops)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

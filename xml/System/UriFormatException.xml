@@ -24,15 +24,15 @@
     <summary>The exception that is thrown when an invalid Uniform Resource Identifier (URI) is detected.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriFormatException> is thrown by the Uri class constructor if the supplied URI could not be correctly parsed. The format for a valid URI is defined in RFC 2396.  
-  
- The text of the <xref:System.Exception.Message%2A> property indicates the reason that the exception was thrown.  
-  
+The <xref:System.UriFormatException> is thrown by the Uri class constructor if the supplied URI could not be correctly parsed. The format for a valid URI is defined in RFC 2396.  
+ 
+The text of the <xref:System.Exception.Message%2A> property indicates the reason that the exception was thrown.  
+ 
 > [!NOTE]
 >  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the , but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.FormatException> instead.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriFormatException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes a new instance of the <xref:System.UriFormatException> class with all fields set to `null`.  
-  
+The default constructor initializes a new instance of the <xref:System.UriFormatException> class with all fields set to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriFormatException" /> class with the specified message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The UriFormatException constructor initializes the <xref:System.UriFormatException> instance with the <xref:System.Exception.Message%2A> property set to the value of `textString`.  
-  
+The UriFormatException constructor initializes the <xref:System.UriFormatException> instance with the <xref:System.Exception.Message%2A> property set to the value of `textString`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriFormatException" /> class from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> instances.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.UriFormatException> class.  
-  
+This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.UriFormatException> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,17 +165,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriFormatException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.UriFormatException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.UriFormatException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

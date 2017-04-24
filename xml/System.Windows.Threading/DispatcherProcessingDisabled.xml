@@ -18,30 +18,30 @@
     <summary>Represents the Dispatcher when it is in a disable state and provides a means to re-enable dispatcher processing.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A> returns a <xref:System.Windows.Threading.DispatcherProcessingDisabled> object when it is called.  
-  
- Disabling dispatcher processing is an advanced method that is intended to eliminate the chance of unrelated reentrancy.  
-  
- The effects of disabling processing are as follows:  
-  
+<xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A> returns a <xref:System.Windows.Threading.DispatcherProcessingDisabled> object when it is called.  
+ 
+Disabling dispatcher processing is an advanced method that is intended to eliminate the chance of unrelated reentrancy.  
+ 
+The effects of disabling processing are as follows:  
+ 
 -   [!INCLUDE[TLA2#tla_clr#initcap](~/includes/tla2sharptla-clrsharpinitcap-md.md)] locks will not pump messages internally.  
-  
+ 
 -   <xref:System.Windows.Threading.DispatcherFrame> objects are not allowed to be pushed.  
-  
+ 
 -   Message processing is not permitted.  
+ 
+Calling <xref:System.Windows.Threading.DispatcherProcessingDisabled.Dispose%2A> on the <xref:System.Windows.Threading.DispatcherProcessingDisabled> object will re-enable dispatcher processing.  
+ 
   
- Calling <xref:System.Windows.Threading.DispatcherProcessingDisabled.Dispose%2A> on the <xref:System.Windows.Threading.DispatcherProcessingDisabled> object will re-enable dispatcher processing.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to disable dispatcher processing and re-enable dispatcher processing.  <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A> is called in a **using** statement.  <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A> returns a <xref:System.Windows.Threading.DispatcherProcessingDisabled> structure which is used as the object to be disposed when the **using** block finishes.  Calling <xref:System.Windows.Threading.DispatcherProcessingDisabled.Dispose%2A> on the <xref:System.Windows.Threading.DispatcherProcessingDisabled> structure re-enables dispatcher processing.  
-  
- [!code-csharp[DispatcherSnippets#DispatcherDisableProcessing](~/samples/snippets/csharp/VS_Snippets_Wpf/DispatcherSnippets/CSharp/Window1.xaml.cs#dispatcherdisableprocessing)]
- [!code-vb[DispatcherSnippets#DispatcherDisableProcessing](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DispatcherSnippets/visualbasic/window1.xaml.vb#dispatcherdisableprocessing)]  
-  
+The following example shows how to disable dispatcher processing and re-enable dispatcher processing.  <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A> is called in a **using** statement.  <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A> returns a <xref:System.Windows.Threading.DispatcherProcessingDisabled> structure which is used as the object to be disposed when the **using** block finishes.  Calling <xref:System.Windows.Threading.DispatcherProcessingDisabled.Dispose%2A> on the <xref:System.Windows.Threading.DispatcherProcessingDisabled> structure re-enables dispatcher processing.  
+ 
+[!code-csharp[DispatcherSnippets#DispatcherDisableProcessing](~/samples/snippets/csharp/VS_Snippets_Wpf/DispatcherSnippets/CSharp/Window1.xaml.cs#dispatcherdisableprocessing)]
+[!code-vb[DispatcherSnippets#DispatcherDisableProcessing](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DispatcherSnippets/visualbasic/window1.xaml.vb#dispatcherdisableprocessing)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,18 +63,18 @@
         <summary>Re-enables dispatcher processing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Disabling dispatcher processing is an advanced method that is intended to eliminate the chance of unrelated reentrancy.  
-  
- The effects of disabling processing are as follows:  
-  
+Disabling dispatcher processing is an advanced method that is intended to eliminate the chance of unrelated reentrancy.  
+ 
+The effects of disabling processing are as follows:  
+ 
 -   [!INCLUDE[TLA2#tla_clr#initcap](~/includes/tla2sharptla-clrsharpinitcap-md.md)] locks will not pump messages internally.  
-  
+ 
 -   <xref:System.Windows.Threading.DispatcherFrame> objects are not allowed to be pushed.  
-  
+ 
 -   Message processing is not permitted.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -24,18 +24,18 @@
     <summary>Represents an attribute of a toolbox item.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ToolboxItemAttribute> class provides a way to specify an attribute for a <xref:System.Drawing.Design.ToolboxItem>. In addition to what the <xref:System.Attribute> class provides, this class of object stores the type of the toolbox item.  
+The <xref:System.ComponentModel.ToolboxItemAttribute> class provides a way to specify an attribute for a <xref:System.Drawing.Design.ToolboxItem>. In addition to what the <xref:System.Attribute> class provides, this class of object stores the type of the toolbox item.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.ComponentModel.ToolboxItemAttribute> with the <xref:System.Drawing.Design.ToolboxItem> class as a base class for a custom toolbox item implementation. This code example is part of a larger example provided for the <xref:System.Drawing.Design.ToolboxItem> class.  
-  
- [!code-csharp[System.Drawing.Design.ToolboxItem#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Design.ToolboxItem/CS/Form1.cs#2)]
- [!code-vb[System.Drawing.Design.ToolboxItem#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Design.ToolboxItem/VB/Form1.vb#2)]  
-  
+The following code example demonstrates the use of <xref:System.ComponentModel.ToolboxItemAttribute> with the <xref:System.Drawing.Design.ToolboxItem> class as a base class for a custom toolbox item implementation. This code example is part of a larger example provided for the <xref:System.Drawing.Design.ToolboxItem> class.  
+ 
+[!code-csharp[System.Drawing.Design.ToolboxItem#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Design.ToolboxItem/CS/Form1.cs#2)]
+[!code-vb[System.Drawing.Design.ToolboxItem#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Design.ToolboxItem/VB/Form1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemAttribute" /> class and specifies whether to use default initialization values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.ComponentModel.ToolboxItemAttribute.ToolboxItemType%2A> property is set to <xref:System.Drawing.Design.ToolboxItem>.  
-  
+By default, the <xref:System.ComponentModel.ToolboxItemAttribute.ToolboxItemType%2A> property is set to <xref:System.Drawing.Design.ToolboxItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemAttribute" /> class using the specified name of the type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor expects the `toolboxItemTypeName` parameter to be in the form \<*name of the item type*>*,* \<*name of the assembly*> (for example, System.Drawing.Design.ToolboxItem, System.Drawing.Design).  
-  
+This constructor expects the `toolboxItemTypeName` parameter to be in the form \<*name of the item type*>*,* \<*name of the assembly*> (for example, System.Drawing.Design.ToolboxItem, System.Drawing.Design).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemAttribute" /> class and sets the type to the default, <see cref="T:System.Drawing.Design.ToolboxItem" />. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.ComponentModel.ToolboxItemAttribute.ToolboxItemType%2A> property is set to <xref:System.Drawing.Design.ToolboxItem>.  
-  
+By default, the <xref:System.ComponentModel.ToolboxItemAttribute.ToolboxItemType%2A> property is set to <xref:System.Drawing.Design.ToolboxItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
           <see langword="true" /> if the current value of the attribute is the default; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this value returns `false` from the method defined in the <xref:System.Attribute> class.  
-  
+By default, this value returns `false` from the method defined in the <xref:System.Attribute> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

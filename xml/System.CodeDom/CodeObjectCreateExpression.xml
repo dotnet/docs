@@ -22,21 +22,21 @@
     <summary>Represents an expression that creates a new instance of a type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeObjectCreateExpression> can be used to represent an expression that creates an instance of a type.  
+<xref:System.CodeDom.CodeObjectCreateExpression> can be used to represent an expression that creates an instance of a type.  
+ 
+The <xref:System.CodeDom.CodeObjectCreateExpression.CreateType%2A> property specifies the data type to create a new instance of. The <xref:System.CodeDom.CodeObjectCreateExpression.Parameters%2A> property specifies the parameters to pass to the constructor of the type to create a new instance of.  
+ 
   
- The <xref:System.CodeDom.CodeObjectCreateExpression.CreateType%2A> property specifies the data type to create a new instance of. The <xref:System.CodeDom.CodeObjectCreateExpression.Parameters%2A> property specifies the parameters to pass to the constructor of the type to create a new instance of.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of <xref:System.CodeDom.CodeObjectCreateExpression> to create a new instance of the System.DateTime class using the default constructor.  
-  
- [!code-cpp[CodeMultiExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMultiExample/CPP/codemultiexample.cpp#5)]
- [!code-csharp[CodeMultiExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMultiExample/CS/codemultiexample.cs#5)]
- [!code-vb[CodeMultiExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMultiExample/VB/codemultiexample.vb#5)]  
-  
+The following example demonstrates use of <xref:System.CodeDom.CodeObjectCreateExpression> to create a new instance of the System.DateTime class using the default constructor.  
+ 
+[!code-cpp[CodeMultiExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMultiExample/CPP/codemultiexample.cpp#5)]
+[!code-csharp[CodeMultiExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMultiExample/CS/codemultiexample.cs#5)]
+[!code-vb[CodeMultiExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMultiExample/VB/codemultiexample.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

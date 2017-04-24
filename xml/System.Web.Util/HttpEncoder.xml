@@ -19,34 +19,34 @@
     <summary>Provides encoding and decoding logic.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class contains encoding and decoding logic that is used by methods in classes such as <xref:System.Web.HttpUtility>, <xref:System.Web.HttpServerUtility>, and <xref:System.Net.HttpResponseHeader>.  
-  
- You can inherit from the <xref:System.Web.Util.HttpEncoder> class and override its behavior to customize the default encoding and decoding behavior of ASP.NET. You then set the <xref:System.Web.Configuration.HttpRuntimeSection.EncoderType%2A> property of the <xref:System.Web.Configuration.HttpRuntimeSection> class to configure your custom class.  
-  
- A custom class for encoding and decoding that derives from <xref:System.Web.Util.HttpEncoder> can override the built-in ASP.NET encoding and decoding behavior or change only selected aspects of it.  
-  
- You can configure the custom encoding type for in ASP.NET to replace or supplement the following encoding behavior:  
-  
+The class contains encoding and decoding logic that is used by methods in classes such as <xref:System.Web.HttpUtility>, <xref:System.Web.HttpServerUtility>, and <xref:System.Net.HttpResponseHeader>.  
+ 
+You can inherit from the <xref:System.Web.Util.HttpEncoder> class and override its behavior to customize the default encoding and decoding behavior of ASP.NET. You then set the <xref:System.Web.Configuration.HttpRuntimeSection.EncoderType%2A> property of the <xref:System.Web.Configuration.HttpRuntimeSection> class to configure your custom class.  
+ 
+A custom class for encoding and decoding that derives from <xref:System.Web.Util.HttpEncoder> can override the built-in ASP.NET encoding and decoding behavior or change only selected aspects of it.  
+ 
+You can configure the custom encoding type for in ASP.NET to replace or supplement the following encoding behavior:  
+ 
 -   HTML encoding  
-  
+ 
 -   HTML attribute encoding  
-  
+ 
 -   URL encoding  
-  
+ 
 -   URL path encoding  
-  
+ 
 -   HTTP header name and header value encoding  
-  
- By default, ASP.NET applications are configured to use the <xref:System.Web.Security.AntiXss.AntiXssEncoder> type for all output encoding.  
-  
- The following example from an application-level Web.config file shows how the <xref:System.Web.Security.AntiXss.AntiXssEncoder> type is set for an ASP.NET application:  
-  
- `<httpRuntime requestValidationMode="4.5" encoderType="System.Web.Security.AntiXss.AntiXssEncoder, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>`  
-  
- The configuration setting in the example sets the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class to perform all output encoding in the application. For more information, see the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class overview.  
-  
+ 
+By default, ASP.NET applications are configured to use the <xref:System.Web.Security.AntiXss.AntiXssEncoder> type for all output encoding.  
+ 
+The following example from an application-level Web.config file shows how the <xref:System.Web.Security.AntiXss.AntiXssEncoder> type is set for an ASP.NET application:  
+ 
+`<httpRuntime requestValidationMode="4.5" encoderType="System.Web.Security.AntiXss.AntiXssEncoder, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>`  
+ 
+The configuration setting in the example sets the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class to perform all output encoding in the application. For more information, see the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class overview.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -100,12 +100,12 @@
         <value>A reference to the encoder/decoder type that will be used.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a derived <xref:System.Web.Util.HttpEncoder> type is specified in the configuration file, the <xref:System.Web.Util.HttpEncoder.Current%2A> property returns a reference to the custom type. However, if no custom encoder is used, the property returns a reference to the default ASP.NET <xref:System.Web.Util.HttpEncoder> instance.  
-  
- The <xref:System.Web.Util.HttpEncoder.Current%2A> property is not thread-safe. Set this property only in the application's `Application_Start` method, because `Application_Start` runs on a single thread.  
-  
+If a derived <xref:System.Web.Util.HttpEncoder> type is specified in the configuration file, the <xref:System.Web.Util.HttpEncoder.Current%2A> property returns a reference to the custom type. However, if no custom encoder is used, the property returns a reference to the default ASP.NET <xref:System.Web.Util.HttpEncoder> instance.  
+ 
+The <xref:System.Web.Util.HttpEncoder.Current%2A> property is not thread-safe. Set this property only in the application's `Application_Start` method, because `Application_Start` runs on a single thread.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The encoder instance that is being assigned to this property is <see langword="null" />.</exception>
@@ -133,10 +133,10 @@
         <value>A reference to the default encoder.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A common encoding issue is that the default ASP.NET <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> behavior converts spaces into the "+" character. Historically, the "+" character has been an Internet convention for encoding space characters in a URL into a more human-readable manner. However, according to standards, the space character is supposed to be encoded as "%20" and instead of as the "+" character. ASP.NET lets you implement a more standards compliant encoding algorithm.  
-  
+A common encoding issue is that the default ASP.NET <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> behavior converts spaces into the "+" character. Historically, the "+" character has been an Internet convention for encoding space characters in a URL into a more human-readable manner. However, according to standards, the space character is supposed to be encoded as "%20" and instead of as the "+" character. ASP.NET lets you implement a more standards compliant encoding algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,25 +172,25 @@
         <summary>Encodes a header name and value into a string that can be used as an HTTP header.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Util.HttpEncoder.HeaderNameValueEncode%2A> method takes input strings from the `headerName` and `headerValue` parameters and encodes them. The encoded values are returned as out parameters.  
-  
- The <xref:System.Web.Util.HttpEncoder.HeaderNameValueEncode%2A> method uses the following logic to encode header names and values:  
-  
+The <xref:System.Web.Util.HttpEncoder.HeaderNameValueEncode%2A> method takes input strings from the `headerName` and `headerValue` parameters and encodes them. The encoded values are returned as out parameters.  
+ 
+The <xref:System.Web.Util.HttpEncoder.HeaderNameValueEncode%2A> method uses the following logic to encode header names and values:  
+ 
 -   All characters whose Unicode value is less than ASCII character 32, except ASCII character 9, are URL-encoded into a format of `%NN` where the `N` characters represent hexadecimal values.  
-  
+ 
 -   ASCII character 9 (the horizontal tab character) is not URL-encoded.  
-  
+ 
 -   ASCII character 127 is encoded as `%7F`.  
-  
+ 
 -   All other characters are not encoded.  
-  
-    > [!NOTE]
-    >  Although this method can be used for Unicode values, it is typically used for values in the ASCII range.  
-  
- The default implementation of the <xref:System.Web.Util.HttpEncoder.HeaderNameValueEncode%2A> method returns the value of `headerValue` in `encodedHeaderValue` if `headerValue` is `null` or is an empty string. Similarly, the default implementation returns the value of `headerName` in `encodedHeaderName` if `headerName` is `null` or is an empty string.  
-  
+ 
+   > [!NOTE]
+   >  Although this method can be used for Unicode values, it is typically used for values in the ASCII range.  
+ 
+The default implementation of the <xref:System.Web.Util.HttpEncoder.HeaderNameValueEncode%2A> method returns the value of `headerValue` in `encodedHeaderValue` if `headerValue` is `null` or is an empty string. Similarly, the default implementation returns the value of `headerName` in `encodedHeaderName` if `headerName` is `null` or is an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,12 +222,12 @@
         <summary>Encodes an incoming value into a string that can be inserted into an HTML attribute that is delimited by using single or double quotation marks.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Util.HttpEncoder.HtmlAttributeEncode%2A> method encodes characters by using the standard HTML entities. For example, the `<` (left angle bracket) is encoded as `&lt;` and the `\` (backslash) is encoded as `&#92;`.  
-  
- It is safe to use <xref:System.Web.Util.HttpEncoder.HtmlAttributeEncode%2A> within single-quoted and double-quoted attributes. The values must be quoted.  
-  
+The <xref:System.Web.Util.HttpEncoder.HtmlAttributeEncode%2A> method encodes characters by using the standard HTML entities. For example, the `<` (left angle bracket) is encoded as `&lt;` and the `\` (backslash) is encoded as `&#92;`.  
+ 
+It is safe to use <xref:System.Web.Util.HttpEncoder.HtmlAttributeEncode%2A> within single-quoted and double-quoted attributes. The values must be quoted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -261,16 +261,16 @@
         <summary>Decodes a value from an HTML-encoded string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table lists the character sequences that the ASP.NET decoding logic can decode.  
-  
+The following table lists the character sequences that the ASP.NET decoding logic can decode.  
+ 
 |Character sequence|Rule|  
 |------------------------|----------|  
 |`&#NNN;` (decimal codes for ASCII characters).|Decoded as the specified ASCII character. The character sequence starts at the first digit after the # character and finishes at the semicolon.|  
 |`&#xZZ;` (hexadecimal codes for ASCII characters).|Decoded as the specified ASCII character. The encoded form specifies the character by using hexadecimal characters instead of a decimal value. The character sequence starts at the first digit after the # character and finishes at the semicolon.|  
 |Named HTML entities.|Decoded as the equivalent ASCII character.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -304,10 +304,10 @@
         <summary>Encodes a string into an HTML-encoded string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table lists the character sequences that the ASP.NET encoding logic can decode.  
-  
+The following table lists the character sequences that the ASP.NET encoding logic can decode.  
+ 
 |Character|Encoded as|  
 |---------------|----------------|  
 |`<` (left angle bracket)|`&lt;`|  
@@ -316,9 +316,9 @@
 |`&` (ampersand)|`&amp;`|  
 |`\` (backslash)|`&#92;`|  
 |ASCII characters from 160 to 255|`&#NNN;`, where `NNN` is the three-digit decimal character code|  
-  
- If you override the <xref:System.Web.Util.HttpEncoder.HtmlEncode%2A> method, you must produce output that is also safe within double-quoted or single-quoted HTML attributes. This accommodates parsing by the Razor engine, where markup and code can be combined, such as \<tag attr="@value">. In addition, the @ operator is not context-aware when processed by the Razor engine, therefore it calls <xref:System.Web.Util.HttpEncoder.HtmlEncode%2A> rather than <xref:System.Web.Util.HttpEncoder.HtmlAttributeEncode%2A>.  
-  
+ 
+If you override the <xref:System.Web.Util.HttpEncoder.HtmlEncode%2A> method, you must produce output that is also safe within double-quoted or single-quoted HTML attributes. This accommodates parsing by the Razor engine, where markup and code can be combined, such as \<tag attr="@value">. In addition, the @ operator is not context-aware when processed by the Razor engine, therefore it calls <xref:System.Web.Util.HttpEncoder.HtmlEncode%2A> rather than <xref:System.Web.Util.HttpEncoder.HtmlAttributeEncode%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -346,10 +346,10 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- URL encoding makes sure that all browsers correctly transmit text in URL strings. Characters such as a question mark (?), ampersand (&), slash (/), and spaces might be truncated or corrupted by some browsers. Therefore, these characters must be encoded.  
-  
+URL encoding makes sure that all browsers correctly transmit text in URL strings. Characters such as a question mark (?), ampersand (&), slash (/), and spaces might be truncated or corrupted by some browsers. Therefore, these characters must be encoded.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,12 +384,12 @@
         <returns>An array of encoded characters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> method is called by several URL encoding methods in the <xref:System.Web.HttpUtility> class.  
-  
- The <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> method URL-encodes any character that is not in the set of ASCII characters that is considered to be URL-safe. Spaces are encoded as the ASCII "`+"` character. URL-safe ASCII characters include the ASCI characters (A to Z and a to z), numerals (0 to 9), and some punctuation marks. The following table lists the punctuation marks that are considered URL-safe ASCII characters.  
-  
+The <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> method is called by several URL encoding methods in the <xref:System.Web.HttpUtility> class.  
+ 
+The <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> method URL-encodes any character that is not in the set of ASCII characters that is considered to be URL-safe. Spaces are encoded as the ASCII "`+"` character. URL-safe ASCII characters include the ASCI characters (A to Z and a to z), numerals (0 to 9), and some punctuation marks. The following table lists the punctuation marks that are considered URL-safe ASCII characters.  
+ 
 |Character|Description|  
 |---------------|-----------------|  
 |-|Hyphen|  
@@ -399,7 +399,7 @@
 |*|Asterisk (star)|  
 |(|Opening parenthesis|  
 |)|Closing parenthesis|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -438,16 +438,16 @@
         <returns>A URL-encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Util.HttpEncoder.UrlPathEncode%2A> method is called by the <xref:System.Web.HttpUtility.UrlPathEncode%2A> method. The <xref:System.Web.HttpUtility.UrlPathEncode%2A> method performs the following steps:  
-  
+The <xref:System.Web.Util.HttpEncoder.UrlPathEncode%2A> method is called by the <xref:System.Web.HttpUtility.UrlPathEncode%2A> method. The <xref:System.Web.HttpUtility.UrlPathEncode%2A> method performs the following steps:  
+ 
 -   Applies the encoding logic of the <xref:System.Web.Util.HttpEncoder.UrlPathEncode%2A> method to only the path part of the URL (which excludes the query string). The method assumes that the URL is encoded as a UTF-8 string.  
-  
+ 
 -   Encodes non-spaces so that only a subset of the first 128 ASCII characters is used in the resulting encoded string. Any characters at Unicode value 128 and greater, or 32 and less, are URL-encoded.  
-  
+ 
 -   Encodes spaces as %20.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

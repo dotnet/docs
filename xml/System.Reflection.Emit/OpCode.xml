@@ -174,10 +174,10 @@
         <value>Read-only. The name of the IL instruction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.Emit.OpCode.Value%2A> property returns the numeric value of the IL instruction.  
-  
+The <xref:System.Reflection.Emit.OpCode.Value%2A> property returns the numeric value of the IL instruction.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,41 +215,41 @@
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.OpCode.Equals%28System.Reflection.Emit.OpCode%2CSystem.Reflection.Emit.OpCode%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.OpCode a, System.Reflection.Emit.OpCode b);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.OpCode a, valuetype System.Reflection.Emit.OpCode b) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.OpCode.op_Inequality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="a" Type="System.Reflection.Emit.OpCode" />
-        <Parameter Name="b" Type="System.Reflection.Emit.OpCode" />
-      </Parameters>
-      <Docs>
-        <param name="a">The <see cref="T:System.Reflection.Emit.OpCode" /> to compare to <c>b</c>.</param>
-        <param name="b">The <see cref="T:System.Reflection.Emit.OpCode" /> to compare to <c>a</c>.</param>
-        <summary>Indicates whether two <see cref="T:System.Reflection.Emit.OpCode" /> structures are not equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.OpCode a, System.Reflection.Emit.OpCode b);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.OpCode a, valuetype System.Reflection.Emit.OpCode b) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.OpCode.op_Inequality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Reflection.Primitives</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>mscorlib</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="a" Type="System.Reflection.Emit.OpCode" />
+       <Parameter Name="b" Type="System.Reflection.Emit.OpCode" />
+     </Parameters>
+     <Docs>
+       <param name="a">The <see cref="T:System.Reflection.Emit.OpCode" /> to compare to <c>b</c>.</param>
+       <param name="b">The <see cref="T:System.Reflection.Emit.OpCode" /> to compare to <c>a</c>.</param>
+       <summary>Indicates whether two <see cref="T:System.Reflection.Emit.OpCode" /> structures are not equal.</summary>
+       <returns>
+         <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.OpCode.Compare%28System.Reflection.Emit.OpCode%2CSystem.Reflection.Emit.OpCode%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -443,18 +443,18 @@
         <value>Read-only. The numeric value of the IL instruction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.Emit.OpCode.Name%2A> property returns the string name that corresponds to the instruction's numeric value.  
+The <xref:System.Reflection.Emit.OpCode.Name%2A> property returns the string name that corresponds to the instruction's numeric value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the property values of the <xref:System.Reflection.Emit.OpCodes.Add?displayProperty=fullName> instruction.  
-  
- [!code-csharp[System.Reflection.Emit.OpCode.Value#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.emit.opcode.value/cs/value1.cs#1)]
- [!code-vb[System.Reflection.Emit.OpCode.Value#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.emit.opcode.value/vb/value1.vb#1)]  
-  
+The following example displays the property values of the <xref:System.Reflection.Emit.OpCodes.Add?displayProperty=fullName> instruction.  
+ 
+[!code-csharp[System.Reflection.Emit.OpCode.Value#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.emit.opcode.value/cs/value1.cs#1)]
+[!code-vb[System.Reflection.Emit.OpCode.Value#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.emit.opcode.value/vb/value1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

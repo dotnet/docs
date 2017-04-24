@@ -26,22 +26,22 @@
     <summary>Data structure that describes the size of a three-dimensional object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_ResourceReferenceExpressionConverter"></a>   
 ## XAML Text Usage  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to determine if two  <xref:System.Windows.Media.Media3D.Size3D> structures are equal using the <xref:System.Windows.Media.Media3D.Size3D> static <xref:System.Windows.Media.Media3D.Size3D.Equals%2A> method.  
-  
- The following code illustrates how to check <xref:System.Windows.Media.Media3D.Size3D> structures for equality.  The <xref:System.Windows.Media.Media3D.Size3D> structures are declared and assigned values.  The <xref:System.Windows.Media.Media3D.Size3D.Equals%2A> method is then used to determine if the two structures are equal.  
-  
- [!code-csharp[3DGallery_procedural_snip#Size3DEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#size3dequalityexample_csharp)]  
-  
+This example shows how to determine if two  <xref:System.Windows.Media.Media3D.Size3D> structures are equal using the <xref:System.Windows.Media.Media3D.Size3D> static <xref:System.Windows.Media.Media3D.Size3D.Equals%2A> method.  
+ 
+The following code illustrates how to check <xref:System.Windows.Media.Media3D.Size3D> structures for equality.  The <xref:System.Windows.Media.Media3D.Size3D> structures are declared and assigned values.  The <xref:System.Windows.Media.Media3D.Size3D.Equals%2A> method is then used to determine if the two structures are equal.  
+ 
+[!code-csharp[3DGallery_procedural_snip#Size3DEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#size3dequalityexample_csharp)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
-  
+The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,18 +92,18 @@
         <value>An empty instance of a <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Media3D.Size3D> structure with <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values set to 0 is not empty.  An empty <xref:System.Windows.Media.Media3D.Size3D> structure has <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values set to negative infinity. This is the only time a <xref:System.Windows.Media.Media3D.Size3D> structure can have negative values.  
+A <xref:System.Windows.Media.Media3D.Size3D> structure with <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values set to 0 is not empty.  An empty <xref:System.Windows.Media.Media3D.Size3D> structure has <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values set to negative infinity. This is the only time a <xref:System.Windows.Media.Media3D.Size3D> structure can have negative values.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to make a <xref:System.Windows.Media.Media3D.Size3D> structure empty.  
-  
- [!code-csharp[size3dsample#Mil3dSize3DN10](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn10)]
- [!code-vb[size3dsample#Mil3dSize3DN10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn10)]  
-  
+The following example shows how to make a <xref:System.Windows.Media.Media3D.Size3D> structure empty.  
+ 
+[!code-csharp[size3dsample#Mil3dSize3DN10](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn10)]
+[!code-vb[size3dsample#Mil3dSize3DN10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,18 +132,18 @@
  <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure and is identical with this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check if an <xref:System.Object> and a <xref:System.Windows.Media.Media3D.Size3D> structure are equal.  
-  
- [!code-csharp[size3dsample#Mil3dSize3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn3)]
- [!code-vb[size3dsample#Mil3dSize3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn3)]  
-  
+The following example shows how to check if an <xref:System.Object> and a <xref:System.Windows.Media.Media3D.Size3D> structure are equal.  
+ 
+[!code-csharp[size3dsample#Mil3dSize3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn3)]
+[!code-vb[size3dsample#Mil3dSize3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
           <see langword="true" /> if instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
-  
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,17 +204,17 @@
  <see langword="true" /> if the <see cref="P:System.Windows.Media.Media3D.Size3D.X" />, <see cref="P:System.Windows.Media.Media3D.Size3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Size3D.Z" /> components of <paramref name="size1" /> and <paramref name="size2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal.  
-  
- [!code-csharp[3dgallery_procedural_snip#Size3DEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#size3dequalityexample_csharp)]  
-  
+The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal.  
+ 
+[!code-csharp[3dgallery_procedural_snip#Size3DEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#size3dequalityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,13 +237,13 @@
         <returns>A hash code for this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the hash code of a <xref:System.Windows.Media.Media3D.Size3D> structure.  
-  
- [!code-csharp[size3dsample#Mil3dSize3DN12](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn12)]
- [!code-vb[size3dsample#Mil3dSize3DN12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn12)]  
-  
+The following example shows how to get the hash code of a <xref:System.Windows.Media.Media3D.Size3D> structure.  
+ 
+[!code-csharp[size3dsample#Mil3dSize3DN12](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn12)]
+[!code-vb[size3dsample#Mil3dSize3DN12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,18 +266,18 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure is empty; otherwise, <see langword="false" />.  The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Media3D.Size3D> structure with <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values set to 0 is not empty.  An empty <xref:System.Windows.Media.Media3D.Size3D> structure has <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values set to negative infinity. This is the only time a <xref:System.Windows.Media.Media3D.Size3D> structure can have negative values.  
+A <xref:System.Windows.Media.Media3D.Size3D> structure with <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values set to 0 is not empty.  An empty <xref:System.Windows.Media.Media3D.Size3D> structure has <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values set to negative infinity. This is the only time a <xref:System.Windows.Media.Media3D.Size3D> structure can have negative values.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check if a <xref:System.Windows.Media.Media3D.Size3D> structure is empty.  
-  
- [!code-csharp[size3dsample#Mil3dSize3DN9](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn9)]
- [!code-vb[size3dsample#Mil3dSize3DN9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn9)]  
-  
+The following example shows how to check if a <xref:System.Windows.Media.Media3D.Size3D> structure is empty.  
+ 
+[!code-csharp[size3dsample#Mil3dSize3DN9](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn9)]
+[!code-vb[size3dsample#Mil3dSize3DN9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,18 +306,18 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Media.Media3D.Size3D.X" />, <see cref="P:System.Windows.Media.Media3D.Size3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Size3D.Z" /> components of <paramref name="size1" /> and <paramref name="size2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the overloaded equality operator to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal.  
-  
- [!code-csharp[size3dsample#Mil3dSize3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn4)]
- [!code-vb[size3dsample#Mil3dSize3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn4)]  
-  
+The following example shows how to use the overloaded equality operator to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal.  
+ 
+[!code-csharp[size3dsample#Mil3dSize3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn4)]
+[!code-vb[size3dsample#Mil3dSize3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -390,18 +390,18 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Media.Media3D.Size3D.X" />, <see cref="P:System.Windows.Media.Media3D.Size3D.Y" /> and <see cref="P:System.Windows.Media.Media3D.Size3D.Z" /> coordinates of <paramref name="size1" /> and <paramref name="size2" /> are different; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
+Because <xref:System.Double> values can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Media.Media3D.Size3D> instances that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the overloaded inequality operator to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are not equal.  
-  
- [!code-csharp[size3dsample#Mil3dSize3DN5](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn5)]
- [!code-vb[size3dsample#Mil3dSize3DN5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn5)]  
-  
+The following example shows how to use the overloaded inequality operator to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are not equal.  
+ 
+[!code-csharp[size3dsample#Mil3dSize3DN5](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn5)]
+[!code-vb[size3dsample#Mil3dSize3DN5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,13 +427,13 @@
         <returns>The equivalent <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to turn a string representation of a <xref:System.Windows.Media.Media3D.Size3D> into a <xref:System.Windows.Media.Media3D.Size3D> structure.  
-  
- [!code-csharp[size3dsample#Mil3dSize3DN6](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn6)]
- [!code-vb[size3dsample#Mil3dSize3DN6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn6)]  
-  
+The following example shows how to turn a string representation of a <xref:System.Windows.Media.Media3D.Size3D> into a <xref:System.Windows.Media.Media3D.Size3D> structure.  
+ 
+[!code-csharp[size3dsample#Mil3dSize3DN6](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn6)]
+[!code-vb[size3dsample#Mil3dSize3DN6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -488,18 +488,18 @@
         <returns>Returns a <see cref="T:System.String" /> containing the <see cref="P:System.Windows.Media.Media3D.Size3D.X" />, <see cref="P:System.Windows.Media.Media3D.Size3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Size3D.Z" /> values of this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.Media.Media3D.Size3D> structure is empty, the string "empty" is returned, rather than the <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values of the <xref:System.Windows.Media.Media3D.Size3D> structure.  
+If a <xref:System.Windows.Media.Media3D.Size3D> structure is empty, the string "empty" is returned, rather than the <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values of the <xref:System.Windows.Media.Media3D.Size3D> structure.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to get a string representation of a <xref:System.Windows.Media.Media3D.Size3D> structure.  
-  
- [!code-csharp[size3dsample#Mil3dSize3DN11](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn11)]
- [!code-vb[size3dsample#Mil3dSize3DN11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn11)]  
-  
+The following example shows how to get a string representation of a <xref:System.Windows.Media.Media3D.Size3D> structure.  
+ 
+[!code-csharp[size3dsample#Mil3dSize3DN11](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn11)]
+[!code-vb[size3dsample#Mil3dSize3DN11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,10 +525,10 @@
         <returns>Returns a <see cref="T:System.String" /> containing the <see cref="P:System.Windows.Media.Media3D.Size3D.X" />, <see cref="P:System.Windows.Media.Media3D.Size3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Size3D.Z" /> values of this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.Media.Media3D.Size3D> structure is empty, the string "empty" is returned, rather than the <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values of the <xref:System.Windows.Media.Media3D.Size3D> structure.  
-  
+If a <xref:System.Windows.Media.Media3D.Size3D> structure is empty, the string "empty" is returned, rather than the <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values of the <xref:System.Windows.Media.Media3D.Size3D> structure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -550,23 +550,23 @@
         <value>The <see cref="P:System.Windows.Media.Media3D.Size3D.X" /> value of this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.  The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_X"></a>   
 ## XAML Text Usage  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
-  
- [!code-csharp[size3dsample#Mil3dSize3DN2](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn2)]
- [!code-vb[size3dsample#Mil3dSize3DN2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn2)]  
-  
+The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
+ 
+[!code-csharp[size3dsample#Mil3dSize3DN2](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn2)]
+[!code-vb[size3dsample#Mil3dSize3DN2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -588,22 +588,22 @@
         <value>The <see cref="P:System.Windows.Media.Media3D.Size3D.Y" /> value of this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.  The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_Y"></a>   
 ## XAML Text Usage  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
-  
- [!code-csharp[3dgallery_procedural_snip#Size3DEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#size3dequalityexample_csharp)]  
-  
+The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
+ 
+[!code-csharp[3dgallery_procedural_snip#Size3DEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#size3dequalityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -625,22 +625,22 @@
         <value>The <see cref="P:System.Windows.Media.Media3D.Size3D.Z" /> value of this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.  The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_Z"></a>   
 ## XAML Text Usage  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
-  
- [!code-csharp[3dgallery_procedural_snip#Size3DEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#size3dequalityexample_csharp)]  
-  
+The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
+ 
+[!code-csharp[3dgallery_procedural_snip#Size3DEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#size3dequalityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

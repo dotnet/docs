@@ -20,12 +20,12 @@
     <summary>Represents the abstract base class from which all implementations of code groups must derive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Code groups are the building blocks of code access security policy. Each policy level consists of a root code group that can have child code groups. Each child code group can have their own child code groups; this behavior extends to any number of levels, forming a tree. Each code group has a membership condition that determines if a given assembly belongs to it based on the evidence for that assembly.  
-  
- Only those code groups whose membership conditions match a given assembly's evidence will be applied. If a matching code group has child code groups, then those children whose membership conditions also match the supplied evidence will likewise be applied.  
-  
+Code groups are the building blocks of code access security policy. Each policy level consists of a root code group that can have child code groups. Each child code group can have their own child code groups; this behavior extends to any number of levels, forming a tree. Each code group has a membership condition that determines if a given assembly belongs to it based on the evidence for that assembly.  
+ 
+Only those code groups whose membership conditions match a given assembly's evidence will be applied. If a matching code group has child code groups, then those children whose membership conditions also match the supplied evidence will likewise be applied.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Security.Policy.CodeGroup" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a basic code group and should be called from the constructors of custom code groups. You can add child code groups using the <xref:System.Security.Policy.CodeGroup.AddChild%2A> method.  
-  
+This constructor creates a basic code group and should be called from the constructors of custom code groups. You can add child code groups using the <xref:System.Security.Policy.CodeGroup.AddChild%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="membershipCondition" /> parameter is <see langword="null" />.</exception>
@@ -106,10 +106,10 @@
         <value>A string representation of the attributes of the policy statement for the code group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string representation is not localized.  
-  
+The string representation is not localized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,13 +132,13 @@
         <value>A list of child code groups.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order of child code groups is significant for certain code groups.  
-  
+The order of child code groups is significant for certain code groups.  
+ 
 > [!NOTE]
 >  The return value is a copy of the child code list. Do not use the returned list to add a child code group; instead, use the <xref:System.Security.Policy.CodeGroup.AddChild%2A> method.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set this property to <see langword="null" />.</exception>
@@ -164,10 +164,10 @@
         <returns>An equivalent copy of the current code group, including its membership conditions and child code groups.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method makes a deep copy of the code group, so that copies of all objects the code group contains are also made.  
-  
+This method makes a deep copy of the code group, so that copies of all objects the code group contains are also made.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,12 +195,12 @@
         <summary>When overridden in a derived class, serializes properties and internal state specific to a derived code group and adds the serialization to the specified <see cref="T:System.Security.SecurityElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Policy.CodeGroup.ToXml%2A> cannot be overridden. If you need to serialize members specific to a particular implementation of <xref:System.Security.Policy.CodeGroup>, you must override <xref:System.Security.Policy.CodeGroup.CreateXml%2A> and serialize your members there. When the code group is serialized, <xref:System.Security.Policy.CodeGroup.ToXml%2A> calls <xref:System.Security.Policy.CodeGroup.CreateXml%2A> and adds your serialization to the <xref:System.Security.SecurityElement> created by <xref:System.Security.Policy.CodeGroup.ToXml%2A>.  
-  
- The XML created using this method is deserialized by the <xref:System.Security.Policy.CodeGroup.ParseXml%2A> method.  
-  
+<xref:System.Security.Policy.CodeGroup.ToXml%2A> cannot be overridden. If you need to serialize members specific to a particular implementation of <xref:System.Security.Policy.CodeGroup>, you must override <xref:System.Security.Policy.CodeGroup.CreateXml%2A> and serialize your members there. When the code group is serialized, <xref:System.Security.Policy.CodeGroup.ToXml%2A> calls <xref:System.Security.Policy.CodeGroup.CreateXml%2A> and adds your serialization to the <xref:System.Security.SecurityElement> created by <xref:System.Security.Policy.CodeGroup.ToXml%2A>.  
+ 
+The XML created using this method is deserialized by the <xref:System.Security.Policy.CodeGroup.ParseXml%2A> method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -250,12 +250,12 @@
           <see langword="true" /> if the specified code group is equivalent to the current code group; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two code groups are equivalent if they have the same <xref:System.Security.Policy.CodeGroup.Name%2A>, <xref:System.Security.Policy.CodeGroup.Description%2A>, and <xref:System.Security.Policy.CodeGroup.MembershipCondition%2A>.  
-  
- This method tests the top-level code group only, not its child code groups.  
-  
+Two code groups are equivalent if they have the same <xref:System.Security.Policy.CodeGroup.Name%2A>, <xref:System.Security.Policy.CodeGroup.Description%2A>, and <xref:System.Security.Policy.CodeGroup.MembershipCondition%2A>.  
+ 
+This method tests the top-level code group only, not its child code groups.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,12 +286,12 @@
           <see langword="true" /> if the specified code group is equivalent to the current code group; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two code groups are equivalent if they have the same <xref:System.Security.Policy.CodeGroup.Name%2A>, <xref:System.Security.Policy.CodeGroup.Description%2A>, and <xref:System.Security.Policy.CodeGroup.MembershipCondition%2A>.  
-  
- If the `compareChildren` parameter is `true`, this method will only return `true` if the current code group and all its child code groups are equivalent to the specified code group and all its child code groups.  
-  
+Two code groups are equivalent if they have the same <xref:System.Security.Policy.CodeGroup.Name%2A>, <xref:System.Security.Policy.CodeGroup.Description%2A>, and <xref:System.Security.Policy.CodeGroup.MembershipCondition%2A>.  
+ 
+If the `compareChildren` parameter is `true`, this method will only return `true` if the current code group and all its child code groups are equivalent to the specified code group and all its child code groups.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,10 +346,10 @@
         <summary>Reconstructs a security object with a given state and policy level from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The policy level context is provided for resolution of named permission sets.  
-  
+The policy level context is provided for resolution of named permission sets.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter is <see langword="null" />.</exception>
@@ -397,10 +397,10 @@
         <value>The membership condition that determines to which evidence the code group is applicable.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A membership condition tests evidence and returns a Boolean value that tells whether there is a match.  
-  
+A membership condition tests evidence and returns a Boolean value that tells whether there is a match.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set this parameter to <see langword="null" />.</exception>
@@ -470,12 +470,12 @@
         <summary>When overridden in a derived class, reconstructs properties and internal state specific to a derived code group from the specified <see cref="T:System.Security.SecurityElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Policy.CodeGroup.FromXml%2A> cannot be overridden. If you need to deserialize members specific to a particular implementation of <xref:System.Security.Policy.CodeGroup>, you must override <xref:System.Security.Policy.CodeGroup.ParseXml%2A> and deserialize your members there. When the code group is deserialized, <xref:System.Security.Policy.CodeGroup.FromXml%2A> calls <xref:System.Security.Policy.CodeGroup.ParseXml%2A> and reconstructs your members from the <xref:System.Security.SecurityElement>.  
-  
- This method deserializes XML created using <xref:System.Security.Policy.CodeGroup.CreateXml%2A>.  
-  
+<xref:System.Security.Policy.CodeGroup.FromXml%2A> cannot be overridden. If you need to deserialize members specific to a particular implementation of <xref:System.Security.Policy.CodeGroup>, you must override <xref:System.Security.Policy.CodeGroup.ParseXml%2A> and deserialize your members there. When the code group is deserialized, <xref:System.Security.Policy.CodeGroup.FromXml%2A> calls <xref:System.Security.Policy.CodeGroup.ParseXml%2A> and reconstructs your members from the <xref:System.Security.SecurityElement>.  
+ 
+This method deserializes XML created using <xref:System.Security.Policy.CodeGroup.CreateXml%2A>.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -501,10 +501,10 @@
         <value>The name of a named permission set of the policy level.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be `null` if the code group contains an unnamed permission set.  
-  
+This property can be `null` if the code group contains an unnamed permission set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -527,21 +527,21 @@
         <value>The policy statement for the code group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The policy statement applies to code in assemblies when evidence matches the membership condition.  
+The policy statement applies to code in assemblies when evidence matches the membership condition.  
+ 
+This property can also be set by passing a policy statement to the constructor.  
+ 
   
- This property can also be set by passing a policy statement to the constructor.  
-  
-   
-  
+ 
 ## Examples  
- The following example sets the <xref:System.Security.Policy.PolicyStatement> for a code group.  
-  
- [!code-cpp[Classic CodeGroup.PolicyStatement Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic CodeGroup.PolicyStatement Example/CPP/source.cpp#1)]
- [!code-csharp[Classic CodeGroup.PolicyStatement Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic CodeGroup.PolicyStatement Example/CS/source.cs#1)]
- [!code-vb[Classic CodeGroup.PolicyStatement Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic CodeGroup.PolicyStatement Example/VB/source.vb#1)]  
-  
+The following example sets the <xref:System.Security.Policy.PolicyStatement> for a code group.  
+ 
+[!code-cpp[Classic CodeGroup.PolicyStatement Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic CodeGroup.PolicyStatement Example/CPP/source.cpp#1)]
+[!code-csharp[Classic CodeGroup.PolicyStatement Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic CodeGroup.PolicyStatement Example/CS/source.cs#1)]
+[!code-vb[Classic CodeGroup.PolicyStatement Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic CodeGroup.PolicyStatement Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -567,10 +567,10 @@
         <summary>Removes the specified child code group.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only immediate child code groups can be removed with this method.  
-  
+Only immediate child code groups can be removed with this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="group" /> parameter is not an immediate child code group of the current code group.</exception>
@@ -598,14 +598,14 @@
         <returns>A policy statement that consists of the permissions granted by the code group with optional attributes, or <see langword="null" /> if the code group does not apply (the membership condition does not match the specified evidence).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given evidence for an assembly to be loaded, this method evaluates the code group by checking the membership condition against the specified evidence. If there is a match, this method returns a policy statement for the code group, including evaluation of child code groups.  
-  
- For a <xref:System.Security.Policy.UnionCodeGroup>, all child code groups whose membership condition match the specified evidence are also resolved, and all resulting policy statements are combined with the policy statement of the parent union code group. Each child code group type determines how all child groups under it are applied, depending on how the <xref:System.Security.Policy.CodeGroup.Resolve%2A> methods of these child groups work.  
-  
- The .NET Framework security system uses <xref:System.Security.Policy.CodeGroup.Resolve%2A> on the policy levels to determine which permissions to grant to loaded code from the resulting policy statements and the code request on the assembly.  
-  
+Given evidence for an assembly to be loaded, this method evaluates the code group by checking the membership condition against the specified evidence. If there is a match, this method returns a policy statement for the code group, including evaluation of child code groups.  
+ 
+For a <xref:System.Security.Policy.UnionCodeGroup>, all child code groups whose membership condition match the specified evidence are also resolved, and all resulting policy statements are combined with the policy statement of the parent union code group. Each child code group type determines how all child groups under it are applied, depending on how the <xref:System.Security.Policy.CodeGroup.Resolve%2A> methods of these child groups work.  
+ 
+The .NET Framework security system uses <xref:System.Security.Policy.CodeGroup.Resolve%2A> on the policy levels to determine which permissions to grant to loaded code from the resulting policy statements and the code request on the assembly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -632,10 +632,10 @@
         <returns>A <see cref="T:System.Security.Policy.CodeGroup" /> that is the root of the tree of matching code groups.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method has the same evaluation characteristics as <xref:System.Security.Policy.CodeGroup.Resolve%2A>. The code group that is returned contains child code groups, which in turn can have child code groups as necessary to reflect the complete set of code groups that were matched by the evidence provided.  
-  
+This method has the same evaluation characteristics as <xref:System.Security.Policy.CodeGroup.Resolve%2A>. The code group that is returned contains child code groups, which in turn can have child code groups as necessary to reflect the complete set of code groups that were matched by the evidence provided.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -686,10 +686,10 @@
         <returns>An XML encoding of the security object, including any state information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The policy level context is provided for resolution of named permission sets.  
-  
+The policy level context is provided for resolution of named permission sets.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

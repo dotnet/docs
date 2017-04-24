@@ -19,24 +19,24 @@
     <summary>Provides data for the <see cref="E:System.ComponentModel.IBindingList.ListChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ComponentModel.IBindingList.ListChanged> event is raised when the data in an <xref:System.ComponentModel.IBindingList> changes.  
+A <xref:System.ComponentModel.IBindingList.ListChanged> event is raised when the data in an <xref:System.ComponentModel.IBindingList> changes.  
+ 
+The <xref:System.ComponentModel.ListChangedEventArgs.NewIndex%2A> property indicates the index of the item that was added, changed, or deleted. If an item was moved, the <xref:System.ComponentModel.ListChangedEventArgs.NewIndex%2A> property indicates the new location of the item and the <xref:System.ComponentModel.ListChangedEventArgs.OldIndex%2A> property indicates the old location.  
+ 
+If only one item is affected by a change, the <xref:System.ComponentModel.ListChangedEventArgs.OldIndex%2A> property value is -1.  
+ 
   
- The <xref:System.ComponentModel.ListChangedEventArgs.NewIndex%2A> property indicates the index of the item that was added, changed, or deleted. If an item was moved, the <xref:System.ComponentModel.ListChangedEventArgs.NewIndex%2A> property indicates the new location of the item and the <xref:System.ComponentModel.ListChangedEventArgs.OldIndex%2A> property indicates the old location.  
-  
- If only one item is affected by a change, the <xref:System.ComponentModel.ListChangedEventArgs.OldIndex%2A> property value is -1.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
- [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
-  
+The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
+[!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,12 +65,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListChangedEventArgs" /> class given the type of change and the <see cref="T:System.ComponentModel.PropertyDescriptor" /> affected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor can be used only if the schema of the object has changed.  
-  
- The `listChangedType` parameter should be <xref:System.ComponentModel.ListChangedType>, <xref:System.ComponentModel.ListChangedType>, or <xref:System.ComponentModel.ListChangedType>.  
-  
+This constructor can be used only if the schema of the object has changed.  
+ 
+The `listChangedType` parameter should be <xref:System.ComponentModel.ListChangedType>, <xref:System.ComponentModel.ListChangedType>, or <xref:System.ComponentModel.ListChangedType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,10 +99,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListChangedEventArgs" /> class given the type of change and the index of the affected item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if only one item is affected by a change. In this case, the <xref:System.ComponentModel.ListChangedEventArgs.OldIndex%2A> property is set to -1.  
-  
+Use this constructor if only one item is affected by a change. In this case, the <xref:System.ComponentModel.ListChangedEventArgs.OldIndex%2A> property is set to -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,15 +183,15 @@
         <value>A <see cref="T:System.ComponentModel.ListChangedType" /> value indicating the type of change.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
- [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
+[!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,20 +218,20 @@
         <value>The index of the affected by the change.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For items that have been moved, this property represents the new location of the item.  
+For items that have been moved, this property represents the new location of the item.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
- [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
+[!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,15 +258,15 @@
         <value>The old index of the moved item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
- [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
+[!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,15 +293,15 @@
         <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> affected by the change.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
- [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
+[!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

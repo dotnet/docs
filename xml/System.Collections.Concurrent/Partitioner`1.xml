@@ -28,18 +28,18 @@
     <summary>Represents a particular manner of splitting a data source into multiple partitions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to implement a partitioner that returns a single element at a time:  
-  
- [!code-csharp[System.Collections.Concurrent.Partitioner#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.partitioner/cs/partitioner.cs#1)]
- [!code-vb[System.Collections.Concurrent.Partitioner#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.partitioner/vb/partitioner.vb#1)]  
-  
+The following example shows how to implement a partitioner that returns a single element at a time:  
+ 
+[!code-csharp[System.Collections.Concurrent.Partitioner#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.partitioner/cs/partitioner.cs#1)]
+[!code-vb[System.Collections.Concurrent.Partitioner#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.partitioner/vb/partitioner.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>The static methods on <see cref="T:System.Collections.Concurrent.Partitioner`1" /> are all thread-safe and may be used concurrently from multiple threads. However, while a created partitioner is in use, the underlying data source should not be modified, whether from the same thread that is using a partitioner or from a separate thread.</threadsafe>
@@ -98,12 +98,12 @@
         <returns>An object that can create partitions over the underlying data source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
-  
- The <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A> method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
+ 
+The <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A> method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Dynamic partitioning is not supported by the base class. You must implement it in a derived class.</exception>
@@ -140,10 +140,10 @@
         <returns>A list containing <paramref name="partitionCount" /> enumerators.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A class that implements this method is expected to return exactly the number of partitions that are specified in `partitionCount`. If a partition contains no elements, then return an empty enumerator rather than null (Nothing in Visual Basic). For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+A class that implements this method is expected to return exactly the number of partitions that are specified in `partitionCount`. If a partition contains no elements, then return an empty enumerator rather than null (Nothing in Visual Basic). For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <value>true if the <see cref="T:System.Collections.Concurrent.Partitioner`1" /> can create partitions dynamically as they are requested; false if the <see cref="T:System.Collections.Concurrent.Partitioner`1" /> can only allocate partitions statically.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a derived class does not override and implement <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> should return false. The value of <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> should not vary over the lifetime of this instance. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+If a derived class does not override and implement <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> should return false. The value of <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> should not vary over the lifetime of this instance. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

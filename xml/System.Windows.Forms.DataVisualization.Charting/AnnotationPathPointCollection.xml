@@ -17,12 +17,12 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation" /> or <see cref="T:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation" /> path points, which can be accessed using the <c>GraphicPathPoints</c> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection is used at design time only, and employs serialization to expose the shape of a polyline or polygon annotation, using their respective `GraphicPathPoints` collection properties.  
-  
- At run time, use the `GraphicsPath` property to set the path of a <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation> or <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation>.  
-  
+This collection is used at design time only, and employs serialization to expose the shape of a polyline or polygon annotation, using their respective `GraphicPathPoints` collection properties.  
+ 
+At run time, use the `GraphicsPath` property to set the path of a <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation> or <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

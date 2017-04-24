@@ -26,29 +26,29 @@
     <summary>Derived from the <see cref="T:System.Web.UI.MobileControls.Panel" /> class and used by ASP.NET to contain <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> templates. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a mobile control provides templated rendering features through device templates, it must create instances of each template inside a separate control of type <xref:System.Web.UI.MobileControls.TemplateContainer>. If a data-binding expression is in a control in a template, the `Container` variable of the expression is always of type <xref:System.Web.UI.MobileControls.TemplateContainer>.  
+If a mobile control provides templated rendering features through device templates, it must create instances of each template inside a separate control of type <xref:System.Web.UI.MobileControls.TemplateContainer>. If a data-binding expression is in a control in a template, the `Container` variable of the expression is always of type <xref:System.Web.UI.MobileControls.TemplateContainer>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.Web.UI.MobileControls.TemplateContainer> objects to create templates within a <xref:System.Web.UI.MobileControls.DeviceSpecific> object in a mobile form.  
-  
+The following code example demonstrates how to use <xref:System.Web.UI.MobileControls.TemplateContainer> objects to create templates within a <xref:System.Web.UI.MobileControls.DeviceSpecific> object in a mobile form.  
+ 
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
-  
- <!-- TODO: review snippet reference [!code-csharp[MobileTemplateContainerSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTemplateContainerSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileTemplateContainerSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTemplateContainerSample/vb/Default.aspx#1)]  -->  
-  
- All of the code above can be replaced declaratively with the following markup:  
-  
-  
-  
- The Web.config file must have the following lines:  
-  
-  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[MobileTemplateContainerSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTemplateContainerSample/cs/Default.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[MobileTemplateContainerSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTemplateContainerSample/vb/Default.aspx#1)]  -->  
+ 
+All of the code above can be replaced declaratively with the following markup:  
+ 
+ 
+ 
+The Web.config file must have the following lines:  
+ 
+ 
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>

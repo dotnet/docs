@@ -14,12 +14,12 @@
     <summary>Defines a segment of time over which output values are produced. These values are used to animate a target property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Media.Animation.AnimationTimeline> is a type of <xref:System.Windows.Media.Animation.Timeline> object that generates output values based on its timing progress. All animation types inherit from <xref:System.Windows.Media.Animation.AnimationTimeline>.  
-  
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Animation.AnimationTimeline> class provides several special features: <xref:System.Windows.Media.Animation.AnimationTimeline> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+An <xref:System.Windows.Media.Animation.AnimationTimeline> is a type of <xref:System.Windows.Media.Animation.Timeline> object that generates output values based on its timing progress. All animation types inherit from <xref:System.Windows.Media.Animation.AnimationTimeline>.  
+ 
+**Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Animation.AnimationTimeline> class provides several special features: <xref:System.Windows.Media.Animation.AnimationTimeline> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -72,10 +72,10 @@
         <returns>A clock for this <see cref="T:System.Windows.Media.Animation.AnimationTimeline" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Media.Animation.Timeline.CreateClock%2A> method and should not be called directly by your code.  
-  
+This method is called by the <xref:System.Windows.Media.Animation.Timeline.CreateClock%2A> method and should not be called directly by your code.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -101,12 +101,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <returns>A new clock, created from this <see cref="T:System.Windows.Media.Animation.AnimationTimeline" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method shadows the inherited <xref:System.Windows.Media.Animation.Timeline.CreateClock%2A?displayProperty=fullName> method with a type-safe implementation.  
-  
+This method shadows the inherited <xref:System.Windows.Media.Animation.Timeline.CreateClock%2A?displayProperty=fullName> method with a type-safe implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <returns>The animation's natural duration. This method always returns a <see cref="T:System.Windows.Duration" /> of 1 second.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides the implementation for <xref:System.Windows.Media.Animation.Timeline.GetNaturalDuration%2A> and should not be called directly from your code.  
-  
+This method provides the implementation for <xref:System.Windows.Media.Animation.Timeline.GetNaturalDuration%2A> and should not be called directly from your code.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

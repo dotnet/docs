@@ -14,12 +14,12 @@
     <summary>Represents a condition that must be taken into account when assessing the validity of a SAML assertion.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions and a set of conditions that must be taken into account when assessing the validity of the SAML assertion. The <xref:System.IdentityModel.Tokens.SamlCondition> class represents a single condition. An example of a condition is whether the SAML assertion must not be cached, which is represented by the <xref:System.IdentityModel.Tokens.SamlDoNotCacheCondition> class.  
-  
- The SAML specification defines two conditions and it allows for the set of conditions to be extended. The two conditions defined by the SAML specification are <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> and <xref:System.IdentityModel.Tokens.SamlDoNotCacheCondition>. To define a new condition, derive a class from the <xref:System.IdentityModel.Tokens.SamlCondition> class.  
-  
+<xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions and a set of conditions that must be taken into account when assessing the validity of the SAML assertion. The <xref:System.IdentityModel.Tokens.SamlCondition> class represents a single condition. An example of a condition is whether the SAML assertion must not be cached, which is represented by the <xref:System.IdentityModel.Tokens.SamlDoNotCacheCondition> class.  
+ 
+The SAML specification defines two conditions and it allows for the set of conditions to be extended. The two conditions defined by the SAML specification are <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> and <xref:System.IdentityModel.Tokens.SamlDoNotCacheCondition>. To define a new condition, derive a class from the <xref:System.IdentityModel.Tokens.SamlCondition> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
           <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To make this instance of the <xref:System.IdentityModel.Tokens.SamlCondition> class read-only, call the <xref:System.IdentityModel.Tokens.SamlCondition.MakeReadOnly%2A> method.  
-  
+To make this instance of the <xref:System.IdentityModel.Tokens.SamlCondition> class read-only, call the <xref:System.IdentityModel.Tokens.SamlCondition.MakeReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <summary>When overridden in a derived class, causes this instance to be read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.IdentityModel.Tokens.SamlCondition.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlCondition.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
-  
+When the <xref:System.IdentityModel.Tokens.SamlCondition.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlCondition.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>

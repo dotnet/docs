@@ -92,10 +92,10 @@
         <summary>Releases all unmanaged resources and, optionally, all managed resources that are used by the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `disposing` parameter affects only the release of the managed resources. The unmanaged resources are always released by this method.  
-  
+The `disposing` parameter affects only the release of the managed resources. The unmanaged resources are always released by this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@
         <summary>Moves the directory server to another site within the forest or configuration set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the directory server is a domain controller, this method will move the domain controller to a different site in the forest. If the directory server is an AD LDS instance, this method will move the AD LDS instance to a different site in the configuration set.  
-  
+If the directory server is a domain controller, this method will move the domain controller to a different site in the forest. If the directory server is an AD LDS instance, this method will move the AD LDS instance to a different site in the configuration set.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>

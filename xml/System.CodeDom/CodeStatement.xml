@@ -22,10 +22,10 @@
     <summary>Represents the <see langword="abstract" /> base class from which all code statements derive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeStatement> provides an abstract base class for code statements within the <xref:System.CodeDom> namespace.  
-  
+<xref:System.CodeDom.CodeStatement> provides an abstract base class for code statements within the <xref:System.CodeDom> namespace.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <value>A <see cref="T:System.CodeDom.CodeLinePragma" /> object that indicates the context of the code statement.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the location of the code statement.  
-  
+This property indicates the location of the code statement.  
+ 
  ]]></format>
         </remarks>
       </Docs>

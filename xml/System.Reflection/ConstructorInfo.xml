@@ -40,22 +40,22 @@
     <summary>Discovers the attributes of a class constructor and provides access to constructor metadata.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `ConstructorInfo` is used to discover the attributes of a constructor as well as to invoke a constructor. Objects are created by calling <xref:System.Reflection.ConstructorInfo.Invoke%2A> on a `ConstructorInfo` returned by either the <xref:System.Type.GetConstructors%2A> or <xref:System.Type.GetConstructor%2A> method of a <xref:System.Type> object.  
-  
+`ConstructorInfo` is used to discover the attributes of a constructor as well as to invoke a constructor. Objects are created by calling <xref:System.Reflection.ConstructorInfo.Invoke%2A> on a `ConstructorInfo` returned by either the <xref:System.Type.GetConstructors%2A> or <xref:System.Type.GetConstructor%2A> method of a <xref:System.Type> object.  
+ 
 > [!NOTE]
 >  <xref:System.Reflection.ConstructorInfo> inherits from <xref:System.Reflection.MethodBase> several members, such as <xref:System.Reflection.MethodBase.IsGenericMethod%2A>, that can be used to examine generic methods. In the .NET Framework version 2.0 constructors cannot be generic, so these members return `false` or `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses `ConstructorInfo` with <xref:System.Type.GetConstructor%2A> and <xref:System.Reflection.BindingFlags> to find the constructors that match the specified search criteria.  
-  
- [!code-cpp[type_getconstructor3#1](~/samples/snippets/cpp/VS_Snippets_CLR/Type_GetConstructor3/CPP/type_getconstructor3.cpp#1)]
- [!code-csharp[type_getconstructor3#1](~/samples/snippets/csharp/VS_Snippets_CLR/Type_GetConstructor3/CS/type_getconstructor3.cs#1)]
- [!code-vb[type_getconstructor3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Type_GetConstructor3/VB/type_getconstructor3.vb#1)]  
-  
+The following example uses `ConstructorInfo` with <xref:System.Type.GetConstructor%2A> and <xref:System.Reflection.BindingFlags> to find the constructors that match the specified search criteria.  
+ 
+[!code-cpp[type_getconstructor3#1](~/samples/snippets/cpp/VS_Snippets_CLR/Type_GetConstructor3/CPP/type_getconstructor3.cpp#1)]
+[!code-csharp[type_getconstructor3#1](~/samples/snippets/csharp/VS_Snippets_CLR/Type_GetConstructor3/CS/type_getconstructor3.cs#1)]
+[!code-vb[type_getconstructor3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Type_GetConstructor3/VB/type_getconstructor3.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
@@ -220,22 +220,22 @@
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The number, type, and order of elements in the `parameters` array should be identical to the number, type, and order of parameters for the constructor reflected by this instance. Before calling the constructor, `Invoke` ensures that the caller has access permission and verifies that the parameters are valid.  
-  
- Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked using reflection whenever the code is fully trusted.  
-  
+The number, type, and order of elements in the `parameters` array should be identical to the number, type, and order of parameters for the constructor reflected by this instance. Before calling the constructor, `Invoke` ensures that the caller has access permission and verifies that the parameters are valid.  
+ 
+Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked using reflection whenever the code is fully trusted.  
+ 
 > [!NOTE]
 >  To create an instance of a value type that has no instance constructors, use the <xref:System.Activator.CreateInstance%2A> method.  
-  
- This method is a convenience method for the following overloaded version, using default values. This method cannot be overridden.  
-  
+ 
+This method is a convenience method for the following overloaded version, using default values. This method cannot be overridden.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">The class is abstract.  
@@ -292,22 +292,22 @@
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The number, type, and order of elements in the `parameters` array should be identical to the number, type, and order of parameters for the constructor reflected by this instance.  
-  
- Before calling the constructor, `Invoke` ensures that the caller has access permission and that the parameters are of the correct number, order and type.  
-  
- Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked using reflection whenever the code is fully trusted.  
-  
+The number, type, and order of elements in the `parameters` array should be identical to the number, type, and order of parameters for the constructor reflected by this instance.  
+ 
+Before calling the constructor, `Invoke` ensures that the caller has access permission and that the parameters are of the correct number, order and type.  
+ 
+Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked using reflection whenever the code is fully trusted.  
+ 
 > [!NOTE]
 >  To create an instance of a value type that has no instance constructors, use the <xref:System.Activator.CreateInstance%2A> method.  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="parameters" /> array does not contain values that match the types accepted by this constructor, under the constraints of the <paramref name="binder" />.</exception>
@@ -355,19 +355,19 @@
         <value>A <see cref="T:System.Reflection.MemberTypes" /> value indicating that this member is a constructor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes> only when a given member is a constructor.  
+This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes> only when a given member is a constructor.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Reflection.ConstructorInfo.MemberType%2A> property to identify a <xref:System.Reflection.MemberInfo> object as a constructor.  
-  
- [!code-cpp[Classic MemberInfo.MemberType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MemberInfo.MemberType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MemberInfo.MemberType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MemberInfo.MemberType Example/CS/source.cs#1)]
- [!code-vb[Classic MemberInfo.MemberType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MemberInfo.MemberType Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Reflection.ConstructorInfo.MemberType%2A> property to identify a <xref:System.Reflection.MemberInfo> object as a constructor.  
+ 
+[!code-cpp[Classic MemberInfo.MemberType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MemberInfo.MemberType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic MemberInfo.MemberType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MemberInfo.MemberType Example/CS/source.cs#1)]
+[!code-vb[Classic MemberInfo.MemberType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MemberInfo.MemberType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -512,10 +512,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -541,10 +541,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -584,10 +584,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -622,10 +622,10 @@
         <returns>An instance of the type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.ConstructorInfo> instance is cast to an <xref:System.Runtime.InteropServices._ConstructorInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.ConstructorInfo> instance is cast to an <xref:System.Runtime.InteropServices._ConstructorInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -653,10 +653,10 @@
         <returns>An instance of the type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.ConstructorInfo> instance is cast to an <xref:System.Runtime.InteropServices._ConstructorInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.ConstructorInfo> instance is cast to an <xref:System.Runtime.InteropServices._ConstructorInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -688,10 +688,10 @@
         <returns>An instance of the type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.ConstructorInfo> instance is cast to an <xref:System.Runtime.InteropServices._ConstructorInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.ConstructorInfo> instance is cast to an <xref:System.Runtime.InteropServices._ConstructorInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -717,10 +717,10 @@
         <returns>An instance of the type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.ConstructorInfo> instance is cast to an <xref:System.Runtime.InteropServices._ConstructorInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.ConstructorInfo> instance is cast to an <xref:System.Runtime.InteropServices._ConstructorInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

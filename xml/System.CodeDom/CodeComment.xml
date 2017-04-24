@@ -22,23 +22,23 @@
     <summary>Represents a comment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeComment> can be used to represent a single line comment.  
+<xref:System.CodeDom.CodeComment> can be used to represent a single line comment.  
+ 
+A <xref:System.CodeDom.CodeCommentStatement> can contain a <xref:System.CodeDom.CodeComment> and allows it to be treated as a statement and generated as code within a collection of statements. Multi-line comments can be represented with multiple <xref:System.CodeDom.CodeCommentStatement> objects.  
+ 
+To include a comment in a CodeDOM graph that can be generated to source code, add a <xref:System.CodeDom.CodeComment> to a <xref:System.CodeDom.CodeCommentStatement>, and add this to the statements collection of a <xref:System.CodeDom.CodeMemberMethod> or to the comments collection of a <xref:System.CodeDom.CodeNamespace> or any object that derives from <xref:System.CodeDom.CodeTypeMember>.  
+ 
   
- A <xref:System.CodeDom.CodeCommentStatement> can contain a <xref:System.CodeDom.CodeComment> and allows it to be treated as a statement and generated as code within a collection of statements. Multi-line comments can be represented with multiple <xref:System.CodeDom.CodeCommentStatement> objects.  
-  
- To include a comment in a CodeDOM graph that can be generated to source code, add a <xref:System.CodeDom.CodeComment> to a <xref:System.CodeDom.CodeCommentStatement>, and add this to the statements collection of a <xref:System.CodeDom.CodeMemberMethod> or to the comments collection of a <xref:System.CodeDom.CodeNamespace> or any object that derives from <xref:System.CodeDom.CodeTypeMember>.  
-  
-   
-  
+ 
 ## Examples  
- This example demonstrates using a <xref:System.CodeDom.CodeComment> to represent a comment in source code.  
-  
- [!code-cpp[CodeCommentExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCommentExample/CPP/codecommentexample.cpp#2)]
- [!code-csharp[CodeCommentExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCommentExample/CS/codecommentexample.cs#2)]
- [!code-vb[CodeCommentExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCommentExample/VB/codecommentexample.vb#2)]  
-  
+This example demonstrates using a <xref:System.CodeDom.CodeComment> to represent a comment in source code.  
+ 
+[!code-cpp[CodeCommentExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCommentExample/CPP/codecommentexample.cpp#2)]
+[!code-csharp[CodeCommentExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCommentExample/CS/codecommentexample.cs#2)]
+[!code-vb[CodeCommentExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCommentExample/VB/codecommentexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -115,10 +115,10 @@
           <see langword="true" /> if the comment is a documentation comment; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some languages support a special type of comment that can be automatically extracted from the source code for documentation purposes. This property can be used to designate whether the comment is a documentation comment, which may generate a different syntax. An example of this is C#, which uses "//" for regular comments and "///" for documentation comments.  
-  
+Some languages support a special type of comment that can be automatically extracted from the source code for documentation purposes. This property can be used to designate whether the comment is a documentation comment, which may generate a different syntax. An example of this is C#, which uses "//" for regular comments and "///" for documentation comments.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <value>A string containing the comment text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The text of this property should not contain line breaks. If multiple lines are required, multiple <xref:System.CodeDom.CodeComment> objects should be defined.  
-  
+The text of this property should not contain line breaks. If multiple lines are required, multiple <xref:System.CodeDom.CodeComment> objects should be defined.  
+ 
  ]]></format>
         </remarks>
       </Docs>

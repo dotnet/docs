@@ -18,24 +18,24 @@
     <summary>Provides support for reading and writing metadata to and from a bitmap image.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Metadata that is associated with an image is data that describes the image but is not necessary to display the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
+Metadata that is associated with an image is data that describes the image but is not necessary to display the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
+ 
+[!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
+ 
+If a <xref:System.Windows.Media.Imaging.BitmapMetadata> is exposed by a <xref:System.Windows.Media.Imaging.BitmapFrame> that is obtained by using a <xref:System.Windows.Media.Imaging.BitmapDecoder>, it is read-only by default and mutable operations will throw an exception. If it is exposed by a <xref:System.Windows.Media.Imaging.BitmapFrame> that wraps another <xref:System.Windows.Media.Imaging.BitmapSource>, it is mutable on construction.  
+ 
+The <xref:System.Windows.Media.Imaging.BitmapMetadata.SetQuery%2A> and <xref:System.Windows.Media.Imaging.BitmapMetadata.GetQuery%2A> methods can be used to construct and read metadata queries.  
+ 
   
- [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
-  
- If a <xref:System.Windows.Media.Imaging.BitmapMetadata> is exposed by a <xref:System.Windows.Media.Imaging.BitmapFrame> that is obtained by using a <xref:System.Windows.Media.Imaging.BitmapDecoder>, it is read-only by default and mutable operations will throw an exception. If it is exposed by a <xref:System.Windows.Media.Imaging.BitmapFrame> that wraps another <xref:System.Windows.Media.Imaging.BitmapSource>, it is mutable on construction.  
-  
- The <xref:System.Windows.Media.Imaging.BitmapMetadata.SetQuery%2A> and <xref:System.Windows.Media.Imaging.BitmapMetadata.GetQuery%2A> methods can be used to construct and read metadata queries.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to write metadata to a [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] image by using the IFD and [!INCLUDE[TLA2#tla_exif](~/includes/tla2sharptla-exif-md.md)] schemas.  
-  
- [!code-csharp[BitmapFrameExample#7](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#7)]
- [!code-vb[BitmapFrameExample#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#7)]  
-  
+The following example demonstrates how to write metadata to a [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] image by using the IFD and [!INCLUDE[TLA2#tla_exif](~/includes/tla2sharptla-exif-md.md)] schemas.  
+ 
+[!code-csharp[BitmapFrameExample#7](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#7)]
+[!code-vb[BitmapFrameExample#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#7)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,13 +62,13 @@
         <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" /> for use with the specified image format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to write metadata to a [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] image by using the IFD and [!INCLUDE[TLA2#tla_exif](~/includes/tla2sharptla-exif-md.md)] schemas.  
-  
- [!code-csharp[BitmapFrameExample#7](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#7)]
- [!code-vb[BitmapFrameExample#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#7)]  
-  
+The following example demonstrates how to write metadata to a [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] image by using the IFD and [!INCLUDE[TLA2#tla_exif](~/includes/tla2sharptla-exif-md.md)] schemas.  
+ 
+[!code-csharp[BitmapFrameExample#7](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#7)]
+[!code-vb[BitmapFrameExample#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -92,13 +92,13 @@
         <value>The name of the application that was used to construct or alter an image file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- [!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
- [!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
-  
+The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
+ 
+[!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
+[!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,13 +120,13 @@
         <value>The author of the image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- [!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
- [!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
-  
+The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
+ 
+[!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
+[!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,13 +148,13 @@
         <value>The camera manufacturer that is associated with an image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- [!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
- [!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
-  
+The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
+ 
+[!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
+[!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,13 +176,13 @@
         <value>The camera model that was used to capture the image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- [!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
- [!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
-  
+The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
+ 
+[!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
+[!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,14 +205,14 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
+When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,14 +237,14 @@
         <summary>Makes this instance a deep copy of the specified <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
-  
- When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
-  
+This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ 
+When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,12 +269,12 @@
         <summary>Makes this instance a modifiable deep copy of the specified <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" /> using current property values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,13 +296,13 @@
         <value>A comment that is associated with the image file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- [!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
- [!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
-  
+The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
+ 
+[!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
+[!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,12 +334,12 @@
           <see langword="true" /> if the query string is found within the metadata store; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Metadata that is associated with an image is data that describes the image but that is not necessary for display of the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
-  
- [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
-  
+Metadata that is associated with an image is data that describes the image but that is not necessary for display of the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
+ 
+[!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -363,13 +363,13 @@
         <value>The copyright information that is associated with the image file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- [!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
- [!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
-  
+The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
+ 
+[!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
+[!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -410,13 +410,13 @@
         <value>The date that the image was taken.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- [!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
- [!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
-  
+The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
+ 
+[!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
+[!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,13 +443,13 @@
         <value>The format of the bitmap image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to read various properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> object and send their values to a <xref:System.Windows.MessageBox> as strings.  
-  
- [!code-csharp[BitmapFrameExample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#9)]
- [!code-vb[BitmapFrameExample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#9)]  
-  
+The following code example demonstrates how to read various properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> object and send their values to a <xref:System.Windows.MessageBox> as strings.  
+ 
+[!code-csharp[BitmapFrameExample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#9)]
+[!code-vb[BitmapFrameExample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -474,14 +474,14 @@
         <summary>Makes this instance a clone of the specified <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
-  
- This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
-  
+When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
+ 
+This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -506,12 +506,12 @@
         <summary>Makes this instance a frozen clone of the specified <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" />. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -542,27 +542,27 @@
         <returns>The metadata at the specified query location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Metadata that is associated with an image is data that describes the image but that is not necessary for display of the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
+Metadata that is associated with an image is data that describes the image but that is not necessary for display of the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
+ 
+[!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
+ 
   
- [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapMetadata.SetQuery%2A> method to write metadata to a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] file.  
-  
- [!code-cpp[bitmapmetadata#SetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#setquery)]
- [!code-csharp[bitmapmetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]
- [!code-vb[bitmapmetadata#SetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#setquery)]  
-  
- After the metadata is written, the <xref:System.Windows.Media.Imaging.BitmapMetadata.GetQuery%2A> method is used to read that data and emit it as a text string.  
-  
- [!code-cpp[bitmapmetadata#GetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#getquery)]
- [!code-csharp[bitmapmetadata#GetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#getquery)]
- [!code-vb[bitmapmetadata#GetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#getquery)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapMetadata.SetQuery%2A> method to write metadata to a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] file.  
+ 
+[!code-cpp[bitmapmetadata#SetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#setquery)]
+[!code-csharp[bitmapmetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]
+[!code-vb[bitmapmetadata#SetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#setquery)]  
+ 
+After the metadata is written, the <xref:System.Windows.Media.Imaging.BitmapMetadata.GetQuery%2A> method is used to read that data and emit it as a text string.  
+ 
+[!code-cpp[bitmapmetadata#GetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#getquery)]
+[!code-csharp[bitmapmetadata#GetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#getquery)]
+[!code-vb[bitmapmetadata#GetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#getquery)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -587,13 +587,13 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" /> is a fixed size; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to read various properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> object and send their values to a <xref:System.Windows.MessageBox> as strings.  
-  
- [!code-csharp[BitmapFrameExample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#9)]
- [!code-vb[BitmapFrameExample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#9)]  
-  
+The following code example demonstrates how to read various properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> object and send their values to a <xref:System.Windows.MessageBox> as strings.  
+ 
+[!code-csharp[BitmapFrameExample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#9)]
+[!code-vb[BitmapFrameExample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -616,13 +616,13 @@
           <see langword="true" /> if the metadata is read-only; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to read various properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> object and send their values to a <xref:System.Windows.MessageBox> as strings.  
-  
- [!code-csharp[BitmapFrameExample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#9)]
- [!code-vb[BitmapFrameExample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#9)]  
-  
+The following code example demonstrates how to read various properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> object and send their values to a <xref:System.Windows.MessageBox> as strings.  
+ 
+[!code-csharp[BitmapFrameExample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#9)]
+[!code-vb[BitmapFrameExample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -667,13 +667,13 @@
         <value>The base location of the image metadata.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to read various properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> object and send their values to a <xref:System.Windows.MessageBox> as strings.  
-  
- [!code-csharp[BitmapFrameExample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#9)]
- [!code-vb[BitmapFrameExample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#9)]  
-  
+The following code example demonstrates how to read various properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> object and send their values to a <xref:System.Windows.MessageBox> as strings.  
+ 
+[!code-csharp[BitmapFrameExample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#9)]
+[!code-vb[BitmapFrameExample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -721,12 +721,12 @@
         <summary>Removes a metadata query from an instance of <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Metadata that is associated with an image is data that describes the image but that is not necessary for display of the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
-  
- [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
-  
+Metadata that is associated with an image is data that describes the image but that is not necessary for display of the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
+ 
+[!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -761,27 +761,27 @@
         <summary>Provides access to a metadata query writer that can write metadata to a bitmap image file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Metadata that is associated with an image is data that describes the image but that is not necessary for display of the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
+Metadata that is associated with an image is data that describes the image but that is not necessary for display of the image. Each supported bitmap image format handles metadata differently, but the facility for reading and writing metadata is the same.  
+ 
+[!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
+ 
   
- [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapMetadata.SetQuery%2A> method to write metadata to a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] file.  
-  
- [!code-cpp[bitmapmetadata#SetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#setquery)]
- [!code-csharp[bitmapmetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]
- [!code-vb[bitmapmetadata#SetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#setquery)]  
-  
- After the metadata is written, the <xref:System.Windows.Media.Imaging.BitmapMetadata.GetQuery%2A> method is used to read that data and emit it as a text string.  
-  
- [!code-cpp[bitmapmetadata#GetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#getquery)]
- [!code-csharp[bitmapmetadata#GetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#getquery)]
- [!code-vb[bitmapmetadata#GetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#getquery)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapMetadata.SetQuery%2A> method to write metadata to a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] file.  
+ 
+[!code-cpp[bitmapmetadata#SetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#setquery)]
+[!code-csharp[bitmapmetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]
+[!code-vb[bitmapmetadata#SetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#setquery)]  
+ 
+After the metadata is written, the <xref:System.Windows.Media.Imaging.BitmapMetadata.GetQuery%2A> method is used to read that data and emit it as a text string.  
+ 
+[!code-cpp[bitmapmetadata#GetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#getquery)]
+[!code-csharp[bitmapmetadata#GetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#getquery)]
+[!code-vb[bitmapmetadata#GetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#getquery)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -803,13 +803,13 @@
         <value>The subject of the bitmap image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- [!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
- [!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
-  
+The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
+ 
+[!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
+[!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -840,10 +840,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Imaging.BitmapMetadata> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Imaging.BitmapMetadata> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -874,10 +874,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Imaging.BitmapMetadata> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Imaging.BitmapMetadata> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -899,13 +899,13 @@
         <value>The title of an image file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- [!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
- [!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
-  
+The following code example shows how to write metadata to a bitmap image by using friendly properties of the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
+ 
+[!code-csharp[BitmapFrameExample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#8)]
+[!code-vb[BitmapFrameExample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -29,10 +29,10 @@
         <value>The text placed between the opening and closing tags of a user control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.IUserControlDesignerAccessor.InnerText%2A> property is used by the designer to specify or determine the text between the opening and closing tags of a user control.  
-  
+The <xref:System.Web.UI.IUserControlDesignerAccessor.InnerText%2A> property is used by the designer to specify or determine the text between the opening and closing tags of a user control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -54,10 +54,10 @@
         <value>The full tag name of the user control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.IUserControlDesignerAccessor.TagName%2A> property is used by the designer to specify or determine the full tag name of the user control.  
-  
+The <xref:System.Web.UI.IUserControlDesignerAccessor.TagName%2A> property is used by the designer to specify or determine the full tag name of the user control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

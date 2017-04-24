@@ -26,14 +26,14 @@
     <summary>Exposes methods and properties to support UI Automation client access to child controls of containers that implement <see cref="T:System.Windows.Automation.Provider.ITableProvider" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This control pattern is analogous to <xref:System.Windows.Automation.Provider.IGridItemProvider> with the distinction that any control implementing <xref:System.Windows.Automation.Provider.ITableItemProvider> must expose the relationship between the individual cell and its row and column information.  
-  
- Access to individual cell functionality is provided by the concurrent implementation of <xref:System.Windows.Automation.Provider.IGridItemProvider>.  
-  
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TableItemPattern> control pattern.  
-  
+This control pattern is analogous to <xref:System.Windows.Automation.Provider.IGridItemProvider> with the distinction that any control implementing <xref:System.Windows.Automation.Provider.ITableItemProvider> must expose the relationship between the individual cell and its row and column information.  
+ 
+Access to individual cell functionality is provided by the concurrent implementation of <xref:System.Windows.Automation.Provider.IGridItemProvider>.  
+ 
+Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TableItemPattern> control pattern.  
+ 
  ]]></format>
     </remarks>
   </Docs>

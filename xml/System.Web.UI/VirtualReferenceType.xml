@@ -13,12 +13,12 @@
     <summary>Specifies the type of resource referenced by a parsed virtual path.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.VirtualReferenceType> enumeration describes the type of resource referenced by a virtual path. The <xref:System.Web.UI.VirtualReferenceType> is determined from the parsed extension of the resource.  
-  
- Page and control developers do not use the <xref:System.Web.UI.VirtualReferenceType> enumeration directly. Extensibility developers might use the <xref:System.Web.UI.VirtualReferenceType> enumeration when extending the <xref:System.Web.UI.PageParserFilter> class and overriding its <xref:System.Web.UI.PageParserFilter.AllowVirtualReference%2A> method.  
-  
+The <xref:System.Web.UI.VirtualReferenceType> enumeration describes the type of resource referenced by a virtual path. The <xref:System.Web.UI.VirtualReferenceType> is determined from the parsed extension of the resource.  
+ 
+Page and control developers do not use the <xref:System.Web.UI.VirtualReferenceType> enumeration directly. Extensibility developers might use the <xref:System.Web.UI.VirtualReferenceType> enumeration when extending the <xref:System.Web.UI.PageParserFilter> class and overriding its <xref:System.Web.UI.PageParserFilter.AllowVirtualReference%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -30,10 +30,10 @@
     <summary>The exception that is thrown when an attempt is made to open a system mutex, semaphore, or event wait handle that does not exist.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of the <xref:System.Threading.Mutex>, <xref:System.Threading.Semaphore>, and  <xref:System.Threading.EventWaitHandle> classes can represent named system synchronization objects. When you use the <xref:System.Threading.Mutex.OpenExisting%2A?displayProperty=fullName> method, the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=fullName> method, or the  <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=fullName> method to open a named system object that does not exist, a <xref:System.Threading.WaitHandleCannotBeOpenedException> exception is thrown.  
-  
+Instances of the <xref:System.Threading.Mutex>, <xref:System.Threading.Semaphore>, and  <xref:System.Threading.EventWaitHandle> classes can represent named system synchronization objects. When you use the <xref:System.Threading.Mutex.OpenExisting%2A?displayProperty=fullName> method, the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=fullName> method, or the  <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=fullName> method to open a named system object that does not exist, a <xref:System.Threading.WaitHandleCannotBeOpenedException> exception is thrown.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,17 +62,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.WaitHandleCannotBeOpenedException" /> class with default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "No handle of the given name exists." This message takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.Threading.WaitHandleCannotBeOpenedException>.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "No handle of the given name exists." This message takes into account the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Threading.WaitHandleCannotBeOpenedException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The system-supplied error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,17 +104,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.WaitHandleCannotBeOpenedException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.Threading.WaitHandleCannotBeOpenedException> initialized with this constructor.  
-  
+The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Threading.WaitHandleCannotBeOpenedException> initialized with this constructor.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|`message`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.WaitHandleCannotBeOpenedException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.WaitHandleCannotBeOpenedException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

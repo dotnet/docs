@@ -15,10 +15,10 @@
     <summary>Represents the token defined by the WS-SecureConversation specification.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of this class contains key material along with authentication information that represents the client. The user selects the particular cryptographic algorithm to use with it.  
-  
+An instance of this class contains key material along with authentication information that represents the client. The user selects the particular cryptographic algorithm to use with it.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `contextId` should be unique among all security context tokens issued by the service.  
-  
+The `contextId` should be unique among all security context tokens issued by the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `contextId` should be unique among all security context tokens issued by the service.  
-  
+The `contextId` should be unique among all security context tokens issued by the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `contextId` should be unique among all security context tokens issued by the service.  
-  
+The `contextId` should be unique among all security context tokens issued by the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `contextId` should be unique among all security context tokens issued by the service.  
-  
+The `contextId` should be unique among all security context tokens issued by the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,12 +363,12 @@
         <summary>Releases unmanaged resources used by this instance of this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to close or release unmanaged resources, such as files, streams, and handles held by an instance of the class that implements this interface. This method is, by convention, used for all tasks associated with freeing resources held by an object, or preparing an object for reuse.  
-  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.IDisposable.Dispose%2A>.  
-  
+Use this method to close or release unmanaged resources, such as files, streams, and handles held by an instance of the class that implements this interface. This method is, by convention, used for all tasks associated with freeing resources held by an object, or preparing an object for reuse.  
+ 
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.IDisposable.Dispose%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,10 +463,10 @@
         <value>A <see cref="T:System.Xml.UniqueId" /> that represents the key generation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Starting with the [!INCLUDE[netfx35_short](~/includes/netfx35-short-md.md)], this property is emitted on the wire as an <`sc:Instance`> element. In prior versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], it was emitted as an <`sc:Generation`> element.  
-  
+Starting with the [!INCLUDE[netfx35_short](~/includes/netfx35-short-md.md)], this property is emitted on the wire as an <`sc:Instance`> element. In prior versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], it was emitted as an <`sc:Generation`> element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

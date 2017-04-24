@@ -13,22 +13,22 @@
     <summary>Defines values for specifying how the height of the column headers is adjusted.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, users can resize the height of the column headers. You can disable this ability to set a fixed height or you can use the automatic sizing mode to fit the height to the header contents. Automatic sizing also disables user resizing.  
+By default, users can resize the height of the column headers. You can disable this ability to set a fixed height or you can use the automatic sizing mode to fit the height to the header contents. Automatic sizing also disables user resizing.  
+ 
+This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode%2A> property and <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A> method.  
+ 
+For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
+ 
   
- This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode%2A> property and <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A> method.  
-  
- For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this enumeration in a display-only, non-interactive <xref:System.Windows.Forms.DataGridView> control.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewStyleDemo#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/CS/form1.cs#20)]
- [!code-vb[System.Windows.Forms.DataGridViewStyleDemo#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/VB/form1.vb#20)]  
-  
+The following code example illustrates the use of this enumeration in a display-only, non-interactive <xref:System.Windows.Forms.DataGridView> control.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewStyleDemo#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/CS/form1.cs#20)]
+[!code-vb[System.Windows.Forms.DataGridViewStyleDemo#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/VB/form1.vb#20)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

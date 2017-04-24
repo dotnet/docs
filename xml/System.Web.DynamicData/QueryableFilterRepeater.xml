@@ -26,54 +26,54 @@
     <summary>Provides a templated control that automatically generates the UI to filter table rows for supported column types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this topic:  
-  
+In this topic:  
+ 
 -   [Introduction](#introduction)  
-  
+ 
 -   [Class Context](#ClassContext)  
-  
+ 
 -   [Declarative Syntax](#DeclarativeSyntax)  
-  
+ 
 <a name="introduction"></a>   
 ## Introduction  
- The <xref:System.Web.DynamicData.QueryableFilterRepeater> control is used in page markup to automatically generate the UI to filter table rows. By default, Dynamic Data creates the UI for each supported column type by using the default filter templates that are in the ~\DynamicData\Filters directory.  
-  
- The default templates support foreign-key, Boolean, and enumeration column types.  
-  
- The following table lists tasks that are associated with the <xref:System.Web.DynamicData.QueryableFilterRepeater> type.  
-  
+The <xref:System.Web.DynamicData.QueryableFilterRepeater> control is used in page markup to automatically generate the UI to filter table rows. By default, Dynamic Data creates the UI for each supported column type by using the default filter templates that are in the ~\DynamicData\Filters directory.  
+ 
+The default templates support foreign-key, Boolean, and enumeration column types.  
+ 
+The following table lists tasks that are associated with the <xref:System.Web.DynamicData.QueryableFilterRepeater> type.  
+ 
 |Task|Description|  
 |----------|-----------------|  
 |Create the UI for filtering table rows.|Add <xref:System.Web.DynamicData.DynamicFilter> controls to create UI using the <xref:System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate%2A> property.|  
 |Verify whether the <xref:System.Web.DynamicData.QueryableFilterRepeater> control contains data field filters.|Perform the check in the <xref:System.Web.DynamicData.QueryableFilterRepeater.OnPreRender%2A> method.|  
-  
+ 
 <a name="ClassContext"></a>   
 ## Class Context  
- The <xref:System.Web.DynamicData.QueryableFilterRepeater> control is designed to work with the <xref:System.Web.UI.WebControls.QueryExtender> control. It must be referenced by a <xref:System.Web.DynamicData.DynamicFilterExpression> instance inside a <xref:System.Web.UI.WebControls.QueryExtender> object in page markup.  
-  
- The following figure shows the steps that Dynamic Data follows in order to implement automatic table row filtering.  
-  
- ![Dynamic Data Table Row Filtering Elements](~/add/media/dynamic-autofilter.png "Dynamic Data Table Row Filtering Elements")  
-  
+The <xref:System.Web.DynamicData.QueryableFilterRepeater> control is designed to work with the <xref:System.Web.UI.WebControls.QueryExtender> control. It must be referenced by a <xref:System.Web.DynamicData.DynamicFilterExpression> instance inside a <xref:System.Web.UI.WebControls.QueryExtender> object in page markup.  
+ 
+The following figure shows the steps that Dynamic Data follows in order to implement automatic table row filtering.  
+ 
+![Dynamic Data Table Row Filtering Elements](~/add/media/dynamic-autofilter.png "Dynamic Data Table Row Filtering Elements")  
+ 
 1.  The <xref:System.Web.DynamicData.DynamicFilter> controls (which are contained in the <xref:System.Web.DynamicData.QueryableFilterRepeater> control), pass a column value to the <xref:System.Web.UI.WebControls.QueryExtender> control.  
-  
+ 
 2.  The <xref:System.Web.UI.WebControls.QueryExtender> control uses this value to create the query filtering information, which it then passes to the data source control.  
-  
+ 
 3.  The data source control passes the query filtering information to the data source provider.  
-  
+ 
 4.  The data source provider passes the query to the database.  
-  
+ 
 5.  The database returns the filtered table rows.  
-  
+ 
 6.  The data source provider sends this data back to the data source control.  
-  
+ 
 7.  This control passes the filtered table rows to the data-bound control for display.  
-  
+ 
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
-  
+ 
 ```  
 <asp:QueryableFilterRepeater   
     ID="string"  
@@ -88,27 +88,27 @@
     Visible="true"  
     runat="server" />  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- A Visual Studio project with source code is available at this location: [Scaffolding Dynamic Data](http://go.microsoft.com/fwlink/?LinkId=168914).  
-  
- The following example shows how to use the <xref:System.Web.DynamicData.QueryableFilterRepeater> control to generate the UI for table row filtering. The repeater's item template contains a <xref:System.Web.DynamicData.DynamicFilter> control that creates the UI for each supported column type.  
-  
- The example requires the following:  
-  
+A Visual Studio project with source code is available at this location: [Scaffolding Dynamic Data](http://go.microsoft.com/fwlink/?LinkId=168914).  
+ 
+The following example shows how to use the <xref:System.Web.DynamicData.QueryableFilterRepeater> control to generate the UI for table row filtering. The repeater's item template contains a <xref:System.Web.DynamicData.DynamicFilter> control that creates the UI for each supported column type.  
+ 
+The example requires the following:  
+ 
 -   A Dynamic Data Web site or a Dynamic Data Web application. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.QueryableFilterRepeater#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx#1)]  -->  
-  
- [!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx.cs#3)]
- [!code-vb[System.Web.DynamicData.QueryableFilterRepeater#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx.vb#3)]  
-  
- [!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#4](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/awltl2spartials.cs#4)]
- [!code-vb[System.Web.DynamicData.QueryableFilterRepeater#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/awltpartiall2sclasses.vb#4)]  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.QueryableFilterRepeater#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx#1)]  -->  
+ 
+[!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx.cs#3)]
+[!code-vb[System.Web.DynamicData.QueryableFilterRepeater#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx.vb#3)]  
+ 
+[!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#4](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/awltl2spartials.cs#4)]
+[!code-vb[System.Web.DynamicData.QueryableFilterRepeater#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/awltpartiall2sclasses.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -127,10 +127,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.QueryableFilterRepeater" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically you do not use this constructor to initialize a new instance of the <xref:System.Web.DynamicData.QueryableFilterRepeater> class. Instead, you specify the <xref:System.Web.DynamicData.QueryableFilterRepeater> control in page markup, and the control is initialized automatically when the page runs.  
-  
+Typically you do not use this constructor to initialize a new instance of the <xref:System.Web.DynamicData.QueryableFilterRepeater> class. Instead, you specify the <xref:System.Web.DynamicData.QueryableFilterRepeater> control in page markup, and the control is initialized automatically when the page runs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <value>The ID of a <see cref="T:System.Web.DynamicData.DynamicFilter" /> control inside the template that is configured to be a filter for a column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the ID is not set, the default value for the ID is "DynamicFilter".  
-  
+If the ID is not set, the default value for the ID is "DynamicFilter".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,18 +205,18 @@
         <value>An object that defines how items in the <see cref="T:System.Web.DynamicData.QueryableFilterRepeater" /> control are displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate%2A> property defines the behavior that is used to populate the <xref:System.Web.DynamicData.QueryableFilterRepeater> control with child controls. The child controls represent the inline templates that are defined on the page.  
+The <xref:System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate%2A> property defines the behavior that is used to populate the <xref:System.Web.DynamicData.QueryableFilterRepeater> control with child controls. The child controls represent the inline templates that are defined on the page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Web.DynamicData.QueryableFilterRepeater> control's <xref:System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate%2A> property so that it contains <xref:System.Web.DynamicData.DynamicFilter> controls to create the UI for each supported column type.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.QueryableFilterRepeater#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx#2)]  -->  
-  
+The following example shows how to set the <xref:System.Web.DynamicData.QueryableFilterRepeater> control's <xref:System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate%2A> property so that it contains <xref:System.Web.DynamicData.DynamicFilter> controls to create the UI for each supported column type.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx#2)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.QueryableFilterRepeater#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx#2)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
         <summary>Verifies whether the control contains data field filters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there are no data field filters, this method sets the <xref:System.Web.UI.Control.Visible%2A> property of the <xref:System.Web.DynamicData.QueryableFilterRepeater> object to `false`. This method is called after the <xref:System.Web.DynamicData.QueryableFilterRepeater> control is loaded but before it is rendered.  
-  
+If there are no data field filters, this method sets the <xref:System.Web.UI.Control.Visible%2A> property of the <xref:System.Web.DynamicData.QueryableFilterRepeater> object to `false`. This method is called after the <xref:System.Web.DynamicData.QueryableFilterRepeater> control is loaded but before it is rendered.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,10 +270,10 @@
         <returns>The filter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.DynamicData.QueryableFilterRepeater> instance is cast to an <xref:System.Web.DynamicData.IFilterExpressionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.DynamicData.QueryableFilterRepeater> instance is cast to an <xref:System.Web.DynamicData.IFilterExpressionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,10 +298,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.QueryableFilterRepeater" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.DynamicData.QueryableFilterRepeater> instance is cast to an <xref:System.Web.DynamicData.IFilterExpressionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.DynamicData.QueryableFilterRepeater> instance is cast to an <xref:System.Web.DynamicData.IFilterExpressionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

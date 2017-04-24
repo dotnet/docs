@@ -14,10 +14,10 @@
     <summary>Base class for all the persistence related exception classes. The <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerException" /> and the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceCommandException" /> are derived classes of this class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An InstancePersistenceException that is not an InstanceOwnerException nor an InstancePersistenceCommandException applies to the persistence provider itself and may indicate an unrecoverable failure condition of the provider.  
-  
+An InstancePersistenceException that is not an InstanceOwnerException nor an InstancePersistenceCommandException applies to the persistence provider itself and may indicate an unrecoverable failure condition of the provider.  
+ 
  ]]></format>
     </remarks>
   </Docs>

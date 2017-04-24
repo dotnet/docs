@@ -11,14 +11,14 @@
     <summary>Provides the functionality for a control to act as a parent for other controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
-  
- [!code-cpp[IContainerControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IContainerControl Implementation/CPP/mycontainercontrol.cpp#1)]
- [!code-csharp[IContainerControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IContainerControl Implementation/CS/mycontainercontrol.cs#1)]
- [!code-vb[IContainerControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IContainerControl Implementation/VB/mycontainercontrol.vb#1)]  
-  
+The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
+ 
+[!code-cpp[IContainerControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IContainerControl Implementation/CPP/mycontainercontrol.cpp#1)]
+[!code-csharp[IContainerControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IContainerControl Implementation/CS/mycontainercontrol.cs#1)]
+[!code-vb[IContainerControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IContainerControl Implementation/VB/mycontainercontrol.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -50,14 +50,14 @@
           <see langword="true" /> if the control is successfully activated; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
-  
- [!code-cpp[IContainerControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IContainerControl Implementation/CPP/mycontainercontrol.cpp#1)]
- [!code-csharp[IContainerControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IContainerControl Implementation/CS/mycontainercontrol.cs#1)]
- [!code-vb[IContainerControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IContainerControl Implementation/VB/mycontainercontrol.vb#1)]  
-  
+The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
+ 
+[!code-cpp[IContainerControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IContainerControl Implementation/CPP/mycontainercontrol.cpp#1)]
+[!code-csharp[IContainerControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IContainerControl Implementation/CS/mycontainercontrol.cs#1)]
+[!code-vb[IContainerControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IContainerControl Implementation/VB/mycontainercontrol.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -82,14 +82,14 @@
         <value>The <see cref="T:System.Windows.Forms.Control" /> that is currently active on the container control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
-  
- [!code-cpp[IContainerControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IContainerControl Implementation/CPP/mycontainercontrol.cpp#1)]
- [!code-csharp[IContainerControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IContainerControl Implementation/CS/mycontainercontrol.cs#1)]
- [!code-vb[IContainerControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IContainerControl Implementation/VB/mycontainercontrol.vb#1)]  
-  
+The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
+ 
+[!code-cpp[IContainerControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IContainerControl Implementation/CPP/mycontainercontrol.cpp#1)]
+[!code-csharp[IContainerControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IContainerControl Implementation/CS/mycontainercontrol.cs#1)]
+[!code-vb[IContainerControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IContainerControl Implementation/VB/mycontainercontrol.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

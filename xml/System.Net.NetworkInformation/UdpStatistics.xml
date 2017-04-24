@@ -23,20 +23,20 @@
     <summary>Provides User Datagram Protocol (UDP) statistical data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class are returned by the <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUdpIPv4Statistics%2A> and <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUdpIPv6Statistics%2A> methods to give applications access to UDP traffic information.  
+Instances of this class are returned by the <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUdpIPv4Statistics%2A> and <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUdpIPv6Statistics%2A> methods to give applications access to UDP traffic information.  
+ 
+The information in this class correlates to the management information objects described in [http://www.ietf.org/rfc/rfc2013.txt](http://www.ietf.org/rfc/rfc2013.txt).  
+ 
   
- The information in this class correlates to the management information objects described in [http://www.ietf.org/rfc/rfc2013.txt](http://www.ietf.org/rfc/rfc2013.txt).  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays the UDP statistics for the specified address family.  
-  
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
-  
+The following code example displays the UDP statistics for the specified address family.  
+ 
+[!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
+[!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.UdpStatistics" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor can be called only by classes that derive from <xref:System.Net.NetworkInformation.UdpStatistics>.  
-  
+This constructor can be called only by classes that derive from <xref:System.Net.NetworkInformation.UdpStatistics>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,18 +98,18 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of datagrams that were delivered to UDP users.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The number returned by this property does not include datagrams that were received but not deliverable.  
+The number returned by this property does not include datagrams that were received but not deliverable.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the UDP statistics for the specified address family.  
-  
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
-  
+The following code example displays the UDP statistics for the specified address family.  
+ 
+[!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
+[!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,13 +140,13 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of datagrams that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example displays the UDP statistics for the specified Internet Protocol version.  
-  
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
-  
+The following code example displays the UDP statistics for the specified Internet Protocol version.  
+ 
+[!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
+[!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,18 +177,18 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of received UDP datagrams that were discarded because there was no listening application at the destination port.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To find the total number of datagrams that could not be delivered, add the values that were returned by this property and the <xref:System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsWithErrors%2A> property.  
+To find the total number of datagrams that could not be delivered, add the values that were returned by this property and the <xref:System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsWithErrors%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the UDP statistics for the specified Internet Protocol version.  
-  
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
-  
+The following code example displays the UDP statistics for the specified Internet Protocol version.  
+ 
+[!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
+[!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,18 +219,18 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of received UDP datagrams that could not be delivered for reasons other than the lack of an application at the destination port.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To find the total number of datagrams that could not be delivered, add the values that were returned by this property and the <xref:System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsDiscarded%2A> property.  
+To find the total number of datagrams that could not be delivered, add the values that were returned by this property and the <xref:System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsDiscarded%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the UDP statistics for the specified Internet Protocol version.  
-  
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
-  
+The following code example displays the UDP statistics for the specified Internet Protocol version.  
+ 
+[!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
+[!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,18 +261,18 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of sockets that are listening for UDP datagrams.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Net.Sockets.UdpClient> and <xref:System.Net.Sockets.Socket> classes to create UDP listener applications.  
+You can use the <xref:System.Net.Sockets.UdpClient> and <xref:System.Net.Sockets.Socket> classes to create UDP listener applications.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the UDP statistics for the specified Internet Protocol version.  
-  
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
-  
+The following code example displays the UDP statistics for the specified Internet Protocol version.  
+ 
+[!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
+[!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

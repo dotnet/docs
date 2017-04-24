@@ -19,19 +19,19 @@
     <summary>Provides a type converter to convert <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> classes to and from various other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This converter can only convert an <xref:System.Workflow.ComponentModel.ActivityBind> object to and from a string.  
-  
- For more information about type converters, see the TypeConverter base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
+ 
+This converter can only convert an <xref:System.Workflow.ComponentModel.ActivityBind> object to and from a string.  
+ 
+For more information about type converters, see the TypeConverter base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
 > [!NOTE]
 >  You should never create an instance of <xref:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class.  For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> class.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.CanConvertFrom%2A> returns `true` if `sourceType` is a string.  
-  
+<xref:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.CanConvertFrom%2A> returns `true` if `sourceType` is a string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,13 +107,13 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be a null reference (`Nothing` in Visual Basic), so always check. Also, properties on the `context` object can return a null reference (`Nothing`).  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be a null reference (`Nothing` in Visual Basic), so always check. Also, properties on the `context` object can return a null reference (`Nothing`).  
+ 
 > [!NOTE]
 >  Override this method to provide your own conversion requirements.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,12 +143,12 @@
         <returns>The <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert an <xref:System.Workflow.ComponentModel.ActivityBind> object to and from a string.  
-  
- `context` can be used to extract additional information about the environment this converter is being invoked from. This can be a null reference (`Nothing` in Visual Basic), so always check. Also, properties on the `context` object can return a null reference (`Nothing`).  
-  
+This converter can only convert an <xref:System.Workflow.ComponentModel.ActivityBind> object to and from a string.  
+ 
+`context` can be used to extract additional information about the environment this converter is being invoked from. This can be a null reference (`Nothing` in Visual Basic), so always check. Also, properties on the `context` object can return a null reference (`Nothing`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An error occurred while converting <paramref name="valueToConvert" /> to an <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</exception>
@@ -181,12 +181,12 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.ConvertTo%2A> converts an <xref:System.Workflow.ComponentModel.ActivityBind> to a string.  
-  
- `context` can be used to extract additional information about the environment this converter is being invoked from. This can be a null reference (`Nothing` in Visual Basic), so always check. Also, properties on the `context` object can return a null reference (`Nothing`).  
-  
+<xref:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.ConvertTo%2A> converts an <xref:System.Workflow.ComponentModel.ActivityBind> to a string.  
+ 
+`context` can be used to extract additional information about the environment this converter is being invoked from. This can be a null reference (`Nothing` in Visual Basic), so always check. Also, properties on the `context` object can return a null reference (`Nothing`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a standard set of valid values or a null reference (<see langword="Nothing" /> in Visual Basic) if the data type does not support a standard set of values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `context` can be used to extract additional information about the environment from which this converter is invoked. `context` or any property available through it can be a null reference (`Nothing`).  
-  
+`context` can be used to extract additional information about the environment from which this converter is invoked. `context` or any property available through it can be a null reference (`Nothing`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,10 +291,10 @@
           <see langword="true" /> if the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> returned from <see cref="Overload:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.GetStandardValues" /> is an exhaustive list of possible values; <see langword="false" /> if other values are possible.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the list is exclusive, such as in an enumeration data type, then no other values are valid. If the list is not exclusive, then other valid values might exist in addition to the list of standard values that the <xref:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.GetStandardValues%2A> method provides. If the values are exclusive, the list returned by <xref:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.GetStandardValues%2A> should not allow these values to be edited.  
-  
+If the list is exclusive, such as in an enumeration data type, then no other values are valid. If the list is not exclusive, then other valid values might exist in addition to the list of standard values that the <xref:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.GetStandardValues%2A> method provides. If the values are exclusive, the list returned by <xref:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.GetStandardValues%2A> should not allow these values to be edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,10 +321,10 @@
           <see langword="true" /> if <see cref="Overload:System.Workflow.ComponentModel.Design.ActivityBindTypeConverter.GetStandardValues" /> should be called to find a common set of values the object supports; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `context` parameter to extract additional information about the environment from which this converter is invoked. This parameter can be a null reference (`Nothing` in Visual Basic), so always check it. Also, properties on the context object can return a null reference (`Nothing`).  
-  
+Use the `context` parameter to extract additional information about the environment from which this converter is invoked. This parameter can be a null reference (`Nothing` in Visual Basic), so always check it. Also, properties on the context object can return a null reference (`Nothing`).  
+ 
  ]]></format>
         </remarks>
       </Docs>

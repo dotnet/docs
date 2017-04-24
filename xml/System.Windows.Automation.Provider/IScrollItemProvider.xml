@@ -22,10 +22,10 @@
     <summary>Exposes methods and properties to support UI Automation client access to individual child controls of containers that implement <see cref="T:System.Windows.Automation.Provider.IScrollProvider" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.ScrollItemPattern> control pattern.  
-  
+Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.ScrollItemPattern> control pattern.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <summary>Scrolls the content area of a container object in order to display the control within the visible region (viewport) of the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not provide the ability to specify the position of the control within the visible region (viewport) of the container.  
-  
+This method does not provide the ability to specify the position of the control within the visible region (viewport) of the container.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The item cannot be scrolled into view.</exception>

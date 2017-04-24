@@ -14,12 +14,12 @@
     <summary>Contains properties for a script block being parsed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During page parsing, information about a script block is stored in the <xref:System.Web.Compilation.LinePragmaCodeInfo> class. This class is used in the <xref:System.Web.UI.SimpleWebHandlerParser> class.  
-  
- <xref:System.Web.Compilation.LinePragmaCodeInfo> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+During page parsing, information about a script block is stored in the <xref:System.Web.Compilation.LinePragmaCodeInfo> class. This class is used in the <xref:System.Web.UI.SimpleWebHandlerParser> class.  
+ 
+<xref:System.Web.Compilation.LinePragmaCodeInfo> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.LinePragmaCodeInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use the properties of a <xref:System.Web.Compilation.LinePragmaCodeInfo> instance, use the constructor overload that takes parameters.  
-  
+To use the properties of a <xref:System.Web.Compilation.LinePragmaCodeInfo> instance, use the constructor overload that takes parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
           <see langword="true" /> if the script block is contained inside &lt;% %&gt; tags; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Code located within the \<% %> tags is referred to as a "nugget".  
-  
+Code located within the \<% %> tags is referred to as a "nugget".  
+ 
  ]]></format>
         </remarks>
       </Docs>

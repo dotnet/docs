@@ -21,28 +21,28 @@
     <summary>Provides a base class for components that provide design-time support in a designer host for Web server controls that are derived from the <see cref="T:System.Web.UI.WebControls.BaseDataList" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a designer host, when the user switches from Source to Design view, the markup source code that describes a control derived from the <xref:System.Web.UI.WebControls.BaseDataList> abstract class is parsed and a design-time version of the control is created on the design surface. When the user switches back to Source view, the design-time control is persisted to markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> abstract class serves as a base class for components that provide design-time support for controls that are derived from the <xref:System.Web.UI.WebControls.BaseDataList> in a designer host.  
-  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> class properties provide the following functionality:  
-  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.ActionLists%2A> property returns a <xref:System.ComponentModel.Design.DesignerActionListCollection> object, which typically contains an object that is derived from the <xref:System.ComponentModel.Design.DesignerActionList> class for each level in the inheritance tree of the designer.  
-  
+In a designer host, when the user switches from Source to Design view, the markup source code that describes a control derived from the <xref:System.Web.UI.WebControls.BaseDataList> abstract class is parsed and a design-time version of the control is created on the design surface. When the user switches back to Source view, the design-time control is persisted to markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> abstract class serves as a base class for components that provide design-time support for controls that are derived from the <xref:System.Web.UI.WebControls.BaseDataList> in a designer host.  
+ 
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> class properties provide the following functionality:  
+ 
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.ActionLists%2A> property returns a <xref:System.ComponentModel.Design.DesignerActionListCollection> object, which typically contains an object that is derived from the <xref:System.ComponentModel.Design.DesignerActionList> class for each level in the inheritance tree of the designer.  
+ 
 -   The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataKeyField%2A>, <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A>, <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource%2A>, and <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> properties provide access to the corresponding properties of the associated control.  
-  
+ 
 -   The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceDesigner%2A> property provides access to the designer of the data source of the associated control. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DesignerView%2A> property gets the default view of the data source.  
-  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> class methods provide the following functionality:  
-  
+ 
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> class methods provide the following functionality:  
+ 
 -   The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Initialize%2A> method prepares the designer to view, edit, and design the associated control. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.InvokePropertyBuilder%2A> method invokes a component editor for the control. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.PreFilterProperties%2A> method is used to add, remove, or shadow design-time properties of the associated control.  
-  
+ 
 -   The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetDesignTimeDataSource%2A> method generates an object that can be used as a data source at design time. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetSelectedDataSource%2A> method gets the data source from the container of the associated control. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetResolvedSelectedDataSource%2A> method gets the data source from the control container, resolved to a specific data member. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetTemplateContainerDataSource%2A> method gets the data source of the template container.  
-  
+ 
 -   The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnComponentChanged%2A> method is called when there is a change to the associated control. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnDataSourceChanged%2A> method is called when the associated control data source has changed. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnSchemaRefreshed%2A> method is called when the schema of the associated control data source changes. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnAutoFormatApplied%2A> method is called when an automatic formatting scheme has been applied.  
-  
+ 
 -   The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnStylesChanged%2A> and <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnTemplateEditingVerbsChanged%2A> methods can be overridden to implement functionality that should occur when an associated control style has changed or when the designer template-editing verbs have changed, respectively. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnPropertyBuilder%2A> method handles the property-builder event.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.BaseDataListDesigner" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> class when it creates the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class or a copy of that control on the design surface.  
-  
+The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> class when it creates the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class or a copy of that control on the design surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.ActionLists%2A> property creates an empty <xref:System.ComponentModel.Design.DesignerActionListCollection> object and adds the <xref:System.ComponentModel.Design.DesignerActionListCollection> that is returned by the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.ActionLists%2A> base property to this <xref:System.ComponentModel.Design.DesignerActionListCollection> object. Then it adds it to the <xref:System.ComponentModel.Design.DesignerActionListCollection> object, and then returns this <xref:System.ComponentModel.Design.DesignerActionListCollection> object.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.ActionLists%2A> property creates an empty <xref:System.ComponentModel.Design.DesignerActionListCollection> object and adds the <xref:System.ComponentModel.Design.DesignerActionListCollection> that is returned by the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.ActionLists%2A> base property to this <xref:System.ComponentModel.Design.DesignerActionListCollection> object. Then it adds it to the <xref:System.ComponentModel.Design.DesignerActionListCollection> object, and then returns this <xref:System.ComponentModel.Design.DesignerActionListCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <value>The <see cref="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" /> value of the associated control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataKeyField%2A> property provides access from the designer to the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. The <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> indicates the primary key of the data source that is bound to the associated control.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataKeyField%2A> property provides access from the designer to the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. The <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> indicates the primary key of the data source that is bound to the associated control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <value>The <see cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" /> value of the associated control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> property provides access from the designer to the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. The <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> indicates the table or element of the data source that is bound to the associated control.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> property provides access from the designer to the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. The <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> indicates the table or element of the data source that is bound to the associated control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <value>The <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> value of the associated control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource%2A> property provides access from the designer to the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource%2A> property provides access from the designer to the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@
         <value>The designer for the data source of the associated control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceDesigner%2A> property returns the designer for the data source of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. The designer object implements the <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceDesigner%2A> property returns the designer for the data source of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. The designer object implements the <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,10 +211,10 @@
         <value>A <see cref="T:System.String" /> that is the data source ID of the associated control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the designer's <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> property causes the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A?displayProperty=fullName> property of the associated control to be set. If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> is set to a <xref:System.String>, indicating a new data source is to be defined, a **Create Data Source** dialog box is displayed. If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> is set to a <xref:System.String> indicating there is no data source, the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> is set to an empty string ("").  
-  
+Setting the designer's <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> property causes the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A?displayProperty=fullName> property of the associated control to be set. If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> is set to a <xref:System.String>, indicating a new data source is to be defined, a **Create Data Source** dialog box is displayed. If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> is set to a <xref:System.String> indicating there is no data source, the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> is set to an empty string ("").  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,10 +236,10 @@
         <value>The <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> representing the default view of the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DesignerView%2A> property gets the default view of the data source that is bound to the associated control by passing the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> property to the <xref:System.Web.UI.Design.DataSourceDesigner.GetView%2A> method of the <xref:System.Web.UI.Design.DataSourceDesigner> object. If no view is returned or the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> property is not set, the <xref:System.Web.UI.Design.DataSourceDesigner.GetViewNames%2A> method of the <xref:System.Web.UI.Design.DataSourceDesigner> is used to get the view names and the first view name is used to get the default view.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DesignerView%2A> property gets the default view of the data source that is bound to the associated control by passing the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> property to the <xref:System.Web.UI.Design.DataSourceDesigner.GetView%2A> method of the <xref:System.Web.UI.Design.DataSourceDesigner> object. If no view is returned or the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> property is not set, the <xref:System.Web.UI.Design.DataSourceDesigner.GetViewNames%2A> method of the <xref:System.Web.UI.Design.DataSourceDesigner> is used to get the view names and the first view name is used to get the default view.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,12 +265,12 @@
         <summary>Releases the unmanaged resources that are used by the designer and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class has a <xref:System.ComponentModel.IComponent.Site%2A> property that implements the <xref:System.ComponentModel.Design.IDesignerHost> interface, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Dispose%2A> method disconnects the <xref:System.ComponentModel.Design.IDesignerHost.LoadComplete> event of the <xref:System.Web.UI.Design.WebFormsRootDesigner> object.  
-  
- If the <xref:System.ComponentModel.IComponent.Site%2A> implements the <xref:System.ComponentModel.Design.IComponentChangeService> method, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Dispose%2A> disconnects the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentAdded>, <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving>, and <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved> events. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Dispose%2A> also disconnects the <xref:System.Web.UI.Design.DataSourceDesigner.DataSourceChanged> and <xref:System.Web.UI.Design.DataSourceDesigner.SchemaRefreshed> events of the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> object. It finally calls the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Dispose%2A> base method.  
-  
+If the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class has a <xref:System.ComponentModel.IComponent.Site%2A> property that implements the <xref:System.ComponentModel.Design.IDesignerHost> interface, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Dispose%2A> method disconnects the <xref:System.ComponentModel.Design.IDesignerHost.LoadComplete> event of the <xref:System.Web.UI.Design.WebFormsRootDesigner> object.  
+ 
+If the <xref:System.ComponentModel.IComponent.Site%2A> implements the <xref:System.ComponentModel.Design.IComponentChangeService> method, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Dispose%2A> disconnects the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentAdded>, <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving>, and <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved> events. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Dispose%2A> also disconnects the <xref:System.Web.UI.Design.DataSourceDesigner.DataSourceChanged> and <xref:System.Web.UI.Design.DataSourceDesigner.SchemaRefreshed> events of the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> object. It finally calls the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Dispose%2A> base method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,10 +299,10 @@
         <returns>An object implementing an <see cref="T:System.Collections.IEnumerable" /> interface that serves as a data source for use at design time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetDesignTimeDataSource%2A?displayProperty=fullName> method attempts to construct a <xref:System.Data.DataTable> object from the data source that is defined by the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource%2A> and <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> properties. If this is not possible, it creates a <xref:System.Data.DataTable> from dummy data.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetDesignTimeDataSource%2A?displayProperty=fullName> method attempts to construct a <xref:System.Data.DataTable> object from the data source that is defined by the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource%2A> and <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> properties. If this is not possible, it creates a <xref:System.Data.DataTable> from dummy data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
         <returns>An object implementing an <see cref="T:System.Collections.IEnumerable" /> interface that serves as a data source for use at design time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetDesignTimeDataSource%2A?displayProperty=fullName> method attempts to construct a <xref:System.Data.DataTable> object from the data source that is specified by the `selectedDataSource` parameter. If this is not possible, it creates a <xref:System.Data.DataTable> from dummy data.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetDesignTimeDataSource%2A?displayProperty=fullName> method attempts to construct a <xref:System.Data.DataTable> object from the data source that is specified by the `selectedDataSource` parameter. If this is not possible, it creates a <xref:System.Data.DataTable> from dummy data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <returns>An object implementing an <see cref="T:System.Collections.IEnumerable" /> interface containing the design-time <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> of the associated control, resolved to the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" /> parameter; otherwise, <see langword="null" /> if a data source is not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A> method to construct a data source from the object that is specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> properties of the associated control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A> method to construct a data source from the object that is specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> properties of the associated control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,10 +385,10 @@
         <returns>An object implementing an <see cref="T:System.Collections.IEnumerable" /> interface containing the design-time <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> property of the associated control; otherwise, <see langword="null" /> if a data source is not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=fullName> method to construct a data source from the object that is specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property of the associated control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=fullName> method to construct a data source from the object that is specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property of the associated control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -419,10 +419,10 @@
         <returns>An object that implements an <see cref="T:System.Collections.IEnumerable" /> interface containing a design-time <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetTemplateContainerDataSource%2A> method calls the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetResolvedSelectedDataSource%2A> method to construct a data source from the object that is specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> properties of the associated control derived from <xref:System.Web.UI.WebControls.BaseDataList> class.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetTemplateContainerDataSource%2A> method calls the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetResolvedSelectedDataSource%2A> method to construct a data source from the object that is specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> properties of the associated control derived from <xref:System.Web.UI.WebControls.BaseDataList> class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -450,14 +450,14 @@
         <summary>Prepares the designer to view, edit, and design the associated control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The designer host calls the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Initialize%2A> method when it is ready to use the designer to render the control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Initialize%2A> method and its base methods configure properties and connect to events that are necessary for the operation of the designer.  
-  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Initialize%2A> connects to the design-time data source and updates the design-time markup. If the <xref:System.ComponentModel.IComponent.Site%2A> property implements the <xref:System.ComponentModel.Design.IComponentChangeService> interface, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Initialize%2A> connects the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentAdded>, <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving>, and <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved> events.  
-  
- The `component` parameter is the control, derived from the <xref:System.Web.UI.WebControls.BaseDataList>, that is associated with this designer, or a copy of that control.  
-  
+The designer host calls the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Initialize%2A> method when it is ready to use the designer to render the control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Initialize%2A> method and its base methods configure properties and connect to events that are necessary for the operation of the designer.  
+ 
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Initialize%2A> connects to the design-time data source and updates the design-time markup. If the <xref:System.ComponentModel.IComponent.Site%2A> property implements the <xref:System.ComponentModel.Design.IComponentChangeService> interface, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.Initialize%2A> connects the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentAdded>, <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving>, and <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved> events.  
+ 
+The `component` parameter is the control, derived from the <xref:System.Web.UI.WebControls.BaseDataList>, that is associated with this designer, or a copy of that control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,10 +482,10 @@
         <summary>Invokes a component editor for the associated control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.InvokePropertyBuilder%2A> method creates a <xref:System.Web.UI.Design.WebControls.DataGridComponentEditor> or <xref:System.Web.UI.Design.WebControls.DataListComponentEditor> object, and then invokes the <xref:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.EditComponent%2A> method of the component editor.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.InvokePropertyBuilder%2A> method creates a <xref:System.Web.UI.Design.WebControls.DataGridComponentEditor> or <xref:System.Web.UI.Design.WebControls.DataListComponentEditor> object, and then invokes the <xref:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.EditComponent%2A> method of the component editor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -517,10 +517,10 @@
         <summary>Handles the <see langword="AutoFormat" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnAutoFormat%2A> method is obsolete and has no functionality.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnAutoFormat%2A> method is obsolete and has no functionality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -545,12 +545,12 @@
         <summary>Called when an automatic formatting scheme has been applied to the associated control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnAutoFormatApplied%2A> method is called when a <xref:System.Web.UI.Design.DesignerAutoFormat> object is applied to the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. A <xref:System.Web.UI.Design.DesignerAutoFormat> object defines a <xref:System.Web.UI.Design.DesignerAutoFormatStyle> object that is applied to the control.  
-  
- A designer can override the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnAutoFormatApplied%2A> to inspect properties of the control or to take some other action.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnAutoFormatApplied%2A> method is called when a <xref:System.Web.UI.Design.DesignerAutoFormat> object is applied to the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. A <xref:System.Web.UI.Design.DesignerAutoFormat> object defines a <xref:System.Web.UI.Design.DesignerAutoFormatStyle> object that is applied to the control.  
+ 
+A designer can override the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnAutoFormatApplied%2A> to inspect properties of the control or to take some other action.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -577,10 +577,10 @@
         <summary>Called when there is a change to the associated control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnComponentChanged%2A> method is called when the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event of a control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class executes. Typically, this is in response to a property change on the control (for example, a **Properties** grid change). If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource%2A> object to which the control is bound is changed, the control is redrawn on the design surface.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnComponentChanged%2A> method is called when the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event of a control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class executes. Typically, this is in response to a property change on the control (for example, a **Properties** grid change). If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource%2A> object to which the control is bound is changed, the control is redrawn on the design surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -602,10 +602,10 @@
         <summary>Called when the data source for the associated control has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnDataSourceChanged%2A> base method connects the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class to the current data source, and if that is different from the data source to which the control was connected, the method updates the design-time markup.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnDataSourceChanged%2A> base method connects the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class to the current data source, and if that is different from the data source to which the control was connected, the method updates the design-time markup.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -632,10 +632,10 @@
         <summary>Represents the method that handles the property-builder event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnPropertyBuilder%2A> method invokes a component editor for the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. It creates a <xref:System.Web.UI.Design.WebControls.DataGridComponentEditor> or <xref:System.Web.UI.Design.WebControls.DataListComponentEditor> object, and then invokes the <xref:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.EditComponent%2A> method of the component editor.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnPropertyBuilder%2A> method invokes a component editor for the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. It creates a <xref:System.Web.UI.Design.WebControls.DataGridComponentEditor> or <xref:System.Web.UI.Design.WebControls.DataListComponentEditor> object, and then invokes the <xref:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.EditComponent%2A> method of the component editor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,10 +657,10 @@
         <summary>Called when the schema of the data source for the associated control changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless the designer is in template-editing mode or a field is being added or edited, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnSchemaRefreshed%2A> method calls the <xref:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange%2A> method, which in turn calls the <xref:System.Web.UI.Design.ControlDesigner.OnComponentChanged%2A> method to update the <xref:System.Web.UI.WebControls.BaseDataList> control to reflect the data source change.  
-  
+Unless the designer is in template-editing mode or a field is being added or edited, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnSchemaRefreshed%2A> method calls the <xref:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange%2A> method, which in turn calls the <xref:System.Web.UI.Design.ControlDesigner.OnComponentChanged%2A> method to update the <xref:System.Web.UI.WebControls.BaseDataList> control to reflect the data source change.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -682,10 +682,10 @@
         <summary>Can be overridden to implement functionality that should occur when a style of the associated control has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnStylesChanged%2A> method can serve as notification that a style of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class has changed.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnStylesChanged%2A> method can serve as notification that a style of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseDataList> class has changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -707,10 +707,10 @@
         <summary>Can be overridden to implement functionality that should occur when the designer template-editing verbs have changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnTemplateEditingVerbsChanged%2A> method can be implemented to perform additional processing, such recording that a change has occurred, when the template-editing verbs change.  
-  
+The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.OnTemplateEditingVerbsChanged%2A> method can be implemented to perform additional processing, such recording that a change has occurred, when the template-editing verbs change.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -738,12 +738,12 @@
         <summary>Used by the designer to remove properties from or add additional properties to the display in the **Properties** grid or to shadow properties of the associated control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
-  
- For controls that are derived from the <xref:System.Web.UI.WebControls.BaseDataList> class, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.PreFilterProperties%2A> creates design-time properties to shadow the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A>, <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A>, <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A>, and <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> properties.  
-  
+Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+ 
+For controls that are derived from the <xref:System.Web.UI.WebControls.BaseDataList> class, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.PreFilterProperties%2A> creates design-time properties to shadow the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A>, <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A>, <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A>, and <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> properties.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -769,10 +769,10 @@
           <see langword="true" /> if the schema can be refreshed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataBindingSchemaProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataBindingSchemaProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -798,10 +798,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema(System.Boolean)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataBindingSchemaProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataBindingSchemaProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -823,10 +823,10 @@
         <value>An <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataBindingSchemaProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataBindingSchemaProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

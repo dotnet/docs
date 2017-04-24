@@ -21,12 +21,12 @@
     <summary>Appears as the root of the visual subtree generated for a group.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.GroupItem> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
+A <xref:System.Windows.Controls.GroupItem> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+ 
+Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,10 +85,10 @@
         <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.GroupItem" /> when a new template is applied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.Controls.GroupItem.OnApplyTemplate%2A> method.  
-  
+This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.Controls.GroupItem.OnApplyTemplate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,10 +240,10 @@
         <value>An object that represents the sizes of the control's viewport and cache.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,10 +265,10 @@
         <value>An object that represents the desired size of the control's header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,10 +291,10 @@
           <see langword="true" /> if the control's layout pass occurs at a lower priority; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,10 +316,10 @@
         <value>An object that represents the desired size of the control's items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -341,10 +341,10 @@
         <value>The <see cref="T:System.Windows.Controls.Panel" /> that displays the items of the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,10 +367,10 @@
           <see langword="true" /> if the owning <see cref="T:System.Windows.Controls.ItemsControl" /> should virtualize its items; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.GroupItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

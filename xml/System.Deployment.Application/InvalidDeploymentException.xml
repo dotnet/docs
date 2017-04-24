@@ -14,12 +14,12 @@
     <summary>Indicates that [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] could not read either the deployment or application manifests.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Deployment.Application.InvalidDeploymentException> indicates the existence of a corrupt deployment or application manifest in a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application. The error might occur because the manifests are poorly formed, have unrecognized elements for their schemas, or have mismatched digital signatures.  
-  
- You are more likely to have corruption  if you manually edit the deployment or application manifest files with a text editor. You can usually correct this problem by regenerating your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment, which will create new deployment and application manifests. For more detailed debugging steps, see the following links.  
-  
+<xref:System.Deployment.Application.InvalidDeploymentException> indicates the existence of a corrupt deployment or application manifest in a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application. The error might occur because the manifests are poorly formed, have unrecognized elements for their schemas, or have mismatched digital signatures.  
+ 
+You are more likely to have corruption  if you manually edit the deployment or application manifest files with a text editor. You can usually correct this problem by regenerating your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment, which will create new deployment and application manifests. For more detailed debugging steps, see the following links.  
+ 
  ]]></format>
     </remarks>
   </Docs>

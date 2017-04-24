@@ -131,24 +131,24 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" /> object that contains the Active Directory Domain Services properties that are stored on this global catalog server.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following C# example shows how to enumerate the global catalog servers in the specified <xref:System.DirectoryServices.ActiveDirectory.DirectoryContext> object and print the common name of each property stored on each global catalog server to the standard console.  
-  
+The following C# example shows how to enumerate the global catalog servers in the specified <xref:System.DirectoryServices.ActiveDirectory.DirectoryContext> object and print the common name of each property stored on each global catalog server to the standard console.  
+ 
 ```csharp  
-  
+ 
 foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))  
 {  
-    Console.WriteLine(gc.Name);  
-  
-    foreach (ActiveDirectorySchemaProperty prop in gc.FindAllProperties())  
-    {  
-        Console.WriteLine(prop.CommonName);  
-    }  
+   Console.WriteLine(gc.Name);  
+ 
+   foreach (ActiveDirectorySchemaProperty prop in gc.FindAllProperties())  
+   {  
+       Console.WriteLine(prop.CommonName);  
+   }  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The domain controller is not a global catalog server or the global catalog server has been disabled.</exception>

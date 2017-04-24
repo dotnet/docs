@@ -19,10 +19,10 @@
     <summary>Enables the Web programming model for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.WebHttpBehavior> behavior, when used in conjunction with the <xref:System.ServiceModel.WebHttpBinding> binding, enables [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to expose and access Web style services. <xref:System.ServiceModel.Web.WebServiceHost> automatically adds this behavior to endpoints that use the <xref:System.ServiceModel.WebHttpBinding>.  
-  
+The <xref:System.ServiceModel.Description.WebHttpBehavior> behavior, when used in conjunction with the <xref:System.ServiceModel.WebHttpBinding> binding, enables [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to expose and access Web style services. <xref:System.ServiceModel.Web.WebServiceHost> automatically adds this behavior to endpoints that use the <xref:System.ServiceModel.WebHttpBinding>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -137,10 +137,10 @@
         <summary>Implements the <see cref="M:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" /> method to support modification or extension of the client across an endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As part of this method, <xref:System.ServiceModel.Description.WebHttpBehavior.GetRequestClientFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29> and <xref:System.ServiceModel.Description.WebHttpBehavior.GetReplyClientFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29> are called for each operation to determine the <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> to install.  
-  
+As part of this method, <xref:System.ServiceModel.Description.WebHttpBehavior.GetRequestClientFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29> and <xref:System.ServiceModel.Description.WebHttpBehavior.GetReplyClientFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29> are called for each operation to determine the <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> to install.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <summary>Implements the <see cref="M:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" /> method to support modification or extension of the client across an endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As part of this method, <xref:System.ServiceModel.Description.WebHttpBehavior.GetRequestDispatchFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29> and <xref:System.ServiceModel.Description.WebHttpBehavior.GetReplyDispatchFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29> are called for each operation to determine the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> to install.  
-  
+As part of this method, <xref:System.ServiceModel.Description.WebHttpBehavior.GetRequestDispatchFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29> and <xref:System.ServiceModel.Description.WebHttpBehavior.GetReplyDispatchFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29> are called for each operation to determine the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> to install.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
           <see langword="true" /> if automatic format selection is enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] automatic format selection, see [WCF Web HTTP Formatting](~/docs/framework/wcf/feature-details/wcf-web-http-formatting.md).  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] automatic format selection, see [WCF Web HTTP Formatting](~/docs/framework/wcf/feature-details/wcf-web-http-formatting.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,10 +221,10 @@
         <value>One of the values defined in the <see cref="T:System.ServiceModel.Web.WebMessageBodyStyle" /> enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the <xref:System.ServiceModel.Web.WebInvokeAttribute.BodyStyle%2A> property, the value of this property is used as the body style for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
-  
+If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the <xref:System.ServiceModel.Web.WebInvokeAttribute.BodyStyle%2A> property, the value of this property is used as the body style for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,10 +247,10 @@
         <value>One of the values defined in the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the `OutgoingRequestFormat` property, the value of this property is used as the request format for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageFormat>.  
-  
+If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the `OutgoingRequestFormat` property, the value of this property is used as the request format for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageFormat>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,10 +273,10 @@
         <value>One of the values defined in the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the `OutgoingResponseFormat` property, the value of this property is used as the response format for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageFormat>.  
-  
+If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the `OutgoingResponseFormat` property, the value of this property is used as the response format for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageFormat>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,10 +321,10 @@
         <returns>An instance of <see cref="T:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" /> that contains the operation selector for the specified endpoint.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> maps calls to [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service operations based on the Uniform Resource Identifier (URI) suffix and the HTTP method used. This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> that maps the incoming HTTP request to a service operation.  
-  
+The <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> maps calls to [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service operations based on the Uniform Resource Identifier (URI) suffix and the HTTP method used. This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> that maps the incoming HTTP request to a service operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,10 +351,10 @@
         <returns>A <see cref="T:System.ServiceModel.Dispatcher.QueryStringConverter" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.QueryStringConverter> that can convert the service operation parameter types to and from the HTTP request URL's query string.  
-  
+This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.QueryStringConverter> that can convert the service operation parameter types to and from the HTTP request URL's query string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,10 +383,10 @@
         <returns>An <see cref="T:System.ServiceModel.Dispatcher.IClientMessageFormatter" /> reference to the reply formatter on the client for the specified operation and endpoint.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> that is called to deserialize the response message into the out parameters/return value of the service operation.  
-  
+This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> that is called to deserialize the response message into the out parameters/return value of the service operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -414,10 +414,10 @@
         <returns>An <see cref="T:System.ServiceModel.Dispatcher.IDispatchMessageFormatter" /> reference to the reply formatter on the service for the specified operation and endpoint.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> that is called to convert the return value/out parameters of the service operation to a response message.  
-  
+This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> that is called to convert the return value/out parameters of the service operation to a response message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@
         <returns>An <see cref="T:System.ServiceModel.Dispatcher.IClientMessageFormatter" /> reference to the request formatter on the client for the specified operation and endpoint.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> that is called to convert the input parameters of the service operation call to a request message. Parameters specified in the <xref:System.UriTemplate> of the service operation must be serialized to the `To` URI of the request message and other parameters must be serialized to the body of the request message.  
-  
+This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> that is called to convert the input parameters of the service operation call to a request message. Parameters specified in the <xref:System.UriTemplate> of the service operation must be serialized to the `To` URI of the request message and other parameters must be serialized to the body of the request message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -477,10 +477,10 @@
         <returns>An <see cref="T:System.ServiceModel.Dispatcher.IDispatchMessageFormatter" /> reference to the request formatter on the service for the specified operation and endpoint.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> that is called to deserialize the input parameters of the service operation from the request message. Parameters specified in the <xref:System.UriTemplate> of the service operation must be deserialized from the `To` URI of the request message and other parameters must be deserialized from the body of the request message.  
-  
+This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> that is called to deserialize the input parameters of the service operation from the request message. Parameters specified in the <xref:System.UriTemplate> of the service operation must be deserialized from the `To` URI of the request message and other parameters must be deserialized from the body of the request message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -504,35 +504,35 @@
           <see langword="true" /> if the [!INCLUDE[indigo2](~/includes/indigo2-md.md)]Help page is enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST Help page, see [WCF Web HTTP Service Help Page](~/docs/framework/wcf/feature-details/wcf-web-http-service-help-page.md).  
-  
- To enable the helpEnabled attribute in a configuration file:  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST Help page, see [WCF Web HTTP Service Help Page](~/docs/framework/wcf/feature-details/wcf-web-http-service-help-page.md).  
+ 
+To enable the helpEnabled attribute in a configuration file:  
+ 
 ```  
-  
+ 
 <system.serviceModel>  
-    <behaviors>  
-        <endpointBehaviors>  
-            <behavior name="MyEndpointBehavior">  
-                <webHttp helpEnabled="true" />  
-            </behavior>  
-    </endpointBehaviors>  
+   <behaviors>  
+       <endpointBehaviors>  
+           <behavior name="MyEndpointBehavior">  
+               <webHttp helpEnabled="true" />  
+           </behavior>  
+   </endpointBehaviors>  
 </system.serviceModel>  
-  
+ 
 ```  
-  
- To programmatically enable the HelpEnabled property:  
-  
+ 
+To programmatically enable the HelpEnabled property:  
+ 
 ```  
-  
+ 
 WebHttpBehavior helpBehavior = new WebHttpBehavior();  
 helpBehavior.HelpEnabled = true;  
 host.Description.Endpoints[0].Behaviors.Add(helpBehavior);  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,22 +576,22 @@ host.Description.Endpoints[0].Behaviors.Add(helpBehavior);
         <summary>Confirms that the endpoint meets the requirements for the Web programming model.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Verifies the following:  
-  
+Verifies the following:  
+ 
 -   The endpoint is not `null`.  
-  
+ 
 -   The endpoint uses the HTTP or HTTPS schemes.  
-  
+ 
 -   The <xref:System.ServiceModel.Channels.MessageVersion> of the binding is set to <xref:System.ServiceModel.Channels.MessageVersion.None%2A>.  
-  
+ 
 -   The binding contains an <xref:System.ServiceModel.Channels.HttpTransportBindingElement> where <xref:System.ServiceModel.Channels.TransportBindingElement.ManualAddressing%2A> is set to `true`.  
-  
+ 
 -   The parameters specified in the <xref:System.UriTemplate> must be part of the operation.  
-  
+ 
 -   Operations that specify <xref:System.ServiceModel.Web.WebMessageBodyStyle> have, at most, one input parameter and can have no out parameters.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

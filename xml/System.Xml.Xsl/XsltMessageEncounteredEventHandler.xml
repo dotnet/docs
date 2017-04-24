@@ -27,12 +27,12 @@
     <summary>Represents the method that will handle the <see cref="E:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered> event occurs during XSLT processing when an `xsl:message` is specified in the style sheet.  
-  
- For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+The <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered> event occurs during XSLT processing when an `xsl:message` is specified in the style sheet.  
+ 
+For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
     </remarks>
   </Docs>

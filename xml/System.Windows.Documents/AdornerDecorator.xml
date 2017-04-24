@@ -14,21 +14,21 @@
     <summary>Provides an <see cref="T:System.Windows.Documents.AdornerLayer" /> for the child elements in the visual tree.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.AdornerDecorator> can contain only one child element. That element can contain multiple elements that can be adorned.  
+<xref:System.Windows.Documents.AdornerDecorator> can contain only one child element. That element can contain multiple elements that can be adorned.  
+ 
+The <xref:System.Windows.Documents.AdornerDecorator> specifies the position of the <xref:System.Windows.Documents.AdornerLayer> in the visual tree.  It is typically used in a <xref:System.Windows.Controls.ControlTemplate> for a control that might host <xref:System.Windows.Documents.Adorner> objects. For example, the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Window> contains an <xref:System.Windows.Documents.AdornerDecorator> so that the child elements of the window can be adorned. The <xref:System.Windows.Documents.AdornerLayer.GetAdornerLayer%2A> method returns `null` if you pass in an element that does not have an <xref:System.Windows.Documents.AdornerDecorator> as an ancestor in its visual tree.  
+ 
+For more information about adorners and visual trees, see [Adorners Overview](~/docs/framework/wpf/controls/adorners-overview.md) and [Trees in WPF](~/docs/framework/wpf/advanced/trees-in-wpf.md).  
+ 
   
- The <xref:System.Windows.Documents.AdornerDecorator> specifies the position of the <xref:System.Windows.Documents.AdornerLayer> in the visual tree.  It is typically used in a <xref:System.Windows.Controls.ControlTemplate> for a control that might host <xref:System.Windows.Documents.Adorner> objects. For example, the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Window> contains an <xref:System.Windows.Documents.AdornerDecorator> so that the child elements of the window can be adorned. The <xref:System.Windows.Documents.AdornerLayer.GetAdornerLayer%2A> method returns `null` if you pass in an element that does not have an <xref:System.Windows.Documents.AdornerDecorator> as an ancestor in its visual tree.  
-  
- For more information about adorners and visual trees, see [Adorners Overview](~/docs/framework/wpf/controls/adorners-overview.md) and [Trees in WPF](~/docs/framework/wpf/advanced/trees-in-wpf.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Window>.  The example adds a <xref:System.Windows.Controls.ContentPresenter> as the child element of an <xref:System.Windows.Documents.AdornerDecorator>. The logical child elements of the window can be adorned because the <xref:System.Windows.Documents.AdornerDecorator> is in their visual tree.  
-  
- [!code-xml[ControlTemplateExamples#Window](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/window.xaml#window)]  
-  
+The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Window>.  The example adds a <xref:System.Windows.Controls.ContentPresenter> as the child element of an <xref:System.Windows.Documents.AdornerDecorator>. The logical child elements of the window can be adorned because the <xref:System.Windows.Documents.AdornerDecorator> is in their visual tree.  
+ 
+[!code-xml[ControlTemplateExamples#Window](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/window.xaml#window)]  
+ 
  ]]></format>
     </remarks>
     <exception cref="T:System.ArgumentException">An attempt is made to add more than a single child to the <see cref="T:System.Windows.Documents.AdornerDecorator" />.</exception>
@@ -88,10 +88,10 @@
         <returns>The actual size needed by the element.  This return value is typically the same as the value passed to *finalSize*.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>.  
-  
+This method overrides <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <value>The single child of an <see cref="T:System.Windows.Documents.AdornerDecorator" />. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Documents.AdornerDecorator> can contain only one child, which is the parent element for the visual tree below the <xref:System.Windows.Documents.AdornerDecorator>.  
-  
+An <xref:System.Windows.Documents.AdornerDecorator> can contain only one child, which is the parent element for the visual tree below the <xref:System.Windows.Documents.AdornerDecorator>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <returns>A <see cref="T:System.Windows.Size" /> object representing the amount of layout space needed by the <see cref="T:System.Windows.Documents.AdornerDecorator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.MeasureOverride%2A>.  
-  
+This method overrides <xref:System.Windows.FrameworkElement.MeasureOverride%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

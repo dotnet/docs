@@ -14,16 +14,16 @@
     <summary>Provides methods and properties used to navigate the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- UI Automation clients view the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements on the desktop as a set of <xref:System.Windows.Automation.AutomationElement> objects arranged in a tree structure.  
-  
- Using the <xref:System.Windows.Automation.TreeWalker> class, a client application can navigate the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree by selecting a view of the tree and stepping from one <xref:System.Windows.Automation.AutomationElement> to another in a specified direction using the <xref:System.Windows.Automation.TreeWalker.GetFirstChild%2A>, <xref:System.Windows.Automation.TreeWalker.GetLastChild%2A>, <xref:System.Windows.Automation.TreeWalker.GetPreviousSibling%2A>, <xref:System.Windows.Automation.TreeWalker.GetNextSibling%2A>, and <xref:System.Windows.Automation.TreeWalker.GetParent%2A> methods.  
-  
- Navigating the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree using <xref:System.Windows.Automation.TreeWalker> can result in cross-process calls and is not as efficient as locating an element using the <xref:System.Windows.Automation.AutomationElement.FindAll%2A> or <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> methods.  
-  
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
-  
+UI Automation clients view the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements on the desktop as a set of <xref:System.Windows.Automation.AutomationElement> objects arranged in a tree structure.  
+ 
+Using the <xref:System.Windows.Automation.TreeWalker> class, a client application can navigate the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree by selecting a view of the tree and stepping from one <xref:System.Windows.Automation.AutomationElement> to another in a specified direction using the <xref:System.Windows.Automation.TreeWalker.GetFirstChild%2A>, <xref:System.Windows.Automation.TreeWalker.GetLastChild%2A>, <xref:System.Windows.Automation.TreeWalker.GetPreviousSibling%2A>, <xref:System.Windows.Automation.TreeWalker.GetNextSibling%2A>, and <xref:System.Windows.Automation.TreeWalker.GetParent%2A> methods.  
+ 
+Navigating the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree using <xref:System.Windows.Automation.TreeWalker> can result in cross-process calls and is not as efficient as locating an element using the <xref:System.Windows.Automation.AutomationElement.FindAll%2A> or <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> methods.  
+ 
+If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,20 +45,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.TreeWalker" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements that do not match `condition` are skipped over when <xref:System.Windows.Automation.TreeWalker> is used to navigate the element tree.  
+[!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements that do not match `condition` are skipped over when <xref:System.Windows.Automation.TreeWalker> is used to navigate the element tree.  
+ 
+If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+ 
   
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how you can construct a <xref:System.Windows.Automation.TreeWalker> that navigates only among enabled elements.  
-  
- [!code-csharp[UIAClient_snip#174](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#174)]
- [!code-vb[UIAClient_snip#174](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#174)]  
-  
+The following example shows how you can construct a <xref:System.Windows.Automation.TreeWalker> that navigates only among enabled elements.  
+ 
+[!code-csharp[UIAClient_snip#174](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#174)]
+[!code-vb[UIAClient_snip#174](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#174)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,18 +97,18 @@
         <summary>Represents a predefined <see cref="T:System.Windows.Automation.TreeWalker" /> containing a view of elements in the tree that are marked as content controls.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> is identical.  
-  
- [!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
- [!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
-  
+The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> is identical.  
+ 
+[!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
+[!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,18 +129,18 @@
         <summary>Represents a predefined <see cref="T:System.Windows.Automation.TreeWalker" /> containing a view of elements in the tree that are marked as controls.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker.ControlViewWalker> being used to construct a tree view of elements in a subtree.  
-  
- [!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
- [!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
-  
+The following example shows <xref:System.Windows.Automation.TreeWalker.ControlViewWalker> being used to construct a tree view of elements in a subtree.  
+ 
+[!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
+[!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,20 +166,20 @@
         <returns>The first child element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
+ 
   
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker.GetFirstChild%2A> being used to construct a tree view of elements in a subtree.  
-  
- [!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
- [!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
-  
+The following example shows <xref:System.Windows.Automation.TreeWalker.GetFirstChild%2A> being used to construct a tree view of elements in a subtree.  
+ 
+[!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
+[!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,12 +207,12 @@
         <returns>The first child element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,12 +238,12 @@
         <returns>The <see cref="T:System.Windows.Automation.AutomationElement" /> that is the last child element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,12 +271,12 @@
         <returns>The last element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -302,20 +302,20 @@
         <returns>The next sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
+ 
   
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker.GetNextSibling%2A> being used to construct a tree view of elements in a subtree.  
-  
- [!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
- [!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
-  
+The following example shows <xref:System.Windows.Automation.TreeWalker.GetNextSibling%2A> being used to construct a tree view of elements in a subtree.  
+ 
+[!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
+[!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,12 +343,12 @@
         <returns>The next sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,13 +374,13 @@
         <returns>The parent element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the specified element is the root element in the tree, or if the parent element is not visible in the current view.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker.GetParent%2A> being used to find the window element that contains a specified element.  
-  
- [!code-csharp[UIAFocusTracker_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFocusTracker_snip/CSharp/FocusTracker.cs#102)]
- [!code-vb[UIAFocusTracker_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFocusTracker_snip/VisualBasic/FocusTracker.vb#102)]  
-  
+The following example shows <xref:System.Windows.Automation.TreeWalker.GetParent%2A> being used to find the window element that contains a specified element.  
+ 
+[!code-csharp[UIAFocusTracker_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFocusTracker_snip/CSharp/FocusTracker.cs#102)]
+[!code-vb[UIAFocusTracker_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFocusTracker_snip/VisualBasic/FocusTracker.vb#102)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -408,10 +408,10 @@
         <returns>The parent element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the specified element is the root element in the tree, or the parent element is not visible in this view.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the parent element will be returned as the parent on subsequent passes.  
-  
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the parent element will be returned as the parent on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,12 +437,12 @@
         <returns>The previous sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -470,12 +470,12 @@
         <returns>The previous sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -501,12 +501,12 @@
         <returns>The nearest <see cref="T:System.Windows.Automation.AutomationElement" /> in the current view. If the navigation up the ancestor chain reaches the root element, the root element is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
-  
- This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use <xref:System.Windows.Automation.TreeWalker.Normalize%2A> to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
-  
+The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
+ 
+This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use <xref:System.Windows.Automation.TreeWalker.Normalize%2A> to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -534,12 +534,12 @@
         <returns>The nearest <see cref="T:System.Windows.Automation.AutomationElement" /> in the current view. If the navigation up the ancestor chain reaches the root element, the root element is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
-  
- This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use <xref:System.Windows.Automation.TreeWalker.Normalize%2A> to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
-  
+The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
+ 
+This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use <xref:System.Windows.Automation.TreeWalker.Normalize%2A> to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -560,18 +560,18 @@
         <summary>Represents a predefined <see cref="T:System.Windows.Automation.TreeWalker" /> containing a view of all the elements in the tree.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.RawViewWalker> is identical.  
-  
- [!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
- [!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
-  
+The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.RawViewWalker> is identical.  
+ 
+[!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
+[!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,12 +585,12 @@
         <summary>Retrieves the ancestor element nearest to the specified <see cref="T:System.Windows.Automation.AutomationElement" /> in the tree view used by this instance of <see cref="T:System.Windows.Automation.TreeWalker" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
-  
- This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use <xref:System.Windows.Automation.TreeWalker.Normalize%2A> to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
-  
+The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
+ 
+This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use <xref:System.Windows.Automation.TreeWalker.Normalize%2A> to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,10 +604,10 @@
         <summary>Retrieves the parent element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the parent element will be returned as the parent on subsequent passes.  
-  
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the parent element will be returned as the parent on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -621,12 +621,12 @@
         <summary>Retrieves the previous sibling of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -640,12 +640,12 @@
         <summary>Retrieves the first child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -659,12 +659,12 @@
         <summary>Retrieves the next sibling element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -678,12 +678,12 @@
         <summary>Retrieves the last child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
-  
+An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+ 
+The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

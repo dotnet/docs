@@ -19,28 +19,28 @@
     <summary>Represents an abstraction of an access control entry (ACE) that defines an audit rule for a pipe.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Audit rules determine when and how actions performed on system objects are logged.  
-  
- The <xref:System.IO.Pipes.PipeAuditRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to perform auditing. This class can specify how audit rules are inherited from and propagated to objects.  
-  
- To allow file auditing on computers that are running Windows NT or later operating systems, the Audit Access Security policy must be enabled; by default, this policy is set to **No Auditing**.  
-  
- To enable the Audit Access Security policy, perform the following steps:  
-  
+Audit rules determine when and how actions performed on system objects are logged.  
+ 
+The <xref:System.IO.Pipes.PipeAuditRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to perform auditing. This class can specify how audit rules are inherited from and propagated to objects.  
+ 
+To allow file auditing on computers that are running Windows NT or later operating systems, the Audit Access Security policy must be enabled; by default, this policy is set to **No Auditing**.  
+ 
+To enable the Audit Access Security policy, perform the following steps:  
+ 
 1.  Click the **Start** button and then point to **All Programs**. Point to **Administrative Tools** and then click **Local Security Policy**.  
-  
+ 
 2.  In the Local Security Settings window, expand the Local Policies folder and left-click the Audit Policy folder.  
-  
+ 
 3.  Double-click the **Audit object access** entry in the right pane of the Local Security Settings window to display the **Audit object access Properties** dialog box.  
-  
+ 
 4.  Select the **Success** or **Failure** boxes to log successes or failures.  
-  
- Note that an audit rule for a user account requires a corresponding access rule for the same user account.  
-  
- Use the <xref:System.IO.Pipes.PipeAuditRule> class to create a new audit rule. You can persist this rule using the <xref:System.IO.Pipes.PipeSecurity> class.  
-  
+ 
+Note that an audit rule for a user account requires a corresponding access rule for the same user account.  
+ 
+Use the <xref:System.IO.Pipes.PipeAuditRule> class to create a new audit rule. You can persist this rule using the <xref:System.IO.Pipes.PipeSecurity> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.PipeAuditRule" /> class for a user account specified in a <see cref="T:System.Security.Principal.IdentityReference" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an audit rule that can be persisted using the <xref:System.IO.Pipes.PipeSecurity> class. Audit rules determine when and how actions performed on system objects are logged.  
-  
+Use this constructor to create an audit rule that can be persisted using the <xref:System.IO.Pipes.PipeSecurity> class. Audit rules determine when and how actions performed on system objects are logged.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.PipeAuditRule" /> class for a named user account.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an audit rule that can be persisted using the <xref:System.IO.Pipes.PipeSecurity> class. Audit rules determine when and how actions performed on system objects are logged.  
-  
+Use this constructor to create an audit rule that can be persisted using the <xref:System.IO.Pipes.PipeSecurity> class. Audit rules determine when and how actions performed on system objects are logged.  
+ 
  ]]></format>
         </remarks>
       </Docs>

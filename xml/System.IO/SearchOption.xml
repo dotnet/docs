@@ -27,19 +27,19 @@
     <summary>Specifies whether to search the current directory, or the current directory and all subdirectories.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you choose AllDirectories in your search and the directory structure contains a link that creates a loop, the search operation enters an infinite loop.  
+If you choose AllDirectories in your search and the directory structure contains a link that creates a loop, the search operation enters an infinite loop.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example lists all the directories and files that begin with the letter "c", as in "c:\\". In this example, the <xref:System.IO.SearchOption> is used to specify that only the top-level directory should be searched.  
-  
- [!code-cpp[System.IO.DirectoryInfo_SearchOptions#00](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.DirectoryInfo_SearchOptions/cpp/searchoption.cpp#00)]
- [!code-csharp[System.IO.DirectoryInfo_SearchOptions#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.DirectoryInfo_SearchOptions/cs/searchoption.cs#00)]
- [!code-vb[System.IO.DirectoryInfo_SearchOptions#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.DirectoryInfo_SearchOptions/vb/searchoption.vb#00)]  
-  
+The following example lists all the directories and files that begin with the letter "c", as in "c:\\". In this example, the <xref:System.IO.SearchOption> is used to specify that only the top-level directory should be searched.  
+ 
+[!code-cpp[System.IO.DirectoryInfo_SearchOptions#00](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.DirectoryInfo_SearchOptions/cpp/searchoption.cpp#00)]
+[!code-csharp[System.IO.DirectoryInfo_SearchOptions#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.DirectoryInfo_SearchOptions/cs/searchoption.cs#00)]
+[!code-vb[System.IO.DirectoryInfo_SearchOptions#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.DirectoryInfo_SearchOptions/vb/searchoption.vb#00)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

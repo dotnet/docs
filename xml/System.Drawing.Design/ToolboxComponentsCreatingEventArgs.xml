@@ -14,19 +14,19 @@
     <summary>Provides data for the <see cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreating" /> event that occurs when components are added to the toolbox.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Design.ToolboxItem.ComponentsCreating> event is raised when components are about to be added to the toolbox. <xref:System.Drawing.Design.ToolboxComponentsCreatingEventArgs> provides data indicating the designer that has requested that the components be added.  
+The <xref:System.Drawing.Design.ToolboxItem.ComponentsCreating> event is raised when components are about to be added to the toolbox. <xref:System.Drawing.Design.ToolboxComponentsCreatingEventArgs> provides data indicating the designer that has requested that the components be added.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example method returns a <xref:System.Drawing.Design.ToolboxComponentsCreatingEventArgs> that indicates the designer host that is about to receive a new component or set of components:  
-  
- [!code-cpp[MoreEventArgsExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/MoreEventArgsExamples/CPP/class1.cpp#4)]
- [!code-csharp[MoreEventArgsExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/MoreEventArgsExamples/CS/class1.cs#4)]
- [!code-vb[MoreEventArgsExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MoreEventArgsExamples/VB/class1.vb#4)]  
-  
+The following example method returns a <xref:System.Drawing.Design.ToolboxComponentsCreatingEventArgs> that indicates the designer host that is about to receive a new component or set of components:  
+ 
+[!code-cpp[MoreEventArgsExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/MoreEventArgsExamples/CPP/class1.cpp#4)]
+[!code-csharp[MoreEventArgsExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/MoreEventArgsExamples/CS/class1.cs#4)]
+[!code-vb[MoreEventArgsExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MoreEventArgsExamples/VB/class1.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <value>The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> that made the request to create toolbox components, or <see langword="null" /> if no designer host was provided to the toolbox item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be `null` if no designer host was provided to the toolbox item.  
-  
+This property can be `null` if no designer host was provided to the toolbox item.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -41,18 +41,18 @@
     <summary>Definition of the WS-Trust service contract implementation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implements the following service contract interfaces:  
-  
+Implements the following service contract interfaces:  
+ 
 -   <xref:System.ServiceModel.Security.IWSTrustFeb2005SyncContract>  
-  
+ 
 -   <xref:System.ServiceModel.Security.IWSTrust13SyncContract>  
-  
+ 
 -   <xref:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract>  
-  
+ 
 -   <xref:System.ServiceModel.Security.IWSTrust13AsyncContract>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -1129,10 +1129,10 @@
         <summary>When implemented in a derived class, writes custom Web Services Description Language (WSDL) elements into the generated WSDL for a contract.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Provides an implementation of the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method. The default implementation does nothing. You can override this method in a derived class to implement specific behavior.  
-  
+Provides an implementation of the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method. The default implementation does nothing. You can override this method in a derived class to implement specific behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1159,18 +1159,18 @@
         <summary>Writes custom Web Services Description Language (WSDL) elements into the generated WSDL for an endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implements the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> method.  
-  
- The default implementation does the following for every WS-Trust contract found:  
-  
+Implements the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> method.  
+ 
+The default implementation does the following for every WS-Trust contract found:  
+ 
 1.  Includes the appropriate WS-Trust namespace in the WSDL.  
-  
+ 
 2.  Imports the appropriate WS-Trust schema and all dependent schemas.  
-  
+ 
 3.  Fixes the Messages of each operation to appropriate WS-Trust equivalents. The WS-Trust Contract exposed by Windows Identity Foundation (WIF) takes a <xref:System.ServiceModel.Channels.Message> in and returns a <xref:System.ServiceModel.Channels.Message> out. But WS-Trust messages expect an RST and return an RSTR/RSTRC. This method fixes the message names with the appropriate WS-Trust messages.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1205,10 +1205,10 @@
         <summary>During WSDL generation, this method fixes a specified operation message element to refer to the RST and RSTR elements of the appropriate WS-Trust version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The WS-Trust Contract exposed by Windows Identity Foundation (WIF) takes a <xref:System.ServiceModel.Channels.Message> in and returns a <xref:System.ServiceModel.Channels.Message> out. But WS-Trust messages expect an RST and return an RSTR/RSTRC. This method fixes the message names with the appropriate WS-Trust messages specified by the XML qualified names in `inputMessageElement` and `outputMessageLement`.  
-  
+The WS-Trust Contract exposed by Windows Identity Foundation (WIF) takes a <xref:System.ServiceModel.Channels.Message> in and returns a <xref:System.ServiceModel.Channels.Message> out. But WS-Trust messages expect an RST and return an RSTR/RSTRC. This method fixes the message names with the appropriate WS-Trust messages specified by the XML qualified names in `inputMessageElement` and `outputMessageLement`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1269,10 +1269,10 @@
         <returns>The security token resolver that is used to resolve any SecurityTokenIdentifiers when deserializing RST UseKey elements or RST RenewTarget elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.IdentityModel.Selectors.SecurityTokenResolver> is used to resolve any SecurityTokenIdentifiers when deserializing RST UseKey elements or RST RenewTarget elements.  
-  
+This <xref:System.IdentityModel.Selectors.SecurityTokenResolver> is used to resolve any SecurityTokenIdentifiers when deserializing RST UseKey elements or RST RenewTarget elements.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1331,10 +1331,10 @@
         <summary>Imports all of the required schemas if not already present in the WSDL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation imports the following schemas: WS-Trust Feb 2005 and WS-Trust 1.3. You can override this method in derived classes to import other schemas.  
-  
+The default implementation imports the following schemas: WS-Trust Feb 2005 and WS-Trust 1.3. You can override this method in derived classes to import other schemas.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1776,10 +1776,10 @@
         <summary>Occurs when a failure happens processing a WS-Trust request from the client.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the <xref:System.ServiceModel.Security.WSTrustServiceContract.HandleException%2A> method.  
-  
+For more information, see the <xref:System.ServiceModel.Security.WSTrustServiceContract.HandleException%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1824,12 +1824,12 @@
         <summary>When implemented in a derived class, confirms that the contract and endpoint can support the contract behavior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation just returns without throwing an exception. This indicates that the specified contract and endpoint are valid.  
-  
- Inherited from <xref:System.ServiceModel.Description.IContractBehavior>.  
-  
+The default implementation just returns without throwing an exception. This indicates that the specified contract and endpoint are valid.  
+ 
+Inherited from <xref:System.ServiceModel.Description.IContractBehavior>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1854,10 +1854,10 @@
         <summary>Validates the specified <see cref="T:System.ServiceModel.Security.DispatchContext" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ensures that the <xref:System.ServiceModel.Security.DispatchContext> Object represents a legal request prior to being passed into the <xref:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest%2A> method. The default implementation rejects incoming RST messages with RSTR actions and vice versa.  
-  
+This method ensures that the <xref:System.ServiceModel.Security.DispatchContext> Object represents a legal request prior to being passed into the <xref:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest%2A> method. The default implementation rejects incoming RST messages with RSTR actions and vice versa.  
+ 
  ]]></format>
         </remarks>
       </Docs>

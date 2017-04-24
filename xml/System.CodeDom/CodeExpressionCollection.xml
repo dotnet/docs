@@ -22,21 +22,21 @@
     <summary>Represents a collection of <see cref="T:System.CodeDom.CodeExpression" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Provides a simple collection object that can represent a set of Code Document Object Model (CodeDOM) expression objects.  
+Provides a simple collection object that can represent a set of Code Document Object Model (CodeDOM) expression objects.  
+ 
+The <xref:System.CodeDom.CodeExpressionCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeExpression> objects.  
+ 
   
- The <xref:System.CodeDom.CodeExpressionCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeExpression> objects.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of  the <xref:System.CodeDom.CodeExpressionCollection> class methods. The example creates a new instance of the class and uses the methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
-  
- [!code-cpp[CodeExpressionCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#1)]
- [!code-csharp[CodeExpressionCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#1)]
- [!code-vb[CodeExpressionCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#1)]  
-  
+The following example demonstrates the use of  the <xref:System.CodeDom.CodeExpressionCollection> class methods. The example creates a new instance of the class and uses the methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+ 
+[!code-cpp[CodeExpressionCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#1)]
+[!code-csharp[CodeExpressionCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#1)]
+[!code-vb[CodeExpressionCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -116,14 +116,14 @@
         <returns>The index at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to add a <xref:System.CodeDom.CodeExpression> object to a <xref:System.CodeDom.CodeExpressionCollection> instance.  
-  
- [!code-cpp[CodeExpressionCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#3)]
- [!code-csharp[CodeExpressionCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#3)]
- [!code-vb[CodeExpressionCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#3)]  
-  
+The following example demonstrates how to add a <xref:System.CodeDom.CodeExpression> object to a <xref:System.CodeDom.CodeExpressionCollection> instance.  
+ 
+[!code-cpp[CodeExpressionCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#3)]
+[!code-csharp[CodeExpressionCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#3)]
+[!code-vb[CodeExpressionCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,14 +148,14 @@
         <summary>Copies the elements of the specified array to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeExpressionCollection.AddRange%28System.CodeDom.CodeExpression%5B%5D%29> method overload to add the members of a <xref:System.CodeDom.CodeExpression> array to a <xref:System.CodeDom.CodeExpressionCollection>.  
-  
- [!code-cpp[CodeExpressionCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CodeExpressionCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeExpressionCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#4)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeExpressionCollection.AddRange%28System.CodeDom.CodeExpression%5B%5D%29> method overload to add the members of a <xref:System.CodeDom.CodeExpression> array to a <xref:System.CodeDom.CodeExpressionCollection>.  
+ 
+[!code-cpp[CodeExpressionCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CodeExpressionCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeExpressionCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -182,14 +182,14 @@
         <summary>Copies the contents of another <see cref="T:System.CodeDom.CodeExpressionCollection" /> object to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeExpressionCollection.AddRange%28System.CodeDom.CodeExpressionCollection%29> method overload to add the members of one <xref:System.CodeDom.CodeExpressionCollection> object to another <xref:System.CodeDom.CodeExpressionCollection>.  
-  
- [!code-cpp[CodeExpressionCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CodeExpressionCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeExpressionCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#4)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeExpressionCollection.AddRange%28System.CodeDom.CodeExpressionCollection%29> method overload to add the members of one <xref:System.CodeDom.CodeExpressionCollection> object to another <xref:System.CodeDom.CodeExpressionCollection>.  
+ 
+[!code-cpp[CodeExpressionCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CodeExpressionCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeExpressionCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -218,14 +218,14 @@
           <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.CodeDom.CodeExpressionCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeExpression> object and gets the index value at which it was found.  
-  
- [!code-cpp[CodeExpressionCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CodeExpressionCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeExpressionCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#5)]  
-  
+The following example uses the <xref:System.CodeDom.CodeExpressionCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeExpression> object and gets the index value at which it was found.  
+ 
+[!code-cpp[CodeExpressionCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CodeExpressionCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeExpressionCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,14 +252,14 @@
         <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance beginning at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeExpressionCollection> to a <xref:System.CodeDom.CodeExpression> array beginning at the index value 0.  
-  
- [!code-cpp[CodeExpressionCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#6)]
- [!code-csharp[CodeExpressionCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#6)]
- [!code-vb[CodeExpressionCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#6)]  
-  
+The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeExpressionCollection> to a <xref:System.CodeDom.CodeExpression> array beginning at the index value 0.  
+ 
+[!code-cpp[CodeExpressionCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#6)]
+[!code-csharp[CodeExpressionCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#6)]
+[!code-vb[CodeExpressionCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
@@ -292,14 +292,14 @@
         <returns>The index of the specified object, if found, in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example searches for the presence of a specific <xref:System.CodeDom.CodeExpression> object and uses the <xref:System.CodeDom.CodeExpressionCollection.IndexOf%2A> method to get the index value at which it was found.  
-  
- [!code-cpp[CodeExpressionCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CodeExpressionCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeExpressionCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#5)]  
-  
+The following example searches for the presence of a specific <xref:System.CodeDom.CodeExpression> object and uses the <xref:System.CodeDom.CodeExpressionCollection.IndexOf%2A> method to get the index value at which it was found.  
+ 
+[!code-cpp[CodeExpressionCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CodeExpressionCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeExpressionCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,14 +326,14 @@
         <summary>Inserts the specified <see cref="T:System.CodeDom.CodeExpression" /> object into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeExpressionCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeExpression> object to a <xref:System.CodeDom.CodeExpressionCollection>.  
-  
- [!code-cpp[CodeExpressionCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#8)]
- [!code-csharp[CodeExpressionCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#8)]
- [!code-vb[CodeExpressionCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#8)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeExpressionCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeExpression> object to a <xref:System.CodeDom.CodeExpressionCollection>.  
+ 
+[!code-cpp[CodeExpressionCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#8)]
+[!code-csharp[CodeExpressionCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#8)]
+[!code-vb[CodeExpressionCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> object at each valid index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is an indexer that can be used to access the collection.  
-  
+This property is an indexer that can be used to access the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
@@ -388,14 +388,14 @@
         <summary>Removes the specified <see cref="T:System.CodeDom.CodeExpression" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeExpressionCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeExpression> object from a <xref:System.CodeDom.CodeExpressionCollection>.  
-  
- [!code-cpp[CodeExpressionCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#9)]
- [!code-csharp[CodeExpressionCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#9)]
- [!code-vb[CodeExpressionCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#9)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeExpressionCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeExpression> object from a <xref:System.CodeDom.CodeExpressionCollection>.  
+ 
+[!code-cpp[CodeExpressionCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeExpressionCollectionExample/CPP/class1.cpp#9)]
+[!code-csharp[CodeExpressionCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeExpressionCollectionExample/CS/class1.cs#9)]
+[!code-vb[CodeExpressionCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeExpressionCollectionExample/VB/class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>

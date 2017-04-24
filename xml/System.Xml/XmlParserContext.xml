@@ -25,13 +25,13 @@
     <summary>Provides all the context information required by the <see cref="T:System.Xml.XmlReader" /> to parse an XML fragment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Xml.XmlReader> object that reads an XML fragment.  
-  
- [!code-csharp[XmlReader.Create#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlReader.Create/CS/XmlReader_Create.cs#1)]
- [!code-vb[XmlReader.Create#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlReader.Create/VB/XmlReader_Create.vb#1)]  
-  
+The following example creates an <xref:System.Xml.XmlReader> object that reads an XML fragment.  
+ 
+[!code-csharp[XmlReader.Create#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlReader.Create/CS/XmlReader_Create.cs#1)]
+[!code-vb[XmlReader.Create#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlReader.Create/VB/XmlReader_Create.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,13 +70,13 @@
         <summary>Initializes a new instance of the <see langword="XmlParserContext" /> class with the specified <see cref="T:System.Xml.XmlNameTable" />, <see cref="T:System.Xml.XmlNamespaceManager" />, <see langword="xml:lang" />, and <see langword="xml:space" /> values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example reads an XML fragment. It uses an `XmlParserContext` and its `XmlNamespaceManager` to handle namespace matching.  
-  
- [!code-csharp[Classic WebData XmlParserContext.XmlParserContext Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlParserContext.XmlParserContext Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlParserContext.XmlParserContext Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlParserContext.XmlParserContext Example/VB/source.vb#1)]  
-  
+The following example reads an XML fragment. It uses an `XmlParserContext` and its `XmlNamespaceManager` to handle namespace matching.  
+ 
+[!code-csharp[Classic WebData XmlParserContext.XmlParserContext Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlParserContext.XmlParserContext Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlParserContext.XmlParserContext Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlParserContext.XmlParserContext Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">
@@ -166,20 +166,20 @@
         <summary>Initializes a new instance of the <see langword="XmlParserContext" /> class with the specified <see cref="T:System.Xml.XmlNameTable" />, <see cref="T:System.Xml.XmlNamespaceManager" />, base URI, <see langword="xml:lang" />, <see langword="xml:space" />, and document type values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor supplies all `DocumentType` information required by <xref:System.Xml.XmlValidatingReader>. If this `XmlParserContext` is passed to an <xref:System.Xml.XmlTextReader>, all DTD information is ignored.  
+This constructor supplies all `DocumentType` information required by <xref:System.Xml.XmlValidatingReader>. If this `XmlParserContext` is passed to an <xref:System.Xml.XmlTextReader>, all DTD information is ignored.  
+ 
+If you pass a DTD as the `internalSubset`, the DTD is used for entity resolution, not for document validation.  
+ 
   
- If you pass a DTD as the `internalSubset`, the DTD is used for entity resolution, not for document validation.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses an `XmlParserContext` to read an XML fragment.  
-  
- [!code-csharp[Classic WebData XmlParserContext.XmlParserContext1 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlParserContext.XmlParserContext1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlParserContext.XmlParserContext1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlParserContext.XmlParserContext1 Example/VB/source.vb#1)]  
-  
+The following example uses an `XmlParserContext` to read an XML fragment.  
+ 
+[!code-csharp[Classic WebData XmlParserContext.XmlParserContext1 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlParserContext.XmlParserContext1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlParserContext.XmlParserContext1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlParserContext.XmlParserContext1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">
@@ -263,10 +263,10 @@
         <value>The base URI to use to resolve the DTD file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A networked XML document is comprised of chunks of data aggregated using various W3C standard inclusion mechanisms and therefore may contain nodes that come from different places. `BaseURI` shows where these nodes originated.  
-  
+A networked XML document is comprised of chunks of data aggregated using various W3C standard inclusion mechanisms and therefore may contain nodes that come from different places. `BaseURI` shows where these nodes originated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,10 +299,10 @@
         <value>The name of the document type declaration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property, along with <xref:System.Xml.XmlParserContext.PublicId%2A>, <xref:System.Xml.XmlParserContext.SystemId%2A>, and <xref:System.Xml.XmlParserContext.InternalSubset%2A>, provides all the document type declaration information. It is used to find and load the necessary DTD information so that you get all the default attributes and entities defined in the DTD.  
-  
+This property, along with <xref:System.Xml.XmlParserContext.PublicId%2A>, <xref:System.Xml.XmlParserContext.SystemId%2A>, and <xref:System.Xml.XmlParserContext.InternalSubset%2A>, provides all the document type declaration information. It is used to find and load the necessary DTD information so that you get all the default attributes and entities defined in the DTD.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,12 +364,12 @@
         <value>The internal DTD subset. For example, this property returns everything between the square brackets <c>&lt;!DOCTYPE doc [...]&gt;</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property, along with <xref:System.Xml.XmlParserContext.DocTypeName%2A>, <xref:System.Xml.XmlParserContext.PublicId%2A>, and <xref:System.Xml.XmlParserContext.SystemId%2A>, provides all the document type declaration information. It is used to find and load the necessary DTD information so that you get all the default attributes and entities defined in the DTD.  
-  
- The DTD is used for entity resolution, not for document validation.  
-  
+This property, along with <xref:System.Xml.XmlParserContext.DocTypeName%2A>, <xref:System.Xml.XmlParserContext.PublicId%2A>, and <xref:System.Xml.XmlParserContext.SystemId%2A>, provides all the document type declaration information. It is used to find and load the necessary DTD information so that you get all the default attributes and entities defined in the DTD.  
+ 
+The DTD is used for entity resolution, not for document validation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,10 +402,10 @@
         <value>The <see langword="XmlNamespaceManager" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `NamespaceManager` defines the current namespace scope and provides methods for looking up namespace information.  
-  
+The `NamespaceManager` defines the current namespace scope and provides methods for looking up namespace information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,10 +467,10 @@
         <value>The public identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property, along with <xref:System.Xml.XmlParserContext.DocTypeName%2A>, <xref:System.Xml.XmlParserContext.SystemId%2A>, and <xref:System.Xml.XmlParserContext.InternalSubset%2A>, provides all the document type declaration information. It is used to find and load the required DTD information so that you get all the default attributes and entities defined in the DTD.  
-  
+This property, along with <xref:System.Xml.XmlParserContext.DocTypeName%2A>, <xref:System.Xml.XmlParserContext.SystemId%2A>, and <xref:System.Xml.XmlParserContext.InternalSubset%2A>, provides all the document type declaration information. It is used to find and load the required DTD information so that you get all the default attributes and entities defined in the DTD.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,10 +503,10 @@
         <value>The system identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property, along with <xref:System.Xml.XmlParserContext.DocTypeName%2A>, <xref:System.Xml.XmlParserContext.PublicId%2A>, and <xref:System.Xml.XmlParserContext.InternalSubset%2A>, provides all the document type declaration information. It is used to find and load the necessary DTD information so that you get all the default attributes and entities defined in the DTD.  
-  
+This property, along with <xref:System.Xml.XmlParserContext.DocTypeName%2A>, <xref:System.Xml.XmlParserContext.PublicId%2A>, and <xref:System.Xml.XmlParserContext.InternalSubset%2A>, provides all the document type declaration information. It is used to find and load the necessary DTD information so that you get all the default attributes and entities defined in the DTD.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -539,10 +539,10 @@
         <value>The current <see langword="xml:lang" /> scope. If there is no <see langword="xml:lang" /> in scope, <see langword="String.Empty" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details on valid `xml:lang` values, refer to section 2.12 of the W3C Extensible Markup Language (XML) 1.0 recommendation.  
-  
+For details on valid `xml:lang` values, refer to section 2.12 of the W3C Extensible Markup Language (XML) 1.0 recommendation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

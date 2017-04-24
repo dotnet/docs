@@ -15,13 +15,13 @@
     <summary>Defines an endpoint that is authorized by a <see cref="T:System.Net.SocketPermission" /> instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.EndpointPermission> class defines a network endpoint, including host name, network port number, and transport type used to make the connection.  
-  
+The <xref:System.Net.EndpointPermission> class defines a network endpoint, including host name, network port number, and transport type used to make the connection.  
+ 
 > [!NOTE]
 >  Avoid creating EndPoint permissions using host names because these names will have to be resolved to IP address, which could block the stack.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -127,10 +127,10 @@
         <returns>A string that represents the current <see cref="T:System.Net.EndpointPermission" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.EndpointPermission.ToString%2A> method returns a string that represents the contents for the <xref:System.Net.EndpointPermission> instance. The string is in the form <xref:System.Net.EndpointPermission.Hostname%2A> # <xref:System.Net.EndpointPermission.Port%2A> # <xref:System.Net.EndpointPermission.Transport%2A>.  
-  
+The <xref:System.Net.EndpointPermission.ToString%2A> method returns a string that represents the contents for the <xref:System.Net.EndpointPermission> instance. The string is in the form <xref:System.Net.EndpointPermission.Hostname%2A> # <xref:System.Net.EndpointPermission.Port%2A> # <xref:System.Net.EndpointPermission.Transport%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

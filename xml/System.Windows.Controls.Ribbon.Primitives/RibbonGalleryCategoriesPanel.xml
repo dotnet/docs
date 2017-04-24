@@ -82,10 +82,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set, the value of this property is always coerced to `false`.  
-  
+When set, the value of this property is always coerced to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set, the value of this property is always coerced to `true`.  
-  
+When set, the value of this property is always coerced to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,10 +387,10 @@
         <summary>Invoked when a layout pass begins.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method invalidates the measurements of elements in the <xref:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel>.  
-  
+This method invalidates the measurements of elements in the <xref:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

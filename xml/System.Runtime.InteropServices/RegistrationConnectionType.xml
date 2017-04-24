@@ -19,12 +19,12 @@
     <summary>Defines the types of connections to a class object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values in the <xref:System.Runtime.InteropServices.RegistrationConnectionType> enumeration are used in the `flags` parameter of the <xref:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients%2A> method. These values are the same as those defined in the COM **REGCLS** enumeration, which is used as the `flags` parameter in calls to the COM API `CoRegisterClassObject`.  
-  
- For more information about `CoRegisterClassObject` and the **REGCLS** enumeration, see the MSDN library.  
-  
+The values in the <xref:System.Runtime.InteropServices.RegistrationConnectionType> enumeration are used in the `flags` parameter of the <xref:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients%2A> method. These values are the same as those defined in the COM **REGCLS** enumeration, which is used as the `flags` parameter in calls to the COM API `CoRegisterClassObject`.  
+ 
+For more information about `CoRegisterClassObject` and the **REGCLS** enumeration, see the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>

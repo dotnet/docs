@@ -14,23 +14,23 @@
     <summary>Provides methods used to render a scroll bar control with visual styles. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ScrollBarRenderer> class provides a set of `static` methods that can be used to render a scroll bar control with the current visual style of the operating system. Rendering a control refers to drawing the user interface of a control. This is useful if you are drawing a custom control that should have the appearance of the current visual style. To draw a scroll bar, use a combination of the methods in this class to render each part of the scroll bar.  
+The <xref:System.Windows.Forms.ScrollBarRenderer> class provides a set of `static` methods that can be used to render a scroll bar control with the current visual style of the operating system. Rendering a control refers to drawing the user interface of a control. This is useful if you are drawing a custom control that should have the appearance of the current visual style. To draw a scroll bar, use a combination of the methods in this class to render each part of the scroll bar.  
+ 
+If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods of this class will draw the scroll bar with the current visual style. Otherwise, the methods of this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property.  
+ 
+This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+ 
   
- If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods of this class will draw the scroll bar with the current visual style. Otherwise, the methods of this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property.  
-  
- This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.ScrollBarRenderer> methods to draw a scroll bar that responds to mouse clicks.  
-  
- [!code-cpp[System.Windows.Forms.ScrollBarRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#0)]
- [!code-csharp[System.Windows.Forms.ScrollBarRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#0)]
- [!code-vb[System.Windows.Forms.ScrollBarRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#0)]  
-  
+The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.ScrollBarRenderer> methods to draw a scroll bar that responds to mouse clicks.  
+ 
+[!code-cpp[System.Windows.Forms.ScrollBarRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#0)]
+[!code-csharp[System.Windows.Forms.ScrollBarRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#0)]
+[!code-vb[System.Windows.Forms.ScrollBarRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,19 +59,19 @@
         <summary>Draws a scroll arrow with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawArrowButton%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a scroll arrow in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawArrowButton%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a scroll arrow in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -109,19 +109,19 @@
         <summary>Draws a horizontal scroll box (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumb%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a scroll box in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumb%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a scroll box in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -159,19 +159,19 @@
         <summary>Draws a grip on a horizontal scroll box (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumbGrip%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a scroll box grip in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumbGrip%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a scroll box grip in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -209,19 +209,19 @@
         <summary>Draws a horizontal scroll bar track with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawLeftHorizontalTrack%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw the left side of a scroll bar track in the pressed state. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawLeftHorizontalTrack%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw the left side of a scroll bar track in the pressed state. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -259,10 +259,10 @@
         <summary>Draws a vertical scroll bar track with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
-  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -300,19 +300,19 @@
         <summary>Draws a horizontal scroll bar track with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawRightHorizontalTrack%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw the scroll bar track. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawRightHorizontalTrack%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw the scroll bar track. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -350,10 +350,10 @@
         <summary>Draws a scroll bar sizing handle with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
-  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -391,10 +391,10 @@
         <summary>Draws a vertical scroll bar track with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
-  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -432,10 +432,10 @@
         <summary>Draws a vertical scroll box (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
-  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -473,10 +473,10 @@
         <summary>Draws a grip on a vertical scroll box (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
-  
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -513,12 +513,12 @@
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size of the sizing handle.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the sizing handle is determined by the current visual style of the operating system.  
-  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
-  
+The size of the sizing handle is determined by the current visual style of the operating system.  
+ 
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -555,12 +555,12 @@
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size of the scroll box grip.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the scroll box grip is determined by the current visual style of the operating system.  
-  
- Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
-  
+The size of the scroll box grip is determined by the current visual style of the operating system.  
+ 
+Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -592,19 +592,19 @@
           <see langword="true" /> if the user has enabled visual styles in the operating system and visual styles are applied to the client areas of application windows; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `false`, the methods of this class will throw an <xref:System.InvalidOperationException>.  
+If this property is `false`, the methods of this class will throw an <xref:System.InvalidOperationException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property to determine whether to use the <xref:System.Windows.Forms.ScrollBarRenderer> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property to determine whether to use the <xref:System.Windows.Forms.ScrollBarRenderer> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

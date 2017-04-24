@@ -198,10 +198,10 @@
         <value>The virtual path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As an example of a virtual path, for the URL `http://www.contoso.com/virdir/page.html/tail`, the value of this property is `/virdir/page.html`.  
-  
+As an example of a virtual path, for the URL `http://www.contoso.com/virdir/page.html/tail`, the value of this property is `/virdir/page.html`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The property is not implemented.</exception>
@@ -399,10 +399,10 @@
         <value>The virtual path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As an example of a virtual path, for the URL `http://www.contoso.com/virdir/page.html/tail`, the value of this property is `/virdir/page.html/tail`.  
-  
+As an example of a virtual path, for the URL `http://www.contoso.com/virdir/page.html/tail`, the value of this property is `/virdir/page.html/tail`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The property is not implemented.</exception>
@@ -425,10 +425,10 @@
         <value>A string that contains additional path information for a resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As an example of a virtual path, for the URL `http://www.contoso.com/virdir/page.html/tail`, the value of this property is `/tail`.  
-  
+As an example of a virtual path, for the URL `http://www.contoso.com/virdir/page.html/tail`, the value of this property is `/tail`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The property is not implemented.</exception>
@@ -640,10 +640,10 @@
         <value>The unvalidated values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An unvalidated value has not been checked by ASP.NET request validation and might contain markup, script, or reserved characters. For more information about request validation, see <xref:System.Web.UnvalidatedRequestValues>.  
-  
+An unvalidated value has not been checked by ASP.NET request validation and might contain markup, script, or reserved characters. For more information about request validation, see <xref:System.Web.UnvalidatedRequestValues>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The property is not implemented.</exception>

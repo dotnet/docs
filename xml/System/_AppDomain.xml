@@ -26,10 +26,10 @@
     <summary>Exposes the public members of the <see cref="T:System.AppDomain" /> class to unmanaged code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface preserves the vtable order of the <xref:System.AppDomain?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
-  
+This interface preserves the vtable order of the <xref:System.AppDomain?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.AppendPrivatePath(System.String)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.AppendPrivatePath%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.AppendPrivatePath%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -94,10 +94,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.AssemblyLoad" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.AssemblyLoad?displayProperty=fullName> event.  
-  
+See the <xref:System.AppDomain.AssemblyLoad?displayProperty=fullName> event.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -128,10 +128,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.AssemblyResolve" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event.  
-  
+See the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -155,10 +155,10 @@
         <value>The base directory that the assembly resolver uses to probe for assemblies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.BaseDirectory%2A?displayProperty=fullName> property.  
-  
+See the <xref:System.AppDomain.BaseDirectory%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.ClearPrivatePath" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ClearPrivatePath%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.ClearPrivatePath%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -218,10 +218,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.ClearShadowCopyPath" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ClearShadowCopyPath%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.ClearShadowCopyPath%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -251,10 +251,10 @@
         <returns>An object that is a wrapper for the new instance specified by <paramref name="typeName" />. The return value needs to be unwrapped to access the real object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstance%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.CreateInstance%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,12 +285,12 @@
         <returns>An object that is a wrapper for the new instance specified by <paramref name="typeName" />. The return value needs to be unwrapped to access the real object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method overload.  
-  
- The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
-  
+See the <xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method overload.  
+ 
+The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,12 +333,12 @@
         <returns>An object that is a wrapper for the new instance specified by <paramref name="typeName" />. The return value needs to be unwrapped to access the real object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
-  
+See the <xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ 
+The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,10 +367,10 @@
         <returns>An object that is a wrapper for the new instance, or <see langword="null" /> if <paramref name="typeName" /> is not found. The return value needs to be unwrapped to access the real object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,12 +401,12 @@
         <returns>An object that is a wrapper for the new instance, or <see langword="null" /> if <paramref name="typeName" /> is not found. The return value needs to be unwrapped to access the real object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method overload.  
-  
- The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
-  
+See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method overload.  
+ 
+The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -449,12 +449,12 @@
         <returns>An object that is a wrapper for the new instance, or <see langword="null" /> if <paramref name="typeName" /> is not found. The return value needs to be unwrapped to access the real object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
-  
+See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ 
+The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -483,10 +483,10 @@
         <returns>Represents the dynamic assembly created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -517,10 +517,10 @@
         <returns>Represents the dynamic assembly created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -551,10 +551,10 @@
         <returns>Represents the dynamic assembly created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -587,10 +587,10 @@
         <returns>Represents the dynamic assembly created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -625,10 +625,10 @@
         <returns>Represents the dynamic assembly created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -665,10 +665,10 @@
         <returns>Represents the dynamic assembly created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -705,10 +705,10 @@
         <returns>Represents the dynamic assembly created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -747,10 +747,10 @@
         <returns>Represents the dynamic assembly created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -792,10 +792,10 @@
         <returns>Represents the dynamic assembly created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Boolean%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Boolean%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -821,10 +821,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.DoCallBack(System.CrossAppDomainDelegate)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DoCallBack%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.DoCallBack%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -846,10 +846,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.DomainUnload" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DomainUnload?displayProperty=fullName> event.  
-  
+See the <xref:System.AppDomain.DomainUnload?displayProperty=fullName> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -872,10 +872,10 @@
         <value>Get the directory that the assembly resolver uses to probe for dynamically-created assemblies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property.  
-  
+See the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -903,10 +903,10 @@
           <see langword="true" /> if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -929,10 +929,10 @@
         <value>Gets the <see cref="T:System.Security.Policy.Evidence" /> associated with this application domain that is used as input to the security policy.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.Evidence%2A?displayProperty=fullName> property.  
-  
+See the <xref:System.AppDomain.Evidence%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -959,10 +959,10 @@
         <returns>The value returned by the entry point of the assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ExecuteAssembly%28System.String%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.ExecuteAssembly%28System.String%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -991,10 +991,10 @@
         <returns>The value returned by the entry point of the assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1025,10 +1025,10 @@
         <returns>The value returned by the entry point of the assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.String%5B%5D%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.String%5B%5D%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1051,10 +1051,10 @@
         <value>The friendly name of this application domain.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.FriendlyName%2A?displayProperty=fullName> property.  
-  
+See the <xref:System.AppDomain.FriendlyName%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1078,10 +1078,10 @@
         <returns>An array of assemblies in this application domain.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.GetAssemblies%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.GetAssemblies%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1108,10 +1108,10 @@
         <returns>The value of the <paramref name="name" /> property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.GetData%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.GetData%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1135,10 +1135,10 @@
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1172,10 +1172,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1205,10 +1205,10 @@
         <returns>An object of type <see cref="T:System.Runtime.Remoting.Lifetime.ILease" /> used to control the lifetime policy for this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.MarshalByRefObject.GetLifetimeService%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.MarshalByRefObject.GetLifetimeService%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1233,10 +1233,10 @@
         <returns>A <see cref="T:System.Type" /> representing the type of the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.GetType%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.GetType%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1266,10 +1266,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1296,10 +1296,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1329,10 +1329,10 @@
         <returns>Always <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.InitializeLifetimeService%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.InitializeLifetimeService%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1373,10 +1373,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -1404,10 +1404,10 @@
         <returns>The loaded assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.Byte%5B%5D%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.Load%28System.Byte%5B%5D%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1434,10 +1434,10 @@
         <returns>The loaded assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1464,10 +1464,10 @@
         <returns>The loaded assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.String%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.Load%28System.String%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1496,10 +1496,10 @@
         <returns>The loaded assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the [\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%29?displayProperty=fullName> method overload.  
-  
+See the [\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1528,10 +1528,10 @@
         <returns>The loaded assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1560,10 +1560,10 @@
         <returns>The loaded assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
+See the <xref:System.AppDomain.Load%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1594,10 +1594,10 @@
         <returns>The loaded assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the [\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
+See the [\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1619,10 +1619,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.ProcessExit" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event.  
-  
+See the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1645,10 +1645,10 @@
         <value>The path under the base directory where the assembly resolver should probe for private assemblies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.RelativeSearchPath%2A?displayProperty=fullName> property.  
-  
+See the <xref:System.AppDomain.RelativeSearchPath%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1678,10 +1678,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.ResourceResolve" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ResourceResolve?displayProperty=fullName> event.  
-  
+See the <xref:System.AppDomain.ResourceResolve?displayProperty=fullName> event.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1713,10 +1713,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.SetAppDomainPolicy(System.Security.Policy.PolicyLevel)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1748,10 +1748,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.SetCachePath(System.String)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.SetCachePath%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.SetCachePath%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1785,10 +1785,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.SetData(System.String,System.Object)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.SetData%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.SetData%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1815,10 +1815,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.SetPrincipalPolicy(System.Security.Principal.PrincipalPolicy)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.SetPrincipalPolicy%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.SetPrincipalPolicy%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1849,10 +1849,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.SetShadowCopyPath(System.String)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.SetShadowCopyPath%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.SetShadowCopyPath%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1879,10 +1879,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.AppDomain.SetThreadPrincipal(System.Security.Principal.IPrincipal)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.SetThreadPrincipal%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.SetThreadPrincipal%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1906,10 +1906,10 @@
           <see langword="true" /> if the application domain is configured to shadow copy files; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ShadowCopyFiles%2A?displayProperty=fullName> property.  
-  
+See the <xref:System.AppDomain.ShadowCopyFiles%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1933,10 +1933,10 @@
         <returns>A string formed by concatenating the literal string "Name:", the friendly name of the application domain, and either string representations of the context policies or the string "There are no context policies."</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ToString%2A?displayProperty=fullName> method.  
-  
+See the <xref:System.AppDomain.ToString%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1966,10 +1966,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.TypeResolve" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.ToString%2A?displayProperty=fullName> event.  
-  
+See the <xref:System.AppDomain.ToString%2A?displayProperty=fullName> event.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -2000,10 +2000,10 @@
         <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.UnhandledException" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.AppDomain.UnhandledException?displayProperty=fullName> event.  
-  
+See the <xref:System.AppDomain.UnhandledException?displayProperty=fullName> event.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>

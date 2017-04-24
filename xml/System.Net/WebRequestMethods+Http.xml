@@ -63,10 +63,10 @@
         <summary>Represents an HTTP GET protocol method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The GET method retrieves the information or entity that is identified by the URI of the request. If that URI refers to a script or other data-producing process, it is the data produced, not the text of the script, which is returned in the response.  
-  
+The GET method retrieves the information or entity that is identified by the URI of the request. If that URI refers to a script or other data-producing process, it is the data produced, not the text of the script, which is returned in the response.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -46,14 +46,14 @@
         <value>The current <see langword="XmlSchema" /> in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays each of the XML Schema definition language (XSD) schemas in the schema collection.  
-  
- [!code-cpp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/VB/source.vb#1)]  
-  
+The following example displays each of the XML Schema definition language (XSD) schemas in the schema collection.  
+ 
+[!code-cpp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,14 +82,14 @@
           <see langword="true" /> if the move was successful; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays each of the XML Schemas in the schema collection.  
-  
- [!code-cpp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/VB/source.vb#1)]  
-  
+The following example displays each of the XML Schemas in the schema collection.  
+ 
+[!code-cpp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <value>Returns the current node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollectionEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollectionEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <returns>Returns the next node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollectionEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollectionEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,10 +177,10 @@
         <summary>For a description of this member, see <see cref="M:System.Xml.Schema.XmlSchemaCollectionEnumerator.System#Collections#IEnumerator#Reset" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollectionEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollectionEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

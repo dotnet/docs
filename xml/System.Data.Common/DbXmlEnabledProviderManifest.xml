@@ -14,12 +14,12 @@
     <summary>Represents a base class that implements the <see cref="T:System.Data.Common.DbProviderManifest" /> based on an XML definition. You can use the <see cref="T:System.Data.Common.DbXmlEnabledProviderManifest" /> class to obtain provider-specific information at runtime.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.DbXmlEnabledProviderManifest> class is especially appropriate for the providers whose type mapping to EDM is symmetrical. In symmetrical type mapping scenarios, each storage type maps to a single Entity Data Model (EDM) type regardless of the mapping direction. In other words, the EDM-to-provider type mapping is the same as the provider-to-EDM type mapping.  
-  
- In symmetric mapping scenarios, you can either derive your custom provider class from the <xref:System.Data.Common.DbXmlEnabledProviderManifest> class or the <xref:System.Data.Common.DbProviderManifest> class. We recommend that you derive your custom provider class from the <xref:System.Data.Common.DbXmlEnabledProviderManifest> class for symmetric mapping scenarios because the <xref:System.Data.Common.DbXmlEnabledProviderManifest> class will allow you to specify the manifests declaratively.  
-  
+The <xref:System.Data.Common.DbXmlEnabledProviderManifest> class is especially appropriate for the providers whose type mapping to EDM is symmetrical. In symmetrical type mapping scenarios, each storage type maps to a single Entity Data Model (EDM) type regardless of the mapping direction. In other words, the EDM-to-provider type mapping is the same as the provider-to-EDM type mapping.  
+ 
+In symmetric mapping scenarios, you can either derive your custom provider class from the <xref:System.Data.Common.DbXmlEnabledProviderManifest> class or the <xref:System.Data.Common.DbProviderManifest> class. We recommend that you derive your custom provider class from the <xref:System.Data.Common.DbXmlEnabledProviderManifest> class for symmetric mapping scenarios because the <xref:System.Data.Common.DbXmlEnabledProviderManifest> class will allow you to specify the manifests declaratively.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbXmlEnabledProviderManifest" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Entity Framework provides a default implementation that builds the provider manifest information from the given XmlReader.  
-  
+The Entity Framework provides a default implementation that builds the provider manifest information from the given XmlReader.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains the list of provider-supported functions.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This (not nullable) method does not return user-defined functions. If the provider does not support any functions, this method returns an empty collection.  
-  
+This (not nullable) method does not return user-defined functions. If the provider does not support any functions, this method returns an empty collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
         <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains the list of primitive types supported by the storage provider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the store does not support any type, this (not nullable) method returns an empty collection.  
-  
+If the store does not support any type, this (not nullable) method returns an empty collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,10 +158,10 @@
         <value>The best mapped equivalent EDM type for a specified storage type name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property (not nullable) returns the <xref:System.Collections.Generic.Dictionary> object, which accepts a storage type name as a key and returns its associated EDM type value.  
-  
+This property (not nullable) returns the <xref:System.Collections.Generic.Dictionary> object, which accepts a storage type name as a key and returns its associated EDM type value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <value>The best mapped equivalent storage primitive type for a specified storage type name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property (not nullable) returns the <xref:System.Collections.Generic.Dictionary> object, which accepts a storage type name as a key and returns its associated storage primitive type value.  
-  
+This property (not nullable) returns the <xref:System.Collections.Generic.Dictionary> object, which accepts a storage type name as a key and returns its associated storage primitive type value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

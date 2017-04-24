@@ -14,10 +14,10 @@
     <summary>Represents a metadata attribute for an item in the [!INCLUDE[vstecado](~/includes/vstecado-md.md)] metadata hierarchy.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can access every item in the [!INCLUDE[vstecado](~/includes/vstecado-md.md)] metadata hierarchy as a strongly typed property bag. The <xref:System.Data.Metadata.Edm.EdmType> class provides properties called <xref:System.Data.Metadata.Edm.EdmType.Name%2A>, <xref:System.Data.Metadata.Edm.EdmType.NamespaceName%2A>, and so on. The <xref:System.Data.Metadata.Edm.EdmType> class also inherits a <xref:System.Data.Metadata.Edm.MetadataItem.MetadataProperties%2A> property, which is a collection of <xref:System.Data.Metadata.Edm.MetadataProperty> objects. When the application creates an instance of the <xref:System.Data.Metadata.Edm.EdmType> class, the <xref:System.Data.Metadata.Edm.MetadataItem.MetadataProperties%2A> property automatically contains a collection of <xref:System.Data.Metadata.Edm.MetadataProperty> objects for <xref:System.Data.Metadata.Edm.EdmType.Name%2A> property, <xref:System.Data.Metadata.Edm.EdmType.NamespaceName%2A> property, and so on.  
-  
+You can access every item in the [!INCLUDE[vstecado](~/includes/vstecado-md.md)] metadata hierarchy as a strongly typed property bag. The <xref:System.Data.Metadata.Edm.EdmType> class provides properties called <xref:System.Data.Metadata.Edm.EdmType.Name%2A>, <xref:System.Data.Metadata.Edm.EdmType.NamespaceName%2A>, and so on. The <xref:System.Data.Metadata.Edm.EdmType> class also inherits a <xref:System.Data.Metadata.Edm.MetadataItem.MetadataProperties%2A> property, which is a collection of <xref:System.Data.Metadata.Edm.MetadataProperty> objects. When the application creates an instance of the <xref:System.Data.Metadata.Edm.EdmType> class, the <xref:System.Data.Metadata.Edm.MetadataItem.MetadataProperties%2A> property automatically contains a collection of <xref:System.Data.Metadata.Edm.MetadataProperty> objects for <xref:System.Data.Metadata.Edm.EdmType.Name%2A> property, <xref:System.Data.Metadata.Edm.EdmType.NamespaceName%2A> property, and so on.  
+ 
  ]]></format>
     </remarks>
   </Docs>

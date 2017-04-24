@@ -18,10 +18,10 @@
     <summary>Handles the import of messages from WSDL documents using the <see cref="T:System.Xml.Serialization.XmlSerializer" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.XmlSerializerMessageContractImporter> is invoked when converting a WSDL description. It examines the WSDL documents and generates an in-memory description to be used later for code generation.  
-  
+The <xref:System.ServiceModel.Description.XmlSerializerMessageContractImporter> is invoked when converting a WSDL description. It examines the WSDL documents and generates an in-memory description to be used later for code generation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Specifies a service description and schema set to use when importing a set of WSDL documents.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies a service description and schema set to use when importing a set of WSDL documents.  
-  
+Specifies a service description and schema set to use when importing a set of WSDL documents.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <summary>Imports the contract.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Imports the contract.  
-  
+Imports the contract.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <summary>Imports a specific endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Imports a specific endpoint.  
-  
+Imports a specific endpoint.  
+ 
  ]]></format>
         </remarks>
       </Docs>

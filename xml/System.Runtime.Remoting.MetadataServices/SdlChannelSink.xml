@@ -18,17 +18,17 @@
     <summary>Provides the implementation for a server channel sink that generates Web Services Description Language (WSDL) dynamically on the server.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.MetadataServices.SdlChannelSink> is used to create WSDL in situations where the URL ends with the string "?wsdl".  
-  
- The following table shows the channel configuration properties that can be specified for this channel sink. The first two properties combine to control the WSDL publication of objects published by the application domain. If `false` is specified for the first property, no WSDL is returned, regardless of the second property. (The default is `true`.) Otherwise, the second controls whether the global metadata object URI is permitted to respond. (The default is `false`.)  
-  
+The <xref:System.Runtime.Remoting.MetadataServices.SdlChannelSink> is used to create WSDL in situations where the URL ends with the string "?wsdl".  
+ 
+The following table shows the channel configuration properties that can be specified for this channel sink. The first two properties combine to control the WSDL publication of objects published by the application domain. If `false` is specified for the first property, no WSDL is returned, regardless of the second property. (The default is `true`.) Otherwise, the second controls whether the global metadata object URI is permitted to respond. (The default is `false`.)  
+ 
 |Property|Description|  
 |--------------|-----------------|  
 |`metadataEnabled`|A Boolean value that specifies whether to honor requests that end in "?wsdl" if this sink is in the channel sink chain. The default setting is `true`. If `false`, the sink throws an exception in all cases where metadata is requested for any object in the application domain.<br /><br /> This property is supported only by the .NET Framework version 1.1 on the following platforms: Windows 98, Windows NT 4.0, Windows Millennium Edition, Windows 2000, Windows XP Home Edition, Windows XP Professional, Windows Server 2003 family.|  
 |`remoteApplicationMetadataEnabled`|A Boolean value that specifies whether to honor requests for the object URI "RemoteApplicationMetadata?wsdl", which returns WSDL that describes all objects that are published by the application domain. If `false`, then any request to "RemoteApplicationMetadata.rem" throws an exception. All other "?wsdl" requests for particular object URIs are honored. If `true`, the global metadata request is honored. The default setting is `false`.<br /><br /> This property is supported only by the .NET Framework version 1.1 on the following platforms: Windows 98, Windows NT 4.0, Windows Millennium Edition, Windows 2000, Windows XP Home Edition, Windows XP Professional, Windows Server 2003 family.|  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -109,10 +109,10 @@
         <returns>The <see cref="T:System.IO.Stream" /> onto which the provided response message is to be serialized.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method is called when a response stream needs to be created.  
-  
+The current method is called when a response stream needs to be created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,16 +168,16 @@
         <returns>A <see cref="T:System.Runtime.Remoting.Channels.ServerProcessing" /> status value that provides information about how the message was processed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The proxy's job is to convert a method call that is invoked on it into a message object. The Message object, which implements the <xref:System.Runtime.Remoting.Messaging.IMessage> interface, is passed from the client end to the server end by invoking <xref:System.Runtime.Remoting.Channels.IServerChannelSink.ProcessMessage%2A> on message sink objects. Message sinks are chained together, which means that every message sink is responsible for calling <xref:System.Runtime.Remoting.Channels.IServerChannelSink.ProcessMessage%2A> on the next message sink after it has performed its work. For instance, a synchronization-related message sink might cause a lock to be acquired or released and delegated to the downstream message sink.  
-  
- When the formatter channel sink gets a message that needs to be sent over the channel, it calls <xref:System.Runtime.Remoting.Messaging.IMessageSink.SyncProcessMessage%2A>, passing the message as a parameter. The formatter sink then creates the transport header array and calls <xref:System.Runtime.Remoting.Channels.IClientChannelSink.GetRequestStream%2A> on the formatter sink. This call is forwarded down the sink chain, and any sink can create a request stream that is passed back to the formatter sink. After this call returns, the message is serialized, <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> is called on the first chain in the sink chain, and the message is passed to the channel sinks.  
-  
- After the channel sinks get the message, they can write data to the stream, add headers to the header array, and add themselves to the sink stack before forwarding the call to the next sink. When the call reaches the transport sink at the end of the chain, the transport sink sends the headers and serialized message over the channel to the server, where the process is reversed.  
-  
- When the message reaches the server side, the transport sink retrieves the headers and serialized message from the stream and forwards these through the sink chain until they reach the formatter sink. The formatter sink then deserializes the message and forwards it to remoting, where the message is turned into a method call and the server object is called.  
-  
+The proxy's job is to convert a method call that is invoked on it into a message object. The Message object, which implements the <xref:System.Runtime.Remoting.Messaging.IMessage> interface, is passed from the client end to the server end by invoking <xref:System.Runtime.Remoting.Channels.IServerChannelSink.ProcessMessage%2A> on message sink objects. Message sinks are chained together, which means that every message sink is responsible for calling <xref:System.Runtime.Remoting.Channels.IServerChannelSink.ProcessMessage%2A> on the next message sink after it has performed its work. For instance, a synchronization-related message sink might cause a lock to be acquired or released and delegated to the downstream message sink.  
+ 
+When the formatter channel sink gets a message that needs to be sent over the channel, it calls <xref:System.Runtime.Remoting.Messaging.IMessageSink.SyncProcessMessage%2A>, passing the message as a parameter. The formatter sink then creates the transport header array and calls <xref:System.Runtime.Remoting.Channels.IClientChannelSink.GetRequestStream%2A> on the formatter sink. This call is forwarded down the sink chain, and any sink can create a request stream that is passed back to the formatter sink. After this call returns, the message is serialized, <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> is called on the first chain in the sink chain, and the message is passed to the channel sinks.  
+ 
+After the channel sinks get the message, they can write data to the stream, add headers to the header array, and add themselves to the sink stack before forwarding the call to the next sink. When the call reaches the transport sink at the end of the chain, the transport sink sends the headers and serialized message over the channel to the server, where the process is reversed.  
+ 
+When the message reaches the server side, the transport sink retrieves the headers and serialized message from the stream and forwards these through the sink chain until they reach the formatter sink. The formatter sink then deserializes the message and forwards it to remoting, where the message is turned into a method call and the server object is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,12 +199,12 @@
         <value>A <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For more information, see [&#91;\<topic://cpconchannelformatterconfigurationproperties>&#93;](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

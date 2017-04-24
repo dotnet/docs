@@ -19,50 +19,50 @@
     <summary>Contains a set of <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.ProfileGroupSettingsCollection> class contains a collection of <xref:System.Web.Configuration.ProfileGroupSettings> objects, which each contain a collection of <xref:System.Web.Configuration.ProfilePropertySettings> objects.  
+The <xref:System.Web.Configuration.ProfileGroupSettingsCollection> class contains a collection of <xref:System.Web.Configuration.ProfileGroupSettings> objects, which each contain a collection of <xref:System.Web.Configuration.ProfilePropertySettings> objects.  
+ 
+The <xref:System.Web.Configuration.ProfilePropertySettings> class provides a way to programmatically create, access, and modify the definition of an individual property added to the `<properties>` subsection of the `<profile>` section of a configuration file.  
+ 
+The `<profile>` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `<profile>` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `<properties>` subsection of the `<profile>` section of the configuration file.  
+ 
+For more information about profile properties, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d). For more information about the profile features added to ASP.NET version 2.0, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ 
   
- The <xref:System.Web.Configuration.ProfilePropertySettings> class provides a way to programmatically create, access, and modify the definition of an individual property added to the `<properties>` subsection of the `<profile>` section of a configuration file.  
-  
- The `<profile>` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `<profile>` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `<properties>` subsection of the `<profile>` section of the configuration file.  
-  
- For more information about profile properties, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d). For more information about the profile features added to ASP.NET version 2.0, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
-  
-   
-  
+ 
 ## Examples  
- The following configuration file excerpt shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.ProfileGroupSettingsCollection> as `<group>` elements of the `<properties>` element of the `<profile>` configuration file section.  
-  
+The following configuration file excerpt shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.ProfileGroupSettingsCollection> as `<group>` elements of the `<properties>` element of the `<profile>` configuration file section.  
+ 
 ```  
 <system.web>  
-  <profile enabled = "true"          defaultProvider="AspNetSqlProfileProvider">  
-    <providers>  
-      <add  name="AspNetSqlProfileProvider"  
-        type="System.Web.Profile.SqlProfileProvider "  
-        connectionStringName="LocalSqlServer"  
-        applicationName="/"  
-        description="Stores and retrieves profile data from the   
-        local Microsoft SQL Server database" />  
-    </providers>  
-  
-    <properties>  
-      <group name = "SiteColors" >  
-        <add name = "BackGround"/>  
-        <add name = "SideBar"/>  
-        <add name = "ForeGroundText"/>  
-        <add name = "ForeGroundBorders"/>  
-      </group>  
-      <group name="Forums">  
-        <add name = "HasAvatar" type="bool" provider="Forums"/>  
-        <add name = "LastLogin" type="DateTime" provider="Forums"/>  
-        <add name = "TotalPosts" type="int" provider="Forums"/>  
-      </group>  
-    </properties>  
-  </profile>  
+ <profile enabled = "true"          defaultProvider="AspNetSqlProfileProvider">  
+   <providers>  
+     <add  name="AspNetSqlProfileProvider"  
+       type="System.Web.Profile.SqlProfileProvider "  
+       connectionStringName="LocalSqlServer"  
+       applicationName="/"  
+       description="Stores and retrieves profile data from the   
+       local Microsoft SQL Server database" />  
+   </providers>  
+ 
+   <properties>  
+     <group name = "SiteColors" >  
+       <add name = "BackGround"/>  
+       <add name = "SideBar"/>  
+       <add name = "ForeGroundText"/>  
+       <add name = "ForeGroundBorders"/>  
+     </group>  
+     <group name="Forums">  
+       <add name = "HasAvatar" type="bool" provider="Forums"/>  
+       <add name = "LastLogin" type="DateTime" provider="Forums"/>  
+       <add name = "TotalPosts" type="int" provider="Forums"/>  
+     </group>  
+   </properties>  
+ </profile>  
 </system.web>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,18 +102,18 @@
         <summary>Adds a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection must not already contain a <xref:System.Web.Configuration.ProfileGroupSettings> object with the same name.  
+The collection must not already contain a <xref:System.Web.Configuration.ProfileGroupSettings> object with the same name.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.ProfileGroupSettingsCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
-  
- [!code-csharp[System.Web.Configuration.ProfileSection#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#13)]
- [!code-vb[System.Web.Configuration.ProfileSection#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#13)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.ProfileGroupSettingsCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+ 
+[!code-csharp[System.Web.Configuration.ProfileSection#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#13)]
+[!code-vb[System.Web.Configuration.ProfileSection#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#13)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to add already exists in the collection, or the collection is read-only.</exception>
@@ -154,18 +154,18 @@
         <summary>Removes all <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the appropriate section of the current configuration file are removed.  
+This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the appropriate section of the current configuration file are removed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.ProfileGroupSettingsCollection.Clear%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
-  
- [!code-csharp[System.Web.Configuration.ProfileSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#2)]
- [!code-vb[System.Web.Configuration.ProfileSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#2)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.ProfileGroupSettingsCollection.Clear%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+ 
+[!code-csharp[System.Web.Configuration.ProfileSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#2)]
+[!code-vb[System.Web.Configuration.ProfileSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,18 +400,18 @@
         <summary>Removes a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.ProfileGroupSettingsCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
-  
- [!code-csharp[System.Web.Configuration.ProfileSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#1)]
- [!code-vb[System.Web.Configuration.ProfileSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.ProfileGroupSettingsCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+ 
+[!code-csharp[System.Web.Configuration.ProfileSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#1)]
+[!code-vb[System.Web.Configuration.ProfileSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">There is no <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index in the collection, the element has already been removed, or the collection is read-only.</exception>
@@ -437,10 +437,10 @@
         <summary>Removes a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
+This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">There is no <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index in the collection, the element has already been removed, or the collection is read-only.</exception>
@@ -484,10 +484,10 @@
         <summary>Adds the specified <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method has the same effect as calling the <xref:System.Web.Configuration.ProfileGroupSettingsCollection.Add%2A> method.  
-  
+Calling this method has the same effect as calling the <xref:System.Web.Configuration.ProfileGroupSettingsCollection.Add%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to add already exists in the collection, or the collection is read-only.</exception>

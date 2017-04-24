@@ -19,10 +19,10 @@
     <summary>Represents an attribute that is applied to a method that invokes a property editor and conveys whether the property editor can be used to edit successive properties without restarting.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_EditorReuseAttribute#0](WFD_EditorReuseAttribute#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.EditorReuseAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the editor is not reusable, it must be restarted to edit another property.  
-  
+If the editor is not reusable, it must be restarted to edit another property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

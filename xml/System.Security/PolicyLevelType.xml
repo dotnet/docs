@@ -19,18 +19,18 @@
     <summary>Specifies the type of a managed code policy level.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The highest level of security policy is enterprise-wide. Successive lower levels of hierarchy represent further policy restrictions, but can never grant more permissions than allowed by higher levels. The policy levels in order are the following.  
-  
- 1. Enterprise  
-  
- 2. Machine  
-  
- 3. User  
-  
- 4. Application domain  
-  
+The highest level of security policy is enterprise-wide. Successive lower levels of hierarchy represent further policy restrictions, but can never grant more permissions than allowed by higher levels. The policy levels in order are the following.  
+ 
+1. Enterprise  
+ 
+2. Machine  
+ 
+3. User  
+ 
+4. Application domain  
+ 
  ]]></format>
     </remarks>
   </Docs>

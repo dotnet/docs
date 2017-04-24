@@ -19,10 +19,10 @@
     <summary>Provides a simple implementation of the <see cref="T:System.Web.HttpWorkerRequest" /> abstract class that can be used to host ASP.NET applications outside an Internet Information Services (IIS) application. You can employ <see langword="SimpleWorkerRequest" /> directly or extend it.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This simple implementation of `HttpWorkerRequest` provides the request URL and the query string and captures the body of the output into a <xref:System.IO.TextWriter>. To achieve richer functionality, such as providing posted content and headers and capturing the response headers or response body as binary data, you should extend `SimpleWorkerRequest` and override the appropriate `HttpWorkerRequest` methods.  
-  
+This simple implementation of `HttpWorkerRequest` provides the request URL and the query string and captures the body of the output into a <xref:System.IO.TextWriter>. To achieve richer functionality, such as providing posted content and headers and capturing the response headers or response body as binary data, you should extend `SimpleWorkerRequest` and override the appropriate `HttpWorkerRequest` methods.  
+ 
  ]]></format>
     </remarks>
   </Docs>

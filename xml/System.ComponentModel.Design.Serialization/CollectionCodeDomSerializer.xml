@@ -14,10 +14,10 @@
     <summary>Serializes collections.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer> class can create either statements or expressions. If the object to serialize is an array, the <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer> will create an expression and assign it to the statement in the current context stack. If the object is a collection with an *AddRange* or similar method, the <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer> will create a statement that calls the method.  
-  
+The <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer> class can create either statements or expressions. If the object to serialize is an array, the <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer> will create an expression and assign it to the statement in the current context stack. If the object is a collection with an *AddRange* or similar method, the <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer> will create a statement that calls the method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
           <see langword="true" /> if the <paramref name="method" /> supports serialization; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Checks the `method` attributes to see if they support serialization.  
-  
+Checks the `method` attributes to see if they support serialization.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -92,20 +92,20 @@
         <returns>A CodeDOM object representing <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collections are serialized as follows:  
-  
+Collections are serialized as follows:  
+ 
 1.  If the collection is an array, the array is written.  
-  
-    1.  If the collection has an *AddRange* method, it will be called and provided with an array.  
-  
-    2.  If the collection has an *Add* method, it will be called repeatedly until all items in the collection are written.  
-  
+ 
+   1.  If the collection has an *AddRange* method, it will be called and provided with an array.  
+ 
+   2.  If the collection has an *Add* method, it will be called repeatedly until all items in the collection are written.  
+ 
 2.  If the collection is an <xref:System.Collections.IList>, the <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize%2A> method will cast the collection to an <xref:System.Collections.IList> and add through that interface.  
-  
-    1.  If the collection has no *Add* method, but is marked with <xref:System.ComponentModel.DesignerSerializationVisibility?displayProperty=fullName>, <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize%2A> will enumerate the collection and serialize each element.  
-  
+ 
+   1.  If the collection has no *Add* method, but is marked with <xref:System.ComponentModel.DesignerSerializationVisibility?displayProperty=fullName>, <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize%2A> will enumerate the collection and serialize each element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -141,10 +141,10 @@
         <returns>Serialized collection if the serialization process succeeded; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeExpression> that refers to the collection can be `null`.  
-  
+The <xref:System.CodeDom.CodeExpression> that refers to the collection can be `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

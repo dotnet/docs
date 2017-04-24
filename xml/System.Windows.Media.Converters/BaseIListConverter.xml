@@ -14,10 +14,10 @@
     <summary>Defines methods used to convert <see cref="T:System.Collections.IList" /> collection members to and from instances of <see cref="T:System.String" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class and its derivatives are intended to be used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization of [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
-  
+This class and its derivatives are intended to be used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization of [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
           <see langword="true" /> if this type can be converted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.String> is the only supported type for conversion.  
-  
+<xref:System.String> is the only supported type for conversion.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
           <see langword="true" /> if this type can be converted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.String> is the only supported type for conversion.  
-  
+<xref:System.String> is the only supported type for conversion.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,23 +14,23 @@
     <summary>Describes the page size for paper or other media.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a class that includes the same information about the media size as <xref:System.Printing.PageMediaSize> and also includes information about the imageable area of the page, see <xref:System.Printing.PrintDocumentImageableArea>.  
-  
+For a class that includes the same information about the media size as <xref:System.Printing.PageMediaSize> and also includes information about the imageable area of the page, see <xref:System.Printing.PrintDocumentImageableArea>.  
+ 
 > [!CAUTION]
 >  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+ 
+If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+ 
   
- If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use this class to scale a visual element to fit within the margins of the paper on which it is to print.  
-  
- [!code-csharp[XpsPrint#PageMediaSize](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#pagemediasize)]
- [!code-vb[XpsPrint#PageMediaSize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#pagemediasize)]  
-  
+The following example shows how to use this class to scale a visual element to fit within the margins of the paper on which it is to print.  
+ 
+[!code-csharp[XpsPrint#PageMediaSize](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#pagemediasize)]
+[!code-vb[XpsPrint#PageMediaSize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#pagemediasize)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,13 +112,13 @@
         <value>A <see cref="T:System.Double" /> that represents the page height, in pixels, which are 1/96 inch units.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this class to scale a visual element to fit within the margins of the paper on which it is to print.  
-  
- [!code-csharp[XpsPrint#PageMediaSize](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#pagemediasize)]
- [!code-vb[XpsPrint#PageMediaSize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#pagemediasize)]  
-  
+The following example shows how to use this class to scale a visual element to fit within the margins of the paper on which it is to print.  
+ 
+[!code-csharp[XpsPrint#PageMediaSize](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#pagemediasize)]
+[!code-vb[XpsPrint#PageMediaSize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#pagemediasize)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,12 +159,12 @@
         <returns>A <see cref="T:System.String" /> that represents the page size for paper or other media.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The format of the returned string is as follows:  
-  
- <xref:System.Printing.PageMediaSizeName> (<xref:System.Printing.PageMediaSize.Width%2A> x <xref:System.Printing.PageMediaSize.Height%2A>)  
-  
+The format of the returned string is as follows:  
+ 
+<xref:System.Printing.PageMediaSizeName> (<xref:System.Printing.PageMediaSize.Width%2A> x <xref:System.Printing.PageMediaSize.Height%2A>)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,13 +186,13 @@
         <value>A <see cref="T:System.Double" /> that represents the page width, in pixels, which are 1/96 inch units.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this class to scale a visual element to fit within the margins of the paper on which it is to print.  
-  
- [!code-csharp[XpsPrint#PageMediaSize](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#pagemediasize)]
- [!code-vb[XpsPrint#PageMediaSize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#pagemediasize)]  
-  
+The following example shows how to use this class to scale a visual element to fit within the margins of the paper on which it is to print.  
+ 
+[!code-csharp[XpsPrint#PageMediaSize](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#pagemediasize)]
+[!code-vb[XpsPrint#PageMediaSize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#pagemediasize)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

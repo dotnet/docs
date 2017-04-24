@@ -34,23 +34,23 @@
     <summary>Represents a step in a wizard control that can be customized through the use of templates.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TemplatedWizardStep> class is provided to enable developers to apply a template to the steps in a control that acts as a wizard. The <xref:System.Web.UI.WebControls.TemplatedWizardStep> class is intended to be used primarily by control developers.  
+The <xref:System.Web.UI.WebControls.TemplatedWizardStep> class is provided to enable developers to apply a template to the steps in a control that acts as a wizard. The <xref:System.Web.UI.WebControls.TemplatedWizardStep> class is intended to be used primarily by control developers.  
+ 
+You can apply a theme to <xref:System.Web.UI.WebControls.TemplatedWizardStep>.  
+ 
   
- You can apply a theme to <xref:System.Web.UI.WebControls.TemplatedWizardStep>.  
-  
-   
-  
+ 
 ## Examples  
- The <xref:System.Web.UI.WebControls.TemplatedWizardStep> class allows you to customize the content and navigation templates within it. The following example shows how to define a template-based wizard step.  
-  
+The <xref:System.Web.UI.WebControls.TemplatedWizardStep> class allows you to customize the content and navigation templates within it. The following example shows how to define a template-based wizard step.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate%2A> property allows you to take full control of the navigation block, usually displayed at the bottom of the current view. Normally, you fill the navigation block with a series of buttons. However, other controls are acceptable as long as they support command bubbling, as does the <xref:System.Web.UI.WebControls.Button> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.TemplatedWizardStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatedWizardStep/CS/templatedwizardstepcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.TemplatedWizardStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatedWizardStep/VB/templatedwizardstepvb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.TemplatedWizardStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatedWizardStep/CS/templatedwizardstepcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.TemplatedWizardStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatedWizardStep/VB/templatedwizardstepvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -130,10 +130,10 @@
         <value>A <see cref="T:System.Web.UI.Control" /> that contains the <see cref="P:System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplate" /> template for a step.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the syntax includes setting the <xref:System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplateContainer%2A> property, it is for internal use only, so the property is effectively read-only.  
-  
+Although the syntax includes setting the <xref:System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplateContainer%2A> property, it is for internal use only, so the property is effectively read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,12 +201,12 @@
         <value>A <see cref="T:System.Web.UI.Control" /> that contains the <see cref="P:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate" /> template for a step.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the syntax includes setting the <xref:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplateContainer%2A> property, it is for internal use only, so the property is effectively read-only. Your code should verify that the <xref:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplateContainer%2A> property is not `null` before referencing it.  
-  
- This property is not bindable in visual designers, but is bindable at runtime. For more information, see <xref:System.ComponentModel.BindableAttribute>.  
-  
+Although the syntax includes setting the <xref:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplateContainer%2A> property, it is for internal use only, so the property is effectively read-only. Your code should verify that the <xref:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplateContainer%2A> property is not `null` before referencing it.  
+ 
+This property is not bindable in visual designers, but is bindable at runtime. For more information, see <xref:System.ComponentModel.BindableAttribute>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">If <see cref="P:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate" /> has no content.</exception>

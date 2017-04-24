@@ -15,17 +15,17 @@
     <summary>The base class for discoverable references using XML Web services discovery.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Services.Discovery.ContractReference>, <xref:System.Web.Services.Discovery.SchemaReference>, and <xref:System.Web.Services.Discovery.DiscoveryDocumentReference> all inherit from <xref:System.Web.Services.Discovery.DiscoveryReference>, and represent the three types of documents discoverable through XML Web services discovery: Service Descriptions, XML Schema Definition (XSD) schemas, and discovery documents, respectively.  
+<xref:System.Web.Services.Discovery.ContractReference>, <xref:System.Web.Services.Discovery.SchemaReference>, and <xref:System.Web.Services.Discovery.DiscoveryDocumentReference> all inherit from <xref:System.Web.Services.Discovery.DiscoveryReference>, and represent the three types of documents discoverable through XML Web services discovery: Service Descriptions, XML Schema Definition (XSD) schemas, and discovery documents, respectively.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReference1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference1/CPP/discoveryreference.cpp#1)]
- [!code-csharp[DiscoveryReference1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference1/CS/discoveryreference.cs#1)]
- [!code-vb[DiscoveryReference1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference1/VB/discoveryreference.vb#1)]  
-  
+[!code-cpp[DiscoveryReference1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference1/CPP/discoveryreference.cpp#1)]
+[!code-csharp[DiscoveryReference1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference1/CS/discoveryreference.cs#1)]
+[!code-vb[DiscoveryReference1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference1/VB/discoveryreference.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,12 +69,12 @@
         <value>An instance of <see cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" /> used in a discovery process</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
- [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
- [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
-  
+[!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+[!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+[!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,12 +102,12 @@
         <value>Name of the default file to use when saving the referenced document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
- [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
- [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
-  
+[!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+[!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+[!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,17 +158,17 @@
         <returns>An <see cref="T:System.Object" /> with an underlying type matching the type of referenced document.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value is always an <xref:System.Object>. However, the underlying type varies, depending on the type of document referenced. For instance, a <xref:System.IO.Stream> passed into <xref:System.Web.Services.Discovery.SchemaReference.ReadDocument%2A?displayProperty=fullName> returns an instance of <xref:System.Xml.Schema.XmlSchema>.  
+The return value is always an <xref:System.Object>. However, the underlying type varies, depending on the type of document referenced. For instance, a <xref:System.IO.Stream> passed into <xref:System.Web.Services.Discovery.SchemaReference.ReadDocument%2A?displayProperty=fullName> returns an instance of <xref:System.Xml.Schema.XmlSchema>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
- [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
- [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
-  
+[!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+[!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+[!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,17 +191,17 @@
         <summary>Downloads the referenced document at <see cref="P:System.Web.Services.Discovery.DiscoveryReference.Url" /> to resolve whether the referenced document is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Downloads the referenced document and then invokes the overloaded <xref:System.Web.Services.Discovery.DiscoveryReference.Resolve%2A> member that takes a MIME type and a <xref:System.IO.Stream>. If the MIME type and the contents of `stream` match those expected by the reference type, then the contents of `stream` are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> and <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> properties of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A>.  
+Downloads the referenced document and then invokes the overloaded <xref:System.Web.Services.Discovery.DiscoveryReference.Resolve%2A> member that takes a MIME type and a <xref:System.IO.Stream>. If the MIME type and the contents of `stream` match those expected by the reference type, then the contents of `stream` are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> and <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> properties of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
- [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
- [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
-  
+[!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+[!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+[!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" /> property is <see langword="null" />.</exception>
@@ -230,10 +230,10 @@
         <summary>Resolves whether the referenced document is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the MIME type and the contents of `stream` match those expected by the reference type, then the contents of `stream` are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> and <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> properties of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A>.  
-  
+If the MIME type and the contents of `stream` match those expected by the reference type, then the contents of `stream` are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> and <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> properties of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,12 +261,12 @@
         <value>The URL of the referenced document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
- [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
- [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
-  
+[!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+[!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+[!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,10 +294,10 @@
         <summary>When overridden in a derived class, writes the document to a <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- DiscoveryReference#1  
-  
+DiscoveryReference#1  
+ 
  ]]></format>
         </remarks>
       </Docs>

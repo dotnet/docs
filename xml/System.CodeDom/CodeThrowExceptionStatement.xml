@@ -22,21 +22,21 @@
     <summary>Represents a statement that throws an exception.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeThrowExceptionStatement> can represent a statement that throws an exception. The expression should be, or evaluate to, a reference to an instance of a type that derives from the <xref:System.Exception> class.  
+<xref:System.CodeDom.CodeThrowExceptionStatement> can represent a statement that throws an exception. The expression should be, or evaluate to, a reference to an instance of a type that derives from the <xref:System.Exception> class.  
+ 
+The <xref:System.CodeDom.CodeThrowExceptionStatement.ToThrow%2A> property specifies the exception to throw.  
+ 
   
- The <xref:System.CodeDom.CodeThrowExceptionStatement.ToThrow%2A> property specifies the exception to throw.  
-  
-   
-  
+ 
 ## Examples  
- This example demonstrates using a <xref:System.CodeDom.CodeThrowExceptionStatement> to throw a new `System.Exception`.  
-  
- [!code-cpp[CodeThrowExceptionStatement#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeThrowExceptionStatement/CPP/codethrowexceptionstatementexample.cpp#2)]
- [!code-csharp[CodeThrowExceptionStatement#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeThrowExceptionStatement/CS/codethrowexceptionstatementexample.cs#2)]
- [!code-vb[CodeThrowExceptionStatement#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeThrowExceptionStatement/VB/codethrowexceptionstatementexample.vb#2)]  
-  
+This example demonstrates using a <xref:System.CodeDom.CodeThrowExceptionStatement> to throw a new `System.Exception`.  
+ 
+[!code-cpp[CodeThrowExceptionStatement#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeThrowExceptionStatement/CPP/codethrowexceptionstatementexample.cpp#2)]
+[!code-csharp[CodeThrowExceptionStatement#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeThrowExceptionStatement/CS/codethrowexceptionstatementexample.cs#2)]
+[!code-vb[CodeThrowExceptionStatement#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeThrowExceptionStatement/VB/codethrowexceptionstatementexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

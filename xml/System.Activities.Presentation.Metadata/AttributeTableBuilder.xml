@@ -14,15 +14,15 @@
     <summary>Creates and populates an <see cref="T:System.Activities.Presentation.Metadata.AttributeTable" /> that is used by the <see cref="T:System.Activities.Presentation.Metadata.MetadataStore" /> to provide attribute lookup and registration.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A>, <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A>, and <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddTable%2A> to populate the builder, then call <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.CreateTable%2A> to acquire an <xref:System.Activities.Presentation.Metadata.AttributeTable> containing the desired collection of attributes.  
+Use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A>, <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A>, and <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddTable%2A> to populate the builder, then call <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.CreateTable%2A> to acquire an <xref:System.Activities.Presentation.Metadata.AttributeTable> containing the desired collection of attributes.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_AttributeTableBuilder#1](WFD_AttributeTableBuilder#1)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Specifies a callback that will be invoked when metadata for the given type is needed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first time an <xref:System.Activities.Presentation.Metadata.AttributeTable> returned by <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.CreateTable%2A> is queried for attributes for `type`, `callback` is called to provide the metadata information.  
-  
+The first time an <xref:System.Activities.Presentation.Metadata.AttributeTable> returned by <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.CreateTable%2A> is queried for attributes for `type`, `callback` is called to provide the metadata information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,12 +100,12 @@
         <summary>Adds the contents of the provided attributes to this builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
-  
- When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
-  
+If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
+ 
+When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -142,12 +142,12 @@
         <summary>Adds the contents of the provided attributes to this builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
-  
- When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
-  
+If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
+ 
+When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -184,12 +184,12 @@
         <summary>Adds the contents of the provided attributes to this builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
-  
- When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
-  
+If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
+ 
+When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -226,12 +226,12 @@
         <summary>Adds the contents of the provided attributes to this builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
-  
- When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
-  
+If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
+ 
+When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -268,12 +268,12 @@
         <summary>Adds the contents of the provided attributes to this builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
-  
- When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
-  
+If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
+ 
+When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -300,10 +300,10 @@
         <summary>Adds the contents of the provided attribute table to this builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
-  
+If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -328,12 +328,12 @@
         <returns>An <see cref="T:System.Activities.Presentation.Metadata.AttributeTable" /> that can be passed to the metadata store.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The table is a snapshot of the current state of the attribute builder; any attributes added by subsequent <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A> calls are not included in the table.  
-  
- If callback methods were used to declare attributes, those methods will not be evaluated during <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.CreateTable%2A>. Instead, the table will contain those callbacks and will evaluate them as needed.  
-  
+The table is a snapshot of the current state of the attribute builder; any attributes added by subsequent <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A> calls are not included in the table.  
+ 
+If callback methods were used to declare attributes, those methods will not be evaluated during <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.CreateTable%2A>. Instead, the table will contain those callbacks and will evaluate them as needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,10 +355,10 @@
         <summary>Verifies that the attribute table that is being built contains valid attribute information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some overrides of <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A>cannot validate that values passed to their parameters represent valid members on classes. <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable%2A> verifies that all custom attribute information corresponds to actual members. This method can take a long time to complete and is not recommended unless validation is explicitly needed.  
-  
+Some overrides of <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A>cannot validate that values passed to their parameters represent valid members on classes. <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable%2A> verifies that all custom attribute information corresponds to actual members. This method can take a long time to complete and is not recommended unless validation is explicitly needed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Activities.Presentation.Metadata.AttributeTableValidationException">the state of the table is invalid.</exception>
@@ -373,12 +373,12 @@
         <summary>Adds the contents of the provided attributes to this builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
-  
- When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
-  
+If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
+ 
+When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,15 +14,15 @@
     <summary>Defines a selection of objects that are published as a <see cref="T:System.Activities.Presentation.ContextItem" /> in the <see cref="T:System.Activities.Presentation.EditingContext" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Selections consist of zero or more objects. The first object in a selection is defined as the primary selection, which is used when one object in a group must be used as a key. Each object is stored as a <xref:System.WorkflowModel.Presentation.Model.ModelItem>.  
+Selections consist of zero or more objects. The first object in a selection is defined as the primary selection, which is used when one object in a group must be used as a key. Each object is stored as a <xref:System.WorkflowModel.Presentation.Model.ModelItem>.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_Selection#0](WFD_Selection#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Creates a <see cref="T:System.Activities.Presentation.View.Selection" /> object with the specified objects selected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first object is considered the primary selection.  
-  
+The first object is considered the primary selection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <summary>Creates a <see cref="T:System.Activities.Presentation.View.Selection" /> object with the specified objects selected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first object in the enumeration is considered the primary selection.  
-  
+The first object in the enumeration is considered the primary selection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="selectedObjects" /> is <see langword="null" />.</exception>
@@ -116,10 +116,10 @@
         <summary>Creates a <see cref="T:System.Activities.Presentation.View.Selection" /> object with the specified objects selected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first object in the enumeration is considered the primary selection.  
-  
+The first object in the enumeration is considered the primary selection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="selectedObjects" /> is <see langword="null" />.</exception>
@@ -144,10 +144,10 @@
         <summary>Creates a <see cref="T:System.Activities.Presentation.View.Selection" /> object with the specified objects selected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first object in the enumeration that matches the predicate is considered the primary selection.  
-  
+The first object in the enumeration that matches the predicate is considered the primary selection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="selectedObjects" /> or <paramref name="match" /> is <see langword="null" />.</exception>
@@ -172,10 +172,10 @@
         <summary>Creates a <see cref="T:System.Activities.Presentation.View.Selection" /> object with the specified objects selected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first object in the enumeration that matches the predicate is considered the primary selection.  
-  
+The first object in the enumeration that matches the predicate is considered the primary selection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="selectedObjects" /> or <paramref name="match" /> is <see langword="null" />.</exception>
@@ -198,10 +198,10 @@
         <value>Returns <c>typeof(</c><see cref="T:System.Activities.Presentation.View.Selection" /><c>)</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an override of <xref:System.Activities.Presentation.ContextItem.ItemType%2A>. When you create a derived class, override this property to return the <xref:System.Type> of the derived type.  
-  
+This is an override of <xref:System.Activities.Presentation.ContextItem.ItemType%2A>. When you create a derived class, override this property to return the <xref:System.Type> of the derived type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

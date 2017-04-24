@@ -14,21 +14,21 @@
     <summary>Draws a series of connected lines and curves.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Shapes.Path> object can draw closed or open shapes, multiple shapes, and even curved shapes.  
+The <xref:System.Windows.Shapes.Path> object can draw closed or open shapes, multiple shapes, and even curved shapes.  
+ 
+Unlike the <xref:System.Windows.Shapes.Line> and <xref:System.Windows.Shapes.Polyline> objects, you can use this object to draw curves. See the <xref:System.Windows.Shapes.Path.Data%2A> property for a description of the shapes that the <xref:System.Windows.Shapes.Path> element supports.  
+ 
   
- Unlike the <xref:System.Windows.Shapes.Line> and <xref:System.Windows.Shapes.Polyline> objects, you can use this object to draw curves. See the <xref:System.Windows.Shapes.Path.Data%2A> property for a description of the shapes that the <xref:System.Windows.Shapes.Path> element supports.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Shapes.Path> element and set its properties by using code.  
-  
- [!code-cpp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/cpp/VS_Snippets_Wpf/ShapesProcedural/CPP/ShapesProcedural.cpp#shapesproceduralpath)]
- [!code-csharp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapesProcedural/Csharp/ShapesProcedural.cs#shapesproceduralpath)]
- [!code-vb[shapesprocedural#ShapesProceduralPath](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ShapesProcedural/VisualBasic/ShapesProceduralVB.vb#shapesproceduralpath)]  
-  
+The following example shows how to create a <xref:System.Windows.Shapes.Path> element and set its properties by using code.  
+ 
+[!code-cpp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/cpp/VS_Snippets_Wpf/ShapesProcedural/CPP/ShapesProcedural.cpp#shapesproceduralpath)]
+[!code-csharp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapesProcedural/Csharp/ShapesProcedural.cs#shapesproceduralpath)]
+[!code-vb[shapesprocedural#ShapesProceduralPath](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ShapesProcedural/VisualBasic/ShapesProceduralVB.vb#shapesproceduralpath)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,59 +65,59 @@
         <value>A description of the shape to be drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To draw simple shapes, use the <xref:System.Windows.Media.EllipseGeometry>, <xref:System.Windows.Media.LineGeometry>, and <xref:System.Windows.Media.RectangleGeometry> objects. To draw curves, arcs, or complex shapes, use the <xref:System.Windows.Media.PathGeometry> object. To create a composite geometry, use a <xref:System.Windows.Media.GeometryGroup>. To combine geometries, use a <xref:System.Windows.Media.CombinedGeometry>.  
-  
+To draw simple shapes, use the <xref:System.Windows.Media.EllipseGeometry>, <xref:System.Windows.Media.LineGeometry>, and <xref:System.Windows.Media.RectangleGeometry> objects. To draw curves, arcs, or complex shapes, use the <xref:System.Windows.Media.PathGeometry> object. To create a composite geometry, use a <xref:System.Windows.Media.GeometryGroup>. To combine geometries, use a <xref:System.Windows.Media.CombinedGeometry>.  
+ 
 <a name="xamlPropertyElementUsage_Data"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <Path>  
-  <Path.Data>  
-    singleGeometry  
-  </Path.Data>  
+ <Path.Data>  
+   singleGeometry  
+ </Path.Data>  
 </Path>  
 ```  
-  
+ 
 <a name="xamlAttributeUsage_Data"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object Data="moveAndDrawCommands"/>  
 ```  
-  
+ 
 <a name="xamlValues_Data"></a>   
 ## XAML Values  
- *singleGeometry*  
- A single object element that derives from <xref:System.Windows.Media.Geometry>. This can be one of the following:  
-  
+*singleGeometry*  
+A single object element that derives from <xref:System.Windows.Media.Geometry>. This can be one of the following:  
+ 
 -   One of the simple geometries <xref:System.Windows.Media.EllipseGeometry>, <xref:System.Windows.Media.LineGeometry>, or <xref:System.Windows.Media.RectangleGeometry>.  
-  
+ 
 -   A single <xref:System.Windows.Media.GeometryGroup>, which supports other geometries as child elements. See XAML Values section for <xref:System.Windows.Media.GeometryGroup>.  
-  
+ 
 -   A <xref:System.Windows.Media.PathGeometry>, which supports child object elements that establish a path geometry object model of figures and segments. See XAML Values section for <xref:System.Windows.Media.PathGeometry>.  
-  
- *moveAndDrawCommands*  
- One or more move and draw commands. For the complete syntax, see [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md).  
-  
+ 
+*moveAndDrawCommands*  
+One or more move and draw commands. For the complete syntax, see [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md).  
+ 
 <a name="dependencyPropertyInfo_Data"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Shapes.Path.DataProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Shapes.Path> element and set the <xref:System.Windows.Shapes.Path.Data%2A> property by using code.  
-  
- [!code-cpp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/cpp/VS_Snippets_Wpf/ShapesProcedural/CPP/ShapesProcedural.cpp#shapesproceduralpath)]
- [!code-csharp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapesProcedural/Csharp/ShapesProcedural.cs#shapesproceduralpath)]
- [!code-vb[shapesprocedural#ShapesProceduralPath](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ShapesProcedural/VisualBasic/ShapesProceduralVB.vb#shapesproceduralpath)]  
-  
+The following example shows how to create a <xref:System.Windows.Shapes.Path> element and set the <xref:System.Windows.Shapes.Path.Data%2A> property by using code.  
+ 
+[!code-cpp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/cpp/VS_Snippets_Wpf/ShapesProcedural/CPP/ShapesProcedural.cpp#shapesproceduralpath)]
+[!code-csharp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapesProcedural/Csharp/ShapesProcedural.cs#shapesproceduralpath)]
+[!code-vb[shapesprocedural#ShapesProceduralPath](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ShapesProcedural/VisualBasic/ShapesProceduralVB.vb#shapesproceduralpath)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

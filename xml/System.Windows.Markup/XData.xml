@@ -19,12 +19,12 @@
     <summary>Represents literal data that can appear as the value for a <see langword="Value" /> node.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Markup.XData.Text%2A> is the XAML content property for <xref:System.Windows.Markup.XData>. To read values from out of a XAML node stream where `XData` is returned, get the <xref:System.Windows.Markup.XData.Text%2A> property value.  
-  
- Encoding considerations are declared at top-level XML, and are generally UTF-8 by default.  
-  
+<xref:System.Windows.Markup.XData.Text%2A> is the XAML content property for <xref:System.Windows.Markup.XData>. To read values from out of a XAML node stream where `XData` is returned, get the <xref:System.Windows.Markup.XData.Text%2A> property value.  
+ 
+Encoding considerations are declared at top-level XML, and are generally UTF-8 by default.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <value>The literal value string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Markup.XData.Text%2A> is the XAML content property for <xref:System.Windows.Markup.XData>. To read values from out of a XAML node stream where `XData` is returned, get the <xref:System.Windows.Markup.XData.Text%2A> property value.  
-  
+<xref:System.Windows.Markup.XData.Text%2A> is the XAML content property for <xref:System.Windows.Markup.XData>. To read values from out of a XAML node stream where `XData` is returned, get the <xref:System.Windows.Markup.XData.Text%2A> property value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,12 +86,12 @@
         <value>A reader for the literal data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no reader is previously set for `XData`, calling the get accessor creates a new <xref:System.Xml.XmlReader> for this purpose.  
-  
- The type of this property is <xref:System.Object> rather than <xref:System.Xml.XmlReader> in order to provide an optimization pathway for callers that do not want to include the `System.Xml` assembly just for the base type definitions, and who will be using the default reader.  
-  
+If no reader is previously set for `XData`, calling the get accessor creates a new <xref:System.Xml.XmlReader> for this purpose.  
+ 
+The type of this property is <xref:System.Object> rather than <xref:System.Xml.XmlReader> in order to provide an optimization pathway for callers that do not want to include the `System.Xml` assembly just for the base type definitions, and who will be using the default reader.  
+ 
  ]]></format>
         </remarks>
       </Docs>

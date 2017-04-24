@@ -56,42 +56,42 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.FrameworkName" /> class from a string that contains information about a version of the .NET Framework.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Versioning.FrameworkName.%23ctor%28System.String%29> constructor parses a string in the following format.  
-  
- *identifier*, Version=*versionNumber*[, Profile=*profileName*]  
-  
- Components in square brackets are optional. The following table describes each component.  
-  
+The <xref:System.Runtime.Versioning.FrameworkName.%23ctor%28System.String%29> constructor parses a string in the following format.  
+ 
+*identifier*, Version=*versionNumber*[, Profile=*profileName*]  
+ 
+Components in square brackets are optional. The following table describes each component.  
+ 
 |Component|Description|  
 |---------------|-----------------|  
 |*identifier*|An arbitrary string that identifies this <xref:System.Runtime.Versioning.FrameworkName> instance.|  
 |*versionNumber*|A string that represents the version of the .NET Framework, in the form [v]*major*.*minor*[.*build*.*revision*], where "v" can be either uppercase or lowercase, and the brackets denote optional elements of a version number.|  
 |*profileName*|An arbitrary string that represents the profile of the .NET Framework version. Typically, it is used to denote some subset of the .NET Framework, such as the .NET Compact Framework or Silverlight.|  
-  
- If both *versionNumber* and *profileName* are present, they can appear in any order after *identifier*. These strings are defined by the "Version" and "Profile" keywords, which are not case-sensitive.  
-  
- The values of the *identifier*, *versionNumber*, and *profileName* components define the values of this <xref:System.Runtime.Versioning.FrameworkName> object's properties as follows:  
-  
+ 
+If both *versionNumber* and *profileName* are present, they can appear in any order after *identifier*. These strings are defined by the "Version" and "Profile" keywords, which are not case-sensitive.  
+ 
+The values of the *identifier*, *versionNumber*, and *profileName* components define the values of this <xref:System.Runtime.Versioning.FrameworkName> object's properties as follows:  
+ 
 -   Any leading or trailing white space in the *identifier* component is removed and the resulting string is assigned to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property.  
-  
+ 
 -   Any leading or trailing white space and the initial "v" or "V", if present, are removed from the `versionNumber`. The returned string is then passed to the <xref:System.Version.%23ctor%28System.String%29?displayProperty=fullName> constructor, and the resulting <xref:System.Version?displayProperty=fullName> object is assigned to the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property.  
-  
+ 
 -   Any leading or trailing white space in the `profileName` component is removed and the resulting string is assigned to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property.  
-  
- The following are examples of valid strings that can be passed to the <xref:System.Runtime.Versioning.FrameworkName.%23ctor%2A> constructor:  
-  
+ 
+The following are examples of valid strings that can be passed to the <xref:System.Runtime.Versioning.FrameworkName.%23ctor%2A> constructor:  
+ 
 -   .NET Framework, Version=4.0  
-  
+ 
 -   .NETFramework, Version=4.0  
-  
+ 
 -   .NET Framework, Version=2.0, Profile=Compact  
-  
+ 
 -   .NET Framework, Version=v4.0, Profile=Compact  
-  
+ 
 -   .NET Framework, Profile=Full, Version=2.0.0  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -141,10 +141,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.FrameworkName" /> class from a string and a <see cref="T:System.Version" /> object that identify a .NET Framework version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Versioning.FrameworkName> class requires that a <xref:System.Runtime.Versioning.FrameworkName.Version%2A> object include at least a major and minor version number.  
-  
+The <xref:System.Runtime.Versioning.FrameworkName> class requires that a <xref:System.Runtime.Versioning.FrameworkName.Version%2A> object include at least a major and minor version number.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -188,10 +188,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.FrameworkName" /> class from a string, a <see cref="T:System.Version" /> object that identifies a .NET Framework version, and a profile name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Versioning.FrameworkName> class requires that a <xref:System.Runtime.Versioning.FrameworkName.Version%2A> object include at least a major and minor version number.  
-  
+The <xref:System.Runtime.Versioning.FrameworkName> class requires that a <xref:System.Runtime.Versioning.FrameworkName.Version%2A> object include at least a major and minor version number.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -236,10 +236,10 @@
           <see langword="true" /> if every component of the current <see cref="T:System.Runtime.Versioning.FrameworkName" /> object matches the corresponding component of <paramref name="obj" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method converts `obj` to a <xref:System.Runtime.Versioning.FrameworkName> object and calls the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=fullName> overload to test for equality. If the conversion does not succeed or if `obj` is `null`, the method returns `false`.  
-  
+The method converts `obj` to a <xref:System.Runtime.Versioning.FrameworkName> object and calls the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=fullName> overload to test for equality. If the conversion does not succeed or if `obj` is `null`, the method returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,16 +276,16 @@
           <see langword="true" /> if every component of the current <see cref="T:System.Runtime.Versioning.FrameworkName" /> object matches the corresponding component of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method tests for equality by returning the result of the following comparisons:  
-  
+The method tests for equality by returning the result of the following comparisons:  
+ 
 -   An ordinal comparison of the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property values of the current instance and `other`.  
-  
+ 
 -   An ordinal comparison of the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property values of the current instance and `other`.  
-  
+ 
 -   A comparison of the version properties by calling the <xref:System.Version.Equals%2A?displayProperty=fullName> method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,16 +317,16 @@
         <value>The full name of this <see cref="T:System.Runtime.Versioning.FrameworkName" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by the <xref:System.Runtime.Versioning.FrameworkName.FullName%2A> property has the following format:  
-  
- *identifier*, Version=*version*[, Profile=*profile*]  
-  
- where *identifier* corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property, `version` is equivalent to calling <xref:System.Version.ToString%2A?displayProperty=fullName> on the value of the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property, and `profile` corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property. If a profile has not been assigned to the <xref:System.Runtime.Versioning.FrameworkName> object, the profile component is not included in the string.  
-  
- The value of the <xref:System.Runtime.Versioning.FrameworkName.FullName%2A> property is identical to the string returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A> method.  
-  
+The string returned by the <xref:System.Runtime.Versioning.FrameworkName.FullName%2A> property has the following format:  
+ 
+*identifier*, Version=*version*[, Profile=*profile*]  
+ 
+where *identifier* corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property, `version` is equivalent to calling <xref:System.Version.ToString%2A?displayProperty=fullName> on the value of the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property, and `profile` corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property. If a profile has not been assigned to the <xref:System.Runtime.Versioning.FrameworkName> object, the profile component is not included in the string.  
+ 
+The value of the <xref:System.Runtime.Versioning.FrameworkName.FullName%2A> property is identical to the string returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,10 +387,10 @@
         <value>The identifier of this <see cref="T:System.Runtime.Versioning.FrameworkName" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the read-only <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property is set in the <xref:System.Runtime.Versioning.FrameworkName.%23ctor%2A> class constructor.  
-  
+The value of the read-only <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property is set in the <xref:System.Runtime.Versioning.FrameworkName.%23ctor%2A> class constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -429,20 +429,20 @@
           <see langword="true" /> if the <paramref name="left" /> and <paramref name="right" /> parameters represent the same .NET Framework version; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Versioning.FrameworkName.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Runtime.Versioning.FrameworkName> objects.  
+The <xref:System.Runtime.Versioning.FrameworkName.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Runtime.Versioning.FrameworkName> objects.  
+ 
+Languages that do not support custom operators can call the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=fullName> method instead.  
+ 
   
- Languages that do not support custom operators can call the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=fullName> method instead.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the equality operator to determine whether a  <xref:System.Runtime.Versioning.FrameworkName> object that represents the running version of the .NET Framework is equal to a supported version of the .NET Framework. Note that the two versions are not equal because they do not have identical version numbers.  
-  
- [!code-csharp[System.Runtime.Versioning.FrameworkName.Operators#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.versioning.frameworkname.operators/cs/Operators1.cs#1)]
- [!code-vb[System.Runtime.Versioning.FrameworkName.Operators#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.versioning.frameworkname.operators/vb/Operators1.vb#1)]  
-  
+The following example uses the equality operator to determine whether a  <xref:System.Runtime.Versioning.FrameworkName> object that represents the running version of the .NET Framework is equal to a supported version of the .NET Framework. Note that the two versions are not equal because they do not have identical version numbers.  
+ 
+[!code-csharp[System.Runtime.Versioning.FrameworkName.Operators#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.versioning.frameworkname.operators/cs/Operators1.cs#1)]
+[!code-vb[System.Runtime.Versioning.FrameworkName.Operators#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.versioning.frameworkname.operators/vb/Operators1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -481,20 +481,20 @@
           <see langword="true" /> if the <paramref name="left" /> and <paramref name="right" /> parameters represent different .NET Framework versions; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Versioning.FrameworkName.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Runtime.Versioning.FrameworkName> objects.  
+The <xref:System.Runtime.Versioning.FrameworkName.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Runtime.Versioning.FrameworkName> objects.  
+ 
+Languages that do not support custom operators can test for inequality by calling the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=fullName> method and reversing its value.  
+ 
   
- Languages that do not support custom operators can test for inequality by calling the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=fullName> method and reversing its value.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the equality operator to determine whether a <xref:System.Runtime.Versioning.FrameworkName> object that represents the running version of the .NET Framework is equal to a supported version of the .NET Framework. Note that the two versions are not equal because they do not have identical version numbers.  
-  
- [!code-csharp[System.Runtime.Versioning.FrameworkName.Operators#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.versioning.frameworkname.operators/cs/Operators1.cs#2)]
- [!code-vb[System.Runtime.Versioning.FrameworkName.Operators#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.versioning.frameworkname.operators/vb/Operators1.vb#2)]  
-  
+The following example uses the equality operator to determine whether a <xref:System.Runtime.Versioning.FrameworkName> object that represents the running version of the .NET Framework is equal to a supported version of the .NET Framework. Note that the two versions are not equal because they do not have identical version numbers.  
+ 
+[!code-csharp[System.Runtime.Versioning.FrameworkName.Operators#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.versioning.frameworkname.operators/cs/Operators1.cs#2)]
+[!code-vb[System.Runtime.Versioning.FrameworkName.Operators#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.versioning.frameworkname.operators/vb/Operators1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -526,10 +526,10 @@
         <value>The profile name of this <see cref="T:System.Runtime.Versioning.FrameworkName" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the read-only <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property is set in the <xref:System.Runtime.Versioning.FrameworkName.%23ctor%2A> class constructor.  
-  
+The value of the read-only <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property is set in the <xref:System.Runtime.Versioning.FrameworkName.%23ctor%2A> class constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -562,16 +562,16 @@
         <returns>A string that represents this <see cref="T:System.Runtime.Versioning.FrameworkName" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A> method has the following format:  
-  
- *identifier*, Version=*version*[, Profile=*profile*]  
-  
- where *identifier* corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property, `version` is equivalent to calling <xref:System.Version.ToString%2A?displayProperty=fullName> on the value of the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property, and `profile` corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property. If a profile has not been assigned to the <xref:System.Runtime.Versioning.FrameworkName> object, the profile component is not included in the returned string.  
-  
- The value returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A> method is identical to the value of the <xref:System.Runtime.Versioning.FrameworkName.FullName%2A> property.  
-  
+The string returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A> method has the following format:  
+ 
+*identifier*, Version=*version*[, Profile=*profile*]  
+ 
+where *identifier* corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property, `version` is equivalent to calling <xref:System.Version.ToString%2A?displayProperty=fullName> on the value of the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property, and `profile` corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property. If a profile has not been assigned to the <xref:System.Runtime.Versioning.FrameworkName> object, the profile component is not included in the returned string.  
+ 
+The value returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A> method is identical to the value of the <xref:System.Runtime.Versioning.FrameworkName.FullName%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -603,10 +603,10 @@
         <value>An object that contains version information about this <see cref="T:System.Runtime.Versioning.FrameworkName" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the read-only <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property is set in the <xref:System.Runtime.Versioning.FrameworkName.%23ctor%2A> class constructor.  
-  
+The value of the read-only <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property is set in the <xref:System.Runtime.Versioning.FrameworkName.%23ctor%2A> class constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

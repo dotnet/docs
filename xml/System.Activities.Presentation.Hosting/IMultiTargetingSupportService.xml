@@ -11,12 +11,12 @@
     <summary>Provides multi-targeting for [!INCLUDE[wfd1](~/includes/wfd1-md.md)] hosts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- *Multi-targeting* is the ability to find the right version of the loaded assembly that corresponds to the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version of the current workflow project in [!INCLUDE[vs2010](~/includes/vs2010-md.md)].  
-  
- This interface is implemented and used internally by [!INCLUDE[wf1](~/includes/wf1-md.md)] designer components to resolve [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies in a multi-targeting aware fashion within the [!INCLUDE[vs2010](~/includes/vs2010-md.md)] hosting application. The [!INCLUDE[wf1](~/includes/wf1-md.md)] designer components use the implementation of this interface only when additional assemblies need to be loaded dynamically into the editing `AppDomain`.  
-  
+*Multi-targeting* is the ability to find the right version of the loaded assembly that corresponds to the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version of the current workflow project in [!INCLUDE[vs2010](~/includes/vs2010-md.md)].  
+ 
+This interface is implemented and used internally by [!INCLUDE[wf1](~/includes/wf1-md.md)] designer components to resolve [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies in a multi-targeting aware fashion within the [!INCLUDE[vs2010](~/includes/vs2010-md.md)] hosting application. The [!INCLUDE[wf1](~/includes/wf1-md.md)] designer components use the implementation of this interface only when additional assemblies need to be loaded dynamically into the editing `AppDomain`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

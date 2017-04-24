@@ -14,14 +14,14 @@
     <summary>The exception that is thrown when one or more exceptions have occurred at the [!INCLUDE[infocard](~/includes/infocard-md.md)] service level. The cause of the error will be logged in the event log.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conditions that cause this exception to be thrown include:  
-  
+Conditions that cause this exception to be thrown include:  
+ 
 -   The user interface is already being displayed.  
-  
+ 
 -   There was an error in loading a store or ledger.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

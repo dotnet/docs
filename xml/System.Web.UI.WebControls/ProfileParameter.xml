@@ -19,15 +19,15 @@
     <summary>Binds the value of an ASP.NET Profile property to a parameter object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.UI.WebControls.ProfileParameter> class to bind the value of an ASP.NET Profile parameter to a parameter used in a parameterized SQL query, business object method, or filtering expression.  
-  
- The <xref:System.Web.UI.WebControls.ProfileParameter> class provides the <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A> property in addition to those inherited from the <xref:System.Web.UI.WebControls.Parameter> class. The <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A> property identifies the ASP.NET Profile property from which the <xref:System.Web.UI.WebControls.ProfileParameter> retrieves a value.  
-  
+You can use the <xref:System.Web.UI.WebControls.ProfileParameter> class to bind the value of an ASP.NET Profile parameter to a parameter used in a parameterized SQL query, business object method, or filtering expression.  
+ 
+The <xref:System.Web.UI.WebControls.ProfileParameter> class provides the <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A> property in addition to those inherited from the <xref:System.Web.UI.WebControls.Parameter> class. The <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A> property identifies the ASP.NET Profile property from which the <xref:System.Web.UI.WebControls.ProfileParameter> retrieves a value.  
+ 
 > [!NOTE]
 >  Controls that bind data to the parameter might throw an exception if a <xref:System.Web.UI.WebControls.ProfileParameter> object is specified but no corresponding profile property is set. Similarly, they might display no data if the profile property is set with `null`. Set the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property to avoid these situations where appropriate.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ProfileParameter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.UI.WebControls.ProfileParameter> object created with the <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A> properties are initialized to <xref:System.String.Empty?displayProperty=fullName>. Additionally, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to null (`Nothing` in Visual Basic).  
-  
+A <xref:System.Web.UI.WebControls.ProfileParameter> object created with the <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A> properties are initialized to <xref:System.String.Empty?displayProperty=fullName>. Additionally, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to null (`Nothing` in Visual Basic).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ProfileParameter" /> class with the values of the instance specified by the <paramref name="original" /> parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> constructor is a `protected` copy constructor used to clone a <xref:System.Web.UI.WebControls.ProfileParameter> instance. The values of the <xref:System.Web.UI.WebControls.ProfileParameter>, including <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A>, <xref:System.Web.UI.WebControls.Parameter.Name%2A>, and <xref:System.Web.UI.WebControls.Parameter.Type%2A> are all transferred to the new instance.  
-  
+The <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> constructor is a `protected` copy constructor used to clone a <xref:System.Web.UI.WebControls.ProfileParameter> instance. The values of the <xref:System.Web.UI.WebControls.ProfileParameter>, including <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A>, <xref:System.Web.UI.WebControls.Parameter.Name%2A>, and <xref:System.Web.UI.WebControls.Parameter.Type%2A> are all transferred to the new instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <summary>Initializes a new named instance of the <see cref="T:System.Web.UI.WebControls.ProfileParameter" /> class, using the specified property name to identify which ASP.NET Profile property to bind to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.UI.WebControls.ProfileParameter> object created with the <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> constructor is initialized with the specified parameter name and <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A>, which identifies the ASP.NET Profile property that the parameter binds to. Other properties, including <xref:System.Web.UI.WebControls.Parameter.Type%2A>, <xref:System.Web.UI.WebControls.Parameter.Direction%2A>, and <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A> are initialized with default values.  
-  
+A <xref:System.Web.UI.WebControls.ProfileParameter> object created with the <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> constructor is initialized with the specified parameter name and <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A>, which identifies the ASP.NET Profile property that the parameter binds to. Other properties, including <xref:System.Web.UI.WebControls.Parameter.Type%2A>, <xref:System.Web.UI.WebControls.Parameter.Direction%2A>, and <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A> are initialized with default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <summary>Initializes a new named and strongly typed instance of the <see cref="T:System.Web.UI.WebControls.ProfileParameter" /> class, using the specified property name to identify which ASP.NET Profile property to bind to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.UI.WebControls.ProfileParameter> object created with the <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> constructor is initialized with the specified parameter name, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A>. Only the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> and <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A> properties are initialized with default values.  
-  
+A <xref:System.Web.UI.WebControls.ProfileParameter> object created with the <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> constructor is initialized with the specified parameter name, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A>. Only the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> and <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A> properties are initialized with default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.ProfileParameter" /> object that is an exact duplicate of the current one.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ProfileParameter.Clone%2A> method calls the <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> copy constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ProfileParameter> class with the values of the current instance.  
-  
+The <xref:System.Web.UI.WebControls.ProfileParameter.Clone%2A> method calls the <xref:System.Web.UI.WebControls.ProfileParameter.%23ctor%2A> copy constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ProfileParameter> class with the values of the current instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,12 +206,12 @@
         <returns>An object that represents the updated and current value of the parameter. If the context or the ASP.NET Profile is null (<see langword="Nothing" /> in Visual Basic), the <see cref="M:System.Web.UI.WebControls.ProfileParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" /> method returns null.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ProfileParameter> attempts to bind to the value of the Profile property every time the <xref:System.Web.UI.WebControls.ProfileParameter.Evaluate%2A> method is called.  
-  
- The `context` parameter is used by the <xref:System.Web.UI.WebControls.ProfileParameter.Evaluate%2A> method to retrieve the ASP.NET Profile that the <xref:System.Web.UI.WebControls.ProfileParameter> binds to. The `control` parameter is ignored.  
-  
+The <xref:System.Web.UI.WebControls.ProfileParameter> attempts to bind to the value of the Profile property every time the <xref:System.Web.UI.WebControls.ProfileParameter.Evaluate%2A> method is called.  
+ 
+The `context` parameter is used by the <xref:System.Web.UI.WebControls.ProfileParameter.Evaluate%2A> method to retrieve the ASP.NET Profile that the <xref:System.Web.UI.WebControls.ProfileParameter> binds to. The `control` parameter is ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
         <value>A string that identifies the ASP.NET Profile property that the parameter binds to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A> property identifies a property of the current ASP.NET Profile available through the current <xref:System.Web.HttpContext> object. If the property does not exist for the Profile, the <xref:System.Web.UI.WebControls.ProfileParameter.Evaluate%2A> method fails to bind the parameter to a value.  
-  
+The <xref:System.Web.UI.WebControls.ProfileParameter.PropertyName%2A> property identifies a property of the current ASP.NET Profile available through the current <xref:System.Web.HttpContext> object. If the property does not exist for the Profile, the <xref:System.Web.UI.WebControls.ProfileParameter.Evaluate%2A> method fails to bind the parameter to a value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

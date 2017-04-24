@@ -16,10 +16,10 @@
     <summary>Provides an interface to a given function defined in the Extensible Stylesheet Language for Transformations (XSLT) style sheet during runtime execution.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using <xref:System.Xml.Xsl.IXsltContextFunction>, see article Q324899, "HOW TO: Implement and Use Custom Functions When You Execute XPath Queries in Visual Basic .NET" in the Microsoft Knowledge Base at http://support.microsoft.com.  
-  
+For more information on using <xref:System.Xml.Xsl.IXsltContextFunction>, see article Q324899, "HOW TO: Implement and Use Custom Functions When You Execute XPath Queries in Visual Basic .NET" in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,10 +77,10 @@
         <returns>An <see cref="T:System.Object" /> representing the return value of the function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `docContext` parameter is required so that functions which require a node set can be supplied the current context node.  
-  
+The `docContext` parameter is required so that functions which require a node set can be supplied the current context node.  
+ 
  ]]></format>
         </remarks>
       </Docs>

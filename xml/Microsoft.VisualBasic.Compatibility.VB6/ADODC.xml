@@ -23,13 +23,13 @@
     <summary>Provides compatibility with the Visual Basic 6.0 <see langword="ADO Data Control" />, which enabled you to create a connection to a database using Microsoft ActiveX Data Objects (<see langword="ADO" />).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this control in applications upgraded from Visual Basic 6.0 to continue to use an `ADO` data connection. For new development, you should consider using `ADO.NET` instead of `ADO`. For more information, see [Comparison of ADO.NET and ADO](http://msdn.microsoft.com/en-us/98f2c0cd-437d-4934-8be5-c174b6782cae).  
-  
+Use this control in applications upgraded from Visual Basic 6.0 to continue to use an `ADO` data connection. For new development, you should consider using `ADO.NET` instead of `ADO`. For more information, see [Comparison of ADO.NET and ADO](http://msdn.microsoft.com/en-us/98f2c0cd-437d-4934-8be5-c174b6782cae).  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,13 +48,13 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Provides compatibility with the Visual Basic 6.0 `ADO Data Control`.  
-  
+Provides compatibility with the Visual Basic 6.0 `ADO Data Control`.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,13 +84,13 @@
         <summary>Adds an interface to monitor changes in a data set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `DataSourceListener` monitors a data set for data members that are added, removed, or changed when the <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC> is connected to a data source.  
-  
+The `DataSourceListener` monitors a data set for data members that are added, removed, or changed when the <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC> is connected to a data source.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,13 +120,13 @@
         <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the `BackColor` property affects only the part of the control where text is displayed.  
-  
+Setting the `BackColor` property affects only the part of the control where text is displayed.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,15 +157,15 @@
           <see langword="true" /> if the current row position is before the first row; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `BOF` and <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOF%2A> return values are determined by the location of the current row pointer if this pointer is valid. If either `BOF` or <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOF%2A> is `true`, there is no current row, and any attempt to reference <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> data causes an exception.  
-  
- You can use the `BOF` and <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOF%2A> properties to determine whether an <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> object contains rows or whether you have gone beyond the limits of an <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> as you move from row to row.  
-  
+The `BOF` and <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOF%2A> return values are determined by the location of the current row pointer if this pointer is valid. If either `BOF` or <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOF%2A> is `true`, there is no current row, and any attempt to reference <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> data causes an exception.  
+ 
+You can use the `BOF` and <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOF%2A> properties to determine whether an <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> object contains rows or whether you have gone beyond the limits of an <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> as you move from row to row.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,13 +198,13 @@
         <value>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOFActionEnum" /> enumeration that specifies the action to take.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to specify the behavior when the `MovePrevious` button is pressed and the first row of a <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> is the current row.  
-  
+Use this property to specify the behavior when the `MovePrevious` button is pressed and the first row of a <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> is the current row.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,15 +237,15 @@
         <value>An <see langword="Integer" /> that specifies the number of records that are cached in local memory for the current <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset" /> object. The default is 50 records.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `CacheSize` value tells the provider how many records to keep in its buffer and how many records to fetch at one time to local memory. For example, when set to 10, after opening the first <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A>, the provider fetches the first 10 records into local memory. Therefore, as you move forward from the current record, the provider returns the data values from the local memory buffer. As soon as you move past the last record, the next 10 records are fetched from the data source into the cache.  
-  
- While you can change value during the life of the cursor, the change only affects the number of records in the cache after the next fetch from the data source.  
-  
+The `CacheSize` value tells the provider how many records to keep in its buffer and how many records to fetch at one time to local memory. For example, when set to 10, after opening the first <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A>, the provider fetches the first 10 records into local memory. Therefore, as you move forward from the current record, the provider returns the data values from the local memory buffer. As soon as you move past the last record, the next 10 records are fetched from the data source into the cache.  
+ 
+While you can change value during the life of the cursor, the change only affects the number of records in the cache after the next fetch from the data source.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,13 +278,13 @@
         <value>An <see langword="Integer" /> that specifies the number of seconds to wait when a connection is being established. The default is 15 seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After this period of time has elapsed without completing the command, the provider raises an exception to the calling application and cancels the command.  
-  
+After this period of time has elapsed without completing the command, the provider raises an exception to the calling application and cancels the command.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,13 +320,13 @@
         <value>A <see langword="ADODB.CommandTypeEnum" /> enumeration that specifies the command type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property optimizes the execution of the command.  
-  
+Setting this property optimizes the execution of the command.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,13 +359,13 @@
         <value>A <see cref="T:System.String" /> that contains the connection information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `ConnectionString` property to specify a data source by passing a detailed connection string that contains a series of argument = value statements separated by semicolons.  
-  
+Use the `ConnectionString` property to specify a data source by passing a detailed connection string that contains a series of argument = value statements separated by semicolons.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,13 +398,13 @@
         <value>An <see langword="Integer" /> that specifies the number of seconds to wait when a connection is being established. The default is 15 seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the ADO `ConnectionTimeout` property.  
-  
+This property corresponds to the ADO `ConnectionTimeout` property.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,13 +440,13 @@
         <value>A <see langword="ADODB.CursorLocationEnum" /> enumeration that specifies s the location. The default is <see langword="ADODB.CursorLocationEnum.adUseClient" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the ADO Command and Connection `CursorLocation` property.  
-  
+This property corresponds to the ADO Command and Connection `CursorLocation` property.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,13 +482,13 @@
         <value>A <see langword="ADODB.CursorTypeEnum" /> enumeration that specifies the type of cursor to use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Determines the cursor type to use when opening a <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A>.  
-  
+Determines the cursor type to use when opening a <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A>.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -514,15 +514,15 @@
         <summary>Releases the unmanaged resources used by a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the disposing parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with the disposing parameter set to `false`.  
-  
- When the disposing parameter is `true`, this method releases all resources held by any managed objects that this control references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the disposing parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with the disposing parameter set to `false`.  
+ 
+When the disposing parameter is `true`, this method releases all resources held by any managed objects that this control references. This method invokes the `Dispose()` method of each referenced object.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -552,13 +552,13 @@
         <summary>The <see langword="EndOfRecordset" /> event is called when there is an attempt to move to a row past the end of the <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An `EndOfRecordset` event may occur if the `MoveNext` operation fails.  
-  
+An `EndOfRecordset` event may occur if the `MoveNext` operation fails.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -589,15 +589,15 @@
           <see langword="true" /> if the current row position is after the last row; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOF%2A> and `EOF` return values are determined by the location of the current row pointer if this pointer is valid. If either <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOF%2A> or `EOF` is `true`, there is no current row, and any attempt to reference <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> data causes an exception.  
-  
- You can use the <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOF%2A> and `EOF` properties to determine whether an <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> object contains rows or whether you have gone beyond the limits of an <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> as you move from row to row.  
-  
+The <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOF%2A> and `EOF` return values are determined by the location of the current row pointer if this pointer is valid. If either <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOF%2A> or `EOF` is `true`, there is no current row, and any attempt to reference <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> data causes an exception.  
+ 
+You can use the <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOF%2A> and `EOF` properties to determine whether an <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> object contains rows or whether you have gone beyond the limits of an <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> as you move from row to row.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -630,13 +630,13 @@
         <value>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFActionEnum" /> enumeration that specifies the action to take.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to specify the behavior when the `MoveNext` button is pressed when the first row of a <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> is the current row.  
-  
+Use this property to specify the behavior when the `MoveNext` button is pressed when the first row of a <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A> is the current row.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,13 +657,13 @@
         <summary>Occurs when an exception is raised in a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this event to handle exceptions that derive from the underlying OLE DB `DataSource`.  
-  
+Use this event to handle exceptions that derive from the underlying OLE DB `DataSource`.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -689,13 +689,13 @@
         <summary>Occurs when a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control completes a fetch from a database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -721,13 +721,13 @@
         <summary>Occurs while a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control is fetching data from a database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -753,13 +753,13 @@
         <summary>Occurs when an update to a <see langword="Field" /> in a <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset" /> for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control is complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -787,12 +787,12 @@
         <returns>Returns a data access object (such as a row position) for a given data member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -815,13 +815,13 @@
         <returns>An <see langword="Integer" /> that represents the count.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used internally to return a count of data members for the <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC>.  
-  
+Used internally to return a count of data members for the <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC>.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -847,13 +847,13 @@
         <returns>A <see cref="T:System.String" /> that describes the data member name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used internally to return the name of a data member for a <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC>.  
-  
+Used internally to return the name of a data member for a <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC>.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -889,13 +889,13 @@
         <value>A <see langword="ADODB.LockTypeEnum" /> enumeration that specifies the type of concurrency handling.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In order to maintain sufficient control over the data being updated, `ADO` provides a number of concurrency options that control how other users are granted, or refused access to the data being updated.  
-  
+In order to maintain sufficient control over the data being updated, `ADO` provides a number of concurrency options that control how other users are granted, or refused access to the data being updated.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -928,13 +928,13 @@
         <value>An <see langword="Integer" /> that specifies the number of records that can be retrieved from the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the `ADO``Recordset``MaxRecords` property.  
-  
+This property corresponds to the `ADO``Recordset``MaxRecords` property.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -970,15 +970,15 @@
         <value>A <see langword="ADO.ConnectModeEnum" /> that specifies the mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the `ADO``Mode` property.  
-  
- This property corresponds to the `ADO``Recordset``MaxRecords` property.  
-  
+This property corresponds to the `ADO``Mode` property.  
+ 
+This property corresponds to the `ADO``Recordset``MaxRecords` property.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1004,13 +1004,13 @@
         <summary>Occurs when a <see langword="MoveFirst" />, <see langword="MoveNext" />, or <see langword="MoveLast" /> method has occurred in a <see langword="Recordset" /> for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1035,15 +1035,15 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The `OnResize` method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The `OnResize` method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1079,13 +1079,13 @@
         <value>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.OrientationEnum" /> enumeration that specifies the orientation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the `ADO``Recordset``MaxRecords` property.  
-  
+This property corresponds to the `ADO``Recordset``MaxRecords` property.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1115,13 +1115,13 @@
         <value>A <see cref="T:System.String" /> that contains the password.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property setting is write-only. It may only be provided in code, it cannot be read back from the `Password` property.  
-  
+This property setting is write-only. It may only be provided in code, it cannot be read back from the `Password` property.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1147,13 +1147,13 @@
         <summary>Occurs when the current record has changed in the <see langword="Recordset" /> of a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1186,13 +1186,13 @@
         <value>An ADO <see langword="Recordset" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By using the `Recordset` property, you can use the methods, properties, and events of the ADO `ADODB.Recordset` Object.  
-  
+By using the `Recordset` property, you can use the methods, properties, and events of the ADO `ADODB.Recordset` Object.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1218,13 +1218,13 @@
         <summary>Occurs when the <see langword="Recordset" /> for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1257,13 +1257,13 @@
         <value>A <see cref="T:System.String" /> that contains the statement or query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `RecordSource` contains both the name of a database table and a valid SQL string using syntax appropriate for the data source.  
-  
+The `RecordSource` contains both the name of a database table and a valid SQL string using syntax appropriate for the data source.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1285,12 +1285,12 @@
         <summary>Forces a control to invalidate its client area and immediately redraw itself and any child controls.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1320,13 +1320,13 @@
         <summary>Removes a <see langword="DataSourceListener" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `DataSourceListener` monitors a data set for data members that are added, removed, or changed when the <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC> is connected to a data source.  
-  
+The `DataSourceListener` monitors a data set for data members that are added, removed, or changed when the <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC> is connected to a data source.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1365,13 +1365,13 @@
         <value>A <see cref="T:System.String" /> that specifies the text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to communicate information such as the number of the current record to the user.  
-  
+Use this property to communicate information such as the number of the current record to the user.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1404,13 +1404,13 @@
         <value>A <see cref="T:System.String" /> that contains a user name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The user-name syntax depends on the data source. When a `UserName` and <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Password%2A> are supplied, the control uses the values to create a connection string (<xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.ConnectionString%2A> property).  
-  
+The user-name syntax depends on the data source. When a `UserName` and <xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Password%2A> are supplied, the control uses the values to create a connection string (<xref:Microsoft.VisualBasic.Compatibility.VB6.ADODC.ConnectionString%2A> property).  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1436,12 +1436,12 @@
         <summary>Occurs before the current field in a <see langword="Recordset" /> of a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1467,12 +1467,12 @@
         <summary>Occurs before the current record in a <see langword="Recordset" /> of a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1498,12 +1498,12 @@
         <summary>Occurs before the <see langword="Recordset" /> of a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1529,12 +1529,12 @@
         <summary>Occurs before the <see langword="MoveFirst" />, <see langword="MoveNext" />, or <see langword="MoveLast" /> method of a <see langword="Recordset" /> of a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" /> control executes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

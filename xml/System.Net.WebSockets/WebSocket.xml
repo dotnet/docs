@@ -27,10 +27,10 @@
     <summary>The WebSocket class allows applications to send and receive data after the WebSocket upgrade has completed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some of the classes in the <xref:System.Net.WebSockets> namespace are supported on Windows 7, Windows Vista SP2, and Windows Server 2008. However, the only public implementations of client and server WebSockets are supported on Windows 8 and Windows Server 2012. The classes and class elements in the <xref:System.Net.WebSockets> namespace that are supported on Windows 7, Windows Vista SP2, and Windows Server 2008 are abstract classes. This allows an application developer to inherit and extend these abstract classes with an actual implementation of client WebSockets.  
-  
+Some of the classes in the <xref:System.Net.WebSockets> namespace are supported on Windows 7, Windows Vista SP2, and Windows Server 2008. However, the only public implementations of client and server WebSockets are supported on Windows 8 and Windows Server 2012. The classes and class elements in the <xref:System.Net.WebSockets> namespace that are supported on Windows 7, Windows Vista SP2, and Windows Server 2008 are abstract classes. This allows an application developer to inherit and extend these abstract classes with an actual implementation of client WebSockets.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -122,12 +122,12 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the WebSocket has been closed.  
-  
- This method closes the WebSocket connection using the close handshake defined in the [WebSocket protocol specification](http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06) section 7.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the WebSocket has been closed.  
+ 
+This method closes the WebSocket connection using the close handshake defined in the [WebSocket protocol specification](http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06) section 7.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the output on the WebSocket has been closed.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the output on the WebSocket has been closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <value>Returns <see cref="T:System.Net.WebSockets.WebSocketCloseStatus" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the close handshake has not been initiated yet, WebSocketCloseStatus.None is returned.  
-  
+If the close handshake has not been initiated yet, WebSocketCloseStatus.None is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -501,12 +501,12 @@
  The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns a <see cref="T:System.Byte" /> array containing the received data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the data has been received on the <xref:System.Net.WebSockets.WebSocket>.  
-  
- Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.WebSocket> object in parallel.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the data has been received on the <xref:System.Net.WebSockets.WebSocket>.  
+ 
+Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.WebSocket> object in parallel.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,12 +575,12 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the data has been sent on the <xref:System.Net.WebSockets.WebSocket>.  
-  
- Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.WebSocket> object in parallel.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the data has been sent on the <xref:System.Net.WebSockets.WebSocket>.  
+ 
+Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.WebSocket> object in parallel.  
+ 
  ]]></format>
         </remarks>
       </Docs>

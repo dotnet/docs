@@ -11,12 +11,12 @@
     <summary>Provides an interface that can be used to optimize the reloading of a designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.CodeDom.Compiler.CodeDomProvider> can implement this interface to support optimized reloading by the designer. When a designer reparses a file for display, it can use this interface to improve performance.  
-  
- To support this performance optimization method, the designer can pass a <xref:System.CodeDom.CodeCompileUnit> that represents the document code to the <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload.ShouldReloadDesigner%2A> method. <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload.ShouldReloadDesigner%2A> returns a value that indicates whether the code has changed and typically, whether your code should reload the designer. Otherwise, it is unnecessary to spend time reloading the designer.  
-  
+A <xref:System.CodeDom.Compiler.CodeDomProvider> can implement this interface to support optimized reloading by the designer. When a designer reparses a file for display, it can use this interface to improve performance.  
+ 
+To support this performance optimization method, the designer can pass a <xref:System.CodeDom.CodeCompileUnit> that represents the document code to the <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload.ShouldReloadDesigner%2A> method. <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload.ShouldReloadDesigner%2A> returns a value that indicates whether the code has changed and typically, whether your code should reload the designer. Otherwise, it is unnecessary to spend time reloading the designer.  
+ 
  ]]></format>
     </remarks>
   </Docs>

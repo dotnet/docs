@@ -14,10 +14,10 @@
     <summary>Represents the restriction of the number of elements in the argument collection to the specified limit value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Data.Common.CommandTrees.DbLimitExpression> can be applied to any <xref:System.Data.Common.CommandTrees.DbExpression> with a collection result type, including <xref:System.Data.Common.CommandTrees.DbSkipExpression>. <xref:System.Data.Common.CommandTrees.DbLimitExpression> provides the equivalent of the Top operation. It does not require an ordering operation to have been performed on its input. It has two `Expression` properties, <xref:System.Data.Common.CommandTrees.DbLimitExpression.Argument%2A> and <xref:System.Data.Common.CommandTrees.DbLimitExpression.Limit%2A>, that specify the collection and the number of rows to return respectively. <xref:System.Data.Common.CommandTrees.DbLimitExpression> also has a `Boolean`<xref:System.Data.Common.CommandTrees.DbLimitExpression.WithTies%2A> property that controls whether rows equal in rank to the final row are returned. <xref:System.Data.Common.CommandTrees.DbLimitExpression.WithTies%2A> defaults to `false`.  
-  
+A <xref:System.Data.Common.CommandTrees.DbLimitExpression> can be applied to any <xref:System.Data.Common.CommandTrees.DbExpression> with a collection result type, including <xref:System.Data.Common.CommandTrees.DbSkipExpression>. <xref:System.Data.Common.CommandTrees.DbLimitExpression> provides the equivalent of the Top operation. It does not require an ordering operation to have been performed on its input. It has two `Expression` properties, <xref:System.Data.Common.CommandTrees.DbLimitExpression.Argument%2A> and <xref:System.Data.Common.CommandTrees.DbLimitExpression.Limit%2A>, that specify the collection and the number of rows to return respectively. <xref:System.Data.Common.CommandTrees.DbLimitExpression> also has a `Boolean`<xref:System.Data.Common.CommandTrees.DbLimitExpression.WithTies%2A> property that controls whether rows equal in rank to the final row are returned. <xref:System.Data.Common.CommandTrees.DbLimitExpression.WithTies%2A> defaults to `false`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -131,10 +131,10 @@
           <see langword="true" /> if the limit operation will include tied results; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.CommandTrees.DbLimitExpression.WithTies%2A> property controls whether rows equal in rank to the final row are returned.  
-  
+The <xref:System.Data.Common.CommandTrees.DbLimitExpression.WithTies%2A> property controls whether rows equal in rank to the final row are returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>

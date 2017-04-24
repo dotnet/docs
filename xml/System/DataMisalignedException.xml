@@ -33,12 +33,12 @@
     <summary>The exception that is thrown when a unit of data is read from or written to an address that is not a multiple of the data size. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some microprocessors, such as 64-bit processors, can issue hardware exceptions when data is read or written to a misaligned address (that is, when an address is not a multiple of the size of the data being accessed). <xref:System.DataMisalignedException> is typically thrown when 16-bit, 32-bit, or 64-bit data is read from or written to an address that is not a multiple of two, four, or eight bytes.  
-  
- The <xref:System.DataMisalignedException> exposes the underlying hardware exception, which allows you to respond in an appropriate manner. For example, a routine in your application attempts to copy a sequence of bytes from one location to another in 64-bit units. However, the write operation starts at a misaligned address, which causes the common language runtime to throw a <xref:System.DataMisalignedException>. Your routine responds to the exception by copying the data one byte at a time.  
-  
+Some microprocessors, such as 64-bit processors, can issue hardware exceptions when data is read or written to a misaligned address (that is, when an address is not a multiple of the size of the data being accessed). <xref:System.DataMisalignedException> is typically thrown when 16-bit, 32-bit, or 64-bit data is read from or written to an address that is not a multiple of two, four, or eight bytes.  
+ 
+The <xref:System.DataMisalignedException> exposes the underlying hardware exception, which allows you to respond in an appropriate manner. For example, a routine in your application attempts to copy a sequence of bytes from one location to another in 64-bit units. However, the write operation starts at a misaligned address, which causes the common language runtime to throw a <xref:System.DataMisalignedException>. Your routine responds to the exception by copying the data one byte at a time.  
+ 
  ]]></format>
     </remarks>
   </Docs>

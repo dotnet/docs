@@ -34,27 +34,27 @@
     <summary>Creates a theme specific look for drop shadow effects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The drop shadow effect creates a solid silhouette of the content of the element. This creates the illusion that the content is floating and casting a shadow.  
-  
+The drop shadow effect creates a solid silhouette of the content of the element. This creates the illusion that the content is floating and casting a shadow.  
+ 
 <a name="xamlObjectElementUsage_SDSC"></a>   
 ## XAML Object Element Usage  
-  
+ 
 ```  
 <theme:SystemDropShadowChrome ...>  
   singleChild  
 </theme:SystemDropShadowChrome>  
 ```  
-  
+ 
 <a name="xamlValues_SDSC"></a>   
 ## XAML Values  
- `theme:`  
- An xmlns prefix for the <xref:Microsoft.Windows.Themes> CLR namespace. Typically, xmlns prefixes and mappings are defined in a XAML root element (not shown).  
-  
- *singleChild*  
- A single object element child, representing the object that the decorator is drawn around. This object must be a <xref:System.Windows.UIElement>.  
-  
+`theme:`  
+An xmlns prefix for the <xref:Microsoft.Windows.Themes> CLR namespace. Typically, xmlns prefixes and mappings are defined in a XAML root element (not shown).  
+ 
+*singleChild*  
+A single object element child, representing the object that the decorator is drawn around. This object must be a <xref:System.Windows.UIElement>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -131,17 +131,17 @@
         <value>The color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Color"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.SystemDropShadowChrome.ColorProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,17 +220,17 @@
         <value>The radii of a rectangle's corners.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CornerRadius"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:Microsoft.Windows.Themes.SystemDropShadowChrome.CornerRadiusProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

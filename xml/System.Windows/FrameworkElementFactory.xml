@@ -19,10 +19,10 @@
     <summary>Supports the creation of templates.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is a deprecated way to programmatically create templates, which are subclasses of <xref:System.Windows.FrameworkTemplate> such as <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>; not all of the template functionality is available when you create a template using this class. The recommended way to programmatically create a template is to load [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] from a string or a memory stream using the <xref:System.Windows.Markup.XamlReader.Load%2A> method of the <xref:System.Windows.Markup.XamlReader> class.  
-  
+This class is a deprecated way to programmatically create templates, which are subclasses of <xref:System.Windows.FrameworkTemplate> such as <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>; not all of the template functionality is available when you create a template using this class. The recommended way to programmatically create a template is to load [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] from a string or a memory stream using the <xref:System.Windows.Markup.XamlReader.Load%2A> method of the <xref:System.Windows.Markup.XamlReader> class.  
+ 
 <a name="xamlTextUsage_FrameworkElementFactory"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -186,9 +186,9 @@
         <value>A <see cref="T:System.Windows.FrameworkElementFactory" /> the first child factory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_FirstChild"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -213,9 +213,9 @@
           <see langword="true" /> if this object is in an immutable state; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_IsSealed"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -239,9 +239,9 @@
         <value>A string that is the template identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Name"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -265,9 +265,9 @@
         <value>A <see cref="T:System.Windows.FrameworkElementFactory" /> that is the next sibling factory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_NextSibling"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -291,9 +291,9 @@
         <value>A <see cref="T:System.Windows.FrameworkElementFactory" /> that is the parent factory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Parent"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -409,9 +409,9 @@
         <value>The text string to produce.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Text"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -435,9 +435,9 @@
         <value>The type of the objects this factory produces.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Type"></a>   
 ## XAML Text Usage  
  ]]></format>

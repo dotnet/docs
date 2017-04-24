@@ -174,10 +174,10 @@
         <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.ItemsControlAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.ItemsControlAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

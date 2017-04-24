@@ -104,10 +104,10 @@
         <summary>Adds a <see cref="T:System.Windows.Media.TextEffect" /> to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Windows.Media.TextEffect> objects derive from <xref:System.Windows.Freezable>, they are copied when they are used. Therefore, later, you might not be able to retrieve or remove the <xref:System.Windows.Media.TextEffect> you added to the collection using the original <xref:System.Windows.Media.TextEffect> object. The <xref:System.Windows.Media.TextEffect> in the collection is a copy of the original <xref:System.Windows.Media.TextEffect> and is considered a different <xref:System.Windows.Media.TextEffect> than the one you added.  
-  
+Because <xref:System.Windows.Media.TextEffect> objects derive from <xref:System.Windows.Freezable>, they are copied when they are used. Therefore, later, you might not be able to retrieve or remove the <xref:System.Windows.Media.TextEffect> you added to the collection using the original <xref:System.Windows.Media.TextEffect> object. The <xref:System.Windows.Media.TextEffect> in the collection is a copy of the original <xref:System.Windows.Media.TextEffect> and is considered a different <xref:System.Windows.Media.TextEffect> than the one you added.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,12 +148,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,20 +393,20 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first item in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first item of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next item.  
-  
- After the end of the collection is passed, the enumerator is positioned after the last item in the collection, and calling <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first item of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting items, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> will return the item that it is set to, even if the enumerator is already invalidated.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
+Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first item in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first item of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next item.  
+ 
+After the end of the collection is passed, the enumerator is positioned after the last item in the collection, and calling <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first item of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting items, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> will return the item that it is set to, even if the enumerator is already invalidated.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -432,14 +432,14 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the entire collection, if found; otherwise, <c>-1</c>.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection is searched forward starting at the first key frame and ending at the last key frame.  
-  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Windows.Media.Animation.ColorKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is  <xref:System.Windows.Media.Animation.ColorKeyFrameCollection.Count%2A>.  
-  
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
+The collection is searched forward starting at the first key frame and ending at the last key frame.  
+ 
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Windows.Media.Animation.ColorKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is  <xref:System.Windows.Media.Animation.ColorKeyFrameCollection.Count%2A>.  
+ 
+This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -488,10 +488,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides the ability to access a specific item in the collection by using an index.  
-  
+This property provides the ability to access a specific item in the collection by using an index.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -518,10 +518,10 @@
           <see langword="true" /> if <paramref name="value" /> was removed fro the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated. If `value` is a `null` reference (`Nothing` in Visual Basic), the first null reference (`Nothing` in Visual Basic) entry is removed. Note that removing a null reference (`Nothing` in Visual Basic) entry is linear in the size of the collection.  
-  
+The objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated. If `value` is a `null` reference (`Nothing` in Visual Basic), the first null reference (`Nothing` in Visual Basic) entry is removed. Note that removing a null reference (`Nothing` in Visual Basic) entry is linear in the size of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -546,10 +546,10 @@
         <summary>Removes the <see cref="T:System.Windows.Media.TextEffect" /> at the specified index in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated.  
-  
+The objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -572,10 +572,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.TextEffectCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -598,10 +598,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -628,10 +628,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -654,10 +654,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Windows.Media.TextEffectCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -679,10 +679,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Media.TextEffectCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -705,10 +705,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -734,10 +734,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -764,10 +764,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Media.TextEffectCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -793,10 +793,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -823,10 +823,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -849,10 +849,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.TextEffectCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -875,10 +875,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.TextEffectCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -904,10 +904,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -932,10 +932,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.TextEffectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.UpWmlMobileTextWriter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adapters are usually constructed automatically by ASP.NET, and must have a default constructor.  
-  
+Adapters are usually constructed automatically by ASP.NET, and must have a default constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,10 +247,10 @@
         <summary>Begins rendering a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This call can be followed by calls to render text or by a call to the <xref:System.Web.UI.MobileControls.Adapters.UpWmlMobileTextWriter.RenderImage%2A> method to render the hyperlink contents, followed by a call to the <xref:System.Web.UI.MobileControls.Adapters.UpWmlMobileTextWriter.RenderEndHyperlink%2A> method.  
-  
+This call can be followed by calls to render text or by a call to the <xref:System.Web.UI.MobileControls.Adapters.UpWmlMobileTextWriter.RenderImage%2A> method to render the hyperlink contents, followed by a call to the <xref:System.Web.UI.MobileControls.Adapters.UpWmlMobileTextWriter.RenderEndHyperlink%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">the writer has already begun to write a hyperlink,  

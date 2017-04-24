@@ -19,12 +19,12 @@
     <summary>Contains response information returned as a result of a peer endpoint resolution operation on the peer resolver.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Resolve%28System.ServiceModel.PeerResolvers.ResolveInfo%29> or an implementation of <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract.Resolve%28System.ServiceModel.PeerResolvers.ResolveInfo%29> is called, this object is returned to the client. It contains the endpoints registered to the peer specified in a previous corresponding <xref:System.ServiceModel.PeerResolvers.ResolveInfo> instance sent to the peer resolver.  
-  
- Instances of this class are primarily used to pass information from the resolver service to a network client of that service.  
-  
+When <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Resolve%28System.ServiceModel.PeerResolvers.ResolveInfo%29> or an implementation of <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract.Resolve%28System.ServiceModel.PeerResolvers.ResolveInfo%29> is called, this object is returned to the client. It contains the endpoints registered to the peer specified in a previous corresponding <xref:System.ServiceModel.PeerResolvers.ResolveInfo> instance sent to the peer resolver.  
+ 
+Instances of this class are primarily used to pass information from the resolver service to a network client of that service.  
+ 
  ]]></format>
     </remarks>
   </Docs>

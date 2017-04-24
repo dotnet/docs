@@ -17,19 +17,19 @@
     <summary>Indicates the current state of the service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceProcess.ServiceControllerStatus> enumeration is used by an instance of the <xref:System.ServiceProcess.ServiceController> class to indicate whether an existing service is running, stopped, paused, or whether a Start, Stop, Pause, or Continue command is pending.  
+The <xref:System.ServiceProcess.ServiceControllerStatus> enumeration is used by an instance of the <xref:System.ServiceProcess.ServiceController> class to indicate whether an existing service is running, stopped, paused, or whether a Start, Stop, Pause, or Continue command is pending.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the TelNet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
-  
- [!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
- [!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
- [!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the TelNet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
+ 
+[!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
+[!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
+[!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

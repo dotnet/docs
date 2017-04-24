@@ -105,10 +105,10 @@
         <returns>The <see cref="T:System.Windows.Media.PointCollection" /> that is created from converting <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.PointCollectionConverter.CanConvertFrom%2A> method.  
-  
+To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.PointCollectionConverter.CanConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The specified object is null or is a type that cannot be converted to a <see cref="T:System.Windows.Media.PointCollection" />.</exception>
@@ -141,10 +141,10 @@
         <returns>The object that is created from converting this <see cref="T:System.Windows.Media.PointCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.PointCollectionConverter.CanConvertTo%2A> method.  
-  
+To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.PointCollectionConverter.CanConvertTo%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">

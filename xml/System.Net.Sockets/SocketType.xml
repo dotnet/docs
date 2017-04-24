@@ -22,22 +22,22 @@
     <summary>Specifies the type of socket that an instance of the <see cref="T:System.Net.Sockets.Socket" /> class represents.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before a <xref:System.Net.Sockets.Socket> can send and receive data, it must first be created using an <xref:System.Net.Sockets.AddressFamily>, a <xref:System.Net.Sockets.SocketType>, and a <xref:System.Net.Sockets.ProtocolType>. The <xref:System.Net.Sockets.SocketType> enumeration provides several options for defining the type of <xref:System.Net.Sockets.Socket> that you intend to open.  
-  
+Before a <xref:System.Net.Sockets.Socket> can send and receive data, it must first be created using an <xref:System.Net.Sockets.AddressFamily>, a <xref:System.Net.Sockets.SocketType>, and a <xref:System.Net.Sockets.ProtocolType>. The <xref:System.Net.Sockets.SocketType> enumeration provides several options for defining the type of <xref:System.Net.Sockets.Socket> that you intend to open.  
+ 
 > [!NOTE]
 >  <xref:System.Net.Sockets.SocketType> will sometimes implicitly indicate which <xref:System.Net.Sockets.ProtocolType> will be used within an <xref:System.Net.Sockets.AddressFamily>. For example when the <xref:System.Net.Sockets.SocketType> is Dgram, the <xref:System.Net.Sockets.ProtocolType> is always <xref:System.Net.Sockets.ProtocolType>.When the <xref:System.Net.Sockets.SocketType> is Stream, the <xref:System.Net.Sockets.ProtocolType> is always <xref:System.Net.Sockets.ProtocolType>. If you try to create a <xref:System.Net.Sockets.Socket> with an incompatible combination, <xref:System.Net.Sockets.Socket> will throw a <xref:System.Net.Sockets.SocketException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the Stream enumerated member as a parameter to the <xref:System.Net.Sockets.Socket> constructor.  
-  
- [!code-cpp[SelectModeExample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SelectModeExample/CPP/source.cpp#1)]
- [!code-csharp[SelectModeExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SelectModeExample/CS/source.cs#1)]
- [!code-vb[SelectModeExample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SelectModeExample/VB/source.vb#1)]  
-  
+The following example uses the Stream enumerated member as a parameter to the <xref:System.Net.Sockets.Socket> constructor.  
+ 
+[!code-cpp[SelectModeExample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SelectModeExample/CPP/source.cpp#1)]
+[!code-csharp[SelectModeExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SelectModeExample/CS/source.cs#1)]
+[!code-vb[SelectModeExample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SelectModeExample/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

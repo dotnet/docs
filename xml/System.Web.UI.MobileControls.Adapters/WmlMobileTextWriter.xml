@@ -42,10 +42,10 @@
         <summary>Creates a new instance of the specified class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adapters are usually constructed automatically by ASP.NET, and must have a default constructor.  
-  
+Adapters are usually constructed automatically by ASP.NET, and must have a default constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
         <summary>Adds a variable to be initialized when the browser renders the form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All references to the client identifier on the page are mapped, resulting in the same postback regardless of mapping. The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.AddFormVariable%2A> method also can scramble client IDs that must be encrypted for security reasons. Only visible controls generate variables.  
-  
+All references to the client identifier on the page are mapped, resulting in the same postback regardless of mapping. The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.AddFormVariable%2A> method also can scramble client IDs that must be encrypted for security reasons. Only visible controls generate variables.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
           <see langword="true" /> if the writer is in analyze mode; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- WML rendering is done in two phases. In the first phase, all calls to the renderer are analyzed for correctness. In the second phase, the rendering is performed.  
-  
+WML rendering is done in two phases. In the first phase, all calls to the renderer are analyzed for correctness. In the second phase, the rendering is performed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <summary>Analyzes a single postback. Called internally by the writer and inherited classes. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override or call this method when advanced extensibility is required while extending the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter> class.  
-  
+Override or call this method when advanced extensibility is required while extending the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,10 +157,10 @@
         <summary>Begins a custom markup section. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginCustomMarkup%2A> and <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndCustomMarkup%2A> methods allow a device adapter to create a section of custom markup elements.  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginCustomMarkup%2A> and <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndCustomMarkup%2A> methods allow a device adapter to create a section of custom markup elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
         <summary>Begins the given form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method and the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndForm%2A> method when rendering a form.  
-  
+Use this method and the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndForm%2A> method when rendering a form.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,10 +218,10 @@
         <returns>The calculated URL required to post the form to the server.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class (writer).  
-  
+Called internally by the writer, and can be overridden by an inheriting class (writer).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <returns>The query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,10 +269,10 @@
         <summary>Closes any currently open character formatting tags. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,10 +294,10 @@
         <summary>Closes an open paragraph. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,10 +337,10 @@
         <value>The default character formatting used by the device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by inheriting classes.  
-  
+Called internally by the writer, and can be overridden by inheriting classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,10 +362,10 @@
         <value>The default layout used by the device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by inheriting classes.  
-  
+Called internally by the writer, and can be overridden by inheriting classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,10 +387,10 @@
         <summary>Ends a custom markup section. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginCustomMarkup%2A> and <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndCustomMarkup%2A> methods allow a device adapter to create a section of custom markup elements.  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginCustomMarkup%2A> and <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndCustomMarkup%2A> methods allow a device adapter to create a section of custom markup elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -412,10 +412,10 @@
         <summary>Ends the current form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginForm%2A> method and this method when rendering a form.  
-  
+Use the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginForm%2A> method and this method when rendering a form.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@
         <summary>Ensures that character formatting tags corresponding to the current format have been written. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -462,10 +462,10 @@
         <summary>Ensures that a <see langword="&lt; p &gt;" /> tag corresponding to the current layout has been written. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -578,10 +578,10 @@
           <see langword="true" /> if the given string is a valid softkey label for the target device; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adapters can use this method to determine whether a label is appropriate for a softkey.  
-  
+Adapters can use this method to determine whether a label is appropriate for a softkey.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -609,12 +609,12 @@
         <returns>A string representation of the client identifier of the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the client identifier of a control is longer than 16 characters, ASP.NET substitutes a uniquely mapped short name.  
-  
- All references to the client identifier on the page are mapped, resulting in the same postback regardless of mapping. <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.MapClientIDToShortName%2A> can also scramble client IDs that must be encrypted for security reasons.  
-  
+If the client identifier of a control is longer than 16 characters, ASP.NET substitutes a uniquely mapped short name.  
+ 
+All references to the client identifier on the page are mapped, resulting in the same postback regardless of mapping. <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.MapClientIDToShortName%2A> can also scramble client IDs that must be encrypted for security reasons.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -636,10 +636,10 @@
         <value>The number of softkeys supported on the device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Softkeys are special keys that the application can usually map to custom tasks. Softkey text is displayed on the screen in the lower-left and lower-right corners.  
-  
+Softkeys are special keys that the application can usually map to custom tasks. Softkey text is displayed on the screen in the lower-left and lower-right corners.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,10 +670,10 @@
         <summary>Opens character formatting tags for the given format. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -702,10 +702,10 @@
         <summary>Opens a paragraph with the given layout. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -727,10 +727,10 @@
         <value>The page associated with the device adapter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Equivalent to calling the `Control.MobilePage`.  
-  
+Equivalent to calling the `Control.MobilePage`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -771,10 +771,10 @@
         <summary>Analyzes a form after it is completed during the analyze phase. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -799,10 +799,10 @@
         <summary>Renders the beginning of a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -835,10 +835,10 @@
         <summary>Begins rendering a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This call can be followed by calls to render text or by a call to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderImage%2A> method to render the hyperlink contents, followed by a call to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndHyperlink%2A> method.  
-  
+This call can be followed by calls to render text or by a call to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderImage%2A> method to render the hyperlink contents, followed by a call to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndHyperlink%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -896,12 +896,12 @@
         <summary>Begins rendering a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Either `name` or `iname` must be non-null.  
-  
- This method can be followed by calls to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderSelectOption%2A> method for each option, followed by a call to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndSelect%2A> method to end the selection list.  
-  
+Either `name` or `iname` must be non-null.  
+ 
+This method can be followed by calls to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderSelectOption%2A> method for each option, followed by a call to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndSelect%2A> method to end the selection list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -936,10 +936,10 @@
         <summary>Renders a <see langword="&lt; do &gt;" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the control you are targeting is the current form and you want to include all the variables when posting back to the server, you can use the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderFormDoEvent%2A> method. Called internally by the writer and inherited classes.  
-  
+If the control you are targeting is the current form and you want to include all the variables when posting back to the server, you can use the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderFormDoEvent%2A> method. Called internally by the writer and inherited classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -961,10 +961,10 @@
         <summary>Completes rendering of a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1057,10 +1057,10 @@
         <summary>Renders any extra cards that the writer needs to send to the browser. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Depending on the content of the form, the writer might need to send additional cards to the browser. Called by the form adapter.  
-  
+Depending on the content of the form, the writer might need to send additional cards to the browser. Called by the form adapter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1091,10 +1091,10 @@
         <summary>Renders a <see langword="&lt; do &gt;" /> event for the current form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer and inherited classes.  
-  
+Called internally by the writer and inherited classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1125,10 +1125,10 @@
         <summary>Renders a <see langword="&lt; go &gt;" /> action. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer or inherited classes.  
-  
+Called internally by the writer or inherited classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1309,10 +1309,10 @@
         <summary>Renders a text-box element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can also scramble client IDs that must be encrypted for security reasons.  
-  
+This method can also scramble client IDs that must be encrypted for security reasons.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1334,10 +1334,10 @@
         <summary>Resets the character formatting. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method closes all character formatting tags, such as `< b >`, that have been opened.  
-  
+This method closes all character formatting tags, such as `< b >`, that have been opened.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1364,10 +1364,10 @@
           <see langword="true" /> if the writer must use an additional card for postbacks; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
+Called internally by the writer, and can be overridden by an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1480,10 +1480,10 @@
         <summary>Writes a <see langword="&lt; postfield &gt;" /> element, using the provided parameters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is an assumed `type` parameter that defaults to <xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>.  
-  
+There is an assumed `type` parameter that defaults to <xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1535,10 +1535,10 @@
         <summary>Writes a post field, treating the <paramref name="arg" /> parameter as a variable name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the short form as follows: `WritePostField(name, value, WmlPostFieldType.Normal)`.  
-  
+You can use the short form as follows: `WritePostField(name, value, WmlPostFieldType.Normal)`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1565,10 +1565,10 @@
         <summary>Writes the given text, encoding it if desired. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encoding involves mapping characters with HTML/WML meanings to the appropriate character code.  
-  
+Encoding involves mapping characters with HTML/WML meanings to the appropriate character code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1595,10 +1595,10 @@
         <summary>Writes the given attribute, encoding the value by using WML text encoding. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encoding involves mapping characters with HTML/WML meanings to the appropriate character code.  
-  
+Encoding involves mapping characters with HTML/WML meanings to the appropriate character code.  
+ 
  ]]></format>
         </remarks>
       </Docs>

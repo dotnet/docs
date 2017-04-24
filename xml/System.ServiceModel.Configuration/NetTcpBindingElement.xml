@@ -14,10 +14,10 @@
     <summary>Represents an XML element that specifies a binding for peer channel-specific TCP messaging.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The netTcpBinding is a secure, reliable, optimized binding suitable for cross-machine communication. By default, it generates a run-time communication stack with WS-ReliableMessaging for reliability, Windows Security for message security and authentication, TCP for message delivery, and binary message encoding.  
-  
+The netTcpBinding is a secure, reliable, optimized binding suitable for cross-machine communication. By default, it generates a run-time communication stack with WS-ReliableMessaging for reliability, Windows Security for message security and authentication, TCP for message delivery, and binary message encoding.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -142,10 +142,10 @@
         <value>The maximum number of channels that can wait to be accepted on the listener. The default is 10.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Connections in excess of this limit are queued until space below the limit becomes available.  
-  
+Connections in excess of this limit are queued until space below the limit becomes available.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,12 +201,12 @@
         <value>The maximum size, in bytes, of the buffer used to store messages in memory. The default is 65536.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the buffer is full, excess data remains in the underlying socket until the buffer has space again.  
-  
- This value cannot be less than <xref:System.ServiceModel.Configuration.NetTcpBindingElement.MaxReceivedMessageSize%2A>, whose default value is also 65,536 (64 KB).  
-  
+If the buffer is full, excess data remains in the underlying socket until the buffer has space again.  
+ 
+This value cannot be less than <xref:System.ServiceModel.Configuration.NetTcpBindingElement.MaxReceivedMessageSize%2A>, whose default value is also 65,536 (64 KB).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,10 +236,10 @@
         <value>The maximum number of outbound and inbound connections the service creates and accepts respectively. The default is 10.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Incoming and outgoing connections are counted against a separate limit specified by this property. Any connection in excess of the limit is queued until a space below the limit becomes available.  
-  
+Incoming and outgoing connections are counted against a separate limit specified by this property. Any connection in excess of the limit is queued until a space below the limit becomes available.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,10 +355,10 @@
         <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complexity constraints include items such as a maximum element depth, a maximum length for string content within the message. The constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
-  
+The complexity constraints include items such as a maximum element depth, a maximum length for string content within the message. The constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
+ 
  ]]></format>
         </remarks>
       </Docs>

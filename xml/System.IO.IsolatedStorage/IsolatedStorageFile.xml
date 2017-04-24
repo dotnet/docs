@@ -28,25 +28,25 @@
     <summary>Represents an isolated storage area containing files and directories.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This object corresponds to a specific isolated storage scope, where files represented by <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> objects exist. Applications can use isolated storage to save data in their own isolated portion of the file system, without having to specify a particular path within the file system. Since isolated stores are scoped to particular assemblies, most other managed code will not be able to access your code's data (highly trusted managed code and administration tools can access stores from other assemblies). Unmanaged code can access any isolated stores.  
-  
- For more information, see [Isolated Storage](~/docs/standard/io/isolated-storage.md).  
-  
- This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
+This object corresponds to a specific isolated storage scope, where files represented by <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> objects exist. Applications can use isolated storage to save data in their own isolated portion of the file system, without having to specify a particular path within the file system. Since isolated stores are scoped to particular assemblies, most other managed code will not be able to access your code's data (highly trusted managed code and administration tools can access stores from other assemblies). Unmanaged code can access any isolated stores.  
+ 
+For more information, see [Isolated Storage](~/docs/standard/io/isolated-storage.md).  
+ 
+This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+ 
 > [!IMPORTANT]
 >  Isolated storage is not available for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](~/includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](http://go.microsoft.com/fwlink/?LinkId=229175) in the Windows Dev Center.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to create files and directories in an isolated store. First, a store that is isolated by user, domain, and assembly is retrieved and placed in the `isoStore` variable. The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method is then called to create directories, and two instances of the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> class create files in these directories.  
-  
- [!code-csharp[Conceptual.IsolatedStorage#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source.cs#1)]
- [!code-vb[Conceptual.IsolatedStorage#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source.vb#1)]  
-  
+The following code example illustrates how to create files and directories in an isolated store. First, a store that is isolated by user, domain, and assembly is retrieved and placed in the `isoStore` variable. The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method is then called to create directories, and two instances of the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> class create files in these directories.  
+ 
+[!code-csharp[Conceptual.IsolatedStorage#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source.cs#1)]
+[!code-vb[Conceptual.IsolatedStorage#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,14 +108,14 @@
         <summary>Closes a store previously opened with <see cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore(System.IO.IsolatedStorage.IsolatedStorageScope,System.Type,System.Type)" />, <see cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />, or <see cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Close%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#10)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#10)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#10)]  
-  
+The following code example demonstrates how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Close%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#10)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#10)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
@@ -153,10 +153,10 @@
         <summary>Copies an existing file to a new file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `sourceFileName` and `destinationFileName` must specify different file names. Use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method overload to overwrite an existing file.  
-  
+`sourceFileName` and `destinationFileName` must specify different file names. Use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method overload to overwrite an existing file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -219,10 +219,10 @@
         <summary>Copies an existing file to a new file, and optionally overwrites an existing file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `sourceFileName` and `destinationFileName` can have the same file name if `overwrite` is `true`.  
-  
+`sourceFileName` and `destinationFileName` can have the same file name if `overwrite` is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -271,19 +271,19 @@
         <summary>Creates a directory in the isolated storage scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The created directory initially contains no files. If the directory already exists, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method returns without creating a new directory. The [How to: Create Files and Directories in Isolated Storage](~/docs/standard/io/how-to-create-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method  
+The created directory initially contains no files. If the directory already exists, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method returns without creating a new directory. The [How to: Create Files and Directories in Isolated Storage](~/docs/standard/io/how-to-create-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#7)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#7)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#7)]  
-  
+The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#7)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#7)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The current code has insufficient permissions to create isolated storage directory.</exception>
@@ -323,10 +323,10 @@
         <returns>A new isolated storage file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
-  
+This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -372,23 +372,23 @@
         <value>The total number of bytes of storage currently in use within the isolated storage scope.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the total usage of all files and directories within the isolated storage scope.  
+Represents the total usage of all files and directories within the isolated storage scope.  
+ 
+The current size cannot be accurately determined for stores that are participating in a roaming user profile. Because roaming profiles are often cached on multiple client machines and later synchronized with a server, quotas cannot be enforced for such stores and the current size is not reported.  
+ 
+The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](~/docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A> property.  
+ 
   
- The current size cannot be accurately determined for stores that are participating in a roaming user profile. Because roaming profiles are often cached on multiple client machines and later synchronized with a server, quotas cannot be enforced for such stores and the current size is not reported.  
-  
- The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](~/docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A> property. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#5)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#5)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#5)]  
-  
+The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A> property. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#5)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#5)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The property is unavailable. The current store has a roaming scope or is not open.</exception>
@@ -420,19 +420,19 @@
         <summary>Deletes a directory in the isolated storage scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A directory must be empty before it is deleted. The deleted directory cannot be recovered once deleted.  
+A directory must be empty before it is deleted. The deleted directory cannot be recovered once deleted.  
+ 
+The [How to: Delete Files and Directories in Isolated Storage](~/docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> method.  
+ 
   
- The [How to: Delete Files and Directories in Isolated Storage](~/docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#8)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#8)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#8)]  
-  
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#8)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#8)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The directory could not be deleted.</exception>
@@ -466,21 +466,21 @@
         <summary>Deletes a file in the isolated storage scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The deleted file cannot be recovered once deleted.  
+The deleted file cannot be recovered once deleted.  
+ 
+The [How to: Delete Files and Directories in Isolated Storage](~/docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A> method.  
+ 
   
- The [How to: Delete Files and Directories in Isolated Storage](~/docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A> method to delete a number of files in isolated storage.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#6)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#6)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#6)]  
-  
+The following code example uses the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A> method to delete a number of files in isolated storage.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#6)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#6)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The target file is open or the path is incorrect.</exception>
@@ -553,22 +553,22 @@
         <summary>Releases all resources used by the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile>. The `Dispose` method leaves the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> so the garbage collector can reclaim the memory that <xref:System.IO.IsolatedStorage.IsolatedStorageFile> was occupying.  
-  
+Call `Dispose` when you are finished using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile>. The `Dispose` method leaves the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> so the garbage collector can reclaim the memory that <xref:System.IO.IsolatedStorage.IsolatedStorageFile> was occupying.  
+ 
 > [!NOTE]
 >  Always call Dispose before you release your last reference to the <xref:System.IO.IsolatedStorage.IsolatedStorageFile>. Otherwise, the resources the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> is using will not be freed until garbage collection calls the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> object's <xref:System.Object.Finalize%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an isolated storage file, uses it to write information to a stream, closes the file, and then uses the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Dispose%2A> method to release all resources.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#10)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#10)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#10)]  
-  
+The following code example opens an isolated storage file, uses it to write information to a stream, closes the file, and then uses the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Dispose%2A> method to release all resources.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#10)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#10)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
@@ -662,10 +662,10 @@
         <returns>The creation date and time for the specified file or directory. This value is expressed in local time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the file described by path does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
+If the file described by path does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -709,10 +709,10 @@
         <returns>An array of relative paths of directories at the root of the isolated store. A zero-length array specifies that there are no directories at the root.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%28System.String%29?displayProperty=fullName> method with "*" specified for the search pattern.  
-  
+This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%28System.String%29?displayProperty=fullName> method with "*" specified for the search pattern.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
@@ -748,25 +748,25 @@
         <returns>An array of the relative paths of directories in the isolated storage scope that match <paramref name="searchPattern" />. A zero-length array specifies that there are no directories that match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Wildcard characters must only be in the final element of a `searchPattern`. For instance, "directory1/*etc\*" is a valid search string, but "\*etc\*/directory" is not.  
+Wildcard characters must only be in the final element of a `searchPattern`. For instance, "directory1/*etc\*" is a valid search string, but "\*etc\*/directory" is not.  
+ 
+The `searchPattern` "Project\Data*" will give all subdirectories of Project beginning with Data in the isolated storage scope. The `searchPattern` "\*" will return all directories located in the root. For complete description of search string criteria, see the <xref:System.IO.Directory> class.  
+ 
+For information on getting file names, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method.  
+ 
+The [How to: Find Existing Files and Directories in Isolated Storage](~/docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method.  
+ 
   
- The `searchPattern` "Project\Data*" will give all subdirectories of Project beginning with Data in the isolated storage scope. The `searchPattern` "\*" will return all directories located in the root. For complete description of search string criteria, see the <xref:System.IO.Directory> class.  
-  
- For information on getting file names, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method.  
-  
- The [How to: Find Existing Files and Directories in Isolated Storage](~/docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#16)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#16)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#16)]  
-  
+The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#16)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#16)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#16)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -805,10 +805,10 @@
         <returns>Enumerator for the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> stores within the specified isolated storage scope.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The [How to: Enumerate Stores for Isolated Storage](~/docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A> method.  
-  
+The [How to: Enumerate Stores for Isolated Storage](~/docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" /></permission>
@@ -843,10 +843,10 @@
         <returns>An array of relative paths of files at the root of the isolated store.  A zero-length array specifies that there are no files at the root.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%28System.String%29?displayProperty=fullName> method with "*" specified for the search pattern.  
-  
+This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%28System.String%29?displayProperty=fullName> method with "*" specified for the search pattern.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
@@ -880,23 +880,23 @@
         <returns>An array of relative paths of files in the isolated storage scope that match <paramref name="searchPattern" />. A zero-length array specifies that there are no files that match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `searchPattern` "Project\Data*.txt" will give all ".txt" files beginning with Data in the Project directory of the isolated storage scope. For complete description of search pattern strings, see <xref:System.IO.Directory?displayProperty=fullName>.  
+The `searchPattern` "Project\Data*.txt" will give all ".txt" files beginning with Data in the Project directory of the isolated storage scope. For complete description of search pattern strings, see <xref:System.IO.Directory?displayProperty=fullName>.  
+ 
+For information about how to find directory names, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method.  
+ 
+The [How to: Find Existing Files and Directories in Isolated Storage](~/docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method.  
+ 
   
- For information about how to find directory names, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method.  
-  
- The [How to: Find Existing Files and Directories in Isolated Storage](~/docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#16)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#16)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#16)]  
-  
+The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#16)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#16)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#16)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -938,10 +938,10 @@
         <returns>The date and time that the specified file or directory was last accessed. This value is expressed in local time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the file described by `path` does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
+If the file described by `path` does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -988,10 +988,10 @@
         <returns>The date and time that the specified file or directory was last written to. This value is expressed in local time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the file described by `path` does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
+If the file described by `path` does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1030,16 +1030,16 @@
         <returns>An object corresponding to the isolated storage scope based on the calling code's application identity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All assemblies associated with an application use the same isolated store when using this method.  
-  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForApplication%2A> is functionally equivalent to the following code:  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#18](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#18)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#18)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#18)]  
-  
+All assemblies associated with an application use the same isolated store when using this method.  
+ 
+<xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForApplication%2A> is functionally equivalent to the following code:  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#18](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#18)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#18)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#18)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The application identity of the caller could not be determined.  
@@ -1079,19 +1079,19 @@
         <returns>An object corresponding to the isolated storage scope based on the calling code's assembly identity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The same assembly within different applications always uses the same isolated store when using this method.  
-  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForAssembly%2A> is functionally equivalent to the following code:  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#19](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#19)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#19)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#19)]  
-  
+The same assembly within different applications always uses the same isolated store when using this method.  
+ 
+<xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForAssembly%2A> is functionally equivalent to the following code:  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#19](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#19)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#19)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#19)]  
+ 
 > [!NOTE]
 >  Different assemblies running within the same application domain always have distinct isolated stores.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage location cannot be initialized.</exception>
@@ -1123,30 +1123,30 @@
         <returns>An object corresponding to the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, based on a combination of the application domain identity and the assembly identity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The same assembly code will use different isolated stores when used in the context of different applications.  
-  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForDomain%2A> is functionally equivalent to the following code:  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#20)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#20)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#20)]  
-  
- Different assemblies running within the same application domain always have distinct isolated stores.  
-  
+The same assembly code will use different isolated stores when used in the context of different applications.  
+ 
+<xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForDomain%2A> is functionally equivalent to the following code:  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#20)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#20)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#20)]  
+ 
+Different assemblies running within the same application domain always have distinct isolated stores.  
+ 
 > [!NOTE]
 >  <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota if the application domain into which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#10)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#10)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#10)]  
-  
+The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#10)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#10)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
@@ -1218,12 +1218,12 @@
         <returns>An object that represents the parameters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope?displayProperty=fullName> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
@@ -1274,12 +1274,12 @@
         <returns>An object that represents the parameters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
@@ -1332,13 +1332,13 @@
         <returns>An object that represents the parameters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This form of `GetStore` is most useful for administrative code that needs to open a store as if it were another assembly. The store is opened for the evidence provided and not for the currently executing assembly.  
-  
+This form of `GetStore` is most useful for administrative code that needs to open a store as if it were another assembly. The store is opened for the evidence provided and not for the currently executing assembly.  
+ 
 > [!NOTE]
 >  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
@@ -1395,24 +1395,24 @@
         <returns>An object that represents the parameters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the overload of <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> most likely to be called from application code.  
-  
- This overload of <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> opens an isolated store for the evidence types that are passed in.  
-  
+This is the overload of <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> most likely to be called from application code.  
+ 
+This overload of <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> opens an isolated store for the evidence types that are passed in.  
+ 
 > [!NOTE]
 >  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#15)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#15)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#15)]  
-  
+The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#15)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#15)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#15)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
@@ -1468,20 +1468,20 @@
         <returns>An object that represents the parameters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example obtains storage based on publisher evidence.  
-  
- [!code-csharp[System.IO.IsolatedStorage.GetStore#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.GetStore/CS/source.cs#1)]
- [!code-vb[System.IO.IsolatedStorage.GetStore#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.GetStore/VB/source.vb#1)]  
-  
+The following code example obtains storage based on publisher evidence.  
+ 
+[!code-csharp[System.IO.IsolatedStorage.GetStore#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.GetStore/CS/source.cs#1)]
+[!code-vb[System.IO.IsolatedStorage.GetStore#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.GetStore/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
@@ -1527,18 +1527,18 @@
         <returns>An object corresponding to the isolated storage scope based on the calling code's assembly identity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All assemblies associated with an application use the same isolated store when using this method. This method can be used only when the application identity can be determined - for example, when the application is published through ClickOnce deployment or is a Silverlight-based application. If you attempt to use this method outside a ClickOnce or Silverlight-based application, you will receive an <xref:System.IO.IsolatedStorage.IsolatedStorageException> exception, because the application identity of the caller cannot be determined.  
-  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication%2A> is functionally equivalent to the following code:  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#21](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#21)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#21](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#21)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#21)]  
-  
- In this code, the `applicationIdentity` parameter for `GetStore(IsolatedStorageScope scope, Object applicationIdentity)` is `null`.  
-  
+All assemblies associated with an application use the same isolated store when using this method. This method can be used only when the application identity can be determined - for example, when the application is published through ClickOnce deployment or is a Silverlight-based application. If you attempt to use this method outside a ClickOnce or Silverlight-based application, you will receive an <xref:System.IO.IsolatedStorage.IsolatedStorageException> exception, because the application identity of the caller cannot be determined.  
+ 
+<xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication%2A> is functionally equivalent to the following code:  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#21](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#21)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#21](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#21)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#21)]  
+ 
+In this code, the `applicationIdentity` parameter for `GetStore(IsolatedStorageScope scope, Object applicationIdentity)` is `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
@@ -1578,19 +1578,19 @@
         <returns>An object corresponding to the isolated storage scope based on the calling code's assembly identity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The same assembly within different applications always uses the same isolated store when using this method.  
-  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A> is functionally equivalent to the following code:  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#22](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#22)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#22)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#22)]  
-  
+The same assembly within different applications always uses the same isolated store when using this method.  
+ 
+<xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A> is functionally equivalent to the following code:  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#22](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#22)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#22)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#22)]  
+ 
 > [!NOTE]
 >  Different assemblies running within the same application domain always have distinct isolated stores.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
@@ -1626,30 +1626,30 @@
         <returns>An object corresponding to the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, based on a combination of the application domain identity and the assembly identity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The same assembly code will use different isolated stores when used in the context of different applications.  
-  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> is functionally equivalent to the following code:  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#23](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#23)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#23](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#23)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#23)]  
-  
- Different assemblies running within the same application domain always have distinct isolated stores.  
-  
+The same assembly code will use different isolated stores when used in the context of different applications.  
+ 
+<xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> is functionally equivalent to the following code:  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#23](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/remarks.cpp#23)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#23](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/remarks.cs#23)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/remarks.vb#23)]  
+ 
+Different assemblies running within the same application domain always have distinct isolated stores.  
+ 
 > [!NOTE]
 >  <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota if the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#10)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#10)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#10)]  
-  
+The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#10)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#10)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
@@ -1698,10 +1698,10 @@
         <returns>The isolated storage file that corresponds to the isolated storage scope based on the calling code's application identity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is supported only in Silverlight-based applications.  
-  
+This method is supported only in Silverlight-based applications.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1738,18 +1738,18 @@
           <see langword="true" /> if the new quota is accepted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A> method enables an application to explicitly request a larger quota size in bytes. The new quota size must not be smaller than the current quota size, because only quota increases are allowed.  
-  
- Whenever the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A> method is called, isolated storage calls the <xref:System.AppDomainManager.CheckSecuritySettings%2A> method.  
-  
- You can implement policy decisions by creating a custom <xref:System.AppDomainManager> object that overrides the <xref:System.AppDomainManager.CheckSecuritySettings%2A> method so that the object can perform policy decisions based on a <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState> object.  
-  
- If there is no custom <xref:System.AppDomainManager> object, the quota increase request is denied, because the default implementation for <xref:System.AppDomainManager.CheckSecuritySettings%2A> returns `false`.  
-  
- Currently, none of the hosts in the .NET Framework provide this customization, so <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A> always returns `false`.  
-  
+The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A> method enables an application to explicitly request a larger quota size in bytes. The new quota size must not be smaller than the current quota size, because only quota increases are allowed.  
+ 
+Whenever the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A> method is called, isolated storage calls the <xref:System.AppDomainManager.CheckSecuritySettings%2A> method.  
+ 
+You can implement policy decisions by creating a custom <xref:System.AppDomainManager> object that overrides the <xref:System.AppDomainManager.CheckSecuritySettings%2A> method so that the object can perform policy decisions based on a <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState> object.  
+ 
+If there is no custom <xref:System.AppDomainManager> object, the quota increase request is denied, because the default implementation for <xref:System.AppDomainManager.CheckSecuritySettings%2A> returns `false`.  
+ 
+Currently, none of the hosts in the .NET Framework provide this customization, so <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A> always returns `false`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1794,10 +1794,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Isolated storage for full .NET Framework applications is always enabled.  
-  
+Isolated storage for full .NET Framework applications is always enabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1832,21 +1832,21 @@
         <value>The limit of isolated storage space in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The number of bytes available is constrained by the isolated storage quota set by the administrator. Quota is configured in security policy on the basis of evidence, so the same code can receive a different quota if it is run with different evidence. For example, an application that is run locally and also from a share on an intranet would likely receive different quotas.  
+The number of bytes available is constrained by the isolated storage quota set by the administrator. Quota is configured in security policy on the basis of evidence, so the same code can receive a different quota if it is run with different evidence. For example, an application that is run locally and also from a share on an intranet would likely receive different quotas.  
+ 
+The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](~/docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A> property.  
+ 
   
- The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](~/docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A> property. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#5)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#5)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#5)]  
-  
+The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A> property. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#5)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#5)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The property is unavailable. <see cref="P:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize" /> cannot be determined without evidence from the assembly's creation. The evidence could not be determined when the object was created.</exception>
@@ -1885,10 +1885,10 @@
         <summary>Moves a specified directory and its contents to a new location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `sourceFileName` and `destinationFileName` must specify different directory names.  
-  
+`sourceFileName` and `destinationFileName` must specify different directory names.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1946,10 +1946,10 @@
         <summary>Moves a specified file to a new location, and optionally lets you specify a new file name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not throw an exception if `sourceFileName` and `destinationFileName` are the same.  
-  
+This method does not throw an exception if `sourceFileName` and `destinationFileName` are the same.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2000,10 +2000,10 @@
         <returns>A file that is opened in the specified mode, with read/write access, and is unshared.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
-  
+This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -2055,10 +2055,10 @@
         <returns>A file that is opened in the specified mode and access, and is unshared.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
-  
+This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -2112,10 +2112,10 @@
         <returns>A file that is opened in the specified mode and access, and with the specified sharing options.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
-  
+This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -2188,23 +2188,23 @@
         <summary>Removes the isolated storage scope and all its contents.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  This method irrevocably removes the entire scope and all contained directories and files.  
+ 
+If any of the directories or files in the store are in use, the removal attempt for the store fails and the store is marked for removal. Any subsequent attempts to modify the store throw an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+ 
   
- If any of the directories or files in the store are in use, the removal attempt for the store fails and the store is marked for removal. Any subsequent attempts to modify the store throw an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A> method to delete the isolated storage file after its contents have been emptied. The [How to: Delete Stores in Isolated Storage](~/docs/standard/io/how-to-delete-stores-in-isolated-storage.md) example also demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A> method.  
-  
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#16)]
- [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#16)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#16)]  
-  
+The following code example uses the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A> method to delete the isolated storage file after its contents have been emptied. The [How to: Delete Stores in Isolated Storage](~/docs/standard/io/how-to-delete-stores-in-isolated-storage.md) example also demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A> method.  
+ 
+[!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#16)]
+[!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#16)]
+[!code-vb[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/VB/source.vb#16)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store cannot be deleted.</exception>
@@ -2236,14 +2236,14 @@
         <summary>Removes the specified isolated storage scope for all identities.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  This method irrevocably removes the entire scope and all contained directories and files.  
-  
- If any of the directories or files in the store are in use, the removal attempt for the store fails and the store is marked for removal. Any subsequent attempts to modify the store throw an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
+ 
+If any of the directories or files in the store are in use, the removal attempt for the store fails and the store is marked for removal. Any subsequent attempts to modify the store throw an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store cannot be removed.</exception>

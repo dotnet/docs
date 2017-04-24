@@ -13,10 +13,10 @@
     <summary>Specifies the authentication mode to use in a Web application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.XhtmlConformanceMode> enumeration applies to the `mode` attribute in the `xhtmlConformance` tag. It specifies the XHTML rendering modalities for an ASP.NET application. The mode can assume one of the values listed next. The default is `Transitional` (XHTML 1.0 Transitional).  
-  
+The <xref:System.Web.Configuration.XhtmlConformanceMode> enumeration applies to the `mode` attribute in the `xhtmlConformance` tag. It specifies the XHTML rendering modalities for an ASP.NET application. The mode can assume one of the values listed next. The default is `Transitional` (XHTML 1.0 Transitional).  
+ 
  ]]></format>
     </remarks>
   </Docs>

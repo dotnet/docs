@@ -19,10 +19,10 @@
     <summary>Provides a base class for the container filter service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Container> and <xref:System.ComponentModel.NestedContainer> classes call the <xref:System.ComponentModel.ContainerFilterService.FilterComponents%2A> method each time they need to construct a component collection for return to a caller. <xref:System.ComponentModel.ContainerFilterService.FilterComponents%2A> may return an updated collection of components. This enables an external service to modify the view of components that are returned from a container.  
-  
+The <xref:System.ComponentModel.Container> and <xref:System.ComponentModel.NestedContainer> classes call the <xref:System.ComponentModel.ContainerFilterService.FilterComponents%2A> method each time they need to construct a component collection for return to a caller. <xref:System.ComponentModel.ContainerFilterService.FilterComponents%2A> may return an updated collection of components. This enables an external service to modify the view of components that are returned from a container.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,10 +73,10 @@
         <returns>A <see cref="T:System.ComponentModel.ComponentCollection" /> that represents a modified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ContainerFilterService.FilterComponents%2A> method filters the component collection by optionally returning a new, modified collection. The default implementation returns the input collection, thereby performing no filtering.  
-  
+The <xref:System.ComponentModel.ContainerFilterService.FilterComponents%2A> method filters the component collection by optionally returning a new, modified collection. The default implementation returns the input collection, thereby performing no filtering.  
+ 
  ]]></format>
         </remarks>
       </Docs>

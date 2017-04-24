@@ -22,13 +22,13 @@
     <summary>Represents the method that will handle the <see cref="E:System.Management.ManagementEventWatcher.EventArrived" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following asynchronous example sets up a WMI timer to raise an event every second, and removes it when no longer needed. The <xref:System.Management.ManagementEventWatcher> defines several [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] events which are raised when WMI events are delivered. Delegates are attached to these events for handling the incoming data.  
-  
- [!code-csharp[wminet_EventArrivedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventArrivedEventHandler/cs/EventArrivedEventHandler.cs#1)]
- [!code-vb[wminet_EventArrivedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventArrivedEventHandler/vb/EventArrivedEventHandler.vb#1)]  
-  
+The following asynchronous example sets up a WMI timer to raise an event every second, and removes it when no longer needed. The <xref:System.Management.ManagementEventWatcher> defines several [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] events which are raised when WMI events are delivered. Delegates are attached to these events for handling the incoming data.  
+ 
+[!code-csharp[wminet_EventArrivedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventArrivedEventHandler/cs/EventArrivedEventHandler.cs#1)]
+[!code-vb[wminet_EventArrivedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventArrivedEventHandler/vb/EventArrivedEventHandler.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -32,12 +32,12 @@
     <summary>Provides the managed definition of the <see langword="IConnectionPointContainer" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IConnectionPointContainer` in MSDN library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For more information, see the existing documentation for `IConnectionPointContainer` in MSDN library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <summary>Creates an enumerator of all the connection points supported in the connectable object, one connection point per IID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IConnectionPointContainer::EnumConnectionPoints` in the MSDN library.  
-  
+For more information, see the existing documentation for `IConnectionPointContainer::EnumConnectionPoints` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <summary>Asks the connectable object if it has a connection point for a particular IID, and if so, returns the <see langword="IConnectionPoint" /> interface pointer to that connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `IConnectionPointContainer::FindConnectionPoint` in the MSDN library.  
-  
+For more information, see the existing documentation for `IConnectionPointContainer::FindConnectionPoint` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

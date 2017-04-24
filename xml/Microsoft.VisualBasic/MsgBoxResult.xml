@@ -13,12 +13,12 @@
     <summary>Indicates which button was pressed on a message box, returned by the <see langword="MsgBox" /> function.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
-  
- The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
+ 
+The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
+ 
  ]]></format>
     </remarks>
   </Docs>

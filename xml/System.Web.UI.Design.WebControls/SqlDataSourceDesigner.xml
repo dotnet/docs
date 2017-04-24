@@ -108,10 +108,10 @@
         <value>The string used to open a database connection at runtime.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ConnectionString%2A> property shadows the same property in the associated control, and is intended for internal use only.  
-  
+The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ConnectionString%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <returns>An <see cref="T:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView>  
-  
+<xref:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <value>The <see cref="F:System.Web.UI.DataSourceOperation.Delete" /> query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property shadows the same property in the associated control, and is intended for internal use only.  
-  
+For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <value>The <see cref="F:System.Web.UI.DataSourceOperation.Insert" /> query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.InsertQuery%2A> property in the designer shadows the same property in the associated control, and is intended for internal use only.  
-  
+For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.InsertQuery%2A> property in the designer shadows the same property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,10 +382,10 @@
         <value>A string containing the name of the data provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ProviderName%2A> property shadows the same property in the associated control, and is intended for internal use only.  
-  
+The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ProviderName%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -411,10 +411,10 @@
         <summary>Refreshes the schema from the underlying data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.RefreshSchema%2A> method will be called by the design host only if <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CanRefreshSchema%2A> is `true`.  
-  
+The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.RefreshSchema%2A> method will be called by the design host only if <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CanRefreshSchema%2A> is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -436,10 +436,10 @@
         <value>An SQL query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectCommand%2A> property shadows the same property in the associated control, and is intended for internal use only.  
-  
+The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectCommand%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -481,10 +481,10 @@
         <value>The <see cref="F:System.Web.UI.DataSourceOperation.Select" /> query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ProviderName%2A> property shadows the same property in the associated control, and is intended for internal use only.  
-  
+For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ProviderName%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -526,10 +526,10 @@
         <value>The <see cref="F:System.Web.UI.DataSourceOperation.Update" /> query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.UpdateQuery%2A> property shadows the same property in the associated control, and is intended for internal use only.  
-  
+For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.UpdateQuery%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,10 +18,10 @@
     <summary>Specifies the options to apply to a property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During the creation of a configuration element, you use the <xref:System.Configuration.ConfigurationPropertyOptions> enumerator to programmatically specify the options to apply. These options indicate whether a property is required, is a collection key property, etc. If a value is not specified, the value is assumed to be None.  
-  
+During the creation of a configuration element, you use the <xref:System.Configuration.ConfigurationPropertyOptions> enumerator to programmatically specify the options to apply. These options indicate whether a property is required, is a collection key property, etc. If a value is not specified, the value is assumed to be None.  
+ 
  ]]></format>
     </remarks>
   </Docs>

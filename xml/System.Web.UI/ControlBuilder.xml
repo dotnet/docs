@@ -14,37 +14,37 @@
     <summary>Supports the page parser in building a control and the child controls it contains.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, every control on a page is associated with a default <xref:System.Web.UI.ControlBuilder> class. During parsing, the ASP.NET page framework builds a tree of <xref:System.Web.UI.ControlBuilder> objects corresponding to the tree of controls for the page. The <xref:System.Web.UI.ControlBuilder> tree is then used to generate page code to create the control tree. In addition to child controls, the <xref:System.Web.UI.ControlBuilder> defines the behavior of how the content within control tags is parsed. You can override this default behavior by defining your own custom control builder class. This is done by applying a <xref:System.Web.UI.ControlBuilderAttribute> attribute to your control builder class as follows:  
+By default, every control on a page is associated with a default <xref:System.Web.UI.ControlBuilder> class. During parsing, the ASP.NET page framework builds a tree of <xref:System.Web.UI.ControlBuilder> objects corresponding to the tree of controls for the page. The <xref:System.Web.UI.ControlBuilder> tree is then used to generate page code to create the control tree. In addition to child controls, the <xref:System.Web.UI.ControlBuilder> defines the behavior of how the content within control tags is parsed. You can override this default behavior by defining your own custom control builder class. This is done by applying a <xref:System.Web.UI.ControlBuilderAttribute> attribute to your control builder class as follows:  
+ 
+`[ControlBuilderAttribute(typeof(ControlBuilderType))]`  
+ 
   
- `[ControlBuilderAttribute(typeof(ControlBuilderType))]`  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Web.UI.WebControls.Table> control whose attributes and content are defined at the time the table is built. The following is the command line to use to build the executable.  
-  
- [Visual Basic]  
-  
+The following code example creates a <xref:System.Web.UI.WebControls.Table> control whose attributes and content are defined at the time the table is built. The following is the command line to use to build the executable.  
+ 
+[Visual Basic]  
+ 
 ```  
 vbc /r:System.dll /r:System.Web.dll /r:System.Drawing.dll /t:library /out:myWebAppPath/Bin/vb_mycontrolbuilder.dll myControlBuilder.vb  
 ```  
-  
- [C#]  
-  
+ 
+[C#]  
+ 
 ```  
 csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs  
 ```  
-  
- [!code-csharp[SystemWebUI_ControlBuilder_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/CS/controlbuilder.cs#1)]
- [!code-vb[SystemWebUI_ControlBuilder_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/VB/controlbuilder.vb#1)]  
-  
- The following code example uses the previous custom control. In particular, it builds a table whose attributes and content are defined at run time. Notice that the values shown in the  directive reflect the previous command line.  
-  
- <!-- TODO: review snippet reference [!code-csharp[SystemWebUI_ControlBuilder_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/CS/controlbuilder.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[SystemWebUI_ControlBuilder_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/VB/controlbuilder.aspx#2)]  -->  
-  
+ 
+[!code-csharp[SystemWebUI_ControlBuilder_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/CS/controlbuilder.cs#1)]
+[!code-vb[SystemWebUI_ControlBuilder_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/VB/controlbuilder.vb#1)]  
+ 
+The following code example uses the previous custom control. In particular, it builds a table whose attributes and content are defined at run time. Notice that the values shown in the  directive reflect the previous command line.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[SystemWebUI_ControlBuilder_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/CS/controlbuilder.aspx#2)]  -->
+<!-- TODO: review snippet reference [!code-vb[SystemWebUI_ControlBuilder_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/VB/controlbuilder.aspx#2)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,13 +63,13 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ControlBuilder" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create a new instance the <xref:System.Web.UI.ControlBuilder> class.  
-  
+Use this constructor to create a new instance the <xref:System.Web.UI.ControlBuilder> class.  
+ 
 > [!NOTE]
 >  This constructor is generally used by ASP.NET when parsing the page and creating the control hierarchy. It is not intended for use in your code.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,18 +92,18 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <returns>Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A> method is used to determine whether white space literals are permitted in the content between the opening and closing tags of a control. When this method returns `false`, the white space literals are trimmed from the content before the content is processed by the page parser. When this method returns `true`, the white space literals not removed.  
+The <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A> method is used to determine whether white space literals are permitted in the content between the opening and closing tags of a control. When this method returns `false`, the white space literals are trimmed from the content before the content is processed by the page parser. When this method returns `true`, the white space literals not removed.  
+ 
+This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
+ 
   
- This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[ControlBuilderSamples_1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_1/CS/ctrlbuilder_1.cs#4)]
- [!code-vb[ControlBuilderSamples_1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_1/VB/ctrlbuilder_1.vb#4)]  
-  
+[!code-csharp[ControlBuilderSamples_1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_1/CS/ctrlbuilder_1.cs#4)]
+[!code-vb[ControlBuilderSamples_1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_1/VB/ctrlbuilder_1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -131,16 +131,16 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Adds the specified literal content to a control. This method is called by the ASP.NET page framework.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Web.UI.ControlBuilder.AppendLiteralString%2A> method to control how literal content between the control's opening and closing tags is processed. Literal content can be any text that is passed by the browser to the server control. For example, any HTML elements and text, between their opening and closing tags, are literal content.  
+Override the <xref:System.Web.UI.ControlBuilder.AppendLiteralString%2A> method to control how literal content between the control's opening and closing tags is processed. Literal content can be any text that is passed by the browser to the server control. For example, any HTML elements and text, between their opening and closing tags, are literal content.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[ControlBuilderSamples_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_1/CS/ctrlbuilder_1.cs#3)]
- [!code-vb[ControlBuilderSamples_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_1/VB/ctrlbuilder_1.vb#3)]  
-  
+[!code-csharp[ControlBuilderSamples_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_1/CS/ctrlbuilder_1.cs#3)]
+[!code-vb[ControlBuilderSamples_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_1/VB/ctrlbuilder_1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The string literal is not well formed.</exception>
@@ -166,13 +166,13 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Adds builders to the <see cref="T:System.Web.UI.ControlBuilder" /> object for any child controls that belong to the container control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example overrides the <xref:System.Web.UI.ControlBuilder.AppendSubBuilder%2A> method to throw an <xref:System.Exception> if the control this control builder is applied to tries to include controls in its instance of <xref:System.Web.UI.ControlCollection> class.  
-  
- [!code-csharp[ControlBuilderSamples_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_2/cs/ctrlbuilder1.cs#1)]
- [!code-vb[ControlBuilderSamples_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_2/VB/ctrlbuilder1.vb#1)]  
-  
+The following example overrides the <xref:System.Web.UI.ControlBuilder.AppendSubBuilder%2A> method to throw an <xref:System.Exception> if the control this control builder is applied to tries to include controls in its instance of <xref:System.Web.UI.ControlCollection> class.  
+ 
+[!code-csharp[ControlBuilderSamples_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_2/cs/ctrlbuilder1.cs#1)]
+[!code-vb[ControlBuilderSamples_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_2/VB/ctrlbuilder1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Called by the parser to inform the builder that the parsing of the control's opening and closing tags is complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ControlBuilder.CloseControl%2A> method is used by the parser to indicate to the builder that it has finished parsing the control.  
-  
+The <xref:System.Web.UI.ControlBuilder.CloseControl%2A> method is used by the parser to indicate to the builder that it has finished parsing the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,10 +274,10 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <value>A collection of complex property entries.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there are no entries, a static empty collection is returned.  
-  
+If there are no entries, a static empty collection is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,13 +299,13 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <value>The <see cref="T:System.Type" /> for the control to be created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example overrides the <xref:System.Web.UI.ControlBuilder.OnAppendToParentBuilder%2A> method to check the <xref:System.Web.UI.ControlBuilder.ControlType%2A> property to determine what type of control this builder is applied to. If it is a `CustomTextBox`, the builder checks whether the value of the <xref:System.Web.UI.ControlBuilder.HasAspCode%2A> property is included in the control. If so, an exception is thrown, if not the <xref:System.Web.UI.ControlBuilder.HasBody%2A> method is called.  
-  
- [!code-csharp[ControlBuilderSamples_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_4/cs/controlbuilder_4.cs#1)]
- [!code-vb[ControlBuilderSamples_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_4/VB/controlbuilder_4.vb#1)]  
-  
+This example overrides the <xref:System.Web.UI.ControlBuilder.OnAppendToParentBuilder%2A> method to check the <xref:System.Web.UI.ControlBuilder.ControlType%2A> property to determine what type of control this builder is applied to. If it is a `CustomTextBox`, the builder checks whether the value of the <xref:System.Web.UI.ControlBuilder.HasAspCode%2A> property is included in the control. If so, an exception is thrown, if not the <xref:System.Web.UI.ControlBuilder.HasBody%2A> method is called.  
+ 
+[!code-csharp[ControlBuilderSamples_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_4/cs/controlbuilder_4.cs#1)]
+[!code-vb[ControlBuilderSamples_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_4/VB/controlbuilder_4.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,10 +363,10 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <value>An <see cref="T:System.Web.UI.IFilterResolutionService" /> object that is used to manage device filter related services when parsing and persisting controls in the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.IFilterResolutionService> interface is an interface that is specific to how a control uses device filters in a designer. When controls are parsed or persisted in the designer outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> provides a way to determine whether the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
-  
+The <xref:System.Web.UI.IFilterResolutionService> interface is an interface that is specific to how a control uses device filters in a designer. When controls are parsed or persisted in the designer outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> provides a way to determine whether the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,16 +467,16 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <returns>The <see cref="T:System.Type" /> of the specified control's child.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
+This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[ControlBuilderSamples_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_1/CS/ctrlbuilder_1.cs#2)]
- [!code-vb[ControlBuilderSamples_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_1/VB/ctrlbuilder_1.vb#2)]  
-  
+[!code-csharp[ControlBuilderSamples_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_1/CS/ctrlbuilder_1.cs#2)]
+[!code-vb[ControlBuilderSamples_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_1/VB/ctrlbuilder_1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,13 +537,13 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
           <see langword="true" /> if the control contains at least one code block; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example overrides the <xref:System.Web.UI.ControlBuilder.OnAppendToParentBuilder%2A> method to check the <xref:System.Web.UI.ControlBuilder.ControlType%2A> property to determine what type of control this builder is applied to. If it is a `CustomTextBox`, the builder checks whether the value of the <xref:System.Web.UI.ControlBuilder.HasAspCode%2A> property is included in the control. If so, an exception is thrown, if not the <xref:System.Web.UI.ControlBuilder.HasBody%2A> method is called.  
-  
- [!code-csharp[ControlBuilderSamples_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_4/cs/controlbuilder_4.cs#1)]
- [!code-vb[ControlBuilderSamples_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_4/VB/controlbuilder_4.vb#1)]  
-  
+This example overrides the <xref:System.Web.UI.ControlBuilder.OnAppendToParentBuilder%2A> method to check the <xref:System.Web.UI.ControlBuilder.ControlType%2A> property to determine what type of control this builder is applied to. If it is a `CustomTextBox`, the builder checks whether the value of the <xref:System.Web.UI.ControlBuilder.HasAspCode%2A> property is included in the control. If so, an exception is thrown, if not the <xref:System.Web.UI.ControlBuilder.HasBody%2A> method is called.  
+ 
+[!code-csharp[ControlBuilderSamples_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_4/cs/controlbuilder_4.cs#1)]
+[!code-vb[ControlBuilderSamples_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_4/VB/controlbuilder_4.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -567,18 +567,18 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
           <see langword="true" /> if the control has an opening and closing tag; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
+This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example overrides the <xref:System.Web.UI.ControlBuilder.OnAppendToParentBuilder%2A> method to check the <xref:System.Web.UI.ControlBuilder.ControlType%2A> property to determine what type of control this builder is applied to. If it is a `CustomTextBox`, the builder checks whether the value of the <xref:System.Web.UI.ControlBuilder.HasAspCode%2A> property is included in the control. If so, an exception is thrown, if not the <xref:System.Web.UI.ControlBuilder.HasBody%2A> method is called.  
-  
- [!code-csharp[ControlBuilderSamples_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_4/cs/controlbuilder_4.cs#1)]
- [!code-vb[ControlBuilderSamples_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_4/VB/controlbuilder_4.vb#1)]  
-  
+This example overrides the <xref:System.Web.UI.ControlBuilder.OnAppendToParentBuilder%2A> method to check the <xref:System.Web.UI.ControlBuilder.ControlType%2A> property to determine what type of control this builder is applied to. If it is a `CustomTextBox`, the builder checks whether the value of the <xref:System.Web.UI.ControlBuilder.HasAspCode%2A> property is included in the control. If so, an exception is thrown, if not the <xref:System.Web.UI.ControlBuilder.HasBody%2A> method is called.  
+ 
+[!code-csharp[ControlBuilderSamples_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_4/cs/controlbuilder_4.cs#1)]
+[!code-vb[ControlBuilderSamples_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_4/VB/controlbuilder_4.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -602,20 +602,20 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
           <see langword="true" /> if the HTML control literal string is to be decoded; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A literal string refers to the text between the opening and closing tag of an HTML control. HTML encoding is when text is converted into a string representation that the browser will display rather than interpret as HTML. Characters such as the question mark (?), ampersand (&), slash mark (/), and spaces might be truncated or corrupted by some browsers, so those characters must be encoded when they appear in `a` tags or in query strings.  
+A literal string refers to the text between the opening and closing tag of an HTML control. HTML encoding is when text is converted into a string representation that the browser will display rather than interpret as HTML. Characters such as the question mark (?), ampersand (&), slash mark (/), and spaces might be truncated or corrupted by some browsers, so those characters must be encoded when they appear in `a` tags or in query strings.  
+ 
+The <xref:System.Web.UI.ControlBuilder.HtmlDecodeLiterals%2A> method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
+ 
   
- The <xref:System.Web.UI.ControlBuilder.HtmlDecodeLiterals%2A> method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
-  
-   
-  
+ 
 ## Examples  
- The following example overrides the <xref:System.Web.UI.ControlBuilder.HtmlDecodeLiterals%2A> method to allow HTML decoding of literal strings in any control this builder is applied to.  
-  
- [!code-csharp[ControlBuilderSamples_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_2/cs/ctrlbuilder1.cs#2)]
- [!code-vb[ControlBuilderSamples_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_2/VB/ctrlbuilder1.vb#2)]  
-  
+The following example overrides the <xref:System.Web.UI.ControlBuilder.HtmlDecodeLiterals%2A> method to allow HTML decoding of literal strings in any control this builder is applied to.  
+ 
+[!code-csharp[ControlBuilderSamples_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_2/cs/ctrlbuilder1.cs#2)]
+[!code-vb[ControlBuilderSamples_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_2/VB/ctrlbuilder1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -656,13 +656,13 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
           <see langword="true" /> if the <see cref="T:System.Web.UI.ControlBuilder" /> is running in the designer; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property when the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method is called. When a control has this builder attached to it, the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method determines whether the control is being accessed at design-time through a designer. The <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property, and then the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> method is called. If the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property is set to `false`, an <xref:System.Exception> is thrown. Otherwise, the inner text of the control is returned on the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> call.  
-  
- [!code-csharp[ControlBuilderSamples_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_3/cs/controlbuilder_samples3.cs#1)]
- [!code-vb[ControlBuilderSamples_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_3/VB/controlbuilder_samples3.vb#1)]  
-  
+The following example uses the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property when the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method is called. When a control has this builder attached to it, the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method determines whether the control is being accessed at design-time through a designer. The <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property, and then the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> method is called. If the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property is set to `false`, an <xref:System.Exception> is thrown. Otherwise, the inner text of the control is returned on the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> call.  
+ 
+[!code-csharp[ControlBuilderSamples_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_3/cs/controlbuilder_samples3.cs#1)]
+[!code-vb[ControlBuilderSamples_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_3/VB/controlbuilder_samples3.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -697,10 +697,10 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Initializes the <see cref="T:System.Web.UI.ControlBuilder" /> for use after it is instantiated. This method is called by the ASP.NET page framework.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
-  
+This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -798,20 +798,20 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
           <see langword="true" /> if the control builder needs to get its inner text. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The inner text is the text between the opening and closing tags of the control.  
+The inner text is the text between the opening and closing tags of the control.  
+ 
+This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
+ 
   
- This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in you code.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property when the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method is called. When a control has this builder attached to it, the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> determines whether the control is being accessed at design-time through a designer. The <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property, and then the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> method is called. If the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property is set to `false`, an <xref:System.Exception> is thrown. Otherwise, the inner text of the control is returned on the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> call.  
-  
- [!code-csharp[ControlBuilderSamples_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_3/cs/controlbuilder_samples3.cs#1)]
- [!code-vb[ControlBuilderSamples_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_3/VB/controlbuilder_samples3.vb#1)]  
-  
+The following example uses the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property when the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method is called. When a control has this builder attached to it, the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> determines whether the control is being accessed at design-time through a designer. The <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property, and then the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> method is called. If the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property is set to `false`, an <xref:System.Exception> is thrown. Otherwise, the inner text of the control is returned on the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> call.  
+ 
+[!code-csharp[ControlBuilderSamples_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_3/cs/controlbuilder_samples3.cs#1)]
+[!code-vb[ControlBuilderSamples_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_3/VB/controlbuilder_samples3.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -836,13 +836,13 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Notifies the <see cref="T:System.Web.UI.ControlBuilder" /> that it is being added to a parent control builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example overrides the <xref:System.Web.UI.ControlBuilder.OnAppendToParentBuilder%2A> method to check the <xref:System.Web.UI.ControlBuilder.ControlType%2A> property to determine what type of control this builder is applied to. If it is a `CustomTextBox`, the builder checks whether the value of the <xref:System.Web.UI.ControlBuilder.HasAspCode%2A> property is included in the control. If so, an exception is thrown, if not the <xref:System.Web.UI.ControlBuilder.HasBody%2A> method is called.  
-  
- [!code-csharp[ControlBuilderSamples_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_4/cs/controlbuilder_4.cs#1)]
- [!code-vb[ControlBuilderSamples_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_4/VB/controlbuilder_4.vb#1)]  
-  
+This example overrides the <xref:System.Web.UI.ControlBuilder.OnAppendToParentBuilder%2A> method to check the <xref:System.Web.UI.ControlBuilder.ControlType%2A> property to determine what type of control this builder is applied to. If it is a `CustomTextBox`, the builder checks whether the value of the <xref:System.Web.UI.ControlBuilder.HasAspCode%2A> property is included in the control. If so, an exception is thrown, if not the <xref:System.Web.UI.ControlBuilder.HasBody%2A> method is called.  
+ 
+[!code-csharp[ControlBuilderSamples_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_4/cs/controlbuilder_4.cs#1)]
+[!code-vb[ControlBuilderSamples_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_4/VB/controlbuilder_4.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -882,10 +882,10 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <value>The <see cref="T:System.Web.UI.TemplateParser" /> used to parse the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property retrieves the <xref:System.Web.UI.TemplateParser> responsible for parsing the control.  
-  
+This property retrieves the <xref:System.Web.UI.TemplateParser> responsible for parsing the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -918,16 +918,16 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Enables custom control builders to access the generated Code Document Object Model (CodeDom) and insert and modify code during the process of parsing and building controls.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the single-file page model, the `baseType` and `derivedType` parameters are the same <xref:System.CodeDom.CodeTypeDeclaration> type, which typically derives from the <xref:System.Web.UI.Page> class.  
-  
- In the code-behind page model, `baseType` is the <xref:System.CodeDom.CodeTypeDeclaration> type that represents the partial code-behind class, which is typically derived from the <xref:System.Web.UI.Page> class. The `derivedType` parameter is the class that derives from the partial class that contains the markup.  
-  
- For more information about ASP.NET Web page models, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
-  
- For more information about how to use the CodeDOM to represent and generate source code, see [Dynamic Source Code Generation and Compilation](~/docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md).  
-  
+In the single-file page model, the `baseType` and `derivedType` parameters are the same <xref:System.CodeDom.CodeTypeDeclaration> type, which typically derives from the <xref:System.Web.UI.Page> class.  
+ 
+In the code-behind page model, `baseType` is the <xref:System.CodeDom.CodeTypeDeclaration> type that represents the partial code-behind class, which is typically derived from the <xref:System.Web.UI.Page> class. The `derivedType` parameter is the class that derives from the partial class that contains the markup.  
+ 
+For more information about ASP.NET Web page models, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
+ 
+For more information about how to use the CodeDOM to represent and generate source code, see [Dynamic Source Code Generation and Compilation](~/docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1012,18 +1012,18 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Provides the <see cref="T:System.Web.UI.ControlBuilder" /> with the inner text of the control tag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called only if <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> previously returned `true`.  
+This method is called only if <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> previously returned `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property when the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method is called. When a control has this builder attached to it, the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> determines whether the control is being accessed at design-time through a designer. The <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property, and then the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> method is called. If the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property is set to `false`, an <xref:System.Exception> is thrown. Otherwise, the inner text of the control is returned on the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> call.  
-  
- [!code-csharp[ControlBuilderSamples_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_3/cs/controlbuilder_samples3.cs#1)]
- [!code-vb[ControlBuilderSamples_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_3/VB/controlbuilder_samples3.vb#1)]  
-  
+The following example uses the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property when the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> method is called. When a control has this builder attached to it, the <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> determines whether the control is being accessed at design-time through a designer. The <xref:System.Web.UI.ControlBuilder.NeedsTagInnerText%2A> returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property, and then the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> method is called. If the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property is set to `false`, an <xref:System.Exception> is thrown. Otherwise, the inner text of the control is returned on the <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A> call.  
+ 
+[!code-csharp[ControlBuilderSamples_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlBuilderSamples_3/cs/controlbuilder_samples3.cs#1)]
+[!code-vb[ControlBuilderSamples_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlBuilderSamples_3/VB/controlbuilder_samples3.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1081,10 +1081,10 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <value>A collection of template property entries.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there are no entries, a static empty collection is returned.  
-  
+If there are no entries, a static empty collection is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1106,10 +1106,10 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <value>An <see cref="T:System.Web.UI.IThemeResolutionService" /> object that is used in design time to manage control themes and skins.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.IThemeResolutionService> interface is a container for one or more <xref:System.Web.UI.ThemeProvider> objects, which in turn supply the <xref:System.Web.UI.SkinBuilder> objects that apply themes and control skins to controls when they are created in a designer.  
-  
+The <xref:System.Web.UI.IThemeResolutionService> interface is a container for one or more <xref:System.Web.UI.ThemeProvider> objects, which in turn supply the <xref:System.Web.UI.SkinBuilder> objects that apply themes and control skins to controls when they are created in a designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>

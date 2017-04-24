@@ -28,29 +28,29 @@
     <summary>Represents a Windows service and allows you to connect to a running or stopped service, manipulate it, or get information about it.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.ServiceProcess.ServiceController> class to connect to and control the behavior of existing services. When you create an instance of the <xref:System.ServiceProcess.ServiceController> class, you set its properties so it interacts with a specific Windows service. You can then use the class to start, stop, and otherwise manipulate the service.  
-  
- You will most likely use the <xref:System.ServiceProcess.ServiceController> component in an administrative capacity. For example, you could create a Windows or Web application that sends custom commands to a service through the <xref:System.ServiceProcess.ServiceController> instance. This would be useful, because the Service Control Manager (SCM) Microsoft Management Console snap-in does not support custom commands.  
-  
- After you create an instance of <xref:System.ServiceProcess.ServiceController>, you must set two properties on it to identify the service with which it interacts: the computer name and the name of the service you want to control.  
-  
+You can use the <xref:System.ServiceProcess.ServiceController> class to connect to and control the behavior of existing services. When you create an instance of the <xref:System.ServiceProcess.ServiceController> class, you set its properties so it interacts with a specific Windows service. You can then use the class to start, stop, and otherwise manipulate the service.  
+ 
+You will most likely use the <xref:System.ServiceProcess.ServiceController> component in an administrative capacity. For example, you could create a Windows or Web application that sends custom commands to a service through the <xref:System.ServiceProcess.ServiceController> instance. This would be useful, because the Service Control Manager (SCM) Microsoft Management Console snap-in does not support custom commands.  
+ 
+After you create an instance of <xref:System.ServiceProcess.ServiceController>, you must set two properties on it to identify the service with which it interacts: the computer name and the name of the service you want to control.  
+ 
 > [!NOTE]
 >  By default, <xref:System.ServiceProcess.ServiceController.MachineName%2A> is set to the local computer, so you do not need to change it unless you want to set the instance to point to another computer.  
+ 
+Generally, the service author writes code that customizes the action associated with a specific command. For example, a service can contain code to respond to an <xref:System.ServiceProcess.ServiceBase.OnPause%2A?displayProperty=fullName> command. In that case, the custom processing for the <xref:System.ServiceProcess.ServiceController.Pause%2A> task runs before the system pauses the service.  
+ 
+The set of commands a service can process depends on its properties; for example, you can set the <xref:System.ServiceProcess.ServiceController.CanStop%2A> property for a service to `false`. This setting renders the `Stop` command unavailable on that particular service; it prevents you from stopping the service from the SCM by disabling the necessary button. If you try to stop the service from your code, the system raises an error and displays the error message "Failed to stop `servicename`."  
+ 
   
- Generally, the service author writes code that customizes the action associated with a specific command. For example, a service can contain code to respond to an <xref:System.ServiceProcess.ServiceBase.OnPause%2A?displayProperty=fullName> command. In that case, the custom processing for the <xref:System.ServiceProcess.ServiceController.Pause%2A> task runs before the system pauses the service.  
-  
- The set of commands a service can process depends on its properties; for example, you can set the <xref:System.ServiceProcess.ServiceController.CanStop%2A> property for a service to `false`. This setting renders the `Stop` command unavailable on that particular service; it prevents you from stopping the service from the SCM by disabling the necessary button. If you try to stop the service from your code, the system raises an error and displays the error message "Failed to stop `servicename`."  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController> class to control the `SimpleService` service example.  
-  
- [!code-csharp[ServiceControllerClass#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#1)]
- [!code-vb[ServiceControllerClass#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#1)]  
-  
+The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController> class to control the `SimpleService` service example.  
+ 
+[!code-csharp[ServiceControllerClass#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#1)]
+[!code-vb[ServiceControllerClass#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,13 +91,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceController" /> class that is associated with an existing service on the local computer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.%23ctor%28System.String%29?displayProperty=fullName> constructor to create a <xref:System.ServiceProcess.ServiceController> object that is used to control a sample service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
-  
- [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
- [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
-  
+The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.%23ctor%28System.String%29?displayProperty=fullName> constructor to create a <xref:System.ServiceProcess.ServiceController> object that is used to control a sample service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+ 
+[!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
+[!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -127,10 +127,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceController" /> class that is associated with an existing service on the specified computer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the `machineName` parameter, you can use "." to represent the local computer.  
-  
+For the `machineName` parameter, you can use "." to represent the local computer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -171,13 +171,13 @@
           <see langword="true" /> if the service can be paused; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.CanPauseAndContinue%2A> property to determine whether a service can pause and continue. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
-  
- [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
- [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
-  
+The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.CanPauseAndContinue%2A> property to determine whether a service can pause and continue. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+ 
+[!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
+[!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -214,13 +214,13 @@
           <see langword="true" /> if the service should be notified when the system is shutting down; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.CanShutdown%2A> property to determine whether a service provides a handler for a shutdown event. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
-  
- [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
- [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
-  
+The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.CanShutdown%2A> property to determine whether a service provides a handler for a shutdown event. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+ 
+[!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
+[!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -257,13 +257,13 @@
           <see langword="true" /> if the service can be stopped and the <see cref="M:System.ServiceProcess.ServiceBase.OnStop" /> method called; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.CanStop%2A> property to determine whether a service provides a handler for a stop event. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
-  
- [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
- [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
-  
+The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.CanStop%2A> property to determine whether a service provides a handler for a stop event. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+ 
+[!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
+[!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -287,10 +287,10 @@
         <summary>Disconnects this <see cref="T:System.ServiceProcess.ServiceController" /> instance from the service and frees all the resources that the instance allocated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceProcess.ServiceController.Close%2A> releases all the handles associated with the <xref:System.ServiceProcess.ServiceController> instance.  
-  
+<xref:System.ServiceProcess.ServiceController.Close%2A> releases all the handles associated with the <xref:System.ServiceProcess.ServiceController> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,20 +316,20 @@
         <summary>Continues a service after it has been paused.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call <xref:System.ServiceProcess.ServiceController.Continue%2A> for a service, its status is first changed to `ContinuePending` and then, when the <xref:System.ServiceProcess.ServiceController.Continue%2A> method returns, it is changed to `Running`.  
+When you call <xref:System.ServiceProcess.ServiceController.Continue%2A> for a service, its status is first changed to `ContinuePending` and then, when the <xref:System.ServiceProcess.ServiceController.Continue%2A> method returns, it is changed to `Running`.  
+ 
+You cannot call <xref:System.ServiceProcess.ServiceController.Continue%2A> for the service until the service controller status is `Paused`.  
+ 
   
- You cannot call <xref:System.ServiceProcess.ServiceController.Continue%2A> for the service until the service controller status is `Paused`.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.Continue%2A> method to continue a paused service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
-  
- [!code-csharp[ServiceControllerClass#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#5)]
- [!code-vb[ServiceControllerClass#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#5)]  
-  
+The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.Continue%2A> method to continue a paused service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+ 
+[!code-csharp[ServiceControllerClass#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#5)]
+[!code-vb[ServiceControllerClass#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -367,19 +367,19 @@
         <value>An array of <see cref="T:System.ServiceProcess.ServiceController" /> instances, each of which is associated with a service that depends on this service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceProcess.ServiceController.DependentServices%2A> array represents the services that the system stops if your application calls <xref:System.ServiceProcess.ServiceController.Stop%2A> for this service.  
+The <xref:System.ServiceProcess.ServiceController.DependentServices%2A> array represents the services that the system stops if your application calls <xref:System.ServiceProcess.ServiceController.Stop%2A> for this service.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the set of services that are dependent on the Event Log service.  
-  
- [!code-cpp[ServiceController#3](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#3)]
- [!code-csharp[ServiceController#3](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#3)]
- [!code-vb[ServiceController#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#3)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the set of services that are dependent on the Event Log service.  
+ 
+[!code-cpp[ServiceController#3](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#3)]
+[!code-csharp[ServiceController#3](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#3)]
+[!code-vb[ServiceController#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -419,19 +419,19 @@
         <value>The friendly name of the service, which can be used to identify the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set the <xref:System.ServiceProcess.ServiceController.DisplayName%2A> to an empty string (""), but setting the property to `null` throws an exception.  
+You can set the <xref:System.ServiceProcess.ServiceController.DisplayName%2A> to an empty string (""), but setting the property to `null` throws an exception.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the set of services that are dependent on the Event Log service.  
-  
- [!code-cpp[ServiceController#3](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#3)]
- [!code-csharp[ServiceController#3](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#3)]
- [!code-vb[ServiceController#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#3)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the set of services that are dependent on the Event Log service.  
+ 
+[!code-cpp[ServiceController#3](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#3)]
+[!code-csharp[ServiceController#3](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#3)]
+[!code-vb[ServiceController#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.ServiceProcess.ServiceController.DisplayName" /> is <see langword="null" />.</exception>
@@ -482,12 +482,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.ServiceProcess.ServiceController" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ServiceProcess.ServiceController> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ServiceProcess.ServiceController> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -518,18 +518,18 @@
         <summary>Executes a custom command on the service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call <xref:System.ServiceProcess.ServiceController.ExecuteCommand%2A>, the status of the service does not change. If the service was started, the status remains `Running`. If the service was stopped, the status remains `Stopped`, and so on. To process the custom command, the service must override the <xref:System.ServiceProcess.ServiceBase.OnCustomCommand%2A> method and provide a handler for the command identified by the `command` parameter.  
+When you call <xref:System.ServiceProcess.ServiceController.ExecuteCommand%2A>, the status of the service does not change. If the service was started, the status remains `Running`. If the service was stopped, the status remains `Stopped`, and so on. To process the custom command, the service must override the <xref:System.ServiceProcess.ServiceBase.OnCustomCommand%2A> method and provide a handler for the command identified by the `command` parameter.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.ServiceProcess.ServiceController.ExecuteCommand%28System.Int32%29?displayProperty=fullName> method to execute custom commands in the `SimpleService` service example.  
-  
- [!code-csharp[ServiceContoller_ExecuteCommand#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/CS/program.cs#1)]
- [!code-vb[ServiceContoller_ExecuteCommand#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/VB/module1.vb#1)]  
-  
+The following code example shows the use of the <xref:System.ServiceProcess.ServiceController.ExecuteCommand%28System.Int32%29?displayProperty=fullName> method to execute custom commands in the `SimpleService` service example.  
+ 
+[!code-csharp[ServiceContoller_ExecuteCommand#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/CS/program.cs#1)]
+[!code-vb[ServiceContoller_ExecuteCommand#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/VB/module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -560,19 +560,19 @@
         <returns>An array of type <see cref="T:System.ServiceProcess.ServiceController" /> in which each element is associated with a device driver service on the local computer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceProcess.ServiceController.GetDevices%2A> returns only the device driver services from the local computer. To retrieve the non-device driver services or services that are not drivers, call the <xref:System.ServiceProcess.ServiceController.GetServices%2A> method. Together, the two methods provide access to all the services on a computer.  
+<xref:System.ServiceProcess.ServiceController.GetDevices%2A> returns only the device driver services from the local computer. To retrieve the non-device driver services or services that are not drivers, call the <xref:System.ServiceProcess.ServiceController.GetServices%2A> method. Together, the two methods provide access to all the services on a computer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the device driver services on the local computer.  
-  
- [!code-cpp[ServiceController#5](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#5)]
- [!code-csharp[ServiceController#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#5)]
- [!code-vb[ServiceController#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#5)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the device driver services on the local computer.  
+ 
+[!code-cpp[ServiceController#5](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#5)]
+[!code-csharp[ServiceController#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#5)]
+[!code-vb[ServiceController#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -603,10 +603,10 @@
         <returns>An array of type <see cref="T:System.ServiceProcess.ServiceController" /> in which each element is associated with a device driver service on the specified computer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceProcess.ServiceController.GetDevices%2A> returns only the device driver services from the specified computer. To retrieve the non-device driver services or services that are not drivers, call the <xref:System.ServiceProcess.ServiceController.GetServices%2A> method. Together, the two methods provide access to all the services on a computer.  
-  
+<xref:System.ServiceProcess.ServiceController.GetDevices%2A> returns only the device driver services from the specified computer. To retrieve the non-device driver services or services that are not drivers, call the <xref:System.ServiceProcess.ServiceController.GetServices%2A> method. Together, the two methods provide access to all the services on a computer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -635,19 +635,19 @@
         <returns>An array of type <see cref="T:System.ServiceProcess.ServiceController" /> in which each element is associated with a service on the local computer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceProcess.ServiceController.GetServices%2A> returns only the non-device driver services and the services that are not drivers from the local computer. To retrieve device driver services, call the <xref:System.ServiceProcess.ServiceController.GetDevices%2A> method. Together, the two methods provide access to all the services on a computer.  
+<xref:System.ServiceProcess.ServiceController.GetServices%2A> returns only the non-device driver services and the services that are not drivers from the local computer. To retrieve device driver services, call the <xref:System.ServiceProcess.ServiceController.GetDevices%2A> method. Together, the two methods provide access to all the services on a computer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the services that are running on the local computer.  
-  
- [!code-cpp[ServiceController#6](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#6)]
- [!code-csharp[ServiceController#6](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#6)]
- [!code-vb[ServiceController#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#6)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the services that are running on the local computer.  
+ 
+[!code-cpp[ServiceController#6](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#6)]
+[!code-csharp[ServiceController#6](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#6)]
+[!code-vb[ServiceController#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -678,10 +678,10 @@
         <returns>An array of type <see cref="T:System.ServiceProcess.ServiceController" /> in which each element is associated with a service on the specified computer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceProcess.ServiceController.GetServices%2A> returns only the non-device driver services and the services that are not drivers from the specified computer. To retrieve device driver services, call the <xref:System.ServiceProcess.ServiceController.GetDevices%2A> method. Together, the two methods provide access to all the services on a computer.  
-  
+<xref:System.ServiceProcess.ServiceController.GetServices%2A> returns only the non-device driver services and the services that are not drivers from the specified computer. To retrieve device driver services, call the <xref:System.ServiceProcess.ServiceController.GetDevices%2A> method. Together, the two methods provide access to all the services on a computer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -723,10 +723,10 @@
         <value>The name of the computer that is running the service associated with this <see cref="T:System.ServiceProcess.ServiceController" /> instance. The default is the local computer (".").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The computer name is the name of the server that is running this service, without the preceding backslash characters (\\\\).  
-  
+The computer name is the name of the server that is running this service, without the preceding backslash characters (\\\\).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.ServiceProcess.ServiceController.MachineName" /> syntax is invalid.</exception>
@@ -753,18 +753,18 @@
         <summary>Suspends a service's operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot call <xref:System.ServiceProcess.ServiceController.Continue%2A> for the service until the service controller status is `Paused`.  
+You cannot call <xref:System.ServiceProcess.ServiceController.Continue%2A> for the service until the service controller status is `Paused`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.Pause%2A> method to pause a service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
-  
- [!code-csharp[ServiceControllerClass#4](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#4)]
- [!code-vb[ServiceControllerClass#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#4)]  
-  
+The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.Pause%2A> method to pause a service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+ 
+[!code-csharp[ServiceControllerClass#4](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#4)]
+[!code-vb[ServiceControllerClass#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -794,18 +794,18 @@
         <summary>Refreshes property values by resetting the properties to their current values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceProcess.ServiceController.Refresh%2A> method causes the <xref:System.ServiceProcess.ServiceController.ServicesDependedOn%2A>, <xref:System.ServiceProcess.ServiceController.DependentServices%2A>, and <xref:System.ServiceProcess.ServiceController.Status%2A> properties to be reset to their current values when they are next referenced.  
+The <xref:System.ServiceProcess.ServiceController.Refresh%2A> method causes the <xref:System.ServiceProcess.ServiceController.ServicesDependedOn%2A>, <xref:System.ServiceProcess.ServiceController.DependentServices%2A>, and <xref:System.ServiceProcess.ServiceController.Status%2A> properties to be reset to their current values when they are next referenced.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.Refresh%2A> method to obtain the status of a service. The code instructs a service to pause, and then waits for the status to reflect the change. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
-  
- [!code-csharp[ServiceControllerClass#4](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#4)]
- [!code-vb[ServiceControllerClass#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#4)]  
-  
+The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.Refresh%2A> method to obtain the status of a service. The code instructs a service to pause, and then waits for the status to reflect the change. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+ 
+[!code-csharp[ServiceControllerClass#4](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#4)]
+[!code-vb[ServiceControllerClass#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -880,14 +880,14 @@
         <value>The name that identifies the service that this <see cref="T:System.ServiceProcess.ServiceController" /> instance references. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceProcess.ServiceController.ServiceName%2A> identifies the service to the Service Control Manager. Changing this property causes the <xref:System.ServiceProcess.ServiceController> instance to bind to another service, it does not change what the Service Control Manager's Microsoft Management Console snap-in displays.  
-  
- When you are implementing a custom service, the value of this property must be identical to the name recorded for the service in the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property of the corresponding <xref:System.ServiceProcess.ServiceInstaller> class. In code, the <xref:System.ServiceProcess.ServiceController.ServiceName%2A> is usually set in the `main()` function of the executable.  
-  
- When you reset the <xref:System.ServiceProcess.ServiceController.ServiceName%2A> property, the method that sets the property sets this instance's <xref:System.ServiceProcess.ServiceController.DisplayName%2A> to an empty string ("").  
-  
+The <xref:System.ServiceProcess.ServiceController.ServiceName%2A> identifies the service to the Service Control Manager. Changing this property causes the <xref:System.ServiceProcess.ServiceController> instance to bind to another service, it does not change what the Service Control Manager's Microsoft Management Console snap-in displays.  
+ 
+When you are implementing a custom service, the value of this property must be identical to the name recorded for the service in the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property of the corresponding <xref:System.ServiceProcess.ServiceInstaller> class. In code, the <xref:System.ServiceProcess.ServiceController.ServiceName%2A> is usually set in the `main()` function of the executable.  
+ 
+When you reset the <xref:System.ServiceProcess.ServiceController.ServiceName%2A> property, the method that sets the property sets this instance's <xref:System.ServiceProcess.ServiceController.DisplayName%2A> to an empty string ("").  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.ServiceProcess.ServiceController.ServiceName" /> is <see langword="null" />.</exception>
@@ -924,19 +924,19 @@
         <value>An array of <see cref="T:System.ServiceProcess.ServiceController" /> instances, each of which is associated with a service that must be running for this service to run.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If any service in the <xref:System.ServiceProcess.ServiceController.ServicesDependedOn%2A> array is not running, you will not be able to start this service.  
+If any service in the <xref:System.ServiceProcess.ServiceController.ServicesDependedOn%2A> array is not running, you will not be able to start this service.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the set of services that the Messenger service is dependent on.  
-  
- [!code-cpp[ServiceController#4](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#4)]
- [!code-csharp[ServiceController#4](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#4)]
- [!code-vb[ServiceController#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#4)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the set of services that the Messenger service is dependent on.  
+ 
+[!code-cpp[ServiceController#4](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#4)]
+[!code-csharp[ServiceController#4](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#4)]
+[!code-vb[ServiceController#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -973,19 +973,19 @@
         <value>One of the <see cref="T:System.ServiceProcess.ServiceType" /> values, used to indicate the network service type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The service type indicates how the service is used by the system. The value of the <xref:System.ServiceProcess.ServiceController.ServiceType%2A> property represents a set of flags combined using the bitwise OR operator.  
+The service type indicates how the service is used by the system. The value of the <xref:System.ServiceProcess.ServiceController.ServiceType%2A> property represents a set of flags combined using the bitwise OR operator.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the device driver services on the local computer.  
-  
- [!code-cpp[ServiceController#5](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#5)]
- [!code-csharp[ServiceController#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#5)]
- [!code-vb[ServiceController#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#5)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the device driver services on the local computer.  
+ 
+[!code-cpp[ServiceController#5](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#5)]
+[!code-csharp[ServiceController#5](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#5)]
+[!code-vb[ServiceController#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -1013,19 +1013,19 @@
         <summary>Starts the service, passing no arguments.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot call <xref:System.ServiceProcess.ServiceController.Stop%2A> for the service until the service controller status is `Running`.  
+You cannot call <xref:System.ServiceProcess.ServiceController.Stop%2A> for the service until the service controller status is `Running`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus>.  
-  
- [!code-cpp[ServiceController#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#1)]
- [!code-csharp[ServiceController#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#1)]
- [!code-vb[ServiceController#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#1)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus>.  
+ 
+[!code-cpp[ServiceController#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#1)]
+[!code-csharp[ServiceController#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#1)]
+[!code-vb[ServiceController#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -1058,10 +1058,10 @@
         <summary>Starts a service, passing the specified arguments.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot call <xref:System.ServiceProcess.ServiceController.Stop%2A> for the service until the service controller status is `Running`.  
-  
+You cannot call <xref:System.ServiceProcess.ServiceController.Stop%2A> for the service until the service controller status is `Running`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -1137,19 +1137,19 @@
         <value>One of the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> values that indicates whether the service is running, stopped, or paused, or whether a start, stop, pause, or continue command is pending.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The status indicates the current state of the service. The set of possible values includes several that indicate whether a state-changing command is pending.  
+The status indicates the current state of the service. The set of possible values includes several that indicate whether a state-changing command is pending.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the Telnet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
-  
- [!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
- [!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
- [!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the Telnet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
+ 
+[!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
+[!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
+[!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -1177,21 +1177,21 @@
         <summary>Stops this service and any services that are dependent on this service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If any services depend on this service for their operation, they will be stopped before this service is stopped. The <xref:System.ServiceProcess.ServiceController.DependentServices%2A> property contains the set of services that depend on this one.  
+If any services depend on this service for their operation, they will be stopped before this service is stopped. The <xref:System.ServiceProcess.ServiceController.DependentServices%2A> property contains the set of services that depend on this one.  
+ 
+If you stop a service that this service depends on, call the <xref:System.ServiceProcess.ServiceController.Stop%2A> method on this service within the <xref:System.ServiceProcess.ServiceController.Stop%2A> method of the parent service. The <xref:System.ServiceProcess.ServiceController.ServicesDependedOn%2A> property contains the services that this service depends on.  
+ 
   
- If you stop a service that this service depends on, call the <xref:System.ServiceProcess.ServiceController.Stop%2A> method on this service within the <xref:System.ServiceProcess.ServiceController.Stop%2A> method of the parent service. The <xref:System.ServiceProcess.ServiceController.ServicesDependedOn%2A> property contains the services that this service depends on.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the Telnet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
-  
- [!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
- [!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
- [!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the Telnet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
+ 
+[!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
+[!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
+[!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
@@ -1224,22 +1224,22 @@
         <summary>Infinitely waits for the service to reach the specified status.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> to suspend an application's processing until the service has reached the required status.  
-  
+Use <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> to suspend an application's processing until the service has reached the required status.  
+ 
 > [!NOTE]
 >  The <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> method waits approximately 250 milliseconds between each status check.  <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> cannot detect the case of the observed service changing to the `desiredStatus` and then immediately to another status in that interval.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus>.  
-  
- [!code-cpp[ServiceController#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#1)]
- [!code-csharp[ServiceController#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#1)]
- [!code-vb[ServiceController#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#1)]  
-  
+The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus>.  
+ 
+[!code-cpp[ServiceController#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#1)]
+[!code-csharp[ServiceController#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#1)]
+[!code-vb[ServiceController#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="desiredStatus" /> parameter is not any of the values defined in the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> enumeration.</exception>
@@ -1271,13 +1271,13 @@
         <summary>Waits for the service to reach the specified status or for the specified time-out to expire.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> to suspend an application's processing until the service has reached the required status.  
-  
+Use <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> to suspend an application's processing until the service has reached the required status.  
+ 
 > [!NOTE]
 >  The <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> method waits approximately 250 milliseconds between each status check.  <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> cannot detect the case of the observed service changing to the `desiredStatus` and then immediately to another status in that interval.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="desiredStatus" /> parameter is not any of the values defined in the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> enumeration.</exception>

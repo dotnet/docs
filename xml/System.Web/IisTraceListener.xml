@@ -14,15 +14,15 @@
     <summary>Provides a listener that routes all tracing and debugging output to the [!INCLUDE[iisver](~/includes/iisver-md.md)] infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.IisTraceListener> class connects the tracing mechanism of [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] to [!INCLUDE[iisver](~/includes/iisver-md.md)]. This listener class enables developers who create [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] applications and who implement the <xref:System.Web.IHttpModule> and <xref:System.Web.IHttpHandler> interfaces to raise page-level, module-level, or handler-level events to the [!INCLUDE[iisver](~/includes/iisver-md.md)] infrastructure when tracing is enabled.  
-  
+The <xref:System.Web.IisTraceListener> class connects the tracing mechanism of [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] to [!INCLUDE[iisver](~/includes/iisver-md.md)]. This listener class enables developers who create [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] applications and who implement the <xref:System.Web.IHttpModule> and <xref:System.Web.IHttpHandler> interfaces to raise page-level, module-level, or handler-level events to the [!INCLUDE[iisver](~/includes/iisver-md.md)] infrastructure when tracing is enabled.  
+ 
 > [!NOTE]
 >  This listener class does not route [!INCLUDE[iisver](~/includes/iisver-md.md)] events to ASP.NET classes. This includes the <xref:System.Web.UI.Page> class and classes that implement the <xref:System.Web.IHttpModule> or <xref:System.Web.IHttpHandler> interface.  
-  
- <xref:System.Web.IisTraceListener> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+ 
+<xref:System.Web.IisTraceListener> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.IisTraceListener.%23ctor%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.IisTraceListener.%23ctor%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,12 +77,12 @@
         <summary>Writes trace information, a data object, and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
-  
- <xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
+ 
+<xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,12 +121,12 @@
         <summary>Writes trace information, an array of data objects, and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
-  
- <xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
+ 
+<xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,12 +159,12 @@
         <summary>Writes trace and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
-  
- <xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
+ 
+<xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,12 +205,12 @@
         <summary>Writes trace information, a formatted array of objects, and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
-  
- <xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
+ 
+<xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
         <summary>Writes the specified message to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.IisTraceListener.Write%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.IisTraceListener.Write%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,12 +265,12 @@
         <summary>Writes the specified message and the specified category name to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload of the <xref:System.Web.IisTraceListener.Write%2A> method is provided for compatibility. This method does not use any values passed in the `category` parameter.  
-  
- <xref:System.Web.IisTraceListener.Write%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+This overload of the <xref:System.Web.IisTraceListener.Write%2A> method is provided for compatibility. This method does not use any values passed in the `category` parameter.  
+ 
+<xref:System.Web.IisTraceListener.Write%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
         <summary>Writes the specified message to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.IisTraceListener.WriteLine%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.IisTraceListener.WriteLine%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@
         <summary>Writes the specified message and category name to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.IisTraceListener.WriteLine%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.IisTraceListener.WriteLine%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -342,10 +342,10 @@
         <summary>Writes trace and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <summary>Writes trace data to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -376,10 +376,10 @@
         <summary>Writes a message, a category name, or the value of an object's <see cref="M:System.Object.ToString" /> method to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.IisTraceListener.Write%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.IisTraceListener.Write%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

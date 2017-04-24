@@ -33,10 +33,10 @@
           <see langword="true" /> if information about the <see cref="P:System.Windows.Threading.DispatcherOperation.Priority" /> is saved to the <see cref="T:System.Windows.Threading.DispatcherSynchronizationContext" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `false`.  If your app targets WPF 4.5, the default is `true`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
-  
+The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `false`.  If your app targets WPF 4.5, the default is `true`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -59,10 +59,10 @@
           <see langword="true" /> if the <see cref="M:System.Windows.Threading.DispatcherSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" /> method puts the delegates on the dispatcher queue or if the delegate is directly invoked; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `false`.  If your app targets WPF 4.5, the default is `true`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
-  
+The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `false`.  If your app targets WPF 4.5, the default is `true`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <value>true if a single <see cref="T:System.Windows.Threading.DispatcherSynchronizationContext" /> is used for multiple dispatcher operations; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `true`.  If your app targets WPF 4.5, the default is `false`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
-  
+The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `true`.  If your app targets WPF 4.5, the default is `false`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,10 +13,10 @@
     <summary>Defines the values for the age of a synthesized voice.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Synthesis.VoiceAge> can indicate the age of an existing voice or an age preference when selecting a voice. Three of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods and two of the <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods use <xref:System.Speech.Synthesis.VoiceAge> to specify the age when selecting a voice. The <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> property obtains the age of an existing voice using a <xref:System.Speech.Synthesis.VoiceAge> member.  
-  
+<xref:System.Speech.Synthesis.VoiceAge> can indicate the age of an existing voice or an age preference when selecting a voice. Three of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods and two of the <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods use <xref:System.Speech.Synthesis.VoiceAge> to specify the age when selecting a voice. The <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> property obtains the age of an existing voice using a <xref:System.Speech.Synthesis.VoiceAge> member.  
+ 
  ]]></format>
     </remarks>
   </Docs>

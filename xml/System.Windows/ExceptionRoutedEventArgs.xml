@@ -32,13 +32,13 @@
         <value>The exception that details the specific error condition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a simple event handler for <xref:System.Windows.ExceptionRoutedEventArgs>.  
-  
- [!code-csharp[MediaElement_snip#ExceptionRoutedEventArgs](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/PlaybackExample.cs#exceptionroutedeventargs)]
- [!code-vb[MediaElement_snip#ExceptionRoutedEventArgs](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaElement_snip/VB/PlaybackExample.vb#exceptionroutedeventargs)]  
-  
+The following example creates a simple event handler for <xref:System.Windows.ExceptionRoutedEventArgs>.  
+ 
+[!code-csharp[MediaElement_snip#ExceptionRoutedEventArgs](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/PlaybackExample.cs#exceptionroutedeventargs)]
+[!code-vb[MediaElement_snip#ExceptionRoutedEventArgs](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaElement_snip/VB/PlaybackExample.vb#exceptionroutedeventargs)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The attempt to access the media file is denied.</exception>

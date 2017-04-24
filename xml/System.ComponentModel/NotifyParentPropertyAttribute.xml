@@ -28,20 +28,20 @@
     <summary>Indicates that the parent property is notified when the value of the property that this attribute is applied to is modified. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Apply <xref:System.ComponentModel.NotifyParentPropertyAttribute> to a property if its parent property should receive notification of changes to the property's values. For example, in the Properties window, the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=fullName> property has nested properties such as <xref:System.Windows.Forms.DataGridViewRow.Height%2A> and <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A>. These nested properties are marked with `NotifyParentPropertyAttribute(true)` so they notify the parent property to update its value and display when the property values change.  
+Apply <xref:System.ComponentModel.NotifyParentPropertyAttribute> to a property if its parent property should receive notification of changes to the property's values. For example, in the Properties window, the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=fullName> property has nested properties such as <xref:System.Windows.Forms.DataGridViewRow.Height%2A> and <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A>. These nested properties are marked with `NotifyParentPropertyAttribute(true)` so they notify the parent property to update its value and display when the property values change.  
+ 
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.ComponentModel.NotifyParentPropertyAttribute> and the <xref:System.ComponentModel.ExpandableObjectConverter> class to create an expandable property on a custom control.  
-  
- [!code-csharp[System.ComponentModel.ExpandableObjectConverter#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ExpandableObjectConverter/CS/DemoControl.cs#1)]
- [!code-vb[System.ComponentModel.ExpandableObjectConverter#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ExpandableObjectConverter/VB/DemoControl.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.ComponentModel.NotifyParentPropertyAttribute> and the <xref:System.ComponentModel.ExpandableObjectConverter> class to create an expandable property on a custom control.  
+ 
+[!code-csharp[System.ComponentModel.ExpandableObjectConverter#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ExpandableObjectConverter/CS/DemoControl.cs#1)]
+[!code-vb[System.ComponentModel.ExpandableObjectConverter#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ExpandableObjectConverter/VB/DemoControl.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,13 +73,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.NotifyParentPropertyAttribute" /> class, using the specified value to determine whether the parent property is notified of changes to the value of the property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.ComponentModel.NotifyParentPropertyAttribute> and the <xref:System.ComponentModel.ExpandableObjectConverter> class to create an expandable property on a custom control.  
-  
- [!code-csharp[System.ComponentModel.ExpandableObjectConverter#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ExpandableObjectConverter/CS/DemoControl.cs#3)]
- [!code-vb[System.ComponentModel.ExpandableObjectConverter#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ExpandableObjectConverter/VB/DemoControl.vb#3)]  
-  
+The following code example demonstrates how to use the <xref:System.ComponentModel.NotifyParentPropertyAttribute> and the <xref:System.ComponentModel.ExpandableObjectConverter> class to create an expandable property on a custom control.  
+ 
+[!code-csharp[System.ComponentModel.ExpandableObjectConverter#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ExpandableObjectConverter/CS/DemoControl.cs#3)]
+[!code-vb[System.ComponentModel.ExpandableObjectConverter#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ExpandableObjectConverter/VB/DemoControl.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

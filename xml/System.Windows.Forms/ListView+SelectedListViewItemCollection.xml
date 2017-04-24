@@ -23,12 +23,12 @@
     <summary>Represents the collection of selected items in a list view control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> stores the selected items in a <xref:System.Windows.Forms.ListView> control. The items stored in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> are items contained in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>. The <xref:System.Windows.Forms.ListView.ListViewItemCollection> stores all items displayed in the <xref:System.Windows.Forms.ListView>.  
-  
- The following table shows an example of how the <xref:System.Windows.Forms.ListView.ListViewItemCollection> stores the items of the <xref:System.Windows.Forms.ListView> as well as their selection states in an example <xref:System.Windows.Forms.ListView> control.  
-  
+A <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> stores the selected items in a <xref:System.Windows.Forms.ListView> control. The items stored in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> are items contained in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>. The <xref:System.Windows.Forms.ListView.ListViewItemCollection> stores all items displayed in the <xref:System.Windows.Forms.ListView>.  
+ 
+The following table shows an example of how the <xref:System.Windows.Forms.ListView.ListViewItemCollection> stores the items of the <xref:System.Windows.Forms.ListView> as well as their selection states in an example <xref:System.Windows.Forms.ListView> control.  
+ 
 |Index|Item|Selection state in the ListView|  
 |-----------|----------|-------------------------------------|  
 |0|Item1|Unselected|  
@@ -36,29 +36,29 @@
 |2|Item3|Unselected|  
 |3|Item4|Selected|  
 |4|Item5|Selected|  
-  
- Based on the <xref:System.Windows.Forms.ListView.ListViewItemCollection> example in the previous table, the following table demonstrates how the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> would appear.  
-  
+ 
+Based on the <xref:System.Windows.Forms.ListView.ListViewItemCollection> example in the previous table, the following table demonstrates how the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> would appear.  
+ 
 |Index|Selected item in the ListViewItemCollection|  
 |-----------|-------------------------------------------------|  
 |0|Item2|  
 |1|Item4|  
 |2|Item5|  
+ 
+You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> class is a member of the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>. Once you know that the item is in the collection, you can use the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
+ 
   
- You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> class is a member of the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>. Once you know that the item is in the collection, you can use the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.ListView.SelectedItems%2A>, <xref:System.Windows.Forms.ListView.SelectedIndexChanged> event, and <xref:System.Windows.Forms.ListView.HeaderStyle%2A> members and the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class. To run this example, paste the following code in a form that contains a <xref:System.Windows.Forms.ListView> object named `ListView1` and a <xref:System.Windows.Forms.TextBox> named `TextBox1`. Call the `InitializeListView` method from the form's constructor or the <xref:System.Windows.Forms.Form.Load> event handler. This example requires that the event handler is correctly associated with the <xref:System.Windows.Forms.ListView.SelectedIndexChanged> event  
-  
- [!code-cpp[System.Windows.Forms.ListView1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.ListView1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ListView1#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView1/VB/form1.vb#1)]  
+The following code example demonstrates using the <xref:System.Windows.Forms.ListView.SelectedItems%2A>, <xref:System.Windows.Forms.ListView.SelectedIndexChanged> event, and <xref:System.Windows.Forms.ListView.HeaderStyle%2A> members and the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class. To run this example, paste the following code in a form that contains a <xref:System.Windows.Forms.ListView> object named `ListView1` and a <xref:System.Windows.Forms.TextBox> named `TextBox1`. Call the `InitializeListView` method from the form's constructor or the <xref:System.Windows.Forms.Form.Load> event handler. This example requires that the event handler is correctly associated with the <xref:System.Windows.Forms.ListView.SelectedIndexChanged> event  
+ 
+[!code-cpp[System.Windows.Forms.ListView1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.ListView1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ListView1#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView1/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.ListView1#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CPP/form1.cpp#2)]
 [!code-csharp[System.Windows.Forms.ListView1#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CS/form1.cs#2)]
 [!code-vb[System.Windows.Forms.ListView1#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView1/VB/form1.vb#2)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListView> control.  
-  
+You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListView> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <summary>Removes all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to clear all selections from the <xref:System.Windows.Forms.ListView> control.  
-  
+This method enables you to clear all selections from the <xref:System.Windows.Forms.ListView> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
           <see langword="true" /> if the specified item is located in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> class is one of the selected items stored in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>. Once you know that the item is in the selected item collection, you can use the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
+The <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> class is one of the selected items stored in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>. Once you know that the item is in the selected item collection, you can use the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,12 +165,12 @@
           <see langword="true" /> to indicate the specified item is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.ContainsKey%2A> returns `false`.  
-  
+The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
+ 
+The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.ContainsKey%2A> returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to combine the selected items from multiple collections into a single array.  
-  
+You can use this method to combine the selected items from multiple collections into a single array.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,10 +227,10 @@
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables you to determine the number of selected items in the <xref:System.Windows.Forms.ListView> control. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop. Unless the <xref:System.Windows.Forms.ListView.MultiSelect%2A> property of the <xref:System.Windows.Forms.ListView> is set to `true`, this property always returns a value of zero (0) or one (1) depending on whether you have a selected item.  
-  
+This property enables you to determine the number of selected items in the <xref:System.Windows.Forms.ListView> control. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop. Unless the <xref:System.Windows.Forms.ListView.MultiSelect%2A> property of the <xref:System.Windows.Forms.ListView> is set to `true`, this property always returns a value of zero (0) or one (1) depending on whether you have a selected item.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,10 +275,10 @@
         <returns>The zero-based index of the item in the collection. If the item is not located in the collection, the return value is negative one (-1).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once you know that an item is in the selected item collection (using the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Contains%2A> method), you can use the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
+Once you know that an item is in the selected item collection (using the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Contains%2A> method), you can use the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,14 +304,14 @@
         <returns>The zero-based index of the first item with the specified key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOfKey%2A> returns -1.  
-  
- If <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
+The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
+ 
+The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOfKey%2A> returns -1.  
+ 
+If <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,10 +334,10 @@
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is always `true` for this collection. The items in the collection can only be modified by the <xref:System.Windows.Forms.ListView> control.  
-  
+This property is always `true` for this collection. The items in the collection can only be modified by the <xref:System.Windows.Forms.ListView> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,10 +363,10 @@
         <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item located at the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This indexer enables you to get a specific item from the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>. The item stored in the collection is an item in the <xref:System.Windows.Forms.ListView.ListViewItemCollection> of the <xref:System.Windows.Forms.ListView> that represents a selected item in the <xref:System.Windows.Forms.ListView>.  
-  
+This indexer enables you to get a specific item from the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>. The item stored in the collection is an item in the <xref:System.Windows.Forms.ListView.ListViewItemCollection> of the <xref:System.Windows.Forms.ListView> that represents a selected item in the <xref:System.Windows.Forms.ListView>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />.</exception>
@@ -393,12 +393,12 @@
         <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> with the specified key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Item%2A> returns `null`.  
-  
+The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
+ 
+The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Item%2A> returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,10 +461,10 @@
         <returns>The location of the added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To add a <xref:System.Windows.Forms.ListViewItem> to the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
-  
+You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To add a <xref:System.Windows.Forms.ListViewItem> to the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -537,10 +537,10 @@
         <summary>Inserts an item into the collection at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To add a <xref:System.Windows.Forms.ListViewItem> to the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
-  
+You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To add a <xref:System.Windows.Forms.ListViewItem> to the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -607,10 +607,10 @@
         <summary>Removes the first occurrence of a specified item from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
-  
+You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -636,10 +636,10 @@
         <summary>Removes an item from the collection at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
-  
+You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>

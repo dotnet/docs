@@ -19,12 +19,12 @@
     <summary>Handles the XML elements used to configure the known types used for serialization by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used to handle the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) within the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element, specifically, to allow the addition of types to the collection of known types.  
-  
- For more information about data contract known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
-  
+This class is used to handle the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) within the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element, specifically, to allow the addition of types to the collection of known types.  
+ 
+For more information about data contract known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

@@ -18,12 +18,12 @@
     <summary>Represents the structure, or schema, of an object type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TypeSchema> class provides information about a particular class, given an instance of that class. For example, given a <xref:System.Data.DataSet> object, a <xref:System.Web.UI.WebControls.GridView> object, or an instance of a custom class that you create, the methods and properties provide information about the class from which the object derives. It does not provide information about the specific instance, but about the class.  
-  
- The <xref:System.Web.UI.Design.TypeSchema> class is used by custom control designers to assist in preparing sample data for previewing custom controls.  
-  
+The <xref:System.Web.UI.Design.TypeSchema> class provides information about a particular class, given an instance of that class. For example, given a <xref:System.Data.DataSet> object, a <xref:System.Web.UI.WebControls.GridView> object, or an instance of a custom class that you create, the methods and properties provide information about the class from which the object derives. It does not provide information about the specific instance, but about the class.  
+ 
+The <xref:System.Web.UI.Design.TypeSchema> class is used by custom control designers to assist in preparing sample data for previewing custom controls.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,19 +66,19 @@
         <returns>An array of instances of <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" />, or of instances of a class that implements the <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> interface.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Web.UI.Design.TypeSchema.GetViews%2A> method always returns an array of <xref:System.Web.UI.Design.IDataSourceViewSchema> objects that implement the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface, the exact return value is dependent on the object that is provided when creating the instance of the <xref:System.Web.UI.Design.TypeSchema> class.  
-  
- The following table provides examples of return values.  
-  
+Although the <xref:System.Web.UI.Design.TypeSchema.GetViews%2A> method always returns an array of <xref:System.Web.UI.Design.IDataSourceViewSchema> objects that implement the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface, the exact return value is dependent on the object that is provided when creating the instance of the <xref:System.Web.UI.Design.TypeSchema> class.  
+ 
+The following table provides examples of return values.  
+ 
 |Underlying Type|Return Value|  
 |---------------------|------------------|  
 |A <xref:System.Data.DataSet>|An array of type <xref:System.Web.UI.Design.DataSetViewSchema>, one for each <xref:System.Data.DataTable>.|  
 |A <xref:System.Data.DataTable>|A one-item array containing a <xref:System.Web.UI.Design.DataSetViewSchema>.|  
 |An <xref:System.Collections.IEnumerable> type|A one-item array containing an <xref:System.Web.UI.Design.IDataSourceViewSchema>.|  
 |Any other type|A one-item array containing an <xref:System.Web.UI.Design.IDataSourceViewSchema>.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,25 +19,25 @@
     <summary>Provides the base class for relating one member to another.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Designers serialize themselves to code through an engine that searches through the live property values of objects and generates those values as code. So, for example, the text of a button is generated in the following format.  
-  
+Designers serialize themselves to code through an engine that searches through the live property values of objects and generates those values as code. So, for example, the text of a button is generated in the following format.  
+ 
 ```csharp  
 this.okButton.Text = "OK";  
 ```  
-  
- One of the limitations of this scheme is that it is difficult to retrieve a property from another location. For example, it is very difficult to emit code in the following format, because the only thing the code generator can rely on is the value in the property.  
-  
+ 
+One of the limitations of this scheme is that it is difficult to retrieve a property from another location. For example, it is very difficult to emit code in the following format, because the only thing the code generator can rely on is the value in the property.  
+ 
 ```csharp  
 this.titleLabel.Text = this.Text;  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The <xref:System.ComponentModel.Design.Serialization.MemberRelationshipService> simplifies retrieval of a property value from another location. A designer can access this service to dictate that one member is assigned the value of another. The code generator searches for such relationships when generating code, and if a relationship between two members is found the code generator, it emits code for the relationship rather than searching for the property value. Using the previous text assignment as an example, the following code example shows design time code used to establish a relationship.  
-  
+The <xref:System.ComponentModel.Design.Serialization.MemberRelationshipService> simplifies retrieval of a property value from another location. A designer can access this service to dictate that one member is assigned the value of another. The code generator searches for such relationships when generating code, and if a relationship between two members is found the code generator, it emits code for the relationship rather than searching for the property value. Using the previous text assignment as an example, the following code example shows design time code used to establish a relationship.  
+ 
 ```csharp  
 object titleLabel, form;  
 PropertyDescriptor titleLabelText = TypeDescriptor.GetProperties(titleLabel)["Text"];  
@@ -45,7 +45,7 @@ PropertyDescriptor formText = TypeDescriptor.GetProperties(form)["Text"];
 MemberRelationshipService ms = GetService(typeof(MemberRelationshipService);  
 ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);  
 ```  
-  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -103,10 +103,10 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
         <returns>A relationship to <paramref name="source" />, or <see cref="F:System.ComponentModel.Design.Serialization.MemberRelationship.Empty" /> if no relationship exists.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation stores relationships in a dictionary using weak references, so the relationship table does not keep objects alive.  
-  
+The default implementation stores relationships in a dictionary using weak references, so the relationship table does not keep objects alive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
         <value>The current relationship associated with <paramref name="source" />, or <see cref="F:System.ComponentModel.Design.Serialization.MemberRelationship.Empty" /> if there is no relationship.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.ComponentModel.Design.Serialization.MemberRelationship> is assigned to the source, any existing relationship is removed.  
-  
+If <xref:System.ComponentModel.Design.Serialization.MemberRelationship> is assigned to the source, any existing relationship is removed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -209,10 +209,10 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
         <summary>Creates a relationship between the source object and target relationship.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.MemberRelationshipService.SetRelationship%2A> method clears any existing relationship if the relationship parameter is <xref:System.ComponentModel.Design.Serialization.MemberRelationship>. The default implementation stores relationships in a dictionary using weak references so the relationship table does not keep objects alive.  
-  
+The <xref:System.ComponentModel.Design.Serialization.MemberRelationshipService.SetRelationship%2A> method clears any existing relationship if the relationship parameter is <xref:System.ComponentModel.Design.Serialization.MemberRelationship>. The default implementation stores relationships in a dictionary using weak references so the relationship table does not keep objects alive.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The relationship is not supported by the service.</exception>

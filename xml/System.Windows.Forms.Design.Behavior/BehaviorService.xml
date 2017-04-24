@@ -18,23 +18,23 @@
     <summary>Manages user interface in the designer. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> is created, it adds a transparent window over the designer frame. The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> can then use this window to render user interface elements, called <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, as well as catch all mouse messages. In this way, the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> can control designer behavior.  
+When the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> is created, it adds a transparent window over the designer frame. The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> can then use this window to render user interface elements, called <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, as well as catch all mouse messages. In this way, the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> can control designer behavior.  
+ 
+The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class supports a behavior stack, onto which <xref:System.Windows.Forms.Design.Behavior.Behavior> objects can be pushed. When a message is intercepted through the transparent window, the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> can send the message to the <xref:System.Windows.Forms.Design.Behavior.Behavior> at the top of the stack. This enables different user interface modes depending on the currently pushed <xref:System.Windows.Forms.Design.Behavior.Behavior>. The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> is used to render all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, such as selection borders, sizing handles, and smart tags. The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> also controls many design-time behaviors, such as using snaplines, dragging, and selecting.  
+ 
+For more information, see [Behavior Service Overview](http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
+ 
   
- The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class supports a behavior stack, onto which <xref:System.Windows.Forms.Design.Behavior.Behavior> objects can be pushed. When a message is intercepted through the transparent window, the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> can send the message to the <xref:System.Windows.Forms.Design.Behavior.Behavior> at the top of the stack. This enables different user interface modes depending on the currently pushed <xref:System.Windows.Forms.Design.Behavior.Behavior>. The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> is used to render all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, such as selection borders, sizing handles, and smart tags. The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> also controls many design-time behaviors, such as using snaplines, dragging, and selecting.  
-  
- For more information, see [Behavior Service Overview](http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create your own <xref:System.Windows.Forms.Design.Behavior.Behavior> based class that responds to user clicks.  
-  
- [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#1)]  
-  
+The following code example demonstrates how to create your own <xref:System.Windows.Forms.Design.Behavior.Behavior> based class that responds to user clicks.  
+ 
+[!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#1)]
+[!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,19 +56,19 @@
         <value>A collection of adorner.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners%2A> property provides access to the <xref:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection> managed by the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners%2A> property provides access to the <xref:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection> managed by the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to add <xref:System.Windows.Forms.Design.Behavior.Adorner> objects to and remove them from a <xref:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
-  
- [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#2)]  
-  
+The following code example demonstrates how to add <xref:System.Windows.Forms.Design.Behavior.Adorner> objects to and remove them from a <xref:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+ 
+[!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,12 +148,12 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> starts a drag-and-drop operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> raises the <xref:System.Windows.Forms.Design.Behavior.BehaviorService.BeginDrag> event immediately before it starts a drag-and-drop operation.  
-  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> raises the <xref:System.Windows.Forms.Design.Behavior.BehaviorService.BeginDrag> event immediately before it starts a drag-and-drop operation.  
+ 
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <returns>The bounding <see cref="T:System.Drawing.Rectangle" /> of a <see cref="T:System.Windows.Forms.Control" /> translated to the adorner window coordinates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The adorner window is a transparent window that resides on top of the designer's frame. This window is used by the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> to intercept all messages. It also serves as a unified canvas on which to paint a <xref:System.Windows.Forms.Design.Behavior.Glyph>.  
-  
+The adorner window is a transparent window that resides on top of the designer's frame. This window is used by the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> to intercept all messages. It also serves as a unified canvas on which to paint a <xref:System.Windows.Forms.Design.Behavior.Glyph>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,14 +208,14 @@
         <returns>A <see cref="T:System.Drawing.Point" /> value indicating the location of <paramref name="c" /> in adorner window coordinates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
-  
- [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#8)]
- [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#8)]
- [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#8)]  
-  
+The following code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+ 
+[!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#8)]
+[!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#8)]
+[!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,13 +255,13 @@
         <summary>Releases all resources used by the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Dispose%2A> method leaves the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> in an unusable state. After calling <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Dispose%2A> method leaves the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> in an unusable state. After calling <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Dispose%2A> before you release your last reference to the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,12 +282,12 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> completes a drag operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> raises the <xref:System.Windows.Forms.Design.Behavior.BehaviorService.EndDrag> event immediately after the drag operation is complete.  
-  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> raises the <xref:System.Windows.Forms.Design.Behavior.BehaviorService.EndDrag> event immediately after the drag operation is complete.  
+ 
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,10 +331,10 @@
         <summary>Invalidates the adorner window of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling the <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate%2A> method forces a refresh of all <xref:System.Windows.Forms.Design.Behavior.Adorner> objects and, in turn, all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects.  
-  
+Calling the <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate%2A> method forces a refresh of all <xref:System.Windows.Forms.Design.Behavior.Adorner> objects and, in turn, all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <summary>Invalidates, within the adorner window, the specified area of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate%2A> method will force a refresh of all <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners%2A> and, in turn, all <xref:System.Windows.Forms.Design.Behavior.Adorner.Glyphs%2A>.  
-  
+The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate%2A> method will force a refresh of all <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners%2A> and, in turn, all <xref:System.Windows.Forms.Design.Behavior.Adorner.Glyphs%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,10 +387,10 @@
         <summary>Invalidates, within the adorner window, the specified area of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate%2A> method will force a refresh of all <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners%2A> and, in turn, all <xref:System.Windows.Forms.Design.Behavior.Adorner.Glyphs%2A>.  
-  
+The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate%2A> method will force a refresh of all <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners%2A> and, in turn, all <xref:System.Windows.Forms.Design.Behavior.Adorner.Glyphs%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,10 +440,10 @@
         <returns>The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> that was removed from the stack.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the current <xref:System.Windows.Forms.Design.Behavior.Behavior> from the behavior stack internally maintained by the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
-  
+Removes the current <xref:System.Windows.Forms.Design.Behavior.Behavior> from the behavior stack internally maintained by the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> stack is empty.</exception>
@@ -469,10 +469,10 @@
         <summary>Pushes a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> onto the behavior stack.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.PushBehavior%2A> method is often performed by means of a hit-tested <xref:System.Windows.Forms.Design.Behavior.Glyph>.  
-  
+The <xref:System.Windows.Forms.Design.Behavior.BehaviorService.PushBehavior%2A> method is often performed by means of a hit-tested <xref:System.Windows.Forms.Design.Behavior.Glyph>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -499,10 +499,10 @@
         <summary>Pushes a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> onto the behavior stack and assigns mouse capture to the behavior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Pushing a capture behavior is often done through a hit-tested <xref:System.Windows.Forms.Design.Behavior.Glyph>. If a behavior calls the <xref:System.Windows.Forms.Design.Behavior.BehaviorService.PushCaptureBehavior%2A> method and mouse capture is lost, the behavior's <xref:System.Windows.Forms.Design.Behavior.Behavior.OnLoseCapture%2A> method is called.  
-  
+Pushing a capture behavior is often done through a hit-tested <xref:System.Windows.Forms.Design.Behavior.Glyph>. If a behavior calls the <xref:System.Windows.Forms.Design.Behavior.BehaviorService.PushCaptureBehavior%2A> method and mouse capture is lost, the behavior's <xref:System.Windows.Forms.Design.Behavior.Behavior.OnLoseCapture%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -547,10 +547,10 @@
         <summary>Occurs when the current selection should be refreshed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>

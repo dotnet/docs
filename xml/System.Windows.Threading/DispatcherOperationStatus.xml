@@ -13,12 +13,12 @@
     <summary>Describes the possible values for the status of a <see cref="T:System.Windows.Threading.DispatcherOperation" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Threading.DispatcherOperation> is returned after a call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>.  The <xref:System.Windows.Threading.DispatcherOperation> can be used to interact with the delegate on the <xref:System.Windows.Threading.Dispatcher> queue, such as changing the priority of the operation or aborting the operation.  
-  
- The stages of a <xref:System.Windows.Threading.DispatcherOperation> are Pending, Executing, and Completed.  At any point before the operation completes, the status can be set to Aborted.  
-  
+A <xref:System.Windows.Threading.DispatcherOperation> is returned after a call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>.  The <xref:System.Windows.Threading.DispatcherOperation> can be used to interact with the delegate on the <xref:System.Windows.Threading.Dispatcher> queue, such as changing the priority of the operation or aborting the operation.  
+ 
+The stages of a <xref:System.Windows.Threading.DispatcherOperation> are Pending, Executing, and Completed.  At any point before the operation completes, the status can be set to Aborted.  
+ 
 <a name="xamlTextUsage_DispatcherOperationStatus"></a>   
 ## XAML Text Usage  
  ]]></format>

@@ -18,10 +18,10 @@
     <summary>Provides name/value-pair configuration information from a configuration section.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class implements the `IConfigSectionHandler` interface. The <xref:System.Configuration.NameValueSectionHandler> defines rules for manipulating XML configuration sections.  
-  
+This class implements the `IConfigSectionHandler` interface. The <xref:System.Configuration.NameValueSectionHandler> defines rules for manipulating XML configuration sections.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <returns>A configuration object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `parent` object parameter acts as the configuration settings in the corresponding parent configuration section. The `context` object parameter is the virtual path for which the configuration section handler computes configuration values. Normally this parameter is reserved and is `null`. The `section` parameter is the <xref:System.Xml.XmlNode> object that contains the configuration information to be handled. The `section` parameter provides direct access to the XML contents of the configuration section.  
-  
+The `parent` object parameter acts as the configuration settings in the corresponding parent configuration section. The `context` object parameter is the virtual path for which the configuration section handler computes configuration values. Normally this parameter is reserved and is `null`. The `section` parameter is the <xref:System.Xml.XmlNode> object that contains the configuration information to be handled. The `section` parameter provides direct access to the XML contents of the configuration section.  
+ 
  ]]></format>
         </remarks>
       </Docs>

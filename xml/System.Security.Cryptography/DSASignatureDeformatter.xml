@@ -24,12 +24,12 @@
     <summary>Verifies a Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) PKCS#1 v1.5 signature.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CPP/sample.cpp#1)]
- [!code-csharp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CS/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/VB/sample.vb#1)]  
-  
+[!code-cpp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CPP/sample.cpp#1)]
+[!code-csharp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CS/sample.cs#1)]
+[!code-vb[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/VB/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,12 +53,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSASignatureDeformatter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CPP/sample.cpp#1)]
- [!code-csharp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CS/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/VB/sample.vb#1)]  
-  
+[!code-cpp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CPP/sample.cpp#1)]
+[!code-csharp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CS/sample.cs#1)]
+[!code-vb[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,12 +113,12 @@
         <summary>Specifies the hash algorithm for the Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) signature deformatter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CPP/sample.cpp#1)]
- [!code-csharp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CS/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/VB/sample.vb#1)]  
-  
+[!code-cpp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CPP/sample.cpp#1)]
+[!code-csharp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CS/sample.cs#1)]
+[!code-vb[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The <paramref name="strName" /> parameter does not map to the <see cref="T:System.Security.Cryptography.SHA1" /> hash algorithm.</exception>
@@ -184,12 +184,12 @@
           <see langword="true" /> if the signature is valid for the data; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CPP/sample.cpp#1)]
- [!code-csharp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CS/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/VB/sample.vb#1)]  
-  
+[!code-cpp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CPP/sample.cpp#1)]
+[!code-csharp[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/CS/sample.cs#1)]
+[!code-vb[System.Security.Cryptography.DSASignatureDeformatter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.DSASignatureDeformatter/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

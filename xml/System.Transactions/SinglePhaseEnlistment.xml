@@ -19,10 +19,10 @@
     <summary>Provides a set of callbacks that facilitate communication between a participant enlisted for Single Phase Commit and the transaction manager when the <see cref="M:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit(System.Transactions.SinglePhaseEnlistment)" /> notification is received.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a resource manager's implementation of <xref:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit%2A> is called, and an instance of this type is passsed in, the participant then notifies the transaction manager via the <xref:System.Transactions.SinglePhaseEnlistment.Committed%2A> method or the <xref:System.Transactions.SinglePhaseEnlistment.Aborted%2A> method to indicate whether the transaction should be committed or rolled back.  
-  
+When a resource manager's implementation of <xref:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit%2A> is called, and an instance of this type is passsed in, the participant then notifies the transaction manager via the <xref:System.Transactions.SinglePhaseEnlistment.Committed%2A> method or the <xref:System.Transactions.SinglePhaseEnlistment.Aborted%2A> method to indicate whether the transaction should be committed or rolled back.  
+ 
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
@@ -50,10 +50,10 @@
         <summary>Represents a callback that is used to indicate to the transaction manager that the transaction should be rolled back.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A transaction participant implementing the <xref:System.Transactions.ISinglePhaseNotification> interface uses this method to notify the transaction manager that it cannot commit, and that the transaction should be rolled back.  
-  
+A transaction participant implementing the <xref:System.Transactions.ISinglePhaseNotification> interface uses this method to notify the transaction manager that it cannot commit, and that the transaction should be rolled back.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,10 +106,10 @@
         <summary>Represents a callback that is used to indicate to the transaction manager that the SinglePhaseCommit was successful.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A transaction participant implementing the <xref:System.Transactions.ISinglePhaseNotification> interface uses this method to notify the transaction manager that the transaction should be committed.  
-  
+A transaction participant implementing the <xref:System.Transactions.ISinglePhaseNotification> interface uses this method to notify the transaction manager that the transaction should be committed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <summary>Represents a callback that is used to indicate to the transaction manager that the status of the transaction is in doubt.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A transaction participant implementing the <xref:System.Transactions.ISinglePhaseNotification> interface uses this method to notify the transaction manager that the transaction is in doubt. A transaction is in doubt when one or more of the enlisted resource managers cannot be contacted.  
-  
+A transaction participant implementing the <xref:System.Transactions.ISinglePhaseNotification> interface uses this method to notify the transaction manager that the transaction is in doubt. A transaction is in doubt when one or more of the enlisted resource managers cannot be contacted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <summary>Represents a callback that is used to indicate to the transaction manager that the transaction should be rolled back.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A transaction participant uses this method to notify the transaction manager that the transaction should be rolled back.  
-  
+A transaction participant uses this method to notify the transaction manager that the transaction should be rolled back.  
+ 
  ]]></format>
         </remarks>
       </Docs>

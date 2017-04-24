@@ -25,22 +25,22 @@
     <summary>Table of atomized string objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Several classes, such as <xref:System.Xml.XmlDocument> and <xref:System.Xml.XmlReader>, use the `XmlNameTable` class internally to store attribute and element names. When an element or attribute name occurs multiple times in an XML document, it is stored only once in the `XmlNameTable`.  
+Several classes, such as <xref:System.Xml.XmlDocument> and <xref:System.Xml.XmlReader>, use the `XmlNameTable` class internally to store attribute and element names. When an element or attribute name occurs multiple times in an XML document, it is stored only once in the `XmlNameTable`.  
+ 
+The names are stored as common language runtime (CLR) object types. This enables you to do object comparisons on these strings rather than a more expensive string comparison. These string objects are referred to as  `atomized``strings`.  
+ 
+`XmlNameTable` is implemented in the <xref:System.Xml.NameTable> class.  
+ 
   
- The names are stored as common language runtime (CLR) object types. This enables you to do object comparisons on these strings rather than a more expensive string comparison. These string objects are referred to as  `atomized``strings`.  
-  
- `XmlNameTable` is implemented in the <xref:System.Xml.NameTable> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example compares two element names.  
-  
- [!code-csharp[NameTable_v2#1](~/samples/snippets/csharp/VS_Snippets_Data/NameTable_v2/CS/nametable.cs#1)]
- [!code-vb[NameTable_v2#1](~/samples/snippets/visualbasic/VS_Snippets_Data/NameTable_v2/VB/nametable.vb#1)]  
-  
+The following example compares two element names.  
+ 
+[!code-csharp[NameTable_v2#1](~/samples/snippets/csharp/VS_Snippets_Data/NameTable_v2/CS/nametable.cs#1)]
+[!code-vb[NameTable_v2#1](~/samples/snippets/visualbasic/VS_Snippets_Data/NameTable_v2/VB/nametable.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -103,10 +103,10 @@
         <returns>The new atomized string or the existing one if it already exists.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
-  
+For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -149,10 +149,10 @@
         <returns>The new atomized string or the existing one if it already exists. If length is zero, String.Empty is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
-  
+For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">0 &gt; <paramref name="offset" />  
@@ -202,10 +202,10 @@
         <returns>The atomized string or <see langword="null" /> if the string has not already been atomized.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
-  
+For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -248,10 +248,10 @@
         <returns>The atomized string or <see langword="null" /> if the string has not already been atomized. If <paramref name="length" /> is zero, String.Empty is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
-  
+For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">0 &gt; <paramref name="offset" />  
@@ -280,10 +280,10 @@
         <summary>When overridden in a derived class, atomizes the specified string and adds it to the <see langword="XmlNameTable" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
-  
+For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,10 +299,10 @@
         <summary>When overridden in a derived class, gets the atomized string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
-  
+For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterManager" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The performance counter performance.dll calls this constructor as part of its performance data collection routine.  
-  
+The performance counter performance.dll calls this constructor as part of its performance data collection routine.  
+ 
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>

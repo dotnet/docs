@@ -19,12 +19,12 @@
     <summary>Allows security actions for <see cref="T:System.Security.Permissions.DataProtectionPermission" /> to be applied to code using declarative security. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> value that is used.  
-  
- The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. <xref:System.Security.Permissions.DataProtectionPermissionAttribute> is used only for declarative security. For imperative security, use the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
+The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> value that is used.  
+ 
+The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. <xref:System.Security.Permissions.DataProtectionPermissionAttribute> is used only for declarative security. For imperative security, use the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,12 +65,12 @@
         <returns>A <see cref="T:System.Security.Permissions.DataProtectionPermission" /> that corresponds to the attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should only be called by the security system, never by application code.  
-  
- At compile time, attributes convert security declarations to a serialized form in metadata. Declarative security data in metadata is created from the permission that this method returns.  
-  
+This method should only be called by the security system, never by application code.  
+ 
+At compile time, attributes convert security declarations to a serialized form in metadata. Declarative security data in metadata is created from the permission that this method returns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
           <see langword="true" /> if data can be encrypted; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=fullName> method is called.  
-  
+If the value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=fullName> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
           <see langword="true" /> if memory can be encrypted; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A?displayProperty=fullName> method is called.  
-  
+If the value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A?displayProperty=fullName> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
           <see langword="true" /> if data can be unencrypted; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=fullName> method is called.  
-  
+If this value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=fullName> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
           <see langword="true" /> if memory can be unencrypted; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A?displayProperty=fullName> method is called.  
-  
+If this value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A?displayProperty=fullName> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>

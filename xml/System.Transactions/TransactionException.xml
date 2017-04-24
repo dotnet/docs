@@ -19,10 +19,10 @@
     <summary>The exception that is thrown when you attempt to do work on a transaction that cannot accept new work.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Transactions.TransactionException> is a recoverable error, and all the exceptions thrown by the <xref:System.Transactions> infrastructure derive from this exception.  
-  
+<xref:System.Transactions.TransactionException> is a recoverable error, and all the exceptions thrown by the <xref:System.Transactions> infrastructure derive from this exception.  
+ 
  ]]></format>
     </remarks>
   </Docs>

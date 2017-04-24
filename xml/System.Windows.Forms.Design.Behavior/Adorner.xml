@@ -14,21 +14,21 @@
     <summary>Manages a collection of user-interface related <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.Windows.Forms.Design.Behavior.Adorner> can be enabled and disabled. Only enabled <xref:System.Windows.Forms.Design.Behavior.Adorner> objects will receive hit test and paint messages from the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. An <xref:System.Windows.Forms.Design.Behavior.Adorner> can be viewed as a proxy between user-interface related elements, which consist of all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, and the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+Each <xref:System.Windows.Forms.Design.Behavior.Adorner> can be enabled and disabled. Only enabled <xref:System.Windows.Forms.Design.Behavior.Adorner> objects will receive hit test and paint messages from the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. An <xref:System.Windows.Forms.Design.Behavior.Adorner> can be viewed as a proxy between user-interface related elements, which consist of all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, and the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+ 
+For more information, see [Behavior Service Overview](http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
+ 
   
- For more information, see [Behavior Service Overview](http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how the <xref:System.Windows.Forms.Design.Behavior.Adorner> class interacts with the <xref:System.Windows.Forms.Design.Behavior.Glyph> and <xref:System.Windows.Forms.Design.Behavior.BehaviorService> classes. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
-  
- [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#3)]
- [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#3)]
- [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#3)]  
-  
+The following code example demonstrates how the <xref:System.Windows.Forms.Design.Behavior.Adorner> class interacts with the <xref:System.Windows.Forms.Design.Behavior.Glyph> and <xref:System.Windows.Forms.Design.Behavior.BehaviorService> classes. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+ 
+[!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#3)]
+[!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#3)]
+[!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,19 +47,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.Behavior.Adorner.%23ctor%2A> constructor creates a new <xref:System.Windows.Forms.Design.Behavior.GlyphCollection> and is enabled, by default.  
+The <xref:System.Windows.Forms.Design.Behavior.Adorner.%23ctor%2A> constructor creates a new <xref:System.Windows.Forms.Design.Behavior.GlyphCollection> and is enabled, by default.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a new instance of the <xref:System.Windows.Forms.Design.Behavior.Adorner> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
-  
- [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#3)]
- [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#3)]
- [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#3)]  
-  
+The following code example demonstrates how to initialize a new instance of the <xref:System.Windows.Forms.Design.Behavior.Adorner> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+ 
+[!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#3)]
+[!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#3)]
+[!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <value>The <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an <xref:System.Windows.Forms.Design.Behavior.Adorner> is added to the <xref:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection> of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>, the collection sets this property so that the <xref:System.Windows.Forms.Design.Behavior.Adorner> can call back to the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
-  
+When an <xref:System.Windows.Forms.Design.Behavior.Adorner> is added to the <xref:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection> of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>, the collection sets this property so that the <xref:System.Windows.Forms.Design.Behavior.Adorner> can call back to the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,18 +107,18 @@
           <see langword="true" />, if the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Forms.Design.Behavior.Adorner.Enabled%2A> property is `true`, the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class will send `HitTest` and `Paint` messages to the <xref:System.Windows.Forms.Design.Behavior.Adorner>.  
+If the <xref:System.Windows.Forms.Design.Behavior.Adorner.Enabled%2A> property is `true`, the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class will send `HitTest` and `Paint` messages to the <xref:System.Windows.Forms.Design.Behavior.Adorner>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and disable an <xref:System.Windows.Forms.Design.Behavior.Adorner>. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
-  
- [!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#12)]
- [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#12)]  
-  
+The following code example demonstrates how to enable and disable an <xref:System.Windows.Forms.Design.Behavior.Adorner>. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
+ 
+[!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#12)]
+[!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,14 +140,14 @@
         <value>A collection of <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to access the <xref:System.Windows.Forms.Design.Behavior.Glyph> collection. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
-  
- [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#4)]
- [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#4)]
- [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#4)]  
-  
+The following example demonstrates how to access the <xref:System.Windows.Forms.Design.Behavior.Glyph> collection. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+ 
+[!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#4)]
+[!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#4)]
+[!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,13 +169,13 @@
         <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to force an <xref:System.Windows.Forms.Design.Behavior.Adorner> window to repaint. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
-  
- [!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#13)]
- [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#13)]  
-  
+The following code example demonstrates how to force an <xref:System.Windows.Forms.Design.Behavior.Adorner> window to repaint. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
+ 
+[!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#13)]
+[!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -231,13 +231,13 @@
         <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to force an <xref:System.Windows.Forms.Design.Behavior.Adorner> window to repaint. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
-  
- [!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#13)]
- [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#13)]  
-  
+The following example demonstrates how to force an <xref:System.Windows.Forms.Design.Behavior.Adorner> window to repaint. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
+ 
+[!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#13)]
+[!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

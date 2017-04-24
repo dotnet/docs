@@ -14,10 +14,10 @@
     <summary>Represents the Attribute element specified in [Saml2Core, 2.7.3.1].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -111,10 +111,10 @@
         <value>A string that contains the xsi:type. The default is <see cref="F:System.Security.Claims.ClaimValueTypes.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type attribute of the AttributeValue element. This attribute is required.  
-  
+The type attribute of the AttributeValue element. This attribute is required.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is <see langword="null" /> or empty occurs.  
@@ -141,10 +141,10 @@
         <value>A string that contains the friendly name for the attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The FriendlyName attribute.  
-  
+The FriendlyName attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <value>A string that contains the attribute name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Name attribute. This attribute is required.  
-  
+The Name attribute. This attribute is required.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set a value that is <see langword="null" /> or an empty string occurs.</exception>
@@ -192,10 +192,10 @@
         <value>A <see cref="T:System.Uri" /> that represents the classification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The NameFormat attribute. The property can be set to one of the values.  
-  
+The NameFormat attribute. The property can be set to one of the values.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not <see langword="null" /> and is not an absolute URI occurs.</exception>
@@ -237,10 +237,10 @@
         <value>A collection of strings that contains the attribute values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection contains the AttributeValue elements contained in the Attribute element.  
-  
+The collection contains the AttributeValue elements contained in the Attribute element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

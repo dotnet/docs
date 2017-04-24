@@ -14,12 +14,12 @@
     <summary>Makes a request to an entire <see cref="T:System.IO.Packaging.PackagePart" /> or to a <see cref="T:System.IO.Packaging.PackagePart" /> in a package, identified by a pack URI.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.Packaging> [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] use a defined pack uri syntax to refer to parts that are contained in a package.  
-  
- For more information about the abstract class that this class derives from and the operation of requests and responses, see <xref:System.Net.WebRequest>.  
-  
+<xref:System.IO.Packaging> [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] use a defined pack uri syntax to refer to parts that are contained in a package.  
+ 
+For more information about the abstract class that this class derives from and the operation of requests and responses, see <xref:System.Net.WebRequest>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <value>The <see cref="T:System.Net.Cache.RequestCachePolicy" /> to use with pack URI web request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Packaging.PackWebRequest.CachePolicy%2A> property is distinct from the <xref:System.Net.WebRequest.CachePolicy%2A> of the inner <xref:System.Net.WebRequest> returned by the <xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A> method.  
-  
+The <xref:System.IO.Packaging.PackWebRequest.CachePolicy%2A> property is distinct from the <xref:System.Net.WebRequest.CachePolicy%2A> of the inner <xref:System.Net.WebRequest> returned by the <xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The specified <see cref="T:System.Net.Cache.RequestCachePolicy" /> to set is not valid.</exception>
@@ -67,14 +67,14 @@
         <value>The connection group name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Packaging.PackWebRequest.ConnectionGroupName%2A> property enables the request to be associated with a connection group.  A connection group is useful when application makes requests to the same server for different users.  
-  
- The <xref:System.IO.Packaging.PackWebRequest.ConnectionGroupName%2A> property is an empty string if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  
-  
- The <xref:System.IO.Packaging.PackWebRequest.ConnectionGroupName%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
-  
+The <xref:System.IO.Packaging.PackWebRequest.ConnectionGroupName%2A> property enables the request to be associated with a connection group.  A connection group is useful when application makes requests to the same server for different users.  
+ 
+The <xref:System.IO.Packaging.PackWebRequest.ConnectionGroupName%2A> property is an empty string if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  
+ 
+The <xref:System.IO.Packaging.PackWebRequest.ConnectionGroupName%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,14 +96,14 @@
         <value>The content length, in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the pack URI protocol does not process information in the request other than the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].  For most traditional purposes (such as estimating the size of POST information), there is no need for this property.  
-  
- <xref:System.IO.Packaging.PackWebRequest.ContentLength%2A> returns 0 if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  
-  
- The <xref:System.IO.Packaging.PackWebRequest.ContentLength%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
-  
+Note that the pack URI protocol does not process information in the request other than the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].  For most traditional purposes (such as estimating the size of POST information), there is no need for this property.  
+ 
+<xref:System.IO.Packaging.PackWebRequest.ContentLength%2A> returns 0 if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  
+ 
+The <xref:System.IO.Packaging.PackWebRequest.ContentLength%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Set is not supported, <see cref="T:System.IO.Packaging.PackWebRequest" /> is read-only.</exception>
@@ -126,14 +126,14 @@
         <value>The contents of the header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the pack URI protocol does not process information in the request other than the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].  For most purposes (such as determining the type of POST information), there is no use for this property.  
-  
- <xref:System.IO.Packaging.PackWebRequest.ContentType%2A> returns an empty string if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  
-  
- The <xref:System.IO.Packaging.PackWebRequest.ContentType%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
-  
+Note that the pack URI protocol does not process information in the request other than the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].  For most purposes (such as determining the type of POST information), there is no use for this property.  
+ 
+<xref:System.IO.Packaging.PackWebRequest.ContentType%2A> returns an empty string if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  
+ 
+The <xref:System.IO.Packaging.PackWebRequest.ContentType%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,12 +155,12 @@
         <value>The authentication credentials to use with the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Requests to the package cache use their own cached credentials.  
-  
- The <xref:System.IO.Packaging.PackWebRequest.Credentials%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
-  
+Requests to the package cache use their own cached credentials.  
+ 
+The <xref:System.IO.Packaging.PackWebRequest.Credentials%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <returns>A <see cref="T:System.Net.WebRequest" /> created from the inner-URI if the request resolves to a valid transport protocol such http or ftp; or a <see cref="T:System.Net.WebRequest" /> created with a null-URI if the request resolves from the <see cref="T:System.IO.Packaging.PackageStore" /> cache.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A> is provided for advanced scenarios only and is not needed for normal operation.  
-  
+The <xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A> is provided for advanced scenarios only and is not needed for normal operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The inner URI does not resolve to a valid transport protocol such as http for ftp, nor can the request be resolved from the <see cref="T:System.IO.Packaging.PackageStore" />.</exception>
@@ -210,10 +210,10 @@
         <returns>If <see cref="M:System.IO.Packaging.PackWebRequest.GetRequestStream" /> is called, a <see cref="T:System.NotSupportedException" /> is thrown.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.Packaging.PackWebRequest.GetRequestStream%2A> exists to implement the contract required by the abstract base class.  The pack URI protocol does not support writing.  
-  
+<xref:System.IO.Packaging.PackWebRequest.GetRequestStream%2A> exists to implement the contract required by the abstract base class.  The pack URI protocol does not support writing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Occurs on any call to <see cref="M:System.IO.Packaging.PackWebRequest.GetRequestStream" />.  The pack URI protocol does not support writing.</exception>
@@ -242,12 +242,12 @@
         <returns>The response stream for the request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Per the signature of the base class, <xref:System.IO.Packaging.PackWebRequest.GetResponse%2A> returns value of type <xref:System.Net.WebResponse>.  The return value it is actually of type <xref:System.IO.Packaging.PackWebResponse> specific to the response of the pack URI protocol.  
-  
- The <xref:System.Net.WebResponse.Close%2A> method should be called when the application is finished with the <xref:System.Net.WebResponse> stream.  
-  
+Per the signature of the base class, <xref:System.IO.Packaging.PackWebRequest.GetResponse%2A> returns value of type <xref:System.Net.WebResponse>.  The return value it is actually of type <xref:System.IO.Packaging.PackWebResponse> specific to the response of the pack URI protocol.  
+ 
+The <xref:System.Net.WebResponse.Close%2A> method should be called when the application is finished with the <xref:System.Net.WebResponse> stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,12 +269,12 @@
         <value>A header collection object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Package cache requests include a valid but otherwise empty header collection in their requests.  
-  
- The <xref:System.IO.Packaging.PackWebRequest.Headers%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
-  
+Package cache requests include a valid but otherwise empty header collection in their requests.  
+ 
+The <xref:System.IO.Packaging.PackWebRequest.Headers%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,12 +296,12 @@
         <value>The protocol method name that performs this request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Packaging.PackWebRequest.Method%2A> property returns an empty string if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  The <xref:System.IO.Packaging.PackWebRequest.Method%2A> property is only set when request references an external Web request, such as http or ftp.  
-  
- The <xref:System.IO.Packaging.PackWebRequest.Method%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
-  
+The <xref:System.IO.Packaging.PackWebRequest.Method%2A> property returns an empty string if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  The <xref:System.IO.Packaging.PackWebRequest.Method%2A> property is only set when request references an external Web request, such as http or ftp.  
+ 
+The <xref:System.IO.Packaging.PackWebRequest.Method%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,12 +324,12 @@
           <see langword="true" /> to send a <c>WWW-authenticate</c> [!INCLUDE[TLA#tla_http](~/includes/tlasharptla-http-md.md)] header with the initial request; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Packaging.PackWebRequest.PreAuthenticate%2A> property returns `false` for requests resolved from the <xref:System.IO.Packaging.PackageStore> cache; there is no pre-authentication scheme for the pack URI protocol.  
-  
- The <xref:System.IO.Packaging.PackWebRequest.PreAuthenticate%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
-  
+The <xref:System.IO.Packaging.PackWebRequest.PreAuthenticate%2A> property returns `false` for requests resolved from the <xref:System.IO.Packaging.PackageStore> cache; there is no pre-authentication scheme for the pack URI protocol.  
+ 
+The <xref:System.IO.Packaging.PackWebRequest.PreAuthenticate%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <value>The <see cref="T:System.Net.WebProxy" /> to use for Internet access.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Packaging.PackWebRequest.Proxy%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
-  
+The <xref:System.IO.Packaging.PackWebRequest.Proxy%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,12 +402,12 @@
         <value>The number of milliseconds to wait before the request times out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Requests to the package cache do not time out.  For requests that resolve from the <xref:System.IO.Packaging.PackageStore> cache, <xref:System.IO.Packaging.PackWebRequest.Timeout%2A> returns a value of –1.  
-  
- The <xref:System.IO.Packaging.PackWebRequest.Timeout%2A> property is shared with the inner request (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
-  
+Requests to the package cache do not time out.  For requests that resolve from the <xref:System.IO.Packaging.PackageStore> cache, <xref:System.IO.Packaging.PackWebRequest.Timeout%2A> returns a value of –1.  
+ 
+The <xref:System.IO.Packaging.PackWebRequest.Timeout%2A> property is shared with the inner request (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>

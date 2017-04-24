@@ -18,21 +18,21 @@
     <summary>Represents an ordered collection of <see cref="T:System.Windows.Media.Visual" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.VisualCollection> has implied context affinity. If a procedure attempts to access the <xref:System.Windows.Media.VisualCollection> from a different context than the context of the owning <xref:System.Windows.Media.ContainerVisual>, an exception is thrown.  
+A <xref:System.Windows.Media.VisualCollection> has implied context affinity. If a procedure attempts to access the <xref:System.Windows.Media.VisualCollection> from a different context than the context of the owning <xref:System.Windows.Media.ContainerVisual>, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Media.VisualCollection> and add members to it.  
-  
- [!code-csharp[DrawingVisualSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#100)]
- [!code-vb[DrawingVisualSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#100)]  
-  
+The following example shows how to create a <xref:System.Windows.Media.VisualCollection> and add members to it.  
+ 
+[!code-csharp[DrawingVisualSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#100)]
+[!code-vb[DrawingVisualSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#100)]  
+ 
 > [!NOTE]
 >  For the complete sample, see [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,25 +76,25 @@
         <returns>The index in the collection at which <paramref name="visual" /> was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding a <xref:System.Windows.Media.Visual> whose value is `null` is permitted and does not raise an exception.  
+Adding a <xref:System.Windows.Media.Visual> whose value is `null` is permitted and does not raise an exception.  
+ 
+The <xref:System.Windows.Media.VisualCollection.Add%2A> method also sets up the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
+ 
+If you need greater low-level control over the underlying storage implementation of visual child objects of a custom class, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you must define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+ 
   
- The <xref:System.Windows.Media.VisualCollection.Add%2A> method also sets up the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
-  
- If you need greater low-level control over the underlying storage implementation of visual child objects of a custom class, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you must define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Media.VisualCollection> and add members to it.  
-  
- [!code-csharp[DrawingVisualSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#100)]
- [!code-vb[DrawingVisualSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#100)]  
-  
+The following example shows how to create a <xref:System.Windows.Media.VisualCollection> and add members to it.  
+ 
+[!code-csharp[DrawingVisualSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#100)]
+[!code-vb[DrawingVisualSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#100)]  
+ 
 > [!NOTE]
 >  For the complete sample, see [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An <see cref="T:System.ArgumentException" /> is thrown if the <see cref="T:System.Windows.Media.Visual" /> is a root element.</exception>
@@ -117,10 +117,10 @@
         <value>The number of elements that the <see cref="T:System.Windows.Media.VisualCollection" /> can contain.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of <xref:System.Windows.Media.VisualCollection.Capacity%2A> is the number of elements that the <xref:System.Windows.Media.VisualCollection> is capable of storing. <xref:System.Windows.Media.VisualCollection.Count%2A> is the number of visuals that are actually in the <xref:System.Windows.Media.VisualCollection>. <xref:System.Windows.Media.VisualCollection.Capacity%2A> is always greater than or equal to <xref:System.Windows.Media.VisualCollection.Count%2A>. If <xref:System.Windows.Media.VisualCollection.Count%2A> exceeds <xref:System.Windows.Media.VisualCollection.Capacity%2A> while adding elements, the capacity of the <xref:System.Windows.Media.VisualCollection> is increased. By default <xref:System.Windows.Media.VisualCollection.Capacity%2A> is zero.  
-  
+The value of <xref:System.Windows.Media.VisualCollection.Capacity%2A> is the number of elements that the <xref:System.Windows.Media.VisualCollection> is capable of storing. <xref:System.Windows.Media.VisualCollection.Count%2A> is the number of visuals that are actually in the <xref:System.Windows.Media.VisualCollection>. <xref:System.Windows.Media.VisualCollection.Capacity%2A> is always greater than or equal to <xref:System.Windows.Media.VisualCollection.Count%2A>. If <xref:System.Windows.Media.VisualCollection.Count%2A> exceeds <xref:System.Windows.Media.VisualCollection.Capacity%2A> while adding elements, the capacity of the <xref:System.Windows.Media.VisualCollection> is increased. By default <xref:System.Windows.Media.VisualCollection.Capacity%2A> is zero.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -144,10 +144,10 @@
         <summary>Removes all elements from the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.VisualCollection.Count%2A> is reset to zero. The value of the <xref:System.Windows.Media.VisualCollection.Capacity%2A> remains unchanged. To reset the capacity of the <xref:System.Windows.Media.VisualCollection>, set the <xref:System.Windows.Media.VisualCollection.Capacity%2A> property to the desired size.  
-  
+The <xref:System.Windows.Media.VisualCollection.Count%2A> is reset to zero. The value of the <xref:System.Windows.Media.VisualCollection.Capacity%2A> remains unchanged. To reset the capacity of the <xref:System.Windows.Media.VisualCollection>, set the <xref:System.Windows.Media.VisualCollection.Capacity%2A> property to the desired size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
           <see langword="true" /> if <paramref name="visual" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The worst-case runtime scenario of this function is `O(n)`, where `n` is the number of items in the <xref:System.Windows.Media.VisualCollection>.  
-  
+The worst-case runtime scenario of this function is `O(n)`, where `n` is the number of items in the <xref:System.Windows.Media.VisualCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,12 +245,12 @@
         <value>The number of elements that the <see cref="T:System.Windows.Media.VisualCollection" /> contains.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.VisualCollection.Count%2A> is the number of elements that are actually in the <xref:System.Windows.Media.VisualCollection>. <xref:System.Windows.Media.VisualCollection.Capacity%2A> is the number of elements that the <xref:System.Windows.Media.VisualCollection> is capable of storing.  
-  
- <xref:System.Windows.Media.VisualCollection.Count%2A> is always less than or equal to <xref:System.Windows.Media.VisualCollection.Capacity%2A>. If <xref:System.Windows.Media.VisualCollection.Count%2A> exceeds <xref:System.Windows.Media.VisualCollection.Capacity%2A> while adding elements, the capacity of the list is doubled by automatically reallocating the internal array before copying the old elements and adding the new elements.  
-  
+<xref:System.Windows.Media.VisualCollection.Count%2A> is the number of elements that are actually in the <xref:System.Windows.Media.VisualCollection>. <xref:System.Windows.Media.VisualCollection.Capacity%2A> is the number of elements that the <xref:System.Windows.Media.VisualCollection> is capable of storing.  
+ 
+<xref:System.Windows.Media.VisualCollection.Count%2A> is always less than or equal to <xref:System.Windows.Media.VisualCollection.Capacity%2A>. If <xref:System.Windows.Media.VisualCollection.Count%2A> exceeds <xref:System.Windows.Media.VisualCollection.Capacity%2A> while adding elements, the capacity of the list is doubled by automatically reallocating the internal array before copying the old elements and adding the new elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
         <returns>The index of the <see cref="T:System.Windows.Media.Visual" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Media.Visual> is not in the <xref:System.Windows.Media.VisualCollection>, -1 is returned. If `null` is passed to the method, the index of the first entry that has `null` is returned. If there is no null entry, -1 is returned.  
-  
+If the <xref:System.Windows.Media.Visual> is not in the <xref:System.Windows.Media.VisualCollection>, -1 is returned. If `null` is passed to the method, the index of the first entry that has `null` is returned. If there is no null entry, -1 is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,14 +325,14 @@
         <summary>Inserts an element into the <see cref="T:System.Windows.Media.VisualCollection" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Media.VisualCollection.Count%2A> already equals <xref:System.Windows.Media.VisualCollection.Capacity%2A>, the capacity of the <xref:System.Windows.Media.VisualCollection> is increased before the new <xref:System.Windows.Media.Visual> is inserted. If `index` is equal to <xref:System.Windows.Media.VisualCollection.Count%2A>, `visual` is added to the end of <xref:System.Windows.Media.VisualCollection>. Any existing visual objects that are equal to or greater than `index` are shifted to accommodate the new <xref:System.Windows.Media.Visual>, and their index values are updated.  
-  
- The <xref:System.Windows.Media.VisualCollection.Insert%2A> method also sets up the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
-  
- If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
-  
+If <xref:System.Windows.Media.VisualCollection.Count%2A> already equals <xref:System.Windows.Media.VisualCollection.Capacity%2A>, the capacity of the <xref:System.Windows.Media.VisualCollection> is increased before the new <xref:System.Windows.Media.Visual> is inserted. If `index` is equal to <xref:System.Windows.Media.VisualCollection.Count%2A>, `visual` is added to the end of <xref:System.Windows.Media.VisualCollection>. Any existing visual objects that are equal to or greater than `index` are shifted to accommodate the new <xref:System.Windows.Media.Visual>, and their index values are updated.  
+ 
+The <xref:System.Windows.Media.VisualCollection.Insert%2A> method also sets up the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
+ 
+If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -356,10 +356,10 @@
         <value>The value that indicates whether the <see cref="T:System.Windows.Media.VisualCollection" /> is read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is always `false` for all <xref:System.Windows.Media.VisualCollection> objects.  
-  
+This property is always `false` for all <xref:System.Windows.Media.VisualCollection> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -381,10 +381,10 @@
         <value>The value that indicates whether the <see cref="T:System.Windows.Media.VisualCollection" /> is synchronized (thread-safe).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is always `false` for all <xref:System.Windows.Media.VisualCollection> objects.  
-  
+This property is always `false` for all <xref:System.Windows.Media.VisualCollection> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -410,10 +410,10 @@
         <value>The <see cref="T:System.Windows.Media.Visual" /> that is stored at <paramref name="index" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides the ability to access a specific <xref:System.Windows.Media.Visual> in the <xref:System.Windows.Media.VisualCollection> by using an index.  
-  
+This property provides the ability to access a specific <xref:System.Windows.Media.Visual> in the <xref:System.Windows.Media.VisualCollection> by using an index.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -441,14 +441,14 @@
         <summary>Removes the specified <see cref="T:System.Windows.Media.Visual" /> object from the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The visual objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated. If `visual` is `null`, the first `null` entry is removed. Note that removing a `null` entry is linear in the size of the collection.  
-  
- The <xref:System.Windows.Media.VisualCollection.Remove%2A> method also removes the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
-  
- If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
-  
+The visual objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated. If `visual` is `null`, the first `null` entry is removed. Note that removing a `null` entry is linear in the size of the collection.  
+ 
+The <xref:System.Windows.Media.VisualCollection.Remove%2A> method also removes the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
+ 
+If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,14 +473,14 @@
         <summary>Removes the visual object at the specified index in the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The visual objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated.  
-  
- The <xref:System.Windows.Media.VisualCollection.RemoveAt%2A> method also removes the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
-  
- If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
-  
+The visual objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated.  
+ 
+The <xref:System.Windows.Media.VisualCollection.RemoveAt%2A> method also removes the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
+ 
+If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -509,14 +509,14 @@
         <summary>Removes a range of visual objects from the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The visual objects that follow the removed objects are shifted to occupy the vacated positions, and their index values are updated.  
-  
- The <xref:System.Windows.Media.VisualCollection.RemoveRange%2A> method also removes the parent-child relationships between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the range of child visuals.  
-  
- If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
-  
+The visual objects that follow the removed objects are shifted to occupy the vacated positions, and their index values are updated.  
+ 
+The <xref:System.Windows.Media.VisualCollection.RemoveRange%2A> method also removes the parent-child relationships between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the range of child visuals.  
+ 
+If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

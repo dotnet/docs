@@ -26,10 +26,10 @@
     <summary>Provides a basic implementation of a custom peer resolver service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService> class defines the base implementation of a custom peer resolver service and provides lookup for the resolution of registration IDs to peer endpoint addresses within the mesh maintained by this resolver.  
-  
+The <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService> class defines the base implementation of a custom peer resolver service and provides lookup for the resolution of registration IDs to peer endpoint addresses within the mesh maintained by this resolver.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -72,12 +72,12 @@
           <see cref="T:System.TimeSpan" /> that specifies the time interval after which stale entries are deleted from the peer resolver service's registration lookup table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be set before the peer resolver service has been and must not be zero. The default interval is 1 minute.  
-  
- This value must be less than the value of <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.RefreshInterval%2A> to avoid the occurrence of stale entries in the peer resolver service's registration lookup table.  
-  
+This property must be set before the peer resolver service has been and must not be zero. The default interval is 1 minute.  
+ 
+This value must be less than the value of <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.RefreshInterval%2A> to avoid the occurrence of stale entries in the peer resolver service's registration lookup table.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The interval is either zero or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
@@ -158,10 +158,10 @@
         <summary>Opens the peer resolver service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this method is called, it schedules the first registration lookup table cleanup based on the value set for the <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.CleanupInterval%2A> property.  
-  
+When this method is called, it schedules the first registration lookup table cleanup based on the value set for the <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.CleanupInterval%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -192,10 +192,10 @@
           <see cref="T:System.ServiceModel.PeerResolvers.RefreshResponseInfo" /> that contains the newly refreshed registration entry.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A refresh of an entry extends the length of time for which it remains valid. All information used to uniquely identify the entry must be supplied in the <xref:System.ServiceModel.PeerResolvers.RefreshInfo> object supplied to this method.  
-  
+A refresh of an entry extends the length of time for which it remains valid. All information used to uniquely identify the entry must be supplied in the <xref:System.ServiceModel.PeerResolvers.RefreshInfo> object supplied to this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -221,12 +221,12 @@
           <see cref="T:System.TimeSpan" /> that specifies the length of time that entries remain valid in a peer resolver service's registration lookup table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be set before the peer resolver service has been and must not be zero. The default interval is 2 minutes.  
-  
- When the amount of time supplied to this property has passed for a given entry in a peer resolver service's registration lookup table, that entry is marked for deletion. The delete occurs when interval specified in the <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.CleanupInterval%2A> property occurs.  For example, if this property is set to a timespan of 10 minutes, entries in the registration lookup table will become stale and marked for deletion after the interval has passed. As a result, the peer resolver client must update every ten minutes to avoid having their entry deleted.  
-  
+This property must be set before the peer resolver service has been and must not be zero. The default interval is 2 minutes.  
+ 
+When the amount of time supplied to this property has passed for a given entry in a peer resolver service's registration lookup table, that entry is marked for deletion. The delete occurs when interval specified in the <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.CleanupInterval%2A> property occurs.  For example, if this property is set to a timespan of 10 minutes, entries in the registration lookup table will become stale and marked for deletion after the interval has passed. As a result, the peer resolver client must update every ten minutes to avoid having their entry deleted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The interval is either zero or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
@@ -256,10 +256,10 @@
           <see cref="T:System.ServiceModel.PeerResolvers.RegisterResponseInfo" /> that contains a copy of the entry added to the peer resolver service's registration lookup table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds a new entry to the registration lookup table of the peer resolver service. Note that registrations made after the service is closed  have no effect -- these entries are not returned by resolve requests.  
-  
+This method adds a new entry to the registration lookup table of the peer resolver service. Note that registrations made after the service is closed  have no effect -- these entries are not returned by resolve requests.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A registration entry with the same GUID already exists in the lookup table, or the custom peer resolver service has not been started with a previous call to <see cref="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Open" />.</exception>
@@ -321,10 +321,10 @@
           <see cref="T:System.ServiceModel.PeerResolvers.ResolveResponseInfo" /> that contains the endpoints for the registration entry in the lookup table that matches the information supplied in the <paramref name="resolveInfo" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method looks up a registration entry based on the data supplied in a <xref:System.ServiceModel.PeerResolvers.ResolveInfo> object and returns any corresponding endpoint addresses found in the peer resolver service's registration lookup table. The number of endpoint addresses returned is equal to or less than the value of the  <xref:System.ServiceModel.PeerResolvers.ResolveInfo.MaxAddresses%2A> property set on the <xref:System.ServiceModel.PeerResolvers.ResolveInfo> object.  
-  
+This method looks up a registration entry based on the data supplied in a <xref:System.ServiceModel.PeerResolvers.ResolveInfo> object and returns any corresponding endpoint addresses found in the peer resolver service's registration lookup table. The number of endpoint addresses returned is equal to or less than the value of the  <xref:System.ServiceModel.PeerResolvers.ResolveInfo.MaxAddresses%2A> property set on the <xref:System.ServiceModel.PeerResolvers.ResolveInfo> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.ServiceModel.PeerResolvers.ResolveInfo" /> object is null or is not correctly formed.</exception>
@@ -390,10 +390,10 @@
         <summary>Registers a peer with the custom peer resolver service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To register a peer node in a specific mesh, a correctly-formed <xref:System.ServiceModel.PeerResolvers.RegisterInfo> object must be supplied to one of the overloads for this method. This object contains the specific details necessary to register the registration entry requesting registration, including a GUID that uniquely identifies the registration entry, the mesh ID, and an endpoint address.  
-  
+To register a peer node in a specific mesh, a correctly-formed <xref:System.ServiceModel.PeerResolvers.RegisterInfo> object must be supplied to one of the overloads for this method. This object contains the specific details necessary to register the registration entry requesting registration, including a GUID that uniquely identifies the registration entry, the mesh ID, and an endpoint address.  
+ 
  ]]></format>
         </remarks>
       </Docs>

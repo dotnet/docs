@@ -29,17 +29,17 @@
     <summary>An implementation of <see cref="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" /> that acts as a container of types within the indicated assemblies and code compile units.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This <xref:System.Workflow.ComponentModel.Compiler.ITypeProvider> implementation, in addition to handling compiled assemblies (<xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly%2A> and <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference%2A> methods), can handle types that have not been compiled yet (<xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddCodeCompileUnit%2A>). The limited implementation of <xref:System.Type?displayProperty=fullName> is returned for types referenced using <xref:System.CodeDom.CodeCompileUnit>.  
-  
+ 
+This <xref:System.Workflow.ComponentModel.Compiler.ITypeProvider> implementation, in addition to handling compiled assemblies (<xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly%2A> and <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference%2A> methods), can handle types that have not been compiled yet (<xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddCodeCompileUnit%2A>). The limited implementation of <xref:System.Type?displayProperty=fullName> is returned for types referenced using <xref:System.CodeDom.CodeCompileUnit>.  
+ 
 > [!NOTE]
 >  <xref:System.Workflow.ComponentModel.Compiler.TypeProvider> only returns public types from referenced assemblies, and both public and non-public types from local assemblies.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,13 +61,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.TypeProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider> class.  This code example is part of the BasicDesignerHosting SDK Sample from the WorkflowLoader.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
-  
- [!code-csharp[WF_Samples#256](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#256)]
- [!code-vb[WF_Samples#256](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#256)]  
-  
+The following code example shows how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider> class.  This code example is part of the BasicDesignerHosting SDK Sample from the WorkflowLoader.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ 
+[!code-csharp[WF_Samples#256](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#256)]
+[!code-vb[WF_Samples#256](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#256)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,13 +115,13 @@
         <summary>Adds a reference to the <see cref="P:System.Type.Assembly" /> to the internal list. This assembly is used for the <see cref="T:System.Type" /> lookup in the <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType(System.String)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider> class and run the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference%2A> method. This code example is part of the BasicDesignerHosting SDK Sample from the WorkflowLoader.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
-  
- [!code-csharp[Wf_samples#256](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#256)]
- [!code-vb[Wf_samples#256](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#256)]  
-  
+The following code example shows how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider> class and run the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference%2A> method. This code example is part of the BasicDesignerHosting SDK Sample from the WorkflowLoader.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ 
+[!code-csharp[Wf_samples#256](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#256)]
+[!code-vb[Wf_samples#256](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#256)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -282,10 +282,10 @@
         <returns>The <see cref="T:System.Object" /> that provides the designated service <see cref="T:System.Type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the encapsulated <xref:System.IServiceProvider> associated with this instance is a null reference (`Nothing` in Visual Basic) then a null reference (`Nothing`) is returned.  
-  
+If the encapsulated <xref:System.IServiceProvider> associated with this instance is a null reference (`Nothing` in Visual Basic) then a null reference (`Nothing`) is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,10 +311,10 @@
         <returns>The requested <see cref="T:System.Type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the name is not resolvable within the cache of assemblies and compiled units of this instance, a null reference (Visual Basic `Nothing`) is returned. Invoking this overload is the same as invoking the two parameter overloads with the value of the parameter `throwOnError` set to `true`.  
-  
+If the name is not resolvable within the cache of assemblies and compiled units of this instance, a null reference (Visual Basic `Nothing`) is returned. Invoking this overload is the same as invoking the two parameter overloads with the value of the parameter `throwOnError` set to `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -344,10 +344,10 @@
         <returns>The requested <see cref="T:System.Type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the name is not resolvable within the cache of assemblies and compiled units of this instance, a null reference (`Nothing`) is returned; in the case that `throwOnError` is `false`.  
-  
+If the name is not resolvable within the cache of assemblies and compiled units of this instance, a null reference (`Nothing`) is returned; in the case that `throwOnError` is `false`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -552,10 +552,10 @@
         <summary>Updates the <see cref="T:System.CodeDom.CodeCompileUnit" /> reference associated with this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
-  
+The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -583,10 +583,10 @@
         <summary>Removes all references to the subject <see cref="T:System.Reflection.Assembly" /> from this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
-  
+The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -613,10 +613,10 @@
         <summary>Removes a path-based <see cref="T:System.Reflection.Assembly" /> reference from this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
-  
+The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -643,10 +643,10 @@
         <summary>Removes all references to the subject <see cref="T:System.CodeDom.CodeCompileUnit" /> from this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
-  
+The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -673,10 +673,10 @@
         <summary>Sets the value of the local <see cref="T:System.Reflection.Assembly" /> to the referenced <see cref="T:System.Reflection.Assembly" /> .</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked. Call <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.SetLocalAssembly%28System.Reflection.Assembly%29> before you call <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly%28System.Reflection.Assembly%29> otherwise it has no affect on the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider>.  
-  
+The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked. Call <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.SetLocalAssembly%28System.Reflection.Assembly%29> before you call <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly%28System.Reflection.Assembly%29> otherwise it has no affect on the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -698,10 +698,10 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> of load error exceptions keyed by the <see cref="T:System.Object" /> that causes the <see cref="T:System.Exception" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An updated, detached <xref:System.Collections.IDictionary> is created at each reference to this property.  
-  
+An updated, detached <xref:System.Collections.IDictionary> is created at each reference to this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

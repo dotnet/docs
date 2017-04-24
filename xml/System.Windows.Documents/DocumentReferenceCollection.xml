@@ -26,10 +26,10 @@
     <summary>Defines an ordered list of <see cref="T:System.Windows.Documents.DocumentReference" /> elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When associated with a <xref:System.Windows.Documents.FixedDocumentSequence>, the order of the elements that the <xref:System.Windows.Documents.DocumentReferenceCollection> contains should be the same as the document order that is defined in the <xref:System.Windows.Documents.FixedDocumentSequence>.  
-  
+When associated with a <xref:System.Windows.Documents.FixedDocumentSequence>, the order of the elements that the <xref:System.Windows.Documents.DocumentReferenceCollection> contains should be the same as the document order that is defined in the <xref:System.Windows.Documents.FixedDocumentSequence>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Adds an element to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>.  
-  
+Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <summary>Copies the whole collection to an array that starts at a given array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.CopyTo%2A?displayProperty=fullName>.  
-  
+Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.CopyTo%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <value>The collection element that is at the specified <paramref name="index" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Basic collection support. Implements <xref:System.Collections.IList>.<xref:System.Collections.IList.Item%2A>.  
-  
+Basic collection support. Implements <xref:System.Collections.IList>.<xref:System.Collections.IList.Item%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

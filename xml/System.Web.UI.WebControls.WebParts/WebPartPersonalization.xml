@@ -19,58 +19,58 @@
     <summary>Implements low-level personalization operations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class implements the logic required to carry out lower-level personalization operations. Although the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class manages the high-level life cycle of personalization, it is the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class that is responsible for actually implementing the physical steps necessary to carry out specific personalization actions. The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class in turn relies on an implementation of <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> to communicate with the underlying data store for personalization information.  
+This class implements the logic required to carry out lower-level personalization operations. Although the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class manages the high-level life cycle of personalization, it is the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class that is responsible for actually implementing the physical steps necessary to carry out specific personalization actions. The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class in turn relies on an implementation of <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> to communicate with the underlying data store for personalization information.  
+ 
+If you use the default implementation of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager>, it creates an instance of the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class that you can use by referencing the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.Personalization%2A> property. For example, to access the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope%2A> property, you would specify `WebPartManager.Personalization.InitialScope`.  
+ 
   
- If you use the default implementation of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager>, it creates an instance of the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class that you can use by referencing the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.Personalization%2A> property. For example, to access the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope%2A> property, you would specify `WebPartManager.Personalization.InitialScope`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class is used, as well as providing an example of how personalization scope affects the results of personalized properties. This example has five files:  
-  
+The following code example shows how the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class is used, as well as providing an example of how personalization scope affects the results of personalized properties. This example has five files:  
+ 
 -   An .aspx page that declaratively creates two Web Part zones, each with a control.  
-  
+ 
 -   A user control called `Color.ascx` that allows a user to change a personalized property that applies a text box background color based on the user's authorization rights to modify state information and to enter shared scope.  
-  
+ 
 -   A user control called `Persmode.ascx` that indicates what the current page scope is and what rights the current user has to enter shared scope or to modify data; it also provides two buttons; one to change scope and one to reset current user personalization information.  
-  
+ 
 -   A login control that is used to authorize users.  
-  
+ 
 -   A Web.config file with a section that provides an example of authorizing a user to modify personalization state and to enter shared scope.  
-  
- The following code creates an aspx page  with a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> and two Web Part zones and displays the `Color.ascx` and `Persmode.ascx` controls. The page loads a login page that is used to get the current user information. Use the ASP.NET Web Site Administration Tool in [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)] to create users to access the page. See the Web.config file for an example of a user granted authorization in the configuration file to change scope and modify state information.  
-  
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/Defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/Defaultvb.aspx#1)]  -->  
-  
- The following example code creates a login page. After a successful login, it redirects to the main aspx page.  
-  
+ 
+The following code creates an aspx page  with a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> and two Web Part zones and displays the `Color.ascx` and `Persmode.ascx` controls. The page loads a login page that is used to get the current user information. Use the ASP.NET Web Site Administration Tool in [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)] to create users to access the page. See the Web.config file for an example of a user granted authorization in the configuration file to change scope and modify state information.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/Defaultcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/Defaultvb.aspx#1)]  -->  
+ 
+The following example code creates a login page. After a successful login, it redirects to the main aspx page.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/login.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/login.aspx#5)]  -->  
-  
- The following example code is a portion of the Web.config file for this application. This section shows how to set authorization for a user, in this case "user2", to enter shared personalization scope and to modify personalization state information. It also shows an example of a role, in this case "admin", that can be used to allow users in the "admin" role to enter shared personalization scope and to modify personalization state information.  
-  
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/web.config#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/web.config#2)]  -->  
-  
- The following example code creates a user control, called `Color.ascx`, that allows the user to change a personalized property, in this case the background color of two text boxes, based on the current personalization scope and the authorization rights of the user.  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/login.aspx#5)]  -->
+<!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/login.aspx#5)]  -->  
+ 
+The following example code is a portion of the Web.config file for this application. This section shows how to set authorization for a user, in this case "user2", to enter shared personalization scope and to modify personalization state information. It also shows an example of a role, in this case "admin", that can be used to allow users in the "admin" role to enter shared personalization scope and to modify personalization state information.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/web.config#2)]  -->
+<!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/web.config#2)]  -->  
+ 
+The following example code creates a user control, called `Color.ascx`, that allows the user to change a personalized property, in this case the background color of two text boxes, based on the current personalization scope and the authorization rights of the user.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/color.ascx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/color.ascx#3)]  -->  
-  
- The following example code creates a user control, called `Persmode.ascx`, that shows the current personalization scope and the user rights to modify state and to enter shared scope. It also has a reset button for resetting the current personalization state.  
-  
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/persMode.ascx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/persMode.ascx#4)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/color.ascx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/color.ascx#3)]  -->  
+ 
+The following example code creates a user control, called `Persmode.ascx`, that shows the current personalization scope and the user rights to modify state and to enter shared scope. It also has a reset button for resetting the current personalization state.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartPersonalization#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/persMode.ascx#4)]  -->
+<!-- TODO: review snippet reference [!code-vb[WebParts_WebPartPersonalization#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/persMode.ascx#4)]  -->  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -97,10 +97,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes an instance of this class and associates it with the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control on whose behalf the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance will carry out personalization operations.  
-  
+This constructor initializes an instance of this class and associates it with the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control on whose behalf the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance will carry out personalization operations.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -124,10 +124,10 @@
         <summary>Applies personalization data to the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, this method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.ApplyWebPartPersonalization%2A> method on the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance to apply personalization state to the supplied Web Parts control.  
-  
+If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, this method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.ApplyWebPartPersonalization%2A> method on the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance to apply personalization state to the supplied Web Parts control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to apply personalization state prior to the state being loaded from the underlying data store.  
@@ -157,12 +157,12 @@
         <summary>Applies personalization data to the specified <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control when requested to do so by the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called to apply personalization data to an individual <xref:System.Web.UI.WebControls.WebParts.WebPart>-derived class when requested to do so by the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
-  
- If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, this method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.ApplyWebPartPersonalization%2A> method on the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance to apply personalization state to the supplied Web Parts control.  
-  
+This method is called to apply personalization data to an individual <xref:System.Web.UI.WebControls.WebParts.WebPart>-derived class when requested to do so by the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
+ 
+If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, this method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.ApplyWebPartPersonalization%2A> method on the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance to apply personalization state to the supplied Web Parts control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to apply personalization state to a Web Parts control that is not managed by the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</exception>
@@ -205,20 +205,20 @@
           <see langword="true" /> if the user is authorized to enter <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> scope; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns `true` if the user is authorized in the <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> to enter <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
+This property returns `true` if the user is authorized in the <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> to enter <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
+ 
+The first time the property is called, it determines the user's right to enter <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope and caches the information. If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.UserCapabilities%2A> dictionary is modified after the first time this property is called, changes are not shown on subsequent calls to this property.  
+ 
   
- The first time the property is called, it determines the user's right to enter <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope and caches the information. If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.UserCapabilities%2A> dictionary is modified after the first time this property is called, changes are not shown on subsequent calls to this property.  
-  
-   
-  
+ 
 ## Examples  
- The following code demonstrates using the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.CanEnterSharedScope%2A> property. This code is part of a larger code sample found in the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class description.  
-  
- [!code-csharp[WebParts_WebPartPersonalization#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/persMode.ascx#7)]
- [!code-vb[WebParts_WebPartPersonalization#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/persMode.ascx#7)]  
-  
+The following code demonstrates using the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.CanEnterSharedScope%2A> property. This code is part of a larger code sample found in the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class description.  
+ 
+[!code-csharp[WebParts_WebPartPersonalization#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/persMode.ascx#7)]
+[!code-vb[WebParts_WebPartPersonalization#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/persMode.ascx#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,12 +243,12 @@
         <summary>Changes the current page's <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> instance to the scope specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method changes the currently executing page's personalization scope to the new scope specified by the `newScope` parameter. This method is the protected helper method that is called by the public <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope%2A> method. This protected method exists to handle future extensibility if there are more than two possible scopes to switch between.  
-  
- If the current scope and `newScope` are the same value, then this method performs no operation.  
-  
+This method changes the currently executing page's personalization scope to the new scope specified by the `newScope` parameter. This method is the protected helper method that is called by the public <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope%2A> method. This protected method exists to handle future extensibility if there are more than two possible scopes to switch between.  
+ 
+If the current scope and `newScope` are the same value, then this method performs no operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If attempting to switch from <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" /> scope to <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> scope, the current user does not have the user capability to enter <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> scope.</exception>
@@ -278,12 +278,12 @@
         <summary>Extracts the personalization state from one Web Parts control and applies it to a second Web Parts control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method extracts the personalization state from `webPartA` and applies it to `webPartB`. This method assumes that `webPartA` and `webPartB` are the same type. If the Web Parts controls are <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls, the method copies the personalization state from the child control wrapped in `webPartA` to the child control wrapped in `webPartB`.  
-  
- As part of the copy operation, `webPartB` is marked as "dirty".  
-  
+This method extracts the personalization state from `webPartA` and applies it to `webPartB`. This method assumes that `webPartA` and `webPartB` are the same type. If the Web Parts controls are <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls, the method copies the personalization state from the child control wrapped in `webPartA` to the child control wrapped in `webPartB`.  
+ 
+As part of the copy operation, `webPartB` is marked as "dirty".  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Either <paramref name="webPartA" /> or <paramref name="webPartB" /> is <see langword="null" />.</exception>
@@ -325,12 +325,12 @@
           <see langword="true" /> if personalization is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates whether personalization is requested to be enabled for the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. Note that this is a subtle but important distinction from the intent of <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsInitialized%2A>.  
-  
- This property can only be set prior to the completion of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method. In practice, this means that the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Enabled%2A> property must be set in the page markup on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> element if personalization should be disabled. Alternatively, this property can be set during the `PreInit` phase of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
-  
+This property indicates whether personalization is requested to be enabled for the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. Note that this is a subtle but important distinction from the intent of <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsInitialized%2A>.  
+ 
+This property can only be set prior to the completion of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method. In practice, this means that the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Enabled%2A> property must be set in the page markup on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> element if personalization should be disabled. Alternatively, this property can be set during the `PreInit` phase of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property value after the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method had completed.</exception>
@@ -356,28 +356,28 @@
         <summary>Ensures that the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance has completed initialization or that the current user has rights to modify personalization state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a helper method used in several <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> methods to ensure one of two things:  
-  
+This method is a helper method used in several <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> methods to ensure one of two things:  
+ 
 -   The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance has completed initialization (for example, the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method was called and successfully completed). This check is made if the `ensureModifiable` parameter equals `false`.  
-  
-     \- or -  
-  
+ 
+    \- or -  
+ 
 -   The current user has rights to modify personalization state. This check is made if `ensureModifiable` equals `true`.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control also calls this method in a number of cases:  
-  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control also calls this method in a number of cases:  
+ 
 -   To switch the display mode to something other than normal. The current user must have rights to modify personalization state.  
-  
+ 
 -   To add, delete, or move Web Parts controls. The current user must have rights to modify personalization state.  
-  
+ 
 -   To connect, disconnect, and edit Web Parts controls. The current user must have rights to modify personalization state.  
-  
+ 
 -   To export the Web Parts controls on a page. The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance must have completed initialization.  
-  
+ 
 -   To import Web Parts controls. The current user must have rights to modify personalization state.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current user does not have rights to modify personalization information, or other checks failed.  
@@ -403,10 +403,10 @@
         <summary>Represents the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartUserCapability" /> instance of a user's authorization to enter <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The user right is represented by the string "enterSharedScope" in the <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> instance.  
-  
+The user right is represented by the string "enterSharedScope" in the <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -428,12 +428,12 @@
         <summary>Extracts personalization data from the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, and personalization state is not being reset during the page request (such as when the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ShouldResetPersonalizationState%2A> property is `false`), then this method extracts personalization data from the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control during its <xref:System.Web.UI.Page.SaveStateComplete> event.  
-  
- This method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.ExtractWebPartManagerPersonalization%2A> method on the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance to extract personalization state from the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
-  
+If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, and personalization state is not being reset during the page request (such as when the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ShouldResetPersonalizationState%2A> property is `false`), then this method extracts personalization data from the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control during its <xref:System.Web.UI.Page.SaveStateComplete> event.  
+ 
+This method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.ExtractWebPartManagerPersonalization%2A> method on the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance to extract personalization state from the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to extract personalization state prior to the state being loaded from the underlying data store.  
@@ -471,10 +471,10 @@
         <summary>Extracts personalization data from a Web Parts control when requested to do so by the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, and personalization state is not being reset during the page request (such as when the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ShouldResetPersonalizationState%2A> property is `false`), then this method extracts personalization data from the Web Parts control specified by `webPart`. This method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.ExtractWebPartPersonalization%2A> method on the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance to extract personalization state from the supplied Web Parts control.  
-  
+If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, and personalization state is not being reset during the page request (such as when the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ShouldResetPersonalizationState%2A> property is `false`), then this method extracts personalization data from the Web Parts control specified by `webPart`. This method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.ExtractWebPartPersonalization%2A> method on the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance to extract personalization state from the supplied Web Parts control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to extract personalization state from a Web Parts control that is not managed by the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</exception>
@@ -514,10 +514,10 @@
         <returns>The authorization filter for the specified Web Parts control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method retrieves the authorization filter, if any, associated with the Web Parts control identified by `webPartID`. Each Web Parts control that is serialized and managed by personalization is associated with a `webPartID` parameter. At run time, a page's <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control can filter the controls displayed on a page by determining whether each Web Parts control is authorized. This authorization information is stored as a string in the data associated with each Web Parts control.  
-  
+This method retrieves the authorization filter, if any, associated with the Web Parts control identified by `webPartID`. Each Web Parts control that is serialized and managed by personalization is associated with a `webPartID` parameter. At run time, a page's <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control can filter the controls displayed on a page by determining whether each Web Parts control is authorized. This authorization information is stored as a string in the data associated with each Web Parts control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to retrieve an authorization filter when <see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled" /> is <see langword="false" /> by calling this method too early in the page life cycle.  
@@ -559,10 +559,10 @@
           <see langword="true" /> if the page has personalization data associated with it; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a convenient method for determining whether the current page and scope combination has personalization data associated with it. Internally, the method calls <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.GetCountOfState%2A> on the provider to determine whether data exists.  
-  
+This is a convenient method for determining whether the current page and scope combination has personalization data associated with it. Internally, the method calls <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.GetCountOfState%2A> on the provider to determine whether data exists.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is no personalization provider associated with the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance. This can occur if the property is accessed prior to the completion of the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method.  
@@ -601,12 +601,12 @@
         <value>The <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> indicating the default personalization scope of the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the default personalization scope that should be used for the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in the absence of previous knowledge about the proper scope. If this property is not explicitly set, it defaults to returning <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
-  
- This property can only be set prior to the completion of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method. In practice, this means <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope%2A> must be set in the page markup on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> element. Alternatively, this property can be set during the `PreInit` phase of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
-  
+This property represents the default personalization scope that should be used for the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in the absence of previous knowledge about the proper scope. If this property is not explicitly set, it defaults to returning <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
+ 
+This property can only be set prior to the completion of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method. In practice, this means <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope%2A> must be set in the page markup on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> element. Alternatively, this property can be set during the `PreInit` phase of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property to a value other than its current value after the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method had completed.</exception>
@@ -639,12 +639,12 @@
           <see langword="true" /> if personalization is enabled for the current <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance and personalization data has successfully loaded; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Prior to loading personalization data, this property will always return `false`. For example, this property will return `false` during the `PreInit` phase. After the associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager>'s <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method has successfully completed (during which the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method is called), this property will then return `true`.  
-  
- This property is a publicly accessible alias for the protected <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsInitialized%2A> property.  
-  
+Prior to loading personalization data, this property will always return `false`. For example, this property will return `false` during the `PreInit` phase. After the associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager>'s <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method has successfully completed (during which the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method is called), this property will then return `true`.  
+ 
+This property is a publicly accessible alias for the protected <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsInitialized%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -675,10 +675,10 @@
           <see langword="true" /> if personalization is initialized for this instance; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the personalization feature is enabled (if the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Enabled%2A> property is set to `true`), the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance is considered initialized immediately after the associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager>'s <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method has successfully completed (during which the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method is called). Prior to loading personalization data, this property always returns `false`.  
-  
+If the personalization feature is enabled (if the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Enabled%2A> property is set to `true`), the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance is considered initialized immediately after the associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager>'s <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method has successfully completed (during which the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method is called). Prior to loading personalization data, this property always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -709,18 +709,18 @@
           <see langword="true" /> if the user is authorized to modify state information; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first time this property is called, it caches the result of determining the user’s right to modify personalization state. If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.UserCapabilities%2A> dictionary is modified after the first time this property is called, changes are not reflected in subsequent calls to this property.  
+The first time this property is called, it caches the result of determining the user’s right to modify personalization state. If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.UserCapabilities%2A> dictionary is modified after the first time this property is called, changes are not reflected in subsequent calls to this property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code demonstrates using the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsModifiable%2A> property. This code is part of a larger code sample found in the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class description.  
-  
- [!code-csharp[WebParts_WebPartPersonalization#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/persMode.ascx#6)]
- [!code-vb[WebParts_WebPartPersonalization#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/persMode.ascx#6)]  
-  
+The following code demonstrates using the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsModifiable%2A> property. This code is part of a larger code sample found in the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class description.  
+ 
+[!code-csharp[WebParts_WebPartPersonalization#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/persMode.ascx#6)]
+[!code-vb[WebParts_WebPartPersonalization#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/persMode.ascx#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -743,25 +743,25 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> instance for the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the main entry point for initializing personalization information on behalf of the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. This method is called during the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method. Normally, if personalization has been disabled on the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, this method will never be called.  
-  
- During the course of this method, the following initializations occur:  
-  
+This is the main entry point for initializing personalization information on behalf of the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. This method is called during the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method. Normally, if personalization has been disabled on the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, this method will never be called.  
+ 
+During the course of this method, the following initializations occur:  
+ 
 -   A reference to either the default personalization provider, or the custom provider indicated in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> page markup or the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ProviderName%2A> property, is obtained.  
-  
+ 
 -   The provider is called to determine the user capabilities (<xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.DetermineUserCapabilities%2A>) for the currently executing user.  
-  
+ 
 -   The personalization state for the current page/user/scope combination is loaded from the underlying data store by the provider (<xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.LoadPersonalizationState%2A>) and stored within the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance.  
-  
+ 
 -   The personalization scope for the current page/user/scope is determined by the provider (<xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.DetermineInitialScope%2A>). Note that the result of this determination might be different than the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope%2A> property.  
-  
- The scope value returned from this method is used as the value for the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Scope%2A> property.  
-  
+ 
+The scope value returned from this method is used as the value for the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Scope%2A> property.  
+ 
 > [!NOTE]
 >  An <xref:System.InvalidOperationException> exception due to personalization not being enabled will occur only if the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method is called directly. In the ASP.NET implementation, an internal helper method is actually called to perform the load, and this helper method silently returns if personalization has not been enabled for the page.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This method is called when personalization is not enabled (<see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Enabled" /> equals <see langword="false" />).  
@@ -802,10 +802,10 @@
         <summary>Represents the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartUserCapability" /> instance of a user's authorization to modify personalization state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The user right is represented by the string "modifyState" in the <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> instance.  
-  
+The user right is represented by the string "modifyState" in the <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -835,12 +835,12 @@
         <value>The name of the personalization provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the value set for this property in the page declaration. If this property was not set, it returns <xref:System.String>. In this case, the page uses the default personalization provider specified in the configuration file.  
-  
- This property can only be set prior to the completion of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method. This means the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ProviderName%2A> property must be set in the page declaration on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> element.  Alternatively, this property can be set during the `PreInit` phase.  
-  
+This property returns the value set for this property in the page declaration. If this property was not set, it returns <xref:System.String>. In this case, the page uses the default personalization provider specified in the configuration file.  
+ 
+This property can only be set prior to the completion of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit%2A> method. This means the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ProviderName%2A> property must be set in the page declaration on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> element.  Alternatively, this property can be set during the `PreInit` phase.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property to a value other than its current value after the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method has completed.</exception>
@@ -863,12 +863,12 @@
         <summary>Resets personalization data for the current page, scope, and user in the underlying data store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method resets personalization data for the current page, scope, and user in the underlying data store. As a side effect of the reset, the currently executing page is re-executed by a <xref:System.Web.HttpServerUtility.Transfer%2A> call. Note that this transfer re-executes the current page as a `GET` request regardless of how the page was originally requested.  
-  
- This method can be called at any time. Internally, this method calls the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ResetPersonalizationState%2A> method on the provider. After data is successfully reset, the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ShouldResetPersonalizationState%2A> property is set to `true`. This property is used elsewhere by the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance to bypass extracting personalization data from control properties and saving it if data has already been reset.  
-  
+This method resets personalization data for the current page, scope, and user in the underlying data store. As a side effect of the reset, the currently executing page is re-executed by a <xref:System.Web.HttpServerUtility.Transfer%2A> call. Note that this transfer re-executes the current page as a `GET` request regardless of how the page was originally requested.  
+ 
+This method can be called at any time. Internally, this method calls the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ResetPersonalizationState%2A> method on the provider. After data is successfully reset, the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ShouldResetPersonalizationState%2A> property is set to `true`. This property is used elsewhere by the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance to bypass extracting personalization data from control properties and saving it if data has already been reset.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance cannot reference a valid personalization provider.</exception>
@@ -891,12 +891,12 @@
         <summary>Saves personalization data for the current page, scope, and user to the underlying data store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called during the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.Page.SaveStateComplete> event. Internally, the method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.SavePersonalizationState%2A> method on the provider.  
-  
- Attempting to save personalization data when the currently executing user does not have the capability called <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ModifyStateUserCapability> (within the current <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> instance) results in an <xref:System.InvalidOperationException> exception. Note that this would only be true if the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control called the protected <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Save%2A> method directly. In the ASP.NET implementation, an internal helper method is actually called to perform the save, and this helper method silently returns if the currently executing user does not have rights to modify data.  
-  
+This method is called during the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.Page.SaveStateComplete> event. Internally, the method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.SavePersonalizationState%2A> method on the provider.  
+ 
+Attempting to save personalization data when the currently executing user does not have the capability called <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ModifyStateUserCapability> (within the current <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> instance) results in an <xref:System.InvalidOperationException> exception. Note that this would only be true if the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control called the protected <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Save%2A> method directly. In the ASP.NET implementation, an internal helper method is actually called to perform the save, and this helper method silently returns if the currently executing user does not have rights to modify data.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current user does not have the capability called <see cref="F:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ModifyStateUserCapability" />.  
@@ -947,12 +947,12 @@
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> instance indicating the scope of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is initially set based on the value returned from the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method. This value can be modified by calling the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope%2A> method.  
-  
- Note that this represents the scope used for applying and extracting personalization information. The value of this property might differ from the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope%2A> property or the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ChangeScope%2A> method.  
-  
+This value is initially set based on the value returned from the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method. This value can be modified by calling the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope%2A> method.  
+ 
+Note that this represents the scope used for applying and extracting personalization information. The value of this property might differ from the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope%2A> property or the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ChangeScope%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -974,12 +974,12 @@
         <summary>Marks the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control as having personalization data that has changed (is "dirty").</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, this method marks the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control as "dirty". Depending on the implementation details of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's instance of <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization>, this method might invoke security checks and code access security permission checks. Internally, this method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.SetWebPartManagerDirty%2A> method.  
-  
- Note that the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control tracks "dirty" state internally and exposes the "dirtiness" of the manager through the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty%2A> property rather than through this method.  
-  
+If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, this method marks the parent <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control as "dirty". Depending on the implementation details of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's instance of <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization>, this method might invoke security checks and code access security permission checks. Internally, this method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState.SetWebPartManagerDirty%2A> method.  
+ 
+Note that the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control tracks "dirty" state internally and exposes the "dirtiness" of the manager through the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty%2A> property rather than through this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No personalization data has been loaded.</exception>
@@ -1005,10 +1005,10 @@
         <summary>Marks the specified Web Parts control as having personalization data that has changed (is "dirty").</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, this method marks the specified Web Parts control as "dirty". Depending on the implementation details of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's instance of <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization>, this method may invoke security checks and code access security permission checks.  
-  
+If the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled%2A> property is set to `true`, this method marks the specified Web Parts control as "dirty". Depending on the implementation details of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's instance of <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization>, this method may invoke security checks and code access security permission checks.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Attempted to mark as "dirty" a Web Parts control that is not managed by the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</exception>
@@ -1033,12 +1033,12 @@
           <see langword="true" /> if the personalization state for the current page has been reset; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set to `true`, it indicates that the personalization state for the current page has been reset and that extraction of personalization data from controls and subsequent save operations should be skipped. Currently, this property is automatically set to `true` by the personalization infrastructure if the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ResetPersonalizationState%2A> method is called.  
-  
- Note that although there are no restrictions on when this property can be set, the property must be set to `true` prior to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.Page.SaveStateComplete> event to have any effect.  
-  
+If this property is set to `true`, it indicates that the personalization state for the current page has been reset and that extraction of personalization data from controls and subsequent save operations should be skipped. Currently, this property is automatically set to `true` by the personalization infrastructure if the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ResetPersonalizationState%2A> method is called.  
+ 
+Note that although there are no restrictions on when this property can be set, the property must be set to `true` prior to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.Page.SaveStateComplete> event to have any effect.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1060,22 +1060,22 @@
         <summary>Switches the current page's personalization scope from <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" /> to <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> or from <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> to <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method toggles the currently executing page's personalization scope. Toggling the scope results in a <xref:System.Web.HttpServerUtility.Transfer%2A> back to the current executing page.  
+This method toggles the currently executing page's personalization scope. Toggling the scope results in a <xref:System.Web.HttpServerUtility.Transfer%2A> back to the current executing page.  
+ 
+This method performs no operation if it is called while an export or import of a Web Parts control is occurring.  
+ 
+If a toggle scope request occurs for a page that was submitted via a `POST` request, then any query string values will be preserved during the transfer; query string parameters are not preserved if the page was submitted via a `GET` request.  
+ 
   
- This method performs no operation if it is called while an export or import of a Web Parts control is occurring.  
-  
- If a toggle scope request occurs for a page that was submitted via a `POST` request, then any query string values will be preserved during the transfer; query string parameters are not preserved if the page was submitted via a `GET` request.  
-  
-   
-  
+ 
 ## Examples  
- The following code demonstrates using the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope%2A> method. This code is part of a larger code sample found in the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class description.  
-  
- [!code-csharp[WebParts_WebPartPersonalization#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/persMode.ascx#7)]
- [!code-vb[WebParts_WebPartPersonalization#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/persMode.ascx#7)]  
-  
+The following code demonstrates using the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope%2A> method. This code is part of a larger code sample found in the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class description.  
+ 
+[!code-csharp[WebParts_WebPartPersonalization#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartPersonalization/CS/persMode.ascx#7)]
+[!code-vb[WebParts_WebPartPersonalization#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartPersonalization/VB/persMode.ascx#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current user does not have the user capability to enter <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> scope when attempting to switch from <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" /> scope to <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> scope.  
@@ -1111,10 +1111,10 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> containing the set of user capabilities granted to the current user, or an empty <see cref="T:System.Collections.Specialized.HybridDictionary" /> if the user is anonymous.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Currently the <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> class contains two values indicating a user's capabilities: `modifyState` and `enterSharedScope`. For ease of use, the capabilities contained within the dictionary can be checked with the helper properties <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsModifiable%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.CanEnterSharedScope%2A>. Note the restrictions on changing capabilities after either of these properties have been accessed; for details, see the description section of each property.  
-  
+Currently the <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> class contains two values indicating a user's capabilities: `modifyState` and `enterSharedScope`. For ease of use, the capabilities contained within the dictionary can be checked with the helper properties <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsModifiable%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.CanEnterSharedScope%2A>. Note the restrictions on changing capabilities after either of these properties have been accessed; for details, see the description section of each property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1136,10 +1136,10 @@
         <value>The current parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to determine the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control associated with this instance of the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class.  
-  
+Use this property to determine the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control associated with this instance of the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

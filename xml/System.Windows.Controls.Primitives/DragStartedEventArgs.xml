@@ -75,10 +75,10 @@
         <summary>Converts a method that handles the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" /> event to the <see cref="T:System.Windows.Controls.Primitives.DragStartedEventHandler" /> type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the `genericHandler` as a <xref:System.Windows.Controls.Primitives.DragStartedEventHandler>.  
-  
+This implementation casts the `genericHandler` as a <xref:System.Windows.Controls.Primitives.DragStartedEventHandler>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

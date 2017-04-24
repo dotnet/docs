@@ -20,10 +20,10 @@
     <summary>Holds the name/value pair of the property name and the object representing the property of a context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The properties that make up the context are provided by various automatic services and are set up by the activation services when a <xref:System.Runtime.Remoting.Contexts.Context> class is created. Each property is itself a managed object. Depending on whether or not properties contribute message sinks, they are considered either active or passive.  
-  
+The properties that make up the context are provided by various automatic services and are set up by the activation services when a <xref:System.Runtime.Remoting.Contexts.Context> class is created. Each property is itself a managed object. Depending on whether or not properties contribute message sinks, they are considered either active or passive.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

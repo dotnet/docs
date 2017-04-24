@@ -22,34 +22,34 @@
     <summary>Creates a URL that corresponds to specified URL parameter values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.RouteUrlExpressionBuilder> class makes it possible to set the property of a server control to the URL of a route by providing a list of URL parameter values.  
+The <xref:System.Web.Compilation.RouteUrlExpressionBuilder> class makes it possible to set the property of a server control to the URL of a route by providing a list of URL parameter values.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create markup that generates a hyperlink with a URL that is formatted for a route. The route is defined by using `http://www.contoso.com/search/{searchterm}` as the URL pattern.  
-  
+The following example shows how to create markup that generates a hyperlink with a URL that is formatted for a route. The route is defined by using `http://www.contoso.com/search/{searchterm}` as the URL pattern.  
+ 
 ```  
 <asp:HyperLink ID="HyperLink1" runat="server"  
-               NavigateUrl="<%$ RouteUrl:searchterm=Bicycles %>">  
-  Search for Bicycles  
+              NavigateUrl="<%$ RouteUrl:searchterm=Bicycles %>">  
+ Search for Bicycles  
 </asp:HyperLink>  
 ```  
-  
- The URL generated for this hyperlink would be `http://www.contoso.com/search/Bicycles`.  
-  
- If the URL parameters provided to the `RouteUrl` expression are not sufficient to uniquely identify a route, you must include the route name. For example, if a Web application has two routes with `searchterm` as the sole URL parameter, the routes would have to be defined by using route names, and the hyperlink markup would resemble the following example:  
-  
+ 
+The URL generated for this hyperlink would be `http://www.contoso.com/search/Bicycles`.  
+ 
+If the URL parameters provided to the `RouteUrl` expression are not sufficient to uniquely identify a route, you must include the route name. For example, if a Web application has two routes with `searchterm` as the sole URL parameter, the routes would have to be defined by using route names, and the hyperlink markup would resemble the following example:  
+ 
 ```  
 <asp:HyperLink ID="HyperLink1" runat="server"  
-               NavigateUrl="<%$ RouteUrl:searchterm=Bicycles,  
-               routename=BasicSearchRoute %>">  
-  Search for Bicycles  
+              NavigateUrl="<%$ RouteUrl:searchterm=Bicycles,  
+              routename=BasicSearchRoute %>">  
+ Search for Bicycles  
 </asp:HyperLink>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,14 +96,14 @@
         <returns>The URL that corresponds to the specified URL parameter values and to the selected route. The route is selected by matching route URL patterns to the specified list of parameters. In case more than one route matches a specified list of parameters, a route name can also be specified to indicate which route to select.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET calls this method when an expression of the following form is encountered in markup:  
-  
- `<%$ RouteUrl: urlparameter=value %>`  
-  
- This method generates the appropriate URL for the specified route-key values for the current <xref:System.Web.Routing.Route> object. This method overrides the <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method. It gets from the `entry` parameter a reference to the control to which the expression is bound, it gets from the `context` parameter the expression to be evaluated, and it calls the <xref:System.Web.Compilation.RouteUrlExpressionBuilder.GetRouteUrl%2A> method to generate the URL.  
-  
+ASP.NET calls this method when an expression of the following form is encountered in markup:  
+ 
+`<%$ RouteUrl: urlparameter=value %>`  
+ 
+This method generates the appropriate URL for the specified route-key values for the current <xref:System.Web.Routing.Route> object. This method overrides the <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method. It gets from the `entry` parameter a reference to the control to which the expression is bound, it gets from the `context` parameter the expression to be evaluated, and it calls the <xref:System.Web.Compilation.RouteUrlExpressionBuilder.GetRouteUrl%2A> method to generate the URL.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,10 +133,10 @@
         <returns>A <see cref="T:System.CodeDom.CodeExpression" /> instance that is used in the property assignment.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when the CodeDOM is created for a page or control. The <xref:System.CodeDom.CodeExpression> object that is returned represents the code expression to add to the property assignment in the generated page class.  
-  
+This method is called when the CodeDOM is created for a page or control. The <xref:System.CodeDom.CodeExpression> object that is returned represents the code expression to add to the property assignment in the generated page class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <returns>The URL that corresponds to the route URL format of the current <see cref="T:System.Web.Routing.Route" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method generates the appropriate value for the URL by calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method of the <xref:System.Web.Routing.RouteCollection> object. It gets the <xref:System.Web.Routing.RequestContext> object from the `control` parameter, and it parses the route name and route parameters from the `expression` parameter.  
-  
+This method generates the appropriate value for the URL by calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method of the <xref:System.Web.Routing.RouteCollection> object. It gets the <xref:System.Web.Routing.RequestContext> object from the `control` parameter, and it parses the route name and route parameters from the `expression` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="control" /> parameter is <see langword="null" />.</exception>
@@ -191,10 +191,10 @@
         <value>Always <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.RouteUrlExpressionBuilder.SupportsEvaluate%2A> property indicates whether the <xref:System.Web.Compilation.RouteUrlExpressionBuilder.EvaluateExpression%2A> method has been implemented in the class and can return a value for the expression in a page that is not compiled. The <xref:System.Web.Compilation.RouteUrlExpressionBuilder> class can evaluate an expression in a page that is not compiled. Therefore, the <xref:System.Web.Compilation.RouteUrlExpressionBuilder.SupportsEvaluate%2A> property always returns `true`.  
-  
+The <xref:System.Web.Compilation.RouteUrlExpressionBuilder.SupportsEvaluate%2A> property indicates whether the <xref:System.Web.Compilation.RouteUrlExpressionBuilder.EvaluateExpression%2A> method has been implemented in the class and can return a value for the expression in a page that is not compiled. The <xref:System.Web.Compilation.RouteUrlExpressionBuilder> class can evaluate an expression in a page that is not compiled. Therefore, the <xref:System.Web.Compilation.RouteUrlExpressionBuilder.SupportsEvaluate%2A> property always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,12 +225,12 @@
           <see langword="true" /> if parsing was successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.RouteUrlExpressionBuilder.TryParseRouteExpression%2A> method strips leading and trailing spaces from the expression, and then splits it into key/value pairs by using commas as delimiters. If the route key named `RouteName` is found, that value is passed back in the `routeName` parameter and not in `routeValues`. Otherwise, `null` is returned for `routeName`. Leading and trailing spaces are also stripped from individual keys and values.  
-  
- The <xref:System.Web.Compilation.RouteUrlExpressionBuilder.TryParseRouteExpression%2A> method returns `false` if the expression is not composed of at least one key/value pair that is in the format *key*`=`*value*, and that uses commas to separate multiple pairs.  
-  
+The <xref:System.Web.Compilation.RouteUrlExpressionBuilder.TryParseRouteExpression%2A> method strips leading and trailing spaces from the expression, and then splits it into key/value pairs by using commas as delimiters. If the route key named `RouteName` is found, that value is passed back in the `routeName` parameter and not in `routeValues`. Otherwise, `null` is returned for `routeName`. Leading and trailing spaces are also stripped from individual keys and values.  
+ 
+The <xref:System.Web.Compilation.RouteUrlExpressionBuilder.TryParseRouteExpression%2A> method returns `false` if the expression is not composed of at least one key/value pair that is in the format *key*`=`*value*, and that uses commas to separate multiple pairs.  
+ 
  ]]></format>
         </remarks>
       </Docs>

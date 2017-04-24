@@ -23,14 +23,14 @@
     <summary>Enables sharing of data across activity code generators during the code generation phase of compilation. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Implements the <xref:System.IServiceProvider> interface.  
-  
+ 
+Implements the <xref:System.IServiceProvider> interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,10 +114,10 @@
         <returns>The service object of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method cannot be overridden.  
-  
+This method cannot be overridden.  
+ 
  ]]></format>
         </remarks>
       </Docs>

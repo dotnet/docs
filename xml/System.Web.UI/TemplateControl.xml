@@ -21,28 +21,28 @@
     <summary>Provides the <see cref="T:System.Web.UI.Page" /> class and the <see cref="T:System.Web.UI.UserControl" /> class with a base set of functionality.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl> class is an abstract class that provides common properties and methods for the <xref:System.Web.UI.Page> class and the <xref:System.Web.UI.UserControl> class. A new instance of the <xref:System.Web.UI.TemplateControl> is not created directly.  
-  
- The <xref:System.Web.UI.TemplateControl> class defines methods supporting declarative data-binding expressions:  
-  
+The <xref:System.Web.UI.TemplateControl> class is an abstract class that provides common properties and methods for the <xref:System.Web.UI.Page> class and the <xref:System.Web.UI.UserControl> class. A new instance of the <xref:System.Web.UI.TemplateControl> is not created directly.  
+ 
+The <xref:System.Web.UI.TemplateControl> class defines methods supporting declarative data-binding expressions:  
+ 
 -   Use the <xref:System.Web.UI.TemplateControl.Eval%2A> method for data-binding expression involving data sources, such as simple properties or expressions.  
-  
+ 
 -   Use the <xref:System.Web.UI.TemplateControl.XPath%2A> method for parsing and evaluating an XPath data-binding expression.  
-  
+ 
 -   Use the <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method for data-binding against an expression containing an XPath select statement. The result is a node collection that implements the <xref:System.Collections.IEnumerable> interface.  
+ 
+For more information on data-binding expression, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/en-us/676beb1d-ddfa-4153-bba8-3c86dcb7ceca) and [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ 
   
- For more information on data-binding expression, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/en-us/676beb1d-ddfa-4153-bba8-3c86dcb7ceca) and [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to derive a control named `MyControl` from the <xref:System.Web.UI.TemplateControl> class and override the <xref:System.Web.UI.TemplateControl.Construct%2A> method.  When `MyControl` is initialized, the overridden <xref:System.Web.UI.TemplateControl.Construct%2A> method is called.  
-  
- [!code-csharp[TemplateControl_Sample1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_Sample1/CS/tempcontrol_samples1.ascx.cs#1)]
- [!code-vb[TemplateControl_Sample1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_Sample1/VB/tempcontrol_samples1.ascx.vb#1)]  
-  
+The following code example demonstrates how to derive a control named `MyControl` from the <xref:System.Web.UI.TemplateControl> class and override the <xref:System.Web.UI.TemplateControl.Construct%2A> method.  When `MyControl` is initialized, the overridden <xref:System.Web.UI.TemplateControl.Construct%2A> method is called.  
+ 
+[!code-csharp[TemplateControl_Sample1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_Sample1/CS/tempcontrol_samples1.ascx.cs#1)]
+[!code-vb[TemplateControl_Sample1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_Sample1/VB/tempcontrol_samples1.ascx.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TemplateControl" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.%23ctor%2A> constructor is not called directly.  
-  
+The <xref:System.Web.UI.TemplateControl.%23ctor%2A> constructor is not called directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,13 +85,13 @@
         <summary>Occurs when a user ends a transaction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to register a custom event handler for the <xref:System.Web.UI.TemplateControl.AbortTransaction> event. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
-  
- [!code-csharp[TemplateControl_OnCommitTransaction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#1)]
- [!code-vb[TemplateControl_OnCommitTransaction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#1)]  
-  
+The following code example demonstrates how to register a custom event handler for the <xref:System.Web.UI.TemplateControl.AbortTransaction> event. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
+ 
+[!code-csharp[TemplateControl_OnCommitTransaction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#1)]
+[!code-vb[TemplateControl_OnCommitTransaction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,12 +121,12 @@
         <value>A string representing the path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the file that defines a <xref:System.Web.UI.TemplateControl> control resides in a directory other than that of the page processing the request, use the <xref:System.Web.UI.TemplateControl.AppRelativeVirtualPath%2A> property to return the application-relative, virtual path to the <xref:System.Web.UI.TemplateControl>.  
-  
- The <xref:System.Web.UI.Control.AppRelativeTemplateSourceDirectory%2A> property is set based on the virtual path that is set in the <xref:System.Web.UI.TemplateControl.AppRelativeVirtualPath%2A> property.  
-  
+When the file that defines a <xref:System.Web.UI.TemplateControl> control resides in a directory other than that of the page processing the request, use the <xref:System.Web.UI.TemplateControl.AppRelativeVirtualPath%2A> property to return the application-relative, virtual path to the <xref:System.Web.UI.TemplateControl>.  
+ 
+The <xref:System.Web.UI.Control.AppRelativeTemplateSourceDirectory%2A> property is set based on the virtual path that is set in the <xref:System.Web.UI.TemplateControl.AppRelativeVirtualPath%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The path that is set is <see langword="null" />.</exception>
@@ -175,13 +175,13 @@
         <summary>Occurs when a transaction completes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to register a custom event handler for the <xref:System.Web.UI.TemplateControl.CommitTransaction> event. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
-  
- [!code-csharp[TemplateControl_OnCommitTransaction#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#2)]
- [!code-vb[TemplateControl_OnCommitTransaction#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#2)]  
-  
+The following code example demonstrates how to register a custom event handler for the <xref:System.Web.UI.TemplateControl.CommitTransaction> event. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
+ 
+[!code-csharp[TemplateControl_OnCommitTransaction#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#2)]
+[!code-vb[TemplateControl_OnCommitTransaction#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,20 +203,20 @@
         <summary>Performs design-time logic.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.Construct%2A> method allows design-time code execution of the <xref:System.Web.UI.Page> and <xref:System.Web.UI.UserControl> controls.  
+The <xref:System.Web.UI.TemplateControl.Construct%2A> method allows design-time code execution of the <xref:System.Web.UI.Page> and <xref:System.Web.UI.UserControl> controls.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.TemplateControl.Construct%2A> method of a custom control that is derived from the <xref:System.Web.UI.TemplateControl> class.  
-  
- For the full definition of the `MyControl` class, see <xref:System.Web.UI.TemplateControl>.  
-  
- [!code-csharp[TemplateControl_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_Sample1/CS/tempcontrol_samples1.ascx.cs#2)]
- [!code-vb[TemplateControl_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_Sample1/VB/tempcontrol_samples1.ascx.vb#2)]  
-  
+The following code example demonstrates how to override the <xref:System.Web.UI.TemplateControl.Construct%2A> method of a custom control that is derived from the <xref:System.Web.UI.TemplateControl> class.  
+ 
+For the full definition of the `MyControl` class, see <xref:System.Web.UI.TemplateControl>.  
+ 
+[!code-csharp[TemplateControl_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_Sample1/CS/tempcontrol_samples1.ascx.cs#2)]
+[!code-vb[TemplateControl_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_Sample1/VB/tempcontrol_samples1.ascx.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,10 +246,10 @@
         <returns>A <see cref="T:System.Web.UI.LiteralControl" /> representing a literal string in a resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl%2A> method is used to access literal strings that are stored in a resource and is not intended for use from within your code.  
-  
+The <xref:System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl%2A> method is used to access literal strings that are stored in a resource and is not intended for use from within your code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -277,10 +277,10 @@
           <see langword="true" /> to use themes; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.EnableTheming%2A> property indicates whether themes are enabled for the control that is derived from the <xref:System.Web.UI.TemplateControl> class. When the <xref:System.Web.UI.TemplateControl.EnableTheming%2A> property is `true`, the theme directory for the application is searched for control skins to apply. If no skin for the particular control exists in the theme directory, skins are not applied.  
-  
+The <xref:System.Web.UI.TemplateControl.EnableTheming%2A> property indicates whether themes are enabled for the control that is derived from the <xref:System.Web.UI.TemplateControl> class. When the <xref:System.Web.UI.TemplateControl.EnableTheming%2A> property is `true`, the theme directory for the application is searched for control skins to apply. If no skin for the particular control exists in the theme directory, skins are not applied.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,12 +323,12 @@
         <returns>An object that results from the evaluation of the data-binding expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of `expression` must evaluate to a public property.  
-  
- The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
-  
+The value of `expression` must evaluate to a public property.  
+ 
+The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
@@ -363,12 +363,12 @@
         <returns>A string that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of `expression` must evaluate to a public property.  
-  
- The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
-  
+The value of `expression` must evaluate to a public property.  
+ 
+The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can only be used for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
@@ -402,10 +402,10 @@
         <summary>Initializes the control that is derived from the <see cref="T:System.Web.UI.TemplateControl" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not override the <xref:System.Web.UI.TemplateControl.FrameworkInitialize%2A> method.  
-  
+Do not override the <xref:System.Web.UI.TemplateControl.FrameworkInitialize%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,18 +433,18 @@
         <returns>An object representing the requested resource object; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
+Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetGlobalResourceObject%2A> method to access a string named `GlobalResourceString1` from a global resource named `MyResource.resx` in the App_GlobalResources folder. The `className` parameter is `MyResource` without the .resx extension.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetGlobalResourceObject%2A> method to access a string named `GlobalResourceString1` from a global resource named `MyResource.resx` in the App_GlobalResources folder. The `className` parameter is `MyResource` without the .resx extension.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -476,10 +476,10 @@
         <returns>An object representing the requested resource object; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
-  
+Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -505,18 +505,18 @@
         <returns>An object representing the requested resource object; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
+Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetLocalResourceObject%2A> method to access a string named `LocalResourceString1` from a local page resource that is located in the App_LocalResources folder.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetLocalResourceObject%2A> method to access a string named `LocalResourceString1` from a local page resource that is located in the App_LocalResources folder.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -546,10 +546,10 @@
         <returns>An object representing the requested resource object; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
-  
+Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,24 +575,24 @@
         <returns>Returns the specified <see cref="T:System.Web.UI.Control" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the control supports caching, the object returned from the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method is not actually a <xref:System.Web.UI.Control> object; rather, it is a <xref:System.Web.UI.PartialCachingControl> object. If the `virtualPath` parameter is relative, the path of the loaded control is relative to the path of the <xref:System.Web.UI.TemplateControl>.  
+If the control supports caching, the object returned from the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method is not actually a <xref:System.Web.UI.Control> object; rather, it is a <xref:System.Web.UI.PartialCachingControl> object. If the `virtualPath` parameter is relative, the path of the loaded control is relative to the path of the <xref:System.Web.UI.TemplateControl>.  
+ 
+When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
+ 
   
- When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method to add a user control to an ASP.NET page.  
-  
- In the `OnInit` event method, this page uses the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method to programmatically create a user control on the page. The method adds the control to the <xref:System.Web.UI.Control.Controls%2A> property of a <xref:System.Web.UI.WebControls.PlaceHolder> Web server control named `Placeholder1`.  
-  
- For the definition of the `MyControl` class that is used in this code example, see <xref:System.Web.UI.TemplateControl>.  
-  
- [!code-csharp[TemplateControl_Sample1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_Sample1/CS/TempControl_Samples1.aspx#3)]
- [!code-vb[TemplateControl_Sample1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_Sample1/VB/tempcontrol_samples1.aspx#3)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method to add a user control to an ASP.NET page.  
+ 
+In the `OnInit` event method, this page uses the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method to programmatically create a user control on the page. The method adds the control to the <xref:System.Web.UI.Control.Controls%2A> property of a <xref:System.Web.UI.WebControls.PlaceHolder> Web server control named `Placeholder1`.  
+ 
+For the definition of the `MyControl` class that is used in this code example, see <xref:System.Web.UI.TemplateControl>.  
+ 
+[!code-csharp[TemplateControl_Sample1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_Sample1/CS/TempControl_Samples1.aspx#3)]
+[!code-vb[TemplateControl_Sample1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_Sample1/VB/tempcontrol_samples1.aspx#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The virtual path is <see langword="null" /> or empty.</exception>
@@ -621,12 +621,12 @@
         <returns>Returns the specified <see cref="T:System.Web.UI.UserControl" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the user control supports caching, the object returned from the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method is not actually a <xref:System.Web.UI.UserControl> object; rather, it is a <xref:System.Web.UI.PartialCachingControl> object.  
-  
- When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
-  
+If the user control supports caching, the object returned from the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method is not actually a <xref:System.Web.UI.UserControl> object; rather, it is a <xref:System.Web.UI.PartialCachingControl> object.  
+ 
+When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -652,13 +652,13 @@
         <returns>An instance of the specified template.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.LoadTemplate%2A> method to add a user control as an alternating item to a <xref:System.Web.UI.WebControls.DataList> Web server control named `DataList1`. The user control implements the <xref:System.Web.UI.ITemplate> interface and is contained in a file named Newtemplate.ascx.  
-  
- [!code-csharp[System.Web.UI.TemplateControl_LoadTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_LoadTemplate/CS/loadtemplatecs.aspx#1)]
- [!code-vb[System.Web.UI.TemplateControl_LoadTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_LoadTemplate/VB/loadtemplatevb.aspx#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.LoadTemplate%2A> method to add a user control as an alternating item to a <xref:System.Web.UI.WebControls.DataList> Web server control named `DataList1`. The user control implements the <xref:System.Web.UI.ITemplate> interface and is contained in a file named Newtemplate.ascx.  
+ 
+[!code-csharp[System.Web.UI.TemplateControl_LoadTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_LoadTemplate/CS/loadtemplatecs.aspx#1)]
+[!code-vb[System.Web.UI.TemplateControl_LoadTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_LoadTemplate/VB/loadtemplatevb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -683,13 +683,13 @@
         <summary>Raises the <see cref="E:System.Web.UI.TemplateControl.AbortTransaction" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.OnAbortTransaction%2A> and <xref:System.Web.UI.TemplateControl.OnCommitTransaction%2A> methods. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
-  
- [!code-csharp[TemplateControl_OnCommitTransaction#3](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#3)]
- [!code-vb[TemplateControl_OnCommitTransaction#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#3)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.OnAbortTransaction%2A> and <xref:System.Web.UI.TemplateControl.OnCommitTransaction%2A> methods. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
+ 
+[!code-csharp[TemplateControl_OnCommitTransaction#3](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#3)]
+[!code-vb[TemplateControl_OnCommitTransaction#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -714,18 +714,18 @@
         <summary>Raises the <see cref="E:System.Web.UI.TemplateControl.CommitTransaction" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.UI.TemplateControl.OnCommitTransaction%2A> method for any transaction processing logic in which your page or user control participates.  
+You can use the <xref:System.Web.UI.TemplateControl.OnCommitTransaction%2A> method for any transaction processing logic in which your page or user control participates.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.OnAbortTransaction%2A> and <xref:System.Web.UI.TemplateControl.OnCommitTransaction%2A> methods. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
-  
- [!code-csharp[TemplateControl_OnCommitTransaction#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#2)]
- [!code-vb[TemplateControl_OnCommitTransaction#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.OnAbortTransaction%2A> and <xref:System.Web.UI.TemplateControl.OnCommitTransaction%2A> methods. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
+ 
+[!code-csharp[TemplateControl_OnCommitTransaction#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#2)]
+[!code-vb[TemplateControl_OnCommitTransaction#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -750,61 +750,61 @@
         <summary>Raises the <see cref="E:System.Web.UI.TemplateControl.Error" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates a possible way to use of the <xref:System.Web.UI.TemplateControl.OnError%2A> method. It creates a string with some arguments that are not valid, which leads to an exception. Because the <xref:System.Web.UI.TemplateControl> class is an abstract class, this code example was written using the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class.  
-  
+The following code example demonstrates a possible way to use of the <xref:System.Web.UI.TemplateControl.OnError%2A> method. It creates a string with some arguments that are not valid, which leads to an exception. Because the <xref:System.Web.UI.TemplateControl> class is an abstract class, this code example was written using the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class.  
+ 
 ```vb  
 <%@ Page language="VB" %>  
- <html>  
-  <head>  
-  <script language="VB" runat="server">  
-  Sub Page_Load(sender as object, e as System.EventArgs)  
-  AddHandler Page.Error, AddressOf Error_Handler  
-  try  
-  Dim myString as string = "Hello"  
-  'An exception is raised because the length of 'myString' is less than '6'.  
-  Dim mySubString as string= myString.Substring(0,6)  
-  catch e1 As Exception  
-  OnError (EventArgs.Empty)  
-  End try  
-  End Sub  
-  Sub Error_Handler(sender as object,e as System.EventArgs)  
-  Response.Write("<br><b>An Error was raised</b>")  
-  End Sub  
-  </script>  
-  </head>  
- </html>  
+<html>  
+ <head>  
+ <script language="VB" runat="server">  
+ Sub Page_Load(sender as object, e as System.EventArgs)  
+ AddHandler Page.Error, AddressOf Error_Handler  
+ try  
+ Dim myString as string = "Hello"  
+ 'An exception is raised because the length of 'myString' is less than '6'.  
+ Dim mySubString as string= myString.Substring(0,6)  
+ catch e1 As Exception  
+ OnError (EventArgs.Empty)  
+ End try  
+ End Sub  
+ Sub Error_Handler(sender as object,e as System.EventArgs)  
+ Response.Write("<br><b>An Error was raised</b>")  
+ End Sub  
+ </script>  
+ </head>  
+</html>  
 ```  
-  
+ 
 ```csharp  
 <%@ Page language="c#" %>  
- <html>  
-  <head>  
-  <script language="C#" runat="server">  
-  void Page_Load(object sender, System.EventArgs e)  
-  {  
-  Page.Error += new System.EventHandler(Error_Handler);  
-  try  
-  {  
-  string myString = "Hello";  
-  // An exception is raised because the length of 'myString' is less than '6'.  
-  string mySubString = myString.Substring(0,6);  
-  }  
-  catch(Exception)  
-  {  
-  OnError(EventArgs.Empty);  
-  }  
-  }  
-  void Error_Handler(object sender,System.EventArgs e)  
-  {  
-  Response.Write("<br><b>An Error was raised</b>");  
-  }  
-  </script>  
-  </head>  
- </html>  
+<html>  
+ <head>  
+ <script language="C#" runat="server">  
+ void Page_Load(object sender, System.EventArgs e)  
+ {  
+ Page.Error += new System.EventHandler(Error_Handler);  
+ try  
+ {  
+ string myString = "Hello";  
+ // An exception is raised because the length of 'myString' is less than '6'.  
+ string mySubString = myString.Substring(0,6);  
+ }  
+ catch(Exception)  
+ {  
+ OnError(EventArgs.Empty);  
+ }  
+ }  
+ void Error_Handler(object sender,System.EventArgs e)  
+ {  
+ Response.Write("<br><b>An Error was raised</b>");  
+ }  
+ </script>  
+ </head>  
+</html>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -830,18 +830,18 @@
         <returns>The parsed <see cref="T:System.Web.UI.Control" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `content` parameter contains a user control, such as you would find in an .ascx file. This string cannot contain any code, because the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method never causes compilation.  
+The `content` parameter contains a user control, such as you would find in an .ascx file. This string cannot contain any code, because the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method never causes compilation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Button> Web server control using the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method, and then adds the result to the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.PlaceHolder> Web server control named `myPlaceholder`.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/CS/templatecontrol_parsecontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/VB/templatecontrol_parsecontrolvb.aspx#1)]  -->  
-  
+The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Button> Web server control using the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method, and then adds the result to the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.PlaceHolder> Web server control named `myPlaceholder`.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/CS/templatecontrol_parsecontrolcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/VB/templatecontrol_parsecontrolvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -869,12 +869,12 @@
         <returns>The parsed control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `content` parameter contains a user control (the contents of an .ascx file). This string cannot contain any code, because the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method never causes compilation.  
-  
- The `ignoreParserFilter` parameter allows the <xref:System.Web.UI.PageParserFilter> class to be ignored. The <xref:System.Web.UI.PageParserFilter> class is used by the ASP.NET parser to determine whether an item is allowed in the page at parse time.  
-  
+The `content` parameter contains a user control (the contents of an .ascx file). This string cannot contain any code, because the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method never causes compilation.  
+ 
+The `ignoreParserFilter` parameter allows the <xref:System.Web.UI.PageParserFilter> class to be ignored. The <xref:System.Web.UI.PageParserFilter> class is used by the ASP.NET parser to determine whether an item is allowed in the page at parse time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -902,10 +902,10 @@
         <returns>An object representing the resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.ReadStringResource%2A> method is not intended for use from within your code.  
-  
+The <xref:System.Web.UI.TemplateControl.ReadStringResource%2A> method is not intended for use from within your code.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.TemplateControl.ReadStringResource" /> is no longer supported.</exception>
@@ -937,10 +937,10 @@
         <returns>An object representing the resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.ReadStringResource%2A> method is not intended for use from within your code.  
-  
+The <xref:System.Web.UI.TemplateControl.ReadStringResource%2A> method is not intended for use from within your code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -995,10 +995,10 @@
         <value>Always<see langword=" true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.SupportAutoEvents%2A> property indicates whether automatic events are supported. The <xref:System.Web.UI.TemplateControl.SupportAutoEvents%2A> property is read-only and is `true` for all cases.  
-  
+The <xref:System.Web.UI.TemplateControl.SupportAutoEvents%2A> property indicates whether automatic events are supported. The <xref:System.Web.UI.TemplateControl.SupportAutoEvents%2A> property is read-only and is `true` for all cases.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1026,10 +1026,10 @@
         <returns>1, if <paramref name="filter1" /> is a parent of <paramref name="filter2" />; -1, if <paramref name="filter2" /> is a parent of <paramref name="filter1" />; otherwise, 0, if there is no parent/child relationship between <paramref name="filter1" /> and <paramref name="filter2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.System%23Web%23UI%23IFilterResolutionService%23CompareFilters%2A> method is part of the <xref:System.Web.UI.IFilterResolutionService> interface, which is specific to how a control uses device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> provides a way to determine if the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
-  
+The <xref:System.Web.UI.TemplateControl.System%23Web%23UI%23IFilterResolutionService%23CompareFilters%2A> method is part of the <xref:System.Web.UI.IFilterResolutionService> interface, which is specific to how a control uses device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> provides a way to determine if the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1056,10 +1056,10 @@
           <see langword="true" /> if the specified filter is a type applicable to the current filter object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.System%23Web%23UI%23IFilterResolutionService%23EvaluateFilter%2A> method is part of the <xref:System.Web.UI.IFilterResolutionService> interface, which is specific to how a control uses device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> provides a way to determine if the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
-  
+The <xref:System.Web.UI.TemplateControl.System%23Web%23UI%23IFilterResolutionService%23EvaluateFilter%2A> method is part of the <xref:System.Web.UI.IFilterResolutionService> interface, which is specific to how a control uses device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> provides a way to determine if the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1086,10 +1086,10 @@
           <see langword="true" /> if the client browser specified in <paramref name="filterName" /> is the same as the specified browser; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.TestDeviceFilter%2A> method invokes the <xref:System.Web.Configuration.HttpCapabilitiesBase.IsBrowser%2A> method. For more information on device filtering, see [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19).  
-  
+The <xref:System.Web.UI.TemplateControl.TestDeviceFilter%2A> method invokes the <xref:System.Web.Configuration.HttpCapabilitiesBase.IsBrowser%2A> method. For more information on device filtering, see [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1153,33 +1153,33 @@
         <returns>An object that results from the evaluation of the data-binding expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPath%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
-  
- The following test XML data can be used in the preceding code example.  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPath%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
+ 
+The following test XML data can be used in the preceding code example.  
+ 
 ```  
 <contacts>  
-   <contact id="1">  
-     <name>contact name 1</name>  
-     <note>contact note 1</note>  
-   </contact>  
-   <contact id="2">  
-     <name>contact name 2</name>  
-     <note>contact note 2</note>  
-   </contact>  
+  <contact id="1">  
+    <name>contact name 1</name>  
+    <note>contact note 1</note>  
+  </contact>  
+  <contact id="2">  
+    <name>contact name 2</name>  
+    <note>contact note 2</note>  
+  </contact>  
 </contacts>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
@@ -1208,10 +1208,10 @@
         <returns>A string that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
@@ -1240,10 +1240,10 @@
         <returns>An object that results from the evaluation of the data-binding expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
@@ -1274,10 +1274,10 @@
         <returns>A string that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
@@ -1304,33 +1304,33 @@
         <returns>An <see cref="T:System.Collections.IEnumerable" /> node list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
-  
- The following test XML data can be used in the preceding code example.  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
+ 
+The following test XML data can be used in the preceding code example.  
+ 
 ```  
 <contacts>  
-   <contact id="1">  
-     <name>contact name 1</name>  
-     <note>contact note 1</note>  
-   </contact>  
-   <contact id="2">  
-     <name>contact name 2</name>  
-     <note>contact note 2</note>  
-   </contact>  
+  <contact id="1">  
+    <name>contact name 1</name>  
+    <note>contact note 1</note>  
+  </contact>  
+  <contact id="2">  
+    <name>contact name 2</name>  
+    <note>contact note 2</note>  
+  </contact>  
 </contacts>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1358,10 +1358,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerable" /> node list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1375,10 +1375,10 @@
         <summary>Parses an input string into a <see cref="T:System.Web.UI.Control" /> object on the ASP.NET Web page or user control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.TemplateControl.ParseControl%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.UI.TemplateControl.ParseControl%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1392,10 +1392,10 @@
         <summary>Loads a <see cref="T:System.Web.UI.Control" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
-  
+When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,18 +23,18 @@
     <summary>Provides detailed information about a <see langword="TextFragment" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Synthesis.TtsEngine.FragmentState> instances are obtained from the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.State%2A> on <xref:System.Speech.Synthesis.TtsEngine.TextFragment> objects.  
-  
- The information in <xref:System.Speech.Synthesis.TtsEngine.FragmentState> is obtained by parsing the attributes decorating speech text in the Synthesize Speech Markup Language (SSML) used as an input to a synthesis engine.  
-  
- A <xref:System.Speech.Synthesis.TtsEngine.FragmentState> object can exist for any synthesizer action request as specified by its <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> property. However, the meaning of its members may change for different actions. For more information on synthesize actions, see <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> for more information about specifying synthesizer actions.  
-  
+<xref:System.Speech.Synthesis.TtsEngine.FragmentState> instances are obtained from the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.State%2A> on <xref:System.Speech.Synthesis.TtsEngine.TextFragment> objects.  
+ 
+The information in <xref:System.Speech.Synthesis.TtsEngine.FragmentState> is obtained by parsing the attributes decorating speech text in the Synthesize Speech Markup Language (SSML) used as an input to a synthesis engine.  
+ 
+A <xref:System.Speech.Synthesis.TtsEngine.FragmentState> object can exist for any synthesizer action request as specified by its <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> property. However, the meaning of its members may change for different actions. For more information on synthesize actions, see <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> for more information about specifying synthesizer actions.  
+ 
 -   Specification and control of the quality of the spoken output is largely handled through the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Prosody%2A>, <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A>, and <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Duration%2A>  
-  
+ 
 -   Phonetic, language, and linguist structure information is available through <xref:System.Speech.Synthesis.TtsEngine.FragmentState.LangId%2A>, <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Phoneme%2A>, and <xref:System.Speech.Synthesis.TtsEngine.FragmentState.SayAs%2A>.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,20 +78,20 @@
         <summary>Constructs a new instance of <see langword="FragmentState" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, applications do not directly construct <xref:System.Speech.Synthesis.TtsEngine.FragmentState> objects. Instead, <xref:System.Speech.Synthesis.TtsEngine.FragmentState> instances are created by applications using the members of the <xref:System.Speech.Synthesis> name space.  
-  
- If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value specified by the `action` argument is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction>, the value supplied by the `emphasis` argument is either:  
-  
+Typically, applications do not directly construct <xref:System.Speech.Synthesis.TtsEngine.FragmentState> objects. Instead, <xref:System.Speech.Synthesis.TtsEngine.FragmentState> instances are created by applications using the members of the <xref:System.Speech.Synthesis> name space.  
+ 
+If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value specified by the `action` argument is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction>, the value supplied by the `emphasis` argument is either:  
+ 
 -   If positive, the time in millisecond to pause  
-  
+ 
 -   If negative a member of the <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak>enumeration  
-  
- If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value specified by the `action` argument is not <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction>`emphasis` argument must be of type <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord>.  
-  
- If the value of the `duration` argument and The <xref:System.Speech.Synthesis.TtsEngine.Prosody.Duration%2A> property or the <xref:System.Speech.Synthesis.TtsEngine.Prosody> object specified by the `prosody` argument differ, the value on the <xref:System.Speech.Synthesis.TtsEngine.Prosody> object is used.  
-  
+ 
+If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value specified by the `action` argument is not <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction>`emphasis` argument must be of type <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord>.  
+ 
+If the value of the `duration` argument and The <xref:System.Speech.Synthesis.TtsEngine.Prosody.Duration%2A> property or the <xref:System.Speech.Synthesis.TtsEngine.Prosody> object specified by the `prosody` argument differ, the value on the <xref:System.Speech.Synthesis.TtsEngine.Prosody> object is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,22 +149,22 @@
         <value>Returns an <see langword="int" /> value indicating how to emphasize a <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The interpretation of the value returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> depends on the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value returned by the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> property on the current <xref:System.Speech.Synthesis.TtsEngine.FragmentState>.  
-  
+The interpretation of the value returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> depends on the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value returned by the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> property on the current <xref:System.Speech.Synthesis.TtsEngine.FragmentState>.  
+ 
 1.  If the value of <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction>  
-  
-    -   If <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> is positive, the value returned should be interpreted as the length of the silence in milliseconds.  
-  
-    -   If <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> is negative, the value returned should be interpreted as a member of the <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak>.  
-  
-     Emphasis information returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> when the property <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> corresponds to the attributes of the `<break>` element of SSML input to a speech synthesizer engine.  
-  
+ 
+   -   If <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> is positive, the value returned should be interpreted as the length of the silence in milliseconds.  
+ 
+   -   If <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> is negative, the value returned should be interpreted as a member of the <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak>.  
+ 
+    Emphasis information returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> when the property <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> corresponds to the attributes of the `<break>` element of SSML input to a speech synthesizer engine.  
+ 
 2.  For all other values of <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A>, the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> values should be interpreted as being of <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord>.  
-  
-     Emphasis information returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> for spoken words corresponds to the attributes of the `<emphasis>` element of SSML input to a speech synthesizer engine.  
-  
+ 
+    Emphasis information returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> for spoken words corresponds to the attributes of the `<emphasis>` element of SSML input to a speech synthesizer engine.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
         <returns>Returns <see langword="true" />, if the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> and that obtained from the [Object](http://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) provided by the <paramref name="obj" /> argument describe the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state. Returns <see langword="false" /> if the current <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> and the <paramref name="obj" /> argument do not support the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method return false if the [Object](http://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) provided by the `obj` argument cannot be cast to <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
-  
+The method return false if the [Object](http://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) provided by the `obj` argument cannot be cast to <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <value>Returns an <see langword="int" /> containing an identifier for the language used by the current <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of <xref:System.Speech.Synthesis.TtsEngine.FragmentState.LangId%2A> are those used with the Windows Speech API (SAPI) and are generated from the "`xml:lang`" attribute on SSML input to a speech synthesizer engine.  
-  
+The value of <xref:System.Speech.Synthesis.TtsEngine.FragmentState.LangId%2A> are those used with the Windows Speech API (SAPI) and are generated from the "`xml:lang`" attribute on SSML input to a speech synthesizer engine.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,31 +287,31 @@
         <returns>Returns <see langword="true" /> if both instances of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" />, <paramref name="state1" /> and <paramref name="state2" />, describe the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state, otherwise <see langword="false" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Equals%28System.Speech.Synthesis.TtsEngine.FragmentState%2CSystem.Speech.Synthesis.TtsEngine.FragmentState%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Speech.Synthesis.TtsEngine.FragmentState state1, System.Speech.Synthesis.TtsEngine.FragmentState state2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Speech.Synthesis.TtsEngine.FragmentState state1, valuetype System.Speech.Synthesis.TtsEngine.FragmentState state2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.op_Inequality(System.Speech.Synthesis.TtsEngine.FragmentState,System.Speech.Synthesis.TtsEngine.FragmentState)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="state1" Type="System.Speech.Synthesis.TtsEngine.FragmentState" />
-        <Parameter Name="state2" Type="System.Speech.Synthesis.TtsEngine.FragmentState" />
-      </Parameters>
-      <Docs>
-        <param name="state1">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <c>state2</c> argument.</param>
-        <param name="state2">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <c>state1</c> argument.</param>
-        <summary>Determines if two instances of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> describes the different <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state.</summary>
-        <returns>Returns <see langword="true" /> if both instances of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" />, <paramref name="state1" /> and <paramref name="state2" />, do not describe the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state, otherwise <see langword="false" /> is returned.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Speech.Synthesis.TtsEngine.FragmentState state1, System.Speech.Synthesis.TtsEngine.FragmentState state2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Speech.Synthesis.TtsEngine.FragmentState state1, valuetype System.Speech.Synthesis.TtsEngine.FragmentState state2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.op_Inequality(System.Speech.Synthesis.TtsEngine.FragmentState,System.Speech.Synthesis.TtsEngine.FragmentState)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Speech</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="state1" Type="System.Speech.Synthesis.TtsEngine.FragmentState" />
+       <Parameter Name="state2" Type="System.Speech.Synthesis.TtsEngine.FragmentState" />
+     </Parameters>
+     <Docs>
+       <param name="state1">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <c>state2</c> argument.</param>
+       <param name="state2">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <c>state1</c> argument.</param>
+       <summary>Determines if two instances of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> describes the different <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state.</summary>
+       <returns>Returns <see langword="true" /> if both instances of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" />, <paramref name="state1" /> and <paramref name="state2" />, do not describe the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state, otherwise <see langword="false" /> is returned.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Compare%28System.Speech.Synthesis.TtsEngine.FragmentState%2CSystem.Speech.Synthesis.TtsEngine.FragmentState%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -333,12 +333,12 @@
         <value>To be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information returned by the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Phoneme%2A> property corresponds to the `<phoneme>` XML tag of SSML input to a synthesis engine.  
-  
- The array of `char` objects returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Phoneme%2A> property expresses pronunciation using the International Phonetic Alphabet (IPA).  
-  
+The information returned by the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Phoneme%2A> property corresponds to the `<phoneme>` XML tag of SSML input to a synthesis engine.  
+ 
+The array of `char` objects returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Phoneme%2A> property expresses pronunciation using the International Phonetic Alphabet (IPA).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,10 +360,10 @@
         <value>Returns a valid instance of <see cref="T:System.Speech.Synthesis.TtsEngine.Prosody" /> containing the pitch, speaking rate, and volume settings, and changes to those setting, for speech output.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information returned by <xref:System.Speech.Synthesis.TtsEngine.Prosody> corresponds to the `<prosody>` XML tag in the SSML specification  
-  
+The information returned by <xref:System.Speech.Synthesis.TtsEngine.Prosody> corresponds to the `<prosody>` XML tag in the SSML specification  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,16 +385,16 @@
         <value>Returns a value <see cref="T:System.Speech.Synthesis.TtsEngine.SayAs" /> instance if the SSML used by a speech synthesis engine contains detailed information about the context to be used to generate speech, otherwise <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.SayAs%2A> corresponds to the `<say-as>` tag and its attributes in the SSML specification, and can specify:  
-  
+The information returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.SayAs%2A> corresponds to the `<say-as>` tag and its attributes in the SSML specification, and can specify:  
+ 
 -   The content type (such as currency, date, or address) or language construct represented by <xref:System.Speech.Synthesis.TtsEngine.TextFragment.TextToSpeak%2A> property of a <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
-  
+ 
 -   Optional formatting information to handle the content type represented by <xref:System.Speech.Synthesis.TtsEngine.TextFragment.TextToSpeak%2A> property of a <xref:System.Speech.Synthesis.TtsEngine.TextFragment>, for example, a date syntax.  
-  
+ 
 -   The detail to be used in generating speech from the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.TextToSpeak%2A> property of a <xref:System.Speech.Synthesis.TtsEngine.TextFragment>, for example, whether to explicitly render punctuation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

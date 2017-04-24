@@ -14,23 +14,23 @@
     <summary>Represents a cell that contains a link.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewLinkCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display links.  
+The <xref:System.Windows.Forms.DataGridViewLinkCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display links.  
+ 
+The <xref:System.Windows.Forms.DataGridViewLinkColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewLinkCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewLinkCell>, set the column's <xref:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate%2A> property to the cell to use as a pattern.  
+ 
+The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
+ 
   
- The <xref:System.Windows.Forms.DataGridViewLinkColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewLinkCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewLinkCell>, set the column's <xref:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate%2A> property to the cell to use as a pattern.  
-  
- The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewCell> as a template for a <xref:System.Windows.Forms.DataGridViewColumn>. Style changes made to any cell in the column affect all of the column's cells. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
-  
- [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#120)]
- [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#120)]
- [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#120)]  
-  
+The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewCell> as a template for a <xref:System.Windows.Forms.DataGridViewColumn>. Style changes made to any cell in the column affect all of the column's cells. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#120)]
+[!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#120)]
+[!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#120)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -70,19 +70,19 @@
         <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to display a link that is being selected. The default value is the user's Internet Explorer setting for the color of links in the hover state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.ActiveLinkColor%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.ActiveLinkColor%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
- [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
-  
+The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
+[!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
+[!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the cloned <see cref="T:System.Windows.Forms.DataGridViewLinkCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Windows.Forms.DataGridViewLinkCell.Clone%2A> method whenever you derive from <xref:System.Windows.Forms.DataGridViewLinkCell> and add new properties to the derived class.  
-  
+Override the <xref:System.Windows.Forms.DataGridViewLinkCell.Clone%2A> method whenever you derive from <xref:System.Windows.Forms.DataGridViewLinkCell> and add new properties to the derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -134,13 +134,13 @@
         <returns>A new <see cref="T:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject" /> for the <see cref="T:System.Windows.Forms.DataGridViewLinkCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewLinkCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject> property is referenced.  
-  
+If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewLinkCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject> property is referenced.  
+ 
 > [!NOTE]
 >  To get or set <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A>, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <value>Always <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As implemented in this class, this property always returns `null` because a <xref:System.Windows.Forms.DataGridViewLinkCell> cannot be edited.  
-  
+As implemented in this class, this property always returns `null` because a <xref:System.Windows.Forms.DataGridViewLinkCell> cannot be edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,13 +187,13 @@
         <value>The display <see cref="T:System.Type" /> of the cell value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
- [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
+[!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,12 +324,12 @@
           <see langword="true" /> if the SPACE key was released, the <see cref="P:System.Windows.Forms.DataGridViewLinkCell.TrackVisitedState" /> property is <see langword="true" />, the <see cref="P:System.Windows.Forms.DataGridViewLinkCell.LinkVisited" /> property is <see langword="false" />, and the CTRL, ALT, and SHIFT keys are not pressed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewLinkCell.KeyUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnKeyUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnKeyUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewLinkCell.KeyUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnKeyUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnKeyUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,21 +356,21 @@
         <value>One of the <see cref="T:System.Windows.Forms.LinkBehavior" /> values. The default is <see cref="F:System.Windows.Forms.LinkBehavior.SystemDefault" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Examples of link behavior include whether the link always displays an underline or the link only displays an underline when the mouse pointer moves over it, and whether a double click or a single click activates a link.  
+Examples of link behavior include whether the link always displays an underline or the link only displays an underline when the mouse pointer moves over it, and whether a double click or a single click activates a link.  
+ 
+Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.LinkBehavior%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.LinkBehavior%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
- [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
-  
+The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
+[!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
+[!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.LinkBehavior" /> value.</exception>
@@ -393,19 +393,19 @@
         <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to initially display a link. The default value is the user's Internet Explorer setting for the link color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkColor%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.LinkColor%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkColor%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.LinkColor%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkColor%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
- [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
-  
+The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkColor%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
+[!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
+[!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -428,12 +428,12 @@
           <see langword="true" /> if the link has been visited; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Forms.DataGridViewLinkCell.TrackVisitedState%2A> property is set to `true`, the <xref:System.Windows.Forms.DataGridViewLinkCell.LinkVisited%2A> property is automatically set when the link is visited.  
-  
- A link is visited if it has been activated by selecting it with the mouse or keyboard.  
-  
+When the <xref:System.Windows.Forms.DataGridViewLinkCell.TrackVisitedState%2A> property is set to `true`, the <xref:System.Windows.Forms.DataGridViewLinkCell.LinkVisited%2A> property is automatically set when the link is visited.  
+ 
+A link is visited if it has been activated by selecting it with the mouse or keyboard.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,12 +460,12 @@
           <see langword="true" /> if the mouse pointer is over the link; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewLinkCell.MouseDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseDown%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewLinkCell.MouseDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseDown%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,12 +492,12 @@
           <see langword="true" /> if the link displayed by the cell is not in the normal state; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewLinkCell.MouseLeaveUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseLeave%2A>. <xref:System.Windows.Forms.DataGridViewLinkCell.MouseLeaveUnsharesRow%2A> must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseLeave%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewLinkCell.MouseLeaveUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseLeave%2A>. <xref:System.Windows.Forms.DataGridViewLinkCell.MouseLeaveUnsharesRow%2A> must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseLeave%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -524,12 +524,12 @@
           <see langword="true" /> if the mouse pointer is over the link and the link is has not yet changed color to reflect the hover state; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewLinkCell.MouseMoveUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseMove%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseMove%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+The <xref:System.Windows.Forms.DataGridViewLinkCell.MouseMoveUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseMove%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseMove%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -556,12 +556,12 @@
           <see langword="true" /> if the mouse pointer is over the link; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewLinkCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
-  
+<xref:System.Windows.Forms.DataGridViewLinkCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
+ 
+For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -756,21 +756,21 @@
           <see langword="true" /> if the link changes color when it is selected; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When `false`, the <xref:System.Windows.Forms.DataGridViewLinkCell.LinkVisited%2A> property will not be automatically set to `true` when visited.  
+When `false`, the <xref:System.Windows.Forms.DataGridViewLinkCell.LinkVisited%2A> property will not be automatically set to `true` when visited.  
+ 
+Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.TrackVisitedState%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.TrackVisitedState%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.TrackVisitedState%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.TrackVisitedState%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.TrackVisitedState%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
- [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
-  
+The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.TrackVisitedState%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
+[!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
+[!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -798,19 +798,19 @@
           <see langword="true" /> if the column <see cref="P:System.Windows.Forms.DataGridViewLinkColumn.Text" /> property value is displayed as the link text; <see langword="false" /> if the cell <see cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" /> property value is displayed as the link text. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.UseColumnTextForLinkValue%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.UseColumnTextForLinkValue%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
- [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
-  
+The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
+[!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
+[!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -850,19 +850,19 @@
         <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to display a link that has been visited. The default value is the user's Internet Explorer setting for the visited link color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.VisitedLinkColor%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewLinkCell.VisitedLinkColor%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
- [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
-  
+The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#70)]
+[!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#70)]
+[!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/VB/employees.vb#70)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -30,22 +30,22 @@
     <summary>Controls the layout of an object when exported to unmanaged code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used with <xref:System.Runtime.InteropServices.StructLayoutAttribute>. The common language runtime uses the `Auto` layout value by default. To reduce layout-related problems associated with the `Auto` value, C#, Visual Basic, and C++ compilers specify `Sequential` layout for value types.  
-  
+This enumeration is used with <xref:System.Runtime.InteropServices.StructLayoutAttribute>. The common language runtime uses the `Auto` layout value by default. To reduce layout-related problems associated with the `Auto` value, C#, Visual Basic, and C++ compilers specify `Sequential` layout for value types.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Runtime.InteropServices.StructLayoutAttribute.Pack?displayProperty=fullName> field controls the alignment of data fields, and thus affects the layout regardless of the <xref:System.Runtime.InteropServices.LayoutKind> value you specify. By default, the value of <xref:System.Runtime.InteropServices.StructLayoutAttribute.Pack> is 0, which indicates the default packing size for the current platform. For example, when you use the `Explicit` layout value and specify field alignments on byte boundaries, you must set <xref:System.Runtime.InteropServices.StructLayoutAttribute.Pack> to 1 to get the desired result.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the managed declaration of the `PtInRect` function, which checks whether a point lies within a rectangle, and defines a `Point` structure with Sequential layout and a `Rect` structure with Explicit layout.  
-  
- [!code-cpp[LayoutKind#1](~/samples/snippets/cpp/VS_Snippets_CLR/LayoutKind/CPP/layoutkind.cpp#1)]
- [!code-csharp[LayoutKind#1](~/samples/snippets/csharp/VS_Snippets_CLR/LayoutKind/CS/layoutkind.cs#1)]
- [!code-vb[LayoutKind#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/LayoutKind/VB/layoutkind.vb#1)]  
-  
+The following example shows the managed declaration of the `PtInRect` function, which checks whether a point lies within a rectangle, and defines a `Point` structure with Sequential layout and a `Rect` structure with Explicit layout.  
+ 
+[!code-cpp[LayoutKind#1](~/samples/snippets/cpp/VS_Snippets_CLR/LayoutKind/CPP/layoutkind.cpp#1)]
+[!code-csharp[LayoutKind#1](~/samples/snippets/csharp/VS_Snippets_CLR/LayoutKind/CS/layoutkind.cs#1)]
+[!code-vb[LayoutKind#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/LayoutKind/VB/layoutkind.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

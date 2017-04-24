@@ -22,35 +22,35 @@
     <summary>Creates and manages the channels that are used by clients to send messages to service endpoints.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channel factories that implement the <xref:System.ServiceModel.Channels.IChannelFactory> interface and their associated channels are generally used by the initiators of a communication pattern. Listener factories that implement the <xref:System.ServiceModel.Channels.IChannelListener> interface and their associated listeners provide the mechanisms with which channels are accepted for communications.  
-  
- This class is not part of the channel model, but of the service model. The <xref:System.ServiceModel.ChannelFactory.CreateFactory%2A> method provides the means to create an <xref:System.ServiceModel.Channels.IChannelFactory> for a service endpoint. Use it to construct a client that hooks up to an interface contract on the service without using metadata or policy.  
-  
+Channel factories that implement the <xref:System.ServiceModel.Channels.IChannelFactory> interface and their associated channels are generally used by the initiators of a communication pattern. Listener factories that implement the <xref:System.ServiceModel.Channels.IChannelListener> interface and their associated listeners provide the mechanisms with which channels are accepted for communications.  
+ 
+This class is not part of the channel model, but of the service model. The <xref:System.ServiceModel.ChannelFactory.CreateFactory%2A> method provides the means to create an <xref:System.ServiceModel.Channels.IChannelFactory> for a service endpoint. Use it to construct a client that hooks up to an interface contract on the service without using metadata or policy.  
+ 
 > [!NOTE]
 >  Setting `ChannelFactory.Credentials.Windows.AllowedImpersonationLevel` to `TokenImpersonationLevel.Anonymous` always results in an anonymous logon regardless of impersonation level.  
-  
- Special note for Managed C++ users deriving from this class:  
-  
+ 
+Special note for Managed C++ users deriving from this class:  
+ 
 -   Put your cleanup code in (On)(Begin)Close (and/or OnAbort), not in a destructor.  
-  
+ 
 -   Avoid destructors; they cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
+ 
 -   Avoid non-reference members; they can cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
+ 
 -   Avoid using a finalizer; but if you include one, you should suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.  
+ 
+When adding behaviors programmatically, the behavior is added to the appropriate `Behaviors` property on the <xref:System.ServiceModel.ChannelFactory> prior to the creation of any channel. See the example section for a code sample.  
+ 
   
- When adding behaviors programmatically, the behavior is added to the appropriate `Behaviors` property on the <xref:System.ServiceModel.ChannelFactory> prior to the creation of any channel. See the example section for a code sample.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to insert programmatically a client behavior prior to the creation of the channel object by the factory.  
-  
- [!code-csharp[ChannelFactoryBehaviors#10](~/samples/snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs/client.cs#10)]
- [!code-vb[ChannelFactoryBehaviors#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelfactorybehaviors/vb/client.vb#10)]  
-  
+The following code example shows how to insert programmatically a client behavior prior to the creation of the channel object by the factory.  
+ 
+[!code-csharp[ChannelFactoryBehaviors#10](~/samples/snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs/client.cs#10)]
+[!code-vb[ChannelFactoryBehaviors#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelfactorybehaviors/vb/client.vb#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,10 +92,10 @@
         <summary>Initializes the channel factory with the behaviors provided by a specified configuration file and with those in the service endpoint of the channel factory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `configurationName` is `null`, only the behaviors specified in the service endpoint are loaded. If the wildcard, "*", is used, any endpoint configuration in the client configuration file is used, but only if there is precisely one. Otherwise an exception is thrown. Any other value for the `configurationName`, including the empty string "", matches the endpoint configuration with the same name. See the [WCF Client Configuration](~/docs/framework/wcf/feature-details/client-configuration.md) topic for a discussion of the client configuration.  
-  
+If `configurationName` is `null`, only the behaviors specified in the service endpoint are loaded. If the wildcard, "*", is used, any endpoint configuration in the client configuration file is used, but only if there is precisely one. Otherwise an exception is thrown. Any other value for the `configurationName`, including the empty string "", matches the endpoint configuration with the same name. See the [WCF Client Configuration](~/docs/framework/wcf/feature-details/client-configuration.md) topic for a discussion of the client configuration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The service endpoint of the channel factory is <see langword="null" />.</exception>
@@ -160,17 +160,17 @@
         <value>The <see cref="T:System.ServiceModel.Description.ClientCredentials" /> used by clients if they are configured for the factory or if the endpoint is non-<see langword="null" /> and is in either the created or opening communication state; otherwise <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.ClientCredentials> object is stored as a type of endpoint behavior and can be accessed through the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property.  
-  
- The <xref:System.ServiceModel.ChannelFactory.OnOpened%2A> method initializes a read-only copy of the <xref:System.ServiceModel.Description.ClientCredentials> object for the factory.  
-  
- The <xref:System.ServiceModel.Description.ClientCredentials> object is used by the <xref:System.ServiceModel.ClientBase%601> class (or a class that derives from this class) to create the proxy objects that can call services. The <xref:System.ServiceModel.Description.ClientCredentials> object is also accessible through the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property.  
-  
+The <xref:System.ServiceModel.Description.ClientCredentials> object is stored as a type of endpoint behavior and can be accessed through the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property.  
+ 
+The <xref:System.ServiceModel.ChannelFactory.OnOpened%2A> method initializes a read-only copy of the <xref:System.ServiceModel.Description.ClientCredentials> object for the factory.  
+ 
+The <xref:System.ServiceModel.Description.ClientCredentials> object is used by the <xref:System.ServiceModel.ClientBase%601> class (or a class that derives from this class) to create the proxy objects that can call services. The <xref:System.ServiceModel.Description.ClientCredentials> object is also accessible through the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property.  
+ 
 > [!NOTE]
 >  Setting `ChannelFactory.Credentials.Windows.AllowedImpersonationLevel` to `TokenImpersonationLevel.Anonymous` always results in an anonymous logon regardless of impersonation level.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@
         <value>The default <see cref="T:System.Timespan" /> that specifies how long the close operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets the default service model close time-out if both the <xref:System.ServiceModel.Description.ServiceEndpoint> and <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A> are `null`. The default value for the service model close time-out is 1 minute. Otherwise, the value is set to the <xref:System.ServiceModel.Channels.Binding.CloseTimeout%2A> value associated with the <xref:System.ServiceModel.Description.ServiceEndpoint>.  
-  
+Gets the default service model close time-out if both the <xref:System.ServiceModel.Description.ServiceEndpoint> and <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A> are `null`. The default value for the service model close time-out is 1 minute. Otherwise, the value is set to the <xref:System.ServiceModel.Channels.Binding.CloseTimeout%2A> value associated with the <xref:System.ServiceModel.Description.ServiceEndpoint>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,10 +219,10 @@
         <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the open operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets the default service model open time-out if both the <xref:System.ServiceModel.Description.ServiceEndpoint> and <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A> are `null`. The default value for the service model open time-out is 1 minute. Otherwise, the value is set to the <xref:System.ServiceModel.Channels.Binding.OpenTimeout%2A> value associated with the <xref:System.ServiceModel.Description.ServiceEndpoint>.  
-  
+Gets the default service model open time-out if both the <xref:System.ServiceModel.Description.ServiceEndpoint> and <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A> are `null`. The default value for the service model open time-out is 1 minute. Otherwise, the value is set to the <xref:System.ServiceModel.Channels.Binding.OpenTimeout%2A> value associated with the <xref:System.ServiceModel.Description.ServiceEndpoint>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,10 +264,10 @@
         <summary>Opens the current channel factory if it is not yet opened.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before opening the channel factory, checks that it is not <xref:System.ServiceModel.CommunicationState>, <xref:System.ServiceModel.CommunicationState>, or <xref:System.ServiceModel.CommunicationState>.  
-  
+Before opening the channel factory, checks that it is not <xref:System.ServiceModel.CommunicationState>, <xref:System.ServiceModel.CommunicationState>, or <xref:System.ServiceModel.CommunicationState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current factory is either closing or closed and so cannot be opened.</exception>
@@ -300,12 +300,12 @@
         <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this to retrieve capabilities, requirements and parameters from the channel stack. If a channel factory supports returning the requested object, it returns it. If not, it delegates the call down to the next level in the stack. If it gets to the bottom of the stack and no channel factory supported the requested object, then the method returns `null`.  
-  
- `T` is typically some channel interface that the channel factory can support. If, for example, `GetProperty<IChannelListener>` is called on a duplex channel factory, it returns the underlying listener.  
-  
+Use this to retrieve capabilities, requirements and parameters from the channel stack. If a channel factory supports returning the requested object, it returns it. If not, it delegates the call down to the next level in the stack. If it gets to the bottom of the stack and no channel factory supported the requested object, then the method returns `null`.  
+ 
+`T` is typically some channel interface that the channel factory can support. If, for example, `GetProperty<IChannelListener>` is called on a duplex channel factory, it returns the underlying listener.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,10 +331,10 @@
         <summary>Initializes the service endpoint of the channel factory with a specified endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.ServiceModel.ChannelFactory.InitializeEndpoint%28System.ServiceModel.Channels.Binding%2CSystem.ServiceModel.EndpointAddress%29> if you have just the binding. Use <xref:System.ServiceModel.ChannelFactory.InitializeEndpoint%28System.String%2CSystem.ServiceModel.EndpointAddress%29> if you have the configuration.  
-  
+Use <xref:System.ServiceModel.ChannelFactory.InitializeEndpoint%28System.ServiceModel.Channels.Binding%2CSystem.ServiceModel.EndpointAddress%29> if you have just the binding. Use <xref:System.ServiceModel.ChannelFactory.InitializeEndpoint%28System.String%2CSystem.ServiceModel.EndpointAddress%29> if you have the configuration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -364,10 +364,10 @@
         <summary>Initializes the service endpoint of the channel factory with a specified binding and address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.ServiceModel.ChannelFactory.InitializeEndpoint%28System.String%2CSystem.ServiceModel.EndpointAddress%29> if you have the configuration.  
-  
+Use <xref:System.ServiceModel.ChannelFactory.InitializeEndpoint%28System.String%2CSystem.ServiceModel.EndpointAddress%29> if you have the configuration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,10 +395,10 @@
         <summary>Initializes the service endpoint of the channel factory with a specified address and configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.ServiceModel.ChannelFactory.InitializeEndpoint%28System.ServiceModel.Channels.Binding%2CSystem.ServiceModel.EndpointAddress%29> if you have just the binding.  
-  
+Use <xref:System.ServiceModel.ChannelFactory.InitializeEndpoint%28System.ServiceModel.Channels.Binding%2CSystem.ServiceModel.EndpointAddress%29> if you have just the binding.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,10 +421,10 @@
         <summary>Terminates the inner channel factory of the current channel factory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.ChannelFactory.OnAbort%2A> method is called on a factory after it transitions to the closing state if the <xref:System.ServiceModel.Channels.CommunicationObject.Abort%2A> method is invoked.  
-  
+The <xref:System.ServiceModel.ChannelFactory.OnAbort%2A> method is called on a factory after it transitions to the closing state if the <xref:System.ServiceModel.Channels.CommunicationObject.Abort%2A> method is invoked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,10 +455,10 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either the asynchronous close on the inner channel factory returns or the time-out occurs.  
-  
+This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either the asynchronous close on the inner channel factory returns or the time-out occurs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,10 +489,10 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either the asynchronous open on the inner channel factory returns or the time-out occurs.  
-  
+This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either the asynchronous open on the inner channel factory returns or the time-out occurs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,10 +604,10 @@
         <summary>Initializes a read-only copy of the <see cref="T:System.ServiceModel.Description.ClientCredentials" /> object for the channel factory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides and invokes the <xref:System.ServiceModel.Channels.CommunicationObject.OnOpened%2A> method, which is called during the transition of an object into the opened state. The <xref:System.ServiceModel.Description.ClientCredentials> object is stored as a type of endpoint behavior and can be accessed through the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property.  
-  
+Overrides and invokes the <xref:System.ServiceModel.Channels.CommunicationObject.OnOpened%2A> method, which is called during the transition of an object into the opened state. The <xref:System.ServiceModel.Description.ClientCredentials> object is stored as a type of endpoint behavior and can be accessed through the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -661,10 +661,10 @@
         <summary>Initializes the service endpoint of the channel factory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must have an address to initialize an endpoint, but can have just the binding or configuration instead of the full endpoint.  
-  
+You must have an address to initialize an endpoint, but can have just the binding or configuration instead of the full endpoint.  
+ 
  ]]></format>
         </remarks>
       </Docs>

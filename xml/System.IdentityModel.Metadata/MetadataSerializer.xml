@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.MetadataSerializer" /> class with a default token serializer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=fullName>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=fullName>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=fullName>.  
-  
+The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=fullName>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=fullName>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.MetadataSerializer" /> class that uses the specified token serializer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=fullName>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=fullName>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=fullName>.  
-  
+The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=fullName>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=fullName>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -368,10 +368,10 @@
         <returns>The X.509 certificate that was created from the specified key identifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this method only supports key identifier clauses of type <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>. You can override this method to support other kinds of key identifier clauses. This method is invoked by the <xref:System.IdentityModel.Metadata.MetadataSerializer.ValidateSigningCredential%2A> method.  
-  
+By default, this method only supports key identifier clauses of type <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>. You can override this method to support other kinds of key identifier clauses. This method is invoked by the <xref:System.IdentityModel.Metadata.MetadataSerializer.ValidateSigningCredential%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -492,10 +492,10 @@
         <returns>The Saml2 attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation requires that the content of the Attribute element be a simple string. To handle complex content or content of declared simple types other than xs:string, override this method.  
-  
+The default implementation requires that the content of the Attribute element be a simple string. To handle complex content or content of declared simple types other than xs:string, override this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -906,10 +906,10 @@
         <returns>The descriptor. An instance of the <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> or <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata%2A> methods.  
-  
+This method is called by the <xref:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1314,10 +1314,10 @@
         <summary>Validates the X.509 certificate that signed the metadata document against the trusted issuers list specified by the <see cref="P:System.IdentityModel.Metadata.MetadataSerializer.TrustedIssuers" /> property. This method is invoked by the <see cref="M:System.IdentityModel.Metadata.MetadataSerializer.ValidateSigningCredential(System.IdentityModel.Tokens.SigningCredentials)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this method does not perform any validation. Provide your own implementation to perform trusted issuer validation.  
-  
+By default, this method does not perform any validation. Provide your own implementation to perform trusted issuer validation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

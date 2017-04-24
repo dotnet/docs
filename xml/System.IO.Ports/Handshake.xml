@@ -13,19 +13,19 @@
     <summary>Specifies the control protocol used in establishing a serial port communication for a <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used with the <xref:System.IO.Ports.SerialPort.Handshake%2A> property.  
+This enumeration is used with the <xref:System.IO.Ports.SerialPort.Handshake%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the possible values of the <xref:System.IO.Ports.Handshake> enumeration to the console, then prompts the user to choose one. This code example is part of a larger code example provided for the <xref:System.IO.Ports.SerialPort> class.  
-  
- [!code-cpp[System.IO.Ports.SerialPort#05](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cpp/serialport.cpp#05)]
- [!code-csharp[System.IO.Ports.SerialPort#05](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cs/SerialPort.cs#05)]
- [!code-vb[System.IO.Ports.SerialPort#05](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/vb/SerialPort.vb#05)]  
-  
+The following code example displays the possible values of the <xref:System.IO.Ports.Handshake> enumeration to the console, then prompts the user to choose one. This code example is part of a larger code example provided for the <xref:System.IO.Ports.SerialPort> class.  
+ 
+[!code-cpp[System.IO.Ports.SerialPort#05](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cpp/serialport.cpp#05)]
+[!code-csharp[System.IO.Ports.SerialPort#05](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cs/SerialPort.cs#05)]
+[!code-vb[System.IO.Ports.SerialPort#05](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/vb/SerialPort.vb#05)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -65,10 +65,10 @@
           <see langword="true" /> if value is commited; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value cannot be committed, the <xref:System.Windows.Forms.DataGridColumnStyle> remains editable.  
-  
+If the value cannot be committed, the <xref:System.Windows.Forms.DataGridColumnStyle> remains editable.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -20,10 +20,10 @@
     <summary>Defines a reference to a method that is called after a cache entry is removed from the cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.CacheEntryRemovedCallback> delegate passes information about the removed cache entry in the form of a <xref:System.Runtime.Caching.CacheEntryRemovedArguments> object.  
-  
+The <xref:System.Runtime.Caching.CacheEntryRemovedCallback> delegate passes information about the removed cache entry in the form of a <xref:System.Runtime.Caching.CacheEntryRemovedArguments> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,18 +14,18 @@
     <summary>Provides application-management functions and application services to a managed application within its application domain. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each managed application domain contains a static instance of the <xref:System.Web.Hosting.HostingEnvironment> class, which provides access to application-management functions and application services.  
+Each managed application domain contains a static instance of the <xref:System.Web.Hosting.HostingEnvironment> class, which provides access to application-management functions and application services.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is a webpage that displays the application information available from the <xref:System.Web.Hosting.HostingEnvironment> object.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.HostingEnvironment#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.HostingEnvironment/CS/hostingEnvironmentcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.HostingEnvironment#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.HostingEnvironment/VB/hostingEnvironmentvb.aspx#1)]  -->  
-  
+The following code example is a webpage that displays the application information available from the <xref:System.Web.Hosting.HostingEnvironment> object.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.HostingEnvironment#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.HostingEnvironment/CS/hostingEnvironmentcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.HostingEnvironment#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.HostingEnvironment/VB/hostingEnvironmentvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.HostingEnvironment" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.HostingEnvironment.%23ctor%2A> constructor initializes the <xref:System.Web.Hosting.HostingEnvironment> object. The <xref:System.Web.Hosting.HostingEnvironment.%23ctor%2A> constructor is called only once by the application's <xref:System.Web.Hosting.ApplicationManager> object. Calling the <xref:System.Web.Hosting.HostingEnvironment.%23ctor%2A> constructor more than once will cause an <xref:System.InvalidOperationException> exception to be thrown.  
-  
+The <xref:System.Web.Hosting.HostingEnvironment.%23ctor%2A> constructor initializes the <xref:System.Web.Hosting.HostingEnvironment> object. The <xref:System.Web.Hosting.HostingEnvironment.%23ctor%2A> constructor is called only once by the application's <xref:System.Web.Hosting.ApplicationManager> object. Calling the <xref:System.Web.Hosting.HostingEnvironment.%23ctor%2A> constructor more than once will cause an <xref:System.InvalidOperationException> exception to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Hosting.HostingEnvironment.#ctor" /> constructor is called more than once.</exception>
@@ -88,10 +88,10 @@
         <value>The unique identifier of the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application must be running with <xref:System.Web.AspNetHostingPermissionLevel> set to high trust to access the <xref:System.Web.Hosting.HostingEnvironment.ApplicationID%2A> property.  
-  
+The application must be running with <xref:System.Web.AspNetHostingPermissionLevel> set to high trust to access the <xref:System.Web.Hosting.HostingEnvironment.ApplicationID%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,13 +131,13 @@
         <value>The physical path on disk to the application's directory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath%2A> property to construct a path to a data file in the application's App_Data directory. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-csharp[System.Web.Hosting.VirtualPathProvider#27](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/SamplePathProvider.cs#27)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#27](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/SamplePathProvider.vb#27)]  
-  
+The following code example uses the <xref:System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath%2A> property to construct a path to a data file in the application's App_Data directory. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
+ 
+[!code-csharp[System.Web.Hosting.VirtualPathProvider#27](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/SamplePathProvider.cs#27)]
+[!code-vb[System.Web.Hosting.VirtualPathProvider#27](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/SamplePathProvider.vb#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <value>The root virtual path of the application with no trailing slash (/).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.HostingEnvironment.ApplicationVirtualPath%2A> property always returns "`/"` as the first character of the returned value. If the application is located in the root of the website, the return value is just "`/"`.  
-  
+The <xref:System.Web.Hosting.HostingEnvironment.ApplicationVirtualPath%2A> property always returns "`/"` as the first character of the returned value. If the application is located in the root of the website, the return value is just "`/"`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,14 +202,14 @@
         <summary>Reduces the count of busy objects in the hosted environment by one.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a busy registered object finishes its work, it calls the <xref:System.Web.Hosting.HostingEnvironment.DecrementBusyCount%2A> method to signal the <xref:System.Web.Hosting.HostingEnvironment> object that it has completed processing and to reduce the count of busy objects by one.  
-  
- If the busy count is greater than zero, the hosting application will not time out even if there are no pending requests.  
-  
- There must be a call to the <xref:System.Web.Hosting.HostingEnvironment.DecrementBusyCount%2A> method for each call to the <xref:System.Web.Hosting.HostingEnvironment.IncrementBusyCount%2A> method.  
-  
+When a busy registered object finishes its work, it calls the <xref:System.Web.Hosting.HostingEnvironment.DecrementBusyCount%2A> method to signal the <xref:System.Web.Hosting.HostingEnvironment> object that it has completed processing and to reduce the count of busy objects by one.  
+ 
+If the busy count is greater than zero, the hosting application will not time out even if there are no pending requests.  
+ 
+There must be a call to the <xref:System.Web.Hosting.HostingEnvironment.DecrementBusyCount%2A> method for each call to the <xref:System.Web.Hosting.HostingEnvironment.IncrementBusyCount%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@
         <returns>An <see cref="T:System.IDisposable" /> object that represents the Windows user prior to impersonation; this object can be used to revert to the original user's context.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.HostingEnvironment.Impersonate%2A> method impersonates the user that results after applying all  elements in the configuration settings affecting the specified virtual path. If an `identity` element is not specified for the virtual path, the <xref:System.Web.Hosting.HostingEnvironment.Impersonate%2A> method impersonates the specified Windows account.  
-  
+The <xref:System.Web.Hosting.HostingEnvironment.Impersonate%2A> method impersonates the user that results after applying all  elements in the configuration settings affecting the specified virtual path. If an `identity` element is not specified for the virtual path, the <xref:System.Web.Hosting.HostingEnvironment.Impersonate%2A> method impersonates the specified Windows account.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The process cannot impersonate.</exception>
@@ -325,14 +325,14 @@
         <summary>Increases the count of busy objects in the hosted environment by one.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Registered objects signal the <xref:System.Web.Hosting.HostingEnvironment> object that it is running and to increase the count of busy objects by one.  
-  
- If the busy count is greater than zero, the hosting application will not time out even if there are no pending requests.  
-  
- There must be a call to the <xref:System.Web.Hosting.HostingEnvironment.DecrementBusyCount%2A> method for each call to the <xref:System.Web.Hosting.HostingEnvironment.IncrementBusyCount%2A> method.  
-  
+Registered objects signal the <xref:System.Web.Hosting.HostingEnvironment> object that it is running and to increase the count of busy objects by one.  
+ 
+If the busy count is greater than zero, the hosting application will not time out even if there are no pending requests.  
+ 
+There must be a call to the <xref:System.Web.Hosting.HostingEnvironment.DecrementBusyCount%2A> method for each call to the <xref:System.Web.Hosting.HostingEnvironment.IncrementBusyCount%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <returns>Always <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method in its base class. It always returns `null` and prevents a lease from being created that would limit the <xref:System.Web.Hosting.HostingEnvironment> object's lifetime.  
-  
+This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method in its base class. It always returns `null` and prevents a lease from being created that would limit the <xref:System.Web.Hosting.HostingEnvironment> object's lifetime.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,14 +398,14 @@
         <summary>Starts shutting down the web application associated with this host and removes registered objects from the system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A> method to stop a web application domain and remove any objects registered with the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method. This method returns immediately, before the shutdown is complete.  
-  
- The <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is called on each registered object with the passed parameter set to `false` to allow each registered object to shut down asynchronously. After waiting for the amount of time specified in the `shutdownTimeout` attribute of the  configuration element, the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is called again with the passed parameter set to `true` for each registered object remaining.  
-  
- Once all registered objects have finished shutting down, the <xref:System.Web.Hosting.HostingEnvironment> objects shuts down the application domain.  
-  
+Use the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A> method to stop a web application domain and remove any objects registered with the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method. This method returns immediately, before the shutdown is complete.  
+ 
+The <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is called on each registered object with the passed parameter set to `false` to allow each registered object to shut down asynchronously. After waiting for the amount of time specified in the `shutdownTimeout` attribute of the  configuration element, the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is called again with the passed parameter set to `true` for each registered object remaining.  
+ 
+Once all registered objects have finished shutting down, the <xref:System.Web.Hosting.HostingEnvironment> objects shuts down the application domain.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -546,12 +546,12 @@
  Schedules a task which can run in the background, independent of any request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Differs from a normal ThreadPool work item in that ASP.NET can keep track of how many work items registered through this API are currently running, and the ASP.NET runtime will try to delay AppDomain shutdown until these work items have finished executing. This API cannot be called outside of an ASP.NET-managed AppDomain. The provided CancellationToken will be signaled when the application is shutting down.  
-  
- <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem%2A> takes a Task-returning callback; the work item will be considered finished when the callback returns.  
-  
+Differs from a normal ThreadPool work item in that ASP.NET can keep track of how many work items registered through this API are currently running, and the ASP.NET runtime will try to delay AppDomain shutdown until these work items have finished executing. This API cannot be called outside of an ASP.NET-managed AppDomain. The provided CancellationToken will be signaled when the application is shutting down.  
+ 
+<xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem%2A> takes a Task-returning callback; the work item will be considered finished when the callback returns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -578,12 +578,12 @@
  Schedules a task which can run in the background, independent of any request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Differs from a normal ThreadPool work item in that ASP.NET can keep track of how many work items registered through this API are currently running, and the ASP.NET runtime will try to delay AppDomain shutdown until these work items have finished executing. This API cannot be called outside of an ASP.NET-managed AppDomain. The provided CancellationToken will be signaled when the application is shutting down.  
-  
- <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem%2A> takes a Task-returning callback; the work item will be considered finished when the returned Task transitions to a terminal state.  
-  
+Differs from a normal ThreadPool work item in that ASP.NET can keep track of how many work items registered through this API are currently running, and the ASP.NET runtime will try to delay AppDomain shutdown until these work items have finished executing. This API cannot be called outside of an ASP.NET-managed AppDomain. The provided CancellationToken will be signaled when the application is shutting down.  
+ 
+<xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem%2A> takes a Task-returning callback; the work item will be considered finished when the returned Task transitions to a terminal state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,30 +608,30 @@
         <summary>Places an object in the list of registered objects for the application.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.ApplicationManager> class enables methods outside the current application domain to create, manage, and destroy objects inside the current application domain. The <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method is used to register previously created objects with the hosting environment. Objects registered with the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method must implement the <xref:System.Web.Hosting.IRegisteredObject> interface.  
-  
- To use a registered object, follow these steps:  
-  
+The <xref:System.Web.Hosting.ApplicationManager> class enables methods outside the current application domain to create, manage, and destroy objects inside the current application domain. The <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method is used to register previously created objects with the hosting environment. Objects registered with the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method must implement the <xref:System.Web.Hosting.IRegisteredObject> interface.  
+ 
+To use a registered object, follow these steps:  
+ 
 1.  Create a new instance of your registered object by calling the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A?displayProperty=fullName> method.  
-  
+ 
 2.  Call a type-specific method to initialize your new object. In the initialization method, call the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method to add the object to the list of registered objects.  
-  
+ 
 3.  Call the <xref:System.Web.Hosting.ApplicationManager.GetObject%2A?displayProperty=fullName> method to return the registered object when required.  
-  
+ 
 4.  When you wish to stop your object, call the <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=fullName> method. The <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=fullName> method in turn calls the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=fullName> method.  
-  
+ 
 5.  In the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=fullName> method, have your object call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is an implementation of a `Start` method for a registered object. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.IRegisteredObject> interface overview topic.  
-  
- [!code-csharp[System.Web.Hosting.ApplicationManager#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/CS/appManagercs.aspx.cs#2)]
- [!code-vb[System.Web.Hosting.ApplicationManager#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/VB/appManagervb.aspx.vb#2)]  
-  
+The following code example is an implementation of a `Start` method for a registered object. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.IRegisteredObject> interface overview topic.  
+ 
+[!code-csharp[System.Web.Hosting.ApplicationManager#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/CS/appManagercs.aspx.cs#2)]
+[!code-vb[System.Web.Hosting.ApplicationManager#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/VB/appManagervb.aspx.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -656,20 +656,20 @@
         <summary>Registers a new <see cref="T:System.Web.Hosting.VirtualPathProvider" /> instance with the ASP.NET compilation system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.HostingEnvironment.RegisterVirtualPathProvider%2A> method adds the specified <xref:System.Web.Hosting.VirtualPathProvider> instance to the application's list of virtual-path providers.  
+The <xref:System.Web.Hosting.HostingEnvironment.RegisterVirtualPathProvider%2A> method adds the specified <xref:System.Web.Hosting.VirtualPathProvider> instance to the application's list of virtual-path providers.  
+ 
+For more information, see the <xref:System.Web.Hosting.VirtualPathProvider> class overview.  
+ 
   
- For more information, see the <xref:System.Web.Hosting.VirtualPathProvider> class overview.  
-  
-   
-  
+ 
 ## Examples  
- The following code example is part of an application startup method that registers a custom <xref:System.Web.Hosting.VirtualPathProvider> instance with the compilation system. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-csharp[System.Web.Hosting.VirtualPathProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/AppStart.cs#11)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/AppStart.vb#11)]  
-  
+The following code example is part of an application startup method that registers a custom <xref:System.Web.Hosting.VirtualPathProvider> instance with the compilation system. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
+ 
+[!code-csharp[System.Web.Hosting.VirtualPathProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/AppStart.cs#11)]
+[!code-vb[System.Web.Hosting.VirtualPathProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/AppStart.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -692,10 +692,10 @@
         <returns>An <see cref="T:System.IDisposable" /> object that represents the culture prior to changing; this object can be used to revert to the previous culture.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) element in the application's configuration file.  
-  
+The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) element in the application's configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -721,10 +721,10 @@
         <returns>An <see cref="T:System.IDisposable" /> object that represents the culture prior to changing; this object can be used to revert to the previous culture.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture that results after applying all  elements in the configuration files affecting the specified virtual path.  
-  
+The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture that results after applying all  elements in the configuration files affecting the specified virtual path.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -783,10 +783,10 @@
  Occurs when the worker process or application pool associated with this host has stopped listening for new requests and will eventually shut down.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an application pool and its associated worker processes are being shut down by IIS, for example when an application pool has reached a scheduled recycle interval, IIS notifies the ASP.NET runtime that the application is shutting down and the worker process for the application pool stops listening for new requests. Applications that use long-running requests, for example [SignalR](http://go.microsoft.com/fwlink/?LinkID=285432) applications, can listen for the <xref:System.Web.Hosting.HostingEnvironment.StopListening> event and gracefully shut down their long-running operations when IIS has initiated the shutdown of an application pool and its associated worker processes.  
-  
+When an application pool and its associated worker processes are being shut down by IIS, for example when an application pool has reached a scheduled recycle interval, IIS notifies the ASP.NET runtime that the application is shutting down and the worker process for the application pool stops listening for new requests. Applications that use long-running requests, for example [SignalR](http://go.microsoft.com/fwlink/?LinkID=285432) applications, can listen for the <xref:System.Web.Hosting.HostingEnvironment.StopListening> event and gracefully shut down their long-running operations when IIS has initiated the shutdown of an application pool and its associated worker processes.  
+ 
 > [!WARNING]
 >  There are several design considerations that a developer must consider when implementing the <xref:System.Web.Hosting.HostingEnvironment.StopListening> event:  
 >   
@@ -796,7 +796,7 @@
 > 4.  The <xref:System.Web.Hosting.HostingEnvironment.StopListening> event can execute concurrently with other <xref:System.Web.Hosting.IRegisteredObject> notifications.  
 > 5.  Developers need to be aware that ASP.NET may shut down the application domain while their <xref:System.Web.Hosting.HostingEnvironment.StopListening> event is executing and design their implementations to handle that possibility.  
 > 6.  <xref:System.Web.Hosting.HostingEnvironment.StopListening> event handlers must not block; blocking implementations will result in deadlocks, and IIS will terminate the worker process when the rapid fail protection interval is reached.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -821,18 +821,18 @@
         <summary>Removes an object from the list of registered objects for the application.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.ApplicationManager> class enables methods outside the current application domain to create, manage, and destroy objects inside the current application domain. The <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method is used to remove previously registered objects from the hosting environment.  
+The <xref:System.Web.Hosting.ApplicationManager> class enables methods outside the current application domain to create, manage, and destroy objects inside the current application domain. The <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method is used to remove previously registered objects from the hosting environment.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method for a registered object. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.IRegisteredObject> interface overview topic.  
-  
- [!code-csharp[System.Web.Hosting.ApplicationManager#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/CS/appManagercs.aspx.cs#3)]
- [!code-vb[System.Web.Hosting.ApplicationManager#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/VB/appManagervb.aspx.vb#3)]  
-  
+The following code example is the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method for a registered object. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.IRegisteredObject> interface overview topic.  
+ 
+[!code-csharp[System.Web.Hosting.ApplicationManager#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/CS/appManagercs.aspx.cs#3)]
+[!code-vb[System.Web.Hosting.ApplicationManager#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/VB/appManagervb.aspx.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -854,10 +854,10 @@
         <value>The <see cref="T:System.Web.Hosting.VirtualPathProvider" /> instance for this application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When more than one <xref:System.Web.Hosting.VirtualPathProvider> instance is registered, the <xref:System.Web.Hosting.HostingEnvironment> object manages the call chain. You cannot control the order in which virtual path providers are called.  
-  
+When more than one <xref:System.Web.Hosting.VirtualPathProvider> instance is registered, the <xref:System.Web.Hosting.HostingEnvironment> object manages the call chain. You cannot control the order in which virtual path providers are called.  
+ 
  ]]></format>
         </remarks>
       </Docs>

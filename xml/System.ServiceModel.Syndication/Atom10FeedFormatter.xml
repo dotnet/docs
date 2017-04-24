@@ -27,21 +27,21 @@
     <summary>A class that serializes a <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance to and from Atom 1.0 format.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> from XML documents that represent Atom1.0 feeds. If you have derived a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and want to serialize it, use the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter%601> formatter.  
-  
+Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> from XML documents that represent Atom1.0 feeds. If you have derived a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and want to serialize it, use the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter%601> formatter.  
+ 
 > [!NOTE]
 >  The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation ignores the fractional seconds.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and serialize it to Atom 1.0.  
-  
- [!code-csharp[AtomFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#0)]
- [!code-vb[AtomFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#0)]  
-  
+The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and serialize it to Atom 1.0.  
+ 
+[!code-csharp[AtomFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#0)]
+[!code-vb[AtomFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,13 +64,13 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> and read in a syndication feed.  
-  
- [!code-csharp[AtomFormatter#1](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#1)]
- [!code-vb[AtomFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#1)]  
-  
+The following code shows how to create a <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> and read in a syndication feed.  
+ 
+[!code-csharp[AtomFormatter#1](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#1)]
+[!code-vb[AtomFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,13 +96,13 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and serialize it to Atom 1.0.  
-  
- [!code-csharp[AtomFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#0)]
- [!code-vb[AtomFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#0)]  
-  
+The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and serialize it to Atom 1.0.  
+ 
+[!code-csharp[AtomFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#0)]
+[!code-vb[AtomFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,18 +128,18 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to specify a class derived from <xref:System.ServiceModel.Syndication.SyndicationFeed> to instantiate when a syndication feed is read in.  
+Use this constructor to specify a class derived from <xref:System.ServiceModel.Syndication.SyndicationFeed> to instantiate when a syndication feed is read in.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to use this constructor.  
-  
- [!code-csharp[AtomFormatter#11](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#11)]
- [!code-vb[AtomFormatter#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#11)]  
-  
+The following code shows how to use this constructor.  
+ 
+[!code-csharp[AtomFormatter#11](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#11)]
+[!code-vb[AtomFormatter#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,18 +169,18 @@
         <returns>A value that specifies whether the <see cref="T:System.Xml.XmlReader" /> contains a valid Atom 1.0 syndication feed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not advance the reader to beyond the start element.  
+This method does not advance the reader to beyond the start element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to use the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter.CanRead%28System.Xml.XmlReader%29> method.  
-  
- [!code-csharp[AtomFormatter#12](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#12)]
- [!code-vb[AtomFormatter#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#12)]  
-  
+The following code shows how to use the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter.CanRead%28System.Xml.XmlReader%29> method.  
+ 
+[!code-csharp[AtomFormatter#12](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#12)]
+[!code-vb[AtomFormatter#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,10 +207,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is not automatically associated with the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> used to create it.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is not automatically associated with the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <value>A value that specifies whether to preserve attribute extensions during serialization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property is `true`. Attribute extensions are XML attributes that are not defined in the Atom 1.0 specification. This property determines whether to write these attributes during serialization. Similarly, this property determines whether to preserve unknown attributes inside the `AttributeExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance when deserializing an Atom1.0 feed.  
-  
+The default value of this property is `true`. Attribute extensions are XML attributes that are not defined in the Atom 1.0 specification. This property determines whether to write these attributes during serialization. Similarly, this property determines whether to preserve unknown attributes inside the `AttributeExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance when deserializing an Atom1.0 feed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <value>A value that specifies whether to preserve element extensions during serialization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property is `true`. Element extensions are XML elements that are not defined in the Atom 1.0 specification. This property determines whether to write these elements during serialization. Similarly, this property determines whether to preserve unknown elements inside the `ElementExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance when deserializing an Atom1.0 feed.  
-  
+The default value of this property is `true`. Element extensions are XML elements that are not defined in the Atom 1.0 specification. This property determines whether to write these elements during serialization. Similarly, this property determines whether to preserve unknown elements inside the `ElementExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance when deserializing an Atom1.0 feed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -319,13 +319,13 @@
         <summary>Reads an Atom 1.0 syndication feed from the specified <see cref="T:System.Xml.XmlReader" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to use the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter.ReadFrom%28System.Xml.XmlReader%29> method.  
-  
- [!code-csharp[AtomFormatter#12](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#12)]
- [!code-vb[AtomFormatter#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#12)]  
-  
+The following code shows how to use the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter.ReadFrom%28System.Xml.XmlReader%29> method.  
+ 
+[!code-csharp[AtomFormatter#12](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#12)]
+[!code-vb[AtomFormatter#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not add the newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instance to the <xref:System.ServiceModel.Syndication.SyndicationFeed>, because this is done by the caller of the method. This method provides an extensibility point for classes derived from <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> to customize how an Atom 1.0 entry is deserialized.  
-  
+This method does not add the newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instance to the <xref:System.ServiceModel.Syndication.SyndicationFeed>, because this is done by the caller of the method. This method provides an extensibility point for classes derived from <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> to customize how an Atom 1.0 entry is deserialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,10 +394,10 @@
         <returns>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instances.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not add the newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instances to the <xref:System.ServiceModel.Syndication.SyndicationFeed>, because this is done by the caller of the method. This method provides an extensibility point for classes derived from <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> to customize how the Atom entries get deserialized. For instance, derived classes could delay the reading of the Atom entry until the caller accesses the entry.  
-  
+This method does not add the newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instances to the <xref:System.ServiceModel.Syndication.SyndicationFeed>, because this is done by the caller of the method. This method provides an extensibility point for classes derived from <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> to customize how the Atom entries get deserialized. For instance, derived classes could delay the reading of the Atom entry until the caller accesses the entry.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,10 +425,10 @@
           <see langword="Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method to return your own schema.  
-  
+Override this method to return your own schema.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -504,10 +504,10 @@
         <value>The syndication version used by the formatter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports Atom 1.0 and RSS 2.0 syndication versions.  
-  
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports Atom 1.0 and RSS 2.0 syndication versions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,10 +540,10 @@
         <summary>Writes the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method to change the way a <xref:System.ServiceModel.Syndication.SyndicationItem> is written.  
-  
+Override this method to change the way a <xref:System.ServiceModel.Syndication.SyndicationItem> is written.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,10 +576,10 @@
         <summary>Writes a collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instances to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method to change the way a collection of <xref:System.ServiceModel.Syndication.SyndicationItem> objects.  
-  
+Override this method to change the way a collection of <xref:System.ServiceModel.Syndication.SyndicationItem> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,13 +608,13 @@
         <summary>Writes the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> associated with the <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter" /> to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to create a syndication feed and use a <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> to write the feed to an <xref:System.Xml.XmlWriter>.  
-  
- [!code-csharp[AtomFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#0)]
- [!code-vb[AtomFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#0)]  
-  
+The following code shows how to create a syndication feed and use a <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> to write the feed to an <xref:System.Xml.XmlWriter>.  
+ 
+[!code-csharp[AtomFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#0)]
+[!code-vb[AtomFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

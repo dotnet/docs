@@ -18,12 +18,12 @@
     <summary>Represents the default logger that outputs event data to the console (stdout).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class creates, wraps, and delegates to a `BaseConsoleLogger`, either `SerialConsoleLogger` or `ParallelConsoleLogger`.  
-  
- This class is not thread safe.  
-  
+This class creates, wraps, and delegates to a `BaseConsoleLogger`, either `SerialConsoleLogger` or `ParallelConsoleLogger`.  
+ 
+This class is not thread safe.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -107,10 +107,10 @@
         <summary>Applies a parameter to the logger.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Deprecated.  
-  
+Deprecated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <summary>Called when the build is finished.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The console logger does not need to release any resources. This method does nothing.  
-  
+The console logger does not need to release any resources. This method does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <value>Returns a switch that determines whether to suppress the display of project headers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Project headers are displayed by default unless this property is set.  
-  
+Project headers are displayed by default unless this property is set.  
+ 
  ]]></format>
         </remarks>
       </Docs>

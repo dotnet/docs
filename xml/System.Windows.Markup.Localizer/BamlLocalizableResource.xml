@@ -14,20 +14,20 @@
     <summary>Represents a localizable resource in a [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.Localizer.BamlLocalizableResource> class is the value component of the key-value pairs found in a <xref:System.Windows.Markup.Localizer.BamlLocalizationDictionary>.  
-  
+The <xref:System.Windows.Markup.Localizer.BamlLocalizableResource> class is the value component of the key-value pairs found in a <xref:System.Windows.Markup.Localizer.BamlLocalizationDictionary>.  
+ 
 <a name="xamlTextUsage_BamlLocalizableResource"></a>   
 ## XAML Text Usage  
-   
   
+ 
 ## Examples  
- The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizableResource>.  
-  
- [!code-csharp[GrabBaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GrabBaml/CSharp/GrabBaml.cs#1)]
- [!code-vb[GrabBaml#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GrabBaml/visualbasic/grabbaml.vb#1)]  
-  
+The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizableResource>.  
+ 
+[!code-csharp[GrabBaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GrabBaml/CSharp/GrabBaml.cs#1)]
+[!code-vb[GrabBaml#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GrabBaml/visualbasic/grabbaml.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,9 +92,9 @@
         <value>The localization category, as a value of the enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Category"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -118,10 +118,10 @@
         <value>The localization comment string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Localization comments are authored by the developer to provide rules or hints for localizers. The comments are free-form strings that are extracted from [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] or from localization comments files. To attach comments to an element in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], use the <xref:System.Windows.Localization.Comments%2A?displayProperty=fullName> attached property For more information on this attached property, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
-  
+Localization comments are authored by the developer to provide rules or hints for localizers. The comments are free-form strings that are extracted from [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] or from localization comments files. To attach comments to an element in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], use the <xref:System.Windows.Localization.Comments%2A?displayProperty=fullName> attached property For more information on this attached property, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+ 
 <a name="xamlTextUsage_Comments"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -145,12 +145,12 @@
         <value>The localizable content string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Child elements by default are represented as placeholders. The placeholder starts with a "#" character, then the child element’s UID, then a ";". For example, "#TextBlock1;#TextBlock2;". Normal "#" and ";" characters inside the content are escaped with a "\\". This applies to the actual "\\" character itself. The removal of child placeholders in content is not allowed, because an element may be referenced in code, which could cause the localized application to fail at run time. However, it is allowed to reorder them in localizations.  
-  
- Child elements in the content can also be formatted as XML markup to improve readability. To do so, when <xref:System.Windows.Markup.Localizer.BamlLocalizer> queries the <xref:System.Windows.Markup.Localizer.ElementLocalizability> of a desired element, set the <xref:System.Windows.Markup.Localizer.ElementLocalizability.FormattingTag%2A> property to the desired tag name.  
-  
+Child elements by default are represented as placeholders. The placeholder starts with a "#" character, then the child element’s UID, then a ";". For example, "#TextBlock1;#TextBlock2;". Normal "#" and ";" characters inside the content are escaped with a "\\". This applies to the actual "\\" character itself. The removal of child placeholders in content is not allowed, because an element may be referenced in code, which could cause the localized application to fail at run time. However, it is allowed to reorder them in localizations.  
+ 
+Child elements in the content can also be formatted as XML markup to improve readability. To do so, when <xref:System.Windows.Markup.Localizer.BamlLocalizer> queries the <xref:System.Windows.Markup.Localizer.ElementLocalizability> of a desired element, set the <xref:System.Windows.Markup.Localizer.ElementLocalizability.FormattingTag%2A> property to the desired tag name.  
+ 
 <a name="xamlTextUsage_Content"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -217,9 +217,9 @@
           <see langword="true" /> if the resource is modifiable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Modifiable"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -244,14 +244,14 @@
           <see langword="true" /> if the resource is visible for translation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.Localizer.BamlLocalizableResource.Readable%2A> value serves as a recommendation to the localizer about whether the content of the localizable resource can be directly translated as plain strings.  
-  
- For example, when the string "Red" is used as a UI string, it can be directly translated to another language. In this case the <xref:System.Windows.Markup.Localizer.BamlLocalizableResource.Readable%2A> property should be set to `true`.  
-  
- When the string "Red" is used as a predefined color value of a <xref:System.Windows.Media.Brush>, it cannot be translated. Therefore the <xref:System.Windows.Markup.Localizer.BamlLocalizableResource.Readable%2A> property should be set to `false`.  
-  
+The <xref:System.Windows.Markup.Localizer.BamlLocalizableResource.Readable%2A> value serves as a recommendation to the localizer about whether the content of the localizable resource can be directly translated as plain strings.  
+ 
+For example, when the string "Red" is used as a UI string, it can be directly translated to another language. In this case the <xref:System.Windows.Markup.Localizer.BamlLocalizableResource.Readable%2A> property should be set to `true`.  
+ 
+When the string "Red" is used as a predefined color value of a <xref:System.Windows.Media.Brush>, it cannot be translated. Therefore the <xref:System.Windows.Markup.Localizer.BamlLocalizableResource.Readable%2A> property should be set to `false`.  
+ 
 <a name="xamlTextUsage_Readable"></a>   
 ## XAML Text Usage  
  ]]></format>

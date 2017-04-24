@@ -19,14 +19,14 @@
     <summary>Provides functionality for constructing client-side channels, caching channels, and channel factories.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> is responsible for creating a channel for a <xref:System.Workflow.Activities.SendActivity> based on the channel token defined in the activity's <xref:System.Workflow.Activities.SendActivity.ChannelToken%2A>.  
-  
+ 
+The <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> is responsible for creating a channel for a <xref:System.Workflow.Activities.SendActivity> based on the channel token defined in the activity's <xref:System.Workflow.Activities.SendActivity.ChannelToken%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,13 +45,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object. This example was adapted from the `SequentialWorklowService` SDK sample.  
-  
- [!code-csharp[ChannelManagerService#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#0)]
- [!code-vb[ChannelManagerService#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#0)]  
-  
+The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object. This example was adapted from the `SequentialWorklowService` SDK sample.  
+ 
+[!code-csharp[ChannelManagerService#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#0)]
+[!code-vb[ChannelManagerService#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,20 +73,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> class are usually created by the runtime using configuration files.  
+Instances of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> class are usually created by the runtime using configuration files.  
+ 
+The endpoints defined in the service's constructor will be used to create channels that match the configuration name in the <xref:System.Workflow.Activities.SendActivity.ChannelToken%2A>. The endpoints defined in the configuration take precedence over the endpoints defined in code, so if a service endpoint added through code has the same name and contract type as one in the configuration file, then the endpoint defined in code will not be used.  
+ 
   
- The endpoints defined in the service's constructor will be used to create channels that match the configuration name in the <xref:System.Workflow.Activities.SendActivity.ChannelToken%2A>. The endpoints defined in the configuration take precedence over the endpoints defined in code, so if a service endpoint added through code has the same name and contract type as one in the configuration file, then the endpoint defined in code will not be used.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object. This example was adapted from the `WorkflowServiceUtility` SDK sample.  
-  
- [!code-csharp[ChannelManagerService#1](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#1)]
- [!code-vb[ChannelManagerService#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#1)]  
-  
+The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object. This example was adapted from the `WorkflowServiceUtility` SDK sample.  
+ 
+[!code-csharp[ChannelManagerService#1](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#1)]
+[!code-vb[ChannelManagerService#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,26 +108,26 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following parameters are supported:  
-  
+The following parameters are supported:  
+ 
 -   `idleTimeout`: The maximum <xref:System.TimeSpan> that a cached channel can be idle.  
-  
+ 
 -   `leaseTimeout`: The maximum <xref:System.TimeSpan> that a cached channel can be checked out or in use by a <xref:System.Workflow.Activities.SendActivity>.  
-  
+ 
 -   `maxIdleChannelsPerEndpoint`: The maximum number of idle channels matching a single endpoint that can be cached at any point.  
+ 
+Instances of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> class are usually created by the runtime using configuration files.  
+ 
   
- Instances of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> class are usually created by the runtime using configuration files.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object.  
-  
- [!code-csharp[ChannelManagerService#2](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#2)]
- [!code-vb[ChannelManagerService#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#2)]  
-  
+The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object.  
+ 
+[!code-csharp[ChannelManagerService#2](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#2)]
+[!code-vb[ChannelManagerService#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,13 +149,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object.  
-  
- [!code-csharp[ChannelManagerService#3](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#3)]
- [!code-vb[ChannelManagerService#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#3)]  
-  
+The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object.  
+ 
+[!code-csharp[ChannelManagerService#3](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#3)]
+[!code-vb[ChannelManagerService#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,13 +179,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object.  
-  
- [!code-csharp[ChannelManagerService#4](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#4)]
- [!code-vb[ChannelManagerService#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#4)]  
-  
+The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object.  
+ 
+[!code-csharp[ChannelManagerService#4](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#4)]
+[!code-vb[ChannelManagerService#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

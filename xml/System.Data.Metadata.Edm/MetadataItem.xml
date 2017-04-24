@@ -50,10 +50,10 @@
         <value>A <see cref="T:System.Data.Metadata.Edm.Documentation" /> object that represents the documentation on this type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property allows you to get and set the <xref:System.Data.Metadata.Edm.Documentation> object that represents the documentation associated with conceptual model constructs such as the <xref:System.Data.Metadata.Edm.EntityContainer>, the <xref:System.Data.Metadata.Edm.EntityType>, the <xref:System.Data.Metadata.Edm.ComplexType>, the <xref:System.Data.Metadata.Edm.AssociationType>, and so on. You can define the documentation tag in the conceptual schema definition language (CSDL) files and store schema definition language (SSDL) files. For more information, see [Documentation Element (CSDL)](http://msdn.microsoft.com/en-us/d49e7bb9-a6a1-4017-9c7e-7836bf3bef48).  
-  
+This property allows you to get and set the <xref:System.Data.Metadata.Edm.Documentation> object that represents the documentation associated with conceptual model constructs such as the <xref:System.Data.Metadata.Edm.EntityContainer>, the <xref:System.Data.Metadata.Edm.EntityType>, the <xref:System.Data.Metadata.Edm.ComplexType>, the <xref:System.Data.Metadata.Edm.AssociationType>, and so on. You can define the documentation tag in the conceptual schema definition language (CSDL) files and store schema definition language (SSDL) files. For more information, see [Documentation Element (CSDL)](http://msdn.microsoft.com/en-us/d49e7bb9-a6a1-4017-9c7e-7836bf3bef48).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that contains the list of properties of the current type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Data.Metadata.Edm.MetadataProperty>.  
-  
+For more information, see <xref:System.Data.Metadata.Edm.MetadataProperty>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

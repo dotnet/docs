@@ -19,18 +19,18 @@
     <summary>Represents the <see langword="group" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class defines groups at the <see langword="schema" /> level that are referenced from the complex types. It groups a set of element declarations so that they can be incorporated as a group into complex type definitions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the use of the `XmlSchemaGroup` class.  
-  
- [!code-cpp[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/VB/source.vb#1)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaGroup Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/XML/source.xml#2)]  
-  
+The following example shows the use of the `XmlSchemaGroup` class.  
+ 
+[!code-cpp[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/VB/source.vb#1)]  
+ 
+The following XML file is generated for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaGroup Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/XML/source.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,10 +82,10 @@
         <value>The name of the schema group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name must be a no-colon name (NCName), as defined in the World Wide Web Consortium (W3C) XML Namespaces specification.  
-  
+The name must be a no-colon name (NCName), as defined in the World Wide Web Consortium (W3C) XML Namespaces specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>

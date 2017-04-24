@@ -52,10 +52,10 @@
         <value>A collection of behavior extensions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Behavior extensions enable the user to create user-defined behavior elements. These elements can be used alongside the standard [!INCLUDE[indigo1](~/includes/indigo1-md.md)] behavior elements.  
-  
+Behavior extensions enable the user to create user-defined behavior elements. These elements can be used alongside the standard [!INCLUDE[indigo1](~/includes/indigo1-md.md)] behavior elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <value>A collection of binding extensions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Binding extensions enable the user to create user-defined binding elements for use as part of custom bindings. Programmatically, a binding extension is a type that implements the abstract class BindingElement.  
-  
+Binding extensions enable the user to create user-defined binding elements for use as part of custom bindings. Programmatically, a binding extension is a type that implements the abstract class BindingElement.  
+ 
  ]]></format>
         </remarks>
       </Docs>

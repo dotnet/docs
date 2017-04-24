@@ -73,10 +73,10 @@
         <summary>Removes all the <see cref="T:System.Web.Configuration.FullTrustAssembly" /> objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements that are defined in a higher-level configuration file. All elements that are defined in the current configuration file are also removed.  
-  
+This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements that are defined in a higher-level configuration file. All elements that are defined in the current configuration file are also removed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

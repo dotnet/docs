@@ -23,10 +23,10 @@
     <summary>A unique identifier optimized for Guids.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class can hold any string value, but has optimizations for dealing with <xref:System.Guid>s.  
-  
+This class can hold any string value, but has optimizations for dealing with <xref:System.Guid>s.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
         <summary>Creates a new instance of this class using a byte array that represents a <see cref="T:System.Guid" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the first 16 bytes of the array are used.  
-  
+Only the first 16 bytes of the array are used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -153,10 +153,10 @@
         <summary>Creates a new instance of this class using a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any string non-zero length string is a valid value.  
-  
+Any string non-zero length string is a valid value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -197,10 +197,10 @@
         <summary>Creates a new instance of this class starting from an offset within a <see langword="byte" /> array that represents a <see cref="T:System.Guid" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the first 16 bytes at the specified offset are used.  
-  
+Only the first 16 bytes at the specified offset are used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -406,41 +406,41 @@
           <see langword="true" /> if the two <see cref="T:System.Xml.UniqueId" />s are equal, or are both <see langword="null" />; <see langword="false" /> if they are not equal, or if only one of them is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.UniqueId.Equals%28System.Xml.UniqueId%2CSystem.Xml.UniqueId%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Xml.UniqueId id1, System.Xml.UniqueId id2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xml.UniqueId id1, class System.Xml.UniqueId id2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.op_Inequality(System.Xml.UniqueId,System.Xml.UniqueId)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id1" Type="System.Xml.UniqueId" />
-        <Parameter Name="id2" Type="System.Xml.UniqueId" />
-      </Parameters>
-      <Docs>
-        <param name="id1">The first <see cref="T:System.Xml.UniqueId" />.</param>
-        <param name="id2">The second <see cref="T:System.Xml.UniqueId" />.</param>
-        <summary>Overrides the equality operator to test for inequality of two <see cref="T:System.Xml.UniqueId" />s.</summary>
-        <returns>
-          <see langword="true" /> if the overridden equality operator returns <see langword="false" />; otherwise <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Xml.UniqueId id1, System.Xml.UniqueId id2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xml.UniqueId id1, class System.Xml.UniqueId id2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.op_Inequality(System.Xml.UniqueId,System.Xml.UniqueId)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+       <AssemblyVersion>4.1.1.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Runtime.Serialization</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="id1" Type="System.Xml.UniqueId" />
+       <Parameter Name="id2" Type="System.Xml.UniqueId" />
+     </Parameters>
+     <Docs>
+       <param name="id1">The first <see cref="T:System.Xml.UniqueId" />.</param>
+       <param name="id2">The second <see cref="T:System.Xml.UniqueId" />.</param>
+       <summary>Overrides the equality operator to test for inequality of two <see cref="T:System.Xml.UniqueId" />s.</summary>
+       <returns>
+         <see langword="true" /> if the overridden equality operator returns <see langword="false" />; otherwise <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.UniqueId.Compare%28System.Xml.UniqueId%2CSystem.Xml.UniqueId%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -482,10 +482,10 @@
         <returns>Number of entries in the <see langword="char" /> array filled by the <see cref="T:System.Xml.UniqueId" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is `unsafe`.  
-  
+This method is `unsafe`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -604,10 +604,10 @@
           <see langword="true" /> if the value stored in this instance of <see cref="T:System.Xml.UniqueId" /> is a <see cref="T:System.Guid" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is `unsafe`.  
-  
+This method is `unsafe`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

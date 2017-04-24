@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object and name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default transport type is RPC.  
-  
+The default transport type is RPC.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
@@ -447,10 +447,10 @@
         <summary>Writes any changes to the object to the Active Directory Domain Services store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object must contain at least one site or the operation will fail.  
-  
+The object must contain at least one site or the operation will fail.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException">The site object already exists.</exception>

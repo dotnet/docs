@@ -98,10 +98,10 @@
         <value>A collection of cache-extension tokens each with an optional assigned value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "cache-extension" directive in a cache-control header field on an HTTP request or HTTP response.  
-  
+This property represents the "cache-extension" directive in a cache-control header field on an HTTP request or HTTP response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,12 +130,12 @@
         <returns>A hash code for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
-  
- The <xref:System.Net.Http.Headers.CacheControlHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
+ 
+The <xref:System.Net.Http.Headers.CacheControlHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,12 +163,12 @@
         <value>The time in seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "max-age" directive in a cache-control header field on an HTTP request or HTTP response.  
-  
- Unless the <xref:System.Net.Http.Headers.CacheControlHeaderValue.MaxStale%2A> property is also set, the client is not willing to accept a stale response.  
-  
+This property represents the "max-age" directive in a cache-control header field on an HTTP request or HTTP response.  
+ 
+Unless the <xref:System.Net.Http.Headers.CacheControlHeaderValue.MaxStale%2A> property is also set, the client is not willing to accept a stale response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
           <see langword="true" /> if the HTTP client is willing to accept a response that has exceed the expiration time; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents if the "max-stale" directive is present in a cache-control header field on an HTTP request.  
-  
+This property represents if the "max-stale" directive is present in a cache-control header field on an HTTP request.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,12 +228,12 @@
         <value>The time in seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the value assigned to "max-stale" directive in a cache-control header field on an HTTP request.  
-  
- If the <xref:System.Net.Http.Headers.CacheControlHeaderValue.MaxStaleLimit%2A> property is assigned a value other than zero, then the client is willing to accept a response that has exceeded its expiration time by no more than the specified number of seconds. If a value of zero is assigned to the <xref:System.Net.Http.Headers.CacheControlHeaderValue.MaxStaleLimit%2A> property, then the client is willing to accept a stale response of any age.  
-  
+This property represents the value assigned to "max-stale" directive in a cache-control header field on an HTTP request.  
+ 
+If the <xref:System.Net.Http.Headers.CacheControlHeaderValue.MaxStaleLimit%2A> property is assigned a value other than zero, then the client is willing to accept a response that has exceeded its expiration time by no more than the specified number of seconds. If a value of zero is assigned to the <xref:System.Net.Http.Headers.CacheControlHeaderValue.MaxStaleLimit%2A> property, then the client is willing to accept a stale response of any age.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,12 +261,12 @@
         <value>The time in seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "min-fresh" directive in a cache-control header field on an HTTP request.  
-  
- The  property indicates that the HTTP client is willing to accept a response whose freshness lifetime is no less than its current age plus the freshness lifetime specified time in seconds. The client wants a response that will still be fresh for at least the current age plus the freshness lifetime.  
-  
+This property represents the "min-fresh" directive in a cache-control header field on an HTTP request.  
+ 
+The  property indicates that the HTTP client is willing to accept a response whose freshness lifetime is no less than its current age plus the freshness lifetime specified time in seconds. The client wants a response that will still be fresh for at least the current age plus the freshness lifetime.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
           <see langword="true" /> if the origin server requires revalidation of a cache entry on any subsequent use when the entry becomes stale; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "must-revalidate" directive in a cache-control header field on an HTTP response.  
-  
+This property represents the "must-revalidate" directive in a cache-control header field on an HTTP response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,12 +327,12 @@
           <see langword="true" /> if the HTTP client is willing to accept a cached response; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "no-cache" directive in a cache-control header field on an HTTP request or HTTP response.  
-  
- When the <xref:System.Net.Http.Headers.CacheControlHeaderValue.NoCache%2A> property is set to `true` present in a HTTP request message, an application should forward the request toward the origin server even if it has a cached copy of what is being requested.  
-  
+This property represents the "no-cache" directive in a cache-control header field on an HTTP request or HTTP response.  
+ 
+When the <xref:System.Net.Http.Headers.CacheControlHeaderValue.NoCache%2A> property is set to `true` present in a HTTP request message, an application should forward the request toward the origin server even if it has a cached copy of what is being requested.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,10 +360,10 @@
         <value>A collection of fieldnames.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents fieldnames in the "no-cache" directive in a cache-control header field on an HTTP response.  
-  
+This property represents fieldnames in the "no-cache" directive in a cache-control header field on an HTTP response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -392,12 +392,12 @@
           <see langword="true" /> if a cache must not store any part of either the HTTP request mressage or any response; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "no-store" directive in a cache-control header field on an HTTP request or HTTP response.  
-  
- The purpose of the <xref:System.Net.Http.Headers.CacheControlHeaderValue.NoStore%2A> property is to prevent the inadvertent release or retention of sensitive information. This property applies to the entire message, and may be sent either in an HTTP request or a response.  
-  
+This property represents the "no-store" directive in a cache-control header field on an HTTP request or HTTP response.  
+ 
+The purpose of the <xref:System.Net.Http.Headers.CacheControlHeaderValue.NoStore%2A> property is to prevent the inadvertent release or retention of sensitive information. This property applies to the entire message, and may be sent either in an HTTP request or a response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -426,12 +426,12 @@
           <see langword="true" /> if a cache or proxy must not change any aspect of the entity-body; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "no-transform" directive in a cache-control header field on an HTTP request or HTTP response.  
-  
- When the <xref:System.Net.Http.Headers.CacheControlHeaderValue.NoTransform%2A> is set to `true`, intermediate caches or rpoxies must not change any aspect of the entity body. Implementors of intermediate caches and proxies have found it useful to convert the media type of certain entity bodies. A non-transparent proxy might, for example, convert between image formats in order to save cache space or to reduce the amount of traffic on a slow link. Serious operational problems occur, however, when these transformations are applied to entity bodies intended for certain kinds of applications.  
-  
+This property represents the "no-transform" directive in a cache-control header field on an HTTP request or HTTP response.  
+ 
+When the <xref:System.Net.Http.Headers.CacheControlHeaderValue.NoTransform%2A> is set to `true`, intermediate caches or rpoxies must not change any aspect of the entity body. Implementors of intermediate caches and proxies have found it useful to convert the media type of certain entity bodies. A non-transparent proxy might, for example, convert between image formats in order to save cache space or to reduce the amount of traffic on a slow link. Serious operational problems occur, however, when these transformations are applied to entity bodies intended for certain kinds of applications.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@
           <see langword="true" /> if a cache should either respond using a cached entry that is consistent with the other constraints of the HTTP request, or respond with a 504 (Gateway Timeout) status; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "only-if-cached" directive in a cache-control header field on an HTTP request.  
-  
+This property represents the "only-if-cached" directive in a cache-control header field on an HTTP request.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -524,10 +524,10 @@
           <see langword="true" /> if the HTTP response message is intended for a single user and must not be cached by a shared cache; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "private" directive in a cache-control header field on an HTTP response.  
-  
+This property represents the "private" directive in a cache-control header field on an HTTP response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,10 +555,10 @@
         <value>A collection of fieldnames.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents fieldnames in the "private" directive in a cache-control header field on an HTTP response.  
-  
+This property represents fieldnames in the "private" directive in a cache-control header field on an HTTP response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -587,12 +587,12 @@
           <see langword="true" /> if the origin server requires revalidation of a cache entry on any subsequent use when the entry becomes stale for shared user agent caches; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "proxy-revalidate" directive in a cache-control header field on an HTTP response.  
-  
- This property does not affect  non-shared user agent caches.  
-  
+This property represents the "proxy-revalidate" directive in a cache-control header field on an HTTP response.  
+ 
+This property does not affect  non-shared user agent caches.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -621,10 +621,10 @@
           <see langword="true" /> if the HTTP response may be cached by any cache, even if it would normally be non-cacheable or cacheable only within a non- shared cache; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "public" directive in a cache-control header field on an HTTP response.  
-  
+This property represents the "public" directive in a cache-control header field on an HTTP response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -652,10 +652,10 @@
         <value>The time in seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the "s-max-age" directive in a cache-control header field on an HTTP response.  
-  
+This property represents the "s-max-age" directive in a cache-control header field on an HTTP response.  
+ 
  ]]></format>
         </remarks>
       </Docs>

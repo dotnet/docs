@@ -15,16 +15,16 @@
     <summary>An abstract container class that, when implemented by several of its static properties, contains version information for security components.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is the extensibility point for customizing token serialization.  
-  
- This class is a singleton that provides information about the versions of the security specifications, (WS-Security, WS-Trust, WS-Secure Conversation and WS-Security Policy), that must be supported by a binding.  
-  
- The class contains seven `static` properties, each of which returns an instance of this class. Each of these properties represents a different combination of security specification versions. The instances of this class are used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class. If you pass the <xref:System.ServiceModel.MessageSecurityVersion.Default%2A> property, you create a standard version of the binding element. To create a non-standard version, pass the property that matches your version.  
-  
- The class also contains `abstract` properties that are implemented by the previous instances.  
-  
+This class is the extensibility point for customizing token serialization.  
+ 
+This class is a singleton that provides information about the versions of the security specifications, (WS-Security, WS-Trust, WS-Secure Conversation and WS-Security Policy), that must be supported by a binding.  
+ 
+The class contains seven `static` properties, each of which returns an instance of this class. Each of these properties represents a different combination of security specification versions. The instances of this class are used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class. If you pass the <xref:System.ServiceModel.MessageSecurityVersion.Default%2A> property, you create a standard version of the binding element. To create a non-standard version, pass the property that matches your version.  
+ 
+The class also contains `abstract` properties that are implemented by the previous instances.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <value>The <see cref="T:System.ServiceModel.Security.BasicSecurityProfileVersion" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions, and so returns a different value for this property.  
-  
+This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions, and so returns a different value for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,12 +73,12 @@
         <value>The <see cref="T:System.ServiceModel.MessageSecurityVersion" /> object that represents the default message security.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default security specifications are WS-Security 1.1, WS-Trust of February 2005, WS-SecureConversation of February 2005 and WS-SecurityPolicy 1.1.  
-  
- This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
-  
+The default security specifications are WS-Security 1.1, WS-Trust of February 2005, WS-SecureConversation of February 2005 and WS-SecurityPolicy 1.1.  
+ 
+This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <value>The <see cref="T:System.ServiceModel.Security.SecureConversationVersion" /> object that corresponds to the message security version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
-  
+This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <value>The <see cref="T:System.ServiceModel.Security.SecurityPolicyVersion" /> object that corresponds to the message security version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
-  
+This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,12 +152,12 @@
         <value>The <see cref="T:System.IdentityModel.Selectors.SecurityTokenVersion" /> object that corresponds to the message security version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
-  
- This property is used to query a token serializer factory interface defined in <xref:System.IdentityModel.Selectors.SecurityTokenVersion> for a token serializer instance capable of serializing tokens.  
-  
+This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
+ 
+This property is used to query a token serializer factory interface defined in <xref:System.IdentityModel.Selectors.SecurityTokenVersion> for a token serializer instance capable of serializing tokens.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <value>The <see cref="T:System.ServiceModel.Security.SecurityVersion" /> object that corresponds to the message security version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
-  
+This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <value>The <see cref="T:System.ServiceModel.Security.TrustVersion" /> object that corresponds to the message security version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
-  
+This method is implemented by the instances of this class returned by the seven static properties. Each implementation represents a different combination of specification versions and so returns a different value for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <value>The <see cref="T:System.ServiceModel.MessageSecurityVersion" /> object that requires the Basic Security Profile 1.0 based on WS-Security 1.0, WS-Trust 1.3, WS-SecureConversation 1.3 and WS-SecurityPolicy 1.2 security specifications.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
-  
+This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <value>The <see cref="T:System.ServiceModel.MessageSecurityVersion" /> object that requires the Basic Security Profile 1.0 based on WS-Security 1.0, WS-Trust of February 2005, WS-SecureConversation of February 2005 and WS-SecurityPolicy 1.1 security specifications.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
-  
+This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,10 +284,10 @@
         <value>The <see cref="T:System.ServiceModel.MessageSecurityVersion" /> object that requires the WS-Security 1.1, WS-Trust 1.3, WS-SecureConversation 1.3 and WS-SecurityPolicy 1.2 security specifications.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
-  
+This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,10 +310,10 @@
         <value>The <see cref="T:System.ServiceModel.MessageSecurityVersion" /> object that requires the WS-Security1.1, WS-Trust 1.3, WS-SecureConversation 1.3, WS-SecurityPolicy 1.2, and BasicSecurityProfile 1.0 security specifications.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
-  
+This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <value>The <see cref="T:System.ServiceModel.MessageSecurityVersion" /> object that requires the WS-Security 1.1, WS-Trust of February 2005, WS-SecureConversation of February 2005 and WS-SecurityPolicy 1.1 security specifications.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
-  
+This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,10 +362,10 @@
         <value>The <see cref="T:System.ServiceModel.MessageSecurityVersion" /> object that requires the Basic Security Profile based on WS-Security 1.1, WS-Trust of February 2005, WS-SecureConversation of February 2005 and WS-SecurityPolicy 1.1 security specifications.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
-  
+This static property returns an instance of this class. The instance of this class is used as parameters in the `Create…CertificateBindingElement` method calls on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

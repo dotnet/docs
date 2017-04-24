@@ -14,15 +14,15 @@
     <summary>Establishes an inline editor for the updating of property values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class can hold a single <xref:System.Windows.DataTemplate>: one for an <xref:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode> editor. Inline editing refers to the entering of property values into a text box or similar control as opposed to setting the value by choosing it from a drop-down menu.  
+This class can hold a single <xref:System.Windows.DataTemplate>: one for an <xref:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode> editor. Inline editing refers to the entering of property values into a text box or similar control as opposed to setting the value by choosing it from a drop-down menu.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_PropertyValueEditor#0](WFD_PropertyValueEditor#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,10 +121,10 @@
         <value>A <see cref="T:System.Windows.DataTemplate" /> that represents an inline editor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Windows.DataTemplate> has its <xref:System.Windows.DataContext> set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
-  
+This <xref:System.Windows.DataTemplate> has its <xref:System.Windows.DataContext> set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <summary>Creates a new <see cref="T:System.ComponentModel.EditorAttribute" /> to designate that a particular  <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" /> be used to change a property value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Windows.DataTemplate> has its <xref:System.Windows.DataContext> set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
-  
+This <xref:System.Windows.DataTemplate> has its <xref:System.Windows.DataContext> set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

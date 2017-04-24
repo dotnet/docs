@@ -23,19 +23,19 @@
     <summary>Indicates that the types defined within an assembly were originally defined in a type library.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can apply this attribute to assemblies, although the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) typically applies it for you when it a type library.  
+You can apply this attribute to assemblies, although the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) typically applies it for you when it a type library.  
+ 
+The primary use of the attribute is to capture the original source of the type information. For example, you can import A.tlb as an interop assembly called A.dll and have assembly B.dll reference A.dll. When you export B.dll to B.tlb, this attribute causes the references in B.tlb that point to A.dll to point instead to A.tlb. This should not be confused with the <xref:System.Runtime.InteropServices.ComImportAttribute>, which specifies that an individual type is implemented in COM.  
+ 
   
- The primary use of the attribute is to capture the original source of the type information. For example, you can import A.tlb as an interop assembly called A.dll and have assembly B.dll reference A.dll. When you export B.dll to B.tlb, this attribute causes the references in B.tlb that point to A.dll to point instead to A.tlb. This should not be confused with the <xref:System.Runtime.InteropServices.ComImportAttribute>, which specifies that an individual type is implemented in COM.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[ImprovedInteropSnippets#3](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile3.cpp#3)]
- [!code-csharp[ImprovedInteropSnippets#3](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile3.cs#3)]
- [!code-vb[ImprovedInteropSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile3.vb#3)]  
-  
+[!code-cpp[ImprovedInteropSnippets#3](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile3.cpp#3)]
+[!code-csharp[ImprovedInteropSnippets#3](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile3.cs#3)]
+[!code-vb[ImprovedInteropSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile3.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

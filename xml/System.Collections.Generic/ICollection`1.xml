@@ -31,26 +31,26 @@
     <summary>Defines methods to manipulate generic collections.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.Generic.ICollection%601> interface is the base interface for classes in the <xref:System.Collections.Generic?displayProperty=fullName> namespace.  
+The <xref:System.Collections.Generic.ICollection%601> interface is the base interface for classes in the <xref:System.Collections.Generic?displayProperty=fullName> namespace.  
+ 
+The <xref:System.Collections.Generic.ICollection%601> interface extends <xref:System.Collections.Generic.IEnumerable%601>; <xref:System.Collections.Generic.IDictionary%602> and <xref:System.Collections.Generic.IList%601> are more specialized interfaces that extend <xref:System.Collections.Generic.ICollection%601>. A <xref:System.Collections.Generic.IDictionary%602> implementation is a collection of key/value pairs, like the <xref:System.Collections.Generic.Dictionary%602> class. A <xref:System.Collections.Generic.IList%601> implementation is a collection of values, and its members can be accessed by index, like the <xref:System.Collections.Generic.List%601> class.  
+ 
+If neither the <xref:System.Collections.Generic.IDictionary%602> interface nor the <xref:System.Collections.Generic.IList%601> interface meet the requirements of the required collection, derive the new collection class from the <xref:System.Collections.Generic.ICollection%601> interface instead for more flexibility.  
+ 
   
- The <xref:System.Collections.Generic.ICollection%601> interface extends <xref:System.Collections.Generic.IEnumerable%601>; <xref:System.Collections.Generic.IDictionary%602> and <xref:System.Collections.Generic.IList%601> are more specialized interfaces that extend <xref:System.Collections.Generic.ICollection%601>. A <xref:System.Collections.Generic.IDictionary%602> implementation is a collection of key/value pairs, like the <xref:System.Collections.Generic.Dictionary%602> class. A <xref:System.Collections.Generic.IList%601> implementation is a collection of values, and its members can be accessed by index, like the <xref:System.Collections.Generic.List%601> class.  
-  
- If neither the <xref:System.Collections.Generic.IDictionary%602> interface nor the <xref:System.Collections.Generic.IList%601> interface meet the requirements of the required collection, derive the new collection class from the <xref:System.Collections.Generic.ICollection%601> interface instead for more flexibility.  
-  
-   
-  
+ 
 ## Examples  
- The following example implements the <xref:System.Collections.Generic.ICollection%601> interface to create a collection of custom `Box` objects named `BoxCollection`. Each `Box` has height, length, and width properties, which are used to define equality. Equality can be defined as all dimensions being the same or the volume being the same. The `Box` class implements the <xref:System.IEquatable%601> interface to define the default equality as the dimensions being the same.  
-  
- The `BoxCollection` class implements the <xref:System.Collections.Generic.ICollection%601.Contains%2A> method to use the default equality to determine whether a `Box` is in the collection. This method is used by the <xref:System.Collections.Generic.ICollection%601.Add%2A> method so that each `Box` added to the collection has a unique set of dimensions. The `BoxCollection` class also provides an overload of the  <xref:System.Collections.Generic.ICollection%601.Contains%2A> method that takes a specified <xref:System.Collections.Generic.EqualityComparer%601> object, such as `BoxSameDimensions` and `BoxSameVol` classes in the example.  
-  
- This example also implements an <xref:System.Collections.Generic.IEnumerator%601> interface for the `BoxCollection` class so that the collection can be enumerated.  
-  
- [!code-csharp[System.Collections.Generic.BoxExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxexamples/cs/program.cs#1)]
- [!code-vb[System.Collections.Generic.BoxExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxexamples/vb/program.vb#1)]  
-  
+The following example implements the <xref:System.Collections.Generic.ICollection%601> interface to create a collection of custom `Box` objects named `BoxCollection`. Each `Box` has height, length, and width properties, which are used to define equality. Equality can be defined as all dimensions being the same or the volume being the same. The `Box` class implements the <xref:System.IEquatable%601> interface to define the default equality as the dimensions being the same.  
+ 
+The `BoxCollection` class implements the <xref:System.Collections.Generic.ICollection%601.Contains%2A> method to use the default equality to determine whether a `Box` is in the collection. This method is used by the <xref:System.Collections.Generic.ICollection%601.Add%2A> method so that each `Box` added to the collection has a unique set of dimensions. The `BoxCollection` class also provides an overload of the  <xref:System.Collections.Generic.ICollection%601.Contains%2A> method that takes a specified <xref:System.Collections.Generic.EqualityComparer%601> object, such as `BoxSameDimensions` and `BoxSameVol` classes in the example.  
+ 
+This example also implements an <xref:System.Collections.Generic.IEnumerator%601> interface for the `BoxCollection` class so that the collection can be enumerated.  
+ 
+[!code-csharp[System.Collections.Generic.BoxExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxexamples/cs/program.cs#1)]
+[!code-vb[System.Collections.Generic.BoxExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxexamples/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -118,10 +118,10 @@
         <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.Generic.ICollection%601.Count%2A> must be set to 0, and references to other objects from elements of the collection must be released.  
-  
+<xref:System.Collections.Generic.ICollection%601.Count%2A> must be set to 0, and references to other objects from elements of the collection must be released.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
@@ -161,10 +161,10 @@
           <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implementations can vary in how they determine equality of objects; for example, <xref:System.Collections.Generic.List%601> uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas <xref:System.Collections.Generic.Dictionary%602> allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
-  
+Implementations can vary in how they determine equality of objects; for example, <xref:System.Collections.Generic.List%601> uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas <xref:System.Collections.Generic.Dictionary%602> allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,10 +269,10 @@
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection that is read-only does not allow the addition or removal of elements after the collection is created. Note that read-only in this context does not indicate whether individual elements of the collection can be modified, since the <xref:System.Collections.Generic.ICollection%601> interface only supports addition and removal operations. For example, the <xref:System.Collections.Generic.ICollection%601.IsReadOnly%2A> property of an array that is cast or converted to an <xref:System.Collections.Generic.ICollection%601> object returns `true`, even though individual array elements can be modified.  
-  
+A collection that is read-only does not allow the addition or removal of elements after the collection is created. Note that read-only in this context does not indicate whether individual elements of the collection can be modified, since the <xref:System.Collections.Generic.ICollection%601> interface only supports addition and removal operations. For example, the <xref:System.Collections.Generic.ICollection%601.IsReadOnly%2A> property of an array that is cast or converted to an <xref:System.Collections.Generic.ICollection%601> object returns `true`, even though individual array elements can be modified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,12 +311,12 @@
           <see langword="true" /> if <paramref name="item" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implementations can vary in how they determine equality of objects; for example, <xref:System.Collections.Generic.List%601> uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas, <xref:System.Collections.Generic.Dictionary%602> allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
-  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
-  
+Implementations can vary in how they determine equality of objects; for example, <xref:System.Collections.Generic.List%601> uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas, <xref:System.Collections.Generic.Dictionary%602> allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
+ 
+In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>

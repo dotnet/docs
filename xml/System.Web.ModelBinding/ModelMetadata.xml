@@ -14,14 +14,14 @@
     <summary>Provides a container for metadata for a model.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The word *model* is used differently in the context of this class than it is typically used elsewhere. In an ASP.NET Web Forms application, the <xref:System.Web.ModelBinding.ModelBindingContext.ModelType%2A> attribute of a data-bound control specifies the type of a data element that the data control is bound to. This type is typically referred to as the model, and it typically corresponds to a row in a database table. The properties of the model typically correspond to columns of the table.  
-  
- A <xref:System.Web.ModelBinding.ModelMetadata> object can provide metadata for the model itself or for a property of the model, or for a property of a complex property. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to a property, the word *model* refers to the property, and the word *container* refers to the model.  
-  
- For example, the model might be **Contact**, which has **Name** and **Age** properties, and the **Name** property might be a complex property composed of **FirstName** and **LastName**. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to the **Contact** object, the model type is **Contact** and there is no container. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to the **Name** property, the model type is **Name** and the container type is **Contact**. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to the **FirstName** property, the model type is **FirstName** and the container type is **Name**.  
-  
+The word *model* is used differently in the context of this class than it is typically used elsewhere. In an ASP.NET Web Forms application, the <xref:System.Web.ModelBinding.ModelBindingContext.ModelType%2A> attribute of a data-bound control specifies the type of a data element that the data control is bound to. This type is typically referred to as the model, and it typically corresponds to a row in a database table. The properties of the model typically correspond to columns of the table.  
+ 
+A <xref:System.Web.ModelBinding.ModelMetadata> object can provide metadata for the model itself or for a property of the model, or for a property of a complex property. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to a property, the word *model* refers to the property, and the word *container* refers to the model.  
+ 
+For example, the model might be **Contact**, which has **Name** and **Age** properties, and the **Name** property might be a complex property composed of **FirstName** and **LastName**. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to the **Contact** object, the model type is **Contact** and there is no container. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to the **Name** property, the model type is **Name** and the container type is **Contact**. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to the **FirstName** property, the model type is **FirstName** and the container type is **Name**.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -124,10 +124,10 @@
         <value>The name of the data type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be used to provide additional information about the type of data that is stored by the model. For example, if the <xref:System.Web.ModelBinding.ModelMetadata.ModelType%2A> property is set to <xref:System.String>, this property might be "EmailAddress" or "Url" — that is, a name that indicates more than just that the data is typed as a string.  
-  
+This property can be used to provide additional information about the type of data that is stored by the model. For example, if the <xref:System.Web.ModelBinding.ModelMetadata.ModelType%2A> property is set to <xref:System.String>, this property might be "EmailAddress" or "Url" — that is, a name that indicates more than just that the data is typed as a string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,10 +331,10 @@
           <see langword="true" /> if the model is a complex type; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Built-in .NET Framework types are not considered complex types for purposes of this property.  
-  
+Built-in .NET Framework types are not considered complex types for purposes of this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,10 +558,10 @@
         <value>The text to display when a short version of the model name is required.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The short display name can be used in a tooltip or in any UI where the complete display name might not fit. If this field is `null`, the <xref:System.Web.ModelBinding.ModelMetadata.DisplayName%2A> property should be used.  
-  
+The short display name can be used in a tooltip or in any UI where the complete display name might not fit. If this field is `null`, the <xref:System.Web.ModelBinding.ModelMetadata.DisplayName%2A> property should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,10 +657,10 @@
         <value>The watermark text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains text to display as a watermark when a property is rendered for editing in a text box. The default value is `null`.  
-  
+This property contains text to display as a watermark when a property is rendered for editing in a text box. The default value is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

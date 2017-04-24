@@ -23,260 +23,260 @@
     <summary>Represents an XML document. You can use this class to load, validate, edit, add, and position XML in a document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="Remarks"></a> The <xref:System.Xml.XmlDocument> class is an in-memory representation of an XML document. It implements the W3C [XML Document Object Model (DOM)](~/docs/standard/data/xml/xml-document-object-model-dom.md) Level 1 Core and the Core DOM Level 2.  
-  
- *DOM* stands for *document object model*. To read more about it, see [XML Document Object Model (DOM)](~/docs/standard/data/xml/xml-document-object-model-dom.md).  
-  
- You can load XML into the DOM by using the <xref:System.Xml.XmlDocument> class, and then programmatically read, modify, and remove XML in the document.  
-  
- If you want to pry open the <xref:System.Xml.XmlDocument> class and see how it’s implemented, see the [Reference Source](http://referencesource.microsoft.com/#System.Xml/Xml/System/Xml/Dom/XmlDocument.cs#f82a4c1bd1f0ee12).  
-  
+ 
+*DOM* stands for *document object model*. To read more about it, see [XML Document Object Model (DOM)](~/docs/standard/data/xml/xml-document-object-model-dom.md).  
+ 
+You can load XML into the DOM by using the <xref:System.Xml.XmlDocument> class, and then programmatically read, modify, and remove XML in the document.  
+ 
+If you want to pry open the <xref:System.Xml.XmlDocument> class and see how it’s implemented, see the [Reference Source](http://referencesource.microsoft.com/#System.Xml/Xml/System/Xml/Dom/XmlDocument.cs#f82a4c1bd1f0ee12).  
+ 
 <a name="Common"></a>   
 ## Tasks  
-  
+ 
 -   [Load XML into the document object model](#Load)  
-  
+ 
 -   [Validate it against a schema](#Validation)  
-  
+ 
 -   [Navigate the document tree](#Navigate)  
-  
+ 
 -   [Find nodes](#Find)  
-  
+ 
 -   [Edit nodes](#Edit)  
-  
+ 
 -   [Add nodes](#Add)  
-  
+ 
 -   [Remove nodes](#Remove)  
-  
+ 
 -   [Position nodes](#Position)  
-  
+ 
 <a name="Load"></a>   
 ## Load XML into the document object model  
- Start with an XML document like this one. It’s just a few books in a collection. But it does contain the basic things that you’d find in any XML document; a namespace, elements that represent data and attributes that describe the data.  
-  
+Start with an XML document like this one. It’s just a few books in a collection. But it does contain the basic things that you’d find in any XML document; a namespace, elements that represent data and attributes that describe the data.  
+ 
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <books xmlns="http://www.contoso.com/books">  
-  <book genre="novel" ISBN="1-861001-57-8" publicationdate="1823-01-28">  
-    <title>Pride And Prejudice</title>  
-    <price>24.95</price>  
-  </book>  
-  <book genre="novel" ISBN="1-861002-30-1" publicationdate="1985-01-01">  
-    <title>The Handmaid's Tale</title>  
-    <price>29.95</price>  
-  </book>  
-  <book genre="novel" ISBN="1-861001-45-3" publicationdate="1811-01-01">  
-    <title>Sense and Sensibility</title>  
-    <price>19.95</price>  
-  </book>  
+ <book genre="novel" ISBN="1-861001-57-8" publicationdate="1823-01-28">  
+   <title>Pride And Prejudice</title>  
+   <price>24.95</price>  
+ </book>  
+ <book genre="novel" ISBN="1-861002-30-1" publicationdate="1985-01-01">  
+   <title>The Handmaid's Tale</title>  
+   <price>29.95</price>  
+ </book>  
+ <book genre="novel" ISBN="1-861001-45-3" publicationdate="1811-01-01">  
+   <title>Sense and Sensibility</title>  
+   <price>19.95</price>  
+ </book>  
 </books>  
 ```  
-  
- Next, load this data into the DOM so that you can work with it in memory. The most popular way to do this is refer to a file on your local computer or on a network.  
-  
- This example loads XML from a file. If the file doesn’t exist, it just generates some XML and loads that.  
-  
- [!code-cpp[XMLProcessingApp#1](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#1)]
- [!code-csharp[XMLProcessingApp#1](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#1)]
- [!code-vb[XMLProcessingApp#1](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#1)]  
-  
- **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
-  
- **Learn more:** [Reading an XML Document into the DOM](~/docs/standard/data/xml/reading-an-xml-document-into-the-dom.md)  
-  
+ 
+Next, load this data into the DOM so that you can work with it in memory. The most popular way to do this is refer to a file on your local computer or on a network.  
+ 
+This example loads XML from a file. If the file doesn’t exist, it just generates some XML and loads that.  
+ 
+[!code-cpp[XMLProcessingApp#1](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#1)]
+[!code-csharp[XMLProcessingApp#1](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#1)]
+[!code-vb[XMLProcessingApp#1](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#1)]  
+ 
+**Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
+ 
+**Learn more:** [Reading an XML Document into the DOM](~/docs/standard/data/xml/reading-an-xml-document-into-the-dom.md)  
+ 
 <a name="Validation"></a>   
 ## Validate it against a schema  
- Start with an XML schema like this one. This schema defines the data types in the XML and which attributes are required.  
-  
+Start with an XML schema like this one. This schema defines the data types in the XML and which attributes are required.  
+ 
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  
-  attributeFormDefault="unqualified"   
-  elementFormDefault="qualified"  
-  targetNamespace="http://www.contoso.com/books">   
-  <xs:element name="books">  
-    <xs:complexType>  
-      <xs:sequence>  
-        <xs:element maxOccurs="unbounded" name="book">  
-          <xs:complexType>  
-            <xs:sequence>  
-              <xs:element name="title" type="xs:string" />  
-              <xs:element name="price" type="xs:decimal" />  
-            </xs:sequence>  
-            <xs:attribute name="genre" type="xs:string" use="required" />  
-            <xs:attribute name="ISBN" type="xs:string" use="required" />  
-            <xs:attribute name="publicationdate" type="xs:date" use="required" />  
-          </xs:complexType>  
-        </xs:element>  
-      </xs:sequence>  
-    </xs:complexType>  
-  </xs:element>  
+ attributeFormDefault="unqualified"   
+ elementFormDefault="qualified"  
+ targetNamespace="http://www.contoso.com/books">   
+ <xs:element name="books">  
+   <xs:complexType>  
+     <xs:sequence>  
+       <xs:element maxOccurs="unbounded" name="book">  
+         <xs:complexType>  
+           <xs:sequence>  
+             <xs:element name="title" type="xs:string" />  
+             <xs:element name="price" type="xs:decimal" />  
+           </xs:sequence>  
+           <xs:attribute name="genre" type="xs:string" use="required" />  
+           <xs:attribute name="ISBN" type="xs:string" use="required" />  
+           <xs:attribute name="publicationdate" type="xs:date" use="required" />  
+         </xs:complexType>  
+       </xs:element>  
+     </xs:sequence>  
+   </xs:complexType>  
+ </xs:element>  
 </xs:schema>  
 ```  
-  
- Create an <xref:System.Xml.XmlReader> object by using your schema, and then load that object into the DOM. Create an event handler that executes when code attempts to modify your XML file in ways that violate the rules of the schema.  
-  
- These blocks of code show helper methods that do all of this.  
-  
- [!code-cpp[XMLProcessingApp#2](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#2)]
- [!code-csharp[XMLProcessingApp#2](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#2)]
- [!code-vb[XMLProcessingApp#2](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#2)]  
-  
- **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
-  
- **Learn more:** [Validating an XML Document in the DOM](~/docs/standard/data/xml/validating-an-xml-document-in-the-dom.md)  
-  
+ 
+Create an <xref:System.Xml.XmlReader> object by using your schema, and then load that object into the DOM. Create an event handler that executes when code attempts to modify your XML file in ways that violate the rules of the schema.  
+ 
+These blocks of code show helper methods that do all of this.  
+ 
+[!code-cpp[XMLProcessingApp#2](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#2)]
+[!code-csharp[XMLProcessingApp#2](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#2)]
+[!code-vb[XMLProcessingApp#2](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#2)]  
+ 
+**Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
+ 
+**Learn more:** [Validating an XML Document in the DOM](~/docs/standard/data/xml/validating-an-xml-document-in-the-dom.md)  
+ 
 <a name="Navigate"></a>   
 ## Navigate the document tree  
- You can use properties to navigate around an XML document. But before you use any of them, let’s quickly review a few terms. Your document is composed of nodes. Each node has as single *parent* node directly above it. The only node that does not have a parent node is the document root, as it is the top-level node. Most nodes can have *child* nodes, which are nodes directly below them. Nodes that are at the same level are *siblings*.  
-  
- The following examples, show you how to obtain the root node, jump to the first child node of the root node, access any of its child nodes, get back out to the parent node, and then navigate across sibling nodes.  
-  
- **Start with the root node**  
-  
- This example gets the root node and then uses that node to output the contents of the document to the console.  
-  
- [!code-cpp[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/VB/source.vb#1)]  
-  
- **Get child nodes**  
-  
- This example jumps to the first child node of the root node and then iterates through the child nodes of that node if any exist.  
-  
- [!code-cpp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/VB/source.vb#1)]  
-  
- **Get back to the parent node**  
-  
- Use the <xref:System.Xml.XmlDocument.ParentNode%2A> property.  
-  
- **Refer to the last child node**  
-  
- This example writes the price of a book to the console (which is the last child node of a book node).  
-  
- [!code-cpp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/VB/source.vb#1)]  
-  
- **Navigate forward across siblings**  
-  
- This example moves forward from book to book. Book nodes are siblings to one another.  
-  
- [!code-cpp[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/VB/source.vb#1)]  
-  
- **Navigate backwards across siblings**  
-  
- This example moves backwards from book to book.  
-  
- [!code-cpp[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/VB/source.vb#1)]  
-  
+You can use properties to navigate around an XML document. But before you use any of them, let’s quickly review a few terms. Your document is composed of nodes. Each node has as single *parent* node directly above it. The only node that does not have a parent node is the document root, as it is the top-level node. Most nodes can have *child* nodes, which are nodes directly below them. Nodes that are at the same level are *siblings*.  
+ 
+The following examples, show you how to obtain the root node, jump to the first child node of the root node, access any of its child nodes, get back out to the parent node, and then navigate across sibling nodes.  
+ 
+**Start with the root node**  
+ 
+This example gets the root node and then uses that node to output the contents of the document to the console.  
+ 
+[!code-cpp[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/VB/source.vb#1)]  
+ 
+**Get child nodes**  
+ 
+This example jumps to the first child node of the root node and then iterates through the child nodes of that node if any exist.  
+ 
+[!code-cpp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/VB/source.vb#1)]  
+ 
+**Get back to the parent node**  
+ 
+Use the <xref:System.Xml.XmlDocument.ParentNode%2A> property.  
+ 
+**Refer to the last child node**  
+ 
+This example writes the price of a book to the console (which is the last child node of a book node).  
+ 
+[!code-cpp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/VB/source.vb#1)]  
+ 
+**Navigate forward across siblings**  
+ 
+This example moves forward from book to book. Book nodes are siblings to one another.  
+ 
+[!code-cpp[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/VB/source.vb#1)]  
+ 
+**Navigate backwards across siblings**  
+ 
+This example moves backwards from book to book.  
+ 
+[!code-cpp[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/VB/source.vb#1)]  
+ 
 <a name="Find"></a>   
 ## Find nodes  
- The most popular way to find one or more nodes of data is to use an XPath query string, but there are also methods that don’t require one.  
-  
- **Get a single node**  
-  
- This example locates a book by using the ISBN number.  
-  
- [!code-cpp[XMLProcessingApp#3](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#3)]
- [!code-csharp[XMLProcessingApp#3](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#3)]
- [!code-vb[XMLProcessingApp#3](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#3)]  
-  
- The string used in this example is an Xpath query. You can find more examples of them here:   [XPath examples](https://msdn.microsoft.com/en-us/library/ms256086.aspx).  
-  
- You can also use the <xref:System.Xml.XmlDocument.GetElementById%2A> to retrieve nodes. To use this approach, you’ll have to define ID’s in the document type definition declarations of your XML file.  
-  
- After you get a node, you get the value of attributes or child nodes. This example does that with a book node.  
-  
- [!code-cpp[XMLProcessingApp#4](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#4)]
- [!code-csharp[XMLProcessingApp#4](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#4)]
- [!code-vb[XMLProcessingApp#4](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#4)]  
-  
- **Get a collection of nodes**  
-  
- This example selects all books where the author's last name is **Austen**, and then changes the price of those books.  
-  
- [!code-cpp[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/VB/source.vb#1)]  
-  
- You can also get a collection of nodes by using the name of the node. For example, this example gets a collection of all book titles.  
-  
- [!code-cpp[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/VB/source.vb#1)]  
-  
- **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
-  
- **Learn more:** [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md)  
-  
+The most popular way to find one or more nodes of data is to use an XPath query string, but there are also methods that don’t require one.  
+ 
+**Get a single node**  
+ 
+This example locates a book by using the ISBN number.  
+ 
+[!code-cpp[XMLProcessingApp#3](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#3)]
+[!code-csharp[XMLProcessingApp#3](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#3)]
+[!code-vb[XMLProcessingApp#3](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#3)]  
+ 
+The string used in this example is an Xpath query. You can find more examples of them here:   [XPath examples](https://msdn.microsoft.com/en-us/library/ms256086.aspx).  
+ 
+You can also use the <xref:System.Xml.XmlDocument.GetElementById%2A> to retrieve nodes. To use this approach, you’ll have to define ID’s in the document type definition declarations of your XML file.  
+ 
+After you get a node, you get the value of attributes or child nodes. This example does that with a book node.  
+ 
+[!code-cpp[XMLProcessingApp#4](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#4)]
+[!code-csharp[XMLProcessingApp#4](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#4)]
+[!code-vb[XMLProcessingApp#4](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#4)]  
+ 
+**Get a collection of nodes**  
+ 
+This example selects all books where the author's last name is **Austen**, and then changes the price of those books.  
+ 
+[!code-cpp[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/VB/source.vb#1)]  
+ 
+You can also get a collection of nodes by using the name of the node. For example, this example gets a collection of all book titles.  
+ 
+[!code-cpp[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/VB/source.vb#1)]  
+ 
+**Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
+ 
+**Learn more:** [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md)  
+ 
 <a name="Edit"></a>   
 ## Edit nodes  
- This example edits a book node and its attributes.  
-  
- [!code-cpp[XMLProcessingApp#7](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#7)]
- [!code-csharp[XMLProcessingApp#7](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#7)]
- [!code-vb[XMLProcessingApp#7](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#7)]  
-  
- **Learn more:** [Modifying Nodes, Content, and Values in an XML Document](~/docs/standard/data/xml/modifying-nodes-content-and-values-in-an-xml-document.md)  
-  
- **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
-  
+This example edits a book node and its attributes.  
+ 
+[!code-cpp[XMLProcessingApp#7](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#7)]
+[!code-csharp[XMLProcessingApp#7](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#7)]
+[!code-vb[XMLProcessingApp#7](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#7)]  
+ 
+**Learn more:** [Modifying Nodes, Content, and Values in an XML Document](~/docs/standard/data/xml/modifying-nodes-content-and-values-in-an-xml-document.md)  
+ 
+**Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
+ 
 <a name="Add"></a>   
 ## Add nodes  
- To add a node, use the <xref:System.Xml.XmlDocument.CreateElement%2A> method or the <xref:System.Xml.XmlDocument.CreateNode%2A> method.  
-  
- To add a data node such as a book, use the <xref:System.Xml.XmlDocument.CreateElement%2A> method.  
-  
- For any other type of node such as a comment, whitespace node, or CDATA node, use the <xref:System.Xml.XmlDocument.CreateNode%2A> method.  
-  
- This example creates a book node, adds attrubutes to that node, and then adds that node to the document.  
-  
- [!code-cpp[XMLProcessingApp#5](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#5)]
- [!code-csharp[XMLProcessingApp#5](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#5)]
- [!code-vb[XMLProcessingApp#5](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#5)]  
-  
- **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
-  
- **Learn more:** [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md)  
-  
+To add a node, use the <xref:System.Xml.XmlDocument.CreateElement%2A> method or the <xref:System.Xml.XmlDocument.CreateNode%2A> method.  
+ 
+To add a data node such as a book, use the <xref:System.Xml.XmlDocument.CreateElement%2A> method.  
+ 
+For any other type of node such as a comment, whitespace node, or CDATA node, use the <xref:System.Xml.XmlDocument.CreateNode%2A> method.  
+ 
+This example creates a book node, adds attrubutes to that node, and then adds that node to the document.  
+ 
+[!code-cpp[XMLProcessingApp#5](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#5)]
+[!code-csharp[XMLProcessingApp#5](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#5)]
+[!code-vb[XMLProcessingApp#5](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#5)]  
+ 
+**Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
+ 
+**Learn more:** [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md)  
+ 
 <a name="Remove"></a>   
 ## Remove nodes  
- To remove a node, use the <xref:System.Xml.XmlNode.RemoveChild%2A> method.  
-  
- This example removes a book from the document and any whitespace that appears just before the book node.  
-  
- [!code-cpp[XMLProcessingApp#6](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#6)]
- [!code-csharp[XMLProcessingApp#6](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#6)]
- [!code-vb[XMLProcessingApp#6](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#6)]  
-  
- **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
-  
- **Learn more:** [Removing Nodes, Content, and Values from an XML Document](~/docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md)  
-  
+To remove a node, use the <xref:System.Xml.XmlNode.RemoveChild%2A> method.  
+ 
+This example removes a book from the document and any whitespace that appears just before the book node.  
+ 
+[!code-cpp[XMLProcessingApp#6](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#6)]
+[!code-csharp[XMLProcessingApp#6](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#6)]
+[!code-vb[XMLProcessingApp#6](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#6)]  
+ 
+**Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
+ 
+**Learn more:** [Removing Nodes, Content, and Values from an XML Document](~/docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md)  
+ 
 <a name="Position"></a>   
 ## Position nodes  
- You can choose where you want a node to appear in your document by using the <xref:System.Xml.XmlNode.InsertBefore%2A> and <xref:System.Xml.XmlNode.InsertAfter%2A> methods.  
-  
- This example shows two helper methods. One of them moves a node higher in a list. The other one moves a node lower.  
-  
- These methods could be used in an application that enables users to move books up and down in a list of books. When a user chooses a book and presses an up or down button, your code could call methods like these to position the corresponding book node before or after other book nodes.  
-  
- [!code-cpp[XMLProcessingApp#8](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#8)]
- [!code-csharp[XMLProcessingApp#8](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#8)]
- [!code-vb[XMLProcessingApp#8](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#8)]  
-  
- **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
-  
+You can choose where you want a node to appear in your document by using the <xref:System.Xml.XmlNode.InsertBefore%2A> and <xref:System.Xml.XmlNode.InsertAfter%2A> methods.  
+ 
+This example shows two helper methods. One of them moves a node higher in a list. The other one moves a node lower.  
+ 
+These methods could be used in an application that enables users to move books up and down in a list of books. When a user chooses a book and presses an up or down button, your code could call methods like these to position the corresponding book node before or after other book nodes.  
+ 
+[!code-cpp[XMLProcessingApp#8](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#8)]
+[!code-csharp[XMLProcessingApp#8](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#8)]
+[!code-vb[XMLProcessingApp#8](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#8)]  
+ 
+**Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -304,18 +304,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDocument" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following is an example of load-time validation. A document type definition (DTD) validating <xref:System.Xml.XmlReader> is passed to the <xref:System.Xml.XmlDocument.Load%2A> method and a <xref:System.Xml.Schema.ValidationEventHandler> is provided to notify users of any validation errors. In this example a validation error is found, but the document is still loaded. Alternatively, you can define a validating <xref:System.Xml.XmlReader> to throw an exception and stop the load process when a validation error is found by not specifying the <xref:System.Xml.Schema.ValidationEventHandler>. For more information about validating XML data, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
-  
- [!code-cpp[XmlDocument.cctor#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlDocument.cctor/CPP/docload.cpp#1)]
- [!code-csharp[XmlDocument.cctor#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlDocument.cctor/CS/docload.cs#1)]
- [!code-vb[XmlDocument.cctor#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlDocument.cctor/VB/docload.vb#1)]  
-  
- The example uses the `bookDTD.xml` file as input.  
-  
- [!code-xml[XmlDocument.cctor#2](~/samples/snippets/xml/VS_Snippets_Data/XmlDocument.cctor/XML/bookdtd.xml#2)]  
-  
+The following is an example of load-time validation. A document type definition (DTD) validating <xref:System.Xml.XmlReader> is passed to the <xref:System.Xml.XmlDocument.Load%2A> method and a <xref:System.Xml.Schema.ValidationEventHandler> is provided to notify users of any validation errors. In this example a validation error is found, but the document is still loaded. Alternatively, you can define a validating <xref:System.Xml.XmlReader> to throw an exception and stop the load process when a validation error is found by not specifying the <xref:System.Xml.Schema.ValidationEventHandler>. For more information about validating XML data, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
+ 
+[!code-cpp[XmlDocument.cctor#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlDocument.cctor/CPP/docload.cpp#1)]
+[!code-csharp[XmlDocument.cctor#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlDocument.cctor/CS/docload.cs#1)]
+[!code-vb[XmlDocument.cctor#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlDocument.cctor/VB/docload.vb#1)]  
+ 
+The example uses the `bookDTD.xml` file as input.  
+ 
+[!code-xml[XmlDocument.cctor#2](~/samples/snippets/xml/VS_Snippets_Data/XmlDocument.cctor/XML/bookdtd.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,14 +400,14 @@
         <value>The location from which the node was loaded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A networked XML document is comprised of chunks of data aggregated using various W3C standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
-  
- For Document nodes, `BaseURI` returns the location of the XML document. For example, if the `XmlDocument` was loaded using the following call doc.Load("http://server/mydata.xml"), the `BaseURI` for the document node is http://server/mydata.xml. However, if the <xref:System.Xml.XmlDocument.Load%2A> method is redirected by server to a different URI, `BaseURI` returns the original URI passed to the `Load` method.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM). For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
-  
+A networked XML document is comprised of chunks of data aggregated using various W3C standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
+ 
+For Document nodes, `BaseURI` returns the location of the XML document. For example, if the `XmlDocument` was loaded using the following call doc.Load("http://server/mydata.xml"), the `BaseURI` for the document node is http://server/mydata.xml. However, if the <xref:System.Xml.XmlDocument.Load%2A> method is redirected by server to a different URI, `BaseURI` returns the original URI passed to the `Load` method.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM). For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,21 +443,21 @@
         <returns>The cloned <see langword="XmlDocument" /> node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
+This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
+ 
+If `deep` is `true`, the cloned node includes all the child nodes, otherwise only the `XmlDocument` node is cloned. See the <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName> method to see how this method behaves on other node types.  
+ 
   
- If `deep` is `true`, the cloned node includes all the child nodes, otherwise only the `XmlDocument` node is cloned. See the <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName> method to see how this method behaves on other node types.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows the difference between a deep and shallow clone.  
-  
- [!code-cpp[Classic WebData XmlDocument.CloneNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CloneNode Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CloneNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CloneNode Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CloneNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CloneNode Example/VB/source.vb#1)]  
-  
+The following example shows the difference between a deep and shallow clone.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CloneNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CloneNode Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CloneNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CloneNode Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CloneNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CloneNode Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,19 +492,19 @@
         <returns>The new <see langword="XmlAttribute" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `XmlAttribute` can be added to an <xref:System.Xml.XmlElement> using the <xref:System.Xml.XmlElement.SetAttributeNode%2A> method.  
+The `XmlAttribute` can be added to an <xref:System.Xml.XmlElement> using the <xref:System.Xml.XmlElement.SetAttributeNode%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following creates an attribute and adds it to an XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateAttribute Example/VB/source.vb#1)]  
-  
+The following creates an attribute and adds it to an XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateAttribute Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -541,10 +541,10 @@
         <returns>The new <see langword="XmlAttribute" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `XmlAttribute` can be added to an <xref:System.Xml.XmlElement> using the <xref:System.Xml.XmlElement.SetAttributeNode%2A> method.  
-  
+The `XmlAttribute` can be added to an <xref:System.Xml.XmlElement> using the <xref:System.Xml.XmlElement.SetAttributeNode%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -583,12 +583,12 @@
         <returns>The new <see langword="XmlAttribute" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `XmlAttribute` can be added to an <xref:System.Xml.XmlElement> using the <xref:System.Xml.XmlElement.SetAttributeNode%2A> method.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+The `XmlAttribute` can be added to an <xref:System.Xml.XmlElement> using the <xref:System.Xml.XmlElement.SetAttributeNode%2A> method.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -623,21 +623,21 @@
         <returns>The new <see langword="XmlCDataSection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), CDataSection nodes are allowed within Element nodes and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
+ 
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), CDataSection nodes are allowed within Element nodes and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a CDATA node and adds it to the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateCDataSection Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateCDataSection Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateCDataSection Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateCDataSection Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateCDataSection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateCDataSection Example/VB/source.vb#1)]  
-  
+The following example creates a CDATA node and adds it to the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateCDataSection Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateCDataSection Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateCDataSection Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateCDataSection Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateCDataSection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateCDataSection Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -672,21 +672,21 @@
         <returns>The new <see langword="XmlComment" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Comment nodes are only allowed within Document, Element and EntityReference nodes, when the EntityReference node is not a child of an Attribute node.  
+ 
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Comment nodes are only allowed within Document, Element and EntityReference nodes, when the EntityReference node is not a child of an Attribute node.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a comment and adds it to an XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateComment Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateComment Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateComment Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateComment Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateComment Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateComment Example/VB/source.vb#1)]  
-  
+The following example creates a comment and adds it to an XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateComment Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateComment Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateComment Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateComment Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateComment Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateComment Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -721,10 +721,10 @@
         <returns>The new <see cref="T:System.Xml.XmlAttribute" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -756,19 +756,19 @@
         <returns>The new <see langword="XmlDocumentFragment" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- DocumentFragment nodes cannot be inserted into a document. However, you can insert children of the DocumentFragment node into a document.  
+DocumentFragment nodes cannot be inserted into a document. However, you can insert children of the DocumentFragment node into a document.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example adds new nodes to an XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateDocumentFragment Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentFragment Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateDocumentFragment Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentFragment Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateDocumentFragment Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentFragment Example/VB/source.vb#1)]  
-  
+The following example adds new nodes to an XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateDocumentFragment Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentFragment Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateDocumentFragment Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentFragment Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateDocumentFragment Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentFragment Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -805,25 +805,25 @@
         <returns>The new <see langword="XmlDocumentType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned node will have parsed <xref:System.Xml.XmlDocumentType.Entities%2A> and <xref:System.Xml.XmlDocumentType.Notations%2A> collections.  
+The returned node will have parsed <xref:System.Xml.XmlDocumentType.Entities%2A> and <xref:System.Xml.XmlDocumentType.Notations%2A> collections.  
+ 
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), DocumentType nodes are only allowed within Document nodes. Each <xref:System.Xml.XmlDocument> can have only one DocumentType node. The DocumentType node must also be inserted before the root element of the `XmlDocument` (if the document already has a root element, you cannot add a DocumentType node).  
+ 
+If the passed parameters do not combine to build a valid `XmlDocumentType`, an exception is thrown.  
+ 
   
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), DocumentType nodes are only allowed within Document nodes. Each <xref:System.Xml.XmlDocument> can have only one DocumentType node. The DocumentType node must also be inserted before the root element of the `XmlDocument` (if the document already has a root element, you cannot add a DocumentType node).  
-  
- If the passed parameters do not combine to build a valid `XmlDocumentType`, an exception is thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a DocumentType node and adds it to an XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateDocumentType Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateDocumentType Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentType Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateDocumentType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentType Example/VB/source.vb#1)]  
-  
+The following example creates a DocumentType node and adds it to an XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateDocumentType Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateDocumentType Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentType Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateDocumentType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateDocumentType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -863,23 +863,23 @@
         <returns>The new <see langword="XmlElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the instance returned implements the `XmlElement` interface, so default attributes would be created directly on the returned object.  
+Note that the instance returned implements the `XmlElement` interface, so default attributes would be created directly on the returned object.  
+ 
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
+ 
   
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new element and adds it to the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/VB/source.vb#1)]  
-  
+The following example creates a new element and adds it to the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -916,26 +916,26 @@
         <returns>The new <see langword="XmlElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following C# code  
-  
+The following C# code  
+ 
 ```  
 XmlElement elem;  
 elem=doc.CreateElement("xy:item", "urn:abc");  
 ```  
-  
- results in an element that is equivalent to the following XML text.  
-  
+ 
+results in an element that is equivalent to the following XML text.  
+ 
 ```  
 <xy:item  
-       xmlns:xy="urn:abc"/>  
+      xmlns:xy="urn:abc"/>  
 ```  
-  
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
-  
+ 
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -974,36 +974,36 @@ elem=doc.CreateElement("xy:item", "urn:abc");
         <returns>The new <see cref="T:System.Xml.XmlElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following C# code  
-  
+The following C# code  
+ 
 ```  
 XmlElement elem;  
 elem=doc.CreateElement("xy", "item", "urn:abc");  
 ```  
-  
- creates an element equivalent to the following XML text:  
-  
+ 
+creates an element equivalent to the following XML text:  
+ 
 ```  
 <xy:item xmlns:xy="urn:abc"/>  
 ```  
+ 
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference is outside an Attribute node.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference is outside an Attribute node.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a new element to the existing XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/VB/source.vb#1)]  
-  
+The following example adds a new element to the existing XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1034,41 +1034,41 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The new <see langword="XmlEntityReference" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the referenced entity is known, the child list of the `XmlEntityReference` node is made the same as that of the corresponding <xref:System.Xml.XmlEntity> node.  
-  
- The namespaces used in the replacement text for the entity reference are bound at the time the parent of the entity reference node is first set (for example, when the entity reference node is inserted into the document). For example, given the following entity:  
-  
+If the referenced entity is known, the child list of the `XmlEntityReference` node is made the same as that of the corresponding <xref:System.Xml.XmlEntity> node.  
+ 
+The namespaces used in the replacement text for the entity reference are bound at the time the parent of the entity reference node is first set (for example, when the entity reference node is inserted into the document). For example, given the following entity:  
+ 
 ```  
 <!ENTITY a "<b>test</b>">  
 ```  
-  
- If you call `CreateEntityReference("a")` you get back a single node of type EntityReference with no children. If you append this node as a child of the following node,  
-  
+ 
+If you call `CreateEntityReference("a")` you get back a single node of type EntityReference with no children. If you append this node as a child of the following node,  
+ 
 ```  
 <item xmlns="urn:1"/>  
 ```  
+ 
+then, at the time of calling <xref:System.Xml.XmlNode.AppendChild%2A>, the parent of the newly created entity reference node is set and the children are expanded in this namespace context. The child element node `b` will have NamespaceURI equal to `urn:1`. The child nodes of the entity reference remain the same even if you move the entity reference to a place in the document that has a different default namespace context. This does not happen for existing entity reference nodes when you remove and insert them or for entity references that you clone with <xref:System.Xml.XmlDocument.CloneNode%2A>. It only happens for newly created entity references.  
+ 
+If the corresponding entity is not defined in the DocumentType when the entity reference node is added, because the entity reference is not defined, its only child node will be an empty text node.  
+ 
+The built-in entities amp, lt, gt, apos, and quot are also allowed, and they will have a child text node with the appropriate expanded character value.  
+ 
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), EntityReference nodes are only allowed within Element, Attribute and EntityReference nodes.  
+ 
   
- then, at the time of calling <xref:System.Xml.XmlNode.AppendChild%2A>, the parent of the newly created entity reference node is set and the children are expanded in this namespace context. The child element node `b` will have NamespaceURI equal to `urn:1`. The child nodes of the entity reference remain the same even if you move the entity reference to a place in the document that has a different default namespace context. This does not happen for existing entity reference nodes when you remove and insert them or for entity references that you clone with <xref:System.Xml.XmlDocument.CloneNode%2A>. It only happens for newly created entity references.  
-  
- If the corresponding entity is not defined in the DocumentType when the entity reference node is added, because the entity reference is not defined, its only child node will be an empty text node.  
-  
- The built-in entities amp, lt, gt, apos, and quot are also allowed, and they will have a child text node with the appropriate expanded character value.  
-  
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), EntityReference nodes are only allowed within Element, Attribute and EntityReference nodes.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates two entity reference nodes and inserts them into an XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateEntityReference Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateEntityReference Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateEntityReference Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateEntityReference Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateEntityReference Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateEntityReference Example/VB/source.vb#1)]  
-  
+The following example creates two entity reference nodes and inserts them into an XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateEntityReference Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateEntityReference Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateEntityReference Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateEntityReference Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateEntityReference Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateEntityReference Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The name is invalid (for example, names starting with'#' are invalid.)</exception>
@@ -1097,15 +1097,15 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=fullName> for an example using this method.  
-  
+See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=fullName> for an example using this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1136,15 +1136,15 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=fullName> for an example using this method.  
-  
+See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=fullName> for an example using this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1183,10 +1183,10 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The new <see langword="XmlNode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `nodeTypeString` parameter is case sensitive and must be one of the values in the following table.  
-  
+The `nodeTypeString` parameter is case sensitive and must be one of the values in the following table.  
+ 
 |nodeTypeString|XmlNodeType|  
 |--------------------|-----------------|  
 |attribute|Attribute|  
@@ -1201,11 +1201,11 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
 |significantwhitespace|SignificantWhitespace|  
 |text|Text|  
 |whitespace|Whitespace|  
-  
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
- The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210).  
-  
+ 
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210).  
+ 
 ||Document|DocumentType|XmlDeclaration|Element|Attribute|Text|CDATA|Markup|EntityReference|  
 |------|--------------|------------------|--------------------|-------------|---------------|----------|-----------|------------|---------------------|  
 |`Document`|no|no|no|no|no|no|no|no|no|  
@@ -1217,26 +1217,26 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
 |`CDATA`|no|no|no|yes|no|no|no|no|yes***|  
 |`Markup**`|yes|no|no|yes|no|no|no|no|no|  
 |`EntityReference`|no|no|no|yes|yes|no|no|no|yes|  
+ 
+\* The XmlDeclaration node must be the first child of the Document node.  
+ 
+** Markup includes ProcessingInstruction and Comment nodes.  
+ 
+*** Element and CDATA nodes are only allowed in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
+ 
+**** Attributes are not children of an Element node. Attributes are contained inside an attribute collection that belongs to an Element node.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- \* The XmlDeclaration node must be the first child of the Document node.  
-  
- ** Markup includes ProcessingInstruction and Comment nodes.  
-  
- *** Element and CDATA nodes are only allowed in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
-  
- **** Attributes are not children of an Element node. Attributes are contained inside an attribute collection that belongs to an Element node.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new element and inserts it into the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateNode1 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateNode1 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateNode1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode1 Example/VB/source.vb#1)]  
-  
+The following example creates a new element and inserts it into the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateNode1 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateNode1 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateNode1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The name was not provided and the <see langword="XmlNodeType" /> requires a name; or <paramref name="nodeTypeString" /> is not one of the strings listed below.</exception>
@@ -1276,12 +1276,12 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The new <see langword="XmlNode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
- The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210).  
-  
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210).  
+ 
 ||Document|DocumentType|XmlDeclaration|Element|Attribute|Text|CDATA|Markup|EntityReference|  
 |------|--------------|------------------|--------------------|-------------|---------------|----------|-----------|------------|---------------------|  
 |`Document`|no|no|no|no|no|no|no|no|no|  
@@ -1293,26 +1293,26 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
 |`CDATA`|no|no|no|yes|no|no|no|no|yes***|  
 |`Markup**`|yes|no|no|yes|no|no|no|no|no|  
 |`EntityReference`|no|no|no|yes|yes|no|no|no|yes|  
+ 
+\* The XmlDeclaration node must be the first child of the Document node.  
+ 
+** Markup includes ProcessingInstruction and Comment nodes.  
+ 
+*** Element and CDATA nodes are only allowed in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
+ 
+**** Attributes are not children of an Element node. Attributes are contained inside an attribute collection that belongs to an Element node.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- \* The XmlDeclaration node must be the first child of the Document node.  
-  
- ** Markup includes ProcessingInstruction and Comment nodes.  
-  
- *** Element and CDATA nodes are only allowed in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
-  
- **** Attributes are not children of an Element node. Attributes are contained inside an attribute collection that belongs to an Element node.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new element and inserts it into an XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode Example/VB/source.vb#1)]  
-  
+The following example creates a new element and inserts it into an XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The name was not provided and the <see langword="XmlNodeType" /> requires a name.</exception>
@@ -1354,12 +1354,12 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The new <see langword="XmlNode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
- The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210).  
-  
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210).  
+ 
 ||Document|DocumentType|XmlDeclaration|Element|Attribute|Text|CDATA|Markup|EntityReference|  
 |------|--------------|------------------|--------------------|-------------|---------------|----------|-----------|------------|---------------------|  
 |`Document`|no|no|no|no|no|no|no|no|no|  
@@ -1371,26 +1371,26 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
 |`CDATA`|no|no|no|yes|no|no|no|no|yes***|  
 |`Markup**`|yes|no|no|yes|no|no|no|no|no|  
 |`EntityReference`|no|no|no|yes|yes|no|no|no|yes|  
+ 
+\* The XmlDeclaration node must be the first child of the Document node.  
+ 
+** Markup includes ProcessingInstruction and Comment nodes.  
+ 
+*** Element and CDATA nodes are only allowed in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
+ 
+**** Attributes are not children of an Element node. Attributes are contained inside an attribute collection that belongs to the Element node.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- \* The XmlDeclaration node must be the first child of the Document node.  
-  
- ** Markup includes ProcessingInstruction and Comment nodes.  
-  
- *** Element and CDATA nodes are only allowed in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
-  
- **** Attributes are not children of an Element node. Attributes are contained inside an attribute collection that belongs to the Element node.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a new element to the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateNode2 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateNode2 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode2 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateNode2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode2 Example/VB/source.vb#1)]  
-  
+The following example adds a new element to the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateNode2 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateNode2 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode2 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateNode2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateNode2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The name was not provided and the <see langword="XmlNodeType" /> requires a name.</exception>
@@ -1428,21 +1428,21 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The new <see langword="XmlProcessingInstruction" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), ProcessingInstruction nodes are only allowed within Document, Element, and EntityReference nodes, when the EntityReference node is not a child of an Attribute node.  
+ 
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), ProcessingInstruction nodes are only allowed within Document, Element, and EntityReference nodes, when the EntityReference node is not a child of an Attribute node.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a ProcessingInstruction node and adds it to the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/VB/source.vb#1)]  
-  
+The following example creates a ProcessingInstruction node and adds it to the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1477,21 +1477,21 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>A new <see langword="XmlSignificantWhitespace" /> node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM). It is used when you want to manually format your document.  
+This method is a Microsoft extension to the Document Object Model (DOM). It is used when you want to manually format your document.  
+ 
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
   
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds significant white space to the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateSignificantWhitespace Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateSignificantWhitespace Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateSignificantWhitespace Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateSignificantWhitespace Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateSignificantWhitespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateSignificantWhitespace Example/VB/source.vb#1)]  
-  
+The following example adds significant white space to the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateSignificantWhitespace Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateSignificantWhitespace Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateSignificantWhitespace Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateSignificantWhitespace Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateSignificantWhitespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateSignificantWhitespace Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1526,21 +1526,21 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The new <see langword="XmlText" /> node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Text nodes are only allowed within Element, Attribute and EntityReference nodes.  
+ 
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Text nodes are only allowed within Element, Attribute and EntityReference nodes.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new element and adds it to the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/VB/source.vb#1)]  
-  
+The following example creates a new element and adds it to the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1575,21 +1575,21 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>A new <see langword="XmlWhitespace" /> node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM). It is used when you want to manually format your document.  
+This method is a Microsoft extension to the Document Object Model (DOM). It is used when you want to manually format your document.  
+ 
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
   
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds white space to the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateWhitespace Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateWhitespace Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateWhitespace Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateWhitespace Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateWhitespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateWhitespace Example/VB/source.vb#1)]  
-  
+The following example adds white space to the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateWhitespace Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateWhitespace Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateWhitespace Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateWhitespace Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateWhitespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateWhitespace Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1630,25 +1630,25 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The new <see langword="XmlDeclaration" /> node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The attributes are exposed as special properties on the `XmlDeclaration` node, and not as <xref:System.Xml.XmlAttribute> nodes.  
+The attributes are exposed as special properties on the `XmlDeclaration` node, and not as <xref:System.Xml.XmlAttribute> nodes.  
+ 
+Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
+ 
+According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), the `XmlDeclaration` node must be the first node in the document.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
-  
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), the `XmlDeclaration` node must be the first node in the document.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML declaration and adds it to the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateXmlDeclaration Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateXmlDeclaration Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateXmlDeclaration Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateXmlDeclaration Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateXmlDeclaration Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateXmlDeclaration Example/VB/source.vb#1)]  
-  
+The following example creates an XML declaration and adds it to the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateXmlDeclaration Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateXmlDeclaration Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateXmlDeclaration Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateXmlDeclaration Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateXmlDeclaration Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateXmlDeclaration Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The values of <paramref name="version" /> or <paramref name="standalone" /> are something other than the ones specified above.</exception>
@@ -1680,20 +1680,20 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <value>The <see langword="XmlElement" /> that represents the root of the XML document tree. If no root exists, <see langword="null" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the root element of the XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/VB/source.vb#1)]  
-  
- **Output:**  
-  
+The following example displays the root element of the XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.DocumentElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/VB/source.vb#1)]  
+ 
+**Output:**  
+ 
 ```  
 <book genre="novel" ISBN="1-861001-57-5"><title>Pride And Prejudice</title></book>   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1720,22 +1720,22 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <value>The <see cref="T:System.Xml.XmlNode" /> containing the DocumentType (DOCTYPE declaration).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An `XmlDocument` can have one and only one child with <xref:System.Xml.XmlNodeType> equal to DocumentType.  
-  
+An `XmlDocument` can have one and only one child with <xref:System.Xml.XmlNodeType> equal to DocumentType.  
+ 
 > [!NOTE]
 >  This property is read-only. To change the DocumentType node, delete the existing node, create a new one using the <xref:System.Xml.XmlDocument.CreateDocumentType%2A> method, and add the new node to the document.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example gets and displays the DOCTYPE declaration for the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.DocumentType Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.DocumentType Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentType Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.DocumentType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.DocumentType Example/VB/source.vb#1)]  
-  
+The following example gets and displays the DOCTYPE declaration for the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.DocumentType Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.DocumentType Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.DocumentType Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.DocumentType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.DocumentType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1766,41 +1766,41 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The <see langword="XmlElement" /> with the matching ID or <see langword="null" /> if no matching element is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the document has multiple elements with the matching ID, this method returns the first matching element in the document.  
-  
+If the document has multiple elements with the matching ID, this method returns the first matching element in the document.  
+ 
 > [!NOTE]
 >  The DOM implementation must have information which defines which attributes are of type ID. Although attributes of type ID can be defined in either XSD schemas or DTDs, this version of the product only supports those defined in DTDs. Attributes with the name "ID" are not of type ID unless so defined in the DTD. Implementations where it is unknown whether the attributes are of type ID are expected to return `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `GetElementById` method.  
-  
- [!code-cpp[Classic WebData XmlDocument.GetElementById Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementById Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.GetElementById Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementById Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.GetElementById Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.GetElementById Example/VB/source.vb#1)]  
-  
- The example uses the file, `ids.xml`, as input.  
-  
+The following example uses the `GetElementById` method.  
+ 
+[!code-cpp[Classic WebData XmlDocument.GetElementById Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementById Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.GetElementById Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementById Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.GetElementById Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.GetElementById Example/VB/source.vb#1)]  
+ 
+The example uses the file, `ids.xml`, as input.  
+ 
 ```xml  
 <!DOCTYPE root [  
-  <!ELEMENT root ANY>   
-  <!ELEMENT Person ANY>   
-  <!ELEMENT Customer EMPTY>  
-  <!ELEMENT Team EMPTY>  
-  <!ATTLIST Person SSN ID #REQUIRED>  
-  <!ATTLIST Customer id IDREF #REQUIRED >  
-  <!ATTLIST Team members IDREFS #REQUIRED>]>  
+ <!ELEMENT root ANY>   
+ <!ELEMENT Person ANY>   
+ <!ELEMENT Customer EMPTY>  
+ <!ELEMENT Team EMPTY>  
+ <!ATTLIST Person SSN ID #REQUIRED>  
+ <!ATTLIST Customer id IDREF #REQUIRED >  
+ <!ATTLIST Team members IDREFS #REQUIRED>]>  
 <root>  
-  <Person SSN='A111' Name='Fred'/>  
-  <Person SSN='A222' Name='Tom'/>  
-  <Customer id='A222334444'/>  
-  <Team members='A222334444 A333445555'/>  
+ <Person SSN='A111' Name='Fred'/>  
+ <Person SSN='A222' Name='Tom'/>  
+ <Customer id='A222334444'/>  
+ <Team members='A222334444 A333445555'/>  
 </root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1835,26 +1835,26 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a list of all matching nodes. If no nodes match <paramref name="name" />, the returned collection will be empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The nodes are placed in the order in which they would be encountered in the document.  
-  
+The nodes are placed in the order in which they would be encountered in the document.  
+ 
 > [!NOTE]
 >  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a `XmlDocument` object and uses the `GetElementsByTagName` method and the resulting <xref:System.Xml.XmlNodeList> object to display all the book titles.  
-  
- [!code-cpp[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/VB/source.vb#1)]  
-  
- The example uses the `books.xml` file as input.  
-  
- [!code-xml[Classic WebData XslTransform.Transform7 Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XslTransform.Transform7 Example/XML/books.xml#2)]  
-  
+The following example creates a `XmlDocument` object and uses the `GetElementsByTagName` method and the resulting <xref:System.Xml.XmlNodeList> object to display all the book titles.  
+ 
+[!code-cpp[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/VB/source.vb#1)]  
+ 
+The example uses the `books.xml` file as input.  
+ 
+[!code-xml[Classic WebData XslTransform.Transform7 Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XslTransform.Transform7 Example/XML/books.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1891,13 +1891,13 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a list of all matching nodes. If no nodes match the specified <paramref name="localName" /> and <paramref name="namespaceURI" />, the returned collection will be empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The nodes are placed in the order in which they would be encountered in the document tree.  
-  
+The nodes are placed in the order in which they would be encountered in the document tree.  
+ 
 > [!NOTE]
 >  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1928,21 +1928,21 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <value>The <see langword="XmlImplementation" /> object for the current document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `XmlDocument` objects created from the same `XmlImplementation` share the same <xref:System.Xml.XmlNameTable>. This allows users to compare attribute and element names as objects rather than strings.  
+`XmlDocument` objects created from the same `XmlImplementation` share the same <xref:System.Xml.XmlNameTable>. This allows users to compare attribute and element names as objects rather than strings.  
+ 
+Although the `XmlDocument` objects share the same implementation, to move nodes from one document to another you must use the <xref:System.Xml.XmlDocument.ImportNode%2A> method.  
+ 
   
- Although the `XmlDocument` objects share the same implementation, to move nodes from one document to another you must use the <xref:System.Xml.XmlDocument.ImportNode%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new `XmlDocument` using another document's implementation.  
-  
- [!code-cpp[Classic WebData XmlDocument.Implementation Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.Implementation Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.Implementation Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.Implementation Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.Implementation Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.Implementation Example/VB/source.vb#1)]  
-  
+The following example creates a new `XmlDocument` using another document's implementation.  
+ 
+[!code-cpp[Classic WebData XmlDocument.Implementation Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.Implementation Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.Implementation Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.Implementation Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.Implementation Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.Implementation Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1980,16 +1980,16 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The imported <see cref="T:System.Xml.XmlNode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned node has no parent. The source node is not altered or removed from the original document; `ImportNode` creates a copy of the source node.  
-  
- Importing a node creates an `XmlNode` object owned by the importing document, with <xref:System.Xml.XmlNode.Name%2A> and <xref:System.Xml.XmlNode.NodeType%2A> identical to the source node. The new object also has the attributes related to namespaces (<xref:System.Xml.XmlNode.Prefix%2A>, <xref:System.Xml.XmlNode.LocalName%2A>, and <xref:System.Xml.XmlNode.NamespaceURI%2A>).  
-  
- Depending on the node type of the imported node and the value of the `deep` parameter, additional information is copied as appropriate. This method attempts to mirror the behavior expected if a fragment of XML or HTML source was copied from one document to another (recognizing that, in the XML case, the two documents could have different DTDs).  
-  
- The following table describes the specific behavior for each <xref:System.Xml.XmlNodeType>.  
-  
+The returned node has no parent. The source node is not altered or removed from the original document; `ImportNode` creates a copy of the source node.  
+ 
+Importing a node creates an `XmlNode` object owned by the importing document, with <xref:System.Xml.XmlNode.Name%2A> and <xref:System.Xml.XmlNode.NodeType%2A> identical to the source node. The new object also has the attributes related to namespaces (<xref:System.Xml.XmlNode.Prefix%2A>, <xref:System.Xml.XmlNode.LocalName%2A>, and <xref:System.Xml.XmlNode.NamespaceURI%2A>).  
+ 
+Depending on the node type of the imported node and the value of the `deep` parameter, additional information is copied as appropriate. This method attempts to mirror the behavior expected if a fragment of XML or HTML source was copied from one document to another (recognizing that, in the XML case, the two documents could have different DTDs).  
+ 
+The following table describes the specific behavior for each <xref:System.Xml.XmlNodeType>.  
+ 
 |XmlNodeType|ImportNode(true)|ImportNode(false)|  
 |-----------------|------------------------|-------------------------|  
 |Attribute|The <xref:System.Xml.XmlAttribute.Specified%2A> property is set to `true` on the generated <xref:System.Xml.XmlAttribute>. The descendants of the source `XmlAttribute` are recursively imported and the resulting nodes reassembled to form the corresponding subtree.|The `deep` parameter does not apply to `XmlAttribute` nodes; they always carry their children with them when imported.|  
@@ -2005,22 +2005,22 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
 |Whitespace|Copies the node, including its data.|Copies the node, including its data.|  
 |XmlDeclaration|Copies the target and data value from the imported node.|Copies the target and data value from the imported node.|  
 |All other node types.|These node types cannot be imported.|These node types cannot be imported.|  
+ 
+*Although DocumentType nodes can be imported, a document can only have one DocumentType. If the document currently has a DocumenType node, it must be removed before adding a new one.  
+ 
   
- *Although DocumentType nodes can be imported, a document can only have one DocumentType. If the document currently has a DocumenType node, it must be removed before adding a new one.  
-  
-   
-  
+ 
 ## Examples  
- The following example imports a book node from a second XML document into the original XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.ImportNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.ImportNode Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.ImportNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.ImportNode Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.ImportNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.ImportNode Example/VB/source.vb#1)]  
-  
- The example uses the file, `books.xml`, as input.  
-  
- [!code-xml[Classic WebData XslTransform.Transform7 Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XslTransform.Transform7 Example/XML/books.xml#2)]  
-  
+The following example imports a book node from a second XML document into the original XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.ImportNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.ImportNode Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.ImportNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.ImportNode Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.ImportNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.ImportNode Example/VB/source.vb#1)]  
+ 
+The example uses the file, `books.xml`, as input.  
+ 
+[!code-xml[Classic WebData XslTransform.Transform7 Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XslTransform.Transform7 Example/XML/books.xml#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Calling this method on a node type which cannot be imported.</exception>
@@ -2052,10 +2052,10 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <value>The values of the node and all its child nodes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not implemented.  
-  
+This property is not implemented.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">In all cases.</exception>
@@ -2087,87 +2087,87 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <value>The markup of the children of the current node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property replaces the children of the node with the parsed contents of the given string. The parsing is done in the current namespace context.  
-  
- `InnerXml` removes redundant namespace declarations. As a result, numerous cut and paste operations do not increase the size of your document with redundant namespace declarations. Consider the following XSL document:  
-  
+Setting this property replaces the children of the node with the parsed contents of the given string. The parsing is done in the current namespace context.  
+ 
+`InnerXml` removes redundant namespace declarations. As a result, numerous cut and paste operations do not increase the size of your document with redundant namespace declarations. Consider the following XSL document:  
+ 
 ```  
 <xsl:stylesheet version="1.0"   
-      xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-     <xsl:template match="stock">  
-         ...  
-     </xsl:template>  
-    </xsl:stylesheet>  
+     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
+    <xsl:template match="stock">  
+        ...  
+    </xsl:template>  
+   </xsl:stylesheet>  
 ```  
-  
- The `InnerXml` property on the stylesheet node returns the following string:  
-  
+ 
+The `InnerXml` property on the stylesheet node returns the following string:  
+ 
 ```  
 <xsl:template match="stock"   
-      xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-     ...  
-    </xsl:template>  
+     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
+    ...  
+   </xsl:template>  
 ```  
-  
- Notice the additional xmlns:xsl namespace declaration which is used to preserve the node identity. If you re-insert this inner XML string, you will get back your original document. In other words, `InnerXml` recognizes that the xmlns:xsl namespace declaration is redundant, given that the parent xsl:stylesheet element already has the xmlns:xsl namespace delcaration, and therefore removes it.  
-  
- If you move `InnerXml` from a document with no default namespace to a document with a default namespace, the behavior is a little different. Consider the following XML string:  
-  
+ 
+Notice the additional xmlns:xsl namespace declaration which is used to preserve the node identity. If you re-insert this inner XML string, you will get back your original document. In other words, `InnerXml` recognizes that the xmlns:xsl namespace declaration is redundant, given that the parent xsl:stylesheet element already has the xmlns:xsl namespace delcaration, and therefore removes it.  
+ 
+If you move `InnerXml` from a document with no default namespace to a document with a default namespace, the behavior is a little different. Consider the following XML string:  
+ 
 ```  
 <test>  
-      <item>123</item>  
-    </test>  
+     <item>123</item>  
+   </test>  
 ```  
-  
- `InnerXml` returns a plain XML string with no namespace declarations:  
-  
+ 
+`InnerXml` returns a plain XML string with no namespace declarations:  
+ 
 ```  
 <item>123</item>  
 ```  
-  
- If you then insert this string into a document that does have a default namespace, such as the following:  
-  
+ 
+If you then insert this string into a document that does have a default namespace, such as the following:  
+ 
 ```  
 <test2 xmlns="urn:1">  
-    </test>  
+   </test>  
 ```  
-  
- `InnerXml` parses the string in context, and the new nodes pick up the urn:1 namespace. The result looks like this:  
-  
+ 
+`InnerXml` parses the string in context, and the new nodes pick up the urn:1 namespace. The result looks like this:  
+ 
 ```  
 <test2 xmlns="urn:1">  
-      <item>123</item>  
-    </test>  
+     <item>123</item>  
+   </test>  
 ```  
-  
- Now when you ask for the `InnerXml` you get back the following:  
-  
+ 
+Now when you ask for the `InnerXml` you get back the following:  
+ 
 ```  
 <item xmlns="urn:1">123</item>  
 ```  
-  
- If you explicitly want the inserted item to preserve the fact that it came from a document that had no namespace then you need to manually add an xmlns= "" declaration and insert the resulting string:  
-  
+ 
+If you explicitly want the inserted item to preserve the fact that it came from a document that had no namespace then you need to manually add an xmlns= "" declaration and insert the resulting string:  
+ 
 ```  
 <item xmlns="">123</item>  
 ```  
-  
- The net effect of all this is as follows:  
-  
+ 
+The net effect of all this is as follows:  
+ 
 1.  Cutting and pasting `InnerXml` among documents that do not use namespaces is clean and simple and does not create "xmlns" redundancy in your strings.  
-  
+ 
 2.  `InnerXml` can also be used to cut and paste between documents which have more than one namespace (that is XSL stylesheets).  
-  
+ 
 3.  xmlns:xsl declarations automatically appear in your strings and disappear in your node hierarchies.  
-  
+ 
 4.  In the case where you are moving `InnerXml` from a document that has no default namespace to a document that does have a default namespace, the new nodes will pick up the new default namespace.  
-  
- If `InnerXml` is set with text containing entity references that are not currently defined in the document, the resulting tree will contain empty EntityReference nodes.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+ 
+If `InnerXml` is set with text containing entity references that are not currently defined in the document, the resulting tree will contain empty EntityReference nodes.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The XML specified when setting this property is not well-formed.</exception>
@@ -2200,21 +2200,21 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
           <see langword="true" /> if the current node is read-only; otherwise <see langword="false" />. <see langword="XmlDocument" /> nodes always return <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A read-only node is one whose properties, attributes, or children cannot be changed. You can remove a read-only node from the tree and insert it somewhere else.  
+A read-only node is one whose properties, attributes, or children cannot be changed. You can remove a read-only node from the tree and insert it somewhere else.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the `IsReadOnly` property.  
-  
- [!code-cpp[Classic WebData XmlDocument.IsReadOnly Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.IsReadOnly Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.IsReadOnly Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.IsReadOnly Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.IsReadOnly Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.IsReadOnly Example/VB/source.vb#1)]  
-  
+The following example shows how to use the `IsReadOnly` property.  
+ 
+[!code-cpp[Classic WebData XmlDocument.IsReadOnly Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.IsReadOnly Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.IsReadOnly Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.IsReadOnly Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.IsReadOnly Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.IsReadOnly Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2248,18 +2248,18 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Loads the XML document from the specified stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The `Load` method always preserves significant white space. The <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> property determines whether or not insignificant white space, that is white space in element content, is preserved. The default is `false`; white space in element content is not preserved.  
-  
- If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
- This method automatically detects the string format of the input XML (for example, UTF-8, ANSI, and so on). If your application needs to know which encoding is used to read the stream, consider using an <xref:System.Xml.XmlTextReader> object to read the stream, and then use the <xref:System.Xml.XmlTextReader.Encoding%2A?displayProperty=fullName> property to determine the encoding. If you need to use a <xref:System.Xml.XmlDocument> object to work with XML, you can use the <xref:System.Xml.XmlTextReader> object to create one. For more information, see [Reading XML Data using XPathDocument and XmlDocument](~/docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md).  
-  
+ 
+If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
+This method automatically detects the string format of the input XML (for example, UTF-8, ANSI, and so on). If your application needs to know which encoding is used to read the stream, consider using an <xref:System.Xml.XmlTextReader> object to read the stream, and then use the <xref:System.Xml.XmlTextReader.Encoding%2A?displayProperty=fullName> property to determine the encoding. If you need to use a <xref:System.Xml.XmlDocument> object to work with XML, you can use the <xref:System.Xml.XmlTextReader> object to create one. For more information, see [Reading XML Data using XPathDocument and XmlDocument](~/docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">There is a load or parse error in the XML. In this case, a <see cref="T:System.IO.FileNotFoundException" /> is raised.</exception>
@@ -2294,25 +2294,25 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Loads the XML document from the specified <see cref="T:System.IO.TextReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The `Load` method always preserves significant white space. The <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> property determines whether or not insignificant white space, that is white space in element content, is preserved. The default is `false`; white space in element content is not preserved.  
+ 
+If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.IO.StringReader> class to load a string of XML data into the `XmlDocument` object.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.IO.StringReader> class to load a string of XML data into the `XmlDocument` object.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateElement2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateElement2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">There is a load or parse error in the XML. In this case, the document remains empty.</exception>
@@ -2343,16 +2343,16 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Loads the XML document from the specified URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The `Load` method always preserves significant white space. The <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> property determines whether or not insignificant white space, that is white space in element content, is preserved. The default is `false`; white space in element content is not preserved.  
-  
- If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+ 
+If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">There is a load or parse error in the XML. In this case, a <see cref="T:System.IO.FileNotFoundException" /> is raised.</exception>
@@ -2412,49 +2412,49 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Loads the XML document from the specified <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The `Load` method always preserves significant white space. The <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> property determines whether or not insignificant white space, that is white space in element content, is preserved. The default is `false`; white space in element content is not preserved.  
-  
- If the reader is in the initial state (<xref:System.Xml.XmlReader.ReadState%2A> =ReadState.Initial), `Load` consumes the entire contents of the reader and builds the DOM from what it finds.  
-  
- If the reader is already positioned on some node at depth "n", this method loads that node and all subsequent siblings up to the end tag that closes depth "n". This has the following results.  
-  
- If the current node and its siblings look like the following:  
-  
+ 
+If the reader is in the initial state (<xref:System.Xml.XmlReader.ReadState%2A> =ReadState.Initial), `Load` consumes the entire contents of the reader and builds the DOM from what it finds.  
+ 
+If the reader is already positioned on some node at depth "n", this method loads that node and all subsequent siblings up to the end tag that closes depth "n". This has the following results.  
+ 
+If the current node and its siblings look like the following:  
+ 
 ```  
 <!--comment--><element1>one</element1><element2>two</element2>  
 ```  
-  
- `Load` throws an exception because a document cannot have two root level elements. If the current node and its siblings look like the following:  
-  
+ 
+`Load` throws an exception because a document cannot have two root level elements. If the current node and its siblings look like the following:  
+ 
 ```  
 <!--comment--><?process instruction?><!--comment--></endtag>  
 ```  
+ 
+`Load` succeeds, but you have an incomplete DOM tree because there is no root level element. Before you save the document, you must add a root level element, otherwise <xref:System.Xml.XmlDocument.Save%2A> will throw an exception.  
+ 
+If the reader is positioned on a leaf node that is invalid for the root level of a document, for example a white space or attribute node, the reader continues to read until it is positioned on a node that can be used for the root. The document begins loading at this point.  
+ 
+If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- `Load` succeeds, but you have an incomplete DOM tree because there is no root level element. Before you save the document, you must add a root level element, otherwise <xref:System.Xml.XmlDocument.Save%2A> will throw an exception.  
-  
- If the reader is positioned on a leaf node that is invalid for the root level of a document, for example a white space or attribute node, the reader continues to read until it is positioned on a node that can be used for the root. The document begins loading at this point.  
-  
- If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example loads the last book node of the `books.xml` file into the XML document.  
-  
- [!code-cpp[Classic WebData XmlDocument.Load2 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.Load2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.Load2 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.Load2 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.Load2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.Load2 Example/VB/source.vb#1)]  
-  
- The example uses the file, `books.xml`, as input.  
-  
- [!code-xml[Classic WebData XslTransform.Transform7 Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XslTransform.Transform7 Example/XML/books.xml#2)]  
-  
+The following example loads the last book node of the `books.xml` file into the XML document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.Load2 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.Load2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.Load2 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.Load2 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.Load2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.Load2 Example/VB/source.vb#1)]  
+ 
+The example uses the file, `books.xml`, as input.  
+ 
+[!code-xml[Classic WebData XslTransform.Transform7 Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XslTransform.Transform7 Example/XML/books.xml#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">There is a load or parse error in the XML. In this case, the document remains empty.</exception>
@@ -2489,25 +2489,25 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Loads the XML document from the specified string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default the `LoadXml` method does not preserve white space or significant white space.  
+By default the `LoadXml` method does not preserve white space or significant white space.  
+ 
+This method parses DTDs, but does not do DTD or Schema validation. If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
+ 
+If you want to load from a <xref:System.IO.Stream>, <xref:System.String>, <xref:System.IO.TextReader>, or <xref:System.Xml.XmlReader>, use the Load method instead of this method.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This method parses DTDs, but does not do DTD or Schema validation. If you want validation to occur, you can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
-  
- If you want to load from a <xref:System.IO.Stream>, <xref:System.String>, <xref:System.IO.TextReader>, or <xref:System.Xml.XmlReader>, use the Load method instead of this method.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example loads XML into an `XmlDocument` object and saves it out to a file.  
-  
- [!code-cpp[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/VB/source.vb#1)]  
-  
+The following example loads XML into an `XmlDocument` object and saves it out to a file.  
+ 
+[!code-cpp[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">There is a load or parse error in the XML. In this case, the document remains empty.</exception>
@@ -2539,10 +2539,10 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <value>For <see langword="XmlDocument" /> nodes, the local name is #document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The local name returned depends on the <xref:System.Xml.XmlDocument.NodeType%2A> of the node. To see a table describing the local name returned for each of the node types, see the <xref:System.Xml.XmlNode.LocalName%2A> property in the <xref:System.Xml.XmlNode> class.  
-  
+The local name returned depends on the <xref:System.Xml.XmlDocument.NodeType%2A> of the node. To see a table describing the local name returned for each of the node types, see the <xref:System.Xml.XmlNode.LocalName%2A> property in the <xref:System.Xml.XmlNode> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2573,10 +2573,10 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <value>For <see langword="XmlDocument" /> nodes, the name is #document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name returned depends on the <xref:System.Xml.XmlDocument.NodeType%2A> of the node. To see a table describing the name returned for each of the node types, see the <xref:System.Xml.XmlNode.Name%2A> property in the <xref:System.Xml.XmlNode> class.  
-  
+The name returned depends on the <xref:System.Xml.XmlDocument.NodeType%2A> of the node. To see a table describing the name returned for each of the node types, see the <xref:System.Xml.XmlNode.Name%2A> property in the <xref:System.Xml.XmlNode> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2607,14 +2607,14 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <value>An <see langword="XmlNameTable" /> enabling you to get the atomized version of a string within the document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each `XmlDocument` object has a <xref:System.Xml.NameTable> object. Element and attribute names are stored in the `NameTable` as atomized strings. This means that even if a name is referenced in the document multiple times it is stored only once in the `NameTable`. For example, if the document had multiple elements with the name "Customer", `NameTable` returns the same object whenever it receives a request for that name. As a result, users can write code using object comparisons on these strings rather than the more expensive string comparisons.  
-  
- For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+Each `XmlDocument` object has a <xref:System.Xml.NameTable> object. Element and attribute names are stored in the `NameTable` as atomized strings. This means that even if a name is referenced in the document multiple times it is stored only once in the `NameTable`. For example, if the document had multiple elements with the name "Customer", `NameTable` returns the same object whenever it receives a request for that name. As a result, users can write code using object comparisons on these strings rather than the more expensive string comparisons.  
+ 
+For more information on atomized strings, see <xref:System.Xml.XmlNameTable>.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2644,12 +2644,12 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Occurs when the <see cref="P:System.Xml.XmlNode.Value" /> of a node belonging to this document has been changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event only applies to nodes that have a value.  
-  
- All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
-  
+This event only applies to nodes that have a value.  
+ 
+All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2679,12 +2679,12 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Occurs when the <see cref="P:System.Xml.XmlNode.Value" /> of a node belonging to this document is about to be changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event allows the user to do extra checking and, if necessary, throw an exception to stop the operation. If an exception is thrown the `XmlDocument` returns to its original state. This event only applies to nodes that have a value.  
-  
- All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
-  
+This event allows the user to do extra checking and, if necessary, throw an exception to stop the operation. If an exception is thrown the `XmlDocument` returns to its original state. This event only applies to nodes that have a value.  
+ 
+All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2714,10 +2714,10 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Occurs when a node belonging to this document has been inserted into another node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
-  
+All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2747,12 +2747,12 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Occurs when a node belonging to this document is about to be inserted into another node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event allows the user to do extra checking and, if necessary, throw an exception to stop the operation. If an exception is thrown the `XmlDocument` returns to its original state.  
-  
- All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
-  
+This event allows the user to do extra checking and, if necessary, throw an exception to stop the operation. If an exception is thrown the `XmlDocument` returns to its original state.  
+ 
+All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2782,10 +2782,10 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Occurs when a node belonging to this document has been removed from its parent.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
-  
+All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2815,12 +2815,12 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Occurs when a node belonging to this document is about to be removed from the document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event allows the user to do extra checking and, if necessary, throw an exception to stop the operation. If an exception is thrown the `XmlDocument` returns to its original state.  
-  
- All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
-  
+This event allows the user to do extra checking and, if necessary, throw an exception to stop the operation. If an exception is thrown the `XmlDocument` returns to its original state.  
+ 
+All nodes created by this document, whether or not they have been inserted into the document, are included in this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2933,29 +2933,29 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
           <see langword="true" /> to preserve white space; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property determines how white space is handled during the load and save process.  
+This property determines how white space is handled during the load and save process.  
+ 
+If `PreserveWhitespace` is `true` before <xref:System.Xml.XmlDocument.Load%2A> or <xref:System.Xml.XmlDocument.LoadXml%2A> is called, white space nodes are preserved; otherwise, if this property is `false`, significant white space is preserved, white space is not.  
+ 
+If `PreserveWhitespace` is `true` before <xref:System.Xml.XmlDocument.Save%2A> is called, white space in the document is preserved in the output; otherwise, if this property is `false`, `XmlDocument` auto-indents the output.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- If `PreserveWhitespace` is `true` before <xref:System.Xml.XmlDocument.Load%2A> or <xref:System.Xml.XmlDocument.LoadXml%2A> is called, white space nodes are preserved; otherwise, if this property is `false`, significant white space is preserved, white space is not.  
-  
- If `PreserveWhitespace` is `true` before <xref:System.Xml.XmlDocument.Save%2A> is called, white space in the document is preserved in the output; otherwise, if this property is `false`, `XmlDocument` auto-indents the output.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to strip white space from a file.  
-  
- [!code-cpp[Classic WebData XmlDocument.PreserveWhitespace Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.PreserveWhitespace Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.PreserveWhitespace Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.PreserveWhitespace Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.PreserveWhitespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.PreserveWhitespace Example/VB/source.vb#1)]  
-  
- The example uses the file `book.xml` as input.  
-  
- [!code-xml[Classic WebData XmlDocument.PreserveWhitespace Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlDocument.PreserveWhitespace Example/XML/source.xml#2)]  
-  
+The following example shows how to strip white space from a file.  
+ 
+[!code-cpp[Classic WebData XmlDocument.PreserveWhitespace Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.PreserveWhitespace Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.PreserveWhitespace Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.PreserveWhitespace Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.PreserveWhitespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.PreserveWhitespace Example/VB/source.vb#1)]  
+ 
+The example uses the file `book.xml` as input.  
+ 
+[!code-xml[Classic WebData XmlDocument.PreserveWhitespace Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlDocument.PreserveWhitespace Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2990,38 +2990,38 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <returns>The new <see langword="XmlNode" /> or <see langword="null" /> if no more nodes exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Reads one `XmlNode` from the given reader and positions the reader on the next node. This method creates the type of `XmlNode` matching the <xref:System.Xml.XmlNode.NodeType%2A> on which the reader is currently positioned. (If the reader is in the initial state, `ReadNode` advances the reader to the first node and then operates on that node.)  
-  
- If the reader is positioned on the start of an element, `ReadNode` reads all the attributes and any child nodes, up to and including the end tag of the current node. The `XmlNode` returned contains the sub-tree representing everything read. The reader is positioned immediately after the end tag.  
-  
- `ReadNode` can also read attributes, but in this case it does not advance the reader to the next attribute. This allows you to write the following C# code:  
-  
+Reads one `XmlNode` from the given reader and positions the reader on the next node. This method creates the type of `XmlNode` matching the <xref:System.Xml.XmlNode.NodeType%2A> on which the reader is currently positioned. (If the reader is in the initial state, `ReadNode` advances the reader to the first node and then operates on that node.)  
+ 
+If the reader is positioned on the start of an element, `ReadNode` reads all the attributes and any child nodes, up to and including the end tag of the current node. The `XmlNode` returned contains the sub-tree representing everything read. The reader is positioned immediately after the end tag.  
+ 
+`ReadNode` can also read attributes, but in this case it does not advance the reader to the next attribute. This allows you to write the following C# code:  
+ 
 ```  
 XmlDocument doc = new XmlDocument();  
 while (reader.MoveToNextAttribute())  
 {  
-  XmlNode a = doc.ReadNode(reader);  
-  // Do some more processing.  
+ XmlNode a = doc.ReadNode(reader);  
+ // Do some more processing.  
 }  
 ```  
+ 
+`ReadNode` does consume the attribute value though, which means after calling `ReadNode` on an attribute, <xref:System.Xml.XmlReader.ReadAttributeValue%2A?displayProperty=fullName> returns `false`.  
+ 
   
- `ReadNode` does consume the attribute value though, which means after calling `ReadNode` on an attribute, <xref:System.Xml.XmlReader.ReadAttributeValue%2A?displayProperty=fullName> returns `false`.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses `ReadNode` to create a new node and then inserts the new node into the document.  
-  
- [!code-cpp[Classic WebData XmlDocument.ReadNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.ReadNode Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.ReadNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.ReadNode Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.ReadNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.ReadNode Example/VB/source.vb#1)]  
-  
- The example uses the file, `cd.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlDocument.ReadNode Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlDocument.ReadNode Example/XML/source.xml#2)]  
-  
+The following example uses `ReadNode` to create a new node and then inserts the new node into the document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.ReadNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.ReadNode Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.ReadNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.ReadNode Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.ReadNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.ReadNode Example/VB/source.vb#1)]  
+ 
+The example uses the file, `cd.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlDocument.ReadNode Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlDocument.ReadNode Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The reader is positioned on a node type that does not translate to a valid DOM node (for example, EndElement or EndEntity).</exception>
@@ -3061,26 +3061,26 @@ while (reader.MoveToNextAttribute())
         <summary>Saves the XML document to the specified stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- White space is preserved only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
-  
- The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
-  
- When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
-  
+White space is preserved only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
+ 
+The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
+ 
+When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
+ 
 ```  
 XmlDocument doc = new XmlDocument();  
 doc.AppendChild(doc.CreateElement("item","urn:1"));  
 doc.Save(Console.Out);  
 ```  
-  
- generates this xmls attribute `<item xmls="urn:1"/>`.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
- Note that only the <xref:System.Xml.XmlDocument.Save%2A> method enforces a well-formed XML document. All other `Save` overloads only guarantee a well-formed fragment.  
-  
+ 
+generates this xmls attribute `<item xmls="urn:1"/>`.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
+Note that only the <xref:System.Xml.XmlDocument.Save%2A> method enforces a well-formed XML document. All other `Save` overloads only guarantee a well-formed fragment.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The operation would not result in a well formed XML document (for example, no document element or duplicate XML declarations).</exception>
@@ -3115,14 +3115,14 @@ doc.Save(Console.Out);
         <summary>Saves the XML document to the specified <see cref="T:System.IO.TextWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The encoding on the `TextWriter` determines the encoding that is written out (The encoding of the XmlDeclaration node is replaced by the encoding of the `TextWriter`). If there was no encoding specified on the `TextWriter`, the `XmlDocument` is saved without an encoding attribute.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
- Note that only the <xref:System.Xml.XmlDocument.Save%2A> method enforces a well-formed XML document. All other `Save` overloads only guarantee a well-formed fragment.  
-  
+The encoding on the `TextWriter` determines the encoding that is written out (The encoding of the XmlDeclaration node is replaced by the encoding of the `TextWriter`). If there was no encoding specified on the `TextWriter`, the `XmlDocument` is saved without an encoding attribute.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
+Note that only the <xref:System.Xml.XmlDocument.Save%2A> method enforces a well-formed XML document. All other `Save` overloads only guarantee a well-formed fragment.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The operation would not result in a well formed XML document (for example, no document element or duplicate XML declarations).</exception>
@@ -3153,37 +3153,37 @@ doc.Save(Console.Out);
         <summary>Saves the XML document to the specified file. If the specified file exists, this method overwrites it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- White space is preserved in the output file only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
-  
- The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
-  
- When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
-  
+White space is preserved in the output file only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
+ 
+The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
+ 
+When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
+ 
 ```  
 XmlDocument doc = new XmlDocument();  
 doc.AppendChild(doc.CreateElement("item","urn:1"));  
 doc.Save(Console.Out);  
 ```  
+ 
+generates this xmls attribute `<item xmls="urn:1"/>`.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
+Note that only the <xref:System.Xml.XmlDocument.Save%2A> method enforces a well-formed XML document. All other `Save` overloads only guarantee a well-formed fragment.  
+ 
   
- generates this xmls attribute `<item xmls="urn:1"/>`.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
- Note that only the <xref:System.Xml.XmlDocument.Save%2A> method enforces a well-formed XML document. All other `Save` overloads only guarantee a well-formed fragment.  
-  
-   
-  
+ 
 ## Examples  
- The following example loads XML into an XmlDocument object, modifies it, and then saves it to a file named data.xml.  
-  
- [!code-cpp[Classic WebData XmlDocument.Save Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.Save Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.Save Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.Save Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.Save Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.Save Example/VB/source.vb#1)]  
-  
- The data.xml file will contain the following XML: `<item><name>wrench</name><price>10.95</price></item>`.  
-  
+The following example loads XML into an XmlDocument object, modifies it, and then saves it to a file named data.xml.  
+ 
+[!code-cpp[Classic WebData XmlDocument.Save Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.Save Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.Save Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.Save Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.Save Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.Save Example/VB/source.vb#1)]  
+ 
+The data.xml file will contain the following XML: `<item><name>wrench</name><price>10.95</price></item>`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The operation would not result in a well formed XML document (for example, no document element or duplicate XML declarations).</exception>
@@ -3218,40 +3218,40 @@ doc.Save(Console.Out);
         <summary>Saves the XML document to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- White space is preserved only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
-  
- The encoding on the `XmlWriter` determines the encoding that is written out (The encoding of the XmlDeclaration node is replaced by the encoding of the `XmlWriter`). If there was no encoding specified on the `XmlWriter`, the `XmlDocument` is saved without an encoding attribute.  
-  
- When the document is saved, xmlns attributes are generated to persist the node identity (LocalName + NamespaceURI) correctly. For example, the following C# code  
-  
+White space is preserved only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
+ 
+The encoding on the `XmlWriter` determines the encoding that is written out (The encoding of the XmlDeclaration node is replaced by the encoding of the `XmlWriter`). If there was no encoding specified on the `XmlWriter`, the `XmlDocument` is saved without an encoding attribute.  
+ 
+When the document is saved, xmlns attributes are generated to persist the node identity (LocalName + NamespaceURI) correctly. For example, the following C# code  
+ 
 ```  
 XmlDocument doc = new XmlDocument();  
 doc.AppendChild(doc.CreateElement("item","urn:1"));  
 doc.Save(Console.Out);  
 ```  
-  
- generates this xmls attribute:  
-  
+ 
+generates this xmls attribute:  
+ 
 ```  
 <item  
-    xmls="urn:1"/>  
+   xmls="urn:1"/>  
 ```  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
+Note that only the <xref:System.Xml.XmlDocument.Save%2A> method enforces a well-formed XML document. All other `Save` overloads only guarantee a well-formed fragment.  
+ 
   
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
- Note that only the <xref:System.Xml.XmlDocument.Save%2A> method enforces a well-formed XML document. All other `Save` overloads only guarantee a well-formed fragment.  
-  
-   
-  
+ 
 ## Examples  
- The following example loads XML into an `XmlDocument` object and saves it out to a file.  
-  
- [!code-cpp[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/VB/source.vb#1)]  
-  
+The following example loads XML into an `XmlDocument` object and saves it out to a file.  
+ 
+[!code-cpp[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.LoadXml Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.LoadXml Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The operation would not result in a well formed XML document (for example, no document element or duplicate XML declarations).</exception>
@@ -3279,12 +3279,12 @@ doc.Save(Console.Out);
         <value>The <see cref="T:System.Xml.Schema.IXmlSchemaInfo" /> object representing the PSVI of the node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The PSVI contents of this property are set after the node has been validated.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+The PSVI contents of this property are set after the node has been validated.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3311,12 +3311,12 @@ doc.Save(Console.Out);
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaSet" /> object containing the XML Schema Definition Language (XSD) schemas associated with this <see cref="T:System.Xml.XmlDocument" />; otherwise, an empty <see cref="T:System.Xml.Schema.XmlSchemaSet" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The schemas contained in an <xref:System.Xml.Schema.XmlSchemaSet> object associated with an <xref:System.Xml.XmlDocument> object are used for validation when the <xref:System.Xml.XmlDocument.Validate%2A> method of an <xref:System.Xml.XmlDocument> is executed.  
-  
- When an <xref:System.Xml.XmlDocument> object is initialized with XML data from an <xref:System.Xml.XmlReader> object, the <xref:System.Xml.Schema.XmlSchemaSet> object is loaded from the <xref:System.Xml.XmlReaderSettings.Schemas%2A> property of the <xref:System.Xml.XmlReader> object.  
-  
+The schemas contained in an <xref:System.Xml.Schema.XmlSchemaSet> object associated with an <xref:System.Xml.XmlDocument> object are used for validation when the <xref:System.Xml.XmlDocument.Validate%2A> method of an <xref:System.Xml.XmlDocument> is executed.  
+ 
+When an <xref:System.Xml.XmlDocument> object is initialized with XML data from an <xref:System.Xml.XmlReader> object, the <xref:System.Xml.Schema.XmlSchemaSet> object is loaded from the <xref:System.Xml.XmlReaderSettings.Schemas%2A> property of the <xref:System.Xml.XmlReader> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3346,35 +3346,35 @@ doc.Save(Console.Out);
         <summary>Validates the <see cref="T:System.Xml.XmlDocument" /> against the XML Schema Definition Language (XSD) schemas contained in the <see cref="P:System.Xml.XmlDocument.Schemas" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlDocument.Validate%2A> method validates the XML data in the <xref:System.Xml.XmlDocument> against the schemas contained in the <xref:System.Xml.XmlDocument.Schemas%2A> property. The <xref:System.Xml.XmlDocument.Validate%2A> method performs infoset augmentation. Specifically, after successful validation, schema defaults are applied, text values are converted to atomic values as necessary, and type information is associated with validated information items. The result is a previously un-typed XML sub-tree in the <xref:System.Xml.XmlDocument> replaced with a typed sub-tree.  
-  
- The following are important notes to consider when using the <xref:System.Xml.XmlDocument.Validate%2A> method.  
-  
+The <xref:System.Xml.XmlDocument.Validate%2A> method validates the XML data in the <xref:System.Xml.XmlDocument> against the schemas contained in the <xref:System.Xml.XmlDocument.Schemas%2A> property. The <xref:System.Xml.XmlDocument.Validate%2A> method performs infoset augmentation. Specifically, after successful validation, schema defaults are applied, text values are converted to atomic values as necessary, and type information is associated with validated information items. The result is a previously un-typed XML sub-tree in the <xref:System.Xml.XmlDocument> replaced with a typed sub-tree.  
+ 
+The following are important notes to consider when using the <xref:System.Xml.XmlDocument.Validate%2A> method.  
+ 
 -   Schema location hints like `xsi:schemaLocation` or `xsi:noNamespaceSchemaLocation` are ignored.  
-  
+ 
 -   Inline schemas are ignored.  
-  
+ 
 -   If schema validation errors occur during validation the <xref:System.Xml.XmlDocument> becomes partially validated with some nodes with correct type information and some without.  
-  
+ 
 -   The validation process includes checking for uniqueness and reference constraints (`xs:ID`, `xs:IDREF`, `xs:key`, `xs:keyref`, and `xs:unique`).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates use of the <xref:System.Xml.XmlDocument.Validate%2A> method. The example creates an <xref:System.Xml.XmlDocument> that contains an associated XSD schema using the <xref:System.Xml.XmlReaderSettings> and <xref:System.Xml.XmlReader> objects. The example then uses the <xref:System.Xml.XPath.XPathNavigator> class to incorrectly modify the typed value of an element in the XML document generating a schema validation error.  
-  
- [!code-cpp[XPathValidation#1](~/samples/snippets/cpp/VS_Snippets_Data/XPathValidation/CPP/XPathValidation.cpp#1)]
- [!code-csharp[XPathValidation#1](~/samples/snippets/csharp/VS_Snippets_Data/XPathValidation/CS/XPathValidation.cs#1)]
- [!code-vb[XPathValidation#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XPathValidation/VB/XPathValidation.vb#1)]  
-  
- The example takes the `contosoBooks.xml` and `contosoBooks.xsd` files as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
-  
- [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
-  
+The following example illustrates use of the <xref:System.Xml.XmlDocument.Validate%2A> method. The example creates an <xref:System.Xml.XmlDocument> that contains an associated XSD schema using the <xref:System.Xml.XmlReaderSettings> and <xref:System.Xml.XmlReader> objects. The example then uses the <xref:System.Xml.XPath.XPathNavigator> class to incorrectly modify the typed value of an element in the XML document generating a schema validation error.  
+ 
+[!code-cpp[XPathValidation#1](~/samples/snippets/cpp/VS_Snippets_Data/XPathValidation/CPP/XPathValidation.cpp#1)]
+[!code-csharp[XPathValidation#1](~/samples/snippets/csharp/VS_Snippets_Data/XPathValidation/CS/XPathValidation.cs#1)]
+[!code-vb[XPathValidation#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XPathValidation/VB/XPathValidation.vb#1)]  
+ 
+The example takes the `contosoBooks.xml` and `contosoBooks.xsd` files as input.  
+ 
+[!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+ 
+[!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">A schema validation event occurred and no <see cref="T:System.Xml.Schema.ValidationEventHandler" /> object was specified.</exception>
@@ -3407,25 +3407,25 @@ doc.Save(Console.Out);
         <summary>Validates the <see cref="T:System.Xml.XmlNode" /> object specified against the XML Schema Definition Language (XSD) schemas in the <see cref="P:System.Xml.XmlDocument.Schemas" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlDocument.Validate%2A> method validates the XML data in the <xref:System.Xml.XmlNode> object against the schemas contained in the <xref:System.Xml.XmlDocument.Schemas%2A> property. The <xref:System.Xml.XmlDocument.Validate%2A> method performs infoset augmentation. Specifically, after successful validation, schema defaults are applied, text values are converted to atomic values as necessary, and type information is associated with validated information items. The result is a previously un-typed XML sub-tree in the <xref:System.Xml.XmlDocument> replaced with a typed sub-tree.  
-  
- The following are important notes to consider when using the <xref:System.Xml.XmlDocument.Validate%2A> method.  
-  
+The <xref:System.Xml.XmlDocument.Validate%2A> method validates the XML data in the <xref:System.Xml.XmlNode> object against the schemas contained in the <xref:System.Xml.XmlDocument.Schemas%2A> property. The <xref:System.Xml.XmlDocument.Validate%2A> method performs infoset augmentation. Specifically, after successful validation, schema defaults are applied, text values are converted to atomic values as necessary, and type information is associated with validated information items. The result is a previously un-typed XML sub-tree in the <xref:System.Xml.XmlDocument> replaced with a typed sub-tree.  
+ 
+The following are important notes to consider when using the <xref:System.Xml.XmlDocument.Validate%2A> method.  
+ 
 -   Schema location hints like `xsi:schemaLocation` or `xsi:noNamespaceSchemaLocation` are ignored.  
-  
+ 
 -   Inline schemas are ignored.  
-  
+ 
 -   If schema validation errors occur during validation the <xref:System.Xml.XmlDocument> becomes partially validated with some nodes with correct type information and some without.  
+ 
+If the node to validate is the root node, the validation process includes checking for uniqueness and reference constraints (`xs:ID`, `xs:IDREF`, `xs:key`, `xs:keyref`, and `xs:unique`); otherwise, uniqueness and reference constraints are omitted.  
+ 
   
- If the node to validate is the root node, the validation process includes checking for uniqueness and reference constraints (`xs:ID`, `xs:IDREF`, `xs:key`, `xs:keyref`, and `xs:unique`); otherwise, uniqueness and reference constraints are omitted.  
-  
-   
-  
+ 
 ## Examples  
- For an example of the <xref:System.Xml.XmlDocument.Validate%2A> method, see the <xref:System.Xml.XmlDocument.Validate%2A> method.  
-  
+For an example of the <xref:System.Xml.XmlDocument.Validate%2A> method, see the <xref:System.Xml.XmlDocument.Validate%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Xml.XmlNode" /> object parameter was not created from an <see cref="T:System.Xml.XmlDocument" />.</exception>
@@ -3462,21 +3462,21 @@ doc.Save(Console.Out);
         <summary>Saves all the children of the <see langword="XmlDocument" /> node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlDocument.InnerXml%2A> property.  
+This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlDocument.InnerXml%2A> property.  
+ 
+The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
+ 
   
- The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the document onscreen.  
-  
- [!code-cpp[Classic WebData XmlDocument.WriteContentTo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.WriteContentTo Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.WriteContentTo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.WriteContentTo Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.WriteContentTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.WriteContentTo Example/VB/source.vb#1)]  
-  
+The following example displays the document onscreen.  
+ 
+[!code-cpp[Classic WebData XmlDocument.WriteContentTo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.WriteContentTo Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.WriteContentTo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.WriteContentTo Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.WriteContentTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.WriteContentTo Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3510,21 +3510,21 @@ doc.Save(Console.Out);
         <summary>Saves the <see langword="XmlDocument" /> node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A> property.  
+This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A> property.  
+ 
+The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
+ 
   
- The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the document onscreen.  
-  
- [!code-cpp[Classic WebData XmlDocument.WriteTo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.WriteTo Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.WriteTo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.WriteTo Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.WriteTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.WriteTo Example/VB/source.vb#1)]  
-  
+The following example displays the document onscreen.  
+ 
+[!code-cpp[Classic WebData XmlDocument.WriteTo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.WriteTo Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.WriteTo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.WriteTo Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.WriteTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.WriteTo Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3553,50 +3553,50 @@ doc.Save(Console.Out);
  In version 1.1 of the.NET Framework, the caller must be fully trusted in order to specify an <see langword="XmlResolver" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `XmlResolver` can be used to load DTDs or expand entity references. Using the <xref:System.Xml.XmlResolver.Credentials%2A?displayProperty=fullName> property, you can set credentials on the `XmlResolver` to access resources stored on a secure network resource.  
-  
+The `XmlResolver` can be used to load DTDs or expand entity references. Using the <xref:System.Xml.XmlResolver.Credentials%2A?displayProperty=fullName> property, you can set credentials on the `XmlResolver` to access resources stored on a secure network resource.  
+ 
 -   If the document was not loaded using an <xref:System.Xml.XmlReader> (that is, if it was loaded using a stream, file, and so on) the `XmlResolver` on the `XmlDocument` is always used.  
-  
+ 
 -   If the document was loaded with an <xref:System.Xml.XmlTextReader>, the resolver on the `XmlTextReader` is used to resolve any DTD references in the DocumentType node. The resolver on the `XmlDocument` is used to expand any entity references.  
-  
+ 
 -   If the document was loaded with an <xref:System.Xml.XmlValidatingReader>, the resolver on the `XmlDocument` is never used.  
-  
+ 
 -   If the document was loaded with a class that extends `XmlReader` and the `XmlReader` cannot resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A> returns `false`), the `XmlResolver` on the `XmlDocument` is used to resolve any references in the DocumentType node and to expand any entity references.  
-  
+ 
 > [!NOTE]
 >  If the `XmlDocument` is loaded using an <xref:System.Xml.XmlReader> which had an `XmlResolver` set to it, the `XmlResolver` on the `XmlReader` is not cached by the `XmlDocument` after <xref:System.Xml.XmlDocument.Load%2A> completes.  
+ 
+In version 1.1 of the.NET Framework, if this property is not set, the trust level of the application determines the default behavior.  
+ 
+`Fully trusted code:` The document uses a default <xref:System.Xml.XmlUrlResolver> with no user credentials. If authentication is required to access a network resource, use the `XmlResolver` property to specify an `XmlResolver` with the necessary credentials.  
+ 
+`Semi-trusted code:` The `XmlResolver` property is set to `null`. External resources are not resolved.  
+ 
+For more information on security and the `XmlResolver` property, see [Resolving External Resources](~/docs/standard/data/xml/resolving-external-resources.md).  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- In version 1.1 of the.NET Framework, if this property is not set, the trust level of the application determines the default behavior.  
-  
- `Fully trusted code:` The document uses a default <xref:System.Xml.XmlUrlResolver> with no user credentials. If authentication is required to access a network resource, use the `XmlResolver` property to specify an `XmlResolver` with the necessary credentials.  
-  
- `Semi-trusted code:` The `XmlResolver` property is set to `null`. External resources are not resolved.  
-  
- For more information on security and the `XmlResolver` property, see [Resolving External Resources](~/docs/standard/data/xml/resolving-external-resources.md).  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example loads an XML document which includes a reference to a DTD file. The `XmlResolver` property is used to set the credentials necessary to access the network resource.  
-  
- [!code-cpp[XmlDocument.XmlResolver#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlDocument.XmlResolver/CPP/docresolver.cpp#1)]
- [!code-csharp[XmlDocument.XmlResolver#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlDocument.XmlResolver/CS/docresolver.cs#1)]
- [!code-vb[XmlDocument.XmlResolver#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlDocument.XmlResolver/VB/docresolver.vb#1)]  
-  
- The example uses the following data files as input.  
-  
- `book5.xml`  
-  
- [!code-xml[XmlDocument.XmlResolver#2](~/samples/snippets/xml/VS_Snippets_Data/XmlDocument.XmlResolver/XML/book5.xml#2)]  
-  
- `books.dtd`  
-  
- [!code-xml[XmlDocument.XmlResolver#3](~/samples/snippets/xml/VS_Snippets_Data/XmlDocument.XmlResolver/XML/books.dtd#3)]  
-  
+The following example loads an XML document which includes a reference to a DTD file. The `XmlResolver` property is used to set the credentials necessary to access the network resource.  
+ 
+[!code-cpp[XmlDocument.XmlResolver#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlDocument.XmlResolver/CPP/docresolver.cpp#1)]
+[!code-csharp[XmlDocument.XmlResolver#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlDocument.XmlResolver/CS/docresolver.cs#1)]
+[!code-vb[XmlDocument.XmlResolver#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlDocument.XmlResolver/VB/docresolver.vb#1)]  
+ 
+The example uses the following data files as input.  
+ 
+`book5.xml`  
+ 
+[!code-xml[XmlDocument.XmlResolver#2](~/samples/snippets/xml/VS_Snippets_Data/XmlDocument.XmlResolver/XML/book5.xml#2)]  
+ 
+`books.dtd`  
+ 
+[!code-xml[XmlDocument.XmlResolver#3](~/samples/snippets/xml/VS_Snippets_Data/XmlDocument.XmlResolver/XML/books.dtd#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">This property is set to <see langword="null" /> and an external DTD or entity is encountered.</exception>

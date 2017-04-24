@@ -27,12 +27,12 @@
     <summary>Provides standard facilities for creating and managing a type-safe, ordered collection of <see cref="T:System.Windows.Documents.TableColumn" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection supports standard zero-based indexing.  
-  
- The <xref:System.Windows.Documents.Table.Columns%2A> property provided by the <xref:System.Windows.Documents.Table> class returns a <xref:System.Windows.Documents.TableColumnCollection>.  For more information, see [How to: Manipulate a Table's Columns through the Columns Property](~/docs/framework/wpf/advanced/how-to-manipulate-table-columns-through-the-columns-property.md).  
-  
+This collection supports standard zero-based indexing.  
+ 
+The <xref:System.Windows.Documents.Table.Columns%2A> property provided by the <xref:System.Windows.Documents.Table> class returns a <xref:System.Windows.Documents.TableColumnCollection>.  For more information, see [How to: Manipulate a Table's Columns through the Columns Property](~/docs/framework/wpf/advanced/how-to-manipulate-table-columns-through-the-columns-property.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,12 +77,12 @@
         <value>The pre-allocated collection item capacity for this collection.  The default value is **8**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property represents the number of pre-allocated slots for storing items in this collection, whereas the <xref:System.Windows.Documents.TableColumnCollection.Count%2A> property represents the actual number of items currently in the collection.  The value of <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> is always at least as large as the value of <xref:System.Windows.Documents.TableColumnCollection.Count%2A>.  
-  
- When newly added collection items cause the collection count to exceed the collection capacity, the capacity is automatically increased to accommodate the newly added collection items.  Increasing the collection capacity involves allocating additional collection slots, which incurs both performance and memory overhead.  Use the <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property to optimize the collection capacity in cases where the total or maximum number of collection items is known in advance.  Use the <xref:System.Windows.Documents.TableColumnCollection.TrimToSize%2A> method to cause the collection capacity to equalized with the current collection count.  
-  
+The <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property represents the number of pre-allocated slots for storing items in this collection, whereas the <xref:System.Windows.Documents.TableColumnCollection.Count%2A> property represents the actual number of items currently in the collection.  The value of <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> is always at least as large as the value of <xref:System.Windows.Documents.TableColumnCollection.Count%2A>.  
+ 
+When newly added collection items cause the collection count to exceed the collection capacity, the capacity is automatically increased to accommodate the newly added collection items.  Increasing the collection capacity involves allocating additional collection slots, which incurs both performance and memory overhead.  Use the <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property to optimize the collection capacity in cases where the total or maximum number of collection items is known in advance.  Use the <xref:System.Windows.Documents.TableColumnCollection.TrimToSize%2A> method to cause the collection capacity to equalized with the current collection count.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when an attempt is made to set <see cref="P:System.Windows.Documents.TableCellCollection.Capacity" /> to a value that is less than the current value of <see cref="P:System.Windows.Documents.TableCellCollection.Count" />.</exception>
@@ -105,10 +105,10 @@
         <summary>Clears all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After calling <xref:System.Windows.Documents.TableColumnCollection.Clear%2A>, the value of the <xref:System.Windows.Documents.TableColumnCollection.Count%2A> property becomes **0** and the value of the <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property is unchanged. To set a new capacity, call <xref:System.Windows.Documents.TableColumnCollection.TrimToSize%2A> or explicitly set a new capacity through the <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property.  
-  
+After calling <xref:System.Windows.Documents.TableColumnCollection.Clear%2A>, the value of the <xref:System.Windows.Documents.TableColumnCollection.Count%2A> property becomes **0** and the value of the <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property is unchanged. To set a new capacity, call <xref:System.Windows.Documents.TableColumnCollection.TrimToSize%2A> or explicitly set a new capacity through the <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,12 +204,12 @@
         <value>The number of items currently contained by the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property represents the number of pre-allocated slots for storing items in this collection, whereas the <xref:System.Windows.Documents.TableColumnCollection.Count%2A> property represents the actual number of items currently in the collection.  The value of <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> is always at least as large as the value of <xref:System.Windows.Documents.TableColumnCollection.Count%2A>.  
-  
- When newly added collection items cause the collection count to exceed the collection capacity, the capacity is automatically increased to accommodate the newly added collection items.  Increasing the collection capacity involves allocating additional collection slots, which incurs both performance and memory overhead.  Use the <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property to optimize the collection capacity in cases where the total or maximum number of collection items is known in advance.  Use the <xref:System.Windows.Documents.TableColumnCollection.TrimToSize%2A> method to cause the collection capacity to equalized with the current collection count.  
-  
+The <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property represents the number of pre-allocated slots for storing items in this collection, whereas the <xref:System.Windows.Documents.TableColumnCollection.Count%2A> property represents the actual number of items currently in the collection.  The value of <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> is always at least as large as the value of <xref:System.Windows.Documents.TableColumnCollection.Count%2A>.  
+ 
+When newly added collection items cause the collection count to exceed the collection capacity, the capacity is automatically increased to accommodate the newly added collection items.  Increasing the collection capacity involves allocating additional collection slots, which incurs both performance and memory overhead.  Use the <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> property to optimize the collection capacity in cases where the total or maximum number of collection items is known in advance.  Use the <xref:System.Windows.Documents.TableColumnCollection.TrimToSize%2A> method to cause the collection capacity to equalized with the current collection count.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,12 +258,12 @@
         <summary>Inserts a specified item in the collection at a specified index position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Documents.TableColumnCollection.Count%2A> equals <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> for this collection, the collection capacity automatically is increased before the new item is inserted. Set *index* equal to the value of <xref:System.Windows.Documents.TableColumnCollection.Count%2A>, to append a new collection item to the collection.  
-  
- Indices for existing collection items may be adjusted to accommodate the newly inserted collection item.  
-  
+If <xref:System.Windows.Documents.TableColumnCollection.Count%2A> equals <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> for this collection, the collection capacity automatically is increased before the new item is inserted. Set *index* equal to the value of <xref:System.Windows.Documents.TableColumnCollection.Count%2A>, to append a new collection item to the collection.  
+ 
+Indices for existing collection items may be adjusted to accommodate the newly inserted collection item.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* is less than **0**.</exception>
@@ -327,10 +327,10 @@
         <value>The collection item at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an indexed property that supports standard indexing syntax (similar to that used to access a particular cell in an array).  
-  
+This is an indexed property that supports standard indexing syntax (similar to that used to access a particular cell in an array).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* is less than zero, or when *index* is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
@@ -357,10 +357,10 @@
         <returns>**true** if the specified item was found and removed; otherwise, **false**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indices for remaining collection items may be adjusted to reflect the removed collection item.  
-  
+Indices for remaining collection items may be adjusted to reflect the removed collection item.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Raised if *item* is not present in the collection.</exception>
@@ -387,10 +387,10 @@
         <summary>Removes an item, specified by index, from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indices for remaining collection items may be adjusted to reflect the removed collection item.  
-  
+Indices for remaining collection items may be adjusted to reflect the removed collection item.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* is less than zero, or when *index* is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
@@ -418,10 +418,10 @@
         <summary>Removes a range of items, specified by beginning index and count, from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indices for remaining collection items may be adjusted to reflect the removed collection items.  
-  
+Indices for remaining collection items may be adjusted to reflect the removed collection items.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* or *count* is less than zero, or when *index* is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
@@ -464,10 +464,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -490,10 +490,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -519,10 +519,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -544,10 +544,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear" />. Use the type-safe <see cref="M:System.Windows.Documents.TableColumnCollection.Clear" /> method instead.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -574,10 +574,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Documents.TableColumnCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -603,10 +603,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -633,10 +633,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />. Use the type-safe <see cref="M:System.Windows.Documents.TableColumnCollection.Insert(System.Int32,System.Windows.Documents.TableColumn)" /> method instead.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -659,10 +659,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Documents.TableCellCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -685,10 +685,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Documents.TableColumnCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -714,10 +714,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -742,10 +742,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />. Use the type-safe <see cref="M:System.Windows.Documents.TableColumnCollection.Remove(System.Windows.Documents.TableColumn)" />, <see cref="M:System.Windows.Documents.TableColumnCollection.RemoveAt(System.Int32)" />, or <see cref="M:System.Windows.Documents.TableColumnCollection.RemoveRange(System.Int32,System.Int32)" /> methods instead.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -770,10 +770,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />. Use the type-safe <see cref="M:System.Windows.Documents.TableColumnCollection.Remove(System.Windows.Documents.TableColumn)" />, <see cref="M:System.Windows.Documents.TableColumnCollection.RemoveAt(System.Int32)" />, or <see cref="M:System.Windows.Documents.TableColumnCollection.RemoveRange(System.Int32,System.Int32)" /> methods instead.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -795,10 +795,10 @@
         <summary>Optimizes memory consumption for the collection by setting the underlying collection <see cref="P:System.Windows.Documents.TableColumnCollection.Capacity" /> equal to the <see cref="P:System.Windows.Documents.TableColumnCollection.Count" /> of items currently in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to minimize memory overhead for a collection, particularly if the set of items contained by the collection is expected to be static.  
-  
+This method can be used to minimize memory overhead for a collection, particularly if the set of items contained by the collection is expected to be static.  
+ 
  ]]></format>
         </remarks>
       </Docs>

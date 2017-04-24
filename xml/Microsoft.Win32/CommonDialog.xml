@@ -90,10 +90,10 @@
         <returns>Always returns <see cref="F:System.IntPtr.Zero" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Win32.CommonDialog.HookProc%2A> handles dialog initialization by centering the dialog window, relative to the screen, and to set focus to the default control.  
-  
+<xref:Microsoft.Win32.CommonDialog.HookProc%2A> handles dialog initialization by centering the dialog window, relative to the screen, and to set focus to the default control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <returns>If the user clicks the **OK** button of the dialog that is displayed (e.g. <see cref="T:Microsoft.Win32.OpenFileDialog" />, <see cref="T:Microsoft.Win32.SaveFileDialog" />), <see langword="true" /> is returned; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dialog that is eventually shown is assigned an owner window, which is specified by the `hwndOwner` parameter.  
-  
+The dialog that is eventually shown is assigned an owner window, which is specified by the `hwndOwner` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,12 +173,12 @@
         <returns>If the user clicks the OK button of the dialog that is displayed (e.g. <see cref="T:Microsoft.Win32.OpenFileDialog" />, <see cref="T:Microsoft.Win32.SaveFileDialog" />), <see langword="true" /> is returned; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> performs initialization tasks for all common dialogs before calling <xref:Microsoft.Win32.CommonDialog.RunDialog%2A>.  
-  
- In the current implementation, the derived classes (<xref:Microsoft.Win32.OpenFileDialog> and <xref:Microsoft.Win32.SaveFileDialog>) will only return `true` or `false`.  
-  
+<xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> performs initialization tasks for all common dialogs before calling <xref:Microsoft.Win32.CommonDialog.RunDialog%2A>.  
+ 
+In the current implementation, the derived classes (<xref:Microsoft.Win32.OpenFileDialog> and <xref:Microsoft.Win32.SaveFileDialog>) will only return `true` or `false`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute this method without raising of an exception. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -210,12 +210,12 @@
         <returns>If the user clicks the OK button of the dialog that is displayed (e.g. <see cref="T:Microsoft.Win32.OpenFileDialog" />, <see cref="T:Microsoft.Win32.SaveFileDialog" />), <see langword="true" /> is returned; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> performs initialization tasks for all common dialogs before calling <xref:Microsoft.Win32.CommonDialog.RunDialog%2A>. Additionally, the dialog that is eventually shown is assigned an owner window, which is specified by the `owner` parameter.  
-  
- In the current implementation, the derived classes (<xref:Microsoft.Win32.OpenFileDialog> and <xref:Microsoft.Win32.SaveFileDialog>) will only return `true` or `false`.  
-  
+<xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> performs initialization tasks for all common dialogs before calling <xref:Microsoft.Win32.CommonDialog.RunDialog%2A>. Additionally, the dialog that is eventually shown is assigned an owner window, which is specified by the `owner` parameter.  
+ 
+In the current implementation, the derived classes (<xref:Microsoft.Win32.OpenFileDialog> and <xref:Microsoft.Win32.SaveFileDialog>) will only return `true` or `false`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute this method without raising of an exception. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -238,10 +238,10 @@
         <value>A <see cref="T:System.Object" /> that is attached or associated with a dialog.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- See Also  
-  
+See Also  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,16 +256,16 @@
         <summary>Displays a common dialog.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> performs initialization tasks for all common dialogs before calling <xref:Microsoft.Win32.CommonDialog.RunDialog%2A>. Since <xref:Microsoft.Win32.CommonDialog.RunDialog%2A> requires an owner window, <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> attempts to assign one in the following order of precedence:  
-  
+<xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> performs initialization tasks for all common dialogs before calling <xref:Microsoft.Win32.CommonDialog.RunDialog%2A>. Since <xref:Microsoft.Win32.CommonDialog.RunDialog%2A> requires an owner window, <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> attempts to assign one in the following order of precedence:  
+ 
 -   The current application's *active window*.  
-  
+ 
 -   The current application's *parking window*.  
-  
+ 
 -   An internally generated hidden window.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

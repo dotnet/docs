@@ -19,10 +19,10 @@
     <summary>Contains the information used to update the endpoint address of a specific registration entry in the lookup table of a peer resolver service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class are primarily used to pass registration update request information to the resolver service from a network client of that service.  
-  
+Instances of this class are primarily used to pass registration update request information to the resolver service from a network client of that service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,10 +69,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.UpdateInfo" /> class with the supplied peer client ID, registration ID, peer mesh ID, and peer endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A peer can have multiple entries for any mesh ID, each for a specific peer endpoint. Each endpoint entry is updated separately.  
-  
+A peer can have multiple entries for any mesh ID, each for a specific peer endpoint. Each endpoint entry is updated separately.  
+ 
  ]]></format>
         </remarks>
       </Docs>

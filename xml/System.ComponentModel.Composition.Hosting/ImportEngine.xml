@@ -22,13 +22,13 @@
     <summary>Performs composition for containers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used internally by <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>. You should generally not use it unless you are authoring a container.  
-  
+This class is used internally by <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>. You should generally not use it unless you are authoring a container.  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -113,15 +113,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.ComponentModel.Composition.Hosting.ImportEngine>. The `Dispose` method leaves the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.ComponentModel.Composition.Hosting.ImportEngine>. The `Dispose` method leaves the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.ComponentModel.Composition.Hosting.ImportEngine>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

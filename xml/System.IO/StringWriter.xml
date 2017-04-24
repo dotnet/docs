@@ -30,15 +30,15 @@
     <summary>Implements a <see cref="T:System.IO.TextWriter" /> for writing information to a string. The information is stored in an underlying <see cref="T:System.Text.StringBuilder" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.StringWriter> enables you to write to a string synchronously or asynchronously. You can write a character at a time with the <xref:System.IO.StringWriter.Write%28System.Char%29> or the <xref:System.IO.StringWriter.WriteAsync%28System.Char%29> method, a string at a time using the <xref:System.IO.StringWriter.Write%28System.String%29> or the <xref:System.IO.StringWriter.WriteAsync%28System.String%29> method. In addition, you can write a character, an array of characters or a string followed by the line terminator asynchronously with one of the <xref:System.IO.StringWriter.WriteLineAsync%2A> methods.  
-  
+<xref:System.IO.StringWriter> enables you to write to a string synchronously or asynchronously. You can write a character at a time with the <xref:System.IO.StringWriter.Write%28System.Char%29> or the <xref:System.IO.StringWriter.WriteAsync%28System.Char%29> method, a string at a time using the <xref:System.IO.StringWriter.Write%28System.String%29> or the <xref:System.IO.StringWriter.WriteAsync%28System.String%29> method. In addition, you can write a character, an array of characters or a string followed by the line terminator asynchronously with one of the <xref:System.IO.StringWriter.WriteLineAsync%2A> methods.  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try` /`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -51,16 +51,16 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the creation of a continuous paragraph from a group of double-spaced sentences, and then the conversion of the paragraph back to the original text.  
-  
- [!code-cpp[System.IO.StringReaderWriter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CPP/stringrw.cpp#1)]
- [!code-csharp[System.IO.StringReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CS/stringrw.cs#1)]
- [!code-vb[System.IO.StringReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringReaderWriter/VB/stringrw.vb#1)]  
-  
+The following code example demonstrates the creation of a continuous paragraph from a group of double-spaced sentences, and then the conversion of the paragraph back to the original text.  
+ 
+[!code-cpp[System.IO.StringReaderWriter#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CPP/stringrw.cpp#1)]
+[!code-csharp[System.IO.StringReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CS/stringrw.cs#1)]
+[!code-vb[System.IO.StringReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringReaderWriter/VB/stringrw.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,12 +90,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.StringWriter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new <xref:System.Text.StringBuilder> object is automatically created and associated with the new instance of the <xref:System.IO.StringWriter> class. Since a format control is not specified for this constructor, the new instance will be initialized with <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+A new <xref:System.Text.StringBuilder> object is automatically created and associated with the new instance of the <xref:System.IO.StringWriter> class. Since a format control is not specified for this constructor, the new instance will be initialized with <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -108,16 +108,16 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a string using the `StringWriter` class.  
-  
- [!code-cpp[System.IO.StringWriter1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#1)]
- [!code-csharp[System.IO.StringWriter1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#1)]
- [!code-vb[System.IO.StringWriter1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#1)]  
-  
+The following code example demonstrates how to construct a string using the `StringWriter` class.  
+ 
+[!code-cpp[System.IO.StringWriter1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#1)]
+[!code-csharp[System.IO.StringWriter1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#1)]
+[!code-vb[System.IO.StringWriter1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,12 +150,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.StringWriter" /> class with the specified format control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new <xref:System.Text.StringBuilder> object is automatically created and associated with the new instance of the <xref:System.IO.StringWriter> class.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+A new <xref:System.Text.StringBuilder> object is automatically created and associated with the new instance of the <xref:System.IO.StringWriter> class.  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -168,16 +168,16 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a string in a specific culture.  
-  
- [!code-cpp[System.IO.StringWriter2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter2/CPP/strwriter2.cpp#1)]
- [!code-csharp[System.IO.StringWriter2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter2/CS/strwriter2.cs#1)]
- [!code-vb[System.IO.StringWriter2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter2/VB/strwriter2.vb#1)]  
-  
+The following code example demonstrates how to construct a string in a specific culture.  
+ 
+[!code-cpp[System.IO.StringWriter2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter2/CPP/strwriter2.cpp#1)]
+[!code-csharp[System.IO.StringWriter2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter2/CS/strwriter2.cs#1)]
+[!code-vb[System.IO.StringWriter2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter2/VB/strwriter2.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,12 +210,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.StringWriter" /> class that writes to the specified <see cref="T:System.Text.StringBuilder" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Since a format control is not specified for this constructor, the new instance will be initialized with <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+Since a format control is not specified for this constructor, the new instance will be initialized with <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -228,16 +228,16 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Text.StringBuilder> class to modify the underlying string in a closed `StringWriter`.  
-  
- [!code-cpp[System.IO.StringWriter3#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter3/CPP/strwriter3.cpp#1)]
- [!code-csharp[System.IO.StringWriter3#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter3/CS/strwriter3.cs#1)]
- [!code-vb[System.IO.StringWriter3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter3/VB/strwriter3.vb#1)]  
-  
+The following code example demonstrates using the <xref:System.Text.StringBuilder> class to modify the underlying string in a closed `StringWriter`.  
+ 
+[!code-cpp[System.IO.StringWriter3#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter3/CPP/strwriter3.cpp#1)]
+[!code-csharp[System.IO.StringWriter3#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter3/CS/strwriter3.cs#1)]
+[!code-vb[System.IO.StringWriter3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter3/VB/strwriter3.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -274,10 +274,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.StringWriter" /> class that writes to the specified <see cref="T:System.Text.StringBuilder" /> and has the specified format provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table lists examples of other typical or related I/O tasks.  
-  
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -290,7 +290,7 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -319,25 +319,25 @@
         <summary>Closes the current <see cref="T:System.IO.StringWriter" /> and the underlying stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
+For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
+ 
+This method overrides <xref:System.IO.Stream.Close%2A?displayProperty=fullName>.  
+ 
+This implementation of `Close` calls the <xref:System.IO.StringWriter.Dispose%2A> method passing a `true` value.  
+ 
+Flushing the stream will not flush its underlying encoder unless you explicitly call `Close`. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
+ 
   
- This method overrides <xref:System.IO.Stream.Close%2A?displayProperty=fullName>.  
-  
- This implementation of `Close` calls the <xref:System.IO.StringWriter.Dispose%2A> method passing a `true` value.  
-  
- Flushing the stream will not flush its underlying encoder unless you explicitly call `Close`. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor%28System.Text.StringBuilder%29> constructor.  
-  
- [!code-cpp[System.IO.StringWriter3#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter3/CPP/strwriter3.cpp#2)]
- [!code-csharp[System.IO.StringWriter3#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter3/CS/strwriter3.cs#2)]
- [!code-vb[System.IO.StringWriter3#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter3/VB/strwriter3.vb#2)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor%28System.Text.StringBuilder%29> constructor.  
+ 
+[!code-cpp[System.IO.StringWriter3#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter3/CPP/strwriter3.cpp#2)]
+[!code-csharp[System.IO.StringWriter3#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter3/CS/strwriter3.cs#2)]
+[!code-vb[System.IO.StringWriter3#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter3/VB/strwriter3.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,10 +374,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.StringWriter" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.StringWriter> references. This method invokes the `Dispose` method of each referenced object.  
-  
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.StringWriter> references. This method invokes the `Dispose` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -414,27 +414,27 @@
         <value>The <see langword="Encoding" /> in which the output is written.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is necessary for some XML scenarios where a header must be written containing the encoding used by the `StringWriter`. This allows the XML code to consume an arbitrary `StringWriter` and generate the correct XML header.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+This property is necessary for some XML scenarios where a header must be written containing the encoding used by the `StringWriter`. This allows the XML code to consume an arbitrary `StringWriter` and generate the correct XML header.  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor> constructor.  
-  
- [!code-cpp[System.IO.StringWriter1#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#4)]
- [!code-csharp[System.IO.StringWriter1#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#4)]
- [!code-vb[System.IO.StringWriter1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#4)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor> constructor.  
+ 
+[!code-cpp[System.IO.StringWriter1#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#4)]
+[!code-csharp[System.IO.StringWriter1#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#4)]
+[!code-vb[System.IO.StringWriter1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,27 +503,27 @@
         <returns>The underlying <see langword="StringBuilder" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is either the `StringBuilder` that was passed to the constructor, or the `StringBuilder` that was automatically created.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+This is either the `StringBuilder` that was passed to the constructor, or the `StringBuilder` that was automatically created.  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor> constructor.  
-  
- [!code-cpp[System.IO.StringWriter1#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#3)]
- [!code-csharp[System.IO.StringWriter1#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#3)]
- [!code-vb[System.IO.StringWriter1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#3)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor> constructor.  
+ 
+[!code-cpp[System.IO.StringWriter1#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#3)]
+[!code-csharp[System.IO.StringWriter1#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#3)]
+[!code-vb[System.IO.StringWriter1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -557,25 +557,25 @@
         <returns>The string containing the characters written to the current <see langword="StringWriter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table lists examples of other typical or related I/O tasks.  
-  
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor%28System.IFormatProvider%29> constructor.  
-  
- [!code-cpp[System.IO.StringWriter2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter2/CPP/strwriter2.cpp#2)]
- [!code-csharp[System.IO.StringWriter2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter2/CS/strwriter2.cs#2)]
- [!code-vb[System.IO.StringWriter2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter2/VB/strwriter2.vb#2)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor%28System.IFormatProvider%29> constructor.  
+ 
+[!code-cpp[System.IO.StringWriter2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter2/CPP/strwriter2.cpp#2)]
+[!code-csharp[System.IO.StringWriter2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter2/CS/strwriter2.cs#2)]
+[!code-vb[System.IO.StringWriter2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter2/VB/strwriter2.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -611,12 +611,12 @@
         <summary>Writes a character to the string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -629,16 +629,16 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor> constructor.  
-  
- [!code-cpp[System.IO.StringWriter1#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#2)]
- [!code-csharp[System.IO.StringWriter1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#2)]
- [!code-vb[System.IO.StringWriter1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#2)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor> constructor.  
+ 
+[!code-cpp[System.IO.StringWriter1#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#2)]
+[!code-csharp[System.IO.StringWriter1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#2)]
+[!code-vb[System.IO.StringWriter1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The writer is closed.</exception>
@@ -675,14 +675,14 @@
         <summary>Writes a string to the current string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
-  
- If the specified string is `null`, nothing is written.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
+ 
+If the specified string is `null`, nothing is written.  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -695,16 +695,16 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.StringWriter> class.  
-  
- [!code-cpp[System.IO.StringReaderWriter#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CPP/stringrw.cpp#3)]
- [!code-csharp[System.IO.StringReaderWriter#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CS/stringrw.cs#3)]
- [!code-vb[System.IO.StringReaderWriter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringReaderWriter/VB/stringrw.vb#3)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.StringWriter> class.  
+ 
+[!code-cpp[System.IO.StringReaderWriter#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CPP/stringrw.cpp#3)]
+[!code-csharp[System.IO.StringReaderWriter#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CS/stringrw.cs#3)]
+[!code-vb[System.IO.StringReaderWriter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringReaderWriter/VB/stringrw.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The writer is closed.</exception>
@@ -745,14 +745,14 @@
         <summary>Writes a subarray of characters to the string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
-  
- This method writes `count` characters of data to this `StringWriter` from `buffer`, starting at position `index`.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
+ 
+This method writes `count` characters of data to this `StringWriter` from `buffer`, starting at position `index`.  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -765,16 +765,16 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor> constructor.  
-  
- [!code-cpp[System.IO.StringWriter1#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#2)]
- [!code-csharp[System.IO.StringWriter1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#2)]
- [!code-vb[System.IO.StringWriter1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#2)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.StringWriter.%23ctor> constructor.  
+ 
+[!code-cpp[System.IO.StringWriter1#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringWriter1/CPP/strwriter1.cpp#2)]
+[!code-csharp[System.IO.StringWriter1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringWriter1/CS/strwriter1.cs#2)]
+[!code-vb[System.IO.StringWriter1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringWriter1/VB/strwriter1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -822,13 +822,13 @@
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to write characters by using the <xref:System.IO.StringWriter.WriteAsync%28System.Char%29> method.  
-  
- [!code-csharp[System.IO.StringWriter#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example5.cs#5)]
- [!code-vb[System.IO.StringWriter#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example5.vb#5)]  
-  
+The following example shows how to write characters by using the <xref:System.IO.StringWriter.WriteAsync%28System.Char%29> method.  
+ 
+[!code-csharp[System.IO.StringWriter#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example5.cs#5)]
+[!code-vb[System.IO.StringWriter#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example5.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The string writer is disposed.</exception>
@@ -872,13 +872,13 @@
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to write a string by using the <xref:System.IO.StringWriter.WriteAsync%28System.String%29> method.  
-  
- [!code-csharp[System.IO.StringWriter#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example4.cs#4)]
- [!code-vb[System.IO.StringWriter#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example4.vb#4)]  
-  
+The following example shows how to write a string by using the <xref:System.IO.StringWriter.WriteAsync%28System.String%29> method.  
+ 
+[!code-csharp[System.IO.StringWriter#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example4.cs#4)]
+[!code-vb[System.IO.StringWriter#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example4.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The string writer is disposed.</exception>
@@ -926,13 +926,13 @@
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to write characters by using the <xref:System.IO.StringWriter.WriteAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method.  
-  
- [!code-csharp[System.IO.StringWriter#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example6.cs#6)]
- [!code-vb[System.IO.StringWriter#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example6.vb#6)]  
-  
+The following example shows how to write characters by using the <xref:System.IO.StringWriter.WriteAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method.  
+ 
+[!code-csharp[System.IO.StringWriter#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example6.cs#6)]
+[!code-vb[System.IO.StringWriter#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example6.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -981,18 +981,18 @@
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to write characters by using the <xref:System.IO.StringWriter.WriteLineAsync%28System.Char%29> method.  
-  
- [!code-csharp[System.IO.StringWriter#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example2.cs#2)]
- [!code-vb[System.IO.StringWriter#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example2.vb#2)]  
-  
+The following example shows how to write characters by using the <xref:System.IO.StringWriter.WriteLineAsync%28System.Char%29> method.  
+ 
+[!code-csharp[System.IO.StringWriter#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example2.cs#2)]
+[!code-vb[System.IO.StringWriter#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The string writer is disposed.</exception>
@@ -1036,18 +1036,18 @@
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to write a string by using the <xref:System.IO.StringWriter.WriteLineAsync%28System.String%29> method.  
-  
- [!code-csharp[System.IO.StringWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example.cs#1)]
- [!code-vb[System.IO.StringWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example.vb#1)]  
-  
+The following example shows how to write a string by using the <xref:System.IO.StringWriter.WriteLineAsync%28System.String%29> method.  
+ 
+[!code-csharp[System.IO.StringWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example.cs#1)]
+[!code-vb[System.IO.StringWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The string writer is disposed.</exception>
@@ -1095,18 +1095,18 @@
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to write characters by using the <xref:System.IO.StringWriter.WriteLineAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method.  
-  
- [!code-csharp[System.IO.StringWriter#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example3.cs#3)]
- [!code-vb[System.IO.StringWriter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example3.vb#3)]  
-  
+The following example shows how to write characters by using the <xref:System.IO.StringWriter.WriteLineAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method.  
+ 
+[!code-csharp[System.IO.StringWriter#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringwriter/cs/example3.cs#3)]
+[!code-vb[System.IO.StringWriter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringwriter/vb/example3.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

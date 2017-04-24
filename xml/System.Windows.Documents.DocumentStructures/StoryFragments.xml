@@ -26,21 +26,21 @@
     <summary>Represents a set of one or more <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element defines the structure and content of a <xref:System.Windows.Documents.FixedPage>.  
+A <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element defines the structure and content of a <xref:System.Windows.Documents.FixedPage>.  
+ 
+<xref:System.Windows.Documents.DocumentStructures.StoryFragments> is the root of one or more <xref:System.Windows.Documents.DocumentStructures.StoryFragment> elements.  
+ 
+For detailed information about the document structure of [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)], see Chapter 9 and Appendix E of the *XML Paper Specification (XPS)* that can be downloaded from the [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ 
   
- <xref:System.Windows.Documents.DocumentStructures.StoryFragments> is the root of one or more <xref:System.Windows.Documents.DocumentStructures.StoryFragment> elements.  
-  
- For detailed information about the document structure of [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)], see Chapter 9 and Appendix E of the *XML Paper Specification (XPS)* that can be downloaded from the [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use of the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-xml[DocumentStructure#DocStructStoryFrags1](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage1_structure.xaml#docstructstoryfrags1)]  
-  
+The following example shows how to use of the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+ 
+[!code-xml[DocumentStructure#DocStructStoryFrags1](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage1_structure.xaml#docstructstoryfrags1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -140,12 +140,12 @@
         <summary>Adds a child object to the <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
- Only a <xref:System.Windows.Documents.DocumentStructures.StoryFragment> can be a child of <xref:System.Windows.Documents.DocumentStructures.StoryFragments> and there must be at least one child.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
+Only a <xref:System.Windows.Documents.DocumentStructures.StoryFragment> can be a child of <xref:System.Windows.Documents.DocumentStructures.StoryFragments> and there must be at least one child.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <summary>Adds the text content of a node to the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

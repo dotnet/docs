@@ -19,12 +19,12 @@
     <summary>Contains information about a connector at a specified coordinate in <see cref="T:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner" /> and all classes that inherit from it.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,13 +50,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the addition of a new branch using a designer based off of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  If <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> returns `true`, a new branch is created using the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. A <xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo> object is created as a parameter to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. When this is finished, the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.EnsureVisibleContainedDesigner%2A> method is used to ensure that the newly added branch is displayed in the workflow designer.  
-  
- [!code-csharp[wf_Samples#29](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#29)]
- [!code-vb[wf_Samples#29](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#29)]  
-  
+The following example shows the addition of a new branch using a designer based off of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  If <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> returns `true`, a new branch is created using the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. A <xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo> object is created as a parameter to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. When this is finished, the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.EnsureVisibleContainedDesigner%2A> method is used to ensure that the newly added branch is displayed in the workflow designer.  
+ 
+[!code-csharp[wf_Samples#29](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#29)]
+[!code-vb[wf_Samples#29](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#29)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Prior to the constructor call the connector index was set to less than zero.</exception>
@@ -158,10 +158,10 @@
         <value>A selectable <see cref="T:System.Object" /> associated with the area where the user clicked.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo.SelectableObject%2A> always returns the current <xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo>.  
-  
+<xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo.SelectableObject%2A> always returns the current <xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

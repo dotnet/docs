@@ -14,14 +14,14 @@
     <summary>Defines the smallest unit of a code access security permission set.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example inherits from the <xref:System.Security.Permissions.ResourcePermissionBase> class. 4 kinds of constructors are implemented. The example also provides an implementation of a class called `MailslotPermissionEntry`. The <xref:System.Security.Permissions.ResourcePermissionBase.PermissionAccessType%2A> property is then privately set to the type of `MailslotPermissionEntry`. The <xref:System.Security.Permissions.ResourcePermissionBase.TagNames%2A> property is set privately to "Name" and "Machine".  
-  
- [!code-cpp[ResourcePermissionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR/ResourcePermissionBase/CPP/resourcepermissionbase.cpp#1)]
- [!code-csharp[ResourcePermissionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR/ResourcePermissionBase/CS/resourcepermissionbase.cs#1)]
- [!code-vb[ResourcePermissionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ResourcePermissionBase/VB/resourcepermissionbase.vb#1)]  
-  
+The following example inherits from the <xref:System.Security.Permissions.ResourcePermissionBase> class. 4 kinds of constructors are implemented. The example also provides an implementation of a class called `MailslotPermissionEntry`. The <xref:System.Security.Permissions.ResourcePermissionBase.PermissionAccessType%2A> property is then privately set to the type of `MailslotPermissionEntry`. The <xref:System.Security.Permissions.ResourcePermissionBase.TagNames%2A> property is set privately to "Name" and "Machine".  
+ 
+[!code-cpp[ResourcePermissionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR/ResourcePermissionBase/CPP/resourcepermissionbase.cpp#1)]
+[!code-csharp[ResourcePermissionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR/ResourcePermissionBase/CS/resourcepermissionbase.cs#1)]
+[!code-vb[ResourcePermissionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ResourcePermissionBase/VB/resourcepermissionbase.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.ResourcePermissionBaseEntry" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Permissions.ResourcePermissionBaseEntry.PermissionAccess%2A> property is set to zero.  
-  
+The <xref:System.Security.Permissions.ResourcePermissionBaseEntry.PermissionAccess%2A> property is set to zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <value>An array of strings that identify the resource you are protecting.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Diagnostics.PerformanceCounterPermissionEntry> has two properties, <xref:System.Diagnostics.PerformanceCounterPermissionEntry.CategoryName%2A> and <xref:System.Diagnostics.PerformanceCounterPermissionEntry.MachineName%2A>. The <xref:System.Security.Permissions.ResourcePermissionBaseEntry.PermissionAccessPath%2A> for <xref:System.Diagnostics.PerformanceCounterPermissionEntry> returns <xref:System.Diagnostics.PerformanceCounterPermissionEntry.MachineName%2A> + "\\\\" + <xref:System.Diagnostics.PerformanceCounterPermissionEntry.CategoryName%2A>. For example, "myMachine\\\myCategory".  
-  
+<xref:System.Diagnostics.PerformanceCounterPermissionEntry> has two properties, <xref:System.Diagnostics.PerformanceCounterPermissionEntry.CategoryName%2A> and <xref:System.Diagnostics.PerformanceCounterPermissionEntry.MachineName%2A>. The <xref:System.Security.Permissions.ResourcePermissionBaseEntry.PermissionAccessPath%2A> for <xref:System.Diagnostics.PerformanceCounterPermissionEntry> returns <xref:System.Diagnostics.PerformanceCounterPermissionEntry.MachineName%2A> + "\\\\" + <xref:System.Diagnostics.PerformanceCounterPermissionEntry.CategoryName%2A>. For example, "myMachine\\\myCategory".  
+ 
  ]]></format>
         </remarks>
       </Docs>

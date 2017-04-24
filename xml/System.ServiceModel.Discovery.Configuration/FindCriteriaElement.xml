@@ -130,10 +130,10 @@
         <value>A maximum number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.MaxResults%2A> replies are received before <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Duration%2A> has elapsed, the find operation ends.  
-  
+If <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.MaxResults%2A> replies are received before <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Duration%2A> has elapsed, the find operation ends.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <value>A collection of elements that contain URIs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specific service is found, a successful match has been made between the service URI and the Scope URI, sometimes with the help of scope rules that handle complications of matching.  
-  
+If the specific service is found, a successful match has been made between the service URI and the Scope URI, sometimes with the help of scope rules that handle complications of matching.  
+ 
  ]]></format>
         </remarks>
       </Docs>

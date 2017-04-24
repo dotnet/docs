@@ -19,12 +19,12 @@
     <summary>Provides a glyph for an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to display when the activity it is associated with is set to read only at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -116,10 +116,10 @@
         <value>An integer value that represents the priority setting for the <see cref="T:System.Workflow.ComponentModel.Design.ReadOnlyActivityGlyph" /> on the activity designer surface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ShadowGlyph.Priority%2A> always returns the integer value associated with <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.LowestPriority?displayProperty=fullName>.  
-  
+<xref:System.Workflow.ComponentModel.Design.ShadowGlyph.Priority%2A> always returns the integer value associated with <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.LowestPriority?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

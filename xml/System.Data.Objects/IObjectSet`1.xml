@@ -47,10 +47,10 @@
         <summary>Notifies the set that an object that represents a new entity must be added to the set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
-  
+Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
         <summary>Notifies the set that an object that represents an existing entity must be added to the set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
-  
+Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <summary>Notifies the set that an object that represents an existing entity must be deleted from the set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
-  
+Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <summary>Notifies the set that an object that represents an existing entity must be detached from the set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
-  
+Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

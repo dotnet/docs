@@ -18,25 +18,25 @@
     <summary>Provides the implementation for a server formatter channel sink provider that uses the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channel sinks are connected to a server channel through implementations of the <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider> interface. All the remoting server channels provide constructors that take a <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider> as a parameter.  
-  
- Channel sink providers are stored in a chain, and the user is responsible for chaining all channel sink providers together before passing the outer one to the channel constructor. <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider> provides a property called <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider.Next%2A> for this purpose.  
-  
- When multiple channel sink providers are specified in a configuration file, the remoting infrastructure will chain them together in the order they are found in the configuration file. The channel sink providers and the channels are created during the <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> call.  
-  
- Formatter sinks use sink configuration properties to configure the channel at run time. Sink properties can be specified in a configuration file, or programmatically, inside of a <xref:System.Collections.IDictionary>. In a configuration file all values are represented by strings, but when building a property <xref:System.Collections.IDictionary> programmatically, value types can be specified with their native values or with strings.  
-  
- The following table shows the sink configuration properties that can be specified for the current sink.  
-  
+Channel sinks are connected to a server channel through implementations of the <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider> interface. All the remoting server channels provide constructors that take a <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider> as a parameter.  
+ 
+Channel sink providers are stored in a chain, and the user is responsible for chaining all channel sink providers together before passing the outer one to the channel constructor. <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider> provides a property called <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider.Next%2A> for this purpose.  
+ 
+When multiple channel sink providers are specified in a configuration file, the remoting infrastructure will chain them together in the order they are found in the configuration file. The channel sink providers and the channels are created during the <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> call.  
+ 
+Formatter sinks use sink configuration properties to configure the channel at run time. Sink properties can be specified in a configuration file, or programmatically, inside of a <xref:System.Collections.IDictionary>. In a configuration file all values are represented by strings, but when building a property <xref:System.Collections.IDictionary> programmatically, value types can be specified with their native values or with strings.  
+ 
+The following table shows the sink configuration properties that can be specified for the current sink.  
+ 
 |Property|Description|  
 |--------------|-----------------|  
 |`includeVersions`|Specifies whether the formatter will include versioning information. Values are `true` or `false`.|  
-  
+ 
 > [!IMPORTANT]
 >  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -159,10 +159,10 @@
         <value>The <see langword="TypeFilterLevel" /> that represents the current automatic deserialization level.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
-  
+Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ 
  ]]></format>
         </remarks>
       </Docs>

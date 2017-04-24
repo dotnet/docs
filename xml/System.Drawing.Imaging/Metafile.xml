@@ -19,18 +19,18 @@
     <summary>Defines a graphic metafile. A metafile contains records that describe a sequence of graphics operations that can be recorded (constructed) and played back (displayed). This class is not inheritable.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use the <xref:System.Drawing.Image.Save%2A> method to save a graphic image as a Windows Metafile Format (WMF) or Enhanced Metafile Format (EMF) file, the resulting file is saved as a Portable Network Graphics (PNG) file instead. This behavior occurs because the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] component of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] does not have an encoder that you can use to save files as .wmf or .emf files.  
+When you use the <xref:System.Drawing.Image.Save%2A> method to save a graphic image as a Windows Metafile Format (WMF) or Enhanced Metafile Format (EMF) file, the resulting file is saved as a Portable Network Graphics (PNG) file instead. This behavior occurs because the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] component of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] does not have an encoder that you can use to save files as .wmf or .emf files.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Drawing.Imaging.Metafile> and use the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method.  
-  
- [!code-csharp[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/CS/Form1.cs#1)]
- [!code-vb[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/VB/Form1.vb#1)]  
-  
+The following code example demonstrates how to create a <xref:System.Drawing.Imaging.Metafile> and use the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method.  
+ 
+[!code-csharp[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/CS/Form1.cs#1)]
+[!code-vb[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,13 +72,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.Metafile" /> class from the specified file name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to create and use a <xref:System.Drawing.Imaging.Metafile>.  
-  
- [!code-csharp[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/CS/Form1.cs#1)]
- [!code-vb[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/VB/Form1.vb#1)]  
-  
+The following code example demonstrates how to create and use a <xref:System.Drawing.Imaging.Metafile>.  
+ 
+[!code-csharp[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/CS/Form1.cs#1)]
+[!code-vb[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/VB/Form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for read access to the file specified by <paramref name="filename" />. Related enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
@@ -1148,13 +1148,13 @@
         <summary>Plays an individual metafile record.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method.  
-  
- [!code-csharp[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/CS/Form1.cs#1)]
- [!code-vb[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/VB/Form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method.  
+ 
+[!code-csharp[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/CS/Form1.cs#1)]
+[!code-vb[System.Drawing.Graphics.EnumerateMetafile#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Graphics.EnumerateMetafile/VB/Form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

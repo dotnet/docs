@@ -11,10 +11,10 @@
     <summary>Defines members that a class must implement in order to provide data to for an instance of the <see cref="T:System.Web.DynamicData.DynamicControlParameter" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The control that implements this interface can be set as the <xref:System.Web.DynamicData.DynamicControlParameter.ControlId%2A> property of a <xref:System.Web.DynamicData.DynamicControlParameter> object.  
-  
+The control that implements this interface can be set as the <xref:System.Web.DynamicData.DynamicControlParameter.ControlId%2A> property of a <xref:System.Web.DynamicData.DynamicControlParameter> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <value>The column to which the parameter is being applied, if available.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implementing this property is optional. A <xref:System.Web.DynamicData.FilterUserControl> object can provide it, but controls such as the <xref:System.Web.UI.WebControls.GridView> control cannot.  
-  
+Implementing this property is optional. A <xref:System.Web.DynamicData.FilterUserControl> object can provide it, but controls such as the <xref:System.Web.UI.WebControls.GridView> control cannot.  
+ 
  ]]></format>
         </remarks>
       </Docs>

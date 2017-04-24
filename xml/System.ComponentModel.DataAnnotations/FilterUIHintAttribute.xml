@@ -24,38 +24,38 @@
     <summary>Represents an attribute that is used to specify the filtering behavior for a column.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to replace default filters on the product entity.  
-  
+The following example shows how to replace default filters on the product entity.  
+ 
 ```csharp  
 MetadataType(typeof(Product_MD))]  
 public partial class Product {  
-    private class Product_MD {  
-        [FilterUIHint("MultiForeignKey")]  
-        public object Category { get; set; }  
-        [FilterUIHint("BooleanRadio")]  
-        public object Discontinued { get; set; }  
-    }  
+   private class Product_MD {  
+       [FilterUIHint("MultiForeignKey")]  
+       public object Category { get; set; }  
+       [FilterUIHint("BooleanRadio")]  
+       public object Discontinued { get; set; }  
+   }  
 }  
 ```  
-  
+ 
 ```vb  
 <MetadataType(GetType(Product_MD))>  _  
 Public Class Product  
-    Private Class Product_MD  
-        <FilterUIHint("MultiForeignKey")>  _  
-        Public Property Category As Object  
-        End Property  
-  
-        <FilterUIHint("BooleanRadio")>  _  
-        Public Property Discontinued As Object  
-        End Property  
-  
-    End Class  
+   Private Class Product_MD  
+       <FilterUIHint("MultiForeignKey")>  _  
+       Public Property Category As Object  
+       End Property  
+ 
+       <FilterUIHint("BooleanRadio")>  _  
+       Public Property Discontinued As Object  
+       End Property  
+ 
+   End Class  
 End Class  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,38 +82,38 @@ End Class
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> class by using the filter UI hint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to replace default filters on the product entity.  
-  
+The following example shows how to replace default filters on the product entity.  
+ 
 ```csharp  
 MetadataType(typeof(Product_MD))]  
 public partial class Product {  
-    private class Product_MD {  
-        [FilterUIHint("MultiForeignKey")]  
-        public object Category { get; set; }  
-        [FilterUIHint("BooleanRadio")]  
-        public object Discontinued { get; set; }  
-    }  
+   private class Product_MD {  
+       [FilterUIHint("MultiForeignKey")]  
+       public object Category { get; set; }  
+       [FilterUIHint("BooleanRadio")]  
+       public object Discontinued { get; set; }  
+   }  
 }  
 ```  
-  
+ 
 ```vb  
 <MetadataType(GetType(Product_MD))>  _  
 Public Class Product  
-    Private Class Product_MD  
-        <FilterUIHint("MultiForeignKey")>  _  
-        Public Property Category As Object  
-        End Property  
-  
-        <FilterUIHint("BooleanRadio")>  _  
-        Public Property Discontinued As Object  
-        End Property  
-  
-    End Class  
+   Private Class Product_MD  
+       <FilterUIHint("MultiForeignKey")>  _  
+       Public Property Category As Object  
+       End Property  
+ 
+       <FilterUIHint("BooleanRadio")>  _  
+       Public Property Discontinued As Object  
+       End Property  
+ 
+   End Class  
 End Class  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

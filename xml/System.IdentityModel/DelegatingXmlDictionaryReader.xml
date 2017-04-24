@@ -14,10 +14,10 @@
     <summary>A class that wraps a specified reader and delegates all <see cref="T:System.Xml.XmlDictionaryReader" /> calls to the wrapped reader.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader that is wrapped can be accessed through the <xref:System.IdentityModel.DelegatingXmlDictionaryReader.InnerReader%2A> property. Call the <xref:System.IdentityModel.DelegatingXmlDictionaryReader.InitializeInnerReader%2A> method to set the wrapped reader and initialize the property.  
-  
+The reader that is wrapped can be accessed through the <xref:System.IdentityModel.DelegatingXmlDictionaryReader.InnerReader%2A> property. Call the <xref:System.IdentityModel.DelegatingXmlDictionaryReader.InitializeInnerReader%2A> method to set the wrapped reader and initialize the property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -149,10 +149,10 @@
         <returns>The value of the attribute at the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method does not move the reader position.  
-  
+The method does not move the reader position.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
         <returns>The value of the attribute. If the attribute is not found null is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method does not move the reader position.  
-  
+The method does not move the reader position.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
         <returns>The value of the attribute. If the attribute is not found null is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method does not move the reader.  
-  
+The method does not move the reader.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <summary>Initializes this instance with the specified inner reader.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Sets the <xref:System.IdentityModel.DelegatingXmlDictionaryReader.InnerReader%2A> property to the reader specified by the `innerReader` parameter.  
-  
+Sets the <xref:System.IdentityModel.DelegatingXmlDictionaryReader.InnerReader%2A> property to the reader specified by the `innerReader` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -534,10 +534,10 @@
         <returns>Returns true if the reader is positioned at a attribute else false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When returning false the reader position will not be changed.  
-  
+When returning false the reader position will not be changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -560,10 +560,10 @@
         <returns>Returns true if the reader is positioned at an attribute else false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When returning false the reader position will not be changed.  
-  
+When returning false the reader position will not be changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

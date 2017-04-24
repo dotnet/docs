@@ -19,23 +19,23 @@
     <summary>Represents the World Wide Web Consortium (W3C) <see langword="any" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `any` element enables any element from the specified namespace or namespaces to appear in the containing `complexType` element.  
+The `any` element enables any element from the specified namespace or namespaces to appear in the containing `complexType` element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates the `any` element.  
-  
- [!code-cpp[Classic WebData XmlSchemaAny Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAny Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaAny Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAny Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaAny Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAny Example/VB/source.vb#1)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaAny Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAny Example/XML/source.xml#2)]  
-  
+The following example creates the `any` element.  
+ 
+[!code-cpp[Classic WebData XmlSchemaAny Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAny Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaAny Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAny Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaAny Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAny Example/VB/source.vb#1)]  
+ 
+The following XML file is generated for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaAny Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAny Example/XML/source.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
  Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no namespace is specified, `##any` is the default. If the namespace is specified, it must be one of the values shown in the following table.  
-  
+If no namespace is specified, `##any` is the default. If the namespace is specified, it must be one of the values shown in the following table.  
+ 
 |Namespace value|Description|  
 |---------------------|-----------------|  
 |`##any`|Elements from any namespace can be present.|  
@@ -100,7 +100,7 @@
 |`##local`|Elements that are not qualified with a namespace can be present.|  
 |`##targetNamespace`|Elements from the `targetNamespace` of the parent element containing the `any` element can be present.|  
 |`List of {URIs, ##targetNamespace, ##local}`|Elements from a space-delimited list of namespaces can be present. The list can contain the following: Uniform Resource Identifier (URI) references of namespaces, `##targetNamespace`, and `##local`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

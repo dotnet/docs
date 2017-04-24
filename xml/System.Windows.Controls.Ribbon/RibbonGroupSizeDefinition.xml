@@ -19,10 +19,10 @@
     <summary>Specifies information about the size of controls in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> and the visual state of the group.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows a <xref:System.Windows.Controls.Ribbon.RibbonGroup.GroupSizeDefinitions%2A> collection that specifies three different group sizes.  
-  
+The following example shows a <xref:System.Windows.Controls.Ribbon.RibbonGroup.GroupSizeDefinitions%2A> collection that specifies three different group sizes.  
+ 
 ```  
 <ribbon:RibbonGroup.GroupSizeDefinitions>  
   <ribbon:RibbonGroupSizeDefinition>  
@@ -38,7 +38,7 @@
   <ribbon:RibbonGroupSizeDefinition IsCollapsed="True" />  
 </ribbon:RibbonGroup.GroupSizeDefinitions>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,17 +75,17 @@
         <value>A collection of <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" /> items that specify the size of controls in the group. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_ControlSizeDefinitions"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinition.ControlSizeDefinitionsProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

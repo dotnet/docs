@@ -18,12 +18,12 @@
     <summary>Represents a set of features that a cache implementation provides.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.DefaultCacheCapabilities> class is a flag enumeration. The field values are bits and can be combined as a set of flags that describe the capabilities of the cache.  
-  
- The <xref:System.Runtime.Caching.DefaultCacheCapabilities> enumeration can be used to programmatically set the behavior of the cache implementation. This behavior is based on the combination of features that a particular cache implements.  
-  
+The <xref:System.Runtime.Caching.DefaultCacheCapabilities> class is a flag enumeration. The field values are bits and can be combined as a set of flags that describe the capabilities of the cache.  
+ 
+The <xref:System.Runtime.Caching.DefaultCacheCapabilities> enumeration can be used to programmatically set the behavior of the cache implementation. This behavior is based on the combination of features that a particular cache implements.  
+ 
  ]]></format>
     </remarks>
   </Docs>

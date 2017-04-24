@@ -19,18 +19,18 @@
     <summary>Represents the <see langword="choice" /> element (compositor) from the XML Schema as specified by the World Wide Web Consortium (W3C). The <see langword="choice" /> allows only one of its children to appear in an instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a `choice` element.  
-  
- [!code-cpp[Classic WebData XmlSchemaChoice Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaChoice Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaChoice Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaChoice Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaChoice Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaChoice Example/VB/source.vb#1)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaChoice Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaChoice Example/XML/source.xml#2)]  
-  
+The following example creates a `choice` element.  
+ 
+[!code-cpp[Classic WebData XmlSchemaChoice Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaChoice Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaChoice Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaChoice Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaChoice Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaChoice Example/VB/source.vb#1)]  
+ 
+The following XML file is generated for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaChoice Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaChoice Example/XML/source.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

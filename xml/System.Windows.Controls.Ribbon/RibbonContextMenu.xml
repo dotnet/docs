@@ -57,10 +57,10 @@
         <summary>Unloads the container for the specified item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonContextMenu.PrepareContainerForItemOverride%2A> method.  
-  
+This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonContextMenu.PrepareContainerForItemOverride%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,17 +102,17 @@
           <see langword="true" /> if at least one menu item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_HasGallery"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonContextMenu.HasGalleryProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

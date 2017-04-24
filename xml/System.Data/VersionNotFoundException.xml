@@ -19,13 +19,13 @@
     <summary>Represents the exception that is thrown when you try to return a version of a <see cref="T:System.Data.DataRow" /> that has been deleted.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.DataTable> with one <xref:System.Data.DataColumn> and ten <xref:System.Data.DataRow> objects. After deleting a <xref:System.Data.DataRow>, trying to return the removed row's current version causes a <xref:System.Data.VersionNotFoundException> exception being thrown.  
-  
- [!code-csharp[Classic WebData VersionNotFoundException Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData VersionNotFoundException Example/CS/source.cs#1)]
- [!code-vb[Classic WebData VersionNotFoundException Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData VersionNotFoundException Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.DataTable> with one <xref:System.Data.DataColumn> and ten <xref:System.Data.DataRow> objects. After deleting a <xref:System.Data.DataRow>, trying to return the removed row's current version causes a <xref:System.Data.VersionNotFoundException> exception being thrown.  
+ 
+[!code-csharp[Classic WebData VersionNotFoundException Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData VersionNotFoundException Example/CS/source.cs#1)]
+[!code-vb[Classic WebData VersionNotFoundException Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData VersionNotFoundException Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

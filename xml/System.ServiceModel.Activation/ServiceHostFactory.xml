@@ -19,22 +19,22 @@
     <summary>Factory that provides instances of <see cref="T:System.ServiceModel.ServiceHost" /> in managed hosting environments where the host instance is created dynamically in response to incoming messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The managed hosting environments that support dynamic activation are Internet Information Services (IIS) and Windows Process Activation Service (WAS).  
+The managed hosting environments that support dynamic activation are Internet Information Services (IIS) and Windows Process Activation Service (WAS).  
+ 
+If you have implemented a custom derivative of <xref:System.ServiceModel.ServiceHost>, consider also implementing a factory that derives from the <xref:System.ServiceModel.Activation.ServiceHostFactory> class.  
+ 
+If you have implemented a custom derivative of <xref:System.ServiceModel.ServiceHostBase> instead, then consider also implementing a factory that derives your factory from <xref:System.ServiceModel.Activation.ServiceHostFactoryBase> directly.  
+ 
   
- If you have implemented a custom derivative of <xref:System.ServiceModel.ServiceHost>, consider also implementing a factory that derives from the <xref:System.ServiceModel.Activation.ServiceHostFactory> class.  
-  
- If you have implemented a custom derivative of <xref:System.ServiceModel.ServiceHostBase> instead, then consider also implementing a factory that derives your factory from <xref:System.ServiceModel.Activation.ServiceHostFactoryBase> directly.  
-  
-   
-  
+ 
 ## Examples  
- This examples show how to use the <xref:System.ServiceModel.Activation.ServiceHostFactory> class:  
-  
- [!code-csharp[ServiceHostFactory#0](~/samples/snippets/csharp/VS_Snippets_CFX/servicehostfactory/cs/program.cs#0)]
- [!code-vb[ServiceHostFactory#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/servicehostfactory/vb/program.vb#0)]  
-  
+This examples show how to use the <xref:System.ServiceModel.Activation.ServiceHostFactory> class:  
+ 
+[!code-csharp[ServiceHostFactory#0](~/samples/snippets/csharp/VS_Snippets_CFX/servicehostfactory/cs/program.cs#0)]
+[!code-vb[ServiceHostFactory#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/servicehostfactory/vb/program.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,13 +53,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.ServiceHostFactory" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This examples show how to use the <xref:System.ServiceModel.Activation.ServiceHostFactory.%23ctor%2A>:  
-  
- [!code-csharp[ServiceHostFactory#1](~/samples/snippets/csharp/VS_Snippets_CFX/servicehostfactory/cs/program.cs#1)]
- [!code-vb[ServiceHostFactory#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/servicehostfactory/vb/program.vb#1)]  
-  
+This examples show how to use the <xref:System.ServiceModel.Activation.ServiceHostFactory.%23ctor%2A>:  
+ 
+[!code-csharp[ServiceHostFactory#1](~/samples/snippets/csharp/VS_Snippets_CFX/servicehostfactory/cs/program.cs#1)]
+[!code-vb[ServiceHostFactory#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/servicehostfactory/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,13 +87,13 @@
         <returns>A <see cref="T:System.ServiceModel.ServiceHost" /> with specific base addresses.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%28System.String%2CSystem.Uri%5B%5D%29> method:  
-  
- [!code-csharp[ServiceHostFactory#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicehostfactory/cs/program.cs#3)]
- [!code-vb[ServiceHostFactory#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/servicehostfactory/vb/program.vb#3)]  
-  
+This example shows how to use the <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%28System.String%2CSystem.Uri%5B%5D%29> method:  
+ 
+[!code-csharp[ServiceHostFactory#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicehostfactory/cs/program.cs#3)]
+[!code-vb[ServiceHostFactory#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/servicehostfactory/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -124,12 +124,12 @@
         <returns>A <see cref="T:System.ServiceModel.ServiceHost" /> for the type of service specified with a specific base address.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to create an override implementation of the <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%28System.Type%2CSystem.Uri%5B%5D%29> method:  
-  
-  
-  
+This example shows how to create an override implementation of the <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%28System.Type%2CSystem.Uri%5B%5D%29> method:  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>

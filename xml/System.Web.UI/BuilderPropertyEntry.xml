@@ -14,10 +14,10 @@
     <summary>Serves as the base class for all property entries that require a control builder.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The page parser uses property entry classes during parsing to represent expressions found within server control tags. <xref:System.Web.UI.ComplexPropertyEntry> and <xref:System.Web.UI.TemplatePropertyEntry> both derive from <xref:System.Web.UI.BuilderPropertyEntry> to allow for the specifying of a control builder.  
-  
+The page parser uses property entry classes during parsing to represent expressions found within server control tags. <xref:System.Web.UI.ComplexPropertyEntry> and <xref:System.Web.UI.TemplatePropertyEntry> both derive from <xref:System.Web.UI.BuilderPropertyEntry> to allow for the specifying of a control builder.  
+ 
  ]]></format>
     </remarks>
   </Docs>

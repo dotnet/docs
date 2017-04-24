@@ -21,21 +21,21 @@
     <summary>Implements the <see cref="T:System.ComponentModel.Design.IMenuCommandService" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.MenuCommandService> class implements the <xref:System.ComponentModel.Design.IMenuCommandService> interface, which is the managed interface used to add handlers for menu commands and to define verbs.  
-  
- The <xref:System.ComponentModel.Design.MenuCommandService> class is automatically offered by the package class to offer global commands for an entire package, and it is also offered by the `Microsoft.VisualStudio.Shell.WindowPane` class to offer commands for the current window. This offering is always done through the service container, so anyone deriving from the package or window pane classes can remove or replace the default implementation of the <xref:System.ComponentModel.Design.IMenuCommandService> interface.  
-  
- The <xref:System.ComponentModel.Design.MenuCommandService> class utilizes several other services. All of these services are optional, so the behavior of the <xref:System.ComponentModel.Design.MenuCommandService> class degrades if one or more services are missing. The following table shows which services are used and for what purpose.  
-  
+The <xref:System.ComponentModel.Design.MenuCommandService> class implements the <xref:System.ComponentModel.Design.IMenuCommandService> interface, which is the managed interface used to add handlers for menu commands and to define verbs.  
+ 
+The <xref:System.ComponentModel.Design.MenuCommandService> class is automatically offered by the package class to offer global commands for an entire package, and it is also offered by the `Microsoft.VisualStudio.Shell.WindowPane` class to offer commands for the current window. This offering is always done through the service container, so anyone deriving from the package or window pane classes can remove or replace the default implementation of the <xref:System.ComponentModel.Design.IMenuCommandService> interface.  
+ 
+The <xref:System.ComponentModel.Design.MenuCommandService> class utilizes several other services. All of these services are optional, so the behavior of the <xref:System.ComponentModel.Design.MenuCommandService> class degrades if one or more services are missing. The following table shows which services are used and for what purpose.  
+ 
 |Service|Purpose|  
 |-------------|-------------|  
 |<xref:System.ComponentModel.Design.ISelectionService>|Used to discover the current selection in order to obtain verbs offered by the currently selected designer.|  
 |<xref:System.ComponentModel.Design.IDesignerHost>|Used to obtain the designer for the currently selected component, if any.|  
 |`Microsoft.VisualStudio.Shell.Interop.IVsUIShell`|Used to notify [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] that the command status has changed.|  
 |`Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager`|Used to show context menus.|  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.MenuCommandService" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the service is being used with a designer, the `serviceProvider` parameter should be the service provider for the designer, as is the case with <xref:System.ComponentModel.Design.DesignSurface>.  
-  
+If the service is being used with a designer, the `serviceProvider` parameter should be the service provider for the designer, as is the case with <xref:System.ComponentModel.Design.DesignSurface>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,10 +85,10 @@
         <summary>Adds a command handler to the menu command service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.MenuCommandService.AddCommand%2A> method adds a command handler to the menu command service. Command handlers do not define the text, shortcut, or placement of a menu item. Rather, they define the menu item’s behavior if the item is clicked.  
-  
+The <xref:System.ComponentModel.Design.MenuCommandService.AddCommand%2A> method adds a command handler to the menu command service. Command handlers do not define the text, shortcut, or placement of a menu item. Rather, they define the menu item’s behavior if the item is clicked.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -116,10 +116,10 @@
         <summary>Adds a verb to the verb table of the <see cref="T:System.ComponentModel.Design.MenuCommandService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This verb is available regardless of what designer is currently selected. Unlike menu commands, verbs can define the text that is displayed to the user, but they do not define the placement of the command on the actual menu.  
-  
+This verb is available regardless of what designer is currently selected. Unlike menu commands, verbs can define the text that is displayed to the user, but they do not define the placement of the command on the actual menu.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -143,13 +143,13 @@
         <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.MenuCommandService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.ComponentModel.Design.MenuCommandService.Dispose%2A> when you are finished using the <xref:System.ComponentModel.Design.MenuCommandService>. The <xref:System.ComponentModel.Design.MenuCommandService.Dispose%2A> method leaves the <xref:System.ComponentModel.Design.MenuCommandService> in an unusable state. After calling <xref:System.ComponentModel.Design.MenuCommandService.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.Design.MenuCommandService> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.MenuCommandService> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call <xref:System.ComponentModel.Design.MenuCommandService.Dispose%2A> when you are finished using the <xref:System.ComponentModel.Design.MenuCommandService>. The <xref:System.ComponentModel.Design.MenuCommandService.Dispose%2A> method leaves the <xref:System.ComponentModel.Design.MenuCommandService> in an unusable state. After calling <xref:System.ComponentModel.Design.MenuCommandService.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.Design.MenuCommandService> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.MenuCommandService> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.ComponentModel.Design.MenuCommandService.Dispose%2A> before you release your last reference to the <xref:System.ComponentModel.Design.MenuCommandService>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Design.MenuCommandService> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,12 +175,12 @@
         <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.MenuCommandService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ComponentModel.Design.MenuCommandService> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ComponentModel.Design.MenuCommandService> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -208,10 +208,10 @@
         <summary>Ensures that the verb list has been created.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.MenuCommandService.EnsureVerbs%2A> method creates the verb list if it has not already been created.  
-  
+The <xref:System.ComponentModel.Design.MenuCommandService.EnsureVerbs%2A> method creates the verb list if it has not already been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,10 +330,10 @@
           <see langword="true" />, if the command was found; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The local form is first searched for the given command ID. If it is found, it is invoked. Otherwise, the command ID is passed to the global environment command handler, if one is available.  
-  
+The local form is first searched for the given command ID. If it is found, it is invoked. Otherwise, the command ID is passed to the global environment command handler, if one is available.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,10 +362,10 @@
           <see langword="true" />, if the command was found; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The local form is first searched for the given command ID. If it is found, it is invoked. Otherwise, the command ID is passed to the global environment command handler, if one is available.  
-  
+The local form is first searched for the given command ID. If it is found, it is invoked. Otherwise, the command ID is passed to the global environment command handler, if one is available.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,10 +386,10 @@
         <summary>Occurs when the status of a menu command has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -414,14 +414,14 @@
         <summary>Raises the <see cref="E:System.ComponentModel.Design.MenuCommandService.MenuCommandsChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.MenuCommandService.OnCommandsChanged%2A> method is called by a menu command when its status has changed.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.ComponentModel.Design.MenuCommandService.OnCommandsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+The <xref:System.ComponentModel.Design.MenuCommandService.OnCommandsChanged%2A> method is called by a menu command when its status has changed.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.ComponentModel.Design.MenuCommandService.OnCommandsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -449,10 +449,10 @@
         <summary>Removes the given menu command from the document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there are no more commands in the command group, the group is removed.  
-  
+If there are no more commands in the command group, the group is removed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -506,10 +506,10 @@
         <summary>Shows the shortcut menu with the given command ID at the given location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation does nothing.  
-  
+The default implementation does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -531,16 +531,16 @@
         <value>A <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> of the designer verbs that are currently available.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.MenuCommandService.Verbs%2A> property provides a collection of verbs. These verbs come from two places:  
-  
+The <xref:System.ComponentModel.Design.MenuCommandService.Verbs%2A> property provides a collection of verbs. These verbs come from two places:  
+ 
 -   Verbs added through the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A> method of <xref:System.ComponentModel.Design.MenuCommandService.Verbs%2A>.  
-  
+ 
 -   Verbs offered by the currently selected designer.  
-  
- Verbs added to this service through the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A> method are called global verbs because they are global to this service, but generally there is one instance of this service for each tool or document window. Designer verbs are obtained by querying the service provider for <xref:System.ComponentModel.Design.IDesignerHost> and <xref:System.ComponentModel.Design.ISelectionService>. If the selection service offers a primary selection, and a designer can be obtained for that selection from <xref:System.ComponentModel.Design.IDesignerHost>, the designer’s verbs are added to this list. If the name of a global verb conflicts with the name of a designer verb, the designer-provided designer verb takes precedence.  
-  
+ 
+Verbs added to this service through the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A> method are called global verbs because they are global to this service, but generally there is one instance of this service for each tool or document window. Designer verbs are obtained by querying the service provider for <xref:System.ComponentModel.Design.IDesignerHost> and <xref:System.ComponentModel.Design.ISelectionService>. If the selection service offers a primary selection, and a designer can be obtained for that selection from <xref:System.ComponentModel.Design.IDesignerHost>, the designer’s verbs are added to this list. If the name of a global verb conflicts with the name of a designer verb, the designer-provided designer verb takes precedence.  
+ 
  ]]></format>
         </remarks>
       </Docs>

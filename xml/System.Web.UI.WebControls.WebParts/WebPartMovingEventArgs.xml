@@ -14,14 +14,14 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event is raised when a <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server control is being moved within its own zone, or to another zone. This can occur both when a user drags a control, and when there is a programmatic move.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving%2A> method, and it provides an opportunity to cancel the moving process before it is complete or to track the user action. If the move is completed and the control placed in a new position, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved> event.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs> class contains information about the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event. It provides access to the Web Parts control that is being moved and the zone it is being moved to.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event is raised when a <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server control is being moved within its own zone, or to another zone. This can occur both when a user drags a control, and when there is a programmatic move.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving%2A> method, and it provides an opportunity to cancel the moving process before it is complete or to track the user action. If the move is completed and the control placed in a new position, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved> event.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs> class contains information about the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event. It provides access to the Web Parts control that is being moved and the zone it is being moved to.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,13 +83,13 @@
         <value>The numerical order of a control within its zone. The first control in a zone has an index value of zero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs.ZoneIndex%2A> property indicates the numerical order (or ordinal position) within the zone for the Web Parts control being moved in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses this property to track and manage its collection of Web Parts controls on a Web page.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs.ZoneIndex%2A> property indicates the numerical order (or ordinal position) within the zone for the Web Parts control being moved in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses this property to track and manage its collection of Web Parts controls on a Web page.  
+ 
 > [!IMPORTANT]
 >  The value of the <xref:System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs.ZoneIndex%2A> property for a control might not equal the index value for the same control within the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts%2A> collection.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

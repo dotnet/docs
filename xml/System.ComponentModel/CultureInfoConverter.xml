@@ -19,24 +19,24 @@
     <summary>Provides a type converter to convert <see cref="T:System.Globalization.CultureInfo" /> objects to and from various other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a <xref:System.Globalization.CultureInfo> object to and from a string.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
+This converter can only convert a <xref:System.Globalization.CultureInfo> object to and from a string.  
+ 
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
 > [!NOTE]
 >  You should never create an instance of the <xref:System.ComponentModel.CultureInfoConverter> class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example converts a variable of type <xref:System.Globalization.CultureInfo> to a string, and vice versa. First it constructs a <xref:System.Globalization.CultureInfo> variable using the Greek culture (represented by "el") and converts it to the string "Greek". Then it converts the string "Russian" to the <xref:System.Globalization.CultureInfo> representation "ru".  
-  
- [!code-cpp[Converters#8](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#8)]
- [!code-csharp[Converters#8](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#8)]
- [!code-vb[Converters#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#8)]  
-  
+The following code example converts a variable of type <xref:System.Globalization.CultureInfo> to a string, and vice versa. First it constructs a <xref:System.Globalization.CultureInfo> variable using the Greek culture (represented by "el") and converts it to the string "Greek". Then it converts the string "Russian" to the <xref:System.Globalization.CultureInfo> representation "ru".  
+ 
+[!code-cpp[Converters#8](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#8)]
+[!code-csharp[Converters#8](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#8)]
+[!code-vb[Converters#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,12 +90,12 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a <xref:System.Globalization.CultureInfo> object to and from a string.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+This converter can only convert a <xref:System.Globalization.CultureInfo> object to and from a string.  
+ 
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -170,12 +170,12 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a <xref:System.Globalization.CultureInfo> object to and from a string.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+This converter can only convert a <xref:System.Globalization.CultureInfo> object to and from a string.  
+ 
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -215,12 +215,12 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a <xref:System.Globalization.CultureInfo> object to and from a string.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+This converter can only convert a <xref:System.Globalization.CultureInfo> object to and from a string.  
+ 
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -281,10 +281,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> containing a standard set of valid values, or <see langword="null" /> if the data type does not support a standard set of values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,12 +316,12 @@
           <see langword="false" /> because the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> returned from <see cref="M:System.ComponentModel.CultureInfoConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> is not an exhaustive list of possible values (that is, other values are possible). This method never returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- When the list is not exhaustive, then there are other valid values besides the list of standard values that <xref:System.ComponentModel.CultureInfoConverter.GetStandardValues%2A> provides.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
+When the list is not exhaustive, then there are other valid values besides the list of standard values that <xref:System.ComponentModel.CultureInfoConverter.GetStandardValues%2A> provides.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,10 +353,10 @@
           <see langword="true" /> because <see cref="M:System.ComponentModel.CultureInfoConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> should be called to find a common set of values the object supports. This method never returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

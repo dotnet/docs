@@ -18,23 +18,23 @@
     <summary>Provides a base class for property tabs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.PropertyTab> class provides the base class behavior for a property tab. Property tabs are displayed on the toolbar of the <xref:System.Windows.Forms.PropertyGrid> control of the Properties window, and allow a component to display different views of its properties or other data.  
+The <xref:System.Windows.Forms.Design.PropertyTab> class provides the base class behavior for a property tab. Property tabs are displayed on the toolbar of the <xref:System.Windows.Forms.PropertyGrid> control of the Properties window, and allow a component to display different views of its properties or other data.  
+ 
+User code will usually not create an instance of a <xref:System.Windows.Forms.Design.PropertyTab> directly. Instead, a <xref:System.ComponentModel.PropertyTabAttribute> that indicates the type of the property tab or property tabs to display for a component can be associated with the properties or types that the <xref:System.Windows.Forms.Design.PropertyTab> should be displayed for.  
+ 
+The <xref:System.Windows.Forms.PropertyGrid> will instantiate a <xref:System.Windows.Forms.Design.PropertyTab> of the type specified by a <xref:System.ComponentModel.PropertyTabAttribute> associated with the type or property field of the component that is being browsed.  
+ 
   
- User code will usually not create an instance of a <xref:System.Windows.Forms.Design.PropertyTab> directly. Instead, a <xref:System.ComponentModel.PropertyTabAttribute> that indicates the type of the property tab or property tabs to display for a component can be associated with the properties or types that the <xref:System.Windows.Forms.Design.PropertyTab> should be displayed for.  
-  
- The <xref:System.Windows.Forms.PropertyGrid> will instantiate a <xref:System.Windows.Forms.Design.PropertyTab> of the type specified by a <xref:System.ComponentModel.PropertyTabAttribute> associated with the type or property field of the component that is being browsed.  
-  
-   
-  
+ 
 ## Examples  
- The following code example provides an example <xref:System.Windows.Forms.Design.PropertyTab> that lists any properties on a component, arranged by type name.  
-  
- [!code-cpp[PropertyTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PropertyTabExample/CPP/class1.cpp#1)]
- [!code-csharp[PropertyTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PropertyTabExample/CS/class1.cs#1)]
- [!code-vb[PropertyTabExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PropertyTabExample/VB/class1.vb#1)]  
-  
+The following code example provides an example <xref:System.Windows.Forms.Design.PropertyTab> that lists any properties on a component, arranged by type name.  
+ 
+[!code-cpp[PropertyTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PropertyTabExample/CPP/class1.cpp#1)]
+[!code-csharp[PropertyTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PropertyTabExample/CS/class1.cs#1)]
+[!code-vb[PropertyTabExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PropertyTabExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -131,13 +131,13 @@
         <summary>Releases all the resources used by the <see cref="T:System.Windows.Forms.Design.PropertyTab" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Windows.Forms.Design.PropertyTab.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.Design.PropertyTab>. The <xref:System.Windows.Forms.Design.PropertyTab.Dispose%2A> method leaves the <xref:System.Windows.Forms.Design.PropertyTab> in an unusable state. After calling <xref:System.Windows.Forms.Design.PropertyTab.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.Design.PropertyTab> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.Design.PropertyTab> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call <xref:System.Windows.Forms.Design.PropertyTab.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.Design.PropertyTab>. The <xref:System.Windows.Forms.Design.PropertyTab.Dispose%2A> method leaves the <xref:System.Windows.Forms.Design.PropertyTab> in an unusable state. After calling <xref:System.Windows.Forms.Design.PropertyTab.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.Design.PropertyTab> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.Design.PropertyTab> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.Windows.Forms.Design.PropertyTab.Dispose%2A> before you release your last reference to the <xref:System.Windows.Forms.Design.PropertyTab>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Forms.Design.PropertyTab> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,12 +163,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Design.PropertyTab" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Design.PropertyTab> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Design.PropertyTab> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -308,10 +308,10 @@
         <value>The Help keyword to be associated with this tab.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this is set to the tab name.  
-  
+By default, this is set to the tab name.  
+ 
  ]]></format>
         </remarks>
       </Docs>

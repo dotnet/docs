@@ -14,55 +14,55 @@
     <summary>Represents a configuration element within a configuration file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement> is an abstract class that is used to represent an XML element in a configuration file (such as Web.config). An element in a configuration file can contain zero, one, or more child elements.  
+The <xref:System.Configuration.ConfigurationElement> is an abstract class that is used to represent an XML element in a configuration file (such as Web.config). An element in a configuration file can contain zero, one, or more child elements.  
+ 
+Because the <xref:System.Configuration.ConfigurationElement> class is defined as abstract, you cannot create an instance of it. You can only derive classes from it. The .NET Framework includes classes that derive from the <xref:System.Configuration.ConfigurationElement> class in order to represent standard XML configuration elements, such as <xref:System.Configuration.ConfigurationSection>. You can also extend the <xref:System.Configuration.ConfigurationElement> class to access custom configuration elements and sections. The example included later in this topic shows how to access custom configuration elements and sections by using custom classes that derive from <xref:System.Configuration.ConfigurationElement>.  
+ 
+You can also extend the standard configuration types such as <xref:System.Configuration.ConfigurationElement>, <xref:System.Configuration.ConfigurationElementCollection>, <xref:System.Configuration.ConfigurationProperty>, and <xref:System.Configuration.ConfigurationSection>. For more information, see the documentation for those classes.  
+ 
+For more information about how to access information in configuration files, see the <xref:System.Configuration.ConfigurationManager> class and the <xref:System.Web.Configuration.WebConfigurationManager> class.  
+ 
   
- Because the <xref:System.Configuration.ConfigurationElement> class is defined as abstract, you cannot create an instance of it. You can only derive classes from it. The .NET Framework includes classes that derive from the <xref:System.Configuration.ConfigurationElement> class in order to represent standard XML configuration elements, such as <xref:System.Configuration.ConfigurationSection>. You can also extend the <xref:System.Configuration.ConfigurationElement> class to access custom configuration elements and sections. The example included later in this topic shows how to access custom configuration elements and sections by using custom classes that derive from <xref:System.Configuration.ConfigurationElement>.  
-  
- You can also extend the standard configuration types such as <xref:System.Configuration.ConfigurationElement>, <xref:System.Configuration.ConfigurationElementCollection>, <xref:System.Configuration.ConfigurationProperty>, and <xref:System.Configuration.ConfigurationSection>. For more information, see the documentation for those classes.  
-  
- For more information about how to access information in configuration files, see the <xref:System.Configuration.ConfigurationManager> class and the <xref:System.Web.Configuration.WebConfigurationManager> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to implement a custom <xref:System.Configuration.ConfigurationElement> both as an individual element in a custom section and as a collection of elements in a custom section. The example consists of the following files:  
-  
+The following code example shows how to implement a custom <xref:System.Configuration.ConfigurationElement> both as an individual element in a custom section and as a collection of elements in a custom section. The example consists of the following files:  
+ 
 -   An app.config file that contains a custom section that is named `MyUrls`. This section contains a simple element (it does not contain any other elements) and a collection of elements. The simple element is named `simple` and the collection is named `urls`.  
-  
+ 
 -   A console application. The application reads the contents of the app.config file and writes the information to the console. It uses classes that derive from <xref:System.Configuration.ConfigurationElement>, <xref:System.Configuration.ConfigurationElementCollection>, and <xref:System.Configuration.ConfigurationSection>.  
-  
+ 
 -   A class named `UrlsSection` that derives from the <xref:System.Configuration.ConfigurationSection> class. This class is used to access the `MyUrls` section in the configuration file.  
-  
+ 
 -   A class named `UrlsCollection` that derives from the <xref:System.Configuration.ConfigurationElementCollection> class. This class is used to access the `urls` collection in the configuration file.  
-  
+ 
 -   A class named `UrlConfigElement` that derives from the <xref:System.Configuration.ConfigurationElement> class. This class is used to access the `simple` element and the members of the `urls` collection in the configuration file.  
-  
- To run the example, perform the following steps:  
-  
+ 
+To run the example, perform the following steps:  
+ 
 1.  Create a solution that has a console application project and a class library project that is named `ConfigurationElement`.  
-  
+ 
 2.  Put the three class files in the class library project and put the other files in the console library project.  
-  
+ 
 3.  In both projects set a reference to `System.Configuration`.  
-  
+ 
 4.  In the console application project set a project reference to the class library project.  
-  
-  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#151](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#151)]
- [!code-vb[System.Configuration.ConfigurationElement#151](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#151)]  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#71](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomSection.cs#71)]
- [!code-vb[System.Configuration.ConfigurationElement#71](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomSection.vb#71)]  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#51](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElementCollection.cs#51)]
- [!code-vb[System.Configuration.ConfigurationElement#51](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElementCollection.vb#51)]  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#31](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#31)]
- [!code-vb[System.Configuration.ConfigurationElement#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#31)]  
-  
+ 
+ 
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#151](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#151)]
+[!code-vb[System.Configuration.ConfigurationElement#151](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#151)]  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#71](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomSection.cs#71)]
+[!code-vb[System.Configuration.ConfigurationElement#71](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomSection.vb#71)]  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#51](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElementCollection.cs#51)]
+[!code-vb[System.Configuration.ConfigurationElement#51](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElementCollection.vb#51)]  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#31](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#31)]
+[!code-vb[System.Configuration.ConfigurationElement#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#31)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -92,18 +92,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You create a new instance of the <xref:System.Configuration.ConfigurationElement> class, for example, every time your application needs to add a new element to the related <xref:System.Configuration.ConfigurationElementCollection> collection.  
+You create a new instance of the <xref:System.Configuration.ConfigurationElement> class, for example, every time your application needs to add a new element to the related <xref:System.Configuration.ConfigurationElementCollection> collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use a customized constructor.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#32](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#32)]
- [!code-vb[System.Configuration.ConfigurationElement#32](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#32)]  
-  
+The following example shows how to use a customized constructor.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#32](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#32)]
+[!code-vb[System.Configuration.ConfigurationElement#32](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#32)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <value>The top-level <see cref="T:System.Configuration.Configuration" /> instance that the current <see cref="T:System.Configuration.ConfigurationElement" /> instance belongs to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.CurrentConfiguration%2A> property makes it easy to determine which version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is targeted. The <xref:System.Configuration.Configuration.TargetFramework%2A> property of the top-level <xref:System.Configuration.Configuration> instance indicates the targeted framework version.  
-  
+The <xref:System.Configuration.ConfigurationElement.CurrentConfiguration%2A> property makes it easy to determine which version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is targeted. The <xref:System.Configuration.Configuration.TargetFramework%2A> property of the top-level <xref:System.Configuration.Configuration> instance indicates the targeted framework version.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,13 +156,13 @@
         <summary>Reads XML from the configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to extend the <xref:System.Configuration.ConfigurationElement.DeserializeElement%2A> method.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#33](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#33)]
- [!code-vb[System.Configuration.ConfigurationElement#33](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#33)]  
-  
+The following example demonstrates how to extend the <xref:System.Configuration.ConfigurationElement.DeserializeElement%2A> method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#33](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#33)]
+[!code-vb[System.Configuration.ConfigurationElement#33](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#33)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The element to read is locked.  
@@ -193,13 +193,13 @@
         <value>An <see cref="T:System.Configuration.ElementInformation" /> that contains the non-customizable information and functionality of the <see cref="T:System.Configuration.ConfigurationElement" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationElement.ElementInformation%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#80](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#80)]
- [!code-vb[System.Configuration.ConfigurationElement#80](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#80)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationElement.ElementInformation%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#80](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#80)]
+[!code-vb[System.Configuration.ConfigurationElement#80](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#80)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,12 +262,12 @@
         <value>The <see cref="T:System.Configuration.ContextInformation" /> for the <see cref="T:System.Configuration.ConfigurationElement" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Configuration.ContextInformation> object provides the context necessary for a <xref:System.Configuration.ConfigurationElement> object to make decisions based upon where it is being evaluated.  
-  
- The <xref:System.Configuration.ContextInformation> object provides environment details related to an element of the configuration. For example, you can use the <xref:System.Configuration.ContextInformation.IsMachineLevel%2A> property to determine whether a <xref:System.Configuration.ConfigurationElement> was set in Machine.config, or you can determine which hierarchy a <xref:System.Configuration.ConfigurationElement> element belongs to by using the <xref:System.Configuration.ContextInformation.HostingContext%2A> property.  
-  
+A <xref:System.Configuration.ContextInformation> object provides the context necessary for a <xref:System.Configuration.ConfigurationElement> object to make decisions based upon where it is being evaluated.  
+ 
+The <xref:System.Configuration.ContextInformation> object provides environment details related to an element of the configuration. For example, you can use the <xref:System.Configuration.ContextInformation.IsMachineLevel%2A> property to determine whether a <xref:System.Configuration.ConfigurationElement> was set in Machine.config, or you can determine which hierarchy a <xref:System.Configuration.ConfigurationElement> element belongs to by using the <xref:System.Configuration.ContextInformation.HostingContext%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The current element is not associated with a context.</exception>
@@ -313,10 +313,10 @@
         <returns>The transformed version of the assembly name. If no transformer is available, the <paramref name="assemblyName" /> parameter value is returned unchanged. The <see cref="P:System.Configuration.Configuration.TypeStringTransformer" /> property is <see langword="null" /> if no transformer is available.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.SerializeElement%2A> method and the <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method call this method in order to transform an assembly name when an earlier version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is targeted.  
-  
+The <xref:System.Configuration.ConfigurationElement.SerializeElement%2A> method and the <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method call this method in order to transform an assembly name when an earlier version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is targeted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -342,10 +342,10 @@
         <returns>The transformed version of the specified type name. If no transformer is available, the <paramref name="typeName" /> parameter value is returned unchanged. The <see cref="P:System.Configuration.Configuration.TypeStringTransformer" /> property is <see langword="null" /> if no transformer is available.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.SerializeElement%2A> method and the <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method call this method in order to transform a type name when an earlier version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is targeted.  
-  
+The <xref:System.Configuration.ConfigurationElement.SerializeElement%2A> method and the <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method call this method in order to transform a type name when an earlier version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is targeted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -403,10 +403,10 @@
         <summary>Used to initialize a default set of values for the <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called to set the internal state of the object to appropriate default values.  
-  
+Called to set the internal state of the object to appropriate default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -430,27 +430,27 @@
           <see langword="true" /> if the element has been modified; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.IsModified%2A> method determines whether this <xref:System.Configuration.ConfigurationElement> object will be written to the configuration file when the <xref:System.Configuration.Configuration.Save%2A> method is called. If the return value is `false`, it is assumed that the configuration file represents the current state of the element.  
+The <xref:System.Configuration.ConfigurationElement.IsModified%2A> method determines whether this <xref:System.Configuration.ConfigurationElement> object will be written to the configuration file when the <xref:System.Configuration.Configuration.Save%2A> method is called. If the return value is `false`, it is assumed that the configuration file represents the current state of the element.  
+ 
+By default, <xref:System.Configuration.ConfigurationElement.IsModified%2A> returns `true` after a property is set through the indexer to this <xref:System.Configuration.ConfigurationElement> object.  
+ 
+Override the <xref:System.Configuration.ConfigurationElement.IsModified%2A> method to provide custom indication of the state of this <xref:System.Configuration.ConfigurationElement> element.  
+ 
   
- By default, <xref:System.Configuration.ConfigurationElement.IsModified%2A> returns `true` after a property is set through the indexer to this <xref:System.Configuration.ConfigurationElement> object.  
-  
- Override the <xref:System.Configuration.ConfigurationElement.IsModified%2A> method to provide custom indication of the state of this <xref:System.Configuration.ConfigurationElement> element.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to extend <xref:System.Configuration.ConfigurationElement.IsModified%2A>.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#35](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#35)]
- [!code-vb[System.Configuration.ConfigurationElement#35](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#35)]  
-  
- The method shown in the previous example is called when a configuration element is modified, as in the following example.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#6)]
- [!code-vb[System.Configuration.ConfigurationElement#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#6)]  
-  
+The following example shows how to extend <xref:System.Configuration.ConfigurationElement.IsModified%2A>.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#35](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#35)]
+[!code-vb[System.Configuration.ConfigurationElement#35](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#35)]  
+ 
+The method shown in the previous example is called when a configuration element is modified, as in the following example.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#6)]
+[!code-vb[System.Configuration.ConfigurationElement#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -474,20 +474,20 @@
           <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationElement" /> object is read-only; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system defines configuration elements that cannot be modified.  
+The system defines configuration elements that cannot be modified.  
+ 
+To determine which elements can be modified, use the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method.  
+ 
   
- To determine which elements can be modified, use the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method. It is used on a custom section and returns `false`.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#7)]
- [!code-vb[System.Configuration.ConfigurationElement#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#7)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method. It is used on a custom section and returns `false`.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#7)]
+[!code-vb[System.Configuration.ConfigurationElement#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -513,12 +513,12 @@
         <value>The specified property, attribute, or child element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ConfigurationElement.Item%2A> property to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
-  
- In C#, this property is the indexer for the <xref:System.Configuration.ConfigurationSectionCollection> class.  
-  
+Use the <xref:System.Configuration.ConfigurationElement.Item%2A> property to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
+ 
+In C#, this property is the indexer for the <xref:System.Configuration.ConfigurationSectionCollection> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">
@@ -548,12 +548,12 @@
         <value>The specified property, attribute, or child element</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ConfigurationElement.Item%2A> property to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
-  
- In C#, this property is the indexer for the <xref:System.Configuration.ConfigurationSectionCollection> class.  
-  
+Use the <xref:System.Configuration.ConfigurationElement.Item%2A> property to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
+ 
+In C#, this property is the indexer for the <xref:System.Configuration.ConfigurationSectionCollection> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
@@ -598,21 +598,21 @@
         <value>The <see cref="T:System.Configuration.ConfigurationLockCollection" /> of locked attributes (properties) for the element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A> property allows you to lock all the attributes at once, with the exception of the one you specify. To do that, you use the <xref:System.Configuration.ConfigurationLockCollection.Contains%2A> method, as explained in the Example section.  
-  
+The <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A> property allows you to lock all the attributes at once, with the exception of the one you specify. To do that, you use the <xref:System.Configuration.ConfigurationLockCollection.Contains%2A> method, as explained in the Example section.  
+ 
 > [!NOTE]
 >  The <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A> property allows you to prevent the child configuration elements of the element to which you apply the rule from being modified. Use the <xref:System.Configuration.ConfigurationElement.LockItem%2A> property if you want to put a general lock on the parent element itself and its child elements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A>.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#9)]
- [!code-vb[System.Configuration.ConfigurationElement#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#9)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A>.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#9)]
+[!code-vb[System.Configuration.ConfigurationElement#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -637,21 +637,21 @@
         <value>The <see cref="T:System.Configuration.ConfigurationLockCollection" /> of locked elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.LockAllElementsExcept%2A> property allows you to lock all the elements at once, except for the one you specify.  
-  
+The <xref:System.Configuration.ConfigurationElement.LockAllElementsExcept%2A> property allows you to lock all the elements at once, except for the one you specify.  
+ 
 > [!NOTE]
 >  The <xref:System.Configuration.ConfigurationElement.LockAllElementsExcept%2A> property allows you to prevent the child configuration elements of the element to which you apply the rule from being modified. Use the <xref:System.Configuration.ConfigurationElement.LockItem%2A> property if you want to put a general lock on the element itself and its child elements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockAllElementsExcept%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#5)]
- [!code-vb[System.Configuration.ConfigurationElement#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#5)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockAllElementsExcept%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#5)]
+[!code-vb[System.Configuration.ConfigurationElement#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -673,23 +673,23 @@
         <value>The <see cref="T:System.Configuration.ConfigurationLockCollection" /> of locked attributes (properties) for the element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property allows you to lock all the attributes you specify.  
-  
- To do that you use the <xref:System.Configuration.ConfigurationLockCollection.Contains%2A> method, as explained in the Example section.  
-  
+The <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property allows you to lock all the attributes you specify.  
+ 
+To do that you use the <xref:System.Configuration.ConfigurationLockCollection.Contains%2A> method, as explained in the Example section.  
+ 
 > [!NOTE]
 >  The <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property allows you to prevent the child configuration elements of the element to which you apply the rule from being modified. Use <xref:System.Configuration.ConfigurationElement.LockItem%2A> if you want to put a general lock on the element itself and its child elements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#8)]
- [!code-vb[System.Configuration.ConfigurationElement#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#8)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#8)]
+[!code-vb[System.Configuration.ConfigurationElement#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -714,23 +714,23 @@
         <value>The <see cref="T:System.Configuration.ConfigurationLockCollection" /> of locked elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.LockElements%2A> property allows you to lock all the elements you specify.  
-  
- To do that, you use the <xref:System.Configuration.ConfigurationLockCollection.Contains%2A> method, as explained in the next example.  
-  
+The <xref:System.Configuration.ConfigurationElement.LockElements%2A> property allows you to lock all the elements you specify.  
+ 
+To do that, you use the <xref:System.Configuration.ConfigurationLockCollection.Contains%2A> method, as explained in the next example.  
+ 
 > [!NOTE]
 >  The <xref:System.Configuration.ConfigurationElement.LockElements%2A> property allows you to prevent the child configuration elements of the element to which you apply the rule from being modified. Use <xref:System.Configuration.ConfigurationElement.LockItem%2A> if you want to put a general lock on the element itself and its child elements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockElements%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#4)]
- [!code-vb[System.Configuration.ConfigurationElement#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#4)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockElements%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#4)]
+[!code-vb[System.Configuration.ConfigurationElement#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -753,18 +753,18 @@
           <see langword="true" /> if the element is locked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ConfigurationElement.LockItem%2A> property if you want to put a general lock on the element itself and its child elements.  
+Use the <xref:System.Configuration.ConfigurationElement.LockItem%2A> property if you want to put a general lock on the element itself and its child elements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockItem%2A>.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#3)]
- [!code-vb[System.Configuration.ConfigurationElement#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#3)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockItem%2A>.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#3)]
+[!code-vb[System.Configuration.ConfigurationElement#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The element has already been locked at a higher configuration level.</exception>
@@ -794,10 +794,10 @@
           <see langword="true" /> when an unknown attribute is encountered while deserializing; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedAttribute%2A> is invoked when an unknown attribute is encountered while deserializing the <xref:System.Configuration.ConfigurationElement> object.  
-  
+The <xref:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedAttribute%2A> is invoked when an unknown attribute is encountered while deserializing the <xref:System.Configuration.ConfigurationElement> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -826,10 +826,10 @@
           <see langword="true" /> when an unknown element is encountered while deserializing; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement%2A> is invoked when an unknown attribute is encountered while deserializing the <xref:System.Configuration.ConfigurationElement> object.  
-  
+The <xref:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement%2A> is invoked when an unknown attribute is encountered while deserializing the <xref:System.Configuration.ConfigurationElement> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The element identified by <paramref name="elementName" /> is locked.  
@@ -880,10 +880,10 @@
         <returns>None.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement%2A> is invoked when an unknown attribute is encountered while deserializing the <xref:System.Configuration.ConfigurationElement> object.  
-  
+The <xref:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement%2A> is invoked when an unknown attribute is encountered while deserializing the <xref:System.Configuration.ConfigurationElement> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">In all cases.</exception>
@@ -945,15 +945,15 @@
         <value>The <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> of properties for the element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.Properties%2A> property, also called the property bag, contains all the properties (attributes) that apply to the element.  
+The <xref:System.Configuration.ConfigurationElement.Properties%2A> property, also called the property bag, contains all the properties (attributes) that apply to the element.  
+ 
   
-   
-  
+ 
 ## Examples  
- For an example that shows how to use the <xref:System.Configuration.ConfigurationElement.Properties%2A> property, refer to the <xref:System.Configuration.ConfigurationProperty> class.  
-  
+For an example that shows how to use the <xref:System.Configuration.ConfigurationElement.Properties%2A> property, refer to the <xref:System.Configuration.ConfigurationProperty> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -996,10 +996,10 @@
         <summary>Resets the value of the <see cref="M:System.Configuration.ConfigurationElement.IsModified" /> method to <see langword="false" /> when implemented in a derived class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.ResetModified%2A> method is automatically called after changes to this <xref:System.Configuration.ConfigurationElement> object have been written to the configuration file.  
-  
+The <xref:System.Configuration.ConfigurationElement.ResetModified%2A> method is automatically called after changes to this <xref:System.Configuration.ConfigurationElement> object have been written to the configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1029,13 +1029,13 @@
           <see langword="true" /> if any data was actually serialized; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to extend the <xref:System.Configuration.ConfigurationElement.SerializeElement%2A> method.  
-  
- [!code-csharp[System.Configuration.ConfigurationElement#34](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#34)]
- [!code-vb[System.Configuration.ConfigurationElement#34](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#34)]  
-  
+The following example shows how to extend the <xref:System.Configuration.ConfigurationElement.SerializeElement%2A> method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElement#34](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#34)]
+[!code-vb[System.Configuration.ConfigurationElement#34](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#34)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The current attribute is locked at a higher configuration level.</exception>
@@ -1065,10 +1065,10 @@
           <see langword="true" /> if writing was successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method is called after the call to the <xref:System.Configuration.ConfigurationElement.Unmerge%2A> method during serialization. The <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method writes out the contents of the configuration element between the beginning and ending tags of the element. Override <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> to provide a custom serialization method.  
-  
+The <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method is called after the call to the <xref:System.Configuration.ConfigurationElement.Unmerge%2A> method during serialization. The <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method writes out the contents of the configuration element between the beginning and ending tags of the element. Override <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> to provide a custom serialization method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The element has multiple child elements.</exception>
@@ -1118,12 +1118,12 @@
         <summary>Sets the <see cref="M:System.Configuration.ConfigurationElement.IsReadOnly" /> property for the <see cref="T:System.Configuration.ConfigurationElement" /> object and all subelements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used internally to set aside those system-configuration elements that cannot be modified.  
-  
- To determine which elements can be modified, use the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method.  
-  
+This method is used internally to set aside those system-configuration elements that cannot be modified.  
+ 
+To determine which elements can be modified, use the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1152,10 +1152,10 @@
         <summary>Modifies the <see cref="T:System.Configuration.ConfigurationElement" /> object to remove all values that should not be saved.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called before the <xref:System.Configuration.ConfigurationElement> object is saved by the <xref:System.Configuration.Configuration> object in order to remove all unneeded properties.  
-  
+This method is called before the <xref:System.Configuration.ConfigurationElement> object is saved by the <xref:System.Configuration.Configuration> object in order to remove all unneeded properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1169,10 +1169,10 @@
         <summary>Gets or sets a property, attribute, or child element of this <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
-  
+Use this method to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

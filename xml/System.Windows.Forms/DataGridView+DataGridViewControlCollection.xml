@@ -19,12 +19,12 @@
     <summary>Represents a collection of controls contained on a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Control.Controls%2A> property of the <xref:System.Windows.Forms.DataGridView> control returns an instance of type <xref:System.Windows.Forms.Control.ControlCollection> which you can cast to an instance of type <xref:System.Windows.Forms.DataGridView.DataGridViewControlCollection>.  
-  
- The <xref:System.Windows.Forms.DataGridView.DataGridViewControlCollection> includes controls such as the editing control and the scrollbars on the <xref:System.Windows.Forms.DataGridView>.  
-  
+The <xref:System.Windows.Forms.Control.Controls%2A> property of the <xref:System.Windows.Forms.DataGridView> control returns an instance of type <xref:System.Windows.Forms.Control.ControlCollection> which you can cast to an instance of type <xref:System.Windows.Forms.DataGridView.DataGridViewControlCollection>.  
+ 
+The <xref:System.Windows.Forms.DataGridView.DataGridViewControlCollection> includes controls such as the editing control and the scrollbars on the <xref:System.Windows.Forms.DataGridView>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Removes all controls from the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.DataGridViewControlCollection.Clear%2A> method removes all controls from the <xref:System.Windows.Forms.DataGridView>, except the scroll bars and the editing control.  
-  
+The <xref:System.Windows.Forms.DataGridView.DataGridViewControlCollection.Clear%2A> method removes all controls from the <xref:System.Windows.Forms.DataGridView>, except the scroll bars and the editing control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

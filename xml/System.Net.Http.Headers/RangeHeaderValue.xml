@@ -24,26 +24,26 @@
     <summary>Represents a Range header value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.Headers.RangeHeaderValue> class provides support for the Range header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
-  
- Since all HTTP entities are represented in HTTP messages as sequences of bytes, the concept of a byte range is meaningful for any HTTP entity. However, not all clients and servers need to support byte-range operations.  
-  
- The Range header on a request allows a client to request that it only wants to receive some part of the specified range of bytes in an HTTP entity. Servers are not required to support Range header requests.  
-  
- An example of a Range header in an HTTP protocol request that requests the first 100 bytes would be would be the following:  
-  
- `Range: bytes=0-99\r\n\r\n`  
-  
- A HTTP server indicates support for Range headers with the Accept-Ranges header. An example of the Accept-Ranges header from a server that supports byte-ranges would be as follows:  
-  
- `Accept-Ranges: bytes\r\n\r\n`  
-  
- If an Accept-Ranges header is not received in the header of the response from the server, then the server does not support Range headers. An example of the Accept-Ranges header from a server that does not support ranges, but recognizes the Accept-Ranges header, would be as follows:  
-  
- `Accept-Ranges: none\r\n\r\n`  
-  
+The <xref:System.Net.Http.Headers.RangeHeaderValue> class provides support for the Range header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+ 
+Since all HTTP entities are represented in HTTP messages as sequences of bytes, the concept of a byte range is meaningful for any HTTP entity. However, not all clients and servers need to support byte-range operations.  
+ 
+The Range header on a request allows a client to request that it only wants to receive some part of the specified range of bytes in an HTTP entity. Servers are not required to support Range header requests.  
+ 
+An example of a Range header in an HTTP protocol request that requests the first 100 bytes would be would be the following:  
+ 
+`Range: bytes=0-99\r\n\r\n`  
+ 
+A HTTP server indicates support for Range headers with the Accept-Ranges header. An example of the Accept-Ranges header from a server that supports byte-ranges would be as follows:  
+ 
+`Accept-Ranges: bytes\r\n\r\n`  
+ 
+If an Accept-Ranges header is not received in the header of the response from the server, then the server does not support Range headers. An example of the Accept-Ranges header from a server that does not support ranges, but recognizes the Accept-Ranges header, would be as follows:  
+ 
+`Accept-Ranges: none\r\n\r\n`  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,16 +94,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> class with a byte range.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This  constructor initializes a new instance of the <xref:System.Net.Http.Headers.RangeHeaderValue> class with a Range header containing a specified byte range.  
-  
- An example of a Range header with a byte range in an HTTP protocol request that requests the first 100 bytes would be would be the following:  
-  
- `Range: bytes=0-99\r\n\r\n`  
-  
- For this example, the `from` parameter would be specified as 0 and the `to` parameter would be specified as 99.  
-  
+This  constructor initializes a new instance of the <xref:System.Net.Http.Headers.RangeHeaderValue> class with a Range header containing a specified byte range.  
+ 
+An example of a Range header with a byte range in an HTTP protocol request that requests the first 100 bytes would be would be the following:  
+ 
+`Range: bytes=0-99\r\n\r\n`  
+ 
+For this example, the `from` parameter would be specified as 0 and the `to` parameter would be specified as 99.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -167,12 +167,12 @@
         <returns>A hash code for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
-  
- The <xref:System.Net.Http.Headers.RangeHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
+ 
+The <xref:System.Net.Http.Headers.RangeHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>

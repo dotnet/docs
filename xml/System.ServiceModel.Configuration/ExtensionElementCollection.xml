@@ -58,10 +58,10 @@
         <summary>Adds a configuration element to the <see cref="T:System.ServiceModel.Configuration.ExtensionElementCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
-  
+When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">An extension with the same name or type as <paramref name="element" /> already exists in the collection.</exception>
@@ -89,10 +89,10 @@
         <summary>Adds a configuration element to the <see cref="T:System.ServiceModel.Configuration.ExtensionElementCollection" />, at the specified location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
-  
+When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">An extension with the same name or type as <paramref name="element" /> already exists in the collection.</exception>
@@ -150,10 +150,10 @@
         <summary>Adds a configuration element to the <see cref="T:System.ServiceModel.Configuration.ExtensionElementCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
-  
+When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -24,14 +24,14 @@
     <summary>Holds the public GUIDs for document types to be used with the symbol store.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how <xref:System.Diagnostics.SymbolStore.SymDocumentType> is used when calling the <xref:System.Reflection.Emit.ModuleBuilder.DefineDocument%2A> method.  
-  
- [!code-cpp[ModuleBuilder_DefineDocument#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CPP/modulebuilder_definedocument.cpp#1)]
- [!code-csharp[ModuleBuilder_DefineDocument#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CS/modulebuilder_definedocument.cs#1)]
- [!code-vb[ModuleBuilder_DefineDocument#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineDocument/VB/modulebuilder_definedocument.vb#1)]  
-  
+The following example demonstrates how <xref:System.Diagnostics.SymbolStore.SymDocumentType> is used when calling the <xref:System.Reflection.Emit.ModuleBuilder.DefineDocument%2A> method.  
+ 
+[!code-cpp[ModuleBuilder_DefineDocument#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CPP/modulebuilder_definedocument.cpp#1)]
+[!code-csharp[ModuleBuilder_DefineDocument#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CS/modulebuilder_definedocument.cs#1)]
+[!code-vb[ModuleBuilder_DefineDocument#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineDocument/VB/modulebuilder_definedocument.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,10 +14,10 @@
     <summary>Abstract base class for a serializer that can serialize and deserialize key identifier clauses.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Key identifier clauses are represented by the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> class and by classes derived from it.  
-  
+Key identifier clauses are represented by the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> class and by classes derived from it.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
           <see langword="true" /> if the XML can be deserialized to a key identifier clause by the handler; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Checks whether the XML can be read as a <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> of the <xref:System.Type> processed by the derived handler.  
-  
+Checks whether the XML can be read as a <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> of the <xref:System.Type> processed by the derived handler.  
+ 
  ]]></format>
         </remarks>
       </Docs>

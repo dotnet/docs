@@ -19,10 +19,10 @@
     <summary>Encapsulates the HTTP intrinsic object that contains methods for setting cache-specific HTTP headers and for controlling the ASP.NET page output cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpCachePolicyWrapper> class derives from the <xref:System.Web.HttpCachePolicyBase> class and serves as a wrapper for the <xref:System.Web.HttpCachePolicy> class. This class exposes the functionality of the <xref:System.Web.HttpCachePolicy> class while also exposing the <xref:System.Web.HttpCachePolicyBase> type. The <xref:System.Web.HttpCachePolicyBase> class enables you to replace the original implementation of the <xref:System.Web.HttpCachePolicy> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
-  
+The <xref:System.Web.HttpCachePolicyWrapper> class derives from the <xref:System.Web.HttpCachePolicyBase> class and serves as a wrapper for the <xref:System.Web.HttpCachePolicy> class. This class exposes the functionality of the <xref:System.Web.HttpCachePolicy> class while also exposing the <xref:System.Web.HttpCachePolicyBase> type. The <xref:System.Web.HttpCachePolicyBase> class enables you to replace the original implementation of the <xref:System.Web.HttpCachePolicy> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
+ 
  ]]></format>
     </remarks>
   </Docs>

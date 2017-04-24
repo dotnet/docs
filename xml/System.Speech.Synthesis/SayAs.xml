@@ -13,10 +13,10 @@
     <summary>Enumerates the content types for the speaking of elements such as times, dates, and currency.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithHint%2A> method uses members of the <xref:System.Speech.Synthesis.SayAs> enumeration to specify the content type of the appended text, which the speech synthesis engine can use to inform its pronunciation.  
-  
+The <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithHint%2A> method uses members of the <xref:System.Speech.Synthesis.SayAs> enumeration to specify the content type of the appended text, which the speech synthesis engine can use to inform its pronunciation.  
+ 
  ]]></format>
     </remarks>
   </Docs>

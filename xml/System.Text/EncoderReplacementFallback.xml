@@ -23,29 +23,29 @@
     <summary>Provides a failure handling mechanism, called a fallback, for an input character that cannot be converted to an output byte sequence. The fallback uses a user-specified replacement string instead of the original input character. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A common reason for an encoding or decoding operation to fail is if the underlying encoding class does not provide a mapping between a character and an equivalent byte sequence. For example, an <xref:System.Text.ASCIIEncoding> object cannot encode a character having a Unicode code point value that is outside the range U+0000 to U+007F. If the input character cannot be converted to an output byte sequence, a <xref:System.Text.EncoderReplacementFallback> object substitutes a specified replacement string for the original input character. The conversion process encodes the replacement string and then continues to process the remainder of the original input.  
-  
- The replacement string used by an <xref:System.Text.EncoderReplacementFallback> object is determined by the call to its class constructor. Two options are available:  
-  
+A common reason for an encoding or decoding operation to fail is if the underlying encoding class does not provide a mapping between a character and an equivalent byte sequence. For example, an <xref:System.Text.ASCIIEncoding> object cannot encode a character having a Unicode code point value that is outside the range U+0000 to U+007F. If the input character cannot be converted to an output byte sequence, a <xref:System.Text.EncoderReplacementFallback> object substitutes a specified replacement string for the original input character. The conversion process encodes the replacement string and then continues to process the remainder of the original input.  
+ 
+The replacement string used by an <xref:System.Text.EncoderReplacementFallback> object is determined by the call to its class constructor. Two options are available:  
+ 
 -   Replacement with the default character. If you call the <xref:System.Text.EncoderReplacementFallback.%23ctor> constructor, the replacement character is "?" (U+003F).  
-  
+ 
 -   Replacement with a string of your choice. If you call the <xref:System.Text.EncoderReplacementFallback.%23ctor%28System.String%29> constructor, you provide the replacement string.  
+ 
+If you choose a fallback string to use with this class, make sure that the string is composed entirely of characters that can be encoded in the target encoding. Otherwise, a recursive fallback results, causing an <xref:System.ArgumentException>.  
+ 
+This class is one of two .NET Framework classes that implement different fallback strategies for handling encoding conversion failures. The other class is the <xref:System.Text.EncoderExceptionFallback> class, which throws an <xref:System.Text.EncoderFallbackException> when an invalid character is encountered.  
+ 
   
- If you choose a fallback string to use with this class, make sure that the string is composed entirely of characters that can be encoded in the target encoding. Otherwise, a recursive fallback results, causing an <xref:System.ArgumentException>.  
-  
- This class is one of two .NET Framework classes that implement different fallback strategies for handling encoding conversion failures. The other class is the <xref:System.Text.EncoderExceptionFallback> class, which throws an <xref:System.Text.EncoderFallbackException> when an invalid character is encountered.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Text.EncoderReplacementFallback> class.  
-  
- [!code-cpp[sys.txt.fallbackEncRpl#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.txt.fallbackEncRpl/cpp/fallEncRpl.cpp#1)]
- [!code-csharp[sys.txt.fallbackEncRpl#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.fallbackEncRpl/cs/fallEncRpl.cs#1)]
- [!code-vb[sys.txt.fallbackEncRpl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.txt.fallbackEncRpl/vb/fallEncRpl.vb#1)]  
-  
+The following example demonstrates the <xref:System.Text.EncoderReplacementFallback> class.  
+ 
+[!code-cpp[sys.txt.fallbackEncRpl#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.txt.fallbackEncRpl/cpp/fallEncRpl.cpp#1)]
+[!code-csharp[sys.txt.fallbackEncRpl#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.fallbackEncRpl/cs/fallEncRpl.cs#1)]
+[!code-vb[sys.txt.fallbackEncRpl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.txt.fallbackEncRpl/vb/fallEncRpl.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderReplacementFallback" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the replacement string that is the value of this <xref:System.Text.EncoderReplacementFallback> object is "?".  
-  
+By default, the replacement string that is the value of this <xref:System.Text.EncoderReplacementFallback> object is "?".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,12 +107,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderReplacementFallback" /> class using a specified replacement string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `replacement` parameter initializes the replacement string that is the value of this <xref:System.Text.EncoderReplacementFallback> object. You application must provide a `replacement` value that contains only characters that can be encoded in the target encoding. Otherwise, a recursive fallback results, causing an <xref:System.ArgumentException>. For example, the fallback provided for an <xref:System.Text.ASCIIEncoding> object cannot include the character "¿" (U+00BF) because that character is itself not a valid ASCII character.  
-  
- As a result of this, U+FFFD, which is a good choice for a fallback string for <xref:System.Text.DecoderExceptionFallback>, is not generally a good choice for this class. Also, the null character (U+0000) cannot be used in the fallback string.  
-  
+The `replacement` parameter initializes the replacement string that is the value of this <xref:System.Text.EncoderReplacementFallback> object. You application must provide a `replacement` value that contains only characters that can be encoded in the target encoding. Otherwise, a recursive fallback results, causing an <xref:System.ArgumentException>. For example, the fallback provided for an <xref:System.Text.ASCIIEncoding> object cannot include the character "¿" (U+00BF) because that character is itself not a valid ASCII character.  
+ 
+As a result of this, U+FFFD, which is a good choice for a fallback string for <xref:System.Text.DecoderExceptionFallback>, is not generally a good choice for this class. Also, the null character (U+0000) cannot be used in the fallback string.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -207,10 +207,10 @@
           <see langword="true" /> if the <paramref name="value" /> parameter specifies an <see cref="T:System.Text.EncoderReplacementFallback" /> object and the replacement string of that object is equal to the replacement string of this <see cref="T:System.Text.EncoderReplacementFallback" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of a <xref:System.Text.EncoderReplacementFallback> object is the value of its <xref:System.Text.EncoderReplacementFallback.DefaultString%2A> property.  
-  
+The value of a <xref:System.Text.EncoderReplacementFallback> object is the value of its <xref:System.Text.EncoderReplacementFallback.DefaultString%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <returns>The hash code of the value of the object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of a <xref:System.Text.EncoderReplacementFallback> object is the value of its <xref:System.Text.EncoderReplacementFallback.DefaultString%2A> property.  
-  
+The value of a <xref:System.Text.EncoderReplacementFallback> object is the value of its <xref:System.Text.EncoderReplacementFallback.DefaultString%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

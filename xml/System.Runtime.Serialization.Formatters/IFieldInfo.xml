@@ -44,12 +44,12 @@
         <value>The field names of serialized objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a name is `null`, a default parameter name is used.  
-  
- This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
-  
+If a name is `null`, a default parameter name is used.  
+ 
+This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
@@ -81,10 +81,10 @@
         <value>The field types of the serialized objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
-  
+This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>

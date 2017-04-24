@@ -18,10 +18,10 @@
     <summary>The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> class creates a TCP/IP or UDP LDAP connection to Microsoft Active Directory Domain Services or an LDAP server.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property on the <xref:System.DirectoryServices.Protocols.LdapConnection> object and <xref:System.DirectoryServices.Protocols.LdapSessionOptions.QueryClientCertificate%2A> property on the <xref:System.DirectoryServices.Protocols.LdapSessionOptions> object are both set, the certificate specified in the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property is ignored.  
-  
+If the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property on the <xref:System.DirectoryServices.Protocols.LdapConnection> object and <xref:System.DirectoryServices.Protocols.LdapSessionOptions.QueryClientCertificate%2A> property on the <xref:System.DirectoryServices.Protocols.LdapSessionOptions> object are both set, the certificate specified in the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property is ignored.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -523,10 +523,10 @@
         <value>An <see cref="T:System.DirectoryServices.Protocols.LdapSessionOptions" /> object that specifies the session options.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property on the <xref:System.DirectoryServices.Protocols.LdapConnection> object and <xref:System.DirectoryServices.Protocols.LdapSessionOptions.QueryClientCertificate%2A> property on the <xref:System.DirectoryServices.Protocols.LdapSessionOptions> object are both set, the certificate specified in the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property is ignored.  
-  
+If the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property on the <xref:System.DirectoryServices.Protocols.LdapConnection> object and <xref:System.DirectoryServices.Protocols.LdapSessionOptions.QueryClientCertificate%2A> property on the <xref:System.DirectoryServices.Protocols.LdapSessionOptions> object are both set, the certificate specified in the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property is ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>

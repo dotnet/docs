@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.TouchPoint" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The coordinate space of this `position` and `bounds` should be consistent.  
-  
+The coordinate space of this `position` and `bounds` should be consistent.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="device" /> is <see langword="null" />.</exception>
@@ -86,10 +86,10 @@
         <value>The bounds of the area that the finger has in contact with the screen.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The coordinate space is defined by the provider of this object.  
-  
+The coordinate space is defined by the provider of this object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

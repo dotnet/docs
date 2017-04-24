@@ -14,10 +14,10 @@
     <summary>Provides data for callbacks that are invoked when a XAML object writer sets a value using a markup extension.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although a class might indicate with <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> that it handles all attempts to set a value through a markup extension, it might also use more than one markup extension to do so. Thus each set operation ultimately resolves to a separate markup extension implementation in the supporting code. The <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> class reports the specifics of each attempted markup extension set operation so that the callback can branch accordingly for different <xref:System.Windows.Markup.MarkupExtension>cases.  
-  
+Although a class might indicate with <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> that it handles all attempts to set a value through a markup extension, it might also use more than one markup extension to do so. Thus each set operation ultimately resolves to a separate markup extension implementation in the supporting code. The <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> class reports the specifics of each attempted markup extension set operation so that the callback can branch accordingly for different <xref:System.Windows.Markup.MarkupExtension>cases.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <value>The markup extension reference that is relevant to this <see cref="T:System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is the construction `value` cast to <xref:System.Windows.Markup.MarkupExtension>.  
-  
+The value of this property is the construction `value` cast to <xref:System.Windows.Markup.MarkupExtension>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <value>Service provider information that was passed to the markup extension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is the `serviceProvider` constructor argument.  
-  
+The value of this property is the `serviceProvider` constructor argument.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,10 +18,10 @@
     <summary>Marshals the COM <see langword="IDispatch" /> interface to the .NET Framework <see cref="T:System.Collections.IEnumerable" /> interface, and vice versa.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This custom marshaler marshals `IDispatch` to <xref:System.Collections.IEnumerable> and marshals <xref:System.Collections.IEnumerable> to `IDispatch` when a member with a DISPID of -4 exists. When you use the Type Library Importer (Tlbimp.exe) to create a class that implements <xref:System.Collections.IEnumerable> , the CLR uses this custom marshaler automatically to bridge COM enumerators and .NET enumerators. Calling <xref:System.Collections.IEnumerable.GetEnumerator%2A> results in `IDispatch.Invoke` being called with a DISPID of -4, and vice versa.  
-  
+This custom marshaler marshals `IDispatch` to <xref:System.Collections.IEnumerable> and marshals <xref:System.Collections.IEnumerable> to `IDispatch` when a member with a DISPID of -4 exists. When you use the Type Library Importer (Tlbimp.exe) to create a class that implements <xref:System.Collections.IEnumerable> , the CLR uses this custom marshaler automatically to bridge COM enumerators and .NET enumerators. Calling <xref:System.Collections.IEnumerable.GetEnumerator%2A> results in `IDispatch.Invoke` being called with a DISPID of -4, and vice versa.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Performs necessary cleanup of the managed data when it is no longer needed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CLR calls this method to clean up managed data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.MarshalNativeToManaged%2A> method.  
-  
+The CLR calls this method to clean up managed data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.MarshalNativeToManaged%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,10 +74,10 @@
         <summary>Performs necessary cleanup of the unmanaged data when it is no longer needed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CLR calls this method to clean up the unmanaged data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.MarshalManagedToNative%2A> method.  
-  
+The CLR calls this method to clean up the unmanaged data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.MarshalManagedToNative%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <returns>An instance of the custom marshaler.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All custom marshalers must implement this method, although it is not part of the <xref:System.Runtime.InteropServices.ICustomMarshaler> interface definition.  
-  
+All custom marshalers must implement this method, although it is not part of the <xref:System.Runtime.InteropServices.ICustomMarshaler> interface definition.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <returns>-1 to indicate the type this marshaler handles is not a value type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because custom marshaling of value types is not supported in the .NET Framework, this method always returns -1.  
-  
+Because custom marshaling of value types is not supported in the .NET Framework, this method always returns -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,10 +158,10 @@
         <returns>A pointer to the unmanaged object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CLR calls this method with the specified instance of a managed object to convert that object from managed code to unmanaged code, and it returns a pointer to the appropriate unmanaged object, representing the COM view of that object.  
-  
+The CLR calls this method with the specified instance of a managed object to convert that object from managed code to unmanaged code, and it returns a pointer to the appropriate unmanaged object, representing the COM view of that object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -189,10 +189,10 @@
         <returns>A managed object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The CLR calls this method with the specified pointer to an unmanaged object to convert that object from unmanaged code to managed code, and returns a managed object representing the managed view of the unmanaged data.  
-  
+The CLR calls this method with the specified pointer to an unmanaged object to convert that object from unmanaged code to managed code, and returns a managed object representing the managed view of the unmanaged data.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

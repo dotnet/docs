@@ -15,10 +15,10 @@
     <summary>Specifies which parts are included in a message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class contains the <xref:System.ServiceModel.Security.MessagePartSpecification> instances of different messages, each distinguished by the message Action.  
-  
+This class contains the <xref:System.ServiceModel.Security.MessagePartSpecification> instances of different messages, each distinguished by the message Action.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -147,10 +147,10 @@
         <value>A <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> that contains the channel parts.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The channel parts denote the message parts that are common to all the messages.  
-  
+The channel parts denote the message parts that are common to all the messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
           <see langword="true" /> if the specification is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use <xref:System.ServiceModel.Security.ScopedMessagePartSpecification.MakeReadOnly%2A> to set this property to `true`.  
-  
+You can use <xref:System.ServiceModel.Security.ScopedMessagePartSpecification.MakeReadOnly%2A> to set this property to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,10 +226,10 @@
           <see langword="true" /> if matching parts were found; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the given action is not present in the <xref:System.ServiceModel.Security.ScopedMessagePartSpecification>, then the message parts configured for the Wildcard action ("*") are returned.  
-  
+If the given action is not present in the <xref:System.ServiceModel.Security.ScopedMessagePartSpecification>, then the message parts configured for the Wildcard action ("*") are returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
           <see langword="true" /> if matching parts were found; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the given action is not present in the <xref:System.ServiceModel.Security.ScopedMessagePartSpecification>, then the message parts configured for the Wildcard action ("*") are returned.  
-  
+If the given action is not present in the <xref:System.ServiceModel.Security.ScopedMessagePartSpecification>, then the message parts configured for the Wildcard action ("*") are returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>

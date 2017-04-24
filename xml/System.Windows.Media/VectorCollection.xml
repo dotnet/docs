@@ -38,42 +38,42 @@
     <summary>Represents an ordered collection of <see cref="T:System.Windows.Vector" /> values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation, except that this implementation throws an <xref:System.ArgumentException> if you attempt to insert `null` into the collection.  
-  
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.VectorCollection> class provides several special features: <xref:System.Windows.Media.VectorCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+Members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation, except that this implementation throws an <xref:System.ArgumentException> if you attempt to insert `null` into the collection.  
+ 
+**Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.VectorCollection> class provides several special features: <xref:System.Windows.Media.VectorCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
 <a name="xamlAttributeUsage_VectorCollection"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="oneOrMoreVectors"/>  
 ```  
-  
+ 
 <a name="xamlValues_VectorCollection"></a>   
 ## XAML Values  
- *oneOrMoreVectors*  
- One or more vector values, with each pair delimited by a single comma and/or one or more spaces:  
-  
- <xref:System.Windows.Vector> *[delimeter* <xref:System.Windows.Vector> *]\**  
-  
- For example, `"0,0 100,100 200,100"` and `"0,0,100,100,200,100"` are both valid.  
-  
- *oneOrMoreVectorObjectElements*  
- One or more <xref:System.Windows.Vector> values, declared using object element syntax.  
-  
+*oneOrMoreVectors*  
+One or more vector values, with each pair delimited by a single comma and/or one or more spaces:  
+ 
+<xref:System.Windows.Vector> *[delimeter* <xref:System.Windows.Vector> *]\**  
+ 
+For example, `"0,0 100,100 200,100"` and `"0,0,100,100,200,100"` are both valid.  
+ 
+*oneOrMoreVectorObjectElements*  
+One or more <xref:System.Windows.Vector> values, declared using object element syntax.  
+ 
 <a name="xamlImplicitCollectionUsage_VectorCollection"></a>   
 ## XAML Implicit Collection Usage  
-  
+ 
 ```  
 <object>  
-  <object.property>  
-    oneOrMoreVectorObjectElements  
-  </object.property>  
+ <object.property>  
+   oneOrMoreVectorObjectElements  
+ </object.property>  
 </object>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -151,10 +151,10 @@
         <summary>Adds a <see cref="T:System.Windows.Vector" /> to the end of the <see cref="T:System.Windows.Media.VectorCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
-  
+Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -183,10 +183,10 @@
         <summary>Removes all items from the <see cref="T:System.Windows.Media.VectorCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not change the capacity of the <xref:System.Windows.Media.VectorCollection>.  
-  
+This method does not change the capacity of the <xref:System.Windows.Media.VectorCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.VectorCollection" /> is read-only.</exception>
@@ -210,12 +210,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,12 +259,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -488,10 +488,10 @@
         <summary>Inserts a <see cref="T:System.Windows.Vector" /> into the <see cref="T:System.Windows.Media.VectorCollection" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
-  
+Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -526,10 +526,10 @@
         <value>The <see cref="T:System.Windows.Vector" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
-  
+Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -632,10 +632,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Media.VectorCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -658,10 +658,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -688,10 +688,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -714,10 +714,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Windows.Media.VectorCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -739,10 +739,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Media.VectorCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -765,10 +765,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -794,10 +794,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -824,10 +824,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Media.VectorCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -853,10 +853,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -883,10 +883,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -909,10 +909,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Media.VectorCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -935,10 +935,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Media.VectorCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -964,10 +964,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -992,10 +992,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1031,10 +1031,10 @@
         <returns>A <see cref="T:System.String" /> containing the value of the current instance in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.IFormattable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.VectorCollection> instance is cast to an <xref:System.IFormattable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

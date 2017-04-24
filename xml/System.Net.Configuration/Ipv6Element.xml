@@ -14,14 +14,14 @@
     <summary>Determines whether Internet Protocol version 6 is enabled on the local computer. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class corresponds to the `enabled` attribute of the [\&lt;ipv6\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md) configuration element.  
-  
- This class is used to specify whether the IPv6 protocol is supported on the local computer. IPv6 is disabled by default.  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
+This class corresponds to the `enabled` attribute of the [\&lt;ipv6\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md) configuration element.  
+ 
+This class is used to specify whether the IPv6 protocol is supported on the local computer. IPv6 is disabled by default.  
+ 
+This class provides programmatic access to information that can be stored in configuration files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.Ipv6Element" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor adds the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A> property to the <xref:System.Configuration.ConfigurationElement.Properties%2A> collection.  
-  
+This constructor adds the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A> property to the <xref:System.Configuration.ConfigurationElement.Properties%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

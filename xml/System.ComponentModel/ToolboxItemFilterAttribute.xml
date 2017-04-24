@@ -24,21 +24,21 @@
     <summary>Specifies the filter string and filter type to use for a toolbox item.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.ToolboxItemFilterAttribute> provides a mechanism by which toolbox items can be marked for use only with designers that have a matching attribute or code that determines whether the item should be enabled or disabled in the toolbox.  
+<xref:System.ComponentModel.ToolboxItemFilterAttribute> provides a mechanism by which toolbox items can be marked for use only with designers that have a matching attribute or code that determines whether the item should be enabled or disabled in the toolbox.  
+ 
+A <xref:System.ComponentModel.ToolboxItemFilterAttribute> can be applied to a <xref:System.Drawing.Design.ToolboxItem> to indicate a filter string and filter type that specify when to enable or disable the item. <xref:System.ComponentModel.ToolboxItemFilterAttribute> can also be applied to a designer to indicate its requirements for enabling items in the toolbox. This type of attribute can be used to indicate that a toolbox item can only be enabled when a designer with a matching filter string is being used. The type of the filter is indicated in the <xref:System.ComponentModel.ToolboxItemFilterAttribute.FilterType%2A> property by a <xref:System.ComponentModel.ToolboxItemFilterType> that indicates whether and how a filter string match is used, or whether to use custom code to determine whether to enable an item.  
+ 
   
- A <xref:System.ComponentModel.ToolboxItemFilterAttribute> can be applied to a <xref:System.Drawing.Design.ToolboxItem> to indicate a filter string and filter type that specify when to enable or disable the item. <xref:System.ComponentModel.ToolboxItemFilterAttribute> can also be applied to a designer to indicate its requirements for enabling items in the toolbox. This type of attribute can be used to indicate that a toolbox item can only be enabled when a designer with a matching filter string is being used. The type of the filter is indicated in the <xref:System.ComponentModel.ToolboxItemFilterAttribute.FilterType%2A> property by a <xref:System.ComponentModel.ToolboxItemFilterType> that indicates whether and how a filter string match is used, or whether to use custom code to determine whether to enable an item.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to apply the <xref:System.ComponentModel.ToolboxItemFilterAttribute>.  
-  
- [!code-cpp[IToolboxUserExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#1)]
- [!code-csharp[IToolboxUserExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#1)]
- [!code-vb[IToolboxUserExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#1)]  
-  
+The following code example demonstrates how to apply the <xref:System.ComponentModel.ToolboxItemFilterAttribute>.  
+ 
+[!code-cpp[IToolboxUserExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#1)]
+[!code-csharp[IToolboxUserExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#1)]
+[!code-vb[IToolboxUserExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,14 +90,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemFilterAttribute" /> class using the specified filter string and type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to apply the <xref:System.ComponentModel.ToolboxItemFilterAttribute>.  
-  
- [!code-cpp[IToolboxUserExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#1)]
- [!code-csharp[IToolboxUserExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#1)]
- [!code-vb[IToolboxUserExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#1)]  
-  
+The following code example demonstrates how to apply the <xref:System.ComponentModel.ToolboxItemFilterAttribute>.  
+ 
+[!code-cpp[IToolboxUserExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#1)]
+[!code-csharp[IToolboxUserExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#1)]
+[!code-vb[IToolboxUserExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <value>A <see cref="T:System.ComponentModel.ToolboxItemFilterType" /> that indicates the type of the filter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of the filter, along with any existing <xref:System.ComponentModel.ToolboxItemFilterAttribute> on the current designer, indicates the rules to use to determine whether a particular toolbox item should be enabled in the toolbox.  
-  
+The type of the filter, along with any existing <xref:System.ComponentModel.ToolboxItemFilterAttribute> on the current designer, indicates the rules to use to determine whether a particular toolbox item should be enabled in the toolbox.  
+ 
  ]]></format>
         </remarks>
       </Docs>

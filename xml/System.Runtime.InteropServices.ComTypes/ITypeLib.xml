@@ -32,12 +32,12 @@
     <summary>Provides the managed definition of the <see langword="ITypeLib" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about the `ITypeLib` interface, see the MSDN Library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For additional information about the `ITypeLib` interface, see the MSDN Library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,14 +85,14 @@
         <summary>Finds occurrences of a type description in a type library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There must be enough room in the `rgMemId` parameter to hold `pcFound` entries.  
-  
- If the type library contains the name specified by the `szNameBuf` parameter, `szNameBuf` is overwritten with the name found in the type library, using the casing found in the type library. For example, if type library contains the name "aBc" and the <xref:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName%2A> method passes "abc" as the `szNameBuf` parameter, `szNameBuf` becomes "aBc" when the method returns.  
-  
- For additional information about `ITypeLib::FindName`, see the MSDN Library.  
-  
+There must be enough room in the `rgMemId` parameter to hold `pcFound` entries.  
+ 
+If the type library contains the name specified by the `szNameBuf` parameter, `szNameBuf` is overwritten with the name found in the type library, using the casing found in the type library. For example, if type library contains the name "aBc" and the <xref:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName%2A> method passes "abc" as the `szNameBuf` parameter, `szNameBuf` becomes "aBc" when the method returns.  
+ 
+For additional information about `ITypeLib::FindName`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <summary>Retrieves the library's documentation string, the complete Help file name and path, and the context identifier for the library Help topic in the Help file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeLib::GetDocumentation`, see the MSDN Library.  
-  
+For additional information about `ITypeLib::GetDocumentation`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,12 +179,12 @@
         <summary>Retrieves the structure that contains the library's attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of the structure referenced by the `ppTLibAttr` parameter can be obtained by the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A> method.  
-  
- For additional information about `ITypeLib::GetTypeLibAttr`, see the MSDN Library.  
-  
+The values of the structure referenced by the `ppTLibAttr` parameter can be obtained by the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A> method.  
+ 
+For additional information about `ITypeLib::GetTypeLibAttr`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
         <summary>Enables a client compiler to bind to a library's types, variables, constants, and global functions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeLib::GetTypeComp`, see the MSDN Library.  
-  
+For additional information about `ITypeLib::GetTypeComp`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,10 +265,10 @@
         <summary>Retrieves the specified type description in the library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeLib::GetTypeInfo`, see the MSDN Library.  
-  
+For additional information about `ITypeLib::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,10 +304,10 @@
         <returns>The number of type descriptions in the type library.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeLib::GetTypeInfoCount`, see the MSDN Library.  
-  
+For additional information about `ITypeLib::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,10 +347,10 @@
         <summary>Retrieves the type description that corresponds to the specified GUID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeLib::GetTypeInfoOfGuid`, see the MSDN Library.  
-  
+For additional information about `ITypeLib::GetTypeInfoOfGuid`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -390,10 +390,10 @@
         <summary>Retrieves the type of a type description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeLib::GetTypeInfoOfType`, see the MSDN Library.  
-  
+For additional information about `ITypeLib::GetTypeInfoOfType`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -435,12 +435,12 @@
           <see langword="true" /> if <paramref name="szNameBuf" /> was found in the type library; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the type library contains the string specified by the `szNameBuf` parameter, `szNameBuf` is overwritten with the name found in the type library, using the casing found in the type library. For example, if the type library contains the string "aBc" and the <xref:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName%2A> method passes "abc" as the `szNameBuf` parameter, `szNameBuf` becomes "aBc" when the method returns.  
-  
- For additional information about `ITypeLib::IsName`, see the MSDN Library.  
-  
+If the type library contains the string specified by the `szNameBuf` parameter, `szNameBuf` is overwritten with the name found in the type library, using the casing found in the type library. For example, if the type library contains the string "aBc" and the <xref:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName%2A> method passes "abc" as the `szNameBuf` parameter, `szNameBuf` becomes "aBc" when the method returns.  
+ 
+For additional information about `ITypeLib::IsName`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -478,10 +478,10 @@
         <summary>Releases the <see cref="T:System.Runtime.InteropServices.TYPELIBATTR" /> structure originally obtained from the <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetLibAttr(System.IntPtr@)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeLib::ReleaseTLibAttr`, see the MSDN Library.  
-  
+For additional information about `ITypeLib::ReleaseTLibAttr`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,35 +14,35 @@
     <summary>Represents the metadata that describes a table for use by Dynamic Data pages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is part of the code-behind file for the Insert.aspx page template. The <xref:System.Web.DynamicData.MetaTable> instance is initialized in the `Page_Load` method. The title for the page is set to the table `DisplayName` property.  
-  
+The following example is part of the code-behind file for the Insert.aspx page template. The <xref:System.Web.DynamicData.MetaTable> instance is initialized in the `Page_Load` method. The title for the page is set to the table `DisplayName` property.  
+ 
 ```csharp  
 public partial class Insert : System.Web.UI.Page {  
-    protected MetaTable table;     
-  
-    protected void Page_Load(object sender, EventArgs e) {  
-        table = DetailsDataSource.GetTable();  
-        Title = table.DisplayName;  
-    }  
+   protected MetaTable table;     
+ 
+   protected void Page_Load(object sender, EventArgs e) {  
+       table = DetailsDataSource.GetTable();  
+       Title = table.DisplayName;  
+   }  
 }  
 ```  
-  
+ 
 ```vb  
 Partial Class Insert  
-    Inherits System.Web.UI.Page  
-  
-    Protected table As MetaTable      
-  
-    Protected Sub Page_Load(ByVal sender As Object, _  
-            ByVal e As EventArgs)  
-        table = DetailsDataSource.GetTable  
-        Title = table.DisplayName  
-    End Sub  
+   Inherits System.Web.UI.Page  
+ 
+   Protected table As MetaTable      
+ 
+   Protected Sub Page_Load(ByVal sender As Object, _  
+           ByVal e As EventArgs)  
+       table = DetailsDataSource.GetTable  
+       Title = table.DisplayName  
+   End Sub  
 End Class  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@ End Class
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.MetaTable" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `tableProvider` parameter is used to initialize the <xref:System.Web.DynamicData.MetaTable.DataContextPropertyName%2A> property.  
-  
+The `tableProvider` parameter is used to initialize the <xref:System.Web.DynamicData.MetaTable.DataContextPropertyName%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,10 +133,10 @@ End Class
           <see langword="true" /> if the user is allowed to perform delete operations; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
-  
+A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@ End Class
           <see langword="true" /> if the user is allowed to perform insert operations; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
-  
+A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@ End Class
           <see langword="true" /> if the user is allowed to perform read operations; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
-  
+A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@ End Class
           <see langword="true" /> if the user is allowed to perform update operations; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
-  
+A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,13 +248,13 @@ End Class
         <value>A collection that contains the columns for the table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaTable.Columns%2A> property. In the example, the Dynamic Data page templates have been copied to the \DynamicData\CustomPages\ProductDescriptions folder to provide a custom display for the ProductDescription table of the AdventureWorksLT database. The markup of the Insert.aspx file is changed to add an `OnDataBound` event handler named `DetailsView1_DataBound`. In the event handler, the <xref:System.Web.DynamicData.DynamicDataExtensions.FindMetaTable%2A> method is used to find the meta table. The <xref:System.Web.DynamicData.MetaTable.Columns%2A> property is used to display the number of columns in the table.  
-  
- [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx.cs#1)]  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaTable.Columns%2A> property. In the example, the Dynamic Data page templates have been copied to the \DynamicData\CustomPages\ProductDescriptions folder to provide a custom display for the ProductDescription table of the AdventureWorksLT database. The markup of the Insert.aspx file is changed to add an `OnDataBound` event handler named `DetailsView1_DataBound`. In the event handler, the <xref:System.Web.DynamicData.DynamicDataExtensions.FindMetaTable%2A> method is used to find the meta table. The <xref:System.Web.DynamicData.MetaTable.Columns%2A> property is used to display the number of columns in the table.  
+ 
+[!code-csharp[System.Web.DynamicData.DynamicDataExtensions#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx.cs#1)]  
 <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@ End Class
         <returns>The new child metacolumn object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden to create a derived type.  
-  
+This method can be overridden to create a derived type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,10 +309,10 @@ End Class
         <returns>The new metacolumn object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden to create a derived type.  
-  
+This method can be overridden to create a derived type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -335,10 +335,10 @@ End Class
         <returns>The data context for the table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data context is retrieved from a new context that is instantiated by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=fullName> method. For more information, see the <xref:System.Web.DynamicData.MetaTable?displayProperty=fullName> class overview.  
-  
+The data context is retrieved from a new context that is instantiated by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=fullName> method. For more information, see the <xref:System.Web.DynamicData.MetaTable?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,10 +364,10 @@ End Class
         <returns>An object that contains foreign-key metadata.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden to create a derived type.  
-  
+This method can be overridden to create a derived type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,10 +433,10 @@ End Class
         <value>The name of the table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name comes from the <xref:System.Web.DynamicData.MetaTable.DataContextType%2A> object that the table belongs to.  
-  
+The name comes from the <xref:System.Web.DynamicData.MetaTable.DataContextType%2A> object that the table belongs to.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -458,10 +458,10 @@ End Class
         <value>The type of the data context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the <xref:System.Data.Linq.DataContext?displayProperty=fullName> class overview.  
-  
+For more information, see the <xref:System.Data.Linq.DataContext?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -483,20 +483,20 @@ End Class
         <value>The column that is used to display values when entries in this table are used as parents in foreign-key relationships.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The column that is returned is selected in this order:  
-  
+The column that is returned is selected in this order:  
+ 
 1.  The column that is specified by using the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute> attribute.  
-  
+ 
 2.  The first string column that is not in the primary key.  
-  
+ 
 3.  The first string column that is in the primary key.  
-  
+ 
 4.  The first non-string column that is in the primary key.  
-  
+ 
 5.  The first column.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -518,10 +518,10 @@ End Class
         <value>The string that represents the user-friendly name of the table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property defaults to the value of the <xref:System.Web.DynamicData.MetaTable.Name%2A> property. You can customize the value of this property by using the <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> attribute.  
-  
+The value of this property defaults to the value of the <xref:System.Web.DynamicData.MetaTable.Name%2A> property. You can customize the value of this property by using the <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -583,10 +583,10 @@ End Class
         <returns>The action path for the specified action.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
-  
+The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -614,10 +614,10 @@ End Class
         <returns>The action path for the specified action and primary key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
-  
+The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -645,12 +645,12 @@ End Class
         <returns>The action path for the specified row.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The action path is a URL for an action for a specific entity. The action path contains the primary-key column names, which can be used for query-string filters.  
-  
- For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
-  
+The action path is a URL for an action for a specific entity. The action path contains the primary-key column names, which can be used for query-string filters.  
+ 
+For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -678,10 +678,10 @@ End Class
         <returns>The action path for the specified action and routes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
-  
+The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -711,10 +711,10 @@ End Class
         <returns>The action path for the specified primary key and virtual path, with query-string values appended to it.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
-  
+The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -744,10 +744,10 @@ End Class
         <returns>The action path for the specified row.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
-  
+The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -814,10 +814,10 @@ End Class
         <returns>The primary-key values of the entities, if they are found; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The route values typically come from the request URL query string.  
-  
+The route values typically come from the request URL query string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -843,10 +843,10 @@ End Class
         <returns>The display name for an instance of a row.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the row is `null`, an empty string is returned. If the entity class includes an override of the <xref:System.Web.DynamicData.MetaTable.ToString%2A> method, the overridden <xref:System.Web.DynamicData.MetaTable.ToString%2A> value is returned. Otherwise, the method returns the `ToString` representation of the value of the <xref:System.Web.DynamicData.MetaTable.DisplayColumn%2A> property for the specified row.  
-  
+If the row is `null`, an empty string is returned. If the entity class includes an override of the <xref:System.Web.DynamicData.MetaTable.ToString%2A> method, the overridden <xref:System.Web.DynamicData.MetaTable.ToString%2A> value is returned. Otherwise, the method returns the `ToString` representation of the value of the <xref:System.Web.DynamicData.MetaTable.DisplayColumn%2A> property for the specified row.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -869,10 +869,10 @@ End Class
         <returns>A list of columns that are filterable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A column is filterable if it is annotated with the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute> attribute and the `Enabled` property of the <xref:System.Web.Mvc.FilterAttribute> attribute of the column is set to `true`.  
-  
+A column is filterable if it is annotated with the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute> attribute and the `Enabled` property of the <xref:System.Web.Mvc.FilterAttribute> attribute of the column is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -898,31 +898,31 @@ End Class
         <returns>A dictionary of primary-key names and values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a primary-key dictionary.  
-  
+The following example shows how to create a primary-key dictionary.  
+ 
 ```csharp  
 private RouteValueDictionary GetRouteValues(MetaTable table, object row) {  
-    RouteValueDictionary routeValues = GetRouteValues();  
-    foreach (var pk in table.GetPrimaryKeyDictionary(row)) {  
-        routeValues[pk.Key] = pk.Value;  
-    }  
-    return routeValues;  
+   RouteValueDictionary routeValues = GetRouteValues();  
+   foreach (var pk in table.GetPrimaryKeyDictionary(row)) {  
+       routeValues[pk.Key] = pk.Value;  
+   }  
+   return routeValues;  
 }   
 ```  
-  
+ 
 ```vb  
 Private Function GetRouteValues(ByVal table As MetaTable, _  
-        ByVal row As Object) As RouteValueDictionary   
-    Dim routeValues As RouteValueDictionary = GetRouteValues()   
-    For Each pk In table.GetPrimaryKeyDictionary(row)   
-        routeValues(pk.Key) = pk.Value   
-    Next   
-    Return routeValues   
+       ByVal row As Object) As RouteValueDictionary   
+   Dim routeValues As RouteValueDictionary = GetRouteValues()   
+   For Each pk In table.GetPrimaryKeyDictionary(row)   
+       routeValues(pk.Key) = pk.Value   
+   Next   
+   Return routeValues   
 End Function   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1033,10 +1033,10 @@ End Function
         <returns>The <see cref="T:System.Linq.IQueryable" /> instance for the entity type that represents the table in the data context.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `context` parameter is `null`, this method creates a new context by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=fullName> method.  
-  
+If the `context` parameter is `null`, this method creates a new context by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1064,14 +1064,14 @@ End Function
         <returns>A list of columns to display by using scaffolding.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns all columns whose <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> property is set to `true` except the following:  
-  
+This method returns all columns whose <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> property is set to `true` except the following:  
+ 
 -   Long string columns, which are columns whose <xref:System.Web.DynamicData.MetaColumn.IsLongString%2A> property is set to `true` and whose `containerType` parameter is `true`.  
-  
+ 
 -   Child columns whose <xref:System.Web.UI.WebControls.DataBoundControlMode> value is set to <xref:System.Web.UI.WebControls.DataBoundControlMode>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1097,10 +1097,10 @@ End Function
         <returns>The metatable that is associated with the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls <xref:System.Web.DynamicData.MetaTable.TryGetTable%28System.Type%2CSystem.Web.DynamicData.MetaTable%40%29>. If <xref:System.Web.DynamicData.MetaTable.TryGetTable%28System.Type%2CSystem.Web.DynamicData.MetaTable%40%29> returns `false`, an <xref:System.InvalidOperationException> exception is thrown.  
-  
+This method calls <xref:System.Web.DynamicData.MetaTable.TryGetTable%28System.Type%2CSystem.Web.DynamicData.MetaTable%40%29>. If <xref:System.Web.DynamicData.MetaTable.TryGetTable%28System.Type%2CSystem.Web.DynamicData.MetaTable%40%29> returns `false`, an <xref:System.InvalidOperationException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.DynamicData.MetaTable.TryGetTable(System.Type,System.Web.DynamicData.MetaTable@)" /> method that was called by this method returned <see langword="false" />.</exception>
@@ -1142,29 +1142,29 @@ End Function
         <summary>Initializes data that may not be available when the constructor is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.Web.DynamicData.MetaColumn.Initialize%2A> method for each column in the <xref:System.Web.DynamicData.MetaTable> instance. This method cannot be called directly. To customize initialization, you can derive from this class and override the <xref:System.Web.DynamicData.MetaColumn.Initialize%2A> method. If you override this method, call the base control's `Initialize` method.  
+This method calls the <xref:System.Web.DynamicData.MetaColumn.Initialize%2A> method for each column in the <xref:System.Web.DynamicData.MetaTable> instance. This method cannot be called directly. To customize initialization, you can derive from this class and override the <xref:System.Web.DynamicData.MetaColumn.Initialize%2A> method. If you override this method, call the base control's `Initialize` method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Web.DynamicData.MetaColumn.Initialize%2A> method in order to customize the initialization process.  
-  
+The following example shows how to override the <xref:System.Web.DynamicData.MetaColumn.Initialize%2A> method in order to customize the initialization process.  
+ 
 ```csharp  
 protected  override void Initialize() {  
-    base.Initialize();  
-    MyOverridenInit();  
+   base.Initialize();  
+   MyOverridenInit();  
 }  
 ```  
-  
+ 
 ```vb  
 Protected Overloads Overrides Sub Initialize()   
-    MyBase.Initialize()   
-    MyOverridenInit()   
+   MyBase.Initialize()   
+   MyOverridenInit()   
 End Sub  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1205,10 +1205,10 @@ End Sub
         <value>The action path of the list action for the table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
-  
+The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1230,10 +1230,10 @@ End Sub
         <value>The meta model that the table belongs to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the <xref:System.Data.Linq.Mapping.MetaModel?displayProperty=fullName> class overview.  
-  
+For more information, see the <xref:System.Data.Linq.Mapping.MetaModel?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1309,10 +1309,10 @@ End Sub
         <summary>Resets the cached metadata for the table.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The cached table metadata consists of the information that is obtained from data-model attributes and from metadata about intrinsic columns. The metadata cache is rebuilt the next time any metadata is requested.  
-  
+The cached table metadata consists of the information that is obtained from data-model attributes and from metadata about intrinsic columns. The metadata cache is rebuilt the next time any metadata is requested.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1334,10 +1334,10 @@ End Sub
         <value>The root type of the entity's inheritance hierarchy.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the type is at the top of the inheritance hierarchy or does not have a parent type, the entity type is returned.  
-  
+If the type is at the top of the inheritance hierarchy or does not have a parent type, the entity type is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1397,10 +1397,10 @@ End Sub
           <see langword="true" /> if entries are sorted in descending order; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can specify sort order by using the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute?displayProperty=fullName> attribute.  
-  
+You can specify sort order by using the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute?displayProperty=fullName> attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1448,10 +1448,10 @@ End Sub
           <see langword="true" /> if the specified column can be found; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `columnName` parameter is null, an <xref:System.InvalidOperationException> exception is thrown.  
-  
+If the `columnName` parameter is null, an <xref:System.InvalidOperationException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1491,10 +1491,10 @@ End Sub
         <summary>Gets the action path for the specified row.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
-  
+The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>

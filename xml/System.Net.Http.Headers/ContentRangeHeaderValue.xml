@@ -180,12 +180,12 @@
         <returns>A hash code for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
-  
- The <xref:System.Net.Http.Headers.ContentRangeHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
+ 
+The <xref:System.Net.Http.Headers.ContentRangeHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,10 +422,10 @@
         <value>A <see cref="T:System.String" /> that contains range units.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The only range unit defined by HTTP/1.1 is "bytes".  
-  
+The only range unit defined by HTTP/1.1 is "bytes".  
+ 
  ]]></format>
         </remarks>
       </Docs>

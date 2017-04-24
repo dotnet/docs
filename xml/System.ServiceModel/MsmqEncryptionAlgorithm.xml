@@ -14,14 +14,14 @@
     <summary>Contains the set of encryption algorithms that can be used to encrypt messages on the wire.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing (MSMQ) can encrypt messages on the wire when transferring queued messages between queue managers. <xref:System.ServiceModel.MsmqEncryptionAlgorithm> is an enumeration that contains the set of encryption algorithms that can be used to encrypt messages on the wire.  
-  
- For encryption to work, the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> property must be set to <xref:System.Net.Security.ProtectionLevel>.  
-  
- Only RC4Stream is supported on [!INCLUDE[ws2003](~/includes/ws2003-md.md)] and [!INCLUDE[wxp](~/includes/wxp-md.md)].  
-  
+Message Queuing (MSMQ) can encrypt messages on the wire when transferring queued messages between queue managers. <xref:System.ServiceModel.MsmqEncryptionAlgorithm> is an enumeration that contains the set of encryption algorithms that can be used to encrypt messages on the wire.  
+ 
+For encryption to work, the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> property must be set to <xref:System.Net.Security.ProtectionLevel>.  
+ 
+Only RC4Stream is supported on [!INCLUDE[ws2003](~/includes/ws2003-md.md)] and [!INCLUDE[wxp](~/includes/wxp-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>

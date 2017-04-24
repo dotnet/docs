@@ -13,10 +13,10 @@
     <summary>Defines identifiers for power mode events reported by the operating system.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration defines identifiers that represent types of power mode changes or events. The values of this enumeration are used by a <xref:Microsoft.Win32.PowerModeChangedEventArgs> to indicate the type of a <xref:Microsoft.Win32.SystemEvents.PowerModeChanged> event.  
-  
+This enumeration defines identifiers that represent types of power mode changes or events. The values of this enumeration are used by a <xref:Microsoft.Win32.PowerModeChangedEventArgs> to indicate the type of a <xref:Microsoft.Win32.SystemEvents.PowerModeChanged> event.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -20,16 +20,16 @@
     <summary>Specifies security actions to control <see cref="T:System.Net.Sockets.Socket" /> connections. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use this attribute, your <xref:System.Net.Sockets.Socket> connection must conform to the properties that are specified in your <xref:System.Net.SocketPermissionAttribute>. For example, to apply the permission to a <xref:System.Net.Sockets.Socket> connection on port 80, set the <xref:System.Net.SocketPermissionAttribute.Port%2A> property of the <xref:System.Net.SocketPermissionAttribute> to "80". The security information that is specified in <xref:System.Net.SocketPermissionAttribute> is stored in the metadata of the attribute target, which is the class to which the <xref:System.Net.SocketPermissionAttribute> is applied. The system then accesses the information at run time. The <xref:System.Security.Permissions.SecurityAction> that is passed to the constructor determines the allowable <xref:System.Net.SocketPermissionAttribute> targets.  
-  
+To use this attribute, your <xref:System.Net.Sockets.Socket> connection must conform to the properties that are specified in your <xref:System.Net.SocketPermissionAttribute>. For example, to apply the permission to a <xref:System.Net.Sockets.Socket> connection on port 80, set the <xref:System.Net.SocketPermissionAttribute.Port%2A> property of the <xref:System.Net.SocketPermissionAttribute> to "80". The security information that is specified in <xref:System.Net.SocketPermissionAttribute> is stored in the metadata of the attribute target, which is the class to which the <xref:System.Net.SocketPermissionAttribute> is applied. The system then accesses the information at run time. The <xref:System.Security.Permissions.SecurityAction> that is passed to the constructor determines the allowable <xref:System.Net.SocketPermissionAttribute> targets.  
+ 
 > [!NOTE]
 >  The properties of a <xref:System.Net.SocketPermissionAttribute> must have values that are not `null`. Also, once set, the values of the properties cannot be changed.  
-  
+ 
 > [!NOTE]
 >  For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.SocketPermissionAttribute" /> class with the specified <see cref="T:System.Security.Permissions.SecurityAction" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Permissions.SecurityAction> value that is passed to this constructor specifies the allowable <xref:System.Net.SocketPermissionAttribute> targets.  
-  
+The <xref:System.Security.Permissions.SecurityAction> value that is passed to this constructor specifies the allowable <xref:System.Net.SocketPermissionAttribute> targets.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -80,10 +80,10 @@
         <value>A string that contains the network access method that is allowed by this instance of <see cref="T:System.Net.SocketPermissionAttribute" />. Valid values are "Accept" and "Connect."</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is write-once. Valid values for this property correspond to <xref:System.Net.NetworkAccess> enumeration values.  
-  
+This property is write-once. Valid values for this property correspond to <xref:System.Net.NetworkAccess> enumeration values.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Net.SocketPermissionAttribute.Access" /> property is not <see langword="null" /> when you attempt to set the value. To specify more than one Access method, use an additional attribute declaration statement.</exception>
@@ -108,10 +108,10 @@
         <returns>An instance of the <see cref="T:System.Net.SocketPermission" /> class that corresponds to the security declaration.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.SocketPermissionAttribute.CreatePermission%2A> method is called by the security system, not by the application code. The security information described by <xref:System.Net.SocketPermissionAttribute> is stored in the metadata of the attribute target, which is the class to which the <xref:System.Net.SocketPermissionAttribute> is applied. The system then accesses the information at run-time and calls <xref:System.Net.SocketPermissionAttribute.CreatePermission%2A>. The system uses the returned <xref:System.Security.IPermission> to enforce the specified security requirements.  
-  
+The <xref:System.Net.SocketPermissionAttribute.CreatePermission%2A> method is called by the security system, not by the application code. The security information described by <xref:System.Net.SocketPermissionAttribute> is stored in the metadata of the attribute target, which is the class to which the <xref:System.Net.SocketPermissionAttribute> is applied. The system then accesses the information at run-time and calls <xref:System.Net.SocketPermissionAttribute.CreatePermission%2A>. The system uses the returned <xref:System.Security.IPermission> to enforce the specified security requirements.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the current instance's <see cref="P:System.Net.SocketPermissionAttribute.Access" />, <see cref="P:System.Net.SocketPermissionAttribute.Host" />, <see cref="P:System.Net.SocketPermissionAttribute.Transport" />, or <see cref="P:System.Net.SocketPermissionAttribute.Port" /> properties is <see langword="null" />.</exception>
@@ -135,10 +135,10 @@
         <value>A string that contains the DNS host name or IP address that is associated with this instance of <see cref="T:System.Net.SocketPermissionAttribute" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is write-once and specifies the Domain Name Services (DNS) host name to which this permission applies.  
-  
+This property is write-once and specifies the Domain Name Services (DNS) host name to which this permission applies.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -163,10 +163,10 @@
         <value>A string that contains the port number that is associated with this instance of <see cref="T:System.Net.SocketPermissionAttribute" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is write-once and specifies the port number to which this permission applies. The valid values are a string-encoded integer or the string "All".  
-  
+This property is write-once and specifies the port number to which this permission applies. The valid values are a string-encoded integer or the string "All".  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Net.SocketPermissionAttribute.Port" /> property is <see langword="null" /> when you attempt to set the value. To specify more than one port, use an additional attribute declaration statement.</exception>
@@ -190,10 +190,10 @@
         <value>A string that contains the <see cref="T:System.Net.TransportType" /> that is associated with this <see cref="T:System.Net.SocketPermissionAttribute" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible string values of this property are <xref:System.Net.TransportType>, <xref:System.Net.TransportType>, <xref:System.Net.TransportType>, <xref:System.Net.TransportType>, and <xref:System.Net.TransportType>.  
-  
+Possible string values of this property are <xref:System.Net.TransportType>, <xref:System.Net.TransportType>, <xref:System.Net.TransportType>, <xref:System.Net.TransportType>, and <xref:System.Net.TransportType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

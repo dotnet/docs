@@ -47,16 +47,16 @@
         <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeOperation" /> modification to perform.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.DirectoryServices.Protocols.DirectoryAttributeModification.Operation%2A> is <xref:System.DirectoryServices.Protocols.DirectoryAttributeOperation>.  
-  
+The default <xref:System.DirectoryServices.Protocols.DirectoryAttributeModification.Operation%2A> is <xref:System.DirectoryServices.Protocols.DirectoryAttributeOperation>.  
+ 
 ## Exceptions  
-  
+ 
 |Exceptions|Condition|  
 |----------------|---------------|  
 |InvalidEnumArgumentException|The property value is not one of the <xref:System.DirectoryServices.Protocols.DirectoryAttributeOperation> values.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,12 +19,12 @@
     <summary>Implements the <c>MSBuild</c> task. Use the <c>MSBuild</c> element in your project file to create and execute this task. For usage and parameter information, see [MSBuild Task](http://msdn.microsoft.com/library/76577f6c-7669-44ad-a840-363e37a04d34).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class implements the "MSBuild" task, which hands off child project files to the MSBuild engine to be built.  
-  
- Marked RunInMTA because there is no reason MSBuild tasks should run on a thread other than that of the RequestBuilder which spawned them.  
-  
+This class implements the "MSBuild" task, which hands off child project files to the MSBuild engine to be built.  
+ 
+Marked RunInMTA because there is no reason MSBuild tasks should run on a thread other than that of the RequestBuilder which spawned them.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -64,10 +64,10 @@
           <see langword="true" /> if the projects specified in the <see cref="P:Microsoft.Build.Tasks.MSBuild.Projects" /> property are built in parallel if possible; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `true`.  
-  
+The default value is `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -135,10 +135,10 @@
         <value>A semicolon-delimited list of property name/value pairs to apply as global properties to the child project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you specify this parameter, it is functionally equivalent to setting properties that have the **/property** switch when you build with .  
-  
+When you specify this parameter, it is functionally equivalent to setting properties that have the **/property** switch when you build with .  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -162,10 +162,10 @@
           <see langword="true" /> if the relative paths of target output items from the built projects have their paths adjusted to be relative to the calling project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default is `false`.  
-  
+Default is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -208,10 +208,10 @@
           <see langword="true" /> if the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] task invokes each target in the list passed to [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] one at a time; <see langword="false" /> if the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] task invokes all targets in the list at the same time.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property to `true` guarantees that subsequent targets are invoked even if previously invoked targets failed. Otherwise, a build error would stop invocation of all subsequent targets. The default value is `false`.  
-  
+Setting this property to `true` guarantees that subsequent targets are invoked even if previously invoked targets failed. Otherwise, a build error would stop invocation of all subsequent targets. The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -235,10 +235,10 @@
           <see langword="true" /> if project files that do not exist on the disk will be skipped; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If project files that do not exist on the disk are not skipped, they will cause a build error.  
-  
+If project files that do not exist on the disk are not skipped, they will cause a build error.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -281,10 +281,10 @@
         <value>The escape characters to be unescaped from the specified <see cref="P:Microsoft.Build.Tasks.MSBuild.Properties" /> and <see cref="P:Microsoft.Build.Tasks.MSBuild.Targets" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property has to be set to a value other than `null` for the `MSBuild` task to unescape properties and targets.  
-  
+This property has to be set to a value other than `null` for the `MSBuild` task to unescape properties and targets.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -331,10 +331,10 @@
         <value>The target or targets to build in the project files.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no targets are specified in the `MSBuild` task, the default targets specified in the project files are built.  
-  
+If no targets are specified in the `MSBuild` task, the default targets specified in the project files are built.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -357,10 +357,10 @@
         <value>The target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version to build the project with.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `3.5.`  
-  
+The default value is `3.5.`  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -404,12 +404,12 @@
           <see langword="true" /> if the MSBuild engine will return the built targets from the cache; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The scope of built targets in the cash is (ProjectFileName, GlobalProperties)[TargetNames] as a list of build items.  
-  
- This property is no longer used in version 4.0.  
-  
+The scope of built targets in the cash is (ProjectFileName, GlobalProperties)[TargetNames] as a list of build items.  
+ 
+This property is no longer used in version 4.0.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -13,10 +13,10 @@
     <summary>Determines the type of peer resolver being used.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified peer resolver is unavailable, a <xref:System.InvalidOperationException> will be thrown when an attempt to use the resolver is made.  
-  
+If the specified peer resolver is unavailable, a <xref:System.InvalidOperationException> will be thrown when an attempt to use the resolver is made.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -37,10 +37,10 @@
         <summary>Automatically determines the type of resolver to use from the information set on the binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If available, a custom resolver is used.  If one is unavailable, the PNRP peer resolver is used. A peer resolver is considered "available" if the <xref:%2A> System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Address?qualifyHint=False&autoUpgrade=True and <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Binding%2A> properties are set on it.  
-  
+If available, a custom resolver is used.  If one is unavailable, the PNRP peer resolver is used. A peer resolver is considered "available" if the <xref:%2A> System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Address?qualifyHint=False&autoUpgrade=True and <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Binding%2A> properties are set on it.  
+ 
  ]]></format>
         </remarks>
       </Docs>

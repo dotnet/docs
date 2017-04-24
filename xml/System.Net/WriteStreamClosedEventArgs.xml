@@ -71,10 +71,10 @@
         <value>Returns <see cref="T:System.Exception" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Net.WriteStreamClosedEventArgs.Error%2A> property is an <xref:System.Exception> object, the asynchronous operation did not complete correctly.  
-  
+If the <xref:System.Net.WriteStreamClosedEventArgs.Error%2A> property is an <xref:System.Exception> object, the asynchronous operation did not complete correctly.  
+ 
  ]]></format>
         </remarks>
       </Docs>

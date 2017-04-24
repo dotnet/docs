@@ -14,12 +14,12 @@
     <summary>An inline-level flow content element which causes content to render with a bold font weight.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.Bold> enforces a strong content model for child content. See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information about the <xref:System.Windows.Documents.Bold> content model.  
-  
- The object is the equivalent of a <xref:System.Windows.Documents.Span> with <xref:System.Windows.FontWeight> set to <xref:System.Windows.FontWeights.Bold%2A>.  
-  
+<xref:System.Windows.Documents.Bold> enforces a strong content model for child content. See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information about the <xref:System.Windows.Documents.Bold> content model.  
+ 
+The object is the equivalent of a <xref:System.Windows.Documents.Span> with <xref:System.Windows.FontWeight> set to <xref:System.Windows.FontWeights.Bold%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,13 +56,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Bold" /> class, taking a specified <see cref="T:System.Windows.Documents.Inline" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.Bold" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[SpanSnippets#_Bold_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_bold_const1)]
- [!code-vb[SpanSnippets#_Bold_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_bold_const1)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[SpanSnippets#_Bold_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_bold_const1)]
+[!code-vb[SpanSnippets#_Bold_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_bold_const1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,13 +86,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Bold" /> class, taking a specified <see cref="T:System.Windows.Documents.Inline" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.Bold" />, and a <see cref="T:System.Windows.Documents.TextPointer" /> specifying an insertion position for the new <see cref="T:System.Windows.Documents.Inline" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[SpanSnippets#_Bold_Const2](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_bold_const2)]
- [!code-vb[SpanSnippets#_Bold_Const2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_bold_const2)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[SpanSnippets#_Bold_Const2](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_bold_const2)]
+[!code-vb[SpanSnippets#_Bold_Const2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_bold_const2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,18 +116,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Bold" /> class, taking two <see cref="T:System.Windows.Documents.TextPointer" /> objects that indicate the beginning and end of a selection of content to be contained by the new <see cref="T:System.Windows.Documents.Bold" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is intended to initialize a new <xref:System.Windows.Documents.Bold> element such that it encloses a selection of pre-existing content.  
+This constructor is intended to initialize a new <xref:System.Windows.Documents.Bold> element such that it encloses a selection of pre-existing content.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[SpanSnippets#_Bold_Const3](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_bold_const3)]
- [!code-vb[SpanSnippets#_Bold_Const3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_bold_const3)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[SpanSnippets#_Bold_Const3](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_bold_const3)]
+[!code-vb[SpanSnippets#_Bold_Const3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_bold_const3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="start" /> or <paramref name="end" /> is **null**.</exception>

@@ -15,12 +15,12 @@
     <summary>Defines a contract that components can use to access information about a method across application domain and process boundaries.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.AddIn.Contract.Automation.IRemoteMethodInfoContract> represents a method of a remote object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
-  
- To access one or more methods of a remote object, use the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method to get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract> that represents the type of the remote object. Then, call the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethod%2A> or <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethods%2A> method.  
-  
+An <xref:System.AddIn.Contract.Automation.IRemoteMethodInfoContract> represents a method of a remote object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
+ 
+To access one or more methods of a remote object, use the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method to get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract> that represents the type of the remote object. Then, call the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethod%2A> or <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethods%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <returns>A <see cref="T:System.AddIn.Contract.Automation.RemoteMethodData" /> that provides information about the method that this <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> identifies.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information provided by the <xref:System.AddIn.Contract.Automation.RemoteMethodData> structure includes the types of the method's return value and parameters.  
-  
+The information provided by the <xref:System.AddIn.Contract.Automation.RemoteMethodData> structure includes the types of the method's return value and parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,10 +78,10 @@
         <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that specifies the return value of the invoked method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the invoked method does not have a return value (for example, the method is a constructor), <xref:System.AddIn.Contract.Automation.IRemoteMethodInfoContract.Invoke%2A> returns a default <xref:System.AddIn.Contract.RemoteArgument> in which the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property is set to the value <xref:System.AddIn.Contract.RemoteArgumentKind?displayProperty=fullName> and the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property is set to the value <xref:System.TypeCode?displayProperty=fullName>.  
-  
+If the invoked method does not have a return value (for example, the method is a constructor), <xref:System.AddIn.Contract.Automation.IRemoteMethodInfoContract.Invoke%2A> returns a default <xref:System.AddIn.Contract.RemoteArgument> in which the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property is set to the value <xref:System.AddIn.Contract.RemoteArgumentKind?displayProperty=fullName> and the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property is set to the value <xref:System.TypeCode?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,41 +18,41 @@
     <summary>Serializes and deserializes an object, or an entire graph of connected objects, in SOAP format.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Beginning with the .NET Framework 2.0, this class is obsolete. Use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> instead.  
-  
- The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> classes implement the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> interface to support remote procedure calls (RPCs), and the <xref:System.Runtime.Serialization.IFormatter> interface (inherited by the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter>) to support serialization of a graph of objects. The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> class also supports RPCs with <xref:System.Runtime.Serialization.Formatters.ISoapMessage> objects, without using the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> functionality.  
-  
- During RPCs, the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> interface allows the specification of two separate object graphs: the graph of objects to serialize, and an additional graph that contains an array of header objects that convey information about the remote function call (for example, transaction ID or a method signature). For proper serialization, the root object of the first graph must be an object that implements either the <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage> interface or the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> interface.  
-  
- During deserialization of an RPC, a <xref:System.Runtime.Remoting.Messaging.HeaderHandler> delegate is specified to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A> method of the formatter. The remoting infrastructure uses the <xref:System.Runtime.Remoting.Messaging.HeaderHandler> delegate to produce an object that supports the <xref:System.Runtime.Serialization.ISerializable> interface. This object contains the information stored in the headers, and becomes the root of the graph returned by the deserializer.  
-  
- The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> can also handle RPCs that are produced with objects that implement the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface. To create an RPC without using the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> functionality, place an object that supports the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface at the root of a graph being serialized. To deserialize an RPC created in this manner the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A> property must be set to another object that supports the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface, and contains the relevant remote call information.  
-  
+ 
+The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> classes implement the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> interface to support remote procedure calls (RPCs), and the <xref:System.Runtime.Serialization.IFormatter> interface (inherited by the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter>) to support serialization of a graph of objects. The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> class also supports RPCs with <xref:System.Runtime.Serialization.Formatters.ISoapMessage> objects, without using the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> functionality.  
+ 
+During RPCs, the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> interface allows the specification of two separate object graphs: the graph of objects to serialize, and an additional graph that contains an array of header objects that convey information about the remote function call (for example, transaction ID or a method signature). For proper serialization, the root object of the first graph must be an object that implements either the <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage> interface or the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> interface.  
+ 
+During deserialization of an RPC, a <xref:System.Runtime.Remoting.Messaging.HeaderHandler> delegate is specified to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A> method of the formatter. The remoting infrastructure uses the <xref:System.Runtime.Remoting.Messaging.HeaderHandler> delegate to produce an object that supports the <xref:System.Runtime.Serialization.ISerializable> interface. This object contains the information stored in the headers, and becomes the root of the graph returned by the deserializer.  
+ 
+The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> can also handle RPCs that are produced with objects that implement the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface. To create an RPC without using the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> functionality, place an object that supports the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface at the root of a graph being serialized. To deserialize an RPC created in this manner the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A> property must be set to another object that supports the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface, and contains the relevant remote call information.  
+ 
 ## TimeSpan Serialization  
- TimeSpan objects are serialized according to the ISO 8601: 1998 section 5.5.3.2.1 "Alternative" standard.  
-  
+TimeSpan objects are serialized according to the ISO 8601: 1998 section 5.5.3.2.1 "Alternative" standard.  
+ 
 ## Version Information  
- The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> does not support serialization compatibility between versions of the .NET Framework. Serialization between versions 1.1 and 2.0 types in the Framework often fails. The following actions can be taken to remedy this issue:  
-  
+The <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> does not support serialization compatibility between versions of the .NET Framework. Serialization between versions 1.1 and 2.0 types in the Framework often fails. The following actions can be taken to remedy this issue:  
+ 
 -   Convert to use the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, which provides compatibility between 1.1 and 2.0.  
-  
+ 
 -   Convert existing persisted data to the new format.  
-  
+ 
 -   Convert all producers and consumers of serialized data to version 2.0.  
-  
+ 
 -   Avoid using types that changed from 1.1 to 2.0.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapFormatter Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFormatter Example/CPP/soapformatter.cpp#1)]
- [!code-csharp[SoapFormatter Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFormatter Example/CS/soapformatter.cs#1)]
- [!code-vb[SoapFormatter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFormatter Example/VB/soapformatter.vb#1)]  
-  
+[!code-cpp[SoapFormatter Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFormatter Example/CPP/soapformatter.cpp#1)]
+[!code-csharp[SoapFormatter Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFormatter Example/CS/soapformatter.cs#1)]
+[!code-vb[SoapFormatter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFormatter Example/VB/soapformatter.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,22 +71,22 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" /> class with default property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>.  
-  
+The following table shows the initial property values for an instance of <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.SurrogateSelector%2A>|`null`|  
 |<xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Context%2A>|A new <xref:System.Runtime.Serialization.StreamingContext> initialized to specify that the serialized data can be transmitted to or received from any of the other contexts|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapFormatter Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFormatter Example/CPP/soapformatter.cpp#1)]
- [!code-csharp[SoapFormatter Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFormatter Example/CS/soapformatter.cs#1)]
- [!code-vb[SoapFormatter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFormatter Example/VB/soapformatter.vb#1)]  
-  
+[!code-cpp[SoapFormatter Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFormatter Example/CPP/soapformatter.cpp#1)]
+[!code-csharp[SoapFormatter Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFormatter Example/CS/soapformatter.cs#1)]
+[!code-vb[SoapFormatter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFormatter Example/VB/soapformatter.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,12 +110,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" /> class with the specified <see cref="T:System.Runtime.Serialization.ISurrogateSelector" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Objects are serialized to, or deserialized from, the specified <xref:System.IO.Stream>.  
-  
- The serialization or deserialization process uses the specified <xref:System.Runtime.Serialization.ISurrogateSelector> to search for surrogates that are registered for the object types you want to deserialize. Surrogates are helpers that serialize and deserialize objects of specific classes. The default <xref:System.Runtime.Serialization.ISurrogateSelector> cannot handle the serialization of objects that derive from the <xref:System.MarshalByRefObject> for remoting purposes. In a remoting situation the specified <xref:System.Runtime.Serialization.ISurrogateSelector> replaces the object derived from <xref:System.MarshalByRefObject> with a <xref:System.Runtime.Remoting.ObjRef> object that is serialized by the specified surrogate selector. Therefore, if you want to use remote objects, set the `selector` parameter to an instance of <xref:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector>. If you do not need surrogates, set the `selector` parameter to be `null`.  
-  
+Objects are serialized to, or deserialized from, the specified <xref:System.IO.Stream>.  
+ 
+The serialization or deserialization process uses the specified <xref:System.Runtime.Serialization.ISurrogateSelector> to search for surrogates that are registered for the object types you want to deserialize. Surrogates are helpers that serialize and deserialize objects of specific classes. The default <xref:System.Runtime.Serialization.ISurrogateSelector> cannot handle the serialization of objects that derive from the <xref:System.MarshalByRefObject> for remoting purposes. In a remoting situation the specified <xref:System.Runtime.Serialization.ISurrogateSelector> replaces the object derived from <xref:System.MarshalByRefObject> with a <xref:System.Runtime.Remoting.ObjRef> object that is serialized by the specified surrogate selector. Therefore, if you want to use remote objects, set the `selector` parameter to an instance of <xref:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector>. If you do not need surrogates, set the `selector` parameter to be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <value>The <see cref="T:System.Runtime.Serialization.StreamingContext" /> used with this <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.StreamingContext> provides an enumeration that describes the source and the destination for a given serialized stream, as well as a way for serialization to retain that context and an additional caller-defined context.  
-  
+The <xref:System.Runtime.Serialization.StreamingContext> provides an enumeration that describes the source and the destination for a given serialized stream, as well as a way for serialization to retain that context and an additional caller-defined context.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,20 +202,20 @@
         <returns>The top object of the deserialized graph (root).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
-  
+For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapFormatter Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFormatter Example/CPP/soapformatter.cpp#1)]
- [!code-csharp[SoapFormatter Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFormatter Example/CS/soapformatter.cs#1)]
- [!code-vb[SoapFormatter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFormatter Example/VB/soapformatter.vb#1)]  
-  
+[!code-cpp[SoapFormatter Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFormatter Example/CPP/soapformatter.cpp#1)]
+[!code-csharp[SoapFormatter Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFormatter Example/CS/soapformatter.cs#1)]
+[!code-vb[SoapFormatter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFormatter Example/VB/soapformatter.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -245,18 +245,18 @@
         <returns>The top object of the deserialized graph (root).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Headers are used only for specific remoting applications. The <xref:System.Runtime.Remoting.Messaging.HeaderHandler> parameter is one of two ways to return headers from a stream in SOAP Remote Procedure Call (RPC) format. The other way is to use the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A> property.  
-  
- For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
-  
+Headers are used only for specific remoting applications. The <xref:System.Runtime.Remoting.Messaging.HeaderHandler> parameter is one of two ways to return headers from a stream in SOAP Remote Procedure Call (RPC) format. The other way is to use the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A> property.  
+ 
+For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
+ 
 ## TimeSpan Serialization  
- TimeSpan objects are serialized according to the ISO 8601: 1998 section 5.5.3.2.1 "Alternative" standard.  
-  
+TimeSpan objects are serialized according to the ISO 8601: 1998 section 5.5.3.2.1 "Alternative" standard.  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -282,10 +282,10 @@
         <value>The <see cref="T:System.Runtime.Serialization.Formatters.TypeFilterLevel" /> that represents the current automatic deserialization level.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Supported values are <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel> (the default). For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
-  
+Supported values are <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel> (the default). For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,17 +312,17 @@
         <summary>Serializes an object or graph of objects with the specified root to the given <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- TimeSpan objects are serialized according to the ISO 8601: 1998 section 5.5.3.2.1 "Alternative" standard.  
+TimeSpan objects are serialized according to the ISO 8601: 1998 section 5.5.3.2.1 "Alternative" standard.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapFormatter Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFormatter Example/CPP/soapformatter.cpp#1)]
- [!code-csharp[SoapFormatter Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFormatter Example/CS/soapformatter.cs#1)]
- [!code-vb[SoapFormatter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFormatter Example/VB/soapformatter.vb#1)]  
-  
+[!code-cpp[SoapFormatter Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFormatter Example/CPP/soapformatter.cpp#1)]
+[!code-csharp[SoapFormatter Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFormatter Example/CS/soapformatter.cs#1)]
+[!code-vb[SoapFormatter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFormatter Example/VB/soapformatter.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -353,12 +353,12 @@
         <summary>Serializes an object or graph of objects with the specified root to the given <see cref="T:System.IO.Stream" /> in the SOAP Remote Procedure Call (RPC) format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Headers are used only for specific remoting applications.  
-  
- TimeSpan objects are serialized according to the ISO 8601: 1998 section 5.5.3.2.1 "Alternative" standard.  
-  
+Headers are used only for specific remoting applications.  
+ 
+TimeSpan objects are serialized according to the ISO 8601: 1998 section 5.5.3.2.1 "Alternative" standard.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -382,10 +382,10 @@
         <value>The <see cref="T:System.Runtime.Serialization.SurrogateSelector" /> used with this <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used by <xref:System.Runtime.Remoting> to generate <xref:System.Runtime.Remoting.ObjRef> instances for <xref:System.MarshalByRefObject> objects.  
-  
+Used by <xref:System.Runtime.Remoting> to generate <xref:System.Runtime.Remoting.ObjRef> instances for <xref:System.MarshalByRefObject> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -407,10 +407,10 @@
         <value>The <see cref="T:System.Runtime.Serialization.Formatters.ISoapMessage" /> into which the SOAP top object is deserialized.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used for SOAP remote procedure call (RPC) format and specifies that the SOAP top record is a method called remotely, not a common language runtime object type.  
-  
+This property is used for SOAP remote procedure call (RPC) format and specifies that the SOAP top record is a method called remotely, not a common language runtime object type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -442,12 +442,12 @@
         <summary>Deserializes a stream into an object graph.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

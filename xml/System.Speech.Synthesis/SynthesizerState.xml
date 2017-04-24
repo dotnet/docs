@@ -13,12 +13,12 @@
     <summary>Enumerates values for the state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> property uses <xref:System.Speech.Synthesis.SynthesizerState> to indicate the current state of the <xref:System.Speech.Synthesis.SpeechSynthesizer>. See <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> for an example.  
-  
- The <xref:System.Speech.Synthesis.StateChangedEventArgs.PreviousState%2A> and <xref:System.Speech.Synthesis.StateChangedEventArgs.State%2A> properties use <xref:System.Speech.Synthesis.SynthesizerState> to indicate state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> when the <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged> event is raised.  
-  
+The <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> property uses <xref:System.Speech.Synthesis.SynthesizerState> to indicate the current state of the <xref:System.Speech.Synthesis.SpeechSynthesizer>. See <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> for an example.  
+ 
+The <xref:System.Speech.Synthesis.StateChangedEventArgs.PreviousState%2A> and <xref:System.Speech.Synthesis.StateChangedEventArgs.State%2A> properties use <xref:System.Speech.Synthesis.SynthesizerState> to indicate state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> when the <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged> event is raised.  
+ 
  ]]></format>
     </remarks>
   </Docs>

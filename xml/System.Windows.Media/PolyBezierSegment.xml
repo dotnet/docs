@@ -14,24 +14,24 @@
     <summary>Represents one or more cubic Bezier curves.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a <xref:System.Windows.Media.PathFigure> object to store <xref:System.Windows.Media.PolyBezierSegment> objects and other segments.  
+Use a <xref:System.Windows.Media.PathFigure> object to store <xref:System.Windows.Media.PolyBezierSegment> objects and other segments.  
+ 
+A cubic Bezier curve is defined by four points: a start point, an end point and two control points. A <xref:System.Windows.Media.PolyBezierSegment> specifies one or more cubic Bezier curves by setting the <xref:System.Windows.Media.PolyBezierSegment.Points%2A> property to a collection of points. For every three points in the collection, the first and second points specify the two control points of the curve and the third point specifies the end point. Note that no start point for the curve is specified because start point is the same as the end point of the last segment.  
+ 
+The two control points of a cubic Bezier curve behave like magnets, attracting portions of what would otherwise be a straight line toward themselves and producing a curve. The first control point affects the beginning portion of the curve; the second control point affects the ending portion of the curve. Note that the curve doesn't necessarily pass through either of the control points; each control point moves its portion of the line toward itself, but not through itself.  
+ 
   
- A cubic Bezier curve is defined by four points: a start point, an end point and two control points. A <xref:System.Windows.Media.PolyBezierSegment> specifies one or more cubic Bezier curves by setting the <xref:System.Windows.Media.PolyBezierSegment.Points%2A> property to a collection of points. For every three points in the collection, the first and second points specify the two control points of the curve and the third point specifies the end point. Note that no start point for the curve is specified because start point is the same as the end point of the last segment.  
-  
- The two control points of a cubic Bezier curve behave like magnets, attracting portions of what would otherwise be a straight line toward themselves and producing a curve. The first control point affects the beginning portion of the curve; the second control point affects the ending portion of the curve. Note that the curve doesn't necessarily pass through either of the control points; each control point moves its portion of the line toward itself, but not through itself.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.Windows.Media.PolyBezierSegment> to draw two cubic Bezier curves.  
-  
- [!code-xml[GeometriesMiscSnippets_snip#PolyBezierSegmentExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/PolyBezierSegmentExample.xaml#polybeziersegmentexamplewholepage)]  
-  
- [!code-csharp[GeometriesMiscSnippets_procedural_snip#PolyBezierSegmentCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/PolyBezierSegmentExample.cs#polybeziersegmentcodeexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_procedural_snip#PolyBezierSegmentCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/polybeziersegmentexample.vb#polybeziersegmentcodeexamplewholepage)]  
-  
+The following example shows how to use a <xref:System.Windows.Media.PolyBezierSegment> to draw two cubic Bezier curves.  
+ 
+[!code-xml[GeometriesMiscSnippets_snip#PolyBezierSegmentExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/PolyBezierSegmentExample.xaml#polybeziersegmentexamplewholepage)]  
+ 
+[!code-csharp[GeometriesMiscSnippets_procedural_snip#PolyBezierSegmentCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/PolyBezierSegmentExample.cs#polybeziersegmentcodeexamplewholepage)]
+[!code-vb[GeometriesMiscSnippets_procedural_snip#PolyBezierSegmentCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/polybeziersegmentexample.vb#polybeziersegmentcodeexamplewholepage)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,12 +89,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,12 +117,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,27 +163,27 @@
         <value>Collection that define this <see cref="T:System.Windows.Media.PolyBezierSegment" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Points"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.PolyBezierSegment>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Media.PolyBezierSegment.Points%2A> property of a <xref:System.Windows.Media.PolyBezierSegment> that defines two cubic Bezier curves.  
-  
- [!code-xml[GeometriesMiscSnippets_snip#PolyBezierSegmentExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/PolyBezierSegmentExample.xaml#polybeziersegmentexamplewholepage)]  
-  
- [!code-csharp[GeometriesMiscSnippets_procedural_snip#PolyBezierSegmentCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/PolyBezierSegmentExample.cs#polybeziersegmentcodeexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_procedural_snip#PolyBezierSegmentCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/polybeziersegmentexample.vb#polybeziersegmentcodeexamplewholepage)]  
-  
+The following example shows how to use the <xref:System.Windows.Media.PolyBezierSegment.Points%2A> property of a <xref:System.Windows.Media.PolyBezierSegment> that defines two cubic Bezier curves.  
+ 
+[!code-xml[GeometriesMiscSnippets_snip#PolyBezierSegmentExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/PolyBezierSegmentExample.xaml#polybeziersegmentexamplewholepage)]  
+ 
+[!code-csharp[GeometriesMiscSnippets_procedural_snip#PolyBezierSegmentCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/PolyBezierSegmentExample.cs#polybeziersegmentcodeexamplewholepage)]
+[!code-vb[GeometriesMiscSnippets_procedural_snip#PolyBezierSegmentCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/polybeziersegmentexample.vb#polybeziersegmentcodeexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,12 +13,12 @@
     <summary>Indicates the type of a variant object, returned by the <see langword="VarType" /> function.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
     </remarks>
   </Docs>

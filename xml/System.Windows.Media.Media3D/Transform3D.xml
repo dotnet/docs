@@ -19,10 +19,10 @@
     <summary>Provides a parent class for all three-dimensional transformations, including translation, rotation, and scale transformations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.Media3D.MatrixTransform3D> class to create transformations not available from the <xref:System.Windows.Media.Media3D.RotateTransform3D>, <xref:System.Windows.Media.Media3D.TranslateTransform3D>, and <xref:System.Windows.Media.Media3D.ScaleTransform3D> classes.  
-  
+Use the <xref:System.Windows.Media.Media3D.MatrixTransform3D> class to create transformations not available from the <xref:System.Windows.Media.Media3D.RotateTransform3D>, <xref:System.Windows.Media.Media3D.TranslateTransform3D>, and <xref:System.Windows.Media.Media3D.ScaleTransform3D> classes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,14 +45,14 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
+When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,12 +75,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <value>Identity transformation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identity transformation has the effect of multiplying the object by the identity matrix.  
-  
+The identity transformation has the effect of multiplying the object by the identity matrix.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <value>An inverse of this instance, if possible; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Transform3D.Inverse%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Media.Media3D.Transform3D.Inverse%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,10 +153,10 @@
           <see langword="true" /> if the matrix is affine; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An affine transformation preserves collinearity.  
-  
+An affine transformation preserves collinearity.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,10 +311,10 @@
         <returns>The smallest axis-aligned 3-D bounding box possible that contains the transformed <paramref name="rect" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Transform3D.TransformBounds%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Media.Media3D.Transform3D.TransformBounds%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,12 +343,12 @@
           <see langword="true" /> if <paramref name="inPoint" /> was transformed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the <xref:System.Windows.Media.Media3D.GeneralTransform3D.Transform%2A> method, this method does not throw an exception if the transformation is unsuccessful.  
-  
- <xref:System.Windows.Media.Media3D.Transform3D.TryTransform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+Unlike the <xref:System.Windows.Media.Media3D.GeneralTransform3D.Transform%2A> method, this method does not throw an exception if the transformation is unsuccessful.  
+ 
+<xref:System.Windows.Media.Media3D.Transform3D.TryTransform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,11 +370,11 @@
         <value>Matrix3D that represents the value of the current transformation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn4)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn4)]  
-  
+[!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn4)]
+[!code-vb[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

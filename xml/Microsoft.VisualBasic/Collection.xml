@@ -32,51 +32,51 @@
     <summary>A Visual Basic <see langword="Collection" /> is an ordered set of items that can be referred to as a unit.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Whenever possible, you should use the generic collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace or the <xref:System.Collections.Concurrent> namespace instead of a Visual Basic `Collection`. For more information, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
-  
- The Visual Basic `Collection` object provides a convenient way to refer to a related group of items as a single object. The items, or *elements*, in a collection need only be related by the fact that they exist in the collection. Elements of a collection do not have to share the same data type.  
-  
- You can create a collection the same way you create other objects, as the following example illustrates.  
-  
+ 
+The Visual Basic `Collection` object provides a convenient way to refer to a related group of items as a single object. The items, or *elements*, in a collection need only be related by the fact that they exist in the collection. Elements of a collection do not have to share the same data type.  
+ 
+You can create a collection the same way you create other objects, as the following example illustrates.  
+ 
 ```  
 Dim coll As New Microsoft.VisualBasic.Collection()  
 ```  
-  
- Once you have created a collection, you can do any of the following:  
-  
+ 
+Once you have created a collection, you can do any of the following:  
+ 
 -   Add an element with the <xref:Microsoft.VisualBasic.Collection.Add%2A> method.  
-  
+ 
 -   Remove an element with the <xref:Microsoft.VisualBasic.Collection.Remove%2A> method.  
-  
+ 
 -   Remove all elements with the <xref:Microsoft.VisualBasic.Collection.Clear%2A> method.  
-  
+ 
 -   Find out how many elements the collection contains with the <xref:Microsoft.VisualBasic.Collection.Count%2A> property.  
-  
+ 
 -   Check whether a specific element is present with the <xref:Microsoft.VisualBasic.Collection.Contains%2A> method.  
-  
+ 
 -   Return a specific element from the collection with the <xref:Microsoft.VisualBasic.Collection.Item%2A> property.  
-  
+ 
 -   Iterate through the entire collection with the [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md).  
+ 
+   > [!NOTE]
+   >  Although the Visual Basic `Collection` object has functionality identical to the `Collection` object in Visual Basic 6.0, the two cannot interoperate in a COM environment.  
+ 
+   > [!CAUTION]
+   >  Iterating through a Visual Basic `Collection` is not a thread-safe procedure. Even if the collection is synchronized, other threads can still modify the collection, causing the enumerator to throw an exception. To guarantee thread safety during enumeration, either lock the collection or catch the exceptions resulting from changes made by other threads. For more information on locking a programming element, see [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md).  
+ 
   
-    > [!NOTE]
-    >  Although the Visual Basic `Collection` object has functionality identical to the `Collection` object in Visual Basic 6.0, the two cannot interoperate in a COM environment.  
-  
-    > [!CAUTION]
-    >  Iterating through a Visual Basic `Collection` is not a thread-safe procedure. Even if the collection is synchronized, other threads can still modify the collection, causing the enumerator to throw an exception. To guarantee thread safety during enumeration, either lock the collection or catch the exceptions resulting from changes made by other threads. For more information on locking a programming element, see [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates the `Collection` object `names` and a dialog box with which a user can add objects (names) to the collection. It then displays the names in the collection, and finally empties the collection without disposing of the `Collection` object itself.  
-  
- To see how this works, choose the **Add Class** command from the **Project** menu and declare a public variable called `instanceName` at the module level of `nameClass` (type `Public instanceName`) to hold the names of each instance. Leave the default name as `nameClass`. Copy and paste the following code into the **General** section of another module, and then start it with the statement `classNamer` in another procedure. (This example works only with host applications that support classes.)  
-  
- [!code-vb[VbVbalrCollectionObject#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#1)]  
-  
+The following example creates the `Collection` object `names` and a dialog box with which a user can add objects (names) to the collection. It then displays the names in the collection, and finally empties the collection without disposing of the `Collection` object itself.  
+ 
+To see how this works, choose the **Add Class** command from the **Project** menu and declare a public variable called `instanceName` at the module level of `nameClass` (type `Public instanceName`) to hold the names of each instance. Leave the default name as `nameClass`. Copy and paste the following code into the **General** section of another module, and then start it with the statement `classNamer` in another procedure. (This example works only with host applications that support classes.)  
+ 
+[!code-vb[VbVbalrCollectionObject#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,23 +95,23 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <summary>Creates and returns a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collection returned by this constructor is empty and does not have any initial capacity allocated.  
+The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collection returned by this constructor is empty and does not have any initial capacity allocated.  
+ 
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collections are not compatible with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] collections available in the <xref:System.Collections?displayProperty=fullName>, <xref:System.Collections.Generic?displayProperty=fullName>, and <xref:System.Collections.Specialized?displayProperty=fullName> namespaces.  
+ 
   
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collections are not compatible with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] collections available in the <xref:System.Collections?displayProperty=fullName>, <xref:System.Collections.Generic?displayProperty=fullName>, and <xref:System.Collections.Specialized?displayProperty=fullName> namespaces.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collection and assigns it to the variable `coll`:  
-  
+The following example creates a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collection and assigns it to the variable `coll`:  
+ 
 ```  
 Dim coll As New Microsoft.VisualBasic.Collection()  
 ```  
-  
- This `Collection` object is one-based, which means that the index values of the elements range from 1 through the value of the `Count` property. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collections hold elements of type <xref:System.Object>.  
-  
+ 
+This `Collection` object is one-based, which means that the index values of the elements range from 1 through the value of the `Count` property. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collections hold elements of type <xref:System.Object>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,21 +142,21 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <summary>Adds an element to a <see langword="Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Before` or `After` argument must refer to an existing element of the collection; otherwise, an error occurs.  
+The `Before` or `After` argument must refer to an existing element of the collection; otherwise, an error occurs.  
+ 
+If both the `Before` and `After` arguments are omitted, the new object is added to the end of the collection.  
+ 
+An error also occurs if a specified `Key` value matches the key for an existing element of the collection.  
+ 
   
- If both the `Before` and `After` arguments are omitted, the new object is added to the end of the collection.  
-  
- An error also occurs if a specified `Key` value matches the key for an existing element of the collection.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the `Add` method to add `child` objects — instances of a class called `child` containing a `Public` property `name` — to a collection called `family`. To see how this works, create a <xref:System.Windows.Forms.Form> with two <xref:System.Windows.Forms.Button> controls and set their <xref:System.Windows.Forms.Control.Text%2A> properties to `Add` and `List`. Add the `child` class definition and the `family` declaration to the form code. Modify the `_Click` event handlers for the **Add** and **List** buttons as shown. The **Add** button allows you to add children. The **List** button displays the names of all the children.  
-  
- [!code-vb[VbVbalrCollectionObject#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Form1.vb#2)]  
-  
+The following example uses the `Add` method to add `child` objects — instances of a class called `child` containing a `Public` property `name` — to a collection called `family`. To see how this works, create a <xref:System.Windows.Forms.Form> with two <xref:System.Windows.Forms.Button> controls and set their <xref:System.Windows.Forms.Control.Text%2A> properties to `Add` and `List`. Add the `child` class definition and the `family` declaration to the form code. Modify the `_Click` event handlers for the **Add** and **List** buttons as shown. The **Add** button allows you to add children. The **List** button displays the names of all the children.  
+ 
+[!code-vb[VbVbalrCollectionObject#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,15 +178,15 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <summary>Deletes all elements of a Visual Basic <see langword="Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Clear` method empties the collection and resets its <xref:Microsoft.VisualBasic.Collection.Count%2A> property to 0.  
+The `Clear` method empties the collection and resets its <xref:Microsoft.VisualBasic.Collection.Count%2A> property to 0.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-vb[VbVbalrCollectionObject#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#3)]  
-  
+[!code-vb[VbVbalrCollectionObject#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,19 +212,19 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <returns>Returns a <see langword="Boolean" /> value indicating whether a Visual Basic <see langword="Collection" /> object contains an element with a specific key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Contains` returns `True` if the collection contains an element with a key exactly matching `Key`. Otherwise, `Contains` returns `False`. Case is ignored when matching key values.  
+`Contains` returns `True` if the collection contains an element with a key exactly matching `Key`. Otherwise, `Contains` returns `False`. Case is ignored when matching key values.  
+ 
+A Visual Basic `Collection` can hold some elements that have keys and other elements without keys. This depends on whether the call to the <xref:Microsoft.VisualBasic.Collection.Add%2A> method supplies an argument to the optional `Key` parameter.  
+ 
   
- A Visual Basic `Collection` can hold some elements that have keys and other elements without keys. This depends on whether the call to the <xref:Microsoft.VisualBasic.Collection.Add%2A> method supplies an argument to the optional `Key` parameter.  
-  
-   
-  
+ 
 ## Examples  
- [!code-vb[VbVbalrCollectionObject#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#4)]  
-  
- If you intend to search the collection for elements using their keys, remember to supply the `Key` argument every time you call the `Add` method.  
-  
+[!code-vb[VbVbalrCollectionObject#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#4)]  
+ 
+If you intend to search the collection for elements using their keys, remember to supply the `Key` argument every time you call the `Add` method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,20 +246,20 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <value>Returns an <see langword="Integer" /> containing the number of elements in a collection. Read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `Count` property to determine the number of elements in a `Collection` object.  
+Use the `Count` property to determine the number of elements in a `Collection` object.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example illustrates the use of the `Count` property to display the number of elements in a <xref:Microsoft.VisualBasic.Collection> object in the variable `birthdays`.  
-  
- [!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
+This example illustrates the use of the `Count` property to display the number of elements in a <xref:Microsoft.VisualBasic.Collection> object in the variable `birthdays`.  
+ 
+[!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
 [!code-vb[VbVbalrCollectionObject#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#6)]  
-  
- The `Collection` object is one-based, which means that the index values of the elements range from 1 through the value of the `Count` property.  
-  
+ 
+The `Collection` object is one-based, which means that the index values of the elements range from 1 through the value of the `Count` property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,27 +282,27 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <returns>Returns a reference to an enumerator object, which is used to iterate over a <see cref="T:Microsoft.VisualBasic.Collection" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) calls `GetEnumerator` to obtain an enumerator object to support iteration over a collection's elements. Normally, you use a `For Each`...`Next` loop to traverse a collection or array, and you do not need to call `GetEnumerator` explicitly.  
-  
- If you need closer control over the iteration than the `For Each`...`Next` statements provide, you can use the `GetEnumerator` method to perform a customized traversal. The following are some cases in which you might need to do this.  
-  
+The [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) calls `GetEnumerator` to obtain an enumerator object to support iteration over a collection's elements. Normally, you use a `For Each`...`Next` loop to traverse a collection or array, and you do not need to call `GetEnumerator` explicitly.  
+ 
+If you need closer control over the iteration than the `For Each`...`Next` statements provide, you can use the `GetEnumerator` method to perform a customized traversal. The following are some cases in which you might need to do this.  
+ 
 -   You might want to return to the beginning of the collection and start the iteration again before it is finished.  
-  
+ 
 -   You might want to skip over one or more elements for a variety of reasons.  
-  
+ 
 -   You might need to change the elements of the collection in the middle of a traversal. In this case you must obtain a new enumerator object because the previous one is invalidated.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use `GetEnumerator` to retrieve all the elements of a `Collection` object.  
-  
- [!code-vb[VbVbalrCollectionObject#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#7)]  
-  
- `GetEnumerator` constructs and returns an enumerator object, which implements the <xref:System.Collections.IEnumerator> interface of the <xref:System.Collections> namespace. The enumerator object exposes the <xref:System.Collections.IEnumerator.Current%2A> property and the <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> methods. For more information, see [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md).  
-  
+The following example shows how to use `GetEnumerator` to retrieve all the elements of a `Collection` object.  
+ 
+[!code-vb[VbVbalrCollectionObject#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#7)]  
+ 
+`GetEnumerator` constructs and returns an enumerator object, which implements the <xref:System.Collections.IEnumerator> interface of the <xref:System.Collections> namespace. The enumerator object exposes the <xref:System.Collections.IEnumerator.Current%2A> property and the <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> methods. For more information, see [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,27 +328,27 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <value>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `Index` is of type `Object`, the `Item` property attempts to treat it as a `String`, `Char`, `Char` array, or integer value. If `Item` cannot convert `Index` to `String` or `Integer`, it throws an <xref:System.ArgumentException> exception.  
-  
- The `Item` property is the default property for a collection. Therefore, the following lines of code are equivalent.  
-  
+If `Index` is of type `Object`, the `Item` property attempts to treat it as a `String`, `Char`, `Char` array, or integer value. If `Item` cannot convert `Index` to `String` or `Integer`, it throws an <xref:System.ArgumentException> exception.  
+ 
+The `Item` property is the default property for a collection. Therefore, the following lines of code are equivalent.  
+ 
 ```  
 MsgBox(CStr(customers.Item(1)))  
 MsgBox(CStr(customers(1)))  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Item` property to retrieve a reference to an object in a collection. It creates `birthdays` as a `Collection` object and then retrieves the object representing Bill's birthday, using the key `"Bill"` as the `Index` argument.  
-  
- [!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
+The following example uses the `Item` property to retrieve a reference to an object in a collection. It creates `birthdays` as a `Collection` object and then retrieves the object representing Bill's birthday, using the key `"Bill"` as the `Index` argument.  
+ 
+[!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
 [!code-vb[VbVbalrCollectionObject#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#8)]  
-  
- Note that the first call explicitly specifies the `Item` property, but the second does not. Both calls work because the `Item` property is the default property for a `Collection` object.  
-  
+ 
+Note that the first call explicitly specifies the `Item` property, but the second does not. Both calls work because the `Item` property is the default property for a `Collection` object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,27 +379,27 @@ MsgBox(CStr(customers(1)))
         <value>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `Index` is of type `Object`, the `Item` property attempts to treat it as a `String`, `Char`, `Char` array, or integer value. If `Item` cannot convert `Index` to `String` or `Integer`, it throws an <xref:System.ArgumentException> exception.  
-  
- The `Item` property is the default property for a collection. Therefore, the following lines of code are equivalent.  
-  
+If `Index` is of type `Object`, the `Item` property attempts to treat it as a `String`, `Char`, `Char` array, or integer value. If `Item` cannot convert `Index` to `String` or `Integer`, it throws an <xref:System.ArgumentException> exception.  
+ 
+The `Item` property is the default property for a collection. Therefore, the following lines of code are equivalent.  
+ 
 ```  
 MsgBox(CStr(customers.Item(1)))  
 MsgBox(CStr(customers(1)))  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Item` property to retrieve a reference to an object in a collection. It creates `birthdays` as a `Collection` object and then retrieves the object representing Bill's birthday, using the key `"Bill"` as the `Index` argument.  
-  
- [!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
+The following example uses the `Item` property to retrieve a reference to an object in a collection. It creates `birthdays` as a `Collection` object and then retrieves the object representing Bill's birthday, using the key `"Bill"` as the `Index` argument.  
+ 
+[!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
 [!code-vb[VbVbalrCollectionObject#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#8)]  
-  
- Note that the first call explicitly specifies the `Item` property, but the second does not. Both calls work because the `Item` property is the default property for a `Collection` object.  
-  
+ 
+Note that the first call explicitly specifies the `Item` property, but the second does not. Both calls work because the `Item` property is the default property for a `Collection` object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,27 +425,27 @@ MsgBox(CStr(customers(1)))
         <value>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `Index` is of type `Object`, the `Item` property attempts to treat it as a `String`, `Char`, `Char` array, or integer value. If `Item` cannot convert `Index` to `String` or `Integer`, it throws an <xref:System.ArgumentException> exception.  
-  
- The `Item` property is the default property for a collection. Therefore, the following lines of code are equivalent.  
-  
+If `Index` is of type `Object`, the `Item` property attempts to treat it as a `String`, `Char`, `Char` array, or integer value. If `Item` cannot convert `Index` to `String` or `Integer`, it throws an <xref:System.ArgumentException> exception.  
+ 
+The `Item` property is the default property for a collection. Therefore, the following lines of code are equivalent.  
+ 
 ```  
 MsgBox(CStr(customers.Item(1)))  
 MsgBox(CStr(customers(1)))  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Item` property to retrieve a reference to an object in a collection. It creates `birthdays` as a `Collection` object and then retrieves the object representing Bill's birthday, using the key `"Bill"` as the `Index` argument.  
-  
- [!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
+The following example uses the `Item` property to retrieve a reference to an object in a collection. It creates `birthdays` as a `Collection` object and then retrieves the object representing Bill's birthday, using the key `"Bill"` as the `Index` argument.  
+ 
+[!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
 [!code-vb[VbVbalrCollectionObject#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#8)]  
-  
- Note that the first call explicitly specifies the `Item` property, but the second does not. Both calls work because the `Item` property is the default property for a `Collection` object.  
-  
+ 
+Note that the first call explicitly specifies the `Item` property, but the second does not. Both calls work because the `Item` property is the default property for a `Collection` object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -470,26 +470,26 @@ MsgBox(CStr(customers(1)))
         <summary>Removes an element from a <see langword="Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When `Remove` deletes an element from a collection, it decrements the collection's <xref:Microsoft.VisualBasic.Collection.Count%2A> property by one. It also decrements the `Index` value of every element that formerly followed the deleted element in the collection.  
+When `Remove` deletes an element from a collection, it decrements the collection's <xref:Microsoft.VisualBasic.Collection.Count%2A> property by one. It also decrements the `Index` value of every element that formerly followed the deleted element in the collection.  
+ 
+If an element was added to the collection without a `Key`, you must use its `Index` to remove it.  
+ 
   
- If an element was added to the collection without a `Key`, you must use its `Index` to remove it.  
-  
-   
-  
+ 
 ## Examples  
- This example illustrates the use of the `Remove` method to remove objects from a <xref:Microsoft.VisualBasic.Collection> object in the variable `birthdays`.  
-  
- [!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
+This example illustrates the use of the `Remove` method to remove objects from a <xref:Microsoft.VisualBasic.Collection> object in the variable `birthdays`.  
+ 
+[!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
 [!code-vb[VbVbalrCollectionObject#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#9)]  
-  
- Following the four calls to the `Add` method, the `Count` property contains 4, element `"Bill"` has index value 1, and element `"Pete"` has index value 4.  
-  
- Following the first call to `Remove`, `Count` is 3, element `"Bill"` is deleted, and element `"Pete"` has index value 3.  
-  
- Following the second call to `Remove`, `Count` is 2, element `"Mike"` is deleted, and element `"Pete"` has index value 2.  
-  
+ 
+Following the four calls to the `Add` method, the `Count` property contains 4, element `"Bill"` has index value 1, and element `"Pete"` has index value 4.  
+ 
+Following the first call to `Remove`, `Count` is 3, element `"Bill"` is deleted, and element `"Pete"` has index value 3.  
+ 
+Following the second call to `Remove`, `Count` is 2, element `"Mike"` is deleted, and element `"Pete"` has index value 2.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -514,26 +514,26 @@ MsgBox(CStr(customers(1)))
         <summary>Removes an element from a <see langword="Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When `Remove` deletes an element from a collection, it decrements the collection's <xref:Microsoft.VisualBasic.Collection.Count%2A> property by one. It also decrements the `Index` value of every element that formerly followed the deleted element in the collection.  
+When `Remove` deletes an element from a collection, it decrements the collection's <xref:Microsoft.VisualBasic.Collection.Count%2A> property by one. It also decrements the `Index` value of every element that formerly followed the deleted element in the collection.  
+ 
+If an element was added to the collection without a `Key`, you must use its `Index` to remove it.  
+ 
   
- If an element was added to the collection without a `Key`, you must use its `Index` to remove it.  
-  
-   
-  
+ 
 ## Examples  
- This example illustrates the use of the `Remove` method to remove objects from a <xref:Microsoft.VisualBasic.Collection> object in the variable `birthdays`.  
-  
- [!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
+This example illustrates the use of the `Remove` method to remove objects from a <xref:Microsoft.VisualBasic.Collection> object in the variable `birthdays`.  
+ 
+[!code-vb[VbVbalrCollectionObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#5)]  
 [!code-vb[VbVbalrCollectionObject#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#9)]  
-  
- Following the four calls to the `Add` method, the `Count` property contains 4, element `"Bill"` has index value 1, and element `"Pete"` has index value 4.  
-  
- Following the first call to `Remove`, `Count` is 3, element `"Bill"` is deleted, and element `"Pete"` has index value 3.  
-  
- Following the second call to `Remove`, `Count` is 2, element `"Mike"` is deleted, and element `"Pete"` has index value 2.  
-  
+ 
+Following the four calls to the `Add` method, the `Count` property contains 4, element `"Bill"` has index value 1, and element `"Pete"` has index value 4.  
+ 
+Following the first call to `Remove`, `Count` is 3, element `"Bill"` is deleted, and element `"Pete"` has index value 3.  
+ 
+Following the second call to `Remove`, `Count` is 2, element `"Mike"` is deleted, and element `"Pete"` has index value 2.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -560,12 +560,12 @@ MsgBox(CStr(customers(1)))
         <summary>Copies the elements of the <see cref="T:Microsoft.VisualBasic.Collection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index. Implements the <see cref="T:System.Collections.ICollection" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:Microsoft.VisualBasic.Collection> object.  
-  
- This method is an O(`n`) operation, where `n` is obtained from the <xref:Microsoft.VisualBasic.Collection.System%23Collections%23ICollection%23Count%2A>.  
-  
+The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:Microsoft.VisualBasic.Collection> object.  
+ 
+This method is an O(`n`) operation, where `n` is obtained from the <xref:Microsoft.VisualBasic.Collection.System%23Collections%23ICollection%23Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -653,24 +653,24 @@ MsgBox(CStr(customers(1)))
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [Visual Basic, C#]  
-  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Collections.IEnumerator.Reset%2A> method also brings the enumerator back to this position. At this position, the <xref:System.Collections.IEnumerator.Current%2A> property is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
+[Visual Basic, C#]  
+ 
+The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Collections.IEnumerator.Reset%2A> method also brings the enumerator back to this position. At this position, the <xref:System.Collections.IEnumerator.Current%2A> property is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -696,10 +696,10 @@ MsgBox(CStr(customers(1)))
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can also use the <xref:Microsoft.VisualBasic.Collection.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:Microsoft.VisualBasic.Collection> object.  
-  
+You can also use the <xref:Microsoft.VisualBasic.Collection.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:Microsoft.VisualBasic.Collection> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:Microsoft.VisualBasic.Collection" /> object is read-only.  
@@ -726,10 +726,10 @@ MsgBox(CStr(customers(1)))
         <summary>Removes all items from the <see cref="T:Microsoft.VisualBasic.Collection" /> object. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method removes all items from the <xref:Microsoft.VisualBasic.Collection> object.  
-  
+This method removes all items from the <xref:Microsoft.VisualBasic.Collection> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.IList" /> is read-only.</exception>
@@ -756,10 +756,10 @@ MsgBox(CStr(customers(1)))
         <returns>Returns <see langword="True" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:Microsoft.VisualBasic.Collection" /> object; otherwise, <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines whether the <xref:Microsoft.VisualBasic.Collection> object contains a specific value.  
-  
+This method determines whether the <xref:Microsoft.VisualBasic.Collection> object contains a specific value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -843,10 +843,10 @@ MsgBox(CStr(customers(1)))
         <returns>The index of <paramref name="value" /> if found in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines the index of a specific item in the <xref:Microsoft.VisualBasic.Collection> object.  
-  
+This method determines the index of a specific item in the <xref:Microsoft.VisualBasic.Collection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -873,12 +873,12 @@ MsgBox(CStr(customers(1)))
         <summary>Inserts an item to the <see cref="T:Microsoft.VisualBasic.Collection" /> object at the specified index. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `index` equals the number of items in the <xref:Microsoft.VisualBasic.Collection> object, then `value` is appended to the end.  
-  
- In collections of contiguous elements, such as lists, the elements that follow the insertion point move down to accommodate the new element. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
-  
+If `index` equals the number of items in the <xref:Microsoft.VisualBasic.Collection> object, then `value` is appended to the end.  
+ 
+In collections of contiguous elements, such as lists, the elements that follow the insertion point move down to accommodate the new element. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -912,10 +912,10 @@ MsgBox(CStr(customers(1)))
         <summary>Removes the first occurrence of a specific object from the <see cref="T:Microsoft.VisualBasic.Collection" /> object. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table. If `value` is not found in the <xref:Microsoft.VisualBasic.Collection> object, the <xref:Microsoft.VisualBasic.Collection> object remains unchanged and no exception is thrown.  
-  
+In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table. If `value` is not found in the <xref:Microsoft.VisualBasic.Collection> object, the <xref:Microsoft.VisualBasic.Collection> object remains unchanged and no exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:Microsoft.VisualBasic.Collection" /> object is read-only.  
@@ -945,10 +945,10 @@ MsgBox(CStr(customers(1)))
         <summary>Removes the <see cref="T:Microsoft.VisualBasic.Collection" /> object item at the specified index. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
-  
+In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -980,10 +980,10 @@ MsgBox(CStr(customers(1)))
         <summary>Runs after the entire <see cref="T:Microsoft.VisualBasic.Collection" /> object graph has been deserialized. Implements the <see cref="T:System.Runtime.Serialization.IDeserializationCallback" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called after the entire <xref:Microsoft.VisualBasic.Collection> object graph has been deserialized.  
-  
+This method is called after the entire <xref:Microsoft.VisualBasic.Collection> object graph has been deserialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1015,10 +1015,10 @@ MsgBox(CStr(customers(1)))
         <summary>Returns the data needed to serialize the <see cref="T:Microsoft.VisualBasic.Collection" /> object. Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the data needed to serialize the <xref:Microsoft.VisualBasic.Collection> object.  
-  
+This method returns the data needed to serialize the <xref:Microsoft.VisualBasic.Collection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

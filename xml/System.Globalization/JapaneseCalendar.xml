@@ -28,30 +28,30 @@
     <summary>Represents the Japanese calendar.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Japanese calendar, which is also known as the Wareki calendar, works exactly like the Gregorian calendar, except that the year and era are different.  
-  
+The Japanese calendar, which is also known as the Wareki calendar, works exactly like the Gregorian calendar, except that the year and era are different.  
+ 
 > [!NOTE]
 >  For information about using the <xref:System.Globalization.JapaneseCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
-  
- The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
-  
- This class assigns numbers to the eras as follows:  
-  
+ 
+The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
+ 
+This class assigns numbers to the eras as follows:  
+ 
 |GetEra value|Era Name|Era Abbreviation|Gregorian Dates|  
 |------------------|--------------|----------------------|---------------------|  
 |4|平成 (Heisei)|平 (H, h)|January 8, 1989 to present|  
 |3|昭和 (Showa)|昭 (S, s)|December 25, 1926 to January 7, 1989|  
 |2|大正 (Taisho)|大 (T, t)|July 30, 1912 to December 24, 1926|  
 |1|明治 (Meiji)|明 (M, m)|September 8, 1868 to July 29, 1912|  
-  
- This class handles dates from September 8 in the year Meiji 1 (in the Gregorian calendar, September 8, 1868). Although the Japanese calendar was switched from a lunar calendar to a solar calendar in the year Meiji 6 (1873 of the Gregorian calendar), this implementation is based on the solar calendar only.  
-  
- Leap years in the Japanese calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
-  
- The Japanese calendar has 12 months with 28 to 31 days each:  
-  
+ 
+This class handles dates from September 8 in the year Meiji 1 (in the Gregorian calendar, September 8, 1868). Although the Japanese calendar was switched from a lunar calendar to a solar calendar in the year Meiji 6 (1873 of the Gregorian calendar), this implementation is based on the solar calendar only.  
+ 
+Leap years in the Japanese calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+ 
+The Japanese calendar has 12 months with 28 to 31 days each:  
+ 
 |GetMonth value|Month|English|Days in common years|Days in leap years|  
 |--------------------|-----------|-------------|--------------------------|------------------------|  
 |1|1月 (Ichigatsu)|January|31|31|  
@@ -66,15 +66,15 @@
 |10|10月 (Juugatsu)|October|31|31|  
 |11|11月 (Juuichigatsu)|November|30|30|  
 |12|12月 (Juunigatsu)|December|31|31|  
-  
- Nigatsu, which is equivalent to the Gregorian calendar month of February, has 29 days during leap years and 28 during common years.  
-  
- The date January 1, 2001 A.D. in the Gregorian calendar is equivalent to the first day of Ichigatsu in the year Heisei 13 in the Japanese calendar.  
-  
- If the application is using the <xref:System.Globalization.JapaneseCalendar> class, <xref:System.DateTime.Parse%2A?displayProperty=fullName> recognizes the era abbreviations in front of the year. The abbreviation is either the single-character case-insensitive Latin alphabet abbreviation or the single-character Kanji abbreviation.  
-  
- Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> to a new <xref:System.Globalization.Calendar>.  
-  
+ 
+Nigatsu, which is equivalent to the Gregorian calendar month of February, has 29 days during leap years and 28 during common years.  
+ 
+The date January 1, 2001 A.D. in the Gregorian calendar is equivalent to the first day of Ichigatsu in the year Heisei 13 in the Japanese calendar.  
+ 
+If the application is using the <xref:System.Globalization.JapaneseCalendar> class, <xref:System.DateTime.Parse%2A?displayProperty=fullName> recognizes the era abbreviations in front of the year. The abbreviation is either the single-character case-insensitive Latin alphabet abbreviation or the single-character Kanji abbreviation.  
+ 
+Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> to a new <xref:System.Globalization.Calendar>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -136,28 +136,28 @@
         <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of months to the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+ 
+For example, if the specified month is Juugatsu (October), which has 31 days, the specified day is the 31st day of that month, and `months` is 6, the resulting year is one more than the specified year, the resulting month is Shigatsu (April), and the resulting day is the 30th day, which is the last day in Shigatsu (April).  
+ 
+If `months` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+ 
+The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ 
+[!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
+[!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
+ 
   
- For example, if the specified month is Juugatsu (October), which has 31 days, the specified day is the 31st day of that month, and `months` is 6, the resulting year is one more than the specified year, the resulting month is Shigatsu (April), and the resulting day is the 30th day, which is the last day in Shigatsu (April).  
-  
- If `months` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
-  
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
-  
- [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
- [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
-  
+The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range.</exception>
@@ -201,28 +201,28 @@
         <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of years to the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The month part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The month part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+ 
+For example, Nigatsu (February) has 28 days except during leap years when it has 29 days. If the specified date is the 29th day of Nigatsu (February) in a leap year and the value of `years` is 1, the resulting date will be the 28th day of Nigatsu (February) in the following year.  
+ 
+If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+ 
+The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ 
+[!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
+[!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
+ 
   
- For example, Nigatsu (February) has 28 days except during leap years when it has 29 days. If the specified date is the 29th day of Nigatsu (February) in a leap year and the value of `years` is 1, the resulting date will be the 28th day of Nigatsu (February) in the following year.  
-  
- If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
-  
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
-  
- [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
- [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
-  
+The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range.</exception>
@@ -261,13 +261,13 @@
         <value>Always returns <see cref="F:System.Globalization.CalendarAlgorithmType.SolarCalendar" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses reflection to instantiate each <xref:System.Globalization.Calendar> type found in the .NET Framework and displays the value of its <xref:System.Globalization.Calendar.AlgorithmType%2A> property.  
-  
- [!code-csharp[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/cs/algorithmtype1.cs#1)]
- [!code-vb[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/vb/algorithmtype1.vb#1)]  
-  
+The following example uses reflection to instantiate each <xref:System.Globalization.Calendar> type found in the .NET Framework and displays the value of its <xref:System.Globalization.Calendar.AlgorithmType%2A> property.  
+ 
+[!code-csharp[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/cs/algorithmtype1.cs#1)]
+[!code-vb[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/vb/algorithmtype1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,33 +298,33 @@
         <value>An array of integers that represents the eras in the <see cref="T:System.Globalization.JapaneseCalendar" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
-  
- This class assigns numbers to the eras as follows:  
-  
+The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
+ 
+This class assigns numbers to the eras as follows:  
+ 
 |GetEra value|Era Name|Era Abbreviation|Gregorian Dates|  
 |------------------|--------------|----------------------|---------------------|  
 |4|平成 (Heisei)|平 (H, h)|January 8, 1989 to present|  
 |3|昭和 (Showa)|昭 (S, s)|December 25, 1926 to January 7, 1989|  
 |2|大正 (Taisho)|大 (T, t)|July 30, 1912 to December 24, 1926|  
 |1|明治 (Meiji)|明 (M, m)|September 8, 1868 to July 29, 1912|  
-  
- This class handles dates from September 8 in the year Meiji 1 (January 1, 1868 of the Gregorian calendar). Although the Japanese calendar was switched from a lunar calendar to a solar calendar in the year Meiji 6 (1873 of the Gregorian calendar), this implementation is based on the solar calendar only.  
-  
+ 
+This class handles dates from September 8 in the year Meiji 1 (January 1, 1868 of the Gregorian calendar). Although the Japanese calendar was switched from a lunar calendar to a solar calendar in the year Meiji 6 (1873 of the Gregorian calendar), this implementation is based on the solar calendar only.  
+ 
 > [!NOTE]
 >  Should additional eras be added in the future, applications may encounter more than the expected four eras for the Japanese calendar. Applications should be tested to ensure that they continue to work in such an event; see [Era Handling for the Japanese Calendar](http://go.microsoft.com/fwlink/p/?LinkId=239618).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the values contained in the <xref:System.Globalization.JapaneseCalendar.Eras%2A> property.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/CPP/yslin_japanesecalendar_eras.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/CS/yslin_japanesecalendar_eras.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/VB/yslin_japanesecalendar_eras.vb#1)]  
-  
+The following example displays the values contained in the <xref:System.Globalization.JapaneseCalendar.Eras%2A> property.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/CPP/yslin_japanesecalendar_eras.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/CS/yslin_japanesecalendar_eras.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/VB/yslin_japanesecalendar_eras.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,14 +359,14 @@
         <returns>An integer from 1 to 31 that represents the day of the month in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
-  
+The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,10 +401,10 @@
         <returns>A <see cref="T:System.DayOfWeek" /> value that represents the day of the week in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DayOfWeek> values are as follows:  
-  
+The <xref:System.DayOfWeek> values are as follows:  
+ 
 |DayOfWeek value|which indicates|  
 |---------------------|---------------------|  
 |Sunday|日曜日 (Nichiyoubi)|  
@@ -414,16 +414,16 @@
 |Thursday|木曜日 (Mokuyoubi)|  
 |Friday|金曜日 (Kinyoubi)|  
 |Saturday|土曜日 (Doyoubi)|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
-  
+The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -458,19 +458,19 @@
         <returns>An integer from 1 to 366 that represents the day of the year in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The day of the year is defined as the number of days from the first day of the year. For example, <xref:System.Globalization.JapaneseCalendar.GetDayOfYear%2A> for the first day of the first month returns 1, and <xref:System.Globalization.JapaneseCalendar.GetDayOfYear%2A> for the last day of the last month returns the total number of days in that year, which is the same value as that returned by <xref:System.Globalization.JapaneseCalendar.GetDaysInYear%2A>.  
+The day of the year is defined as the number of days from the first day of the year. For example, <xref:System.Globalization.JapaneseCalendar.GetDayOfYear%2A> for the first day of the first month returns 1, and <xref:System.Globalization.JapaneseCalendar.GetDayOfYear%2A> for the last day of the last month returns the total number of days in that year, which is the same value as that returned by <xref:System.Globalization.JapaneseCalendar.GetDaysInYear%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
-  
+The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -509,19 +509,19 @@
         <returns>The number of days in the specified month in the specified year in the specified era.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, this method returns 28 or 29 for Nigatsu (February, `month` = 2), depending on whether `year` is a leap year.  
+For example, this method returns 28 or 29 for Nigatsu (February, `month` = 2), depending on whether `year` is a leap year.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example calls <xref:System.Globalization.JapaneseCalendar.GetDaysInMonth%2A> for the second month in each of five years in each era.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar.GetDaysInMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInMonth/CPP/japanesecalendar_getdaysinmonth.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar.GetDaysInMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInMonth/CS/japanesecalendar_getdaysinmonth.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar.GetDaysInMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInMonth/VB/japanesecalendar_getdaysinmonth.vb#1)]  
-  
+The following code example calls <xref:System.Globalization.JapaneseCalendar.GetDaysInMonth%2A> for the second month in each of five years in each era.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar.GetDaysInMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInMonth/CPP/japanesecalendar_getdaysinmonth.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar.GetDaysInMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInMonth/CS/japanesecalendar_getdaysinmonth.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar.GetDaysInMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInMonth/VB/japanesecalendar_getdaysinmonth.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -568,19 +568,19 @@
         <returns>The number of days in the specified year in the specified era.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, this method returns 365 or 366, depending on whether `year` is a leap year.  
+For example, this method returns 365 or 366, depending on whether `year` is a leap year.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.JapaneseCalendar.GetDaysInYear%2A> for five years in each era.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar.GetDaysInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInYear/CPP/japanesecalendar_getdaysinyear.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar.GetDaysInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInYear/CS/japanesecalendar_getdaysinyear.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar.GetDaysInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInYear/VB/japanesecalendar_getdaysinyear.vb#1)]  
-  
+The following example calls <xref:System.Globalization.JapaneseCalendar.GetDaysInYear%2A> for five years in each era.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar.GetDaysInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInYear/CPP/japanesecalendar_getdaysinyear.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar.GetDaysInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInYear/CS/japanesecalendar_getdaysinyear.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar.GetDaysInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetDaysInYear/VB/japanesecalendar_getdaysinyear.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -621,30 +621,30 @@
         <returns>An integer that represents the era in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
-  
- This class assigns numbers to the eras as follows:  
-  
+The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
+ 
+This class assigns numbers to the eras as follows:  
+ 
 |GetEra value|Era Name|Era Abbreviation|Gregorian Dates|  
 |------------------|--------------|----------------------|---------------------|  
 |4|平成 (Heisei)|平 (H, h)|January 8, 1989 to present|  
 |3|昭和 (Showa)|昭 (S, s)|December 25, 1926 to January 7, 1989|  
 |2|大正 (Taisho)|大 (T, t)|July 30, 1912 to December 24, 1926|  
 |1|明治 (Meiji)|明 (M, m)|September 8, 1868 to July 29, 1912|  
+ 
+Ordinarily, the <xref:System.Globalization.JapaneseCalendar> class supports dates from September 8 in the year Meiji 1 (September 8, 1868 of the Gregorian calendar), which is the value of the <xref:System.Globalization.JapaneseCalendar.MinSupportedDateTime%2A> property. However, the <xref:System.Globalization.JapaneseCalendar.GetEra%2A> method successfully returns the era for dates from January 1 through September 7 in the year Meiji 1 (January 1, 1868 through September 7, 1868 in the Gregorian calendar). For dates earlier than January 1, 1868 in the Gregorian calendar, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
+ 
   
- Ordinarily, the <xref:System.Globalization.JapaneseCalendar> class supports dates from September 8 in the year Meiji 1 (September 8, 1868 of the Gregorian calendar), which is the value of the <xref:System.Globalization.JapaneseCalendar.MinSupportedDateTime%2A> property. However, the <xref:System.Globalization.JapaneseCalendar.GetEra%2A> method successfully returns the era for dates from January 1 through September 7 in the year Meiji 1 (January 1, 1868 through September 7, 1868 in the Gregorian calendar). For dates earlier than January 1, 1868 in the Gregorian calendar, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
-  
+The following example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is outside the supported range.</exception>
@@ -687,10 +687,10 @@
         <returns>The return value is always 0 because the <see cref="T:System.Globalization.JapaneseCalendar" /> type does not support the notion of a leap month.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a calendar that supports the notion of a leap month, the leap month can occur either after a particular month or after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
-  
+In a calendar that supports the notion of a leap month, the leap month can occur either after a particular month or after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -727,14 +727,14 @@
         <returns>An integer from 1 to 12 that represents the month in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
-  
+The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -771,14 +771,14 @@
         <returns>The return value is always 12.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example calls <xref:System.Globalization.JapaneseCalendar.GetMonthsInYear%2A> for five years in each era.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar.GetMonthsInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetMonthsInYear/CPP/japanesecalendar_getmonthsinyear.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar.GetMonthsInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetMonthsInYear/CS/japanesecalendar_getmonthsinyear.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar.GetMonthsInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetMonthsInYear/VB/japanesecalendar_getmonthsinyear.vb#1)]  
-  
+The following code example calls <xref:System.Globalization.JapaneseCalendar.GetMonthsInYear%2A> for five years in each era.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar.GetMonthsInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetMonthsInYear/CPP/japanesecalendar_getmonthsinyear.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar.GetMonthsInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetMonthsInYear/CS/japanesecalendar_getmonthsinyear.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar.GetMonthsInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.GetMonthsInYear/VB/japanesecalendar_getmonthsinyear.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -828,27 +828,27 @@
         <returns>A 1-based integer that represents the week of the year that includes the date in the <paramref name="time" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to determine the number of weeks in the year by setting the `time` parameter to the last day of the year.  
+This method can be used to determine the number of weeks in the year by setting the `time` parameter to the last day of the year.  
+ 
+The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property contains culture-specific values that can be used for the `rule` and `firstDayOfWeek` parameters.  
+ 
+The <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> contains the default <xref:System.DayOfWeek> value that represents the first day of the week for a specific culture, using the calendar specified in the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>.  
+ 
+The <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> contains the default <xref:System.Globalization.CalendarWeekRule> value that defines a calendar week for a specific culture, using the calendar specified in the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>.  
+ 
+For example, in <xref:System.Globalization.GregorianCalendar>, the <xref:System.Globalization.Calendar.GetWeekOfYear%2A> method for January 1 returns 1.  
+ 
   
- The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property contains culture-specific values that can be used for the `rule` and `firstDayOfWeek` parameters.  
-  
- The <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> contains the default <xref:System.DayOfWeek> value that represents the first day of the week for a specific culture, using the calendar specified in the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>.  
-  
- The <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> contains the default <xref:System.Globalization.CalendarWeekRule> value that defines a calendar week for a specific culture, using the calendar specified in the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>.  
-  
- For example, in <xref:System.Globalization.GregorianCalendar>, the <xref:System.Globalization.Calendar.GetWeekOfYear%2A> method for January 1 returns 1.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how the result of <xref:System.Globalization.Calendar.GetWeekOfYear%2A> varies depending on the <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A> and <xref:System.Globalization.CalendarWeekRule> values used. If the specified date is the last day of the year, <xref:System.Globalization.Calendar.GetWeekOfYear%2A> returns the total number of weeks in that year.  
-  
- [!code-cpp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CPP/yslin_calendar_getweekofyear.cpp#1)]
- [!code-csharp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CS/yslin_calendar_getweekofyear.cs#1)]
- [!code-vb[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/VB/yslin_calendar_getweekofyear.vb#1)]  
-  
+The following code example shows how the result of <xref:System.Globalization.Calendar.GetWeekOfYear%2A> varies depending on the <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A> and <xref:System.Globalization.CalendarWeekRule> values used. If the specified date is the last day of the year, <xref:System.Globalization.Calendar.GetWeekOfYear%2A> returns the total number of weeks in that year.  
+ 
+[!code-cpp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CPP/yslin_calendar_getweekofyear.cpp#1)]
+[!code-csharp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CS/yslin_calendar_getweekofyear.cs#1)]
+[!code-vb[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/VB/yslin_calendar_getweekofyear.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -889,14 +889,14 @@
         <returns>An integer that represents the year in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
-  
+The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CPP/japanesecalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/CS/japanesecalendar_addget.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_AddGet/VB/japanesecalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -938,21 +938,21 @@
           <see langword="true" />, if the specified day is a leap day; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Leap years in the Japanese calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+Leap years in the Japanese calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+ 
+A leap day is a day that occurs only in a leap year. For example, the 29th day of Nigatsu (February) is the only leap day.  
+ 
   
- A leap day is a day that occurs only in a leap year. For example, the 29th day of Nigatsu (February) is the only leap day.  
-  
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.JapaneseCalendar.IsLeapDay%2A> for the last day of the second month (February) for five years in each of the eras.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar.IsLeapDay#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapDay/CPP/japanesecalendar_isleapday.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar.IsLeapDay#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapDay/CS/japanesecalendar_isleapday.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar.IsLeapDay#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapDay/VB/japanesecalendar_isleapday.vb#1)]  
-  
+The following example calls <xref:System.Globalization.JapaneseCalendar.IsLeapDay%2A> for the last day of the second month (February) for five years in each of the eras.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar.IsLeapDay#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapDay/CPP/japanesecalendar_isleapday.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar.IsLeapDay#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapDay/CS/japanesecalendar_isleapday.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar.IsLeapDay#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapDay/VB/japanesecalendar_isleapday.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1005,21 +1005,21 @@
         <returns>This method always returns <see langword="false" />, unless overridden by a derived class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Leap years in the Japanese calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+Leap years in the Japanese calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+ 
+A leap month is an entire month that occurs only in a leap year. The Japanese calendar does not have any leap months.  
+ 
   
- A leap month is an entire month that occurs only in a leap year. The Japanese calendar does not have any leap months.  
-  
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.JapaneseCalendar.IsLeapMonth%2A> for all the months in five years in the current era.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar.IsLeapMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapMonth/CPP/japanesecalendar_isleapmonth.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar.IsLeapMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapMonth/CS/japanesecalendar_isleapmonth.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar.IsLeapMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapMonth/VB/japanesecalendar_isleapmonth.vb#1)]  
-  
+The following example calls <xref:System.Globalization.JapaneseCalendar.IsLeapMonth%2A> for all the months in five years in the current era.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar.IsLeapMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapMonth/CPP/japanesecalendar_isleapmonth.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar.IsLeapMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapMonth/CS/japanesecalendar_isleapmonth.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar.IsLeapMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapMonth/VB/japanesecalendar_isleapmonth.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1067,19 +1067,19 @@
           <see langword="true" />, if the specified year is a leap year; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Leap years in the Japanese calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+Leap years in the Japanese calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.JapaneseCalendar.IsLeapYear%2A> for five years in each of the eras.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar.IsLeapYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapYear/CPP/japanesecalendar_isleapyear.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar.IsLeapYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapYear/CS/japanesecalendar_isleapyear.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar.IsLeapYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapYear/VB/japanesecalendar_isleapyear.vb#1)]  
-  
+The following example calls <xref:System.Globalization.JapaneseCalendar.IsLeapYear%2A> for five years in each of the eras.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar.IsLeapYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapYear/CPP/japanesecalendar_isleapyear.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar.IsLeapYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapYear/CS/japanesecalendar_isleapyear.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar.IsLeapYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.IsLeapYear/VB/japanesecalendar_isleapyear.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1121,14 +1121,14 @@
         <value>The latest date and time supported by the <see cref="T:System.Globalization.JapaneseCalendar" /> type, which is equivalent to the last moment of December 31, 9999 C.E. in the Gregorian calendar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example gets the minimum value and the maximum value of the calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/CPP/japanesecalendar_minmax.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/CS/japanesecalendar_minmax.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/VB/japanesecalendar_minmax.vb#1)]  
-  
+The following code example gets the minimum value and the maximum value of the calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/CPP/japanesecalendar_minmax.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/CS/japanesecalendar_minmax.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/VB/japanesecalendar_minmax.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1164,19 +1164,19 @@
         <value>The earliest date and time supported by the <see cref="T:System.Globalization.JapaneseCalendar" /> type, which is equivalent to the first moment of September 8, 1868 C.E. in the Gregorian calendar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The earliest date supported by the <xref:System.Globalization.JapaneseCalendar> class is September 8, 1868 C.E., in the first year of the Meiji era. Ordinarily, date and time operations that use the <xref:System.Globalization.JapaneseCalendar> class throw an <xref:System.ArgumentOutOfRangeException> exception for dates before this date. However, some members, such as the <xref:System.Globalization.JapaneseCalendar.GetEra%2A> method, support dates from January 1, 1868 through September 7 in the year Meiji 1.  
+The earliest date supported by the <xref:System.Globalization.JapaneseCalendar> class is September 8, 1868 C.E., in the first year of the Meiji era. Ordinarily, date and time operations that use the <xref:System.Globalization.JapaneseCalendar> class throw an <xref:System.ArgumentOutOfRangeException> exception for dates before this date. However, some members, such as the <xref:System.Globalization.JapaneseCalendar.GetEra%2A> method, support dates from January 1, 1868 through September 7 in the year Meiji 1.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example gets the earliest and latest dates supported by the calendar.  
-  
- [!code-cpp[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/CPP/japanesecalendar_minmax.cpp#1)]
- [!code-csharp[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/CS/japanesecalendar_minmax.cs#1)]
- [!code-vb[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/VB/japanesecalendar_minmax.vb#1)]  
-  
+The following example gets the earliest and latest dates supported by the calendar.  
+ 
+[!code-cpp[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/CPP/japanesecalendar_minmax.cpp#1)]
+[!code-csharp[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/CS/japanesecalendar_minmax.cs#1)]
+[!code-vb[System.Globalization.JapaneseCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar_MinMax/VB/japanesecalendar_minmax.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1225,10 +1225,10 @@
         <returns>The <see cref="T:System.DateTime" /> that is set to the specified date and time in the current era.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Globalization.JapaneseCalendar.ToDateTime%2A> method is useful because it can convert any date in the current calendar to a Gregorian calendar date. The Gregorian date can subsequently be used, for example, to compare dates in different calendars or create an equivalent date in a particular calendar.  
-  
+The <xref:System.Globalization.JapaneseCalendar.ToDateTime%2A> method is useful because it can convert any date in the current calendar to a Gregorian calendar date. The Gregorian date can subsequently be used, for example, to compare dates in different calendars or create an equivalent date in a particular calendar.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1293,14 +1293,14 @@
         <returns>An integer that contains the four-digit representation of <paramref name="year" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method implements <xref:System.Globalization.Calendar.ToFourDigitYear%2A?displayProperty=fullName>.  
-  
- Because the year in the Japanese calendar is typically less than four digits long, this implementation always returns the value of the `year` parameter.  
-  
- <xref:System.Globalization.JapaneseCalendar.ToFourDigitYear%2A> supports either a two-digit year or a four-digit year. However, a valid year is generally represented as two digits (less than 100). Passing a two-digit year value causes the method to convert the value to a four-digit value according to the <xref:System.Globalization.JapaneseCalendar.TwoDigitYearMax%2A> value representing the appropriate century. If the application supplies a four-digit value, or if it supplies zero or a negative value, <xref:System.Globalization.JapaneseCalendar.ToFourDigitYear%2A> throws an exception.  
-  
+This method implements <xref:System.Globalization.Calendar.ToFourDigitYear%2A?displayProperty=fullName>.  
+ 
+Because the year in the Japanese calendar is typically less than four digits long, this implementation always returns the value of the `year` parameter.  
+ 
+<xref:System.Globalization.JapaneseCalendar.ToFourDigitYear%2A> supports either a two-digit year or a four-digit year. However, a valid year is generally represented as two digits (less than 100). Passing a two-digit year value causes the method to convert the value to a four-digit value according to the <xref:System.Globalization.JapaneseCalendar.TwoDigitYearMax%2A> value representing the appropriate century. If the application supplies a four-digit value, or if it supplies zero or a negative value, <xref:System.Globalization.JapaneseCalendar.ToFourDigitYear%2A> throws an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1333,12 +1333,12 @@
         <value>The last year of a 100-year range that can be represented by a 2-digit year.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property implements <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName>.  
-  
- Because the year in the Japanese calendar is typically less than four digits long, this implementation returns 99 by default and does not affect the return value of <xref:System.Globalization.JapaneseCalendar.ToFourDigitYear%2A>.  
-  
+This property implements <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName>.  
+ 
+Because the year in the Japanese calendar is typically less than four digits long, this implementation returns 99 by default and does not affect the return value of <xref:System.Globalization.JapaneseCalendar.ToFourDigitYear%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified in a set operation is less than 99.  

@@ -14,10 +14,10 @@
     <summary>Represents the AuthnStatement element specified in [Saml2Core, 2.7.2].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" /> class with the specified authentication context and the current time as the authentication instant.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationInstant%2A> property is set to <xref:System.DateTime.UtcNow%2A>.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationInstant%2A> property is set to <xref:System.DateTime.UtcNow%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -88,10 +88,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationContext" /> that represents the context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The AuthnContext element. This element is required.  
-  
+The AuthnContext element. This element is required.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set a value that is <see langword="null" /> occurs.</exception>
@@ -114,10 +114,10 @@
         <value>A <see cref="T:System.DateTime" /> that represents the time of authentication in UTC.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The AuthnInstant attribute. This attribute is required.  
-  
+The AuthnInstant attribute. This attribute is required.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <value>A string that contains the session index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SessionIndex attribute.  
-  
+The SessionIndex attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <value>Returns a nullable <see cref="T:System.DateTime" /> that represents the session expiration time in UTC. A <see langword="null" /> value indicates that the attribute is not specified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SessionNotOnOrAfter attribute.  
-  
+The SessionNotOnOrAfter attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2SubjectLocality" /> that specifies the DNS domain name and IP address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SubjectLocality element.  
-  
+The SubjectLocality element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

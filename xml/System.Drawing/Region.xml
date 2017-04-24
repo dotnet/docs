@@ -18,23 +18,23 @@
     <summary>Describes the interior of a graphics shape composed of rectangles and paths. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A region is scalable because its coordinates are specified in world coordinates. On a drawing surface, however, its interior is dependent on the size and shape of the pixels representing it. An application can use regions to clip the output of drawing operations. These regions are called clipping regions. For more information on using regions for clipping, see [How to: Use Clipping with a Region](~/docs/framework/winforms/advanced/how-to-use-clipping-with-a-region.md).  
+A region is scalable because its coordinates are specified in world coordinates. On a drawing surface, however, its interior is dependent on the size and shape of the pixels representing it. An application can use regions to clip the output of drawing operations. These regions are called clipping regions. For more information on using regions for clipping, see [How to: Use Clipping with a Region](~/docs/framework/winforms/advanced/how-to-use-clipping-with-a-region.md).  
+ 
+An application can also use regions in hit-testing operations, such as checking whether a point or a rectangle intersects a region. For more information on using regions for hit-testing, see [How to: Use Hit Testing with a Region](~/docs/framework/winforms/advanced/how-to-use-hit-testing-with-a-region.md).  
+ 
+An application can fill a region by using the <xref:System.Drawing.Graphics.FillRegion%2A?displayProperty=fullName> method and a  <xref:System.Drawing.Brush> object.  
+ 
   
- An application can also use regions in hit-testing operations, such as checking whether a point or a rectangle intersects a region. For more information on using regions for hit-testing, see [How to: Use Hit Testing with a Region](~/docs/framework/winforms/advanced/how-to-use-hit-testing-with-a-region.md).  
-  
- An application can fill a region by using the <xref:System.Drawing.Graphics.FillRegion%2A?displayProperty=fullName> method and a  <xref:System.Drawing.Brush> object.  
-  
-   
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  The code example demonstrates how to use the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> from one <xref:System.Drawing.Drawing2D.RegionData> object to set the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> for another <xref:System.Drawing.Drawing2D.RegionData>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#13](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#13)]
- [!code-csharp[System.Drawing.MiscExamples#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#13)]
- [!code-vb[System.Drawing.MiscExamples#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#13)]  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  The code example demonstrates how to use the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> from one <xref:System.Drawing.Drawing2D.RegionData> object to set the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> for another <xref:System.Drawing.Drawing2D.RegionData>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#13](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#13)]
+[!code-csharp[System.Drawing.MiscExamples#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#13)]
+[!code-vb[System.Drawing.MiscExamples#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#13)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Initializes a new <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new <xref:System.Drawing.Region> with an infinite interior.  
-  
+This constructor initializes a new <xref:System.Drawing.Region> with an infinite interior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,10 +78,10 @@
         <summary>Initializes a new <see cref="T:System.Drawing.Region" /> with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.Drawing.Region> with a <xref:System.Drawing.Drawing2D.GraphicsPath>. The new region is defined as the interior of the <xref:System.Drawing.Drawing2D.GraphicsPath> specified by the `path` parameter.  
-  
+This method creates a new <xref:System.Drawing.Region> with a <xref:System.Drawing.Drawing2D.GraphicsPath>. The new region is defined as the interior of the <xref:System.Drawing.Drawing2D.GraphicsPath> specified by the `path` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -105,10 +105,10 @@
         <summary>Initializes a new <see cref="T:System.Drawing.Region" /> from the specified data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.Drawing.Region> with an interior defined by an existing <xref:System.Drawing.Region>. The `rgnData` parameter is an array that contains the definition of an existing <xref:System.Drawing.Region>.  
-  
+This method creates a new <xref:System.Drawing.Region> with an interior defined by an existing <xref:System.Drawing.Region>. The `rgnData` parameter is an array that contains the definition of an existing <xref:System.Drawing.Region>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -132,19 +132,19 @@
         <summary>Initializes a new <see cref="T:System.Drawing.Region" /> from the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.Drawing.Region> with a rectangular interior. The interior is defined by the `rect` parameter.  
+This method creates a new <xref:System.Drawing.Region> with a rectangular interior. The interior is defined by the `rect` parameter.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Region.%23ctor%2A> constructor and <xref:System.Drawing.Region.MakeEmpty%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `FillEmptyRegion` method in the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#7)]
- [!code-csharp[System.Drawing.MiscExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#7)]
- [!code-vb[System.Drawing.MiscExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#7)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Region.%23ctor%2A> constructor and <xref:System.Drawing.Region.MakeEmpty%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `FillEmptyRegion` method in the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#7)]
+[!code-csharp[System.Drawing.MiscExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#7)]
+[!code-vb[System.Drawing.MiscExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <summary>Initializes a new <see cref="T:System.Drawing.Region" /> from the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.Drawing.Region> with a rectangular interior. The interior is defined by the `rect` parameter.  
-  
+This method creates a new <xref:System.Drawing.Region> with a rectangular interior. The interior is defined by the `rect` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,28 +213,28 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain the portion of the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a rectangle and draws it to the screen in black.  
-  
+ 
 -   Creates a second rectangle that intersects with the first and draws it to the screen in red.  
-  
+ 
 -   Creates a region using the first rectangle.  
-  
+ 
 -   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath>, and adds the second rectangle to it.  
-  
+ 
 -   Gets the complement of the region when combined with the <xref:System.Drawing.Drawing2D.GraphicsPath>.  
-  
+ 
 -   Fills the complement area with blue and draws it to the screen.  
-  
- Notice that the area of the <xref:System.Drawing.Drawing2D.GraphicsPath> that does not intersect with the region is colored blue.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#1)]
- [!code-vb[System.Drawing.ClassicRegionExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#1)]  
-  
+ 
+Notice that the area of the <xref:System.Drawing.Drawing2D.GraphicsPath> that does not intersect with the region is colored blue.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#1)]
+[!code-vb[System.Drawing.ClassicRegionExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -261,10 +261,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain the portion of the specified <see cref="T:System.Drawing.Rectangle" /> structure that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example, see the <xref:System.Drawing.Region.Complement%28System.Drawing.RectangleF%29> method.  
-  
+For an example, see the <xref:System.Drawing.Region.Complement%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,26 +289,26 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain the portion of the specified <see cref="T:System.Drawing.RectangleF" /> structure that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a rectangle and draws it to the screen in black.  
-  
+ 
 -   Creates a second rectangle that intersects with the first and draws it to the screen in red.  
-  
+ 
 -   Creates a region using the first rectangle.  
-  
+ 
 -   Gets the complement of that region combined with the second rectangle.  
-  
+ 
 -   Fills the complement area with blue and draws it to the screen.  
-  
- Notice that the area of the second rectangle that does not intersect with the region is colored blue.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#2)]
- [!code-vb[System.Drawing.ClassicRegionExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#2)]  
-  
+ 
+Notice that the area of the second rectangle that does not intersect with the region is colored blue.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#2)]
+[!code-vb[System.Drawing.ClassicRegionExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,26 +333,26 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain the portion of the specified <see cref="T:System.Drawing.Region" /> that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a rectangle and draws it to the screen in black  
-  
+ 
 -   Creates a second rectangle that intersects with the first and draws it to the screen in red.  
-  
+ 
 -   Creates one region using the first rectangle and creates a second region using the second rectangle.  
-  
+ 
 -   Gets the complement of that first region when combined with the second region.  
-  
+ 
 -   Fills the complement area with blue and draws it to the screen.  
-  
- Notice that the area of the second region that does not intersect with the first region is colored blue.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#3)]
- [!code-vb[System.Drawing.ClassicRegionExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#3)]  
-  
+ 
+Notice that the area of the second region that does not intersect with the first region is colored blue.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#3)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#3)]
+[!code-vb[System.Drawing.ClassicRegionExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -376,26 +376,26 @@
         <summary>Releases all resources used by this <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.Drawing.Region.Dispose%2A> allows the resources used by this <xref:System.Drawing.Region> to be reallocated for other purposes.  
-  
- Call <xref:System.Drawing.Region.Dispose%2A> when you are finished using the <xref:System.Drawing.Region>. The <xref:System.Drawing.Region.Dispose%2A> method leaves the <xref:System.Drawing.Region> in an unusable state. After calling <xref:System.Drawing.Region.Dispose%2A>, you must release all references to the <xref:System.Drawing.Region> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Region> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Calling <xref:System.Drawing.Region.Dispose%2A> allows the resources used by this <xref:System.Drawing.Region> to be reallocated for other purposes.  
+ 
+Call <xref:System.Drawing.Region.Dispose%2A> when you are finished using the <xref:System.Drawing.Region>. The <xref:System.Drawing.Region.Dispose%2A> method leaves the <xref:System.Drawing.Region> in an unusable state. After calling <xref:System.Drawing.Region.Dispose%2A>, you must release all references to the <xref:System.Drawing.Region> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Region> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.Drawing.Region.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Region>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Region> object's `Finalize` method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Drawing.Region.%23ctor%2A> constructor and the <xref:System.Drawing.Region.Exclude%2A> and <xref:System.Drawing.Region.Dispose%2A> methods.  
-  
- This example is designed to be used with Windows Forms. Paste the code into a form and call the `FillRegionExcludingPath` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.GraphicsProperties#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.GraphicsProperties#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/CS/form1.cs#1)]
- [!code-vb[System.Drawing.GraphicsProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/VB/form1.vb#1)]  
-  
+The following code example demonstrates the <xref:System.Drawing.Region.%23ctor%2A> constructor and the <xref:System.Drawing.Region.Exclude%2A> and <xref:System.Drawing.Region.Dispose%2A> methods.  
+ 
+This example is designed to be used with Windows Forms. Paste the code into a form and call the `FillRegionExcludingPath` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.GraphicsProperties#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.GraphicsProperties#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/CS/form1.cs#1)]
+[!code-vb[System.Drawing.GraphicsProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,10 +424,10 @@
           <see langword="true" /> if the interior of region is identical to the interior of this region when the transformation associated with the <paramref name="g" /> parameter is applied; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context `g` is used to compute the region interiors on the drawing surface.  
-  
+The current transformation of the graphics context `g` is used to compute the region interiors on the drawing surface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -454,16 +454,16 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain only the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Drawing.Region.%23ctor%2A> constructor and the <xref:System.Drawing.Region.Exclude%2A> and <xref:System.Drawing.Region.Dispose%2A> methods.  
-  
- This example is designed to be used with Windows Forms. Paste the code into a form and call the `FillRegionExcludingPath` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.GraphicsProperties#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.GraphicsProperties#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/CS/form1.cs#1)]
- [!code-vb[System.Drawing.GraphicsProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/VB/form1.vb#1)]  
-  
+The following code example demonstrates the <xref:System.Drawing.Region.%23ctor%2A> constructor and the <xref:System.Drawing.Region.Exclude%2A> and <xref:System.Drawing.Region.Dispose%2A> methods.  
+ 
+This example is designed to be used with Windows Forms. Paste the code into a form and call the `FillRegionExcludingPath` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.GraphicsProperties#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.GraphicsProperties#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/CS/form1.cs#1)]
+[!code-vb[System.Drawing.GraphicsProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.GraphicsProperties/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -490,10 +490,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain only the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Exclude%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.Exclude%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -518,26 +518,26 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain only the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a rectangle and draws it to the screen in black  
-  
+ 
 -   Creates a second rectangle that intersects with the first and draws it to the screen in red.  
-  
+ 
 -   Creates a region using the first rectangle.  
-  
+ 
 -   Gets the nonexcluded area of the region when combined with the second rectangle.  
-  
+ 
 -   Fills the nonexcluded area with blue and draws it to the screen.  
-  
- Notice that the area of the area of the region that does not intersect with the rectangle is colored blue.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#4)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#4)]
- [!code-vb[System.Drawing.ClassicRegionExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#4)]  
-  
+ 
+Notice that the area of the area of the region that does not intersect with the rectangle is colored blue.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#4)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#4)]
+[!code-vb[System.Drawing.ClassicRegionExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -562,10 +562,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain only the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For code examples, see the <xref:System.Drawing.Region.Exclude%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Region%29> methods.  
-  
+For code examples, see the <xref:System.Drawing.Region.Exclude%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Region%29> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -611,10 +611,10 @@
         <returns>The new <see cref="T:System.Drawing.Region" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new <xref:System.Drawing.Region> with an interior defined by the existing <xref:System.Drawing.Region> referred to by the handle in the `hrgn` parameter.  
-  
+This method creates a new <xref:System.Drawing.Region> with an interior defined by the existing <xref:System.Drawing.Region> referred to by the handle in the `hrgn` parameter.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing unmanaged code. Related enumeration <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
@@ -641,29 +641,29 @@
         <returns>A <see cref="T:System.Drawing.RectangleF" /> structure that represents the bounding rectangle for this <see cref="T:System.Drawing.Region" /> on the specified drawing surface.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context is used to compute the region interior on the drawing surface. The bounding rectangle is not always the smallest possible bounding rectangle depending on the current transformation.  
+The current transformation of the graphics context is used to compute the region interior on the drawing surface. The bounding rectangle is not always the smallest possible bounding rectangle depending on the current transformation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> and adds an ellipse to it.  
-  
+ 
 -   Fills the path with blue and draws it to the screen.  
-  
+ 
 -   Creates a region that uses the <xref:System.Drawing.Drawing2D.GraphicsPath>.  
-  
+ 
 -   Gets the nonexcluded area of the region when combined with the second rectangle.  
-  
+ 
 -   Gets the bounding rectangle for the region and draws it to the screen in red.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#5)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#5)]
- [!code-vb[System.Drawing.ClassicRegionExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#5)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#5)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#5)]
+[!code-vb[System.Drawing.ClassicRegionExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -712,19 +712,19 @@
         <returns>A <see cref="T:System.Drawing.Drawing2D.RegionData" /> that represents the information that describes this <see cref="T:System.Drawing.Region" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Region> class allows you to define a custom shape. The shape can be made up of lines, polygons, and curves. <xref:System.Drawing.Region.GetRegionData%2A> describes the  shape contained in this <xref:System.Drawing.Region>.  
+The <xref:System.Drawing.Region> class allows you to define a custom shape. The shape can be made up of lines, polygons, and curves. <xref:System.Drawing.Region.GetRegionData%2A> describes the  shape contained in this <xref:System.Drawing.Region>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  The code example demonstrates how to use the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> from one <xref:System.Drawing.Drawing2D.RegionData> object to set the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> for another <xref:System.Drawing.Drawing2D.RegionData>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#13](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#13)]
- [!code-csharp[System.Drawing.MiscExamples#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#13)]
- [!code-vb[System.Drawing.MiscExamples#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#13)]  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  The code example demonstrates how to use the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> from one <xref:System.Drawing.Drawing2D.RegionData> object to set the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> for another <xref:System.Drawing.Drawing2D.RegionData>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#13](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#13)]
+[!code-csharp[System.Drawing.MiscExamples#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#13)]
+[!code-vb[System.Drawing.MiscExamples#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -773,10 +773,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For code examples, see the <xref:System.Drawing.RectangleF.Intersect%28System.Drawing.RectangleF%29?displayProperty=fullName> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
-  
+For code examples, see the <xref:System.Drawing.RectangleF.Intersect%28System.Drawing.RectangleF%29?displayProperty=fullName> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -801,10 +801,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Intersect%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.Intersect%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -829,26 +829,26 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates the first rectangle and draws it to the screen in black.  
-  
+ 
 -   Creates the second rectangle and draws it to the screen in red.  
-  
+ 
 -   Creates a region from the first rectangle.  
-  
+ 
 -   Gets the area of intersection for the region when combined with the second rectangle.  
-  
+ 
 -   Fills the area of intersection with blue and draws it to the screen.  
-  
- Notice that only the overlapped area for the region and rectangle is blue.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#7)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#7)]
- [!code-vb[System.Drawing.ClassicRegionExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#7)]  
-  
+ 
+Notice that only the overlapped area for the region and rectangle is blue.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#7)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#7)]
+[!code-vb[System.Drawing.ClassicRegionExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -873,10 +873,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For code examples, see the <xref:System.Drawing.Region.Intersect%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> method`.`  
-  
+For code examples, see the <xref:System.Drawing.Region.Intersect%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> method`.`  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -903,10 +903,10 @@
           <see langword="true" /> if the interior of this <see cref="T:System.Drawing.Region" /> is empty when the transformation associated with <paramref name="g" /> is applied; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context `g` is used to compute the region interior on the drawing surface.  
-  
+The current transformation of the graphics context `g` is used to compute the region interior on the drawing surface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -935,10 +935,10 @@
           <see langword="true" /> if the interior of this <see cref="T:System.Drawing.Region" /> is infinite when the transformation associated with <paramref name="g" /> is applied; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context `g` is used to compute the region interior on the drawing surface.  
-  
+The current transformation of the graphics context `g` is used to compute the region interior on the drawing surface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -967,10 +967,10 @@
           <see langword="true" /> when <paramref name="point" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -997,10 +997,10 @@
           <see langword="true" /> when <paramref name="point" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1026,10 +1026,10 @@
         <returns>This method returns <see langword="true" /> when any portion of <paramref name="rect" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1056,26 +1056,26 @@
           <see langword="true" /> when any portion of <paramref name="rect" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates the first rectangle and draws it to the screen in blue.  
-  
+ 
 -   Creates the second rectangle and draws it to the screen in red.  
-  
+ 
 -   Creates a region from the first rectangle.  
-  
+ 
 -   Determines if any portion of the rectangle intersects with the region.  
-  
+ 
 -   Displays the `true` or `false` result on the screen.  
-  
- Notice that the rectangle intersects the region, so the result is `true`.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#8)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#8)]
- [!code-vb[System.Drawing.ClassicRegionExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#8)]  
-  
+ 
+Notice that the rectangle intersects the region, so the result is `true`.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#8)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#8)]
+[!code-vb[System.Drawing.ClassicRegionExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1104,15 +1104,15 @@
           <see langword="true" /> when <paramref name="point" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
+The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1141,15 +1141,15 @@
           <see langword="true" /> when <paramref name="point" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
+The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1178,15 +1178,15 @@
           <see langword="true" /> when any portion of the <paramref name="rect" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
+The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1215,15 +1215,15 @@
           <see langword="true" /> when <paramref name="rect" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
+The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1252,10 +1252,10 @@
           <see langword="true" /> when the specified point is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1286,15 +1286,15 @@
           <see langword="true" /> when the specified point is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
+The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1325,15 +1325,15 @@
           <see langword="true" /> when the specified point is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
+The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1366,10 +1366,10 @@
           <see langword="true" /> when any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1402,10 +1402,10 @@
           <see langword="true" /> when any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1440,15 +1440,15 @@
           <see langword="true" /> when any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
+The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1483,15 +1483,15 @@
           <see langword="true" /> when any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
+The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1513,14 +1513,14 @@
         <summary>Initializes this <see cref="T:System.Drawing.Region" /> to an empty interior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Region.%23ctor%2A> constructor and <xref:System.Drawing.Region.MakeEmpty%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `FillEmptyRegion` method in the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#7)]
- [!code-csharp[System.Drawing.MiscExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#7)]
- [!code-vb[System.Drawing.MiscExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#7)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Region.%23ctor%2A> constructor and <xref:System.Drawing.Region.MakeEmpty%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `FillEmptyRegion` method in the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#7)]
+[!code-csharp[System.Drawing.MiscExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#7)]
+[!code-vb[System.Drawing.MiscExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1542,14 +1542,14 @@
         <summary>Initializes this <see cref="T:System.Drawing.Region" /> object to an infinite interior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Region.MakeInfinite%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `FillEmptyRegion` method in the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#8)]
- [!code-csharp[System.Drawing.MiscExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#8)]
- [!code-vb[System.Drawing.MiscExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#8)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Region.MakeInfinite%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `FillEmptyRegion` method in the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#8)]
+[!code-csharp[System.Drawing.MiscExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#8)]
+[!code-vb[System.Drawing.MiscExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1598,26 +1598,26 @@
         <summary>Transforms this <see cref="T:System.Drawing.Region" /> by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a rectangle and draws it to the screen in blue.  
-  
+ 
 -   Creates a region from the rectangle.  
-  
+ 
 -   Creates a transformation matrix and sets it to 45 degrees.  
-  
+ 
 -   Applies the transformation to the region.  
-  
+ 
 -   Fills the transformed region with red and draws the transformed region to the screen in red.  
-  
- Notice that the red rectangle is rotated 45 degrees from the original rectangle, shown in blue.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#9)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#9)]
- [!code-vb[System.Drawing.ClassicRegionExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#9)]  
-  
+ 
+Notice that the red rectangle is rotated 45 degrees from the original rectangle, shown in blue.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#9)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#9)]
+[!code-vb[System.Drawing.ClassicRegionExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1646,24 +1646,24 @@
         <summary>Offsets the coordinates of this <see cref="T:System.Drawing.Region" /> by the specified amount.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a rectangle and draws it to the screen in blue.  
-  
+ 
 -   Creates a region from the rectangle.  
-  
+ 
 -   Applies the translation to the region.  
-  
+ 
 -   Fills the translated region with red and draws the translated region to the screen in red.  
-  
- Notice that the red rectangle is shifted down and to the right from the original rectangle, shown in blue.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#10)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#10)]
- [!code-vb[System.Drawing.ClassicRegionExamples#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#10)]  
-  
+ 
+Notice that the red rectangle is shifted down and to the right from the original rectangle, shown in blue.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#10)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#10)]
+[!code-vb[System.Drawing.ClassicRegionExamples#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1690,10 +1690,10 @@
         <summary>Offsets the coordinates of this <see cref="T:System.Drawing.Region" /> by the specified amount.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the<xref:System.Drawing.Region.Translate%28System.Single%2CSystem.Single%29> method.  
-  
+For a code example, see the<xref:System.Drawing.Region.Translate%28System.Single%2CSystem.Single%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1718,10 +1718,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Union%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
-  
+For a code example, see the <xref:System.Drawing.Region.Union%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1748,10 +1748,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Union%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.Union%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1776,26 +1776,26 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`. The code performs the following actions:  
+ 
 -   Creates the first rectangle and draws it to the screen in black.  
-  
+ 
 -   Creates a second rectangle and draws it to the screen in red.  
-  
+ 
 -   Creates a region using the first rectangle.  
-  
+ 
 -   Gets the area of union for `myRegion` when combined with `complementRect`.  
-  
+ 
 -   Fills the fills the area of union with blue and draws it to the screen.  
-  
- Notice that both rectangles are filled with blue, including the area of overlap.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#11](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#11)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#11)]
- [!code-vb[System.Drawing.ClassicRegionExamples#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#11)]  
-  
+ 
+Notice that both rectangles are filled with blue, including the area of overlap.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#11](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#11)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#11)]
+[!code-vb[System.Drawing.ClassicRegionExamples#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1820,10 +1820,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Union%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.Union%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1850,10 +1850,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
-  
+For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1880,10 +1880,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> method.  
-  
+For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1908,26 +1908,26 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates the first rectangle and draws it to the screen in black.  
-  
+ 
 -   Creates a second rectangle and draws it to the screen in red.  
-  
+ 
 -   Creates a region using the first rectangle.  
-  
+ 
 -   Gets the <xref:System.Drawing.Region.Xor%2A> area for `myRegion` when combined with `complementRect`.  
-  
+ 
 -   Fills the <xref:System.Drawing.Region.Xor%2A> area with blue and draws it to the screen.  
-  
- Notice that both rectangles are filled with blue, except for the area of overlap.  
-  
- [!code-cpp[System.Drawing.ClassicRegionExamples#12](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#12)]
- [!code-csharp[System.Drawing.ClassicRegionExamples#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#12)]
- [!code-vb[System.Drawing.ClassicRegionExamples#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#12)]  
-  
+ 
+Notice that both rectangles are filled with blue, except for the area of overlap.  
+ 
+[!code-cpp[System.Drawing.ClassicRegionExamples#12](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CPP/form1.cpp#12)]
+[!code-csharp[System.Drawing.ClassicRegionExamples#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/CS/form1.cs#12)]
+[!code-vb[System.Drawing.ClassicRegionExamples#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRegionExamples/VB/form1.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1952,10 +1952,10 @@
         <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
-  
+For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

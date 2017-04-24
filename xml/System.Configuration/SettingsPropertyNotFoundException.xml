@@ -14,10 +14,10 @@
     <summary>Provides an exception for <see cref="T:System.Configuration.SettingsProperty" /> objects that are not found.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception is thrown by the <xref:System.Configuration.SettingsBase> class when an attempt is made to access a property by name, but either the property was never associated with the <xref:System.Configuration.SettingsBase> class instance, or the provider configured for the property did not return a value when asked to load the property data.  
-  
+This exception is thrown by the <xref:System.Configuration.SettingsBase> class when an attempt is made to access a property by name, but either the property was never associated with the <xref:System.Configuration.SettingsBase> class instance, or the provider configured for the property did not return a value when asked to load the property data.  
+ 
  ]]></format>
     </remarks>
   </Docs>

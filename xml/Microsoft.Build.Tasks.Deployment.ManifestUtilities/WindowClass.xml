@@ -56,10 +56,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass" /> class, specifying information about the versioning status of the window class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `versioned` parameter controls whether the internal window class name that is used in registration contains the version of the assembly that contains the window class. The value of this attribute can be `yes` or `no`. The default is `yes`. The value `no` should be used only if the same window class is defined by a side-by-side component and an equivalent non-side-by-side component and you want to treat them as the same window class. Note that the usual rules about window class registration apply: only the first component that registers the window class will be able to register it, because it does not have a version applied to it.  
-  
+The `versioned` parameter controls whether the internal window class name that is used in registration contains the version of the assembly that contains the window class. The value of this attribute can be `yes` or `no`. The default is `yes`. The value `no` should be used only if the same window class is defined by a side-by-side component and an equivalent non-side-by-side component and you want to treat them as the same window class. Note that the usual rules about window class registration apply: only the first component that registers the window class will be able to register it, because it does not have a version applied to it.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -112,10 +112,10 @@
           <see langword="yes" /> if the name that is used in registration contains the version of the assembly; otherwise, <see langword="no" />. The default is <see langword="yes" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property controls whether the internal window class name that is used in registration contains the version of the assembly that contains the window class. The value of this attribute can be `yes` or `no`. The default is `yes`. The value `no` should be used only if the same window class is defined by a side-by-side component and an equivalent non-side-by-side component and you want to treat them as the same window class. Note that the usual rules about window class registration apply: only the first component that registers the window class will be able to register it, because it does not have a version applied to it.  
-  
+This property controls whether the internal window class name that is used in registration contains the version of the assembly that contains the window class. The value of this attribute can be `yes` or `no`. The default is `yes`. The value `no` should be used only if the same window class is defined by a side-by-side component and an equivalent non-side-by-side component and you want to treat them as the same window class. Note that the usual rules about window class registration apply: only the first component that registers the window class will be able to register it, because it does not have a version applied to it.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

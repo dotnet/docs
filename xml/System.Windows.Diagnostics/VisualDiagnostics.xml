@@ -14,10 +14,10 @@
     <summary>Enables tooling for analyzing XAML visual trees.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[internalonly_netframework_type](~/includes/internalonly-netframework-type-md.md)]  
-  
+[!INCLUDE[internalonly_netframework_type](~/includes/internalonly-netframework-type-md.md)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,12 +43,12 @@
         <returns>Information about the XAML source document if available; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Source info is available only for Debug assemblies and only if the ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO environment variable is set to anything other than 0 or `false`.  
-  
- [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
-  
+Source info is available only for Debug assemblies and only if the ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO environment variable is set to anything other than 0 or `false`.  
+ 
+[!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -69,12 +69,12 @@
         <summary>Occurs when a managed debugger is attached and any element is added to or removed from the visual tree of another element, regardless of whether either of the elements are descendants of any other specific element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs only when a managed debugger is attached.  
-  
- [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
-  
+This event occurs only when a managed debugger is attached.  
+ 
+[!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

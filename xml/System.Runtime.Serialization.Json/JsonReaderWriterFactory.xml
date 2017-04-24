@@ -24,10 +24,10 @@
     <summary>Produces instances of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read data encoded with JavaScript Object Notation (JSON) from a stream or buffer and map it to an XML Infoset and instances of <see cref="T:System.Xml.XmlDictionaryWriter" /> that can map an XML Infoset to JSON and write JSON-encoded data to a stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] processes JSON messages using a mapping between JSON data and the XML Infoset. Normally, this mapping is hidden from view. However, in some advanced scenarios it may be necessary to manually convert between JSON and XML. In this case, the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> class can be used to create the necessary XML readers and writers. Note that not every XML Infoset element can be mapped to JSON. [!INCLUDE[crabout](~/includes/crabout-md.md)] mapping, see [How to: Serialize and Deserialize JSON Data](~/docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md).  
-  
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] processes JSON messages using a mapping between JSON data and the XML Infoset. Normally, this mapping is hidden from view. However, in some advanced scenarios it may be necessary to manually convert between JSON and XML. In this case, the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> class can be used to create the necessary XML readers and writers. Note that not every XML Infoset element can be mapped to JSON. [!INCLUDE[crabout](~/includes/crabout-md.md)] mapping, see [How to: Serialize and Deserialize JSON Data](~/docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,12 +60,12 @@
         <returns>An <see cref="T:System.Xml.XmlDictionaryReader" /> that can process JavaScript Object Notation (JSON) data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload does not accept an <xref:System.Text.Encoding> parameter. The character encoding (UTF-8, Unicode or Big-Endian Unicode) is auto-detected when the data is read.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
-  
+This overload does not accept an <xref:System.Text.Encoding> parameter. The character encoding (UTF-8, Unicode or Big-Endian Unicode) is auto-detected when the data is read.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,12 +98,12 @@
         <returns>An <see cref="T:System.Xml.XmlDictionaryReader" /> that can read JavaScript Object Notation (JSON).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload does not take an <xref:System.Text.Encoding> parameter. The character encoding (UTF-8, Unicode or Big-Endian Unicode) is auto-detected when the data is read.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
-  
+This overload does not take an <xref:System.Text.Encoding> parameter. The character encoding (UTF-8, Unicode or Big-Endian Unicode) is auto-detected when the data is read.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,12 +140,12 @@
         <returns>An <see cref="T:System.Xml.XmlDictionaryReader" /> that can read JavaScript Object Notation (JSON).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload does not take an <xref:System.Text.Encoding> parameter. The character encoding (UTF-8, Unicode or Big-Endian Unicode) is auto-detected when the data is read.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
-  
+This overload does not take an <xref:System.Text.Encoding> parameter. The character encoding (UTF-8, Unicode or Big-Endian Unicode) is auto-detected when the data is read.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <returns>An <see cref="T:System.Xml.XmlDictionaryReader" /> that can read JavaScript Object Notation (JSON).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,10 +226,10 @@
         <returns>An <see cref="T:System.Xml.XmlDictionaryReader" /> that can read JavaScript Object Notation (JSON).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,10 +260,10 @@
         <returns>An <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes data encoded with JSON to the stream based on an XML Infoset.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default character encoding is UTF-8. When the writer is closed, the stream is closed as well.  
-  
+The default character encoding is UTF-8. When the writer is closed, the stream is closed as well.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,10 +296,10 @@
         <returns>An <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes data encoded with JSON to the stream based on an XML Infoset.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the writer is closed, the stream is closed as well.  
-  
+When the writer is closed, the stream is closed as well.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -413,10 +413,10 @@
         <summary>Creates an <see cref="T:System.Xml.XmlDictionaryReader" /> that can map - streams or buffers encoded with JavaScript Object Notation (JSON) to an XML Infoset.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each of the overloads uses a <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service (DoS) attacks when reading untrusted data. [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
-  
+Each of the overloads uses a <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service (DoS) attacks when reading untrusted data. [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -431,10 +431,10 @@
         <summary>Creates an <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes data encoded with JSON to a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter%2A> static method returns an instance of an <xref:System.Xml.XmlDictionaryWriter> that can map an XML Infoset to a JSON stream. The <xref:System.Xml.XmlDictionaryWriter> is not guaranteed to produce valid JSON. If it is used in a way not supported by the JSON-XML mapping, it may either throw an exception or write an invalid JSON document.  
-  
+The <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter%2A> static method returns an instance of an <xref:System.Xml.XmlDictionaryWriter> that can map an XML Infoset to a JSON stream. The <xref:System.Xml.XmlDictionaryWriter> is not guaranteed to produce valid JSON. If it is used in a way not supported by the JSON-XML mapping, it may either throw an exception or write an invalid JSON document.  
+ 
  ]]></format>
         </remarks>
       </Docs>

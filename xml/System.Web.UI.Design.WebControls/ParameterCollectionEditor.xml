@@ -14,22 +14,22 @@
     <summary>Provides a component editor for the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> object that is specified by the <see langword="Parameters" /> properties of the associated data source control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.Parameter> elements of the <xref:System.Web.UI.WebControls.ParameterCollection> object at design time, as specified by one of the `Parameters` properties. The `Parameters` properties include the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.SelectParameters%2A> and <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters%2A> properties of the <xref:System.Web.UI.WebControls.ObjectDataSource>, <xref:System.Web.UI.WebControls.SqlDataSource>, and other data source controls.  
+The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.Parameter> elements of the <xref:System.Web.UI.WebControls.ParameterCollection> object at design time, as specified by one of the `Parameters` properties. The `Parameters` properties include the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.SelectParameters%2A> and <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters%2A> properties of the <xref:System.Web.UI.WebControls.ObjectDataSource>, <xref:System.Web.UI.WebControls.SqlDataSource>, and other data source controls.  
+ 
+The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> is invoked by selecting the ellipsis (**…**) button on one of the `Parameters` properties in the **Properties** grid of the visual designer.  
+ 
+The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue%2A> method edits the <xref:System.Web.UI.WebControls.Parameter> elements of the <xref:System.Web.UI.WebControls.ParameterCollection> for the associated data source control. The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.GetEditStyle%2A> method gets the editing style that is associated with this editor.  
+ 
   
- The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> is invoked by selecting the ellipsis (**…**) button on one of the `Parameters` properties in the **Properties** grid of the visual designer.  
-  
- The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue%2A> method edits the <xref:System.Web.UI.WebControls.Parameter> elements of the <xref:System.Web.UI.WebControls.ParameterCollection> for the associated data source control. The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.GetEditStyle%2A> method gets the editing style that is associated with this editor.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.ComponentModel.EditorAttribute> attribute to associate the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> and <xref:System.Drawing.Design.UITypeEditor> (the collection editor base class) classes with a `SelectParameters` property in a custom control.  
-  
- [!code-csharp[System.Web.UI.Design.WebControls.DesignerEditors#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.DesignerEditors/CS/DesignerEditors.cs#2)]
- [!code-vb[System.Web.UI.Design.WebControls.DesignerEditors#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.DesignerEditors/VB/DesignerEditors.vb#2)]  
-  
+The following code example shows how to use the <xref:System.ComponentModel.EditorAttribute> attribute to associate the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> and <xref:System.Drawing.Design.UITypeEditor> (the collection editor base class) classes with a `SelectParameters` property in a custom control.  
+ 
+[!code-csharp[System.Web.UI.Design.WebControls.DesignerEditors#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.DesignerEditors/CS/DesignerEditors.cs#2)]
+[!code-vb[System.Web.UI.Design.WebControls.DesignerEditors#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.DesignerEditors/VB/DesignerEditors.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework constructs a new instance of the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> class when the page designer selects the ellipsis (**…**) button on one of the `Parameters` properties in the visual designer's **Properties** grid while designing the associated data source control.  
-  
+The .NET Framework constructs a new instance of the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> class when the page designer selects the ellipsis (**…**) button on one of the `Parameters` properties in the visual designer's **Properties** grid while designing the associated data source control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,12 +81,12 @@
         <returns>The new <paramref name="value" />; otherwise, if the value of the object has not changed, <paramref name="value" /> unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue%2A> method extracts the associated data source control and the data source control designer that is associated with that control from the `context` parameter. The supported data source controls include the <xref:System.Web.UI.WebControls.ObjectDataSource> and <xref:System.Web.UI.WebControls.SqlDataSource> controls, with their corresponding <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> and <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner> designers.  
-  
- Once the data is extracted, the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue%2A> calls back to the data source control designer to display an editing dialog box that is used to edit a <xref:System.Web.UI.WebControls.ParameterCollection> object that is referenced by one of the `Parameters` properties of the data source control.  
-  
+The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue%2A> method extracts the associated data source control and the data source control designer that is associated with that control from the `context` parameter. The supported data source controls include the <xref:System.Web.UI.WebControls.ObjectDataSource> and <xref:System.Web.UI.WebControls.SqlDataSource> controls, with their corresponding <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> and <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner> designers.  
+ 
+Once the data is extracted, the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue%2A> calls back to the data source control designer to display an editing dialog box that is used to edit a <xref:System.Web.UI.WebControls.ParameterCollection> object that is referenced by one of the `Parameters` properties of the data source control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -114,10 +114,10 @@
         <returns>The editing style that is associated with this editor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.GetEditStyle%2A> method always returns the <xref:System.Drawing.Design.UITypeEditorEditStyle> value, which indicates that the user interface for the editor is a modal dialog box.  
-  
+The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.GetEditStyle%2A> method always returns the <xref:System.Drawing.Design.UITypeEditorEditStyle> value, which indicates that the user interface for the editor is a modal dialog box.  
+ 
  ]]></format>
         </remarks>
       </Docs>

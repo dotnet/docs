@@ -25,13 +25,13 @@
     <summary>Used to represent the target of a <see cref="T:System.Linq.Expressions.GotoExpression" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create an expression that contains a <xref:System.Linq.Expressions.LabelTarget> object by using the <xref:System.Linq.Expressions.Expression.Label%2A> method.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#43](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#43)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#43](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#43)]  
-  
+The following example demonstrates how to create an expression that contains a <xref:System.Linq.Expressions.LabelTarget> object by using the <xref:System.Linq.Expressions.Expression.Label%2A> method.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#43](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#43)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#43](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#43)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <value>The name of the label.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The label's name is provided for information purposes only.  
-  
+The label's name is provided for information purposes only.  
+ 
  ]]></format>
         </remarks>
       </Docs>

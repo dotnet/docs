@@ -69,10 +69,10 @@
         <value>A collection that contains the attributes that will be added to the property. The collection is empty if no attributes will be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The attributes are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated> event is raised.  
-  
+The attributes are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
         <value>A collection that contains the get statements to be added to the property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `List(CodeStatement)` is used to specify statements to add to the get accessor of the property. The statements are inserted after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated> event is raised.  
-  
+The `List(CodeStatement)` is used to specify statements to add to the get accessor of the property. The statements are inserted after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <value>A collection that contains the set statements to be added to the property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `List(CodeStatement)` is used to specify statements to add to the set accessor of the property. The statements are inserted after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated> event is raised.  
-  
+The `List(CodeStatement)` is used to specify statements to add to the set accessor of the property. The statements are inserted after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <value>The type of the property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the common language runtime (CLR) equivalent type of the property. It can also be used to specify a new base type. This property applies only to navigation properties.  
-  
+This property returns the common language runtime (CLR) equivalent type of the property. It can also be used to specify a new base type. This property applies only to navigation properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

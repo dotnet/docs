@@ -14,14 +14,14 @@
     <summary>Represents information used to configure <see cref="T:System.Net.Sockets.Socket" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class corresponds to the [\&lt;socket\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/socket-element-network-settings.md) configuration element.  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
- This class is used to specify whether completion ports are used for connecting, whether completion ports are used for accepting connections, and the default IP protection level for an IPv6 socket.  
-  
+This class corresponds to the [\&lt;socket\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/socket-element-network-settings.md) configuration element.  
+ 
+This class provides programmatic access to information that can be stored in configuration files.  
+ 
+This class is used to specify whether completion ports are used for connecting, whether completion ports are used for accepting connections, and the default IP protection level for an IPv6 socket.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.SocketElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor adds the <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept%2A> and <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> properties to the <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept%2A> collection.  
-  
+This constructor adds the <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept%2A> and <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> properties to the <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <value>The value of the <see cref="T:System.Net.Sockets.IPProtectionLevel" /> for the current instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A> property enables configuration of a restriction for an IPv6 socket to a specified scope, such as addresses with the same link local or site local prefix. This option enables applications to place access restrictions on IPv6 sockets. Such restrictions enable an application running on a private LAN to simply and robustly harden itself against external attacks. This option widens or narrows the scope of a listening socket, enabling unrestricted access from public and private users when appropriate, or restricting access only to the same site, as required. This option has three defined protection levels specified in the <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=fullName> enumeration.  
-  
+The <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A> property enables configuration of a restriction for an IPv6 socket to a specified scope, such as addresses with the same link local or site local prefix. This option enables applications to place access restrictions on IPv6 sockets. Such restrictions enable an application running on a private LAN to simply and robustly harden itself against external attacks. This option widens or narrows the scope of a listening socket, enabling unrestricted access from public and private users when appropriate, or restricting access only to the same site, as required. This option has three defined protection levels specified in the <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=fullName> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

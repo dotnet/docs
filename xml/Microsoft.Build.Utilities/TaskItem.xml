@@ -18,12 +18,12 @@
     <summary>Defines a single item of the project as it is passed into a task.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.Utilities.TaskItem> objects do not exactly correspond to item elements in project files. If they did, then tasks would have access to data that was not explicitly passed into the task through the project file. This is not a security issue, but rather an issue with project file clarity and transparency.  
-  
- This class has to be sealed since the build engine instantiates its own copy of this type. If a third party were to extend this class, then the build engine will yield an undesired behavior.  
-  
+<xref:Microsoft.Build.Utilities.TaskItem> objects do not exactly correspond to item elements in project files. If they did, then tasks would have access to data that was not explicitly passed into the task through the project file. This is not a security issue, but rather an issue with project file clarity and transparency.  
+ 
+This class has to be sealed since the build engine instantiates its own copy of this type. If a third party were to extend this class, then the build engine will yield an undesired behavior.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.TaskItem" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor enables this type to be COM-creatable.  
-  
+This constructor enables this type to be COM-creatable.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <returns>An <see cref="T:System.Collections.IDictionary" /> that represents a clone of the custom metadata.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not include built-in metadata.  
-  
+This method does not include built-in metadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,12 +152,12 @@
         <summary>Copies the item-specification metadata to the specified destination task item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the metadata already exists on the destination item, then it is not overwritten. The original metadata value supersedes the copied metadata value.  
-  
- This method does not copy the item specification to the destination task item.  
-  
+If the metadata already exists on the destination item, then it is not overwritten. The original metadata value supersedes the copied metadata value.  
+ 
+This method does not copy the item specification to the destination task item.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
           <see langword="null" /> to specify an infinite lifetime.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Otherwise, a limited lease of 5 minutes will result; and task instances can expire if they take a long time to process.  
-  
+Otherwise, a limited lease of 5 minutes will result; and task instances can expire if they take a long time to process.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,16 +233,16 @@
         <value>A <see cref="T:System.String" /> that represents the item specification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> for the following item declaration in a project file is `File.cs`.  
-  
+The <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> for the following item declaration in a project file is `File.cs`.  
+ 
 ```  
 <ItemGroup>  
-    <Compile Include="File.cs"/>  
+   <Compile Include="File.cs"/>  
 </ItemGroup>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

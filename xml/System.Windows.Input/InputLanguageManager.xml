@@ -14,20 +14,20 @@
     <summary>Provides facilities for managing input languages in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Additional languages can be registered by using the Regional and Language Options control panel. From the Languages tab, select "Text Services and input languages", then click the "Details" button to register additional languages. The following dialog appears.  
+Additional languages can be registered by using the Regional and Language Options control panel. From the Languages tab, select "Text Services and input languages", then click the "Details" button to register additional languages. The following dialog appears.  
+ 
+![Text services and input languages dialog.](~/add/media/tsf-dialog.PNG "Text services and input languages dialog.")  
+ 
   
- ![Text services and input languages dialog.](~/add/media/tsf-dialog.PNG "Text services and input languages dialog.")  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to set the input language of a <xref:System.Windows.Controls.TextBox> element.  
-  
- [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
- [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
-  
+The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to set the input language of a <xref:System.Windows.Controls.TextBox> element.  
+ 
+[!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+[!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,13 +51,13 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to enumerate the available input languages.  
-  
- [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
- [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
-  
+The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to enumerate the available input languages.  
+ 
+[!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+[!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,13 +81,13 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to access the language manager associated with the current context.  
-  
- [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
- [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
-  
+The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to access the language manager associated with the current context.  
+ 
+[!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+[!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,13 +116,13 @@
  The default value is <see cref="P:System.Globalization.CultureInfo.InvariantCulture" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to get the current input language.  
-  
- [!code-csharp[languageManager#3](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#3)]
- [!code-vb[languageManager#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#3)]  
-  
+The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to get the current input language.  
+ 
+[!code-csharp[languageManager#3](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#3)]
+[!code-vb[languageManager#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when an attempt is made to set this property to **null**.</exception>
@@ -157,13 +157,13 @@
         <returns>A <see cref="T:System.Globalization.CultureInfo" /> object representing the input language for the specified dependency object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to get the input language of a <xref:System.Windows.Controls.TextBox> element.  
-  
- [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
- [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
-  
+The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to get the input language of a <xref:System.Windows.Controls.TextBox> element.  
+ 
+[!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+[!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
@@ -358,13 +358,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Input.InputLanguageManager.InputLanguage" /> attached property on the specified dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to set the input language of a <xref:System.Windows.Controls.TextBox> element.  
-  
- [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
- [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
-  
+The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to set the input language of a <xref:System.Windows.Controls.TextBox> element.  
+ 
+[!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+[!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>

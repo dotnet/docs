@@ -77,16 +77,16 @@
           <see langword="true" /> if the key identifier clause is supported by this handler; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The supported key identifier clause types are:  
-  
+The supported key identifier clause types are:  
+ 
 1.  <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>  
-  
+ 
 2.  <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>  
-  
+ 
 3.  <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -114,10 +114,10 @@
         <returns>The key identifier clause that was deserialized from the XML or <see langword="null" /> if a key identifier clause could not be read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer.ReadKeyIdentifierClause%2A> method reads `<ds:X509IssuerSerial>`, `<ds:X509SKI>`, and `<ds:X509Certificate>` elements and returns the first one found as a <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>, a <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>, or a <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>. If one of these elements is not found under the `<ds:X509Data>` element, the method returns `null`.  
-  
+The <xref:System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer.ReadKeyIdentifierClause%2A> method reads `<ds:X509IssuerSerial>`, `<ds:X509SKI>`, and `<ds:X509Certificate>` elements and returns the first one found as a <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>, a <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>, or a <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>. If one of these elements is not found under the `<ds:X509Data>` element, the method returns `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -148,16 +148,16 @@
         <summary>Serializes the specified key identifier clause.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The supported key identifier clause types are:  
-  
+The supported key identifier clause types are:  
+ 
 1.  <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>  
-  
+ 
 2.  <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>  
-  
+ 
 3.  <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

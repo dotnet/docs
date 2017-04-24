@@ -19,10 +19,10 @@
     <summary>Handles the XML elements used to configure XML serialization using the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used to handle the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md), specifically, to allow the addition of types to the collection of known types.  
-  
+This class is used to handle the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md), specifically, to allow the addition of types to the collection of known types.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

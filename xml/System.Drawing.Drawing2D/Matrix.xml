@@ -18,43 +18,43 @@
     <summary>Encapsulates a 3-by-3 affine matrix that represents a geometric transform. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] you can store an affine transformation in a <xref:System.Drawing.Drawing2D.Matrix> object. Because the third column of a matrix that represents an affine transformation is always (0, 0, 1), you specify only the six numbers in the first two columns when you construct a <xref:System.Drawing.Drawing2D.Matrix> object. The statement `Matrix myMatrix = new Matrix(0, 1, -1, 0, 3, 4)` constructs the matrix shown in the following figure.  
-  
- ![Transformations](~/add/media/aboutgdip05-art10.gif "Transformations")  
-  
+In [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] you can store an affine transformation in a <xref:System.Drawing.Drawing2D.Matrix> object. Because the third column of a matrix that represents an affine transformation is always (0, 0, 1), you specify only the six numbers in the first two columns when you construct a <xref:System.Drawing.Drawing2D.Matrix> object. The statement `Matrix myMatrix = new Matrix(0, 1, -1, 0, 3, 4)` constructs the matrix shown in the following figure.  
+ 
+![Transformations](~/add/media/aboutgdip05-art10.gif "Transformations")  
+ 
 ## Composite Transformations  
- A composite transformation is a sequence of transformations, one followed by the other. Consider the matrices and transformations in the following list:  
-  
+A composite transformation is a sequence of transformations, one followed by the other. Consider the matrices and transformations in the following list:  
+ 
 |||  
 |-|-|  
 |Matrix A|Rotate 90 degrees|  
 |Matrix B|Scale by a factor of 2 in the x direction|  
 |Matrix C|Translate 3 units in the y direction|  
-  
- If we start with the point (2, 1) — represented by the matrix [2 1 1] — and multiply by A, then B, then C, the point (2, 1) will undergo the three transformations in the order listed.  
-  
- [2 1 1]ABC = [-2 5 1]  
-  
- Rather than store the three parts of the composite transformation in three separate matrices, you can multiply A, B, and C together to get a single 3×3 matrix that stores the entire composite transformation. Suppose ABC = D. Then a point multiplied by D gives the same result as a point multiplied by A, then B, then C.  
-  
- [2 1 1]D = [-2 5 1]  
-  
- The following illustration shows the matrices A, B, C, and D.  
-  
- ![Transformations](~/add/media/aboutgdip05-art12.gif "Transformations")  
-  
- The fact that the matrix of a composite transformation can be formed by multiplying the individual transformation matrices means that any sequence of affine transformations can be stored in a single <xref:System.Drawing.Drawing2D.Matrix> object.  
-  
+ 
+If we start with the point (2, 1) — represented by the matrix [2 1 1] — and multiply by A, then B, then C, the point (2, 1) will undergo the three transformations in the order listed.  
+ 
+[2 1 1]ABC = [-2 5 1]  
+ 
+Rather than store the three parts of the composite transformation in three separate matrices, you can multiply A, B, and C together to get a single 3×3 matrix that stores the entire composite transformation. Suppose ABC = D. Then a point multiplied by D gives the same result as a point multiplied by A, then B, then C.  
+ 
+[2 1 1]D = [-2 5 1]  
+ 
+The following illustration shows the matrices A, B, C, and D.  
+ 
+![Transformations](~/add/media/aboutgdip05-art12.gif "Transformations")  
+ 
+The fact that the matrix of a composite transformation can be formed by multiplying the individual transformation matrices means that any sequence of affine transformations can be stored in a single <xref:System.Drawing.Drawing2D.Matrix> object.  
+ 
 > [!CAUTION]
 >  The order of a composite transformation is important. In general, rotate, then scale, then translate is not the same as scale, then rotate, then translate. Similarly, the order of matrix multiplication is important. In general, ABC is not the same as BAC.  
-  
- The <xref:System.Drawing.Drawing2D.Matrix> class provides several methods for building a composite transformation: <xref:System.Drawing.Drawing2D.Matrix.Multiply%2A>, <xref:System.Drawing.Drawing2D.Matrix.Rotate%2A>, <xref:System.Drawing.Drawing2D.Matrix.RotateAt%2A>, <xref:System.Drawing.Drawing2D.Matrix.Scale%2A>, <xref:System.Drawing.Drawing2D.Matrix.Shear%2A>, and <xref:System.Drawing.Drawing2D.Matrix.Translate%2A>. The following example creates the matrix of a composite transformation that first rotates 30 degrees, then scales by a factor of 2 in the y direction, and then translates 5 units in the x direction:  
-  
- [!code-csharp[System.Drawing.CoordinateSystems#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/CS/Class1.cs#11)]
- [!code-vb[System.Drawing.CoordinateSystems#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/VB/Class1.vb#11)]  
-  
+ 
+The <xref:System.Drawing.Drawing2D.Matrix> class provides several methods for building a composite transformation: <xref:System.Drawing.Drawing2D.Matrix.Multiply%2A>, <xref:System.Drawing.Drawing2D.Matrix.Rotate%2A>, <xref:System.Drawing.Drawing2D.Matrix.RotateAt%2A>, <xref:System.Drawing.Drawing2D.Matrix.Scale%2A>, <xref:System.Drawing.Drawing2D.Matrix.Shear%2A>, and <xref:System.Drawing.Drawing2D.Matrix.Translate%2A>. The following example creates the matrix of a composite transformation that first rotates 30 degrees, then scales by a factor of 2 in the y direction, and then translates 5 units in the x direction:  
+ 
+[!code-csharp[System.Drawing.CoordinateSystems#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/CS/Class1.cs#11)]
+[!code-vb[System.Drawing.CoordinateSystems#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/VB/Class1.vb#11)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,10 +93,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.Matrix" /> class to the geometric transform defined by the specified rectangle and array of points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method initializes the new Matrix such that it represents the geometric transform that maps the rectangle specified by the `rect` parameter to the parallelogram defined by the three points in the `plgpts` parameter. The upper-left corner of the rectangle is mapped to the first point in the `plgpts` array, the upper-right corner is mapped to the second point, and the lower-left corner is mapped to the third point. The lower-right point of the parallelogram is implied by the first three.  
-  
+This method initializes the new Matrix such that it represents the geometric transform that maps the rectangle specified by the `rect` parameter to the parallelogram defined by the three points in the `plgpts` parameter. The upper-left corner of the rectangle is mapped to the first point in the `plgpts` array, the upper-right corner is mapped to the second point, and the lower-left corner is mapped to the third point. The lower-right point of the parallelogram is implied by the first three.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.Matrix" /> class to the geometric transform defined by the specified rectangle and array of points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method initializes the new <xref:System.Drawing.Drawing2D.Matrix> such that it represents the geometric transform that maps the rectangle specified by the `rect` parameter to the parallelogram defined by the three points in the `plgpts` parameter. The upper-left corner of the rectangle is mapped to the first point in the `plgpts` array, the upper-right corner is mapped to the second point, and the lower-left corner is mapped to the third point. The lower-right point of the parallelogram is implied by the first three.  
-  
+This method initializes the new <xref:System.Drawing.Drawing2D.Matrix> such that it represents the geometric transform that maps the rectangle specified by the `rect` parameter to the parallelogram defined by the three points in the `plgpts` parameter. The upper-left corner of the rectangle is mapped to the first point in the `plgpts` array, the upper-right corner is mapped to the second point, and the lower-left corner is mapped to the third point. The lower-right point of the parallelogram is implied by the first three.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,10 +192,10 @@
         <summary>Releases all resources used by this <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `Dispose` allows the resources used by this <xref:System.Drawing.Drawing2D.Matrix> object to be reallocated for other purposes.  
-  
+Calling `Dispose` allows the resources used by this <xref:System.Drawing.Drawing2D.Matrix> object to be reallocated for other purposes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <value>An array of floating-point values that represents the elements of this <see cref="T:System.Drawing.Drawing2D.Matrix" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements m11, m12, m21, m22, dx, and dy of the <xref:System.Drawing.Drawing2D.Matrix> are represented by the values in the array in that order.  
-  
+The elements m11, m12, m21, m22, dx, and dy of the <xref:System.Drawing.Drawing2D.Matrix> are represented by the values in the array in that order.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -301,15 +301,15 @@
         <summary>Inverts this <see cref="T:System.Drawing.Drawing2D.Matrix" />, if it is invertible.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a matrix and inverts it:  
-  
+The following code example creates a matrix and inverts it:  
+ 
 ```csharp  
 Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);  
- myMatrix.Invert();  
+myMatrix.Invert();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,10 +370,10 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Multiplies this <see cref="T:System.Drawing.Drawing2D.Matrix" /> by the matrix specified in the <paramref name="matrix" /> parameter, by prepending the specified <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example, see <xref:System.Drawing.Drawing2D.Matrix.Multiply%2A>.  
-  
+For an example, see <xref:System.Drawing.Drawing2D.Matrix.Multiply%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,39 +400,39 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Multiplies this <see cref="T:System.Drawing.Drawing2D.Matrix" /> by the matrix specified in the <paramref name="matrix" /> parameter, and in the order specified in the <paramref name="order" /> parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified order is <xref:System.Drawing.Drawing2D.MatrixOrder>, this <xref:System.Drawing.Drawing2D.Matrix> is multiplied by the specified matrix in a prepended order. If the specified order is <xref:System.Drawing.Drawing2D.MatrixOrder>, this <xref:System.Drawing.Drawing2D.Matrix> is multiplied by the specified matrix in an appended order.  
+If the specified order is <xref:System.Drawing.Drawing2D.MatrixOrder>, this <xref:System.Drawing.Drawing2D.Matrix> is multiplied by the specified matrix in a prepended order. If the specified order is <xref:System.Drawing.Drawing2D.MatrixOrder>, this <xref:System.Drawing.Drawing2D.Matrix> is multiplied by the specified matrix in an appended order.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+ 
 -   Creates three matrices.  
-  
+ 
 -   Lists the contents of matrix 1 to the screen.  
-  
+ 
 -   Multiplies matrix 1 by matrix 2 and stores the result in matrix 1.  
-  
+ 
 -   Lists the contents of matrix 1 to the screen.  
-  
+ 
 -   Multiplies the result stored in matrix 1 by matrix 3, and again stores the result in matrix 1.  
-  
+ 
 -   Lists the contents of matrix 1 to the screen.  
-  
+ 
 -   Draws a rectangle to the screen prior to applying the matrix 1 transform (the blue rectangle).  
-  
+ 
 -   Applies the transform to the rectangle.  
-  
+ 
 -   Draws the transformed rectangle to the screen (the red rectangle), using the same coordinates as the previous rectangle.  
-  
- Notice that the red rectangle has been scaled by a factor of two in the horizontal direction, then rotated 90 degrees, and then moved (translated) 250 points in the x direction and 50 points in the y direction.  
-  
- [!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#1)]
- [!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#1)]  
-  
+ 
+Notice that the red rectangle has been scaled by a factor of two in the horizontal direction, then rotated 90 degrees, and then moved (translated) 250 points in the x direction and 50 points in the y direction.  
+ 
+[!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#1)]
+[!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -490,39 +490,39 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Resets this <see cref="T:System.Drawing.Drawing2D.Matrix" /> to have the elements of the identity matrix.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements on the main diagonal of the identity matrix are 1. All other elements of the identity matrix are 0.  
+The elements on the main diagonal of the identity matrix are 1. All other elements of the identity matrix are 0.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+ 
 -   Creates a scaling matrix.  
-  
+ 
 -   Lists the matrix elements to the screen.  
-  
+ 
 -   Resets the matrix to identity.  
-  
+ 
 -   Lists the elements to the screen.  
-  
+ 
 -   Translates the matrix by 50 points in the x-axis and 40 points in the y-axis.  
-  
+ 
 -   Lists the elements of the translated matrix to the screen.  
-  
+ 
 -   Draws a rectangle is drawn to the screen prior to applying the matrix transform (the blue rectangle).  
-  
+ 
 -   Applies the transform to the rectangle.  
-  
+ 
 -   Draws the transformed rectangle is drawn to the screen (the red rectangle), using the same coordinates as the previous rectangle.  
-  
- Notice that the red rectangle was not scaled (because of the reset) but was translated in the x-axis and y-axis.  
-  
- [!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#2)]
- [!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#2)]  
-  
+ 
+Notice that the red rectangle was not scaled (because of the reset) but was translated in the x-axis and y-axis.  
+ 
+[!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#2)]
+[!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -547,10 +547,10 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Prepend to this <see cref="T:System.Drawing.Drawing2D.Matrix" /> a clockwise rotation, around the origin and by the specified angle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example, see <xref:System.Drawing.Drawing2D.Matrix.Rotate%28System.Single%2CSystem.Drawing.Drawing2D.MatrixOrder%29>.  
-  
+For an example, see <xref:System.Drawing.Drawing2D.Matrix.Rotate%28System.Single%2CSystem.Drawing.Drawing2D.MatrixOrder%29>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -577,24 +577,24 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies a clockwise rotation of an amount specified in the <paramref name="angle" /> parameter, around the origin (zero x and y coordinates) for this <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+ 
 -   Draws a rectangle to the screen prior to applying a rotation transform (the blue rectangle).  
-  
+ 
 -   Creates a matrix and rotates it 45 degrees.  
-  
+ 
 -   Applies this matrix transform to the rectangle.  
-  
+ 
 -   Draws the transformed rectangle to the screen (the red rectangle).  
-  
- Notice that the red rectangle has been rotated around the 0, 0 screen coordinates.  
-  
- [!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#3)]
- [!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#3)]  
-  
+ 
+Notice that the red rectangle has been rotated around the 0, 0 screen coordinates.  
+ 
+[!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#3)]
+[!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#3)]
+[!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -621,14 +621,14 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies a clockwise rotation to this <see cref="T:System.Drawing.Drawing2D.Matrix" /> around the point specified in the <paramref name="point" /> parameter, and by prepending the rotation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates using a <xref:System.Drawing.Drawing2D.Matrix> and the <xref:System.Drawing.Drawing2D.GraphicsPath.Transform%2A> method to rotate a string. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `DrawVerticalStringFromBottomUp` method in the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#5)]
- [!code-csharp[System.Drawing.MiscExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#5)]
- [!code-vb[System.Drawing.MiscExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#5)]  
-  
+The following code example demonstrates using a <xref:System.Drawing.Drawing2D.Matrix> and the <xref:System.Drawing.Drawing2D.GraphicsPath.Transform%2A> method to rotate a string. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `DrawVerticalStringFromBottomUp` method in the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#5)]
+[!code-csharp[System.Drawing.MiscExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#5)]
+[!code-vb[System.Drawing.MiscExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,24 +657,24 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies a clockwise rotation about the specified point to this <see cref="T:System.Drawing.Drawing2D.Matrix" /> in the specified order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+ 
 -   Draws a rectangle to the screen prior to applying a rotation transform (the blue rectangle).  
-  
+ 
 -   Creates a matrix and rotates it 45 degrees around a specified point.  
-  
+ 
 -   Applies this matrix transform is to the rectangle.  
-  
+ 
 -   Draws the transformed rectangle to the screen (the red rectangle).  
-  
- Notice that the red rectangle has been rotated around the upper left-hand corner of the rectangle (the rotation point specified the <xref:System.Drawing.Drawing2D.Matrix.RotateAt%2A> method).  
-  
- [!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#4)]
- [!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#4)]
- [!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#4)]  
-  
+ 
+Notice that the red rectangle has been rotated around the upper left-hand corner of the rectangle (the rotation point specified the <xref:System.Drawing.Drawing2D.Matrix.RotateAt%2A> method).  
+ 
+[!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#4)]
+[!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#4)]
+[!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -701,10 +701,10 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies the specified scale vector to this <see cref="T:System.Drawing.Drawing2D.Matrix" /> by prepending the scale vector.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example, see <xref:System.Drawing.Drawing2D.Matrix.Scale%28System.Single%2CSystem.Single%2CSystem.Drawing.Drawing2D.MatrixOrder%29>.  
-  
+For an example, see <xref:System.Drawing.Drawing2D.Matrix.Scale%28System.Single%2CSystem.Single%2CSystem.Drawing.Drawing2D.MatrixOrder%29>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -733,24 +733,24 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies the specified scale vector (<paramref name="scaleX" /> and <paramref name="scaleY" />) to this <see cref="T:System.Drawing.Drawing2D.Matrix" /> using the specified order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+ 
 -   Draws a rectangle to the screen prior to applying a scaling transform (the blue rectangle).  
-  
+ 
 -   Creates a matrix and scales it by 3 in the x-axis and 2 in the y-axis.  
-  
+ 
 -   Applies this matrix transform to the rectangle.  
-  
+ 
 -   Draws the transformed rectangle to the screen (the red rectangle).  
-  
- Notice that the red rectangle has been scaled by a factor of 3 in the x-axis and by 2 in the y-axis, including the upper left-hand corner of the rectangle (the beginning point of the rectangle).  
-  
- [!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#5)]
- [!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#5)]
- [!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#5)]  
-  
+ 
+Notice that the red rectangle has been scaled by a factor of 3 in the x-axis and by 2 in the y-axis, including the upper left-hand corner of the rectangle (the beginning point of the rectangle).  
+ 
+[!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#5)]
+[!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#5)]
+[!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -777,29 +777,29 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies the specified shear vector to this <see cref="T:System.Drawing.Drawing2D.Matrix" /> by prepending the shear transformation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The transformation applied in this method is a pure shear only if one of the parameters is 0. Applied to a rectangle at the origin, when the `shearY` factor is 0, the transformation moves the bottom edge horizontally by `shearX` times the height of the rectangle. When the `shearX` factor is 0, it moves the right edge vertically by `shearY` times the width of the rectangle. Caution is in order when both parameters are nonzero, because the results are hard to predict. For example, if both factors are 1, the transformation is singular (hence noninvertible), squeezing the entire plane to a single line.  
+The transformation applied in this method is a pure shear only if one of the parameters is 0. Applied to a rectangle at the origin, when the `shearY` factor is 0, the transformation moves the bottom edge horizontally by `shearX` times the height of the rectangle. When the `shearX` factor is 0, it moves the right edge vertically by `shearY` times the width of the rectangle. Caution is in order when both parameters are nonzero, because the results are hard to predict. For example, if both factors are 1, the transformation is singular (hence noninvertible), squeezing the entire plane to a single line.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following action:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following action:  
+ 
 -   Draws a rectangle to the screen, using a green pen, prior to applying a scaling transform.  
-  
+ 
 -   Creates a <xref:System.Drawing.Drawing2D.Matrix> and uses it to set a world-coordinate transform for the <xref:System.Drawing.Graphics>.  
-  
+ 
 -   Draws another rectangle using a red pen.  
-  
+ 
 -   Draws an ellipse using a blue pen.  
-  
- The result is a green rectangle, a red parallelogram and a transformed, blue ellipse. Notice that the green rectangle (drawn prior to setting the transform) directly uses the coordinates supplied in the <xref:System.Drawing.Graphics.DrawRectangle%2A> call. The other two figures are transformed prior to drawing. The rectangle is transformed to a parallelogram (red), and the ellipse (blue) is transformed to fit into the transformed parallelogram. Notice the bottom of the rectangle is moved (sheared) in the x-axis by a factor of two times the height of the rectangle, thus forming the parallelogram.  
-  
- [!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#6)]
- [!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#6)]
- [!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#6)]  
-  
+ 
+The result is a green rectangle, a red parallelogram and a transformed, blue ellipse. Notice that the green rectangle (drawn prior to setting the transform) directly uses the coordinates supplied in the <xref:System.Drawing.Graphics.DrawRectangle%2A> call. The other two figures are transformed prior to drawing. The rectangle is transformed to a parallelogram (red), and the ellipse (blue) is transformed to fit into the transformed parallelogram. Notice the bottom of the rectangle is moved (sheared) in the x-axis by a factor of two times the height of the rectangle, thus forming the parallelogram.  
+ 
+[!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#6)]
+[!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#6)]
+[!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -828,15 +828,15 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies the specified shear vector to this <see cref="T:System.Drawing.Drawing2D.Matrix" /> in the specified order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The transformation applied in this method is a pure shear only if one of the parameters is 0. Applied to a rectangle at the origin, when the `shearY` factor is 0, the transformation moves the bottom edge horizontally by `shearX` times the height of the rectangle. When the `shearX` factor is 0, it moves the right edge vertically by `shearY` times the width of the rectangle. Caution is in order when both parameters are nonzero, because the results are hard to predict. For example, if both factors are 1, the transformation is singular (hence noninvertible), squeezing the entire plane to a single line.  
+The transformation applied in this method is a pure shear only if one of the parameters is 0. Applied to a rectangle at the origin, when the `shearY` factor is 0, the transformation moves the bottom edge horizontally by `shearX` times the height of the rectangle. When the `shearX` factor is 0, it moves the right edge vertically by `shearY` times the width of the rectangle. Caution is in order when both parameters are nonzero, because the results are hard to predict. For example, if both factors are 1, the transformation is singular (hence noninvertible), squeezing the entire plane to a single line.  
+ 
   
-   
-  
+ 
 ## Examples  
- For an example, see <xref:System.Drawing.Drawing2D.Matrix.Shear%28System.Single%2CSystem.Single%29>.  
-  
+For an example, see <xref:System.Drawing.Drawing2D.Matrix.Shear%28System.Single%2CSystem.Single%29>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -861,26 +861,26 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies the geometric transform represented by this <see cref="T:System.Drawing.Drawing2D.Matrix" /> to a specified array of points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+ 
 -   Creates an array of points that form a rectangle.  
-  
+ 
 -   Draws this array of points (to the screen prior to applying a scaling transform (the blue rectangle).  
-  
+ 
 -   Creates a matrix and scales it by 3 in the x-axis and 2 in the y-axis.  
-  
+ 
 -   Applies this matrix transform to the array of points.  
-  
+ 
 -   Draws the transformed array to the screen (the red rectangle).  
-  
- Notice that the red rectangle has been scaled by a factor of 3 in the x-axis and by 2 in the y-axis, including the upper left-hand corner of the rectangle (the beginning point of the rectangle).  
-  
- [!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#7)]
- [!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#7)]
- [!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#7)]  
-  
+ 
+Notice that the red rectangle has been scaled by a factor of 3 in the x-axis and by 2 in the y-axis, including the upper left-hand corner of the rectangle (the beginning point of the rectangle).  
+ 
+[!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#7)]
+[!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#7)]
+[!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -905,10 +905,10 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies the geometric transform represented by this <see cref="T:System.Drawing.Drawing2D.Matrix" /> to a specified array of points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example, see <xref:System.Drawing.Drawing2D.Matrix.TransformPoints%28System.Drawing.Point%5B%5D%29>.  
-  
+For an example, see <xref:System.Drawing.Drawing2D.Matrix.TransformPoints%28System.Drawing.Point%5B%5D%29>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -933,28 +933,28 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies only the scale and rotate components of this <see cref="T:System.Drawing.Drawing2D.Matrix" /> to the specified array of points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+ 
 -   Creates an array of points that form a rectangle.  
-  
+ 
 -   Draws this array of points to the screen prior to applying a scaling transform (the blue rectangle).  
-  
+ 
 -   Creates a matrix and scales it by 3 in the x-axis and 2 in the y-axis, and translates it by 100 in both axes.  
-  
+ 
 -   Lists the matrix elements to the screen.  
-  
+ 
 -   Applies this matrix transform to the array of points.  
-  
+ 
 -   Draws the transformed array to the screen (the red rectangle).  
-  
- Notice that the red rectangle has been scaled by a factor of 3 in the x-axis and by 2 in the y-axis, including the upper left-hand corner of the rectangle (the beginning point of the rectangle) but the translation vector (the last two elements of the matrix) is ignored.  
-  
- [!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#8)]
- [!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#8)]
- [!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#8)]  
-  
+ 
+Notice that the red rectangle has been scaled by a factor of 3 in the x-axis and by 2 in the y-axis, including the upper left-hand corner of the rectangle (the beginning point of the rectangle) but the translation vector (the last two elements of the matrix) is ignored.  
+ 
+[!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#8)]
+[!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#8)]
+[!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -979,10 +979,10 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Multiplies each vector in an array by the matrix. The translation elements of this matrix (third row) are ignored.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example, see <xref:System.Drawing.Drawing2D.Matrix.TransformVectors%28System.Drawing.Point%5B%5D%29>.  
-  
+For an example, see <xref:System.Drawing.Drawing2D.Matrix.TransformVectors%28System.Drawing.Point%5B%5D%29>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,10 +1009,10 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies the specified translation vector (<paramref name="offsetX" /> and <paramref name="offsetY" />) to this <see cref="T:System.Drawing.Drawing2D.Matrix" /> by prepending the translation vector.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example, see <xref:System.Drawing.Drawing2D.Matrix.Translate%28System.Single%2CSystem.Single%2CSystem.Drawing.Drawing2D.MatrixOrder%29>.  
-  
+For an example, see <xref:System.Drawing.Drawing2D.Matrix.Translate%28System.Single%2CSystem.Single%2CSystem.Drawing.Drawing2D.MatrixOrder%29>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1041,24 +1041,24 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
         <summary>Applies the specified translation vector to this <see cref="T:System.Drawing.Drawing2D.Matrix" /> in the specified order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+ 
 -   Draws a rectangle to the screen prior to applying a translate transform (the blue rectangle).  
-  
+ 
 -   Creates a matrix and translates it by 100 in both axes.  
-  
+ 
 -   Applies this matrix transform to the rectangle,  
-  
+ 
 -   Draws the transformed rectangle to the screen (the red rectangle).  
-  
- Notice that the beginning of the red rectangle is located 100 points in both axes from the beginning of the blue triangle.  
-  
- [!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#9)]
- [!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#9)]
- [!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#9)]  
-  
+ 
+Notice that the beginning of the red rectangle is located 100 points in both axes from the beginning of the blue triangle.  
+ 
+[!code-cpp[System.Drawing.Drawing2D.ClassicMatrixExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CPP/form1.cpp#9)]
+[!code-csharp[System.Drawing.Drawing2D.ClassicMatrixExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/CS/form1.cs#9)]
+[!code-vb[System.Drawing.Drawing2D.ClassicMatrixExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMatrixExamples/VB/form1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

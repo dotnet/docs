@@ -18,10 +18,10 @@
     <summary>Enumerates <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> items in a <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <value>The current element in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.Current%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.Current%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,12 +70,12 @@
           <see langword="true" /> if the enumerator successfully advances to the next element; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method also returns `false` if the enumerator has passed the final element in the collection.  
-  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.MoveNext%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+This method also returns `false` if the enumerator has passed the final element in the collection.  
+ 
+<xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.MoveNext%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <summary>Resets the enumerator to its initial position, which is before the first element in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.Reset%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.Reset%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,12 +122,12 @@
         <value>To be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.System%23Collections%23IEnumerator%23Current%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+ 
+<xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.System%23Collections%23IEnumerator%23Current%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,12 +149,12 @@
         <summary>For a description of this member, see <see cref="M:System.IDisposable.Dispose" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator> instance is cast to an <xref:System.IDisposable> interface.  
-  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.System%23IDisposable%23Dispose%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator> instance is cast to an <xref:System.IDisposable> interface.  
+ 
+<xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Enumerator.System%23IDisposable%23Dispose%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

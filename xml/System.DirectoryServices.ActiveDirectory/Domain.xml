@@ -59,14 +59,14 @@
         <summary>Creates the local side of a trust relationship with the specified domain.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates one side of a trust relationship. The trust is not established until both sides of the trust have been created.  
-  
- The `trustPassword` parameter associates a password with the created trust. When the other side of the trust is created, the same password is provided and the two local trusts are then bound to each other.  
-  
- To programmatically create both sides of a trust relationship in a single method call, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.CreateTrustRelationship%2A?displayProperty=fullName> method.  
-  
+This method creates one side of a trust relationship. The trust is not established until both sides of the trust have been created.  
+ 
+The `trustPassword` parameter associates a password with the created trust. When the other side of the trust is created, the same password is provided and the two local trusts are then bound to each other.  
+ 
+To programmatically create both sides of a trust relationship in a single method call, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.CreateTrustRelationship%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException">The trust relationship already exists.</exception>
@@ -104,10 +104,10 @@
         <summary>Creates both sides of a trust relationship with the specified domain.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates both sides of a trust relationship with a single method call. The <xref:System.DirectoryServices.ActiveDirectory.Domain.CreateLocalSideOfTrustRelationship%2A?displayProperty=fullName> method is used to create only one side of a trust.  
-  
+This method creates both sides of a trust relationship with a single method call. The <xref:System.DirectoryServices.ActiveDirectory.Domain.CreateLocalSideOfTrustRelationship%2A?displayProperty=fullName> method is used to create only one side of a trust.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException">The trust relationship already exists.</exception>
@@ -141,12 +141,12 @@
         <summary>Deletes the local side of a trust relationship.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When one side of a trust relationship is deleted, the trust longer exists.  
-  
- To delete both sides of a trust relationship with one method call, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.DeleteTrustRelationship%2A?displayProperty=fullName> method.  
-  
+When one side of a trust relationship is deleted, the trust longer exists.  
+ 
+To delete both sides of a trust relationship with one method call, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.DeleteTrustRelationship%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">There is no trust relationship with the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> that is specified by the <paramref name="targetDomainName" /> parameter.</exception>
@@ -180,10 +180,10 @@
         <summary>Deletes both sides of a trust relationship.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To delete only one side of a trust relationship, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.DeleteLocalSideOfTrustRelationship%2A?displayProperty=fullName> method.  
-  
+To delete only one side of a trust relationship, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.DeleteLocalSideOfTrustRelationship%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">There is no trust relationship with the specified <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" />.</exception>
@@ -269,10 +269,10 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" /> that contains the domain controller objects that were found by this method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can find discoverable domain controllers by querying DNS SRV records. Only those domain controllers that register the generic, non-site-specific, domain controller SRV record will be returned by this method.  
-  
+You can find discoverable domain controllers by querying DNS SRV records. Only those domain controllers that register the generic, non-site-specific, domain controller SRV record will be returned by this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
@@ -300,12 +300,12 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" /> that contains the domain controller objects that were found by this method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can find discoverable domain controllers by querying DNS SRV records.  If a domain controller does not register an SRV record for the specified site, it will not be returned by this method, even if the domain controller is physically located within that site.  
-  
- All domain controllers that register an SRV record for the specified site will be returned by this method, even if they are not physically located within that site.  
-  
+You can find discoverable domain controllers by querying DNS SRV records.  If a domain controller does not register an SRV record for the specified site, it will not be returned by this method, even if the domain controller is physically located within that site.  
+ 
+All domain controllers that register an SRV record for the specified site will be returned by this method, even if they are not physically located within that site.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
@@ -383,10 +383,10 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> that represents the domain controller that is found by this method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method finds any domain controller in the domain. There is no guarantee that the same domain controller will be found by another call to this method.  
-  
+This method finds any domain controller in the domain. There is no guarantee that the same domain controller will be found by another call to this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A domain controller cannot be located.</exception>
@@ -543,10 +543,10 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object that represents the domain to which the local machine is joined.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value of the <xref:System.DirectoryServices.ActiveDirectory.Domain.GetComputerDomain%2A> method is a <xref:System.DirectoryServices.ActiveDirectory.Domain> object representing the domain to which the computer running the application is joined.  This return value is independent of the domain credentials under which the application is run. This method will retrieve the computer's domain regardless of the trusted account domain credentials it is run under.  To retrieve the <xref:System.DirectoryServices.ActiveDirectory.Domain> object that represents the domain corresponding to the user credentials in effect for the security context under which the application is running, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.GetCurrentDomain%2A> method instead.  
-  
+The return value of the <xref:System.DirectoryServices.ActiveDirectory.Domain.GetComputerDomain%2A> method is a <xref:System.DirectoryServices.ActiveDirectory.Domain> object representing the domain to which the computer running the application is joined.  This return value is independent of the domain credentials under which the application is run. This method will retrieve the computer's domain regardless of the trusted account domain credentials it is run under.  To retrieve the <xref:System.DirectoryServices.ActiveDirectory.Domain> object that represents the domain corresponding to the user credentials in effect for the security context under which the application is running, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.GetCurrentDomain%2A> method instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A connection to the domain could not be made.</exception>
@@ -570,13 +570,13 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object that represents the domain for the specified user credentials in effect for the security context under which the application is running.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.DirectoryServices.ActiveDirectory.Domain.GetCurrentDomain%2A> method is determined by the domain credentials under which the application is running.  To retrieve the <xref:System.DirectoryServices.ActiveDirectory.Domain> object representing the domain to which the computer running the application is joined, regardless of the credentials associated with that application, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.GetComputerDomain%2A> method instead.  
-  
+<xref:System.DirectoryServices.ActiveDirectory.Domain.GetCurrentDomain%2A> method is determined by the domain credentials under which the application is running.  To retrieve the <xref:System.DirectoryServices.ActiveDirectory.Domain> object representing the domain to which the computer running the application is joined, regardless of the credentials associated with that application, use the <xref:System.DirectoryServices.ActiveDirectory.Domain.GetComputerDomain%2A> method instead.  
+ 
 ## See Also  
- <xref:System.DirectoryServices.ActiveDirectory.Domain.GetComputerDomain%2A>  
-  
+<xref:System.DirectoryServices.ActiveDirectory.Domain.GetComputerDomain%2A>  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A connection to the current context could not be made.</exception>
@@ -802,21 +802,21 @@
         <summary>Raises the mode of operation for the domain.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.DomainMode> value can be raised but not lowered. This means that raising the functionality level of the domain is not reversible and the decision to do this should be made carefully.  
-  
- For more information about domain operational modes, see [Domain and forest functionality](http://www.microsoft.com/resources/documentation/WindowsServ/2003/standard/proddocs/en-us/sag_levels.asp).  
-  
- The following table defines the valid values for `domainMode` based on the current operating mode of the domain.  
-  
+The <xref:System.DirectoryServices.ActiveDirectory.DomainMode> value can be raised but not lowered. This means that raising the functionality level of the domain is not reversible and the decision to do this should be made carefully.  
+ 
+For more information about domain operational modes, see [Domain and forest functionality](http://www.microsoft.com/resources/documentation/WindowsServ/2003/standard/proddocs/en-us/sag_levels.asp).  
+ 
+The following table defines the valid values for `domainMode` based on the current operating mode of the domain.  
+ 
 |Current mode|Mode can be raised to|  
 |------------------|---------------------------|  
 |<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|<xref:System.DirectoryServices.ActiveDirectory.DomainMode><br /><br /> <xref:System.DirectoryServices.ActiveDirectory.DomainMode><br /><br /> <xref:System.DirectoryServices.ActiveDirectory.DomainMode>|  
 |<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|  
 |<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|  
 |<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|None|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
@@ -869,10 +869,10 @@
         <summary>Repairs a trust relationship.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method repairs the trust by resetting the secure channel for the trust. If the operation fails to reset the secure channel, then it will also reset the trust password.  
-  
+This method repairs the trust by resetting the secure channel for the trust. If the operation fails to reset the secure channel, then it will also reset the trust password.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">There is no trust relationship with the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> that is specified by <paramref name="targetDomain" />.</exception>
@@ -990,10 +990,10 @@
         <summary>Updates the password for the local side of a trust relationship.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To re-establish the trust, both sides of the trust must be updated with the same password.  
-  
+To re-establish the trust, both sides of the trust must be updated with the same password.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">There is no trust relationship with the domain that is specified by <paramref name="targetDomainName" />.</exception>
@@ -1095,10 +1095,10 @@
         <summary>Verifies that a previously established outbound trust with the specified domain is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to verify that a trust relationship has been fully established. The trust is not established until both sides of the trust have been created.  
-  
+This method is used to verify that a trust relationship has been fully established. The trust is not established until both sides of the trust have been created.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">There is no outbound trust relationship with the domain that is specified by <paramref name="targetDomainName" />.</exception>
@@ -1134,10 +1134,10 @@
         <summary>Verifies that a previously established trust with the specified domain is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method verifies that a trust relationship has been fully established. The trust is not established until both sides of the trust have been created.  
-  
+This method verifies that a trust relationship has been fully established. The trust is not established until both sides of the trust have been created.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">There is no trust relationship with the domain that is specified by the <paramref name="targetDomain" /> parameter, or the target domain does not have the trust direction that is specified by the <paramref name="direction" /> parameter.</exception>

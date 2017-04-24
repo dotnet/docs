@@ -54,10 +54,10 @@
         <returns>A collection of postback values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method if you need to collect the values of any postback variables in the control.  
-  
+Override this method if you need to collect the values of any postback variables in the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <summary>Renders the <see langword="&lt; card &gt;" /> tag. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base implementation renders a `< card >` element with the given attributes. Inheriting adapters can override this method and modify the dictionary of attributes, before calling the base implementation.  
-  
+The base implementation renders a `< card >` element with the given attributes. Inheriting adapters can override this method and modify the dictionary of attributes, before calling the base implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
         <summary>Renders any additional markup immediately following the <see langword="&lt; card &gt;" /> tag in the WML deck. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Inheriting classes can override this method to customize output.  
-  
+Inheriting classes can override this method to customize output.  
+ 
  ]]></format>
         </remarks>
       </Docs>

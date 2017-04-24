@@ -56,10 +56,10 @@
         <summary>Creates a <see cref="T:System.Numerics.Matrix4x4" /> object from a specified <see cref="T:System.Numerics.Matrix3x2" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a 4x4 matrix whose <xref:System.Numerics.Matrix4x4>, <xref:System.Numerics.Matrix4x4.M14>, <xref:System.Numerics.Matrix4x4.M23>, <xref:System.Numerics.Matrix4x4.M24>, <xref:System.Numerics.Matrix4x4.M31>, <xref:System.Numerics.Matrix4x4.M32>, <xref:System.Numerics.Matrix4x4.M34>, and <xref:System.Numerics.Matrix4x4.M43> components are zero, and whose <xref:System.Numerics.Matrix4x4.M33> and <xref:System.Numerics.Matrix4x4.M44> components are one.  
-  
+This constructor creates a 4x4 matrix whose <xref:System.Numerics.Matrix4x4>, <xref:System.Numerics.Matrix4x4.M14>, <xref:System.Numerics.Matrix4x4.M23>, <xref:System.Numerics.Matrix4x4.M24>, <xref:System.Numerics.Matrix4x4.M31>, <xref:System.Numerics.Matrix4x4.M32>, <xref:System.Numerics.Matrix4x4.M34>, and <xref:System.Numerics.Matrix4x4.M43> components are zero, and whose <xref:System.Numerics.Matrix4x4.M33> and <xref:System.Numerics.Matrix4x4.M44> components are one.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1179,10 +1179,10 @@
         <returns>The world matrix.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `position` is used in translation operations.  
-  
+`position` is used in translation operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1296,10 +1296,10 @@
           <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" /><see langword="" />. If <paramref name="obj" /> is <see langword="null" />, the method returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance and `obj` are equal if `obj` is a <xref:System.Numerics.Matrix4x4> object and the corresponding elements of each matrix are equal.  
-  
+The current instance and `obj` are equal if `obj` is a <xref:System.Numerics.Matrix4x4> object and the corresponding elements of each matrix are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2055,10 +2055,10 @@
         <returns>The matrix that contains the summed values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Matrix4x4.op_Addition%2A> method defines the operaton of the addition operator for <xref:System.Numerics.Matrix4x4> objects.  
-  
+The <xref:System.Numerics.Matrix4x4.op_Addition%2A> method defines the operaton of the addition operator for <xref:System.Numerics.Matrix4x4> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2097,10 +2097,10 @@
           <see langword="true" /> if <paramref name="value1" /> and <paramref name="value2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two matrices are equal if all their corresponding elements are equal.  
-  
+Two matrices are equal if all their corresponding elements are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2173,10 +2173,10 @@
         <returns>The product matrix.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Matrix4x4.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Matrix4x4> objects.  
-  
+The <xref:System.Numerics.Matrix4x4.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Matrix4x4> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2214,10 +2214,10 @@
         <returns>The scaled matrix.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Matrix4x4.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Matrix4x4> objects.  
-  
+The <xref:System.Numerics.Matrix4x4.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Matrix4x4> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2255,10 +2255,10 @@
         <returns>The matrix containing the values that result from subtracting each element in <paramref name="value2" /> from its corresponding element in <paramref name="value1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Matrix4x4.op_Subtraction%2A> method defines the operation of the subtraction operator for <xref:System.Numerics.Matrix4x4> objects.  
-  
+The <xref:System.Numerics.Matrix4x4.op_Subtraction%2A> method defines the operation of the subtraction operator for <xref:System.Numerics.Matrix4x4> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2357,10 +2357,10 @@
         <returns>The string representation of this matrix.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The numeric values in the returned string are formatted by using the conventions of the current culture. For example, for the en-US culture, the returned string might appear as `{ {M11:1.1 M12:1.2 M13:1.3 M14:1.4} {M21:2.1 M22:2.2 M23:2.3 M24:2.4} {M31:3.1 M32:3.2 M33:3.3 M34:3.4} {M41:4.1 M42:4.2 M43:4.3 M44:4.4} }`.  
-  
+The numeric values in the returned string are formatted by using the conventions of the current culture. For example, for the en-US culture, the returned string might appear as `{ {M11:1.1 M12:1.2 M13:1.3 M14:1.4} {M21:2.1 M22:2.2 M23:2.3 M24:2.4} {M31:3.1 M32:3.2 M33:3.3 M34:3.4} {M41:4.1 M42:4.2 M43:4.3 M44:4.4} }`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

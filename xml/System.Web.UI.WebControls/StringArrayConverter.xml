@@ -14,15 +14,15 @@
     <summary>Provides a type converter to convert a string of comma-separated values to and from an array of strings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.StringArrayConverter> class converts a string of comma-separated values to and from an array of strings. This class provides the <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertTo%2A> and <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom%2A> methods to perform the type conversions.  
-  
- This type converter is used by design-time environments to provide values for display in the property grid control for a specified type.  
-  
+The <xref:System.Web.UI.WebControls.StringArrayConverter> class converts a string of comma-separated values to and from an array of strings. This class provides the <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertTo%2A> and <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom%2A> methods to perform the type conversions.  
+ 
+This type converter is used by design-time environments to provide values for display in the property grid control for a specified type.  
+ 
 > [!NOTE]
 >  You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,12 +41,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.StringArrayConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
           <see langword="true" /> if the converter can perform the operation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.StringArrayConverter.CanConvertFrom%2A> method determines whether the <xref:System.Web.UI.WebControls.StringArrayConverter> can convert the object specified by `sourceType` to an array of strings. Use this method prior to calling the <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom%2A> method to perform the conversion.  
-  
+The <xref:System.Web.UI.WebControls.StringArrayConverter.CanConvertFrom%2A> method determines whether the <xref:System.Web.UI.WebControls.StringArrayConverter> can convert the object specified by `sourceType` to an array of strings. Use this method prior to calling the <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom%2A> method to perform the conversion.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,12 +108,12 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom%2A> method parses an object that represents a comma-separated string into an array of strings. Prior to calling this method, you can call the <xref:System.Web.UI.WebControls.StringArrayConverter.CanConvertFrom%2A> method to determine whether the object specified by `value` can be converted to an array of strings.  
-  
- To convert an array of strings into a comma-separated string, use the <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertTo%2A> method.  
-  
+The <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom%2A> method parses an object that represents a comma-separated string into an array of strings. Prior to calling this method, you can call the <xref:System.Web.UI.WebControls.StringArrayConverter.CanConvertFrom%2A> method to determine whether the object specified by `value` can be converted to an array of strings.  
+ 
+To convert an array of strings into a comma-separated string, use the <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertTo%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="M:System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)">The conversion cannot be performed because <paramref name="value" /> is not a string.</exception>
@@ -146,12 +146,12 @@
         <returns>An <see cref="T:System.Object" /> instance that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertTo%2A> method converts an array of strings into a comma-separated string.  
-  
- To convert a comma-separated string into an array of strings, use the <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom%2A> method.  
-  
+The <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertTo%2A> method converts an array of strings into a comma-separated string.  
+ 
+To convert a comma-separated string into an array of strings, use the <xref:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="M:System.ComponentModel.TypeConverter.GetConvertToException(System.Object,System.Type)">

@@ -19,12 +19,12 @@
     <summary>Abstract class used internally by the WPF XAML compiler to support the use of internal types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
- When compiling a XAML file, you can use public types, but you can also use internal types subject to the same limitations that exist on code access to internal types. <xref:System.Windows.Markup.InternalTypeHelper> enables support of internal access level types for markup. This involves the compiler creating a generated class that derives from <xref:System.Windows.Markup.InternalTypeHelper> and implements its members. The generated class exists in a security and access context such that only the same assembly or other assemblies specifically attributed for shared internal access can reference the generated class and thus the internal types.  
-  
+The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
+ 
+When compiling a XAML file, you can use public types, but you can also use internal types subject to the same limitations that exist on code access to internal types. <xref:System.Windows.Markup.InternalTypeHelper> enables support of internal access level types for markup. This involves the compiler creating a generated class that derives from <xref:System.Windows.Markup.InternalTypeHelper> and implements its members. The generated class exists in a security and access context such that only the same assembly or other assemblies specifically attributed for shared internal access can reference the generated class and thus the internal types.  
+ 
 <a name="xamlTextUsage_InternalTypeHelper"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -70,10 +70,10 @@
         <summary>When overridden in a derived (generated) class, attaches an event handler delegate to an internal event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
+The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <returns>The delegate reference.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
+The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <returns>The created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
+The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <returns>The value of the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
+The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <summary>When overridden in a derived (generated) class, sets the value on an internal property on the target object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
+The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>

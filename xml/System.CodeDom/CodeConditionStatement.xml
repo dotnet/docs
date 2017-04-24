@@ -22,21 +22,21 @@
     <summary>Represents a conditional branch statement, typically represented as an <see langword="if" /> statement.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeConditionStatement> can be used to represent code that consists of a conditional expression, a collection of statements to execute if the conditional expression evaluates to `true`, and an optional collection of statements to execute if the conditional expression evaluates to `false`. A <xref:System.CodeDom.CodeConditionStatement> is generated in many languages as an `if` statement.  
+<xref:System.CodeDom.CodeConditionStatement> can be used to represent code that consists of a conditional expression, a collection of statements to execute if the conditional expression evaluates to `true`, and an optional collection of statements to execute if the conditional expression evaluates to `false`. A <xref:System.CodeDom.CodeConditionStatement> is generated in many languages as an `if` statement.  
+ 
+The <xref:System.CodeDom.CodeConditionStatement.Condition%2A> property indicates the expression to test. The <xref:System.CodeDom.CodeConditionStatement.TrueStatements%2A> property contains the statements to execute if the expression to test evaluates to `true`. The <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> property contains the statements to execute if the expression to test evaluates to `false`.  
+ 
   
- The <xref:System.CodeDom.CodeConditionStatement.Condition%2A> property indicates the expression to test. The <xref:System.CodeDom.CodeConditionStatement.TrueStatements%2A> property contains the statements to execute if the expression to test evaluates to `true`. The <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> property contains the statements to execute if the expression to test evaluates to `false`.  
-  
-   
-  
+ 
 ## Examples  
- This example demonstrates using a <xref:System.CodeDom.CodeConditionStatement> to represent an `if` statement with an `else` block.  
-  
- [!code-cpp[CodeConditionStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeConditionStatementExample/CPP/codeconditionstatementexample.cpp#2)]
- [!code-csharp[CodeConditionStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeConditionStatementExample/CS/codeconditionstatementexample.cs#2)]
- [!code-vb[CodeConditionStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeConditionStatementExample/VB/codeconditionstatementexample.vb#2)]  
-  
+This example demonstrates using a <xref:System.CodeDom.CodeConditionStatement> to represent an `if` statement with an `else` block.  
+ 
+[!code-cpp[CodeConditionStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeConditionStatementExample/CPP/codeconditionstatementexample.cpp#2)]
+[!code-csharp[CodeConditionStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeConditionStatementExample/CS/codeconditionstatementexample.cs#2)]
+[!code-vb[CodeConditionStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeConditionStatementExample/VB/codeconditionstatementexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,10 +121,10 @@
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> to evaluate <see langword="true" /> or <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this conditional expression evaluates to `true`, the code contained in the <xref:System.CodeDom.CodeConditionStatement.TrueStatements%2A> collection will be executed. If this conditional expression evaluates to `false` and the <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> collection is not empty, the code contained in the <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> collection will be executed.  
-  
+If this conditional expression evaluates to `true`, the code contained in the <xref:System.CodeDom.CodeConditionStatement.TrueStatements%2A> collection will be executed. If this conditional expression evaluates to `false` and the <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> collection is not empty, the code contained in the <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> collection will be executed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

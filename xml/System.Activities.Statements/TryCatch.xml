@@ -14,19 +14,19 @@
     <summary>Contains activities to be executed by the workflow runtime in an exception handling block.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Activities.Statements.TryCatch.Finally%2A> activity member of a <xref:System.Activities.Statements.TryCatch> activity that is the child of a <xref:System.Activities.Statements.TransactionScope> will not execute if an unhandled exception propagates past the <xref:System.Activities.Statements.TransactionScope> boundary.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+ 
 <!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,12 +45,12 @@
         <summary>Creates a new instance of the <see cref="M:System.Activities.Statements.TryCatch.#ctor" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+ 
 <!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,19 +119,19 @@
         <value>The catch collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Catches are evaluated in the order in which they are added to the collection. If an exact match for the exception type is found, the matching <xref:System.Activities.Statements.Catch> activity is executed.  If no exact match is found, the <xref:System.Activities.Statements.Catch> with the closest matching <xref:System.Activities.Statements.Catch.ExceptionType%2A> is executed.  
+Catches are evaluated in the order in which they are added to the collection. If an exact match for the exception type is found, the matching <xref:System.Activities.Statements.Catch> activity is executed.  If no exact match is found, the <xref:System.Activities.Statements.Catch> with the closest matching <xref:System.Activities.Statements.Catch.ExceptionType%2A> is executed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates setting the Catches property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
-  
- Once placed in the designer, <xref:System.Activities.Statements.Catch> activities cannot be reordered in the designer.  To reorder the collection of <xref:System.Activities.Statements.Catch> activities, either delete and re-add them in the correct order, or use the xaml (code) view for the workflow.  
-  
+The following code sample demonstrates setting the Catches property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+ 
+Once placed in the designer, <xref:System.Activities.Statements.Catch> activities cannot be reordered in the designer.  To reorder the collection of <xref:System.Activities.Statements.Catch> activities, either delete and re-add them in the correct order, or use the xaml (code) view for the workflow.  
+ 
 <!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,12 +182,12 @@
         <value>The activity that represents the <see cref="P:System.Activities.Statements.TryCatch.Finally" /> logic.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates setting the <xref:System.Activities.Statements.TryCatch.Finally%2A> property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
-  
+The following code sample demonstrates setting the <xref:System.Activities.Statements.TryCatch.Finally%2A> property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+ 
 <!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,12 +240,12 @@
         <value>The activity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates setting the Try property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
-  
+The following code sample demonstrates setting the Try property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+ 
 <!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -50,20 +50,20 @@
     <summary>Represents a menu that displays a set of related items or commands in a visually rich format that can be organized into multiple categorized subsets.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows a <xref:System.Windows.Controls.Ribbon.RibbonComboBox> hosting a simple <xref:System.Windows.Controls.Ribbon.RibbonGallery>.  
-  
- ![Ribbon combo box control with drop&#45;down open](~/add/media/wpfribbon-combobox-selection.png "Ribbon combo box control with drop-down open")  
+The following illustration shows a <xref:System.Windows.Controls.Ribbon.RibbonComboBox> hosting a simple <xref:System.Windows.Controls.Ribbon.RibbonGallery>.  
+ 
+![Ribbon combo box control with drop&#45;down open](~/add/media/wpfribbon-combobox-selection.png "Ribbon combo box control with drop-down open")  
 Ribbon gallery in a combo box  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the markup to create a combo box that hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> with three available items.  
-  
- [!code-xml[Ribbon_ControlsSample#RibbonComboBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribboncombobox)]  
-  
+The following example shows the markup to create a combo box that hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> with three available items.  
+ 
+[!code-xml[Ribbon_ControlsSample#RibbonComboBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribboncombobox)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,10 +100,10 @@ Ribbon gallery in a combo box
         <value>The filter that returns all items in a ribbon gallery.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you implement a custom <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelector%2A> or <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelector%2A>, you can use this property to distinguish between "All" filter items and custom filter items.  
-  
+If you implement a custom <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelector%2A> or <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelector%2A>, you can use this property to distinguish between "All" filter items and custom filter items.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,17 +125,17 @@ Ribbon gallery in a combo box
         <value>The style that is applied to items in the filter when the "All" filter is selected.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_AllFilterItemContainerStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemContainerStyleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,17 +174,17 @@ Ribbon gallery in a combo box
         <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_AllFilterItemTemplate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemTemplateProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,17 +224,17 @@ Ribbon gallery in a combo box
           <see langword="true" /> if this control can be added directly to the Quick Access Toolbar; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CanAddToQuickAccessToolBarDirectly"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CanAddToQuickAccessToolBarDirectlyProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,17 +274,17 @@ Ribbon gallery in a combo box
           <see langword="true" /> if a filter can be applied to gallery items; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CanUserFilter"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CanUserFilterProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,18 +323,18 @@ Ribbon gallery in a combo box
         <value>The style that is applied to the container element generated for each item. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A?displayProperty=fullName> property.  
-  
+If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A?displayProperty=fullName> property.  
+ 
 <a name="dependencyPropertyInfo_CategoryStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CategoryStyleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,18 +378,18 @@ Ribbon gallery in a combo box
         <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A?displayProperty=fullName> property.  
-  
+If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A?displayProperty=fullName> property.  
+ 
 <a name="dependencyPropertyInfo_CategoryTemplate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CategoryTemplateProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,10 +433,10 @@ Ribbon gallery in a combo box
         <summary>Unloads the container for the specified item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonGallery.PrepareContainerForItemOverride%2A> method.  
-  
+This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonGallery.PrepareContainerForItemOverride%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,18 +459,18 @@ Ribbon gallery in a combo box
           <see langword="true" /> if the gallery distributes its available width equally between its columns; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFill%2A> property only has an effect when <xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScope%2A> is set to `true`.  
-  
+The <xref:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFill%2A> property only has an effect when <xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScope%2A> is set to `true`.  
+ 
 <a name="dependencyPropertyInfo_ColumnsStretchToFill"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFillProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -509,17 +509,17 @@ Ribbon gallery in a combo box
         <value>The command that is associated with this ribbon gallery. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Command"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CommandProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -541,17 +541,17 @@ Ribbon gallery in a combo box
         <value>A user-defined data value to pass to the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CommandParameter"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CommandParameterProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -607,17 +607,17 @@ Ribbon gallery in a combo box
         <value>The element on which to invoke the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CommandTarget"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CommandTargetProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -674,17 +674,17 @@ Ribbon gallery in a combo box
         <value>The style applied to the filter items container element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FilterItemContainerStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -723,18 +723,18 @@ Ribbon gallery in a combo box
         <value>A custom <see cref="T:System.Windows.Controls.StyleSelector" /> object that provides logic and returns a <see cref="T:System.Windows.Style" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle%2A> property to specify the appearance of the content. If you have more than one style defined and want to specify logic that selects a style to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle%2A> property is set.  
-  
+You use the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle%2A> property to specify the appearance of the content. If you have more than one style defined and want to specify logic that selects a style to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle%2A> property is set.  
+ 
 <a name="dependencyPropertyInfo_FilterItemContainerStyleSelector"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelectorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -773,17 +773,17 @@ Ribbon gallery in a combo box
         <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FilterItemTemplate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -822,18 +822,18 @@ Ribbon gallery in a combo box
         <value>A custom <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides logic and returns a <see cref="T:System.Windows.DataTemplate" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property is set.  
-  
+You use the<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property is set.  
+ 
 <a name="dependencyPropertyInfo_FilterItemTemplateSelector"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelectorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -872,17 +872,17 @@ Ribbon gallery in a combo box
         <value>The style that is applied to the filter menu button. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FilterMenuButtonStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterMenuButtonStyleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -921,17 +921,17 @@ Ribbon gallery in a combo box
         <value>The contents of the filter pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FilterPaneContent"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -970,17 +970,17 @@ Ribbon gallery in a combo box
         <value>A template that specifies the visualization of the filter pane contents. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FilterPaneContentTemplate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentTemplateProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1019,17 +1019,17 @@ Ribbon gallery in a combo box
         <value>The style that is applied to items in the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_GalleryItemStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1068,17 +1068,17 @@ Ribbon gallery in a combo box
         <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_GalleryItemTemplate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1136,17 +1136,17 @@ Ribbon gallery in a combo box
         <value>The item that is currently highlighted. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_HighlightedItem"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.HighlightedItemProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1228,17 +1228,17 @@ Ribbon gallery in a combo box
           <see langword="true" /> if this gallery defines the scope used for uniform layout of items; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsSharedColumnSizeScope"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScopeProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1278,17 +1278,17 @@ Ribbon gallery in a combo box
           <see langword="true" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> is always synchronized with the current item in the source collection; <see langword="false" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> is never synchronized with the current item; <see langword="null" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> is synchronized with the current item only if the gallery is bound to a <see cref="T:System.Windows.Data.CollectionViewSource" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsSynchronizedWithCurrentItem"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSynchronizedWithCurrentItemProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1327,17 +1327,17 @@ Ribbon gallery in a combo box
         <value>The maximum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />. The registered default is <see cref="F:System.Int32.MaxValue" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_MaxColumnCount"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.MaxColumnCountProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1376,17 +1376,17 @@ Ribbon gallery in a combo box
         <value>The minimum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.The registered default is 1. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_MinColumnCount"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.MinColumnCountProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1425,10 +1425,10 @@ Ribbon gallery in a combo box
         <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" /> when a new template is applied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
+This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1514,10 +1514,10 @@ Ribbon gallery in a combo box
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.IsKeyboardFocusWithinChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.IsKeyboardFocusWithinChanged> event data.  
-  
+This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.IsKeyboardFocusWithinChanged> event data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1586,10 +1586,10 @@ Ribbon gallery in a combo box
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseEnter" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseEnter> event data.  
-  
+This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseEnter> event data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1614,10 +1614,10 @@ Ribbon gallery in a combo box
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeave" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseLeave> event data.  
-  
+This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseLeave> event data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1663,10 +1663,10 @@ Ribbon gallery in a combo box
         <summary>Raises the <see cref="E:System.Windows.Controls.Ribbon.RibbonGallery.SelectionChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when the <xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem%2A> property changes.  
-  
+This method is called when the <xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem%2A> property changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1693,10 +1693,10 @@ Ribbon gallery in a combo box
         <summary>Prepares the specified element to display the specified item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method prepares a <xref:System.Windows.Controls.Ribbon.RibbonGalleryCategory> to display <xref:System.Windows.Controls.Ribbon.RibbonGalleryItem> objects.  
-  
+This method prepares a <xref:System.Windows.Controls.Ribbon.RibbonGalleryCategory> to display <xref:System.Windows.Controls.Ribbon.RibbonGalleryItem> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1718,17 +1718,17 @@ Ribbon gallery in a combo box
         <value>A user-defined data value to pass to the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_PreviewCommandParameter"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.PreviewCommandParameterProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1767,17 +1767,17 @@ Ribbon gallery in a combo box
         <value>A unique identifier for a control in the Quick Access Toolbar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_QuickAccessToolBarId"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.QuickAccessToolBarIdProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1816,17 +1816,17 @@ Ribbon gallery in a combo box
         <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Ribbon"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.RibbonProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1886,17 +1886,17 @@ Ribbon gallery in a combo box
         <value>The currently selected item, or <see langword="null" /> if no item is selected. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_SelectedItem"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItemProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1935,17 +1935,17 @@ Ribbon gallery in a combo box
         <value>The value of the property on the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> that is specified by the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" />, or <see langword="null" /> if no item is selected. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_SelectedValue"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValueProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1972,17 +1972,17 @@ Ribbon gallery in a combo box
         <value>The path that is used to get the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" /> of the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_SelectedValuePath"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2072,17 +2072,17 @@ Ribbon gallery in a combo box
         <value>The image to display on the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_SmallImageSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.SmallImageSourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2130,10 +2130,10 @@ Ribbon gallery in a combo box
           <see langword="true" /> if the listener handled the event. <see langword="false" /> if it receives an event that it does not recognize or handle.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.Ribbon.RibbonGallery> instance is cast to an <xref:System.Windows.IWeakEventListener> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.Ribbon.RibbonGallery> instance is cast to an <xref:System.Windows.IWeakEventListener> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2155,20 +2155,20 @@ Ribbon gallery in a combo box
         <value>The descriptive text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
-  
+ 
 <a name="dependencyPropertyInfo_ToolTipDescription"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipDescriptionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2207,20 +2207,20 @@ Ribbon gallery in a combo box
         <value>The descriptive text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
-  
+ 
 <a name="dependencyPropertyInfo_ToolTipFooterDescription"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterDescriptionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2259,20 +2259,20 @@ Ribbon gallery in a combo box
         <value>The image to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
-  
+ 
 <a name="dependencyPropertyInfo_ToolTipFooterImageSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterImageSourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2311,20 +2311,20 @@ Ribbon gallery in a combo box
         <value>The title text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
-  
+ 
 <a name="dependencyPropertyInfo_ToolTipFooterTitle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterTitleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2363,20 +2363,20 @@ Ribbon gallery in a combo box
         <value>The image to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
-  
+ 
 <a name="dependencyPropertyInfo_ToolTipImageSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipImageSourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2415,20 +2415,20 @@ Ribbon gallery in a combo box
         <value>The title text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
-  
+ 
 <a name="dependencyPropertyInfo_ToolTipTitle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipTitleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

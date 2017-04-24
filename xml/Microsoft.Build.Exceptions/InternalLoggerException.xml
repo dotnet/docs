@@ -14,10 +14,10 @@
     <summary>This exception is used to wrap an unhandled exception from a logger. This exception aborts the build, and it can only be thrown by the MSBuild engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- WARNING: marking a type [Serializable] without implementing ISerializable imposes a serialization contract -- it is a promise to never change the type's fields i.e. the type is immutable; adding new fields in the next version of the type without following certain special FX guidelines, can break both forward and backward compatibility  
-  
+WARNING: marking a type [Serializable] without implementing ISerializable imposes a serialization contract -- it is a promise to never change the type's fields i.e. the type is immutable; adding new fields in the next version of the type without following certain special FX guidelines, can break both forward and backward compatibility  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor only exists to satisfy .NET coding guidelines. Use the rich constructor instead.  
-  
+This constructor only exists to satisfy .NET coding guidelines. Use the rich constructor instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Operation is invalid.</exception>
@@ -62,10 +62,10 @@
         <summary>Creates an instance of this exception using the specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor only exists to satisfy .NET coding guidelines. Use the rich constructor instead.  
-  
+This constructor only exists to satisfy .NET coding guidelines. Use the rich constructor instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Operation is invalid.</exception>
@@ -90,10 +90,10 @@
         <summary>Creates an instance of this exception using the specified error message and inner exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor only exists to satisfy .NET coding guidelines. Use the rich constructor instead.  
-  
+This constructor only exists to satisfy .NET coding guidelines. Use the rich constructor instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Operation is invalid.</exception>

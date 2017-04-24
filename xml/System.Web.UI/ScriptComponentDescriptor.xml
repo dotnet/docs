@@ -14,10 +14,10 @@
     <summary>Provides a wrapper for converting server components into client script.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class uses an internal dictionary to hold references to components, elements, properties, and events. To populate this dictionary, use the <xref:System.Web.UI.ScriptComponentDescriptor.AddComponentProperty%2A>, <xref:System.Web.UI.ScriptComponentDescriptor.AddElementProperty%2A>, <xref:System.Web.UI.ScriptComponentDescriptor.AddProperty%2A>, and <xref:System.Web.UI.ScriptComponentDescriptor.AddEvent%2A> methods. When you are finished, call the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method to generate the client script.  
-  
+This class uses an internal dictionary to hold references to components, elements, properties, and events. To populate this dictionary, use the <xref:System.Web.UI.ScriptComponentDescriptor.AddComponentProperty%2A>, <xref:System.Web.UI.ScriptComponentDescriptor.AddElementProperty%2A>, <xref:System.Web.UI.ScriptComponentDescriptor.AddProperty%2A>, and <xref:System.Web.UI.ScriptComponentDescriptor.AddEvent%2A> methods. When you are finished, call the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method to generate the client script.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Adds the specified property, and associates that property with the specified element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds the specified property to the internal dictionary of properties that are used by the control and converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
-  
+This method adds the specified property to the internal dictionary of properties that are used by the control and converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -96,10 +96,10 @@
         <summary>Adds the specified property and associates that property with the specified component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds the specified property to the internal dictionary of properties that are converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
-  
+This method adds the specified property to the internal dictionary of properties that are converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -128,10 +128,10 @@
         <summary>Adds the specified event and handler.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds the event and handler to the internal dictionary of events that are converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
-  
+This method adds the event and handler to the internal dictionary of events that are converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -160,10 +160,10 @@
         <summary>Adds the specified property and value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds the property and value to the internal dictionary of properties that are converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
-  
+This method adds the property and value to the internal dictionary of properties that are converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -192,10 +192,10 @@
         <summary>Adds the specified property, and associates the property with the specified script.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.ScriptComponentDescriptor.AddScriptProperty%2A> method to render script that is not serialized to the browser.  
-  
+Use the <xref:System.Web.UI.ScriptComponentDescriptor.AddScriptProperty%2A> method to render script that is not serialized to the browser.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

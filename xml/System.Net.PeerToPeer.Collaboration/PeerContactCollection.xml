@@ -17,12 +17,12 @@
     <summary>Represents a container for <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> elements. An instance of this type is returned by the <see cref="M:System.Net.PeerToPeer.Collaboration.ContactManager.GetContacts" /> static method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection holds instances of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> element, which specifies information about a peer within a <xref:System.Net.PeerToPeer.Collaboration.ContactManager>.  
-  
- No public constructors are defined for this class.  
-  
+This collection holds instances of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> element, which specifies information about a peer within a <xref:System.Net.PeerToPeer.Collaboration.ContactManager>.  
+ 
+No public constructors are defined for this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <summary>Inserts a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> element into the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" /> at the specified index or key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Null` items are not allowed.  
-  
+`Null` items are not allowed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> provided is <see langword="null" /></exception>
@@ -80,10 +80,10 @@
         <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Null` items are not allowed.  
-  
+`Null` items are not allowed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> provided is <see langword="null" /></exception>

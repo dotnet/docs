@@ -13,10 +13,10 @@
     <summary>Used to specify the parameter value passed to a JPEG or TIFF image encoder when using the <see cref="M:System.Drawing.Image.Save(System.String,System.Drawing.Imaging.ImageCodecInfo,System.Drawing.Imaging.EncoderParameters)" /> or <see cref="M:System.Drawing.Image.SaveAdd(System.Drawing.Imaging.EncoderParameters)" /> methods.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the <xref:System.Drawing.Image.Save%2A> or <xref:System.Drawing.Image.SaveAdd%2A> method of an <xref:System.Drawing.Image> object, you can pass parameters to the image encoder by passing an <xref:System.Drawing.Imaging.EncoderParameters> object to the <xref:System.Drawing.Image.Save%2A> or <xref:System.Drawing.Image.SaveAdd%2A> method. An <xref:System.Drawing.Imaging.EncoderParameters> object contains an array of <xref:System.Drawing.Imaging.EncoderParameter> objects. Each <xref:System.Drawing.Imaging.EncoderParameter> object has an array of values and an <xref:System.Drawing.Imaging.Encoder> property that specifies the parameter category. The <xref:System.Drawing.Imaging.EncoderValue> enumeration provides names for some of the values that can be passed to the JPEG and TIFF image encoders.  
-  
+When you call the <xref:System.Drawing.Image.Save%2A> or <xref:System.Drawing.Image.SaveAdd%2A> method of an <xref:System.Drawing.Image> object, you can pass parameters to the image encoder by passing an <xref:System.Drawing.Imaging.EncoderParameters> object to the <xref:System.Drawing.Image.Save%2A> or <xref:System.Drawing.Image.SaveAdd%2A> method. An <xref:System.Drawing.Imaging.EncoderParameters> object contains an array of <xref:System.Drawing.Imaging.EncoderParameter> objects. Each <xref:System.Drawing.Imaging.EncoderParameter> object has an array of values and an <xref:System.Drawing.Imaging.Encoder> property that specifies the parameter category. The <xref:System.Drawing.Imaging.EncoderValue> enumeration provides names for some of the values that can be passed to the JPEG and TIFF image encoders.  
+ 
  ]]></format>
     </remarks>
   </Docs>

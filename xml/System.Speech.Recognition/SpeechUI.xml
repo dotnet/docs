@@ -14,50 +14,50 @@
     <summary>Provides text and status information on recognition operations to be displayed in the Speech platform user interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The members of the <xref:System.Speech.Recognition.SpeechUI> class can be used to indicate exact feedback to the end user through the speech recognition user interface. An application can return arbitrary text and success/failure information using this class.  
+The members of the <xref:System.Speech.Recognition.SpeechUI> class can be used to indicate exact feedback to the end user through the speech recognition user interface. An application can return arbitrary text and success/failure information using this class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is a handler for the <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event. This event is used by a <xref:System.Speech.Recognition.Grammar> that is designed to handle password input in the form "My password is …".  
-  
- If a password is not present, or not valid, <xref:System.Speech.Recognition.SpeechUI.SendTextFeedback%2A> sends error information to the Speech platform user interface.  
-  
+The following example is a handler for the <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event. This event is used by a <xref:System.Speech.Recognition.Grammar> that is designed to handle password input in the form "My password is …".  
+ 
+If a password is not present, or not valid, <xref:System.Speech.Recognition.SpeechUI.SendTextFeedback%2A> sends error information to the Speech platform user interface.  
+ 
 ```  
-  
+ 
 grammar.SpeechRecognized +=   
 delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
 {  
-  SemanticValue semantics = eventArgs.Result.Semantics;  
-  RecognitionResult result=eventArgs.Result;  
-  
-  if (!semantics.ContainsKey("Password"))   
-  {  
-    SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
-  }  
-  else   
-  {  
-    RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
-                  result.Words[3],  
-                  result.Words[result.Words.Count - 1]);  
-    MemoryStream pwdMemoryStream = new MemoryStream();  
-    pwdAudio.WriteToAudioStream(pwdMemoryStream);  
-    if (!IsValidPwd(pwdMemoryStream))   
-    {  
-      string badPwd = System.IO.Path.GetTempPath() +   
-              "BadPwd" + (new Random()).Next().ToString() + ".wav";  
-      FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
-      pwdAudio.WriteToWaveStream(waveStream);  
-      waveStream.Flush();  
-      waveStream.Close();  
-      SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
-    }  
-  }  
+ SemanticValue semantics = eventArgs.Result.Semantics;  
+ RecognitionResult result=eventArgs.Result;  
+ 
+ if (!semantics.ContainsKey("Password"))   
+ {  
+   SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
+ }  
+ else   
+ {  
+   RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
+                 result.Words[3],  
+                 result.Words[result.Words.Count - 1]);  
+   MemoryStream pwdMemoryStream = new MemoryStream();  
+   pwdAudio.WriteToAudioStream(pwdMemoryStream);  
+   if (!IsValidPwd(pwdMemoryStream))   
+   {  
+     string badPwd = System.IO.Path.GetTempPath() +   
+             "BadPwd" + (new Random()).Next().ToString() + ".wav";  
+     FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
+     pwdAudio.WriteToWaveStream(waveStream);  
+     waveStream.Flush();  
+     waveStream.Close();  
+     SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
+   }  
+ }  
 };  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,52 +88,52 @@ delegate(object sender, SpeechRecognizedEventArgs eventArgs)
           <see langword="true" /> if the information provided to the method (<paramref name="Feedback" />, and <paramref name="isSuccessfulAction" />) was successfully made available to the Speech platform user interface, and <see langword="false" /> if the operation failed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.SpeechUI.SendTextFeedback%2A> can be used to indicate that a recognition operation failed to meet certain criteria, even if the input was recognized.  
+<xref:System.Speech.Recognition.SpeechUI.SendTextFeedback%2A> can be used to indicate that a recognition operation failed to meet certain criteria, even if the input was recognized.  
+ 
+An example is the verification of security code information, where the input was fully recognized, but the verification information was wrong.  
+ 
   
- An example is the verification of security code information, where the input was fully recognized, but the verification information was wrong.  
-  
-   
-  
+ 
 ## Examples  
- The following example is a handler for a <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event. This event is used by a <xref:System.Speech.Recognition.Grammar> that is designed to handle password input of the form, "My password is …".  
-  
- If a password is not present, or not valid, **SendTextFeedback** is used to send error information to the Speech platform user interface.  
-  
+The following example is a handler for a <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event. This event is used by a <xref:System.Speech.Recognition.Grammar> that is designed to handle password input of the form, "My password is …".  
+ 
+If a password is not present, or not valid, **SendTextFeedback** is used to send error information to the Speech platform user interface.  
+ 
 ```  
-  
+ 
 grammar.SpeechRecognized +=  
 delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
 {  
-  SemanticValue semantics = eventArgs.Result.Semantics;  
-  RecognitionResult result=eventArgs.Result;  
-  
-  if (!semantics.ContainsKey("Password"))   
-  {  
-    SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
-  }  
-  else  
-  {  
-    RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
-              result.Words[3],  
-              result.Words[result.Words.Count - 1]);  
-    MemoryStream pwdMemoryStream = new MemoryStream();  
-    pwdAudio.WriteToAudioStream(pwdMemoryStream);  
-    if (!IsValidPwd(pwdMemoryStream))   
-    {  
-      string badPwd = System.IO.Path.GetTempPath() + "BadPwd" +   
-               (new Random()).Next().ToString() + ".wav";  
-      FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
-      pwdAudio.WriteToWaveStream(waveStream);  
-      waveStream.Flush();  
-      waveStream.Close();  
-      SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
-    }  
-  }  
+ SemanticValue semantics = eventArgs.Result.Semantics;  
+ RecognitionResult result=eventArgs.Result;  
+ 
+ if (!semantics.ContainsKey("Password"))   
+ {  
+   SpeechUI.SendTextFeedback(eventArgs.Result, "No Password Provided", false);  
+ }  
+ else  
+ {  
+   RecognizedAudio pwdAudio = result.GetAudioForWordRange(  
+             result.Words[3],  
+             result.Words[result.Words.Count - 1]);  
+   MemoryStream pwdMemoryStream = new MemoryStream();  
+   pwdAudio.WriteToAudioStream(pwdMemoryStream);  
+   if (!IsValidPwd(pwdMemoryStream))   
+   {  
+     string badPwd = System.IO.Path.GetTempPath() + "BadPwd" +   
+              (new Random()).Next().ToString() + ".wav";  
+     FileStream waveStream = new FileStream(badPwd, FileMode.Create);  
+     pwdAudio.WriteToWaveStream(waveStream);  
+     waveStream.Flush();  
+     waveStream.Close();  
+     SpeechUI.SendTextFeedback(eventArgs.Result, "Invalid Password", false);  
+   }  
+ }  
 };  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

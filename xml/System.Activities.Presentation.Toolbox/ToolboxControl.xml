@@ -25,18 +25,18 @@
     <summary>Provides functions to render a collection of categorized tools, as well as notify users about tool selection and creation events. This class is <see langword="sealed" />, so it cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides support for representing the toolbox controls when re-hosting the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] outside of Visual Studio. It implements <xref:System.Windows.Controls.Control>. The <xref:System.Activities.Presentation.Toolbox.ToolboxControl> contains a collection of toolbox categories that hold various categories of tools that can be accessed with the <xref:System.Activities.Presentation.Toolbox.ToolboxControl.Categories%2A> property. It also is able to retrieve the <xref:System.Activities.Presentation.WorkflowDesigner> with which it is associated using the <xref:System.Activities.Presentation.Toolbox.ToolboxControl.AssociatedDesigner%2A> property.  
-  
+This class provides support for representing the toolbox controls when re-hosting the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] outside of Visual Studio. It implements <xref:System.Windows.Controls.Control>. The <xref:System.Activities.Presentation.Toolbox.ToolboxControl> contains a collection of toolbox categories that hold various categories of tools that can be accessed with the <xref:System.Activities.Presentation.Toolbox.ToolboxControl.Categories%2A> property. It also is able to retrieve the <xref:System.Activities.Presentation.WorkflowDesigner> with which it is associated using the <xref:System.Activities.Presentation.Toolbox.ToolboxControl.AssociatedDesigner%2A> property.  
+ 
 > [!WARNING]
 >  For activities to load properly in the toolbox, the assembly that contains the activities must be loaded first. Use <xref:System.Reflection.Assembly.LoadFrom%2A> to load the activity type if it is contained in a different assembly; using <xref:System.Object.GetType%2A> instead will cause an exception to be thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_ToolboxControl#0](WFD_ToolboxControl#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,10 +96,10 @@
         <value>The <see cref="T:System.Activities.Design.Toolbox.ToolboxCategoryItems" /> that contains the collection of <see cref="T:System.Activities.Design.Toolbox.ToolboxCategory" /> objects associated with this <see cref="T:System.Activities.Presentation.Toolbox.ToolboxControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value set is `null`, the categories in the <xref:System.Activities.Design.Toolbox.ToolboxCategoryItems> will be cleared.  
-  
+If the value set is `null`, the categories in the <xref:System.Activities.Design.Toolbox.ToolboxCategoryItems> will be cleared.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,10 +191,10 @@
         <summary>Builds the visual tree for this toolbox control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.Toolbox.ToolboxControl.OnApplyTemplate%2A> method is invoked by the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method. <xref:System.Activities.Presentation.Toolbox.ToolboxControl> implements <xref:System.Windows.Controls.Control>, which, in turn, implements <xref:System.Windows.FrameworkElement>.  
-  
+The <xref:System.Activities.Presentation.Toolbox.ToolboxControl.OnApplyTemplate%2A> method is invoked by the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method. <xref:System.Activities.Presentation.Toolbox.ToolboxControl> implements <xref:System.Windows.Controls.Control>, which, in turn, implements <xref:System.Windows.FrameworkElement>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

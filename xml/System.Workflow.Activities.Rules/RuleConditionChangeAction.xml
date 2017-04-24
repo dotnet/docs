@@ -19,10 +19,10 @@
     <summary>Represents an abstract base class from which all dynamic update notifications of changes to <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />s must be derived.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class can be used by a tracking service to determine that <xref:System.Workflow.Activities.Rules.RuleCondition>s have been dynamically updated. The derived classes indicate which <xref:System.Workflow.Activities.Rules.RuleCondition> is being dynamically updated, and what operation is being performed (added to the workflow, removed from the workflow, or changed).  
-  
+This class can be used by a tracking service to determine that <xref:System.Workflow.Activities.Rules.RuleCondition>s have been dynamically updated. The derived classes indicate which <xref:System.Workflow.Activities.Rules.RuleCondition> is being dynamically updated, and what operation is being performed (added to the workflow, removed from the workflow, or changed).  
+ 
  ]]></format>
     </remarks>
   </Docs>

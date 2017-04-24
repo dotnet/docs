@@ -31,10 +31,10 @@
     <summary>Specifies a source <see cref="T:System.Type" /> in another assembly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.CompilerServices.TypeForwardedFromAttribute> attribute enables the target framework provider to trace a loaded type back to the original assembly it was forwarded from.  
-  
+The <xref:System.Runtime.CompilerServices.TypeForwardedFromAttribute> attribute enables the target framework provider to trace a loaded type back to the original assembly it was forwarded from.  
+ 
  ]]></format>
     </remarks>
   </Docs>

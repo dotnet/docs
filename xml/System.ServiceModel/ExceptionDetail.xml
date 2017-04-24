@@ -20,12 +20,12 @@
     <summary>Represents fault detail information.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.ExceptionDetail> class is the type parameter used as the fault detail object when a <xref:System.ServiceModel.FaultException?displayProperty=fullName> is sent by a service as a result of setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> or the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> property to `true`.  
-  
- To send a <xref:System.ServiceModel.ExceptionDetail> object the type must be serializable. For more information on serialization options, see [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
-  
+The <xref:System.ServiceModel.ExceptionDetail> class is the type parameter used as the fault detail object when a <xref:System.ServiceModel.FaultException?displayProperty=fullName> is sent by a service as a result of setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> or the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> property to `true`.  
+ 
+To send a <xref:System.ServiceModel.ExceptionDetail> object the type must be serializable. For more information on serialization options, see [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ExceptionDetail" /> class from the exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The help link, message, stack trace, and type name information is extracted and added to the equivalent properties in <xref:System.ServiceModel.ExceptionDetail>.  
-  
+The help link, message, stack trace, and type name information is extracted and added to the equivalent properties in <xref:System.ServiceModel.ExceptionDetail>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> parameter is <see langword="null" />.</exception>
@@ -80,10 +80,10 @@
         <value>The help link information of the exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value, which represents a help file, is a URN or URL.  
-  
+The return value, which represents a help file, is a URN or URL.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <value>The inner exception information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.ExceptionDetail.InnerException%2A> property to obtain the set of exceptions that led to the current exception.  
-  
+Use the <xref:System.ServiceModel.ExceptionDetail.InnerException%2A> property to obtain the set of exceptions that led to the current exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <value>The exception message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The text of <xref:System.ServiceModel.ExceptionDetail.Message%2A> should completely describe the error and should, when possible, explain how to correct it.  
-  
+The text of <xref:System.ServiceModel.ExceptionDetail.Message%2A> should completely describe the error and should, when possible, explain how to correct it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <value>The stack trace of the exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The execution stack keeps track of all the methods that are in execution at a given instant. A trace of the method calls is called a stack trace.  
-  
+The execution stack keeps track of all the methods that are in execution at a given instant. A trace of the method calls is called a stack trace.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,22 +13,22 @@
     <summary>Identifies the various parts of a selection adorner on an <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> method returns an <xref:System.Windows.Controls.InkCanvasSelectionHitResult> to indicate which part of the selection adorner intersects or surrounds a <xref:System.Windows.Point>. This is useful when performing drag-and-drop operations.  
-  
+The <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> method returns an <xref:System.Windows.Controls.InkCanvasSelectionHitResult> to indicate which part of the selection adorner intersects or surrounds a <xref:System.Windows.Point>. This is useful when performing drag-and-drop operations.  
+ 
 <a name="xamlTextUsage_InkCanvasSelectionHitResult"></a>   
 ## XAML Text Usage  
- This class is not typically used in XAML.  
+This class is not typically used in XAML.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how use <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> to determine whether to create a <xref:System.Windows.DataObject> to initiate drag and drop.  To implement drag and drop between two <xref:System.Windows.Controls.InkCanvas> objects, see [How to: Drag and Drop Ink](~/docs/framework/wpf/advanced/how-to-drag-and-drop-ink.md).  
-  
- [!code-csharp[InkDragDrop#3](~/samples/snippets/csharp/VS_Snippets_Wpf/InkDragDrop/CSharp/Window1.xaml.cs#3)]
- [!code-vb[InkDragDrop#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkDragDrop/VisualBasic/Window1.xaml.vb#3)]  
-  
+The following example demonstrates how use <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> to determine whether to create a <xref:System.Windows.DataObject> to initiate drag and drop.  To implement drag and drop between two <xref:System.Windows.Controls.InkCanvas> objects, see [How to: Drag and Drop Ink](~/docs/framework/wpf/advanced/how-to-drag-and-drop-ink.md).  
+ 
+[!code-csharp[InkDragDrop#3](~/samples/snippets/csharp/VS_Snippets_Wpf/InkDragDrop/CSharp/Window1.xaml.cs#3)]
+[!code-vb[InkDragDrop#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkDragDrop/VisualBasic/Window1.xaml.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

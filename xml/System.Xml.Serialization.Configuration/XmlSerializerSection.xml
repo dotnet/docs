@@ -14,10 +14,10 @@
     <summary>Handles the XML elements used to configure XML serialization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used to handle the [\&lt;xmlSerializer\&gt; Element](~/docs/framework/serialization/xmlserializer-element.md).  
-  
+This class is used to handle the [\&lt;xmlSerializer\&gt; Element](~/docs/framework/serialization/xmlserializer-element.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
           <see langword="true" /> if the check is made; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this method. Instead, set the `checkDeserializerAdvances` attribute of the [\&lt;xmlSerializer\&gt; Element](~/docs/framework/serialization/xmlserializer-element.md).  
-  
+Do not use this method. Instead, set the `checkDeserializerAdvances` attribute of the [\&lt;xmlSerializer\&gt; Element](~/docs/framework/serialization/xmlserializer-element.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

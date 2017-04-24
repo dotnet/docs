@@ -11,12 +11,12 @@
     <summary>Provides an interface that designer tool developers can use to supply a set of <see cref="T:System.Web.UI.ThemeProvider" /> objects, which can be used to apply themes and control skins to controls in a design-time environment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Page developers and control authors do not use the <xref:System.Web.UI.IThemeResolutionService> interface. The <xref:System.Web.UI.IThemeResolutionService> interface is implemented by designer tool developers to supply <xref:System.Web.UI.SkinBuilder> control builders in the design environment.  
-  
- The <xref:System.Web.UI.IThemeResolutionService> is a container for one or more <xref:System.Web.UI.ThemeProvider> objects, which in turn supply the <xref:System.Web.UI.SkinBuilder> objects that apply themes and control skins to controls when they are created in a designer. An instance of the <xref:System.Web.UI.IThemeResolutionService> class can be accessed from a given <xref:System.Web.UI.ControlBuilder> instance using its <xref:System.Web.UI.ControlBuilder.ThemeResolutionService%2A?displayProperty=fullName> property.  
-  
+Page developers and control authors do not use the <xref:System.Web.UI.IThemeResolutionService> interface. The <xref:System.Web.UI.IThemeResolutionService> interface is implemented by designer tool developers to supply <xref:System.Web.UI.SkinBuilder> control builders in the design environment.  
+ 
+The <xref:System.Web.UI.IThemeResolutionService> is a container for one or more <xref:System.Web.UI.ThemeProvider> objects, which in turn supply the <xref:System.Web.UI.SkinBuilder> objects that apply themes and control skins to controls when they are created in a designer. An instance of the <xref:System.Web.UI.IThemeResolutionService> class can be accessed from a given <xref:System.Web.UI.ControlBuilder> instance using its <xref:System.Web.UI.ControlBuilder.ThemeResolutionService%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>

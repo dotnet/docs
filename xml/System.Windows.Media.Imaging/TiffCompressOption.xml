@@ -13,19 +13,19 @@
     <summary>Specifies the possible compression schemes for [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] bitmap images.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Ccitt3, Ccitt4, and Rle require that the <xref:System.Windows.Media.PixelFormat> value be set to <xref:System.Windows.Media.PixelFormats.BlackWhite%2A>. Setting the <xref:System.Windows.Media.PixelFormat> to any other value resets the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property value to Default.  
+The Ccitt3, Ccitt4, and Rle require that the <xref:System.Windows.Media.PixelFormat> value be set to <xref:System.Windows.Media.PixelFormats.BlackWhite%2A>. Setting the <xref:System.Windows.Media.PixelFormat> to any other value resets the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property value to Default.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property.  
-  
- [!code-cpp[tiffbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CPP/TiffEncoderDecoder.cpp#3)]
- [!code-csharp[tiffbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CSharp/TiffEncoderDecoder.cs#3)]
- [!code-vb[tiffbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/VB/TiffEncoderDecoder.vb#3)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property.  
+ 
+[!code-cpp[tiffbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CPP/TiffEncoderDecoder.cpp#3)]
+[!code-csharp[tiffbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CSharp/TiffEncoderDecoder.cs#3)]
+[!code-vb[tiffbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/VB/TiffEncoderDecoder.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -18,20 +18,20 @@
     <summary>Specifies the outcome of sending e-mail by using the <see cref="T:System.Net.Mail.SmtpClient" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values in the <xref:System.Net.Mail.SmtpStatusCode> enumeration specify reply status values sent by a Simple Mail Transfer Protocol (SMTP) server. The <xref:System.Net.Mail.SmtpException> and <xref:System.Net.Mail.SmtpFailedRecipientsException> classes contain <xref:System.Net.Mail.SmtpException.StatusCode%2A> properties that return <xref:System.Net.Mail.SmtpStatusCode> values.  
+The values in the <xref:System.Net.Mail.SmtpStatusCode> enumeration specify reply status values sent by a Simple Mail Transfer Protocol (SMTP) server. The <xref:System.Net.Mail.SmtpException> and <xref:System.Net.Mail.SmtpFailedRecipientsException> classes contain <xref:System.Net.Mail.SmtpException.StatusCode%2A> properties that return <xref:System.Net.Mail.SmtpStatusCode> values.  
+ 
+SMTP is defined in RFC 2821 available at [http://www.ietf.org](http://www.ietf.org/).  
+ 
   
- SMTP is defined in RFC 2821 available at [http://www.ietf.org](http://www.ietf.org/).  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays an error message to the console when an <xref:System.Net.Mail.SmtpException> is thrown.  
-  
- [!code-cpp[NclMailSync#23](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#23)]
- [!code-csharp[NclMailSync#23](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#23)]  
-  
+The following code example displays an error message to the console when an <xref:System.Net.Mail.SmtpException> is thrown.  
+ 
+[!code-cpp[NclMailSync#23](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#23)]
+[!code-csharp[NclMailSync#23](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#23)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

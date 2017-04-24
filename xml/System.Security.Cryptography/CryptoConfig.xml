@@ -24,10 +24,10 @@
     <summary>Accesses the cryptography configuration information.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the simple names recognized by this class and the default algorithm implementations to which they map. Alternatively, you can map other implementations to these names, as described in [Mapping Algorithm Names to Cryptography Classes](~/docs/framework/configure-apps/map-algorithm-names-to-cryptography-classes.md).  
-  
+The following table shows the simple names recognized by this class and the default algorithm implementations to which they map. Alternatively, you can map other implementations to these names, as described in [Mapping Algorithm Names to Cryptography Classes](~/docs/framework/configure-apps/map-algorithm-names-to-cryptography-classes.md).  
+ 
 |Simple name|Algorithm implementation|  
 |-----------------|------------------------------|  
 |3DES, Triple DES, TripleDES, System.Security.Cryptography.TripleDES|<xref:System.Security.Cryptography.TripleDESCryptoServiceProvider>|  
@@ -67,16 +67,16 @@
 |System.Security.Cryptography.SHA512Cng|<xref:System.Security.Cryptography.SHA512Cng>|  
 |System.Security.Cryptography.SHA512CryptoServiceProvider|<xref:System.Security.Cryptography.SHA512CryptoServiceProvider>|  
 |System.Security.Cryptography.SymmetricAlgorithm|<xref:System.Security.Cryptography.RijndaelManaged>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.CryptoConfig> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoConfig#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#1)]
- [!code-csharp[System.Security.Cryptography.CryptoConfig#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#1)]
- [!code-vb[System.Security.Cryptography.CryptoConfig#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#1)]  
-  
+The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.CryptoConfig> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoConfig#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#1)]
+[!code-csharp[System.Security.Cryptography.CryptoConfig#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#1)]
+[!code-vb[System.Security.Cryptography.CryptoConfig#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -134,10 +134,10 @@
         <summary>Adds a set of names to algorithm mappings to be used for the current application domain.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified mappings take precedence over the built-in mappings and the mappings in the machine.config file. The mappings are used to prevent partially trust code from using trusted cryptographic operations.  
-  
+The specified mappings take precedence over the built-in mappings and the mappings in the machine.config file. The mappings are used to prevent partially trust code from using trusted cryptographic operations.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The<paramref name=" algorithm" /> or <paramref name="names" /> parameter is <see langword="null" />.</exception>
@@ -183,10 +183,10 @@
         <summary>Adds a set of names to object identifier (OID) mappings to be used for the current application domain.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified mappings take precedence over the built-in mappings and the mappings in the machine.config file. The mappings are used to prevent partially trust code from using trusted cryptographic operations.  
-  
+The specified mappings take precedence over the built-in mappings and the mappings in the machine.config file. The mappings are used to prevent partially trust code from using trusted cryptographic operations.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The<paramref name=" oid" /> or <paramref name="names" /> parameter is <see langword="null" />.</exception>
@@ -217,10 +217,10 @@
           <see langword="true" /> to enforce the policy; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `false`, any algorithm may be created.  
-  
+If `false`, any algorithm may be created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,19 +251,19 @@
         <returns>A new instance of the specified cryptographic object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of simple names recognized by this class, see <xref:System.Security.Cryptography.CryptoConfig>.  
+For a list of simple names recognized by this class, see <xref:System.Security.Cryptography.CryptoConfig>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A> method to create a new SHA1 provider. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoConfig> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoConfig#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#4)]
- [!code-csharp[System.Security.Cryptography.CryptoConfig#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#4)]
- [!code-vb[System.Security.Cryptography.CryptoConfig#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#4)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A> method to create a new SHA1 provider. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoConfig> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoConfig#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#4)]
+[!code-csharp[System.Security.Cryptography.CryptoConfig#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#4)]
+[!code-vb[System.Security.Cryptography.CryptoConfig#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -304,19 +304,19 @@
         <returns>A new instance of the specified cryptographic object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of simple names recognized by this class, see <xref:System.Security.Cryptography.CryptoConfig>.  
+For a list of simple names recognized by this class, see <xref:System.Security.Cryptography.CryptoConfig>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A> method to initialize a new RSA provider instance accessing the `TestContainer` key container. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoConfig> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoConfig#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#5)]
- [!code-csharp[System.Security.Cryptography.CryptoConfig#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#5)]
- [!code-vb[System.Security.Cryptography.CryptoConfig#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#5)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A> method to initialize a new RSA provider instance accessing the `TestContainer` key container. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoConfig> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoConfig#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#5)]
+[!code-csharp[System.Security.Cryptography.CryptoConfig#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#5)]
+[!code-vb[System.Security.Cryptography.CryptoConfig#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -349,14 +349,14 @@
         <returns>A byte array containing the encoded OID.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoConfig.EncodeOID%2A> method to encode the specified object identifier. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoConfig> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoConfig#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#6)]
- [!code-csharp[System.Security.Cryptography.CryptoConfig#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#6)]
- [!code-vb[System.Security.Cryptography.CryptoConfig#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#6)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoConfig.EncodeOID%2A> method to encode the specified object identifier. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoConfig> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoConfig#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#6)]
+[!code-csharp[System.Security.Cryptography.CryptoConfig#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#6)]
+[!code-vb[System.Security.Cryptography.CryptoConfig#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="str" /> parameter is <see langword="null" />.</exception>
@@ -389,19 +389,19 @@
         <returns>The OID of the specified algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of simple names recognized by this class, see <xref:System.Security.Cryptography.CryptoConfig>.  
+For a list of simple names recognized by this class, see <xref:System.Security.Cryptography.CryptoConfig>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoConfig.MapNameToOID%2A> method to retrieve an object identifier (OID) from the string name of the SHA1 algorithm. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoConfig> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoConfig#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#3)]
- [!code-csharp[System.Security.Cryptography.CryptoConfig#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#3)]
- [!code-vb[System.Security.Cryptography.CryptoConfig#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#3)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoConfig.MapNameToOID%2A> method to retrieve an object identifier (OID) from the string name of the SHA1 algorithm. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoConfig> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoConfig#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CPP/members.cpp#3)]
+[!code-csharp[System.Security.Cryptography.CryptoConfig#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/CS/members.cs#3)]
+[!code-vb[System.Security.Cryptography.CryptoConfig#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoConfig/VB/members.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>

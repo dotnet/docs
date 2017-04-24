@@ -16,12 +16,12 @@
     <summary>Defines the interface implemented by the workflow expression evaluation component that provides a context frame for expression evaluation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Creates a stack frame for workflow expression evaluation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked by the <xref:System.Workflow.Runtime.DebugEngine.DebugController> object.  
-  
+This method is invoked by the <xref:System.Workflow.Runtime.DebugEngine.DebugController> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

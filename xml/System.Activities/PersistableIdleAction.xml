@@ -13,10 +13,10 @@
     <summary>Specifies the action that occurs when a workflow becomes idle when persistence is allowed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> function is invoked when the scheduler has no more pending work items and the workflow runtime can persist. Note that the <xref:System.Activities.WorkflowApplication.Idle%2A> function is invoked when persistence is not allowed, and both <xref:System.Activities.WorkflowApplication.Idle%2A> and <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> are invoked in that order when persistence is allowed. None is the default action if no <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler is provided.  
-  
+The <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> function is invoked when the scheduler has no more pending work items and the workflow runtime can persist. Note that the <xref:System.Activities.WorkflowApplication.Idle%2A> function is invoked when persistence is not allowed, and both <xref:System.Activities.WorkflowApplication.Idle%2A> and <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> are invoked in that order when persistence is allowed. None is the default action if no <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler is provided.  
+ 
  ]]></format>
     </remarks>
   </Docs>

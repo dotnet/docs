@@ -61,14 +61,14 @@
         <returns>The document that was loaded.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the document has not been loaded previously, <xref:System.Windows.Documents.DocumentReference.GetDocument%2A> will load the document regardless if the `forceReload` parameter is `true` or `false`.  
-  
- If the document was loaded previously and `forceReload` is specified as `false`, the document is not reloaded and the previously loaded document is returned.  
-  
- If `forceReload` is specified `true`, then the entire document will be reloaded and reparsed, even if it had already been retrieved previously.  
-  
+If the document has not been loaded previously, <xref:System.Windows.Documents.DocumentReference.GetDocument%2A> will load the document regardless if the `forceReload` parameter is `true` or `false`.  
+ 
+If the document was loaded previously and `forceReload` is specified as `false`, the document is not reloaded and the previously loaded document is returned.  
+ 
+If `forceReload` is specified `true`, then the entire document will be reloaded and reparsed, even if it had already been retrieved previously.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <summary>Attaches a <see cref="T:System.Windows.Documents.FixedDocument" /> to the <see cref="T:System.Windows.Documents.DocumentReference" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can attach a document only if it has not been attached to this <xref:System.Windows.Documents.DocumentReference> before.  
-  
+You can attach a document only if it has not been attached to this <xref:System.Windows.Documents.DocumentReference> before.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,18 +118,18 @@
         <value>A <see cref="T:System.Uri" /> representing the document reference.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Documents.DocumentReference.SourceProperty> field.  
-  
+This dependency property is identified by the <xref:System.Windows.Documents.DocumentReference.SourceProperty> field.  
+ 
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.DocumentReference.SourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <value>The base URI of the current context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentReference> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentReference> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

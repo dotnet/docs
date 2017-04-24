@@ -184,10 +184,10 @@
         <value>The RequestID associated with the document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only and throws an exception if you attempt to set the property value.  
-  
+This property is read-only and throws an exception if you attempt to set the property value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">You attempted to set the property value.</exception>
@@ -210,10 +210,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes can provide synchronized versions of the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument> using the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument.SyncRoot%2A> of the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument>, not directly on the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument>. This ensures proper operation of collections derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument> object.  
-  
+Derived classes can provide synchronized versions of the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument> using the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument.SyncRoot%2A> of the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument>, not directly on the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument>. This ensures proper operation of collections derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.DirectoryServices.Protocols.DsmlResponseDocument> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

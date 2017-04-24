@@ -21,18 +21,18 @@
     <summary>Encapsulates a custom user-defined line cap.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Line caps are used at the beginnings and ends of lines or curves drawn by GDI+ <xref:System.Drawing.Pen> objects. GDI+ supports several predefined cap styles, and also allows users to define their own cap styles. This class is used to create custom cap styles.  
+Line caps are used at the beginnings and ends of lines or curves drawn by GDI+ <xref:System.Drawing.Pen> objects. GDI+ supports several predefined cap styles, and also allows users to define their own cap styles. This class is used to create custom cap styles.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap> class. To run this example paste, the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
- [!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap> class. To run this example paste, the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
+[!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,20 +56,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> class with the specified outline and fill.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Drawing2D.CustomLineCap> uses a fill mode of "winding" regardless of the fill mode specified for the operation.  
+<xref:System.Drawing.Drawing2D.CustomLineCap> uses a fill mode of "winding" regardless of the fill mode specified for the operation.  
+ 
+The `fillPath` and `strokePath` parameters cannot be used at the same time. One parameter must be passed a null value. If neither parameter is passed a null value, `fillPath` will be ignored. If `strokePath` is `null`, `fillPath` should intercept the negative y-axis.  
+ 
   
- The `fillPath` and `strokePath` parameters cannot be used at the same time. One parameter must be passed a null value. If neither parameter is passed a null value, `fillPath` will be ignored. If `strokePath` is `null`, `fillPath` should intercept the negative y-axis.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
- [!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
+[!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,12 +95,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> class from the specified existing <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration with the specified outline and fill.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Drawing2D.CustomLineCap> uses a fill mode of "winding" regardless of the fill mode specified for the operation.  
-  
- The `fillPath` and `strokePath` parameters cannot be used at the same time. One parameter must be passed a null value. If neither parameter is passed a null value, `fillPath` will be ignored. If `strokePath` is `null`, `fillPath` should intercept the negative y-axis.  
-  
+<xref:System.Drawing.Drawing2D.CustomLineCap> uses a fill mode of "winding" regardless of the fill mode specified for the operation.  
+ 
+The `fillPath` and `strokePath` parameters cannot be used at the same time. One parameter must be passed a null value. If neither parameter is passed a null value, `fillPath` will be ignored. If `strokePath` is `null`, `fillPath` should intercept the negative y-axis.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,12 +128,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> class from the specified existing <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration with the specified outline, fill, and inset.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Drawing2D.CustomLineCap> uses a fill mode of "winding" regardless of the fill mode specified for the operation.  
-  
- The `fillPath` and `strokePath` parameters cannot be used at the same time. One parameter must be passed a null value. If neither parameter is passed a null value, `fillPath` will be ignored. If `strokePath` is `null`, `fillPath` should intercept the negative y-axis.  
-  
+<xref:System.Drawing.Drawing2D.CustomLineCap> uses a fill mode of "winding" regardless of the fill mode specified for the operation.  
+ 
+The `fillPath` and `strokePath` parameters cannot be used at the same time. One parameter must be passed a null value. If neither parameter is passed a null value, `fillPath` will be ignored. If `strokePath` is `null`, `fillPath` should intercept the negative y-axis.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,74 +192,74 @@
         <returns>The <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> this method creates, cast as an object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+ 
 -   Creates a custom line cap by using the <xref:System.Drawing.Drawing2D.GraphicsPath> object.  
-  
+ 
 -   Creates a <xref:System.Drawing.Drawing2D.CustomLineCap> object, `firstCap`,using the <xref:System.Drawing.Drawing2D.GraphicsPath> object just created.  
-  
+ 
 -   Creates a clone of `firstCap` by using the <xref:System.Drawing.Drawing2D.CustomLineCap.Clone%2A> method.  
-  
+ 
 -   Sets up the <xref:System.Drawing.Pen.CustomStartCap%2A> and <xref:System.Drawing.Pen.CustomEndCap%2A> properties of the <xref:System.Drawing.Pen> object, and uses that pen to draw a line and the custom caps to the screen.  
-  
+ 
 ```vb  
 Public Sub CloneExample(e As PaintEventArgs)  
- Dim points As Point() = New Point(- 5, - 5) New Point(0, 0) _  
- New Point(5, - 5)  
- Dim capPath As New GraphicsPath()  
- ' Create a Path and add two lines to it,  
- ' forming a custom line cap.  
- capPath.AddLines(points)  
- ' Create a CustomLineCap object.  
- Dim firstCap As New CustomLineCap(Nothing, capPath)  
- ' Create a copy of firstCap.  
- Dim secondCap As CustomLineCap = CType(firstCap.Clone(), _  
- CustomLineCap)  
- ' Create a Pen object.  
- Dim pen As New Pen(Color.Black, 3F)  
- 'Set up the line.  
- Dim point1 As New Point(20, 20)  
- Dim point2 As New Point(100, 100)  
- ' Set up the caps.  
- pen.CustomStartCap = firstCap  
- pen.CustomEndCap = secondCap  
- ' Draw the line and caps to the screen.  
- e.Graphics.DrawLine(pen, point1, point2)  
- End Sub  
+Dim points As Point() = New Point(- 5, - 5) New Point(0, 0) _  
+New Point(5, - 5)  
+Dim capPath As New GraphicsPath()  
+' Create a Path and add two lines to it,  
+' forming a custom line cap.  
+capPath.AddLines(points)  
+' Create a CustomLineCap object.  
+Dim firstCap As New CustomLineCap(Nothing, capPath)  
+' Create a copy of firstCap.  
+Dim secondCap As CustomLineCap = CType(firstCap.Clone(), _  
+CustomLineCap)  
+' Create a Pen object.  
+Dim pen As New Pen(Color.Black, 3F)  
+'Set up the line.  
+Dim point1 As New Point(20, 20)  
+Dim point2 As New Point(100, 100)  
+' Set up the caps.  
+pen.CustomStartCap = firstCap  
+pen.CustomEndCap = secondCap  
+' Draw the line and caps to the screen.  
+e.Graphics.DrawLine(pen, point1, point2)  
+End Sub  
 ```  
-  
+ 
 ```csharp  
 private void CloneExample(PaintEventArgs e)  
- {  
- // Create a Path and add two lines to it,  
- // forming a custom line cap.  
- Point[] points =  
- {  
- new Point(-5, -5),  
- new Point(0, 0),  
- new Point(5, -5)  
- };  
- GraphicsPath capPath = new GraphicsPath();  
- capPath.AddLines(points);  
- // Create a CustomLineCap object.  
- CustomLineCap firstCap = new CustomLineCap(null, capPath);  
- // Create a copy of firstCap.  
- CustomLineCap secondCap = (CustomLineCap)firstCap.Clone();  
- // Create a Pen object.  
- Pen pen = new Pen(Color.Black, 3.0f);  
- // Set up the line.  
- Point point1 = new Point(20, 20);  
- Point point2 = new Point(100, 100);  
- // Set up the caps.  
- pen.CustomStartCap = firstCap;  
- pen.CustomEndCap = secondCap;  
- // Draw the line and caps to the screen.  
- e.Graphics.DrawLine(pen, point1, point2);  
- }  
+{  
+// Create a Path and add two lines to it,  
+// forming a custom line cap.  
+Point[] points =  
+{  
+new Point(-5, -5),  
+new Point(0, 0),  
+new Point(5, -5)  
+};  
+GraphicsPath capPath = new GraphicsPath();  
+capPath.AddLines(points);  
+// Create a CustomLineCap object.  
+CustomLineCap firstCap = new CustomLineCap(null, capPath);  
+// Create a copy of firstCap.  
+CustomLineCap secondCap = (CustomLineCap)firstCap.Clone();  
+// Create a Pen object.  
+Pen pen = new Pen(Color.Black, 3.0f);  
+// Set up the line.  
+Point point1 = new Point(20, 20);  
+Point point2 = new Point(100, 100);  
+// Set up the caps.  
+pen.CustomStartCap = firstCap;  
+pen.CustomEndCap = secondCap;  
+// Draw the line and caps to the screen.  
+e.Graphics.DrawLine(pen, point1, point2);  
+}  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,10 +281,10 @@ private void CloneExample(PaintEventArgs e)
         <summary>Releases all resources used by this <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.IDisposable.Dispose%2A> allows the resources used by this <xref:System.Drawing.Drawing2D.CustomLineCap> object to be reallocated for other purposes.  
-  
+Calling <xref:System.IDisposable.Dispose%2A> allows the resources used by this <xref:System.Drawing.Drawing2D.CustomLineCap> object to be reallocated for other purposes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,13 +351,13 @@ private void CloneExample(PaintEventArgs e)
         <summary>Gets the caps used to start and end lines that make up this custom cap.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap.GetStrokeCaps%2A> method. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
- [!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap.GetStrokeCaps%2A> method. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
+[!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,13 +384,13 @@ private void CloneExample(PaintEventArgs e)
         <summary>Sets the caps used to start and end lines that make up this custom cap.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap.SetStrokeCaps%2A> method. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
- [!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap.SetStrokeCaps%2A> method. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
+[!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -412,10 +412,10 @@ private void CloneExample(PaintEventArgs e)
         <value>The <see cref="T:System.Drawing.Drawing2D.LineJoin" /> enumeration this <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> object uses to join lines.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies a <xref:System.Drawing.Drawing2D.LineJoin> enumeration that is used to join lines and curves that make up the stroked path of this <xref:System.Drawing.Drawing2D.CustomLineCap> object.  
-  
+This property specifies a <xref:System.Drawing.Drawing2D.LineJoin> enumeration that is used to join lines and curves that make up the stroked path of this <xref:System.Drawing.Drawing2D.CustomLineCap> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@ private void CloneExample(PaintEventArgs e)
         <value>The amount by which to scale the cap.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies the multiple of the pen width by which to multiply the size of the custom cap. For example, if this property equals 1, the custom cap width is 10, the custom cap height is 5, and a line is drawn with a pen with a width of 3, then the cap is drawn 30 units wide and 15 units high. Setting this property to 3 causes the cap to be drawn 90 units wide and 45 units high.  
-  
+This property specifies the multiple of the pen width by which to multiply the size of the custom cap. For example, if this property equals 1, the custom cap width is 10, the custom cap height is 5, and a line is drawn with a pen with a width of 3, then the cap is drawn 30 units wide and 15 units high. Setting this property to 3 causes the cap to be drawn 90 units wide and 45 units high.  
+ 
  ]]></format>
         </remarks>
       </Docs>

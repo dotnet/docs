@@ -22,10 +22,10 @@
     <summary>Exposes methods and properties to support UI Automation client access to controls that provide fundamental window-based functionality within a traditional [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.WindowPattern> control pattern.  
-  
+Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.WindowPattern> control pattern.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,14 +47,14 @@
         <summary>Attempts to close the window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Automation.Provider.IWindowProvider.Close%2A> must return immediately without blocking.  
-  
- <xref:System.Windows.Automation.Provider.IWindowProvider.Close%2A> raises the <xref:System.Windows.Automation.WindowPatternIdentifiers.WindowClosedEvent> event. If possible, the event should be raised after the control has completed its associated action.  
-  
- When called on a split pane control, this method will close the pane and remove the associated split. This method might also close all other panes, depending on implementation.  
-  
+<xref:System.Windows.Automation.Provider.IWindowProvider.Close%2A> must return immediately without blocking.  
+ 
+<xref:System.Windows.Automation.Provider.IWindowProvider.Close%2A> raises the <xref:System.Windows.Automation.WindowPatternIdentifiers.WindowClosedEvent> event. If possible, the event should be raised after the control has completed its associated action.  
+ 
+When called on a split pane control, this method will close the pane and remove the associated split. This method might also close all other panes, depending on implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When the control is unable to perform the requested action.</exception>
@@ -217,12 +217,12 @@
           <see langword="true" /> if the window has entered the idle state; <see langword="false" /> if the timeout occurred.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is typically used in conjunction with the handling of a <xref:System.Windows.Automation.WindowPatternIdentifiers.WindowOpenedEvent>.  
-  
- The implementation is dependent on the underlying application framework; therefore this method might return some time after the window is ready for user input. The calling code should not rely on this method to ascertain exactly when the window has become idle.  
-  
+This method is typically used in conjunction with the handling of a <xref:System.Windows.Automation.WindowPatternIdentifiers.WindowOpenedEvent>.  
+ 
+The implementation is dependent on the underlying application framework; therefore this method might return some time after the window is ready for user input. The calling code should not rely on this method to ascertain exactly when the window has become idle.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">When the parameter passed in is not a valid number.</exception>

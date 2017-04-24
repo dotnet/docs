@@ -14,28 +14,28 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.DataControlField" /> objects that are used by data-bound controls such as <see cref="T:System.Web.UI.WebControls.GridView" /> and <see cref="T:System.Web.UI.WebControls.DetailsView" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataControlFieldCollection> class represents a collection of <xref:System.Web.UI.WebControls.DataControlField> objects used by data-bound controls to specify how their child controls are presented. The <xref:System.Web.UI.WebControls.DataControlFieldCollection> class derives from <xref:System.Web.UI.StateManagedCollection>, an abstract base collection class used specifically to store <xref:System.Web.UI.IStateManager> objects.  
-  
- A <xref:System.Web.UI.StateManagedCollection> object influences the behavior of a <xref:System.Web.UI.WebControls.DataControlFieldCollection> object. <xref:System.Web.UI.WebControls.DataControlField> objects that are dynamically added to the collection will be re-added to the control when state is restored. This means that a field needs to be added, removed, or changed just once instead of on each postback, as most collection types in ASP.NET require.  
-  
- (The <xref:System.Web.UI.WebControls.DataControlField> class implements the <xref:System.Web.UI.IStateManager> interface, which enables it to store its state in ASP.NET view state. )  
-  
- Use the <xref:System.Web.UI.WebControls.DataControlFieldCollection> class to programmatically manage a set of <xref:System.Web.UI.WebControls.DataControlField> objects. Note that it is more common to define these fields declaratively.  
-  
- You can add, insert, and remove <xref:System.Web.UI.WebControls.DataControlField> objects using the appropriate methods of the <xref:System.Web.UI.WebControls.DataControlFieldCollection> class. To programmatically retrieve <xref:System.Web.UI.WebControls.DataControlField> objects from a collection, use one of following methods:  
-  
+The <xref:System.Web.UI.WebControls.DataControlFieldCollection> class represents a collection of <xref:System.Web.UI.WebControls.DataControlField> objects used by data-bound controls to specify how their child controls are presented. The <xref:System.Web.UI.WebControls.DataControlFieldCollection> class derives from <xref:System.Web.UI.StateManagedCollection>, an abstract base collection class used specifically to store <xref:System.Web.UI.IStateManager> objects.  
+ 
+A <xref:System.Web.UI.StateManagedCollection> object influences the behavior of a <xref:System.Web.UI.WebControls.DataControlFieldCollection> object. <xref:System.Web.UI.WebControls.DataControlField> objects that are dynamically added to the collection will be re-added to the control when state is restored. This means that a field needs to be added, removed, or changed just once instead of on each postback, as most collection types in ASP.NET require.  
+ 
+(The <xref:System.Web.UI.WebControls.DataControlField> class implements the <xref:System.Web.UI.IStateManager> interface, which enables it to store its state in ASP.NET view state. )  
+ 
+Use the <xref:System.Web.UI.WebControls.DataControlFieldCollection> class to programmatically manage a set of <xref:System.Web.UI.WebControls.DataControlField> objects. Note that it is more common to define these fields declaratively.  
+ 
+You can add, insert, and remove <xref:System.Web.UI.WebControls.DataControlField> objects using the appropriate methods of the <xref:System.Web.UI.WebControls.DataControlFieldCollection> class. To programmatically retrieve <xref:System.Web.UI.WebControls.DataControlField> objects from a collection, use one of following methods:  
+ 
 -   Use the indexer to get a single <xref:System.Web.UI.WebControls.DataControlField> object from the collection using array notation.  
-  
+ 
 -   Use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object, which can then be used to get items from the collection.  
-  
- The <xref:System.Web.UI.StateManagedCollection.Count%2A> property specifies the total number of items in the collection, and is commonly used to determine the upper bound of the collection. You can add items to and remove items from the collection using the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Add%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Remove%2A>, and <xref:System.Web.UI.WebControls.DataControlFieldCollection.RemoveAt%2A> methods.  
-  
- If you are using the <xref:System.Web.UI.WebControls.GridView> or <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DataControlField> objects that are automatically created (for example, when the <xref:System.Web.UI.WebControls.GridView.AutoGenerateColumns%2A> property is `true`) are not stored in the publicly accessible fields collection. You can only access and manipulate <xref:System.Web.UI.WebControls.DataControlField> objects that are not automatically generated.  
-  
- The following table lists the different data control field classes and how they are used.  
-  
+ 
+The <xref:System.Web.UI.StateManagedCollection.Count%2A> property specifies the total number of items in the collection, and is commonly used to determine the upper bound of the collection. You can add items to and remove items from the collection using the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Add%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Remove%2A>, and <xref:System.Web.UI.WebControls.DataControlFieldCollection.RemoveAt%2A> methods.  
+ 
+If you are using the <xref:System.Web.UI.WebControls.GridView> or <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DataControlField> objects that are automatically created (for example, when the <xref:System.Web.UI.WebControls.GridView.AutoGenerateColumns%2A> property is `true`) are not stored in the publicly accessible fields collection. You can only access and manipulate <xref:System.Web.UI.WebControls.DataControlField> objects that are not automatically generated.  
+ 
+The following table lists the different data control field classes and how they are used.  
+ 
 |Parameter Class|Description|  
 |---------------------|-----------------|  
 |<xref:System.Web.UI.WebControls.DataControlField>|The abstract base class for all fields.|  
@@ -47,7 +47,7 @@
 |<xref:System.Web.UI.WebControls.HyperLinkField>|A data-bound control field that displays a <xref:System.Web.UI.WebControls.HyperLink> control.|  
 |<xref:System.Web.UI.WebControls.ImageField>|A data-bound control field that displays an <xref:System.Web.UI.WebControls.Image> control.|  
 |<xref:System.Web.UI.WebControls.TemplateField>|A data-bound control field that displays custom content in a data-bound control.|  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,13 +66,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataControlFieldCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.DataControlFieldCollection> class.  
-  
+Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.DataControlFieldCollection> class.  
+ 
 > [!NOTE]
 >  This constructor is used primarily by control developers.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,18 +97,18 @@
         <summary>Appends the specified <see cref="T:System.Web.UI.WebControls.DataControlField" /> object to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Add%2A> method to append a <xref:System.Web.UI.WebControls.DataControlField> object to the end of the collection. This implementation of the method takes the <xref:System.Web.UI.WebControls.DataControlField> object specified by the `field` parameter and appends it to the collection.  
+Use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Add%2A> method to append a <xref:System.Web.UI.WebControls.DataControlField> object to the end of the collection. This implementation of the method takes the <xref:System.Web.UI.WebControls.DataControlField> object specified by the `field` parameter and appends it to the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Add%2A> method to dynamically add a <xref:System.Web.UI.WebControls.CheckBoxField> object to a <xref:System.Web.UI.WebControls.GridView> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxFieldCtor/CS/checkboxfieldctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxFieldCtor/VB/checkboxfieldctorvb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Add%2A> method to dynamically add a <xref:System.Web.UI.WebControls.CheckBoxField> object to a <xref:System.Web.UI.WebControls.GridView> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[CheckBoxFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxFieldCtor/CS/checkboxfieldctorcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[CheckBoxFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxFieldCtor/VB/checkboxfieldctorvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.DataControlFieldCollection" /> that contains a copy of each data control field in the current collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.CloneFields%2A> method to create a copy of the current collection. This method is used primarily by design-time dialog boxes to implement rollback behavior when an operation is canceled.  
-  
+Use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.CloneFields%2A> method to create a copy of the current collection. This method is used primarily by design-time dialog boxes to implement rollback behavior when an operation is canceled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataControlFieldCollection" /> contains the specified field; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a linear search. It determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
+This method performs a linear search. It determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,12 +240,12 @@
         <summary>Occurs when the fields in the collection change, usually as the result of a <see cref="M:System.Web.UI.StateManagedCollection.Clear" />, <see cref="M:System.Web.UI.WebControls.DataControlFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataControlField)" />, <see cref="M:System.Web.UI.WebControls.DataControlFieldCollection.Remove(System.Web.UI.WebControls.DataControlField)" /> or <see cref="M:System.Web.UI.WebControls.DataControlFieldCollection.Add(System.Web.UI.WebControls.DataControlField)" /> method call. This event is also raised anytime a <see cref="T:System.Web.UI.WebControls.DataControlField" /> in the collection raises its <see langword="FieldChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataControlFieldCollection.FieldsChanged> event is raised when the <xref:System.Web.UI.StateManagedCollection.Clear%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Insert%2A>, or <xref:System.Web.UI.WebControls.DataControlFieldCollection.Remove%2A> method is called.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.UI.WebControls.DataControlFieldCollection.FieldsChanged> event is raised when the <xref:System.Web.UI.StateManagedCollection.Clear%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Insert%2A>, or <xref:System.Web.UI.WebControls.DataControlFieldCollection.Remove%2A> method is called.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,18 +346,18 @@
         <value>The <see cref="T:System.Web.UI.WebControls.DataControlField" /> at the specified index in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this indexer to get a <xref:System.Web.UI.WebControls.DataControlField> object from the <xref:System.Web.UI.WebControls.DataControlFieldCollection> collection at the specified index, using array notation.  
+Use this indexer to get a <xref:System.Web.UI.WebControls.DataControlField> object from the <xref:System.Web.UI.WebControls.DataControlFieldCollection> collection at the specified index, using array notation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Item%2A> indexer to access the fields of a <xref:System.Web.UI.WebControls.GridView> control when the user clicks a button in the control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Item%2A> indexer to access the fields of a <xref:System.Web.UI.WebControls.GridView> control when the user clicks a button in the control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

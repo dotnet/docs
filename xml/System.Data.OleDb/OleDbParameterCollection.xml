@@ -22,18 +22,18 @@
     <summary>Represents a collection of parameters relevant to an <see cref="T:System.Data.OleDb.OleDbCommand" /> as well as their respective mappings to columns in a <see cref="T:System.Data.DataSet" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The number of parameters in the collection must equal the number of parameter placeholders within the command text, otherwise the .NET Framework Data Provider for OLE DB might raise an error.  
+The number of parameters in the collection must equal the number of parameter placeholders within the command text, otherwise the .NET Framework Data Provider for OLE DB might raise an error.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates multiple instances of <xref:System.Data.OleDb.OleDbParameter> through the <xref:System.Data.OleDb.OleDbParameterCollection> collection within the <xref:System.Data.OleDb.OleDbDataAdapter>. These parameters are used to select data within the data source and place the data in the <xref:System.Data.DataSet>. This example assumes that a <xref:System.Data.DataSet> and an <xref:System.Data.OleDb.OleDbDataAdapter> have already been created with the appropriate schema, commands, and connection.  
-  
- [!code-csharp[Classic WebData OleDbParameter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameter Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbParameter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameter Example/VB/source.vb#1)]  
-  
+The following example creates multiple instances of <xref:System.Data.OleDb.OleDbParameter> through the <xref:System.Data.OleDb.OleDbParameterCollection> collection within the <xref:System.Data.OleDb.OleDbDataAdapter>. These parameters are used to select data within the data source and place the data in the <xref:System.Data.DataSet>. This example assumes that a <xref:System.Data.DataSet> and an <xref:System.Data.OleDb.OleDbDataAdapter> have already been created with the appropriate schema, commands, and connection.  
+ 
+[!code-csharp[Classic WebData OleDbParameter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameter Example/CS/source.cs#1)]
+[!code-vb[Classic WebData OleDbParameter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameter Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,13 +59,13 @@
         <returns>The index of the new <see cref="T:System.Data.OleDb.OleDbParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection> and adds an <xref:System.Data.OleDb.OleDbParameter>.  
-  
- [!code-csharp[Classic WebData OleDbParameterCollection.Add5 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add5 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbParameterCollection.Add5 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add5 Example/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection> and adds an <xref:System.Data.OleDb.OleDbParameter>.  
+ 
+[!code-csharp[Classic WebData OleDbParameterCollection.Add5 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add5 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData OleDbParameterCollection.Add5 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add5 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Data.OleDb.OleDbParameter" /> specified in the <paramref name="value" /> parameter is already added to this or another <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</exception>
@@ -122,13 +122,13 @@
         <returns>The index of the new <see cref="T:System.Data.OleDb.OleDbParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection> and adds an <xref:System.Data.OleDb.OleDbParameter>.  
-  
- [!code-csharp[Classic WebData OleDbParameterCollection.Add6 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add6 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbParameterCollection.Add6 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add6 Example/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection> and adds an <xref:System.Data.OleDb.OleDbParameter>.  
+ 
+[!code-csharp[Classic WebData OleDbParameterCollection.Add6 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add6 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData OleDbParameterCollection.Add6 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add6 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,16 +164,16 @@
         <returns>The index of the new <see cref="T:System.Data.OleDb.OleDbParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use caution when using this overload of the <xref:System.Data.OleDb.OleDbParameterCollection.Add%2A> method to specify integer parameter values. Because this overload takes a `value` of type <xref:System.Object>, you must convert the value to an <xref:System.Object> type when the value is zero, as the following C# example demonstrates.  
-  
+Use caution when using this overload of the <xref:System.Data.OleDb.OleDbParameterCollection.Add%2A> method to specify integer parameter values. Because this overload takes a `value` of type <xref:System.Object>, you must convert the value to an <xref:System.Object> type when the value is zero, as the following C# example demonstrates.  
+ 
 ```  
 parameters.Add("@pname", Convert.ToInt32(0));  
 ```  
-  
- If you do not perform this conversion, the compiler will assume you are attempting to call the <xref:System.Data.OleDb.OleDbParameterCollection.Add%2A> overload.  
-  
+ 
+If you do not perform this conversion, the compiler will assume you are attempting to call the <xref:System.Data.OleDb.OleDbParameterCollection.Add%2A> overload.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The <paramref name="value" /> parameter is not an <see cref="T:System.Data.OleDb.OleDbParameter" />.</exception>
@@ -204,13 +204,13 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>The index of the new <see cref="T:System.Data.OleDb.OleDbParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection>, adds an instance of <xref:System.Data.OleDb.OleDbParameter> to the collection, and returns a reference to the new <xref:System.Data.OleDb.OleDbParameter>.  
-  
- [!code-csharp[Classic WebData OleDbParameterCollection.Add3 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add3 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbParameterCollection.Add3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add3 Example/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection>, adds an instance of <xref:System.Data.OleDb.OleDbParameter> to the collection, and returns a reference to the new <xref:System.Data.OleDb.OleDbParameter>.  
+ 
+[!code-csharp[Classic WebData OleDbParameterCollection.Add3 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add3 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData OleDbParameterCollection.Add3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add3 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,13 +242,13 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>The index of the new <see cref="T:System.Data.OleDb.OleDbParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection>, adds an instance of <xref:System.Data.OleDb.OleDbParameter> to the collection, and returns a reference to the new <xref:System.Data.OleDb.OleDbParameter>.  
-  
- [!code-csharp[Classic WebData OleDbParameterCollection.Add4 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add4 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbParameterCollection.Add4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add4 Example/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection>, adds an instance of <xref:System.Data.OleDb.OleDbParameter> to the collection, and returns a reference to the new <xref:System.Data.OleDb.OleDbParameter>.  
+ 
+[!code-csharp[Classic WebData OleDbParameterCollection.Add4 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add4 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData OleDbParameterCollection.Add4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Add4 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -731,13 +731,13 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>The <see cref="T:System.Data.OleDb.OleDbParameter" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection>, adds instances of <xref:System.Data.OleDb.OleDbParameter> to the collection, displays the names of its <xref:System.Data.OleDb.OleDbParameter> objects, and then clears the collection.  
-  
- [!code-csharp[Classic WebData OleDbParameterCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Count Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbParameterCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Count Example/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.OleDb.OleDbParameterCollection>, adds instances of <xref:System.Data.OleDb.OleDbParameter> to the collection, displays the names of its <xref:System.Data.OleDb.OleDbParameter> objects, and then clears the collection.  
+ 
+[!code-csharp[Classic WebData OleDbParameterCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Count Example/CS/source.cs#1)]
+[!code-vb[Classic WebData OleDbParameterCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.Count Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index specified does not exist.</exception>
@@ -772,13 +772,13 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>The <see cref="T:System.Data.OleDb.OleDbParameter" /> with the specified name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example searches for an <xref:System.Data.OleDb.OleDbParameter> with a given <xref:System.Data.OleDb.OleDbParameter.ParameterName%2A> within an <xref:System.Data.OleDb.OleDbParameterCollection>. If the parameter exists, the example displays the name and index of the parameter. If the parameter does not exist, the example displays an error. This example assumes that an <xref:System.Data.OleDb.OleDbParameterCollection> has already been created.  
-  
- [!code-csharp[Classic WebData OleDbParameterCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.this1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbParameterCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.this1 Example/VB/source.vb#1)]  
-  
+The following example searches for an <xref:System.Data.OleDb.OleDbParameter> with a given <xref:System.Data.OleDb.OleDbParameter.ParameterName%2A> within an <xref:System.Data.OleDb.OleDbParameterCollection>. If the parameter exists, the example displays the name and index of the parameter. If the parameter does not exist, the example displays an error. This example assumes that an <xref:System.Data.OleDb.OleDbParameterCollection> has already been created.  
+ 
+[!code-csharp[Classic WebData OleDbParameterCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.this1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData OleDbParameterCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbParameterCollection.this1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The name specified does not exist.</exception>

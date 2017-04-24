@@ -14,20 +14,20 @@
     <summary>The exception that is generated when a warning or error is returned by an Oracle database or the .NET Framework Data Provider for Oracle. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is created whenever the <xref:System.Data.OracleClient.OracleDataAdapter> encounters a situation that it cannot handle.  
+This class is created whenever the <xref:System.Data.OracleClient.OracleDataAdapter> encounters a situation that it cannot handle.  
+ 
+If the severity of the error is too great, the server may close the <xref:System.Data.OracleClient.OracleConnection>. However, the user can reopen the connection and continue.  
+ 
   
- If the severity of the error is too great, the server may close the <xref:System.Data.OracleClient.OracleConnection>. However, the user can reopen the connection and continue.  
-  
-   
-  
+ 
 ## Examples  
- The following example generates an <xref:System.Data.OracleClient.OracleException> due to a missing database, and then displays the exception.  
-  
- [!code-csharp[Classic WebData OracleException#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleException/CS/source.cs#1)]
- [!code-vb[Classic WebData OracleException#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleException/VB/source.vb#1)]  
-  
+The following example generates an <xref:System.Data.OracleClient.OracleException> due to a missing database, and then displays the exception.  
+ 
+[!code-csharp[Classic WebData OracleException#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleException/CS/source.cs#1)]
+[!code-vb[Classic WebData OracleException#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleException/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

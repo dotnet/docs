@@ -28,36 +28,36 @@
     <summary>Represents a Windows progress bar control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.ProgressBar> control visually indicates the progress of a lengthy operation in one of three styles:  
-  
+A <xref:System.Windows.Forms.ProgressBar> control visually indicates the progress of a lengthy operation in one of three styles:  
+ 
 -   Segmented blocks that increase in steps from left to right.  
-  
+ 
 -   A continuous bar that fills in from left to right.  
-  
+ 
 -   A block that scrolls across a <xref:System.Windows.Forms.ProgressBar> in a marquee fashion.  
-  
- The <xref:System.Windows.Forms.ProgressBar.Style%2A> property determines the style of <xref:System.Windows.Forms.ProgressBar> that is displayed. Note that the <xref:System.Windows.Forms.ProgressBar> control can only be oriented horizontally. For an example of how to create a vertically oriented <xref:System.Windows.Forms.ProgressBar>, see the <xref:System.Windows.Forms.ProgressBarRenderer> class. The <xref:System.Windows.Forms.ProgressBar> control is typically used when an application performs tasks such as copying files or printing documents. Users of an application might consider an application unresponsive if there is no visual cue. By using the <xref:System.Windows.Forms.ProgressBar> in your application, you alert the user that the application is performing a lengthy task and that the application is still responding.  
-  
- The <xref:System.Windows.Forms.ProgressBar.Maximum%2A> and <xref:System.Windows.Forms.ProgressBar.Minimum%2A> properties define the range of values to represent the progress of a task. The <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property is typically set to a value of 0, and the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property is typically set to a value indicating the completion of a task. For example, to properly display the progress when copying a group of files, the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property could be set to the total number of files to be copied.  
-  
- The <xref:System.Windows.Forms.ProgressBar.Value%2A> property represents the progress that the application has made toward completing the operation. The value displayed by the <xref:System.Windows.Forms.ProgressBar> only approximates the current value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. Based on the size of the <xref:System.Windows.Forms.ProgressBar>, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property determines when to display the next block or increase the size of the bar.  
-  
- There are a number of ways to modify the value displayed by the <xref:System.Windows.Forms.ProgressBar> other than changing the <xref:System.Windows.Forms.ProgressBar.Value%2A> property directly. You can use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to specify a specific value to increment the <xref:System.Windows.Forms.ProgressBar.Value%2A> property by, and then call the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value. To vary the increment value, you can use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method and specify a value with which to increment the <xref:System.Windows.Forms.ProgressBar.Value%2A> property.  
-  
+ 
+The <xref:System.Windows.Forms.ProgressBar.Style%2A> property determines the style of <xref:System.Windows.Forms.ProgressBar> that is displayed. Note that the <xref:System.Windows.Forms.ProgressBar> control can only be oriented horizontally. For an example of how to create a vertically oriented <xref:System.Windows.Forms.ProgressBar>, see the <xref:System.Windows.Forms.ProgressBarRenderer> class. The <xref:System.Windows.Forms.ProgressBar> control is typically used when an application performs tasks such as copying files or printing documents. Users of an application might consider an application unresponsive if there is no visual cue. By using the <xref:System.Windows.Forms.ProgressBar> in your application, you alert the user that the application is performing a lengthy task and that the application is still responding.  
+ 
+The <xref:System.Windows.Forms.ProgressBar.Maximum%2A> and <xref:System.Windows.Forms.ProgressBar.Minimum%2A> properties define the range of values to represent the progress of a task. The <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property is typically set to a value of 0, and the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property is typically set to a value indicating the completion of a task. For example, to properly display the progress when copying a group of files, the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property could be set to the total number of files to be copied.  
+ 
+The <xref:System.Windows.Forms.ProgressBar.Value%2A> property represents the progress that the application has made toward completing the operation. The value displayed by the <xref:System.Windows.Forms.ProgressBar> only approximates the current value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. Based on the size of the <xref:System.Windows.Forms.ProgressBar>, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property determines when to display the next block or increase the size of the bar.  
+ 
+There are a number of ways to modify the value displayed by the <xref:System.Windows.Forms.ProgressBar> other than changing the <xref:System.Windows.Forms.ProgressBar.Value%2A> property directly. You can use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to specify a specific value to increment the <xref:System.Windows.Forms.ProgressBar.Value%2A> property by, and then call the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value. To vary the increment value, you can use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method and specify a value with which to increment the <xref:System.Windows.Forms.ProgressBar.Value%2A> property.  
+ 
 > [!NOTE]
 >  <xref:System.Windows.Forms.Control.ForeColor%2A> and <xref:System.Windows.Forms.Control.BackColor%2A> changes for the <xref:System.Windows.Forms.ProgressBar> will not be honored when visual styles are enabled on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and above.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form> and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
- [!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
- [!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
-  
+The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form> and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
+[!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
+[!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ProgressBar" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property is set to 0, the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property is set to 100, and the <xref:System.Windows.Forms.ProgressBar.Step%2A> property is set to 10.  
-  
+By default, the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property is set to 0, the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property is set to 100, and the <xref:System.Windows.Forms.ProgressBar.Step%2A> property is set to 10.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <value>The current background image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.ProgressBar.BackgroundImage%2A> has no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar>.  
-  
+Setting the <xref:System.Windows.Forms.ProgressBar.BackgroundImage%2A> has no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ProgressBar.BackgroundImage" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.ProgressBar.BackgroundImage%2A> has no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar>.  
-  
+Setting the <xref:System.Windows.Forms.ProgressBar.BackgroundImage%2A> has no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ImageLayout" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.ProgressBar.BackgroundImageLayout%2A> property has no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar> control.  
-  
+Setting the <xref:System.Windows.Forms.ProgressBar.BackgroundImageLayout%2A> property has no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ProgressBar.BackgroundImageLayout" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.ProgressBar.BackgroundImageLayout%2A> property has no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar> control.  
-  
+Setting the <xref:System.Windows.Forms.ProgressBar.BackgroundImageLayout%2A> property has no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,10 +389,10 @@
           <see langword="true" /> if a secondary buffer should be used, <see langword="false" /> otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.ProgressBar.DoubleBuffered%2A> property has no effect on the <xref:System.Windows.Forms.ProgressBar> control.  
-  
+Setting the <xref:System.Windows.Forms.ProgressBar.DoubleBuffered%2A> property has no effect on the <xref:System.Windows.Forms.ProgressBar> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,10 +421,10 @@
         <summary>Occurs when the user double-clicks the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ProgressBar> control does not raise the <xref:System.Windows.Forms.ProgressBar.DoubleClick> event.  
-  
+The <xref:System.Windows.Forms.ProgressBar> control does not raise the <xref:System.Windows.Forms.ProgressBar.DoubleClick> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,12 +453,12 @@
         <summary>Occurs when focus enters the <see cref="T:System.Windows.Forms.ProgressBar" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
- The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.Enter> event.  
-  
+This event is not relevant for this class.  
+ 
+The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.Enter> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -488,10 +488,10 @@
         <value>The <see cref="T:System.Drawing.Font" /> of the text. The default is the font set by the container.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant for this class.  
-  
+This property is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -546,10 +546,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant for this class.  
-  
+This property is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -599,21 +599,21 @@
         <summary>Advances the current position of the progress bar by the specified amount.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ProgressBar.Increment%2A> method enables you to increment the value of the progress bar by a specific amount. This method of incrementing the progress bar is similar to using the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method. The <xref:System.Windows.Forms.ProgressBar.Value%2A> property specifies the current position of the <xref:System.Windows.Forms.ProgressBar>. If, after calling the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is greater than the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property. If, after calling the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method with a negative value specified in the `value` parameter, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is less than the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property.  
+The <xref:System.Windows.Forms.ProgressBar.Increment%2A> method enables you to increment the value of the progress bar by a specific amount. This method of incrementing the progress bar is similar to using the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method. The <xref:System.Windows.Forms.ProgressBar.Value%2A> property specifies the current position of the <xref:System.Windows.Forms.ProgressBar>. If, after calling the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is greater than the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property. If, after calling the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method with a negative value specified in the `value` parameter, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is less than the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property.  
+ 
+Because a <xref:System.Windows.Forms.ProgressBar> object whose style is set to <xref:System.Windows.Forms.ProgressBarStyle> displays a continuously scrolling bar instead of its <xref:System.Windows.Forms.ProgressBar.Value%2A>, calling <xref:System.Windows.Forms.ProgressBar.Increment%2A> is unnecessary and will raise an <xref:System.InvalidOperationException>.  
+ 
   
- Because a <xref:System.Windows.Forms.ProgressBar> object whose style is set to <xref:System.Windows.Forms.ProgressBarStyle> displays a continuously scrolling bar instead of its <xref:System.Windows.Forms.ProgressBar.Value%2A>, calling <xref:System.Windows.Forms.ProgressBar.Increment%2A> is unnecessary and will raise an <xref:System.InvalidOperationException>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method and the <xref:System.Windows.Forms.ProgressBar.Value%2A> property to increment the value of a <xref:System.Windows.Forms.ProgressBar> in the <xref:System.Windows.Forms.Timer.Tick> event of a <xref:System.Windows.Forms.Timer>. The example also displays the <xref:System.Windows.Forms.ProgressBar.Value%2A> property in a <xref:System.Windows.Forms.StatusBarPanel> to provide a textual representation of the <xref:System.Windows.Forms.ProgressBar>. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control, named `progressBar1`, and a <xref:System.Windows.Forms.StatusBar> control that contains a <xref:System.Windows.Forms.StatusBarPanel>, named `statusBarPanel1`. The <xref:System.Windows.Forms.Timer>, named `time`, must be added to the form as a member.  
-  
- [!code-cpp[ProgressBar.Increment#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBar.Increment/CPP/form1.cpp#1)]
- [!code-csharp[ProgressBar.Increment#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBar.Increment/CS/form1.cs#1)]
- [!code-vb[ProgressBar.Increment#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBar.Increment/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method and the <xref:System.Windows.Forms.ProgressBar.Value%2A> property to increment the value of a <xref:System.Windows.Forms.ProgressBar> in the <xref:System.Windows.Forms.Timer.Tick> event of a <xref:System.Windows.Forms.Timer>. The example also displays the <xref:System.Windows.Forms.ProgressBar.Value%2A> property in a <xref:System.Windows.Forms.StatusBarPanel> to provide a textual representation of the <xref:System.Windows.Forms.ProgressBar>. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control, named `progressBar1`, and a <xref:System.Windows.Forms.StatusBar> control that contains a <xref:System.Windows.Forms.StatusBarPanel>, named `statusBarPanel1`. The <xref:System.Windows.Forms.Timer>, named `time`, must be added to the form as a member.  
+ 
+[!code-cpp[ProgressBar.Increment#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBar.Increment/CPP/form1.cpp#1)]
+[!code-csharp[ProgressBar.Increment#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBar.Increment/CS/form1.cs#1)]
+[!code-vb[ProgressBar.Increment#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBar.Increment/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.ProgressBar.Style" /> property is set to <see cref="F:System.Windows.Forms.ProgressBarStyle.Marquee" /></exception>
@@ -643,10 +643,10 @@
         <summary>Occurs when the user presses a key while the control has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.KeyDown> event.  
-  
+The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.KeyDown> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -675,10 +675,10 @@
         <summary>Occurs when the user presses a key while the control has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.KeyPress> event.  
-  
+The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.KeyPress> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -707,10 +707,10 @@
         <summary>Occurs when the user releases a key while the control has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.KeyUp> event.  
-  
+The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.KeyUp> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -739,10 +739,10 @@
         <summary>Occurs when focus leaves the <see cref="T:System.Windows.Forms.ProgressBar" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.Leave> event.  
-  
+The <xref:System.Windows.Forms.ProgressBar> control cannot receive keyboard focus, so it never raises the <xref:System.Windows.Forms.ProgressBar.Leave> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -769,12 +769,12 @@
         <value>The time period, in milliseconds, that it takes the progress block to scroll across the progress bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A marquee-style progress indicator does not display progress; instead it indicates that an operation is occurring by moving the progress block across the progress bar.  
-  
- Since the marquee animation speed is a time period, setting the value to a higher number results in a slower speed and a lower number results in a faster speed.  
-  
+A marquee-style progress indicator does not display progress; instead it indicates that an operation is occurring by moving the progress block across the progress bar.  
+ 
+Since the marquee animation speed is a time period, setting the value to a higher number results in a slower speed and a lower number results in a faster speed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The indicated time period is less than 0.</exception>
@@ -805,21 +805,21 @@
         <value>The maximum value of the range. The default is 100.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies the upper limit of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. When the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property is changed, the <xref:System.Windows.Forms.ProgressBar> control is redrawn to reflect the new range of the control. When the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is equal to the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property, the progress bar is completely filled.  
+This property specifies the upper limit of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. When the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property is changed, the <xref:System.Windows.Forms.ProgressBar> control is redrawn to reflect the new range of the control. When the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is equal to the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property, the progress bar is completely filled.  
+ 
+You can use this property to specify a value to which the <xref:System.Windows.Forms.ProgressBar.Value%2A> property must be set (by setting the <xref:System.Windows.Forms.ProgressBar.Value%2A> property or using the <xref:System.Windows.Forms.ProgressBar.Increment%2A> or <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> methods) to indicate that an operation is complete. For example, you can set the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property to the total number of files in a file copy operation. Each time a file is copied, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property can be increased by 1 until the total number of files is copied. At that point, the progress bar would be completely filled.  
+ 
   
- You can use this property to specify a value to which the <xref:System.Windows.Forms.ProgressBar.Value%2A> property must be set (by setting the <xref:System.Windows.Forms.ProgressBar.Value%2A> property or using the <xref:System.Windows.Forms.ProgressBar.Increment%2A> or <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> methods) to indicate that an operation is complete. For example, you can set the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property to the total number of files in a file copy operation. Each time a file is copied, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property can be increased by 1 until the total number of files is copied. At that point, the progress bar would be completely filled.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form> and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
- [!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
- [!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
-  
+The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form> and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
+[!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
+[!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified is less than 0.</exception>
@@ -850,19 +850,19 @@
         <value>The minimum value of the range. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies the lower limit of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. When the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property is changed, the <xref:System.Windows.Forms.ProgressBar> control is redrawn to reflect the new range of the control. When the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is equal to the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property, the progress bar is empty. To change the value of the progress bar, use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method, use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method, or set the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property directly.  
+This property specifies the lower limit of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. When the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property is changed, the <xref:System.Windows.Forms.ProgressBar> control is redrawn to reflect the new range of the control. When the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is equal to the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property, the progress bar is empty. To change the value of the progress bar, use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method, use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method, or set the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property directly.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form>, and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example, and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
- [!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
- [!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
-  
+The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form>, and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example, and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
+[!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
+[!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified for the property is less than 0.</exception>
@@ -892,10 +892,10 @@
         <summary>Occurs when the user double-clicks the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ProgressBar> control does not raise the <xref:System.Windows.Forms.ProgressBar.MouseDoubleClick> event.  
-  
+The <xref:System.Windows.Forms.ProgressBar> control does not raise the <xref:System.Windows.Forms.ProgressBar.MouseDoubleClick> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -920,12 +920,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ProgressBar.OnBackColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ProgressBar.OnBackColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -953,15 +953,15 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.ForeColorChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ProgressBar.OnForeColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ProgressBar.OnForeColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
 > [!NOTE]
 >  <xref:System.Windows.Forms.Control.ForeColor%2A> changes will not be honored when visual styles are enabled and the operating system supports visual styles.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1010,12 +1010,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ProgressBar.OnHandleDestroyed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ProgressBar.OnHandleDestroyed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1048,12 +1048,12 @@
         <summary>Raises the <see cref="P:System.Windows.Forms.ProgressBar.RightToLeftLayout" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ProgressBar.OnRightToLeftLayoutChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ProgressBar.OnRightToLeftLayoutChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1090,10 +1090,10 @@
           <see cref="F:System.Windows.Forms.Padding.Empty" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.ProgressBar.Padding%2A> property will have no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar>.  
-  
+Setting the <xref:System.Windows.Forms.ProgressBar.Padding%2A> property will have no effect on the appearance of the <xref:System.Windows.Forms.ProgressBar>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1122,10 +1122,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ProgressBar.Padding" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1172,23 +1172,23 @@
         <summary>Advances the current position of the progress bar by the amount of the <see cref="P:System.Windows.Forms.ProgressBar.Step" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method increments the value of the progress bar by the amount specified by the <xref:System.Windows.Forms.ProgressBar.Step%2A> property. You can use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to specify the amount that each completed task in an operation changes the value of the progress bar. For example, if you are copying a group of files, you might want to set the value of the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to 1 and the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property to the total number of files to copy. When each file is copied, you can call the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the progress bar by the value of the <xref:System.Windows.Forms.ProgressBar.Step%2A> property. If you want to have more flexible control of the value of the progress bar, you can use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method or set the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property directly.  
+The <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method increments the value of the progress bar by the amount specified by the <xref:System.Windows.Forms.ProgressBar.Step%2A> property. You can use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to specify the amount that each completed task in an operation changes the value of the progress bar. For example, if you are copying a group of files, you might want to set the value of the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to 1 and the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property to the total number of files to copy. When each file is copied, you can call the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the progress bar by the value of the <xref:System.Windows.Forms.ProgressBar.Step%2A> property. If you want to have more flexible control of the value of the progress bar, you can use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method or set the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property directly.  
+ 
+The <xref:System.Windows.Forms.ProgressBar.Value%2A> property specifies the current position of the <xref:System.Windows.Forms.ProgressBar>. If, after calling the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is greater than the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property. If, after calling the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method with a negative value specified in <xref:System.Windows.Forms.ProgressBar.Step%2A>, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is less than the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property.  
+ 
+Because a <xref:System.Windows.Forms.ProgressBar> object whose style is set to <xref:System.Windows.Forms.ProgressBarStyle> displays a continuously scrolling bar instead of its <xref:System.Windows.Forms.ProgressBar.Value%2A>, calling <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> is unnecessary and will raise an <xref:System.InvalidOperationException>.  
+ 
   
- The <xref:System.Windows.Forms.ProgressBar.Value%2A> property specifies the current position of the <xref:System.Windows.Forms.ProgressBar>. If, after calling the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is greater than the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property. If, after calling the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method with a negative value specified in <xref:System.Windows.Forms.ProgressBar.Step%2A>, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is less than the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property.  
-  
- Because a <xref:System.Windows.Forms.ProgressBar> object whose style is set to <xref:System.Windows.Forms.ProgressBarStyle> displays a continuously scrolling bar instead of its <xref:System.Windows.Forms.ProgressBar.Value%2A>, calling <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> is unnecessary and will raise an <xref:System.InvalidOperationException>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form>, and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example, and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
- [!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
- [!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
-  
+The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form>, and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example, and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
+[!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
+[!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -1217,10 +1217,10 @@
         <summary>Resets the <see cref="P:System.Windows.Forms.Control.ForeColor" /> to its default value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method will reset the <xref:System.Windows.Forms.Control.ForeColor%2A> to <xref:System.Drawing.SystemColors.Highlight%2A> unless the method is overridden in a derived class. The <xref:System.Windows.Forms.ProgressBar.ResetForeColor%2A> method is useful when you create a designer for the control, or you are creating your own control that incorporates the <xref:System.Windows.Forms.ProgressBar>.  
-  
+Calling this method will reset the <xref:System.Windows.Forms.Control.ForeColor%2A> to <xref:System.Drawing.SystemColors.Highlight%2A> unless the method is overridden in a derived class. The <xref:System.Windows.Forms.ProgressBar.ResetForeColor%2A> method is useful when you create a designer for the control, or you are creating your own control that incorporates the <xref:System.Windows.Forms.ProgressBar>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1251,10 +1251,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ProgressBar" /> is displayed from right to left; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ProgressBar.RightToLeftLayout%2A> property is useful when creating an application for use with languages that read from right to left.  
-  
+The <xref:System.Windows.Forms.ProgressBar.RightToLeftLayout%2A> property is useful when creating an application for use with languages that read from right to left.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1275,20 +1275,20 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.ProgressBar.RightToLeftLayout" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ProgressBar.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ProgressBar> named `ProgressBar1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ProgressBar.RightToLeftLayoutChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#519](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#519)]
- [!code-vb[System.Windows.Forms.EventExamples#519](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#519)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ProgressBar.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ProgressBar> named `ProgressBar1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ProgressBar.RightToLeftLayoutChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#519](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#519)]
+[!code-vb[System.Windows.Forms.EventExamples#519](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#519)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1315,19 +1315,19 @@
         <value>The amount by which to increment the progress bar with each call to the <see cref="M:System.Windows.Forms.ProgressBar.PerformStep" /> method. The default is 10.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to specify the amount that each completed task in an operation changes the value of the progress bar. For example, if you are copying a group of files, you might want to set the value of the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to 1 and the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property to the total number of files to copy. When each file is copied, you can call the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the progress bar by the value of the <xref:System.Windows.Forms.ProgressBar.Step%2A> property. If you want to have more flexible control of the value of the progress bar, you can use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method or set the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property directly.  
+You can use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to specify the amount that each completed task in an operation changes the value of the progress bar. For example, if you are copying a group of files, you might want to set the value of the <xref:System.Windows.Forms.ProgressBar.Step%2A> property to 1 and the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property to the total number of files to copy. When each file is copied, you can call the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the progress bar by the value of the <xref:System.Windows.Forms.ProgressBar.Step%2A> property. If you want to have more flexible control of the value of the progress bar, you can use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method or set the value of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property directly.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form>, and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example, and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
- [!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
- [!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
-  
+The following code example uses a <xref:System.Windows.Forms.ProgressBar> control to display the progress of a file copy operation. The example uses the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties to specify a range for the <xref:System.Windows.Forms.ProgressBar> that is equivalent to the number of files to copy. The code also uses the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to increment the value of the <xref:System.Windows.Forms.ProgressBar> as a file is copied. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control created called `pBar1` that is created within a <xref:System.Windows.Forms.Form>, and that there is a method created called `CopyFile` (that returns a Boolean value indicating the file copy operation was completed successfully) that performs the file copy operation. The code also requires that an array of strings containing the files to copy is created and passed to the `CopyWithProgress` method defined in the example, and that the method is called from another method or event in the <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[ProgressBarOverview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBarOverview/CPP/form1.cpp#1)]
+[!code-csharp[ProgressBarOverview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBarOverview/CS/form1.cs#1)]
+[!code-vb[ProgressBarOverview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBarOverview/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1360,10 +1360,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ProgressBarStyle" /> values. The default is <see cref="F:System.Windows.Forms.ProgressBarStyle.Blocks" /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the marquee style when you need to indicate progress is being made, without indicating the quantity of progress. The <xref:System.Windows.Forms.ProgressBarStyle> style is honored only when visual styles are enabled. The <xref:System.Windows.Forms.ProgressBarStyle> style is honored when visual styles are not enabled.  
-  
+You can use the marquee style when you need to indicate progress is being made, without indicating the quantity of progress. The <xref:System.Windows.Forms.ProgressBarStyle> style is honored only when visual styles are enabled. The <xref:System.Windows.Forms.ProgressBarStyle> style is honored when visual styles are not enabled.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not a member of the <see cref="T:System.Windows.Forms.ProgressBarStyle" /> enumeration.</exception>
@@ -1492,10 +1492,10 @@
         <returns>A string that represents the current <see cref="T:System.Windows.Forms.ProgressBar" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return string includes the type and the values for the <xref:System.Windows.Forms.ProgressBar.Minimum%2A>, <xref:System.Windows.Forms.ProgressBar.Maximum%2A>, and <xref:System.Windows.Forms.ProgressBar.Value%2A> properties.  
-  
+The return string includes the type and the values for the <xref:System.Windows.Forms.ProgressBar.Minimum%2A>, <xref:System.Windows.Forms.ProgressBar.Maximum%2A>, and <xref:System.Windows.Forms.ProgressBar.Value%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1525,19 +1525,19 @@
         <value>The position within the range of the progress bar. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The minimum and maximum values of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property are specified by the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties. This property enables you to increment or decrement the value of the progress bar directly. To perform consistent increases in the value of the <xref:System.Windows.Forms.ProgressBar> control you can use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method. To increase the progress bar value by varying amounts, use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method.  
+The minimum and maximum values of the <xref:System.Windows.Forms.ProgressBar.Value%2A> property are specified by the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties. This property enables you to increment or decrement the value of the progress bar directly. To perform consistent increases in the value of the <xref:System.Windows.Forms.ProgressBar> control you can use the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method. To increase the progress bar value by varying amounts, use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method and the <xref:System.Windows.Forms.ProgressBar.Value%2A> property to increment the value of a <xref:System.Windows.Forms.ProgressBar> in the <xref:System.Windows.Forms.Timer.Tick> event of a <xref:System.Windows.Forms.Timer>. The example also displays the <xref:System.Windows.Forms.ProgressBar.Value%2A> property in a <xref:System.Windows.Forms.StatusBarPanel> to provide a textual representation of the <xref:System.Windows.Forms.ProgressBar>. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control, named `progressBar1`, and a <xref:System.Windows.Forms.StatusBar> control that contains a <xref:System.Windows.Forms.StatusBarPanel>, named `statusBarPanel1`. The <xref:System.Windows.Forms.Timer>, named `time`, must be added to the form as a member.  
-  
- [!code-cpp[ProgressBar.Increment#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBar.Increment/CPP/form1.cpp#1)]
- [!code-csharp[ProgressBar.Increment#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBar.Increment/CS/form1.cs#1)]
- [!code-vb[ProgressBar.Increment#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBar.Increment/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method and the <xref:System.Windows.Forms.ProgressBar.Value%2A> property to increment the value of a <xref:System.Windows.Forms.ProgressBar> in the <xref:System.Windows.Forms.Timer.Tick> event of a <xref:System.Windows.Forms.Timer>. The example also displays the <xref:System.Windows.Forms.ProgressBar.Value%2A> property in a <xref:System.Windows.Forms.StatusBarPanel> to provide a textual representation of the <xref:System.Windows.Forms.ProgressBar>. This example requires that you have a <xref:System.Windows.Forms.ProgressBar> control, named `progressBar1`, and a <xref:System.Windows.Forms.StatusBar> control that contains a <xref:System.Windows.Forms.StatusBarPanel>, named `statusBarPanel1`. The <xref:System.Windows.Forms.Timer>, named `time`, must be added to the form as a member.  
+ 
+[!code-cpp[ProgressBar.Increment#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ProgressBar.Increment/CPP/form1.cpp#1)]
+[!code-csharp[ProgressBar.Increment#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ProgressBar.Increment/CS/form1.cs#1)]
+[!code-vb[ProgressBar.Increment#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ProgressBar.Increment/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified is greater than the value of the <see cref="P:System.Windows.Forms.ProgressBar.Maximum" /> property.  

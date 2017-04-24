@@ -14,12 +14,12 @@
     <summary>Encapsulates the information used to render a list control that repeats a list of items. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.RepeatInfo> class encapsulates the information used to render a list control that repeats a list of items, such as <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.DataList>, and <xref:System.Web.UI.WebControls.RadioButtonList>. It is primarily used by control developers.  
-  
- For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.RepeatInfo>, see the <xref:System.Web.UI.WebControls.RepeatInfo.%23ctor%2A> constructor.  
-  
+The <xref:System.Web.UI.WebControls.RepeatInfo> class encapsulates the information used to render a list control that repeats a list of items, such as <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.DataList>, and <xref:System.Web.UI.WebControls.RadioButtonList>. It is primarily used by control developers.  
+ 
+For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.RepeatInfo>, see the <xref:System.Web.UI.WebControls.RepeatInfo.%23ctor%2A> constructor.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,19 +38,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RepeatInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.RepeatInfo> class using default values.  
-  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.RepeatInfo>.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.RepeatInfo> class using default values.  
+ 
+The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.RepeatInfo>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |OuterTableImplied|`false`|  
 |RepeatColumns|`0`|  
 |RepeatDirection|<xref:System.Web.UI.WebControls.RepeatDirection>|  
 |RepeatLayout|<xref:System.Web.UI.WebControls.RepeatLayout>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <value>A <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> value for the rendered table. The default value is <see cref="F:System.Web.UI.WebControls.TableCaptionAlign.NotSet" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property sets the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property of the rendered <xref:System.Web.UI.WebControls.Table>.  
-  
+This property sets the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property of the rendered <xref:System.Web.UI.WebControls.Table>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> values.</exception>
@@ -117,10 +117,10 @@
           <see langword="true" /> if the items should be rendered as if they are contained in a table; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RepeatInfo.OuterTableImplied%2A> property to specify whether items should be rendered as if they are contained in a table.  
-  
+Use the <xref:System.Web.UI.WebControls.RepeatInfo.OuterTableImplied%2A> property to specify whether items should be rendered as if they are contained in a table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <summary>Renders a list control that repeats a list of items, using the specified information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RepeatInfo.RenderRepeater%2A> method to render a list control that repeats a list of items, using the specified information.  
-  
+Use the <xref:System.Web.UI.WebControls.RepeatInfo.RenderRepeater%2A> method to render a list control that repeats a list of items, using the specified information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,10 +176,10 @@
         <value>The number of columns to render.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatColumns%2A> property to specify the number of columns to render in the control.  
-  
+Use the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatColumns%2A> property to specify the number of columns to render in the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,29 +201,29 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatDirection%2A> property to specify the direction that the items are rendered.  
-  
+Use the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatDirection%2A> property to specify the direction that the items are rendered.  
+ 
 > [!NOTE]
 >  The number of columns displayed is always determined by the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatColumns%2A> property.  
-  
- If this property is set to `RepeatDirection.Vertical`, the items in the list are displayed in columns loaded top to bottom, then left to right, until all items are rendered. For example, if the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatColumns%2A> property is set to `3`, the items are displayed in three columns, as in the following table.  
-  
+ 
+If this property is set to `RepeatDirection.Vertical`, the items in the list are displayed in columns loaded top to bottom, then left to right, until all items are rendered. For example, if the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatColumns%2A> property is set to `3`, the items are displayed in three columns, as in the following table.  
+ 
 ||||  
 |-|-|-|  
 |1|4|7|  
 |2|5|8|  
 |3|6|9|  
-  
- If this property is set to `RepeatDirection.Horizontal`, the items in the list are displayed in rows loaded left to right, then top to bottom, until all items are rendered. For example, if the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatColumns%2A> property is set to `3`, the items are displayed in rows of three items each, as in the following table.  
-  
+ 
+If this property is set to `RepeatDirection.Horizontal`, the items in the list are displayed in rows loaded left to right, then top to bottom, until all items are rendered. For example, if the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatColumns%2A> property is set to `3`, the items are displayed in rows of three items each, as in the following table.  
+ 
 ||||  
 |-|-|-|  
 |1|2|3|  
 |4|5|6|  
 |7|8|9|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified direction is not one of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> enumeration values.</exception>
@@ -246,10 +246,10 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.RepeatLayout" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatLayout%2A> property to specify whether the items are displayed in a table. If this property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the items in the list are displayed in a table. If this property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the items in the list are displayed without a table structure.  
-  
+Use the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatLayout%2A> property to specify whether the items are displayed in a table. If this property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the items in the list are displayed in a table. If this property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the items in the list are displayed without a table structure.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified layout is not one of the <see cref="T:System.Web.UI.WebControls.RepeatLayout" /> enumeration values.</exception>
@@ -273,10 +273,10 @@
           <see langword="true" /> if a "scope" attribute is to be added, otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true` and the control is rendered as a <xref:System.Web.UI.WebControls.Table>, a "scope" attribute with value "col" is added and a table header cell (\<th>) is rendered instead of a table cell (\<td>) for the header cells when the <xref:System.Web.UI.WebControls.Table> is rendered. This attribute can be used by screen readers.  
-  
+If `true` and the control is rendered as a <xref:System.Web.UI.WebControls.Table>, a "scope" attribute with value "col" is added and a table header cell (\<th>) is rendered instead of a table cell (\<td>) for the header cells when the <xref:System.Web.UI.WebControls.Table> is rendered. This attribute can be used by screen readers.  
+ 
  ]]></format>
         </remarks>
       </Docs>

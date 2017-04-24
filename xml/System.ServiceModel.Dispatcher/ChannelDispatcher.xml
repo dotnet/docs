@@ -14,20 +14,20 @@
     <summary>A component that accepts channels and associates them with a service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> object associates an <xref:System.ServiceModel.Channels.IChannelListener> at a particular URI (called a listen URI) with an instance of a service. Each <xref:System.ServiceModel.ServiceHost> object can have many <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects, each associated with a different listener and listen URI for that service.  
+A <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> object associates an <xref:System.ServiceModel.Channels.IChannelListener> at a particular URI (called a listen URI) with an instance of a service. Each <xref:System.ServiceModel.ServiceHost> object can have many <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects, each associated with a different listener and listen URI for that service.  
+ 
+When a message arrives, the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> queries each of the associated <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects whether the endpoint can accept the message, and passes the message to the one that can. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object is responsible for processing messages from a <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> when the destination address of a message matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property and the message action matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> property.  
+ 
+All properties that control the lifetime and behavior of a channel session are available for inspection or modification on the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> object. In addition to the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher>, these include custom <xref:System.ServiceModel.Dispatcher.IChannelInitializer> objects, the <xref:System.ServiceModel.Channels.IChannelListener>, the <xref:System.ServiceModel.ServiceHost>, the associated and <xref:System.ServiceModel.InstanceContext>.  
+ 
   
- When a message arrives, the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> queries each of the associated <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects whether the endpoint can accept the message, and passes the message to the one that can. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object is responsible for processing messages from a <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> when the destination address of a message matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property and the message action matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> property.  
-  
- All properties that control the lifetime and behavior of a channel session are available for inspection or modification on the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> object. In addition to the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher>, these include custom <xref:System.ServiceModel.Dispatcher.IChannelInitializer> objects, the <xref:System.ServiceModel.Channels.IChannelListener>, the <xref:System.ServiceModel.ServiceHost>, the associated and <xref:System.ServiceModel.InstanceContext>.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/service.cs#0)]
- [!code-vb[S_UE_ChannelDispatcher#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/service.vb#0)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/service.cs#0)]
+[!code-vb[S_UE_ChannelDispatcher#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/service.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,16 +49,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcher" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> class from the provided listener, with system-provided default timeouts.  
+Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> class from the provided listener, with system-provided default timeouts.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#1)]
- [!code-vb[S_UE_ChannelDispatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#1)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#1)]
+[!code-vb[S_UE_ChannelDispatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -84,16 +84,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcher" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> class from the provided listener and binding, with system-provided default timeouts.  
+Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> class from the provided listener and binding, with system-provided default timeouts.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#2)]
- [!code-vb[S_UE_ChannelDispatcher#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#2)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#2)]
+[!code-vb[S_UE_ChannelDispatcher#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -121,16 +121,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcher" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> class from the provided listener and binding, with the specified default timeouts.  
+Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> class from the provided listener and binding, with the specified default timeouts.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#3)]
- [!code-vb[S_UE_ChannelDispatcher#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#3)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#3)]
+[!code-vb[S_UE_ChannelDispatcher#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -176,10 +176,10 @@
         <summary>Attaches the channel dispatcher to the host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
+This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
@@ -204,16 +204,16 @@
         <value>The binding name of the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used to obtain the binding name for the binding with which this channel dispatcher is associated.  
+Used to obtain the binding name for the binding with which this channel dispatcher is associated.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#4)]
- [!code-vb[S_UE_ChannelDispatcher#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#4)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#4)]
+[!code-vb[S_UE_ChannelDispatcher#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,16 +235,16 @@
         <value>A <see cref="T:System.Collections.Generic.SynchronizedCollection`1" /> of type <see cref="T:System.ServiceModel.Dispatcher.IChannelInitializer" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to insert a custom channel initializer into the initialization collection to inspect or modify channel state when they are created. This is also useful to perform the same behavior on outgoing channels if the contract associated with a dispatcher is a duplex contract.  
+Use this property to insert a custom channel initializer into the initialization collection to inspect or modify channel state when they are created. This is also useful to perform the same behavior on outgoing channels if the contract associated with a dispatcher is a duplex contract.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#5)]
- [!code-vb[S_UE_ChannelDispatcher#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#5)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#5)]
+[!code-vb[S_UE_ChannelDispatcher#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,10 +266,10 @@
         <summary>Stops the listener from accepting new channels.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method stops the listener listening.  
-  
+Calling this method stops the listener listening.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,10 +291,10 @@
         <value>The <see cref="T:System.TimeSpan" /> that specifies the default interval of time allowed for the channel dispatcher to close.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This default close timeout can be set using <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.%23ctor%28System.ServiceModel.Channels.IChannelListener%2CSystem.String%2CSystem.ServiceModel.IDefaultCommunicationTimeouts%29>. Otherwise, a service model default value of 1 minute is used.  
-  
+This default close timeout can be set using <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.%23ctor%28System.ServiceModel.Channels.IChannelListener%2CSystem.String%2CSystem.ServiceModel.IDefaultCommunicationTimeouts%29>. Otherwise, a service model default value of 1 minute is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,10 +316,10 @@
         <value>The <see cref="T:System.TimeSpan" /> that specifies the default interval of time allowed for the channel dispatcher to close.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This default open timeout can be set using <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.%23ctor%28System.ServiceModel.Channels.IChannelListener%2CSystem.String%2CSystem.ServiceModel.IDefaultCommunicationTimeouts%29>. Otherwise, a service model default value of 1 minute is used.  
-  
+This default open timeout can be set using <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.%23ctor%28System.ServiceModel.Channels.IChannelListener%2CSystem.String%2CSystem.ServiceModel.IDefaultCommunicationTimeouts%29>. Otherwise, a service model default value of 1 minute is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,18 +344,18 @@
         <summary>Detaches the service host from the channel dispatcher.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.ServiceHostBase> can only be detached when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+The <xref:System.ServiceModel.ServiceHostBase> can only be detached when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
+Sets the <xref:System.ServiceModel.ServiceHostBase> associated with the channel dispatcher to `null`.  
+ 
   
- Sets the <xref:System.ServiceModel.ServiceHostBase> associated with the channel dispatcher to `null`.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#18](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#18)]
- [!code-vb[S_UE_ChannelDispatcher#18](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#18)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#18](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#18)]
+[!code-vb[S_UE_ChannelDispatcher#18](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#18)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -382,18 +382,18 @@
         <value>A <see cref="T:System.Collections.Generic.SynchronizedCollection`1" /> of <see cref="T:System.ServiceModel.Dispatcher.EndpointDispatcher" /> which forward messages to the channel endpoints.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> has a distinct <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> for each endpoint that the channel can support.  
+The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> has a distinct <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> for each endpoint that the channel can support.  
+ 
+Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to obtain access to runtime properties that enable you to customize the runtime across an entire endpoint.  
+ 
   
- Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to obtain access to runtime properties that enable you to customize the runtime across an entire endpoint.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#6)]
- [!code-vb[S_UE_ChannelDispatcher#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#6)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#6)]
+[!code-vb[S_UE_ChannelDispatcher#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,11 +415,11 @@
         <value>A <see cref="T:System.Collections.Generic.SynchronizedCollection`1" /> of <see cref="T:System.ServiceModel.Dispatcher.IErrorHandler" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#7)]
- [!code-vb[S_UE_ChannelDispatcher#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#7)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#7)]
+[!code-vb[S_UE_ChannelDispatcher#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -441,16 +441,16 @@
         <value>The <see cref="T:System.ServiceModel.ServiceHostBase" /> for the service associated with the dispatcher.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.ServiceModel.ServiceHost> object can have many <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects, each associated with a different <xref:System.ServiceModel.Channels.IChannelListener> for that service.  
+Each <xref:System.ServiceModel.ServiceHost> object can have many <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects, each associated with a different <xref:System.ServiceModel.Channels.IChannelListener> for that service.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#8)]
- [!code-vb[S_UE_ChannelDispatcher#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#8)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#8)]
+[!code-vb[S_UE_ChannelDispatcher#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,16 +473,16 @@
           <see langword="true" /> if the details about an exception are included in the faults; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#19](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#19)]
- [!code-vb[S_UE_ChannelDispatcher#19](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#19)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#19](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#19)]
+[!code-vb[S_UE_ChannelDispatcher#19](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#19)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
@@ -508,11 +508,11 @@
           <see langword="true" /> if the accept method calls on the listener are done under a transaction; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#9)]
- [!code-vb[S_UE_ChannelDispatcher#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#9)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#9)]
+[!code-vb[S_UE_ChannelDispatcher#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -535,16 +535,16 @@
           <see langword="true" /> if the receive method calls on the listener are done under a transaction; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.IsTransactedReceive%2A> property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.IsTransactedReceive%2A> property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#10)]
- [!code-vb[S_UE_ChannelDispatcher#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#10)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#10)]
+[!code-vb[S_UE_ChannelDispatcher#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
@@ -569,16 +569,16 @@
         <value>The <see cref="T:System.ServiceModel.Channels.IChannelListener" /> associated with the channel dispatcher.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> associates an <xref:System.ServiceModel.Channels.IChannelListener> at a particular URI with an instance of a service.  
+A <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> associates an <xref:System.ServiceModel.Channels.IChannelListener> at a particular URI with an instance of a service.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#11)]
- [!code-vb[S_UE_ChannelDispatcher#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#11)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#11)]
+[!code-vb[S_UE_ChannelDispatcher#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -601,18 +601,18 @@
           <see langword="true" /> if the proxy does not add any addressing headers; otherwise, <see langword="false" />. The default is <see langword="false" />. See Remarks.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
+Set the <xref:System.ServiceModel.Dispatcher.ClientRuntime.ManualAddressing%2A> property to `true` if you want to prevent the client from adding Message ID and ReplyTo addressing headers to request/response messages so that your application can control these headers.  
+ 
   
- Set the <xref:System.ServiceModel.Dispatcher.ClientRuntime.ManualAddressing%2A> property to `true` if you want to prevent the client from adding Message ID and ReplyTo addressing headers to request/response messages so that your application can control these headers.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#12)]
- [!code-vb[S_UE_ChannelDispatcher#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#12)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#12)]
+[!code-vb[S_UE_ChannelDispatcher#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#12)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
@@ -655,16 +655,16 @@
         <value>The maximum size for a transacted batch.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.MaxTransactedBatchSize%2A> property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.MaxTransactedBatchSize%2A> property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#13)]
- [!code-vb[S_UE_ChannelDispatcher#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#13)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#13)]
+[!code-vb[S_UE_ChannelDispatcher#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#13)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value set is less than zero.</exception>
@@ -690,18 +690,18 @@
         <value>The <see cref="T:System.ServiceModel.Channels.MessageVersion" /> that is used or expected.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange.  
+Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange.  
+ 
+This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
   
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#20](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#20)]
- [!code-vb[S_UE_ChannelDispatcher#20](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#20)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#20](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#20)]
+[!code-vb[S_UE_ChannelDispatcher#20](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
@@ -778,10 +778,10 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation to open a channel listener for the dispatcher.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The channel dispatcher must be associated with a non-`null` service host when this method is called.  
-  
+The channel dispatcher must be associated with a non-`null` service host when this method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The host or the message version is <see langword="null" />.</exception>
@@ -888,10 +888,10 @@
         <summary>Opens the listener associated with the channel dispatcher.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The channel dispatcher must be associated with a non-`null` service host when this method is called and message version must be set to a non-`null` value.  
-  
+The channel dispatcher must be associated with a non-`null` service host when this method is called and message version must be set to a non-`null` value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The host or the message version is <see langword="null" />.</exception>
@@ -914,10 +914,10 @@
         <summary>Populates and validates filter table used to dispatch to the endpoints.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The channel dispatcher must be associated with a non-`null` service host when this method is called.  
-  
+The channel dispatcher must be associated with a non-`null` service host when this method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The host is <see langword="null" />.</exception>
@@ -940,10 +940,10 @@
         <summary>Checks whether the channel dispatcher is attached to a host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The channel dispatcher must be associated with a non-`null` service host on opening.  
-  
+The channel dispatcher must be associated with a non-`null` service host on opening.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The host is <see langword="null" />.</exception>
@@ -967,10 +967,10 @@
           <see langword="true" /> if ReceiveContext is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ReceiveContext controls the manner in which messages are handled by the service, for example locking of the message as long as needed.  
-  
+The ReceiveContext controls the manner in which messages are handled by the service, for example locking of the message as long as needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -993,18 +993,18 @@
           <see langword="true" /> if the dispatcher uses synchronous methods to read messages from channels; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a binding implements <xref:System.ServiceModel.Channels.IBindingRuntimePreferences>, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] assigns the value of the <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> property to this property. So if this value is `true`, the `false` default value of <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> is overridden.  
+If a binding implements <xref:System.ServiceModel.Channels.IBindingRuntimePreferences>, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] assigns the value of the <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> property to this property. So if this value is `true`, the `false` default value of <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> is overridden.  
+ 
+This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
   
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#14)]
- [!code-vb[S_UE_ChannelDispatcher#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#14)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#14)]
+[!code-vb[S_UE_ChannelDispatcher#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#14)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
@@ -1048,18 +1048,18 @@
         <value>A <see cref="T:System.ServiceModel.Dispatcher.ServiceThrottle" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This provides access to the controls used to optimize the availability and performance of a service.  
+This provides access to the controls used to optimize the availability and performance of a service.  
+ 
+This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
   
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#15](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#15)]
- [!code-vb[S_UE_ChannelDispatcher#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#15)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#15](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#15)]
+[!code-vb[S_UE_ChannelDispatcher#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#15)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
@@ -1084,18 +1084,18 @@
         <value>One of the <see cref="T:System.Transactions.IsolationLevel" /> values. The default is <see cref="F:System.Transactions.IsolationLevel.Unspecified" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.TransactionIsolationLevel%2A> property to get or set the default isolation level for new transactions created by the dispatcher for the service.  
+Use the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.TransactionIsolationLevel%2A> property to get or set the default isolation level for new transactions created by the dispatcher for the service.  
+ 
+This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
   
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#16](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#16)]
- [!code-vb[S_UE_ChannelDispatcher#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#16)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#16](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#16)]
+[!code-vb[S_UE_ChannelDispatcher#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#16)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The isolation level set is not defined.</exception>
@@ -1121,16 +1121,16 @@
         <value>A <see cref="T:System.TimeSpan" /> value that represents the default timeout period for transactions. The default is <see cref="F:System.TimeSpan.Zero" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ChannelDispatcher#17](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#17)]
- [!code-vb[S_UE_ChannelDispatcher#17](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#17)]  
-  
+[!code-csharp[S_UE_ChannelDispatcher#17](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_channeldispatcher/cs/snippets.cs#17)]
+[!code-vb[S_UE_ChannelDispatcher#17](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_channeldispatcher/vb/snippets.vb#17)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value set is less than zero or is too large.</exception>

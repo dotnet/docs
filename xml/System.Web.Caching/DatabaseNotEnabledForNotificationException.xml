@@ -14,15 +14,15 @@
     <summary>The exception that is thrown when a SQL Server database is not enabled to support dependencies associated with the <see cref="T:System.Web.Caching.SqlCacheDependency" /> class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is an exception handler for a simple administration page for setting up change notification in a SQL Server database.  
-  
- For the full code required to run the example, see the Example section of the <xref:System.Web.Caching.SqlCacheDependencyAdmin> class overview topic.  
-  
- [!code-csharp[System.Web.Caching.SqlCacheDependencyAdmin#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching.SqlCacheDependencyAdmin/CS/cacheDependencyAdmincs.aspx.cs#8)]
- [!code-vb[System.Web.Caching.SqlCacheDependencyAdmin#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching.SqlCacheDependencyAdmin/VB/cacheDependencyAdminvb.aspx.vb#8)]  
-  
+The following code example is an exception handler for a simple administration page for setting up change notification in a SQL Server database.  
+ 
+For the full code required to run the example, see the Example section of the <xref:System.Web.Caching.SqlCacheDependencyAdmin> class overview topic.  
+ 
+[!code-csharp[System.Web.Caching.SqlCacheDependencyAdmin#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching.SqlCacheDependencyAdmin/CS/cacheDependencyAdmincs.aspx.cs#8)]
+[!code-vb[System.Web.Caching.SqlCacheDependencyAdmin#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching.SqlCacheDependencyAdmin/VB/cacheDependencyAdminvb.aspx.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.DatabaseNotEnabledForNotificationException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Caching.DatabaseNotEnabledForNotificationException.%23ctor%2A> creates a new instance of the <xref:System.Web.Caching.DatabaseNotEnabledForNotificationException> class with all fields set to their default values.  
-  
+The <xref:System.Web.Caching.DatabaseNotEnabledForNotificationException.%23ctor%2A> creates a new instance of the <xref:System.Web.Caching.DatabaseNotEnabledForNotificationException> class with all fields set to their default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>

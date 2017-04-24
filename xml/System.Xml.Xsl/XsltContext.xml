@@ -19,10 +19,10 @@
     <summary>Encapsulates the current execution context of the Extensible Stylesheet Language for Transformations (XSLT) processor allowing XML Path Language (XPath) to resolve functions, parameters, and namespaces within XPath expressions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on using <xref:System.Xml.Xsl.XsltContext>, see article Q324899, "HOW TO: Implement and Use Custom Functions When You Execute XPath Queries in Visual Basic .NET" in the Microsoft Knowledge Base at http://support.microsoft.com.  
-  
+For more information on using <xref:System.Xml.Xsl.XsltContext>, see article Q324899, "HOW TO: Implement and Use Custom Functions When You Execute XPath Queries in Visual Basic .NET" in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,13 +98,13 @@
         <returns>An integer value describing the relative order of the two base URIs: <see langword="-" />1 if <paramref name="baseUri" /> occurs before <paramref name="nextbaseUri" />; 0 if the two base URIs are identical; and 1 if <paramref name="baseUri" /> occurs after <paramref name="nextbaseUri" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method supports the XSLT `document()` function which specifies that nodes selected across multiple documents are always returned in the same order.  
-  
+This method supports the XSLT `document()` function which specifies that nodes selected across multiple documents are always returned in the same order.  
+ 
 > [!NOTE]
 >  The order is implementation-specific.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
         <returns>An <see cref="T:System.Xml.Xsl.IXsltContextVariable" /> representing the variable at runtime.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Xsl.IXsltContextVariable> is used at execution time to get the value of the variable.  
-  
+The <xref:System.Xml.Xsl.IXsltContextVariable> is used at execution time to get the value of the variable.  
+ 
  ]]></format>
         </remarks>
       </Docs>

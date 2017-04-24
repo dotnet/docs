@@ -26,10 +26,10 @@
     <summary>Represents a lexical scope within <see cref="T:System.Diagnostics.SymbolStore.SymMethod" />, providing access to the start and end offsets of the scope, as well as its child and parent scopes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.SymbolStore.SymScope> class also provides access to all locals defined within the current scope.  
-  
+The <xref:System.Diagnostics.SymbolStore.SymScope> class also provides access to all locals defined within the current scope.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,10 +96,10 @@
         <summary>Called by the <see cref="M:System.Diagnostics.SymbolStore.SymScope.Dispose" /> and <see cref="M:System.Diagnostics.SymbolStore.SymScope.Finalize" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymScope" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymScope.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymScope.Finalize%2A> methods; do not call this method directly.  
-  
+This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymScope.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymScope.Finalize%2A> methods; do not call this method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.Diagnostics.SymbolStore.SymScope" /> is reclaimed by garbage collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
+This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
         <returns>The local variables within the current lexical scope.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The local variables are returned in no particular order. If a local variable changes its address within the current scope, that variable is returned multiple times, each with a different offset range.  
-  
+The local variables are returned in no particular order. If a local variable changes its address within the current scope, that variable is returned multiple times, each with a different offset range.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to satisfy the request.</exception>

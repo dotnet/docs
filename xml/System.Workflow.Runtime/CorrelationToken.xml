@@ -22,12 +22,12 @@
     <summary>Manages the subscriptions of the <see cref="T:System.Workflow.Runtime.CorrelationProperty" /> to the owner activities. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -116,18 +116,18 @@
           <see langword="true" /> if the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> is initialized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To initialize the correlation token, use <xref:System.Workflow.Runtime.CorrelationToken.Initialize%2A>.  
+To initialize the correlation token, use <xref:System.Workflow.Runtime.CorrelationToken.Initialize%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates accessing the Initialized property of a correlation token object.  
-  
- [!code-csharp[WF_Samples#4](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#4)]
- [!code-vb[WF_Samples#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#4)]  
-  
+The following example demonstrates accessing the Initialized property of a correlation token object.  
+ 
+[!code-csharp[WF_Samples#4](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#4)]
+[!code-vb[WF_Samples#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,13 +154,13 @@
         <value>The name of the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates accessing the Name property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
-  
- [!code-csharp[WF_Samples#196](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#196)]
- [!code-vb[WF_Samples#196](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#196)]  
-  
+The following example demonstrates accessing the Name property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ 
+[!code-csharp[WF_Samples#196](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#196)]
+[!code-vb[WF_Samples#196](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#196)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,13 +187,13 @@
         <value>The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates accessing the OwnerActivityName property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
-  
- [!code-csharp[WF_Samples#197](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#197)]
- [!code-vb[WF_Samples#197](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#197)]  
-  
+The following example demonstrates accessing the OwnerActivityName property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ 
+[!code-csharp[WF_Samples#197](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#197)]
+[!code-vb[WF_Samples#197](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#197)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,13 +223,13 @@
         <value>A collection of <see cref="T:System.Workflow.Runtime.CorrelationProperty" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates accessing the Properties property of a correlation token object.  
-  
- [!code-csharp[WF_Samples#5](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#5)]
- [!code-vb[WF_Samples#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#5)]  
-  
+The following example demonstrates accessing the Properties property of a correlation token object.  
+ 
+[!code-csharp[WF_Samples#5](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#5)]
+[!code-vb[WF_Samples#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

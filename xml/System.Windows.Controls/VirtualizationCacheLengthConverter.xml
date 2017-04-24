@@ -53,30 +53,30 @@
         <returns>true if the <see cref="T:System.Windows.Controls.VirtualizationCacheLengthConverter" /> can convert the specified type to a <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.VirtualizationCacheLengthConverter> can convert the following types to a <xref:System.Windows.Controls.VirtualizationCacheLength>:  
-  
+The <xref:System.Windows.Controls.VirtualizationCacheLengthConverter> can convert the following types to a <xref:System.Windows.Controls.VirtualizationCacheLength>:  
+ 
 -   <xref:System.String>  
-  
+ 
 -   <xref:System.Decimal>  
-  
+ 
 -   <xref:System.Single>  
-  
+ 
 -   <xref:System.Double>  
-  
+ 
 -   <xref:System.Int16>  
-  
+ 
 -   <xref:System.Int32>  
-  
+ 
 -   <xref:System.Int64>  
-  
+ 
 -   <xref:System.UInt16>  
-  
+ 
 -   <xref:System.UInt32>  
-  
+ 
 -   <xref:System.UInt64>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizationCacheLengthConverter" /> can convert a <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> to the specified type; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.CanConvertTo%2A> method returns `true` if `destinationType` is <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>. Otherwise, <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.CanConvertTo%2A> returns `false`.  
-  
+The <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.CanConvertTo%2A> method returns `true` if `destinationType` is <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>. Otherwise, <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.CanConvertTo%2A> returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,32 +138,32 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.VirtualizationCacheLengthConverter> can convert the following types to a <xref:System.Windows.Controls.VirtualizationCacheLength>:  
-  
+The <xref:System.Windows.Controls.VirtualizationCacheLengthConverter> can convert the following types to a <xref:System.Windows.Controls.VirtualizationCacheLength>:  
+ 
 -   <xref:System.String>  
-  
+ 
 -   <xref:System.Decimal>  
-  
+ 
 -   <xref:System.Single>  
-  
+ 
 -   <xref:System.Double>  
-  
+ 
 -   <xref:System.Int16>  
-  
+ 
 -   <xref:System.Int32>  
-  
+ 
 -   <xref:System.Int64>  
-  
+ 
 -   <xref:System.UInt16>  
-  
+ 
 -   <xref:System.UInt32>  
-  
+ 
 -   <xref:System.UInt64>  
-  
- Call the <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.CanConvertFrom%2A> method before calling the <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.ConvertFrom%2A> to avoid throwing an exception.  
-  
+ 
+Call the <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.CanConvertFrom%2A> method before calling the <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.ConvertFrom%2A> to avoid throwing an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -206,10 +206,10 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call the <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.CanConvertTo%2A> method before calling the <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.ConvertFrom%2A> to avoid throwing an exception.  
-  
+Call the <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.CanConvertTo%2A> method before calling the <xref:System.Windows.Controls.VirtualizationCacheLengthConverter.ConvertFrom%2A> to avoid throwing an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

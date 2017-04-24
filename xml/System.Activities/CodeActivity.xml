@@ -14,12 +14,12 @@
     <summary>An abstract class for creating a custom activity with imperative behavior defined with the <see cref="M:System.Activities.CodeActivity.Execute(System.Activities.CodeActivityContext)" /> method, which gives access to variable and argument resolution and extensions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to implement a <xref:System.Activities.CodeActivity>-derived activity.  
-  
- [!code-csharp[ActivityAction#0](~/samples/snippets/csharp/VS_Snippets_CFX/activityaction/cs/messagebox.cs#0)]  
-  
+The following example shows how to implement a <xref:System.Activities.CodeActivity>-derived activity.  
+ 
+[!code-csharp[ActivityAction#0](~/samples/snippets/csharp/VS_Snippets_CFX/activityaction/cs/messagebox.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Not implemented. Use <see cref="M:System.Activities.CodeActivity.CacheMetadata(System.Activities.CodeActivityMetadata)" /> instead.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom activity authors can provide validation logic in an activity's <xref:System.Activities.CodeActivity.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.CodeActivity.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
-  
+Custom activity authors can provide validation logic in an activity's <xref:System.Activities.CodeActivity.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.CodeActivity.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,10 +87,10 @@
         <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The workflow runtime uses the default implementation of <xref:System.Activities.CodeActivity.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage runtime relationships and lifetime rules. The default implementation of <xref:System.Activities.CodeActivity.CacheMetadata%2A> examines the public members of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>>, <xref:System.Activities.Activity>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>>, or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic. Any exceptions that are thrown from <xref:System.Activities.CodeActivity.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
-  
+The workflow runtime uses the default implementation of <xref:System.Activities.CodeActivity.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage runtime relationships and lifetime rules. The default implementation of <xref:System.Activities.CodeActivity.CacheMetadata%2A> examines the public members of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>>, <xref:System.Activities.Activity>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>>, or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic. Any exceptions that are thrown from <xref:System.Activities.CodeActivity.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <value>Always returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting a value for this property returns a <xref:System.NotSupportedException>. <xref:System.Activities.CodeActivity> does not allow defining the execution logic as an activity. Instead the execution logic must be defined in the <xref:System.Activities.CodeActivity.Execute%2A> method.  
-  
+Setting a value for this property returns a <xref:System.NotSupportedException>. <xref:System.Activities.CodeActivity> does not allow defining the execution logic as an activity. Instead the execution logic must be defined in the <xref:System.Activities.CodeActivity.Execute%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom activity authors can provide validation logic in an activity's <xref:System.Activities.CodeActivity.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.CodeActivity.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
-  
+Custom activity authors can provide validation logic in an activity's <xref:System.Activities.CodeActivity.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.CodeActivity.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+ 
  ]]></format>
         </remarks>
       </Docs>

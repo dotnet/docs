@@ -78,10 +78,10 @@
         <returns>A sequence of nodes that are indexed by the specified key value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there are no nodes associated with the key, this method returns a non-null empty sequence.  
-  
+If there are no nodes associated with the key, this method returns a non-null empty sequence.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

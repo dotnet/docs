@@ -14,10 +14,10 @@
     <summary>Stores the fields and properties read by a condition or written to by an action.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information stored by <xref:System.Workflow.Activities.Rules.RuleAnalysis> is important because it identifies dependencies and side effects of rules in the rule set. These dependencies and side effects drive the chaining behavior.  
-  
+The information stored by <xref:System.Workflow.Activities.Rules.RuleAnalysis> is important because it identifies dependencies and side effects of rules in the rule set. These dependencies and side effects drive the chaining behavior.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <summary>Adds the fields and properties used by an expression as symbols to the <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Workflow.Activities.Rules.RuleAnalysis.AddSymbol%2A> method to add fields and properties used by an expression to the list of symbols for the <xref:System.Workflow.Activities.Rules.RuleAnalysis> instance.  
-  
+Use the <xref:System.Workflow.Activities.Rules.RuleAnalysis.AddSymbol%2A> method to add fields and properties used by an expression to the list of symbols for the <xref:System.Workflow.Activities.Rules.RuleAnalysis> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>

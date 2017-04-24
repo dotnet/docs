@@ -14,28 +14,28 @@
     <summary>Provides access to a rich set of [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] typography properties.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.Typography> object exposes the set of features that an [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] font supports. By setting the properties of <xref:System.Windows.Documents.Typography> in markup or code, you can easily author documents that take advantage of [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] features.  
-  
- The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
-  
- ![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
+The <xref:System.Windows.Documents.Typography> object exposes the set of features that an [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] font supports. By setting the properties of <xref:System.Windows.Documents.Typography> in markup or code, you can easily author documents that take advantage of [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] features.  
+ 
+The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
+ 
+![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
 Text using OpenType capitals  
-  
- The following markup example shows how to define capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object. When the "SmallCaps" format is used, any leading capital letter is ignored.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#9)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#9)]  -->  
-  
- The following code example accomplishes the same task as the previous markup example.  
-  
- [!code-csharp[TypographyCodeSnippets#TypographyCodeSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographyCodeSnippets/CSharp/Page1.xaml.cs#typographycodesnippet1)]
- [!code-vb[TypographyCodeSnippets#TypographyCodeSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TypographyCodeSnippets/visualbasic/page1.xaml.vb#typographycodesnippet1)]  
-  
+ 
+The following markup example shows how to define capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object. When the "SmallCaps" format is used, any leading capital letter is ignored.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#9)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#9)]  -->  
+ 
+The following code example accomplishes the same task as the previous markup example.  
+ 
+[!code-csharp[TypographyCodeSnippets#TypographyCodeSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographyCodeSnippets/CSharp/Page1.xaml.cs#typographycodesnippet1)]
+[!code-vb[TypographyCodeSnippets#TypographyCodeSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TypographyCodeSnippets/visualbasic/page1.xaml.vb#typographycodesnippet1)]  
+ 
 ## Typography Properties  
- The following table lists the properties, values, and default value of the <xref:System.Windows.Documents.Typography> object.  
-  
+The following table lists the properties, values, and default value of the <xref:System.Windows.Documents.Typography> object.  
+ 
 |Property|Value(s)|Default Value|  
 |--------------|----------------|-------------------|  
 |<xref:System.Windows.Documents.Typography.AnnotationAlternates%2A>|Numeric value – byte|0|  
@@ -81,20 +81,20 @@ Text using OpenType capitals
 |<xref:System.Windows.Documents.Typography.StylisticSet19%2A>|<xref:System.Boolean>|`false`|  
 |<xref:System.Windows.Documents.Typography.StylisticSet20%2A>|<xref:System.Boolean>|`false`|  
 |<xref:System.Windows.Documents.Typography.Variants%2A>|<xref:System.Windows.FontVariants> &#124; <xref:System.Windows.FontVariants> &#124; <xref:System.Windows.FontVariants> &#124; <xref:System.Windows.FontVariants> &#124; <xref:System.Windows.FontVariants> &#124; <xref:System.Windows.FontVariants>|<xref:System.Windows.FontVariants>.<xref:System.Windows.FontVariants>|  
+ 
+All dependency properties of this class also have an attached property usage in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. For instance, you can set the <xref:System.Windows.Documents.Typography.AnnotationAlternates%2A> property through this syntax: `<`*object*``**Typography.AnnotationAlternates**`="`*value*`".../>`  
+ 
   
- All dependency properties of this class also have an attached property usage in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. For instance, you can set the <xref:System.Windows.Documents.Typography.AnnotationAlternates%2A> property through this syntax: `<`*object*``**Typography.AnnotationAlternates**`="`*value*`".../>`  
-  
-   
-  
+ 
 ## Examples  
- The following code sample shows the use typographic <xref:System.Windows.Documents.Typography.Capitals%2A> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Notice that the variant feature is applied to all text contained with the <xref:System.Windows.Documents.Paragraph> element.  
-  
- [!code-xml[TypographySnippets#TypographySnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographySnippets/CS/PageTwo.xaml#typographysnippet2)]  
-  
- The following code sample shows the use typographic <xref:System.Windows.Documents.Typography.Capitals%2A> and <xref:System.Windows.Documents.Typography.NumeralStyle%2A> features in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Notice that both typographic properties are applied to the entire paragraph.  
-  
- [!code-xml[TypographySnippets#TypographySnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographySnippets/CS/PageThree.xaml#typographysnippet3)]  
-  
+The following code sample shows the use typographic <xref:System.Windows.Documents.Typography.Capitals%2A> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Notice that the variant feature is applied to all text contained with the <xref:System.Windows.Documents.Paragraph> element.  
+ 
+[!code-xml[TypographySnippets#TypographySnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographySnippets/CS/PageTwo.xaml#typographysnippet2)]  
+ 
+The following code sample shows the use typographic <xref:System.Windows.Documents.Typography.Capitals%2A> and <xref:System.Windows.Documents.Typography.NumeralStyle%2A> features in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Notice that both typographic properties are applied to the entire paragraph.  
+ 
+[!code-xml[TypographySnippets#TypographySnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographySnippets/CS/PageThree.xaml#typographysnippet3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -116,26 +116,26 @@ Text using OpenType capitals
         <value>The index of the alternate annotation form. The default value is 0 (zero).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Annotation forms include glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes.  
-  
- If the value of <xref:System.Windows.Documents.Typography.AnnotationAlternates%2A> is greater than zero and the selected font does not support annotation alternates, the default form of the letter is displayed.  
-  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+Annotation forms include glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes.  
+ 
+If the value of <xref:System.Windows.Documents.Typography.AnnotationAlternates%2A> is greater than zero and the selected font does not support annotation alternates, the default form of the letter is displayed.  
+ 
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
 <a name="xamlAttributeUsage_AnnotationAlternates"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.AnnotationAlternates**="*int*"/>  
-  
+\<*object* **Typography.AnnotationAlternates**="*int*"/>  
+ 
 <a name="dependencyPropertyInfo_AnnotationAlternates"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.AnnotationAlternatesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,39 +174,39 @@ Text using OpenType capitals
         <value>A <see cref="T:System.Windows.FontCapitals" /> enumerated value. The default value is <see cref="F:System.Windows.FontCapitals.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Capitals are a set of typographical forms that render text in capital-styled glyphs. Typically, when text is rendered as all capitals, the spacing between letters can appear too tight, and the weight and proportion of the letters too heavy. OpenType supports a number of styling formats for capitals, including small capitals, petite capitals, titling, and capital spacing. These styling formats allow you to control the appearance of capitals.  
-  
- The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
-  
- ![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Capitals are a set of typographical forms that render text in capital-styled glyphs. Typically, when text is rendered as all capitals, the spacing between letters can appear too tight, and the weight and proportion of the letters too heavy. OpenType supports a number of styling formats for capitals, including small capitals, petite capitals, titling, and capital spacing. These styling formats allow you to control the appearance of capitals.  
+ 
+The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
+ 
+![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
 Example of capitals  
-  
- The following code example shows how to define capitals for the Pescadero font, using the <xref:System.Windows.Documents.Typography.Capitals%2A> property. When the "SmallCaps" format is used, any leading capital letter is ignored.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#9)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#9)]  -->  
-  
- The following code example accomplishes the same task as the previous markup example.  
-  
- [!code-csharp[TypographyCodeSnippets#TypographyCodeSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographyCodeSnippets/CSharp/Page1.xaml.cs#typographycodesnippet1)]
- [!code-vb[TypographyCodeSnippets#TypographyCodeSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TypographyCodeSnippets/visualbasic/page1.xaml.vb#typographycodesnippet1)]  
-  
+ 
+The following code example shows how to define capitals for the Pescadero font, using the <xref:System.Windows.Documents.Typography.Capitals%2A> property. When the "SmallCaps" format is used, any leading capital letter is ignored.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#9)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#9)]  -->  
+ 
+The following code example accomplishes the same task as the previous markup example.  
+ 
+[!code-csharp[TypographyCodeSnippets#TypographyCodeSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographyCodeSnippets/CSharp/Page1.xaml.cs#typographycodesnippet1)]
+[!code-vb[TypographyCodeSnippets#TypographyCodeSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TypographyCodeSnippets/visualbasic/page1.xaml.vb#typographycodesnippet1)]  
+ 
 <a name="xamlAttributeUsage_Capitals"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.Capitals**="<xref:System.Windows.FontCapitals>"/>  
-  
+\<*object* **Typography.Capitals**="<xref:System.Windows.FontCapitals>"/>  
+ 
 <a name="dependencyPropertyInfo_Capitals"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.CapitalsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,32 +229,32 @@ Example of capitals
           <see langword="true" /> if spacing is adjusted; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Capital spacing is a feature that allows you to provide more spacing when using all capitals in text. Capital letters are typically designed to blend with lowercase letters. Spacing that appears attractive between and a capital letter and a lowercase letter may look too tight when all capital letters are used. The following text displays normal and capital spacing for the Pescadero font.  
-  
- ![Text using OpenType capital spacing](~/add/media/opentypefont21.gif "Text using OpenType capital spacing")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Capital spacing is a feature that allows you to provide more spacing when using all capitals in text. Capital letters are typically designed to blend with lowercase letters. Spacing that appears attractive between and a capital letter and a lowercase letter may look too tight when all capital letters are used. The following text displays normal and capital spacing for the Pescadero font.  
+ 
+![Text using OpenType capital spacing](~/add/media/opentypefont21.gif "Text using OpenType capital spacing")  
 Example of normal and capital spacing  
-  
- The following code example shows how to define capital spacing for the Pescadero font, using the <xref:System.Windows.Documents.Typography.CapitalSpacing%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet18](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#opentypefontsnippet18)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet18](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#opentypefontsnippet18)]  -->  
-  
+ 
+The following code example shows how to define capital spacing for the Pescadero font, using the <xref:System.Windows.Documents.Typography.CapitalSpacing%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet18](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#opentypefontsnippet18)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet18](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#opentypefontsnippet18)]  -->  
+ 
 <a name="xamlAttributeUsage_CapitalSpacing"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.CapitalSpacing**="*bool*"/>  
-  
+\<*object* **Typography.CapitalSpacing**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_CapitalSpacing"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.CapitalSpacingProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,22 +311,22 @@ Example of normal and capital spacing
           <see langword="true" /> if the vertical position is adjusted; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
 <a name="xamlAttributeUsage_CaseSensitiveForms"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.CaseSensitiveForms**="*bool*"/>  
-  
+\<*object* **Typography.CaseSensitiveForms**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_CaseSensitiveForms"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.CaseSensitiveFormsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,32 +366,32 @@ Example of normal and capital spacing
           <see langword="true" /> if custom glyph forms can be used; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Random contextual alternates provide multiple substitute glyphs for a single character. When implemented with script-type fonts, this feature can simulate handwriting by using of a set of randomly chosen glyphs with slight differences in appearance. The following text uses random contextual alternates for the Lindsey font. Notice that the letter "a" varies slightly in appearance  
-  
- ![Text using OpenType random contextual alternates](~/add/media/opentypefont23.gif "Text using OpenType random contextual alternates")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Random contextual alternates provide multiple substitute glyphs for a single character. When implemented with script-type fonts, this feature can simulate handwriting by using of a set of randomly chosen glyphs with slight differences in appearance. The following text uses random contextual alternates for the Lindsey font. Notice that the letter "a" varies slightly in appearance  
+ 
+![Text using OpenType random contextual alternates](~/add/media/opentypefont23.gif "Text using OpenType random contextual alternates")  
 Example of random contextual alternates  
-  
- The following code example shows how to define random contextual alternates for the Lindsey font, using the <xref:System.Windows.Documents.Typography.ContextualAlternates%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet20](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/Window1.xaml#opentypefontsnippet20)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet20](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/Window1.xaml#opentypefontsnippet20)]  -->  
-  
+ 
+The following code example shows how to define random contextual alternates for the Lindsey font, using the <xref:System.Windows.Documents.Typography.ContextualAlternates%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet20](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/Window1.xaml#opentypefontsnippet20)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet20](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/Window1.xaml#opentypefontsnippet20)]  -->  
+ 
 <a name="xamlAttributeUsage_ContextualAlternates"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.ContextualAlternates**="*bool*"/>  
-  
+\<*object* **Typography.ContextualAlternates**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_ContextualAlternates"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.ContextualAlternatesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -431,26 +431,26 @@ Example of random contextual alternates
           <see langword="true" /> if contextual ligatures are enabled; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Contextual ligatures are designed to enhance readability by providing better joining behavior between the characters that make up the ligature.  
-  
- If the value of <xref:System.Windows.Documents.Typography.ContextualLigatures%2A> is `true` and the selected font does not support contextual ligatures, the default form of the letter is displayed.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Contextual ligatures are designed to enhance readability by providing better joining behavior between the characters that make up the ligature.  
+ 
+If the value of <xref:System.Windows.Documents.Typography.ContextualLigatures%2A> is `true` and the selected font does not support contextual ligatures, the default form of the letter is displayed.  
+ 
 <a name="xamlAttributeUsage_ContextualLigatures"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.ContextualLigatures**="*bool*"/>  
-  
+\<*object* **Typography.ContextualLigatures**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_ContextualLigatures"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.ContextualLigaturesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,32 +489,32 @@ Example of random contextual alternates
         <value>The index of the standard swashes form. The default value is 0 (zero).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Certain combinations of swash glyphs can cause an unattractive appearance, such as overlapping descenders on adjacent letters. Using a contextual swash allows you to use a substitute swash glyph that produces a better appearance. The following text shows the same word before and after a contextual swash is applied.  
-  
- ![Text using OpenType contextual swashes](~/add/media/opentypefont19.gif "Text using OpenType contextual swashes")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Certain combinations of swash glyphs can cause an unattractive appearance, such as overlapping descenders on adjacent letters. Using a contextual swash allows you to use a substitute swash glyph that produces a better appearance. The following text shows the same word before and after a contextual swash is applied.  
+ 
+![Text using OpenType contextual swashes](~/add/media/opentypefont19.gif "Text using OpenType contextual swashes")  
 Example of a contextual swash  
-  
- The following code example shows how to define a contextual swash for the Pescadero font, using the <xref:System.Windows.Documents.Typography.ContextualSwashes%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet16](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#opentypefontsnippet16)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet16](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#opentypefontsnippet16)]  -->  
-  
+ 
+The following code example shows how to define a contextual swash for the Pescadero font, using the <xref:System.Windows.Documents.Typography.ContextualSwashes%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet16](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#opentypefontsnippet16)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet16](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#opentypefontsnippet16)]  -->  
+ 
 <a name="xamlAttributeUsage_ContextualSwashes"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.ContextualSwashes**="*int*"/>  
-  
+\<*object* **Typography.ContextualSwashes**="*int*"/>  
+ 
 <a name="dependencyPropertyInfo_ContextualSwashes"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.ContextualSwashesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,32 +554,32 @@ Example of a contextual swash
           <see langword="true" /> if discretionary ligatures are enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Discretionary ligatures are designed to be ornamental, and not specifically designed for readability. The following text displays discretionary ligature glyphs for the Pericles font.  
-  
- ![Text using OpenType discretionary ligatures](~/add/media/opentypefont05.gif "Text using OpenType discretionary ligatures")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Discretionary ligatures are designed to be ornamental, and not specifically designed for readability. The following text displays discretionary ligature glyphs for the Pericles font.  
+ 
+![Text using OpenType discretionary ligatures](~/add/media/opentypefont05.gif "Text using OpenType discretionary ligatures")  
 Example of discretionary set of ligatures  
-  
- The following code example shows how to define discretionary ligature glyphs for the Pericles font, using the <xref:System.Windows.Documents.Typography.DiscretionaryLigatures%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#5)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#5)]  -->  
-  
+ 
+The following code example shows how to define discretionary ligature glyphs for the Pericles font, using the <xref:System.Windows.Documents.Typography.DiscretionaryLigatures%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#5)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#5)]  -->  
+ 
 <a name="xamlAttributeUsage_DiscretionaryLigatures"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.DiscretionaryLigatures**="*bool*"/>  
-  
+\<*object* **Typography.DiscretionaryLigatures**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_DiscretionaryLigatures"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.DiscretionaryLigaturesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -619,22 +619,22 @@ Example of discretionary set of ligatures
           <see langword="true" /> if standard Japanese font forms have been replaced with the corresponding preferred typographic forms; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
 <a name="xamlAttributeUsage_EastAsianExpertForms"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.ExpertForms**="*bool*"/>  
-  
+\<*object* **Typography.ExpertForms**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_EastAsianExpertForms"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.EastAsianExpertFormsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -673,22 +673,22 @@ Example of discretionary set of ligatures
         <value>A <see cref="T:System.Windows.FontEastAsianLanguage" /> enumerated value. The default value is <see cref="F:System.Windows.FontEastAsianLanguage.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
 <a name="xamlAttributeUsage_EastAsianLanguage"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.EastAsianLanguage**="<xref:System.Windows.FontEastAsianLanguage>"/>  
-  
+\<*object* **Typography.EastAsianLanguage**="<xref:System.Windows.FontEastAsianLanguage>"/>  
+ 
 <a name="dependencyPropertyInfo_EastAsianLanguage"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.EastAsianLanguageProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -727,22 +727,22 @@ Example of discretionary set of ligatures
         <value>A <see cref="T:System.Windows.FontEastAsianWidths" /> enumerated value. The default value is <see cref="F:System.Windows.FontEastAsianWidths.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
 <a name="xamlAttributeUsage_EastAsianWidths"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.EastAsianWidths**="<xref:System.Windows.FontEastAsianWidths>"/>  
-  
+\<*object* **Typography.EastAsianWidths**="<xref:System.Windows.FontEastAsianWidths>"/>  
+ 
 <a name="dependencyPropertyInfo_EastAsianWidths"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.EastAsianWidthsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -781,34 +781,34 @@ Example of discretionary set of ligatures
         <value>A <see cref="T:System.Windows.FontFraction" /> enumerated value. The default value is <see cref="F:System.Windows.FontFraction.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- OpenType fonts support styles for fractions, including slashed and stacked.  
-  
- The following text displays fraction styles for the Palatino Linotype font.  
-  
- ![Text using OpenType slashed and stacked fractions](~/add/media/opentypefont12.gif "Text using OpenType slashed and stacked fractions")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+OpenType fonts support styles for fractions, including slashed and stacked.  
+ 
+The following text displays fraction styles for the Palatino Linotype font.  
+ 
+![Text using OpenType slashed and stacked fractions](~/add/media/opentypefont12.gif "Text using OpenType slashed and stacked fractions")  
 Example of slashed and stacked fraction styles  
-  
- The following code example shows how to define fraction styles for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.Fraction%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#10](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#10)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#10](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#10)]  -->  
-  
+ 
+The following code example shows how to define fraction styles for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.Fraction%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#10](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#10)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#10](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#10)]  -->  
+ 
 <a name="xamlAttributeUsage_Fraction"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.Fraction**="<xref:System.Windows.FontFraction>"/>  
-  
+\<*object* **Typography.Fraction**="<xref:System.Windows.FontFraction>"/>  
+ 
 <a name="dependencyPropertyInfo_Fraction"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.FractionProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2010,32 +2010,32 @@ Example of slashed and stacked fraction styles
           <see langword="true" /> if historical forms are enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Historical forms are typographic conventions that were common in the past. The following text displays the phrase, "Boston, Massachusetts", using an historical form of glyphs for the Palatino Linotype font.  
-  
- ![Text using OpenType historical forms](~/add/media/opentypefont10.gif "Text using OpenType historical forms")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Historical forms are typographic conventions that were common in the past. The following text displays the phrase, "Boston, Massachusetts", using an historical form of glyphs for the Palatino Linotype font.  
+ 
+![Text using OpenType historical forms](~/add/media/opentypefont10.gif "Text using OpenType historical forms")  
 Example of historical forms  
-  
- The following code example shows how to define historical forms for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.HistoricalForms%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#8)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#8](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#8)]  -->  
-  
+ 
+The following code example shows how to define historical forms for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.HistoricalForms%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#8)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#8](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#8)]  -->  
+ 
 <a name="xamlAttributeUsage_HistoricalForms"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.HistoricalForms**="*bool*"/>  
-  
+\<*object* **Typography.HistoricalForms**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_HistoricalForms"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.HistoricalFormsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2075,24 +2075,24 @@ Example of historical forms
           <see langword="true" /> if historical ligatures are enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Historical ligatures are typographic forms used in historical typography that font designers may add to their fonts.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Historical ligatures are typographic forms used in historical typography that font designers may add to their fonts.  
+ 
 <a name="xamlAttributeUsage_HistoricalLigatures"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.HistoricalLigatures**="*bool*"/>  
-  
+\<*object* **Typography.HistoricalLigatures**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_HistoricalLigatures"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.HistoricalLigaturesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2132,24 +2132,24 @@ Example of historical forms
           <see langword="true" /> if kerning is enabled; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Kerning is a typographic function that adjusts the spacing between characters to enhance word shape.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Kerning is a typographic function that adjusts the spacing between characters to enhance word shape.  
+ 
 <a name="xamlAttributeUsage_Kerning"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.Kerning**="*bool*"/>  
-  
+\<*object* **Typography.Kerning**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_Kerning"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.KerningProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2189,24 +2189,24 @@ Example of historical forms
           <see langword="true" /> if mathematical Greek forms are enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- If the value of <xref:System.Windows.Documents.Typography.MathematicalGreek%2A> is `true` and the selected font does not support mathematical Greek forms, the default form of the letter is displayed.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+If the value of <xref:System.Windows.Documents.Typography.MathematicalGreek%2A> is `true` and the selected font does not support mathematical Greek forms, the default form of the letter is displayed.  
+ 
 <a name="xamlAttributeUsage_MathematicalGreek"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.MethematicalGreek**="*bool*"/>  
-  
+\<*object* **Typography.MethematicalGreek**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_MathematicalGreek"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.MathematicalGreekProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2245,34 +2245,34 @@ Example of historical forms
         <value>A <see cref="T:System.Windows.FontNumeralAlignment" /> enumerated value. The default value is <see cref="F:System.Windows.FontNumeralAlignment.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- OpenType fonts support a proportional and tabular figure feature to control the alignment of widths when using numerals. Proportional figures treat each numeral as having a different width—"1" is narrower than "5". Tabular figures are treated as equal-width numerals so that they align vertically, which increases the readability of financial type information.  
-  
- The following text displays two proportional figures in the first column using the Miramonte font. Note the difference in width between the numerals "5" and "1". The second column shows the same two numeric values with the widths adjusted by using the tabular figure feature.  
-  
- ![Text using OpenType proportional & tabular figures](~/add/media/opentypefont22.gif "Text using OpenType proportional & tabular figures")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+OpenType fonts support a proportional and tabular figure feature to control the alignment of widths when using numerals. Proportional figures treat each numeral as having a different width—"1" is narrower than "5". Tabular figures are treated as equal-width numerals so that they align vertically, which increases the readability of financial type information.  
+ 
+The following text displays two proportional figures in the first column using the Miramonte font. Note the difference in width between the numerals "5" and "1". The second column shows the same two numeric values with the widths adjusted by using the tabular figure feature.  
+ 
+![Text using OpenType proportional & tabular figures](~/add/media/opentypefont22.gif "Text using OpenType proportional & tabular figures")  
 Example of proportional and tabbed figures  
-  
- The following code example shows how to define proportional and tabular figures for the Miramonte font, using the <xref:System.Windows.Documents.Typography.NumeralAlignment%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet19](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/Window1.xaml#opentypefontsnippet19)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet19](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/Window1.xaml#opentypefontsnippet19)]  -->  
-  
+ 
+The following code example shows how to define proportional and tabular figures for the Miramonte font, using the <xref:System.Windows.Documents.Typography.NumeralAlignment%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet19](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/Window1.xaml#opentypefontsnippet19)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet19](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/Window1.xaml#opentypefontsnippet19)]  -->  
+ 
 <a name="xamlAttributeUsage_NumeralAlignment"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.NumericalAlignment**="<xref:System.Windows.FontNumeralAlignment>"/>  
-  
+\<*object* **Typography.NumericalAlignment**="<xref:System.Windows.FontNumeralAlignment>"/>  
+ 
 <a name="dependencyPropertyInfo_NumeralAlignment"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.NumeralAlignmentProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2311,37 +2311,37 @@ Example of proportional and tabbed figures
         <value>A <see cref="T:System.Windows.FontNumeralStyle" /> enumerated value. The default value is <see cref="F:System.Windows.FontNumeralStyle.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- OpenType fonts support an old style numeral format. This format is useful for displaying numerals in styles that are no longer standard. The following text displays an 18th century date in standard and old style numeral formats for the Palatino Linotype font.  
-  
- ![Text using OpenType old style numerals](~/add/media/opentypefont24.gif "Text using OpenType old style numerals")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+OpenType fonts support an old style numeral format. This format is useful for displaying numerals in styles that are no longer standard. The following text displays an 18th century date in standard and old style numeral formats for the Palatino Linotype font.  
+ 
+![Text using OpenType old style numerals](~/add/media/opentypefont24.gif "Text using OpenType old style numerals")  
 Example of standard and old style numerals  
-  
- The following text displays standard numerals for the Palatino Linotype font, followed by old style numerals.  
-  
- ![Text using OpenType old style numeral sets](~/add/media/opentypefont13.gif "Text using OpenType old style numeral sets")  
+ 
+The following text displays standard numerals for the Palatino Linotype font, followed by old style numerals.  
+ 
+![Text using OpenType old style numeral sets](~/add/media/opentypefont13.gif "Text using OpenType old style numeral sets")  
 Example of standard and old style numeral sets  
-  
- The following code example shows how to define old style numerals for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.NumeralStyle%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#11](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#11)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#11](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#11)]  -->  
-  
+ 
+The following code example shows how to define old style numerals for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.NumeralStyle%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#11](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#11)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#11](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#11)]  -->  
+ 
 <a name="xamlAttributeUsage_NumeralStyle"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.NumeralStyle**="<xref:System.Windows.FontNumeralStyle>"/>  
-  
+\<*object* **Typography.NumeralStyle**="<xref:System.Windows.FontNumeralStyle>"/>  
+ 
 <a name="dependencyPropertyInfo_NumeralStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.NumeralStyleProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3413,36 +3413,36 @@ Example of standard and old style numeral sets
           <see langword="true" /> if slashed zero forms are enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- OpenType fonts support a slashed zero numeral format to emphasize the difference between the letter "O" and the numeral "0". The slashed zero numeral is often used for identifiers in financial and business information.  
-  
- The following text displays a sample order identifier using the Miramonte font. The first line uses standard numerals. The second line used slashed zero numerals to provide better contrast with the uppercase "O" letter.  
-  
- ![Text using OpenType slashed zero numerals](~/add/media/opentypefont17.gif "Text using OpenType slashed zero numerals")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+OpenType fonts support a slashed zero numeral format to emphasize the difference between the letter "O" and the numeral "0". The slashed zero numeral is often used for identifiers in financial and business information.  
+ 
+The following text displays a sample order identifier using the Miramonte font. The first line uses standard numerals. The second line used slashed zero numerals to provide better contrast with the uppercase "O" letter.  
+ 
+![Text using OpenType slashed zero numerals](~/add/media/opentypefont17.gif "Text using OpenType slashed zero numerals")  
 Example of slashed zero numerals  
-  
- The following code example shows how to define slashed zero numerals for the Miramonte font, using the <xref:System.Windows.Documents.Typography.SlashedZero%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet15](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#opentypefontsnippet15)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet15](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#opentypefontsnippet15)]  -->  
-  
- If the value of <xref:System.Windows.Documents.Typography.SlashedZero%2A> is `true` and the selected font does not support slashed zero forms, the default form of the numeral is displayed.  
-  
+ 
+The following code example shows how to define slashed zero numerals for the Miramonte font, using the <xref:System.Windows.Documents.Typography.SlashedZero%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet15](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#opentypefontsnippet15)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet15](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#opentypefontsnippet15)]  -->  
+ 
+If the value of <xref:System.Windows.Documents.Typography.SlashedZero%2A> is `true` and the selected font does not support slashed zero forms, the default form of the numeral is displayed.  
+ 
 <a name="xamlAttributeUsage_SlashedZero"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.SlashedZero**="*bool*"/>  
-  
+\<*object* **Typography.SlashedZero**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_SlashedZero"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.SlashedZeroProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3482,49 +3482,49 @@ Example of slashed zero numerals
           <see langword="true" /> if standard ligatures are enabled; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- The following text displays standard ligature glyphs for the Pericles font.  
-  
- ![Text using OpenType standard ligatures](~/add/media/opentypefont04.gif "Text using OpenType standard ligatures")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+The following text displays standard ligature glyphs for the Pericles font.  
+ 
+![Text using OpenType standard ligatures](~/add/media/opentypefont04.gif "Text using OpenType standard ligatures")  
 Example of standard set of ligatures  
-  
- The following code example shows how to define standard ligature glyphs for the Pericles font, using the <xref:System.Windows.Documents.Typography.StandardLigatures%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#4)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#4)]  -->  
-  
- By default, OpenTypes fonts in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] enable standard ligatures. For example, if you use the Palatino Linotype font, the standard ligatures "fi", "ff", and "fl" appear as a combined character glyph. Notice that the pair of characters for each standard ligature touch each other.  
-  
- ![Text using OpenType standard ligatures](~/add/media/opentypefont06.gif "Text using OpenType standard ligatures")  
+ 
+The following code example shows how to define standard ligature glyphs for the Pericles font, using the <xref:System.Windows.Documents.Typography.StandardLigatures%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#4)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#4)]  -->  
+ 
+By default, OpenTypes fonts in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] enable standard ligatures. For example, if you use the Palatino Linotype font, the standard ligatures "fi", "ff", and "fl" appear as a combined character glyph. Notice that the pair of characters for each standard ligature touch each other.  
+ 
+![Text using OpenType standard ligatures](~/add/media/opentypefont06.gif "Text using OpenType standard ligatures")  
 Example of standard ligatures enabled by default  
-  
- However, you can disable standard ligature features so that a standard ligature such as "ff" displays as two separate glyphs, rather than as a combined character glyph.  
-  
- ![Text using disabled OpenType standard ligatures](~/add/media/opentypefont07.gif "Text using disabled OpenType standard ligatures")  
+ 
+However, you can disable standard ligature features so that a standard ligature such as "ff" displays as two separate glyphs, rather than as a combined character glyph.  
+ 
+![Text using disabled OpenType standard ligatures](~/add/media/opentypefont07.gif "Text using disabled OpenType standard ligatures")  
 Example of disabled standard ligatures  
-  
- The following code example shows how to disable standard ligature glyphs for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.StandardLigatures%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#6](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#6)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#6)]  -->  
-  
- If the value of <xref:System.Windows.Documents.Typography.StandardLigatures%2A> is `true` and the selected font does not support standard ligatures, the default form of the letter is displayed.  
-  
+ 
+The following code example shows how to disable standard ligature glyphs for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.StandardLigatures%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#6](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#6)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#6)]  -->  
+ 
+If the value of <xref:System.Windows.Documents.Typography.StandardLigatures%2A> is `true` and the selected font does not support standard ligatures, the default form of the letter is displayed.  
+ 
 <a name="xamlAttributeUsage_StandardLigatures"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StandardLigatures**="*bool*"/>  
-  
+\<*object* **Typography.StandardLigatures**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StandardLigatures"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StandardLigaturesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3563,39 +3563,39 @@ Example of disabled standard ligatures
         <value>The index of the standard swashes form. The default value is 0 (zero).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
-  
- ![Text using OpenType standard and swash glyphs](~/add/media/opentypefont08.gif "Text using OpenType standard and swash glyphs")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
+ 
+![Text using OpenType standard and swash glyphs](~/add/media/opentypefont08.gif "Text using OpenType standard and swash glyphs")  
 Example of standard and swash glyphs  
-  
- Swashes are often used as decorative elements in short phrases such as event announcements. The following text uses swashes to emphasize the capital letters of the name of the event.  
-  
- ![Text using OpenType swashes](~/add/media/opentypefont09.gif "Text using OpenType swashes")  
+ 
+Swashes are often used as decorative elements in short phrases such as event announcements. The following text uses swashes to emphasize the capital letters of the name of the event.  
+ 
+![Text using OpenType swashes](~/add/media/opentypefont09.gif "Text using OpenType swashes")  
 Example of swashes used for capital letters  
-  
- The following code example shows how to define swashes for a font, using the <xref:System.Windows.Documents.Typography.StandardSwashes%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#7)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#7](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#7)]  -->  
-  
- If the value of <xref:System.Windows.Documents.Typography.StandardSwashes%2A> is greater than zero and the selected font does not support standard swashes forms at the given index value, the default form of the letter is displayed.  
-  
+ 
+The following code example shows how to define swashes for a font, using the <xref:System.Windows.Documents.Typography.StandardSwashes%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#7)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#7](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#7)]  -->  
+ 
+If the value of <xref:System.Windows.Documents.Typography.StandardSwashes%2A> is greater than zero and the selected font does not support standard swashes forms at the given index value, the default form of the letter is displayed.  
+ 
 <a name="xamlAttributeUsage_StandardSwashes"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StandardSwashes**="*int*"/>  
-  
+\<*object* **Typography.StandardSwashes**="*int*"/>  
+ 
 <a name="dependencyPropertyInfo_StandardSwashes"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StandardSwashesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3634,47 +3634,47 @@ Example of swashes used for capital letters
         <value>The index of the stylistic alternates form. The default value is 0 (zero).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Alternates are glyphs that can be substituted for a standard glyph. OpenType fonts, such as the Pericles font used in the following examples, contain alternate glyphs that you can use to create different appearances for text. The following text displays standard glyphs for the Pericles font.  
-  
- ![Text using OpenType standard glyphs](~/add/media/opentypefont01.gif "Text using OpenType standard glyphs")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Alternates are glyphs that can be substituted for a standard glyph. OpenType fonts, such as the Pericles font used in the following examples, contain alternate glyphs that you can use to create different appearances for text. The following text displays standard glyphs for the Pericles font.  
+ 
+![Text using OpenType standard glyphs](~/add/media/opentypefont01.gif "Text using OpenType standard glyphs")  
 Example of standard set of glyphs  
-  
- The Pericles OpenType font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
-  
- ![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont02.gif "Text using OpenType stylistic alternate glyphs")  
+ 
+The Pericles OpenType font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
+ 
+![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont02.gif "Text using OpenType stylistic alternate glyphs")  
 Example of stylistic alternate glyphs  
-  
- The following code example shows how to define stylistic alternate glyphs for the Pericles font, using the <xref:System.Windows.Documents.Typography.StylisticAlternates%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#2)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#2)]  -->  
-  
- The following text displays several other stylistic alternate glyphs for the Pericles font.  
-  
- ![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont03.gif "Text using OpenType stylistic alternate glyphs")  
+ 
+The following code example shows how to define stylistic alternate glyphs for the Pericles font, using the <xref:System.Windows.Documents.Typography.StylisticAlternates%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#2)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#2)]  -->  
+ 
+The following text displays several other stylistic alternate glyphs for the Pericles font.  
+ 
+![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont03.gif "Text using OpenType stylistic alternate glyphs")  
 Example of other stylistic alternate glyphs  
-  
- The following code example shows how to define these other stylistic alternate glyphs.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#3)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#3)]  -->  
-  
+ 
+The following code example shows how to define these other stylistic alternate glyphs.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#3)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#3)]  -->  
+ 
 <a name="xamlAttributeUsage_StylisticAlternates"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticAlternates**="*int*"/>  
-  
+\<*object* **Typography.StylisticAlternates**="*int*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticAlternates"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticAlternatesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3714,24 +3714,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet1"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet1**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet1**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet1"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet1Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3754,24 +3754,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet10"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet10**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet10**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet10"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet10Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3811,24 +3811,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet11"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet11**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet11**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet11"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet11Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3868,24 +3868,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet12"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet12**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet12**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet12"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet12Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3925,24 +3925,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet13"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet13**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet13**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet13"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet13Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3982,24 +3982,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet14"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet14**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet14**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet14"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet14Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4039,24 +4039,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet15"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet15**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet15**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet15"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet15Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4096,24 +4096,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet16"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet16**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet16**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet16"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet16Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4153,24 +4153,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet17"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet17**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet17**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet17"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet17Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4210,24 +4210,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet18"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet18**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet18**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet18"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet18Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4267,24 +4267,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet19"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet19**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet19**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet19"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet19Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4341,24 +4341,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet2"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet2**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet2**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet2"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet2Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4381,24 +4381,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet20"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet20**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet20**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet20"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet20Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4455,24 +4455,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet3"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet3**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet3**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet3"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet3Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4512,24 +4512,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet4"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet4**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet4**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet4"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet4Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4569,24 +4569,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet5"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet5**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet5**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet5"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet5Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4626,24 +4626,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet6"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet6**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet6**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet6"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet6Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4683,22 +4683,22 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
- \<*object* **Typography.StylisticSet7**="*bool*"/>  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
+\<*object* **Typography.StylisticSet7**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet7"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet7Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4738,24 +4738,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet8"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet8**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet8**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet8"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet8Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4795,24 +4795,24 @@ Example of other stylistic alternate glyphs
           <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
-  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+ 
 <a name="xamlAttributeUsage_StylisticSet9"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.StylisticSet9**="*bool*"/>  
-  
+\<*object* **Typography.StylisticSet9**="*bool*"/>  
+ 
 <a name="dependencyPropertyInfo_StylisticSet9"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.StylisticSet9Property>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4851,46 +4851,46 @@ Example of other stylistic alternate glyphs
         <value>A <see cref="T:System.Windows.FontVariants" /> enumerated value. The default value is <see cref="F:System.Windows.FontVariants.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
- Variants are similar to superscript or subscript font forms. It is possible for a font form to contain differing glyph sets between superscript and the ordinal form, or between subscript and inferior forms. The <xref:System.Windows.Documents.Typography.Variants%2A> property allows you to set superscript and subscript values for an OpenType font.  
-  
- The following text displays superscripts for the Palatino Linotype font.  
-  
- ![Text using OpenType superscripts](~/add/media/opentypefont14.gif "Text using OpenType superscripts")  
+This property gets or sets a value on the object that owns a `Typography` property, which is the only way to access a <xref:System.Windows.Documents.Typography> class instance. In addition, this property supports an attached property usage so that it can be set on text-containing objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
+Variants are similar to superscript or subscript font forms. It is possible for a font form to contain differing glyph sets between superscript and the ordinal form, or between subscript and inferior forms. The <xref:System.Windows.Documents.Typography.Variants%2A> property allows you to set superscript and subscript values for an OpenType font.  
+ 
+The following text displays superscripts for the Palatino Linotype font.  
+ 
+![Text using OpenType superscripts](~/add/media/opentypefont14.gif "Text using OpenType superscripts")  
 Example of superscripts  
-  
- The following code example shows how to define superscripts for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.Variants%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#12](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#12)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#12](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#12)]  -->  
-  
- The following text displays subscripts for the Palatino Linotype font.  
-  
- ![Text using OpenType subscripts](~/add/media/opentypefont15.gif "Text using OpenType subscripts")  
+ 
+The following code example shows how to define superscripts for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.Variants%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#12](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#12)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#12](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#12)]  -->  
+ 
+The following text displays subscripts for the Palatino Linotype font.  
+ 
+![Text using OpenType subscripts](~/add/media/opentypefont15.gif "Text using OpenType subscripts")  
 Example of subscripts  
-  
- The following code example shows how to define subscripts for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.Variants%2A> property.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#13](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#13)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#13](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#13)]  -->  
-  
- Fonts that do not support variants may have an algorithmic approximation of the font form.  
-  
+ 
+The following code example shows how to define subscripts for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.Variants%2A> property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#13](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#13)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#13](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#13)]  -->  
+ 
+Fonts that do not support variants may have an algorithmic approximation of the font form.  
+ 
 <a name="xamlAttributeUsage_Variants"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.Variants**="<xref:System.Windows.FontVariants>"/>  
-  
+\<*object* **Typography.Variants**="<xref:System.Windows.FontVariants>"/>  
+ 
 <a name="dependencyPropertyInfo_Variants"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Typography.VariantsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

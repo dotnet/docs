@@ -14,19 +14,19 @@
     <summary>Container for all extended editor logic for properties.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor> class can hold two <xref:System.DataTemplate> objects, one for an inline editor and one for an extended editor. The inline editor provides a custom interface that appears within the bounds of the `Properties` window, and the extended editor provides an interface that appears in a new window.  
+The <xref:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor> class can hold two <xref:System.DataTemplate> objects, one for an inline editor and one for an extended editor. The inline editor provides a custom interface that appears within the bounds of the `Properties` window, and the extended editor provides an interface that appears in a new window.  
+ 
+The <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A> property returns the XAML template for the visual interface for the inline editor, and the <xref:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor.ExtendedEditorTemplate%2A> property returns the XAML template for the extended editor. These are typically provided in a ResourceDictionary elsewhere in the project.  
+ 
+You should use the <xref:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton> to invoke your custom <xref:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor>.  
+ 
   
- The <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A> property returns the XAML template for the visual interface for the inline editor, and the <xref:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor.ExtendedEditorTemplate%2A> property returns the XAML template for the extended editor. These are typically provided in a ResourceDictionary elsewhere in the project.  
-  
- You should use the <xref:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton> to invoke your custom <xref:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor>.  
-  
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_ExtendedPropertyValueEditor#0](WFD_ExtendedPropertyValueEditor#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Creates a new instance of <see cref="T:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor" /> with the specified extended and inline editor <see cref="T:System.Windows.DataTemplate" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When used, its <xref:System.Activities.ActivityContext.DataContext%2A> is set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
-  
+When used, its <xref:System.Activities.ActivityContext.DataContext%2A> is set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <value>The <see cref="T:System.Windows.DataTemplate" /> object used for the extended pop-up or pinned editor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Its <xref:System.Activities.ActivityContext.DataContext%2A> is set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
-  
+Its <xref:System.Activities.ActivityContext.DataContext%2A> is set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

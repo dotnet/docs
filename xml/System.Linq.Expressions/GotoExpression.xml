@@ -30,13 +30,13 @@
     <summary>Represents an unconditional jump. This includes return statements, break and continue statements, and other jumps.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create an expression that contains a <xref:System.Linq.Expressions.GotoExpression> object by using the <xref:System.Linq.Expressions.Expression.Goto%2A> method.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#45](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#45)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#45](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#45)]  
-  
+The following example demonstrates how to create an expression that contains a <xref:System.Linq.Expressions.GotoExpression> object by using the <xref:System.Linq.Expressions.Expression.Goto%2A> method.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#45](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#45)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#45](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#45)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

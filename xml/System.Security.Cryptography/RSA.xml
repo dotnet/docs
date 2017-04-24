@@ -30,14 +30,14 @@
     <summary>Represents the base class from which all implementations of the <see cref="T:System.Security.Cryptography.RSA" /> algorithm inherit.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Extending this class proves that you are implementing an `RSA` key. This is required for any developer providing a new `RSA` key implementation.  
-  
- The only purpose of this class is as a hierarchy member for identification of the `RSA` algorithm.  
-  
- The <xref:System.Security.Cryptography.RSACryptoServiceProvider> supports key lengths from 384 bits to 16384 bits in increments of 8 bits if you have the Microsoft Enhanced Cryptographic Provider installed.  It supports key lengths from 384 bits to 512 bits in increments of 8 bits if you have the Microsoft Base Cryptographic Provider installed.  
-  
+Extending this class proves that you are implementing an `RSA` key. This is required for any developer providing a new `RSA` key implementation.  
+ 
+The only purpose of this class is as a hierarchy member for identification of the `RSA` algorithm.  
+ 
+The <xref:System.Security.Cryptography.RSACryptoServiceProvider> supports key lengths from 384 bits to 16384 bits in increments of 8 bits if you have the Microsoft Enhanced Cryptographic Provider installed.  It supports key lengths from 384 bits to 512 bits in increments of 8 bits if you have the Microsoft Base Cryptographic Provider installed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSA" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a protected method that can only be called from a class derived from <xref:System.Security.Cryptography.RSA>. You cannot create an instance of an abstract class.  
-  
+This is a protected method that can only be called from a class derived from <xref:System.Security.Cryptography.RSA>. You cannot create an instance of an abstract class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <returns>The resulting decryption of the <paramref name="rgb" /> parameter in plain text.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the [!INCLUDE[net_v452](~/includes/net-v452-md.md)] and earlier versions of the .NET Framework, this method was `abstract`. However, the only implementation by a derived class, <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue%2A?displayProperty=fullName>, also threw a <xref:System.NotSupportedException> exception.  
-  
+In the [!INCLUDE[net_v452](~/includes/net-v452-md.md)] and earlier versions of the .NET Framework, this method was `abstract`. However, the only implementation by a derived class, <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue%2A?displayProperty=fullName>, also threw a <xref:System.NotSupportedException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method call is not supported. This exception is thrown starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)].</exception>
@@ -265,10 +265,10 @@
         <returns>The resulting encryption of the <paramref name="rgb" /> parameter as cipher text.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the [!INCLUDE[net_v452](~/includes/net-v452-md.md)] and earlier versions of the .NET Framework, this method was `abstract`. However, the only implementation by a derived class, <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue%2A?displayProperty=fullName>, also threw a <xref:System.NotSupportedException> exception.  
-  
+In the [!INCLUDE[net_v452](~/includes/net-v452-md.md)] and earlier versions of the .NET Framework, this method was `abstract`. However, the only implementation by a derived class, <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue%2A?displayProperty=fullName>, also threw a <xref:System.NotSupportedException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method call is not supported. This exception is thrown starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)].</exception>
@@ -333,15 +333,15 @@
         <summary>Initializes an <see cref="T:System.Security.Cryptography.RSA" /> object from the key information from an XML string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.RSA.FromXmlString%2A> initializes an RSA object using key information in an XML string that was generated using the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method.  The <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method accepts either an XML string containing a public key or an XML string containing a public and private key.  
-  
- Use the <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method to conveniently initialize <xref:System.Security.Cryptography.RSA> key information.  
-  
+The <xref:System.Security.Cryptography.RSA.FromXmlString%2A> initializes an RSA object using key information in an XML string that was generated using the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method.  The <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method accepts either an XML string containing a public key or an XML string containing a public and private key.  
+ 
+Use the <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method to conveniently initialize <xref:System.Security.Cryptography.RSA> key information.  
+ 
 > [!CAUTION]
 >  Persisting an XML string containing a private key to an insecure location is a security threat.  The security of your application can be compromised if a malicious third party can access your private key.  To safely persist a private key, use a secure key container.  For more information about persisting private keys in a key container, see [How to: Store Asymmetric Keys in a Key Container](~/docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="xmlString" /> parameter is <see langword="null" />.</exception>
@@ -716,39 +716,39 @@
         <returns>An XML string containing the key of the current <see cref="T:System.Security.Cryptography.RSA" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method creates an XML string that contains either the public and private key of the current <xref:System.Security.Cryptography.RSA> object or contains only the public key of the current <xref:System.Security.Cryptography.RSA> object.  
-  
- Use the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method whenever you need to conveniently persist RSA key information.  To initialize an <xref:System.Security.Cryptography.RSA> object with the key in an XML string, use the <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method.  
-  
+The <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method creates an XML string that contains either the public and private key of the current <xref:System.Security.Cryptography.RSA> object or contains only the public key of the current <xref:System.Security.Cryptography.RSA> object.  
+ 
+Use the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method whenever you need to conveniently persist RSA key information.  To initialize an <xref:System.Security.Cryptography.RSA> object with the key in an XML string, use the <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method.  
+ 
 > [!CAUTION]
 >  Persisting an XML string containing a private key to an insecure location is a security threat.  The security of your application can be compromised if a malicious third party can access your private key.  To safely persist a private key, use a secure key container.  For more information about persisting private keys in a key container, see [How to: Store Asymmetric Keys in a Key Container](~/docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md).  
-  
- When you pass `true` to the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method, the resulting XML string takes the following form:  
-  
+ 
+When you pass `true` to the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method, the resulting XML string takes the following form:  
+ 
 ```  
 <RSAKeyValue>  
-   <Modulus>…</Modulus>  
-   <Exponent>…</Exponent>  
-   <P>…</P>  
-   <Q>…</Q>  
-   <DP>…</DP>  
-   <DQ>…</DQ>  
-   <InverseQ>…</InverseQ>  
-   <D>…</D>  
+  <Modulus>…</Modulus>  
+  <Exponent>…</Exponent>  
+  <P>…</P>  
+  <Q>…</Q>  
+  <DP>…</DP>  
+  <DQ>…</DQ>  
+  <InverseQ>…</InverseQ>  
+  <D>…</D>  
 </RSAKeyValue>  
 ```  
-  
- When you pass `false` to the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method, the resulting XML string takes the following form:  
-  
+ 
+When you pass `false` to the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method, the resulting XML string takes the following form:  
+ 
 ```  
 <RSAKeyValue>  
-   <Modulus>…</Modulus>  
-   <Exponent>…</Exponent>  
+  <Modulus>…</Modulus>  
+  <Exponent>…</Exponent>  
 </RSAKeyValue>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

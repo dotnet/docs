@@ -19,58 +19,58 @@
     <summary>Represents the Windows access control security for a named mutex. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Security.AccessControl.MutexSecurity> object specifies access rights for a named system mutex, and also specifies how access attempts are audited. Access rights to the mutex are expressed as rules, with each access rule represented by a <xref:System.Security.AccessControl.MutexAccessRule> object. Each auditing rule is represented by a <xref:System.Security.AccessControl.MutexAuditRule> object.  
-  
- This mirrors the underlying Windows security system, in which each securable object has at most one discretionary access control list (DACL) that controls access to the secured object, and at most one system access control list (SACL) that specifies which access attempts are audited. The DACL and SACL are ordered lists of access control entries (ACE) that specify access and auditing for users and groups. A <xref:System.Security.AccessControl.MutexAccessRule> or <xref:System.Security.AccessControl.MutexAuditRule> object might represent more than one ACE.  
-  
+A <xref:System.Security.AccessControl.MutexSecurity> object specifies access rights for a named system mutex, and also specifies how access attempts are audited. Access rights to the mutex are expressed as rules, with each access rule represented by a <xref:System.Security.AccessControl.MutexAccessRule> object. Each auditing rule is represented by a <xref:System.Security.AccessControl.MutexAuditRule> object.  
+ 
+This mirrors the underlying Windows security system, in which each securable object has at most one discretionary access control list (DACL) that controls access to the secured object, and at most one system access control list (SACL) that specifies which access attempts are audited. The DACL and SACL are ordered lists of access control entries (ACE) that specify access and auditing for users and groups. A <xref:System.Security.AccessControl.MutexAccessRule> or <xref:System.Security.AccessControl.MutexAuditRule> object might represent more than one ACE.  
+ 
 > [!NOTE]
 >  A <xref:System.Threading.Mutex> object can represent a local mutex or a named system mutex. Windows access control security is meaningful only for named system mutexes.  
-  
- The <xref:System.Security.AccessControl.MutexSecurity>, <xref:System.Security.AccessControl.MutexAccessRule>, and <xref:System.Security.AccessControl.MutexAuditRule> classes hide the implementation details of ACLs and ACEs. They allow you to ignore the seventeen different ACE types and the complexity of correctly maintaining inheritance and propagation of access rights. These objects are also designed to prevent the following common access control errors:  
-  
+ 
+The <xref:System.Security.AccessControl.MutexSecurity>, <xref:System.Security.AccessControl.MutexAccessRule>, and <xref:System.Security.AccessControl.MutexAuditRule> classes hide the implementation details of ACLs and ACEs. They allow you to ignore the seventeen different ACE types and the complexity of correctly maintaining inheritance and propagation of access rights. These objects are also designed to prevent the following common access control errors:  
+ 
 -   Creating a security descriptor with a null DACL. A null reference to a DACL allows any user to add access rules to an object, potentially creating a denial-of-service attack. A new <xref:System.Security.AccessControl.MutexSecurity> object always starts with an empty DACL, which denies all access for all users.  
-  
+ 
 -   Violating the canonical ordering of ACEs. If the ACE list in the DACL is not kept in the canonical order, users might inadvertently be given access to the secured object. For example, denied access rights must always appear before allowed access rights. <xref:System.Security.AccessControl.MutexSecurity> objects maintain the correct order internally.  
-  
+ 
 -   Manipulating security descriptor flags, which should be under resource manager control only.  
-  
+ 
 -   Creating invalid combinations of ACE flags.  
-  
+ 
 -   Manipulating inherited ACEs. Inheritance and propagation are handled by the resource manager, in response to changes you make to access and audit rules.  
-  
+ 
 -   Inserting meaningless ACEs into ACLs.  
-  
- The only capabilities not supported by the .NET security objects are dangerous activities that should be avoided by the majority of application developers, such as the following:  
-  
+ 
+The only capabilities not supported by the .NET security objects are dangerous activities that should be avoided by the majority of application developers, such as the following:  
+ 
 -   Low-level tasks that are normally performed by the resource manager.  
-  
+ 
 -   Adding or removing access control entries in ways that do not maintain the canonical ordering.  
-  
- To modify Windows access control security for a named mutex, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.MutexSecurity> object. Modify the security object by adding and removing rules, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method to reattach it.  
-  
+ 
+To modify Windows access control security for a named mutex, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.MutexSecurity> object. Modify the security object by adding and removing rules, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method to reattach it.  
+ 
 > [!IMPORTANT]
 >  Changes you make to a <xref:System.Security.AccessControl.MutexSecurity> object do not affect the access levels of the named mutex until you call the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method to assign the altered security object to the named mutex.  
-  
- To copy access control security from one mutex to another, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get a <xref:System.Security.AccessControl.MutexSecurity> object representing the access and audit rules for the first mutex, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method, or a constructor that accepts a <xref:System.Security.AccessControl.MutexSecurity> object, to assign those rules to the second mutex.  
-  
- Users with an investment in the security descriptor definition language (SDDL) can use the <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm%2A> method to set access rules for a named mutex, and the <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm%2A> method to obtain a string that represents the access rules in SDDL format. This is not recommended for new development.  
-  
+ 
+To copy access control security from one mutex to another, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get a <xref:System.Security.AccessControl.MutexSecurity> object representing the access and audit rules for the first mutex, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method, or a constructor that accepts a <xref:System.Security.AccessControl.MutexSecurity> object, to assign those rules to the second mutex.  
+ 
+Users with an investment in the security descriptor definition language (SDDL) can use the <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm%2A> method to set access rules for a named mutex, and the <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm%2A> method to obtain a string that represents the access rules in SDDL format. This is not recommended for new development.  
+ 
 > [!NOTE]
 >  Security on synchronization objects is not supported for Windows 98 or Windows Millennium Edition.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType> rules and <xref:System.Security.AccessControl.AccessControlType> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
-  
+The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType> rules and <xref:System.Security.AccessControl.AccessControlType> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+ 
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
-  
- [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
+[!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,10 +94,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class with default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new <xref:System.Security.AccessControl.MutexSecurity> object always starts with an empty discretionary access list (DACL), which denies all access for all users.  
-  
+A new <xref:System.Security.AccessControl.MutexSecurity> object always starts with an empty discretionary access list (DACL), which denies all access for all users.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This class is not supported on Windows 98 or Windows Millennium Edition.</exception>
@@ -127,12 +127,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class with the specified sections of the access control security rules from the system mutex with the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor allows you to obtain the access control security for a named system mutex without first creating a <xref:System.Threading.Mutex> object.  
-  
- Caution must be exercised when working with named system objects. If there is a system object named `name` that is not a mutex, its control access security might be retrieved.  
-  
+This constructor allows you to obtain the access control security for a named system mutex without first creating a <xref:System.Threading.Mutex> object.  
+ 
+Caution must be exercised when working with named system objects. If there is a system object named `name` that is not a mutex, its control access security might be retrieved.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.FileNotFoundException">There is no system object with the specified name.</exception>
@@ -161,10 +161,10 @@
         <value>A <see cref="T:System.Type" /> object representing the <see cref="T:System.Security.AccessControl.MutexRights" /> enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRightType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
-  
+Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRightType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,13 +205,13 @@
         <returns>A <see cref="T:System.Security.AccessControl.MutexAccessRule" /> object representing the specified rights for the specified user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The recommended way to create access control rules is to use the constructors of the <xref:System.Security.AccessControl.MutexAccessRule> class.  
-  
+The recommended way to create access control rules is to use the constructors of the <xref:System.Security.AccessControl.MutexAccessRule> class.  
+ 
 > [!NOTE]
 >  Although inheritance and propagation flags are meaningless for named mutexes, it is still possible to specify them. This is not recommended, because it needlessly complicates the maintenance of rules, for example by interfering with the combination of rules that would otherwise be compatible.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -248,10 +248,10 @@
         <value>A <see cref="T:System.Type" /> object representing the <see cref="T:System.Security.AccessControl.MutexAccessRule" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRuleType%2A> property and return the type they use to represent access rules. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct access rule type to use with each security object.  
-  
+Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRuleType%2A> property and return the type they use to represent access rules. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct access rule type to use with each security object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,21 +281,21 @@
         <summary>Searches for a matching access control rule with which the new rule can be merged. If none are found, adds the new rule.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.AccessControl.MutexSecurity.AddAccessRule%2A> method searches for rules with the same user or group and the same <xref:System.Security.AccessControl.AccessControlType> as `rule`. If none are found, `rule` is added. If a matching rule is found, the rights in `rule` are merged with the existing rule.  
+The <xref:System.Security.AccessControl.MutexSecurity.AddAccessRule%2A> method searches for rules with the same user or group and the same <xref:System.Security.AccessControl.AccessControlType> as `rule`. If none are found, `rule` is added. If a matching rule is found, the rights in `rule` are merged with the existing rule.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType> rules and <xref:System.Security.AccessControl.AccessControlType> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
-  
+The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType> rules and <xref:System.Security.AccessControl.AccessControlType> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+ 
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName><xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
-  
- [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
+[!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -329,10 +329,10 @@
         <summary>Searches for an audit rule with which the new rule can be merged. If none are found, adds the new rule.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.AccessControl.MutexSecurity.AddAuditRule%2A> method searches for rules with the same user or group as `rule`. If none are found, `rule` is added. If a matching rule is found, the flags in `rule` are merged into the existing rule.  
-  
+The <xref:System.Security.AccessControl.MutexSecurity.AddAuditRule%2A> method searches for rules with the same user or group as `rule`. If none are found, `rule` is added. If a matching rule is found, the flags in `rule` are merged into the existing rule.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,13 +373,13 @@
         <returns>A <see cref="T:System.Security.AccessControl.MutexAuditRule" /> object representing the specified audit rule for the specified user. The return type of the method is the base class, <see cref="T:System.Security.AccessControl.AuditRule" />, but the return value can be cast safely to the derived class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The recommended way to create audit rules is to use the constructors of the <xref:System.Security.AccessControl.MutexAuditRule> class.  
-  
+The recommended way to create audit rules is to use the constructors of the <xref:System.Security.AccessControl.MutexAuditRule> class.  
+ 
 > [!NOTE]
 >  Although inheritance and propagation flags are meaningless for named mutexes, it is still possible to specify them. This is not recommended, because it needlessly complicates the maintenance of rules, for example by interfering with the combination of rules that would otherwise be compatible.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -416,10 +416,10 @@
         <value>A <see cref="T:System.Type" /> object representing the <see cref="T:System.Security.AccessControl.MutexAuditRule" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AuditRuleType%2A> property and return the type they use to represent audit rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct audit rule type to use with each security object.  
-  
+Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AuditRuleType%2A> property and return the type they use to represent audit rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct audit rule type to use with each security object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,26 +451,26 @@
           <see langword="true" /> if a compatible rule is found; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current <xref:System.Security.AccessControl.MutexSecurity> is searched for a rule that has the same user and the same <xref:System.Security.AccessControl.AccessControlType> value as `rule`. If no such rule is found, no action is taken, and the method returns `false`. If matching rules are found, their inheritance and compatibility flags are checked for compatibility with the flags specified in `rule`. If no compatible rule is found, no action is taken, and the method returns `false`. If a rule with compatible flags is found, the rights specified in `rule` are removed from the compatible rule, and the method returns `true`. If `rule` specifies rights not contained in the compatible rule, no action is taken with respect to those rights. If all rights are removed from the compatible rule, the entire rule is removed from the current <xref:System.Security.AccessControl.MutexSecurity> object.  
-  
+The current <xref:System.Security.AccessControl.MutexSecurity> is searched for a rule that has the same user and the same <xref:System.Security.AccessControl.AccessControlType> value as `rule`. If no such rule is found, no action is taken, and the method returns `false`. If matching rules are found, their inheritance and compatibility flags are checked for compatibility with the flags specified in `rule`. If no compatible rule is found, no action is taken, and the method returns `false`. If a rule with compatible flags is found, the rights specified in `rule` are removed from the compatible rule, and the method returns `true`. If `rule` specifies rights not contained in the compatible rule, no action is taken with respect to those rights. If all rights are removed from the compatible rule, the entire rule is removed from the current <xref:System.Security.AccessControl.MutexSecurity> object.  
+ 
 > [!IMPORTANT]
 >  Although you can specify inheritance and propagation flags for mutex access rules, by creating them with the <xref:System.Security.AccessControl.MutexSecurity.AccessRuleFactory%2A> method, this is not recommended. Inheritance and propagation have no meaning for named mutexes, and they make the maintenance of access rules more complicated.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRule%2A> method to remove rights from an <xref:System.Security.AccessControl.AccessControlType> rule in a <xref:System.Security.AccessControl.MutexSecurity> object. It also shows that other rights in `rule` are ignored.  
-  
- The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The rights allowed include <xref:System.Security.AccessControl.MutexRights>, <xref:System.Security.AccessControl.MutexRights>, and <xref:System.Security.AccessControl.MutexRights>. The example then creates a new rule for the current user, including <xref:System.Security.AccessControl.MutexRights> and <xref:System.Security.AccessControl.MutexRights> rights, and uses that rule with the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRule%2A> method to remove <xref:System.Security.AccessControl.MutexRights> from the <xref:System.Security.AccessControl.AccessControlType> rule in the <xref:System.Security.AccessControl.MutexSecurity> object. The extraneous <xref:System.Security.AccessControl.MutexRights> right in `rule` is ignored.  
-  
+The following code example demonstrates the use of the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRule%2A> method to remove rights from an <xref:System.Security.AccessControl.AccessControlType> rule in a <xref:System.Security.AccessControl.MutexSecurity> object. It also shows that other rights in `rule` are ignored.  
+ 
+The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The rights allowed include <xref:System.Security.AccessControl.MutexRights>, <xref:System.Security.AccessControl.MutexRights>, and <xref:System.Security.AccessControl.MutexRights>. The example then creates a new rule for the current user, including <xref:System.Security.AccessControl.MutexRights> and <xref:System.Security.AccessControl.MutexRights> rights, and uses that rule with the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRule%2A> method to remove <xref:System.Security.AccessControl.MutexRights> from the <xref:System.Security.AccessControl.AccessControlType> rule in the <xref:System.Security.AccessControl.MutexSecurity> object. The extraneous <xref:System.Security.AccessControl.MutexRights> right in `rule` is ignored.  
+ 
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
-  
- [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/CS/source.cs#1)]
+[!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -502,23 +502,23 @@
         <summary>Searches for all access control rules with the same user and <see cref="T:System.Security.AccessControl.AccessControlType" /> (allow or deny) as the specified rule and, if found, removes them.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current <xref:System.Security.AccessControl.MutexSecurity> object is searched for rules that have the same user and the same <xref:System.Security.AccessControl.AccessControlType> value as `rule`. Any rights specified by `rule` are ignored when performing this search. If no matching rules are found, no action is taken.  
+The current <xref:System.Security.AccessControl.MutexSecurity> object is searched for rules that have the same user and the same <xref:System.Security.AccessControl.AccessControlType> value as `rule`. Any rights specified by `rule` are ignored when performing this search. If no matching rules are found, no action is taken.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows that the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll%2A> method removes all rules that match user and <xref:System.Security.AccessControl.AccessControlType>, ignoring rights.  
-  
- The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType> rule. The example then creates a new rule that allows the current user to take ownership, and uses that rule to remove the <xref:System.Security.AccessControl.AccessControlType> rule from the <xref:System.Security.AccessControl.MutexSecurity> object.  
-  
+The following code example shows that the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll%2A> method removes all rules that match user and <xref:System.Security.AccessControl.AccessControlType>, ignoring rights.  
+ 
+The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType> rule. The example then creates a new rule that allows the current user to take ownership, and uses that rule to remove the <xref:System.Security.AccessControl.AccessControlType> rule from the <xref:System.Security.AccessControl.MutexSecurity> object.  
+ 
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
-  
- [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/CS/source.cs#1)]
+[!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -550,26 +550,26 @@
         <summary>Searches for an access control rule that exactly matches the specified rule and, if found, removes it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The rule is removed only if it exactly matches `rule` in all details, including flags. Other rules with the same user and <xref:System.Security.AccessControl.AccessControlType> are not affected.  
-  
+The rule is removed only if it exactly matches `rule` in all details, including flags. Other rules with the same user and <xref:System.Security.AccessControl.AccessControlType> are not affected.  
+ 
 > [!IMPORTANT]
 >  A rule represents one or more underlying access control entries (ACE), and these entries are split or combined as necessary when you modify the access security rules for a user. Thus, a rule might no longer exist in the specific form it had when it was added, and in that case the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method cannot remove it.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows that the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method requires an exact match in order to remove a rule, and that rules to allow and deny rights are independent of each other.  
-  
- The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType> access rule. The example then passes the original <xref:System.Security.AccessControl.AccessControlType> rule to the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method, and displays the results, showing that nothing is deleted. The example then constructs a rule that matches the <xref:System.Security.AccessControl.AccessControlType> rule in the <xref:System.Security.AccessControl.MutexSecurity> object, and successfully uses the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method to remove the rule.  
-  
+The following code example shows that the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method requires an exact match in order to remove a rule, and that rules to allow and deny rights are independent of each other.  
+ 
+The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType> access rule. The example then passes the original <xref:System.Security.AccessControl.AccessControlType> rule to the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method, and displays the results, showing that nothing is deleted. The example then constructs a rule that matches the <xref:System.Security.AccessControl.AccessControlType> rule in the <xref:System.Security.AccessControl.MutexSecurity> object, and successfully uses the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method to remove the rule.  
+ 
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
-  
- [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/CS/source.cs#1)]
+[!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -603,13 +603,13 @@
           <see langword="true" /> if a compatible rule is found; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current <xref:System.Security.AccessControl.MutexSecurity> is searched for an audit rule that has the same user as `rule`. If no such rule is found, no action is taken, and the method returns `false`. If matching rules are found, their inheritance and compatibility flags are checked for compatibility with the flags specified in `rule`. If no compatible rule is found, no action is taken, and the method returns `false`. If a rule with compatible flags is found, the rights specified in `rule` are removed from the compatible rule, and the method returns `true`. If `rule` specifies rights not contained in the compatible rule, no action is taken with respect to those rights. If all rights are removed from the compatible rule, the entire rule is removed from the current <xref:System.Security.AccessControl.MutexSecurity> object.  
-  
+The current <xref:System.Security.AccessControl.MutexSecurity> is searched for an audit rule that has the same user as `rule`. If no such rule is found, no action is taken, and the method returns `false`. If matching rules are found, their inheritance and compatibility flags are checked for compatibility with the flags specified in `rule`. If no compatible rule is found, no action is taken, and the method returns `false`. If a rule with compatible flags is found, the rights specified in `rule` are removed from the compatible rule, and the method returns `true`. If `rule` specifies rights not contained in the compatible rule, no action is taken with respect to those rights. If all rights are removed from the compatible rule, the entire rule is removed from the current <xref:System.Security.AccessControl.MutexSecurity> object.  
+ 
 > [!IMPORTANT]
 >  Although you can specify inheritance and propagation flags for mutex audit rules, by creating them with the <xref:System.Security.AccessControl.MutexSecurity.AccessRuleFactory%2A> method, this is not recommended. Inheritance and propagation have no meaning for named mutexes, and they make the maintenance of audit rules more complicated.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -641,10 +641,10 @@
         <summary>Searches for all audit rules with the same user as the specified rule and, if found, removes them.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current <xref:System.Security.AccessControl.MutexSecurity> is searched for audit rules that have the same user as `rule`. Any rights specified by `rule` are ignored when performing this search. All matching rules are removed. If no matching rules are found, no action is taken.  
-  
+The current <xref:System.Security.AccessControl.MutexSecurity> is searched for audit rules that have the same user as `rule`. Any rights specified by `rule` are ignored when performing this search. All matching rules are removed. If no matching rules are found, no action is taken.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -676,13 +676,13 @@
         <summary>Searches for an audit rule that exactly matches the specified rule and, if found, removes it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The rule is removed only if it exactly matches `rule` in all details, including flags. Other audit rules for the same user are not affected.  
-  
+The rule is removed only if it exactly matches `rule` in all details, including flags. Other audit rules for the same user are not affected.  
+ 
 > [!IMPORTANT]
 >  A rule represents one or more underlying access control entries (ACE), and these entries are split or combined as necessary when you modify the audit security rules for a user. Thus, a rule might no longer exist in the specific form it had when it was added, and in that case the <xref:System.Security.AccessControl.MutexSecurity.RemoveAuditRuleSpecific%2A> method cannot remove it.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -714,23 +714,23 @@
         <summary>Removes all access control rules with the same user as the specified rule, regardless of <see cref="T:System.Security.AccessControl.AccessControlType" />, and then adds the specified rule.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there are no access rules whose user matches the specified rule, `rule` is added.  
+If there are no access rules whose user matches the specified rule, `rule` is added.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how the <xref:System.Security.AccessControl.MutexSecurity.ResetAccessRule%2A> method replaces all rules for the matching user with the rule specified for the match.  
-  
- The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.MutexSecurity.ResetAccessRule%2A> method to replace both of the existing rules with the new rule.  
-  
+The following code example shows how the <xref:System.Security.AccessControl.MutexSecurity.ResetAccessRule%2A> method replaces all rules for the matching user with the rule specified for the match.  
+ 
+The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.MutexSecurity.ResetAccessRule%2A> method to replace both of the existing rules with the new rule.  
+ 
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
-  
- [!code-csharp[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/CS/source.cs#1)]
+[!code-vb[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -762,25 +762,25 @@
         <summary>Removes all access control rules with the same user and <see cref="T:System.Security.AccessControl.AccessControlType" /> (allow or deny) as the specified rule, and then adds the specified rule.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified rule has <xref:System.Security.AccessControl.AccessControlType>, the effect of this method is to remove all <xref:System.Security.AccessControl.AccessControlType> rules for the specified user, replacing them with the specified rule. If the specified rule has <xref:System.Security.AccessControl.AccessControlType>, all <xref:System.Security.AccessControl.AccessControlType> rules for the specified user are replaced with the specified rule.  
+If the specified rule has <xref:System.Security.AccessControl.AccessControlType>, the effect of this method is to remove all <xref:System.Security.AccessControl.AccessControlType> rules for the specified user, replacing them with the specified rule. If the specified rule has <xref:System.Security.AccessControl.AccessControlType>, all <xref:System.Security.AccessControl.AccessControlType> rules for the specified user are replaced with the specified rule.  
+ 
+If there are no rules whose user and <xref:System.Security.AccessControl.AccessControlType> match the specified rule, `rule` is added.  
+ 
   
- If there are no rules whose user and <xref:System.Security.AccessControl.AccessControlType> match the specified rule, `rule` is added.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how the <xref:System.Security.AccessControl.MutexSecurity.SetAccessRule%2A> method removes all rules that match both the user and the <xref:System.Security.AccessControl.AccessControlType> of `rule`, replacing them with `rule`.  
-  
- The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.MutexSecurity.SetAccessRule%2A> method to replace the existing Allow rule with the new rule. The rule that denies access is not affected.  
-  
+The following code example shows how the <xref:System.Security.AccessControl.MutexSecurity.SetAccessRule%2A> method removes all rules that match both the user and the <xref:System.Security.AccessControl.AccessControlType> of `rule`, replacing them with `rule`.  
+ 
+The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.MutexSecurity.SetAccessRule%2A> method to replace the existing Allow rule with the new rule. The rule that denies access is not affected.  
+ 
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
-  
- [!code-csharp[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/CS/source.cs#1)]
+[!code-vb[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -812,10 +812,10 @@
         <summary>Removes all audit rules with the same user as the specified rule, regardless of the <see cref="T:System.Security.AccessControl.AuditFlags" /> value, and then adds the specified rule.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there are no audit rules whose user matches the specified rule, `rule` is added.  
-  
+If there are no audit rules whose user matches the specified rule, `rule` is added.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

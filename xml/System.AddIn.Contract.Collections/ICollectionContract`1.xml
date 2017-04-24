@@ -23,10 +23,10 @@
     <summary>Represents a generic collection of <see cref="T:System.AddIn.Contract.IContract" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.AddIn.Contract.Collections.ICollectionContract%601> can be dynamically resized.  
-  
+An <xref:System.AddIn.Contract.Collections.ICollectionContract%601> can be dynamically resized.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Adds an <see cref="T:System.AddIn.Contract.IContract" /> to the <see cref="T:System.AddIn.Contract.Collections.ICollectionContract`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether an <xref:System.AddIn.Contract.Collections.ICollectionContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
-  
+To determine whether an <xref:System.AddIn.Contract.Collections.ICollectionContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.AddIn.Contract.Collections.ICollectionContract`1" /> is read-only.</exception>
@@ -77,10 +77,10 @@
         <summary>Removes all elements from the <see cref="T:System.AddIn.Contract.Collections.ICollectionContract`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether an <xref:System.AddIn.Contract.Collections.ICollectionContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
-  
+To determine whether an <xref:System.AddIn.Contract.Collections.ICollectionContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.AddIn.Contract.Collections.ICollectionContract`1" /> is read-only.</exception>
@@ -207,10 +207,10 @@
           <see langword="true" /> if <paramref name="item" /> is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> was not found in the <see cref="T:System.AddIn.Contract.Collections.ICollectionContract`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether an <xref:System.AddIn.Contract.Collections.ICollectionContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
-  
+To determine whether an <xref:System.AddIn.Contract.Collections.ICollectionContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.AddIn.Contract.Collections.ICollectionContract`1" /> is read-only.</exception>

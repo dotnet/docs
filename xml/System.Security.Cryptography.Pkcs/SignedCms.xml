@@ -14,15 +14,15 @@
     <summary>The <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class enables signing and verifying of CMS/PKCS #7 messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Cryptographic Message Syntax RFC specifies the following MIME types and file name extensions for CMS/PKCS #7 messages with these content types.  
-  
+The Cryptographic Message Syntax RFC specifies the following MIME types and file name extensions for CMS/PKCS #7 messages with these content types.  
+ 
 |Content type|MIME type|Extension|  
 |------------------|---------------|---------------|  
 |envelopedData|application/pkcs7-mime|.p7m|  
 |signedData|application/pkcs7-signature|.p7s.p7c|  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,19 +41,19 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Pkcs.SignedCms> class has the following default property values.  
-  
+The <xref:System.Security.Cryptography.Pkcs.SignedCms> class has the following default property values.  
+ 
 |Property|Default value|  
 |--------------|-------------------|  
 |<xref:System.Security.Cryptography.Pkcs.SignedCms.ContentInfo%2A>|1.2.840.113549.1.7.1 (data)Length: zero|  
 |<xref:System.Security.Cryptography.Pkcs.SignedCms.Detached%2A>|Detached state: `false` The content that is signed is included in the CMS/PKCS #7 message along with the signature information.|  
-  
- The default <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType> for signers is SubjectIdentifierType.IssuerAndSerialNumber.  
-  
- If the detached state is `false` (the default), the signed content is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This may be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
-  
+ 
+The default <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType> for signers is SubjectIdentifierType.IssuerAndSerialNumber.  
+ 
+If the detached state is `false` (the default), the signed content is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This may be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -76,12 +76,12 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class by using the specified content information as the inner content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.SignedCms.%23ctor>.  
-  
- If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This might be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
-  
+For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.SignedCms.%23ctor>.  
+ 
+If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This might be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -104,12 +104,12 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class by using the specified subject identifier type as the default subject identifier type for signers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.SignedCms.%23ctor>.  
-  
- If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This might be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
-  
+For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.SignedCms.%23ctor>.  
+ 
+If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This might be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -134,12 +134,12 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class by using the specified content information as the inner content and by using the detached state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.SignedCms.%23ctor>.  
-  
- If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This might be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
-  
+For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.SignedCms.%23ctor>.  
+ 
+If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This might be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -164,12 +164,12 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class by using the specified subject identifier type as the default subject identifier type for signers and content information as the inner content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.SignedCms.%23ctor>.  
-  
- If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This might be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
-  
+For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.SignedCms.%23ctor>.  
+ 
+If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This might be useful in an archiving application that archives message content whether the message sender can be verified for authenticity.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -196,10 +196,10 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class by using the specified subject identifier type as the default subject identifier type for signers, the content information as the inner content, and by using the detached state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This may be useful in an archiving application that archives message content whether or not the message sender can be verified for authenticity.  
-  
+If the detached state is `false` (the default), the content that is signed is included in the CMS/PKCS #7 message along with the signature information. If the detached state is `true`, clients that cannot decode S/MIME messages can still see the content of the message if it is sent separately. This may be useful in an archiving application that archives message content whether or not the message sender can be verified for authenticity.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -240,10 +240,10 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.CheckHash" /> method verifies the data integrity of the CMS/PKCS #7 message. <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.CheckHash" /> is a specialized method used in specific security infrastructure applications that only wish to check the hash of the CMS message, rather than perform a full digital signature verification. <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.CheckHash" /> does not authenticate the author nor sender of the message because this method does not involve verifying a digital signature. For general-purpose checking of the integrity and authenticity of a CMS/PKCS #7 message, use the <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature(System.Boolean)" /> or <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.Boolean)" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not provide authentication of the CMS/PKCS #7 message.  
-  
+This method does not provide authentication of the CMS/PKCS #7 message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
@@ -271,25 +271,25 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature(System.Boolean)" /> method verifies the digital signatures on the signed CMS/PKCS #7 message and, optionally, validates the signers' certificates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method verifies all signatures, including countersignatures, on the CMS/PKCS #7 message. If there are signed attributes included with the message, these attributes are also verified. If the option is chosen to validate certificates, the entire included portion of the certificate chain is validated.  
+This method verifies all signatures, including countersignatures, on the CMS/PKCS #7 message. If there are signed attributes included with the message, these attributes are also verified. If the option is chosen to validate certificates, the entire included portion of the certificate chain is validated.  
+ 
+This method throws an exception if the verification of a digital signature fails or any validation requirements are not met.  
+ 
   
- This method throws an exception if the verification of a digital signature fails or any validation requirements are not met.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows the placement of <xref:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature%28System.Boolean%29> among the steps necessary to verify the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is not detached. The message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#1)]
- [!code-vb[mpkcs_SignedCMS#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#1)]  
-  
- The following example shows the placement of <xref:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature%28System.Boolean%29> among the steps necessary to verify the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is detached, so the message content must verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#2](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#2)]
- [!code-vb[mpkcs_SignedCMS#2](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#2)]  
-  
+The following example shows the placement of <xref:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature%28System.Boolean%29> among the steps necessary to verify the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is not detached. The message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#1)]
+[!code-vb[mpkcs_SignedCMS#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#1)]  
+ 
+The following example shows the placement of <xref:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature%28System.Boolean%29> among the steps necessary to verify the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is detached, so the message content must verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#2](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#2)]
+[!code-vb[mpkcs_SignedCMS#2](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -321,25 +321,25 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.Boolean)" /> method verifies the digital signatures on the signed CMS/PKCS #7 message by using the specified collection of certificates and, optionally, validates the signers' certificates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method verifies all signatures, including countersignatures, on the CMS/PKCS #7 message. If there are signed attributes included with the message, these attributes are also verified. If the option is chosen to validate certificates, the entire included portion of the certificate chain is validated.  
+This method verifies all signatures, including countersignatures, on the CMS/PKCS #7 message. If there are signed attributes included with the message, these attributes are also verified. If the option is chosen to validate certificates, the entire included portion of the certificate chain is validated.  
+ 
+This method throws an exception if the verification of a digital signature fails or any validation requirements are not met.  
+ 
   
- This method throws an exception if the verification of a digital signature fails or any validation requirements are not met.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows the placement of <xref:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature%28System.Security.Cryptography.X509Certificates.X509Certificate2Collection%2CSystem.Boolean%29> among the steps necessary to verify the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is not detached, so the message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#1)]
- [!code-vb[mpkcs_SignedCMS#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#1)]  
-  
- The following example shows the placement of <xref:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature%28System.Security.Cryptography.X509Certificates.X509Certificate2Collection%2CSystem.Boolean%29> among the steps necessary to verify the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is detached, so the message content must be verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#2](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#2)]
- [!code-vb[mpkcs_SignedCMS#2](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#2)]  
-  
+The following example shows the placement of <xref:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature%28System.Security.Cryptography.X509Certificates.X509Certificate2Collection%2CSystem.Boolean%29> among the steps necessary to verify the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is not detached, so the message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#1)]
+[!code-vb[mpkcs_SignedCMS#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#1)]  
+ 
+The following example shows the placement of <xref:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature%28System.Security.Cryptography.X509Certificates.X509Certificate2Collection%2CSystem.Boolean%29> among the steps necessary to verify the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is detached, so the message content must be verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#2](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#2)]
+[!code-vb[mpkcs_SignedCMS#2](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -364,44 +364,44 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature" /> method prompts the user to select a signing certificate, creates a signature, and adds the signature to the CMS/PKCS #7 message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=fullName> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
-  
- Signers whose certificates meet the following conditions will be displayed in the list:  
-  
+This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=fullName> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
+ 
+Signers whose certificates meet the following conditions will be displayed in the list:  
+ 
 -   The certificate has an associated private key.  
-  
+ 
 -   The certificate is within its validity period.  
-  
+ 
 -   The certificate has no key usage or a key usage that supports digital signatures or nonrepudiation.  
-  
- Signer certificates are chosen from the My store.  
-  
+ 
+Signer certificates are chosen from the My store.  
+ 
 ## .NET Framework Security  
- The following permissions are required to display the user interface:  
-  
+The following permissions are required to display the user interface:  
+ 
 -   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
-  
- The following permissions are required to access the signature key:  
-  
+ 
+The following permissions are required to access the signature key:  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the steps to compute a signature on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message with message content that is not detached. In this case, the message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#3](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#3)]
- [!code-vb[mpkcs_SignedCMS#3](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#3)]  
-  
- The following example shows the steps to compute a signature on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message with message content that is detached. In this case, the message content must be verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#4](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#4)]
- [!code-vb[mpkcs_SignedCMS#4](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#4)]  
-  
+The following example shows the steps to compute a signature on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message with message content that is not detached. In this case, the message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#3](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#3)]
+[!code-vb[mpkcs_SignedCMS#3](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#3)]  
+ 
+The following example shows the steps to compute a signature on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message with message content that is detached. In this case, the message content must be verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#4](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#4)]
+[!code-vb[mpkcs_SignedCMS#4](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -428,29 +428,29 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature(System.Security.Cryptography.Pkcs.CmsSigner)" /> method creates a signature using the specified signer and adds the signature to the CMS/PKCS #7 message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- The following permissions are required to access the signature key:  
-  
+The following permissions are required to access the signature key:  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the steps to compute a signature on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message with message content that is not detached. In this case, the message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#3](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#3)]
- [!code-vb[mpkcs_SignedCMS#3](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#3)]  
-  
- The following example shows the steps to compute a signature on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message with message content that is detached. In this case, the message content must be verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#4](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#4)]
- [!code-vb[mpkcs_SignedCMS#4](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#4)]  
-  
+The following example shows the steps to compute a signature on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message with message content that is not detached. In this case, the message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#3](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#3)]
+[!code-vb[mpkcs_SignedCMS#3](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#3)]  
+ 
+The following example shows the steps to compute a signature on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message with message content that is detached. In this case, the message content must be verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#4](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#4)]
+[!code-vb[mpkcs_SignedCMS#4](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -480,20 +480,20 @@
         <summary>Creates a signature using the specified signer and adds the signature to the CMS/PKCS #7 message. If the value of the silent parameter is <see langword="false" /> and the <see cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificate" /> property of the <see cref="T:System.Security.Cryptography.Pkcs.CmsSigner" /> object specified by the signer parameter is not set to a valid certificate, this method prompts the user to select a signing certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- The following permissions are required to display the user interface:  
-  
+The following permissions are required to display the user interface:  
+ 
 -   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
-  
- The following permissions are required to access the signature key:  
-  
+ 
+The following permissions are required to access the signature key:  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -539,23 +539,23 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignedCms.Decode(System.Byte[])" /> method decodes an encoded <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> message. Upon successful decoding, the decoded information can be retrieved from the properties of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method resets all member variables of the object by using the information obtained from successful decoding.  
+This method resets all member variables of the object by using the information obtained from successful decoding.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the placement of the <xref:System.Security.Cryptography.Pkcs.SignedCms.Decode%2A> method in the process of verifying the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is not detached, so the message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#1)]
- [!code-vb[mpkcs_SignedCMS#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#1)]  
-  
- The following example shows the placement of the <xref:System.Security.Cryptography.Pkcs.SignedCms.Decode%2A> method in the process of verifying the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is detached, so the message content must be verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
-  
- [!code-csharp[mpkcs_SignedCMS#2](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#2)]
- [!code-vb[mpkcs_SignedCMS#2](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#2)]  
-  
+The following example shows the placement of the <xref:System.Security.Cryptography.Pkcs.SignedCms.Decode%2A> method in the process of verifying the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is not detached, so the message content is included in the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#1)]
+[!code-vb[mpkcs_SignedCMS#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#1)]  
+ 
+The following example shows the placement of the <xref:System.Security.Cryptography.Pkcs.SignedCms.Decode%2A> method in the process of verifying the signatures on a <xref:System.Security.Cryptography.Pkcs.SignedCms> message. In this example, the message content is detached, so the message content must be verified independently of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message.  
+ 
+[!code-csharp[mpkcs_SignedCMS#2](~/samples/snippets/csharp/VS_Snippets_WindowsServer/mpkcs_SignedCMS/cs/Program.cs#2)]
+[!code-vb[mpkcs_SignedCMS#2](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/mpkcs_SignedCMS/vb/Program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
@@ -693,10 +693,10 @@
         <value>An int value that represents the CMS/PKCS #7 message version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The version determines whether the message is a PKCS #7 message or a Cryptographic Message Syntax (CMS) message. CMS is a newer superset of PKCS #7.  
-  
+The version determines whether the message is a PKCS #7 message or a Cryptographic Message Syntax (CMS) message. CMS is a newer superset of PKCS #7.  
+ 
  ]]></format>
         </remarks>
       </Docs>

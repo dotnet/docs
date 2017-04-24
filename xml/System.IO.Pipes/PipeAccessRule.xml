@@ -19,14 +19,14 @@
     <summary>Represents an abstraction of an access control entry (ACE) that defines an access rule for a pipe.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Access control rules define user account rights that determine which actions are allowed or disallowed on computers that are running Microsoft Windows.  
-  
- The <xref:System.IO.Pipes.PipeAccessRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to allow or deny that right.  This class can also specify how access rules are propagated to child objects.  
-  
- Use the <xref:System.IO.Pipes.PipeAccessRule> class to create a new access rule.  You can persist the rule using the <xref:System.IO.Pipes.PipeSecurity> class.  
-  
+Access control rules define user account rights that determine which actions are allowed or disallowed on computers that are running Microsoft Windows.  
+ 
+The <xref:System.IO.Pipes.PipeAccessRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to allow or deny that right.  This class can also specify how access rules are propagated to child objects.  
+ 
+Use the <xref:System.IO.Pipes.PipeAccessRule> class to create a new access rule.  You can persist the rule using the <xref:System.IO.Pipes.PipeSecurity> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.PipeAccessRule" /> class with the specified identity, pipe access rights, and access control type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.IO.Pipes.PipeSecurity> class. Access control rules define user account rights that determine which actions are allowed or disallowed on computers that are running Microsoft Windows.  
-  
+Use this constructor to create an access control rule that you can persist using the <xref:System.IO.Pipes.PipeSecurity> class. Access control rules define user account rights that determine which actions are allowed or disallowed on computers that are running Microsoft Windows.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,10 +91,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.PipeAccessRule" /> class with the specified identity, pipe access rights, and access control type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.IO.Pipes.PipeSecurity> class. Access control rules define user account rights that determine which actions are allowed or disallowed on computers that are running Microsoft Windows.  
-  
+Use this constructor to create an access control rule that you can persist using the <xref:System.IO.Pipes.PipeSecurity> class. Access control rules define user account rights that determine which actions are allowed or disallowed on computers that are running Microsoft Windows.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,14 +14,14 @@
     <summary>Represents a wsa:EndpointReference element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The wsa:EndpointReference element can be used in wst:OnBehalfOf and wp:AppliesTo elements inside of a wsp:RequestSecurityToken element to specify an endpoint reference.  
-  
- Supports either the WS-Addressing standard schema namespace (http://schemas.xmlsoap.org/ws/2004/08/addressing) or the WS-Addressing 1.0 schema namespace (http://www.w3.org/2005/08/addressing) when reading. On write only the WS-Addressing 1.0 namespace (http://www.w3.org/2005/08/addressing) is supported.  
-  
- For more information about the wsa:EndpointReference element, see the Web Services Addressing – Core specification. For more information about its use in WS-Trust protocols, see the version of the WS-Trust specification that applies to your scenario.  
-  
+The wsa:EndpointReference element can be used in wst:OnBehalfOf and wp:AppliesTo elements inside of a wsp:RequestSecurityToken element to specify an endpoint reference.  
+ 
+Supports either the WS-Addressing standard schema namespace (http://schemas.xmlsoap.org/ws/2004/08/addressing) or the WS-Addressing 1.0 schema namespace (http://www.w3.org/2005/08/addressing) when reading. On write only the WS-Addressing 1.0 namespace (http://www.w3.org/2005/08/addressing) is supported.  
+ 
+For more information about the wsa:EndpointReference element, see the Web Services Addressing – Core specification. For more information about its use in WS-Trust protocols, see the version of the WS-Trust specification that applies to your scenario.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,12 +65,12 @@
         <value>A collection of the XML elements that are contained in the endpoint reference.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection contains all of the child elements of the wsa:EndpointReference element except the wsa:Address element. The collection is populated by the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom%2A> method.  
-  
- The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property contains the value of the wsa:Address element.  
-  
+The collection contains all of the child elements of the wsa:EndpointReference element except the wsa:Address element. The collection is populated by the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom%2A> method.  
+ 
+The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property contains the value of the wsa:Address element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <returns>The endpoint reference read from the XML dictionary reader or <see langword="null" /> if the wsa:EndpointReference element cannot be read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom%2A> overload topic for details.  
-  
+See the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom%2A> overload topic for details.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <returns>The endpoint reference read from the XML dictionary reader or <see langword="null" /> if the wsa:EndpointReference element cannot be read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom%2A> overload topic for details.  
-  
+See the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom%2A> overload topic for details.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <value>The address of the endpoint reference.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the contents of the wsa:Address child element of the wsa:EndpointReference element.  
-  
+Represents the contents of the wsa:Address child element of the wsa:EndpointReference element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
         <summary>Writes the <see cref="T:System.IdentityModel.Protocols.WSTrust.EndpointReference" /> as a &lt;wsa:EndpointReference&gt; element to the specified XML writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only supports writing the WS-Addressing 1.0 standard schema namespace (http://www.w3.org/2005/08/addressing). The wsa:Address element is written first with the value of the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property, then the other elements specified in the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection are written.  
-  
+Only supports writing the WS-Addressing 1.0 standard schema namespace (http://www.w3.org/2005/08/addressing). The wsa:Address element is written first with the value of the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property, then the other elements specified in the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection are written.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
         <summary>Reads an wsa:EndpointReference element from the specified reader.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Reads the contents of the wsa:EndpointReference element and returns an <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> object. The WS-Addressing namespace can be either the WS-Addressing standard schema (http://schemas.xmlsoap.org/ws/2004/08/addressing) or the WS-Addressing 1.0 standard schema (http://www.w3.org/2005/08/addressing). The wsa:Address element must be the first child element of the wsa:EndpointReference element. The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property in the returned <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> is set to the URI specified by the wsa:Address element. All other child elements are added to the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection.  
-  
+Reads the contents of the wsa:EndpointReference element and returns an <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> object. The WS-Addressing namespace can be either the WS-Addressing standard schema (http://schemas.xmlsoap.org/ws/2004/08/addressing) or the WS-Addressing 1.0 standard schema (http://www.w3.org/2005/08/addressing). The wsa:Address element must be the first child element of the wsa:EndpointReference element. The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property in the returned <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> is set to the URI specified by the wsa:Address element. All other child elements are added to the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult" /> class by using a <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method creates a copy of an exiting <xref:System.ComponentModel.DataAnnotations.ValidationResult> object.  
-  
+The method creates a copy of an exiting <xref:System.ComponentModel.DataAnnotations.ValidationResult> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>The error message for the validation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set the <xref:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage%2A> property to `null`.  
-  
+You can set the <xref:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage%2A> property to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <value>The collection of member names that indicate which fields have validation errors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection can be empty, but it will never be `null`.  
-  
+The collection can be empty, but it will never be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

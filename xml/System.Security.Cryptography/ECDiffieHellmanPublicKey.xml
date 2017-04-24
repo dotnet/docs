@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanPublicKey" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by classes that derive from the <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey> class. The <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> class is the only currently supported implementation.  
-  
+This constructor is called by classes that derive from the <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey> class. The <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> class is the only currently supported implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -93,12 +93,12 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellman" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose%2A> when you are finished using the <xref:System.Security.Cryptography.ECDiffieHellman>. The <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose%2A> method leaves the <xref:System.Security.Cryptography.ECDiffieHellman> in an unusable state. After calling <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose%2A>, you must release all references to the <xref:System.Security.Cryptography.ECDiffieHellman> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.ECDiffieHellman> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose%2A> when you are finished using the <xref:System.Security.Cryptography.ECDiffieHellman>. The <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose%2A> method leaves the <xref:System.Security.Cryptography.ECDiffieHellman> in an unusable state. After calling <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose%2A>, you must release all references to the <xref:System.Security.Cryptography.ECDiffieHellman> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.ECDiffieHellman> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,20 +129,20 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.ECDiffieHellman" /> class and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method executes in two distinct scenarios:  
-  
+This method executes in two distinct scenarios:  
+ 
 -   If `disposing` equals `true`, the method has been called directly or indirectly by a user's code. Managed and unmanaged resources can be disposed.  
-  
+ 
 -   If `disposing` equals `false`, the method has been called by the runtime from inside the finalizer, and you should not reference managed resources. Only unmanaged resources can be disposed.  
-  
- If you need to provide cleanup code for managed and unmanaged resources that an object created, you should override this method.  
-  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+ 
+If you need to provide cleanup code for managed and unmanaged resources that an object created, you should override this method.  
+ 
+This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

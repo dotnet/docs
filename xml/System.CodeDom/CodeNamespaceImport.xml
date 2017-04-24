@@ -22,24 +22,24 @@
     <summary>Represents a namespace import directive that indicates a namespace to use.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeNamespaceImport> can be used to represent a namespace import directive.  
-  
- In most languages, a namespace import directive causes visibility of the types within the imported namespaces to code that references types in the imported namespaces.  
-  
+<xref:System.CodeDom.CodeNamespaceImport> can be used to represent a namespace import directive.  
+ 
+In most languages, a namespace import directive causes visibility of the types within the imported namespaces to code that references types in the imported namespaces.  
+ 
 > [!NOTE]
 >  Use fully qualified type references to avoid potential ambiguity.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code demonstrates use of a <xref:System.CodeDom.CodeNamespaceImport> to import the <xref:System.CodeDom.CodeNamespaceImport> namespace:  
-  
- [!code-cpp[CodeNamespaceImportExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeNamespaceImportExample/CPP/codenamespaceimportexample.cpp#2)]
- [!code-csharp[CodeNamespaceImportExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeNamespaceImportExample/CS/codenamespaceimportexample.cs#2)]
- [!code-vb[CodeNamespaceImportExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeNamespaceImportExample/VB/codenamespaceimportexample.vb#2)]  
-  
+The following example code demonstrates use of a <xref:System.CodeDom.CodeNamespaceImport> to import the <xref:System.CodeDom.CodeNamespaceImport> namespace:  
+ 
+[!code-cpp[CodeNamespaceImportExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeNamespaceImportExample/CPP/codenamespaceimportexample.cpp#2)]
+[!code-csharp[CodeNamespaceImportExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeNamespaceImportExample/CS/codenamespaceimportexample.cs#2)]
+[!code-vb[CodeNamespaceImportExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeNamespaceImportExample/VB/codenamespaceimportexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

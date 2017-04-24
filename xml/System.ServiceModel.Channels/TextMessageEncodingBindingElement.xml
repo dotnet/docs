@@ -22,18 +22,18 @@
     <summary>The binding element that specifies the character encoding and message versioning used for text-based SOAP messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
-  
- The text encoding represented by the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> is the most interoperable, but the least efficient encoder for XML messages. Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is not efficient.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the .NET Binary Format for XML, see <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the MTOM message encoding, see <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] how to implement a custom message encoder, use the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class.  
-  
+Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
+ 
+The text encoding represented by the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> is the most interoperable, but the least efficient encoder for XML messages. Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is not efficient.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the .NET Binary Format for XML, see <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the MTOM message encoding, see <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] how to implement a custom message encoder, use the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.TextMessageEncodingBindingElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.ServiceModel.Channels.MessageVersion> for this constructor is the version of WS-Addressing 1.0 and SOAP 1.2. The default text encoding is the UTF-8 format.  
-  
+The default <xref:System.ServiceModel.Channels.MessageVersion> for this constructor is the version of WS-Addressing 1.0 and SOAP 1.2. The default text encoding is the UTF-8 format.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
         <returns>A <see cref="T:System.ServiceModel.Channels.TextMessageEncodingBindingElement" /> object with property values equal to those of the current element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This creates a complete copy of the current binding element object tree, also called a deep clone. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. (This is called copying the entire object graph.) Returning a deep clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a deep clone is not returned, the run-time behavior is undefined. A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
-  
+This creates a complete copy of the current binding element object tree, also called a deep clone. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. (This is called copying the entire object graph.) Returning a deep clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a deep clone is not returned, the run-time behavior is undefined. A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.MessageEncoderFactory" /> that this factory creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The<xref:System.ServiceModel.Channels.MessageEncoder> objects that the factory produces can read messages from a stream and write them to a stream for specific types of message encoding.  
-  
+The<xref:System.ServiceModel.Channels.MessageEncoder> objects that the factory produces can read messages from a stream and write them to a stream for specific types of message encoding.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,10 +260,10 @@
         <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this to request a typed object for setting properties or getting status from the appropriate layer in the binding element stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no binding element layer supported the requested object, then the method returns `null`.  
-  
+Use this to request a typed object for setting properties or getting status from the appropriate layer in the binding element stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no binding element layer supported the requested object, then the method returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <value>The number of readers in the pool. The default value is 64 readers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of incoming messages because it is able to use readers from the pool that have already been created instead of creating new ones.  
-  
+Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of incoming messages because it is able to use readers from the pool that have already been created instead of creating new ones.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than or equal to zero.</exception>
@@ -313,10 +313,10 @@
         <value>The maximum number of writers to be kept in the pool. The default value is 16 writers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of outgoing messages because it is able to use writers from the pool that have already been created instead of creating new ones.  
-  
+Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of outgoing messages because it is able to use writers from the pool that have already been created instead of creating new ones.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than or equal to zero.</exception>
@@ -340,10 +340,10 @@
         <value>The <see cref="T:System.ServiceModel.Channels.MessageVersion" /> that is used to format messages. The default value is <see cref="P:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressing10" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.ServiceModel.Channels.MessageVersion> for this constructor is the version of WS-Addressing 1.0 and SOAP 1.2.  
-  
+The default <xref:System.ServiceModel.Channels.MessageVersion> for this constructor is the version of WS-Addressing 1.0 and SOAP 1.2.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>
@@ -367,20 +367,20 @@
         <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints on SOAP messages exchanged. The default values for these constraints are provided in the following Remarks section.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complexity constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values are as follows:  
-  
+The complexity constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values are as follows:  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A> = 32  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A> = 8192  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A> = 16384  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A> = 4096  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A> = 16384  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,10 +482,10 @@
         <summary>Generates WSDL contract information from encoding policies contained in the binding element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29> method, not by <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportContract%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29>, which is implemented but empty.  
-  
+The <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29> method, not by <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportContract%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29>, which is implemented but empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -512,10 +512,10 @@
         <summary>Generates WSDL contract information from encoding policies contained in the binding element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29>method.  
-  
+The <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29>method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -540,10 +540,10 @@
         <value>The <see cref="T:System.Text.Encoding" /> that is used to format the characters in the text message. The default text encoding is the UTF-8 format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When specifying a content type such as “utf-16” an XML declaration is required in the message. Alternatively you can specify either “utf-16LE” or “utf-16BE” and an XML declaration is not required.  
-  
+When specifying a content type such as “utf-16” an XML declaration is required in the message. Alternatively you can specify either “utf-16LE” or “utf-16BE” and an XML declaration is not required.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>

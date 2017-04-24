@@ -18,12 +18,12 @@
     <summary>Encapsulates a <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Design.ToolboxItemContainer> is a simple class that encapsulates a <xref:System.Drawing.Design.ToolboxItem> for efficiency. By having a single class that is always loaded, you can defer the loading of the <xref:System.Drawing.Design.ToolboxItem> until it is needed. Because new classes can be derived from <xref:System.Drawing.Design.ToolboxItem>, you could load a <xref:System.Drawing.Design.ToolboxItem> that could, in turn, load an assembly that is not already in memory. For a large collection of <xref:System.Drawing.Design.ToolboxItem> objects, this could cause a large number of assemblies to be loaded, which decreases performance. Instead, the toolbox service deals only with <xref:System.Drawing.Design.ToolboxItemContainer> objects and retrieves their contained <xref:System.Drawing.Design.ToolboxItem> only when necessary.  
-  
- The <xref:System.Drawing.Design.ToolboxItemContainer> is designed to hold any cached data from the <xref:System.Drawing.Design.ToolboxItem>. The default implementation only holds the filter of the <xref:System.Drawing.Design.ToolboxItem>, but deriving classes may choose to cache the name, image, and other information. <xref:System.Drawing.Design.ToolboxItemContainer> objects support two forms of serialization: they can be serialized through standard runtime serialization, and they can also load and save themselves from a <xref:System.Windows.Forms.IDataObject?displayProperty=fullName>. The former provides a very easy way to save <xref:System.Drawing.Design.ToolboxItemContainer> objects to a persistent storage. The latter provides a way to integrate <xref:System.Drawing.Design.ToolboxItemContainer> objects with mixed data storage formats.  
-  
+<xref:System.Drawing.Design.ToolboxItemContainer> is a simple class that encapsulates a <xref:System.Drawing.Design.ToolboxItem> for efficiency. By having a single class that is always loaded, you can defer the loading of the <xref:System.Drawing.Design.ToolboxItem> until it is needed. Because new classes can be derived from <xref:System.Drawing.Design.ToolboxItem>, you could load a <xref:System.Drawing.Design.ToolboxItem> that could, in turn, load an assembly that is not already in memory. For a large collection of <xref:System.Drawing.Design.ToolboxItem> objects, this could cause a large number of assemblies to be loaded, which decreases performance. Instead, the toolbox service deals only with <xref:System.Drawing.Design.ToolboxItemContainer> objects and retrieves their contained <xref:System.Drawing.Design.ToolboxItem> only when necessary.  
+ 
+The <xref:System.Drawing.Design.ToolboxItemContainer> is designed to hold any cached data from the <xref:System.Drawing.Design.ToolboxItem>. The default implementation only holds the filter of the <xref:System.Drawing.Design.ToolboxItem>, but deriving classes may choose to cache the name, image, and other information. <xref:System.Drawing.Design.ToolboxItemContainer> objects support two forms of serialization: they can be serialized through standard runtime serialization, and they can also load and save themselves from a <xref:System.Windows.Forms.IDataObject?displayProperty=fullName>. The former provides a very easy way to save <xref:System.Drawing.Design.ToolboxItemContainer> objects to a persistent storage. The latter provides a way to integrate <xref:System.Drawing.Design.ToolboxItemContainer> objects with mixed data storage formats.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> class from a <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The container’s cache of information is filled by accessing properties on the <xref:System.Drawing.Design.ToolboxItem>.  
-  
+The container’s cache of information is filled by accessing properties on the <xref:System.Drawing.Design.ToolboxItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> class from a <see cref="T:System.Windows.Forms.IDataObject" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `data` parameter may contain data provided by the <xref:System.Drawing.Design.ToolboxItemContainer> class. It may contain data that can be read by one of the <xref:System.Drawing.Design.ToolboxItem> creators that have been supplied by the user. It may also be data with a clipboard format that has a <xref:System.Drawing.Design.ToolboxItem> creator assigned to it. In this case, the <xref:System.Drawing.Design.ToolboxItem> is created on demand.  
-  
+The `data` parameter may contain data provided by the <xref:System.Drawing.Design.ToolboxItemContainer> class. It may contain data that can be read by one of the <xref:System.Drawing.Design.ToolboxItem> creators that have been supplied by the user. It may also be data with a clipboard format that has a <xref:System.Drawing.Design.ToolboxItem> creator assigned to it. In this case, the <xref:System.Drawing.Design.ToolboxItem> is created on demand.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -149,12 +149,12 @@
         <returns>A collection of <see cref="T:System.ComponentModel.ToolboxItemFilterAttribute" /> objects. This never returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `creators` parameter is a collection of <xref:System.Drawing.Design.ToolboxItemCreator> objects that represent any custom <xref:System.Drawing.Design.ToolboxItem> creators that should be included when the filter is generated. Custom creators may contribute to the filters. This parameter can be `null` if no creators are needed.  
-  
- The types stored in a <xref:System.Drawing.Design.ToolboxItem> may have a filter associated with them. Filters can be used to restrict the tools that can be placed on designers.  
-  
+The `creators` parameter is a collection of <xref:System.Drawing.Design.ToolboxItemCreator> objects that represent any custom <xref:System.Drawing.Design.ToolboxItem> creators that should be included when the filter is generated. Custom creators may contribute to the filters. This parameter can be `null` if no creators are needed.  
+ 
+The types stored in a <xref:System.Drawing.Design.ToolboxItem> may have a filter associated with them. Filters can be used to restrict the tools that can be placed on designers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,12 +230,12 @@
         <returns>The <see cref="T:System.Drawing.Design.ToolboxItem" /> contained in the <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `creators` parameter is a collection of <xref:System.Drawing.Design.ToolboxItemCreator> objects that represent any custom <xref:System.Drawing.Design.ToolboxItem> creators that should be included when the <xref:System.Drawing.Design.ToolboxItem> is obtained. This parameter can be `null` if no creators are needed.  
-  
- The <xref:System.Drawing.Design.ToolboxItemContainer.GetToolboxItem%2A> method returns a <xref:System.Drawing.Design.ToolboxItem> that represents the data stored in the <xref:System.Drawing.Design.ToolboxItemContainer>. <xref:System.Drawing.Design.ToolboxItemContainer.GetToolboxItem%2A> never returns `null`, nor does it ever raise an exception, except in extreme cases (for example, out of memory). If a <xref:System.Drawing.Design.ToolboxItem> cannot be fabricated, the appropriate exception is embedded within a special <xref:System.Drawing.Design.ToolboxItem>. The exception is thrown when the <xref:System.Drawing.Design.ToolboxItem.CreateComponents%2A> method on this special <xref:System.Drawing.Design.ToolboxItem> is called. This puts the exception at the point of user action.  
-  
+The `creators` parameter is a collection of <xref:System.Drawing.Design.ToolboxItemCreator> objects that represent any custom <xref:System.Drawing.Design.ToolboxItem> creators that should be included when the <xref:System.Drawing.Design.ToolboxItem> is obtained. This parameter can be `null` if no creators are needed.  
+ 
+The <xref:System.Drawing.Design.ToolboxItemContainer.GetToolboxItem%2A> method returns a <xref:System.Drawing.Design.ToolboxItem> that represents the data stored in the <xref:System.Drawing.Design.ToolboxItemContainer>. <xref:System.Drawing.Design.ToolboxItemContainer.GetToolboxItem%2A> never returns `null`, nor does it ever raise an exception, except in extreme cases (for example, out of memory). If a <xref:System.Drawing.Design.ToolboxItem> cannot be fabricated, the appropriate exception is embedded within a special <xref:System.Drawing.Design.ToolboxItem>. The exception is thrown when the <xref:System.Drawing.Design.ToolboxItem.CreateComponents%2A> method on this special <xref:System.Drawing.Design.ToolboxItem> is called. This puts the exception at the point of user action.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,10 +305,10 @@
         <summary>For a description of this member, see the <see cref="M:System.Drawing.Design.ToolboxItemContainer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Drawing.Design.ToolboxItemContainer> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Drawing.Design.ToolboxItemContainer> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,10 +330,10 @@
         <value>An <see cref="T:System.Windows.Forms.IDataObject" /> that describes this <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Design.ToolboxItemContainer.ToolboxData%2A> property creates the serialized version of the <xref:System.Drawing.Design.ToolboxItem>. The data object can be used by an application to store this <xref:System.Drawing.Design.ToolboxItem>. This data object is fabricated from the <xref:System.Drawing.Design.ToolboxItem>, if necessary.  
-  
+The <xref:System.Drawing.Design.ToolboxItemContainer.ToolboxData%2A> property creates the serialized version of the <xref:System.Drawing.Design.ToolboxItem>. The data object can be used by an application to store this <xref:System.Drawing.Design.ToolboxItem>. This data object is fabricated from the <xref:System.Drawing.Design.ToolboxItem>, if necessary.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -361,10 +361,10 @@
         <summary>Merges the container's filter with the filter from the given item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should call the <xref:System.Drawing.Design.ToolboxItemContainer.UpdateFilter%2A> method when the toolbox item is modified or configured. You should also call it if a new <xref:System.ComponentModel.TypeDescriptionProvider>, which the changes the filter, is added.  
-  
+You should call the <xref:System.Drawing.Design.ToolboxItemContainer.UpdateFilter%2A> method when the toolbox item is modified or configured. You should also call it if a new <xref:System.ComponentModel.TypeDescriptionProvider>, which the changes the filter, is added.  
+ 
  ]]></format>
         </remarks>
       </Docs>

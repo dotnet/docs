@@ -20,12 +20,12 @@
     <summary>Provides APIs that are needed for communication and operation with unmanaged classes outside of the <see cref="T:System.AppDomain" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This class makes a link demand. A SecurityException is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -100,12 +100,12 @@
         <summary>Switches a [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md) (CCW) from one instance of a class to another instance of the same class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  This method can cause unwanted behavior. Before calling it, the user must ensure that this is a thread-safe operation, and that a call is not being made through the CCW to one of the instances of the class.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>
@@ -134,10 +134,10 @@
         <returns>The RCW where the specified <see langword="IUnknown" /> is wrapped.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Services.EnterpriseServicesHelper.WrapIUnknownWithComObject%2A> method is similar to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A?displayProperty=fullName> method, but does not attempt to maintain the identity of the unmanaged object. For example, two calls with the same `IUnknown` to the current method return two different RCWs, but two calls to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> method with the same `IUnknown` return the same RCW.  
-  
+The <xref:System.Runtime.Remoting.Services.EnterpriseServicesHelper.WrapIUnknownWithComObject%2A> method is similar to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A?displayProperty=fullName> method, but does not attempt to maintain the identity of the unmanaged object. For example, two calls with the same `IUnknown` to the current method return two different RCWs, but two calls to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> method with the same `IUnknown` return the same RCW.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>

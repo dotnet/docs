@@ -13,10 +13,10 @@
     <summary>Specifies the type of member that referenced the ActiveX control while it was in an invalid state.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The <xref:System.Windows.Forms.AxHost.ActiveXInvokeKind> enumeration is used by the <xref:System.Windows.Forms.AxHost.InvalidActiveXStateException> exception to specify the type of member that referenced the ActiveX control while it was an invalid state.  
-  
+The <xref:System.Windows.Forms.AxHost.ActiveXInvokeKind> enumeration is used by the <xref:System.Windows.Forms.AxHost.InvalidActiveXStateException> exception to specify the type of member that referenced the ActiveX control while it was an invalid state.  
+ 
  ]]></format>
     </remarks>
   </Docs>

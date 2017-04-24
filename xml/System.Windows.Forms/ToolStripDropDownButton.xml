@@ -19,21 +19,21 @@
     <summary>Represents a control that when clicked displays an associated <see cref="T:System.Windows.Forms.ToolStripDropDown" /> from which the user can select a single item.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripDropDownButton> looks like <xref:System.Windows.Forms.ToolStripButton>, but it shows a drop-down area when the user clicks it. Hide or show the drop-down arrow by setting the <xref:System.Windows.Forms.ToolStripDropDownButton.ShowDropDownArrow%2A> property. <xref:System.Windows.Forms.ToolStripDropDownButton> hosts a <xref:System.Windows.Forms.ToolStripOverflowButton> that displays items that overflow the <xref:System.Windows.Forms.ToolStrip>.  
+<xref:System.Windows.Forms.ToolStripDropDownButton> looks like <xref:System.Windows.Forms.ToolStripButton>, but it shows a drop-down area when the user clicks it. Hide or show the drop-down arrow by setting the <xref:System.Windows.Forms.ToolStripDropDownButton.ShowDropDownArrow%2A> property. <xref:System.Windows.Forms.ToolStripDropDownButton> hosts a <xref:System.Windows.Forms.ToolStripOverflowButton> that displays items that overflow the <xref:System.Windows.Forms.ToolStrip>.  
+ 
+Use the <xref:System.Windows.Forms.ToolStripDropDownButton> to activate familiar drop-down controls such as color pickers. Set the <xref:System.Windows.Forms.ToolStripDropDownButton.ShowDropDownArrow%2A> property to `true` to more clearly indicate to the user that further options are available on the drop-down list.  
+ 
   
- Use the <xref:System.Windows.Forms.ToolStripDropDownButton> to activate familiar drop-down controls such as color pickers. Set the <xref:System.Windows.Forms.ToolStripDropDownButton.ShowDropDownArrow%2A> property to `true` to more clearly indicate to the user that further options are available on the drop-down list.  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays three <xref:System.Windows.Forms.ToolStripButton> controls when the <xref:System.Windows.Forms.ToolStripDropDownButton> is clicked. The buttons change the foreground color of the form.  
-  
- [!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
- [!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
- [!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
-  
+The following code example displays three <xref:System.Windows.Forms.ToolStripButton> controls when the <xref:System.Windows.Forms.ToolStripDropDownButton> is clicked. The buttons change the foreground color of the form.  
+ 
+[!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
+[!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
+[!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,14 +52,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.ToolStripDropDownButton> control.  
-  
- [!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
- [!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
- [!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
-  
+The following code example creates and initializes a <xref:System.Windows.Forms.ToolStripDropDownButton> control.  
+ 
+[!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
+[!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
+[!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,12 +276,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseDown" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownButton.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownButton.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -309,12 +309,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownButton.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownButton.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -363,12 +363,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.Paint" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownButton.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownButton.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -423,14 +423,14 @@
           <see langword="true" /> to show an arrow on the <see cref="T:System.Windows.Forms.ToolStripDropDownButton" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.ToolStripDropDownButton> control. The <xref:System.Windows.Forms.ToolStripDropDownButton.ShowDropDownArrow%2A> property is set to `false`.  
-  
- [!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
- [!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
- [!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
-  
+The following code example creates and initializes a <xref:System.Windows.Forms.ToolStripDropDownButton> control. The <xref:System.Windows.Forms.ToolStripDropDownButton.ShowDropDownArrow%2A> property is set to `false`.  
+ 
+[!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
+[!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
+[!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

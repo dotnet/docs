@@ -18,10 +18,10 @@
     <summary>Provides a collection of <see cref="T:System.Web.UI.DataBinding" /> objects for an ASP.NET server control. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection is a dictionary containing all the <xref:System.Web.UI.DataBinding> objects on an ASP.NET server control. You can access the objects contained in this collection through the <xref:System.Web.UI.Control> class implementation of the <xref:System.Web.UI.IDataBindingsAccessor> interface. Any <xref:System.Web.UI.DataBinding> or <xref:System.Web.UI.DataBindingCollection> objects associated with a server control exist only at design time. They do not exist at run time and, therefore, are not accessible during run time.  
-  
+This collection is a dictionary containing all the <xref:System.Web.UI.DataBinding> objects on an ASP.NET server control. You can access the objects contained in this collection through the <xref:System.Web.UI.Control> class implementation of the <xref:System.Web.UI.IDataBindingsAccessor> interface. Any <xref:System.Web.UI.DataBinding> or <xref:System.Web.UI.DataBindingCollection> objects associated with a server control exist only at design time. They do not exist at run time and, therefore, are not accessible during run time.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <summary>Occurs when the collection of <see cref="T:System.Web.UI.DataBinding" /> objects is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The changed event occurs when the <xref:System.Web.UI.DataBindingCollection.Add%2A> method, the <xref:System.Web.UI.DataBindingCollection.Clear%2A> method, or the <xref:System.Web.UI.DataBindingCollection.Remove%2A> method is called.  
-  
+The changed event occurs when the <xref:System.Web.UI.DataBindingCollection.Add%2A> method, the <xref:System.Web.UI.DataBindingCollection.Clear%2A> method, or the <xref:System.Web.UI.DataBindingCollection.Remove%2A> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,14 +287,14 @@
         <summary>Removes the specified <see cref="T:System.Web.UI.DataBinding" /> object from the <see cref="T:System.Web.UI.DataBindingCollection" /> collection and adds it to the <see cref="P:System.Web.UI.DataBindingCollection.RemovedBindings" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example removes a <xref:System.Web.UI.DataBinding> object from the <xref:System.Web.UI.DataBindingCollection> collection by using this version of the <xref:System.Web.UI.DataBindingCollection.Remove%2A> method and specifying an instance of the <xref:System.Web.UI.DataBinding> class, named `myDataBinding1`.  
-  
- [!code-cpp[DataBinding#18](~/samples/snippets/cpp/VS_Snippets_CLR/DataBinding/CPP/webcustomcontrol1.cpp#18)]
- [!code-csharp[DataBinding#18](~/samples/snippets/csharp/VS_Snippets_CLR/DataBinding/CS/webcustomcontrol1.cs#18)]
- [!code-vb[DataBinding#18](~/samples/snippets/visualbasic/VS_Snippets_CLR/DataBinding/VB/webcustomcontrol1.vb#18)]  
-  
+The following code example removes a <xref:System.Web.UI.DataBinding> object from the <xref:System.Web.UI.DataBindingCollection> collection by using this version of the <xref:System.Web.UI.DataBindingCollection.Remove%2A> method and specifying an instance of the <xref:System.Web.UI.DataBinding> class, named `myDataBinding1`.  
+ 
+[!code-cpp[DataBinding#18](~/samples/snippets/cpp/VS_Snippets_CLR/DataBinding/CPP/webcustomcontrol1.cpp#18)]
+[!code-csharp[DataBinding#18](~/samples/snippets/csharp/VS_Snippets_CLR/DataBinding/CS/webcustomcontrol1.cs#18)]
+[!code-vb[DataBinding#18](~/samples/snippets/visualbasic/VS_Snippets_CLR/DataBinding/VB/webcustomcontrol1.vb#18)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

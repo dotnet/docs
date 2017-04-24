@@ -15,18 +15,18 @@
     <summary>A factory for producing new (immutable) endpoint addresses with specific property values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new endpoint address can have its property values initialized from the property values of an existing endpoint address using the <xref:System.ServiceModel.EndpointAddressBuilder.%23ctor%28System.ServiceModel.EndpointAddress%29> constructor.  
+The new endpoint address can have its property values initialized from the property values of an existing endpoint address using the <xref:System.ServiceModel.EndpointAddressBuilder.%23ctor%28System.ServiceModel.EndpointAddress%29> constructor.  
+ 
+The endpoint addresses created can have their URI and identity values set using the <xref:System.ServiceModel.EndpointAddressBuilder.Uri%2A> and <xref:System.ServiceModel.EndpointAddressBuilder.Identity%2A> properties of the endpoint address builder. Note that <xref:System.ServiceModel.EndpointAddress> is an immutable class.  
+ 
   
- The endpoint addresses created can have their URI and identity values set using the <xref:System.ServiceModel.EndpointAddressBuilder.Uri%2A> and <xref:System.ServiceModel.EndpointAddressBuilder.Identity%2A> properties of the endpoint address builder. Note that <xref:System.ServiceModel.EndpointAddress> is an immutable class.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#0)]
- [!code-vb[S_UEEndpointAddressBuilder#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#0)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#0)]
+[!code-vb[S_UEEndpointAddressBuilder#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,11 +46,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddressBuilder" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#1)]
- [!code-vb[S_UEEndpointAddressBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#1)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#1)]
+[!code-vb[S_UEEndpointAddressBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,16 +73,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddressBuilder" /> class from an existing endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values initialized for the endpoint builder from the endpoint address are the endpoint address itself and the identity, the headers, and the URI.  
+The values initialized for the endpoint builder from the endpoint address are the endpoint address itself and the identity, the headers, and the URI.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#2)]
- [!code-vb[S_UEEndpointAddressBuilder#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#2)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#2)]
+[!code-vb[S_UEEndpointAddressBuilder#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -107,16 +107,16 @@
         <returns>The <see cref="T:System.Xml.XmlDictionaryReader" /> that reads the extensions of the endpoint address.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader provides access to the information that is not contained in the model of the endpoint reference defined by WS-Addressing.  
+The reader provides access to the information that is not contained in the model of the endpoint reference defined by WS-Addressing.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#5)]
- [!code-vb[S_UEEndpointAddressBuilder#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#5)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#5)]
+[!code-vb[S_UEEndpointAddressBuilder#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,11 +139,11 @@
         <returns>The <see cref="T:System.Xml.XmlDictionaryReader" /> that reads the metadata associated the endpoint address if there is some; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#8)]
- [!code-vb[S_UEEndpointAddressBuilder#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#8)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#8)]
+[!code-vb[S_UEEndpointAddressBuilder#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,16 +166,16 @@
         <value>The <see cref="T:System.Collections.Generic.List`1" /> of type <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the address headers for the endpoints that the builder can create.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Address headers for the endpoints can be set using the <xref:System.ServiceModel.EndpointAddressBuilder.%23ctor%28System.ServiceModel.EndpointAddress%29> constructor.  
+Address headers for the endpoints can be set using the <xref:System.ServiceModel.EndpointAddressBuilder.%23ctor%28System.ServiceModel.EndpointAddress%29> constructor.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#3)]
- [!code-vb[S_UEEndpointAddressBuilder#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#3)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#3)]
+[!code-vb[S_UEEndpointAddressBuilder#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,16 +198,16 @@
         <value>The <see cref="T:System.ServiceModel.EndpointIdentity" /> for the endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identity is used by an endpoint to authenticate other endpoints when exchanging messages with them.  
+The identity is used by an endpoint to authenticate other endpoints when exchanging messages with them.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#4)]
- [!code-vb[S_UEEndpointAddressBuilder#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#4)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#4)]
+[!code-vb[S_UEEndpointAddressBuilder#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,11 +232,11 @@
         <summary>Specifies the XML dictionary reader that contains the extensions of the endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#6)]
- [!code-vb[S_UEEndpointAddressBuilder#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#6)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#6)]
+[!code-vb[S_UEEndpointAddressBuilder#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,11 +261,11 @@
         <summary>Specifies the XML dictionary reader that contains the metadata associated with the endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#9)]
- [!code-vb[S_UEEndpointAddressBuilder#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#9)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#9)]
+[!code-vb[S_UEEndpointAddressBuilder#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,16 +289,16 @@
         <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> whose property are initialized with the values of the current endpoint address builder.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values initialized from the endpoint address are the identity, the address header collection, the URI, and the extension buffer.  
+The values initialized from the endpoint address are the identity, the address header collection, the URI, and the extension buffer.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#7)]
- [!code-vb[S_UEEndpointAddressBuilder#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#7)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#7)]
+[!code-vb[S_UEEndpointAddressBuilder#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,16 +321,16 @@
         <value>The <see cref="T:System.Uri" /> that specifies the endpoint address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Allows the programmer to set or get the URI associated with the endpoint address.  
+Allows the programmer to set or get the URI associated with the endpoint address.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEEndpointAddressBuilder#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#3)]
- [!code-vb[S_UEEndpointAddressBuilder#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#3)]  
-  
+[!code-csharp[S_UEEndpointAddressBuilder#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#3)]
+[!code-vb[S_UEEndpointAddressBuilder#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

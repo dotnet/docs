@@ -11,10 +11,10 @@
     <summary>Allows the control serializer to get to the builder for a control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.IControlBuilderAccessor> interface defines the property a control must implement to allow a control serializer to access the control's builder. <xref:System.Web.UI.Control> implements this interface, so all controls deriving from <xref:System.Web.UI.Control> have an implementation of this property.  
-  
+The <xref:System.Web.UI.IControlBuilderAccessor> interface defines the property a control must implement to allow a control serializer to access the control's builder. <xref:System.Web.UI.Control> implements this interface, so all controls deriving from <xref:System.Web.UI.Control> have an implementation of this property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <value>The <see cref="T:System.Web.UI.ControlBuilder" /> that built the control; otherwise, <see langword="null" /> if no builder was used.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.IControlBuilderAccessor.ControlBuilder%2A> property allows a control serializer to access the builder that built the control that implements <xref:System.Web.UI.IControlBuilderAccessor>.  
-  
+The <xref:System.Web.UI.IControlBuilderAccessor.ControlBuilder%2A> property allows a control serializer to access the builder that built the control that implements <xref:System.Web.UI.IControlBuilderAccessor>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

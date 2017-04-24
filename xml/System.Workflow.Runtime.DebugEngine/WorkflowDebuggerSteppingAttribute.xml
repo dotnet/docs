@@ -22,16 +22,16 @@
     <summary>Specifies the debug stepping behavior for composite activities whose child activities can execute concurrently.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This attribute is used by workflow debugger to determine the order of debugging for child activities that can execute concurrently. This is to allow you to either keep the focus on one branch of your composite activity, or shift back and forth between the concurrently executing child activities.  
-  
- This attribute should decorate the composite activity, not the child activities.  
-  
+ 
+This attribute is used by workflow debugger to determine the order of debugging for child activities that can execute concurrently. This is to allow you to either keep the focus on one branch of your composite activity, or shift back and forth between the concurrently executing child activities.  
+ 
+This attribute should decorate the composite activity, not the child activities.  
+ 
  ]]></format>
     </remarks>
   </Docs>

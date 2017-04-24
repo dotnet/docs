@@ -54,10 +54,10 @@
         <returns>A string containing the icon file extensions, or <see langword="null" /> if <paramref name="extensions" /> is <see langword="null" /> or empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by the <xref:System.Drawing.Design.IconEditor.CreateExtensionsString%2A> method is used in the <xref:System.Windows.Forms.OpenFileDialog> for choosing icon files.  
-  
+The string returned by the <xref:System.Drawing.Design.IconEditor.CreateExtensionsString%2A> method is used in the <xref:System.Windows.Forms.OpenFileDialog> for choosing icon files.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <returns>The filter string, created from the string returned by <see cref="M:System.Drawing.Design.IconEditor.CreateExtensionsString(System.String[],System.String)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by the <xref:System.Drawing.Design.IconEditor.CreateFilterEntry%2A> method is used in the <xref:System.Windows.Forms.OpenFileDialog> for filtering icon files.  
-  
+The string returned by the <xref:System.Drawing.Design.IconEditor.CreateFilterEntry%2A> method is used in the <xref:System.Windows.Forms.OpenFileDialog> for filtering icon files.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A service provider is provided so that any required editing services can be obtained.  
-  
+A service provider is provided so that any required editing services can be obtained.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <returns>One of the <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> values indicating the provided editing style.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Drawing.Design.IconEditor.EditValue%2A> method is not supported, the <xref:System.Drawing.Design.IconEditor.GetEditStyle%2A> method will return <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
-  
+If the <xref:System.Drawing.Design.IconEditor.EditValue%2A> method is not supported, the <xref:System.Drawing.Design.IconEditor.GetEditStyle%2A> method will return <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <summary>Paints a representative value of the given object to the provided canvas.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Painting should be done within the boundaries of the provided rectangle.  
-  
+Painting should be done within the boundaries of the provided rectangle.  
+ 
  ]]></format>
         </remarks>
       </Docs>

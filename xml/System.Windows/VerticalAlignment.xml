@@ -18,19 +18,19 @@
     <summary>Describes how a child element is vertically positioned or stretched within a parent's layout slot.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties that are explicitly set on an element take precedence over the <xref:System.Windows.HorizontalAlignment> property value.  
+<xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties that are explicitly set on an element take precedence over the <xref:System.Windows.HorizontalAlignment> property value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.VerticalAlignment> enumeration in code and [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-csharp[mpalayoutverticalalignment#2](~/samples/snippets/csharp/VS_Snippets_Wpf/MPALayoutVerticalAlignment/CSharp/MPA_Layout_VerticalAlignment.cs#2)]
- [!code-vb[mpalayoutverticalalignment#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MPALayoutVerticalAlignment/VisualBasic/MPA_Layout_VerticalAlignment.vb#2)]
- [!code-xml[mpalayoutverticalalignment#2](~/samples/snippets/xaml/VS_Snippets_Wpf/MPALayoutVerticalAlignment/XAML/default.xaml#2)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.VerticalAlignment> enumeration in code and [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+ 
+[!code-csharp[mpalayoutverticalalignment#2](~/samples/snippets/csharp/VS_Snippets_Wpf/MPALayoutVerticalAlignment/CSharp/MPA_Layout_VerticalAlignment.cs#2)]
+[!code-vb[mpalayoutverticalalignment#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MPALayoutVerticalAlignment/VisualBasic/MPA_Layout_VerticalAlignment.vb#2)]
+[!code-xml[mpalayoutverticalalignment#2](~/samples/snippets/xaml/VS_Snippets_Wpf/MPALayoutVerticalAlignment/XAML/default.xaml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

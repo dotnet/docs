@@ -21,22 +21,22 @@
     <summary>Manages the view state of ASP.NET server controls, including pages. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- View state for a page or control is the cumulative property values, or view, of that page or control. You can access this class through the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property. Controls can also store essential state information in control state, but that information is not stored as a <xref:System.Web.UI.StateBag> object.  
+View state for a page or control is the cumulative property values, or view, of that page or control. You can access this class through the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property. Controls can also store essential state information in control state, but that information is not stored as a <xref:System.Web.UI.StateBag> object.  
+ 
+This class is the primary storage mechanism for all HTML and Web server controls. It stores attribute/value pairs as strings associated with the control. It tracks changes to these attributes only after the <xref:System.Web.UI.Control.OnInit%2A> method is executed for a page request, and saves the changes to the page's or control's view state.  
+ 
+This class implements a dictionary, and you can add items to it or remove items from it as you would any dictionary object. For more information about data collections, such as dictionaries, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
+ 
   
- This class is the primary storage mechanism for all HTML and Web server controls. It stores attribute/value pairs as strings associated with the control. It tracks changes to these attributes only after the <xref:System.Web.UI.Control.OnInit%2A> method is executed for a page request, and saves the changes to the page's or control's view state.  
-  
- This class implements a dictionary, and you can add items to it or remove items from it as you would any dictionary object. For more information about data collections, such as dictionaries, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a composite `Label` control that has `Text` and `FontSize` properties. These properties are saved to and retrieved from view state when the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method is called on the control.  
-  
- [!code-csharp[SysWebUIControlViewState#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SysWebUIControlViewState/CS/controlviewstate.cs#1)]
- [!code-vb[SysWebUIControlViewState#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SysWebUIControlViewState/VB/controlviewstate.vb#1)]  
-  
+The following code example demonstrates a composite `Label` control that has `Text` and `FontSize` properties. These properties are saved to and retrieved from view state when the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method is called on the control.  
+ 
+[!code-csharp[SysWebUIControlViewState#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SysWebUIControlViewState/CS/controlviewstate.cs#1)]
+[!code-vb[SysWebUIControlViewState#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SysWebUIControlViewState/VB/controlviewstate.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,13 +98,13 @@
         <returns>Returns a <see cref="T:System.Web.UI.StateItem" /> that represents the object added to view state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.StateBag.Add%2A> method.  
-  
- [!code-csharp[Web.UI.StateBag#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/removecs.aspx#3)]
- [!code-vb[Web.UI.StateBag#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/removevb.aspx#3)]  
-  
+The following code example demonstrates using the <xref:System.Web.UI.StateBag.Add%2A> method.  
+ 
+[!code-csharp[Web.UI.StateBag#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/removecs.aspx#3)]
+[!code-vb[Web.UI.StateBag#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/removevb.aspx#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -132,13 +132,13 @@
         <summary>Removes all items from the current <see cref="T:System.Web.UI.StateBag" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.StateBag.Clear%2A> method.  
-  
- [!code-csharp[StateBag_IStateManager_Sample1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/StateBag_IStateManager_Sample1/CS/ism_statebag_samples.cs#4)]
- [!code-vb[StateBag_IStateManager_Sample1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StateBag_IStateManager_Sample1/VB/ism_statebag_samples.vb#4)]  
-  
+The following code example demonstrates using the <xref:System.Web.UI.StateBag.Clear%2A> method.  
+ 
+[!code-csharp[StateBag_IStateManager_Sample1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/StateBag_IStateManager_Sample1/CS/ism_statebag_samples.cs#4)]
+[!code-vb[StateBag_IStateManager_Sample1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StateBag_IStateManager_Sample1/VB/ism_statebag_samples.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,13 +160,13 @@
         <value>The number of items in the <see cref="T:System.Web.UI.StateBag" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.StateBag.Count%2A> property.  
-  
- [!code-csharp[Web.UI.StateBag#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/gotocs.aspx#2)]
- [!code-vb[Web.UI.StateBag#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/gotovb.aspx#2)]  
-  
+The following code example demonstrates using the <xref:System.Web.UI.StateBag.Count%2A> property.  
+ 
+[!code-csharp[Web.UI.StateBag#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/gotocs.aspx#2)]
+[!code-vb[Web.UI.StateBag#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/gotovb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,13 +189,13 @@
         <returns>The enumerator to iterate through the state bag.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.StateBag.GetEnumerator%2A> method.  
-  
- [!code-csharp[StateItem_Samples1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StateItem_Samples1/CS/stateitem_samples.cs.aspx#3)]
- [!code-vb[StateItem_Samples1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StateItem_Samples1/VB/stateitem_samples.vb.aspx#3)]  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.StateBag.GetEnumerator%2A> method.  
+ 
+[!code-csharp[StateItem_Samples1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StateItem_Samples1/CS/stateitem_samples.cs.aspx#3)]
+[!code-vb[StateItem_Samples1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StateItem_Samples1/VB/stateitem_samples.vb.aspx#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,18 +222,18 @@
           <see langword="true" /> if the item has been modified; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method also returns `false` if the `key` parameter does not exist in the <xref:System.Web.UI.StateBag> object.  
+This method also returns `false` if the `key` parameter does not exist in the <xref:System.Web.UI.StateBag> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.StateBag.IsItemDirty%2A> method.  
-  
- [!code-csharp[StateBag_IStateManager_Sample1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/StateBag_IStateManager_Sample1/CS/ism_statebag_samples.cs#4)]
- [!code-vb[StateBag_IStateManager_Sample1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StateBag_IStateManager_Sample1/VB/ism_statebag_samples.vb#4)]  
-  
+The following code example demonstrates using the <xref:System.Web.UI.StateBag.IsItemDirty%2A> method.  
+ 
+[!code-csharp[StateBag_IStateManager_Sample1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/StateBag_IStateManager_Sample1/CS/ism_statebag_samples.cs#4)]
+[!code-vb[StateBag_IStateManager_Sample1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StateBag_IStateManager_Sample1/VB/ism_statebag_samples.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,20 +259,20 @@
         <value>The specified item in the <see cref="T:System.Web.UI.StateBag" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this member is the simplest way to save and retrieve view-state values for a control or a page.  
+Using this member is the simplest way to save and retrieve view-state values for a control or a page.  
+ 
+If an item is not already stored in the <xref:System.Web.UI.StateBag> object when you set this property, its key/value pair is added to the collection. If you set this property to `null` before the <xref:System.Web.UI.Control.TrackViewState%2A> method is called on an item, it is removed from the <xref:System.Web.UI.StateBag> object. Otherwise, when you set this property to `null` the key is saved to allow tracking of the item's view state.  
+ 
   
- If an item is not already stored in the <xref:System.Web.UI.StateBag> object when you set this property, its key/value pair is added to the collection. If you set this property to `null` before the <xref:System.Web.UI.Control.TrackViewState%2A> method is called on an item, it is removed from the <xref:System.Web.UI.StateBag> object. Otherwise, when you set this property to `null` the key is saved to allow tracking of the item's view state.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a property that saves its name and value as a key/value pair to the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property. The <xref:System.Web.UI.Control.ViewState%2A> property is an instance of the <xref:System.Web.UI.StateBag> class.  
-  
- [!code-csharp[SysWebUIControlViewState#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SysWebUIControlViewState/CS/controlviewstate.cs#2)]
- [!code-vb[SysWebUIControlViewState#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SysWebUIControlViewState/VB/controlviewstate.vb#2)]  
-  
+The following code example demonstrates a property that saves its name and value as a key/value pair to the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property. The <xref:System.Web.UI.Control.ViewState%2A> property is an instance of the <xref:System.Web.UI.StateBag> class.  
+ 
+[!code-csharp[SysWebUIControlViewState#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SysWebUIControlViewState/CS/controlviewstate.cs#2)]
+[!code-vb[SysWebUIControlViewState#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SysWebUIControlViewState/VB/controlviewstate.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,22 +294,22 @@
         <value>The collection of keys.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These keys are the names of the control properties. For example, if you created a `BGColor` property on a `Table` control that you customized, a `BGColor` entry is created in this collection representing that property on your `Table` control.  
+These keys are the names of the control properties. For example, if you created a `BGColor` property on a `Table` control that you customized, a `BGColor` entry is created in this collection representing that property on your `Table` control.  
+ 
+These keys correspond to the names of the <xref:System.Web.UI.StateItem> objects stored in the <xref:System.Web.UI.StateBag> collection for the current page or server control.  
+ 
+You can iterate over this collection using the <xref:System.Web.UI.StateBag.GetEnumerator%2A?displayProperty=fullName> method.  
+ 
   
- These keys correspond to the names of the <xref:System.Web.UI.StateItem> objects stored in the <xref:System.Web.UI.StateBag> collection for the current page or server control.  
-  
- You can iterate over this collection using the <xref:System.Web.UI.StateBag.GetEnumerator%2A?displayProperty=fullName> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.StateBag.Keys%2A> property.  
-  
- [!code-csharp[Web.UI.StateBag#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/gotocs.aspx#2)]
- [!code-vb[Web.UI.StateBag#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/gotovb.aspx#2)]  
-  
+The following code example demonstrates using the <xref:System.Web.UI.StateBag.Keys%2A> property.  
+ 
+[!code-csharp[Web.UI.StateBag#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/gotocs.aspx#2)]
+[!code-vb[Web.UI.StateBag#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/gotovb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,13 +334,13 @@
         <summary>Removes the specified key/value pair from the <see cref="T:System.Web.UI.StateBag" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.StateBag.Remove%2A> method.  
-  
- [!code-csharp[Web.UI.StateBag#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/removecs.aspx#3)]
- [!code-vb[Web.UI.StateBag#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/removevb.aspx#3)]  
-  
+The following code example demonstrates using the <xref:System.Web.UI.StateBag.Remove%2A> method.  
+ 
+[!code-csharp[Web.UI.StateBag#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/removecs.aspx#3)]
+[!code-vb[Web.UI.StateBag#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/removevb.aspx#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,10 +366,10 @@
         <summary>Sets the state of the <see cref="T:System.Web.UI.StateBag" /> object as well as the <see cref="P:System.Web.SessionState.ISessionStateItemCollection.Dirty" /> property of each of the <see cref="T:System.Web.UI.StateItem" /> objects contained by it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateBag.SetDirty%2A> method is used to force the collection and its contents to be serialized during a call to the <xref:System.Web.UI.StateBag.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method.  
-  
+The <xref:System.Web.UI.StateBag.SetDirty%2A> method is used to force the collection and its contents to be serialized during a call to the <xref:System.Web.UI.StateBag.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,10 +397,10 @@
         <summary>Sets the <see cref="P:System.Web.SessionState.ISessionStateItemCollection.Dirty" /> property for the specified <see cref="T:System.Web.UI.StateItem" /> object in the <see cref="T:System.Web.UI.StateBag" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateBag.SetItemDirty%2A> method is used to prevent or force state management of specific properties, represented by <xref:System.Web.UI.StateItem> objects in the <xref:System.Web.UI.StateBag> collection.  
-  
+The <xref:System.Web.UI.StateBag.SetItemDirty%2A> method is used to prevent or force state management of specific properties, represented by <xref:System.Web.UI.StateItem> objects in the <xref:System.Web.UI.StateBag> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,10 +427,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,10 +453,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -478,10 +478,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,10 +508,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -538,10 +538,10 @@
           <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> contains an element with the key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -564,10 +564,10 @@
           <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> object has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -590,10 +590,10 @@
           <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> object is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -619,10 +619,10 @@
         <value>The element with the specified <paramref name="key" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,10 +647,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -673,10 +673,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.StateBag> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -720,12 +720,12 @@
         <summary>Restores the previously saved view state of the <see cref="T:System.Web.UI.StateBag" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method restores view-state information for the <xref:System.Web.UI.StateBag> object from a previous page request that was saved by the <xref:System.Web.UI.StateBag.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method.  
-  
- This method is primarily used by control developers. You can override this method to control how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
-  
+This method restores view-state information for the <xref:System.Web.UI.StateBag> object from a previous page request that was saved by the <xref:System.Web.UI.StateBag.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method.  
+ 
+This method is primarily used by control developers. You can override this method to control how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -748,14 +748,14 @@
         <returns>The object that contains the changes to the view state of the <see cref="T:System.Web.UI.StateBag" />. If there are no changes, or there are no <see cref="T:System.Web.UI.StateItem" /> elements in the <see cref="T:System.Web.UI.StateBag" />, this method returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is primarily used by control developers.  
-  
- View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1).  
-  
- When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's <xref:System.Web.UI.Control.ViewState%2A> property. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1) and [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
-  
+This method is primarily used by control developers.  
+ 
+View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1).  
+ 
+When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's <xref:System.Web.UI.Control.ViewState%2A> property. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1) and [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -795,18 +795,18 @@
         <value>The collection of view-state values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a collection that contains the values for all the <xref:System.Web.UI.StateItem> objects in the specified page or control. You can iterate through these values by using the <xref:System.Web.UI.StateBag.GetEnumerator%2A?displayProperty=fullName> method.  
+This is a collection that contains the values for all the <xref:System.Web.UI.StateItem> objects in the specified page or control. You can iterate through these values by using the <xref:System.Web.UI.StateBag.GetEnumerator%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.StateBag.Values%2A> property.  
-  
- [!code-csharp[Web.UI.StateBag#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/gotocs.aspx#2)]
- [!code-vb[Web.UI.StateBag#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/gotovb.aspx#2)]  
-  
+The following code example demonstrates using the <xref:System.Web.UI.StateBag.Values%2A> property.  
+ 
+[!code-csharp[Web.UI.StateBag#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Web.UI.StateBag/CS/gotocs.aspx#2)]
+[!code-vb[Web.UI.StateBag#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Web.UI.StateBag/VB/gotovb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

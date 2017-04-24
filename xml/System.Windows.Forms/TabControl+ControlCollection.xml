@@ -58,10 +58,10 @@
         <summary>Adds a <see cref="T:System.Windows.Forms.Control" /> to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot add a <xref:System.Windows.Forms.TabPage> to a <xref:System.Windows.Forms.TabPage>.  
-  
+You cannot add a <xref:System.Windows.Forms.TabPage> to a <xref:System.Windows.Forms.TabPage>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The specified <see cref="T:System.Windows.Forms.Control" /> is a <see cref="T:System.Windows.Forms.TabPage" />.</exception>

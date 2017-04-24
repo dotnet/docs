@@ -25,24 +25,24 @@
     <summary>Represents a control that allows the user to select a single item from a list that is displayed when the user clicks a <see cref="T:System.Windows.Forms.ToolStripDropDownButton" />. Although <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> and <see cref="T:System.Windows.Forms.ToolStripDropDown" /> replace and add functionality to the <see cref="T:System.Windows.Forms.Menu" /> control of previous versions, <see cref="T:System.Windows.Forms.Menu" /> is retained for both backward compatibility and future use if you choose.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripDropDown> to display drop-down lists of options, such as a color picker.  
+Use the <xref:System.Windows.Forms.ToolStripDropDown> to display drop-down lists of options, such as a color picker.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.ToolStripDropDown> and <xref:System.Windows.Forms.ToolStripDropDownButton> classes to make a three-button color picker that changes the foreground color of the form.  
-  
- [!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
- [!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
- [!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
-  
- The following code example uses <xref:System.Windows.Forms.ToolStripControlHost> to show a <xref:System.Windows.Forms.ToolStripDropDown> as a <xref:System.Windows.Forms.TreeView>.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDownTreeView#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownTreeView/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripDropDownTreeView#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownTreeView/VB/form1.vb#1)]  
-  
+The following code example uses the <xref:System.Windows.Forms.ToolStripDropDown> and <xref:System.Windows.Forms.ToolStripDropDownButton> classes to make a three-button color picker that changes the foreground color of the form.  
+ 
+[!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
+[!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
+[!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
+ 
+The following code example uses <xref:System.Windows.Forms.ToolStripControlHost> to show a <xref:System.Windows.Forms.ToolStripDropDown> as a <xref:System.Windows.Forms.TreeView>.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDownTreeView#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownTreeView/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripDropDownTreeView#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDownTreeView/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,10 +88,10 @@
           <see langword="true" /> to enable item reordering; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Forms.ToolStripDropDown.Opacity" /> of the form can be adjusted; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is meaningful only when UI effects are enabled on the host operating system. Changing the property value when UI effects are disabled has no effect.  
-  
+This property is meaningful only when UI effects are enabled on the host operating system. Changing the property value when UI effects are disabled has no effect.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.AnchorStyles" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,21 +186,21 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control automatically closes; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want a <xref:System.Windows.Forms.ToolStripDropDown> that always stays open, set <xref:System.Windows.Forms.ToolStripDropDown.AutoClose%2A> to `false`.  
-  
+If you want a <xref:System.Windows.Forms.ToolStripDropDown> that always stays open, set <xref:System.Windows.Forms.ToolStripDropDown.AutoClose%2A> to `false`.  
+ 
 > [!NOTE]
 >  Consider handling the <xref:System.Windows.Forms.ToolStripDropDown.Closing> event instead of setting the <xref:System.Windows.Forms.ToolStripDropDown.AutoClose%2A> property. Inspect the <xref:System.Windows.Forms.ToolStripDropDownClosingEventArgs.CloseReason%2A> field in your <xref:System.Windows.Forms.ToolStripDropDown.Closing> handler to specify custom closing logic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to toggle the value of the <xref:System.Windows.Forms.ToolStripDropDown.AutoClose%2A> property in response to a check box selection.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDown#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#9)]
- [!code-vb[System.Windows.Forms.ToolStripDropDown#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#9)]  
-  
+The following code example demonstrates how to toggle the value of the <xref:System.Windows.Forms.ToolStripDropDown.AutoClose%2A> property in response to a check box selection.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDown#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#9)]
+[!code-vb[System.Windows.Forms.ToolStripDropDown#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to use all windows and user input events without restriction. Associated enumeration: the <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
@@ -251,20 +251,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.BackgroundImageChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.BackgroundImageChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#171](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#171)]
- [!code-vb[System.Windows.Forms.EventExamples#171](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#171)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.BackgroundImageChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.BackgroundImageChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#171](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#171)]
+[!code-vb[System.Windows.Forms.EventExamples#171](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#171)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,20 +290,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.BackgroundImageLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.BackgroundImageLayoutChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#172](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#172)]
- [!code-vb[System.Windows.Forms.EventExamples#172](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#172)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.BackgroundImageLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.BackgroundImageLayoutChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#172](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#172)]
+[!code-vb[System.Windows.Forms.EventExamples#172](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#172)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,20 +329,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStrip.BindingContext" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.BindingContextChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.BindingContextChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#173](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#173)]
- [!code-vb[System.Windows.Forms.EventExamples#173](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#173)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.BindingContextChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.BindingContextChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#173](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#173)]
+[!code-vb[System.Windows.Forms.EventExamples#173](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#173)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,20 +401,20 @@
         <summary>Occurs when the focus or keyboard user interface (UI) cues change.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.ChangeUICues> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.ChangeUICues> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#174](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#174)]
- [!code-vb[System.Windows.Forms.EventExamples#174](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#174)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.ChangeUICues> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.ChangeUICues> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#174](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#174)]
+[!code-vb[System.Windows.Forms.EventExamples#174](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#174)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -457,18 +457,18 @@
         <summary>Closes the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control for the specified reason.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripDropDown.Close%2A> method to close a <xref:System.Windows.Forms.ToolStripDropDown> control under specific conditions, such as when an application is started or an item is selected by clicking the control, if the focus changes, or if specified keyboard action occurs.  
+Use the <xref:System.Windows.Forms.ToolStripDropDown.Close%2A> method to close a <xref:System.Windows.Forms.ToolStripDropDown> control under specific conditions, such as when an application is started or an item is selected by clicking the control, if the focus changes, or if specified keyboard action occurs.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to specify a close reason when explicitly closing a <xref:System.Windows.Forms.ToolStripDropDown> control with the <xref:System.Windows.Forms.ToolStripDropDown.Close%2A> method.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDown#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#8)]
- [!code-vb[System.Windows.Forms.ToolStripDropDown#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#8)]  
-  
+The following code example demonstrates how to specify a close reason when explicitly closing a <xref:System.Windows.Forms.ToolStripDropDown> control with the <xref:System.Windows.Forms.ToolStripDropDown.Close%2A> method.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDown#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#8)]
+[!code-vb[System.Windows.Forms.ToolStripDropDown#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,20 +489,20 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> is closed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create a <xref:System.Windows.Forms.ToolStripDropDown> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+When you create a <xref:System.Windows.Forms.ToolStripDropDown> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.Closed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.Closed> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#177](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#177)]
- [!code-vb[System.Windows.Forms.EventExamples#177](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#177)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.Closed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.Closed> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#177](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#177)]
+[!code-vb[System.Windows.Forms.EventExamples#177](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#177)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -523,18 +523,18 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control is about to close.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to selectively close a <xref:System.Windows.Forms.ToolStripDropDown> control by handling the <xref:System.Windows.Forms.ToolStripDropDown.Closing> event  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDown#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#6)]
- [!code-vb[System.Windows.Forms.ToolStripDropDown#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#6)]  
-  
+The following code example demonstrates how to selectively close a <xref:System.Windows.Forms.ToolStripDropDown> control by handling the <xref:System.Windows.Forms.ToolStripDropDown.Closing> event  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDown#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#6)]
+[!code-vb[System.Windows.Forms.ToolStripDropDown#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -564,10 +564,10 @@
         <value>The shortcut menu associated with the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -596,10 +596,10 @@
         <summary>This event is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant to this class.  
-  
+This event is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -629,10 +629,10 @@
         <value>The shortcut menu associated with the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -661,10 +661,10 @@
         <summary>This event is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant to this class.  
-  
+This event is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -745,10 +745,10 @@
         <value>An object of type <see cref="T:System.Windows.Forms.CreateParams" /> used when creating a new window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override the <xref:System.Windows.Forms.ToolStripDropDown.CreateParams%2A> property to add extra functionality to inheriting classes, but you must first call the <xref:System.Windows.Forms.CreateParams> method of the base class to verify that the control continues to work correctly.  
-  
+You can override the <xref:System.Windows.Forms.ToolStripDropDown.CreateParams%2A> property to add extra functionality to inheriting classes, but you must first call the <xref:System.Windows.Forms.CreateParams> method of the base class to verify that the control continues to work correctly.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -789,13 +789,13 @@
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripDropDownDirection" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to assign the <xref:System.Windows.Forms.ToolStripDropDown.DefaultDropDownDirection%2A> property specified by a radio button setting.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDown#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#11)]
- [!code-vb[System.Windows.Forms.ToolStripDropDown#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#11)]  
-  
+The following code example demonstrates how to assign the <xref:System.Windows.Forms.ToolStripDropDown.DefaultDropDownDirection%2A> property specified by a radio button setting.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDown#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#11)]
+[!code-vb[System.Windows.Forms.ToolStripDropDown#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -858,12 +858,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStripDropDown> references. This method invokes the `Dispose` method of each referenced object.  
-  
+This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStripDropDown> references. This method invokes the `Dispose` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -902,10 +902,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -934,10 +934,10 @@
         <summary>This event is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant to this class.  
-  
+This event is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -985,20 +985,20 @@
         <summary>Occurs when the focus enters the <see cref="T:System.Windows.Forms.ToolStripDropDown" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.Enter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.Enter> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#179](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#179)]
- [!code-vb[System.Windows.Forms.EventExamples#179](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#179)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.Enter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.Enter> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#179](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#179)]
+[!code-vb[System.Windows.Forms.EventExamples#179](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#179)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1020,10 +1020,10 @@
         <value>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the font is not set, this property returns the font of the parent control.  
-  
+If the font is not set, this property returns the font of the parent control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1052,20 +1052,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripDropDown.Font" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.FontChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.FontChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#180](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#180)]
- [!code-vb[System.Windows.Forms.EventExamples#180](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#180)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.FontChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.FontChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#180](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#180)]
+[!code-vb[System.Windows.Forms.EventExamples#180](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#180)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1094,10 +1094,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStrip.ForeColor" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1126,10 +1126,10 @@
         <summary>This event is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1159,10 +1159,10 @@
         <value>One of <see cref="T:System.Windows.Forms.ToolStripGripDisplayStyle" /> the values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1195,10 +1195,10 @@
         <value>A <see cref="T:System.Windows.Forms.Padding" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1228,10 +1228,10 @@
         <value>The boundaries of the ToolStrip move handle.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1264,10 +1264,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripGripStyle" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1296,20 +1296,20 @@
         <summary>Occurs when the user requests help for a control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.HelpRequested> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.HelpRequested> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#181](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#181)]
- [!code-vb[System.Windows.Forms.EventExamples#181](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#181)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.HelpRequested> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.HelpRequested> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#181](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#181)]
+[!code-vb[System.Windows.Forms.EventExamples#181](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#181)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1338,15 +1338,15 @@
         <summary>Occurs when the <see cref="E:System.Windows.Forms.ToolStripDropDown.ImeModeChanged" /> property has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.ImeModeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.ImeModeChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#182](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#182)]
- [!code-vb[System.Windows.Forms.EventExamples#182](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#182)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.ImeModeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.ImeModeChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#182](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#182)]
+[!code-vb[System.Windows.Forms.EventExamples#182](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#182)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1399,20 +1399,20 @@
         <summary>Occurs when a key is pressed and held down while the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.KeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.KeyDown> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#183](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#183)]
- [!code-vb[System.Windows.Forms.EventExamples#183](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#183)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.KeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.KeyDown> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#183](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#183)]
+[!code-vb[System.Windows.Forms.EventExamples#183](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#183)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1441,20 +1441,20 @@
         <summary>Occurs when a key is pressed while the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.KeyPress> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.KeyPress> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#184](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#184)]
- [!code-vb[System.Windows.Forms.EventExamples#184](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#184)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.KeyPress> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.KeyPress> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#184](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#184)]
+[!code-vb[System.Windows.Forms.EventExamples#184](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#184)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1483,20 +1483,20 @@
         <summary>Occurs when a key is released while the control has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.KeyUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.KeyUp> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#185](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#185)]
- [!code-vb[System.Windows.Forms.EventExamples#185](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#185)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.KeyUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.KeyUp> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#185](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#185)]
+[!code-vb[System.Windows.Forms.EventExamples#185](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#185)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1525,20 +1525,20 @@
         <summary>Occurs when the input focus leaves the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.Leave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.Leave> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#186](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#186)]
- [!code-vb[System.Windows.Forms.EventExamples#186](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#186)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.Leave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.Leave> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#186](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#186)]
+[!code-vb[System.Windows.Forms.EventExamples#186](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#186)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1571,10 +1571,10 @@
         <value>The coordinates of the upper-left corner of the control relative to the upper-left corner of its container.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1617,12 +1617,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Closed" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnClosed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnClosed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1650,12 +1650,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Closing" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnClosing%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnClosing%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to use all windows and user input events without restriction. Associated enumeration: the <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
@@ -1684,12 +1684,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1717,12 +1717,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.ItemClicked" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnItemClicked%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnItemClicked%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1750,12 +1750,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1783,12 +1783,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseUp" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1816,12 +1816,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Opened" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnOpened%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnOpened%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1849,12 +1849,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Opening" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnOpening%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnOpening%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1882,12 +1882,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnParentChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnParentChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1915,12 +1915,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.VisibleChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDown.OnVisibleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDown.OnVisibleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1959,10 +1959,10 @@
         <value>The level of opacity for the form. The default is 1.00.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This can only be set on top-level controls.  
-  
+This can only be set on top-level controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1983,20 +1983,20 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> is opened.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create a <xref:System.Windows.Forms.ToolStripDropDown> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+When you create a <xref:System.Windows.Forms.ToolStripDropDown> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.Opened> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.Opened> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#188](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#188)]
- [!code-vb[System.Windows.Forms.EventExamples#188](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#188)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.Opened> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.Opened> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#188](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#188)]
+[!code-vb[System.Windows.Forms.EventExamples#188](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#188)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2017,18 +2017,18 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control is opening.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to handle the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event.  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#40)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#40)]  
-  
+The following example demonstrates how to handle the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#40)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#40)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2058,10 +2058,10 @@
         <value>The ToolStripItem that is the overflow button for a ToolStrip with overflow enabled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2091,13 +2091,13 @@
         <value>The <see cref="T:System.Windows.Forms.ToolStripItem" /> that is the owner of this <see cref="T:System.Windows.Forms.ToolStripDropDown" />. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use this property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#42](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#42)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#42](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#42)]  
-  
+The following code example demonstrates how to use this property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#42](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#42)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#42](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#42)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2153,10 +2153,10 @@
           <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called during message preprocessing to handle dialog box keys, such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.ToolStripDropDown.ProcessDialogKey%2A> simply sends the character to the parent's <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=fullName> method, or returns `false` if the control has no parent. The <xref:System.Windows.Forms.Form> class overrides this method to perform actual processing of dialog box keys. This method is only called when the control is hosted in a Windows Forms application or as an ActiveX control.  
-  
+This method is called during message preprocessing to handle dialog box keys, such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.ToolStripDropDown.ProcessDialogKey%2A> simply sends the character to the parent's <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=fullName> method, or returns `false` if the control has no parent. The <xref:System.Windows.Forms.Form> class overrides this method to perform actual processing of dialog box keys. This method is only called when the control is hosted in a Windows Forms application or as an ActiveX control.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
@@ -2184,29 +2184,29 @@
           <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called to give a control the opportunity to process a mnemonic character. The method should determine whether the control is in a state to process mnemonics and if whether the given character represents a mnemonic. If so, the method should perform the action associated with the mnemonic and return `true`. If not, the method should return `false`. Implementations of this method often use the <xref:System.Windows.Forms.Control.IsMnemonic%2A> method to determine whether the given character matches a mnemonic in the control's text.  
-  
- For example:  
-  
+This method is called to give a control the opportunity to process a mnemonic character. The method should determine whether the control is in a state to process mnemonics and if whether the given character represents a mnemonic. If so, the method should perform the action associated with the mnemonic and return `true`. If not, the method should return `false`. Implementations of this method often use the <xref:System.Windows.Forms.Control.IsMnemonic%2A> method to determine whether the given character matches a mnemonic in the control's text.  
+ 
+For example:  
+ 
 ```csharp  
 if (CanSelect && IsMnemonic(charCode, MyControl.Text) {  
-      // Perform action associated with mnemonic.  
-       }  
+     // Perform action associated with mnemonic.  
+      }  
 ```  
+ 
+This default implementation of the <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> method simply returns `false` to indicate that the control has no mnemonic.  
+ 
   
- This default implementation of the <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> method simply returns `false` to indicate that the control has no mnemonic.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates an extension of the button class that overrides the <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> method to exhibit custom behavior. The example also demonstrates the use of the <xref:System.Windows.Forms.Control.CanSelect%2A> and <xref:System.Windows.Forms.Control.IsMnemonic%2A> properties. To run this example, paste the following code after a form class, in the same file. Add a button of type `MnemonicButton` to the form.  
-  
- [!code-cpp[System.Windows.Forms.ProcessMnemonic#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ProcessMnemonic/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.ProcessMnemonic#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ProcessMnemonic/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ProcessMnemonic#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ProcessMnemonic/VB/form1.vb#1)]  
-  
+The following code example demonstrates an extension of the button class that overrides the <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> method to exhibit custom behavior. The example also demonstrates the use of the <xref:System.Windows.Forms.Control.CanSelect%2A> and <xref:System.Windows.Forms.Control.IsMnemonic%2A> properties. To run this example, paste the following code after a form class, in the same file. Add a button of type `MnemonicButton` to the form.  
+ 
+[!code-cpp[System.Windows.Forms.ProcessMnemonic#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ProcessMnemonic/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.ProcessMnemonic#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ProcessMnemonic/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ProcessMnemonic#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ProcessMnemonic/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
@@ -2262,20 +2262,20 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripDropDown.Region" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.RegionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.RegionChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#189](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#189)]
- [!code-vb[System.Windows.Forms.EventExamples#189](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#189)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.RegionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.RegionChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#189](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#189)]
+[!code-vb[System.Windows.Forms.EventExamples#189](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#189)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2356,10 +2356,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>This method is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not relevant to this class.  
-  
+This method is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2388,10 +2388,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>This event is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2472,13 +2472,13 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>Displays the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control in its default position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to display the <xref:System.Windows.Forms.ToolStripDropDown> control at its default position.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDown#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#3)]
- [!code-vb[System.Windows.Forms.ToolStripDropDown#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#3)]  
-  
+The following code example demonstrates how to display the <xref:System.Windows.Forms.ToolStripDropDown> control at its default position.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDown#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#3)]
+[!code-vb[System.Windows.Forms.ToolStripDropDown#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2503,13 +2503,13 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>Positions the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> relative to the specified screen location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to display the <xref:System.Windows.Forms.ToolStripDropDown> control at a fixed point.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDown#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#5)]
- [!code-vb[System.Windows.Forms.ToolStripDropDown#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#5)]  
-  
+The following code example demonstrates how to display the <xref:System.Windows.Forms.ToolStripDropDown> control at a fixed point.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDown#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#5)]
+[!code-vb[System.Windows.Forms.ToolStripDropDown#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2536,13 +2536,13 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>Positions the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> relative to the specified control location and with the specified direction relative to the parent control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to display the <xref:System.Windows.Forms.ToolStripDropDown> control at a fixed point in the specified direction.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDown#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#4)]
- [!code-vb[System.Windows.Forms.ToolStripDropDown#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#4)]  
-  
+The following code example demonstrates how to display the <xref:System.Windows.Forms.ToolStripDropDown> control at a fixed point in the specified direction.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDown#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#4)]
+[!code-vb[System.Windows.Forms.ToolStripDropDown#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2618,13 +2618,13 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>Positions the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> relative to the specified control at the specified location and with the specified direction relative to the parent control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to display the <xref:System.Windows.Forms.ToolStripDropDown> control relative to the parent control.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripDropDown#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.ToolStripDropDown#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#2)]  
-  
+The following code example demonstrates how to display the <xref:System.Windows.Forms.ToolStripDropDown> control relative to the parent control.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripDropDown#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.ToolStripDropDown#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripDropDown/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The control specified by the <paramref name="control" /> parameter is <see langword="null" />.</exception>
@@ -2682,10 +2682,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
           <see langword="true" /> to enable stretching; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2714,20 +2714,20 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" /> style changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.StyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.StyleChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#190](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#190)]
- [!code-vb[System.Windows.Forms.EventExamples#190](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#190)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripDropDown.StyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripDropDown> named `ToolStripDropDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripDropDown.StyleChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#190](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#190)]
+[!code-vb[System.Windows.Forms.EventExamples#190](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#190)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2760,10 +2760,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <value>The tab order of the control within its container.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2792,10 +2792,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>This event is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant to this class.  
-  
+This event is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2824,10 +2824,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>This event is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2856,10 +2856,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>This event is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2938,10 +2938,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information and a code example, see <xref:System.Windows.Forms.Form.TopMost%2A>.  
-  
+For more information and a code example, see <xref:System.Windows.Forms.Form.TopMost%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2970,10 +2970,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>This event is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3002,10 +3002,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>This event is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

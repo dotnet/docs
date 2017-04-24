@@ -24,14 +24,14 @@
     <summary>Provides the Authenticode X.509v3 digital signature of a code assembly as evidence for policy evaluation. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The presence of <xref:System.Security.Policy.Publisher> evidence produces a <xref:System.Security.Permissions.PublisherIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.PublisherIdentityPermission>, the <xref:System.Security.Permissions.PublisherIdentityPermission> that corresponds to the <xref:System.Security.Policy.Publisher> evidence will be compared with the demanded permission.  
-  
- Publisher evidence is based on Authenticode X.509v3 signatures.  
-  
- By default, code access security (CAS) does not check for <xref:System.Security.Policy.Publisher> evidence. Unless your computer has a custom code group based on the <xref:System.Security.Policy.PublisherMembershipCondition> class, you can improve performance by bypassing Authenticode signature verification. This is accomplished by configuring the runtime to not provide <xref:System.Security.Policy.Publisher> evidence for CAS. For more information about how to configure this option and which applications can use it, see the  element.  
-  
+The presence of <xref:System.Security.Policy.Publisher> evidence produces a <xref:System.Security.Permissions.PublisherIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.PublisherIdentityPermission>, the <xref:System.Security.Permissions.PublisherIdentityPermission> that corresponds to the <xref:System.Security.Policy.Publisher> evidence will be compared with the demanded permission.  
+ 
+Publisher evidence is based on Authenticode X.509v3 signatures.  
+ 
+By default, code access security (CAS) does not check for <xref:System.Security.Policy.Publisher> evidence. Unless your computer has a custom code group based on the <xref:System.Security.Policy.PublisherMembershipCondition> class, you can improve performance by bypassing Authenticode signature verification. This is accomplished by configuring the runtime to not provide <xref:System.Security.Policy.Publisher> evidence for CAS. For more information about how to configure this option and which applications can use it, see the  element.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -160,10 +160,10 @@
           <see langword="true" /> if the two instances of the <see cref="T:System.Security.Policy.Publisher" /> class are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Policy.Publisher> objects are equal if they designate the same software publisher certificate.  
-  
+<xref:System.Security.Policy.Publisher> objects are equal if they designate the same software publisher certificate.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="o" /> parameter is not a <see cref="T:System.Security.Policy.Publisher" /> object.</exception>

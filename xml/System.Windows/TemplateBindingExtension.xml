@@ -22,26 +22,26 @@
     <summary>Implements a markup extension that supports the binding between the value of a property in a template and the value of some other exposed property on the templated control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use `TemplateBinding` in template to bind to a value on the control the template is applied to. A `TemplateBinding` is more efficient than a <xref:System.Windows.Data.Binding> but it has less functionality. Using a `TemplateBinding` is equivalent to using a <xref:System.Windows.Data.Binding> with the <xref:System.Windows.Data.Binding.RelativeSource%2A> property set to <xref:System.Windows.Data.RelativeSource.TemplatedParent%2A?displayProperty=fullName>.  
-  
+You use `TemplateBinding` in template to bind to a value on the control the template is applied to. A `TemplateBinding` is more efficient than a <xref:System.Windows.Data.Binding> but it has less functionality. Using a `TemplateBinding` is equivalent to using a <xref:System.Windows.Data.Binding> with the <xref:System.Windows.Data.Binding.RelativeSource%2A> property set to <xref:System.Windows.Data.RelativeSource.TemplatedParent%2A?displayProperty=fullName>.  
+ 
 <a name="xamlTextUsage_TemplateBindingExtension"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a <xref:System.Windows.Controls.ControlTemplate> that defines a <xref:System.Windows.Controls.ListBox> that is horizontal and has rounded corners. The `TemplateBinding` indicates that the <xref:System.Windows.Controls.Border.Background%2A> of the <xref:System.Windows.Controls.Border> should be synchronized with the <xref:System.Windows.Controls.Border.Background%2A> value that is set on the <xref:System.Windows.Controls.ListBox>. You use `TemplateBinding` in your <xref:System.Windows.Controls.ControlTemplate> when you want to give the user of your control the control over the values of certain properties. For a discussion of this example, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
-  
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxct)]  -->
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxct)]  -->  
-  
- The following example shows the <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.Label> control. The <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties are bound to the values of the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties of the <xref:System.Windows.Controls.Label> control that this <xref:System.Windows.Controls.ControlTemplate> is applied to.  
-  
- [!code-xml[ControlTemplateExamples#Label](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/label.xaml#label)]  
-  
+The following example shows a <xref:System.Windows.Controls.ControlTemplate> that defines a <xref:System.Windows.Controls.ListBox> that is horizontal and has rounded corners. The `TemplateBinding` indicates that the <xref:System.Windows.Controls.Border.Background%2A> of the <xref:System.Windows.Controls.Border> should be synchronized with the <xref:System.Windows.Controls.Border.Background%2A> value that is set on the <xref:System.Windows.Controls.ListBox>. You use `TemplateBinding` in your <xref:System.Windows.Controls.ControlTemplate> when you want to give the user of your control the control over the values of certain properties. For a discussion of this example, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
+ 
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxct)]  -->
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxct)]  -->  
+ 
+The following example shows the <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.Label> control. The <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties are bound to the values of the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties of the <xref:System.Windows.Controls.Label> control that this <xref:System.Windows.Controls.ControlTemplate> is applied to.  
+ 
+[!code-xml[ControlTemplateExamples#Label](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/label.xaml#label)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -101,14 +101,14 @@
         <value>The converter implementation. This value defaults to <see langword="null" /> and is typically provided as an optional parameter of the binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is not the <xref:System.Windows.TemplateBindingExtensionConverter>. It is a specific converter pattern supported by [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding.  
-  
+This value is not the <xref:System.Windows.TemplateBindingExtensionConverter>. It is a specific converter pattern supported by [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding.  
+ 
 <a name="xamlTextUsage_Converter"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
-  
+For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,13 +135,13 @@
         <value>The parameter being bound as referenced by the converter implementation. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ConverterParameter"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
-  
+For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,13 +168,13 @@
         <value>Identifier of the dependency property being bound.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Property"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
-  
+For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

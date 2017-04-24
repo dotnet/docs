@@ -23,19 +23,19 @@
     <summary>Determines the border padding for docked controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> class creates a margin on a given edge or all edges of a docked control. You can set the width of this margin for each individual edge by setting the following properties: <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom%2A>, <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top%2A>, <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left%2A>, <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right%2A>. Alternatively, you can set all the edges to the same width simultaneously by setting the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All%2A> property. If the size of the control is too large for its container, the control will be resized to fit in the container, minus the specified margin width.  
+The <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> class creates a margin on a given edge or all edges of a docked control. You can set the width of this margin for each individual edge by setting the following properties: <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom%2A>, <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top%2A>, <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left%2A>, <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right%2A>. Alternatively, you can set all the edges to the same width simultaneously by setting the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All%2A> property. If the size of the control is too large for its container, the control will be resized to fit in the container, minus the specified margin width.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
-  
- [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
- [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
-  
+The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+ 
+[!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
+[!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,19 +62,19 @@
         <value>The padding width, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The padding width assigned to this property is applied to all edges of the docked control.  
+The padding width assigned to this property is applied to all edges of the docked control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
-  
- [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
- [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
-  
+The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+ 
+[!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
+[!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,19 +101,19 @@
         <value>The padding width, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The padding width assigned to this property is applied only to the bottom edge of the docked control.  
+The padding width assigned to this property is applied only to the bottom edge of the docked control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
-  
- [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
- [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
-  
+The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+ 
+[!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
+[!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,19 +181,19 @@
         <value>The padding width, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The padding width assigned to this property is applied only to the left edge of the docked control.  
+The padding width assigned to this property is applied only to the left edge of the docked control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
-  
- [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
- [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
-  
+The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+ 
+[!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
+[!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,19 +220,19 @@
         <value>The padding width, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The padding width assigned to this property is applied only to the right edge of the docked control.  
+The padding width assigned to this property is applied only to the right edge of the docked control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
-  
- [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
- [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
-  
+The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+ 
+[!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
+[!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,19 +278,19 @@
         <value>The padding width, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The padding width assigned to this property is applied only to the top edge of the docked control.  
+The padding width assigned to this property is applied only to the top edge of the docked control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
-  
- [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
- [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
-  
+The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+ 
+[!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/CS/source.cs#1)]
+[!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollableControl.DockPaddingEdges Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

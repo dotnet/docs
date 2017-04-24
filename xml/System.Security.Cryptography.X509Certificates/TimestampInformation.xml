@@ -135,10 +135,10 @@
         <value>A <see cref="T:System.DateTime" /> object that represents the time stamp.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time stamp is expressed in local time. The time stamp is available only if the publisher is trusted.  
-  
+The time stamp is expressed in local time. The time stamp is available only if the publisher is trusted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,10 +160,10 @@
         <value>One of the <see cref="T:System.Security.Cryptography.SignatureVerificationResult" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A positive verification returns the <xref:System.Security.Cryptography.SignatureVerificationResult>.  
-  
+A positive verification returns the <xref:System.Security.Cryptography.SignatureVerificationResult>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

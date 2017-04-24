@@ -18,20 +18,20 @@
     <summary>Contains all the localizable resources in a BAML record.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dictionary contains a mapping from resource keys (specified as <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey> objects) to resource values (specified as <xref:System.Windows.Markup.Localizer.BamlLocalizableResource> objects).  
-  
+The dictionary contains a mapping from resource keys (specified as <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey> objects) to resource values (specified as <xref:System.Windows.Markup.Localizer.BamlLocalizableResource> objects).  
+ 
 <a name="xamlTextUsage_BamlLocalizationDictionary"></a>   
 ## XAML Text Usage  
-   
   
+ 
 ## Examples  
- The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizationDictionary>.  
-  
- [!code-csharp[GrabBaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GrabBaml/CSharp/GrabBaml.cs#1)]
- [!code-vb[GrabBaml#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GrabBaml/visualbasic/grabbaml.vb#1)]  
-  
+The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizationDictionary>.  
+ 
+[!code-csharp[GrabBaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GrabBaml/CSharp/GrabBaml.cs#1)]
+[!code-vb[GrabBaml#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GrabBaml/visualbasic/grabbaml.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -302,10 +302,10 @@
         <value>The key of the root element, if it is localizable. Otherwise, the value is set to <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set some properties for the entire page by adding or modifying the properties of its root element, due to the effects of property inheritance for dependency properties. For example, changing the root element's <xref:System.Windows.FrameworkElement.FlowDirection%2A> property sets that property for every element on the page.  
-  
+You can set some properties for the entire page by adding or modifying the properties of its root element, due to the effects of property inheritance for dependency properties. For example, changing the root element's <xref:System.Windows.FrameworkElement.FlowDirection%2A> property sets that property for every element on the page.  
+ 
  ]]></format>
         </remarks>
       </Docs>

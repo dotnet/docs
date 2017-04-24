@@ -13,12 +13,12 @@
     <summary>Describes the kind of value that a <see cref="T:System.Windows.GridLength" /> object is holding.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Star sizing is used to distribute available space by weighted proportions.  
-  
- In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], star values are expressed as * or 2*. In the first case, the row or column would receive one times the available space; in the second case, the row or column would receive two times the available space, and so on.  
-  
+Star sizing is used to distribute available space by weighted proportions.  
+ 
+In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], star values are expressed as * or 2*. In the first case, the row or column would receive one times the available space; in the second case, the row or column would receive two times the available space, and so on.  
+ 
  ]]></format>
     </remarks>
   </Docs>

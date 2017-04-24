@@ -14,10 +14,10 @@
     <summary>Provides a regular expression to parse an encoded ASP.NET expression block.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.RegularExpressions> classes are used internally by the .NET Framework to parse ASP.NET pages.  
-  
+The <xref:System.Web.RegularExpressions> classes are used internally by the .NET Framework to parse ASP.NET pages.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -56,10 +56,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.AspEncodedExprRegex" /> class with a specified time-out value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `A_1` parameter represents the maximum time interval during which the regular expression engine tries to find a match before the operation times out and a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown.  
-  
+The `A_1` parameter represents the maximum time interval during which the regular expression engine tries to find a match before the operation times out and a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

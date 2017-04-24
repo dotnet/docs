@@ -14,12 +14,12 @@
     <summary>Animates the value of a <see cref="T:System.Windows.Point" /> property between two or more target values using a <see cref="T:System.Windows.Media.PathGeometry" /> to specify those values. This animation can be used to move a visual object along a path.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Animation.PointAnimationUsingPath> uses      linear interpolation over a specified <xref:System.Windows.Media.Animation.Timeline.Duration%2A>.  
-  
- <xref:System.Windows.Media.Animation.PointAnimationUsingPath> is particularly well suited for animating the position of an object on the screen if the object uses a <xref:System.Windows.Point> property to specify position.  
-  
+<xref:System.Windows.Media.Animation.PointAnimationUsingPath> uses      linear interpolation over a specified <xref:System.Windows.Media.Animation.Timeline.Duration%2A>.  
+ 
+<xref:System.Windows.Media.Animation.PointAnimationUsingPath> is particularly well suited for animating the position of an object on the screen if the object uses a <xref:System.Windows.Point> property to specify position.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Windows.Media.Animation.PointAnimationUsingPath" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is no default <xref:System.Windows.Media.PathGeometry> so the user must specify one.  
-  
+There is no default <xref:System.Windows.Media.PathGeometry> so the user must specify one.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,12 +64,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,12 +118,12 @@
         <returns>The calculated value of the property, as determined by the current animation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
-  
- The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
-  
+If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+ 
+The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,20 +145,20 @@
         <value>**true** if the animation adds its output value to the base value of the property being animated instead of replacing it; otherwise, **false**. The default value is **false**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Additive"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier Field|<xref:System.Windows.Media.Animation.AnimationTimeline.IsAdditiveProperty>|  
 |Metadata properties set to **true**|None|  
-  
+ 
 > [!NOTE]
 >  This dependency property is unusual in that the identifier field for it comes from <xref:System.Windows.Media.Animation.AnimationTimeline>, and is shared by various derived classes.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,21 +180,21 @@
         <value>**true** if the animation accumulates its values when its <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> property causes it to repeat its simple duration. otherwise, **false**. The default value is **false**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to **true**, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
-  
+When this property is set to **true**, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
+ 
 <a name="dependencyPropertyInfo_Cumulative"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Animation.AnimationTimeline.IsCumulativeProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
 > [!NOTE]
 >  This dependency property is unusual in that the identifier field for it comes from <xref:System.Windows.Media.Animation.AnimationTimeline>, and is shared by various derived classes.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,18 +237,18 @@
         <value>The path used to generate this animation's output values. The default value is **null**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For examples of creating a path using markup or code, see <xref:System.Windows.Media.PathGeometry>.  
-  
+For examples of creating a path using markup or code, see <xref:System.Windows.Media.PathGeometry>.  
+ 
 <a name="dependencyPropertyInfo_PathGeometry"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Animation.PointAnimationUsingPath.PathGeometryProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

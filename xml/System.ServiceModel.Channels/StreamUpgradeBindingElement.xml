@@ -14,16 +14,16 @@
     <summary>Adds a custom stream upgrade provider to a custom binding.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To indicate that a custom stream upgrade provider should be used, implement a binding element that implements this `abstract` class on the custom binding.  
-  
- This `abstract` class is implemented by:  
-  
+To indicate that a custom stream upgrade provider should be used, implement a binding element that implements this `abstract` class on the custom binding.  
+ 
+This `abstract` class is implemented by:  
+ 
 -   <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>  
-  
+ 
 -   <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,12 +82,12 @@
         <returns>An instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when opening the client channel factory and provides a custom implementation of the <xref:System.ServiceModel.Channels.StreamUpgradeProvider>`abstract` class.  
-  
- The <xref:System.ServiceModel.Channels.BindingContext> parameter enables reacting to other elements in the channel stack.  
-  
+This method is called when opening the client channel factory and provides a custom implementation of the <xref:System.ServiceModel.Channels.StreamUpgradeProvider>`abstract` class.  
+ 
+The <xref:System.ServiceModel.Channels.BindingContext> parameter enables reacting to other elements in the channel stack.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,12 +113,12 @@
         <returns>An instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when opening the service and provides a custom implementation of the <xref:System.ServiceModel.Channels.StreamUpgradeProvider>`abstract` class.  
-  
- The <xref:System.ServiceModel.Channels.BindingContext> parameter enables reacting to other elements in the channel stack.  
-  
+This method is called when opening the service and provides a custom implementation of the <xref:System.ServiceModel.Channels.StreamUpgradeProvider>`abstract` class.  
+ 
+The <xref:System.ServiceModel.Channels.BindingContext> parameter enables reacting to other elements in the channel stack.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,9 +14,9 @@
     <summary>Converts instances of <see cref="T:System.Windows.TextDecorationCollection" /> from other data types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="XAMLTextUsage_TextDecorationCollectionConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -136,12 +136,12 @@
         <returns>The instance of <see cref="T:System.Windows.TextDecorationCollection" /> created from the converted <paramref name="text" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string value of the `text` parameter can either be "None", or a combination of the predefined <xref:System.Windows.TextDecoration> names delimited by commas, such as "Underline, Strikethrough". The names are case-insensitive values.  
-  
- One or more blanks spaces can precede or follow each text decoration name or comma. In addition, duplicate text decoration names are not allowed.  
-  
+The string value of the `text` parameter can either be "None", or a combination of the predefined <xref:System.Windows.TextDecoration> names delimited by commas, such as "Underline, Strikethrough". The names are case-insensitive values.  
+ 
+One or more blanks spaces can precede or follow each text decoration name or comma. In addition, duplicate text decoration names are not allowed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

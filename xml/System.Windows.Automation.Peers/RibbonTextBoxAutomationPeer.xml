@@ -171,10 +171,10 @@
         <summary>Sends a request to activate the <see cref="T:System.Windows.Controls.Ribbon.RibbonTextBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

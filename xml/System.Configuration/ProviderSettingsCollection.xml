@@ -19,18 +19,18 @@
     <summary>Represents a collection of <see cref="T:System.Configuration.ProviderSettings" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ProviderSettingsCollection> class represents the `providers` element within a configuration file.  
+The <xref:System.Configuration.ProviderSettingsCollection> class represents the `providers` element within a configuration file.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to iterate through the <xref:System.Configuration.ProtectedConfigurationSection.Providers%2A> property, which returns a <xref:System.Configuration.ProviderSettingsCollection>.  
-  
- [!code-csharp[System.Configuration.ProviderSettings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#1)]
- [!code-vb[System.Configuration.ProviderSettings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#1)]  
-  
+The following code example shows how to iterate through the <xref:System.Configuration.ProtectedConfigurationSection.Providers%2A> property, which returns a <xref:System.Configuration.ProviderSettingsCollection>.  
+ 
+[!code-csharp[System.Configuration.ProviderSettings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#1)]
+[!code-vb[System.Configuration.ProviderSettings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <summary>Adds a <see cref="T:System.Configuration.ProviderSettings" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ProviderSettingsCollection.Add%2A> method to add a <xref:System.Configuration.ProviderSettings> object to the collection.  
-  
+Use the <xref:System.Configuration.ProviderSettingsCollection.Add%2A> method to add a <xref:System.Configuration.ProviderSettings> object to the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <summary>Clears the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ProviderSettingsCollection.Clear%2A> method to remove all <xref:System.Configuration.ProviderSettings> objects from the collection.  
-  
+Use the <xref:System.Configuration.ProviderSettingsCollection.Clear%2A> method to remove all <xref:System.Configuration.ProviderSettings> objects from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <value>The specified <see cref="T:System.Configuration.ProviderSettings" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ProviderSettingsCollection.Item%2A> property to get or set a specified <xref:System.Configuration.ProviderSettings> object contained within this <xref:System.Configuration.ProviderSettingsCollection> class.  
-  
+Use the <xref:System.Configuration.ProviderSettingsCollection.Item%2A> property to get or set a specified <xref:System.Configuration.ProviderSettings> object contained within this <xref:System.Configuration.ProviderSettingsCollection> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <summary>Removes an element from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ProviderSettingsCollection.Remove%2A> method to remove a specified <xref:System.Configuration.ProviderSettings> object from the collection.  
-  
+Use the <xref:System.Configuration.ProviderSettingsCollection.Remove%2A> method to remove a specified <xref:System.Configuration.ProviderSettings> object from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,10 +250,10 @@
         <summary>Accesses an instance of the <see cref="T:System.Configuration.ProviderSettingsCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to access a specified <xref:System.Configuration.ProviderSettings> object contained within this <xref:System.Configuration.ProviderSettingsCollection> class.  
-  
+Use this method to access a specified <xref:System.Configuration.ProviderSettings> object contained within this <xref:System.Configuration.ProviderSettingsCollection> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

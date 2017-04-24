@@ -27,32 +27,32 @@
     <summary>Indicates the COM alias for a parameter or field type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can apply this attribute to parameters, fields, properties, or return values.  
+You can apply this attribute to parameters, fields, properties, or return values.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following type library,  `OLE_COLOR` is an alias for `int`. During import, the arguments of the `Color` accessor are marked with the <xref:System.Runtime.InteropServices.ComAliasNameAttribute> to indicate that type library refers to them as `OLE_COLOR`.  
-  
+In the following type library,  `OLE_COLOR` is an alias for `int`. During import, the arguments of the `Color` accessor are marked with the <xref:System.Runtime.InteropServices.ComAliasNameAttribute> to indicate that type library refers to them as `OLE_COLOR`.  
+ 
 ```  
-  
+ 
 typedef int OLE_COLOR;    
-  
+ 
 interface Baz {  
- HRESULT SetColor([in] OLE_COLOR cl);  
- HRESULT GetColor([out, retval] OLE_COLOR *cl);  
+HRESULT SetColor([in] OLE_COLOR cl);  
+HRESULT GetColor([out, retval] OLE_COLOR *cl);  
 }  
-  
+ 
 ```  
-  
- is imported as:  
-  
- [!code-cpp[Classic ComAliasNameAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ComAliasNameAttribute Example/CPP/source.cpp#2)]
- [!code-csharp[Classic ComAliasNameAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ComAliasNameAttribute Example/CS/source.cs#2)]
- [!code-vb[Classic ComAliasNameAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ComAliasNameAttribute Example/VB/source.vb#2)]  
-  
+ 
+is imported as:  
+ 
+[!code-cpp[Classic ComAliasNameAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ComAliasNameAttribute Example/CPP/source.cpp#2)]
+[!code-csharp[Classic ComAliasNameAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ComAliasNameAttribute Example/CS/source.cs#2)]
+[!code-vb[Classic ComAliasNameAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ComAliasNameAttribute Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

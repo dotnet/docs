@@ -29,12 +29,12 @@
     <summary>Exposes the public members of the <see cref="T:System.Reflection.PropertyInfo" /> class to unmanaged code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- This interface preserves the vtable order of the <xref:System.Reflection.PropertyInfo?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
-  
+This interface is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+This interface preserves the vtable order of the <xref:System.Reflection.PropertyInfo?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,12 +57,12 @@
         <value>The attributes of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.Attributes%2A> property gets the attributes of this property.  
-  
+This property is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.Attributes%2A> property gets the attributes of this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,12 +86,12 @@
           <see langword="true" /> if this property can be read; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.CanRead%2A> property gets a value indicating whether the property can be read.  
-  
+This property is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.CanRead%2A> property gets a value indicating whether the property can be read.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,12 +115,12 @@
           <see langword="true" /> if this property can be written to; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.CanWrite%2A> property gets a value indicating whether the property can be written to.  
-  
+This property is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.CanWrite%2A> property gets a value indicating whether the property can be written to.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,12 +143,12 @@
         <value>The <see langword="Type" /> object for the class that declares this member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.DeclaringType%2A> property gets the class that declares this member.  
-  
+This property is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.DeclaringType%2A> property gets the class that declares this member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,12 +176,12 @@
           <see langword="true" /> if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Object.Equals%2A> method determines whether the specified <xref:System.Object> is equal to the current <xref:System.Object>.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Object.Equals%2A> method determines whether the specified <xref:System.Object> is equal to the current <xref:System.Object>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,12 +205,12 @@
         <returns>An array of <see cref="T:System.Reflection.MethodInfo" /> objects that reflect the public <see langword="get" />, <see langword="set" />, and other accessors of the property reflected by the current instance, if accessors are found; otherwise, this method returns an array with zero (0) elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method returns an array whose elements reflect the public `get`, `set`, and other accessors of the property reflected by the current instance.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method returns an array whose elements reflect the public `get`, `set`, and other accessors of the property reflected by the current instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,12 +238,12 @@
         <returns>An array of <see cref="T:System.Reflection.MethodInfo" /> objects whose elements reflect the <see langword="get" />, <see langword="set" />, and other accessors of the property reflected by the current instance. If the <paramref name="nonPublic" /> parameter is <see langword="true" />, this array contains public and non-public <see langword="get" />, <see langword="set" />, and other accessors. If <paramref name="nonPublic" /> is <see langword="false" />, this array contains only public <see langword="get" />, <see langword="set" />, and other accessors. If no accessors with the specified visibility are found, this method returns an array with zero (0) elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method returns an array whose elements reflect the public and, if specified, non-public `get`, `set`, and other accessors of the property reflected by the current instance.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetAccessors%2A> method returns an array whose elements reflect the public and, if specified, non-public `get`, `set`, and other accessors of the property reflected by the current instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,12 +270,12 @@
         <returns>An array that contains all the custom attributes, or an array with zero elements if no attributes are defined.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method returns an array containing all the custom attributes.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method returns an array containing all the custom attributes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,12 +304,12 @@
         <returns>An array of custom attributes applied to this member, or an array with zero (0) elements if no attributes have been applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method returns an array of custom attributes identified by <xref:System.Type>.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method returns an array of custom attributes identified by <xref:System.Type>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,12 +333,12 @@
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object representing the public <see langword="get" /> accessor for this property, or <see langword="null" /> if the <see langword="get" /> accessor is non-public or does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetGetMethod%2A> method returns the public `get` accessor for this property.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetGetMethod%2A> method returns the public `get` accessor for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,12 +366,12 @@
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object representing the <see langword="get" /> accessor for this property, if the <paramref name="nonPublic" /> parameter is <see langword="true" />. Or <see langword="null" /> if <paramref name="nonPublic" /> is <see langword="false" /> and the <see langword="get" /> accessor is non-public, or if <paramref name="nonPublic" /> is <see langword="true" /> but no <see langword="get" /> accessors exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetGetMethod%2A> method returns the public or non-public `get` accessor for this property.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetGetMethod%2A> method returns the public or non-public `get` accessor for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,12 +395,12 @@
         <returns>The hash code for the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Object.GetHashCode%2A> method serves as a hash function for a particular type. <xref:System.Object.GetHashCode%2A> is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Object.GetHashCode%2A> method serves as a hash function for a particular type. <xref:System.Object.GetHashCode%2A> is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,10 +434,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,12 +461,12 @@
         <returns>An array of type <see cref="T:System.Reflection.ParameterInfo" /> containing the parameters for the indexes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method returns an array of all the index parameters for the property  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method returns an array of all the index parameters for the property  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -490,12 +490,12 @@
         <returns>The <see cref="T:System.Reflection.MethodInfo" /> object representing the <see langword="Set" /> method for this property if the <see langword="set" /> accessor is public, or <see langword="null" /> if the <see langword="set" /> accessor is not public.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetSetMethod%2A> method returns the public `set` accessor for this property.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetSetMethod%2A> method returns the public `set` accessor for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -562,12 +562,12 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetSetMethod%2A> method returns the `set` accessor for this property.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetSetMethod%2A> method returns the `set` accessor for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -591,12 +591,12 @@
         <returns>A <see cref="T:System.Type" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Object.GetType%2A> method gets the type of the current instance.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Object.GetType%2A> method gets the type of the current instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -626,10 +626,10 @@
         <summary>Retrieves the type information for an object, which can be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -655,10 +655,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -687,12 +687,12 @@
         <returns>The property value for the <paramref name="obj" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetValue%2A> method returns a literal value associated with the property by a compiler.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetValue%2A> method returns a literal value associated with the property by a compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -727,12 +727,12 @@
         <returns>The property value for the <paramref name="obj" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetValue%2A> method returns the value of a property having the specified binding, index, and <xref:System.Globalization.CultureInfo>.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetValue%2A> method returns the value of a property having the specified binding, index, and <xref:System.Globalization.CultureInfo>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -772,10 +772,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -805,12 +805,12 @@
           <see langword="true" /> if one or more instances of the <paramref name="attributeType" /> parameter are applied to this member; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.IsDefined%2A> method indicates whether one or more instance of the `attributeType` parameter is applied to this member.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.IsDefined%2A> method indicates whether one or more instance of the `attributeType` parameter is applied to this member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -834,12 +834,12 @@
           <see langword="true" /> if this property is the special name; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.IsSpecialName%2A> property sets a value indicating whether the property is the special name.  
-  
+This property is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.IsSpecialName%2A> property sets a value indicating whether the property is the special name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -862,12 +862,12 @@
         <value>One of the <see cref="T:System.Reflection.MemberTypes" /> values indicating that this member is a property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.MemberType%2A> property gets a <xref:System.Reflection.MemberTypes> value indicating that this member is a property.  
-  
+This property is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.MemberType%2A> property gets a <xref:System.Reflection.MemberTypes> value indicating that this member is a property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -890,12 +890,12 @@
         <value>A <see cref="T:System.String" /> object containing the name of this member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.Name%2A> property gets the name of the current member.  
-  
+This property is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.Name%2A> property gets the name of the current member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -918,12 +918,12 @@
         <value>The type of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.PropertyType%2A> property gets the type of this property.  
-  
+This property is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.PropertyType%2A> property gets the type of this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -946,12 +946,12 @@
         <value>The <see cref="T:System.Type" /> object through which this <see cref="T:System.Reflection.MemberInfo" /> object was obtained.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.ReflectedType%2A> property gets the class object that was used to obtain this <xref:System.Reflection.MemberInfo> object.  
-  
+This property is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.ReflectedType%2A> property gets the class object that was used to obtain this <xref:System.Reflection.MemberInfo> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -981,12 +981,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.PropertyInfo.SetValue(System.Object,System.Object,System.Object[])" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.SetValue%2A> method sets the value of the property with optional index values for index properties.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.SetValue%2A> method sets the value of the property with optional index values for index properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1022,12 +1022,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.FieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.FieldInfo.SetValue%2A> method sets the property value for the given object to the given value.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.FieldInfo.SetValue%2A> method sets the property value for the given object to the given value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1051,10 +1051,10 @@
         <returns>A string that represents the current <see cref="T:System.Object" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1069,12 +1069,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetValue" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetValue%2A> methods return the value of the property.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetValue%2A> methods return the value of the property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1089,12 +1089,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetAccessors" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetAccessors%2A> methods return an array of the `get` and `set` accessors on this property.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetAccessors%2A> methods return an array of the `get` and `set` accessors on this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1109,12 +1109,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.MemberInfo.GetCustomAttributes" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> methods return all attributes applied to this member.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> methods return all attributes applied to this member.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1129,12 +1129,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.SetValue" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.SetValue%2A> method sets the property value for the given object to the given value.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.SetValue%2A> method sets the property value for the given object to the given value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1149,12 +1149,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetGetMethod" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetGetMethod%2A> methods return a <xref:System.Reflection.MethodInfo> object representing the `get` accessor for this property.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetGetMethod%2A> methods return a <xref:System.Reflection.MethodInfo> object representing the `get` accessor for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1169,12 +1169,12 @@
         <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetSetMethod" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetSetMethod%2A> methods return a <xref:System.Reflection.MethodInfo> object representing the `set` accessor for this property.  
-  
+This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+ 
+The <xref:System.Reflection.PropertyInfo.GetSetMethod%2A> methods return a <xref:System.Reflection.MethodInfo> object representing the `set` accessor for this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

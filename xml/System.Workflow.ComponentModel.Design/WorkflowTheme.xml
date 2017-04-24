@@ -23,16 +23,16 @@
     <summary>Provides the look and feel property settings to a workflow in design-time environment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Workflow themes define the look and feel of a workflow design surface. This includes background styles, foreground styles, fonts, and icons defined for the workflow.  
-  
- A <xref:System.Workflow.ComponentModel.Design.WorkflowTheme> is a theme defined for a specific workflow. The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> class can be used for default properties if a specific workflow theme is not desired.  
-  
+ 
+Workflow themes define the look and feel of a workflow design surface. This includes background styles, foreground styles, fonts, and icons defined for the workflow.  
+ 
+A <xref:System.Workflow.ComponentModel.Design.WorkflowTheme> is a theme defined for a specific workflow. The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> class can be used for default properties if a specific workflow theme is not desired.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,18 +74,18 @@
         <value>An <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> that describes default values for the look and feel of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> describes the look and feel of a workflow design surface. This includes background styles, foreground styles, fonts, and icons defined for the workflow design surface.  
+The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> describes the look and feel of a workflow design surface. This includes background styles, foreground styles, fonts, and icons defined for the workflow design surface.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to access the `AmbientTheme` property. This example is from the Tracking Profile Designer SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
-  
- [!code-csharp[Wf_samples#124](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#124)]
- [!code-vb[Wf_samples#124](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#124)]  
-  
+The following example demonstrates how to access the `AmbientTheme` property. This example is from the Tracking Profile Designer SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ 
+[!code-csharp[Wf_samples#124](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#124)]
+[!code-vb[Wf_samples#124](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#124)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
         <returns>An object that represents the newly-cloned theme.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use `Clone` to create a duplicate theme with property settings that match the cloning theme.  
-  
+Use `Clone` to create a duplicate theme with property settings that match the cloning theme.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <value>The directory part of the <see cref="P:System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.ContainingFileDirectory%2A> to get the directory part of the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath%2A>.  
-  
+Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.ContainingFileDirectory%2A> to get the directory part of the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <returns>The newly created <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.CreateStandardTheme%2A> to create a new theme available anyone who uses the workflow designer.  
-  
+Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.CreateStandardTheme%2A> to create a new theme available anyone who uses the workflow designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,20 +192,20 @@
         <value>A <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> that is used for display settings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.CurrentTheme%2A> to make changes to the theme used to display the workflow.  
+Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.CurrentTheme%2A> to make changes to the theme used to display the workflow.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.CurrentTheme%2A> property to access the <xref:System.Workflow.ComponentModel.Design.AmbientTheme> associated with a workflow.  
-  
- This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
-  
- [!code-csharp[WF_Samples#133](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#133)]
- [!code-vb[WF_Samples#133](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#133)]  
-  
+The following code example shows how to use the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.CurrentTheme%2A> property to access the <xref:System.Workflow.ComponentModel.Design.AmbientTheme> associated with a workflow.  
+ 
+This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ 
+[!code-csharp[WF_Samples#133](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#133)]
+[!code-vb[WF_Samples#133](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#133)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <value>A list of designer themes associated with the workflow.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.DesignerThemes%2A> to retrieve a list of designer themes that are associated with the workflow.  
-  
+Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.DesignerThemes%2A> to retrieve a list of designer themes that are associated with the workflow.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -277,10 +277,10 @@
           <see langword="true" /> to enable change notification; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enabling change notification causes the theme changed events to occur when changes to the theme are made.  
-  
+Enabling change notification causes the theme changed events to occur when changes to the theme are made.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,10 +310,10 @@
         <value>The file path for the theme.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath%2A> represents the path to the file that stores the theme settings.  
-  
+The <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath%2A> represents the path to the file that stores the theme settings.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The property value cannot be set because the workflow theme is read-only.</exception>
@@ -336,10 +336,10 @@
         <summary>When overridden in a derived class, allows an object to clean up any resources deterministically.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method cleans up resources by calling <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.System%23IDisposable%23Dispose%2A>(`false`). Override <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.System%23IDisposable%23Dispose%2A> to customize the cleanup.  
-  
+This method cleans up resources by calling <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.System%23IDisposable%23Dispose%2A>(`false`). Override <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.System%23IDisposable%23Dispose%2A> to customize the cleanup.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,10 +362,10 @@
         <returns>A new, unique file path for the theme.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.GenerateThemeFilePath%2A> to create a unique file path for the theme.  
-  
+Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.GenerateThemeFilePath%2A> to create a unique file path for the theme.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,10 +396,10 @@
         <returns>The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> associated with the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.GetDesignerTheme%2A> to retrieve the theme associated with a specified activity designer.  
-  
+Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.GetDesignerTheme%2A> to retrieve the theme associated with a specified activity designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -449,10 +449,10 @@
         <returns>A new <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> loaded from the file path specified using the serialization manager specified.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If your theme requires custom serialization, use this method to load your method using your custom serialization manager.  
-  
+If your theme requires custom serialization, use this method to load your method using your custom serialization manager.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -475,10 +475,10 @@
         <returns>A <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> loaded from the registry.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `LoadThemeSettingFromRegistry` loads  
-  
+`LoadThemeSettingFromRegistry` loads  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -500,10 +500,10 @@
         <value>The file path from the registry to the theme.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `FilePath` represents the path to the file that stores the theme settings.  
-  
+The `FilePath` represents the path to the file that stores the theme settings.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,10 +525,10 @@
         <value>The name of the theme.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the name to uniquely identify the theme among other themes.  
-  
+Use the name to uniquely identify the theme among other themes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The property value cannot be set because the workflow theme is read-only.</exception>
@@ -557,13 +557,13 @@
           <see langword="true" /> if the workflow theme is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set and un-set the `ReadOnly` property for the purposes of setting the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. This example is from the Tracking Profile Designer SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
-  
- [!code-csharp[Wf_samples#124](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#124)]
- [!code-vb[Wf_samples#124](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#124)]  
-  
+The following example shows how to set and un-set the `ReadOnly` property for the purposes of setting the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. This example is from the Tracking Profile Designer SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ 
+[!code-csharp[Wf_samples#124](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#124)]
+[!code-vb[Wf_samples#124](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#124)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,10 +585,10 @@
         <value>The registry key path for the theme.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the registry key to provide a unique place in the Windows registry to save theme information.  
-  
+Use the registry key to provide a unique place in the Windows registry to save theme information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -613,10 +613,10 @@
         <summary>Saves a theme to a file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.Save%2A> to persist a theme to a file.  
-  
+Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.Save%2A> to persist a theme to a file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -638,10 +638,10 @@
         <summary>Saves a theme to the registry.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.SaveThemeSettingToRegistry%2A> to save the theme to the registry using the key specified by <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.RegistryKeyPath%2A>.  
-  
+Use <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.SaveThemeSettingToRegistry%2A> to save the theme to the registry using the key specified by <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.RegistryKeyPath%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -698,10 +698,10 @@
         <summary>Occurs when a theme changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.ThemeChanged> occurs when properties of the theme changes, or when a theme is loaded.  
-  
+<xref:System.Workflow.ComponentModel.Design.WorkflowTheme.ThemeChanged> occurs when properties of the theme changes, or when a theme is loaded.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -746,10 +746,10 @@
         <value>The version information for the theme.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the version information to indicate successive improvements to a named theme.  
-  
+Use the version information to indicate successive improvements to a named theme.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The property value cannot be set because the workflow theme is read-only.</exception>

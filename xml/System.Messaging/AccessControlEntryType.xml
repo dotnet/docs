@@ -13,12 +13,12 @@
     <summary>Specifies whether to allow, deny, or revoke access rights for a trustee.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use the <xref:System.Messaging.AccessControlEntry> class to specify a new access right for a trustee, you set its <xref:System.Messaging.AccessControlEntry.EntryType%2A> property to describe whether to grant the right or deny it. Furthermore, you can define whether the new right is appended to an existing list (if the trustee already exists in the context for which you are adding or removing access privileges) or if the new right overwrites and deletes any previously defined rights.  
-  
- When creating a new `Allow` entry, there might be a preexisting `Deny` entry for the same trustee that takes precedence and must be addressed. Similarly, when creating a new `Deny` entry, there might be an existing `Allow` entry that takes precedence. For information about the order in which access rights are applied, see <xref:System.Messaging.AccessControlList>.  
-  
+When you use the <xref:System.Messaging.AccessControlEntry> class to specify a new access right for a trustee, you set its <xref:System.Messaging.AccessControlEntry.EntryType%2A> property to describe whether to grant the right or deny it. Furthermore, you can define whether the new right is appended to an existing list (if the trustee already exists in the context for which you are adding or removing access privileges) or if the new right overwrites and deletes any previously defined rights.  
+ 
+When creating a new `Allow` entry, there might be a preexisting `Deny` entry for the same trustee that takes precedence and must be addressed. Similarly, when creating a new `Deny` entry, there might be an existing `Allow` entry that takes precedence. For information about the order in which access rights are applied, see <xref:System.Messaging.AccessControlList>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

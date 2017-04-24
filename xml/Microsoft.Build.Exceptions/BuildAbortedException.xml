@@ -14,10 +14,10 @@
     <summary>An exception representing the case where the build was aborted by request, as opposed to being unceremoniously shut down due to another kind of error exception.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you add fields to this class, add a custom serialization constructor and override GetObjectData().  
-  
+If you add fields to this class, add a custom serialization constructor and override GetObjectData().  
+ 
  ]]></format>
     </remarks>
   </Docs>

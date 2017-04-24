@@ -28,33 +28,33 @@
     <summary>Specifies whether a property can only be set at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Members marked with the <xref:System.ComponentModel.DesignOnlyAttribute> set to `true` can be set only at design time. Typically, these properties exist only at design time and do not correspond to a real property on the object at run time.  
+Members marked with the <xref:System.ComponentModel.DesignOnlyAttribute> set to `true` can be set only at design time. Typically, these properties exist only at design time and do not correspond to a real property on the object at run time.  
+ 
+Members that either have no attribute or are marked with the <xref:System.ComponentModel.DesignOnlyAttribute> set to `false` can be set during run time. The default is `false`.  
+ 
+A property with the <xref:System.ComponentModel.DesignOnlyAttribute> set to `true` has its value serialized to the .resx file instead of the `InitializeComponent` method.  
+ 
+For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- Members that either have no attribute or are marked with the <xref:System.ComponentModel.DesignOnlyAttribute> set to `false` can be set during run time. The default is `false`.  
-  
- A property with the <xref:System.ComponentModel.DesignOnlyAttribute> set to `true` has its value serialized to the .resx file instead of the `InitializeComponent` method.  
-  
- For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a `GetLanguage` property. The property is marked with a <xref:System.ComponentModel.DesignOnlyAttribute>.  
-  
- [!code-cpp[Classic DesignOnlyAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DesignOnlyAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic DesignOnlyAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/VB/source.vb#1)]  
-  
- The next example gets the value of the <xref:System.ComponentModel.DesignOnlyAttribute>. First the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Next it indexes into the <xref:System.ComponentModel.PropertyDescriptorCollection> to find the `GetLanguage` property. Then it returns the attributes for this property and saves them in the attributes variable.  
-  
- The example then prints whether the property is design only by retrieving <xref:System.ComponentModel.DesignOnlyAttribute> from the <xref:System.ComponentModel.AttributeCollection>, and writing it to the console screen.  
-  
- [!code-cpp[Classic DesignOnlyAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CPP/source.cpp#2)]
- [!code-csharp[Classic DesignOnlyAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CS/source.cs#2)]
- [!code-vb[Classic DesignOnlyAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/VB/source.vb#2)]  
-  
+The following example creates a `GetLanguage` property. The property is marked with a <xref:System.ComponentModel.DesignOnlyAttribute>.  
+ 
+[!code-cpp[Classic DesignOnlyAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DesignOnlyAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic DesignOnlyAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/VB/source.vb#1)]  
+ 
+The next example gets the value of the <xref:System.ComponentModel.DesignOnlyAttribute>. First the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Next it indexes into the <xref:System.ComponentModel.PropertyDescriptorCollection> to find the `GetLanguage` property. Then it returns the attributes for this property and saves them in the attributes variable.  
+ 
+The example then prints whether the property is design only by retrieving <xref:System.ComponentModel.DesignOnlyAttribute> from the <xref:System.ComponentModel.AttributeCollection>, and writing it to the console screen.  
+ 
+[!code-cpp[Classic DesignOnlyAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CPP/source.cpp#2)]
+[!code-csharp[Classic DesignOnlyAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CS/source.cs#2)]
+[!code-vb[Classic DesignOnlyAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -251,10 +251,10 @@
         <summary>Specifies that a property can be set at design time or at run time. This <see langword="static" /> field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DesignOnlyAttribute.No> field is the default setting for this attribute.  
-  
+The <xref:System.ComponentModel.DesignOnlyAttribute.No> field is the default setting for this attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>

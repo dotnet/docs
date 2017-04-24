@@ -30,13 +30,13 @@
     <summary>Represents an infinite loop. It can be exited with "break".</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create a block expression that contains a <xref:System.Linq.Expressions.LoopExpression> object by using the <xref:System.Linq.Expressions.Expression.Loop%2A> method.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#44](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#44)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#44](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#44)]  
-  
+The following example demonstrates how to create a block expression that contains a <xref:System.Linq.Expressions.LoopExpression> object by using the <xref:System.Linq.Expressions.Expression.Loop%2A> method.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#44](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#44)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#44](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#44)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

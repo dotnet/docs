@@ -22,10 +22,10 @@
     <summary>Retrieves instances of a specific entity type by using a complex query.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data source controls that derive from <xref:System.Web.UI.WebControls.IQueryableDataSource> expose the data source query that enables you to create LINQ queries declaratively. You can create new expressions by deriving from <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression>.  
-  
+Data source controls that derive from <xref:System.Web.UI.WebControls.IQueryableDataSource> expose the data source query that enables you to create LINQ queries declaratively. You can create new expressions by deriving from <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <returns>An instance of the data source control that was used to resolve the expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Expressions.QueryExpression.GetQueryable%2A> method uses the specified <xref:System.Linq.IQueryable> object to resolve the expression.  
-  
+The <xref:System.Web.UI.WebControls.Expressions.QueryExpression.GetQueryable%2A> method uses the specified <xref:System.Linq.IQueryable> object to resolve the expression.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents an HTTP module that performs claims-based authorization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class enables claims-based authorization by serving as an HTTP module in the HTTP processing pipeline.  
-  
+This class enables claims-based authorization by serving as an HTTP module in the HTTP processing pipeline.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
           <see langword="true" /> if the principal is authorized; otherwise, <see langword="false" />. The default is <see langword="true" /> if no claims authentication manager is associated with this module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The claims authentication manager specified in the <xref:System.IdentityModel.Services.ClaimsAuthorizationModule.ClaimsAuthorizationManager%2A> property is invoked to authorize the request.  
-  
+The claims authentication manager specified in the <xref:System.IdentityModel.Services.ClaimsAuthorizationModule.ClaimsAuthorizationManager%2A> property is invoked to authorize the request.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:System.Security.Claims.ClaimsPrincipal" /> associated with the request is not authorized.</exception>
@@ -140,10 +140,10 @@
         <summary>Initializes the module properties based on definitions in the configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializes the <xref:System.IdentityModel.Services.ClaimsAuthorizationModule.ClaimsAuthorizationManager%2A> property from the claims authorization manager that is specified in configuration by the <xref:System.IdentityModel.Configuration.IdentityConfiguration.ClaimsAuthorizationManager%2A?displayProperty=fullName> property on the <xref:System.IdentityModel.Configuration.IdentityConfiguration> object set on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. You can specify the claims authentication manager in a configuration file through the [\&lt;claimsAuthorizationManager\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/claimsauthorizationmanager.md) element.  
-  
+Initializes the <xref:System.IdentityModel.Services.ClaimsAuthorizationModule.ClaimsAuthorizationManager%2A> property from the claims authorization manager that is specified in configuration by the <xref:System.IdentityModel.Configuration.IdentityConfiguration.ClaimsAuthorizationManager%2A?displayProperty=fullName> property on the <xref:System.IdentityModel.Configuration.IdentityConfiguration> object set on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. You can specify the claims authentication manager in a configuration file through the [\&lt;claimsAuthorizationManager\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/claimsauthorizationmanager.md) element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

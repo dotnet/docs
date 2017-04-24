@@ -32,13 +32,13 @@
     <summary>Provides task schedulers that coordinate to execute tasks while ensuring that concurrent tasks may run concurrently and exclusive tasks never do.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair> class. Readers run on the concurrent part of the scheduler. The writer runs on the exclusive part of the scheduler. This code example is part of a larger example provided for the [How to: Specify a Task Scheduler in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md) topic.  
-  
- [!code-csharp[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#4)]
- [!code-vb[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#4)]  
-  
+The following example shows the use of the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair> class. Readers run on the concurrent part of the scheduler. The writer runs on the exclusive part of the scheduler. This code example is part of a larger example provided for the [How to: Specify a Task Scheduler in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md) topic.  
+ 
+[!code-csharp[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#4)]
+[!code-vb[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,13 +67,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.%23ctor%2A> constructor to create a new <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair> object. This code example is part of a larger example provided for the [How to: Specify a Task Scheduler in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md) topic.  
-  
- [!code-csharp[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#4)]
- [!code-vb[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#4)]  
-  
+The following example shows the use of the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.%23ctor%2A> constructor to create a new <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair> object. This code example is part of a larger example provided for the [How to: Specify a Task Scheduler in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md) topic.  
+ 
+[!code-csharp[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#4)]
+[!code-vb[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
         <summary>Informs the scheduler pair that it should not accept any more tasks.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Complete%2A> is optional. It is necessary only if you're relying on the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Completion%2A> property for notification that all processing has been completed.  
-  
+Calling <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Complete%2A> is optional. It is necessary only if you're relying on the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Completion%2A> property for notification that all processing has been completed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,13 +258,13 @@
         <value>An object that can be used to schedule tasks concurrently.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler%2A> property to run a reader. This code example is part of a larger example provided for the [How to: Specify a Task Scheduler in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md) topic.  
-  
- [!code-csharp[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#4)]
- [!code-vb[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#4)]  
-  
+The following example shows the use of the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler%2A> property to run a reader. This code example is part of a larger example provided for the [How to: Specify a Task Scheduler in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md) topic.  
+ 
+[!code-csharp[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#4)]
+[!code-vb[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,13 +296,13 @@
         <value>An object that can be used to schedule tasks that do not run concurrently with other tasks.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler%2A> property to run a writer. This code example is part of a larger example provided for the [How to: Specify a Task Scheduler in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md) topic.  
-  
- [!code-csharp[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#4)]
- [!code-vb[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#4)]  
-  
+The following example shows the use of the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler%2A> property to run a writer. This code example is part of a larger example provided for the [How to: Specify a Task Scheduler in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md) topic.  
+ 
+[!code-csharp[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#4)]
+[!code-vb[TPLDataflow_WriterReadersWinForms#4](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

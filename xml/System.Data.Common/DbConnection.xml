@@ -89,10 +89,10 @@
         <returns>An object representing the new transaction.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you are creating your own connection type, override this method to implement the code necessary to begin a transaction.  
-  
+If you are creating your own connection type, override this method to implement the code necessary to begin a transaction.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <returns>An object representing the new transaction.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not specify an isolation level, the default isolation level for the specific type of connection is used.  
-  
+If you do not specify an isolation level, the default isolation level for the specific type of connection is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,10 +192,10 @@
         <summary>Changes the current database for an open connection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value supplied in the `databaseName` parameter must be a valid database name for the current instance.  
-  
+The value supplied in the `databaseName` parameter must be a valid database name for the current instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,17 +226,17 @@
         <summary>Closes the connection to the database. This is the preferred method of closing any open connection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.DbConnection.Close%2A> method rolls back any pending transactions. It then releases the connection to the connection pool, or closes the connection if connection pooling is disabled.  
-  
- An application can call <xref:System.Data.Common.DbConnection.Close%2A> more than one time. No exception is generated.  
-  
- If the <xref:System.Data.Common.DbConnection> goes out of scope, it is not closed. Therefore, you must explicitly close the connection by calling `Close` or `Dispose`, which are functionally equivalent. If the connection pooling value `Pooling` is set to `true` or `yes`, this also releases the physical connection.  
-  
+The <xref:System.Data.Common.DbConnection.Close%2A> method rolls back any pending transactions. It then releases the connection to the connection pool, or closes the connection if connection pooling is disabled.  
+ 
+An application can call <xref:System.Data.Common.DbConnection.Close%2A> more than one time. No exception is generated.  
+ 
+If the <xref:System.Data.Common.DbConnection> goes out of scope, it is not closed. Therefore, you must explicitly close the connection by calling `Close` or `Dispose`, which are functionally equivalent. If the connection pooling value `Pooling` is set to `true` or `yes`, this also releases the physical connection.  
+ 
 > [!CAUTION]
 >  Do not call `Close` or `Dispose` on a **Connection**, a **DataReader**, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">The connection-level error that occurred while opening the connection.</exception>
@@ -282,10 +282,10 @@
         <value>The connection string used to establish the initial connection. The exact contents of the connection string depend on the specific data source for this connection. The default value is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The exact contents of the connection string depend on the specific data source for this connection. To determine which settings are valid, see the documentation for the specific type of connection that you are using.  
-  
+The exact contents of the connection string depend on the specific data source for this connection. To determine which settings are valid, see the documentation for the specific type of connection that you are using.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,10 +372,10 @@
         <returns>A <see cref="T:System.Data.Common.DbCommand" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you are implementing your own connection, override this method to implement the code necessary to create and return a <xref:System.Data.Common.DbCommand> object.  
-  
+If you are implementing your own connection, override this method to implement the code necessary to create and return a <xref:System.Data.Common.DbCommand> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,10 +406,10 @@
         <value>The name of the current database or the name of the database to be used after a connection is opened. The default value is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A connection typically updates this property dynamically when the current database changes.  
-  
+A connection typically updates this property dynamically when the current database changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,10 +440,10 @@
         <value>The name of the database server to which to connect. The default value is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the connection to the database is closed, the <xref:System.Data.Common.DbConnection.DataSource%2A> returns whatever is contained in the <xref:System.Data.Common.DbConnection.ConnectionString%2A> for the `DataSource` keyword. If the connection is open and the <xref:System.Data.Common.DbConnection.ConnectionString%2A> data source keyword's value starts with "&#124;`datadirectory`&#124;", the property returns whatever is contained in the <xref:System.Data.Common.DbConnection.ConnectionString%2A> for the `DataSource` keyword only. If the connection to the database is open, the property returns what the native provider returns for the `DBPROP_INIT_DATASOURCE`, and if that is empty, the native provider's `DBPROP_DATASOURCENAME` is returned.  
-  
+If the connection to the database is closed, the <xref:System.Data.Common.DbConnection.DataSource%2A> returns whatever is contained in the <xref:System.Data.Common.DbConnection.ConnectionString%2A> for the `DataSource` keyword. If the connection is open and the <xref:System.Data.Common.DbConnection.ConnectionString%2A> data source keyword's value starts with "&#124;`datadirectory`&#124;", the property returns whatever is contained in the <xref:System.Data.Common.DbConnection.ConnectionString%2A> for the `DataSource` keyword only. If the connection to the database is open, the property returns what the native provider returns for the `DBPROP_INIT_DATASOURCE`, and if that is empty, the native provider's `DBPROP_DATASOURCENAME` is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -535,10 +535,10 @@
         <summary>Enlists in the specified transaction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- New in ADO.NET 2.0 is support for using the `EnlistTransaction` method to enlist in a distributed transaction. Because it enlists a connection in a <xref:System.Transactions.Transaction> instance, `EnlistTransaction` takes advantage of functionality available in the <xref:System.Transactions> namespace for managing distributed transactions. Once a connection is explicitly enlisted in a transaction, it cannot be unenlisted or enlisted in another transaction until the first transaction finishes.  
-  
+New in ADO.NET 2.0 is support for using the `EnlistTransaction` method to enlist in a distributed transaction. Because it enlists a connection in a <xref:System.Transactions.Transaction> instance, `EnlistTransaction` takes advantage of functionality available in the <xref:System.Transactions> namespace for managing distributed transactions. Once a connection is explicitly enlisted in a transaction, it cannot be unenlisted or enlisted in another transaction until the first transaction finishes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -566,10 +566,10 @@
         <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the connection is associated with a transaction, executing `GetSchema` calls may cause some providers to throw an exception.  
-  
+If the connection is associated with a transaction, executing `GetSchema` calls may cause some providers to throw an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -600,10 +600,10 @@
         <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the connection is associated with a transaction, executing `GetSchema` calls may cause some providers to throw an exception.  
-  
+If the connection is associated with a transaction, executing `GetSchema` calls may cause some providers to throw an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -638,14 +638,14 @@
         <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `restrictionValues` parameter can supply *n* depth of values, which are specified by the restrictions collection for a specific collection. In order to set values on a given restriction, and not set the values of other restrictions, you need to set the preceding restrictions to null and then put the appropriate value in for the restriction that you would like to specify a value for.  
-  
- An example of this is the "Tables" collection. If the "Tables" collection has three restrictions (database, owner, and table name) and you want to get back only the tables associated with the owner "Carl", you must pass in the following values at least: null, "Carl". If a restriction value is not passed in, the default values are used for that restriction. This is the same mapping as passing in null, which is different from passing in an empty string for the parameter value. In that case, the empty string ("") is considered to be the value for the specified parameter.  
-  
- If the connection is associated with a transaction, executing `GetSchema` calls may cause some providers to throw an exception.  
-  
+The `restrictionValues` parameter can supply *n* depth of values, which are specified by the restrictions collection for a specific collection. In order to set values on a given restriction, and not set the values of other restrictions, you need to set the preceding restrictions to null and then put the appropriate value in for the restriction that you would like to specify a value for.  
+ 
+An example of this is the "Tables" collection. If the "Tables" collection has three restrictions (database, owner, and table name) and you want to get back only the tables associated with the owner "Carl", you must pass in the following values at least: null, "Carl". If a restriction value is not passed in, the default values are used for that restriction. This is the same mapping as passing in null, which is different from passing in an empty string for the parameter value. In that case, the empty string ("") is considered to be the value for the specified parameter.  
+ 
+If the connection is associated with a transaction, executing `GetSchema` calls may cause some providers to throw an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -681,10 +681,10 @@
         <summary>Raises the <see cref="E:System.Data.Common.DbConnection.StateChange" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
+Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -718,10 +718,10 @@
         <summary>Opens a database connection with the settings specified by the <see cref="P:System.Data.Common.DbConnection.ConnectionString" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method must be overridden with user-defined behavior. <xref:System.Data.SqlClient.SqlConnection.Open%2A?displayProperty=fullName> will throw an exception if called again without first being closed.  
-  
+This method must be overridden with user-defined behavior. <xref:System.Data.SqlClient.SqlConnection.Open%2A?displayProperty=fullName> will throw an exception if called again without first being closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -753,14 +753,14 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After calling <xref:System.Data.Common.DbConnection.OpenAsync%2A>, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>. If the connection fails, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>.  
-  
- A call to <xref:System.Data.Common.DbConnection.Close%2A> will attempt to cancel or close the corresponding <xref:System.Data.Common.DbConnection.OpenAsync%2A> call.  
-  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+After calling <xref:System.Data.Common.DbConnection.OpenAsync%2A>, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>. If the connection fails, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>.  
+ 
+A call to <xref:System.Data.Common.DbConnection.Close%2A> will attempt to cancel or close the corresponding <xref:System.Data.Common.DbConnection.OpenAsync%2A> call.  
+ 
+For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -799,14 +799,14 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After calling <xref:System.Data.Common.DbConnection.OpenAsync%2A>, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>. If the connection fails, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>.  
-  
- A call to <xref:System.Data.Common.DbConnection.Close%2A> will attempt to cancel or close the corresponding <xref:System.Data.Common.DbConnection.OpenAsync%2A> call.  
-  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+After calling <xref:System.Data.Common.DbConnection.OpenAsync%2A>, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>. If the connection fails, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>.  
+ 
+A call to <xref:System.Data.Common.DbConnection.Close%2A> will attempt to cancel or close the corresponding <xref:System.Data.Common.DbConnection.OpenAsync%2A> call.  
+ 
+For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -902,10 +902,10 @@
         <summary>Occurs when the state of the event changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.DbConnection.StateChange> event occurs when the state of the event changes from closed to opened, or opened to closed.  
-  
+The <xref:System.Data.Common.DbConnection.StateChange> event occurs when the state of the event changes from closed to opened, or opened to closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -937,12 +937,12 @@
         <returns>An object that represents the new transaction.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbConnection> instance is cast to an <xref:System.Data.IDbConnection> interface.  
-  
- For more information, see <xref:System.Data.IDbConnection.BeginTransaction%2A>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbConnection> instance is cast to an <xref:System.Data.IDbConnection> interface.  
+ 
+For more information, see <xref:System.Data.IDbConnection.BeginTransaction%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -977,10 +977,10 @@
         <returns>An object that represents the new transaction.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Data.IDbConnection.BeginTransaction%2A>.  
-  
+For more information, see <xref:System.Data.IDbConnection.BeginTransaction%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1012,10 +1012,10 @@
         <returns>A <see cref="T:System.Data.Common.DbCommand" /> object that is associated with the connection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Commands and Parameters](~/docs/framework/data/adonet/commands-and-parameters.md) and <xref:System.Data.IDbConnection.CreateCommand%2A>.  
-  
+For more information, see [Commands and Parameters](~/docs/framework/data/adonet/commands-and-parameters.md) and <xref:System.Data.IDbConnection.CreateCommand%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1030,10 +1030,10 @@
         <summary>This method implements an asynchronous version of <see cref="M:System.Data.Common.DbConnection.Open" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1048,10 +1048,10 @@
         <summary>Returns schema information for the data source of this <see cref="T:System.Data.Common.DbConnection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the connection is associated with a transaction, executing `GetSchema` calls may cause some providers to throw an exception.  
-  
+If the connection is associated with a transaction, executing `GetSchema` calls may cause some providers to throw an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1065,10 +1065,10 @@
         <summary>Starts a database transaction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not specify an isolation level, the default isolation level for the specific type of connection is used.  
-  
+If you do not specify an isolation level, the default isolation level for the specific type of connection is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

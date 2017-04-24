@@ -31,28 +31,28 @@
     <summary>Indicates whether a method is marked with either the [Async](~/docs/visual-basic/language-reference/modifiers/async.md) or [async](~/docs/csharp/language-reference/keywords/async.md) modifier.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You shouldn't apply the `AsyncStateMachine` attribute to methods in your code. For methods that have the async modifier, the compiler will apply the `AsyncStateMachine` attribute in the IL that the compiler emits.  
+You shouldn't apply the `AsyncStateMachine` attribute to methods in your code. For methods that have the async modifier, the compiler will apply the `AsyncStateMachine` attribute in the IL that the compiler emits.  
+ 
+When a method (*MethodName*) has the Async or async modifier, the compiler emits IL that includes a state machine structure. This structure contains the code in the method. That IL also contains a stub method (*MethodName*) that calls into the state machine. The compiler adds the `AsyncStateMachine` attribute to the stub method so that tools can identify the corresponding state machine. Details of the emitted IL might change in future releases of the compilers.  
+ 
+For information about the Async feature, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
+ 
   
- When a method (*MethodName*) has the Async or async modifier, the compiler emits IL that includes a state machine structure. This structure contains the code in the method. That IL also contains a stub method (*MethodName*) that calls into the state machine. The compiler adds the `AsyncStateMachine` attribute to the stub method so that tools can identify the corresponding state machine. Details of the emitted IL might change in future releases of the compilers.  
-  
- For information about the Async feature, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
-  
-   
-  
+ 
 ## Examples  
- As the following example shows, you can determine whether a method is marked with [Async](~/docs/visual-basic/language-reference/modifiers/async.md) or [async](~/docs/csharp/language-reference/keywords/async.md) modifier. In the example, `IsAsyncMethod` performs the following steps:  
-  
+As the following example shows, you can determine whether a method is marked with [Async](~/docs/visual-basic/language-reference/modifiers/async.md) or [async](~/docs/csharp/language-reference/keywords/async.md) modifier. In the example, `IsAsyncMethod` performs the following steps:  
+ 
 -   Obtains a <xref:System.Reflection.MethodInfo> object for the method name by using <xref:System.Type.GetMethod%2A?displayProperty=fullName>.  
-  
+ 
 -   Obtains a <xref:System.Type> object for the attribute by using [GetType Operator](~/docs/visual-basic/language-reference/operators/gettype-operator.md) or [typeof](~/docs/csharp/language-reference/keywords/typeof.md).  
-  
+ 
 -   Obtains an attribute object for the method and attribute type by using `MethodInfo.GetCustomAttribute`. If `GetCustomAttribute` returns `Nothing` (Visual Basic) or `null` (C#), the method doesn't contain the attribute.  
-  
- [!code-csharp[Runtime.CompilerServices.AsyncStateMachineAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/runtime.compilerservices.asyncstatemachineattribute/cs/program.cs#1)]
- [!code-vb[Runtime.CompilerServices.AsyncStateMachineAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/runtime.compilerservices.asyncstatemachineattribute/vb/module1.vb#1)]  
-  
+ 
+[!code-csharp[Runtime.CompilerServices.AsyncStateMachineAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/runtime.compilerservices.asyncstatemachineattribute/cs/program.cs#1)]
+[!code-vb[Runtime.CompilerServices.AsyncStateMachineAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/runtime.compilerservices.asyncstatemachineattribute/vb/module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

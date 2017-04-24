@@ -19,10 +19,10 @@
     <summary>Initializes correlation without sending or receiving a message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically correlation is initialized by sending or receiving a message. If correlation must be initialized before a message is sent or received, <xref:System.ServiceModel.Activities.InitializeCorrelation> can be used to initialize the correlation.  
-  
+Typically correlation is initialized by sending or receiving a message. If correlation must be initialized before a message is sent or received, <xref:System.ServiceModel.Activities.InitializeCorrelation> can be used to initialize the correlation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <value>The correlation handle.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <value>A dictionary of correlation data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

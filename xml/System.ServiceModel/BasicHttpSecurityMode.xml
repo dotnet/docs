@@ -14,14 +14,14 @@
     <summary>Specifies the types of security that can be used with the system-provided <see cref="T:System.ServiceModel.BasicHttpBinding" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Security in this context means message protection (integrity and confidentiality) as well as client and service authentication.  
-  
- Actual protection requirements (the specific parts of SOAP messages that must be signed or signed and encrypted) are controlled through attributes on the service contract or through properties in the contract description. Properties on the binding do not control what is being signed or encrypted: a binding only delivers the general capability of signing and encrypting.  
-  
- The default behavior for the <xref:System.ServiceModel.BasicHttpBinding> is None.  
-  
+Security in this context means message protection (integrity and confidentiality) as well as client and service authentication.  
+ 
+Actual protection requirements (the specific parts of SOAP messages that must be signed or signed and encrypted) are controlled through attributes on the service contract or through properties in the contract description. Properties on the binding do not control what is being signed or encrypted: a binding only delivers the general capability of signing and encrypting.  
+ 
+The default behavior for the <xref:System.ServiceModel.BasicHttpBinding> is None.  
+ 
  ]]></format>
     </remarks>
   </Docs>

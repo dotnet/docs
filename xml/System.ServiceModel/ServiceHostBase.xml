@@ -21,28 +21,28 @@
     <summary>Extends the <see cref="T:System.ServiceModel.ServiceHostBase" /> class to implement hosts that expose custom programming models.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.ServiceHostBase> class to create hosts that provide a custom programming model. The [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service programming model uses the <xref:System.ServiceModel.ServiceHost> class.  
-  
- Special note for Managed C++ users deriving from this class:  
-  
+Use the <xref:System.ServiceModel.ServiceHostBase> class to create hosts that provide a custom programming model. The [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service programming model uses the <xref:System.ServiceModel.ServiceHost> class.  
+ 
+Special note for Managed C++ users deriving from this class:  
+ 
 -   Put your cleanup code in (On)(Begin)Close (and/or OnAbort), not in a destructor.  
-  
+ 
 -   Avoid destructors; they cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
+ 
 -   Avoid non-reference members; they can cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
+ 
 -   Avoid finalizers; but if you include one, you should suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.  
+ 
   
-   
-  
+ 
 ## Examples  
- This sample uses the <xref:System.ServiceModel.ServiceHost> class, which is derived from <xref:System.ServiceModel.ServiceHostBase>.  
-  
- [!code-csharp[S_SelfHost#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#1)]
- [!code-vb[S_SelfHost#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_selfhost/vb/wholeenchilada.vb#1)]  
-  
+This sample uses the <xref:System.ServiceModel.ServiceHost> class, which is derived from <xref:System.ServiceModel.ServiceHostBase>.  
+ 
+[!code-csharp[S_SelfHost#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#1)]
+[!code-vb[S_SelfHost#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_selfhost/vb/wholeenchilada.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceHostBase" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#30)]  
-  
+[!code-csharp[S_SelfHost#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#30)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <summary>Adds a base address to the service host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property allows users extending <xref:System.ServiceModel.ServiceHostBase> to provide the base address after the host is constructed. <xref:System.ServiceModel.ServiceHostBase.AddBaseAddress%28System.Uri%29> can be used to add base addresses to an existing host, but throws an exception if the description is already initialized.  
-  
+This property allows users extending <xref:System.ServiceModel.ServiceHostBase> to provide the base address after the host is constructed. <xref:System.ServiceModel.ServiceHostBase.AddBaseAddress%28System.Uri%29> can be used to add base addresses to an existing host, but throws an exception if the description is already initialized.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <paramref name="baseAddress" /> cannot be called.</exception>
@@ -137,14 +137,14 @@
         <summary>Adds the specified service endpoint to the hosted service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using the method, the service host does a "by-configuration-name" validation on the contract description. In other words, the host verifies that <xref:System.ServiceModel.Description.ContractDescription.ConfigurationName%2A> exists in the list of configuration names of the service contracts implemented by the service. If the validation passes, the description in the <xref:System.ServiceModel.Description.ServiceEndpoint> is used as it is, even if the <xref:System.ServiceModel.Description.ContractDescription> reflected from the service is different.  
-  
- As an example, assume that the description in the ServiceEndpoint and the contract description reflected from the service have the same name, but different operation behaviors. The implication of only “by-configuration-name” validation is that there is no validation that the behaviors are the same and there are one updates to one description because of another description.  
-  
- If the `address` is a relative URI, one of the base addresses of the <xref:System.ServiceModel.ServiceHost> (depending on the binding protocol) is used as the endpoint's base address.  
-  
+When using the method, the service host does a "by-configuration-name" validation on the contract description. In other words, the host verifies that <xref:System.ServiceModel.Description.ContractDescription.ConfigurationName%2A> exists in the list of configuration names of the service contracts implemented by the service. If the validation passes, the description in the <xref:System.ServiceModel.Description.ServiceEndpoint> is used as it is, even if the <xref:System.ServiceModel.Description.ContractDescription> reflected from the service is different.  
+ 
+As an example, assume that the description in the ServiceEndpoint and the contract description reflected from the service have the same name, but different operation behaviors. The implication of only “by-configuration-name” validation is that there is no validation that the behaviors are the same and there are one updates to one description because of another description.  
+ 
+If the `address` is a relative URI, one of the base addresses of the <xref:System.ServiceModel.ServiceHost> (depending on the binding protocol) is used as the endpoint's base address.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -178,10 +178,10 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#40](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#40)]  
-  
+[!code-csharp[S_SelfHost#40](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#40)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -245,10 +245,10 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `address` is a relative URI, one of the base addresses of the <xref:System.ServiceModel.ServiceHost> (depending on the binding protocol) is used as the endpoint's base address.  
-  
+If the `address` is a relative URI, one of the base addresses of the <xref:System.ServiceModel.ServiceHost> (depending on the binding protocol) is used as the endpoint's base address.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -341,10 +341,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.ServiceAuthorizationBehavior" /> for the service hosted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#36](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#36)]  
-  
+[!code-csharp[S_SelfHost#36](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#36)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,10 +402,10 @@
         <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time allowed for the service host to close.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#33](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#33)]  
-  
+[!code-csharp[S_SelfHost#33](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#33)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value, in milliseconds, is less than zero or is larger than <see cref="F:System.Int32.MaxValue" /> (2,147,483,647 or, in hexadecimal notation, 0X7FFFFFFF).</exception>
@@ -435,10 +435,10 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#41](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#41)]  
-  
+[!code-csharp[S_SelfHost#41](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#41)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.ServiceCredentials" /> for the service hosted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#37](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#37)]  
-  
+[!code-csharp[S_SelfHost#37](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#37)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,10 +503,10 @@
         <value>The <see cref="T:System.TimeSpan" /> that specifies the default interval of time allowed for the service host to open.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#35](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#35)]  
-  
+[!code-csharp[S_SelfHost#35](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#35)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,10 +528,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#38](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#38)]  
-  
+[!code-csharp[S_SelfHost#38](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#38)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,15 +593,15 @@
         <returns>The new limit after the increment is added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This limit can be accessed using the <xref:System.ServiceModel.ServiceHostBase.ManualFlowControlLimit%2A> property.  
+This limit can be accessed using the <xref:System.ServiceModel.ServiceHostBase.ManualFlowControlLimit%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#42](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#42)]  
-  
+[!code-csharp[S_SelfHost#42](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#42)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
@@ -688,15 +688,15 @@
         <value>The flow control limit for messages received by the service hosted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This limit can be incremented using the <xref:System.ServiceModel.ServiceHostBase.IncrementManualFlowControlLimit%28System.Int32%29> method.  
+This limit can be incremented using the <xref:System.ServiceModel.ServiceHostBase.IncrementManualFlowControlLimit%28System.Int32%29> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_SelfHost#39](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#39)]  
-  
+[!code-csharp[S_SelfHost#39](~/samples/snippets/csharp/VS_Snippets_CFX/s_selfhost/cs/wholeenchilada.cs#39)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
@@ -792,18 +792,18 @@
         <summary>Closes down the hosted service, including their channel dispatchers and associated instance contexts and listeners.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.ServiceModel.ServiceHostBase.OnClose%28System.TimeSpan%29> does the following:  
-  
+Calling <xref:System.ServiceModel.ServiceHostBase.OnClose%28System.TimeSpan%29> does the following:  
+ 
 -   Closes all input to <xref:System.ServiceModel.Dispatcher.ChannelDispatcher>, which also closes their associated <xref:System.ServiceModel.Channels.IChannelListener> instances. This stops any new channels from being accepting.  
-  
+ 
 -   Calls <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.CloseInput%2A> on all <xref:System.ServiceModel.InstanceContext> objects, which mean they stop accepting new messages.  
-  
+ 
 -   Waits for all <xref:System.ServiceModel.InstanceContext> objects to close down, which happens when their associated channels finish sending all pending messages.  
-  
+ 
 -   Closes the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects associated with the host.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -906,10 +906,10 @@
         <summary>Gets the service credentials,service authentication and authorization behavior for the hosted service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once these behaviors are initialized when opening the service, they cannot be changed.  
-  
+Once these behaviors are initialized when opening the service, they cannot be changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -953,12 +953,12 @@
         <summary>Releases the service and channel dispatcher performance counters for the hosted service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked when calling <xref:System.ServiceModel.ServiceHostBase.OnClose%28System.TimeSpan%29> and  
-  
- <xref:System.ServiceModel.ServiceHostBase.OnEndClose%28System.IAsyncResult%29>.  
-  
+This method is invoked when calling <xref:System.ServiceModel.ServiceHostBase.OnClose%28System.TimeSpan%29> and  
+ 
+<xref:System.ServiceModel.ServiceHostBase.OnEndClose%28System.IAsyncResult%29>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1020,12 +1020,12 @@
         <summary>Occurs when an unknown message is received.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  When using <xref:System.ServiceModel.WorkflowServiceHost>, exposing a hosting endpoint, and a <xref:System.ServiceModel.ServiceHostBase.UnknownMessageReceived> exception is thrown, the host passes the message to the event handler. If an attempt is made to read this message an <xref:System.InvalidOperationException> is thrown. The description of the exception will say “This message cannot support the operation because it has been read.”  The WCF infrastructure reads the message while extracting the message parameters. This message is then passed to the event handler and any attempt to read it causes an exception. If you need to access message parameters in your <xref:System.InvalidOperationException> handler from a hosting endpoint, define the hosting endpoint contract using MessageContract and place the needed data into a message header. [!INCLUDE[crabout](~/includes/crabout-md.md)] hosting endpoints see [Workflow Service Host Extensibility](~/docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

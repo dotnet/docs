@@ -13,32 +13,32 @@
     <summary>Represents the values that control the behavior of the AutoComplete feature in a <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To assist with data entry, Internet Explorer 5 and later and some other browsers support a feature named AutoComplete. AutoComplete monitors a text box and stores a list of the values that the user has entered. When the user returns to the text box another time, the list of values is displayed. Instead of retyping a value, the user can simply select the value from this list.  
-  
+To assist with data entry, Internet Explorer 5 and later and some other browsers support a feature named AutoComplete. AutoComplete monitors a text box and stores a list of the values that the user has entered. When the user returns to the text box another time, the list of values is displayed. Instead of retyping a value, the user can simply select the value from this list.  
+ 
 > [!NOTE]
 >  Not all browsers support the AutoComplete feature. Check with your browser to determine compatibility.  
+ 
+To control the behavior of the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control, you use the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property. The <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration is used to represent the values that you can apply to the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property.  
+ 
+By default, the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property for a <xref:System.Web.UI.WebControls.TextBox> control is set to `AutoCompleteType.None`. With this setting, the <xref:System.Web.UI.WebControls.TextBox> control shares the list with other <xref:System.Web.UI.WebControls.TextBox> controls with the same <xref:System.Web.UI.Control.ID%2A> across different pages. You can also share a list among <xref:System.Web.UI.WebControls.TextBox> controls based on a category instead of based on an <xref:System.Web.UI.Control.ID%2A>. When you set the <xref:System.Web.UI.WebControls.AutoCompleteType> property to one of the category values (such as `AutoCompleteType.FirstName` or `AutoCompleteType.LastName`), all <xref:System.Web.UI.WebControls.TextBox> controls with the same category share the same list. You can disable the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control by setting the <xref:System.Web.UI.WebControls.AutoCompleteType> property to `AutoCompleteType.Disabled`.  
+ 
+Refer to your browser documentation for details on configuring and enabling the AutoComplete feature. For example, to enable the AutoComplete feature in Internet Explorer version 5 or later, from the **Tools** menu, choose **Internet Options**. Then choose the **Content** tab. Choose the **AutoComplete** button to view and modify options for the AutoComplete feature.  
+ 
+For more information on the AutoComplete feature in Internet Explorer, search for [Using AutoComplete in HTML Forms](http://msdn.microsoft.com/library/default.asp?url=/workshop/author/forms/autocomplete_ovr.asp) in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
   
- To control the behavior of the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control, you use the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property. The <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration is used to represent the values that you can apply to the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property.  
-  
- By default, the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property for a <xref:System.Web.UI.WebControls.TextBox> control is set to `AutoCompleteType.None`. With this setting, the <xref:System.Web.UI.WebControls.TextBox> control shares the list with other <xref:System.Web.UI.WebControls.TextBox> controls with the same <xref:System.Web.UI.Control.ID%2A> across different pages. You can also share a list among <xref:System.Web.UI.WebControls.TextBox> controls based on a category instead of based on an <xref:System.Web.UI.Control.ID%2A>. When you set the <xref:System.Web.UI.WebControls.AutoCompleteType> property to one of the category values (such as `AutoCompleteType.FirstName` or `AutoCompleteType.LastName`), all <xref:System.Web.UI.WebControls.TextBox> controls with the same category share the same list. You can disable the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control by setting the <xref:System.Web.UI.WebControls.AutoCompleteType> property to `AutoCompleteType.Disabled`.  
-  
- Refer to your browser documentation for details on configuring and enabling the AutoComplete feature. For example, to enable the AutoComplete feature in Internet Explorer version 5 or later, from the **Tools** menu, choose **Internet Options**. Then choose the **Content** tab. Choose the **AutoComplete** button to view and modify options for the AutoComplete feature.  
-  
- For more information on the AutoComplete feature in Internet Explorer, search for [Using AutoComplete in HTML Forms](http://msdn.microsoft.com/library/default.asp?url=/workshop/author/forms/autocomplete_ovr.asp) in the MSDN Library at http://msdn.microsoft.com/library.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration to specify the AutoComplete category for a <xref:System.Web.UI.WebControls.TextBox> control.  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration to specify the AutoComplete category for a <xref:System.Web.UI.WebControls.TextBox> control.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>

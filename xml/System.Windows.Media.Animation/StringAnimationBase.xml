@@ -14,13 +14,13 @@
     <summary>Abstract class that, when implemented, animates a <see cref="T:System.String" /> value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the derived <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames> class in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
-  
- <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#StringAnimationUsingKeyFramesWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/StringAnimationUsingKeyFramesExample.xaml#stringanimationusingkeyframeswholepage)]  -->
- <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#StringAnimationUsingKeyFramesWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/StringAnimationUsingKeyFramesExample.xaml#stringanimationusingkeyframeswholepage)]  -->  
-  
+The following code example demonstrates how to use the derived <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames> class in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+ 
+<!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#StringAnimationUsingKeyFramesWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/StringAnimationUsingKeyFramesExample.xaml#stringanimationusingkeyframeswholepage)]  -->
+<!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#StringAnimationUsingKeyFramesWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/StringAnimationUsingKeyFramesExample.xaml#stringanimationusingkeyframeswholepage)]  -->  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -61,12 +61,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,24 +96,24 @@
         <returns>The current value of the animation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
-  
+The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
+ 
 -   If the animation is in the first position in a composition chain and it replaces another animation, `defaultOriginValue` is the output of that animation at the time it was replaced.  
-  
+ 
 -   If the animation is in the first position in a composition chain and no animation exists to replace, `defaultOriginValue` is the base value of the animated property.  
-  
+ 
 -   If this animation is not in the first position of a composition chain, then `defaultOriginValue` is the value that is returned by the previous animation in the composition chain that has an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
-  
- The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
-  
+ 
+The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
+ 
 -   If there is a previous property <xref:System.Windows.Trigger> composition layer, `defaultDestinationValue` is the output from that layer.  
-  
+ 
 -   If there is no previous composition layer, `defaultDestinationValue` is the base value of the property that you are animating.  
-  
- For more information about animation composition, see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
-  
+ 
+For more information about animation composition, see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,24 +143,24 @@
         <returns>The current value of this animation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
-  
+The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
+ 
 -   If the animation is in the first position in a composition chain and it replaces another animation, `defaultOriginValue` is the output of that animation at the time it was replaced.  
-  
+ 
 -   If the animation is in the first position in a composition chain and no animation exists to replace, `defaultOriginValue` is the base value of the animated property.  
-  
+ 
 -   If this animation is not in the first position of a composition chain, then `defaultOriginValue` is the value that is returned by the previous animation in the composition chain that has an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
-  
- The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
-  
+ 
+The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
+ 
 -   If there is a previous property <xref:System.Windows.Trigger> composition layer, `defaultDestinationValue` is the output from that layer.  
-  
+ 
 -   If there is no previous composition layer, `defaultDestinationValue` is the base value of the property that you are animating.  
-  
- For more information about animation composition, see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
-  
+ 
+For more information about animation composition, see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,24 +190,24 @@
         <returns>The calculated value of the property, as determined by the current animation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
-  
+The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
+ 
 -   If the animation is in the first position in a composition chain and it replaces another animation, `defaultOriginValue` is the output of that animation at the time it was replaced.  
-  
+ 
 -   If the animation is in the first position in a composition chain and no animation exists to replace, `defaultOriginValue` is the base value of the animated property.  
-  
+ 
 -   If this animation is not in the first position of a composition chain, then `defaultOriginValue` is the value that is returned by the previous animation in the composition chain that has an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
-  
- The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
-  
+ 
+The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
+ 
 -   If there is a previous property <xref:System.Windows.Trigger> composition layer, `defaultDestinationValue` is the output from that layer.  
-  
+ 
 -   If there is no previous composition layer, `defaultDestinationValue` is the base value of the property that you are animating.  
-  
- For more information about animation composition, see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
-  
+ 
+For more information about animation composition, see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

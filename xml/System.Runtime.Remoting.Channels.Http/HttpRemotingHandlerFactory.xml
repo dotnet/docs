@@ -18,10 +18,10 @@
     <summary>Initializes new instances of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current class dynamically manufactures new instances of the <xref:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler> class.  
-  
+The current class dynamically manufactures new instances of the <xref:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <returns>A new <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> that processes the request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the current method, see <xref:System.Web.IHttpHandlerFactory.GetHandler%2A?displayProperty=fullName>.  
-  
+For more information about the current method, see <xref:System.Web.IHttpHandlerFactory.GetHandler%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

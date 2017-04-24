@@ -13,13 +13,13 @@
     <summary>Specifies how a bitmap image takes advantage of memory caching.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to load a <xref:System.Windows.Media.Imaging.BitmapImage> and specify the <xref:System.Windows.Media.Imaging.BitmapCacheOption>.  
-  
- [!code-csharp[bitmapimageprops#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
- [!code-vb[bitmapimageprops#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
-  
+The following code example demonstrates how to load a <xref:System.Windows.Media.Imaging.BitmapImage> and specify the <xref:System.Windows.Media.Imaging.BitmapCacheOption>.  
+ 
+[!code-csharp[bitmapimageprops#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+[!code-vb[bitmapimageprops#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

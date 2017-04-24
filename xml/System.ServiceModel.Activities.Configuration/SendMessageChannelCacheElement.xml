@@ -53,10 +53,10 @@
           <see langword="true" /> if the workflow instance cache is turned on; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the majority of the cases when there are no custom bindings and/or behaviors, we turn on cache by default. In the case where the user did plug in their own binding and behaviors, the caching of the channel factories could become unsecure, therefore, we turn off our cache by default. But the user can set the <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.AllowUnsafeCaching%2A>back on which requires them to carefully read the appropriate MSDN document and make a decision that strikes a balanace between security and performance.  
-  
+In the majority of the cases when there are no custom bindings and/or behaviors, we turn on cache by default. In the case where the user did plug in their own binding and behaviors, the caching of the channel factories could become unsecure, therefore, we turn off our cache by default. But the user can set the <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.AllowUnsafeCaching%2A>back on which requires them to carefully read the appropriate MSDN document and make a decision that strikes a balanace between security and performance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <value>The settings of the channel factory cache.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The channel factory cache represents cached channel factories. For more information about channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
-  
+The channel factory cache represents cached channel factories. For more information about channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

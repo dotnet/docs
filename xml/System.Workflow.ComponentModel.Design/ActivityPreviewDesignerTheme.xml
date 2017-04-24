@@ -19,16 +19,16 @@
     <summary>Provides theme settings for activity designers that use a preview mode on the workflow design surface. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Activity designers that use preview mode on the workflow design surface can have theme settings specific to the preview display area. <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme> contains the properties that provide these preview-area specific settings.  
-  
- Activities that provide a preview mode when they are added to the workflow design surface include <xref:System.Workflow.Activities.ConditionedActivityGroup> and <xref:System.Workflow.Activities.EventHandlersActivity>.  
-  
+ 
+Activity designers that use preview mode on the workflow design surface can have theme settings specific to the preview display area. <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme> contains the properties that provide these preview-area specific settings.  
+ 
+Activities that provide a preview mode when they are added to the workflow design surface include <xref:System.Workflow.Activities.ConditionedActivityGroup> and <xref:System.Workflow.Activities.EventHandlersActivity>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,10 +90,10 @@
         <summary>Performs any additional initialization tasks for <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" /> that is not performed by <see cref="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.AmbientTheme.UseOperatingSystemSettings%2A> is set to `true`, <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.Initialize%2A> sets all <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme> properties to reflect the style settings of the operating system on which Windows Workflow Foundation is installed.  
-  
+If <xref:System.Workflow.ComponentModel.Design.AmbientTheme.UseOperatingSystemSettings%2A> is set to `true`, <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.Initialize%2A> sets all <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme> properties to reflect the style settings of the operating system on which Windows Workflow Foundation is installed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" /> that the ambient property settings for the designer have changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.OnAmbientPropertyChanged%2A> checks the value passed to `ambientProperty` and applies the appropriate ambient theme settings based on that value. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty>, it applies the ambient styles provided by the designer. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty>, it applies the ambient styles provided by the operating system.  
-  
+<xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.OnAmbientPropertyChanged%2A> checks the value passed to `ambientProperty` and applies the appropriate ambient theme settings based on that value. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty>, it applies the ambient styles provided by the designer. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty>, it applies the ambient styles provided by the operating system.  
+ 
  ]]></format>
         </remarks>
       </Docs>

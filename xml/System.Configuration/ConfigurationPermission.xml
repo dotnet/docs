@@ -18,10 +18,10 @@
     <summary>Provides a permission structure that allows methods or classes to access configuration files.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationPermission> class provides a permission structure that allows methods or classes to access configuration files. Also, <xref:System.Configuration.ConfigurationPermission> provides ways to resolve multiple permissions values through such methods as <xref:System.Configuration.ConfigurationPermission.Union%2A> and <xref:System.Configuration.ConfigurationPermission.Intersect%2A>.  
-  
+The <xref:System.Configuration.ConfigurationPermission> class provides a permission structure that allows methods or classes to access configuration files. Also, <xref:System.Configuration.ConfigurationPermission> provides ways to resolve multiple permissions values through such methods as <xref:System.Configuration.ConfigurationPermission.Union%2A> and <xref:System.Configuration.ConfigurationPermission.Intersect%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -109,10 +109,10 @@
         <returns>The logical intersection between the <see cref="T:System.Configuration.ConfigurationPermission" /> and a given object that implements <see cref="T:System.Security.IPermission" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the method signature accepts any object that implements the <xref:System.Security.IPermission> interface, an <xref:System.ArgumentException> exception will be thrown if calling the <xref:System.Object.GetType%2A> method on the object referenced by the `target` parameter does not return <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>.  
-  
+Although the method signature accepts any object that implements the <xref:System.Security.IPermission> interface, an <xref:System.ArgumentException> exception will be thrown if calling the <xref:System.Object.GetType%2A> method on the object referenced by the `target` parameter does not return <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -141,12 +141,12 @@
           <see langword="true" /> if the permission state is equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the method signature accepts any object that implements the <xref:System.Security.IPermission> interface, an <xref:System.ArgumentException> exception will be thrown if calling the <xref:System.Object.GetType%2A> method on the object referenced by the `target` parameter does not return <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>.  
-  
- If the object referenced by the `target` parameter is `null`, the comparison is done between the permission state of the <xref:System.Configuration.ConfigurationPermission> object and the <xref:System.Security.Permissions.PermissionState> value of the <xref:System.Security.Permissions.PermissionState> enumeration.  
-  
+Although the method signature accepts any object that implements the <xref:System.Security.IPermission> interface, an <xref:System.ArgumentException> exception will be thrown if calling the <xref:System.Object.GetType%2A> method on the object referenced by the `target` parameter does not return <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>.  
+ 
+If the object referenced by the `target` parameter is `null`, the comparison is done between the permission state of the <xref:System.Configuration.ConfigurationPermission> object and the <xref:System.Security.Permissions.PermissionState> value of the <xref:System.Security.Permissions.PermissionState> enumeration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

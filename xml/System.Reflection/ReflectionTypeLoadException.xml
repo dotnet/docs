@@ -31,14 +31,14 @@
     <summary>The exception that is thrown by the <see cref="M:System.Reflection.Module.GetTypes" /> method if any of the classes in a module cannot be loaded. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `ReflectionTypeLoadException` uses the HRESULT COR_E_REFLECTIONTYPELOAD that has the value 0x80131602.  
-  
- An instance contains the array of classes (Types property) that were defined in the module and were loaded. The array can contain some null values. There is also another array of exceptions (`LoaderExceptions` property). This exception array represents the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.  
-  
- This exception exposes both the array of classes and the array of `TypeLoadExceptions`.  
-  
+`ReflectionTypeLoadException` uses the HRESULT COR_E_REFLECTIONTYPELOAD that has the value 0x80131602.  
+ 
+An instance contains the array of classes (Types property) that were defined in the module and were loaded. The array can contain some null values. There is also another array of exceptions (`LoaderExceptions` property). This exception array represents the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.  
+ 
+This exception exposes both the array of classes and the array of `TypeLoadExceptions`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -166,10 +166,10 @@
         <value>An array of type <see langword="Exception" /> containing the exceptions thrown by the class loader. The null values in the <see cref="P:System.Reflection.ReflectionTypeLoadException.Types" /> array of this instance line up with the exceptions in this array.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.ReflectionTypeLoadException.LoaderExceptions%2A> property retrieves an array of type `Exception` that is parallel to the <xref:System.Reflection.ReflectionTypeLoadException.Types%2A> array. This array will contain null values whenever reflection cannot load a class.  
-  
+The <xref:System.Reflection.ReflectionTypeLoadException.LoaderExceptions%2A> property retrieves an array of type `Exception` that is parallel to the <xref:System.Reflection.ReflectionTypeLoadException.Types%2A> array. This array will contain null values whenever reflection cannot load a class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <value>An array of type <see langword="Type" /> containing the classes that were defined in the module and loaded. This array can contain some <see langword="null" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.ReflectionTypeLoadException.LoaderExceptions%2A> property retrieves an array of type `Exception` that is parallel to this `Types` array. This array will contain null values whenever reflection cannot load a class.  
-  
+The <xref:System.Reflection.ReflectionTypeLoadException.LoaderExceptions%2A> property retrieves an array of type `Exception` that is parallel to this `Types` array. This array will contain null values whenever reflection cannot load a class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

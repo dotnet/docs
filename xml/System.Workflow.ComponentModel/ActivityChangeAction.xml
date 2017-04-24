@@ -22,14 +22,14 @@
     <summary>Represents a proposed change to a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> within a running workflow instance. This class must be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This class is the base class for the canonical change actions which are added and removed and may be performed on a collection.  
-  
+ 
+This class is the base class for the canonical change actions which are added and removed and may be performed on a collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,10 +91,10 @@
         <value>The <see cref="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" /> of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This manipulates the <xref:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath%2A> member of the associated <xref:System.Workflow.ComponentModel.CompositeActivity>. Therefore, trying to set this without first initializing the associated <xref:System.Workflow.ComponentModel.CompositeActivity> will cause an exception to be thrown.  
-  
+This manipulates the <xref:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath%2A> member of the associated <xref:System.Workflow.ComponentModel.CompositeActivity>. Therefore, trying to set this without first initializing the associated <xref:System.Workflow.ComponentModel.CompositeActivity> will cause an exception to be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains any <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> resulting from running each <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> defined for the target activity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `contextActivity` cannot be safely cast to a <xref:System.Workflow.ComponentModel.CompositeActivity> a null reference is returned.  
-  
+If `contextActivity` cannot be safely cast to a <xref:System.Workflow.ComponentModel.CompositeActivity> a null reference is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

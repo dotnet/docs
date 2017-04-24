@@ -23,10 +23,10 @@
     <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer" /> instead.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IConnectionPointContainer` in the com subfolder of the MSDN library.  
-  
+For more information, please see the existing documentation for `IConnectionPointContainer` in the com subfolder of the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Creates an enumerator of all the connection points supported in the connectable object, one connection point per IID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IConnectionPointContainer::EnumConnectionPoints` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IConnectionPointContainer::EnumConnectionPoints` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <summary>Asks the connectable object if it has a connection point for a particular IID, and if so, returns the <see langword="IConnectionPoint" /> interface pointer to that connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IConnectionPointContainer::FindConnectionPoint` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IConnectionPointContainer::FindConnectionPoint` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

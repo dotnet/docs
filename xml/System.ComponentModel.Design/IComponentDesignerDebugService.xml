@@ -35,10 +35,10 @@
         <summary>Asserts on a condition inside a design-time environment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Assert%2A> method enables a designer to assert on a condition inside a design-time environment.  
-  
+The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Assert%2A> method enables a designer to assert on a condition inside a design-time environment.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,10 +63,10 @@
         <summary>Logs a failure message inside a design-time environment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Fail%2A> method enables a designer to log failure messages inside a design-time environment.  
-  
+The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Fail%2A> method enables a designer to log failure messages inside a design-time environment.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>The indent level for debug output.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.IndentLevel%2A> property enables a designer to change the indent level for debug output.  
-  
+The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.IndentLevel%2A> property enables a designer to change the indent level for debug output.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <value>A collection of trace listeners</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Listeners%2A> property enables objects to monitor design-time debugging output.  
-  
+The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Listeners%2A> property enables objects to monitor design-time debugging output.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <summary>Logs a debug message inside a design-time environment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Trace%2A> method enables a designer to log debug messages inside a design-time environment.  
-  
+The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Trace%2A> method enables a designer to log debug messages inside a design-time environment.  
+ 
  ]]></format>
         </remarks>
       </Docs>

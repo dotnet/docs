@@ -18,22 +18,22 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Input.CommandBinding" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All objects which derive from <xref:System.Windows.UIElement> have a <xref:System.Windows.Input.CommandBindingCollection> named  
+All objects which derive from <xref:System.Windows.UIElement> have a <xref:System.Windows.Input.CommandBindingCollection> named  
+ 
+<xref:System.Windows.UIElement.CommandBindings%2A>.  
+ 
   
- <xref:System.Windows.UIElement.CommandBindings%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Input.CommandBinding> and adds it to the <xref:System.Windows.Input.CommandBindingCollection> of a <xref:System.Windows.Window>.  
-  
- [!code-xml[commandingoverviewsnippets#CommandingOverviewWindowCommandBindingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewwindowcommandbindingxaml)]  
-  
- [!code-csharp[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcustomcommandbindingcodebehind)]
- [!code-vb[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcustomcommandbindingcodebehind)]  
-  
+The following example creates a <xref:System.Windows.Input.CommandBinding> and adds it to the <xref:System.Windows.Input.CommandBindingCollection> of a <xref:System.Windows.Window>.  
+ 
+[!code-xml[commandingoverviewsnippets#CommandingOverviewWindowCommandBindingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewwindowcommandbindingxaml)]  
+ 
+[!code-csharp[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcustomcommandbindingcodebehind)]
+[!code-vb[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcustomcommandbindingcodebehind)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,15 +92,15 @@
         <returns>0, if the operation was successful (note that this is not the index of the added item).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Input.CommandBinding> and adds it to the <xref:System.Windows.Input.CommandBindingCollection> of a <xref:System.Windows.Window>.  
-  
- [!code-xml[commandingoverviewsnippets#CommandingOverviewWindowCommandBindingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewwindowcommandbindingxaml)]  
-  
- [!code-csharp[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcustomcommandbindingcodebehind)]
- [!code-vb[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcustomcommandbindingcodebehind)]  
-  
+The following example creates a <xref:System.Windows.Input.CommandBinding> and adds it to the <xref:System.Windows.Input.CommandBindingCollection> of a <xref:System.Windows.Window>.  
+ 
+[!code-xml[commandingoverviewsnippets#CommandingOverviewWindowCommandBindingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewwindowcommandbindingxaml)]  
+ 
+[!code-csharp[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcustomcommandbindingcodebehind)]
+[!code-vb[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcustomcommandbindingcodebehind)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -297,10 +297,10 @@
         <value>**true** if the collection has a fixed size; otherwise, **false**.  The default value is **false**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Input.CommandBindingCollection> is never a fixed size; therefore, <xref:System.Windows.Input.CommandBindingCollection.IsFixedSize%2A> will always return **false**.  
-  
+A <xref:System.Windows.Input.CommandBindingCollection> is never a fixed size; therefore, <xref:System.Windows.Input.CommandBindingCollection.IsFixedSize%2A> will always return **false**.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,10 +323,10 @@
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Input.CommandBindingCollection> is never read-only; therefore, <xref:System.Windows.Input.CommandBindingCollection.IsReadOnly%2A> will always return `false`.  
-  
+A <xref:System.Windows.Input.CommandBindingCollection> is never read-only; therefore, <xref:System.Windows.Input.CommandBindingCollection.IsReadOnly%2A> will always return `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -349,10 +349,10 @@
           <see langword="true" /> if the collection is thread-safe; otherwise, <see langword="false" />.  The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Input.CommandBindingCollection.SyncRoot%2A> can be used to synchronize access to the collection.  
-  
+<xref:System.Windows.Input.CommandBindingCollection.SyncRoot%2A> can be used to synchronize access to the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,10 +461,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -490,10 +490,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -520,10 +520,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Input.CommandBindingCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -549,10 +549,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -579,10 +579,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,10 +608,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -636,10 +636,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -653,14 +653,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBindingCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md)  
-  
- <xref:System.Windows.Input.RoutedCommand>  
-  
- <xref:System.Windows.Input.ICommand>  
-  
+[Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md)  
+ 
+<xref:System.Windows.Input.RoutedCommand>  
+ 
+<xref:System.Windows.Input.ICommand>  
+ 
  ]]></format>
         </remarks>
       </Docs>

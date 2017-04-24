@@ -53,18 +53,18 @@
     <summary>Renders a list of items as either a static display or an interactive list. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This control supports templated rendering by using device template sets and internal pagination. For more information, see [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19) and [Pagination](http://msdn.microsoft.com/en-us/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
+This control supports templated rendering by using device template sets and internal pagination. For more information, see [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19) and [Pagination](http://msdn.microsoft.com/en-us/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how an array binds and fills a <xref:System.Web.UI.MobileControls.List>. Notice that you can programmatically set the <xref:System.Web.UI.MobileControls.List.DataTextField%2A> and <xref:System.Web.UI.MobileControls.List.DataValueField%2A> properties of the <xref:System.Web.UI.MobileControls.List> object.  
-  
- <!-- TODO: review snippet reference [!code-csharp[MobileListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#1)]  -->  
-  
+The following code example demonstrates how an array binds and fills a <xref:System.Web.UI.MobileControls.List>. Notice that you can programmatically set the <xref:System.Web.UI.MobileControls.List.DataTextField%2A> and <xref:System.Web.UI.MobileControls.List.DataValueField%2A> properties of the <xref:System.Web.UI.MobileControls.List> object.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[MobileListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[MobileListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -165,10 +165,10 @@
         <summary>Creates items in an items collection from the specified <paramref name="dataSource" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Inheriting classes can override this method for custom data-binding behavior.  
-  
+Inheriting classes can override this method for custom data-binding behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <value>The name of the data member to extract when data binding to a list data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only used if the value of the <xref:System.Web.UI.MobileControls.List.DataSource%2A> property is of type <xref:System.ComponentModel.IListSource>, rather than of type <xref:System.Collections.IEnumerable>.  
-  
+This property is only used if the value of the <xref:System.Web.UI.MobileControls.List.DataSource%2A> property is of type <xref:System.ComponentModel.IListSource>, rather than of type <xref:System.Collections.IEnumerable>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,10 +237,10 @@
         <value>The data source of the list that is being bound.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To bind a data source to a list, you must first use the control's <xref:System.Web.UI.Control.DataBind%2A> method to ensure data binding. The data source can either be of type <xref:System.Collections.IEnumerable>, or it can be of type <xref:System.ComponentModel.IListSource>. If the data source is of type <xref:System.ComponentModel.IListSource>, you can use the <xref:System.Web.UI.MobileControls.List.DataMember%2A> field to specify which member to extract.  
-  
+To bind a data source to a list, you must first use the control's <xref:System.Web.UI.Control.DataBind%2A> method to ensure data binding. The data source can either be of type <xref:System.Collections.IEnumerable>, or it can be of type <xref:System.ComponentModel.IListSource>. If the data source is of type <xref:System.ComponentModel.IListSource>, you can use the <xref:System.Web.UI.MobileControls.List.DataMember%2A> field to specify which member to extract.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,24 +322,24 @@
         <value>An enumerated value representing the type of decoration used for items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Where the target device permits, list items can be undecorated, or decorated with bullets or numbers. The <xref:System.Web.UI.MobileControls.ListDecoration> enumeration has the following values:  
-  
+Where the target device permits, list items can be undecorated, or decorated with bullets or numbers. The <xref:System.Web.UI.MobileControls.ListDecoration> enumeration has the following values:  
+ 
 |Name|Description|  
 |----------|-----------------|  
 |<xref:System.Web.UI.MobileControls.ListDecoration>|No decoration.|  
 |<xref:System.Web.UI.MobileControls.ListDecoration>|List items are decorated with a bullet.|  
 |<xref:System.Web.UI.MobileControls.ListDecoration>|List items are decorated with a number.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.List.Decoration%2A> property to change the list to a numbered list. The property is set in the last line of the `Page_Load` method. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
-  
- [!code-csharp[MobileListSample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#3)]
- [!code-vb[MobileListSample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#3)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.List.Decoration%2A> property to change the list to a numbered list. The property is set in the last line of the `Page_Load` method. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
+ 
+[!code-csharp[MobileListSample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#3)]
+[!code-vb[MobileListSample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -444,21 +444,21 @@
         <summary>Occurs when the user selects a command that is associated with a <see cref="T:System.Web.UI.MobileControls.List" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you render a list by using templates, the <xref:System.Web.UI.MobileControls.List.ItemCommand> event handler is called through the event-bubbling mechanism of ASP.NET. The event handler is passed an argument of type <xref:System.Web.UI.MobileControls.ListCommandEventArgs>, which contains information about the source item and the <xref:System.Web.UI.MobileControls.Command.CommandName%2A> property of the control that generated the event. This allows you to render a single list item with multiple associated interactions.  
+When you render a list by using templates, the <xref:System.Web.UI.MobileControls.List.ItemCommand> event handler is called through the event-bubbling mechanism of ASP.NET. The event handler is passed an argument of type <xref:System.Web.UI.MobileControls.ListCommandEventArgs>, which contains information about the source item and the <xref:System.Web.UI.MobileControls.Command.CommandName%2A> property of the control that generated the event. This allows you to render a single list item with multiple associated interactions.  
+ 
+On default rendering, the control provides a basic user interface (UI) that allows the user to click list items. On postback, the <xref:System.Web.UI.MobileControls.List.ItemCommand> event handler is called with an argument of type <xref:System.Web.UI.MobileControls.ListCommandEventArgs>, which contains information about the source item. The <xref:System.Web.UI.MobileControls.Command.CommandName%2A> property of this object is `null`.  
+ 
   
- On default rendering, the control provides a basic user interface (UI) that allows the user to click list items. On postback, the <xref:System.Web.UI.MobileControls.List.ItemCommand> event handler is called with an argument of type <xref:System.Web.UI.MobileControls.ListCommandEventArgs>, which contains information about the source item. The <xref:System.Web.UI.MobileControls.Command.CommandName%2A> property of this object is `null`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.MobileControls.List.ItemCommand> event to call a method that changes the status of an item in the list and recalculates the status totals. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
-  
-  
+The following code example shows how to use the <xref:System.Web.UI.MobileControls.List.ItemCommand> event to call a method that changes the status of an item in the list and recalculates the status totals. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
+ 
+ 
 [!code-csharp[MobileListSample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#2)]
 [!code-vb[MobileListSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#2)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -479,18 +479,18 @@
         <summary>Occurs when an item in a <see cref="T:System.Web.UI.MobileControls.List" /> is bound to data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an item in a <xref:System.Web.UI.MobileControls.List> is created and data-bound, this event handler sets the properties of the list item from arbitrary expressions. An item in a <xref:System.Web.UI.MobileControls.List> is of type <xref:System.Web.UI.MobileControls.MobileListItem>. This event is raised as each data source item is bound. This is the best time to filter or group items in the <xref:System.Web.UI.MobileControls.MobileListItemCollection> collection, by using the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> or <xref:System.Web.UI.MobileControls.MobileListItem.Value%2A> Property.  
+When an item in a <xref:System.Web.UI.MobileControls.List> is created and data-bound, this event handler sets the properties of the list item from arbitrary expressions. An item in a <xref:System.Web.UI.MobileControls.List> is of type <xref:System.Web.UI.MobileControls.MobileListItem>. This event is raised as each data source item is bound. This is the best time to filter or group items in the <xref:System.Web.UI.MobileControls.MobileListItemCollection> collection, by using the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> or <xref:System.Web.UI.MobileControls.MobileListItem.Value%2A> Property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.List.ItemDataBind> event to get the starting totals of status settings for the list. This code is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
-  
- [!code-csharp[MobileListSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#4)]
- [!code-vb[MobileListSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#4)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.List.ItemDataBind> event to get the starting totals of status settings for the list. This code is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
+ 
+[!code-csharp[MobileListSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#4)]
+[!code-vb[MobileListSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -529,10 +529,10 @@
         <value>The collection of items in the list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can add or remove items from a <xref:System.Web.UI.MobileControls.List> collection by using the <xref:System.Web.UI.MobileControls.MobileListItemCollection.Add%2A>, <xref:System.Web.UI.MobileControls.MobileListItemCollection.Remove%2A>, and <xref:System.Web.UI.MobileControls.MobileListItemCollection.RemoveAt%2A> methods of the <xref:System.Web.UI.MobileControls.MobileListItemCollection> class.  
-  
+You can add or remove items from a <xref:System.Web.UI.MobileControls.List> collection by using the <xref:System.Web.UI.MobileControls.MobileListItemCollection.Add%2A>, <xref:System.Web.UI.MobileControls.MobileListItemCollection.Remove%2A>, and <xref:System.Web.UI.MobileControls.MobileListItemCollection.RemoveAt%2A> methods of the <xref:System.Web.UI.MobileControls.MobileListItemCollection> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -563,10 +563,10 @@
           <see langword="true" /> if items in the list are to be treated as hyperlinks; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is `true`, the value of the <xref:System.Web.UI.MobileControls.List.DataTextField%2A> property is used to display the text of the hyperlink, and the <xref:System.Web.UI.MobileControls.List.DataValueField%2A> property is used to specify the target URL. Command events will not be generated for these links. Thus, when the <xref:System.Web.UI.MobileControls.List.ItemsAsLinks%2A> property is set to `true`, an <xref:System.Web.UI.MobileControls.List.OnItemCommand%2A> method will not be called because a new page will be loaded through an HTTP call.  
-  
+If the value of this property is `true`, the value of the <xref:System.Web.UI.MobileControls.List.DataTextField%2A> property is used to display the text of the hyperlink, and the <xref:System.Web.UI.MobileControls.List.DataValueField%2A> property is used to specify the target URL. Command events will not be generated for these links. Thus, when the <xref:System.Web.UI.MobileControls.List.ItemsAsLinks%2A> property is set to `true`, an <xref:System.Web.UI.MobileControls.List.OnItemCommand%2A> method will not be called because a new page will be loaded through an HTTP call.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -658,10 +658,10 @@
         <summary>Called when a list item generates an event as a result of user interaction. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation raises the <xref:System.Web.UI.MobileControls.List.ItemCommand> event. Inheriting classes can override this method to perform other tasks.  
-  
+The default implementation raises the <xref:System.Web.UI.MobileControls.List.ItemCommand> event. Inheriting classes can override this method to perform other tasks.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -686,10 +686,10 @@
         <summary>Called when a list item is data bound. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation raises the <xref:System.Web.UI.MobileControls.List.ItemDataBind> event. Inheriting classes can override this method to perform other tasks.  
-  
+The default implementation raises the <xref:System.Web.UI.MobileControls.List.ItemDataBind> event. Inheriting classes can override this method to perform other tasks.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -819,10 +819,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.List> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.List> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

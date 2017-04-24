@@ -85,10 +85,10 @@
         <value>The <see cref="T:System.Type" /> of the object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the serialized object is `null`, this property returns the <xref:System.Object> type.  
-  
+If the serialized object is `null`, this property returns the <xref:System.Object> type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

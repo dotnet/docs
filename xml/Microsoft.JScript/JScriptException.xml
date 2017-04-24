@@ -18,10 +18,10 @@
     <summary>The exception that is thrown by JScript to notify a common language runtime (CLR) host or program that an error occurred. A <see cref="T:Microsoft.JScript.JScriptException" /> usually takes a <see cref="T:Microsoft.JScript.JSError" /> enumeration value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:Microsoft.JScript.JScriptException> is also an <xref:Microsoft.Vsa.IVsaError> and can be passed to the host through <xref:Microsoft.Vsa.IVsaSite.OnCompilerError%2A>.  
-  
+A <xref:Microsoft.JScript.JScriptException> is also an <xref:Microsoft.Vsa.IVsaError> and can be passed to the host through <xref:Microsoft.Vsa.IVsaSite.OnCompilerError%2A>.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

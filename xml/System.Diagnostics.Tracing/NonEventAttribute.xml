@@ -31,10 +31,10 @@
     <summary>Identifies a method that is not generating an event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, all instance methods in a class that subclasses `code:EventSource` and that return `void` are assumed to be methods that generate an event. This default can be overridden by applying the <xref:System.Diagnostics.Tracing.NonEventAttribute> attribute.  
-  
+By default, all instance methods in a class that subclasses `code:EventSource` and that return `void` are assumed to be methods that generate an event. This default can be overridden by applying the <xref:System.Diagnostics.Tracing.NonEventAttribute> attribute.  
+ 
  ]]></format>
     </remarks>
   </Docs>

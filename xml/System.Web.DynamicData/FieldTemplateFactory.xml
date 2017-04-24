@@ -18,10 +18,10 @@
     <summary>Creates a field template.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this class implements the <xref:System.Web.DynamicData.IFieldTemplateFactory> interface, and uses the <xref:System.Web.UI.UserControl> class to create field templates.  
-  
+By default, this class implements the <xref:System.Web.DynamicData.IFieldTemplateFactory> interface, and uses the <xref:System.Web.UI.UserControl> class to create field templates.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <returns>The virtual path to the field template.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this method builds the virtual path to a field template by using the template name, appending the mode and then adding a .ascx extension. For example, if `templateName` is MyFieldTemplate and `mode` is Edit, then the virtual path will be MyFieldTemplate_Edit.ascx, in the folder specified by the Template folder virtual path.  
-  
+By default, this method builds the virtual path to a field template by using the template name, appending the mode and then adding a .ascx extension. For example, if `templateName` is MyFieldTemplate and `mode` is Edit, then the virtual path will be MyFieldTemplate_Edit.ascx, in the folder specified by the Template folder virtual path.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -127,10 +127,10 @@
         <returns>The virtual path of the field template.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dynamic Data field templates are created in the DynamicData/FieldTemplates/ folder but you can create a new folder for your field templates. This method determines the virtual path for the folder that contains the field template using the specified parameters.  
-  
+Dynamic Data field templates are created in the DynamicData/FieldTemplates/ folder but you can create a new folder for your field templates. This method determines the virtual path for the folder that contains the field template using the specified parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <value>The model that is associated with the <see cref="T:System.Web.DynamicData.FieldTemplateFactory" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaModel> class is an abstract class that represents the mapping between a database and domain objects. Dynamic Data provides a set of classes (the data model) that represent the model. The classes are generated through the Object Relational Designer (O/R Designer). You can use the LINQ to SQL Classes template to generate these classes. This property is used to get and set the data model associated with the <xref:System.Web.DynamicData.FieldTemplateFactory> class.  
-  
+The <xref:System.Web.DynamicData.MetaModel> class is an abstract class that represents the mapping between a database and domain objects. Dynamic Data provides a set of classes (the data model) that represent the model. The classes are generated through the Object Relational Designer (O/R Designer). You can use the LINQ to SQL Classes template to generate these classes. This property is used to get and set the data model associated with the <xref:System.Web.DynamicData.FieldTemplateFactory> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <returns>The mode that a column renders.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dynamic Data renders data in Read Only, Insert, or Edits modes. This method controls which mode is rendered in the column. For example, an Edit mode request changes to Read Only if the column is a primary key column. Columns that are automatically generated and foreign keys that are part of the primary key cannot be edited.  
-  
+Dynamic Data renders data in Read Only, Insert, or Edits modes. This method controls which mode is rendered in the column. For example, an Edit mode request changes to Read Only if the column is a primary key column. Columns that are automatically generated and foreign keys that are part of the primary key cannot be edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <value>The path to the folder that contains the field templates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default folder where field templates are created is the /DynamicData/FieldTemplates/. This folder contains the default field templates and custom field templates that you create. If you create and specify a different folder for the field templates, Dynamic Data will create the field templates in the folder you specify. For more information about field templates, see [ASP.NET Dynamic Data Scaffolding](http://msdn.microsoft.com/library/e0166a58-9178-4660-81a6-175994b11b12).  
-  
+The default folder where field templates are created is the /DynamicData/FieldTemplates/. This folder contains the default field templates and custom field templates that you create. If you create and specify a different folder for the field templates, Dynamic Data will create the field templates in the folder you specify. For more information about field templates, see [ASP.NET Dynamic Data Scaffolding](http://msdn.microsoft.com/library/e0166a58-9178-4660-81a6-175994b11b12).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -127,10 +127,10 @@
         <value>The name of the entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the <xref:System.Web.UI.WebControls.LinqDataSource> class, this property is called `TableName`.  
-  
+In the <xref:System.Web.UI.WebControls.LinqDataSource> class, this property is called `TableName`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
         <value>The value that is used to create the <see langword="Where" /> clause.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specific syntax for the `Where` clause depends on the data source that is used.  
-  
+The specific syntax for the `Where` clause depends on the data source that is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

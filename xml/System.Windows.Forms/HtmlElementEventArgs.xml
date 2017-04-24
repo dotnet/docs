@@ -14,24 +14,24 @@
     <summary>Provides data for the events defined on <see cref="T:System.Windows.Forms.HtmlDocument" /> and <see cref="T:System.Windows.Forms.HtmlElement" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlElementEventArgs> encapsulates the same information found on the `window.event` object when programming against the unmanaged HTML DOM or when writing Active Script for HTML pages.  
+<xref:System.Windows.Forms.HtmlElementEventArgs> encapsulates the same information found on the `window.event` object when programming against the unmanaged HTML DOM or when writing Active Script for HTML pages.  
+ 
+In most cases, you can use <xref:System.Windows.Forms.HtmlElementEventArgs.ToElement%2A> to find the HTML element that is receiving the event action, and <xref:System.Windows.Forms.HtmlElementEventArgs.FromElement%2A> to find the HTML element that the current event is causing us to leave. However, not every event supplies a value for these properties; see the managed documentation for an event, or the corresponding documentation in the Internet Explorer SDK documentation, to discover if the event supplies it.  
+ 
+Many events in the HTML DOM are sent to their parent elements unless they are cancelled. This is known as event bubbling. If a `SPAN` inside of a `DIV` receives a click, then a click event is raised for the `SPAN` first, then for the `DIV`, and finally for the HTML page's `BODY` element. <xref:System.Windows.Forms.HtmlElementEventArgs.BubbleEvent%2A> controls whether an event will behave in this manner or not.  
+ 
   
- In most cases, you can use <xref:System.Windows.Forms.HtmlElementEventArgs.ToElement%2A> to find the HTML element that is receiving the event action, and <xref:System.Windows.Forms.HtmlElementEventArgs.FromElement%2A> to find the HTML element that the current event is causing us to leave. However, not every event supplies a value for these properties; see the managed documentation for an event, or the corresponding documentation in the Internet Explorer SDK documentation, to discover if the event supplies it.  
-  
- Many events in the HTML DOM are sent to their parent elements unless they are cancelled. This is known as event bubbling. If a `SPAN` inside of a `DIV` receives a click, then a click event is raised for the `SPAN` first, then for the `DIV`, and finally for the HTML page's `BODY` element. <xref:System.Windows.Forms.HtmlElementEventArgs.BubbleEvent%2A> controls whether an event will behave in this manner or not.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,15 +54,15 @@
           <see langword="true" /> is the ALT key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,20 +85,20 @@
           <see langword="true" /> if the event bubbles; <see langword="false" /> if it does not.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Not all events in the Document Object Model bubble. All of the events exposed by the <xref:System.Windows.Forms.HtmlDocument> managed wrapper bubble with the exception of <xref:System.Windows.Forms.HtmlDocument.Stop>. For <xref:System.Windows.Forms.HtmlElement>, the `Error` and `Load` events do not bubble. Setting `BubbleEvent` to `true` during any of these events will have no effect.  
+Not all events in the Document Object Model bubble. All of the events exposed by the <xref:System.Windows.Forms.HtmlDocument> managed wrapper bubble with the exception of <xref:System.Windows.Forms.HtmlDocument.Stop>. For <xref:System.Windows.Forms.HtmlElement>, the `Error` and `Load` events do not bubble. Setting `BubbleEvent` to `true` during any of these events will have no effect.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,40 +120,40 @@
         <value>The current position of the mouse cursor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `ClientMousePosition` gives the mouse position of the cursor relative to the upper-left corner of the document. Use <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> if you need the mouse coordinates relative to the element that raised the event.  
+`ClientMousePosition` gives the mouse position of the cursor relative to the upper-left corner of the document. Use <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> if you need the mouse coordinates relative to the element that raised the event.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following HTML file demonstrates relative positioning of a `TABLE` inside of a `BODY` tag.  
-  
+The following HTML file demonstrates relative positioning of a `TABLE` inside of a `BODY` tag.  
+ 
 ```  
 <HTML>  
-  
+ 
 <BODY>  
-  
-    <TABLE style="position:relative;top:100px;left:100px;">  
-        <TR>  
-            <TD>Text</TD>  
-            <TD>More text</TD>  
-        </TR>  
-    </TABLE>  
-  
+ 
+   <TABLE style="position:relative;top:100px;left:100px;">  
+       <TR>  
+           <TD>Text</TD>  
+           <TD>More text</TD>  
+       </TR>  
+   </TABLE>  
+ 
 </BODY>  
-  
+ 
 </HTML>  
-  
+ 
 ```  
-  
- The following code example displays the difference between <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A>, <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A>, and <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> when the user clicks on an element of the `TABLE`. <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> will display coordinates relative to the upper-left corner of the document's client area. <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> will display coordinates relative to the upper-left corner of the `TABLE`. If you click on one of the lines of text, <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> will display coordinates relative to that `TD` element.  
-  
- This example requires that you have configured `Document_MouseDown` as a handler for the <xref:System.Windows.Forms.HtmlDocument.MouseDown> event on <xref:System.Windows.Forms.HtmlDocument>.  
-  
- [!code-csharp[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb#2)]  
-  
+ 
+The following code example displays the difference between <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A>, <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A>, and <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> when the user clicks on an element of the `TABLE`. <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> will display coordinates relative to the upper-left corner of the document's client area. <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> will display coordinates relative to the upper-left corner of the `TABLE`. If you click on one of the lines of text, <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> will display coordinates relative to that `TD` element.  
+ 
+This example requires that you have configured `Document_MouseDown` as a handler for the <xref:System.Windows.Forms.HtmlDocument.MouseDown> event on <xref:System.Windows.Forms.HtmlDocument>.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,15 +176,15 @@
           <see langword="true" /> if the CTRL key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,15 +206,15 @@
         <value>The name of the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <value>The <see cref="T:System.Windows.Forms.HtmlElement" /> the mouse pointer is moving away from.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlElementEventArgs.FromElement%2A> will have a valid value during mouse events such as <xref:System.Windows.Forms.HtmlElement.MouseEnter> and <xref:System.Windows.Forms.HtmlElement.MouseLeave>.  
-  
+<xref:System.Windows.Forms.HtmlElementEventArgs.FromElement%2A> will have a valid value during mouse events such as <xref:System.Windows.Forms.HtmlElement.MouseEnter> and <xref:System.Windows.Forms.HtmlElement.MouseLeave>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,15 +269,15 @@
         <value>The ASCII value of the composed keyboard entry.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,15 +299,15 @@
         <value>The mouse button that was clicked.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,42 +329,42 @@
         <value>The position of the mouse cursor relative to the upper-left corner of the parent of the element that raised the event, if the parent element is relatively positioned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Relative positioning is used in HTML to place an element on a page in relation to its parent.  
+Relative positioning is used in HTML to place an element on a page in relation to its parent.  
+ 
+If an element is relatively positioned, this property will return the same result as <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A>.  
+ 
   
- If an element is relatively positioned, this property will return the same result as <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following HTML file demonstrates relative positioning of a `TABLE` inside of a `BODY` tag.  
-  
+The following HTML file demonstrates relative positioning of a `TABLE` inside of a `BODY` tag.  
+ 
 ```  
 <HTML>  
-  
+ 
 <BODY>  
-  
-    <TABLE style="position:relative;top:100px;left:100px;">  
-        <TR>  
-            <TD>Text/TD>  
-            <TD>More text</TD>  
-        </TR>  
-    </TABLE>  
-  
+ 
+   <TABLE style="position:relative;top:100px;left:100px;">  
+       <TR>  
+           <TD>Text/TD>  
+           <TD>More text</TD>  
+       </TR>  
+   </TABLE>  
+ 
 </BODY>  
-  
+ 
 </HTML>  
-  
+ 
 ```  
-  
- The following code example displays the difference between <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A>, <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A>, and <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> when the user clicks on an element of the `TABLE`. <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> will display coordinates relative to the upper-left corner of the document's client area. <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> will display coordinates relative to the upper-left corner of the `TABLE`. If you click on one of the lines of text, <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> will display coordinates relative to that `TD` element.  
-  
- This example requires that you have configured `Document_MouseDown` as a handler for the <xref:System.Windows.Forms.HtmlDocument.MouseDown> event on <xref:System.Windows.Forms.HtmlDocument>.  
-  
- [!code-csharp[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb#2)]  
-  
+ 
+The following code example displays the difference between <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A>, <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A>, and <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> when the user clicks on an element of the `TABLE`. <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> will display coordinates relative to the upper-left corner of the document's client area. <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> will display coordinates relative to the upper-left corner of the `TABLE`. If you click on one of the lines of text, <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> will display coordinates relative to that `TD` element.  
+ 
+This example requires that you have configured `Document_MouseDown` as a handler for the <xref:System.Windows.Forms.HtmlDocument.MouseDown> event on <xref:System.Windows.Forms.HtmlDocument>.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,35 +386,35 @@
         <value>The mouse position relative to the element that raises the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following HTML file demonstrates relative positioning of a `TABLE` inside of a `BODY` tag.  
-  
+The following HTML file demonstrates relative positioning of a `TABLE` inside of a `BODY` tag.  
+ 
 ```  
 <HTML>  
-  
+ 
 <BODY>  
-  
-    <TABLE style="position:relative;top:100px;left:100px;">  
-        <TR>  
-            <TD>Text</TD>  
-            <TD>More text</TD>  
-        </TR>  
-    </TABLE>  
-  
+ 
+   <TABLE style="position:relative;top:100px;left:100px;">  
+       <TR>  
+           <TD>Text</TD>  
+           <TD>More text</TD>  
+       </TR>  
+   </TABLE>  
+ 
 </BODY>  
-  
+ 
 </HTML>  
-  
+ 
 ```  
-  
- The following code example displays the difference between <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A>, <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> and <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> when the user clicks on an element of the `TABLE`. <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> will display coordinates relative to the upper-left corner of the document's client area. <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> will display coordinates relative to the upper-left corner of the `TABLE`. If you click on one of the lines of text, <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> will display coordinates relative to that `TD` element.  
-  
- This example requires that you have configured `Document_MouseDown` as a handler for the <xref:System.Windows.Forms.HtmlDocument.MouseDown> event on <xref:System.Windows.Forms.HtmlDocument>.  
-  
- [!code-csharp[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb#2)]  
-  
+ 
+The following code example displays the difference between <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A>, <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> and <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> when the user clicks on an element of the `TABLE`. <xref:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition%2A> will display coordinates relative to the upper-left corner of the document's client area. <xref:System.Windows.Forms.HtmlElementEventArgs.MousePosition%2A> will display coordinates relative to the upper-left corner of the `TABLE`. If you click on one of the lines of text, <xref:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition%2A> will display coordinates relative to that `TD` element.  
+ 
+This example requires that you have configured `Document_MouseDown` as a handler for the <xref:System.Windows.Forms.HtmlDocument.MouseDown> event on <xref:System.Windows.Forms.HtmlDocument>.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,15 +437,15 @@
           <see langword="true" /> if the event has been handled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -468,15 +468,15 @@
           <see langword="true" /> if the SHIFT key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -506,20 +506,20 @@
         <value>The element toward which the mouse pointer is moving.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlElementEventArgs.ToElement%2A> will have a valid value during mouse events such as <xref:System.Windows.Forms.HtmlElement.MouseEnter> and <xref:System.Windows.Forms.HtmlElement.MouseLeave>.  
+<xref:System.Windows.Forms.HtmlElementEventArgs.ToElement%2A> will have a valid value during mouse events such as <xref:System.Windows.Forms.HtmlElement.MouseEnter> and <xref:System.Windows.Forms.HtmlElement.MouseLeave>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
+[!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

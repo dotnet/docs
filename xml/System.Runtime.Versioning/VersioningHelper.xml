@@ -19,10 +19,10 @@
     <summary>Provides methods to aid developers in writing version-safe code. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is intended to facilitate the use of the <xref:System.Runtime.Versioning.ResourceConsumptionAttribute> and <xref:System.Runtime.Versioning.ResourceExposureAttribute> classes.  
-  
+This class is intended to facilitate the use of the <xref:System.Runtime.Versioning.ResourceConsumptionAttribute> and <xref:System.Runtime.Versioning.ResourceExposureAttribute> classes.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -58,10 +58,10 @@
         <returns>A version-safe name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The original name is returned with a scope related suffix. The suffix may include the process identity, the current <xref:System.AppDomain> identity, or both.  
-  
+The original name is returned with a scope related suffix. The suffix may include the process identity, the current <xref:System.AppDomain> identity, or both.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -104,10 +104,10 @@
         <returns>A version-safe name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The original name is returned with a scope related suffix.  
-  
+The original name is returned with a scope related suffix.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The values for <paramref name="from " />and <paramref name="to " />are invalid. The resource type in the <see cref="T:System.Runtime.Versioning.ResourceScope" /> enumeration is going from a more restrictive resource type to a more general resource type.</exception>

@@ -14,10 +14,10 @@
     <summary>Calculates statistical formulas.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Formulas can be loosely grouped into the following categories: distributions, including inverse distributions; tests; and basic statistical formulas. Each group has common characteristics with respect to their input and return values.  
-  
+Formulas can be loosely grouped into the following categories: distributions, including inverse distributions; tests; and basic statistical formulas. Each group has common characteristics with respect to their input and return values.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,14 +45,14 @@
         <returns>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnovaResult" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An ANOVA test is used to test the difference between the means of two or more groups of data.  
-  
- Two or more groups of series data must be specified, and each series must have the same number of data points; otherwise, an exception will be raised.  
-  
- If a specified input series does not exist in the <xref:System.Windows.Forms.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception will be thrown.  
-  
+An ANOVA test is used to test the difference between the means of two or more groups of data.  
+ 
+Two or more groups of series data must be specified, and each series must have the same number of data points; otherwise, an exception will be raised.  
+ 
+If a specified input series does not exist in the <xref:System.Windows.Forms.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,10 +80,10 @@
         <returns>A <see langword="double" /> value that represents the beta function for the two given values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the beta function value for two given values that are specified by `m` and `n`.  
-  
+This method returns the beta function value for two given values that are specified by `m` and `n`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,14 +111,14 @@
         <returns>A <see langword="double" /> value that represents the correlation between two data series.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Correlation measures the relationship between two data sets that are scaled to be independent of the unit of measurement. The <xref:System.Windows.Forms.DataVisualization.Charting.StatisticFormula.Correlation%2A> method returns the covariance of two data sets divided by the product of their standard deviations, and always ranges from -1 to 1.  
-  
- Use correlation to determine whether two ranges of data move together; that is, whether large values of one set are associated with large values of the other (positive correlation), whether small values of one set are associated with large values of the other (negative correlation), or whether values in both sets are unrelated (correlation near zero).  
-  
- If a specified input series does not exist in the series collection at the time of the method call, an exception will be thrown. An exception will also be raised if the specified series do not have the same number of data points.  
-  
+Correlation measures the relationship between two data sets that are scaled to be independent of the unit of measurement. The <xref:System.Windows.Forms.DataVisualization.Charting.StatisticFormula.Correlation%2A> method returns the covariance of two data sets divided by the product of their standard deviations, and always ranges from -1 to 1.  
+ 
+Use correlation to determine whether two ranges of data move together; that is, whether large values of one set are associated with large values of the other (positive correlation), whether small values of one set are associated with large values of the other (negative correlation), or whether values in both sets are unrelated (correlation near zero).  
+ 
+If a specified input series does not exist in the series collection at the time of the method call, an exception will be thrown. An exception will also be raised if the specified series do not have the same number of data points.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,14 +246,14 @@
         <returns>A <see langword="double" /> value from the inverse F distribution function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the F value for the given F distribution probability.  
-  
- The F distribution can be used in an F-test that compares the degree of variability in two data sets.  
-  
- This method may return an exception depending on the parameter values.  
-  
+This method returns the F value for the given F distribution probability.  
+ 
+The F distribution can be used in an F-test that compares the degree of variability in two data sets.  
+ 
+This method may return an exception depending on the parameter values.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Condition: Cannot continue calculation using specified parameter values because of limitation.</exception>
@@ -280,12 +280,12 @@
         <returns>A <see langword="double" /> value from the inverse standard normal cumulative distribution function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the F value for the given F distribution probability.  
-  
- It is assumed that the distribution has a mean of 0 (zero) and a standard deviation of one.  
-  
+This method returns the F value for the given F distribution probability.  
+ 
+It is assumed that the distribution has a mean of 0 (zero) and a standard deviation of one.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,10 +313,10 @@
         <returns>A <see langword="double" /> value that represents the inverse T distribution.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the t value for the given T distribution probability.  
-  
+This method returns the t value for the given T distribution probability.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -342,12 +342,12 @@
         <returns>A <see langword="double" /> value that represents the average of all data points.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to calculate the mean (that is, the average) of the points stored in a series.  
-  
- If the specified input series does not exist in the <xref:System.Windows.Forms.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception will be thrown.  
-  
+Use this method to calculate the mean (that is, the average) of the points stored in a series.  
+ 
+If the specified input series does not exist in the <xref:System.Windows.Forms.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,14 +373,14 @@
         <returns>A <see langword="double" /> value that represents the median.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to calculate the median of the points stored in a series.  
-  
- The median is the middle value of a sample set, where half of the members are greater in size and half the members are lesser in size.  
-  
- If the specified input series does not exist in the <xref:System.Windows.Forms.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception will be thrown.  
-  
+Use this method to calculate the median of the points stored in a series.  
+ 
+The median is the middle value of a sample set, where half of the members are greater in size and half the members are lesser in size.  
+ 
+If the specified input series does not exist in the <xref:System.Windows.Forms.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

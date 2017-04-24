@@ -18,14 +18,14 @@
     <summary>Indicates the file attributes to use when calling file-access functions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
-  
- The `Attributes` argument takes the `FileAttribute` enumeration members.  
-  
- When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> .  
-  
+When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
+ 
+The `Attributes` argument takes the `FileAttribute` enumeration members.  
+ 
+When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> .  
+ 
  ]]></format>
     </remarks>
   </Docs>

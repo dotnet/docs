@@ -23,12 +23,12 @@
     <summary>Provides a default implementation of <see cref="T:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
           <see langword="true" /> if <see cref="P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.CheckTypes" /> is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns `false`.  
-  
+The default implementation returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,10 +91,10 @@
         <value>The name of the programming language used by the workflow compiler.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns `CSharp`.  
-  
+The default implementation returns `CSharp`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <value>The root namespace for the environment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns `String.Empty`.  
-  
+The default implementation returns `String.Empty`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <value>The target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version for the compiled workflow assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns `String.Empty`.  
-  
+The default implementation returns `String.Empty`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

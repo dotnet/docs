@@ -14,43 +14,43 @@
     <summary>Represents one or multiple databases that are used by ASP.NET Dynamic Data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaModel> type lets you register one or multiple data contexts for a Dynamic Data Web application.  
+The <xref:System.Web.DynamicData.MetaModel> type lets you register one or multiple data contexts for a Dynamic Data Web application.  
+ 
+A data context is an object that represents a database connection. A data context has access to one data model which represents a database that is available through that connection. A data model is an object that represents a database's data entities as CLR types. Dynamic Data supports data models based on LINQ to SQL and on the ADO.NET Entity Framework.  
+ 
+In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], you can generate data-model types by using the **LINQ to SQL Classes** template or the **ADO.NET Entity Data Model** template. These templates use the Object Relational Designer (O/R Designer) for the LINQ to SQL model, or the ADO.NET Entity Data Model Designer (Entity Designer) for the Entity Framework model.  
+ 
   
- A data context is an object that represents a database connection. A data context has access to one data model which represents a database that is available through that connection. A data model is an object that represents a database's data entities as CLR types. Dynamic Data supports data models based on LINQ to SQL and on the ADO.NET Entity Framework.  
-  
- In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], you can generate data-model types by using the **LINQ to SQL Classes** template or the **ADO.NET Entity Data Model** template. These templates use the Object Relational Designer (O/R Designer) for the LINQ to SQL model, or the ADO.NET Entity Data Model Designer (Entity Designer) for the Entity Framework model.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use <xref:System.Web.DynamicData.MetaModel> type to perform the following tasks in order to use automatic scaffolding in an ASP.NET Web site:  
-  
+The following example shows how to use <xref:System.Web.DynamicData.MetaModel> type to perform the following tasks in order to use automatic scaffolding in an ASP.NET Web site:  
+ 
 -   Get the data model for the default data context.  
-  
+ 
 -   Get the data model for a specified data context.  
-  
+ 
 -   Evaluate the routing path (determine the URL) for a specified table.  
-  
- The example consists of a page and its code-behind file.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PlaceHolder.cs#1)]
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx#1)]  -->
- [!code-vb[System.Web.DynamicData.MetaModel#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PlaceHolder.vb#1)]  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx.cs#2)]
- [!code-vb[System.Web.DynamicData.MetaModel#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx.vb#2)]  
-  
- To compile the example, you need the following:  
-  
+ 
+The example consists of a page and its code-behind file.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PlaceHolder.cs#1)]
+<!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx#1)]  -->
+[!code-vb[System.Web.DynamicData.MetaModel#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PlaceHolder.vb#1)]  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx.cs#2)]
+[!code-vb[System.Web.DynamicData.MetaModel#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx.vb#2)]  
+ 
+To compile the example, you need the following:  
+ 
 -   [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] or [!INCLUDE[vwd_exp_dev10_long](~/includes/vwd-exp-dev10-long-md.md)].  
-  
+ 
 -   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
-  
- See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel).  
-  
+ 
+See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel).  
+ 
  ]]></format>
     </remarks>
     <exception cref="T:System.InvalidOperationException">Can be thrown by any method if there has been a data context registration error.</exception>
@@ -70,22 +70,22 @@
         <summary>Instantiates a new instance of the <see cref="T:System.Web.DynamicData.MetaModel" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You typically call the <xref:System.Web.DynamicData.MetaModel.%23ctor%2A> constructor in the `Application_Start` method of the Global.asax file.  
+You typically call the <xref:System.Web.DynamicData.MetaModel.%23ctor%2A> constructor in the `Application_Start` method of the Global.asax file.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.%23ctor%2A> constructor to perform the following tasks:  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.%23ctor%2A> constructor to perform the following tasks:  
+ 
 -   Instantiate the <xref:System.Web.DynamicData.MetaModel> class.  
-  
+ 
 -   Initialize and register the <xref:System.Web.DynamicData.MetaModel> instance.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#99](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/global.asax.cs#99)]
- [!code-vb[System.Web.DynamicData.MetaModel#99](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/global.asax.vb#99)]  
-  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#99](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/global.asax.cs#99)]
+[!code-vb[System.Web.DynamicData.MetaModel#99](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/global.asax.vb#99)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,12 +108,12 @@
         <summary>Instantiates a new instance of the <see cref="T:System.Web.DynamicData.MetaModel" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor determines whether the data model is registered globally so that it can be retrieved using the <xref:System.Web.DynamicData.MetaModel.GetModel%2A> method. It enables you to create multiple models and use the same entity types while avoiding type conflicts.  
-  
- You typically call the <xref:System.Web.DynamicData.MetaModel.%23ctor%2A> constructor in the `Application_Start` method of the Global.asax file.  
-  
+This constructor determines whether the data model is registered globally so that it can be retrieved using the <xref:System.Web.DynamicData.MetaModel.GetModel%2A> method. It enables you to create multiple models and use the same entity types while avoiding type conflicts.  
+ 
+You typically call the <xref:System.Web.DynamicData.MetaModel.%23ctor%2A> constructor in the `Application_Start` method of the Global.asax file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <returns>A new instance of the table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaModel.CreateTable%2A> method can be overridden to instantiate a derived type.  
-  
+The <xref:System.Web.DynamicData.MetaModel.CreateTable%2A> method can be overridden to instantiate a derived type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,20 +164,20 @@
         <value>The data-model instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides a simple way to reference the default data-model instance. If the application uses multiple models, you must provide your own way to store references to the additional data models. To find a specific data model, call the <xref:System.Web.DynamicData.MetaModel.GetModel%2A?displayProperty=fullName> method.  
+This property provides a simple way to reference the default data-model instance. If the application uses multiple models, you must provide your own way to store references to the additional data models. To find a specific data model, call the <xref:System.Web.DynamicData.MetaModel.GetModel%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.Default%2A> property in the <xref:System.Web.DynamicData.MetaModel.GetModel%2A> method to get the default data model.  
-  
- For a complete example, see the <xref:System.Web.DynamicData.MetaModel> class overview.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx.cs#22)]
- [!code-vb[System.Web.DynamicData.MetaModel#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx.vb#22)]  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.Default%2A> property in the <xref:System.Web.DynamicData.MetaModel.GetModel%2A> method to get the default data model.  
+ 
+For a complete example, see the <xref:System.Web.DynamicData.MetaModel> class overview.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx.cs#22)]
+[!code-vb[System.Web.DynamicData.MetaModel#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx.vb#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@
         <value>The virtual path of the DynamicData folder.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables you to change the virtual path of the DynamicData folder. The default value is "~/DynamicData".  
-  
+This property enables you to change the virtual path of the DynamicData folder. The default value is "~/DynamicData".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <value>The <see cref="T:System.Web.DynamicData.IFieldTemplateFactory" /> interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.IFieldTemplateFactory> interface lets you specify which field templates are created for the table columns.  
-  
+The <xref:System.Web.DynamicData.IFieldTemplateFactory> interface lets you specify which field templates are created for the table columns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,20 +293,20 @@
         <returns>The URL that is associated with the route.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The route is determined by the combination of the table name and action.  
+The route is determined by the combination of the table name and action.  
+ 
+[Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=PathModel.aspx) an online example of this feature.  
+ 
   
- [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=PathModel.aspx) an online example of this feature.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetActionPath%28System.String%2CSystem.String%2CSystem.Object%29> method to evaluate the routing path (determine the URL) for a specified table. For a complete example, see <xref:System.Web.DynamicData.MetaModel>.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#23](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx.cs#23)]
- [!code-vb[System.Web.DynamicData.MetaModel#23](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx.vb#23)]  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetActionPath%28System.String%2CSystem.String%2CSystem.Object%29> method to evaluate the routing path (determine the URL) for a specified table. For a complete example, see <xref:System.Web.DynamicData.MetaModel>.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#23](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx.cs#23)]
+[!code-vb[System.Web.DynamicData.MetaModel#23](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx.vb#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,19 +332,19 @@
         <returns>The data model that is associated with the specified context type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetModel%28System.Type%29> method to perform the following tasks:  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetModel%28System.Type%29> method to perform the following tasks:  
+ 
 -   Getting the default data model.  
-  
+ 
 -   Getting the data model specified by the passed context type.  
-  
- For a complete example, see the <xref:System.Web.DynamicData.MetaModel> class overview.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx.cs#22)]
- [!code-vb[System.Web.DynamicData.MetaModel#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx.vb#22)]  
-  
+ 
+For a complete example, see the <xref:System.Web.DynamicData.MetaModel> class overview.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx.cs#22)]
+[!code-vb[System.Web.DynamicData.MetaModel#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx.vb#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,18 +370,18 @@
         <returns>The metadata that describes the specified table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name uniquely identifies a table in the data model and is used to generate the related URL for routing.  
+The name uniquely identifies a table in the data model and is used to generate the related URL for routing.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%28System.String%29> method to obtain the metadata for the specified table. For a complete example, see <xref:System.Web.DynamicData.MetaModel.GetTable%2A>.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#42](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#42)]
- [!code-vb[System.Web.DynamicData.MetaModel#42](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#42)]  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%28System.String%29> method to obtain the metadata for the specified table. For a complete example, see <xref:System.Web.DynamicData.MetaModel.GetTable%2A>.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#42](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#42)]
+[!code-vb[System.Web.DynamicData.MetaModel#42](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#42)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The name was not found in the data model.</exception>
@@ -408,13 +408,13 @@
         <returns>The metadata that describes the specified table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%28System.Type%29> method to obtain the metadata for the specified table. For a complete example, see <xref:System.Web.DynamicData.MetaModel.GetTable%2A>.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#41](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#41)]
- [!code-vb[System.Web.DynamicData.MetaModel#41](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#41)]  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%28System.Type%29> method to obtain the metadata for the specified table. For a complete example, see <xref:System.Web.DynamicData.MetaModel.GetTable%2A>.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#41](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#41)]
+[!code-vb[System.Web.DynamicData.MetaModel#41](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#41)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The type was not found in the data model.</exception>
@@ -443,13 +443,13 @@
         <returns>The metadata that describes the specified table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%28System.String%2CSystem.Type%29> method to obtain the metadata for the specified table. For a complete example, see <xref:System.Web.DynamicData.MetaModel.GetTable%2A>.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#43](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#43)]
- [!code-vb[System.Web.DynamicData.MetaModel#43](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#43)]  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%28System.String%2CSystem.Type%29> method to obtain the metadata for the specified table. For a complete example, see <xref:System.Web.DynamicData.MetaModel.GetTable%2A>.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#43](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#43)]
+[!code-vb[System.Web.DynamicData.MetaModel#43](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#43)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -477,10 +477,10 @@
         <summary>Registers the data context that is specified by a context factory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the default context information that is defined by the <xref:System.Web.DynamicData.ContextConfiguration> class. It enables you to instantiate the data context by using your own constructor.  
-  
+This method uses the default context information that is defined by the <xref:System.Web.DynamicData.ContextConfiguration> class. It enables you to instantiate the data context by using your own constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -505,10 +505,10 @@
         <summary>Registers a data-context instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the default context information as defined by the <xref:System.Web.DynamicData.ContextConfiguration> class.  
-  
+This method uses the default context information as defined by the <xref:System.Web.DynamicData.ContextConfiguration> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -556,10 +556,10 @@
         <summary>Registers a data-context instance by using the specified context configuration and by enabling a custom constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The context factory in this method enables you to instantiate a data model context by using a custom constructor.  
-  
+The context factory in this method enables you to instantiate a data model context by using a custom constructor.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -589,13 +589,13 @@
         <summary>Registers a data-context instance by using the specified context configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.RegisterContext%28System.Type%2CSystem.Web.DynamicData.ContextConfiguration%29> method to register a data context with scaffolding enabled, as specified by the `configuration` parameter.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#99](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/global.asax.cs#99)]
- [!code-vb[System.Web.DynamicData.MetaModel#99](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/global.asax.vb#99)]  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.RegisterContext%28System.Type%2CSystem.Web.DynamicData.ContextConfiguration%29> method to register a data context with scaffolding enabled, as specified by the `configuration` parameter.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#99](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/global.asax.cs#99)]
+[!code-vb[System.Web.DynamicData.MetaModel#99](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/global.asax.vb#99)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -646,10 +646,10 @@
         <summary>Resets any previous context registration error that might have occurred.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an error occurs during data-context registration, the exception is cached and thrown on all subsequent operations. For example, if an error occurs at application start, it is thrown on every request. Call this method to clear the error and to enable a new context registration to be performed.  
-  
+When an error occurs during data-context registration, the exception is cached and thrown on all subsequent operations. For example, if an error occurs at application start, it is thrown on every request. Call this method to clear the error and to enable a new context registration to be performed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -671,29 +671,29 @@
         <value>A collection that contains the tables that belong to the data model.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection contains all the tables in the data model, which includes the tables that are not visible (are not part of Dynamic Data scaffolding).  
+The collection contains all the tables in the data model, which includes the tables that are not visible (are not part of Dynamic Data scaffolding).  
+ 
+[Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=TablesMenu.aspx) an online example of this feature.  
+ 
   
- [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=TablesMenu.aspx) an online example of this feature.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.Tables%2A> and <xref:System.Web.DynamicData.MetaModel.VisibleTables%2A> properties to perform the following tasks:  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.Tables%2A> and <xref:System.Web.DynamicData.MetaModel.VisibleTables%2A> properties to perform the following tasks:  
+ 
 -   Get a collection of all the tables in a data model and show them in a `GridView` control.  
-  
+ 
 -   Get a collection of the visible tables in a data model and show them in a `GridView` control.  
-  
- The example consists of a page and its code-behind file.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/TablesMenu.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/TablesMenu.aspx#5)]  -->  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/TablesMenu.aspx.cs#6)]
- [!code-vb[System.Web.DynamicData.MetaModel#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/TablesMenu.aspx.vb#6)]  
-  
+ 
+The example consists of a page and its code-behind file.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/TablesMenu.aspx#5)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/TablesMenu.aspx#5)]  -->  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/TablesMenu.aspx.cs#6)]
+[!code-vb[System.Web.DynamicData.MetaModel#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/TablesMenu.aspx.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -722,10 +722,10 @@
           <see langword="true" /> if the table metadata is found; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method gets the metadata that is associated with the specified table. If the table is not found, this method returns `false`. This differs from the <xref:System.Web.DynamicData.MetaModel.GetTable%2A> method, which throws an exception if the table is not found.  
-  
+This method gets the metadata that is associated with the specified table. If the table is not found, this method returns `false`. This differs from the <xref:System.Web.DynamicData.MetaModel.GetTable%2A> method, which throws an exception if the table is not found.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -756,10 +756,10 @@
           <see langword="true" /> if the table metadata is found; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method gets the metadata that is associated with the specified table. If the table is not found, this method returns `false`. This differs from the <xref:System.Web.DynamicData.MetaModel.GetTable%2A> method, which throws an exception if the table is not found.  
-  
+This method gets the metadata that is associated with the specified table. If the table is not found, this method returns `false`. This differs from the <xref:System.Web.DynamicData.MetaModel.GetTable%2A> method, which throws an exception if the table is not found.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -783,13 +783,13 @@
         <value>A visible table refers to a table that has scaffolding enabled. This means that it is a table for which a List.aspx page exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.VisibleTables%2A> property to get a collection of the visible tables in the data model. For a complete example, see the <xref:System.Web.DynamicData.MetaModel> class overview.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#62](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/TablesMenu.aspx.cs#62)]
- [!code-vb[System.Web.DynamicData.MetaModel#62](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/TablesMenu.aspx.vb#62)]  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.VisibleTables%2A> property to get a collection of the visible tables in the data model. For a complete example, see the <xref:System.Web.DynamicData.MetaModel> class overview.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#62](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/TablesMenu.aspx.cs#62)]
+[!code-vb[System.Web.DynamicData.MetaModel#62](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/TablesMenu.aspx.vb#62)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -804,29 +804,29 @@
         <summary>Returns the metadata that describes a data model table.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaTable> object that is returned by the overloaded methods contains the metadata information that is associated with the specified table.  
+The <xref:System.Web.DynamicData.MetaTable> object that is returned by the overloaded methods contains the metadata information that is associated with the specified table.  
+ 
+[Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=GetTable.aspx) an online example of this feature.  
+ 
   
- [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=GetTable.aspx) an online example of this feature.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%2A> overloaded methods to perform the following tasks:  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%2A> overloaded methods to perform the following tasks:  
+ 
 -   Get the <xref:System.Web.DynamicData.MetaTable> object for the specified table.  
-  
+ 
 -   Access the metadata information that is contained by the <xref:System.Web.DynamicData.MetaTable> object.  
-  
- The example consists of a page and its code-behind file.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx#3)] -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/GetTable.aspx#3)] --> 
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#4)]
- [!code-vb[System.Web.DynamicData.MetaModel#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#4)]  
-  
+ 
+The example consists of a page and its code-behind file.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx#3)] -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/GetTable.aspx#3)] --> 
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#4)]
+[!code-vb[System.Web.DynamicData.MetaModel#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -840,10 +840,10 @@
         <summary>Registers the data context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can define data-context initialization information by using the properties of the <xref:System.Web.DynamicData.ContextConfiguration> class.  
-  
+You can define data-context initialization information by using the properties of the <xref:System.Web.DynamicData.ContextConfiguration> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

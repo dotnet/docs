@@ -19,18 +19,18 @@
     <summary>Represents a user identity authenticated using forms authentication. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Security.FormsIdentity> class is used by the <xref:System.Web.Security.FormsAuthenticationModule> when a user is authenticated with forms authentication. An instance of the <xref:System.Web.Security.FormsIdentity> class is created using the <xref:System.Web.Security.FormsAuthenticationTicket> that is decrypted from the forms-authentication cookie or from the URL. The new instance of the <xref:System.Web.Security.FormsIdentity> class is used to construct a new <xref:System.Security.Principal.GenericPrincipal> object that is set as the value of the <xref:System.Web.HttpContext.User%2A> property for the current <xref:System.Web.HttpContext>.  
+The <xref:System.Web.Security.FormsIdentity> class is used by the <xref:System.Web.Security.FormsAuthenticationModule> when a user is authenticated with forms authentication. An instance of the <xref:System.Web.Security.FormsIdentity> class is created using the <xref:System.Web.Security.FormsAuthenticationTicket> that is decrypted from the forms-authentication cookie or from the URL. The new instance of the <xref:System.Web.Security.FormsIdentity> class is used to construct a new <xref:System.Security.Principal.GenericPrincipal> object that is set as the value of the <xref:System.Web.HttpContext.User%2A> property for the current <xref:System.Web.HttpContext>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example generates a <xref:System.Web.Security.FormsAuthenticationTicket> and then uses it to create an instance of the <xref:System.Web.Security.FormsIdentity> class, based on whether the user supplies the correct user name and password on the form.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.FormsIdentity#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.FormsIdentity/CS/FormsIdentity.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.FormsIdentity#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.FormsIdentity/VB/FormsIdentity.aspx#1)]  -->  
-  
+The following code example generates a <xref:System.Web.Security.FormsAuthenticationTicket> and then uses it to create an instance of the <xref:System.Web.Security.FormsIdentity> class, based on whether the user supplies the correct user name and password on the form.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.FormsIdentity#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.FormsIdentity/CS/FormsIdentity.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.FormsIdentity#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.FormsIdentity/VB/FormsIdentity.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -161,10 +161,10 @@
         <value>The user name of the forms identity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Security.FormsIdentity.Name%2A> property returns the value of the <xref:System.Web.Security.FormsAuthenticationTicket.Name%2A> property from the <xref:System.Web.Security.FormsAuthenticationTicket> supplied to the constructor.  
-  
+The <xref:System.Web.Security.FormsIdentity.Name%2A> property returns the value of the <xref:System.Web.Security.FormsAuthenticationTicket.Name%2A> property from the <xref:System.Web.Security.FormsAuthenticationTicket> supplied to the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

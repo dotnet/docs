@@ -55,12 +55,12 @@
         <summary>The <see cref="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Add(System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement)" /> method adds a <see cref="T:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement" /> instance to this <see cref="T:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Add%2A> method ignores a duplicate name provided in the `element` parameter.  
-  
- The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class is a collection of Service Principal Names (SPNs) that represent a configuration element for an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>.  
-  
+The <xref:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Add%2A> method ignores a duplicate name provided in the `element` parameter.  
+ 
+The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class is a collection of Service Principal Names (SPNs) that represent a configuration element for an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -74,10 +74,10 @@
         <summary>Occurs when the collection of <see cref="T:System.Web.UI.ExpressionBinding" /> objects is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ExpressionBindingCollection.Changed> event occurs when the <xref:System.Web.UI.ExpressionBindingCollection.Add%2A> method, the <xref:System.Web.UI.ExpressionBindingCollection.Remove%2A> method, or the <xref:System.Web.UI.ExpressionBindingCollection.Clear%2A> method is called.  
-  
+The <xref:System.Web.UI.ExpressionBindingCollection.Changed> event occurs when the <xref:System.Web.UI.ExpressionBindingCollection.Add%2A> method, the <xref:System.Web.UI.ExpressionBindingCollection.Remove%2A> method, or the <xref:System.Web.UI.ExpressionBindingCollection.Clear%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

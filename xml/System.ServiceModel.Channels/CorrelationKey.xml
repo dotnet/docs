@@ -14,10 +14,10 @@
     <summary>Represents an association between a piece of application data and an instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The key data is typically taken from a message that uses a set of queries contained in a <xref:System.ServiceModel.MessageQuerySet>. The <xref:System.ServiceModel.Channels.CorrelationKey> is then generated using a hash of the key data. Correlations are represented as a mapping between a <xref:System.ServiceModel.Channels.CorrelationKey> and an instance ID.  
-  
+The key data is typically taken from a message that uses a set of queries contained in a <xref:System.ServiceModel.MessageQuerySet>. The <xref:System.ServiceModel.Channels.CorrelationKey> is then generated using a hash of the key data. Correlations are represented as a mapping between a <xref:System.ServiceModel.Channels.CorrelationKey> and an instance ID.  
+ 
  ]]></format>
     </remarks>
   </Docs>

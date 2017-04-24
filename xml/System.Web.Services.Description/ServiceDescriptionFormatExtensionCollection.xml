@@ -15,17 +15,17 @@
     <summary>Represents the collection of extensibility elements used by the XML Web service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection can either contain instances of classes deriving from <xref:System.Web.Services.Description.ServiceDescriptionFormatExtension>, or instances of the <xref:System.Xml.XmlElement> class. In a derived class, <xref:System.Web.Services.Description.ServiceDescriptionFormatExtension> class allows users to define extensibility elements in addition to those defined in the Web Services Description Language (WSDL) specification. Use these in your <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection> if you know in advance the type of extensibility element you want to make. Use an <xref:System.Xml.XmlElement> when you do not know the format of an element in advance.  
+This collection can either contain instances of classes deriving from <xref:System.Web.Services.Description.ServiceDescriptionFormatExtension>, or instances of the <xref:System.Xml.XmlElement> class. In a derived class, <xref:System.Web.Services.Description.ServiceDescriptionFormatExtension> class allows users to define extensibility elements in addition to those defined in the Web Services Description Language (WSDL) specification. Use these in your <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection> if you know in advance the type of extensibility element you want to make. Use an <xref:System.Xml.XmlElement> when you do not know the format of an element in advance.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#1)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#1)]
- [!code-vb[ServiceDescriptionFormatExtension_13#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#1)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#1)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#1)]
+[!code-vb[ServiceDescriptionFormatExtension_13#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,17 +48,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Since many of the classes in the <xref:System.Web.Services.Description> namespace expose an `Extensions` property representing a <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection>, the constructor assigns a parent object corresponding to the level within the Web Services Description Language (WSDL) hierarchy where the current `ServiceDescriptionFormatExtensionCollection` is nested. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+Since many of the classes in the <xref:System.Web.Services.Description> namespace expose an `Extensions` property representing a <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection>, the constructor assigns a parent object corresponding to the level within the Web Services Description Language (WSDL) hierarchy where the current `ServiceDescriptionFormatExtensionCollection` is nested. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#2)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#2)]
- [!code-vb[ServiceDescriptionFormatExtension_13#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#2)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#2)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#2)]
+[!code-vb[ServiceDescriptionFormatExtension_13#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,12 +85,12 @@
         <returns>The zero-based index where the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" /> has been added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#3)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#3)]
- [!code-vb[ServiceDescriptionFormatExtension_13#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#3)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#3)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#3)]
+[!code-vb[ServiceDescriptionFormatExtension_13#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,12 +118,12 @@
           <see langword="true" /> if the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" /> is a member of the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#10](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#10)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#10](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#10)]
- [!code-vb[ServiceDescriptionFormatExtension_13#10](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#10)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#10](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#10)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#10](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#10)]
+[!code-vb[ServiceDescriptionFormatExtension_13#10](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,12 +151,12 @@
         <summary>Copies the entire <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> into a one-dimensional array of type <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" />, starting at the specified zero-based index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#9](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#9)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#9](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#9)]
- [!code-vb[ServiceDescriptionFormatExtension_13#9](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#9)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#9](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#9)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#9](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#9)]
+[!code-vb[ServiceDescriptionFormatExtension_13#9](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <returns>If the search is successful, an object of the specified <see cref="T:System.Type" />; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method searches the collection in index order, and returns only the matching element with the lowest-numbered index.  
-  
+This method searches the collection in index order, and returns only the matching element with the lowest-numbered index.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,17 +215,17 @@
         <returns>If the search is successful, an <see cref="T:System.Xml.XmlElement" />; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method searches the collection in index order, and returns the first <xref:System.Xml.XmlElement> that meets the criteria of the two parameters.  
+This method searches the collection in index order, and returns the first <xref:System.Xml.XmlElement> that meets the criteria of the two parameters.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#5](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#5)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#5](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#5)]
- [!code-vb[ServiceDescriptionFormatExtension_13#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#5)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#5](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#5)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#5](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#5)]
+[!code-vb[ServiceDescriptionFormatExtension_13#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,19 +252,19 @@
         <returns>An array of <see cref="T:System.Object" /> instances representing all collection members of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The array returned is empty if the search is unsuccessful.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#6](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#6)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#6](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#6)]
- [!code-vb[ServiceDescriptionFormatExtension_13#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#6)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#6](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#6)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#6](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#6)]
+[!code-vb[ServiceDescriptionFormatExtension_13#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,12 +293,12 @@
         <returns>An array of <see cref="T:System.Xml.XmlElement" /> instances.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The array returned is empty if the search is unsuccessful.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,12 +325,12 @@
         <returns>The zero-based index of the specified <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" />, or -1 if the element was not found in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#11](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#11)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#11](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#11)]
- [!code-vb[ServiceDescriptionFormatExtension_13#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#11)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#11](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#11)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#11](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#11)]
+[!code-vb[ServiceDescriptionFormatExtension_13#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,21 +358,21 @@
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" /> to the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> at the specified zero-based index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+ 
+If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `extension` parameter is added to the end of the <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection>.  
+ 
+The elements after the insertion point move down to accommodate the new element.  
+ 
   
- If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `extension` parameter is added to the end of the <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection>.  
-  
- The elements after the insertion point move down to accommodate the new element.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#13](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#13)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#13](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#13)]
- [!code-vb[ServiceDescriptionFormatExtension_13#13](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#13)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#13](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#13)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#13](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#13)]
+[!code-vb[ServiceDescriptionFormatExtension_13#13](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#13)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
@@ -405,17 +405,17 @@
           <see langword="true" /> if the <paramref name="item" /> parameter is used; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method checks whether the `item` parameter is an <xref:System.Xml.XmlElement> or a <xref:System.Web.Services.Description.ServiceDescriptionFormatExtension> (or a derived class) before determining whether it is supported by the XML Web service.  
+This method checks whether the `item` parameter is an <xref:System.Xml.XmlElement> or a <xref:System.Web.Services.Description.ServiceDescriptionFormatExtension> (or a derived class) before determining whether it is supported by the XML Web service.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#7](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#7)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#7](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#7)]
- [!code-vb[ServiceDescriptionFormatExtension_13#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#7)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#7](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#7)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#7](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#7)]
+[!code-vb[ServiceDescriptionFormatExtension_13#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,12 +443,12 @@
           <see langword="true" /> if the <paramref name="item" /> parameter is required; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#8](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#8)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#8](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#8)]
- [!code-vb[ServiceDescriptionFormatExtension_13#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#8)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#8](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#8)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#8](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#8)]
+[!code-vb[ServiceDescriptionFormatExtension_13#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -475,12 +475,12 @@
         <value>The value of the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#4](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#4)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#4](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#4)]
- [!code-vb[ServiceDescriptionFormatExtension_13#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#4)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#4](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#4)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#4](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#4)]
+[!code-vb[ServiceDescriptionFormatExtension_13#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,12 +528,12 @@
         <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" /> from the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionFormatExtension_13#12](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#12)]
- [!code-csharp[ServiceDescriptionFormatExtension_13#12](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#12)]
- [!code-vb[ServiceDescriptionFormatExtension_13#12](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#12)]  
-  
+[!code-cpp[ServiceDescriptionFormatExtension_13#12](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CPP/servicedescriptionformatextension_13.cpp#12)]
+[!code-csharp[ServiceDescriptionFormatExtension_13#12](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/CS/servicedescriptionformatextension_13.cs#12)]
+[!code-vb[ServiceDescriptionFormatExtension_13#12](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionFormatExtension_13/VB/servicedescriptionformatextension_13.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

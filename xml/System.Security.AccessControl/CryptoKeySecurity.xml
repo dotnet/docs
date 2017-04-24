@@ -143,10 +143,10 @@
         <summary>Adds the specified access rule to the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding an access rule might cause existing access rules in the DACL to be merged.  
-  
+Adding an access rule might cause existing access rules in the DACL to be merged.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
         <summary>Adds the specified audit rule to the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding an audit rule might cause existing access rules in the SACL to be merged.  
-  
+Adding an audit rule might cause existing access rules in the SACL to be merged.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,12 +256,12 @@
           <see langword="true" /> if the access rule was successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Access removal is accomplished by using a complex algorithm that might add access control rules in addition to removing them.  
-  
- This method fails to remove the access rule and returns `false` if the inheritance rules associated with the access rule are too complex for the removal algorithm to succeed.  
-  
+Access removal is accomplished by using a complex algorithm that might add access control rules in addition to removing them.  
+ 
+This method fails to remove the access rule and returns `false` if the inheritance rules associated with the access rule are too complex for the removal algorithm to succeed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,12 +333,12 @@
           <see langword="true" /> if the audit rule was successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Audit removal is accomplished by using a complex algorithm that might add audit control rules in addition to removing them.  
-  
- This method fails to remove the audit rule and returns `false` if the inheritance rules associated with the audit rule are too complex for the removal algorithm to succeed.  
-  
+Audit removal is accomplished by using a complex algorithm that might add audit control rules in addition to removing them.  
+ 
+This method fails to remove the audit rule and returns `false` if the inheritance rules associated with the audit rule are too complex for the removal algorithm to succeed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

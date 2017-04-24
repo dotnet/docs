@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor used for extensibility.  
-  
+The constructor used for extensibility.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" /> class based on a key identifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Constructs a proof token based on an key identifier.  
-  
+Constructs a proof token based on an key identifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" /> class based on an RSA algorithm.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Constructs a proof token based on an RSA algorithm.  
-  
+Constructs a proof token based on an RSA algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <summary>Applies the proof descriptor to the RSTR's requested proof token.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an asymmetric token, there is nothing to write into the RSTR’s proof token.  
-  
+For an asymmetric token, there is nothing to write into the RSTR’s proof token.  
+ 
  ]]></format>
         </remarks>
       </Docs>

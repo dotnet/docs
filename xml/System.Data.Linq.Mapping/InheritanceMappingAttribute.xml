@@ -19,35 +19,35 @@
     <summary>Maps an inheritance hierarchy in a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- One <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute> is specified per mapped class.  
-  
- Note the following when you map inheritance hierarchies:  
-  
+One <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute> is specified per mapped class.  
+ 
+Note the following when you map inheritance hierarchies:  
+ 
 -   All classes in a hierarchy must be mapped to a single table.  
-  
+ 
 -   The table for an inheritance hierarchy must be declared on the mapped type that is at the top of the hierarchy. You cannot specify the table or mapping attributes in a class that is derived from the top class.  
-  
+ 
 -   You can use an interface in a hierarchy, but [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] does not map it.  
-  
+ 
 -   You can skip a class in the hierarchy when you map classes, but you can query against mapped classes only.  
+ 
+For correct materialization, discriminator code values must be unique and match the values in the database. A row with a discriminator code value that does not exactly match (even by casing) instantiates the class by using <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A> set to `true`.  
+ 
   
- For correct materialization, discriminator code values must be unique and match the values in the database. A row with a discriminator code value that does not exactly match (even by casing) instantiates the class by using <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A> set to `true`.  
-  
-   
-  
+ 
 ## Examples  
- This example shows inheritance mapping for a hierarchy where the top, mapped class (`Shape`) is abstract.  
-  
- [!code-csharp[System.Data.Linq.Mapping.InheritanceMappingAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/cs/Program.cs#1)]
- [!code-vb[System.Data.Linq.Mapping.InheritanceMappingAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/vb/Module1.vb#1)]  
-  
- The following example shows the inclusion of unmapped classes. You can put unmapped classes anywhere in the hierarchy.  
-  
- [!code-csharp[System.Data.Linq.Mapping.InheritanceMappingAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/cs/Program.cs#2)]
- [!code-vb[System.Data.Linq.Mapping.InheritanceMappingAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/vb/Module1.vb#2)]  
-  
+This example shows inheritance mapping for a hierarchy where the top, mapped class (`Shape`) is abstract.  
+ 
+[!code-csharp[System.Data.Linq.Mapping.InheritanceMappingAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/cs/Program.cs#1)]
+[!code-vb[System.Data.Linq.Mapping.InheritanceMappingAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/vb/Module1.vb#1)]  
+ 
+The following example shows the inclusion of unmapped classes. You can put unmapped classes anywhere in the hierarchy.  
+ 
+[!code-csharp[System.Data.Linq.Mapping.InheritanceMappingAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/cs/Program.cs#2)]
+[!code-vb[System.Data.Linq.Mapping.InheritanceMappingAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/vb/Module1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,10 +102,10 @@
         <value>Default = <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Exactly one of the <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute> attributes must be declared with <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A> as `true`.  
-  
+Exactly one of the <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute> attributes must be declared with <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A> as `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <value>Must be user-specified. There is no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use any non-abstract type in the inheritance hierarchy, including the root type.  
-  
+Use any non-abstract type in the inheritance hierarchy, including the root type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

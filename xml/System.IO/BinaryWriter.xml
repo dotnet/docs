@@ -34,25 +34,25 @@
     <summary>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.BinaryWriter> class provides methods that simplify writing primitive data types to a stream. For example, you can use the <xref:System.IO.BinaryWriter.Write%2A> method to write a Boolean value to the stream as a one-byte value. The class includes write methods that support different data types.  
-  
- When you create a new instance of the <xref:System.IO.BinaryWriter> class, you provide the stream to write to, and optionally specify the type of encoding and whether to leave the stream open after disposing the <xref:System.IO.BinaryWriter> object. If you do not specify an encoding type, UTF-8 is used.  
-  
+The <xref:System.IO.BinaryWriter> class provides methods that simplify writing primitive data types to a stream. For example, you can use the <xref:System.IO.BinaryWriter.Write%2A> method to write a Boolean value to the stream as a one-byte value. The class includes write methods that support different data types.  
+ 
+When you create a new instance of the <xref:System.IO.BinaryWriter> class, you provide the stream to write to, and optionally specify the type of encoding and whether to leave the stream open after disposing the <xref:System.IO.BinaryWriter> object. If you do not specify an encoding type, UTF-8 is used.  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+ 
+A derived class can override the methods of this class to give unique character encodings.  
+ 
   
- A derived class can override the methods of this class to give unique character encodings.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
-  
+The following code example demonstrates how to store and retrieve application settings in a file.  
+ 
+[!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,10 +82,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryWriter" /> class that writes to a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,18 +118,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryWriter" /> class based on the specified stream and using UTF-8 encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
-  
+The following code example demonstrates how to store and retrieve application settings in a file.  
+ 
+[!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The stream does not support writing or is already closed.</exception>
@@ -167,10 +167,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryWriter" /> class based on the specified stream and character encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The stream does not support writing or is already closed.</exception>
@@ -243,19 +243,19 @@
         <value>The underlying stream associated with the <see langword="BinaryWriter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to read and write `Double` data to memory by using the <xref:System.IO.BinaryReader> and `BinaryWriter` classes on top of the <xref:System.IO.MemoryStream> class. `MemoryStream` only reads and writes `Byte` data.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb#1)]  
-  
+The following code example shows how to read and write `Double` data to memory by using the <xref:System.IO.BinaryReader> and `BinaryWriter` classes on top of the <xref:System.IO.MemoryStream> class. `MemoryStream` only reads and writes `Byte` data.  
+ 
+[!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp#1)]
+[!code-csharp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,12 +282,12 @@
         <summary>Closes the current <see cref="T:System.IO.BinaryWriter" /> and the underlying stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of `Close` calls the <xref:System.IO.BinaryWriter.Dispose%2A> method passing a `true` value.  
-  
- Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.IO.BinaryWriter.Flush%2A> or `Close`. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
-  
+This implementation of `Close` calls the <xref:System.IO.BinaryWriter.Dispose%2A> method passing a `true` value.  
+ 
+Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.IO.BinaryWriter.Flush%2A> or `Close`. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,14 +382,14 @@
         <summary>Clears all buffers for the current writer and causes any buffered data to be written to the underlying device.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All derived classes should override `Flush` to ensure that all buffered data is sent to the stream.  
-  
- Flushing the stream will not flush its underlying encoder unless you explicitly call `Flush` or <xref:System.IO.BinaryWriter.Close%2A>. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+All derived classes should override `Flush` to ensure that all buffered data is sent to the stream.  
+ 
+Flushing the stream will not flush its underlying encoder unless you explicitly call `Flush` or <xref:System.IO.BinaryWriter.Close%2A>. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,10 +421,10 @@
         <summary>Specifies a <see cref="T:System.IO.BinaryWriter" /> with no backing store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -456,10 +456,10 @@
         <summary>Holds the underlying stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -498,19 +498,19 @@
         <returns>The position with the current stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example writes a series of byte values to a file. The example uses <xref:System.IO.BinaryWriter.Seek%2A> to move to various locations in the file, and then writes marker bytes by using the <xref:System.IO.BinaryWriter.Write%2A> method.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CPP/source3.cpp#5)]
- [!code-csharp[System.IO.BinaryReaderWriter#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source3.cs#5)]
- [!code-vb[System.IO.BinaryReaderWriter#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source3.vb#5)]  
-  
+The following example writes a series of byte values to a file. The example uses <xref:System.IO.BinaryWriter.Seek%2A> to move to various locations in the file, and then writes marker bytes by using the <xref:System.IO.BinaryWriter.Write%2A> method.  
+ 
+[!code-cpp[System.IO.BinaryReaderWriter#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CPP/source3.cpp#5)]
+[!code-csharp[System.IO.BinaryReaderWriter#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source3.cs#5)]
+[!code-vb[System.IO.BinaryReaderWriter#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source3.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">The file pointer was moved to an invalid location.</exception>
@@ -548,18 +548,18 @@
         <summary>Writes a one-byte <see langword="Boolean" /> value to the current stream, with 0 representing <see langword="false" /> and 1 representing <see langword="true" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
-  
+The following code example demonstrates how to store and retrieve application settings in a file.  
+ 
+[!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -597,27 +597,27 @@
         <summary>Writes an unsigned byte to the current stream and advances the stream position by one byte.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because of data formatting conflicts, using this method with the following encodings is not recommended:  
-  
+Because of data formatting conflicts, using this method with the following encodings is not recommended:  
+ 
 -   UTF-7  
-  
+ 
 -   ISO-2022-JP  
-  
+ 
 -   ISCII  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWByte#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/CPP/rwbyte.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWByte#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/CS/rwbyte.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWByte#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/VB/rwbyte.vb#1)]  
-  
+The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
+ 
+[!code-cpp[System.IO.BinaryReaderWriter.RWByte#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/CPP/rwbyte.cpp#1)]
+[!code-csharp[System.IO.BinaryReaderWriter.RWByte#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/CS/rwbyte.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter.RWByte#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/VB/rwbyte.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -655,19 +655,19 @@
         <summary>Writes a byte array to the underlying stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWBytes1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/CPP/rwbytes.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWBytes1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/CS/rwbytes.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWBytes1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/VB/rwbytes.vb#1)]  
-  
+The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
+ 
+[!code-cpp[System.IO.BinaryReaderWriter.RWBytes1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/CPP/rwbytes.cpp#1)]
+[!code-csharp[System.IO.BinaryReaderWriter.RWBytes1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/CS/rwbytes.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter.RWBytes1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/VB/rwbytes.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -712,29 +712,29 @@
         <summary>Writes a Unicode character to the current stream and advances the current position of the stream in accordance with the <see langword="Encoding" /> used and the specific characters being written to the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because of data formatting conflicts, using this method with the following encodings is not recommended:  
-  
+Because of data formatting conflicts, using this method with the following encodings is not recommended:  
+ 
 -   UTF-7  
-  
+ 
 -   ISO-2022-JP  
-  
+ 
 -   ISCII  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
+Unicode surrogate characters must be written out as pairs together in the same call, not individually. If you require support for surrogate pairs in your application, consider using a character array and the <xref:System.IO.BinaryWriter.Write%2A> method overload.  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
- Unicode surrogate characters must be written out as pairs together in the same call, not individually. If you require support for surrogate pairs in your application, consider using a character array and the <xref:System.IO.BinaryWriter.Write%2A> method overload.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to read and write data using memory as a backing store.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWChar1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/CPP/rwchar.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWChar1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/CS/rwchar.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChar1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/VB/rwchar.vb#1)]  
-  
+The following code example shows how to read and write data using memory as a backing store.  
+ 
+[!code-cpp[System.IO.BinaryReaderWriter.RWChar1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/CPP/rwchar.cpp#1)]
+[!code-csharp[System.IO.BinaryReaderWriter.RWChar1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/CS/rwchar.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter.RWChar1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/VB/rwchar.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -774,10 +774,10 @@
         <summary>Writes a character array to the current stream and advances the current position of the stream in accordance with the <see langword="Encoding" /> used and the specific characters being written to the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table lists examples of other typical or related I/O tasks.  
-  
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -790,16 +790,16 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to read and write data using memory as a backing store.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWChars1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/CPP/rwchars.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWChars1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/CS/rwchars.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChars1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/VB/rwchars.vb#1)]  
-  
+The following code example shows how to read and write data using memory as a backing store.  
+ 
+[!code-cpp[System.IO.BinaryReaderWriter.RWChars1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/CPP/rwchars.cpp#1)]
+[!code-csharp[System.IO.BinaryReaderWriter.RWChars1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/CS/rwchars.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter.RWChars1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/VB/rwchars.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -839,10 +839,10 @@
         <summary>Writes a decimal value to the current stream and advances the stream position by sixteen bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table lists examples of other typical or related I/O tasks.  
-  
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -855,7 +855,7 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -898,19 +898,19 @@
         <summary>Writes an eight-byte floating-point value to the current stream and advances the stream position by eight bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to read and write `Double` data to memory by using the <xref:System.IO.BinaryReader> and `BinaryWriter` classes on top of the <xref:System.IO.MemoryStream> class. `MemoryStream` only reads and writes `Byte` data.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb#1)]  
-  
+The following code example shows how to read and write `Double` data to memory by using the <xref:System.IO.BinaryReader> and `BinaryWriter` classes on top of the <xref:System.IO.MemoryStream> class. `MemoryStream` only reads and writes `Byte` data.  
+ 
+[!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp#1)]
+[!code-csharp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -948,12 +948,12 @@
         <summary>Writes a two-byte signed integer to the current stream and advances the stream position by two bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `BinaryWriter` stores this data type in little endian format.  
-  
- The following table lists examples of other typical or related I/O tasks.  
-  
+`BinaryWriter` stores this data type in little endian format.  
+ 
+The following table lists examples of other typical or related I/O tasks.  
+ 
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
@@ -966,7 +966,7 @@
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1004,20 +1004,20 @@
         <summary>Writes a four-byte signed integer to the current stream and advances the stream position by four bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `BinaryWriter` stores this data type in little endian format.  
+`BinaryWriter` stores this data type in little endian format.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
-  
+The following code example demonstrates how to store and retrieve application settings in a file.  
+ 
+[!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1055,12 +1055,12 @@
         <summary>Writes an eight-byte signed integer to the current stream and advances the stream position by eight bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `BinaryWriter` stores this data type in little endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+`BinaryWriter` stores this data type in little endian format.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1103,10 +1103,10 @@
         <summary>Writes a signed byte to the current stream and advances the stream position by one byte.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1149,20 +1149,20 @@
         <summary>Writes a four-byte floating-point value to the current stream and advances the stream position by four bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `BinaryWriter` stores this data type in little endian format.  
+`BinaryWriter` stores this data type in little endian format.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
-  
+The following code example demonstrates how to store and retrieve application settings in a file.  
+ 
+[!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1205,22 +1205,22 @@
         <summary>Writes a length-prefixed string to this stream in the current encoding of the <see cref="T:System.IO.BinaryWriter" />, and advances the current position of the stream in accordance with the encoding used and the specific characters being written to the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Length-prefixed means that this method first writes the length of the string, in bytes, when encoded with the <xref:System.IO.BinaryWriter> instance's current encoding to the stream. This value is written as an unsigned integer. This method then writes that many bytes to the stream.  
+Length-prefixed means that this method first writes the length of the string, in bytes, when encoded with the <xref:System.IO.BinaryWriter> instance's current encoding to the stream. This value is written as an unsigned integer. This method then writes that many bytes to the stream.  
+ 
+For example, the string “A” has a length of 1, but when encoded with UTF-16; the length is 2 bytes, so the value written in the prefix is 2, and 3 bytes are written to the stream, including the prefix.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For example, the string “A” has a length of 1, but when encoded with UTF-16; the length is 2 bytes, so the value written in the prefix is 2, and 3 bytes are written to the stream, including the prefix.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
-  
+The following code example demonstrates how to store and retrieve application settings in a file.  
+ 
+[!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1265,12 +1265,12 @@
         <summary>Writes a two-byte unsigned integer to the current stream and advances the stream position by two bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `BinaryWriter` stores this data type in little endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+`BinaryWriter` stores this data type in little endian format.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1313,12 +1313,12 @@
         <summary>Writes a four-byte unsigned integer to the current stream and advances the stream position by four bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `BinaryWriter` stores this data type in little endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+`BinaryWriter` stores this data type in little endian format.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1361,12 +1361,12 @@
         <summary>Writes an eight-byte unsigned integer to the current stream and advances the stream position by eight bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `BinaryWriter` stores this data type in little endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+`BinaryWriter` stores this data type in little endian format.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1408,18 +1408,18 @@
         <summary>Writes a region of a byte array to the current stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
-  
- [!code-csharp[System.IO.BinaryReaderWriter.RWBytes2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/CS/rwreadbytes.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWBytes2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/VB/rwreadbytes.vb#1)]  
-  
+The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
+ 
+[!code-csharp[System.IO.BinaryReaderWriter.RWBytes2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/CS/rwreadbytes.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter.RWBytes2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/VB/rwreadbytes.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
@@ -1466,19 +1466,19 @@
         <summary>Writes a section of a character array to the current stream, and advances the current position of the stream in accordance with the <see langword="Encoding" /> used and perhaps the specific characters being written to the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to read and write data using memory as a backing store.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWChars2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/CPP/rwreadchars.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWChars2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/CS/rwreadchars.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChars2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/VB/rwreadchars.vb#1)]  
-  
+The following code example shows how to read and write data using memory as a backing store.  
+ 
+[!code-cpp[System.IO.BinaryReaderWriter.RWChars2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/CPP/rwreadchars.cpp#1)]
+[!code-csharp[System.IO.BinaryReaderWriter.RWChars2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/CS/rwreadchars.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter.RWChars2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/VB/rwreadchars.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
@@ -1521,14 +1521,14 @@
         <summary>Writes a 32-bit integer in a compressed format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The integer of the `value` parameter is written out seven bits at a time, starting with the seven least-significant bits. The high bit of a byte indicates whether there are more bytes to be written after this one.  
-  
- If `value` will fit in seven bits, it takes only one byte of space. If `value` will not fit in seven bits, the high bit is set on the first byte and written out. `value` is then shifted by seven bits and the next byte is written. This process is repeated until the entire integer has been written.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+The integer of the `value` parameter is written out seven bits at a time, starting with the seven least-significant bits. The high bit of a byte indicates whether there are more bytes to be written after this one.  
+ 
+If `value` will fit in seven bits, it takes only one byte of space. If `value` will not fit in seven bits, the high bit is set on the first byte and written out. `value` is then shifted by seven bits and the next byte is written. This process is repeated until the entire integer has been written.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>

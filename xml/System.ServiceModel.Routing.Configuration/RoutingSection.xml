@@ -74,10 +74,10 @@
         <returns>A filter table with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A routing table with the specified name must exist in the configuration file for the current AppDomain; otherwise an <xref:System.InvalidOperationException> occurs.  
-  
+A routing table with the specified name must exist in the configuration file for the current AppDomain; otherwise an <xref:System.InvalidOperationException> occurs.  
+ 
  ]]></format>
         </remarks>
       </Docs>

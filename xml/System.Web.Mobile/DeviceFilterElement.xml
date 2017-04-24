@@ -19,12 +19,12 @@
     <summary>Represents a device-specific filter to be applied to the application. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class corresponds to the `<filter>` element for the `<deviceFilters>` section of the ASP.NET settings schema.  
-  
- A filter can be either a comparison filter or an evaluator filter. Comparison-based filters compare a value specified by the developer to the current value of a device capability at run time. The evaluator (or delegate-based) filter uses a method from a programmer-specified class to perform the evaluation.  
-  
+This class corresponds to the `<filter>` element for the `<deviceFilters>` section of the ASP.NET settings schema.  
+ 
+A filter can be either a comparison filter or an evaluator filter. Comparison-based filters compare a value specified by the developer to the current value of a device capability at run time. The evaluator (or delegate-based) filter uses a method from a programmer-specified class to perform the evaluation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.DeviceFilterElement" /> class as a comparison filter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used to create a comparison filter.  
-  
+This constructor is used to create a comparison filter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.DeviceFilterElement" /> class as an evaluator filter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the constructor for the evaluator (or delegate-based) filter.  
-  
+This is the constructor for the evaluator (or delegate-based) filter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <value>The argument against which the capability should be compared.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used in comparison filters.  
-  
+This property is used in comparison filters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <value>The capability evaluated by the comparison evaluator.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used in comparison filters.  
-  
+This property is used in comparison filters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <value>The class type that contains the evaluator delegate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used in evaluator (or delegate-based) filters.  
-  
+This property is used in evaluator (or delegate-based) filters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <value>The method in <see cref="P:System.Web.Mobile.DeviceFilterElement.FilterClass" /> that is the evaluator delegate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used in evaluator (or delegate-based) filters.  
-  
+This property is used in evaluator (or delegate-based) filters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,10 +262,10 @@
         <value>The name by which the evaluator will be identified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is required for both comparison and evaluator filters.  
-  
+This property is required for both comparison and evaluator filters.  
+ 
  ]]></format>
         </remarks>
       </Docs>

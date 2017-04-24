@@ -34,14 +34,14 @@
     <summary>Indicates the name by which an indexer is known in programming languages that do not support indexers directly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can apply this attribute to properties.  
-  
- This attribute is directly processed by the compiler, and cannot be accessed after compilation through Reflection.  
-  
- The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
-  
+You can apply this attribute to properties.  
+ 
+This attribute is directly processed by the compiler, and cannot be accessed after compilation through Reflection.  
+ 
+The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
+ 
  ]]></format>
     </remarks>
   </Docs>

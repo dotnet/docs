@@ -19,13 +19,13 @@
     <summary>Contains the name, instance ID, and condition result of a rule that has been evaluated.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent> class. This code example is part of the RuleActionTrackingEventSample SDK Sample from the ConsoleTrackingService.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][RuleActionTrackingEvent Sample](http://msdn.microsoft.com/en-us/cea1192f-82e2-4c8a-acc0-5f8ed462de73).  
-  
- [!code-csharp[wf_samples#162](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#162)]
- [!code-vb[wf_samples#162](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#162)]  
-  
+The following code example shows how to use the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent> class. This code example is part of the RuleActionTrackingEventSample SDK Sample from the ConsoleTrackingService.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][RuleActionTrackingEvent Sample](http://msdn.microsoft.com/en-us/cea1192f-82e2-4c8a-acc0-5f8ed462de73).  
+ 
+[!code-csharp[wf_samples#162](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#162)]
+[!code-vb[wf_samples#162](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#162)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,13 +47,13 @@
         <value>The result of the rule condition: <see langword="true" /> or <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent> class and print the value of the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent.ConditionResult%2A> property to the console upon execution of the rule. This code example is part of the RuleActionTrackingEventSample SDK Sample from the ConsoleTrackingService.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][RuleActionTrackingEvent Sample](http://msdn.microsoft.com/en-us/cea1192f-82e2-4c8a-acc0-5f8ed462de73).  
-  
- [!code-csharp[wf_samples#162](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#162)]
- [!code-vb[wf_samples#162](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#162)]  
-  
+The following code example shows how to use the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent> class and print the value of the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent.ConditionResult%2A> property to the console upon execution of the rule. This code example is part of the RuleActionTrackingEventSample SDK Sample from the ConsoleTrackingService.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][RuleActionTrackingEvent Sample](http://msdn.microsoft.com/en-us/cea1192f-82e2-4c8a-acc0-5f8ed462de73).  
+ 
+[!code-csharp[wf_samples#162](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#162)]
+[!code-vb[wf_samples#162](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#162)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,13 +75,13 @@
         <value>The <see cref="T:System.Workflow.Activities.Rules.Rule" /> that caused one or more actions to execute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent> class and print the value of the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent.RuleName%2A> property to the console upon execution of the rule. This code example is part of the RuleActionTrackingEventSample SDK Sample from the ConsoleTrackingService.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][RuleActionTrackingEvent Sample](http://msdn.microsoft.com/en-us/cea1192f-82e2-4c8a-acc0-5f8ed462de73).  
-  
- [!code-csharp[wf_samples#162](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#162)]
- [!code-vb[wf_samples#162](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#162)]  
-  
+The following code example shows how to use the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent> class and print the value of the <xref:System.Workflow.Activities.Rules.RuleActionTrackingEvent.RuleName%2A> property to the console upon execution of the rule. This code example is part of the RuleActionTrackingEventSample SDK Sample from the ConsoleTrackingService.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][RuleActionTrackingEvent Sample](http://msdn.microsoft.com/en-us/cea1192f-82e2-4c8a-acc0-5f8ed462de73).  
+ 
+[!code-csharp[wf_samples#162](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#162)]
+[!code-vb[wf_samples#162](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#162)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

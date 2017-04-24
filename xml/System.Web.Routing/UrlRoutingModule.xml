@@ -23,10 +23,10 @@
     <summary>Matches a URL request to a defined route.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Routing.UrlRoutingModule> class matches an HTTP request to a route in an ASP.NET application. The module iterates through all the routes in the <xref:System.Web.Routing.UrlRoutingModule.RouteCollection%2A> property and searches for a route that has a URL pattern that matches the format of the HTTP request. When the module finds a matching route, it retrieves the <xref:System.Web.Routing.IRouteHandler> object for that route. From the route handler, the module gets an <xref:System.Web.IHttpHandler> object and uses that as the HTTP handler for the current request.  
-  
+The <xref:System.Web.Routing.UrlRoutingModule> class matches an HTTP request to a route in an ASP.NET application. The module iterates through all the routes in the <xref:System.Web.Routing.UrlRoutingModule.RouteCollection%2A> property and searches for a route that has a URL pattern that matches the format of the HTTP request. When the module finds a matching route, it retrieves the <xref:System.Web.Routing.IRouteHandler> object for that route. From the route handler, the module gets an <xref:System.Web.IHttpHandler> object and uses that as the HTTP handler for the current request.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -110,10 +110,10 @@
         <summary>Assigns the HTTP handler for the current request to the context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Routing.UrlRoutingModule.PostMapRequestHandler%2A> method is called when the <xref:System.Web.HttpApplication.PostMapRequestHandler> event is raised.  
-  
+The <xref:System.Web.Routing.UrlRoutingModule.PostMapRequestHandler%2A> method is called when the <xref:System.Web.HttpApplication.PostMapRequestHandler> event is raised.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.Routing.RouteData.RouteHandler" /> property for the route is <see langword="null" />.</exception>
@@ -139,10 +139,10 @@
         <summary>Matches the HTTP request to a route, retrieves the handler for that route, and sets the handler as the HTTP handler for the current request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Routing.UrlRoutingModule.PostResolveRequestCache%2A> method is called when the <xref:System.Web.HttpApplication.PostResolveRequestCache> event is raised.  
-  
+The <xref:System.Web.Routing.UrlRoutingModule.PostResolveRequestCache%2A> method is called when the <xref:System.Web.HttpApplication.PostResolveRequestCache> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.IHttpModule.Dispose" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingModule> instance is cast to an <xref:System.Web.IHttpModule> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingModule> instance is cast to an <xref:System.Web.IHttpModule> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,10 +210,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.Routing.UrlRoutingModule.System#Web#IHttpModule#Init(System.Web.HttpApplication)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingModule> instance is cast to an <xref:System.Web.IHttpModule> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingModule> instance is cast to an <xref:System.Web.IHttpModule> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

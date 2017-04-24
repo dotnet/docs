@@ -16,14 +16,14 @@
     <summary>Allows activity designer developers to add custom designer verb providers to an activity designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Classes that implement this interface can add and remove custom verb providers--any classes that implement the <xref:System.Workflow.ComponentModel.Design.IDesignerVerbProvider> interface -- to and from <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> classes.  
-  
+ 
+Classes that implement this interface can add and remove custom verb providers--any classes that implement the <xref:System.Workflow.ComponentModel.Design.IDesignerVerbProvider> interface -- to and from <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> classes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <value>An <see cref="T:System.Workflow.ComponentModel.Design.IDesignerVerbProvider" /> read-only collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.VerbProviders%2A> returns an <xref:System.Workflow.ComponentModel.Design.IDesignerVerbProvider> collection that contains all verb providers associated with a specific <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>.  
-  
+<xref:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.VerbProviders%2A> returns an <xref:System.Workflow.ComponentModel.Design.IDesignerVerbProvider> collection that contains all verb providers associated with a specific <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

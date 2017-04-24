@@ -20,10 +20,10 @@
     <summary>Represents a SOAP fault.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.FaultDescription> class represents a SOAP fault in a service contract and is used to create a runtime when a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service or client application is started.  
-  
+The <xref:System.ServiceModel.Description.FaultDescription> class represents a SOAP fault in a service contract and is used to create a runtime when a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service or client application is started.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.FaultDescription" /> class using the specified action value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a <xref:System.ServiceModel.Description.FaultDescription> object using the specified `action`.  
-  
+Creates a <xref:System.ServiceModel.Description.FaultDescription> object using the specified `action`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <value>The action of the SOAP fault.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.FaultDescription.Action%2A> property to get or set the action of the fault message.  
-  
+Use the <xref:System.ServiceModel.Description.FaultDescription.Action%2A> property to get or set the action of the fault message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <value>The type of the serializable detail object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The detail type must be serializable. For details, see <xref:System.ServiceModel.FaultContractAttribute?displayProperty=fullName>.  
-  
+The detail type must be serializable. For details, see <xref:System.ServiceModel.FaultContractAttribute?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
           <see langword="true" /> if the fault message has a protection level; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.ServiceContractAttribute.HasProtectionLevel%2A> property indicates whether the <xref:System.ServiceModel.Description.FaultDescription.ProtectionLevel%2A> property has been set for the <xref:System.ServiceModel.Description.FaultDescription>.  
-  
+The <xref:System.ServiceModel.ServiceContractAttribute.HasProtectionLevel%2A> property indicates whether the <xref:System.ServiceModel.Description.FaultDescription.ProtectionLevel%2A> property has been set for the <xref:System.ServiceModel.Description.FaultDescription>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <value>One of the <see cref="T:System.Net.Security.ProtectionLevel" /> values. The default is <see cref="F:System.Net.Security.ProtectionLevel.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.FaultDescription.ProtectionLevel%2A> property to specify the degree to which the binding must encrypt, sign, or both when sending the SOAP fault. If a binding supports a higher protection level than required by this property, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] may disable the unnecessary protection if it is able to do so.  
-  
+Use the <xref:System.ServiceModel.Description.FaultDescription.ProtectionLevel%2A> property to specify the degree to which the binding must encrypt, sign, or both when sending the SOAP fault. If a binding supports a higher protection level than required by this property, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] may disable the unnecessary protection if it is able to do so.  
+ 
  ]]></format>
         </remarks>
       </Docs>

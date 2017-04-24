@@ -18,16 +18,16 @@
     <summary>Abstract class that, when implemented, defines an animation segment with its own target value and interpolation method for a <see cref="T:System.Windows.Media.Animation.Int32AnimationUsingKeyFrames" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Animation.Int32KeyFrame> is an abstract class that defines <xref:System.Int32> value type key frames for several different techniques of key frame animation: <xref:System.Windows.Media.Animation.DiscreteInt32KeyFrame>, <xref:System.Windows.Media.Animation.EasingInt32KeyFrame>, <xref:System.Windows.Media.Animation.LinearInt32KeyFrame>, <xref:System.Windows.Media.Animation.SplineInt32KeyFrame>. To animate a <xref:System.Int32> value with key frames, you define a <xref:System.Windows.Media.Animation.Int32AnimationUsingKeyFrames> animation, and populate its <xref:System.Windows.Media.Animation.Int32AnimationUsingKeyFrames.KeyFrames%2A> property with one or more  elements that define the key frames.  
-  
- For XAML syntaxes that take a <xref:System.Windows.Media.Animation.Int32KeyFrame>, you need to specify a non-abstract derived type of <xref:System.Windows.Media.Animation.Int32KeyFrame> as an object element. For details, see the XAML syntax on the reference pages for <xref:System.Windows.Media.Animation.DiscreteInt32KeyFrame>, <xref:System.Windows.Media.Animation.EasingInt32KeyFrame>, <xref:System.Windows.Media.Animation.LinearInt32KeyFrame>, <xref:System.Windows.Media.Animation.SplineInt32KeyFrame>.  
-  
+<xref:System.Windows.Media.Animation.Int32KeyFrame> is an abstract class that defines <xref:System.Int32> value type key frames for several different techniques of key frame animation: <xref:System.Windows.Media.Animation.DiscreteInt32KeyFrame>, <xref:System.Windows.Media.Animation.EasingInt32KeyFrame>, <xref:System.Windows.Media.Animation.LinearInt32KeyFrame>, <xref:System.Windows.Media.Animation.SplineInt32KeyFrame>. To animate a <xref:System.Int32> value with key frames, you define a <xref:System.Windows.Media.Animation.Int32AnimationUsingKeyFrames> animation, and populate its <xref:System.Windows.Media.Animation.Int32AnimationUsingKeyFrames.KeyFrames%2A> property with one or more  elements that define the key frames.  
+ 
+For XAML syntaxes that take a <xref:System.Windows.Media.Animation.Int32KeyFrame>, you need to specify a non-abstract derived type of <xref:System.Windows.Media.Animation.Int32KeyFrame> as an object element. For details, see the XAML syntax on the reference pages for <xref:System.Windows.Media.Animation.DiscreteInt32KeyFrame>, <xref:System.Windows.Media.Animation.EasingInt32KeyFrame>, <xref:System.Windows.Media.Animation.LinearInt32KeyFrame>, <xref:System.Windows.Media.Animation.SplineInt32KeyFrame>.  
+ 
 <a name="xamlTextUsage_Int32KeyFrame"></a>   
 ## XAML Text Usage  
- See Remarks  
-  
+See Remarks  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,12 +108,12 @@
         <returns>The output value of this key frame given the specified base value and progress.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base value is typically the initial value of the property being animated or the <xref:System.Windows.Media.Animation.BooleanKeyFrame.Value%2A> of the previous key frame.  
-  
- Most implementations will return the value of `baseValue` when `keyFrameProgress` is 0.0.  
-  
+The base value is typically the initial value of the property being animated or the <xref:System.Windows.Media.Animation.BooleanKeyFrame.Value%2A> of the previous key frame.  
+ 
+Most implementations will return the value of `baseValue` when `keyFrameProgress` is 0.0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Occurs if <paramref name="keyFrameProgress" /> is not between 0.0 and 1.0, inclusive.</exception>
@@ -160,17 +160,17 @@
         <value>The time at which the key frame's current value should be equal to its <see cref="P:System.Windows.Media.Animation.Int32KeyFrame.Value" /> property. The default value is <see cref="P:System.Windows.Media.Animation.KeyTime.Uniform" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_KeyTime"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Animation.Int32KeyFrame.KeyTimeProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,17 +227,17 @@
         <value>The key frame's target value, which is the value of this key frame at its specified <see cref="P:System.Windows.Media.Animation.Int32KeyFrame.KeyTime" />. The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Value"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Animation.Int32KeyFrame.ValueProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -20,17 +20,17 @@
     <summary>Represents an extensibility element added to a <see cref="T:System.Web.Services.Description.Port" /> within an XML Web service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class, through its <xref:System.Web.Services.Description.HttpAddressBinding.Location%2A> property, specifies the base URI for the XML Web service. For more information about XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+This class, through its <xref:System.Web.Services.Description.HttpAddressBinding.Location%2A> property, specifies the base URI for the XML Web service. For more information about XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[WebServices_HttpBinding#3](~/samples/snippets/cpp/VS_Snippets_Remoting/WebServices_HttpBinding/CPP/httpbinding.cpp#3)]
- [!code-csharp[WebServices_HttpBinding#3](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_HttpBinding/CS/httpbinding.cs#3)]
- [!code-vb[WebServices_HttpBinding#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebServices_HttpBinding/VB/httpbinding.vb#3)]  
-  
+[!code-cpp[WebServices_HttpBinding#3](~/samples/snippets/cpp/VS_Snippets_Remoting/WebServices_HttpBinding/CPP/httpbinding.cpp#3)]
+[!code-csharp[WebServices_HttpBinding#3](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_HttpBinding/CS/httpbinding.cs#3)]
+[!code-vb[WebServices_HttpBinding#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebServices_HttpBinding/VB/httpbinding.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,10 +74,10 @@
         <value>A string specifying the URI for the <see cref="T:System.Web.Services.Description.Port" />. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- WebServices_HttpBinding#4  
-  
+WebServices_HttpBinding#4  
+ 
  ]]></format>
         </remarks>
       </Docs>

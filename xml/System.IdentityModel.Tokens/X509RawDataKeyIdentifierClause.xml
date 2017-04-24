@@ -14,20 +14,20 @@
     <summary>Represents a key identifier clause that identifies a <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" /> security token using the X.509 certificate's raw data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token using the X.509 certificate's raw data. The <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.GetX509RawData%2A> method returns the raw data.  
-  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
-  
+Typically, the <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token using the X.509 certificate's raw data. The <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.GetX509RawData%2A> method returns the raw data.  
+ 
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
+ 
 -   <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>  
-  
- <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause>  
-  
+ 
+<xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause>  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause" /> class using the specified X.509 certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The raw data is obtained for the `certificate` parameter using the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertData%2A> method.  
-  
+The raw data is obtained for the `certificate` parameter using the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertData%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -99,10 +99,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To create the key, call the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CreateKey%2A> method.  
-  
+To create the key, call the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CreateKey%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
           <see langword="true" /> if <paramref name="certificate" /> has the raw data that matches the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.Matches%2A> method calls the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertData%2A> method for the `certificate` and then compares that to the current instance.  
-  
+The <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.Matches%2A> method calls the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertData%2A> method for the `certificate` and then compares that to the current instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -195,10 +195,10 @@
         <returns>A <see cref="T:System.String" /> that represents the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.ToString%2A> method returns the raw data that is Base-64 encoded.  
-  
+The <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.ToString%2A> method returns the raw data that is Base-64 encoded.  
+ 
  ]]></format>
         </remarks>
       </Docs>

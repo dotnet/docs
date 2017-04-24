@@ -14,10 +14,10 @@
     <summary>Generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets.  
-  
+Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Design.TypedDataSetSchemaImporterExtension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
-  
+Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Design.TypedDataSetSchemaImporterExtension" /> class</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This protected constructor is used to pass the desired <xref:System.Data.Design.TypedDataSetGenerator.GenerateOption> value to the <xref:System.Data.Design.TypedDataSetGenerator>.  
-  
+This protected constructor is used to pass the desired <xref:System.Data.Design.TypedDataSetGenerator.GenerateOption> value to the <xref:System.Data.Design.TypedDataSetGenerator>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,14 +104,14 @@
         <returns>Returns a <see cref="T:System.String" /> representing the name of the typed dataset class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
-  
+ 
+Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,14 +153,14 @@
         <returns>Returns a <see cref="T:System.String" /> representing the name of the typed dataset class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
-  
+ 
+Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Design.TypedDataSetSchemaImporterExtension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
-  
+Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,10 +191,10 @@
         <summary>Generates internal type mapping information for an element defined in an XML schema document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
-  
+Expands upon the <xref:System.Xml.Serialization.XmlSchemaImporter> to provide additional functionality for typed datasets and generates internal mappings to .NET Framework types for XML schema element declarations, including literal XSD message parts in a WSDL document.  
+ 
  ]]></format>
         </remarks>
       </Docs>

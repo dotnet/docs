@@ -13,16 +13,16 @@
     <summary>Describes the type of change the entity will undergo when changes are submitted to the database.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use with `OnValidate()` in [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] applications to specify or omit validation based on the type of change being submitted.  
+Use with `OnValidate()` in [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] applications to specify or omit validation based on the type of change being submitted.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Data.Linq.ChangeAction#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.ChangeAction/cs/Program.cs#1)]
- [!code-vb[System.Data.Linq.ChangeAction#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.ChangeAction/vb/Module1.vb#1)]  
-  
+[!code-csharp[System.Data.Linq.ChangeAction#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.ChangeAction/cs/Program.cs#1)]
+[!code-vb[System.Data.Linq.ChangeAction#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.ChangeAction/vb/Module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

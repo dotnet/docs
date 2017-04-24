@@ -14,24 +14,24 @@
     <summary>Provides a way of reading a forward-only stream of data rows from a data source. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To create an <xref:System.Data.Odbc.OdbcDataReader>, you must call the <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> method of the <xref:System.Data.Odbc.OdbcCommand> object, instead of directly using a constructor.  
+To create an <xref:System.Data.Odbc.OdbcDataReader>, you must call the <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> method of the <xref:System.Data.Odbc.OdbcCommand> object, instead of directly using a constructor.  
+ 
+While the <xref:System.Data.Odbc.OdbcDataReader> is being used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving the <xref:System.Data.Odbc.OdbcDataReader>, and no other operations can be performed on the <xref:System.Data.Odbc.OdbcConnection> other than closing it. This is the case until the <xref:System.Data.Odbc.OdbcDataReader.Close%2A> method of the <xref:System.Data.Odbc.OdbcDataReader> is called. For example, you cannot retrieve output parameters until after you call <xref:System.Data.Odbc.OdbcDataReader.Close%2A>.  
+ 
+Changes made to a result set by another process or thread while data is being read may be visible to the user of the <xref:System.Data.Odbc.OdbcDataReader>. However, the precise behavior is both driver and timing dependent.  
+ 
+<xref:System.Data.Odbc.OdbcDataReader.IsClosed%2A> and <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.Odbc.OdbcDataReader> is closed. Sometimes, you must call <xref:System.Data.Odbc.OdbcDataReader.Close%2A> before you can call <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A>.  
+ 
   
- While the <xref:System.Data.Odbc.OdbcDataReader> is being used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving the <xref:System.Data.Odbc.OdbcDataReader>, and no other operations can be performed on the <xref:System.Data.Odbc.OdbcConnection> other than closing it. This is the case until the <xref:System.Data.Odbc.OdbcDataReader.Close%2A> method of the <xref:System.Data.Odbc.OdbcDataReader> is called. For example, you cannot retrieve output parameters until after you call <xref:System.Data.Odbc.OdbcDataReader.Close%2A>.  
-  
- Changes made to a result set by another process or thread while data is being read may be visible to the user of the <xref:System.Data.Odbc.OdbcDataReader>. However, the precise behavior is both driver and timing dependent.  
-  
- <xref:System.Data.Odbc.OdbcDataReader.IsClosed%2A> and <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.Odbc.OdbcDataReader> is closed. Sometimes, you must call <xref:System.Data.Odbc.OdbcDataReader.Close%2A> before you can call <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcConnection>, an <xref:System.Data.Odbc.OdbcCommand>, and an <xref:System.Data.Odbc.OdbcDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.Odbc.OdbcDataReader>, and then the <xref:System.Data.Odbc.OdbcConnection>.  
-  
- [!code-csharp[Classic WebData OdbcDataReader#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcDataReader/CS/source.cs#1)]
- [!code-vb[Classic WebData OdbcDataReader#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcDataReader/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.Odbc.OdbcConnection>, an <xref:System.Data.Odbc.OdbcCommand>, and an <xref:System.Data.Odbc.OdbcDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.Odbc.OdbcDataReader>, and then the <xref:System.Data.Odbc.OdbcConnection>.  
+ 
+[!code-csharp[Classic WebData OdbcDataReader#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcDataReader/CS/source.cs#1)]
+[!code-vb[Classic WebData OdbcDataReader#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcDataReader/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,21 +53,21 @@
         <summary>Closes the <see cref="T:System.Data.Odbc.OdbcDataReader" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must explicitly call the <xref:System.Data.Odbc.OdbcDataReader.Close%2A> method when you are finished using the <xref:System.Data.Odbc.OdbcDataReader> to use the associated <xref:System.Data.Odbc.OdbcConnection> for any other purpose.  
-  
+You must explicitly call the <xref:System.Data.Odbc.OdbcDataReader.Close%2A> method when you are finished using the <xref:System.Data.Odbc.OdbcDataReader> to use the associated <xref:System.Data.Odbc.OdbcConnection> for any other purpose.  
+ 
 > [!CAUTION]
 >  Do not call `Close` or `Dispose` on a Connection, a DataReader, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcConnection>, an <xref:System.Data.Odbc.OdbcCommand>, and an <xref:System.Data.Odbc.OdbcDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.Odbc.OdbcDataReader>, and then the <xref:System.Data.Odbc.OdbcConnection>.  
-  
- [!code-csharp[Classic WebData IDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.Odbc.OdbcConnection>, an <xref:System.Data.Odbc.OdbcCommand>, and an <xref:System.Data.Odbc.OdbcDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.Odbc.OdbcDataReader>, and then the <xref:System.Data.Odbc.OdbcConnection>.  
+ 
+[!code-csharp[Classic WebData IDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/CS/source.cs#1)]
+[!code-vb[Classic WebData IDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <value>The depth of nesting for the current row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The outermost table has a depth of zero.  
-  
+The outermost table has a depth of zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,12 +135,12 @@
         <value>When not positioned in a valid record set, 0; otherwise the number of columns in the current record. The default is -1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Includes hidden fields. Use <xref:System.Data.Common.DbDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
-  
- After you execute a query that does not return rows, <xref:System.Data.Odbc.OdbcDataReader.FieldCount%2A> returns 0.  
-  
+Includes hidden fields. Use <xref:System.Data.Common.DbDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
+ 
+After you execute a query that does not return rows, <xref:System.Data.Odbc.OdbcDataReader.FieldCount%2A> returns 0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">There is no current connection to a data source.</exception>
@@ -167,12 +167,12 @@
         <returns>A Boolean that is the value of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -199,12 +199,12 @@
         <returns>The value of the specified column as a byte.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -239,17 +239,17 @@
         <returns>The actual number of bytes read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Odbc.OdbcDataReader.GetBytes%2A> returns the number of available bytes in the field. Most of the time this is the exact length of the field. However, the number returned may be less than the true length of the field if <xref:System.Data.Odbc.OdbcDataReader.GetBytes%2A> has already been used to obtain bytes from the field. This may be the case, for example, if the <xref:System.Data.Odbc.OdbcDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
-  
- If you pass a buffer that is a null value, <xref:System.Data.Odbc.OdbcDataReader.GetBytes%2A> returns the length of the field in bytes.  
-  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
-  
+<xref:System.Data.Odbc.OdbcDataReader.GetBytes%2A> returns the number of available bytes in the field. Most of the time this is the exact length of the field. However, the number returned may be less than the true length of the field if <xref:System.Data.Odbc.OdbcDataReader.GetBytes%2A> has already been used to obtain bytes from the field. This may be the case, for example, if the <xref:System.Data.Odbc.OdbcDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+ 
+If you pass a buffer that is a null value, <xref:System.Data.Odbc.OdbcDataReader.GetBytes%2A> returns the length of the field in bytes.  
+ 
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
+ 
 > [!NOTE]
 >  No exception will be thrown if the value of `bufferIndex` is outside the array. No data will be read and the method will return 0.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,12 +275,12 @@
         <returns>The value of the specified column as a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -315,17 +315,17 @@
         <returns>The actual number of characters read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Odbc.OdbcDataReader.GetChars%2A> returns the number of available characters in the field. Most of the time this is the exact length of the field. However, the number returned may be less than the true length of the field if <xref:System.Data.Odbc.OdbcDataReader.GetChars%2A> has already been used to obtain characters from the field. This may be the case, for example, if the <xref:System.Data.Odbc.OdbcDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
-  
- If you pass a buffer that is a null value, <xref:System.Data.Odbc.OdbcDataReader.GetChars%2A> returns the length of the field in characters.  
-  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
-  
+<xref:System.Data.Odbc.OdbcDataReader.GetChars%2A> returns the number of available characters in the field. Most of the time this is the exact length of the field. However, the number returned may be less than the true length of the field if <xref:System.Data.Odbc.OdbcDataReader.GetChars%2A> has already been used to obtain characters from the field. This may be the case, for example, if the <xref:System.Data.Odbc.OdbcDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+ 
+If you pass a buffer that is a null value, <xref:System.Data.Odbc.OdbcDataReader.GetChars%2A> returns the length of the field in characters.  
+ 
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
+ 
 > [!NOTE]
 >  No exception will be thrown if the value of `bufferIndex` is outside the array. No data will be read and the method will return 0.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,12 +395,12 @@
         <returns>The value of the specified column as a <see cref="T:System.DateTime" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -427,14 +427,14 @@
         <returns>The value of the specified column as a <see cref="T:System.Decimal" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
- <xref:System.Data.Odbc.OdbcDataReader.GetDecimal%2A> has a maximum precision of 28. Attempting to retrieve decimal data with a larger precision will cause an exception. One solution would be to change the query to cast the decimal type to either a smaller datatype or convert to string or binary.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
+<xref:System.Data.Odbc.OdbcDataReader.GetDecimal%2A> has a maximum precision of 28. Attempting to retrieve decimal data with a larger precision will cause an exception. One solution would be to change the query to cast the decimal type to either a smaller datatype or convert to string or binary.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -461,12 +461,12 @@
         <returns>The value of the specified column as a double-precision floating-point number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -490,10 +490,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the rows in the data reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although you can use this method to retrieve an explicit enumerator, in languages that support a `foreach` construct, it is simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
-  
+Although you can use this method to retrieve an explicit enumerator, in languages that support a `foreach` construct, it is simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -541,12 +541,12 @@
         <returns>The value of the specified column as a single-precision floating-point number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported then the method call will fail.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -573,12 +573,12 @@
         <returns>The value of the specified column as a GUID.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -605,12 +605,12 @@
         <returns>The value of the specified column as a 16-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -637,12 +637,12 @@
         <returns>The value of the specified column as a 32-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -669,12 +669,12 @@
         <returns>The value of the specified column as a 64-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -723,22 +723,22 @@
         <returns>The zero-based column ordinal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> performs a case-sensitive lookup first. If it fails, a second case-insensitive search is made. The method throws an `IndexOutOfRange` exception if the zero-based column ordinal is not found.  
+<xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> performs a case-sensitive lookup first. If it fails, a second case-insensitive search is made. The method throws an `IndexOutOfRange` exception if the zero-based column ordinal is not found.  
+ 
+<xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> is kana-width insensitive.  
+ 
+Because ordinal-based lookups are more efficient than named lookups, it is inefficient to call <xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> within a loop. Instead, call <xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> one time and then assign the results to an integer variable for use within the loop.  
+ 
   
- <xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> is kana-width insensitive.  
-  
- Because ordinal-based lookups are more efficient than named lookups, it is inefficient to call <xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> within a loop. Instead, call <xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> one time and then assign the results to an integer variable for use within the loop.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> method.  
-  
- [!code-csharp[Classic WebData OdbcDataReader.GetOrdinal#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcDataReader.GetOrdinal/CS/source.cs#1)]
- [!code-vb[Classic WebData OdbcDataReader.GetOrdinal#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcDataReader.GetOrdinal/VB/source.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Data.Odbc.OdbcDataReader.GetOrdinal%2A> method.  
+ 
+[!code-csharp[Classic WebData OdbcDataReader.GetOrdinal#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcDataReader.GetOrdinal/CS/source.cs#1)]
+[!code-vb[Classic WebData OdbcDataReader.GetOrdinal#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcDataReader.GetOrdinal/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -761,10 +761,10 @@
         <returns>A <see cref="T:System.Data.DataTable" /> that describes the column metadata.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcDataReader.GetSchemaTable%2A> method returns metadata about each column in the following order:  
-  
+The <xref:System.Data.Odbc.OdbcDataReader.GetSchemaTable%2A> method returns metadata about each column in the following order:  
+ 
 |DataReader column|Description|  
 |-----------------------|-----------------|  
 |ColumnName|The name of the column; this might not be unique. If the column name cannot be determined, a null value is returned. This name always reflects the most recent naming of the column in the current view or command text.|  
@@ -785,22 +785,22 @@
 |BaseCatalogName|The name of the catalog in the data store that contains the column. NULL if the base catalog name cannot be determined. The default for this column is a null value.|  
 |BaseTableName|The name of the table or view in the data store that contains the column. A null value if the base table name cannot be determined. The default of this column is a null value.|  
 |BaseColumnName|The name of the column in the data store. This might be different from the column name returned in the ColumnName column if an alias was used. A null value if the base column name cannot be determined or if the rowset column is derived, but not identical to, a column in the data store. The default for this column is a null value.|  
-  
- A row is returned for every column in the results set.  
-  
- The .NET Framework Data Provider for ODBC assumes that metadata information is available from an ODBC driver after one of **SQLPrepare**, **SQLExecute**, or **SQLExecuteDirect** functions are called. For "SchemaOnly" command behavior to work correctly, **SQLPrepare** must return the required metadata information. Not all ODBC drivers support this function or return metadata information. In these cases, part or all of the information in the SchemaTable will be missing. After calling **SQLPrepare**, The data provider calls the ODBC **SQLColAttribute** function to find the metadata information related to each column in the query results (for example, IsLong, IsUnique, AllowDBNull, BaseTableName, BaseColumnName). If the underlying driver does not return some of this information, the corresponding values in the SchemaTable will not be set correctly.  
-  
- The .NET Framework Data Provider for ODBC also calls **SQLPrimaryKeys** to retrieve the key information for every table. If the underlying ODBC driver does not support this function, the data provider calls **SQLStatistics** and chooses one of the unique indexes as the primary key for the table. This may not always give the results that you want.  
-  
- <xref:System.Data.Odbc.OdbcCommandBuilder> needs the correct identification of the primary keys of the table in order to work correctly. If the BaseTableName is not returned for every column in the query results, the .NET Framework Data Provider for ODBC tries to parse the SQL statement to find the table names involved in the query. This works with UPDATE, INSERT, DELETE and simple SELECT statements, but not with stored procedures or SELECT statements based on joins. If some or all the schema information is missing from this table, the <xref:System.Data.Odbc.OdbcCommandBuilder> will not work correctly, because it has insufficient schema information to automatically generate the correct INSERT, UPDATE, or DELETE statements.  
-  
- To make sure that metadata columns return the correct information, you must call <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> with the behavior parameter set to KeyInfo. Otherwise, some of the columns in the schema table may return default, null, or incorrect data.  
-  
- When you use ODBC.NET to Oracle via the ODBC driver, aliased key columns are not recognized as keys. This affects the IsKey and IsUnique columns in the schema table of the OdbcDataReader. It also affects the OdbcCommandBuilder's ability to generate updating logic. Consider not using an alias for a primary key column.  
-  
+ 
+A row is returned for every column in the results set.  
+ 
+The .NET Framework Data Provider for ODBC assumes that metadata information is available from an ODBC driver after one of **SQLPrepare**, **SQLExecute**, or **SQLExecuteDirect** functions are called. For "SchemaOnly" command behavior to work correctly, **SQLPrepare** must return the required metadata information. Not all ODBC drivers support this function or return metadata information. In these cases, part or all of the information in the SchemaTable will be missing. After calling **SQLPrepare**, The data provider calls the ODBC **SQLColAttribute** function to find the metadata information related to each column in the query results (for example, IsLong, IsUnique, AllowDBNull, BaseTableName, BaseColumnName). If the underlying driver does not return some of this information, the corresponding values in the SchemaTable will not be set correctly.  
+ 
+The .NET Framework Data Provider for ODBC also calls **SQLPrimaryKeys** to retrieve the key information for every table. If the underlying ODBC driver does not support this function, the data provider calls **SQLStatistics** and chooses one of the unique indexes as the primary key for the table. This may not always give the results that you want.  
+ 
+<xref:System.Data.Odbc.OdbcCommandBuilder> needs the correct identification of the primary keys of the table in order to work correctly. If the BaseTableName is not returned for every column in the query results, the .NET Framework Data Provider for ODBC tries to parse the SQL statement to find the table names involved in the query. This works with UPDATE, INSERT, DELETE and simple SELECT statements, but not with stored procedures or SELECT statements based on joins. If some or all the schema information is missing from this table, the <xref:System.Data.Odbc.OdbcCommandBuilder> will not work correctly, because it has insufficient schema information to automatically generate the correct INSERT, UPDATE, or DELETE statements.  
+ 
+To make sure that metadata columns return the correct information, you must call <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> with the behavior parameter set to KeyInfo. Otherwise, some of the columns in the schema table may return default, null, or incorrect data.  
+ 
+When you use ODBC.NET to Oracle via the ODBC driver, aliased key columns are not recognized as keys. This affects the IsKey and IsUnique columns in the schema table of the OdbcDataReader. It also affects the OdbcCommandBuilder's ability to generate updating logic. Consider not using an alias for a primary key column.  
+ 
 > [!NOTE]
 >  The Microsoft Jet ODBC driver always returns unique index and primary key columns as nullable regardless of whether they are nullable or not. The driver also does not return primary key information; it only returns a list of unique indexes and their columns, including primary key columns, without differentiating among them.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.Odbc.OdbcDataReader" /> is closed.</exception>
@@ -827,12 +827,12 @@
         <returns>The value of the specified column as a <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
-  
- Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
-  
+Conversions are performed based on the underlying capabilities of the ODBC driver. If the conversion is not supported, the method call fails.  
+ 
+Call <xref:System.Data.Odbc.OdbcDataReader.IsDBNull%2A> to look for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -881,10 +881,10 @@
         <returns>The value to return.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns <xref:System.DBNull> for null database columns.  
-  
+This method returns <xref:System.DBNull> for null database columns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -910,20 +910,20 @@
         <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For most applications, the <xref:System.Data.Odbc.OdbcDataReader.GetValues%2A> method provides an efficient means for retrieving all columns, instead of retrieving each column individually.  
+For most applications, the <xref:System.Data.Odbc.OdbcDataReader.GetValues%2A> method provides an efficient means for retrieving all columns, instead of retrieving each column individually.  
+ 
+You can pass an <xref:System.Object> array that contains fewer than the number of columns that are contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns that are contained in the resulting row.  
+ 
+This method returns <xref:System.DBNull> for null database columns.  
+ 
   
- You can pass an <xref:System.Object> array that contains fewer than the number of columns that are contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns that are contained in the resulting row.  
-  
- This method returns <xref:System.DBNull> for null database columns.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[OdbcDataReader_GetValues#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/odbcdatareader_getvalues/cs/source.cs#1)]
- [!code-vb[OdbcDataReader_GetValues#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/odbcdatareader_getvalues/vb/source.vb#1)]  
-  
+[!code-csharp[OdbcDataReader_GetValues#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/odbcdatareader_getvalues/cs/source.cs#1)]
+[!code-vb[OdbcDataReader_GetValues#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/odbcdatareader_getvalues/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -965,10 +965,10 @@
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcDataReader" /> is closed; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Odbc.OdbcDataReader.IsClosed%2A> and <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.Odbc.OdbcDataReader> is closed.  
-  
+<xref:System.Data.Odbc.OdbcDataReader.IsClosed%2A> and <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.Odbc.OdbcDataReader> is closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -995,10 +995,10 @@
           <see langword="true" /> if the specified column value is equivalent to <see cref="T:System.DBNull" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To avoid raising an error, call this method to look for null column values before calling the typed Get methods (for example, <xref:System.Data.Odbc.OdbcDataReader.GetByte%2A>, <xref:System.Data.Odbc.OdbcDataReader.GetChar%2A>, and so on).  
-  
+To avoid raising an error, call this method to look for null column values before calling the typed Get methods (for example, <xref:System.Data.Odbc.OdbcDataReader.GetByte%2A>, <xref:System.Data.Odbc.OdbcDataReader.GetChar%2A>, and so on).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1047,12 +1047,12 @@
         <value>The value of the specified column in its native format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A case-sensitive lookup is performed first. If it fails, a second case-insensitive search is made.  
-  
- This method is kana-width insensitive.  
-  
+A case-sensitive lookup is performed first. If it fails, a second case-insensitive search is made.  
+ 
+This method is kana-width insensitive.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">No column with the specified name was found.</exception>
@@ -1077,12 +1077,12 @@
           <see langword="true" /> if there are more result sets; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used to process multiple results that can be generated by executing batch SQL statements.  
-  
- By default, the <xref:System.Data.Odbc.OdbcDataReader> is positioned on the first result.  
-  
+Used to process multiple results that can be generated by executing batch SQL statements.  
+ 
+By default, the <xref:System.Data.Odbc.OdbcDataReader> is positioned on the first result.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1106,20 +1106,20 @@
           <see langword="true" /> if there are more rows; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default position of the <xref:System.Data.Odbc.OdbcDataReader> is before the first record. Therefore, you must call <xref:System.Data.Odbc.OdbcDataReader.Read%2A> to start accessing any data.  
+The default position of the <xref:System.Data.Odbc.OdbcDataReader> is before the first record. Therefore, you must call <xref:System.Data.Odbc.OdbcDataReader.Read%2A> to start accessing any data.  
+ 
+While the <xref:System.Data.Odbc.OdbcDataReader> is being used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving it until you call <xref:System.Data.Odbc.OdbcDataReader.Close%2A>.  
+ 
   
- While the <xref:System.Data.Odbc.OdbcDataReader> is being used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving it until you call <xref:System.Data.Odbc.OdbcDataReader.Close%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcConnection>, an <xref:System.Data.Odbc.OdbcCommand>, and an <xref:System.Data.Odbc.OdbcDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.Odbc.OdbcDataReader>, and then the <xref:System.Data.Odbc.OdbcConnection>.  
-  
- [!code-csharp[Classic WebData IDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.Odbc.OdbcConnection>, an <xref:System.Data.Odbc.OdbcCommand>, and an <xref:System.Data.Odbc.OdbcDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.Odbc.OdbcDataReader>, and then the <xref:System.Data.Odbc.OdbcConnection>.  
+ 
+[!code-csharp[Classic WebData IDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/CS/source.cs#1)]
+[!code-vb[Classic WebData IDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1141,14 +1141,14 @@
         <value>The number of rows changed, inserted, or deleted. -1 for SELECT statements; 0 if no rows were affected, or the statement failed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.Odbc.OdbcDataReader>.  
-  
- The value of this property is cumulative. For example, if two records are inserted in batch mode, the value of <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> will be 2.  
-  
- <xref:System.Data.Odbc.OdbcDataReader.IsClosed%2A> and <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.Odbc.OdbcDataReader> is closed.  
-  
+The <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.Odbc.OdbcDataReader>.  
+ 
+The value of this property is cumulative. For example, if two records are inserted in batch mode, the value of <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> will be 2.  
+ 
+<xref:System.Data.Odbc.OdbcDataReader.IsClosed%2A> and <xref:System.Data.Odbc.OdbcDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.Odbc.OdbcDataReader> is closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

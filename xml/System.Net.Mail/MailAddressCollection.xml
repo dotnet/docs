@@ -22,20 +22,20 @@
     <summary>Store e-mail addresses that are associated with an e-mail message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Mail.MailMessage.To%2A?displayProperty=fullName>, <xref:System.Net.Mail.MailMessage.CC%2A?displayProperty=fullName>, and <xref:System.Net.Mail.MailMessage.Bcc%2A?displayProperty=fullName> properties return instances of this class that are used to hold the respective e-mail addresses.  
+The <xref:System.Net.Mail.MailMessage.To%2A?displayProperty=fullName>, <xref:System.Net.Mail.MailMessage.CC%2A?displayProperty=fullName>, and <xref:System.Net.Mail.MailMessage.Bcc%2A?displayProperty=fullName> properties return instances of this class that are used to hold the respective e-mail addresses.  
+ 
+For details on the mail address formats supported by the <xref:System.Net.Mail.MailAddressCollection> class, see the <xref:System.Net.Mail.MailAddress> class.  
+ 
   
- For details on the mail address formats supported by the <xref:System.Net.Mail.MailAddressCollection> class, see the <xref:System.Net.Mail.MailAddress> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds an e-mail address to the <xref:System.Net.Mail.MailAddressCollection> that is returned by the <xref:System.Net.Mail.MailMessage.Bcc%2A> property.  
-  
- [!code-cpp[NclMailSync#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#9)]
- [!code-csharp[NclMailSync#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#9)]  
-  
+The following example adds an e-mail address to the <xref:System.Net.Mail.MailAddressCollection> that is returned by the <xref:System.Net.Mail.MailMessage.Bcc%2A> property.  
+ 
+[!code-cpp[NclMailSync#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#9)]
+[!code-csharp[NclMailSync#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#9)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,10 +85,10 @@
         <summary>Add a list of e-mail addresses to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If multiple e-mail addresses separated with a semicolon character (";") are passed in the `addresses` parameter. a <xref:System.FormatException> exception is raised.  
-  
+If multiple e-mail addresses separated with a semicolon character (";") are passed in the `addresses` parameter. a <xref:System.FormatException> exception is raised.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The<paramref name=" addresses" /> parameter is null.</exception>
@@ -177,18 +177,18 @@
         <returns>A <see cref="T:System.String" /> containing the e-mail addresses in this collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this collection contains multiple addresses, they are separated by a comma character (",").  
+When this collection contains multiple addresses, they are separated by a comma character (",").  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the e-mail addresses in the <xref:System.Net.Mail.MailAddressCollection> that are returned by the <xref:System.Net.Mail.MailMessage.Bcc%2A> property.  
-  
- [!code-cpp[NclMailSync#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#9)]
- [!code-csharp[NclMailSync#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#9)]  
-  
+The following example displays the e-mail addresses in the <xref:System.Net.Mail.MailAddressCollection> that are returned by the <xref:System.Net.Mail.MailMessage.Bcc%2A> property.  
+ 
+[!code-cpp[NclMailSync#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#9)]
+[!code-csharp[NclMailSync#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,46 +18,46 @@
     <summary>Use this class to write events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To consume events written using the <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A> and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A> methods, the events must be defined in a manifest; events written using the <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A> method do not require a manifest.  
-  
- Events can contain the following managed data types:  
-  
+To consume events written using the <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A> and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A> methods, the events must be defined in a manifest; events written using the <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A> method do not require a manifest.  
+ 
+Events can contain the following managed data types:  
+ 
 -   bool  
-  
+ 
 -   Boolean  
-  
+ 
 -   byte  
-  
+ 
 -   char  
-  
+ 
 -   decimal  
-  
+ 
 -   double  
-  
+ 
 -   float  
-  
+ 
 -   Guid  
-  
+ 
 -   int  
-  
+ 
 -   IntPtr  
-  
+ 
 -   long  
-  
+ 
 -   sbyte  
-  
+ 
 -   short  
-  
+ 
 -   string  
-  
+ 
 -   uint  
-  
+ 
 -   UInt64  
-  
- If an event in your manifest uses the `Boolean` in-type, you cannot write the data element using a `Boolean` data type in your managed code. The `Boolean` in-type in your manifest expects a 4-byte value, and a `Boolean` data type in managed code is 1-byte. Instead, you must use an `int` data type to write the value. If you want to log a `Boolean` value, use the UInt8 in-type in your manifest.  
-  
+ 
+If an event in your manifest uses the `Boolean` in-type, you cannot write the data element using a `Boolean` data type in your managed code. The `Boolean` in-type in your manifest expects a 4-byte value, and a `Boolean` data type in managed code is 1-byte. Instead, you must use an `int` data type to write the value. If you want to log a `Boolean` value, use the UInt8 in-type in your manifest.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.EventProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Registers the provider. To remove the registration when finished, call the <xref:System.Diagnostics.Eventing.EventProvider.Close%2A> method.  
-  
+Registers the provider. To remove the registration when finished, call the <xref:System.Diagnostics.Eventing.EventProvider.Close%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InsufficientMemoryException">There is not enough memory to complete the operation.</exception>
@@ -113,10 +113,10 @@
         <summary>Removes the provider's registration from the ETW subsystem and releases all unmanaged resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should call this method when finished instead of waiting for the system to dispose of the resources.  
-  
+You should call this method when finished instead of waiting for the system to dispose of the resources.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error returned by the ETW subsystem.</exception>
@@ -145,10 +145,10 @@
         <returns>A unique Guid that you use when calling the <see cref="M:System.Diagnostics.Eventing.EventProvider.SetActivityId(System.Guid@)" /> method to set the activity identifier for the provider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a static method.  
-  
+This is a static method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,12 +233,12 @@
         <returns>Use the value to determine the cause of an event write failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A>, <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A>, and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A> methods set this value if they fail to write the event.  
-  
- This is a static method.  
-  
+The <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A>, <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A>, and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A> methods set this value if they fail to write the event.  
+ 
+This is a static method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
         <returns>Is <see langword="true" /> if the provider is enabled to any session; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, a provider does not call this method to determine whether the provider has been enabled by a session; the provider simply writes the event, and ETW determines whether the event is logged to the session. A provider may want to call this function if the provider needs to perform extra work to generate the event. In this case, calling this function first may save resources and time.  
-  
+Typically, a provider does not call this method to determine whether the provider has been enabled by a session; the provider simply writes the event, and ETW determines whether the event is logged to the session. A provider may want to call this function if the provider needs to perform extra work to generate the event. In this case, calling this function first may save resources and time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,10 +292,10 @@
         <returns>Is <see langword="true" /> if any session is requesting the specified event; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, a provider does not call this method to determine whether a session requested the specified event; the provider simply writes the event, and ETW determines whether the event is logged to a session. A provider may want to call this function if the provider needs to perform extra work to generate the event. In this case, calling this function first to determine if a session requested the event or not, may save resources and time.  
-  
+Typically, a provider does not call this method to determine whether a session requested the specified event; the provider simply writes the event, and ETW determines whether the event is logged to a session. A provider may want to call this function if the provider needs to perform extra work to generate the event. In this case, calling this function first to determine if a session requested the event or not, may save resources and time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,14 +325,14 @@
         <summary>Sets the current activity identifier used by the <see cref="Overload:System.Diagnostics.Eventing.EventProvider.WriteEvent" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier is stored in the thread context.  
-  
- Note that in version 3.5 of the .NET framework, you had to set the `id` parameter of this method and the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property value to the same identifier value. However, in version 4.0 of the framework, the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method automatically sets the correlation activity identifier for you.  
-  
- This is a static method.  
-  
+The identifier is stored in the thread context.  
+ 
+Note that in version 3.5 of the .NET framework, you had to set the `id` parameter of this method and the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property value to the same identifier value. However, in version 4.0 of the framework, the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method automatically sets the correlation activity identifier for you.  
+ 
+This is a static method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,55 +368,55 @@
         <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
+If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
+ 
+If the object type is not supported, the method writes the value of the object's <xref:System.Object.ToString%2A?displayProperty=fullName> method in the payload. For a list of supported object types, see the Remarks for the <xref:System.Diagnostics.Eventing.EventProvider> class.  
+ 
   
- If the object type is not supported, the method writes the value of the object's <xref:System.Object.ToString%2A?displayProperty=fullName> method in the payload. For a list of supported object types, see the Remarks for the <xref:System.Diagnostics.Eventing.EventProvider> class.  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 ```  
 private static Guid providerId = new Guid("{FB33FDA8-45FB-4df0-8A55-EEB4BA88E7E7}");  
-  
+ 
 enum Keyword  
 {  
-    Read = 0x1,  
-    Write = 0x2,  
-    Local = 0x4,  
-    Remote = 0x8  
+   Read = 0x1,  
+   Write = 0x2,  
+   Local = 0x4,  
+   Remote = 0x8  
 }  
-  
+ 
 enum Level  
 {  
-    Critical = 1,  
-    Error,  
-    Warning,  
-    Information,  
-    Verbose  
+   Critical = 1,  
+   Error,  
+   Warning,  
+   Information,  
+   Verbose  
 }  
-  
-    EventProvider provider = new EventProvider(providerId);  
-    EventDescriptor readEvent;  
-    string path = @"<PATHGOESHERE>";  
-    UInt64 bytesRead = <ASSIGNVALUE>;  
-  
-    if (provider.IsEnabled(Level.Information, (long)Keyword.Read))  
-    {  
-        unchecked  
-        {  
-            readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
-        }  
-  
-        if (!provider.WriteEvent(ref readEvent, new object[] { path, bytesRead }))  
-            Console.WriteLine(EventProvider.GetLastWriteEventError());  
-    }  
-  
-    provider.Close();  
+ 
+   EventProvider provider = new EventProvider(providerId);  
+   EventDescriptor readEvent;  
+   string path = @"<PATHGOESHERE>";  
+   UInt64 bytesRead = <ASSIGNVALUE>;  
+ 
+   if (provider.IsEnabled(Level.Information, (long)Keyword.Read))  
+   {  
+       unchecked  
+       {  
+           readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
+       }  
+ 
+       if (!provider.WriteEvent(ref readEvent, new object[] { path, bytesRead }))  
+           Console.WriteLine(EventProvider.GetLastWriteEventError());  
+   }  
+ 
+   provider.Close();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="eventPayload" /> parameter contains too many objects or strings.</exception>
@@ -450,36 +450,36 @@ enum Level
         <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
+If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
+ 
+The maximum string length is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
+ 
   
- The maximum string length is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 ```  
 private static Guid providerId = new Guid("{FB33FDA8-45FB-4df0-8A55-EEB4BA88E7E7}");  
-  
+ 
 EventProvider provider = new EventProvider(providerId);  
 EventDescriptor writeEvent;  
-  
+ 
 if (provider.IsEnabled())  
 {  
-     unchecked  
-     {  
-          writeEvent = new EventDescriptor(0x2, 0x0, 0x10, 0x3, 0x0, 0x0, (long)0x8000000000000006);  
-     }  
-  
-     if (!provider.WriteEvent(ref writeEvent, "Write event."))  
-          Console.WriteLine(EventProvider.GetLastWriteEventError());  
+    unchecked  
+    {  
+         writeEvent = new EventDescriptor(0x2, 0x0, 0x10, 0x3, 0x0, 0x0, (long)0x8000000000000006);  
+    }  
+ 
+    if (!provider.WriteEvent(ref writeEvent, "Write event."))  
+         Console.WriteLine(EventProvider.GetLastWriteEventError());  
 }  
-  
+ 
 provider.Close();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If <paramref name="data" /> is <see langword="null" />.</exception>
@@ -515,10 +515,10 @@ provider.Close();
         <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
-  
+If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -544,19 +544,19 @@ provider.Close();
         <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum string length is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
+The maximum string length is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```  
 if (!provider.WriteMessageEvent("Event string."))  
-    Console.WriteLine(EventProvider.GetLastWriteEventError());  
+   Console.WriteLine(EventProvider.GetLastWriteEventError());  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If <paramref name="eventMessage" /> is <see langword="null" />.</exception>
@@ -592,26 +592,26 @@ if (!provider.WriteMessageEvent("Event string."))
         <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum string length is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
+The maximum string length is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```  
 // Calling this method with level and keyword set to zero is the same  
 // as calling WriteMessageEvent(string); the event is always written.  
 if (!provider.WriteMessageEvent("Event string.", 0, 0))  
-    Console.WriteLine(EventProvider.GetLastWriteEventError());  
-  
+   Console.WriteLine(EventProvider.GetLastWriteEventError());  
+ 
 // Event is written if the level value of the session is less than or equal to 3, and bit 1 of the session  
 // keyword bit-mask is set.  
 if (!provider.WriteMessageEvent("Event string.", 3, 2))  
-    Console.WriteLine(EventProvider.GetLastWriteEventError());  
+   Console.WriteLine(EventProvider.GetLastWriteEventError());  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If <paramref name="eventMessage" /> is <see langword="null" />.</exception>
@@ -653,12 +653,12 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
         <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method uses the activity ID set in the thread context to identify this component. To set the activity ID, call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method.  
-  
- If you use the <xref:System.Diagnostics.Trace> class, you do not use the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify the activity ID. Instead, access the <xref:System.Diagnostics.Trace.CorrelationManager%2A> property to get the <xref:System.Diagnostics.CorrelationManager> object. Then, set the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property to the activity ID. You must also set the `relatedActivityId` to a <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> value.  
-  
+The method uses the activity ID set in the thread context to identify this component. To set the activity ID, call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method.  
+ 
+If you use the <xref:System.Diagnostics.Trace> class, you do not use the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify the activity ID. Instead, access the <xref:System.Diagnostics.Trace.CorrelationManager%2A> property to get the <xref:System.Diagnostics.CorrelationManager> object. Then, set the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property to the activity ID. You must also set the `relatedActivityId` to a <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If <paramref name="eventPayload" /> contains too many objects or strings.</exception>
@@ -696,10 +696,10 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
         <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method uses the activity ID set in the thread context to identify this component. To set the activity ID, call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method.  
-  
+The method uses the activity ID set in the thread context to identify this component. To set the activity ID, call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -713,10 +713,10 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
         <summary>Writes an event that contains a string as its data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These methods do not require a manifest to consume the event.  
-  
+These methods do not require a manifest to consume the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -730,10 +730,10 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
         <summary>Writes an event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use these methods if you use a manifest to define your events.  
-  
+Use these methods if you use a manifest to define your events.  
+ 
  ]]></format>
         </remarks>
       </Docs>

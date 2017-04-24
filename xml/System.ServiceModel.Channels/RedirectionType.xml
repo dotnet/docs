@@ -32,10 +32,10 @@
         <value>The cache redirection type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A cache redirection indicates that the response from a previous request should be used. This corresponds with the HTTP status code 304 (Not Modified)  
-  
+A cache redirection indicates that the response from a previous request should be used. This corresponds with the HTTP status code 304 (Not Modified)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,10 +191,10 @@
         <value>The resource redirection type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A resource redirection indicates the requested resource has been relocated to the specified location(s). If one location is specified, then this maps to HTTP status code 301 (Moved Permanently) or 307 (Temporary Redirect), depending on the <xref:System.ServiceModel.Channels.RedirectionDuration> selected. If multiple locations are provided, then this maps to the 300 (Multiple Choices) HTTP status code. This is the default value for <xref:System.ServiceModel.Channels.RedirectionType>.  
-  
+A resource redirection indicates the requested resource has been relocated to the specified location(s). If one location is specified, then this maps to HTTP status code 301 (Moved Permanently) or 307 (Temporary Redirect), depending on the <xref:System.ServiceModel.Channels.RedirectionDuration> selected. If multiple locations are provided, then this maps to the 300 (Multiple Choices) HTTP status code. This is the default value for <xref:System.ServiceModel.Channels.RedirectionType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
         <value>The resource redirection type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A use intermediary redirection indicates the requested resource must be accessed through an intermediate service, for example, an HTTP proxy server. This corresponds to the HTTP status code 305 (Use Proxy)  
-  
+A use intermediary redirection indicates the requested resource must be accessed through an intermediate service, for example, an HTTP proxy server. This corresponds to the HTTP status code 305 (Use Proxy)  
+ 
  ]]></format>
         </remarks>
       </Docs>

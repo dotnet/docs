@@ -40,13 +40,13 @@
     <summary>Provides thread-local storage of data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use <xref:System.Threading.ThreadLocal%601>:  
-  
- [!code-csharp[System.Threading.ThreadLocal#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.threadlocal/cs/threadlocal.cs#01)]
- [!code-vb[System.Threading.ThreadLocal#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.threadlocal/vb/threadlocal.vb#01)]  
-  
+The following example shows how to use <xref:System.Threading.ThreadLocal%601>:  
+ 
+[!code-csharp[System.Threading.ThreadLocal#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.threadlocal/cs/threadlocal.cs#01)]
+[!code-vb[System.Threading.ThreadLocal#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.threadlocal/vb/threadlocal.vb#01)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>With the exception of <see cref="M:System.Threading.ThreadLocal`1.Dispose" />, all public and protected members of <see cref="T:System.Threading.ThreadLocal`1" /> are thread-safe and may be used concurrently from multiple threads. The value returned for the <see cref="P:System.Threading.ThreadLocal`1.Value" /> and <see cref="P:System.Threading.ThreadLocal`1.IsValueCreated" /> properties is specific for the thread on which the property is accessed.</threadsafe>
@@ -76,12 +76,12 @@
         <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of `T` is used to initialize the instance when <xref:System.Threading.ThreadLocal%601.Value%2A> is accessed for the first time.  
-  
- This constructor is equivalent to calling the <xref:System.Threading.ThreadLocal%601.%23ctor%28System.Boolean%29> constructor with a value of `false` for the `trackAllValues` argument.  
-  
+The default value of `T` is used to initialize the instance when <xref:System.Threading.ThreadLocal%601.Value%2A> is accessed for the first time.  
+ 
+This constructor is equivalent to calling the <xref:System.Threading.ThreadLocal%601.%23ctor%28System.Boolean%29> constructor with a value of `false` for the `trackAllValues` argument.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance and specifies whether all values are accessible from any thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `trackAllValues` is `false`, only the value of this instance for the current thread is accessible. Attempting to use the <xref:System.Threading.ThreadLocal%601.Values%2A> property to retrieve all values throws an <xref:System.InvalidOperationException> exception.  
-  
+If `trackAllValues` is `false`, only the value of this instance for the current thread is accessible. Attempting to use the <xref:System.Threading.ThreadLocal%601.Values%2A> property to retrieve all values throws an <xref:System.InvalidOperationException> exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance with the specified <paramref name="valueFactory" /> function and a flag that indicates whether all values are accessible from any thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `trackAllValues` is `false`, only the value of this instance for the current thread is accessible. Attempting to use the <xref:System.Threading.ThreadLocal%601.Values%2A> property to retrieve all values throws an <xref:System.InvalidOperationException> exception.  
-  
+If `trackAllValues` is `false`, only the value of this instance for the current thread is accessible. Attempting to use the <xref:System.Threading.ThreadLocal%601.Values%2A> property to retrieve all values throws an <xref:System.InvalidOperationException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -219,15 +219,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.ThreadLocal`1" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Threading.ThreadLocal%601>. The `Dispose` method leaves the <xref:System.Threading.ThreadLocal%601> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.ThreadLocal%601> so the garbage collector can reclaim the memory that the <xref:System.Threading.ThreadLocal%601> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Threading.ThreadLocal%601>. The `Dispose` method leaves the <xref:System.Threading.ThreadLocal%601> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.ThreadLocal%601> so the garbage collector can reclaim the memory that the <xref:System.Threading.ThreadLocal%601> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.ThreadLocal%601>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.ThreadLocal%601> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,10 +262,10 @@
         <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike most of the members of <xref:System.Threading.ThreadLocal%601>, this method is not thread-safe.  
-  
+Unlike most of the members of <xref:System.Threading.ThreadLocal%601>, this method is not thread-safe.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,10 +355,10 @@
         <returns>The result of calling <see cref="M:System.Object.ToString" /> on the <see cref="P:System.Threading.ThreadLocal`1.Value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method forces initialization for the current thread, as is the case with accessing <xref:System.Threading.ThreadLocal%601.Value%2A> directly.  
-  
+Calling this method forces initialization for the current thread, as is the case with accessing <xref:System.Threading.ThreadLocal%601.Value%2A> directly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
@@ -399,10 +399,10 @@
         <value>Returns an instance of the object that this ThreadLocal is responsible for initializing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this instance was not previously initialized for the current thread, accessing <xref:System.Threading.ThreadLocal%601.Value%2A> will attempt to initialize it. If an initialization function was supplied during the construction, that initialization will happen by invoking the function to retrieve the initial value for <xref:System.Threading.ThreadLocal%601.Value%2A>. Otherwise, the default value of will be used. If an exception is thrown, that exception is cached and thrown on each subsequent access of the property.  
-  
+If this instance was not previously initialized for the current thread, accessing <xref:System.Threading.ThreadLocal%601.Value%2A> will attempt to initialize it. If an initialization function was supplied during the construction, that initialization will happen by invoking the function to retrieve the initial value for <xref:System.Threading.ThreadLocal%601.Value%2A>. Otherwise, the default value of will be used. If an exception is thrown, that exception is cached and thrown on each subsequent access of the property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>

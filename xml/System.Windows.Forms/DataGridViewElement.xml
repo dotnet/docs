@@ -14,10 +14,10 @@
     <summary>Provides the base class for elements of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework supplies two specialized classes that derive from <xref:System.Windows.Forms.DataGridViewElement>: <xref:System.Windows.Forms.DataGridViewCell>, which represents individual elements, and <xref:System.Windows.Forms.DataGridViewBand>, which represents a series of grouped subelements.  
-  
+The .NET Framework supplies two specialized classes that derive from <xref:System.Windows.Forms.DataGridViewElement>: <xref:System.Windows.Forms.DataGridViewCell>, which represents individual elements, and <xref:System.Windows.Forms.DataGridViewBand>, which represents a series of grouped subelements.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.Windows.Forms.DataGridViewElement.DataGridView%2A> property to `null`.  
-  
+This constructor sets the <xref:System.Windows.Forms.DataGridViewElement.DataGridView%2A> property to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,10 +239,10 @@
         <value>A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values representing the state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The states specified by the <xref:System.Windows.Forms.DataGridViewElementStates> values are enforced by the UI but may be programmatically overruled.  
-  
+The states specified by the <xref:System.Windows.Forms.DataGridViewElementStates> values are enforced by the UI but may be programmatically overruled.  
+ 
  ]]></format>
         </remarks>
       </Docs>

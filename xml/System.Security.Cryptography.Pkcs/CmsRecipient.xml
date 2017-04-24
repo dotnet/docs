@@ -42,14 +42,14 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.CmsRecipient.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" /> constructor constructs an instance of the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> class by using the specified recipient certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Pkcs.CmsRecipient> class has the following default property values.  
-  
+The <xref:System.Security.Cryptography.Pkcs.CmsRecipient> class has the following default property values.  
+ 
 |Property|Default value|  
 |--------------|-------------------|  
 |<xref:System.Security.Cryptography.Pkcs.CmsRecipient.RecipientIdentifierType%2A>|<xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType>|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>

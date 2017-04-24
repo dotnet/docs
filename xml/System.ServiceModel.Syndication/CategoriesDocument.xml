@@ -18,10 +18,10 @@
     <summary>Represents a categories document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A categories document describes the categories allowed within a collection.  
-  
+A categories document describes the categories allowed within a collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <value>Returns <see cref="T:System.Collections.Generic.Dictionary`2" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications.  
-  
+An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,10 +158,10 @@
         <returns>Returns <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `isFixed` parameter is set to `true`, the categories contained within the categories document are immutable. If the `isFixed` parameter is set to `true`, additional categories can be added to the categories document.  
-  
+If the `isFixed` parameter is set to `true`, the categories contained within the categories document are immutable. If the `isFixed` parameter is set to `true`, additional categories can be added to the categories document.  
+ 
  ]]></format>
         </remarks>
       </Docs>

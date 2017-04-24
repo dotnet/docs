@@ -24,24 +24,24 @@
     <summary>Provides methods and properties for compressing and decompressing streams by using the Deflate algorithm.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class represents the Deflate algorithm, which is an industry-standard algorithm for lossless file compression and decompression. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.IO.Compression.DeflateStream> class uses the zlib library. As a result, it provides a better compression algorithm and, in most cases, a smaller compressed file than it provides in earlier versions of the .NET Framework.  
+This class represents the Deflate algorithm, which is an industry-standard algorithm for lossless file compression and decompression. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.IO.Compression.DeflateStream> class uses the zlib library. As a result, it provides a better compression algorithm and, in most cases, a smaller compressed file than it provides in earlier versions of the .NET Framework.  
+ 
+This class does not inherently provide functionality for adding files to or extracting files from zip archives. To work with zip archives, use the <xref:System.IO.Compression.ZipArchive> and the <xref:System.IO.Compression.ZipArchiveEntry> classes.  
+ 
+The <xref:System.IO.Compression.DeflateStream> class uses the same compression algorithm as the gzip data format used by the <xref:System.IO.Compression.GZipStream> class.  
+ 
+The compression functionality in <xref:System.IO.Compression.DeflateStream> and <xref:System.IO.Compression.GZipStream> is exposed as a stream. Data is read on a byte-by-byte basis, so it is not possible to perform multiple passes to determine the best method for compressing entire files or large blocks of data. The <xref:System.IO.Compression.DeflateStream> and <xref:System.IO.Compression.GZipStream> classes are best used on uncompressed sources of data. If the source data is already compressed, using these classes may actually increase the size of the stream.  
+ 
   
- This class does not inherently provide functionality for adding files to or extracting files from zip archives. To work with zip archives, use the <xref:System.IO.Compression.ZipArchive> and the <xref:System.IO.Compression.ZipArchiveEntry> classes.  
-  
- The <xref:System.IO.Compression.DeflateStream> class uses the same compression algorithm as the gzip data format used by the <xref:System.IO.Compression.GZipStream> class.  
-  
- The compression functionality in <xref:System.IO.Compression.DeflateStream> and <xref:System.IO.Compression.GZipStream> is exposed as a stream. Data is read on a byte-by-byte basis, so it is not possible to perform multiple passes to determine the best method for compressing entire files or large blocks of data. The <xref:System.IO.Compression.DeflateStream> and <xref:System.IO.Compression.GZipStream> classes are best used on uncompressed sources of data. If the source data is already compressed, using these classes may actually increase the size of the stream.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.IO.Compression.DeflateStream> class to compress and decompress a directory of files.  
-  
- [!code-csharp[IO.Compression.Deflate1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.Deflate1/CS/deflatetest.cs#1)]
- [!code-vb[IO.Compression.Deflate1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.Deflate1/VB/deflatetest.vb#1)]  
-  
+The following example shows how to use the <xref:System.IO.Compression.DeflateStream> class to compress and decompress a directory of files.  
+ 
+[!code-csharp[IO.Compression.Deflate1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.Deflate1/CS/deflatetest.cs#1)]
+[!code-vb[IO.Compression.Deflate1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.Deflate1/VB/deflatetest.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,20 +75,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.DeflateStream" /> class by using the specified stream and compression level.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use this constructor when you want to specify whether compression efficiency or speed is more important for an instance of the <xref:System.IO.Compression.DeflateStream> class.  
+You use this constructor when you want to specify whether compression efficiency or speed is more important for an instance of the <xref:System.IO.Compression.DeflateStream> class.  
+ 
+This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode>. To set the compression mode to another value, use the <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
+ 
   
- This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode>. To set the compression mode to another value, use the <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to set the compression level when creating a <xref:System.IO.Compression.DeflateStream> object.  
-  
- [!code-csharp[System.IO.Compression.DeflateStream#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.deflatestream/cs/program1.cs#1)]
- [!code-vb[System.IO.Compression.DeflateStream#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.deflatestream/vb/program1.vb#1)]  
-  
+The following example shows how to set the compression level when creating a <xref:System.IO.Compression.DeflateStream> object.  
+ 
+[!code-csharp[System.IO.Compression.DeflateStream#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.deflatestream/cs/program1.cs#1)]
+[!code-vb[System.IO.Compression.DeflateStream#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.deflatestream/vb/program1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -125,24 +125,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.DeflateStream" /> class by using the specified stream and compression mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, <xref:System.IO.Compression.DeflateStream> owns the underlying stream, so closing the stream also closes the underlying stream. Note that the state of the underlying stream can affect the usability of the stream. Also, no explicit checks are performed, so no additional exceptions are thrown when the new instance is created.  
+By default, <xref:System.IO.Compression.DeflateStream> owns the underlying stream, so closing the stream also closes the underlying stream. Note that the state of the underlying stream can affect the usability of the stream. Also, no explicit checks are performed, so no additional exceptions are thrown when the new instance is created.  
+ 
+If an instance of the <xref:System.IO.Compression.DeflateStream> class is created with the `mode` parameter equal to `Compress`, header information is inserted immediately. If no further action occurs, the stream appears as a valid, empty, compressed file.  
+ 
+Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB raises an exception.  
+ 
+By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel> when the compression mode is <xref:System.IO.Compression.CompressionMode>.  
+ 
   
- If an instance of the <xref:System.IO.Compression.DeflateStream> class is created with the `mode` parameter equal to `Compress`, header information is inserted immediately. If no further action occurs, the stream appears as a valid, empty, compressed file.  
-  
- Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB raises an exception.  
-  
- By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel> when the compression mode is <xref:System.IO.Compression.CompressionMode>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.IO.Compression.DeflateStream> class to compress and decompress a file.  
-  
- [!code-csharp[IO.Compression.Deflate1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.Deflate1/CS/deflatetest.cs#1)]
- [!code-vb[IO.Compression.Deflate1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.Deflate1/VB/deflatetest.vb#1)]  
-  
+The following example shows how to use the <xref:System.IO.Compression.DeflateStream> class to compress and decompress a file.  
+ 
+[!code-csharp[IO.Compression.Deflate1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.Deflate1/CS/deflatetest.cs#1)]
+[!code-vb[IO.Compression.Deflate1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.Deflate1/VB/deflatetest.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -191,20 +191,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.DeflateStream" /> class by using the specified stream and compression level, and optionally leaves the stream open.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use this constructor when you want to specify whether compression efficiency or speed is more important for an instance of the <xref:System.IO.Compression.DeflateStream> class, and whether to leave the stream object open after disposing the <xref:System.IO.Compression.DeflateStream> object.  
+You use this constructor when you want to specify whether compression efficiency or speed is more important for an instance of the <xref:System.IO.Compression.DeflateStream> class, and whether to leave the stream object open after disposing the <xref:System.IO.Compression.DeflateStream> object.  
+ 
+This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode>. To set the compression mode to another value, use the <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
+ 
   
- This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode>. To set the compression mode to another value, use the <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to set the compression level when creating a <xref:System.IO.Compression.DeflateStream> object and how to leave the stream open.  
-  
- [!code-csharp[System.IO.Compression.DeflateStream#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.deflatestream/cs/program2.cs#2)]
- [!code-vb[System.IO.Compression.DeflateStream#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.deflatestream/vb/program2.vb#2)]  
-  
+The following example shows how to set the compression level when creating a <xref:System.IO.Compression.DeflateStream> object and how to leave the stream open.  
+ 
+[!code-csharp[System.IO.Compression.DeflateStream#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.deflatestream/cs/program2.cs#2)]
+[!code-vb[System.IO.Compression.DeflateStream#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.deflatestream/vb/program2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -244,24 +244,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.DeflateStream" /> class by using the specified stream and compression mode, and optionally leaves the stream open.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, <xref:System.IO.Compression.DeflateStream> owns the underlying stream, so closing the stream also closes the underlying stream. Note that the state of the underlying stream can affect the usability of the stream. Also, no explicit checks are performed, so no additional exceptions are thrown when the new instance is created.  
+By default, <xref:System.IO.Compression.DeflateStream> owns the underlying stream, so closing the stream also closes the underlying stream. Note that the state of the underlying stream can affect the usability of the stream. Also, no explicit checks are performed, so no additional exceptions are thrown when the new instance is created.  
+ 
+If an instance of the <xref:System.IO.Compression.DeflateStream> class is created with the `mode` parameter equal to `Compress`, header information is inserted immediately. If no further action occurs, the stream appears as a valid, empty, compressed file.  
+ 
+Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB raises an exception.  
+ 
+By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel> when the compression mode is <xref:System.IO.Compression.CompressionMode>.  
+ 
   
- If an instance of the <xref:System.IO.Compression.DeflateStream> class is created with the `mode` parameter equal to `Compress`, header information is inserted immediately. If no further action occurs, the stream appears as a valid, empty, compressed file.  
-  
- Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB raises an exception.  
-  
- By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel> when the compression mode is <xref:System.IO.Compression.CompressionMode>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.IO.Compression.DeflateStream> class to compress and decompress a file.  
-  
- [!code-csharp[IO.Compression.Deflate1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.Deflate1/CS/deflatetest.cs#1)]
- [!code-vb[IO.Compression.Deflate1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.Deflate1/VB/deflatetest.vb#1)]  
-  
+The following code example shows how to use the <xref:System.IO.Compression.DeflateStream> class to compress and decompress a file.  
+ 
+[!code-csharp[IO.Compression.Deflate1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.Deflate1/CS/deflatetest.cs#1)]
+[!code-vb[IO.Compression.Deflate1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.Deflate1/VB/deflatetest.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -341,20 +341,20 @@
         <returns>An  object that represents the asynchronous read operation, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous read operations by using the <xref:System.IO.Stream.ReadAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.BeginRead%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
-  
- Pass the <xref:System.IAsyncResult> return value to the <xref:System.IO.Compression.DeflateStream.EndRead%2A> method of the stream to determine how many bytes were read and to release operating system resources used for reading. You can do this either by using the same code that called <xref:System.IO.Compression.DeflateStream.BeginRead%2A> or in a callback passed to <xref:System.IO.Compression.DeflateStream.BeginRead%2A>.  
-  
- The current position in the stream is updated when the asynchronous read or write operation is issued, not when the I/O operation completes.  
-  
- Multiple simultaneous asynchronous requests render the request completion order uncertain.  
-  
- Use the <xref:System.IO.Compression.DeflateStream.CanRead%2A> property to determine whether the current <xref:System.IO.Compression.DeflateStream> object supports reading.  
-  
- If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from <xref:System.IO.Compression.DeflateStream.BeginRead%2A>. Errors that occur during an asynchronous read request, such as a disk failure during the I/O request, occur on the thread pool thread and throw exceptions when calling <xref:System.IO.Compression.DeflateStream.EndRead%2A>.  
-  
+Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous read operations by using the <xref:System.IO.Stream.ReadAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.BeginRead%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
+ 
+Pass the <xref:System.IAsyncResult> return value to the <xref:System.IO.Compression.DeflateStream.EndRead%2A> method of the stream to determine how many bytes were read and to release operating system resources used for reading. You can do this either by using the same code that called <xref:System.IO.Compression.DeflateStream.BeginRead%2A> or in a callback passed to <xref:System.IO.Compression.DeflateStream.BeginRead%2A>.  
+ 
+The current position in the stream is updated when the asynchronous read or write operation is issued, not when the I/O operation completes.  
+ 
+Multiple simultaneous asynchronous requests render the request completion order uncertain.  
+ 
+Use the <xref:System.IO.Compression.DeflateStream.CanRead%2A> property to determine whether the current <xref:System.IO.Compression.DeflateStream> object supports reading.  
+ 
+If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from <xref:System.IO.Compression.DeflateStream.BeginRead%2A>. Errors that occur during an asynchronous read request, such as a disk failure during the I/O request, occur on the thread pool thread and throw exceptions when calling <xref:System.IO.Compression.DeflateStream.EndRead%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">The method tried to read asynchronously past the end of the stream, or a disk error occurred.</exception>
@@ -398,20 +398,20 @@
         <returns>An  object that represents the asynchronous write operation, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous write operations by using the <xref:System.IO.Stream.WriteAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
-  
- Pass the <xref:System.IAsyncResult> object returned by the current method to <xref:System.IO.Compression.DeflateStream.EndWrite%2A> to ensure that the write completes and frees resources appropriately. You can do this either by using the same code that called <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> or in a callback passed to <xref:System.IO.Compression.DeflateStream.BeginWrite%2A>. If an error occurs during an asynchronous write operation, an exception will not be thrown until <xref:System.IO.Compression.DeflateStream.EndWrite%2A> is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- If a stream is writable, writing at the end of the stream expands the stream.  
-  
- The current position in the stream is updated when you issue the asynchronous read or write operation, not when the I/O operation completes. Multiple simultaneous asynchronous requests render the request completion order uncertain.  
-  
- Use the <xref:System.IO.Compression.DeflateStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Compression.DeflateStream> object supports writing.  
-  
- If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from <xref:System.IO.Compression.DeflateStream.BeginWrite%2A>. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, occur on the thread pool thread and throw exceptions when calling <xref:System.IO.Compression.DeflateStream.EndWrite%2A>.  
-  
+Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous write operations by using the <xref:System.IO.Stream.WriteAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
+ 
+Pass the <xref:System.IAsyncResult> object returned by the current method to <xref:System.IO.Compression.DeflateStream.EndWrite%2A> to ensure that the write completes and frees resources appropriately. You can do this either by using the same code that called <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> or in a callback passed to <xref:System.IO.Compression.DeflateStream.BeginWrite%2A>. If an error occurs during an asynchronous write operation, an exception will not be thrown until <xref:System.IO.Compression.DeflateStream.EndWrite%2A> is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+If a stream is writable, writing at the end of the stream expands the stream.  
+ 
+The current position in the stream is updated when you issue the asynchronous read or write operation, not when the I/O operation completes. Multiple simultaneous asynchronous requests render the request completion order uncertain.  
+ 
+Use the <xref:System.IO.Compression.DeflateStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Compression.DeflateStream> object supports writing.  
+ 
+If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from <xref:System.IO.Compression.DeflateStream.BeginWrite%2A>. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, occur on the thread pool thread and throw exceptions when calling <xref:System.IO.Compression.DeflateStream.EndWrite%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">The method tried to write asynchronously past the end of the stream, or a disk error occurred.</exception>
@@ -539,12 +539,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.Compression.DeflateStream" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public <xref:System.ComponentModel.Component.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. <xref:System.ComponentModel.Component.Dispose%2A> invokes the protected <xref:System.IO.Compression.DeflateStream.Dispose%2A> method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.IO.Compression.DeflateStream.Dispose%2A> with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.Compression.DeflateStream> references. This method invokes the <xref:System.ComponentModel.Component.Dispose%2A> method of each referenced object.  
-  
+This method is called by the public <xref:System.ComponentModel.Component.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. <xref:System.ComponentModel.Component.Dispose%2A> invokes the protected <xref:System.IO.Compression.DeflateStream.Dispose%2A> method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.IO.Compression.DeflateStream.Dispose%2A> with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.Compression.DeflateStream> references. This method invokes the <xref:System.ComponentModel.Component.Dispose%2A> method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -581,14 +581,14 @@
         <returns>The number of bytes read from the stream, between 0 (zero) and the number of bytes you requested. <see cref="T:System.IO.Compression.DeflateStream" /> returns 0 only at the end of the stream; otherwise, it blocks until at least one byte is available.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous read operations by using the <xref:System.IO.Stream.ReadAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.EndRead%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
-  
- Call this method to determine how many bytes were read from the stream. This method can be called once to return the amount of bytes read between calls to <xref:System.IO.Compression.DeflateStream.BeginRead%2A> and <xref:System.IO.Compression.DeflateStream.EndRead%2A>.  
-  
- This method blocks until the I/O operation has completed.  
-  
+Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous read operations by using the <xref:System.IO.Stream.ReadAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.EndRead%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
+ 
+Call this method to determine how many bytes were read from the stream. This method can be called once to return the amount of bytes read between calls to <xref:System.IO.Compression.DeflateStream.BeginRead%2A> and <xref:System.IO.Compression.DeflateStream.EndRead%2A>.  
+ 
+This method blocks until the I/O operation has completed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -624,14 +624,14 @@
         <summary>Ends an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead; see the Remarks section.)</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous write operations by using the <xref:System.IO.Stream.WriteAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.EndWrite%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
-  
- <xref:System.IO.Compression.DeflateStream.EndWrite%2A> must be called only once for every call to the <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> method.  
-  
- This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, occur on the thread pool thread and become visible upon a call to <xref:System.IO.Compression.DeflateStream.EndWrite%2A>. Exceptions thrown by the thread pool thread will not be visible when calling <xref:System.IO.Compression.DeflateStream.EndWrite%2A>.  
-  
+Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can perform asynchronous write operations by using the <xref:System.IO.Stream.WriteAsync%2A> method. The <xref:System.IO.Compression.DeflateStream.EndWrite%2A> method is still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, you can implement asynchronous I/O operations more easily by using the new async methods. For more information, see .  
+ 
+<xref:System.IO.Compression.DeflateStream.EndWrite%2A> must be called only once for every call to the <xref:System.IO.Compression.DeflateStream.BeginWrite%2A> method.  
+ 
+This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, occur on the thread pool thread and become visible upon a call to <xref:System.IO.Compression.DeflateStream.EndWrite%2A>. Exceptions thrown by the thread pool thread will not be visible when calling <xref:System.IO.Compression.DeflateStream.EndWrite%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -669,10 +669,10 @@
         <summary>The current implementation of this method has no functionality.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current implementation of this method does not flush the internal buffer. The internal buffer is flushed when the object is disposed.  
-  
+The current implementation of this method does not flush the internal buffer. The internal buffer is flushed when the object is disposed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
@@ -771,13 +771,13 @@
         <returns>The number of bytes that were read into the byte array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to compress and decompress bytes by using the <xref:System.IO.Compression.DeflateStream.Read%2A> and <xref:System.IO.Compression.DeflateStream.Write%2A> methods.  
-  
- [!code-csharp[System.IO.Compression.DeflateStream#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.deflatestream/cs/program3.cs#3)]
- [!code-vb[System.IO.Compression.DeflateStream#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.deflatestream/vb/program3.vb#3)]  
-  
+The following example shows how to compress and decompress bytes by using the <xref:System.IO.Compression.DeflateStream.Read%2A> and <xref:System.IO.Compression.DeflateStream.Write%2A> methods.  
+ 
+[!code-csharp[System.IO.Compression.DeflateStream#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.deflatestream/cs/program3.cs#3)]
+[!code-vb[System.IO.Compression.DeflateStream#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.deflatestream/vb/program3.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -926,13 +926,13 @@
         <summary>Writes compressed bytes to the underlying stream from the specified byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to compress and decompress bytes by using the <xref:System.IO.Compression.DeflateStream.Read%2A> and <xref:System.IO.Compression.DeflateStream.Write%2A> methods.  
-  
- [!code-csharp[System.IO.Compression.DeflateStream#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.deflatestream/cs/program3.cs#3)]
- [!code-vb[System.IO.Compression.DeflateStream#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.deflatestream/vb/program3.vb#3)]  
-  
+The following example shows how to compress and decompress bytes by using the <xref:System.IO.Compression.DeflateStream.Read%2A> and <xref:System.IO.Compression.DeflateStream.Write%2A> methods.  
+ 
+[!code-csharp[System.IO.Compression.DeflateStream#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.deflatestream/cs/program3.cs#3)]
+[!code-vb[System.IO.Compression.DeflateStream#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.deflatestream/vb/program3.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -975,10 +975,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.DeflateStream" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB will cause an exception.  
-  
+Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB will cause an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -22,21 +22,21 @@
     <summary>Represents a statement that removes an event handler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeRemoveEventStatement> can be used to represent a statement that removes an event handler for an event.  
+<xref:System.CodeDom.CodeRemoveEventStatement> can be used to represent a statement that removes an event handler for an event.  
+ 
+The <xref:System.CodeDom.CodeRemoveEventStatement.Event%2A> property specifies the event to remove the event handler from. The <xref:System.CodeDom.CodeRemoveEventStatement.Listener%2A> property specifies the event handler to remove.  
+ 
   
- The <xref:System.CodeDom.CodeRemoveEventStatement.Event%2A> property specifies the event to remove the event handler from. The <xref:System.CodeDom.CodeRemoveEventStatement.Listener%2A> property specifies the event handler to remove.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of a <xref:System.CodeDom.CodeRemoveEventStatement> to remove a delegate from an event.  
-  
- [!code-cpp[CodeRemoveEventExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeRemoveEventExample/CPP/coderemoveeventexample.cpp#2)]
- [!code-csharp[CodeRemoveEventExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeRemoveEventExample/CS/coderemoveeventexample.cs#2)]
- [!code-vb[CodeRemoveEventExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeRemoveEventExample/VB/coderemoveeventexample.vb#2)]  
-  
+The following example demonstrates use of a <xref:System.CodeDom.CodeRemoveEventStatement> to remove a delegate from an event.  
+ 
+[!code-cpp[CodeRemoveEventExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeRemoveEventExample/CPP/coderemoveeventexample.cpp#2)]
+[!code-csharp[CodeRemoveEventExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeRemoveEventExample/CS/coderemoveeventexample.cs#2)]
+[!code-vb[CodeRemoveEventExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeRemoveEventExample/VB/coderemoveeventexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

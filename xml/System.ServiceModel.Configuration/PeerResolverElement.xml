@@ -53,10 +53,10 @@
           <see cref="T:System.ServiceModel.Configuration.PeerCustomResolverElement" /> that contains the configuration element for the peer resolver if it is a custom peer resolver implementation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains an instance of <xref:System.ServiceModel.Configuration.PeerCustomResolverElement> if the <xref:System.ServiceModel.Configuration.PeerResolverElement.Mode%2A> property is set to <xref:System.ServiceModel.PeerResolvers.PeerResolverMode>.  
-  
+This property contains an instance of <xref:System.ServiceModel.Configuration.PeerCustomResolverElement> if the <xref:System.ServiceModel.Configuration.PeerResolverElement.Mode%2A> property is set to <xref:System.ServiceModel.PeerResolvers.PeerResolverMode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

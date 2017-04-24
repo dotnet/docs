@@ -17,22 +17,22 @@
     <summary>Holds a collection of <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create and manipulate validation errors and a validation error collection as part of a custom validation routine.  
-  
- This code example is part of the Send E-mail SDK sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
-  
- [!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
- [!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
-  
+The following example shows how to create and manipulate validation errors and a validation error collection as part of a custom validation routine.  
+ 
+This code example is part of the Send E-mail SDK sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ 
+[!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
+[!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,15 +51,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
-  
- This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
-  
- [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
- [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
-  
+The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+ 
+This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ 
+[!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+[!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,15 +101,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class by using a <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
-  
- This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
-  
- [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
- [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
-  
+The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+ 
+This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ 
+[!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+[!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,20 +155,20 @@
           <see langword="true" /> if the activity has generated validation errors; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an <xref:System.Workflow.ComponentModel.Activity> has generated a warning, the warning is considered an error in the context of this property.  
+If an <xref:System.Workflow.ComponentModel.Activity> has generated a warning, the warning is considered an error in the context of this property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
-  
- This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
-  
- [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
- [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
-  
+The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+ 
+This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ 
+[!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+[!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,15 +266,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
-  
- This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
-  
- [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
- [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
-  
+The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+ 
+This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ 
+[!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+[!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

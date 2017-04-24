@@ -24,10 +24,10 @@
     <summary>The exception that is thrown when an error occurs while retrieving network information.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Types in the <xref:System.Net.NetworkInformation> namespace throw this exception when a call to a `Win32` function fails. The <xref:System.Net.NetworkInformation.NetworkInformationException.ErrorCode%2A> property contains the result returned by the function.  
-  
+Types in the <xref:System.Net.NetworkInformation> namespace throw this exception when a call to a `Win32` function fails. The <xref:System.Net.NetworkInformation.NetworkInformationException.ErrorCode%2A> property contains the result returned by the function.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInformationException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.Net.NetworkInformation.NetworkInformationException.ErrorCode%2A> property to the most recent `Win32` error.  
-  
+This constructor sets the <xref:System.Net.NetworkInformation.NetworkInformationException.ErrorCode%2A> property to the most recent `Win32` error.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInformationException" /> class with the specified error code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the value of the <xref:System.Net.NetworkInformation.NetworkInformationException.ErrorCode%2A> property to `errorCode`.  
-  
+This constructor sets the value of the <xref:System.Net.NetworkInformation.NetworkInformationException.ErrorCode%2A> property to `errorCode`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInformationException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used by the system to create a <xref:System.Net.NetworkInformation.NetworkInformationException> instance from serialized data.  
-  
+This constructor is used by the system to create a <xref:System.Net.NetworkInformation.NetworkInformationException> instance from serialized data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>An <see cref="T:System.Int32" /> value that contains the <see langword="Win32" /> error code.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is set by the constructor. This property is overridden to return a `Win32` error code instead of an HRESULT value.  
-  
+The value of this property is set by the constructor. This property is overridden to return a `Win32` error code instead of an HRESULT value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

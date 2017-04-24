@@ -89,10 +89,10 @@
         <value>Metadata for model properties for which model binding was attempted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If binding fails for a property, the entry's value will be `null`. If binding is not attempted for a property, the dictionary will not contain an entry for that property.  
-  
+If binding fails for a property, the entry's value will be `null`. If binding is not attempted for a property, the dictionary will not contain an entry for that property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

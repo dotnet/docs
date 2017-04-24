@@ -90,10 +90,10 @@
         <summary>Called by the <see cref="M:System.Diagnostics.SymbolStore.SymBinder.Dispose" /> and <see cref="M:System.Diagnostics.SymbolStore.SymBinder.Finalize" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymBinder" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymBinder.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymBinder.Finalize%2A> methods; do not call this method directly.  
-  
+This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymBinder.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymBinder.Finalize%2A> methods; do not call this method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
         <summary>Releases the resources held by the current instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
+This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,13 +153,13 @@
         <returns>The interface that reads the debugging symbols.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When given a pointer to a metadata interface, a file name, and a search path, the <xref:System.Diagnostics.SymbolStore.SymBinder.GetReader%2A> method returns the <xref:System.Diagnostics.SymbolStore.ISymbolReader> interface that reads the debugging symbols associated with the module.  
-  
+When given a pointer to a metadata interface, a file name, and a search path, the <xref:System.Diagnostics.SymbolStore.SymBinder.GetReader%2A> method returns the <xref:System.Diagnostics.SymbolStore.ISymbolReader> interface that reads the debugging symbols associated with the module.  
+ 
 > [!NOTE]
 >  Using a 32-bit integer as a pointer is not recommended. Use the <xref:System.Diagnostics.SymbolStore.SymBinder.GetReader%2A> overload instead.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -190,10 +190,10 @@
         <returns>The interface that reads the debugging symbols.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When given a pointer to a metadata interface, a file name, and a search path, the <xref:System.Diagnostics.SymbolStore.SymBinder.GetReader%2A> method returns the <xref:System.Diagnostics.SymbolStore.ISymbolReader> interface that reads the debugging symbols associated with the module.  
-  
+When given a pointer to a metadata interface, a file name, and a search path, the <xref:System.Diagnostics.SymbolStore.SymBinder.GetReader%2A> method returns the <xref:System.Diagnostics.SymbolStore.ISymbolReader> interface that reads the debugging symbols associated with the module.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>

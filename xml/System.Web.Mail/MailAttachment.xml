@@ -37,16 +37,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Mail.MailAttachment" /> class with the specified file name for the attachment. Sets the <see cref="T:System.Text.Encoding" /> property to <see cref="F:System.Web.Mail.MailEncoding.UUEncode" /> by default. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The mail attachment file is locked while the mail is being sent.  
+The mail attachment file is locked while the mail is being sent.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[SystemWebMailMailAttachment#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebMailMailAttachment/CS/systemwebmailmailattachment.cs#1)]
- [!code-vb[SystemWebMailMailAttachment#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebMailMailAttachment/VB/systemwebmailmailattachment.vb#1)]  
-  
+[!code-csharp[SystemWebMailMailAttachment#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebMailMailAttachment/CS/systemwebmailmailattachment.cs#1)]
+[!code-vb[SystemWebMailMailAttachment#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebMailMailAttachment/VB/systemwebmailmailattachment.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

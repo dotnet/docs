@@ -25,12 +25,12 @@
     <summary>Provides a custom constructor for uniform resource identifiers (URIs) and modifies URIs for the <see cref="T:System.Uri" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder> class provides a convenient way to modify the contents of a <xref:System.Uri> instance without creating a new <xref:System.Uri> instance for each modification.  
-  
- The <xref:System.UriBuilder> properties provide read/write access to the read-only <xref:System.Uri> properties so that they can be modified.  
-  
+The <xref:System.UriBuilder> class provides a convenient way to modify the contents of a <xref:System.Uri> instance without creating a new <xref:System.Uri> instance for each modification.  
+ 
+The <xref:System.UriBuilder> properties provide read/write access to the read-only <xref:System.Uri> properties so that they can be modified.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriBuilder" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor creates a new instance of the <xref:System.UriBuilder> class with its properties initialized as follows.  
-  
+The default constructor creates a new instance of the <xref:System.UriBuilder> class with its properties initialized as follows.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |Fragment|<xref:System.String.Empty>|  
@@ -74,7 +74,7 @@
 |Query|<xref:System.String.Empty>|  
 |Scheme|"http"|  
 |UserName|<xref:System.String.Empty>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,12 +107,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriBuilder" /> class with the specified URI.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new instance of the <xref:System.UriBuilder> class with the <xref:System.UriBuilder.Fragment%2A>, <xref:System.UriBuilder.Host%2A>, <xref:System.UriBuilder.Path%2A>, <xref:System.UriBuilder.Port%2A>, <xref:System.UriBuilder.Query%2A>, <xref:System.UriBuilder.Scheme%2A>, and <xref:System.UriBuilder.Uri%2A> properties set as specified in `uri`.  
-  
- If `uri` does not specify a scheme, the scheme defaults to "http:".  
-  
+This constructor initializes a new instance of the <xref:System.UriBuilder> class with the <xref:System.UriBuilder.Fragment%2A>, <xref:System.UriBuilder.Host%2A>, <xref:System.UriBuilder.Path%2A>, <xref:System.UriBuilder.Port%2A>, <xref:System.UriBuilder.Query%2A>, <xref:System.UriBuilder.Scheme%2A>, and <xref:System.UriBuilder.Uri%2A> properties set as specified in `uri`.  
+ 
+If `uri` does not specify a scheme, the scheme defaults to "http:".  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -168,10 +168,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriBuilder" /> class with the specified <see cref="T:System.Uri" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new instance of the <xref:System.UriBuilder> class with the <xref:System.UriBuilder.Fragment%2A>, <xref:System.UriBuilder.Host%2A>, <xref:System.UriBuilder.Path%2A>, <xref:System.UriBuilder.Port%2A>, <xref:System.UriBuilder.Query%2A>, <xref:System.UriBuilder.Scheme%2A>, and <xref:System.UriBuilder.Uri%2A> properties set as specified in `uri`.  
-  
+This constructor initializes a new instance of the <xref:System.UriBuilder> class with the <xref:System.UriBuilder.Fragment%2A>, <xref:System.UriBuilder.Host%2A>, <xref:System.UriBuilder.Path%2A>, <xref:System.UriBuilder.Port%2A>, <xref:System.UriBuilder.Query%2A>, <xref:System.UriBuilder.Scheme%2A>, and <xref:System.UriBuilder.Uri%2A> properties set as specified in `uri`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -208,19 +208,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriBuilder" /> class with the specified scheme and host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder> instance is initialized with the <xref:System.UriBuilder.Scheme%2A> property set to `schemeName` and the <xref:System.UriBuilder.Host%2A> property set to `hostName`. <xref:System.UriBuilder.Port%2A> is initialized to the value -1 to indicate the default port for the scheme should be used, and the <xref:System.UriBuilder.Path%2A> property is set to the slash character (/).  
+The <xref:System.UriBuilder> instance is initialized with the <xref:System.UriBuilder.Scheme%2A> property set to `schemeName` and the <xref:System.UriBuilder.Host%2A> property set to `hostName`. <xref:System.UriBuilder.Port%2A> is initialized to the value -1 to indicate the default port for the scheme should be used, and the <xref:System.UriBuilder.Path%2A> property is set to the slash character (/).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.UriBuilder> instance that contains the URI http://www.contoso.com/.  
-  
- [!code-cpp[Classic UriBuilder.UriBuilder3 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder3 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic UriBuilder.UriBuilder3 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder3 Example/CS/source.cs#1)]
- [!code-vb[Classic UriBuilder.UriBuilder3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder3 Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.UriBuilder> instance that contains the URI http://www.contoso.com/.  
+ 
+[!code-cpp[Classic UriBuilder.UriBuilder3 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder3 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic UriBuilder.UriBuilder3 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder3 Example/CS/source.cs#1)]
+[!code-vb[Classic UriBuilder.UriBuilder3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder3 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,21 +257,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriBuilder" /> class with the specified scheme, host, and port.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder> instance is initialized with the <xref:System.UriBuilder.Scheme%2A> property set to `schemeName`, the <xref:System.UriBuilder.Host%2A> property set to `hostName`, and the <xref:System.UriBuilder.Port%2A> property set to `portNumber`. The <xref:System.UriBuilder.Path%2A> property is set to the slash character (/).  
+The <xref:System.UriBuilder> instance is initialized with the <xref:System.UriBuilder.Scheme%2A> property set to `schemeName`, the <xref:System.UriBuilder.Host%2A> property set to `hostName`, and the <xref:System.UriBuilder.Port%2A> property set to `portNumber`. The <xref:System.UriBuilder.Path%2A> property is set to the slash character (/).  
+ 
+If the `portNumber` is set to a value of -1, this indicates that the default port value for the `scheme` will be used to connect to the `host`.  
+ 
   
- If the `portNumber` is set to a value of -1, this indicates that the default port value for the `scheme` will be used to connect to the `host`.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.UriBuilder> instance that contains the URI http://www.contoso.com:8080/.  
-  
- [!code-cpp[Classic UriBuilder.UriBuilder4 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder4 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic UriBuilder.UriBuilder4 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder4 Example/CS/source.cs#1)]
- [!code-vb[Classic UriBuilder.UriBuilder4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder4 Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.UriBuilder> instance that contains the URI http://www.contoso.com:8080/.  
+ 
+[!code-cpp[Classic UriBuilder.UriBuilder4 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder4 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic UriBuilder.UriBuilder4 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder4 Example/CS/source.cs#1)]
+[!code-vb[Classic UriBuilder.UriBuilder4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder4 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -312,21 +312,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriBuilder" /> class with the specified scheme, host, port number, and path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder> instance is initialized with the <xref:System.UriBuilder.Scheme%2A> property set to `schemeName`, the <xref:System.UriBuilder.Host%2A> property set to `hostName`, the <xref:System.UriBuilder.Port%2A> property set to `portNumber` and the <xref:System.UriBuilder.Path%2A> property set to `pathValue`.  
+The <xref:System.UriBuilder> instance is initialized with the <xref:System.UriBuilder.Scheme%2A> property set to `schemeName`, the <xref:System.UriBuilder.Host%2A> property set to `hostName`, the <xref:System.UriBuilder.Port%2A> property set to `portNumber` and the <xref:System.UriBuilder.Path%2A> property set to `pathValue`.  
+ 
+If the `portNumber` is set to a value of -1, this indicates that the default port value for the `scheme` will be used to connect to the `host`.  
+ 
   
- If the `portNumber` is set to a value of -1, this indicates that the default port value for the `scheme` will be used to connect to the `host`.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.UriBuilder> instance that contains the URI http://www.contoso.com:8080/index.htm.  
-  
- [!code-cpp[Classic UriBuilder.UriBuilder5 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder5 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic UriBuilder.UriBuilder5 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder5 Example/CS/source.cs#1)]
- [!code-vb[Classic UriBuilder.UriBuilder5 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder5 Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.UriBuilder> instance that contains the URI http://www.contoso.com:8080/index.htm.  
+ 
+[!code-cpp[Classic UriBuilder.UriBuilder5 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder5 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic UriBuilder.UriBuilder5 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder5 Example/CS/source.cs#1)]
+[!code-vb[Classic UriBuilder.UriBuilder5 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder5 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -369,21 +369,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriBuilder" /> class with the specified scheme, host, port number, path and query string or fragment identifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder> instance is initialized with the <xref:System.UriBuilder.Scheme%2A> property set to `schemeName`, the <xref:System.UriBuilder.Host%2A> property set to `hostName`, the <xref:System.UriBuilder.Port%2A> property set to `portNumber`, and the <xref:System.UriBuilder.Path%2A> property is set to `pathValue`. If `extraValue` begins with a number sign (#), then <xref:System.UriBuilder.Fragment%2A> is set to `extraValue`. If `extraValue` begins with a question mark (?), then <xref:System.UriBuilder.Query%2A> is set to `extraValue`.  
+The <xref:System.UriBuilder> instance is initialized with the <xref:System.UriBuilder.Scheme%2A> property set to `schemeName`, the <xref:System.UriBuilder.Host%2A> property set to `hostName`, the <xref:System.UriBuilder.Port%2A> property set to `portNumber`, and the <xref:System.UriBuilder.Path%2A> property is set to `pathValue`. If `extraValue` begins with a number sign (#), then <xref:System.UriBuilder.Fragment%2A> is set to `extraValue`. If `extraValue` begins with a question mark (?), then <xref:System.UriBuilder.Query%2A> is set to `extraValue`.  
+ 
+If the `portNumber` is set to a value of -1, this indicates that the default port value for the `scheme` will be used to connect to the `host`.  
+ 
   
- If the `portNumber` is set to a value of -1, this indicates that the default port value for the `scheme` will be used to connect to the `host`.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.UriBuilder> instance that contains the URI http://www.contoso.com:8080/index.htm#top.  
-  
- [!code-cpp[Classic UriBuilder.UriBuilder6 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder6 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic UriBuilder.UriBuilder6 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder6 Example/CS/source.cs#1)]
- [!code-vb[Classic UriBuilder.UriBuilder6 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder6 Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.UriBuilder> instance that contains the URI http://www.contoso.com:8080/index.htm#top.  
+ 
+[!code-cpp[Classic UriBuilder.UriBuilder6 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder6 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic UriBuilder.UriBuilder6 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder6 Example/CS/source.cs#1)]
+[!code-vb[Classic UriBuilder.UriBuilder6 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.UriBuilder6 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -425,10 +425,10 @@
           <see langword="true" /> if <paramref name="rparam" /> represents the same <see cref="T:System.Uri" /> as the <see cref="T:System.Uri" /> constructed by this <see cref="T:System.UriBuilder" /> instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder.Equals%2A> method compares a specified <xref:System.Uri> instance with the <xref:System.Uri> instance built by the <xref:System.UriBuilder> instance. If the two are the same, the <xref:System.UriBuilder.Equals%2A> method returns `true`.  
-  
+The <xref:System.UriBuilder.Equals%2A> method compares a specified <xref:System.Uri> instance with the <xref:System.Uri> instance built by the <xref:System.UriBuilder> instance. If the two are the same, the <xref:System.UriBuilder.Equals%2A> method returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,21 +461,21 @@
         <value>The fragment portion of the URI. The fragment identifier ("#") is added to the beginning of the fragment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder.Fragment%2A> property contains any text following a fragment marker (#) in the URI, including the marker itself. When setting the <xref:System.UriBuilder.Fragment%2A> property, the fragment marker is added to its value. **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=fullName> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
+The <xref:System.UriBuilder.Fragment%2A> property contains any text following a fragment marker (#) in the URI, including the marker itself. When setting the <xref:System.UriBuilder.Fragment%2A> property, the fragment marker is added to its value. **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=fullName> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
+ 
+**Note** Do not append a string directly to this property. If the length of <xref:System.UriBuilder.Fragment%2A> is greater than 1, retrieve the property value as a string, remove the leading pound sign, append the new query string, and set the property with the combined string.  
+ 
   
- **Note** Do not append a string directly to this property. If the length of <xref:System.UriBuilder.Fragment%2A> is greater than 1, retrieve the property value as a string, remove the leading pound sign, append the new query string, and set the property with the combined string.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates the URI "http://www.contoso.com/index.htm#main".  
-  
- [!code-cpp[Classic UriBuilder.Fragment Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.Fragment Example/CPP/source.cpp#1)]
- [!code-csharp[Classic UriBuilder.Fragment Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.Fragment Example/CS/source.cs#1)]
- [!code-vb[Classic UriBuilder.Fragment Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.Fragment Example/VB/source.vb#1)]  
-  
+The following example creates the URI "http://www.contoso.com/index.htm#main".  
+ 
+[!code-cpp[Classic UriBuilder.Fragment Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UriBuilder.Fragment Example/CPP/source.cpp#1)]
+[!code-csharp[Classic UriBuilder.Fragment Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UriBuilder.Fragment Example/CS/source.cs#1)]
+[!code-vb[Classic UriBuilder.Fragment Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic UriBuilder.Fragment Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -509,14 +509,14 @@
         <returns>The hash code generated for the URI.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash code is generated without including any fragment. The URIs http://www.contoso.com/index.htm#search and http://www.contoso.com/index.htm generate the same hash code.  
-  
- The hash codes for <xref:System.Uri> A and B are guaranteed to be the same when A.Equals(B) is `true`.  
-  
- This method implements <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
-  
+The hash code is generated without including any fragment. The URIs http://www.contoso.com/index.htm#search and http://www.contoso.com/index.htm generate the same hash code.  
+ 
+The hash codes for <xref:System.Uri> A and B are guaranteed to be the same when A.Equals(B) is `true`.  
+ 
+This method implements <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -549,10 +549,10 @@
         <value>The DNS host name or IP address of the server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder.Host%2A> property contains the fully qualified DNS host name or IP address of the server.  
-  
+The <xref:System.UriBuilder.Host%2A> property contains the fully qualified DNS host name or IP address of the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -614,12 +614,12 @@
         <value>The path to the resource referenced by the URI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder.Path%2A> property contains the path information that the server uses to resolve requests for information. Typically this is the path to the desired information on the server's file system; although it also can indicate the application or script that the server must run to provide the information.  
-  
- The path information does not include the scheme, host name, or query portion of the URI. The <xref:System.UriBuilder.Path%2A> property always returns at least a slash (/).  
-  
+The <xref:System.UriBuilder.Path%2A> property contains the path information that the server uses to resolve requests for information. Typically this is the path to the desired information on the server's file system; although it also can indicate the application or script that the server must run to provide the information.  
+ 
+The path information does not include the scheme, host name, or query portion of the URI. The <xref:System.UriBuilder.Path%2A> property always returns at least a slash (/).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -652,10 +652,10 @@
         <value>The port number of the URI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The port number defines the protocol port for contacting the host referenced in the URI. If a port is not specified as part of the URI, the <xref:System.Uri.Port%2A> property returns the value of -1 to indicate that the default port value for the protocol scheme will be used to connect to the host. If the <xref:System.Uri.Port%2A> property is set to a value of -1, this indicates that the default port value for the protocol scheme will be used to connect to the host.  
-  
+The port number defines the protocol port for contacting the host referenced in the URI. If a port is not specified as part of the URI, the <xref:System.Uri.Port%2A> property returns the value of -1 to indicate that the default port value for the protocol scheme will be used to connect to the host. If the <xref:System.Uri.Port%2A> property is set to a value of -1, this indicates that the default port value for the protocol scheme will be used to connect to the host.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The port cannot be set to a value less than -1 or greater than 65,535.</exception>
@@ -689,24 +689,24 @@
         <value>The query information included in the URI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Uri.Query%2A> property contains any query information included in the URI. Query information is separated from the path information by a question mark (?) and continues to the end of the URI. The query information returned includes the leading question mark.  
+The <xref:System.Uri.Query%2A> property contains any query information included in the URI. Query information is separated from the path information by a question mark (?) and continues to the end of the URI. The query information returned includes the leading question mark.  
+ 
+The query information is escaped according to RFC 2396.  
+ 
+**Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=fullName> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
+ 
+**Note** Do not append a string directly to this property. If the length of <xref:System.UriBuilder.Query%2A> is greater than 1, retrieve the property value as a string, remove the leading question mark, append the new query string, and set the property with the combined string.  
+ 
   
- The query information is escaped according to RFC 2396.  
-  
- **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=fullName> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
-  
- **Note** Do not append a string directly to this property. If the length of <xref:System.UriBuilder.Query%2A> is greater than 1, retrieve the property value as a string, remove the leading question mark, append the new query string, and set the property with the combined string.  
-  
-   
-  
+ 
 ## Examples  
- The following example sets the <xref:System.UriBuilder.Query%2A> property.  
-  
- [!code-cpp[UriBuilderSample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/UriBuilderSample/cpp/main.cpp#1)]
- [!code-csharp[UriBuilderSample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/UriBuilderSample/cs/main.cs#1)]  
-  
+The following example sets the <xref:System.UriBuilder.Query%2A> property.  
+ 
+[!code-cpp[UriBuilderSample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/UriBuilderSample/cpp/main.cpp#1)]
+[!code-csharp[UriBuilderSample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/UriBuilderSample/cs/main.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -739,10 +739,10 @@
         <value>The scheme of the URI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table lists the valid scheme names for the <xref:System.UriBuilder.Scheme%2A> property.  
-  
+The following table lists the valid scheme names for the <xref:System.UriBuilder.Scheme%2A> property.  
+ 
 |Scheme|Description|  
 |------------|-----------------|  
 |file|The resource is a file on the local computer.|  
@@ -752,7 +752,7 @@
 |https|The resource is accessed through SSL-encrypted HTTP.|  
 |mailto|The resource is an e-mail address and is accessed through SMTP.|  
 |news|The resource is accessed through NNTP.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The scheme cannot be set to an invalid scheme name.</exception>
@@ -787,12 +787,12 @@
         <returns>The string that contains the unescaped display string of the <see cref="T:System.UriBuilder" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The display string contains the <xref:System.UriBuilder.Port%2A> property value if the <xref:System.UriBuilder.Port%2A> property was set or the port was specified when the <xref:System.UriBuilder> was constructed using of the <xref:System.UriBuilder.%23ctor%2A> methods that accept a port number parameter except for the case when the <xref:System.UriBuilder.Port%2A>.property value was set to a value of -1 to indicate the default port.  
-  
- The display string does not contain the <xref:System.UriBuilder.Port%2A> property value if the <xref:System.UriBuilder.Port%2A> property was not set and a port was not specified when the <xref:System.UriBuilder> was constructed. The display string also does not contain the <xref:System.UriBuilder.Port%2A> property value if the <xref:System.UriBuilder.Port%2A> property or port number for the constructor was set to a value of -1.  
-  
+The display string contains the <xref:System.UriBuilder.Port%2A> property value if the <xref:System.UriBuilder.Port%2A> property was set or the port was specified when the <xref:System.UriBuilder> was constructed using of the <xref:System.UriBuilder.%23ctor%2A> methods that accept a port number parameter except for the case when the <xref:System.UriBuilder.Port%2A>.property value was set to a value of -1 to indicate the default port.  
+ 
+The display string does not contain the <xref:System.UriBuilder.Port%2A> property value if the <xref:System.UriBuilder.Port%2A> property was not set and a port was not specified when the <xref:System.UriBuilder> was constructed. The display string also does not contain the <xref:System.UriBuilder.Port%2A> property value if the <xref:System.UriBuilder.Port%2A> property or port number for the constructor was set to a value of -1.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UriFormatException">
@@ -834,10 +834,10 @@
         <value>A <see cref="T:System.Uri" /> that contains the URI constructed by the <see cref="T:System.UriBuilder" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.UriBuilder.Uri%2A> property contains the <xref:System.Uri> created by the <xref:System.UriBuilder>. Any changes made to the <xref:System.UriBuilder> properties are reflected in the <xref:System.UriBuilder.Uri%2A> property.  
-  
+The <xref:System.UriBuilder.Uri%2A> property contains the <xref:System.Uri> created by the <xref:System.UriBuilder>. Any changes made to the <xref:System.UriBuilder> properties are reflected in the <xref:System.UriBuilder.Uri%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UriFormatException">

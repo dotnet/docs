@@ -70,10 +70,10 @@
         <returns>The string that contains the <see cref="P:System.Windows.Automation.AutomationProperties.AutomationId" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the automation identifier is the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property, and if that isn't set, it's the <xref:System.Windows.FrameworkElement.Name%2A> property.  
-  
+The value of the automation identifier is the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property, and if that isn't set, it's the <xref:System.Windows.FrameworkElement.Name%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

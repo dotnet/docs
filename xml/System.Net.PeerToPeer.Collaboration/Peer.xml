@@ -24,14 +24,14 @@
     <summary>This class represents a remote peer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The purpose of the abstract <xref:System.Net.PeerToPeer.Collaboration.Peer> class is to provide a common base class definition that can be shared by derived classes such as <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact>. It cannot be directly constructed, since it is abstract. Developers should use the subclasses PeerNearMe or PeerContact instead.  
-  
- Contact, peer, remote peer, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, <xref:System.Net.PeerToPeer.Collaboration.ContactManager.LocalContact%2A>, and <xref:System.Net.PeerToPeer.Collaboration.PeerContact> are synonymous terms, based on context.  
-  
- "Calling peer" and "remote peer" are commonly synonymous.  Calling peer does not refer to the application calling a given method.  
-  
+The purpose of the abstract <xref:System.Net.PeerToPeer.Collaboration.Peer> class is to provide a common base class definition that can be shared by derived classes such as <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact>. It cannot be directly constructed, since it is abstract. Developers should use the subclasses PeerNearMe or PeerContact instead.  
+ 
+Contact, peer, remote peer, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, <xref:System.Net.PeerToPeer.Collaboration.ContactManager.LocalContact%2A>, and <xref:System.Net.PeerToPeer.Collaboration.PeerContact> are synonymous terms, based on context.  
+ 
+"Calling peer" and "remote peer" are commonly synonymous.  Calling peer does not refer to the application calling a given method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns a type <xref:System.Net.PeerToPeer.Collaboration.Peer> object, subclassed on <xref:System.Net.PeerToPeer.Collaboration.PeerContact> or <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>. The PeerContact <xref:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName%2A> or the PeerNearMe <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.Nickname%2A> contain unique references to the name of the new peer object.  
-  
+Returns a type <xref:System.Net.PeerToPeer.Collaboration.Peer> object, subclassed on <xref:System.Net.PeerToPeer.Collaboration.PeerContact> or <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>. The PeerContact <xref:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName%2A> or the PeerNearMe <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.Nickname%2A> contain unique references to the name of the new peer object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <returns>Returns <see langword="true" /> if the supplied <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> instance has the same <see cref="P:System.Net.PeerToPeer.Collaboration.Peer.PeerEndPoints" /> as this peer instance, otherwise <see langword="false" />. This method also returns <see langword="false" /> if the peer parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two peers are considered equal if they have the same endpoint collection, regardless of the values in their <xref:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName%2A> properties. Usage scenarios do not involve this class directly, but rather the derived <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> or the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> classes.  
-  
+Two peers are considered equal if they have the same endpoint collection, regardless of the values in their <xref:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName%2A> properties. Usage scenarios do not involve this class directly, but rather the derived <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> or the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,18 +177,18 @@
         <returns>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> collection for the peer or endpoint specified by this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
-  
- If the peer collaboration session did not instantiate with a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>, this method cannot access objects on the local computer.  The same is true of the applications registered into the collaboration session.  
-  
- The collection of peer objects consists of application, data object, and presence information for the peer or endpoint specified by this instance. If no objects are found for the endpoint, a collection of size zero (0) is returned. If the calling peer is subscribed to this endpoint, the cache is automatically updated; otherwise <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> must be called prior to calling this method.  
-  
- The caller is not required to be signed into the collaboration infrastructure for this method to complete successfully.  A successful call to <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> or one of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> methods must have been completed while the caller was signed in previous to calling this method.  
-  
- NOTE: Additional overloads are defined on the <xref:System.Net.PeerToPeer.Collaboration.Peer> class instead of the subclasses <xref:System.Net.PeerToPeer.Collaboration.PeerContact> and <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>.  
-  
+This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
+ 
+If the peer collaboration session did not instantiate with a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>, this method cannot access objects on the local computer.  The same is true of the applications registered into the collaboration session.  
+ 
+The collection of peer objects consists of application, data object, and presence information for the peer or endpoint specified by this instance. If no objects are found for the endpoint, a collection of size zero (0) is returned. If the calling peer is subscribed to this endpoint, the cache is automatically updated; otherwise <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> must be called prior to calling this method.  
+ 
+The caller is not required to be signed into the collaboration infrastructure for this method to complete successfully.  A successful call to <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> or one of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> methods must have been completed while the caller was signed in previous to calling this method.  
+ 
+NOTE: Additional overloads are defined on the <xref:System.Net.PeerToPeer.Collaboration.Peer> class instead of the subclasses <xref:System.Net.PeerToPeer.Collaboration.PeerContact> and <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The caller is not subscribed to the endpoint or has not yet called <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData" />.</exception>
@@ -222,16 +222,16 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> object associated with the supplied <see cref="T:System.Guid" />. If an object is not found, a collection of size zero (0) is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class. This functionality is not exposed on any other type of peer for security reasons.  
-  
- The collection of peer objects consists of application, data object, and presence information for the peer or endpoint specified by this instance. If no objects are found for the endpoint, a collection of size zero (0) is returned. When the calling peer is subscribed to this endpoint, the cache is automatically updated; otherwise <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> must be called prior to calling this method.  
-  
- The caller is not required to be signed into the collaboration infrastructure for this method to complete successfully.  A successful call to <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> or one of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> methods must have been completed while the caller was signed in previous to calling this method. Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the collaboration session begins.  
-  
- NOTE: Additional overloads are defined on the <xref:System.Net.PeerToPeer.Collaboration.Peer> class instead of the derived classes <xref:System.Net.PeerToPeer.Collaboration.PeerContact> and <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>.  
-  
+This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class. This functionality is not exposed on any other type of peer for security reasons.  
+ 
+The collection of peer objects consists of application, data object, and presence information for the peer or endpoint specified by this instance. If no objects are found for the endpoint, a collection of size zero (0) is returned. When the calling peer is subscribed to this endpoint, the cache is automatically updated; otherwise <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> must be called prior to calling this method.  
+ 
+The caller is not required to be signed into the collaboration infrastructure for this method to complete successfully.  A successful call to <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> or one of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> methods must have been completed while the caller was signed in previous to calling this method. Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the collaboration session begins.  
+ 
+NOTE: Additional overloads are defined on the <xref:System.Net.PeerToPeer.Collaboration.Peer> class instead of the derived classes <xref:System.Net.PeerToPeer.Collaboration.PeerContact> and <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The object ID is <see langword="null" />.</exception>
@@ -265,12 +265,12 @@
         <returns>Returns a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" /> object which contains presence information for an available endpoint if it is available; otherwise it is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Presence information includes status descriptors such as online, offline, and away.  
-  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Presence information includes status descriptors such as online, offline, and away.  
+ 
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -299,10 +299,10 @@
         <returns>A <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" /> from the peer that received the invitation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the Peer Collaboration session begins.  
-  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the Peer Collaboration session begins.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   An error occurred during the invitation process.  
@@ -335,10 +335,10 @@
         <returns>A <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" /> from the peer that received the invitation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
-  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The application is not registered for collaboration.</exception>
@@ -369,10 +369,10 @@
         <summary>Begins an asynchronous invitation operation which sends an invitation to a <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> to start a specific <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
-  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -408,10 +408,10 @@
         <summary>Begins an asynchronous invitation operation which sends an invitation to a <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> to start a specific <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
-  
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The application is not registered with the collaboration infrastructure.</exception>
@@ -449,16 +449,16 @@
         <summary>Cancels the invitation that was sent with the <see cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[],System.Object)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method guarantees the system will cease to wait for a <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> from the peer associated with the InviteAsync request.  
-  
- Multiple invitations may be outstanding at any given time.  If the <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel%2A> method is called when an asynchronous operation identified by the `userToken` is not in existence, an exception is thrown. The `userToken` object must be provided since it is used to track a specific asynchronous call. This host application-supplied object is unique for each invite request.  
-  
- When this method is used, the <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted> event can still be raised, but the Cancelled property on the associated <xref:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs> object will be set to `true.`  
-  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+Calling this method guarantees the system will cease to wait for a <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> from the peer associated with the InviteAsync request.  
+ 
+Multiple invitations may be outstanding at any given time.  If the <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel%2A> method is called when an asynchronous operation identified by the `userToken` is not in existence, an exception is thrown. The `userToken` object must be provided since it is used to track a specific asynchronous call. This host application-supplied object is unique for each invite request.  
+ 
+When this method is used, the <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted> event can still be raised, but the Cancelled property on the associated <xref:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs> object will be set to `true.`  
+ 
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="userToken" /> parameter cannot be <see langword="null." /></exception>
@@ -481,12 +481,12 @@
         <summary>Raised when the invitation process for a remote peer has completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> specifies the result of the invitation operation.  
-  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
-  
+The <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> specifies the result of the invitation operation.  
+ 
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> object has been disposed.</exception>
@@ -533,10 +533,10 @@
         <summary>Raises the <see cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted> event is raised.  
-  
+Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,10 +558,10 @@
         <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a remote peer is an intermediary for a host peer, the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> objects contained in <xref:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection> associate with the local contacts for the remote peer.  
-  
+When a remote peer is an intermediary for a host peer, the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> objects contained in <xref:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection> associate with the local contacts for the remote peer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> object has been disposed.</exception>
@@ -595,12 +595,12 @@
         <value>Object that implements the <see cref="T:System.ComponentModel.ISynchronizeInvoke" /> interface and is used by instances of this type for event handler synchronization on the thread that created it.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default set value for this property is `null`, indicating that all event handlers are called on a system thread pool thread.  
-  
- This property is typically set to a UI element such as a <xref:System.Windows.Forms.Form> instance.  
-  
+The default set value for this property is `null`, indicating that all event handlers are called on a system thread pool thread.  
+ 
+This property is typically set to a UI element such as a <xref:System.Windows.Forms.Form> instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
@@ -663,12 +663,12 @@
         <summary>Gets the collection of data objects that were registered by the peer from a local cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
-  
- If no objects are found for the endpoint, a collection of size zero (0) is returned.  
-  
+This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
+ 
+If no objects are found for the endpoint, a collection of size zero (0) is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>

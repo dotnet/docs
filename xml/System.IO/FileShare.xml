@@ -30,23 +30,23 @@
     <summary>Contains constants for controlling the kind of access other <see cref="T:System.IO.FileStream" /> objects can have to the same file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
+For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
+ 
+A typical use of this enumeration is to define whether two processes can simultaneously read from the same file. For example, if a file is opened and Read is specified, other users can open the file for reading but not for writing.  
+ 
+A <xref:System.IO.FileShare> parameter is specified in some of the constructors for <xref:System.IO.FileStream>, <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>, and in some of the `Open` methods of <xref:System.IO.File> and <xref:System.IO.FileInfo> to control how a file is opened.  
+ 
   
- A typical use of this enumeration is to define whether two processes can simultaneously read from the same file. For example, if a file is opened and Read is specified, other users can open the file for reading but not for writing.  
-  
- A <xref:System.IO.FileShare> parameter is specified in some of the constructors for <xref:System.IO.FileStream>, <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>, and in some of the `Open` methods of <xref:System.IO.File> and <xref:System.IO.FileInfo> to control how a file is opened.  
-  
-   
-  
+ 
 ## Examples  
- The following <xref:System.IO.FileStream> constructor opens an existing file and grants read-only access to other users (Read).  
-  
- [!code-cpp[Classic FileAccess Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileAccess Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileAccess Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileAccess Example/CS/source.cs#1)]
- [!code-vb[Classic FileAccess Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileAccess Example/VB/source.vb#1)]  
-  
+The following <xref:System.IO.FileStream> constructor opens an existing file and grants read-only access to other users (Read).  
+ 
+[!code-cpp[Classic FileAccess Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileAccess Example/CPP/source.cpp#1)]
+[!code-csharp[Classic FileAccess Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileAccess Example/CS/source.cs#1)]
+[!code-vb[Classic FileAccess Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileAccess Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

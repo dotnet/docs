@@ -18,14 +18,14 @@
     <summary>Defines the instance of of a peer node used by an application participating in a specific peer mesh.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A peer node can host multiple peer channels within the mesh as long as they share a common URI and host name in the <xref:System.ServiceModel.EndpointAddress> supplied to the binding for each channel.  
-  
- If two or more peer channels defined for a peer node are created with separate bindings, then the <xref:System.ServiceModel.NetPeerTcpBinding.Port%2A>, <xref:System.ServiceModel.NetPeerTcpBinding.ListenIPAddress%2A>, and <xref:System.ServiceModel.NetPeerTcpBinding.Resolver%2A> properties must be identical on all bindings.  
-  
- If a subsequent channel binding is created after the first one for the same peer node instance, then the <xref:System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize%2A> property on this and subsequent bindings must be less than or equal to the value of <xref:System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize%2A> property as set on the first channel binding.  
-  
+A peer node can host multiple peer channels within the mesh as long as they share a common URI and host name in the <xref:System.ServiceModel.EndpointAddress> supplied to the binding for each channel.  
+ 
+If two or more peer channels defined for a peer node are created with separate bindings, then the <xref:System.ServiceModel.NetPeerTcpBinding.Port%2A>, <xref:System.ServiceModel.NetPeerTcpBinding.ListenIPAddress%2A>, and <xref:System.ServiceModel.NetPeerTcpBinding.Resolver%2A> properties must be identical on all bindings.  
+ 
+If a subsequent channel binding is created after the first one for the same peer node instance, then the <xref:System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize%2A> property on this and subsequent bindings must be less than or equal to the value of <xref:System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize%2A> property as set on the first channel binding.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
           <see langword="true" /> if the peer node is online; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- "Online" indicates that a peer node has available neighbor nodes. "Offline" indicates that a peer node has no available neighbors.  
-  
+"Online" indicates that a peer node has available neighbor nodes. "Offline" indicates that a peer node has no available neighbors.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,10 +74,10 @@
           <see cref="T:System.ServiceModel.PeerMessagePropagationFilter" /> that contains a custom message filter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The message filter must be a derived type and should be recast to that type to use any custom features defined on it.  
-  
+The message filter must be a derived type and should be recast to that type to use any custom features defined on it.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No channel is open for listening.</exception>
@@ -99,10 +99,10 @@
         <summary>Signals when the peer node goes offline from the peer mesh.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An offline peer node has no neighbor nodes within the peer mesh to which it can connect.  
-  
+An offline peer node has no neighbor nodes within the peer mesh to which it can connect.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <summary>Signals when a peer node comes online within the peer mesh.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An online peer node has at least one neighbor node within the peer mesh to which it is connected.  
-  
+An online peer node has at least one neighbor node within the peer mesh to which it is connected.  
+ 
  ]]></format>
         </remarks>
       </Docs>

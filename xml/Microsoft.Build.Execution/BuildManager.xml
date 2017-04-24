@@ -51,10 +51,10 @@
         <summary>Creates a new unnamed build manager.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Create a new BuildManager. Creating multiple multi-processor aware build managers is not supported due to conflicts in the NodeManager.  
-  
+Create a new BuildManager. Creating multiple multi-processor aware build managers is not supported due to conflicts in the NodeManager.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <returns>Returns the build result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Convenience method.  
-  
+Convenience method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Thrown if a build is already in progress.</exception>
@@ -134,10 +134,10 @@
         <returns>Returns the build result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Convenience method.  
-  
+Convenience method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Thrown if StartBuild has not been called or if EndBuild has been called.</exception>
@@ -214,10 +214,10 @@
         <summary>Signals that no more build requests are expected (or allowed) and that the BuildManager may clean up.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This call blocks until all currently pending requests are complete.  
-  
+This call blocks until all currently pending requests are complete.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Thrown if there is no build in progress.</exception>

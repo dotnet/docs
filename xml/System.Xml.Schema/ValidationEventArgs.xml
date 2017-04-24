@@ -19,10 +19,10 @@
     <summary>Returns detailed information related to the <see langword="ValidationEventHandler" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example, see the <xref:System.Xml.Schema.XmlSchemaCollection.Add%2A> method for the <xref:System.Xml.Schema.XmlSchemaCollection> class.  
-  
+For an example, see the <xref:System.Xml.Schema.XmlSchemaCollection.Add%2A> method for the <xref:System.Xml.Schema.XmlSchemaCollection> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,24 +95,24 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSeverityType" /> value representing the severity of the validation event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example validates an XML file and generates the appropriate error or warning.  
-  
- [!code-cpp[ValidationEventArgs.Severity#1](~/samples/snippets/cpp/VS_Snippets_Data/ValidationEventArgs.Severity/CPP/severity.cpp#1)]
- [!code-csharp[ValidationEventArgs.Severity#1](~/samples/snippets/csharp/VS_Snippets_Data/ValidationEventArgs.Severity/CS/severity.cs#1)]
- [!code-vb[ValidationEventArgs.Severity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/ValidationEventArgs.Severity/VB/severity.vb#1)]  
-  
- The preceding example uses the following input files.  
-  
- `store.xml`  
-  
- [!code-xml[ValidationEventArgs.Severity#2](~/samples/snippets/xml/VS_Snippets_Data/ValidationEventArgs.Severity/XML/store.xml#2)]  
-  
- `books.xsd`  
-  
- [!code-xml[ValidationEventArgs.Severity#3](~/samples/snippets/xml/VS_Snippets_Data/ValidationEventArgs.Severity/XML/books.xsd#3)]  
-  
+The following example validates an XML file and generates the appropriate error or warning.  
+ 
+[!code-cpp[ValidationEventArgs.Severity#1](~/samples/snippets/cpp/VS_Snippets_Data/ValidationEventArgs.Severity/CPP/severity.cpp#1)]
+[!code-csharp[ValidationEventArgs.Severity#1](~/samples/snippets/csharp/VS_Snippets_Data/ValidationEventArgs.Severity/CS/severity.cs#1)]
+[!code-vb[ValidationEventArgs.Severity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/ValidationEventArgs.Severity/VB/severity.vb#1)]  
+ 
+The preceding example uses the following input files.  
+ 
+`store.xml`  
+ 
+[!code-xml[ValidationEventArgs.Severity#2](~/samples/snippets/xml/VS_Snippets_Data/ValidationEventArgs.Severity/XML/store.xml#2)]  
+ 
+`books.xsd`  
+ 
+[!code-xml[ValidationEventArgs.Severity#3](~/samples/snippets/xml/VS_Snippets_Data/ValidationEventArgs.Severity/XML/books.xsd#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

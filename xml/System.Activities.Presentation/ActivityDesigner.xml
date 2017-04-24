@@ -14,107 +14,107 @@
     <summary>Provides a base class for all activity designer components.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type provides the basic look-and-feel functionality for other activity designers and allows a developer to add additional capabilities to an activity designer surface. This is typically done in order to either display additional interesting information to the user of the activity, create a better on canvas editing experience  (for example, using the `ExpressionTextBox` on an `If` activity designer), or to allow contained elements to be edited (again, consider the <xref:System.Activities.Statements.If.Then%2A> and <xref:System.Activities.Statements.If.Else%2A> properties of the <xref:System.Activities.Statements.If> activity).  
+This type provides the basic look-and-feel functionality for other activity designers and allows a developer to add additional capabilities to an activity designer surface. This is typically done in order to either display additional interesting information to the user of the activity, create a better on canvas editing experience  (for example, using the `ExpressionTextBox` on an `If` activity designer), or to allow contained elements to be edited (again, consider the <xref:System.Activities.Statements.If.Then%2A> and <xref:System.Activities.Statements.If.Else%2A> properties of the <xref:System.Activities.Statements.If> activity).  
+ 
+The <xref:System.Activities.Presentation.ActivityDesigner> inherits from <xref:System.Activities.Presentation.WorkflowViewElement> and primarily adds the default styling, as well as the ability to customize the icon via the <xref:System.Activities.Presentation.ActivityDesigner.Icon%2A> property. It should be used whenever you are creating a designer for a type which derives from <xref:System.Activities.Activity>. When associated with an <xref:System.Activities.Activity> type, the <xref:System.Activities.Presentation.WorkflowViewElement.ModelItem%2A> property will point to the ModelItem hierarchy describing the instance of that type being edited.  
+ 
   
- The <xref:System.Activities.Presentation.ActivityDesigner> inherits from <xref:System.Activities.Presentation.WorkflowViewElement> and primarily adds the default styling, as well as the ability to customize the icon via the <xref:System.Activities.Presentation.ActivityDesigner.Icon%2A> property. It should be used whenever you are creating a designer for a type which derives from <xref:System.Activities.Activity>. When associated with an <xref:System.Activities.Activity> type, the <xref:System.Activities.Presentation.WorkflowViewElement.ModelItem%2A> property will point to the ModelItem hierarchy describing the instance of that type being edited.  
-  
-   
-  
+ 
 ## Examples  
- In the sample code below, a `First2of3` activity is defined first, then the code for the First2of3 designer is shown, and finally it is shown how to use the Designer attribute to associate the activity with the designer is provided.  
-  
+In the sample code below, a `First2of3` activity is defined first, then the code for the First2of3 designer is shown, and finally it is shown how to use the Designer attribute to associate the activity with the designer is provided.  
+ 
 ```  
-  
+ 
 //The First2of3 activity  
 using System.Activities;  
 using System.Collections.Generic;  
 using System.Linq;  
-  
+ 
 namespace Microsoft.Activities.Documentation.ActivityTypes  
 {  
-  
-    public sealed class First2of3 : NativeActivity  
-    {  
-        public Activity Activity1 { get; set; }  
-        public Activity Activity2 { get; set; }  
-        public Activity Activity3 { get; set; }  
-  
-        Variable<List<ActivityInstance>> ExecutingActivities { get; set; }  
-  
-        public First2of3()  
-        {  
-            ExecutingActivities = new Variable<List<ActivityInstance>>();  
-        }  
-  
-        // If your activity returns a value, derive from CodeActivity<TResult>  
-        // and return the value from the Execute method.  
-        protected override void Execute(NativeActivityContext context)  
-        {  
-            // Obtain the runtime value of the Text input argument  
-            var l = new List<ActivityInstance>();  
-            ExecutingActivities.Set(context, l);  
-            l.Add(context.ScheduleActivity(Activity1, onComplete));  
-            l.Add(context.ScheduleActivity(Activity2, onComplete));  
-            l.Add(context.ScheduleActivity(Activity3, onComplete));  
-        }  
-  
-        protected override void CacheMetadata(NativeActivityMetadata metadata)  
-        {  
-            metadata.AddImplementationVariable(ExecutingActivities);  
-            metadata.AddChild(Activity1);  
-            metadata.AddChild(Activity2);  
-            metadata.AddChild(Activity3);  
-        }  
-  
-        private void onComplete(NativeActivityContext context, ActivityInstance completedInstance)  
-        {  
-            var l = ExecutingActivities.Get(context);  
-            l.Remove(completedInstance);  
-            if (l.Count == 1)  
-            {  
-                context.CancelChild(l.Single());  
-            }  
-        }  
-    }  
+ 
+   public sealed class First2of3 : NativeActivity  
+   {  
+       public Activity Activity1 { get; set; }  
+       public Activity Activity2 { get; set; }  
+       public Activity Activity3 { get; set; }  
+ 
+       Variable<List<ActivityInstance>> ExecutingActivities { get; set; }  
+ 
+       public First2of3()  
+       {  
+           ExecutingActivities = new Variable<List<ActivityInstance>>();  
+       }  
+ 
+       // If your activity returns a value, derive from CodeActivity<TResult>  
+       // and return the value from the Execute method.  
+       protected override void Execute(NativeActivityContext context)  
+       {  
+           // Obtain the runtime value of the Text input argument  
+           var l = new List<ActivityInstance>();  
+           ExecutingActivities.Set(context, l);  
+           l.Add(context.ScheduleActivity(Activity1, onComplete));  
+           l.Add(context.ScheduleActivity(Activity2, onComplete));  
+           l.Add(context.ScheduleActivity(Activity3, onComplete));  
+       }  
+ 
+       protected override void CacheMetadata(NativeActivityMetadata metadata)  
+       {  
+           metadata.AddImplementationVariable(ExecutingActivities);  
+           metadata.AddChild(Activity1);  
+           metadata.AddChild(Activity2);  
+           metadata.AddChild(Activity3);  
+       }  
+ 
+       private void onComplete(NativeActivityContext context, ActivityInstance completedInstance)  
+       {  
+           var l = ExecutingActivities.Get(context);  
+           l.Remove(completedInstance);  
+           if (l.Count == 1)  
+           {  
+               context.CancelChild(l.Single());  
+           }  
+       }  
+   }  
 }  
-  
+ 
 //’Code for the First2of3 Designer:  
 <sap:ActivityDesigner x:Class="Microsoft.Activites.Documentation.First2of3Designer"  
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
-    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
-    <StackPanel>  
-        <Label Content="2 of 3 activity">  
-            <Label.ToolTip>  
-                This activity has 3 child activities which will be scheduled in parallel.    
-                Upon completion of any 2, the third will be cancelled  
-            </Label.ToolTip>  
-        </Label>  
-        <StackPanel Orientation="Horizontal">  
-            <Border BorderBrush="Blue" BorderThickness="2" CornerRadius="2" Margin="2" Padding="2">  
-                <sap:WorkflowItemPresenter HintText="Drop Activity1 Here" Item="{Binding Path=ModelItem.Activity1, Mode=TwoWay}" />  
-            </Border>  
-            <Border BorderBrush="Blue" BorderThickness="2" CornerRadius="2" Margin="2" Padding="2">  
-                <sap:WorkflowItemPresenter HintText="Drop Activity2 Here" Item="{Binding Path=ModelItem.Activity2, Mode=TwoWay}" />  
-  
-            </Border>  
-            <Border BorderBrush="Blue" BorderThickness="2" CornerRadius="2" Margin="2" Padding="2">  
-                <sap:WorkflowItemPresenter HintText="Drop Activity3 Here" Item="{Binding Path=ModelItem.Activity3, Mode=TwoWay}" />  
-  
-            </Border>  
-        </StackPanel>  
-    </StackPanel>  
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+   xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
+   xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
+   <StackPanel>  
+       <Label Content="2 of 3 activity">  
+           <Label.ToolTip>  
+               This activity has 3 child activities which will be scheduled in parallel.    
+               Upon completion of any 2, the third will be cancelled  
+           </Label.ToolTip>  
+       </Label>  
+       <StackPanel Orientation="Horizontal">  
+           <Border BorderBrush="Blue" BorderThickness="2" CornerRadius="2" Margin="2" Padding="2">  
+               <sap:WorkflowItemPresenter HintText="Drop Activity1 Here" Item="{Binding Path=ModelItem.Activity1, Mode=TwoWay}" />  
+           </Border>  
+           <Border BorderBrush="Blue" BorderThickness="2" CornerRadius="2" Margin="2" Padding="2">  
+               <sap:WorkflowItemPresenter HintText="Drop Activity2 Here" Item="{Binding Path=ModelItem.Activity2, Mode=TwoWay}" />  
+ 
+           </Border>  
+           <Border BorderBrush="Blue" BorderThickness="2" CornerRadius="2" Margin="2" Padding="2">  
+               <sap:WorkflowItemPresenter HintText="Drop Activity3 Here" Item="{Binding Path=ModelItem.Activity3, Mode=TwoWay}" />  
+ 
+           </Border>  
+       </StackPanel>  
+   </StackPanel>  
 </sap:ActivityDesigner>  
-  
+ 
 //Code for associating the activity with the designer using the Designer attribute.  
 [Designer(typeof(First2of3Designer))]  
 public sealed class First2of3 : NativeActivity  
-  
+ 
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

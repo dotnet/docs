@@ -15,10 +15,10 @@
     <summary>Specifies the DNS identity of the server.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class specifies the expected identity of the server. This identity is valid for X509 Certificate authentication mode if the server’s certificate contains a DNS with the same value. It is also valid for Windows authentication mode if the SPN has the same value. In this case, a client specifying the  DnsEndpointIdentity “server1.microsoft.com”  for Windows authentication mode is equivalent to specifying the SpnEndpointIdentity “host/server1.microsoft.com” .  
-  
+This class specifies the expected identity of the server. This identity is valid for X509 Certificate authentication mode if the server’s certificate contains a DNS with the same value. It is also valid for Windows authentication mode if the SPN has the same value. In this case, a client specifying the  DnsEndpointIdentity “server1.microsoft.com”  for Windows authentication mode is equivalent to specifying the SpnEndpointIdentity “host/server1.microsoft.com” .  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DnsEndpointIdentity" /> class from a claim.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `identity` is used to create an endpoint identity by the <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> method.  
-  
+The `identity` is used to create an endpoint identity by the <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -68,10 +68,10 @@
         <summary>Initializes a new instance of this class from a DNS name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `dnsName` is used to create a DNS claim and an endpoint identity is created by the <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> method.  
-  
+The `dnsName` is used to create a DNS claim and an endpoint identity is created by the <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

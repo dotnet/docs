@@ -14,10 +14,10 @@
     <summary>Specifies information about the size and visibility of the images and label associated with a Ribbon control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Ribbon Layout and Resizing](http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94).  
-  
+For more information, see [Ribbon Layout and Resizing](http://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,18 +73,18 @@
         <value>One of the enumeration values that specify how to show the image on a control. The registered default is <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Large" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Ribbon.Ribbon> control can display a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, or the image can be <xref:System.Windows.Controls.Ribbon.RibbonImageSize>. If the control does not specify an image of the size that corresponds to the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize%2A> setting, no image is displayed.  
-  
+A <xref:System.Windows.Controls.Ribbon.Ribbon> control can display a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, or the image can be <xref:System.Windows.Controls.Ribbon.RibbonImageSize>. If the control does not specify an image of the size that corresponds to the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize%2A> setting, no image is displayed.  
+ 
 <a name="dependencyPropertyInfo_ImageSize"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSizeProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,18 +160,18 @@
           <see langword="true" /> if the control’s label is visible; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the label property of the control is not set, no label will be shown even if the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisible%2A> property is `true`.  
-  
+If the label property of the control is not set, no label will be shown even if the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisible%2A> property is `true`.  
+ 
 <a name="dependencyPropertyInfo_IsLabelVisible"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisibleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,18 +210,18 @@
         <value>The maximum width of the control. The registered default is <see cref="F:System.Double.PositiveInfinity" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property only has an effect if the control is a container for other objects.  
-  
+This property only has an effect if the control is a container for other objects.  
+ 
 <a name="dependencyPropertyInfo_MaxWidth"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidthProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,18 +260,18 @@
         <value>The minimum width of the control. The registered default is 0. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property only has an effect if the control is a container for other objects.  
-  
+This property only has an effect if the control is a container for other objects.  
+ 
 <a name="dependencyPropertyInfo_MinWidth"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidthProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,18 +310,18 @@
         <value>The width of the control. The registered default is <see cref="P:System.Windows.GridLength.Auto" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property only has an effect if the control is a container for other objects.  
-  
+This property only has an effect if the control is a container for other objects.  
+ 
 <a name="dependencyPropertyInfo_Width"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.WidthProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

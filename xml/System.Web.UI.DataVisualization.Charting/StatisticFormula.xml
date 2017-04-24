@@ -14,10 +14,10 @@
     <summary>Calculates statistical formulas.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Formulas can be loosely grouped into the following categories: distributions, including inverse distributions; tests; and basic statistical formulas. Each group has common characteristics with respect to their input and return values.  
-  
+Formulas can be loosely grouped into the following categories: distributions, including inverse distributions; tests; and basic statistical formulas. Each group has common characteristics with respect to their input and return values.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,18 +45,18 @@
         <returns>An <see cref="T:System.Web.UI.DataVisualization.Charting.AnovaResult" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As AnovaResult = Chart1.DataManipulator.Statistics.Anova(.05, "Series1,Series2,Series3")  
 ```  
-  
+ 
 ```csharp  
 AnovaResult result = Chart1.DataManipulator.Statistics.Anova(.05, "Series1,Series2,Series3");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,18 +84,18 @@ AnovaResult result = Chart1.DataManipulator.Statistics.Anova(.05, "Series1,Serie
         <returns>Beta value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As Double = Chart1.DataManipulator.Statistics.BetaFunction(2.3, 6.2)  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.BetaFunction(2.3, 6.2);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,23 +123,23 @@ double result = Chart1.DataManipulator.Statistics.BetaFunction(2.3, 6.2);
         <returns>Correlation value between the two groups of data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method throws an exception if the input series do not have the same number of data points.  
+The method throws an exception if the input series do not have the same number of data points.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As Double = Chart1.DataManipulator.Statistics.Correlation("Series1", "Series2")  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.Correlation("Series1", "Series2");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,23 +167,23 @@ double result = Chart1.DataManipulator.Statistics.Correlation("Series1", "Series
         <returns>Covariance value between the two groups of data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method throws an exception if the input series do not have the same number of data points.  
+The method throws an exception if the input series do not have the same number of data points.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As double = Chart1.DataManipulator.Statistics.Covariance("Series1", "Series2")  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.Covariance("Series1", "Series2");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,18 +213,18 @@ double result = Chart1.DataManipulator.Statistics.Covariance("Series1", "Series2
         <returns>Probability for the F distribution.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As double = Chart1.DataManipulator.Statistics.FDistribution(6.31, 15, 7)  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.FDistribution(6.31, 15, 7);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,23 +254,23 @@ double result = Chart1.DataManipulator.Statistics.FDistribution(6.31, 15, 7);
         <returns>An <see cref="T:System.Web.UI.DataVisualization.Charting.FTestResult" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method throws an exception if the input series do not have the same number of data points.  
+The method throws an exception if the input series do not have the same number of data points.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As FTestResult = Chart1.DataManipulator.Statistics.FTest(0.05, "Series1", "Series2")  
 ```  
-  
+ 
 ```csharp  
 FTestResult result = Chart1.DataManipulator.Statistics.FTest(0.05, "Series1", "Series2");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,18 +296,18 @@ FTestResult result = Chart1.DataManipulator.Statistics.FTest(0.05, "Series1", "S
         <returns>Gamma value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As Double = Chart1.DataManipulator.Statistics.GammaFunction(6.2)  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.GammaFunction(6.2);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,18 +337,18 @@ double result = Chart1.DataManipulator.Statistics.GammaFunction(6.2);
         <returns>F value for the F distribution.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As Double = Chart1.DataManipulator.Statistics.InverseFDistribution(.05, 15, 30)  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.InverseFDistribution(.05, 15, 30);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,18 +374,18 @@ double result = Chart1.DataManipulator.Statistics.InverseFDistribution(.05, 15, 
         <returns>Inverse of the normal distribution function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As double = Chart1.DataManipulator.Statistics.InverseNormalDistribution(.05)  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.InverseNormalDistribution(.05);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -413,18 +413,18 @@ double result = Chart1.DataManipulator.Statistics.InverseNormalDistribution(.05)
         <returns>Inverse of the *t*-distribution.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 double result = Chart1.DataManipulator.Statistics.InverseTDistribution(.05, 15)  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.InverseTDistribution(.05, 15);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,23 +450,23 @@ double result = Chart1.DataManipulator.Statistics.InverseTDistribution(.05, 15);
         <returns>Mean value of all the data points in the given series.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If named input series does not exist in the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception is thrown.  
+If named input series does not exist in the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As Double = Chart1.DataManipulator.Statistics.Mean("Series1")  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.Mean("Series1");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,23 +492,23 @@ double result = Chart1.DataManipulator.Statistics.Mean("Series1");
         <returns>Median of all the data points in the given series.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the named input series does not exist in the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception is thrown.  
+If the named input series does not exist in the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As Double = Chart1.DataManipulator.Statistics.Median("Series1")  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.Median("Series1");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -534,18 +534,18 @@ double result = Chart1.DataManipulator.Statistics.Median("Series1");
         <returns>Value of the standard normal cumulative distribution.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As Double = Chart1.DataManipulator.Statistics.NormalDistribution(1.96)  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.NormalDistribution(1.96);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,18 +576,18 @@ double result = Chart1.DataManipulator.Statistics.NormalDistribution(1.96);
         <returns>*t*-distribution function probability.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As Double = Chart1.DataManipulator.Statistics.TDistribution(1.96, 30, true)  
 ```  
-  
+ 
 ```csharp  
 double result = Chart1.DataManipulator.Statistics.TDistribution(1.96, 30, true);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -619,18 +619,18 @@ double result = Chart1.DataManipulator.Statistics.TDistribution(1.96, 30, true);
         <returns>A <see cref="T:System.Web.UI.DataVisualization.Charting.TTestResult" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As TTestResult = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "Series1", "Series2")  
 ```  
-  
+ 
 ```csharp  
 TTestResult result = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "Series1", "Series2");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -662,18 +662,18 @@ TTestResult result = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "S
         <returns>A <see cref="T:System.Web.UI.DataVisualization.Charting.TTestResult" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As TTestResult = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "Series1", "Series2")  
 ```  
-  
+ 
 ```csharp  
 TTestResult result = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "Series1", "Series2");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -705,18 +705,18 @@ TTestResult result = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "S
         <returns>A <see cref="T:System.Web.UI.DataVisualization.Charting.TTestResult" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As TTestResult = Chart1.DataManipulator.Statistics.TTestUnEqualVariances(0.2, 0.05, "Series1", "Series2")  
 ```  
-  
+ 
 ```csharp  
 TTestResult result = Chart1.DataManipulator.Statistics.TTestUnEqualVariances(0.2, 0.05, "Series1", "Series2");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -744,18 +744,18 @@ TTestResult result = Chart1.DataManipulator.Statistics.TTestUnEqualVariances(0.2
         <returns>Variance within the group of data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As Double = Chart1.DataManipulator.Statistics.Variance("Series1", false)  
 ```  
-  
+ 
 ```csharp  
 TTestResult result = double result = Chart1.DataManipulator.Statistics.Variance("Series1", false);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -791,18 +791,18 @@ TTestResult result = double result = Chart1.DataManipulator.Statistics.Variance(
         <returns>A <see cref="T:System.Web.UI.DataVisualization.Charting.ZTestResult" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to use this formula.  
-  
+The following code demonstrates how to use this formula.  
+ 
 ```vb  
 Dim result As ZTestResult = Chart1.DataManipulator.Statistics.ZTest(0.2, 2.5, 4.5, 0.05, "Series1", "Series2")  
 ```  
-  
+ 
 ```csharp  
 ZTestResult result = Chart1.DataManipulator.Statistics.ZTest(0.2, 2.5, 4.5, 0.05, "Series1", "Series2");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

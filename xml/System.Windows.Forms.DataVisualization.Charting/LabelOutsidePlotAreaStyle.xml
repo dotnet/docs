@@ -13,12 +13,12 @@
     <summary>Specifies the degree to which a label can be drawn outside a plotting area.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle> enumeration represents the degree to which a label is allowed to leave a plotting area. It is used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.AllowOutsidePlotArea%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle> object.  
-  
- If you specify the Partial value, no more than 50% of the label can be drawn outside the plotting area.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle> enumeration represents the degree to which a label is allowed to leave a plotting area. It is used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.AllowOutsidePlotArea%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle> object.  
+ 
+If you specify the Partial value, no more than 50% of the label can be drawn outside the plotting area.  
+ 
  ]]></format>
     </remarks>
   </Docs>

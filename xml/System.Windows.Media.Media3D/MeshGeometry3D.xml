@@ -14,17 +14,17 @@
     <summary>Triangle primitive for building a [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] shape.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- MeshGeometry3D allows the developer to specify position, normal, and texture coordinate information.  The <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A> property is required.  
+MeshGeometry3D allows the developer to specify position, normal, and texture coordinate information.  The <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A> property is required.  
+ 
+Normals are assumed to be associated with the front faces of a mesh primitive.  The winding order (the order in which the Positions that make up each triangle of the mesh are specified) determines whether a given face is front-facing or back-facing.  Front-facing triangles are wound in counter-clockwise order; back-facing triangles are wound in clockwise order.  
+ 
   
- Normals are assumed to be associated with the front faces of a mesh primitive.  The winding order (the order in which the Positions that make up each triangle of the mesh are specified) determines whether a given face is front-facing or back-facing.  Front-facing triangles are wound in counter-clockwise order; back-facing triangles are wound in clockwise order.  
-  
-   
-  
+ 
 ## Examples  
- [!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
-  
+[!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,11 +43,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.MeshGeometry3D" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[3dgallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Basic3DShapeExample.cs#basic3dshapecodeexamplewholepage)]
- [!code-vb[3dgallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/basic3dshapeexample.vb#basic3dshapecodeexamplewholepage)]  
-  
+[!code-csharp[3dgallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Basic3DShapeExample.cs#basic3dshapecodeexamplewholepage)]
+[!code-vb[3dgallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/basic3dshapeexample.vb#basic3dshapecodeexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,12 +88,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,12 +116,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,29 +163,29 @@
           <see cref="T:System.Windows.Media.Media3D.Vector3DCollection" /> that contains the normal vectors for the MeshGeometry3D.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normal vectors are vectors perpendicular to the face of each triangle that defines a mesh. Normals determine whether a given triangle face is lit.  
-  
- <xref:System.Windows.Media.Media3D.MeshGeometry3D> allows the developer to specify position, normal, and texture coordinate information.  
-  
- Normals are assumed to be associated with the front faces of a mesh primitive.  The winding order (the order in which the Positions that make up each triangle of the mesh are specified) determines whether a given face is front-facing or back-facing.  
-  
- If normals are not specified, their generation depends on whether the developer has specified triangle indices for the mesh.  If triangle indices are specified, normals will be generated that take into account adjacent faces.  If triangle indices are not specified, only one normal will be generated for the specified triangle.  This might cause a faceted appearance in the mesh.  
-  
+Normal vectors are vectors perpendicular to the face of each triangle that defines a mesh. Normals determine whether a given triangle face is lit.  
+ 
+<xref:System.Windows.Media.Media3D.MeshGeometry3D> allows the developer to specify position, normal, and texture coordinate information.  
+ 
+Normals are assumed to be associated with the front faces of a mesh primitive.  The winding order (the order in which the Positions that make up each triangle of the mesh are specified) determines whether a given face is front-facing or back-facing.  
+ 
+If normals are not specified, their generation depends on whether the developer has specified triangle indices for the mesh.  If triangle indices are specified, normals will be generated that take into account adjacent faces.  If triangle indices are not specified, only one normal will be generated for the specified triangle.  This might cause a faceted appearance in the mesh.  
+ 
 <a name="dependencyPropertyInfo_Normals"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
-  
+[!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,25 +246,25 @@
           <see cref="T:System.Windows.Media.Media3D.Point3DCollection" /> that contains the vertex positions of the MeshGeometry3D.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The points specifed by this property represent the vertices of the triangles that make up a 3-D mesh.  
-  
- The winding order (the order in which the Positions that make up each triangle of the mesh are specified) determines whether a given face is front-facing or back-facing.  Front-facing triangles are wound in counter-clockwise order; back-facing triangles are wound in clockwise order.  
-  
+The points specifed by this property represent the vertices of the triangles that make up a 3-D mesh.  
+ 
+The winding order (the order in which the Positions that make up each triangle of the mesh are specified) determines whether a given face is front-facing or back-facing.  Front-facing triangles are wound in counter-clockwise order; back-facing triangles are wound in clockwise order.  
+ 
 <a name="dependencyPropertyInfo_Positions"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
-  
+[!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,25 +304,25 @@
           <see cref="T:System.Windows.Media.PointCollection" /> that contains the texture coordinates for the MeshGeometry3D.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Texture coordinates determine how a <xref:System.Windows.Media.Media3D.Material> is mapped to the vertices of the triangles that make up a mesh.  
-  
- **Note** If no texture coordinates are specified for a MeshGeometry3D, its Material might not render as expected.  
-  
+Texture coordinates determine how a <xref:System.Windows.Media.Media3D.Material> is mapped to the vertices of the triangles that make up a mesh.  
+ 
+**Note** If no texture coordinates are specified for a MeshGeometry3D, its Material might not render as expected.  
+ 
 <a name="dependencyPropertyInfo_TextureCoordinates"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinatesProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
-  
+[!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -361,27 +361,27 @@
         <value>Collection that contains the triangle indices of the MeshGeometry3D.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a triangle in a given 3-D mesh, the order in which the triangle's vertex positions are specified determines whether the triangle face is a front or back face.  
-  
- The [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d) 3-D implementation uses a counter-clockwise winding order; that is, the points that determine a front-facing mesh triangle's positions should be specified in counterclockwise order, as viewed from the front of the mesh.  
-  
- Setting the <xref:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices%2A> property is optional. If the indices are not specified, triangles are drawn in a non-indexed fashion. Every set of three positions becomes a triangle.  
-  
+For a triangle in a given 3-D mesh, the order in which the triangle's vertex positions are specified determines whether the triangle face is a front or back face.  
+ 
+The [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d) 3-D implementation uses a counter-clockwise winding order; that is, the points that determine a front-facing mesh triangle's positions should be specified in counterclockwise order, as viewed from the front of the mesh.  
+ 
+Setting the <xref:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices%2A> property is optional. If the indices are not specified, triangles are drawn in a non-indexed fashion. Every set of three positions becomes a triangle.  
+ 
 <a name="dependencyPropertyInfo_TriangleIndices"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
-  
+[!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

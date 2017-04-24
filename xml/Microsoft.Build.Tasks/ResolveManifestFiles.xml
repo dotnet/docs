@@ -49,10 +49,10 @@
         <value>The deployment manifest name as an entry point.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The deployment manifest entry point is the name of the deployment manifest, such as Application.exe.manifest.  
-  
+The deployment manifest entry point is the name of the deployment manifest, such as Application.exe.manifest.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -220,10 +220,10 @@
         <value>A deployment manifest entry point.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other MSBuild tasks can use this output property as input.  
-  
+Other MSBuild tasks can use this output property as input.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

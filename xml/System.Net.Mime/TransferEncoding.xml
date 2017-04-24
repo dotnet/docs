@@ -18,22 +18,22 @@
     <summary>Specifies the Content-Transfer-Encoding header information for an e-mail message attachment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values in the <xref:System.Net.Mime.TransferEncoding> enumeration are used with the <xref:System.Net.Mail.AttachmentBase.TransferEncoding?displayProperty=fullName> property.  
+The values in the <xref:System.Net.Mime.TransferEncoding> enumeration are used with the <xref:System.Net.Mail.AttachmentBase.TransferEncoding?displayProperty=fullName> property.  
+ 
+The Content-Transfer-Encoding header specifies the encoding of the associated message body so that it meets SMTP requirements. SMTP requires data for transport to be in 7-bit US-ASCII characters with lines no longer than 1000 characters.  
+ 
+Content-Transfer-Encoding values are described in detail in RFC 2045 Section 6, available at [http://www.ietf.org](http://www.ietf.org/).  
+ 
   
- The Content-Transfer-Encoding header specifies the encoding of the associated message body so that it meets SMTP requirements. SMTP requires data for transport to be in 7-bit US-ASCII characters with lines no longer than 1000 characters.  
-  
- Content-Transfer-Encoding values are described in detail in RFC 2045 Section 6, available at [http://www.ietf.org](http://www.ietf.org/).  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays <xref:System.Net.Mime.TransferEncoding> used by an attachment.  
-  
- [!code-cpp[NclMailSync#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#21)]
- [!code-csharp[NclMailSync#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#21)]  
-  
+The following code example displays <xref:System.Net.Mime.TransferEncoding> used by an attachment.  
+ 
+[!code-cpp[NclMailSync#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#21)]
+[!code-csharp[NclMailSync#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#21)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

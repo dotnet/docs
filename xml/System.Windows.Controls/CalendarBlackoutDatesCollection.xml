@@ -17,41 +17,41 @@
     <summary>Represents a collection of non-selectable dates in a <see cref="T:System.Windows.Controls.Calendar" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.CalendarBlackoutDatesCollection> contains <xref:System.Windows.Controls.CalendarDateRange> objects that specify multiple dates that cannot be selected by a user. To make all past dates not selectable, you can use the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast%2A> method.  
-  
+The <xref:System.Windows.Controls.CalendarBlackoutDatesCollection> contains <xref:System.Windows.Controls.CalendarDateRange> objects that specify multiple dates that cannot be selected by a user. To make all past dates not selectable, you can use the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast%2A> method.  
+ 
 <a name="xamlPropertyElementUsage_CalendarBlackoutDatesCollection"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-  <object.property>  
-    oneOrMoreCalendarDateRanges  
-  </object.property>  
+ <object.property>  
+   oneOrMoreCalendarDateRanges  
+ </object.property>  
 </object>  
-  
+ 
 ```  
-  
+ 
 <a name="xamlValues_CalendarBlackoutDatesCollection"></a>   
 ## XAML Values  
- *oneOrMoreCalendarDateRanges*  
- One or more object elements of type <xref:System.Windows.Controls.CalendarDateRange>.  
+*oneOrMoreCalendarDateRanges*  
+One or more object elements of type <xref:System.Windows.Controls.CalendarDateRange>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Calendar> in code and markup that has some dates that cannot be selected.  
-  
- [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
- [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
-  
- The preceding example produces output that is similar to the following illustration.  
-  
- ![Calendar with dates that cannot be selected.](~/add/media/ndp-calendarblackout.png "Calendar with dates that cannot be selected.")  
+The following example creates a <xref:System.Windows.Controls.Calendar> in code and markup that has some dates that cannot be selected.  
+ 
+[!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+[!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+[!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ 
+The preceding example produces output that is similar to the following illustration.  
+ 
+![Calendar with dates that cannot be selected.](~/add/media/ndp-calendarblackout.png "Calendar with dates that cannot be selected.")  
 Calendar with dates that cannot be selected  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,22 +91,22 @@ Calendar with dates that cannot be selected
         <summary>Adds all dates before <see cref="P:System.DateTime.Today" /> to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to prevent users from selecting dates that are in the past.  
+Use this method to prevent users from selecting dates that are in the past.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Calendar> that includes a <xref:System.Windows.FrameworkElement.Loaded> event handler.  
-  
- [!code-xml[CalendarSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#6)]  
-  
- The following example shows the <xref:System.Windows.FrameworkElement.Loaded> event handler. The event handler calls the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast%2A> method to make only future dates selectable.  
-  
- [!code-csharp[CalendarSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#7)]
- [!code-vb[CalendarSnippets#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#7)]  
-  
+The following example creates a <xref:System.Windows.Controls.Calendar> that includes a <xref:System.Windows.FrameworkElement.Loaded> event handler.  
+ 
+[!code-xml[CalendarSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#6)]  
+ 
+The following example shows the <xref:System.Windows.FrameworkElement.Loaded> event handler. The event handler calls the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast%2A> method to make only future dates selectable.  
+ 
+[!code-csharp[CalendarSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#7)]
+[!code-vb[CalendarSnippets#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -26,14 +26,14 @@
     <summary>Represents a connector between two activity designers on a workflow design surface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A connector is the line that appears on a workflow design surface that connects one activity designer to another. <xref:System.Workflow.ComponentModel.Design.Connector> provides methods and properties that allow you to customize how to draw a set of connectors when an activity designer is rendered at design time.  
-  
+ 
+A connector is the line that appears on a workflow design surface that connects one activity designer to another. <xref:System.Workflow.ComponentModel.Design.Connector> provides methods and properties that allow you to customize how to draw a set of connectors when an activity designer is rendered at design time.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -155,10 +155,10 @@
           <see langword="true" /> if the specified connector is equal to the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Equals verifies that both the <xref:System.Workflow.ComponentModel.Design.Connector.Source%2A> and <xref:System.Workflow.ComponentModel.Design.Connector.Target%2A> properties of the two connectors hold references to the same <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> objects.  
-  
+Equals verifies that both the <xref:System.Workflow.ComponentModel.Design.Connector.Source%2A> and <xref:System.Workflow.ComponentModel.Design.Connector.Target%2A> properties of the two connectors hold references to the same <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,10 +221,10 @@
         <returns>A service object of type <paramref name="serviceType" /> or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no service object of type <paramref name="serviceType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.Connector.GetService%2A> returns the service object available through <xref:System.Workflow.ComponentModel.Design.Connector.ParentDesigner%2A>.  
-  
+<xref:System.Workflow.ComponentModel.Design.Connector.GetService%2A> returns the service object available through <xref:System.Workflow.ComponentModel.Design.Connector.ParentDesigner%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
           <see langword="true" /> if <paramref name="point" /> resides on the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, <xref:System.Workflow.ComponentModel.Design.Connector.HitTest%2A> indicates whether a user has clicked a point on a connector displayed on a workflow design surface.  
-  
+Typically, <xref:System.Workflow.ComponentModel.Design.Connector.HitTest%2A> indicates whether a user has clicked a point on a connector displayed on a workflow design surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,10 +276,10 @@
         <summary>Invalidates the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> and causes it to be redrawn.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.Connector.Invalidate%2A> causes all contents found in <xref:System.Workflow.ComponentModel.Design.Connector.Bounds%2A> to be included in the update region for the <xref:System.Workflow.ComponentModel.Design.Connector.ParentDesigner%2A>.  
-  
+<xref:System.Workflow.ComponentModel.Design.Connector.Invalidate%2A> causes all contents found in <xref:System.Workflow.ComponentModel.Design.Connector.Bounds%2A> to be included in the update region for the <xref:System.Workflow.ComponentModel.Design.Connector.ParentDesigner%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@
         <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> that layout operations are occurring.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.Connector.OnLayout%2A> clears <xref:System.Workflow.ComponentModel.Design.Connector.ConnectorSegments%2A> and repopulates it with a new range of points.  
-  
+<xref:System.Workflow.ComponentModel.Design.Connector.OnLayout%2A> clears <xref:System.Workflow.ComponentModel.Design.Connector.ConnectorSegments%2A> and repopulates it with a new range of points.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,10 +378,10 @@
         <summary>Used for drawing the Connector when it is dragged from one state to another.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when a user is creating a connector, moving a middle point or moving an endpoint from one activity to another.  
-  
+This method is called when a user is creating a connector, moving a middle point or moving an endpoint from one activity to another.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@
         <value>The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> that is associated with the connector.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.Connector.ParentView%2A> provides access to the workflow design surface on which the connector appears.  
-  
+<xref:System.Workflow.ComponentModel.Design.Connector.ParentView%2A> provides access to the workflow design surface on which the connector appears.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -471,10 +471,10 @@
         <summary>Performs layout tasks for the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.Connector.PerformLayout%2A> calls the <xref:System.Workflow.ComponentModel.Design.WorkflowView.PerformLayout%2A?displayProperty=fullName> method and specifies that the layout update does not need to occur immediately.  
-  
+<xref:System.Workflow.ComponentModel.Design.Connector.PerformLayout%2A> calls the <xref:System.Workflow.ComponentModel.Design.WorkflowView.PerformLayout%2A?displayProperty=fullName> method and specifies that the layout update does not need to occur immediately.  
+ 
  ]]></format>
         </remarks>
       </Docs>

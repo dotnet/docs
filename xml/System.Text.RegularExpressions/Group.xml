@@ -26,12 +26,12 @@
     <summary>Represents the results from a single capturing group.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A capturing group can capture zero, one, or more strings in a single match because of quantifiers. (For more information, see [Quantifiers](~/docs/standard/base-types/quantifiers-in-regular-expressions.md).) All the substrings matched by a single capturing group are available from the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> property. Information about the last substring captured can be accessed directly from the `Value` and `Index` properties. (That is, the <xref:System.Text.RegularExpressions.Group> instance is equivalent to the last item of the collection returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A> property, which reflects the last capture made by the capturing group.)  
-  
- An example helps to clarify this relationship between a <xref:System.Text.RegularExpressions.Group> object and the <xref:System.Text.RegularExpressions.CaptureCollection?displayProperty=fullName> that is returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A> property. The regular expression pattern `(\b(\w+?)[,:;]?\s?)+[?.!]` matches entire sentences. The regular expression is defined as shown in the following table.  
-  
+A capturing group can capture zero, one, or more strings in a single match because of quantifiers. (For more information, see [Quantifiers](~/docs/standard/base-types/quantifiers-in-regular-expressions.md).) All the substrings matched by a single capturing group are available from the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> property. Information about the last substring captured can be accessed directly from the `Value` and `Index` properties. (That is, the <xref:System.Text.RegularExpressions.Group> instance is equivalent to the last item of the collection returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A> property, which reflects the last capture made by the capturing group.)  
+ 
+An example helps to clarify this relationship between a <xref:System.Text.RegularExpressions.Group> object and the <xref:System.Text.RegularExpressions.CaptureCollection?displayProperty=fullName> that is returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A> property. The regular expression pattern `(\b(\w+?)[,:;]?\s?)+[?.!]` matches entire sentences. The regular expression is defined as shown in the following table.  
+ 
 |Pattern|Description|  
 |-------------|-----------------|  
 |`\b`|Begin the match at a word boundary.|  
@@ -40,12 +40,12 @@
 |`\s?`|Match zero or one occurrence of a white-space character.|  
 |`(\b(\w+?)[,:;]?\s?)+`|Match the pattern consisting of a word boundary, one or more word characters, a punctuation symbol, and a white-space character one or more times. This is the first capturing group.|  
 |`[?.!]`|Match any occurrence of a period, question mark, or exclamation point.|  
-  
- In this regular expression pattern, the subpattern `(\w+?)` is designed to match multiple words within a sentence. However, the value of the <xref:System.Text.RegularExpressions.Group> object represents only the last match that `(\w+?)` captures, whereas the <xref:System.Text.RegularExpressions.Group.Captures%2A> property returns a <xref:System.Text.RegularExpressions.CaptureCollection> that represents all captured text. As the output shows, the <xref:System.Text.RegularExpressions.CaptureCollection> for the second capturing group contains four objects. The last of these corresponds to the <xref:System.Text.RegularExpressions.Group> object.  
-  
- [!code-csharp[System.Text.RegularExpressions.Group.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.group.class/cs/groupandcaptures1.cs#1)]
- [!code-vb[System.Text.RegularExpressions.Group.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.group.class/vb/groupandcaptures1.vb#1)]  
-  
+ 
+In this regular expression pattern, the subpattern `(\w+?)` is designed to match multiple words within a sentence. However, the value of the <xref:System.Text.RegularExpressions.Group> object represents only the last match that `(\w+?)` captures, whereas the <xref:System.Text.RegularExpressions.Group.Captures%2A> property returns a <xref:System.Text.RegularExpressions.CaptureCollection> that represents all captured text. As the output shows, the <xref:System.Text.RegularExpressions.CaptureCollection> for the second capturing group contains four objects. The last of these corresponds to the <xref:System.Text.RegularExpressions.Group> object.  
+ 
+[!code-csharp[System.Text.RegularExpressions.Group.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.group.class/cs/groupandcaptures1.cs#1)]
+[!code-vb[System.Text.RegularExpressions.Group.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.group.class/vb/groupandcaptures1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,18 +79,18 @@
         <value>The collection of substrings matched by the group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a quantifier is not applied to a capturing group, the collection returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A> property contains a single <xref:System.Text.RegularExpressions.Capture> object that provides information about the same substring as the <xref:System.Text.RegularExpressions.Group> object. This is illustrated in the following example. It defines a regular expression, `\b(\w+)\b`, that extracts a single word from a sentence. The <xref:System.Text.RegularExpressions.Group> object captures the word "This", and the single object in the <xref:System.Text.RegularExpressions.CaptureCollection> contains information about the same capture.  
-  
- [!code-csharp[System.Text.RegularExpressions.Group.Captures#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.group.captures/cs/captures1.cs#1)]
- [!code-vb[System.Text.RegularExpressions.Group.Captures#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.group.captures/vb/captures1.vb#1)]  
-  
- The real utility of the <xref:System.Text.RegularExpressions.Group.Captures%2A> property occurs when a quantifier is applied to a capturing group so that the group captures multiple substrings in a single regular expression. In this case, the <xref:System.Text.RegularExpressions.Group> object contains information about the last captured substring, whereas the <xref:System.Text.RegularExpressions.Group.Captures%2A> property contains information about all the substrings captured by the group. In the following example, the regular expression `\b(\w+\s*)+\.` matches an entire sentence that ends in a period. The group `(\w+\s*)+` captures the individual words in the collection. Because the <xref:System.Text.RegularExpressions.Group> collection contains information only about the last captured substring, it captures the last word in the sentence, "sentence". However, each word captured by the group is available from the collection returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A> property.  
-  
- [!code-csharp[System.Text.RegularExpressions.Group.Captures#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.group.captures/cs/captures2.cs#2)]
- [!code-vb[System.Text.RegularExpressions.Group.Captures#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.group.captures/vb/captures2.vb#2)]  
-  
+If a quantifier is not applied to a capturing group, the collection returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A> property contains a single <xref:System.Text.RegularExpressions.Capture> object that provides information about the same substring as the <xref:System.Text.RegularExpressions.Group> object. This is illustrated in the following example. It defines a regular expression, `\b(\w+)\b`, that extracts a single word from a sentence. The <xref:System.Text.RegularExpressions.Group> object captures the word "This", and the single object in the <xref:System.Text.RegularExpressions.CaptureCollection> contains information about the same capture.  
+ 
+[!code-csharp[System.Text.RegularExpressions.Group.Captures#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.group.captures/cs/captures1.cs#1)]
+[!code-vb[System.Text.RegularExpressions.Group.Captures#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.group.captures/vb/captures1.vb#1)]  
+ 
+The real utility of the <xref:System.Text.RegularExpressions.Group.Captures%2A> property occurs when a quantifier is applied to a capturing group so that the group captures multiple substrings in a single regular expression. In this case, the <xref:System.Text.RegularExpressions.Group> object contains information about the last captured substring, whereas the <xref:System.Text.RegularExpressions.Group.Captures%2A> property contains information about all the substrings captured by the group. In the following example, the regular expression `\b(\w+\s*)+\.` matches an entire sentence that ends in a period. The group `(\w+\s*)+` captures the individual words in the collection. Because the <xref:System.Text.RegularExpressions.Group> collection contains information only about the last captured substring, it captures the last word in the sentence, "sentence". However, each word captured by the group is available from the collection returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A> property.  
+ 
+[!code-csharp[System.Text.RegularExpressions.Group.Captures#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.group.captures/cs/captures2.cs#2)]
+[!code-vb[System.Text.RegularExpressions.Group.Captures#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.group.captures/vb/captures2.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
           <see langword="true" /> if the match is successful; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Success` property is true if at least one substring was captured by this group. It is equivalent to the Boolean expression (Group.Captures.Count > 0).  
-  
+The `Success` property is true if at least one substring was captured by this group. It is equivalent to the Boolean expression (Group.Captures.Count > 0).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,12 +14,12 @@
     <summary>Represents the <see langword="&lt;serviceCertificate&gt;" /> element in a configuration file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `<serviceCertificate>` element is a child element of the `<federationConfiguration>` element and configures the X.509 certificate, if any, that is used to encrypt and decrypt tokens when using WS-Federation.  
-  
- The <xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.ServiceCertificate%2A?displayProperty=fullName> property is an instance of <xref:System.IdentityModel.Services.ServiceCertificateElement>.  
-  
+The `<serviceCertificate>` element is a child element of the `<federationConfiguration>` element and configures the X.509 certificate, if any, that is used to encrypt and decrypt tokens when using WS-Federation.  
+ 
+The <xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.ServiceCertificate%2A?displayProperty=fullName> property is an instance of <xref:System.IdentityModel.Services.ServiceCertificateElement>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <value>The <see langword="&lt;certificateReference&gt;" /> element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `<certificateReference>` element contains settings that specify the location and verification parameters for the X.509 certificate to use to encrypt and decrypt tokens.  
-  
+The `<certificateReference>` element contains settings that specify the location and verification parameters for the X.509 certificate to use to encrypt and decrypt tokens.  
+ 
  ]]></format>
         </remarks>
       </Docs>

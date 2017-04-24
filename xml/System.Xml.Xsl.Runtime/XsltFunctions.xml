@@ -316,10 +316,10 @@
         <returns>A string that contains date/time information. If a string cannot be interpreted as a valid XSD date/time-related format, it returns an empty string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Converts date/time-related values into Coordinated Universal Time and into a fixed (normalized) representation that can be sorted and compared lexicographically.  
-  
+Converts date/time-related values into Coordinated Universal Time and into a fixed (normalized) representation that can be sorted and compared lexicographically.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -525,10 +525,10 @@
         <returns>The characters in s1 that occur after s2, or the empty string if s1 does not contain s2.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Locates a substring (s2) within a string (s1), and returns the characters in s1 that occur after s2.  
-  
+Locates a substring (s2) within a string (s1), and returns the characters in s1 that occur after s2.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -561,10 +561,10 @@
         <returns>The characters in s1 that occur before s2, or the empty string if s1 does not contain s2.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Locates a substring (s2) within a string (s1), and returns the characters in s1 that occur before s2.  
-  
+Locates a substring (s2) within a string (s1), and returns the characters in s1 that occur before s2.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -626,10 +626,10 @@
         <returns>The translated value as <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Converts a string (`arg`) by replacing the characters in a substring (`mapString`) with the characters in another string (`tranString`).  
-  
+Converts a string (`arg`) by replacing the characters in a substring (`mapString`) with the characters in another string (`tranString`).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

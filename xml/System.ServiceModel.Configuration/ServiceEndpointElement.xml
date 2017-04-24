@@ -72,10 +72,10 @@
         <value>A URI that contains the address of the endpoint. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The address can be specified as an absolute or relative address. If a relative address is provided, the host is expected to provide a base address appropriate for the transport scheme used in the binding. If an address is not configured, the base address is assumed to be the address for that endpoint.  
-  
+The address can be specified as an absolute or relative address. If a relative address is provided, the host is expected to provide a base address appropriate for the transport scheme used in the binding. If an address is not configured, the base address is assumed to be the address for that endpoint.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <value>The type of binding to use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type must have a registered configuration section in order to be referenced. The type is registered by section name, rather than by the type name of the binding.  
-  
+The type must have a registered configuration section in order to be referenced. The type is registered by section name, rather than by the type name of the binding.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <value>The binding name of the binding to use when the endpoint is instantiated. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The binding name must be in scope when the endpoint is defined.  
-  
+The binding name must be in scope when the endpoint is defined.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <value>The contract this endpoint is exposing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The assembly must implement the contract type. If a service implementation implements a single contract type, then this property can be omitted.  
-  
+The assembly must implement the contract type. If a service implementation implements a single contract type, then this property can be omitted.  
+ 
  ]]></format>
         </remarks>
       </Docs>

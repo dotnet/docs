@@ -18,10 +18,10 @@
     <summary>Provides extension methods for tuples to interoperate with language support for tuples in C#.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although these methods can be called directly, they are primarily intended for use by the C# compiler in creating and deconstructing tuples.  
-  
+Although these methods can be called directly, they are primarily intended for use by the C# compiler in creating and deconstructing tuples.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Deconstructs a tuple with 1 element into a separate variable.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <summary>Deconstructs a tuple with 2 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <summary>Deconstructs a tuple with 3 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <summary>Deconstructs a tuple with 4 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
         <summary>Deconstructs a tuple with 5 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,10 +306,10 @@
         <summary>Deconstructs a tuple with 6 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,10 +368,10 @@
         <summary>Deconstructs a tuple with 7 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,12 +434,12 @@
         <summary>Deconstructs a tuple with 8 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` is an element in a nested tuple.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` is an element in a nested tuple.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -506,12 +506,12 @@
         <summary>Deconstructs a tuple with 9 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` and `item9` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` and `item9` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -582,12 +582,12 @@
         <summary>Deconstructs a tuple with 10 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item10` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item10` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -662,12 +662,12 @@
         <summary>Deconstructs a tuple with 11 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item11` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item11` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -746,12 +746,12 @@
         <summary>Deconstructs a tuple with 12 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item12` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item12` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -834,12 +834,12 @@
         <summary>Deconstructs a tuple with 13 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item13` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item13` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1013,12 +1013,12 @@
         <summary>Deconstructs a tuple with 15 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item15` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item15` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1113,12 +1113,12 @@
         <summary>Deconstructs a tuple with 16 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item16` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item16` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1217,12 +1217,12 @@
         <summary>Deconstructs a tuple with 17 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item17` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item17` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1325,12 +1325,12 @@
         <summary>Deconstructs a tuple with 18 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item18` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item18` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1437,12 +1437,12 @@
         <summary>Deconstructs a tuple with 19 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item19` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item19` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1664,12 +1664,12 @@
         <summary>Deconstructs a tuple with 21 elements into separate variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented primarily to support the tuple language features in C#.  
-  
- Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item21` are elements of nested tuples.  
-  
+This method is implemented primarily to support the tuple language features in C#.  
+ 
+Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item21` are elements of nested tuples.  
+ 
  ]]></format>
         </remarks>
       </Docs>

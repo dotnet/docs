@@ -47,17 +47,17 @@
         <value>The background <see cref="T:System.Windows.Media.Brush" /> used to fill the content of the <see cref="T:System.Windows.Documents.TableColumn" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Background"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.TableColumn>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,17 +96,17 @@
         <value>The width of the <see cref="T:System.Windows.Documents.TableColumn" /> element, as a <see cref="T:System.Windows.GridLength" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Width"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.TableColumn>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

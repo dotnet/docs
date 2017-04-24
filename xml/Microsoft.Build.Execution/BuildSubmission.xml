@@ -14,10 +14,10 @@
     <summary>Represents a build request that has been submitted to the build manager for processing. The methods of this class may be used to execute synchronous or asynchronous build requests and to provide access to the results upon completion.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is thread-safe.  
-  
+This class is thread-safe.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <value>Returns the result of the build.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The result is not valid until <xref:Microsoft.Build.Execution.BuildSubmission.WaitHandle%2A> is signalled.  
-  
+The result is not valid until <xref:Microsoft.Build.Execution.BuildSubmission.WaitHandle%2A> is signalled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <value>Returns an ID uniquely identifying this build submission.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This ID is used to distinguish this build submission from other build submissions within the same build.  
-  
+This ID is used to distinguish this build submission from other build submissions within the same build.  
+ 
  ]]></format>
         </remarks>
       </Docs>

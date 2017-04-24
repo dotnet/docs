@@ -14,12 +14,12 @@
     <summary>Represents the configuration section for sockets, IPv6, response headers, and service points. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class corresponds to the [\&lt;settings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md) configuration element.  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
+This class corresponds to the [\&lt;settings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md) configuration element.  
+ 
+This class provides programmatic access to information that can be stored in configuration files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -181,10 +181,10 @@
  The configuration element that that controls setting used network performance counters for connections to remote host computers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The settings correspond to properties in the <xref:System.Net.ServicePointManager> class.  
-  
+The settings correspond to properties in the <xref:System.Net.ServicePointManager> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

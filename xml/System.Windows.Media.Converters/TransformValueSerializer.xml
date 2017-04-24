@@ -14,17 +14,17 @@
     <summary>Converts instances of <see cref="T:System.String" /> to and from instances of <see cref="T:System.Windows.Media.Transform" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is typically only utilized by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+This class is typically only utilized by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+ 
   
-   
-  
+ 
 ## Examples  
- <xref:System.Windows.Markup.Primitives.MarkupWriter>  
-  
- <xref:System.Windows.Media.Transform>  
-  
+<xref:System.Windows.Markup.Primitives.MarkupWriter>  
+ 
+<xref:System.Windows.Media.Transform>  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
           <see langword="true" /> if the value can be converted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns `true`.  
-  
+This method always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

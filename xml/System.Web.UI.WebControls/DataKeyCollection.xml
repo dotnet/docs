@@ -18,26 +18,26 @@
     <summary>Represents a collection that contains the key field of each record in a data source. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataKeyCollection> class represents a collection of the key fields in the data source. The key field of each record in the data source is stored in this collection. This allows you to store the key field with a data listing control without displaying it in the control. This collection is automatically filled with the values from the field specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A?displayProperty=fullName> property. This collection does not allow you to manually add or remove items from the collection.  
-  
- The key field is commonly used in a handler for an event, such as `ItemCommand` or `DeleteCommand`, as part of an update query string to revise a specific record in the data source. The key field helps the update query string identify the appropriate record to modify.  
-  
- Use the <xref:System.Web.UI.WebControls.DataKeyCollection.Count%2A> property to determine the number of items in the collection. To programmatically retrieve a key field from a <xref:System.Web.UI.WebControls.DataKeyCollection>, use one of following methods:  
-  
+The <xref:System.Web.UI.WebControls.DataKeyCollection> class represents a collection of the key fields in the data source. The key field of each record in the data source is stored in this collection. This allows you to store the key field with a data listing control without displaying it in the control. This collection is automatically filled with the values from the field specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A?displayProperty=fullName> property. This collection does not allow you to manually add or remove items from the collection.  
+ 
+The key field is commonly used in a handler for an event, such as `ItemCommand` or `DeleteCommand`, as part of an update query string to revise a specific record in the data source. The key field helps the update query string identify the appropriate record to modify.  
+ 
+Use the <xref:System.Web.UI.WebControls.DataKeyCollection.Count%2A> property to determine the number of items in the collection. To programmatically retrieve a key field from a <xref:System.Web.UI.WebControls.DataKeyCollection>, use one of following methods:  
+ 
 -   Use the indexer to get a single key field from the collection, using array notation.  
-  
+ 
 -   Use the <xref:System.Web.UI.WebControls.DataKeyCollection.CopyTo%2A> method to copy the contents of the collection to a <xref:System.Array?displayProperty=fullName> object, which can then be used to get items from the collection.  
-  
+ 
 -   Use the <xref:System.Web.UI.WebControls.DataKeyCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> implemented object, which can then be used to get items from the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  -->  
-  
+<!-- TODO: review snippet reference [!code-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataKeyCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataKeyCollection> class.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataKeyCollection> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,13 +89,13 @@
         <summary>Copies all the items from the <see cref="T:System.Web.UI.WebControls.DataKeyCollection" /> to the specified <see cref="T:System.Array" /> object, starting at the specified index in the <see cref="T:System.Array" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to copy the contents of the <xref:System.Web.UI.WebControls.DataKeyCollection> into the specified <xref:System.Array?displayProperty=fullName> object, starting at the specified index.  
-  
+Use this method to copy the contents of the <xref:System.Web.UI.WebControls.DataKeyCollection> into the specified <xref:System.Array?displayProperty=fullName> object, starting at the specified index.  
+ 
 > [!NOTE]
 >  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=fullName> object.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,10 +117,10 @@
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DataKeyCollection.Count%2A> property to determine the number of items in the collection. This property is commonly used when iterating through the collection to determine the upper bound.  
-  
+Use the <xref:System.Web.UI.WebControls.DataKeyCollection.Count%2A> property to determine the number of items in the collection. This property is commonly used when iterating through the collection to determine the upper bound.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,19 +143,19 @@
         <returns>A <see cref="T:System.Collections.IEnumerator" /> implemented object that contains all key fields in the <see cref="T:System.Web.UI.WebControls.DataKeyCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> implemented object that can be iterated through to get each item in the <xref:System.Web.UI.WebControls.DataKeyCollection>.  
-  
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
-  
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
-  
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to its initial position.  
-  
+Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> implemented object that can be iterated through to get each item in the <xref:System.Web.UI.WebControls.DataKeyCollection>.  
+ 
+Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+ 
+Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+ 
+Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to its initial position.  
+ 
 > [!NOTE]
 >  After you create a <xref:System.Collections.IEnumerator?displayProperty=fullName> implemented object or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
           <see langword="false" /> for all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `false` to indicate that the <xref:System.Web.UI.WebControls.DataKeyCollection> can be written to in all cases.  
-  
+This property always returns `false` to indicate that the <xref:System.Web.UI.WebControls.DataKeyCollection> can be written to in all cases.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,12 +204,12 @@
           <see langword="false" /> for all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> interface and is overridden to always return `false` to indicate that the <xref:System.Web.UI.WebControls.DataKeyCollection> is not thread-safe.  
-  
- For more information on the <xref:System.Web.UI.WebControls.DataKeyCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
-  
+This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> interface and is overridden to always return `false` to indicate that the <xref:System.Web.UI.WebControls.DataKeyCollection> is not thread-safe.  
+ 
+For more information on the <xref:System.Web.UI.WebControls.DataKeyCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,16 +235,16 @@
         <value>The key field at the specified index in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this indexer to get the key field from the <xref:System.Web.UI.WebControls.DataKeyCollection> at the specified index, using array notation.  
+Use this indexer to get the key field from the <xref:System.Web.UI.WebControls.DataKeyCollection> at the specified index, using array notation.  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  -->  
-  
+<!-- TODO: review snippet reference [!code-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,12 +266,12 @@
         <value>A <see cref="T:System.Object" /> that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object returned in this implementation is the <xref:System.Web.UI.WebControls.DataKeyCollection> object itself.  
-  
- For more information on the <xref:System.Web.UI.WebControls.DataKeyCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
-  
+The object returned in this implementation is the <xref:System.Web.UI.WebControls.DataKeyCollection> object itself.  
+ 
+For more information on the <xref:System.Web.UI.WebControls.DataKeyCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -16,10 +16,10 @@
     <summary>Contains properties and methods that when implemented by a <see cref="T:System.Xml.XmlDictionaryWriter" />, allows processing of XML fragments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class defines the properties and methods related to the capability of an <xref:System.Xml.XmlDictionaryWriter> to redirect part of its output (a 'fragment') to a different stream than the stream it was created with and to directly insert such a fragment captured by redirection back into the main stream of the same writer at a later point.  
-  
+This class defines the properties and methods related to the capability of an <xref:System.Xml.XmlDictionaryWriter> to redirect part of its output (a 'fragment') to a different stream than the stream it was created with and to directly insert such a fragment captured by redirection back into the main stream of the same writer at a later point.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
           <see langword="true" /> if this <see cref="T:System.Xml.XmlDictionaryWriter" /> can process XML fragments; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns t`r`ue if the writer that implements this interface can generate and accept XML fragments.  
-  
+Returns t`r`ue if the writer that implements this interface can generate and accept XML fragments.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,10 +77,10 @@
         <summary>Ends the processing of an XML fragment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Stops redirecting output to the stream supplied by the matching `StartFragment` call. After this call, the XML writing output goes to the stream originally used by the writer before the `StartFragment` call.  
-  
+Stops redirecting output to the stream supplied by the matching `StartFragment` call. After this call, the XML writing output goes to the stream originally used by the writer before the `StartFragment` call.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <summary>Starts the processing of an XML fragment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Temporarily starts redirecting the writing of the XML output to the supplied stream until `EndFragment` is called. If `generateSelfContainedTextFragment` is `true`, then the redirected XML output is always text XML and is self-contained in terms of its namespace context. `StartFragment`() calls cannot be nested.  
-  
+Temporarily starts redirecting the writing of the XML output to the supplied stream until `EndFragment` is called. If `generateSelfContainedTextFragment` is `true`, then the redirected XML output is always text XML and is self-contained in terms of its namespace context. `StartFragment`() calls cannot be nested.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,14 +149,14 @@
         <summary>Writes an XML fragment to the underlying stream of the writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Writes a fragment captured between `StartFragment` and `EndFragment` and calls back into the XmlDictionaryWriter's main stream. The fragment written is `count` bytes starting at the index `offset` from the supplied `buffer`. The behavior is undefined if the supplied fragment was not captured using this writer instance.  
+Writes a fragment captured between `StartFragment` and `EndFragment` and calls back into the XmlDictionaryWriter's main stream. The fragment written is `count` bytes starting at the index `offset` from the supplied `buffer`. The behavior is undefined if the supplied fragment was not captured using this writer instance.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```  
 MemoryStream stream = new MemoryStream();  
 MemoryStream fragmentStream = new MemoryStream();  
@@ -179,7 +179,7 @@ writer.WriteEndElement();
 fragmentWriter.WriteFragment(fragmentStream.GetBuffer(), 0, (int)fragmentStream.Length);  
 writer.WriteEndElement(); // Root  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

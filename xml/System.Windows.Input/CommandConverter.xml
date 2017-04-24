@@ -14,10 +14,10 @@
     <summary>Converts an <see cref="T:System.Windows.Input.ICommand" /> object to and from other types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.CommandConverter> class only converts an instance of <xref:System.Windows.Input.ICommand> to and from a <xref:System.String>.  
-  
+The <xref:System.Windows.Input.CommandConverter> class only converts an instance of <xref:System.Windows.Input.ICommand> to and from a <xref:System.String>.  
+ 
 <a name="xamlTextUsage_CommandConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -114,10 +114,10 @@
         <returns>The converted object, or <see langword="null" /> if <paramref name="source" /> is an empty string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.CommandConverter> class only converts an instance of <xref:System.Windows.Input.ICommand> to and from a <xref:System.String>. Also, the command must be an existing command, or must be assigned to a public static property or public static field.  
-  
+The <xref:System.Windows.Input.CommandConverter> class only converts an instance of <xref:System.Windows.Input.ICommand> to and from a <xref:System.String>. Also, the command must be an existing command, or must be assigned to a public static property or public static field.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -151,10 +151,10 @@
         <returns>The converted object, or an empty string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.CommandConverter> class only converts an instance of <xref:System.Windows.Input.ICommand> to and from a <xref:System.String>. Only existing (noncustom) commands can be returned.  
-  
+The <xref:System.Windows.Input.CommandConverter> class only converts an instance of <xref:System.Windows.Input.ICommand> to and from a <xref:System.String>. Only existing (noncustom) commands can be returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

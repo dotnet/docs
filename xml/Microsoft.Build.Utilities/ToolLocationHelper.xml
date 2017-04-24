@@ -14,13 +14,13 @@
     <summary>Provides utility methods for locating [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] and [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK files and directories.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
-  
- [!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
- [!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
+ 
+[!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
+[!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,12 +74,12 @@
         <returns>Returns list of <see langword="AssemblyFoldersExInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enumerates the `AssemblyFoldersEx` registry location and returns the list of `AssemblyFoldersExInfo`in the same order that they are searched for reference assemblies at design and build time.  
-  
- On a 64-bit operating system, if targeting 64-bit, add in the 64-bit hive then the 32-bit hive; if targeting 32-bit, add in the 32-bit hive then the 64-bit hive. On 32-bit machine only add in the 32-bit hive.  
-  
+This method enumerates the `AssemblyFoldersEx` registry location and returns the list of `AssemblyFoldersExInfo`in the same order that they are searched for reference assemblies at design and build time.  
+ 
+On a 64-bit operating system, if targeting 64-bit, add in the 64-bit hive then the 32-bit hive; if targeting 32-bit, add in the 32-bit hive then the 64-bit hive. On 32-bit machine only add in the 32-bit hive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,12 +107,12 @@
         <returns>Returns a display name given the target framework details.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the equivalent of the target framework moniker, but for display.  
-  
- If one cannot be found from the redist list file, a synthesized one is returned, so there is always a display name.  
-  
+This is the equivalent of the target framework moniker, but for display.  
+ 
+If one cannot be found from the redist list file, a synthesized one is returned, so there is always a display name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,10 +252,10 @@
         <returns>Returns the prefix of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] folder.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of the value returned is the string "v2.0".  
-  
+An example of the value returned is the string "v2.0".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,13 +329,13 @@
         <returns>A string containing the fully qualified path to the specified file, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
-  
- [!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
- [!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
+ 
+[!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
+[!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -457,12 +457,12 @@
         <returns>A string containing the fully qualified path to the \bin directory of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The path for the SDK takes in consideration the processor architecture environment information for the calling process, so it might end up being ".../bin/i64", for example.  
-  
- Unlike <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> and <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToSystemFile%2A> this method checks for the existence of the file, so that an invalid `fileName` returns null.  
-  
+The path for the SDK takes in consideration the processor architecture environment information for the calling process, so it might end up being ".../bin/i64", for example.  
+ 
+Unlike <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> and <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToSystemFile%2A> this method checks for the existence of the file, so that an invalid `fileName` returns null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -568,10 +568,10 @@
         <returns>Returns the paths to the reference assemblies location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method assumes that the requested ReferenceAssemblyRoot path will be the ProgramFiles directory that is specified by Environment.SpecialFolder.ProgramFiles. In addition, when the .NETFramework or .NET Framework targetFrameworkIdentifiers are seen and targetFrameworkVersion is 2.0, 3.0, 3.5, or 4, the correctly chained reference assembly paths for the legacy .NET Framework versions will be returned. This chaining will use the existing GetPathToDotNetFrameworkReferenceAssemblies to build up the list of reference assembly paths.  
-  
+This method assumes that the requested ReferenceAssemblyRoot path will be the ProgramFiles directory that is specified by Environment.SpecialFolder.ProgramFiles. In addition, when the .NETFramework or .NET Framework targetFrameworkIdentifiers are seen and targetFrameworkVersion is 2.0, 3.0, 3.5, or 4, the correctly chained reference assembly paths for the legacy .NET Framework versions will be returned. This chaining will use the existing GetPathToDotNetFrameworkReferenceAssemblies to build up the list of reference assembly paths.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">When the frameworkName is null</exception>
@@ -600,10 +600,10 @@
         <returns>Returns the paths to the reference assemblies location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not check to see if the path exists or not.  
-  
+This method does not check to see if the path exists or not.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -712,10 +712,10 @@
         <returns>A string containing the fully qualified path to the the file in the system directory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This API builds the full path plus filename for a file in the System folder. It doesn't check for the existence of the file prior to returning.  
-  
+This API builds the full path plus filename for a file in the System folder. It doesn't check for the existence of the file prior to returning.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1338,10 +1338,10 @@
         <value>A string containing a directory path to the system directory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of the value returned is the string "C:\WinNT\System32".  
-  
+An example of the value returned is the string "C:\WinNT\System32".  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Derive from this class to implement a custom state machine for receive context functionality.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Receive context functionality is two-fold. When working with a queued channel, receive context allows you to lock a message prior to processing it. If a failure occurs, the message remains locked so that the service that is processing the message maintains ownership (another service cannot receive and process the same message) and may choose to perform some other action on it. When working with a one-way channel, receive context allows a service to control when it sends an acknowledgement message or it can indicate a problem by sending a negative acknowledgement message. The client can then choose to resend the message if it receives a negative acknowledgement or if it does not receive an acknowledgement within a certain period of time.  
-  
+Receive context functionality is two-fold. When working with a queued channel, receive context allows you to lock a message prior to processing it. If a failure occurs, the message remains locked so that the service that is processing the message maintains ownership (another service cannot receive and process the same message) and may choose to perform some other action on it. When working with a one-way channel, receive context allows a service to control when it sends an acknowledgement message or it can indicate a problem by sending a negative acknowledgement message. The client can then choose to resend the message if it receives a negative acknowledgement or if it does not receive an acknowledgement within a certain period of time.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -577,28 +577,28 @@
         <summary>Causes the state machine to transition to the abandoned state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> may hang when there is an ambient transaction and <xref:System.ServiceModel.Channels.ReceiveContext.Complete%2A> is called and afterwards the transaction is rolled back. If <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> is called prior to the transaction rollback completing, a race condition will exist, causing the call to <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> to hang. This can be illustrated by the following pseudo-code example  
-  
+<xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> may hang when there is an ambient transaction and <xref:System.ServiceModel.Channels.ReceiveContext.Complete%2A> is called and afterwards the transaction is rolled back. If <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> is called prior to the transaction rollback completing, a race condition will exist, causing the call to <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> to hang. This can be illustrated by the following pseudo-code example  
+ 
 ```  
 using (TransactionScope ts = new TransactionScope())   
 {  
-   try  
-   {  
-       rc.Complete();  
-      ...  
-   }  
-   Catch (Exception)   
-   {  
-      rc.Abandon()  
-   }  
+  try  
+  {  
+      rc.Complete();  
+     ...  
+  }  
+  Catch (Exception)   
+  {  
+     rc.Abandon()  
+  }  
 }  
-  
+ 
 ```  
-  
- This is not the recommended pattern for working with T:System.ServiceModel.Channels.RecieveContext. Instead the try/catch block should be placed outside of the transaction scope.  
-  
+ 
+This is not the recommended pattern for working with T:System.ServiceModel.Channels.RecieveContext. Instead the try/catch block should be placed outside of the transaction scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>

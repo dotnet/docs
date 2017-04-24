@@ -14,10 +14,10 @@
     <summary>Provides contextual location information for build events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.Framework.BuildEventContext> is especially useful in multiprocessor environments.  
-  
+<xref:Microsoft.Build.Framework.BuildEventContext> is especially useful in multiprocessor environments.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -196,10 +196,10 @@
         <summary>The node ID of the target the event was in when the event was triggered.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An integer value representing the node ID.  
-  
+An integer value representing the node ID.  
+ 
  ]]></format>
         </remarks>
       </Docs>

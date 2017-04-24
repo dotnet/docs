@@ -24,10 +24,10 @@
     <summary>Specifies the options for processing DTDs. The <see cref="T:System.Xml.DtdProcessing" /> enumeration is used by the <see cref="T:System.Xml.XmlReaderSettings" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property.  
-  
+This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,12 +59,12 @@
         <summary>Causes the DOCTYPE element to be ignored. No DTD processing occurs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  The DTD/DOCTYPE will be lost on output.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

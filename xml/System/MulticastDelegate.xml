@@ -31,33 +31,33 @@
     <summary>Represents a multicast delegate; that is, a delegate that can have more than one element in its invocation list.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.MulticastDelegate> is a special class. Compilers and other tools can derive from this class, but you cannot derive from it explicitly. The same is true of the <xref:System.Delegate> class.  
+<xref:System.MulticastDelegate> is a special class. Compilers and other tools can derive from this class, but you cannot derive from it explicitly. The same is true of the <xref:System.Delegate> class.  
+ 
+In addition to the methods that delegate types inherit from <xref:System.MulticastDelegate>, the common language runtime provides two special methods: `BeginInvoke` and `EndInvoke`. For more information about these methods, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+ 
+A <xref:System.MulticastDelegate> has a linked list of delegates, called an invocation list, consisting of one or more elements. When a multicast delegate is invoked, the delegates in the invocation list are called synchronously in the order in which they appear. If an error occurs during execution of the list then an exception is thrown.  
+ 
   
- In addition to the methods that delegate types inherit from <xref:System.MulticastDelegate>, the common language runtime provides two special methods: `BeginInvoke` and `EndInvoke`. For more information about these methods, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
-  
- A <xref:System.MulticastDelegate> has a linked list of delegates, called an invocation list, consisting of one or more elements. When a multicast delegate is invoked, the delegates in the invocation list are called synchronously in the order in which they appear. If an error occurs during execution of the list then an exception is thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following example defines a class, `StringContainer`, which includes a collection of strings. One of its members is the `CheckAndDisplayDelegate` delegate, which is used to display strings stored in a `StringContainer` object that satisfy particular criteria. The delegate takes a single string as a parameter and returns `void` (or, in Visual Basic, it's a `Sub` procedure). It also includes a method, `DisplayAllQualified`, that has a single parameter, a `CheckAndDisplayDelegate` delegate. This allows the method to be called and to display a set of strings that are filtered based on the methods that the delegate contains.  
-  
- The example also defines a utility class, `StringExtensions`, that has two methods:  
-  
+The following example defines a class, `StringContainer`, which includes a collection of strings. One of its members is the `CheckAndDisplayDelegate` delegate, which is used to display strings stored in a `StringContainer` object that satisfy particular criteria. The delegate takes a single string as a parameter and returns `void` (or, in Visual Basic, it's a `Sub` procedure). It also includes a method, `DisplayAllQualified`, that has a single parameter, a `CheckAndDisplayDelegate` delegate. This allows the method to be called and to display a set of strings that are filtered based on the methods that the delegate contains.  
+ 
+The example also defines a utility class, `StringExtensions`, that has two methods:  
+ 
 -   `ConStart`, which displays strings that begin with a consonant.  
-  
+ 
 -   `VowelStart`, which displays strings that begin with a vowel.  
-  
- Note that both methods include a single string parameter and return `void`. In other words, both methods can be assigned to the  `CheckAndDisplayDelegate` delegate.  
-  
- The `Test.Main` method is the application entry point. It instantiates a `StringContainer` object, populates it with strings, and creates two `CheckAndDisplayDelegate` delegates, `conStart` and `vowelStart`, that invoke a single method. It then calls the <xref:System.Delegate.Combine%2A?displayProperty=fullName> method to create the `multipleDelegates` delegate, which initially contains the `ConStart` and  `VowelStart` delegates. Note that when the `multipleDelegates` delegate is invoked, it displays all the strings in the collection in their original order. This is because each letter is passed separately to each delegate, and each letter meets the filtering criteria of only one of the two delegates. Finally, after calls to <xref:System.Delegate.Remove%2A?displayProperty=fullName> and <xref:System.Delegate.Combine%2A?displayProperty=fullName>, `multipleDelegates` contains two `conStart` delegates. When it is invoked, each string in the `StringContainer` object is displayed twice.  
-  
- [!code-cpp[Multicast Delegate Introduction#1](~/samples/snippets/cpp/VS_Snippets_CLR/Multicast Delegate Introduction/CPP/delegatestring.cpp#1)]
- [!code-csharp[Multicast Delegate Introduction#1](~/samples/snippets/csharp/VS_Snippets_CLR/Multicast Delegate Introduction/CS/delegatestring.cs#1)]
- [!code-vb[Multicast Delegate Introduction#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Multicast Delegate Introduction/VB/delegatestring.vb#1)]  
-  
+ 
+Note that both methods include a single string parameter and return `void`. In other words, both methods can be assigned to the  `CheckAndDisplayDelegate` delegate.  
+ 
+The `Test.Main` method is the application entry point. It instantiates a `StringContainer` object, populates it with strings, and creates two `CheckAndDisplayDelegate` delegates, `conStart` and `vowelStart`, that invoke a single method. It then calls the <xref:System.Delegate.Combine%2A?displayProperty=fullName> method to create the `multipleDelegates` delegate, which initially contains the `ConStart` and  `VowelStart` delegates. Note that when the `multipleDelegates` delegate is invoked, it displays all the strings in the collection in their original order. This is because each letter is passed separately to each delegate, and each letter meets the filtering criteria of only one of the two delegates. Finally, after calls to <xref:System.Delegate.Remove%2A?displayProperty=fullName> and <xref:System.Delegate.Combine%2A?displayProperty=fullName>, `multipleDelegates` contains two `conStart` delegates. When it is invoked, each string in the `StringContainer` object is displayed twice.  
+ 
+[!code-cpp[Multicast Delegate Introduction#1](~/samples/snippets/cpp/VS_Snippets_CLR/Multicast Delegate Introduction/CPP/delegatestring.cpp#1)]
+[!code-csharp[Multicast Delegate Introduction#1](~/samples/snippets/csharp/VS_Snippets_CLR/Multicast Delegate Introduction/CS/delegatestring.cs#1)]
+[!code-vb[Multicast Delegate Introduction#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Multicast Delegate Introduction/VB/delegatestring.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,10 +86,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.MulticastDelegate" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor cannot be used in application code. To create a delegate by specifying the name of an instance method, use an overload of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=fullName> method that specifies a method name and a target object. For example, the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.String%29?displayProperty=fullName> method overload creates a delegate for an instance method with a specified name.  
-  
+This constructor cannot be used in application code. To create a delegate by specifying the name of an instance method, use an overload of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=fullName> method that specifies a method name and a target object. For example, the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.String%29?displayProperty=fullName> method overload creates a delegate for an instance method with a specified name.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
@@ -120,10 +120,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.MulticastDelegate" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor cannot be used in application code. To create a delegate by specifying the name of a static method, use an overload of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=fullName> method that specifies a method name but does not specify a target object. For example, the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Type%2CSystem.String%29?displayProperty=fullName> method overload creates a static delegate for a method with a specified name.  
-  
+This constructor cannot be used in application code. To create a delegate by specifying the name of a static method, use an overload of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=fullName> method that specifies a method name but does not specify a target object. For example, the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Type%2CSystem.String%29?displayProperty=fullName> method overload creates a static delegate for a method with a specified name.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
@@ -218,12 +218,12 @@
           <see langword="true" /> if <paramref name="obj" /> and this instance have the same invocation lists; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two delegates are equal if they are not `null` and are of exactly the same type, their invocation lists contain the same number of elements, and every element in the invocation list of the first delegate is equal to the corresponding element in the invocation list of the second delegate.  
-  
- Two invocation list elements are equal if they invoke the same instance method on the same target instance, or they invoke the same static method.  
-  
+Two delegates are equal if they are not `null` and are of exactly the same type, their invocation lists contain the same number of elements, and every element in the invocation list of the first delegate is equal to the corresponding element in the invocation list of the second delegate.  
+ 
+Two invocation list elements are equal if they invoke the same instance method on the same target instance, or they invoke the same static method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
@@ -293,10 +293,10 @@
         <returns>An array of delegates whose invocation lists collectively match the invocation list of this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array contains a set of delegates, each with an invocation list of one entry. Invoking these delegates sequentially, in the order they appear in the array, produces the same results as invoking the current instance.  
-  
+The array contains a set of delegates, each with an invocation list of one entry. Invoking these delegates sequentially, in the order they appear in the array, produces the same results as invoking the current instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
@@ -326,10 +326,10 @@
         <returns>A static method represented by the current <see cref="T:System.MulticastDelegate" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.MulticastDelegate> represents multiple methods, only one method is returned.  
-  
+If the <xref:System.MulticastDelegate> represents multiple methods, only one method is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -361,12 +361,12 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with all the data needed to serialize this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method stores all the information in `info` necessary to serialize this instance.  
-  
- The `context` parameter is reserved and is not currently used in the execution of this method.  
-  
+This method stores all the information in `info` necessary to serialize this instance.  
+ 
+The `context` parameter is reserved and is not currently used in the execution of this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -412,12 +412,12 @@
           <see langword="true" /> if <paramref name="d1" /> and <paramref name="d2" /> have the same invocation lists; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two delegates are equal if they are not `null` and are of exactly the same type, their invocation lists contain the same number of elements, and every element in the invocation list of the first delegate is equal to the corresponding element in the invocation list of the second delegate.  
-  
- Two invocation list elements are equal if they invoke the same instance method on the same target instance, or they invoke the same static method.  
-  
+Two delegates are equal if they are not `null` and are of exactly the same type, their invocation lists contain the same number of elements, and every element in the invocation list of the first delegate is equal to the corresponding element in the invocation list of the second delegate.  
+ 
+Two invocation list elements are equal if they invoke the same instance method on the same target instance, or they invoke the same static method.  
+ 
  The equivalent method for this operator is <xref:System.MulticastDelegate.Equals%28System.Object%29?displayProperty=fullName>]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
@@ -460,12 +460,12 @@
           <see langword="true" /> if <paramref name="d1" /> and <paramref name="d2" /> do not have the same invocation lists; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two delegates are equal if they are not `null` and are of exactly the same type, their invocation lists contain the same number of elements, and every element in the invocation list of the first delegate is equal to the corresponding element in the invocation list of the second delegate.  
-  
- Two invocation list elements are equal if they invoke the same instance method on the same target instance, or they invoke the same static method.  
-  
+Two delegates are equal if they are not `null` and are of exactly the same type, their invocation lists contain the same number of elements, and every element in the invocation list of the first delegate is equal to the corresponding element in the invocation list of the second delegate.  
+ 
+Two invocation list elements are equal if they invoke the same instance method on the same target instance, or they invoke the same static method.  
+ 
  The equivalent method for this operator is <xref:System.MulticastDelegate.Equals%28System.Object%29?displayProperty=fullName>]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>

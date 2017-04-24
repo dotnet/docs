@@ -13,24 +13,24 @@
     <summary>Specifies the visual state of a track bar slider (also known as a thumb) that is drawn with visual styles.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.VisualStyles.TrackBarThumbState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the following classes:  
-  
+The <xref:System.Windows.Forms.VisualStyles.TrackBarThumbState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the following classes:  
+ 
 -   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.Thumb>  
-  
+ 
 -   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbBottom>  
-  
+ 
 -   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbLeft>  
-  
+ 
 -   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbRight>  
-  
+ 
 -   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbTop>  
-  
+ 
 -   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbVertical>  
-  
- The <xref:System.Windows.Forms.VisualStyles.TrackBarThumbState> values are also used as an argument in the <xref:System.Windows.Forms.TrackBarRenderer?displayProperty=fullName> class methods that draw the track bar slider.  
-  
+ 
+The <xref:System.Windows.Forms.VisualStyles.TrackBarThumbState> values are also used as an argument in the <xref:System.Windows.Forms.TrackBarRenderer?displayProperty=fullName> class methods that draw the track bar slider.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents the identifier used for SAML assertions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> class with a system-generated value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ID is created based on a generated GUID and the <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property is set accordingly.  
-  
+The ID is created based on a generated GUID and the <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property is set accordingly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> class with the specified value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier should be unique per [Saml2Core, 1.3.4] and must fit the NCName xml schema definition, that is, it must begin with a letter or underscore.  
-  
+The identifier should be unique per [Saml2Core, 1.3.4] and must fit the NCName xml schema definition, that is, it must begin with a letter or underscore.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -95,10 +95,10 @@
           <see langword="true" /> if the objects are equal; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the objects to be equal, the specified object must be an instance of the <xref:System.IdentityModel.Tokens.Saml2Id> class and its <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property must be equal to the <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property of this instance as determined by a string comparison.  
-  
+For the objects to be equal, the specified object must be an instance of the <xref:System.IdentityModel.Tokens.Saml2Id> class and its <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property must be equal to the <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property of this instance as determined by a string comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <returns>The string representation of the <see cref="T:System.IdentityModel.Tokens.Saml2Id" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property is returned.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <value>The ID string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier should be unique per [Saml2Core, 1.3.4] and must fit the NCName xml schema definition, that is, it must begin with a letter or underscore.  
-  
+The identifier should be unique per [Saml2Core, 1.3.4] and must fit the NCName xml schema definition, that is, it must begin with a letter or underscore.  
+ 
  ]]></format>
         </remarks>
       </Docs>

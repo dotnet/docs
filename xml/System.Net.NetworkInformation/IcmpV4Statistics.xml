@@ -23,20 +23,20 @@
     <summary>Provides Internet Control Message Protocol for IPv4 (ICMPv4) statistical data for the local computer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ICMPv4 is a set of error and informational messages for use with Internet Protocol version 4. ICMP version 4 is defined in IETF RFC 792.  
+ICMPv4 is a set of error and informational messages for use with Internet Protocol version 4. ICMP version 4 is defined in IETF RFC 792.  
+ 
+This class is used by the <xref:System.Net.NetworkInformation.IPGlobalProperties.GetIcmpV4Statistics%2A> method to return ICMPv4 traffic information.  
+ 
   
- This class is used by the <xref:System.Net.NetworkInformation.IPGlobalProperties.GetIcmpV4Statistics%2A> method to return ICMPv4 traffic information.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the current ICMPv4 statistics.  
-  
- [!code-cpp[NCLNetInfoReport#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#6)]
- [!code-csharp[NCLNetInfoReport#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#6)]  
-  
+The following example displays the current ICMPv4 statistics.  
+ 
+[!code-cpp[NCLNetInfoReport#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#6)]
+[!code-csharp[NCLNetInfoReport#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.IcmpV4Statistics" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor can be called only by classes that derive from <xref:System.Net.NetworkInformation.IcmpV4Statistics>.  
-  
+This constructor can be called only by classes that derive from <xref:System.Net.NetworkInformation.IcmpV4Statistics>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,19 +98,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Address Mask Reply messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Address Mask Request and Reply messages are used to determine the number of bits in the subnet mask for the local subnet.  
+Address Mask Request and Reply messages are used to determine the number of bits in the subnet mask for the local subnet.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#29)]
- [!code-csharp[NCLNetInfo2#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#29)]
- [!code-vb[NCLNetInfo2#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#29)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#29)]
+[!code-csharp[NCLNetInfo2#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#29)]
+[!code-vb[NCLNetInfo2#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#29)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,19 +141,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Address Mask Reply messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Address Mask Request and Reply messages are used to determine the number of bits in the subnet mask for the local subnet.  
+Address Mask Request and Reply messages are used to determine the number of bits in the subnet mask for the local subnet.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#29)]
- [!code-csharp[NCLNetInfo2#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#29)]
- [!code-vb[NCLNetInfo2#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#29)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#29)]
+[!code-csharp[NCLNetInfo2#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#29)]
+[!code-vb[NCLNetInfo2#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#29)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,19 +184,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Address Mask Request messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Address Mask Request and Reply messages are used to determine the number of bits in the subnet mask for the local subnet.  
+Address Mask Request and Reply messages are used to determine the number of bits in the subnet mask for the local subnet.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#29)]
- [!code-csharp[NCLNetInfo2#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#29)]
- [!code-vb[NCLNetInfo2#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#29)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#29)]
+[!code-csharp[NCLNetInfo2#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#29)]
+[!code-vb[NCLNetInfo2#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#29)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,19 +227,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Address Mask Request messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Address Mask Request and Reply messages are used to determine the number of bits in the subnet mask for the local subnet.  
+Address Mask Request and Reply messages are used to determine the number of bits in the subnet mask for the local subnet.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#29)]
- [!code-csharp[NCLNetInfo2#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#29)]
- [!code-vb[NCLNetInfo2#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#29)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#29)]
+[!code-csharp[NCLNetInfo2#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#29)]
+[!code-vb[NCLNetInfo2#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#29)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,27 +270,27 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Destination Unreachable messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Destination Unreachable message can be sent to the computer that is the source of a packet for any of the following reasons:  
-  
+A Destination Unreachable message can be sent to the computer that is the source of a packet for any of the following reasons:  
+ 
 -   The computer cannot find a route to the destination address.  
-  
+ 
 -   Communication with the destination address is administratively prohibited. For example, a firewall prevents delivery of packets to the destination.  
-  
+ 
 -   The destination address is unreachable.  
-  
+ 
 -   The destination port is unreachable. For example, there is no listener available for the packet's protocol.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#23](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#23)]
- [!code-csharp[NCLNetInfo2#23](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#23)]
- [!code-vb[NCLNetInfo2#23](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#23)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#23](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#23)]
+[!code-csharp[NCLNetInfo2#23](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#23)]
+[!code-vb[NCLNetInfo2#23](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,29 +321,29 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Destination Unreachable messages sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Destination Unreachable message can be sent to the computer that is the source of a packet for any of the following reasons:  
-  
+A Destination Unreachable message can be sent to the computer that is the source of a packet for any of the following reasons:  
+ 
 -   The computer cannot find a route to the destination address.  
-  
+ 
 -   Communication with the destination address is administratively prohibited. For example, a firewall prevents delivery of packets to the destination.  
-  
+ 
 -   The destination address is unreachable.  
-  
+ 
 -   The destination port is unreachable. For example, there is no listener available for the packet's protocol.  
-  
+ 
 -  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#23](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#23)]
- [!code-csharp[NCLNetInfo2#23](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#23)]
- [!code-vb[NCLNetInfo2#23](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#23)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#23](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#23)]
+[!code-csharp[NCLNetInfo2#23](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#23)]
+[!code-vb[NCLNetInfo2#23](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,19 +374,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of number of ICMP Echo Reply messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Echo Request and Echo Reply messages allow a computer to request an ICMP response from a remote computer on a network. This functionality is often used to determine the validity of remote addresses.  
+Echo Request and Echo Reply messages allow a computer to request an ICMP response from a remote computer on a network. This functionality is often used to determine the validity of remote addresses.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#21)]
- [!code-csharp[NCLNetInfo2#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#21)]
- [!code-vb[NCLNetInfo2#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#21)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#21)]
+[!code-csharp[NCLNetInfo2#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#21)]
+[!code-vb[NCLNetInfo2#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,19 +417,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of number of ICMP Echo Reply messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Echo Request and Echo Reply messages allow a computer to request an ICMP response from a remote computer on a network. This functionality is often used to determine the validity of remote addresses.  
+Echo Request and Echo Reply messages allow a computer to request an ICMP response from a remote computer on a network. This functionality is often used to determine the validity of remote addresses.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#21)]
- [!code-csharp[NCLNetInfo2#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#21)]
- [!code-vb[NCLNetInfo2#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#21)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#21)]
+[!code-csharp[NCLNetInfo2#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#21)]
+[!code-vb[NCLNetInfo2#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,19 +460,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of number of ICMP Echo Request messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Echo Request and Echo Reply messages allow a computer to request an ICMP response from a remote computer on a network. This functionality is often used to determine the validity of remote addresses.  
+Echo Request and Echo Reply messages allow a computer to request an ICMP response from a remote computer on a network. This functionality is often used to determine the validity of remote addresses.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#21)]
- [!code-csharp[NCLNetInfo2#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#21)]
- [!code-vb[NCLNetInfo2#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#21)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#21)]
+[!code-csharp[NCLNetInfo2#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#21)]
+[!code-vb[NCLNetInfo2#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,19 +503,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of number of ICMP Echo Request messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Echo Request and Echo Reply messages allow a computer to request an ICMP response from a remote computer on a network. This functionality is often used to determine the validity of remote addresses.  
+Echo Request and Echo Reply messages allow a computer to request an ICMP response from a remote computer on a network. This functionality is often used to determine the validity of remote addresses.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#21)]
- [!code-csharp[NCLNetInfo2#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#21)]
- [!code-vb[NCLNetInfo2#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#21)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#21)]
+[!code-csharp[NCLNetInfo2#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#21)]
+[!code-vb[NCLNetInfo2#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -546,14 +546,14 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of ICMP error messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#22](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#22)]
- [!code-csharp[NCLNetInfo2#22](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#22)]
- [!code-vb[NCLNetInfo2#22](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#22)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#22](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#22)]
+[!code-csharp[NCLNetInfo2#22](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#22)]
+[!code-vb[NCLNetInfo2#22](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -584,14 +584,14 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of number of ICMP error messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#22](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#22)]
- [!code-csharp[NCLNetInfo2#22](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#22)]
- [!code-vb[NCLNetInfo2#22](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#22)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#22](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#22)]
+[!code-csharp[NCLNetInfo2#22](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#22)]
+[!code-vb[NCLNetInfo2#22](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -622,19 +622,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of ICMPv4 messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ICMPv4 messages are sent to communicate errors and information about packets that were sent using the Internet Protocol version 4 (IPv4).  
+ICMPv4 messages are sent to communicate errors and information about packets that were sent using the Internet Protocol version 4 (IPv4).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#20](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#20)]
- [!code-csharp[NCLNetInfo2#20](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#20)]
- [!code-vb[NCLNetInfo2#20](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#20)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#20](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#20)]
+[!code-csharp[NCLNetInfo2#20](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#20)]
+[!code-vb[NCLNetInfo2#20](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#20)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -665,19 +665,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of ICMPv4 messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ICMPV4 messages are sent to communicate errors and information about packets that were sent using Internet Protocol version 4 (IPv4).  
+ICMPV4 messages are sent to communicate errors and information about packets that were sent using Internet Protocol version 4 (IPv4).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#20](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#20)]
- [!code-csharp[NCLNetInfo2#20](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#20)]
- [!code-vb[NCLNetInfo2#20](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#20)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#20](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#20)]
+[!code-csharp[NCLNetInfo2#20](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#20)]
+[!code-vb[NCLNetInfo2#20](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#20)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -708,19 +708,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of ICMP Parameter Problem messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Parameter Problem messages are sent when a host computer or router encounters problems while processing the contents of a packet header, such as encountering an invalid IPv4 option or an invalid Next Header type.  
+Parameter Problem messages are sent when a host computer or router encounters problems while processing the contents of a packet header, such as encountering an invalid IPv4 option or an invalid Next Header type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#27)]
- [!code-csharp[NCLNetInfo2#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#27)]
- [!code-vb[NCLNetInfo2#27](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#27)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#27)]
+[!code-csharp[NCLNetInfo2#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#27)]
+[!code-vb[NCLNetInfo2#27](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -751,19 +751,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of ICMP Parameter Problem messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Parameter Problem messages are sent when a host computer or router encounters problems while processing the contents of a packet header, such as encountering an invalid IPv4 option or an invalid Next Header type.  
+Parameter Problem messages are sent when a host computer or router encounters problems while processing the contents of a packet header, such as encountering an invalid IPv4 option or an invalid Next Header type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#27)]
- [!code-csharp[NCLNetInfo2#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#27)]
- [!code-vb[NCLNetInfo2#27](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#27)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#27)]
+[!code-csharp[NCLNetInfo2#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#27)]
+[!code-vb[NCLNetInfo2#27](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -794,19 +794,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of ICMP Redirect messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Redirect messages are sent by routers to inform a host computer of a better route for a destination address.  
+Redirect messages are sent by routers to inform a host computer of a better route for a destination address.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#25](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#25)]
- [!code-csharp[NCLNetInfo2#25](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#25)]
- [!code-vb[NCLNetInfo2#25](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#25)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#25](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#25)]
+[!code-csharp[NCLNetInfo2#25](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#25)]
+[!code-vb[NCLNetInfo2#25](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -837,19 +837,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of ICMP Redirect messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Redirect messages are sent by routers to inform a host computer of a better route for a destination address.  
+Redirect messages are sent by routers to inform a host computer of a better route for a destination address.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#25](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#25)]
- [!code-csharp[NCLNetInfo2#25](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#25)]
- [!code-vb[NCLNetInfo2#25](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#25)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#25](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#25)]
+[!code-csharp[NCLNetInfo2#25](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#25)]
+[!code-vb[NCLNetInfo2#25](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -880,19 +880,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Source Quench messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Source Quench messages are sent when a packet was discarded because of insufficient space in the output queue. A destination computer can also send a Source Quench message if packets arrive too quickly to be processed. The source quench message is a request to the host to cut back the rate at which it is sending traffic to the Internet destination.  
+Source Quench messages are sent when a packet was discarded because of insufficient space in the output queue. A destination computer can also send a Source Quench message if packets arrive too quickly to be processed. The source quench message is a request to the host to cut back the rate at which it is sending traffic to the Internet destination.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#24](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#24)]
- [!code-csharp[NCLNetInfo2#24](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#24)]
- [!code-vb[NCLNetInfo2#24](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#24)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#24](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#24)]
+[!code-csharp[NCLNetInfo2#24](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#24)]
+[!code-vb[NCLNetInfo2#24](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -923,19 +923,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Source Quench messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Source Quench messages are sent when a packet was discarded because of insufficient space in the output queue. A destination computer can also send a Source Quench message if packets arrive too quickly to be processed. The source quench message is a request to the host to cut back the rate at which it is sending traffic to the Internet destination.  
+Source Quench messages are sent when a packet was discarded because of insufficient space in the output queue. A destination computer can also send a Source Quench message if packets arrive too quickly to be processed. The source quench message is a request to the host to cut back the rate at which it is sending traffic to the Internet destination.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#24](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#24)]
- [!code-csharp[NCLNetInfo2#24](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#24)]
- [!code-vb[NCLNetInfo2#24](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#24)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#24](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#24)]
+[!code-csharp[NCLNetInfo2#24](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#24)]
+[!code-vb[NCLNetInfo2#24](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -966,19 +966,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of ICMP Time Exceeded messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A packet's Hop Limit determines how many times it can be forwarded before it is discarded. Each time a packet is forwarded, its Hop Limit value is decremented by one. When the Hop Limit reaches zero or when a router receives a packet with its Hop Limit set to zero, the packet is discarded and the source of the packet receives a Time Exceeded message indicating that the initial Hop Limit was too small or that the packet was caught in a routing loop.  
+A packet's Hop Limit determines how many times it can be forwarded before it is discarded. Each time a packet is forwarded, its Hop Limit value is decremented by one. When the Hop Limit reaches zero or when a router receives a packet with its Hop Limit set to zero, the packet is discarded and the source of the packet receives a Time Exceeded message indicating that the initial Hop Limit was too small or that the packet was caught in a routing loop.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#26](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#26)]
- [!code-csharp[NCLNetInfo2#26](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#26)]
- [!code-vb[NCLNetInfo2#26](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#26)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#26](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#26)]
+[!code-csharp[NCLNetInfo2#26](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#26)]
+[!code-vb[NCLNetInfo2#26](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#26)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,19 +1009,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of ICMP Time Exceeded messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A packet's Hop Limit determines how many times it can be forwarded before it is discarded. Each time a packet is forwarded, its Hop Limit value is decremented by one. When the Hop Limit reaches zero or when a router receives a packet with its Hop Limit set to zero, the packet is discarded and the source of the packet receives a Time Exceeded message indicating that the initial Hop Limit was too small or that the packet was caught in a routing loop.  
+A packet's Hop Limit determines how many times it can be forwarded before it is discarded. Each time a packet is forwarded, its Hop Limit value is decremented by one. When the Hop Limit reaches zero or when a router receives a packet with its Hop Limit set to zero, the packet is discarded and the source of the packet receives a Time Exceeded message indicating that the initial Hop Limit was too small or that the packet was caught in a routing loop.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#26](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#26)]
- [!code-csharp[NCLNetInfo2#26](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#26)]
- [!code-vb[NCLNetInfo2#26](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#26)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#26](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#26)]
+[!code-csharp[NCLNetInfo2#26](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#26)]
+[!code-vb[NCLNetInfo2#26](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#26)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1052,19 +1052,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Timestamp Reply messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Timestamp Request message causes the receiving computer to send a timestamp reply back to the originating computer. These messages are used to measure the transmission speed on a network.  
+A Timestamp Request message causes the receiving computer to send a timestamp reply back to the originating computer. These messages are used to measure the transmission speed on a network.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#28)]
- [!code-csharp[NCLNetInfo2#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#28)]
- [!code-vb[NCLNetInfo2#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#28)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#28)]
+[!code-csharp[NCLNetInfo2#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#28)]
+[!code-vb[NCLNetInfo2#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1095,19 +1095,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Timestamp Reply messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Timestamp Request message causes the receiving computer to send a timestamp reply back to the originating computer. These messages are used to measure the transmission speed on a network.  
+A Timestamp Request message causes the receiving computer to send a timestamp reply back to the originating computer. These messages are used to measure the transmission speed on a network.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#28)]
- [!code-csharp[NCLNetInfo2#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#28)]
- [!code-vb[NCLNetInfo2#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#28)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#28)]
+[!code-csharp[NCLNetInfo2#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#28)]
+[!code-vb[NCLNetInfo2#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1138,19 +1138,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Timestamp Request messages that were received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Timestamp Request message causes the receiving computer to send a timestamp reply back to the originating computer. These messages are used to measure the transmission speed on a network.  
+A Timestamp Request message causes the receiving computer to send a timestamp reply back to the originating computer. These messages are used to measure the transmission speed on a network.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#28)]
- [!code-csharp[NCLNetInfo2#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#28)]
- [!code-vb[NCLNetInfo2#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#28)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#28)]
+[!code-csharp[NCLNetInfo2#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#28)]
+[!code-vb[NCLNetInfo2#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1181,19 +1181,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of Timestamp Request messages that were sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Timestamp Request message causes the receiving computer to send a timestamp reply back to the originating computer. These messages are used to measure the transmission speed on a network.  
+A Timestamp Request message causes the receiving computer to send a timestamp reply back to the originating computer. These messages are used to measure the transmission speed on a network.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[NCLNetInfo2#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#28)]
- [!code-csharp[NCLNetInfo2#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#28)]
- [!code-vb[NCLNetInfo2#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#28)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[NCLNetInfo2#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#28)]
+[!code-csharp[NCLNetInfo2#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#28)]
+[!code-vb[NCLNetInfo2#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

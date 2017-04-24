@@ -23,26 +23,26 @@
     <summary>Enables Windows-based applications to retrieve user settings from a Web settings service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use client application services to retrieve user settings from an existing Web settings service by configuring your application to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md). After configuration, you can get and set user settings through an application settings class derived from <xref:System.Configuration.ApplicationSettingsBase> and configured to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. You can use [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to generate a `Settings` class for your project (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). For more information about application settings, see [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md).  
-  
- You can retrieve the current <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> through the <xref:System.Configuration.ApplicationSettingsBase.Providers%2A?displayProperty=fullName> property using the fully-qualified <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class name as a key. You can also retrieve the provider through the <xref:System.Configuration.SettingsLoadedEventArgs.Provider%2A?displayProperty=fullName> property when you handle the <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded?displayProperty=fullName> event.  
-  
+You can use client application services to retrieve user settings from an existing Web settings service by configuring your application to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md). After configuration, you can get and set user settings through an application settings class derived from <xref:System.Configuration.ApplicationSettingsBase> and configured to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. You can use [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to generate a `Settings` class for your project (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). For more information about application settings, see [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md).  
+ 
+You can retrieve the current <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> through the <xref:System.Configuration.ApplicationSettingsBase.Providers%2A?displayProperty=fullName> property using the fully-qualified <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class name as a key. You can also retrieve the provider through the <xref:System.Configuration.SettingsLoadedEventArgs.Provider%2A?displayProperty=fullName> property when you handle the <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded?displayProperty=fullName> event.  
+ 
 > [!NOTE]
 >  This class contains a <xref:System.Security.SecurityCriticalAttribute> at the class level that applies to all members of the class. A run-time exception is thrown if the immediate caller is security-transparent or partially trusted. For more information about security-critical types and members, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
-  
+ 
 > [!NOTE]
 >  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code demonstrates how to use this event to display a list of settings that were not successfully saved.  
-  
- [!code-csharp[ClientApplicationServices#304](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#304)]
- [!code-vb[ClientApplicationServices#304](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#304)]  
-  
+The following example code demonstrates how to use this event to display a list of settings that were not successfully saved.  
+ 
+[!code-csharp[ClientApplicationServices#304](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#304)]
+[!code-vb[ClientApplicationServices#304](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#304)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
@@ -63,15 +63,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.ClientSettingsProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This class contains a <xref:System.Security.SecurityCriticalAttribute> at the class level that applies to all members of the class. A run-time exception is thrown if the immediate caller is security-transparent or partially trusted. For more information about security-critical types and members, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
-  
+ 
 > [!NOTE]
 >  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <value>The name of the application for the provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property has no effect.  
-  
+Setting this property has no effect.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <returns>Represents the previous version of the specified property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used internally by the application settings system and it not meant to be used by your application code.  
-  
+This method is used internally by the application settings system and it not meant to be used by your application code.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the Web settings service at the <see cref="P:System.Web.ClientServices.Providers.ClientSettingsProvider.ServiceUri" /> location is unavailable.</exception>
@@ -224,22 +224,22 @@
         <summary>Initializes the provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used internally by the application settings system and it not meant to be used by your application code.  
-  
- The [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] extensibility model calls the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.Initialize%2A> method to initialize the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> by using information in your application configuration file. This method recognizes the following Web settings service configuration attributes:  
-  
+This method is used internally by the application settings system and it not meant to be used by your application code.  
+ 
+The [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] extensibility model calls the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.Initialize%2A> method to initialize the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> by using information in your application configuration file. This method recognizes the following Web settings service configuration attributes:  
+ 
 -   name  
-  
+ 
 -   description  
-  
+ 
 -   connectionStringName  
-  
+ 
 -   serviceUri  
-  
- For more information about these attributes, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
-  
+ 
+For more information about these attributes, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -278,10 +278,10 @@
         <summary>Resets all user settings to their default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used internally by the application settings system and it not meant to be used by your application code. To reset Web settings to their default values, you will typically use the <xref:System.Configuration.ApplicationSettingsBase.Reset%2A?displayProperty=fullName> method of your project's `Settings` class (typically accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). You can also revert Web settings to the previously cached values by calling the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A?displayProperty=fullName> method.  
-  
+This method is used internally by the application settings system and it not meant to be used by your application code. To reset Web settings to their default values, you will typically use the <xref:System.Configuration.ApplicationSettingsBase.Reset%2A?displayProperty=fullName> method of your project's `Settings` class (typically accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). You can also revert Web settings to the previously cached values by calling the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the Web settings service at the <see cref="P:System.Web.ClientServices.Providers.ClientSettingsProvider.ServiceUri" /> location is unavailable.</exception>
@@ -304,23 +304,23 @@
         <value>The URI of the Web settings service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.ServiceUri%2A> property in your application code, but you will typically set the value in your application configuration file. This enables you to change the service location without recompiling your code.  
-  
- When you set the service location programmatically, you must specify the complete service URI, which will always end with "Profile_JSON_AppService.axd".  
-  
+You can set the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.ServiceUri%2A> property in your application code, but you will typically set the value in your application configuration file. This enables you to change the service location without recompiling your code.  
+ 
+When you set the service location programmatically, you must specify the complete service URI, which will always end with "Profile_JSON_AppService.axd".  
+ 
 > [!NOTE]
 >  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code demonstrates how to use this property to programmatically set the Web settings service location.  
-  
- [!code-csharp[ClientApplicationServices#303](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#303)]
- [!code-vb[ClientApplicationServices#303](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#303)]  
-  
+The following example code demonstrates how to use this property to programmatically set the Web settings service location.  
+ 
+[!code-csharp[ClientApplicationServices#303](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#303)]
+[!code-vb[ClientApplicationServices#303](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#303)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,20 +369,20 @@
         <summary>Occurs after the settings provider attempts to save the property values to the Web settings service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs after the settings provider accesses the settings service, even if the settings were not successfully saved. One reason that the provider might fail to save the settings is if the current user has been logged out. You can use the <xref:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList%2A?displayProperty=fullName> property to determine whether any settings were not successfully saved.  
+This event occurs after the settings provider accesses the settings service, even if the settings were not successfully saved. One reason that the provider might fail to save the settings is if the current user has been logged out. You can use the <xref:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList%2A?displayProperty=fullName> property to determine whether any settings were not successfully saved.  
+ 
+This event does not occur if the settings provider cannot access the settings service, which instead causes the provider to throw a <xref:System.Net.WebException>.  
+ 
   
- This event does not occur if the settings provider cannot access the settings service, which instead causes the provider to throw a <xref:System.Net.WebException>.  
-  
-   
-  
+ 
 ## Examples  
- The following example code demonstrates how to use this event to display a list of settings that were not successfully saved.  
-  
- [!code-csharp[ClientApplicationServices#304](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#304)]
- [!code-vb[ClientApplicationServices#304](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#304)]  
-  
+The following example code demonstrates how to use this event to display a list of settings that were not successfully saved.  
+ 
+[!code-csharp[ClientApplicationServices#304](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#304)]
+[!code-vb[ClientApplicationServices#304](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#304)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -414,10 +414,10 @@
         <summary>This method is not used by this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method has no effect.  
-  
+Calling this method has no effect.  
+ 
  ]]></format>
         </remarks>
       </Docs>

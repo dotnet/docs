@@ -76,10 +76,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityToken" /> that represents the generated security token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A security token can be issued by the user or by a third party that is specified by the policy issuer.  
-  
+A security token can be issued by the user or by a third party that is specified by the policy issuer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -138,10 +138,10 @@
         <summary>Displays the [!INCLUDE[infocard](~/includes/infocard-md.md)] management user interface that allows the user to create, delete, rename, and modify the card.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[infocard](~/includes/infocard-md.md)] does not provide programmatic access to the cards for life-cycle management for privacy and security reasons. For example, you cannot programmatically create, delete, or enumerate cards.  
-  
+[!INCLUDE[infocard](~/includes/infocard-md.md)] does not provide programmatic access to the cards for life-cycle management for privacy and security reasons. For example, you cannot programmatically create, delete, or enumerate cards.  
+ 
  ]]></format>
         </remarks>
       </Docs>

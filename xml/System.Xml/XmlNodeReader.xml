@@ -23,34 +23,34 @@
     <summary>Represents a reader that provides fast, non-cached forward only access to XML data in an <see cref="T:System.Xml.XmlNode" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Instead of using the <xref:System.Xml.XmlNodeReader>, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This enables you to take advantage of conformance checking and compliance to the XML 1.0 recommendation.  
+ 
+The `XmlNodeReader` has the ability to read an XML DOM subtree. This class does not support document type definition (DTD) or schema validation. However, you can create an <xref:System.Xml.XmlReader> object that wraps around the <xref:System.Xml.XmlNodeReader> object to validate the data stored in the <xref:System.Xml.XmlNodeReader> object, as shown in Examples section.  
+ 
   
- The `XmlNodeReader` has the ability to read an XML DOM subtree. This class does not support document type definition (DTD) or schema validation. However, you can create an <xref:System.Xml.XmlReader> object that wraps around the <xref:System.Xml.XmlNodeReader> object to validate the data stored in the <xref:System.Xml.XmlNodeReader> object, as shown in Examples section.  
-  
-   
-  
+ 
 ## Examples  
- In the following example, an XML file is loaded into an XML document and modified. The XML document is passed to an <xref:System.Xml.XmlNodeReader>, which is then passed to the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method. When the validating reader parses the file, it can validate any changes made to the XML file.  
-  
- [!code-csharp[XmlReader_Validate_DOM#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlReader_Validate_DOM/CS/valid_dom.cs#1)]
- [!code-vb[XmlReader_Validate_DOM#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlReader_Validate_DOM/VB/valid_dom.vb#1)]  
-  
+In the following example, an XML file is loaded into an XML document and modified. The XML document is passed to an <xref:System.Xml.XmlNodeReader>, which is then passed to the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method. When the validating reader parses the file, it can validate any changes made to the XML file.  
+ 
+[!code-csharp[XmlReader_Validate_DOM#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlReader_Validate_DOM/CS/valid_dom.cs#1)]
+[!code-vb[XmlReader_Validate_DOM#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlReader_Validate_DOM/VB/valid_dom.vb#1)]  
+ 
 ## Input  
- The following files are used as input.  
-  
+The following files are used as input.  
+ 
 #### bookSchema.xml  
- [!code-xml[XML_Core_Files#8](~/samples/snippets/xml/VS_Snippets_Data/XML_Core_Files/XML/booksschema.xml#8)]  
-  
+[!code-xml[XML_Core_Files#8](~/samples/snippets/xml/VS_Snippets_Data/XML_Core_Files/XML/booksschema.xml#8)]  
+ 
 #### books.xsd  
- [!code-xml[XML_Core_Files#9](~/samples/snippets/xml/VS_Snippets_Data/XML_Core_Files/XML/books.xsd#9)]  
-  
+[!code-xml[XML_Core_Files#9](~/samples/snippets/xml/VS_Snippets_Data/XML_Core_Files/XML/books.xsd#9)]  
+ 
 ## Output  
- Validation Error: The 'publisher' attribute is not declared.  
-  
+Validation Error: The 'publisher' attribute is not declared.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,14 +77,14 @@
         <summary>Creates an instance of the <see langword="XmlNodeReader" /> class using the specified <see cref="T:System.Xml.XmlNode" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- For more information and examples of the code used to create an `XmlNodeReader`, see <xref:System.Xml.XmlReader> and overloads of the <xref:System.Xml.XmlReader.Create%2A> method.  
-  
+ 
+For more information and examples of the code used to create an `XmlNodeReader`, see <xref:System.Xml.XmlReader> and overloads of the <xref:System.Xml.XmlReader.Create%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,23 +111,23 @@
         <value>The number of attributes on the current node. This number includes default attributes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+This property is relevant to `Element`, `DocumentType` and `XmlDeclaration` nodes only. (Other node types do not have attributes.)  
+ 
   
- This property is relevant to `Element`, `DocumentType` and `XmlDeclaration` nodes only. (Other node types do not have attributes.)  
-  
-   
-  
+ 
 ## Examples  
- The following example reads all the attributes on the root node.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/VB/source.vb#1)]  
-  
+The following example reads all the attributes on the root node.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,29 +154,29 @@
         <value>The base URI of the current node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+A networked XML document is comprised of chunks of data aggregated using various W3C standard inclusion mechanisms and therefore contains nodes that come from different places. DTD entities are an example of this, but this is not limited to DTDs. The base URI tells you where these nodes came from. If there is no base URI for the nodes being returned (for example, they were parsed from an in-memory string), String.Empty is returned.  
+ 
   
- A networked XML document is comprised of chunks of data aggregated using various W3C standard inclusion mechanisms and therefore contains nodes that come from different places. DTD entities are an example of this, but this is not limited to DTDs. The base URI tells you where these nodes came from. If there is no base URI for the nodes being returned (for example, they were parsed from an in-memory string), String.Empty is returned.  
-  
-   
-  
+ 
 ## Examples  
- The following example parses a file and displays the base URI of each of the nodes.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.BaseURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.BaseURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.BaseURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.BaseURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.BaseURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.BaseURI Example/VB/source.vb#1)]  
-  
- The example uses the file, `uri.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNodeReader.BaseURI Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.BaseURI Example/XML/source.xml#2)]  
-  
- The `style.xml` file contains the XML text `<style>hardcover</style>`.  
-  
+The following example parses a file and displays the base URI of each of the nodes.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.BaseURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.BaseURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.BaseURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.BaseURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.BaseURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.BaseURI Example/VB/source.vb#1)]  
+ 
+The example uses the file, `uri.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNodeReader.BaseURI Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.BaseURI Example/XML/source.xml#2)]  
+ 
+The `style.xml` file contains the XML text `<style>hardcover</style>`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,14 +204,14 @@
           <see langword="true" /> if the binary content read methods are implemented; otherwise <see langword="false" />. The <see cref="T:System.Xml.XmlNodeReader" /> class always returns <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- The binary content read methods include the <xref:System.Xml.XmlNodeReader.ReadContentAsBase64%2A>, <xref:System.Xml.XmlNodeReader.ReadContentAsBinHex%2A>, <xref:System.Xml.XmlNodeReader.ReadElementContentAsBase64%2A>, and <xref:System.Xml.XmlNodeReader.ReadElementContentAsBinHex%2A> methods.  
-  
+ 
+The binary content read methods include the <xref:System.Xml.XmlNodeReader.ReadContentAsBase64%2A>, <xref:System.Xml.XmlNodeReader.ReadContentAsBinHex%2A>, <xref:System.Xml.XmlNodeReader.ReadElementContentAsBase64%2A>, and <xref:System.Xml.XmlNodeReader.ReadElementContentAsBinHex%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,12 +239,12 @@
           <see langword="true" /> if the reader can parse and resolve entities; otherwise, <see langword="false" />. <see langword="XmlNodeReader" /> always returns <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,27 +271,27 @@
         <summary>Changes the <see cref="P:System.Xml.XmlNodeReader.ReadState" /> to <see langword="Closed" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+This method also releases any resources held while reading. If `Close` has already been called, no action is performed.  
+ 
   
- This method also releases any resources held while reading. If `Close` has already been called, no action is performed.  
-  
-   
-  
+ 
 ## Examples  
- The following example parses a file and closes the reader.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
-  
- The example uses the file, `items.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
-  
+The following example parses a file and closes the reader.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
+ 
+The example uses the file, `items.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,12 +318,12 @@
         <value>The depth of the current node in the XML document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,12 +351,12 @@
           <see langword="true" /> if the reader is positioned at the end of the stream; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,14 +387,14 @@
         <returns>The value of the specified attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- This method does not move the reader.  
-  
+ 
+This method does not move the reader.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="i" /> parameter is less than 0 or greater than or equal to <see cref="P:System.Xml.XmlNodeReader.AttributeCount" />.</exception>
@@ -426,25 +426,25 @@
         <returns>The value of the specified attribute. If the attribute is not found, <see langword="null" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+This method does not move the reader.  
+ 
+If the reader is positioned on a `DocumentType` node, this method can be used to get the PUBLIC and SYSTEM literals, for example, `reader.GetAttribute("PUBLIC")`  
+ 
   
- This method does not move the reader.  
-  
- If the reader is positioned on a `DocumentType` node, this method can be used to get the PUBLIC and SYSTEM literals, for example, `reader.GetAttribute("PUBLIC")`  
-  
-   
-  
+ 
 ## Examples  
- The following example gets the value of the ISBN attribute.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.GetAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.GetAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.GetAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.GetAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.GetAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.GetAttribute Example/VB/source.vb#1)]  
-  
+The following example gets the value of the ISBN attribute.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.GetAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.GetAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.GetAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.GetAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.GetAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.GetAttribute Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -477,34 +477,34 @@
         <returns>The value of the specified attribute. If the attribute is not found, <see langword="null" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- The following XML contains an attribute in a specific namespace:  
-  
+ 
+The following XML contains an attribute in a specific namespace:  
+ 
 ```  
 <test xmlns:dt="urn:datatypes" dt:type="int"/>  
 ```  
-  
- You can lookup the `dt:type` attribute using one argument (prefix and local name) or two arguments (local name and namespace URI):  
-  
+ 
+You can lookup the `dt:type` attribute using one argument (prefix and local name) or two arguments (local name and namespace URI):  
+ 
 ```  
 String dt = reader.GetAttribute("dt:type");  
 String dt2 = reader.GetAttribute("type","urn:datatypes");  
 ```  
-  
- To lookup the `xmlns:dt` attribute, use one of the following arguments:  
-  
+ 
+To lookup the `xmlns:dt` attribute, use one of the following arguments:  
+ 
 ```  
 String dt3 = reader.GetAttribute("xmlns:dt");  
 String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);  
 ```  
-  
- You can also get this information using the <xref:System.Xml.XmlNodeReader.Prefix%2A> property.  
-  
+ 
+You can also get this information using the <xref:System.Xml.XmlNodeReader.Prefix%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -532,21 +532,21 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if the current node has attributes; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example reads all the attributes on the root node.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/VB/source.vb#1)]  
-  
+The following example reads all the attributes on the root node.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -574,14 +574,14 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if the node on which the reader is currently positioned can have a <see langword="Value" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- The following table lists node types that have a value to return.  
-  
+ 
+The following table lists node types that have a value to return.  
+ 
 |Node Type|Value|  
 |---------------|-----------|  
 |`Attribute`|The value of the attribute.|  
@@ -593,16 +593,16 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 |`Text`|The content of the text node.|  
 |`Whitespace`|The white space between markup.|  
 |`XmlDeclaration`|The content of the declaration.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value for every node which can have a value.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.HasValue Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.HasValue Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.HasValue Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.HasValue Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.HasValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.HasValue Example/VB/source.vb#1)]  
-  
+The following example displays the value for every node which can have a value.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.HasValue Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.HasValue Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.HasValue Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.HasValue Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.HasValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.HasValue Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -630,14 +630,14 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if the current node is an attribute whose value was generated from the default value defined in the DTD or schema; <see langword="false" /> if the attribute value was explicitly set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- This property applies to attribute nodes only. If the reader is not positioned on an attribute node, this property returns `false`.  
-  
+ 
+This property applies to attribute nodes only. If the reader is not positioned on an attribute node, this property returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -665,29 +665,29 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if the current node is an element (<see cref="P:System.Xml.XmlNodeReader.NodeType" /> equals <see langword="XmlNodeType.Element" />) and it ends with <c>/&gt;</c>; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+This property enables you to determine the difference between the following:  
+ 
+`<item num="123"/>` (`IsEmptyElement` is `true`).  
+ 
+`<item num="123">` (`IsEmptyElement` is `false`, although element content is empty).  
+ 
+A corresponding `EndElement` node is not generated for empty elements.  
+ 
   
- This property enables you to determine the difference between the following:  
-  
- `<item num="123"/>` (`IsEmptyElement` is `true`).  
-  
- `<item num="123">` (`IsEmptyElement` is `false`, although element content is empty).  
-  
- A corresponding `EndElement` node is not generated for empty elements.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the text content of each element.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/VB/source.vb#1)]  
-  
+The following example displays the text content of each element.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,21 +716,21 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
  For node types that do not have a name (like <see langword="Text" />, <see langword="Comment" />, and so on), this property returns String.Empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the local name of each node, and, if they exist, the prefix and namespace URI.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/VB/source.vb#1)]  
-  
+The following example displays the local name of each node, and, if they exist, the prefix and namespace URI.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -761,22 +761,22 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <returns>The namespace URI to which the prefix maps or <see langword="null" /> if no matching prefix is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- In the following XML string, if the reader is positioned on the `href` attribute, the prefix `a` is resolved by calling `reader.LookupNamespace("a")`. The returned string is `urn:456`.  
-  
+ 
+In the following XML string, if the reader is positioned on the `href` attribute, the prefix `a` is resolved by calling `reader.LookupNamespace("a")`. The returned string is `urn:456`.  
+ 
 ```  
 <root xmlns:a="urn:456">  
- <item>  
- <ref href="a:b"/>  
- </item>  
+<item>  
+<ref href="a:b"/>  
+</item>  
 </root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -806,21 +806,21 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <summary>Moves to the attribute with the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example reads all the attributes on the root node.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/VB/source.vb#1)]  
-  
+The following example reads all the attributes on the root node.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="i" /> parameter is less than 0 or greater than or equal to <see cref="P:System.Xml.XmlReader.AttributeCount" />.</exception>
@@ -853,14 +853,14 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if the attribute is found; otherwise, <see langword="false" />. If <see langword="false" />, the reader's position does not change.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- After calling this method, the <xref:System.Xml.XmlNodeReader.Name%2A>, <xref:System.Xml.XmlNodeReader.NamespaceURI%2A>, and <xref:System.Xml.XmlNodeReader.Prefix%2A> properties reflect the properties of that attribute.  
-  
+ 
+After calling this method, the <xref:System.Xml.XmlNodeReader.Name%2A>, <xref:System.Xml.XmlNodeReader.NamespaceURI%2A>, and <xref:System.Xml.XmlNodeReader.Prefix%2A> properties reflect the properties of that attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -894,14 +894,14 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if the attribute is found; otherwise, <see langword="false" />. If <see langword="false" />, the reader's position does not change.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- After calling this method, the <xref:System.Xml.XmlNodeReader.Name%2A>, <xref:System.Xml.XmlNodeReader.NamespaceURI%2A>, and <xref:System.Xml.XmlNodeReader.Prefix%2A> properties reflect the properties of that attribute.  
-  
+ 
+After calling this method, the <xref:System.Xml.XmlNodeReader.Name%2A>, <xref:System.Xml.XmlNodeReader.NamespaceURI%2A>, and <xref:System.Xml.XmlNodeReader.Prefix%2A> properties reflect the properties of that attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -930,23 +930,23 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if the reader is positioned on an attribute (the reader moves to the element that owns the attribute); <see langword="false" /> if the reader is not positioned on an attribute (the position of the reader does not change).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+Use this method to return to an element after navigating through its attributes. This method moves the reader to one of the following node types: `Element`, `DocumentType`, or `XmlDeclaration`.  
+ 
   
- Use this method to return to an element after navigating through its attributes. This method moves the reader to one of the following node types: `Element`, `DocumentType`, or `XmlDeclaration`.  
-  
-   
-  
+ 
 ## Examples  
- The following example reads all the attributes on the root node.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/VB/source.vb#1)]  
-  
+The following example reads all the attributes on the root node.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.AttributeCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.AttributeCount Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -975,21 +975,21 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if an attribute exists (the reader moves to the first attribute); otherwise, <see langword="false" /> (the position of the reader does not change).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example gets the value of the first attribute of the root node.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.MoveToFirstAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToFirstAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.MoveToFirstAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToFirstAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.MoveToFirstAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToFirstAttribute Example/VB/source.vb#1)]  
-  
+The following example gets the value of the first attribute of the root node.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.MoveToFirstAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToFirstAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.MoveToFirstAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToFirstAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.MoveToFirstAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToFirstAttribute Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1018,23 +1018,23 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if there is a next attribute; <see langword="false" /> if there are no more attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+If the current node is not an attribute node, this method is equivalent to <xref:System.Xml.XmlNodeReader.MoveToFirstAttribute%2A>. If `MoveToNextAttribute` returns `true`, the reader moves to the next attribute; otherwise, the position of the reader does not change.  
+ 
   
- If the current node is not an attribute node, this method is equivalent to <xref:System.Xml.XmlNodeReader.MoveToFirstAttribute%2A>. If `MoveToNextAttribute` returns `true`, the reader moves to the next attribute; otherwise, the position of the reader does not change.  
-  
-   
-  
+ 
 ## Examples  
- The following example reads a book.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.MoveToNextAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToNextAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.MoveToNextAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToNextAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.MoveToNextAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToNextAttribute Example/VB/source.vb#1)]  
-  
+The following example reads a book.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.MoveToNextAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToNextAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.MoveToNextAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToNextAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.MoveToNextAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.MoveToNextAttribute Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1122,25 +1122,25 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 </list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example reads an XML and displays each of the nodes.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
-  
- The example uses the file, `items.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
-  
+The following example reads an XML and displays each of the nodes.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
+ 
+The example uses the file, `items.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1167,23 +1167,23 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <value>The namespace URI of the current node; otherwise an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+This property is relevant to `Element` and `Attribute` nodes only.  
+ 
   
- This property is relevant to `Element` and `Attribute` nodes only.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the local name of each node, and, if they exist, the prefix and namespace URI.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/VB/source.vb#1)]  
-  
+The following example displays the local name of each node, and, if they exist, the prefix and namespace URI.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1210,14 +1210,14 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <value>The <see langword="XmlNameTable" /> enabling you to get the atomized version of a string within the node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- All node and attribute names returned from this class are atomized using the `NameTable`. When the same name is returned multiple times (for example, `Customer`), then the same `String` object is returned for that name. This makes it possible for you to write efficient code that does object comparisons on these strings instead of expensive string comparisons.  
-  
+ 
+All node and attribute names returned from this class are atomized using the `NameTable`. When the same name is returned multiple times (for example, `Customer`), then the same `String` object is returned for that name. This makes it possible for you to write efficient code that does object comparisons on these strings instead of expensive string comparisons.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1244,25 +1244,25 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <value>One of the <see cref="T:System.Xml.XmlNodeType" /> values representing the type of the current node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example reads an XML and displays each of the nodes.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
-  
- The example uses the file, `items.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
-  
+The following example reads an XML and displays each of the nodes.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
+ 
+The example uses the file, `items.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1289,21 +1289,21 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <value>The namespace prefix associated with the current node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the local name of each node, and, if they exist, the prefix and namespace URI.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/VB/source.vb#1)]  
-  
+The following example displays the local name of each node, and, if they exist, the prefix and namespace URI.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.NamespaceURI Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1332,27 +1332,27 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see langword="true" /> if the next node was read successfully; <see langword="false" /> if there are no more nodes to read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+When a reader is first created and initialized, there is no information available. You must call `Read` to read the first node.  
+ 
   
- When a reader is first created and initialized, there is no information available. You must call `Read` to read the first node.  
-  
-   
-  
+ 
 ## Examples  
- The following example reads an XML and displays each node.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
-  
- The example uses the file, `items.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
-  
+The following example reads an XML and displays each node.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
+ 
+The example uses the file, `items.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1385,23 +1385,23 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
  An empty attribute, such as, <c>misc=""</c>, returns <see langword="true" /> with a single node with a value of String.Empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+Use this method after calling <xref:System.Xml.XmlNodeReader.MoveToAttribute%2A> to read through the text or entity reference nodes that make up the attribute value. The <xref:System.Xml.XmlNodeReader.Depth%2A> of the attribute value nodes is one plus the depth of the attribute node; it increments and decrements by one when you step into and out of general entity references.  
+ 
   
- Use this method after calling <xref:System.Xml.XmlNodeReader.MoveToAttribute%2A> to read through the text or entity reference nodes that make up the attribute value. The <xref:System.Xml.XmlNodeReader.Depth%2A> of the attribute value nodes is one plus the depth of the attribute node; it increments and decrements by one when you step into and out of general entity references.  
-  
-   
-  
+ 
 ## Examples  
- The following example reads an attribute with text and entity reference nodes.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.ReadAttributeValue Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.ReadAttributeValue Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.ReadAttributeValue Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.ReadAttributeValue Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.ReadAttributeValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.ReadAttributeValue Example/VB/source.vb#1)]  
-  
+The following example reads an attribute with text and entity reference nodes.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.ReadAttributeValue Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.ReadAttributeValue Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.ReadAttributeValue Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.ReadAttributeValue Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.ReadAttributeValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.ReadAttributeValue Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1436,25 +1436,25 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <returns>The number of bytes written to the buffer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- This method streams the content, decodes the Base64 content, and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org.  
-  
+ 
+This method streams the content, decodes the Base64 content, and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org.  
+ 
 > [!NOTE]
 >  You should not access any of the reader properties between calls to the <xref:System.Xml.XmlNodeReader.ReadContentAsBase64%2A> method until the method returns the value 0.  
-  
- This method has the following behavior:  
-  
+ 
+This method has the following behavior:  
+ 
 -   <xref:System.Xml.XmlNodeReader.ReadContentAsBase64%2A> returns the value 0 when it has reached the end of the byte stream it was operating on. The reader is positioned on the first non-content node.  
-  
+ 
 -   If you ask for fewer, or the exact number, of bytes than are left in the stream the reader remains in its current position.  
-  
+ 
 -   <xref:System.Xml.XmlNodeReader.ReadContentAsBase64%2A> is not supported on the following XML node types: Element, XmlDeclaration, None, Document, DocumentType, Notation, Entity, DocumentFragment.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> value is <see langword="null" />.</exception>
@@ -1493,25 +1493,25 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <returns>The number of bytes written to the buffer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- This method streams the content, decodes the BinHex content, and returns the decoded binary bytes (for example, an inline BinHex encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text.  
-  
+ 
+This method streams the content, decodes the BinHex content, and returns the decoded binary bytes (for example, an inline BinHex encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text.  
+ 
 > [!NOTE]
 >  You should not access any of the reader properties between calls to the <xref:System.Xml.XmlNodeReader.ReadContentAsBinHex%2A> method until the method returns the value 0.  
-  
- This method has the following behavior:  
-  
+ 
+This method has the following behavior:  
+ 
 -   <xref:System.Xml.XmlNodeReader.ReadContentAsBinHex%2A> returns the value 0 when it has reached the end of the byte stream it was operating on. The reader is positioned on the first non-content node.  
-  
+ 
 -   If you ask for fewer, or the exact number, of bytes than are left in the stream the reader remains in its current position.  
-  
+ 
 -   <xref:System.Xml.XmlNodeReader.ReadContentAsBinHex%2A> is not supported on the following XML node types: Element, XmlDeclaration, None, Document, DocumentType, Notation, Entity, DocumentFragment.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> value is <see langword="null" />.</exception>
@@ -1550,27 +1550,27 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <returns>The number of bytes written to the buffer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+This method reads the content, decodes it using Base64 encoding, and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org.  
+ 
+This method can only read simple-content elements. The element can contain text, white space, significant white space, CDATA sections, comments and processing instructions. It can also contain entity references, which are automatically expanded. The element cannot have child elements.  
+ 
+This method is very similar to the <xref:System.Xml.XmlNodeReader.ReadContentAsBase64%2A> method except that it can only be called on element node types.  
+ 
+If the count value is higher than the number of bytes in the document, or if it is equal to the number of bytes in the document, the <xref:System.Xml.XmlNodeReader> reads all the remaining bytes in the document and returns the number of bytes read. The next <xref:System.Xml.XmlNodeReader.ReadElementContentAsBase64%2A> method call returns a zero and moves the reader to the node following the <xref:System.Xml.XmlNodeType> node.  
+ 
+If you call <xref:System.Xml.XmlNodeReader.Read%2A> before all of the element content is consumed, the reader may behave as if the first content was consumed and then the <xref:System.Xml.XmlNodeReader.Read%2A> method was called. This means that the reader reads all the text until the end element is encountered. It then reads the end tag node, read the next node, and then position itself on the next subsequent node.  
+ 
   
- This method reads the content, decodes it using Base64 encoding, and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org.  
-  
- This method can only read simple-content elements. The element can contain text, white space, significant white space, CDATA sections, comments and processing instructions. It can also contain entity references, which are automatically expanded. The element cannot have child elements.  
-  
- This method is very similar to the <xref:System.Xml.XmlNodeReader.ReadContentAsBase64%2A> method except that it can only be called on element node types.  
-  
- If the count value is higher than the number of bytes in the document, or if it is equal to the number of bytes in the document, the <xref:System.Xml.XmlNodeReader> reads all the remaining bytes in the document and returns the number of bytes read. The next <xref:System.Xml.XmlNodeReader.ReadElementContentAsBase64%2A> method call returns a zero and moves the reader to the node following the <xref:System.Xml.XmlNodeType> node.  
-  
- If you call <xref:System.Xml.XmlNodeReader.Read%2A> before all of the element content is consumed, the reader may behave as if the first content was consumed and then the <xref:System.Xml.XmlNodeReader.Read%2A> method was called. This means that the reader reads all the text until the end element is encountered. It then reads the end tag node, read the next node, and then position itself on the next subsequent node.  
-  
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A?displayProperty=fullName> to see an example using this method.  
-  
+See <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A?displayProperty=fullName> to see an example using this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> value is <see langword="null" />.</exception>
@@ -1610,27 +1610,27 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <returns>The number of bytes written to the buffer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+This method reads the element content, decodes it using BinHex encoding, and returns the decoded binary bytes (for example, an inline BinHex encoded GIF image) into the buffer.  
+ 
+This method can only read simple-content elements. The element can contain text, white space, significant white space, CDATA sections, comments and processing instructions. It can also contain entity references, which are automatically expanded. The element cannot have child elements.  
+ 
+This method is very similar to the <xref:System.Xml.XmlNodeReader.ReadContentAsBinHex%2A> method except that it can only be called on element node types.  
+ 
+If the count value is higher than the number of bytes in the document, or if it is equal to the number of bytes in the document, the <xref:System.Xml.XmlNodeReader> reads all the remaining bytes in the document and returns the number of bytes read. The next <xref:System.Xml.XmlNodeReader> method call returns a zero and moves the reader to the node following the <xref:System.Xml.XmlNodeType> node.  
+ 
+If you call <xref:System.Xml.XmlNodeReader.Read%2A> before all of the element content is consumed, the reader may behave as if the first content was consumed and then the <xref:System.Xml.XmlNodeReader.Read%2A> method was called. This means that the reader reads all the text until the end element is encountered. It then reads the end tag node, read the next node, and then position itself on the next subsequent node.  
+ 
   
- This method reads the element content, decodes it using BinHex encoding, and returns the decoded binary bytes (for example, an inline BinHex encoded GIF image) into the buffer.  
-  
- This method can only read simple-content elements. The element can contain text, white space, significant white space, CDATA sections, comments and processing instructions. It can also contain entity references, which are automatically expanded. The element cannot have child elements.  
-  
- This method is very similar to the <xref:System.Xml.XmlNodeReader.ReadContentAsBinHex%2A> method except that it can only be called on element node types.  
-  
- If the count value is higher than the number of bytes in the document, or if it is equal to the number of bytes in the document, the <xref:System.Xml.XmlNodeReader> reads all the remaining bytes in the document and returns the number of bytes read. The next <xref:System.Xml.XmlNodeReader> method call returns a zero and moves the reader to the node following the <xref:System.Xml.XmlNodeType> node.  
-  
- If you call <xref:System.Xml.XmlNodeReader.Read%2A> before all of the element content is consumed, the reader may behave as if the first content was consumed and then the <xref:System.Xml.XmlNodeReader.Read%2A> method was called. This means that the reader reads all the text until the end element is encountered. It then reads the end tag node, read the next node, and then position itself on the next subsequent node.  
-  
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.XmlReader.ReadElementContentAsBinHex%2A?displayProperty=fullName> to see an example using this method.  
-  
+See <xref:System.Xml.XmlReader.ReadElementContentAsBinHex%2A?displayProperty=fullName> to see an example using this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> value is <see langword="null" />.</exception>
@@ -1662,12 +1662,12 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <value>One of the <see cref="T:System.Xml.ReadState" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1697,25 +1697,25 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
  <see langword="Note:" /> The text node can be either an element or an attribute text node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
+If positioned on an element, `ReadString` concatenates all text, significant white space, white space, and CData section node types together and returns the concatenated data as the element content. It stops when any markup is encountered. This could occur in a mixed content model, or when an element end tag is read.  
+ 
+If positioned on a text-like node, `ReadString` performs the same concatenation from the text node to the element end tag. If the reader is positioned on an attribute text node, `ReadString` has the same functionality as if the reader were position on the element start tag. It returns all the concatenated element text nodes.  
+ 
   
- If positioned on an element, `ReadString` concatenates all text, significant white space, white space, and CData section node types together and returns the concatenated data as the element content. It stops when any markup is encountered. This could occur in a mixed content model, or when an element end tag is read.  
-  
- If positioned on a text-like node, `ReadString` performs the same concatenation from the text node to the element end tag. If the reader is positioned on an attribute text node, `ReadString` has the same functionality as if the reader were position on the element start tag. It returns all the concatenated element text nodes.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the text content of each of the elements.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/VB/source.vb#1)]  
-  
+The following example displays the text content of each of the elements.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.IsEmptyElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.IsEmptyElement Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1742,26 +1742,26 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <summary>Resolves the entity reference for <see langword="EntityReference" /> nodes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- If the reader is positioned on an `EntityReference` node (`XmlNodeType.EntityReference`), if <xref:System.Xml.XmlNodeReader.Read%2A> is called after calling this method, the entity replacement text is parsed. When the entity replacement text is finished, an `EndEntity` node is returned to close the entity reference scope.  
-  
+ 
+If the reader is positioned on an `EntityReference` node (`XmlNodeType.EntityReference`), if <xref:System.Xml.XmlNodeReader.Read%2A> is called after calling this method, the entity replacement text is parsed. When the entity replacement text is finished, an `EndEntity` node is returned to close the entity reference scope.  
+ 
 > [!NOTE]
 >  After calling this method, if the entity is part of an attribute value, you must call <xref:System.Xml.XmlNodeReader.ReadAttributeValue%2A> to step into the entity.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses `ResolveEntity` to expand a general entity.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.ResolveEntity Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.ResolveEntity Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.ResolveEntity Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.ResolveEntity Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.ResolveEntity Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.ResolveEntity Example/VB/source.vb#1)]  
-  
+The following example uses `ResolveEntity` to expand a general entity.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.ResolveEntity Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.ResolveEntity Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.ResolveEntity Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.ResolveEntity Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.ResolveEntity Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.ResolveEntity Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The reader is not positioned on an <see langword="EntityReference" /> node.</exception>
@@ -1789,14 +1789,14 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <value>An <see cref="T:System.Xml.Schema.IXmlSchemaInfo" /> object containing the schema information for the current node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- The <xref:System.Xml.Schema.IXmlSchemaInfo> interface represents the Post Schema Validation Infoset (PSVI) of the underlying XML node. The PSVI contents of this property are set after the node has been validated.  
-  
+ 
+The <xref:System.Xml.Schema.IXmlSchemaInfo> interface represents the Post Schema Validation Infoset (PSVI) of the underlying XML node. The PSVI contents of this property are set after the node has been validated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1823,38 +1823,38 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <summary>Skips the children of the current node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- For example, suppose you have the following XML input:  
-  
+ 
+For example, suppose you have the following XML input:  
+ 
 ```  
 <a name="bob" age="123">  
-   <x/>abc<y/>  
- </a>  
- <b>  
+  <x/>abc<y/>  
+</a>  
+<b>  
 ...  
- </b>  
+</b>  
 ```  
+ 
+If the reader is positioned on the "\<a>" node or any of its attributes, calling `Skip` positions the reader to the "\<b>" node.  
+ 
+If the reader is positioned on a leaf node already (such as element "x" or the text node "abc"), calling `Skip` is the same as calling <xref:System.Xml.XmlNodeReader.Read%2A>.  
+ 
+This method checks for well-formed XML.  
+ 
   
- If the reader is positioned on the "\<a>" node or any of its attributes, calling `Skip` positions the reader to the "\<b>" node.  
-  
- If the reader is positioned on a leaf node already (such as element "x" or the text node "abc"), calling `Skip` is the same as calling <xref:System.Xml.XmlNodeReader.Read%2A>.  
-  
- This method checks for well-formed XML.  
-  
-   
-  
+ 
 ## Examples  
- The following example reads the price element node in the XML document.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.Skip Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Skip Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.Skip Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Skip Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.Skip Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Skip Example/VB/source.vb#1)]  
-  
+The following example reads the price element node in the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.Skip Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Skip Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.Skip Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Skip Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.Skip Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Skip Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1887,10 +1887,10 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see cref="T:System.Collections.IDictionary" /> object that contains the namespaces that are in scope.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNodeReader> instance is cast to an <xref:System.Xml.IXmlNamespaceResolver> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNodeReader> instance is cast to an <xref:System.Xml.IXmlNamespaceResolver> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1923,10 +1923,10 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see cref="T:System.String" /> that contains the namespace name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNodeReader> instance is cast to an <xref:System.Xml.IXmlNamespaceResolver> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNodeReader> instance is cast to an <xref:System.Xml.IXmlNamespaceResolver> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1959,10 +1959,10 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
           <see cref="T:System.String" /> object that contains the namespace prefix.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNodeReader> instance is cast to an <xref:System.Xml.IXmlNamespaceResolver> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNodeReader> instance is cast to an <xref:System.Xml.IXmlNamespaceResolver> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2072,25 +2072,25 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 </list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example reads an XML and displays each node.  
-  
- [!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
-  
- The example uses the file, `items.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
-  
+The following example reads an XML and displays each node.  
+ 
+[!code-cpp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNodeReader.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/VB/source.vb#1)]  
+ 
+The example uses the file, `items.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNodeReader.Name Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeReader.Name Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2117,24 +2117,24 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <value>The current <see langword="xml:lang" /> scope.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
- This property represents the xml:lang scope within which the current node resides. For example, here is an XML fragment with `xml:lang` set to US English in the root element:  
-  
+ 
+This property represents the xml:lang scope within which the current node resides. For example, here is an XML fragment with `xml:lang` set to US English in the root element:  
+ 
 ```  
 <root xml:lang="en-us">   
 <name>Fred</name>   
 </root>   
 ```  
-  
- When the reader is positioned on the `name` element, you can use this property to find that it is in the scope of a US English `xml:lang` attribute.  
-  
- The string returned is also in <xref:System.Xml.XmlNodeReader.NameTable%2A>.  
-  
+ 
+When the reader is positioned on the `name` element, you can use this property to find that it is in the scope of a US English `xml:lang` attribute.  
+ 
+The string returned is also in <xref:System.Xml.XmlNodeReader.NameTable%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2161,12 +2161,12 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <value>One of the <see cref="T:System.Xml.XmlSpace" /> values. If no <see langword="xml:space" /> scope exists, this property defaults to <see langword="XmlSpace.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

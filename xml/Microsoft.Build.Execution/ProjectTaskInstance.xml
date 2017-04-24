@@ -19,10 +19,10 @@
     <summary>Wraps a [Task Element (MSBuild)](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an immutable class  
-  
+This is an immutable class  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <value>Returns the unevaluated ContinueOnError attribute of the task. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Task Element (MSBuild)](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) and [How to: Ignore Errors in Tasks](http://msdn.microsoft.com/library/e2f1ca4f-787b-44bd-bc64-81a036025e96).  
-  
+For more information, see [Task Element (MSBuild)](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) and [How to: Ignore Errors in Tasks](http://msdn.microsoft.com/library/e2f1ca4f-787b-44bd-bc64-81a036025e96).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
         <value>Returns an ordered set of the output property and item objects of the task.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a read-only collection.  
-  
+This is a read-only collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,12 +260,12 @@
         <value>Returns an unordered set of the task parameter names and unevaluated values of this task.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a read-only collection.  
-  
- Condition and ContinueOnError attributes, which have their own properties, are not included in this collection.  
-  
+This is a read-only collection.  
+ 
+Condition and ContinueOnError attributes, which have their own properties, are not included in this collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

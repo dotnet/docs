@@ -38,10 +38,10 @@
     <summary>Represents a floating point number within the range of -3.40E +38 through 3.40E +38 to be stored in or retrieved from a database.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to the SQL Server real data type. For more information, see <xref:System.Data.SqlTypes> or SQL Server Books Online.  
-  
+Maps to the SQL Server real data type. For more information, see <xref:System.Data.SqlTypes> or SQL Server Books Online.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -520,10 +520,10 @@
           <see langword="true" /> if null. Otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
-  
+For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -619,10 +619,10 @@
         <summary>Represents the maximum value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlSingle" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this constant is 3.40E+38.  
-  
+The value of this constant is 3.40E+38.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -652,10 +652,10 @@
         <summary>Represents the minimum value that can be assigned to <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlSingle" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this constant is -3.40E+38.  
-  
+The value of this constant is -3.40E+38.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -751,10 +751,10 @@
         <summary>Represents a <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
-  
+For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -791,40 +791,40 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure that contains the sum of the two specified <see cref="T:System.Data.SqlTypes.SqlSingle" /> structures.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlSingle.Add%28System.Data.SqlTypes.SqlSingle%2CSystem.Data.SqlTypes.SqlSingle%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Division (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Division(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Division(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <summary>Divides the first <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure by the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure that contains the results of the division.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Division">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Division (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Division(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Division(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <summary>Divides the first <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure by the second.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure that contains the results of the division.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlSingle.Divide%28System.Data.SqlTypes.SqlSingle%2CSystem.Data.SqlTypes.SqlSingle%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -861,164 +861,164 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlSingle" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlSingle.Equals?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Explicit (System.Data.SqlTypes.SqlBoolean x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Explicit(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Explicit (System.Data.SqlTypes.SqlDouble x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Explicit(valuetype System.Data.SqlTypes.SqlDouble x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static float op_Explicit (System.Data.SqlTypes.SqlSingle x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float32 op_Explicit(valuetype System.Data.SqlTypes.SqlSingle x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Single" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Single</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Explicit (System.Data.SqlTypes.SqlString x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_GreaterThan(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlSingle" /> operands to determine whether the first is greater than the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlSingle" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Explicit (System.Data.SqlTypes.SqlBoolean x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Explicit(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Explicit (System.Data.SqlTypes.SqlDouble x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Explicit(valuetype System.Data.SqlTypes.SqlDouble x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static float op_Explicit (System.Data.SqlTypes.SqlSingle x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float32 op_Explicit(valuetype System.Data.SqlTypes.SqlSingle x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Single" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Single</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Explicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Explicit (System.Data.SqlTypes.SqlString x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_GreaterThan">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_GreaterThan(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlSingle" /> operands to determine whether the first is greater than the second.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlSingle" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlSingle.GreaterThan?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1055,257 +1055,257 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlSingle" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlSingle.GreaterThanOrEqual?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlByte x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlByte x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlDecimal x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlDecimal)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlInt16 x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlInt32 x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlInt32 x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlInt64 x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlMoney x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlMoney x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (float x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(float32 x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Single)~System.Data.SqlTypes.SqlSingle" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Inequality (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Inequality(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlSingle" /> parameters to determine whether they are not equal.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlSingle" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlByte x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlByte x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlDecimal x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlDecimal)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlInt16 x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlInt32 x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlInt32 x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlInt64 x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (System.Data.SqlTypes.SqlMoney x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(valuetype System.Data.SqlTypes.SqlMoney x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Implicit">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Implicit (float x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Implicit(float32 x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Implicit(System.Single)~System.Data.SqlTypes.SqlSingle" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Single" />
+     </Parameters>
+     <Docs>
+       <param name="x">To be added.</param>
+       <summary>To be added.</summary>
+       <returns>To be added.</returns>
+       <remarks>To be added.</remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Inequality (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Inequality(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlSingle" /> parameters to determine whether they are not equal.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlSingle" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlSingle.NotEquals?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1342,40 +1342,40 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlSingle" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlSingle.LessThan?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_LessThanOrEqual(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlSingle" /> parameters to determine whether the first is less than or equal to the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlSingle" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_LessThanOrEqual">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_LessThanOrEqual(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlSingle" /> parameters to determine whether the first is less than or equal to the second.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlSingle" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlSingle.LessThanOrEqual?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1412,40 +1412,40 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure that contains the product of the multiplication.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlSingle.Multiply%28System.Data.SqlTypes.SqlSingle%2CSystem.Data.SqlTypes.SqlSingle%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Subtraction (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Subtraction(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Subtraction(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
-        <summary>Subtracts the second <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure from the first.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure that contains the results of the subtraction.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Subtraction">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlSingle op_Subtraction (System.Data.SqlTypes.SqlSingle x, System.Data.SqlTypes.SqlSingle y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlSingle op_Subtraction(valuetype System.Data.SqlTypes.SqlSingle x, valuetype System.Data.SqlTypes.SqlSingle y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlSingle.op_Subtraction(System.Data.SqlTypes.SqlSingle,System.Data.SqlTypes.SqlSingle)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlSingle" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
+       <summary>Subtracts the second <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure from the first.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure that contains the results of the subtraction.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlSingle.Subtract%28System.Data.SqlTypes.SqlSingle%2CSystem.Data.SqlTypes.SqlSingle%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1958,10 +1958,10 @@
         <summary>Represents the zero value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlSingle" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Zero` functions as a constant for the <xref:System.Data.SqlTypes.SqlSingle> class.  
-  
+`Zero` functions as a constant for the <xref:System.Data.SqlTypes.SqlSingle> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

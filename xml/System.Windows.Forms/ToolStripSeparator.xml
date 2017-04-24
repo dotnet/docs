@@ -19,12 +19,12 @@
     <summary>Represents a line used to group items of a <see cref="T:System.Windows.Forms.ToolStrip" /> or the drop-down items of a <see cref="T:System.Windows.Forms.MenuStrip" /> or <see cref="T:System.Windows.Forms.ContextMenuStrip" /> or other <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a <xref:System.Windows.Forms.ToolStripSeparator> to group related items on a menu or <xref:System.Windows.Forms.ToolStrip>. The <xref:System.Windows.Forms.ToolStripSeparator> is automatically spaced and oriented horizontally or vertically to accord with its container.  
-  
- You can add a <xref:System.Windows.Forms.ToolStripSeparator> at design time by choosing it from a drop-down list. However, you can also automatically create a <xref:System.Windows.Forms.ToolStripSeparator> by typing a hyphen (-) in either the designer template node or in the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method.  
-  
+Use a <xref:System.Windows.Forms.ToolStripSeparator> to group related items on a menu or <xref:System.Windows.Forms.ToolStrip>. The <xref:System.Windows.Forms.ToolStripSeparator> is automatically spaced and oriented horizontally or vertically to accord with its container.  
+ 
+You can add a <xref:System.Windows.Forms.ToolStripSeparator> at design time by choosing it from a drop-down list. However, you can also automatically create a <xref:System.Windows.Forms.ToolStripSeparator> by typing a hyphen (-) in either the designer template node or in the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,10 +73,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <value>The image to display in the background of the separator.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ImageLayout" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,10 +260,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripItemDisplayStyle" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,10 +292,10 @@
         <summary>This event is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant to this class.  
-  
+This event is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,10 +329,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,10 +366,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <summary>This event is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant to this class.  
-  
+This event is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,10 +434,10 @@
         <value>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,10 +492,10 @@
         <value>The image to be displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,10 +528,10 @@
         <value>One of the <see cref="T:System.Drawing.ContentAlignment" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -567,10 +567,10 @@
         <value>The index of the image that is displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -603,10 +603,10 @@
         <value>The key for the image that is displayed for the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -639,10 +639,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripItemImageScaling" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -675,10 +675,10 @@
         <value>One of the <see cref="T:System.Drawing.Color" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -708,10 +708,10 @@
         <summary>This method is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not relevant to this class.  
-  
+This method is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -766,10 +766,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -823,10 +823,10 @@
         <value>A <see cref="T:System.String" /> representing the item’s text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -859,10 +859,10 @@
         <value>One of the <see cref="T:System.Drawing.ContentAlignment" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -891,10 +891,10 @@
         <summary>This event is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant to this class.  
-  
+This event is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -927,10 +927,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripTextDirection" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -963,10 +963,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.TextImageRelation" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -999,10 +999,10 @@
         <value>A string representing the ToolTip text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

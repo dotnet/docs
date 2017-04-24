@@ -19,48 +19,48 @@
     <summary>Defines the metadata attribute that Web Forms user controls (.ascx files) use to indicate if and how their output is cached. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PartialCachingAttribute> attribute class marks user controls (.ascx files) that support fragment caching, and encapsulates the cache settings that ASP.NET uses when caching the control. Page and controls developers use the <xref:System.Web.UI.PartialCachingAttribute> attribute to enable output caching for a user control in a code-behind file.  
-  
- Using the <xref:System.Web.UI.PartialCachingAttribute> is one of several ways you can enable output caching. The following list describes methods you can use to enable output caching.  
-  
+The <xref:System.Web.UI.PartialCachingAttribute> attribute class marks user controls (.ascx files) that support fragment caching, and encapsulates the cache settings that ASP.NET uses when caching the control. Page and controls developers use the <xref:System.Web.UI.PartialCachingAttribute> attribute to enable output caching for a user control in a code-behind file.  
+ 
+Using the <xref:System.Web.UI.PartialCachingAttribute> is one of several ways you can enable output caching. The following list describes methods you can use to enable output caching.  
+ 
 -   Use the  directive to enable output caching in declarative scenarios.  
-  
+ 
 -   Use the <xref:System.Web.UI.PartialCachingAttribute> to enable caching for a user control in a code-behind file.  
-  
+ 
 -   Use the <xref:System.Web.UI.ControlCachePolicy> class to programmatically specify cache settings in programmatic scenarios in which you are working with <xref:System.Web.UI.BasePartialCachingControl> instances.  
+ 
+If a user control contains an  directive or has a <xref:System.Web.UI.PartialCachingAttribute> applied, the ASP.NET parser generates an instance of the <xref:System.Web.UI.PartialCachingControl> class to wrap the user control.  
+ 
+For more information about ASP.NET caching, see [Caching](http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce). For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- If a user control contains an  directive or has a <xref:System.Web.UI.PartialCachingAttribute> applied, the ASP.NET parser generates an instance of the <xref:System.Web.UI.PartialCachingControl> class to wrap the user control.  
-  
- For more information about ASP.NET caching, see [Caching](http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce). For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.PartialCachingAttribute>. This example has three parts:  
-  
+The following code example demonstrates using the <xref:System.Web.UI.PartialCachingAttribute>. This example has three parts:  
+ 
 -   A partial class, `ctlMine`, that inherits from the <xref:System.Web.UI.UserControl> base class and to which the <xref:System.Web.UI.PartialCachingAttribute> attribute is applied.  
-  
+ 
 -   A user control that is used with the `ctlMine` partial class.  
-  
+ 
 -   A Web Forms page that hosts the user control.  
-  
- The first part of the example demonstrates a partial class that inherits from the <xref:System.Web.UI.UserControl> base class and to which the <xref:System.Web.UI.PartialCachingAttribute> attribute is applied. In this example, the attribute specifies that the user control should be cached for 20 seconds.  
-  
- [!code-csharp[PartialCachingAttribute_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx.cs#1)]
- [!code-vb[PartialCachingAttribute_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx.vb#1)]  
-  
- The second part of the example shows a user control that is used with the previous example to demonstrate user control caching.  
-  
- <!-- TODO: review snippet reference [!code-csharp[PartialCachingAttribute_1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[PartialCachingAttribute_1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx#5)]  -->  
-  
- The third part of the example demonstrates a Web Forms page that hosts the user control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[PartialCachingAttribute_1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.aspx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[PartialCachingAttribute_1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.aspx#6)]  -->  
-  
+ 
+The first part of the example demonstrates a partial class that inherits from the <xref:System.Web.UI.UserControl> base class and to which the <xref:System.Web.UI.PartialCachingAttribute> attribute is applied. In this example, the attribute specifies that the user control should be cached for 20 seconds.  
+ 
+[!code-csharp[PartialCachingAttribute_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx.cs#1)]
+[!code-vb[PartialCachingAttribute_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx.vb#1)]  
+ 
+The second part of the example shows a user control that is used with the previous example to demonstrate user control caching.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[PartialCachingAttribute_1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx#5)]  -->
+<!-- TODO: review snippet reference [!code-vb[PartialCachingAttribute_1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx#5)]  -->  
+ 
+The third part of the example demonstrates a Web Forms page that hosts the user control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[PartialCachingAttribute_1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.aspx#6)]  -->
+<!-- TODO: review snippet reference [!code-vb[PartialCachingAttribute_1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.aspx#6)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,13 +82,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PartialCachingAttribute" /> class with the specified duration assigned to the user control to be cached.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached and to specify the caching duration. This code example is part of a larger example provided for the <xref:System.Web.UI.PartialCachingAttribute> class.  
-  
- [!code-csharp[PartialCachingAttribute_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx.cs#2)]
- [!code-vb[PartialCachingAttribute_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx.vb#2)]  
-  
+The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached and to specify the caching duration. This code example is part of a larger example provided for the <xref:System.Web.UI.PartialCachingAttribute> class.  
+ 
+[!code-csharp[PartialCachingAttribute_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx.cs#2)]
+[!code-vb[PartialCachingAttribute_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,13 +116,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PartialCachingAttribute" /> class, specifying the caching duration, any GET and POST values, control names, and custom output caching requirements used to vary the cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached, specify the caching duration as 20 seconds, and specify a control named `state` for which the user control output will be varied.  
-  
- [!code-csharp[PartialCachingAttribute_2_Resubmit#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_2_Resubmit/CS/partialcache_1cs.ascx.cs#2)]
- [!code-vb[PartialCachingAttribute_2_Resubmit#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_2_Resubmit/VB/partialcache_1vb.ascx.vb#2)]  
-  
+The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached, specify the caching duration as 20 seconds, and specify a control named `state` for which the user control output will be varied.  
+ 
+[!code-csharp[PartialCachingAttribute_2_Resubmit#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_2_Resubmit/CS/partialcache_1cs.ascx.cs#2)]
+[!code-vb[PartialCachingAttribute_2_Resubmit#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_2_Resubmit/VB/partialcache_1vb.ascx.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,13 +200,13 @@
         <value>The amount of time, in seconds, a user control should remain in the output cache.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%29> constructor can be applied to a user control. The attribute indicates that the user control can be cached and specifies a 20 second caching duration. This code example is part of a larger example provided for the <xref:System.Web.UI.PartialCachingAttribute> class.  
-  
- [!code-csharp[PartialCachingAttribute_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx.cs#2)]
- [!code-vb[PartialCachingAttribute_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx.vb#2)]  
-  
+The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%29> constructor can be applied to a user control. The attribute indicates that the user control can be cached and specifies a 20 second caching duration. This code example is part of a larger example provided for the <xref:System.Web.UI.PartialCachingAttribute> class.  
+ 
+[!code-csharp[PartialCachingAttribute_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx.cs#2)]
+[!code-vb[PartialCachingAttribute_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,10 +228,10 @@
         <value>The name of the provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set this property declaratively or by using an attribute.  
-  
+You can set this property declaratively or by using an attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
           <see langword="true" /> if user control output can be shared between multiple pages; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set this property to `true`, cached user control output can be accessed by multiple Web Forms pages. If you do not set it to `true`, the default behavior is to cache one version of user control output for each page that contains that user control. You can potentially save a significant amount of memory by enabling this property.  
-  
+If you set this property to `true`, cached user control output can be accessed by multiple Web Forms pages. If you do not set it to `true`, the default behavior is to cache one version of user control output for each page that contains that user control. You can potentially save a significant amount of memory by enabling this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
         <value>A delimited string that identifies a set of database and table names that the user control cache entry is dependent on.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PartialCachingAttribute.SqlDependency%2A> string identifies databases and table names according to the name of a SQL Server cache dependency in your configuration (typically added using the `sqlcachedependency` configuration elements). If you use SQL Server 2005, you can set the <xref:System.Web.UI.PartialCachingAttribute.SqlDependency%2A> property to "CommandNotification", which instructs ASP.NET to create row level dependencies for all SQL commands issued within the context of the current ASP.NET page.  
-  
+The <xref:System.Web.UI.PartialCachingAttribute.SqlDependency%2A> string identifies databases and table names according to the name of a SQL Server cache dependency in your configuration (typically added using the `sqlcachedependency` configuration elements). If you use SQL Server 2005, you can set the <xref:System.Web.UI.PartialCachingAttribute.SqlDependency%2A> property to "CommandNotification", which instructs ASP.NET to create row level dependencies for all SQL commands issued within the context of the current ASP.NET page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,13 +304,13 @@
         <value>The list of user control properties.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached, to specify the caching duration as 20 seconds, and to specify a control named `state` for which the user control output will be varied.  
-  
- [!code-csharp[PartialCachingAttribute_2_Resubmit#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_2_Resubmit/CS/partialcache_1cs.ascx.cs#2)]
- [!code-vb[PartialCachingAttribute_2_Resubmit#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_2_Resubmit/VB/partialcache_1vb.ascx.vb#2)]  
-  
+The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached, to specify the caching duration as 20 seconds, and to specify a control named `state` for which the user control output will be varied.  
+ 
+[!code-csharp[PartialCachingAttribute_2_Resubmit#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_2_Resubmit/CS/partialcache_1cs.ascx.cs#2)]
+[!code-vb[PartialCachingAttribute_2_Resubmit#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_2_Resubmit/VB/partialcache_1vb.ascx.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,18 +332,18 @@
         <value>The list of custom strings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you specify "browser" for this property, the user control will be varied by browser type and major version number. You can also use this property to extend the values that output cache varies the user control response.  
+If you specify "browser" for this property, the user control will be varied by browser type and major version number. You can also use this property to extend the values that output cache varies the user control response.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached and to specify that the cache entry is dependent on the browser type and major version number.  
-  
- [!code-csharp[PartialCachingAttribute_4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_4/CS/partialcache_3cs.ascx.cs#2)]
- [!code-vb[PartialCachingAttribute_4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_4/VB/partialcache_3vb.ascx.vb#2)]  
-  
+The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached and to specify that the cache entry is dependent on the browser type and major version number.  
+ 
+[!code-csharp[PartialCachingAttribute_4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_4/CS/partialcache_3cs.ascx.cs#2)]
+[!code-vb[PartialCachingAttribute_4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_4/VB/partialcache_3vb.ascx.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,13 +365,13 @@
         <value>The list of query string or form <see langword="POST" /> parameters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached and to specify the parameter upon which the cache entry is dependent.  
-  
- [!code-csharp[PartialCachingAttribute_3#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_3/CS/partialcache_2cs.ascx.cs#2)]
- [!code-vb[PartialCachingAttribute_3#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_3/VB/partialcache_2vb.ascx.vb#2)]  
-  
+The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached and to specify the parameter upon which the cache entry is dependent.  
+ 
+[!code-csharp[PartialCachingAttribute_3#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_3/CS/partialcache_2cs.ascx.cs#2)]
+[!code-vb[PartialCachingAttribute_3#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_3/VB/partialcache_2vb.ascx.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

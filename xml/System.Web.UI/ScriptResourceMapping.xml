@@ -14,10 +14,10 @@
     <summary>Provides location mapping support for script resources.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.UI.ScriptResourceMapping> object can contain a collection of mappings to script resources, such as a script file (.js). Each item in the collection maps to a <xref:System.Web.UI.ScriptResourceDefinition> object by using either a name or name/assembly pair.  
-  
+A <xref:System.Web.UI.ScriptResourceMapping> object can contain a collection of mappings to script resources, such as a script file (.js). Each item in the collection maps to a <xref:System.Web.UI.ScriptResourceDefinition> object by using either a name or name/assembly pair.  
+ 
  ]]></format>
     </remarks>
   </Docs>

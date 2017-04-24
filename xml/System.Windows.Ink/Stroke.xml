@@ -18,10 +18,10 @@
     <summary>Represents a single ink stroke.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Ink.Stroke> is the data object that is collected from a pointing device, such as a tablet pen or a mouse. The <xref:System.Windows.Ink.Stroke> can be created and manipulated programmatically, and can be represented visually on an ink-enabled element, such as the <xref:System.Windows.Controls.InkCanvas>. A <xref:System.Windows.Ink.Stroke> contains information about both its position and appearance. The <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is a collection of <xref:System.Windows.Input.StylusPoint> objects that specifies the position of the <xref:System.Windows.Ink.Stroke>. The <xref:System.Windows.Ink.DrawingAttributes> property specifies a stroke's appearance.  
-  
+A <xref:System.Windows.Ink.Stroke> is the data object that is collected from a pointing device, such as a tablet pen or a mouse. The <xref:System.Windows.Ink.Stroke> can be created and manipulated programmatically, and can be represented visually on an ink-enabled element, such as the <xref:System.Windows.Controls.InkCanvas>. A <xref:System.Windows.Ink.Stroke> contains information about both its position and appearance. The <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is a collection of <xref:System.Windows.Input.StylusPoint> objects that specifies the position of the <xref:System.Windows.Ink.Stroke>. The <xref:System.Windows.Ink.DrawingAttributes> property specifies a stroke's appearance.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,13 +43,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.Stroke" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create a <xref:System.Windows.Ink.Stroke> from a <xref:System.Windows.Input.StylusPointCollection> and <xref:System.Windows.Ink.DrawingAttributes> object. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `myInkPresenter`.  
-  
- [!code-csharp[StrokeSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#2)]
- [!code-vb[StrokeSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#2)]  
-  
+The following example demonstrates how to create a <xref:System.Windows.Ink.Stroke> from a <xref:System.Windows.Input.StylusPointCollection> and <xref:System.Windows.Ink.DrawingAttributes> object. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `myInkPresenter`.  
+ 
+[!code-csharp[StrokeSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#2)]
+[!code-vb[StrokeSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -77,13 +77,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.Stroke" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create a <xref:System.Windows.Ink.Stroke> from a <xref:System.Windows.Input.StylusPointCollection> and <xref:System.Windows.Ink.DrawingAttributes> object.  This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `myInkPresenter`.  
-  
- [!code-csharp[StrokeSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#2)]
- [!code-vb[StrokeSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#2)]  
-  
+The following example demonstrates how to create a <xref:System.Windows.Ink.Stroke> from a <xref:System.Windows.Input.StylusPointCollection> and <xref:System.Windows.Ink.DrawingAttributes> object.  This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `myInkPresenter`.  
+ 
+[!code-csharp[StrokeSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#2)]
+[!code-vb[StrokeSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -118,18 +118,18 @@
         <summary>Adds a custom property to the <see cref="T:System.Windows.Ink.Stroke" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is useful if you need to store extra information in the <xref:System.Windows.Ink.Stroke>.  
+This method is useful if you need to store extra information in the <xref:System.Windows.Ink.Stroke>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to add a custom property to a <xref:System.Windows.Ink.Stroke> object.  
-  
- [!code-csharp[StrokeSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#3)]
- [!code-vb[StrokeSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#3)]  
-  
+The following example demonstrates how to add a custom property to a <xref:System.Windows.Ink.Stroke> object.  
+ 
+[!code-csharp[StrokeSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#3)]
+[!code-vb[StrokeSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="propertyData" /> argument is not one of the allowed data types listed in the <see langword="Parameters" /> section.</exception>
@@ -153,18 +153,18 @@
         <returns>The new <see cref="T:System.Windows.Ink.Stroke" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The properties of an object that is a deep copy of another object have the same values as the properties of the original object.  
+The properties of an object that is a deep copy of another object have the same values as the properties of the original object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to get a copy of the current <xref:System.Windows.Ink.Stroke> object.  
-  
- [!code-csharp[StrokeSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#5)]
- [!code-vb[StrokeSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#5)]  
-  
+The following example demonstrates how to get a copy of the current <xref:System.Windows.Ink.Stroke> object.  
+ 
+[!code-csharp[StrokeSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#5)]
+[!code-vb[StrokeSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,13 +190,13 @@
         <returns>Returns <see langword="true" /> if the custom property exists; otherwise, returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to determine whether a <xref:System.Windows.Ink.Stroke> object has a custom property.  
-  
- [!code-csharp[StrokeSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#3)]
- [!code-vb[StrokeSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#3)]  
-  
+The following example demonstrates how to determine whether a <xref:System.Windows.Ink.Stroke> object has a custom property.  
+ 
+[!code-csharp[StrokeSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#3)]
+[!code-vb[StrokeSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,13 +221,13 @@
         <summary>Renders the <see cref="T:System.Windows.Ink.Stroke" /> object based upon the specified <see cref="T:System.Windows.Media.DrawingContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to draw a <xref:System.Windows.Ink.Stroke> object by using a <xref:System.Windows.Media.DrawingContext>.  
-  
- [!code-csharp[DrawTransform#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTransform/CSharp/Program.cs#1)]
- [!code-vb[DrawTransform#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawTransform/VisualBasic/Module1.vb#1)]  
-  
+The following example demonstrates how to draw a <xref:System.Windows.Ink.Stroke> object by using a <xref:System.Windows.Media.DrawingContext>.  
+ 
+[!code-csharp[DrawTransform#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTransform/CSharp/Program.cs#1)]
+[!code-vb[DrawTransform#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawTransform/VisualBasic/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,13 +254,13 @@
         <summary>Renders the <see cref="T:System.Windows.Ink.Stroke" /> object based upon the specified <see cref="T:System.Windows.Media.DrawingContext" /> and <see cref="T:System.Windows.Ink.DrawingAttributes" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to draw a <xref:System.Windows.Ink.Stroke> object by using a <xref:System.Windows.Media.DrawingContext> and <xref:System.Windows.Ink.DrawingAttributes>.  
-  
- [!code-csharp[DrawTransform#2](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTransform/CSharp/Program.cs#2)]
- [!code-vb[DrawTransform#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawTransform/VisualBasic/Module1.vb#2)]  
-  
+The following example demonstrates how to draw a <xref:System.Windows.Ink.Stroke> object by using a <xref:System.Windows.Media.DrawingContext> and <xref:System.Windows.Ink.DrawingAttributes>.  
+ 
+[!code-csharp[DrawTransform#2](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTransform/CSharp/Program.cs#2)]
+[!code-vb[DrawTransform#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawTransform/VisualBasic/Module1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,18 +287,18 @@
         <summary>Renders the <see cref="T:System.Windows.Ink.Stroke" /> on the specified <see cref="T:System.Windows.Media.DrawingContext" /> using the specified <see cref="T:System.Windows.Ink.DrawingAttributes" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Windows.Ink.Stroke.DrawCore%2A> method to perform custom drawing when you inherit from the <xref:System.Windows.Ink.Stroke> class.  
+Override the <xref:System.Windows.Ink.Stroke.DrawCore%2A> method to perform custom drawing when you inherit from the <xref:System.Windows.Ink.Stroke> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to draw a circle at each <xref:System.Windows.Input.StylusPoint> of a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> is used to get the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is used.  
-  
- [!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
- [!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
-  
+The following example demonstrates how to draw a circle at each <xref:System.Windows.Input.StylusPoint> of a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> is used to get the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is used.  
+ 
+[!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
+[!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,20 +320,20 @@
         <value>To be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These attributes, such as color and width, are applied to the <xref:System.Windows.Ink.Stroke> object as it is drawn.  
+These attributes, such as color and width, are applied to the <xref:System.Windows.Ink.Stroke> object as it is drawn.  
+ 
+Changing <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> causes the <xref:System.Windows.Ink.Stroke.DrawingAttributesChanged> event to fire.  
+ 
   
- Changing <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> causes the <xref:System.Windows.Ink.Stroke.DrawingAttributesChanged> event to fire.  
-  
-   
-  
+ 
 ## Examples  
- The following example sets the <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> to make a stroke green.  
-  
- [!code-csharp[StrokeSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#7)]
- [!code-vb[StrokeSnippets#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#7)]  
-  
+The following example sets the <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> to make a stroke green.  
+ 
+[!code-csharp[StrokeSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#7)]
+[!code-vb[StrokeSnippets#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The set value is <see langword="null" />.</exception>
@@ -355,18 +355,18 @@
         <summary>Occurs when the <see cref="P:System.Windows.Ink.Stroke.DrawingAttributes" /> associated with the <see cref="T:System.Windows.Ink.Stroke" /> object change.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.PropertyDataChangedEventArgs> contains information about the property that changed. You can compare the <xref:System.Windows.Ink.PropertyDataChangedEventArgs.PropertyGuid%2A> property against the members of <xref:System.Windows.Ink.DrawingAttributeIds> to see which value changed.  
+The <xref:System.Windows.Ink.PropertyDataChangedEventArgs> contains information about the property that changed. You can compare the <xref:System.Windows.Ink.PropertyDataChangedEventArgs.PropertyGuid%2A> property against the members of <xref:System.Windows.Ink.DrawingAttributeIds> to see which value changed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to add a handler for this event.  
-  
- [!code-csharp[StrokeSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#8)]
- [!code-vb[StrokeSnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#8)]  
-  
+The following example demonstrates how to add a handler for this event.  
+ 
+[!code-csharp[StrokeSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#8)]
+[!code-vb[StrokeSnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,13 +387,13 @@
         <summary>Occurs when the drawing attributes of a <see cref="T:System.Windows.Ink.Stroke" /> object are replaced.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to add a handler for this event.  
-  
- [!code-csharp[StrokeSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#9)]
- [!code-vb[StrokeSnippets#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#9)]  
-  
+The following example demonstrates how to add a handler for this event.  
+ 
+[!code-csharp[StrokeSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#9)]
+[!code-vb[StrokeSnippets#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -416,18 +416,18 @@
         <returns>A <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains the stylus points along the spine of a <see cref="T:System.Windows.Ink.Stroke" /> when <see cref="P:System.Windows.Ink.DrawingAttributes.FitToCurve" /> is <see langword="true" /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> method returns a new <xref:System.Windows.Input.StylusPointCollection> that contains the stylus points that the <xref:System.Windows.Ink.Stroke> uses when the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property on the <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property is set to `true`.  To get the stylus points that are used when <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> is set to `false`, use the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property.  
+The <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> method returns a new <xref:System.Windows.Input.StylusPointCollection> that contains the stylus points that the <xref:System.Windows.Ink.Stroke> uses when the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property on the <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property is set to `true`.  To get the stylus points that are used when <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> is set to `false`, use the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to draw a circle at each <xref:System.Windows.Input.StylusPoint> of a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> is used to get the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is used.  
-  
- [!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
- [!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
-  
+The following example demonstrates how to draw a circle at each <xref:System.Windows.Input.StylusPoint> of a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> is used to get the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is used.  
+ 
+[!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
+[!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,13 +450,13 @@
         <returns>A <see cref="T:System.Windows.Rect" /> structure defining the bounding box for the <see cref="T:System.Windows.Ink.Stroke" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to get the boundary rectangle for a <xref:System.Windows.Ink.Stroke> object.  
-  
- [!code-csharp[StrokeSnippets#11](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#11)]
- [!code-vb[StrokeSnippets#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#11)]  
-  
+The following example demonstrates how to get the boundary rectangle for a <xref:System.Windows.Ink.Stroke> object.  
+ 
+[!code-csharp[StrokeSnippets#11](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#11)]
+[!code-vb[StrokeSnippets#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,20 +482,20 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains copies of the segments of the current <see cref="T:System.Windows.Ink.Stroke" /> that are within the specified bounds.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.Stroke.GetClipResult%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains strokes that represent the segments of the <xref:System.Windows.Ink.Stroke> that is within `lassoPoints`. <xref:System.Windows.Ink.Stroke.GetClipResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+The <xref:System.Windows.Ink.Stroke.GetClipResult%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains strokes that represent the segments of the <xref:System.Windows.Ink.Stroke> that is within `lassoPoints`. <xref:System.Windows.Ink.Stroke.GetClipResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+ 
+The <xref:System.Windows.Ink.Stroke.GetClipResult%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+ 
   
- The <xref:System.Windows.Ink.Stroke.GetClipResult%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
-  
-   
-  
+ 
 ## Examples  
- The following example removes the ink that is outside of the specified bounds.  
-  
- [!code-csharp[HitTestSample#6](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#6)]
- [!code-vb[HitTestSample#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#6)]  
-  
+The following example removes the ink that is outside of the specified bounds.  
+ 
+[!code-csharp[HitTestSample#6](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#6)]
+[!code-vb[HitTestSample#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -521,18 +521,18 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains copies of the segments of the current <see cref="T:System.Windows.Ink.Stroke" /> that are within the bounds of <paramref name="bounds" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.Stroke.GetClipResult%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains strokes that represent the segments of the <xref:System.Windows.Ink.Stroke> that is within `bounds`. <xref:System.Windows.Ink.Stroke.GetClipResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+The <xref:System.Windows.Ink.Stroke.GetClipResult%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains strokes that represent the segments of the <xref:System.Windows.Ink.Stroke> that is within `bounds`. <xref:System.Windows.Ink.Stroke.GetClipResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example removes the ink that is outside of the specified bounds.  
-  
- [!code-csharp[HitTestSample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#5)]
- [!code-vb[HitTestSample#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#5)]  
-  
+The following example removes the ink that is outside of the specified bounds.  
+ 
+[!code-csharp[HitTestSample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#5)]
+[!code-vb[HitTestSample#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,20 +558,20 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the segments of the current <see cref="T:System.Windows.Ink.Stroke" /> that are outside the specified bounds.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains strokes that represent the segments of the <xref:System.Windows.Ink.Stroke> that are outside of `lassoPoints`. <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+The <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains strokes that represent the segments of the <xref:System.Windows.Ink.Stroke> that are outside of `lassoPoints`. <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+ 
+The <xref:System.Windows.Ink.Stroke.GetClipResult%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+ 
   
- The <xref:System.Windows.Ink.Stroke.GetClipResult%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
-  
-   
-  
+ 
 ## Examples  
- The following example removes the ink that is within the specified bounds.  
-  
- [!code-csharp[HitTestSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#1)]
- [!code-vb[HitTestSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#1)]  
-  
+The following example removes the ink that is within the specified bounds.  
+ 
+[!code-csharp[HitTestSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#1)]
+[!code-vb[HitTestSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -597,18 +597,18 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the segments of the current <see cref="T:System.Windows.Ink.Stroke" /> that are outside the bounds of the specified <see cref="T:System.Windows.Rect" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains strokes that represent the segments of the <xref:System.Windows.Ink.Stroke> that are outside of `bounds`. <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+The <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains strokes that represent the segments of the <xref:System.Windows.Ink.Stroke> that are outside of `bounds`. <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example removes the ink that is within the specified bounds.  
-  
- [!code-csharp[HitTestSample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#4)]
- [!code-vb[HitTestSample#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#4)]  
-  
+The following example removes the ink that is within the specified bounds.  
+ 
+[!code-csharp[HitTestSample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#4)]
+[!code-vb[HitTestSample#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -636,18 +636,18 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains copies of the segments of the current <see cref="T:System.Windows.Ink.Stroke" /> after it is dissected by the specified path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> method uses `eraserShape` to hit test the stroke along `eraserPath` and returns a <xref:System.Windows.Ink.StrokeCollection> that represent dissected segments. <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+The <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> method uses `eraserShape` to hit test the stroke along `eraserPath` and returns a <xref:System.Windows.Ink.StrokeCollection> that represent dissected segments. <xref:System.Windows.Ink.Stroke.GetEraseResult%2A> does not change the original <xref:System.Windows.Ink.Stroke>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to erase the ink that intersects a specified path.  
-  
- [!code-csharp[HitTestSample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#2)]
- [!code-vb[HitTestSample#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#2)]  
-  
+The following example demonstrates how to erase the ink that intersects a specified path.  
+ 
+[!code-csharp[HitTestSample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#2)]
+[!code-vb[HitTestSample#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,10 +670,10 @@
         <returns>A <see cref="T:System.Windows.Media.Geometry" /> that represents the <see cref="T:System.Windows.Ink.Stroke" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Ink.Stroke.GetGeometry%2A> method to get a <xref:System.Windows.Media.PathGeometry> to customize the shape of the <xref:System.Windows.Ink.Stroke>. Consider caching the <xref:System.Windows.Media.Geometry> to avoid calling <xref:System.Windows.Ink.Stroke.GetGeometry%2A> multiple times, which may impact performance.  
-  
+Use the <xref:System.Windows.Ink.Stroke.GetGeometry%2A> method to get a <xref:System.Windows.Media.PathGeometry> to customize the shape of the <xref:System.Windows.Ink.Stroke>. Consider caching the <xref:System.Windows.Media.Geometry> to avoid calling <xref:System.Windows.Ink.Stroke.GetGeometry%2A> multiple times, which may impact performance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -699,18 +699,18 @@
         <returns>A <see cref="T:System.Windows.Media.Geometry" /> that represents the <see cref="T:System.Windows.Ink.Stroke" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.Stroke.GetGeometry%2A> method uses the <xref:System.Windows.Ink.DrawingAttributes.Width%2A>, <xref:System.Windows.Ink.DrawingAttributes.Height%2A>, <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A>, <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A> and <xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A> properties of `drawingAttributes` to determine the <xref:System.Windows.Media.Geometry>. Consider caching the <xref:System.Windows.Media.Geometry> to avoid calling <xref:System.Windows.Ink.Stroke.GetGeometry%2A> multiple times, which may impact performance.  
+The <xref:System.Windows.Ink.Stroke.GetGeometry%2A> method uses the <xref:System.Windows.Ink.DrawingAttributes.Width%2A>, <xref:System.Windows.Ink.DrawingAttributes.Height%2A>, <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A>, <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A> and <xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A> properties of `drawingAttributes` to determine the <xref:System.Windows.Media.Geometry>. Consider caching the <xref:System.Windows.Media.Geometry> to avoid calling <xref:System.Windows.Ink.Stroke.GetGeometry%2A> multiple times, which may impact performance.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to draw a circle at each <xref:System.Windows.Input.StylusPoint> of a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> is used to get the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is used.  
-  
- [!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
- [!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
-  
+The following example demonstrates how to draw a circle at each <xref:System.Windows.Input.StylusPoint> of a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> is used to get the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is used.  
+ 
+[!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
+[!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -736,13 +736,13 @@
         <returns>An <see langword="object" /> containing the property data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve a custom property on a <xref:System.Windows.Ink.Stroke> object.  
-  
- [!code-csharp[StrokeSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#3)]
- [!code-vb[StrokeSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#3)]  
-  
+The following example demonstrates how to retrieve a custom property on a <xref:System.Windows.Ink.Stroke> object.  
+ 
+[!code-csharp[StrokeSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#3)]
+[!code-vb[StrokeSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -767,13 +767,13 @@
         <returns>An array of <see cref="T:System.Guid" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to get the GUIDs of a stroke's custom properties.  
-  
- [!code-csharp[DrawTransform#3](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTransform/CSharp/Program.cs#3)]
- [!code-vb[DrawTransform#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawTransform/VisualBasic/Module1.vb#3)]  
-  
+The following example demonstrates how to get the GUIDs of a stroke's custom properties.  
+ 
+[!code-csharp[DrawTransform#3](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTransform/CSharp/Program.cs#3)]
+[!code-vb[DrawTransform#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawTransform/VisualBasic/Module1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -800,18 +800,18 @@
           <see langword="true" /> if <paramref name="point" /> intersects the current stroke; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method behaves the same way as the overloaded <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%2CSystem.Double%29> method does when `diameter` is 1.  
+This method behaves the same way as the overloaded <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%2CSystem.Double%29> method does when `diameter` is 1.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example changes the color of a <xref:System.Windows.Ink.Stroke> if it intersects a certain area.  
-  
- [!code-csharp[HitTestSample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#3)]
- [!code-vb[HitTestSample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#3)]  
-  
+The following example changes the color of a <xref:System.Windows.Ink.Stroke> if it intersects a certain area.  
+ 
+[!code-csharp[HitTestSample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#3)]
+[!code-vb[HitTestSample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -840,18 +840,18 @@
           <see langword="true" /> if the current stroke is within the specified bounds; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.Stroke.HitTest%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+The <xref:System.Windows.Ink.Stroke.HitTest%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example renders a stroke purple if at least 80% of the stroke is within the bounds of `myPoints`.  
-  
- [!code-csharp[HitTestSample#7](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#7)]
- [!code-vb[HitTestSample#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#7)]  
-  
+The following example renders a stroke purple if at least 80% of the stroke is within the bounds of `myPoints`.  
+ 
+[!code-csharp[HitTestSample#7](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#7)]
+[!code-vb[HitTestSample#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -880,18 +880,18 @@
           <see langword="true" /> if <paramref name="stylusShape" /> intersects the current stroke; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.Stroke.HitTest%2A> method uses `stylusShape` to hit test the stroke along `eraserPath`.  
+The <xref:System.Windows.Ink.Stroke.HitTest%2A> method uses `stylusShape` to hit test the stroke along `eraserPath`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code renders a stroke purple if the stroke intersects the path of `myPoints`.  
-  
- [!code-csharp[HitTestSample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#9)]
- [!code-vb[HitTestSample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#9)]  
-  
+The following code renders a stroke purple if the stroke intersects the path of `myPoints`.  
+ 
+[!code-csharp[HitTestSample#9](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#9)]
+[!code-vb[HitTestSample#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -920,13 +920,13 @@
           <see langword="true" /> if the specified area intersects the current stroke; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example changes the color of a <xref:System.Windows.Ink.Stroke> if it intersects a certain area.  
-  
- [!code-csharp[HitTestSample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#3)]
- [!code-vb[HitTestSample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#3)]  
-  
+The following example changes the color of a <xref:System.Windows.Ink.Stroke> if it intersects a certain area.  
+ 
+[!code-csharp[HitTestSample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#3)]
+[!code-vb[HitTestSample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -955,13 +955,13 @@
           <see langword="true" /> if the current stroke is within the bounds of <paramref name="bounds" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example renders a stroke purple if at least 80% of the stroke is within the <xref:System.Windows.Rect>.  
-  
- [!code-csharp[HitTestSample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#8)]
- [!code-vb[HitTestSample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#8)]  
-  
+The following example renders a stroke purple if at least 80% of the stroke is within the <xref:System.Windows.Rect>.  
+ 
+[!code-csharp[HitTestSample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestSample/CSharp/Program.cs#8)]
+[!code-vb[HitTestSample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestSample/VisualBasic/Module1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -982,10 +982,10 @@
         <summary>Occurs when the appearance of the <see cref="T:System.Windows.Ink.Stroke" /> changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.InkPresenter> handles the <xref:System.Windows.Ink.Stroke.Invalidated> event and calls the <xref:System.Windows.Ink.Stroke.DrawCore%2A> method. If you inherit from the <xref:System.Windows.Ink.Stroke> class and your stroke's appearance is based on a custom state, you must call the <xref:System.Windows.Ink.Stroke.OnInvalidated%2A> method to raise the <xref:System.Windows.Ink.Stroke.Invalidated> event.  
-  
+The <xref:System.Windows.Controls.InkPresenter> handles the <xref:System.Windows.Ink.Stroke.Invalidated> event and calls the <xref:System.Windows.Ink.Stroke.DrawCore%2A> method. If you inherit from the <xref:System.Windows.Ink.Stroke> class and your stroke's appearance is based on a custom state, you must call the <xref:System.Windows.Ink.Stroke.OnInvalidated%2A> method to raise the <xref:System.Windows.Ink.Stroke.Invalidated> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1010,10 +1010,10 @@
         <summary>Allows derived classes to modify the default behavior of the <see cref="E:System.Windows.Ink.Stroke.DrawingAttributesChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overriding this method in a derived class, call the <xref:System.Windows.Ink.Stroke.OnDrawingAttributesChanged%2A> method of the base class so that registered delegates receive the event.  
-  
+When overriding this method in a derived class, call the <xref:System.Windows.Ink.Stroke.OnDrawingAttributesChanged%2A> method of the base class so that registered delegates receive the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1038,10 +1038,10 @@
         <summary>Allows derived classes to modify the default behavior of the <see cref="E:System.Windows.Ink.Stroke.DrawingAttributesReplaced" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overriding this method in a derived class, call the <xref:System.Windows.Ink.Stroke.OnDrawingAttributesReplaced%2A> method of the base class so that registered delegates receive the event.  
-  
+When overriding this method in a derived class, call the <xref:System.Windows.Ink.Stroke.OnDrawingAttributesReplaced%2A> method of the base class so that registered delegates receive the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1066,20 +1066,20 @@
         <summary>Raises the <see cref="E:System.Windows.Ink.Stroke.Invalidated" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you inherit from the <xref:System.Windows.Ink.Stroke> class and your stroke's appearance is based on a custom state, you must call the <xref:System.Windows.Ink.Stroke.OnInvalidated%2A> method to raise the <xref:System.Windows.Ink.Stroke.Invalidated> event. The <xref:System.Windows.Controls.InkPresenter> handles the <xref:System.Windows.Ink.Stroke.Invalidated> event and calls the <xref:System.Windows.Ink.Stroke.DrawCore%2A> method.  
+If you inherit from the <xref:System.Windows.Ink.Stroke> class and your stroke's appearance is based on a custom state, you must call the <xref:System.Windows.Ink.Stroke.OnInvalidated%2A> method to raise the <xref:System.Windows.Ink.Stroke.Invalidated> event. The <xref:System.Windows.Controls.InkPresenter> handles the <xref:System.Windows.Ink.Stroke.Invalidated> event and calls the <xref:System.Windows.Ink.Stroke.DrawCore%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example draws a <xref:System.Windows.Ink.Stroke> either as a solid stroke or as a series of <xref:System.Windows.Input.StylusPoint> objects, depending on the `Mode` property. The example calls the <xref:System.Windows.Ink.Stroke.OnInvalidated%2A> method, which in turn calls the <xref:System.Windows.Ink.Stroke.DrawCore%2A> where the stroke is drawn.  
-  
- [!code-csharp[StrokeSnippets#24](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/CustomRenderedStroke.cs#24)]
- [!code-vb[StrokeSnippets#24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/CustomRenderedStroke.vb#24)]  
+The following example draws a <xref:System.Windows.Ink.Stroke> either as a solid stroke or as a series of <xref:System.Windows.Input.StylusPoint> objects, depending on the `Mode` property. The example calls the <xref:System.Windows.Ink.Stroke.OnInvalidated%2A> method, which in turn calls the <xref:System.Windows.Ink.Stroke.DrawCore%2A> where the stroke is drawn.  
+ 
+[!code-csharp[StrokeSnippets#24](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/CustomRenderedStroke.cs#24)]
+[!code-vb[StrokeSnippets#24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/CustomRenderedStroke.vb#24)]  
 [!code-csharp[StrokeSnippets#25](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/CustomRenderedStroke.cs#25)]
 [!code-vb[StrokeSnippets#25](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/CustomRenderedStroke.vb#25)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1125,10 +1125,10 @@
         <summary>Allows derived classes to modify the default behavior of the <see cref="E:System.Windows.Ink.Stroke.PropertyDataChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overriding this method in a derived class, call the <xref:System.Windows.Ink.Stroke.OnPropertyDataChanged%2A> method of the base class so that registered delegates receive the event.  
-  
+When overriding this method in a derived class, call the <xref:System.Windows.Ink.Stroke.OnPropertyDataChanged%2A> method of the base class so that registered delegates receive the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1191,13 +1191,13 @@
         <summary>Occurs when the custom properties on a <see cref="T:System.Windows.Ink.Stroke" /> object changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to add a handler for this event.  
-  
- [!code-csharp[StrokeSnippets#20](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#20)]
- [!code-vb[StrokeSnippets#20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#20)]  
-  
+The following example demonstrates how to add a handler for this event.  
+ 
+[!code-csharp[StrokeSnippets#20](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#20)]
+[!code-vb[StrokeSnippets#20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#20)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1222,13 +1222,13 @@
         <summary>Deletes a custom property from the <see cref="T:System.Windows.Ink.Stroke" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to delete a custom property from a <xref:System.Windows.Ink.Stroke> object.  
-  
- [!code-csharp[StrokeSnippets#30](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#30)]
- [!code-vb[StrokeSnippets#30](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#30)]  
-  
+The following example demonstrates how to delete a custom property from a <xref:System.Windows.Ink.Stroke> object.  
+ 
+[!code-csharp[StrokeSnippets#30](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#30)]
+[!code-vb[StrokeSnippets#30](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#30)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1250,21 +1250,21 @@
         <value>The <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains the stylus points that represent the current <see cref="T:System.Windows.Ink.Stroke" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the stylus points that are used when the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property on the <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property is set to `true`, use the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> method.  
-  
+To get the stylus points that are used when the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property on the <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property is set to `true`, use the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Input.StylusPointCollection> assigned to the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property must have at least one <xref:System.Windows.Input.StylusPoint> in it.  If you try to assign an empty <xref:System.Windows.Input.StylusPointCollection> to <xref:System.Windows.Ink.Stroke.StylusPoints%2A>, or remove all the <xref:System.Windows.Input.StylusPoint> objects from <xref:System.Windows.Ink.Stroke.StylusPoints%2A>, an exception occurs.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is part of an overridden <xref:System.Windows.Ink.Stroke> that draws a circle at each <xref:System.Windows.Input.StylusPoint>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> is used to get the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is used.  
-  
- [!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
- [!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
-  
+The following example is part of an overridden <xref:System.Windows.Ink.Stroke> that draws a circle at each <xref:System.Windows.Input.StylusPoint>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> is used to get the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property is used.  
+ 
+[!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
+[!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1285,13 +1285,13 @@
         <summary>Occurs when the <see cref="P:System.Windows.Ink.Stroke.StylusPoints" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to handle the <xref:System.Windows.Ink.Stroke.StylusPointsChanged> event.  
-  
- [!code-csharp[StrokeSnippets#28](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#28)]
- [!code-vb[StrokeSnippets#28](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#28)]  
-  
+The following example demonstrates how to handle the <xref:System.Windows.Ink.Stroke.StylusPointsChanged> event.  
+ 
+[!code-csharp[StrokeSnippets#28](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#28)]
+[!code-vb[StrokeSnippets#28](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1312,13 +1312,13 @@
         <summary>Occurs when the <see cref="P:System.Windows.Ink.Stroke.StylusPoints" /> property is assigned a new <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to handle the <xref:System.Windows.Ink.Stroke.StylusPointsReplaced> event.  
-  
- [!code-csharp[StrokeSnippets#29](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#29)]
- [!code-vb[StrokeSnippets#29](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#29)]  
-  
+The following example demonstrates how to handle the <xref:System.Windows.Ink.Stroke.StylusPointsReplaced> event.  
+ 
+[!code-csharp[StrokeSnippets#29](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#29)]
+[!code-vb[StrokeSnippets#29](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#29)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1346,18 +1346,18 @@
         <summary>Performs a transformation based upon the specified <see cref="T:System.Windows.Media.Matrix" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Matrix> object represents a 3x3 matrix used for transformations in two-dimensional space. Each point of the Stroke object is transformed by the supplied Matrix. For example if the original Point.X value is 100, the original Point.Y value is 55, and the transformation Matrix.Scale(0.5, 0.5), the new Point.X value is 50 and the new Point.Y value is 27.5.  
+The <xref:System.Windows.Media.Matrix> object represents a 3x3 matrix used for transformations in two-dimensional space. Each point of the Stroke object is transformed by the supplied Matrix. For example if the original Point.X value is 100, the original Point.Y value is 55, and the transformation Matrix.Scale(0.5, 0.5), the new Point.X value is 50 and the new Point.Y value is 27.5.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to transform a <xref:System.Windows.Ink.Stroke> object.  
-  
- [!code-csharp[DrawTransform#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTransform/CSharp/Program.cs#1)]
- [!code-vb[DrawTransform#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawTransform/VisualBasic/Module1.vb#1)]  
-  
+The following example demonstrates how to transform a <xref:System.Windows.Ink.Stroke> object.  
+ 
+[!code-csharp[DrawTransform#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTransform/CSharp/Program.cs#1)]
+[!code-vb[DrawTransform#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawTransform/VisualBasic/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1371,24 +1371,24 @@
         <summary>Returns whether the <see cref="T:System.Windows.Ink.Stroke" /> intersects or is within a certain area.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Windows.Ink.Stroke.HitTest%2A> methods to determine whether a <xref:System.Windows.Ink.Stroke> intersects a certain point or is within specified bounds.  
-  
- The following methods check whether the <xref:System.Windows.Ink.Stroke> is intersected.  
-  
+You can use the <xref:System.Windows.Ink.Stroke.HitTest%2A> methods to determine whether a <xref:System.Windows.Ink.Stroke> intersects a certain point or is within specified bounds.  
+ 
+The following methods check whether the <xref:System.Windows.Ink.Stroke> is intersected.  
+ 
 -   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%29?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%2CSystem.Double%29?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Windows.Ink.StylusShape%29?displayProperty=fullName>  
-  
- The following methods check whether the <xref:System.Windows.Ink.Stroke> is surrounded.  
-  
+ 
+The following methods check whether the <xref:System.Windows.Ink.Stroke> is surrounded.  
+ 
 -   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Int32%29?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Rect%2CSystem.Int32%29?displayProperty=fullName>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

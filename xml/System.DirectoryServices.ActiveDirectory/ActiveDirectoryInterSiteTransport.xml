@@ -149,10 +149,10 @@
         <value>A <see cref="T:System.Boolean" /> value that indicates whether to ignore the replication schedule. <see langword="true" /> if the replication schedule is ignored; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectoryInterSiteTransport.IgnoreReplicationSchedule%2A?displayProperty=fullName> is `true`, any site link availability schedules that have been configured are ignored, and all site links become always-available for replication. When set to `false`, any previously configured site link availability schedules go back into effect. If no site link availability schedules have been configured, setting this property has no effect.  
-  
+When the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectoryInterSiteTransport.IgnoreReplicationSchedule%2A?displayProperty=fullName> is `true`, any site link availability schedules that have been configured are ignored, and all site links become always-available for replication. When set to `false`, any previously configured site link availability schedules go back into effect. If no site link availability schedules have been configured, setting this property has no effect.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>

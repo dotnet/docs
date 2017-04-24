@@ -24,23 +24,23 @@
     <summary>Provides a base implementation of a channel object that exposes a dictionary interface to its properties.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties> is the base class for <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> and <xref:System.Runtime.Remoting.Channels.BaseChannelSinkWithProperties>.  
+<xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties> is the base class for <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> and <xref:System.Runtime.Remoting.Channels.BaseChannelSinkWithProperties>.  
+ 
+<xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> and <xref:System.Runtime.Remoting.Channels.BaseChannelSinkWithProperties> can be used as the base classes for channels and channel sinks that provide named properties.  
+ 
+<xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties> handles the complex task of asking a channel object for its properties.  
+ 
+This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
   
- <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> and <xref:System.Runtime.Remoting.Channels.BaseChannelSinkWithProperties> can be used as the base classes for channels and channel sinks that provide named properties.  
-  
- <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties> handles the complex task of asking a channel object for its properties.  
-  
- This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[CommonTransportKeys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CommonTransportKeys/CPP/commontransportkeys.cpp#1)]
- [!code-csharp[CommonTransportKeys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CommonTransportKeys/CS/commontransportkeys.cs#1)]
- [!code-vb[CommonTransportKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CommonTransportKeys/VB/commontransportkeys.vb#1)]  
-  
+[!code-cpp[CommonTransportKeys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CommonTransportKeys/CPP/commontransportkeys.cpp#1)]
+[!code-csharp[CommonTransportKeys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CommonTransportKeys/CS/commontransportkeys.cs#1)]
+[!code-vb[CommonTransportKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CommonTransportKeys/VB/commontransportkeys.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -64,12 +64,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CommonTransportKeys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CommonTransportKeys/CPP/commontransportkeys.cpp#1)]
- [!code-csharp[CommonTransportKeys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CommonTransportKeys/CS/commontransportkeys.cs#1)]
- [!code-vb[CommonTransportKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CommonTransportKeys/VB/commontransportkeys.vb#1)]  
-  
+[!code-cpp[CommonTransportKeys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CommonTransportKeys/CPP/commontransportkeys.cpp#1)]
+[!code-csharp[CommonTransportKeys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CommonTransportKeys/CS/commontransportkeys.cs#1)]
+[!code-vb[CommonTransportKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CommonTransportKeys/VB/commontransportkeys.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <summary>Throws a <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method must not be implemented because it does not apply to the way <xref:System.Collections.IDictionary> is being used in this case, and because <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> returns `true`.  
-  
+This method must not be implemented because it does not apply to the way <xref:System.Collections.IDictionary> is being used in this case, and because <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The method is called.</exception>
@@ -124,10 +124,10 @@
         <summary>Throws a <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method must not be implemented because it does not apply to the way <xref:System.Collections.IDictionary> is being used in this case, and because <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> returns `true`.  
-  
+This method must not be implemented because it does not apply to the way <xref:System.Collections.IDictionary> is being used in this case, and because <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The method is called.</exception>
@@ -240,10 +240,10 @@
           <see langword="true" /> if the number of properties that can be entered into the channel object is fixed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> always returns `true`.  
-  
+The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
           <see langword="true" /> if the collection of properties in the channel object is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsReadOnly%2A> always returns `false`.  
-  
+The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsReadOnly%2A> always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,10 +294,10 @@
           <see langword="true" /> if the dictionary of channel object properties is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsSynchronized%2A> always returns `false`.  
-  
+The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsSynchronized%2A> always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,10 +369,10 @@
         <value>A <see cref="T:System.Collections.IDictionary" /> of the channel properties associated with the channel object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channels properties are used to configure the channel at run time.  
-  
+Channels properties are used to configure the channel at run time.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -400,10 +400,10 @@
         <summary>Throws a <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method must not be implemented because it does not apply to the way <xref:System.Collections.IDictionary> is being used in this case, and because <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> returns `true`.  
-  
+This method must not be implemented because it does not apply to the way <xref:System.Collections.IDictionary> is being used in this case, and because <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The method is called.</exception>
@@ -427,10 +427,10 @@
         <value>An object that is used to synchronize access to the <see cref="T:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.SyncRoot%2A> returns a reference to the current instance of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties>.  
-  
+The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.SyncRoot%2A> returns a reference to the current instance of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

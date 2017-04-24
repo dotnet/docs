@@ -14,12 +14,12 @@
     <summary>An abstract base class for classes that represent the data sent to a workflow service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.ServiceModel.Activities.SendContent> class to specify the <xref:System.ServiceModel.Activities.SendMessageContent> for a <xref:System.ServiceModel.Activities.Send> activity.  
-  
- [!code-csharp[ContentBasedCorrelation#1](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#1)]  
-  
+The following example shows how to use the <xref:System.ServiceModel.Activities.SendContent> class to specify the <xref:System.ServiceModel.Activities.SendMessageContent> for a <xref:System.ServiceModel.Activities.Send> activity.  
+ 
+[!code-csharp[ContentBasedCorrelation#1](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,12 +45,12 @@
         <returns>A <see cref="T:System.ServiceModel.Activities.SendMessageContent" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.ServiceModel.Activities.SendContent> class to specify the <xref:System.ServiceModel.Activities.SendMessageContent> for a <xref:System.ServiceModel.Activities.SendReply> activity. This example uses a lambda expression to specify the <xref:System.Activities.InArgument>. [!INCLUDE[crabout](~/includes/crabout-md.md)] lambda expressions, see [Lambda Expressions](http://go.microsoft.com/fwlink/?LinkId=182082)  
-  
- [!code-csharp[ContentBasedCorrelation#2](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/service.cs#2)]  
-  
+The following example shows how to use the <xref:System.ServiceModel.Activities.SendContent> class to specify the <xref:System.ServiceModel.Activities.SendMessageContent> for a <xref:System.ServiceModel.Activities.SendReply> activity. This example uses a lambda expression to specify the <xref:System.Activities.InArgument>. [!INCLUDE[crabout](~/includes/crabout-md.md)] lambda expressions, see [Lambda Expressions](http://go.microsoft.com/fwlink/?LinkId=182082)  
+ 
+[!code-csharp[ContentBasedCorrelation#2](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/service.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,10 +100,10 @@
         <returns>A <see cref="T:System.ServiceModel.Activities.SendMessageContent" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the declared message type, see <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A>.  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] the declared message type, see <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

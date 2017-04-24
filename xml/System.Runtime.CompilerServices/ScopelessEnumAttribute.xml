@@ -24,10 +24,10 @@
     <summary>Indicates that a native enumeration is not qualified by the enumeration type name. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The C++ compiler applies the <xref:System.Runtime.CompilerServices.ScopelessEnumAttribute> attribute to native enumeration types to indicate that they do not need to be qualified by the enumeration type name when referenced in C++ programs.  This attribute distinguishes native enumeration types from managed enumeration types.  
-  
+The C++ compiler applies the <xref:System.Runtime.CompilerServices.ScopelessEnumAttribute> attribute to native enumeration types to indicate that they do not need to be qualified by the enumeration type name when referenced in C++ programs.  This attribute distinguishes native enumeration types from managed enumeration types.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,14 +19,14 @@
     <summary>Represents the collection of services to be added to the workflow runtime engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Represents the services specified by the <`Services`> element in a configuration file.  
-  
+ 
+Represents the services specified by the <`Services`> element in a configuration file.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <returns>An empty <see cref="T:System.Configuration.ConfigurationElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An empty <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> is created and returned.  
-  
+An empty <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> is created and returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <returns>The assembly-qualified type name of the service for the <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" /> specified by <paramref name="settings" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `settings` should specify a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>. The <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Type%2A?displayProperty=fullName> for `settings` is returned. This property holds the assembly-qualified type name of the service specified by the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
-  
+`settings` should specify a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>. The <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Type%2A?displayProperty=fullName> for `settings` is returned. This property holds the assembly-qualified type name of the service specified by the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

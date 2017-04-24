@@ -24,10 +24,10 @@
     <summary>Represents an If-Range header value which can either be a date/time or an entity-tag value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.Headers.RangeConditionHeaderValue> class provides support for the If-Range header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
-  
+The <xref:System.Net.Http.Headers.RangeConditionHeaderValue> class provides support for the If-Range header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -205,12 +205,12 @@
         <returns>A hash code for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
-  
- The <xref:System.Net.Http.Headers.RangeConditionHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
+ 
+The <xref:System.Net.Http.Headers.RangeConditionHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>

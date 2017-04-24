@@ -14,25 +14,25 @@
     <summary>Provides a framework for <see cref="T:System.Windows.Controls.Panel" /> elements that virtualize their child data collection. This is an abstract class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this context, "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on the screen. It is intensive, both in terms of memory and processor, to generate a large number of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few may be on the screen at a given time. A panel that inherits from <xref:System.Windows.Controls.VirtualizingPanel>, such as the <xref:System.Windows.Controls.VirtualizingStackPanel>, calculates visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to only create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements for visible items.  
-  
- The following lists describes cases when the <xref:System.Windows.Controls.VirtualizingPanel> cannot virtualize item containers:  
-  
+In this context, "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on the screen. It is intensive, both in terms of memory and processor, to generate a large number of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few may be on the screen at a given time. A panel that inherits from <xref:System.Windows.Controls.VirtualizingPanel>, such as the <xref:System.Windows.Controls.VirtualizingStackPanel>, calculates visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to only create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements for visible items.  
+ 
+The following lists describes cases when the <xref:System.Windows.Controls.VirtualizingPanel> cannot virtualize item containers:  
+ 
 -   The <xref:System.Windows.Controls.ItemsControl> contains item containers of different types.  For example, a <xref:System.Windows.Controls.Menu> might have items that use both <xref:System.Windows.Controls.MenuItem> and <xref:System.Windows.Controls.Separator> objects as the item containers.  
-  
+ 
 -   You explicitly create the item containers to the <xref:System.Windows.Controls.ItemsControl>. For more information about explicitly versus implicitly creating item containers, see the <xref:System.Windows.Controls.ItemsControl> class.  
+ 
+When a <xref:System.Windows.Controls.VirtualizingPanel> is virtualizing item containers, you may need to save state information that is associated with a container instead of with the data item itself. For example, if an item is contained by an <xref:System.Windows.Controls.Expander> control, the <xref:System.Windows.Controls.Expander.IsExpanded%2A> state is bound to the item container, and not to the data item itself. When the <xref:System.Windows.Controls.Expander> is reused for a new item, the current value of <xref:System.Windows.Controls.Expander.IsExpanded%2A> is used for the new item. In addition, the old item does not retain its <xref:System.Windows.Controls.Expander.IsExpanded%2A> value.  
+ 
   
- When a <xref:System.Windows.Controls.VirtualizingPanel> is virtualizing item containers, you may need to save state information that is associated with a container instead of with the data item itself. For example, if an item is contained by an <xref:System.Windows.Controls.Expander> control, the <xref:System.Windows.Controls.Expander.IsExpanded%2A> state is bound to the item container, and not to the data item itself. When the <xref:System.Windows.Controls.Expander> is reused for a new item, the current value of <xref:System.Windows.Controls.Expander.IsExpanded%2A> is used for the new item. In addition, the old item does not retain its <xref:System.Windows.Controls.Expander.IsExpanded%2A> value.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the derived <xref:System.Windows.Controls.VirtualizingStackPanel> class in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-xml[virtualizingstackpanel_intro#1](~/samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#1)]  
-  
+The following example demonstrates how to use the derived <xref:System.Windows.Controls.VirtualizingStackPanel> class in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+ 
+[!code-xml[virtualizingstackpanel_intro#1](~/samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <summary>Adds the specified <see cref="T:System.Windows.UIElement" /> to the <see cref="P:System.Windows.Controls.Panel.InternalChildren" /> collection of a <see cref="T:System.Windows.Controls.VirtualizingPanel" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method offers better performance for <xref:System.Windows.Controls.Panel> elements that virtualize their child collection than does the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method.  
-  
+This method offers better performance for <xref:System.Windows.Controls.Panel> elements that virtualize their child collection than does the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <value>A value that indicates whether the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> can virtualize items that are grouped or organized in a hierarchy.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls <xref:System.Windows.Controls.VirtualizingPanel.CanHierarchicallyScrollAndVirtualizeCore%2A>.  
-  
+This method calls <xref:System.Windows.Controls.VirtualizingPanel.CanHierarchicallyScrollAndVirtualizeCore%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from <xref:System.Windows.Controls.VirtualizingPanel> and support virtualizing items that are grouped or organized in a hierarchy should override this method to return `true`.  
-  
+Classes that inherit from <xref:System.Windows.Controls.VirtualizingPanel> and support virtualizing items that are grouped or organized in a hierarchy should override this method to return `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,10 +250,10 @@
         <returns>The type of unit that is used by the <see cref="P:System.Windows.Controls.VirtualizingPanel.CacheLength" /> property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is of the <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A> property is <xref:System.Windows.Controls.VirtualizationCacheLengthUnit>.  
-  
+The default is of the <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A> property is <xref:System.Windows.Controls.VirtualizationCacheLengthUnit>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> should virtualize an item; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is of the <xref:System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizable%2A> attached property `true`.  
-  
+The default is of the <xref:System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizable%2A> attached property `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,10 +310,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing its content; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of the <xref:System.Windows.Controls.VirtualizingPanel.IsVirtualizing%2A> property is `true`.  
-  
+The default value of the <xref:System.Windows.Controls.VirtualizingPanel.IsVirtualizing%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,10 +340,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> virtualizes the grouped items in its collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of the <xref:System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGrouping%2A> property is `false`.  
-  
+The default value of the <xref:System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGrouping%2A> property is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,10 +369,10 @@
         <returns>The position of the specified item, relative to the <see cref="T:System.Windows.Controls.VirtualizingPanel" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls <xref:System.Windows.Controls.VirtualizingPanel.GetItemOffsetCore%2A>.  
-  
+This method calls <xref:System.Windows.Controls.VirtualizingPanel.GetItemOffsetCore%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <returns>0 in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from <xref:System.Windows.Controls.VirtualizingPanel> should override this method to return the position `child`, relative to the panel.  
-  
+Classes that inherit from <xref:System.Windows.Controls.VirtualizingPanel> should override this method to return the position `child`, relative to the panel.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,10 +427,10 @@
         <returns>A value that indicates whether scrolling is measured as items in the collection or as pixels.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of the <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> property is <xref:System.Windows.Controls.ScrollUnit>.  
-  
+The default value of the <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> property is <xref:System.Windows.Controls.ScrollUnit>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -479,10 +479,10 @@
         <summary>Adds the specified <see cref="T:System.Windows.UIElement" /> to the <see cref="P:System.Windows.Controls.Panel.InternalChildren" /> collection of a <see cref="T:System.Windows.Controls.VirtualizingPanel" /> element at the specified index position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method offers better performance for <xref:System.Windows.Controls.Panel> elements that virtualize their child collection than does the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method.  
-  
+This method offers better performance for <xref:System.Windows.Controls.Panel> elements that virtualize their child collection than does the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -619,10 +619,10 @@
         <summary>Removes child elements from the <see cref="P:System.Windows.Controls.Panel.InternalChildren" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method offers better performance for <xref:System.Windows.Controls.Panel> elements that virtualize their child collection than does the <xref:System.Windows.Controls.UIElementCollection.RemoveRange%2A> method.  
-  
+This method offers better performance for <xref:System.Windows.Controls.Panel> elements that virtualize their child collection than does the <xref:System.Windows.Controls.UIElementCollection.RemoveRange%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -666,10 +666,10 @@
         <summary>Sets the <see cref="P:System.Windows.Controls.VirtualizingPanel.CacheLength" /> attached property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The cache is the amount of space above or below the viewport in which items are not virtualized. Use a cache to avoid generating [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements as they’re scrolled into view.  The <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A> property determines the unit of measurement that is used by <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A>.  
-  
+The cache is the amount of space above or below the viewport in which items are not virtualized. Use a cache to avoid generating [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements as they’re scrolled into view.  The <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A> property determines the unit of measurement that is used by <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

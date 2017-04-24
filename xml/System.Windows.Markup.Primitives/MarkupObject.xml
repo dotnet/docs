@@ -14,10 +14,10 @@
     <summary>Abstract class that represents an object that can be used to navigate a tree of objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To instantiate a <xref:System.Windows.Markup.Primitives.MarkupObject>, see <xref:System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor%2A> method on the <xref:System.Windows.Markup.Primitives.MarkupWriter> class.  
-  
+To instantiate a <xref:System.Windows.Markup.Primitives.MarkupObject>, see <xref:System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor%2A> method on the <xref:System.Windows.Markup.Primitives.MarkupWriter> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <value>The instance of the object</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of the object may not be equal to <xref:System.Windows.Markup.Primitives.MarkupObject.ObjectType%2A> if the instance represents a factory which creates instances of type <xref:System.Windows.Markup.Primitives.MarkupObject.ObjectType%2A>.  
-  
+The type of the object may not be equal to <xref:System.Windows.Markup.Primitives.MarkupObject.ObjectType%2A> if the instance represents a factory which creates instances of type <xref:System.Windows.Markup.Primitives.MarkupObject.ObjectType%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <value>The type of the object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Markup.Primitives.MarkupObject.ObjectType%2A> returns the type of the <xref:System.Windows.Markup.Primitives.MarkupObject>.  For example, an item representing a <xref:System.Windows.Controls.Button> would return the equivalent of **typeof(System.Windows.Button)**.  
-  
+<xref:System.Windows.Markup.Primitives.MarkupObject.ObjectType%2A> returns the type of the <xref:System.Windows.Markup.Primitives.MarkupObject>.  For example, an item representing a <xref:System.Windows.Controls.Button> would return the equivalent of **typeof(System.Windows.Button)**.  
+ 
  ]]></format>
         </remarks>
       </Docs>

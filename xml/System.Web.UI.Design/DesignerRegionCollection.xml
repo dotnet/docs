@@ -18,32 +18,32 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.Design.DesignerRegion" /> objects within a control designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.ControlDesigner> class, and any derived class, uses the <xref:System.Web.UI.Design.DesignerRegionCollection> class to contain and enumerate the designer regions for the control in a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
-  
- For example, the <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName> method can be used to define and add regions to the collection.  
-  
- Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property to access the control designer object that contains the designer region collection. Use the <xref:System.Web.UI.Design.DesignerRegionCollection> methods and properties to examine and maintain the <xref:System.Web.UI.Design.DesignerRegion> objects that are in the collection.  
-  
- The collection dynamically increases as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property to determine how many designer regions are in the collection. Use the <xref:System.Web.UI.Design.DesignerRegionCollection> members to provide the following functionality:  
-  
+The <xref:System.Web.UI.Design.ControlDesigner> class, and any derived class, uses the <xref:System.Web.UI.Design.DesignerRegionCollection> class to contain and enumerate the designer regions for the control in a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
+ 
+For example, the <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName> method can be used to define and add regions to the collection.  
+ 
+Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property to access the control designer object that contains the designer region collection. Use the <xref:System.Web.UI.Design.DesignerRegionCollection> methods and properties to examine and maintain the <xref:System.Web.UI.Design.DesignerRegion> objects that are in the collection.  
+ 
+The collection dynamically increases as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property to determine how many designer regions are in the collection. Use the <xref:System.Web.UI.Design.DesignerRegionCollection> members to provide the following functionality:  
+ 
 -   The <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> method to add a single designer region to the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method to add a designer region at a particular index within the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method to remove a designer region.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerRegionCollection.RemoveAt%2A> method to remove the designer region at a particular index.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerRegionCollection.Contains%2A> method to determine whether a particular designer region is already in the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerRegionCollection.IndexOf%2A> method to retrieve the index of a designer region within the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerRegionCollection.Item%2A> indexer to get or set the designer region at a particular index, using array notation.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerRegionCollection.Clear%2A> method to remove all designer regions from the collection.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerRegionCollection.%23ctor%2A> constructor to create an empty collection. You can add elements to the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> or <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.DesignerRegionCollection.%23ctor%2A> constructor to create an empty collection. You can add elements to the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> or <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,12 +87,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> class for the specified control designer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.%23ctor%2A> constructor creates an empty collection and sets the <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property to the specified control designer object. The visual designer, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.UI.Design.DesignerRegionCollection.%23ctor%2A> constructor to initialize a designer region collection for a specific control designer.  
-  
- You can add elements to the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> or <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method.  
-  
+The <xref:System.Web.UI.Design.DesignerRegionCollection.%23ctor%2A> constructor creates an empty collection and sets the <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property to the specified control designer object. The visual designer, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.UI.Design.DesignerRegionCollection.%23ctor%2A> constructor to initialize a designer region collection for a specific control designer.  
+ 
+You can add elements to the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> or <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <returns>The index at which the region was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> method adds the specified <xref:System.Web.UI.Design.DesignerRegion> object to the end of the collection. To add a <xref:System.Web.UI.Design.DesignerRegion> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method.  
-  
+The <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> method adds the specified <xref:System.Web.UI.Design.DesignerRegion> object to the end of the collection. To add a <xref:System.Web.UI.Design.DesignerRegion> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <summary>Removes all regions from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Clear%2A> method to remove all regions from the collection. To remove a specific region from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method. To remove a region at a particular index, use the <xref:System.Web.UI.Design.DesignerRegionCollection.RemoveAt%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Clear%2A> method to remove all regions from the collection. To remove a specific region from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method. To remove a region at a particular index, use the <xref:System.Web.UI.Design.DesignerRegionCollection.RemoveAt%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,12 +173,12 @@
           <see langword="true" />, if the region is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerRegion> objects.  
-  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.Contains%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property. Because template region collections are typically small, the performance of the linear search operation is not critical.  
-  
+The <xref:System.Web.UI.Design.DesignerRegionCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerRegion> objects.  
+ 
+The <xref:System.Web.UI.Design.DesignerRegionCollection.Contains%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property. Because template region collections are typically small, the performance of the linear search operation is not critical.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,10 +205,10 @@
         <summary>Copies the elements of the collection to an <see cref="T:System.Array" /> object, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> or <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method to add the design regions to the <xref:System.Web.UI.Design.DesignerRegionCollection> collection.  
-  
+Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> or <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method to add the design regions to the <xref:System.Web.UI.Design.DesignerRegionCollection> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <value>The number of <see cref="T:System.Web.UI.Design.DesignerRegion" /> objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property is commonly used to determine the upper boundary index when iterating through objects in the collection. Because the collection indexes are zero-based, the first element is at index `0` and the last element is at index `Count-1`.  
-  
+The <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property is commonly used to determine the upper boundary index when iterating through objects in the collection. Because the collection indexes are zero-based, the first element is at index `0` and the last element is at index `Count-1`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property together with a loop construct, such as `while`, `for`, or `foreach` statements, to enumerate through the <xref:System.Web.UI.Design.DesignerRegionCollection> object.  
-  
+Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property together with a loop construct, such as `while`, `for`, or `foreach` statements, to enumerate through the <xref:System.Web.UI.Design.DesignerRegionCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,12 +285,12 @@
         <returns>The zero-based index of the first occurrence of <paramref name="region" /> within the collection; otherwise, -1, if <paramref name="region" /> is not in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.IndexOf%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerRegion> objects.  
-  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.IndexOf%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property. Because template region collections are typically small, the performance of the linear search operation is not critical.  
-  
+The <xref:System.Web.UI.Design.DesignerRegionCollection.IndexOf%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerRegion> objects.  
+ 
+The <xref:System.Web.UI.Design.DesignerRegionCollection.IndexOf%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property. Because template region collections are typically small, the performance of the linear search operation is not critical.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,13 +317,13 @@
         <summary>Inserts a <see cref="T:System.Web.UI.Design.DesignerRegion" /> object into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method adds a <xref:System.Web.UI.Design.DesignerRegion> object to the collection at a specific index location. To add a single <xref:System.Web.UI.Design.DesignerRegion> to the end of the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> method.  
-  
+The <xref:System.Web.UI.Design.DesignerRegionCollection.Insert%2A> method adds a <xref:System.Web.UI.Design.DesignerRegion> object to the collection at a specific index location. To add a single <xref:System.Web.UI.Design.DesignerRegion> to the end of the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Add%2A> method.  
+ 
 > [!NOTE]
 >  When you insert an item into the collection, the indexes change for subsequent items in the collection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -390,12 +390,12 @@
           <see langword="true" />, if access to the <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
-  
- Lock the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.SyncRoot%2A> method during the whole enumeration to guarantee thread safety.  
-  
+Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
+ 
+Lock the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.SyncRoot%2A> method during the whole enumeration to guarantee thread safety.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,12 +421,12 @@
         <value>The <see cref="T:System.Web.UI.Design.DesignerRegion" /> at the specified index in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Item%2A> indexer to retrieve the region at the specified index within the collection or to set the region at the specified index within the collection. You can index elements in the collection by using array notation. For example, you can index an element at index `i` with the notation `DesignerRegions(i)` for Microsoft VisualBasic or `DesignerRegions[i]` for C#.  
-  
- When you have a reference to the region object and need the index of the object in the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.IndexOf%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Item%2A> indexer to retrieve the region at the specified index within the collection or to set the region at the specified index within the collection. You can index elements in the collection by using array notation. For example, you can index an element at index `i` with the notation `DesignerRegions(i)` for Microsoft VisualBasic or `DesignerRegions[i]` for C#.  
+ 
+When you have a reference to the region object and need the index of the object in the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.IndexOf%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -454,10 +454,10 @@
         <value>A <see cref="T:System.Web.UI.Design.ControlDesigner" /> that represents the control designer that owns the <see cref="T:System.Web.UI.Design.DesignerRegionCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property provides a convenient means to access the control designer object for a designer region collection. For example, you can use the <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property to determine the type of control designer that owns the collection and to access the properties and methods of the control designer.  
-  
+The <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property provides a convenient means to access the control designer object for a designer region collection. For example, you can use the <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property to determine the type of control designer that owns the collection and to access the properties and methods of the control designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,19 +482,19 @@
         <summary>Removes the specified <see cref="T:System.Web.UI.Design.DesignerRegion" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method removes the first occurrence of the specified region from the collection. If the <xref:System.Web.UI.Design.DesignerRegionCollection> object does not contain the specified `region`, the collection remains unchanged. No exception is thrown.  
-  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerRegion> object.  
-  
- The <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property. Because template region collections are typically small, the performance of the linear search operation is not critical.  
-  
- To remove a region at a particular index from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.RemoveAt%2A> method. To remove all regions from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Clear%2A> method.  
-  
+The <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method removes the first occurrence of the specified region from the collection. If the <xref:System.Web.UI.Design.DesignerRegionCollection> object does not contain the specified `region`, the collection remains unchanged. No exception is thrown.  
+ 
+The <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerRegion> object.  
+ 
+The <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.DesignerRegionCollection.Count%2A> property. Because template region collections are typically small, the performance of the linear search operation is not critical.  
+ 
+To remove a region at a particular index from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.RemoveAt%2A> method. To remove all regions from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Clear%2A> method.  
+ 
 > [!NOTE]
 >  When you remove an item from the collection, the indexes change for subsequent items in the collection.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -519,13 +519,13 @@
         <summary>Removes the <see cref="T:System.Web.UI.Design.DesignerRegion" /> object at the specified index within the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerRegionCollection.RemoveAt%2A> method to remove a region at a particular index from the collection. To remove a specified region from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method. To remove all regions from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Clear%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.DesignerRegionCollection.RemoveAt%2A> method to remove a region at a particular index from the collection. To remove a specified region from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Remove%2A> method. To remove all regions from the collection, use the <xref:System.Web.UI.Design.DesignerRegionCollection.Clear%2A> method.  
+ 
 > [!NOTE]
 >  When you remove an item from the collection, the indexes change for subsequent items in the collection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -553,12 +553,12 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Web.UI.Design.DesignerRegionCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
-  
- Lock the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.SyncRoot%2A> method during the whole enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName>.  
-  
+Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
+ 
+Lock the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.SyncRoot%2A> method during the whole enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,10 +585,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -610,10 +610,10 @@
         <value>The number of elements in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -636,10 +636,10 @@
           <see langword="true" />, if access to the collection is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -661,10 +661,10 @@
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -687,10 +687,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,10 +716,10 @@
         <returns>The index at which the item was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -741,10 +741,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -771,10 +771,10 @@
           <see langword="true" />, if the region is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -800,10 +800,10 @@
         <returns>The zero-based index of the first occurrence of the object within the collection; otherwise, -1, if the object is not in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -830,10 +830,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -856,10 +856,10 @@
           <see langword="false" />, if the collection dynamically increases in size as new objects are added; otherwise, <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -881,10 +881,10 @@
         <value>The value of the <see cref="P:System.Web.UI.Design.DesignerRegionCollection.IsReadOnly" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -910,10 +910,10 @@
         <value>The object at the specified index in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -938,10 +938,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -966,10 +966,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerRegionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

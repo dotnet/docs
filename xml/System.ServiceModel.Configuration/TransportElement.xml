@@ -14,10 +14,10 @@
     <summary>Provides a base class to represent a transport binding configuration element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class contains properties that are common to all of the transport binding configuration elements provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. It handles the translation of the message encoder settings and base transport settings into their run-time manifestations. It delegates the translation of transport-specific settings (for example, HttpProxySettings for HTTP) logic in its concrete derived class transport bindings.  
-  
+This class contains properties that are common to all of the transport binding configuration elements provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. It handles the translation of the message encoder settings and base transport settings into their run-time manifestations. It delegates the translation of transport-specific settings (for example, HttpProxySettings for HTTP) logic in its concrete derived class transport bindings.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -161,14 +161,14 @@
           <see langword="true" /> if the user can address every message individually; <see langword="false" /> if the default [!INCLUDE[indigo2](~/includes/indigo2-md.md)] addressing mechanism automatically creates addresses for all messages. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is usually used in router scenarios, where the application determines which one of several destinations to send a message to.  
-  
- If this property is set to `true`, the channel assumes the message has already been addressed and does not add any additional information to it.  
-  
- If this property is set to `false`, the channel adds SOAP addressing information to the message.  
-  
+This property is usually used in router scenarios, where the application determines which one of several destinations to send a message to.  
+ 
+If this property is set to `true`, the channel assumes the message has already been addressed and does not add any additional information to it.  
+ 
+If this property is set to `false`, the channel adds SOAP addressing information to the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <value>The maximum size of the buffer pool. The default is 524,288 bytes (512 * 1024).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Many parts of [!INCLUDE[indigo2](~/includes/indigo2-md.md)] use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.  
-  
+Many parts of [!INCLUDE[indigo2](~/includes/indigo2-md.md)] use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.  
+ 
  ]]></format>
         </remarks>
       </Docs>

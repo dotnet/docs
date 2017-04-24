@@ -15,19 +15,19 @@
     <summary>Provides a collection of instances of the <see cref="T:System.Web.Services.Description.Import" /> class representing documents to be imported into the XML Web service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Description.Import> class corresponds to the Web Services Description Language (WSDL) `<import>` element that is enclosed by the root `<definitions>` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+The <xref:System.Web.Services.Description.Import> class corresponds to the Web Services Description Language (WSDL) `<import>` element that is enclosed by the root `<definitions>` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates a typical use of the `ImportCollection` class.  
-  
- [!code-cpp[ImportCollection_6#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#1)]
- [!code-csharp[ImportCollection_6#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#1)]
- [!code-vb[ImportCollection_6#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#1)]  
-  
+The following example demonstrates a typical use of the `ImportCollection` class.  
+ 
+[!code-cpp[ImportCollection_6#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#1)]
+[!code-csharp[ImportCollection_6#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#1)]
+[!code-vb[ImportCollection_6#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,14 +54,14 @@
         <returns>The zero-based index where the <paramref name="import" /> parameter has been added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the use of the `Add` method. For more information about the `CreateImport` method used in the sample, see the example under the <xref:System.Web.Services.Description.Import> class.  
-  
- [!code-cpp[Importsample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Importsample/CPP/importsample.cpp#1)]
- [!code-csharp[Importsample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Importsample/CS/importsample.cs#1)]
- [!code-vb[Importsample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Importsample/VB/importsample.vb#1)]  
-  
+The following example shows the use of the `Add` method. For more information about the `CreateImport` method used in the sample, see the example under the <xref:System.Web.Services.Description.Import> class.  
+ 
+[!code-cpp[Importsample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Importsample/CPP/importsample.cpp#1)]
+[!code-csharp[Importsample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Importsample/CS/importsample.cs#1)]
+[!code-vb[Importsample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Importsample/VB/importsample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,14 +89,14 @@
           <see langword="true" /> if the <paramref name="import" /> parameter is a member of the <see cref="T:System.Web.Services.Description.ImportCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `Contains` method.  
-  
- [!code-cpp[ImportCollection_6#4](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#4)]
- [!code-csharp[ImportCollection_6#4](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#4)]
- [!code-vb[ImportCollection_6#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#4)]  
-  
+The following example demonstrates the use of the `Contains` method.  
+ 
+[!code-cpp[ImportCollection_6#4](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#4)]
+[!code-csharp[ImportCollection_6#4](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#4)]
+[!code-vb[ImportCollection_6#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,14 +124,14 @@
         <summary>Copies the entire <see cref="T:System.Web.Services.Description.ImportCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.Import" />, starting at the specified zero-based index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `CopyTo` method.  
-  
- [!code-cpp[ImportCollection_6#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#3)]
- [!code-csharp[ImportCollection_6#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#3)]
- [!code-vb[ImportCollection_6#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#3)]  
-  
+The following example demonstrates the use of the `CopyTo` method.  
+ 
+[!code-cpp[ImportCollection_6#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#3)]
+[!code-csharp[ImportCollection_6#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#3)]
+[!code-vb[ImportCollection_6#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,14 +158,14 @@
         <returns>A 32-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `IndexOf` method.  
-  
- [!code-cpp[ImportCollection_6#5](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#5)]
- [!code-csharp[ImportCollection_6#5](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#5)]
- [!code-vb[ImportCollection_6#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#5)]  
-  
+The following example demonstrates the use of the `IndexOf` method.  
+ 
+[!code-cpp[ImportCollection_6#5](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#5)]
+[!code-csharp[ImportCollection_6#5](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#5)]
+[!code-vb[ImportCollection_6#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,23 +193,23 @@
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.Import" /> instance to the <see cref="T:System.Web.Services.Description.ImportCollection" /> at the specified zero-based index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+ 
+If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `import` parameter is added to the end of the <xref:System.Web.Services.Description.ImportCollection>.  
+ 
+The elements after the insertion point move down to accommodate the new element.  
+ 
   
- If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `import` parameter is added to the end of the <xref:System.Web.Services.Description.ImportCollection>.  
-  
- The elements after the insertion point move down to accommodate the new element.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `Insert` method. To view the source for the user-defined `CreateImport` method, see the example included with the <xref:System.Web.Services.Description.Import> class.  
-  
- [!code-cpp[Importsample#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Importsample/CPP/importsample.cpp#2)]
- [!code-csharp[Importsample#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Importsample/CS/importsample.cs#2)]
- [!code-vb[Importsample#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Importsample/VB/importsample.vb#2)]  
-  
+The following example demonstrates the use of the `Insert` method. To view the source for the user-defined `CreateImport` method, see the example included with the <xref:System.Web.Services.Description.Import> class.  
+ 
+[!code-cpp[Importsample#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Importsample/CPP/importsample.cpp#2)]
+[!code-csharp[Importsample#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Importsample/CS/importsample.cs#2)]
+[!code-vb[Importsample#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Importsample/VB/importsample.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
@@ -241,14 +241,14 @@
         <value>An <see langword="Import" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of a zero-based index to iterate through the members of the `ImportCollection`.  
-  
- [!code-cpp[ImportCollection_6#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#2)]
- [!code-csharp[ImportCollection_6#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#2)]
- [!code-vb[ImportCollection_6#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#2)]  
-  
+The following example demonstrates the use of a zero-based index to iterate through the members of the `ImportCollection`.  
+ 
+[!code-cpp[ImportCollection_6#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#2)]
+[!code-csharp[ImportCollection_6#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#2)]
+[!code-vb[ImportCollection_6#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,21 +274,21 @@
         <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.Import" /> from the <see cref="T:System.Web.Services.Description.ImportCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+ 
+The elements that follow the removed <xref:System.Web.Services.Description.Import> move up to occupy the vacated spot.  
+ 
   
- The elements that follow the removed <xref:System.Web.Services.Description.Import> move up to occupy the vacated spot.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `Remove` method.  
-  
- [!code-cpp[ImportCollection_6#6](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#6)]
- [!code-csharp[ImportCollection_6#6](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#6)]
- [!code-vb[ImportCollection_6#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#6)]  
-  
+The following example demonstrates the use of the `Remove` method.  
+ 
+[!code-cpp[ImportCollection_6#6](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#6)]
+[!code-csharp[ImportCollection_6#6](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#6)]
+[!code-vb[ImportCollection_6#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

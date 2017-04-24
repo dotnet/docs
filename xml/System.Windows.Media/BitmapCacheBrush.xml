@@ -14,50 +14,50 @@
     <summary>Paints an area with cached content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.BitmapCacheBrush> class to reuse a cached element efficiently. This is useful when you need to paint complex content onto multiple elements. Use the <xref:System.Windows.Media.BitmapCache> class to cache a complex element.  
-  
- Assign a <xref:System.Windows.Media.Visual> to the <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> property and optionally assign a <xref:System.Windows.Media.BitmapCache> to the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. The <xref:System.Windows.Media.CacheMode> of the brush and the target <xref:System.Windows.Media.Visual> interact to produce different behaviors. The following table describes this interaction.  
-  
+Use the <xref:System.Windows.Media.BitmapCacheBrush> class to reuse a cached element efficiently. This is useful when you need to paint complex content onto multiple elements. Use the <xref:System.Windows.Media.BitmapCache> class to cache a complex element.  
+ 
+Assign a <xref:System.Windows.Media.Visual> to the <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> property and optionally assign a <xref:System.Windows.Media.BitmapCache> to the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. The <xref:System.Windows.Media.CacheMode> of the brush and the target <xref:System.Windows.Media.Visual> interact to produce different behaviors. The following table describes this interaction.  
+ 
 ||Target has no CacheMode|Target has CacheMode|  
 |-|-----------------------------|--------------------------|  
 |Brush has no CacheMode|Target visual renders normally; brush uses default cache behavior.|Target visual renders into its own cache; brush uses target’s cache when rendering.|  
 |Brush has CacheMode|Target visual renders normally; brush renders target into its own cache and uses this to render.|Target visual renders into its own cache; brush renders target into brush's own cache and uses this to render.|  
-  
- The <xref:System.Windows.Media.BitmapCacheBrush> class is similar to the <xref:System.Windows.Media.VisualBrush> class, but <xref:System.Windows.Media.BitmapCacheBrush> always renders from a cache on the target element, or from a cache defined by the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. The <xref:System.Windows.Media.BitmapCacheBrush> class also supports dirty regions.  
-  
- The following table shows the default bitmap cache settings for the <xref:System.Windows.Media.BitmapCacheBrush> class.  
-  
+ 
+The <xref:System.Windows.Media.BitmapCacheBrush> class is similar to the <xref:System.Windows.Media.VisualBrush> class, but <xref:System.Windows.Media.BitmapCacheBrush> always renders from a cache on the target element, or from a cache defined by the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. The <xref:System.Windows.Media.BitmapCacheBrush> class also supports dirty regions.  
+ 
+The following table shows the default bitmap cache settings for the <xref:System.Windows.Media.BitmapCacheBrush> class.  
+ 
 |Bitmap Cache Property|Default Setting|  
 |---------------------------|---------------------|  
 |<xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A>|`false`|  
 |<xref:System.Windows.Media.BitmapCache.EnableClearType%2A>|`false`|  
 |<xref:System.Windows.Media.BitmapCache.RenderAtScale%2A>|1|  
-  
- The <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property is ignored by the <xref:System.Windows.Media.BitmapCacheBrush> class.  
-  
- The <xref:System.Windows.Media.BitmapCacheBrush> class ignores the following properties on the root <xref:System.Windows.Media.Visual>. This behavior differs from the <xref:System.Windows.Media.VisualBrush> class.  
-  
+ 
+The <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property is ignored by the <xref:System.Windows.Media.BitmapCacheBrush> class.  
+ 
+The <xref:System.Windows.Media.BitmapCacheBrush> class ignores the following properties on the root <xref:System.Windows.Media.Visual>. This behavior differs from the <xref:System.Windows.Media.VisualBrush> class.  
+ 
 -   <xref:System.Windows.Media.Visual.VisualOffset%2A>  
-  
+ 
 -   <xref:System.Windows.Media.Visual.VisualTransform%2A>  
-  
+ 
 -   <xref:System.Windows.Media.Visual.VisualClip%2A>  
-  
+ 
 -   <xref:System.Windows.Media.Visual.VisualEffect%2A>  
-  
+ 
 -   <xref:System.Windows.Media.Visual.VisualOpacity%2A>  
-  
+ 
 -   <xref:System.Windows.Media.Visual.VisualOpacityMask%2A>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to associate a <xref:System.Windows.Media.BitmapCache> with a <xref:System.Windows.Media.BitmapCacheBrush>. You can use the <xref:System.Windows.Media.BitmapCacheBrush> resource on multiple elements and achieve good performance. For the complete code listing, see [How to: Use a Cached Element as a Brush](~/docs/framework/wpf/graphics-multimedia/how-to-use-a-cached-element-as-a-brush.md).  
-  
- [!code-xml[System.Windows.Media.BitmapCacheBrush#_BitmapCacheBrushCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcachebrush/cs/window1.xaml#_bitmapcachebrushcreation)]  
-  
+The following code example shows how to associate a <xref:System.Windows.Media.BitmapCache> with a <xref:System.Windows.Media.BitmapCacheBrush>. You can use the <xref:System.Windows.Media.BitmapCacheBrush> resource on multiple elements and achieve good performance. For the complete code listing, see [How to: Use a Cached Element as a Brush](~/docs/framework/wpf/graphics-multimedia/how-to-use-a-cached-element-as-a-brush.md).  
+ 
+[!code-xml[System.Windows.Media.BitmapCacheBrush#_BitmapCacheBrushCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcachebrush/cs/window1.xaml#_bitmapcachebrushcreation)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -113,10 +113,10 @@
           <see langword="true" /> if layout is applied; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Media.BitmapCacheBrush.AutoLayoutContent%2A> property is `true`, layout is applied to the contents of the brush if <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> is a <xref:System.Windows.UIElement> with no parent.  
-  
+When the <xref:System.Windows.Media.BitmapCacheBrush.AutoLayoutContent%2A> property is `true`, layout is applied to the contents of the brush if <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> is a <xref:System.Windows.UIElement> with no parent.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>A <see cref="T:System.Windows.Media.BitmapCache" /> that represents cached content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property interacts with the <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> property. For a table that shows this interaction, see the <xref:System.Windows.Media.BitmapCacheBrush> class overview.  
-  
+The <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property interacts with the <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> property. For a table that shows this interaction, see the <xref:System.Windows.Media.BitmapCacheBrush> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,10 +275,10 @@
         <value>A <see cref="T:System.Windows.Media.Visual" /> to cache and paint with.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> property interacts with the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. For a table that shows this interaction, see the <xref:System.Windows.Media.BitmapCacheBrush> class overview.  
-  
+The <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> property interacts with the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. For a table that shows this interaction, see the <xref:System.Windows.Media.BitmapCacheBrush> class overview.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,28 +14,28 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.Style" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.StyleCollection> class to store and manage <xref:System.Web.UI.WebControls.Style> objects for a control. Control developers can use this class to contain a set of styles that apply to different portions of the control.  
-  
- The collection dynamically increases in size as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.StateManagedCollection.Count%2A> property to determine how many objects are in the collection.  
-  
- Additionally, use the <xref:System.Web.UI.WebControls.StyleCollection> methods and properties to provide the following functionality:  
-  
+Use the <xref:System.Web.UI.WebControls.StyleCollection> class to store and manage <xref:System.Web.UI.WebControls.Style> objects for a control. Control developers can use this class to contain a set of styles that apply to different portions of the control.  
+ 
+The collection dynamically increases in size as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.StateManagedCollection.Count%2A> property to determine how many objects are in the collection.  
+ 
+Additionally, use the <xref:System.Web.UI.WebControls.StyleCollection> methods and properties to provide the following functionality:  
+ 
 -   The <xref:System.Web.UI.WebControls.StyleCollection.Add%2A> method to add a single style to the collection.  
-  
+ 
 -   The <xref:System.Web.UI.WebControls.StyleCollection.Insert%2A> method to add a style at a particular index within the collection.  
-  
+ 
 -   The <xref:System.Web.UI.WebControls.StyleCollection.Remove%2A> method to remove a style from the collection.  
-  
+ 
 -   The <xref:System.Web.UI.WebControls.StyleCollection.RemoveAt%2A> method to remove the style located at a particular index.  
-  
+ 
 -   The <xref:System.Web.UI.WebControls.StyleCollection.Contains%2A> method to determine whether a particular style is already in the collection.  
-  
+ 
 -   The <xref:System.Web.UI.WebControls.StyleCollection.IndexOf%2A> method to retrieve the index of a style within the collection.  
-  
+ 
 -   The <xref:System.Web.UI.StateManagedCollection.Clear%2A> method to remove all the styles from the collection.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,12 +61,12 @@
         <returns>The index at which the style was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.StyleCollection.Add%2A> method to append the specified <xref:System.Web.UI.WebControls.Style> object to the end of the <xref:System.Web.UI.WebControls.StyleCollection> object.  
-  
- To add a <xref:System.Web.UI.WebControls.Style> object to the collection at a specific index location, use the <xref:System.Web.UI.WebControls.StyleCollection.Insert%2A> method.  
-  
+Use the <xref:System.Web.UI.WebControls.StyleCollection.Add%2A> method to append the specified <xref:System.Web.UI.WebControls.Style> object to the end of the <xref:System.Web.UI.WebControls.StyleCollection> object.  
+ 
+To add a <xref:System.Web.UI.WebControls.Style> object to the collection at a specific index location, use the <xref:System.Web.UI.WebControls.StyleCollection.Insert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
           <see langword="true" /> if the style is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.StyleCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.WebControls.Style> objects.  
-  
+The <xref:System.Web.UI.WebControls.StyleCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.WebControls.Style> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <summary>Copies the elements of the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> to a one-dimensional <see cref="T:System.Web.UI.WebControls.Style" /> array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The style elements are copied to the <xref:System.Array> object in the same order in which they are indexed within the <xref:System.Web.UI.WebControls.StyleCollection> object.  
-  
+The style elements are copied to the <xref:System.Array> object in the same order in which they are indexed within the <xref:System.Web.UI.WebControls.StyleCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@
         <returns>The zero-based index of the first occurrence of <paramref name="style" /> within the collection; otherwise, -1 if the style is not in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.StyleCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.WebControls.Style> objects.  
-  
+The <xref:System.Web.UI.WebControls.StyleCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.WebControls.Style> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,12 +223,12 @@
         <summary>Inserts a specified <see cref="T:System.Web.UI.WebControls.Style" /> object into the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> at the specified index location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.StyleCollection.Insert%2A> method to insert a specified <xref:System.Web.UI.WebControls.Style> object into the <xref:System.Web.UI.WebControls.StyleCollection> object at a specified index location.  
-  
- To add a <xref:System.Web.UI.WebControls.Style> object at the end of the <xref:System.Web.UI.WebControls.StyleCollection> object, use the <xref:System.Web.UI.WebControls.StyleCollection.Add%2A> method.  
-  
+Use the <xref:System.Web.UI.WebControls.StyleCollection.Insert%2A> method to insert a specified <xref:System.Web.UI.WebControls.Style> object into the <xref:System.Web.UI.WebControls.StyleCollection> object at a specified index location.  
+ 
+To add a <xref:System.Web.UI.WebControls.Style> object at the end of the <xref:System.Web.UI.WebControls.StyleCollection> object, use the <xref:System.Web.UI.WebControls.StyleCollection.Add%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
         <value>A <see cref="T:System.Web.UI.WebControls.Style" /> object at the specified index in the <see cref="T:System.Web.UI.WebControls.StyleCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this indexer to access a <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> at the specified index, using simple array notation. The indexer allows you to modify or replace a <xref:System.Web.UI.WebControls.Style> object in the collection directly.  
-  
+Use this indexer to access a <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> at the specified index, using simple array notation. The indexer allows you to modify or replace a <xref:System.Web.UI.WebControls.Style> object in the collection directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,12 +282,12 @@
         <summary>Removes the specified <see cref="T:System.Web.UI.WebControls.Style" /> object from the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.StyleCollection.Remove%2A> method to remove the specified <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> object. All items that follow the <xref:System.Web.UI.WebControls.Style> object are then moved up to fill in the vacant position. The indexes of the moved items are also updated.  
-  
- To remove a <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> object at a specific index location, use the <xref:System.Web.UI.WebControls.StyleCollection.RemoveAt%2A> method. You can also remove every <xref:System.Web.UI.WebControls.Style> object in the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
-  
+Use the <xref:System.Web.UI.WebControls.StyleCollection.Remove%2A> method to remove the specified <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> object. All items that follow the <xref:System.Web.UI.WebControls.Style> object are then moved up to fill in the vacant position. The indexes of the moved items are also updated.  
+ 
+To remove a <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> object at a specific index location, use the <xref:System.Web.UI.WebControls.StyleCollection.RemoveAt%2A> method. You can also remove every <xref:System.Web.UI.WebControls.Style> object in the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,12 +312,12 @@
         <summary>Removes the <see cref="T:System.Web.UI.WebControls.Style" /> object at the specified index location from the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.StyleCollection.RemoveAt%2A> method to remove the <xref:System.Web.UI.WebControls.Style> object at a specified index location from the <xref:System.Web.UI.WebControls.StyleCollection> object. All items that follow that <xref:System.Web.UI.WebControls.Style> object are then moved up to fill in the vacant position. The indexes of the moved items are also updated.  
-  
- To remove a specific <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> object, use the <xref:System.Web.UI.WebControls.StyleCollection.Remove%2A> method. You can also remove every <xref:System.Web.UI.WebControls.Style> object in the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
-  
+Use the <xref:System.Web.UI.WebControls.StyleCollection.RemoveAt%2A> method to remove the <xref:System.Web.UI.WebControls.Style> object at a specified index location from the <xref:System.Web.UI.WebControls.StyleCollection> object. All items that follow that <xref:System.Web.UI.WebControls.Style> object are then moved up to fill in the vacant position. The indexes of the moved items are also updated.  
+ 
+To remove a specific <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> object, use the <xref:System.Web.UI.WebControls.StyleCollection.Remove%2A> method. You can also remove every <xref:System.Web.UI.WebControls.Style> object in the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

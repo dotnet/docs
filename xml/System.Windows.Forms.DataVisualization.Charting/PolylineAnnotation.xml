@@ -87,10 +87,10 @@
         <value>The annotation type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For internal use, should not be used.  
-  
+For internal use, should not be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the polyline annotation type.  
-  
+This property is not applicable to the polyline annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,10 +200,10 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the polyline annotation type.  
-  
+This property is not applicable to the polyline annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the polyline annotation type.  
-  
+This property is not applicable to the polyline annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,12 +312,12 @@
         <summary>Ends the user placement of a polyline annotation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ends an annotation placement operation previously started by a <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BeginPlacement%2A> method call.  
-  
- You are not required to call this method, because placement will automatically end when an end user enters all required points. However, it is useful when an annotation placement operation needs to be aborted for some reason.  
-  
+This method ends an annotation placement operation previously started by a <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BeginPlacement%2A> method call.  
+ 
+You are not required to call this method, because placement will automatically end when an end user enters all required points. However, it is useful when an annotation placement operation needs to be aborted for some reason.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,10 +347,10 @@
         <value>A <see cref="T:System.Drawing.Font" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the polyline annotation type.  
-  
+This property is not applicable to the polyline annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,10 +386,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the polyline annotation type.  
-  
+This property is not applicable to the polyline annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,12 +422,12 @@
         <value>A <see cref="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath" /> object with the polyline shape.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A polyline must use coordinates relative to an annotation object, where (0,0) denotes the top-left coordinates and (100,100) denotes the bottom-right coordinates of the annotation.  
-  
- This property is not accessible at design time, when you should use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPathPoints%2A> property instead.  
-  
+A polyline must use coordinates relative to an annotation object, where (0,0) denotes the top-left coordinates and (100,100) denotes the bottom-right coordinates of the annotation.  
+ 
+This property is not accessible at design time, when you should use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPathPoints%2A> property instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,12 +460,12 @@
         <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection" /> object with the polyline shape.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A polyline must use coordinates relative to an annotation object, where (0,0) denotes the top-left coordinates and (100,100) denotes the bottom-right coordinates of the annotation.  
-  
- This property is not accessible at run time, when you should use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath%2A> property instead.  
-  
+A polyline must use coordinates relative to an annotation object, where (0,0) denotes the top-left coordinates and (100,100) denotes the bottom-right coordinates of the annotation.  
+ 
+This property is not accessible at run time, when you should use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath%2A> property instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -493,12 +493,12 @@
           <see langword="True" /> if an annotation should be placed using free-draw mode, otherwise <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two different placement modes are supported when the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BeginPlacement%2A> method is called. Set the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.IsFreeDrawPlacement%2A> property to `true` to switch from the default mode to free-draw mode, which allows the user to free draw while moving the mouse cursor.  
-  
- To allow the user to free draw the annotation, you must also set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AllowPathEditing%2A> property to `true`.  
-  
+Two different placement modes are supported when the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BeginPlacement%2A> method is called. Set the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.IsFreeDrawPlacement%2A> property to `true` to switch from the default mode to free-draw mode, which allows the user to free draw while moving the mouse cursor.  
+ 
+To allow the user to free draw the annotation, you must also set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AllowPathEditing%2A> property to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

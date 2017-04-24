@@ -376,10 +376,10 @@
         <returns>The return value of the call to the member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can use late binding to invoke the member on the element type of the array.  
-  
+This method can use late binding to invoke the member on the element type of the array.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -422,10 +422,10 @@
         <value>The type of the <see cref="T:Microsoft.JScript.TypedArray" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property gets the type of the <xref:Microsoft.JScript.TypedArray> object itself, not the element type of the typed array.  
-  
+This property gets the type of the <xref:Microsoft.JScript.TypedArray> object itself, not the element type of the typed array.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

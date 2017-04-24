@@ -18,21 +18,21 @@
     <summary>Provides <see langword="static" /> methods for retrieving feature information from the current system.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `static` methods of this class when the classes you query for feature information implement the <xref:System.Windows.Forms.IFeatureSupport> interface. Otherwise, inherit from <xref:System.Windows.Forms.FeatureSupport> and provide your own implementation. For an implementation of this class, see <xref:System.Windows.Forms.OSFeature>.  
+Use the `static` methods of this class when the classes you query for feature information implement the <xref:System.Windows.Forms.IFeatureSupport> interface. Otherwise, inherit from <xref:System.Windows.Forms.FeatureSupport> and provide your own implementation. For an implementation of this class, see <xref:System.Windows.Forms.OSFeature>.  
+ 
+To get the version number of a feature, call <xref:System.Windows.Forms.FeatureSupport.GetVersionPresent%2A>. Call <xref:System.Windows.Forms.FeatureSupport.IsPresent%2A> to determine if a particular feature or version of a feature is installed.  
+ 
   
- To get the version number of a feature, call <xref:System.Windows.Forms.FeatureSupport.GetVersionPresent%2A>. Call <xref:System.Windows.Forms.FeatureSupport.IsPresent%2A> to determine if a particular feature or version of a feature is installed.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.FeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
-  
- [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
- [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
- [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.FeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+ 
+[!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+[!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+[!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -76,19 +76,19 @@
         <returns>A <see cref="T:System.Version" /> representing the version number of the specified feature available on the system; or <see langword="null" /> if the feature is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Version numbers consist of three parts: major, minor, and build. Typically, a version number is displayed as "major number.minor number.build number".  
+Version numbers consist of three parts: major, minor, and build. Typically, a version number is displayed as "major number.minor number.build number".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.FeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code requires that `textBox1` has been created and placed on a form.  
-  
- [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
- [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
- [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.FeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code requires that `textBox1` has been created and placed on a form.  
+ 
+[!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+[!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+[!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -121,12 +121,12 @@
         <returns>A <see cref="T:System.Version" /> with the version number of the specified feature available on the system; or <see langword="null" /> if the feature is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Version numbers consist of three parts: major, minor, and build. Typically, a version number is displayed as "major number.minor number.build number".  
-  
- See the documentation for the product containing the feature to determine the names to pass to the `featureClassName` and the `featureConstName` parameters.  
-  
+Version numbers consist of three parts: major, minor, and build. Typically, a version number is displayed as "major number.minor number.build number".  
+ 
+See the documentation for the product containing the feature to determine the names to pass to the `featureClassName` and the `featureConstName` parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,14 +153,14 @@
           <see langword="true" /> if the feature is present; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.FeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code requires that `textBox1` has been created and placed on a form.  
-  
- [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
- [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
- [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.FeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code requires that `textBox1` has been created and placed on a form.  
+ 
+[!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+[!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+[!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -220,10 +220,10 @@
           <see langword="true" /> if the specified feature is present; <see langword="false" /> if the specified feature is not present or if the product containing the feature is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the documentation for the product containing the feature to determine the names to pass to the `featureClassName` and the `featureConstName` parameters.  
-  
+See the documentation for the product containing the feature to determine the names to pass to the `featureClassName` and the `featureConstName` parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
           <see langword="true" /> if the feature is present and its version number is greater than or equal to the specified minimum version number; <see langword="false" /> if the feature is not installed or its version number is below the specified minimum number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the documentation for the product containing the feature to determine the names to pass to the `featureClassName` and the `featureConstName` parameters.  
-  
+See the documentation for the product containing the feature to determine the names to pass to the `featureClassName` and the `featureConstName` parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>

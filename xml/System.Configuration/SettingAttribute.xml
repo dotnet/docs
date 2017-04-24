@@ -19,10 +19,10 @@
     <summary>Represents a custom settings attribute used to associate settings information with a settings property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.SettingAttribute> class associates settings information with a settings property. The <xref:System.Configuration.ApplicationSettingsBase> class will ignore all properties not marked with this or a derived attribute.  
-  
+The <xref:System.Configuration.SettingAttribute> class associates settings information with a settings property. The <xref:System.Configuration.ApplicationSettingsBase> class will ignore all properties not marked with this or a derived attribute.  
+ 
  ]]></format>
     </remarks>
   </Docs>

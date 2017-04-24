@@ -26,23 +26,23 @@
     <summary>Represents a field of an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> ASP.NET mobile control. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A field is of type <xref:System.Web.UI.MobileControls.ObjectListField>. When you want to display multiple fields, you can specify multiple fields for each item in an object list. To create a field within the declaration of an <xref:System.Web.UI.MobileControls.ObjectList>, you declare an <xref:System.Web.UI.MobileControls.ObjectListField> as a `<Field>` element. Each field is associated with a property name. When a list item is bound to a data object, each field is bound to the corresponding property of the object.  
-  
- The <xref:System.Web.UI.MobileControls.ObjectList> provides three ways to define a field:  
-  
+A field is of type <xref:System.Web.UI.MobileControls.ObjectListField>. When you want to display multiple fields, you can specify multiple fields for each item in an object list. To create a field within the declaration of an <xref:System.Web.UI.MobileControls.ObjectList>, you declare an <xref:System.Web.UI.MobileControls.ObjectListField> as a `<Field>` element. Each field is associated with a property name. When a list item is bound to a data object, each field is bound to the corresponding property of the object.  
+ 
+The <xref:System.Web.UI.MobileControls.ObjectList> provides three ways to define a field:  
+ 
 -   Declaratively, by using `<Field>` child elements within the object list  
-  
+ 
 -   Programmatically, by constructing <xref:System.Web.UI.MobileControls.ObjectListField> objects and adding them to the Fields member collection of the control  
-  
+ 
 -   Automatically, by setting the <xref:System.Web.UI.MobileControls.ObjectList.AutoGenerateFields%2A> property to `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a complete example, see the <xref:System.Web.UI.MobileControls.ObjectList> overview.  
-  
+For a complete example, see the <xref:System.Web.UI.MobileControls.ObjectList> overview.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -109,10 +109,10 @@
         <value>The name of the property from which to bind data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The property must be of a primitive type, or of type string, `DateTime`, `Currency`, or `Decimal`.  
-  
+The property must be of a primitive type, or of type string, `DateTime`, `Currency`, or `Decimal`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <value>The formatting string to use when formatting a data-bound value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The format of this string follows the conventions of the run-time <xref:System.String.Format%2A?displayProperty=fullName> method. If you leave this property set to its default value, the data is converted by using the default `ToString` converter.  
-  
+The format of this string follows the conventions of the run-time <xref:System.String.Format%2A?displayProperty=fullName> method. If you leave this property set to its default value, the data is converted by using the default `ToString` converter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,13 +169,13 @@
         <value>The name of the object list field.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use either the <xref:System.Web.UI.MobileControls.ObjectListField.Name%2A> or <xref:System.Web.UI.MobileControls.ObjectListField.DataField%2A> property to find an individual field within its parent collection by using the <xref:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf%2A> method.  
-  
+You can use either the <xref:System.Web.UI.MobileControls.ObjectListField.Name%2A> or <xref:System.Web.UI.MobileControls.ObjectListField.DataField%2A> property to find an individual field within its parent collection by using the <xref:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf%2A> method returns the first matching field; therefore, it is important that you use unique field names.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <value>To be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListField> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListField> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListField> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListField> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <returns>An <see cref="T:System.Collections.IDictionary" /> object containing the current view state data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListField> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListField> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,10 +276,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListField> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListField> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,10 +306,10 @@
         <value>The title of the object list field.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For devices that support a title separate from the page content, you can render the title as part of the form.  
-  
+For devices that support a title separate from the page content, you can render the title as part of the form.  
+ 
  ]]></format>
         </remarks>
       </Docs>

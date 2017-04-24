@@ -21,23 +21,23 @@
     <summary>Provides a base class for all strongly typed collections that manage <see cref="T:System.Web.UI.IStateManager" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection> class is the base class for all strongly typed collections that store <xref:System.Web.UI.IStateManager> elements, including <xref:System.Web.UI.WebControls.DataControlFieldCollection>, <xref:System.Web.UI.WebControls.ParameterCollection>, <xref:System.Web.UI.WebControls.StyleCollection>, <xref:System.Web.UI.WebControls.TreeNodeBindingCollection>, and others. The <xref:System.Web.UI.StateManagedCollection> collection manages its own state as well as the state of the elements it contains. Therefore, a call to <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A> saves the state of the collection and the state of all the elements currently contained by the collection.  
-  
- The most important methods to consider when deriving from the <xref:System.Web.UI.StateManagedCollection> class are <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A>, <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A>, <xref:System.Web.UI.StateManagedCollection.OnValidate%2A>, <xref:System.Web.UI.StateManagedCollection.SetDirty%2A>, and <xref:System.Web.UI.StateManagedCollection.SetDirtyObject%2A>. The <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> and <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> methods are used to store an index in view state for the type of a contained element. Storing an index rather than a fully qualified type name improves performance. The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called whenever elements of the collection are manipulated, and validates the elements according to business rules. Currently, the implementation of the <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method prohibits `null` objects from being stored in the collection; however, you can override this method to define your own validation behavior in a derived type. The <xref:System.Web.UI.StateManagedCollection.SetDirty%2A> method forces the entire collection to be serialized to view state, rather than just serializing changes made to state since the last time it was loaded. The <xref:System.Web.UI.StateManagedCollection.SetDirtyObject%2A> method is an abstract method you can implement to perform this same behavior at the element level.  
-  
+The <xref:System.Web.UI.StateManagedCollection> class is the base class for all strongly typed collections that store <xref:System.Web.UI.IStateManager> elements, including <xref:System.Web.UI.WebControls.DataControlFieldCollection>, <xref:System.Web.UI.WebControls.ParameterCollection>, <xref:System.Web.UI.WebControls.StyleCollection>, <xref:System.Web.UI.WebControls.TreeNodeBindingCollection>, and others. The <xref:System.Web.UI.StateManagedCollection> collection manages its own state as well as the state of the elements it contains. Therefore, a call to <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A> saves the state of the collection and the state of all the elements currently contained by the collection.  
+ 
+The most important methods to consider when deriving from the <xref:System.Web.UI.StateManagedCollection> class are <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A>, <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A>, <xref:System.Web.UI.StateManagedCollection.OnValidate%2A>, <xref:System.Web.UI.StateManagedCollection.SetDirty%2A>, and <xref:System.Web.UI.StateManagedCollection.SetDirtyObject%2A>. The <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> and <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> methods are used to store an index in view state for the type of a contained element. Storing an index rather than a fully qualified type name improves performance. The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called whenever elements of the collection are manipulated, and validates the elements according to business rules. Currently, the implementation of the <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method prohibits `null` objects from being stored in the collection; however, you can override this method to define your own validation behavior in a derived type. The <xref:System.Web.UI.StateManagedCollection.SetDirty%2A> method forces the entire collection to be serialized to view state, rather than just serializing changes made to state since the last time it was loaded. The <xref:System.Web.UI.StateManagedCollection.SetDirtyObject%2A> method is an abstract method you can implement to perform this same behavior at the element level.  
+ 
 > [!IMPORTANT]
 >  <xref:System.Web.UI.StateManagedCollection> stores assembly-qualified type names of the collection items in view state. A site visitor could decode the view state and retrieve the type name. If this scenario creates a security concern in your Web site, you can manually encrypt the type name before placing it in the view state.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to derive a strongly typed collection class from <xref:System.Web.UI.StateManagedCollection> to contain <xref:System.Web.UI.IStateManager> objects. In this example, the `CycleCollection` is derived to contain instances of the abstract `Cycle` class, which can be either `Bicycle` or `Tricycle` objects. The `Cycle` class implements the <xref:System.Web.UI.IStateManager> interface because it stores the value of the `CycleColor` property in view state.  
-  
- [!code-csharp[Samples.AspNet.CycleCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/CS/statemanagedcollectionsample.cs#1)]
- [!code-vb[Samples.AspNet.CycleCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/VB/statemanagedcollectionsample.vb#1)]  
-  
+The following code example demonstrates how to derive a strongly typed collection class from <xref:System.Web.UI.StateManagedCollection> to contain <xref:System.Web.UI.IStateManager> objects. In this example, the `CycleCollection` is derived to contain instances of the abstract `Cycle` class, which can be either `Bicycle` or `Tricycle` objects. The `Cycle` class implements the <xref:System.Web.UI.IStateManager> interface because it stores the value of the `CycleColor` property in view state.  
+ 
+[!code-csharp[Samples.AspNet.CycleCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/CS/statemanagedcollectionsample.cs#1)]
+[!code-vb[Samples.AspNet.CycleCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/VB/statemanagedcollectionsample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.StateManagedCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes can override the constructor to provide customized implementation.  
-  
+Derived classes can override the constructor to provide customized implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <summary>Removes all items from the <see cref="T:System.Web.UI.StateManagedCollection" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnClear%2A> method is called before the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method is called, and the <xref:System.Web.UI.StateManagedCollection.OnClearComplete%2A> method is called after <xref:System.Web.UI.StateManagedCollection.Clear%2A> has finished removing elements from the collection.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnClear%2A> method is called before the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method is called, and the <xref:System.Web.UI.StateManagedCollection.OnClearComplete%2A> method is called after <xref:System.Web.UI.StateManagedCollection.Clear%2A> has finished removing elements from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,12 +111,12 @@
         <summary>Copies the elements of the <see cref="T:System.Web.UI.StateManagedCollection" /> collection to an array, starting at a particular array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified array must be of a compatible type.  
-  
- The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Web.UI.StateManagedCollection> collection.  
-  
+The specified array must be of a compatible type.  
+ 
+The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Web.UI.StateManagedCollection> collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -174,18 +174,18 @@
         <returns>An instance of a class derived from <see cref="T:System.Web.UI.IStateManager" />, according to the <paramref name="index" /> provided.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23LoadViewState%2A?displayProperty=fullName> method. Derived collections override the <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method to return a default instance of the <xref:System.Web.UI.IStateManager> type identified by the provided `index`, which maps to one of the types returned by the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method.  
+The <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23LoadViewState%2A?displayProperty=fullName> method. Derived collections override the <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method to return a default instance of the <xref:System.Web.UI.IStateManager> type identified by the provided `index`, which maps to one of the types returned by the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how a strongly typed <xref:System.Web.UI.StateManagedCollection> class implements the <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method. The `CycleCollection` implementation of <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> returns the default instance of either a `Bicycle` or `Tricycle` object, depending on the index passed. This code example is part of a larger example provided for the <xref:System.Web.UI.StateManagedCollection> class.  
-  
- [!code-csharp[Samples.AspNet.CycleCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/CS/statemanagedcollectionsample.cs#2)]
- [!code-vb[Samples.AspNet.CycleCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/VB/statemanagedcollectionsample.vb#2)]  
-  
+The following code example demonstrates how a strongly typed <xref:System.Web.UI.StateManagedCollection> class implements the <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method. The `CycleCollection` implementation of <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> returns the default instance of either a `Bicycle` or `Tricycle` object, depending on the index passed. This code example is part of a larger example provided for the <xref:System.Web.UI.StateManagedCollection> class.  
+ 
+[!code-csharp[Samples.AspNet.CycleCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/CS/statemanagedcollectionsample.cs#2)]
+[!code-vb[Samples.AspNet.CycleCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/VB/statemanagedcollectionsample.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">In all cases when not overridden in a derived class.</exception>
@@ -228,18 +228,18 @@
         <returns>An ordered array of <see cref="T:System.Type" /> objects that identify the types of <see cref="T:System.Web.UI.IStateManager" /> objects the collection can contain. The default implementation returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method. Derived collections override the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method to return an array of <xref:System.Type> objects that represent the types the collection can contain.  
+The <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method. Derived collections override the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method to return an array of <xref:System.Type> objects that represent the types the collection can contain.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how a strongly typed <xref:System.Web.UI.StateManagedCollection> class implements the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method. The `CycleCollection` implementation of <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> returns a <xref:System.Type> array of known types, including `Bicycle` and `Tricycle` types. This code example is part of a larger example provided for the <xref:System.Web.UI.StateManagedCollection> class.  
-  
- [!code-csharp[Samples.AspNet.CycleCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/CS/statemanagedcollectionsample.cs#2)]
- [!code-vb[Samples.AspNet.CycleCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/VB/statemanagedcollectionsample.vb#2)]  
-  
+The following code example demonstrates how a strongly typed <xref:System.Web.UI.StateManagedCollection> class implements the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method. The `CycleCollection` implementation of <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> returns a <xref:System.Type> array of known types, including `Bicycle` and `Tricycle` types. This code example is part of a larger example provided for the <xref:System.Web.UI.StateManagedCollection> class.  
+ 
+[!code-csharp[Samples.AspNet.CycleCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/CS/statemanagedcollectionsample.cs#2)]
+[!code-vb[Samples.AspNet.CycleCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/VB/statemanagedcollectionsample.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
         <summary>When overridden in a derived class, performs additional work before the <see cref="M:System.Web.UI.StateManagedCollection.Clear" /> method removes all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnClear%2A> method to perform any additional work before all items are removed from the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
-  
+Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnClear%2A> method to perform any additional work before all items are removed from the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <summary>When overridden in a derived class, performs additional work after the <see cref="M:System.Web.UI.StateManagedCollection.Clear" /> method finishes removing all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnClearComplete%2A> method to perform any additional work after all items are removed from the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
-  
+Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnClearComplete%2A> method to perform any additional work after all items are removed from the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,10 +316,10 @@
         <summary>When overridden in a derived class, performs additional work before the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" /> or <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Add(System.Object)" /> method adds an item to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnInsert%2A> method to perform any additional work before an item is added to the collection using the <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Add%2A> or <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Insert%2A> method.  
-  
+Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnInsert%2A> method to perform any additional work before an item is added to the collection using the <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Add%2A> or <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Insert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,10 +346,10 @@
         <summary>When overridden in a derived class, performs additional work after the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" /> or <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Add(System.Object)" /> method adds an item to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnInsertComplete%2A> method to perform any additional work after an item is added to the collection using the <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Add%2A> or <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Insert%2A> method.  
-  
+Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnInsertComplete%2A> method to perform any additional work after an item is added to the collection using the <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Add%2A> or <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Insert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -376,10 +376,10 @@
         <summary>When overridden in a derived class, performs additional work before the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Remove(System.Object)" /> or <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#RemoveAt(System.Int32)" /> method removes the specified item from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method to perform any additional work before an item is removed from the collection using the <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Remove%2A> or <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23RemoveAt%2A> method.  
-  
+Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method to perform any additional work before an item is removed from the collection using the <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Remove%2A> or <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23RemoveAt%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,10 +406,10 @@
         <summary>When overridden in a derived class, performs additional work after the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Remove(System.Object)" /> or <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#RemoveAt(System.Int32)" /> method removes the specified item from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method to perform any additional work after an item is removed from the collection using the <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Remove%2A> or <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23RemoveAt%2A> method.  
-  
+Collections derived from <xref:System.Web.UI.StateManagedCollection> can override the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method to perform any additional work after an item is removed from the collection using the <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Remove%2A> or <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23RemoveAt%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,10 +434,10 @@
         <summary>When overridden in a derived class, validates an element of the <see cref="T:System.Web.UI.StateManagedCollection" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the object manipulated through the <xref:System.Web.UI.StateManagedCollection> implementation of the <xref:System.Collections.IList> interface methods. The default implementation is to verify that the object manipulated by the collection is not `null`; however, collections derived from <xref:System.Web.UI.StateManagedCollection> override the <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method to perform any additional validation, such as type-checking.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate the object manipulated through the <xref:System.Web.UI.StateManagedCollection> implementation of the <xref:System.Collections.IList> interface methods. The default implementation is to verify that the object manipulated by the collection is not `null`; however, collections derived from <xref:System.Web.UI.StateManagedCollection> override the <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method to perform any additional validation, such as type-checking.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -461,10 +461,10 @@
         <summary>Forces the entire <see cref="T:System.Web.UI.StateManagedCollection" /> collection to be serialized into view state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.SetDirty%2A> method forces the <xref:System.Web.UI.StateManagedCollection> collection to be serialized completely (whereas the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method saves only the change information). This is useful when a collection has changed in a significant way and change information is insufficient to recreate the object in memory from view state.  
-  
+The <xref:System.Web.UI.StateManagedCollection.SetDirty%2A> method forces the <xref:System.Web.UI.StateManagedCollection> collection to be serialized completely (whereas the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method saves only the change information). This is useful when a collection has changed in a significant way and change information is insufficient to recreate the object in memory from view state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,18 +489,18 @@
         <summary>When overridden in a derived class, instructs an <see langword="object" /> contained by the collection to record its entire state to view state, rather than recording only change information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.SetDirtyObject%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A>, <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Add%2A>, and <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Insert%2A> methods.  
+The <xref:System.Web.UI.StateManagedCollection.SetDirtyObject%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A>, <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Add%2A>, and <xref:System.Web.UI.StateManagedCollection.System%23Collections%23IList%23Insert%2A> methods.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how a strongly typed <xref:System.Web.UI.StateManagedCollection> class implements the abstract <xref:System.Web.UI.StateManagedCollection.SetDirtyObject%2A> method. The `CycleCollection` uses a <xref:System.Web.UI.StateBag> object to store its view-state information, and simply delegates the call to the <xref:System.Web.UI.StateBag.SetDirty%2A> method of the <xref:System.Web.UI.StateBag> object. This code example is part of a larger example provided for the <xref:System.Web.UI.StateManagedCollection> class.  
-  
- [!code-csharp[Samples.AspNet.CycleCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/CS/statemanagedcollectionsample.cs#2)]
- [!code-vb[Samples.AspNet.CycleCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/VB/statemanagedcollectionsample.vb#2)]  
-  
+The following code example demonstrates how a strongly typed <xref:System.Web.UI.StateManagedCollection> class implements the abstract <xref:System.Web.UI.StateManagedCollection.SetDirtyObject%2A> method. The `CycleCollection` uses a <xref:System.Web.UI.StateBag> object to store its view-state information, and simply delegates the call to the <xref:System.Web.UI.StateBag.SetDirty%2A> method of the <xref:System.Web.UI.StateBag> object. This code example is part of a larger example provided for the <xref:System.Web.UI.StateManagedCollection> class.  
+ 
+[!code-csharp[Samples.AspNet.CycleCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/CS/statemanagedcollectionsample.cs#2)]
+[!code-vb[Samples.AspNet.CycleCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.CycleCollection/VB/statemanagedcollectionsample.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -601,10 +601,10 @@
         <returns>The position at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> and <xref:System.Web.UI.StateManagedCollection.OnInsert%2A> methods are called before the element is added to the collection, and the <xref:System.Web.UI.StateManagedCollection.OnInsertComplete%2A> method is called after the element is added.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> and <xref:System.Web.UI.StateManagedCollection.OnInsert%2A> methods are called before the element is added to the collection, and the <xref:System.Web.UI.StateManagedCollection.OnInsertComplete%2A> method is called after the element is added.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="value" /> is <see langword="null" />.</exception>
@@ -627,10 +627,10 @@
         <summary>Removes all items from the <see cref="T:System.Web.UI.StateManagedCollection" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnClear%2A> method is called before the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method is called, and the <xref:System.Web.UI.StateManagedCollection.OnClearComplete%2A> method is called after <xref:System.Web.UI.StateManagedCollection.Clear%2A> has finished removing elements from the collection.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnClear%2A> method is called before the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method is called, and the <xref:System.Web.UI.StateManagedCollection.OnClearComplete%2A> method is called after <xref:System.Web.UI.StateManagedCollection.Clear%2A> has finished removing elements from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,10 +657,10 @@
           <see langword="true" /> if the object is found in the <see cref="T:System.Web.UI.StateManagedCollection" />; otherwise, <see langword="false" />. If <see langword="null" /> is passed for the value parameter, <see langword="false" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate `value` before the collection is checked.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate `value` before the collection is checked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -686,10 +686,10 @@
         <returns>The index of <paramref name="value" />, if it is found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate `value` before the index is returned.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate `value` before the index is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,10 +716,10 @@
         <summary>Inserts an item into the <see cref="T:System.Web.UI.StateManagedCollection" /> collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `index` is -1, `value` is appended to the beginning of the <xref:System.Web.UI.StateManagedCollection> collection. If `index` equals the number of items in the collection, `value` is appended to the end of the collection.  
-  
+If `index` is -1, `value` is appended to the beginning of the <xref:System.Web.UI.StateManagedCollection> collection. If `index` equals the number of items in the collection, `value` is appended to the end of the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="index" /> is out of range of the collection.</exception>
@@ -808,10 +808,10 @@
         <summary>Removes the first occurrence of the specified object from the <see cref="T:System.Web.UI.StateManagedCollection" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate `value` before the value is removed from the collection. The <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method is called before the object is removed, and the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method is called after the object is removed.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate `value` before the value is removed from the collection. The <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method is called before the object is removed, and the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method is called after the object is removed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.UI.StateManagedCollection" /> is read-only.</exception>
@@ -837,10 +837,10 @@
         <summary>Removes the <see cref="T:System.Web.UI.IStateManager" /> element at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate `value` before the value is removed from the collection. The <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method is called before the object is removed, and the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method is called after the object is removed.  
-  
+The <xref:System.Web.UI.StateManagedCollection.OnValidate%2A> method is called to validate `value` before the value is removed from the collection. The <xref:System.Web.UI.StateManagedCollection.OnRemove%2A> method is called before the object is removed, and the <xref:System.Web.UI.StateManagedCollection.OnRemoveComplete%2A> method is called after the object is removed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.UI.StateManagedCollection" /> is read-only.</exception>
@@ -885,14 +885,14 @@
         <summary>Restores the previously saved view state of the <see cref="T:System.Web.UI.StateManagedCollection" /> collection and the <see cref="T:System.Web.UI.IStateManager" /> items it contains.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method restores view-state information that was saved by the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method.  
-  
- View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1).  
-  
- This method is used primarily by control developers. You can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
-  
+This method restores view-state information that was saved by the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method.  
+ 
+View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1).  
+ 
+This method is used primarily by control developers. You can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -915,14 +915,14 @@
         <returns>The object that contains the changes to the view state of the <see cref="T:System.Web.UI.StateManagedCollection" /> and the items it contains. If no view state is associated with the collection and its elements, this method returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by control developers.  
-  
- View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1).  
-  
- When view state is saved, this string object is returned to the client as a variable that is stored in an HTML hidden element (`<input type="hidden">`). When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's <xref:System.Web.UI.Control.ViewState%2A> property. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1) and[ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
-  
+This method is used primarily by control developers.  
+ 
+View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1).  
+ 
+When view state is saved, this string object is returned to the client as a variable that is stored in an HTML hidden element (`<input type="hidden">`). When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's <xref:System.Web.UI.Control.ViewState%2A> property. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1) and[ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -944,10 +944,10 @@
         <summary>Causes the <see cref="T:System.Web.UI.StateManagedCollection" /> collection and each of the <see cref="T:System.Web.UI.IStateManager" /> objects it contains to track changes to their view state so they can be persisted across requests for the same page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1).  
-  
+View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [NIB: ASP.NET Web Server Controls](http://msdn.microsoft.com/en-us/e18eb2f2-cf00-47ae-b1a1-dfc188a6dea1).  
+ 
  ]]></format>
         </remarks>
       </Docs>

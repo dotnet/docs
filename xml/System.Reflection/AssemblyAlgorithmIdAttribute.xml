@@ -27,10 +27,10 @@
     <summary>Specifies an algorithm to hash all files in an assembly. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file hash values and names in the assembly are stored in the assembly manifest. When a file is loaded, the hash value is used to verify that a file has not been changed since the manifest was built.  
-  
+The file hash values and names in the assembly are stored in the assembly manifest. When a file is loaded, the hash value is used to verify that a file has not been changed since the manifest was built.  
+ 
  ]]></format>
     </remarks>
   </Docs>

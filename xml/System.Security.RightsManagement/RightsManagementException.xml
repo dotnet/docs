@@ -14,13 +14,13 @@
     <summary>Represents an error condition when a rights management operation cannot complete successfully.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,13 +39,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,13 +67,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="T:System.Security.RightsManagement.RightsManagementFailureCode" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> property to create an error message for the user.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> property to create an error message for the user.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,13 +95,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Exception.Message%2A> property to create an error message for the user.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Exception.Message%2A> property to create an error message for the user.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,13 +145,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="T:System.Security.RightsManagement.RightsManagementFailureCode" /> and <see cref="P:System.Exception.InnerException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,13 +175,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="T:System.Security.RightsManagement.RightsManagementFailureCode" /> and <see cref="P:System.Exception.Message" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,13 +205,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="P:System.Exception.Message" /> and <see cref="P:System.Exception.InnerException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Exception.Message%2A> property to create an error message for the user.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Exception.Message%2A> property to create an error message for the user.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,13 +237,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="T:System.Security.RightsManagement.RightsManagementFailureCode" />, <see cref="P:System.Exception.Message" /> and <see cref="P:System.Exception.InnerException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,13 +265,13 @@
         <value>The failure code for the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,13 +314,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

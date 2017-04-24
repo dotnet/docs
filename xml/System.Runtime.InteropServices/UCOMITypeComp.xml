@@ -23,10 +23,10 @@
     <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.ITypeComp" /> instead.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `ITypeComp` interface, see the MSDN Library.  
-  
+For more information about the `ITypeComp` interface, see the MSDN Library.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <summary>Maps a name to a member of a type, or binds global variables and functions contained in a type library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `ITypeComp::Bind` in the MSDN library.  
-  
+For more information, please see the existing documentation for `ITypeComp::Bind` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <summary>Binds to the type descriptions contained within a type library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `ITypeComp::BindType` in the MSDN library.  
-  
+For more information, please see the existing documentation for `ITypeComp::BindType` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

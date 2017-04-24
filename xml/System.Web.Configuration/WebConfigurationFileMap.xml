@@ -14,12 +14,12 @@
     <summary>Defines the configuration file mappings for a Web application. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.WebConfigurationFileMap> class is used to specify the Web configuration file hierarchy. By default, the configuration system uses the IIS metabase to determine the Web file hierarchy. If IIS is not installed, or if an application targets a version of the .NET Framework that is not the latest version that is installed on the server, the <xref:System.Web.Configuration.WebConfigurationFileMap> class provides a means to define a custom hierarchy.  
-  
- The <xref:System.Web.Configuration.WebConfigurationFileMap> class can specify a single path or multiple paths related to configuration files.  
-  
+The <xref:System.Web.Configuration.WebConfigurationFileMap> class is used to specify the Web configuration file hierarchy. By default, the configuration system uses the IIS metabase to determine the Web file hierarchy. If IIS is not installed, or if an application targets a version of the .NET Framework that is not the latest version that is installed on the server, the <xref:System.Web.Configuration.WebConfigurationFileMap> class provides a means to define a custom hierarchy.  
+ 
+The <xref:System.Web.Configuration.WebConfigurationFileMap> class can specify a single path or multiple paths related to configuration files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,13 +56,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.WebConfigurationFileMap" /> class by using the specified machine configuration file name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use this constructor when you are targeting a version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] that is earlier than the latest one that is installed on the computer. The method enables you to specify a machine configuration file that is appropriate to the version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] that you are targeting.  
-  
+You use this constructor when you are targeting a version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] that is earlier than the latest one that is installed on the computer. The method enables you to specify a machine configuration file that is appropriate to the version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] that you are targeting.  
+ 
 > [!NOTE]
 >  Even though the constructor only accepts the path to the Machine.config file, the configuration system will also read the root Web.config file in the same directory where the Machine.config file exists.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <value>A collection of <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The virtual directories of a Web application may not necessarily map to the physical directories on the server. The <xref:System.Web.Configuration.VirtualDirectoryMapping> class is independent of IIS.  
-  
+The virtual directories of a Web application may not necessarily map to the physical directories on the server. The <xref:System.Web.Configuration.VirtualDirectoryMapping> class is independent of IIS.  
+ 
  ]]></format>
         </remarks>
       </Docs>

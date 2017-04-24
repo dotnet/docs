@@ -22,19 +22,19 @@
     <summary>Represents a declaration for an event of a type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeMemberEvent> can be used to represent event members of a type. <xref:System.CodeDom.CodeMemberEvent> has properties to indicate the data type of the event, whether it privately implements a data type, and what interface types, if any, the member event implements.  
+<xref:System.CodeDom.CodeMemberEvent> can be used to represent event members of a type. <xref:System.CodeDom.CodeMemberEvent> has properties to indicate the data type of the event, whether it privately implements a data type, and what interface types, if any, the member event implements.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates use of a <xref:System.CodeDom.CodeMemberEvent> to declare an event that takes a `System.EventHandler` delegate:  
-  
- [!code-cpp[CodeMemberEventSample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberEventSample/CPP/codemembereventexample.cpp#3)]
- [!code-csharp[CodeMemberEventSample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberEventSample/CS/codemembereventexample.cs#3)]
- [!code-vb[CodeMemberEventSample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberEventSample/VB/codemembereventexample.vb#3)]  
-  
+This example demonstrates use of a <xref:System.CodeDom.CodeMemberEvent> to declare an event that takes a `System.EventHandler` delegate:  
+ 
+[!code-cpp[CodeMemberEventSample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberEventSample/CPP/codemembereventexample.cpp#3)]
+[!code-csharp[CodeMemberEventSample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberEventSample/CS/codemembereventexample.cs#3)]
+[!code-vb[CodeMemberEventSample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberEventSample/VB/codemembereventexample.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <value>A <see cref="T:System.CodeDom.CodeTypeReferenceCollection" /> that indicates the data type or types that the member event implements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The types referenced should consist of interfaces or the base class.  
-  
+The types referenced should consist of interfaces or the base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type that the event privately implements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The types referenced should consist of interfaces or the base class.  
-  
+The types referenced should consist of interfaces or the base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

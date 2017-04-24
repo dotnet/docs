@@ -14,14 +14,14 @@
     <summary>Animates from the <see cref="T:System.Byte" /> value of the previous key frame to its own <see cref="P:System.Windows.Media.Animation.ByteKeyFrame.Value" /> using discrete interpolation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used as part of a <xref:System.Windows.Media.Animation.ByteKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.ByteAnimationUsingKeyFrames> to animate a <xref:System.Byte> property value along a set of key frames.  
-  
- A key frame defines a segment of the <xref:System.Windows.Media.Animation.ByteAnimationUsingKeyFrames> to which it belongs. Each key frame has a target <xref:System.Windows.Media.Animation.ByteKeyFrame.Value%2A> and a <xref:System.Windows.Media.Animation.ByteKeyFrame.KeyTime%2A>. The <xref:System.Windows.Media.Animation.ByteKeyFrame.KeyTime%2A> specifies the time at which the key frame's <xref:System.Windows.Media.Animation.ByteKeyFrame.Value%2A> should be reached. A key frame animates from the target value of the previous key frame to its own target value. It starts when the previous key frame ends and ends when its own key time is reached.  
-  
- Discrete key frames like <xref:System.Windows.Media.Animation.DiscreteByteKeyFrame> create sudden "jumps" between values (no Interpolation). In other words, the animated property does not change until the key frame's key time is reached at which point the animated property goes suddenly to the target value.  
-  
+This class is used as part of a <xref:System.Windows.Media.Animation.ByteKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.ByteAnimationUsingKeyFrames> to animate a <xref:System.Byte> property value along a set of key frames.  
+ 
+A key frame defines a segment of the <xref:System.Windows.Media.Animation.ByteAnimationUsingKeyFrames> to which it belongs. Each key frame has a target <xref:System.Windows.Media.Animation.ByteKeyFrame.Value%2A> and a <xref:System.Windows.Media.Animation.ByteKeyFrame.KeyTime%2A>. The <xref:System.Windows.Media.Animation.ByteKeyFrame.KeyTime%2A> specifies the time at which the key frame's <xref:System.Windows.Media.Animation.ByteKeyFrame.Value%2A> should be reached. A key frame animates from the target value of the previous key frame to its own target value. It starts when the previous key frame ends and ends when its own key time is reached.  
+ 
+Discrete key frames like <xref:System.Windows.Media.Animation.DiscreteByteKeyFrame> create sudden "jumps" between values (no Interpolation). In other words, the animated property does not change until the key frame's key time is reached at which point the animated property goes suddenly to the target value.  
+ 
  ]]></format>
     </remarks>
   </Docs>

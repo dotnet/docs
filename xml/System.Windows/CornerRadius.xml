@@ -23,50 +23,50 @@
     <summary>Represents the radii of a rectangle's corners.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has four properties, <xref:System.Windows.CornerRadius.TopLeft%2A>, <xref:System.Windows.CornerRadius.TopRight%2A>, <xref:System.Windows.CornerRadius.BottomLeft%2A>, and <xref:System.Windows.CornerRadius.BottomRight%2A>, corresponding to the individual corners of the rectangle.  Each is a <xref:System.Double> structure that can be set independently of the others.  
-  
- The radii cannot be negative.  
-  
+This class has four properties, <xref:System.Windows.CornerRadius.TopLeft%2A>, <xref:System.Windows.CornerRadius.TopRight%2A>, <xref:System.Windows.CornerRadius.BottomLeft%2A>, and <xref:System.Windows.CornerRadius.BottomRight%2A>, corresponding to the individual corners of the rectangle.  Each is a <xref:System.Double> structure that can be set independently of the others.  
+ 
+The radii cannot be negative.  
+ 
 <a name="xamlAttributeUsage_Duration"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="TopLeft,TopRight,BottomRight,BottomLeft "/>  
 - or -  
 <object property="AllCorners"/>  
 ```  
-  
+ 
 <a name="xamlValues_Thickness"></a>   
 ## XAML Values  
- *TopLeft*  
- <xref:System.Double> value that specifies the radius of the top left corner.  
-  
- *TopRight*  
- <xref:System.Double> value that specifies the top right corner.  
-  
- *BottomRight*  
- <xref:System.Double> value that specifies the bottom right corner.  
-  
- *BottomLeft*  
- <xref:System.Double> value that specifies the bottom left corner.  
-  
- *AllCorners*  
- If only a single <xref:System.Double> value is specified, that measure is applied to ALL of the *TopLeft*, *TopRight*, *BottomRight*, and *BottomLeft* corners of the <xref:System.Windows.CornerRadius>.  
-  
+*TopLeft*  
+<xref:System.Double> value that specifies the radius of the top left corner.  
+ 
+*TopRight*  
+<xref:System.Double> value that specifies the top right corner.  
+ 
+*BottomRight*  
+<xref:System.Double> value that specifies the bottom right corner.  
+ 
+*BottomLeft*  
+<xref:System.Double> value that specifies the bottom left corner.  
+ 
+*AllCorners*  
+If only a single <xref:System.Double> value is specified, that measure is applied to ALL of the *TopLeft*, *TopRight*, *BottomRight*, and *BottomLeft* corners of the <xref:System.Windows.CornerRadius>.  
+ 
 > [!NOTE]
 >  Values need not include the decimal point explicitly when specified as a string. The string "1" provided in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] evaluates to a value of 1.0 when referenced in code.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of the <xref:System.Windows.Controls.Border.CornerRadius%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
- [!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
- [!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
-  
+The following example shows how to set the value of the <xref:System.Windows.Controls.Border.CornerRadius%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+ 
+[!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
+[!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
+[!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -130,10 +130,10 @@
         <value>The radius of the bottom-left corner. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The radius of the bottom-left corner can be set independently of the other corners of the rectangle.  
-  
+The radius of the bottom-left corner can be set independently of the other corners of the rectangle.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,19 +155,19 @@
         <value>The radius of the bottom-right corner. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The radius of the bottom-right corner can be set independently of the other corners of the rectangle.  
+The radius of the bottom-right corner can be set independently of the other corners of the rectangle.  
+ 
   
-   
-  
+ 
 ## Examples  
- <xref:System.Windows.CornerRadius.TopRight%2A>  
-  
- <xref:System.Windows.CornerRadius.BottomLeft%2A>  
-  
- <xref:System.Windows.CornerRadius.TopLeft%2A>  
-  
+<xref:System.Windows.CornerRadius.TopRight%2A>  
+ 
+<xref:System.Windows.CornerRadius.BottomLeft%2A>  
+ 
+<xref:System.Windows.CornerRadius.TopLeft%2A>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,10 +304,10 @@
         <value>The radius of the top-left corner. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The radius of the top-left corner can be set independently of the other corners of the rectangle.  
-  
+The radius of the top-left corner can be set independently of the other corners of the rectangle.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,10 +329,10 @@
         <value>The radius of the top-right corner. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The radius of the top-right corner can be set independently of the other corners of the rectangle.  
-  
+The radius of the top-right corner can be set independently of the other corners of the rectangle.  
+ 
  ]]></format>
         </remarks>
       </Docs>

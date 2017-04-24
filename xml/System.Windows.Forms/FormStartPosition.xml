@@ -18,19 +18,19 @@
     <summary>Specifies the initial position of a form.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.Form.StartPosition%2A> property of the <xref:System.Windows.Forms.Form> class. It represents the different start positions of the form. The default start position is `WindowsDefaultLocation`.  
+This enumeration is used by the <xref:System.Windows.Forms.Form.StartPosition%2A> property of the <xref:System.Windows.Forms.Form> class. It represents the different start positions of the form. The default start position is `WindowsDefaultLocation`.  
+ 
   
-   
-  
+ 
 ## Examples  
- In this example, you change the form's start position to the center of the screen and display the position information using a label. This example assumes that you have already created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-cpp[FormStartPosition#1](~/samples/snippets/cpp/VS_Snippets_Winforms/FormStartPosition/CPP/formstartposition.cpp#1)]
- [!code-csharp[FormStartPosition#1](~/samples/snippets/csharp/VS_Snippets_Winforms/FormStartPosition/CS/formstartposition.cs#1)]
- [!code-vb[FormStartPosition#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/FormStartPosition/VB/formstartposition.vb#1)]  
-  
+In this example, you change the form's start position to the center of the screen and display the position information using a label. This example assumes that you have already created a <xref:System.Windows.Forms.Form> named `Form1`.  
+ 
+[!code-cpp[FormStartPosition#1](~/samples/snippets/cpp/VS_Snippets_Winforms/FormStartPosition/CPP/formstartposition.cpp#1)]
+[!code-csharp[FormStartPosition#1](~/samples/snippets/csharp/VS_Snippets_Winforms/FormStartPosition/CS/formstartposition.cs#1)]
+[!code-vb[FormStartPosition#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/FormStartPosition/VB/formstartposition.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

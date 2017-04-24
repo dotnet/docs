@@ -13,23 +13,23 @@
     <summary>Returns information about literals used in text commands, data values, and database objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.OleDb.OleDbLiteral> enumeration returns the following categories of literal information.  
-  
+The <xref:System.Data.OleDb.OleDbLiteral> enumeration returns the following categories of literal information.  
+ 
 |Category|Returns|  
 |--------------|-------------|  
 |A special character or characters used by text commands, such as the character used to quote identifiers.|The character or characters.|  
 |A literal data value, such as a character literal in an SQL statement.|The maximum length of the literal in characters, a list of the characters that cannot be used in the literal, and a list of the characters that cannot be used as the first character of the literal.|  
 |The name of a database object such as a column or table.|The maximum length of the name in characters, a list of the characters that cannot be used in the name, and a list of the characters that cannot be used as the first character of the name.|  
 |Multidimensional restriction columns.|Restriction values that return information about cubes, dimensions, hierarchies, levels, and members available from a data source; and are treated as literals instead of as search patterns.|  
-  
- Most members of the <xref:System.Data.OleDb.OleDbLiteral> enumeration maps to one of the OLE DB DBLITERAL values that are returned in the DBLITERALINFO structure.  
-  
- Multidimensional restriction columns are members of schema objects and map to OLE DB for OLAP used by the IDBSchemaRowset interface.  
-  
- A <xref:System.NotSupportedException> is generated if the specified literal information is not supported and cannot be returned.  
-  
+ 
+Most members of the <xref:System.Data.OleDb.OleDbLiteral> enumeration maps to one of the OLE DB DBLITERAL values that are returned in the DBLITERALINFO structure.  
+ 
+Multidimensional restriction columns are members of schema objects and map to OLE DB for OLAP used by the IDBSchemaRowset interface.  
+ 
+A <xref:System.NotSupportedException> is generated if the specified literal information is not supported and cannot be returned.  
+ 
  ]]></format>
     </remarks>
   </Docs>

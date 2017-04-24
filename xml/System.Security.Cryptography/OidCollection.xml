@@ -27,19 +27,19 @@
     <summary>Represents a collection of <see cref="T:System.Security.Cryptography.Oid" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class implements the <xref:System.Collections.ICollection> interface.  
+This class implements the <xref:System.Collections.ICollection> interface.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,19 +67,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.OidCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the default constructor for this class.  
+This is the default constructor for this class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,19 +114,19 @@
         <returns>The index of the added <see cref="T:System.Security.Cryptography.Oid" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to add an <xref:System.Security.Cryptography.Oid> object to an existing collection at the current location.  
+Use this method to add an <xref:System.Security.Cryptography.Oid> object to an existing collection at the current location.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,19 +162,19 @@
         <summary>Copies the <see cref="T:System.Security.Cryptography.OidCollection" /> object into an array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method copies an <xref:System.Security.Cryptography.OidCollection> object into an array at the specified location.  
+This method copies an <xref:System.Security.Cryptography.OidCollection> object into an array at the specified location.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,14 +205,14 @@
         <value>The number of <see cref="T:System.Security.Cryptography.Oid" /> objects in a collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,19 +244,19 @@
         <returns>An <see cref="T:System.Security.Cryptography.OidEnumerator" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.OidEnumerator> class implements the <xref:System.Collections.IEnumerator> interface, which allows you to move within a collection.  
+The <xref:System.Security.Cryptography.OidEnumerator> class implements the <xref:System.Collections.IEnumerator> interface, which allows you to move within a collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,19 +284,19 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection is not thread safe.  
+This collection is not thread safe.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,19 +331,19 @@
         <value>An <see cref="T:System.Security.Cryptography.Oid" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to retrieve an <xref:System.Security.Cryptography.Oid> object from an <xref:System.Security.Cryptography.OidCollection> object, if you know its location. You can use the <xref:System.Security.Cryptography.OidCollection.Item%2A> property to retrieve an <xref:System.Security.Cryptography.Oid> object if you know the value of the object's <xref:System.Security.Cryptography.Oid.Value%2A> property or <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property.  
+Use this method to retrieve an <xref:System.Security.Cryptography.Oid> object from an <xref:System.Security.Cryptography.OidCollection> object, if you know its location. You can use the <xref:System.Security.Cryptography.OidCollection.Item%2A> property to retrieve an <xref:System.Security.Cryptography.Oid> object if you know the value of the object's <xref:System.Security.Cryptography.Oid.Value%2A> property or <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,19 +378,19 @@
         <value>An <see cref="T:System.Security.Cryptography.Oid" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to retrieve an <xref:System.Security.Cryptography.Oid> object from an <xref:System.Security.Cryptography.OidCollection> object if you know the value of the <xref:System.Security.Cryptography.Oid.Value%2A> or <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property of the <xref:System.Security.Cryptography.Oid> object. You can use the <xref:System.Security.Cryptography.OidCollection.Item%2A> property to retrieve an <xref:System.Security.Cryptography.Oid> object if you know its location in the collection.  
+Use this property to retrieve an <xref:System.Security.Cryptography.Oid> object from an <xref:System.Security.Cryptography.OidCollection> object if you know the value of the <xref:System.Security.Cryptography.Oid.Value%2A> or <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property of the <xref:System.Security.Cryptography.Oid> object. You can use the <xref:System.Security.Cryptography.OidCollection.Item%2A> property to retrieve an <xref:System.Security.Cryptography.Oid> object if you know its location in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,10 +417,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Security.Cryptography.OidCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Cryptography.OidCollection> is not thread safe. Derived classes can provide their own synchronized version of the <xref:System.Security.Cryptography.OidCollection> class using this property. The synchronizing code must perform operations on the <xref:System.Security.Cryptography.OidCollection.SyncRoot%2A> property of the <xref:System.Security.Cryptography.OidCollection> object, not directly on the object itself. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might simultaneously be modifying the <xref:System.Security.Cryptography.OidCollection> object.  
-  
+<xref:System.Security.Cryptography.OidCollection> is not thread safe. Derived classes can provide their own synchronized version of the <xref:System.Security.Cryptography.OidCollection> class using this property. The synchronizing code must perform operations on the <xref:System.Security.Cryptography.OidCollection.SyncRoot%2A> property of the <xref:System.Security.Cryptography.OidCollection> object, not directly on the object itself. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might simultaneously be modifying the <xref:System.Security.Cryptography.OidCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -456,10 +456,10 @@
         <summary>Copies the <see cref="T:System.Security.Cryptography.OidCollection" /> object into an array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method copies an <xref:System.Security.Cryptography.OidCollection> object into an array at the specified location.  
-  
+This method copies an <xref:System.Security.Cryptography.OidCollection> object into an array at the specified location.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -536,10 +536,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.OidEnumerator" /> object that can be used to navigate the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.OidEnumerator> class implements the <xref:System.Collections.IEnumerator> interface, which allows you to move within a collection.  
-  
+The <xref:System.Security.Cryptography.OidEnumerator> class implements the <xref:System.Collections.IEnumerator> interface, which allows you to move within a collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

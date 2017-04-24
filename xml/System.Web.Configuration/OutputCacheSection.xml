@@ -14,10 +14,10 @@
     <summary>Configures the output cache for a Web application. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.OutputCacheSection> class allows you to programmatically access and modify the `OutputCache` section.  
-  
+The <xref:System.Web.Configuration.OutputCacheSection> class allows you to programmatically access and modify the `OutputCache` section.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.OutputCacheSection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.OutputCacheSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.OutputCacheSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
+The <xref:System.Web.Configuration.OutputCacheSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.OutputCacheSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -69,10 +69,10 @@
         <value>The name of the default provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default output-cache provider for ASP.NET is not a provider of type <xref:System.Web.Caching.OutputCacheProvider>. It is the original, in-memory provider that is used by ASP.NET for output caching. The default value is `AspNetInternalProvider`.  
-  
+The default output-cache provider for ASP.NET is not a provider of type <xref:System.Web.Caching.OutputCacheProvider>. It is the original, in-memory provider that is used by ASP.NET for output caching. The default value is `AspNetInternalProvider`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,18 +100,18 @@
           <see langword="true" /> if the fragment cache is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no user control output is cached, regardless of the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no user control output is cached, regardless of the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#4)]
- [!code-vb[System.Web.Configuration.OutputCacheSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#4)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#4)]
+[!code-vb[System.Web.Configuration.OutputCacheSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,14 +139,14 @@
           <see langword="true" /> if kernel caching is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If static compression is enabled for the request but the client requested an uncompressed response, then kernel caching is disabled. Only compressed responses are cached in kernel.  
-  
- Setting the <xref:System.Web.Configuration.OutputCacheSection.EnableKernelCacheForVaryByStar%2A> property to `true` doesn’t ensure kernel caching of responses. Modules in the processing pipeline must set the kernel cache policy.  
-  
- <xref:System.Web.Configuration.OutputCacheSection.EnableKernelCacheForVaryByStar%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+If static compression is enabled for the request but the client requested an uncompressed response, then kernel caching is disabled. Only compressed responses are cached in kernel.  
+ 
+Setting the <xref:System.Web.Configuration.OutputCacheSection.EnableKernelCacheForVaryByStar%2A> property to `true` doesn’t ensure kernel caching of responses. Modules in the processing pipeline must set the kernel cache policy.  
+ 
+<xref:System.Web.Configuration.OutputCacheSection.EnableKernelCacheForVaryByStar%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,18 +174,18 @@
           <see langword="true" /> if the output cache is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no page is cached on the server, regardless of the settings in [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used by the page. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no page is cached on the server, regardless of the settings in [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used by the page. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.EnableOutputCache%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#3)]
- [!code-vb[System.Web.Configuration.OutputCacheSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#3)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.EnableOutputCache%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#3)]
+[!code-vb[System.Web.Configuration.OutputCacheSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,18 +213,18 @@
           <see langword="true" /> if the <see langword="vary" /> header is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `vary` header indicates the request-header fields that the server uses to determine which of multiple cached responses are sent in response to a client request. The default for the <xref:System.Web.Configuration.OutputCacheSection.OmitVaryStar%2A> property is `false`. By default, ASP.NET sends the `vary` header in all `POST` requests, as well as in all GET-request query strings. If the <xref:System.Web.Configuration.OutputCacheSection.OmitVaryStar%2A> is `true`, ASP.NET omits the `vary` header when returning the response for cached pages, provided that the `GET` request to a response is cached with no `VaryByCustom` property and the `POST` request to a response is cached with no `VaryByParam` property and no `VaryByCustom` property.  
+The `vary` header indicates the request-header fields that the server uses to determine which of multiple cached responses are sent in response to a client request. The default for the <xref:System.Web.Configuration.OutputCacheSection.OmitVaryStar%2A> property is `false`. By default, ASP.NET sends the `vary` header in all `POST` requests, as well as in all GET-request query strings. If the <xref:System.Web.Configuration.OutputCacheSection.OmitVaryStar%2A> is `true`, ASP.NET omits the `vary` header when returning the response for cached pages, provided that the `GET` request to a response is cached with no `VaryByCustom` property and the `POST` request to a response is cached with no `VaryByParam` property and no `VaryByCustom` property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.OmitVaryStar%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheSection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#5)]
- [!code-vb[System.Web.Configuration.OutputCacheSection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#5)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.OmitVaryStar%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheSection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#5)]
+[!code-vb[System.Web.Configuration.OutputCacheSection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,21 +293,21 @@
           <see langword="true" /> if the sending of <see langword="cache-control:private" /> header is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader%2A> applies to content with no output caching specified. When it is set to `false`, the `cache-control:private` header is not sent by default.  
-  
+The <xref:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader%2A> applies to content with no output caching specified. When it is set to `false`, the `cache-control:private` header is not sent by default.  
+ 
 > [!NOTE]
 >  This setting enables the content to be cached on the client by default.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheSection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#6)]
- [!code-vb[System.Web.Configuration.OutputCacheSection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#6)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheSection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#6)]
+[!code-vb[System.Web.Configuration.OutputCacheSection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

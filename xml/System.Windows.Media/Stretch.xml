@@ -13,22 +13,22 @@
     <summary>Describes how content is resized to fill its allocated space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows the different <xref:System.Windows.Media.Stretch> values.  
-  
- ![Different TileBrush Stretch settings](~/add/media/img-mmgraphics-stretchenum.jpg "Different TileBrush Stretch settings")  
+The following illustration shows the different <xref:System.Windows.Media.Stretch> values.  
+ 
+![Different TileBrush Stretch settings](~/add/media/img-mmgraphics-stretchenum.jpg "Different TileBrush Stretch settings")  
 Stretch values  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an instance of a <xref:System.Windows.Controls.Viewbox> and set the <xref:System.Windows.Media.Stretch> mode of its content by using code.  
-  
- [!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
- [!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
- [!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
-  
+The following example shows how to create an instance of a <xref:System.Windows.Controls.Viewbox> and set the <xref:System.Windows.Media.Stretch> mode of its content by using code.  
+ 
+[!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
+[!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
+[!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

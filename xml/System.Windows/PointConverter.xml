@@ -14,18 +14,18 @@
     <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Point" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="XAMLTextUsage_PointConverter"></a>   
 ## XAML Text Usage  
-   
   
+ 
 ## Examples  
- The following code example uses a <xref:System.Windows.PointConverter> to convert a string into a <xref:System.Windows.Point>.  
-  
- [!code-csharp[PointExamples_snip#PointConverterExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#pointconverterexample_csharp)]  
-  
+The following code example uses a <xref:System.Windows.PointConverter> to convert a string into a <xref:System.Windows.Point>.  
+ 
+[!code-csharp[PointExamples_snip#PointConverterExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#pointconverterexample_csharp)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -120,10 +120,10 @@
         <returns>The <see cref="T:System.Windows.Point" /> created from converting <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.PointConverter.CanConvertFrom%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.PointConverter.CanConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Thrown if the specified object is NULL or is a type that cannot be converted to a <see cref="T:System.Windows.Point" />.</exception>
@@ -156,10 +156,10 @@
         <returns>The object created from converting this <see cref="T:System.Windows.Point" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.PointConverter.CanConvertTo%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.PointConverter.CanConvertTo%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Thrown if <paramref name="value" /> is <see langword="null" /> or is not a <see cref="T:System.Windows.Point" />, or if the <paramref name="destinationType" /> is not one of the valid types for conversion.</exception>

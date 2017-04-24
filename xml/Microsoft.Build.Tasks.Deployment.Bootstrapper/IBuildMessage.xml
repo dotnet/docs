@@ -70,10 +70,10 @@
         <value>The MSBuild F1 Help keyword for the host IDE.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is the MSBuild F1 Help keyword for the host IDE, or null if no F1 Help is available.  
-  
+The value of this property is the MSBuild F1 Help keyword for the host IDE, or null if no F1 Help is available.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

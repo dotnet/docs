@@ -27,25 +27,25 @@
     <summary>Provides a thread-safe list of <see cref="T:System.Diagnostics.TraceListener" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.TraceListenerCollection> list is used to specify the output listeners for the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> and the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=fullName> collections. You cannot create an instance of this class.  
+The <xref:System.Diagnostics.TraceListenerCollection> list is used to specify the output listeners for the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> and the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=fullName> collections. You cannot create an instance of this class.  
+ 
+This list is thread-safe, however the methods used to access the list and the enumerator do not take synchronization locks. Instead, the collection is copied, the copy is modified, and a reference is set to the copy of the collection. Methods like <xref:System.Diagnostics.TraceListenerCollection.Add%2A>, <xref:System.Diagnostics.TraceListenerCollection.Remove%2A>, and <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> modify the elements in the collection.  
+ 
+The <xref:System.Diagnostics.TraceListenerCollection> class provides the <xref:System.Diagnostics.TraceListenerCollection.Count%2A> property for information about the list. It also provides the following methods: <xref:System.Diagnostics.TraceListenerCollection.Contains%2A>, <xref:System.Diagnostics.TraceListenerCollection.GetEnumerator%2A>, <xref:System.Diagnostics.TraceListenerCollection.IndexOf%2A>.  
+ 
+This class also provides the following methods to modify the list: <xref:System.Diagnostics.TraceListenerCollection.Add%2A>, <xref:System.Diagnostics.TraceListenerCollection.Clear%2A>, <xref:System.Diagnostics.TraceListenerCollection.Insert%2A>, and <xref:System.Diagnostics.TraceListenerCollection.Remove%2A>. The <xref:System.Diagnostics.TraceListenerCollection.CopyTo%2A> method copies a part of the list to an array. The <xref:System.Diagnostics.TraceListenerCollection.RemoveAt%2A> method deletes the list member at a specified index number.  
+ 
   
- This list is thread-safe, however the methods used to access the list and the enumerator do not take synchronization locks. Instead, the collection is copied, the copy is modified, and a reference is set to the copy of the collection. Methods like <xref:System.Diagnostics.TraceListenerCollection.Add%2A>, <xref:System.Diagnostics.TraceListenerCollection.Remove%2A>, and <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> modify the elements in the collection.  
-  
- The <xref:System.Diagnostics.TraceListenerCollection> class provides the <xref:System.Diagnostics.TraceListenerCollection.Count%2A> property for information about the list. It also provides the following methods: <xref:System.Diagnostics.TraceListenerCollection.Contains%2A>, <xref:System.Diagnostics.TraceListenerCollection.GetEnumerator%2A>, <xref:System.Diagnostics.TraceListenerCollection.IndexOf%2A>.  
-  
- This class also provides the following methods to modify the list: <xref:System.Diagnostics.TraceListenerCollection.Add%2A>, <xref:System.Diagnostics.TraceListenerCollection.Clear%2A>, <xref:System.Diagnostics.TraceListenerCollection.Insert%2A>, and <xref:System.Diagnostics.TraceListenerCollection.Remove%2A>. The <xref:System.Diagnostics.TraceListenerCollection.CopyTo%2A> method copies a part of the list to an array. The <xref:System.Diagnostics.TraceListenerCollection.RemoveAt%2A> method deletes the list member at a specified index number.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that writes to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
-  
- [!code-cpp[Classic Trace.Listeners Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Trace.Listeners Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CS/source.cs#1)]
- [!code-vb[Classic Trace.Listeners Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that writes to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
+ 
+[!code-cpp[Classic Trace.Listeners Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Trace.Listeners Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CS/source.cs#1)]
+[!code-vb[Classic Trace.Listeners Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,14 +80,14 @@
         <returns>The position at which the new listener was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that outputs to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
-  
- [!code-cpp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CPP/source.cpp#1)]
- [!code-csharp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CS/source.cs#1)]
- [!code-vb[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that outputs to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
+ 
+[!code-cpp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CPP/source.cpp#1)]
+[!code-csharp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CS/source.cs#1)]
+[!code-vb[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
           <see langword="true" /> if the listener is in the list; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.TraceListenerCollection.Contains%2A> method can confirm the existence of a <xref:System.Diagnostics.TraceListener> before you perform further operations.  
-  
+The <xref:System.Diagnostics.TraceListenerCollection.Contains%2A> method can confirm the existence of a <xref:System.Diagnostics.TraceListener> before you perform further operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -371,12 +371,12 @@
         <summary>Inserts the listener at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the index equals the number of items in the list, then the listener is appended to the end of the list.  
-  
- The index is zero-based. Therefore, if you want to insert the listener into the third position, you must call `myTraceListenerColl.Insert(2, myNewListener)`.  
-  
+If the index equals the number of items in the list, then the listener is appended to the end of the list.  
+ 
+The index is zero-based. Therefore, if you want to insert the listener into the third position, you must call `myTraceListenerColl.Insert(2, myNewListener)`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not a valid index in the list.</exception>
@@ -414,10 +414,10 @@
         <value>A <see cref="T:System.Diagnostics.TraceListener" /> with the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The index is zero-based. Therefore, you must subtract one from the numerical position of a particular <xref:System.Diagnostics.TraceListener> to access that <xref:System.Diagnostics.TraceListener>. For example, to get the third <xref:System.Diagnostics.TraceListener>, you need to specify `myTraceListenerColl[2]`.  
-  
+The index is zero-based. Therefore, you must subtract one from the numerical position of a particular <xref:System.Diagnostics.TraceListener> to access that <xref:System.Diagnostics.TraceListener>. For example, to get the third <xref:System.Diagnostics.TraceListener>, you need to specify `myTraceListenerColl[2]`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>
@@ -453,10 +453,10 @@
         <value>The first <see cref="T:System.Diagnostics.TraceListener" /> in the list with the given <see cref="P:System.Diagnostics.TraceListener.Name" />. This item returns <see langword="null" /> if no <see cref="T:System.Diagnostics.TraceListener" /> with the given name can be found.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.TraceListenerCollection.Item%2A> property is case-sensitive when searching for names. That is, if two listeners exist with the names "Lname" and "lname", <xref:System.Diagnostics.TraceListenerCollection.Item%2A> property will find only the <xref:System.Diagnostics.TraceListener> with the <xref:System.Diagnostics.TraceListener.Name%2A> that you specify, not both.  
-  
+The <xref:System.Diagnostics.TraceListenerCollection.Item%2A> property is case-sensitive when searching for names. That is, if two listeners exist with the names "Lname" and "lname", <xref:System.Diagnostics.TraceListenerCollection.Item%2A> property will find only the <xref:System.Diagnostics.TraceListener> with the <xref:System.Diagnostics.TraceListener.Name%2A> that you specify, not both.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -520,10 +520,10 @@
         <summary>Removes from the collection the first <see cref="T:System.Diagnostics.TraceListener" /> with the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `name` parameter is case-sensitive. That is, if two listeners exist with the names "Rname" and "rname", the <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> method will find the specific listener you name.  
-  
+The `name` parameter is case-sensitive. That is, if two listeners exist with the names "Rname" and "rname", the <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> method will find the specific listener you name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -557,10 +557,10 @@
         <summary>Removes from the collection the <see cref="T:System.Diagnostics.TraceListener" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The index is zero-based. Therefore, you must subtract one from the numerical position of a particular <xref:System.Diagnostics.TraceListener> to delete that <xref:System.Diagnostics.TraceListener>. For example, to remove the third <xref:System.Diagnostics.TraceListener>, you need to specify `myTraceListenerColl.RemoveAt(2)`.  
-  
+The index is zero-based. Therefore, you must subtract one from the numerical position of a particular <xref:System.Diagnostics.TraceListener> to delete that <xref:System.Diagnostics.TraceListener>. For example, to remove the third <xref:System.Diagnostics.TraceListener>, you need to specify `myTraceListenerColl.RemoveAt(2)`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not a valid index in the list.</exception>
@@ -597,10 +597,10 @@
         <summary>Copies a section of the current <see cref="T:System.Diagnostics.TraceListenerCollection" /> to the specified array of <see cref="T:System.Diagnostics.TraceListener" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Diagnostics.TraceListenerCollection.CopyTo%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to copy all or part of the collection to an array.  
-  
+Use the <xref:System.Diagnostics.TraceListenerCollection.CopyTo%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to copy all or part of the collection to an array.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -689,10 +689,10 @@
         <returns>The position into which the new trace listener was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Diagnostics.TraceListenerCollection.Add%2A> method to add a new trace listener to the collection.  
-  
+Use the <xref:System.Diagnostics.TraceListenerCollection.Add%2A> method to add a new trace listener to the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -734,10 +734,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Diagnostics.TraceListenerCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Diagnostics.TraceListenerCollection.Contains%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to determine whether the collection contains a specific <xref:System.Diagnostics.TraceListener> object.  
-  
+Use the <xref:System.Diagnostics.TraceListenerCollection.Contains%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to determine whether the collection contains a specific <xref:System.Diagnostics.TraceListener> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -772,10 +772,10 @@
         <returns>The index of <paramref name="value" /> if found in the <see cref="T:System.Diagnostics.TraceListenerCollection" />; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Diagnostics.TraceListenerCollection.IndexOf%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to determine the index of a <xref:System.Diagnostics.TraceListener> object in the collection.  
-  
+Use the <xref:System.Diagnostics.TraceListenerCollection.IndexOf%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to determine the index of a <xref:System.Diagnostics.TraceListener> object in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -811,10 +811,10 @@
         <summary>Inserts a <see cref="T:System.Diagnostics.TraceListener" /> object at the specified position in the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Diagnostics.TraceListenerCollection.Insert%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to insert a <xref:System.Diagnostics.TraceListener> object into the collection.  
-  
+Use the <xref:System.Diagnostics.TraceListenerCollection.Insert%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to insert a <xref:System.Diagnostics.TraceListener> object into the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -905,10 +905,10 @@
         <value>The <see cref="T:System.Diagnostics.TraceListener" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Diagnostics.TraceListenerCollection.Item%2A> property or the indexer of the <xref:System.Diagnostics.TraceListenerCollection> class to get or set a <xref:System.Diagnostics.TraceListener> in the collection.  
-  
+Use the <xref:System.Diagnostics.TraceListenerCollection.Item%2A> property or the indexer of the <xref:System.Diagnostics.TraceListenerCollection> class to get or set a <xref:System.Diagnostics.TraceListener> in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -942,10 +942,10 @@
         <summary>Removes an object from the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to remove a <xref:System.Diagnostics.TraceListener> from the collection.  
-  
+Use the <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to remove a <xref:System.Diagnostics.TraceListener> from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

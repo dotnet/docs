@@ -14,10 +14,10 @@
     <summary>Specifies an Elliptic Curve Diffie-Hellman (ECDH) public key for use with the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> objects are used in key exchanges with <xref:System.Security.Cryptography.ECDiffieHellmanCng> objects.  
-  
+<xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> objects are used in key exchanges with <xref:System.Security.Cryptography.ECDiffieHellmanCng> objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,10 +100,10 @@
         <returns>The key and named curve parameters used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=fullName> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
-  
+If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=fullName> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The method cannot obtain curve values.</exception>
@@ -137,10 +137,10 @@
         <returns>An object that contains the ECDH public key that is serialized in the byte array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static method is shared among all <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> instances.  
-  
+This static method is shared among all <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> instances.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="publicKeyBlob" /> or <paramref name="format" /> parameter is <see langword="null" />.</exception>
@@ -173,10 +173,10 @@
         <returns>An object that contains the ECDH public key that is specified by the given XML.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static method is shared among all <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> instances.  
-  
+This static method is shared among all <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> instances.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="xml" /> parameter is <see langword="null" />.</exception>
@@ -220,10 +220,10 @@
         <returns>An XML string that contains the serialized <see cref="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" /> public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:System.Security.Cryptography.ECKeyXmlFormat?displayProperty=fullName>for information about the XML format that this method uses.  
-  
+See <xref:System.Security.Cryptography.ECKeyXmlFormat?displayProperty=fullName>for information about the XML format that this method uses.  
+ 
  ]]></format>
         </remarks>
       </Docs>

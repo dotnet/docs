@@ -22,17 +22,17 @@
     <summary>Represents a collection of <see cref="T:System.CodeDom.CodeTypeReference" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeTypeReferenceCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeTypeReference> objects.  
+The <xref:System.CodeDom.CodeTypeReferenceCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeTypeReference> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#1)]
- [!code-csharp[CodeTypeReferenceCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#1)]
- [!code-vb[CodeTypeReferenceCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#1)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#1)]
+[!code-csharp[CodeTypeReferenceCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#1)]
+[!code-vb[CodeTypeReferenceCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,12 +51,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeReferenceCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#2)]
- [!code-csharp[CodeTypeReferenceCollection#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#2)]
- [!code-vb[CodeTypeReferenceCollection#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#2)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#2)]
+[!code-csharp[CodeTypeReferenceCollection#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#2)]
+[!code-vb[CodeTypeReferenceCollection#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,12 +118,12 @@
         <returns>The index at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#3)]
- [!code-csharp[CodeTypeReferenceCollection#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#3)]
- [!code-vb[CodeTypeReferenceCollection#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#3)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#3)]
+[!code-csharp[CodeTypeReferenceCollection#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#3)]
+[!code-vb[CodeTypeReferenceCollection#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,12 +190,12 @@
         <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeTypeReference" /> array to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#4)]
- [!code-csharp[CodeTypeReferenceCollection#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#4)]
- [!code-vb[CodeTypeReferenceCollection#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#4)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#4)]
+[!code-csharp[CodeTypeReferenceCollection#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#4)]
+[!code-vb[CodeTypeReferenceCollection#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -222,12 +222,12 @@
         <summary>Adds the contents of the specified <see cref="T:System.CodeDom.CodeTypeReferenceCollection" /> to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#4)]
- [!code-csharp[CodeTypeReferenceCollection#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#4)]
- [!code-vb[CodeTypeReferenceCollection#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#4)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#4)]
+[!code-csharp[CodeTypeReferenceCollection#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#4)]
+[!code-vb[CodeTypeReferenceCollection#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -256,12 +256,12 @@
           <see langword="true" /> if the <see cref="T:System.CodeDom.CodeTypeReference" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#5)]
- [!code-csharp[CodeTypeReferenceCollection#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#5)]
- [!code-vb[CodeTypeReferenceCollection#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#5)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#5)]
+[!code-csharp[CodeTypeReferenceCollection#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#5)]
+[!code-vb[CodeTypeReferenceCollection#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -288,12 +288,12 @@
         <summary>Copies the items in the collection to the specified one-dimensional <see cref="T:System.Array" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#6)]
- [!code-csharp[CodeTypeReferenceCollection#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#6)]
- [!code-vb[CodeTypeReferenceCollection#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#6)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#6)]
+[!code-csharp[CodeTypeReferenceCollection#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#6)]
+[!code-vb[CodeTypeReferenceCollection#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="array" /> parameter is multidimensional.  
@@ -326,12 +326,12 @@
         <returns>The index of the specified <see cref="T:System.CodeDom.CodeTypeReference" /> in the collection if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#5)]
- [!code-csharp[CodeTypeReferenceCollection#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#5)]
- [!code-vb[CodeTypeReferenceCollection#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#5)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#5)]
+[!code-csharp[CodeTypeReferenceCollection#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#5)]
+[!code-vb[CodeTypeReferenceCollection#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,12 +358,12 @@
         <summary>Inserts a <see cref="T:System.CodeDom.CodeTypeReference" /> into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#8)]
- [!code-csharp[CodeTypeReferenceCollection#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#8)]
- [!code-vb[CodeTypeReferenceCollection#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#8)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#8)]
+[!code-csharp[CodeTypeReferenceCollection#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#8)]
+[!code-vb[CodeTypeReferenceCollection#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,10 +389,10 @@
         <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> at each valid index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an indexer that can be used to access the collection.  
-  
+This method is an indexer that can be used to access the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
@@ -418,12 +418,12 @@
         <summary>Removes the specified <see cref="T:System.CodeDom.CodeTypeReference" /> from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CodeTypeReferenceCollection#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#9)]
- [!code-csharp[CodeTypeReferenceCollection#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#9)]
- [!code-vb[CodeTypeReferenceCollection#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#9)]  
-  
+[!code-cpp[CodeTypeReferenceCollection#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeReferenceCollection/CPP/class1.cpp#9)]
+[!code-csharp[CodeTypeReferenceCollection#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeReferenceCollection/CS/class1.cs#9)]
+[!code-vb[CodeTypeReferenceCollection#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeReferenceCollection/VB/class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>

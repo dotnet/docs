@@ -18,10 +18,10 @@
     <summary>Provides a base class for the configuration elements that specify predefined bindings provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class defines a binding configuration element that can be used to describe an aspect of how an endpoint communicates with others in the network.  
-  
+This class defines a binding configuration element that can be used to describe an aspect of how an endpoint communicates with others in the network.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <summary>Applies the content of the specified binding to this binding configuration element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Name` of the standard binding specified in `binding` is ignored during this operation. This is because the `Name` attribute of a binding is used in conjunction with the `Namespace` attribute of the same binding to generate the correct WSDL for a binding. However, the <xref:System.ServiceModel.Configuration.StandardBindingElement.Name%2A> property of this type is mainly used as a key to identify this binding element in the binding collection. Therefore, the <xref:System.ServiceModel.Configuration.StandardBindingElement.Name%2A> property is not modified during this operation.  
-  
+The `Name` of the standard binding specified in `binding` is ignored during this operation. This is because the `Name` attribute of a binding is used in conjunction with the `Namespace` attribute of the same binding to generate the correct WSDL for a binding. However, the <xref:System.ServiceModel.Configuration.StandardBindingElement.Name%2A> property of this type is mainly used as a key to identify this binding element in the binding collection. Therefore, the <xref:System.ServiceModel.Configuration.StandardBindingElement.Name%2A> property is not modified during this operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -183,10 +183,10 @@
         <value>The name of the binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each instance of a binding has a name and namespace that together uniquely identify it in the metadata of the service.  
-  
+Each instance of a binding has a name and namespace that together uniquely identify it in the metadata of the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>

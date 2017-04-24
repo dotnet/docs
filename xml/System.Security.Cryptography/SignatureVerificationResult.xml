@@ -13,12 +13,12 @@
     <summary>Specifies most of the result codes for signature verification.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A successful verification returns the Valid result.  
-  
- HRESULT values are generally returned by the unmanaged Microsoft Cryptographic API (CAPI); the other values are set by managed verification. This enumeration is not comprehensive of all possible HRESULT values and is subject to change.  
-  
+A successful verification returns the Valid result.  
+ 
+HRESULT values are generally returned by the unmanaged Microsoft Cryptographic API (CAPI); the other values are set by managed verification. This enumeration is not comprehensive of all possible HRESULT values and is subject to change.  
+ 
  ]]></format>
     </remarks>
   </Docs>

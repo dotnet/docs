@@ -31,10 +31,10 @@
     <summary>Contains a collection of designer options. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection> class is a collection that contains other <xref:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection> objects. This forms a tree of options, with each branch of the tree having a name and a possible collection of properties. Each parent branch of the tree contains a union of the properties of all the child branches.  
-  
+The <xref:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection> class is a collection that contains other <xref:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection> objects. This forms a tree of options, with each branch of the tree having a name and a possible collection of properties. Each parent branch of the tree contains a union of the properties of all the child branches.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -140,10 +140,10 @@
         <returns>The index of the first occurrence of value within the entire collection, if found; otherwise, the lower bound of the collection minus 1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection is searched, in one direction, from beginning to end.  
-  
+The collection is searched, in one direction, from beginning to end.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <value>The child collection with the name specified by the <paramref name="name" /> parameter, or <see langword="null" /> if the name is not found.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name search is case-insensitive.  
-  
+The name search is case-insensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -231,10 +231,10 @@
         <value>The name of this <see cref="T:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Names are programmatic names and are not localized. A name search is case-insensitive.  
-  
+Names are programmatic names and are not localized. A name search is case-insensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,10 +284,10 @@
         <value>The collection of properties offered by this <see cref="T:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection" />, along with all of its children.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.PropertyDescriptor> objects are taken directly from the value passed to the <xref:System.ComponentModel.Design.DesignerOptionService.CreateOptionCollection%2A> method and are wrapped in an additional property descriptor that hides the value object from the user. This means that any value may be passed into the `component` parameter of the various <xref:System.ComponentModel.PropertyDescriptor> methods. The value is not recognized and is replaced with the correct value internally.  
-  
+<xref:System.ComponentModel.PropertyDescriptor> objects are taken directly from the value passed to the <xref:System.ComponentModel.Design.DesignerOptionService.CreateOptionCollection%2A> method and are wrapped in an additional property descriptor that hides the value object from the user. This means that any value may be passed into the `component` parameter of the various <xref:System.ComponentModel.PropertyDescriptor> methods. The value is not recognized and is replaced with the correct value internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>

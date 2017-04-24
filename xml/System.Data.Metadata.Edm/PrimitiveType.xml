@@ -14,10 +14,10 @@
     <summary>Describes the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] primitive types, conceptual model primitive types, and storage provider-specific primitive types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Simple Types](http://msdn.microsoft.com/en-us/ddf09722-81b5-451b-a086-1dcf25a4f7d4).  
-  
+For more information, see [Simple Types](http://msdn.microsoft.com/en-us/ddf09722-81b5-451b-a086-1dcf25a4f7d4).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,12 +94,12 @@
         <returns>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that is an equivalent of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType%2A> returns the model equivalent type for this type, For example, if this instance is `nvarchar` and its base type is a conceptual model string, then the return type is a conceptual model string.  
-  
- If the type is actually already a model type, then the return type is "this".  
-  
+<xref:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType%2A> returns the model equivalent type for this type, For example, if this instance is `nvarchar` and its base type is a conceptual model string, then the return type is a conceptual model string.  
+ 
+If the type is actually already a model type, then the return type is "this".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <returns>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that is an equivalent of a specified <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType%2A>.  
-  
+For more information, see <xref:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,21 +13,21 @@
     <summary>Specifies the parity bit for a <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this enumeration when setting the <xref:System.IO.Ports.SerialPort.Parity%2A> property for a serial port connection.  
+Use this enumeration when setting the <xref:System.IO.Ports.SerialPort.Parity%2A> property for a serial port connection.  
+ 
+Parity is an error-checking procedure in which the number of 1s must always be the same—either even or odd—for each group of bits that is transmitted without error. In modem-to-modem communications, parity is often one of the parameters that must be agreed upon by sending parties and receiving parties before transmission can take place.  
+ 
   
- Parity is an error-checking procedure in which the number of 1s must always be the same—either even or odd—for each group of bits that is transmitted without error. In modem-to-modem communications, parity is often one of the parameters that must be agreed upon by sending parties and receiving parties before transmission can take place.  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays the possible values of the <xref:System.IO.Ports.Parity> enumeration to the console, then prompts the user to choose one. This code example is part of a larger code example provided for the <xref:System.IO.Ports.SerialPort> class.  
-  
- [!code-cpp[System.IO.Ports.SerialPort#03](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cpp/serialport.cpp#03)]
- [!code-csharp[System.IO.Ports.SerialPort#03](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cs/SerialPort.cs#03)]
- [!code-vb[System.IO.Ports.SerialPort#03](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/vb/SerialPort.vb#03)]  
-  
+The following code example displays the possible values of the <xref:System.IO.Ports.Parity> enumeration to the console, then prompts the user to choose one. This code example is part of a larger code example provided for the <xref:System.IO.Ports.SerialPort> class.  
+ 
+[!code-cpp[System.IO.Ports.SerialPort#03](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cpp/serialport.cpp#03)]
+[!code-csharp[System.IO.Ports.SerialPort#03](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cs/SerialPort.cs#03)]
+[!code-vb[System.IO.Ports.SerialPort#03](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/vb/SerialPort.vb#03)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

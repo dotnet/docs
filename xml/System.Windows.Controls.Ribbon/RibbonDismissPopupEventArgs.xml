@@ -88,10 +88,10 @@
         <summary>Invokes the specified event handler on the specified object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler to a <xref:System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler> instance and invokes it.  
-  
+This implementation casts the generic handler to a <xref:System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler> instance and invokes it.  
+ 
  ]]></format>
         </remarks>
       </Docs>

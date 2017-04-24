@@ -18,12 +18,12 @@
     <summary>Controls whether channels listen synchronously or asynchronously.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. Using <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to issue a new thread to pump for each accepted channel. If there are a lot of channels there is the possibility of running out of threads.  
-  
- You can also set this value using the [\&lt;synchronousReceive\&gt;](~/docs/framework/configure-apps/file-schema/wcf/synchronousreceive-element.md) in an application configuration file.  
-  
+Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. Using <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to issue a new thread to pump for each accepted channel. If there are a lot of channels there is the possibility of running out of threads.  
+ 
+You can also set this value using the [\&lt;synchronousReceive\&gt;](~/docs/framework/configure-apps/file-schema/wcf/synchronousreceive-element.md) in an application configuration file.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Not implemented in this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters%28System.ServiceModel.Description.ServiceEndpoint%2CSystem.ServiceModel.Channels.BindingParameterCollection%29> for a description of the interface member that this class implements.  
-  
+See <xref:System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters%28System.ServiceModel.Description.ServiceEndpoint%2CSystem.ServiceModel.Channels.BindingParameterCollection%29> for a description of the interface member that this class implements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <summary>Not implemented in this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%28System.ServiceModel.Description.ServiceEndpoint%2CSystem.ServiceModel.Dispatcher.ClientRuntime%29> for a description of the interface member this class implements.  
-  
+See <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%28System.ServiceModel.Description.ServiceEndpoint%2CSystem.ServiceModel.Dispatcher.ClientRuntime%29> for a description of the interface member this class implements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <summary>Sets the <see cref="P:System.ServiceModel.Dispatcher.ChannelDispatcher.ReceiveSynchronously" /> property to <see langword="true" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an exception if the `endpointDispatcher` is `null`.  
-  
+Throws an exception if the `endpointDispatcher` is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,10 +153,10 @@
         <summary>Not implemented in this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:System.ServiceModel.Description.IEndpointBehavior.Validate%28System.ServiceModel.Description.ServiceEndpoint%29> for a description of the interface member this class implements.  
-  
+See <xref:System.ServiceModel.Description.IEndpointBehavior.Validate%28System.ServiceModel.Description.ServiceEndpoint%29> for a description of the interface member this class implements.  
+ 
  ]]></format>
         </remarks>
       </Docs>

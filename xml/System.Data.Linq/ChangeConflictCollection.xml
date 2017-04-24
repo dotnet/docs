@@ -24,13 +24,13 @@
     <summary>Returns a collection of objects involved in concurrency conflicts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example that retrieves information about objects in conflict, `db.ChangeConflicts` represents the collection of those objects.  
-  
- [!code-csharp[System.Data.Linq.ObjectChangeConflict#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.objectchangeconflict/cs/program.cs#1)]
- [!code-vb[System.Data.Linq.ObjectChangeConflict#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.objectchangeconflict/vb/module1.vb#1)]  
-  
+In the following example that retrieves information about objects in conflict, `db.ChangeConflicts` represents the collection of those objects.  
+ 
+[!code-csharp[System.Data.Linq.ObjectChangeConflict#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.objectchangeconflict/cs/program.cs#1)]
+[!code-vb[System.Data.Linq.ObjectChangeConflict#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.objectchangeconflict/vb/module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -97,12 +97,12 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Copies the elements of the collection to an array.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+Copies the elements of the collection to an array.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,12 +252,12 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adds an item to the collection.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+Adds an item to the collection.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
         <value>Returns <see langword="true" /> if the collection is read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,10 +327,10 @@
         <value>Returns <see langword="true" /> if access to the collection is synchronized (thread safe).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,10 +352,10 @@
         <value>Returns an object that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,10 +378,10 @@
         <returns>An enumerator that iterates through a collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

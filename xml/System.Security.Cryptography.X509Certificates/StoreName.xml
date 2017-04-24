@@ -23,18 +23,18 @@
     <summary>Specifies the name of the X.509 certificate store to open.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration specifies the X.509 store name, which also includes the type of certificates included. For example, My includes personal certificates, whereas Disallowed includes only revoked certificates.  
+This enumeration specifies the X.509 store name, which also includes the type of certificates included. For example, My includes personal certificates, whereas Disallowed includes only revoked certificates.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes you have three certificates to add to and remove from a local store.  
-  
- [!code-csharp[X509StoreName#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509storename/cs/program.cs#1)]
- [!code-vb[X509StoreName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509storename/vb/program.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes you have three certificates to add to and remove from a local store.  
+ 
+[!code-csharp[X509StoreName#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509storename/cs/program.cs#1)]
+[!code-vb[X509StoreName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509storename/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

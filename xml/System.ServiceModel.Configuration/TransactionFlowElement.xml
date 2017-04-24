@@ -74,10 +74,10 @@
         <summary>Applies the content of this binding configuration section to the specified transaction flow binding element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called internally by the infrastructure when translating the configuration elements into binding settings.  
-  
+This method is called internally by the infrastructure when translating the configuration elements into binding settings.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

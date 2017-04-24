@@ -23,19 +23,19 @@
     <summary>Provides an Internet Protocol (IP) address.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress> class contains the address of a computer on an IP network.  
+The <xref:System.Net.IPAddress> class contains the address of a computer on an IP network.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to query a server to obtain the family addresses and the IP addresses it supports.  
-  
- [!code-cpp[System.Net.IPAddress#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress/CPP/ipaddress.cpp#1)]
- [!code-csharp[System.Net.IPAddress#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress/CS/ipaddress.cs#1)]
- [!code-vb[System.Net.IPAddress#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress/VB/ipaddress.vb#1)]  
-  
+The following code example shows how to query a server to obtain the family addresses and the IP addresses it supports.  
+ 
+[!code-cpp[System.Net.IPAddress#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress/CPP/ipaddress.cpp#1)]
+[!code-csharp[System.Net.IPAddress#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress/CS/ipaddress.cs#1)]
+[!code-vb[System.Net.IPAddress#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress/VB/ipaddress.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,14 +66,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.IPAddress" /> class with the address specified as a <see cref="T:System.Byte" /> array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress> is created with the <xref:System.Net.IPAddress.Address%2A> property set to `address`.  
-  
- If the length of `address` is 4, <xref:System.Net.IPAddress.%23ctor%28System.Byte%5B%5D%29> constructs an IPv4 address; otherwise, an IPv6 address with a scope of 0 is constructed.  
-  
- The <xref:System.Byte> array is assumed to be in network byte order with the most significant byte first in index position 0.  
-  
+The <xref:System.Net.IPAddress> is created with the <xref:System.Net.IPAddress.Address%2A> property set to `address`.  
+ 
+If the length of `address` is 4, <xref:System.Net.IPAddress.%23ctor%28System.Byte%5B%5D%29> constructs an IPv4 address; otherwise, an IPv6 address with a scope of 0 is constructed.  
+ 
+The <xref:System.Byte> array is assumed to be in network byte order with the most significant byte first in index position 0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -108,12 +108,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.IPAddress" /> class with the address specified as an <see cref="T:System.Int64" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress> instance is created with the <xref:System.Net.IPAddress.Address%2A> property set to `newAddress`.  
-  
- The <xref:System.Int64> value is assumed to be in network byte order.  
-  
+The <xref:System.Net.IPAddress> instance is created with the <xref:System.Net.IPAddress.Address%2A> property set to `newAddress`.  
+ 
+The <xref:System.Int64> value is assumed to be in network byte order.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -150,12 +150,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.IPAddress" /> class with the address specified as a <see cref="T:System.Byte" /> array and the specified scope identifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor instantiates an IPv6 address. The `scopeid` identifies a network interface in the case of a link-local address. The scope is valid only for link-local and site-local addresses.  
-  
- The <xref:System.Byte> array is assumed to be in network byte order with the most significant byte first in index position 0.  
-  
+This constructor instantiates an IPv6 address. The `scopeid` identifies a network interface in the case of a link-local address. The scope is valid only for link-local and site-local addresses.  
+ 
+The <xref:System.Byte> array is assumed to be in network byte order with the most significant byte first in index position 0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -195,21 +195,21 @@
         <value>The long value of the IP address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is obsolete. Use <xref:System.Net.IPAddress.GetAddressBytes%2A>.  
+This property is obsolete. Use <xref:System.Net.IPAddress.GetAddressBytes%2A>.  
+ 
+To convert <xref:System.Net.IPAddress.Address%2A> to dotted-quad notation, use the <xref:System.Net.IPAddress.ToString%2A> method.  
+ 
   
- To convert <xref:System.Net.IPAddress.Address%2A> to dotted-quad notation, use the <xref:System.Net.IPAddress.ToString%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.IPAddress.Address%2A> parameter to retrieve the IP address of the <xref:System.Net.IPAddress> instance.  
-  
- [!code-cpp[IPAddress_Address_AddressFamily#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_Address_AddressFamily/CPP/ipaddress_address_addressfamily.cpp#2)]
- [!code-csharp[IPAddress_Address_AddressFamily#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_Address_AddressFamily/CS/ipaddress_address_addressfamily.cs#2)]
- [!code-vb[IPAddress_Address_AddressFamily#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_Address_AddressFamily/VB/ipaddress_address_addressfamily.vb#2)]  
-  
+The following example uses the <xref:System.Net.IPAddress.Address%2A> parameter to retrieve the IP address of the <xref:System.Net.IPAddress> instance.  
+ 
+[!code-cpp[IPAddress_Address_AddressFamily#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_Address_AddressFamily/CPP/ipaddress_address_addressfamily.cpp#2)]
+[!code-csharp[IPAddress_Address_AddressFamily#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_Address_AddressFamily/CS/ipaddress_address_addressfamily.cs#2)]
+[!code-vb[IPAddress_Address_AddressFamily#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_Address_AddressFamily/VB/ipaddress_address_addressfamily.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">The address family is <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" />.</exception>
@@ -241,14 +241,14 @@
         <value>Returns <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> for IPv4 or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> for IPv6.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- Refer to the example in the <xref:System.Net.IPAddress> class topic.  
-  
- [!code-cpp[System.Net.IPAddress#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress/CPP/ipaddress.cpp#3)]
- [!code-csharp[System.Net.IPAddress#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress/CS/ipaddress.cs#3)]
- [!code-vb[System.Net.IPAddress#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress/VB/ipaddress.vb#3)]  
-  
+Refer to the example in the <xref:System.Net.IPAddress> class topic.  
+ 
+[!code-cpp[System.Net.IPAddress#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress/CPP/ipaddress.cpp#3)]
+[!code-csharp[System.Net.IPAddress#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress/CS/ipaddress.cs#3)]
+[!code-vb[System.Net.IPAddress#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress/VB/ipaddress.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,12 +278,12 @@
         <summary>Provides an IP address that indicates that the server must listen for client activity on all network interfaces. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.Any> field to indicate that a <xref:System.Net.Sockets.Socket> instance must listen for client activity on all network interfaces.  
-  
- The <xref:System.Net.IPAddress.Any> field is equivalent to 0.0.0.0 in dotted-quad notation.  
-  
+The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.Any> field to indicate that a <xref:System.Net.Sockets.Socket> instance must listen for client activity on all network interfaces.  
+ 
+The <xref:System.Net.IPAddress.Any> field is equivalent to 0.0.0.0 in dotted-quad notation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,19 +313,19 @@
         <summary>Provides the IP broadcast address. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress.Broadcast> field is equivalent to 255.255.255.255 in dotted-quad notation.  
+The <xref:System.Net.IPAddress.Broadcast> field is equivalent to 255.255.255.255 in dotted-quad notation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example prints the <xref:System.Net.IPAddress.Broadcast> address to the console.  
-  
- [!code-cpp[IPAddress_Broadcast_Loopback#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/CPP/ipaddress_broadcast_loopback.cpp#2)]
- [!code-csharp[IPAddress_Broadcast_Loopback#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/CS/ipaddress_broadcast_loopback.cs#2)]
- [!code-vb[IPAddress_Broadcast_Loopback#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/VB/ipaddress_broadcast_loopback.vb#2)]  
-  
+The following example prints the <xref:System.Net.IPAddress.Broadcast> address to the console.  
+ 
+[!code-cpp[IPAddress_Broadcast_Loopback#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/CPP/ipaddress_broadcast_loopback.cpp#2)]
+[!code-csharp[IPAddress_Broadcast_Loopback#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/CS/ipaddress_broadcast_loopback.cs#2)]
+[!code-vb[IPAddress_Broadcast_Loopback#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/VB/ipaddress_broadcast_loopback.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -361,10 +361,10 @@
           <see langword="true" /> if the two addresses are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress.Equals%2A> method compares the current <xref:System.Net.IPAddress> instance with the `comparand` parameter and returns `true` if the two instances contain the same IP address.  
-  
+The <xref:System.Net.IPAddress.Equals%2A> method compares the current <xref:System.Net.IPAddress> instance with the `comparand` parameter and returns `true` if the two instances contain the same IP address.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,14 +396,14 @@
         <returns>A <see cref="T:System.Byte" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to get a server IP address in byte format.  
-  
- [!code-cpp[System.Net.IPAddress#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress/CPP/ipaddress.cpp#2)]
- [!code-csharp[System.Net.IPAddress#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress/CS/ipaddress.cs#2)]
- [!code-vb[System.Net.IPAddress#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress/VB/ipaddress.vb#2)]  
-  
+The following code example shows how to get a server IP address in byte format.  
+ 
+[!code-cpp[System.Net.IPAddress#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress/CPP/ipaddress.cpp#2)]
+[!code-csharp[System.Net.IPAddress#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress/CS/ipaddress.cs#2)]
+[!code-vb[System.Net.IPAddress#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress/VB/ipaddress.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -435,10 +435,10 @@
         <returns>An integer hash value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress.GetHashCode%2A> method returns a hash code of the IP address. This value can be used as a key in hash tables.  
-  
+The <xref:System.Net.IPAddress.GetHashCode%2A> method returns a hash code of the IP address. This value can be used as a key in hash tables.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,12 +473,12 @@
         <returns>A short value, expressed in network byte order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
-  
- The <xref:System.Net.IPAddress.HostToNetworkOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the host to the byte order used by the network.  
-  
+Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
+ 
+The <xref:System.Net.IPAddress.HostToNetworkOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the host to the byte order used by the network.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -513,12 +513,12 @@
         <returns>An integer value, expressed in network byte order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
-  
- The <xref:System.Net.IPAddress.HostToNetworkOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the host to the byte order used by the network.  
-  
+Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
+ 
+The <xref:System.Net.IPAddress.HostToNetworkOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the host to the byte order used by the network.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -553,12 +553,12 @@
         <returns>A long value, expressed in network byte order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
-  
- The <xref:System.Net.IPAddress.HostToNetworkOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the host to the byte order used by the network.  
-  
+Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
+ 
+The <xref:System.Net.IPAddress.HostToNetworkOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the host to the byte order used by the network.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -588,19 +588,19 @@
         <summary>The <see cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" /> method uses the <see cref="F:System.Net.IPAddress.IPv6Any" /> field to indicate that a <see cref="T:System.Net.Sockets.Socket" /> must listen for client activity on all network interfaces.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress.IPv6Any> field is equivalent to 0:0:0:0:0:0:0:0 in colon-hexadecimal notation, or to :: in compact notation.  
+The <xref:System.Net.IPAddress.IPv6Any> field is equivalent to 0:0:0:0:0:0:0:0 in colon-hexadecimal notation, or to :: in compact notation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the value of the current host's Any address in standard compressed format.  
-  
- [!code-cpp[System.Net.IPAddress.IPv6NoneAnyLoopback#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CPP/noneanyloopback.cpp#2)]
- [!code-csharp[System.Net.IPAddress.IPv6NoneAnyLoopback#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CS/noneanyloopback.cs#2)]
- [!code-vb[System.Net.IPAddress.IPv6NoneAnyLoopback#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/VB/noneanyloopback.vb#2)]  
-  
+The following code example displays the value of the current host's Any address in standard compressed format.  
+ 
+[!code-cpp[System.Net.IPAddress.IPv6NoneAnyLoopback#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CPP/noneanyloopback.cpp#2)]
+[!code-csharp[System.Net.IPAddress.IPv6NoneAnyLoopback#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CS/noneanyloopback.cs#2)]
+[!code-vb[System.Net.IPAddress.IPv6NoneAnyLoopback#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/VB/noneanyloopback.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -630,19 +630,19 @@
         <summary>Provides the IP loopback address. This property is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress.IPv6Loopback> field is equivalent to 0:0:0:0:0:0:0:1 in colon-hexadecimal notation, or to ::1 in compact notation.  
+The <xref:System.Net.IPAddress.IPv6Loopback> field is equivalent to 0:0:0:0:0:0:0:1 in colon-hexadecimal notation, or to ::1 in compact notation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the value of the current host's loopback address in standard compressed format.  
-  
- [!code-cpp[System.Net.IPAddress.IPv6NoneAnyLoopback#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CPP/noneanyloopback.cpp#1)]
- [!code-csharp[System.Net.IPAddress.IPv6NoneAnyLoopback#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CS/noneanyloopback.cs#1)]
- [!code-vb[System.Net.IPAddress.IPv6NoneAnyLoopback#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/VB/noneanyloopback.vb#1)]  
-  
+The following code example displays the value of the current host's loopback address in standard compressed format.  
+ 
+[!code-cpp[System.Net.IPAddress.IPv6NoneAnyLoopback#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CPP/noneanyloopback.cpp#1)]
+[!code-csharp[System.Net.IPAddress.IPv6NoneAnyLoopback#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CS/noneanyloopback.cs#1)]
+[!code-vb[System.Net.IPAddress.IPv6NoneAnyLoopback#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/VB/noneanyloopback.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -672,19 +672,19 @@
         <summary>Provides an IP address that indicates that no network interface should be used. This property is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.IPv6None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.IPv6None> field is equivalent to 0:0:0:0:0:0:0:0 in colon-hexadecimal notation, or to ::0 in compact notation.  
+The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.IPv6None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.IPv6None> field is equivalent to 0:0:0:0:0:0:0:0 in colon-hexadecimal notation, or to ::0 in compact notation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the value of the current host's None address in standard compressed format.  
-  
- [!code-cpp[System.Net.IPAddress.IPv6NoneAnyLoopback#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CPP/noneanyloopback.cpp#3)]
- [!code-csharp[System.Net.IPAddress.IPv6NoneAnyLoopback#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CS/noneanyloopback.cs#3)]
- [!code-vb[System.Net.IPAddress.IPv6NoneAnyLoopback#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/VB/noneanyloopback.vb#3)]  
-  
+The following code example displays the value of the current host's None address in standard compressed format.  
+ 
+[!code-cpp[System.Net.IPAddress.IPv6NoneAnyLoopback#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CPP/noneanyloopback.cpp#3)]
+[!code-csharp[System.Net.IPAddress.IPv6NoneAnyLoopback#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/CS/noneanyloopback.cs#3)]
+[!code-vb[System.Net.IPAddress.IPv6NoneAnyLoopback#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.IPv6NoneAnyLoopback/VB/noneanyloopback.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -717,10 +717,10 @@
  <see langword="true" /> if the IP address is an IPv4-mapped IPv6 address; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dual-stack sockets always require IPv6 addresses. The ability to interact with an IPv4 address requires the use of the IPv4-mapped IPv6 address format. Any IPv4 addresses must be represented in the IPv4-mapped IPv6 address format which enables an IPv6 only application to communicate with an IPv4 node. The IPv4-mapped IPv6 address format allows the IPv4 address of an IPv4 node to be represented as an IPv6 address. The IPv4 address is encoded into the low-order 32 bits of the IPv6 address, and the high-order 96 bits hold the fixed prefix 0:0:0:0:0:FFFF. The IPv4-mapped IPv6 address format is specified in RFC 4291. For more information, see [www.ietf.org/rfc/rfc4291.txt](http://go.microsoft.com/fwlink/?LinkID=92231).  
-  
+Dual-stack sockets always require IPv6 addresses. The ability to interact with an IPv4 address requires the use of the IPv4-mapped IPv6 address format. Any IPv4 addresses must be represented in the IPv4-mapped IPv6 address format which enables an IPv6 only application to communicate with an IPv4 node. The IPv4-mapped IPv6 address format allows the IPv4 address of an IPv4 node to be represented as an IPv6 address. The IPv4 address is encoded into the low-order 32 bits of the IPv6 address, and the high-order 96 bits hold the fixed prefix 0:0:0:0:0:FFFF. The IPv4-mapped IPv6 address format is specified in RFC 4291. For more information, see [www.ietf.org/rfc/rfc4291.txt](http://go.microsoft.com/fwlink/?LinkID=92231).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -836,10 +836,10 @@
           <see langword="true" /> if the IP address is an IPv6 Teredo address; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Teredo address is an IPv6 address with the prefix of 2001::/32. Teredo addresses can be returned through normal DNS name resolution or enumerated as an IPv6 address assigned to a local interface.  
-  
+A Teredo address is an IPv6 address with the prefix of 2001::/32. Teredo addresses can be returned through normal DNS name resolution or enumerated as an IPv6 address assigned to a local interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -875,21 +875,21 @@
           <see langword="true" /> if <paramref name="address" /> is the loopback address; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress.IsLoopback%2A> method compares `address` to <xref:System.Net.IPAddress> and returns `true` if the two IP addresses are the same.  
+The <xref:System.Net.IPAddress.IsLoopback%2A> method compares `address` to <xref:System.Net.IPAddress> and returns `true` if the two IP addresses are the same.  
+ 
+In the case of IPv4, that the <xref:System.Net.IPAddress.IsLoopback%2A> method returns `true` for any IP address of the form 127.X.Y.Z (where X, Y, and Z are in the range 0-255), not just <xref:System.Net.IPAddress> (127.0.0.1).  
+ 
   
- In the case of IPv4, that the <xref:System.Net.IPAddress.IsLoopback%2A> method returns `true` for any IP address of the form 127.X.Y.Z (where X, Y, and Z are in the range 0-255), not just <xref:System.Net.IPAddress> (127.0.0.1).  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Net.IPAddress.IsLoopback%2A> method to determine whether the specified address is a loopback address.  
-  
- [!code-cpp[System.Net.IPAddress.IsLoopback#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.IsLoopback/CPP/isloopback.cpp#1)]
- [!code-csharp[System.Net.IPAddress.IsLoopback#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.IsLoopback/CS/isloopback.cs#1)]
- [!code-vb[System.Net.IPAddress.IsLoopback#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.IsLoopback/VB/isloopback.vb#1)]  
-  
+The following code example uses the <xref:System.Net.IPAddress.IsLoopback%2A> method to determine whether the specified address is a loopback address.  
+ 
+[!code-cpp[System.Net.IPAddress.IsLoopback#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.IsLoopback/CPP/isloopback.cpp#1)]
+[!code-csharp[System.Net.IPAddress.IsLoopback#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.IsLoopback/CS/isloopback.cs#1)]
+[!code-vb[System.Net.IPAddress.IsLoopback#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.IsLoopback/VB/isloopback.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -919,19 +919,19 @@
         <summary>Provides the IP loopback address. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress.Loopback> field is equivalent to 127.0.0.1 in dotted-quad notation.  
+The <xref:System.Net.IPAddress.Loopback> field is equivalent to 127.0.0.1 in dotted-quad notation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example prints the <xref:System.Net.IPAddress.Loopback> address to the console.  
-  
- [!code-cpp[IPAddress_Broadcast_Loopback#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/CPP/ipaddress_broadcast_loopback.cpp#1)]
- [!code-csharp[IPAddress_Broadcast_Loopback#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/CS/ipaddress_broadcast_loopback.cs#1)]
- [!code-vb[IPAddress_Broadcast_Loopback#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/VB/ipaddress_broadcast_loopback.vb#1)]  
-  
+The following example prints the <xref:System.Net.IPAddress.Loopback> address to the console.  
+ 
+[!code-cpp[IPAddress_Broadcast_Loopback#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/CPP/ipaddress_broadcast_loopback.cpp#1)]
+[!code-csharp[IPAddress_Broadcast_Loopback#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/CS/ipaddress_broadcast_loopback.cs#1)]
+[!code-vb[IPAddress_Broadcast_Loopback#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_Broadcast_Loopback/VB/ipaddress_broadcast_loopback.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -965,12 +965,12 @@
  An IPv4 address.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dual-stack sockets always require IPv6 addresses. The ability to interact with an IPv4 address requires the use of the IPv4-mapped IPv6 address format. Any IPv4 addresses must be represented in the IPv4-mapped IPv6 address format which enables an IPv6 only application to communicate with an IPv4 node. The IPv4-mapped IPv6 address format allows the IPv4 address of an IPv4 node to be represented as an IPv6 address. The IPv4 address is encoded into the low-order 32 bits of the IPv6 address, and the high-order 96 bits hold the fixed prefix 0:0:0:0:0:FFFF. The IPv4-mapped IPv6 address format is specified in RFC 4291. For more information, see [www.ietf.org/rfc/rfc4291.txt](http://go.microsoft.com/fwlink/?LinkID=92231).  
-  
- If you want to use <xref:System.Net.IPAddress.MapToIPv4%2A> to convert an IPv4 address from IPv6 format to IPv4 format, you must first ensure that you've got an IPv4 address. Call <xref:System.Net.IPAddress.IsIPv4MappedToIPv6%2A>, which will return `true` if the IP address is originally IPv4 written as IPv6, or `false` otherwise. If <xref:System.Net.IPAddress.IsIPv4MappedToIPv6%2A> returns `true`, use <xref:System.Net.IPAddress.MapToIPv4%2A> to make the conversion.  
-  
+Dual-stack sockets always require IPv6 addresses. The ability to interact with an IPv4 address requires the use of the IPv4-mapped IPv6 address format. Any IPv4 addresses must be represented in the IPv4-mapped IPv6 address format which enables an IPv6 only application to communicate with an IPv4 node. The IPv4-mapped IPv6 address format allows the IPv4 address of an IPv4 node to be represented as an IPv6 address. The IPv4 address is encoded into the low-order 32 bits of the IPv6 address, and the high-order 96 bits hold the fixed prefix 0:0:0:0:0:FFFF. The IPv4-mapped IPv6 address format is specified in RFC 4291. For more information, see [www.ietf.org/rfc/rfc4291.txt](http://go.microsoft.com/fwlink/?LinkID=92231).  
+ 
+If you want to use <xref:System.Net.IPAddress.MapToIPv4%2A> to convert an IPv4 address from IPv6 format to IPv4 format, you must first ensure that you've got an IPv4 address. Call <xref:System.Net.IPAddress.IsIPv4MappedToIPv6%2A>, which will return `true` if the IP address is originally IPv4 written as IPv6, or `false` otherwise. If <xref:System.Net.IPAddress.IsIPv4MappedToIPv6%2A> returns `true`, use <xref:System.Net.IPAddress.MapToIPv4%2A> to make the conversion.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1004,10 +1004,10 @@
  An IPv6 address.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dual-stack sockets always require IPv6 addresses. The ability to interact with an IPv4 address requires the use of the IPv4-mapped IPv6 address format. Any IPv4 addresses must be represented in the IPv4-mapped IPv6 address format which enables an IPv6 only application to communicate with an IPv4 node. The IPv4-mapped IPv6 address format allows the IPv4 address of an IPv4 node to be represented as an IPv6 address. The IPv4 address is encoded into the low-order 32 bits of the IPv6 address, and the high-order 96 bits hold the fixed prefix 0:0:0:0:0:FFFF. The IPv4-mapped IPv6 address format is specified in RFC 4291. For more information, see [www.ietf.org/rfc/rfc4291.txt](http://go.microsoft.com/fwlink/?LinkID=92231).  
-  
+Dual-stack sockets always require IPv6 addresses. The ability to interact with an IPv4 address requires the use of the IPv4-mapped IPv6 address format. Any IPv4 addresses must be represented in the IPv4-mapped IPv6 address format which enables an IPv6 only application to communicate with an IPv4 node. The IPv4-mapped IPv6 address format allows the IPv4 address of an IPv4 node to be represented as an IPv6 address. The IPv4 address is encoded into the low-order 32 bits of the IPv6 address, and the high-order 96 bits hold the fixed prefix 0:0:0:0:0:FFFF. The IPv4-mapped IPv6 address format is specified in RFC 4291. For more information, see [www.ietf.org/rfc/rfc4291.txt](http://go.microsoft.com/fwlink/?LinkID=92231).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1042,21 +1042,21 @@
         <returns>A short value, expressed in host byte order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
+Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
+ 
+The <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the network to the byte order used by the host.  
+ 
   
- The <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the network to the byte order used by the host.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method to convert a short value from network byte order to host byte order.  
-  
- [!code-cpp[IPAddress_NetworkToHost#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CPP/ipaddress_networktohost.cpp#1)]
- [!code-csharp[IPAddress_NetworkToHost#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CS/ipaddress_networktohost.cs#1)]
- [!code-vb[IPAddress_NetworkToHost#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_NetworkToHost/VB/ipaddress_networktohost.vb#1)]  
-  
+The following example uses the <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method to convert a short value from network byte order to host byte order.  
+ 
+[!code-cpp[IPAddress_NetworkToHost#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CPP/ipaddress_networktohost.cpp#1)]
+[!code-csharp[IPAddress_NetworkToHost#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CS/ipaddress_networktohost.cs#1)]
+[!code-vb[IPAddress_NetworkToHost#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_NetworkToHost/VB/ipaddress_networktohost.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1091,21 +1091,21 @@
         <returns>An integer value, expressed in host byte order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
+Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
+ 
+The <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the network to the byte order used by the host.  
+ 
   
- The <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the network to the byte order used by the host.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method to convert an integer value from network byte order to host byte order.  
-  
- [!code-cpp[IPAddress_NetworkToHost#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CPP/ipaddress_networktohost.cpp#2)]
- [!code-csharp[IPAddress_NetworkToHost#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CS/ipaddress_networktohost.cs#2)]
- [!code-vb[IPAddress_NetworkToHost#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_NetworkToHost/VB/ipaddress_networktohost.vb#2)]  
-  
+The following example uses the <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method to convert an integer value from network byte order to host byte order.  
+ 
+[!code-cpp[IPAddress_NetworkToHost#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CPP/ipaddress_networktohost.cpp#2)]
+[!code-csharp[IPAddress_NetworkToHost#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CS/ipaddress_networktohost.cs#2)]
+[!code-vb[IPAddress_NetworkToHost#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_NetworkToHost/VB/ipaddress_networktohost.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1140,21 +1140,21 @@
         <returns>A long value, expressed in host byte order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
+Different computers use different conventions for ordering the bytes within multibyte integer values. Some computers put the most significant byte first (known as big-endian order) and others put the least-significant byte first (known as little-endian order). To work with computers that use different byte ordering, all integer values that are sent over the network are sent in network byte order which has the most significant byte first.  
+ 
+The <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the network to the byte order used by the host.  
+ 
   
- The <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method converts multibyte integer values that are stored on the host system from the byte order used by the network to the byte order used by the host.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method to convert a long value from network byte order to host byte order.  
-  
- [!code-cpp[IPAddress_NetworkToHost#3](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CPP/ipaddress_networktohost.cpp#3)]
- [!code-csharp[IPAddress_NetworkToHost#3](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CS/ipaddress_networktohost.cs#3)]
- [!code-vb[IPAddress_NetworkToHost#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_NetworkToHost/VB/ipaddress_networktohost.vb#3)]  
-  
+The following example uses the <xref:System.Net.IPAddress.NetworkToHostOrder%2A> method to convert a long value from network byte order to host byte order.  
+ 
+[!code-cpp[IPAddress_NetworkToHost#3](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CPP/ipaddress_networktohost.cpp#3)]
+[!code-csharp[IPAddress_NetworkToHost#3](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_NetworkToHost/CS/ipaddress_networktohost.cs#3)]
+[!code-vb[IPAddress_NetworkToHost#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_NetworkToHost/VB/ipaddress_networktohost.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1184,19 +1184,19 @@
         <summary>Provides an IP address that indicates that no network interface should be used. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.None> field is equivalent to 255.255.255.255 in dotted-quad notation.  
+The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.None> field is equivalent to 255.255.255.255 in dotted-quad notation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.IPAddress.None> property to indicate that no network interface should be used.  
-  
- [!code-cpp[IPAddress_None#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_None/CPP/ipaddress_none.cpp#1)]
- [!code-csharp[IPAddress_None#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_None/CS/ipaddress_none.cs#1)]
- [!code-vb[IPAddress_None#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_None/VB/ipaddress_none.vb#1)]  
-  
+The following example uses the <xref:System.Net.IPAddress.None> property to indicate that no network interface should be used.  
+ 
+[!code-cpp[IPAddress_None#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_None/CPP/ipaddress_none.cpp#1)]
+[!code-csharp[IPAddress_None#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_None/CS/ipaddress_none.cs#1)]
+[!code-vb[IPAddress_None#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_None/VB/ipaddress_none.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1231,28 +1231,28 @@
         <returns>An <see cref="T:System.Net.IPAddress" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The static <xref:System.Net.IPAddress.Parse%2A> method creates an <xref:System.Net.IPAddress> instance from an IP address expressed in dotted-quad notation for IPv4 and in colon-hexadecimal notation for IPv6.  
-  
- The number of parts (each part is separated by a period) in `ipString` determines how the IP address is constructed. A one part address is stored directly in the network address. A two part address, convenient for specifying a class A address, puts the leading part in the first byte and the trailing part in the right-most three bytes of the network address. A three part address, convenient for specifying a class B address, puts the first part in the first byte, the second part in the second byte, and the final part in the right-most two bytes of the network address. For example:  
-  
+The static <xref:System.Net.IPAddress.Parse%2A> method creates an <xref:System.Net.IPAddress> instance from an IP address expressed in dotted-quad notation for IPv4 and in colon-hexadecimal notation for IPv6.  
+ 
+The number of parts (each part is separated by a period) in `ipString` determines how the IP address is constructed. A one part address is stored directly in the network address. A two part address, convenient for specifying a class A address, puts the leading part in the first byte and the trailing part in the right-most three bytes of the network address. A three part address, convenient for specifying a class B address, puts the first part in the first byte, the second part in the second byte, and the final part in the right-most two bytes of the network address. For example:  
+ 
 |Number of parts and example `ipString`|IPv4 address for IPAddress|  
 |--------------------------------------------|--------------------------------|  
 |1 -- "65535"|0.0.255.255|  
 |2 -- "20.2"|20.0.0.2|  
 |2 -- "20.65535"|20.0.255.255|  
 |3 -- "128.1.2"|128.1.0.2|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code converts a string that contains an IP address, in dotted-quad notation for IPv4 or in colon-hexadecimal notation for IPv6, into an instance of the <xref:System.Net.IPAddress> class. Then it uses the overloaded <xref:System.Net.IPAddress.ToString%2A> method to display the address in standard notation.  
-  
- [!code-cpp[System.Net.IPAddress.Parse#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.Parse/CPP/parse.cpp#1)]
- [!code-csharp[System.Net.IPAddress.Parse#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.Parse/CS/parse.cs#1)]
- [!code-vb[System.Net.IPAddress.Parse#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.Parse/VB/parse.vb#1)]  
-  
+The following code converts a string that contains an IP address, in dotted-quad notation for IPv4 or in colon-hexadecimal notation for IPv6, into an instance of the <xref:System.Net.IPAddress> class. Then it uses the overloaded <xref:System.Net.IPAddress.ToString%2A> method to display the address in standard notation.  
+ 
+[!code-cpp[System.Net.IPAddress.Parse#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress.Parse/CPP/parse.cpp#1)]
+[!code-csharp[System.Net.IPAddress.Parse#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress.Parse/CS/parse.cs#1)]
+[!code-vb[System.Net.IPAddress.Parse#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress.Parse/VB/parse.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1287,29 +1287,29 @@
         <value>A long integer that specifies the scope of the address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The meaning of <xref:System.Net.IPAddress.ScopeId%2A> changes depending on the context in which it is used.  
-  
+The meaning of <xref:System.Net.IPAddress.ScopeId%2A> changes depending on the context in which it is used.  
+ 
 -   Link-local address. On a host with multiple interfaces connected to separate links, the same link-local address can be assigned to multiple interfaces. To eliminate this ambiguity, a scope identifier is used to specify the interface over which messages are exchanged.  
-  
+ 
 > [!NOTE]
 >  Link-local addresses, identified by the Format Prefix (FP) FE80, are used by nodes when communicating with neighboring nodes on the same link.  
-  
+ 
 -   Site-local addresses. A host can be connected to multiple sites. In this case, a scope identifier is used to indicate a specific site to communicate with.  
-  
+ 
 > [!NOTE]
 >  Site-local addresses, identified by the Format Prefix (FP) FEC0, are used by nodes when communicating on private intranets.  
+ 
+The notation that is used to specify the `ScopeId` with an address is `Address%ScopeId`. For example, `FE80::5EFE:192.168.41.30%2.`  
+ 
   
- The notation that is used to specify the `ScopeId` with an address is `Address%ScopeId`. For example, `FE80::5EFE:192.168.41.30%2.`  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[System.Net.IPAddress#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress/CPP/ipaddress.cpp#3)]
- [!code-csharp[System.Net.IPAddress#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress/CS/ipaddress.cs#3)]
- [!code-vb[System.Net.IPAddress#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress/VB/ipaddress.vb#3)]  
-  
+[!code-cpp[System.Net.IPAddress#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPAddress/CPP/ipaddress.cpp#3)]
+[!code-csharp[System.Net.IPAddress#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPAddress/CS/ipaddress.cs#3)]
+[!code-vb[System.Net.IPAddress#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPAddress/VB/ipaddress.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">
@@ -1349,10 +1349,10 @@
         <returns>A string that contains the IP address in either IPv4 dotted-quad or in IPv6 colon-hexadecimal notation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IPAddress.ToString%2A> method converts the IP address that is stored in the <xref:System.Net.IPAddress.Address%2A> property to either IPv4 dotted-quad or IPv6 colon-hexadecimal notation.  
-  
+The <xref:System.Net.IPAddress.ToString%2A> method converts the IP address that is stored in the <xref:System.Net.IPAddress.Address%2A> property to either IPv4 dotted-quad or IPv6 colon-hexadecimal notation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">The address family is <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> and the address is bad.</exception>
@@ -1391,10 +1391,10 @@
           <see langword="true" /> if <paramref name="ipString" /> was able to be parsed as an IP address; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that this method accepts as valid an ipString value that can be parsed as an <xref:System.Int64>, and then treats that Int64 as the long value of an IP address in network byte order, similar to the way that the <xref:System.Net.IPAddress.%23ctor%2A> constructor does. This means that this method returns true if the Int64 is parsed successfully, even if it represents an address that's not a valid IP address. For example, if ipString is "1", this method returns true even though "1" (or 0.0.0.1) is not a valid IP address and you might expect this method to return false. Fixing this bug would break existing apps, so the current behavior will not be changed. Your code can avoid this behavior by ensuring that it only uses this method to parse IP addresses in dotted-decimal format.  
-  
+Note that this method accepts as valid an ipString value that can be parsed as an <xref:System.Int64>, and then treats that Int64 as the long value of an IP address in network byte order, similar to the way that the <xref:System.Net.IPAddress.%23ctor%2A> constructor does. This means that this method returns true if the Int64 is parsed successfully, even if it represents an address that's not a valid IP address. For example, if ipString is "1", this method returns true even though "1" (or 0.0.0.1) is not a valid IP address and you might expect this method to return false. Fixing this bug would break existing apps, so the current behavior will not be changed. Your code can avoid this behavior by ensuring that it only uses this method to parse IP addresses in dotted-decimal format.  
+ 
  ]]></format>
         </remarks>
       </Docs>

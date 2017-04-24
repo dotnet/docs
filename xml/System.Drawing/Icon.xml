@@ -32,27 +32,27 @@
     <summary>Represents a Windows icon, which is a small bitmap image that is used to represent an object. Icons can be thought of as transparent bitmaps, although their size is determined by the system.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can construct <xref:System.Drawing.Icon> objects from files, streams, or embedded resources. For a list of constructors, see <xref:System.Drawing.Icon.%23ctor%2A>. You can also convert an <xref:System.Drawing.Icon> to a bitmap by using the <xref:System.Drawing.Icon.ToBitmap%2A> method.  
-  
- An icon resource can contain multiple icon images. One icon file may contain images in several sizes and color depths. The image that is used in an application depends on the operating system and settings. The following list details the typical sizes for an icon:  
-  
+You can construct <xref:System.Drawing.Icon> objects from files, streams, or embedded resources. For a list of constructors, see <xref:System.Drawing.Icon.%23ctor%2A>. You can also convert an <xref:System.Drawing.Icon> to a bitmap by using the <xref:System.Drawing.Icon.ToBitmap%2A> method.  
+ 
+An icon resource can contain multiple icon images. One icon file may contain images in several sizes and color depths. The image that is used in an application depends on the operating system and settings. The following list details the typical sizes for an icon:  
+ 
 -   16 pixels x 16 pixels  
-  
+ 
 -   32 pixels x 32 pixels  
-  
+ 
 -   48 pixels x 48 pixels  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Icon.ToBitmap%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `IconToBitmap` method in the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#9)]
- [!code-csharp[System.Drawing.MiscExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#9)]
- [!code-vb[System.Drawing.MiscExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#9)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Icon.ToBitmap%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `IconToBitmap` method in the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#9)]
+[!code-csharp[System.Drawing.MiscExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#9)]
+[!code-vb[System.Drawing.MiscExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#9)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,18 +74,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Icon" /> class from the specified data stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An icon resource can contain multiple icon images. One icon file may contain images in several sizes and color depths. The image that is used in an application depends on the operating system and settings. The following list details the typical sizes for an icon:  
-  
+An icon resource can contain multiple icon images. One icon file may contain images in several sizes and color depths. The image that is used in an application depends on the operating system and settings. The following list details the typical sizes for an icon:  
+ 
 -   16 pixels x 16 pixels  
-  
+ 
 -   32 pixels x 32 pixels  
-  
+ 
 -   48 pixels x 48 pixels  
-  
- This constructor returns the smallest image that is contained in the specified stream.  
-  
+ 
+This constructor returns the smallest image that is contained in the specified stream.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="stream" /> parameter is <see langword="null" />.</exception>
@@ -108,18 +108,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Icon" /> class from the specified file name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An icon resource can contain multiple icon images. One icon file may contain images in several sizes and color depths. The image that is used in an application depends on the operating system and settings. The following list details the typical sizes for an icon:  
-  
+An icon resource can contain multiple icon images. One icon file may contain images in several sizes and color depths. The image that is used in an application depends on the operating system and settings. The following list details the typical sizes for an icon:  
+ 
 -   16 pixels x 16 pixels  
-  
+ 
 -   32 pixels x 32 pixels  
-  
+ 
 -   48 pixels x 48 pixels  
-  
- This constructor returns the smallest image that is contained in the specified file.  
-  
+ 
+This constructor returns the smallest image that is contained in the specified file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Icon" /> class and attempts to find a version of the icon that matches the requested size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a version cannot be found that exactly matches the size, the closest match is used. If the `original` parameter is an <xref:System.Drawing.Icon> that has a single size, this method only creates a duplicate icon. Use the stretching capabilities of the <xref:System.Drawing.Graphics.DrawImage%2A> method to resize the icon.  
-  
+If a version cannot be found that exactly matches the size, the closest match is used. If the `original` parameter is an <xref:System.Drawing.Icon> that has a single size, this method only creates a duplicate icon. Use the stretching capabilities of the <xref:System.Drawing.Graphics.DrawImage%2A> method to resize the icon.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="original" /> parameter is <see langword="null" />.</exception>
@@ -192,12 +192,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Icon" /> class of the specified size from the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified file does not contain an image that matches the desired size, the icon that has the closest size is returned.  
-  
- The `fileName` should include the complete path if it is not in the current application directory.  
-  
+If the specified file does not contain an image that matches the desired size, the icon that has the closest size is returned.  
+ 
+The `fileName` should include the complete path if it is not in the current application directory.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="string" /> is <see langword="null" /> or does not contain image data.</exception>
@@ -222,20 +222,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Icon" /> class from a resource in the specified assembly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an <xref:System.Drawing.Icon> from a resource with the name specified by the `resource` parameter in the assembly that contains the type specified by the `type` parameter.  
+This constructor creates an <xref:System.Drawing.Icon> from a resource with the name specified by the `resource` parameter in the assembly that contains the type specified by the `type` parameter.  
+ 
+This constructor combines the namespace of the given type together with the string name of the resource and looks for a match in the assembly manifest. For example you can pass in the <xref:System.Windows.Forms.Control> type and `Error.ico` to this constructor, and it looks for a resource that is named `System.Windows.Forms.Error.ico`.  
+ 
   
- This constructor combines the namespace of the given type together with the string name of the resource and looks for a match in the assembly manifest. For example you can pass in the <xref:System.Windows.Forms.Control> type and `Error.ico` to this constructor, and it looks for a resource that is named `System.Windows.Forms.Error.ico`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Icon.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Call the `ConstructAnIconFromAType` method from the <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.EventArgs>.  
-  
- [!code-csharp[System.Drawing.Misc3#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#3)]
- [!code-vb[System.Drawing.Misc3#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#3)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Icon.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Call the `ConstructAnIconFromAType` method from the <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.EventArgs>.  
+ 
+[!code-csharp[System.Drawing.Misc3#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#3)]
+[!code-vb[System.Drawing.Misc3#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An icon specified by <paramref name="resource" /> cannot be found in the assembly that contains the specified <paramref name="type" />.</exception>
@@ -262,19 +262,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Icon" /> class and attempts to find a version of the icon that matches the requested size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a version cannot be found that exactly matches the size, the closest match is used. If the `original` parameter is an <xref:System.Drawing.Icon> that has a single size, this method only creates a duplicate icon. Use the stretching capabilities of the <xref:System.Drawing.Graphics.DrawImage%2A> method to resize the icon.  
+If a version cannot be found that exactly matches the size, the closest match is used. If the `original` parameter is an <xref:System.Drawing.Icon> that has a single size, this method only creates a duplicate icon. Use the stretching capabilities of the <xref:System.Drawing.Graphics.DrawImage%2A> method to resize the icon.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Icon.ToBitmap%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `IconToBitmap` method in the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#9)]
- [!code-csharp[System.Drawing.MiscExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#9)]
- [!code-vb[System.Drawing.MiscExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#9)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Icon.ToBitmap%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `IconToBitmap` method in the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#9)]
+[!code-csharp[System.Drawing.MiscExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#9)]
+[!code-vb[System.Drawing.MiscExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="original" /> parameter is <see langword="null" />.</exception>
@@ -324,12 +324,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Icon" /> class with the specified width and height from the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified file does not contain an image that matches the desired height and width, the icon that has the closest size is returned.  
-  
- The `fileName` should include the complete path if it is not in the current application directory.  
-  
+If the specified file does not contain an image that matches the desired height and width, the icon that has the closest size is returned.  
+ 
+The `fileName` should include the complete path if it is not in the current application directory.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="string" /> is <see langword="null" /> or does not contain image data.</exception>
@@ -371,10 +371,10 @@
         <summary>Releases all resources used by this <see cref="T:System.Drawing.Icon" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `Dispose` allows the resources that are used by this <xref:System.Drawing.Icon> to be reallocated for other purposes.  
-  
+Calling `Dispose` allows the resources that are used by this <xref:System.Drawing.Icon> to be reallocated for other purposes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,20 +400,20 @@
         <returns>The <see cref="T:System.Drawing.Icon" /> representation of the image that is contained in the specified file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A relative path is assumed to be relative to the current working directory.  
+A relative path is assumed to be relative to the current working directory.  
+ 
+When <xref:System.Drawing.Icon.ExtractAssociatedIcon%2A> is used with bitmaps, a thumbnail image may be returned instead of an icon if the system that is running the application has a registry setting that causes bitmap files to be shown as thumbnail images.  
+ 
   
- When <xref:System.Drawing.Icon.ExtractAssociatedIcon%2A> is used with bitmaps, a thumbnail image may be returned instead of an icon if the system that is running the application has a registry setting that causes bitmap files to be shown as thumbnail images.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Icon.ExtractAssociatedIcon%2A> method. To run this example, paste the code into a Windows Form and call `ExtractAssociatedIconEx` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
-  
- [!code-csharp[System.Drawing.Misc3#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#2)]
- [!code-vb[System.Drawing.Misc3#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Icon.ExtractAssociatedIcon%2A> method. To run this example, paste the code into a Windows Form and call `ExtractAssociatedIconEx` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+ 
+[!code-csharp[System.Drawing.Misc3#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#2)]
+[!code-vb[System.Drawing.Misc3#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="filePath" /> does not indicate a valid file.  
@@ -462,29 +462,29 @@
         <returns>The <see cref="T:System.Drawing.Icon" /> this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using this method, you must dispose of the original icon by using the `DestroyIcon` method in the Win32 API to ensure that the resources are released.  
+When using this method, you must dispose of the original icon by using the `DestroyIcon` method in the Win32 API to ensure that the resources are released.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.Bitmap>.  
-  
+ 
 -   Draws that object to the screen.  
-  
+ 
 -   Gets an icon handle for the <xref:System.Drawing.Bitmap>.  
-  
+ 
 -   Sets the <xref:System.Windows.Forms.Form.Icon%2A?displayProperty=fullName> attribute of the form to an icon created from the handle.  
-  
+ 
 -   Calls the Win32 API function `DestroyIcon` to release resources.  
-  
- [!code-cpp[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/CPP/form1.cpp#6)]
- [!code-csharp[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/CS/form1.cs#6)]
- [!code-vb[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/VB/form1.vb#6)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/CPP/form1.cpp#6)]
+[!code-csharp[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/CS/form1.cs#6)]
+[!code-vb[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/VB/form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
@@ -512,16 +512,16 @@
         <value>The Windows handle for the icon.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to load a bitmap from an <xref:System.Drawing.Icon> handle using the <xref:System.Drawing.GraphicsUnit> enumeration and how to use the <xref:System.Drawing.Rectangle.Round%2A> method to draw the rectangle bounds of a bitmap.  
-  
- This example is designed to be used with Windows Forms. Create a form that contains a button named `Button2`. Paste the code into the form and associate this method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cpp[System.Drawing.BitmapMembers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.BitmapMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#1)]
- [!code-vb[System.Drawing.BitmapMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to load a bitmap from an <xref:System.Drawing.Icon> handle using the <xref:System.Drawing.GraphicsUnit> enumeration and how to use the <xref:System.Drawing.Rectangle.Round%2A> method to draw the rectangle bounds of a bitmap.  
+ 
+This example is designed to be used with Windows Forms. Create a form that contains a button named `Button2`. Paste the code into the form and associate this method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+ 
+[!code-cpp[System.Drawing.BitmapMembers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.BitmapMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#1)]
+[!code-vb[System.Drawing.BitmapMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -630,22 +630,22 @@
         <returns>A <see cref="T:System.Drawing.Bitmap" /> that represents the converted <see cref="T:System.Drawing.Icon" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The transparent areas of the icon are lost when it is converted to a bitmap, and the transparent color of the resulting bitmap is set to `RGB(13,11,12)`. The returned bitmap has the same height and width as the original icon.  
-  
+The transparent areas of the icon are lost when it is converted to a bitmap, and the transparent color of the resulting bitmap is set to `RGB(13,11,12)`. The returned bitmap has the same height and width as the original icon.  
+ 
 > [!NOTE]
 >  Beginning with framework version 4.6 support was added for PNG frames in .ico files. Applications that target earlier versions of the framework but are running on the 4.6 bits can opt in into the new behavior by adding the following line to the `<runtime>` section of the app.config file:`<AppContextSwitchOverrides value="Switch.System.Drawing.DontSupportPngFramesInIcons=false" />`  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Icon.ToBitmap%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `IconToBitmap` method in the form's .<xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs> .  
-  
- [!code-cpp[System.Drawing.MiscExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#9)]
- [!code-csharp[System.Drawing.MiscExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#9)]
- [!code-vb[System.Drawing.MiscExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#9)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Icon.ToBitmap%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `IconToBitmap` method in the form's .<xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs> .  
+ 
+[!code-cpp[System.Drawing.MiscExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#9)]
+[!code-csharp[System.Drawing.MiscExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#9)]
+[!code-vb[System.Drawing.MiscExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

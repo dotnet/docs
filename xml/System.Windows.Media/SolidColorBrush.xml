@@ -14,15 +14,15 @@
     <summary>Paints an area with a solid color.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For convenience, the <xref:System.Windows.Media.Brushes> class provides a set of commonly used <xref:System.Windows.Media.SolidColorBrush> objects, such as <xref:System.Windows.Media.Brushes.Blue%2A> and <xref:System.Windows.Media.Brushes.Yellow%2A>.  
-  
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.SolidColorBrush> class provides several special features: <xref:System.Windows.Media.SolidColorBrush> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+For convenience, the <xref:System.Windows.Media.Brushes> class provides a set of commonly used <xref:System.Windows.Media.SolidColorBrush> objects, such as <xref:System.Windows.Media.Brushes.Blue%2A> and <xref:System.Windows.Media.Brushes.Yellow%2A>.  
+ 
+**Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.SolidColorBrush> class provides several special features: <xref:System.Windows.Media.SolidColorBrush> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
 <a name="xamlAttributeUsage_SolidColorBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="predefinedBrushName"/>  
 - or -  
@@ -38,57 +38,57 @@
 - or -  
 <object property="ContextColor profileUri alphaValue,colorValue"/>  
 ```  
-  
+ 
 <a name="xamlValues_SolidColorBrush"></a>   
 ## XAML Values  
- *predefinedBrushName*  
- The name of a brush defined by the <xref:System.Windows.Media.Brushes> class, such as <xref:System.Windows.Media.Brushes.Blue%2A> or <xref:System.Windows.Media.Brushes.Orange%2A>.  
-  
- *rgb*  
- A three-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first digit specifies the color's <xref:System.Windows.Media.Color.R%2A> value, the second digit specifies the <xref:System.Windows.Media.Color.G%2A> value, and the third digit specifies the <xref:System.Windows.Media.Color.B%2A> value. For example, `00F`.  
-  
- *argb*  
- A four-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first digit specifies the color's <xref:System.Windows.Media.Color.A%2A> value, the second digit specifies its <xref:System.Windows.Media.Color.R%2A> value, the next digit specifies the <xref:System.Windows.Media.Color.G%2A> value, and the final digit specifies its <xref:System.Windows.Media.Color.B%2A> value. For example, `F00F`.  
-  
- *rrggbb*  
- A six-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first two digits specify the color's <xref:System.Windows.Media.Color.R%2A> value, the next two specify its <xref:System.Windows.Media.Color.G%2A> value, and the final two specify its <xref:System.Windows.Media.Color.B%2A> value. For example, `0000FF`.  
-  
- *aarrggbb*  
- An eight-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first two digits specify the color's <xref:System.Windows.Media.Color.A%2A> value, the next two specify its <xref:System.Windows.Media.Color.R%2A> value, the next two specify its <xref:System.Windows.Media.Color.G%2A> value, and the final two specify its <xref:System.Windows.Media.Color.B%2A> value. For example, `FF0000FF`.  
-  
- *scA*  
- <xref:System.Single>  
-  
- The <xref:System.Windows.Media.Color.ScA%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
-  
- *scR*  
- <xref:System.Single>  
-  
- The <xref:System.Windows.Media.Color.ScR%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
-  
- *scG*  
- <xref:System.Single>  
-  
- The <xref:System.Windows.Media.Color.ScG%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
-  
- *scB*  
- <xref:System.Single>  
-  
- The <xref:System.Windows.Media.Color.ScB%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
-  
- *profileUri*  
- <xref:System.Uri?displayProperty=fullName>  
-  
- The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile.  
-  
- *alphaValue*  
- <xref:System.Single?displayProperty=fullName>  
-  
- The alpha channel color value. The value range is from 0.0 through 1.0.  
-  
- *colorValue*  
- A comma-delimited list of three to eight values that represent the color channels of the color profile. The value range is from 0.0 through 1.0.  
-  
+*predefinedBrushName*  
+The name of a brush defined by the <xref:System.Windows.Media.Brushes> class, such as <xref:System.Windows.Media.Brushes.Blue%2A> or <xref:System.Windows.Media.Brushes.Orange%2A>.  
+ 
+*rgb*  
+A three-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first digit specifies the color's <xref:System.Windows.Media.Color.R%2A> value, the second digit specifies the <xref:System.Windows.Media.Color.G%2A> value, and the third digit specifies the <xref:System.Windows.Media.Color.B%2A> value. For example, `00F`.  
+ 
+*argb*  
+A four-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first digit specifies the color's <xref:System.Windows.Media.Color.A%2A> value, the second digit specifies its <xref:System.Windows.Media.Color.R%2A> value, the next digit specifies the <xref:System.Windows.Media.Color.G%2A> value, and the final digit specifies its <xref:System.Windows.Media.Color.B%2A> value. For example, `F00F`.  
+ 
+*rrggbb*  
+A six-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first two digits specify the color's <xref:System.Windows.Media.Color.R%2A> value, the next two specify its <xref:System.Windows.Media.Color.G%2A> value, and the final two specify its <xref:System.Windows.Media.Color.B%2A> value. For example, `0000FF`.  
+ 
+*aarrggbb*  
+An eight-digit hexadecimal number that describes this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>. The first two digits specify the color's <xref:System.Windows.Media.Color.A%2A> value, the next two specify its <xref:System.Windows.Media.Color.R%2A> value, the next two specify its <xref:System.Windows.Media.Color.G%2A> value, and the final two specify its <xref:System.Windows.Media.Color.B%2A> value. For example, `FF0000FF`.  
+ 
+*scA*  
+<xref:System.Single>  
+ 
+The <xref:System.Windows.Media.Color.ScA%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
+ 
+*scR*  
+<xref:System.Single>  
+ 
+The <xref:System.Windows.Media.Color.ScR%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
+ 
+*scG*  
+<xref:System.Single>  
+ 
+The <xref:System.Windows.Media.Color.ScG%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
+ 
+*scB*  
+<xref:System.Single>  
+ 
+The <xref:System.Windows.Media.Color.ScB%2A> value of this brush's <xref:System.Windows.Media.SolidColorBrush.Color%2A>.  
+ 
+*profileUri*  
+<xref:System.Uri?displayProperty=fullName>  
+ 
+The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile.  
+ 
+*alphaValue*  
+<xref:System.Single?displayProperty=fullName>  
+ 
+The alpha channel color value. The value range is from 0.0 through 1.0.  
+ 
+*colorValue*  
+A comma-delimited list of three to eight values that represent the color channels of the color profile. The value range is from 0.0 through 1.0.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -144,12 +144,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,12 +172,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,18 +199,18 @@
         <value>The brush's color. The default value is <see cref="P:System.Windows.Media.Colors.Transparent" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of predefined colors, see the <xref:System.Windows.Media.Colors> class. For a list of system colors, see the <xref:System.Windows.SystemColors> class.  
-  
+For a list of predefined colors, see the <xref:System.Windows.Media.Colors> class. For a list of system colors, see the <xref:System.Windows.SystemColors> class.  
+ 
 <a name="dependencyPropertyInfo_Color"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.SolidColorBrush.ColorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,10 +23,10 @@
     <summary>The exception that is thrown when the <see langword="Value" /> property of a <see cref="N:System.Data.SqlTypes" /> structure is set to null.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In order to avoid throwing this exception, you should always examine the `IsNull` property of the structure before accessing the `Value` property.  
-  
+In order to avoid throwing this exception, you should always examine the `IsNull` property of the structure before accessing the `Value` property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,17 +54,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlNullValueException" /> class with a system-supplied message that describes the error.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "DefaultMessageDisplayedByParameterlessCtorWriterMustSupply" This message takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.InsufficientMemoryException>.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "DefaultMessageDisplayedByParameterlessCtorWriterMustSupply" This message takes into account the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.InsufficientMemoryException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The localized error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,15 +95,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlNullValueException" /> class with a specified message that describes the error.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.Data.SqlTypes.SqlNullValueException>.  
-  
+The following table shows the initial property values for an instance of <xref:System.Data.SqlTypes.SqlNullValueException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

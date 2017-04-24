@@ -18,13 +18,13 @@
     <summary>Specifies whether text wraps when it reaches the edge of the containing box</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to set the value of the <xref:System.Windows.TextWrapping> property of a <xref:System.Windows.Controls.TextBox>.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase12](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase12)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase12)]  
-  
+The following example demonstrates how to set the value of the <xref:System.Windows.TextWrapping> property of a <xref:System.Windows.Controls.TextBox>.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase12](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase12)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase12)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

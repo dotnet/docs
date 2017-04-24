@@ -19,28 +19,28 @@
     <summary>Represents a collection of <see cref="T:System.Web.Configuration.HttpModuleAction" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpModuleActionCollection> collection allows access to the <xref:System.Web.Configuration.HttpModuleAction> elements of the <xref:System.Web.Configuration.HttpModulesSection> section.  
+The <xref:System.Web.Configuration.HttpModuleActionCollection> collection allows access to the <xref:System.Web.Configuration.HttpModuleAction> elements of the <xref:System.Web.Configuration.HttpModulesSection> section.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.Configuration.HttpModuleActionCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.HttpModuleActionCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#1)]
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#1)]  
-  
- The following example is an excerpt of the configuration file that enables ASP.NET to use a custom module. For a complete example of how to build and configure an HTTP module, see the [NIB: How to: Create and Configure an HTTP Module](http://msdn.microsoft.com/en-us/4174fd13-a9c4-4ff6-baa5-3f7d7fc73ef3).  
-  
+The following example shows how to use the <xref:System.Web.Configuration.HttpModuleActionCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.HttpModuleActionCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#1)]
+[!code-vb[System.Web.Configuration.HttpModuleActionCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#1)]  
+ 
+The following example is an excerpt of the configuration file that enables ASP.NET to use a custom module. For a complete example of how to build and configure an HTTP module, see the [NIB: How to: Create and Configure an HTTP Module](http://msdn.microsoft.com/en-us/4174fd13-a9c4-4ff6-baa5-3f7d7fc73ef3).  
+ 
 ```  
 <httpModules>  
-  <add name="TimerModule"   
-    type="Samples.AspNet.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
-    PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
+ <add name="TimerModule"   
+   type="Samples.AspNet.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
+   PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
 </httpModules>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,18 +59,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpModuleActionCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a non-initialized instance of the <xref:System.Web.Configuration.HttpModuleActionCollection> object.  
+This constructor creates a non-initialized instance of the <xref:System.Web.Configuration.HttpModuleActionCollection> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an <xref:System.Web.Configuration.HttpModuleActionCollection> object.  
-  
- [!code-csharp[System.Web.Configuration.HttpModuleActionCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#2)]
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#2)]  
-  
+The following example shows how to create an <xref:System.Web.Configuration.HttpModuleActionCollection> object.  
+ 
+[!code-csharp[System.Web.Configuration.HttpModuleActionCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#2)]
+[!code-vb[System.Web.Configuration.HttpModuleActionCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,18 +95,18 @@
         <summary>Adds an <see cref="T:System.Web.Configuration.HttpModuleAction" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adds an <xref:System.Web.Configuration.HttpModuleAction> object to the collection.  
+Adds an <xref:System.Web.Configuration.HttpModuleAction> object to the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an <xref:System.Web.Configuration.HttpModuleAction> object and add it to the collection.  
-  
- [!code-csharp[System.Web.Configuration.HttpModuleActionCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#3)]
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#3)]  
-  
+The following example shows how to create an <xref:System.Web.Configuration.HttpModuleAction> object and add it to the collection.  
+ 
+[!code-csharp[System.Web.Configuration.HttpModuleActionCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#3)]
+[!code-vb[System.Web.Configuration.HttpModuleActionCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">An attempt was made to add an <see cref="T:System.Web.Configuration.HttpModuleAction" /> object that already exists in the collection.</exception>
@@ -129,18 +129,18 @@
         <summary>Removes all <see cref="T:System.Web.Configuration.HttpModuleAction" /> objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the appropriate section of the current configuration file are removed.  
+This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the appropriate section of the current configuration file are removed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to clear the <xref:System.Web.Configuration.HttpModuleAction> modules contained in the collection.  
-  
- [!code-csharp[System.Web.Configuration.HttpModuleActionCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#8)]
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#8)]  
-  
+The following example shows how to clear the <xref:System.Web.Configuration.HttpModuleAction> modules contained in the collection.  
+ 
+[!code-csharp[System.Web.Configuration.HttpModuleActionCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#8)]
+[!code-vb[System.Web.Configuration.HttpModuleActionCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,18 +207,18 @@
         <returns>The collection index value for the specified module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before using this method, you must identify an <xref:System.Web.Configuration.HttpModuleAction> module with the proper name and type. You can then use this module object to get its collection index.  
+Before using this method, you must identify an <xref:System.Web.Configuration.HttpModuleAction> module with the proper name and type. You can then use this module object to get its collection index.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to obtain an <xref:System.Web.Configuration.HttpModuleAction> module collection index.  
-  
- [!code-csharp[System.Web.Configuration.HttpModuleActionCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#4)]
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#4)]  
-  
+The following example shows how to obtain an <xref:System.Web.Configuration.HttpModuleAction> module collection index.  
+ 
+[!code-csharp[System.Web.Configuration.HttpModuleActionCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#4)]
+[!code-vb[System.Web.Configuration.HttpModuleActionCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,10 +266,10 @@
         <value>The item at the specified <paramref name="index" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is intended for internal use only.  
-  
+This property is intended for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,18 +312,18 @@
         <summary>Removes an <see cref="T:System.Web.Configuration.HttpModuleAction" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to remove an <xref:System.Web.Configuration.HttpModuleAction> module from the collection.  
-  
- [!code-csharp[System.Web.Configuration.HttpModuleActionCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#6)]
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#6)]  
-  
+The following example shows how to remove an <xref:System.Web.Configuration.HttpModuleAction> module from the collection.  
+ 
+[!code-csharp[System.Web.Configuration.HttpModuleActionCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#6)]
+[!code-vb[System.Web.Configuration.HttpModuleActionCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.HttpModuleAction" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
@@ -349,18 +349,18 @@
         <summary>Removes an <see cref="T:System.Web.Configuration.HttpModuleAction" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to remove an <xref:System.Web.Configuration.HttpModuleAction> module from the collection.  
-  
- [!code-csharp[System.Web.Configuration.HttpModuleActionCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#5)]
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#5)]  
-  
+The following example shows how to remove an <xref:System.Web.Configuration.HttpModuleAction> module from the collection.  
+ 
+[!code-csharp[System.Web.Configuration.HttpModuleActionCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#5)]
+[!code-vb[System.Web.Configuration.HttpModuleActionCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The passed <see cref="T:System.Web.Configuration.HttpModuleAction" /> object does not exist in the collection, the element has already been removed, or the collection is read-only.</exception>
@@ -386,18 +386,18 @@
         <summary>Removes an <see cref="T:System.Web.Configuration.HttpModuleAction" /> module at the specified index from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to remove an <xref:System.Web.Configuration.HttpModuleAction> module from the collection.  
-  
- [!code-csharp[System.Web.Configuration.HttpModuleActionCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#7)]
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#7)]  
-  
+The following example shows how to remove an <xref:System.Web.Configuration.HttpModuleAction> module from the collection.  
+ 
+[!code-csharp[System.Web.Configuration.HttpModuleActionCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#7)]
+[!code-vb[System.Web.Configuration.HttpModuleActionCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.HttpModuleAction" /> object at the specified index in the collection, the element has already been removed, or the collection is read-only.</exception>
@@ -412,10 +412,10 @@
         <summary>Removes an <see cref="T:System.Web.Configuration.HttpModuleAction" /> module from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To remove a module from its collection, you can use one of listed overloaded methods.  
-  
+To remove a module from its collection, you can use one of listed overloaded methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>

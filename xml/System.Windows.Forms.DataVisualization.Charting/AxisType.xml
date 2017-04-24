@@ -13,23 +13,23 @@
     <summary>Specifies the axis type for the X and Y-axes of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.AxisType> enumeration represents the axis type used for the X and Y-axes of a <xref:System.Windows.Forms.DataVisualization.Charting.Series>.  
-  
- A <xref:System.Windows.Forms.DataVisualization.Charting.Series> is plotted using two axes, with the exception of pie and doughnut charts. This enumeration is used in conjunction with the <xref:System.Windows.Forms.DataVisualization.Charting.Series.XAxisType%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Series.YAxisType%2A> properties to set the axes used for plotting the associated data points of the series.  
-  
- For all charts except for bar, stacked bar, pie and doughnut types, the primary and secondary axes are as follows:  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.AxisType> enumeration represents the axis type used for the X and Y-axes of a <xref:System.Windows.Forms.DataVisualization.Charting.Series>.  
+ 
+A <xref:System.Windows.Forms.DataVisualization.Charting.Series> is plotted using two axes, with the exception of pie and doughnut charts. This enumeration is used in conjunction with the <xref:System.Windows.Forms.DataVisualization.Charting.Series.XAxisType%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Series.YAxisType%2A> properties to set the axes used for plotting the associated data points of the series.  
+ 
+For all charts except for bar, stacked bar, pie and doughnut types, the primary and secondary axes are as follows:  
+ 
 |Axis Type|Description|  
 |---------------|-----------------|  
 |Primary X-Axis|Bottom horizontal axis.|  
 |Secondary X-Axis|Top horizontal axis.|  
 |Primary Y-Axis|Left vertical axis.|  
 |Secondary Y-Axis|Right vertical axis.|  
-  
- Bar and stacked bar charts have their axes rotated 90 degrees clockwise. For example, the primary X-axis for these two charts is the left-vertical axis.  
-  
+ 
+Bar and stacked bar charts have their axes rotated 90 degrees clockwise. For example, the primary X-axis for these two charts is the left-vertical axis.  
+ 
  ]]></format>
     </remarks>
   </Docs>

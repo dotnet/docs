@@ -123,10 +123,10 @@
         <value>A value that indicates which rows to display.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of <xref:System.Data.DataViewSetting.RowStateFilter%2A> is `DataViewRowState.CurrentRows`.  
-  
+The default value of <xref:System.Data.DataViewSetting.RowStateFilter%2A> is `DataViewRowState.CurrentRows`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,10 +153,10 @@
         <value>The sort to apply in the <see cref="T:System.Data.DataView" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.DataView.Sort%2A> can have two defaults based on the value of <xref:System.Data.DataView.RowFilter%2A> property. If <xref:System.Data.DataView.RowFilter%2A> is null or empty (that is, the value is not explicitly specified), the <xref:System.Data.DataRowView> in the <xref:System.Data.DataView> is sorted on the position or ordinal of <xref:System.Data.DataRow> in the <xref:System.Data.DataTable.Rows%2A> collection. The <xref:System.Data.DataView.Sort%2A> default, an empty string, causes a <xref:System.Data.DataRowView> in <xref:System.Data.DataView> to be sorted on the position or ordinal of <xref:System.Data.DataRow> in the <xref:System.Data.DataTable.Rows%2A> collection.  
-  
+<xref:System.Data.DataView.Sort%2A> can have two defaults based on the value of <xref:System.Data.DataView.RowFilter%2A> property. If <xref:System.Data.DataView.RowFilter%2A> is null or empty (that is, the value is not explicitly specified), the <xref:System.Data.DataRowView> in the <xref:System.Data.DataView> is sorted on the position or ordinal of <xref:System.Data.DataRow> in the <xref:System.Data.DataTable.Rows%2A> collection. The <xref:System.Data.DataView.Sort%2A> default, an empty string, causes a <xref:System.Data.DataRowView> in <xref:System.Data.DataView> to be sorted on the position or ordinal of <xref:System.Data.DataRow> in the <xref:System.Data.DataTable.Rows%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

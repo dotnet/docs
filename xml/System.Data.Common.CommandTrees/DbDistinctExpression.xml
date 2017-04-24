@@ -14,10 +14,10 @@
     <summary>Removes duplicate elements from the specified set argument. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.CommandTrees.DbDistinctExpression> requires that the collection result type of its argument has an element type that can be compared by using the equality operator.  
-  
+The <xref:System.Data.Common.CommandTrees.DbDistinctExpression> requires that the collection result type of its argument has an element type that can be compared by using the equality operator.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -27,10 +27,10 @@
     <summary>Specifies options for opening a key.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Silent option suppresses any UI prompting. This option may not work with some key types, such as smart card keys and keys that are stored in the software key storage provider (KSP). These key types are protected with mandatory UI prompting.  
-  
+The Silent option suppresses any UI prompting. This option may not work with some key types, such as smart card keys and keys that are stored in the software key storage provider (KSP). These key types are protected with mandatory UI prompting.  
+ 
  ]]></format>
     </remarks>
   </Docs>

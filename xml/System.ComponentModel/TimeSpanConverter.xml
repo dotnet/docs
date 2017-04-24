@@ -23,24 +23,24 @@
     <summary>Provides a type converter to convert <see cref="T:System.TimeSpan" /> objects to and from other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a <xref:System.TimeSpan> object to and from a string.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
+This converter can only convert a <xref:System.TimeSpan> object to and from a string.  
+ 
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
 > [!NOTE]
 >  You should never create an instance of a <xref:System.ComponentModel.TimeSpanConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example converts a variable of type <xref:System.TimeSpan> to a string, and vice versa. Both variables are represented in <xref:System.TimeSpan.Ticks%2A> format.  
-  
- [!code-cpp[Converters#21](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#21)]
- [!code-csharp[Converters#21](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#21)]
- [!code-vb[Converters#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#21)]  
-  
+The following code example converts a variable of type <xref:System.TimeSpan> to a string, and vice versa. Both variables are represented in <xref:System.TimeSpan.Ticks%2A> format.  
+ 
+[!code-cpp[Converters#21](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#21)]
+[!code-csharp[Converters#21](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#21)]
+[!code-vb[Converters#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#21)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,12 +102,12 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a <xref:System.TimeSpan> object to and from a string.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+This converter can only convert a <xref:System.TimeSpan> object to and from a string.  
+ 
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -194,12 +194,12 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a <xref:System.TimeSpan> object to and from a string.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+This converter can only convert a <xref:System.TimeSpan> object to and from a string.  
+ 
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
@@ -243,14 +243,14 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method most commonly converts types to and from string objects.  
-  
- The default implementation will make a call to <xref:System.Object.ToString%2A> on the object if the object is valid and if the destination type is string. If this method cannot convert to the destination type, it will throw a <xref:System.NotSupportedException>.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+This method most commonly converts types to and from string objects.  
+ 
+The default implementation will make a call to <xref:System.Object.ToString%2A> on the object if the object is valid and if the destination type is string. If this method cannot convert to the destination type, it will throw a <xref:System.NotSupportedException>.  
+ 
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

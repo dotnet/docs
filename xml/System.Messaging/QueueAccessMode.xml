@@ -13,12 +13,12 @@
     <summary>Specifies the access mode for a <see cref="T:System.Messaging.MessageQueue" /> at creation time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When creating a <xref:System.Messaging.MessageQueue>, if no access mode is specified, the access mode defaults to `QueueAccessMode.SendAndReceive`.  
-  
- Once the <xref:System.Messaging.MessageQueue> is created, the access mode cannot be changed.  
-  
+When creating a <xref:System.Messaging.MessageQueue>, if no access mode is specified, the access mode defaults to `QueueAccessMode.SendAndReceive`.  
+ 
+Once the <xref:System.Messaging.MessageQueue> is created, the access mode cannot be changed.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -18,13 +18,13 @@
     <summary>Defines access levels used by <see cref="N:System.Messaging" /> permission classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Messaging.MessageQueuePermissionAccess> in creating a new instance of <xref:System.Messaging.MessageQueuePermission>.  
-  
- [!code-cpp[MessageQueuePermissionAccess#0](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionAccess/cpp/class1.cpp#0)]
- [!code-csharp[MessageQueuePermissionAccess#0](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionAccess/CS/class1.cs#0)]  
-  
+The following code example uses <xref:System.Messaging.MessageQueuePermissionAccess> in creating a new instance of <xref:System.Messaging.MessageQueuePermission>.  
+ 
+[!code-cpp[MessageQueuePermissionAccess#0](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionAccess/cpp/class1.cpp#0)]
+[!code-csharp[MessageQueuePermissionAccess#0](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionAccess/CS/class1.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

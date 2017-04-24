@@ -14,17 +14,17 @@
     <summary>Specifies the exchange mode used to obtain metadata.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.MetadataExchangeClientMode> with the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=fullName> to specify whether metadata is downloaded using an HTTP GET or WS-Transfer Get request.  
+Use the <xref:System.ServiceModel.Description.MetadataExchangeClientMode> with the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=fullName> to specify whether metadata is downloaded using an HTTP GET or WS-Transfer Get request.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of <xref:System.ServiceModel.Description.MetadataExchangeClient> to specify a download binding, resolve any contained references to metadata, and download the metadata.  
-  
- [!code-csharp[MetadataResolver#3](~/samples/snippets/csharp/VS_Snippets_CFX/metadataresolver/cs/client.cs#3)]  
-  
+The following code example shows the use of <xref:System.ServiceModel.Description.MetadataExchangeClient> to specify a download binding, resolve any contained references to metadata, and download the metadata.  
+ 
+[!code-csharp[MetadataResolver#3](~/samples/snippets/csharp/VS_Snippets_CFX/metadataresolver/cs/client.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

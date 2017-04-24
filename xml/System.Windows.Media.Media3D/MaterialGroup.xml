@@ -19,17 +19,17 @@
     <summary>Represents a <see cref="T:System.Windows.Media.Media3D.Material" /> that is a composite of the Materials in its collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Windows.Media.Media3D.DiffuseMaterial>, <xref:System.Windows.Media.Media3D.SpecularMaterial>, and <xref:System.Windows.Media.Media3D.EmissiveMaterial> provide distinctly different effects, it's useful to combine them.  For example, you might choose to apply a complex texture to a mesh using DiffuseMaterial, while adding a highlighting effect with a SpecularMaterial on the same mesh.  MaterialGroup allows you to treat these Materials as a single texture for convenience.  
+Because <xref:System.Windows.Media.Media3D.DiffuseMaterial>, <xref:System.Windows.Media.Media3D.SpecularMaterial>, and <xref:System.Windows.Media.Media3D.EmissiveMaterial> provide distinctly different effects, it's useful to combine them.  For example, you might choose to apply a complex texture to a mesh using DiffuseMaterial, while adding a highlighting effect with a SpecularMaterial on the same mesh.  MaterialGroup allows you to treat these Materials as a single texture for convenience.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following excerpt shows a <xref:System.Windows.Media.Media3D.MaterialGroup>.  
-  
- [!code-xml[hittest3d#_MIL3D_HitTest3D_xaml_n1](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/MyApp.xaml#_mil3d_hittest3d_xaml_n1)]  
-  
+The following excerpt shows a <xref:System.Windows.Media.Media3D.MaterialGroup>.  
+ 
+[!code-xml[hittest3d#_MIL3D_HitTest3D_xaml_n1](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/MyApp.xaml#_mil3d_hittest3d_xaml_n1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,12 +48,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.MaterialGroup" />class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following excerpt shows a MaterialGroup.  
-  
- [!code-xml[hittest3d#_MIL3D_HitTest3D_xaml_n1](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/MyApp.xaml#_mil3d_hittest3d_xaml_n1)]  
-  
+The following excerpt shows a MaterialGroup.  
+ 
+[!code-xml[hittest3d#_MIL3D_HitTest3D_xaml_n1](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/MyApp.xaml#_mil3d_hittest3d_xaml_n1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,25 +76,25 @@
           <see cref="T:System.Windows.Media.Media3D.MaterialCollection" /> that contains the child <see cref="T:System.Windows.Media.Media3D.Material" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Children"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.MaterialGroup.ChildrenProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to add multiple materials to a <xref:System.Windows.Media.Media3D.MaterialGroup>.  
-  
- [!code-csharp[3DGallery_procedural_snip#EmissiveMaterialCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/EmissiveMaterialExample.cs#emissivematerialcodeexampleinline1)]
- [!code-vb[3DGallery_procedural_snip#EmissiveMaterialCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/emissivematerialexample.vb#emissivematerialcodeexampleinline1)]  
-  
+The following example shows how to add multiple materials to a <xref:System.Windows.Media.Media3D.MaterialGroup>.  
+ 
+[!code-csharp[3DGallery_procedural_snip#EmissiveMaterialCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/EmissiveMaterialExample.cs#emissivematerialcodeexampleinline1)]
+[!code-vb[3DGallery_procedural_snip#EmissiveMaterialCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/emissivematerialexample.vb#emissivematerialcodeexampleinline1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

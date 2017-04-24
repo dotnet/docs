@@ -18,22 +18,22 @@
     <summary>A class that represents a syndication element extension.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Both RSS and Atom support protocol extensibility with additional namespace-qualified elements. An XML element not specifically defined in the RSS or Atom specifications can be present at the feed or item level as long as the namespace of that element does not match the root namespace of the enclosing feed. Element extensions can be added to various classes including:  
-  
+Both RSS and Atom support protocol extensibility with additional namespace-qualified elements. An XML element not specifically defined in the RSS or Atom specifications can be present at the feed or item level as long as the namespace of that element does not match the root namespace of the enclosing feed. Element extensions can be added to various classes including:  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationFeed>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationItem>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationCategory>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationPerson>  
-  
+ 
 -   <xref:System.ServiceModel.Syndication.SyndicationLink>  
-  
- The syndication object model makes this extensibility easier using <xref:System.ServiceModel.Syndication.SyndicationElementExtension>, which can be placed in a <xref:System.ServiceModel.Syndication.SyndicationElementExtensionCollection>.  
-  
+ 
+The syndication object model makes this extensibility easier using <xref:System.ServiceModel.Syndication.SyndicationElementExtension>, which can be placed in a <xref:System.ServiceModel.Syndication.SyndicationElementExtensionCollection>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -320,16 +320,16 @@
         <value>The outer name of the element extension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The outer name of the following element extension is `custom`.  
-  
+The outer name of the following element extension is `custom`.  
+ 
 ```  
 <feed xmlns:mg="http://contoso.com">  
 ....<mg:custom> some text </mg:custom>  
 </feed>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,16 +355,16 @@
         <value>The outer namespace of the element extension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The outer namespace of the following custom element is `mg`.  
-  
+The outer namespace of the following custom element is `mg`.  
+ 
 ```  
 <feed xmlns:mg="http://contoso.com">  
-    <mg:custom> some text </mg:custom>  
+   <mg:custom> some text </mg:custom>  
 </feed>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

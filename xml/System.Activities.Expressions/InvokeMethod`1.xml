@@ -130,10 +130,10 @@
         <value>The arguments.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The generic type arguments must only be set if the called method is generic.  
-  
+The generic type arguments must only be set if the called method is generic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>The method name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The invoked method must be declared as public.  
-  
+The invoked method must be declared as public.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <value>The parameter collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The parameters must be added to the collection in the same order that they appear in the method signature. Parameters cannot be named `TargetObject` or `Result`.  
-  
+The parameters must be added to the collection in the same order that they appear in the method signature. Parameters cannot be named `TargetObject` or `Result`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,10 +257,10 @@
         <value>The target object type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This parameter must only be set if the invoked method is static.  
-  
+This parameter must only be set if the invoked method is static.  
+ 
  ]]></format>
         </remarks>
       </Docs>

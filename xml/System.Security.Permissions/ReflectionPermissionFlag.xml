@@ -22,32 +22,32 @@
     <summary>Specifies the permitted use of the <see cref="N:System.Reflection" /> and <see cref="N:System.Reflection.Emit" /> namespaces.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by the <xref:System.Security.Permissions.ReflectionPermission> and <xref:System.Security.Permissions.ReflectionPermissionAttribute> classes. If no <xref:System.Security.Permissions.ReflectionPermission> is granted, reflection is allowed on all types and members, but invocation operations are allowed only on visible types and members. For more information, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
-  
+This enumeration is used by the <xref:System.Security.Permissions.ReflectionPermission> and <xref:System.Security.Permissions.ReflectionPermissionAttribute> classes. If no <xref:System.Security.Permissions.ReflectionPermission> is granted, reflection is allowed on all types and members, but invocation operations are allowed only on visible types and members. For more information, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
+ 
 > [!CAUTION]
 >  Because <xref:System.Security.Permissions.ReflectionPermission> can provide access to private class members, we recommend that you grant <xref:System.Security.Permissions.ReflectionPermission> to Internet code only with the RestrictedMemberAccess flag, and not with any other flags.  
-  
- The RestrictedMemberAccess flag is introduced in the [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)]. To use this flag, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
+The RestrictedMemberAccess flag is introduced in the [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)]. To use this flag, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
 > [!IMPORTANT]
 >  AllFlags does not include the RestrictedMemberAccess flag. To get a mask that includes all flags in this enumeration, you must use the combination of AllFlags with RestrictedMemberAccess.  
+ 
+Starting with the [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)], the ReflectionEmit flag is no longer required to emit code, unless debug symbols are emitted. To use this feature, your application should target the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] or later.  
+ 
+Starting with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the TypeInformation flag is no longer required to reflect on nonpublic types and members; the flag has been marked obsolete.  
+ 
   
- Starting with the [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)], the ReflectionEmit flag is no longer required to emit code, unless debug symbols are emitted. To use this feature, your application should target the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] or later.  
-  
- Starting with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the TypeInformation flag is no longer required to reflect on nonpublic types and members; the flag has been marked obsolete.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Security.Permissions.ReflectionPermissionFlag> enumeration to initialize a new instance of the <xref:System.Security.Permissions.ReflectionPermission> class that represents the right to perform restricted member access. This example is part of a larger example that is provided for the <xref:System.Security.Permissions.ReflectionPermission> class.  
-  
- For an example that shows how to use the RestrictedMemberAccess flag with Internet code, see [Walkthrough: Emitting Code in Partial Trust Scenarios](~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md).  
-  
- [!code-csharp[System.Security.Permissions.ReflectionPermission#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/CS/reflectionpermission.cs#8)]
- [!code-vb[System.Security.Permissions.ReflectionPermission#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/VB/reflectionpermission.vb#8)]  
-  
+The following example shows how to use the <xref:System.Security.Permissions.ReflectionPermissionFlag> enumeration to initialize a new instance of the <xref:System.Security.Permissions.ReflectionPermission> class that represents the right to perform restricted member access. This example is part of a larger example that is provided for the <xref:System.Security.Permissions.ReflectionPermission> class.  
+ 
+For an example that shows how to use the RestrictedMemberAccess flag with Internet code, see [Walkthrough: Emitting Code in Partial Trust Scenarios](~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md).  
+ 
+[!code-csharp[System.Security.Permissions.ReflectionPermission#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/CS/reflectionpermission.cs#8)]
+[!code-vb[System.Security.Permissions.ReflectionPermission#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/VB/reflectionpermission.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,25 +14,25 @@
     <summary>Displays a message window, also known as a dialog box, which presents a message to the user. It is a modal window, blocking other actions in the application until the user closes it. A <see cref="T:System.Windows.Forms.MessageBox" /> can contain text, buttons, and symbols that inform and instruct the user.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create a new instance of the <xref:System.Windows.Forms.MessageBox> class. To display a message box, call the `static` method <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. The title, message, buttons, and icons displayed in the message box are determined by parameters that you pass to this method.  
+You cannot create a new instance of the <xref:System.Windows.Forms.MessageBox> class. To display a message box, call the `static` method <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. The title, message, buttons, and icons displayed in the message box are determined by parameters that you pass to this method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use a <xref:System.Windows.Forms.MessageBox> to inform the user of a missing entry in a <xref:System.Windows.Forms.TextBox>. This example requires that the method is called from an existing form with a <xref:System.Windows.Forms.TextBox> named **ServerName** on it.  
-  
- [!code-cpp[MessageBox.Show Variations#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#1)]
- [!code-csharp[MessageBox.Show Variations#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#1)]
- [!code-vb[MessageBox.Show Variations#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#1)]  
-  
- The following code example shows how to ask the user a yes or no question and make a decision based on the response.  
-  
- [!code-cpp[Classic MessageBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic MessageBox Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MessageBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic MessageBox Example/CS/source.cs#1)]
- [!code-vb[Classic MessageBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic MessageBox Example/VB/source.vb#1)]  
-  
+The following code example shows how to use a <xref:System.Windows.Forms.MessageBox> to inform the user of a missing entry in a <xref:System.Windows.Forms.TextBox>. This example requires that the method is called from an existing form with a <xref:System.Windows.Forms.TextBox> named **ServerName** on it.  
+ 
+[!code-cpp[MessageBox.Show Variations#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#1)]
+[!code-csharp[MessageBox.Show Variations#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#1)]
+[!code-vb[MessageBox.Show Variations#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#1)]  
+ 
+The following code example shows how to ask the user a yes or no question and make a decision based on the response.  
+ 
+[!code-cpp[Classic MessageBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic MessageBox Example/CPP/source.cpp#1)]
+[!code-csharp[Classic MessageBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic MessageBox Example/CS/source.cs#1)]
+[!code-vb[Classic MessageBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic MessageBox Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,18 +58,18 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the message box displays an **OK** button. The message box does not contain a caption in the title.  
+By default, the message box displays an **OK** button. The message box does not contain a caption in the title.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays a simple message box.  
-  
- [!code-csharp[MessageBox.Show Variations#6](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#6)]
- [!code-vb[MessageBox.Show Variations#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#6)]  
-  
+The following code example displays a simple message box.  
+ 
+[!code-csharp[MessageBox.Show Variations#6](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#6)]
+[!code-vb[MessageBox.Show Variations#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
@@ -98,10 +98,10 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the message box displays an **OK** button.  
-  
+By default, the message box displays an **OK** button.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
@@ -130,12 +130,12 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- By default, the message box displays an **OK** button. The message box does not contain a caption in the title.  
-  
+You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+By default, the message box displays an **OK** button. The message box does not contain a caption in the title.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
@@ -166,19 +166,19 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can have a maximum of three buttons on the message box.  
+You can have a maximum of three buttons on the message box.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cpp[MessageBox.Show Variations#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#1)]
- [!code-csharp[MessageBox.Show Variations#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#1)]
- [!code-vb[MessageBox.Show Variations#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ 
+[!code-cpp[MessageBox.Show Variations#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#1)]
+[!code-csharp[MessageBox.Show Variations#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#1)]
+[!code-vb[MessageBox.Show Variations#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="buttons" /> parameter specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
@@ -211,12 +211,12 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- By default, the message box displays an **OK** button.  
-  
+You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+By default, the message box displays an **OK** button.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
@@ -249,19 +249,19 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can have a maximum of three buttons on the message box.  
+You can have a maximum of three buttons on the message box.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates one of the <xref:System.Windows.Forms.MessageBox.Show%2A> methods when handling the <xref:System.Windows.Forms.ComboBox.DropDown?displayProperty=fullName> event. To run the example, paste the following code in a form and call the `InitializeComboBox` method from the form's constructor or `Load` method.  
-  
- [!code-cpp[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/CPP/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/VB/form1.vb#2)]  
-  
+The following code example demonstrates one of the <xref:System.Windows.Forms.MessageBox.Show%2A> methods when handling the <xref:System.Windows.Forms.ComboBox.DropDown?displayProperty=fullName> event. To run the example, paste the following code in a form and call the `InitializeComboBox` method from the form's constructor or `Load` method.  
+ 
+[!code-cpp[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/CPP/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="buttons" /> parameter specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
@@ -300,21 +300,21 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+You can have a maximum of three buttons on the message box.  
+ 
   
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cpp[MessageBox.Show Variations#5](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#5)]
- [!code-csharp[MessageBox.Show Variations#5](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#5)]
- [!code-vb[MessageBox.Show Variations#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#5)]  
-  
+The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ 
+[!code-cpp[MessageBox.Show Variations#5](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#5)]
+[!code-csharp[MessageBox.Show Variations#5](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#5)]
+[!code-vb[MessageBox.Show Variations#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -352,19 +352,19 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can have a maximum of three buttons on the message box.  
+You can have a maximum of three buttons on the message box.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cpp[MessageBox.Show Variations#3](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#3)]
- [!code-csharp[MessageBox.Show Variations#3](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#3)]
- [!code-vb[MessageBox.Show Variations#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#3)]  
-  
+The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ 
+[!code-cpp[MessageBox.Show Variations#3](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#3)]
+[!code-csharp[MessageBox.Show Variations#3](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#3)]
+[!code-vb[MessageBox.Show Variations#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -410,21 +410,21 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+You can have a maximum of three buttons on the message box.  
+ 
   
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cpp[MessageBox.Show Variations#4](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#4)]
- [!code-csharp[MessageBox.Show Variations#4](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#4)]
- [!code-vb[MessageBox.Show Variations#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#4)]  
-  
+The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ 
+[!code-cpp[MessageBox.Show Variations#4](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#4)]
+[!code-csharp[MessageBox.Show Variations#4](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#4)]
+[!code-vb[MessageBox.Show Variations#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -468,19 +468,19 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can have a maximum of three buttons on the message box.  
+You can have a maximum of three buttons on the message box.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. The example uses the <xref:System.Windows.Forms.MessageBoxOptions> member of the <xref:System.Windows.Forms.MessageBoxOptions> enumeration to align the text to the right edge of the dialog box. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
- [!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
- [!code-vb[MessageBox.Show Variations#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#2)]  
-  
+The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. The example uses the <xref:System.Windows.Forms.MessageBoxOptions> member of the <xref:System.Windows.Forms.MessageBoxOptions> enumeration to align the text to the right edge of the dialog box. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ 
+[!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
+[!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
+[!code-vb[MessageBox.Show Variations#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -534,21 +534,21 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+You can have a maximum of three buttons on the message box.  
+ 
   
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
- [!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
- [!code-vb[MessageBox.Show Variations#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#2)]  
-  
+The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ 
+[!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
+[!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
+[!code-vb[MessageBox.Show Variations#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -599,24 +599,24 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+When the user clicks the Help button, the form that owns the message box (or the active form) receives the <xref:System.Windows.Forms.Control.HelpRequested> event. Handle the <xref:System.Windows.Forms.Control.HelpRequested> event to perform custom Help actions.  
+ 
   
- When the user clicks the Help button, the form that owns the message box (or the active form) receives the <xref:System.Windows.Forms.Control.HelpRequested> event. Handle the <xref:System.Windows.Forms.Control.HelpRequested> event to perform custom Help actions.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a message box with a Help button, handle the <xref:System.Windows.Forms.Control.HelpRequested?displayProperty=fullName> event, and show a custom help window in response to the event.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
+The following code example demonstrates how to show a message box with a Help button, handle the <xref:System.Windows.Forms.Control.HelpRequested?displayProperty=fullName> event, and show a custom help window in response to the event.  
+ 
+[!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.MessageBox with Help#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#2)]
 [!code-csharp[System.Windows.Forms.MessageBox with Help#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#2)]
 [!code-vb[System.Windows.Forms.MessageBox with Help#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#2)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -672,26 +672,26 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+When the user clicks Help button, the Help file specified in the `helpFilePath` parameter is opened. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
+ 
+The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+ 
   
- When the user clicks Help button, the Help file specified in the `helpFilePath` parameter is opened. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
+The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened. The example requires that the `Mspaint.chm` Help file is installed.  
+ 
+[!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.MessageBox with Help#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#3)]
 [!code-csharp[System.Windows.Forms.MessageBox with Help#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#3)]
 [!code-vb[System.Windows.Forms.MessageBox with Help#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#3)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -749,21 +749,21 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+You can have a maximum of three buttons on the message box.  
+ 
   
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
- [!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
- [!code-vb[MessageBox.Show Variations#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#2)]  
-  
+The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ 
+[!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
+[!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
+[!code-vb[MessageBox.Show Variations#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MessageBox.Show Variations/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -825,24 +825,24 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help keyword topic identified by the `keyword` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
+ 
   
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help keyword topic identified by the `keyword` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the topic identified by the `mspaint.chm::/paint_brush.htm` keyword is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
+The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the topic identified by the `mspaint.chm::/paint_brush.htm` keyword is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
+ 
+[!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.MessageBox with Help#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#9)]
 [!code-csharp[System.Windows.Forms.MessageBox with Help#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#9)]
 [!code-vb[System.Windows.Forms.MessageBox with Help#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#9)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -902,28 +902,28 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+When the user clicks the Help button, the help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
+ 
+Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+ 
+The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+ 
   
- When the user clicks the Help button, the help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
+The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
+ 
+[!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.MessageBox with Help#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#5)]
 [!code-csharp[System.Windows.Forms.MessageBox with Help#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#5)]
 [!code-vb[System.Windows.Forms.MessageBox with Help#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#5)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -983,26 +983,26 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner.  
+A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner.  
+ 
+When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
+ 
+The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+ 
   
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a message box that parented to the main form. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
+The following code example demonstrates how to show a message box that parented to the main form. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened. The example requires that the `Mspaint.chm` Help file is installed.  
+ 
+[!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.MessageBox with Help#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#4)]
 [!code-csharp[System.Windows.Forms.MessageBox with Help#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#4)]
 [!code-vb[System.Windows.Forms.MessageBox with Help#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#4)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -1064,30 +1064,30 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
+ 
+When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
+ 
+Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+ 
+You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator>, this value should reference an object that contains the numeric value of the topic to display.  
+ 
+The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+ 
   
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
-  
- You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator>, this value should reference an object that contains the numeric value of the topic to display.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab and the topic identified by the `ovals` keyword are displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
+The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab and the topic identified by the `ovals` keyword are displayed. The example requires that the `Mspaint.chm` Help file is installed.  
+ 
+[!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.MessageBox with Help#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#7)]
 [!code-csharp[System.Windows.Forms.MessageBox with Help#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#7)]
 [!code-vb[System.Windows.Forms.MessageBox with Help#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#7)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -1149,24 +1149,24 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level owner.  
+A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level owner.  
+ 
+When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help keyword topic identified by the `keyword` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
+ 
   
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help keyword topic identified by the `keyword` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a message box parented to the main window. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the topic identified by the `mspaint.chm::/paint_brush.htm` keyword is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
+The following code example demonstrates how to show a message box parented to the main window. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the topic identified by the `mspaint.chm::/paint_brush.htm` keyword is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
+ 
+[!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.MessageBox with Help#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#10)]
 [!code-csharp[System.Windows.Forms.MessageBox with Help#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#10)]
 [!code-vb[System.Windows.Forms.MessageBox with Help#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#10)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -1228,28 +1228,28 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner.  
+A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner.  
+ 
+When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
+ 
+Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+ 
+The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+ 
   
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a message box parented to the main window. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
+The following code example demonstrates how to show a message box parented to the main window. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
+ 
+[!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.MessageBox with Help#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#6)]
 [!code-csharp[System.Windows.Forms.MessageBox with Help#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#6)]
 [!code-vb[System.Windows.Forms.MessageBox with Help#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#6)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -1313,30 +1313,30 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner.  
+A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner.  
+ 
+When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
+ 
+Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+ 
+You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator>, this value should reference an object that contains the numeric value of the topic to display.  
+ 
+The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+ 
   
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
-  
- You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator>, this value should reference an object that contains the numeric value of the topic to display.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to show a message box parented to the main window. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab and the topic identified by the `ovals` keyword are displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
+The following code example demonstrates how to show a message box parented to the main window. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab and the topic identified by the `ovals` keyword are displayed. The example requires that the `Mspaint.chm` Help file is installed.  
+ 
+[!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#1)]  
 [!code-cpp[System.Windows.Forms.MessageBox with Help#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#8)]
 [!code-csharp[System.Windows.Forms.MessageBox with Help#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#8)]
 [!code-vb[System.Windows.Forms.MessageBox with Help#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/VB/form1.vb#8)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">

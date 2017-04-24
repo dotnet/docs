@@ -52,10 +52,10 @@
         <value>The bitmap suffix.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The bitmap suffix is appended to the file name before the extension. For example, with a bitmap suffix of ".test.1.0", a <xref:System.Drawing.ToolboxBitmapAttribute> reference to "my.bmp" is interpreted as "my.test.1.0.bmp".  
-  
+The bitmap suffix is appended to the file name before the extension. For example, with a bitmap suffix of ".test.1.0", a <xref:System.Drawing.ToolboxBitmapAttribute> reference to "my.bmp" is interpreted as "my.test.1.0.bmp".  
+ 
  ]]></format>
         </remarks>
       </Docs>

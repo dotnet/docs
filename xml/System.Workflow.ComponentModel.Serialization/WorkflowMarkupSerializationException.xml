@@ -14,14 +14,14 @@
     <summary>The exception that is thrown by methods that perform serialization and deserialization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException> includes information about the line and column locations that caused the exception to be thrown.  
-  
+ 
+<xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException> includes information about the line and column locations that caused the exception to be thrown.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -167,10 +167,10 @@
         <summary>Sets the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During de-serialization, the exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
-  
+<xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During de-serialization, the exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>

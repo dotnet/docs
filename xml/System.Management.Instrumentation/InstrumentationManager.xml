@@ -16,19 +16,19 @@
  Note: the WMI .NET libraries are now considered in final state, and no further development, enhancements, or updates will be available for non-security related issues affecting these libraries. The [MI APIs](https://msdn.microsoft.com/en-us/library/jj152383%28v=vs.80%29.aspx) should be used for all new development.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Decoupled providers are hosted by an application. Two methods can be used by the application to make instances of WMI classes available: publish/revoke or the callback method. The callback method uses the <xref:System.Management.Instrumentation.InstrumentationManager.RegisterType%2A> and <xref:System.Management.Instrumentation.InstrumentationManager.UnregisterType%2A> methods.  
+Decoupled providers are hosted by an application. Two methods can be used by the application to make instances of WMI classes available: publish/revoke or the callback method. The callback method uses the <xref:System.Management.Instrumentation.InstrumentationManager.RegisterType%2A> and <xref:System.Management.Instrumentation.InstrumentationManager.UnregisterType%2A> methods.  
+ 
+In the publish/revoke model, the WMI infrastructure provides default behavior for many of the methods you have to write yourself in the callback method. These include the enumeration and bind methods. In this model, the application creates instances and publishes them. The application is responsible for ensuring that the key properties of the classes are respected. The application is also responsible for deleting instances.  
+ 
+In the callback model, the WMI infrastructure expects the application to have methods that handle enumeration, binding and any other methods required to implement the functionality of the provider. It calls into the application for this functionality and fails if it does not exist or is not implemented properly. The application registers the type of its WMI classes with the infrastructure by calling <xref:System.Management.Instrumentation.InstrumentationManager.RegisterType%2A> and indicates that it no longer wants the WMI classes exposed by calling <xref:System.Management.Instrumentation.InstrumentationManager.UnregisterType%2A>.  
+ 
   
- In the publish/revoke model, the WMI infrastructure provides default behavior for many of the methods you have to write yourself in the callback method. These include the enumeration and bind methods. In this model, the application creates instances and publishes them. The application is responsible for ensuring that the key properties of the classes are respected. The application is also responsible for deleting instances.  
-  
- In the callback model, the WMI infrastructure expects the application to have methods that handle enumeration, binding and any other methods required to implement the functionality of the provider. It calls into the application for this functionality and fails if it does not exist or is not implemented properly. The application registers the type of its WMI classes with the infrastructure by calling <xref:System.Management.Instrumentation.InstrumentationManager.RegisterType%2A> and indicates that it no longer wants the WMI classes exposed by calling <xref:System.Management.Instrumentation.InstrumentationManager.UnregisterType%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the publish/revoke model. Two instances of the router class are created and published. They are later revoked.  
-  
+The following example demonstrates how to use the publish/revoke model. Two instances of the router class are created and published. They are later revoked.  
+ 
 ```  
 public class Sample_InstanceProvider  
 {  
@@ -47,19 +47,19 @@ return 0;
 }  
 }  
 ```  
-  
- In the next example, the callback method of registration is used to expose the RouterNew class.  
-  
+ 
+In the next example, the callback method of registration is used to expose the RouterNew class.  
+ 
 ```  
 public int MainNew(string[] args)   
 {  
-    InstrumentationManager.RegisterType(typeof(RouterNew));  
-    // ....  
-    InstrumentationManager.UnRegisterType(typeof(RouterNew));  
-    return 0;  
+   InstrumentationManager.RegisterType(typeof(RouterNew));  
+   // ....  
+   InstrumentationManager.UnRegisterType(typeof(RouterNew));  
+   return 0;  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -126,17 +126,17 @@ public int MainNew(string[] args)
         <summary>Registers a class with the WMI infrastructure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
-  
+ 
 ```  
 static int Main(string[] args)  
 {  
-   InstrumentationManager.RegisterType(typeof(MySampleProvider));  
-   return 0;  
+  InstrumentationManager.RegisterType(typeof(MySampleProvider));  
+  return 0;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

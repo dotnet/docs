@@ -13,30 +13,30 @@
     <summary>Specifies the different access rights (or levels of access) for printing objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The access rights that are available at each level of access vary according to the following:  
-  
+The access rights that are available at each level of access vary according to the following:  
+ 
 -   Whether the print server is a computer or a print server appliance.  
-  
+ 
 -   The operating system that is used.  
-  
+ 
 -   The security updates that are installed.  
-  
+ 
 -   The security policies that are supported.  
+ 
+For this reason, access right descriptions in the "Members" section are typical of the rights that will correspond to each access level, but the access levels listed may provide more or fewer rights on particular systems.  
+ 
+These values are primarily used as parameters for <xref:System.Printing.PrintServer> and <xref:System.Printing.PrintQueue> constructors. The constructors will throw exceptions if you use a value that can apply only to another kind of object. For example, do not pass AdministratePrinter to a <xref:System.Printing.PrintServer> constructor.  
+ 
   
- For this reason, access right descriptions in the "Members" section are typical of the rights that will correspond to each access level, but the access levels listed may provide more or fewer rights on particular systems.  
-  
- These values are primarily used as parameters for <xref:System.Printing.PrintServer> and <xref:System.Printing.PrintQueue> constructors. The constructors will throw exceptions if you use a value that can apply only to another kind of object. For example, do not pass AdministratePrinter to a <xref:System.Printing.PrintServer> constructor.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use this enumeration to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
-  
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
-  
+The following example shows how to use this enumeration to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+ 
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

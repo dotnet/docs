@@ -14,10 +14,10 @@
     <summary>Provides the functionality to throw an exception from the <see cref="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable" /> method if the metadata provided in the table does not match properties, methods, and events on real types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_AttributeTableValidationException#0](WFD_AttributeTableValidationException#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,10 +74,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Metadata.AttributeTableValidationException" /> class that uses a specified serialization store and context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used during serialization to deserialize an exception.  
-  
+This method is used during serialization to deserialize an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>

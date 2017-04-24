@@ -14,15 +14,15 @@
     <summary>Provides the base functionality for creating event providers that send e-mail.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
-  
- The <xref:System.Web.Management.MailWebEventProvider> class is a base class for building providers that monitor Web events and send e-mail for selected events. This class supports the .NET Framework infrastructure and is not intended to be inherited from or used directly from your code.  
-  
+ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ 
+The <xref:System.Web.Management.MailWebEventProvider> class is a base class for building providers that monitor Web events and send e-mail for selected events. This class supports the .NET Framework infrastructure and is not intended to be inherited from or used directly from your code.  
+ 
 > [!NOTE]
 >  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `<healthMonitoring>` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom provider, see [How to: Implement the Health Monitoring Custom Provider Example](http://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c).  
-  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -50,10 +50,10 @@
         <summary>Sets the initial values for this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called to initialize the <xref:System.Web.Management.EventLogWebEventProvider> with the configuration settings and name as specified in the configuration file.  
-  
+This method is called to initialize the <xref:System.Web.Management.EventLogWebEventProvider> with the configuration settings and name as specified in the configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">No recipients have been assigned in <paramref name="config" />.</exception>
@@ -80,10 +80,10 @@
         <summary>Processes the event passed to the provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the method that ASP.NET health monitoring calls to start the processing of the event.  
-  
+This is the method that ASP.NET health monitoring calls to start the processing of the event.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -112,12 +112,12 @@
         <summary>Removes all events from the provider's buffer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the health-monitoring system when an event buffer flush is required.  
-  
- When the event buffer is flushed, a notification occurs and the entire event buffer is sent to the recipients in as few messages as possible, regardless of the length of time elapsed since the last notification.  
-  
+This method is called by the health-monitoring system when an event buffer flush is required.  
+ 
+When the event buffer is flushed, a notification occurs and the entire event buffer is sent to the recipients in as few messages as possible, regardless of the length of time elapsed since the last notification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -140,10 +140,10 @@
         <summary>Performs tasks associated with shutting down the provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET calls the <xref:System.Web.Management.EventLogWebEventProvider.Shutdown%2A> method when the application domain hosting the Web application terminates. The method is called to perform tasks that will allow the application to end gracefully.  
-  
+ASP.NET calls the <xref:System.Web.Management.EventLogWebEventProvider.Shutdown%2A> method when the application domain hosting the Web application terminates. The method is called to perform tasks that will allow the application to end gracefully.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

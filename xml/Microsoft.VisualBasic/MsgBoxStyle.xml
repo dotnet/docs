@@ -18,10 +18,10 @@
     <summary>Indicates which buttons to display when calling the <see langword="MsgBox" /> function.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
     </remarks>
   </Docs>

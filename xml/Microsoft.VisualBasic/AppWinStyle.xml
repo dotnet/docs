@@ -13,12 +13,12 @@
     <summary>Indicates the window style to use for the invoked program when calling the <see langword="Shell" /> function.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
-  
- The `Style` argument takes the `AppWinStyle` enumeration members.  
-  
+When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
+ 
+The `Style` argument takes the `AppWinStyle` enumeration members.  
+ 
  ]]></format>
     </remarks>
   </Docs>

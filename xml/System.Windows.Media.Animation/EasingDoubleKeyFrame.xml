@@ -14,24 +14,24 @@
     <summary>A class that enables you to associate easing functions with a <see cref="T:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames" /> key frame animation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used as part of a <xref:System.Windows.Media.Animation.DoubleKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> to animate a <xref:System.Double> property value along a set of key frames. This <xref:System.Windows.Media.Animation.DoubleKeyFrame> interpolates between the <xref:System.Double> value of the previous key frame and its own value linearly with an easing function to produce its output value.  
-  
+This class is used as part of a <xref:System.Windows.Media.Animation.DoubleKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> to animate a <xref:System.Double> property value along a set of key frames. This <xref:System.Windows.Media.Animation.DoubleKeyFrame> interpolates between the <xref:System.Double> value of the previous key frame and its own value linearly with an easing function to produce its output value.  
+ 
 <a name="xamlObjectElementUsage_EasingDoubleKeyFrame"></a>   
 ## XAML Object Element Usage  
-  
+ 
 ```  
 <EasingDoubleKeyFrame .../>  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use key frames with easing functions associated with them to create an animation of a rectangle that contracts upward, slows down, then expands downward (as though falling), and then bounces to a stop.  
-  
+The following example shows how to use key frames with easing functions associated with them to create an animation of a rectangle that contracts upward, slows down, then expands downward (as though falling), and then bounces to a stop.  
+ 
 <!-- TODO: review snippet reference  [!CODE [EasingFunctionDoubleKeyFrame#EasingFunctionDoubleKeyFrame](EasingFunctionDoubleKeyFrame#EasingFunctionDoubleKeyFrame)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,18 +129,18 @@
         <returns>The new instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
+Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
-  
- [!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
- [!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
-  
+The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
+ 
+[!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
+[!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,12 +162,12 @@
         <value>The easing function applied to the key frame.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="elementUsage_EasingFunction"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <EasingDoubleKeyFrame>  
   <EasingDoubleKeyFrame.EasingFunction>  
@@ -175,12 +175,12 @@
   </EasingDoubleKeyFrame.EasingFunction>  
 </EasingDoubleKeyFrame  
 ```  
-  
+ 
 <a name="xamlValues_EasingFunction"></a>   
 ## XAML Values  
- *easingFunction*  
- Exactly one object element for an object that derives from <xref:System.Windows.Media.Animation.EasingFunctionBase> and thus implements <xref:System.Windows.Media.Animation.IEasingFunction>.  
-  
+*easingFunction*  
+Exactly one object element for an object that derives from <xref:System.Windows.Media.Animation.EasingFunctionBase> and thus implements <xref:System.Windows.Media.Animation.IEasingFunction>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

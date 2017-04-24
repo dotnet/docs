@@ -19,10 +19,10 @@
     <summary>This exception is thrown by a <see cref="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" /> when general connectivity errors are encountered.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception is the base class for <xref:System.ServiceModel.Persistence.InstanceNotFoundException> and <xref:System.ServiceModel.Persistence.InstanceLockException>.  
-  
+This exception is the base class for <xref:System.ServiceModel.Persistence.InstanceNotFoundException> and <xref:System.ServiceModel.Persistence.InstanceLockException>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

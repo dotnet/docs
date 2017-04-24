@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.GetPageCompletedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The asynchronous operation can be canceled by calling <xref:System.Windows.Documents.DocumentPaginator.CancelAsync%2A>.  
-  
+The asynchronous operation can be canceled by calling <xref:System.Windows.Documents.DocumentPaginator.CancelAsync%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,10 +66,10 @@
         <value>The document page for the page specified in the call to <see cref="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object)" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.GetPageCompletedEventArgs.PageNumber%2A> property identifies the page number of the requested <xref:System.Windows.Documents.GetPageCompletedEventArgs.DocumentPage%2A>.  
-  
+The <xref:System.Windows.Documents.GetPageCompletedEventArgs.PageNumber%2A> property identifies the page number of the requested <xref:System.Windows.Documents.GetPageCompletedEventArgs.DocumentPage%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,10 +91,10 @@
         <value>The page number passed to <see cref="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object)" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.GetPageCompletedEventArgs.DocumentPage%2A> property contains the document page for the requested <xref:System.Windows.Documents.GetPageCompletedEventArgs.PageNumber%2A>.  
-  
+The <xref:System.Windows.Documents.GetPageCompletedEventArgs.DocumentPage%2A> property contains the document page for the requested <xref:System.Windows.Documents.GetPageCompletedEventArgs.PageNumber%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

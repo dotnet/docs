@@ -19,18 +19,18 @@
     <summary>The exception that is thrown when e-mail is sent using an <see cref="T:System.Net.Mail.SmtpClient" /> and cannot be delivered to all recipients.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Mail.SmtpFailedRecipientsException.InnerExceptions%2A> property contains the exceptions received while attempting to send e-mail. The e-mail might have been successfully delivered to some of the recipients.  
+The <xref:System.Net.Mail.SmtpFailedRecipientsException.InnerExceptions%2A> property contains the exceptions received while attempting to send e-mail. The e-mail might have been successfully delivered to some of the recipients.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example resends an e-mail message that was not delivered because a mailbox was busy or unavailable.  
-  
- [!code-cpp[NclMailSync#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#27)]
- [!code-csharp[NclMailSync#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#27)]  
-  
+The following code example resends an e-mail message that was not delivered because a mailbox was busy or unavailable.  
+ 
+[!code-cpp[NclMailSync#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#27)]
+[!code-csharp[NclMailSync#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#27)]  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -105,10 +105,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientsException" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Mail.SmtpFailedRecipientsException> class.  
-  
+This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Mail.SmtpFailedRecipientsException> class.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -246,10 +246,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientsException" /> class from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> instances.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Mail.SmtpFailedRecipientsException> class.  
-  
+This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Mail.SmtpFailedRecipientsException> class.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

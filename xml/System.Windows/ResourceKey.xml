@@ -19,12 +19,12 @@
     <summary>Provides an abstract base class for various resource keys.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides no functionality except to supply a common base class for simple key detection in resource components.  
-  
- Resource keys are either strings or instances of a type. This class provides support for classes that base key values on other object values, where the objects passed in assure uniqueness of the generated resource keys.  
-  
+This class provides no functionality except to supply a common base class for simple key detection in resource components.  
+ 
+Resource keys are either strings or instances of a type. This class provides support for classes that base key values on other object values, where the objects passed in assure uniqueness of the generated resource keys.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <summary>Initializes a new instance of a class derived from <see cref="T:System.Windows.ResourceKey" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that this is the protected constructor of an abstract base class. It can be called only from derived classes.  
-  
+Note that this is the protected constructor of an abstract base class. It can be called only from derived classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

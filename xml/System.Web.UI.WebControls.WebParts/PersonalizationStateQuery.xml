@@ -14,10 +14,10 @@
     <summary>Represents a set of query parameters that can be passed to a personalization provider using the various get and find methods. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used as a parameter value for various get and find methods of a personalization provider, such as <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.FindState%2A> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.GetCountOfState%2A>. The default indexer allows generic access to the query parameters maintained by this object. The three properties that are explicitly exposed by this class, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, are stored using query key values that are the same as the property names of this class. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.Item%2A>.  
-  
+This class is used as a parameter value for various get and find methods of a personalization provider, such as <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.FindState%2A> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.GetCountOfState%2A>. The default indexer allows generic access to the query parameters maintained by this object. The three properties that are explicitly exposed by this class, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, are stored using query key values that are the same as the property names of this class. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.Item%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A instance of this class is used as a parameter value for various get and find methods of a personalization provider, such as <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.FindState%2A> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.GetCountOfState%2A>.  
-  
+A instance of this class is used as a parameter value for various get and find methods of a personalization provider, such as <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.FindState%2A> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.GetCountOfState%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,12 +65,12 @@
         <value>The value of the query parameter indicated by the <paramref name="queryKey" /> parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is the default indexer for the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery> class. It returns the value of the query parameter indicated by `queryKey`. You can use `PersonalizationStateQuery.this["UsernameToMatch"]`, `PersonalizationStateQuery.this["PathToMatch"]` and `PersonalizationStateQuery.this["UserInactiveSinceDate"]` to set the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties, respectively. When these three properties are set in the indexer, they are validated against the proper type.  
-  
- This property returns `null` if `queryKey` does not exist.  
-  
+This property is the default indexer for the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery> class. It returns the value of the query parameter indicated by `queryKey`. You can use `PersonalizationStateQuery.this["UsernameToMatch"]`, `PersonalizationStateQuery.this["PathToMatch"]` and `PersonalizationStateQuery.this["UserInactiveSinceDate"]` to set the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties, respectively. When these three properties are set in the indexer, they are validated against the proper type.  
+ 
+This property returns `null` if `queryKey` does not exist.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -104,10 +104,10 @@
         <value>The path to be used for a query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains a path to match when executing queries. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> contains wildcard characters, they are passed through to the underlying data store. This property can be set to `null`, indicating that a query should not filter based on path. If this property is non-`null`, its value is trimmed.  
-  
+This property contains a path to match when executing queries. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> contains wildcard characters, they are passed through to the underlying data store. This property can be set to `null`, indicating that a query should not filter based on path. If this property is non-`null`, its value is trimmed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,12 +129,12 @@
         <value>The last active date to be used in a query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the value of the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property to filter against. The exact comparison is to include records where the value of <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> is less than or equal to the value of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> property.  
-  
- This property can be set to <xref:System.DateTime.MaxValue>, indicating that a query should not filter based on the last activity date.  
-  
+This property indicates the value of the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property to filter against. The exact comparison is to include records where the value of <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> is less than or equal to the value of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> property.  
+ 
+This property can be set to <xref:System.DateTime.MaxValue>, indicating that a query should not filter based on the last activity date.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <value>The user name to be used in a query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the user name to filter against when executing a query. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> contains wildcard characters, they are passed through to the underlying data store. This property can be set to `null`, indicating that a query should not filter based on the user name. If this property is non-`null`, its value is trimmed.  
-  
+This property represents the user name to filter against when executing a query. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> contains wildcard characters, they are passed through to the underlying data store. This property can be set to `null`, indicating that a query should not filter based on the user name. If this property is non-`null`, its value is trimmed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

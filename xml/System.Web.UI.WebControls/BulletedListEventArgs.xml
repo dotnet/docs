@@ -14,20 +14,20 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.BulletedList.Click" /> event of a <see cref="T:System.Web.UI.WebControls.BulletedList" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a link button in a <xref:System.Web.UI.WebControls.BulletedList> control is clicked.  
+The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a link button in a <xref:System.Web.UI.WebControls.BulletedList> control is clicked.  
+ 
+For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class, see the <xref:System.Web.UI.WebControls.BulletedListEventArgs.%23ctor%2A> constructor.  
+ 
   
- For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class, see the <xref:System.Web.UI.WebControls.BulletedListEventArgs.%23ctor%2A> constructor.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event of a <xref:System.Web.UI.WebControls.BulletedList> control. When a list item is clicked, a message is displayed in a <xref:System.Web.UI.WebControls.Label> on the page.  
-  
- <!-- TODO: review snippet reference [!code-csharp[BulletedListClickEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListClickEvent/CS/bulletedlistclickeventcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BulletedListClickEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListClickEvent/VB/bulletedlistclickeventvb.aspx#1)]  -->  
-  
+The following example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event of a <xref:System.Web.UI.WebControls.BulletedList> control. When a list item is clicked, a message is displayed in a <xref:System.Web.UI.WebControls.Label> on the page.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[BulletedListClickEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListClickEvent/CS/bulletedlistclickeventcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[BulletedListClickEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListClickEvent/VB/bulletedlistclickeventvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,16 +49,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.BulletedListEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class.  
-  
- The following table shows the initial property values for an instance of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class.  
-  
+Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class.  
+ 
+The following table shows the initial property values for an instance of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.BulletedListEventArgs.Index%2A>|The value of the `index` parameter.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,18 +80,18 @@
         <value>The index of the list item in a <see cref="T:System.Web.UI.WebControls.BulletedList" /> control that raised the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to programmatically access the index of the list item in a <xref:System.Web.UI.WebControls.BulletedList> control that raised the event.  
+Use this property to programmatically access the index of the list item in a <xref:System.Web.UI.WebControls.BulletedList> control that raised the event.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event of a <xref:System.Web.UI.WebControls.BulletedList> control. When a list item is clicked, a message is displayed in a <xref:System.Web.UI.WebControls.Label> control on the page.  
-  
- <!-- TODO: review snippet reference [!code-csharp[BulletedListClickEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListClickEvent/CS/bulletedlistclickeventcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BulletedListClickEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListClickEvent/VB/bulletedlistclickeventvb.aspx#1)]  -->  
-  
+The following example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event of a <xref:System.Web.UI.WebControls.BulletedList> control. When a list item is clicked, a message is displayed in a <xref:System.Web.UI.WebControls.Label> control on the page.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[BulletedListClickEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListClickEvent/CS/bulletedlistclickeventcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[BulletedListClickEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListClickEvent/VB/bulletedlistclickeventvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

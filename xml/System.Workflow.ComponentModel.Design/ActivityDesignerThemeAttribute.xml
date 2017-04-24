@@ -22,14 +22,14 @@
     <summary>Specifies the theme class an activity designer uses on the workflow design surface. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Theme classes specify a set of properties that determine the appearance of an activity when it is placed on a workflow design surface. Activity-designer developers can associate a theme class to a designer by declaring a Theme attribute for the designer. The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> class defines the declarative Theme attribute, including the argument that must be passed in the attribute, and all of its properties.  
-  
+ 
+Theme classes specify a set of properties that determine the appearance of an activity when it is placed on a workflow design surface. Activity-designer developers can associate a theme class to a designer by declaring a Theme attribute for the designer. The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> class defines the declarative Theme attribute, including the argument that must be passed in the attribute, and all of its properties.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <value>A string that contains the default theme property settings in XML format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An activity designer can pass an XML string that contains any of its default theme property values to the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute.Xml%2A> property by declaring the property in the Theme attribute.  
-  
+An activity designer can pass an XML string that contains any of its default theme property values to the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute.Xml%2A> property by declaring the property in the Theme attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>

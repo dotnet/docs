@@ -20,15 +20,15 @@
     <summary>The default message handler used by <see cref="T:System.Net.Http.HttpClient" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.HttpClientHandler> class and classes derived from it enable developers to configure a variety of options ranging from proxies to authentication.  
+The <xref:System.Net.Http.HttpClientHandler> class and classes derived from it enable developers to configure a variety of options ranging from proxies to authentication.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Net.Http.HttpClientHandler#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.net.http.httpclienthandler/cs/source.cs#1)]  
-  
+[!code-csharp[System.Net.Http.HttpClientHandler#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.net.http.httpclienthandler/cs/source.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,14 +78,14 @@
           <see langword="true" /> if the if the handler should follow redirection responses; otherwise <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect%2A> to `true` if you want the handler to automatically follow HTTP redirection headers to the new location of the resource. The maximum number of redirections to follow is set by the <xref:System.Net.Http.HttpClientHandler.MaxAutomaticRedirections%2A> property.  
-  
- If <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect%2A> is set to `false`, all HTTP responses with an HTTP status code from 300 to 399 are  returned to the application.  
-  
- The Authorization header is cleared on auto-redirects and the handler automatically tries to re-authenticate to the redirected location. In practice, this means that an application can't put custom authentication information into the Authorization header if it is possible to encounter redirection. Instead, the application must implement and register a custom authentication module.  
-  
+Set <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect%2A> to `true` if you want the handler to automatically follow HTTP redirection headers to the new location of the resource. The maximum number of redirections to follow is set by the <xref:System.Net.Http.HttpClientHandler.MaxAutomaticRedirections%2A> property.  
+ 
+If <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect%2A> is set to `false`, all HTTP responses with an HTTP status code from 300 to 399 are  returned to the application.  
+ 
+The Authorization header is cleared on auto-redirects and the handler automatically tries to re-authenticate to the redirected location. In practice, this means that an application can't put custom authentication information into the Authorization header if it is possible to encounter redirection. Instead, the application must implement and register a custom authentication module.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,12 +209,12 @@
         <value>The cookie container used to store server cookies by the handler.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.HttpClientHandler.CookieContainer%2A> property provides an instance of the <xref:System.Net.CookieContainer> class that contains the cookies associated with this handler.  
-  
- If the <xref:System.Net.Http.HttpClientHandler.UseCookies%2A> property is `true`, the <xref:System.Net.Http.HttpClientHandler.CookieContainer%2A> property represents the cookie container used to store the server cookies. The user can set custom cookies before sending requests using this property. If the  <xref:System.Net.Http.HttpClientHandler.UseCookies%2A> property is false and the user adds cookies to <xref:System.Net.Http.HttpClientHandler.CookieContainer%2A>, cookies are ignored and not sent to the server. Setting the <xref:System.Net.Http.HttpClientHandler.CookieContainer%2A> to `null` will throw an exception.  
-  
+The <xref:System.Net.Http.HttpClientHandler.CookieContainer%2A> property provides an instance of the <xref:System.Net.CookieContainer> class that contains the cookies associated with this handler.  
+ 
+If the <xref:System.Net.Http.HttpClientHandler.UseCookies%2A> property is `true`, the <xref:System.Net.Http.HttpClientHandler.CookieContainer%2A> property represents the cookie container used to store the server cookies. The user can set custom cookies before sending requests using this property. If the  <xref:System.Net.Http.HttpClientHandler.UseCookies%2A> property is false and the user adds cookies to <xref:System.Net.Http.HttpClientHandler.CookieContainer%2A>, cookies are ignored and not sent to the server. Setting the <xref:System.Net.Http.HttpClientHandler.CookieContainer%2A> to `null` will throw an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,12 +294,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpClientHandler" /> and optionally disposes of the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Http.HttpClientHandler> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Http.HttpClientHandler> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,10 +327,10 @@
         <value>The maximum number of redirection responses that the handler follows. The default value is 50.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.HttpClientHandler.MaxAutomaticRedirections%2A> property sets the maximum number of redirections for the request to follow if the <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect%2A> property is `true`.  
-  
+The <xref:System.Net.Http.HttpClientHandler.MaxAutomaticRedirections%2A> property sets the maximum number of redirections for the request to follow if the <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,10 +382,10 @@
         <value>The maximum request content buffer size in bytes. The default value is 2 gigabytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An app can set the <xref:System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize%2A> property to a lower value to limit the size of the request buffer. If the size of the request content is greater than the <xref:System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize%2A> property, an exception is thrown.  
-  
+An app can set the <xref:System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize%2A> property to a lower value to limit the size of the request buffer. If the size of the request content is greater than the <xref:System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize%2A> property, an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -438,14 +438,14 @@
           <see langword="true" /> for the handler to send an HTTP Authorization header with requests after authentication has taken place; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After a client request to a specific <xref:System.Uri> is successfully authenticated, if the <xref:System.Net.Http.HttpClientHandler.PreAuthenticate%2A> property is `true` and credentials are supplied, <xref:System.Net.Http.HttpClientHandler> matches against the credential list supplied in the  <xref:System.Net.Http.HttpClientHandler.Credentials%2A> property. The Authorization header is sent with each request to any <xref:System.Uri> that matches the specific <xref:System.Uri> up to the last forward slash.  
-  
- If the client request to a specific <xref:System.Uri> is not successfully authenticated, the request uses standard authentication procedures.  
-  
- With the exception of the first request, the <xref:System.Net.Http.HttpClientHandler.PreAuthenticate%2A> property indicates whether to send authentication information with subsequent requests to a <xref:System.Uri> that matches the specific <xref:System.Uri> up to the last forward slash without waiting to be challenged by the server.  
-  
+After a client request to a specific <xref:System.Uri> is successfully authenticated, if the <xref:System.Net.Http.HttpClientHandler.PreAuthenticate%2A> property is `true` and credentials are supplied, <xref:System.Net.Http.HttpClientHandler> matches against the credential list supplied in the  <xref:System.Net.Http.HttpClientHandler.Credentials%2A> property. The Authorization header is sent with each request to any <xref:System.Uri> that matches the specific <xref:System.Uri> up to the last forward slash.  
+ 
+If the client request to a specific <xref:System.Uri> is not successfully authenticated, the request uses standard authentication procedures.  
+ 
+With the exception of the first request, the <xref:System.Net.Http.HttpClientHandler.PreAuthenticate%2A> property indicates whether to send authentication information with subsequent requests to a <xref:System.Uri> that matches the specific <xref:System.Uri> up to the last forward slash without waiting to be challenged by the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -497,22 +497,22 @@
         <value>The proxy information used by the handler. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property identifies the <xref:System.Net.WebProxy> object to use to process requests to Internet resources. To specify that no proxy should be used, set the <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A> method.  
-  
- The local computer or application config file may specify that a default proxy be used. If the <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property is specified, then the proxy settings from the <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property override the local computer or application config file and the handler will use the proxy settings specified. If no proxy is specified in a config file and the <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property is unspecified, the handler uses the proxy settings inherited from Internet Explorer on the local computer. If there are no proxy settings in Internet Explorer, the request is sent directly to the server.  
-  
- The <xref:System.Net.Http.HttpClientHandler> class parses a proxy bypass list with wildcard characters inherited from Internet Explorer the same as the bypass list is parsed directly by Internet Explorer. For example, the <xref:System.Net.Http.HttpClientHandler> class will parse a bypass list of "nt*" from Internet Explorer as a regular expression of "nt.\*". So a URL of " http://nt.com" would bypass the proxy using the <xref:System.Net.Http.HttpClientHandler> class and using Internet Explorer.  
-  
- The <xref:System.Net.Http.HttpClientHandler> class supports local proxy bypass. The class considers a destination to be local if any of the following conditions are met:  
-  
+The <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property identifies the <xref:System.Net.WebProxy> object to use to process requests to Internet resources. To specify that no proxy should be used, set the <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A> method.  
+ 
+The local computer or application config file may specify that a default proxy be used. If the <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property is specified, then the proxy settings from the <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property override the local computer or application config file and the handler will use the proxy settings specified. If no proxy is specified in a config file and the <xref:System.Net.Http.HttpClientHandler.Proxy%2A> property is unspecified, the handler uses the proxy settings inherited from Internet Explorer on the local computer. If there are no proxy settings in Internet Explorer, the request is sent directly to the server.  
+ 
+The <xref:System.Net.Http.HttpClientHandler> class parses a proxy bypass list with wildcard characters inherited from Internet Explorer the same as the bypass list is parsed directly by Internet Explorer. For example, the <xref:System.Net.Http.HttpClientHandler> class will parse a bypass list of "nt*" from Internet Explorer as a regular expression of "nt.\*". So a URL of " http://nt.com" would bypass the proxy using the <xref:System.Net.Http.HttpClientHandler> class and using Internet Explorer.  
+ 
+The <xref:System.Net.Http.HttpClientHandler> class supports local proxy bypass. The class considers a destination to be local if any of the following conditions are met:  
+ 
 1.  The destination contains a flat name (no dots in the URL).  
-  
+ 
 2.  The destination contains a loopback address (<xref:System.Net.IPAddress.Loopback> or <xref:System.Net.IPAddress.IPv6Loopback>) or the destination contains an <xref:System.Net.IPAddress> assigned to the local computer.  
-  
+ 
 3.  The domain suffix of the destination matches the local computer's domain suffix (<xref:System.Net.NetworkInformation.IPGlobalProperties.DomainName%2A>).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,10 +554,10 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is does not block. It returns an instance of <xref:System.Threading.Tasks.Task%601> to represent the asynchronous operation. When the operation completes, <xref:System.Threading.Tasks.Task%601.Result%2A> contains the response message.  
-  
+This operation is does not block. It returns an instance of <xref:System.Threading.Tasks.Task%601> to represent the asynchronous operation. When the operation completes, <xref:System.Threading.Tasks.Task%601.Result%2A> contains the response message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
@@ -735,10 +735,10 @@
           <see langword="true" /> if the default credentials are used; otherwise <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set this property to `true` when requests made by the <xref:System.Net.Http.HttpClientHandler> object should, if requested by the server, be authenticated using the credentials of the currently logged on user. For client applications, this is the desired behavior in most scenarios. For middle-tier applications, such as ASP.NET applications, instead of using this property, you would typically set the <xref:System.Net.Http.HttpClientHandler.Credentials%2A> property to the credentials of the client on whose behalf the request is made.  
-  
+Set this property to `true` when requests made by the <xref:System.Net.Http.HttpClientHandler> object should, if requested by the server, be authenticated using the credentials of the currently logged on user. For client applications, this is the desired behavior in most scenarios. For middle-tier applications, such as ASP.NET applications, instead of using this property, you would typically set the <xref:System.Net.Http.HttpClientHandler.Credentials%2A> property to the credentials of the client on whose behalf the request is made.  
+ 
  ]]></format>
         </remarks>
       </Docs>

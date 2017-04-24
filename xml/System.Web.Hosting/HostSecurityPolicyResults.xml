@@ -13,10 +13,10 @@
     <summary>Specifies the type of security policy to apply to an assembly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.HostSecurityPolicyResults> class is used to supply the return value for the <xref:System.Web.Hosting.HostSecurityPolicyResolver.ResolvePolicy%2A> method. Use this method if you want to customize ASP.NET run-time behavior to override the ASP.NET code access security policy. The enumeration value that is returned by the method indicates the type of security policy to use.  
-  
+The <xref:System.Web.Hosting.HostSecurityPolicyResults> class is used to supply the return value for the <xref:System.Web.Hosting.HostSecurityPolicyResolver.ResolvePolicy%2A> method. Use this method if you want to customize ASP.NET run-time behavior to override the ASP.NET code access security policy. The enumeration value that is returned by the method indicates the type of security policy to use.  
+ 
  ]]></format>
     </remarks>
   </Docs>

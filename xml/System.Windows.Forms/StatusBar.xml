@@ -31,27 +31,27 @@
     <summary>Represents a Windows status bar control. Although <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> replaces and adds functionality to the <see cref="T:System.Windows.Forms.StatusBar" /> control of previous versions, <see cref="T:System.Windows.Forms.StatusBar" /> is retained for both backward compatibility and future use if you choose.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, a <xref:System.Windows.Forms.StatusBar> control consists of <xref:System.Windows.Forms.StatusBarPanel> objects, each of which displays text and/or an icon. You can also provide owner-drawn panels to provide custom panels such as a progress bar or a series of images that displays the state of your application. A <xref:System.Windows.Forms.StatusBar> control typically displays information about an object being viewed on a <xref:System.Windows.Forms.Form>, the object's components, or contextual information that relates to that object's operation within your application.  
+Typically, a <xref:System.Windows.Forms.StatusBar> control consists of <xref:System.Windows.Forms.StatusBarPanel> objects, each of which displays text and/or an icon. You can also provide owner-drawn panels to provide custom panels such as a progress bar or a series of images that displays the state of your application. A <xref:System.Windows.Forms.StatusBar> control typically displays information about an object being viewed on a <xref:System.Windows.Forms.Form>, the object's components, or contextual information that relates to that object's operation within your application.  
+ 
+The <xref:System.Windows.Forms.StatusBar> control provides properties that enable you to customize the appearance of the control. If the <xref:System.Windows.Forms.StatusBar> is displayed on a form that can be resized, you can use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A> property to display a sizing grip in the lower-right corner of the form to indicate to users that the form can be resized. The <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property enables you to display panels within your <xref:System.Windows.Forms.StatusBar> or to display only the value of the <xref:System.Windows.Forms.Control.Text%2A> property of the control.  
+ 
+The default <xref:System.Windows.Forms.StatusBar> has no panels. To add panels to a <xref:System.Windows.Forms.StatusBar> you can use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class that is accessible through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property of the control. You can also use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> object provided through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to remove panels from the control and access a specific <xref:System.Windows.Forms.StatusBarPanel> to manipulate the panel.  
+ 
+If you want to determine when a <xref:System.Windows.Forms.StatusBarPanel> object within a <xref:System.Windows.Forms.StatusBar> control is clicked, you can create an event handler for the <xref:System.Windows.Forms.StatusBar.PanelClick> event. To perform owner-draw operations on a panel, you can create an event handler for the <xref:System.Windows.Forms.StatusBar.DrawItem> event. The event data passed to the event handler provides information on the panel to draw and a <xref:System.Drawing.Graphics> object to use to perform drawing tasks.  
+ 
+When you create an instance of <xref:System.Windows.Forms.StatusBar>, the read/write properties are set to initial values. For a list of these values, see the <xref:System.Windows.Forms.StatusBar.%23ctor%2A> constructor.  
+ 
   
- The <xref:System.Windows.Forms.StatusBar> control provides properties that enable you to customize the appearance of the control. If the <xref:System.Windows.Forms.StatusBar> is displayed on a form that can be resized, you can use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A> property to display a sizing grip in the lower-right corner of the form to indicate to users that the form can be resized. The <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property enables you to display panels within your <xref:System.Windows.Forms.StatusBar> or to display only the value of the <xref:System.Windows.Forms.Control.Text%2A> property of the control.  
-  
- The default <xref:System.Windows.Forms.StatusBar> has no panels. To add panels to a <xref:System.Windows.Forms.StatusBar> you can use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class that is accessible through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property of the control. You can also use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> object provided through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to remove panels from the control and access a specific <xref:System.Windows.Forms.StatusBarPanel> to manipulate the panel.  
-  
- If you want to determine when a <xref:System.Windows.Forms.StatusBarPanel> object within a <xref:System.Windows.Forms.StatusBar> control is clicked, you can create an event handler for the <xref:System.Windows.Forms.StatusBar.PanelClick> event. To perform owner-draw operations on a panel, you can create an event handler for the <xref:System.Windows.Forms.StatusBar.DrawItem> event. The event data passed to the event handler provides information on the panel to draw and a <xref:System.Drawing.Graphics> object to use to perform drawing tasks.  
-  
- When you create an instance of <xref:System.Windows.Forms.StatusBar>, the read/write properties are set to initial values. For a list of these values, see the <xref:System.Windows.Forms.StatusBar.%23ctor%2A> constructor.  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel>, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example requires that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CPP/form1.cpp#1)]
- [!code-csharp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CS/form1.cs#1)]
- [!code-vb[StatusBar and StatusBarPanel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/VB/form1.vb#1)]  
-  
+The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel>, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example requires that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CPP/form1.cpp#1)]
+[!code-csharp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CS/form1.cs#1)]
+[!code-vb[StatusBar and StatusBarPanel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,31 +70,31 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBar" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.Windows.Forms.StatusBar> has no panels.  
-  
- When you create an instance of <xref:System.Windows.Forms.StatusBar>, the following read/write properties are set to initial values.  
-  
+The default <xref:System.Windows.Forms.StatusBar> has no panels.  
+ 
+When you create an instance of <xref:System.Windows.Forms.StatusBar>, the following read/write properties are set to initial values.  
+ 
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.Windows.Forms.Control.Dock%2A>|<xref:System.Windows.Forms.DockStyle>|  
 |<xref:System.Windows.Forms.StatusBar.ShowPanels%2A>|`false`|  
 |<xref:System.Windows.Forms.StatusBar.SizingGrip%2A>|`true`|  
+ 
+You can change the value for any of these properties through a separate call to the property.  
+ 
   
- You can change the value for any of these properties through a separate call to the property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a <xref:System.Windows.Forms.StatusBar> and use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
-  
- To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
-  
- [!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to construct a <xref:System.Windows.Forms.StatusBar> and use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
+ 
+To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
+ 
+[!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <value>The <see cref="T:System.Drawing.Color" /> that is the background color of the control</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an ambient property and will always return a non-null value. This property is not relevant for this class.  
-  
+This is an ambient property and will always return a non-null value. This property is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <value>An <see cref="T:System.Drawing.Image" /> that is the background image for the <see cref="T:System.Windows.Forms.StatusBar" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the background image for a <xref:System.Windows.Forms.StatusBar> has no effect on the appearance of the <xref:System.Windows.Forms.StatusBar> control, therefore it is not shown in the designer or by IntelliSense.  
-  
+Setting the background image for a <xref:System.Windows.Forms.StatusBar> has no effect on the appearance of the <xref:System.Windows.Forms.StatusBar> control, therefore it is not shown in the designer or by IntelliSense.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.StatusBar.BackgroundImage" /> property is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f). This event is not relevant for this class. This event is not relevant for this class.  
-  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f). This event is not relevant for this class. This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,10 +247,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ImageLayout" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.StatusBar.BackgroundImageLayout%2A> has no effect on the appearance of the <xref:System.Windows.Forms.StatusBar> control, therefore it is not shown in the designer or by IntelliSense.  
-  
+Setting the <xref:System.Windows.Forms.StatusBar.BackgroundImageLayout%2A> has no effect on the appearance of the <xref:System.Windows.Forms.StatusBar> control, therefore it is not shown in the designer or by IntelliSense.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.StatusBar.BackgroundImageLayout" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f). This event is not relevant for this class.  
-  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f). This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,10 +340,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As implemented in the <xref:System.Windows.Forms.StatusBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value.  
-  
+As implemented in the <xref:System.Windows.Forms.StatusBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,12 +387,12 @@
         <summary>Disposes of the resources (other than memory) used by the <see cref="T:System.Windows.Forms.StatusBar" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.StatusBar> references. This method invokes the `Dispose` method of each referenced object.  
-  
+This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.StatusBar> references. This method invokes the `Dispose` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -452,10 +452,10 @@
           <see langword="true" /> if the control has a secondary buffer; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property has no effect on the <xref:System.Windows.Forms.StatusBar> control, therefore it is not shown in the designer or by IntelliSense.  
-  
+Setting this property has no effect on the <xref:System.Windows.Forms.StatusBar> control, therefore it is not shown in the designer or by IntelliSense.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -476,21 +476,21 @@
         <summary>Occurs when a visual aspect of an owner-drawn status bar control changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this event to perform drawing operations in an owner-drawn <xref:System.Windows.Forms.StatusBar> control. For example, if you display an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a progress bar, you can use this event to perform the drawing of the progress bar on the panel. The data provided to the event through the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> object passed as a parameter to the event handler enables you to determine the panel that needs to be drawn and the <xref:System.Drawing.Graphics> to use to draw to the panel. This event is only raised when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.StatusBarPanel> in a <xref:System.Windows.Forms.StatusBar> control is set to <xref:System.Windows.Forms.StatusBarPanelStyle>.  
+You can use this event to perform drawing operations in an owner-drawn <xref:System.Windows.Forms.StatusBar> control. For example, if you display an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a progress bar, you can use this event to perform the drawing of the progress bar on the panel. The data provided to the event through the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> object passed as a parameter to the event handler enables you to determine the panel that needs to be drawn and the <xref:System.Drawing.Graphics> to use to draw to the panel. This event is only raised when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.StatusBarPanel> in a <xref:System.Windows.Forms.StatusBar> control is set to <xref:System.Windows.Forms.StatusBarPanelStyle>.  
+ 
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a custom background and the current date. This example requires that you have connected the <xref:System.Windows.Forms.StatusBar.DrawItem> event of a <xref:System.Windows.Forms.StatusBar> control to the event handler defined in the example.  
-  
- [!code-cpp[StatusBar.DrawItem#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar.DrawItem/CPP/form1.cpp#1)]
- [!code-csharp[StatusBar.DrawItem#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar.DrawItem/CS/form1.cs#1)]
- [!code-vb[StatusBar.DrawItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar.DrawItem/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to create an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a custom background and the current date. This example requires that you have connected the <xref:System.Windows.Forms.StatusBar.DrawItem> event of a <xref:System.Windows.Forms.StatusBar> control to the event handler defined in the example.  
+ 
+[!code-cpp[StatusBar.DrawItem#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar.DrawItem/CPP/form1.cpp#1)]
+[!code-csharp[StatusBar.DrawItem#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar.DrawItem/CS/form1.cs#1)]
+[!code-vb[StatusBar.DrawItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar.DrawItem/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -640,21 +640,21 @@
         <summary>Raises the <see cref="M:System.Windows.Forms.StatusBar.OnDrawItem(System.Windows.Forms.StatusBarDrawItemEventArgs)" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.StatusBar.OnDrawItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
   
- The <xref:System.Windows.Forms.StatusBar.OnDrawItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a custom background and the current date. This example requires that you have connected the <xref:System.Windows.Forms.StatusBar.DrawItem> event of a <xref:System.Windows.Forms.StatusBar> control to the event handler defined in the example.  
-  
- [!code-cpp[StatusBar.DrawItem#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar.DrawItem/CPP/form1.cpp#1)]
- [!code-csharp[StatusBar.DrawItem#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar.DrawItem/CS/form1.cs#1)]
- [!code-vb[StatusBar.DrawItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar.DrawItem/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to create an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a custom background and the current date. This example requires that you have connected the <xref:System.Windows.Forms.StatusBar.DrawItem> event of a <xref:System.Windows.Forms.StatusBar> control to the event handler defined in the example.  
+ 
+[!code-cpp[StatusBar.DrawItem#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar.DrawItem/CPP/form1.cpp#1)]
+[!code-csharp[StatusBar.DrawItem#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar.DrawItem/CS/form1.cs#1)]
+[!code-vb[StatusBar.DrawItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar.DrawItem/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -682,13 +682,13 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
 > [!NOTE]
 >  When overriding <xref:System.Windows.Forms.StatusBar.OnHandleCreated%2A> in a derived class, be sure to call the base class's <xref:System.Windows.Forms.Control.OnHandleCreated%2A> method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -713,10 +713,10 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -744,10 +744,10 @@
         <summary>Raises the <see langword="Layout" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -775,10 +775,10 @@
         <summary>Raises the <see cref="M:System.Windows.Forms.StatusBar.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -806,12 +806,12 @@
         <summary>Raises the <see cref="M:System.Windows.Forms.StatusBar.OnPanelClick(System.Windows.Forms.StatusBarPanelClickEventArgs)" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.StatusBar.OnPanelClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.StatusBar.OnPanelClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -839,10 +839,10 @@
         <summary>Raises the <see cref="M:System.Windows.Forms.StatusBar.OnResize(System.EventArgs)" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+Raising an event invokes the event handler through a delegate. For an overview, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -891,23 +891,23 @@
         <summary>Occurs when a <see cref="T:System.Windows.Forms.StatusBarPanel" /> object on a <see cref="T:System.Windows.Forms.StatusBar" /> control is clicked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this event to perform tasks when a panel within a <xref:System.Windows.Forms.StatusBar> control is clicked. The data provided to the event through the <xref:System.Windows.Forms.StatusBarPanelClickEventArgs> passed as a parameter to the event handler enables you to determine the <xref:System.Windows.Forms.StatusBarPanel> that was clicked by the user in order to perform tasks on the selected panel.  
+You can use this event to perform tasks when a panel within a <xref:System.Windows.Forms.StatusBar> control is clicked. The data provided to the event through the <xref:System.Windows.Forms.StatusBarPanelClickEventArgs> passed as a parameter to the event handler enables you to determine the <xref:System.Windows.Forms.StatusBarPanel> that was clicked by the user in order to perform tasks on the selected panel.  
+ 
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
-  
- To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
-  
- [!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
+ 
+To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
+ 
+[!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -940,19 +940,19 @@
         <value>A <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> containing the <see cref="T:System.Windows.Forms.StatusBarPanel" /> objects of the <see cref="T:System.Windows.Forms.StatusBar" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.StatusBar> control can display a number of panels to provide information to the user of your application. For example, a panel could display the current time or the progress of a file download. Each panel displayed by the <xref:System.Windows.Forms.StatusBar> control is an instance of the <xref:System.Windows.Forms.StatusBarPanel> class. The <xref:System.Windows.Forms.StatusBar.Panels%2A> property enables you to obtain a reference to the collection of <xref:System.Windows.Forms.StatusBarPanel> objects that are currently stored in the <xref:System.Windows.Forms.StatusBar> control. With this reference, you can add panels, remove panels, access a specific panel within the collection, and obtain a count of the panels in the <xref:System.Windows.Forms.StatusBar> control. For more information on the tasks that can be performed with the panel collection, see the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class reference topics.  
+The <xref:System.Windows.Forms.StatusBar> control can display a number of panels to provide information to the user of your application. For example, a panel could display the current time or the progress of a file download. Each panel displayed by the <xref:System.Windows.Forms.StatusBar> control is an instance of the <xref:System.Windows.Forms.StatusBarPanel> class. The <xref:System.Windows.Forms.StatusBar.Panels%2A> property enables you to obtain a reference to the collection of <xref:System.Windows.Forms.StatusBarPanel> objects that are currently stored in the <xref:System.Windows.Forms.StatusBar> control. With this reference, you can add panels, remove panels, access a specific panel within the collection, and obtain a count of the panels in the <xref:System.Windows.Forms.StatusBar> control. For more information on the tasks that can be performed with the panel collection, see the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class reference topics.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel> object, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example requires that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CPP/form1.cpp#1)]
- [!code-csharp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CS/form1.cs#1)]
- [!code-vb[StatusBar and StatusBarPanel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/VB/form1.vb#1)]  
-  
+The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel> object, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example requires that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CPP/form1.cpp#1)]
+[!code-csharp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CS/form1.cs#1)]
+[!code-vb[StatusBar and StatusBarPanel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -980,19 +980,19 @@
           <see langword="true" /> if panels are displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.Windows.Forms.StatusBar> control displays the value of its <xref:System.Windows.Forms.Control.Text%2A> property without any panels. When `ShowPanels` is set to `true`, any <xref:System.Windows.Forms.StatusBarPanel> objects specified in the <xref:System.Windows.Forms.StatusBar> control are displayed. No panels are initially created when you create an instance of the <xref:System.Windows.Forms.StatusBar> class. You can add panels to a <xref:System.Windows.Forms.StatusBar> control by using the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class. This collection class can be accessed through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property of <xref:System.Windows.Forms.StatusBar>.  
+By default, the <xref:System.Windows.Forms.StatusBar> control displays the value of its <xref:System.Windows.Forms.Control.Text%2A> property without any panels. When `ShowPanels` is set to `true`, any <xref:System.Windows.Forms.StatusBarPanel> objects specified in the <xref:System.Windows.Forms.StatusBar> control are displayed. No panels are initially created when you create an instance of the <xref:System.Windows.Forms.StatusBar> class. You can add panels to a <xref:System.Windows.Forms.StatusBar> control by using the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class. This collection class can be accessed through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property of <xref:System.Windows.Forms.StatusBar>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel>, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example requires that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CPP/form1.cpp#1)]
- [!code-csharp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CS/form1.cs#1)]
- [!code-vb[StatusBar and StatusBarPanel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/VB/form1.vb#1)]  
-  
+The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel>, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example requires that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CPP/form1.cpp#1)]
+[!code-csharp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CS/form1.cs#1)]
+[!code-vb[StatusBar and StatusBarPanel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1020,21 +1020,21 @@
           <see langword="true" /> if a sizing grip is displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this property to display a sizing grip to provide an indication to the user when a form is resizable. If the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property of your <xref:System.Windows.Forms.Form> is set to a border style that is not resizable, such as<xref:System.Windows.Forms.FormBorderStyle> or <xref:System.Windows.Forms.FormBorderStyle>, you should set the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A> property to `false` to prevent the user from thinking that the form can be resized.  
+You can use this property to display a sizing grip to provide an indication to the user when a form is resizable. If the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property of your <xref:System.Windows.Forms.Form> is set to a border style that is not resizable, such as<xref:System.Windows.Forms.FormBorderStyle> or <xref:System.Windows.Forms.FormBorderStyle>, you should set the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A> property to `false` to prevent the user from thinking that the form can be resized.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
-  
- To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
-  
- [!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
+ 
+To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+ 
+[!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1085,22 +1085,22 @@
         <value>The text associated with the <see cref="T:System.Windows.Forms.StatusBar" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the text displayed by the control.  
-  
+This property represents the text displayed by the control.  
+ 
 > [!CAUTION]
 >  The <xref:System.Windows.Forms.StatusBar> control displays only the first 127 characters of a string.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.Text%2A> property. To run the example, paste the following code in a form. Call the `InitializeSimpleStatusBar` method in the form's constructor or `Load` method.  
-  
- [!code-cpp[System.Windows.Forms.StatusBarDrawItemEventHandler#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.StatusBarDrawItemEventHandler#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.StatusBarDrawItemEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.Text%2A> property. To run the example, paste the following code in a form. Call the `InitializeSimpleStatusBar` method in the form's constructor or `Load` method.  
+ 
+[!code-cpp[System.Windows.Forms.StatusBarDrawItemEventHandler#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.StatusBarDrawItemEventHandler#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.StatusBarDrawItemEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

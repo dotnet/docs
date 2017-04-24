@@ -21,10 +21,10 @@
     <summary>Indicates a serialization surrogate selector class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Surrogate selectors implement the <xref:System.Runtime.Serialization.ISurrogateSelector> interface to assist formatters in selecting surrogates to delegate to the serialization or deserialization of other objects.  
-  
+Surrogate selectors implement the <xref:System.Runtime.Serialization.ISurrogateSelector> interface to assist formatters in selecting surrogates to delegate to the serialization or deserialization of other objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Specifies the next <see cref="T:System.Runtime.Serialization.ISurrogateSelector" /> for surrogates to examine if the current instance does not have a surrogate for the specified type and assembly in the specified context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
-  
+This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
@@ -96,10 +96,10 @@
         <returns>The next surrogate selector in the chain or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
-  
+This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
@@ -140,10 +140,10 @@
         <returns>The appropriate surrogate for the given type in the given context.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
-  
+This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>

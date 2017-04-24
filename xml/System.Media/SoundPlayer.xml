@@ -23,30 +23,30 @@
     <summary>Controls playback of a sound from a .wav file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Media.SoundPlayer> class provides a simple interface for loading and playing a .wav file. The <xref:System.Media.SoundPlayer> class supports loading a .wav file from a file path, a URL, a <xref:System.IO.Stream> that contains a .wav file, or an embedded resource that contains a .wav file.  
-  
- To play a sound using the <xref:System.Media.SoundPlayer> class, configure a <xref:System.Media.SoundPlayer> with a path to the .wav file and call one of the play methods. You can identify the .wav file to play by using one of the constructors or by setting either the <xref:System.Media.SoundPlayer.SoundLocation%2A> or <xref:System.Media.SoundPlayer.Stream%2A> property. The file can be loaded prior to playing by using one of the load methods, or loading can be deferred until one of the play methods is called. A <xref:System.Media.SoundPlayer> configured to load a .wav file from a <xref:System.IO.Stream> or URL must load the .wav file into memory before playback begins.  
-  
- You can load or play a .wav file synchronously or asynchronously. If you call a synchronous load or play method, the calling thread will wait until the method returns, which may cause painting and other events to be interrupted. Calling an asynchronous load or play method will allow the calling thread to continue without interruption. For more information on asynchronous method calls, see [How to: Run an Operation in the Background](~/docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).  
-  
- When a <xref:System.Media.SoundPlayer> has finished loading a .wav file, it raises the <xref:System.Media.SoundPlayer.LoadCompleted> event. You can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> in your event handler to determine if the load succeeded or failed. The <xref:System.Media.SoundPlayer.SoundLocationChanged> event is raised when the audio source is set to a new file path or URL. The <xref:System.Media.SoundPlayer.StreamChanged> event is raised when the audio source is set to a new <xref:System.IO.Stream>. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- For more information about <xref:System.Media.SoundPlayer>, see [SoundPlayer Class Overview](~/docs/framework/winforms/controls/soundplayer-class-overview.md).  
-  
+The <xref:System.Media.SoundPlayer> class provides a simple interface for loading and playing a .wav file. The <xref:System.Media.SoundPlayer> class supports loading a .wav file from a file path, a URL, a <xref:System.IO.Stream> that contains a .wav file, or an embedded resource that contains a .wav file.  
+ 
+To play a sound using the <xref:System.Media.SoundPlayer> class, configure a <xref:System.Media.SoundPlayer> with a path to the .wav file and call one of the play methods. You can identify the .wav file to play by using one of the constructors or by setting either the <xref:System.Media.SoundPlayer.SoundLocation%2A> or <xref:System.Media.SoundPlayer.Stream%2A> property. The file can be loaded prior to playing by using one of the load methods, or loading can be deferred until one of the play methods is called. A <xref:System.Media.SoundPlayer> configured to load a .wav file from a <xref:System.IO.Stream> or URL must load the .wav file into memory before playback begins.  
+ 
+You can load or play a .wav file synchronously or asynchronously. If you call a synchronous load or play method, the calling thread will wait until the method returns, which may cause painting and other events to be interrupted. Calling an asynchronous load or play method will allow the calling thread to continue without interruption. For more information on asynchronous method calls, see [How to: Run an Operation in the Background](~/docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).  
+ 
+When a <xref:System.Media.SoundPlayer> has finished loading a .wav file, it raises the <xref:System.Media.SoundPlayer.LoadCompleted> event. You can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> in your event handler to determine if the load succeeded or failed. The <xref:System.Media.SoundPlayer.SoundLocationChanged> event is raised when the audio source is set to a new file path or URL. The <xref:System.Media.SoundPlayer.StreamChanged> event is raised when the audio source is set to a new <xref:System.IO.Stream>. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
+For more information about <xref:System.Media.SoundPlayer>, see [SoundPlayer Class Overview](~/docs/framework/winforms/controls/soundplayer-class-overview.md).  
+ 
 > [!NOTE]
 >  The <xref:System.Media.SoundPlayer> class cannot play other file types, such as .wma or .mp3. If you want to play other file types, you can use the Windows Media Player control. For more information, see [Using the Windows Media Player Control in a .NET Framework Solution](http://go.microsoft.com/fwlink/?LinkId=131267) and [Windows Media Player Object Model Reference for Visual Basic .NET and C#](http://go.microsoft.com/fwlink/?LinkId=131269) in the Windows Media Player SDK.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer> class for playing .wav files from a local path or a Uniform Resource Identifier (URI).  
-  
- [!code-cpp[System.Windows.Forms.Sound#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#1)]
- [!code-csharp[System.Windows.Forms.Sound#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#1)]
- [!code-vb[System.Windows.Forms.Sound#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer> class for playing .wav files from a local path or a Uniform Resource Identifier (URI).  
+ 
+[!code-cpp[System.Windows.Forms.Sound#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#1)]
+[!code-csharp[System.Windows.Forms.Sound#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#1)]
+[!code-vb[System.Windows.Forms.Sound#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Media.SoundPlayer" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a <xref:System.Media.SoundPlayer> with no audio source. Until it is configured with an audio source path, the <xref:System.Media.SoundPlayer> will play a beep sound when one of its playback methods is called.  
-  
+This constructor initializes a <xref:System.Media.SoundPlayer> with no audio source. Until it is configured with an audio source path, the <xref:System.Media.SoundPlayer> will play a beep sound when one of its playback methods is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Media.SoundPlayer" /> class, and attaches the .wav file within the specified <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Stream> passed to the `stream` parameter should be a <xref:System.IO.Stream> containing a .wav file. The data returned by the <xref:System.IO.Stream.Read%2A> method of the <xref:System.IO.Stream> should be the data within a .wav file.  
-  
+The <xref:System.IO.Stream> passed to the `stream` parameter should be a <xref:System.IO.Stream> containing a .wav file. The data returned by the <xref:System.IO.Stream.Read%2A> method of the <xref:System.IO.Stream> should be the data within a .wav file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Media.SoundPlayer" /> class, and attaches the specified .wav file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string passed to the `soundLocation` parameter can be either a file path or a URL to a .wav file. If the path or URL is not valid, the <xref:System.Media.SoundPlayer> will still be constructed, but subsequent calls to a load or play method will fail.  
-  
+The string passed to the `soundLocation` parameter can be either a file path or a URL to a .wav file. If the path or URL is not valid, the <xref:System.Media.SoundPlayer> will still be constructed, but subsequent calls to a load or play method will fail.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UriFormatException">The URL value specified by <paramref name="soundLocation" /> cannot be resolved.</exception>
@@ -181,24 +181,24 @@
         <summary>Loads a sound synchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Media.SoundPlayer.Load%2A> method uses the current thread to load a .wav file, preventing the thread from handling other messages until the load is complete.  
-  
+The <xref:System.Media.SoundPlayer.Load%2A> method uses the current thread to load a .wav file, preventing the thread from handling other messages until the load is complete.  
+ 
 > [!CAUTION]
 >  The <xref:System.Media.SoundPlayer.Load%2A> method may produce a delay while loading a large .wav file. In addition, painting and other events will be blocked until the load is completed. Use the <xref:System.Media.SoundPlayer.LoadAsync%2A> method to load a sound asynchronously, which allows the calling thread to continue without interruption.  
+ 
+This method raises the <xref:System.Media.SoundPlayer.LoadCompleted> event when loading completes, even if the load was not successful.  
+ 
   
- This method raises the <xref:System.Media.SoundPlayer.LoadCompleted> event when loading completes, even if the load was not successful.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.LoadAsync%2A> method to attach a .wav file to an instance of the <xref:System.Media.SoundPlayer> class. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
-  
- [!code-cpp[System.Windows.Forms.Sound#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#2)]
- [!code-csharp[System.Windows.Forms.Sound#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#2)]
- [!code-vb[System.Windows.Forms.Sound#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#2)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.LoadAsync%2A> method to attach a .wav file to an instance of the <xref:System.Media.SoundPlayer> class. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
+ 
+[!code-cpp[System.Windows.Forms.Sound#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#2)]
+[!code-csharp[System.Windows.Forms.Sound#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#2)]
+[!code-vb[System.Windows.Forms.Sound#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceProcess.TimeoutException">The elapsed time during loading exceeds the time, in milliseconds, specified by <see cref="P:System.Media.SoundPlayer.LoadTimeout" />.</exception>
@@ -223,25 +223,25 @@
         <summary>Loads a .wav file from a stream or a Web resource using a new thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Media.SoundPlayer> is configured to load a .wav file from a <xref:System.IO.Stream> or Web resource, this method begins loading a .wav file from the location using a new thread.  
+If a <xref:System.Media.SoundPlayer> is configured to load a .wav file from a <xref:System.IO.Stream> or Web resource, this method begins loading a .wav file from the location using a new thread.  
+ 
+This method raises the <xref:System.Media.SoundPlayer.LoadCompleted> event when loading completes, even if the load was not successful.  
+ 
+If a <xref:System.Media.SoundPlayer> is configured to load a .wav file from a local file path, this method does nothing, because loading is deferred until playing begins.  
+ 
+For more information about asynchronous loading, see [How to: Load a Sound Asynchronously within a Windows Form](~/docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md).  
+ 
   
- This method raises the <xref:System.Media.SoundPlayer.LoadCompleted> event when loading completes, even if the load was not successful.  
-  
- If a <xref:System.Media.SoundPlayer> is configured to load a .wav file from a local file path, this method does nothing, because loading is deferred until playing begins.  
-  
- For more information about asynchronous loading, see [How to: Load a Sound Asynchronously within a Windows Form](~/docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.LoadAsync%2A> method to asynchronously load a .wav file for use by an instance of the <xref:System.Media.SoundPlayer> class. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
-  
- [!code-cpp[System.Windows.Forms.Sound#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#3)]
- [!code-csharp[System.Windows.Forms.Sound#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#3)]
- [!code-vb[System.Windows.Forms.Sound#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#3)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.LoadAsync%2A> method to asynchronously load a .wav file for use by an instance of the <xref:System.Media.SoundPlayer> class. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
+ 
+[!code-cpp[System.Windows.Forms.Sound#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#3)]
+[!code-csharp[System.Windows.Forms.Sound#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#3)]
+[!code-vb[System.Windows.Forms.Sound#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceProcess.TimeoutException">The elapsed time during loading exceeds the time, in milliseconds, specified by <see cref="P:System.Media.SoundPlayer.LoadTimeout" />.</exception>
@@ -264,21 +264,21 @@
         <summary>Occurs when a .wav file has been successfully or unsuccessfully loaded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is raised when loading of a .wav file is complete. The event arguments indicate whether the load of the sound was completed successfully or failed.  
+This event is raised when loading of a .wav file is complete. The event arguments indicate whether the load of the sound was completed successfully or failed.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.OnLoadCompleted%2A> event handler to receive a notification indicating that the contents of a .wav file have been loaded. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
-  
- [!code-cpp[System.Windows.Forms.Sound#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#8)]
- [!code-csharp[System.Windows.Forms.Sound#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#8)]
- [!code-vb[System.Windows.Forms.Sound#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#8)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.OnLoadCompleted%2A> event handler to receive a notification indicating that the contents of a .wav file have been loaded. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
+ 
+[!code-cpp[System.Windows.Forms.Sound#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#8)]
+[!code-csharp[System.Windows.Forms.Sound#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#8)]
+[!code-vb[System.Windows.Forms.Sound#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,10 +300,10 @@
         <value>The number of milliseconds to wait. The default is 10000 (10 seconds).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After this time has expired, the loading is canceled and a <xref:System.ServiceProcess.TimeoutException> exception is thrown.  
-  
+After this time has expired, the loading is canceled and a <xref:System.ServiceProcess.TimeoutException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,14 +328,14 @@
         <summary>Raises the <see cref="E:System.Media.SoundPlayer.LoadCompleted" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when loading of a .wav file is complete.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Media.SoundPlayer.OnLoadCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+This method is called when loading of a .wav file is complete.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Media.SoundPlayer.OnLoadCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -363,14 +363,14 @@
         <summary>Raises the <see cref="E:System.Media.SoundPlayer.SoundLocationChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when a new audio source path for this <xref:System.Media.SoundPlayer> has been set.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see How to: Provide Event functionality and [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Media.SoundPlayer.OnSoundLocationChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+This method is called when a new audio source path for this <xref:System.Media.SoundPlayer> has been set.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see How to: Provide Event functionality and [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Media.SoundPlayer.OnSoundLocationChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -398,14 +398,14 @@
         <summary>Raises the <see cref="E:System.Media.SoundPlayer.StreamChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when a new <xref:System.IO.Stream> audio source for this <xref:System.Media.SoundPlayer> has been set.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Media.SoundPlayer.OnStreamChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+This method is called when a new <xref:System.IO.Stream> audio source for this <xref:System.Media.SoundPlayer> has been set.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Media.SoundPlayer.OnStreamChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -430,21 +430,21 @@
         <summary>Plays the .wav file using a new thread, and loads the .wav file first if it has not been loaded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Media.SoundPlayer.Play%2A> method plays the sound using a new thread. If you call <xref:System.Media.SoundPlayer.Play%2A> before the .wav file has been loaded into memory, the .wav file will be loaded before playback starts. You can use the <xref:System.Media.SoundPlayer.LoadAsync%2A> or <xref:System.Media.SoundPlayer.Load%2A> method to load the .wav file to memory in advance. After a .wav file is successfully loaded from a <xref:System.IO.Stream> or URL, future calls to playback methods for the <xref:System.Media.SoundPlayer> will not need to reload the .wav file until the path for the sound changes.  
+The <xref:System.Media.SoundPlayer.Play%2A> method plays the sound using a new thread. If you call <xref:System.Media.SoundPlayer.Play%2A> before the .wav file has been loaded into memory, the .wav file will be loaded before playback starts. You can use the <xref:System.Media.SoundPlayer.LoadAsync%2A> or <xref:System.Media.SoundPlayer.Load%2A> method to load the .wav file to memory in advance. After a .wav file is successfully loaded from a <xref:System.IO.Stream> or URL, future calls to playback methods for the <xref:System.Media.SoundPlayer> will not need to reload the .wav file until the path for the sound changes.  
+ 
+If the .wav file has not been specified or it fails to load, the <xref:System.Media.SoundPlayer.Play%2A> method will play the default beep sound.  
+ 
   
- If the .wav file has not been specified or it fails to load, the <xref:System.Media.SoundPlayer.Play%2A> method will play the default beep sound.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.Play%2A> method to asynchronously play a .wav file. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
-  
- [!code-cpp[System.Windows.Forms.Sound#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#5)]
- [!code-csharp[System.Windows.Forms.Sound#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#5)]
- [!code-vb[System.Windows.Forms.Sound#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#5)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.Play%2A> method to asynchronously play a .wav file. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
+ 
+[!code-cpp[System.Windows.Forms.Sound#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#5)]
+[!code-csharp[System.Windows.Forms.Sound#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#5)]
+[!code-vb[System.Windows.Forms.Sound#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceProcess.TimeoutException">The elapsed time during loading exceeds the time, in milliseconds, specified by <see cref="P:System.Media.SoundPlayer.LoadTimeout" />.</exception>
@@ -471,23 +471,23 @@
         <summary>Plays and loops the .wav file using a new thread, and loads the .wav file first if it has not been loaded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Media.SoundPlayer.PlayLooping%2A> method plays and loops the sound using a new thread. If you call <xref:System.Media.SoundPlayer.PlayLooping%2A> before the .wav file has been loaded into memory, the .wav file will be loaded before playback starts. You can use the <xref:System.Media.SoundPlayer.LoadAsync%2A> or <xref:System.Media.SoundPlayer.Load%2A> method to load the .wav file to memory in advance. After a .wav file is successfully loaded from a <xref:System.IO.Stream> or URL, future calls to playback methods for the <xref:System.Media.SoundPlayer> will not need to reload the .wav file until the path for the sound changes.  
+The <xref:System.Media.SoundPlayer.PlayLooping%2A> method plays and loops the sound using a new thread. If you call <xref:System.Media.SoundPlayer.PlayLooping%2A> before the .wav file has been loaded into memory, the .wav file will be loaded before playback starts. You can use the <xref:System.Media.SoundPlayer.LoadAsync%2A> or <xref:System.Media.SoundPlayer.Load%2A> method to load the .wav file to memory in advance. After a .wav file is successfully loaded from a <xref:System.IO.Stream> or URL, future calls to playback methods for the <xref:System.Media.SoundPlayer> will not need to reload the .wav file until the path for the sound changes.  
+ 
+If the .wav file has not been specified or it fails to load, the <xref:System.Media.SoundPlayer.PlayLooping%2A> method will play the default beep sound.  
+ 
+For more information about <xref:System.Media.SoundPlayer.PlayLooping%2A>, see [How to: Loop a Sound Playing on a Windows Form](~/docs/framework/winforms/controls/how-to-loop-a-sound-playing-on-a-windows-form.md).  
+ 
   
- If the .wav file has not been specified or it fails to load, the <xref:System.Media.SoundPlayer.PlayLooping%2A> method will play the default beep sound.  
-  
- For more information about <xref:System.Media.SoundPlayer.PlayLooping%2A>, see [How to: Loop a Sound Playing on a Windows Form](~/docs/framework/winforms/controls/how-to-loop-a-sound-playing-on-a-windows-form.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.PlayLooping%2A> method to repeatedly play a .wav file. The .wav will be played until the <xref:System.Media.SoundPlayer.Stop%2A> method is called. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
-  
- [!code-cpp[System.Windows.Forms.Sound#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#6)]
- [!code-csharp[System.Windows.Forms.Sound#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#6)]
- [!code-vb[System.Windows.Forms.Sound#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#6)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.PlayLooping%2A> method to repeatedly play a .wav file. The .wav will be played until the <xref:System.Media.SoundPlayer.Stop%2A> method is called. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
+ 
+[!code-cpp[System.Windows.Forms.Sound#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#6)]
+[!code-csharp[System.Windows.Forms.Sound#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#6)]
+[!code-vb[System.Windows.Forms.Sound#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceProcess.TimeoutException">The elapsed time during loading exceeds the time, in milliseconds, specified by <see cref="P:System.Media.SoundPlayer.LoadTimeout" />.</exception>
@@ -514,21 +514,21 @@
         <summary>Plays the .wav file and loads the .wav file first if it has not been loaded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Media.SoundPlayer.PlaySync%2A> method uses the current thread to play a .wav file, preventing the thread from handling other messages until the load is complete. You can use the <xref:System.Media.SoundPlayer.LoadAsync%2A> or <xref:System.Media.SoundPlayer.Load%2A> method to load the .wav file to memory in advance. After a .wav file is successfully loaded from a <xref:System.IO.Stream> or URL, future calls to playback methods for the <xref:System.Media.SoundPlayer> will not need to reload the .wav file until the path for the sound changes.  
+The <xref:System.Media.SoundPlayer.PlaySync%2A> method uses the current thread to play a .wav file, preventing the thread from handling other messages until the load is complete. You can use the <xref:System.Media.SoundPlayer.LoadAsync%2A> or <xref:System.Media.SoundPlayer.Load%2A> method to load the .wav file to memory in advance. After a .wav file is successfully loaded from a <xref:System.IO.Stream> or URL, future calls to playback methods for the <xref:System.Media.SoundPlayer> will not need to reload the .wav file until the path for the sound changes.  
+ 
+If the .wav file has not been specified or it fails to load, the <xref:System.Media.SoundPlayer.PlaySync%2A> method will play the default beep sound.  
+ 
   
- If the .wav file has not been specified or it fails to load, the <xref:System.Media.SoundPlayer.PlaySync%2A> method will play the default beep sound.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.PlaySync%2A> method to synchronously play a .wav file.  
-  
- [!code-cpp[System.Windows.Forms.PlaySync#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PlaySync/CPP/system.windows.forms.sound.playasync.cpp#1)]
- [!code-csharp[System.Windows.Forms.PlaySync#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PlaySync/CS/system.windows.forms.sound.playasync.cs#1)]
- [!code-vb[System.Windows.Forms.PlaySync#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PlaySync/VB/system.windows.forms.sound.playasync.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.PlaySync%2A> method to synchronously play a .wav file.  
+ 
+[!code-cpp[System.Windows.Forms.PlaySync#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PlaySync/CPP/system.windows.forms.sound.playasync.cpp#1)]
+[!code-csharp[System.Windows.Forms.PlaySync#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PlaySync/CS/system.windows.forms.sound.playasync.cs#1)]
+[!code-vb[System.Windows.Forms.PlaySync#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PlaySync/VB/system.windows.forms.sound.playasync.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceProcess.TimeoutException">The elapsed time during loading exceeds the time, in milliseconds, specified by <see cref="P:System.Media.SoundPlayer.LoadTimeout" />.</exception>
@@ -555,19 +555,19 @@
         <value>The file path or URL from which to load a .wav file, or <see cref="F:System.String.Empty" /> if no file path is present. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set to <xref:System.String?displayProperty=fullName> when the <xref:System.Media.SoundPlayer.Stream%2A> property is set to a <xref:System.IO.Stream>.  
+This property is set to <xref:System.String?displayProperty=fullName> when the <xref:System.Media.SoundPlayer.Stream%2A> property is set to a <xref:System.IO.Stream>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.SoundLocation%2A> property to assign the .wav file source to an instance of the <xref:System.Media.SoundPlayer> class. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
-  
- [!code-cpp[System.Windows.Forms.Sound#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#2)]
- [!code-csharp[System.Windows.Forms.Sound#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#2)]
- [!code-vb[System.Windows.Forms.Sound#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#2)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.SoundLocation%2A> property to assign the .wav file source to an instance of the <xref:System.Media.SoundPlayer> class. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
+ 
+[!code-cpp[System.Windows.Forms.Sound#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#2)]
+[!code-csharp[System.Windows.Forms.Sound#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#2)]
+[!code-vb[System.Windows.Forms.Sound#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for finding files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
@@ -589,21 +589,21 @@
         <summary>Occurs when a new audio source path for this <see cref="T:System.Media.SoundPlayer" /> has been set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is raised when a new audio source path for this <xref:System.Media.SoundPlayer> has been set.  
+This event is raised when a new audio source path for this <xref:System.Media.SoundPlayer> has been set.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.OnSoundLocationChanged%2A> event handler to receive a notification when the <xref:System.Media.SoundPlayer> has been attached to a different .wav file. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
-  
- [!code-cpp[System.Windows.Forms.Sound#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#9)]
- [!code-csharp[System.Windows.Forms.Sound#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#9)]
- [!code-vb[System.Windows.Forms.Sound#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#9)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.OnSoundLocationChanged%2A> event handler to receive a notification when the <xref:System.Media.SoundPlayer> has been attached to a different .wav file. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
+ 
+[!code-cpp[System.Windows.Forms.Sound#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#9)]
+[!code-csharp[System.Windows.Forms.Sound#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#9)]
+[!code-vb[System.Windows.Forms.Sound#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -625,14 +625,14 @@
         <summary>Stops playback of the sound if playback is occurring.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.Stop%2A> method to halt a .wav file that is currently playing. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
-  
- [!code-cpp[System.Windows.Forms.Sound#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#7)]
- [!code-csharp[System.Windows.Forms.Sound#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#7)]
- [!code-vb[System.Windows.Forms.Sound#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#7)]  
-  
+The following code example demonstrates the use of the <xref:System.Media.SoundPlayer.Stop%2A> method to halt a .wav file that is currently playing. This code example is part of a larger example provided for the <xref:System.Media.SoundPlayer> class.  
+ 
+[!code-cpp[System.Windows.Forms.Sound#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CPP/soundtestform.cpp#7)]
+[!code-csharp[System.Windows.Forms.Sound#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#7)]
+[!code-vb[System.Windows.Forms.Sound#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
@@ -655,10 +655,10 @@
         <value>A <see cref="T:System.IO.Stream" /> from which to load the .wav file, or <see langword="null" /> if no stream is available. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set to `null` when the <xref:System.Media.SoundPlayer.SoundLocation%2A> property is set to a new and valid sound location.  
-  
+This property is set to `null` when the <xref:System.Media.SoundPlayer.SoundLocation%2A> property is set to a new and valid sound location.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -679,12 +679,12 @@
         <summary>Occurs when a new <see cref="T:System.IO.Stream" /> audio source for this <see cref="T:System.Media.SoundPlayer" /> has been set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is raised when a new <xref:System.IO.Stream> audio source for this <xref:System.Media.SoundPlayer> has been set.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+This event is raised when a new <xref:System.IO.Stream> audio source for this <xref:System.Media.SoundPlayer> has been set.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -711,10 +711,10 @@
         <summary>For a description of this member, see the <see cref="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Media.SoundPlayer> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Media.SoundPlayer> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

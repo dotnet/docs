@@ -34,35 +34,35 @@
     <summary>The exception that is thrown when an I/O error occurs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.IOException> is the base class for exceptions thrown while accessing information using streams, files and directories.  
-  
- The Base Class Library includes the following types, each of which is a derived class of `IOException` :  
-  
+<xref:System.IO.IOException> is the base class for exceptions thrown while accessing information using streams, files and directories.  
+ 
+The Base Class Library includes the following types, each of which is a derived class of `IOException` :  
+ 
 -   <xref:System.IO.DirectoryNotFoundException>  
-  
+ 
 -   <xref:System.IO.EndOfStreamException>  
-  
+ 
 -   <xref:System.IO.FileNotFoundException>  
-  
+ 
 -   <xref:System.IO.FileLoadException>  
-  
+ 
 -   <xref:System.IO.PathTooLongException>  
+ 
+Where appropriate, use these types instead of IOException.  
+ 
+<xref:System.IO.IOException> uses the HRESULT COR_E_IO which has the value 0x80131620.  
+ 
   
- Where appropriate, use these types instead of IOException.  
-  
- <xref:System.IO.IOException> uses the HRESULT COR_E_IO which has the value 0x80131620.  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A?displayProperty=fullName> method.  
-  
- [!code-cpp[System.IO.FileStream3#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#6)]
- [!code-csharp[System.IO.FileStream3#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#6)]
- [!code-vb[System.IO.FileStream3#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#6)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A?displayProperty=fullName> method.  
+ 
+[!code-cpp[System.IO.FileStream3#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#6)]
+[!code-csharp[System.IO.FileStream3#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#6)]
+[!code-vb[System.IO.FileStream3#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,10 +95,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.IOException" /> class with its message string set to the empty string (""), its HRESULT set to COR_E_IO, and its inner exception set to a null reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "An I/O error occurred while performing the requested operation." This message takes into account the current system culture.  
-  
+The constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "An I/O error occurred while performing the requested operation." This message takes into account the current system culture.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.IOException" /> class with its message string set to <paramref name="message" />, its HRESULT set to COR_E_IO, and its inner exception set to <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor initializes the <xref:System.Exception.Message%2A> property of the new instance using `message`.  
-  
+The constructor initializes the <xref:System.Exception.Message%2A> property of the new instance using `message`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,19 +200,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.IOException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.IO.IOException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.IO.IOException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
- For more information on inner exceptions, see <xref:System.Exception.InnerException%2A>.  
-  
+ 
+For more information on inner exceptions, see <xref:System.Exception.InnerException%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

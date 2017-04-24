@@ -53,10 +53,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Security.Permissions.SecurityAttribute" /> with the specified <see cref="T:System.Security.Permissions.SecurityAction" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of this class. You must inherit from this class to make use of its functionality. The value of `action` is used to set the <xref:System.Security.Permissions.SecurityAttribute.Action%2A> property.  
-  
+You cannot create an instance of this class. You must inherit from this class to make use of its functionality. The value of `action` is used to set the <xref:System.Security.Permissions.SecurityAttribute.Action%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,19 +83,19 @@
         <value>One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is inherited by all classes implementing custom attributes for declarative security.  
+This property is inherited by all classes implementing custom attributes for declarative security.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a typical permission that specifies a <xref:System.Security.Permissions.SecurityAction> value. This value will be used to set the <xref:System.Security.Permissions.SecurityAttribute.Action%2A> property.  
-  
- [!code-cpp[Classic FileIOPermissionAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileIOPermissionAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileIOPermissionAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileIOPermissionAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic FileIOPermissionAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileIOPermissionAttribute Example/VB/source.vb#1)]  
-  
+The following code example demonstrates a typical permission that specifies a <xref:System.Security.Permissions.SecurityAction> value. This value will be used to set the <xref:System.Security.Permissions.SecurityAttribute.Action%2A> property.  
+ 
+[!code-cpp[Classic FileIOPermissionAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileIOPermissionAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic FileIOPermissionAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileIOPermissionAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic FileIOPermissionAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileIOPermissionAttribute Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <returns>A serializable permission object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- At compile time, attributes convert security declarations to a serialized form in metadata. Declarative security data in metadata is created from the permission that this method returns that corresponds to this attribute.  
-  
+At compile time, attributes convert security declarations to a serialized form in metadata. Declarative security data in metadata is created from the permission that this method returns that corresponds to this attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,10 +154,10 @@
           <see langword="true" /> if full permission to the protected resource is declared; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is inherited by all classes implementing custom attributes for declarative security.  
-  
+This property is inherited by all classes implementing custom attributes for declarative security.  
+ 
  ]]></format>
         </remarks>
       </Docs>

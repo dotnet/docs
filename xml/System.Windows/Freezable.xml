@@ -14,33 +14,33 @@
     <summary>Defines an object that has a modifiable state and a read-only (frozen) state. Classes that derive from <see cref="T:System.Windows.Freezable" /> provide detailed change notification, can be made immutable, and can clone themselves.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Freezable> class provides special features that can help improve application performance when using objects that are expensive to modify or copy. Examples of <xref:System.Windows.Freezable> objects include the following:  
-  
+The <xref:System.Windows.Freezable> class provides special features that can help improve application performance when using objects that are expensive to modify or copy. Examples of <xref:System.Windows.Freezable> objects include the following:  
+ 
 -   <xref:System.Windows.Media.Brush>  
-  
+ 
 -   <xref:System.Windows.Media.Pen>  
-  
+ 
 -   <xref:System.Windows.Media.Geometry>  
-  
+ 
 -   <xref:System.Windows.Media.Transform>  
-  
+ 
 -   <xref:System.Windows.Media.Animation.AnimationTimeline>  
-  
+ 
 ## Deriving From Freezable  
- A class that derives from <xref:System.Windows.Freezable> gains the following features:  
-  
+A class that derives from <xref:System.Windows.Freezable> gains the following features:  
+ 
 -   Special states: a read-only (frozen) state and a writable state.  
-  
+ 
 -   Thread safety: a frozen <xref:System.Windows.Freezable> object can be shared across threads.  
-  
+ 
 -   Detailed change notification: Unlike other <xref:System.Windows.DependencyObject> objects, a <xref:System.Windows.Freezable> object provides change notifications when sub-property values change.  
-  
+ 
 -   Easy cloning: the Freezable class has already implemented several methods that produce deep clones.  
-  
- For information on using and creating your own <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+ 
+For information on using and creating your own <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
  ]]></format>
     </remarks>
     <threadsafe>Any public <see langword="static" /> members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
@@ -64,10 +64,10 @@
         <summary>Initializes a new instance of a <see cref="T:System.Windows.Freezable" /> derived class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the protected-accessibility constructor of an abstract class.  
-  
+This is the protected-accessibility constructor of an abstract class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <summary>Occurs when the <see cref="T:System.Windows.Freezable" /> or an object it contains is modified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove event handlers when the current object is not modifiable (when the <xref:System.Windows.Freezable.IsFrozen%2A> property is `true`), an exception is thrown.  
-  
+If you attempt to add or remove event handlers when the current object is not modifiable (when the <xref:System.Windows.Freezable.IsFrozen%2A> property is `true`), an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,22 +136,22 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Freezable.Clone%2A> and <xref:System.Windows.Freezable.CloneCurrentValue%2A> methods produce modifiable clones of frozen <xref:System.Windows.Freezable> objects (the methods also clone <xref:System.Windows.Freezable> objects that are not frozen). The clone is effectively a deep copy of the current object.  
-  
- The following table summarizes the differences between the <xref:System.Windows.Freezable.Clone%2A> and <xref:System.Windows.Freezable.CloneCurrentValue%2A> methods.  
-  
+The <xref:System.Windows.Freezable.Clone%2A> and <xref:System.Windows.Freezable.CloneCurrentValue%2A> methods produce modifiable clones of frozen <xref:System.Windows.Freezable> objects (the methods also clone <xref:System.Windows.Freezable> objects that are not frozen). The clone is effectively a deep copy of the current object.  
+ 
+The following table summarizes the differences between the <xref:System.Windows.Freezable.Clone%2A> and <xref:System.Windows.Freezable.CloneCurrentValue%2A> methods.  
+ 
 |Action|Clone method behavior|CloneCurrentValue method behavior|  
 |------------|---------------------------|---------------------------------------|  
 |Copying a dependency property that has an expression|The expression is copied, but might no longer resolve. For more information, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).|The current value of the expression is copied, but not the expression itself.|  
 |Copying an animated dependency property|The property's base (non-animated) value is copied. Animations are not copied.|The property's current animated value is copied. Animations are not copied.|  
-  
- Note that unset properties are not copied. If an unset property has a default value that is a frozen <xref:System.Windows.Freezable>, that property value remains frozen in the otherwise modifiable clone.  
-  
+ 
+Note that unset properties are not copied. If an unset property has a default value that is a frozen <xref:System.Windows.Freezable>, that property value remains frozen in the otherwise modifiable clone.  
+ 
 ## Move a Freezable Between Threads  
- This method can be useful for moving a <xref:System.Windows.Freezable> between threads. First, make the <xref:System.Windows.Freezable> unmodifiable by calling its <xref:System.Windows.Freezable.Freeze%2A> method. Now another thread can access the <xref:System.Windows.Freezable> and make a local <xref:System.Windows.Freezable.Clone%2A> that it can access.  
-  
+This method can be useful for moving a <xref:System.Windows.Freezable> between threads. First, make the <xref:System.Windows.Freezable> unmodifiable by calling its <xref:System.Windows.Freezable.Freeze%2A> method. Now another thread can access the <xref:System.Windows.Freezable> and make a local <xref:System.Windows.Freezable.Clone%2A> that it can access.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -179,10 +179,10 @@
         <summary>Makes the instance a clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
-  
+This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -236,22 +236,22 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Freezable.Clone%2A> and <xref:System.Windows.Freezable.CloneCurrentValue%2A> methods produce modifiable clones of frozen <xref:System.Windows.Freezable> objects (the methods also clone <xref:System.Windows.Freezable> objects that are not frozen). The clone is effectively a deep copy of the current object.  
-  
- The following table summarizes the differences between the <xref:System.Windows.Freezable.Clone%2A> and <xref:System.Windows.Freezable.CloneCurrentValue%2A> methods.  
-  
+The <xref:System.Windows.Freezable.Clone%2A> and <xref:System.Windows.Freezable.CloneCurrentValue%2A> methods produce modifiable clones of frozen <xref:System.Windows.Freezable> objects (the methods also clone <xref:System.Windows.Freezable> objects that are not frozen). The clone is effectively a deep copy of the current object.  
+ 
+The following table summarizes the differences between the <xref:System.Windows.Freezable.Clone%2A> and <xref:System.Windows.Freezable.CloneCurrentValue%2A> methods.  
+ 
 |Action|Clone method behavior|CloneCurrentValue method behavior|  
 |------------|---------------------------|---------------------------------------|  
 |Copying a dependency property that has an expression|The expression is copied, but might no longer resolve. For more information, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).|The current value of the expression is copied, but not the expression itself.|  
 |Copying an animated dependency property|The property's base (non-animated) value is copied. Animations are not copied.|The property's current animated value is copied. Animations are not copied.|  
-  
- Note that unset properties are not copied. If an unset property has a default value that is a frozen <xref:System.Windows.Freezable>, that property value remains frozen in the otherwise modifiable clone.  
-  
+ 
+Note that unset properties are not copied. If an unset property has a default value that is a frozen <xref:System.Windows.Freezable>, that property value remains frozen in the otherwise modifiable clone.  
+ 
 ## Move a Freezable Between Threads  
- This method can be useful for moving a <xref:System.Windows.Freezable> between threads. First, make the <xref:System.Windows.Freezable> unmodifiable by using its <xref:System.Windows.Freezable.Freeze%2A> method. Now another thread can access the <xref:System.Windows.Freezable> and make a local clone that it can access.  
-  
+This method can be useful for moving a <xref:System.Windows.Freezable> between threads. First, make the <xref:System.Windows.Freezable> unmodifiable by using its <xref:System.Windows.Freezable.Freeze%2A> method. Now another thread can access the <xref:System.Windows.Freezable> and make a local clone that it can access.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -279,10 +279,10 @@
         <summary>Makes the instance a modifiable clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using current property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
-  
+This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -332,10 +332,10 @@
         <returns>The new instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a protected method, and the actual object-specific implementations for the behavior are dependent on the override implementation of the <xref:System.Windows.Freezable.CreateInstanceCore%2A> method, which this method calls internally.  
-  
+This is a protected method, and the actual object-specific implementations for the behavior are dependent on the override implementation of the <xref:System.Windows.Freezable.CreateInstanceCore%2A> method, which this method calls internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,18 +358,18 @@
         <returns>The new instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not call this method directly (except when calling base in an implementation). This method is called internally by the <xref:System.Windows.Freezable.CreateInstance%2A> method whenever a new instance of the <xref:System.Windows.Freezable> is created.  
+Do not call this method directly (except when calling base in an implementation). This method is called internally by the <xref:System.Windows.Freezable.CreateInstance%2A> method whenever a new instance of the <xref:System.Windows.Freezable> is created.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
-  
- [!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
- [!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
-  
+The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
+ 
+[!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
+[!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -394,10 +394,10 @@
         <summary>Makes the current object unmodifiable and sets its <see cref="P:System.Windows.Freezable.IsFrozen" /> property to <see langword="true" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To avoid the possibility of an <xref:System.InvalidOperationException> when calling this method, check the <xref:System.Windows.Freezable.CanFreeze%2A> property to determine whether the <xref:System.Windows.Freezable> can be made unmodifiable before calling this method.  
-  
+To avoid the possibility of an <xref:System.InvalidOperationException> when calling this method, check the <xref:System.Windows.Freezable.CanFreeze%2A> property to determine whether the <xref:System.Windows.Freezable> can be made unmodifiable before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Freezable" /> cannot be made unmodifiable.</exception>
@@ -430,12 +430,12 @@
         <returns>If <paramref name="isChecking" /> is <see langword="true" />, this method returns <see langword="true" /> if the specified <see cref="T:System.Windows.Freezable" /> can be made unmodifiable, or <see langword="false" /> if it cannot be made unmodifiable. If <paramref name="isChecking" /> is <see langword="false" />, this method returns <see langword="true" /> if the specified <see cref="T:System.Windows.Freezable" /> is now unmodifiable, or <see langword="false" /> if it cannot be made unmodifiable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not call this method unless you are deriving from <xref:System.Windows.Freezable> and overriding the <xref:System.Windows.Freezable.FreezeCore%2A> method.  This method may be used in the <xref:System.Windows.Freezable.FreezeCore%2A> method to freeze class data members that are themselves <xref:System.Windows.Freezable> objects.  
-  
- It is alright to call this method again on a <xref:System.Windows.Freezable> object that is already frozen (unmodifiable).  
-  
+Do not call this method unless you are deriving from <xref:System.Windows.Freezable> and overriding the <xref:System.Windows.Freezable.FreezeCore%2A> method.  This method may be used in the <xref:System.Windows.Freezable.FreezeCore%2A> method to freeze class data members that are themselves <xref:System.Windows.Freezable> objects.  
+ 
+It is alright to call this method again on a <xref:System.Windows.Freezable> object that is already frozen (unmodifiable).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When <paramref name="isChecking" /> is <see langword="false" />, the attempt to make <paramref name="freezable" /> unmodifiable was unsuccessful; the object is now in an unknown state (it might be partially frozen).</exception>
@@ -466,10 +466,10 @@
         <returns>If <paramref name="isChecking" /> is <see langword="true" />, this method returns <see langword="true" /> if the <see cref="T:System.Windows.Freezable" /> can be made unmodifiable, or <see langword="false" /> if it cannot be made unmodifiable. If <paramref name="isChecking" /> is <see langword="false" />, this method returns <see langword="true" /> if the if the specified <see cref="T:System.Windows.Freezable" /> is now unmodifiable, or <see langword="false" /> if it cannot be made unmodifiable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not call this method directly (except when calling base in an implementation). This method is called internally by the <xref:System.Windows.Freezable.CanFreeze%2A> property (with `isChecking` equal to `true`) and the <xref:System.Windows.Freezable.Freeze%2A> method (with `isChecking` equal to `false`).  
-  
+Do not call this method directly (except when calling base in an implementation). This method is called internally by the <xref:System.Windows.Freezable.CanFreeze%2A> property (with `isChecking` equal to `true`) and the <xref:System.Windows.Freezable.Freeze%2A> method (with `isChecking` equal to `false`).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -498,23 +498,23 @@
         <returns>A frozen copy of the <see cref="T:System.Windows.Freezable" />. The copy's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is set to <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should check the <xref:System.Windows.Freezable.CanFreeze%2A> property before calling this method to verify that the <xref:System.Windows.Freezable> can be frozen. Using this method is similar to creating a copy using the <xref:System.Windows.Freezable.Clone%2A> and then freezing it with the <xref:System.Windows.Freezable.Freeze%2A> method.  
-  
- The <xref:System.Windows.Freezable.GetAsFrozen%2A> and <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> methods can improve copying performance because they do not clone <xref:System.Windows.Freezable> sub-objects that are already frozen; they only copy them by reference.  
-  
- The following table summarizes the differences between the <xref:System.Windows.Freezable.GetAsFrozen%2A> and <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> methods.  
-  
+You should check the <xref:System.Windows.Freezable.CanFreeze%2A> property before calling this method to verify that the <xref:System.Windows.Freezable> can be frozen. Using this method is similar to creating a copy using the <xref:System.Windows.Freezable.Clone%2A> and then freezing it with the <xref:System.Windows.Freezable.Freeze%2A> method.  
+ 
+The <xref:System.Windows.Freezable.GetAsFrozen%2A> and <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> methods can improve copying performance because they do not clone <xref:System.Windows.Freezable> sub-objects that are already frozen; they only copy them by reference.  
+ 
+The following table summarizes the differences between the <xref:System.Windows.Freezable.GetAsFrozen%2A> and <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> methods.  
+ 
 |Action|GetAsFrozen method behavior|GetCurrentValueAsFrozen method behavior|  
 |------------|---------------------------------|---------------------------------------------|  
 |Copying a dependency property that has an expression|The method throws an <xref:System.InvalidOperationException> because it cannot <xref:System.Windows.Freezable.Freeze%2A> the property.|The current value of the expression is copied, but not the expression itself.|  
 |Copying an animated dependency property|The property's base (non-animated) value is copied. Animations are not copied.|The property's current animated value is copied. Animations are not copied.|  
-  
- Note that unset properties are not copied, nor are read-only properties.  
-  
- To create a copy of the <xref:System.Windows.Freezable> that is not frozen, use the <xref:System.Windows.Freezable.Clone%2A> method.  
-  
+ 
+Note that unset properties are not copied, nor are read-only properties.  
+ 
+To create a copy of the <xref:System.Windows.Freezable> that is not frozen, use the <xref:System.Windows.Freezable.Clone%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Freezable" /> cannot be frozen because it contains expressions or animated properties.</exception>
@@ -543,10 +543,10 @@
         <summary>Makes the instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
-  
+This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -586,23 +586,23 @@
         <returns>A frozen copy of the <see cref="T:System.Windows.Freezable" />. The copy's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is set to <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this method is similar to creating a copy using the <xref:System.Windows.Freezable.CloneCurrentValue%2A> and then freezing it with the <xref:System.Windows.Freezable.Freeze%2A> method.  
-  
- The <xref:System.Windows.Freezable.GetAsFrozen%2A> and <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> methods can improve copying performance because they do not clone <xref:System.Windows.Freezable> sub-objects that are already frozen; they only copy them by reference.  
-  
- The following table summarizes the differences between the <xref:System.Windows.Freezable.GetAsFrozen%2A> and <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> methods.  
-  
+Using this method is similar to creating a copy using the <xref:System.Windows.Freezable.CloneCurrentValue%2A> and then freezing it with the <xref:System.Windows.Freezable.Freeze%2A> method.  
+ 
+The <xref:System.Windows.Freezable.GetAsFrozen%2A> and <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> methods can improve copying performance because they do not clone <xref:System.Windows.Freezable> sub-objects that are already frozen; they only copy them by reference.  
+ 
+The following table summarizes the differences between the <xref:System.Windows.Freezable.GetAsFrozen%2A> and <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> methods.  
+ 
 |Action|GetAsFrozen method behavior|GetCurrentValueAsFrozen method behavior|  
 |------------|---------------------------------|---------------------------------------------|  
 |Copying a dependency property that has an expression|The method throws an <xref:System.InvalidOperationException> because it cannot <xref:System.Windows.Freezable.Freeze%2A> the property.|The current value of the expression is copied, but not the expression itself.|  
 |Copying an animated dependency property|The property's base (non-animated) value is copied. Animations are not copied.|The property's current animated value is copied. Animations are not copied.|  
-  
- Note that unset properties are not copied, nor are read-only properties.  
-  
- To create a copy of the <xref:System.Windows.Freezable> that is not frozen, use the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method.  
-  
+ 
+Note that unset properties are not copied, nor are read-only properties.  
+ 
+To create a copy of the <xref:System.Windows.Freezable> that is not frozen, use the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -630,10 +630,10 @@
         <summary>Makes the current instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" />. If the object has animated dependency properties, their current animated values are copied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
-  
+This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -673,12 +673,12 @@
           <see langword="true" /> if the object is frozen and cannot be modified; <see langword="false" /> if the object can be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attempting to modify an object when its <xref:System.Windows.Freezable.IsFrozen%2A> property is `true` throws an <xref:System.InvalidOperationException>.  
-  
- This property is read-only from the object model perspective. Some of the documentation about <xref:System.Windows.Freezable> behaviors may mention "sets <xref:System.Windows.Freezable.IsFrozen%2A> to `true`" or similar language when discussing the behavior of other methods of <xref:System.Windows.Freezable>, but this behavior is happening internally in the class instances, when methods of the instance manipulate the private variables that exist within the abstract class. To set the value of this property, you should call <xref:System.Windows.Freezable.Freeze%2A>. This effectively is a one-time operation to change the <xref:System.Windows.Freezable.IsFrozen%2A> property from the initial default `false` state to the `true` state. There is no available means to set the value back to `false`. Instead, you could change any deep copy made from the original (see the <xref:System.Windows.Freezable.Clone%2A> method). This is by design and is how any derived class should behave when applied to the cases where the <xref:System.Windows.Freezable> pattern is useful.  
-  
+Attempting to modify an object when its <xref:System.Windows.Freezable.IsFrozen%2A> property is `true` throws an <xref:System.InvalidOperationException>.  
+ 
+This property is read-only from the object model perspective. Some of the documentation about <xref:System.Windows.Freezable> behaviors may mention "sets <xref:System.Windows.Freezable.IsFrozen%2A> to `true`" or similar language when discussing the behavior of other methods of <xref:System.Windows.Freezable>, but this behavior is happening internally in the class instances, when methods of the instance manipulate the private variables that exist within the abstract class. To set the value of this property, you should call <xref:System.Windows.Freezable.Freeze%2A>. This effectively is a one-time operation to change the <xref:System.Windows.Freezable.IsFrozen%2A> property from the initial default `false` state to the `true` state. There is no available means to set the value back to `false`. Instead, you could change any deep copy made from the original (see the <xref:System.Windows.Freezable.Clone%2A> method). This is by design and is how any derived class should behave when applied to the cases where the <xref:System.Windows.Freezable> pattern is useful.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -700,10 +700,10 @@
         <summary>Called when the current <see cref="T:System.Windows.Freezable" /> object is modified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called whenever the <xref:System.Windows.Freezable.Changed> event occurs.  
-  
+This method is called whenever the <xref:System.Windows.Freezable.Changed> event occurs.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -733,12 +733,12 @@
         <summary>Ensures that appropriate context pointers are established for a <see cref="T:System.Windows.DependencyObjectType" /> data member that has just been set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should be called by <xref:System.Windows.Freezable> inheritors each time a <xref:System.Windows.DependencyObject> data member that is not stored as a <xref:System.Windows.DependencyProperty> is set.  
-  
- This method does not need to be called for <xref:System.Windows.DependencyObject> data members that are stored using a <xref:System.Windows.DependencyProperty>.  
-  
+This method should be called by <xref:System.Windows.Freezable> inheritors each time a <xref:System.Windows.DependencyObject> data member that is not stored as a <xref:System.Windows.DependencyProperty> is set.  
+ 
+This method does not need to be called for <xref:System.Windows.DependencyObject> data members that are stored using a <xref:System.Windows.DependencyProperty>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -788,10 +788,10 @@
         <summary>Overrides the <see cref="T:System.Windows.DependencyObject" /> implementation of <see cref="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" /> to also invoke any <see cref="E:System.Windows.Freezable.Changed" /> handlers in response to a changing dependency property of type <see cref="T:System.Windows.Freezable" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event data contains information about only the <xref:System.Windows.Freezable> itself. Any sub-property information must be obtained through the <xref:System.Windows.Freezable.Changed> handlers.  
-  
+The event data contains information about only the <xref:System.Windows.Freezable> itself. Any sub-property information must be obtained through the <xref:System.Windows.Freezable.Changed> handlers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -857,10 +857,10 @@
         <summary>Verifies that the <see cref="T:System.Windows.Freezable" /> is not frozen and that it is being accessed from a valid threading context. <see cref="T:System.Windows.Freezable" /> inheritors should call this method at the beginning of any [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)] that writes to data members that are not dependency properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls <xref:System.Windows.Threading.DispatcherObject.VerifyAccess%2A> to verify the threading context is accessible, and it throws an exception if the <xref:System.Windows.Freezable> instance is already frozen.  
-  
+This method calls <xref:System.Windows.Threading.DispatcherObject.VerifyAccess%2A> to verify the threading context is accessible, and it throws an exception if the <xref:System.Windows.Freezable> instance is already frozen.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Freezable" /> instance is frozen and cannot have its members written to.</exception>

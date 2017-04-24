@@ -22,18 +22,18 @@
     <summary>Specifies the IO control codes supported by the <see cref="M:System.Net.Sockets.Socket.IOControl(System.Int32,System.Byte[],System.Byte[])" /> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.IOControlCode> enumeration provides named values for specifying socket operational modes. These values are the control codes passed to the Windows Sockets 2 (Winsock 2) `WSAIoctl` function.  
+The <xref:System.Net.Sockets.IOControlCode> enumeration provides named values for specifying socket operational modes. These values are the control codes passed to the Windows Sockets 2 (Winsock 2) `WSAIoctl` function.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example calls the <xref:System.Net.Sockets.Socket.IOControl%28System.Net.Sockets.IOControlCode%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%29> method with a DataToRead parameter value and compares the result with accessing the.<xref:System.Net.Sockets.Socket.Available%2A> property.  
-  
- [!code-cpp[NCLSocketIoControl1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSocketIoControl1/CPP/iocontrolcode.cpp#1)]
- [!code-csharp[NCLSocketIoControl1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSocketIoControl1/CS/iocontrolcode.cs#1)]  
-  
+The following code example calls the <xref:System.Net.Sockets.Socket.IOControl%28System.Net.Sockets.IOControlCode%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%29> method with a DataToRead parameter value and compares the result with accessing the.<xref:System.Net.Sockets.Socket.Available%2A> property.  
+ 
+[!code-cpp[NCLSocketIoControl1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSocketIoControl1/CPP/iocontrolcode.cpp#1)]
+[!code-csharp[NCLSocketIoControl1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSocketIoControl1/CS/iocontrolcode.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

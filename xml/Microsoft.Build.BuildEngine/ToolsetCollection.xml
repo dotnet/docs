@@ -21,10 +21,10 @@
     <summary>Represents one or more <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> objects. A Toolset is a combination of a Toolset version (such as "2.0"), a tools path, and an optional set of associated properties.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.BuildEngine.ToolsetCollection> allows you to retrieve individual <xref:Microsoft.Build.BuildEngine.Toolset> objects by passing the string value of the tools version corresponding with the desired <xref:Microsoft.Build.BuildEngine.Toolset>.  
-  
+<xref:Microsoft.Build.BuildEngine.ToolsetCollection> allows you to retrieve individual <xref:Microsoft.Build.BuildEngine.Toolset> objects by passing the string value of the tools version corresponding with the desired <xref:Microsoft.Build.BuildEngine.Toolset>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <summary>Adds the specified <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> to this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.BuildEngine.ToolsetCollection.Add%2A> replaces any previous value that has the same tools version. It also notifies the parent <xref:Microsoft.Build.BuildEngine.Engine> of the change.  
-  
+<xref:Microsoft.Build.BuildEngine.ToolsetCollection.Add%2A> replaces any previous value that has the same tools version. It also notifies the parent <xref:Microsoft.Build.BuildEngine.Engine> of the change.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <value>An integer value representing the number of <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:Microsoft.Build.BuildEngine.Toolset> element in the collection represents a <xref:Microsoft.Build.BuildEngine.Toolset> in the project.  
-  
+Each <xref:Microsoft.Build.BuildEngine.Toolset> element in the collection represents a <xref:Microsoft.Build.BuildEngine.Toolset> in the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the entire <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.Toolset> objects in the <xref:Microsoft.Build.BuildEngine.ToolsetCollection>.  
-  
+This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.Toolset> objects in the <xref:Microsoft.Build.BuildEngine.ToolsetCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
         <value>A boolean value indicating whether the <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" /> is read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.BuildEngine.ToolsetCollection.IsReadOnly%2A> always returns `false` because Toolsets are always writable.  
-  
+<xref:Microsoft.Build.BuildEngine.ToolsetCollection.IsReadOnly%2A> always returns `false` because Toolsets are always writable.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,10 +282,10 @@
         <returns>Returns an enumerator for the toolsets.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns the enumerator.  
-  
+Returns the enumerator.  
+ 
  ]]></format>
         </remarks>
       </Docs>

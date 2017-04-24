@@ -18,19 +18,19 @@
     <summary>Provides information about the current registration for notification of the next full garbage collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.GC.RegisterForFullGCNotification%2A> method to register for a full garbage collection notification. Then use the <xref:System.GC.WaitForFullGCApproach%2A> method or the <xref:System.GC.WaitForFullGCComplete%2A> method to return a <xref:System.GCNotificationStatus> enumeration that contains the status of the notification.  
+Use the <xref:System.GC.RegisterForFullGCNotification%2A> method to register for a full garbage collection notification. Then use the <xref:System.GC.WaitForFullGCApproach%2A> method or the <xref:System.GC.WaitForFullGCComplete%2A> method to return a <xref:System.GCNotificationStatus> enumeration that contains the status of the notification.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example obtains a <xref:System.GCNotificationStatus> enumeration from the <xref:System.GC.WaitForFullGCApproach%2A> method. If the enumeration returns Succeeded, it calls the custom method `OnFullGCApproachNotify` to perform actions in response to the approaching full garbage collection. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
-  
- [!code-cpp[GCNotification#8](~/samples/snippets/cpp/VS_Snippets_CLR/GCNotification/cpp/program.cpp#8)]
- [!code-csharp[GCNotification#8](~/samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#8)]
- [!code-vb[GCNotification#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/GCNotification/vb/program.vb#8)]  
-  
+The following example obtains a <xref:System.GCNotificationStatus> enumeration from the <xref:System.GC.WaitForFullGCApproach%2A> method. If the enumeration returns Succeeded, it calls the custom method `OnFullGCApproachNotify` to perform actions in response to the approaching full garbage collection. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
+ 
+[!code-cpp[GCNotification#8](~/samples/snippets/cpp/VS_Snippets_CLR/GCNotification/cpp/program.cpp#8)]
+[!code-csharp[GCNotification#8](~/samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#8)]
+[!code-vb[GCNotification#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/GCNotification/vb/program.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

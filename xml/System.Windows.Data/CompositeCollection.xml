@@ -32,10 +32,10 @@
     <summary>Enables multiple collections and items to be displayed as a single list.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.CompositeCollection> can contain items such as strings, objects, [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] nodes, elements, as well as other collections. An <xref:System.Windows.Controls.ItemsControl> uses the data in the <xref:System.Windows.Data.CompositeCollection> to generate its content according to its <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>. For more information about using <xref:System.Windows.Controls.ItemsControl> objects to bind to collections, see the Binding to Collections section of the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+<xref:System.Windows.Data.CompositeCollection> can contain items such as strings, objects, [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] nodes, elements, as well as other collections. An <xref:System.Windows.Controls.ItemsControl> uses the data in the <xref:System.Windows.Data.CompositeCollection> to generate its content according to its <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>. For more information about using <xref:System.Windows.Controls.ItemsControl> objects to bind to collections, see the Binding to Collections section of the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,10 +112,10 @@
         <summary>Clears the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method resets the collection to be empty.  
-  
+This method resets the collection to be empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,10 +200,10 @@
         <value>The number of items stored in this collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Data.CollectionContainer> object counts as 1 item.  
-  
+A <xref:System.Windows.Data.CollectionContainer> object counts as 1 item.  
+ 
  ]]></format>
         </remarks>
       </Docs>

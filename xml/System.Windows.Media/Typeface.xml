@@ -14,16 +14,16 @@
     <summary>Represents a combination of <see cref="T:System.Windows.Media.FontFamily" />, <see cref="T:System.Windows.FontWeight" />, <see cref="T:System.Windows.FontStyle" />, and <see cref="T:System.Windows.FontStretch" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A typeface is a single variation of a font within the same font family. An example of a typeface is an italic version of the "Times New Roman" font family. Typeface defines the weight, style and stretching features of a font.  
+A typeface is a single variation of a font within the same font family. An example of a typeface is an italic version of the "Times New Roman" font family. Typeface defines the weight, style and stretching features of a font.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[FontSnippets#102](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#102)]
- [!code-vb[FontSnippets#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#102)]  
-  
+[!code-csharp[FontSnippets#102](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#102)]
+[!code-vb[FontSnippets#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#102)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,11 +45,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family typeface name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[FontSnippets#105](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#105)]
- [!code-vb[FontSnippets#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#105)]  
-  
+[!code-csharp[FontSnippets#105](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#105)]
+[!code-vb[FontSnippets#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#105)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,11 +77,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family name, <see cref="P:System.Windows.Media.Typeface.Style" />, <see cref="P:System.Windows.Media.Typeface.Weight" />, and <see cref="P:System.Windows.Media.Typeface.Stretch" /> values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[FontSnippets#105](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#105)]
- [!code-vb[FontSnippets#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#105)]  
-  
+[!code-csharp[FontSnippets#105](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#105)]
+[!code-vb[FontSnippets#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#105)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,16 +111,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family name, <see cref="P:System.Windows.Media.Typeface.Style" />, <see cref="P:System.Windows.Media.Typeface.Weight" />, and <see cref="P:System.Windows.Media.Typeface.Stretch" /> values. In addition, a fallback font family is specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Passing `null` for the `fallbackFontFamily` parameter causes box characters to be displayed for characters not included in the primary font family.  
+Passing `null` for the `fallbackFontFamily` parameter causes box characters to be displayed for characters not included in the primary font family.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[FontSnippets#105](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#105)]
- [!code-vb[FontSnippets#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#105)]  
-  
+[!code-csharp[FontSnippets#105](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#105)]
+[!code-vb[FontSnippets#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#105)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <value>A <see cref="T:System.Double" /> that indicates the distance from the baseline to the top of an English capital letter, expressed as a fraction of the font em size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A return value of `1` indicates that the top of an English capital letter is one font em above the baseline, while a return value of `0.5` indicates that it is half a font em above the baseline.  
-  
+A return value of `1` indicates that the top of an English capital letter is one font em above the baseline, while a return value of `0.5` indicates that it is half a font em above the baseline.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,10 +246,10 @@
           <see langword="true" /> if bold simulation is used for glyphs; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Typeface> can simulate a bold weight by stretching a glyph. A non-simulated bold typeface is typically designed to have a better visual appearance than a simulated bold typeface.  
-  
+A <xref:System.Windows.Media.Typeface> can simulate a bold weight by stretching a glyph. A non-simulated bold typeface is typically designed to have a better visual appearance than a simulated bold typeface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,10 +272,10 @@
           <see langword="true" /> if italic simulation is used for glyphs; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Typeface> can simulate an italic style by shearing, or slanting, a glyph. A non-simulated italic typeface is typically designed to have a better visual appearance than a simulated italic typeface.  
-  
+A <xref:System.Windows.Media.Typeface> can simulate an italic style by shearing, or slanting, a glyph. A non-simulated italic typeface is typically designed to have a better visual appearance than a simulated italic typeface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,16 +297,16 @@
         <value>A <see cref="T:System.Windows.FontStretch" /> value that represents the stretch value for the typeface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A font stretch value describes the degree to which a font form is stretched from its normal aspect ratio, which is the original width to height ratio specified for the glyphs in the font.  
+A font stretch value describes the degree to which a font form is stretched from its normal aspect ratio, which is the original width to height ratio specified for the glyphs in the font.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[FontSnippets#108](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#108)]
- [!code-vb[FontSnippets#108](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#108)]  
-  
+[!code-csharp[FontSnippets#108](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#108)]
+[!code-vb[FontSnippets#108](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#108)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,10 +328,10 @@
         <value>A <see cref="T:System.Double" /> that indicates the strikethrough position, measured from the baseline and expressed as a fraction of the font em size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A return value of `0.1` indicates that the strikethrough position is one-tenth of a font em above the baseline, while a return value of `0.25` indicates that its one-fourth of a font em above the baseline.  
-  
+A return value of `0.1` indicates that the strikethrough position is one-tenth of a font em above the baseline, while a return value of `0.25` indicates that its one-fourth of a font em above the baseline.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,10 +353,10 @@
         <value>A <see cref="T:System.Double" /> that indicates the strikethrough thickness, expressed as a fraction of the font em size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A return value of `0.05` indicates that the strikethrough thickness is one-twentieth of the font em size, while a return value of `0.1` indicates that the strikethrough thickness is  one-tenth of the font em size.  
-  
+A return value of `0.05` indicates that the strikethrough thickness is one-twentieth of the font em size, while a return value of `0.1` indicates that the strikethrough thickness is  one-tenth of the font em size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,16 +378,16 @@
         <value>A <see cref="T:System.Windows.FontStyle" /> value that represents the style value for the typeface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Three terms categorize the slant of a font: normal, oblique, and italic.  
+Three terms categorize the slant of a font: normal, oblique, and italic.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[FontSnippets#109](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#109)]
- [!code-vb[FontSnippets#109](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#109)]  
-  
+[!code-csharp[FontSnippets#109](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#109)]
+[!code-vb[FontSnippets#109](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#109)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,10 +415,10 @@
           <see langword="true" /> if the out parameter is set to a <see cref="T:System.Windows.Media.GlyphTypeface" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.GlyphTypeface> is font face that directly corresponds to a font file on the disk. A <xref:System.Windows.Media.Typeface>, however, is a representation of font face.  
-  
+A <xref:System.Windows.Media.GlyphTypeface> is font face that directly corresponds to a font file on the disk. A <xref:System.Windows.Media.Typeface>, however, is a representation of font face.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,10 +440,10 @@
         <value>A <see cref="T:System.Double" /> that indicates the underline position, measured from the baseline and expressed as a fraction of the font em size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value is usually negative, to place the underline below the baseline. For example, a return value of `-0.1` indicates that the underline position is one-tenth of a font em below the baseline, while a return value of `-0.25` indicates that it is one-fourth of a font em below the baseline.  
-  
+The return value is usually negative, to place the underline below the baseline. For example, a return value of `-0.1` indicates that the underline position is one-tenth of a font em below the baseline, while a return value of `-0.25` indicates that it is one-fourth of a font em below the baseline.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -465,10 +465,10 @@
         <value>A <see cref="T:System.Double" /> that indicates the underline thickness, expressed as a fraction of the font em size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A return value of `0.05` indicates that the underline thickness is one-twentieth of the font em size, while a return value of `0.1` indicates that the underline thickness is one-tenth of the font em size.  
-  
+A return value of `0.05` indicates that the underline thickness is one-twentieth of the font em size, while a return value of `0.1` indicates that the underline thickness is one-tenth of the font em size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -490,18 +490,18 @@
         <value>A <see cref="T:System.Windows.FontWeight" /> value that represents the relative weight of the typeface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Weight differences are generally differentiated by an increased stroke or thickness associated with a given character in a typeface, as compared to a "normal" character from that same typeface.  
+Weight differences are generally differentiated by an increased stroke or thickness associated with a given character in a typeface, as compared to a "normal" character from that same typeface.  
+ 
+**Note** Not all weights are available for all typefaces. When a weight is not available for a typeface, the closest matching weight is returned.  
+ 
   
- **Note** Not all weights are available for all typefaces. When a weight is not available for a typeface, the closest matching weight is returned.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[FontSnippets#110](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#110)]
- [!code-vb[FontSnippets#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#110)]  
-  
+[!code-csharp[FontSnippets#110](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#110)]
+[!code-vb[FontSnippets#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#110)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -523,10 +523,10 @@
         <value>A <see cref="T:System.Double" /> that indicates the distance from the baseline to the top of an English lowercase letter (excluding ascenders), expressed as a fraction of the font em size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A return value of `0.25` indicates that the top of an English letter is one-fourth of a font em above the baseline, while a return value of `0.75` indicates that the top of an English letter is three-fourths of a font em above the baseline.  
-  
+A return value of `0.25` indicates that the top of an English letter is one-fourth of a font em above the baseline, while a return value of `0.75` indicates that the top of an English letter is three-fourths of a font em above the baseline.  
+ 
  ]]></format>
         </remarks>
       </Docs>

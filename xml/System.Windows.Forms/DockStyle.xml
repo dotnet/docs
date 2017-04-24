@@ -18,21 +18,21 @@
     <summary>Specifies the position and manner in which a control is docked.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a control is docked to an edge of its container, it is always positioned flush against that edge when the container is resized. If more than one control is docked to an edge, the controls appear side by side according to their z-order; controls higher in the z-order are positioned farther from the container's edge.  
+When a control is docked to an edge of its container, it is always positioned flush against that edge when the container is resized. If more than one control is docked to an edge, the controls appear side by side according to their z-order; controls higher in the z-order are positioned farther from the container's edge.  
+ 
+If Left, Right, Top, or Bottom is selected, the specified and opposite edges of the control are resized to the size of the containing control's corresponding edges. If Fill is selected, all four sides of the control are resized to match the containing control's edges.  
+ 
   
- If Left, Right, Top, or Bottom is selected, the specified and opposite edges of the control are resized to the size of the containing control's corresponding edges. If Fill is selected, all four sides of the control are resized to match the containing control's edges.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Forms.GroupBox> and sets some of its common properties. The example creates a <xref:System.Windows.Forms.TextBox> and sets its <xref:System.Windows.Forms.Control.Location%2A> within the group box. Next, it sets the <xref:System.Windows.Forms.Control.Text%2A> property of the group box, and docks the group box to the top of the form. Lastly, it disables the group box by setting the <xref:System.Windows.Forms.Control.Enabled%2A> property to `false`, which causes all controls contained within the group box to be disabled.  
-  
- [!code-cpp[Windows.Forms.Control Properties#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CPP/controlproperties.cpp#2)]
- [!code-csharp[Windows.Forms.Control Properties#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CS/controlproperties.cs#2)]
- [!code-vb[Windows.Forms.Control Properties#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.Control Properties/VB/controlproperties.vb#2)]  
-  
+The following example creates a <xref:System.Windows.Forms.GroupBox> and sets some of its common properties. The example creates a <xref:System.Windows.Forms.TextBox> and sets its <xref:System.Windows.Forms.Control.Location%2A> within the group box. Next, it sets the <xref:System.Windows.Forms.Control.Text%2A> property of the group box, and docks the group box to the top of the form. Lastly, it disables the group box by setting the <xref:System.Windows.Forms.Control.Enabled%2A> property to `false`, which causes all controls contained within the group box to be disabled.  
+ 
+[!code-cpp[Windows.Forms.Control Properties#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CPP/controlproperties.cpp#2)]
+[!code-csharp[Windows.Forms.Control Properties#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CS/controlproperties.cs#2)]
+[!code-vb[Windows.Forms.Control Properties#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.Control Properties/VB/controlproperties.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

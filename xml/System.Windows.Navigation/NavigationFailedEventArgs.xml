@@ -14,30 +14,30 @@
     <summary>Provides data for the **NavigationFailed** event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These event arguments contain information about a navigation that failed, and are passed to handlers of the **NavigationFailed** event, which is implemented by the following:  
-  
+These event arguments contain information about a navigation that failed, and are passed to handlers of the **NavigationFailed** event, which is implemented by the following:  
+ 
 -   <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Navigation.NavigationWindow.NavigationFailed?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.Frame.NavigationFailed?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Application.NavigationFailed?displayProperty=fullName>  
-  
- <xref:System.Windows.Navigation.NavigationFailedEventArgs> encapsulates the following details of the failed navigation request:  
-  
+ 
+<xref:System.Windows.Navigation.NavigationFailedEventArgs> encapsulates the following details of the failed navigation request:  
+ 
 -   **Navigation Initiation**: <xref:System.Windows.Navigation.NavigationFailedEventArgs.Navigator%2A>.  
-  
+ 
 -   **Navigation Exception**: <xref:System.Windows.Navigation.NavigationFailedEventArgs.Exception%2A>, <xref:System.Windows.Navigation.NavigationFailedEventArgs.Handled%2A>.  
-  
+ 
 -   **Navigation Content**: <xref:System.Windows.Navigation.NavigationFailedEventArgs.Uri%2A>.  
-  
+ 
 -   **Navigation Details**: <xref:System.Windows.Navigation.NavigationFailedEventArgs.WebRequest%2A>, <xref:System.Windows.Navigation.NavigationFailedEventArgs.WebResponse%2A>.  
-  
+ 
 -   **Navigation State**: <xref:System.Windows.Navigation.NavigationFailedEventArgs.ExtraData%2A>.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <value>The <see cref="T:System.Exception" /> that was raised as the result of a failed navigation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Exception> will be either a <xref:System.Net.WebException> or an <xref:System.IO.IOException>  
-  
+<xref:System.Exception> will be either a <xref:System.Net.WebException> or an <xref:System.IO.IOException>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <value>The optional data <see cref="T:System.Object" /> that was passed when navigation commenced.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Navigation.NavigationFailedEventArgs.ExtraData%2A> can be used to pass context-specific data that is specific to a particular navigation. <xref:System.Windows.Navigation.NavigationFailedEventArgs.ExtraData%2A> contains a reference to the object that is passed as the second argument when calling either <xref:System.Windows.Navigation.NavigationService.Navigate%2A> or <xref:System.Windows.Navigation.NavigationService.Navigate%2A>. Otherwise, it is `null`.  
-  
+<xref:System.Windows.Navigation.NavigationFailedEventArgs.ExtraData%2A> can be used to pass context-specific data that is specific to a particular navigation. <xref:System.Windows.Navigation.NavigationFailedEventArgs.ExtraData%2A> contains a reference to the object that is passed as the second argument when calling either <xref:System.Windows.Navigation.NavigationService.Navigate%2A> or <xref:System.Windows.Navigation.NavigationService.Navigate%2A>. Otherwise, it is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
           <see langword="true" /> if the exception is handled; otherwise, <see langword="false" /> (default).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you handle <xref:System.Windows.Navigation.NavigationService.NavigationFailed> to process an exception that is thrown as a result of a failed navigation, and you don't want [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] to continue processing the exception, you should set the <xref:System.Windows.Navigation.NavigationFailedEventArgs.Handled%2A> property to `true`.  
-  
+When you handle <xref:System.Windows.Navigation.NavigationService.NavigationFailed> to process an exception that is thrown as a result of a failed navigation, and you don't want [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] to continue processing the exception, you should set the <xref:System.Windows.Navigation.NavigationFailedEventArgs.Handled%2A> property to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,18 +171,18 @@
         <value>Gets the <see cref="T:System.Net.WebRequest" /> object that was used to request the specified content. If navigating to an object, <see cref="P:System.Windows.Navigation.NavigationFailedEventArgs.WebRequest" /> is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.WebRequest?displayProperty=fullName> is an abstract base class that encapsulates a web request, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebRequest?displayProperty=fullName> and extends it with protocol-specific state and behavior, including:  
-  
+<xref:System.Net.WebRequest?displayProperty=fullName> is an abstract base class that encapsulates a web request, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebRequest?displayProperty=fullName> and extends it with protocol-specific state and behavior, including:  
+ 
 -   <xref:System.IO.Packaging.PackWebRequest>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `pack://` scheme to request application data files (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
-  
+ 
 -   <xref:System.Net.HttpWebRequest>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `http://` scheme to request files from Web servers.  
-  
+ 
 -   <xref:System.Net.FtpWebRequest>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `ftp://` scheme to request files from FTP servers.  
-  
+ 
 -   <xref:System.Net.FileWebRequest>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `file://` scheme to request local files.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,18 +204,18 @@
         <value>The <see cref="T:System.Net.WebResponse" /> that was returned after attempting to download the requested the specified content. If the navigation failed, <see cref="P:System.Windows.Navigation.NavigationFailedEventArgs.WebResponse" /> is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.WebResponse?displayProperty=fullName> is an abstract base class that encapsulates a web response, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebResponse?displayProperty=fullName> and extends it with protocol-specific state, including:  
-  
+<xref:System.Net.WebResponse?displayProperty=fullName> is an abstract base class that encapsulates a web response, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebResponse?displayProperty=fullName> and extends it with protocol-specific state, including:  
+ 
 -   <xref:System.IO.Packaging.PackWebResponse>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `pack://` scheme to request application data files (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
-  
+ 
 -   <xref:System.Net.HttpWebResponse>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `http://` scheme to request files from Web servers.  
-  
+ 
 -   <xref:System.Net.FtpWebResponse>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `ftp://` scheme to request files from FTP servers.  
-  
+ 
 -   <xref:System.Net.FileWebResponse>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `file://` scheme to request local files.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

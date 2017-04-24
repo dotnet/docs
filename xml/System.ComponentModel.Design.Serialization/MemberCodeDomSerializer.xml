@@ -14,12 +14,12 @@
     <summary>Provides the base class for serializing a reflection primitive within the object graph.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> class is a "meta" serializer; that is, is a serializer that does not serialize part of the object graph, but instead serializes a reflection primitive within the object graph. For example, a <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> would be associated with a <xref:System.ComponentModel.PropertyDescriptor> in order for it to serialize a property. <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> objects enable constructs, such as properties and events, to be logical, rather than requiring them to have a physical backing in code.  
-  
- Unlike <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> classes, <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> objects must be able to deserialize.  
-  
+The <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> class is a "meta" serializer; that is, is a serializer that does not serialize part of the object graph, but instead serializes a reflection primitive within the object graph. For example, a <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> would be associated with a <xref:System.ComponentModel.PropertyDescriptor> in order for it to serialize a property. <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> objects enable constructs, such as properties and events, to be logical, rather than requiring them to have a physical backing in code.  
+ 
+Unlike <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> classes, <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> objects must be able to deserialize.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Serializes the given member descriptor on the given value to a statement collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method actually performs the serialization. When the member is serialized the necessary statements will be added to the statements collection.  
-  
+This method actually performs the serialization. When the member is serialized the necessary statements will be added to the statements collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,10 +99,10 @@
           <see langword="true" />, if the member described by <paramref name="descriptor" /> should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` if the given member descriptor should be serialized, or `false` if there is no need to serialize the member.  
-  
+This method returns `true` if the given member descriptor should be serialized, or `false` if there is no need to serialize the member.  
+ 
  ]]></format>
         </remarks>
       </Docs>

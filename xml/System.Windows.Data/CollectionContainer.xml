@@ -54,21 +54,21 @@
         <value>The collection to add. The default is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Collection"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Data.CollectionContainer.CollectionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
 <a name="xamlTextUsage_Collection"></a>   
 ## XAML Text Usage  
- In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], you can use the <xref:System.Windows.Data.Binding> syntax to bind to a collection. For more information, see the <xref:System.Windows.Data.Binding> type.  
-  
+In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], you can use the <xref:System.Windows.Data.Binding> syntax to bind to a collection. For more information, see the <xref:System.Windows.Data.Binding> type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
           <see langword="true" /> if the property value has changed from its default; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.CollectionContainer.Collection%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.CollectionContainer> or developing your own control incorporating the <xref:System.Windows.Data.CollectionContainer>.  
-  
+This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.CollectionContainer.Collection%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.CollectionContainer> or developing your own control incorporating the <xref:System.Windows.Data.CollectionContainer>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

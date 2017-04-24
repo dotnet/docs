@@ -14,22 +14,22 @@
     <summary>Implements a custom upgrade provider, inherited from this <see langword="abstract" /> base class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of a stream upgrade is to build a compression stream directly on top of the transport stream. To add a security upgrade, you additionally implement a class that derives from <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider>. You can implement multiple upgrades, each wrapping the preceding one.  
-  
- The upgrade process has the following steps:  
-  
+An example of a stream upgrade is to build a compression stream directly on top of the transport stream. To add a security upgrade, you additionally implement a class that derives from <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider>. You can implement multiple upgrades, each wrapping the preceding one.  
+ 
+The upgrade process has the following steps:  
+ 
 1.  Implement a class that derives from <xref:System.ServiceModel.Channels.StreamUpgradeProvider>.  
-  
+ 
 2.  Register it. You do this by creating a binding element for it, and registering the provider in a custom binding.  
-  
+ 
 3.  The derived class that you implement creates an instance of <xref:System.ServiceModel.Channels.StreamUpgradeInitiator>, which at run time initiates a request to the other end of its connection to upgrade the channel transport layer.  
-  
+ 
 4.  The derived class that you implement creates an instance of <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor>, which at run time receives the upgrade request from the preceding step and, if possible, accepts the upgrade and returns the upgraded stream to the other side of its connection.  
-  
+ 
 5.  If there are additional upgrade requests, they are processed sequentially, as described in the preceding two steps.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Time-out properties are set to `null`.  
-  
+Time-out properties are set to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The provided time-outs control the default Open and Close time-outs for a transport using this upgrade provider.  
-  
+The provided time-outs control the default Open and Close time-outs for a transport using this upgrade provider.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,10 +99,10 @@
         <returns>Returns an instance of <see cref="T:System.ServiceModel.Channels.StreamUpgradeAcceptor" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates the associated UpgradeAcceptor for this upgrade provider that can accept upgrade requests from the matching UpgradeInitiator.  
-  
+This method creates the associated UpgradeAcceptor for this upgrade provider that can accept upgrade requests from the matching UpgradeInitiator.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,10 +130,10 @@
         <returns>Returns an instance of <see cref="T:System.ServiceModel.Channels.StreamUpgradeInitiator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates the associated <xref:System.ServiceModel.Channels.StreamUpgradeInitiator> for this upgrade provider that creates upgrade requests for the matching <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor> at the endpoint provided.  
-  
+This method creates the associated <xref:System.ServiceModel.Channels.StreamUpgradeInitiator> for this upgrade provider that creates upgrade requests for the matching <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor> at the endpoint provided.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,10 +210,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set explicit values for time-out properties, use <xref:System.ServiceModel.Channels.StreamUpgradeProvider.%23ctor%2A>. Otherwise, use <xref:System.ServiceModel.Channels.StreamUpgradeProvider.%23ctor%2A>, which will set the time-out properties to `null`.  
-  
+To set explicit values for time-out properties, use <xref:System.ServiceModel.Channels.StreamUpgradeProvider.%23ctor%2A>. Otherwise, use <xref:System.ServiceModel.Channels.StreamUpgradeProvider.%23ctor%2A>, which will set the time-out properties to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

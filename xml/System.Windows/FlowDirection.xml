@@ -18,22 +18,22 @@
     <summary>Defines constants that specify the content flow direction for text and [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The flow direction of content typically corresponds to the innate flow direction of the language being represented. Hebrew and Arabic provide examples of languages that naturally flow from right-to-left. English, German, and Russian provide examples of languages that naturally flow from left-to-right.  
+The flow direction of content typically corresponds to the innate flow direction of the language being represented. Hebrew and Arabic provide examples of languages that naturally flow from right-to-left. English, German, and Russian provide examples of languages that naturally flow from left-to-right.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.FlowDirection> enumeration to set the <xref:System.Windows.Documents.Block.FlowDirection%2A> attribute of a flow content <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_flowdirectionxaml)]  
-  
- The following example shows how to use the <xref:System.Windows.FlowDirection> enumeration programmatically.  
-  
- [!code-csharp[BlockSnippets#_Block_FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_flowdirection)]
- [!code-vb[BlockSnippets#_Block_FlowDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_flowdirection)]  
-  
+The following example shows how to use the <xref:System.Windows.FlowDirection> enumeration to set the <xref:System.Windows.Documents.Block.FlowDirection%2A> attribute of a flow content <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
+ 
+[!code-xml[BlockSnippets#_Block_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_flowdirectionxaml)]  
+ 
+The following example shows how to use the <xref:System.Windows.FlowDirection> enumeration programmatically.  
+ 
+[!code-csharp[BlockSnippets#_Block_FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_flowdirection)]
+[!code-vb[BlockSnippets#_Block_FlowDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_flowdirection)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

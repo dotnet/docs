@@ -19,10 +19,10 @@
     <summary>Represents an immutable (read-only) pair of "Name" and "Description" strings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.RightsManagement.LocalizedNameDescriptionPair> is a basic building block for structures that express locale specific information for an <xref:System.Security.RightsManagement.UnsignedPublishLicense>.  
-  
+<xref:System.Security.RightsManagement.LocalizedNameDescriptionPair> is a basic building block for structures that express locale specific information for an <xref:System.Security.RightsManagement.UnsignedPublishLicense>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <value>The locale description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.RightsManagement.LocalizedNameDescriptionPair.Description%2A> property is set as a parameter to the <xref:System.Security.RightsManagement.LocalizedNameDescriptionPair.%23ctor%2A> constructor.  
-  
+The <xref:System.Security.RightsManagement.LocalizedNameDescriptionPair.Description%2A> property is set as a parameter to the <xref:System.Security.RightsManagement.LocalizedNameDescriptionPair.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <value>The locale name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.RightsManagement.LocalizedNameDescriptionPair.Name%2A> property is set as a parameter to the <xref:System.Security.RightsManagement.LocalizedNameDescriptionPair.%23ctor%2A> constructor.  
-  
+The <xref:System.Security.RightsManagement.LocalizedNameDescriptionPair.Name%2A> property is set as a parameter to the <xref:System.Security.RightsManagement.LocalizedNameDescriptionPair.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

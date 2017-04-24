@@ -14,12 +14,12 @@
     <summary>Serializes the view state for a Web Forms page. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The limited object serialization (LOS) formatter is designed for highly compact ASCII format serialization. This class supports serializing any object graph, but is optimized for those containing strings, arrays, and hash tables. It offers second order optimization for many of the .NET Framework primitive types.  
-  
- This is a private format and remains consistent only for the lifetime of a Web request.  
-  
+The limited object serialization (LOS) formatter is designed for highly compact ASCII format serialization. This class supports serializing any object graph, but is optimized for those containing strings, arrays, and hash tables. It offers second order optimization for many of the .NET Framework primitive types.  
+ 
+This is a private format and remains consistent only for the lifetime of a Web request.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,13 +102,13 @@
         <returns>A LOS-formatted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.Stream> object to a LOS-formatted object.  
-  
+This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.Stream> object to a LOS-formatted object.  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,13 +134,13 @@
         <returns>A LOS-formatted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.TextReader> object to a LOS-formatted object.  
-  
+This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.TextReader> object to a LOS-formatted object.  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,13 +166,13 @@
         <returns>A LOS-formatted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the specified view-state value to a LOS-formatted object.  
-  
+This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the specified view-state value to a LOS-formatted object.  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The view state is invalid.</exception>
@@ -200,10 +200,10 @@
         <summary>Transforms a limited object serialization (LOS)-formatted object into a view-state value and places the results into a <see cref="T:System.IO.Stream" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This version of the <xref:System.Web.UI.LosFormatter.Serialize%2A> method is used to transform a LOS-formatted object into a view-state value. The results are then placed into a <xref:System.IO.Stream> object.  
-  
+This version of the <xref:System.Web.UI.LosFormatter.Serialize%2A> method is used to transform a LOS-formatted object into a view-state value. The results are then placed into a <xref:System.IO.Stream> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <summary>Transforms a limited object serialization (LOS)-formatted object into a view-state value and places the results into a <see cref="T:System.IO.TextWriter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This version of the <xref:System.Web.UI.LosFormatter.Serialize%2A> method is used to transform a LOS-formatted object into a view-state value. The results are then placed into a <xref:System.IO.TextWriter> object.  
-  
+This version of the <xref:System.Web.UI.LosFormatter.Serialize%2A> method is used to transform a LOS-formatted object into a view-state value. The results are then placed into a <xref:System.IO.TextWriter> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,12 +247,12 @@
         <summary>Transforms the specified view-state value to a limited object serialization (LOS)-formatted object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

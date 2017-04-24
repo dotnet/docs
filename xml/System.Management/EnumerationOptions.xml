@@ -14,13 +14,13 @@
     <summary>Provides a base class for query and enumeration-related options objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-csharp[wminet_EnumerationOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions/cs/EnumerationOptions.cs#1)]
- [!code-vb[wminet_EnumerationOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions/vb/EnumerationOptions.vb#1)]  
-  
+The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
+ 
+[!code-csharp[wminet_EnumerationOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions/cs/EnumerationOptions.cs#1)]
+[!code-vb[wminet_EnumerationOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions/vb/EnumerationOptions.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,20 +39,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.EnumerationOptions" /> class with default values (see the individual property descriptions for what the default values are). This is the default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-csharp[wminet_EnumerationOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions()/cs/EnumerationOptions().cs#1)]
- [!code-vb[wminet_EnumerationOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions()/vb/EnumerationOptions().vb#1)]  
-  
+The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
+ 
+[!code-csharp[wminet_EnumerationOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions()/cs/EnumerationOptions().cs#1)]
+[!code-vb[wminet_EnumerationOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions()/vb/EnumerationOptions().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,20 +99,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.EnumerationOptions" /> class to be used for queries or enumerations, allowing the user to specify values for the different options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-csharp[wminet_EnumerationOptions(10)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions(10)/cs/EnumerationOptions(10).cs#1)]
- [!code-vb[wminet_EnumerationOptions(10)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions(10)/vb/EnumerationOptions(10).vb#1)]  
-  
+The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
+ 
+[!code-csharp[wminet_EnumerationOptions(10)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions(10)/cs/EnumerationOptions(10).cs#1)]
+[!code-vb[wminet_EnumerationOptions(10)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions(10)/vb/EnumerationOptions(10).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,23 +134,23 @@
         <value>Returns an <see cref="T:System.Int32" /> value used for the block size in block operations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- The default value is 1.  
-  
+The default value is 1.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-csharp[wminet_EnumerationOptions_BlockSize#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions_BlockSize/cs/EnumerationOptions_BlockSize.cs#1)]
- [!code-vb[wminet_EnumerationOptions_BlockSize#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions_BlockSize/vb/EnumerationOptions_BlockSize.vb#1)]  
-  
+The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
+ 
+[!code-csharp[wminet_EnumerationOptions_BlockSize#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions_BlockSize/cs/EnumerationOptions_BlockSize.cs#1)]
+[!code-vb[wminet_EnumerationOptions_BlockSize#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions_BlockSize/vb/EnumerationOptions_BlockSize.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,12 +173,12 @@
         <returns>The cloned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,23 +200,23 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether *direct access* to the WMI provider is requested for the specified class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if only objects of the specified class should be received, without regard to derivation or inheritance; otherwise, `false`. The default value is `false`.  
-  
+`true` if only objects of the specified class should be received, without regard to derivation or inheritance; otherwise, `false`. The default value is `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-csharp[wminet_EnumerationOptions_DirectRead#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions_DirectRead/cs/EnumerationOptions_DirectRead.cs#1)]
- [!code-vb[wminet_EnumerationOptions_DirectRead#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions_DirectRead/vb/EnumerationOptions_DirectRead.vb#1)]  
-  
+The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
+ 
+[!code-csharp[wminet_EnumerationOptions_DirectRead#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions_DirectRead/cs/EnumerationOptions_DirectRead.cs#1)]
+[!code-vb[wminet_EnumerationOptions_DirectRead#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions_DirectRead/vb/EnumerationOptions_DirectRead.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,15 +238,15 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the objects returned should have locatable information in them.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if WMI should ensure all returned objects have valid paths; otherwise, `false`. The default value is `false`.  
-  
+`true` if WMI should ensure all returned objects have valid paths; otherwise, `false`. The default value is `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,23 +268,23 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether recursive enumeration is requested into all classes derived from the specified superclass.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if recursive enumeration is requested into all classes derived from the specified superclass; otherwise, `false`. The default value is `false`.  
-  
+`true` if recursive enumeration is requested into all classes derived from the specified superclass; otherwise, `false`. The default value is `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-csharp[wminet_EnumerationOptions_EnumerateDeep#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions_EnumerateDeep/cs/EnumerationOptions_EnumerateDeep.cs#1)]
- [!code-vb[wminet_EnumerationOptions_EnumerateDeep#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions_EnumerateDeep/vb/EnumerationOptions_EnumerateDeep.vb#1)]  
-  
+The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
+ 
+[!code-csharp[wminet_EnumerationOptions_EnumerateDeep#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions_EnumerateDeep/cs/EnumerationOptions_EnumerateDeep.cs#1)]
+[!code-vb[wminet_EnumerationOptions_EnumerateDeep#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions_EnumerateDeep/vb/EnumerationOptions_EnumerateDeep.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,15 +306,15 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the query should return a prototype of the result set instead of the actual results.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if the query should return a prototype of the result set instead of the actual results; otherwise, `false`. The default value is `false`.  
-  
+`true` if the query should return a prototype of the result set instead of the actual results; otherwise, `false`. The default value is `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,15 +336,15 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the invoked operation should be performed in a synchronous or semisynchronous fashion.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if the invoked operation should be performed in a synchronous or semisynchronous fashion; otherwise, `false`. The default value is `true`.  
-  
+`true` if the invoked operation should be performed in a synchronous or semisynchronous fashion; otherwise, `false`. The default value is `true`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,15 +366,15 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the collection is assumed to be rewindable.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if the collection is assumed to be rewindable; otherwise, `false`. The default value is `true`.  
-  
+`true` if the collection is assumed to be rewindable; otherwise, `false`. The default value is `true`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,16 +396,16 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the objects returned from WMI should contain amended information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If descriptions and other amended information are not of interest, setting this property value to `false` is more efficient.  
-  
+If descriptions and other amended information are not of interest, setting this property value to `false` is more efficient.  
+ 
 ## Property Value  
- `true` if the objects returned from WMI should contain amended information; otherwise, `false`. The default value is `false`.  
-  
+`true` if the objects returned from WMI should contain amended information; otherwise, `false`. The default value is `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

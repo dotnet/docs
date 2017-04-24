@@ -89,10 +89,10 @@
         <value>The instance ID of the activity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An activity can occur multiple times during processing, such as an activity that is processed within a loop. The <xref:System.Activities.Tracking.ActivityInfo.Id%2A> contains the ID of the activity and does not change while the <xref:System.Activities.Tracking.ActivityInfo.InstanceId%2A> contains the ID of the specific instance of the activity. The <xref:System.Activities.Tracking.ActivityInfo.InstanceId%2A> is different for each specific instance. For example, an activity that is processed in a loop would have a different <xref:System.Activities.Tracking.ActivityInfo.InstanceId%2A> for each cycle through the loop while the <xref:System.Activities.Tracking.ActivityInfo.Id%2A> would remain the same.  
-  
+An activity can occur multiple times during processing, such as an activity that is processed within a loop. The <xref:System.Activities.Tracking.ActivityInfo.Id%2A> contains the ID of the activity and does not change while the <xref:System.Activities.Tracking.ActivityInfo.InstanceId%2A> contains the ID of the specific instance of the activity. The <xref:System.Activities.Tracking.ActivityInfo.InstanceId%2A> is different for each specific instance. For example, an activity that is processed in a loop would have a different <xref:System.Activities.Tracking.ActivityInfo.InstanceId%2A> for each cycle through the loop while the <xref:System.Activities.Tracking.ActivityInfo.Id%2A> would remain the same.  
+ 
  ]]></format>
         </remarks>
       </Docs>

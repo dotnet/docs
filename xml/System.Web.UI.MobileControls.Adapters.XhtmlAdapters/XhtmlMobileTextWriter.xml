@@ -19,31 +19,31 @@
     <summary>Provides text writer functionality for devices targeted by the XHTML adapter set, including Extensible Hypertext Markup Language (XHTML), XHTML Mobile, and Wireless Markup Language (WML). For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- XHTML is an XML-compliant markup that is based on HTML 4.1 and allows you to create Web sites suitable for multiple device types. It merges HTML's ease of use with XML's strict element guidelines to produce a markup language with a wide range of format and style options and reduced markup tag ambiguity. This class provides formatting capabilities that ASP.NET server controls use when rendering XHTML content to clients. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> renders markup that meets the standards of three different XHTML doc types: XHTML Basic, which supports limited style and format elements; XHTML Mobile Profile, which supports inline style sheets; and WML 2.0, which is based on XHTML 1.1 and supports cascading style sheets.  
-  
- This class is used primarily by developers of custom mobile page and control adapters.  
-  
- The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> class can render all HTML elements, attributes, and style attributes, but, unlike the <xref:System.Web.UI.HtmlTextWriter> class, does not allow title capitalization of these markup elements.  
-  
- An <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> instantiates an <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> and depending on the capabilities of the target device, initializes a number of properties, such as <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SupportsNoWrapStyle%2A>, <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine%2A>, and <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks%2A>, that assist the text writer in rendering the page and its controls.  
-  
- Your adapter can use a variety of methods to apply styles and control formatting:  
-  
+XHTML is an XML-compliant markup that is based on HTML 4.1 and allows you to create Web sites suitable for multiple device types. It merges HTML's ease of use with XML's strict element guidelines to produce a markup language with a wide range of format and style options and reduced markup tag ambiguity. This class provides formatting capabilities that ASP.NET server controls use when rendering XHTML content to clients. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> renders markup that meets the standards of three different XHTML doc types: XHTML Basic, which supports limited style and format elements; XHTML Mobile Profile, which supports inline style sheets; and WML 2.0, which is based on XHTML 1.1 and supports cascading style sheets.  
+ 
+This class is used primarily by developers of custom mobile page and control adapters.  
+ 
+The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> class can render all HTML elements, attributes, and style attributes, but, unlike the <xref:System.Web.UI.HtmlTextWriter> class, does not allow title capitalization of these markup elements.  
+ 
+An <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> instantiates an <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> and depending on the capabilities of the target device, initializes a number of properties, such as <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SupportsNoWrapStyle%2A>, <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine%2A>, and <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks%2A>, that assist the text writer in rendering the page and its controls.  
+ 
+Your adapter can use a variety of methods to apply styles and control formatting:  
+ 
 -   <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterStyle%2A> and <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitStyle%2A>,  
-  
+ 
 -   <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterLayout%2A> and <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitLayout%2A>, and  
-  
+ 
 -   <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterFormat%2A> and <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitFormat%2A>.  
-  
-    > [!NOTE]
-    >  This class derives from the <xref:System.Web.UI.MobileControls.Adapters.MobileTextWriter> class, which in turn derives from the <xref:System.Web.UI.MobileControls.Adapters.MultiPartWriter> class, and much of its functionality is provided by these base classes.  
-  
- You can use the members of this class, and any members it inherits from the <xref:System.Web.UI.MobileControls.Adapters.MobileTextWriter> class, to create custom text writers to use in a custom XHTML page or in class adapters. You can also create new derived classes that override the standard behavior of the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> class.  
-  
- Device filtering is required in order to use a specific adapter or text writer for a server control. For more information about device filtering, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff) and [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19).  
-  
+ 
+   > [!NOTE]
+   >  This class derives from the <xref:System.Web.UI.MobileControls.Adapters.MobileTextWriter> class, which in turn derives from the <xref:System.Web.UI.MobileControls.Adapters.MultiPartWriter> class, and much of its functionality is provided by these base classes.  
+ 
+You can use the members of this class, and any members it inherits from the <xref:System.Web.UI.MobileControls.Adapters.MobileTextWriter> class, to create custom text writers to use in a custom XHTML page or in class adapters. You can also create new derived classes that override the standard behavior of the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> class.  
+ 
+Device filtering is required in order to use a specific adapter or text writer for a server control. For more information about device filtering, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff) and [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19).  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -68,12 +68,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" /> class for the provided device, using the <paramref name="writer" /> parameter as the base writer object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Text writers are instantiated by a corresponding page adapter for a specific target device, and then used by the page adapter and the adapters for each control on the page.  
-  
- This class is used primarily by developers of custom mobile page and control adapters.  
-  
+Text writers are instantiated by a corresponding page adapter for a specific target device, and then used by the page adapter and the adapters for each control on the page.  
+ 
+This class is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,45 +98,45 @@
         <summary>Adds a provided variable name to a list of variables to be embedded in pages for WML devices. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Certain WML devices require a `<wml:onevent>` element to provide information for postback.  
+Certain WML devices require a `<wml:onevent>` element to provide information for postback.  
+ 
+WML devices provide limited functionality for navigation and postback, and require WML commands and variables to be written to the page.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
   
- WML devices provide limited functionality for navigation and postback, and require WML commands and variables to be written to the page.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
-   
-  
+ 
 ## Examples  
- When rendering the page, the following `<wml:onevent>` structure might be included in the page's markup:  
-  
- `<wml:onevent type="onenterforward">`  
-  
- `<wml:refresh>`  
-  
- `<wmlsetvar name="buttonSaveClicked" />`  
-  
- `<wmlsetvar name="nextPage" value="3" />`  
-  
- `</wml:refresh>`  
-  
- `</wml:onevent>`  
-  
- Depending on the user's actions, the values might be modified by scripts on the page to return the following structure on postback:  
-  
- `<wml:onevent type="onenterforward">`  
-  
- `<wml:refresh>`  
-  
- `<wmlsetvar name="buttonSaveClicked" value="true" />`  
-  
- `<wmlsetvar name="nextPage" value="9" />`  
-  
- `</wml:refresh>`  
-  
- `</wml:onevent>`  
-  
+When rendering the page, the following `<wml:onevent>` structure might be included in the page's markup:  
+ 
+`<wml:onevent type="onenterforward">`  
+ 
+`<wml:refresh>`  
+ 
+`<wmlsetvar name="buttonSaveClicked" />`  
+ 
+`<wmlsetvar name="nextPage" value="3" />`  
+ 
+`</wml:refresh>`  
+ 
+`</wml:onevent>`  
+ 
+Depending on the user's actions, the values might be modified by scripts on the page to return the following structure on postback:  
+ 
+`<wml:onevent type="onenterforward">`  
+ 
+`<wml:refresh>`  
+ 
+`<wmlsetvar name="buttonSaveClicked" value="true" />`  
+ 
+`<wmlsetvar name="nextPage" value="9" />`  
+ 
+`</wml:refresh>`  
+ 
+`</wml:onevent>`  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,45 +163,45 @@
         <summary>Adds a provided variable name and value to a list of variables to be embedded in pages for WML devices. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Certain WML 2.0 devices require a WML `<wml:onevent>` element to provide information for postback.  
+Certain WML 2.0 devices require a WML `<wml:onevent>` element to provide information for postback.  
+ 
+WML devices provide limited functionality for navigation and postback, and require WML commands and variables to be written to the page.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
   
- WML devices provide limited functionality for navigation and postback, and require WML commands and variables to be written to the page.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
-   
-  
+ 
 ## Examples  
- When rendering the page, the following `<wml:onevent>` structure might be included in the page's markup:  
-  
- `<wml:onevent type="onenterforward">`  
-  
- `<wml:refresh>`  
-  
- `<wmlsetvar name="buttonSaveClicked" />`  
-  
- `<wmlsetvar name="nextPage" value="3" />`  
-  
- `</wml:refresh>`  
-  
- `</wml:onevent>`  
-  
- Depending on the user's actions, the values might be modified by scripts on the page to return the following structure on postback:  
-  
- `<wml:onevent type="onenterforward">`  
-  
- `<wml:refresh>`  
-  
- `<wmlsetvar name="buttonSaveClicked" value="true" />`  
-  
- `<wmlsetvar name="nextPage" value="9" />`  
-  
- `</wml:refresh>`  
-  
- `</wml:onevent>`  
-  
+When rendering the page, the following `<wml:onevent>` structure might be included in the page's markup:  
+ 
+`<wml:onevent type="onenterforward">`  
+ 
+`<wml:refresh>`  
+ 
+`<wmlsetvar name="buttonSaveClicked" />`  
+ 
+`<wmlsetvar name="nextPage" value="3" />`  
+ 
+`</wml:refresh>`  
+ 
+`</wml:onevent>`  
+ 
+Depending on the user's actions, the values might be modified by scripts on the page to return the following structure on postback:  
+ 
+`<wml:onevent type="onenterforward">`  
+ 
+`<wml:refresh>`  
+ 
+`<wmlsetvar name="buttonSaveClicked" value="true" />`  
+ 
+`<wmlsetvar name="nextPage" value="9" />`  
+ 
+`</wml:refresh>`  
+ 
+`</wml:onevent>`  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <summary>Instructs the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object to save all rendered markup until written out in its entirety by the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EndCachedRendering" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,14 +248,14 @@
         <value>A <see langword="string" /> containing a unique key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some devices do not allow inline styles in elements, but require style information to be provided from a linked style sheet. If the linked style sheet is stored in the <xref:System.Web.Caching.Cache>, the URL contains a unique <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.CacheKey%2A> that identifies the style sheet to return. For these target devices, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> moves style information from rendered controls to a style sheet for caching.  
-  
- A page adapter can instruct the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> to save the style sheet in the <xref:System.Web.Caching.Cache> using <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetCacheKey%2A>, or in the <xref:System.Web.HttpContext.Session%2A> using <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetSessionKey%2A> before rendering the page.  
-  
- This property is used primarily by developers of custom mobile page and control adapters.  
-  
+Some devices do not allow inline styles in elements, but require style information to be provided from a linked style sheet. If the linked style sheet is stored in the <xref:System.Web.Caching.Cache>, the URL contains a unique <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.CacheKey%2A> that identifies the style sheet to return. For these target devices, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> moves style information from rendered controls to a style sheet for caching.  
+ 
+A page adapter can instruct the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> to save the style sheet in the <xref:System.Web.Caching.Cache> using <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetCacheKey%2A>, or in the <xref:System.Web.HttpContext.Session%2A> using <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetSessionKey%2A> before rendering the page.  
+ 
+This property is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetCacheKey(System.Web.Caching.Cache)" /> method has not been called.</exception>
@@ -278,10 +278,10 @@
         <summary>Removes a break that was to be rendered after writing the current element to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,10 +303,10 @@
         <value>A <see langword="string" /> containing style-sheet information if the property has been set; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used primarily by developers of custom mobile page and control adapters.  
-  
+This property is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,10 +328,10 @@
         <summary>Writes out the cached markup and instructs the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> not to save rendered markup. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,12 +356,12 @@
         <summary>Sets the provided style as the current formatting style if the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering" /> method has been called. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering%2A> has been called, the `style` is set as the current style, and a beginning `<span>` element that implements the style is written to the output stream.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+If <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering%2A> has been called, the `style` is set as the current style, and a beginning `<span>` element that implements the style is written to the output stream.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,12 +386,12 @@
         <summary>Sets the provided style as the current layout style if the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering" /> method has been called. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering%2A> has been called, the `style` is set as the current style, and a beginning `<span>` element that implements the style is written to the output stream.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+If <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering%2A> has been called, the `style` is set as the current style, and a beginning `<span>` element that implements the style is written to the output stream.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -416,12 +416,12 @@
         <summary>Sets the provided style as the current style if the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering" /> method has been called. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering%2A> has been called, `style` is set as the current style, and a beginning `<span>` element that implements the style is written to the output stream.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+If <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering%2A> has been called, `style` is set as the current style, and a beginning `<span>` element that implements the style is written to the output stream.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@
         <summary>Removes the current style, restores the previous style as the current formatting style, and calls the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" /> method to close the current element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -476,10 +476,10 @@
         <summary>Removes the current style, restores the previous style as the current formatting style, and calls the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" /> method to close the current element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -504,10 +504,10 @@
         <summary>Removes the current style, restores the previous style as the current layout style, and calls the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" /> method to close the current element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -534,10 +534,10 @@
         <summary>Removes the current style, restores the previous style as the current layout style, and calls the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" /> method to close the current element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -562,10 +562,10 @@
         <summary>Removes the current style, restores the previous style as the current style, and calls the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" /> method to close the current element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -607,12 +607,12 @@
         <summary>Marks the location in the output stream to insert the <see langword="&lt;wml:onevent&gt;" /> element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called by the page adapter during rendering.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+Called by the page adapter during rendering.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -634,14 +634,14 @@
         <value>A <see langword="string" /> containing the key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some devices do not allow inline styles in elements, but require style information to be provided from a linked style sheet. If the linked style sheet is stored in the <xref:System.Web.HttpContext.Session%2A>, the URL contains a unique <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SessionKey%2A> that identifies the style sheet to return. For these target devices, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> moves style information from rendered controls to a style sheet for caching in the <xref:System.Web.HttpContext.Session%2A>.  
-  
- A page adapter can instruct the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> to save the style sheet in the <xref:System.Web.HttpContext.Session%2A> using <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetSessionKey%2A>, or in the <xref:System.Web.Caching.Cache> using <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetCacheKey%2A> before rendering the page.  
-  
- This property is used primarily by developers of custom mobile page and control adapters.  
-  
+Some devices do not allow inline styles in elements, but require style information to be provided from a linked style sheet. If the linked style sheet is stored in the <xref:System.Web.HttpContext.Session%2A>, the URL contains a unique <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SessionKey%2A> that identifies the style sheet to return. For these target devices, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> moves style information from rendered controls to a style sheet for caching in the <xref:System.Web.HttpContext.Session%2A>.  
+ 
+A page adapter can instruct the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> to save the style sheet in the <xref:System.Web.HttpContext.Session%2A> using <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetSessionKey%2A>, or in the <xref:System.Web.Caching.Cache> using <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetCacheKey%2A> before rendering the page.  
+ 
+This property is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetSessionKey(System.Web.SessionState.HttpSessionState)" /> method has not been called.</exception>
@@ -667,10 +667,10 @@
         <summary>Sets the provided style as the style for the <see langword="&lt;body&gt;" /> element of the page and as the default style for its child controls. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -695,10 +695,10 @@
         <summary>Creates a unique <see langword="string" /> to use when retrieving the style sheet from the cache. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -720,10 +720,10 @@
         <summary>Sets a line break to be rendered after rendering the current element, if it is not a block element and if the <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" /> property is <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -748,10 +748,10 @@
         <summary>Creates a unique string for a client to use to retrieve a style sheet from the <see cref="P:System.Web.HttpContext.Session" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -774,10 +774,10 @@
           <see langword="true" /> if the device supports the "white-space: nowrap;" style-sheet attribute; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be initialized by the page adapter, and is used primarily by developers of custom mobile page and control adapters.  
-  
+This property must be initialized by the page adapter, and is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -800,10 +800,10 @@
           <see langword="true" /> to suppress the line terminator string, or <see langword="false" /> to write the line terminator string to the output.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be initialized by the page adapter, and is used primarily by developers of custom mobile page and control adapters.  
-  
+This property must be initialized by the page adapter, and is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -826,10 +826,10 @@
           <see langword="false" /> if the device does not require using <see langword="&lt;div&gt; " />tags for line breaks; otherwise, <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be initialized by the page adapter, and is used primarily by developers of custom mobile page and control adapters.  
-  
+This property must be initialized by the page adapter, and is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -858,12 +858,12 @@
         <summary>Writes an attribute and its value to the current element using the provided attribute and value, and encodes the value if specified. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is `null` or an empty string, no attribute is written because XHTML requires that all attributes have values.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+If the value is `null` or an empty string, no attribute is written because XHTML requires that all attributes have values.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -888,12 +888,12 @@
         <summary>Writes any tab spacing and the opening tag of the specified markup element to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is a pending break, <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine%2A> is `false`, and the provided tag is not a block element (such as `<p>`, `<div>`, `<ol>`, or `<table>`), which automatically break before and after the element, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WritePendingBreak%2A> method is called before writing the beginning tag.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+If there is a pending break, <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine%2A> is `false`, and the provided tag is not a block element (such as `<p>`, `<div>`, `<ol>`, or `<table>`), which automatically break before and after the element, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WritePendingBreak%2A> method is called before writing the beginning tag.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -915,12 +915,12 @@
         <summary>If <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" /> is <see langword="false" />, writes a markup element that adds a new line to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Depending on the value of <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks%2A>, the new line markup could be either a `<br/>` tag or a `</div><div>` structure.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+Depending on the value of <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks%2A>, the new line markup could be either a `<br/>` tag or a `</div><div>` structure.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -942,10 +942,10 @@
         <summary>Writes out all markup cached since calling the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -970,18 +970,18 @@
         <summary>Writes a <see langword="&lt;!DOCTYPE&gt;" /> declaration that is unique to target devices represented by the provided <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype" /> value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The page adapter calls this method, and depending on the `type`, writes the following document type declarations:  
-  
+The page adapter calls this method, and depending on the `type`, writes the following document type declarations:  
+ 
 |Type|Description|  
 |----------|-----------------|  
 |<xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype>|\<\!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">|  
 |<xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype>|\<\!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">|  
 |<xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype>|\<\!DOCTYPE html PUBLIC "-//WAPFORUM//DTD WML 2.0//EN" "http://www.wapforum.org/dtd/wml20.dtd">|  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1006,10 +1006,10 @@
         <summary>Encodes and writes the provided value to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1034,12 +1034,12 @@
         <summary>Writes any tab spacing and the closing tag of the specified markup element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the tag is not a block element, such as `<p>`, `<div>`, `<table>`, `<ol>`, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WritePendingBreak%2A> method is called before writing the beginning tag.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+If the tag is not a block element, such as `<p>`, `<div>`, `<table>`, `<ol>`, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WritePendingBreak%2A> method is called before writing the beginning tag.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1064,12 +1064,12 @@
         <summary>Writes any tab spacing and the full opening tag of the specified markup element to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the tag is not a block element, such as `<p>`, `<div>`, `<table>`, `<ol>`, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WritePendingBreak%2A> method is called before writing the beginning tag.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+If the tag is not a block element, such as `<p>`, `<div>`, `<table>`, `<ol>`, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WritePendingBreak%2A> method is called before writing the beginning tag.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1094,12 +1094,12 @@
         <summary>Writes the markup for a hidden field to the output stream using the provided name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteHiddenField%2A> method is useful for pages where client-side code will add and modify the value of this field for postback, because no initial value is provided.  
-  
- This method is used primarily by developers of custom mobile page and control adapters.  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteHiddenField%2A> method is useful for pages where client-side code will add and modify the value of this field for postback, because no initial value is provided.  
+ 
+This method is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1476,10 +1476,10 @@
         <summary>Writes an encoded URL, which includes a query-string parameter, to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Both the name of the parameter and the URL value are encoded, and an equal sign (=) is inserted between them. Spaces in the `name` or `value` strings are encoded as plus signs (+), and equal signs (=) are encoded as %3d.  
-  
+Both the name of the parameter and the URL value are encoded, and an equal sign (=) is inserted between them. Spaces in the `name` or `value` strings are encoded as plus signs (+), and equal signs (=) are encoded as %3d.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1501,12 +1501,12 @@
         <summary>Writes an XML declaration along with the current document encoding value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current encoding is UTF-8, the declaration output would be:  
-  
- `<?xml version="1.0" encoding="UTF-8"?>`  
-  
+If the current encoding is UTF-8, the declaration output would be:  
+ 
+`<?xml version="1.0" encoding="UTF-8"?>`  
+ 
  ]]></format>
         </remarks>
       </Docs>

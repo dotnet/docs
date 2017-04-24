@@ -21,10 +21,10 @@
     <summary>Implements <see cref="T:System.IserviceProvider" /> and provides access to services offered by the editing context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.EditingContext.Services%2A> represent functionality that is either provided by the host for the designer to use or that is used by the designer to make functionality available to all designers within the editor. It is obtained from the <xref:System.Activities.Presentation.EditingContext> by the <xref:System.Activities.Presentation.EditingContext.Services%2A> property.  
-  
+<xref:System.Activities.Presentation.EditingContext.Services%2A> represent functionality that is either provided by the host for the designer to use or that is used by the designer to make functionality available to all designers within the editor. It is obtained from the <xref:System.Activities.Presentation.EditingContext> by the <xref:System.Activities.Presentation.EditingContext.Services%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -132,10 +132,10 @@
         <returns>Returns a generic type, which is an instance of the service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike <xref:System.Activities.Presentation.ServiceManager.GetService%2A>, this method throws a <xref:System.NotSupportedException> if the service is not available.  
-  
+Unlike <xref:System.Activities.Presentation.ServiceManager.GetService%2A>, this method throws a <xref:System.NotSupportedException> if the service is not available.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">There is no service of the given type.</exception>

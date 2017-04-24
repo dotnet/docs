@@ -14,15 +14,15 @@
     <summary>An abstract base class that represents the event data that holds a description of the changes in the model item tree in the previous editing session.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event data can be used by subscribers of the <xref:System.Activities.Presentation.Services.ModelService.ModelChanged> events.  
+This event data can be used by subscribers of the <xref:System.Activities.Presentation.Services.ModelService.ModelChanged> events.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_ModelChangedEventArgs#0](WFD_ModelChangedEventArgs#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

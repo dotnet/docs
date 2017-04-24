@@ -32,10 +32,10 @@
         <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
-  
+Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -60,10 +60,10 @@
         <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> using the specified exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
-  
+Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -550,10 +550,10 @@
         <summary>Schedules the cancellation of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules a cancel request for the root activity of the <xref:System.Activities.Hosting.WorkflowInstance>.  
-  
+This method schedules a cancel request for the root activity of the <xref:System.Activities.Hosting.WorkflowInstance>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -646,10 +646,10 @@
         <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
-  
+Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -220,10 +220,10 @@
         <summary>Generates views at compile time for the extents in a <see cref="T:System.Data.Mapping.StorageMappingItemCollection" />, and creates a source code file that makes these views available at run time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, views are generated at run time whenever a query or update is performed on an extent. Generating views at compile time can improve application performance by eliminating the expense of generating views at run time.  
-  
+By default, views are generated at run time whenever a query or update is performed on an extent. Generating views at compile time can improve application performance by eliminating the expense of generating views at run time.  
+ 
  ]]></format>
         </remarks>
       </Docs>

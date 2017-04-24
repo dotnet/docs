@@ -18,12 +18,12 @@
     <summary>Represents a cell column in a legend, which is used to extend the functionality of the default legend.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any number of cell columns can be placed in any order, which gives you the flexibility to extend the abilities of the default legend entries.  
-  
- The legend cell columns are only applicable to items that are automatically generated from series or data points.  
-  
+Any number of cell columns can be placed in any order, which gives you the flexibility to extend the abilities of the default legend entries.  
+ 
+The legend cell columns are only applicable to items that are automatically generated from series or data points.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -111,10 +111,10 @@
         <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the alignment of the legend cell contents. The default value is <see cref="F:System.Drawing.ContentAlignment.MiddleCenter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to align text or series symbols within the legend cell column.  
-  
+This property is used to align text or series symbols within the legend cell column.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
  The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property overrides the <xref:System.Web.UI.DataVisualization.Charting.Legend.BackColor%2A> property of the legend that the legend cell column belongs to. It also overrides the <xref:System.Web.UI.DataVisualization.Charting.Legend.InterlacedRows%2A> property of the legend.  
-  
+This property overrides the <xref:System.Web.UI.DataVisualization.Charting.Legend.BackColor%2A> property of the legend that the legend cell column belongs to. It also overrides the <xref:System.Web.UI.DataVisualization.Charting.Legend.InterlacedRows%2A> property of the legend.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,14 +182,14 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LegendCellColumnType" /> enumeration value. This value represents the type that will be used to define the legend cell column contents. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.LegendCellColumnType.Text" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property determines the type of content that will be displayed in each individual legend cell column. There are two possible values:  
-  
+This property determines the type of content that will be displayed in each individual legend cell column. There are two possible values:  
+ 
 -   Text: By default, the #LEGENDTEXT keyword is used to place the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A> value in each cell column. However, you can use the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Text%2A> property to set any keyword(s) that will be replaced by a value of the corresponding series.  
-  
+ 
 -   SeriesSymbol: The legend cell will contain a series symbol, such as a rectangle, line, line with marker, or marker, of the same fill color as its corresponding series.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,12 +238,12 @@
         <value>A <see cref="T:System.Drawing.Font" /> object that specifies the font for the legend column text. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only applicable when the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType>, and a `string` value is defined for the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Text%2A> property. You can use the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Font%2A> property to set font properties of the legend cell column.  
-  
- If you attempt to change the properties of this <xref:System.Drawing.Font> object at run time, a compilation error will occur. To set font properties at run time, you must create a new <xref:System.Drawing.Font> object.  
-  
+This property is only applicable when the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType>, and a `string` value is defined for the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Text%2A> property. You can use the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Font%2A> property to set font properties of the legend cell column.  
+ 
+If you attempt to change the properties of this <xref:System.Drawing.Font> object at run time, a compilation error will occur. To set font properties at run time, you must create a new <xref:System.Drawing.Font> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,10 +276,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used to draw the legend cell column text. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only applicable if the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType>.  
-  
+This property is only applicable if the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,12 +358,12 @@
         <value>A <see cref="T:System.Drawing.Font" /> object that specifies the font used in the legend column header. The default value is "Microsoft Sans Serif, 8pt, Bold".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be used to set font properties of the legend cell column header.  
-  
- If you attempt to change the properties of this <xref:System.Drawing.Font> object at run time, a compilation error will occur. To set font properties at run time, you must create a new <xref:System.Drawing.Font> object.  
-  
+This property can be used to set font properties of the legend cell column header.  
+ 
+If you attempt to change the properties of this <xref:System.Drawing.Font> object at run time, a compilation error will occur. To set font properties at run time, you must create a new <xref:System.Drawing.Font> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,10 +503,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.Margins" /> object that represents the top, bottom, left, and right values of the legend cell margins. The default values for top, bottom, left and right are "0,0,15,15".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is measured as a percentage of the legend font size.  
-  
+This property is measured as a percentage of the legend font size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -580,14 +580,14 @@
         <value>A <see langword="string" /> value that represents the text name of the legend cell column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of the legend cell must be unique; otherwise an exception will be thrown.  
-  
- The <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Name%2A> property can be used as the indexer when retrieving a <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn> object from the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnCollection>.  
-  
- If you set this property to a zero-length string, an exception will be thrown.  
-  
+The name of the legend cell must be unique; otherwise an exception will be thrown.  
+ 
+The <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Name%2A> property can be used as the indexer when retrieving a <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn> object from the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnCollection>.  
+ 
+If you set this property to a zero-length string, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -637,12 +637,12 @@
         <value>A <see cref="T:System.Drawing.Size" /> object that represents the size of the series symbol. The default values for the width and height of the symbol are 200 and 70, respectively.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the series symbol is measured as a percentage of the legend font size.  
-  
- This property is only applicable if the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType> property is set to <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType>.  
-  
+The size of the series symbol is measured as a percentage of the legend font size.  
+ 
+This property is only applicable if the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType> property is set to <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -671,10 +671,10 @@
           <see langword="true" /> if the property should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For internal use only.  
-  
+For internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -704,10 +704,10 @@
         <value>A <see langword="string" /> value that represents the text for the legend cell column. The default value is a zero-length string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only applicable if the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType>.  
-  
+This property is only applicable if the <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumnType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -737,18 +737,18 @@
         <value>A <see langword="string" /> value that represents the tooltip for the legend cell column. The default value is a zero-length string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
-  
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
-  
- If the `ToolTip` property is set for both a legend item and a legend cell, the legend cell property has precedence.  
-  
- This <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.ToolTip%2A> property allows you to set special keywords to display different types of chart-related data.  
-  
- To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
-  
+Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
+ 
+**Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ 
+If the `ToolTip` property is set for both a legend item and a legend cell, the legend cell property has precedence.  
+ 
+This <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.ToolTip%2A> property allows you to set special keywords to display different types of chart-related data.  
+ 
+To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -778,18 +778,18 @@
         <value>A <see langword="string" /> value that represents the destination URL or anchor point of the chart element. To use an absolute URL start the string expression with either "http://" or "www.". If the string does not start with either of these prefixes it will be treated as a relative URL. The default value is a zero-length string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set this property, a client-side image map will be automatically created. A map area will also be created with its Href attribute set to the specified anchor or URL.  
-  
- Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
-  
- Attributes of the map area(s), for example, target=_blank, can be specified by using the <xref:System.Web.UI.DataVisualization.Charting.LegendCell.MapAreaAttributes%2A> property.  
-  
- The <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Url%2A> property allows you to set special keywords to display different types of chart-related data.  
-  
- To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
-  
+If you set this property, a client-side image map will be automatically created. A map area will also be created with its Href attribute set to the specified anchor or URL.  
+ 
+Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
+ 
+Attributes of the map area(s), for example, target=_blank, can be specified by using the <xref:System.Web.UI.DataVisualization.Charting.LegendCell.MapAreaAttributes%2A> property.  
+ 
+The <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Url%2A> property allows you to set special keywords to display different types of chart-related data.  
+ 
+To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

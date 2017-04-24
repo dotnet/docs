@@ -23,12 +23,12 @@
     <summary>Exposes a <see cref="T:System.IO.Stream" /> object around a pipe, which supports both anonymous and named pipes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeStream> class provides the base class for named and anonymous pipes operations in the .NET Framework. Use the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes for named pipe operations. Use the <xref:System.IO.Pipes.AnonymousPipeServerStream> and <xref:System.IO.Pipes.AnonymousPipeClientStream> classes for anonymous pipe operations.  
-  
- For more information about pipes, see [Pipes](~/docs/standard/io/pipe-operations.md). For an example of anonymous pipes, see [How to: Use Anonymous Pipes for Local Interprocess Communication](~/docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md). For an example of named pipes, see [How to: Use Named Pipes for Network Interprocess Communication](~/docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md).  
-  
+The <xref:System.IO.Pipes.PipeStream> class provides the base class for named and anonymous pipes operations in the .NET Framework. Use the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes for named pipe operations. Use the <xref:System.IO.Pipes.AnonymousPipeServerStream> and <xref:System.IO.Pipes.AnonymousPipeClientStream> classes for anonymous pipe operations.  
+ 
+For more information about pipes, see [Pipes](~/docs/standard/io/pipe-operations.md). For an example of anonymous pipes, see [How to: Use Anonymous Pipes for Local Interprocess Communication](~/docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md). For an example of named pipes, see [How to: Use Named Pipes for Network Interprocess Communication](~/docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md).  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
@@ -62,10 +62,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.PipeStream" /> class using the specified <see cref="T:System.IO.Pipes.PipeDirection" /> value and buffer size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses a pipe transmission mode of <xref:System.IO.Pipes.PipeTransmissionMode>.  
-  
+This constructor uses a pipe transmission mode of <xref:System.IO.Pipes.PipeTransmissionMode>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -151,14 +151,14 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object that references the asynchronous read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Pass the returned <xref:System.IAsyncResult> object to the <xref:System.IO.Pipes.PipeStream.EndRead%2A> method to determine how many bytes were read and to release operating system resources used for reading. <xref:System.IO.Pipes.PipeStream.EndRead%2A> must be called once for every call to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>. This can be done either in the same code that called <xref:System.IO.Pipes.PipeStream.BeginRead%2A> or in a callback that is passed to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>.  
-  
- Use the <xref:System.IO.Pipes.PipeStream.CanRead%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports read operations.  
-  
- If the pipe is closed or an invalid argument is passed to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>, the appropriate exceptions are raised immediately. Errors that occur during an asynchronous read request occur on the thread pool thread that is performing the request. The exceptions are raised when the code calls the <xref:System.IO.Pipes.PipeStream.EndRead%2A> method.  
-  
+Pass the returned <xref:System.IAsyncResult> object to the <xref:System.IO.Pipes.PipeStream.EndRead%2A> method to determine how many bytes were read and to release operating system resources used for reading. <xref:System.IO.Pipes.PipeStream.EndRead%2A> must be called once for every call to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>. This can be done either in the same code that called <xref:System.IO.Pipes.PipeStream.BeginRead%2A> or in a callback that is passed to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>.  
+ 
+Use the <xref:System.IO.Pipes.PipeStream.CanRead%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports read operations.  
+ 
+If the pipe is closed or an invalid argument is passed to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>, the appropriate exceptions are raised immediately. Errors that occur during an asynchronous read request occur on the thread pool thread that is performing the request. The exceptions are raised when the code calls the <xref:System.IO.Pipes.PipeStream.EndRead%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -211,14 +211,14 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object that references the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.Pipes.PipeStream.EndWrite%2A> must be called once for every call to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>. This can be done either in the same code that called <xref:System.IO.Pipes.PipeStream.BeginWrite%2A> or in a callback that is passed to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>.  
-  
- Use the <xref:System.IO.Pipes.PipeStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports write operations.  
-  
- If the pipe is closed or an invalid argument is passed to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>, the appropriate exceptions are raised immediately. Errors that occur during an asynchronous write request occur on the thread pool thread that is performing the request. The exceptions are raised when the code calls the  <xref:System.IO.Pipes.PipeStream.EndWrite%2A> method.  
-  
+<xref:System.IO.Pipes.PipeStream.EndWrite%2A> must be called once for every call to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>. This can be done either in the same code that called <xref:System.IO.Pipes.PipeStream.BeginWrite%2A> or in a callback that is passed to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>.  
+ 
+Use the <xref:System.IO.Pipes.PipeStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports write operations.  
+ 
+If the pipe is closed or an invalid argument is passed to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>, the appropriate exceptions are raised immediately. Errors that occur during an asynchronous write request occur on the thread pool thread that is performing the request. The exceptions are raised when the code calls the  <xref:System.IO.Pipes.PipeStream.EndWrite%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -264,10 +264,10 @@
           <see langword="true" /> if the stream supports read operations; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.IO.Pipes.PipeStream> object is closed, this property returns `false`.  
-  
+If the <xref:System.IO.Pipes.PipeStream> object is closed, this property returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,10 +299,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.IO.Pipes.PipeStream> object is closed, this property returns `false`.  
-  
+If the <xref:System.IO.Pipes.PipeStream> object is closed, this property returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,10 +334,10 @@
           <see langword="true" /> if the stream supports write operations; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.IO.Pipes.PipeStream> object is closed, this property returns `false`.  
-  
+If the <xref:System.IO.Pipes.PipeStream> object is closed, this property returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -441,10 +441,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.Pipes.PipeStream" /> class and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public <xref:System.ComponentModel.Component.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. <xref:System.ComponentModel.Component.Dispose%2A> invokes the protected <xref:System.IO.Pipes.PipeStream.Dispose%2A> method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.IO.Pipes.PipeStream.Dispose%2A> with `disposing` set to `false`. When the disposing parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.Pipes.PipeStream> object references. This method invokes the <xref:System.IO.Pipes.PipeStream.Dispose%2A> method of each referenced object.  
-  
+This method is called by the public <xref:System.ComponentModel.Component.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. <xref:System.ComponentModel.Component.Dispose%2A> invokes the protected <xref:System.IO.Pipes.PipeStream.Dispose%2A> method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.IO.Pipes.PipeStream.Dispose%2A> with `disposing` set to `false`. When the disposing parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.Pipes.PipeStream> object references. This method invokes the <xref:System.IO.Pipes.PipeStream.Dispose%2A> method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -482,16 +482,16 @@
         <returns>The number of bytes that were read. A return value of 0 indicates the end of the stream (the pipe has been closed).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the number of bytes read into the byte array specified by the earlier call to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>.  
-  
- Pass the returned <xref:System.IAsyncResult> object to the <xref:System.IO.Pipes.PipeStream.EndRead%2A> method to determine how many bytes were read and to release operating system resources used for reading. <xref:System.IO.Pipes.PipeStream.EndRead%2A> must be called once for every call to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>. This can be done either in the same code that called <xref:System.IO.Pipes.PipeStream.BeginRead%2A> or in a callback that is passed to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>.  
-  
- Use the <xref:System.IO.Pipes.PipeStream.CanRead%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports read operations.  
-  
- If the pipe is closed or an invalid argument is passed to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>, the appropriate exceptions are raised immediately. Errors that occur during an asynchronous read request occur on the thread pool thread that is performing the request. The exceptions are raised when the code calls the <xref:System.IO.Pipes.PipeStream.EndRead%2A> method.  
-  
+This method returns the number of bytes read into the byte array specified by the earlier call to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>.  
+ 
+Pass the returned <xref:System.IAsyncResult> object to the <xref:System.IO.Pipes.PipeStream.EndRead%2A> method to determine how many bytes were read and to release operating system resources used for reading. <xref:System.IO.Pipes.PipeStream.EndRead%2A> must be called once for every call to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>. This can be done either in the same code that called <xref:System.IO.Pipes.PipeStream.BeginRead%2A> or in a callback that is passed to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>.  
+ 
+Use the <xref:System.IO.Pipes.PipeStream.CanRead%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports read operations.  
+ 
+If the pipe is closed or an invalid argument is passed to <xref:System.IO.Pipes.PipeStream.BeginRead%2A>, the appropriate exceptions are raised immediately. Errors that occur during an asynchronous read request occur on the thread pool thread that is performing the request. The exceptions are raised when the code calls the <xref:System.IO.Pipes.PipeStream.EndRead%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -526,14 +526,14 @@
         <summary>Ends a pending asynchronous write request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.Pipes.PipeStream.EndWrite%2A> must be called once for every call to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>. This can be done either in the same code that called <xref:System.IO.Pipes.PipeStream.BeginWrite%2A> or in a callback that is passed to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>.  
-  
- Use the <xref:System.IO.Pipes.PipeStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports write operations.  
-  
- If the pipe is closed or an invalid argument is passed to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>, the appropriate exceptions are raised immediately. Errors that occur during an asynchronous write request occur on the thread pool thread that is performing the request. The exceptions are raised when the code the calls <xref:System.IO.Pipes.PipeStream.EndWrite%2A> method.  
-  
+<xref:System.IO.Pipes.PipeStream.EndWrite%2A> must be called once for every call to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>. This can be done either in the same code that called <xref:System.IO.Pipes.PipeStream.BeginWrite%2A> or in a callback that is passed to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>.  
+ 
+Use the <xref:System.IO.Pipes.PipeStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports write operations.  
+ 
+If the pipe is closed or an invalid argument is passed to <xref:System.IO.Pipes.PipeStream.BeginWrite%2A>, the appropriate exceptions are raised immediately. Errors that occur during an asynchronous write request occur on the thread pool thread that is performing the request. The exceptions are raised when the code the calls <xref:System.IO.Pipes.PipeStream.EndWrite%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -569,10 +569,10 @@
         <summary>Clears the buffer for the current stream and causes any buffered data to be written to the underlying device.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeStream.Flush%2A> method is not supported in the <xref:System.IO.Pipes.PipeStream> class and does nothing when it is called.  
-  
+The <xref:System.IO.Pipes.PipeStream.Flush%2A> method is not supported in the <xref:System.IO.Pipes.PipeStream> class and does nothing when it is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The pipe is closed.</exception>
@@ -599,10 +599,10 @@
         <returns>A <see cref="T:System.IO.Pipes.PipeSecurity" /> object that encapsulates the access control list (ACL) entries for the pipe described by the current <see cref="T:System.IO.Pipes.PipeStream" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An access control list (ACL) describes individuals and/or groups that have, or do not have, rights to perform specific actions on a specified file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
+An access control list (ACL) describes individuals and/or groups that have, or do not have, rights to perform specific actions on a specified file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The pipe is closed.</exception>
@@ -637,10 +637,10 @@
         <value>An integer value that represents the inbound buffer size, in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.IO.Pipes.PipeStream.InBufferSize%2A> is 0, the buffer size is allocated as needed.  
-  
+If <xref:System.IO.Pipes.PipeStream.InBufferSize%2A> is 0, the buffer size is allocated as needed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The stream is unreadable.</exception>
@@ -679,10 +679,10 @@
         <summary>Initializes a <see cref="T:System.IO.Pipes.PipeStream" /> object from the specified <see cref="T:Microsoft.Win32.SafeHandles.SafePipeHandle" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the pipe is in a connected state, this method also sets the <xref:System.IO.Pipes.PipeStream.IsConnected%2A> property to `true`.  
-  
+If the pipe is in a connected state, this method also sets the <xref:System.IO.Pipes.PipeStream.IsConnected%2A> property to `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">A handle cannot be bound to the pipe.</exception>
@@ -715,10 +715,10 @@
           <see langword="true" /> if the <see cref="T:System.IO.Pipes.PipeStream" /> object was opened asynchronously; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables your code to use the <xref:System.IO.Pipes.PipeStream.SafePipeHandle%2A> property correctly.  
-  
+This property enables your code to use the <xref:System.IO.Pipes.PipeStream.SafePipeHandle%2A> property correctly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -750,10 +750,10 @@
           <see langword="true" /> if the <see cref="T:System.IO.Pipes.PipeStream" /> object is connected; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeStream.IsConnected%2A> property returns `true` only if the <xref:System.IO.Pipes.PipeStream> object is connected. If this property returns `false`, the pipe may be waiting to connect, or may be disconnected, closed, or broken.  
-  
+The <xref:System.IO.Pipes.PipeStream.IsConnected%2A> property returns `true` only if the <xref:System.IO.Pipes.PipeStream> object is connected. If this property returns `false`, the pipe may be waiting to connect, or may be disconnected, closed, or broken.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -781,10 +781,10 @@
           <see langword="true" /> if a handle to the <see cref="T:System.IO.Pipes.PipeStream" /> object is exposed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is set when obtaining a handle to the pipe that is encapsulated by the current <xref:System.IO.Pipes.PipeStream> object.  
-  
+The value of this property is set when obtaining a handle to the pipe that is encapsulated by the current <xref:System.IO.Pipes.PipeStream> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -816,10 +816,10 @@
           <see langword="true" /> if there are no more characters to read in the message; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is relevant if the pipe's <xref:System.IO.Pipes.PipeStream.ReadMode%2A> property was set to <xref:System.IO.Pipes.PipeTransmissionMode> by the most recent call to <xref:System.IO.Pipes.PipeStream.Read%2A> or <xref:System.IO.Pipes.PipeStream.EndRead%2A>.  
-  
+This property is relevant if the pipe's <xref:System.IO.Pipes.PipeStream.ReadMode%2A> property was set to <xref:System.IO.Pipes.PipeTransmissionMode> by the most recent call to <xref:System.IO.Pipes.PipeStream.Read%2A> or <xref:System.IO.Pipes.PipeStream.EndRead%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The pipe is not connected.  
@@ -860,10 +860,10 @@
         <value>0 in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeStream> class does not support the <xref:System.IO.Pipes.PipeStream.Length%2A> property.  
-  
+The <xref:System.IO.Pipes.PipeStream> class does not support the <xref:System.IO.Pipes.PipeStream.Length%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -895,10 +895,10 @@
         <value>The outbound buffer size, in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.IO.Pipes.PipeStream.OutBufferSize%2A> is 0, the buffer size is allocated as needed.  
-  
+If <xref:System.IO.Pipes.PipeStream.OutBufferSize%2A> is 0, the buffer size is allocated as needed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The stream is unwriteable.</exception>
@@ -932,10 +932,10 @@
         <value>0 in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeStream> class does not support the <xref:System.IO.Pipes.PipeStream.Position%2A> property.  
-  
+The <xref:System.IO.Pipes.PipeStream> class does not support the <xref:System.IO.Pipes.PipeStream.Position%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -975,21 +975,21 @@
         <returns>The total number of bytes that are read into <paramref name="buffer" />. This might be less than the number of bytes requested if that number of bytes is not currently available, or 0 if the end of the stream is reached.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IO.Pipes.PipeStream.CanRead%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports read operations.  
+Use the <xref:System.IO.Pipes.PipeStream.CanRead%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports read operations.  
+ 
+Calling the <xref:System.IO.Pipes.PipeStream.Read%2A> method blocks until `count` bytes are read or the end of the stream is reached. For asynchronous read operations, see <xref:System.IO.Pipes.PipeStream.BeginRead%2A> and <xref:System.IO.Pipes.PipeStream.EndRead%2A>.  
+ 
   
- Calling the <xref:System.IO.Pipes.PipeStream.Read%2A> method blocks until `count` bytes are read or the end of the stream is reached. For asynchronous read operations, see <xref:System.IO.Pipes.PipeStream.BeginRead%2A> and <xref:System.IO.Pipes.PipeStream.EndRead%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an anonymous pipe client and pipe server. The pipe server uses the <xref:System.IO.Pipes.PipeStream.Read%2A> method to read a series of bytes from the pipe client as a validation code. Both the pipe client and the pipe server are part of the same example. The server portion of the example creates a client process and passes it an anonymous pipe handle as an argument.  
-  
- [!code-cpp[System.IO.Pipes.PipeStream#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.io.pipes.pipestream/cpp/sample.cpp#1)]
- [!code-csharp[System.IO.Pipes.PipeStream#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.pipes.pipestream/cs/sample.cs#1)]
- [!code-vb[System.IO.Pipes.PipeStream#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.pipes.pipestream/vb/sample.vb#1)]  
-  
+The following example creates an anonymous pipe client and pipe server. The pipe server uses the <xref:System.IO.Pipes.PipeStream.Read%2A> method to read a series of bytes from the pipe client as a validation code. Both the pipe client and the pipe server are part of the same example. The server portion of the example creates a client process and passes it an anonymous pipe handle as an argument.  
+ 
+[!code-cpp[System.IO.Pipes.PipeStream#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.io.pipes.pipestream/cpp/sample.cpp#1)]
+[!code-csharp[System.IO.Pipes.PipeStream#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.pipes.pipestream/cs/sample.cs#1)]
+[!code-vb[System.IO.Pipes.PipeStream#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.pipes.pipestream/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1063,10 +1063,10 @@
         <returns>The byte, cast to <see cref="T:System.Int32" />, or -1 indicates the end of the stream (the pipe has been closed).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IO.Pipes.PipeStream.CanRead%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports read operations.  
-  
+Use the <xref:System.IO.Pipes.PipeStream.CanRead%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports read operations.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The pipe is closed.</exception>
@@ -1101,10 +1101,10 @@
         <value>One of the <see cref="T:System.IO.Pipes.PipeTransmissionMode" /> values that indicates how the <see cref="T:System.IO.Pipes.PipeStream" /> object reads from the pipe.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode> mode message transmission.  
-  
+Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode> mode message transmission.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The supplied value is not a valid <see cref="T:System.IO.Pipes.PipeTransmissionMode" /> value.</exception>
@@ -1178,10 +1178,10 @@
         <returns>The new position in the stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeStream.Seek%2A> method is not supported in pipes and raises a <xref:System.NotSupportedException> when it is called.  
-  
+The <xref:System.IO.Pipes.PipeStream.Seek%2A> method is not supported in pipes and raises a <xref:System.NotSupportedException> when it is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1207,10 +1207,10 @@
         <summary>Applies the access control list (ACL) entries specified by a <see cref="T:System.IO.Pipes.PipeSecurity" /> object to the pipe specified by the current <see cref="T:System.IO.Pipes.PipeStream" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An access control list (ACL) describes individuals and/or groups that have, or do not have, rights to perform specific actions on a specified file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
+An access control list (ACL) describes individuals and/or groups that have, or do not have, rights to perform specific actions on a specified file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The pipe is closed.</exception>
@@ -1250,10 +1250,10 @@
         <summary>Sets the length of the current stream to the specified value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeStream> class does not support the <xref:System.IO.Pipes.PipeStream.SetLength%2A> method.  
-  
+The <xref:System.IO.Pipes.PipeStream> class does not support the <xref:System.IO.Pipes.PipeStream.SetLength%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1284,10 +1284,10 @@
         <value>One of the <see cref="T:System.IO.Pipes.PipeTransmissionMode" /> values that indicates the transmission mode supported by the current pipe.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode> mode message transmission.  
-  
+Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode> mode message transmission.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The pipe is closed.</exception>
@@ -1325,10 +1325,10 @@
         <summary>Waits for the other end of the pipe to read all sent bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeStream.WaitForPipeDrain%2A> method blocks until the other end of the pipe has read all sent bytes.  
-  
+The <xref:System.IO.Pipes.PipeStream.WaitForPipeDrain%2A> method blocks until the other end of the pipe has read all sent bytes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The pipe is closed.</exception>
@@ -1369,12 +1369,12 @@
         <summary>Writes a block of bytes to the current stream using data from a buffer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IO.Pipes.PipeStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports write operations.  
-  
- Calling the <xref:System.IO.Pipes.PipeStream.Write%2A> method blocks until `count` bytes are read or the end of the stream is reached. For asynchronous read operations, see <xref:System.IO.Pipes.PipeStream.BeginWrite%2A> and <xref:System.IO.Pipes.PipeStream.EndWrite%2A>.  
-  
+Use the <xref:System.IO.Pipes.PipeStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports write operations.  
+ 
+Calling the <xref:System.IO.Pipes.PipeStream.Write%2A> method blocks until `count` bytes are read or the end of the stream is reached. For asynchronous read operations, see <xref:System.IO.Pipes.PipeStream.BeginWrite%2A> and <xref:System.IO.Pipes.PipeStream.EndWrite%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1449,10 +1449,10 @@
         <summary>Writes a byte to the current stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IO.Pipes.PipeStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports write operations.  
-  
+Use the <xref:System.IO.Pipes.PipeStream.CanWrite%2A> property to determine whether the current <xref:System.IO.Pipes.PipeStream> object supports write operations.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The pipe is closed.</exception>

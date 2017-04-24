@@ -24,23 +24,23 @@
     <summary>Computes the <see cref="T:System.Security.Cryptography.SHA1" /> hash for the input data using the managed library.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if and only if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
+The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if and only if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
+ 
+This is a purely managed implementation of <xref:System.Security.Cryptography.SHA1> that does not wrap CAPI.  
+ 
+The hash size for the <xref:System.Security.Cryptography.SHA1Managed> algorithm is 160 bits.  
+ 
   
- This is a purely managed implementation of <xref:System.Security.Cryptography.SHA1> that does not wrap CAPI.  
-  
- The hash size for the <xref:System.Security.Cryptography.SHA1Managed> algorithm is 160 bits.  
-  
-   
-  
+ 
 ## Examples  
- The following example computes the <xref:System.Security.Cryptography.SHA1Managed> hash for `data` and stores it in `result`. This example assumes that there is a predefined constant `DATA_SIZE`.  
-  
- [!code-cpp[Classic SHA1Managed Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SHA1Managed Example/CPP/source.cpp#1)]
- [!code-csharp[Classic SHA1Managed Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SHA1Managed Example/CS/source.cs#1)]
- [!code-vb[Classic SHA1Managed Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SHA1Managed Example/VB/source.vb#1)]  
-  
+The following example computes the <xref:System.Security.Cryptography.SHA1Managed> hash for `data` and stores it in `result`. This example assumes that there is a predefined constant `DATA_SIZE`.  
+ 
+[!code-cpp[Classic SHA1Managed Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SHA1Managed Example/CPP/source.cpp#1)]
+[!code-csharp[Classic SHA1Managed Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SHA1Managed Example/CS/source.cs#1)]
+[!code-vb[Classic SHA1Managed Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SHA1Managed Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

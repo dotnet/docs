@@ -20,18 +20,18 @@
     <summary>Represents a description of a SOAP message part.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.MessagePartDescription> class is the parent class of <xref:System.ServiceModel.Description.MessageHeaderDescription> and <xref:System.ServiceModel.Description.MessagePropertyDescription> and contains the basic functionality of both classes.  
+The <xref:System.ServiceModel.Description.MessagePartDescription> class is the parent class of <xref:System.ServiceModel.Description.MessageHeaderDescription> and <xref:System.ServiceModel.Description.MessagePropertyDescription> and contains the basic functionality of both classes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ServiceModel.Description.MessagePartDescription> returned by the <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A> property of the <xref:System.ServiceModel.Description.MessageBodyDescription> class.   The code iterates through the collection of endpoints and prints each endpoint name, as well as the name of each operation in the endpoint.  
-  
- [!code-csharp[DataContractSerializerOperationBehavior#2](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializeroperationbehavior/cs/source.cs#2)]
- [!code-vb[DataContractSerializerOperationBehavior#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializeroperationbehavior/vb/source.vb#2)]  
-  
+The following example uses the <xref:System.ServiceModel.Description.MessagePartDescription> returned by the <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A> property of the <xref:System.ServiceModel.Description.MessageBodyDescription> class.   The code iterates through the collection of endpoints and prints each endpoint name, as well as the name of each operation in the endpoint.  
+ 
+[!code-csharp[DataContractSerializerOperationBehavior#2](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializeroperationbehavior/cs/source.cs#2)]
+[!code-vb[DataContractSerializerOperationBehavior#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializeroperationbehavior/vb/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,10 +114,10 @@
         <value>The member information for this message part.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.Description.MessageDescription> is loaded from a class marked by the <xref:System.ServiceModel.MessageContractAttribute?displayProperty=fullName>, the <xref:System.ServiceModel.Description.MessagePartDescription.MemberInfo%2A> property contains the <xref:System.Reflection.PropertyInfo?displayProperty=fullName> or the <xref:System.Reflection.FieldInfo?displayProperty=fullName> from which the part was loaded.  
-  
+If the <xref:System.ServiceModel.Description.MessageDescription> is loaded from a class marked by the <xref:System.ServiceModel.MessageContractAttribute?displayProperty=fullName>, the <xref:System.ServiceModel.Description.MessagePartDescription.MemberInfo%2A> property contains the <xref:System.Reflection.PropertyInfo?displayProperty=fullName> or the <xref:System.Reflection.FieldInfo?displayProperty=fullName> from which the part was loaded.  
+ 
  ]]></format>
         </remarks>
       </Docs>

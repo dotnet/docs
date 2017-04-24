@@ -13,19 +13,19 @@
     <summary>Defines identifiers that indicate the display modes used by <see cref="T:System.ComponentModel.Design.ByteViewer" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DisplayMode> identifiers are used to indicate the display mode used to display each byte sequence.  
+The <xref:System.ComponentModel.Design.DisplayMode> identifiers are used to indicate the display mode used to display each byte sequence.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
-  
- [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
- [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
- [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+ 
+[!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+[!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+[!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,14 +46,14 @@
         <summary>An ANSI format display.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
-  
- [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
- [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
- [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+ 
+[!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+[!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+[!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,14 +74,14 @@
         <summary>A display mode that automatically selects a display mode. In this mode, the bytes are examined to determine if they are hexadecimal or printable. If the bytes are in hexadecimal format, the <see cref="F:System.ComponentModel.Design.DisplayMode.Hexdump" /> mode is selected. If the characters match a printable character set, a test is run to automatically select either the <see cref="F:System.ComponentModel.Design.DisplayMode.Ansi" /> or <see cref="F:System.ComponentModel.Design.DisplayMode.Unicode" /> display mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
-  
- [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
- [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
- [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+ 
+[!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+[!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+[!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,14 +102,14 @@
         <summary>A hexadecimal format display.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
-  
- [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
- [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
- [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+ 
+[!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+[!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+[!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,14 +130,14 @@
         <summary>A Unicode format display.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
-  
- [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
- [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
- [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+ 
+[!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+[!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+[!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

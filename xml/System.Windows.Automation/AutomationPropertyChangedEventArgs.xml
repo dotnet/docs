@@ -36,18 +36,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.AutomationPropertyChangedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `oldValue` can be `null` (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the previous value is not readily available.  
+`oldValue` can be `null` (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the previous value is not readily available.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example constructs and raises an event when a property has changed.  
-  
- [!code-csharp[UIAFragmentProvider_snip#123](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#123)]
- [!code-vb[UIAFragmentProvider_snip#123](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#123)]  
-  
+The following example constructs and raises an event when a property has changed.  
+ 
+[!code-csharp[UIAFragmentProvider_snip#123](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#123)]
+[!code-vb[UIAFragmentProvider_snip#123](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#123)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -69,10 +69,10 @@
         <value>The new value of the property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- UI Automation clients must cast the value to the expected type for the property.  
-  
+UI Automation clients must cast the value to the expected type for the property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
         <value>The previous value of the property, or null (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the previous value is not readily available.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- UI Automation clients must cast the value to the appropriate type for the property.  
-  
+UI Automation clients must cast the value to the appropriate type for the property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

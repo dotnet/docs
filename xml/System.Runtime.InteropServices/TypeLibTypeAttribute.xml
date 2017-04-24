@@ -23,21 +23,21 @@
     <summary>Contains the <see cref="T:System.Runtime.InteropServices.TYPEFLAGS" /> that were originally imported for this type from the COM type library.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) applies this attribute to classes or interfaces.  
+The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) applies this attribute to classes or interfaces.  
+ 
+This attribute is applied when a type library is imported and should never be changed. It is only applied when the method's <xref:System.Runtime.InteropServices.TYPEFLAGS> evaluate to non-zero. The attribute is designed to be used by tools that need to know how the original <xref:System.Runtime.InteropServices.TYPEFLAGS> were set. The common language runtime does not use this attribute.  
+ 
   
- This attribute is applied when a type library is imported and should never be changed. It is only applied when the method's <xref:System.Runtime.InteropServices.TYPEFLAGS> evaluate to non-zero. The attribute is designed to be used by tools that need to know how the original <xref:System.Runtime.InteropServices.TYPEFLAGS> were set. The common language runtime does not use this attribute.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to get the <xref:System.Runtime.InteropServices.TypeLibTypeAttribute> value of a class or interface.  
-  
- [!code-cpp[ImprovedInteropSnippets#4](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile4.cpp#4)]
- [!code-csharp[ImprovedInteropSnippets#4](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile4.cs#4)]
- [!code-vb[ImprovedInteropSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile4.vb#4)]  
-  
+The following example demonstrates how to get the <xref:System.Runtime.InteropServices.TypeLibTypeAttribute> value of a class or interface.  
+ 
+[!code-cpp[ImprovedInteropSnippets#4](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile4.cpp#4)]
+[!code-csharp[ImprovedInteropSnippets#4](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile4.cs#4)]
+[!code-vb[ImprovedInteropSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile4.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

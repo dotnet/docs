@@ -33,18 +33,18 @@
     <summary>A class that serializes <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />-derived classes to and from RSS 2.0 format.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationItem>-derived classes and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived classes from XML documents that represent RSS 2.0 items. If you need to serialize a <xref:System.ServiceModel.Syndication.SyndicationItem> instance use the <xref:System.ServiceModel.Syndication.Rss20ItemFormatter> formatter.  
+Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationItem>-derived classes and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived classes from XML documents that represent RSS 2.0 items. If you need to serialize a <xref:System.ServiceModel.Syndication.SyndicationItem> instance use the <xref:System.ServiceModel.Syndication.Rss20ItemFormatter> formatter.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationItem> derived class and serialize it to RSS 2.0.  
-  
- [!code-csharp[RssFormatter#10](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#10)]
- [!code-vb[RssFormatter#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#10)]  
-  
+The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationItem> derived class and serialize it to RSS 2.0.  
+ 
+[!code-csharp[RssFormatter#10](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#10)]
+[!code-vb[RssFormatter#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,13 +89,13 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> derived instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to call this constructor.  
-  
- [!code-csharp[RssFormatter#11](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#11)]
- [!code-vb[RssFormatter#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#11)]  
-  
+The following example shows how to call this constructor.  
+ 
+[!code-csharp[RssFormatter#11](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#11)]
+[!code-vb[RssFormatter#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,18 +123,18 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> derived instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `serializeExtensionsAsAtom` parameter is `true`, all elements defined in the Atom 1.0 specification that are not defined in the RSS 2.0 specification are serialized with the Atom 1.0 namespace.  
+If the `serializeExtensionsAsAtom` parameter is `true`, all elements defined in the Atom 1.0 specification that are not defined in the RSS 2.0 specification are serialized with the Atom 1.0 namespace.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to call this constructor.  
-  
- [!code-csharp[RssFormatter#12](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#12)]
- [!code-vb[RssFormatter#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#12)]  
-  
+The following example shows how to call this constructor.  
+ 
+[!code-csharp[RssFormatter#12](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#12)]
+[!code-vb[RssFormatter#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

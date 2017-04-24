@@ -74,10 +74,10 @@
         <value>A value that uniquely identifies the <see cref="T:System.Activities.BookmarkScope" /> when the <see cref="T:System.Activities.BookmarkScope" /> is in an uninitialized state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Activities.BookmarkScope> is initialized, the returned value is `null`.  
-  
+If the <xref:System.Activities.BookmarkScope> is initialized, the returned value is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

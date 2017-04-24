@@ -70,14 +70,14 @@
         <value>The visibility mode of the tracking profile</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Tracking records from activities that form the implementation of activities can be filtered using the visibility modes described by <xref:System.Activities.Tracking.ImplementationVisibility>. This flag is used to subscribe for tracking records for all activities or only for the activities visible from the root of the workflow.  
-  
- When the flag is set to <xref:System.Activities.Tracking.ImplementationVisibility>, only the root activity and its implementation are tracked. If the implementation contains activities that are composite activities, then the composite activity is tracked but not its implementation.  
-  
- For more information, see <xref:System.Activities.Tracking.TrackingProfile.ImplementationVisibility%2A>.  
-  
+Tracking records from activities that form the implementation of activities can be filtered using the visibility modes described by <xref:System.Activities.Tracking.ImplementationVisibility>. This flag is used to subscribe for tracking records for all activities or only for the activities visible from the root of the workflow.  
+ 
+When the flag is set to <xref:System.Activities.Tracking.ImplementationVisibility>, only the root activity and its implementation are tracked. If the implementation contains activities that are composite activities, then the composite activity is tracked but not its implementation.  
+ 
+For more information, see <xref:System.Activities.Tracking.TrackingProfile.ImplementationVisibility%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <value>A collection of profile workflow query elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is one <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement> for each workflow in the profile.  
-  
+There is one <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement> for each workflow in the profile.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -17,12 +17,12 @@
     <summary>Provides an interface for an object that contains the names and types of parameters required during serialization of a SOAP RPC (Remote Procedure Call).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an object that supports this interface is the root of a serialization graph, SOAP is produced in RPC format. The <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface contains the method call parameter types used during deserialization of a method call.  
-  
- To support SOAP RPC calls that are based on the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface and do not use the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> functionality, set the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A?displayProperty=fullName> property to an object that supports this interface.  
-  
+When an object that supports this interface is the root of a serialization graph, SOAP is produced in RPC format. The <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface contains the method call parameter types used during deserialization of a method call.  
+ 
+To support SOAP RPC calls that are based on the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface and do not use the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> functionality, set the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A?displayProperty=fullName> property to an object that supports this interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>

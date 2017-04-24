@@ -19,12 +19,12 @@
     <summary>Serves as the abstract base class that defines the methods, properties, and events common to all HTML input controls, such as the <see langword="&lt;input type=text&gt;" />, <see langword="&lt;input type=submit&gt;" />, and <see langword="&lt;input type= file&gt;" /> elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class directly. Instead, this class is inherited by other classes, such as the <xref:System.Web.UI.HtmlControls.HtmlInputText>, <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, <xref:System.Web.UI.HtmlControls.HtmlInputHidden>, and <xref:System.Web.UI.HtmlControls.HtmlInputFile> classes, to provide common basic functionality.  
-  
- For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputControl>, see the <xref:System.Web.UI.HtmlControls.HtmlInputControl.%23ctor%2A> constructor.  
-  
+You cannot create an instance of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class directly. Instead, this class is inherited by other classes, such as the <xref:System.Web.UI.HtmlControls.HtmlInputText>, <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, <xref:System.Web.UI.HtmlControls.HtmlInputHidden>, and <xref:System.Web.UI.HtmlControls.HtmlInputFile> classes, to provide common basic functionality.  
+ 
+For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputControl>, see the <xref:System.Web.UI.HtmlControls.HtmlInputControl.%23ctor%2A> constructor.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,21 +46,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class using the specified input control.  
-  
+This constructor is used to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class using the specified input control.  
+ 
 > [!NOTE]
 >  A new instance of this class is not created directly. This constructor is called from the constructor of other HTML control classes to initialize properties defined in this class.  
-  
- The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputControl>.  
-  
+ 
+The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputControl>.  
+ 
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A>|The value of the `type` parameter.|  
-  
- The following table shows the different possible values for `type`.  
-  
+ 
+The following table shows the different possible values for `type`.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |text|A text box for data entry.|  
@@ -73,7 +73,7 @@
 |file|A button that uploads a file.|  
 |hidden|A non-visible field on a Web page used to persist information between posts to the server.|  
 |image|An image button.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,23 +103,23 @@
         <value>A string that represents the value of the <see cref="P:System.Web.UI.Control.UniqueID" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property to determine the unique identifier name for an <xref:System.Web.UI.HtmlControls.HtmlInputControl>. In this implementation, the `get` accessor returns the value of the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property. However, the `set` accessor does not assign a value to this property.  
-  
+Use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property to determine the unique identifier name for an <xref:System.Web.UI.HtmlControls.HtmlInputControl>. In this implementation, the `get` accessor returns the value of the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property. However, the `set` accessor does not assign a value to this property.  
+ 
 > [!NOTE]
 >  The `set` accessor does not assign a value to this property because the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property must have the same value as the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property for most controls to work properly.  
+ 
+Classes that inherit from the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class can override this implementation, if necessary.  
+ 
   
- Classes that inherit from the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class can override this implementation, if necessary.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property to determine the name of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> that was clicked.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputControlName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlName/CS/htmlinputcontrolnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputControlName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlName/VB/htmlinputcontrolnamevb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property to determine the name of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> that was clicked.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HtmlInputControlName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlName/CS/htmlinputcontrolnamecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HtmlInputControlName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlName/VB/htmlinputcontrolnamevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <summary>Renders the attributes of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" /> control to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlInputControl.RenderAttributes%2A> method renders a `name` attribute and `type` attribute before calling the base class's <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method.  
-  
+The <xref:System.Web.UI.HtmlControls.HtmlInputControl.RenderAttributes%2A> method renders a `name` attribute and `type` attribute before calling the base class's <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,12 +177,12 @@
         <value>A string that contains the type of an <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property get the type of an <xref:System.Web.UI.HtmlControls.HtmlInputControl>.  
-  
- The following table shows the different possible values for the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A> property.  
-  
+Use this property get the type of an <xref:System.Web.UI.HtmlControls.HtmlInputControl>.  
+ 
+The following table shows the different possible values for the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A> property.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |text|A text box for data entry.|  
@@ -195,15 +195,15 @@
 |file|A button that uploads a file.|  
 |hidden|A non-visible field on a Web page used to persist information between posts to the server.|  
 |image|An image button.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A> property to determine the type of <xref:System.Web.UI.HtmlControls.HtmlInputControl> that was clicked.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputControlType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlType/CS/htmlinputcontroltypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputControlType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlType/VB/htmlinputcontroltypevb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A> property to determine the type of <xref:System.Web.UI.HtmlControls.HtmlInputControl> that was clicked.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HtmlInputControlType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlType/CS/htmlinputcontroltypecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HtmlInputControlType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlType/VB/htmlinputcontroltypevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,18 +233,18 @@
         <value>The value associated with the <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to specify or determine the value associated with the <xref:System.Web.UI.HtmlControls.HtmlInputControl> control. The <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property is equivalent to the `value` attribute of HTML elements.  
+Use this property to specify or determine the value associated with the <xref:System.Web.UI.HtmlControls.HtmlInputControl> control. The <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property is equivalent to the `value` attribute of HTML elements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property to determine the text that the user entered into some text boxes.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property to determine the text that the user entered into some text boxes.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,18 +19,18 @@
     <summary>Represents the exception that is thrown when the <see cref="T:System.Net.Mail.SmtpClient" /> is not able to complete a <see cref="Overload:System.Net.Mail.SmtpClient.Send" /> or <see cref="Overload:System.Net.Mail.SmtpClient.SendAsync" /> operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Mail.SmtpException.StatusCode%2A> property contains the status code returned by the SMTP server.  
+The <xref:System.Net.Mail.SmtpException.StatusCode%2A> property contains the status code returned by the SMTP server.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays an error message when the <xref:System.Net.Mail.SmtpException> exception is thrown.  
-  
- [!code-cpp[NclMailSync#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#27)]
- [!code-csharp[NclMailSync#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#27)]  
-  
+The following code example displays an error message when the <xref:System.Net.Mail.SmtpException> exception is thrown.  
+ 
+[!code-cpp[NclMailSync#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#27)]
+[!code-csharp[NclMailSync#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#27)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,18 +54,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The exception returned by this constructor has its <xref:System.Net.Mail.SmtpException.StatusCode%2A> property set to <xref:System.Net.Mail.SmtpStatusCode>.  
+The exception returned by this constructor has its <xref:System.Net.Mail.SmtpException.StatusCode%2A> property set to <xref:System.Net.Mail.SmtpStatusCode>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates calling this constructor.  
-  
- [!code-cpp[NclMailSync#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#28)]
- [!code-csharp[NclMailSync#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#28)]  
-  
+The following code example demonstrates calling this constructor.  
+ 
+[!code-cpp[NclMailSync#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#28)]
+[!code-csharp[NclMailSync#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,18 +92,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpException" /> class with the specified status code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the `statusCode` parameter to initialize the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property.  
+This constructor uses the `statusCode` parameter to initialize the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates calling this constructor.  
-  
- [!code-cpp[NclMailSync#30](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#30)]
- [!code-csharp[NclMailSync#30](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#30)]  
-  
+The following code example demonstrates calling this constructor.  
+ 
+[!code-cpp[NclMailSync#30](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#30)]
+[!code-csharp[NclMailSync#30](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#30)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,18 +130,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpException" /> class with the specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the `message` parameter to initialize the <xref:System.Exception.Message%2A> property.  
+This constructor uses the `message` parameter to initialize the <xref:System.Exception.Message%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates calling this constructor.  
-  
- [!code-cpp[NclMailSync#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#29)]
- [!code-csharp[NclMailSync#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#29)]  
-  
+The following code example demonstrates calling this constructor.  
+ 
+[!code-cpp[NclMailSync#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#29)]
+[!code-csharp[NclMailSync#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#29)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,18 +170,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpException" /> class with the specified status code and error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the `statusCode` parameter to initialize the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property and uses the `message` parameter to initialize the <xref:System.Exception.Message%2A> property.  
+This constructor uses the `statusCode` parameter to initialize the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property and uses the `message` parameter to initialize the <xref:System.Exception.Message%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates calling this constructor.  
-  
- [!code-cpp[NclMailSync#31](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#31)]
- [!code-csharp[NclMailSync#31](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#31)]  
-  
+The following code example demonstrates calling this constructor.  
+ 
+[!code-cpp[NclMailSync#31](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#31)]
+[!code-csharp[NclMailSync#31](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#31)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,10 +210,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpException" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Mail.SmtpException> class.  
-  
+This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Mail.SmtpException> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,20 +242,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpException" /> class with the specified error message and inner exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the `message` parameter to initialize the <xref:System.Exception.Message%2A> property and the `innerException` parameter to initialize the <xref:System.Exception.InnerException%2A> property.  
+This constructor uses the `message` parameter to initialize the <xref:System.Exception.Message%2A> property and the `innerException` parameter to initialize the <xref:System.Exception.InnerException%2A> property.  
+ 
+If `innerException` is not `null`, the current exception is raised in a catch block that handles `innerException`.  
+ 
   
- If `innerException` is not `null`, the current exception is raised in a catch block that handles `innerException`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates calling this constructor.  
-  
- [!code-cpp[NclMailSync#32](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#32)]
- [!code-csharp[NclMailSync#32](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#32)]  
-  
+The following code example demonstrates calling this constructor.  
+ 
+[!code-cpp[NclMailSync#32](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#32)]
+[!code-csharp[NclMailSync#32](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#32)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance with the data needed to serialize the <see cref="T:System.Net.Mail.SmtpException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
-  
+Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,13 +317,13 @@
         <value>An <see cref="T:System.Net.Mail.SmtpStatusCode" /> value that indicates the error that occurred.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example displays the value of this property.  
-  
- [!code-cpp[NclMailSync#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#27)]
- [!code-csharp[NclMailSync#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#27)]  
-  
+The following code example displays the value of this property.  
+ 
+[!code-cpp[NclMailSync#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#27)]
+[!code-csharp[NclMailSync#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

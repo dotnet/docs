@@ -18,42 +18,42 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.Design.TemplateGroup" /> objects within a control designer. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.ControlDesigner> class, and any derived class, defines the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property as a <xref:System.Web.UI.Design.TemplateGroupCollection> object. The <xref:System.Web.UI.Design.TemplateGroupCollection> property is typically used only by a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
-  
- The collection dynamically increases in size as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property to determine how many groups are in the collection.  
-  
- Additionally, use the <xref:System.Web.UI.Design.TemplateGroupCollection> methods and properties to provide the following functionality:  
-  
+The <xref:System.Web.UI.Design.ControlDesigner> class, and any derived class, defines the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property as a <xref:System.Web.UI.Design.TemplateGroupCollection> object. The <xref:System.Web.UI.Design.TemplateGroupCollection> property is typically used only by a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
+ 
+The collection dynamically increases in size as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property to determine how many groups are in the collection.  
+ 
+Additionally, use the <xref:System.Web.UI.Design.TemplateGroupCollection> methods and properties to provide the following functionality:  
+ 
 -   The <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method to add a single group to the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method to add a group at a particular index within the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method to remove a group.  
-  
+ 
 -   The <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method to remove the group at a particular index.  
-  
+ 
 -   The <xref:System.Web.UI.Design.TemplateGroupCollection.Contains%2A> method to determine whether a particular group is already in the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.TemplateGroupCollection.IndexOf%2A> method to retrieve the index of a group within the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.TemplateGroupCollection.Item%2A> indexer to get or set the group at a particular index, using array notation.  
-  
+ 
 -   The <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method to add multiple groups to the collection.  
-  
-     You can add multiple groups either as an array of groups or as a <xref:System.Web.UI.Design.TemplateGroupCollection> object that you retrieve through the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property of another control designer.  
-  
+ 
+    You can add multiple groups either as an array of groups or as a <xref:System.Web.UI.Design.TemplateGroupCollection> object that you retrieve through the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property of another control designer.  
+ 
 -   The <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method to remove all groups from the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to define a simple control designer that is derived from the <xref:System.Web.UI.Design.ControlDesigner> class. The derived control designer implements the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property by getting the template groups that are defined for the base class and adding a template group that is specific to the derived control designer.  
-  
- [!code-csharp[System.Web.UI.Design.TemplateGroupCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.TemplateGroupCollection/CS/templategroupcollectionsample.cs#1)]
- [!code-vb[System.Web.UI.Design.TemplateGroupCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.TemplateGroupCollection/VB/templategroupcollectionsample.vb#1)]  
-  
+The following code example demonstrates how to define a simple control designer that is derived from the <xref:System.Web.UI.Design.ControlDesigner> class. The derived control designer implements the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property by getting the template groups that are defined for the base class and adding a template group that is specific to the derived control designer.  
+ 
+[!code-csharp[System.Web.UI.Design.TemplateGroupCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.TemplateGroupCollection/CS/templategroupcollectionsample.cs#1)]
+[!code-vb[System.Web.UI.Design.TemplateGroupCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.TemplateGroupCollection/VB/templategroupcollectionsample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.TemplateGroupCollection.%23ctor%2A> constructor to create an empty collection. You can add elements to the collection by using the <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A>, <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A>, or <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.TemplateGroupCollection.%23ctor%2A> constructor to create an empty collection. You can add elements to the collection by using the <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A>, <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A>, or <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,12 +101,12 @@
         <returns>The index at which the <see cref="T:System.Web.UI.Design.TemplateGroup" /> was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method adds the specified <xref:System.Web.UI.Design.TemplateGroup> object to the end of the collection. To add a <xref:System.Web.UI.Design.TemplateGroup> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method.  
-  
- To add multiple groups to the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method.  
-  
+The <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method adds the specified <xref:System.Web.UI.Design.TemplateGroup> object to the end of the collection. To add a <xref:System.Web.UI.Design.TemplateGroup> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method.  
+ 
+To add multiple groups to the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <summary>Adds the template groups in an existing <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> object to the current <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method adds multiple groups to the collection. To add a single <xref:System.Web.UI.Design.TemplateGroup> object to the end of the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method. To add a <xref:System.Web.UI.Design.TemplateGroup> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method.  
-  
+The <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method adds multiple groups to the collection. To add a single <xref:System.Web.UI.Design.TemplateGroup> object to the end of the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method. To add a <xref:System.Web.UI.Design.TemplateGroup> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -158,10 +158,10 @@
         <summary>Removes all groups from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method to remove all groups from the collection. To remove a specific group from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method. To remove a group at a particular index, use the <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method to remove all groups from the collection. To remove a specific group from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method. To remove a group at a particular index, use the <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,12 +188,12 @@
           <see langword="true" /> if the <paramref name="group" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.TemplateGroup> objects.  
-  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.Contains%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property. Because template group collections typically are small, the performance of the linear search operation is not critical.  
-  
+The <xref:System.Web.UI.Design.TemplateGroupCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.TemplateGroup> objects.  
+ 
+The <xref:System.Web.UI.Design.TemplateGroupCollection.Contains%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property. Because template group collections typically are small, the performance of the linear search operation is not critical.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,10 +220,10 @@
         <summary>Copies the groups in the collection to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The group elements are copied to the <xref:System.Array> object in the same order in which the group elements are indexed within the <xref:System.Web.UI.Design.TemplateGroupCollection> object.  
-  
+The group elements are copied to the <xref:System.Array> object in the same order in which the group elements are indexed within the <xref:System.Web.UI.Design.TemplateGroupCollection> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -259,10 +259,10 @@
         <value>The number of <see cref="T:System.Web.UI.Design.TemplateGroup" /> objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property generally is used to determine the upper boundary index when iterating through objects in the collection. Because the collection indexes are zero-based, the first element is at index `0` and the last element is at index `Count-1`.  
-  
+The <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property generally is used to determine the upper boundary index when iterating through objects in the collection. Because the collection indexes are zero-based, the first element is at index `0` and the last element is at index `Count-1`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -288,12 +288,12 @@
         <returns>The zero-based index of the first occurrence of <paramref name="group" /> within the collection; otherwise, -1, if <paramref name="group" /> is not in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.IndexOf%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.TemplateGroup> objects.  
-  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.IndexOf%2A> performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property. Because template group collections typically are small, the performance of the linear search operation is not critical.  
-  
+The <xref:System.Web.UI.Design.TemplateGroupCollection.IndexOf%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.TemplateGroup> objects.  
+ 
+The <xref:System.Web.UI.Design.TemplateGroupCollection.IndexOf%2A> performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property. Because template group collections typically are small, the performance of the linear search operation is not critical.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,13 +320,13 @@
         <summary>Inserts a <see cref="T:System.Web.UI.Design.TemplateGroup" /> object into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method adds a <xref:System.Web.UI.Design.TemplateGroup> object to the collection at a specific index location. To add a single <xref:System.Web.UI.Design.TemplateGroup> to the end of the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method. To add multiple groups to the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method.  
-  
+The <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method adds a <xref:System.Web.UI.Design.TemplateGroup> object to the collection at a specific index location. To add a single <xref:System.Web.UI.Design.TemplateGroup> to the end of the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method. To add multiple groups to the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method.  
+ 
 > [!NOTE]
 >  When you insert an item into the collection, the indexes change for subsequent items in the collection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -358,12 +358,12 @@
         <value>The <see cref="T:System.Web.UI.Design.TemplateGroup" /> at <paramref name="index" /> in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.TemplateGroupCollection.Item%2A> indexer to retrieve the group at a specified `index` within the collection or to set the group at a specified `index` within the collection. You can index elements in the collection by using array notation. For example, you can index an element at index `i` with the notation `TemplateGroups(i)` for Microsoft VisualBasic or `TemplateGroups[i]` for C#.  
-  
- When you have a reference to the group object and need the index of the object in the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.IndexOf%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.TemplateGroupCollection.Item%2A> indexer to retrieve the group at a specified `index` within the collection or to set the group at a specified `index` within the collection. You can index elements in the collection by using array notation. For example, you can index an element at index `i` with the notation `TemplateGroups(i)` for Microsoft VisualBasic or `TemplateGroups[i]` for C#.  
+ 
+When you have a reference to the group object and need the index of the object in the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.IndexOf%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -394,19 +394,19 @@
         <summary>Removes the specified <see cref="T:System.Web.UI.Design.TemplateGroup" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method removes the first occurrence of `group` from the collection. If the <xref:System.Web.UI.Design.TemplateGroupCollection> object does not contain `group`, the collection remains unchanged. No exception is thrown.  
-  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.TemplateGroup> objects.  
-  
- The <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property. Because template group collections typically are small, the performance of the linear search operation is not critical.  
-  
- To remove a group at a particular index from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method. To remove all the groups from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method.  
-  
+The <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method removes the first occurrence of `group` from the collection. If the <xref:System.Web.UI.Design.TemplateGroupCollection> object does not contain `group`, the collection remains unchanged. No exception is thrown.  
+ 
+The <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.TemplateGroup> objects.  
+ 
+The <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property. Because template group collections typically are small, the performance of the linear search operation is not critical.  
+ 
+To remove a group at a particular index from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method. To remove all the groups from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method.  
+ 
 > [!NOTE]
 >  When you remove an item from the collection, the indexes change for subsequent items in the collection.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -431,13 +431,13 @@
         <summary>Removes the <see cref="T:System.Web.UI.Design.TemplateGroup" /> object at the specified index within the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method to remove a group at a particular index from the collection. To remove a specified group from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method. To remove all the groups from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method to remove a group at a particular index from the collection. To remove a specified group from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method. To remove all the groups from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method.  
+ 
 > [!NOTE]
 >  When you remove an item from the collection, the indexes change for subsequent items in the collection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -470,10 +470,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,10 +495,10 @@
         <value>The number of elements in the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -521,10 +521,10 @@
           <see langword="false" />, if access to the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> is not synchronized (thread safe); otherwise, <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -546,10 +546,10 @@
         <value>An object to use to synchronize access to the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -572,10 +572,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> to use to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -601,10 +601,10 @@
         <returns>The index at which <paramref name="o" /> was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -626,10 +626,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -656,10 +656,10 @@
           <see langword="true" />, if <paramref name="o" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -685,10 +685,10 @@
         <returns>The zero-based index of the first occurrence of <paramref name="o" /> within the collection; otherwise, -1, if <paramref name="o" /> is not in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -715,10 +715,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -741,10 +741,10 @@
           <see langword="false" />, if the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> dynamically increases as new objects are added; otherwise, <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -767,10 +767,10 @@
           <see langword="false" />, if the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> can be added, modified, and removed; otherwise, <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -796,10 +796,10 @@
         <value>The object at <paramref name="index" /> in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -824,10 +824,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -852,10 +852,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

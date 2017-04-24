@@ -14,10 +14,10 @@
     <summary>Maintains a <see cref="T:System.Windows.Forms.Binding" /> between an object's property and a data-bound control property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PropertyManager> inherits from the <xref:System.Windows.Forms.BindingManagerBase>, and it is used to maintain the current property of an object, rather than the property of a current object in a list. For this reason, trying to set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> or <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property for a <xref:System.Windows.Forms.PropertyManager> has no effect. Similarly, the <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> and <xref:System.Windows.Forms.BindingManagerBase.RemoveAt%2A> methods are not supported because there is no underlying list of data to add to or delete from. In addition, a call to <xref:System.Windows.Forms.BindingManagerBase.IsBindingSuspended%2A> will always return `false` if the <xref:System.Windows.Forms.PropertyManager> has a data source, regardless of whether <xref:System.Windows.Forms.BindingManagerBase.SuspendBinding%2A> has been called.  
-  
+The <xref:System.Windows.Forms.PropertyManager> inherits from the <xref:System.Windows.Forms.BindingManagerBase>, and it is used to maintain the current property of an object, rather than the property of a current object in a list. For this reason, trying to set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> or <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property for a <xref:System.Windows.Forms.PropertyManager> has no effect. Similarly, the <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> and <xref:System.Windows.Forms.BindingManagerBase.RemoveAt%2A> methods are not supported because there is no underlying list of data to add to or delete from. In addition, a call to <xref:System.Windows.Forms.BindingManagerBase.IsBindingSuspended%2A> will always return `false` if the <xref:System.Windows.Forms.PropertyManager> has a data source, regardless of whether <xref:System.Windows.Forms.BindingManagerBase.SuspendBinding%2A> has been called.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@
         <value>An <see cref="T:System.Object" /> that represents the object to which the property belongs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PropertyManager.Current%2A> property returns the data source of a data-bound relationship.  
-  
+The <xref:System.Windows.Forms.PropertyManager.Current%2A> property returns the data source of a data-bound relationship.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
         <summary>Suspends the data binding between a data source and a data-bound property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.PropertyManager.SuspendBinding%2A> and <xref:System.Windows.Forms.PropertyManager.ResumeBinding%2A> are two methods that allow the temporary suspension and resumption of data binding. You typically suspend data binding if the user must be allowed to make several edits to data fields before validation occurs. For example, if one field must be changed in accordance with a second, but where validating the first field would cause the second field to be in error. A call to <xref:System.Windows.Forms.BindingManagerBase.IsBindingSuspended%2A> will always return `false` if the <xref:System.Windows.Forms.PropertyManager> has a data source, regardless of whether <xref:System.Windows.Forms.BindingManagerBase.SuspendBinding%2A> has been called.  
-  
+<xref:System.Windows.Forms.PropertyManager.SuspendBinding%2A> and <xref:System.Windows.Forms.PropertyManager.ResumeBinding%2A> are two methods that allow the temporary suspension and resumption of data binding. You typically suspend data binding if the user must be allowed to make several edits to data fields before validation occurs. For example, if one field must be changed in accordance with a second, but where validating the first field would cause the second field to be in error. A call to <xref:System.Windows.Forms.BindingManagerBase.IsBindingSuspended%2A> will always return `false` if the <xref:System.Windows.Forms.PropertyManager> has a data source, regardless of whether <xref:System.Windows.Forms.BindingManagerBase.SuspendBinding%2A> has been called.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,10 +19,10 @@
     <summary>Provides the data for the **RowUpdating** event of a .NET Framework data provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `RowUpdating` event is typically raised just before an <xref:System.Data.Common.DbDataAdapter.Update%2A> to a row begins.  
-  
+The `RowUpdating` event is typically raised just before an <xref:System.Data.Common.DbDataAdapter.Update%2A> to a row begins.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <value>The <see cref="T:System.Data.IDbCommand" /> to execute during the <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows implementations to perform type checking for the <xref:System.Data.IDbCommand> object assignment. Only valid <xref:System.Data.IDbCommand> objects, for example a <xref:System.Data.SqlClient.SqlCommand> object, should be permitted.  
-  
+This method allows implementations to perform type checking for the <xref:System.Data.IDbCommand> object assignment. Only valid <xref:System.Data.IDbCommand> objects, for example a <xref:System.Data.SqlClient.SqlCommand> object, should be permitted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,18 +177,18 @@
         <value>The type of SQL statement to execute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Common.RowUpdatingEventArgs.StatementType%2A> can be one of the following values:  
-  
+<xref:System.Data.Common.RowUpdatingEventArgs.StatementType%2A> can be one of the following values:  
+ 
 -   Select  
-  
+ 
 -   Insert  
-  
+ 
 -   Update  
-  
+ 
 -   Delete  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

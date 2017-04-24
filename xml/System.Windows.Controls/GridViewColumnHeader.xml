@@ -22,23 +22,23 @@
     <summary>Represents a column header for a <see cref="T:System.Windows.Controls.GridViewColumn" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.GridViewColumnHeader> object is a button control that is derived from <xref:System.Windows.Controls.Primitives.ButtonBase>. <xref:System.Windows.Controls.GridViewColumnHeader> properties keep track of mouse events and the resizing of columns.  
+A <xref:System.Windows.Controls.GridViewColumnHeader> object is a button control that is derived from <xref:System.Windows.Controls.Primitives.ButtonBase>. <xref:System.Windows.Controls.GridViewColumnHeader> properties keep track of mouse events and the resizing of columns.  
+ 
+Column headers in a <xref:System.Windows.Controls.GridView> view mode are <xref:System.Windows.Controls.GridViewColumnHeader> objects.  
+ 
+You can customize <xref:System.Windows.Controls.GridViewColumnHeader> objects by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+ 
+A <xref:System.Windows.Controls.GridViewColumnHeader> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+ 
   
- Column headers in a <xref:System.Windows.Controls.GridView> view mode are <xref:System.Windows.Controls.GridViewColumnHeader> objects.  
-  
- You can customize <xref:System.Windows.Controls.GridViewColumnHeader> objects by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
-  
- A <xref:System.Windows.Controls.GridViewColumnHeader> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
-  
-   
-  
+ 
 ## Examples  
- Each <xref:System.Windows.Controls.GridViewColumnHeader> can contain a context (right-click) menu. The following example shows how to create a context menu for a <xref:System.Windows.Controls.GridViewColumnHeader> in XAML.  
-  
- [!code-xml[ListViewCode#HeaderContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#headercontextmenu)]  
-  
+Each <xref:System.Windows.Controls.GridViewColumnHeader> can contain a context (right-click) menu. The following example shows how to create a context menu for a <xref:System.Windows.Controls.GridViewColumnHeader> in XAML.  
+ 
+[!code-xml[ListViewCode#HeaderContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#headercontextmenu)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,17 +75,17 @@
         <value>The <see cref="T:System.Windows.Controls.GridViewColumn" /> that is associated with this <see cref="T:System.Windows.Controls.GridViewColumnHeader" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Column"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.GridViewColumnHeader>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,10 +106,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumnHeader.Column" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridViewColumnHeader.Column%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.GridViewColumnHeader.Column%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,10 +152,10 @@
         <summary>Responds to the creation of the visual tree for the <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> of the <xref:System.Windows.Controls.GridViewColumnHeader> and updates the floating version of the header when the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> property is set to <xref:System.Windows.Controls.GridViewColumnHeaderRole>.  
-  
+This method sets the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> of the <xref:System.Windows.Controls.GridViewColumnHeader> and updates the floating version of the header when the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> property is set to <xref:System.Windows.Controls.GridViewColumnHeaderRole>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,10 +177,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event for a <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does not raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event when a column is changing its position.  
-  
+This implementation does not raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event when a column is changing its position.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,12 +224,12 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.LostKeyboardFocus" /> event for a <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.GridViewColumnHeader> implementation of <xref:System.Windows.UIElement.OnLostKeyboardFocus%2A> clears mouse capture.  
-  
- This implementation does not change the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the <xref:System.Windows.Input.KeyboardFocusChangedEventArgs>.  
-  
+The <xref:System.Windows.Controls.GridViewColumnHeader> implementation of <xref:System.Windows.UIElement.OnLostKeyboardFocus%2A> clears mouse capture.  
+ 
+This implementation does not change the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the <xref:System.Windows.Input.KeyboardFocusChangedEventArgs>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseEnter" /> event when the user pauses the mouse pointer on the <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation handles the <xref:System.Windows.UIElement.MouseEnter> event when the user drags a <xref:System.Windows.Controls.GridViewColumnHeader> and its column to a new location in a <xref:System.Windows.Controls.GridView> by using the mouse. To handle the event, the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the <xref:System.Windows.Input.MouseEventArgs> is set to `true`.  
-  
+This implementation handles the <xref:System.Windows.UIElement.MouseEnter> event when the user drags a <xref:System.Windows.Controls.GridViewColumnHeader> and its column to a new location in a <xref:System.Windows.Controls.GridView> by using the mouse. To handle the event, the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the <xref:System.Windows.Input.MouseEventArgs> is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,10 +282,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeave" /> event when the mouse moves off the <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation handles the <xref:System.Windows.UIElement.MouseLeave> event when the user drags a <xref:System.Windows.Controls.GridViewColumnHeader> with the mouse from its old location, to move the header and its column. To handle the event, the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the <xref:System.Windows.Input.MouseEventArgs> is set to `true`.  
-  
+This implementation handles the <xref:System.Windows.UIElement.MouseLeave> event when the user drags a <xref:System.Windows.Controls.GridViewColumnHeader> with the mouse from its old location, to move the header and its column. To handle the event, the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the <xref:System.Windows.Input.MouseEventArgs> is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,10 +310,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> event when the user presses the left mouse button while pausing the mouse pointer on the <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event so that the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp%2A?displayProperty=fullName> can support the drag-and-drop operation that moves a column. This method captures the mouse and sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
-  
+This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event so that the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp%2A?displayProperty=fullName> can support the drag-and-drop operation that moves a column. This method captures the mouse and sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,12 +338,12 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> event when the user releases the left mouse button while pausing the mouse pointer on the <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event (which occurs when the <xref:System.Windows.RoutedEventArgs.Handled%2A> property in the <xref:System.Windows.Input.MouseEventArgs> is set to `true`). It also ends the mouse capture that was set by the <xref:System.Windows.Controls.GridViewColumnHeader.OnMouseLeftButtonDown%2A> method. This provides a way for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp%2A?displayProperty=fullName> to support the drag-and-drop operation that moves a column.  
-  
- This method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
-  
+This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event (which occurs when the <xref:System.Windows.RoutedEventArgs.Handled%2A> property in the <xref:System.Windows.Input.MouseEventArgs> is set to `true`). It also ends the mouse capture that was set by the <xref:System.Windows.Controls.GridViewColumnHeader.OnMouseLeftButtonDown%2A> method. This provides a way for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp%2A?displayProperty=fullName> to support the drag-and-drop operation that moves a column.  
+ 
+This method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,12 +368,12 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseMove" /> event that occurs when the user moves the mouse within a <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation keeps the left mouse button in a pressed state while a <xref:System.Windows.Controls.GridViewColumn> is moved by a drag-and-drop operation. This also causes the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property of the <xref:System.Windows.Controls.GridViewColumnHeader> to remain set to `true` when the mouse with its left mouse button pressed moves off the header.  
-  
- This implementation keeps the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument set to `false` for the <xref:System.Windows.UIElement.MouseMove> event so that the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseMove%2A?displayProperty=fullName> method can support the drag-and-drop operation that moves a column.  
-  
+This implementation keeps the left mouse button in a pressed state while a <xref:System.Windows.Controls.GridViewColumn> is moved by a drag-and-drop operation. This also causes the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property of the <xref:System.Windows.Controls.GridViewColumnHeader> to remain set to `true` when the mouse with its left mouse button pressed moves off the header.  
+ 
+This implementation keeps the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument set to `false` for the <xref:System.Windows.UIElement.MouseMove> event so that the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseMove%2A?displayProperty=fullName> method can support the drag-and-drop operation that moves a column.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,18 +421,18 @@
         <value>A <see cref="T:System.Windows.Controls.GridViewColumnHeaderRole" /> enumeration value that specifies the current role of the column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.GridViewHeaderRowPresenter> class performs layout for the column headers in a <xref:System.Windows.Controls.GridView> and places an additional column header at the end to add space. A <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> value of <xref:System.Windows.Controls.GridViewColumnHeaderRole> identifies this column header in the <xref:System.Windows.Controls.GridView>. A <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> value of <xref:System.Windows.Controls.GridViewColumnHeaderRole> identifies a column that is currently the object of a drag-and-drop operation.  
-  
+The <xref:System.Windows.Controls.GridViewHeaderRowPresenter> class performs layout for the column headers in a <xref:System.Windows.Controls.GridView> and places an additional column header at the end to add space. A <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> value of <xref:System.Windows.Controls.GridViewColumnHeaderRole> identifies this column header in the <xref:System.Windows.Controls.GridView>. A <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> value of <xref:System.Windows.Controls.GridViewColumnHeaderRole> identifies a column that is currently the object of a drag-and-drop operation.  
+ 
 <a name="dependencyPropertyInfo_Role"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.GridViewColumnHeader.RoleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,10 +453,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumnHeader.Role" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -483,20 +483,20 @@
           <see langword="true" /> if the <see cref="T:System.Windows.DependencyProperty" /> must be serialized; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method applies to the following dependency properties:  
-  
+This method applies to the following dependency properties:  
+ 
 -   <xref:System.Windows.Controls.ContentControl.ContentTemplateProperty>  
-  
+ 
 -   <xref:System.Windows.Controls.ContentControl.ContentTemplateSelectorProperty>  
-  
+ 
 -   <xref:System.Windows.FrameworkElement.ContextMenuProperty>  
-  
+ 
 -   <xref:System.Windows.FrameworkElement.StyleProperty>  
-  
+ 
 -   <xref:System.Windows.FrameworkElement.ToolTipProperty>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

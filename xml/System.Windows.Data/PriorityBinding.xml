@@ -23,26 +23,26 @@
     <summary>Describes a collection of <see cref="T:System.Windows.Data.Binding" /> objects that is attached to a single binding target property, which receives its value from the first binding in the collection that produces a value successfully.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.PriorityBinding> lets you associate a binding target (target) property with a list of bindings. The first binding that returns a value successfully becomes the active binding.  
-  
- A binding returns a value successfully if:  
-  
+<xref:System.Windows.Data.PriorityBinding> lets you associate a binding target (target) property with a list of bindings. The first binding that returns a value successfully becomes the active binding.  
+ 
+A binding returns a value successfully if:  
+ 
 1.  The path to the binding source resolves successfully.  
-  
+ 
 2.  The value converter, if any, is able to convert the resulting value.  
-  
+ 
 3.  The resulting value is valid for the target property.  
-  
- The value <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> is not considered a successful return value.  
-  
- The priority of the bindings is determined by their order in the list. The binding that appears first in the list has the highest priority.  
-  
- The binding engine starts with the first binding in the list and verifies whether that binding returns a value successfully; if it does, the value from that binding is used. If the first binding does not return a value successfully, the binding engine examines the second binding to determine whether it returns a value successfully; if it does, the value from the second binding becomes the active value. This verification process continues to the end of the list of bindings. If none of the bindings returns a value successfully, the binding uses the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>.  
-  
- The binding engine continues to listen for changes on all bindings. If at any point one of the bindings that has a higher priority returns a value successfully, the value for that binding becomes the active value and replaces the current value.  
-  
+ 
+The value <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> is not considered a successful return value.  
+ 
+The priority of the bindings is determined by their order in the list. The binding that appears first in the list has the highest priority.  
+ 
+The binding engine starts with the first binding in the list and verifies whether that binding returns a value successfully; if it does, the value from that binding is used. If the first binding does not return a value successfully, the binding engine examines the second binding to determine whether it returns a value successfully; if it does, the value from the second binding becomes the active value. This verification process continues to the end of the list of bindings. If none of the bindings returns a value successfully, the binding uses the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>.  
+ 
+The binding engine continues to listen for changes on all bindings. If at any point one of the bindings that has a higher priority returns a value successfully, the value for that binding becomes the active value and replaces the current value.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,33 +84,33 @@
         <value>A collection of <see cref="T:System.Windows.Data.Binding" /> objects. <see cref="T:System.Windows.Data.PriorityBinding" /> currently supports only objects of type <see cref="T:System.Windows.Data.Binding" /> and not <see cref="T:System.Windows.Data.MultiBinding" /> or <see cref="T:System.Windows.Data.PriorityBinding" />. Adding a <see cref="T:System.Windows.Data.Binding" /> child to a <see cref="T:System.Windows.Data.PriorityBinding" /> object implicitly adds the child to the <see cref="T:System.Windows.Data.BindingBase" /> collection for the <see cref="T:System.Windows.Data.MultiBinding" /> object. The default is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This property can only be set in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by using the collection syntax that is shown in the following example, or by accessing the collection object and using its various methods, such as Add. The property that you use to access the collection object is read-only, whereas the collection itself is read/write.  
-  
+ 
 <a name="xamlPropertyElementUsage_Bindings"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-    OneOrMoreBindings  
+   OneOrMoreBindings  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_Bindings"></a>   
 ## XAML Values  
- *OneOrMoreBindings*  
- One or more <xref:System.Windows.Data.Binding> objects; <xref:System.Windows.Data.PriorityBinding> does not currently support <xref:System.Windows.Data.MultiBinding> or <xref:System.Windows.Data.PriorityBinding> objects.  
+*OneOrMoreBindings*  
+One or more <xref:System.Windows.Data.Binding> objects; <xref:System.Windows.Data.PriorityBinding> does not currently support <xref:System.Windows.Data.MultiBinding> or <xref:System.Windows.Data.PriorityBinding> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, \<PriorityBinding.Bindings> is implicit. The <xref:System.Windows.Data.Binding> objects that are established for the <xref:System.Windows.Data.PriorityBinding> are implicitly added to the <xref:System.Windows.Data.BindingBase> collection. For more information, see the "Property Value" section earlier in this topic.  
-  
- [!code-xml[PriorityBinding#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PriorityBinding/CSharp/Window1.xaml#2)]  
-  
+In the following example, \<PriorityBinding.Bindings> is implicit. The <xref:System.Windows.Data.Binding> objects that are established for the <xref:System.Windows.Data.PriorityBinding> are implicitly added to the <xref:System.Windows.Data.BindingBase> collection. For more information, see the "Property Value" section earlier in this topic.  
+ 
+[!code-xml[PriorityBinding#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PriorityBinding/CSharp/Window1.xaml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

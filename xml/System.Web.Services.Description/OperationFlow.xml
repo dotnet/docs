@@ -14,19 +14,19 @@
     <summary>Specifies the type of transmission an endpoint of the XML Web service can support.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although request-response or solicit-response operations are logically correlated in the Web Services Description Language (WSDL) document, the concrete correlation information will be specified by a binding. For example, the request and response messages can be exchanged as part of one or two actual HTTP transmissions.  
+Although request-response or solicit-response operations are logically correlated in the Web Services Description Language (WSDL) document, the concrete correlation information will be specified by a binding. For example, the request and response messages can be exchanged as part of one or two actual HTTP transmissions.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following sample demonstrates the use of the `OperationFlow` enumeration.  
-  
- [!code-cpp[OperationFlow_Enum#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationFlow_Enum/CPP/operationflow_enum.cpp#1)]
- [!code-csharp[OperationFlow_Enum#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationFlow_Enum/CS/operationflow_enum.cs#1)]
- [!code-vb[OperationFlow_Enum#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationFlow_Enum/VB/operationflow_enum.vb#1)]  
-  
+The following sample demonstrates the use of the `OperationFlow` enumeration.  
+ 
+[!code-cpp[OperationFlow_Enum#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationFlow_Enum/CPP/operationflow_enum.cpp#1)]
+[!code-csharp[OperationFlow_Enum#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationFlow_Enum/CS/operationflow_enum.cs#1)]
+[!code-vb[OperationFlow_Enum#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationFlow_Enum/VB/operationflow_enum.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,14 +19,14 @@
     <summary>Renders the document outline for the workflow currently being designed in the workflow designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.Design.WorkflowOutline> displays a hierarchical representation of the workflow in the workflow designer.  
-  
+ 
+<xref:System.Workflow.ComponentModel.Design.WorkflowOutline> displays a hierarchical representation of the workflow in the workflow designer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,10 +77,10 @@
         <returns>The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowOutlineNode" /> for the activity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calls to create a new workflow node for a given activity could return `null`, which indicates that you do not want to create a node for it.  
-  
+Calls to create a new workflow node for a given activity could return `null`, which indicates that you do not want to create a node for it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <returns>The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowOutlineNode" /> that is associated with <paramref name="activity" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Workflow.ComponentModel.Design.WorkflowOutline> contains one <xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode> for each activity a user adds to a workflow design surface.  
-  
+A <xref:System.Workflow.ComponentModel.Design.WorkflowOutline> contains one <xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode> for each activity a user adds to a workflow design surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,13 +250,13 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Form.Load" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.WorkflowOutline.OnLoad%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+The <xref:System.Workflow.ComponentModel.Design.WorkflowOutline.OnLoad%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
 > [!NOTE]
 >  When overriding <xref:System.Workflow.ComponentModel.Design.WorkflowOutline.OnLoad%2A> in a derived class, be sure to call the base class's `OnLoad` method so that registered delegates receive the event.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

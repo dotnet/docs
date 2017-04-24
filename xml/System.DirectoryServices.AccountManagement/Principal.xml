@@ -23,10 +23,10 @@
     <summary>Encapsulates the account data and operations common to all security principals. This is the abstract base class from which all security principals are derived.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
-  
+Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> class. This constructor is called by derived-class constructors to initialize the base class and is not intended to be called directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
-  
+Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <summary>Determines whether the <see cref="M:System.DirectoryServices.AccountManagement.Principal.Dispose" /> or <see cref="M:System.DirectoryServices.AccountManagement.Principal.Delete" /> methods have been called on this class. This method is called by classes that derive from this principal class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method checks whether the object has been disposed before it determines whether it has been deleted.  
-  
+This method checks whether the object has been disposed before it determines whether it has been deleted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.DirectoryServices.AccountManagement.Principal.Dispose" /> method has been called on this principal object.</exception>
@@ -170,10 +170,10 @@
         <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value that specifies the context type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The context type is set on the principal context object in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor. The value stored in this class is associated with the <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ContextType%2A> property.  
-  
+The context type is set on the principal context object in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor. The value stored in this class is associated with the <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ContextType%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -381,10 +381,10 @@
         <summary>Sets the value of an attribute in an extended class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See [System.DirectoryServices.AccountManagement Principle Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) for an example of this function.  
-  
+See [System.DirectoryServices.AccountManagement Principle Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) for an example of this function.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -545,14 +545,14 @@
         <returns>A collection of <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> objects that specify the groups of which the current principal is a member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns only the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
-  
- The groups that are returned by this method may include groups from a different scope and store than the principal. For example, if the principal is an AD DS object that has a DN of "CN=SpecialGroups,DC=Fabrikam,DC=com, the returned set can contain groups that belong to the "CN=NormalGroups,DC=Fabrikam,DC=com.  
-  
- If the current principal is an AD DS principal, the returned groups include the principals primary group, as indicated by the "primaryGroupId" attribute on the AD DS object.  
-  
+This method returns only the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
+ 
+The groups that are returned by this method may include groups from a different scope and store than the principal. For example, if the principal is an AD DS object that has a DN of "CN=SpecialGroups,DC=Fabrikam,DC=com, the returned set can contain groups that belong to the "CN=NormalGroups,DC=Fabrikam,DC=com.  
+ 
+If the current principal is an AD DS principal, the returned groups include the principals primary group, as indicated by the "primaryGroupId" attribute on the AD DS object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,14 +585,14 @@
         <returns>A collection of <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> objects that specify the groups of which the current principal is a member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns only the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
-  
- The groups that are returned by this method may include groups from a different scope and store than the principal. For example, if the principal is an AD DS object that has a DN of "CN=SpecialGroups,DC=Fabrikam,DC=com, the returned set can contain groups that belong to the "CN=NormalGroups,DC=Fabrikam,DC=com.  
-  
- If the current principal is an AD DS principal, the returned groups include the principals primary group as indicated by the primary group ID attribute on the AD DS object.  
-  
+This method returns only the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
+ 
+The groups that are returned by this method may include groups from a different scope and store than the principal. For example, if the principal is an AD DS object that has a DN of "CN=SpecialGroups,DC=Fabrikam,DC=com, the returned set can contain groups that belong to the "CN=NormalGroups,DC=Fabrikam,DC=com.  
+ 
+If the current principal is an AD DS principal, the returned groups include the principals primary group as indicated by the primary group ID attribute on the AD DS object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -687,10 +687,10 @@
         <value>The Nullable <see cref="T:System.Guid" /> associated with this principal or null if there is no GUID.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property will always return null when the <xref:System.DirectoryServices.AccountManagement.Principal.ContextType%2A> property is set to Machine.  
-  
+This property will always return null when the <xref:System.DirectoryServices.AccountManagement.Principal.ContextType%2A> property is set to Machine.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -722,10 +722,10 @@
           <see langword="true" /> if the principal is a member of the specified group; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current principal is an AD DS principal, the returned groups include the principal's primary group, as indicated by the primary group ID attribute on the AD DS object.  
-  
+If the current principal is an AD DS principal, the returned groups include the principal's primary group, as indicated by the primary group ID attribute on the AD DS object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> specified in the group parameter could not be found.</exception>
@@ -763,10 +763,10 @@
           <see langword="true" /> if the principal is a member of the specified group; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current principal is an AD DS principal, the returned groups include the principal's primary group, as indicated by the primary group ID attribute on the AD DS object.  
-  
+If the current principal is an AD DS principal, the returned groups include the principal's primary group, as indicated by the primary group ID attribute on the AD DS object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The identity type or value does not correspond to a <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" />.</exception>
@@ -883,10 +883,10 @@
         <summary>Saves the changes that were made on the principal object to the store. If this is a new principal object, this method inserts it into the specified context. If the principal has already been persisted, it is moved from the original context to the specified context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified principal context differs from the existing context, the principal is moved to the specified context, and the principal object no longer is located in the old location. If the specified context is identical to the existing context, this method saves the updates that were made on the principal object to the store. The context type of the specified context must be the same type as the current context type. This method may not be called by using the computer context type.  
-  
+If the specified principal context differs from the existing context, the principal is moved to the specified context, and the principal object no longer is located in the old location. If the specified context is identical to the existing context, this method saves the updates that were made on the principal object to the store. The context type of the specified context must be the same type as the current context type. This method may not be called by using the computer context type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The principal has not yet been associated with a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object.  
@@ -992,10 +992,10 @@
         <value>The UPN associated with this principal or null if no if the UPN has not been set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property to null removes the existing UPN, if one exists.  
-  
+Setting this property to null removes the existing UPN, if one exists.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
@@ -1010,12 +1010,12 @@
         <summary>Returns a collection of group objects that specify the groups of which the current principal is a member.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overloaded method only returns the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
-  
- If the principal store is AD DS, the list of groups contains the user's primary group that is identified by the primary group ID attribute in the AD DS object.  
-  
+This overloaded method only returns the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
+ 
+If the principal store is AD DS, the list of groups contains the user's primary group that is identified by the primary group ID attribute in the AD DS object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

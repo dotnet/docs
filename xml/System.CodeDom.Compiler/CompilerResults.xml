@@ -14,34 +14,34 @@
     <summary>Represents the results of compilation that are returned from a compiler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class contains the following information about the results of a compilation by an <xref:System.CodeDom.Compiler.ICodeCompiler> interface implementation:  
-  
+This class contains the following information about the results of a compilation by an <xref:System.CodeDom.Compiler.ICodeCompiler> interface implementation:  
+ 
 -   The <xref:System.CodeDom.Compiler.CompilerResults.CompiledAssembly%2A> property indicates the compiled assembly.  
-  
+ 
 -   The <xref:System.CodeDom.Compiler.CompilerResults.Evidence%2A> property indicates the security evidence for the assembly.  
-  
+ 
 -   The <xref:System.CodeDom.Compiler.CompilerResults.PathToAssembly%2A> property indicates the path to the compiled assembly, if it was not generated only in memory.  
-  
+ 
 -   The <xref:System.CodeDom.Compiler.CompilerResults.Errors%2A> property indicates any compiler errors and warnings.  
-  
+ 
 -   The <xref:System.CodeDom.Compiler.CompilerResults.Output%2A> property contains the compiler output messages.  
-  
+ 
 -   The <xref:System.CodeDom.Compiler.CompilerResults.NativeCompilerReturnValue%2A> property indicates result code value returned by the compiler.  
-  
+ 
 -   The <xref:System.CodeDom.Compiler.CompilerResults.TempFiles%2A> property indicates the temporary files generated during compilation and linking.  
-  
+ 
 > [!NOTE]
 >  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about inheritance demands, see  [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[CompilerResultsExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerResultsExample/CPP/class1.cpp#1)]
- [!code-csharp[CompilerResultsExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerResultsExample/CS/class1.cs#1)]
- [!code-vb[CompilerResultsExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerResultsExample/VB/class1.vb#1)]  
-  
+[!code-cpp[CompilerResultsExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerResultsExample/CPP/class1.cpp#1)]
+[!code-csharp[CompilerResultsExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerResultsExample/CS/class1.cs#1)]
+[!code-vb[CompilerResultsExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerResultsExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
@@ -83,12 +83,12 @@
         <value>An <see cref="T:System.Reflection.Assembly" /> that indicates the compiled assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The `get` accessor for the <xref:System.CodeDom.Compiler.CompilerResults.CompiledAssembly%2A> property calls the <xref:System.AppDomain.Load%2A> method to load the compiled assembly into the current application domain.  After calling the `get` accessor, the compiled assembly cannot be deleted until the current <xref:System.AppDomain> is unloaded.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
@@ -111,10 +111,10 @@
         <value>A <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> that indicates the errors and warnings resulting from compilation, if any.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- File and line number information is associated with each <xref:System.CodeDom.Compiler.CompilerError>, so that user code to locate and display the code that generated an error or warning, where possible, can be implemented.  
-  
+File and line number information is associated with each <xref:System.CodeDom.Compiler.CompilerError>, so that user code to locate and display the code that generated an error or warning, where possible, can be implemented.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <value>The compiler's return value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains the numeric exit code returned by a command line compiler, if implemented. A value of 0 indicates success, while a non-zero value indicates failure.  
-  
+This property contains the numeric exit code returned by a command line compiler, if implemented. A value of 0 indicates success, while a non-zero value indicates failure.  
+ 
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
@@ -187,10 +187,10 @@
         <value>A <see cref="T:System.Collections.Specialized.StringCollection" /> that contains the output messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the compiler returned no messages, the value of this property will be an empty collection.  
-  
+If the compiler returned no messages, the value of this property will be an empty collection.  
+ 
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>

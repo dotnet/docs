@@ -14,20 +14,20 @@
     <summary>Represents a size measurement in a log store policy.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Log.PolicyUnit> structure represents a size measurement in a log store policy. The <xref:System.IO.Log.PolicyUnitType> enumeration lists the units of measurement that can be represented.  
+The <xref:System.IO.Log.PolicyUnit> structure represents a size measurement in a log store policy. The <xref:System.IO.Log.PolicyUnitType> enumeration lists the units of measurement that can be represented.  
+ 
+You can use the <xref:System.IO.Log.PolicyUnit.Value%2A> property to determine the size of the measurement. To determine the unit of measurement, use the <xref:System.IO.Log.PolicyUnit.Type%2A> property. You can convert other data types to a <xref:System.IO.Log.PolicyUnit> by using the <xref:System.IO.Log.PolicyUnit.Percentage%2A> and <xref:System.IO.Log.PolicyUnit.Extents%2A> methods.  
+ 
   
- You can use the <xref:System.IO.Log.PolicyUnit.Value%2A> property to determine the size of the measurement. To determine the unit of measurement, use the <xref:System.IO.Log.PolicyUnit.Type%2A> property. You can convert other data types to a <xref:System.IO.Log.PolicyUnit> by using the <xref:System.IO.Log.PolicyUnit.Percentage%2A> and <xref:System.IO.Log.PolicyUnit.Extents%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogPolicy> class and <xref:System.IO.Log.PolicyUnit> structure to set policy for a log record sequence.  
-  
- [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
- [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogPolicy> class and <xref:System.IO.Log.PolicyUnit> structure to set policy for a log record sequence.  
+ 
+[!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+[!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,13 +51,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Log.PolicyUnit" /> structure with the specified value and type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogPolicy> class and <xref:System.IO.Log.PolicyUnit> structure to set policy for a log record sequence.  
-  
- [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
- [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogPolicy> class and <xref:System.IO.Log.PolicyUnit> structure to set policy for a log record sequence.  
+ 
+[!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+[!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -154,10 +154,10 @@
           <see langword="true" /> if both <see cref="T:System.IO.Log.PolicyUnit" /> instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this operator to compare two <xref:System.IO.Log.PolicyUnit> instances for equality. For both objects to be equal, they must have the same values for both the <xref:System.IO.Log.PolicyUnit.Type%2A> and <xref:System.IO.Log.PolicyUnit.Value%2A> properties.  
-  
+Use this operator to compare two <xref:System.IO.Log.PolicyUnit> instances for equality. For both objects to be equal, they must have the same values for both the <xref:System.IO.Log.PolicyUnit.Type%2A> and <xref:System.IO.Log.PolicyUnit.Value%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@
           <see langword="true" /> if both <see cref="T:System.IO.Log.PolicyUnit" /> instances are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this operator to compare two <xref:System.IO.Log.PolicyUnit> instances for inequality. For both objects to not be equal, they must have different values for the <xref:System.IO.Log.PolicyUnit.Type%2A> and <xref:System.IO.Log.PolicyUnit.Value%2A>properties.  
-  
+Use this operator to compare two <xref:System.IO.Log.PolicyUnit> instances for inequality. For both objects to not be equal, they must have different values for the <xref:System.IO.Log.PolicyUnit.Type%2A> and <xref:System.IO.Log.PolicyUnit.Value%2A>properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

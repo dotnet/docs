@@ -124,10 +124,10 @@
         <value>A string that indicates the update location for the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not specified, no update location will be defined for the application. However, if application updates are specified, the update location must be specified. The specified value should be a fully qualified URL or Universal Naming Convention (UNC) path.  
-  
+If this property is not specified, no update location will be defined for the application. However, if application updates are specified, the update location must be specified. The specified value should be a fully qualified URL or Universal Naming Convention (UNC) path.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
           <see langword="true" /> if the application is blocked from being started by means of a URL otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this option is `true`, the application can only be started from the user's **Start** menu. The default is `false`. This option is ignored if <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> is `false`.  
-  
+If this option is `true`, the application can only be started from the user's **Start** menu. The default is `false`. This option is ignored if <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,13 +232,13 @@
           <see langword="true" /> if the application is an installed application; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set to `true`, the application will be installed on the user's **Start** menu, and it can be removed by using **Add or Remove Programs** in Control Panel. The default is `true`. If this property is set to `false`, the application is intended for online use from a Web page and is available online only.  
-  
+If this property is set to `true`, the application will be installed on the user's **Start** menu, and it can be removed by using **Add or Remove Programs** in Control Panel. The default is `true`. If this property is set to `false`, the application is intended for online use from a Web page and is available online only.  
+ 
 > [!NOTE]
 >  For WPF Web Browser Applications, you must set the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A> property to `true`, and you must also set <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> to `false`. If this condition is not met, you will receive [MSBuild Error MSB3116](http://msdn.microsoft.com/library/bf04c587-d0e2-4d68-bbff-da9a985ea70e).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,10 +266,10 @@
           <see langword="true" /> if .deploy file extension mapping is used; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set to `true`, every program file is published with a .deploy file extension. This setting is useful for Web server security to limit the number of file extensions that have to be unblocked to enable ClickOnce application deployment. The default is `false`.  
-  
+If this property is set to `true`, every program file is published with a .deploy file extension. This setting is useful for Web server security to limit the number of file extensions that have to be unblocked to enable ClickOnce application deployment. The default is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,10 +296,10 @@
         <value>A string indicating the minimum required version number for an application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the user's computer has a version of the application that is lower than the minimum required version specified by this property, the user will not have the option to skip the update. The default is to have no minimum required version. This input applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> is set to `true`.  
-  
+If the user's computer has a version of the application that is lower than the minimum required version specified by this property, the user will not have the option to skip the update. The default is to have no minimum required version. This input applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
         <value>A string that indicates the name of the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no value is specified for this property, the name is inferred from the identity of the generated manifest. This name is used for the shortcut name on the **Start** menu and is part of the name that appears in **Add or Remove Programs** in Control Panel.  
-  
+If no value is specified for this property, the name is inferred from the identity of the generated manifest. This name is used for the shortcut name on the **Start** menu and is part of the name that appears in **Add or Remove Programs** in Control Panel.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,10 +356,10 @@
         <value>A string that indicates the publisher of the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no value is specified for this property, the name is inferred from the registered user or from the identity of the generated manifest. This name is used for the folder name on the **Start** menu and is part of the name that appears in **Add or Remove Programs** in Control Panel.  
-  
+If no value is specified for this property, the name is inferred from the registered user or from the identity of the generated manifest. This name is used for the folder name on the **Start** menu and is part of the name that appears in **Add or Remove Programs** in Control Panel.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -409,10 +409,10 @@
         <value>A string that indicates the support URL.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified value should be a fully qualified URL or Universal Naming Convention (UNC) path.  
-  
+The specified value should be a fully qualified URL or Universal Naming Convention (UNC) path.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,10 +463,10 @@
           <see langword="true" /> if URL query-string parameters are available to the application; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set to `true`, URL query-string parameters are available to the application. The default is `false`, specifying that parameters will not be available to the application.  
-  
+If this property is set to `true`, URL query-string parameters are available to the application. The default is `false`, specifying that parameters will not be available to the application.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -494,10 +494,10 @@
           <see langword="true" /> if the application is updatable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set to `true`, the application is updatable. The default is `false`. This input applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> is set to `true`.  
-  
+If this property is set to `true`, the application is updatable. The default is `false`. This input applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -524,10 +524,10 @@
         <value>An integer that indicates the update interval for the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is zero. This input only applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled%2A> are both set to `true`.  
-  
+The default is zero. This input only applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled%2A> are both set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,12 +554,12 @@
         <value>An <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateMode" /> object that indicates whether updates should be checked before the application is started, or while the application is running.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set to `Foreground`, updates are checked in the foreground. The default is `Background`. For more information, see <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateMode>.  
-  
- This input only applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled%2A> are both set to `true`.  
-  
+If this property is set to `Foreground`, updates are checked in the foreground. The default is `Background`. For more information, see <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateMode>.  
+ 
+This input only applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled%2A> are both set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -586,12 +586,12 @@
         <value>An <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateUnit" /> object that indicates the units used for the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateInterval" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following values are available for the units used for the update interval: `Days`, `Hours`, and `Weeks`. For more information, see <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateUnit>.  
-  
- This input only applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled%2A> are both set to `true`.  
-  
+The following values are available for the units used for the update interval: `Days`, `Hours`, and `Weeks`. For more information, see <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateUnit>.  
+ 
+This input only applies only when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled%2A> are both set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

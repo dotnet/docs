@@ -14,10 +14,10 @@
     <summary>Deletes lock owner information from the persistence database.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the lock owner is associated with an instance in the database, the lock owner on that instance is set to `null` before deleting the lock owner information.  
-  
+If the lock owner is associated with an instance in the database, the lock owner on that instance is set to `null` before deleting the lock owner information.  
+ 
  ]]></format>
     </remarks>
   </Docs>

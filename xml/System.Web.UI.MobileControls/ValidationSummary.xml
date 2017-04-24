@@ -34,23 +34,23 @@
     <summary>Presents a summary of all the validation errors that have occurred on a form. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.ValidationSummary> class creates a summary of all validation errors and presents them either inline or on a separate form. The <xref:System.Web.UI.MobileControls.ValidationSummary> uses the text in the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property for the errors that are displayed either inline or on a summary form.  
+The <xref:System.Web.UI.MobileControls.ValidationSummary> class creates a summary of all validation errors and presents them either inline or on a separate form. The <xref:System.Web.UI.MobileControls.ValidationSummary> uses the text in the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property for the errors that are displayed either inline or on a summary form.  
+ 
+Although the <xref:System.Web.UI.MobileControls.ValidationSummary> class of the ASP.NET mobile controls mimics the behavior of the Web Forms <xref:System.Web.UI.WebControls.ValidationSummary> class in many ways, the mobile controls version of the class does not inherit directly from the Web Forms version of the class. Thus, properties that modify the output of the validation summary, such as the <xref:System.Web.UI.WebControls.ValidationSummary.DisplayMode%2A> property, are not available in mobile controls. The mobile controls version of the summary is derived directly from the <xref:System.Web.UI.MobileControls.MobileControl> class.  
+ 
   
- Although the <xref:System.Web.UI.MobileControls.ValidationSummary> class of the ASP.NET mobile controls mimics the behavior of the Web Forms <xref:System.Web.UI.WebControls.ValidationSummary> class in many ways, the mobile controls version of the class does not inherit directly from the Web Forms version of the class. Thus, properties that modify the output of the validation summary, such as the <xref:System.Web.UI.WebControls.ValidationSummary.DisplayMode%2A> property, are not available in mobile controls. The mobile controls version of the summary is derived directly from the <xref:System.Web.UI.MobileControls.MobileControl> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create an instance of a <xref:System.Web.UI.MobileControls.ValidationSummary> class, and add it to a form in an ASP.NET mobile Web application during a page load. The user-defined `Page_Load` event handler determines if there is an error, and then either launches the form containing the <xref:System.Web.UI.MobileControls.ValidationSummary>, or the congratulatory thank you form.  
-  
+The following code example demonstrates how to create an instance of a <xref:System.Web.UI.MobileControls.ValidationSummary> class, and add it to a form in an ASP.NET mobile Web application during a page load. The user-defined `Page_Load` event handler determines if there is an error, and then either launches the form containing the <xref:System.Web.UI.MobileControls.ValidationSummary>, or the congratulatory thank you form.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[MobileValidationSummarySample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileValidationSummarySample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileValidationSummarySample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileValidationSummarySample/vb/Default.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[MobileValidationSummarySample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileValidationSummarySample/cs/Default.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[MobileValidationSummarySample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileValidationSummarySample/vb/Default.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -96,18 +96,18 @@
         <value>A string from the validation summary that links to the form that contains an error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an error occurs during the rendering of a form, the validation process uses the text in the <xref:System.Web.UI.MobileControls.ValidationSummary.BackLabel%2A> property as the string that is displayed on the validation summary page.  
+When an error occurs during the rendering of a form, the validation process uses the text in the <xref:System.Web.UI.MobileControls.ValidationSummary.BackLabel%2A> property as the string that is displayed on the validation summary page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.ValidationSummary.BackLabel%2A> property to specify the link text in a <xref:System.Web.UI.MobileControls.ValidationSummary> to return to the form with the error.  
-  
- [!code-csharp[MobileValidationSummarySample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileValidationSummarySample/cs/Default.aspx#2)]
- [!code-vb[MobileValidationSummarySample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileValidationSummarySample/vb/Default.aspx#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.ValidationSummary.BackLabel%2A> property to specify the link text in a <xref:System.Web.UI.MobileControls.ValidationSummary> to return to the form with the error.  
+ 
+[!code-csharp[MobileValidationSummarySample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileValidationSummarySample/cs/Default.aspx#2)]
+[!code-vb[MobileValidationSummarySample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileValidationSummarySample/vb/Default.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <value>The identifier of the <see cref="T:System.Web.UI.MobileControls.Form" /> that you want to validate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to use validation, this property must contain a value that represents a valid form ID. The <xref:System.Web.UI.MobileControls.ValidationSummary.FormToValidate%2A> property can be set in code or declaratively, as in the example for the <xref:System.Web.UI.MobileControls.ValidationSummary> class.  
-  
+If you want to use validation, this property must contain a value that represents a valid form ID. The <xref:System.Web.UI.MobileControls.ValidationSummary.FormToValidate%2A> property can be set in code or declaratively, as in the example for the <xref:System.Web.UI.MobileControls.ValidationSummary> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,12 +193,12 @@
         <value>The text that will appear in the heading section of the validation summary page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you are developing in HTML, the <xref:System.Web.UI.MobileControls.ValidationSummary> page renders the value of the <xref:System.Web.UI.MobileControls.ValidationSummary.HeaderText%2A> property first. When the validation process invalidates a form, it produces a list of <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> properties for each validator. Each instance of an <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property in the list results in an error on the invalid form. This list of errors is followed by a <xref:System.Web.UI.MobileControls.Link> that targets the invalid form. The text of the link is the value of the <xref:System.Web.UI.MobileControls.ValidationSummary.BackLabel%2A> property.  
-  
- The display of errors for WML 1.1 is similar to HTML, except that the <xref:System.Web.UI.MobileControls.ValidationSummary.HeaderText%2A> property is displayed as plain WML text followed by each error message and preceded by "- " (a hyphen followed by a space).  
-  
+If you are developing in HTML, the <xref:System.Web.UI.MobileControls.ValidationSummary> page renders the value of the <xref:System.Web.UI.MobileControls.ValidationSummary.HeaderText%2A> property first. When the validation process invalidates a form, it produces a list of <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> properties for each validator. Each instance of an <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property in the list results in an error on the invalid form. This list of errors is followed by a <xref:System.Web.UI.MobileControls.Link> that targets the invalid form. The text of the link is the value of the <xref:System.Web.UI.MobileControls.ValidationSummary.BackLabel%2A> property.  
+ 
+The display of errors for WML 1.1 is similar to HTML, except that the <xref:System.Web.UI.MobileControls.ValidationSummary.HeaderText%2A> property is displayed as plain WML text followed by each error message and preceded by "- " (a hyphen followed by a space).  
+ 
  ]]></format>
         </remarks>
       </Docs>

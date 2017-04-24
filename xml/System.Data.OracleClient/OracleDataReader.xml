@@ -14,213 +14,213 @@
     <summary>Provides a way of reading a forward-only stream of data rows from a data source. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To create an <xref:System.Data.OracleClient.OracleDataReader>, you must call the <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> method of the <xref:System.Data.OracleClient.OracleCommand> object, rather than directly using a constructor.  
-  
- Changes made to a resultset by another process or thread while data is being read may be visible to the user of the <xref:System.Data.OracleClient.OracleDataReader>.  
-  
- <xref:System.Data.OracleClient.OracleDataReader.IsClosed%2A> and <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.OracleClient.OracleDataReader> is closed. In some cases, you must call <xref:System.Data.OracleClient.OracleDataReader.Close%2A> before you can call <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A>.  
-  
- More than one <xref:System.Data.OracleClient.OracleDataReader> can be open at any given time.  
-  
- The following two Visual Basic examples demonstrate how to use an <xref:System.Data.OracleClient.OracleDataReader> to retrieve an Oracle `REF CURSOR`. These examples use tables that are defined in the Oracle Scott/Tiger schema, and require the following PL/SQL package and package body. You must create these on your server to use the examples.  
-  
- Create the following Oracle package on the Oracle server.  
-  
+To create an <xref:System.Data.OracleClient.OracleDataReader>, you must call the <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> method of the <xref:System.Data.OracleClient.OracleCommand> object, rather than directly using a constructor.  
+ 
+Changes made to a resultset by another process or thread while data is being read may be visible to the user of the <xref:System.Data.OracleClient.OracleDataReader>.  
+ 
+<xref:System.Data.OracleClient.OracleDataReader.IsClosed%2A> and <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.OracleClient.OracleDataReader> is closed. In some cases, you must call <xref:System.Data.OracleClient.OracleDataReader.Close%2A> before you can call <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A>.  
+ 
+More than one <xref:System.Data.OracleClient.OracleDataReader> can be open at any given time.  
+ 
+The following two Visual Basic examples demonstrate how to use an <xref:System.Data.OracleClient.OracleDataReader> to retrieve an Oracle `REF CURSOR`. These examples use tables that are defined in the Oracle Scott/Tiger schema, and require the following PL/SQL package and package body. You must create these on your server to use the examples.  
+ 
+Create the following Oracle package on the Oracle server.  
+ 
 ```  
 CREATE OR REPLACE PACKAGE CURSPKG AS   
-   TYPE T_CURSOR IS REF CURSOR;   
-   PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
-      IO_CURSOR IN OUT T_CURSOR);   
-   PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-      DEPTCURSOR OUT T_CURSOR);  
+  TYPE T_CURSOR IS REF CURSOR;   
+  PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
+     IO_CURSOR IN OUT T_CURSOR);   
+  PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
+     DEPTCURSOR OUT T_CURSOR);  
 END CURSPKG;  
 /  
 ```  
-  
- Create the following Oracle package body on the Oracle server.  
-  
+ 
+Create the following Oracle package body on the Oracle server.  
+ 
 ```  
-  
+ 
 CREATE OR REPLACE PACKAGE BODY CURSPKG AS   
-    PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
-                               IO_CURSOR OUT T_CURSOR)   
-    IS   
-        V_CURSOR T_CURSOR;   
-    BEGIN   
-        IF N_EMPNO <> 0 THEN   
-             OPEN V_CURSOR FOR   
-             SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
-                  FROM EMP, DEPT   
-                  WHERE EMP.DEPTNO = DEPT.DEPTNO   
-                        AND EMP.EMPNO = N_EMPNO;   
-        ELSE   
-             OPEN V_CURSOR FOR   
-             SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
-                  FROM EMP, DEPT   
-                  WHERE EMP.DEPTNO = DEPT.DEPTNO;   
-        END IF;   
-        IO_CURSOR := V_CURSOR;   
-    END OPEN_ONE_CURSOR;   
-    PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-                                DEPTCURSOR OUT T_CURSOR)   
-    IS   
-        V_CURSOR1 T_CURSOR;   
-        V_CURSOR2 T_CURSOR;   
-    BEGIN   
-        OPEN V_CURSOR1 FOR SELECT * FROM EMP;   
-        OPEN V_CURSOR2 FOR SELECT * FROM DEPT;   
-        EMPCURSOR  := V_CURSOR1;   
-        DEPTCURSOR := V_CURSOR2;   
-    END OPEN_TWO_CURSORS;   
+   PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
+                              IO_CURSOR OUT T_CURSOR)   
+   IS   
+       V_CURSOR T_CURSOR;   
+   BEGIN   
+       IF N_EMPNO <> 0 THEN   
+            OPEN V_CURSOR FOR   
+            SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
+                 FROM EMP, DEPT   
+                 WHERE EMP.DEPTNO = DEPT.DEPTNO   
+                       AND EMP.EMPNO = N_EMPNO;   
+       ELSE   
+            OPEN V_CURSOR FOR   
+            SELECT EMP.EMPNO, EMP.ENAME, DEPT.DEPTNO, DEPT.DNAME   
+                 FROM EMP, DEPT   
+                 WHERE EMP.DEPTNO = DEPT.DEPTNO;   
+       END IF;   
+       IO_CURSOR := V_CURSOR;   
+   END OPEN_ONE_CURSOR;   
+   PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
+                               DEPTCURSOR OUT T_CURSOR)   
+   IS   
+       V_CURSOR1 T_CURSOR;   
+       V_CURSOR2 T_CURSOR;   
+   BEGIN   
+       OPEN V_CURSOR1 FOR SELECT * FROM EMP;   
+       OPEN V_CURSOR2 FOR SELECT * FROM DEPT;   
+       EMPCURSOR  := V_CURSOR1;   
+       DEPTCURSOR := V_CURSOR2;   
+   END OPEN_TWO_CURSORS;   
 END CURSPKG;  
 /  
 ```  
-  
- This Visual Basic example executes a PL/SQL stored procedure that returns a `REF CURSOR` parameter, and reads the value as an <xref:System.Data.OracleClient.OracleDataReader>.  
-  
+ 
+This Visual Basic example executes a PL/SQL stored procedure that returns a `REF CURSOR` parameter, and reads the value as an <xref:System.Data.OracleClient.OracleDataReader>.  
+ 
 ```vb  
 Private Sub ReadOracleData(ByVal connectionString As String)  
-   Dim connection As New OracleConnection(connectionString)  
-   Dim command As New OracleCommand()  
-   Dim reader As OracleDataReader  
-  
-   connection.Open()  
-   command.Connection = connection  
-   command.CommandText = "CURSPKG.OPEN_ONE_CURSOR"  
-   command.CommandType = CommandType.StoredProcedure  
-   command.Parameters.Add(New OracleParameter("N_EMPNO", OracleType.Number)).Value = 7369  
-   command.Parameters.Add(New OracleParameter("IO_CURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
-  
-   reader = command.ExecuteReader()  
-   While (reader.Read())  
-      ' Do something with the values.  
-   End While  
-   reader.Close()  
-   connection.Close()  
+  Dim connection As New OracleConnection(connectionString)  
+  Dim command As New OracleCommand()  
+  Dim reader As OracleDataReader  
+ 
+  connection.Open()  
+  command.Connection = connection  
+  command.CommandText = "CURSPKG.OPEN_ONE_CURSOR"  
+  command.CommandType = CommandType.StoredProcedure  
+  command.Parameters.Add(New OracleParameter("N_EMPNO", OracleType.Number)).Value = 7369  
+  command.Parameters.Add(New OracleParameter("IO_CURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
+ 
+  reader = command.ExecuteReader()  
+  While (reader.Read())  
+     ' Do something with the values.  
+  End While  
+  reader.Close()  
+  connection.Close()  
 End Sub  
 ```  
-  
- This Visual Basic example executes a PL/SQL stored procedure that returns two `REF CURSOR` parameters, and reads the values using an <xref:System.Data.OracleClient.OracleDataReader>.  
-  
+ 
+This Visual Basic example executes a PL/SQL stored procedure that returns two `REF CURSOR` parameters, and reads the values using an <xref:System.Data.OracleClient.OracleDataReader>.  
+ 
 ```vb  
 Private Sub ReadOracleData(ByVal connectionString As String)  
-   Dim dataSet As New DataSet()  
-   Dim connection As New OracleConnection(connectionString)  
-   Dim command As New OracleCommand()  
-   Dim reader As OracleDataReader  
-  
-   connection.Open()  
-   command.Connection = connection  
-   command.CommandText = "CURSPKG.OPEN_TWO_CURSORS"  
-   command.CommandType = CommandType.StoredProcedure  
-   command.Parameters.Add(New OracleParameter("EMPCURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
-   command.Parameters.Add(New OracleParameter("DEPTCURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
-  
-   reader = command.ExecuteReader(CommandBehavior.CloseConnection)  
-   While (reader.Read())  
-      ' Do something with the values.  
-   End While  
-   reader.NextResult()  
-   While (reader.Read())  
-        ' Do something with the values.  
-   End While  
-   reader.Close()  
-   connection.Close()  
- End Sub  
+  Dim dataSet As New DataSet()  
+  Dim connection As New OracleConnection(connectionString)  
+  Dim command As New OracleCommand()  
+  Dim reader As OracleDataReader  
+ 
+  connection.Open()  
+  command.Connection = connection  
+  command.CommandText = "CURSPKG.OPEN_TWO_CURSORS"  
+  command.CommandType = CommandType.StoredProcedure  
+  command.Parameters.Add(New OracleParameter("EMPCURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
+  command.Parameters.Add(New OracleParameter("DEPTCURSOR", OracleType.Cursor)).Direction = ParameterDirection.Output  
+ 
+  reader = command.ExecuteReader(CommandBehavior.CloseConnection)  
+  While (reader.Read())  
+     ' Do something with the values.  
+  End While  
+  reader.NextResult()  
+  While (reader.Read())  
+       ' Do something with the values.  
+  End While  
+  reader.Close()  
+  connection.Close()  
+End Sub  
 ```  
-  
- This C# example creates an Oracle table and loads it with data. You must run this example prior to running the subsequent example, which demonstrates using an <xref:System.Data.OracleClient.OracleDataReader> to access the data using OracleType structures.  
-  
+ 
+This C# example creates an Oracle table and loads it with data. You must run this example prior to running the subsequent example, which demonstrates using an <xref:System.Data.OracleClient.OracleDataReader> to access the data using OracleType structures.  
+ 
 ```csharp  
 public void Setup(string connectionString)  
 {  
-   OracleConnection connection = new OracleConnection(connectionString);  
-   try  
-   {  
-      connection.Open();  
-      OracleCommand command = connection.CreateCommand();  
-      command.CommandText ="CREATE TABLE OracleTypesTable (MyVarchar2 varchar2(3000),MyNumber number(28,4) PRIMARY KEY,MyDate date, MyRaw raw(255))";  
-      command.ExecuteNonQuery();  
-      command.CommandText ="INSERT INTO OracleTypesTable VALUES ('test', 2, to_date('2000-01-11 12:54:01','yyyy-mm-dd hh24:mi:ss'), '0001020304')";  
-      command.ExecuteNonQuery();  
-      command.CommandText="SELECT * FROM OracleTypesTable";  
-   }  
-   catch(Exception)  
-   {  
-   }  
-   finally  
-   {  
-      connection.Close();  
-   }  
+  OracleConnection connection = new OracleConnection(connectionString);  
+  try  
+  {  
+     connection.Open();  
+     OracleCommand command = connection.CreateCommand();  
+     command.CommandText ="CREATE TABLE OracleTypesTable (MyVarchar2 varchar2(3000),MyNumber number(28,4) PRIMARY KEY,MyDate date, MyRaw raw(255))";  
+     command.ExecuteNonQuery();  
+     command.CommandText ="INSERT INTO OracleTypesTable VALUES ('test', 2, to_date('2000-01-11 12:54:01','yyyy-mm-dd hh24:mi:ss'), '0001020304')";  
+     command.ExecuteNonQuery();  
+     command.CommandText="SELECT * FROM OracleTypesTable";  
+  }  
+  catch(Exception)  
+  {  
+  }  
+  finally  
+  {  
+     connection.Close();  
+  }  
 }  
 ```  
-  
- This C# example uses an <xref:System.Data.OracleClient.OracleDataReader> to access data, and uses several <xref:System.Data.OracleClient.OracleType> structures to display the data.  
-  
+ 
+This C# example uses an <xref:System.Data.OracleClient.OracleDataReader> to access data, and uses several <xref:System.Data.OracleClient.OracleType> structures to display the data.  
+ 
 ```csharp  
 public void ReadOracleTypesExample(string connectionString)  
 {  
-   OracleConnection connection = new OracleConnection(connectionString);  
-   connection.Open();  
-   OracleCommand command = connection.CreateCommand();  
-   try  
-   {  
-      command.CommandText = "SELECT * FROM OracleTypesTable";  
-      OracleDataReader reader = command.ExecuteReader();  
-      reader.Read();  
-      //Using the Oracle specific getters for each type is faster than  
-      //using GetOracleValue.  
-      //First column, MyVarchar2, is a VARCHAR2 data type in Oracle Server  
-      //and maps to OracleString.  
-      OracleString oraclestring1 = reader.GetOracleString(0);  
-      Console.WriteLine("OracleString " + oraclestring1.ToString());  
-  
-      //Second column, MyNumber, is a NUMBER data type in Oracle Server  
-      //and maps to OracleNumber.  
-      OracleNumber oraclenumber1 = reader.GetOracleNumber(1);  
-      Console.WriteLine("OracleNumber " + oraclenumber1.ToString());  
-  
-      //Third column, MyDate, is a DATA data type in Oracle Server  
-      //and maps to OracleDateTime.  
-      OracleDateTime oracledatetime1 = reader.GetOracleDateTime(2);  
-      Console.WriteLine("OracleDateTime " + oracledatetime1.ToString());  
-  
-      //Fourth column, MyRaw, is a RAW data type in Oracle Server and  
-      //maps to OracleBinary.  
-      OracleBinary oraclebinary1 = reader.GetOracleBinary(3);  
-  
-      //Calling value on a null OracleBinary throws  
-      //OracleNullValueException; therefore, check for a null value.  
-      if (oraclebinary1.IsNull==false)  
-      {  
-         foreach(byte b in oraclebinary1.Value)  
-         {  
-            Console.WriteLine("byte " + b.ToString());  
-         }  
-      }  
-      reader.Close();  
-   }  
-   catch(Exception e)  
-   {  
-      Console.WriteLine(e.ToString());  
-   }  
-   finally  
-   {  
-      connection.Close();  
-   }  
+  OracleConnection connection = new OracleConnection(connectionString);  
+  connection.Open();  
+  OracleCommand command = connection.CreateCommand();  
+  try  
+  {  
+     command.CommandText = "SELECT * FROM OracleTypesTable";  
+     OracleDataReader reader = command.ExecuteReader();  
+     reader.Read();  
+     //Using the Oracle specific getters for each type is faster than  
+     //using GetOracleValue.  
+     //First column, MyVarchar2, is a VARCHAR2 data type in Oracle Server  
+     //and maps to OracleString.  
+     OracleString oraclestring1 = reader.GetOracleString(0);  
+     Console.WriteLine("OracleString " + oraclestring1.ToString());  
+ 
+     //Second column, MyNumber, is a NUMBER data type in Oracle Server  
+     //and maps to OracleNumber.  
+     OracleNumber oraclenumber1 = reader.GetOracleNumber(1);  
+     Console.WriteLine("OracleNumber " + oraclenumber1.ToString());  
+ 
+     //Third column, MyDate, is a DATA data type in Oracle Server  
+     //and maps to OracleDateTime.  
+     OracleDateTime oracledatetime1 = reader.GetOracleDateTime(2);  
+     Console.WriteLine("OracleDateTime " + oracledatetime1.ToString());  
+ 
+     //Fourth column, MyRaw, is a RAW data type in Oracle Server and  
+     //maps to OracleBinary.  
+     OracleBinary oraclebinary1 = reader.GetOracleBinary(3);  
+ 
+     //Calling value on a null OracleBinary throws  
+     //OracleNullValueException; therefore, check for a null value.  
+     if (oraclebinary1.IsNull==false)  
+     {  
+        foreach(byte b in oraclebinary1.Value)  
+        {  
+           Console.WriteLine("byte " + b.ToString());  
+        }  
+     }  
+     reader.Close();  
+  }  
+  catch(Exception e)  
+  {  
+     Console.WriteLine(e.ToString());  
+  }  
+  finally  
+  {  
+     connection.Close();  
+  }  
 }  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.OracleClient.OracleConnection>, an <xref:System.Data.OracleClient.OracleCommand>, and an <xref:System.Data.OracleClient.OracleDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.OracleClient.OracleDataReader>, then the <xref:System.Data.OracleClient.OracleConnection>.  
-  
- [!code-csharp[Classic WebData OracleDataReader#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleDataReader/CS/source.cs#1)]
- [!code-vb[Classic WebData OracleDataReader#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleDataReader/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.OracleClient.OracleConnection>, an <xref:System.Data.OracleClient.OracleCommand>, and an <xref:System.Data.OracleClient.OracleDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.OracleClient.OracleDataReader>, then the <xref:System.Data.OracleClient.OracleConnection>.  
+ 
+[!code-csharp[Classic WebData OracleDataReader#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleDataReader/CS/source.cs#1)]
+[!code-vb[Classic WebData OracleDataReader#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleDataReader/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -242,13 +242,13 @@ public void ReadOracleTypesExample(string connectionString)
         <summary>Closes the <see cref="T:System.Data.OracleClient.OracleDataReader" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- More than one <xref:System.Data.OracleClient.OracleDataReader> can be open at any given time.  
-  
+More than one <xref:System.Data.OracleClient.OracleDataReader> can be open at any given time.  
+ 
 > [!CAUTION]
 >  Do not call `Close` or `Dispose` on a connection, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,10 +270,10 @@ public void ReadOracleTypesExample(string connectionString)
         <value>The depth of nesting for the current row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The outermost table has a depth of zero.  
-  
+The outermost table has a depth of zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,12 +295,12 @@ public void ReadOracleTypesExample(string connectionString)
         <value>When not positioned in a valid record set, 0; otherwise the number of columns in the current record. The default is -1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Includes hidden fields. Use <xref:System.Data.Common.DbDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
-  
- After executing a query that does not return rows, <xref:System.Data.OracleClient.OracleDataReader.FieldCount%2A> returns 0.  
-  
+Includes hidden fields. Use <xref:System.Data.Common.DbDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
+ 
+After executing a query that does not return rows, <xref:System.Data.OracleClient.OracleDataReader.FieldCount%2A> returns 0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">There is no current connection to a data source.</exception>
@@ -327,10 +327,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>A Boolean that is the value of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -357,10 +357,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a byte.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -395,12 +395,12 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The actual number of bytes read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.OracleClient.OracleDataReader.GetBytes%2A> returns the number of available bytes in the field. In most cases this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetBytes` has already been used to obtain bytes from the field. This may be the case, for example, if the <xref:System.Data.OracleClient.OracleDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting of <xref:System.Data.CommandBehavior>.  
-  
- If you pass a buffer that is a null value, <xref:System.Data.OracleClient.OracleDataReader.GetBytes%2A> returns the length of the field in bytes.  
-  
+<xref:System.Data.OracleClient.OracleDataReader.GetBytes%2A> returns the number of available bytes in the field. In most cases this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetBytes` has already been used to obtain bytes from the field. This may be the case, for example, if the <xref:System.Data.OracleClient.OracleDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting of <xref:System.Data.CommandBehavior>.  
+ 
+If you pass a buffer that is a null value, <xref:System.Data.OracleClient.OracleDataReader.GetBytes%2A> returns the length of the field in bytes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -426,10 +426,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -464,12 +464,12 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The actual number of characters read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.OracleClient.OracleDataReader.GetChars%2A> returns the number of available characters in the field. In most cases this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetChars` has already been used to obtain characters from the field. This may be the case, for example, if the <xref:System.Data.OracleClient.OracleDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting of <xref:System.Data.CommandBehavior>.  
-  
- If you pass a buffer that is a null value. <xref:System.Data.OracleClient.OracleDataReader.GetChars%2A> returns the length of the field in characters.  
-  
+<xref:System.Data.OracleClient.OracleDataReader.GetChars%2A> returns the number of available characters in the field. In most cases this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetChars` has already been used to obtain characters from the field. This may be the case, for example, if the <xref:System.Data.OracleClient.OracleDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting of <xref:System.Data.CommandBehavior>.  
+ 
+If you pass a buffer that is a null value. <xref:System.Data.OracleClient.OracleDataReader.GetChars%2A> returns the length of the field in characters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -517,10 +517,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a <see langword="DateTime" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -547,10 +547,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a <see langword="Decimal" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -577,10 +577,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a double-precision floating point number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -604,10 +604,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the rows in the data reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although you can use this method to retrieve an explicit enumerator, in languages that support a foreach construct, it's simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
-  
+Although you can use this method to retrieve an explicit enumerator, in languages that support a foreach construct, it's simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -655,10 +655,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a single-precision floating-point number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -685,10 +685,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a GUID.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -715,10 +715,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a 16-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -745,10 +745,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a 32-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -775,10 +775,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as a 64-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -827,10 +827,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as an <see cref="T:System.Data.OracleClient.OracleBFile" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -857,10 +857,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as an <see cref="T:System.Data.OracleClient.OracleBinary" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -887,10 +887,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as an <see cref="T:System.Data.OracleClient.OracleDateTime" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -917,10 +917,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as an <see cref="T:System.Data.OracleClient.OracleLob" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -947,10 +947,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as an <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -977,10 +977,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as an <see cref="T:System.Data.OracleClient.OracleNumber" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -1007,10 +1007,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as an <see cref="T:System.Data.OracleClient.OracleString" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -1037,10 +1037,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The value of the specified column as an <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -1067,10 +1067,10 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The Oracle value to return.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns <xref:System.DBNull> for null database columns.  
-  
+This method returns <xref:System.DBNull> for null database columns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1096,14 +1096,14 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For most applications, the <xref:System.Data.OracleClient.OracleDataReader.GetOracleValues%2A> method provides an efficient means for retrieving all columns, rather than retrieving each column individually.  
-  
- You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row.  
-  
- This method returns <xref:System.DBNull> for null database columns.  
-  
+For most applications, the <xref:System.Data.OracleClient.OracleDataReader.GetOracleValues%2A> method provides an efficient means for retrieving all columns, rather than retrieving each column individually.  
+ 
+You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row.  
+ 
+This method returns <xref:System.DBNull> for null database columns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1129,65 +1129,65 @@ public void ReadOracleTypesExample(string connectionString)
         <returns>The zero-based column ordinal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> performs a case-sensitive lookup first. If it fails, a second case-insensitive search is made. The method throws an `IndexOutOfRange` exception if the zero-based column ordinal is not found.  
+<xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> performs a case-sensitive lookup first. If it fails, a second case-insensitive search is made. The method throws an `IndexOutOfRange` exception if the zero-based column ordinal is not found.  
+ 
+<xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> is kana-width insensitive.  
+ 
+Because ordinal-based lookups are more efficient than named lookups, it is inefficient to call <xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> within a loop. Instead, call <xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> once and then assign the results to an integer variable for use within the loop.  
+ 
   
- <xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> is kana-width insensitive.  
-  
- Because ordinal-based lookups are more efficient than named lookups, it is inefficient to call <xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> within a loop. Instead, call <xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> once and then assign the results to an integer variable for use within the loop.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> method.  
-  
- [Visual Basic]  
-  
+The following example demonstrates how to use the <xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> method.  
+ 
+[Visual Basic]  
+ 
 ```  
 Public Sub ReadOracleData(ByVal connectionString As String)  
-  
-    Dim queryString As String = "SELECT OrderID, CustomerID FROM Orders"  
-    Dim connection As New OracleConnection(connectionString)  
-    Dim command As New OracleCommand(queryString, connectionString)  
-  
-    connection.Open()  
-  
-    Dim reader As OracleDataReader = command.ExecuteReader()  
-  
-    Dim custIdCol As Integer = reader.GetOrdinal("CustomerID")  
-  
-    Do While reader.Read()  
-        Console.WriteLine("CustomerID = {0}", reader.GetString(custIdCol))  
-    Loop  
-  
-    reader.Close()  
-    connection.Close()  
+ 
+   Dim queryString As String = "SELECT OrderID, CustomerID FROM Orders"  
+   Dim connection As New OracleConnection(connectionString)  
+   Dim command As New OracleCommand(queryString, connectionString)  
+ 
+   connection.Open()  
+ 
+   Dim reader As OracleDataReader = command.ExecuteReader()  
+ 
+   Dim custIdCol As Integer = reader.GetOrdinal("CustomerID")  
+ 
+   Do While reader.Read()  
+       Console.WriteLine("CustomerID = {0}", reader.GetString(custIdCol))  
+   Loop  
+ 
+   reader.Close()  
+   connection.Close()  
 End Sub  
 ```  
-  
- [C#]  
-  
+ 
+[C#]  
+ 
 ```  
 public void ReadOracleData(string connectionString)  
 {  
-    string queryString = "SELECT OrderID, CustomerID FROM Orders";  
-    OracleConnection connection = new OracleConnection(connectionString);  
-    OracleCommand command = new OracleCommand(queryString,connection);  
-  
-    connection.Open();  
-    OracleDataReader reader = command.ExecuteReader();  
-  
-    int custIdCol = reader.GetOrdinal("CustomerID");  
-  
-    while (reader.Read())  
-        Console.WriteLine("CustomerID = {0}", reader.GetString(custIdCol));  
-  
-    reader.Close();  
-    connection.Close();  
+   string queryString = "SELECT OrderID, CustomerID FROM Orders";  
+   OracleConnection connection = new OracleConnection(connectionString);  
+   OracleCommand command = new OracleCommand(queryString,connection);  
+ 
+   connection.Open();  
+   OracleDataReader reader = command.ExecuteReader();  
+ 
+   int custIdCol = reader.GetOrdinal("CustomerID");  
+ 
+   while (reader.Read())  
+       Console.WriteLine("CustomerID = {0}", reader.GetString(custIdCol));  
+ 
+   reader.Close();  
+   connection.Close();  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1257,14 +1257,14 @@ public void ReadOracleData(string connectionString)
         <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For most applications, the <xref:System.Data.OracleClient.OracleDataReader.GetProviderSpecificValues%2A> method provides an efficient means for retrieving all columns, rather than retrieving each column individually.  
-  
- You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row.  
-  
- This method returns <xref:System.DBNull> for null database columns.  
-  
+For most applications, the <xref:System.Data.OracleClient.OracleDataReader.GetProviderSpecificValues%2A> method provides an efficient means for retrieving all columns, rather than retrieving each column individually.  
+ 
+You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row.  
+ 
+This method returns <xref:System.DBNull> for null database columns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1287,10 +1287,10 @@ public void ReadOracleData(string connectionString)
         <returns>A <see cref="T:System.Data.DataTable" /> that describes the column metadata.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.OracleClient.OracleDataReader.GetSchemaTable%2A> method returns metadata about each column in the following order:  
-  
+The <xref:System.Data.OracleClient.OracleDataReader.GetSchemaTable%2A> method returns metadata about each column in the following order:  
+ 
 |DataReader Column|Description|  
 |-----------------------|-----------------|  
 |ColumnName|The name of the column; this might not be unique. If the column name cannot be determined, a null value is returned. This name always reflects the most recent naming of the column in the current view or command text.|  
@@ -1306,12 +1306,12 @@ public void ReadOracleData(string connectionString)
 |BaseTableName|The name of the table or view in the data store that contains the column. A null value if the base table name cannot be determined. The default of this column is a null value.|  
 |BaseColumnName|The name of the column in the data store. This might be different than the column name returned in the **ColumnName** column if an alias was used. A null value if the base column name cannot be determined or if the rowset column is derived, but not identical to, a column in the data store. The default for this column is a null value.|  
 |BaseSchemaName|The name of the schema in the data store that contains the column. A null value if the base schema name cannot be determined. The default for this column is a null value.|  
-  
- A row is returned for every column in the results set.  
-  
+ 
+A row is returned for every column in the results set.  
+ 
 > [!NOTE]
 >  To ensure that metadata columns return the correct information, you must call <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> with the `behavior` parameter set to `KeyInfo`. Otherwise, some of the columns in the schema table may return default, null, or incorrect data.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1337,10 +1337,10 @@ public void ReadOracleData(string connectionString)
         <returns>The value of the specified column as a string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -1367,10 +1367,10 @@ public void ReadOracleData(string connectionString)
         <returns>The value of the specified column as a <see cref="T:System.TimeSpan" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+Call <xref:System.Data.OracleClient.OracleDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -1397,10 +1397,10 @@ public void ReadOracleData(string connectionString)
         <returns>The value to return.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns <xref:System.DBNull> for null database columns. The value returned by this method might be the result of the conversion from Oracle's Number data type to .NET Decimal type. If the value is too large to be stored in the .NET Decimal, this method throws an <xref:System.Data.OracleClient.OracleException> that is an overflow exception.  
-  
+This method returns <xref:System.DBNull> for null database columns. The value returned by this method might be the result of the conversion from Oracle's Number data type to .NET Decimal type. If the value is too large to be stored in the .NET Decimal, this method throws an <xref:System.Data.OracleClient.OracleException> that is an overflow exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.OracleClient.OracleException">The value is too large to be stored in the .NET Decimal.</exception>
@@ -1427,14 +1427,14 @@ public void ReadOracleData(string connectionString)
         <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For most applications, the <xref:System.Data.OracleClient.OracleDataReader.GetValues%2A> method provides an efficient means for retrieving all columns, rather than retrieving each column individually.  
-  
- You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row.  
-  
- This method returns <xref:System.DBNull> for null database columns. The value returned in the <xref:System.Object> array might be the result of the conversion from Oracle's Number data type to .NET Decimal type. If the value is too large to be stored in the .NET Decimal, this method throws an <xref:System.Data.OracleClient.OracleException> that is an overflow exception.  
-  
+For most applications, the <xref:System.Data.OracleClient.OracleDataReader.GetValues%2A> method provides an efficient means for retrieving all columns, rather than retrieving each column individually.  
+ 
+You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row.  
+ 
+This method returns <xref:System.DBNull> for null database columns. The value returned in the <xref:System.Object> array might be the result of the conversion from Oracle's Number data type to .NET Decimal type. If the value is too large to be stored in the .NET Decimal, this method throws an <xref:System.Data.OracleClient.OracleException> that is an overflow exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.OracleClient.OracleException">The value is too large to be stored in the .NET Decimal.</exception>
@@ -1477,10 +1477,10 @@ public void ReadOracleData(string connectionString)
           <see langword="true" /> if the <see cref="T:System.Data.OracleClient.OracleDataReader" /> is closed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.OracleClient.OracleDataReader.IsClosed%2A> and <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.OracleClient.OracleDataReader> is closed.  
-  
+<xref:System.Data.OracleClient.OracleDataReader.IsClosed%2A> and <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.OracleClient.OracleDataReader> is closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1507,10 +1507,10 @@ public void ReadOracleData(string connectionString)
           <see langword="true" /> if the specified column value is equivalent to <see cref="T:System.DBNull" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To avoid raising an error, call this method to check for null column values before calling the typed Get methods (for example, <xref:System.Data.OracleClient.OracleDataReader.GetByte%2A>, <xref:System.Data.OracleClient.OracleDataReader.GetChar%2A>, and so on).  
-  
+To avoid raising an error, call this method to check for null column values before calling the typed Get methods (for example, <xref:System.Data.OracleClient.OracleDataReader.GetByte%2A>, <xref:System.Data.OracleClient.OracleDataReader.GetChar%2A>, and so on).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1580,10 +1580,10 @@ public void ReadOracleData(string connectionString)
           <see langword="true" /> if there are more result sets; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must use a `REF CURSOR` when calling this method.  
-  
+You must use a `REF CURSOR` when calling this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1607,20 +1607,20 @@ public void ReadOracleData(string connectionString)
           <see langword="true" /> if there are more rows; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default position of the <xref:System.Data.OracleClient.OracleDataReader> is prior to the first record. Therefore, you must call <xref:System.Data.OracleClient.OracleDataReader.Read%2A> to begin accessing any data.  
+The default position of the <xref:System.Data.OracleClient.OracleDataReader> is prior to the first record. Therefore, you must call <xref:System.Data.OracleClient.OracleDataReader.Read%2A> to begin accessing any data.  
+ 
+More than one <xref:System.Data.OracleClient.OracleDataReader> can be open at any given time.  
+ 
   
- More than one <xref:System.Data.OracleClient.OracleDataReader> can be open at any given time.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Data.OracleClient.OracleConnection>, an <xref:System.Data.OracleClient.OracleCommand>, and an <xref:System.Data.OracleClient.OracleDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.OracleClient.OracleDataReader>, then the <xref:System.Data.OracleClient.OracleConnection>.  
-  
- [!code-csharp[Classic WebData IDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/VB/source.vb#1)]  
-  
+The following example creates an <xref:System.Data.OracleClient.OracleConnection>, an <xref:System.Data.OracleClient.OracleCommand>, and an <xref:System.Data.OracleClient.OracleDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.OracleClient.OracleDataReader>, then the <xref:System.Data.OracleClient.OracleConnection>.  
+ 
+[!code-csharp[Classic WebData IDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/CS/source.cs#1)]
+[!code-vb[Classic WebData IDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1642,12 +1642,12 @@ public void ReadOracleData(string connectionString)
         <value>The number of rows changed, inserted, or deleted. -1 for SELECT statements; 0 if no rows were affected, or the statement failed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.OracleClient.OracleDataReader>.  
-  
- <xref:System.Data.OracleClient.OracleDataReader.IsClosed%2A> and <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.OracleClient.OracleDataReader> is closed.  
-  
+The <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.OracleClient.OracleDataReader>.  
+ 
+<xref:System.Data.OracleClient.OracleDataReader.IsClosed%2A> and <xref:System.Data.OracleClient.OracleDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.OracleClient.OracleDataReader> is closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

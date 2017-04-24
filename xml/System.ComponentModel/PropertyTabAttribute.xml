@@ -24,19 +24,19 @@
     <summary>Identifies the property tab or tabs to display for the specified class or classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.PropertyTabAttribute> lets you add a new property page to a <xref:System.Windows.Forms.PropertyGrid> control. The <xref:System.ComponentModel.PropertyTabAttribute> can add additional property tabs to expose property information other than a component's default set of properties.  
+The <xref:System.ComponentModel.PropertyTabAttribute> lets you add a new property page to a <xref:System.Windows.Forms.PropertyGrid> control. The <xref:System.ComponentModel.PropertyTabAttribute> can add additional property tabs to expose property information other than a component's default set of properties.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.ComponentModel.PropertyTabAttribute> to specify a property tab. The code example defines a component that exposes the properties of another selected component by type.  
-  
- [!code-cpp[PropertyTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PropertyTabExample/CPP/class1.cpp#1)]
- [!code-csharp[PropertyTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PropertyTabExample/CS/class1.cs#1)]
- [!code-vb[PropertyTabExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PropertyTabExample/VB/class1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.ComponentModel.PropertyTabAttribute> to specify a property tab. The code example defines a component that exposes the properties of another selected component by type.  
+ 
+[!code-cpp[PropertyTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PropertyTabExample/CPP/class1.cpp#1)]
+[!code-csharp[PropertyTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PropertyTabExample/CS/class1.cs#1)]
+[!code-vb[PropertyTabExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PropertyTabExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyTabAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a default constructor that creates an uninitialized <xref:System.ComponentModel.PropertyTabAttribute>. This constructor can be used to derive from this attribute and specify multiple tab types by calling <xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A>.  
-  
+This is a default constructor that creates an uninitialized <xref:System.ComponentModel.PropertyTabAttribute>. This constructor can be used to derive from this attribute and specify multiple tab types by calling <xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,14 +165,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyTabAttribute" /> class using the specified type of tab and tab scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.ComponentModel.PropertyTabAttribute> to specify a property tab.  
-  
- [!code-cpp[PropertyTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PropertyTabExample/CPP/class1.cpp#1)]
- [!code-csharp[PropertyTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PropertyTabExample/CS/class1.cs#1)]
- [!code-vb[PropertyTabExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PropertyTabExample/VB/class1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.ComponentModel.PropertyTabAttribute> to specify a property tab.  
+ 
+[!code-cpp[PropertyTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PropertyTabExample/CPP/class1.cpp#1)]
+[!code-csharp[PropertyTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PropertyTabExample/CS/class1.cs#1)]
+[!code-vb[PropertyTabExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PropertyTabExample/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -288,10 +288,10 @@
         <summary>Initializes the attribute using the specified names of tab classes and array of tab scopes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A> provides a utility function that can be used to set the types of tab classes that this <xref:System.ComponentModel.PropertyTabAttribute> specifies.  
-  
+<xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A> provides a utility function that can be used to set the types of tab classes that this <xref:System.ComponentModel.PropertyTabAttribute> specifies.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the values in <paramref name="tabScopes" /> is not <see cref="F:System.ComponentModel.PropertyTabScope.Document" /> or <see cref="F:System.ComponentModel.PropertyTabScope.Component" />.  
@@ -332,10 +332,10 @@
         <summary>Initializes the attribute using the specified names of tab classes and array of tab scopes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A> provides a utility function that can be used to set the types of tab classes that this <xref:System.ComponentModel.PropertyTabAttribute> specifies.  
-  
+<xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A> provides a utility function that can be used to set the types of tab classes that this <xref:System.ComponentModel.PropertyTabAttribute> specifies.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the values in <paramref name="tabScopes" /> is not <see cref="F:System.ComponentModel.PropertyTabScope.Document" /> or <see cref="F:System.ComponentModel.PropertyTabScope.Component" />.  
@@ -371,10 +371,10 @@
         <value>An array of types indicating the types of tabs that this attribute uses.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All specified types must be able to be assigned to a <xref:System.Windows.Forms.Design.PropertyTab>.  
-  
+All specified types must be able to be assigned to a <xref:System.Windows.Forms.Design.PropertyTab>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.TypeLoadException">The types specified by the <see cref="P:System.ComponentModel.PropertyTabAttribute.TabClassNames" /> property could not be found.</exception>

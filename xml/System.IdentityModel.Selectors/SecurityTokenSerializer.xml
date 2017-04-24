@@ -14,10 +14,10 @@
     <summary>Represents a class that can read and write key identifiers, key identifier clauses, and security tokens.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class to read and write <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier>, <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause>, and <xref:System.IdentityModel.Tokens.SecurityToken> classes as XML. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class has methods to determine whether this class can read and write these entities and to actually read and write them. For security tokens, these methods are <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadToken%2A>, <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteToken%2A>, <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadToken%2A>, and <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteToken%2A>.  
-  
+Use the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class to read and write <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier>, <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause>, and <xref:System.IdentityModel.Tokens.SecurityToken> classes as XML. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class has methods to determine whether this class can read and write these entities and to actually read and write them. For security tokens, these methods are <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadToken%2A>, <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteToken%2A>, <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadToken%2A>, and <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteToken%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
           <see langword="true" /> when the specified <see langword="&lt;KeyIdentifier&gt;" /> XML element can be read; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifier%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierCore%2A> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifier%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierCore%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -91,10 +91,10 @@
           <see langword="true" /> when the specified key identifier clause can be read; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClause%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClauseCore%2A> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClause%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClauseCore%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -123,10 +123,10 @@
           <see langword="true" /> when the specified <see langword="&lt;KeyIdentifier&gt;" /> element can be read; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClause%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClauseCore%2A> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClause%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClauseCore%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -155,10 +155,10 @@
           <see langword="true" /> when the specified key identifier clause can be read; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifier%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierCore%2A> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifier%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierCore%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -187,10 +187,10 @@
           <see langword="true" /> when the security token can be read; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadTokenCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadToken%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadTokenCore%2A> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadTokenCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadToken%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadTokenCore%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -219,10 +219,10 @@
           <see langword="true" /> when the security token can be read; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadTokenCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadToken%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadTokenCore%2A> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadTokenCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadToken%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadTokenCore%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -251,10 +251,10 @@
           <see langword="true" /> when this serializer can write the specified key identifier; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierCore%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifier%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierCore%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierCore%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifier%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierCore%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -283,10 +283,10 @@
           <see langword="true" /> when this serializer can write the specified key identifier clause; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClauseCore%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClauseCore%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClauseCore%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClauseCore%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -315,10 +315,10 @@
           <see langword="true" /> when this serializer can write the specified key identifier clause; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClauseCore%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClauseCore%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClauseCore%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClauseCore%28System.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -347,10 +347,10 @@
           <see langword="true" /> when this serializer can write the specified key identifier; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierCore%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifier%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierCore%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierCore%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifier%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierCore%28System.IdentityModel.Tokens.SecurityKeyIdentifier%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -379,10 +379,10 @@
           <see langword="true" /> when the security token can be written; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteToken%28System.IdentityModel.Tokens.SecurityToken%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteToken%28System.IdentityModel.Tokens.SecurityToken%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -411,10 +411,10 @@
           <see langword="true" /> when the security token can be written; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteToken%28System.IdentityModel.Tokens.SecurityToken%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteToken%28System.IdentityModel.Tokens.SecurityToken%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -442,10 +442,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifier%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierCore%28System.Xml.XmlReader%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifier%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierCore%28System.Xml.XmlReader%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -473,10 +473,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents the key identifier that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClause%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClause%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -504,10 +504,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents the key identifier that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClause%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClause%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClauseCore%28System.Xml.XmlReader%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -535,10 +535,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifier%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierCore%28System.Xml.XmlReader%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierCore%28System.Xml.XmlReader%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifier%28System.Xml.XmlReader%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierCore%28System.Xml.XmlReader%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -568,10 +568,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadToken%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadToken%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -605,10 +605,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadToken%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadToken%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -641,10 +641,10 @@
         <summary>Writes the specified key identifier using the specified XML writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifier%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifier%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -677,10 +677,10 @@
         <summary>Writes the specified key identifier clause using the specified XML writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClauseCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClause%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClauseCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClauseCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClause%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClauseCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -713,10 +713,10 @@
         <summary>Writes the specified key identifier clause using the specified XML writer. Called by the base class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClauseCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClause%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClauseCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClauseCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClause%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClauseCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifierClause%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -749,10 +749,10 @@
         <summary>Writes the specified key identifier using the specified XML writer. Called by the base class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifier%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifier%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityKeyIdentifier%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -785,10 +785,10 @@
         <summary>Writes the specified security token using the specified XML writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteToken%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteToken%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -821,10 +821,10 @@
         <summary>Writes the specified security token using the specified XML writer. Called by the base class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteToken%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method.  
-  
+Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> class must override the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method. The <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteToken%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

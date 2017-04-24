@@ -87,10 +87,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Activities.ExpressionParser.SourceExpressionException" /> class with a specified error message and a collection of compiler errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data associated with each error in the collection can include the file that contains the error, an error identification number, a message that describes the error, and other types of error information.  
-  
+The data associated with each error in the collection can include the file that contains the error, an error identification number, a message that describes the error, and other types of error information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <value>An enumerable collection of compiler errors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data associated with each error in the collection can include the file that contains the error, an error identification number, a message that describes the error, and other types of error information.  
-  
+The data associated with each error in the collection can include the file that contains the error, an error identification number, a message that describes the error, and other types of error information.  
+ 
  ]]></format>
         </remarks>
       </Docs>

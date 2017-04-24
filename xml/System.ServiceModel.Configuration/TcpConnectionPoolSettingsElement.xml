@@ -55,10 +55,10 @@
         <value>The name of the connection pool used for outgoing channels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In streamed mode, connections are not shared, meaning that connection pooling is disabled. The default is a "default" string. You can modify this value to isolate the connections for a particular client into separate groups.  
-  
+In streamed mode, connections are not shared, meaning that connection pooling is disabled. The default is a "default" string. You can modify this value to isolate the connections for a particular client into separate groups.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <value>A <see cref="T:System.TimeSpan" /> structure that indicates the duration after which the TCP connection is closed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A connection is closed after it is returned to the connection cache and not during active transmission. The connection cache used by the TCP transport creates new connections as required for each endpoint, up to the cache limit that is set by <xref:System.ServiceModel.Configuration.TcpConnectionPoolSettingsElement.MaxOutboundConnectionsPerEndpoint%2A>.  
-  
+A connection is closed after it is returned to the connection cache and not during active transmission. The connection cache used by the TCP transport creates new connections as required for each endpoint, up to the cache limit that is set by <xref:System.ServiceModel.Configuration.TcpConnectionPoolSettingsElement.MaxOutboundConnectionsPerEndpoint%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,14 +147,14 @@
         <value>The maximum number of connections to a remote endpoint initiated by the service. The default is 10.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Connections in excess of the limit are queued until a space below the limit becomes available. This property limits the duration in which connections remain queued before an exception is thrown.  
-  
- This property limits the number of simultaneous active connections from the client to a particular service endpoint. If this value is exceeded by having more active client connections, the service may appear unresponsive to the client. In this case, this value should be adjusted to exceed the maximum number of expected simultaneous client connections to a specific endpoint.  
-  
- This setting can also be set on the service side, in which case the value is used to set the <xref:System.ServiceModel.Channels.MaxPooledConnections%2A> on the <xref:System.ServiceModel.Channels.TcpChannelListener>.  
-  
+Connections in excess of the limit are queued until a space below the limit becomes available. This property limits the duration in which connections remain queued before an exception is thrown.  
+ 
+This property limits the number of simultaneous active connections from the client to a particular service endpoint. If this value is exceeded by having more active client connections, the service may appear unresponsive to the client. In this case, this value should be adjusted to exceed the maximum number of expected simultaneous client connections to a specific endpoint.  
+ 
+This setting can also be set on the service side, in which case the value is used to set the <xref:System.ServiceModel.Channels.MaxPooledConnections%2A> on the <xref:System.ServiceModel.Channels.TcpChannelListener>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,10 +19,10 @@
     <summary>Represents the types of FTP protocol methods that can be used with an FTP request. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The members of this class can be used to set the <xref:System.Net.FtpWebRequest.Method%2A> property that determines the protocol method that is to be used to perform a requested action, such as uploading or downloading a file.  
-  
+The members of this class can be used to set the <xref:System.Net.FtpWebRequest.Method%2A> property that determines the protocol method that is to be used to perform a requested action, such as uploading or downloading a file.  
+ 
  ]]></format>
     </remarks>
   </Docs>

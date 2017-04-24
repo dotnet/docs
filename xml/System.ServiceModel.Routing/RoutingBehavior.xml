@@ -18,10 +18,10 @@
     <summary>Defines the routing behavior, which is used to configure the destination endpoints, filters and filtering options to be used during routing.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Routing.RoutingBehavior> registers all of the run-time components used by the routing service, including the channel initializer, <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, and the <xref:System.ServiceModel.Routing.RoutingExtension>.  
-  
+The <xref:System.ServiceModel.Routing.RoutingBehavior> registers all of the run-time components used by the routing service, including the channel initializer, <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, and the <xref:System.ServiceModel.Routing.RoutingExtension>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.RoutingBehavior" /> class with the specified routing configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Routing.RoutingBehavior> registers all of the run-time components used by the routing service, including the channel initializer, <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, and the <xref:System.ServiceModel.Routing.RoutingExtension>, which uses the specified <xref:System.ServiceModel.Routing.RoutingConfiguration>.  
-  
+The <xref:System.ServiceModel.Routing.RoutingBehavior> registers all of the run-time components used by the routing service, including the channel initializer, <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, and the <xref:System.ServiceModel.Routing.RoutingExtension>, which uses the specified <xref:System.ServiceModel.Routing.RoutingConfiguration>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

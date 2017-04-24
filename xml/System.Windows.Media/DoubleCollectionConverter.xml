@@ -105,10 +105,10 @@
         <returns>The <see cref="T:System.Windows.Media.DoubleCollection" /> that is created from converting <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.DoubleCollectionConverter.CanConvertFrom%2A> method.  
-  
+To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.DoubleCollectionConverter.CanConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <returns>The object you create when you convert this <see cref="T:System.Windows.Media.DoubleCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.DoubleCollectionConverter.CanConvertTo%2A> method.  
-  
+To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.DoubleCollectionConverter.CanConvertTo%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

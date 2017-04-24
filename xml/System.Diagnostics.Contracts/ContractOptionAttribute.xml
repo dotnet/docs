@@ -31,57 +31,57 @@
     <summary>Enables you to set contract and tool options at assembly, type, or method granularity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the currently supported options.  
-  
+The following table shows the currently supported options.  
+ 
 |Category|Setting|Value/effect|  
 |--------------|-------------|-------------------|  
 |contract|inheritance|`true` to turn contract inheritance on; `false` to turn it off.  The default is `true`.|  
 |runtime|checking|`true` to turn run-time checking on; `false` to turn it off. The default is `true`.|  
-  
- You can use this attribute as illustrated in the following examples.  
-  
- To turn off run-time checking for the entire assembly:  
-  
+ 
+You can use this attribute as illustrated in the following examples.  
+ 
+To turn off run-time checking for the entire assembly:  
+ 
 ```  
 [assembly:ContractOption("runtime", "checking", false)]  
 ```  
-  
- To turn run-time contract checking on for a specific type:  
-  
+ 
+To turn run-time contract checking on for a specific type:  
+ 
 ```  
    [ContractOption("runtime", "checking", true)]  
    class TypeWithRuntimeChecking {  
-  
+ 
        ...  
-  
+ 
 ```  
-  
- To turn run-time checking off for a specific method:  
-  
+ 
+To turn run-time checking off for a specific method:  
+ 
 ```  
 // Turn off all contract inheritance from interface IList<T>  
 [ContractOption("contract", "inheritance", false)]  
 class MyConcurrentList<T> : IList<T> {  
    ...  
 }  
-  
+ 
 [ContractOption("runtime", "checking", false)]  
 public override MyMethod(int x) {  
    // no inherited contracts checked at runtime,  
    // no invariants checked at runtime.  
    ...  
 }  
-  
+ 
        [ContractOption("runtime", "checking", false)]  
        public void MethodWithoutRuntimeChecking(...) {  
           ...  
        }  
    }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -148,18 +148,18 @@ public override MyMethod(int x) {
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractOptionAttribute" /> class by using the provided category, setting, and value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are only two category/setting options, and they can be set by either of the constructor overloads. You can use this overload with the same settings as the <xref:System.Diagnostics.Contracts.ContractOptionAttribute.%23ctor%28System.String%2CSystem.String%2CSystem.Boolean%29> overload by specifying "true" or "false" in string format; for example:  
-  
+There are only two category/setting options, and they can be set by either of the constructor overloads. You can use this overload with the same settings as the <xref:System.Diagnostics.Contracts.ContractOptionAttribute.%23ctor%28System.String%2CSystem.String%2CSystem.Boolean%29> overload by specifying "true" or "false" in string format; for example:  
+ 
 ```  
 [ContractOption("contract", "inheritance", “false”)]  
 class MyConcurrentList<T> : IList<T> {  
    ...  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>The exception that is thrown when a XAML writer (such as the <see cref="T:System.Xaml.XamlObjectWriter" /> class) encounters an error while attempting to produce object graphs from a XAML node stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For cases where line information is available (such as when the XAML node stream was read by a <xref:System.Xaml.XamlXmlReader>), and for certain exception cases, a <xref:System.Xaml.XamlObjectWriterException> can report line information from the source of the XAML node stream. This information is appended to the <xref:System.Xaml.XamlException.Message%2A> and is also contained in <xref:System.Xaml.XamlException.LineNumber%2A> and <xref:System.Xaml.XamlException.LinePosition%2A>. Each of these members is implemented by the <xref:System.Xaml.XamlException> base class of <xref:System.Xaml.XamlObjectWriterException>.  
-  
+For cases where line information is available (such as when the XAML node stream was read by a <xref:System.Xaml.XamlXmlReader>), and for certain exception cases, a <xref:System.Xaml.XamlObjectWriterException> can report line information from the source of the XAML node stream. This information is appended to the <xref:System.Xaml.XamlException.Message%2A> and is also contained in <xref:System.Xaml.XamlException.LineNumber%2A> and <xref:System.Xaml.XamlException.LinePosition%2A>. Each of these members is implemented by the <xref:System.Xaml.XamlException> base class of <xref:System.Xaml.XamlObjectWriterException>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,10 +94,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

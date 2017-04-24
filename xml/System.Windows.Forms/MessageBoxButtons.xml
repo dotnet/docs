@@ -13,19 +13,19 @@
     <summary>Specifies constants defining which buttons to display on a <see cref="T:System.Windows.Forms.MessageBox" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.MessageBox> class.  
+This enumeration is used by the <xref:System.Windows.Forms.MessageBox> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use a <xref:System.Windows.Forms.MessageBox> to give the user an opportunity to prevent a form from closing. This example requires that the method is called from the <xref:System.Windows.Forms.Form.FormClosing> event of the form.  
-  
- [!code-cpp[Classic MessageBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic MessageBox Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MessageBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic MessageBox Example/CS/source.cs#1)]
- [!code-vb[Classic MessageBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic MessageBox Example/VB/source.vb#1)]  
-  
+The following code example shows how to use a <xref:System.Windows.Forms.MessageBox> to give the user an opportunity to prevent a form from closing. This example requires that the method is called from the <xref:System.Windows.Forms.Form.FormClosing> event of the form.  
+ 
+[!code-cpp[Classic MessageBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic MessageBox Example/CPP/source.cpp#1)]
+[!code-csharp[Classic MessageBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic MessageBox Example/CS/source.cs#1)]
+[!code-vb[Classic MessageBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic MessageBox Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

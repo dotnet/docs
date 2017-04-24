@@ -27,26 +27,26 @@
     <summary>Defines the type of normalization to perform.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some Unicode sequences are considered equivalent because they represent the same character. For example, the following are considered equivalent because any of these can be used to represent "ắ":  
-  
+Some Unicode sequences are considered equivalent because they represent the same character. For example, the following are considered equivalent because any of these can be used to represent "ắ":  
+ 
 -   "\u1EAF"  
-  
+ 
 -   "\u0103\u0301"  
-  
+ 
 -   "\u0061\u0306\u0301"  
-  
- However, ordinal, that is, binary, comparisons consider these sequences different because they contain different Unicode code values. Before performing ordinal comparisons, applications must normalize these strings to decompose them into their basic components.  
-  
- Each composite Unicode character is mapped to a more basic sequence of one or more characters. The process of decomposition replaces composite characters in a string with their more basic mappings. A full decomposition recursively performs this replacement until none of the characters in the string can be decomposed further.  
-  
- Unicode defines two types of decompositions: compatibility decomposition and canonical decomposition. In compatibility decomposition, formatting information might be lost. In canonical decomposition, which is a subset of compatibility decomposition, formatting information is preserved.  
-  
- Two sets of characters are considered to have canonical equivalence if their full canonical decompositions are identical. Likewise, two sets of characters are considered to have compatibility equivalence if their full compatibility decompositions are identical.  
-  
- For more information about normalization, decompositions and equivalence, see [Unicode Standard Annex #15: Unicode Normalization Forms](http://unicode.org/reports/tr15/) at unicode.org.  
-  
+ 
+However, ordinal, that is, binary, comparisons consider these sequences different because they contain different Unicode code values. Before performing ordinal comparisons, applications must normalize these strings to decompose them into their basic components.  
+ 
+Each composite Unicode character is mapped to a more basic sequence of one or more characters. The process of decomposition replaces composite characters in a string with their more basic mappings. A full decomposition recursively performs this replacement until none of the characters in the string can be decomposed further.  
+ 
+Unicode defines two types of decompositions: compatibility decomposition and canonical decomposition. In compatibility decomposition, formatting information might be lost. In canonical decomposition, which is a subset of compatibility decomposition, formatting information is preserved.  
+ 
+Two sets of characters are considered to have canonical equivalence if their full canonical decompositions are identical. Likewise, two sets of characters are considered to have compatibility equivalence if their full compatibility decompositions are identical.  
+ 
+For more information about normalization, decompositions and equivalence, see [Unicode Standard Annex #15: Unicode Normalization Forms](http://unicode.org/reports/tr15/) at unicode.org.  
+ 
  ]]></format>
     </remarks>
   </Docs>

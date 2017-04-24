@@ -14,10 +14,10 @@
     <summary>Represents a configuration element that specifies whether transaction batching is supported for receive operations. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A transport that is configured with transaction batching will attempt to batch several receive operations into one transaction. By doing so, the relatively high cost of creating a transaction and committing it in every receive operation is avoided.  
-  
+A transport that is configured with transaction batching will attempt to batch several receive operations into one transaction. By doing so, the relatively high cost of creating a transaction and committing it in every receive operation is avoided.  
+ 
  ]]></format>
     </remarks>
   </Docs>

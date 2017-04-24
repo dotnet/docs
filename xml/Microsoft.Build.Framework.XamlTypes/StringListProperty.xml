@@ -14,10 +14,10 @@
     <summary>Represents the schema of a list-of-strings property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note, this represents a list of strings, not a list of <xref:Microsoft.Build.Framework.XamlTypes.StringProperty>s.  
-  
+Note, this represents a list of strings, not a list of <xref:Microsoft.Build.Framework.XamlTypes.StringProperty>s.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>Returns the separator.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For `Val1;Val2;Val3`, if `CommandLineValueSeparator` is specified as, say `,`, the command line looks like this: `/p:val1,val2,val3` If not specified, the command line looks like this: `/p:val1 /p:val2 /p:val3` This field is optional.  
-  
+For `Val1;Val2;Val3`, if `CommandLineValueSeparator` is specified as, say `,`, the command line looks like this: `/p:val1,val2,val3` If not specified, the command line looks like this: `/p:val1 /p:val2 /p:val3` This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <value>Returns the property subtype.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Similar to the <xref:Microsoft.Build.Framework.XamlTypes.StringProperty.Subtype%2A> property.  
-  
+Similar to the <xref:Microsoft.Build.Framework.XamlTypes.StringProperty.Subtype%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,27 +14,27 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.FormView.ModeChanging" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.FormView.ModeChanging> event is raised when a <xref:System.Web.UI.WebControls.FormView> control attempts to switch between edit, insert, and read-only mode, but before the mode actually changes. This allows you to provide an event-handling method that performs a custom routine, such as configuring the <xref:System.Web.UI.WebControls.FormView> control for a specific mode or canceling the mode change, whenever this event occurs.  
+The <xref:System.Web.UI.WebControls.FormView.ModeChanging> event is raised when a <xref:System.Web.UI.WebControls.FormView> control attempts to switch between edit, insert, and read-only mode, but before the mode actually changes. This allows you to provide an event-handling method that performs a custom routine, such as configuring the <xref:System.Web.UI.WebControls.FormView> control for a specific mode or canceling the mode change, whenever this event occurs.  
+ 
+A <xref:System.Web.UI.WebControls.FormViewInsertEventArgs> object is passed to the event-handling method, which allows you to determine the mode to which the <xref:System.Web.UI.WebControls.FormView> control is changing, to determine whether the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event was raised as a result of the user canceling an edit or insert operation, or to indicate that the mode change should be canceled. To determine the new mode, use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property. You can also use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property to programmatically specify an alternate mode to which to change by setting it to one of the <xref:System.Web.UI.WebControls.FormViewMode> enumeration values. Use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit%2A> property to determine whether this event was raised as the result of the user canceling an edit or insert operation. To cancel the mode change, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
+For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewModeEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.%23ctor%2A> constructor.  
+ 
   
- A <xref:System.Web.UI.WebControls.FormViewInsertEventArgs> object is passed to the event-handling method, which allows you to determine the mode to which the <xref:System.Web.UI.WebControls.FormView> control is changing, to determine whether the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event was raised as a result of the user canceling an edit or insert operation, or to indicate that the mode change should be canceled. To determine the new mode, use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property. You can also use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property to programmatically specify an alternate mode to which to change by setting it to one of the <xref:System.Web.UI.WebControls.FormViewMode> enumeration values. Use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit%2A> property to determine whether this event was raised as the result of the user canceling an edit or insert operation. To cancel the mode change, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewModeEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.%23ctor%2A> constructor.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs> object passed to the event-handling method for the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event to hide the pager row when the <xref:System.Web.UI.WebControls.FormView> control transitions to edit mode.  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs> object passed to the event-handling method for the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event to hide the pager row when the <xref:System.Web.UI.WebControls.FormView> control transitions to edit mode.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,20 +59,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormViewModeEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormViewModeEventArgs> class.  
-  
- The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewModeEventArgs> class.  
-  
+Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormViewModeEventArgs> class.  
+ 
+The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewModeEventArgs> class.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit%2A>|The value of the `cancelingEdit` parameter.|  
 |<xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A>|The value of the `mode` parameter.|  
-  
+ 
 > [!NOTE]
 >  This constructor is used primarily by control developers when raising events.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,21 +95,21 @@
           <see langword="true" /> to indicate the <see cref="E:System.Web.UI.WebControls.FormView.ModeChanging" /> event was raised as a result of the user canceling an edit operation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.FormView.ModeChanging> event is raised when a <xref:System.Web.UI.WebControls.FormView> control attempts to switch between edit, insert, and read-only mode, but before the mode actually changes. Use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit%2A> property to determine whether the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event was raised as a result of the user canceling an edit or insert operation. For example, you might want to reset the <xref:System.Web.UI.WebControls.FormView> control whenever the user cancels an edit operation.  
+The <xref:System.Web.UI.WebControls.FormView.ModeChanging> event is raised when a <xref:System.Web.UI.WebControls.FormView> control attempts to switch between edit, insert, and read-only mode, but before the mode actually changes. Use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit%2A> property to determine whether the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event was raised as a result of the user canceling an edit or insert operation. For example, you might want to reset the <xref:System.Web.UI.WebControls.FormView> control whenever the user cancels an edit operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit%2A> property to determine whether a mode change is the result of the user canceling an edit operation.  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit%2A> property to determine whether a mode change is the result of the user canceling an edit operation.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,21 +131,21 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.FormViewMode" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property to determine the mode to which the <xref:System.Web.UI.WebControls.FormView> control is changing. For example, you might want to configure the <xref:System.Web.UI.WebControls.FormView> control based on the mode to which it changes. You can also use this property to specify the mode to which the <xref:System.Web.UI.WebControls.FormView> control changes by setting it to one of the <xref:System.Web.UI.WebControls.FormViewMode> enumeration values.  
+Use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property to determine the mode to which the <xref:System.Web.UI.WebControls.FormView> control is changing. For example, you might want to configure the <xref:System.Web.UI.WebControls.FormView> control based on the mode to which it changes. You can also use this property to specify the mode to which the <xref:System.Web.UI.WebControls.FormView> control changes by setting it to one of the <xref:System.Web.UI.WebControls.FormViewMode> enumeration values.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property to determine the mode to which the <xref:System.Web.UI.WebControls.FormView> control is transitioning.  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property to determine the mode to which the <xref:System.Web.UI.WebControls.FormView> control is transitioning.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

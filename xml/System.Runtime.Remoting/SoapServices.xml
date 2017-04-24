@@ -20,18 +20,18 @@
     <summary>Provides several methods for using and publishing remoted objects in SOAP format.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class makes a link demand. A security exception is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
+This class makes a link demand. A security exception is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the members in the <xref:System.Runtime.Remoting.SoapServices> class to convert between a <xref:System.Type> object and an XML type.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#100](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#100)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#100](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#100)]  
-  
+The following code example shows how to use the members in the <xref:System.Runtime.Remoting.SoapServices> class to convert between a <xref:System.Type> object and an XML type.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#100](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#100)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#100](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#100)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -61,20 +61,20 @@
         <returns>The common language runtime type namespace name from the provided namespace and assembly names.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method is used by the .NET Framework and the SoapSuds tool to create an XML namespace name for a common language runtime object type.  
+The current method is used by the .NET Framework and the SoapSuds tool to create an XML namespace name for a common language runtime object type.  
+ 
+For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+ 
   
- For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#101](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#101)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#101](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#101)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#101](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#101)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#101](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#101)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="assemblyName" /> and <paramref name="typeNamespace" /> parameters are both either <see langword="null" /> or empty.</exception>
@@ -109,18 +109,18 @@
           <see langword="true" /> if the namespace and assembly names were successfully decoded; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the .NET Framework is parsing an XML stream, it needs to know how to convert the XML read from the stream into common language runtime types. The information that specifies how the .NET Framework should generate and parse an XML stream is stored in custom attributes that are located in the <xref:System.Runtime.Remoting.Metadata> namespace. There are two ways to specify this information in a configuration file: either by explicitly specifying the mappings, or by specifying which object types to preload. The current method supports the retrieval of such mappings.  
+When the .NET Framework is parsing an XML stream, it needs to know how to convert the XML read from the stream into common language runtime types. The information that specifies how the .NET Framework should generate and parse an XML stream is stored in custom attributes that are located in the <xref:System.Runtime.Remoting.Metadata> namespace. There are two ways to specify this information in a configuration file: either by explicitly specifying the mappings, or by specifying which object types to preload. The current method supports the retrieval of such mappings.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#102](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#102)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#102](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#102)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#102](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#102)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#102](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#102)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="inNamespace" /> parameter is <see langword="null" /> or empty.</exception>
@@ -157,18 +157,18 @@
         <summary>Retrieves field type from XML attribute name, namespace, and the <see cref="T:System.Type" /> of the containing object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given the type of the containing object and the XML attribute and XML namespace that is read in by the .NET Framework, the current method returns the actual common language runtime field name and type of the field. The .NET Framework then uses this information to populate that field with the data read in from the XML stream.  
+Given the type of the containing object and the XML attribute and XML namespace that is read in by the .NET Framework, the current method returns the actual common language runtime field name and type of the field. The .NET Framework then uses this information to populate that field with the data read in from the XML stream.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#150](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#150)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#150](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#150)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#150](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#150)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#150](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#150)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -204,18 +204,18 @@
         <summary>Retrieves the <see cref="T:System.Type" /> and name of a field from the provided XML element name, namespace, and the containing type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given the type of the containing object and the XML element and XML namespace that is read in by the .NET Framework, this method returns the actual common language runtime field name and type of the field. The .NET Framework then uses this information to populate that field with the data read in from the XML stream.  
+Given the type of the containing object and the XML element and XML namespace that is read in by the .NET Framework, this method returns the actual common language runtime field name and type of the field. The .NET Framework then uses this information to populate that field with the data read in from the XML stream.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#150](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#150)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#150](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#150)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#150](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#150)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#150](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#150)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -246,18 +246,18 @@
         <returns>The <see cref="T:System.Type" /> of object associated with the specified XML element name and namespace.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method returns values set up through <xref:System.Runtime.Remoting.SoapServices.RegisterInteropXmlElement%2A> and <xref:System.Runtime.Remoting.SoapServices.PreLoad%2A>.  
+The current method returns values set up through <xref:System.Runtime.Remoting.SoapServices.RegisterInteropXmlElement%2A> and <xref:System.Runtime.Remoting.SoapServices.PreLoad%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#160](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#160)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#160](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#160)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#160](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#160)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#160](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#160)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -288,18 +288,18 @@
         <returns>The <see cref="T:System.Type" /> of object associated with the specified XML type name and namespace.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method returns values set up through <xref:System.Runtime.Remoting.SoapServices.RegisterInteropXmlType%2A> and <xref:System.Runtime.Remoting.SoapServices.PreLoad%2A>.  
+The current method returns values set up through <xref:System.Runtime.Remoting.SoapServices.RegisterInteropXmlType%2A> and <xref:System.Runtime.Remoting.SoapServices.PreLoad%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#160](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#160)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#160](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#160)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#160](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#160)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#160](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#160)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -328,18 +328,18 @@
         <returns>The SOAPAction value associated with the method specified in the given <see cref="T:System.Reflection.MethodBase" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the given <xref:System.Reflection.MethodBase> has not been registered with any SOAPAction value, the <xref:System.Runtime.Remoting.SoapServices.GetSoapActionFromMethodBase%2A> method returns the SOAPAction automatically cached with the <xref:System.Reflection.MethodBase>.  
+If the given <xref:System.Reflection.MethodBase> has not been registered with any SOAPAction value, the <xref:System.Runtime.Remoting.SoapServices.GetSoapActionFromMethodBase%2A> method returns the SOAPAction automatically cached with the <xref:System.Reflection.MethodBase>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#140)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#140)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#140)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#140)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -373,18 +373,18 @@
           <see langword="true" /> if the type and method name were successfully recovered; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `true` if the type and method name lookups were successful; otherwise, `false`.  
+`true` if the type and method name lookups were successful; otherwise, `false`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#140)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#140)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#140)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#140)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">The SOAPAction value does not start and end with quotes.</exception>
@@ -419,13 +419,13 @@
           <see langword="true" /> if the requested values have been set flagged with <see cref="T:System.Runtime.Remoting.Metadata.SoapTypeAttribute" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#103](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#103)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#103](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#103)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#103](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#103)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#103](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#103)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -454,13 +454,13 @@
         <returns>The XML namespace used during remote calls of the specified method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#105](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#105)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#105](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#105)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#105](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#105)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#105](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#105)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -489,13 +489,13 @@
         <returns>The XML namespace used during the generation of responses to a remote method call.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#105](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#105)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#105](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#105)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#105](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#105)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#105](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#105)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -529,13 +529,13 @@
           <see langword="true" /> if the requested values have been set flagged with <see cref="T:System.Runtime.Remoting.Metadata.SoapTypeAttribute" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#104](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#104)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#104](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#104)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#104](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#104)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#104](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#104)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -565,20 +565,20 @@
           <see langword="true" /> if the given namespace is native to the common language runtime; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method is used by the SoapSuds tool to determine whether an XML namespace represents a common language runtime type or a type from a non-common language runtime system.  
+The current method is used by the SoapSuds tool to determine whether an XML namespace represents a common language runtime type or a type from a non-common language runtime system.  
+ 
+For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+ 
   
- For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#106](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#106)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#106](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#106)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#106](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#106)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#106](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#106)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -610,13 +610,13 @@
           <see langword="true" /> if the specified SOAPAction is acceptable for a given <see cref="T:System.Reflection.MethodBase" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#140)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#140)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#140)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#140](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#140)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -644,18 +644,18 @@
         <summary>Preloads every <see cref="T:System.Type" /> found in the specified <see cref="T:System.Reflection.Assembly" /> from the information found in the <see cref="T:System.Runtime.Remoting.Metadata.SoapTypeAttribute" /> associated with each type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the .NET Framework is parsing an XML stream, it needs to know how to convert the XML read from the stream into common language runtime types. The information that specifies how the .NET Framework should generate and parse an XML stream is stored in custom attributes that are located in the <xref:System.Runtime.Remoting.Metadata> namespace. There are two ways to specify this information in a configuration file: either by explicitly specifying the mappings, or by specifying which object types to preload. The custom attributes are read during the preloading process and the information in them is made available to the SOAP parser.  
+When the .NET Framework is parsing an XML stream, it needs to know how to convert the XML read from the stream into common language runtime types. The information that specifies how the .NET Framework should generate and parse an XML stream is stored in custom attributes that are located in the <xref:System.Runtime.Remoting.Metadata> namespace. There are two ways to specify this information in a configuration file: either by explicitly specifying the mappings, or by specifying which object types to preload. The custom attributes are read during the preloading process and the information in them is made available to the SOAP parser.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#120](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#120)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#120](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#120)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#120](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#120)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#120](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#120)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -683,18 +683,18 @@
         <summary>Preloads the given <see cref="T:System.Type" /> based on values set in a <see cref="T:System.Runtime.Remoting.Metadata.SoapTypeAttribute" /> on the type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the .NET Framework is parsing an XML stream, it needs to know how to convert the XML read from the stream into common language runtime types. The information that specifies how the .NET Framework should generate and parse an XML stream is stored in custom attributes that are located in the <xref:System.Runtime.Remoting.Metadata> namespace. There are two ways to specify this information in a configuration file: either by explicitly specifying the mappings, or by specifying which object types to preload. The custom attributes are read during the preloading process and the information in them is made available to the SOAP parser.  
+When the .NET Framework is parsing an XML stream, it needs to know how to convert the XML read from the stream into common language runtime types. The information that specifies how the .NET Framework should generate and parse an XML stream is stored in custom attributes that are located in the <xref:System.Runtime.Remoting.Metadata> namespace. There are two ways to specify this information in a configuration file: either by explicitly specifying the mappings, or by specifying which object types to preload. The custom attributes are read during the preloading process and the information in them is made available to the SOAP parser.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#121](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#121)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#121](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#121)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#121](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#121)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#121](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#121)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -726,13 +726,13 @@
         <summary>Associates the given XML element name and namespace with a run-time type that should be used for deserialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#180](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#180)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#180](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#180)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#180](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#180)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#180](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#180)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -764,13 +764,13 @@
         <summary>Associates the given XML type name and namespace with the run-time type that should be used for deserialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#190](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#190)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#190](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#190)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#190](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#190)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#190](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#190)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -798,20 +798,20 @@
         <summary>Associates the specified <see cref="T:System.Reflection.MethodBase" /> with the SOAPAction cached with it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SOAPAction of the specified method is contained in the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute.SoapAction%2A?displayProperty=fullName> property, or is read off the wire. The current method associates the SOAPAction with the <xref:System.Reflection.MethodBase> for use in channel sinks.  
+The SOAPAction of the specified method is contained in the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute.SoapAction%2A?displayProperty=fullName> property, or is read off the wire. The current method associates the SOAPAction with the <xref:System.Reflection.MethodBase> for use in channel sinks.  
+ 
+The SOAPAction HTTP request header field indicates the intent of the SOAP HTTP request. The value is a URI identifying the intent. SOAP places no restrictions on the format or specificity of the URI or that it is resolvable. An HTTP client must use this header field when issuing a SOAP HTTP request.  
+ 
   
- The SOAPAction HTTP request header field indicates the intent of the SOAP HTTP request. The value is a URI identifying the intent. SOAP places no restrictions on the format or specificity of the URI or that it is resolvable. An HTTP client must use this header field when issuing a SOAP HTTP request.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#170](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#170)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#170](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#170)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#170](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#170)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#170](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#170)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -841,18 +841,18 @@
         <summary>Associates the provided SOAPAction value with the given <see cref="T:System.Reflection.MethodBase" /> for use in channel sinks.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SOAPAction HTTP request header field indicates the intent of the SOAP HTTP request. The value is a URI identifying the intent. SOAP places no restrictions on the format or specificity of the URI or that it is resolvable. An HTTP client must use this header field when issuing a SOAP HTTP request.  
+The SOAPAction HTTP request header field indicates the intent of the SOAP HTTP request. The value is a URI identifying the intent. SOAP places no restrictions on the format or specificity of the URI or that it is resolvable. An HTTP client must use this header field when issuing a SOAP HTTP request.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#170](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#170)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#170](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#170)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#170](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#170)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#170](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#170)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -877,18 +877,18 @@
         <value>The XML namespace prefix for common language runtime types.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- WSDL and SOAP protocols encode common language runtime classes into XML namespaces. The current property specifies the format for the XML namespaces. All XML namespaces for a common language runtime class start with the <xref:System.String> that the current property returns.  
+WSDL and SOAP protocols encode common language runtime classes into XML namespaces. The current property specifies the format for the XML namespaces. All XML namespaces for a common language runtime class start with the <xref:System.String> that the current property returns.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#130](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#130)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#130](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#130)]  
-  
+The following code example shows how to use this property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#130](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#130)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#130](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#130)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -913,18 +913,18 @@
         <value>The default XML namespace prefix that should be used for XML encoding of a common language runtime class that has an assembly, but no native namespace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- WSDL and SOAP protocols encode common language runtime classes into XML namespaces. The current property specifies the format for the XML namespaces. If a common language runtime class has an assembly but no namespace, the current property returns the default XML namespace that is used.  
+WSDL and SOAP protocols encode common language runtime classes into XML namespaces. The current property specifies the format for the XML namespaces. If a common language runtime class has an assembly but no namespace, the current property returns the default XML namespace that is used.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#131](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#131)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#131](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#131)]  
-  
+The following code example shows how to use this property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#131](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#131)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#131](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#131)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -949,18 +949,18 @@
         <value>The XML namespace prefix that should be used for XML encoding of a common language runtime class that is part of the mscorlib.dll file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- WSDL and SOAP protocols encode common language runtime classes into XML namespaces. The current property specifies the format for the XML namespaces. If a common language runtime class is part of the mscorlib assembly, the XML namespace returned by the current property is used.  
+WSDL and SOAP protocols encode common language runtime classes into XML namespaces. The current property specifies the format for the XML namespaces. If a common language runtime class is part of the mscorlib assembly, the XML namespace returned by the current property is used.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#132](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#132)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#132](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#132)]  
-  
+The following code example shows how to use this property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#132](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#132)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#132](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#132)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -985,18 +985,18 @@
         <value>The default XML namespace prefix that should be used for XML encoding of a common language runtime class that has both a common language runtime namespace and an assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- WSDL and SOAP protocols encode common language runtime classes into XML namespaces. The current property specifies the format for the XML namespaces. If a common language runtime class has an assembly and a common language runtime namespace, the current property returns the default XML namespace that is used.  
+WSDL and SOAP protocols encode common language runtime classes into XML namespaces. The current property specifies the format for the XML namespaces. If a common language runtime class has an assembly and a common language runtime namespace, the current property returns the default XML namespace that is used.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
-  
- [!code-cpp[System.Runtime.Remoting.SoapServices#133](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#133)]
- [!code-csharp[System.Runtime.Remoting.SoapServices#133](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#133)]  
-  
+The following code example shows how to use this property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.SoapServices> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.SoapServices#133](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CPP/demo.cpp#133)]
+[!code-csharp[System.Runtime.Remoting.SoapServices#133](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.SoapServices/CS/demo.cs#133)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>

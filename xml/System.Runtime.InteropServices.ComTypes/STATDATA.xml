@@ -27,14 +27,14 @@
     <summary>Provides the managed definition of the <see langword="STATDATA" /> structure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.InteropServices.ComTypes.STATDATA> structure is the data structure used to specify each advisory connection. It is used for enumerating current advisory connections.  
-  
- For more information about the `STATDATA` structure, see the MSDN Library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+The <xref:System.Runtime.InteropServices.ComTypes.STATDATA> structure is the data structure used to specify each advisory connection. It is used for enumerating current advisory connections.  
+ 
+For more information about the `STATDATA` structure, see the MSDN Library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <summary>Represents the <see cref="T:System.Runtime.InteropServices.ComTypes.ADVF" /> enumeration value that determines when the advisory sink is notified of changes in the data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `STATDATA` structure, see the MSDN Library.  
-  
+For more information about the `STATDATA` structure, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <summary>Represents the <see cref="T:System.Runtime.InteropServices.ComTypes.IAdviseSink" /> interface that will receive change notifications.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `STATDATA` structure, see the MSDN Library.  
-  
+For more information about the `STATDATA` structure, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <summary>Represents the token that uniquely identifies the advisory connection. This token is returned by the method that sets up the advisory connection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `STATDATA` structure, see the MSDN Library.  
-  
+For more information about the `STATDATA` structure, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <summary>Represents the <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure for the data of interest to the advise sink. The advise sink receives notification of changes to the data specified by this <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `STATDATA` structure, see the MSDN Library.  
-  
+For more information about the `STATDATA` structure, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

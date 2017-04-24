@@ -49,44 +49,44 @@
     <summary>Represents a variable size last-in-first-out (LIFO) collection of instances of the same specified type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.Generic.Stack%601> is implemented as an array.  
-  
- Stacks and queues are useful when you need temporary storage for information; that is, when you might want to discard an element after retrieving its value. Use <xref:System.Collections.Generic.Queue%601> if you need to access the information in the same order that it is stored in the collection. Use <xref:System.Collections.Generic.Stack%601?displayProperty=fullName> if you need to access the information in reverse order.  
-  
- Use the <xref:System.Collections.Concurrent.ConcurrentStack%601?displayProperty=fullName> and <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=fullName> types when you need to access the collection from multiple threads concurrently.  
-  
- A common use for <xref:System.Collections.Generic.Stack%601?displayProperty=fullName> is to preserve variable states during calls to other procedures.  
-  
- Three main operations can be performed on a <xref:System.Collections.Generic.Stack%601?displayProperty=fullName> and its elements:  
-  
+<xref:System.Collections.Generic.Stack%601> is implemented as an array.  
+ 
+Stacks and queues are useful when you need temporary storage for information; that is, when you might want to discard an element after retrieving its value. Use <xref:System.Collections.Generic.Queue%601> if you need to access the information in the same order that it is stored in the collection. Use <xref:System.Collections.Generic.Stack%601?displayProperty=fullName> if you need to access the information in reverse order.  
+ 
+Use the <xref:System.Collections.Concurrent.ConcurrentStack%601?displayProperty=fullName> and <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=fullName> types when you need to access the collection from multiple threads concurrently.  
+ 
+A common use for <xref:System.Collections.Generic.Stack%601?displayProperty=fullName> is to preserve variable states during calls to other procedures.  
+ 
+Three main operations can be performed on a <xref:System.Collections.Generic.Stack%601?displayProperty=fullName> and its elements:  
+ 
 -   <xref:System.Collections.Generic.Stack%601.Push%2A> inserts an element at the top of the <xref:System.Collections.Stack>.  
-  
+ 
 -   <xref:System.Collections.Generic.Stack%601.Pop%2A> removes an element from the top of the <xref:System.Collections.Generic.Stack%601>.  
-  
+ 
 -   <xref:System.Collections.Generic.Stack%601.Peek%2A> returns an element that is at the top of the <xref:System.Collections.Generic.Stack%601> but does not remove it from the <xref:System.Collections.Generic.Stack%601>.  
+ 
+The capacity of a <xref:System.Collections.Generic.Stack%601> is the number of elements the <xref:System.Collections.Generic.Stack%601> can hold. As elements are added to a <xref:System.Collections.Generic.Stack%601>, the capacity is automatically increased as required by reallocating the internal array. The capacity can be decreased by calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>.  
+ 
+If <xref:System.Collections.Generic.Stack%601.Count%2A> is less than the capacity of the stack, <xref:System.Collections.Generic.Stack%601.Push%2A> is an O(1) operation. If the capacity needs to be increased to accommodate the new element, <xref:System.Collections.Generic.Stack%601.Push%2A> becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>. <xref:System.Collections.Generic.Stack%601.Pop%2A> is an O(1) operation.  
+ 
+<xref:System.Collections.Generic.Stack%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+ 
   
- The capacity of a <xref:System.Collections.Generic.Stack%601> is the number of elements the <xref:System.Collections.Generic.Stack%601> can hold. As elements are added to a <xref:System.Collections.Generic.Stack%601>, the capacity is automatically increased as required by reallocating the internal array. The capacity can be decreased by calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>.  
-  
- If <xref:System.Collections.Generic.Stack%601.Count%2A> is less than the capacity of the stack, <xref:System.Collections.Generic.Stack%601.Push%2A> is an O(1) operation. If the capacity needs to be increased to accommodate the new element, <xref:System.Collections.Generic.Stack%601.Push%2A> becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>. <xref:System.Collections.Generic.Stack%601.Pop%2A> is an O(1) operation.  
-  
- <xref:System.Collections.Generic.Stack%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class. The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class. The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
@@ -118,32 +118,32 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Stack`1" /> class that is empty and has the default initial capacity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of a <xref:System.Collections.Generic.Stack%601> is the number of elements that the <xref:System.Collections.Generic.Stack%601> can hold. As elements are added to a <xref:System.Collections.Generic.Stack%601>, the capacity is automatically increased as required by reallocating the internal array.  
+The capacity of a <xref:System.Collections.Generic.Stack%601> is the number of elements that the <xref:System.Collections.Generic.Stack%601> can hold. As elements are added to a <xref:System.Collections.Generic.Stack%601>, the capacity is automatically increased as required by reallocating the internal array.  
+ 
+If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.Stack%601>.  
+ 
+The capacity can be decreased by calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>.  
+ 
+This constructor is an O(1) operation.  
+ 
   
- If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.Stack%601>.  
-  
- The capacity can be decreased by calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>.  
-  
- This constructor is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates this constructor and several methods of the <xref:System.Collections.Generic.Stack%601> generic class.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates this constructor and several methods of the <xref:System.Collections.Generic.Stack%601> generic class.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,34 +175,34 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Stack`1" /> class that contains elements copied from the specified collection and has sufficient capacity to accommodate the number of elements copied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of a <xref:System.Collections.Generic.Stack%601> is the number of elements that the <xref:System.Collections.Generic.Stack%601> can hold. As elements are added to a <xref:System.Collections.Generic.Stack%601>, the capacity is automatically increased as required by reallocating the internal array.  
+The capacity of a <xref:System.Collections.Generic.Stack%601> is the number of elements that the <xref:System.Collections.Generic.Stack%601> can hold. As elements are added to a <xref:System.Collections.Generic.Stack%601>, the capacity is automatically increased as required by reallocating the internal array.  
+ 
+If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.Stack%601>.  
+ 
+The capacity can be decreased by calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>.  
+ 
+The elements are copied onto the <xref:System.Collections.Generic.Stack%601> in the same order they are read by the <xref:System.Collections.Generic.IEnumerator%601> of the collection.  
+ 
+This constructor is an O(`n`) operation, where `n` is the number of elements in `collection`.  
+ 
   
- If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.Stack%601>.  
-  
- The capacity can be decreased by calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>.  
-  
- The elements are copied onto the <xref:System.Collections.Generic.Stack%601> in the same order they are read by the <xref:System.Collections.Generic.IEnumerator%601> of the collection.  
-  
- This constructor is an O(`n`) operation, where `n` is the number of elements in `collection`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates this constructor and several methods of the <xref:System.Collections.Generic.Stack%601> generic class.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates this constructor and several methods of the <xref:System.Collections.Generic.Stack%601> generic class.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -236,16 +236,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Stack`1" /> class that is empty and has the specified initial capacity or the default initial capacity, whichever is greater.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of a <xref:System.Collections.Generic.Stack%601> is the number of elements that the <xref:System.Collections.Generic.Stack%601> can hold. As elements are added to a <xref:System.Collections.Generic.Stack%601>, the capacity is automatically increased as required by reallocating the internal array.  
-  
- If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.Stack%601>.  
-  
- The capacity can be decreased by calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>.  
-  
- This constructor is an O(`n`) operation, where `n` is `capacity`.  
-  
+The capacity of a <xref:System.Collections.Generic.Stack%601> is the number of elements that the <xref:System.Collections.Generic.Stack%601> can hold. As elements are added to a <xref:System.Collections.Generic.Stack%601>, the capacity is automatically increased as required by reallocating the internal array.  
+ 
+If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.Stack%601>.  
+ 
+The capacity can be decreased by calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>.  
+ 
+This constructor is an O(`n`) operation, where `n` is `capacity`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -279,30 +279,30 @@
         <summary>Removes all objects from the <see cref="T:System.Collections.Generic.Stack`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.Generic.Stack%601.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+<xref:System.Collections.Generic.Stack%601.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+ 
+The capacity remains unchanged. To reset the capacity of the <xref:System.Collections.Generic.Stack%601>, call <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>. Trimming an empty <xref:System.Collections.Generic.Stack%601> sets the capacity of the <xref:System.Collections.Generic.Stack%601> to the default capacity.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
+ 
   
- The capacity remains unchanged. To reset the capacity of the <xref:System.Collections.Generic.Stack%601>, call <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>. Trimming an empty <xref:System.Collections.Generic.Stack%601> sets the capacity of the <xref:System.Collections.Generic.Stack%601> to the default capacity.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Clear%2A> method.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Clear%2A> method.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -339,28 +339,28 @@
           <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Collections.Generic.Stack`1" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ 
+This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
+ 
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Contains%2A> method.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Contains%2A> method.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,28 +397,28 @@
         <summary>Copies the <see cref="T:System.Collections.Generic.Stack`1" /> to an existing one-dimensional <see cref="T:System.Array" />, starting at the specified array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements are copied onto the array in last-in-first-out (LIFO) order, similar to the order of the elements returned by a succession of calls to <xref:System.Collections.Generic.Stack%601.Pop%2A>.  
+The elements are copied onto the array in last-in-first-out (LIFO) order, similar to the order of the elements returned by a succession of calls to <xref:System.Collections.Generic.Stack%601.Pop%2A>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
+ 
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -455,30 +455,30 @@
         <value>The number of elements contained in the <see cref="T:System.Collections.Generic.Stack`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capacity of the <xref:System.Collections.Generic.Stack%601> is the number of elements that the <xref:System.Collections.Generic.Stack%601> can store. <xref:System.Collections.Generic.Stack%601.Count%2A> is the number of elements that are actually in the <xref:System.Collections.Generic.Stack%601>.  
+The capacity of the <xref:System.Collections.Generic.Stack%601> is the number of elements that the <xref:System.Collections.Generic.Stack%601> can store. <xref:System.Collections.Generic.Stack%601.Count%2A> is the number of elements that are actually in the <xref:System.Collections.Generic.Stack%601>.  
+ 
+The capacity is always greater than or equal to <xref:System.Collections.Generic.Stack%601.Count%2A>. If <xref:System.Collections.Generic.Stack%601.Count%2A> exceeds the capacity while adding elements, the capacity is increased by automatically reallocating the internal array before copying the old elements and adding the new elements.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
   
- The capacity is always greater than or equal to <xref:System.Collections.Generic.Stack%601.Count%2A>. If <xref:System.Collections.Generic.Stack%601.Count%2A> exceeds the capacity while adding elements, the capacity is increased by automatically reallocating the internal array before copying the old elements and adding the new elements.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates several properties and methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Count%2A> property.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates several properties and methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Count%2A> property.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -511,42 +511,42 @@
         <returns>An <see cref="T:System.Collections.Generic.Stack`1.Enumerator" /> for the <see cref="T:System.Collections.Generic.Stack`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A>.  
+ 
+<xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> returns the same object until <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ 
+This method is an O(1) operation.  
+ 
   
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A>.  
-  
- <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> returns the same object until <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
-  
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates that the <xref:System.Collections.Generic.Stack%601> generic class is enumerable. The `foreach` statement (`For Each` in Visual Basic, `for each` in C++) is used to enumerate the queue.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates that the <xref:System.Collections.Generic.Stack%601> generic class is enumerable. The `foreach` statement (`For Each` in Visual Basic, `for each` in C++) is used to enumerate the queue.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -579,30 +579,30 @@
         <returns>The object at the top of the <see cref="T:System.Collections.Generic.Stack`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is similar to the <xref:System.Collections.Generic.Stack%601.Pop%2A> method, but <xref:System.Collections.Generic.Stack%601.Peek%2A> does not modify the <xref:System.Collections.Generic.Stack%601>.  
+This method is similar to the <xref:System.Collections.Generic.Stack%601.Pop%2A> method, but <xref:System.Collections.Generic.Stack%601.Peek%2A> does not modify the <xref:System.Collections.Generic.Stack%601>.  
+ 
+If type `T` is a reference type, `null` can be pushed onto the <xref:System.Collections.Generic.Stack%601> as a placeholder, if needed.  
+ 
+This method is an O(1) operation.  
+ 
   
- If type `T` is a reference type, `null` can be pushed onto the <xref:System.Collections.Generic.Stack%601> as a placeholder, if needed.  
-  
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Peek%2A> method.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Peek%2A> method.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Stack`1" /> is empty.</exception>
@@ -636,30 +636,30 @@
         <returns>The object removed from the top of the <see cref="T:System.Collections.Generic.Stack`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is similar to the <xref:System.Collections.Generic.Stack%601.Peek%2A> method, but <xref:System.Collections.Generic.Stack%601.Peek%2A> does not modify the <xref:System.Collections.Generic.Stack%601>.  
+This method is similar to the <xref:System.Collections.Generic.Stack%601.Peek%2A> method, but <xref:System.Collections.Generic.Stack%601.Peek%2A> does not modify the <xref:System.Collections.Generic.Stack%601>.  
+ 
+If type `T` is a reference type, `null` can be pushed onto the <xref:System.Collections.Generic.Stack%601> as a placeholder, if needed.  
+ 
+<xref:System.Collections.Generic.Stack%601> is implemented as an array. This method is an O(1) operation.  
+ 
   
- If type `T` is a reference type, `null` can be pushed onto the <xref:System.Collections.Generic.Stack%601> as a placeholder, if needed.  
-  
- <xref:System.Collections.Generic.Stack%601> is implemented as an array. This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Pop%2A> method.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Pop%2A> method.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Stack`1" /> is empty.</exception>
@@ -695,32 +695,32 @@
         <summary>Inserts an object at the top of the <see cref="T:System.Collections.Generic.Stack`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.Generic.Stack%601> is implemented as an array.  
+<xref:System.Collections.Generic.Stack%601> is implemented as an array.  
+ 
+If <xref:System.Collections.Generic.Stack%601.Count%2A> already equals the capacity, the capacity of the <xref:System.Collections.Generic.Stack%601> is increased by automatically reallocating the internal array, and the existing elements are copied to the new array before the new element is added.  
+ 
+If type `T` is a reference type, `null` can be pushed onto the <xref:System.Collections.Generic.Stack%601> as a placeholder, if needed. It occupies a slot in the stack and is treated like any object.  
+ 
+If <xref:System.Collections.Generic.Stack%601.Count%2A> is less than the capacity of the stack, <xref:System.Collections.Generic.Stack%601.Push%2A> is an O(1) operation. If the capacity needs to be increased to accommodate the new element, <xref:System.Collections.Generic.Stack%601.Push%2A> becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
+ 
   
- If <xref:System.Collections.Generic.Stack%601.Count%2A> already equals the capacity, the capacity of the <xref:System.Collections.Generic.Stack%601> is increased by automatically reallocating the internal array, and the existing elements are copied to the new array before the new element is added.  
-  
- If type `T` is a reference type, `null` can be pushed onto the <xref:System.Collections.Generic.Stack%601> as a placeholder, if needed. It occupies a slot in the stack and is treated like any object.  
-  
- If <xref:System.Collections.Generic.Stack%601.Count%2A> is less than the capacity of the stack, <xref:System.Collections.Generic.Stack%601.Push%2A> is an O(1) operation. If the capacity needs to be increased to accommodate the new element, <xref:System.Collections.Generic.Stack%601.Push%2A> becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Push%2A> method.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.Push%2A> method.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -753,26 +753,26 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
-  
- <xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
-  
- This method is an O(1) operation.  
-  
+The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
+ 
+<xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -809,14 +809,14 @@
         <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
-  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -867,16 +867,16 @@
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.Stack`1" />, this property always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
-  
- Enumerating through a collection is intrinsically not a thread-safe procedure.  In the rare case where enumerations contend with write accesses, you must lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- <xref:System.Collections.ICollection.SyncRoot%2A> returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure.  In the rare case where enumerations contend with write accesses, you must lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+<xref:System.Collections.ICollection.SyncRoot%2A> returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -908,41 +908,41 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.  In the default implementation of <see cref="T:System.Collections.Generic.Stack`1" />, this property always returns the current instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
-  
- Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- <xref:System.Collections.ICollection.SyncRoot%2A> returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection. The following code shows the use of the <xref:System.Collections.ICollection.SyncRoot%2A> property for C#, C++, and Visual Basic.  
-  
+Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+<xref:System.Collections.ICollection.SyncRoot%2A> returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection. The following code shows the use of the <xref:System.Collections.ICollection.SyncRoot%2A> property for C#, C++, and Visual Basic.  
+ 
 ```csharp  
 ICollection ic = ...;  
 lock (ic.SyncRoot) {  
-   // Access the collection.  
+  // Access the collection.  
 }  
 ```  
-  
+ 
 ```vb  
 Dim ic As ICollection = ...  
 SyncLock ic.SyncRoot  
-   ' Access the collection.  
+  ' Access the collection.  
 End SyncLock  
 ```  
-  
+ 
 ```cpp#  
 ICollection^ ic = ...;  
 try {  
-   Monitor::Enter(ic->SyncRoot);  
-   // Access the collection.  
+  Monitor::Enter(ic->SyncRoot);  
+  // Access the collection.  
 }  
 finally {  
-   Monitor::Exit(ic->SyncRoot);  
+  Monitor::Exit(ic->SyncRoot);  
 }  
 ```  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -975,26 +975,26 @@ finally {
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
-  
- This method is an O(1) operation.  
-  
+The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1027,28 +1027,28 @@ finally {
         <returns>A new array containing copies of the elements of the <see cref="T:System.Collections.Generic.Stack`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements are copied onto the array in last-in-first-out (LIFO) order, similar to the order of the elements returned by a succession of calls to <xref:System.Collections.Generic.Stack%601.Pop%2A>.  
+The elements are copied onto the array in last-in-first-out (LIFO) order, similar to the order of the elements returned by a succession of calls to <xref:System.Collections.Generic.Stack%601.Pop%2A>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
+ 
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.ToArray%2A> method.  
-  
- The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
-  
- The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
-  
- An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
-  
- The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
-  
- [!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
- [!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
-  
+The following code example demonstrates several methods of the <xref:System.Collections.Generic.Stack%601> generic class, including the <xref:System.Collections.Generic.Stack%601.ToArray%2A> method.  
+ 
+The code example creates a stack of strings with default capacity and uses the <xref:System.Collections.Generic.Stack%601.Push%2A> method to push five strings onto the stack. The elements of the stack are enumerated, which does not change the state of the stack. The <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop the first string off the stack. The <xref:System.Collections.Generic.Stack%601.Peek%2A> method is used to look at the next item on the stack, and then the <xref:System.Collections.Generic.Stack%601.Pop%2A> method is used to pop it off.  
+ 
+The <xref:System.Collections.Generic.Stack%601.ToArray%2A> method is used to create an array and copy the stack elements to it, then the array is passed to the <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the stack with the order of the elements reversed. The elements of the copy are displayed.  
+ 
+An array twice the size of the stack is created, and the <xref:System.Collections.Generic.Stack%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Stack%601.%23ctor%2A> constructor is used again to create a copy of the stack with the order of elements reversed; thus, the three null elements are at the end.  
+ 
+The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
+ 
+[!code-csharp[Generic.Stack#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs#1)]
+[!code-vb[Generic.Stack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1080,14 +1080,14 @@ finally {
         <summary>Sets the capacity to the actual number of elements in the <see cref="T:System.Collections.Generic.Stack`1" />, if that number is less than 90 percent of current capacity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to minimize a collection's memory overhead if no new elements will be added to the collection. The cost of reallocating and copying a large <xref:System.Collections.Generic.Stack%601> can be considerable, however, so the <xref:System.Collections.Generic.Stack%601.TrimExcess%2A> method does nothing if the list is at more than 90 percent of capacity. This avoids incurring a large reallocation cost for a relatively small gain.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
-  
- To reset a <xref:System.Collections.Generic.Stack%601> to its initial state, call the <xref:System.Collections.Generic.Stack%601.Clear%2A> method before calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A> method. Trimming an empty <xref:System.Collections.Generic.Stack%601> sets the capacity of the <xref:System.Collections.Generic.Stack%601> to the default capacity.  
-  
+This method can be used to minimize a collection's memory overhead if no new elements will be added to the collection. The cost of reallocating and copying a large <xref:System.Collections.Generic.Stack%601> can be considerable, however, so the <xref:System.Collections.Generic.Stack%601.TrimExcess%2A> method does nothing if the list is at more than 90 percent of capacity. This avoids incurring a large reallocation cost for a relatively small gain.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
+ 
+To reset a <xref:System.Collections.Generic.Stack%601> to its initial state, call the <xref:System.Collections.Generic.Stack%601.Clear%2A> method before calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A> method. Trimming an empty <xref:System.Collections.Generic.Stack%601> sets the capacity of the <xref:System.Collections.Generic.Stack%601> to the default capacity.  
+ 
  ]]></format>
         </remarks>
       </Docs>

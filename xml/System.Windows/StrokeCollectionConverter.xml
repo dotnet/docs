@@ -14,22 +14,22 @@
     <summary>Converts a <see cref="T:System.Windows.Ink.StrokeCollection" /> to a string.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.StrokeCollectionConverter> converts a <xref:System.Windows.Ink.StrokeCollection> to a string that represents the <xref:System.Windows.Ink.StrokeCollection> in base-64, encoded Ink Serialized Format (ISF). It is useful to store ink data as base-64, encoded ISF when it is not possible to store raw byte data, such as in Web pages.  
-  
+The <xref:System.Windows.StrokeCollectionConverter> converts a <xref:System.Windows.Ink.StrokeCollection> to a string that represents the <xref:System.Windows.Ink.StrokeCollection> in base-64, encoded Ink Serialized Format (ISF). It is useful to store ink data as base-64, encoded ISF when it is not possible to store raw byte data, such as in Web pages.  
+ 
 <a name="XAMLTextUsage_StrokeCollectionConverter"></a>   
 ## XAML Text Usage  
-   
   
+ 
 ## Examples  
- The following example demonstrates how to convert a base-64, encoded ISF string to a <xref:System.Windows.Ink.StrokeCollection>. This assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[InkEraser#8](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#8)]
- [!code-vb[InkEraser#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#8)]  
+The following example demonstrates how to convert a base-64, encoded ISF string to a <xref:System.Windows.Ink.StrokeCollection>. This assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[InkEraser#8](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#8)]
+[!code-vb[InkEraser#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#8)]  
 [!code-csharp[InkEraser#3](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#3)]
 [!code-vb[InkEraser#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#3)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -124,20 +124,20 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> converted from <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.StrokeCollectionConverter.ConvertFrom%2A> method returns `null` if `value` is not a <xref:System.String>.  
+The <xref:System.Windows.StrokeCollectionConverter.ConvertFrom%2A> method returns `null` if `value` is not a <xref:System.String>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to convert a base-64, encoded Ink Serialized Format (ISF) string to a <xref:System.Windows.Ink.StrokeCollection>. This assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[InkEraser#8](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#8)]
- [!code-vb[InkEraser#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#8)]  
+The following example demonstrates how to convert a base-64, encoded Ink Serialized Format (ISF) string to a <xref:System.Windows.Ink.StrokeCollection>. This assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[InkEraser#8](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#8)]
+[!code-vb[InkEraser#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#8)]  
 [!code-csharp[InkEraser#3](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#3)]
 [!code-vb[InkEraser#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#3)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,12 +174,12 @@
         <returns>An object that represents the specified <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.StrokeCollectionConverter.ConvertTo%2A> method returns `null` if `value` is not a <xref:System.Windows.Ink.StrokeCollection>, or if `destinationType` is not <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>.  
-  
- The <xref:System.Windows.StrokeCollectionConverter.ConvertTo%2A> method returns a base-64, encoded Ink Serialized Format (ISF). It is useful to store ink data as base-64, encoded ISF when it is not possible to store raw byte data, such as in Web pages.  
-  
+The <xref:System.Windows.StrokeCollectionConverter.ConvertTo%2A> method returns `null` if `value` is not a <xref:System.Windows.Ink.StrokeCollection>, or if `destinationType` is not <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>.  
+ 
+The <xref:System.Windows.StrokeCollectionConverter.ConvertTo%2A> method returns a base-64, encoded Ink Serialized Format (ISF). It is useful to store ink data as base-64, encoded ISF when it is not possible to store raw byte data, such as in Web pages.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

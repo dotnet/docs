@@ -36,22 +36,22 @@
         <returns>A floating-point representation of the performance counter's calculated value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue%28System.Diagnostics.CounterSample%29> method overload returns meaningful results only for performance counters of the following <xref:System.Diagnostics.PerformanceCounterType>:  
-  
+The <xref:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue%28System.Diagnostics.CounterSample%29> method overload returns meaningful results only for performance counters of the following <xref:System.Diagnostics.PerformanceCounterType>:  
+ 
 -   <xref:System.Diagnostics.PerformanceCounterType>  
-  
+ 
 -   <xref:System.Diagnostics.PerformanceCounterType>  
-  
+ 
 -   <xref:System.Diagnostics.PerformanceCounterType>  
-  
+ 
 -   <xref:System.Diagnostics.PerformanceCounterType>  
-  
+ 
 -   <xref:System.Diagnostics.PerformanceCounterType>  
-  
- For other counter types, this overload always returns a value of 0 (zero).  
-  
+ 
+For other counter types, this overload always returns a value of 0 (zero).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,14 +84,14 @@
         <returns>A floating-point representation of the performance counter's calculated value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue%28System.Diagnostics.CounterSample%2CSystem.Diagnostics.CounterSample%29> method overload to calculate the value of two raw counter samples.  
-  
- [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
- [!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
- [!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue%28System.Diagnostics.CounterSample%2CSystem.Diagnostics.CounterSample%29> method overload to calculate the value of two raw counter samples.  
+ 
+[!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
+[!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
+[!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">

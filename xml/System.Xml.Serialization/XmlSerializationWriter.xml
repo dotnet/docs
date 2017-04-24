@@ -19,12 +19,12 @@
     <summary>Represents an abstract class used for controlling serialization by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization that is derived from the abstract <xref:System.Xml.Serialization.XmlSerializationWriter> class. <xref:System.Xml.Serialization.XmlSerializationWriter> is also implemented within the .NET Framework for serialization of <xref:System.Web.Services.Discovery.DiscoveryDocument> and <xref:System.Web.Services.Description.ServiceDescription> objects into XML documents.  
-  
- You should not derive classes from <xref:System.Xml.Serialization.XmlSerializationWriter>. Instead, call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method.  
-  
+During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization that is derived from the abstract <xref:System.Xml.Serialization.XmlSerializationWriter> class. <xref:System.Xml.Serialization.XmlSerializationWriter> is also implemented within the .NET Framework for serialization of <xref:System.Web.Services.Discovery.DiscoveryDocument> and <xref:System.Web.Services.Description.ServiceDescription> objects into XML documents.  
+ 
+You should not derive classes from <xref:System.Xml.Serialization.XmlSerializationWriter>. Instead, call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -82,16 +82,16 @@
         <summary>Stores an implementation of the <see cref="T:System.Xml.Serialization.XmlSerializationWriteCallback" /> delegate and the type it applies to, for a later invocation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization that is derived from <xref:System.Xml.Serialization.XmlSerializationWriter>. During this process, the .NET Framework generates write methods that implement the <xref:System.Xml.Serialization.XmlSerializationWriteCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized via SOAP-encoded XML and are not root elements. Then, as necessary, a write method is called during serialization.  
-  
- You should not directly create an instance of <xref:System.Xml.Serialization.XmlSerializationWriteCallback>.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization that is derived from <xref:System.Xml.Serialization.XmlSerializationWriter>. During this process, the .NET Framework generates write methods that implement the <xref:System.Xml.Serialization.XmlSerializationWriteCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized via SOAP-encoded XML and are not root elements. Then, as necessary, a write method is called during serialization.  
+ 
+You should not directly create an instance of <xref:System.Xml.Serialization.XmlSerializationWriteCallback>.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -129,10 +129,10 @@
         <returns>The newly created exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -222,10 +222,10 @@
         <returns>The newly created exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -291,10 +291,10 @@
         <returns>The newly created exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -328,10 +328,10 @@
         <returns>The newly created exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -363,10 +363,10 @@
         <returns>The newly created exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -398,10 +398,10 @@
         <returns>The newly created exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -430,10 +430,10 @@
           <see langword="true" /> if the <see cref="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(System.Xml.XmlQualifiedName)" /> method returns an encoded name; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlConvert.EncodeName%2A> method writes valid XML from invalid sources. For example, the <xref:System.Data.DataColumn.ColumnName%2A> property of the <xref:System.Data.DataColumn> class can contain spaces, which are invalid as XML. The <xref:System.Xml.XmlConvert.DecodeName%2A> method reads the encoded XML and restores it to the original value. However, the <xref:System.Xml.Schema.XmlSchema.Read%2A> method of the <xref:System.Xml.Schema.XmlSchema> cannot read such encoded XML. In that case, set the <xref:System.Xml.Serialization.XmlSerializationWriter.EscapeName%2A> property to `false` to disable the encoding of the XML.  
-  
+The <xref:System.Xml.XmlConvert.EncodeName%2A> method writes valid XML from invalid sources. For example, the <xref:System.Data.DataColumn.ColumnName%2A> property of the <xref:System.Data.DataColumn> class can contain spaces, which are invalid as XML. The <xref:System.Xml.XmlConvert.DecodeName%2A> method reads the encoded XML and restores it to the original value. However, the <xref:System.Xml.Schema.XmlSchema.Read%2A> method of the <xref:System.Xml.Schema.XmlSchema> cannot read such encoded XML. In that case, set the <xref:System.Xml.Serialization.XmlSerializationWriter.EscapeName%2A> property to `false` to disable the encoding of the XML.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -465,12 +465,12 @@
         <returns>The same byte array that was passed in as an argument.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- Rather than return a string as other similar "from" methods, the static <xref:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64%2A> method returns the original `byte[]` object to improve performance and conserve memory.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+Rather than return a string as other similar "from" methods, the static <xref:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64%2A> method returns the original `byte[]` object to improve performance and conserve memory.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -502,12 +502,12 @@
         <returns>The byte array value converted to a string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -539,12 +539,12 @@
         <returns>The <see cref="T:System.Char" /> value converted to a string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromChar%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromChar%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -576,12 +576,12 @@
         <returns>A string representation of the <see cref="T:System.DateTime" /> that shows the date but no time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromDate%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromDate%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -613,12 +613,12 @@
         <returns>A string representation of the <see cref="T:System.DateTime" /> that shows the date and time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromDateTime%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromDateTime%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -654,12 +654,12 @@
         <returns>A string that consists of delimited identifiers, where each represents a member from the set enumerator list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromEnum%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromEnum%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -697,10 +697,10 @@
         <returns>A string that consists of delimited identifiers, where each item is one of the values set by the bitwise operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -732,12 +732,12 @@
         <returns>A string representation of the <see cref="T:System.DateTime" /> object that shows the time but no date.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromTime%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromTime%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -769,12 +769,12 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlName%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlName%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -806,12 +806,12 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of the <xref:System.Xml.Serialization.XmlSerializationWriter> class are intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlNCName%2A> method is static.  
-  
+The protected members of the <xref:System.Xml.Serialization.XmlSerializationWriter> class are intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlNCName%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -843,12 +843,12 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmToken%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmToken%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -880,12 +880,12 @@
         <returns>An encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmTokens%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmTokens%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -917,10 +917,10 @@
         <returns>An XML qualified name, with invalid characters replaced by escape sequences.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -979,18 +979,18 @@
         <summary>Initializes an instances of the <see cref="T:System.Xml.Serialization.XmlSerializationWriteCallback" /> delegate to serialize SOAP-encoded XML data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization that is derived from <xref:System.Xml.Serialization.XmlSerializationWriter>. During this process, the .NET Framework generates write methods that implement the <xref:System.Xml.Serialization.XmlSerializationWriteCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized using SOAP-encoded XML and are not root elements. Then, as necessary, a write method is called during serialization.  
-  
- The abstract <xref:System.Xml.Serialization.XmlSerializationWriter.InitCallbacks%2A> method is where the temporary derived class creates an instance of and initializes write callback methods.  
-  
- You should not directly create an instance of <xref:System.Xml.Serialization.XmlSerializationWriteCallback>.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization that is derived from <xref:System.Xml.Serialization.XmlSerializationWriter>. During this process, the .NET Framework generates write methods that implement the <xref:System.Xml.Serialization.XmlSerializationWriteCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized using SOAP-encoded XML and are not root elements. Then, as necessary, a write method is called during serialization.  
+ 
+The abstract <xref:System.Xml.Serialization.XmlSerializationWriter.InitCallbacks%2A> method is where the temporary derived class creates an instance of and initializes write callback methods.  
+ 
+You should not directly create an instance of <xref:System.Xml.Serialization.XmlSerializationWriteCallback>.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1018,10 +1018,10 @@
         <value>An <see cref="T:System.Collections.ArrayList" /> that contains the namespaces and prefix pairs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1053,12 +1053,12 @@
         <returns>A dynamically generated assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.ResolveDynamicAssembly%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.ResolveDynamicAssembly%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1086,14 +1086,14 @@
         <summary>Initializes object references only while serializing a SOAP-encoded SOAP message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element and to be referenced any number of times by substitute elements. The <xref:System.Xml.Serialization.XmlSerializationWriter.TopLevelElement%2A> method helps keep track of the objects that can be serialized as `multiRef` elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element and to be referenced any number of times by substitute elements. The <xref:System.Xml.Serialization.XmlSerializationWriter.TopLevelElement%2A> method helps keep track of the objects that can be serialized as `multiRef` elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1126,10 +1126,10 @@
         <summary>Instructs an <see cref="T:System.Xml.XmlWriter" /> object to write an XML attribute that has no namespace specified for its name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1162,10 +1162,10 @@
         <summary>Instructs the <see cref="T:System.Xml.XmlWriter" /> to write an XML attribute that has no namespace specified for its name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1200,10 +1200,10 @@
         <summary>Instructs an <see cref="T:System.Xml.XmlWriter" /> object to write an XML attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1238,10 +1238,10 @@
         <summary>Writes an XML attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1278,10 +1278,10 @@
         <summary>Writes an XML attribute where the namespace prefix is provided manually.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1322,12 +1322,12 @@
         <summary>Writes an XML node object within the body of a named XML element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteElementEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteElementEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1368,12 +1368,12 @@
         <summary>Instructs an <see cref="T:System.Xml.XmlWriter" /> object to write an <see cref="T:System.Xml.XmlNode" /> object within the body of a named XML element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteElementLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteElementLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1406,10 +1406,10 @@
         <summary>Writes an XML element with a specified qualified name in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1444,10 +1444,10 @@
         <summary>Writes an XML element with a specified qualified name in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1482,10 +1482,10 @@
         <summary>Writes an XML element with a specified qualified name in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1522,10 +1522,10 @@
         <summary>Writes an XML element with a specified qualified name in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1558,10 +1558,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1596,10 +1596,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1634,10 +1634,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1674,10 +1674,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1710,10 +1710,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1746,10 +1746,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1784,10 +1784,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1822,10 +1822,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1860,10 +1860,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1898,10 +1898,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1938,10 +1938,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1978,10 +1978,10 @@
         <summary>Writes an XML element with a specified value in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2012,10 +2012,10 @@
         <summary>Writes an XML element whose body is empty.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2048,10 +2048,10 @@
         <summary>Writes an XML element whose body is empty.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2079,10 +2079,10 @@
         <summary>Writes a <see langword="&lt;closing&gt;" /> element tag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2113,10 +2113,10 @@
         <summary>Writes a <see langword="&lt;closing&gt;" /> element tag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2147,14 +2147,14 @@
         <summary>Writes an <see langword="id" /> attribute that appears in a SOAP-encoded <see langword="multiRef" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times by `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times by `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2185,10 +2185,10 @@
         <summary>Writes the namespace declaration attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2225,14 +2225,14 @@
         <summary>Writes an XML element whose body contains a valid XML qualified name. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2267,14 +2267,14 @@
         <summary>Writes an XML element whose body contains a valid XML qualified name. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2311,14 +2311,14 @@
         <summary>Writes an XML element that contains a string as the body. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2355,14 +2355,14 @@
         <summary>Writes a byte array as the body of an XML element. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2399,14 +2399,14 @@
         <summary>Writes an XML element that contains a string as the body. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2441,14 +2441,14 @@
         <summary>Writes an XML element that contains a string as the body. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2483,14 +2483,14 @@
         <summary>Writes a byte array as the body of an XML element. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2525,14 +2525,14 @@
         <summary>Writes an XML element that contains a string as the body. <see cref="T:System.Xml.XmlWriter" /> inserts a <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2563,14 +2563,14 @@
         <summary>Writes an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2603,14 +2603,14 @@
         <summary>Writes an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2641,14 +2641,14 @@
         <summary>Writes an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2681,14 +2681,14 @@
         <summary>Writes an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2723,14 +2723,14 @@
         <summary>Writes a SOAP message XML element that can contain a reference to a <see langword="&lt;multiRef&gt;" /> XML element for a given object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `<multiRef>` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `<multiRef>` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2767,14 +2767,14 @@
         <summary>Writes a SOAP message XML element that can contain a reference to a <see langword="&lt;multiRef&gt;" /> XML element for a given object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `<multiRef>` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `<multiRef>` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2814,14 +2814,14 @@
         <summary>Writes a SOAP message XML element that can contain a reference to a <see langword="&lt;multiRef&gt;" /> XML element for a given object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2864,14 +2864,14 @@
         <summary>Writes a SOAP message XML element that can contain a reference to a <see langword="multiRef" /> XML element for a given object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2899,10 +2899,10 @@
         <value>The <see cref="T:System.Xml.XmlWriter" /> used by the class instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2930,14 +2930,14 @@
         <summary>Serializes objects into SOAP-encoded <see langword="multiRef" /> XML elements in a SOAP message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2972,14 +2972,14 @@
         <summary>Writes a SOAP message XML element that contains a reference to a <see langword="multiRef " />element for a given object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3017,14 +3017,14 @@
         <summary>Writes a SOAP message XML element that contains a reference to a <see langword="multiRef" /> element for a given object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3057,12 +3057,12 @@
         <summary>Writes a SOAP 1.2 RPC result element with a specified qualified name in its body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The `result` element is defined in the namespace "http://www.w3.org/2002/12/soap-rpc".  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The `result` element is defined in the namespace "http://www.w3.org/2002/12/soap-rpc".  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3100,10 +3100,10 @@
         <summary>Writes an object that uses custom XML formatting as an XML element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3168,10 +3168,10 @@
         <summary>Writes the XML declaration if the writer is positioned at the start of an XML document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3202,10 +3202,10 @@
         <summary>Writes an opening element tag, including any attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3238,10 +3238,10 @@
         <summary>Writes an opening element tag, including any attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3277,10 +3277,10 @@
         <summary>Writes an opening element tag, including any attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3315,10 +3315,10 @@
         <summary>Writes an opening element tag, including any attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3356,10 +3356,10 @@
         <summary>Writes an opening element tag, including any attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3433,12 +3433,12 @@
         <summary>Writes an XML element whose text body is a value of a simple XML Schema data type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The `xsi:type` attribute explicitly indicates the XML Schema data type. The prefix `xsi` refers to the XML Schema instance namespace.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The `xsi:type` attribute explicitly indicates the XML Schema data type. The prefix `xsi` refers to the XML Schema instance namespace.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3469,10 +3469,10 @@
         <summary>Writes a base-64 byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3503,10 +3503,10 @@
         <summary>Writes a specified string value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3537,10 +3537,10 @@
         <summary>Writes the specified <see cref="T:System.Xml.XmlNode" /> as an XML attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3573,10 +3573,10 @@
         <summary>Writes the specified <see cref="T:System.Xml.XmlNode" /> object as an XML attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3609,12 +3609,12 @@
         <summary>Writes an <see langword="xsi:type" /> attribute for an XML element that is being serialized into a document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The `xsi:type` attribute explicitly indicates the XML Schema data type. The prefix `xsi` refers to the XML Schema instance namespace.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The `xsi:type` attribute explicitly indicates the XML Schema data type. The prefix `xsi` refers to the XML Schema instance namespace.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -3630,10 +3630,10 @@
         <summary>Takes a numeric enumeration value and returns a string that consists of delimited identifiers that represent the enumeration members that have been set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>

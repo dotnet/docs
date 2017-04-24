@@ -14,23 +14,23 @@
     <summary>Controls how a document is printed from a Windows Forms application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class implements a <xref:System.Drawing.Printing.PrintController> and adds a status dialog box. A print controller specifies how a <xref:System.Drawing.Printing.PrintDocument> is printed.  
+This class implements a <xref:System.Drawing.Printing.PrintController> and adds a status dialog box. A print controller specifies how a <xref:System.Drawing.Printing.PrintDocument> is printed.  
+ 
+For a list of initial property values for an instance of the <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class, see the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.%23ctor%2A> constructor.  
+ 
+For more information about printing with Windows Forms, see the <xref:System.Drawing.Printing> namespace overview. If you want to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
+ 
   
- For a list of initial property values for an instance of the <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class, see the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.%23ctor%2A> constructor.  
-  
- For more information about printing with Windows Forms, see the <xref:System.Drawing.Printing> namespace overview. If you want to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to create a new <xref:System.Drawing.Printing.PrintController> and assign it to the <xref:System.Drawing.Printing.PrintController> property. The example assumes that you have added the <xref:System.Drawing.Printing> namespace to the class and that you have created a new instance of a <xref:System.Drawing.Printing.PrintDocument> as `myDocumentPrinter`.  
-  
- [!code-cpp[Classic PrintControllerWithStatusDialog Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintControllerWithStatusDialog Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PrintControllerWithStatusDialog Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintControllerWithStatusDialog Example/CS/source.cs#1)]
- [!code-vb[Classic PrintControllerWithStatusDialog Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintControllerWithStatusDialog Example/VB/source.vb#1)]  
-  
+The following code example shows how to create a new <xref:System.Drawing.Printing.PrintController> and assign it to the <xref:System.Drawing.Printing.PrintController> property. The example assumes that you have added the <xref:System.Drawing.Printing> namespace to the class and that you have created a new instance of a <xref:System.Drawing.Printing.PrintDocument> as `myDocumentPrinter`.  
+ 
+[!code-cpp[Classic PrintControllerWithStatusDialog Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintControllerWithStatusDialog Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PrintControllerWithStatusDialog Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintControllerWithStatusDialog Example/CS/source.cs#1)]
+[!code-vb[Classic PrintControllerWithStatusDialog Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintControllerWithStatusDialog Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,10 +91,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> is used for print preview, otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.IsPreview%2A> checks the <xref:System.Drawing.Printing.PrintController.IsPreview%2A> property of the underlying controller.  
-  
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.IsPreview%2A> checks the <xref:System.Drawing.Printing.PrintController.IsPreview%2A> property of the underlying controller.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,14 +121,14 @@
         <summary>Completes the control sequence that determines when and how to print a page of a document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPage%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
-  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. If an exception is thrown inside a <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of a <xref:System.Drawing.Printing.PrintDocument>, <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> is not called.  
-  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. (Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> to set how to print a page in a document. For example, you can adjust page settings separately for each page.) <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method deallocates the object.  
-  
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPage%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+ 
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. If an exception is thrown inside a <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of a <xref:System.Drawing.Printing.PrintDocument>, <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> is not called.  
+ 
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. (Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> to set how to print a page in a document. For example, you can adjust page settings separately for each page.) <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method deallocates the object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,14 +155,14 @@
         <summary>Completes the control sequence that determines when and how to print a document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPrint%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
-  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.  
-  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. (Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> to determine when and how to print a document. For example, you can delay printing for 30 minutes or adjust the printer settings for the document.) The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> deallocates the object.  
-  
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPrint%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+ 
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.  
+ 
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. (Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> to determine when and how to print a document. For example, you can delay printing for 30 minutes or adjust the printer settings for the document.) The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> deallocates the object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,16 +190,16 @@
         <returns>A <see cref="T:System.Drawing.Graphics" /> object that represents a page from a <see cref="T:System.Drawing.Printing.PrintDocument" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPage%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
-  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method is called immediately before the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
-  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method deallocates the object.  
-  
- Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> to set how to print a page in a document. For example, you can adjust page settings separately for each page.  
-  
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPage%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+ 
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method is called immediately before the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
+ 
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method deallocates the object.  
+ 
+Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> to set how to print a page in a document. For example, you can adjust page settings separately for each page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,16 +226,16 @@
         <summary>Begins the control sequence that determines when and how to print a document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPrint%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
-  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event.  
-  
- Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> to determine when and how to print a document. For example, you can delay printing for 30 minutes or adjust the printer settings for the document. <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method deallocates the object.  
-  
- <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is a good place to verify that <xref:System.Drawing.Printing.PrinterSettings> are valid.  
-  
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPrint%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+ 
+The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event.  
+ 
+Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> to determine when and how to print a document. For example, you can delay printing for 30 minutes or adjust the printer settings for the document. <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method deallocates the object.  
+ 
+<xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is a good place to verify that <xref:System.Drawing.Printing.PrinterSettings> are valid.  
+ 
  ]]></format>
         </remarks>
       </Docs>

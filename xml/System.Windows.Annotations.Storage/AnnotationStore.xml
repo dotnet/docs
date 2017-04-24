@@ -54,10 +54,10 @@
         <summary>Adds a new <see cref="T:System.Windows.Annotations.Annotation" /> to the store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a new <xref:System.Windows.Annotations.Annotation> is added to the store its [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] <xref:System.Windows.Annotations.Annotation.Id%2A> property is set to a new value.  When <xref:System.Windows.Annotations.Storage.AnnotationStore.AddAnnotation%2A> is called, its <xref:System.Windows.Annotations.Annotation.Id%2A> property is checked to see if the <xref:System.Windows.Annotations.Annotation> already has been added to the store.  If the <xref:System.Windows.Annotations.Annotation> already has been added and exists in the store (as determined by its <xref:System.Windows.Annotations.Annotation.Id%2A> property) an <xref:System.ArgumentException> error is thrown.  
-  
+When a new <xref:System.Windows.Annotations.Annotation> is added to the store its [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] <xref:System.Windows.Annotations.Annotation.Id%2A> property is set to a new value.  When <xref:System.Windows.Annotations.Storage.AnnotationStore.AddAnnotation%2A> is called, its <xref:System.Windows.Annotations.Annotation.Id%2A> property is checked to see if the <xref:System.Windows.Annotations.Annotation> already has been added to the store.  If the <xref:System.Windows.Annotations.Annotation> already has been added and exists in the store (as determined by its <xref:System.Windows.Annotations.Annotation.Id%2A> property) an <xref:System.ArgumentException> error is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -83,10 +83,10 @@
         <summary>Occurs when an anchor on any <see cref="T:System.Windows.Annotations.Annotation" /> in the store changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged> event can be used to monitor changes to the annotation <xref:System.Windows.Annotations.Annotation.Anchors%2A> contained in the store without the need to register on each <xref:System.Windows.Annotations.Annotation> individually.  
-  
+The <xref:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged> event can be used to monitor changes to the annotation <xref:System.Windows.Annotations.Annotation.Anchors%2A> contained in the store without the need to register on each <xref:System.Windows.Annotations.Annotation> individually.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <summary>Occurs when an author on any <see cref="T:System.Windows.Annotations.Annotation" /> in the store changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged> event can be used to monitor changes to the annotation <xref:System.Windows.Annotations.Annotation.Authors%2A> contained in the store without the need to register on each <xref:System.Windows.Annotations.Annotation> individually.  
-  
+The <xref:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged> event can be used to monitor changes to the annotation <xref:System.Windows.Annotations.Annotation.Authors%2A> contained in the store without the need to register on each <xref:System.Windows.Annotations.Annotation> individually.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,12 +133,12 @@
           <see langword="true" /> if data in annotation buffers is to be written immediately to the physical data store for each operation; otherwise, <see langword="false" /> if data in the annotation buffers is to be written when the application explicitly calls <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Flush" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications that use an explicit-save model can set <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `false` and call <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> directly when appropriate.  
-  
- Applications that use an implicit-save model can set <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `true` to cause <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> to be called automatically after every store operation (add, delete, or modify).  
-  
+Applications that use an explicit-save model can set <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `false` and call <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> directly when appropriate.  
+ 
+Applications that use an implicit-save model can set <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `true` to cause <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> to be called automatically after every store operation (add, delete, or modify).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <summary>Occurs when a cargo on any <see cref="T:System.Windows.Annotations.Annotation" /> in the store changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged> event can be used to monitor changes to the annotation <xref:System.Windows.Annotations.Annotation.Cargos%2A> contained in the store without the need to register on each <xref:System.Windows.Annotations.Annotation> individually.  
-  
+The <xref:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged> event can be used to monitor changes to the annotation <xref:System.Windows.Annotations.Annotation.Cargos%2A> contained in the store without the need to register on each <xref:System.Windows.Annotations.Annotation> individually.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,12 +188,12 @@
         <returns>The annotation that was deleted; otherwise, <see langword="null" /> if an annotation with the specified <paramref name="annotationId" /> was not found in the store.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Windows.Annotations.Storage.AnnotationStore.DeleteAnnotation%2A> and <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> methods.  
-  
- [!code-csharp[DocumentSerialize#DocSerDelete](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserdelete)]  
-  
+The following example shows use of the <xref:System.Windows.Annotations.Storage.AnnotationStore.DeleteAnnotation%2A> and <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> methods.  
+ 
+[!code-csharp[DocumentSerialize#DocSerDelete](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserdelete)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -217,15 +217,15 @@
         <summary>Releases all managed and unmanaged resources used by the store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications should call <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> when finished with the <xref:System.Windows.Annotations.Storage.AnnotationStore>.  After calling <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> the application can release all references to the <xref:System.Windows.Annotations.Storage.AnnotationStore> to allow the garbage collector to reclaim the memory that the <xref:System.Windows.Annotations.Storage.AnnotationStore> was occupying.  For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
- The public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> method calls the protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>`(Boolean)` method with the `disposing` parameter of `true` to release all managed and unmanaged resources.  
-  
+Applications should call <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> when finished with the <xref:System.Windows.Annotations.Storage.AnnotationStore>.  After calling <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> the application can release all references to the <xref:System.Windows.Annotations.Storage.AnnotationStore> to allow the garbage collector to reclaim the memory that the <xref:System.Windows.Annotations.Storage.AnnotationStore> was occupying.  For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
+The public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> method calls the protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>`(Boolean)` method with the `disposing` parameter of `true` to release all managed and unmanaged resources.  
+ 
 > [!NOTE]
 >  Call <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> before the last reference to the <xref:System.Windows.Annotations.Storage.AnnotationStore> is released.  If <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> is not called, <xref:System.Windows.Annotations.Storage.AnnotationStore> resources will not be freed until the garbage collector calls the store's <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,12 +251,12 @@
         <summary>Releases the unmanaged resources used by the store and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> method is called by the public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>and <xref:System.Object.Finalize%2A> methods.  The public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> invokes the protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>`(Boolean)` method with the `disposing` parameter set to `true`.  <xref:System.Object.Finalize%2A> invokes <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> releases all resources held by any managed objects that the <xref:System.Windows.Annotations.Storage.AnnotationStore> references.  <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> also invokes the `Dispose()` method of each referenced object.  
-  
+This protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> method is called by the public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>and <xref:System.Object.Finalize%2A> methods.  The public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> invokes the protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>`(Boolean)` method with the `disposing` parameter set to `true`.  <xref:System.Object.Finalize%2A> invokes <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> releases all resources held by any managed objects that the <xref:System.Windows.Annotations.Storage.AnnotationStore> references.  <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> also invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -284,12 +284,12 @@
         <summary>Guarantees that <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" /> will eventually be called for this store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides base <xref:System.Object.Finalize%2A> method.  The application program should not call <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> directly.  <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> is automatically invoked during garbage collection unless disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
-  
+This method overrides base <xref:System.Object.Finalize%2A> method.  The application program should not call <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> directly.  <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> is automatically invoked during garbage collection unless disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+ 
+For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,24 +311,24 @@
         <summary>Forces any annotation data retained in internal buffers to be written to the underlying storage device.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications that use an explicit-save model can set <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `false` and call <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> directly when appropriate.  
+Applications that use an explicit-save model can set <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `false` and call <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> directly when appropriate.  
+ 
+Applications that use an implicit-save model can set the <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `true` to cause <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> to be called automatically after every store operation (add, delete, or modify).  
+ 
   
- Applications that use an implicit-save model can set the <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `true` to cause <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> to be called automatically after every store operation (add, delete, or modify).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> method when the application closes the <xref:System.Windows.Annotations.AnnotationService>.  
-  
- [!code-csharp[DocViewerAnnotationsXps#StopAnnotations](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/AnnotationsHelperXps.cs#stopannotations)]
- [!code-vb[DocViewerAnnotationsXps#StopAnnotations](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/annotationshelperxps.vb#stopannotations)]  
-  
- The following example shows use of the <xref:System.Windows.Annotations.Storage.AnnotationStore.DeleteAnnotation%2A> and <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> methods.  
-  
- [!code-csharp[DocumentSerialize#DocSerDelete](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserdelete)]  
-  
+The following example shows how to use the <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> method when the application closes the <xref:System.Windows.Annotations.AnnotationService>.  
+ 
+[!code-csharp[DocViewerAnnotationsXps#StopAnnotations](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/AnnotationsHelperXps.cs#stopannotations)]
+[!code-vb[DocViewerAnnotationsXps#StopAnnotations](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/annotationshelperxps.vb#stopannotations)]  
+ 
+The following example shows use of the <xref:System.Windows.Annotations.Storage.AnnotationStore.DeleteAnnotation%2A> and <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> methods.  
+ 
+[!code-csharp[DocumentSerialize#DocSerDelete](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserdelete)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -377,12 +377,12 @@
         <returns>The list of all annotations currently contained in the store.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations%2A> method to determine if there are any annotations contained in the store.  
-  
- [!code-csharp[DocumentSerialize#DocSerCloseFile](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserclosefile)]  
-  
+The following example shows how to use the <xref:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations%2A> method to determine if there are any annotations contained in the store.  
+ 
+[!code-csharp[DocumentSerialize#DocSerCloseFile](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserclosefile)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -410,10 +410,10 @@
         <returns>The list of annotations that have <see cref="P:System.Windows.Annotations.Annotation.Anchors" /> with locators that start and match the given <paramref name="anchorLocator" />; otherwise, <see langword="null" /> if no matching annotations were found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations%2A> method internally uses the <xref:System.Windows.Annotations.ContentLocator.StartsWith%2A> method of the <xref:System.Windows.Annotations.ContentLocator> class to search and match for the annotations to return.  
-  
+This <xref:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations%2A> method internally uses the <xref:System.Windows.Annotations.ContentLocator.StartsWith%2A> method of the <xref:System.Windows.Annotations.ContentLocator> class to search and match for the annotations to return.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,16 +537,16 @@
         <summary>Occurs when an <see cref="T:System.Windows.Annotations.Annotation" /> is added to or deleted from the store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to add an event delegate for the <xref:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged> event.  
-  
- [!code-csharp[DocumentSerialize#DocSerEnableAnn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserenableann)]  
-  
- The following example shows operation of the <xref:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged> event delegate.  
-  
- [!code-csharp[DocumentSerialize#DocSerContentChanged](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docsercontentchanged)]  
-  
+The following example shows how to add an event delegate for the <xref:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged> event.  
+ 
+[!code-csharp[DocumentSerialize#DocSerEnableAnn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserenableann)]  
+ 
+The following example shows operation of the <xref:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged> event delegate.  
+ 
+[!code-csharp[DocumentSerialize#DocSerContentChanged](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docsercontentchanged)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -578,12 +578,12 @@
         <summary>Returns a list of annotations contained in the store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations%2A> method to determine if there are any annotations contained in the store.  
-  
- [!code-csharp[DocumentSerialize#DocSerCloseFile](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserclosefile)]  
-  
+The following example shows how to use the <xref:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations%2A> method to determine if there are any annotations contained in the store.  
+ 
+[!code-csharp[DocumentSerialize#DocSerCloseFile](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserclosefile)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -24,19 +24,19 @@
     <summary>Defines the constraints set on a certificate. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides properties that define the basic constraints set on a certificate.  
+This class provides properties that define the basic constraints set on a certificate.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,14 +65,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" /> class using an <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object and a value that identifies whether the extension is critical.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if the information to create an extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
-  
+Use this constructor if the information to create an extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,19 +180,19 @@
           <see langword="true" /> if the certificate is a certificate authority (CA) certificate, otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to determine if the certificate is a certificate authority (CA) certificate.  
+Use this property to determine if the certificate is a certificate authority (CA) certificate.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,10 +227,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" /> class using an <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if the information to create an extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
-  
+Use this constructor if the information to create an extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,19 +263,19 @@
           <see langword="true" /> if the certificate has a restriction on the number of path levels it allows, otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A certificate issuer can restrict the number of levels in a certificate path. This property indicates whether the certificate has this restriction. If this value is `true`, you can use the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.PathLengthConstraint%2A> property to determine the number of levels allowed.  
+A certificate issuer can restrict the number of levels in a certificate path. This property indicates whether the certificate has this restriction. If this value is `true`, you can use the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.PathLengthConstraint%2A> property to determine the number of levels allowed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The extension cannot be decoded.</exception>
@@ -308,19 +308,19 @@
         <value>An integer indicating the number of levels allowed in a certificate's path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a certificate has a constraint on the number of path levels it allows, this property indicates how many levels are allowed.  
+If a certificate has a constraint on the number of path levels it allows, this property indicates how many levels are allowed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The extension cannot be decoded.</exception>

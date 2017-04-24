@@ -19,14 +19,14 @@
     <summary>The exception that is thrown when an XML document cannot be deserialized into a <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> by a <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfileSerializer" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- When the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> throws this exception it supplies a message that describes the reason for the exception. In some cases the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> supplies a list of validation errors and warnings that it encountered while trying to deserialize the <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> property contains this list if it is supplied.  
-  
+ 
+When the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> throws this exception it supplies a message that describes the reason for the exception. In some cases the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> supplies a list of validation errors and warnings that it encountered while trying to deserialize the <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> property contains this list if it is supplied.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,18 +45,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error and takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error and takes into account the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
 |<xref:System.Exception.Message%2A>|A system-supplied localized description.|  
 |<xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A>|An empty <xref:System.Collections.IList>.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,18 +78,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>.  
-  
+The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
 |<xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A>|An empty <xref:System.Collections.IList>.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,18 +113,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is supplied to the constructor or a null reference (Nothing in Visual Basic) if the `innerException` parameter does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is supplied to the constructor or a null reference (Nothing in Visual Basic) if the `innerException` parameter does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
 |<xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A>|An empty <xref:System.Collections.IList>.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,12 +151,12 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the collection of <see cref="T:System.Xml.Schema.ValidationEventArgs" /> associated with this exception, and additional exception information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During deserialization the exception object is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
-  
- For more information see XML and SOAP Serialization.  
-  
+<xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During deserialization the exception object is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
+ 
+For more information see XML and SOAP Serialization.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -180,10 +180,10 @@
         <value>A <see cref="T:System.Collections.IList" /> of <see cref="T:System.Xml.Schema.ValidationEventArgs" /> objects that contains validation warnings and errors associated with this exception. The default is an empty list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> uses an <xref:System.Xml.XmlReader> to deserialize an XML document into a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> collects validation errors and warnings emitted by the <xref:System.Xml.XmlReader>. At certain points during deserialization, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> determines whether the <xref:System.Xml.XmlReader> has encountered any validation errors, and, if it has, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> adds these warnings and errors to <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> and throws a <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>. Not all exceptions of this class will have <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> set.  
-  
+The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> uses an <xref:System.Xml.XmlReader> to deserialize an XML document into a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> collects validation errors and warnings emitted by the <xref:System.Xml.XmlReader>. At certain points during deserialization, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> determines whether the <xref:System.Xml.XmlReader> has encountered any validation errors, and, if it has, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> adds these warnings and errors to <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> and throws a <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>. Not all exceptions of this class will have <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> set.  
+ 
  ]]></format>
         </remarks>
       </Docs>

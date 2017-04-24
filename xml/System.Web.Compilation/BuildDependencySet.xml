@@ -14,10 +14,10 @@
     <summary>Represents dependencies returned by the build manager.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.BuildDependencySet> object for an application can be retrieved through the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A> method. It contains the properties that represent the list of dependencies.  
-  
+The <xref:System.Web.Compilation.BuildDependencySet> object for an application can be retrieved through the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A> method. It contains the properties that represent the list of dependencies.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents the Assertion element specified in [Saml2Core, 2.3.3].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> class with the specified issuer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2Assertion.IssueInstant%2A> property is set to the value of the <xref:System.DateTime.UtcNow%2A?displayProperty=fullName> property.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2Assertion.IssueInstant%2A> property is set to the value of the <xref:System.DateTime.UtcNow%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -66,10 +66,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Advice" /> that contains additional information related to the assertion.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Advice element.  
-  
+The Advice element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,13 +92,13 @@
           <see langword="true" /> if this assertion can re-emit the XML source data unchanged; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation preserves the source data when read using the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAssertion%2A> method and can re-emit the original data as long as the <xref:System.IdentityModel.Tokens.Saml2Assertion.Id%2A> property has not changed from the time that assertion was read.  
-  
+The default implementation preserves the source data when read using the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAssertion%2A> method and can re-emit the original data as long as the <xref:System.IdentityModel.Tokens.Saml2Assertion.Id%2A> property has not changed from the time that assertion was read.  
+ 
 > [!IMPORTANT]
 >  It is very important that SAML assertions with different data have different IDs. If implementing a scheme whereby an assertion "template" is loaded and certain bits of data are filled in, the Id must be changed.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Conditions" /> that contains the conditions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Conditions element.  
-  
+The Conditions element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,10 +181,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> that represents the identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ID attribute. This attribute is required.  
-  
+The ID attribute. This attribute is required.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
@@ -207,10 +207,10 @@
         <value>A <see cref="T:System.DateTime" /> that represents the time at which this assertion was issued in UTC. The default is <see cref="P:System.DateTime.UtcNow" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The IssueInstant attribute. This attribute is required.  
-  
+The IssueInstant attribute. This attribute is required.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that specifies the issuer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Issuer element. This element is required.  
-  
+The Issuer element. This element is required.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
@@ -276,10 +276,10 @@
         <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Statement" /> that contains the statements for this assertion.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Elements in this collection can be of type <xref:System.IdentityModel.Tokens.Saml2AttributeStatement>, <xref:System.IdentityModel.Tokens.Saml2AuthenticationStatement>, and/or <xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement> to represent each of the following SAML elements: AttributeStatement, AuthnStatement, and AuthzDecisionStatement.  
-  
+Elements in this collection can be of type <xref:System.IdentityModel.Tokens.Saml2AttributeStatement>, <xref:System.IdentityModel.Tokens.Saml2AuthenticationStatement>, and/or <xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement> to represent each of the following SAML elements: AttributeStatement, AuthnStatement, and AuthzDecisionStatement.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -301,10 +301,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Subject" /> that specifies the subject.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Subject element.  
-  
+The Subject element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
         <value>A string that contains the version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Version attribute; only version "2.0" is supported.  
-  
+The Version attribute; only version "2.0" is supported.  
+ 
  ]]></format>
         </remarks>
       </Docs>

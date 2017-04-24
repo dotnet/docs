@@ -18,10 +18,10 @@
     <summary>Represents a category to which a <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> can belong.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you manually instantiate this class, call <xref:Microsoft.Build.Framework.XamlTypes.Category.BeginInit%2A> before you set the first property of the object and <xref:Microsoft.Build.Framework.XamlTypes.Category.EndInit%2A> after you set the last property.  
-  
+If you manually instantiate this class, call <xref:Microsoft.Build.Framework.XamlTypes.Category.BeginInit%2A> before you set the first property of the object and <xref:Microsoft.Build.Framework.XamlTypes.Category.EndInit%2A> after you set the last property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
         <value>Returns the description of this category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and is culture-sensitive.  
-  
+This field is optional and is culture-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <value>Returns the display name of this category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and is culture-sensitive. When this property is not set, it is assigned the same value as the <xref:Microsoft.Build.Framework.XamlTypes.Category.Name%2A> property (and, therefore, would not be localized).  
-  
+This field is optional and is culture-sensitive. When this property is not set, it is assigned the same value as the <xref:Microsoft.Build.Framework.XamlTypes.Category.Name%2A> property (and, therefore, would not be localized).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <value>Returns Help information for this category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used to specify a Help URL. This field is optional and is culture-sensitive.  
-  
+Can be used to specify a Help URL. This field is optional and is culture-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,12 +184,12 @@
         <value>Returns the name of this category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is mandatory and culture-invariant.  
-  
- The field cannot be set to an empty string.  
-  
+This field is mandatory and culture-invariant.  
+ 
+The field cannot be set to an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,12 +211,12 @@
         <value>To be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the subtype must be either `Grid` (default) or `CommandLine`.  
-  
- Subtypes help the UI display a category in an appropriate form. For example, category properties that are not command-line are typically displayed in the form of a property grid.  
-  
+The value of the subtype must be either `Grid` (default) or `CommandLine`.  
+ 
+Subtypes help the UI display a category in an appropriate form. For example, category properties that are not command-line are typically displayed in the form of a property grid.  
+ 
  ]]></format>
         </remarks>
       </Docs>

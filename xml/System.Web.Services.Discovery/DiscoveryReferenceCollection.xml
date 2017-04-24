@@ -15,12 +15,12 @@
     <summary>A collection of discovery references. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReferenceCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CPP/discoveryreferencecollection.cpp#1)]
- [!code-csharp[DiscoveryReferenceCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CS/discoveryreferencecollection.cs#1)]
- [!code-vb[DiscoveryReferenceCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReferenceCollection/VB/discoveryreferencecollection.vb#1)]  
-  
+[!code-cpp[DiscoveryReferenceCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CPP/discoveryreferencecollection.cpp#1)]
+[!code-csharp[DiscoveryReferenceCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CS/discoveryreferencecollection.cs#1)]
+[!code-vb[DiscoveryReferenceCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReferenceCollection/VB/discoveryreferencecollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,12 +63,12 @@
         <returns>The position where the <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> was inserted in the <see cref="T:System.Web.Services.Discovery.DiscoveryReferenceCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReferenceCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CPP/discoveryreferencecollection.cpp#2)]
- [!code-csharp[DiscoveryReferenceCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CS/discoveryreferencecollection.cs#2)]
- [!code-vb[DiscoveryReferenceCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReferenceCollection/VB/discoveryreferencecollection.vb#2)]  
-  
+[!code-cpp[DiscoveryReferenceCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CPP/discoveryreferencecollection.cpp#2)]
+[!code-csharp[DiscoveryReferenceCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CS/discoveryreferencecollection.cs#2)]
+[!code-vb[DiscoveryReferenceCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReferenceCollection/VB/discoveryreferencecollection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,12 +96,12 @@
           <see langword="true" /> if the <see cref="T:System.Web.Services.Discovery.DiscoveryReferenceCollection" /> contains the <see cref="T:System.Web.Services.Discovery.DiscoveryReference" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReferenceCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CPP/discoveryreferencecollection.cpp#2)]
- [!code-csharp[DiscoveryReferenceCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CS/discoveryreferencecollection.cs#2)]
- [!code-vb[DiscoveryReferenceCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReferenceCollection/VB/discoveryreferencecollection.vb#2)]  
-  
+[!code-cpp[DiscoveryReferenceCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CPP/discoveryreferencecollection.cpp#2)]
+[!code-csharp[DiscoveryReferenceCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CS/discoveryreferencecollection.cs#2)]
+[!code-vb[DiscoveryReferenceCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReferenceCollection/VB/discoveryreferencecollection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,12 +128,12 @@
         <value>The <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryReferenceCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CPP/discoveryreferencecollection.cpp#2)]
- [!code-csharp[DiscoveryReferenceCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CS/discoveryreferencecollection.cs#2)]
- [!code-vb[DiscoveryReferenceCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReferenceCollection/VB/discoveryreferencecollection.vb#2)]  
-  
+[!code-cpp[DiscoveryReferenceCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CPP/discoveryreferencecollection.cpp#2)]
+[!code-csharp[DiscoveryReferenceCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReferenceCollection/CS/discoveryreferencecollection.cs#2)]
+[!code-vb[DiscoveryReferenceCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReferenceCollection/VB/discoveryreferencecollection.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -161,10 +161,10 @@
         <summary>Removes a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> from the <see cref="T:System.Web.Services.Discovery.DiscoveryReferenceCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- DiscoveryReferenceCollection#2  
-  
+DiscoveryReferenceCollection#2  
+ 
  ]]></format>
         </remarks>
       </Docs>

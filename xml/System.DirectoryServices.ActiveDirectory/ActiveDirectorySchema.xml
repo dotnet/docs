@@ -37,10 +37,10 @@
         <summary>Releases the managed resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" /> object and, optionally, releases unmanaged resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `disposing` parameter affects only the release of managed resources. Unmanaged resources are always released by this method.  
-  
+The `disposing` parameter affects only the release of managed resources. Unmanaged resources are always released by this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

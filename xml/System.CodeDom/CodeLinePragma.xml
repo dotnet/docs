@@ -22,19 +22,19 @@
     <summary>Represents a specific location within a specific file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeLinePragma> can be used to represent a specific location within a file. This type of object is often used after compilation by debugging tools to store locations of associated code elements, such as position references associated with compiler warnings and errors.  
+<xref:System.CodeDom.CodeLinePragma> can be used to represent a specific location within a file. This type of object is often used after compilation by debugging tools to store locations of associated code elements, such as position references associated with compiler warnings and errors.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.CodeDom.CodeLinePragma> class to reference a specific line of a source file.  
-  
- [!code-cpp[CodeDomSampleBatch#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#2)]
- [!code-csharp[CodeDomSampleBatch#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#2)]
- [!code-vb[CodeDomSampleBatch#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#2)]  
-  
+The following code example demonstrates the use of the <xref:System.CodeDom.CodeLinePragma> class to reference a specific line of a source file.  
+ 
+[!code-cpp[CodeDomSampleBatch#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#2)]
+[!code-csharp[CodeDomSampleBatch#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#2)]
+[!code-vb[CodeDomSampleBatch#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeLinePragma" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you use this constructor you should also set the <xref:System.CodeDom.CodeLinePragma.LineNumber%2A> and <xref:System.CodeDom.CodeLinePragma.FileName%2A> properties.  
-  
+If you use this constructor you should also set the <xref:System.CodeDom.CodeLinePragma.LineNumber%2A> and <xref:System.CodeDom.CodeLinePragma.FileName%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,14 +80,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeLinePragma" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.CodeDom.CodeLinePragma> class to reference a specific line of a source file.  
-  
- [!code-cpp[CodeDomSampleBatch#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#2)]
- [!code-csharp[CodeDomSampleBatch#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#2)]
- [!code-vb[CodeDomSampleBatch#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#2)]  
-  
+The following code example demonstrates the use of the <xref:System.CodeDom.CodeLinePragma> class to reference a specific line of a source file.  
+ 
+[!code-cpp[CodeDomSampleBatch#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#2)]
+[!code-csharp[CodeDomSampleBatch#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#2)]
+[!code-vb[CodeDomSampleBatch#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

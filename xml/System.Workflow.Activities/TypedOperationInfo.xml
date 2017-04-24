@@ -19,12 +19,12 @@
     <summary>An <see cref="T:System.Workflow.Activities.OperationInfo" /> object that inherits from <see cref="T:System.Workflow.Activities.OperationInfoBase" /> used for the service operation information of the <see cref="T:System.Workflow.Activities.SendActivity" /> and <see cref="T:System.Workflow.Activities.ReceiveActivity" /> activities. Note that this operation information must be based on a CLR type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -281,10 +281,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Activities.TypedOperationInfo> class requires that a service contract is present.  
-  
+The <xref:System.Workflow.Activities.TypedOperationInfo> class requires that a service contract is present.  
+ 
  ]]></format>
         </remarks>
       </Docs>

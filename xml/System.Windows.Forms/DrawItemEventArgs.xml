@@ -14,18 +14,18 @@
     <summary>Provides data for the <see langword="DrawItem" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `DrawItem` event is raised by owner draw controls, such as the <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls. It contains all the information that is needed for the user to paint the specified item, including the item index, the <xref:System.Drawing.Rectangle>, and the <xref:System.Drawing.Graphics> on which the drawing should be done.  
+The `DrawItem` event is raised by owner draw controls, such as the <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls. It contains all the information that is needed for the user to paint the specified item, including the item index, the <xref:System.Drawing.Rectangle>, and the <xref:System.Drawing.Graphics> on which the drawing should be done.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are fixed sized and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control that is named `listBox1` has been added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler defined in the example code. The example also assumes that items have been added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum" in that order.  
-  
- [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
- [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
-  
+The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are fixed sized and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control that is named `listBox1` has been added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler defined in the example code. The example also assumes that items have been added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum" in that order.  
+ 
+[!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+[!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -103,20 +103,20 @@
         <value>The background <see cref="T:System.Drawing.Color" /> of the item that is being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> property is set to <xref:System.Drawing.SystemColors.Window%2A?displayProperty=fullName>.  
+If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> property is set to <xref:System.Drawing.SystemColors.Window%2A?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
- [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
+[!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,13 +138,13 @@
         <value>The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the item that is being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are fixed sized and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control that is named `listBox1` has been added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler defined in the example code. The example also assumes that items have been added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum" in that order.  
-  
- [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
- [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
-  
+The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are fixed sized and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control that is named `listBox1` has been added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler defined in the example code. The example also assumes that items have been added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum" in that order.  
+ 
+[!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+[!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,18 +166,18 @@
         <summary>Draws the background within the bounds specified in the <see cref="Overload:System.Windows.Forms.DrawItemEventArgs.#ctor" /> constructor and with the appropriate color.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the item being drawn is <xref:System.Windows.Forms.DrawItemState>, the background is drawn with the text highlighted.  
+If the item being drawn is <xref:System.Windows.Forms.DrawItemState>, the background is drawn with the text highlighted.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
-  
- [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
- [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
-  
+The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+ 
+[!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+[!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -202,18 +202,18 @@
         <summary>Draws a focus rectangle within the bounds specified in the <see cref="Overload:System.Windows.Forms.DrawItemEventArgs.#ctor" /> constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the item being drawn has <xref:System.Windows.Forms.DrawItemState>, the focus rectangle is drawn.  
+If the item being drawn has <xref:System.Windows.Forms.DrawItemState>, the focus rectangle is drawn.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
-  
- [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
- [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
-  
+The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+ 
+[!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+[!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -238,18 +238,18 @@
         <value>The <see cref="T:System.Drawing.Font" /> that is assigned to the item being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A suggested <xref:System.Drawing.Font>, usually the <xref:System.Windows.Forms.Control.Font%2A> property of the parent control.  
+A suggested <xref:System.Drawing.Font>, usually the <xref:System.Windows.Forms.Control.Font%2A> property of the parent control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
-  
- [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
- [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
-  
+The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+ 
+[!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+[!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,20 +271,20 @@
         <value>The foreground <see cref="T:System.Drawing.Color" /> of the item being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> property is set to <xref:System.Drawing.SystemColors.WindowText%2A?displayProperty=fullName>.  
+If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> property is set to <xref:System.Drawing.SystemColors.WindowText%2A?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
- [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
+[!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,13 +306,13 @@
         <value>The <see cref="T:System.Drawing.Graphics" /> surface to draw the item on.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
-  
- [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
- [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
-  
+The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+ 
+[!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+[!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,18 +334,18 @@
         <value>The numeric value that represents the <see cref="P:System.Windows.Forms.Control.ControlCollection.Item(System.Int32)" /> value of the item being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the <xref:System.Windows.Forms.Control.ControlCollection.Item%2A> value of the item being drawn in the <xref:System.Windows.Forms.Control.ControlCollection?displayProperty=fullName>. This property can return -1 if itemswere removed from the list.  
+This property returns the <xref:System.Windows.Forms.Control.ControlCollection.Item%2A> value of the item being drawn in the <xref:System.Windows.Forms.Control.ControlCollection?displayProperty=fullName>. This property can return -1 if itemswere removed from the list.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
-  
- [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
- [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
-  
+The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+ 
+[!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+[!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,20 +367,20 @@
         <value>The <see cref="T:System.Windows.Forms.DrawItemState" /> that represents the state of the item being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property value can be a combination of the <xref:System.Windows.Forms.DrawItemState> enumeration members. The members can be combined by using bitwise operators.  
+This property value can be a combination of the <xref:System.Windows.Forms.DrawItemState> enumeration members. The members can be combined by using bitwise operators.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
- [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
+[!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

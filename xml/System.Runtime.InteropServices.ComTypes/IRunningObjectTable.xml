@@ -32,14 +32,14 @@
     <summary>Provides the managed definition of the <see langword="IRunningObjectTable" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve an interface to the running object table by calling the COM [GetRunningObjectTable](http://go.microsoft.com/fwlink/?LinkId=163472) function.  
-  
- For more information, see the documentation for the COM [IRunningObjectTable](http://go.microsoft.com/fwlink/?LinkId=163473) interface in the MSDN library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+You can retrieve an interface to the running object table by calling the COM [GetRunningObjectTable](http://go.microsoft.com/fwlink/?LinkId=163472) function.  
+ 
+For more information, see the documentation for the COM [IRunningObjectTable](http://go.microsoft.com/fwlink/?LinkId=163473) interface in the MSDN library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,10 +77,10 @@
         <summary>Enumerates the objects currently registered as running.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::EnumRunning](http://go.microsoft.com/fwlink/?LinkId=163475) method in the MSDN library.  
-  
+For more information, see the documentation for the [IRunningObjectTable::EnumRunning](http://go.microsoft.com/fwlink/?LinkId=163475) method in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <returns>An <see langword="HRESULT" /> value that indicates the success or failure of the operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::GetObject](http://go.microsoft.com/fwlink/?LinkId=163476) method in the MSDN library.  
-  
+For more information, see the documentation for the [IRunningObjectTable::GetObject](http://go.microsoft.com/fwlink/?LinkId=163476) method in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <returns>An <see langword="HRESULT" /> value that indicates the success or failure of the operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::GetTimeOfLastChange](http://go.microsoft.com/fwlink/?LinkId=163477) method in the MSDN library.  
-  
+For more information, see the documentation for the [IRunningObjectTable::GetTimeOfLastChange](http://go.microsoft.com/fwlink/?LinkId=163477) method in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,10 +207,10 @@
         <returns>An <see langword="HRESULT" /> value that indicates the success or failure of the operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::IsRunning](http://go.microsoft.com/fwlink/?LinkId=163478) method in the MSDN library.  
-  
+For more information, see the documentation for the [IRunningObjectTable::IsRunning](http://go.microsoft.com/fwlink/?LinkId=163478) method in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,10 +250,10 @@
         <summary>Notes the time that a particular object changed so <see langword="IMoniker::GetTimeOfLastChange" /> can report an appropriate change time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::NoteChangeTime](http://go.microsoft.com/fwlink/?LinkId=163479) method in the MSDN library.  
-  
+For more information, see the documentation for the [IRunningObjectTable::NoteChangeTime](http://go.microsoft.com/fwlink/?LinkId=163479) method in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,10 +296,10 @@
         <returns>A value that can be used to identify this ROT entry in subsequent calls to <see cref="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Revoke(System.Int32)" /> or <see cref="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.ComTypes.FILETIME@)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ROT references to `punkObject` (weak and strong) determine object lifetime. For more information, see the documentation for the COM [IRunningObjectTable::Register](http://go.microsoft.com/fwlink/?LinkId=163474) method in the MSDN library.  
-  
+ROT references to `punkObject` (weak and strong) determine object lifetime. For more information, see the documentation for the COM [IRunningObjectTable::Register](http://go.microsoft.com/fwlink/?LinkId=163474) method in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,10 +337,10 @@
         <summary>Unregisters the specified object from the Running Object Table (ROT).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::Revoke](http://go.microsoft.com/fwlink/?LinkId=163480) method in the MSDN library.  
-  
+For more information, see the documentation for the [IRunningObjectTable::Revoke](http://go.microsoft.com/fwlink/?LinkId=163480) method in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

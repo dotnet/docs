@@ -27,18 +27,18 @@
     <summary>Changes that might occur to a file or directory.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.IO.WatcherChangeTypes> member is associated with an event in <xref:System.IO.FileSystemWatcher>. For more information on the events, see <xref:System.IO.FileSystemWatcher.Created>, <xref:System.IO.FileSystemWatcher.Deleted>, <xref:System.IO.FileSystemWatcher.Changed>, and <xref:System.IO.FileSystemWatcher.Renamed>.  
+Each <xref:System.IO.WatcherChangeTypes> member is associated with an event in <xref:System.IO.FileSystemWatcher>. For more information on the events, see <xref:System.IO.FileSystemWatcher.Created>, <xref:System.IO.FileSystemWatcher.Deleted>, <xref:System.IO.FileSystemWatcher.Changed>, and <xref:System.IO.FileSystemWatcher.Renamed>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a FileSystemWatcher to monitor file changes (creates, deletes, renames, changes) occurring on a disk drive. The example also shows how to properly receive error notifications.  
-  
- [!code-csharp[FileSystemWatcher#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#1)]
- [!code-vb[FileSystemWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#1)]  
-  
+The following example shows how to create a FileSystemWatcher to monitor file changes (creates, deletes, renames, changes) occurring on a disk drive. The example also shows how to properly receive error notifications.  
+ 
+[!code-csharp[FileSystemWatcher#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#1)]
+[!code-vb[FileSystemWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

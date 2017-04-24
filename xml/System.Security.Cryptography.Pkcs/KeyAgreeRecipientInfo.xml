@@ -19,10 +19,10 @@
     <summary>The <see cref="T:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo" /> class defines key agreement recipient information. Key agreement algorithms typically use the Diffie-Hellman key agreement algorithm, in which the two parties that establish a shared cryptographic key both take part in its generation and, by definition, agree on that key. This is in contrast to key transport algorithms, in which one party generates the key unilaterally and sends, or transports it, to the other party.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property.  
-  
+This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -189,10 +189,10 @@
         <value>The version of the <see cref="T:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The version determines whether the message in which this <xref:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo> object is contained is a PKCS #7 message or a Cryptographic Message Syntax (CMS) message. CMS is a newer superset of PKCS #7.  
-  
+The version determines whether the message in which this <xref:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo> object is contained is a PKCS #7 message or a Cryptographic Message Syntax (CMS) message. CMS is a newer superset of PKCS #7.  
+ 
  ]]></format>
         </remarks>
       </Docs>

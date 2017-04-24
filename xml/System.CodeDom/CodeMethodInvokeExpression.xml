@@ -22,21 +22,21 @@
     <summary>Represents an expression that invokes a method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeMethodInvokeExpression> can be used to represent an expression that invokes a method.  
+<xref:System.CodeDom.CodeMethodInvokeExpression> can be used to represent an expression that invokes a method.  
+ 
+The <xref:System.CodeDom.CodeMethodInvokeExpression.Method%2A> property specifies the method to invoke. The <xref:System.CodeDom.CodeMethodInvokeExpression.Parameters%2A> property indicates the parameters to pass to the method. Use a <xref:System.CodeDom.CodeDirectionExpression> to specify the field direction of a parameter.  
+ 
   
- The <xref:System.CodeDom.CodeMethodInvokeExpression.Method%2A> property specifies the method to invoke. The <xref:System.CodeDom.CodeMethodInvokeExpression.Parameters%2A> property indicates the parameters to pass to the method. Use a <xref:System.CodeDom.CodeDirectionExpression> to specify the field direction of a parameter.  
-  
-   
-  
+ 
 ## Examples  
- This example demonstrates using a <xref:System.CodeDom.CodeMethodInvokeExpression> to invoke a method.  
-  
- [!code-cpp[CodeMethodInvokeExpression#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMethodInvokeExpression/CPP/codemethodinvokeexpressionexample.cpp#2)]
- [!code-csharp[CodeMethodInvokeExpression#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMethodInvokeExpression/CS/codemethodinvokeexpressionexample.cs#2)]
- [!code-vb[CodeMethodInvokeExpression#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMethodInvokeExpression/VB/codemethodinvokeexpressionexample.vb#2)]  
-  
+This example demonstrates using a <xref:System.CodeDom.CodeMethodInvokeExpression> to invoke a method.  
+ 
+[!code-cpp[CodeMethodInvokeExpression#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMethodInvokeExpression/CPP/codemethodinvokeexpressionexample.cpp#2)]
+[!code-csharp[CodeMethodInvokeExpression#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMethodInvokeExpression/CS/codemethodinvokeexpressionexample.cs#2)]
+[!code-vb[CodeMethodInvokeExpression#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMethodInvokeExpression/VB/codemethodinvokeexpressionexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -145,10 +145,10 @@
         <value>A <see cref="T:System.CodeDom.CodeExpressionCollection" /> that indicates the parameters to invoke the method with.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a <xref:System.CodeDom.CodeDirectionExpression> to specify a field direction for the parameter.  
-  
+Use a <xref:System.CodeDom.CodeDirectionExpression> to specify a field direction for the parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>

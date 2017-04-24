@@ -65,10 +65,10 @@
         <value>The string representing the rule, or <see langword="null" /> if no action is specified on delete.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Examples of rules are "CASCADE", "SET NULL", and so forth.  
-  
+Examples of rules are "CASCADE", "SET NULL", and so forth.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <value>Returns <see langword="true" /> if the association is unique.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates a uniqueness constraint in the database.  
-  
+This property indicates a uniqueness constraint in the database.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <value>The member on the other side.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value can be null.  
-  
+This value can be null.  
+ 
  ]]></format>
         </remarks>
       </Docs>

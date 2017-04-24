@@ -18,36 +18,36 @@
     <summary>Specifies generic undo/redo functionality at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.UndoEngine> abstract class provides a default implementation of undo functionality at design time. An undo unit represents a single unit of undoable work. This unit is added to a stack and the user can then walk the stack to undo each action. Undo units typically are designed to toggle, which means that calling undo twice returns the application to its starting state.  
-  
- The <xref:System.ComponentModel.Design.UndoEngine> class takes advantage of the following characteristics of objects running within the designer:  
-  
+The <xref:System.ComponentModel.Design.UndoEngine> abstract class provides a default implementation of undo functionality at design time. An undo unit represents a single unit of undoable work. This unit is added to a stack and the user can then walk the stack to undo each action. Undo units typically are designed to toggle, which means that calling undo twice returns the application to its starting state.  
+ 
+The <xref:System.ComponentModel.Design.UndoEngine> class takes advantage of the following characteristics of objects running within the designer:  
+ 
 -   All interesting objects can be persisted to some format by the designer loader.  
-  
+ 
 -   All objects raise property-change notifications when a property is changed.  
-  
+ 
 -   <xref:System.ComponentModel.Design.IDesignerHost> offers the idea of transactions, which can be used to fabricate an undo action that spans multiple smaller actions.  
-  
- With these features, <xref:System.ComponentModel.Design.UndoEngine> can fabricate any undo units it needs automatically.  
-  
+ 
+With these features, <xref:System.ComponentModel.Design.UndoEngine> can fabricate any undo units it needs automatically.  
+ 
 > [!NOTE]
 >  Do not change property values directly. The <xref:System.ComponentModel.Design.UndoEngine> class requires you to use the appropriate <xref:System.ComponentModel.TypeDescriptor> to change property values.  
-  
- <xref:System.ComponentModel.Design.UndoEngine> monitors for change notifications to create undo units, and the units themselves consist of serialized object states. The following table shows the services that must be available when <xref:System.ComponentModel.Design.UndoEngine> is created.  
-  
+ 
+<xref:System.ComponentModel.Design.UndoEngine> monitors for change notifications to create undo units, and the units themselves consist of serialized object states. The following table shows the services that must be available when <xref:System.ComponentModel.Design.UndoEngine> is created.  
+ 
 |Service|Description|  
 |-------------|-----------------|  
 |<xref:System.ComponentModel.Design.Serialization.ComponentSerializationService>|Saves property and object values for a component before and after a change is made.|  
 |<xref:System.ComponentModel.Design.IComponentChangeService>|Notifies the undo engine of changes made to components.|  
 |<xref:System.ComponentModel.Design.IDesignerHost>|Used to track transactions.|  
-  
+ 
 > [!NOTE]
 >  Because the <xref:System.ComponentModel.Design.UndoEngine> class requires <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService> and <xref:System.ComponentModel.Design.IComponentChangeService>, it is available only at design time.  
-  
- The undo engine tracks transactions and creates a single undo unit that encompasses a transaction. As a result, the undo engine has control over the duration of an undoable action. Also, because transactions can be named, undoable actions inherit their names from the current transaction. If no transaction is available and a change is reported, the undo engine creates an undo name based on the type of change (for example, "Change property 'Text'").  
-  
+ 
+The undo engine tracks transactions and creates a single undo unit that encompasses a transaction. As a result, the undo engine has control over the duration of an undoable action. Also, because transactions can be named, undoable actions inherit their names from the current transaction. If no transaction is available and a change is reported, the undo engine creates an undo name based on the type of change (for example, "Change property 'Text'").  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,10 +69,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.UndoEngine" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.UndoEngine> requires several services from the `provider` parameter to be useful.  
-  
+The <xref:System.ComponentModel.Design.UndoEngine> requires several services from the `provider` parameter to be useful.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -100,10 +100,10 @@
         <summary>Adds an <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" /> to the undo stack.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Create the `unit` parameter by calling the <xref:System.ComponentModel.Design.UndoEngine.CreateUndoUnit%2A> method.  
-  
+Create the `unit` parameter by calling the <xref:System.ComponentModel.Design.UndoEngine.CreateUndoUnit%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,12 +132,12 @@
         <returns>A new <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" /> with a specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of the <xref:System.ComponentModel.Design.UndoEngine.CreateUndoUnit%2A> method simply returns a new <xref:System.ComponentModel.Design.UndoEngine.UndoUnit>.  
-  
- By default, <xref:System.ComponentModel.Design.UndoEngine> does nothing with the `primary` parameter, but some implementations of undo, such as those involving the COM `Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit` design pattern, may need to identify the difference between a primary unit and its children.  
-  
+The default implementation of the <xref:System.ComponentModel.Design.UndoEngine.CreateUndoUnit%2A> method simply returns a new <xref:System.ComponentModel.Design.UndoEngine.UndoUnit>.  
+ 
+By default, <xref:System.ComponentModel.Design.UndoEngine> does nothing with the `primary` parameter, but some implementations of undo, such as those involving the COM `Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit` design pattern, may need to identify the difference between a primary unit and its children.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <summary>Discards an <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before the <xref:System.ComponentModel.Design.UndoEngine.DiscardUndoUnit%2A> method is called, the undo unit is closed and then undone.  
-  
+Before the <xref:System.ComponentModel.Design.UndoEngine.DiscardUndoUnit%2A> method is called, the undo unit is closed and then undone.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <summary>Occurs immediately after an undo action is performed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.UndoEngine.Undone> event is always raised, even if an exception is thrown.  
-  
+The <xref:System.ComponentModel.Design.UndoEngine.Undone> event is always raised, even if an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

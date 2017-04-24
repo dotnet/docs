@@ -14,15 +14,15 @@
     <summary>Defines the configuration file mapping for an .exe application. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ExeConfigurationFileMap> class provides a means to define a custom configuration file hierarchy for .exe applications. The <xref:System.Configuration.ExeConfigurationFileMap> class can specify a single path or multiple paths related to configuration files.  
+The <xref:System.Configuration.ExeConfigurationFileMap> class provides a means to define a custom configuration file hierarchy for .exe applications. The <xref:System.Configuration.ExeConfigurationFileMap> class can specify a single path or multiple paths related to configuration files.  
+ 
   
-   
-  
+ 
 ## Examples  
- For an example that shows how to use this class, see the <xref:System.Configuration.ConfigurationManager.OpenMappedExeConfiguration%2A?displayProperty=fullName> method.  
-  
+For an example that shows how to use this class, see the <xref:System.Configuration.ConfigurationManager.OpenMappedExeConfiguration%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ExeConfigurationFileMap" /> class by using the specified machine configuration file name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use this constructor when you are targeting a version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] that is earlier than the latest one that is installed on the computer. This constructor enables you to specify a machine configuration file that is appropriate to the version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] that you are targeting.  
-  
+You use this constructor when you are targeting a version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] that is earlier than the latest one that is installed on the computer. This constructor enables you to specify a machine configuration file that is appropriate to the version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] that you are targeting.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,67 +19,67 @@
     <summary>Provides methods and properties to manage and query the toolbox in the development environment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Design.IToolboxService> interface provides properties and methods for adding and removing toolbox items and toolbox creator callback delegates, serializing and deserializing toolbox items, and retrieving toolbox state information and managing toolbox state.  
-  
- You can retrieve information about the contents of the toolbox with the following methods:  
-  
+The <xref:System.Drawing.Design.IToolboxService> interface provides properties and methods for adding and removing toolbox items and toolbox creator callback delegates, serializing and deserializing toolbox items, and retrieving toolbox state information and managing toolbox state.  
+ 
+You can retrieve information about the contents of the toolbox with the following methods:  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.CategoryNames%2A> property indicates the categories currently available on the toolbox.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.SelectedCategory%2A> property indicates the currently selected toolbox category.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.GetToolboxItems%2A> method retrieves the items on the toolbox, optionally filtered by a specified toolbox category.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.GetSelectedToolboxItem%2A> method retrieves the currently selected <xref:System.Drawing.Design.ToolboxItem>.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.SetSelectedToolboxItem%2A> method selects the specified <xref:System.Drawing.Design.ToolboxItem> as the current toolbox item.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.IsSupported%2A> method indicates whether the specified serialized object, if it is a <xref:System.Drawing.Design.ToolboxItem>, is supported by the specified designer host, or whether it matches the specified attributes.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.IsToolboxItem%2A> method indicates whether the specified serialized object is a <xref:System.Drawing.Design.ToolboxItem>.  
-  
- You can add and remove toolbox items with the following methods:  
-  
+ 
+You can add and remove toolbox items with the following methods:  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.AddToolboxItem%2A> method adds a <xref:System.Drawing.Design.ToolboxItem> to the toolbox, creating the optionally specified category if it does not exist.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.AddLinkedToolboxItem%2A> method adds a <xref:System.Drawing.Design.ToolboxItem> that is only enabled for the current project to the toolbox.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.RemoveToolboxItem%2A> method removes the specified <xref:System.Drawing.Design.ToolboxItem>.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.AddCreator%2A> method adds a <xref:System.Drawing.Design.ToolboxItemCreatorCallback> delegate capable of converting some type of data stored on the toolbox to a <xref:System.Drawing.Design.ToolboxItem>.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.RemoveCreator%2A> method removes any <xref:System.Drawing.Design.ToolboxItemCreatorCallback> delegates for the specified data type.  
-  
- You can refresh the toolbox, mark a toolbox item as used, or set the mouse cursor to a cursor that represents the current toolbox item using the following methods:  
-  
+ 
+You can refresh the toolbox, mark a toolbox item as used, or set the mouse cursor to a cursor that represents the current toolbox item using the following methods:  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.Refresh%2A> method refreshes the toolbox display to reflect the current state of the toolbox items.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.SelectedToolboxItemUsed%2A> method signals the toolbox that the selected toolbox item has been used.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.SetCursor%2A> method sets the mouse cursor to a cursor that represents the current toolbox item.  
-  
- You can use the toolbox to serialize or deserialize a toolbox item using the following methods:  
-  
+ 
+You can use the toolbox to serialize or deserialize a toolbox item using the following methods:  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.DeserializeToolboxItem%2A> method attempts to return a <xref:System.Drawing.Design.ToolboxItem> from the specified serialized toolbox item object.  
-  
+ 
 -   The <xref:System.Drawing.Design.IToolboxService.SerializeToolboxItem%2A> method returns a serialized object representing the specified <xref:System.Drawing.Design.ToolboxItem>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Drawing.Design.IToolboxService> in design mode to list and select toolbox categories and items, and to create components or controls from toolbox items and add them to a <xref:System.Windows.Forms.Form>. To use the example, compile the code to an assembly, and add a reference to the assembly in a Windows Forms application. If you are using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the `IToolboxServiceControl` is automatically added to the **Toolbox**. Create an instance of the `IToolboxServiceControl` on a form to test its behavior.  
-  
- [!code-cpp[IToolboxServiceExample1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxServiceExample1/CPP/itoolboxservicecontrol.cpp#1)]
- [!code-csharp[IToolboxServiceExample1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxServiceExample1/CS/itoolboxservicecontrol.cs#1)]
- [!code-vb[IToolboxServiceExample1#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxServiceExample1/VB/itoolboxservicecontrol.vb#1)]  
-  
- The following code example provides a component that uses the <xref:System.Drawing.Design.IToolboxService> to add a "Text" data format handler, or <xref:System.Drawing.Design.ToolboxItemCreatorCallback>, to the toolbox. The data creator callback delegate passes any text data pasted to the toolbox and dragged onto a form to a custom <xref:System.Drawing.Design.ToolboxItem> that creates a <xref:System.Windows.Forms.TextBox> containing the text.  
-  
- [!code-cpp[ToolboxCreatorCallbackSample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolboxCreatorCallbackSample/CPP/textdatatextboxcomponent.cpp#1)]
- [!code-csharp[ToolboxCreatorCallbackSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolboxCreatorCallbackSample/CS/textdatatextboxcomponent.cs#1)]
- [!code-vb[ToolboxCreatorCallbackSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolboxCreatorCallbackSample/VB/textdatatextboxcomponent.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Drawing.Design.IToolboxService> in design mode to list and select toolbox categories and items, and to create components or controls from toolbox items and add them to a <xref:System.Windows.Forms.Form>. To use the example, compile the code to an assembly, and add a reference to the assembly in a Windows Forms application. If you are using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the `IToolboxServiceControl` is automatically added to the **Toolbox**. Create an instance of the `IToolboxServiceControl` on a form to test its behavior.  
+ 
+[!code-cpp[IToolboxServiceExample1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxServiceExample1/CPP/itoolboxservicecontrol.cpp#1)]
+[!code-csharp[IToolboxServiceExample1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxServiceExample1/CS/itoolboxservicecontrol.cs#1)]
+[!code-vb[IToolboxServiceExample1#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxServiceExample1/VB/itoolboxservicecontrol.vb#1)]  
+ 
+The following code example provides a component that uses the <xref:System.Drawing.Design.IToolboxService> to add a "Text" data format handler, or <xref:System.Drawing.Design.ToolboxItemCreatorCallback>, to the toolbox. The data creator callback delegate passes any text data pasted to the toolbox and dragged onto a form to a custom <xref:System.Drawing.Design.ToolboxItem> that creates a <xref:System.Windows.Forms.TextBox> containing the text.  
+ 
+[!code-cpp[ToolboxCreatorCallbackSample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolboxCreatorCallbackSample/CPP/textdatatextboxcomponent.cpp#1)]
+[!code-csharp[ToolboxCreatorCallbackSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolboxCreatorCallbackSample/CS/textdatatextboxcomponent.cs#1)]
+[!code-vb[ToolboxCreatorCallbackSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolboxCreatorCallbackSample/VB/textdatatextboxcomponent.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -106,10 +106,10 @@
         <summary>Adds a new toolbox item creator for a specified data format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A toolbox item creator can convert data of a particular data format that has been pasted or dropped on the toolbox into a <xref:System.Drawing.Design.ToolboxItem>. If a creator handles more than one format, call <xref:System.Drawing.Design.IToolboxService.AddCreator%2A> more than once. Unexpected behavior may result if you add more than one creator for the same format.  
-  
+A toolbox item creator can convert data of a particular data format that has been pasted or dropped on the toolbox into a <xref:System.Drawing.Design.ToolboxItem>. If a creator handles more than one format, call <xref:System.Drawing.Design.IToolboxService.AddCreator%2A> more than once. Unexpected behavior may result if you add more than one creator for the same format.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,12 +138,12 @@
         <summary>Adds a new toolbox item creator for a specified data format and designer host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A toolbox item creator can convert data of a particular data format that has been pasted or dropped on the toolbox into a <xref:System.Drawing.Design.ToolboxItem>. If a creator handles more than one format, call <xref:System.Drawing.Design.IToolboxService.AddCreator%2A> more than once. Unexpected behavior may result if you add more than one creator for the same format.  
-  
- If the `host` parameter is set to `null`, the creator will be available to all designers. If a designer host is supplied, the creator will only be available to designers using the specified host.  
-  
+A toolbox item creator can convert data of a particular data format that has been pasted or dropped on the toolbox into a <xref:System.Drawing.Design.ToolboxItem>. If a creator handles more than one format, call <xref:System.Drawing.Design.IToolboxService.AddCreator%2A> more than once. Unexpected behavior may result if you add more than one creator for the same format.  
+ 
+If the `host` parameter is set to `null`, the creator will be available to all designers. If a designer host is supplied, the creator will only be available to designers using the specified host.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <summary>Adds the specified project-linked toolbox item to the toolbox.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A linked toolbox item is a toolbox item that is only available for a specific project.  
-  
+A linked toolbox item is a toolbox item that is only available for a specific project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <summary>Adds the specified project-linked toolbox item to the toolbox in the specified category.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A linked toolbox item is a toolbox item that is only available for a specific project.  
-  
+A linked toolbox item is a toolbox item that is only available for a specific project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,10 +358,10 @@
         <returns>The <see cref="T:System.Drawing.Design.ToolboxItem" /> that is currently selected, or <see langword="null" /> if no toolbox item is currently selected.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the currently selected <xref:System.Drawing.Design.ToolboxItem> if it is not designer specific, and only returns a designer-specific currently selected <xref:System.Drawing.Design.ToolboxItem> if the type of the designer host specified in the `host` parameter matches the type of designer that the currently selected <xref:System.Drawing.Design.ToolboxItem> supports.  
-  
+This method returns the currently selected <xref:System.Drawing.Design.ToolboxItem> if it is not designer specific, and only returns a designer-specific currently selected <xref:System.Drawing.Design.ToolboxItem> if the type of the designer host specified in the `host` parameter matches the type of designer that the currently selected <xref:System.Drawing.Design.ToolboxItem> supports.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -568,10 +568,10 @@
         <summary>Refreshes the state of the toolbox items.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Design.IToolboxService.Refresh%2A> method is used to indicate to the toolbox service that the user wants to update the cache of toolbox items. If the toolbox service maintains a live list of toolbox item containers, then this method will do nothing. If it maintains a snapshot of toolbox item containers, calling this method should ensure that the snapshot is up to date.  
-  
+The <xref:System.Drawing.Design.IToolboxService.Refresh%2A> method is used to indicate to the toolbox service that the user wants to update the cache of toolbox items. If the toolbox service maintains a live list of toolbox item containers, then this method will do nothing. If it maintains a snapshot of toolbox item containers, calling this method should ensure that the snapshot is up to date.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -721,10 +721,10 @@
         <returns>An object that represents the specified <see cref="T:System.Drawing.Design.ToolboxItem" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method serializes the specified <xref:System.Drawing.Design.ToolboxItem> to an object that can be persisted. The returned object can be stored in a stream or passed around in a drag-and-drop or clipboard operation.  
-  
+This method serializes the specified <xref:System.Drawing.Design.ToolboxItem> to an object that can be persisted. The returned object can be stored in a stream or passed around in a drag-and-drop or clipboard operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -748,10 +748,10 @@
           <see langword="true" /> if the cursor is set by the currently selected tool, <see langword="false" /> if there is no tool selected and the cursor is set to the standard windows cursor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no tool is selected, the cursor will default to the standard Windows cursor.  
-  
+If no tool is selected, the cursor will default to the standard Windows cursor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

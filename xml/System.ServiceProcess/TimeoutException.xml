@@ -19,12 +19,12 @@
     <summary>The exception that is thrown when a specified timeout has expired.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceProcess.TimeoutException> class can specify a message to describe the source of the exception. When a method throws this exception, the message is usually "The timeout provided has expired and the operation has not been completed."  
-  
- This class is used, for example, by the <xref:System.ServiceProcess.ServiceController> class's <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> member. The operation that can throw the exception is a change of the service's <xref:System.ServiceProcess.ServiceController.Status%2A> property (for example, from `Paused` to `ContinuePending`).  
-  
+The <xref:System.ServiceProcess.TimeoutException> class can specify a message to describe the source of the exception. When a method throws this exception, the message is usually "The timeout provided has expired and the operation has not been completed."  
+ 
+This class is used, for example, by the <xref:System.ServiceProcess.ServiceController> class's <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A> member. The operation that can throw the exception is a change of the service's <xref:System.ServiceProcess.ServiceController.Status%2A> property (for example, from `Paused` to `ContinuePending`).  
+ 
  ]]></format>
     </remarks>
   </Docs>

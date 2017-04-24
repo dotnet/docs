@@ -21,10 +21,10 @@
     <summary>Enables comparisons between an isolated store and an application domain and assembly's evidence.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Isolated storage uses evidence about an assembly in order to identify it and provide it with a unique file storage location. When an assembly requests a store, its evidence (as presented by the host that loaded it) is processed and compared with the evidence used to create the existing stores. This determines if you need to create a new store or if one already exists for the assembly in question. Due to the comparison technique used, pieces of evidence that are functionally equivalent might not result in a true comparison if the serialized forms are not identical. When implementing custom evidence, consider whether this is the case for your evidence class and, if so, implement <xref:System.IO.IsolatedStorage.INormalizeForIsolatedStorage>. For evidence that implements this interface, the <xref:System.IO.IsolatedStorage.INormalizeForIsolatedStorage.Normalize%2A> method is called and comparisons are based on the normalized copy of the object returned by that method.  
-  
+Isolated storage uses evidence about an assembly in order to identify it and provide it with a unique file storage location. When an assembly requests a store, its evidence (as presented by the host that loaded it) is processed and compared with the evidence used to create the existing stores. This determines if you need to create a new store or if one already exists for the assembly in question. Due to the comparison technique used, pieces of evidence that are functionally equivalent might not result in a true comparison if the serialized forms are not identical. When implementing custom evidence, consider whether this is the case for your evidence class and, if so, implement <xref:System.IO.IsolatedStorage.INormalizeForIsolatedStorage>. For evidence that implements this interface, the <xref:System.IO.IsolatedStorage.INormalizeForIsolatedStorage.Normalize%2A> method is called and comparisons are based on the normalized copy of the object returned by that method.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">

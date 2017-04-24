@@ -26,118 +26,118 @@
     <summary>Represents a 4 x 4 matrix used for transformations in [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Matrix3D> has the following row-vector syntax:  
-  
+<xref:System.Windows.Media.Media3D.Matrix3D> has the following row-vector syntax:  
+ 
 |||||  
 |-|-|-|-|  
 |<xref:System.Windows.Media.Media3D.Matrix3D.M11%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M12%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M13%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M14%2A>|  
 |<xref:System.Windows.Media.Media3D.Matrix3D.M21%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M22%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M23%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M24%2A>|  
 |<xref:System.Windows.Media.Media3D.Matrix3D.M31%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M32%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M33%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M34%2A>|  
 |<xref:System.Windows.Media.Media3D.Matrix3D.OffsetX%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.OffsetY%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.OffsetZ%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M44%2A>|  
-  
- Note that because the fourth column is also accessible, the matrix allows developers to represent affine as well as non-affine transforms.  
-  
- Matrices can be appended or prepended to other matrices. Appending matrix A to matrix B denotes a transformation by B and then by A:  
-  
+ 
+Note that because the fourth column is also accessible, the matrix allows developers to represent affine as well as non-affine transforms.  
+ 
+Matrices can be appended or prepended to other matrices. Appending matrix A to matrix B denotes a transformation by B and then by A:  
+ 
 <a name="xamlAttributeUsage_Matrix"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="m11, m12, m13, m21, m22, m23, m31, m32, m33, offsetX, offsetY, offsetZ"/>  
 - or -  
 <object property="Identity"/>  
 ```  
-  
+ 
 <a name="xamlValues_Matrix"></a>   
 ## XAML Values  
- *M11*  
- <xref:System.Double?displayProperty=fullName>  
+*M11*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the first row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M11%2A> property.  
+ 
+*M12*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the first row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M12%2A> property.  
+ 
+*M13*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the first row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M13%2A> property.  
+ 
+*M14*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the first row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M14%2A> property.  
+ 
+*M21*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the second row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M21%2A> property.  
+ 
+*M22*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the second row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M22%2A> property.  
+ 
+*M23*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the second row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M23%2A> property.  
+ 
+*M24*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the second row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M24%2A> property.  
+ 
+*M31*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the third row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M31%2A> property.  
+ 
+*M32*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the third row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M32%2A> property.  
+ 
+*M33*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the third row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M34%2A> property.  
+ 
+*M34*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the third row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M33%2A> property.  
+ 
+*M44*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the fourth row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M44%2A> property.  
+ 
+*offsetX*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the fourth row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.OffsetX%2A> property.  
+ 
+*offsetY*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the fourth row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.OffsetY%2A> property.  
+ 
+*offsetZ*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the fourth row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.OffsetZ%2A> property.  
+ 
   
- The value in the first row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M11%2A> property.  
-  
- *M12*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the first row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M12%2A> property.  
-  
- *M13*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the first row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M13%2A> property.  
-  
- *M14*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the first row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M14%2A> property.  
-  
- *M21*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the second row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M21%2A> property.  
-  
- *M22*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the second row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M22%2A> property.  
-  
- *M23*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the second row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M23%2A> property.  
-  
- *M24*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the second row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M24%2A> property.  
-  
- *M31*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the third row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M31%2A> property.  
-  
- *M32*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the third row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M32%2A> property.  
-  
- *M33*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the third row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M34%2A> property.  
-  
- *M34*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the third row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M33%2A> property.  
-  
- *M44*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the fourth row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M44%2A> property.  
-  
- *offsetX*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the fourth row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.OffsetX%2A> property.  
-  
- *offsetY*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the fourth row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.OffsetY%2A> property.  
-  
- *offsetZ*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the fourth row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.OffsetZ%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[vector3dsample#Mil3dVectorSample3DN15](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn15)]
- [!code-vb[vector3dsample#Mil3dVectorSample3DN15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn15)]  
-  
+[!code-csharp[vector3dsample#Mil3dVectorSample3DN15](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn15)]
+[!code-vb[vector3dsample#Mil3dVectorSample3DN15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn15)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -210,33 +210,33 @@
         <summary>Appends a specified matrix to the current matrix.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Matrices can be appended or prepended to other matrices. Appending matrix A to matrix B denotes a transformation by B and then by A:  
-  
+Matrices can be appended or prepended to other matrices. Appending matrix A to matrix B denotes a transformation by B and then by A:  
+ 
 ```  
-  
+ 
 A(B(...))  
-  
+ 
 ```  
-  
- Prepending A to B denotes a transformation by A and then by B:  
-  
+ 
+Prepending A to B denotes a transformation by A and then by B:  
+ 
 ```  
-  
+ 
 B(A(...))  
-  
+ 
 ```  
-  
- To transform point P by A and then by B, append B to A:  
-  
+ 
+To transform point P by A and then by B, append B to A:  
+ 
 ```  
-  
+ 
 C = A.Append(B);  
 P' = C.Transform(P);  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,10 +385,10 @@ P' = C.Transform(P);
         <value>The identity Matrix3D.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In an identity matrix, all coefficients are 0 except the [1,1][2,2][3,3][4,4] coefficients, which are set to 1. The identity matrix is special in that when it is applied to vertices, they are unchanged. The identity matrix is used as the starting point for matrices that modify vertex values to create rotations, translations, and any other transformations that can be represented by a 4x4 matrix.  
-  
+In an identity matrix, all coefficients are 0 except the [1,1][2,2][3,3][4,4] coefficients, which are set to 1. The identity matrix is special in that when it is applied to vertices, they are unchanged. The identity matrix is used as the starting point for matrices that modify vertex values to create rotations, translations, and any other transformations that can be represented by a 4x4 matrix.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -410,10 +410,10 @@ P' = C.Transform(P);
         <summary>Inverts this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a Matrix3D structure is invertible, read its <xref:System.Windows.Media.Media3D.Matrix3D.HasInverse%2A> property.  
-  
+To determine whether a Matrix3D structure is invertible, read its <xref:System.Windows.Media.Media3D.Matrix3D.HasInverse%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Throws InvalidOperationException if the matrix is not invertible.</exception>
@@ -456,10 +456,10 @@ P' = C.Transform(P);
           <see langword="true" /> if the Matrix3D structure is an identity Matrix3D; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In an identity matrix, all coefficients are 0 except the [1,1][2,2][3,3][4,4] coefficients, which are set to 1. The identity matrix is special in that when it is applied to vertices, they are unchanged. The identity matrix is used as the starting point for matrices that modify vertex values to create rotations, translations, and any other transformations that can be represented by a 4x4 matrix.  
-  
+In an identity matrix, all coefficients are 0 except the [1,1][2,2][3,3][4,4] coefficients, which are set to 1. The identity matrix is special in that when it is applied to vertices, they are unchanged. The identity matrix is used as the starting point for matrices that modify vertex values to create rotations, translations, and any other transformations that can be represented by a 4x4 matrix.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -801,10 +801,10 @@ P' = C.Transform(P);
           <see cref="T:System.Boolean" /> that indicates whether the two matrix instances are equal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that double values can acquire error when operated upon, so that an exact comparison between two values that are logically equal may fail. Furthermore, using this equality operator, Double.NaN is not equal to itself.  
-  
+Note that double values can acquire error when operated upon, so that an exact comparison between two values that are logically equal may fail. Furthermore, using this equality operator, Double.NaN is not equal to itself.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -833,10 +833,10 @@ P' = C.Transform(P);
           <see cref="T:System.Boolean" /> that indicates whether the two matrix instances are inequal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that double values can acquire error when operated upon, so that an exact comparison between two values that are logically inequal may fail. Furthermore, using this equality operator, Double.NaN is not equal to itself.  
-  
+Note that double values can acquire error when operated upon, so that an exact comparison between two values that are logically inequal may fail. Furthermore, using this equality operator, Double.NaN is not equal to itself.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1106,10 +1106,10 @@ P' = C.Transform(P);
         <summary>Changes this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure into an identity matrix.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In an identity matrix, all coefficients are 0 except the [1,1][2,2][3,3][4,4] coefficients, which are set to 1. The identity matrix is special in that when it is applied to vertices, they are unchanged. The identity matrix is used as the starting point for matrices that modify vertex values to create rotations, translations, and any other transformations that can be represented by a 4x4 matrix.  
-  
+In an identity matrix, all coefficients are 0 except the [1,1][2,2][3,3][4,4] coefficients, which are set to 1. The identity matrix is special in that when it is applied to vertices, they are unchanged. The identity matrix is used as the starting point for matrices that modify vertex values to create rotations, translations, and any other transformations that can be represented by a 4x4 matrix.  
+ 
  ]]></format>
         </remarks>
       </Docs>

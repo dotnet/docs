@@ -14,21 +14,21 @@
     <summary>Paints an area with a radial gradient. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.RadialGradientBrush> is similar in programming model to the <xref:System.Windows.Media.LinearGradientBrush>. However, the linear gradient has a start and an end point to define the gradient vector, while the radial gradient has a circle, along with a focal point, to define the gradient behavior. The circle defines the end point of the gradient. In other words, a gradient stop at 1.0 defines the color at the circle's circumference. The focal point defines the center of the gradient. A gradient stop at 0.0 defines the color at the focal point.  
-  
- The following image shows a rectangle filled with a radial gradient. The radial gradient that goes from white to gray. The outside circle represents the gradient circle while the red dot denotes the focal point. This gradient has its <xref:System.Windows.Media.GradientBrush.SpreadMethod%2A> set to <xref:System.Windows.Media.GradientSpreadMethod>.  
-  
- ![A radial gradient with highlighted components](~/add/media/art-radialgradientfocalpoint.jpg "A radial gradient with highlighted components")  
+The <xref:System.Windows.Media.RadialGradientBrush> is similar in programming model to the <xref:System.Windows.Media.LinearGradientBrush>. However, the linear gradient has a start and an end point to define the gradient vector, while the radial gradient has a circle, along with a focal point, to define the gradient behavior. The circle defines the end point of the gradient. In other words, a gradient stop at 1.0 defines the color at the circle's circumference. The focal point defines the center of the gradient. A gradient stop at 0.0 defines the color at the focal point.  
+ 
+The following image shows a rectangle filled with a radial gradient. The radial gradient that goes from white to gray. The outside circle represents the gradient circle while the red dot denotes the focal point. This gradient has its <xref:System.Windows.Media.GradientBrush.SpreadMethod%2A> set to <xref:System.Windows.Media.GradientSpreadMethod>.  
+ 
+![A radial gradient with highlighted components](~/add/media/art-radialgradientfocalpoint.jpg "A radial gradient with highlighted components")  
 Radial gradient with a highlighted focal point  
-  
+ 
 > [!NOTE]
 >  <xref:System.Windows.Media.RadialGradientBrush> objects are rendered using hardware acceleration on <xref:System.Windows.Media.RenderCapability.Tier%2A> 2 systems. For more information about hardware tiers, see [Graphics Rendering Tiers](~/docs/framework/wpf/advanced/graphics-rendering-tiers.md).  
-  
+ 
 ## Freezable Features  
- Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.RadialGradientBrush> class provides several special features: <xref:System.Windows.Media.RadialGradientBrush> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.RadialGradientBrush> class provides several special features: <xref:System.Windows.Media.RadialGradientBrush> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -103,10 +103,10 @@ Radial gradient with a highlighted focal point
         <value>The two-dimensional point located at the center of the radial gradient.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default central point location of the gradient circle is (0.5, 0.5).  
-  
+The default central point location of the gradient circle is (0.5, 0.5).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,12 +146,12 @@ Radial gradient with a highlighted focal point
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,12 +174,12 @@ Radial gradient with a highlighted focal point
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

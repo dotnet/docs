@@ -24,12 +24,12 @@
     <summary>Defines the interface that must be implemented by channel listeners to accept type-specific channels.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Listener factories that implement the <xref:System.ServiceModel.Channels.IChannelListener> or <xref:System.ServiceModel.Channels.IChannelListener%601> interfaces provide services with the mechanisms used to accept the channels produced by clients that initiate and enable communication with a service.  
-  
- Implementing the <xref:System.ServiceModel.Channels.IChannelListener%601> contract allows users to accept multiple channels of a given type without having to specify the channel type each time. In other words, defining the channel type as a generic parameter for the <xref:System.ServiceModel.Channels.IChannelListener%601> interface means that it is not necessary to pass the type into the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%2A> methods. If users want to accept different channel types, they can create additional channel listeners for each type of channel required.  
-  
+Listener factories that implement the <xref:System.ServiceModel.Channels.IChannelListener> or <xref:System.ServiceModel.Channels.IChannelListener%601> interfaces provide services with the mechanisms used to accept the channels produced by clients that initiate and enable communication with a service.  
+ 
+Implementing the <xref:System.ServiceModel.Channels.IChannelListener%601> contract allows users to accept multiple channels of a given type without having to specify the channel type each time. In other words, defining the channel type as a generic parameter for the <xref:System.ServiceModel.Channels.IChannelListener%601> interface means that it is not necessary to pass the type into the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%2A> methods. If users want to accept different channel types, they can create additional channel listeners for each type of channel required.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <returns>A channel of type <paramref name="TChannel" /> accepted by the listener.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%28System.TimeSpan%29> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
-  
+It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%28System.TimeSpan%29> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <returns>A channel of type <paramref name="TChannel" /> accepted by the listener.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is recommended that this overload with an explicit timeout be used rather than the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel>. The `timeout` specified for this method overrides any default timeouts set by the system for the service.  
-  
+It is recommended that this overload with an explicit timeout be used rather than the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel>. The `timeout` specified for this method overrides any default timeouts set by the system for the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous acceptance of a channel operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.BeginAcceptChannel%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
-  
+It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.BeginAcceptChannel%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous acceptance of a channel operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is recommended that this overload with an explicit timeout be used rather than the <xref:System.ServiceModel.Channels.IChannelListener%601.BeginAcceptChannel%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29>. The `timeout` specified for this method overrides any default timeouts set by the system for the service.  
-  
+It is recommended that this overload with an explicit timeout be used rather than the <xref:System.ServiceModel.Channels.IChannelListener%601.BeginAcceptChannel%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29>. The `timeout` specified for this method overrides any default timeouts set by the system for the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <summary>Begins an asynchronous operation to accept a channel within a specified or default interval of time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.BeginAcceptChannel%2A> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
-  
+It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.BeginAcceptChannel%2A> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <summary>Accepts a channel of a specified type for communication with a client.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%28System.TimeSpan%29> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
-  
+It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%28System.TimeSpan%29> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>

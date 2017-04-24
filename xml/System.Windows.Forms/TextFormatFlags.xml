@@ -18,18 +18,18 @@
     <summary>Specifies the display and layout information for text strings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TextFormatFlags> enumeration is used by the <xref:System.Windows.Forms.TextRenderer> when drawing and measuring text. The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the ExpandTabs flag.  
+The <xref:System.Windows.Forms.TextFormatFlags> enumeration is used by the <xref:System.Windows.Forms.TextRenderer> when drawing and measuring text. The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the ExpandTabs flag.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.TextFormatFlags> enumeration. To run this example, paste the following code into a Windows Form. Call `RenderText6` from the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-csharp[System.Windows.Forms.TextRendererExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/CS/Form1.cs#7)]
- [!code-vb[System.Windows.Forms.TextRendererExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/VB/Form1.vb#7)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.TextFormatFlags> enumeration. To run this example, paste the following code into a Windows Form. Call `RenderText6` from the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-csharp[System.Windows.Forms.TextRendererExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/CS/Form1.cs#7)]
+[!code-vb[System.Windows.Forms.TextRendererExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/VB/Form1.vb#7)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -146,12 +146,12 @@
         <summary>Applies to Windows 2000 and Windows XP only:</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Ignores the ampersand (&) prefix character in the text. The letter that follows will not be underlined, but other mnemonic-prefix characters are still processed. For example, an input string of "A&bc&&d" with HidePrefix applied would result in output of "Abc&d".  
-  
- Compare with NoPrefix and PrefixOnly.  
-  
+Ignores the ampersand (&) prefix character in the text. The letter that follows will not be underlined, but other mnemonic-prefix characters are still processed. For example, an input string of "A&bc&&d" with HidePrefix applied would result in output of "Abc&d".  
+ 
+Compare with NoPrefix and PrefixOnly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,10 +268,10 @@
         <summary>Applies to Windows 98, Windows Me, Windows 2000, or Windows XP only:</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Prevents a line break at a double-wide character string, so that the line-breaking rule is equivalent to single-wide character strings. For example, NoFullWidthCharacterBreak increases the readability of icon labels in Korean windows. This value has no effect unless WordBreak is also specified.  
-  
+Prevents a line break at a double-wide character string, so that the line-breaking rule is equivalent to single-wide character strings. For example, NoFullWidthCharacterBreak increases the readability of icon labels in Korean windows. This value has no effect unless WordBreak is also specified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,10 +308,10 @@
         <summary>Turns off processing of prefix characters. Typically, the ampersand (&amp;) mnemonic-prefix character is interpreted as a directive to underscore the character that follows, and the double-ampersand (&amp;&amp;) mnemonic-prefix characters as a directive to print a single ampersand. By specifying <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" />, this processing is turned off. For example, an input string of "A&amp;bc&amp;&amp;d" with <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" /> applied would result in output of "A&amp;bc&amp;&amp;d".</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Compare with HidePrefix and PrefixOnly.  
-  
+Compare with HidePrefix and PrefixOnly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,12 +348,12 @@
         <summary>Applies to Windows 2000 or Windows XP only:</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Draws only an underline at the position of the character following the ampersand (&) prefix character. Does not draw any other characters in the string. For example, an input string of "A&bc&&d" would result in output of " _   ".  
-  
- Compare with HidePrefix and NoPrefix.  
-  
+Draws only an underline at the position of the character following the ampersand (&) prefix character. Does not draw any other characters in the string. For example, an input string of "A&bc&&d" would result in output of " _   ".  
+ 
+Compare with HidePrefix and NoPrefix.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,21 +23,21 @@
     <summary>Contains the <see cref="T:System.Runtime.InteropServices.FUNCFLAGS" /> that were originally imported for this method from the COM type library.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) applies this attribute to methods.  
+The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) applies this attribute to methods.  
+ 
+This attribute is applied when a type library is imported and should never be changed. It is only applied when the method's <xref:System.Runtime.InteropServices.FUNCFLAGS> evaluate to non zero. The attribute is designed to be used by tools that need to know how the original <xref:System.Runtime.InteropServices.FUNCFLAGS> were set. The common language runtime does not use this attribute.  
+ 
   
- This attribute is applied when a type library is imported and should never be changed. It is only applied when the method's <xref:System.Runtime.InteropServices.FUNCFLAGS> evaluate to non zero. The attribute is designed to be used by tools that need to know how the original <xref:System.Runtime.InteropServices.FUNCFLAGS> were set. The common language runtime does not use this attribute.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to get the <xref:System.Runtime.InteropServices.TypeLibFuncAttribute> value of a method.  
-  
- [!code-cpp[ImprovedInteropSnippets#5](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile5.cpp#5)]
- [!code-csharp[ImprovedInteropSnippets#5](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile5.cs#5)]
- [!code-vb[ImprovedInteropSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile5.vb#5)]  
-  
+The following example demonstrates how to get the <xref:System.Runtime.InteropServices.TypeLibFuncAttribute> value of a method.  
+ 
+[!code-cpp[ImprovedInteropSnippets#5](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile5.cpp#5)]
+[!code-csharp[ImprovedInteropSnippets#5](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile5.cs#5)]
+[!code-vb[ImprovedInteropSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile5.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

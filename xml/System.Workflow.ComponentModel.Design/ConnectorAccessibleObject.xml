@@ -19,16 +19,16 @@
     <summary>Provides information on connectors between activity designers that accessibility applications use to adjust an application's UI for users with impairments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- When using a freeform layout, activity designers are connected to each other using the <xref:System.Workflow.ComponentModel.Design.Connector> class.  The <xref:System.Workflow.ComponentModel.Design.ConnectorAccessibleObject> class is used to provide information on these connectors between activity designers that accessibility applications use to adjust an application's UI.  
-  
- Also, you can use this class to customize the drawing when you derive a class from <xref:System.Workflow.ComponentModel.Design.Connector>.  
-  
+ 
+When using a freeform layout, activity designers are connected to each other using the <xref:System.Workflow.ComponentModel.Design.Connector> class.  The <xref:System.Workflow.ComponentModel.Design.ConnectorAccessibleObject> class is used to provide information on these connectors between activity designers that accessibility applications use to adjust an application's UI.  
+ 
+Also, you can use this class to customize the drawing when you derive a class from <xref:System.Workflow.ComponentModel.Design.Connector>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -146,10 +146,10 @@
         <value>One of the values of AccessibleRole.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `AccessibleRole` property describes what kind of user interface element an object is. If the control's role cannot be determined, the `AccessibleRole` property is set to `Default`.  
-  
+The `AccessibleRole` property describes what kind of user interface element an object is. If the control's role cannot be determined, the `AccessibleRole` property is set to `Default`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

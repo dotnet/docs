@@ -14,12 +14,12 @@
     <summary>Contains the hashing algorithms that Message Queuing (MSMQ) can use to sign messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing can secure messages by signing them. The <xref:System.ServiceModel.MsmqSecureHashAlgorithm> class is an enumeration that contains the hashing algorithms that Message Queuing can use to sign messages.  
-  
- Sha256 and Sha512 are supported only on [!INCLUDE[wv](~/includes/wv-md.md)].  
-  
+Message Queuing can secure messages by signing them. The <xref:System.ServiceModel.MsmqSecureHashAlgorithm> class is an enumeration that contains the hashing algorithms that Message Queuing can use to sign messages.  
+ 
+Sha256 and Sha512 are supported only on [!INCLUDE[wv](~/includes/wv-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>

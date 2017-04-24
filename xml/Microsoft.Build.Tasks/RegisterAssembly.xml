@@ -18,14 +18,14 @@
     <summary>Implements the <c>RegisterAssembly</c> task. Use the <c>RegisterAssembly</c> element in your project file to create and execute this task. For usage and parameter information, see [RegisterAssembly Task](http://msdn.microsoft.com/library/ba5f19ac-6764-4d28-9b79-a86de58f8987).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Framework64/\<version>/RegisterAssemblyTask cannot resolve a library of COM objects registered as 32-bit components. Framework/\<version>/RegisterAssemblyTask cannot resolve a library of COM objects registered as 64-bit components.  
-  
- For example, if you register a library of COM objects called ClassLibrary1 as 32-bit components on a 64-bit machine, run Visual Studio, and change the target to x64, the build fails with the following error:  
-  
- `ClassLibrary1.dll is not a valid assembly`  
-  
+Framework64/\<version>/RegisterAssemblyTask cannot resolve a library of COM objects registered as 32-bit components. Framework/\<version>/RegisterAssemblyTask cannot resolve a library of COM objects registered as 64-bit components.  
+ 
+For example, if you register a library of COM objects called ClassLibrary1 as 32-bit components on a 64-bit machine, run Visual Studio, and change the target to x64, the build fails with the following error:  
+ 
+`ClassLibrary1.dll is not a valid assembly`  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -108,10 +108,10 @@
           <see langword="true" /> if the task creates a codebase entry in the registry; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should not specify this option if you will subsequently install the assembly that you are registering into the global assembly cache.  
-  
+You should not specify this option if you will subsequently install the assembly that you are registering into the global assembly cache.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -186,10 +186,10 @@
           <see langword="null" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Logs an error indicating that the specified assembly is not registered for COM interop in all cases.  
-  
+Logs an error indicating that the specified assembly is not registered for COM interop in all cases.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -217,18 +217,18 @@
         <value>The type library to generate from the specified assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The generated type library contains definitions of the accessible types defined within the assembly. The type library is only generated if one of the following is true:  
-  
+The generated type library contains definitions of the accessible types defined within the assembly. The type library is only generated if one of the following is true:  
+ 
 -   A type library of that name does not exist at that location.  
-  
+ 
 -   A type library exists but it is older than the assembly being passed in.  
-  
- If the type library is newer than the assembly being passed, a new one will not be created, but the assembly will still be registered.  
-  
- If this property is specified, it must have the same number of items as the <xref:Microsoft.Build.Tasks.RegisterAssembly.Assemblies%2A> property or the task will fail. If no inputs are specified, the task will default to the name of the assembly and change the extension of the item to .tlb.  
-  
+ 
+If the type library is newer than the assembly being passed, a new one will not be created, but the assembly will still be registered.  
+ 
+If this property is specified, it must have the same number of items as the <xref:Microsoft.Build.Tasks.RegisterAssembly.Assemblies%2A> property or the task will fail. If no inputs are specified, the task will default to the name of the assembly and change the extension of the item to .tlb.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -14,10 +14,10 @@
     <summary>The Base class for RST and RSTR.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the message and elements that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
-  
+For more information about the message and elements that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustMessage" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor for extensibility.  
-  
+The default constructor for extensibility.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -62,12 +62,12 @@
           <see langword="true" /> if returned tokens should allow requests for postdated tokens; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element indicates that returned tokens should allow requests for postdated tokens.  
-  
- This property is usually used with the token renewal binding.  
-  
+This optional element indicates that returned tokens should allow requests for postdated tokens.  
+ 
+This property is usually used with the token renewal binding.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,12 +89,12 @@
         <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> that represents the endpoint address for which the security token is desired.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element specifies the endpoint address for which this security token is desired; for example, the service to which the token applies.  
-  
- Either wst:TokenType or wst:AppliesTo should be defined in the token request message. If both are specified, the wst:AppliesTo field takes precedence.  
-  
+This optional element specifies the endpoint address for which this security token is desired; for example, the service to which the token applies.  
+ 
+Either wst:TokenType or wst:AppliesTo should be defined in the token request message. If both are specified, the wst:AppliesTo field takes precedence.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <value>A string that contains a URI that indicates the type of authentication desired.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element indicates the type of authentication desired, specified as a URI.  
-  
+This optional element indicates the type of authentication desired, specified as a URI.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,10 +177,10 @@
         <value>A string that contains a URI that identifies the context of a request or response message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The optional Context attribute on an RST element specifies an identifier (context) for a request. All subsequent RSTR elements relating to this request must carry this attribute.  
-  
+The optional Context attribute on an RST element specifies an identifier (context) for a request. All subsequent RSTR elements relating to this request must carry this attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <value>A string that contains a URI that indicates the encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional URI element indicates the desired encryption algorithm used within the returned token.  
-  
+This optional URI element indicates the desired encryption algorithm used within the returned token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,10 +227,10 @@
         <value>A string that contains a URI that indicates the desired encryption algoritm to be used with the issued security token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional URI element indicates the desired encryption algorithm to be used with the issued security token.  
-  
+This optional URI element indicates the desired encryption algorithm to be used with the issued security token.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> or an empty string occurs.</exception>
@@ -253,10 +253,10 @@
         <value>A <see cref="T:System.IdentityModel.Protocols.WSTrust.Entropy" /> that represents the contents of the entropy element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element allows a requestor to specify entropy that is to be used in creating the key. This is commonly used in a token issuance request message. The value of this element should be either an EncryptedKey or BinarySecret depending on whether or not the key is encrypted.  
-  
+This optional element allows a requestor to specify entropy that is to be used in creating the key. This is commonly used in a token issuance request message. The value of this element should be either an EncryptedKey or BinarySecret depending on whether or not the key is encrypted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
         <value>A string that contains the URI that identifies the type of key desired.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional URI element indicates the type of key desired in the security token.  
-  
+This optional URI element indicates the type of key desired in the security token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,10 +322,10 @@
         <value>A string that contains the URI that identifies the key wrap algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional URI indicates the desired algorithm to use for key wrapping when STS encrypts the issued token for the relying party using an asymmetric key.  
-  
+This optional URI indicates the desired algorithm to use for key wrapping when STS encrypts the issued token for the relying party using an asymmetric key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,10 +347,10 @@
         <value>A <see cref="T:System.IdentityModel.Protocols.WSTrust.Lifetime" /> that represents the desired time during which the returned token will be valid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element specifies the desired time range during which the returned security token is valid.  
-  
+This optional element specifies the desired time range during which the returned security token is valid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,10 +372,10 @@
         <value>A string that contains the address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a local extension that is used exclusively in passive scenarios with the WS-Federation protocol.  
-  
+This is a local extension that is used exclusively in passive scenarios with the WS-Federation protocol.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,10 +397,10 @@
         <value>A string that contains a URI that indicates the request type; for example, one of the constants defined in the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestTypes" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This required element indicates the request type.  
-  
+This required element indicates the request type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,10 +422,10 @@
         <value>A string that contains a URI that indicates the signature algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional URI element indicates the desired signature algorithm used within the returned token.  
-  
+This optional URI element indicates the desired signature algorithm used within the returned token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -447,10 +447,10 @@
         <value>A string that contains a URI that identifies the desired signature algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional URI element indicates the desired signature algorithm to be used with the issued security token. This is an extension to the RequestSecurityToken element.  
-  
+This optional URI element indicates the desired signature algorithm to be used with the issued security token. This is an extension to the RequestSecurityToken element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the value to <see langword="null" /> or an empty string occurs.</exception>
@@ -473,10 +473,10 @@
         <value>A string that contains a URI that indicates the token type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element indicates the desired token type.  
-  
+This optional element indicates the desired token type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -498,10 +498,10 @@
         <value>A <see cref="T:System.IdentityModel.Protocols.WSTrust.UseKey" /> that contains the key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the requestor wishes to use an existing key rather than create a new one, then this property can be used to reference a security token containing the desired key. This is commonly used in the asymetric key issurance case.  
-  
+If the requestor wishes to use an existing key rather than create a new one, then this property can be used to reference a security token containing the desired key. This is commonly used in the asymetric key issurance case.  
+ 
  ]]></format>
         </remarks>
       </Docs>

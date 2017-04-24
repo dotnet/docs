@@ -13,10 +13,10 @@
     <summary>Specifies the reason that a cached item is being removed from the <see cref="T:System.Web.Caching.Cache" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the <xref:System.Web.Caching.CacheItemRemovedReason> enumeration, this enumeration does not include the `Removed` or `Underused` values. Updateable cache items are not removable and can thus never be automatically removed by ASP.NET even if there is a need to free memory.  
-  
+Unlike the <xref:System.Web.Caching.CacheItemRemovedReason> enumeration, this enumeration does not include the `Removed` or `Underused` values. Updateable cache items are not removable and can thus never be automatically removed by ASP.NET even if there is a need to free memory.  
+ 
  ]]></format>
     </remarks>
   </Docs>

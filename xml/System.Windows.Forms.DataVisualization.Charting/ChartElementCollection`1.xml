@@ -167,10 +167,10 @@
         <summary>Resumes the invalidation of a chart element in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you call the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.SuspendUpdates%2A> method several times, you will need to call the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.ResumeUpdates%2A> method an equal number of times.  
-  
+If you call the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.SuspendUpdates%2A> method several times, you will need to call the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.ResumeUpdates%2A> method an equal number of times.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,12 +215,12 @@
         <summary>Suspends the invalidation of a chart element in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A call to the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.Invalidate%2A> method will have no effect after the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.SuspendUpdates%2A> method is called.  
-  
- If you call the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.SuspendUpdates%2A> method several times, you will need to call the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.ResumeUpdates%2A> method an equal number of times.  
-  
+A call to the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.Invalidate%2A> method will have no effect after the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.SuspendUpdates%2A> method is called.  
+ 
+If you call the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.SuspendUpdates%2A> method several times, you will need to call the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection%601.ResumeUpdates%2A> method an equal number of times.  
+ 
  ]]></format>
         </remarks>
       </Docs>

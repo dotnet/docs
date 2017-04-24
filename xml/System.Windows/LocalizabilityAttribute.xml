@@ -19,12 +19,12 @@
     <summary>Specifies the localization attributes for a [!INCLUDE[TLA#tla_baml](~/includes/tlasharptla-baml-md.md)] class or class member.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This attribute can be applied to a class, property, or method.  
-  
- For more information on how to use localization attributes, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
-  
+This attribute can be applied to a class, property, or method.  
+ 
+For more information on how to use localization attributes, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <value>The category setting of the localization attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the modifiability settings of the localization attribute.  
-  
+The following table shows the modifiability settings of the localization attribute.  
+ 
 |Category setting|Meaning|  
 |----------------------|-------------|  
 |<xref:System.Windows.LocalizationCategory>|Resource does not belong to a standard category.|  
@@ -88,14 +88,14 @@
 |<xref:System.Windows.LocalizationCategory>|Inherits category from parent node.|  
 |<xref:System.Windows.LocalizationCategory>|Do not localize this resource. This does not apply to any child nodes of the resource.|  
 |<xref:System.Windows.LocalizationCategory>|Do not localize this resource, or any of its child nodes whose category is set to <xref:System.Windows.LocalizationCategory>.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the category settings of localization attributes defined for a button.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/AttributesSnippets/CSharp/Attributes.xaml#attributessnippet1)]  
-  
+The following code example shows the category settings of localization attributes defined for a button.  
+ 
+[!code-xml[AttributesSnippets#AttributesSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/AttributesSnippets/CSharp/Attributes.xaml#attributessnippet1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,23 +117,23 @@
         <value>The modifiability setting of the localization attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the modifiability settings of the localization attribute.  
-  
+The following table shows the modifiability settings of the localization attribute.  
+ 
 |Modifiability setting|Meaning|  
 |---------------------------|-------------|  
 |<xref:System.Windows.Modifiability>|Targeted value is modifiable by localizers.|  
 |<xref:System.Windows.Modifiability>|Targeted value is not modifiable by localizers.|  
 |<xref:System.Windows.Modifiability>|Targeted value's modifiability is inherited from its parent node.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the modifiability setting of localization attributes defined for a button.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/AttributesSnippets/CSharp/Attributes.xaml#attributessnippet1)]  
-  
+The following code example shows the modifiability setting of localization attributes defined for a button.  
+ 
+[!code-xml[AttributesSnippets#AttributesSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/AttributesSnippets/CSharp/Attributes.xaml#attributessnippet1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,23 +155,23 @@
         <value>The readability setting of the localization attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the readability settings of the localization attribute.  
-  
+The following table shows the readability settings of the localization attribute.  
+ 
 |Readability setting|Meaning|  
 |-------------------------|-------------|  
 |<xref:System.Windows.Readability>|Targeted value is readable text.|  
 |<xref:System.Windows.Readability>|Targeted value is not readable.|  
 |<xref:System.Windows.Readability>|Targeted value's readability is inherited from its parent node.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the readability setting of localization attributes defined for a text block.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/AttributesSnippets/CSharp/Comments.xaml#attributessnippet4)]  
-  
+The following code example shows the readability setting of localization attributes defined for a text block.  
+ 
+[!code-xml[AttributesSnippets#AttributesSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/AttributesSnippets/CSharp/Comments.xaml#attributessnippet4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

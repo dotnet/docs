@@ -19,14 +19,14 @@
     <summary>Factory that provides instances of <see cref="T:System.ServiceModel.WorkflowServiceHost" /> in managed hosting environments where the host instance is created dynamically in response to incoming messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The managed hosting environments that support dynamic activation are Internet Information Services (IIS) and Windows Process Activation Service (WAS).  
-  
- If you have implemented a custom derivative of <xref:System.ServiceModel.WorkflowServiceHost>, consider also implementing a factory that derives from the <xref:System.ServiceModel.Activation.WorkflowServiceHostFactory> class.  
-  
- If you have implemented a custom derivative of <xref:System.ServiceModel.ServiceHostBase> instead, then consider also implementing a factory that derives your factory from <xref:System.ServiceModel.Activation.ServiceHostFactoryBase> directly.  
-  
+The managed hosting environments that support dynamic activation are Internet Information Services (IIS) and Windows Process Activation Service (WAS).  
+ 
+If you have implemented a custom derivative of <xref:System.ServiceModel.WorkflowServiceHost>, consider also implementing a factory that derives from the <xref:System.ServiceModel.Activation.WorkflowServiceHostFactory> class.  
+ 
+If you have implemented a custom derivative of <xref:System.ServiceModel.ServiceHostBase> instead, then consider also implementing a factory that derives your factory from <xref:System.ServiceModel.Activation.ServiceHostFactoryBase> directly.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,28 +69,28 @@
         <returns>A <see cref="T:System.ServiceModel.ServiceHostBase" /> object associated with the workflow service. The default implementation returns a <see cref="T:System.ServiceModel.WorkflowServiceHost" /> object with the specified base addresses.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `constructorString` argument could be either a fully qualified workflow type name or it could be the relative file path of the workflow definition file declared in the .svc file in which <xref:System.ServiceModel.Activation.ServiceHostFactory> directives are placed.  
-  
+The `constructorString` argument could be either a fully qualified workflow type name or it could be the relative file path of the workflow definition file declared in the .svc file in which <xref:System.ServiceModel.Activation.ServiceHostFactory> directives are placed.  
+ 
 > [!NOTE]
 >  To associate a rule definition with a workflow definition, name the rule definition file the same name as the workflow definition file with a .rules extension and place it in same directory as the workflow definition file. For example, the rules definition file CalculatorServiceWorkflow.rules must be in the same directory as CalculatorServiceWorkflow.xoml.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following is an example of a type-based reference to the workflow service CalculatorServiceWorkflow.  
-  
+The following is an example of a type-based reference to the workflow service CalculatorServiceWorkflow.  
+ 
 ```  
 <%@ServiceHost language=c# Debug="true" Factory="System.ServiceModel.Activation.WorkflowServiceHostFactory" Service="CalculatorServiceWorkflow" %>  
 ```  
-  
- The following is an example of a workflow definition file reference to the workflow service CalculatorServiceWorkflow.  
-  
+ 
+The following is an example of a workflow definition file reference to the workflow service CalculatorServiceWorkflow.  
+ 
 ```  
 <%@ServiceHost language=c# Debug="true" Factory="System.ServiceModel.Activation.WorkflowServiceHostFactory" Service="CalculatorServiceWorkflow.xoml" %>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -46,34 +46,34 @@
     <summary>Represents a databindable, customized view of a <see cref="T:System.Data.DataTable" /> for sorting, filtering, searching, editing, and navigation. The <see cref="T:System.Data.DataView" /> does not store data, but instead represents a connected view of its corresponding <see cref="T:System.Data.DataTable" />. Changes to the <see cref="T:System.Data.DataView" />’s data will affect the <see cref="T:System.Data.DataTable" />. Changes to the <see cref="T:System.Data.DataTable" />’s data will affect all <see cref="T:System.Data.DataView" />s associated with it.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A major function of the <xref:System.Data.DataView> is to allow for data binding on both Windows Forms and Web Forms.  
-  
- Additionally, a <xref:System.Data.DataView> can be customized to present a subset of data from the <xref:System.Data.DataTable>. This capability lets you have two controls bound to the same <xref:System.Data.DataTable>, but that show different versions of the data. For example, one control might be bound to a <xref:System.Data.DataView> that shows all the rows in the table, and a second might be configured to display only the rows that have been deleted from the <xref:System.Data.DataTable>. The <xref:System.Data.DataTable> also has a <xref:System.Data.DataTable.DefaultView%2A> property. This returns the default <xref:System.Data.DataView> for the table. For example, if you want to create a custom view on the table, set the <xref:System.Data.DataView.RowFilter%2A> on the <xref:System.Data.DataView> returned by the <xref:System.Data.DataTable.DefaultView%2A>.  
-  
- To create a filtered and sorted view of data, set the <xref:System.Data.DataView.RowFilter%2A> and <xref:System.Data.DataView.Sort%2A> properties. Then, use the <xref:System.Data.DataView.Item%2A> property to return a single <xref:System.Data.DataRowView>.  
-  
- You can also add and delete from the set of rows using the <xref:System.Data.DataView.AddNew%2A> and <xref:System.Data.DataView.Delete%2A> methods. When you use those methods, the <xref:System.Data.DataView.RowStateFilter%2A> property can set to specify that only deleted rows or new rows be displayed by the <xref:System.Data.DataView>.  
-  
+A major function of the <xref:System.Data.DataView> is to allow for data binding on both Windows Forms and Web Forms.  
+ 
+Additionally, a <xref:System.Data.DataView> can be customized to present a subset of data from the <xref:System.Data.DataTable>. This capability lets you have two controls bound to the same <xref:System.Data.DataTable>, but that show different versions of the data. For example, one control might be bound to a <xref:System.Data.DataView> that shows all the rows in the table, and a second might be configured to display only the rows that have been deleted from the <xref:System.Data.DataTable>. The <xref:System.Data.DataTable> also has a <xref:System.Data.DataTable.DefaultView%2A> property. This returns the default <xref:System.Data.DataView> for the table. For example, if you want to create a custom view on the table, set the <xref:System.Data.DataView.RowFilter%2A> on the <xref:System.Data.DataView> returned by the <xref:System.Data.DataTable.DefaultView%2A>.  
+ 
+To create a filtered and sorted view of data, set the <xref:System.Data.DataView.RowFilter%2A> and <xref:System.Data.DataView.Sort%2A> properties. Then, use the <xref:System.Data.DataView.Item%2A> property to return a single <xref:System.Data.DataRowView>.  
+ 
+You can also add and delete from the set of rows using the <xref:System.Data.DataView.AddNew%2A> and <xref:System.Data.DataView.Delete%2A> methods. When you use those methods, the <xref:System.Data.DataView.RowStateFilter%2A> property can set to specify that only deleted rows or new rows be displayed by the <xref:System.Data.DataView>.  
+ 
 > [!NOTE]
 >  If you do not explicitly specify sort criteria for `DataView`, the `DataRowView` objects in `DataView` are sorted based on the index of DataView's corresponding `DataRow` in the `DataTable.Rows``DataRowCollection`.  
+ 
+[!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] allows developers to create complex, powerful queries over a <xref:System.Data.DataSet> by using [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]. A [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query returns an enumeration of <xref:System.Data.DataRow> objects, however, which is not easily used in a binding scenario. <xref:System.Data.DataView> can be created from a [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query and takes on the filtering and sorting characteristics of that query. [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] extends the functionality of the <xref:System.Data.DataView> by providing [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] expression-based filtering and sorting, which allows for much more complex and powerful filtering and sorting operations than string-based filtering and sorting. See [Data Binding and LINQ to DataSet](~/docs/framework/data/adonet/data-binding-and-linq-to-dataset.md) for more information.  
+ 
   
- [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] allows developers to create complex, powerful queries over a <xref:System.Data.DataSet> by using [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]. A [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query returns an enumeration of <xref:System.Data.DataRow> objects, however, which is not easily used in a binding scenario. <xref:System.Data.DataView> can be created from a [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query and takes on the filtering and sorting characteristics of that query. [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] extends the functionality of the <xref:System.Data.DataView> by providing [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] expression-based filtering and sorting, which allows for much more complex and powerful filtering and sorting operations than string-based filtering and sorting. See [Data Binding and LINQ to DataSet](~/docs/framework/data/adonet/data-binding-and-linq-to-dataset.md) for more information.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a single <xref:System.Data.DataTable> with one column and five rows. Two <xref:System.Data.DataView> objects are created and the <xref:System.Data.DataView.RowStateFilter%2A> is set on each to show different views of the table data. The values are then printed.  
-  
- [!code-csharp[Classic WebData DataView Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView Example/VB/source.vb#1)]  
-  
- The following example creates a <xref:System.Data.DataView> of online orders ordered by total due from a [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query:  
-  
- [!code-csharp[DP DataView Samples#CreateLDVFromQuery1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS/Form1.cs#createldvfromquery1)]
- [!code-vb[DP DataView Samples#CreateLDVFromQuery1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#createldvfromquery1)]  
-  
+The following example creates a single <xref:System.Data.DataTable> with one column and five rows. Two <xref:System.Data.DataView> objects are created and the <xref:System.Data.DataView.RowStateFilter%2A> is set on each to show different views of the table data. The values are then printed.  
+ 
+[!code-csharp[Classic WebData DataView Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView Example/VB/source.vb#1)]  
+ 
+The following example creates a <xref:System.Data.DataView> of online orders ordered by total due from a [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query:  
+ 
+[!code-csharp[DP DataView Samples#CreateLDVFromQuery1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS/Form1.cs#createldvfromquery1)]
+[!code-vb[DP DataView Samples#CreateLDVFromQuery1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#createldvfromquery1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
@@ -98,13 +98,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataView" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Data.DataView>.  
-  
- [!code-csharp[Classic WebData DataView.DataView Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.DataView Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.DataView Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.DataView Example/VB/source.vb#1)]  
-  
+The following example creates a new <xref:System.Data.DataView>.  
+ 
+[!code-csharp[Classic WebData DataView.DataView Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.DataView Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.DataView Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.DataView Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,13 +131,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataView" /> class with the specified <see cref="T:System.Data.DataTable" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Data.DataView> with the specified <xref:System.Data.DataTable>.  
-  
- [!code-csharp[Classic WebData DataView.DataView1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.DataView1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.DataView1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.DataView1 Example/VB/source.vb#1)]  
-  
+The following example creates a new <xref:System.Data.DataView> with the specified <xref:System.Data.DataTable>.  
+ 
+[!code-csharp[Classic WebData DataView.DataView1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.DataView1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.DataView1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.DataView1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,13 +170,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataView" /> class with the specified <see cref="T:System.Data.DataTable" />, <see cref="P:System.Data.DataView.RowFilter" />, <see cref="P:System.Data.DataView.Sort" />, and <see cref="T:System.Data.DataViewRowState" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Data.DataView> with the specified <xref:System.Data.DataTable>.  
-  
- [!code-csharp[Classic WebData DataView.DataView2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.DataView2 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.DataView2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.DataView2 Example/VB/source.vb#1)]  
-  
+The following example creates a new <xref:System.Data.DataView> with the specified <xref:System.Data.DataTable>.  
+ 
+[!code-csharp[Classic WebData DataView.DataView2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.DataView2 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.DataView2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.DataView2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,13 +204,13 @@
         <returns>A new <see cref="T:System.Data.DataRowView" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Data.DataView.AddNew%2A> method to return a new <xref:System.Data.DataRowView> that has been added to the <xref:System.Data.DataTable>.  
-  
- [!code-csharp[Classic WebData DataView.AddNew Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.AddNew Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.AddNew Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.AddNew Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Data.DataView.AddNew%2A> method to return a new <xref:System.Data.DataRowView> that has been added to the <xref:System.Data.DataTable>.  
+ 
+[!code-csharp[Classic WebData DataView.AddNew Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.AddNew Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.AddNew Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.AddNew Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,13 +243,13 @@
           <see langword="true" />, if deletes are allowed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example checks the <xref:System.Data.DataView.AllowDelete%2A> property before deleting a <xref:System.Data.DataRow> from a <xref:System.Data.DataView>.  
-  
- [!code-csharp[Classic WebData DataView.AllowDelete Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.AllowDelete Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.AllowDelete Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.AllowDelete Example/VB/source.vb#1)]  
-  
+The following example checks the <xref:System.Data.DataView.AllowDelete%2A> property before deleting a <xref:System.Data.DataRow> from a <xref:System.Data.DataView>.  
+ 
+[!code-csharp[Classic WebData DataView.AllowDelete Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.AllowDelete Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.AllowDelete Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.AllowDelete Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,13 +282,13 @@
           <see langword="true" />, if edits are allowed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example invokes the <xref:System.Data.DataView.AllowEdit%2A> method before editing a row in a <xref:System.Data.DataView>.  
-  
- [!code-csharp[Classic WebData DataView.AllowEdit Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.AllowEdit Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.AllowEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.AllowEdit Example/VB/source.vb#1)]  
-  
+The following example invokes the <xref:System.Data.DataView.AllowEdit%2A> method before editing a row in a <xref:System.Data.DataView>.  
+ 
+[!code-csharp[Classic WebData DataView.AllowEdit Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.AllowEdit Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.AllowEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.AllowEdit Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,13 +321,13 @@
           <see langword="true" />, if new rows can be added; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example sets the <xref:System.Data.DataView.AllowNew%2A> property to true before adding a new row with the <xref:System.Data.DataView.AddNew%2A> method.  
-  
- [!code-csharp[Classic WebData DataView.AllowNew Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.AllowNew Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.AllowNew Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.AllowNew Example/VB/source.vb#1)]  
-  
+The following example sets the <xref:System.Data.DataView.AllowNew%2A> property to true before adding a new row with the <xref:System.Data.DataView.AddNew%2A> method.  
+ 
+[!code-csharp[Classic WebData DataView.AllowNew Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.AllowNew Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.AllowNew Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.AllowNew Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,10 +386,10 @@
         <summary>Starts the initialization of a <see cref="T:System.Data.DataView" /> that is used on a form or used by another component. The initialization occurs at runtime.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Studio .NET design environment uses this method to start the initialization of a component that is used on a form or used by another component. The <xref:System.Data.DataView.EndInit%2A> method ends the initialization. Using the `BeginInit` and `EndInit` methods prevents the control from being used before it is fully initialized.  
-  
+The Visual Studio .NET design environment uses this method to start the initialization of a component that is used on a form or used by another component. The <xref:System.Data.DataView.EndInit%2A> method ends the initialization. Using the `BeginInit` and `EndInit` methods prevents the control from being used before it is fully initialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -416,12 +416,12 @@
         <summary>Closes the <see cref="T:System.Data.DataView" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method lets you manually close the <xref:System.Data.DataView> in derived classes. Use the corresponding <xref:System.Data.DataView.Open%2A> method to open the <xref:System.Data.DataView>.  
-  
- This property is designed for internal use only.  
-  
+The method lets you manually close the <xref:System.Data.DataView> in derived classes. Use the corresponding <xref:System.Data.DataView.Open%2A> method to open the <xref:System.Data.DataView>.  
+ 
+This property is designed for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -563,17 +563,17 @@
         <summary>Deletes a row at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After deleting a <xref:System.Data.DataRow>, its state changes to `DataViewRowState.Deleted`. You can roll back the deletion by calling <xref:System.Data.DataTable.RejectChanges%2A> on the <xref:System.Data.DataTable>.  
+After deleting a <xref:System.Data.DataRow>, its state changes to `DataViewRowState.Deleted`. You can roll back the deletion by calling <xref:System.Data.DataTable.RejectChanges%2A> on the <xref:System.Data.DataTable>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Data.DataView.Delete%2A> method to delete a row.  
-  
- [!code-vb[Classic WebData DataView.Delete Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Delete Example/VB/source.vb#1)]  
-  
+The following example uses the <xref:System.Data.DataView.Delete%2A> method to delete a row.  
+ 
+[!code-vb[Classic WebData DataView.Delete Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Delete Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,10 +604,10 @@
         <summary>Disposes of the resources (other than memory) used by the <see cref="T:System.Data.DataView" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property change notifications between the <xref:System.Data.DataView> and the underlying <xref:System.Data.DataTable> stop after this method is called. <xref:System.Data.DataView.Dispose%2A> should be called for all <xref:System.Data.DataView> objects.  
-  
+Property change notifications between the <xref:System.Data.DataView> and the underlying <xref:System.Data.DataTable> stop after this method is called. <xref:System.Data.DataView.Dispose%2A> should be called for all <xref:System.Data.DataView> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -634,10 +634,10 @@
         <summary>Ends the initialization of a <see cref="T:System.Data.DataView" /> that is used on a form or used by another component. The initialization occurs at runtime.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Studio .NET design environment uses this method to end the initialization of a component that is used on a form or used by another component. The <xref:System.Data.DataView.BeginInit%2A> method starts the initialization. Using the `BeginInit` and `EndInit` methods prevents the control from being used before it is fully initialized.  
-  
+The Visual Studio .NET design environment uses this method to end the initialization of a component that is used on a form or used by another component. The <xref:System.Data.DataView.BeginInit%2A> method starts the initialization. Using the `BeginInit` and `EndInit` methods prevents the control from being used before it is fully initialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -696,12 +696,12 @@
         <returns>The index of the row in the <see cref="T:System.Data.DataView" /> that contains the sort key value specified; otherwise -1 if the sort key value does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following Visual Basic example uses the <xref:System.Data.DataView.Find%2A> method to return the index of the row that contains the value in the sort key column that you want.  
-  
- [!code-vb[Classic WebData DataView.Find Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Find Example/VB/source.vb#1)]  
-  
+The following Visual Basic example uses the <xref:System.Data.DataView.Find%2A> method to return the index of the row that contains the value in the sort key column that you want.  
+ 
+[!code-vb[Classic WebData DataView.Find Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Find Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -732,12 +732,12 @@
         <returns>The index of the position of the first row in the <see cref="T:System.Data.DataView" /> that matches the sort key values specified; otherwise -1 if there are no matching sort key values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following Visual Basic example uses the <xref:System.Data.DataView.Find%2A> method to return the index of a row that contains specified values in its sort key columns.  
-  
- [!code-vb[Classic WebData DataView.Find1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Find1 Example/VB/source.vb#1)]  
-  
+The following Visual Basic example uses the <xref:System.Data.DataView.Find%2A> method to return the index of a row that contains specified values in its sort key columns.  
+ 
+[!code-vb[Classic WebData DataView.Find1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Find1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -927,12 +927,12 @@
           <see langword="true" />, if the source is open; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Data.DataView> is a "view" on a <xref:System.Data.DataTable> because it provides custom sorting and filtering of the data. The <xref:System.Data.DataView.IsOpen%2A> property can be queried to determine whether a <xref:System.Data.DataView> has been opened by using the <xref:System.Data.DataView.Open%2A> method.  
-  
- This property is designed for internal use only.  
-  
+A <xref:System.Data.DataView> is a "view" on a <xref:System.Data.DataTable> because it provides custom sorting and filtering of the data. The <xref:System.Data.DataView.IsOpen%2A> property can be queried to determine whether a <xref:System.Data.DataView> has been opened by using the <xref:System.Data.DataView.Open%2A> method.  
+ 
+This property is designed for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -985,13 +985,13 @@
         <summary>Occurs when the list managed by the <see cref="T:System.Data.DataView" /> changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example adds a handler for the <xref:System.Data.DataView.ListChanged> event of a <xref:System.Data.DataView>.  
-  
- [!code-csharp[Classic WebData DataView.ListChanged Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.ListChanged Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.ListChanged Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.ListChanged Example/VB/source.vb#1)]  
-  
+The following example adds a handler for the <xref:System.Data.DataView.ListChanged> event of a <xref:System.Data.DataView>.  
+ 
+[!code-csharp[Classic WebData DataView.ListChanged Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.ListChanged Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.ListChanged Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.ListChanged Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1044,12 +1044,12 @@
         <summary>Opens a <see cref="T:System.Data.DataView" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method lets you manually open the <xref:System.Data.DataView> in derived classes. Use the corresponding <xref:System.Data.DataView.Close%2A> method to close the <xref:System.Data.DataView>.  
-  
- This property is designed for internal use only.  
-  
+The method lets you manually open the <xref:System.Data.DataView> in derived classes. Use the corresponding <xref:System.Data.DataView.Close%2A> method to close the <xref:System.Data.DataView>.  
+ 
+This property is designed for internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1104,26 +1104,26 @@
         <value>A string that specifies how rows are to be filtered. For more information, see the Remarks section.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To form a <xref:System.Data.DataView.RowFilter%2A> value, specify the name of a column followed by an operator and a value to filter on. The value must be in quotation marks. For example:  
+To form a <xref:System.Data.DataView.RowFilter%2A> value, specify the name of a column followed by an operator and a value to filter on. The value must be in quotation marks. For example:  
+ 
+"LastName = 'Smith'"  
+ 
+See the <xref:System.Data.DataColumn.Expression%2A> property of the <xref:System.Data.DataColumn> class for more information.  
+ 
+To return only those columns with null values, use the following expression:  
+ 
+"Isnull(Col1,'Null Column') = 'Null Column'"  
+ 
   
- "LastName = 'Smith'"  
-  
- See the <xref:System.Data.DataColumn.Expression%2A> property of the <xref:System.Data.DataColumn> class for more information.  
-  
- To return only those columns with null values, use the following expression:  
-  
- "Isnull(Col1,'Null Column') = 'Null Column'"  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.DataView> and sets its <xref:System.Data.DataView.RowFilter%2A> property.  
-  
- [!code-csharp[Classic WebData DataView.RowFilter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.RowFilter Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.RowFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.RowFilter Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.DataView> and sets its <xref:System.Data.DataView.RowFilter%2A> property.  
+ 
+[!code-csharp[Classic WebData DataView.RowFilter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.RowFilter Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.RowFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.RowFilter Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1155,25 +1155,25 @@
         <value>One of the <see cref="T:System.Data.DataViewRowState" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only rows that have been deleted by using the <xref:System.Data.DataView.Delete%2A> method will have their <xref:System.Data.DataView.RowStateFilter%2A> value set to `Deleted`. Those rows added using the <xref:System.Data.DataView.AddNew%2A> method will similarly have the property set to `Added`.  
-  
+Only rows that have been deleted by using the <xref:System.Data.DataView.Delete%2A> method will have their <xref:System.Data.DataView.RowStateFilter%2A> value set to `Deleted`. Those rows added using the <xref:System.Data.DataView.AddNew%2A> method will similarly have the property set to `Added`.  
+ 
 > [!NOTE]
 >  Using the <xref:System.Data.DataRowCollection.Remove%2A> method of the <xref:System.Data.DataRowCollection> class does not mean that a row will be marked as `Deleted`. Use the <xref:System.Data.DataView.Delete%2A> method instead to make sure that such rows can be viewed in the <xref:System.Data.DataView>.  
+ 
+New rows will also be visible when the <xref:System.Data.DataView.RowStateFilter%2A> is set to `ModifiedCurrent` or `CurrentRows`.  
+ 
+Deleted rows will also be visible when the <xref:System.Data.DataView.RowStateFilter%2A> is set to `ModifiedOriginal` and `OriginalRows`.  
+ 
   
- New rows will also be visible when the <xref:System.Data.DataView.RowStateFilter%2A> is set to `ModifiedCurrent` or `CurrentRows`.  
-  
- Deleted rows will also be visible when the <xref:System.Data.DataView.RowStateFilter%2A> is set to `ModifiedOriginal` and `OriginalRows`.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.DataTable> with a single column, and then changes the data and sets the <xref:System.Data.DataView.RowStateFilter%2A> of the <xref:System.Data.DataView> to display different row sets, depending on the <xref:System.Data.DataViewRowState>.  
-  
- [!code-csharp[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.DataTable> with a single column, and then changes the data and sets the <xref:System.Data.DataView.RowStateFilter%2A> of the <xref:System.Data.DataView> to display different row sets, depending on the <xref:System.Data.DataViewRowState>.  
+ 
+[!code-csharp[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1205,20 +1205,20 @@
         <value>A string that contains the column name followed by "ASC" (ascending) or "DESC" (descending). Columns are sorted ascending by default. Multiple columns can be separated by commas.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not explicitly specify sort criteria for `DataView`, the `DataRowView` objects in `DataView` are sorted based on the index of its corresponding `DataRow` in the `DataTable.Rows``DataRowCollection`.  
+If you do not explicitly specify sort criteria for `DataView`, the `DataRowView` objects in `DataView` are sorted based on the index of its corresponding `DataRow` in the `DataTable.Rows``DataRowCollection`.  
+ 
+For more information, see [DataViews](~/docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md).  
+ 
   
- For more information, see [DataViews](~/docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example instructs the <xref:System.Data.DataView> to sort the table by two columns.  
-  
- [!code-csharp[Classic WebData DataView.Sort Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.Sort Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.Sort Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Sort Example/VB/source.vb#1)]  
-  
+The following example instructs the <xref:System.Data.DataView> to sort the table by two columns.  
+ 
+[!code-csharp[Classic WebData DataView.Sort Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.Sort Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.Sort Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Sort Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1245,10 +1245,10 @@
         <value>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1275,10 +1275,10 @@
         <value>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1309,10 +1309,10 @@
         <returns>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1339,10 +1339,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. The use of this member is not supported and will cause a <xref:System.ArgumentException>. Instead, use the Clear method on the <xref:System.Data.DataRowCollection> object returned by <xref:System.Data.DataTable.Rows%2A>.  
-  
+This member is an explicit interface member implementation. The use of this member is not supported and will cause a <xref:System.ArgumentException>. Instead, use the Clear method on the <xref:System.Data.DataRowCollection> object returned by <xref:System.Data.DataTable.Rows%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1373,10 +1373,10 @@
         <returns>For a description of this member, see <see cref="M:System.Collections.IList.Contains(System.Object)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1407,10 +1407,10 @@
         <returns>For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1442,10 +1442,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1472,10 +1472,10 @@
         <value>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1502,10 +1502,10 @@
         <value>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1536,10 +1536,10 @@
         <value>For a description of this member, see <see cref="P:System.Collections.IList.Item(System.Int32)" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1569,10 +1569,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1602,10 +1602,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1635,10 +1635,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1666,10 +1666,10 @@
         <returns>The item added to the list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1696,10 +1696,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.AllowEdit" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1726,10 +1726,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.AllowNew" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1756,10 +1756,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.AllowRemove" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1791,10 +1791,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1827,10 +1827,10 @@
         <returns>For a description of this member, see <see cref="M:System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor,System.Object)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1857,10 +1857,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.IsSorted" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1890,10 +1890,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1920,10 +1920,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.IBindingList.RemoveSort" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1950,10 +1950,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SortDirection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1980,10 +1980,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SortProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2010,10 +2010,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SupportsChangeNotification" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2040,10 +2040,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SupportsSearching" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2070,10 +2070,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SupportsSorting" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2103,10 +2103,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.IBindingListView.ApplySort(System.ComponentModel.ListSortDescriptionCollection)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2133,10 +2133,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingListView.Filter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2163,10 +2163,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.IBindingListView.RemoveFilter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2193,10 +2193,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingListView.SortDescriptions" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. The use of this member is not supported and will cause a <xref:System.ArgumentException>. Instead, use the Clear method on the <xref:System.Data.DataRowCollection> object returned by <xref:System.Data.DataTable.Rows%2A>.  
-  
+This member is an explicit interface member implementation. The use of this member is not supported and will cause a <xref:System.ArgumentException>. Instead, use the Clear method on the <xref:System.Data.DataRowCollection> object returned by <xref:System.Data.DataTable.Rows%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2223,10 +2223,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingListView.SupportsAdvancedSorting" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2253,10 +2253,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingListView.SupportsFiltering" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.IBindingListView> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2287,10 +2287,10 @@
         <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.ITypedList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.ITypedList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2321,10 +2321,10 @@
         <returns>For a description of this member, see <see cref="M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.ITypedList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataView> instance is cast to an <xref:System.ComponentModel.ITypedList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2362,20 +2362,20 @@
         <value>A <see cref="T:System.Data.DataTable" /> that provides the data for this view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataTable> also has a <xref:System.Data.DataTable.DefaultView%2A> property which returns the default <xref:System.Data.DataView> for the table. For example, if you want to create a custom view on the table, set the <xref:System.Data.DataView.RowFilter%2A> on the <xref:System.Data.DataView> returned by the <xref:System.Data.DataTable.DefaultView%2A>.  
+The <xref:System.Data.DataTable> also has a <xref:System.Data.DataTable.DefaultView%2A> property which returns the default <xref:System.Data.DataView> for the table. For example, if you want to create a custom view on the table, set the <xref:System.Data.DataView.RowFilter%2A> on the <xref:System.Data.DataView> returned by the <xref:System.Data.DataTable.DefaultView%2A>.  
+ 
+You can only set the <xref:System.Data.DataView.Table%2A> property if the current value is null.  
+ 
   
- You can only set the <xref:System.Data.DataView.Table%2A> property if the current value is null.  
-  
-   
-  
+ 
 ## Examples  
- The following example gets the <xref:System.Data.DataTable> of the current <xref:System.Data.DataView>.  
-  
- [!code-csharp[Classic WebData DataView.Table Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.Table Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Table Example/VB/source.vb#1)]  
-  
+The following example gets the <xref:System.Data.DataTable> of the current <xref:System.Data.DataView>.  
+ 
+[!code-csharp[Classic WebData DataView.Table Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.Table Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.Table Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2403,20 +2403,20 @@
         <returns>A new <see cref="T:System.Data.DataTable" /> instance that contains the requested rows and columns.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because this method does not let you specify the name for the output <xref:System.Data.DataTable>, its name is the same as the name of the source `DataTable`. Because this method does not let you specify a subset of available columns, the output table contains the same columns as the input table.  
+Because this method does not let you specify the name for the output <xref:System.Data.DataTable>, its name is the same as the name of the source `DataTable`. Because this method does not let you specify a subset of available columns, the output table contains the same columns as the input table.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following console application example creates a <xref:System.Data.DataTable>, fills the <xref:System.Data.DataTable> with data, creates a filtered view based on the original data, and finally, creates a <xref:System.Data.DataTable> that contains the filtered rows.  
-  
- [!code-csharp[DataWorks DataView.ToTableFiltered#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataView.ToTableFiltered/CS/source.cs#1)]
- [!code-vb[DataWorks DataView.ToTableFiltered#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataView.ToTableFiltered/VB/source.vb#1)]  
-  
- The example displays the following text in the console window:  
-  
+The following console application example creates a <xref:System.Data.DataTable>, fills the <xref:System.Data.DataTable> with data, creates a filtered view based on the original data, and finally, creates a <xref:System.Data.DataTable> that contains the filtered rows.  
+ 
+[!code-csharp[DataWorks DataView.ToTableFiltered#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataView.ToTableFiltered/CS/source.cs#1)]
+[!code-vb[DataWorks DataView.ToTableFiltered#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataView.ToTableFiltered/VB/source.vb#1)]  
+ 
+The example displays the following text in the console window:  
+ 
 ```  
 Original table name: NewTable  
 Current Values in Table  
@@ -2424,18 +2424,18 @@ Current Values in Table
 2, Fruit, Orange, 27  
 3, Bread, Muffin, 23  
 4, Fish, Salmon, 12  
-  
+ 
 Current Values in View  
 2, Fruit, Orange, 27  
 3, Bread, Muffin, 23  
-  
+ 
 Table created from filtered DataView  
 2, Fruit, Orange, 27  
 3, Bread, Muffin, 23  
-  
+ 
 New table name: NewTable  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2466,20 +2466,20 @@ New table name: NewTable
         <returns>A new <see cref="T:System.Data.DataTable" /> instance that contains the requested rows and columns.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because this method does not let you specify a subset of available columns, the output table contains the same columns as the input table.  
+Because this method does not let you specify a subset of available columns, the output table contains the same columns as the input table.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following console application example creates a <xref:System.Data.DataTable>, fills the `DataTable` with data, creates a filtered view based on the original data, and finally creates a `DataTable` with a new name that contains the filtered rows.  
-  
- [!code-csharp[DataWorks DataView.ToTableNewName#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataView.ToTableNewName/CS/source.cs#1)]
- [!code-vb[DataWorks DataView.ToTableNewName#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataView.ToTableNewName/VB/source.vb#1)]  
-  
- The example displays the following text in the console window:  
-  
+The following console application example creates a <xref:System.Data.DataTable>, fills the `DataTable` with data, creates a filtered view based on the original data, and finally creates a `DataTable` with a new name that contains the filtered rows.  
+ 
+[!code-csharp[DataWorks DataView.ToTableNewName#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataView.ToTableNewName/CS/source.cs#1)]
+[!code-vb[DataWorks DataView.ToTableNewName#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataView.ToTableNewName/VB/source.vb#1)]  
+ 
+The example displays the following text in the console window:  
+ 
 ```  
 Original table name: NewTable  
 Current Values in Table  
@@ -2487,18 +2487,18 @@ Current Values in Table
 2, Fruit, Orange, 27  
 3, Bread, Muffin, 23  
 4, Fish, Salmon, 12  
-  
+ 
 Current Values in View  
 2, Fruit, Orange, 27  
 3, Bread, Muffin, 23  
-  
+ 
 Table created from filtered DataView  
 2, Fruit, Orange, 27  
 3, Bread, Muffin, 23  
-  
+ 
 New table name: FilteredTable  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2537,20 +2537,20 @@ New table name: FilteredTable
         <returns>A new <see cref="T:System.Data.DataTable" /> instance that contains the requested rows and columns.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because this method does not let you specify the name for the output <xref:System.Data.DataTable>, its name is the same as the name of the source <xref:System.Data.DataTable>.  
+Because this method does not let you specify the name for the output <xref:System.Data.DataTable>, its name is the same as the name of the source <xref:System.Data.DataTable>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following console application example creates a <xref:System.Data.DataTable>, fills the <xref:System.Data.DataTable>with data, sorts the <xref:System.Data.DataView>, and finally creates a <xref:System.Data.DataTable>with just two columns, limited to rows in which all values are unique.  
-  
- [!code-csharp[DataWorks DataView.ToTableUniqueValues#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataView.ToTableUniqueValues/CS/source.cs#1)]
- [!code-vb[DataWorks DataView.ToTableUniqueValues#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataView.ToTableUniqueValues/VB/source.vb#1)]  
-  
- The example displays the following output in the console window:  
-  
+The following console application example creates a <xref:System.Data.DataTable>, fills the <xref:System.Data.DataTable>with data, sorts the <xref:System.Data.DataView>, and finally creates a <xref:System.Data.DataTable>with just two columns, limited to rows in which all values are unique.  
+ 
+[!code-csharp[DataWorks DataView.ToTableUniqueValues#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataView.ToTableUniqueValues/CS/source.cs#1)]
+[!code-vb[DataWorks DataView.ToTableUniqueValues#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataView.ToTableUniqueValues/VB/source.vb#1)]  
+ 
+The example displays the following output in the console window:  
+ 
 ```  
 Original table name: NewTable  
 Current Values in Table  
@@ -2560,7 +2560,7 @@ Current Values in Table
 4, Fish, Salmon, 12  
 5, Fish, Salmon, 15  
 6, Bread, Croissant, 23  
-  
+ 
 Current Values in View  
 3, Bread, Muffin, 23  
 6, Bread, Croissant, 23  
@@ -2568,17 +2568,17 @@ Current Values in View
 5, Fish, Salmon, 15  
 1, Fruit, Apple, 14  
 2, Fruit, Orange, 27  
-  
+ 
 Table created from sorted DataView  
 Bread, 23  
 Fish, 12  
 Fish, 15  
 Fruit, 14  
 Fruit, 27  
-  
+ 
 New table name: NewTable  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2619,20 +2619,20 @@ New table name: NewTable
         <returns>A new <see cref="T:System.Data.DataTable" /> instance that contains the requested rows and columns.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this overloaded version of the <xref:System.Data.DataView.ToTable%2A> method if you have to retrieve distinct values in a subset of available columns, specifying a new name for the returned <xref:System.Data.DataTable>. If you do not need distinct rows or a subset of columns, see <xref:System.Data.DataView.ToTable%2A>.  
+Use this overloaded version of the <xref:System.Data.DataView.ToTable%2A> method if you have to retrieve distinct values in a subset of available columns, specifying a new name for the returned <xref:System.Data.DataTable>. If you do not need distinct rows or a subset of columns, see <xref:System.Data.DataView.ToTable%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following console application example creates a <xref:System.Data.DataTable>, fills the <xref:System.Data.DataTable> with data, sorts the <xref:System.Data.DataView>, and finally creates a <xref:System.Data.DataTable>with a new name that contains just two columns, limited to rows in which all values are unique.  
-  
- [!code-csharp[DataWorks DataView.ToTableUniqueValuesName#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataView.ToTableUniqueValuesName/CS/source.cs#1)]
- [!code-vb[DataWorks DataView.ToTableUniqueValuesName#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataView.ToTableUniqueValuesName/VB/source.vb#1)]  
-  
- The example displays the following output in the console window:  
-  
+The following console application example creates a <xref:System.Data.DataTable>, fills the <xref:System.Data.DataTable> with data, sorts the <xref:System.Data.DataView>, and finally creates a <xref:System.Data.DataTable>with a new name that contains just two columns, limited to rows in which all values are unique.  
+ 
+[!code-csharp[DataWorks DataView.ToTableUniqueValuesName#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataView.ToTableUniqueValuesName/CS/source.cs#1)]
+[!code-vb[DataWorks DataView.ToTableUniqueValuesName#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataView.ToTableUniqueValuesName/VB/source.vb#1)]  
+ 
+The example displays the following output in the console window:  
+ 
 ```  
 Original table name: NewTable  
 Current Values in Table  
@@ -2642,7 +2642,7 @@ Current Values in Table
 4, Fish, Salmon, 12  
 5, Fish, Salmon, 15  
 6, Bread, Croissant, 23  
-  
+ 
 Current Values in View  
 3, Bread, Muffin, 23  
 6, Bread, Croissant, 23  
@@ -2650,17 +2650,17 @@ Current Values in View
 5, Fish, Salmon, 15  
 1, Fruit, Apple, 14  
 2, Fruit, Orange, 27  
-  
+ 
 Table created from sorted DataView  
 Bread, 23  
 Fish, 12  
 Fish, 15  
 Fruit, 14  
 Fruit, 27  
-  
+ 
 New table name: UniqueData  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2724,12 +2724,12 @@ New table name: UniqueData
         <summary>Creates and returns a new <see cref="T:System.Data.DataTable" /> based on rows in an existing <see cref="T:System.Data.DataView" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned <xref:System.Data.DataTable> maintains the values of the following properties from the source <xref:System.Data.DataTable>: <xref:System.Data.DataTable.Namespace%2A>, <xref:System.Data.DataTable.Prefix%2A>, <xref:System.Data.DataTable.CultureInfo%2A>, and <xref:System.Data.DataTable.CaseSensitive%2A>. Each column in the resulting <xref:System.Data.DataTable> contains an identical copy of all the corresponding properties in the underlying <xref:System.Data.DataTable>.  
-  
- The <xref:System.Data.DataRow> instances in the returned `DataTable` will contain values that are consistent with CLR semantics. That is, for all data types besides user-defined types, the corresponding column values are copied by value. For user-defined data types, the column data is copied by reference.  
-  
+The returned <xref:System.Data.DataTable> maintains the values of the following properties from the source <xref:System.Data.DataTable>: <xref:System.Data.DataTable.Namespace%2A>, <xref:System.Data.DataTable.Prefix%2A>, <xref:System.Data.DataTable.CultureInfo%2A>, and <xref:System.Data.DataTable.CaseSensitive%2A>. Each column in the resulting <xref:System.Data.DataTable> contains an identical copy of all the corresponding properties in the underlying <xref:System.Data.DataTable>.  
+ 
+The <xref:System.Data.DataRow> instances in the returned `DataTable` will contain values that are consistent with CLR semantics. That is, for all data types besides user-defined types, the corresponding column values are copied by value. For user-defined data types, the column data is copied by reference.  
+ 
  ]]></format>
         </remarks>
       </Docs>

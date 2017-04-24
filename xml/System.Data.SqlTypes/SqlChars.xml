@@ -39,10 +39,10 @@
       <see cref="T:System.Data.SqlTypes.SqlChars" /> is a mutable reference type that wraps a <see cref="T:System.Char" /> array or a <see cref="T:System.Data.SqlTypes.SqlString" /> instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlTypes.SqlChars> can be obtained for `varchar`, `nvarchar`, `char`, `nchar`, `text`, and `ntext` values, or can be created over an unmanaged buffer.  
-  
+<xref:System.Data.SqlTypes.SqlChars> can be obtained for `varchar`, `nvarchar`, `char`, `nchar`, `text`, and `ntext` values, or can be created over an unmanaged buffer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlChars" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
-  
+The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,12 +104,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlChars" /> class based on the specified character array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
-  
- If a null reference is passed in, the instance is set to null.  
-  
+The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
+ 
+If a null reference is passed in, the instance is set to null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,12 +140,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlChars" /> class based on the specified <see cref="T:System.Data.SqlTypes.SqlString" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
-  
- If a null reference is passed in, the instance is set to null.  
-  
+The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
+ 
+If a null reference is passed in, the instance is set to null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,12 +176,12 @@
         <value>Returns a reference to the internal buffer. For <see cref="T:System.Data.SqlTypes.SqlChars" /> instances created on top of unmanaged pointers, it returns a managed copy of the internal buffer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns a null reference for null value <xref:System.Data.SqlTypes.SqlChars>.  
-  
- Throws an <xref:System.InvalidOperationException> for stream-wrapped instances of <xref:System.Data.SqlTypes.SqlChars>.  
-  
+Returns a null reference for null value <xref:System.Data.SqlTypes.SqlChars>.  
+ 
+Throws an <xref:System.InvalidOperationException> for stream-wrapped instances of <xref:System.Data.SqlTypes.SqlChars>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,10 +240,10 @@
           <see langword="true" /> if the <see cref="T:System.Data.SqlTypes.SqlChars" /> is null. Otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`. For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
-  
+The default value is `false`. For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,10 +309,10 @@
  Returns a <see cref="P:System.IO.Stream.Length" /> for a stream-wrapped instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 0.  
-  
+The default value is 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
  Returns -1 for a stream-wrapped <see cref="T:System.Data.SqlTypes.SqlChars" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 0.  
-  
+The default value is 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -478,16 +478,16 @@
         <returns>An <see cref="T:System.Int64" /><see langword="long" /> value representing the number of copied bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an attempt is made to read beyond <xref:System.Data.SqlTypes.SqlChars.MaxLength%2A>, an exception is thrown.  
-  
- If `count` specifies more characters to be copied than are available from the `offsetInBuffer` to the end of the value, only the available characters are copied.  
-  
- An exception is thrown if the destination buffer is a null reference.  
-  
- An exception is thrown if the destination buffer cannot receive as many characters as requested.  
-  
+If an attempt is made to read beyond <xref:System.Data.SqlTypes.SqlChars.MaxLength%2A>, an exception is thrown.  
+ 
+If `count` specifies more characters to be copied than are available from the `offsetInBuffer` to the end of the value, only the available characters are copied.  
+ 
+An exception is thrown if the destination buffer is a null reference.  
+ 
+An exception is thrown if the destination buffer cannot receive as many characters as requested.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -521,10 +521,10 @@
         <summary>Sets the length of this <see cref="T:System.Data.SqlTypes.SqlChars" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will trigger an internal conversion to a managed buffer for an instance built on top of an unmanaged buffer.  
-  
+This method will trigger an internal conversion to a managed buffer for an instance built on top of an unmanaged buffer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -741,10 +741,10 @@
         <value>The value of this <see cref="T:System.Data.SqlTypes.SqlChars" /> as an array of characters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns a null reference for null value <xref:System.Data.SqlTypes.SqlChars>.  
-  
+Returns a null reference for null value <xref:System.Data.SqlTypes.SqlChars>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -784,14 +784,14 @@
         <summary>Copies characters from the passed-in buffer to this <see cref="T:System.Data.SqlTypes.SqlChars" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this operation writes to a position beyond <xref:System.Data.SqlTypes.SqlChars.Length%2A> but within <xref:System.Data.SqlTypes.SqlChars.MaxLength%2A>, <xref:System.Data.SqlTypes.SqlChars.Length%2A> is updated to reflect the new ending position.  
-  
- The value of `offsetInBuffer` must be less than or equal to <xref:System.Data.SqlTypes.SqlChars.Length%2A>. An exception is thrown otherwise. Only a value of 0 can be specified when writing to a null value instance.  
-  
- If an attempt is made to write beyond <xref:System.Data.SqlTypes.SqlChars.MaxLength%2A>, an exception is thrown.  
-  
+If this operation writes to a position beyond <xref:System.Data.SqlTypes.SqlChars.Length%2A> but within <xref:System.Data.SqlTypes.SqlChars.MaxLength%2A>, <xref:System.Data.SqlTypes.SqlChars.Length%2A> is updated to reflect the new ending position.  
+ 
+The value of `offsetInBuffer` must be less than or equal to <xref:System.Data.SqlTypes.SqlChars.Length%2A>. An exception is thrown otherwise. Only a value of 0 can be specified when writing to a null value instance.  
+ 
+If an attempt is made to write beyond <xref:System.Data.SqlTypes.SqlChars.MaxLength%2A>, an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -805,10 +805,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlChars" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
-  
+The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
+ 
  ]]></format>
         </remarks>
       </Docs>

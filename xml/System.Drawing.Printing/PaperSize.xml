@@ -14,23 +14,23 @@
     <summary>Specifies the size of a piece of paper.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used by the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A?displayProperty=fullName> and <xref:System.Drawing.Printing.PageSettings.PaperSize%2A?displayProperty=fullName> properties to get the paper sizes that are available on the printer and to set the paper size for a page, respectively.  
+This class is used by the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A?displayProperty=fullName> and <xref:System.Drawing.Printing.PageSettings.PaperSize%2A?displayProperty=fullName> properties to get the paper sizes that are available on the printer and to set the paper size for a page, respectively.  
+ 
+You can use the <xref:System.Drawing.Printing.PaperSize.%23ctor%2A> constructor to specify a custom paper size. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
+ 
+For more information about printing, see the <xref:System.Drawing.Printing> namespace overview.  
+ 
   
- You can use the <xref:System.Drawing.Printing.PaperSize.%23ctor%2A> constructor to specify a custom paper size. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
-  
- For more information about printing, see the <xref:System.Drawing.Printing> namespace overview.  
-  
-   
-  
+ 
 ## Examples  
- The following code example populates the `comboPaperSize` combo box with the printer's supported paper sizes. In addition, a custom paper size is created and added to the combo box. The <xref:System.Drawing.Printing.PaperSize.PaperName%2A> is identified as the property that will provide the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
-  
- [!code-cpp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#1)]
- [!code-csharp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#1)]
- [!code-vb[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#1)]  
-  
+The following code example populates the `comboPaperSize` combo box with the printer's supported paper sizes. In addition, a custom paper size is created and added to the combo box. The <xref:System.Drawing.Printing.PaperSize.PaperName%2A> is identified as the property that will provide the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
+ 
+[!code-cpp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#1)]
+[!code-csharp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#1)]
+[!code-vb[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,19 +71,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PaperSize" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Drawing.Printing.PaperSize> created with this constructor always has its <xref:System.Drawing.Printing.PaperSize.Kind%2A> property set to <xref:System.Drawing.Printing.PaperKind>. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
+A <xref:System.Drawing.Printing.PaperSize> created with this constructor always has its <xref:System.Drawing.Printing.PaperSize.Kind%2A> property set to <xref:System.Drawing.Printing.PaperKind>. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example populates the `comboPaperSize` combo box with the printer's supported paper sizes. In addition, a custom paper size is created and added to the combo box. The <xref:System.Drawing.Printing.PaperSize.PaperName%2A> is identified as the property that will provide the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
-  
- [!code-cpp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#1)]
- [!code-csharp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#1)]
- [!code-vb[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#1)]  
-  
+The following code example populates the `comboPaperSize` combo box with the printer's supported paper sizes. In addition, a custom paper size is created and added to the combo box. The <xref:System.Drawing.Printing.PaperSize.PaperName%2A> is identified as the property that will provide the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
+ 
+[!code-cpp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#1)]
+[!code-csharp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#1)]
+[!code-vb[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <value>The height of the paper, in hundredths of an inch.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This height measurement is for the portrait orientation of the paper. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
-  
+This height measurement is for the portrait orientation of the paper. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
@@ -131,10 +131,10 @@
         <value>One of the <see cref="T:System.Drawing.Printing.PaperKind" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Drawing.Printing.PaperSize.%23ctor%2A> constructor to specify a custom paper size.  
-  
+You can use the <xref:System.Drawing.Printing.PaperSize.%23ctor%2A> constructor to specify a custom paper size.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
@@ -157,19 +157,19 @@
         <value>The name of the type of paper.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set the paper name only if the <xref:System.Drawing.Printing.PaperSize.Kind%2A> property is set to <xref:System.Drawing.Printing.PaperKind>.  
+You can set the paper name only if the <xref:System.Drawing.Printing.PaperSize.Kind%2A> property is set to <xref:System.Drawing.Printing.PaperKind>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example populates the `comboPaperSize` combo box with the printer's supported paper sizes. The <xref:System.Drawing.Printing.PaperSize.PaperName%2A> is identified as the property that will provide the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
-  
- [!code-cpp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#1)]
- [!code-csharp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#1)]
- [!code-vb[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#1)]  
-  
+The following code example populates the `comboPaperSize` combo box with the printer's supported paper sizes. The <xref:System.Drawing.Printing.PaperSize.PaperName%2A> is identified as the property that will provide the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
+ 
+[!code-cpp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#1)]
+[!code-csharp[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#1)]
+[!code-vb[PaperSource and PaperSize Example with Resolution#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
@@ -192,10 +192,10 @@
         <value>An integer representing one of the <see cref="T:System.Drawing.Printing.PaperSize" /> values, or a custom value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the integer values of the <xref:System.Drawing.Printing.PaperSize> enumeration members. A value equal to 48 or 49 or larger than 118 indicates a custom paper size; however, the <xref:System.Drawing.Printing.PaperSize.RawKind%2A> property will return the actual integer value for the size.  
-  
+The following table shows the integer values of the <xref:System.Drawing.Printing.PaperSize> enumeration members. A value equal to 48 or 49 or larger than 118 indicates a custom paper size; however, the <xref:System.Drawing.Printing.PaperSize.RawKind%2A> property will return the actual integer value for the size.  
+ 
 |Integer|PaperSize member|  
 |-------------|----------------------|  
 |1|<xref:System.Drawing.Printing.PaperKind>|  
@@ -315,7 +315,7 @@
 |117|<xref:System.Drawing.Printing.PaperKind>|  
 |118|<xref:System.Drawing.Printing.PaperKind>|  
 |Greater than 118|A custom paper size|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,10 +356,10 @@
         <value>The width of the paper, in hundredths of an inch.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This width measurement is for the portrait orientation of the paper. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
-  
+This width measurement is for the portrait orientation of the paper. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
@@ -374,15 +374,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PaperSize" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows initial property values for an instance of <xref:System.Drawing.Printing.PaperSize> class.  
-  
+The following table shows initial property values for an instance of <xref:System.Drawing.Printing.PaperSize> class.  
+ 
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.Drawing.Printing.PaperSize.Kind%2A>|<xref:System.Drawing.Printing.PaperKind?displayProperty=fullName>|  
 |<xref:System.Drawing.Printing.PaperSize.PaperName%2A>|<xref:System.String.Empty?displayProperty=fullName>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

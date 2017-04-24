@@ -14,18 +14,18 @@
     <summary>Represents a <see langword="location" /> element within a configuration file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of the <xref:System.Configuration.ConfigurationLocation> class represents a single `location` element within a configuration file. Locations are used to specify configuration settings that apply only to a specified resource, such as a specific page, file, or subdirectory, within your Web application. Use the <xref:System.Configuration.ConfigurationLocation> class to obtain the path and the <xref:System.Configuration.Configuration> object that applies to the specified resource.  
+An instance of the <xref:System.Configuration.ConfigurationLocation> class represents a single `location` element within a configuration file. Locations are used to specify configuration settings that apply only to a specified resource, such as a specific page, file, or subdirectory, within your Web application. Use the <xref:System.Configuration.ConfigurationLocation> class to obtain the path and the <xref:System.Configuration.Configuration> object that applies to the specified resource.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following code example, the Web configuration for the application `MySampleApp` is loaded, and then the locations defined in the configuration are displayed.  
-  
- [!code-csharp[ConfigurationLocationCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ConfigurationLocationCollection/CS/sample.cs#1)]
- [!code-vb[ConfigurationLocationCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ConfigurationLocationCollection/VB/sample.vb#1)]  
-  
+In the following code example, the Web configuration for the application `MySampleApp` is loaded, and then the locations defined in the configuration are displayed.  
+ 
+[!code-csharp[ConfigurationLocationCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ConfigurationLocationCollection/CS/sample.cs#1)]
+[!code-vb[ConfigurationLocationCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ConfigurationLocationCollection/VB/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,21 +66,21 @@
         <value>The relative path to the resource whose configuration settings are represented by this <see cref="T:System.Configuration.ConfigurationLocation" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The path that is returned by the <xref:System.Configuration.ConfigurationLocation.Path%2A> property is relative to the root of your Web site.  
-  
+The path that is returned by the <xref:System.Configuration.ConfigurationLocation.Path%2A> property is relative to the root of your Web site.  
+ 
 > [!NOTE]
 >  The <xref:System.Configuration.ConfigurationLocation.Path%2A> property might contain a comma-delimited list of paths to which the configuration setting applies.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to access the <xref:System.Configuration.ConfigurationLocation.Path%2A> property and display the value returned to the console.  
-  
- [!code-csharp[ConfigurationLocationCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ConfigurationLocationCollection/CS/sample.cs#2)]
- [!code-vb[ConfigurationLocationCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ConfigurationLocationCollection/VB/sample.vb#2)]  
-  
+The following code example shows how to access the <xref:System.Configuration.ConfigurationLocation.Path%2A> property and display the value returned to the console.  
+ 
+[!code-csharp[ConfigurationLocationCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ConfigurationLocationCollection/CS/sample.cs#2)]
+[!code-vb[ConfigurationLocationCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ConfigurationLocationCollection/VB/sample.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

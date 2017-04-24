@@ -13,21 +13,21 @@
     <summary>Specifies the available application-specific <paramref name="gesture" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_ApplicationGesture"></a>   
 ## XAML Text Usage  
- This class is not typically used in XAML.  
+This class is not typically used in XAML.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to identify a gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that its <xref:System.Windows.Controls.InkCanvas.Gesture> event has been connected to the event handler in this example.  
-  
- [!code-csharp[GestureSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#1)]
- [!code-vb[GestureSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#1)]  
-  
+The following example demonstrates how to identify a gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that its <xref:System.Windows.Controls.InkCanvas.Gesture> event has been connected to the event handler in this example.  
+ 
+[!code-csharp[GestureSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#1)]
+[!code-vb[GestureSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

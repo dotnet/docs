@@ -110,10 +110,10 @@
         <returns>An Int32 hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash code is constructed from the values of the <xref:System.Net.Sockets.IPPacketInformation.Address%2A> and <xref:System.Net.Sockets.IPPacketInformation.Interface%2A> properties.  
-  
+The hash code is constructed from the values of the <xref:System.Net.Sockets.IPPacketInformation.Address%2A> and <xref:System.Net.Sockets.IPPacketInformation.Interface%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
           <see langword="true" /> if <paramref name="packetInformation1" /> and <paramref name="packetInformation2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operator tests both the <xref:System.Net.Sockets.IPPacketInformation.Address%2A> and <xref:System.Net.Sockets.IPPacketInformation.Interface%2A> values for both arguments.  
-  
+This operator tests both the <xref:System.Net.Sockets.IPPacketInformation.Address%2A> and <xref:System.Net.Sockets.IPPacketInformation.Interface%2A> values for both arguments.  
+ 
  The equivalent method for this operator is <xref:System.Net.Sockets.IPPacketInformation.Equals%28System.Net.Sockets.IPPacketInformation%2CSystem.Net.Sockets.IPPacketInformation%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -219,10 +219,10 @@
           <see langword="true" /> if <paramref name="packetInformation1" /> and <paramref name="packetInformation2" /> are unequal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operator tests both the <xref:System.Net.Sockets.IPPacketInformation.Address%2A> and <xref:System.Net.Sockets.IPPacketInformation.Interface%2A> values for both arguments.  
-  
+This operator tests both the <xref:System.Net.Sockets.IPPacketInformation.Address%2A> and <xref:System.Net.Sockets.IPPacketInformation.Interface%2A> values for both arguments.  
+ 
  The equivalent method for this operator is <xref:System.Net.Sockets.IPPacketInformation.Compare%28System.Net.Sockets.IPPacketInformation%2CSystem.Net.Sockets.IPPacketInformation%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>

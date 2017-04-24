@@ -16,14 +16,14 @@
     <summary>Provides an interface that can look up information about the types used in the current Web Forms project.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IWebFormReferenceManager> interface is obsolete. Use the <xref:System.Web.UI.Design.WebFormsReferenceManager> class for equivalent designer functionality.  
-  
- A Web Forms document designer must implement this interface. Implementing this interface enables a designer to manage references and provide information related to Web Forms controls within the project.  
-  
+ 
+A Web Forms document designer must implement this interface. Implementing this interface enables a designer to manage references and provide information related to Web Forms controls within the project.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,12 +51,12 @@
         <returns>The <see cref="T:System.Type" /> of the object, if it could be resolved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IWebFormReferenceManager.GetObjectType%2A> method is obsolete. Use the <xref:System.Web.UI.Design.WebFormsReferenceManager.GetType%2A> method on the <xref:System.Web.UI.Design.WebFormsReferenceManager> class for equivalent designer functionality.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,12 +79,12 @@
         <returns>The register directives for the current project.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IWebFormReferenceManager.GetRegisterDirectives%2A> method is obsolete. Use the <xref:System.Web.UI.Design.WebFormsReferenceManager.GetRegisterDirectives%2A> method on the <xref:System.Web.UI.Design.WebFormsReferenceManager> class for equivalent designer functionality.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,12 +110,12 @@
         <returns>The tag prefix for the specified object type, if it could be located.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IWebFormReferenceManager.GetTagPrefix%2A> method is obsolete. Use the <xref:System.Web.UI.Design.WebFormsReferenceManager.GetTagPrefix%2A> method on the <xref:System.Web.UI.Design.WebFormsReferenceManager> class for equivalent designer functionality.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Serves as the abstract base class for ASP.NET file parsers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateParser> class provides the common functionality for parser classes. Because the <xref:System.Web.UI.TemplateParser> class is abstract, an instance of this class is not created directly.  
-  
+The <xref:System.Web.UI.TemplateParser> class provides the common functionality for parser classes. Because the <xref:System.Web.UI.TemplateParser> class is abstract, an instance of this class is not created directly.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -45,12 +45,12 @@
         <summary>Parses the content of the file that is specified by either its virtual or physical path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a physical path is specified, it is used over the virtual path for locating the file to parse.  
-  
- If the path to the file to parse is a circular reference; that is, it refers to the same file that the parser is currently parsing, an <xref:System.Web.HttpException> exception is thrown.  
-  
+If a physical path is specified, it is used over the virtual path for locating the file to parse.  
+ 
+If the path to the file to parse is a circular reference; that is, it refers to the same file that the parser is currently parsing, an <xref:System.Web.HttpException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">

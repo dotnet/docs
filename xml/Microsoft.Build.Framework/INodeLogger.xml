@@ -20,10 +20,10 @@
     <summary>Defines a "parallel aware logger" in the build system.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A parallel aware logger accepts a CPU count. A CPU count greater than 1 means that build events are received from each CPU's logger as the events are logged.  
-  
+A parallel aware logger accepts a CPU count. A CPU count greater than 1 means that build events are received from each CPU's logger as the events are logged.  
+ 
  ]]></format>
     </remarks>
   </Docs>

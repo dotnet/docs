@@ -23,10 +23,10 @@
     <summary>Wraps an evaluated item for build purposes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Does not store item element information, because all evaluation and verification has already been performed.  
-  
+Does not store item element information, because all evaluation and verification has already been performed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,10 +96,10 @@
         <returns>Returns the metadata with the given name. Returns null if no metadata exists with that name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Does not include any built-in metadata.  
-  
+Does not include any built-in metadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,12 +125,12 @@
         <returns>Gets the value of the metadata with the given name, including metadata inherited from item definitions. Returns an empty string if no metadata exists with that name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Includes built-in metadata.  
-  
- To determine whether a piece of metadata is actually present but with an empty value, use <xref:Microsoft.Build.Execution.ProjectItemInstance.HasMetadata%2A>.  
-  
+Includes built-in metadata.  
+ 
+To determine whether a piece of metadata is actually present but with an empty value, use <xref:Microsoft.Build.Execution.ProjectItemInstance.HasMetadata%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <returns>Returns true if the metadata with the given name is defined on this item (even if its value is empty string); false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This searches built-in metadata and metadata from item definitions, because this method is used for batching, where it doesn't matter where the metadata originated.  
-  
+This searches built-in metadata and metadata from item definitions, because this method is used for batching, where it doesn't matter where the metadata originated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <value>Returns the item type, for example "Compile".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This cannot be set, as it is used as the key into the project's items table.  
-  
+This cannot be set, as it is used as the key into the project's items table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,12 +214,12 @@
         <value>Returns an enumerator over the evaluated metadata of the item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Does not include built-in metadata or metadata from item definitions.  
-  
- To modify the metadata, use <xref:Microsoft.Build.Execution.ProjectItemInstance.SetMetadata%2A>.  
-  
+Does not include built-in metadata or metadata from item definitions.  
+ 
+To modify the metadata, use <xref:Microsoft.Build.Execution.ProjectItemInstance.SetMetadata%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
         <value>Returns the number of metadata entries, including metadata inherited from item definitions</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Includes both custom and built-in metadata.  
-  
+Includes both custom and built-in metadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,10 +266,10 @@
         <value>Returns all metadata names of this item, including metadata inherited from item definitions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Includes names of built-in metadata.  
-  
+Includes names of built-in metadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,15 +292,15 @@
         <returns>The collection of custom metadata.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 -   Does not include built-in metadata.  
-  
+ 
 -   This method should return a clone of the metadata.  
-  
+ 
 -   Writing to this dictionary should not be reflected in the underlying item.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,16 +325,16 @@
         <summary>ITaskItem implementation. Copies the custom metadata entries to another item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Follow the guidelines below when implementing this method.  
-  
+Follow the guidelines below when implementing this method.  
+ 
 -   Do not overwrite the <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> property.  
-  
+ 
 -   Do not overwrite existing metadata entries.  
-  
+ 
 -   Do not copy metadata entries that do not make sense on the destination item.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,10 +360,10 @@
         <returns>The value of the <paramref name="attributeName" /> metadata.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Should not return null if metadata is not present.  
-  
+Should not return null if metadata is not present.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,25 +385,25 @@
         <value>The item specification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The item specification is an arbitrary string. If the item represents a file on disk, the item specification will be the path of that file.  
-  
- The <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> for the following item declaration in a project file is `File.cs`.  
-  
+The item specification is an arbitrary string. If the item represents a file on disk, the item specification will be the path of that file.  
+ 
+The <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> for the following item declaration in a project file is `File.cs`.  
+ 
 ```  
 <ItemGroup>  
-    <Compile Include="File.cs"/>  
+   <Compile Include="File.cs"/>  
 </ItemGroup>  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the code for a task that creates one or more directories.  
-  
- [!code-csharp[msbuild_MakeDirTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_MakeDirTask/CS/msbuild_MakeDirTask.cs#1)]  
-  
+The following example shows the code for a task that creates one or more directories.  
+ 
+[!code-csharp[msbuild_MakeDirTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_MakeDirTask/CS/msbuild_MakeDirTask.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -490,10 +490,10 @@
         <value>Returns the item include value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Taking the opportunity to fix the property name, although this doesn't make it obvious it's an improvement on ItemSpec.  
-  
+Taking the opportunity to fix the property name, although this doesn't make it obvious it's an improvement on ItemSpec.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -519,10 +519,10 @@
         <returns>Returns the escaped metadata value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Taking the opportunity to fix the property name, although this doesn't make it obvious it's an improvement on GetMetadata.  
-  
+Taking the opportunity to fix the property name, although this doesn't make it obvious it's an improvement on GetMetadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -549,10 +549,10 @@
         <summary>ITaskItem2 implementation. Allows a piece of custom metadata to be set on the item. Assumes that the value passed in is unescaped, and escapes the value as necessary in order to maintain its value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Taking the opportunity to fix the property name, although this doesn't make it obvious it's an improvement on SetMetadata.  
-  
+Taking the opportunity to fix the property name, although this doesn't make it obvious it's an improvement on SetMetadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -600,10 +600,10 @@
         <summary>Removes metadata with the given name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by TaskItem.  
-  
+This method is used by TaskItem.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -24,27 +24,27 @@
     <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging" /> event. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.Design.ComponentChangingEventArgs> provides data about a <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanging> event. The <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanging> event notifies the <xref:System.ComponentModel.Design.IComponentChangeService> and registered event handlers that a particular component in the current design document is about to be changed. This event provides a widely accessible method to prevent a component from changing.  
-  
- A <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanging> event is raised before a component is changed. This event provides an opportunity for a designer to abort the change. Component designers typically raise the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanging> event automatically. If a property cannot be changed, the method that handles the event can throw an exception. For example, if a designer file is checked into source code control, the handler of this event typically throws an exception if the user refuses to check out the file.  
-  
- A <xref:System.ComponentModel.Design.ComponentChangingEventArgs> provides the following information:  
-  
+<xref:System.ComponentModel.Design.ComponentChangingEventArgs> provides data about a <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanging> event. The <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanging> event notifies the <xref:System.ComponentModel.Design.IComponentChangeService> and registered event handlers that a particular component in the current design document is about to be changed. This event provides a widely accessible method to prevent a component from changing.  
+ 
+A <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanging> event is raised before a component is changed. This event provides an opportunity for a designer to abort the change. Component designers typically raise the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanging> event automatically. If a property cannot be changed, the method that handles the event can throw an exception. For example, if a designer file is checked into source code control, the handler of this event typically throws an exception if the user refuses to check out the file.  
+ 
+A <xref:System.ComponentModel.Design.ComponentChangingEventArgs> provides the following information:  
+ 
 -   A `Component` property that indicates the component that is about to be modified.  
-  
+ 
 -   A `Member` property that indicates the member that is about to be changed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates creating a <xref:System.ComponentModel.Design.ComponentChangingEventArgs>.  
-  
- [!code-cpp[ComponentChangingEventArgsExample2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentChangingEventArgsExample2/CPP/componentchangingeventargsexample.cpp#1)]
- [!code-csharp[ComponentChangingEventArgsExample2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentChangingEventArgsExample2/CS/componentchangingeventargsexample.cs#1)]
- [!code-vb[ComponentChangingEventArgsExample2#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentChangingEventArgsExample2/VB/componentchangingeventargsexample.vb#1)]  
-  
+The following example demonstrates creating a <xref:System.ComponentModel.Design.ComponentChangingEventArgs>.  
+ 
+[!code-cpp[ComponentChangingEventArgsExample2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentChangingEventArgsExample2/CPP/componentchangingeventargsexample.cpp#1)]
+[!code-csharp[ComponentChangingEventArgsExample2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentChangingEventArgsExample2/CS/componentchangingeventargsexample.cs#1)]
+[!code-vb[ComponentChangingEventArgsExample2#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentChangingEventArgsExample2/VB/componentchangingeventargsexample.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentChangingEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ComponentModel.Design.ComponentChangingEventArgs> indicates the component and member that are about to be changed.  
-  
+A <xref:System.ComponentModel.Design.ComponentChangingEventArgs> indicates the component and member that are about to be changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <value>A <see cref="T:System.ComponentModel.MemberDescriptor" /> indicating the member that is about to be changed, if known, or <see langword="null" /> otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is `null` if the member is unknown.  
-  
+This property is `null` if the member is unknown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -105,10 +105,10 @@
         <value>A <see cref="T:System.TimeSpan" /> that specifies the lifetime issued to all new security cookies. The default value is "10:00:00".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Cookies that exceed their lifetime are recycled and must be negotiated again.  
-  
+Cookies that exceed their lifetime are recycled and must be negotiated again.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <value>A <see cref="T:System.TimeSpan" /> that specifies the maximum time difference between the system clocks of the two communicating parties. The default value is "00:05:00".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to the default, the receiver accepts messages with send-time timestamps up to 5 minutes later or earlier than the time the message was received. Messages that do not pass the send-time test are rejected. This setting is used in conjunction with the <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement.ReplayWindow%2A> property.  
-  
+When this property is set to the default, the receiver accepts messages with send-time timestamps up to 5 minutes later or earlier than the time the message was received. Messages that do not pass the send-time test are rejected. This setting is used in conjunction with the <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement.ReplayWindow%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <value>The maximum number of pending security sessions that the service supports. The default value is 1000.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this limit is reached, all new clients receive SOAP faults.  
-  
+When this limit is reached, all new clients receive SOAP faults.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <value>The number of security negotiations that can be active concurrently. The default value is 1024.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Negotiation sessions in excess of the limit are queued. They can only be completed when a space below the limit becomes available.  
-  
+Negotiation sessions in excess of the limit are queued. They can only be completed when a space below the limit becomes available.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <value>A positive <see cref="T:System.TimeSpan" /> value that specifies the maximum duration for the security negotiation phase between server and client. The default is "00:02:00"</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the time limit expires, an exception is thrown.  
-  
+If the time limit expires, an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
           <see langword="true" /> if connections using WS-Reliable messaging attempt to reconnect after transport failures; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `true`, infinite reconnect attempts are attempted. The cycle is only broken by the inactivity time-out, which causes the channel to throw an exception when it cannot be reconnected.  
-  
+If this property is `true`, infinite reconnect attempts are attempted. The cycle is only broken by the inactivity time-out, which causes the channel to throw an exception when it cannot be reconnected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
         <value>The number of cached nonces used for replay detection. The default value is 500000.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this limit is exceeded, the oldest nonce is removed and a new nonce is created for the new message.  
-  
+If this limit is exceeded, the oldest nonce is removed and a new nonce is created for the new message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,10 +378,10 @@
         <value>A <see cref="T:System.TimeSpan" /> that specifies the duration in which individual message nonces are valid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After the time specified by this property, a message sent with the same nonce as the one sent before is not accepted. This property is used in conjunction with the <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement.MaxClockSkew%2A> property to prevent replay attacks. An attacker can replay a message after its replay window has expired. This message, however, fails the maxClockSkew test that rejects messages with send-time timestamps up to a specified time later or earlier than the time the message was received.  
-  
+After the time specified by this property, a message sent with the same nonce as the one sent before is not accepted. This property is used in conjunction with the <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement.MaxClockSkew%2A> property to prevent replay attacks. An attacker can replay a message after its replay window has expired. This message, however, fails the maxClockSkew test that rejects messages with send-time timestamps up to a specified time later or earlier than the time the message was received.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@
         <value>A <see cref="T:System.TimeSpan" /> that specifies the duration a previous session key is valid on incoming messages during a key renewal. The default is "00:05:00".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During key renewal, the client and server must always send messages using the most current available key. Both parties accept incoming messages secured with the previous session key until the rollover time specified by this property expires.  
-  
+During key renewal, the client and server must always send messages using the most current available key. Both parties accept incoming messages secured with the previous session key until the rollover time specified by this property expires.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents the exceptions that are thrown when an error is raised by the Peer-to-Peer Infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Exceptions of this type are specific to the PNRP platform, and indicate that the underlying platform could not perform a certain operation.  
-  
+Exceptions of this type are specific to the PNRP platform, and indicate that the underlying platform could not perform a certain operation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -122,10 +122,10 @@
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize the peer object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(n) operation.  
-  
+This method is an O(n) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

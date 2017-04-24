@@ -21,23 +21,23 @@
     <summary>Provides a service for registering event handlers for component events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event binding service provides a way to link an event handler with a component event from designer code.  
+The event binding service provides a way to link an event handler with a component event from designer code.  
+ 
+To link an event handler with a component event using the <xref:System.ComponentModel.Design.IEventBindingService>, you must first obtain an <xref:System.ComponentModel.EventDescriptor> for the event of the component you intend to link. The <xref:System.ComponentModel.Design.IEventBindingService> provides methods that can convert an <xref:System.ComponentModel.EventDescriptor> to a <xref:System.ComponentModel.PropertyDescriptor> which you can use to configure the event with an event handler method name.  
+ 
+The <xref:System.ComponentModel.TypeDescriptor> object provides a <xref:System.ComponentModel.TypeDescriptor.GetEvents%2A> method that you can use to obtain an <xref:System.ComponentModel.EventDescriptorCollection> containing <xref:System.ComponentModel.EventDescriptor> objects for each event of a component. The <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperty%2A> and <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperties%2A> methods of the <xref:System.ComponentModel.Design.IEventBindingService> return a <xref:System.ComponentModel.PropertyDescriptor> for each <xref:System.ComponentModel.EventDescriptor> passed to either method. Each <xref:System.ComponentModel.PropertyDescriptor> returned from <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperty%2A> or <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperties%2A> has a property type of string. You can set this string to a value that indicates the name of the event-handler method to link the event with using the <xref:System.ComponentModel.PropertyDescriptor.SetValue%2A> method of the <xref:System.ComponentModel.PropertyDescriptor>.  
+ 
   
- To link an event handler with a component event using the <xref:System.ComponentModel.Design.IEventBindingService>, you must first obtain an <xref:System.ComponentModel.EventDescriptor> for the event of the component you intend to link. The <xref:System.ComponentModel.Design.IEventBindingService> provides methods that can convert an <xref:System.ComponentModel.EventDescriptor> to a <xref:System.ComponentModel.PropertyDescriptor> which you can use to configure the event with an event handler method name.  
-  
- The <xref:System.ComponentModel.TypeDescriptor> object provides a <xref:System.ComponentModel.TypeDescriptor.GetEvents%2A> method that you can use to obtain an <xref:System.ComponentModel.EventDescriptorCollection> containing <xref:System.ComponentModel.EventDescriptor> objects for each event of a component. The <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperty%2A> and <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperties%2A> methods of the <xref:System.ComponentModel.Design.IEventBindingService> return a <xref:System.ComponentModel.PropertyDescriptor> for each <xref:System.ComponentModel.EventDescriptor> passed to either method. Each <xref:System.ComponentModel.PropertyDescriptor> returned from <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperty%2A> or <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperties%2A> has a property type of string. You can set this string to a value that indicates the name of the event-handler method to link the event with using the <xref:System.ComponentModel.PropertyDescriptor.SetValue%2A> method of the <xref:System.ComponentModel.PropertyDescriptor>.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates a designer that uses the <xref:System.ComponentModel.Design.IEventBindingService> to link a component's event with an event handler at design time when the custom shortcut menu command that the designer adds for the component is invoked. To use the example, compile it to a class library, add a reference from a Windows Forms project, add the component in the class library to the Toolbox by right-clicking the Toolbox and selecting Customize Toolbox..., then choosing the class library and clicking OK, and add an instance of the EventControl to a Form. Then right-click the EventControl and click the Connect testEvent shortcut menu command. An empty event handler method is created and the EventControl's testEvent method is initialized to this event handler in the initialization code for the Form.  
-  
- [!code-cpp[IEventBindingServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IEventBindingServiceExample/CPP/source.cpp#1)]
- [!code-csharp[IEventBindingServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IEventBindingServiceExample/CS/source.cs#1)]
- [!code-vb[IEventBindingServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IEventBindingServiceExample/VB/source.vb#1)]  
-  
+The following example demonstrates a designer that uses the <xref:System.ComponentModel.Design.IEventBindingService> to link a component's event with an event handler at design time when the custom shortcut menu command that the designer adds for the component is invoked. To use the example, compile it to a class library, add a reference from a Windows Forms project, add the component in the class library to the Toolbox by right-clicking the Toolbox and selecting Customize Toolbox..., then choosing the class library and clicking OK, and add an instance of the EventControl to a Form. Then right-click the EventControl and click the Connect testEvent shortcut menu command. An empty event handler method is created and the EventControl's testEvent method is initialized to this event handler in the initialization code for the Form.  
+ 
+[!code-cpp[IEventBindingServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IEventBindingServiceExample/CPP/source.cpp#1)]
+[!code-csharp[IEventBindingServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IEventBindingServiceExample/CS/source.cs#1)]
+[!code-vb[IEventBindingServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IEventBindingServiceExample/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <returns>The recommended name for the event-handler method for this event.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a name that is unique from any other method name in the user's source code.  
-  
+This method returns a name that is unique from any other method name in the user's source code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <returns>A collection of strings.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each string in the collection is the name of a method that has a method signature compatible with the specified event.  
-  
+Each string in the collection is the name of a method that has a method signature compatible with the specified event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <returns>An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that describe the event set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each returned <xref:System.ComponentModel.PropertyDescriptor> has a <xref:System.ComponentModel.PropertyDescriptor.PropertyType%2A> of string.  
-  
+Each returned <xref:System.ComponentModel.PropertyDescriptor> has a <xref:System.ComponentModel.PropertyDescriptor.PropertyType%2A> of string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that describes the event.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned <xref:System.ComponentModel.PropertyDescriptor> has a <xref:System.ComponentModel.PropertyDescriptor.PropertyType%2A> of string.  
-  
+The returned <xref:System.ComponentModel.PropertyDescriptor> has a <xref:System.ComponentModel.PropertyDescriptor.PropertyType%2A> of string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -231,10 +231,10 @@
           <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method displays the code editor.  
-  
+This method displays the code editor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,10 +266,10 @@
           <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method displays the code editor and positions the cursor on the specified line.  
-  
+This method displays the code editor and positions the cursor on the specified line.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,10 +303,10 @@
           <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method displays the code editor and positions the cursor on the line that the specified event is declared on.  
-  
+This method displays the code editor and positions the cursor on the line that the specified event is declared on.  
+ 
  ]]></format>
         </remarks>
       </Docs>

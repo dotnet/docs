@@ -47,17 +47,17 @@
         <value>The descriptive text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Description"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.DescriptionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,17 +96,17 @@
         <value>The descriptive text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FooterDescription"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.FooterDescriptionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,17 +145,17 @@
         <value>The image to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FooterImageSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.FooterImageSourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,17 +194,17 @@
         <value>The title text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FooterTitle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.FooterTitleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,18 +244,18 @@
           <see langword="true" /> if the ToolTip has content in its footer; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns `true` if any one of the <xref:System.Windows.Controls.Ribbon.RibbonToolTip.FooterDescription%2A>, <xref:System.Windows.Controls.Ribbon.RibbonToolTip.FooterTitle%2A>, or <xref:System.Windows.Controls.Ribbon.RibbonToolTip.FooterImageSource%2A> properties has content.  
-  
+This property returns `true` if any one of the <xref:System.Windows.Controls.Ribbon.RibbonToolTip.FooterDescription%2A>, <xref:System.Windows.Controls.Ribbon.RibbonToolTip.FooterTitle%2A>, or <xref:System.Windows.Controls.Ribbon.RibbonToolTip.FooterImageSource%2A> properties has content.  
+ 
 <a name="dependencyPropertyInfo_HasFooter"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.HasFooterProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,18 +295,18 @@
           <see langword="true" /> if the ToolTip has content in its header; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns `true` if any one of the <xref:System.Windows.Controls.Ribbon.RibbonToolTip.Description%2A>, <xref:System.Windows.Controls.Ribbon.RibbonToolTip.Title%2A>, or <xref:System.Windows.Controls.Ribbon.RibbonToolTip.ImageSource%2A> properties has content.  
-  
+This property returns `true` if any one of the <xref:System.Windows.Controls.Ribbon.RibbonToolTip.Description%2A>, <xref:System.Windows.Controls.Ribbon.RibbonToolTip.Title%2A>, or <xref:System.Windows.Controls.Ribbon.RibbonToolTip.ImageSource%2A> properties has content.  
+ 
 <a name="dependencyPropertyInfo_HasHeader"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.HasHeaderProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,17 +345,17 @@
         <value>The image to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_ImageSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.ImageSourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,17 +395,17 @@
           <see langword="true" /> if the ToolTip placement target is in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" />; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsPlacementTargetInRibbonGroup"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.IsPlacementTargetInRibbonGroupProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,18 +463,18 @@
         <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set on the parent <xref:System.Windows.Controls.Ribbon.Ribbon> control and is inherited by the child controls. It is used to access visual style brushes defined on the <xref:System.Windows.Controls.Ribbon.Ribbon> class.  
-  
+This property is set on the parent <xref:System.Windows.Controls.Ribbon.Ribbon> control and is inherited by the child controls. It is used to access visual style brushes defined on the <xref:System.Windows.Controls.Ribbon.Ribbon> class.  
+ 
 <a name="dependencyPropertyInfo_Ribbon"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.RibbonProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -513,17 +513,17 @@
         <value>The title text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Title"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonToolTip.TitleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

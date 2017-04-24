@@ -14,10 +14,10 @@
     <summary>Represents the criteria to use when searching for services.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.ServiceModel.Discovery.FindCriteria> and the Find operation, see [Discovery Find and FindCriteria](~/docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md)  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.ServiceModel.Discovery.FindCriteria> and the Find operation, see [Discovery Find and FindCriteria](~/docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md)  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <value>The contract type names to search for.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If more than one contract name is specified, only service endpoints matching ALL contracts will reply.  
-  
+If more than one contract name is specified, only service endpoints matching ALL contracts will reply.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <returns>The endpoint criteria to use to find services.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Xml.XmlQualifiedName> is a namespace-qualified local name in the format of `namespace:localname`.  
-  
+An <xref:System.Xml.XmlQualifiedName> is a namespace-qualified local name in the format of `namespace:localname`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <returns>The endpoint criteria to use to find services.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Discovery.FindCriteria> information is used to create an endpoint that can search for services.  
-  
+The <xref:System.ServiceModel.Discovery.FindCriteria> information is used to create an endpoint that can search for services.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -354,10 +354,10 @@
         <value>A collection of absolute URIs used to search for a service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If more than one scope is specified, only service endpoints matching ALL scopes will reply.  
-  
+If more than one scope is specified, only service endpoints matching ALL scopes will reply.  
+ 
  ]]></format>
         </remarks>
       </Docs>

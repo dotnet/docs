@@ -124,10 +124,10 @@
         <summary>Undoes the content contained in this undo unit.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Undo operations toggle an object between the undo and redo state. Therefore, calling this method twice sets the object back to its original state.  
-  
+Undo operations toggle an object between the undo and redo state. Therefore, calling this method twice sets the object back to its original state.  
+ 
  ]]></format>
         </remarks>
       </Docs>

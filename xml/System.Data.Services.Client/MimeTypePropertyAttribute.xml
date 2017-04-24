@@ -20,12 +20,12 @@
     <summary>Annotates a property on a class that has been annotated with the <see cref="T:System.Data.Services.Client.MediaEntryAttribute" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `MimeTypePropertyAttribute` takes the name of the property that holds the mime type to associate with the property specified in the <xref:System.Data.Services.Client.MediaEntryAttribute>. The property specified is automatically set to the mime type of data when a media resource associated with the media link entry is delay-loaded by the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method.  
-  
- The system also reads the mime type from this property and uses it to set the `Content-Type` header in a POST request for a media link entry. A media link entry is an AtomPub protocol construct for handling binary data and metadata.  
-  
+The `MimeTypePropertyAttribute` takes the name of the property that holds the mime type to associate with the property specified in the <xref:System.Data.Services.Client.MediaEntryAttribute>. The property specified is automatically set to the mime type of data when a media resource associated with the media link entry is delay-loaded by the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method.  
+ 
+The system also reads the mime type from this property and uses it to set the `Content-Type` header in a POST request for a media link entry. A media link entry is an AtomPub protocol construct for handling binary data and metadata.  
+ 
  ]]></format>
     </remarks>
   </Docs>

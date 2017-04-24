@@ -23,24 +23,24 @@
     <summary>Provides a type converter to convert <see cref="T:System.Decimal" /> objects to and from various other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a decimal object to and from a string.  
-  
+This converter can only convert a decimal object to and from a string.  
+ 
 > [!NOTE]
 >  You should never create an instance of the <xref:System.ComponentModel.DecimalConverter> class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ 
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
   
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
-   
-  
+ 
 ## Examples  
- The following code example converts a variable of type <xref:System.Decimal> to a string, and vice versa.  
-  
- [!code-cpp[Converters#10](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#10)]
- [!code-csharp[Converters#10](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#10)]
- [!code-vb[Converters#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#10)]  
-  
+The following code example converts a variable of type <xref:System.Decimal> to a string, and vice versa.  
+ 
+[!code-cpp[Converters#10](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#10)]
+[!code-csharp[Converters#10](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#10)]
+[!code-vb[Converters#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,10 +102,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

@@ -23,14 +23,14 @@
     <summary>Defines the invoking designer and message filters properties and the method that determines whether an activity is supported for all workflow root designers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- All workflow root designers are either of type <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> or inherit from it.  
-  
+ 
+All workflow root designers are either of type <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> or inherit from it.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <value>The <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> that requested the workflow root designer to be initialized.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current activity designer is the child of another activity designer, the parent designer is often also the invoking designer.  
-  
+If the current activity designer is the child of another activity designer, the parent designer is often also the invoking designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>

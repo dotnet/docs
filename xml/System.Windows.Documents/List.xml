@@ -19,38 +19,38 @@
     <summary>A block-level flow content element that provides facilities for presenting content in an ordered or unordered list.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.List> enforces a strong content model for child content. See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information about the <xref:System.Windows.Documents.List> content model.  
+<xref:System.Windows.Documents.List> enforces a strong content model for child content. See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information about the <xref:System.Windows.Documents.List> content model.  
+ 
+<xref:System.Windows.Documents.List> is a flow content element designed to be formatted with markers such as bullets or numbering.  
+ 
+<xref:System.Windows.Documents.ListItem> elements are the only permissible children for a <xref:System.Windows.Documents.List> element.  
+ 
   
- <xref:System.Windows.Documents.List> is a flow content element designed to be formatted with markers such as bullets or numbering.  
-  
- <xref:System.Windows.Documents.ListItem> elements are the only permissible children for a <xref:System.Windows.Documents.List> element.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to define a <xref:System.Windows.Documents.List> using [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)].  
-  
- [!code-xml[ListSnippets#_ListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_listxaml)]  
-  
- The following example shows how to create and populate a <xref:System.Windows.Documents.List> programmatically.  
-  
- [!code-csharp[ListSnippets#_List_Props](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml.cs#_list_props)]
- [!code-vb[ListSnippets#_List_Props](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListSnippets/visualbasic/window1.xaml.vb#_list_props)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: Ordered list](~/add/media/ordered-list.png "Screenshot: Ordered list")  
-  
- The following example shows how to define a nested <xref:System.Windows.Documents.List> (lists within lists) using [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)].  
-  
- [!code-xml[ListSnippets#_NestedListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_nestedlistxaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Nested list](~/add/media/flow-nested-list-example.png "Nested list")  
-  
+The following example shows how to define a <xref:System.Windows.Documents.List> using [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)].  
+ 
+[!code-xml[ListSnippets#_ListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_listxaml)]  
+ 
+The following example shows how to create and populate a <xref:System.Windows.Documents.List> programmatically.  
+ 
+[!code-csharp[ListSnippets#_List_Props](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml.cs#_list_props)]
+[!code-vb[ListSnippets#_List_Props](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListSnippets/visualbasic/window1.xaml.vb#_list_props)]  
+ 
+The following figure shows how this example renders.  
+ 
+![Screenshot: Ordered list](~/add/media/ordered-list.png "Screenshot: Ordered list")  
+ 
+The following example shows how to define a nested <xref:System.Windows.Documents.List> (lists within lists) using [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)].  
+ 
+[!code-xml[ListSnippets#_NestedListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_nestedlistxaml)]  
+ 
+The following figure shows how this example renders.  
+ 
+![Nested list](~/add/media/flow-nested-list-example.png "Nested list")  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,13 +87,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.List" /> class, taking a specified <see cref="T:System.Windows.Documents.ListItem" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.List" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[ListSnippets#_List_Const](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml.cs#_list_const)]
- [!code-vb[ListSnippets#_List_Const](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListSnippets/visualbasic/window1.xaml.vb#_list_const)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[ListSnippets#_List_Const](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml.cs#_list_const)]
+[!code-vb[ListSnippets#_List_Const](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListSnippets/visualbasic/window1.xaml.vb#_list_const)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,18 +122,18 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Documents.ListItemCollection> returned by this property to enumerate or manipulate the contents of a <xref:System.Windows.Documents.List> element.  
+Use the <xref:System.Windows.Documents.ListItemCollection> returned by this property to enumerate or manipulate the contents of a <xref:System.Windows.Documents.List> element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following examples show how to perform common operations on a <xref:System.Windows.Documents.List> using the <xref:System.Windows.Documents.List.ListItems%2A> property.  
-  
- [!code-csharp[ListSnippets#_List_ListItems](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml.cs#_list_listitems)]
- [!code-vb[ListSnippets#_List_ListItems](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListSnippets/visualbasic/window1.xaml.vb#_list_listitems)]  
-  
+The following examples show how to perform common operations on a <xref:System.Windows.Documents.List> using the <xref:System.Windows.Documents.List.ListItems%2A> property.  
+ 
+[!code-csharp[ListSnippets#_List_ListItems](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml.cs#_list_listitems)]
+[!code-vb[ListSnippets#_List_ListItems](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListSnippets/visualbasic/window1.xaml.vb#_list_listitems)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,12 +164,12 @@
  The default value is <see cref="F:System.Double.NaN" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MarkerOffset"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object MarkerOffset="double"/>  
 - or -  
@@ -177,34 +177,34 @@
 - or -  
 <object MarkerOffset="Auto"/>  
 ```  
-  
+ 
 <a name="xamlValues_MarkerOffset"></a>   
 ## XAML Values  
- *double*  
- String representation of a <xref:System.Double> value equal to or greater than **0.0** but smaller than <xref:System.Double>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
-  
- *qualifiedDouble*  
- A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- `cm` is centimeters; 1cm==(96/2.54) px  
-  
- `pt` is points; 1pt==(96/72) px  
-  
- Auto  
- Causes the marker offset to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double>.  
-  
+*double*  
+String representation of a <xref:System.Double> value equal to or greater than **0.0** but smaller than <xref:System.Double>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ 
+*qualifiedDouble*  
+A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in==96px  
+ 
+`cm` is centimeters; 1cm==(96/2.54) px  
+ 
+`pt` is points; 1pt==(96/72) px  
+ 
+Auto  
+Causes the marker offset to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double>.  
+ 
 <a name="dependencyPropertyInfo_MarkerOffset"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.List.MarkerOffsetProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,17 +245,17 @@
  The default value is <see cref="F:System.Windows.TextMarkerStyle.Disc" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_MarkerStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.List.MarkerStyle%2A>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,18 +296,18 @@
  The default value is **1**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property has no effect on unordered lists.  
-  
+This property has no effect on unordered lists.  
+ 
 <a name="dependencyPropertyInfo_StartIndex"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.List.StartIndexProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

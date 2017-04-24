@@ -14,27 +14,27 @@
     <summary>Contains the metadata that defines an event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class represents an event defined in the manifest. After writing your manifest, you use the Message Compiler (MC.exe) to generate a resource file. A byproduct of the process is a header file that contains the event descriptor in C, as shown in the following example.  
-  
+This class represents an event defined in the manifest. After writing your manifest, you use the Message Compiler (MC.exe) to generate a resource file. A byproduct of the process is a header file that contains the event descriptor in C, as shown in the following example.  
+ 
 ```  
 EXTERN_C __declspec(selectany) const EVENT_DESCRIPTOR ReadEvent = {0x1, 0x0, 0x10, 0x4, 0x0, 0x0, 0x8000000000000005};  
 ```  
-  
- Use the values of the descriptor to create an instance of this class, as shown in the following example. The keyword is an unsigned long value and cannot be cast directly to a long; you must use the `unchecked` language keyword to allow the assignment.  
-  
+ 
+Use the values of the descriptor to create an instance of this class, as shown in the following example. The keyword is an unsigned long value and cannot be cast directly to a long; you must use the `unchecked` language keyword to allow the assignment.  
+ 
 ```  
 unchecked  
 {  
-    readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
+   readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
 }  
 ```  
-  
- You use the descriptor when calling the <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=fullName> or <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=fullName> method.  
-  
- For more information on writing the manifest and using the message compiler, see [Developing Event Publishers](https://msdn.microsoft.com/en-us/library/windows/desktop/aa964766\(v=vs.85\).aspx)  
-  
+ 
+You use the descriptor when calling the <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=fullName> or <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=fullName> method.  
+ 
+For more information on writing the manifest and using the message compiler, see [Developing Event Publishers](https://msdn.microsoft.com/en-us/library/windows/desktop/aa964766\(v=vs.85\).aspx)  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@ unchecked
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.EventDescriptor" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details on these parameters, see the attributes of the [EventDefinitionType](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382754\(v=vs.85\).aspx) complex type.  
-  
+For details on these parameters, see the attributes of the [EventDefinitionType](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382754\(v=vs.85\).aspx) complex type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@ unchecked
         <value>The version of the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The version indicates a revision to the event definition. You can use this member and the Id member to identify a unique event.  
-  
+The version indicates a revision to the event definition. You can use this member and the Id member to identify a unique event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

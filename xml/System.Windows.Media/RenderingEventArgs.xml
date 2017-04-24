@@ -32,10 +32,10 @@
         <value>The estimated target time at which the next frame of an animation will be rendered.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.TimeSpan> that is returned reflects the same value as the animation system. This is the same time used by the time manager. For more information, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
-  
+The <xref:System.TimeSpan> that is returned reflects the same value as the animation system. This is the same time used by the time manager. For more information, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

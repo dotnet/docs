@@ -19,24 +19,24 @@
     <summary>Indicates that a method is invoked by a condition. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This attribute is used to support a forward chaining model that will cause the reevaluation of rules based on state change. The <xref:System.Workflow.Activities.Rules.RuleReadAttribute>, <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>, and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> classes each indicate the properties used to read a condition, write an action, and invoke a method. These attributes enable the workflow to only reevaluate rules that will change the final output.  
+This attribute is used to support a forward chaining model that will cause the reevaluation of rules based on state change. The <xref:System.Workflow.Activities.Rules.RuleReadAttribute>, <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>, and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> classes each indicate the properties used to read a condition, write an action, and invoke a method. These attributes enable the workflow to only reevaluate rules that will change the final output.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates proper usage of the <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>.  
-  
+The following code example demonstrates proper usage of the <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>.  
+ 
 ```csharp  
 [RuleInvokeAttribute("UpdateAttributeValue")]  
-  
+ 
 bool DoSomething()  
 {  
-    return attributevalue();  
+   return attributevalue();  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

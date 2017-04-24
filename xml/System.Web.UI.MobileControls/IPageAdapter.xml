@@ -20,10 +20,10 @@
     <summary>Defines the interface to a page adapter. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All page adapters must implement this interface. This interface inherits from the <xref:System.Web.UI.MobileControls.IControlAdapter> interface, so any class that implements this interface must also implement the <xref:System.Web.UI.MobileControls.IControlAdapter> interface. The easiest solution is to derive a class from the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> base class, which provides a default implementation of the <xref:System.Web.UI.MobileControls.IControlAdapter> interface.  
-  
+All page adapters must implement this interface. This interface inherits from the <xref:System.Web.UI.MobileControls.IControlAdapter> interface, so any class that implements this interface must also implement the <xref:System.Web.UI.MobileControls.IControlAdapter> interface. The easiest solution is to derive a class from the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter> base class, which provides a default implementation of the <xref:System.Web.UI.MobileControls.IControlAdapter> interface.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -46,10 +46,10 @@
         <value>A list of any additional HTTP headers by which caching is varied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see Output Caching in [Mobile Text Writer Rendering Best Practices](http://msdn.microsoft.com/en-us/28893297-2c45-4c57-a2b3-9cdd5898f988).  
-  
+For more information, see Output Caching in [Mobile Text Writer Rendering Best Practices](http://msdn.microsoft.com/en-us/28893297-2c45-4c57-a2b3-9cdd5898f988).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,10 +71,10 @@
         <value>A dictionary of data that has been persisted through the use of the URL query string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is populated when a valid <xref:System.Collections.IDictionary> type is configured as an attribute of the < `mobileControls` > configuration element.  
-  
+This property is populated when a valid <xref:System.Collections.IDictionary> type is configured as an attribute of the < `mobileControls` > configuration element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <returns>A modified name value collection of post data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because some devices handle postback differently than others, this method allows the adapter to modify the collection.  
-  
+Because some devices handle postback differently than others, this method allows the adapter to modify the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
           <see langword="true" /> if the page adapter handles the error; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called if an unhandled exception occurs during the life cycle of the page.  
-  
+This method is called if an unhandled exception occurs during the life cycle of the page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@
           <see langword="true" /> if the page adapter handles the exception; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Called during postback. Allows a page adapter to handle a postback event by itself.  
-  
+Called during postback. Allows a page adapter to handle a postback event by itself.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,10 +255,10 @@
           <see langword="true" /> if the items from the <see cref="P:System.Web.UI.MobileControls.IPageAdapter.CookielessDataDictionary" /> property are persisted in the query string; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is `true` by default, if the `CookielessDataDictionaryType` entry in the `MobileControls` configuration section of Web.config is set to a valid dictionary type.  
-  
+This value is `true` by default, if the `CookielessDataDictionaryType` entry in the `MobileControls` configuration section of Web.config is set to a valid dictionary type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

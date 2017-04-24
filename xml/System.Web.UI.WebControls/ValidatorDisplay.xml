@@ -13,19 +13,19 @@
     <summary>Specifies the display behavior of error messages in validation controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ValidatorDisplay> enumeration represents the different display behaviors of error messages in validation controls.  
-  
- None specifies that you only want to display the error message in a <xref:System.Web.UI.WebControls.ValidationSummary> control. The error message will not display in the validation control.  
-  
- Static specifies that you don't want the layout of the Web page to change when validator controls display error messages. Space on the page is allocated for the error messages when displaying the page. The validator contents are physically part of the page; therefore, multiple validators for the same input control must occupy different locations on the page.  
-  
- Dynamic specifies that you want to dynamically place error messages on the Web page when validation fails. Space for the validation content is not allocated on the page; therefore, the page dynamically changes to display the error message. This allows multiple validators to share the same physical location on the page. In order to keep the page layout from changing when an error message is displayed, the HTML element containing the validator must be sized large enough to accommodate the maximum size of the validator.  
-  
+The <xref:System.Web.UI.WebControls.ValidatorDisplay> enumeration represents the different display behaviors of error messages in validation controls.  
+ 
+None specifies that you only want to display the error message in a <xref:System.Web.UI.WebControls.ValidationSummary> control. The error message will not display in the validation control.  
+ 
+Static specifies that you don't want the layout of the Web page to change when validator controls display error messages. Space on the page is allocated for the error messages when displaying the page. The validator contents are physically part of the page; therefore, multiple validators for the same input control must occupy different locations on the page.  
+ 
+Dynamic specifies that you want to dynamically place error messages on the Web page when validation fails. Space for the validation content is not allocated on the page; therefore, the page dynamically changes to display the error message. This allows multiple validators to share the same physical location on the page. In order to keep the page layout from changing when an error message is displayed, the HTML element containing the validator must be sized large enough to accommodate the maximum size of the validator.  
+ 
 ## Accessibility  
- For information about how to configure validation controls so that they generate markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
-  
+For information about how to configure validation controls so that they generate markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ 
  ]]></format>
     </remarks>
   </Docs>

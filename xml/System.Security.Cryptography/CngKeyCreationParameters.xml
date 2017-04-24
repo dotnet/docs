@@ -23,16 +23,16 @@
     <summary>Contains advanced properties for key creation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Cryptography.CngKey> objects contain properties. Some properties must be added to a key when it is created. Other properties can be added after the key is created.  
-  
- The <xref:System.Security.Cryptography.CngKeyCreationParameters> class enables you to add properties to a key as it is being created. You can do this by passing a <xref:System.Security.Cryptography.CngKeyCreationParameters> object that contains standard key properties, such as key storage provider (KSP), export policy, key usage, user interface (UI) policy, and parent window handle, to the <xref:System.Security.Cryptography.CngKey.Create%2A> method. The <xref:System.Security.Cryptography.CngKey> object that is being created will be initialized with these values before it is finalized.  
-  
- You can also add non-standard properties to a key by using the <xref:System.Security.Cryptography.CngKeyCreationParameters.Parameters%2A> property.  
-  
- If you need to add properties after a key is created, use the <xref:System.Security.Cryptography.CngKey.SetProperty%2A> method.  
-  
+<xref:System.Security.Cryptography.CngKey> objects contain properties. Some properties must be added to a key when it is created. Other properties can be added after the key is created.  
+ 
+The <xref:System.Security.Cryptography.CngKeyCreationParameters> class enables you to add properties to a key as it is being created. You can do this by passing a <xref:System.Security.Cryptography.CngKeyCreationParameters> object that contains standard key properties, such as key storage provider (KSP), export policy, key usage, user interface (UI) policy, and parent window handle, to the <xref:System.Security.Cryptography.CngKey.Create%2A> method. The <xref:System.Security.Cryptography.CngKey> object that is being created will be initialized with these values before it is finalized.  
+ 
+You can also add non-standard properties to a key by using the <xref:System.Security.Cryptography.CngKeyCreationParameters.Parameters%2A> property.  
+ 
+If you need to add properties after a key is created, use the <xref:System.Security.Cryptography.CngKey.SetProperty%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <value>An object that specifies a key export policy. The default value is <see langword="null" />, which indicates that the key storage provider's default export policy is set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about key export policies, see the <xref:System.Security.Cryptography.CngExportPolicies> class.  
-  
+For information about key export policies, see the <xref:System.Security.Cryptography.CngExportPolicies> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <value>An object that specifies options for creating keys. The default value is <see langword="null" />, which indicates that the key storage provider's default key creation options are set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned <xref:System.Security.Cryptography.CngKeyCreationOptions> object defines options that are used when you create a new <xref:System.Security.Cryptography.CngKey> object. These options determine whether the key is created in the user or machine key store, and whether a new key should overwrite an existing key. By default, if <xref:System.Security.Cryptography.CngKeyCreationOptions?displayProperty=fullName> is not specified, the key is created in the user store.  
-  
+The returned <xref:System.Security.Cryptography.CngKeyCreationOptions> object defines options that are used when you create a new <xref:System.Security.Cryptography.CngKey> object. These options determine whether the key is created in the user or machine key store, and whether a new key should overwrite an existing key. By default, if <xref:System.Security.Cryptography.CngKeyCreationOptions?displayProperty=fullName> is not specified, the key is created in the user store.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>A bitwise combination of one or more enumeration values that specify key usage. The default value is <see langword="null" />, which indicates that the key storage provider's default key usage is set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used when you create a new <xref:System.Security.Cryptography.CngKey> object. It specifies the usages (such as encryption/decryption, signing/verification, and secret agreement generation) that will be enabled on the new key.  
-  
+This property is used when you create a new <xref:System.Security.Cryptography.CngKey> object. It specifies the usages (such as encryption/decryption, signing/verification, and secret agreement generation) that will be enabled on the new key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,18 +194,18 @@
         <value>A collection object that contains any additional parameters that you must set on a <see cref="T:System.Security.Cryptography.CngKey" /> object during key creation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.CngKeyCreationParameters> class enables you to create a new <xref:System.Security.Cryptography.CngKey> object and initialize it with common properties. If you must set additional properties on the key during its creation, follow these steps:  
-  
+The <xref:System.Security.Cryptography.CngKeyCreationParameters> class enables you to create a new <xref:System.Security.Cryptography.CngKey> object and initialize it with common properties. If you must set additional properties on the key during its creation, follow these steps:  
+ 
 1.  Create a new <xref:System.Security.Cryptography.CngProperty> object for each additional property that you must set.  
-  
+ 
 2.  Call the <xref:System.Security.Cryptography.CngKeyCreationParameters.Parameters%2A> property to obtain an empty <xref:System.Security.Cryptography.CngPropertyCollection> object.  
-  
+ 
 3.  Add the <xref:System.Security.Cryptography.CngProperty> objects to the <xref:System.Security.Cryptography.CngPropertyCollection> object.  
-  
+ 
 4.  Call the <xref:System.Security.Cryptography.CngKey.Create%28System.Security.Cryptography.CngAlgorithm%2CSystem.String%2CSystem.Security.Cryptography.CngKeyCreationParameters%29> method overload and pass the initialized <xref:System.Security.Cryptography.CngKeyCreationParameters> object to it.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -242,10 +242,10 @@
         <value>The HWND of the parent window that is used for CNG dialog boxes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should be set if key creation causes CNG to show a dialog box.  
-  
+This property should be set if key creation causes CNG to show a dialog box.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>

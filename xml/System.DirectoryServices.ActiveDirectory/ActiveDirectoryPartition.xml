@@ -73,10 +73,10 @@
         <summary>Releases the managed resources that are used by the object and, optionally, releases unmanaged resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `disposing` parameter only affects the release of the managed resources. The unmanaged resources are always released by this method.  
-  
+The `disposing` parameter only affects the release of the managed resources. The unmanaged resources are always released by this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

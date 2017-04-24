@@ -22,21 +22,21 @@
     <summary>Represents an expression that raises an event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeDelegateInvokeExpression> can be used to represent code that invokes an event. Invoking an event invokes all delegates that are registered with the event using the specified parameters.  
+<xref:System.CodeDom.CodeDelegateInvokeExpression> can be used to represent code that invokes an event. Invoking an event invokes all delegates that are registered with the event using the specified parameters.  
+ 
+The <xref:System.CodeDom.CodeDelegateInvokeExpression.TargetObject%2A> property specifies the event to invoke. The <xref:System.CodeDom.CodeDelegateInvokeExpression.Parameters%2A> property specifies the parameters to pass to the delegates for the event.  
+ 
   
- The <xref:System.CodeDom.CodeDelegateInvokeExpression.TargetObject%2A> property specifies the event to invoke. The <xref:System.CodeDom.CodeDelegateInvokeExpression.Parameters%2A> property specifies the parameters to pass to the delegates for the event.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of a <xref:System.CodeDom.CodeDelegateInvokeExpression> to invoke an event named `TestEvent`.  
-  
- [!code-cpp[CodeDelegateInvokeExpressionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDelegateInvokeExpressionExample/CPP/codedelegateinvokeexpressionexample.cpp#3)]
- [!code-csharp[CodeDelegateInvokeExpressionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDelegateInvokeExpressionExample/CS/codedelegateinvokeexpressionexample.cs#3)]
- [!code-vb[CodeDelegateInvokeExpressionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDelegateInvokeExpressionExample/VB/codedelegateinvokeexpressionexample.vb#3)]  
-  
+The following example demonstrates use of a <xref:System.CodeDom.CodeDelegateInvokeExpression> to invoke an event named `TestEvent`.  
+ 
+[!code-cpp[CodeDelegateInvokeExpressionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDelegateInvokeExpressionExample/CPP/codedelegateinvokeexpressionexample.cpp#3)]
+[!code-csharp[CodeDelegateInvokeExpressionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDelegateInvokeExpressionExample/CS/codedelegateinvokeexpressionexample.cs#3)]
+[!code-vb[CodeDelegateInvokeExpressionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDelegateInvokeExpressionExample/VB/codedelegateinvokeexpressionexample.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

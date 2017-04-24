@@ -25,10 +25,10 @@
     <summary>Defines the interface for an STL/CLR [list](http://msdn.microsoft.com/library/a70c45c8-a257-4f6b-8434-b27ff6685bac) object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[unnamed_parm](~/includes/unnamed-parm-md.md)]  
-  
+[!INCLUDE[unnamed_parm](~/includes/unnamed-parm-md.md)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Replaces the controlled sequence with the sequence that is designated by the given enumerator.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
-  
+For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <summary>Replaces the controlled sequence with the sequence <c>[</c><paramref name="_First" /><c>,</c> <paramref name="_Last" /><c>)</c>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
-  
+For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <summary>Replaces the controlled sequence with the specified number of the given element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
-  
+For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <returns>The last element of the controlled sequence, which must be non-empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::back (STL/CLR)](http://msdn.microsoft.com/library/3241e497-42ab-4108-8598-3f90eac76f07).  
-  
+For more information, see [list::back (STL/CLR)](http://msdn.microsoft.com/library/3241e497-42ab-4108-8598-3f90eac76f07).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <value>The last element of the controlled sequence, which must be non-empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::back_item (STL/CLR)](http://msdn.microsoft.com/library/63dcdd21-61f7-4e0f-88a7-c9c8f8a2c50a).  
-  
+For more information, see [list::back_item (STL/CLR)](http://msdn.microsoft.com/library/63dcdd21-61f7-4e0f-88a7-c9c8f8a2c50a).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@
         <returns>An iterator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::begin (STL/CLR)](http://msdn.microsoft.com/library/3431467b-951a-498a-af8d-50f631da1646).  
-  
+For more information, see [list::begin (STL/CLR)](http://msdn.microsoft.com/library/3431467b-951a-498a-af8d-50f631da1646).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,10 +218,10 @@
         <summary>Removes all elements from the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::clear (STL/CLR)](http://msdn.microsoft.com/library/5aac9a64-52f6-4a73-8b24-e30ceedcbc20).  
-  
+For more information, see [list::clear (STL/CLR)](http://msdn.microsoft.com/library/5aac9a64-52f6-4a73-8b24-e30ceedcbc20).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,10 +245,10 @@
           <see langword="true" /> if the container has no elements; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::empty (STL/CLR)](http://msdn.microsoft.com/library/f45edf8a-927d-41ff-9c09-cb0fba4f08b8).  
-  
+For more information, see [list::empty (STL/CLR)](http://msdn.microsoft.com/library/f45edf8a-927d-41ff-9c09-cb0fba4f08b8).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,10 +274,10 @@
         <returns>An iterator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::end (STL/CLR)](http://msdn.microsoft.com/library/c3444164-2c6e-4cbd-8765-1ce7d30fc43e).  
-  
+For more information, see [list::end (STL/CLR)](http://msdn.microsoft.com/library/c3444164-2c6e-4cbd-8765-1ce7d30fc43e).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -350,10 +350,10 @@
         <returns>The first element of the controlled sequence, which must be non-empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::front (STL/CLR)](http://msdn.microsoft.com/library/ead6aaaa-b518-4a9c-af80-7189bf872cad).  
-  
+For more information, see [list::front (STL/CLR)](http://msdn.microsoft.com/library/ead6aaaa-b518-4a9c-af80-7189bf872cad).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,10 +375,10 @@
         <value>The first element of the controlled sequence, which must be non-empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::front_item (STL/CLR)](http://msdn.microsoft.com/library/c871873b-7745-442b-9760-9d8096fa8610).  
-  
+For more information, see [list::front_item (STL/CLR)](http://msdn.microsoft.com/library/c871873b-7745-442b-9760-9d8096fa8610).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -504,10 +504,10 @@
         <summary>Merges two ordered controlled sequences.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::merge (STL/CLR)](http://msdn.microsoft.com/library/f8e93cd3-bd08-4086-859b-08a2899cc9a6).  
-  
+For more information, see [list::merge (STL/CLR)](http://msdn.microsoft.com/library/f8e93cd3-bd08-4086-859b-08a2899cc9a6).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -529,10 +529,10 @@
         <summary>Removes the last element from the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::pop_back (STL/CLR)](http://msdn.microsoft.com/library/03fe8e0e-461b-41c4-8e20-97d0d4ed0feb).  
-  
+For more information, see [list::pop_back (STL/CLR)](http://msdn.microsoft.com/library/03fe8e0e-461b-41c4-8e20-97d0d4ed0feb).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,10 +554,10 @@
         <summary>Removes the first element from the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::pop_front (STL/CLR)](http://msdn.microsoft.com/library/6a0bad42-6796-41d9-a3e9-1488b3882574).  
-  
+For more information, see [list::pop_front (STL/CLR)](http://msdn.microsoft.com/library/6a0bad42-6796-41d9-a3e9-1488b3882574).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -582,10 +582,10 @@
         <summary>Adds a new element to the end of the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::push_back (STL/CLR)](http://msdn.microsoft.com/library/f2c70470-a899-4e5f-8f3e-b55d6a8bff0e).  
-  
+For more information, see [list::push_back (STL/CLR)](http://msdn.microsoft.com/library/f2c70470-a899-4e5f-8f3e-b55d6a8bff0e).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -610,10 +610,10 @@
         <summary>Adds a new element to the beginning of the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::push_front (STL/CLR)](http://msdn.microsoft.com/library/47525641-1139-44fc-ac62-bdc04876d9e0).  
-  
+For more information, see [list::push_front (STL/CLR)](http://msdn.microsoft.com/library/47525641-1139-44fc-ac62-bdc04876d9e0).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -639,10 +639,10 @@
         <returns>An iterator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::rbegin (STL/CLR)](http://msdn.microsoft.com/library/99637376-8ac3-4e39-844a-b4f324a7c6ba).  
-  
+For more information, see [list::rbegin (STL/CLR)](http://msdn.microsoft.com/library/99637376-8ac3-4e39-844a-b4f324a7c6ba).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -667,10 +667,10 @@
         <summary>Removes an element that has a specified value from the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::remove (STL/CLR)](http://msdn.microsoft.com/library/eaf598ee-e8fd-4cc0-be69-ca81a80e1d51).  
-  
+For more information, see [list::remove (STL/CLR)](http://msdn.microsoft.com/library/eaf598ee-e8fd-4cc0-be69-ca81a80e1d51).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -696,10 +696,10 @@
         <returns>An iterator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::rend (STL/CLR)](http://msdn.microsoft.com/library/b51030ad-1bca-42b0-b890-db47111d2921).  
-  
+For more information, see [list::rend (STL/CLR)](http://msdn.microsoft.com/library/b51030ad-1bca-42b0-b890-db47111d2921).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -724,10 +724,10 @@
         <summary>Changes the number of elements in the container to the specified size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
-  
+For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -754,10 +754,10 @@
         <summary>Changes the number of elements in the container to the specified size. If the new size is larger than the old size, the given values will be appended to the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
-  
+For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -779,10 +779,10 @@
         <summary>Reverses the elements of the controlled sequence.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::reverse (STL/CLR)](http://msdn.microsoft.com/library/de3bce1e-01fe-461d-a785-5cf4fcea988f).  
-  
+For more information, see [list::reverse (STL/CLR)](http://msdn.microsoft.com/library/de3bce1e-01fe-461d-a785-5cf4fcea988f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -805,10 +805,10 @@
         <returns>The length of the controlled sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::size (STL/CLR)](http://msdn.microsoft.com/library/409e39fb-4468-44bb-b179-52c90e2fa293).  
-  
+For more information, see [list::size (STL/CLR)](http://msdn.microsoft.com/library/409e39fb-4468-44bb-b179-52c90e2fa293).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -833,10 +833,10 @@
         <summary>Orders the controlled sequence.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::sort (STL/CLR)](http://msdn.microsoft.com/library/f811d5f4-a19e-4194-8765-1e68097c52f0).  
-  
+For more information, see [list::sort (STL/CLR)](http://msdn.microsoft.com/library/f811d5f4-a19e-4194-8765-1e68097c52f0).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -936,10 +936,10 @@
         <summary>Swaps the contents of two containers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::swap (STL/CLR)](http://msdn.microsoft.com/library/188b66c2-0a08-4001-a566-41d0955c89bd).  
-  
+For more information, see [list::swap (STL/CLR)](http://msdn.microsoft.com/library/188b66c2-0a08-4001-a566-41d0955c89bd).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -964,10 +964,10 @@
         <summary>Removes adjacent elements that pass a specified test.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::unique (STL/CLR)](http://msdn.microsoft.com/library/c3a29e4e-0ec1-4472-b050-7a9511037132).  
-  
+For more information, see [list::unique (STL/CLR)](http://msdn.microsoft.com/library/c3a29e4e-0ec1-4472-b050-7a9511037132).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -981,10 +981,10 @@
         <summary>Adds elements to the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::insert (STL/CLR)](http://msdn.microsoft.com/library/399ed30f-6b76-41a8-b180-6070e3ca1c68).  
-  
+For more information, see [list::insert (STL/CLR)](http://msdn.microsoft.com/library/399ed30f-6b76-41a8-b180-6070e3ca1c68).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -998,10 +998,10 @@
         <summary>Replaces all elements of the container with the specified elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
-  
+For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1015,10 +1015,10 @@
         <summary>Removes elements from the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::erase (STL/CLR)](http://msdn.microsoft.com/library/78705058-1e83-441d-b267-d4fb56451c0b).  
-  
+For more information, see [list::erase (STL/CLR)](http://msdn.microsoft.com/library/78705058-1e83-441d-b267-d4fb56451c0b).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1032,10 +1032,10 @@
         <summary>Changes the number of elements in the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
-  
+For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1049,10 +1049,10 @@
         <summary>Reorders links between nodes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [list::splice (STL/CLR)](http://msdn.microsoft.com/library/ebc424b9-8341-4a88-b101-86d56324f5ac).  
-  
+For more information, see [list::splice (STL/CLR)](http://msdn.microsoft.com/library/ebc424b9-8341-4a88-b101-86d56324f5ac).  
+ 
  ]]></format>
         </remarks>
       </Docs>

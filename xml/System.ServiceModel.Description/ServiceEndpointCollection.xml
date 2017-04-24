@@ -17,20 +17,20 @@
     <summary>A collection that contains the endpoints for a service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection of endpoints for a service is used by the metadata API to manage services with multiple endpoints. <xref:System.ServiceModel.Description.ServiceEndpointCollection> is returned, for example, by the <xref:System.ServiceModel.Description.ServiceDescription.Endpoints%2A> property and by the <xref:System.ServiceModel.Description.WsdlImporter.ImportAllEndpoints%2A> method when creating service endpoints from WSDL port types.  
+This collection of endpoints for a service is used by the metadata API to manage services with multiple endpoints. <xref:System.ServiceModel.Description.ServiceEndpointCollection> is returned, for example, by the <xref:System.ServiceModel.Description.ServiceDescription.Endpoints%2A> property and by the <xref:System.ServiceModel.Description.WsdlImporter.ImportAllEndpoints%2A> method when creating service endpoints from WSDL port types.  
+ 
+The collection provides the functionality to <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> the endpoints of a particular type, that have a specific name or address, or to <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> of the endpoints for a service that meet a specified contract type or name criteria.  
+ 
   
- The collection provides the functionality to <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> the endpoints of a particular type, that have a specific name or address, or to <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> of the endpoints for a service that meet a specified contract type or name criteria.  
-  
-   
-  
+ 
 ## Examples  
- The following example illustrates the use of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> and <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods to enumerate <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy various search criteria.  
-  
- [!code-csharp[ServiceEndpointCollection#1](~/samples/snippets/csharp/VS_Snippets_CFX/serviceendpointcollection/cs/proxy.cs#1)]
- [!code-csharp[ServiceEndpointCollection#1](~/samples/snippets/csharp/VS_Snippets_CFX/serviceendpointcollection/cs/serviceendpointcollection.service.overview.cs#1)]  
-  
+The following example illustrates the use of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> and <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods to enumerate <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy various search criteria.  
+ 
+[!code-csharp[ServiceEndpointCollection#1](~/samples/snippets/csharp/VS_Snippets_CFX/serviceendpointcollection/cs/proxy.cs#1)]
+[!code-csharp[ServiceEndpointCollection#1](~/samples/snippets/csharp/VS_Snippets_CFX/serviceendpointcollection/cs/serviceendpointcollection.service.overview.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,12 +56,12 @@
         <returns>The first <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> of the specified contract type or <see langword="null" /> if none was found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%28System.Type%29> overload is specific to the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model. It looks at the <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> property for each endpoint. The <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> may be `null` if the <xref:System.ServiceModel.Description.ContractDescription> was not created from the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] programming model (types with *Contract attributes).  
-  
- There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
-  
+This <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%28System.Type%29> overload is specific to the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model. It looks at the <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> property for each endpoint. The <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> may be `null` if the <xref:System.ServiceModel.Description.ContractDescription> was not created from the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] programming model (types with *Contract attributes).  
+ 
+There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -89,10 +89,10 @@
         <returns>The first <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> of the specified address or <see langword="null" /> if none was found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
-  
+There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -120,10 +120,10 @@
         <returns>The first <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> with the specified namespace and contract name or <see langword="null" /> if none was found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
-  
+There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <returns>The first <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> of the specified contract type and binding name and namespace or <see langword="null" /> if none was found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
-  
+There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -184,10 +184,10 @@
         <returns>The first <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> with the specified binding and contract names and namespaces.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
-  
+There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -215,10 +215,10 @@
         <returns>The <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> that contains service endpoints of the specified type or the empty collection if none is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you only need to find the first <xref:System.ServiceModel.Description.ServiceEndpoint> that satisfies the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> methods instead.  
-  
+If you only need to find the first <xref:System.ServiceModel.Description.ServiceEndpoint> that satisfies the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -246,10 +246,10 @@
         <returns>The <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> that contains service endpoints with the specified contract name and namespace or the empty collection if none is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you only need to find the first <xref:System.ServiceModel.Description.ServiceEndpoint> that satisfies the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> methods instead.  
-  
+If you only need to find the first <xref:System.ServiceModel.Description.ServiceEndpoint> that satisfies the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -278,10 +278,10 @@
         <summary>Inserts an item into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the virtual <xref:System.Collections.ObjectModel.Collection%601.InsertItem%28System.Int32%2C%600%29> method defined in the base class and is provided to do input validation that ensures `null` values are not inserted into the collection. It is not intended to be called by users.  
-  
+This method overrides the virtual <xref:System.Collections.ObjectModel.Collection%601.InsertItem%28System.Int32%2C%600%29> method defined in the base class and is provided to do input validation that ensures `null` values are not inserted into the collection. It is not intended to be called by users.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -316,10 +316,10 @@
         <summary>Replaces the element in the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the virtual <xref:System.Collections.ObjectModel.Collection%601.SetItem%28System.Int32%2C%600%29> method defined in the base class and is provided to do input validation that ensures `null` values are not inserted into the collection. It is not intended to be called by users.  
-  
+This method overrides the virtual <xref:System.Collections.ObjectModel.Collection%601.SetItem%28System.Int32%2C%600%29> method defined in the base class and is provided to do input validation that ensures `null` values are not inserted into the collection. It is not intended to be called by users.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -341,10 +341,10 @@
         <summary>Returns a collection of all the service endpoints that satisfy specific criteria.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you only need to find the first <xref:System.ServiceModel.Description.ServiceEndpoint> that satisfies the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> methods instead.  
-  
+If you only need to find the first <xref:System.ServiceModel.Description.ServiceEndpoint> that satisfies the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,10 +358,10 @@
         <summary>Returns the first service endpoint found that satisfies specific criteria from the collection of service endpoints.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
-  
+There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>

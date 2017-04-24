@@ -23,12 +23,12 @@
     <summary>Specifies how principal and identity objects should be created for an application domain. The default is <see langword="UnauthenticatedPrincipal" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For performance reasons, the default principal and identity objects are not created until they are needed. If a principal is explicitly added to the current thread, a default principal is not created and the principal policy setting is ignored.  
-  
- A trusted host can override the default principal policy by specifying another of these values using the <xref:System.AppDomain.SetPrincipalPolicy%2A> method of an <xref:System.AppDomain>.  
-  
+For performance reasons, the default principal and identity objects are not created until they are needed. If a principal is explicitly added to the current thread, a default principal is not created and the principal policy setting is ignored.  
+ 
+A trusted host can override the default principal policy by specifying another of these values using the <xref:System.AppDomain.SetPrincipalPolicy%2A> method of an <xref:System.AppDomain>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,12 +14,12 @@
     <summary>Encapsulates errors returned by Message Queuing (MSMQ). This exception is thrown by the Message Queuing transport and the Message Queuing integration channel.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception can be thrown when the Message Queuing channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
-  
- The exception contains the Message Queuing error code. Typically, this exception is thrown when the framework cannot recover from the error automatically and requires some human intervention. For example, this exception will be thrown if Message Queuing is not installed and an attempt is made to open the Message Queuing transport listener.  
-  
+This exception can be thrown when the Message Queuing channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+ 
+The exception contains the Message Queuing error code. Typically, this exception is thrown when the framework cannot recover from the error automatically and requires some human intervention. For example, this exception will be thrown if Message Queuing is not installed and an attempt is made to open the Message Queuing transport listener.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
-  
+This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class with the message provided.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
-  
+This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class with additional serialized information about the exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
-  
+This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,10 +117,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class with the message and inner exception provided.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
-  
+This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class with the message and error code provided.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception can be thrown when the Message Queuing channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
-  
+This exception can be thrown when the Message Queuing channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>

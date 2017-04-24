@@ -27,18 +27,18 @@
     <summary>A class that serializes a <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance to and from RSS 2.0 format.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> from XML documents that represent RSS 2.0 feeds. If you have derived a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and want to serialize it, use the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter%601> formatter.  
+Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> from XML documents that represent RSS 2.0 feeds. If you have derived a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and want to serialize it, use the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter%601> formatter.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and serialize it to RSS 2.0.  
-  
- [!code-csharp[RssFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#0)]
- [!code-vb[RssFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#0)]  
-  
+The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and serialize it to RSS 2.0.  
+ 
+[!code-csharp[RssFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#0)]
+[!code-vb[RssFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,13 +61,13 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to create an <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> instance and read in an RSS syndication feed.  
-  
- [!code-csharp[RssFormatter#13](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#13)]
- [!code-vb[RssFormatter#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#13)]  
-  
+The following code shows how to create an <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> instance and read in an RSS syndication feed.  
+ 
+[!code-csharp[RssFormatter#13](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#13)]
+[!code-vb[RssFormatter#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,13 +93,13 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to call this constructor.  
-  
- [!code-csharp[RssFormatter#1](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#1)]
- [!code-vb[RssFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#1)]  
-  
+The following example shows how to call this constructor.  
+ 
+[!code-csharp[RssFormatter#1](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#1)]
+[!code-vb[RssFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,18 +125,18 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to specify a class derived from <xref:System.ServiceModel.Syndication.SyndicationFeed> to instantiate when a syndication feed is read in.  
+Use this constructor to specify a class derived from <xref:System.ServiceModel.Syndication.SyndicationFeed> to instantiate when a syndication feed is read in.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to use this constructor.  
-  
- [!code-csharp[RssFormatter#14](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#14)]
- [!code-vb[RssFormatter#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#14)]  
-  
+The following code shows how to use this constructor.  
+ 
+[!code-csharp[RssFormatter#14](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#14)]
+[!code-vb[RssFormatter#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,18 +164,18 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `serializeExtensionsAsAtom` parameter is `true`, all elements defined in the Atom 1.0 specification that are not defined in the RSS 2.0 specification are serialized with in the Atom 1.0 namespace.  
+If the `serializeExtensionsAsAtom` parameter is `true`, all elements defined in the Atom 1.0 specification that are not defined in the RSS 2.0 specification are serialized with in the Atom 1.0 namespace.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to call this constructor.  
-  
- [!code-csharp[RssFormatter#2](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#2)]
- [!code-vb[RssFormatter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#2)]  
-  
+The following example shows how to call this constructor.  
+ 
+[!code-csharp[RssFormatter#2](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#2)]
+[!code-vb[RssFormatter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,13 +205,13 @@
         <returns>A value that specifies whether the <see cref="T:System.Xml.XmlReader" /> contains a valid RSS 2.0 syndication feed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to use the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter.CanRead%28System.Xml.XmlReader%29> method.  
-  
- [!code-csharp[RssFormatter#15](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#15)]
- [!code-vb[RssFormatter#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#15)]  
-  
+The following code shows how to use the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter.CanRead%28System.Xml.XmlReader%29> method.  
+ 
+[!code-csharp[RssFormatter#15](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#15)]
+[!code-vb[RssFormatter#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,10 +282,10 @@
         <value>A value that specifies whether to preserve attribute extensions during serialization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property is `true`. Attribute extensions are XML attributes that are not defined in the RSS 2.0 specification. This property determines whether to write these attributes during serialization. Similarly, this property determines whether to preserve unknown attributes inside the `AttributeExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance when deserializing an RSS 2.0 feed.  
-  
+The default value of this property is `true`. Attribute extensions are XML attributes that are not defined in the RSS 2.0 specification. This property determines whether to write these attributes during serialization. Similarly, this property determines whether to preserve unknown attributes inside the `AttributeExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance when deserializing an RSS 2.0 feed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,10 +311,10 @@
         <value>A value that specifies whether to preserve element extensions during serialization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property is `true`. Element extensions are XML elements that are not defined in the RSS 2.0 specification. This property determines whether to write these elements during serialization. Similarly, this property determines whether to preserve unknown elements inside the `ElementExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance when deserializing an RSS 2.0 feed.  
-  
+The default value of this property is `true`. Element extensions are XML elements that are not defined in the RSS 2.0 specification. This property determines whether to write these elements during serialization. Similarly, this property determines whether to preserve unknown elements inside the `ElementExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance when deserializing an RSS 2.0 feed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,13 +343,13 @@
         <summary>Reads an RSS 2.0 syndication feed from the specified <see cref="T:System.Xml.XmlReader" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to use the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter.ReadFrom%28System.Xml.XmlReader%29> method.  
-  
- [!code-csharp[RssFormatter#15](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#15)]
- [!code-vb[RssFormatter#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#15)]  
-  
+The following code shows how to use the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter.ReadFrom%28System.Xml.XmlReader%29> method.  
+ 
+[!code-csharp[RssFormatter#15](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#15)]
+[!code-vb[RssFormatter#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -381,10 +381,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instance is not added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> associated with the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> instance.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instance is not added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> associated with the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,10 +418,10 @@
         <returns>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instances.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instances are not added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> associated with the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> instance.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instances are not added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> associated with the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -447,10 +447,10 @@
         <value>A value that specifies whether to serialize extensions within the Atom 1.0 namespace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property is `true`. When this property is `true`, any properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class that cannot be represented in the RSS 2.0 format are serialized within the Atom 1.0 namespace otherwise these properties are not serialized.  
-  
+The default value of this property is `true`. When this property is `true`, any properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class that cannot be represented in the RSS 2.0 format are serialized within the Atom 1.0 namespace otherwise these properties are not serialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,10 +503,10 @@
           <see langword="Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method to return your own schema.  
-  
+Override this method to return your own schema.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -582,10 +582,10 @@
         <value>The syndication version used by the formatter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports Atom 1.0 and RSS 2.0 syndication versions.  
-  
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports Atom 1.0 and RSS 2.0 syndication versions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -618,10 +618,10 @@
         <summary>Writes the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method to change the way a <xref:System.ServiceModel.Syndication.SyndicationItem> is written.  
-  
+Override this method to change the way a <xref:System.ServiceModel.Syndication.SyndicationItem> is written.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -654,10 +654,10 @@
         <summary>Writes a collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instances to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method to change the way a collection of <xref:System.ServiceModel.Syndication.SyndicationItem> objects.  
-  
+Override this method to change the way a collection of <xref:System.ServiceModel.Syndication.SyndicationItem> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -686,13 +686,13 @@
         <summary>Writes the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> associated with the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to create a syndication feed and use a <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> to write the feed to an <xref:System.Xml.XmlWriter>.  
-  
- [!code-csharp[RssFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#0)]
- [!code-vb[RssFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#0)]  
-  
+The following code shows how to create a syndication feed and use a <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> to write the feed to an <xref:System.Xml.XmlWriter>.  
+ 
+[!code-csharp[RssFormatter#0](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#0)]
+[!code-vb[RssFormatter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

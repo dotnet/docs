@@ -14,34 +14,34 @@
     <summary>Provides a factory class that creates instances of the authentication service, role service, and profile service in managed hosting environments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This factory class provides a way to create instances of the <xref:System.Web.ApplicationServices.AuthenticationService>, <xref:System.Web.ApplicationServices.ProfileService>, and <xref:System.Web.ApplicationServices.RoleService> classes.  
+This factory class provides a way to create instances of the <xref:System.Web.ApplicationServices.AuthenticationService>, <xref:System.Web.ApplicationServices.ProfileService>, and <xref:System.Web.ApplicationServices.RoleService> classes.  
+ 
+To use this factory class, create a WCF Service (.svc) file and specify <xref:System.Web.ApplicationServices.ApplicationServicesHostFactory> in the `ServiceHosting` attribute of the `@ ServiceHost` directive.  
+ 
   
- To use this factory class, create a WCF Service (.svc) file and specify <xref:System.Web.ApplicationServices.ApplicationServicesHostFactory> in the `ServiceHosting` attribute of the `@ ServiceHost` directive.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to specify <xref:System.Web.ApplicationServices.ApplicationServicesHostFactory> in the `@ ServiceHost` directive of a .svc file to configure the authentication service.  
-  
+The following example shows how to specify <xref:System.Web.ApplicationServices.ApplicationServicesHostFactory> in the `@ ServiceHost` directive of a .svc file to configure the authentication service.  
+ 
 ```csharp  
 <%@ ServiceHost   
-  Language="C#"   
-  Service="System.Web.ApplicationServices.AuthenticationService"   
-  Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
+ Language="C#"   
+ Service="System.Web.ApplicationServices.AuthenticationService"   
+ Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
 %>  
-  
+ 
 ```  
-  
+ 
 ```vb  
 <%@ ServiceHost   
-  Language="VB"   
-  Service="System.Web.ApplicationServices.AuthenticationService"   
-  Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
+ Language="VB"   
+ Service="System.Web.ApplicationServices.AuthenticationService"   
+ Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
 %>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <returns>A <see cref="T:System.ServiceModel.ServiceHost" /> instance for the type of service that has the specified base address or addresses.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Usually this method is called automatically by [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] as part of service activation, and you do not have to call the method manually.  
-  
+Usually this method is called automatically by [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] as part of service activation, and you do not have to call the method manually.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,10 +18,10 @@
     <summary>Specifies how much of the X.509 certificate chain should be included in the X.509 data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration specifies how much of the certificate chain to include in X.509 data. You can choose to include the end certificate only; the whole chain; or the whole chain except the root certificate, which is the default.  
-  
+This enumeration specifies how much of the certificate chain to include in X.509 data. You can choose to include the end certificate only; the whole chain; or the whole chain except the root certificate, which is the default.  
+ 
  ]]></format>
     </remarks>
   </Docs>

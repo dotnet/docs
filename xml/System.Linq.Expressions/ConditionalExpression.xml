@@ -30,20 +30,20 @@
     <summary>Represents an expression that has a conditional operator.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Linq.Expressions.Expression.Condition%2A> factory method to create a <xref:System.Linq.Expressions.ConditionalExpression>.  
+Use the <xref:System.Linq.Expressions.Expression.Condition%2A> factory method to create a <xref:System.Linq.Expressions.ConditionalExpression>.  
+ 
+The <xref:System.Linq.Expressions.Expression.NodeType%2A> of a <xref:System.Linq.Expressions.ConditionalExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
+ 
   
- The <xref:System.Linq.Expressions.Expression.NodeType%2A> of a <xref:System.Linq.Expressions.ConditionalExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to create an expression that represents a conditional statement. If the first argument evaluates to `true`, the second argument is executed; otherwise, the third argument is executed.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#3)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#3)]  
-  
+The following code example shows how to create an expression that represents a conditional statement. If the first argument evaluates to `true`, the second argument is executed; otherwise, the third argument is executed.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#3)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <returns>The result of visiting this node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
-  
+This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

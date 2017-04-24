@@ -24,12 +24,12 @@
     <summary>Implements the <see cref="T:System.Runtime.Remoting.Messaging.IMethodReturnMessage" /> interface to create a message that acts as a response to a method call on a remote object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class is used by the remoting infrastructure of the .NET Framework. You do not need to create an instance of the <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class directly; instead, use the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> interface.  
-  
- The <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class wraps remoting data for passing between message sinks. A remoting server sends a <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> message to a client in response to a client request.  
-  
+The <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class is used by the remoting infrastructure of the .NET Framework. You do not need to create an instance of the <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class directly; instead, use the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> interface.  
+ 
+The <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class wraps remoting data for passing between message sinks. A remoting server sends a <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> message to a client in response to a client request.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -53,10 +53,10 @@
         <summary>Wraps an <see cref="T:System.Runtime.Remoting.Messaging.IMethodReturnMessage" /> to create a <see cref="T:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class is used by the remoting infrastructure of the .NET Framework. You do not need to create an instance of the <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class directly; instead, use the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> interface.  
-  
+The <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class is used by the remoting infrastructure of the .NET Framework. You do not need to create an instance of the <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> class directly; instead, use the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> interface.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -80,10 +80,10 @@
         <value>A <see cref="T:System.Int32" /> that represents the number of arguments passed to a method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -107,10 +107,10 @@
         <value>An array of type <see cref="T:System.Object" /> that represents the arguments passed to a method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -134,10 +134,10 @@
         <value>The <see cref="T:System.Exception" /> thrown during the method call, or <see langword="null" /> if the method did not throw an exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -165,10 +165,10 @@
         <returns>The method argument as an object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -196,10 +196,10 @@
         <returns>The name of the method argument.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -227,10 +227,10 @@
         <returns>The specified argument marked as a <see langword="ref" /> parameter or an <see langword="out" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -258,10 +258,10 @@
         <returns>The argument name, or <see langword="null" /> if the current method is not implemented.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -286,10 +286,10 @@
           <see langword="true" /> if the method can accept a variable number of arguments; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -313,10 +313,10 @@
         <value>The <see cref="T:System.Runtime.Remoting.Messaging.LogicalCallContext" /> for the current method call.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -340,10 +340,10 @@
         <value>The <see cref="T:System.Reflection.MethodBase" /> of the called method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -367,10 +367,10 @@
         <value>A <see cref="T:System.String" /> that contains the name of the invoked method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -394,10 +394,10 @@
         <value>A <see cref="T:System.Object" /> that contains the method signature.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -421,10 +421,10 @@
         <value>A <see cref="T:System.Int32" /> that represents the number of arguments in the method call that are marked as <see langword="ref" /> parameters or <see langword="out" /> parameters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -448,10 +448,10 @@
         <value>An array of type <see cref="T:System.Object" /> that represents the arguments in the method call that are marked as <see langword="ref" /> parameters or <see langword="out" /> parameters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -475,10 +475,10 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> interface that represents a collection of the remoting message's properties.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The message acts as a response to a method call on a remote object.  
-  
+The message acts as a response to a method call on a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -502,10 +502,10 @@
         <value>A <see cref="T:System.Object" /> that represents the return value of the method call.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method belongs to a remote object.  
-  
+The method belongs to a remote object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

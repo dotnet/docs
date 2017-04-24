@@ -32,21 +32,21 @@
     <summary>Represents the base class from which all implementations of cryptographic hash algorithms must derive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Hash functions are fundamental to modern cryptography. These functions map binary strings of an arbitrary length to small binary strings of a fixed length, known as hash values. A cryptographic hash function has the property that it is computationally infeasible to find two distinct inputs that hash to the same value. Hash functions are commonly used with digital signatures and for data integrity.  
+Hash functions are fundamental to modern cryptography. These functions map binary strings of an arbitrary length to small binary strings of a fixed length, known as hash values. A cryptographic hash function has the property that it is computationally infeasible to find two distinct inputs that hash to the same value. Hash functions are commonly used with digital signatures and for data integrity.  
+ 
+The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
+ 
   
- The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
-  
-   
-  
+ 
 ## Examples  
- The following code example computes the <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> hash for an array. This example assumes that there is a predefined byte array `dataArray[]`. <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> is a derived class of <xref:System.Security.Cryptography.HashAlgorithm>.  
-  
- [!code-cpp[Classic HashAlgorithm Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic HashAlgorithm Example/CPP/source.cpp#1)]
- [!code-csharp[Classic HashAlgorithm Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic HashAlgorithm Example/CS/source.cs#1)]
- [!code-vb[Classic HashAlgorithm Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic HashAlgorithm Example/VB/source.vb#1)]  
-  
+The following code example computes the <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> hash for an array. This example assumes that there is a predefined byte array `dataArray[]`. <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> is a derived class of <xref:System.Security.Cryptography.HashAlgorithm>.  
+ 
+[!code-cpp[Classic HashAlgorithm Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic HashAlgorithm Example/CPP/source.cpp#1)]
+[!code-csharp[Classic HashAlgorithm Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic HashAlgorithm Example/CS/source.cs#1)]
+[!code-vb[Classic HashAlgorithm Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic HashAlgorithm Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -77,10 +77,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.HashAlgorithm" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of an abstract class. Application code creates a new instance of a derived class.  
-  
+You cannot create an instance of an abstract class. Application code creates a new instance of a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,12 +154,12 @@
         <summary>Releases all resources used by the <see cref="T:System.Security.Cryptography.HashAlgorithm" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a simple call to the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method.  
-  
- Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.HashAlgorithm> class to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
-  
+This method is a simple call to the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method.  
+ 
+Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.HashAlgorithm> class to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,13 +194,13 @@
         <returns>The computed hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example computes the <xref:System.Security.Cryptography.MD5> hash value of a string and returns the hash as a 32-character, hexadecimal-formatted string.  The hash string created by this code example is compatible with any MD5 hash function (on any platform) that creates a 32-character, hexadecimal-formatted hash string.  
-  
- [!code-csharp[Security.Cryptography.MD5#1](~/samples/snippets/csharp/VS_Snippets_CLR/Security.Cryptography.MD5/cs/example.cs#1)]
- [!code-vb[Security.Cryptography.MD5#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Security.Cryptography.MD5/vb/example.vb#1)]  
-  
+The following example computes the <xref:System.Security.Cryptography.MD5> hash value of a string and returns the hash as a 32-character, hexadecimal-formatted string.  The hash string created by this code example is compatible with any MD5 hash function (on any platform) that creates a 32-character, hexadecimal-formatted hash string.  
+ 
+[!code-csharp[Security.Cryptography.MD5#1](~/samples/snippets/csharp/VS_Snippets_CLR/Security.Cryptography.MD5/cs/example.cs#1)]
+[!code-vb[Security.Cryptography.MD5#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Security.Cryptography.MD5/vb/example.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -238,14 +238,14 @@
         <returns>The computed hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example calculates the <xref:System.Security.Cryptography.RIPEMD160> hash for all files in a directory.  
-  
- [!code-cpp[RIPEMD160#1](~/samples/snippets/cpp/VS_Snippets_CLR/RIPEMD160/CPP/ripemd160.cpp#1)]
- [!code-csharp[RIPEMD160#1](~/samples/snippets/csharp/VS_Snippets_CLR/RIPEMD160/CS/ripemd160.cs#1)]
- [!code-vb[RIPEMD160#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RIPEMD160/vb/ripemd160.vb#1)]  
-  
+The following example calculates the <xref:System.Security.Cryptography.RIPEMD160> hash for all files in a directory.  
+ 
+[!code-cpp[RIPEMD160#1](~/samples/snippets/cpp/VS_Snippets_CLR/RIPEMD160/CPP/ripemd160.cpp#1)]
+[!code-csharp[RIPEMD160#1](~/samples/snippets/csharp/VS_Snippets_CLR/RIPEMD160/CS/ripemd160.cs#1)]
+[!code-vb[RIPEMD160#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RIPEMD160/vb/ripemd160.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
@@ -320,10 +320,10 @@
         <returns>A new <see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /> instance, unless the default settings have been changed using the .</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this overload uses the <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> implementation of a hash algorithm. If you want to specify a different implementation, use the <xref:System.Security.Cryptography.HashAlgorithm.Create%28System.String%29> overload, which lets you specify an algorithm name, instead. The cryptography configuration system defines the default implementation of <xref:System.Security.Cryptography.HashAlgorithm>.  
-  
+By default, this overload uses the <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> implementation of a hash algorithm. If you want to specify a different implementation, use the <xref:System.Security.Cryptography.HashAlgorithm.Create%28System.String%29> overload, which lets you specify an algorithm name, instead. The cryptography configuration system defines the default implementation of <xref:System.Security.Cryptography.HashAlgorithm>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -512,15 +512,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.HashAlgorithm" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.HashAlgorithm>. The `Dispose` method leaves the <xref:System.Security.Cryptography.HashAlgorithm> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.HashAlgorithm> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.HashAlgorithm> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.HashAlgorithm>. The `Dispose` method leaves the <xref:System.Security.Cryptography.HashAlgorithm> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.HashAlgorithm> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.HashAlgorithm> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.HashAlgorithm>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.HashAlgorithm> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,12 +555,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.HashAlgorithm" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. `Finalize` invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.HashAlgorithm> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. `Finalize` invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.HashAlgorithm> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -593,10 +593,10 @@
         <value>The current value of the computed hash code.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> property is a byte array; the <xref:System.Security.Cryptography.HashAlgorithm.HashSize%2A> property is a value that represent bits. Therefore, the number of elements in <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> is one-eighth the size of <xref:System.Security.Cryptography.HashAlgorithm.HashSize%2A>.  
-  
+The <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> property is a byte array; the <xref:System.Security.Cryptography.HashAlgorithm.HashSize%2A> property is a value that represent bits. Therefore, the number of elements in <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> is one-eighth the size of <xref:System.Security.Cryptography.HashAlgorithm.HashSize%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">
@@ -637,12 +637,12 @@
         <summary>When overridden in a derived class, routes data written to the object into the hash algorithm for computing the hash.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not called by application code.  
-  
- This abstract method performs the hash computation. Every write to the cryptographic stream object passes the data through this method. For each block of data, this method updates the state of the hash object so a correct hash value is returned at the end of the data stream.  
-  
+This method is not called by application code.  
+ 
+This abstract method performs the hash computation. Every write to the cryptographic stream object passes the data through this method. For each block of data, this method updates the state of the hash object so a correct hash value is returned at the end of the data stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -674,10 +674,10 @@
         <returns>The computed hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method finalizes any partial computation and returns the correct hash value for the data stream.  
-  
+This method finalizes any partial computation and returns the correct hash value for the data stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -730,12 +730,12 @@
         <summary>Represents the size, in bits, of the computed hash code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash algorithm specifies the size of the hash code. For example, <xref:System.Security.Cryptography.SHA1> uses a hash size of 160 bits.  
-  
- This field is accessed through the <xref:System.Security.Cryptography.HashAlgorithm.HashSize%2A> property.  
-  
+The hash algorithm specifies the size of the hash code. For example, <xref:System.Security.Cryptography.SHA1> uses a hash size of 160 bits.  
+ 
+This field is accessed through the <xref:System.Security.Cryptography.HashAlgorithm.HashSize%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -761,10 +761,10 @@
         <summary>Represents the value of the computed hash code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is accessed through the <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> property.  
-  
+This field is accessed through the <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -818,10 +818,10 @@
         <value>The input block size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless overridden, this property returns the value 1.  
-  
+Unless overridden, this property returns the value 1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -848,10 +848,10 @@
         <value>The output block size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless overridden, this property returns the value 1.  
-  
+Unless overridden, this property returns the value 1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -877,10 +877,10 @@
         <summary>Represents the state of the hash computation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is used to prevent users from changing the key of a keyed hash algorithm during a hash operation. When a key change is legitimate, the value of this field is zero both before and after a hash operation. When a key change is not legitimate, the value of this field is nonzero.  
-  
+This field is used to prevent users from changing the key of a keyed hash algorithm during a hash operation. When a key change is legitimate, the value of this field is zero both before and after a hash operation. When a key change is not legitimate, the value of this field is nonzero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -919,22 +919,22 @@
         <returns>The number of bytes written.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must call the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method before calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method. You must call both methods before you retrieve the final hash value.  
+You must call the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method before calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method. You must call both methods before you retrieve the final hash value.  
+ 
+To retrieve the final hash value after calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method, get the byte array contained within the <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> property.  
+ 
+Calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method with different input and output arrays results in an <xref:System.IO.IOException>.  
+ 
   
- To retrieve the final hash value after calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method, get the byte array contained within the <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> property.  
-  
- Calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method with different input and output arrays results in an <xref:System.IO.IOException>.  
-  
-   
-  
+ 
 ## Examples  
- The following code examples use the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method with the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method to hash a string.  
-  
- [!code-csharp[Cryptography.HashAlgorithm.TransformFinalBlock#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.HashAlgorithm.TransformFinalBlock/CS/sample.cs#1)]
- [!code-vb[Cryptography.HashAlgorithm.TransformFinalBlock#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.HashAlgorithm.TransformFinalBlock/vb/sample.vb#1)]  
-  
+The following code examples use the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method with the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method to hash a string.  
+ 
+[!code-csharp[Cryptography.HashAlgorithm.TransformFinalBlock#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.HashAlgorithm.TransformFinalBlock/CS/sample.cs#1)]
+[!code-vb[Cryptography.HashAlgorithm.TransformFinalBlock#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.HashAlgorithm.TransformFinalBlock/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -980,20 +980,20 @@
         <returns>An array that is a copy of the part of the input that is hashed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must call the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method after calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method but before you retrieve the final hash value.  
+You must call the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method after calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method but before you retrieve the final hash value.  
+ 
+Note that the return value of this method is not the hash value, but only a copy of the hashed part of the input data.  To retrieve the final hashed value after calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method, get the byte array contained in the <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> property.  
+ 
   
- Note that the return value of this method is not the hash value, but only a copy of the hashed part of the input data.  To retrieve the final hashed value after calling the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method, get the byte array contained in the <xref:System.Security.Cryptography.HashAlgorithm.Hash%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following code examples use the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method with the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method to hash a string.  
-  
- [!code-csharp[Cryptography.HashAlgorithm.TransformFinalBlock#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.HashAlgorithm.TransformFinalBlock/CS/sample.cs#1)]
- [!code-vb[Cryptography.HashAlgorithm.TransformFinalBlock#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.HashAlgorithm.TransformFinalBlock/vb/sample.vb#1)]  
-  
+The following code examples use the <xref:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock%2A> method with the <xref:System.Security.Cryptography.HashAlgorithm.TransformBlock%2A> method to hash a string.  
+ 
+[!code-csharp[Cryptography.HashAlgorithm.TransformFinalBlock#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.HashAlgorithm.TransformFinalBlock/CS/sample.cs#1)]
+[!code-vb[Cryptography.HashAlgorithm.TransformFinalBlock#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.HashAlgorithm.TransformFinalBlock/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

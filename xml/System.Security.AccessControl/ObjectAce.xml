@@ -136,10 +136,10 @@
         <value>The GUID of the object type that can inherit the Access Control Entry (ACE) that this <see cref="T:System.Security.AccessControl.ObjectAce" /> object represents.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of the <xref:System.Security.AccessControl.ObjectAce.ObjectAceFlags%2A> parameter does not contain the value <xref:System.Security.AccessControl.ObjectAceFlags>, this property is ignored.  
-  
+If the value of the <xref:System.Security.AccessControl.ObjectAce.ObjectAceFlags%2A> parameter does not contain the value <xref:System.Security.AccessControl.ObjectAceFlags>, this property is ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <value>The GUID of the object type associated with this <see cref="T:System.Security.AccessControl.ObjectAce" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of the <xref:System.Security.AccessControl.ObjectAce.ObjectAceFlags%2A> parameter does not contain the value <xref:System.Security.AccessControl.ObjectAceFlags>, this property is ignored.  
-  
+If the value of the <xref:System.Security.AccessControl.ObjectAce.ObjectAceFlags%2A> parameter does not contain the value <xref:System.Security.AccessControl.ObjectAceFlags>, this property is ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Enables calls from a [!INCLUDE[TLA#tla_xbap](~/includes/tlasharptla-xbap-md.md)] to the HTML window that hosts the application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class are exposed through the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> property of <xref:System.Windows.Interop.BrowserInteropHelper>.  
-  
+Instances of this class are exposed through the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> property of <xref:System.Windows.Interop.BrowserInteropHelper>.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -41,10 +41,10 @@
         <returns>A string representation of the script object, if the object can be converted; otherwise, a string representation of the object's default property or method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the script object cannot be converted to a string, the <xref:System.Windows.Interop.DynamicScriptObject.ToString%2A> method returns a string representation of the default property or method.  
-  
+If the script object cannot be converted to a string, the <xref:System.Windows.Interop.DynamicScriptObject.ToString%2A> method returns a string representation of the default property or method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -75,10 +75,10 @@
         <returns>Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Interop.DynamicScriptObject.TryGetIndex%2A> method throws an exception if an invalid access is attempted.  
-  
+The <xref:System.Windows.Interop.DynamicScriptObject.TryGetIndex%2A> method throws an exception if an invalid access is attempted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -116,10 +116,10 @@
         <returns>Always returns<see langword=" true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Interop.DynamicScriptObject.TryGetMember%2A> method throws an exception if an invalid access is attempted.  
-  
+The <xref:System.Windows.Interop.DynamicScriptObject.TryGetMember%2A> method throws an exception if an invalid access is attempted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -153,10 +153,10 @@
         <returns>Always return <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Interop.DynamicScriptObject.TryInvoke%2A> method throws an exception if the method does not exist.  
-  
+The <xref:System.Windows.Interop.DynamicScriptObject.TryInvoke%2A> method throws an exception if the method does not exist.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -190,10 +190,10 @@
         <returns>Always return <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Interop.DynamicScriptObject.TryInvokeMember%2A> method throws an exception if an invalid access is attempted.  
-  
+The <xref:System.Windows.Interop.DynamicScriptObject.TryInvokeMember%2A> method throws an exception if an invalid access is attempted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -227,10 +227,10 @@
         <returns>Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Interop.DynamicScriptObject.TrySetIndex%2A> method throws an exception if an invalid access is attempted.  
-  
+The <xref:System.Windows.Interop.DynamicScriptObject.TrySetIndex%2A> method throws an exception if an invalid access is attempted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -268,10 +268,10 @@
         <returns>Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Interop.DynamicScriptObject.TrySetMember%2A> method throws an exception if an invalid access is attempted.  
-  
+The <xref:System.Windows.Interop.DynamicScriptObject.TrySetMember%2A> method throws an exception if an invalid access is attempted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

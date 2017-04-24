@@ -19,16 +19,16 @@
     <summary>Provides properties and methods for constructing an e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.Mail.MailMessage> class.  
-  
+The following example shows how to use the <xref:System.Web.Mail.MailMessage> class.  
+ 
 > [!IMPORTANT]
 >  This control has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Mail.MailMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage/CS/mailformcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Mail.MailMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage/VB/mailformvb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.Mail.MailMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage/CS/mailformcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.Mail.MailMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage/VB/mailformvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,16 +65,16 @@
         <value>An <see cref="T:System.Collections.IList" /> collection of <see cref="T:System.Web.Mail.MailAttachment" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- New attachments can be added to the mail message by a call to `Message.Attachments.Add(MyMailMessage)`. See <xref:System.Web.Mail.SmtpMail.Send%2A> for an example of <xref:System.Web.Mail.SmtpMail> usage.  
+New attachments can be added to the mail message by a call to `Message.Attachments.Add(MyMailMessage)`. See <xref:System.Web.Mail.SmtpMail.Send%2A> for an example of <xref:System.Web.Mail.SmtpMail> usage.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Mail.MailMessage.Attachments#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Attachments/CS/attachmentsample.cs#1)]
- [!code-vb[System.Web.Mail.MailMessage.Attachments#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Attachments/VB/attachmentsample.vb#1)]  
-  
+[!code-csharp[System.Web.Mail.MailMessage.Attachments#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Attachments/CS/attachmentsample.cs#1)]
+[!code-vb[System.Web.Mail.MailMessage.Attachments#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Attachments/VB/attachmentsample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,18 +96,18 @@
         <value>A semicolon-delimited list of e-mail addresses that receive a blind carbon copy (BCC) of the e-mail message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Recipients in the semicolon-delimited list can be either email addresses or address book display names.  
+Recipients in the semicolon-delimited list can be either email addresses or address book display names.  
+ 
+The primary and carbon copy (<xref:System.Web.Mail.MailMessage.Cc%2A>) recipients do not see the addresses in the `Bcc` field.  
+ 
   
- The primary and carbon copy (<xref:System.Web.Mail.MailMessage.Cc%2A>) recipients do not see the addresses in the `Bcc` field.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Mail.MailMessage.Bcc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Bcc/CS/systemwebmailmailmessagebcc.cs#1)]
- [!code-vb[System.Web.Mail.MailMessage.Bcc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Bcc/VB/systemwebmailmailmessagebcc.vb#1)]  
-  
+[!code-csharp[System.Web.Mail.MailMessage.Bcc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Bcc/CS/systemwebmailmailmessagebcc.cs#1)]
+[!code-vb[System.Web.Mail.MailMessage.Bcc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Bcc/VB/systemwebmailmailmessagebcc.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,11 +147,11 @@
         <value>One of the <see cref="T:System.Text.Encoding" /> values that indicates the encoding type of the body of the e-mail message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Mail.MailMessage.BodyEncoding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.BodyEncoding/CS/systemwebmailmailmessagebodyencoding.cs#1)]
- [!code-vb[System.Web.Mail.MailMessage.BodyEncoding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.BodyEncoding/VB/systemwebmailmailmessagebodyencoding.vb#1)]  
-  
+[!code-csharp[System.Web.Mail.MailMessage.BodyEncoding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.BodyEncoding/CS/systemwebmailmailmessagebodyencoding.cs#1)]
+[!code-vb[System.Web.Mail.MailMessage.BodyEncoding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.BodyEncoding/VB/systemwebmailmailmessagebodyencoding.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,11 +173,11 @@
         <value>One of the <see cref="T:System.Web.Mail.MailFormat" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Mail.MailMessage.BodyFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.BodyFormat/CS/systemwebmailmailmessagebodyformat.cs#1)]
- [!code-vb[System.Web.Mail.MailMessage.BodyFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.BodyFormat/VB/systemwebmailmailmessagebodyformat.vb#1)]  
-  
+[!code-csharp[System.Web.Mail.MailMessage.BodyFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.BodyFormat/CS/systemwebmailmailmessagebodyformat.cs#1)]
+[!code-vb[System.Web.Mail.MailMessage.BodyFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.BodyFormat/VB/systemwebmailmailmessagebodyformat.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,16 +199,16 @@
         <value>A semicolon-delimited list of e-mail addresses that receive a carbon copy (CC) of the e-mail message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Recipients in the semicolon-delimited list can be either email addresses or address book display names.  
+Recipients in the semicolon-delimited list can be either email addresses or address book display names.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Mail.MailMessage.Cc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Cc/CS/systemwebmailmailmessagecc.cs#1)]
- [!code-vb[System.Web.Mail.MailMessage.Cc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Cc/VB/systemwebmailmailmessagecc.vb#1)]  
-  
+[!code-csharp[System.Web.Mail.MailMessage.Cc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Cc/CS/systemwebmailmailmessagecc.cs#1)]
+[!code-vb[System.Web.Mail.MailMessage.Cc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Cc/VB/systemwebmailmailmessagecc.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,18 +230,18 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> collection of objects that map to Collaboration Data Objects (CDO) fields.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Mail.MailMessage.Fields%2A> property is used to set extended properties for Collaboration Data Objects (CDO). For more information about CDO, see "Collaboration Data Objects" and "Configuration CoClass" in the MSDN library at http://msdn.microsoft.com/library.  
+The <xref:System.Web.Mail.MailMessage.Fields%2A> property is used to set extended properties for Collaboration Data Objects (CDO). For more information about CDO, see "Collaboration Data Objects" and "Configuration CoClass" in the MSDN library at http://msdn.microsoft.com/library.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.Mail.MailMessage.Fields%2A> property to send your user name and password to a Simple Mail Transfer Protocol (SMTP) server for authentication.  
-  
- [!code-csharp[System.Web.Mail.MailMessage.Fields#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Fields/CS/MailMessageFieldscs.aspx#1)]
- [!code-vb[System.Web.Mail.MailMessage.Fields#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Fields/VB/MailMessageFieldsvb.aspx#1)]  
-  
+The following code example demonstrates using the <xref:System.Web.Mail.MailMessage.Fields%2A> property to send your user name and password to a Simple Mail Transfer Protocol (SMTP) server for authentication.  
+ 
+[!code-csharp[System.Web.Mail.MailMessage.Fields#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Fields/CS/MailMessageFieldscs.aspx#1)]
+[!code-vb[System.Web.Mail.MailMessage.Fields#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Fields/VB/MailMessageFieldsvb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,11 +263,11 @@
         <value>The sender's e-mail address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[SystemWebMailMailMessageFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebMailMailMessageFrom/CS/systemwebmailmailmessagefrom.cs#1)]
- [!code-vb[SystemWebMailMailMessageFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebMailMailMessageFrom/VB/systemwebmailmailmessagefrom.vb#1)]  
-  
+[!code-csharp[SystemWebMailMailMessageFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebMailMailMessageFrom/CS/systemwebmailmailmessagefrom.cs#1)]
+[!code-vb[SystemWebMailMailMessageFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebMailMailMessageFrom/VB/systemwebmailmailmessagefrom.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -307,11 +307,11 @@
         <value>One of the <see cref="T:System.Web.Mail.MailPriority" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Mail.MailMessage.Priority#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Priority/CS/systemwebmailmailmessagepriority.cs#1)]
- [!code-vb[System.Web.Mail.MailMessage.Priority#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Priority/VB/systemwebmailmailmessagepriority.vb#1)]  
-  
+[!code-csharp[System.Web.Mail.MailMessage.Priority#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Priority/CS/systemwebmailmailmessagepriority.cs#1)]
+[!code-vb[System.Web.Mail.MailMessage.Priority#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.Priority/VB/systemwebmailmailmessagepriority.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,16 +351,16 @@
         <value>A semicolon-delimited list of e-mail addresses.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Recipients in the semicolon-delimited list can be either email addresses or address book display names.  
+Recipients in the semicolon-delimited list can be either email addresses or address book display names.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[SystemWebMailMailMessageTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebMailMailMessageTo/CS/systemwebmailmailmessageto.cs#1)]
- [!code-vb[SystemWebMailMailMessageTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebMailMailMessageTo/VB/systemwebmailmailmessageto.vb#1)]  
-  
+[!code-csharp[SystemWebMailMailMessageTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebMailMailMessageTo/CS/systemwebmailmailmessageto.cs#1)]
+[!code-vb[SystemWebMailMailMessageTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebMailMailMessageTo/VB/systemwebmailmailmessageto.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,11 +382,11 @@
         <value>The URL base.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Mail.MailMessage.UrlContentBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.UrlContentBase/CS/systemwebmailmailmessageurlcontentbase.cs#1)]
- [!code-vb[System.Web.Mail.MailMessage.UrlContentBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.UrlContentBase/VB/systemwebmailmailmessageurlcontentbase.vb#1)]  
-  
+[!code-csharp[System.Web.Mail.MailMessage.UrlContentBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage.UrlContentBase/CS/systemwebmailmailmessageurlcontentbase.cs#1)]
+[!code-vb[System.Web.Mail.MailMessage.UrlContentBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage.UrlContentBase/VB/systemwebmailmailmessageurlcontentbase.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -408,11 +408,11 @@
         <value>The <see langword="content-base" /> header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Mail.MailMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage/CS/mailformcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Mail.MailMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage/VB/mailformvb.aspx#1)]  -->  
-  
+<!-- TODO: review snippet reference [!code-csharp[System.Web.Mail.MailMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage/CS/mailformcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.Mail.MailMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage/VB/mailformvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -26,24 +26,24 @@
     <summary>Specifies the feature requirements that bindings must provide to the service or client implementation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.DeliveryRequirementsAttribute> to instruct [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to confirm that the binding provides the features required by the service or client implementation. If a <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute is detected when a service description is loaded from an application configuration file or built programmatically in code, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] validates the configured binding and supports all the features that the attribute specifies. For example, your service may require the bindings to support queuing. Using <xref:System.ServiceModel.DeliveryRequirementsAttribute> allows [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the following requirements are met:  
-  
+Use the <xref:System.ServiceModel.DeliveryRequirementsAttribute> to instruct [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to confirm that the binding provides the features required by the service or client implementation. If a <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute is detected when a service description is loaded from an application configuration file or built programmatically in code, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] validates the configured binding and supports all the features that the attribute specifies. For example, your service may require the bindings to support queuing. Using <xref:System.ServiceModel.DeliveryRequirementsAttribute> allows [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the following requirements are met:  
+ 
 -   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements%2A> property specifies the queuing requirements that a binding must meet.  
-  
+ 
 -   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery%2A> property indicates whether the binding must support ordered messaging.  
-  
+ 
 -   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.TargetContract%2A> property indicates to which type the requirements apply.  
+ 
+The <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute is applied to a class, which can implement any number of service contract interfaces. <xref:System.ServiceModel.DeliveryRequirementsAttribute> can be applied to all the contracts the class implements or to only one of them. The attribute can be applied to a class more than once.  
+ 
   
- The <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute is applied to a class, which can implement any number of service contract interfaces. <xref:System.ServiceModel.DeliveryRequirementsAttribute> can be applied to all the contracts the class implements or to only one of them. The attribute can be applied to a class more than once.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[UEDeliveryRequirementsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/uedeliveryrequirementsattribute/cs/snippet1.cs#1)]
- [!code-vb[UEDeliveryRequirementsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uedeliveryrequirementsattribute/vb/snippet1.vb#1)]  
-  
+[!code-csharp[UEDeliveryRequirementsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/uedeliveryrequirementsattribute/cs/snippet1.cs#1)]
+[!code-vb[UEDeliveryRequirementsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uedeliveryrequirementsattribute/vb/snippet1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,14 +62,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DeliveryRequirementsAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The defaults are:  
-  
+The defaults are:  
+ 
 -   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements%2A> property is set to <xref:System.ServiceModel.QueuedDeliveryRequirementsMode>.  
-  
+ 
 -   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery%2A> property is set to `false`.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,18 +91,18 @@
         <value>One of the <see cref="T:System.ServiceModel.QueuedDeliveryRequirementsMode" /> values; the default is <see cref="F:System.ServiceModel.QueuedDeliveryRequirementsMode.Allowed" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode> instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the binding supports queued delivery. The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode> value instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the binding does not support queued delivery.  
+The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode> instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the binding supports queued delivery. The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode> value instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the binding does not support queued delivery.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute to instruct [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm at runtime that the actual binding does not support queued contracts but does support ordered messages.  
-  
- [!code-csharp[UEDeliveryRequirementsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/uedeliveryrequirementsattribute/cs/snippet1.cs#1)]
- [!code-vb[UEDeliveryRequirementsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uedeliveryrequirementsattribute/vb/snippet1.vb#1)]  
-  
+The following code example uses the <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute to instruct [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm at runtime that the actual binding does not support queued contracts but does support ordered messages.  
+ 
+[!code-csharp[UEDeliveryRequirementsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/uedeliveryrequirementsattribute/cs/snippet1.cs#1)]
+[!code-vb[UEDeliveryRequirementsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uedeliveryrequirementsattribute/vb/snippet1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value is not one of the <see cref="T:System.ServiceModel.QueuedDeliveryRequirementsMode" /> values.</exception>
@@ -126,18 +126,18 @@
           <see langword="true" /> instructs [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to confirm that the binding must support the ordering of messages; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery%2A> property to `false` instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to perform no validation.  
+Setting the <xref:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery%2A> property to `false` instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to perform no validation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute to instruct [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm at runtime that the actual binding does support ordered messages.  
-  
- [!code-csharp[UEDeliveryRequirementsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/uedeliveryrequirementsattribute/cs/snippet1.cs#1)]
- [!code-vb[UEDeliveryRequirementsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uedeliveryrequirementsattribute/vb/snippet1.vb#1)]  
-  
+The following code example uses the <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute to instruct [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm at runtime that the actual binding does support ordered messages.  
+ 
+[!code-csharp[UEDeliveryRequirementsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/uedeliveryrequirementsattribute/cs/snippet1.cs#1)]
+[!code-vb[UEDeliveryRequirementsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uedeliveryrequirementsattribute/vb/snippet1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,18 +257,18 @@
         <value>The <see cref="T:System.Type" /> to which the attribute applies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A service class can implement any number of service contract interfaces. Use the <xref:System.ServiceModel.DeliveryRequirementsAttribute.TargetContract%2A> property to validate that endpoints with the <xref:System.ServiceModel.DeliveryRequirementsAttribute.TargetContract%2A> have bindings that support the requirements. This attribute can be used any number of times on the same class.  
+A service class can implement any number of service contract interfaces. Use the <xref:System.ServiceModel.DeliveryRequirementsAttribute.TargetContract%2A> property to validate that endpoints with the <xref:System.ServiceModel.DeliveryRequirementsAttribute.TargetContract%2A> have bindings that support the requirements. This attribute can be used any number of times on the same class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute to instruct [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm at runtime that the actual binding does not support queued contracts but does support ordered messages. It also specifies the target contract to which this restriction should be applied.  
-  
- [!code-csharp[UEDeliveryRequirementsAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/uedeliveryrequirementsattribute/cs/snippet2.cs#2)]
- [!code-vb[UEDeliveryRequirementsAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/uedeliveryrequirementsattribute/vb/snippet2.vb#2)]  
-  
+The following code example uses the <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute to instruct [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm at runtime that the actual binding does not support queued contracts but does support ordered messages. It also specifies the target contract to which this restriction should be applied.  
+ 
+[!code-csharp[UEDeliveryRequirementsAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/uedeliveryrequirementsattribute/cs/snippet2.cs#2)]
+[!code-vb[UEDeliveryRequirementsAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/uedeliveryrequirementsattribute/vb/snippet2.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

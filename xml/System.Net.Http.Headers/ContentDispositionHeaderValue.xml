@@ -24,16 +24,16 @@
     <summary>Represents the value of the Content-Disposition header.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Content-Disposition header is normally used for working with file uploads and downloads. The format differs from other headers in that it is a single header with a disposition type followed by a list of parameters, some of which are well defined.  
-  
- This header is used in two different contexts:  
-  
+The Content-Disposition header is normally used for working with file uploads and downloads. The format differs from other headers in that it is a single header with a disposition type followed by a list of parameters, some of which are well defined.  
+ 
+This header is used in two different contexts:  
+ 
 1.  A MIME header for nested body content in the <xref:System.Net.Http.MultipartFormDataContent> class. For more information, see IETF RFC 2183.  
-  
+ 
 2.  An HTTP header in <xref:System.Net.Http.Headers.HttpContentHeaders> class. For more information, see IETF RFC 6266.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -133,10 +133,10 @@
         <value>The disposition type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A body part should be marked with a <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType%2A> property of "inline" if it is intended to be   displayed automatically upon display of the message. A body part can be designated with a <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType%2A> property of "attachment" to indicate that they are   separate from the main body of the HTTP request or response.  
-  
+A body part should be marked with a <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType%2A> property of "inline" if it is intended to be   displayed automatically upon display of the message. A body part can be designated with a <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType%2A> property of "attachment" to indicate that they are   separate from the main body of the HTTP request or response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@
         <value>A suggested filename.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName%2A> property uses MIME encoding for non-ascii characters.  
-  
+The  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName%2A> property uses MIME encoding for non-ascii characters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <value>A suggested filename of the form filename*.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> property uses IETF RFC 5987 encoding. The <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName%2A> and  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> properties differ only in that<xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> uses the encoding defined in IETF RFC 5987, allowing the use   of characters not present in the ISO-8859-1 character set.  
-  
+The  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> property uses IETF RFC 5987 encoding. The <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName%2A> and  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> properties differ only in that<xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> uses the encoding defined in IETF RFC 5987, allowing the use   of characters not present in the ISO-8859-1 character set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,12 +256,12 @@
         <returns>A hash code for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
-  
- The <xref:System.Net.Http.Headers.ContentDispositionHeaderValue> method is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
+ 
+The <xref:System.Net.Http.Headers.ContentDispositionHeaderValue> method is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>

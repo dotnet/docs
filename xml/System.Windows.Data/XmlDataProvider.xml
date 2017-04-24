@@ -26,24 +26,24 @@
     <summary>Enables declarative access to [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data for data binding.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  In a partial-trust sandbox, <xref:System.Windows.Data.XmlDataProvider> fails when it does not have permissions to access the given data. For more information about partial trust security, see [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md).  
-  
- <xref:System.Windows.Data.XmlDataProvider> exposes the following ways to access [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.  
-  
+ 
+<xref:System.Windows.Data.XmlDataProvider> exposes the following ways to access [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.  
+ 
 -   You can embed inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data using the <xref:System.Windows.Data.XmlDataProvider> class.  
-  
+ 
 -   You can set the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property to the <xref:System.Uri> of an [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data file.  
-  
+ 
 -   You can set the <xref:System.Windows.Data.XmlDataProvider.Document%2A> property to an <xref:System.Xml.XmlDocument>.  
-  
- <xref:System.Windows.Data.XmlDataProvider> performs a full refresh of all bindings when a <xref:System.Xml.XmlDocument.NodeChanged?displayProperty=fullName> event occurs. There are no optimizations for specific nodes.  
-  
- The <xref:System.Windows.Data.XmlDataProvider.IsAsynchronous%2A?displayProperty=fullName> property is set to `true` by default, which means that the <xref:System.Windows.Data.XmlDataProvider> retrieves data and produces the collection of [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] nodes asynchronously by default.  
-  
+ 
+<xref:System.Windows.Data.XmlDataProvider> performs a full refresh of all bindings when a <xref:System.Xml.XmlDocument.NodeChanged?displayProperty=fullName> event occurs. There are no optimizations for specific nodes.  
+ 
+The <xref:System.Windows.Data.XmlDataProvider.IsAsynchronous%2A?displayProperty=fullName> property is set to `true` by default, which means that the <xref:System.Windows.Data.XmlDataProvider> retrieves data and produces the collection of [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] nodes asynchronously by default.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,12 +98,12 @@
         <summary>Prepares the loading of either the inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] or the external [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] file to produce a collection of [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] nodes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The execution is either immediate or on a background thread, based on the value of the <xref:System.Windows.Data.XmlDataProvider.IsAsynchronous%2A> property.  
-  
- This method is called by the <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> and <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> methods of the base class.  
-  
+The execution is either immediate or on a background thread, based on the value of the <xref:System.Windows.Data.XmlDataProvider.IsAsynchronous%2A> property.  
+ 
+This method is called by the <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> and <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> methods of the base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,22 +130,22 @@
         <value>The <see cref="T:System.Xml.XmlDocument" /> to use as the binding source. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.XmlDataProvider> exposes the following ways to access [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.  
-  
+<xref:System.Windows.Data.XmlDataProvider> exposes the following ways to access [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.  
+ 
 -   You can embed inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data using the <xref:System.Windows.Data.XmlDataProvider> class.  
-  
+ 
 -   You can set the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property to the <xref:System.Uri> of an [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data file.  
-  
+ 
 -   You can set this property to an <xref:System.Xml.XmlDocument>.  
-  
- <xref:System.Windows.Data.XmlDataProvider> performs a full refresh of all bindings on when a <xref:System.Xml.XmlDocument.NodeChanged?displayProperty=fullName> event occurs. There are no optimizations for specific nodes.  
-  
- If the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is set, then any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded. If the <xref:System.Windows.Data.XmlDataProvider.Document%2A> property is set, then the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is cleared and any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded.  
-  
- Setting the following properties will implicitly cause this <xref:System.Windows.Data.XmlDataProvider> object to refresh: <xref:System.Windows.Data.XmlDataProvider.Source%2A>, <xref:System.Windows.Data.XmlDataProvider.Document%2A>, <xref:System.Windows.Data.XmlDataProvider.XmlNamespaceManager%2A>, and <xref:System.Windows.Data.XmlDataProvider.XPath%2A>. When changing multiple refresh-causing properties, the use of <xref:System.Windows.Data.DataSourceProvider.DeferRefresh%2A> is recommended.  
-  
+ 
+<xref:System.Windows.Data.XmlDataProvider> performs a full refresh of all bindings on when a <xref:System.Xml.XmlDocument.NodeChanged?displayProperty=fullName> event occurs. There are no optimizations for specific nodes.  
+ 
+If the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is set, then any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded. If the <xref:System.Windows.Data.XmlDataProvider.Document%2A> property is set, then the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is cleared and any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded.  
+ 
+Setting the following properties will implicitly cause this <xref:System.Windows.Data.XmlDataProvider> object to refresh: <xref:System.Windows.Data.XmlDataProvider.Source%2A>, <xref:System.Windows.Data.XmlDataProvider.Document%2A>, <xref:System.Windows.Data.XmlDataProvider.XmlNamespaceManager%2A>, and <xref:System.Windows.Data.XmlDataProvider.XPath%2A>. When changing multiple refresh-causing properties, the use of <xref:System.Windows.Data.DataSourceProvider.DeferRefresh%2A> is recommended.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
           <see langword="true" /> if the property value has changed from its default; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.XmlDataProvider> or developing your own control incorporating the <xref:System.Windows.Data.XmlDataProvider>.  
-  
+This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.XmlDataProvider> or developing your own control incorporating the <xref:System.Windows.Data.XmlDataProvider>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
           <see langword="true" /> if the property value has changed from its default; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.XmlDataProvider.XmlSerializer%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.XmlDataProvider> or developing your own control incorporating the <xref:System.Windows.Data.XmlDataProvider>.  
-  
+This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.XmlDataProvider.XmlSerializer%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.XmlDataProvider> or developing your own control incorporating the <xref:System.Windows.Data.XmlDataProvider>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@
           <see langword="true" /> if the property value has changed from its default; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.XmlDataProvider.XPath%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.XmlDataProvider> or developing your own control incorporating the <xref:System.Windows.Data.XmlDataProvider>.  
-  
+This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.XmlDataProvider.XPath%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.XmlDataProvider> or developing your own control incorporating the <xref:System.Windows.Data.XmlDataProvider>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,33 +305,33 @@
         <value>The <see cref="T:System.Uri" /> of the [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data file to use as the binding source. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.XmlDataProvider> exposes the following ways to access [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.  
-  
+<xref:System.Windows.Data.XmlDataProvider> exposes the following ways to access [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.  
+ 
 -   You can embed inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data using the <xref:System.Windows.Data.XmlDataProvider> class.  
-  
+ 
 -   You can set this property to the <xref:System.Uri> of an [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data file.  
-  
+ 
 -   You can set the <xref:System.Windows.Data.XmlDataProvider.Document%2A> property to an <xref:System.Xml.XmlDocument>.  
+ 
+If the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is set, then any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded. If the <xref:System.Windows.Data.XmlDataProvider.Document%2A> property is set, then the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is cleared and any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded.  
+ 
+Setting the following properties will implicitly cause this <xref:System.Windows.Data.XmlDataProvider> object to refresh: <xref:System.Windows.Data.XmlDataProvider.Source%2A>, <xref:System.Windows.Data.XmlDataProvider.Document%2A>, <xref:System.Windows.Data.XmlDataProvider.XmlNamespaceManager%2A>, and <xref:System.Windows.Data.XmlDataProvider.XPath%2A>. When changing multiple refresh-causing properties, the use of <xref:System.Windows.Data.DataSourceProvider.DeferRefresh%2A> is recommended.  
+ 
   
- If the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is set, then any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded. If the <xref:System.Windows.Data.XmlDataProvider.Document%2A> property is set, then the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is cleared and any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded.  
-  
- Setting the following properties will implicitly cause this <xref:System.Windows.Data.XmlDataProvider> object to refresh: <xref:System.Windows.Data.XmlDataProvider.Source%2A>, <xref:System.Windows.Data.XmlDataProvider.Document%2A>, <xref:System.Windows.Data.XmlDataProvider.XmlNamespaceManager%2A>, and <xref:System.Windows.Data.XmlDataProvider.XPath%2A>. When changing multiple refresh-causing properties, the use of <xref:System.Windows.Data.DataSourceProvider.DeferRefresh%2A> is recommended.  
-  
-   
-  
+ 
 ## Examples  
- In some applications, embedding the [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] inline within the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] page can be inconvenient because the exact content of the data must be known at compile time. Therefore, you can obtain the data from an external [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] file, as in the following example.  
-  
- [!code-xml[XMLDataSource2#XmlFileExample](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource2/CS/Window1.xaml#xmlfileexample)]  
-  
- If the [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data resides in a remote [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] file, you define access to the data by assigning an appropriate [!INCLUDE[TLA2#tla_url](~/includes/tla2sharptla-url-md.md)] to the <xref:System.Windows.Data.XmlDataProvider.Source%2A> attribute as follows:  
-  
+In some applications, embedding the [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] inline within the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] page can be inconvenient because the exact content of the data must be known at compile time. Therefore, you can obtain the data from an external [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] file, as in the following example.  
+ 
+[!code-xml[XMLDataSource2#XmlFileExample](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource2/CS/Window1.xaml#xmlfileexample)]  
+ 
+If the [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data resides in a remote [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] file, you define access to the data by assigning an appropriate [!INCLUDE[TLA2#tla_url](~/includes/tla2sharptla-url-md.md)] to the <xref:System.Windows.Data.XmlDataProvider.Source%2A> attribute as follows:  
+ 
 ```  
 <XmlDataProvider x:Key="BookData" Source="http://MyUrl" XPath="Books"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -376,30 +376,30 @@
         <value>The <see cref="T:System.Xml.XmlNamespaceManager" /> used to run <see cref="P:System.Windows.Data.XmlDataProvider.XPath" /> queries. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the following properties will implicitly cause this <xref:System.Windows.Data.XmlDataProvider> object to refresh: <xref:System.Windows.Data.XmlDataProvider.Source%2A>, <xref:System.Windows.Data.XmlDataProvider.Document%2A>, <xref:System.Windows.Data.XmlDataProvider.XmlNamespaceManager%2A>, and <xref:System.Windows.Data.XmlDataProvider.XPath%2A>. When changing multiple refresh-causing properties, the use of <xref:System.Windows.Data.DataSourceProvider.DeferRefresh%2A> is recommended.  
-  
+Setting the following properties will implicitly cause this <xref:System.Windows.Data.XmlDataProvider> object to refresh: <xref:System.Windows.Data.XmlDataProvider.Source%2A>, <xref:System.Windows.Data.XmlDataProvider.Document%2A>, <xref:System.Windows.Data.XmlDataProvider.XmlNamespaceManager%2A>, and <xref:System.Windows.Data.XmlDataProvider.XPath%2A>. When changing multiple refresh-causing properties, the use of <xref:System.Windows.Data.DataSourceProvider.DeferRefresh%2A> is recommended.  
+ 
 <a name="xamlAttributeUsage_XmlNamespaceManager"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object XmlNamespaceManager="mappingCollection"/>  
 ```  
-  
+ 
 <a name="xamlValues_XmlNamespaceManager"></a>   
 ## XAML Values  
- *mappingCollection*  
- An <xref:System.Windows.Data.XmlNamespaceMappingCollection>. To refer to a <xref:System.Windows.Data.XmlNamespaceMappingCollection>, use the [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
+*mappingCollection*  
+An <xref:System.Windows.Data.XmlNamespaceMappingCollection>. To refer to a <xref:System.Windows.Data.XmlNamespaceMappingCollection>, use the [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use this property.  
-  
- <!-- TODO: review snippet reference [!code-xml[XmlnsBind#XmlNamespaceMapping](~/samples/snippets/xaml/VS_Snippets_Wpf/XmlnsBind/XAML/Window1.xaml#xmlnamespacemapping)]  -->
- <!-- TODO: review snippet reference [!code-xml[XmlnsBind#XmlNamespaceMapping](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlnsBind/CS/Window1.xaml#xmlnamespacemapping)]  -->  
-  
+The following example demonstrates how to use this property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[XmlnsBind#XmlNamespaceMapping](~/samples/snippets/xaml/VS_Snippets_Wpf/XmlnsBind/XAML/Window1.xaml#xmlnamespacemapping)]  -->
+<!-- TODO: review snippet reference [!code-xml[XmlnsBind#XmlNamespaceMapping](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlnsBind/CS/Window1.xaml#xmlnamespacemapping)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -429,41 +429,41 @@
         <value>The inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used by the parser to compile the literal content of the embedded [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data island.  
-  
+This property is used by the parser to compile the literal content of the embedded [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data island.  
+ 
 <a name="xamlPropertyElementUsage_XmlSerializer"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <XmlDataProvider>  
-  <XmlDataProvider.XmlSerializer>  
-    <x:XData>  
-       <elementDataRoot>  
-          <elementData/>  
-       <elementDataRoot>  
-    </x:XData>  
-  </XmlDataProvider.XmlSerializer>  
+ <XmlDataProvider.XmlSerializer>  
+   <x:XData>  
+      <elementDataRoot>  
+         <elementData/>  
+      <elementDataRoot>  
+   </x:XData>  
+ </XmlDataProvider.XmlSerializer>  
 </XmlDataProvider>  
 --or--  
 <XmlDataProvider>  
-    <x:XData>  
-       <elementDataRoot>  
-          <elementData/>  
-       <elementDataRoot>  
-    </x:XData>  
+   <x:XData>  
+      <elementDataRoot>  
+         <elementData/>  
+      <elementDataRoot>  
+   </x:XData>  
 </XmlDataProvider>  
 ```  
-  
+ 
 <a name="xamlValues_XmlSerializer"></a>   
 ## XAML Values  
- *elementDataRoot*  
- Required. The single root element of the enclosed data island. Without a single root, the `x:XData` is invalid as a data source.  
-  
- *elementData*  
- Optional. XML that represents your data. Any number of elements can be contained as element data, nested elements can be contained in other elements, and so on, subject to the general rules of XML.  
-  
+*elementDataRoot*  
+Required. The single root element of the enclosed data island. Without a single root, the `x:XData` is invalid as a data source.  
+ 
+*elementData*  
+Optional. XML that represents your data. Any number of elements can be contained as element data, nested elements can be contained in other elements, and so on, subject to the general rules of XML.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -490,12 +490,12 @@
         <value>The <see langword="XPath" /> query used to generate the data collection. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> method handles the `XPath` expressions from the <xref:System.Windows.Data.Binding.XPath%2A> property. `XPath` functions are not supported. For `XPath` expression information, see the <xref:System.Xml.XmlNode.SelectNodes%2A> documentation and some examples provided in the Example section.  
-  
- Setting the following properties will implicitly cause this <xref:System.Windows.Data.XmlDataProvider> object to refresh: <xref:System.Windows.Data.XmlDataProvider.Source%2A>, <xref:System.Windows.Data.XmlDataProvider.Document%2A>, <xref:System.Windows.Data.XmlDataProvider.XmlNamespaceManager%2A>, and <xref:System.Windows.Data.XmlDataProvider.XPath%2A>. When changing multiple refresh-causing properties, the use of <xref:System.Windows.Data.DataSourceProvider.DeferRefresh%2A> is recommended.  
-  
+The <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> method handles the `XPath` expressions from the <xref:System.Windows.Data.Binding.XPath%2A> property. `XPath` functions are not supported. For `XPath` expression information, see the <xref:System.Xml.XmlNode.SelectNodes%2A> documentation and some examples provided in the Example section.  
+ 
+Setting the following properties will implicitly cause this <xref:System.Windows.Data.XmlDataProvider> object to refresh: <xref:System.Windows.Data.XmlDataProvider.Source%2A>, <xref:System.Windows.Data.XmlDataProvider.Document%2A>, <xref:System.Windows.Data.XmlDataProvider.XmlNamespaceManager%2A>, and <xref:System.Windows.Data.XmlDataProvider.XPath%2A>. When changing multiple refresh-causing properties, the use of <xref:System.Windows.Data.DataSourceProvider.DeferRefresh%2A> is recommended.  
+ 
  ]]></format>
         </remarks>
       </Docs>

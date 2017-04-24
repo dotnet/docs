@@ -22,10 +22,10 @@
     <summary>An activity that supports compensation of its child activities.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Statements.CompensableActivity> allows a developer to specify a <xref:System.Activities.Statements.CompensableActivity.Body%2A> activity that defines a long-running task that performs their core business logic. It also allows the developer to optionally specify a compensation and confirmation activity to schedule appropriate business logic in the event of errors or successful completion of the <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Compensation and confirmation of a <xref:System.Activities.Statements.CompensableActivity> is invoked by using the <xref:System.Activities.Statements.CompensationToken> returned by the <xref:System.Activities.Statements.CompensableActivity>. <xref:System.Activities.Statements.CompensationToken> is an opaque, typed object returned as the <xref:System.Activities.WorkflowElement%601.Result%2A> argument after successful completion of a <xref:System.Activities.Statements.CompensableActivity> activity’s <xref:System.Activities.Statements.CompensableActivity.Body%2A>. This <xref:System.Activities.Statements.CompensationToken> is used by the <xref:System.Activities.Statements.Confirm> and <xref:System.Activities.Statements.Compensate> activities to explicitly invoke confirmation and compensation of a <xref:System.Activities.Statements.CompensableActivity>. <xref:System.Activities.Statements.CompensableActivity> can be composed in a nested hierarchical fashion in the workflow. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Compensation Programming Model](http://msdn.microsoft.com/en-us/29e5442c-1df7-401d-a6ca-746e617cbf9f).  
-  
+<xref:System.Activities.Statements.CompensableActivity> allows a developer to specify a <xref:System.Activities.Statements.CompensableActivity.Body%2A> activity that defines a long-running task that performs their core business logic. It also allows the developer to optionally specify a compensation and confirmation activity to schedule appropriate business logic in the event of errors or successful completion of the <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Compensation and confirmation of a <xref:System.Activities.Statements.CompensableActivity> is invoked by using the <xref:System.Activities.Statements.CompensationToken> returned by the <xref:System.Activities.Statements.CompensableActivity>. <xref:System.Activities.Statements.CompensationToken> is an opaque, typed object returned as the <xref:System.Activities.WorkflowElement%601.Result%2A> argument after successful completion of a <xref:System.Activities.Statements.CompensableActivity> activity’s <xref:System.Activities.Statements.CompensableActivity.Body%2A>. This <xref:System.Activities.Statements.CompensationToken> is used by the <xref:System.Activities.Statements.Confirm> and <xref:System.Activities.Statements.Compensate> activities to explicitly invoke confirmation and compensation of a <xref:System.Activities.Statements.CompensableActivity>. <xref:System.Activities.Statements.CompensableActivity> can be composed in a nested hierarchical fashion in the workflow. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Compensation Programming Model](http://msdn.microsoft.com/en-us/29e5442c-1df7-401d-a6ca-746e617cbf9f).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <value>The activity that is scheduled when the <see cref="T:System.Activities.Statements.CompensableActivity" /> executes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,12 +145,12 @@
         <value>The activity that is scheduled when the activity is canceled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A> can be used to specify custom cancelation logic for the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of the <xref:System.Activities.Statements.CompensableActivity>.  
-  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A> can be used to specify custom cancelation logic for the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of the <xref:System.Activities.Statements.CompensableActivity>.  
+ 
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,12 +198,12 @@
         <value>The activity that is scheduled when compensation is performed on the <see cref="T:System.Activities.Statements.CompensableActivity" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> can be used to specify custom compensation logic for the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of the <xref:System.Activities.Statements.CompensableActivity>.  
-  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> can be used to specify custom compensation logic for the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of the <xref:System.Activities.Statements.CompensableActivity>.  
+ 
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,12 +233,12 @@
         <value>The activity that is scheduled when confirmation is performed for this <see cref="T:System.Activities.Statements.CompensableActivity" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> can be used to specify custom confirmation logic for the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of the <xref:System.Activities.Statements.CompensableActivity>.  
-  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> can be used to specify custom confirmation logic for the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of the <xref:System.Activities.Statements.CompensableActivity>.  
+ 
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

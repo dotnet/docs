@@ -14,40 +14,40 @@
     <summary>Provides a host for a single instance of a workflow.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.WorkflowApplication> class provides a host for a single workflow instance. It is a proxy to the actual workflow instance that is managed by the workflow runtime. Users of <xref:System.Activities.WorkflowApplication> can instruct the workflow runtime to perform actions on a workflow instance by calling the appropriate methods on a <xref:System.Activities.WorkflowApplication> object. If a requested action is not valid, an exception is thrown.  
-  
- Using <xref:System.Activities.WorkflowApplication> you can perform the following tasks:  
-  
+The <xref:System.Activities.WorkflowApplication> class provides a host for a single workflow instance. It is a proxy to the actual workflow instance that is managed by the workflow runtime. Users of <xref:System.Activities.WorkflowApplication> can instruct the workflow runtime to perform actions on a workflow instance by calling the appropriate methods on a <xref:System.Activities.WorkflowApplication> object. If a requested action is not valid, an exception is thrown.  
+ 
+Using <xref:System.Activities.WorkflowApplication> you can perform the following tasks:  
+ 
 1.  Create a new workflow instance, or load a workflow instance from an instance store.  
-  
+ 
 2.  Provide extensions to be used by activities within a workflow instance.  
-  
+ 
 3.  Control the execution of a workflow instance.  
-  
+ 
 4.  Resume a bookmark created by an activity within a workflow instance.  
-  
+ 
 5.  Persist or unload a workflow instance.  
-  
+ 
 6.  Be notified of workflow instance lifecycle events.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Idle.   
 Ending the workflow.   
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Completed  
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#9)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#9)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,20 +69,20 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.
         <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplication" /> class with the specified workflow definition.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using using a workflow definition consisting of a single `DiceRoll` activity. The `DiceRoll` activity has two output arguments that represent the results of the dice roll operation. When the workflow completes, the outputs are retrieved in the <xref:System.Activities.WorkflowApplication.Completed%2A> handler, and the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using using a workflow definition consisting of a single `DiceRoll` activity. The `DiceRoll` activity has two output arguments that represent the results of the dice roll operation. When the workflow completes, the outputs are retrieved in the <xref:System.Activities.WorkflowApplication.Completed%2A> handler, and the following output is displayed to the console.  
+ 
 ```Output  
 Workflow aae3fb48-7229-4737-b969-d63e131b96b3 Completed.   
 The two dice are 1 and 5.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#130](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#130)]  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#21](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#21)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#130](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#130)]  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#21](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,21 +126,21 @@ The two dice are 1 and 5.
         <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplication" /> class that uses the specified workflow definition and argument values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using using a workflow definition consisting of a single `Divide` activity that takes two input arguments, and a dictionary of input arguments containing the two values to be passed, keyed by argument name. The desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using using a workflow definition consisting of a single `Divide` activity that takes two input arguments, and a dictionary of input arguments containing the two values to be passed, keyed by argument name. The desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
+ 
 ```Output  
 Workflow 8dc844c1-bbf8-4b21-a9a2-05f89e416055 Completed  
 500 / 36 = 13 Remainder 32  
 Workflow 8dc844c1-bbf8-4b21-a9a2-05f89e416055 Unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#120](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#120)]  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#10](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#10)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#120](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#120)]  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#10](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,26 +184,26 @@ Workflow 8dc844c1-bbf8-4b21-a9a2-05f89e416055 Unloaded.
         <summary>Notifies the workflow runtime that this workflow instance should abort.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Abort%2A> is called. When the workflow is aborted, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Abort%2A> is called. When the workflow is aborted, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow 3b76d562-516a-4a52-b17c-0f2ce531ad93 Idle.   
 Workflow 3b76d562-516a-4a52-b17c-0f2ce531ad93 Aborted  
 Exception: System.Activities.WorkflowApplicationAbortedException  
 The workflow has been aborted.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#11](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#11)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#11](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,26 +228,26 @@ The workflow has been aborted.
         <summary>Notifies the workflow runtime that this workflow instance should abort for the specified reason.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Abort%2A> is called. When the workflow is aborted, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Abort%2A> is called. When the workflow is aborted, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow 607b042e-98db-4bbe-abe8-f4d750feec41 Idle.   
 Workflow 607b042e-98db-4bbe-abe8-f4d750feec41 Aborted  
 Exception: System.Activities.WorkflowApplicationAbortedException  
 The reason for aborting the workflow.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#11](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#11)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#11](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,17 +269,17 @@ The reason for aborting the workflow.
         <value>The action that is invoked when the workflow instance is aborted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationAbortedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about why workflow was aborted.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#5](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#5)]  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationAbortedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about why workflow was aborted.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#5](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,12 +328,12 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous cancel operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether the cancel operation was successful, call <xref:System.Activities.WorkflowApplication.EndCancel%2A>. <xref:System.Activities.WorkflowApplication.EndCancel%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndCancel%2A> is called before the cancel operation completes, it blocks until the cancel operation completes. By default, the cancel operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndCancel%2A>.  
-  
- This method cancels a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine whether the cancel operation was successful, call <xref:System.Activities.WorkflowApplication.EndCancel%2A>. <xref:System.Activities.WorkflowApplication.EndCancel%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndCancel%2A> is called before the cancel operation completes, it blocks until the cancel operation completes. By default, the cancel operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndCancel%2A>.  
+ 
+This method cancels a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,12 +363,12 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous cancel operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether the cancel operation was successful, call <xref:System.Activities.WorkflowApplication.EndCancel%2A>. <xref:System.Activities.WorkflowApplication.EndCancel%2A> can be called from inside or outside of the method specified in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndCancel%2A> is called before the cancel operation completes, it blocks until the cancel operation completes. If the cancel operation does not complete in the interval specified by the `timeOut` parameter, a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndCancel%2A>.  
-  
- This method cancels a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine whether the cancel operation was successful, call <xref:System.Activities.WorkflowApplication.EndCancel%2A>. <xref:System.Activities.WorkflowApplication.EndCancel%2A> can be called from inside or outside of the method specified in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndCancel%2A> is called before the cancel operation completes, it blocks until the cancel operation completes. If the cancel operation does not complete in the interval specified by the `timeOut` parameter, a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndCancel%2A>.  
+ 
+This method cancels a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -790,14 +790,14 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous operation</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A runnable instance is an instance for which a timer or instance lock has expired.  
-  
- To determine if the load operation was successful, call <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>. <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or else a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>.  
-  
- This method loads a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+A runnable instance is an instance for which a timer or instance lock has expired.  
+ 
+To determine if the load operation was successful, call <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>. <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or else a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>.  
+ 
+This method loads a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -827,14 +827,14 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous operation</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A runnable instance is an instance for which a timer or instance lock has expired.  
-  
- To determine if the load operation was successful, call <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>. <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> is called before the resume operation completes, it blocks until the resume operation completes. If the load operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>.  
-  
- This method loads a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+A runnable instance is an instance for which a timer or instance lock has expired.  
+ 
+To determine if the load operation was successful, call <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>. <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> is called before the resume operation completes, it blocks until the resume operation completes. If the load operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>.  
+ 
+This method loads a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -862,14 +862,14 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous persist operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether the persist operation was successful, call <xref:System.Activities.WorkflowApplication.EndPersist%2A>. <xref:System.Activities.WorkflowApplication.EndPersist%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndPersist%2A> is called before the persist operation completes, it blocks until the persist operation completes. If the persist operation does not complete within 30 seconds, a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndPersist%2A>.  
-  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
- This method persists a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine whether the persist operation was successful, call <xref:System.Activities.WorkflowApplication.EndPersist%2A>. <xref:System.Activities.WorkflowApplication.EndPersist%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndPersist%2A> is called before the persist operation completes, it blocks until the persist operation completes. If the persist operation does not complete within 30 seconds, a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndPersist%2A>.  
+ 
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
+This method persists a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -899,14 +899,14 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous persist operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether the persist operation was successful, call <xref:System.Activities.WorkflowApplication.EndPersist%2A>. <xref:System.Activities.WorkflowApplication.EndPersist%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndPersist%2A> is called before the persist operation completes, it blocks until the persist operation completes. If the persist operation does not complete within the specified time-out interval, a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndPersist%2A>.  
-  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
- This method persists a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine whether the persist operation was successful, call <xref:System.Activities.WorkflowApplication.EndPersist%2A>. <xref:System.Activities.WorkflowApplication.EndPersist%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndPersist%2A> is called before the persist operation completes, it blocks until the persist operation completes. If the persist operation does not complete within the specified time-out interval, a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndPersist%2A>.  
+ 
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
+This method persists a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -938,12 +938,12 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous bookmark resume operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine if the resume operation was successful, call <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>. <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or else a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>.  
-  
- This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine if the resume operation was successful, call <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>. <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or else a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>.  
+ 
+This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -975,10 +975,10 @@ The reason for aborting the workflow.
         <returns>The result of the bookmark resumption operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The bookmark result indicates whether the resumption operation succeeded or failed.  
-  
+The bookmark result indicates whether the resumption operation succeeded or failed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1012,12 +1012,12 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous bookmark resume operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine if the resume operation was successful, call <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>. <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes. If the resume operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>.  
-  
- This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine if the resume operation was successful, call <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>. <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes. If the resume operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>.  
+ 
+This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1051,10 +1051,10 @@ The reason for aborting the workflow.
         <returns>The result of the bookmark resumption operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The bookmark result indicates whether the resumption operation succeeded or failed.  
-  
+The bookmark result indicates whether the resumption operation succeeded or failed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1082,12 +1082,12 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous run operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether the run operation was successful, call <xref:System.Activities.WorkflowApplication.EndRun%2A>. <xref:System.Activities.WorkflowApplication.EndRun%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndRun%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndRun%2A>.  
-  
- This method starts or resumes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine whether the run operation was successful, call <xref:System.Activities.WorkflowApplication.EndRun%2A>. <xref:System.Activities.WorkflowApplication.EndRun%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndRun%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndRun%2A>.  
+ 
+This method starts or resumes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1117,12 +1117,12 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous run operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether the run operation was successful, call <xref:System.Activities.WorkflowApplication.EndRun%2A>. <xref:System.Activities.WorkflowApplication.EndRun%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndRun%2A> is called before the resume operation completes, it blocks until the resume operation completes. If the resume operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndRun%2A>.  
-  
- This method starts or resumes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine whether the run operation was successful, call <xref:System.Activities.WorkflowApplication.EndRun%2A>. <xref:System.Activities.WorkflowApplication.EndRun%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndRun%2A> is called before the resume operation completes, it blocks until the resume operation completes. If the resume operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndRun%2A>.  
+ 
+This method starts or resumes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1152,14 +1152,14 @@ The reason for aborting the workflow.
         <returns>A reference to the current <see cref="Overload:System.Activities.WorkflowApplication.BeginTerminate" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
-  
- To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
-  
- This method terminates a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ 
+To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
+ 
+This method terminates a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1189,14 +1189,14 @@ The reason for aborting the workflow.
         <returns>A reference to the current <see cref="Overload:System.Activities.WorkflowApplication.BeginTerminate" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
-  
- To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
-  
- This method terminates a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ 
+To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
+ 
+This method terminates a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1228,14 +1228,14 @@ The reason for aborting the workflow.
         <returns>A reference to the current <see cref="Overload:System.Activities.WorkflowApplication.BeginTerminate" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
-  
- To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown. This or any other exceptions that occur during the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> process is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
-  
- This method terminates a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ 
+To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown. This or any other exceptions that occur during the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> process is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
+ 
+This method terminates a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1267,14 +1267,14 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous <see cref="Overload:System.Activities.WorkflowApplication.BeginTerminate" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
-  
- To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
-  
- This method terminates a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ 
+To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
+ 
+This method terminates a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1302,14 +1302,14 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous <see cref="Overload:System.Activities.WorkflowApplication.BeginUnload" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndUnload%2A>. <xref:System.Activities.WorkflowApplication.EndUnload%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndUnload%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndUnload%2A>.  
-  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
- This method persists and disposes a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine whether the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndUnload%2A>. <xref:System.Activities.WorkflowApplication.EndUnload%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndUnload%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndUnload%2A>.  
+ 
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
+This method persists and disposes a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1339,14 +1339,14 @@ The reason for aborting the workflow.
         <returns>A reference to the asynchronous <see cref="Overload:System.Activities.WorkflowApplication.BeginUnload" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndUnload%2A>. <xref:System.Activities.WorkflowApplication.EndUnload%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndUnload%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndUnload%2A>.  
-  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
- This method persists and unloads a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+To determine whether the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndUnload%2A>. <xref:System.Activities.WorkflowApplication.EndUnload%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndUnload%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndUnload%2A>.  
+ 
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
+This method persists and unloads a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1368,27 +1368,27 @@ The reason for aborting the workflow.
         <summary>Cancels the workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handler.  
+This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handler.  
+ 
+By default, the cancel operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
+ 
   
- By default, the cancel operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Cancel%2A> is called. When the workflow is cancelled, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Cancel%2A> is called. When the workflow is cancelled, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Idle.   
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Canceled  
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#13](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#13)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#13](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1413,25 +1413,25 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <summary>Cancels the workflow instance using the specified time-out interval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handler.  
+This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handler.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Cancel%2A> is called. When the workflow is cancelled, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Cancel%2A> is called. When the workflow is cancelled, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Idle.   
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Canceled  
 Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#13](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#13)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#13](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1453,12 +1453,12 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <value>The action that is invoked when the workflow instance is complete.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1579,12 +1579,12 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <summary>Waits for the pending asynchronous cancel operation to complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines whether a <xref:System.Activities.WorkflowApplication.BeginCancel%2A> operation was successful. If called before the cancel operation completes, it blocks until the cancel operation is complete.  
-  
- This method completes the asynchronous cancel operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method determines whether a <xref:System.Activities.WorkflowApplication.BeginCancel%2A> operation was successful. If called before the cancel operation completes, it blocks until the cancel operation is complete.  
+ 
+This method completes the asynchronous cancel operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1695,12 +1695,12 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <summary>Waits for the pending asynchronous load operation to complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this method is called before the loading operation completes, it blocks until the loading operation is complete.  
-  
- This method completes the asynchronous load operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+If this method is called before the loading operation completes, it blocks until the loading operation is complete.  
+ 
+This method completes the asynchronous load operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1725,12 +1725,12 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <summary>Waits for the asynchronous load runnable instance operation to complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines whether a <xref:System.Activities.WorkflowApplication.BeginLoadRunnableInstance%2A> operation was successful. If called before the load operation completes, it blocks until the operation is complete.  
-  
- This method loads workflows asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method determines whether a <xref:System.Activities.WorkflowApplication.BeginLoadRunnableInstance%2A> operation was successful. If called before the load operation completes, it blocks until the operation is complete.  
+ 
+This method loads workflows asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1755,12 +1755,12 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <summary>Waits for the pending asynchronous persist operation to complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines whether a <xref:System.Activities.WorkflowApplication.BeginPersist%2A> operation was successful. If called before the persist operation completes, it blocks until the persist operation is complete.  
-  
- This method completes the asynchronous persist operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method determines whether a <xref:System.Activities.WorkflowApplication.BeginPersist%2A> operation was successful. If called before the persist operation completes, it blocks until the persist operation is complete.  
+ 
+This method completes the asynchronous persist operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1786,12 +1786,12 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <returns>One of the enumeration values that indicates the results of a bookmark resumption operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines whether a <xref:System.Activities.WorkflowApplication.BeginResumeBookmark%2A> operation was successful. If called before the load operation completes, it blocks until the operation is complete.  
-  
- This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method determines whether a <xref:System.Activities.WorkflowApplication.BeginResumeBookmark%2A> operation was successful. If called before the load operation completes, it blocks until the operation is complete.  
+ 
+This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1816,12 +1816,12 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <summary>Waits for the pending asynchronous run operation to complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines whether a <xref:System.Activities.WorkflowApplication.BeginRun%2A> operation was successful. If called before the resume operation completes, it blocks until the resume operation is complete.  
-  
- This method completes an asynchronous run operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method determines whether a <xref:System.Activities.WorkflowApplication.BeginRun%2A> operation was successful. If called before the resume operation completes, it blocks until the resume operation is complete.  
+ 
+This method completes an asynchronous run operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1846,12 +1846,12 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <summary>Waits for the pending asynchronous terminate operation to complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be called to determine whether a <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful. If called before the terminate operation completes, it blocks until the operation is complete.  
-  
- This method completes an asynchronous <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method can be called to determine whether a <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful. If called before the terminate operation completes, it blocks until the operation is complete.  
+ 
+This method completes an asynchronous <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1876,12 +1876,12 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <summary>Waits for the pending asynchronous unload operation to complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be called to determine whether a <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation was successful. If called before the unload operation completes, it blocks until the operation is complete.  
-  
- This method completes an asynchronous <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+This method can be called to determine whether a <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation was successful. If called before the unload operation completes, it blocks until the operation is complete.  
+ 
+This method completes an asynchronous <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1922,27 +1922,27 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <returns>A read-only collection of bookmarks for the workflow instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this operation does not complete within 30 seconds, a <xref:System.TimeoutException> is thrown.  
+If this operation does not complete within 30 seconds, a <xref:System.TimeoutException> is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, <xref:System.Activities.WorkflowApplication.GetBookmarks%2A> is called. When the workflow is completed, the following output is displayed to the console.  
-  
+The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, <xref:System.Activities.WorkflowApplication.GetBookmarks%2A> is called. When the workflow is completed, the following output is displayed to the console.  
+ 
 ```Output  
 What is your name?   
 BookmarkName: UserName - OwnerDisplayName: ReadLine  
 Steve  
 Hello, Steve  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#14](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#14](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1968,22 +1968,22 @@ Hello, Steve
         <returns>A read-only collection of bookmarks for the workflow instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, <xref:System.Activities.WorkflowApplication.GetBookmarks%2A> is called. When the workflow is completed, the following output is displayed to the console.  
-  
+The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, <xref:System.Activities.WorkflowApplication.GetBookmarks%2A> is called. When the workflow is completed, the following output is displayed to the console.  
+ 
 ```Output  
 What is your name?   
 BookmarkName: UserName - OwnerDisplayName: ReadLine  
 Steve  
 Hello, Steve  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#14](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#14](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2101,12 +2101,12 @@ Hello, Steve
         <value>A 128-bit GUID identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Activities.WorkflowApplication> instance and then displays the <xref:System.Activities.WorkflowApplication.Id%2A> value to the console.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#28](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#28)]  
-  
+The following example creates a <xref:System.Activities.WorkflowApplication> instance and then displays the <xref:System.Activities.WorkflowApplication.Id%2A> value to the console.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#28](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2128,16 +2128,16 @@ Hello, Steve
         <value>An action that executes when a workflow instance becomes idle.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationIdleEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Idle%2A> handler of a <xref:System.Activities.WorkflowApplication> instance. In this example the workflow going idle has one <xref:System.Activities.Bookmark> with a name of `EnterGuess`, owned by an activity named `ReadInt`. This code example is based off of [How to: Run a Workflow](~/docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md), which is part of the [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md). If the <xref:System.Activities.WorkflowApplication.Idle%2A> handler in that step is modified to contain the code from this example, the following output is displayed.  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationIdleEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Idle%2A> handler of a <xref:System.Activities.WorkflowApplication> instance. In this example the workflow going idle has one <xref:System.Activities.Bookmark> with a name of `EnterGuess`, owned by an activity named `ReadInt`. This code example is based off of [How to: Run a Workflow](~/docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md), which is part of the [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md). If the <xref:System.Activities.WorkflowApplication.Idle%2A> handler in that step is modified to contain the code from this example, the following output is displayed.  
+ 
 ```Output  
 BookmarkName: EnterGuess - OwnerDisplayName: ReadInt  
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#2](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#2)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#2](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2159,12 +2159,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <value>An instance store.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a WorkflowApplication instance and then configures the <xref:System.Activities.WorkflowApplication.InstanceStore%2A> using a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This code example is part of [How to: Create and Run a Long Running Workflow](~/docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md), which is part of the [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md).  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#28](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#28)]  
-  
+The following example creates a WorkflowApplication instance and then configures the <xref:System.Activities.WorkflowApplication.InstanceStore%2A> using a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This code example is part of [How to: Create and Run a Long Running Workflow](~/docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md), which is part of the [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md).  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#28](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2210,12 +2210,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <summary>Loads the specified workflow instance into memory from an instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example calls <xref:System.Activities.WorkflowApplication.Load%2A> to load persisted workflow instance from a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the `LoadAndCompleteInstance` method in the [Persisting a Workflow Application](~/docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) sample.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#27](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#27)]  
-  
+The following example calls <xref:System.Activities.WorkflowApplication.Load%2A> to load persisted workflow instance from a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the `LoadAndCompleteInstance` method in the [Persisting a Workflow Application](~/docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) sample.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#27](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2288,12 +2288,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <summary>Loads the specified workflow instance into memory from an instance store using the specified time-out interval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example calls <xref:System.Activities.WorkflowApplication.Load%2A> to load persisted workflow instance from a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the `LoadAndCompleteInstance` method in the [Persisting a Workflow Application](~/docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) sample.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#27](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#27)]  
-  
+The following example calls <xref:System.Activities.WorkflowApplication.Load%2A> to load persisted workflow instance from a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the `LoadAndCompleteInstance` method in the [Persisting a Workflow Application](~/docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) sample.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#27](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2340,12 +2340,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <summary>Loads a runnable workflow instance from the <see cref="P:System.Activities.WorkflowApplication.InstanceStore" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A runnable instance is an instance for which a timer or instance lock has expired.  
-  
- By default, the load operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
-  
+A runnable instance is an instance for which a timer or instance lock has expired.  
+ 
+By default, the load operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2370,10 +2370,10 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <summary>Loads a runnable workflow instance from the <see cref="P:System.Activities.WorkflowApplication.InstanceStore" /> using the specified time-out interval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A runnable instance is an instance for which a timer or instance lock has expired.  
-  
+A runnable instance is an instance for which a timer or instance lock has expired.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2624,17 +2624,17 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <value>The delegate that is invoked when a workflow instance encounters an unhandled exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Both <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> and <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> dictate the behavior of the runtime when an exception is not handled in the workflow; however, <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> has the option of leaving a suspended workflow in the persistence store, while <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> does not. The reason for this is that what happens to a suspended workflow is host-specific, and <xref:System.Activities.WorkflowApplication> is not. To implement this functionality using <xref:System.Activities.WorkflowApplication>, create a custom <xref:System.Activities.Persistence.PersistenceParticipant> that has this behavior.  
+Both <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> and <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> dictate the behavior of the runtime when an exception is not handled in the workflow; however, <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> has the option of leaving a suspended workflow in the persistence store, while <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> does not. The reason for this is that what happens to a suspended workflow is host-specific, and <xref:System.Activities.WorkflowApplication> is not. To implement this functionality using <xref:System.Activities.WorkflowApplication>, create a custom <xref:System.Activities.Persistence.PersistenceParticipant> that has this behavior.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is terminated.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#1](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#1)]  
-  
+The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is terminated.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#1](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2656,19 +2656,19 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <summary>Persists a workflow instance to an instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the persist operation does not complete within 30 seconds, a <xref:System.TimeoutException> is thrown.  
+If the persist operation does not complete within 30 seconds, a <xref:System.TimeoutException> is thrown.  
+ 
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
   
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Activities.WorkflowApplication.Persist%2A> to persist a workflow instance before the workflow is started. This example is part of the `StartAndUnloadInstance` method in the [Persisting a Workflow Application](~/docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) sample.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#34](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#34)]  
-  
+The following example calls <xref:System.Activities.WorkflowApplication.Persist%2A> to persist a workflow instance before the workflow is started. This example is part of the `StartAndUnloadInstance` method in the [Persisting a Workflow Application](~/docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) sample.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#34](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#34)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2693,17 +2693,17 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <summary>Persists a workflow instance to an instance store using the specified time-out interval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Activities.WorkflowApplication.Persist%2A> to persist a workflow instance before the workflow is started. This example is from the `StartAndUnloadInstance` method in the [Persisting a Workflow Application](~/docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) sample.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#34](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#34)]  
-  
+The following example calls <xref:System.Activities.WorkflowApplication.Persist%2A> to persist a workflow instance before the workflow is started. This example is from the `StartAndUnloadInstance` method in the [Persisting a Workflow Application](~/docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) sample.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#34](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#34)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2725,17 +2725,17 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <value>The <see cref="T:System.Activities.ActivityFunc" /> that is invoked when the current workflow instance is idle and can be persisted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a workflow becomes idle and can be persisted, both <xref:System.Activities.WorkflowApplication.Idle%2A> and <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> are invoked, in that order. The <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler returns one of the <xref:System.Activities.PersistableIdleAction> enumeration values of <xref:System.Activities.PersistableIdleAction>, <xref:System.Activities.PersistableIdleAction>, or <xref:System.Activities.PersistableIdleAction>.  
+When a workflow becomes idle and can be persisted, both <xref:System.Activities.WorkflowApplication.Idle%2A> and <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> are invoked, in that order. The <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler returns one of the <xref:System.Activities.PersistableIdleAction> enumeration values of <xref:System.Activities.PersistableIdleAction>, <xref:System.Activities.PersistableIdleAction>, or <xref:System.Activities.PersistableIdleAction>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler and instructs the runtime to persist and unload the workflow.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#26](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#26)]  
-  
+The following example handles the <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler and instructs the runtime to persist and unload the workflow.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#26](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#26)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2763,19 +2763,19 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <returns>The result of the bookmark resumption operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The bookmark result indicates whether the resumption operation succeeded or failed.  
+The bookmark result indicates whether the resumption operation succeeded or failed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, the user's input is gathered and the bookmark is resumed.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#24](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#24)]  
-  
+The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, the user's input is gathered and the bookmark is resumed.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#24](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2803,19 +2803,19 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <returns>The result of the bookmark resumption operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The bookmark result indicates whether the resumption operation succeeded or failed.  
+The bookmark result indicates whether the resumption operation succeeded or failed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, the user's input is gathered and the bookmark is resumed.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#22](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#22)]  
-  
+The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, the user's input is gathered and the bookmark is resumed.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#22](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2845,19 +2845,19 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <returns>The result of the bookmark resumption operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The bookmark result indicates whether the resumption operation succeeded or failed.  
+The bookmark result indicates whether the resumption operation succeeded or failed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, the user's input is gathered and the bookmark is resumed.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#25](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#25)]  
-  
+The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, the user's input is gathered and the bookmark is resumed.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#25](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2887,19 +2887,19 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <returns>The result of the bookmark resumption operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The bookmark result indicates whether the resumption operation succeeded or failed.  
+The bookmark result indicates whether the resumption operation succeeded or failed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, the user's input is gathered and the bookmark is resumed.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#22](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#22)]  
-  
+The following example creates a workflow that uses a `ReadLine` activity that creates a <xref:System.Activities.Bookmark>. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, the user's input is gathered and the bookmark is resumed.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#22](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2921,28 +2921,28 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <summary>Begins or resumes the execution of a workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to initiate execution of a newly created workflow instance.  
+Call this method to initiate execution of a newly created workflow instance.  
+ 
+If the run operation does not complete within 30 seconds, a <xref:System.TimeoutException> is thrown.  
+ 
   
- If the run operation does not complete within 30 seconds, a <xref:System.TimeoutException> is thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Idle.   
 Ending the workflow.   
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Completed  
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#9)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2969,26 +2969,26 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.
         <summary>Begins or resumes the execution of a workflow instance using the specified time-out interval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that unlike <xref:System.Activities.WorkflowInvoker.Invoke%2A>, this method will time out only if the workflow doesn't start in the specified amount of time, rather than needing to complete in the specified amount of time. The reason for this is that <xref:System.Activities.WorkflowInvoker.Invoke%2A> executes the workflow synchronously (blocking the host thread), while <xref:System.Activities.WorkflowApplication.Run%2A> executes asynchronously, only blocking the host thread for the amount of time it takes the workflow to start.  
+Note that unlike <xref:System.Activities.WorkflowInvoker.Invoke%2A>, this method will time out only if the workflow doesn't start in the specified amount of time, rather than needing to complete in the specified amount of time. The reason for this is that <xref:System.Activities.WorkflowInvoker.Invoke%2A> executes the workflow synchronously (blocking the host thread), while <xref:System.Activities.WorkflowApplication.Run%2A> executes asynchronously, only blocking the host thread for the amount of time it takes the workflow to start.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Idle.   
 Ending the workflow.   
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Completed  
 Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#9)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3031,28 +3031,28 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.
         <summary>Terminates a workflow instance using the specified exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ 
+By default, the <xref:System.Activities.WorkflowApplication.Terminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
+ 
   
- By default, the <xref:System.Activities.WorkflowApplication.Terminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Terminate%2A> is called. When the workflow is terminated, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Terminate%2A> is called. When the workflow is terminated, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow e6b33409-f010-49f1-82ce-56f8baabe5e5 Terminated.  
 Exception: System.ApplicationException  
 Terminating the workflow.   
 Workflow e6b33409-f010-49f1-82ce-56f8baabe5e5 unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#16](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#16)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#16](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3077,28 +3077,28 @@ Workflow e6b33409-f010-49f1-82ce-56f8baabe5e5 unloaded.
         <summary>Terminates a workflow instance using the specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ 
+By default, the <xref:System.Activities.WorkflowApplication.Terminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
+ 
   
- By default, the <xref:System.Activities.WorkflowApplication.Terminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Terminate%2A> is called. When the workflow is terminated, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Terminate%2A> is called. When the workflow is terminated, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow f87c6f91-4fe4-40b9-b7cb-4f1bd071bf84 Terminated.   
 Exception: System.Activities.WorkflowApplicationTerminatedException  
 Terminating the workflow.   
 Workflow f87c6f91-4fe4-40b9-b7cb-4f1bd071bf84 unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#18](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#18)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#18](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#18)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3125,26 +3125,26 @@ Workflow f87c6f91-4fe4-40b9-b7cb-4f1bd071bf84 unloaded.
         <summary>Terminates a workflow instance using the specified exception and time-out interval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the termination of the workflow. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+This method schedules the termination of the workflow. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Terminate%2A> is called. When the workflow is terminated, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Terminate%2A> is called. When the workflow is terminated, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow de28efe5-9057-472b-8d95-899c249893c5 Terminated.  
 Exception: System.ApplicationException  
 Terminating the workflow.   
 Workflow de28efe5-9057-472b-8d95-899c249893c5 unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#17](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#17)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#17](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3171,26 +3171,26 @@ Workflow de28efe5-9057-472b-8d95-899c249893c5 unloaded.
         <summary>Terminates a workflow instance using the specified error message and time-out interval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Terminate%2A> is called. When the workflow is terminated, the following output is displayed to the console.  
-  
+The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using the specified workflow definition, the desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. After the workflow is started, <xref:System.Activities.WorkflowApplication.Terminate%2A> is called. When the workflow is terminated, the following output is displayed to the console.  
+ 
 ```Output  
 Starting the workflow.   
 Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c Terminated.   
 Exception: System.Activities.WorkflowApplicationTerminatedException  
 Terminating the workflow.   
 Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.  
-  
+ 
 ```  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#19](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#19)]  
-  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#19](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#19)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3212,19 +3212,19 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Persists and unloads a workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the unload operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
+By default, the unload operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
+ 
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
   
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
-   
-  
+ 
 ## Examples  
- The following code example is part of the [NoPersistScope Activity](~/docs/framework/windows-workflow-foundation/samples/nopersistscope-activity.md) sample. In this example, the workflow is idle and the host application is waiting for user input. If the user chooses to unload, <xref:System.Activities.WorkflowApplication.Unload%2A> is called. If successful, the workflow is persisted and unloaded from memory.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#20](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#20)]  
-  
+The following code example is part of the [NoPersistScope Activity](~/docs/framework/windows-workflow-foundation/samples/nopersistscope-activity.md) sample. In this example, the workflow is idle and the host application is waiting for user input. If the user chooses to unload, <xref:System.Activities.WorkflowApplication.Unload%2A> is called. If successful, the workflow is persisted and unloaded from memory.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#20](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#20)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3249,17 +3249,17 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Persists and unloads a workflow instance using the specified time-out interval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is part of the [NoPersistScope Activity](~/docs/framework/windows-workflow-foundation/samples/nopersistscope-activity.md) sample. In this example, the workflow is idle and the host application is waiting for user input. If the user chooses to unload, <xref:System.Activities.WorkflowApplication.Unload%2A> is called. If successful, the workflow is persisted and unloaded from memory.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#20](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#20)]  
-  
+The following code example is part of the [NoPersistScope Activity](~/docs/framework/windows-workflow-foundation/samples/nopersistscope-activity.md) sample. In this example, the workflow is idle and the host application is waiting for user input. If the user chooses to unload, <xref:System.Activities.WorkflowApplication.Unload%2A> is called. If successful, the workflow is persisted and unloaded from memory.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#20](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#20)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3281,12 +3281,12 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <value>An action that is invoked when a workflow instance is unloaded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Unloaded%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays the <xref:System.Activities.WorkflowApplicationEventArgs.InstanceId%2A> of the workflow that was unloaded.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#3](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#3)]  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Unloaded%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays the <xref:System.Activities.WorkflowApplicationEventArgs.InstanceId%2A> of the workflow that was unloaded.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#3](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3300,10 +3300,10 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Begins or resumes the execution of a workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to initiate execution of a newly created workflow instance.  
-  
+Call this method to initiate execution of a newly created workflow instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3317,10 +3317,10 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Cancels a workflow asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3334,12 +3334,12 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Persists and unloads a workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the unload operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
-  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
+By default, the unload operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
+ 
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3353,10 +3353,10 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Loads a runnable workflow instance from the <see cref="P:System.Activities.WorkflowApplication.InstanceStore" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A runnable instance is an instance for which a timer or instance lock has expired.  
-  
+A runnable instance is an instance for which a timer or instance lock has expired.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3370,12 +3370,12 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Persists and disposes a workflow instance asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3389,12 +3389,12 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Cancels the workflow instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
-  
- By default, the cancel operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
-  
+This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ 
+By default, the cancel operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3408,10 +3408,10 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Terminates a workflow instance asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3425,12 +3425,12 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Persists a workflow instance to an instance store asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3444,10 +3444,10 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Notifies the workflow runtime that this workflow instance should abort.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
-  
+When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3461,10 +3461,10 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Persists a workflow instance to an instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
-  
+If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3478,10 +3478,10 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Loads a workflow asynchronously from an instance store using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3495,10 +3495,10 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Starts or resumes a workflow instance asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3512,10 +3512,10 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         <summary>Initiates the asynchronous process of loading a runnable workflow instance from the <see cref="P:System.Activities.WorkflowApplication.InstanceStore" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A runnable instance is an instance for which a timer or instance lock has expired.  
-  
+A runnable instance is an instance for which a timer or instance lock has expired.  
+ 
  ]]></format>
         </remarks>
       </Docs>

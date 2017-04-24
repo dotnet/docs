@@ -13,10 +13,10 @@
     <summary>Determines which date to include in the names of the <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> class log files.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Assign one of the <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> enumeration values to the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> property to specify which date to include in the names of its log files.  
-  
+Assign one of the <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> enumeration values to the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> property to specify which date to include in the names of its log files.  
+ 
  ]]></format>
     </remarks>
   </Docs>

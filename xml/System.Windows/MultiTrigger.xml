@@ -23,19 +23,19 @@
     <summary>Represents a trigger that applies property values or performs actions when a set of conditions are satisfied.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.MultiTrigger> enables you to set property values or start actions based on a collection of <xref:System.Windows.Condition>s. A condition is met when the value of the property (specified by the <xref:System.Windows.Condition.Property%2A> property of the <xref:System.Windows.Condition> class) of the element matches the specified <xref:System.Windows.Condition.Value%2A>. The comparison is a reference equality check. You can then use setters or the <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> properties to apply changes or start actions when all of the conditions are met.  
+<xref:System.Windows.MultiTrigger> enables you to set property values or start actions based on a collection of <xref:System.Windows.Condition>s. A condition is met when the value of the property (specified by the <xref:System.Windows.Condition.Property%2A> property of the <xref:System.Windows.Condition> class) of the element matches the specified <xref:System.Windows.Condition.Value%2A>. The comparison is a reference equality check. You can then use setters or the <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> properties to apply changes or start actions when all of the conditions are met.  
+ 
+The <xref:System.Windows.MultiTrigger.Setters%2A> property of a <xref:System.Windows.MultiTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ 
   
- The <xref:System.Windows.MultiTrigger.Setters%2A> property of a <xref:System.Windows.MultiTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
-  
-   
-  
+ 
 ## Examples  
- The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
-  
- [!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
-  
+The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
+ 
+[!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,36 +77,36 @@
         <value>The default is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlPropertyElementUsage_Conditions"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-  <object.Conditions>  
-    ZeroOrMoreConditions  
-  </object.Conditions>  
+ <object.Conditions>  
+   ZeroOrMoreConditions  
+ </object.Conditions>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_Conditions"></a>   
 ## XAML Values  
- *ZeroOrMoreConditions*  
- Zero or more <xref:System.Windows.Condition> objects.  
+*ZeroOrMoreConditions*  
+Zero or more <xref:System.Windows.Condition> objects.  
+ 
+<xref:System.Windows.MultiTrigger> enables you to set property values or start actions based on a collection of <xref:System.Windows.Condition> objects. A condition is met when the value of the property (specified by the <xref:System.Windows.Condition.Property%2A> property of the <xref:System.Windows.Condition> class) of the element matches the specified <xref:System.Windows.Condition.Value%2A>. The comparison that is performed is a reference equality check. The <xref:System.Windows.MultiTrigger> applies the associated setters or actions when all of the conditions are true (binary and operation).  
+ 
+Note that for <xref:System.Windows.MultiTrigger>s, each condition in the collection must set both the <xref:System.Windows.Condition.Property%2A> and <xref:System.Windows.Condition.Value%2A> properties. See the <xref:System.Windows.Condition> page for more information.  
+ 
   
- <xref:System.Windows.MultiTrigger> enables you to set property values or start actions based on a collection of <xref:System.Windows.Condition> objects. A condition is met when the value of the property (specified by the <xref:System.Windows.Condition.Property%2A> property of the <xref:System.Windows.Condition> class) of the element matches the specified <xref:System.Windows.Condition.Value%2A>. The comparison that is performed is a reference equality check. The <xref:System.Windows.MultiTrigger> applies the associated setters or actions when all of the conditions are true (binary and operation).  
-  
- Note that for <xref:System.Windows.MultiTrigger>s, each condition in the collection must set both the <xref:System.Windows.Condition.Property%2A> and <xref:System.Windows.Condition.Value%2A> properties. See the <xref:System.Windows.Condition> page for more information.  
-  
-   
-  
+ 
 ## Examples  
- The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
-  
- [!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
-  
+The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
+ 
+[!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,38 +133,38 @@
         <value>The default value is null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlPropertyElementUsage_Setters"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
-  <object.Setters>  
-    ZeroOrMoreSetters  
-  </object.Setters>  
+ <object.Setters>  
+   ZeroOrMoreSetters  
+ </object.Setters>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_Setters"></a>   
 ## XAML Values  
- *ZeroOrMoreSetters*  
- Zero or more <xref:System.Windows.Setter> objects. <xref:System.Windows.EventSetter> objects are not supported.  
+*ZeroOrMoreSetters*  
+Zero or more <xref:System.Windows.Setter> objects. <xref:System.Windows.EventSetter> objects are not supported.  
+ 
+<xref:System.Windows.MultiTrigger> enables you to start actions or set property values using <xref:System.Windows.Setter> objects when a set of conditions have been met.  
+ 
+If there are two <xref:System.Windows.Setter> objects in the same or different setter collections setting the same property, the Setter that is declared last is used.  
+ 
+Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ 
   
- <xref:System.Windows.MultiTrigger> enables you to start actions or set property values using <xref:System.Windows.Setter> objects when a set of conditions have been met.  
-  
- If there are two <xref:System.Windows.Setter> objects in the same or different setter collections setting the same property, the Setter that is declared last is used.  
-  
- Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
-  
-   
-  
+ 
 ## Examples  
- The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property. As mentioned above, adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. Therefore, in the following example, `<MultiTrigger.Setters>` is implicit.  
-  
- [!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
-  
+The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property. As mentioned above, adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. Therefore, in the following example, `<MultiTrigger.Setters>` is implicit.  
+ 
+[!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <summary>Adds a child object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.MultiTrigger> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.MultiTrigger> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <summary>Adds the text content of a node to the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.MultiTrigger> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.MultiTrigger> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,35 +23,35 @@
     <summary>Serves as base class for classes that enable you to customize how ASP.NET routing processes a request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can customize how ASP.NET routing handles requests by mapping a file name extension to a particular routing handler instead of by using the <xref:System.Web.Routing.UrlRoutingModule> class as the routing handler for every request.  
-  
- To customize how ASP.NET routing handles a request for a URL with a specific file name extension, you create a class that derives from the <xref:System.Web.Routing.UrlRoutingHandler> class. For example, you can create a customized routing handler that processes requests for a file that has the extension `.abc`.  
-  
- To register a customized handler for a particular file name extension, you must add that handler in the Web.config file. The following example shows how to register a customized handler for an ASP.NET Web site that is running in IIS 6.0 or [!INCLUDE[iisver](~/includes/iisver-md.md)] in Classic mode.  
-  
+You can customize how ASP.NET routing handles requests by mapping a file name extension to a particular routing handler instead of by using the <xref:System.Web.Routing.UrlRoutingModule> class as the routing handler for every request.  
+ 
+To customize how ASP.NET routing handles a request for a URL with a specific file name extension, you create a class that derives from the <xref:System.Web.Routing.UrlRoutingHandler> class. For example, you can create a customized routing handler that processes requests for a file that has the extension `.abc`.  
+ 
+To register a customized handler for a particular file name extension, you must add that handler in the Web.config file. The following example shows how to register a customized handler for an ASP.NET Web site that is running in IIS 6.0 or [!INCLUDE[iisver](~/includes/iisver-md.md)] in Classic mode.  
+ 
 ```  
 <system.web>  
-  <httpHandlers>  
-    <add verb="*" path="*.abc"   
-        type="Contoso.Routing.CustomRoutingHandler" />  
-  </httpHandlers>  
+ <httpHandlers>  
+   <add verb="*" path="*.abc"   
+       type="Contoso.Routing.CustomRoutingHandler" />  
+ </httpHandlers>  
 </system.web>  
 ```  
-  
- The following example shows how to register the same handler for an ASP.NET Web site that is running in [!INCLUDE[iisver](~/includes/iisver-md.md)].  
-  
+ 
+The following example shows how to register the same handler for an ASP.NET Web site that is running in [!INCLUDE[iisver](~/includes/iisver-md.md)].  
+ 
 ```  
 <system.webServer>  
-  <handlers>  
-    <add verb="*" path="*.abc"  
-        type="Contoso.Routing.CustomRoutingHandler"   
-        resourceType="Unspecified" />  
-  </handlers>  
+ <handlers>  
+   <add verb="*" path="*.abc"  
+       type="Contoso.Routing.CustomRoutingHandler"   
+       resourceType="Unspecified" />  
+ </handlers>  
 </system.webServer>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -170,10 +170,10 @@
         <value>Always <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingHandler> instance is cast to an <xref:System.Web.IHttpHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingHandler> instance is cast to an <xref:System.Web.IHttpHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <summary>Processes an HTTP request that matches a route.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingHandler> instance is cast to an <xref:System.Web.IHttpHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingHandler> instance is cast to an <xref:System.Web.IHttpHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

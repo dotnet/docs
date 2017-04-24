@@ -19,43 +19,43 @@
     <summary>Represents a collection of <see cref="T:System.Web.Configuration.Compiler" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.CompilerCollection> does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the <xref:System.Web.Configuration.Compiler> objects it contains.  
+The <xref:System.Web.Configuration.CompilerCollection> does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the <xref:System.Web.Configuration.Compiler> objects it contains.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following configuration file example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.CompilerCollection> class.  
-  
+The following configuration file example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.CompilerCollection> class.  
+ 
 ```  
 <system.web>  
-  <compilation   
-    tempDirectory=""   
-    debug="False"   
-    strict="False"   
-    explicit="True"   
-    batch="True"   
-    batchTimeout="900"   
-    maxBatchSize="1000"   
-    maxBatchGeneratedFileSize="1000"   
-    numRecompilesBeforeAppRestart="15"   
-    defaultLanguage="vb"   
-    urlLinePragmas="False">  
-    <compilers>  
-      <compiler   
-        compilerOptions=""  
-        extension=".vbs"  
-        language="VB;VBScript"  
-        type="Microsoft.VisualBasic.VBCodeProvider,system,   
-          Version=1.0.5000.0, Culture=neutral,   
-          PublicKeyToken=b77a5c561934e089"  
-        warningLevel="1"/>  
-    </compilers>  
-  </compilation>  
+ <compilation   
+   tempDirectory=""   
+   debug="False"   
+   strict="False"   
+   explicit="True"   
+   batch="True"   
+   batchTimeout="900"   
+   maxBatchSize="1000"   
+   maxBatchGeneratedFileSize="1000"   
+   numRecompilesBeforeAppRestart="15"   
+   defaultLanguage="vb"   
+   urlLinePragmas="False">  
+   <compilers>  
+     <compiler   
+       compilerOptions=""  
+       extension=".vbs"  
+       language="VB;VBScript"  
+       type="Microsoft.VisualBasic.VBCodeProvider,system,   
+         Version=1.0.5000.0, Culture=neutral,   
+         PublicKeyToken=b77a5c561934e089"  
+       warningLevel="1"/>  
+   </compilers>  
+ </compilation>  
 </system.web>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,10 +92,10 @@
         <value>The <see langword="string" /> array containing the collection keys.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this array to access the <xref:System.Web.Configuration.Compiler> objects contained in the collection.  
-  
+You can use this array to access the <xref:System.Web.Configuration.Compiler> objects contained in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,10 +264,10 @@
         <value>A <see cref="T:System.Web.Configuration.Compiler" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the compiler object does not exist in the collection, an out-of-range exception is thrown.  
-  
+If the compiler object does not exist in the collection, an out-of-range exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,10 +293,10 @@
         <value>A <see cref="T:System.Web.Configuration.Compiler" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Provides a semicolon-separated list of language names supported by the language provider.  
-  
+Provides a semicolon-separated list of language names supported by the language provider.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>The exception that is thrown when a binding system or another schema representation system for XAML reports an exception to the schema context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.XamlSchemaException> is thrown by several cases in the CLR binding support classes that provide the schema context for .NET Framework XAML Services (<xref:System.Xaml.XamlXmlReader>, <xref:System.Xaml.XamlObjectWriter>, or <xref:System.Xaml.XamlServices>). A <xref:System.Xaml.XamlSchemaException> is typically passed as the inner exception for other exceptions, such as the <xref:System.Xaml.XamlMember.IsUnknown%2A?displayProperty=fullName>-true property for a <xref:System.Xaml.XamlObjectWriterException>, so it should be uncommon to catch a <xref:System.Xaml.XamlSchemaException> directly unless you are implementing a component such as a specialized object writer.  
-  
+The <xref:System.Xaml.XamlSchemaException> is thrown by several cases in the CLR binding support classes that provide the schema context for .NET Framework XAML Services (<xref:System.Xaml.XamlXmlReader>, <xref:System.Xaml.XamlObjectWriter>, or <xref:System.Xaml.XamlServices>). A <xref:System.Xaml.XamlSchemaException> is typically passed as the inner exception for other exceptions, such as the <xref:System.Xaml.XamlMember.IsUnknown%2A?displayProperty=fullName>-true property for a <xref:System.Xaml.XamlObjectWriterException>, so it should be uncommon to catch a <xref:System.Xaml.XamlSchemaException> directly unless you are implementing a component such as a specialized object writer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,10 +94,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

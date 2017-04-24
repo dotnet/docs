@@ -14,22 +14,22 @@
     <summary>Represents the style for the <see cref="T:System.Web.UI.WebControls.Table" /> control and some Web Parts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TableStyle> class is used to represent the style for a table control. It encapsulates the properties that control the appearance of a table and can be applied to multiple table controls to provide a common appearance.  
-  
- You can specify an image to display in the background of the table by setting the <xref:System.Web.UI.WebControls.TableStyle.BackImageUrl%2A> property. The amount of spacing between the cells of a table is controlled by the <xref:System.Web.UI.WebControls.TableStyle.CellSpacing%2A> property. The spacing between the contents of a cell and the cell border is specified using the <xref:System.Web.UI.WebControls.TableStyle.CellPadding%2A> property. You can specify whether cell borders are displayed by setting the <xref:System.Web.UI.WebControls.TableStyle.GridLines%2A> property. The horizontal alignment of the table in relation to other elements on the Web Forms page is indicated by the <xref:System.Web.UI.WebControls.TableStyle.HorizontalAlign%2A> property.  
-  
+The <xref:System.Web.UI.WebControls.TableStyle> class is used to represent the style for a table control. It encapsulates the properties that control the appearance of a table and can be applied to multiple table controls to provide a common appearance.  
+ 
+You can specify an image to display in the background of the table by setting the <xref:System.Web.UI.WebControls.TableStyle.BackImageUrl%2A> property. The amount of spacing between the cells of a table is controlled by the <xref:System.Web.UI.WebControls.TableStyle.CellSpacing%2A> property. The spacing between the contents of a cell and the cell border is specified using the <xref:System.Web.UI.WebControls.TableStyle.CellPadding%2A> property. You can specify whether cell borders are displayed by setting the <xref:System.Web.UI.WebControls.TableStyle.GridLines%2A> property. The horizontal alignment of the table in relation to other elements on the Web Forms page is indicated by the <xref:System.Web.UI.WebControls.TableStyle.HorizontalAlign%2A> property.  
+ 
 > [!NOTE]
 >  This class is primarily used by control developers.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Web.UI.WebControls.TableStyle> object and then uses the <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method to apply it to a generated <xref:System.Web.UI.WebControls.Table> object.  
-  
+The following example creates a <xref:System.Web.UI.WebControls.TableStyle> object and then uses the <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method to apply it to a generated <xref:System.Web.UI.WebControls.Table> object.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Web.UI.WebControls.TableStyle#1](System.Web.UI.WebControls.TableStyle#1)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableStyle" /> class using default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TableStyle> class using default values.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TableStyle> class using default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableStyle" /> class with the specified state bag information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TableStyle> class using the specified <xref:System.Web.UI.StateBag?displayProperty=fullName>.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TableStyle> class using the specified <xref:System.Web.UI.StateBag?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <summary>Adds information about the background image, cell spacing, cell padding, gridlines, and alignment to the list of attributes to render.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is primarily used by control developers.  
-  
+This method is primarily used by control developers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,15 +139,15 @@
         <value>The URL of an image to display in the background of a table control. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TableStyle.BackImageUrl%2A> property to specify the URL of an image to display in the background of the table control.  
-  
+Use the <xref:System.Web.UI.WebControls.TableStyle.BackImageUrl%2A> property to specify the URL of an image to display in the background of the table control.  
+ 
 > [!NOTE]
 >  The image will be tiled if it is smaller than the table. Similarly, the image is cropped if it is larger than the table.  
-  
- The value of this property is stored in view state.  
-  
+ 
+The value of this property is stored in view state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The URL of the background image was set to <see langword="null" />.</exception>
@@ -178,16 +178,16 @@
         <value>The distance (in pixels) between the contents of a cell and the cell's border. The default is <see langword="-1" />, which indicates that this property is not set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TableStyle.CellPadding%2A> property to control the spacing between the contents of a cell and the cell's border. The padding amount specified is added to all four sides of a cell.  
-  
- All cells in the same column of a data listing control share the same cell width. Therefore, if the content of one cell is longer than the content of other cells in the same column, the padding amount is applied to the widest cell. All other cells in the column are also set with this cell width.  
-  
- Similarly, all cells in the same row share the same height. The padding amount is applied to the height of the tallest cell in the row. All other cells in the same row are set with this cell height. Individual cell sizes cannot be specified.  
-  
- The value of this property is stored in view state.  
-  
+Use the <xref:System.Web.UI.WebControls.TableStyle.CellPadding%2A> property to control the spacing between the contents of a cell and the cell's border. The padding amount specified is added to all four sides of a cell.  
+ 
+All cells in the same column of a data listing control share the same cell width. Therefore, if the content of one cell is longer than the content of other cells in the same column, the padding amount is applied to the widest cell. All other cells in the column are also set with this cell width.  
+ 
+Similarly, all cells in the same row share the same height. The padding amount is applied to the height of the tallest cell in the row. All other cells in the same row are set with this cell height. Individual cell sizes cannot be specified.  
+ 
+The value of this property is stored in view state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified distance is set to a value less than <see langword="-1" />.</exception>
@@ -218,15 +218,15 @@
         <value>The distance (in pixels) between table cells. The default is <see langword="-1" />, which indicates that this property is not set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TableStyle.CellSpacing%2A> property to control the spacing between adjacent cells in a data listing control. This spacing is applied both vertically and horizontally. The cell spacing is uniform for the entire data list control. Individual cell spacing between each row or column cannot be specified.  
-  
+Use the <xref:System.Web.UI.WebControls.TableStyle.CellSpacing%2A> property to control the spacing between adjacent cells in a data listing control. This spacing is applied both vertically and horizontally. The cell spacing is uniform for the entire data list control. Individual cell spacing between each row or column cannot be specified.  
+ 
 > [!NOTE]
 >  If you set this property to a value greater than `0` and set the <xref:System.Web.UI.WebControls.TableStyle.GridLines%2A> property to a value that displays the cell borders, a gap is displayed between the borders of adjacent cells. In this situation, the <xref:System.Web.UI.WebControls.TableStyle.CellSpacing%2A> property controls the size of the gap.  
-  
- The value of this property is stored in view state.  
-  
+ 
+The value of this property is stored in view state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified distance is set to a value less than <see langword="-1" />.</exception>
@@ -275,10 +275,10 @@
         <summary>Adds the style properties of the <see cref="T:System.Web.UI.WebControls.TableStyle" /> object to the specified <see cref="T:System.Web.UI.CssStyleCollection" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TableStyle.FillStyleAttributes%2A> method to add the style properties of the <xref:System.Web.UI.WebControls.TableStyle> object to the specified <xref:System.Web.UI.CssStyleCollection?displayProperty=fullName> collection.  
-  
+Use the <xref:System.Web.UI.WebControls.TableStyle.FillStyleAttributes%2A> method to add the style properties of the <xref:System.Web.UI.WebControls.TableStyle> object to the specified <xref:System.Web.UI.CssStyleCollection?displayProperty=fullName> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,19 +308,19 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.GridLines" /> enumeration values. The default is <see langword="Both" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TableStyle.GridLines%2A> property to specify whether the border between the cells of the data list control is displayed. This property is set with one of the <xref:System.Web.UI.WebControls.GridLines> enumeration values. The following table lists the possible values.  
-  
+Use the <xref:System.Web.UI.WebControls.TableStyle.GridLines%2A> property to specify whether the border between the cells of the data list control is displayed. This property is set with one of the <xref:System.Web.UI.WebControls.GridLines> enumeration values. The following table lists the possible values.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |<xref:System.Web.UI.WebControls.GridLines>|No cell border is displayed.|  
 |<xref:System.Web.UI.WebControls.GridLines>|Only the upper and lower borders of the cells in the data list control are displayed.|  
 |<xref:System.Web.UI.WebControls.GridLines>|Only the left and right borders of the cells in the data list control are displayed.|  
 |<xref:System.Web.UI.WebControls.GridLines>|All borders of the cells in the data list control are displayed.|  
-  
- The value of this property is stored in view state.  
-  
+ 
+The value of this property is stored in view state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.GridLines" /> enumeration values.</exception>
@@ -351,19 +351,19 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> enumeration values. The default is <see langword="NotSet" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TableStyle.HorizontalAlign%2A> property to specify the horizontal alignment of the data list control within its container. This property is set with one of the <xref:System.Web.UI.WebControls.HorizontalAlign> enumeration values. The following table lists the possible values.  
-  
+Use the <xref:System.Web.UI.WebControls.TableStyle.HorizontalAlign%2A> property to specify the horizontal alignment of the data list control within its container. This property is set with one of the <xref:System.Web.UI.WebControls.HorizontalAlign> enumeration values. The following table lists the possible values.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |<xref:System.Web.UI.WebControls.HorizontalAlign>|The horizontal alignment is not set.|  
 |<xref:System.Web.UI.WebControls.HorizontalAlign>|The table is left justified within its container.|  
 |<xref:System.Web.UI.WebControls.HorizontalAlign>|The table is centered within its container.|  
 |<xref:System.Web.UI.WebControls.HorizontalAlign>|The table is right justified within its container.|  
-  
- The value of this property is stored in view state.  
-  
+ 
+The value of this property is stored in view state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified horizontal alignment is not one of the <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> enumeration values.</exception>
@@ -407,10 +407,10 @@
         <summary>Clears any defined style elements of the style.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Clears any defined style elements, and leaves the style in the default state.  
-  
+Clears any defined style elements, and leaves the style in the default state.  
+ 
  ]]></format>
         </remarks>
       </Docs>

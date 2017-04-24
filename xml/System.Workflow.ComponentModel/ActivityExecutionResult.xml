@@ -18,14 +18,14 @@
     <summary>Enumeration of activity result values that qualifies the state of an <see cref="T:System.Workflow.ComponentModel.Activity" /> that has an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of <see langword="Closed" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Result represents the final status of an <xref:System.Workflow.ComponentModel.Activity> instance within a workflow instance. The values of the enumeration are based upon the activity state diagram that is determined by the activity-engine contract. Values other than None are allowed only for an activity whose <xref:System.Workflow.ComponentModel.ActivityExecutionStatus> is <xref:System.Workflow.ComponentModel.ActivityExecutionStatus>.  
-  
+ 
+Result represents the final status of an <xref:System.Workflow.ComponentModel.Activity> instance within a workflow instance. The values of the enumeration are based upon the activity state diagram that is determined by the activity-engine contract. Values other than None are allowed only for an activity whose <xref:System.Workflow.ComponentModel.ActivityExecutionStatus> is <xref:System.Workflow.ComponentModel.ActivityExecutionStatus>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

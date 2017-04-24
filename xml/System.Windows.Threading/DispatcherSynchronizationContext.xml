@@ -14,10 +14,10 @@
     <summary>Provides a synchronization context for [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.Threading.Dispatcher> is not specified at the creation of the <xref:System.Windows.Threading.DispatcherSynchronizationContext> instance, the current <xref:System.Windows.Threading.Dispatcher> is associated with the <xref:System.Windows.Threading.DispatcherSynchronizationContext>.  
-  
+If a <xref:System.Windows.Threading.Dispatcher> is not specified at the creation of the <xref:System.Windows.Threading.DispatcherSynchronizationContext> instance, the current <xref:System.Windows.Threading.Dispatcher> is associated with the <xref:System.Windows.Threading.DispatcherSynchronizationContext>.  
+ 
 <a name="xamlTextUsage_DispatcherSynchronizationContext"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -120,12 +120,12 @@
         <summary>Invokes the callback in the synchronization context asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The delegate is put in the dispatcher queue at a priority of <xref:System.Windows.Threading.DispatcherPriority>.  
-  
- <xref:System.Windows.Threading.DispatcherSynchronizationContext.Post%2A> starts an asynchronous request to post a message.  
-  
+The delegate is put in the dispatcher queue at a priority of <xref:System.Windows.Threading.DispatcherPriority>.  
+ 
+<xref:System.Windows.Threading.DispatcherSynchronizationContext.Post%2A> starts an asynchronous request to post a message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -154,10 +154,10 @@
         <summary>Invokes the callback in the synchronization context synchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The delegate is put in the dispatcher queue at a priority of <xref:System.Windows.Threading.DispatcherPriority>.  
-  
+The delegate is put in the dispatcher queue at a priority of <xref:System.Windows.Threading.DispatcherPriority>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

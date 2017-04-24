@@ -18,17 +18,17 @@
     <summary>Specifies what portion of the 3D scene is rendered by the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" /> or <see cref="T:System.Windows.Controls.Viewport3D" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Camera.Transform%2A> property enables the <xref:System.Windows.Media.Media3D.Camera> to be positioned, oriented, and animated independently of the camera's derived type.  
+The <xref:System.Windows.Media.Media3D.Camera.Transform%2A> property enables the <xref:System.Windows.Media.Media3D.Camera> to be positioned, oriented, and animated independently of the camera's derived type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following excerpt shows an instance of <xref:System.Windows.Media.Media3D.PerspectiveCamera>.  
-  
- [!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
-  
+The following excerpt shows an instance of <xref:System.Windows.Media.Media3D.PerspectiveCamera>.  
+ 
+[!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,12 +51,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,12 +79,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,18 +179,18 @@
         <value>Transform3D applied to the camera.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Camera.Transform%2A> property is applied before the view and projection transforms specified by the camera. The actual transform that is applied is the inverse of the specified <xref:System.Windows.Media.Media3D.Camera.Transform%2A> property, because transforming the camera is equivalent to transforming the world in the opposite direction.  
-  
+The <xref:System.Windows.Media.Media3D.Camera.Transform%2A> property is applied before the view and projection transforms specified by the camera. The actual transform that is applied is the inverse of the specified <xref:System.Windows.Media.Media3D.Camera.Transform%2A> property, because transforming the camera is equivalent to transforming the world in the opposite direction.  
+ 
 <a name="dependencyPropertyInfo_Clone"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.Camera.TransformProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,17 +211,17 @@
         <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.Camera.Transform" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_TransformProperty"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier Field|<xref:System.Windows.Media.Media3D.Camera.TransformProperty>|  
 |Metadata Flags|<xref:System.Windows.FrameworkPropertyMetadataOptions>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

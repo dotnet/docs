@@ -13,18 +13,18 @@
     <summary>Specifies the order in which trace messages are displayed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration defines the values you can use when setting the <xref:System.Web.Configuration.TraceSection.TraceMode%2A> property.  
+This enumeration defines the values you can use when setting the <xref:System.Web.Configuration.TraceSection.TraceMode%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.TraceSection.TraceMode%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TraceSection> class.  
-  
- [!code-csharp[System.Web.Configuration.TraceSection2#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TraceSection2/CS/tracesection.cs#8)]
- [!code-vb[System.Web.Configuration.TraceSection2#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TraceSection2/VB/tracesection.vb#8)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.TraceSection.TraceMode%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TraceSection> class.  
+ 
+[!code-csharp[System.Web.Configuration.TraceSection2#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TraceSection2/CS/tracesection.cs#8)]
+[!code-vb[System.Web.Configuration.TraceSection2#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TraceSection2/VB/tracesection.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

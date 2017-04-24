@@ -14,12 +14,12 @@
     <summary>Provides a type converter that retrieves a list of control IDs in the current container.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter> class derives from the <xref:System.ComponentModel.StringConverter> class. It provides a list of control IDs to be displayed in a property-editing control in design-time environments.  
-  
- For more information about type converters, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) and [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada).  
-  
+The <xref:System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter> class derives from the <xref:System.ComponentModel.StringConverter> class. It provides a list of control IDs to be displayed in a property-editing control in design-time environments.  
+ 
+For more information about type converters, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) and [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,12 +38,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -20,12 +20,12 @@
     <summary>A base type for handlers which only do some small processing of request and/or response messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The actual creation of response messages is delegated to an inner handler. The <xref:System.Net.Http.MessageProcessingHandler> is useful if the handler doesn't require asynchronous operations, because operations on request and response messages are fast.  
-  
- The most common usage is to derive from this class and override the <xref:System.Net.Http.MessageProcessingHandler.ProcessRequest%2A> and  <xref:System.Net.Http.MessageProcessingHandler.ProcessResponse%2A> methods.  
-  
+The actual creation of response messages is delegated to an inner handler. The <xref:System.Net.Http.MessageProcessingHandler> is useful if the handler doesn't require asynchronous operations, because operations on request and response messages are fast.  
+ 
+The most common usage is to derive from this class and override the <xref:System.Net.Http.MessageProcessingHandler.ProcessRequest%2A> and  <xref:System.Net.Http.MessageProcessingHandler.ProcessResponse%2A> methods.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -104,10 +104,10 @@
         <returns>The HTTP request message that was processed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An application would override this method to implement custom processing of the HTTP request message before it is sent to the server.  
-  
+An application would override this method to implement custom processing of the HTTP request message before it is sent to the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <returns>The HTTP response message that was processed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An application would override this method to implement custom processing of the HTTP response message after it is received from the server.  
-  
+An application would override this method to implement custom processing of the HTTP response message after it is received from the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation does not block. This overridable implementation of <xref:System.Net.Http.MessageProcessingHandler.SendAsync%2A> method forwards the HTTP request to the inner handler to send to the server as an asynchronous operation.  
-  
+This operation does not block. This overridable implementation of <xref:System.Net.Http.MessageProcessingHandler.SendAsync%2A> method forwards the HTTP request to the inner handler to send to the server as an asynchronous operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>

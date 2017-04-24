@@ -14,10 +14,10 @@
     <summary>Uses Windows authentication to authenticate the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> security token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator> class to authenticate security tokens that derive from <xref:System.IdentityModel.Tokens.WindowsSecurityToken>.  
-  
+Use the <xref:System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator> class to authenticate security tokens that derive from <xref:System.IdentityModel.Tokens.WindowsSecurityToken>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the user is authenticated, claims that identify the Windows groups that a user belongs to are initially added to the <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A> property and eventually to the <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> property.  
-  
+When the user is authenticated, claims that identify the Windows groups that a user belongs to are initially added to the <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A> property and eventually to the <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,10 +85,10 @@
           <see langword="true" /> when <paramref name="token" /> is a <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> security token; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator.CanValidateTokenCore%2A> method does not authenticate the security token; that is performed by the <xref:System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator.ValidateTokenCore%2A> method.  
-  
+The <xref:System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator.CanValidateTokenCore%2A> method does not authenticate the security token; that is performed by the <xref:System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator.ValidateTokenCore%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

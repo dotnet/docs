@@ -43,10 +43,10 @@
         <returns>Returns the new item element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This convenience method picks a location in the MSBuild DOM based on a heuristic.  
-  
+This convenience method picks a location in the MSBuild DOM based on a heuristic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,10 +76,10 @@
         <returns>Returns the new item element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Metadata` parameter may be null, which indicates no metadata is present.  
-  
+The `Metadata` parameter may be null, which indicates no metadata is present.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <value>Returns all child items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection can be modified during enumeration.  
-  
+The collection can be modified during enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

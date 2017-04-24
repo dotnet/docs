@@ -19,14 +19,14 @@
     <summary>Associates an action taken on an activity designer on the workflow design surface with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A designer action is a user action that is performed when you activate a designer glyph on the workflow design surface. The <xref:System.Workflow.ComponentModel.Design.DesignerAction> class is used to indicate your actions. The <xref:System.Workflow.ComponentModel.Design.DesignerAction> class is also used to add the task items by the adornment service.  
-  
+ 
+A designer action is a user action that is performed when you activate a designer glyph on the workflow design surface. The <xref:System.Workflow.ComponentModel.Design.DesignerAction> class is used to indicate your actions. The <xref:System.Workflow.ComponentModel.Design.DesignerAction> class is also used to add the task items by the adornment service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -138,10 +138,10 @@
         <summary>Invokes the <see cref="M:System.Workflow.ComponentModel.Design.ActivityDesigner.OnExecuteDesignerAction(System.Workflow.ComponentModel.Design.DesignerAction)" /> method of the activity designer associated with the current designer action.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnExecuteDesignerAction%2A> method is called when you click a validation error displayed by the activity designer on the workflow design surface.  
-  
+The <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnExecuteDesignerAction%2A> method is called when you click a validation error displayed by the activity designer on the workflow design surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
         <value>A <see cref="T:System.String" /> that contains the name of the property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the property editor, the property that corresponds to the <xref:System.Workflow.ComponentModel.Design.DesignerAction.PropertyName%2A> of the <xref:System.Workflow.ComponentModel.Design.DesignerAction> provides a visual cue that signals the presence of an associated <xref:System.Workflow.ComponentModel.Design.DesignerAction>.  
-  
+In the property editor, the property that corresponds to the <xref:System.Workflow.ComponentModel.Design.DesignerAction.PropertyName%2A> of the <xref:System.Workflow.ComponentModel.Design.DesignerAction> provides a visual cue that signals the presence of an associated <xref:System.Workflow.ComponentModel.Design.DesignerAction>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

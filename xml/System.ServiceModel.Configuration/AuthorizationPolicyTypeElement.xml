@@ -14,10 +14,10 @@
     <summary>Contains a configuration element that specifies an authorization policy, which enables transformation of one set of input claims into another set of claims. Access control can be granted or denied based on that. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The access control model supports provisioning a set of authorization policies as types. This element configures a set of authorization policy implementations, which enable transformation of one set of input claims into another set of claims. A set of claims is then operated on and an access control decision is reached after the authorization policy transformation phase.  
-  
+The access control model supports provisioning a set of authorization policies as types. This element configures a set of authorization policy implementations, which enable transformation of one set of input claims into another set of claims. A set of claims is then operated on and an access control decision is reached after the authorization policy transformation phase.  
+ 
  ]]></format>
     </remarks>
   </Docs>

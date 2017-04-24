@@ -19,12 +19,12 @@
     <summary>Represents the format to view an email message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Net.Mail.AlternateView> class to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content.  
-  
- This class has two properties <xref:System.Net.Mail.AlternateView.LinkedResources%2A> and <xref:System.Net.Mail.AlternateView.BaseUri%2A> that are used to resolve URLs within the content of the email. <xref:System.Net.Mail.AlternateView.LinkedResources%2A> is a collection of <xref:System.Net.Mail.LinkedResource> objects. When rendered, URLs within the e-mail's content are first matched against the URLs in the <xref:System.Net.Mail.LinkedResource.ContentLink%2A> of each <xref:System.Net.Mail.LinkedResource> object in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection, and resolved. <xref:System.Net.Mail.AlternateView.BaseUri%2A> is used by the mail reader to resolve relative URLs within the body, and also to resolve relative <xref:System.Net.Mail.LinkedResource.ContentLink%2A> URLs, in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection.  
-  
+Use the <xref:System.Net.Mail.AlternateView> class to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content.  
+ 
+This class has two properties <xref:System.Net.Mail.AlternateView.LinkedResources%2A> and <xref:System.Net.Mail.AlternateView.BaseUri%2A> that are used to resolve URLs within the content of the email. <xref:System.Net.Mail.AlternateView.LinkedResources%2A> is a collection of <xref:System.Net.Mail.LinkedResource> objects. When rendered, URLs within the e-mail's content are first matched against the URLs in the <xref:System.Net.Mail.LinkedResource.ContentLink%2A> of each <xref:System.Net.Mail.LinkedResource> object in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection, and resolved. <xref:System.Net.Mail.AlternateView.BaseUri%2A> is used by the mail reader to resolve relative URLs within the body, and also to resolve relative <xref:System.Net.Mail.LinkedResource.ContentLink%2A> URLs, in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
-  
+A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -83,10 +83,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified file name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
-  
+A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -120,10 +120,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified <see cref="T:System.IO.Stream" /> and <see cref="T:System.Net.Mime.ContentType" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
-  
+A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -156,10 +156,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified <see cref="T:System.IO.Stream" /> and media type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
-  
+A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -192,10 +192,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified file name and content type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
-  
+A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -231,10 +231,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified file name and media type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
-  
+A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -297,10 +297,10 @@
         <returns>An <see cref="T:System.Net.Mail.AlternateView" /> object that represents an alternate view of an email message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default media type is plain text and the default encoding is ASCII.  
-  
+The default media type is plain text and the default encoding is ASCII.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -397,12 +397,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Mail.AlternateView" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Mail.AlternateView> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Mail.AlternateView> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -447,10 +447,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
-  
+A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>

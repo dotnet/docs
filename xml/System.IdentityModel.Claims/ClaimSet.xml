@@ -23,18 +23,18 @@
     <summary>Represents the collection of claims that are associated with an entity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After the <xref:System.IdentityModel.Claims.ClaimSet> class has been created, it cannot be changed.  
+After the <xref:System.IdentityModel.Claims.ClaimSet> class has been created, it cannot be changed.  
+ 
+Examining the content of a <xref:System.IdentityModel.Claims.ClaimSet> for particular types of claims is a common task when using claim-based authorization. To examine a <xref:System.IdentityModel.Claims.ClaimSet> for the presence of particular claims, use the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%2A> method. The method provides better performance than iterating directly over the <xref:System.IdentityModel.Claims.ClaimSet>.  
+ 
   
- Examining the content of a <xref:System.IdentityModel.Claims.ClaimSet> for particular types of claims is a common task when using claim-based authorization. To examine a <xref:System.IdentityModel.Claims.ClaimSet> for the presence of particular claims, use the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%2A> method. The method provides better performance than iterating directly over the <xref:System.IdentityModel.Claims.ClaimSet>.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[c_ClaimSet#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_claimset/cs/service.cs#1)]
- [!code-vb[c_ClaimSet#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claimset/vb/myauthorizationpolicy.vb#1)]  
-  
+[!code-csharp[c_ClaimSet#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_claimset/cs/service.cs#1)]
+[!code-vb[c_ClaimSet#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claimset/vb/myauthorizationpolicy.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Reserved for future use.  
-  
+Reserved for future use.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
           <see langword="true" /> if the specified claim is contained in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To find the specified claim, call the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method.  
-  
+To find the specified claim, call the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
           <see langword="true" /> if the specified claim is contained in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />; otherwise <see langword="false." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To find the specified claim, call the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method.  
-  
+To find the specified claim, call the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <value>The number of claims in this <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get an individual claim, use the <xref:System.IdentityModel.Claims.ClaimSet.Item%2A> property.  
-  
+To get an individual claim, use the <xref:System.IdentityModel.Claims.ClaimSet.Item%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,16 +171,16 @@
         <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that enables you to enumerate the claims that matches the specified criteria.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine if this <xref:System.IdentityModel.Claims.ClaimSet> contains the claim without returning the claim, call the <xref:System.IdentityModel.Claims.ClaimSet.ContainsClaim%2A> method.  
+To determine if this <xref:System.IdentityModel.Claims.ClaimSet> contains the claim without returning the claim, call the <xref:System.IdentityModel.Claims.ClaimSet.ContainsClaim%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[c_ClaimSet#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_claimset/cs/service.cs#2)]
- [!code-vb[c_ClaimSet#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claimset/vb/myauthorizationpolicy.vb#2)]  
-  
+[!code-csharp[c_ClaimSet#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_claimset/cs/service.cs#2)]
+[!code-vb[c_ClaimSet#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claimset/vb/myauthorizationpolicy.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,12 +203,12 @@
         <returns>A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to enumerate the <see cref="T:System.IdentityModel.Claims.Claim" /> object in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
+The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <value>The <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that issued this <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The issuer of the claim set that is returned by the <xref:System.IdentityModel.Claims.ClaimSet.System%2A> property is the <xref:System.IdentityModel.Claims.DefaultClaimSet>.  
-  
+The issuer of the claim set that is returned by the <xref:System.IdentityModel.Claims.ClaimSet.System%2A> property is the <xref:System.IdentityModel.Claims.DefaultClaimSet>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -277,12 +277,12 @@
         <value>The system <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type of <xref:System.IdentityModel.Claims.ClaimSet> object is typically used as the value of the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property for a <xref:System.IdentityModel.Claims.ClaimSet> that is issued by the current application.  
-  
- For example, after an application authenticates a username and password, it creates a <xref:System.IdentityModel.Claims.ClaimSet> that represents the user with the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property set to <xref:System.IdentityModel.Claims.ClaimSet.System%2A>.  
-  
+This type of <xref:System.IdentityModel.Claims.ClaimSet> object is typically used as the value of the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property for a <xref:System.IdentityModel.Claims.ClaimSet> that is issued by the current application.  
+ 
+For example, after an application authenticates a username and password, it creates a <xref:System.IdentityModel.Claims.ClaimSet> that represents the user with the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property set to <xref:System.IdentityModel.Claims.ClaimSet.System%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,12 +305,12 @@
         <returns>A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to enumerate the <see cref="T:System.IdentityModel.Claims.Claim" /> object in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
+The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,10 +332,10 @@
         <value>A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> that contains at least one claim of type <see cref="P:System.IdentityModel.Claims.ClaimTypes.Sid" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type of <xref:System.IdentityModel.Claims.ClaimSet> object is typically used as the value of the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property for a <xref:System.IdentityModel.Claims.ClaimSet> that is issued by the Windows. For example, after an application authenticates a username and password using Windows authentication, it creates the <xref:System.IdentityModel.Claims.ClaimSet> with the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property set to <xref:System.IdentityModel.Claims.ClaimSet.Windows%2A>.  
-  
+This type of <xref:System.IdentityModel.Claims.ClaimSet> object is typically used as the value of the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property for a <xref:System.IdentityModel.Claims.ClaimSet> that is issued by the Windows. For example, after an application authenticates a username and password using Windows authentication, it creates the <xref:System.IdentityModel.Claims.ClaimSet> with the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property set to <xref:System.IdentityModel.Claims.ClaimSet.Windows%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

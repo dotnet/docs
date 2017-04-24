@@ -18,20 +18,20 @@
     <summary>Represents the structure, or schema, of a data field.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DataSetFieldSchema> class to get the properties of a data field using a <xref:System.Data.DataColumn>. You can discover the structure of a data field by using the following properties in this class: <xref:System.Web.UI.Design.DataSetFieldSchema.DataType%2A>, <xref:System.Web.UI.Design.DataSetFieldSchema.IsReadOnly%2A>, <xref:System.Web.UI.Design.DataSetFieldSchema.Length%2A>, <xref:System.Web.UI.Design.DataSetFieldSchema.Name%2A>, and <xref:System.Web.UI.Design.DataSetFieldSchema.IsUnique%2A>. In addition, you can use the <xref:System.Web.UI.Design.DataSetFieldSchema.Identity%2A> property to determine if a data column is set for <xref:System.Data.DataColumn.AutoIncrement%2A>, or the <xref:System.Web.UI.Design.DataSetFieldSchema.PrimaryKey%2A> property to determine if a data column is in the primary key.  
-  
- The <xref:System.Web.UI.Design.DataSetFieldSchema> class is used by custom control designer components to provide information about a data field at design time.  
-  
- To examine the components of data using a <xref:System.Data.DataSet>, use the following classes.  
-  
+Use the <xref:System.Web.UI.Design.DataSetFieldSchema> class to get the properties of a data field using a <xref:System.Data.DataColumn>. You can discover the structure of a data field by using the following properties in this class: <xref:System.Web.UI.Design.DataSetFieldSchema.DataType%2A>, <xref:System.Web.UI.Design.DataSetFieldSchema.IsReadOnly%2A>, <xref:System.Web.UI.Design.DataSetFieldSchema.Length%2A>, <xref:System.Web.UI.Design.DataSetFieldSchema.Name%2A>, and <xref:System.Web.UI.Design.DataSetFieldSchema.IsUnique%2A>. In addition, you can use the <xref:System.Web.UI.Design.DataSetFieldSchema.Identity%2A> property to determine if a data column is set for <xref:System.Data.DataColumn.AutoIncrement%2A>, or the <xref:System.Web.UI.Design.DataSetFieldSchema.PrimaryKey%2A> property to determine if a data column is in the primary key.  
+ 
+The <xref:System.Web.UI.Design.DataSetFieldSchema> class is used by custom control designer components to provide information about a data field at design time.  
+ 
+To examine the components of data using a <xref:System.Data.DataSet>, use the following classes.  
+ 
 -   <xref:System.Web.UI.Design.DataSetSchema>  
-  
+ 
 -   <xref:System.Web.UI.Design.DataSetViewSchema>  
-  
+ 
 -   <xref:System.Web.UI.Design.DataSetFieldSchema>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DataSetFieldSchema" /> class using a specified <see cref="T:System.Data.DataColumn" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DataSetFieldSchema> class to examine the properties of a data field using a <xref:System.Data.DataColumn> object.  
-  
+Use the <xref:System.Web.UI.Design.DataSetFieldSchema> class to examine the properties of a data field using a <xref:System.Data.DataColumn> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
           <see langword="true" /> if the <see cref="P:System.Web.UI.Design.DataSetFieldSchema.DataType" /> is numeric and the value of the column increments automatically as new rows are added to the <see cref="T:System.Data.DataTable" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DataSetFieldSchema.Identity%2A> property corresponds to the <xref:System.Data.DataColumn.AutoIncrement%2A> property of a <xref:System.Data.DataColumn>.  
-  
+The <xref:System.Web.UI.Design.DataSetFieldSchema.Identity%2A> property corresponds to the <xref:System.Data.DataColumn.AutoIncrement%2A> property of a <xref:System.Data.DataColumn>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
           <see langword="true" /> if data in the data field is unique; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DataSetFieldSchema.IsUnique%2A> property corresponds to the <xref:System.Data.DataColumn.Unique%2A> property of a <xref:System.Data.DataColumn>.  
-  
+The <xref:System.Web.UI.Design.DataSetFieldSchema.IsUnique%2A> property corresponds to the <xref:System.Data.DataColumn.Unique%2A> property of a <xref:System.Data.DataColumn>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <value>The number of bytes the column can store.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DataSetFieldSchema.Length%2A> property corresponds to the <xref:System.Data.DataColumn.MaxLength%2A> property of a <xref:System.Data.DataColumn>.  
-  
+The <xref:System.Web.UI.Design.DataSetFieldSchema.Length%2A> property corresponds to the <xref:System.Data.DataColumn.MaxLength%2A> property of a <xref:System.Data.DataColumn>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,10 +192,10 @@
         <value>The name of the data field.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DataSetFieldSchema.Name%2A> property corresponds to the <xref:System.Data.DataColumn.ColumnName%2A> property of a <xref:System.Data.DataColumn>.  
-  
+The <xref:System.Web.UI.Design.DataSetFieldSchema.Name%2A> property corresponds to the <xref:System.Data.DataColumn.ColumnName%2A> property of a <xref:System.Data.DataColumn>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,10 +218,10 @@
           <see langword="true" /> if the data field can accept <see langword="null" /> values; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DataSetFieldSchema.Nullable%2A> property corresponds to the <xref:System.Data.DataColumn.AllowDBNull%2A> property of a <xref:System.Data.DataColumn>.  
-  
+The <xref:System.Web.UI.Design.DataSetFieldSchema.Nullable%2A> property corresponds to the <xref:System.Data.DataColumn.AllowDBNull%2A> property of a <xref:System.Data.DataColumn>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,10 +243,10 @@
         <value>This property always returns <see langword="-1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DataSetFieldSchema.Precision%2A> property is required by the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface, but is not used by the <xref:System.Web.UI.Design.DataSetFieldSchema> class.  
-  
+The <xref:System.Web.UI.Design.DataSetFieldSchema.Precision%2A> property is required by the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface, but is not used by the <xref:System.Web.UI.Design.DataSetFieldSchema> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <value>This property always returns -1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DataSetFieldSchema.Scale%2A> property is required by the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface, but is not used by the <xref:System.Web.UI.Design.DataSetFieldSchema> class.  
-  
+The <xref:System.Web.UI.Design.DataSetFieldSchema.Scale%2A> property is required by the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface, but is not used by the <xref:System.Web.UI.Design.DataSetFieldSchema> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

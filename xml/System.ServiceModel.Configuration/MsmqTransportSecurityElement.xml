@@ -52,10 +52,10 @@
         <value>The <see cref="T:System.ServiceModel.MsmqAuthenticationMode" /> that is associated with this instance of the <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing (MSMQ) can authenticate messages that are sent to message queues that require authentication, or messages can explicitly request authentication. The default authentication mode is <xref:System.ServiceModel.MsmqAuthenticationMode>.  
-  
+Message Queuing (MSMQ) can authenticate messages that are sent to message queues that require authentication, or messages can explicitly request authentication. The default authentication mode is <xref:System.ServiceModel.MsmqAuthenticationMode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <value>The <see cref="T:System.ServiceModel.MsmqEncryptionAlgorithm" /> that is associated with this instance of the <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing (MSMQ) can encrypt messages on the wire when transferring messages between message queue managers. The default encryption algorithm is <xref:System.ServiceModel.MsmqEncryptionAlgorithm>.  
-  
+Message Queuing (MSMQ) can encrypt messages on the wire when transferring messages between message queue managers. The default encryption algorithm is <xref:System.ServiceModel.MsmqEncryptionAlgorithm>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> that is associated with this instance of the <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default protection level is <xref:System.Net.Security.ProtectionLevel>.  
-  
+The default protection level is <xref:System.Net.Security.ProtectionLevel>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <value>The <see cref="T:System.ServiceModel.MsmqSecureHashAlgorithm" /> that is associated with this instance of the <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default hash algorithm is <xref:System.ServiceModel.MsmqSecureHashAlgorithm>.  
-  
+The default hash algorithm is <xref:System.ServiceModel.MsmqSecureHashAlgorithm>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

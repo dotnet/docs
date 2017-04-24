@@ -14,10 +14,10 @@
     <summary>Represents a link to a file that is displayed in a [!INCLUDE[win7](~/includes/win7-md.md)] taskbar Jump List.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Shell.JumpPath> is a reference to a file that can be opened from a [!INCLUDE[win7](~/includes/win7-md.md)] taskbar Jump List. If your application is not registered to handle the file type of the item, the file will not appear in the Jump List. For example, if you add a <xref:System.Windows.Shell.JumpPath> to a .txt file, your application must be registered to handle .txt files.  
-  
+A <xref:System.Windows.Shell.JumpPath> is a reference to a file that can be opened from a [!INCLUDE[win7](~/includes/win7-md.md)] taskbar Jump List. If your application is not registered to handle the file type of the item, the file will not appear in the Jump List. For example, if you add a <xref:System.Windows.Shell.JumpPath> to a .txt file, your application must be registered to handle .txt files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>The path to the file to be included in the Jump List.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application must be registered to handle the file name extension of the specified file; otherwise, the item is rejected. For example, if you add a <xref:System.Windows.Shell.JumpPath> to a .txt file, your application must be registered to handle .txt files.  
-  
+The application must be registered to handle the file name extension of the specified file; otherwise, the item is rejected. For example, if you add a <xref:System.Windows.Shell.JumpPath> to a .txt file, your application must be registered to handle .txt files.  
+ 
  ]]></format>
         </remarks>
       </Docs>

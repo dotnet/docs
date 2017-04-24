@@ -50,10 +50,10 @@
         <value>The expected result type for the function’s first result set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The result shape must be a collection of rows. The <xref:System.Data.Metadata.Edm.RowType.Properties%2A> within a row indicate the expected type for columns with the corresponding names. The result type does not constrain the order of columns.  
-  
+The result shape must be a collection of rows. The <xref:System.Data.Metadata.Edm.RowType.Properties%2A> within a row indicate the expected type for columns with the corresponding names. The result type does not constrain the order of columns.  
+ 
  ]]></format>
         </remarks>
       </Docs>

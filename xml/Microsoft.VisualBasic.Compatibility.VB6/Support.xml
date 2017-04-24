@@ -22,14 +22,14 @@
     <summary>Contains various utility functions for backward compatibility with Visual Basic 6.0.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The functions in this class are used during the upgrade of Visual Basic 6.0 projects to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. Some functions replace Visual Basic 6.0 functions that are no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]; others compensate for differences in the object models.  
-  
- To use functions in this class in a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project, add a reference to the `Microsoft.VisualBasic.Compatibility.VB6` namespace.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The functions in this class are used during the upgrade of Visual Basic 6.0 projects to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. Some functions replace Visual Basic 6.0 functions that are no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]; others compensate for differences in the object models.  
+ 
+To use functions in this class in a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project, add a reference to the `Microsoft.VisualBasic.Compatibility.VB6` namespace.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,14 +60,14 @@
         <returns>The array to copy.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `Variant` data type is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The `CopyArray` function is used by the upgrade tools to copy an `Array` to or from a `Variant` array.  
-  
- To copy an array in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the <xref:System.Array.Clone%2A>, <xref:System.Array.Copy%2A> or <xref:System.Array.CopyTo%2A> methods of the <xref:System.Array> class.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `Variant` data type is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The `CopyArray` function is used by the upgrade tools to copy an `Array` to or from a `Variant` array.  
+ 
+To copy an array in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the <xref:System.Array.Clone%2A>, <xref:System.Array.Copy%2A> or <xref:System.Array.CopyTo%2A> methods of the <xref:System.Array> class.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,14 +98,14 @@
         <returns>An <see cref="T:System.Object" /> that represents the OLE <see langword="IPicture" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the `MouseIcon` property of a form or control could be used to load a custom `MousePointer` (cursor). In some cases, the image for the `MouseIcon` was stored as a `stdOle``IPicture`; this function is used by the upgrade tool to convert a <xref:System.Windows.Forms.Cursor> to a `stdOle``IPicture`.  
-  
- To convert a <xref:System.Windows.Forms.Cursor> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the <xref:System.Windows.Forms.AxHost.GetIPictureFromCursor%2A> method of the <xref:System.Windows.Forms.AxHost> class.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the `MouseIcon` property of a form or control could be used to load a custom `MousePointer` (cursor). In some cases, the image for the `MouseIcon` was stored as a `stdOle``IPicture`; this function is used by the upgrade tool to convert a <xref:System.Windows.Forms.Cursor> to a `stdOle``IPicture`.  
+ 
+To convert a <xref:System.Windows.Forms.Cursor> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the <xref:System.Windows.Forms.AxHost.GetIPictureFromCursor%2A> method of the <xref:System.Windows.Forms.AxHost> class.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,21 +139,21 @@
           <see langword="true" /> if the two expressions are equal; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If either expression is `Null`, result is also `Null`. When neither expression is `Null`, result is determined according to the following table:  
-  
+If either expression is `Null`, result is also `Null`. When neither expression is `Null`, result is determined according to the following table:  
+ 
 |If expression1 is|And expression2 is|The result is|  
 |-----------------------|------------------------|-------------------|  
 |`true`|`true`|`true`|  
 |`true`|`false`|`false`|  
 |`false`|`true`|`false`|  
 |`false`|`false`|`true`|  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the Visual Basic language; use the equals (=) comparison operator in place of `Eqv` for logical evaluations.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the Visual Basic language; use the equals (=) comparison operator in place of `Eqv` for logical evaluations.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,21 +186,21 @@
         <returns>A <see cref="T:System.Byte" /> that contains the result of the bitwise comparison.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Eqv` operator performs a bitwise comparison of identically positioned bits in two numeric expressions and sets the corresponding bit according to the following table:  
-  
+The `Eqv` operator performs a bitwise comparison of identically positioned bits in two numeric expressions and sets the corresponding bit according to the following table:  
+ 
 |If bit in expression1 is|And bit in expression2 is|The result is|  
 |------------------------------|-------------------------------|-------------------|  
 |0|0|1|  
 |0|1|0|  
 |1|0|0|  
 |1|1|1|  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the Visual Basic language; for bitwise evaluations use the `Not` and `XOr` operators.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the Visual Basic language; for bitwise evaluations use the `Not` and `XOr` operators.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,12 +233,12 @@
         <returns>A <see cref="T:System.Int16" /> that contains the result of the comparison.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the Visual Basic language; for bitwise evaluations use the `Not` and `XOr` operators.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the Visual Basic language; for bitwise evaluations use the `Not` and `XOr` operators.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,12 +271,12 @@
         <returns>A <see cref="T:System.Int32" /> that contains the result of the comparison.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language; for bitwise evaluations use the `Not` and `XOr` operators.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language; for bitwise evaluations use the `Not` and `XOr` operators.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,12 +309,12 @@
         <returns>A <see cref="T:System.Int64" /> that contains the result of the comparison.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language; for bitwise evaluations use the `Not` and `XOr` operators.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language; for bitwise evaluations use the `Not` and `XOr` operators.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,12 +347,12 @@
         <returns>A <see cref="T:System.Object" /> that contains the result of the comparison.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language; for bitwise evaluations use the `Not` and `XOr` operators.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Eqv` operator is no longer a part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language; for bitwise evaluations use the `Not` and `XOr` operators.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,12 +386,12 @@
         <returns>A <see cref="T:System.Drawing.Font" /> with the new style applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, font styles were applied by setting properties; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] font styles are applied by using a <xref:System.Drawing.FontStyle> enumeration. This function is used by the upgrade tools to translate the Visual Basic 6.0 properties to the new enumerations.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, font styles were applied by setting properties; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] font styles are applied by using a <xref:System.Drawing.FontStyle> enumeration. This function is used by the upgrade tools to translate the Visual Basic 6.0 properties to the new enumerations.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,12 +424,12 @@
         <returns>A <see cref="T:System.Drawing.Font" /> for the specified GDI character set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the `stdFont` object had a `CharSet` property that specified the GDI character set for a font. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the character set is specified as an optional of a <xref:System.Drawing.Font> constructor. This function is used by the upgrade tools to convert a `stdFont` to a <xref:System.Drawing.Font>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the `stdFont` object had a `CharSet` property that specified the GDI character set for a font. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the character set is specified as an optional of a <xref:System.Drawing.Font> constructor. This function is used by the upgrade tools to convert a `stdFont` to a <xref:System.Drawing.Font>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,12 +463,12 @@
         <returns>A <see cref="T:System.Drawing.Font" /> with the new style applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, font styles were applied by setting properties; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] font styles are applied by using a <xref:System.Drawing.FontStyle> enumeration. This function is used by the upgrade tools to translate the Visual Basic 6.0 properties to the new enumerations.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, font styles were applied by setting properties; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] font styles are applied by using a <xref:System.Drawing.FontStyle> enumeration. This function is used by the upgrade tools to translate the Visual Basic 6.0 properties to the new enumerations.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -501,12 +501,12 @@
         <returns>A <see cref="T:System.Drawing.Font" /> that matches the Visual Basic 6.0 <see langword="Font" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the name of a font was specified by the `Font` property; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], <xref:System.Drawing.Font.Name%2A> is a property of the <xref:System.Drawing.Font> object. This function is used by the upgrade tools to convert a Visual Basic 6.0 `Font` to a <xref:System.Drawing.Font>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the name of a font was specified by the `Font` property; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], <xref:System.Drawing.Font.Name%2A> is a property of the <xref:System.Drawing.Font> object. This function is used by the upgrade tools to convert a Visual Basic 6.0 `Font` to a <xref:System.Drawing.Font>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -539,12 +539,12 @@
         <returns>A <see cref="T:System.Drawing.Font" /> that matches the Visual Basic 6.0 <see langword="FontSize" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the size of a font was specified by the `FontSize` property; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], <xref:System.Drawing.Font.Size%2A> is a property of the <xref:System.Drawing.Font> object. This function is used by the upgrade tools to convert a Visual Basic 6.0 `Font` to a <xref:System.Drawing.Font>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the size of a font was specified by the `FontSize` property; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], <xref:System.Drawing.Font.Size%2A> is a property of the <xref:System.Drawing.Font> object. This function is used by the upgrade tools to convert a Visual Basic 6.0 `Font` to a <xref:System.Drawing.Font>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -578,12 +578,12 @@
         <returns>A <see cref="T:System.Drawing.Font" /> with the new style applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, font styles were applied by setting properties; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] font styles are applied by using a <xref:System.Drawing.FontStyle> enumeration. This function is used by the upgrade tools to translate the Visual Basic 6.0 properties to the new enumerations.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, font styles were applied by setting properties; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] font styles are applied by using a <xref:System.Drawing.FontStyle> enumeration. This function is used by the upgrade tools to translate the Visual Basic 6.0 properties to the new enumerations.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -617,12 +617,12 @@
         <returns>A <see cref="T:System.Drawing.Font" /> with the new style applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, font styles were applied by setting properties; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] font styles are applied by using a <xref:System.Drawing.FontStyle> enumeration. This function is used by the upgrade tools to translate the Visual Basic 6.0 properties to the new enumerations.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, font styles were applied by setting properties; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] font styles are applied by using a <xref:System.Drawing.FontStyle> enumeration. This function is used by the upgrade tools to translate the Visual Basic 6.0 properties to the new enumerations.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -653,12 +653,12 @@
         <returns>A <see langword="stdFont" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `stdFont` object was COM-based and has no equivalent in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to convert between a <xref:System.Drawing.Font> and a `stdFont` during project upgrade.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `stdFont` object was COM-based and has no equivalent in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to convert between a <xref:System.Drawing.Font> and a `stdFont` during project upgrade.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -695,12 +695,12 @@
         <returns>A <see cref="T:System.String" /> that contains the formatted data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `Format` function could operate on a `Variant` data type; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] the `Variant` data type no longer exists. This function is used by the upgrade tools to convert a `Variant` formatted by using the `Format` function to a common language runtime-compliant type.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `Format` function could operate on a `Variant` data type; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] the `Variant` data type no longer exists. This function is used by the upgrade tools to convert a `Variant` formatted by using the `Format` function to a common language runtime-compliant type.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -735,12 +735,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the converted Visual Basic 6.0 <see langword="ScaleHeight" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -775,12 +775,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the converted Visual Basic 6.0 <see langword="ScaleWidth" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -817,12 +817,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the converted Visual Basic 6.0 <see langword="ScaleLeft" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -859,12 +859,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the converted Visual Basic 6.0 <see langword="ScaleTop" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -897,12 +897,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the Visual Basic 6.0 value for the specified <see langword="ScaleMode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -935,12 +935,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the Visual Basic 6.0 value for the specified <see langword="ScaleMode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -968,12 +968,12 @@
         <returns>The control that currently has focus.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function is used by the upgrade tools to replace the Visual Basic 6.0 `Screen.ActiveControl` property. It is the equivalent of calling <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+This function is used by the upgrade tools to replace the Visual Basic 6.0 `Screen.ActiveControl` property. It is the equivalent of calling <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1005,12 +1005,12 @@
           <see langword="true" /> if <paramref name="btn" /> is the cancel button; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function is the equivalent of checking the <xref:System.Windows.Forms.Form.CancelButton%2A> property of a <xref:System.Windows.Forms.Form>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+This function is the equivalent of checking the <xref:System.Windows.Forms.Form.CancelButton%2A> property of a <xref:System.Windows.Forms.Form>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1042,12 +1042,12 @@
           <see langword="true" /> if <paramref name="btn" /> is the default button; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function is the equivalent of checking the <xref:System.Windows.Forms.Form.AcceptButton%2A> property of a <xref:System.Windows.Forms.Form>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+This function is the equivalent of checking the <xref:System.Windows.Forms.Form.AcceptButton%2A> property of a <xref:System.Windows.Forms.Form>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1075,10 +1075,10 @@
         <returns>A <see cref="T:System.String" /> that contains the name without a file name extension.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1106,12 +1106,12 @@
         <returns>An <see cref="T:System.IntPtr" /> for the current application instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function is the equivalent of calling <xref:System.Runtime.InteropServices.Marshal.GetHINSTANCE%2A>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+This function is the equivalent of calling <xref:System.Runtime.InteropServices.Marshal.GetHINSTANCE%2A>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1144,12 +1144,12 @@
         <returns>The <see langword="Integer" /> associated with the specified <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the `ItemData` property for a `ListBox` or `ComboBox` control could be set at design time in the **Properties** window to associate an `Integer` with a `ListBox` or `ComboBox` item. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `ItemData` property no longer exists; the `GetItemData` and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> methods can be used to emulate the behavior of `ItemData`.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the `ItemData` property for a `ListBox` or `ComboBox` control could be set at design time in the **Properties** window to associate an `Integer` with a `ListBox` or `ComboBox` item. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `ItemData` property no longer exists; the `GetItemData` and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> methods can be used to emulate the behavior of `ItemData`.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1182,12 +1182,12 @@
         <returns>The <see cref="T:System.String" /> associated with the specified <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function is used by the upgrade tools to emulate the Visual Basic 6.0 `List` property. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the <xref:System.Windows.Forms.ComboBox.Items%2A> or <xref:System.Windows.Forms.ListBox.Items%2A> property instead.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+This function is used by the upgrade tools to emulate the Visual Basic 6.0 `List` property. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the <xref:System.Windows.Forms.ComboBox.Items%2A> or <xref:System.Windows.Forms.ListBox.Items%2A> property instead.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1215,10 +1215,10 @@
         <returns>A <see cref="T:System.String" /> that contains the path of the currently executing assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1249,12 +1249,12 @@
         <returns>An <see cref="T:System.Object" /> representing the OLE <see langword="IPicture" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, an OLE `IPicture` object could be used to specify an icon; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPicture` and a <xref:System.Drawing.Icon>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, an OLE `IPicture` object could be used to specify an icon; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPicture` and a <xref:System.Drawing.Icon>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1285,12 +1285,12 @@
         <returns>A specified object to convert.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `stdFont` object was COM-based and has no equivalent in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to convert between a <xref:System.Drawing.Font> and a `stdFont` during project upgrade.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `stdFont` object was COM-based and has no equivalent in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to convert between a <xref:System.Drawing.Font> and a `stdFont` during project upgrade.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1321,12 +1321,12 @@
         <returns>An <see cref="T:System.Object" /> representing the OLE <see langword="IPicture" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, an OLE `IPicture` object could be used to specify an image; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPicture` and a <xref:System.Drawing.Image>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, an OLE `IPicture` object could be used to specify an image; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPicture` and a <xref:System.Drawing.Image>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1357,12 +1357,12 @@
         <returns>An <see cref="T:System.Object" /> representing the OLE <see langword="IPictureDisp" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, an OLE `IPictureDisp` object could be used to specify an image; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPicture` and a <xref:System.Drawing.Image>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, an OLE `IPictureDisp` object could be used to specify an image; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPicture` and a <xref:System.Drawing.Image>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1395,14 +1395,14 @@
         <returns>A <see cref="T:System.Boolean" /> that contains the result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` instead of `Imp`.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` instead of `Imp`.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1435,14 +1435,14 @@
         <returns>A <see cref="T:System.Byte" /> that contains the result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1475,14 +1475,14 @@
         <returns>A <see langword="Short" /> that contains the result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1515,14 +1515,14 @@
         <returns>An <see langword="Integer" /> that contains the result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1555,14 +1555,14 @@
         <returns>A <see langword="Long" /> that contains the result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1595,14 +1595,14 @@
         <returns>An <see cref="T:System.Object" /> that contains the result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade. During upgrade, the Variant data type is upgraded to <xref:System.Object>.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+The Visual Basic 6.0 `Imp` operator is no longer supported in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to replace the `Imp` operator during project upgrade. During upgrade, the Variant data type is upgraded to <xref:System.Object>.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use `Not` and `XOr` to replace `Imp`.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1633,12 +1633,12 @@
         <returns>An image object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, an OLE `IPictureDisp` object could be used to specify an image; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPictureDisp` and a <xref:System.Drawing.Image>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, an OLE `IPictureDisp` object could be used to specify an image; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPictureDisp` and a <xref:System.Drawing.Image>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1669,12 +1669,12 @@
         <returns>A converted object to image.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, an OLE `IPicture` object could be used to specify an image; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPicture` and a <xref:System.Drawing.Image>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, an OLE `IPicture` object could be used to specify an image; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the OLE `IPicture` format is no longer supported. This function is used by the upgrade tools to convert between an `IPicture` and a <xref:System.Drawing.Image>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1707,14 +1707,14 @@
         <returns>An <see cref="T:System.Object" /> that contains the resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1749,14 +1749,14 @@
         <returns>An <see cref="T:System.Object" /> that contains the resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1789,14 +1789,14 @@
         <returns>An <see cref="T:System.Object" /> that contains the resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1831,14 +1831,14 @@
         <returns>An <see cref="T:System.Object" /> that contains the resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1869,14 +1869,14 @@
         <returns>A <see cref="T:System.String" /> that contains the resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1909,14 +1909,14 @@
         <returns>A <see cref="T:System.String" /> that contains the resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
-  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, international versions of an application were created by putting all localizable information, such as strings, into a separate resource file (.res) for each language. At run time, locale-specific resources were loaded from the resource file by calling the `LoadResString`, `LoadResPicture`, and `LoadResData` functions.  
+ 
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], international versions of an application are created by changing the `Language` property of a form at design time. A separate resource file (.resx) is automatically created for each locale selected. You no longer have to explicitly load resources from code; resources are automatically loaded based on the user's locale. For more information, see [Globalizing Windows Forms](~/docs/framework/winforms/advanced/globalizing-windows-forms.md).  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1947,12 +1947,12 @@
         <returns>A <see langword="Double" /> that contains the X coordinate expressed in twips.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1983,12 +1983,12 @@
         <returns>A <see langword="Double" /> that contains the Y coordinate expressed in twips.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2021,12 +2021,12 @@
         <summary>Sends one or more keystrokes to the active window as if typed at the keyboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function is used by the upgrade tools to emulate the Visual Basic 6.0 `SendKeys` method. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the `My.Computer.Keyboard.SendKeys` method instead.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+This function is used by the upgrade tools to emulate the Visual Basic 6.0 `SendKeys` method. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the `My.Computer.Keyboard.SendKeys` method instead.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2059,14 +2059,14 @@
         <summary>Sets the <see cref="P:System.Windows.Forms.Form.CancelButton" /> property of a <see cref="T:System.Windows.Forms.Form" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the Boolean `Default` and `Cancel` properties of a `CommandButton` control determine whether the control responds to the ENTER or ESC keys, respectively. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the <xref:System.Windows.Forms.Button> control no longer has `Default` or `Cancel` properties. The <xref:System.Windows.Forms.Form> object has <xref:System.Windows.Forms.Form.AcceptButton%2A> and <xref:System.Windows.Forms.Form.CancelButton%2A> properties that provide the same functionality; these properties take the name of a <xref:System.Windows.Forms.Button> control as an argument.  
-  
- This function is used by the upgrade tools to set the <xref:System.Windows.Forms.Form.CancelButton%2A> property of a <xref:System.Windows.Forms.Form>.based on the `Cancel` property of an upgraded Visual Basic 6.0 `CommandButton` control.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the Boolean `Default` and `Cancel` properties of a `CommandButton` control determine whether the control responds to the ENTER or ESC keys, respectively. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the <xref:System.Windows.Forms.Button> control no longer has `Default` or `Cancel` properties. The <xref:System.Windows.Forms.Form> object has <xref:System.Windows.Forms.Form.AcceptButton%2A> and <xref:System.Windows.Forms.Form.CancelButton%2A> properties that provide the same functionality; these properties take the name of a <xref:System.Windows.Forms.Button> control as an argument.  
+ 
+This function is used by the upgrade tools to set the <xref:System.Windows.Forms.Form.CancelButton%2A> property of a <xref:System.Windows.Forms.Form>.based on the `Cancel` property of an upgraded Visual Basic 6.0 `CommandButton` control.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2099,14 +2099,14 @@
         <summary>Sets the <see cref="P:System.Windows.Forms.Form.AcceptButton" /> property of a <see cref="T:System.Windows.Forms.Form" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the Boolean `Default` and `Cancel` properties of a `CommandButton` control determine whether the control responds to the ENTER or ESC keys, respectively. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the <xref:System.Windows.Forms.Button> control no longer has `Default` or `Cancel` properties. The <xref:System.Windows.Forms.Form> object has <xref:System.Windows.Forms.Form.AcceptButton%2A> and <xref:System.Windows.Forms.Form.CancelButton%2A> properties that provide the same functionality; these properties take the name of a <xref:System.Windows.Forms.Button> control as an argument.  
-  
- This function is used by the upgrade tools to set the <xref:System.Windows.Forms.Form.AcceptButton%2A> property of a <xref:System.Windows.Forms.Form>.based on the `Default` property of an upgraded Visual Basic 6.0 `CommandButton` control.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the Boolean `Default` and `Cancel` properties of a `CommandButton` control determine whether the control responds to the ENTER or ESC keys, respectively. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the <xref:System.Windows.Forms.Button> control no longer has `Default` or `Cancel` properties. The <xref:System.Windows.Forms.Form> object has <xref:System.Windows.Forms.Form.AcceptButton%2A> and <xref:System.Windows.Forms.Form.CancelButton%2A> properties that provide the same functionality; these properties take the name of a <xref:System.Windows.Forms.Button> control as an argument.  
+ 
+This function is used by the upgrade tools to set the <xref:System.Windows.Forms.Form.AcceptButton%2A> property of a <xref:System.Windows.Forms.Form>.based on the `Default` property of an upgraded Visual Basic 6.0 `CommandButton` control.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2140,12 +2140,12 @@
         <summary>Sets the <see cref="F:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ItemData" /> property for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the `ItemData` property for a `ListBox` or `ComboBox` control could be set at design time in the **Properties** window to associate an `Integer` with a `ListBox` or `ComboBox` item. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `ItemData` property no longer exists; the <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> and `SetItemData` methods can be used to emulate the behavior of `ItemData`.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the `ItemData` property for a `ListBox` or `ComboBox` control could be set at design time in the **Properties** window to associate an `Integer` with a `ListBox` or `ComboBox` item. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `ItemData` property no longer exists; the <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> and `SetItemData` methods can be used to emulate the behavior of `ItemData`.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2179,12 +2179,12 @@
         <summary>Sets the <see cref="F:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ItemString" /> property for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function is used by the upgrade tools to emulate the Visual Basic 6.0 `List` property. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the <xref:System.Windows.Forms.ComboBox.Items%2A> or <xref:System.Windows.Forms.ListBox.Items%2A> property instead.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+This function is used by the upgrade tools to emulate the Visual Basic 6.0 `List` property. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the <xref:System.Windows.Forms.ComboBox.Items%2A> or <xref:System.Windows.Forms.ListBox.Items%2A> property instead.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2214,12 +2214,12 @@
         <summary>Assigns the name of a Visual Basic 6.0 resource file to the current [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Resource handling is different for Visual Basic 6.0 and [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to add a Visual Basic 6.0 resource file to a project.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Resource handling is different for Visual Basic 6.0 and [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to add a Visual Basic 6.0 resource file to a project.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2251,12 +2251,12 @@
         <summary>Assigns the name of a Visual Basic 6.0 resource file to a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Resource handling is different for Visual Basic 6.0 and [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to add a Visual Basic 6.0 resource file to a project.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Resource handling is different for Visual Basic 6.0 and [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. This function is used by the upgrade tools to add a Visual Basic 6.0 resource file to a project.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2290,12 +2290,12 @@
         <summary>Displays a form by calling either the <see cref="M:System.Windows.Forms.Control.Show" /> or <see cref="M:System.Windows.Forms.Form.ShowDialog" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the `Show` method specified whether a Form would be displayed modally; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] it is replaced by the <xref:System.Windows.Forms.Control.Show%2A> and <xref:System.Windows.Forms.Form.ShowDialog%2A> methods. This function is used by the upgrade tools to map the Visual Basic 6.0 `Show` method to either the <xref:System.Windows.Forms.Control.Show%2A> or <xref:System.Windows.Forms.Form.ShowDialog%2A> method.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the `Show` method specified whether a Form would be displayed modally; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] it is replaced by the <xref:System.Windows.Forms.Control.Show%2A> and <xref:System.Windows.Forms.Form.ShowDialog%2A> methods. This function is used by the upgrade tools to map the Visual Basic 6.0 `Show` method to either the <xref:System.Windows.Forms.Control.Show%2A> or <xref:System.Windows.Forms.Form.ShowDialog%2A> method.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2332,12 +2332,12 @@
         <returns>A formatted <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the `Debug.Print` method had an `outputlist` parameter that specified how output was formatted in the **Immediate** window. This function is used by the upgrade tools to translate the `outputlist` parameter into a string for display in the **Immediate** window.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the `Debug.Print` method had an `outputlist` parameter that specified how output was formatted in the **Immediate** window. This function is used by the upgrade tools to translate the `outputlist` parameter into a string for display in the **Immediate** window.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2372,12 +2372,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the converted Visual Basic 6.0 <see langword="ScaleHeight" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2412,12 +2412,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the converted Visual Basic 6.0 <see langword="ScaleWidth" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2454,12 +2454,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the converted Visual Basic 6.0 <see langword="ScaleLeft" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2496,12 +2496,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the converted Visual Basic 6.0 <see langword="ScaleLeft" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2534,12 +2534,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the pixel value for the specified <see langword="ScaleMode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2572,12 +2572,12 @@
         <returns>A <see cref="T:System.Double" /> that contains the pixel value for the specified <see langword="ScaleMode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Visual Basic 6.0 supported multiple coordinate systems defined by a `ScaleMode` property. This included a user-defined value. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] only supports a coordinate system that is based on pixels. This function is used by the upgrade tools to convert between pixels and a user-defined scale value.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2605,12 +2605,12 @@
         <returns>A <see langword="Double" /> that contains the conversion factor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2638,12 +2638,12 @@
         <returns>A <see langword="Double" /> that contains the conversion factor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2674,12 +2674,12 @@
         <returns>A <see langword="Double" /> that contains the X coordinate expressed in pixels.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2710,12 +2710,12 @@
         <returns>A <see langword="Double" /> that contains the Y coordinate expressed in pixels.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, coordinates were expressed in twips; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] they are expressed in pixels. This function is used by the upgrade tools to convert between the two coordinate systems.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2745,14 +2745,14 @@
         <summary>Emulates the behavior of the Visual Basic 6.0 <see langword="ValidateControls" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the `ValidateControls` method was used to force the `Validate` event for the control that has focus when a form is closed; if the `Validate` event fails, an error was raised. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `ValidateControls` method is replaced by the <xref:System.Windows.Forms.ContainerControl.Validate%2A> method, which returns `true` or `false`.  
-  
- This function is used by the upgrade tools to emulate the Visual Basic 6.0 behavior.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the `ValidateControls` method was used to force the `Validate` event for the control that has focus when a form is closed; if the `Validate` event fails, an error was raised. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `ValidateControls` method is replaced by the <xref:System.Windows.Forms.ContainerControl.Validate%2A> method, which returns `true` or `false`.  
+ 
+This function is used by the upgrade tools to emulate the Visual Basic 6.0 behavior.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2782,12 +2782,12 @@
         <summary>Displays pop-up Help for a form upgraded from Visual Basic 6.0.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Pop-up Help in Visual Basic 6.0 was implemented by using the `WhatsThisButton` and `WhatsThisHelp` properties of a form; pop-up Help in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is implemented by using the <xref:System.Windows.Forms.Form.HelpButton%2A> property of a form. This function is used by the upgrade tools to change the method of displaying pop-up Help in an upgraded application.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+Pop-up Help in Visual Basic 6.0 was implemented by using the `WhatsThisButton` and `WhatsThisHelp` properties of a form; pop-up Help in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is implemented by using the <xref:System.Windows.Forms.Form.HelpButton%2A> property of a form. This function is used by the upgrade tools to change the method of displaying pop-up Help in an upgraded application.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2819,12 +2819,12 @@
         <summary>Converts the Visual Basic <see langword="ZOrder" /> method for use in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Visual Basic 6.0, the `ZOrder` method was used to specify the layering of controls; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] .it is replaced by the <xref:System.Windows.Forms.Control.BringToFront%2A> and <xref:System.Windows.Forms.Control.SendToBack%2A> methods. This function is used by the upgrade tools to map between the methods.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+In Visual Basic 6.0, the `ZOrder` method was used to specify the layering of controls; in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] .it is replaced by the <xref:System.Windows.Forms.Control.BringToFront%2A> and <xref:System.Windows.Forms.Control.SendToBack%2A> methods. This function is used by the upgrade tools to map between the methods.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

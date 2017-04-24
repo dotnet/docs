@@ -14,10 +14,10 @@
     <summary>Finds the app.config file, if any, in the provided lists.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.Tasks.FindAppConfigFile> also adds the <xref:Microsoft.Build.Tasks.FindAppConfigFile.TargetPath%2A> metadata.  
-  
+<xref:Microsoft.Build.Tasks.FindAppConfigFile> also adds the <xref:Microsoft.Build.Tasks.FindAppConfigFile.TargetPath%2A> metadata.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
           <see langword="true" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.Tasks.FindAppConfigFile.Execute%2A> looks first at the whole item specification; that is, it first searches app.config files that are directly in the project folder. If that fails, then it falls back to app.config files anywhere in the project.  
-  
+<xref:Microsoft.Build.Tasks.FindAppConfigFile.Execute%2A> looks first at the whole item specification; that is, it first searches app.config files that are directly in the project folder. If that fails, then it falls back to app.config files anywhere in the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>

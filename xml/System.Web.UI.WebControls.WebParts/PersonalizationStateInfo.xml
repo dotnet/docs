@@ -14,10 +14,10 @@
     <summary>When overridden in a derived class, implements a representation of information about a set of Web Parts data for a page.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo> represent information about either a set of shared state data for a page or a set of per-user personalization state data for the page and a user. This class is intended for use in queries and management methods where the serialized Web Parts data is not necessary.  
-  
+Classes that derive from <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo> represent information about either a set of shared state data for a page or a set of per-user personalization state data for the page and a user. This class is intended for use in queries and management methods where the serialized Web Parts data is not necessary.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -42,10 +42,10 @@
         <value>A <see cref="T:System.DateTime" /> indicating when the personalization state was last updated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides the date and time that the shared or per-user personalization state information was last updated.  
-  
+This property provides the date and time that the shared or per-user personalization state information was last updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,10 +67,10 @@
         <value>The path of the page associated with the personalization state information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The path is an application-relative path, such as ~/application/page/page.aspx.  
-  
+The path is an application-relative path, such as ~/application/page/page.aspx.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <value>The size, in bytes, of the personalization state information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For shared state information, size represents the size of the shared state in the data store. For per-user information, size represents the size of the per-user state for a specific user and page combination (determined by the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Path%2A> property) as stored in the data store.  
-  
+For shared state information, size represents the size of the shared state in the data store. For per-user information, size represents the size of the per-user state for a specific user and page combination (determined by the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Path%2A> property) as stored in the data store.  
+ 
  ]]></format>
         </remarks>
       </Docs>

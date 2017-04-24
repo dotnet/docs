@@ -26,37 +26,37 @@
     <summary>Represents an x- and y-coordinate pair in two-dimensional space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In XAML, the delimiter between the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> values of a <xref:System.Windows.Point> can be either a comma or a space.  
-  
- Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Point> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Point> attribute value into the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> components.  
-  
+In XAML, the delimiter between the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> values of a <xref:System.Windows.Point> can be either a comma or a space.  
+ 
+Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Point> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Point> attribute value into the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> components.  
+ 
 <a name="xamlAttributeUsage_Duration"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="x,y"/>  
 -or-  
 <object property="x y"/>  
 ```  
-  
+ 
 <a name="xamlValues_MinWidth"></a>   
 ## XAML Values  
- *x*  
- The x-coordinate of this <xref:System.Windows.Point>.  
+*x*  
+The x-coordinate of this <xref:System.Windows.Point>.  
+ 
+*y*  
+The y-coordinate of this <xref:System.Windows.Point>.  
+ 
   
- *y*  
- The y-coordinate of this <xref:System.Windows.Point>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Point> structures are not equal.  It also illustrates how to assign values to a <xref:System.Windows.Point> structure when the structure is being declared and after the structure has been declared.  
-  
- [!code-csharp[PointExamples_snip#PointInequalityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#pointinequalityexample)]
- [!code-vb[PointExamples_snip#PointInequalityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#pointinequalityexample)]  
-  
+The following example shows how to check if two <xref:System.Windows.Point> structures are not equal.  It also illustrates how to assign values to a <xref:System.Windows.Point> structure when the structure is being declared and after the structure has been declared.  
+ 
+[!code-csharp[PointExamples_snip#PointInequalityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#pointinequalityexample)]
+[!code-vb[PointExamples_snip#PointInequalityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#pointinequalityexample)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -104,17 +104,17 @@
         <returns>Returns the sum of <paramref name="point" /> and <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding a <xref:System.Windows.Point> structure to a <xref:System.Windows.Point> structure is prohibited.  
+Adding a <xref:System.Windows.Point> structure to a <xref:System.Windows.Point> structure is prohibited.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example adds a <xref:System.Windows.Point> to a <xref:System.Windows.Vector> and returns the result as a <xref:System.Windows.Vector> structure.  
-  
- [!code-csharp[PointExamples_snip#AddPointAndVectorExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#addpointandvectorexample_csharp)]  
-  
+This example adds a <xref:System.Windows.Point> to a <xref:System.Windows.Vector> and returns the result as a <xref:System.Windows.Vector> structure.  
+ 
+[!code-csharp[PointExamples_snip#AddPointAndVectorExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#addpointandvectorexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,17 +141,17 @@
           <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Point" /> and contains the same <see cref="P:System.Windows.Point.X" /> and <see cref="P:System.Windows.Point.Y" /> values as this <see cref="T:System.Windows.Point" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Point> coordinates are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
+<xref:System.Windows.Point> coordinates are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Point> structures are equal using the non-static <xref:System.Windows.Point.Equals%2A> method.  
-  
- [!code-csharp[PointExamples_snip#NonStaticEqualsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#nonstaticequalsexample_csharp)]  
-  
+The following example shows how to check if two <xref:System.Windows.Point> structures are equal using the non-static <xref:System.Windows.Point.Equals%2A> method.  
+ 
+[!code-csharp[PointExamples_snip#NonStaticEqualsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#nonstaticequalsexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
           <see langword="true" /> if both <see cref="T:System.Windows.Point" /> structures contain the same <see cref="P:System.Windows.Point.X" /> and <see cref="P:System.Windows.Point.Y" /> values; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Point> coordinates are expressed using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated on, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
-  
+<xref:System.Windows.Point> coordinates are expressed using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated on, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,17 +210,17 @@
           <see langword="true" /> if <paramref name="point1" /> and <paramref name="point2" /> contain the same <see cref="P:System.Windows.Point.X" /> and <see cref="P:System.Windows.Point.Y" /> values; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Point coordinates are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
+Point coordinates are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Point> structures are equal using the static <xref:System.Windows.Point.Equals%2A> method.  
-  
- [!code-csharp[PointExamples_snip#StaticEqualsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#staticequalsexample_csharp)]  
-  
+The following example shows how to check if two <xref:System.Windows.Point> structures are equal using the static <xref:System.Windows.Point.Equals%2A> method.  
+ 
+[!code-csharp[PointExamples_snip#StaticEqualsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#staticequalsexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,12 +243,12 @@
         <returns>The hash code for this <see cref="T:System.Windows.Point" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the hash code of a <xref:System.Windows.Point> structure.  
-  
- [!code-csharp[PointExamples_snip#GetHashCodeExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#gethashcodeexample_csharp)]  
-  
+The following example shows how to get the hash code of a <xref:System.Windows.Point> structure.  
+ 
+[!code-csharp[PointExamples_snip#GetHashCodeExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#gethashcodeexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,12 +276,12 @@
         <returns>The transformed point.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to multiply a <xref:System.Windows.Point> structure by a <xref:System.Windows.Media.Matrix> structure using the <xref:System.Windows.Point.Multiply%2A> method.  
-  
- [!code-csharp[PointExamples_snip#MultiplyPointByMatrixExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#multiplypointbymatrixexample_csharp)]  
-  
+The following example shows how to multiply a <xref:System.Windows.Point> structure by a <xref:System.Windows.Media.Matrix> structure using the <xref:System.Windows.Point.Multiply%2A> method.  
+ 
+[!code-csharp[PointExamples_snip#MultiplyPointByMatrixExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#multiplypointbymatrixexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,19 +312,19 @@
         <summary>Offsets a point's <see cref="P:System.Windows.Point.X" /> and <see cref="P:System.Windows.Point.Y" /> coordinates by the specified amounts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to adding a <xref:System.Windows.Point> to a <xref:System.Windows.Vector>.  
+This operation is equivalent to adding a <xref:System.Windows.Point> to a <xref:System.Windows.Vector>.  
+ 
+Note that calling the <xref:System.Windows.Point.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> properties directly. Because <xref:System.Windows.Point> is a value type, if you reference a <xref:System.Windows.Point> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Point.X%2A> or <xref:System.Windows.Point.Y%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Point.Offset%2A> on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Point> that is referenced as a property or indexer, create a new <xref:System.Windows.Point>, modify its fields, and then assign the <xref:System.Windows.Point> back to the property or indexer.  
+ 
   
- Note that calling the <xref:System.Windows.Point.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> properties directly. Because <xref:System.Windows.Point> is a value type, if you reference a <xref:System.Windows.Point> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Point.X%2A> or <xref:System.Windows.Point.Y%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Point.Offset%2A> on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Point> that is referenced as a property or indexer, create a new <xref:System.Windows.Point>, modify its fields, and then assign the <xref:System.Windows.Point> back to the property or indexer.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to offset the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> values of a <xref:System.Windows.Point> structure.  
-  
- [!code-csharp[PointExamples_snip#OffsetExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#offsetexample_csharp)]  
-  
+The following example shows how to offset the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> values of a <xref:System.Windows.Point> structure.  
+ 
+[!code-csharp[PointExamples_snip#OffsetExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#offsetexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,13 +352,13 @@
         <returns>The result of translating the specified point by the specified vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to add a <xref:System.Windows.Point> to a <xref:System.Windows.Vector> using the overloaded (+) operator.  
-  
- [!code-csharp[PointExamples_snip#OverloadedAdditionOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedadditionoperatorexample)]
- [!code-vb[PointExamples_snip#OverloadedAdditionOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedadditionoperatorexample)]  
-  
+The following example shows how to add a <xref:System.Windows.Point> to a <xref:System.Windows.Vector> using the overloaded (+) operator.  
+ 
+[!code-csharp[PointExamples_snip#OverloadedAdditionOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedadditionoperatorexample)]
+[!code-vb[PointExamples_snip#OverloadedAdditionOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedadditionoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,18 +387,18 @@
           <see langword="true" /> if both the <see cref="P:System.Windows.Point.X" /> and <see cref="P:System.Windows.Point.Y" /> coordinates of <paramref name="point1" /> and <paramref name="point2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A point's coordinates are described using <xref:System.Double> values. Because the value of <xref:System.Double> can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
+A point's coordinates are described using <xref:System.Double> values. Because the value of <xref:System.Double> can lose precision when arithmetic operations are performed on them, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Point> structures are equal using the overloaded (==) operator.  
-  
- [!code-csharp[PointExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedequalityoperatorexample)]
- [!code-vb[PointExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedequalityoperatorexample)]  
-  
+The following example shows how to check if two <xref:System.Windows.Point> structures are equal using the overloaded (==) operator.  
+ 
+[!code-csharp[PointExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedequalityoperatorexample)]
+[!code-vb[PointExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedequalityoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -471,18 +471,18 @@
           <see langword="true" /> if <paramref name="point1" /> and <paramref name="point2" /> have different <see cref="P:System.Windows.Point.X" /> or <see cref="P:System.Windows.Point.Y" /> coordinates; <see langword="false" /> if <paramref name="point1" /> and <paramref name="point2" /> have the same <see cref="P:System.Windows.Point.X" /> and <see cref="P:System.Windows.Point.Y" /> coordinates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A point's <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> coordinates are described using <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated on, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
+A point's <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> coordinates are described using <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated on, a comparison between two <xref:System.Windows.Point> values that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check whether two <xref:System.Windows.Point> structures are not equal, using the overloaded (!=) operator.  
-  
- [!code-csharp[PointExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedinequalityoperatorexample)]
- [!code-vb[PointExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedinequalityoperatorexample)]  
-  
+The following example shows how to check whether two <xref:System.Windows.Point> structures are not equal, using the overloaded (!=) operator.  
+ 
+[!code-csharp[PointExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedinequalityoperatorexample)]
+[!code-vb[PointExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedinequalityoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -510,13 +510,13 @@
         <returns>The result of transforming the specified point using the specified matrix.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to multiply a <xref:System.Windows.Point> by a <xref:System.Windows.Media.Matrix> using the overloaded (*) operator.  
-  
- [!code-csharp[PointExamples_snip#OverloadedMultiplyPointByMatrixOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedmultiplypointbymatrixoperatorexample)]
- [!code-vb[PointExamples_snip#OverloadedMultiplyPointByMatrixOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedmultiplypointbymatrixoperatorexample)]  
-  
+The following example shows how to multiply a <xref:System.Windows.Point> by a <xref:System.Windows.Media.Matrix> using the overloaded (*) operator.  
+ 
+[!code-csharp[PointExamples_snip#OverloadedMultiplyPointByMatrixOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedmultiplypointbymatrixoperatorexample)]
+[!code-vb[PointExamples_snip#OverloadedMultiplyPointByMatrixOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedmultiplypointbymatrixoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -544,13 +544,13 @@
         <returns>The difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to subtract a <xref:System.Windows.Point> from another <xref:System.Windows.Point> and return a <xref:System.Windows.Vector> using the overloaded (-) operator.  
-  
- [!code-csharp[PointExamples_snip#OverloadedSubtractionOperatorExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedsubtractionoperatorexample2)]
- [!code-vb[PointExamples_snip#OverloadedSubtractionOperatorExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedsubtractionoperatorexample2)]  
-  
+The following example shows how to subtract a <xref:System.Windows.Point> from another <xref:System.Windows.Point> and return a <xref:System.Windows.Vector> using the overloaded (-) operator.  
+ 
+[!code-csharp[PointExamples_snip#OverloadedSubtractionOperatorExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedsubtractionoperatorexample2)]
+[!code-vb[PointExamples_snip#OverloadedSubtractionOperatorExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedsubtractionoperatorexample2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -578,13 +578,13 @@
         <returns>The difference between <paramref name="point" /> and <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to subtract a <xref:System.Windows.Vector> from a <xref:System.Windows.Point> using the overloaded (-) operator.  
-  
- [!code-csharp[PointExamples_snip#OverloadedSubtractionOperatorExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedsubtractionoperatorexample1)]
- [!code-vb[PointExamples_snip#OverloadedSubtractionOperatorExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedsubtractionoperatorexample1)]  
-  
+The following example shows how to subtract a <xref:System.Windows.Vector> from a <xref:System.Windows.Point> using the overloaded (-) operator.  
+ 
+[!code-csharp[PointExamples_snip#OverloadedSubtractionOperatorExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#overloadedsubtractionoperatorexample1)]
+[!code-vb[PointExamples_snip#OverloadedSubtractionOperatorExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#overloadedsubtractionoperatorexample1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -610,13 +610,13 @@
         <returns>The equivalent <see cref="T:System.Windows.Point" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Point.Parse%2A> method to convert a <xref:System.String> representation of a point into a <xref:System.Windows.Point> structure.  
-  
- [!code-csharp[PointExamples_snip#ParseExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#parseexample)]
- [!code-vb[PointExamples_snip#ParseExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#parseexample)]  
-  
+The following example shows how to use the <xref:System.Windows.Point.Parse%2A> method to convert a <xref:System.String> representation of a point into a <xref:System.Windows.Point> structure.  
+ 
+[!code-csharp[PointExamples_snip#ParseExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#parseexample)]
+[!code-vb[PointExamples_snip#ParseExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#parseexample)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">
@@ -652,13 +652,13 @@
         <returns>The difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to subtract a <xref:System.Windows.Point> from another <xref:System.Windows.Point> using the static <xref:System.Windows.Point.Subtract%2A> method.  
-  
- [!code-csharp[PointExamples_snip#SubtractExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#subtractexample2)]
- [!code-vb[PointExamples_snip#SubtractExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#subtractexample2)]  
-  
+The following example shows how to subtract a <xref:System.Windows.Point> from another <xref:System.Windows.Point> using the static <xref:System.Windows.Point.Subtract%2A> method.  
+ 
+[!code-csharp[PointExamples_snip#SubtractExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#subtractexample2)]
+[!code-vb[PointExamples_snip#SubtractExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#subtractexample2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -686,13 +686,13 @@
         <returns>The difference between <paramref name="point" /> and <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to subtract a <xref:System.Windows.Vector> from a <xref:System.Windows.Point> using the static <xref:System.Windows.Point.Subtract%2A> method.  
-  
- [!code-csharp[PointExamples_snip#SubtractExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#subtractexample1)]
- [!code-vb[PointExamples_snip#SubtractExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#subtractexample1)]  
-  
+The following example shows how to subtract a <xref:System.Windows.Vector> from a <xref:System.Windows.Point> using the static <xref:System.Windows.Point.Subtract%2A> method.  
+ 
+[!code-csharp[PointExamples_snip#SubtractExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#subtractexample1)]
+[!code-vb[PointExamples_snip#SubtractExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#subtractexample1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -747,13 +747,13 @@
         <returns>A <see cref="T:System.String" /> containing the <see cref="P:System.Windows.Point.X" /> and <see cref="P:System.Windows.Point.Y" /> values of this <see cref="T:System.Windows.Point" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Point.ToString%2A> method to get a <xref:System.String> representation of a <xref:System.Windows.Point> structure.  
-  
- [!code-csharp[PointExamples_snip#ToStringExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#tostringexample)]
- [!code-vb[PointExamples_snip#ToStringExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#tostringexample)]  
-  
+The following example shows how to use the <xref:System.Windows.Point.ToString%2A> method to get a <xref:System.String> representation of a <xref:System.Windows.Point> structure.  
+ 
+[!code-csharp[PointExamples_snip#ToStringExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#tostringexample)]
+[!code-vb[PointExamples_snip#ToStringExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#tostringexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -797,13 +797,13 @@
         <value>The <see cref="P:System.Windows.Point.X" />-coordinate value of this <see cref="T:System.Windows.Point" /> structure.  The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Point> structures are not equal.  It also illustrates how to assign values to a <xref:System.Windows.Point> structure when the structure is being declared and after the structure has been declared.  
-  
- [!code-csharp[PointExamples_snip#PointInequalityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#pointinequalityexample)]
- [!code-vb[PointExamples_snip#PointInequalityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#pointinequalityexample)]  
-  
+The following example shows how to check if two <xref:System.Windows.Point> structures are not equal.  It also illustrates how to assign values to a <xref:System.Windows.Point> structure when the structure is being declared and after the structure has been declared.  
+ 
+[!code-csharp[PointExamples_snip#PointInequalityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#pointinequalityexample)]
+[!code-vb[PointExamples_snip#PointInequalityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#pointinequalityexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -825,13 +825,13 @@
         <value>The <see cref="P:System.Windows.Point.Y" />-coordinate value of this <see cref="T:System.Windows.Point" /> structure.  The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to check if two <xref:System.Windows.Point> structures are not equal.  It also illustrates how to assign values to a <xref:System.Windows.Point> structure when the structure is being declared and after the structure has been declared.  
-  
- [!code-csharp[PointExamples_snip#PointInequalityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#pointinequalityexample)]
- [!code-vb[PointExamples_snip#PointInequalityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#pointinequalityexample)]  
-  
+The following example shows how to check if two <xref:System.Windows.Point> structures are not equal.  It also illustrates how to assign values to a <xref:System.Windows.Point> structure when the structure is being declared and after the structure has been declared.  
+ 
+[!code-csharp[PointExamples_snip#PointInequalityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PointExamples_snip/CSharp/PointExample.cs#pointinequalityexample)]
+[!code-vb[PointExamples_snip#PointInequalityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PointExamples_snip/visualbasic/pointexample.vb#pointinequalityexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

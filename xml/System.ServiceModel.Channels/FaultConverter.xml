@@ -54,10 +54,10 @@
         <returns>An instance of <see cref="T:System.ServiceModel.Channels.FaultConverter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Transport channels should delegate to this method to get the default SOAP WS-Addressing fault converter.  
-  
+Transport channels should delegate to this method to get the default SOAP WS-Addressing fault converter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,18 +89,18 @@
           <see langword="true" /> if fault was successfully converted; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a channel layer to implement `GetProperty<FaultConverter>` to support converting fault messages to SOAP exceptions, override this method to create an exception by doing the following steps:  
-  
+For a channel layer to implement `GetProperty<FaultConverter>` to support converting fault messages to SOAP exceptions, override this method to create an exception by doing the following steps:  
+ 
 -   Inspect the fault message.  
-  
+ 
 -   If recognized, do the appropriate conversion.  
-  
+ 
 -   If not recognized, convert it by a call to `GetProperty<FaultConverter>` on the inner channel.  
-  
- Transport channels should delegate to <xref:System.ServiceModel.Channels.FaultConverter.GetDefaultFaultConverter%2A> to get the default SOAP/WS-Addressing fault converter.  
-  
+ 
+Transport channels should delegate to <xref:System.ServiceModel.Channels.FaultConverter.GetDefaultFaultConverter%2A> to get the default SOAP/WS-Addressing fault converter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,10 +130,10 @@
           <see langword="true" /> if fault message was successfully created; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channels that support fault conversion implement `GetProperty<FaultConverter>` and override this method to do the following. If a layer can convert the exception it does; otherwise it calls `GetProperty<FaultConverter>` on its inner channel. Transport channels should delegate to <xref:System.ServiceModel.Channels.FaultConverter.GetDefaultFaultConverter%2A> to get the default SOAP/WS-Addressing fault converter.  
-  
+Channels that support fault conversion implement `GetProperty<FaultConverter>` and override this method to do the following. If a layer can convert the exception it does; otherwise it calls `GetProperty<FaultConverter>` on its inner channel. Transport channels should delegate to <xref:System.ServiceModel.Channels.FaultConverter.GetDefaultFaultConverter%2A> to get the default SOAP/WS-Addressing fault converter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
           <see langword="true" /> if fault was successfully converted; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Channels.FaultConverter.OnTryCreateException%2A> is an abstract class that you must implement. The current method wraps several parameter error tests around a call to that method.  
-  
+<xref:System.ServiceModel.Channels.FaultConverter.OnTryCreateException%2A> is an abstract class that you must implement. The current method wraps several parameter error tests around a call to that method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -200,10 +200,10 @@
           <see langword="true" /> if fault message was successfully created; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Channels.FaultConverter.OnTryCreateFaultMessage%2A> is an abstract class that you must implement. The current method wraps several error tests around a call to that method.  
-  
+<xref:System.ServiceModel.Channels.FaultConverter.OnTryCreateFaultMessage%2A> is an abstract class that you must implement. The current method wraps several error tests around a call to that method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

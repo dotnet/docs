@@ -14,13 +14,13 @@
     <summary>Represents a stylus tip shaped like an ellipse.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
-  
- [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
- [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
-  
+The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+ 
+[!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+[!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,13 +44,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.EllipseStylusShape" /> class with the specified width and height.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
-  
- [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
- [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
-  
+The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+ 
+[!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+[!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,13 +76,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.EllipseStylusShape" /> class with the specified width, height, and angle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
-  
- [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
- [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
-  
+The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+ 
+[!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+[!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,13 +96,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.EllipseStylusShape" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
-  
- [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
- [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
-  
+The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+ 
+[!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+[!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

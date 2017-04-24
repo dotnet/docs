@@ -70,10 +70,10 @@
         <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler as an <xref:System.Windows.Input.AccessKeyPressedEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+This implementation casts the generic handler as an <xref:System.Windows.Input.AccessKeyPressedEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <value>The element's scope.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The scope identifies the area where the access keys, such as menu keys or pop-up keys, are applied.  
-  
+The scope identifies the area where the access keys, such as menu keys or pop-up keys, are applied.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,12 +148,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.AccessKeyEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Input.AccessKeyManager>  
-  
- <xref:System.Windows.Input.AccessKeyPressedEventHandler>  
-  
+<xref:System.Windows.Input.AccessKeyManager>  
+ 
+<xref:System.Windows.Input.AccessKeyPressedEventHandler>  
+ 
  ]]></format>
         </remarks>
       </Docs>

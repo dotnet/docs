@@ -14,10 +14,10 @@
     <summary>Represents a response received from a remote peer to an invitation sent via the <see cref="M:System.Net.PeerToPeer.Collaboration.Peer.Invite" /> or <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.Invite" /> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class does not have a public constructor. The <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType> class is used to encapsulate the response to accommodate the return of any additional data with a future release.  
-  
+This class does not have a public constructor. The <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType> class is used to encapsulate the response to accommodate the return of any additional data with a future release.  
+ 
  ]]></format>
     </remarks>
   </Docs>

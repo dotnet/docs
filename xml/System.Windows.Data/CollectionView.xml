@@ -27,26 +27,26 @@
     <summary>Represents a view for grouping, sorting, filtering, and navigating a data collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should not create objects of this class in your code. To create a collection view for a collection that only implements <xref:System.Collections.IEnumerable>, create a <xref:System.Windows.Data.CollectionViewSource> object, add your collection to the <xref:System.Windows.Data.CollectionViewSource.Source%2A> property, and get the collection view from the <xref:System.Windows.Data.CollectionViewSource.View%2A> property.  
-  
- You can think of a collection view as a layer on top of a binding source collection that allows you to navigate and display the collection based on sort, filter, and group queries, all without having to manipulate the underlying source collection itself. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes that raise the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.  
-  
- Because a view does not change the underlying source collection, a source collection can have multiple views associated with it. By using views, you can display the same data in different ways. For example, you can use two views on a collection of `Task` objects to show tasks sorted by priority on one part of the page and grouped by area on another part of the page.  
-  
- In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications, all collections have an associated default collection view. Rather than working with the collection directly, the binding engine always accesses the collection through the associated view. To get the default view, use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A?displayProperty=fullName> method. An internal class based on <xref:System.Windows.Data.CollectionView> is the default view for collections that implement only <xref:System.Collections.IEnumerable>. <xref:System.Windows.Data.ListCollectionView> is the default view for collections that implement <xref:System.Collections.IList>. <xref:System.Windows.Data.BindingListCollectionView> is the default view for collections that implement <xref:System.ComponentModel.IBindingListView> or <xref:System.ComponentModel.IBindingList>.  
-  
- Alternatively, you can create a view of your collection in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by using the <xref:System.Windows.Data.CollectionViewSource> class and then bind your control to that view. The <xref:System.Windows.Data.CollectionViewSource> class is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class. For an example, see [How to: Sort and Group Data Using a View in XAML](~/docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md).  
-  
- For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
- To set a view in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], use the <xref:System.Windows.Data.CollectionViewSource> class. <xref:System.Windows.Data.CollectionViewSource> is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class, and it exposes the most commonly used members of the <xref:System.Windows.Data.CollectionView> class.  
-  
+You should not create objects of this class in your code. To create a collection view for a collection that only implements <xref:System.Collections.IEnumerable>, create a <xref:System.Windows.Data.CollectionViewSource> object, add your collection to the <xref:System.Windows.Data.CollectionViewSource.Source%2A> property, and get the collection view from the <xref:System.Windows.Data.CollectionViewSource.View%2A> property.  
+ 
+You can think of a collection view as a layer on top of a binding source collection that allows you to navigate and display the collection based on sort, filter, and group queries, all without having to manipulate the underlying source collection itself. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes that raise the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.  
+ 
+Because a view does not change the underlying source collection, a source collection can have multiple views associated with it. By using views, you can display the same data in different ways. For example, you can use two views on a collection of `Task` objects to show tasks sorted by priority on one part of the page and grouped by area on another part of the page.  
+ 
+In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications, all collections have an associated default collection view. Rather than working with the collection directly, the binding engine always accesses the collection through the associated view. To get the default view, use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A?displayProperty=fullName> method. An internal class based on <xref:System.Windows.Data.CollectionView> is the default view for collections that implement only <xref:System.Collections.IEnumerable>. <xref:System.Windows.Data.ListCollectionView> is the default view for collections that implement <xref:System.Collections.IList>. <xref:System.Windows.Data.BindingListCollectionView> is the default view for collections that implement <xref:System.ComponentModel.IBindingListView> or <xref:System.ComponentModel.IBindingList>.  
+ 
+Alternatively, you can create a view of your collection in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by using the <xref:System.Windows.Data.CollectionViewSource> class and then bind your control to that view. The <xref:System.Windows.Data.CollectionViewSource> class is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class. For an example, see [How to: Sort and Group Data Using a View in XAML](~/docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md).  
+ 
+For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
+To set a view in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], use the <xref:System.Windows.Data.CollectionViewSource> class. <xref:System.Windows.Data.CollectionViewSource> is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class, and it exposes the most commonly used members of the <xref:System.Windows.Data.CollectionView> class.  
+ 
 <a name="xamlTextUsage_CollectionView"></a>   
 ## XAML Text Usage  
- See Remarks  
-  
+See Remarks  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.CollectionView" /> class that represents a view of the specified collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instance of <xref:System.Windows.Data.CollectionView> is bound to the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread dispatcher of the caller of this constructor.  
-  
+The instance of <xref:System.Windows.Data.CollectionView> is bound to the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread dispatcher of the caller of this constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
           <see langword="true" /> if the view supports filtering; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property returns `false`, setting the <xref:System.Windows.Data.CollectionView.Filter%2A> property throws an exception.  
-  
+If this property returns `false`, setting the <xref:System.Windows.Data.CollectionView.Filter%2A> property throws an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to test whether the view supports sorting before adding <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A>. Derived classes override this property to indicate whether they support grouping.  
-  
+Use this property to test whether the view supports sorting before adding <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A>. Derived classes override this property to indicate whether they support grouping.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to test whether the view supports sorting before adding <xref:System.Windows.Data.CollectionView.SortDescriptions%2A>. Derived classes override this property to indicate whether they support sorting.  
-  
+Use this property to test whether the view supports sorting before adding <xref:System.Windows.Data.CollectionView.SortDescriptions%2A>. Derived classes override this property to indicate whether they support sorting.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,10 +271,10 @@
           <see langword="true" /> if the item belongs to the view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not make any assumptions about whether the item belongs to the underlying collection. If the caller knows that the item belongs to the underlying collection, it is more efficient to call the <xref:System.Windows.Data.CollectionView.PassesFilter%2A> method.  
-  
+This method does not make any assumptions about whether the item belongs to the underlying collection. If the caller knows that the item belongs to the underlying collection, it is more efficient to call the <xref:System.Windows.Data.CollectionView.PassesFilter%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,10 +296,10 @@
         <value>The number of records in the view, or –1 if the number of records is unknown.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a filter is set, this property value only includes items that pass the filter. If the underlying collection is of type <xref:System.Collections.IEnumerable>, this is an O(N) operation. This value is cached until the collection changes.  
-  
+If a filter is set, this property value only includes items that pass the filter. If the underlying collection is of type <xref:System.Collections.IEnumerable>, this is an O(N) operation. This value is cached until the collection changes.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -387,14 +387,14 @@
         <value>The current item of the view. By default, the first item of the collection starts as the current item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
-  
- Note that moving the current record pointer has some interactions with any sorting or filtering that is applied to the collection. Sorting preserves the current record pointer on the last record selected, but the collection view is restructured around it. (Perhaps the selected record was at the beginning of the list before, but now the selected record might be somewhere in the middle.) Filtering preserves the selected record if that selection remains in view after the filtering. Otherwise, the current record pointer is set to the first record of the filtered collection view.  
-  
- The current item of the collection is bound to automatically if the target of a binding is a singleton value. If the target is an <xref:System.Windows.Controls.ItemsControl>, the current item is synchronized with the selected item. For example, if a list box is bound to a collection, the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> is synchronized with the currently selected item.  
-  
+Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
+ 
+Note that moving the current record pointer has some interactions with any sorting or filtering that is applied to the collection. Sorting preserves the current record pointer on the last record selected, but the collection view is restructured around it. (Perhaps the selected record was at the beginning of the list before, but now the selected record might be somewhere in the middle.) Filtering preserves the selected record if that selection remains in view after the filtering. Otherwise, the current record pointer is set to the first record of the filtered collection view.  
+ 
+The current item of the collection is bound to automatically if the target of a binding is a singleton value. If the target is an <xref:System.Windows.Controls.ItemsControl>, the current item is synchronized with the selected item. For example, if a list box is bound to a collection, the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> is synchronized with the currently selected item.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -441,10 +441,10 @@
         <returns>An <see cref="T:System.IDisposable" /> object that you can use to dispose of the calling object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The typical usage is to create a `using` scope with this method and then place multiple view-changing calls within the scope. This delays automatic refresh until the defer cycle is exited.  
-  
+The typical usage is to create a `using` scope with this method and then place multiple view-changing calls within the scope. This delays automatic refresh until the defer cycle is exited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -466,10 +466,10 @@
         <summary>Removes the reference to the underlying collection from the <see cref="T:System.Windows.Data.CollectionView" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to unsubscribe to events on the underlying collection and allow the <xref:System.Windows.Data.CollectionView> to be garbage collected.  
-  
+Use this method to unsubscribe to events on the underlying collection and allow the <xref:System.Windows.Data.CollectionView> to be garbage collected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -491,10 +491,10 @@
         <value>A delegate that represents the method used to determine if an item is suitable for inclusion in the view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Simpler implementations do not support filtering and throw a <xref:System.NotSupportedException>. Use the <xref:System.Windows.Data.CollectionView.CanFilter%2A> property to test if filtering is supported before assigning this property with a non-null value.  
-  
+Simpler implementations do not support filtering and throw a <xref:System.NotSupportedException>. Use the <xref:System.Windows.Data.CollectionView.CanFilter%2A> property to test if filtering is supported before assigning this property with a non-null value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current implementation does not support filtering.</exception>
@@ -540,12 +540,12 @@
         <returns>The item at the specified zero-based index in the view.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method evaluates the index with any <xref:System.Windows.Data.CollectionView.SortDescriptions%2A> or <xref:System.Windows.Data.CollectionView.Filter%2A> property values that are set on the view.  
-  
- If the underlying collection is of type <xref:System.Collections.IEnumerable>, this is an O(N) operation.  
-  
+This method evaluates the index with any <xref:System.Windows.Data.CollectionView.SortDescriptions%2A> or <xref:System.Windows.Data.CollectionView.Filter%2A> property values that are set on the view.  
+ 
+If the underlying collection is of type <xref:System.Collections.IEnumerable>, this is an O(N) operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -573,10 +573,10 @@
           <see langword="null" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is always `null` because the <xref:System.Windows.Data.CollectionView> class does not support grouping over its underlying collection. The derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> do support grouping.  
-  
+The value of this property is always `null` because the <xref:System.Windows.Data.CollectionView> class does not support grouping over its underlying collection. The derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> do support grouping.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -599,10 +599,10 @@
           <see langword="null" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is always `null` because the <xref:System.Windows.Data.CollectionView> class does not support grouping over its underlying collection. The derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> do support grouping.  
-  
+The value of this property is always `null` because the <xref:System.Windows.Data.CollectionView> class does not support grouping over its underlying collection. The derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> do support grouping.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -628,12 +628,12 @@
         <returns>The index at which the specified item is located, or –1 if the item is unknown.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this method returns an index other than -1, it must always be true that view[index-1] < item <= view[index], where the comparisons are done using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method of the view, if one exists.  
-  
- This particular behavior of the method is used by some <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event handlers to speed up reaction to insertion and deletion. If the derived class does not override this method, a listener does a binary search using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method.  
-  
+If this method returns an index other than -1, it must always be true that view[index-1] < item <= view[index], where the comparisons are done using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method of the view, if one exists.  
+ 
+This particular behavior of the method is used by some <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event handlers to speed up reaction to insertion and deletion. If the derived class does not override this method, a listener does a binary search using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -656,10 +656,10 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> of the view is beyond the end of the collection; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
-  
+Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -682,10 +682,10 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> of the view is before the beginning of the collection; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
-  
+Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -810,22 +810,22 @@
           <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is within the view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified item is not found, the method returns `false` and the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> is positioned before the beginning of the collection in the view.  
+If the specified item is not found, the method returns `false` and the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> is positioned before the beginning of the collection in the view.  
+ 
+Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
+For more information about the current item of a view, see <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
+ 
   
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
- For more information about the current item of a view, see <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of this method.  
-  
- [!code-csharp[Colors#NewColor](~/samples/snippets/csharp/VS_Snippets_Wpf/Colors/CSharp/Colors.xaml.cs#newcolor)]
- [!code-vb[Colors#NewColor](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Colors/visualbasic/colors.xaml.vb#newcolor)]  
-  
+The following example demonstrates the use of this method.  
+ 
+[!code-csharp[Colors#NewColor](~/samples/snippets/csharp/VS_Snippets_Wpf/Colors/CSharp/Colors.xaml.cs#newcolor)]
+[!code-vb[Colors#NewColor](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Colors/visualbasic/colors.xaml.vb#newcolor)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -849,10 +849,10 @@
           <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -876,10 +876,10 @@
           <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -903,10 +903,10 @@
           <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -933,10 +933,10 @@
           <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -960,10 +960,10 @@
           <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -986,10 +986,10 @@
           <see langword="true" /> if the view needs to be refreshed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates if the internal state of the view has changed and requires a <xref:System.Windows.Data.CollectionView.Refresh%2A> method call. The typical scenario is if a <xref:System.ComponentModel.SortDescription> or similar has been added to the view while the view is in a deferred refresh cycle (see <xref:System.Windows.Data.CollectionView.DeferRefresh%2A>). In this scenario, no explicit call to <xref:System.Windows.Data.CollectionView.Refresh%2A> is needed; as soon as the deferred refresh cycle ends, the view calls refresh automatically.  
-  
+This property indicates if the internal state of the view has changed and requires a <xref:System.Windows.Data.CollectionView.Refresh%2A> method call. The typical scenario is if a <xref:System.ComponentModel.SortDescription> or similar has been added to the view while the view is in a deferred refresh cycle (see <xref:System.Windows.Data.CollectionView.DeferRefresh%2A>). In this scenario, no explicit call to <xref:System.Windows.Data.CollectionView.Refresh%2A> is needed; as soon as the deferred refresh cycle ends, the view calls refresh automatically.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1011,12 +1011,12 @@
         <value>The object that is in the collection to represent a new item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Windows.Data.CollectionView> that implements <xref:System.ComponentModel.IEditableCollectionView> has <xref:System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition%2A> set to <xref:System.ComponentModel.NewItemPlaceholderPosition> or <xref:System.ComponentModel.NewItemPlaceholderPosition>, the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> is added to the collection.  The <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> always appears in the collection; it does not participate in grouping, sorting, or filtering.  
-  
- The <xref:System.Windows.Data.CollectionView.CurrentItem%2A> cannot be the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A>. Methods that perform relative navigation, such as the <xref:System.Windows.Data.CollectionView.MoveCurrentToNext%2A>, skip the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A>.  <xref:System.Windows.Data.CollectionView.MoveCurrentToFirst%2A> and <xref:System.Windows.Data.CollectionView.MoveCurrentToLast%2A> skip the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> if <xref:System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition%2A> is set to <xref:System.ComponentModel.NewItemPlaceholderPosition> or <xref:System.ComponentModel.NewItemPlaceholderPosition>, respectively. Methods that perform absolute navigation, such as <xref:System.Windows.Data.CollectionView.MoveCurrentToPosition%2A>, do nothing if the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> would be the <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
-  
+When a <xref:System.Windows.Data.CollectionView> that implements <xref:System.ComponentModel.IEditableCollectionView> has <xref:System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition%2A> set to <xref:System.ComponentModel.NewItemPlaceholderPosition> or <xref:System.ComponentModel.NewItemPlaceholderPosition>, the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> is added to the collection.  The <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> always appears in the collection; it does not participate in grouping, sorting, or filtering.  
+ 
+The <xref:System.Windows.Data.CollectionView.CurrentItem%2A> cannot be the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A>. Methods that perform relative navigation, such as the <xref:System.Windows.Data.CollectionView.MoveCurrentToNext%2A>, skip the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A>.  <xref:System.Windows.Data.CollectionView.MoveCurrentToFirst%2A> and <xref:System.Windows.Data.CollectionView.MoveCurrentToLast%2A> skip the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> if <xref:System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition%2A> is set to <xref:System.ComponentModel.NewItemPlaceholderPosition> or <xref:System.ComponentModel.NewItemPlaceholderPosition>, respectively. Methods that perform absolute navigation, such as <xref:System.Windows.Data.CollectionView.MoveCurrentToPosition%2A>, do nothing if the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> would be the <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1107,10 +1107,10 @@
         <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Take any sorting, filtering, or grouping criteria into consideration before calling this method to raise the <xref:System.Windows.Data.CollectionView.CollectionChanged> event.  
-  
+Take any sorting, filtering, or grouping criteria into consideration before calling this method to raise the <xref:System.Windows.Data.CollectionView.CollectionChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1137,10 +1137,10 @@
         <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls <xref:System.Windows.Data.CollectionView.ProcessCollectionChanged%2A> if it is on the correct [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread dispatcher and has never been updated from a different thread, or posts the change to the dispatcher to process it on the correct thread.  
-  
+This method calls <xref:System.Windows.Data.CollectionView.ProcessCollectionChanged%2A> if it is on the correct [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread dispatcher and has never been updated from a different thread, or posts the change to the dispatcher to process it on the correct thread.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1180,10 +1180,10 @@
         <summary>Raises a <see cref="E:System.Windows.Data.CollectionView.CurrentChanging" /> event that is not cancelable.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets <xref:System.Windows.Data.CollectionView.CurrentPosition%2A> to –1. This method is called by collection changes that affect the <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
-  
+This method sets <xref:System.Windows.Data.CollectionView.CurrentPosition%2A> to –1. This method is called by collection changes that affect the <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1252,10 +1252,10 @@
           <see langword="true" /> if the specified item belongs to the view or if there is not filter set on the collection view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the <xref:System.Windows.Data.CollectionView.Contains%2A> method, this method assumes that the specified item belongs to the underlying collection. This method takes filters into account. Typically, you use this method during collection-changed notifications to determine if the added or removed item requires processing.  
-  
+Unlike the <xref:System.Windows.Data.CollectionView.Contains%2A> method, this method assumes that the specified item belongs to the underlying collection. This method takes filters into account. Typically, you use this method during collection-changed notifications to determine if the added or removed item requires processing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1336,12 +1336,12 @@
         <summary>Re-creates the view.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you set  the <xref:System.Windows.Data.CollectionView.Filter%2A>, <xref:System.Windows.Data.CollectionView.SortDescriptions%2A>, or <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A> property; a refresh occurs.  You do not have to call the <xref:System.Windows.Data.CollectionView.Refresh%2A> method immediately after you set one of those properties. For information about how to delay automatic refresh, see <xref:System.Windows.Data.CollectionView.DeferRefresh%2A>.  
-  
- Derived classes use the protected <xref:System.Windows.Data.CollectionView.RefreshOverride%2A> method to override the behavior of this method.  
-  
+When you set  the <xref:System.Windows.Data.CollectionView.Filter%2A>, <xref:System.Windows.Data.CollectionView.SortDescriptions%2A>, or <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A> property; a refresh occurs.  You do not have to call the <xref:System.Windows.Data.CollectionView.Refresh%2A> method immediately after you set one of those properties. For information about how to delay automatic refresh, see <xref:System.Windows.Data.CollectionView.DeferRefresh%2A>.  
+ 
+Derived classes use the protected <xref:System.Windows.Data.CollectionView.RefreshOverride%2A> method to override the behavior of this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1432,12 +1432,12 @@
         <summary>Sets the specified item and index as the values of the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> and <see cref="P:System.Windows.Data.CollectionView.CurrentPosition" /> properties. This method can be called from a constructor of a derived class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this overload from constructor of a derived class.  Do not pass the <xref:System.Windows.Data.CollectionView.Count%2A> property, which is a virtual property, as `count`. Instead, pass the count of the internal <xref:System.Collections.IList> that represents the collection.  
-  
- <xref:System.Windows.Data.CollectionView.SetCurrent%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+Call this overload from constructor of a derived class.  Do not pass the <xref:System.Windows.Data.CollectionView.Count%2A> property, which is a virtual property, as `count`. Instead, pass the count of the internal <xref:System.Collections.IList> that represents the collection.  
+ 
+<xref:System.Windows.Data.CollectionView.SetCurrent%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1459,10 +1459,10 @@
         <value>An empty <see cref="T:System.ComponentModel.SortDescriptionCollection" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot add a <xref:System.ComponentModel.SortDescription> to the returned (empty) collection because the base class <xref:System.Windows.Data.CollectionView> does not support sorting. Instead, use the derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> that do support sorting. Also, check the <xref:System.Windows.Data.CollectionView.CanSort%2A> property before adding or removing <xref:System.ComponentModel.SortDescription> objects to avoid an exception.  
-  
+You cannot add a <xref:System.ComponentModel.SortDescription> to the returned (empty) collection because the base class <xref:System.Windows.Data.CollectionView> does not support sorting. Instead, use the derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> that do support sorting. Also, check the <xref:System.Windows.Data.CollectionView.CanSort%2A> property before adding or removing <xref:System.ComponentModel.SortDescription> objects to avoid an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>

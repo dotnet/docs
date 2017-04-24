@@ -14,24 +14,24 @@
     <summary>The SOAP representation of a server error.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an XML Web service client adds a SOAP header to an XML Web service method call with the <xref:System.Web.Services.Protocols.SoapHeader.MustUnderstand%2A> property set to `true`, the XML Web service method must set the <xref:System.Web.Services.Protocols.SoapHeader.DidUnderstand%2A> property to `true`; otherwise, a <xref:System.Web.Services.Protocols.SoapHeaderException> is thrown.  
-  
- The <xref:System.Web.Services.Protocols.SoapException.Detail%2A> property cannot be set according to the SOAP specification for a <xref:System.Web.Services.Protocols.SoapHeaderException>.  
-  
+When an XML Web service client adds a SOAP header to an XML Web service method call with the <xref:System.Web.Services.Protocols.SoapHeader.MustUnderstand%2A> property set to `true`, the XML Web service method must set the <xref:System.Web.Services.Protocols.SoapHeader.DidUnderstand%2A> property to `true`; otherwise, a <xref:System.Web.Services.Protocols.SoapHeaderException> is thrown.  
+ 
+The <xref:System.Web.Services.Protocols.SoapException.Detail%2A> property cannot be set according to the SOAP specification for a <xref:System.Web.Services.Protocols.SoapHeaderException>.  
+ 
 > [!NOTE]
 >  Applications that use the SOAP 1.1 specification as the service protocol can use the <xref:System.Web.Services.Protocols.SoapHeaderException> to access SOAP faults. However, applications that use the SOAP 1.2 specification must use the <xref:System.Web.Services.Protocols.SoapException> to access SOAP faults.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, an XML Web service client calls the `MyWebMethod` XML Web service method, passing in a SOAP header of type `MyHeader` with the <xref:System.Web.Services.Protocols.SoapHeader.MustUnderstand%2A> property set to `true`. If the XML Web service method does not set the <xref:System.Web.Services.Protocols.SoapHeader.DidUnderstand%2A> property of the `MyHeader` SOAP header to `true`, a <xref:System.Web.Services.Protocols.SoapHeaderException> is thrown.  
-  
- [!code-cpp[Classic SoapHeader.MustUnderstand Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic SoapHeader.MustUnderstand Example/CPP/source.cpp#1)]
- [!code-csharp[Classic SoapHeader.MustUnderstand Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHeader.MustUnderstand Example/CS/source.cs#1)]
- [!code-vb[Classic SoapHeader.MustUnderstand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHeader.MustUnderstand Example/VB/source.vb#1)]  
-  
+In the following example, an XML Web service client calls the `MyWebMethod` XML Web service method, passing in a SOAP header of type `MyHeader` with the <xref:System.Web.Services.Protocols.SoapHeader.MustUnderstand%2A> property set to `true`. If the XML Web service method does not set the <xref:System.Web.Services.Protocols.SoapHeader.DidUnderstand%2A> property of the `MyHeader` SOAP header to `true`, a <xref:System.Web.Services.Protocols.SoapHeaderException> is thrown.  
+ 
+[!code-cpp[Classic SoapHeader.MustUnderstand Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic SoapHeader.MustUnderstand Example/CPP/source.cpp#1)]
+[!code-csharp[Classic SoapHeader.MustUnderstand Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHeader.MustUnderstand Example/CS/source.cs#1)]
+[!code-vb[Classic SoapHeader.MustUnderstand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHeader.MustUnderstand Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

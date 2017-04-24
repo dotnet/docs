@@ -18,12 +18,12 @@
     <summary>Specifies the options that are used for binding to the server. The application can set multiple options that are linked with a bitwise OR operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the context options are not specified by the application, the Account Management API uses the following combination of options:  
-  
+When the context options are not specified by the application, the Account Management API uses the following combination of options:  
+ 
 -   ContextOptions.Negotiate &#124; ContextOptions.Signing &#124; ContextOptions.Sealing  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>The data is encrypted by using Kerberos.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This flag can only be used with the Negotiate context option and is not available with the simple bind option.  
-  
+This flag can only be used with the Negotiate context option and is not available with the simple bind option.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <summary>The client is authenticated by using the Basic authentication.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Caution** Communications may be sent over the Internet in clear text if the SecureSocketsLayer option is not specified with simple bind.  
-  
+**Caution** Communications may be sent over the Internet in clear text if the SecureSocketsLayer option is not specified with simple bind.  
+ 
  ]]></format>
         </remarks>
       </Docs>

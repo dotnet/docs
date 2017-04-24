@@ -14,20 +14,20 @@
     <summary>Represents a key identifier clause that identifies a <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" /> security tokens using the distinguished name of the certificate issuer and the X.509 certificate's serial number.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> is not used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token using the distinguished name of the certificate issuer and the X.509 certificate's serial number. The <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties represent the distinguished name of the certificate issuer and the X.509 certificate's serial number, respectively.  
-  
- [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
-  
+Typically, the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> is not used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token using the distinguished name of the certificate issuer and the X.509 certificate's serial number. The <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties represent the distinguished name of the certificate issuer and the X.509 certificate's serial number, respectively.  
+ 
+[!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
+ 
 -   <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>  
-  
- <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause>  
-  
+ 
+<xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause>  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> class using the specified X.509 certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> to the value of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.IssuerName%2A> property and the issuer serial number returned from the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber%2A> method, respectively.  
-  
+This constructor sets the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> to the value of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.IssuerName%2A> property and the issuer serial number returned from the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber%2A> method, respectively.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -78,10 +78,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> class using the specified distinguished name of the certificate issuer and the serial number of the X.509 certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `issuerSerialNumber` parameter must be in signed large integer format.  
-  
+The `issuerSerialNumber` parameter must be in signed large integer format.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -109,12 +109,12 @@
         <value>The distinguished name of the certificate authority that issued the X.509 certificate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> property contains the name of the certificate authority (CA) that issued the certificate.  
-  
- The distinguished name for the certificate is a textual representation of the certificate subject or issuer. This representation consists of X.500 name attributes (for example, "CN=MyName, OU=MyOrgUnit, C=US").  
-  
+The <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> property contains the name of the certificate authority (CA) that issued the certificate.  
+ 
+The distinguished name for the certificate is a textual representation of the certificate subject or issuer. This representation consists of X.500 name attributes (for example, "CN=MyName, OU=MyOrgUnit, C=US").  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <value>The serial number of the X.509 certificate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The issuer serial number is in signed large integer format.  
-  
+The issuer serial number is in signed large integer format.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
           <see langword="true" /> if <paramref name="keyIdentifierClause" /> is a <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> type and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> class, the values of the key identifier clauses that are compared to determine if there is a match are the values of the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties.  
-  
+For the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> class, the values of the key identifier clauses that are compared to determine if there is a match are the values of the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
           <see langword="true" /> if <paramref name="certificate" /> has the same issuer name and issuer serial number as the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The issuer name and issuer serial number are obtained from the `certificate` parameter, by getting the value of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.IssuerName%2A> property and calling the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber%2A> method, respectively.  
-  
+The issuer name and issuer serial number are obtained from the `certificate` parameter, by getting the value of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.IssuerName%2A> property and calling the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber%2A> method, respectively.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,10 +247,10 @@
         <returns>A <see cref="T:System.String" /> that represents the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches%2A> method returns the values of the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties.  
-  
+The <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches%2A> method returns the values of the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

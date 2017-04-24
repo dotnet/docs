@@ -19,10 +19,10 @@
     <summary>Encapsulates the HTTP intrinsic object that provides access to files that were uploaded by a client.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpFileCollectionWrapper> class derives from the <xref:System.Web.HttpFileCollectionBase> class and serves as a wrapper for the <xref:System.Web.HttpFileCollection> class. This class exposes the functionality of the <xref:System.Web.HttpFileCollection> class while also exposing the <xref:System.Web.HttpFileCollectionBase> type. The <xref:System.Web.HttpFileCollectionBase> class enables you to replace the original implementation of the <xref:System.Web.HttpFileCollection> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
-  
+The <xref:System.Web.HttpFileCollectionWrapper> class derives from the <xref:System.Web.HttpFileCollectionBase> class and serves as a wrapper for the <xref:System.Web.HttpFileCollection> class. This class exposes the functionality of the <xref:System.Web.HttpFileCollection> class while also exposing the <xref:System.Web.HttpFileCollectionBase> type. The <xref:System.Web.HttpFileCollectionBase> class enables you to replace the original implementation of the <xref:System.Web.HttpFileCollection> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
+ 
  ]]></format>
     </remarks>
   </Docs>

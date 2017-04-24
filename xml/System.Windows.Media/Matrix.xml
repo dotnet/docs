@@ -26,67 +26,67 @@
     <summary>Represents a 3x3 affine transformation matrix used for transformations in [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A 3x3 matrix is used for transformations in a [!INCLUDE[TLA2#tla_2d](~/includes/tla2sharptla-2d-md.md)] x-y plane. Affine transformation matrices can be multiplied to form any number of linear transformations, such as rotation and skew (shear), followed by translation. An affine transformation matrix has its final column equal to (0, 0, 1), so only the members in the first two columns need to be specified.  Note that vectors are expressed as row-vectors, not column vectors.  
-  
- A [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Media.Matrix> is stored using row-major order and has the following structure:  
-  
+A 3x3 matrix is used for transformations in a [!INCLUDE[TLA2#tla_2d](~/includes/tla2sharptla-2d-md.md)] x-y plane. Affine transformation matrices can be multiplied to form any number of linear transformations, such as rotation and skew (shear), followed by translation. An affine transformation matrix has its final column equal to (0, 0, 1), so only the members in the first two columns need to be specified.  Note that vectors are expressed as row-vectors, not column vectors.  
+ 
+A [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Media.Matrix> is stored using row-major order and has the following structure:  
+ 
 ||||  
 |-|-|-|  
 |<xref:System.Windows.Media.Matrix.M11%2A>|<xref:System.Windows.Media.Matrix.M12%2A>|0|  
 |<xref:System.Windows.Media.Matrix.M21%2A>|<xref:System.Windows.Media.Matrix.M22%2A>|0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A>|<xref:System.Windows.Media.Matrix.OffsetY%2A>|1|  
-  
- The members in the last row, <xref:System.Windows.Media.Matrix.OffsetX%2A> and <xref:System.Windows.Media.Matrix.OffsetY%2A>, represent translation values.  
-  
- In methods and properties, the transformation matrix is usually specified as a vector with only six members, as follows:  
-  
- (<xref:System.Windows.Media.Matrix.M11%2A>, <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.M22%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, <xref:System.Windows.Media.Matrix.OffsetY%2A>)  
-  
- Although you can use a <xref:System.Windows.Media.Matrix> structure directly to translate individual points, or with a <xref:System.Windows.Media.MatrixTransform> to transform objects, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] also provides a set of classes that enable you to transform objects without working directly with matrices: <xref:System.Windows.Media.RotateTransform>, <xref:System.Windows.Media.ScaleTransform>, <xref:System.Windows.Media.SkewTransform>, and <xref:System.Windows.Media.TranslateTransform>.  
-  
+ 
+The members in the last row, <xref:System.Windows.Media.Matrix.OffsetX%2A> and <xref:System.Windows.Media.Matrix.OffsetY%2A>, represent translation values.  
+ 
+In methods and properties, the transformation matrix is usually specified as a vector with only six members, as follows:  
+ 
+(<xref:System.Windows.Media.Matrix.M11%2A>, <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.M22%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, <xref:System.Windows.Media.Matrix.OffsetY%2A>)  
+ 
+Although you can use a <xref:System.Windows.Media.Matrix> structure directly to translate individual points, or with a <xref:System.Windows.Media.MatrixTransform> to transform objects, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] also provides a set of classes that enable you to transform objects without working directly with matrices: <xref:System.Windows.Media.RotateTransform>, <xref:System.Windows.Media.ScaleTransform>, <xref:System.Windows.Media.SkewTransform>, and <xref:System.Windows.Media.TranslateTransform>.  
+ 
 <a name="xamlAttributeUsage_Matrix"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="m11, m12, m21, m22, offsetX, offsetY"/>  
 - or -  
 <object property="Identity"/>  
 ```  
-  
+ 
 <a name="xamlValues_Matrix"></a>   
 ## XAML Values  
- *m11*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the first row and first column of this <xref:System.Windows.Media.Matrix>. For more information, see the <xref:System.Windows.Media.Matrix.M11%2A> property.  
-  
- *m12*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the first row and second column. For more information, see the <xref:System.Windows.Media.Matrix.M12%2A> property.  
-  
- *m21*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the second row and first column. For more information, see the <xref:System.Windows.Media.Matrix.M21%2A> property.  
-  
- *m22*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the second row and second column. For more information, see the <xref:System.Windows.Media.Matrix.M22%2A> property.  
-  
- *offsetX*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the third row and third column. For more information, see the <xref:System.Windows.Media.Matrix.OffsetX%2A> property.  
-  
- *offsetY*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value in the third row and second column. For more information, see the <xref:System.Windows.Media.Matrix.OffsetY%2A> property.  
-  
+*m11*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the first row and first column of this <xref:System.Windows.Media.Matrix>. For more information, see the <xref:System.Windows.Media.Matrix.M11%2A> property.  
+ 
+*m12*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the first row and second column. For more information, see the <xref:System.Windows.Media.Matrix.M12%2A> property.  
+ 
+*m21*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the second row and first column. For more information, see the <xref:System.Windows.Media.Matrix.M21%2A> property.  
+ 
+*m22*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the second row and second column. For more information, see the <xref:System.Windows.Media.Matrix.M22%2A> property.  
+ 
+*offsetX*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the third row and third column. For more information, see the <xref:System.Windows.Media.Matrix.OffsetX%2A> property.  
+ 
+*offsetY*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value in the third row and second column. For more information, see the <xref:System.Windows.Media.Matrix.OffsetY%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -139,17 +139,17 @@
         <summary>Appends the specified <see cref="T:System.Windows.Media.Matrix" /> structure to this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is the same as multiplying this <xref:System.Windows.Media.Matrix> structure by the parameter `matrix`.  Matrix multiplication is not commutative, though, so this operation is not the same as multiplying the parameter `matrix` by this <xref:System.Windows.Media.Matrix> structure; that is, (this * `matrix`) is not the same as (`matrix` * this).  
+This operation is the same as multiplying this <xref:System.Windows.Media.Matrix> structure by the parameter `matrix`.  Matrix multiplication is not commutative, though, so this operation is not the same as multiplying the parameter `matrix` by this <xref:System.Windows.Media.Matrix> structure; that is, (this * `matrix`) is not the same as (`matrix` * this).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to append a <xref:System.Windows.Media.Matrix> structure to another <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixRotateAboutPointExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixrotateaboutpointexample_csharp)]  
-  
+The following example shows how to append a <xref:System.Windows.Media.Matrix> structure to another <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixRotateAboutPointExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixrotateaboutpointexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,12 +171,12 @@
         <value>The determinant of this <see cref="T:System.Windows.Media.Matrix" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to get the determinant of a <xref:System.Windows.Media.Matrix>.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixDeterminantExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixdeterminantexample_csharp)]  
-  
+This example shows how to get the determinant of a <xref:System.Windows.Media.Matrix>.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixDeterminantExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixdeterminantexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,19 +203,19 @@
           <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Media.Matrix" /> structure that is identical to this <see cref="T:System.Windows.Media.Matrix" /> structure; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  A <xref:System.Windows.Media.Matrix> stores its values as doubles. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
-  
+The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,19 +242,19 @@
           <see langword="true" /> if instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  A <xref:System.Windows.Media.Matrix> stores its values as doubles. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
-  
+The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,12 +283,12 @@
           <see langword="true" /> if <paramref name="matrix1" /> and <paramref name="matrix2" /> are identical; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  A <xref:System.Windows.Media.Matrix> stores its values as doubles. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,12 +330,12 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.Matrix" /> has an inverse; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example checks whether a <xref:System.Windows.Media.Matrix> is invertible. If it is invertible, the <xref:System.Windows.Media.Matrix> is inverted.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixInverseExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixinverseexample_csharp)]  
-  
+The following example checks whether a <xref:System.Windows.Media.Matrix> is invertible. If it is invertible, the <xref:System.Windows.Media.Matrix> is inverted.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixInverseExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixinverseexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,25 +357,25 @@
         <value>An identity matrix.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An identity matrix has a value of 1 in coefficients [1,1],[2,2],[3,3] and a value of 0 in the rest of the coefficients. This correlates to setting <xref:System.Windows.Media.Matrix.M11%2A> and <xref:System.Windows.Media.Matrix.M22%2A> to 1 and <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, and <xref:System.Windows.Media.Matrix.OffsetY%2A> to 0. In an affine matrix, which is the implementation that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] uses for the <xref:System.Windows.Media.Matrix>, structure, coefficients [3,1],[3,2],[3.3] are implied to always have the values 0,0,1 respectively.  
-  
+An identity matrix has a value of 1 in coefficients [1,1],[2,2],[3,3] and a value of 0 in the rest of the coefficients. This correlates to setting <xref:System.Windows.Media.Matrix.M11%2A> and <xref:System.Windows.Media.Matrix.M22%2A> to 1 and <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, and <xref:System.Windows.Media.Matrix.OffsetY%2A> to 0. In an affine matrix, which is the implementation that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] uses for the <xref:System.Windows.Media.Matrix>, structure, coefficients [3,1],[3,2],[3.3] are implied to always have the values 0,0,1 respectively.  
+ 
 ||||  
 |-|-|-|  
 |1|0|0|  
 |0|1|0|  
 |0|0|1|  
+ 
+For an identity matrix, the <xref:System.Windows.Media.Matrix.ToString%2A> method returns the string "Identity" instead of the coefficients of the <xref:System.Windows.Media.Matrix>.  
+ 
   
- For an identity matrix, the <xref:System.Windows.Media.Matrix.ToString%2A> method returns the string "Identity" instead of the coefficients of the <xref:System.Windows.Media.Matrix>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to retrieve the <xref:System.Windows.Media.Matrix.Identity%2A> matrix.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixIdentityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixidentityexample_csharp)]  
-  
+The following example shows how to retrieve the <xref:System.Windows.Media.Matrix.Identity%2A> matrix.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixIdentityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixidentityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,12 +397,12 @@
         <summary>Inverts this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example checks if a <xref:System.Windows.Media.Matrix> structure is invertible. If it is invertible, the <xref:System.Windows.Media.Matrix> structure is inverted.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixInverseExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixinverseexample_csharp)]  
-  
+The following example checks if a <xref:System.Windows.Media.Matrix> structure is invertible. If it is invertible, the <xref:System.Windows.Media.Matrix> structure is inverted.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixInverseExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixinverseexample_csharp)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.Matrix" /> structure is not invertible.</exception>
@@ -426,18 +426,18 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.Matrix" /> structure is an identity matrix; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An identity matrix has a value of 1 in coefficients [1,1],[2,2],[3,3] and a value of 0 in the rest of the coefficients. This correlates to setting <xref:System.Windows.Media.Matrix.M11%2A> and <xref:System.Windows.Media.Matrix.M22%2A> to 1 and <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, and <xref:System.Windows.Media.Matrix.OffsetY%2A> to 0. In an affine matrix, which is the implementation that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] uses for the <xref:System.Windows.Media.Matrix> structure, coefficients [3,1],[3,2],[3.3] are implied to always have the values 0,0,1 respectively.  
-  
+An identity matrix has a value of 1 in coefficients [1,1],[2,2],[3,3] and a value of 0 in the rest of the coefficients. This correlates to setting <xref:System.Windows.Media.Matrix.M11%2A> and <xref:System.Windows.Media.Matrix.M22%2A> to 1 and <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, and <xref:System.Windows.Media.Matrix.OffsetY%2A> to 0. In an affine matrix, which is the implementation that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] uses for the <xref:System.Windows.Media.Matrix> structure, coefficients [3,1],[3,2],[3.3] are implied to always have the values 0,0,1 respectively.  
+ 
 ||||  
 |-|-|-|  
 |1|0|0|  
 |0|1|0|  
 |0|0|1|  
-  
- For an identity matrix, the <xref:System.Windows.Media.Matrix.ToString%2A> method returns the string "Identity", instead of the coefficients of the <xref:System.Windows.Media.Matrix>.  
-  
+ 
+For an identity matrix, the <xref:System.Windows.Media.Matrix.ToString%2A> method returns the string "Identity", instead of the coefficients of the <xref:System.Windows.Media.Matrix>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,12 +459,12 @@
         <value>The value of the first row and first column of this <see cref="T:System.Windows.Media.Matrix" />. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures and how to assign values to a <xref:System.Windows.Media.Matrix> when it is declared, and after the structure is declared.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
-  
+The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures and how to assign values to a <xref:System.Windows.Media.Matrix> when it is declared, and after the structure is declared.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -486,23 +486,23 @@
         <value>The value of the first row and second column of this <see cref="T:System.Windows.Media.Matrix" />. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the layout of a <xref:System.Windows.Media.Matrix>.  
-  
+The following table shows the layout of a <xref:System.Windows.Media.Matrix>.  
+ 
 ||||  
 |-|-|-|  
 |<xref:System.Windows.Media.Matrix.M11%2A>|<xref:System.Windows.Media.Matrix.M12%2A>|0|  
 |<xref:System.Windows.Media.Matrix.M21%2A>|<xref:System.Windows.Media.Matrix.M22%2A>|0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A>|<xref:System.Windows.Media.Matrix.OffsetY%2A>|1|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures and how to assign values to a <xref:System.Windows.Media.Matrix> when it is declared, and after the structure is declared.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
-  
+The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures and how to assign values to a <xref:System.Windows.Media.Matrix> when it is declared, and after the structure is declared.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -524,23 +524,23 @@
         <value>The value of the second row and first column of this <see cref="T:System.Windows.Media.Matrix" />. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the layout of a <xref:System.Windows.Media.Matrix>.  
-  
+The following table shows the layout of a <xref:System.Windows.Media.Matrix>.  
+ 
 ||||  
 |-|-|-|  
 |<xref:System.Windows.Media.Matrix.M11%2A>|<xref:System.Windows.Media.Matrix.M12%2A>|0|  
 |<xref:System.Windows.Media.Matrix.M21%2A>|<xref:System.Windows.Media.Matrix.M22%2A>|0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A>|<xref:System.Windows.Media.Matrix.OffsetY%2A>|1|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures and how to assign values to a <xref:System.Windows.Media.Matrix> when it is declared, and after the structure is declared.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
-  
+The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures and how to assign values to a <xref:System.Windows.Media.Matrix> when it is declared, and after the structure is declared.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -562,23 +562,23 @@
         <value>The value of the second row and second column of this <see cref="T:System.Windows.Media.Matrix" /> structure. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the layout of a <xref:System.Windows.Media.Matrix> structure.  
-  
+The following table shows the layout of a <xref:System.Windows.Media.Matrix> structure.  
+ 
 ||||  
 |-|-|-|  
 |<xref:System.Windows.Media.Matrix.M11%2A>|<xref:System.Windows.Media.Matrix.M12%2A>|0|  
 |<xref:System.Windows.Media.Matrix.M21%2A>|<xref:System.Windows.Media.Matrix.M22%2A>|0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A>|<xref:System.Windows.Media.Matrix.OffsetY%2A>|1|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures and how to assign values to a <xref:System.Windows.Media.Matrix> when it is declared, and after the structure is declared.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
-  
+The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures and how to assign values to a <xref:System.Windows.Media.Matrix> when it is declared, and after the structure is declared.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -606,17 +606,17 @@
         <returns>The result of multiplying <paramref name="trans1" /> by <paramref name="trans2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Matrix multiplication is not commutative. Multiplying `trans1` by `trans2` is not the same as multiplying `trans2` by `trans1`.  
+Matrix multiplication is not commutative. Multiplying `trans1` by `trans2` is not the same as multiplying `trans2` by `trans1`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
-  
+The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -638,18 +638,18 @@
         <value>The value of the third row and first column of this <see cref="T:System.Windows.Media.Matrix" /> structure. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Matrix.OffsetX%2A> property is so named because it specifies the amount to translate the coordinate space along the x-axis.  
-  
- The following table shows the layout of a <xref:System.Windows.Media.Matrix>.  
-  
+The <xref:System.Windows.Media.Matrix.OffsetX%2A> property is so named because it specifies the amount to translate the coordinate space along the x-axis.  
+ 
+The following table shows the layout of a <xref:System.Windows.Media.Matrix>.  
+ 
 ||||  
 |-|-|-|  
 |<xref:System.Windows.Media.Matrix.M11%2A>|<xref:System.Windows.Media.Matrix.M12%2A>|0|  
 |<xref:System.Windows.Media.Matrix.M21%2A>|<xref:System.Windows.Media.Matrix.M22%2A>|0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A>|<xref:System.Windows.Media.Matrix.OffsetY%2A>|1|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -671,18 +671,18 @@
         <value>The value of the third row and second column of this <see cref="T:System.Windows.Media.Matrix" /> structure. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Matrix.OffsetY%2A> property is so named because it specifies the amount to translate the coordinate space along the y-axis.  
-  
- The following table shows the layout of a <xref:System.Windows.Media.Matrix>.  
-  
+The <xref:System.Windows.Media.Matrix.OffsetY%2A> property is so named because it specifies the amount to translate the coordinate space along the y-axis.  
+ 
+The following table shows the layout of a <xref:System.Windows.Media.Matrix>.  
+ 
 ||||  
 |-|-|-|  
 |<xref:System.Windows.Media.Matrix.M11%2A>|<xref:System.Windows.Media.Matrix.M12%2A>|0|  
 |<xref:System.Windows.Media.Matrix.M21%2A>|<xref:System.Windows.Media.Matrix.M22%2A>|0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A>|<xref:System.Windows.Media.Matrix.OffsetY%2A>|1|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -711,19 +711,19 @@
           <see langword="true" /> if <paramref name="matrix1" /> and <paramref name="matrix2" /> are identical; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  A <xref:System.Windows.Media.Matrix> stores its values as doubles. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
-  
+The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -752,19 +752,19 @@
           <see langword="true" /> if <paramref name="matrix1" /> and <paramref name="matrix2" /> are not identical; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  A <xref:System.Windows.Media.Matrix> stores its values as doubles. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
-  
+The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -792,17 +792,17 @@
         <returns>The result of multiplying <paramref name="trans1" /> by <paramref name="trans2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Matrix multiplication is not commutative. Multiplying `trans1` by `trans2` is not the same as multiplying `trans2` by `trans1`.  
+Matrix multiplication is not commutative. Multiplying `trans1` by `trans2` is not the same as multiplying `trans2` by `trans1`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
-  
+The following example shows how to multiply two <xref:System.Windows.Media.Matrix> structures.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixMultiplicationExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixmultiplicationexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -828,12 +828,12 @@
         <returns>The equivalent <see cref="T:System.Windows.Media.Matrix" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to convert a string representation of a matrix into a <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixParseExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixparseexample_csharp)]  
-  
+The following example shows how to convert a string representation of a matrix into a <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixParseExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixparseexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -858,19 +858,19 @@
         <summary>Prepends the specified <see cref="T:System.Windows.Media.Matrix" /> structure onto this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is the same as multiplying the parameter `matrix` by this <xref:System.Windows.Media.Matrix> structure. Matrix multiplication is not commutative, however, so this operation is not the same as multiplying this <xref:System.Windows.Media.Matrix> structure by the parameter `matrix`; that is, `matrix` * this is not the same as this * `matrix`.  
+This operation is the same as multiplying the parameter `matrix` by this <xref:System.Windows.Media.Matrix> structure. Matrix multiplication is not commutative, however, so this operation is not the same as multiplying this <xref:System.Windows.Media.Matrix> structure by the parameter `matrix`; that is, `matrix` * this is not the same as this * `matrix`.  
+ 
+In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+ 
   
- In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to prepend a <xref:System.Windows.Media.Matrix> onto another <xref:System.Windows.Media.Matrix>.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixPrependExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependexample_csharp)]  
-  
+The following example shows how to prepend a <xref:System.Windows.Media.Matrix> onto another <xref:System.Windows.Media.Matrix>.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixPrependExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -895,12 +895,12 @@
         <summary>Applies a rotation of the specified angle about the origin of this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to rotate a <xref:System.Windows.Media.Matrix>.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixRotateExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixrotateexample_csharp)]  
-  
+The following example shows how to rotate a <xref:System.Windows.Media.Matrix>.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixRotateExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixrotateexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -929,12 +929,12 @@
         <summary>Rotates this matrix about the specified point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to rotate a <xref:System.Windows.Media.Matrix> about a specified point.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixRotateAboutPointExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixrotateaboutpointexample_csharp)]  
-  
+The following example shows how to rotate a <xref:System.Windows.Media.Matrix> about a specified point.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixRotateAboutPointExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixrotateaboutpointexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -963,17 +963,17 @@
         <summary>Prepends a rotation of the specified angle at the specified point to this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to prepend a rotation to a <xref:System.Windows.Media.Matrix>.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixPrependRotateExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependrotateexamples_csharp)]  
-  
+The following example shows how to prepend a rotation to a <xref:System.Windows.Media.Matrix>.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixPrependRotateExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependrotateexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -998,17 +998,17 @@
         <summary>Prepends a rotation of the specified angle to this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to prepend a rotation to a <xref:System.Windows.Media.Matrix>.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixPrependRotateExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependrotateexamples_csharp)]  
-  
+The following example shows how to prepend a rotation to a <xref:System.Windows.Media.Matrix>.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixPrependRotateExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependrotateexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1035,12 +1035,12 @@
         <summary>Appends the specified scale vector to this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to scale a <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixScaleExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixscaleexamples_csharp)]  
-  
+The following example shows how to scale a <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixScaleExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixscaleexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1071,12 +1071,12 @@
         <summary>Scales this <see cref="T:System.Windows.Media.Matrix" /> by the specified amount about the specified point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to scale a <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixScaleExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixscaleexamples_csharp)]  
-  
+The following example shows how to scale a <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixScaleExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixscaleexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1107,17 +1107,17 @@
         <summary>Prepends the specified scale about the specified point of this <see cref="T:System.Windows.Media.Matrix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to prepend a scale to a <xref:System.Windows.Media.Matrix>.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixPrependScaleExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependscaleexamples_csharp)]  
-  
+The following example shows how to prepend a scale to a <xref:System.Windows.Media.Matrix>.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixPrependScaleExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependscaleexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1144,17 +1144,17 @@
         <summary>Prepends the specified scale vector to this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to prepend a scale to a <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixPrependScaleExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependscaleexamples_csharp)]  
-  
+The following example shows how to prepend a scale to a <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixPrependScaleExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixprependscaleexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1176,25 +1176,25 @@
         <summary>Changes this <see cref="T:System.Windows.Media.Matrix" /> structure into an identity matrix.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An identity matrix has a value of 1 in coefficients [1,1],[2,2],[3,3] and a value of 0 in the rest of the coefficients. This correlates to setting <xref:System.Windows.Media.Matrix.M11%2A> and <xref:System.Windows.Media.Matrix.M22%2A> to 1 and <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, and <xref:System.Windows.Media.Matrix.OffsetY%2A> to 0. In an affine matrix, which is the implementation that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] uses for the <xref:System.Windows.Media.Matrix> structure, coefficients [3,1],[3,2],[3.3] are implied to always have the values 0,0,1 respectively.  
-  
+An identity matrix has a value of 1 in coefficients [1,1],[2,2],[3,3] and a value of 0 in the rest of the coefficients. This correlates to setting <xref:System.Windows.Media.Matrix.M11%2A> and <xref:System.Windows.Media.Matrix.M22%2A> to 1 and <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, and <xref:System.Windows.Media.Matrix.OffsetY%2A> to 0. In an affine matrix, which is the implementation that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] uses for the <xref:System.Windows.Media.Matrix> structure, coefficients [3,1],[3,2],[3.3] are implied to always have the values 0,0,1 respectively.  
+ 
 ||||  
 |-|-|-|  
 |1|0|0|  
 |0|1|0|  
 |0|0|1|  
+ 
+For an identity matrix, the <xref:System.Windows.Media.Matrix.ToString%2A> method returns the string "Identity", instead of the coefficients of the <xref:System.Windows.Media.Matrix>.  
+ 
   
- For an identity matrix, the <xref:System.Windows.Media.Matrix.ToString%2A> method returns the string "Identity", instead of the coefficients of the <xref:System.Windows.Media.Matrix>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to turn a <xref:System.Windows.Media.Matrix> structure into an identity matrix.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixIdentityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixidentityexample_csharp)]  
-  
+The following example shows how to turn a <xref:System.Windows.Media.Matrix> structure into an identity matrix.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixIdentityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixidentityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1221,12 +1221,12 @@
         <summary>Appends a skew of the specified degrees in the x and y dimensions to this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to skew a <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixSkewExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixskewexample_csharp)]  
-  
+This example shows how to skew a <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixSkewExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixskewexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1253,17 +1253,17 @@
         <summary>Prepends a skew of the specified degrees in the x and y dimensions to this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to prepend a skew to a <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixSkewPrependExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixskewprependexample_csharp)]  
-  
+This example shows how to prepend a skew to a <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixSkewPrependExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixskewprependexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1318,10 +1318,10 @@
         <returns>A <see cref="T:System.String" /> containing the <see cref="P:System.Windows.Media.Matrix.M11" />, <see cref="P:System.Windows.Media.Matrix.M12" />, <see cref="P:System.Windows.Media.Matrix.M21" />, <see cref="P:System.Windows.Media.Matrix.M22" />, <see cref="P:System.Windows.Media.Matrix.OffsetX" />, and <see cref="P:System.Windows.Media.Matrix.OffsetY" /> values of this <see cref="T:System.Windows.Media.Matrix" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this <xref:System.Windows.Media.Matrix> is an <xref:System.Windows.Media.Matrix.Identity%2A> matrix, the string "Identity" is returned.  
-  
+If this <xref:System.Windows.Media.Matrix> is an <xref:System.Windows.Media.Matrix.Identity%2A> matrix, the string "Identity" is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1347,10 +1347,10 @@
         <returns>A <see cref="T:System.String" /> containing the <see cref="P:System.Windows.Media.Matrix.M11" />, <see cref="P:System.Windows.Media.Matrix.M12" />, <see cref="P:System.Windows.Media.Matrix.M21" />, <see cref="P:System.Windows.Media.Matrix.M22" />, <see cref="P:System.Windows.Media.Matrix.OffsetX" />, and <see cref="P:System.Windows.Media.Matrix.OffsetY" /> values of this <see cref="T:System.Windows.Media.Matrix" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this <xref:System.Windows.Media.Matrix> structure is an identity matrix, the string "Identity" is returned.  
-  
+If this <xref:System.Windows.Media.Matrix> structure is an identity matrix, the string "Identity" is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1376,12 +1376,12 @@
         <returns>The result of transforming <paramref name="point" /> by this <see cref="T:System.Windows.Media.Matrix" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
-  
+The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1406,12 +1406,12 @@
         <summary>Transforms the specified points by this <see cref="T:System.Windows.Media.Matrix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
-  
+The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1437,12 +1437,12 @@
         <returns>The result of transforming <paramref name="vector" /> by this <see cref="T:System.Windows.Media.Matrix" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
-  
+The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1467,12 +1467,12 @@
         <summary>Transforms the specified vectors by this <see cref="T:System.Windows.Media.Matrix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
-  
+The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1499,12 +1499,12 @@
         <summary>Appends a translation of the specified offsets to this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how append a translation onto a <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixTranslateExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtranslateexample_csharp)]  
-  
+The following example shows how append a translation onto a <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixTranslateExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtranslateexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1531,17 +1531,17 @@
         <summary>Prepends a translation of the specified offsets to this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+In a composite transformation, the order of individual transformations is important. For example, if you first rotate, then scale, then translate, you get a different result than if you first translate, then rotate, then scale. One reason order is significant is that transformations like rotation and scaling are done with respect to the origin of the coordinate system. Scaling an object that is centered at the origin produces a different result than scaling an object that has been moved away from the origin. Similarly, rotating an object that is centered at the origin produces a different result than rotating an object that has been moved away from the origin.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how prepend a translation onto a <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixTranslatePrependExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtranslateprependexample_csharp)]  
-  
+The following example shows how prepend a translation onto a <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixTranslatePrependExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtranslateprependexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1555,12 +1555,12 @@
         <summary>Transforms the specified point, array of points, vector, or array of vectors by this <see cref="T:System.Windows.Media.Matrix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
-  
+The follow example shows how to use a <xref:System.Windows.Media.Matrix> to transform points and vectors.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixTransformExamples_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixtransformexamples_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1574,10 +1574,10 @@
         <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Matrix" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this <xref:System.Windows.Media.Matrix> structure is an identity matrix, the string "Identity" is returned.  
-  
+If this <xref:System.Windows.Media.Matrix> structure is an identity matrix, the string "Identity" is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1591,19 +1591,19 @@
         <summary>Determines whether the two specified <see cref="T:System.Windows.Media.Matrix" /> structures have the same values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  A <xref:System.Windows.Media.Matrix> stores its values as doubles. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
-  
- [!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
-  
+The following example shows how to check two <xref:System.Windows.Media.Matrix> structures for equality.  
+ 
+[!code-csharp[MatrixExamples_snip#MatrixEqualityExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixExamples_snip/CSharp/MatrixExample.cs#matrixequalityexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

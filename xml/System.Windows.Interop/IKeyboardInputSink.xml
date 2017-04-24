@@ -11,16 +11,16 @@
     <summary>Provides a keyboard sink for components that manages tabbing, accelerators, and mnemonics across interop boundaries and between HWNDs. This interface implements keyboard message management in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]-[!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] interoperation scenarios.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A keyboard sink handles input from particular subsets of the overall keyboard input model for [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], and enables some keyboard input to be processed and directed to HWNDs other than the one with current keyboard focus.  
-  
- If your component contains other components, and maintains a tab order, your component must also implement <xref:System.Windows.Interop.IKeyboardInputSite> and keep track of which component has focus.  
-  
- For a discussion of the input architecture specifically implemented for [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] interop, see [Windows Forms and WPF Interoperability Input Architecture](~/docs/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture.md).  
-  
- <xref:System.Windows.Interop.HwndSource> and <xref:System.Windows.Interop.HwndHost> each implement the <xref:System.Windows.Interop.IKeyboardInputSink> interface, through explicit interface definitions. The explicit definitions supply default behaviors, and can also be accessed if necessary through an <xref:System.Windows.Interop.IKeyboardInputSink> interface cast of <xref:System.Windows.Interop.HwndSource> or <xref:System.Windows.Interop.HwndHost>.  
-  
+A keyboard sink handles input from particular subsets of the overall keyboard input model for [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], and enables some keyboard input to be processed and directed to HWNDs other than the one with current keyboard focus.  
+ 
+If your component contains other components, and maintains a tab order, your component must also implement <xref:System.Windows.Interop.IKeyboardInputSite> and keep track of which component has focus.  
+ 
+For a discussion of the input architecture specifically implemented for [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] interop, see [Windows Forms and WPF Interoperability Input Architecture](~/docs/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture.md).  
+ 
+<xref:System.Windows.Interop.HwndSource> and <xref:System.Windows.Interop.HwndHost> each implement the <xref:System.Windows.Interop.IKeyboardInputSink> interface, through explicit interface definitions. The explicit definitions supply default behaviors, and can also be accessed if necessary through an <xref:System.Windows.Interop.IKeyboardInputSink> interface cast of <xref:System.Windows.Interop.HwndSource> or <xref:System.Windows.Interop.HwndHost>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
           <see langword="true" /> if the sink or one of its contained components has focus; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is necessary for forwarding <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> calls to child components with focus from within the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> implementation. Call <xref:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin%2A> recursively until you reach the level of specific focus and forward <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> there.  
-  
+This method is necessary for forwarding <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> calls to child components with focus from within the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> implementation. Call <xref:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin%2A> recursively until you reach the level of specific focus and forward <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> there.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,10 +74,10 @@
         <value>A reference to the container's <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should initially be set to `null`. Any container that adds the sink to its components list will set <xref:System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite%2A> before any other methods are called, and it can be set multiple times after that. You should set the property to `null` again before disposal.  
-  
+This property should initially be set to `null`. Any container that adds the sink to its components list will set <xref:System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite%2A> before any other methods are called, and it can be set multiple times after that. You should set the property to `null` again before disposal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,14 +111,14 @@
           <see langword="true" /> if the message was handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] message must be WM_CHAR, WM_SYSCHAR, WM_DEADCHAR or WM_SYSDEADCHAR.  
-  
- If the component has contained components, the message must be passed in your implementation by calling each contained component's <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A> method.  
-  
- An interface that returns `true` from <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> will not call <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A>. Implementations can choose to perform all specific key combination handling in <xref:System.Windows.Interop.IKeyboardInputSink.TranslateChar%2A>.and bypass <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A>.  
-  
+The [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] message must be WM_CHAR, WM_SYSCHAR, WM_DEADCHAR or WM_SYSDEADCHAR.  
+ 
+If the component has contained components, the message must be passed in your implementation by calling each contained component's <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A> method.  
+ 
+An interface that returns `true` from <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> will not call <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A>. Implementations can choose to perform all specific key combination handling in <xref:System.Windows.Interop.IKeyboardInputSink.TranslateChar%2A>.and bypass <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <returns>The <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> site of the contained component.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Components with child components should maintain internal collections of sites and use this method to add a new sink and return the new site. You only need to maintain the site collection, because the sink can be obtained from the site.  
-  
+Components with child components should maintain internal collections of sites and use this method to add a new sink and return the new site. You only need to maintain the site collection, because the sink can be obtained from the site.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
           <see langword="true" /> if the focus has been set as requested; <see langword="false" />, if there are no tab stops.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Input.FocusNavigationDirection> and <xref:System.Windows.Input.FocusNavigationDirection> are the only relevant values that should be passed to this method in the <xref:System.Windows.Input.TraversalRequest>.  
-  
+<xref:System.Windows.Input.FocusNavigationDirection> and <xref:System.Windows.Input.FocusNavigationDirection> are the only relevant values that should be passed to this method in the <xref:System.Windows.Input.TraversalRequest>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,16 +216,16 @@
           <see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The message must either be WM_KEYDOWN or WM_SYSKEYDOWN.  
-  
- If the component is unable to handle the input translations and has child components that might have translations, it typically calls <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> method on the child component that holds the current focus before returning a result.  
-  
- If the message cannot be handled immediately, you can re-dispatch it from within the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> implementation if necessary, and then return `false`.  
-  
- A primary scenario for translating accelerator keys is handling the VK_TAB keydown message and determining whether to set focus within the component, to call <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A> to a child component, or to call <xref:System.Windows.Interop.IKeyboardInputSite.OnNoMoreTabStops%2A> on the parent site because the tab sequence has reached the beginning or end bounds. Certain components may choose to not handle the tab key in this fashion.  
-  
+The message must either be WM_KEYDOWN or WM_SYSKEYDOWN.  
+ 
+If the component is unable to handle the input translations and has child components that might have translations, it typically calls <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> method on the child component that holds the current focus before returning a result.  
+ 
+If the message cannot be handled immediately, you can re-dispatch it from within the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> implementation if necessary, and then return `false`.  
+ 
+A primary scenario for translating accelerator keys is handling the VK_TAB keydown message and determining whether to set focus within the component, to call <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A> to a child component, or to call <xref:System.Windows.Interop.IKeyboardInputSite.OnNoMoreTabStops%2A> on the parent site because the tab sequence has reached the beginning or end bounds. Certain components may choose to not handle the tab key in this fashion.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,10 +259,10 @@
           <see langword="true" /> if the message was processed and <see cref="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" /> should not be called; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you implement this method to return `true`, the input architecture will not call <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A> for that key message.  
-  
+If you implement this method to return `true`, the input architecture will not call <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A> for that key message.  
+ 
  ]]></format>
         </remarks>
       </Docs>

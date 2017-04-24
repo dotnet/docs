@@ -18,12 +18,12 @@
     <summary>Encapsulates basic validation rules that indicate whether a piece of custom data is considered personalizable in either <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" /> or <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> scope.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> instance is a collection of <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry> objects, which consist of a personalization scope and an object value. These entries are assigned a key in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> object.  
-  
- A good practice is to add all properties to the dictionary using the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Save%2A> method, regardless of the scope of the page. The .NET Framework saves the information in the appropriate way; for example, shared data is saved when the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope. However, shared properties are not saved when a Web Parts value is being saved, the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, and the <xref:System.Web.UI.WebControls.WebParts.WebPart> control was added with the page in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
-  
+A <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> instance is a collection of <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry> objects, which consist of a personalization scope and an object value. These entries are assigned a key in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> object.  
+ 
+A good practice is to add all properties to the dictionary using the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Save%2A> method, regardless of the scope of the page. The .NET Framework saves the information in the appropriate way; for example, shared data is saved when the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope. However, shared properties are not saved when a Web Parts value is being saved, the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, and the <xref:System.Web.UI.WebControls.WebParts.WebPart> control was added with the page in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes an empty dictionary. The dictionary will treat key values as case-insensitive.  
-  
+This constructor initializes an empty dictionary. The dictionary will treat key values as case-insensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> class using the provided parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes an empty dictionary based on the estimated number of entries to be stored in the dictionary. The dictionary will treat key values as case-insensitive.  
-  
+This constructor initializes an empty dictionary based on the estimated number of entries to be stored in the dictionary. The dictionary will treat key values as case-insensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,16 +97,16 @@
         <summary>Adds personalization entries to the personalization dictionary.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can call this method, place various pieces of custom state information into the state object, and specify the scope associated with the state value. When a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, you can add name and state information that is associated with either <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope. In <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, you can add name and state information associated only with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
-  
- It is a good practice, however, to add all properties to the dictionary using <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Save%2A> including properties with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, regardless of the scope of the page.  
-  
- The .NET Framework only saves the properties with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope when appropriate. In other words, shared properties are not saved when a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that was initially added in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope is later saved while the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope. In an opposite scenario, if a <xref:System.Web.UI.WebControls.WebParts.WebPart> control was added to the page in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, and the control is later saved while the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, custom shared property values are saved (along with custom user-scoped properties). For details on personalization data and how shared and user-scoped properties are affected by the personalization scope of the page, see the [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320) topic.  
-  
- As with any collection, this method increments the collection count by one and any enumerators currently active on the collection should be invalidated.  
-  
+You can call this method, place various pieces of custom state information into the state object, and specify the scope associated with the state value. When a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, you can add name and state information that is associated with either <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope. In <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, you can add name and state information associated only with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
+ 
+It is a good practice, however, to add all properties to the dictionary using <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Save%2A> including properties with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, regardless of the scope of the page.  
+ 
+The .NET Framework only saves the properties with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope when appropriate. In other words, shared properties are not saved when a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that was initially added in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope is later saved while the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope. In an opposite scenario, if a <xref:System.Web.UI.WebControls.WebParts.WebPart> control was added to the page in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, and the control is later saved while the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, custom shared property values are saved (along with custom user-scoped properties). For details on personalization data and how shared and user-scoped properties are affected by the personalization scope of the page, see the [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320) topic.  
+ 
+As with any collection, this method increments the collection count by one and any enumerators currently active on the collection should be invalidated.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -144,12 +144,12 @@
         <summary>Removes all custom state information from the current <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method clears all custom state information from the current <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> object. Any enumerators currently active against the collection should be invalidated. To remove only a specific personalization entry in a personalization dictionary, use the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Remove%2A> method.  
-  
- Note that calling this method on an empty personalization dictionary does not raise an error.  
-  
+This method clears all custom state information from the current <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> object. Any enumerators currently active against the collection should be invalidated. To remove only a specific personalization entry in a personalization dictionary, use the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Remove%2A> method.  
+ 
+Note that calling this method on an empty personalization dictionary does not raise an error.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,10 +176,10 @@
           <see langword="true" /> if the provided key matches a key in the personalization dictionary; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine whether a piece of custom state information is contained in a personalization dictionary.  
-  
+Use this method to determine whether a piece of custom state information is contained in a personalization dictionary.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -210,10 +210,10 @@
         <summary>Copies the personalization dictionary state entries as <see cref="T:System.Collections.DictionaryEntry" /> instances into the specified array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to create an array of <xref:System.Collections.DictionaryEntry> instances from the state entries in the personalization dictionary.  
-  
+Use this method to create an array of <xref:System.Collections.DictionaryEntry> instances from the state entries in the personalization dictionary.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -249,10 +249,10 @@
         <value>The number of entries in the dictionary.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to get the number of entries in the personalization dictionary.  
-  
+Use this property to get the number of entries in the personalization dictionary.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,10 +275,10 @@
         <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> for the personalization dictionary.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators can be used to read the data in a collection, but cannot be used to modify the underlying collection. For more information on enumerators, see the <xref:System.Collections.IEnumerator> interface.  
-  
+Enumerators can be used to read the data in a collection, but cannot be used to modify the underlying collection. For more information on enumerators, see the <xref:System.Collections.IEnumerator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -301,10 +301,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `false` because personalization dictionaries are not of a fixed size.  
-  
+This property always returns `false` because personalization dictionaries are not of a fixed size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,10 +327,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `false` because personalization dictionaries are not read-only.  
-  
+This property always returns `false` because personalization dictionaries are not read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,10 +353,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `false` because personalization dictionaries are not synchronized.  
-  
+This property always returns `false` because personalization dictionaries are not synchronized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,14 +382,14 @@
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> representing custom personalization information identified by the <paramref name="key" /> parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property works with a <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry> object representing custom personalization information that is identified by the `key` parameter. If there is no value for `key`, `null` is returned.  
-  
- If `key` does not already exist, then `key` (and its associated value) are added to the dictionary.  
-  
- Note that you can add a null value to the dictionary, and the indexer can also be used to update the personalization value.  
-  
+This property works with a <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry> object representing custom personalization information that is identified by the `key` parameter. If there is no value for `key`, `null` is returned.  
+ 
+If `key` does not already exist, then `key` (and its associated value) are added to the dictionary.  
+ 
+Note that you can add a null value to the dictionary, and the indexer can also be used to update the personalization value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -415,10 +415,10 @@
         <value>An <see cref="T:System.Collections.ICollection" /> containing the keys for the personalization dictionary.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to obtain the keys for a personalization dictionary.  
-  
+Use this method to obtain the keys for a personalization dictionary.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,12 +443,12 @@
         <summary>Removes a custom state entry based on the provided key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Internally, when you remove a custom state entry, the count of the personalization dictionary is decremented by one. Any enumerators currently active against the dictionary should be invalidated.  
-  
- No error occurs if you attempt to remove a nonexistent key.  
-  
+Internally, when you remove a custom state entry, the count of the personalization dictionary is decremented by one. Any enumerators currently active against the dictionary should be invalidated.  
+ 
+No error occurs if you attempt to remove a nonexistent key.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -474,10 +474,10 @@
         <value>An object that can be used to synchronize access to the personalization dictionary.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For collections whose underlying store is not publicly available, the expected implementation is to return the current instance. Note that the pointer to the current instance might not be sufficient for collections that wrap other collections; those should return the underlying collection's <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.SyncRoot%2A> property.  
-  
+For collections whose underlying store is not publicly available, the expected implementation is to return the current instance. Note that the pointer to the current instance might not be sufficient for collections that wrap other collections; those should return the underlying collection's <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.SyncRoot%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -504,10 +504,10 @@
         <summary>Implements the <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" /> method for the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.CopyTo%2A> method checks to determine whether `array` is an array of <xref:System.Collections.DictionaryEntry> items, then calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.CopyTo%2A> method, passing to it `array` and `index`.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.CopyTo%2A> method checks to determine whether `array` is an array of <xref:System.Collections.DictionaryEntry> items, then calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.CopyTo%2A> method, passing to it `array` and `index`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -536,10 +536,10 @@
         <summary>Implements the <see cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" /> method for the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Add%2A> method checks several details to ensure the validity of `value` and `key` before attempting to add them to the personalization dictionary. If the checks are successful, the method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Add%2A> method, passing to it the `key` and `value` parameters.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Add%2A> method checks several details to ensure the validity of `value` and `key` before attempting to add them to the personalization dictionary. If the checks are successful, the method calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Add%2A> method, passing to it the `key` and `value` parameters.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -574,10 +574,10 @@
           <see langword="true" /> if <paramref name="key" /> exists in the personalization dictionary; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Contains%2A> method checks `key` to ensure it is a valid object for checking the personalization dictionary, and if so, it passes it to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Contains%2A> method.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Contains%2A> method checks `key` to ensure it is a valid object for checking the personalization dictionary, and if so, it passes it to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Contains%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -605,10 +605,10 @@
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> object whose value matches <paramref name="key" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Item%2A> first ensures that `key` is a <xref:System.String> object, and if so, it calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Item%2A> property to return the <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry> whose key equals `key` in the current dictionary.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Item%2A> first ensures that `key` is a <xref:System.String> object, and if so, it calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Item%2A> property to return the <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry> whose key equals `key` in the current dictionary.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -635,10 +635,10 @@
         <summary>Implements the <see cref="M:System.Collections.IDictionary.Remove(System.Object)" /> method for the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Remove%2A> method checks whether `key` is a <xref:System.String> object, and if so, it calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Remove%2A> method, passing `key` to it.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Remove%2A> method checks whether `key` is a <xref:System.String> object, and if so, it calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Remove%2A> method, passing `key` to it.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -663,10 +663,10 @@
         <returns>An instance of <see cref="T:System.Collections.IEnumerator" /> to enumerate through the items in a personalization dictionary.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.GetEnumerator%2A> method directly calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.GetEnumerator%2A> method.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.GetEnumerator%2A> method directly calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.GetEnumerator%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -688,10 +688,10 @@
         <value>An <see cref="T:System.Collections.ICollection" /> containing the values for the personalization dictionary.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to obtain the values from a personalization dictionary.  
-  
+Use this method to obtain the values from a personalization dictionary.  
+ 
  ]]></format>
         </remarks>
       </Docs>

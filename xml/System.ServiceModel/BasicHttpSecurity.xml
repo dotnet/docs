@@ -15,11 +15,11 @@
     <summary>Configures the security settings of a <see langword="basicHttpBinding" /> binding.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEBasicHttpBinding#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebasichttpbinding/cs/snippets.cs#8)]
- [!code-vb[S_UEBasicHttpBinding#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebasichttpbinding/vb/snippets.vb#8)]  
-  
+[!code-csharp[S_UEBasicHttpBinding#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebasichttpbinding/cs/snippets.cs#8)]
+[!code-vb[S_UEBasicHttpBinding#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebasichttpbinding/vb/snippets.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,16 +58,16 @@
         <value>A <see cref="T:System.ServiceModel.BasicHttpMessageSecurity" />, which represents the message-level security settings for this binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default security settings are: a <xref:System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType%2A> of <xref:System.ServiceModel.BasicHttpMessageCredentialType>; and an <xref:System.ServiceModel.BasicHttpMessageSecurity.AlgorithmSuite%2A> of <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A>.  
+The default security settings are: a <xref:System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType%2A> of <xref:System.ServiceModel.BasicHttpMessageCredentialType>; and an <xref:System.ServiceModel.BasicHttpMessageSecurity.AlgorithmSuite%2A> of <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEBasicHttpBinding#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebasichttpbinding/cs/snippets.cs#9)]
- [!code-vb[S_UEBasicHttpBinding#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebasichttpbinding/vb/snippets.vb#9)]  
-  
+[!code-csharp[S_UEBasicHttpBinding#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebasichttpbinding/cs/snippets.cs#9)]
+[!code-vb[S_UEBasicHttpBinding#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebasichttpbinding/vb/snippets.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,16 +90,16 @@
         <value>A value in the <see cref="T:System.ServiceModel.BasicHttpSecurityMode" /> enumeration. The default value for this property is <see cref="F:System.ServiceModel.BasicHttpSecurityMode.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property affects which settings in <xref:System.ServiceModel.BasicHttpSecurity.Transport%2A> or <xref:System.ServiceModel.BasicHttpSecurity.Message%2A> become effective.  
+The value of this property affects which settings in <xref:System.ServiceModel.BasicHttpSecurity.Transport%2A> or <xref:System.ServiceModel.BasicHttpSecurity.Message%2A> become effective.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEBasicHttpBinding#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebasichttpbinding/cs/snippets.cs#10)]
- [!code-vb[S_UEBasicHttpBinding#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebasichttpbinding/vb/snippets.vb#10)]  
-  
+[!code-csharp[S_UEBasicHttpBinding#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebasichttpbinding/cs/snippets.cs#10)]
+[!code-vb[S_UEBasicHttpBinding#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebasichttpbinding/vb/snippets.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not a legal value for <see cref="T:System.ServiceModel.BasicHttpSecurityMode" />.</exception>
@@ -173,16 +173,16 @@
         <value>The transport-level security settings for a <see langword="basicHttpBinding" /> binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.HttpTransportSecurity> object returned by this property contains properties that control authentication parameters for the HTTP transport.  
+The <xref:System.ServiceModel.HttpTransportSecurity> object returned by this property contains properties that control authentication parameters for the HTTP transport.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEBasicHttpBinding#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebasichttpbinding/cs/snippets.cs#11)]
- [!code-vb[S_UEBasicHttpBinding#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebasichttpbinding/vb/snippets.vb#11)]  
-  
+[!code-csharp[S_UEBasicHttpBinding#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebasichttpbinding/cs/snippets.cs#11)]
+[!code-vb[S_UEBasicHttpBinding#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebasichttpbinding/vb/snippets.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

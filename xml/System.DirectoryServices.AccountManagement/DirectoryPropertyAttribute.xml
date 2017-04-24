@@ -19,10 +19,10 @@
     <summary>Contains the data required by the store to map a principal property to a directory attribute. This attribute is required for principal extensions and can only be set on a property. It must be specified on every property that represents a directory attribute in the extended class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If multiple directory attributes are used in the extension methods, multiple attributes should be added to the propert (one per attribute).  
-  
+If multiple directory attributes are used in the extension methods, multiple attributes should be added to the propert (one per attribute).  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -13,19 +13,19 @@
     <summary>Specifies the scope of memory protection to be applied by the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used with the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> and <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A> methods to protect data in memory.  
+This enumeration is used with the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> and <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A> methods to protect data in memory.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use data protection.  
-  
- [!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
- [!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
- [!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
-  
+The following code example shows how to use data protection.  
+ 
+[!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
+[!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
+[!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

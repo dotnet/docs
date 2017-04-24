@@ -95,12 +95,12 @@
         <returns>The output value of this key frame given the specified base value and progress.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base value is typically the initial value of the property being animated or the <xref:System.Windows.Media.Animation.BooleanKeyFrame.Value%2A> of the previous key frame.  
-  
- Most implementations will return the value of `baseValue` when `keyFrameProgress` is 0.0.  
-  
+The base value is typically the initial value of the property being animated or the <xref:System.Windows.Media.Animation.BooleanKeyFrame.Value%2A> of the previous key frame.  
+ 
+Most implementations will return the value of `baseValue` when `keyFrameProgress` is 0.0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Occurs if <paramref name="keyFrameProgress" /> is not between 0.0 and 1.0, inclusive.</exception>
@@ -147,17 +147,17 @@
         <value>The time at which the key frame's current value should be equal to its <see cref="P:System.Windows.Media.Animation.DecimalKeyFrame.Value" /> property. The default value is <see cref="P:System.Windows.Media.Animation.KeyTime.Uniform" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_KeyTime"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Animation.DecimalKeyFrame.KeyTimeProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,21 +214,21 @@
         <value>The key frame's target value, which is the value of this key frame at its specified <see cref="P:System.Windows.Media.Animation.DecimalKeyFrame.KeyTime" />. The default value is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Value"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Animation.DecimalKeyFrame.ValueProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
 <a name="xamlAttributeUsage_Value"></a>   
 ## XAML Attribute Usage  
- <*object* `Value`="<xref:System.Decimal>"/>  
-  
+<*object* `Value`="<xref:System.Decimal>"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>

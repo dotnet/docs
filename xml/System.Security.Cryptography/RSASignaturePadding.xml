@@ -63,10 +63,10 @@
           <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance and `obj` are equal if `obj` is a <xref:System.Security.Cryptography.RSASignaturePadding> instance and the <xref:System.Security.Cryptography.RSASignaturePadding.Mode%2A> property of the two objects is equal.  
-  
+The current instance and `obj` are equal if `obj` is a <xref:System.Security.Cryptography.RSASignaturePadding> instance and the <xref:System.Security.Cryptography.RSASignaturePadding.Mode%2A> property of the two objects is equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
           <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance and `other` are equal if the <xref:System.Security.Cryptography.RSASignaturePadding.Mode%2A> property of the two objects is equal.  
-  
+The current instance and `other` are equal if the <xref:System.Security.Cryptography.RSASignaturePadding.Mode%2A> property of the two objects is equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,12 +206,12 @@
           <see langword="true" /> if <see langword="left" /> and <see langword="right" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.RSASignaturePadding.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Security.Cryptography.RSASignaturePadding> values.  
-  
- Two <xref:System.Security.Cryptography.RSASignaturePadding> values are equal if their <xref:System.Security.Cryptography.RSASignaturePadding.Mode%2A> property values are equal.  
-  
+The <xref:System.Security.Cryptography.RSASignaturePadding.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Security.Cryptography.RSASignaturePadding> values.  
+ 
+Two <xref:System.Security.Cryptography.RSASignaturePadding> values are equal if their <xref:System.Security.Cryptography.RSASignaturePadding.Mode%2A> property values are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,12 +251,12 @@
           <see langword="true" /> if <see langword="left" /> and <see langword="right" /> are unequal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.RSASignaturePadding.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Security.Cryptography.RSASignaturePadding> values.  
-  
- Two <xref:System.Security.Cryptography.RSASignaturePadding> values are unequal if their <xref:System.Security.Cryptography.RSASignaturePadding.Mode%2A> property values are different.  
-  
+The <xref:System.Security.Cryptography.RSASignaturePadding.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Security.Cryptography.RSASignaturePadding> values.  
+ 
+Two <xref:System.Security.Cryptography.RSASignaturePadding> values are unequal if their <xref:System.Security.Cryptography.RSASignaturePadding.Mode%2A> property values are different.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,10 +348,10 @@
         <returns>The string representation of the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.RSASignaturePadding.ToString%2A> method returns the value of the `RSASignaturePadding.Mode.ToString` method.  
-  
+The <xref:System.Security.Cryptography.RSASignaturePadding.ToString%2A> method returns the value of the `RSASignaturePadding.Mode.ToString` method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

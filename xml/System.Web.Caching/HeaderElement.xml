@@ -14,10 +14,10 @@
     <summary>Represents a single HTTP header that is included in a response from the output cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Caching.HeaderElement> class represents the content of an HTTP header in the output cache as a name/value pair. Both the name and the value must be non-null. The collection of all <xref:System.Web.Caching.HeaderElement> instances for an entry in the output cache is contained in the <xref:System.Web.Caching.IOutputCacheEntry.HeaderElements%2A> collection.  
-  
+The <xref:System.Web.Caching.HeaderElement> class represents the content of an HTTP header in the output cache as a name/value pair. Both the name and the value must be non-null. The collection of all <xref:System.Web.Caching.HeaderElement> instances for an entry in the output cache is contained in the <xref:System.Web.Caching.IOutputCacheEntry.HeaderElements%2A> collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.HeaderElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create an instance of the <xref:System.Web.Caching.HeaderElement> class, the value of `name` must always be a non-null, non-empty string. The `value` parameter can be an empty string.  
-  
+When you create an instance of the <xref:System.Web.Caching.HeaderElement> class, the value of `name` must always be a non-null, non-empty string. The `value` parameter can be an empty string.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -68,10 +68,10 @@
         <value>The name of the HTTP header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create an instance of the <xref:System.Web.Caching.HeaderElement> class, the value of `name` must always be a non-null, non-empty string.  
-  
+When you create an instance of the <xref:System.Web.Caching.HeaderElement> class, the value of `name` must always be a non-null, non-empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <value>The value of the HTTP header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create an instance of the <xref:System.Web.Caching.HeaderElement> class, the `value` parameter can be an empty string.  
-  
+When you create an instance of the <xref:System.Web.Caching.HeaderElement> class, the `value` parameter can be an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>

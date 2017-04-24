@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityTokenResolver" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `removeOldestTokensOnCacheFull` is `false`, `AddContext` throws a <xref:System.ServiceModel.QuotaExceededException> if the cache capacity has been reached.  
-  
+If `removeOldestTokensOnCacheFull` is `false`, `AddContext` throws a <xref:System.ServiceModel.QuotaExceededException> if the cache capacity has been reached.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,18 +14,18 @@
     <summary>Indicates that an error occurred while negotiating the security context for a message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception can happen in the following cases:  
-  
+This exception can happen in the following cases:  
+ 
 -   While negotiating the initial security context. The exact error depends on the negotiation technology used: either [Simple and Protected GSS-API Negotiation (SPNEGO)](http://go.microsoft.com/fwlink/?LinkId=96699) or TLSNEGO. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Security Protocols](~/docs/framework/wcf/feature-details/security-protocols.md).  
-  
+ 
 -   While establishing a security session on top of an initial security context.  
-  
+ 
 -   During key renewal for an existing security session.  
-  
- Security negotiation errors can occur as part of the *Spnego*/*Sslnego* security protocol or as part of the SecureConversation protocol.  
-  
+ 
+Security negotiation errors can occur as part of the *Spnego*/*Sslnego* security protocol or as part of the SecureConversation protocol.  
+ 
  ]]></format>
     </remarks>
   </Docs>

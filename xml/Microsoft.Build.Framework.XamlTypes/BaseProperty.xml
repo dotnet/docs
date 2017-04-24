@@ -23,10 +23,10 @@
     <summary>Represents a <see cref="T:Microsoft.Build.Framework.XamlTypes.Rule" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This represents the schema information (name, allowed values, and so on) of a <xref:Microsoft.Build.Framework.XamlTypes.Rule> property. Because this is just schema information, there is no field such as "Value" to get/set the value of this property. If you manually instantiate this class, call <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.BeginInit%2A> before you set the first property of the object and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.EndInit%2A> after you set the last property.  
-  
+This represents the schema information (name, allowed values, and so on) of a <xref:Microsoft.Build.Framework.XamlTypes.Rule> property. Because this is just schema information, there is no field such as "Value" to get/set the value of this property. If you manually instantiate this class, call <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.BeginInit%2A> before you set the first property of the object and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.EndInit%2A> after you set the last property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <value>Returns the list of arguments for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,12 +106,12 @@
         <value>Returns the name of the category to which this property belongs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this field does not correspond to the `Name` property of a <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Category%2A> element that is defined in the containing <xref:Microsoft.Build.Framework.XamlTypes.Rule> class, a default <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Category%2A> that has this name is auto-generated and added to the containing <xref:Microsoft.Build.Framework.XamlTypes.Rule> class.  
-  
- This field is optional and is culture-invariant. When this field is not specified, this property is added to an auto-generated category named General (localized). This field cannot be set to the empty string.  
-  
+If the value of this field does not correspond to the `Name` property of a <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Category%2A> element that is defined in the containing <xref:Microsoft.Build.Framework.XamlTypes.Rule> class, a default <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Category%2A> that has this name is auto-generated and added to the containing <xref:Microsoft.Build.Framework.XamlTypes.Rule> class.  
+ 
+This field is optional and is culture-invariant. When this field is not specified, this property is added to an auto-generated category named General (localized). This field cannot be set to the empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,12 +151,12 @@
         <value>Returns the data source where the current value of this property is stored.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the data source is defined, it overrides the <xref:Microsoft.Build.Framework.XamlTypes.Rule.DataSource%2A> property on the containing <xref:Microsoft.Build.Framework.XamlTypes.Rule>.  
-  
- This field is mandatory only if the parent <xref:Microsoft.Build.Framework.XamlTypes.Rule> does not have the data source initialized. The getter for this property returns only the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.DataSource%2A> that is set directly on this <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> instance.  
-  
+If the data source is defined, it overrides the <xref:Microsoft.Build.Framework.XamlTypes.Rule.DataSource%2A> property on the containing <xref:Microsoft.Build.Framework.XamlTypes.Rule>.  
+ 
+This field is mandatory only if the parent <xref:Microsoft.Build.Framework.XamlTypes.Rule> does not have the data source initialized. The getter for this property returns only the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.DataSource%2A> that is set directly on this <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <value>Returns the default value for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional. If the value is a <xref:Microsoft.Build.Framework.XamlTypes.StringProperty>, semantics determine whether this field is culture-sensitive.  
-  
+This field is optional. If the value is a <xref:Microsoft.Build.Framework.XamlTypes.StringProperty>, semantics determine whether this field is culture-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <value>Returns the description of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and is culture-sensitive.  
-  
+This field is optional and is culture-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,10 +243,10 @@
         <value>Returns the display name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and is culture-sensitive. When this property is not set, it is assigned the same value as the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Name%2A> property (and, therefore, would not be localized).  
-  
+This field is optional and is culture-sensitive. When this property is not set, it is assigned the same value as the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Name%2A> property (and, therefore, would not be localized).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,12 +291,12 @@
         <value>Returns the keyword that is used to open the help page for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This form of specifying help takes precedence over <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> + <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>.  
-  
- This field is optional and is culture insensitive.  
-  
+This form of specifying help takes precedence over <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> + <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>.  
+ 
+This field is optional and is culture insensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,12 +318,12 @@
         <value>Returns the Help context to use when the user presses F1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property uses the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> property to display the Help context of the specified Help file.  
-  
- This field is optional. If this property, together with <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A>, is specified, then the values of <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpString%2A> are ignored.  
-  
+This property uses the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> property to display the Help context of the specified Help file.  
+ 
+This field is optional. If this property, together with <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A>, is specified, then the values of <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpString%2A> are ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -350,12 +350,12 @@
         <value>Returns the Help file to use when the user presses F1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>.  
-  
- This field is optional and is culture-insensitive.  
-  
+For more information, see <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>.  
+ 
+This field is optional and is culture-insensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,12 +382,12 @@
         <value>Returns the URL of the Help page for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property has a higher priority than the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>+<xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpString%2A> properties. In other words, these properties are ignored if <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> is set.  
-  
- This field is optional and is culture-insensitive.  
-  
+This property has a higher priority than the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>+<xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpString%2A> properties. In other words, these properties are ignored if <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> is set.  
+ 
+This field is optional and is culture-insensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -409,10 +409,10 @@
         <value>Returns the hint to the command-line constructor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some properties are used only by the targets and are not to be included in the command line. Other properties, for example, task parameters, are included in the command line in the form of the switch/value that they emit. This field is optional and, by default, has the value `true`.  
-  
+Some properties are used only by the targets and are not to be included in the command line. Other properties, for example, task parameters, are included in the command line in the form of the switch/value that they emit. This field is optional and, by default, has the value `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -452,12 +452,12 @@
         <value>Returns additional attributes of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This can be used as a grab bag for additional metadata of this property that are not captured by the primary fields. Use custom UI to interpret the additional metadata because the shipped UI formats are not aware of these attributes.  
-  
- This field is optional.  
-  
+This can be used as a grab bag for additional metadata of this property that are not captured by the primary fields. Use custom UI to interpret the additional metadata because the shipped UI formats are not aware of these attributes.  
+ 
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -497,10 +497,10 @@
         <value>Returns the name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is mandatory and culture-invariant. The value of this field cannot be set to the empty string.  
-  
+This field is mandatory and culture-invariant. The value of this field cannot be set to the empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,10 +522,10 @@
         <value>Returns <see langword="true" /> if this is a read-only property; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and its default value is `false`.  
-  
+This field is optional and its default value is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -547,12 +547,12 @@
         <value>Returns the token used to separate a switch from its value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value specified here overrides the value specified for the parent rule separator.  
-  
- This field is optional and culture-invariant.  
-  
+The value specified here overrides the value specified for the parent rule separator.  
+ 
+This field is optional and culture-invariant.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -592,10 +592,10 @@
         <value>Returns the switch representation of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and culture-invariant.  
-  
+This field is optional and culture-invariant.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -617,12 +617,12 @@
         <value>Returns the prefix for the switch representation of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value specified here overrides the value specified for the <xref:Microsoft.Build.Framework.XamlTypes.Rule.SwitchPrefix%2A> of the parent <xref:Microsoft.Build.Framework.XamlTypes.Rule>.  
-  
- This field is optional and culture-invariant.  
-  
+The value specified here overrides the value specified for the <xref:Microsoft.Build.Framework.XamlTypes.Rule.SwitchPrefix%2A> of the parent <xref:Microsoft.Build.Framework.XamlTypes.Rule>.  
+ 
+This field is optional and culture-invariant.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -644,10 +644,10 @@
         <value>Returns the list of value editors for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -669,10 +669,10 @@
         <value>Returns a hint to the UI client that tells it whether to display this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and has the default value `true`.  
-  
+This field is optional and has the default value `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

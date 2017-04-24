@@ -75,10 +75,10 @@
         <value>A <see cref="T:System.ComponentModel.Design.MenuCommand" /> that was added, removed, or changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value can be `null` if more than one command changed at once.  
-  
+The returned value can be `null` if more than one command changed at once.  
+ 
  ]]></format>
         </remarks>
       </Docs>

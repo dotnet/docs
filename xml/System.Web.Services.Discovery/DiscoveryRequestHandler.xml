@@ -18,12 +18,12 @@
     <summary>An ASP.NET HTTP handler that processes a request for a Web services discovery document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class, via its <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, processes an HTTP request for a discovery document. A discovery document is represented by the <xref:System.Web.Services.Discovery.DiscoveryDocument> class and is usually serialized as a file using a .disco extension. Web services discovery provides a mechanism for determining the Web services that are available at a given location.  
-  
- The <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class normally does not need to be used directly by a developer.  
-  
+The <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class, via its <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, processes an HTTP request for a discovery document. A discovery document is represented by the <xref:System.Web.Services.Discovery.DiscoveryDocument> class and is usually serialized as a file using a .disco extension. Web services discovery provides a mechanism for determining the Web services that are available at a given location.  
+ 
+The <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class normally does not need to be used directly by a developer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,12 +81,12 @@
         <summary>Handles an HTTP request for a discovery document, which is serialized to the HTTP response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method searches for applicable files within the file system path corresponding to the HTTP request's Uniform Resource Locator (URL). The search may extend to subdirectories and switch target file extensions depending on what it finds in the root search directory.  
-  
- The search process populates the <xref:System.Web.Services.Discovery.DiscoveryDocument> object's <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property with files that are found.  
-  
+The <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method searches for applicable files within the file system path corresponding to the HTTP request's Uniform Resource Locator (URL). The search may extend to subdirectories and switch target file extensions depending on what it finds in the root search directory.  
+ 
+The search process populates the <xref:System.Web.Services.Discovery.DiscoveryDocument> object's <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property with files that are found.  
+ 
  ]]></format>
         </remarks>
       </Docs>

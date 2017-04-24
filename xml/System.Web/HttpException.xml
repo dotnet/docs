@@ -14,21 +14,21 @@
     <summary>Describes an exception that occurred during the processing of HTTP requests.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpException> class is an HTTP-specific exception class that enables ASP.NET to generate exception information. For more information about throwing and handling exceptions, see [Exceptions](http://msdn.microsoft.com/library/f99a1d29-a2a8-47af-9707-9909f9010735).  
+The <xref:System.Web.HttpException> class is an HTTP-specific exception class that enables ASP.NET to generate exception information. For more information about throwing and handling exceptions, see [Exceptions](http://msdn.microsoft.com/library/f99a1d29-a2a8-47af-9707-9909f9010735).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.HttpException> class to raise customized exceptions. The `Button_Click` method determines which button was clicked, and then calls either the `CheckNumber` or `CheckBoolean` method. If the user-entered value in the text box does not correspond to the expected type, an <xref:System.Web.HttpException> exception is created and thrown with a customized message based on the error type.  
-  
+The following code example demonstrates how to use the <xref:System.Web.HttpException> class to raise customized exceptions. The `Button_Click` method determines which button was clicked, and then calls either the `CheckNumber` or `CheckBoolean` method. If the user-entered value in the text box does not correspond to the expected type, an <xref:System.Web.HttpException> exception is created and thrown with a customized message based on the error type.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpException#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException/cs/httpexceptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException/vb/httpexceptionvb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpException#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException/cs/httpexceptioncs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpException#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException/vb/httpexceptionvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,23 +47,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.HttpException" /> class and creates an empty <see cref="T:System.Web.HttpException" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When handling exceptions, it can be useful to capture a series of related exceptions with the outer exception being thrown in response to an inner exception.  
+When handling exceptions, it can be useful to capture a series of related exceptions with the outer exception being thrown in response to an inner exception.  
+ 
+A reference to the inner exception that caused the outer exception is available from the <xref:System.Exception.InnerException%2A> property of the outer exception. This mechanism preserves the error information that is carried by earlier exceptions, including the original exceptions, while allowing you to create more meaningful outer exceptions. For more information, see <xref:System.Exception.InnerException%2A>.  
+ 
   
- A reference to the inner exception that caused the outer exception is available from the <xref:System.Exception.InnerException%2A> property of the outer exception. This mechanism preserves the error information that is carried by earlier exceptions, including the original exceptions, while allowing you to create more meaningful outer exceptions. For more information, see <xref:System.Exception.InnerException%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The `CheckNumber` method accepts a user-entered value through a text box and checks whether it is an integer. If the value is not an integer, an exception is thrown, and then a new <xref:System.Web.HttpException> object is created and thrown. That exception is caught in the `Button_Click` event handler and the error message is displayed on the browser.  
-  
+The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The `CheckNumber` method accepts a user-entered value through a text box and checks whether it is an integer. If the value is not an integer, an exception is thrown, and then a new <xref:System.Web.HttpException> object is created and thrown. That exception is caught in the `Button_Click` event handler and the error message is displayed on the browser.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor1/CS/httpexception_constructor1.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException_Constructor1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor1/VB/httpexception_constructor1.vb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor1/CS/httpexception_constructor1.cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpException_Constructor1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor1/VB/httpexception_constructor1.vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,16 +85,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.HttpException" /> class using a supplied error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. An <xref:System.Web.HttpException> is thrown if a user-entered value is 0.  
-  
+The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. An <xref:System.Web.HttpException> is thrown if a user-entered value is 0.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- [!code-csharp[Classic HttpException.HttpException1 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpException.HttpException1 Example/CS/source.cs#1)]
- [!code-vb[Classic HttpException.HttpException1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpException.HttpException1 Example/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[Classic HttpException.HttpException1 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpException.HttpException1 Example/CS/source.cs#1)]
+[!code-vb[Classic HttpException.HttpException1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpException.HttpException1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.HttpException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpException.%23ctor%2A> constructor is called during deserialization to reconstitute the exception object that is transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
-  
+The <xref:System.Web.HttpException.%23ctor%2A> constructor is called during deserialization to reconstitute the exception object that is transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,23 +165,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.HttpException" /> class using an error message and the <see cref="P:System.Exception.InnerException" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When handling exceptions, it can be useful to capture a series of related exceptions with the outer exception being thrown in response to an inner exception.  
+When handling exceptions, it can be useful to capture a series of related exceptions with the outer exception being thrown in response to an inner exception.  
+ 
+A reference to the inner exception that caused the outer exception is available from the <xref:System.Exception.InnerException%2A> property of the outer exception. This mechanism preserves the error information that is carried by earlier exceptions, including the original exceptions, while allowing you to create more meaningful outer exceptions. For more information, see <xref:System.Exception.InnerException%2A>.  
+ 
   
- A reference to the inner exception that caused the outer exception is available from the <xref:System.Exception.InnerException%2A> property of the outer exception. This mechanism preserves the error information that is carried by earlier exceptions, including the original exceptions, while allowing you to create more meaningful outer exceptions. For more information, see <xref:System.Exception.InnerException%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The `CheckNumber` method accepts a user-entered value through a text box and checks whether it is an integer. If the value is not an integer, an exception is thrown, and then in the catch block, a new <xref:System.Web.HttpException> object is created and thrown. That exception is caught in the `Button_Click` event handler and the error message is displayed on the browser.  
-  
+The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The `CheckNumber` method accepts a user-entered value through a text box and checks whether it is an integer. If the value is not an integer, an exception is thrown, and then in the catch block, a new <xref:System.Web.HttpException> object is created and thrown. That exception is caught in the `Button_Click` event handler and the error message is displayed on the browser.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor2/CS/httpexception_constructor2.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException_Constructor2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor2/VB/httpexception_constructor2.vb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor2/CS/httpexception_constructor2.cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpException_Constructor2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor2/VB/httpexception_constructor2.vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,16 +205,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.HttpException" /> class using an error message and an exception code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. An <xref:System.Web.HttpException> exception is thrown if a user-entered value is 0.  
-  
+The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. An <xref:System.Web.HttpException> exception is thrown if a user-entered value is 0.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- [!code-csharp[Classic HttpException.HttpException2 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpException.HttpException2 Example/CS/source.cs#1)]
- [!code-vb[Classic HttpException.HttpException2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpException.HttpException2 Example/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[Classic HttpException.HttpException2 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpException.HttpException2 Example/CS/source.cs#1)]
+[!code-vb[Classic HttpException.HttpException2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpException.HttpException2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,23 +240,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.HttpException" /> class using an HTTP response status code, an error message, and the <see cref="P:System.Exception.InnerException" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When handling exceptions, it can be useful to capture a series of related exceptions with the outer exception being thrown in response to an inner exception.  
+When handling exceptions, it can be useful to capture a series of related exceptions with the outer exception being thrown in response to an inner exception.  
+ 
+A reference to the inner exception that caused the outer exception is available from the <xref:System.Exception.InnerException%2A> property of the outer exception. This mechanism preserves the error information that is carried by earlier exceptions, including the original exceptions, while allowing you to create more meaningful outer exceptions. For more information, see <xref:System.Exception.InnerException%2A>.  
+ 
   
- A reference to the inner exception that caused the outer exception is available from the <xref:System.Exception.InnerException%2A> property of the outer exception. This mechanism preserves the error information that is carried by earlier exceptions, including the original exceptions, while allowing you to create more meaningful outer exceptions. For more information, see <xref:System.Exception.InnerException%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The `CheckNumber` method accepts a user-entered value and checks whether it is an integer. If the value is not an integer, an exception is thrown, and then a new <xref:System.Web.HttpException> object containing the HTTP response status code, the exception's message, and any inner exception is created. That exception is caught in the `Button_Click` event handler and the error message, error code, and inner exception are displayed.  
-  
+The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The `CheckNumber` method accepts a user-entered value and checks whether it is an integer. If the value is not an integer, an exception is thrown, and then a new <xref:System.Web.HttpException> object containing the HTTP response status code, the exception's message, and any inner exception is created. That exception is caught in the `Button_Click` event handler and the error message, error code, and inner exception are displayed.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor3/CS/httpexception_constructor3.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor3/VB/httpexception_constructor3.vb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor3/CS/httpexception_constructor3.cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpException_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor3/VB/httpexception_constructor3.vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,16 +282,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.HttpException" /> class using an HTTP response status code, an error message, and an exception code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The user name and e-mail information are entered by the user in the provided text boxes. If any of the text boxes are left blank, an <xref:System.Web.HttpException> object is created and thrown. The error code of the <xref:System.Web.HttpException> is obtained by the <xref:System.Web.HttpException.GetHttpCode%2A> method and displayed on the Web page.  
-  
+The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The user name and e-mail information are entered by the user in the provided text boxes. If any of the text boxes are left blank, an <xref:System.Web.HttpException> object is created and thrown. The error code of the <xref:System.Web.HttpException> is obtained by the <xref:System.Web.HttpException.GetHttpCode%2A> method and displayed on the Web page.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor/CS/httpexception_constructor5.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor/VB/httpexception_constructor5.vb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor/CS/httpexception_constructor5.cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpException_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor/VB/httpexception_constructor5.vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,10 +355,10 @@
         <returns>A non-zero HTTP code representing the exception or the <see cref="P:System.Exception.InnerException" /> code; otherwise, HTTP response status code 500.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is a non-zero HTTP code, it is returned. Otherwise, the <xref:System.Exception.InnerException%2A> code is returned. If neither an <xref:System.Exception.InnerException%2A> code nor a non-zero HTTP code is available, the HTTP response status code 500 is returned. For more information on HTTP response status codes, see the Status Code Definitions of the Hypertext Transfer Protocol - HTTP/1.1 on the World [Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
-  
+If there is a non-zero HTTP code, it is returned. Otherwise, the <xref:System.Exception.InnerException%2A> code is returned. If neither an <xref:System.Exception.InnerException%2A> code nor a non-zero HTTP code is available, the HTTP response status code 500 is returned. For more information on HTTP response status codes, see the Status Code Definitions of the Hypertext Transfer Protocol - HTTP/1.1 on the World [Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,10 +385,10 @@
         <summary>Gets information about the exception and adds it to the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpException.GetObjectData%2A> method adds information about the exception to the <xref:System.Runtime.Serialization.SerializationInfo> object that is targeted for serialization. During deserialization, the exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> that is transmitted over the stream.  
-  
+The <xref:System.Web.HttpException.GetObjectData%2A> method adds information about the exception to the <xref:System.Runtime.Serialization.SerializationInfo> object that is targeted for serialization. During deserialization, the exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> that is transmitted over the stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>

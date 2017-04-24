@@ -23,12 +23,12 @@
     <summary>Serves as the base class for classes that enable information to be shared across multiple sessions and requests within an ASP.NET application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplicationStateBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpApplicationState> class. The <xref:System.Web.HttpApplicationStateBase> class lets you create derived classes that are like the <xref:System.Web.HttpApplicationState> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
-  
- The <xref:System.Web.HttpApplicationStateWrapper> class derives from the <xref:System.Web.HttpApplicationStateBase> class. The <xref:System.Web.HttpApplicationStateWrapper> class serves as a wrapper for the <xref:System.Web.HttpApplicationState> class. At run time, you typically use an instance of the <xref:System.Web.HttpApplicationStateWrapper> class to call members of the <xref:System.Web.HttpApplicationState> object.  
-  
+The <xref:System.Web.HttpApplicationStateBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpApplicationState> class. The <xref:System.Web.HttpApplicationStateBase> class lets you create derived classes that are like the <xref:System.Web.HttpApplicationState> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
+ 
+The <xref:System.Web.HttpApplicationStateWrapper> class derives from the <xref:System.Web.HttpApplicationStateBase> class. The <xref:System.Web.HttpApplicationStateWrapper> class serves as a wrapper for the <xref:System.Web.HttpApplicationState> class. At run time, you typically use an instance of the <xref:System.Web.HttpApplicationStateWrapper> class to call members of the <xref:System.Web.HttpApplicationState> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -127,10 +127,10 @@
         <value>A reference to the <see cref="T:System.Web.HttpApplicationState" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides compatibility with earlier versions of ASP.  
-  
+This property provides compatibility with earlier versions of ASP.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -457,12 +457,12 @@
         <value>A collection of objects in the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Application objects are defined in the Global.asax file inside an element with syntax like the following:  
-  
- `<object runat="server" scope="Application">Object information</object>`  
-  
+Application objects are defined in the Global.asax file inside an element with syntax like the following:  
+ 
+`<object runat="server" scope="Application">Object information</object>`  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>

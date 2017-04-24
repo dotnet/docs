@@ -112,10 +112,10 @@
         <summary>Imports endpoints.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Tries to upgrade to system-provided binding when possible.  
-  
+Tries to upgrade to system-provided binding when possible.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Either <paramref name="importer" /> or <paramref name="context" /> is <see langword="null" />.</exception>

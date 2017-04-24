@@ -20,20 +20,20 @@
     <summary>Specifies that a property, field, or parameter value should be provided by the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" />.object</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the Attributed Programming Model, the <xref:System.ComponentModel.Composition.ImportAttribute> is used to declare the imports, or dependencies, of a given part. It can decorate a property, a field, or a method. During composition, a part's imports will be filled by the <xref:System.ComponentModel.Composition.Hosting.CompositionContainer> object to which that part belongs, by using the exports provided to that <xref:System.ComponentModel.Composition.Hosting.CompositionContainer> object.  
+In the Attributed Programming Model, the <xref:System.ComponentModel.Composition.ImportAttribute> is used to declare the imports, or dependencies, of a given part. It can decorate a property, a field, or a method. During composition, a part's imports will be filled by the <xref:System.ComponentModel.Composition.Hosting.CompositionContainer> object to which that part belongs, by using the exports provided to that <xref:System.ComponentModel.Composition.Hosting.CompositionContainer> object.  
+ 
+Whether an import matches a given export is determined primarily by comparing the contract name and the contract type. Ordinarily, you do not have to specify either of these when using the import attribute in code, and they will be automatically inferred from the type of the decorated member. If the import must match an export of a different type (for example, a subclass of the type of the decorated member, or an interface implemented by that member), then the contract type must be explicitly specified. The contract name can also be explicitly specified, for example to distinguish between multiple contracts with the same type, but it is usually better to do this through metadata. For more information about metadata, see <xref:System.ComponentModel.Composition.PartMetadataAttribute>.  
+ 
   
- Whether an import matches a given export is determined primarily by comparing the contract name and the contract type. Ordinarily, you do not have to specify either of these when using the import attribute in code, and they will be automatically inferred from the type of the decorated member. If the import must match an export of a different type (for example, a subclass of the type of the decorated member, or an interface implemented by that member), then the contract type must be explicitly specified. The contract name can also be explicitly specified, for example to distinguish between multiple contracts with the same type, but it is usually better to do this through metadata. For more information about metadata, see <xref:System.ComponentModel.Composition.PartMetadataAttribute>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows three classes with members decorated with the <xref:System.ComponentModel.Composition.ImportAttribute>, and three exports that match them.  
-  
- [!code-csharp[ImportAndExport#1](~/samples/snippets/csharp/VS_Snippets_Misc/importandexport/cs/program.cs#1)]
- [!code-vb[ImportAndExport#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/importandexport/vb/module1.vb#1)]  
-  
+The following example shows three classes with members decorated with the <xref:System.ComponentModel.Composition.ImportAttribute>, and three exports that match them.  
+ 
+[!code-csharp[ImportAndExport#1](~/samples/snippets/csharp/VS_Snippets_Misc/importandexport/cs/program.cs#1)]
+[!code-vb[ImportAndExport#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/importandexport/vb/module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,12 +53,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportAttribute" /> class, importing the export with the default contract name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that this is marked with this attribute.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that this is marked with this attribute.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,12 +81,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportAttribute" /> class, importing the export with the specified contract name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that is marked with this attribute.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that is marked with this attribute.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,14 +109,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportAttribute" /> class, importing the export with the contract name derived from the specified type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `contractType`.  
-  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that is marked with this attribute.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `contractType`.  
+ 
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that is marked with this attribute.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
           <see langword="true" /> if the property, field, or parameter will be set to its type's default value when there is no export with the <see cref="P:System.ComponentModel.Composition.ImportAttribute.ContractName" /> in the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of the type of a property, field, or parameter is `null` for reference types and zero for numeric value types. For other value types, the default value will be each field of the value type initialized to zero if the field is a value type, or `null` if the field is a reference type.  
-  
+The default value of the type of a property, field, or parameter is `null` for reference types and zero for numeric value types. For other value types, the default value will be each field of the value type initialized to zero if the field is a value type, or `null` if the field is a reference type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

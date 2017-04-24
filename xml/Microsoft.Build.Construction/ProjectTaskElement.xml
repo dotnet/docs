@@ -145,10 +145,10 @@
         <value>Returns the <c>ContinueOnError</c> attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the `ContinueOnError` attribute if the value to set is set to null or an empty string.  
-  
+Removes the `ContinueOnError` attribute if the value to set is set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,10 +372,10 @@
         <value>Returns all unevaluated parameters of this task.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Condition` and `ContinueOnError` attributes are not included in this collection. If parameters differ only by case then only the last one will be returned. See also RemoveAllParameters().  
-  
+`Condition` and `ContinueOnError` attributes are not included in this collection. If parameters differ only by case then only the last one will be returned. See also RemoveAllParameters().  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -441,10 +441,10 @@
         <summary>Updates or adds a parameter on this task</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Updates the parameter to the specified value if a parameter by that name exists in the task. Otherwise, creates a parameter with the specified name and value, and adds it to the task.  
-  
+Updates the parameter to the specified value if a parameter by that name exists in the task. Otherwise, creates a parameter with the specified name and value, and adds it to the task.  
+ 
  ]]></format>
         </remarks>
       </Docs>

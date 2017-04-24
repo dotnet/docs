@@ -14,21 +14,21 @@
     <summary>Provides an abstract class for specifying character data and formatting properties to be used by the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All access to the text in the <xref:System.Windows.Media.TextFormatting.TextSource> object is through the <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A>, which is designed to allow the text layout client to virtualize text in any way it chooses.  
-  
- <xref:System.Windows.Media.TextFormatting.TextFormatter> is the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] text engine that provides services for formatting text and breaking text lines. <xref:System.Windows.Media.TextFormatting.TextFormatter> can handle different text character formats and paragraph styles, and includes support for international text layout. Unlike a traditional text [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following list describes the three members you must override:  
-  
+All access to the text in the <xref:System.Windows.Media.TextFormatting.TextSource> object is through the <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A>, which is designed to allow the text layout client to virtualize text in any way it chooses.  
+ 
+<xref:System.Windows.Media.TextFormatting.TextFormatter> is the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] text engine that provides services for formatting text and breaking text lines. <xref:System.Windows.Media.TextFormatting.TextFormatter> can handle different text character formats and paragraph styles, and includes support for international text layout. Unlike a traditional text [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following list describes the three members you must override:  
+ 
 -   <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A>: Retrieves a <xref:System.Windows.Media.TextFormatting.TextRun> starting at a specified <xref:System.Windows.Media.TextFormatting.TextSource> position.  
-  
+ 
 -   <xref:System.Windows.Media.TextFormatting.TextSource.GetPrecedingText%2A>: Retrieves the text span immediately before the specified <xref:System.Windows.Media.TextFormatting.TextSource> position.  
-  
+ 
 -   <xref:System.Windows.Media.TextFormatting.TextSource.GetTextEffectCharacterIndexFromTextSourceCharacterIndex%2A>: Retrieves a value that maps a <xref:System.Windows.Media.TextFormatting.TextSource> character index to a <xref:System.Windows.Media.TextEffect> character index.  
-  
+ 
 > [!NOTE]
 >  For a complete code sample that shows how to implement a derived <xref:System.Windows.Media.TextFormatting.TextSource> class, see [Advanced Text Formatting Sample](http://go.microsoft.com/fwlink/?LinkID=159965) .  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,12 +69,12 @@
         <returns>A <see cref="T:System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange" /> value that represents the text span immediately before <paramref name="textSourceCharacterIndexLimit" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.TextFormatting.TextSource.GetPrecedingText%2A> method returns an empty <xref:System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange> if the text span immediately before `textSourceCharacterIndexLimit` does not contain any text, such as inline object or a hidden run.  
-  
- This method returns a zero-length text span if there are no values preceding `textSourceCharacterIndexLimit`.  
-  
+The <xref:System.Windows.Media.TextFormatting.TextSource.GetPrecedingText%2A> method returns an empty <xref:System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange> if the text span immediately before `textSourceCharacterIndexLimit` does not contain any text, such as inline object or a hidden run.  
+ 
+This method returns a zero-length text span if there are no values preceding `textSourceCharacterIndexLimit`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <returns>A value that represents a <see cref="T:System.Windows.Media.TextFormatting.TextRun" />, or an object derived from <see cref="T:System.Windows.Media.TextFormatting.TextRun" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A text run is a sequence of characters sharing a single property set. Any change to the format, such as font family, font style, foreground color, text decoration, or any other formatting effect, breaks the text run. The <xref:System.Windows.Media.TextFormatting.TextRun> class is the root of a type hierarchy representing several types of text content processed by <xref:System.Windows.Media.TextFormatting.TextFormatter>. Each class that is derived from <xref:System.Windows.Media.TextFormatting.TextRun> represents a distinct type of text content.  
-  
+A text run is a sequence of characters sharing a single property set. Any change to the format, such as font family, font style, foreground color, text decoration, or any other formatting effect, breaks the text run. The <xref:System.Windows.Media.TextFormatting.TextRun> class is the root of a type hierarchy representing several types of text content processed by <xref:System.Windows.Media.TextFormatting.TextFormatter>. Each class that is derived from <xref:System.Windows.Media.TextFormatting.TextRun> represents a distinct type of text content.  
+ 
 |Class|Description|  
 |-----------|-----------------|  
 |<xref:System.Windows.Media.TextFormatting.TextRun>|Root of the hierarchy. Defines a group of characters that share the same set of character properties.|  
@@ -136,15 +136,15 @@
 |<xref:System.Windows.Media.TextFormatting.TextEndOfSegment>|Defines a segment break marker.|  
 |<xref:System.Windows.Media.TextFormatting.TextHidden>|Defines a range of non-visible characters.|  
 |<xref:System.Windows.Media.TextFormatting.TextModifier>|Defines the beginning of a modification scope.|  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, an override for the <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> method is implemented.  
-  
- [!code-csharp[TextFormattingSnippets#TextFormattingSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormattingSnippets/CSharp/CustomTextClasses.cs#textformattingsnippet4)]
- [!code-vb[TextFormattingSnippets#TextFormattingSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormattingSnippets/visualbasic/customtextclasses.vb#textformattingsnippet4)]  
-  
+In the following example, an override for the <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> method is implemented.  
+ 
+[!code-csharp[TextFormattingSnippets#TextFormattingSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormattingSnippets/CSharp/CustomTextClasses.cs#textformattingsnippet4)]
+[!code-vb[TextFormattingSnippets#TextFormattingSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormattingSnippets/visualbasic/customtextclasses.vb#textformattingsnippet4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <value>The current <see cref="P:System.Windows.Media.TextFormatting.TextSource.PixelsPerDip" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any class that extends <xref:System.Windows.Media.TextFormatting.TextSource> should update         <xref:System.Windows.Media.TextFormatting.TextSource.PixelsPerDip%2A> whenever the DPI changes for a Per Monitor DPI Aware application.  
-  
+Any class that extends <xref:System.Windows.Media.TextFormatting.TextSource> should update         <xref:System.Windows.Media.TextFormatting.TextSource.PixelsPerDip%2A> whenever the DPI changes for a Per Monitor DPI Aware application.  
+ 
  ]]></format>
         </remarks>
       </Docs>

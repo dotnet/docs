@@ -34,25 +34,25 @@
     <summary>Specifies the details of how a method is implemented. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can apply this attribute to methods or constructors.  
+You can apply this attribute to methods or constructors.  
+ 
+This attribute lets you customize the configuration of the method or constructor to which it applies by supplying a <xref:System.Runtime.CompilerServices.MethodImplOptions> value to its class constructor. The members of the <xref:System.Runtime.CompilerServices.MethodImplOptions> enumeration correspond to bit fields in the `CorMethodImpl` metadata table. This means that information on the attribute cannot be retrieved at run time by calling the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method; instead, it is retrieved by calling either the `MethodInfo.GetMethodImplementationFlags` or the `ConstructorInfo.GetMethodImplementationFlags` method.  
+ 
   
- This attribute lets you customize the configuration of the method or constructor to which it applies by supplying a <xref:System.Runtime.CompilerServices.MethodImplOptions> value to its class constructor. The members of the <xref:System.Runtime.CompilerServices.MethodImplOptions> enumeration correspond to bit fields in the `CorMethodImpl` metadata table. This means that information on the attribute cannot be retrieved at run time by calling the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method; instead, it is retrieved by calling either the `MethodInfo.GetMethodImplementationFlags` or the `ConstructorInfo.GetMethodImplementationFlags` method.  
-  
-   
-  
+ 
 ## Examples  
- The following example applies the <xref:System.Runtime.CompilerServices.MethodImplAttribute> to the `GetCalendarName` method to ensure that it is not inlined at run time by the just-in-time (JIT) compiler.  
-  
- [!code-csharp[System.Runtime.CompilerServices.MethodImplAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/cs/methodimplattribute1.cs#1)]
- [!code-vb[System.Runtime.CompilerServices.MethodImplAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/vb/methodimplattribute1.vb#1)]  
-  
- The following example then calls the `MethodInfo.GetMethodImplementationFlags` method to determine which flags are set for the `GetCalendarName` method. It also demonstrates that this information is not retrieved by the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method.  
-  
- [!code-csharp[System.Runtime.CompilerServices.MethodImplAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/cs/getmethodimplattribute1.cs#2)]
- [!code-vb[System.Runtime.CompilerServices.MethodImplAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/vb/getmethodimplattribute1.vb#2)]  
-  
+The following example applies the <xref:System.Runtime.CompilerServices.MethodImplAttribute> to the `GetCalendarName` method to ensure that it is not inlined at run time by the just-in-time (JIT) compiler.  
+ 
+[!code-csharp[System.Runtime.CompilerServices.MethodImplAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/cs/methodimplattribute1.cs#1)]
+[!code-vb[System.Runtime.CompilerServices.MethodImplAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/vb/methodimplattribute1.vb#1)]  
+ 
+The following example then calls the `MethodInfo.GetMethodImplementationFlags` method to determine which flags are set for the `GetCalendarName` method. It also demonstrates that this information is not retrieved by the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method.  
+ 
+[!code-csharp[System.Runtime.CompilerServices.MethodImplAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/cs/getmethodimplattribute1.cs#2)]
+[!code-vb[System.Runtime.CompilerServices.MethodImplAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/vb/getmethodimplattribute1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,10 +129,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.MethodImplAttribute" /> class with the specified <see cref="T:System.Runtime.CompilerServices.MethodImplOptions" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the `CorMethodImpl` bit fields in the metadata table. The value of these flags can be retrieved at run time by calling the `MethodInfo.GetMethodImplementationFlags` or `ConstructorInfo.GetMethodImplementationFlags` method.  
-  
+This constructor sets the `CorMethodImpl` bit fields in the metadata table. The value of these flags can be retrieved at run time by calling the `MethodInfo.GetMethodImplementationFlags` or `ConstructorInfo.GetMethodImplementationFlags` method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

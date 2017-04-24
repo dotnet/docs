@@ -3,12 +3,12 @@
     <summary>The <see cref="N:System.Data.SqlTypes" /> namespace provides classes for native data types in SQL Server. These classes provide a safer, faster alternative to the data types provided by the .NET Framework common language runtime (CLR). Using the classes in this namespace helps prevent type conversion errors caused by loss of precision. Because other data types are converted to and from **SqlTypes** behind the scenes, explicitly creating and using objects within this namespace also yields faster code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each data type in **SqlTypes** has its equivalent data type in SQL Server, with the same underlying data representation. Many of them also have equivalent data types in the CLR. However, **SqlDateTime**, **SqlDecimal**, and **SqlString** have different underlying data structures with their corresponding .NET Framework data types.  
-  
- The following table maps the members of the **SqlTypes** namespace to Microsoft [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] data types and to the members of the <xref:System.Data.SqlDbType> enumeration.  
-  
+Each data type in **SqlTypes** has its equivalent data type in SQL Server, with the same underlying data representation. Many of them also have equivalent data types in the CLR. However, **SqlDateTime**, **SqlDecimal**, and **SqlString** have different underlying data structures with their corresponding .NET Framework data types.  
+ 
+The following table maps the members of the **SqlTypes** namespace to Microsoft [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] data types and to the members of the <xref:System.Data.SqlDbType> enumeration.  
+ 
 |.NET Framework SqlTypes|Native [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)]|.NET Framework SqlDbType|  
 |-----------------------------|------------------------------------------------------------------------|------------------------------|  
 |<xref:System.Data.SqlTypes.SqlBinary>|binary, image, timestamp, varbinary|Binary, Image, TimeStamp, VarBinary|  
@@ -28,7 +28,7 @@
 |<xref:System.Data.SqlTypes.SqlSingle>|real|Real|  
 |<xref:System.Data.SqlTypes.SqlString>|char, nchar, text, ntext, nvarchar, varchar|Char, NChar, Text, Ntext, NVarChar, VarChar|  
 |<xref:System.Data.SqlTypes.SqlXml>|xml|Xml|  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

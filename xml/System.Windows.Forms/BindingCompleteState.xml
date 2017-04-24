@@ -13,19 +13,19 @@
     <summary>Indicates the result of a completed binding operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.BindingCompleteState> is used by the <xref:System.Windows.Forms.BindingCompleteEventArgs> type.  
+The <xref:System.Windows.Forms.BindingCompleteState> is used by the <xref:System.Windows.Forms.BindingCompleteEventArgs> type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates handling the <xref:System.Windows.Forms.Binding.BindingComplete> event and using the <xref:System.Windows.Forms.BindingCompleteState>. To run this code, paste it into an empty code file.  
-  
- [!code-cpp[System.Windows.Forms.DataConnectorBindingComplete#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorBindingComplete/CPP/form1.cpp#3)]
- [!code-csharp[System.Windows.Forms.DataConnectorBindingComplete#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorBindingComplete/CS/form1.cs#3)]
- [!code-vb[System.Windows.Forms.DataConnectorBindingComplete#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorBindingComplete/VB/form1.vb#3)]  
-  
+The following code example demonstrates handling the <xref:System.Windows.Forms.Binding.BindingComplete> event and using the <xref:System.Windows.Forms.BindingCompleteState>. To run this code, paste it into an empty code file.  
+ 
+[!code-cpp[System.Windows.Forms.DataConnectorBindingComplete#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorBindingComplete/CPP/form1.cpp#3)]
+[!code-csharp[System.Windows.Forms.DataConnectorBindingComplete#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorBindingComplete/CS/form1.cs#3)]
+[!code-vb[System.Windows.Forms.DataConnectorBindingComplete#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorBindingComplete/VB/form1.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,22 +14,22 @@
     <summary>Passed to the <see cref="M:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation(System.ServiceModel.Description.OperationContractGenerationContext)" /> method to enable the modification of an operation contract and its context prior to generating code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to modify the code document object model prior to the generation of code. Typically, the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName> interface is implemented on a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> implementation that is used to import custom WSDL elements or otherwise modify the code at the service or operation level. To modify the code at the service level, see <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName>.  
+Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to modify the code document object model prior to the generation of code. Typically, the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName> interface is implemented on a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> implementation that is used to import custom WSDL elements or otherwise modify the code at the service or operation level. To modify the code at the service level, see <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
-  
- [!code-csharp[C_CustomWSDLExtensions#14](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#14)]  
-  
- The following code example shows the resulting code comments.  
-  
- [!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
- [!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
-  
+The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#14](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#14)]  
+ 
+The following code example shows the resulting code comments.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
+[!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -167,10 +167,10 @@
         <value>The <see cref="T:System.CodeDom.CodeMemberMethod" /> for the asynchronous begin operation. Returns null if the operation is a synchronous operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.BeginMethod%2A> to examine or modify the asynchronous begin method that represents the operation to be generated.  
-  
+Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.BeginMethod%2A> to examine or modify the asynchronous begin method that represents the operation to be generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,10 +192,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.ServiceContractGenerationContext" /> for the current operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.Contract%2A> property to obtain the contract generation context for the service contract that contains the operation.  
-  
+Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.Contract%2A> property to obtain the contract generation context for the service contract that contains the operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <value>The declaring type for the current operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.DeclaringType%2A> property to examine or modify the code type declaration for the current operation.  
-  
+Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.DeclaringType%2A> property to examine or modify the code type declaration for the current operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <value>The asynchronous end operation. Returns null if the operation is a synchronous operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.EndMethod%2A> property to examine or modify the asynchronous end method that models an asynchronous operation.  
-  
+Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.EndMethod%2A> property to examine or modify the asynchronous end method that models an asynchronous operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,10 +305,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.OperationDescription" /> for the current operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.Operation%2A> property to examine operation information prior to generating code for that operation.  
-  
+Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.Operation%2A> property to examine operation information prior to generating code for that operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,10 +330,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> that generates the current operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.ServiceContractGenerator%2A> property to examine or modify the object that generates code for the current operation.  
-  
+Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.ServiceContractGenerator%2A> property to examine or modify the object that generates code for the current operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,22 +355,22 @@
         <value>The <see cref="T:System.CodeDom.CodeMemberMethod" /> for the synchronous operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.SyncMethod%2A> property to examine or modify the synchronous operation before it is generated.  
+Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.SyncMethod%2A> property to examine or modify the synchronous operation before it is generated.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
-  
- [!code-csharp[C_CustomWSDLExtensions#14](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#14)]  
-  
- The following code example shows the resulting code comments.  
-  
- [!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
- [!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
-  
+The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#14](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#14)]  
+ 
+The following code example shows the resulting code comments.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
+[!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

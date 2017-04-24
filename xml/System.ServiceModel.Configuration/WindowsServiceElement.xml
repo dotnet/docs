@@ -14,10 +14,10 @@
     <summary>Represents a configuration element that specifies the settings of a Windows service credential. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- <xref:System.ServiceModel.Security.WindowsServiceCredential>  
-  
+<xref:System.ServiceModel.Security.WindowsServiceCredential>  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
           <see langword="true" /> if anonymous users can logon; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using Windows service credentials on a binding, the system does not allow anonymous access by default. This means that only domain or workgroup authenticated users have access to the system. You can use this property to allow anonymous, unauthenticated users to access the service. You should exercise caution when using this setting.  
-  
+When using Windows service credentials on a binding, the system does not allow anonymous access by default. This means that only domain or workgroup authenticated users have access to the system. You can use this property to allow anonymous, unauthenticated users to access the service. You should exercise caution when using this setting.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
           <see langword="true" /> if Windows groups are included in the security context; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property to `true` has a performance impact as it results in a full group expansion. Set this property to `false` if you do not need to establish the list of groups a user belongs to.  
-  
+Setting this property to `true` has a performance impact as it results in a full group expansion. Set this property to `false` if you do not need to establish the list of groups a user belongs to.  
+ 
  ]]></format>
         </remarks>
       </Docs>

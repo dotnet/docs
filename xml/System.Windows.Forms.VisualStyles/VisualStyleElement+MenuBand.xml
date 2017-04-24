@@ -14,16 +14,16 @@
     <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of a menu band. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand> class provides a foundation in which the following classes are defined:  
-  
+The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand> class provides a foundation in which the following classes are defined:  
+ 
 -   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand.NewApplicationButton>  
-  
+ 
 -   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand.Separator>  
-  
- Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the menu band part specified by the class name.  
-  
+ 
+Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the menu band part specified by the class name.  
+ 
  ]]></format>
     </remarks>
   </Docs>

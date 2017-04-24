@@ -41,27 +41,27 @@
     <summary>Wraps ActiveX controls and exposes them as fully featured Windows Forms controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You typically do not use the <xref:System.Windows.Forms.AxHost> class directly. You can use the [Aximp.exe (Windows Forms ActiveX Control Importer)](~/docs/framework/tools/aximp-exe-windows-forms-activex-control-importer.md) to generate the wrappers that extend <xref:System.Windows.Forms.AxHost>.  
-  
- The ActiveX Control Importer generates a class that is derived from the <xref:System.Windows.Forms.AxHost> class, and compiles it into a library file (DLL) that can be added as a reference to your application. Alternatively, you can use the `/source` switch with the ActiveX Control Importer and a C# file is generated for your <xref:System.Windows.Forms.AxHost> derived class. You can then make changes to the code and recompile it into a library file.  
-  
+You typically do not use the <xref:System.Windows.Forms.AxHost> class directly. You can use the [Aximp.exe (Windows Forms ActiveX Control Importer)](~/docs/framework/tools/aximp-exe-windows-forms-activex-control-importer.md) to generate the wrappers that extend <xref:System.Windows.Forms.AxHost>.  
+ 
+The ActiveX Control Importer generates a class that is derived from the <xref:System.Windows.Forms.AxHost> class, and compiles it into a library file (DLL) that can be added as a reference to your application. Alternatively, you can use the `/source` switch with the ActiveX Control Importer and a C# file is generated for your <xref:System.Windows.Forms.AxHost> derived class. You can then make changes to the code and recompile it into a library file.  
+ 
 > [!NOTE]
 >  If the name of a member of the ActiveX control matches a name defined in the .NET Framework, then the ActiveX Control Importer will prefix the member name with "Ctl" when it creates the <xref:System.Windows.Forms.AxHost> derived class. For example, if your ActiveX control has a member named "Layout", it is renamed "CtlLayout" in the <xref:System.Windows.Forms.AxHost> derived class because the `Layout` event is defined within the .NET Framework.  
-  
- Most of the common properties of the <xref:System.Windows.Forms.AxHost> class are only valid and used if the underlying ActiveX control exposes those properties. A few examples of the common properties are <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Cursor%2A>, <xref:System.Windows.Forms.Control.Font%2A>, and <xref:System.Windows.Forms.Control.Text%2A>.  
-  
+ 
+Most of the common properties of the <xref:System.Windows.Forms.AxHost> class are only valid and used if the underlying ActiveX control exposes those properties. A few examples of the common properties are <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Cursor%2A>, <xref:System.Windows.Forms.Control.Font%2A>, and <xref:System.Windows.Forms.Control.Text%2A>.  
+ 
 > [!NOTE]
 >  If you are using Visual Studio as your Windows Forms design environment, you can make an ActiveX control available to your application by adding the ActiveX control to your Toolbox. To accomplish this, right-click the **Toolbox**, select **Customize Toolbox**, then browse to the ActiveX control's.ocx file. For more information, see "Adding ActiveX Controls to Windows Forms" in the Visual Studio documentation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
-  
- [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
-  
+The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+ 
+[!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -103,12 +103,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost" /> class, wrapping the ActiveX control indicated by the specified CLSID, and using the shortcut-menu behavior indicated by the specified <paramref name="flags" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the binary representation of the `flags` parameter value contains the bit represented by the value 0x1, the shortcut menu for the control will not contain an **Edit** option unless the ActiveX control explicitly provides it.  
-  
- If the binary representation of the `flags` parameter value contains the bit represented by the value 0x2, the shortcut menu for the control will contain a Properties option if the ActiveX control offers a set of property pages; otherwise, the shortcut menu will contain a Properties option only if the ActiveX control explicitly provides it.  
-  
+If the binary representation of the `flags` parameter value contains the bit represented by the value 0x1, the shortcut menu for the control will not contain an **Edit** option unless the ActiveX control explicitly provides it.  
+ 
+If the binary representation of the `flags` parameter value contains the bit represented by the value 0x2, the shortcut menu for the control will contain a Properties option if the ActiveX control offers a set of property pages; otherwise, the shortcut menu will contain a Properties option only if the ActiveX control explicitly provides it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,12 +130,12 @@
         <summary>When overridden in a derived class, attaches interfaces to the underlying ActiveX control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
-  
- [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
-  
+The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+ 
+[!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -193,10 +193,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.BackColorChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.BackColorChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.BackColorChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.BackgroundImageChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.BackgroundImageChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.BackgroundImageChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,10 +338,10 @@
         <summary>Begins the initialization of the ActiveX control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Design environments typically use this method to start the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.AxHost.EndInit%2A> method ends the initialization. Using the <xref:System.Windows.Forms.AxHost.BeginInit%2A> and <xref:System.Windows.Forms.AxHost.EndInit%2A> methods prevents the control from being used before it is fully initialized. The initialization occurs at run time.  
-  
+Design environments typically use this method to start the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.AxHost.EndInit%2A> method ends the initialization. Using the <xref:System.Windows.Forms.AxHost.BeginInit%2A> and <xref:System.Windows.Forms.AxHost.EndInit%2A> methods prevents the control from being used before it is fully initialized. The initialization occurs at run time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,10 +370,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.BindingContextChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.BindingContextChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.BindingContextChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,10 +402,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.ChangeUICues" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ChangeUICues> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ChangeUICues> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,10 +434,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.Click" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.Click> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.Click> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -470,10 +470,10 @@
         <value>A <see cref="T:System.Windows.Forms.ContainerControl" /> that represents the control containing the ActiveX control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.AxHost.ContainingControl%2A> property value can be different from the <xref:System.Windows.Forms.Control.Parent%2A> property. The <xref:System.Windows.Forms.ContainerControl> represented by this property is the ActiveX control's logical container. For example, if an ActiveX control is hosted in a <xref:System.Windows.Forms.GroupBox> control, and the <xref:System.Windows.Forms.GroupBox> is contained on a <xref:System.Windows.Forms.Form>, then the <xref:System.Windows.Forms.AxHost.ContainingControl%2A> property value of the ActiveX control is the <xref:System.Windows.Forms.Form>, and the <xref:System.Windows.Forms.Control.Parent%2A> property value is the <xref:System.Windows.Forms.GroupBox> control.  
-  
+The <xref:System.Windows.Forms.AxHost.ContainingControl%2A> property value can be different from the <xref:System.Windows.Forms.Control.Parent%2A> property. The <xref:System.Windows.Forms.ContainerControl> represented by this property is the ActiveX control's logical container. For example, if an ActiveX control is hosted in a <xref:System.Windows.Forms.GroupBox> control, and the <xref:System.Windows.Forms.GroupBox> is contained on a <xref:System.Windows.Forms.Form>, then the <xref:System.Windows.Forms.AxHost.ContainingControl%2A> property value of the ActiveX control is the <xref:System.Windows.Forms.Form>, and the <xref:System.Windows.Forms.Control.Parent%2A> property value is the <xref:System.Windows.Forms.GroupBox> control.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to get this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -529,10 +529,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.ContextMenuChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ContextMenuChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ContextMenuChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -617,10 +617,10 @@
         <summary>Called by the control to prepare it for listening to events.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This base-class implementation is empty.  
-  
+This base-class implementation is empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -675,10 +675,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.CursorChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.CursorChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.CursorChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -741,10 +741,10 @@
         <summary>Called by the control when it stops listening to events.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This base-class implementation is empty.  
-  
+This base-class implementation is empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -795,10 +795,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.DoubleClick" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DoubleClick> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DoubleClick> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -823,10 +823,10 @@
         <summary>Requests that an object perform an action in response to an end-user's action.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method passes the specified verb to the [IOleObject::DoVerb](http://go.microsoft.com/fwlink/?LinkId=166076) method of the hosted control.  
-  
+This method passes the specified verb to the [IOleObject::DoVerb](http://go.microsoft.com/fwlink/?LinkId=166076) method of the hosted control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -855,10 +855,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.DragDrop" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragDrop> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragDrop> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -887,10 +887,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.DragEnter" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragEnter> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragEnter> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -919,10 +919,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.DragLeave" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragLeave> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragLeave> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -951,10 +951,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.DragOver" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragOver> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragOver> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1067,10 +1067,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.EnabledChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.EnabledChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.EnabledChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1097,10 +1097,10 @@
         <summary>Ends the initialization of an ActiveX control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Design environments typically use this method to finish the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.AxHost.EndInit%2A> method ends the initialization. Using the <xref:System.Windows.Forms.AxHost.BeginInit%2A> and <xref:System.Windows.Forms.AxHost.EndInit%2A> methods prevents the control from being used before it is fully initialized. The initialization occurs at run time.  
-  
+Design environments typically use this method to finish the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.AxHost.EndInit%2A> method ends the initialization. Using the <xref:System.Windows.Forms.AxHost.BeginInit%2A> and <xref:System.Windows.Forms.AxHost.EndInit%2A> methods prevents the control from being used before it is fully initialized. The initialization occurs at run time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1155,10 +1155,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.FontChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.FontChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.FontChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1213,10 +1213,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.ForeColorChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ForeColorChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ForeColorChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1468,14 +1468,14 @@
         <returns>A double-precision floating-point number that contains an OLE Automation date equivalent to specified <paramref name="time" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An OLE Automation date is implemented as a floating-point number whose value is the number of days from midnight, 30 December 1899. For example, midnight, 31 December 1899 is represented by 1.0; 6 A.M., 1 January 1900 is represented by 2.25; midnight, 29 December 1899 is represented by -1.0; and 6 A.M., 29 December 1899 is represented by -1.25.  
-  
- The base OLE Automation Date is midnight, 30 December 1899. The maximum OLE Automation Date is the same as <xref:System.DateTime>, the last moment of 31 December 9999.  
-  
- For more information about OLE Automation, see the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
-  
+An OLE Automation date is implemented as a floating-point number whose value is the number of days from midnight, 30 December 1899. For example, midnight, 31 December 1899 is represented by 1.0; 6 A.M., 1 January 1900 is represented by 2.25; midnight, 29 December 1899 is represented by -1.0; and 6 A.M., 29 December 1899 is represented by -1.25.  
+ 
+The base OLE Automation Date is midnight, 30 December 1899. The maximum OLE Automation Date is the same as <xref:System.DateTime>, the last moment of 31 December 9999.  
+ 
+For more information about OLE Automation, see the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The value of this instance cannot be represented as an OLE Automation Date.</exception>
@@ -1504,12 +1504,12 @@
         <returns>An object that represents the ActiveX control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
-  
- [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
-  
+The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+ 
+[!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1570,10 +1570,10 @@
         <returns>An <see cref="T:System.Drawing.Image" /> representing the <see langword="IPicture" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to convert `IPictureDisp` objects in addition to `IPicture` objects. This works because the `IPictureDisp` OLE interface is a subset of the `IPicture` interface. Converting `IPictureDisp` objects with this method is necessary because the <xref:System.Windows.Forms.AxHost.GetPictureFromIPictureDisp%2A> does not work correctly at this time.  
-  
+You can use this method to convert `IPictureDisp` objects in addition to `IPicture` objects. This works because the `IPictureDisp` OLE interface is a subset of the `IPicture` interface. Converting `IPictureDisp` objects with this method is necessary because the <xref:System.Windows.Forms.AxHost.GetPictureFromIPictureDisp%2A> does not work correctly at this time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1604,10 +1604,10 @@
         <returns>An <see cref="T:System.Drawing.Image" /> representing the <see langword="IPictureDisp" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not work correctly. You can use the <xref:System.Windows.Forms.AxHost.GetPictureFromIPicture%2A> method to convert an `IPictureDisp` object into an <xref:System.Drawing.Image>, however, because the `IPictureDisp` OLE interface is a subset of the `IPicture` interface.  
-  
+This method does not work correctly. You can use the <xref:System.Windows.Forms.AxHost.GetPictureFromIPicture%2A> method to convert an `IPictureDisp` object into an <xref:System.Drawing.Image>, however, because the `IPictureDisp` OLE interface is a subset of the `IPicture` interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1642,10 +1642,10 @@
         <returns>The unmodified <paramref name="bounds" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ActiveX controls scale themselves, so this method does not perform any special calculations, ignores the `factor` and `specified` values, and returns the `bounds` value unchanged.  
-  
+ActiveX controls scale themselves, so this method does not perform any special calculations, ignores the `factor` and `specified` values, and returns the `bounds` value unchanged.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1676,14 +1676,14 @@
         <returns>A <see cref="T:System.DateTime" /> that represents the same date and time as <paramref name="date" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `date` parameter is a double-precision floating-point number that represents a date as the number of days before or after the base date, midnight, 30 December 1899. The sign and integral part of `date` encode the date as a positive or negative day displacement from 30 December 1899, and the absolute value of the fractional part of `date` encodes the time of day as a fraction of a day displacement from midnight. `date` must be a value between negative 657435.0 through positive 2958466.0.  
-  
- Note that because of the way dates are encoded, there are two ways of representing any time of day on 30 December 1899. For example, -0.5 and 0.5 both mean noon on 30 December 1899 because a day displacement of plus or minus zero days from the base date is still the base date, and a half day displacement from midnight is noon.  
-  
- For more information about OLE Automation, see the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
-  
+The `date` parameter is a double-precision floating-point number that represents a date as the number of days before or after the base date, midnight, 30 December 1899. The sign and integral part of `date` encode the date as a positive or negative day displacement from 30 December 1899, and the absolute value of the fractional part of `date` encodes the time of day as a fraction of a day displacement from midnight. `date` must be a value between negative 657435.0 through positive 2958466.0.  
+ 
+Note that because of the way dates are encoded, there are two ways of representing any time of day on 30 December 1899. For example, -0.5 and 0.5 both mean noon on 30 December 1899 because a day displacement of plus or minus zero days from the base date is still the base date, and a half day displacement from midnight is noon.  
+ 
+For more information about OLE Automation, see the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The date is not a valid OLE Automation Date value.</exception>
@@ -1713,10 +1713,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.GiveFeedback" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.GiveFeedback> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.GiveFeedback> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1750,17 +1750,17 @@
           <see langword="true" /> if the ActiveX control has an **About** dialog box; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The **About** dialog box typically displays version and copyright information about the ActiveX control.  
+The **About** dialog box typically displays version and copyright information about the ActiveX control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
-  
- [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
-  
+The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+ 
+[!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1784,10 +1784,10 @@
           <see langword="true" /> if the ActiveX control has a property page; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.  
-  
+Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1816,10 +1816,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.HelpRequested" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.HelpRequested> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.HelpRequested> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1877,10 +1877,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.ImeModeChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ImeModeChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ImeModeChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1930,12 +1930,12 @@
           <see langword="true" /> if the character should be sent directly to the ActiveX control and not preprocessed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.AxHost.IsInputChar%2A> method is called during window message preprocessing to determine whether the given input character should be preprocessed or sent directly to the ActiveX control. The preprocessing of a character includes checking whether the character is a mnemonic of another control.  
-  
- As implemented in the <xref:System.Windows.Forms.AxHost> class, the <xref:System.Windows.Forms.AxHost.IsInputChar%2A> method always returns `true`, so the specified character is sent directly to the ActiveX control.  
-  
+The <xref:System.Windows.Forms.AxHost.IsInputChar%2A> method is called during window message preprocessing to determine whether the given input character should be preprocessed or sent directly to the ActiveX control. The preprocessing of a character includes checking whether the character is a mnemonic of another control.  
+ 
+As implemented in the <xref:System.Windows.Forms.AxHost> class, the <xref:System.Windows.Forms.AxHost.IsInputChar%2A> method always returns `true`, so the specified character is sent directly to the ActiveX control.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -1965,10 +1965,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.KeyDown" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.KeyDown> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.KeyDown> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1997,10 +1997,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.KeyPress" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.KeyPress> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.KeyPress> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2029,10 +2029,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.KeyUp" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.KeyUp> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.KeyUp> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2061,10 +2061,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.Layout" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.Layout> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.Layout> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2166,10 +2166,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseDown" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseDown> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseDown> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2198,10 +2198,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseEnter" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseEnter> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseEnter> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2230,10 +2230,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseHover" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseHover> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseHover> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2262,10 +2262,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseLeave" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseLeave> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseLeave> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2294,10 +2294,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseMove" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseMove> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseMove> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2326,10 +2326,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseUp" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseUp> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseUp> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2358,10 +2358,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseWheel" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseWheel> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseWheel> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2397,10 +2397,10 @@
         <value>A <see cref="T:System.Windows.Forms.AxHost.State" /> that represents the persisted state of the ActiveX control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.Windows.Forms.AxHost.OcxState%2A> property is used after the control is created but before it is shown. The persisted state of the underlying ActiveX control is returned in the <xref:System.Windows.Forms.AxHost.State>.  
-  
+The value of the <xref:System.Windows.Forms.AxHost.OcxState%2A> property is used after the control is created but before it is shown. The persisted state of the underlying ActiveX control is returned in the <xref:System.Windows.Forms.AxHost.State>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The ActiveX control is already loaded.</exception>
@@ -2507,10 +2507,10 @@
         <summary>Called when the control transitions to the in-place active state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This base-class implementation is empty.  
-  
+This base-class implementation is empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2565,10 +2565,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.Paint" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.Paint> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.Paint> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2691,10 +2691,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.QueryAccessibilityHelp" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.QueryAccessibilityHelp> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.QueryAccessibilityHelp> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2723,10 +2723,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.QueryContinueDrag" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.QueryContinueDrag> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.QueryContinueDrag> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3072,10 +3072,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.RightToLeftChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.RightToLeftChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.RightToLeftChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3100,17 +3100,17 @@
         <summary>Calls the <see cref="M:System.Windows.Forms.AxHost.ShowAboutBox" /> method to display the ActiveX control's About dialog box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> method also allows derived classes to handle the <xref:System.Windows.Forms.AxHost.ShowAboutBox%2A> method without attaching a delegate. This is the preferred technique for handling the <xref:System.Windows.Forms.AxHost.ShowAboutBox%2A> method in a derived class.  
+The <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> method also allows derived classes to handle the <xref:System.Windows.Forms.AxHost.ShowAboutBox%2A> method without attaching a delegate. This is the preferred technique for handling the <xref:System.Windows.Forms.AxHost.ShowAboutBox%2A> method in a derived class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
-  
- [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
-  
+The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+ 
+[!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -3186,10 +3186,10 @@
         <summary>Displays the ActiveX control's **About** dialog box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Forms.AxHost.HasAboutBox%2A> is `false`, no **About** dialog box is displayed.  
-  
+If <xref:System.Windows.Forms.AxHost.HasAboutBox%2A> is `false`, no **About** dialog box is displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3211,12 +3211,12 @@
         <summary>Displays the property pages associated with the ActiveX control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Forms.AxHost.HasPropertyPages%2A> is `false`, no property pages are displayed.  
-  
- Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.  
-  
+If <xref:System.Windows.Forms.AxHost.HasPropertyPages%2A> is `false`, no property pages are displayed.  
+ 
+Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3241,12 +3241,12 @@
         <summary>Displays the property pages associated with the ActiveX control assigned to the specified parent control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Forms.AxHost.HasPropertyPages%2A> is `false`, no property pages are displayed.  
-  
- Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.  
-  
+If <xref:System.Windows.Forms.AxHost.HasPropertyPages%2A> is `false`, no property pages are displayed.  
+ 
+Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3293,10 +3293,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.StyleChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.StyleChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.StyleChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3348,10 +3348,10 @@
         <returns>Returns <see langword="null" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the type name instead of the value that the <xref:System.Windows.Forms.AxHost.System%23ComponentModel%23ICustomTypeDescriptor%23GetClassName%2A> method returns.  
-  
+Use the type name instead of the value that the <xref:System.Windows.Forms.AxHost.System%23ComponentModel%23ICustomTypeDescriptor%23GetClassName%2A> method returns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3379,10 +3379,10 @@
         <returns>Returns <see langword="null" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the default name instead of the value that the <xref:System.Windows.Forms.AxHost.System%23ComponentModel%23ICustomTypeDescriptor%23GetComponentName%2A> method returns.  
-  
+Use the default name instead of the value that the <xref:System.Windows.Forms.AxHost.System%23ComponentModel%23ICustomTypeDescriptor%23GetComponentName%2A> method returns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3410,10 +3410,10 @@
         <returns>Returns <see langword="null" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the default type converter instead of the value that the <xref:System.Windows.Forms.AxHost.System%23ComponentModel%23ICustomTypeDescriptor%23GetConverter%2A> method returns.  
-  
+Use the default type converter instead of the value that the <xref:System.Windows.Forms.AxHost.System%23ComponentModel%23ICustomTypeDescriptor%23GetConverter%2A> method returns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3672,10 +3672,10 @@
         <summary>The <see cref="E:System.Windows.Forms.AxHost.TextChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.TextChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
-  
+If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.TextChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

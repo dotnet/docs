@@ -52,10 +52,10 @@
         <value>Returns the list of arguments.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <value>Returns the description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and is culture-sensitive.  
-  
+This field is optional and is culture-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,12 +112,12 @@
         <value>Returns the name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and is culture-sensitive.  
-  
- When this property is not set, it is assigned the same value as the <xref:Microsoft.Build.Framework.XamlTypes.EnumValue.Name%2A> property (and, therefore, would not be localized).  
-  
+This field is optional and is culture-sensitive.  
+ 
+When this property is not set, it is assigned the same value as the <xref:Microsoft.Build.Framework.XamlTypes.EnumValue.Name%2A> property (and, therefore, would not be localized).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,12 +144,12 @@
         <value>Returns the Help information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used to specify a Help URL.  
-  
- This field is optional and is culture-sensitive.  
-  
+Can be used to specify a Help URL.  
+ 
+This field is optional and is culture-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
           <see langword="True" /> if the enum value is the default value; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and its default value  is `false`.  
-  
+This field is optional and its default value  is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
         <value>Returns the additional attributes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be used as a grab bag for additional metadata of this value that are not captured by the primary fields. A custom UI is required to interpret the additional metadata because the included UI formats are not aware of them.  
-  
- This field is optional.  
-  
+This property can be used as a grab bag for additional metadata of this value that are not captured by the primary fields. A custom UI is required to interpret the additional metadata because the included UI formats are not aware of them.  
+ 
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <value>Returns the name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is mandatory and culture-invariant.  
-  
+This field is mandatory and culture-invariant.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <value>Returns the switch representation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and culture-invariant.  
-  
+This field is optional and culture-invariant.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,10 +274,10 @@
         <value>Returns the switch prefix.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and culture-invariant.  
-  
+This field is optional and culture-invariant.  
+ 
  ]]></format>
         </remarks>
       </Docs>

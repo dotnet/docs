@@ -14,10 +14,10 @@
     <summary>Applies a <see cref="T:System.Windows.Media.Brush" /> to a [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] model so that it participates in lighting calculations as if the <see cref="T:System.Windows.Media.Media3D.Material" /> were emitting light equal to the color of the <see cref="T:System.Windows.Media.Brush" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.EmissiveMaterial> adds its color to any existing material applied to the model.  
-  
+<xref:System.Windows.Media.Media3D.EmissiveMaterial> adds its color to any existing material applied to the model.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,18 +72,18 @@
         <value>The brush applied by the <see cref="T:System.Windows.Media.Media3D.EmissiveMaterial" />. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no texture coordinates are specified for a <xref:System.Windows.Media.Media3D.MeshGeometry3D>, its material might not render as expected.  The only exception is when the Material's Brush property specifies a <xref:System.Windows.Media.SolidColorBrush>; in this case, the Material will be rendered using a default set of texture coordinates.  
-  
+If no texture coordinates are specified for a <xref:System.Windows.Media.Media3D.MeshGeometry3D>, its material might not render as expected.  The only exception is when the Material's Brush property specifies a <xref:System.Windows.Media.SolidColorBrush>; in this case, the Material will be rendered using a default set of texture coordinates.  
+ 
 <a name="dependencyPropertyInfo_Brush"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.EmissiveMaterial.BrushProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,12 +123,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,12 +151,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,22 +178,22 @@
         <value>The color filter for the <see cref="T:System.Windows.Media.Media3D.Material" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.EmissiveMaterial.Color%2A> property is a filter on the texture.  
-  
- Set the <xref:System.Windows.Media.Media3D.DiffuseMaterial.AmbientColor%2A> property to control how the material reflects ambient light.  
-  
- The color of the light that appears to be emitted from the <xref:System.Windows.Media.Media3D.EmissiveMaterial> can also be specified by using the <xref:System.Windows.Media.Media3D.EmissiveMaterial.Brush%2A>property.  
-  
+The <xref:System.Windows.Media.Media3D.EmissiveMaterial.Color%2A> property is a filter on the texture.  
+ 
+Set the <xref:System.Windows.Media.Media3D.DiffuseMaterial.AmbientColor%2A> property to control how the material reflects ambient light.  
+ 
+The color of the light that appears to be emitted from the <xref:System.Windows.Media.Media3D.EmissiveMaterial> can also be specified by using the <xref:System.Windows.Media.Media3D.EmissiveMaterial.Brush%2A>property.  
+ 
 <a name="dependencyPropertyInfo_Color"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.EmissiveMaterial.ColorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.EmissiveMaterial.Color" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Media.Media3D.EmissiveMaterial.Color%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Media.Media3D.EmissiveMaterial.Color%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

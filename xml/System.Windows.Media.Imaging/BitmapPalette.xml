@@ -14,25 +14,25 @@
     <summary>Defines the available color palette for a supported image type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] image formats support image palettes. However, other image types can be used to define a <xref:System.Windows.Media.Imaging.BitmapPalette>. Attempting to define a <xref:System.Windows.Media.Imaging.BitmapPalette> for an unsupported bitmap format does not result in an exception; the designated <xref:System.Windows.Media.Imaging.BitmapPalette> is simply ignored.  
+Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] image formats support image palettes. However, other image types can be used to define a <xref:System.Windows.Media.Imaging.BitmapPalette>. Attempting to define a <xref:System.Windows.Media.Imaging.BitmapPalette> for an unsupported bitmap format does not result in an exception; the designated <xref:System.Windows.Media.Imaging.BitmapPalette> is simply ignored.  
+ 
+[!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports both custom color palettes and predefined palettes defined by the <xref:System.Windows.Media.Imaging.BitmapPalettes> class.  
+ 
   
- [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports both custom color palettes and predefined palettes defined by the <xref:System.Windows.Media.Imaging.BitmapPalettes> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to define a custom <xref:System.Windows.Media.Imaging.BitmapPalette> and apply it to a new <xref:System.Windows.Media.Imaging.BitmapSource>.  
-  
- [!code-csharp[bitmapframeexample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#1)]
- [!code-vb[bitmapframeexample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#1)]  
-  
- The following example demonstrates how to retrieve a <xref:System.Windows.Media.Imaging.BitmapPalette> from an image.  
-  
- [!code-csharp[bitmapframeexample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#5)]
- [!code-vb[bitmapframeexample#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#5)]  
-  
+The following example demonstrates how to define a custom <xref:System.Windows.Media.Imaging.BitmapPalette> and apply it to a new <xref:System.Windows.Media.Imaging.BitmapSource>.  
+ 
+[!code-csharp[bitmapframeexample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#1)]
+[!code-vb[bitmapframeexample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#1)]  
+ 
+The following example demonstrates how to retrieve a <xref:System.Windows.Media.Imaging.BitmapPalette> from an image.  
+ 
+[!code-csharp[bitmapframeexample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#5)]
+[!code-vb[bitmapframeexample#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,13 +54,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> class with the specified colors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to define a custom <xref:System.Windows.Media.Imaging.BitmapPalette> and apply it to a new <xref:System.Windows.Media.Imaging.BitmapSource>.  
-  
- [!code-csharp[bitmapframeexample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#1)]
- [!code-vb[bitmapframeexample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#1)]  
-  
+The following example demonstrates how to define a custom <xref:System.Windows.Media.Imaging.BitmapPalette> and apply it to a new <xref:System.Windows.Media.Imaging.BitmapSource>.  
+ 
+[!code-csharp[bitmapframeexample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#1)]
+[!code-vb[bitmapframeexample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="colors" /> parameter is <see langword="null" />.</exception>
@@ -91,18 +91,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> class based on the specified <see cref="T:System.Windows.Media.Imaging.BitmapSource" />. The new <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> is limited to a specified maximum color count.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `bitmapSource` already has a defined palette, the corresponding palette is returned. Otherwise, a new palette is constructed from an analysis of the bitmap.  
+If the `bitmapSource` already has a defined palette, the corresponding palette is returned. Otherwise, a new palette is constructed from an analysis of the bitmap.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve a <xref:System.Windows.Media.Imaging.BitmapPalette> from an image.  
-  
- [!code-csharp[bitmapframeexample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#5)]
- [!code-vb[bitmapframeexample#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#5)]  
-  
+The following example demonstrates how to retrieve a <xref:System.Windows.Media.Imaging.BitmapPalette> from an image.  
+ 
+[!code-csharp[bitmapframeexample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#5)]
+[!code-vb[bitmapframeexample#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="bitmapSource" /> parameter is <see langword="null" />.</exception>
@@ -125,13 +125,13 @@
         <value>The list of colors defined in a palette.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to define a custom <xref:System.Windows.Media.Imaging.BitmapPalette> and apply it to a new <xref:System.Windows.Media.Imaging.BitmapSource>.  
-  
- [!code-csharp[bitmapframeexample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#1)]
- [!code-vb[bitmapframeexample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#1)]  
-  
+The following example demonstrates how to define a custom <xref:System.Windows.Media.Imaging.BitmapPalette> and apply it to a new <xref:System.Windows.Media.Imaging.BitmapSource>.  
+ 
+[!code-csharp[bitmapframeexample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#1)]
+[!code-vb[bitmapframeexample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

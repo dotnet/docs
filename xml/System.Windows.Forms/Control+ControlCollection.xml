@@ -29,21 +29,21 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Forms.Control" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Control.ControlCollection.Add%2A>, <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A>, and <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A> methods enable you to add and remove individual controls from the collection. You can also use the <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> or <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> methods to add or remove all the controls from the collection.  
+The <xref:System.Windows.Forms.Control.ControlCollection.Add%2A>, <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A>, and <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A> methods enable you to add and remove individual controls from the collection. You can also use the <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> or <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> methods to add or remove all the controls from the collection.  
+ 
+You can determine if a <xref:System.Windows.Forms.Control> is a member of the collection by passing the control into the <xref:System.Windows.Forms.Control.ControlCollection.Contains%2A> method. To get the index value of the location of a <xref:System.Windows.Forms.Control> in the collection, pass the control into the <xref:System.Windows.Forms.Control.ControlCollection.IndexOf%2A> method. The collection can be copied into an array by calling the <xref:System.Windows.Forms.Layout.ArrangedElementCollection.CopyTo%2A> method.  
+ 
   
- You can determine if a <xref:System.Windows.Forms.Control> is a member of the collection by passing the control into the <xref:System.Windows.Forms.Control.ControlCollection.Contains%2A> method. To get the index value of the location of a <xref:System.Windows.Forms.Control> in the collection, pass the control into the <xref:System.Windows.Forms.Control.ControlCollection.IndexOf%2A> method. The collection can be copied into an array by calling the <xref:System.Windows.Forms.Layout.ArrangedElementCollection.CopyTo%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example removes a <xref:System.Windows.Forms.Control> from the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel> if it is a member of the collection. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and at least one <xref:System.Windows.Forms.RadioButton> control on a <xref:System.Windows.Forms.Form>. The <xref:System.Windows.Forms.RadioButton> controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> control added to the <xref:System.Windows.Forms.Form>. When the button is clicked, the radio button named `radioButton2` is removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
- [!code-cpp[ControlCollection#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#4)]
- [!code-csharp[ControlCollection#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#4)]
- [!code-vb[ControlCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#4)]  
-  
+The following code example removes a <xref:System.Windows.Forms.Control> from the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel> if it is a member of the collection. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and at least one <xref:System.Windows.Forms.RadioButton> control on a <xref:System.Windows.Forms.Form>. The <xref:System.Windows.Forms.RadioButton> controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> control added to the <xref:System.Windows.Forms.Form>. When the button is clicked, the radio button named `radioButton2` is removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
+[!code-cpp[ControlCollection#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#4)]
+[!code-csharp[ControlCollection#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#4)]
+[!code-vb[ControlCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,26 +86,26 @@
         <summary>Adds the specified control to the control collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> method allows you to add <xref:System.Windows.Forms.Control> objects to the end of the control collection.  
-  
- You can also add new <xref:System.Windows.Forms.Control> objects to the collection by using the <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> method.  
-  
- To remove a <xref:System.Windows.Forms.Control> that you previously added, use the <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A>, <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A>, or <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> methods.  
-  
+The <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> method allows you to add <xref:System.Windows.Forms.Control> objects to the end of the control collection.  
+ 
+You can also add new <xref:System.Windows.Forms.Control> objects to the collection by using the <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> method.  
+ 
+To remove a <xref:System.Windows.Forms.Control> that you previously added, use the <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A>, <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A>, or <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> methods.  
+ 
 > [!NOTE]
 >  A <xref:System.Windows.Forms.Control> can only be assigned to one <xref:System.Windows.Forms.Control.ControlCollection> at a time. If the <xref:System.Windows.Forms.Control> is already a child of another control it is removed from that control before it is added to another control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example adds a <xref:System.Windows.Forms.Control> to the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel>. The example requires that you have created a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> control on a <xref:System.Windows.Forms.Form>. When the button is clicked, a <xref:System.Windows.Forms.TextBox> control is added to the panel's <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
- [!code-cpp[ControlCollection#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#2)]
- [!code-csharp[ControlCollection#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#2)]
- [!code-vb[ControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#2)]  
-  
+The following code example adds a <xref:System.Windows.Forms.Control> to the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel>. The example requires that you have created a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> control on a <xref:System.Windows.Forms.Form>. When the button is clicked, a <xref:System.Windows.Forms.TextBox> control is added to the panel's <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
+[!code-cpp[ControlCollection#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#2)]
+[!code-csharp[ControlCollection#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#2)]
+[!code-vb[ControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The specified control is a top-level control, or a circular control reference would result if this control were added to the control collection.</exception>
@@ -140,23 +140,23 @@
         <summary>Adds an array of control objects to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Control> objects contained in the `controls` array are appended to the end of the collection.  
+The <xref:System.Windows.Forms.Control> objects contained in the `controls` array are appended to the end of the collection.  
+ 
+You can use the <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> method to quickly add a group of <xref:System.Windows.Forms.Control> objects to the collection instead of manually adding each <xref:System.Windows.Forms.Control> to the collection using the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> method.  
+ 
+To remove a <xref:System.Windows.Forms.Control> that you previously added, use the <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A>, <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A>, or <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> methods.  
+ 
   
- You can use the <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> method to quickly add a group of <xref:System.Windows.Forms.Control> objects to the collection instead of manually adding each <xref:System.Windows.Forms.Control> to the collection using the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> method.  
-  
- To remove a <xref:System.Windows.Forms.Control> that you previously added, use the <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A>, <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A>, or <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example adds two <xref:System.Windows.Forms.Control> objects to the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel>. The example requires that you have created a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> control on a <xref:System.Windows.Forms.Form>. When the button is clicked, two <xref:System.Windows.Forms.RadioButton> controls are added to the panel's <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
- [!code-cpp[ControlCollection#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#3)]
- [!code-csharp[ControlCollection#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#3)]
- [!code-vb[ControlCollection#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#3)]  
-  
+The following code example adds two <xref:System.Windows.Forms.Control> objects to the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel>. The example requires that you have created a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> control on a <xref:System.Windows.Forms.Form>. When the button is clicked, two <xref:System.Windows.Forms.RadioButton> controls are added to the panel's <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
+[!code-cpp[ControlCollection#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#3)]
+[!code-csharp[ControlCollection#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#3)]
+[!code-vb[ControlCollection#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -181,26 +181,26 @@
         <summary>Removes all controls from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> method to remove the entire collection of controls from a parent control.  
-  
- To remove an individual control from the collection, use the <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A> or <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A> methods.  
-  
+You can use the <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> method to remove the entire collection of controls from a parent control.  
+ 
+To remove an individual control from the collection, use the <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A> or <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A> methods.  
+ 
 > [!IMPORTANT]
 >  Calling the <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> method does not remove control handles from memory. You must explicitly call the <xref:System.Windows.Forms.Control.Dispose%2A> method to avoid memory leaks.  
+ 
+To add new <xref:System.Windows.Forms.Control> objects to the collection, use the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> or <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> methods.  
+ 
   
- To add new <xref:System.Windows.Forms.Control> objects to the collection, use the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> or <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example removes all the <xref:System.Windows.Forms.Control> objects in the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel>. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and at least one other control on a <xref:System.Windows.Forms.Form>. The other controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> added to the <xref:System.Windows.Forms.Form>. When the button is clicked, all the controls contained in the panel are removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
- [!code-cpp[ControlCollection#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#1)]
- [!code-csharp[ControlCollection#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#1)]
- [!code-vb[ControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#1)]  
-  
+The following code example removes all the <xref:System.Windows.Forms.Control> objects in the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel>. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and at least one other control on a <xref:System.Windows.Forms.Form>. The other controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> added to the <xref:System.Windows.Forms.Form>. When the button is clicked, all the controls contained in the panel are removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
+[!code-cpp[ControlCollection#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#1)]
+[!code-csharp[ControlCollection#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#1)]
+[!code-vb[ControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -230,19 +230,19 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.Control" /> is a member of the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to determine whether a <xref:System.Windows.Forms.Control> is a member of the collection before attempting to perform operations on the <xref:System.Windows.Forms.Control>. You can use this method to confirm that a <xref:System.Windows.Forms.Control> has been added to or is still a member of the collection.  
+This method enables you to determine whether a <xref:System.Windows.Forms.Control> is a member of the collection before attempting to perform operations on the <xref:System.Windows.Forms.Control>. You can use this method to confirm that a <xref:System.Windows.Forms.Control> has been added to or is still a member of the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example removes a <xref:System.Windows.Forms.Control> from the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel> if it is a member of the collection. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and at least one <xref:System.Windows.Forms.RadioButton> control on a <xref:System.Windows.Forms.Form>. The <xref:System.Windows.Forms.RadioButton> controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> control added to the <xref:System.Windows.Forms.Form>. When the button is clicked, the radio button named `removeButton` is removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
- [!code-cpp[ControlCollection#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#4)]
- [!code-csharp[ControlCollection#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#4)]
- [!code-vb[ControlCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#4)]  
-  
+The following code example removes a <xref:System.Windows.Forms.Control> from the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel> if it is a member of the collection. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and at least one <xref:System.Windows.Forms.RadioButton> control on a <xref:System.Windows.Forms.Form>. The <xref:System.Windows.Forms.RadioButton> controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> control added to the <xref:System.Windows.Forms.Form>. When the button is clicked, the radio button named `removeButton` is removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
+[!code-cpp[ControlCollection#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#4)]
+[!code-csharp[ControlCollection#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#4)]
+[!code-vb[ControlCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,10 +269,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.Control.ControlCollection" /> contains an item with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property of a <xref:System.Windows.Forms.Control> corresponds to the key for a <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
+The <xref:System.Windows.Forms.Control.Name%2A> property of a <xref:System.Windows.Forms.Control> corresponds to the key for a <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,10 +324,10 @@
         <returns>A zero-based index value that represents the location of the specified child control within the control collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The control with an index value of zero is at the top of the z-order, and higher numbers are closer to the bottom.  
-  
+The control with an index value of zero is at the top of the z-order, and higher numbers are closer to the bottom.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="child" /><see cref="T:System.Windows.Forms.Control" /> is not in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</exception>
@@ -357,10 +357,10 @@
         <returns>A zero-based index value that represents the location of the specified child control within the control collection; otherwise -1 if the specified <see cref="T:System.Windows.Forms.Control" /> is not found in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The control with an index value of zero is at the top of the z-order, and higher numbers are closer to the bottom. A return value of -1 is returned only when the `throwException` parameter is `false`.  
-  
+The control with an index value of zero is at the top of the z-order, and higher numbers are closer to the bottom. A return value of -1 is returned only when the `throwException` parameter is `false`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="child" /><see cref="T:System.Windows.Forms.Control" /> is not in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />, and the <paramref name="throwException" /> parameter value is <see langword="true" />.</exception>
@@ -406,10 +406,10 @@
         <returns>A zero-based index value that represents the position of the specified <see cref="T:System.Windows.Forms.Control" /> in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the control is not found in the collection, the <xref:System.Windows.Forms.Control.ControlCollection.IndexOf%2A> method return value is -1.  
-  
+If the control is not found in the collection, the <xref:System.Windows.Forms.Control.ControlCollection.IndexOf%2A> method return value is -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -435,14 +435,14 @@
         <returns>The zero-based index of the first occurrence of the control with the specified name in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Forms.Control.ControlCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, or an item with the specified key is not found, <xref:System.Windows.Forms.Control.ControlCollection.IndexOfKey%2A> returns -1.  
-  
- The <xref:System.Windows.Forms.Control.Name%2A> property of a <xref:System.Windows.Forms.Control> corresponds to the key for a <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
+If <xref:System.Windows.Forms.Control.ControlCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
+ 
+The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, or an item with the specified key is not found, <xref:System.Windows.Forms.Control.ControlCollection.IndexOfKey%2A> returns -1.  
+ 
+The <xref:System.Windows.Forms.Control.Name%2A> property of a <xref:System.Windows.Forms.Control> corresponds to the key for a <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -468,10 +468,10 @@
         <value>The <see cref="T:System.Windows.Forms.Control" /> located at the specified index location within the control collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve a <xref:System.Windows.Forms.Control> from the <xref:System.Windows.Forms.Control.ControlCollection>, reference the collection object with a specific index value. The index value of the <xref:System.Windows.Forms.Control.ControlCollection> is a zero-based index.  
-  
+To retrieve a <xref:System.Windows.Forms.Control> from the <xref:System.Windows.Forms.Control.ControlCollection>, reference the collection object with a specific index value. The index value of the <xref:System.Windows.Forms.Control.ControlCollection> is a zero-based index.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> value is less than zero or is greater than or equal to the number of controls in the collection.</exception>
@@ -498,10 +498,10 @@
         <value>The <see cref="T:System.Windows.Forms.Control" /> with the specified key within the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property of a <xref:System.Windows.Forms.Control> corresponds to the key for a <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
+The <xref:System.Windows.Forms.Control.Name%2A> property of a <xref:System.Windows.Forms.Control> corresponds to the key for a <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -544,23 +544,23 @@
         <summary>Removes the specified control from the control collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Windows.Forms.Control> is removed from the control collection, all subsequent controls are moved up one position in the collection.  
+When a <xref:System.Windows.Forms.Control> is removed from the control collection, all subsequent controls are moved up one position in the collection.  
+ 
+You can also remove a <xref:System.Windows.Forms.Control> by using the <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A> method, or remove all controls by using the <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> method.  
+ 
+To add new <xref:System.Windows.Forms.Control> objects to the collection, use the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> or <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> methods.  
+ 
   
- You can also remove a <xref:System.Windows.Forms.Control> by using the <xref:System.Windows.Forms.Control.ControlCollection.RemoveAt%2A> method, or remove all controls by using the <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> method.  
-  
- To add new <xref:System.Windows.Forms.Control> objects to the collection, use the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> or <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example removes a <xref:System.Windows.Forms.Control> from the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel> if it is a member of the collection. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and one or more <xref:System.Windows.Forms.RadioButton> controls on a <xref:System.Windows.Forms.Form>. The <xref:System.Windows.Forms.RadioButton> controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> control is added to the <xref:System.Windows.Forms.Form>. When the button is clicked, the radio button named `radioButton2` is removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
- [!code-cpp[ControlCollection#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#4)]
- [!code-csharp[ControlCollection#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#4)]
- [!code-vb[ControlCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#4)]  
-  
+The following code example removes a <xref:System.Windows.Forms.Control> from the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel> if it is a member of the collection. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and one or more <xref:System.Windows.Forms.RadioButton> controls on a <xref:System.Windows.Forms.Form>. The <xref:System.Windows.Forms.RadioButton> controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> control is added to the <xref:System.Windows.Forms.Form>. When the button is clicked, the radio button named `radioButton2` is removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
+[!code-cpp[ControlCollection#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#4)]
+[!code-csharp[ControlCollection#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#4)]
+[!code-vb[ControlCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -588,23 +588,23 @@
         <summary>Removes a control from the control collection at the specified indexed location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Windows.Forms.Control> is removed from the control collection, all subsequent controls are moved up one position in the collection.  
+When a <xref:System.Windows.Forms.Control> is removed from the control collection, all subsequent controls are moved up one position in the collection.  
+ 
+You can also remove a <xref:System.Windows.Forms.Control> that you previously added by using the <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A> or <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> methods.  
+ 
+To add new <xref:System.Windows.Forms.Control> objects to the collection, use the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> or <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> methods.  
+ 
   
- You can also remove a <xref:System.Windows.Forms.Control> that you previously added by using the <xref:System.Windows.Forms.Control.ControlCollection.Remove%2A> or <xref:System.Windows.Forms.Control.ControlCollection.Clear%2A> methods.  
-  
- To add new <xref:System.Windows.Forms.Control> objects to the collection, use the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> or <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example removes the first <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel> if the count of the collection is greater than zero. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and at least one other control on a <xref:System.Windows.Forms.Form>. The other controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> control added to the <xref:System.Windows.Forms.Form>. When the button is clicked, the first control contained in the panel is removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
- [!code-cpp[ControlCollection#5](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#5)]
- [!code-csharp[ControlCollection#5](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#5)]
- [!code-vb[ControlCollection#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#5)]  
-  
+The following code example removes the first <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection> of the derived class <xref:System.Windows.Forms.Panel> if the count of the collection is greater than zero. The example requires that you have created a <xref:System.Windows.Forms.Panel>, a <xref:System.Windows.Forms.Button>, and at least one other control on a <xref:System.Windows.Forms.Form>. The other controls are added to the <xref:System.Windows.Forms.Panel> control, and the <xref:System.Windows.Forms.Panel> control added to the <xref:System.Windows.Forms.Form>. When the button is clicked, the first control contained in the panel is removed from the <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
+[!code-cpp[ControlCollection#5](~/samples/snippets/cpp/VS_Snippets_Winforms/ControlCollection/CPP/controlcollection.cpp#5)]
+[!code-csharp[ControlCollection#5](~/samples/snippets/csharp/VS_Snippets_Winforms/ControlCollection/CS/controlcollection.cs#5)]
+[!code-vb[ControlCollection#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ControlCollection/VB/controlcollection.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -629,10 +629,10 @@
         <summary>Removes the child control with the specified key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property of a <xref:System.Windows.Forms.Control> corresponds to the key for a <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection>.  
-  
+The <xref:System.Windows.Forms.Control.Name%2A> property of a <xref:System.Windows.Forms.Control> corresponds to the key for a <xref:System.Windows.Forms.Control> in the <xref:System.Windows.Forms.Control.ControlCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -659,10 +659,10 @@
         <summary>Sets the index of the specified child control in the collection to the specified index value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Windows.Forms.Control.ControlCollection.SetChildIndex%2A> is called, the <xref:System.Windows.Forms.Control> referred to by the `child` parameter is moved to the position specified by `newIndex` and the other <xref:System.Windows.Forms.Control> references in the <xref:System.Windows.Forms.Control.ControlCollection> are reordered to accommodate the move. The control with an index value of zero is at the top of the z-order, and higher numbers are closer to the bottom.  
-  
+When <xref:System.Windows.Forms.Control.ControlCollection.SetChildIndex%2A> is called, the <xref:System.Windows.Forms.Control> referred to by the `child` parameter is moved to the position specified by `newIndex` and the other <xref:System.Windows.Forms.Control> references in the <xref:System.Windows.Forms.Control.ControlCollection> are reordered to accommodate the move. The control with an index value of zero is at the top of the z-order, and higher numbers are closer to the bottom.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="child" /> control is not in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</exception>
@@ -689,10 +689,10 @@
         <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Control.ControlCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Control.ControlCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -717,10 +717,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Control.ControlCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Control.ControlCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -743,10 +743,10 @@
         <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Control.ControlCollection> instance is cast to an <xref:System.ICloneable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Control.ControlCollection> instance is cast to an <xref:System.ICloneable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

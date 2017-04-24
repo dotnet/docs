@@ -31,15 +31,15 @@
     <summary>Specifies that code or an assembly performs security-critical operations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Security-critical operations are actions that affect code access security, such as elevation of privilege through suppression of code access security checks by using the <xref:System.Security.CodeAccessPermission.Assert%2A> method, calling unsafe managed code, and so forth. Either the <xref:System.Security.SecurityCriticalAttribute> attribute or the <xref:System.Security.SecuritySafeCriticalAttribute> attribute must be applied to code for the code to perform security-critical operations.  
-  
+Security-critical operations are actions that affect code access security, such as elevation of privilege through suppression of code access security checks by using the <xref:System.Security.CodeAccessPermission.Assert%2A> method, calling unsafe managed code, and so forth. Either the <xref:System.Security.SecurityCriticalAttribute> attribute or the <xref:System.Security.SecuritySafeCriticalAttribute> attribute must be applied to code for the code to perform security-critical operations.  
+ 
 > [!NOTE]
 >  The <xref:System.Security.SecurityCriticalAttribute> is equivalent to a link demand for full trust. A type or member marked with the <xref:System.Security.SecurityCriticalAttribute> can be called only by fully trusted code; it does not have to demand specific permissions. It cannot be called by partially trusted code.  
-  
- Applying the <xref:System.Security.SecurityCriticalAttribute> at the assembly level identifies the assembly as a security-critical assembly. The entire assembly can be identified as critical by setting the scope parameter <xref:System.Security.SecurityCriticalScope?displayProperty=fullName>.  
-  
+ 
+Applying the <xref:System.Security.SecurityCriticalAttribute> at the assembly level identifies the assembly as a security-critical assembly. The entire assembly can be identified as critical by setting the scope parameter <xref:System.Security.SecurityCriticalScope?displayProperty=fullName>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,10 +93,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.SecurityCriticalAttribute" /> class with the specified scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is provided for compatibility with the .NET Framework version 2.0 transparency model. It does not apply to the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. For more information, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
-  
+This constructor is provided for compatibility with the .NET Framework version 2.0 transparency model. It does not apply to the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. For more information, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

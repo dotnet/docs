@@ -14,16 +14,16 @@
     <summary>Represents a WS-Federation message and defines the base class from which more specialized WS-Federation message classes derive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Services.WSFederationMessage> class represents either a WS-Federation request or a WS-Federation response. More specialized classes that represent specific WS-Federation messages derive from <xref:System.IdentityModel.Services.WSFederationMessage>; for example, the <xref:System.IdentityModel.Services.SignInRequestMessage> class, which represents a WS-Federation sign-in request message.  
-  
- The <xref:System.IdentityModel.Services.WSFederationMessage> class exposes several properties that can be used to set or access individual message parameters. These parameters can also be set or accessed through the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> dictionary. For example, you can read the wencoding parameter in the message either through the <xref:System.IdentityModel.Services.WSFederationMessage.Encoding%2A> property or by specifying “wencoding” as the key to the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> dictionary.  
-  
- The <xref:System.IdentityModel.Services.WSFederationMessage> contains static methods that you can call to create the appropriate WS-Federation message from: a URL that includes a query string; a base URL and a collection of WS-Federation parameter names and values; or form post data in an HTTP request.  
-  
- [!INCLUDE[wif_wsfed_ref](~/includes/wif-wsfed-ref-md.md)]  
-  
+The <xref:System.IdentityModel.Services.WSFederationMessage> class represents either a WS-Federation request or a WS-Federation response. More specialized classes that represent specific WS-Federation messages derive from <xref:System.IdentityModel.Services.WSFederationMessage>; for example, the <xref:System.IdentityModel.Services.SignInRequestMessage> class, which represents a WS-Federation sign-in request message.  
+ 
+The <xref:System.IdentityModel.Services.WSFederationMessage> class exposes several properties that can be used to set or access individual message parameters. These parameters can also be set or accessed through the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> dictionary. For example, you can read the wencoding parameter in the message either through the <xref:System.IdentityModel.Services.WSFederationMessage.Encoding%2A> property or by specifying “wencoding” as the key to the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> dictionary.  
+ 
+The <xref:System.IdentityModel.Services.WSFederationMessage> contains static methods that you can call to create the appropriate WS-Federation message from: a URL that includes a query string; a base URL and a collection of WS-Federation parameter names and values; or form post data in an HTTP request.  
+ 
+[!INCLUDE[wif_wsfed_ref](~/includes/wif-wsfed-ref-md.md)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <value>The value of the wa parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The wa parameter specifies the action to be performed. For example, for sign-in scenarios the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property is set to “wsignin1.0” and for sign-out scenarios, the property is set to “wsignout1.0” . The wa parameter is required, so this property cannot be set to `null` or an empty string.  
-  
+The wa parameter specifies the action to be performed. For example, for sign-in scenarios the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property is set to “wsignin1.0” and for sign-out scenarios, the property is set to “wsignout1.0” . The wa parameter is required, so this property cannot be set to `null` or an empty string.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is <see langword="null" /> or empty occurs.</exception>
@@ -97,13 +97,13 @@
         <value>The value of the wctx parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies a context value that must be returned with the issued token if it is passed in the request. The value is opaque, that is, its semantics are known only by the originator of the message (typically a relying party – RP); it is not interpreted by the receiver of the message or any intermediaries. The wctx parameter is optional. Set the <xref:System.IdentityModel.Services.WSFederationMessage.Context%2A> property to `null` or an empty string to remove the wctx parameter from the message.  
-  
+Specifies a context value that must be returned with the issued token if it is passed in the request. The value is opaque, that is, its semantics are known only by the originator of the message (typically a relying party – RP); it is not interpreted by the receiver of the message or any intermediaries. The wctx parameter is optional. Set the <xref:System.IdentityModel.Services.WSFederationMessage.Context%2A> property to `null` or an empty string to remove the wctx parameter from the message.  
+ 
 > [!IMPORTANT]
 >  If your application receives a WS-Federation message with the wctx parameter set, it should ensure that the same value is returned in any response to the sender, or forwarded if the message is passed on to another party.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,12 +129,12 @@
         <returns>The message that was created or <see langword="null" /> if a message cannot be created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a message can be created, the method returns an appropriate implementation of <xref:System.IdentityModel.Services.WSFederationMessage> based on the wa parameter submitted in the form post; for example, if wa parameter is "wsignout1.0" then a <xref:System.IdentityModel.Services.SignOutRequestMessage> object is returned.  
-  
- Gets the base URL and the collection of form variables submitted by the client from the request and invokes the <xref:System.IdentityModel.Services.WSFederationMessage.CreateFromNameValueCollection%2A> method.  
-  
+If a message can be created, the method returns an appropriate implementation of <xref:System.IdentityModel.Services.WSFederationMessage> based on the wa parameter submitted in the form post; for example, if wa parameter is "wsignout1.0" then a <xref:System.IdentityModel.Services.SignOutRequestMessage> object is returned.  
+ 
+Gets the base URL and the collection of form variables submitted by the client from the request and invokes the <xref:System.IdentityModel.Services.WSFederationMessage.CreateFromNameValueCollection%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -164,10 +164,10 @@
         <returns>The message that was created or <see langword="null" /> if a message cannot be created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The parameter collection must contain an entry for the wa parameter, which specifies the action to be performed. If the wa entry is not a recognized action, an exception is thrown. The parameter collection should contain appropriate parameters for the kind of message specified by the wa parameter in the collection. The method will return an appropriate implementation of <xref:System.IdentityModel.Services.WSFederationMessage> based on the wa parameter. The following table lists the <xref:System.IdentityModel.Services.WSFederationMessage> implementation returned for various parameter combinations.  
-  
+The parameter collection must contain an entry for the wa parameter, which specifies the action to be performed. If the wa entry is not a recognized action, an exception is thrown. The parameter collection should contain appropriate parameters for the kind of message specified by the wa parameter in the collection. The method will return an appropriate implementation of <xref:System.IdentityModel.Services.WSFederationMessage> based on the wa parameter. The following table lists the <xref:System.IdentityModel.Services.WSFederationMessage> implementation returned for various parameter combinations.  
+ 
 |Type returned|wa query parameter specified|Comments|  
 |-------------------|----------------------------------|--------------|  
 |<xref:System.IdentityModel.Services.AttributeRequestMessage>|wattr1.0|--|  
@@ -176,7 +176,7 @@
 |<xref:System.IdentityModel.Services.SignInResponseMessage>|wsignin1.0|Returned if `collection` contains a wresult or wresultptr parameter. Only one may be present. If both are present, an exception is thrown.|  
 |<xref:System.IdentityModel.Services.SignOutRequestMessage>|wsignout1.0|--|  
 |<xref:System.IdentityModel.Services.SignOutCleanupRequestMessage>|wsignoutcleanup1.0|--|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -210,14 +210,14 @@
         <returns>The message that was created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns an appropriate implementation of <xref:System.IdentityModel.Services.WSFederationMessage> based on the wa parameter in the query string; for example, if wa parameter is "wsignout1.0" then a <xref:System.IdentityModel.Services.SignOutRequestMessage> object is returned.  
-  
- Other exceptions may be thrown depending on the combination and values of parameters present in the query string.  
-  
- Invokes the <xref:System.IdentityModel.Services.WSFederationMessage.TryCreateFromUri%2A> method.  
-  
+Returns an appropriate implementation of <xref:System.IdentityModel.Services.WSFederationMessage> based on the wa parameter in the query string; for example, if wa parameter is "wsignout1.0" then a <xref:System.IdentityModel.Services.SignOutRequestMessage> object is returned.  
+ 
+Other exceptions may be thrown depending on the combination and values of parameters present in the query string.  
+ 
+Invokes the <xref:System.IdentityModel.Services.WSFederationMessage.TryCreateFromUri%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -242,10 +242,10 @@
         <value>The value of the wencoding parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies the encoding style to be used for any XML embedded in the message. The wencoding parameter is optional. Set the <xref:System.IdentityModel.Services.WSFederationMessage.Encoding%2A> property to `null` or an empty string to remove the wencoding parameter from the message.  
-  
+Specifies the encoding style to be used for any XML embedded in the message. The wencoding parameter is optional. Set the <xref:System.IdentityModel.Services.WSFederationMessage.Encoding%2A> property to `null` or an empty string to remove the wencoding parameter from the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,12 +274,12 @@
           <see langword="true" /> if a message was successfully created; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a message can be created, the method returns an appropriate implementation of <xref:System.IdentityModel.Services.WSFederationMessage> based on the wa parameter in the query string; for example, if wa parameter is "wsignout1.0" then a <xref:System.IdentityModel.Services.SignOutRequestMessage> object is returned.  
-  
- Invokes the <xref:System.IdentityModel.Services.WSFederationMessage.CreateFromNameValueCollection%2A> method.  
-  
+If a message can be created, the method returns an appropriate implementation of <xref:System.IdentityModel.Services.WSFederationMessage> based on the wa parameter in the query string; for example, if wa parameter is "wsignout1.0" then a <xref:System.IdentityModel.Services.SignOutRequestMessage> object is returned.  
+ 
+Invokes the <xref:System.IdentityModel.Services.WSFederationMessage.CreateFromNameValueCollection%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

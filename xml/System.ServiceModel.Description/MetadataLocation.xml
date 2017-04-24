@@ -19,10 +19,10 @@
     <summary>Represents the address of metadata documents.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the location of metadata documents.  
-  
+Represents the location of metadata documents.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataLocation" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.Description.MetadataLocation>.  
-  
+Creates a new <xref:System.ServiceModel.Description.MetadataLocation>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,10 +66,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataLocation" /> class that assigns the specified metadata location to the <see cref="P:System.ServiceModel.Description.MetadataLocation.Location" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.Description.MetadataLocation> from the `location` value.  
-  
+Creates a new <xref:System.ServiceModel.Description.MetadataLocation> from the `location` value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <value>The address of the metadata documents.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The address must be a relative or absolute URI.  
-  
+The address must be a relative or absolute URI.  
+ 
  ]]></format>
         </remarks>
       </Docs>

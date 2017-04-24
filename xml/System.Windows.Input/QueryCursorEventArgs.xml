@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Windows.Input.Mouse.QueryCursor" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A query cursor event is raised on <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> objects whenever the mouse pointer moves to a new location.  
-  
+A query cursor event is raised on <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> objects whenever the mouse pointer moves to a new location.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -104,10 +104,10 @@
         <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.Input.QueryCursorEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+This implementation casts the generic handler as a <xref:System.Windows.Input.QueryCursorEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

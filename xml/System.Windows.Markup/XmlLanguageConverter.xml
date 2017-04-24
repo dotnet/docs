@@ -14,10 +14,10 @@
     <summary>Provides type conversion for the <see cref="T:System.Windows.Markup.XmlLanguage" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter exists primarily so that the existing `xml:lang` settings in an XML file do not interfere with the parsing of attributes that use <xref:System.Windows.Markup.XmlLanguage> as their underlying type.  
-  
+This converter exists primarily so that the existing `xml:lang` settings in an XML file do not interfere with the parsing of attributes that use <xref:System.Windows.Markup.XmlLanguage> as their underlying type.  
+ 
 <a name="xamlTextUsage_XmlLanguageConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -63,10 +63,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only returns `true` for `sourceType` of <xref:System.String>.  
-  
+This method only returns `true` for `sourceType` of <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` for `destinationType` of <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> or `destinationType` of <xref:System.String>.  
-  
+This method returns `true` for `destinationType` of <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> or `destinationType` of <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,12 +128,12 @@
         <returns>An object that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `source` value must be a string, otherwise an exception is thrown. If the conversion is successful, the return value is a <xref:System.Windows.Markup.XmlLanguage>.  
-  
- Internally, this method calls <xref:System.Windows.Markup.XmlLanguage.GetLanguage%2A?displayProperty=fullName>. See <xref:System.Windows.Markup.XmlLanguage.GetLanguage%2A> for additional exception information.  
-  
+The `source` value must be a string, otherwise an exception is thrown. If the conversion is successful, the return value is a <xref:System.Windows.Markup.XmlLanguage>.  
+ 
+Internally, this method calls <xref:System.Windows.Markup.XmlLanguage.GetLanguage%2A?displayProperty=fullName>. See <xref:System.Windows.Markup.XmlLanguage.GetLanguage%2A> for additional exception information.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Conversion could not be performed.</exception>
@@ -171,10 +171,10 @@
         <returns>An object that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For `destinationType` <xref:System.String>, this method returns the <xref:System.Windows.Markup.XmlLanguage.IetfLanguageTag%2A> value of the provided <xref:System.Windows.Markup.XmlLanguage>. For `destinationType` <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> this method returns an <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> instance that is useful for serialization. Other `destinationType` inputs throw exceptions.  
-  
+For `destinationType` <xref:System.String>, this method returns the <xref:System.Windows.Markup.XmlLanguage.IetfLanguageTag%2A> value of the provided <xref:System.Windows.Markup.XmlLanguage>. For `destinationType` <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> this method returns an <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> instance that is useful for serialization. Other `destinationType` inputs throw exceptions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Conversion could not be performed.</exception>

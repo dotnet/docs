@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Windows.Annotations.Annotation.AuthorChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Annotations.AnnotationAuthorChangedEventArgs> is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an <xref:System.Windows.Annotations.Annotation>.  
-  
+<xref:System.Windows.Annotations.AnnotationAuthorChangedEventArgs> is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an <xref:System.Windows.Annotations.Annotation>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationAuthorChangedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **AnnotationAuthorChangedEventArgs** is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an annotation.  
-  
+**AnnotationAuthorChangedEventArgs** is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an annotation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

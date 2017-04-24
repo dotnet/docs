@@ -23,10 +23,10 @@
     <summary>An abstract class used as a base class for other formatters, (for example, <see cref="T:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter" />).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is abstract and cannot be instantiated directly.  
-  
+This class is abstract and cannot be instantiated directly.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -237,10 +237,10 @@
         <value>The syndication version used by the formatter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports Atom 1.0 and RSS 2.0 syndication versions.  
-  
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports Atom 1.0 and RSS 2.0 syndication versions.  
+ 
  ]]></format>
         </remarks>
       </Docs>

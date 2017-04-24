@@ -19,67 +19,67 @@
     <summary>Provides a mechanism for programmatically building the constraints for a speech recognition grammar.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Speech recognition grammars are commonly authored in the XML format defined by the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). If you are familiar with SRGS but want to generate the grammars programmatically, you can use the <xref:System.Speech.Recognition.SrgsGrammar> namespace, whose members correspond closely to the elements and attributes defined by SRGS. If you are unfamiliar with SRGS, or you want a lightweight, programmatic approach to authoring grammars with which you can efficiently accomplish many common scenarios; you can use the <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> classes.  
-  
- Use <xref:System.Speech.Recognition.GrammarBuilder> objects to build a hierarchical tree composed of <xref:System.Speech.Recognition.Choices> objects that contain alternate phrases, interspersed with preamble and post-amble phrases at each node, and seeded with semantic values that convey  meaning back to the application.  
-  
- To use a <xref:System.Speech.Recognition.GrammarBuilder> to create a <xref:System.Speech.Recognition.Grammar> object, use the following steps.  
-  
+Speech recognition grammars are commonly authored in the XML format defined by the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). If you are familiar with SRGS but want to generate the grammars programmatically, you can use the <xref:System.Speech.Recognition.SrgsGrammar> namespace, whose members correspond closely to the elements and attributes defined by SRGS. If you are unfamiliar with SRGS, or you want a lightweight, programmatic approach to authoring grammars with which you can efficiently accomplish many common scenarios; you can use the <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> classes.  
+ 
+Use <xref:System.Speech.Recognition.GrammarBuilder> objects to build a hierarchical tree composed of <xref:System.Speech.Recognition.Choices> objects that contain alternate phrases, interspersed with preamble and post-amble phrases at each node, and seeded with semantic values that convey  meaning back to the application.  
+ 
+To use a <xref:System.Speech.Recognition.GrammarBuilder> to create a <xref:System.Speech.Recognition.Grammar> object, use the following steps.  
+ 
 1.  Create a <xref:System.Speech.Recognition.GrammarBuilder> object.  
-  
+ 
 2.  Append constraints to the <xref:System.Speech.Recognition.GrammarBuilder>, such as <xref:System.String> objects, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, <xref:System.Speech.Recognition.DictationGrammar>, and other <xref:System.Speech.Recognition.GrammarBuilder> objects that define the constraints for the grammar.  
-  
+ 
 3.  Use one of the <xref:System.Speech.Recognition.Grammar.%23ctor%2A> constructors to create a <xref:System.Speech.Recognition.Grammar> object from the completed <xref:System.Speech.Recognition.GrammarBuilder> grammar.  
-  
- Authoring with <xref:System.Speech.Recognition.GrammarBuilder> is best suited to grammars that have a single rule containing lists, or perhaps lists of lists. To programmatically build grammars that have multiple rules, or that need to make internal rule references, use the classes of the <xref:System.Speech.Recognition.SrgsGrammar> namespace.  
-  
- Instances of <xref:System.Speech.Recognition.GrammarBuilder> can also be obtained by implicit conversions from certain other classes or by combining a  <xref:System.Speech.Recognition.GrammarBuilder> with a second object that contains constraints for a grammar.. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators and the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods.  
-  
- To add rules to an existing <xref:System.Speech.Recognition.GrammarBuilder>, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods.  
-  
+ 
+Authoring with <xref:System.Speech.Recognition.GrammarBuilder> is best suited to grammars that have a single rule containing lists, or perhaps lists of lists. To programmatically build grammars that have multiple rules, or that need to make internal rule references, use the classes of the <xref:System.Speech.Recognition.SrgsGrammar> namespace.  
+ 
+Instances of <xref:System.Speech.Recognition.GrammarBuilder> can also be obtained by implicit conversions from certain other classes or by combining a  <xref:System.Speech.Recognition.GrammarBuilder> with a second object that contains constraints for a grammar.. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators and the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods.  
+ 
+To add rules to an existing <xref:System.Speech.Recognition.GrammarBuilder>, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods.  
+ 
 > [!IMPORTANT]
 >  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
+To help with debugging, the <xref:System.Speech.Recognition.GrammarBuilder.DebugShowPhrases%2A> property returns the current status of the <xref:System.Speech.Recognition.GrammarBuilder> as a string.  
+ 
+For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ 
   
- To help with debugging, the <xref:System.Speech.Recognition.GrammarBuilder.DebugShowPhrases%2A> property returns the current status of the <xref:System.Speech.Recognition.GrammarBuilder> as a string.  
-  
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
-  
-   
-  
+ 
 ## Examples  
- The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  
-  
- The example uses a <xref:System.Speech.Recognition.Choices> object  to create a list of acceptable values for *colorChoice* from an array of <xref:System.String> objects. A <xref:System.Speech.Recognition.Choices> object is analogous to the `one-of` element in the SRGS specification, and contains a set of alternate phrases, any of which can be recognized when spoken. The example also uses a <xref:System.Speech.Recognition.Choices> object to group an array of two <xref:System.Speech.Recognition.GrammarBuilder> objects into a pair of alternative phrases that the resultant grammar can recognize. Alternate words or phrases are a component of most grammars, and the <xref:System.Speech.Recognition.Choices> object provides this functionality for grammars constructed with <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
- The example finally creates a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.GrammarBuilder> constructed from a <xref:System.Speech.Recognition.Choices> object.  
-  
+The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  
+ 
+The example uses a <xref:System.Speech.Recognition.Choices> object  to create a list of acceptable values for *colorChoice* from an array of <xref:System.String> objects. A <xref:System.Speech.Recognition.Choices> object is analogous to the `one-of` element in the SRGS specification, and contains a set of alternate phrases, any of which can be recognized when spoken. The example also uses a <xref:System.Speech.Recognition.Choices> object to group an array of two <xref:System.Speech.Recognition.GrammarBuilder> objects into a pair of alternative phrases that the resultant grammar can recognize. Alternate words or phrases are a component of most grammars, and the <xref:System.Speech.Recognition.Choices> object provides this functionality for grammars constructed with <xref:System.Speech.Recognition.GrammarBuilder>.  
+ 
+The example finally creates a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.GrammarBuilder> constructed from a <xref:System.Speech.Recognition.Choices> object.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
-  GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
-  makePhrase.Append(colorElement);  
-  GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
-  setPhrase.Append(colorElement);  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the grammar from the result.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  Grammar grammar = new Grammar((GrammarBuilder)bothChoices);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+ GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
+ makePhrase.Append(colorElement);  
+ GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
+ setPhrase.Append(colorElement);  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the grammar from the result.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ Grammar grammar = new Grammar((GrammarBuilder)bothChoices);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,49 +98,49 @@ private Grammar CreateColorGrammar()
         <summary>Initializes a new, empty instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To add rules to an existing <xref:System.Speech.Recognition.GrammarBuilder> object, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods, and the <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operator.  
-  
+To add rules to an existing <xref:System.Speech.Recognition.GrammarBuilder> object, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods, and the <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operator.  
+ 
 > [!IMPORTANT]
 >  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  
-  
- The example uses a <xref:System.Speech.Recognition.Choices> object  to create a list of acceptable values for *colorChoice* from an array of <xref:System.String> objects. A <xref:System.Speech.Recognition.Choices> object is analogous to the `one-of` element in the SRGS specification, and contains a set of alternate phrases, any one of which can be recognized when spoken. The example also uses a <xref:System.Speech.Recognition.Choices> object to group an array of two <xref:System.Speech.Recognition.GrammarBuilder> objects into a pair of alternative phrases that the resultant grammar can recognize. Alternate words or phrases are a component of most grammars, and the <xref:System.Speech.Recognition.Choices> object provides this functionality for grammars constructed with <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
- The example finally creates a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.GrammarBuilder> constructed from a <xref:System.Speech.Recognition.Choices> object.  
-  
+The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  
+ 
+The example uses a <xref:System.Speech.Recognition.Choices> object  to create a list of acceptable values for *colorChoice* from an array of <xref:System.String> objects. A <xref:System.Speech.Recognition.Choices> object is analogous to the `one-of` element in the SRGS specification, and contains a set of alternate phrases, any one of which can be recognized when spoken. The example also uses a <xref:System.Speech.Recognition.Choices> object to group an array of two <xref:System.Speech.Recognition.GrammarBuilder> objects into a pair of alternative phrases that the resultant grammar can recognize. Alternate words or phrases are a component of most grammars, and the <xref:System.Speech.Recognition.Choices> object provides this functionality for grammars constructed with <xref:System.Speech.Recognition.GrammarBuilder>.  
+ 
+The example finally creates a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.GrammarBuilder> constructed from a <xref:System.Speech.Recognition.Choices> object.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
-  GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
-  makePhrase.Append(colorElement);  
-  GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
-  setPhrase.Append(colorElement);  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the Grammar object from the result.  
-  GrammarBuilder bothPhrases = new GrammarBuilder();  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  bothPhrases.Append(bothChoices);  
-  Grammar grammar = new Grammar(bothPhrases);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+ GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
+ makePhrase.Append(colorElement);  
+ GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
+ setPhrase.Append(colorElement);  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the Grammar object from the result.  
+ GrammarBuilder bothPhrases = new GrammarBuilder();  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ bothPhrases.Append(bothChoices);  
+ Grammar grammar = new Grammar(bothPhrases);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,44 +162,44 @@ private Grammar CreateColorGrammar()
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class from a set of alternatives.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about building a speech recognition grammar that contains alternatives, see [Using Choices to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/5b18db18-a5f6-46a3-aa77-6d3141544efd).  
+For more information about building a speech recognition grammar that contains alternatives, see [Using Choices to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/5b18db18-a5f6-46a3-aa77-6d3141544efd).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  
-  
- The example uses a <xref:System.Speech.Recognition.Choices> object  to create a list of acceptable values for *colorChoice* from an array of <xref:System.String> objects. A <xref:System.Speech.Recognition.Choices> object is analogous to the `one-of` element in the SRGS specification, and contains a set of alternate phrases, any of which can be recognized when spoken. The example also uses a <xref:System.Speech.Recognition.Choices> object to group an array of two <xref:System.Speech.Recognition.GrammarBuilder> objects into a pair of alternative phrases that the resultant grammar can recognize. Alternate words or phrases are a component of most grammars, and the <xref:System.Speech.Recognition.Choices> object provides this functionality for grammars constructed with <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
- The example finally creates a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.GrammarBuilder> constructed from a <xref:System.Speech.Recognition.Choices> object.  
-  
+The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  
+ 
+The example uses a <xref:System.Speech.Recognition.Choices> object  to create a list of acceptable values for *colorChoice* from an array of <xref:System.String> objects. A <xref:System.Speech.Recognition.Choices> object is analogous to the `one-of` element in the SRGS specification, and contains a set of alternate phrases, any of which can be recognized when spoken. The example also uses a <xref:System.Speech.Recognition.Choices> object to group an array of two <xref:System.Speech.Recognition.GrammarBuilder> objects into a pair of alternative phrases that the resultant grammar can recognize. Alternate words or phrases are a component of most grammars, and the <xref:System.Speech.Recognition.Choices> object provides this functionality for grammars constructed with <xref:System.Speech.Recognition.GrammarBuilder>.  
+ 
+The example finally creates a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.GrammarBuilder> constructed from a <xref:System.Speech.Recognition.Choices> object.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
-  GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
-  makePhrase.Append(colorElement);  
-  GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
-  setPhrase.Append(colorElement);  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the grammar from the result.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  Grammar grammar = new Grammar((GrammarBuilder)bothChoices);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+ GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
+ makePhrase.Append(colorElement);  
+ GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
+ setPhrase.Append(colorElement);  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the grammar from the result.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ Grammar grammar = new Grammar((GrammarBuilder)bothChoices);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,68 +221,68 @@ private Grammar CreateColorGrammar()
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class from a semantic key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create a <xref:System.Speech.Recognition.GrammarBuilder> instance from a <xref:System.Speech.Recognition.SemanticResultValue> object, you add semantic information to the grammar that can be returned in the recognition result. You can access the semantic information in the recognition result using the <xref:System.Speech.Recognition.RecognizedPhrase.Semantics%2A> property of <xref:System.Speech.Recognition.RecognizedPhrase>, which is available in the handler for the `SpeechRecognized` event. If the <xref:System.Speech.Recognition.GrammarBuilder> defines a <xref:System.Speech.Recognition.SemanticResultKey>, this can be used to retrieve the semantic information in a recognition result that is associated with the key. See the example for <xref:System.Speech.Recognition.GrammarBuilder.Append%28System.Speech.Recognition.SemanticResultKey%29>, and also see <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>.  
-  
+When you create a <xref:System.Speech.Recognition.GrammarBuilder> instance from a <xref:System.Speech.Recognition.SemanticResultValue> object, you add semantic information to the grammar that can be returned in the recognition result. You can access the semantic information in the recognition result using the <xref:System.Speech.Recognition.RecognizedPhrase.Semantics%2A> property of <xref:System.Speech.Recognition.RecognizedPhrase>, which is available in the handler for the `SpeechRecognized` event. If the <xref:System.Speech.Recognition.GrammarBuilder> defines a <xref:System.Speech.Recognition.SemanticResultKey>, this can be used to retrieve the semantic information in a recognition result that is associated with the key. See the example for <xref:System.Speech.Recognition.GrammarBuilder.Append%28System.Speech.Recognition.SemanticResultKey%29>, and also see <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>.  
+ 
 > [!IMPORTANT]
 >  When you construct <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *colorChoice*" and "Set background to *colorChoice*", where *colorChoice* is selected from a set of colors. The grammar lets a user speak any of several color names, and returns semantic information about the recognized color name to the application.  
-  
- The example uses a single <xref:System.Speech.Recognition.SemanticResultKey> with which you can retrieve the <xref:System.Speech.Recognition.SemanticValue> that is associated with the color spoken by the user. For example, if the input contains the phrase, "Set background to red", the recognition result contains the semantic value of "#FF0000", which you can retrieve using a handler for the `SpeechRecognized` event.  
-  
- The example uses <xref:System.String>, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and <xref:System.Speech.Recognition.GrammarBuilder> objects to build the constraints that are all contained in the last <xref:System.Speech.Recognition.GrammarBuilder> object, `bothPhrases`. Finally, the example constructs a <xref:System.Speech.Recognition.Grammar> object from the completed <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
+The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *colorChoice*" and "Set background to *colorChoice*", where *colorChoice* is selected from a set of colors. The grammar lets a user speak any of several color names, and returns semantic information about the recognized color name to the application.  
+ 
+The example uses a single <xref:System.Speech.Recognition.SemanticResultKey> with which you can retrieve the <xref:System.Speech.Recognition.SemanticValue> that is associated with the color spoken by the user. For example, if the input contains the phrase, "Set background to red", the recognition result contains the semantic value of "#FF0000", which you can retrieve using a handler for the `SpeechRecognized` event.  
+ 
+The example uses <xref:System.String>, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and <xref:System.Speech.Recognition.GrammarBuilder> objects to build the constraints that are all contained in the last <xref:System.Speech.Recognition.GrammarBuilder> object, `bothPhrases`. Finally, the example constructs a <xref:System.Speech.Recognition.Grammar> object from the completed <xref:System.Speech.Recognition.GrammarBuilder>.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  // Include semantic information about each of the colors.  
-  Choices colorChoice = new Choices();  
-  
-  GrammarBuilder colorBuilder = new GrammarBuilder("red");  
-  SemanticResultValue colorValue =  
-    new SemanticResultValue(colorBuilder, "#FF0000");  
-  colorChoice.Add(new GrammarBuilder(colorValue));  
-  
-  colorBuilder = new GrammarBuilder("green");  
-  colorValue = new SemanticResultValue(colorBuilder, "#00FF00");  
-  colorChoice.Add(new GrammarBuilder(colorValue));  
-  
-  colorBuilder = new GrammarBuilder("blue");  
-  colorValue = new SemanticResultValue(colorBuilder, "#0000FF");  
-  colorChoice.Add(new GrammarBuilder(colorValue));  
-  
-  GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
-  makePhrase.Append(colorElement);  
-  GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
-  setPhrase.Append(colorElement);  
-  
-  // Create a Choices object for the two alternative phrases.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
-  
-  // Create the semantic key for referencing the color information.  
-  SemanticResultKey colorKey =  
-    new SemanticResultKey("ColorCode", bothPhrases);  
-  bothPhrases = new GrammarBuilder(colorKey);  
-  
-  // Construct the Grammar object from the GrammarBuilder.  
-  Grammar grammar = new Grammar(bothPhrases);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ // Include semantic information about each of the colors.  
+ Choices colorChoice = new Choices();  
+ 
+ GrammarBuilder colorBuilder = new GrammarBuilder("red");  
+ SemanticResultValue colorValue =  
+   new SemanticResultValue(colorBuilder, "#FF0000");  
+ colorChoice.Add(new GrammarBuilder(colorValue));  
+ 
+ colorBuilder = new GrammarBuilder("green");  
+ colorValue = new SemanticResultValue(colorBuilder, "#00FF00");  
+ colorChoice.Add(new GrammarBuilder(colorValue));  
+ 
+ colorBuilder = new GrammarBuilder("blue");  
+ colorValue = new SemanticResultValue(colorBuilder, "#0000FF");  
+ colorChoice.Add(new GrammarBuilder(colorValue));  
+ 
+ GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
+ makePhrase.Append(colorElement);  
+ GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
+ setPhrase.Append(colorElement);  
+ 
+ // Create a Choices object for the two alternative phrases.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
+ 
+ // Create the semantic key for referencing the color information.  
+ SemanticResultKey colorKey =  
+   new SemanticResultKey("ColorCode", bothPhrases);  
+ bothPhrases = new GrammarBuilder(colorKey);  
+ 
+ // Construct the Grammar object from the GrammarBuilder.  
+ Grammar grammar = new Grammar(bothPhrases);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,68 +304,68 @@ private Grammar CreateColorGrammar()
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class from a semantic value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create a <xref:System.Speech.Recognition.GrammarBuilder> instance from a <xref:System.Speech.Recognition.SemanticResultValue> object, you add semantic information to the grammar that can be returned in the recognition result. You can access the semantic information in the recognition result using the <xref:System.Speech.Recognition.RecognizedPhrase.Semantics%2A> property of <xref:System.Speech.Recognition.RecognizedPhrase>, which is available in the handler for the `SpeechRecognized` event. If the <xref:System.Speech.Recognition.GrammarBuilder> defines a <xref:System.Speech.Recognition.SemanticResultKey>, this can be used to retrieve the semantic information in a recognition result that is associated with the key. See the example for <xref:System.Speech.Recognition.GrammarBuilder.Append%28System.Speech.Recognition.SemanticResultKey%29>, and also see <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>.  
-  
+When you create a <xref:System.Speech.Recognition.GrammarBuilder> instance from a <xref:System.Speech.Recognition.SemanticResultValue> object, you add semantic information to the grammar that can be returned in the recognition result. You can access the semantic information in the recognition result using the <xref:System.Speech.Recognition.RecognizedPhrase.Semantics%2A> property of <xref:System.Speech.Recognition.RecognizedPhrase>, which is available in the handler for the `SpeechRecognized` event. If the <xref:System.Speech.Recognition.GrammarBuilder> defines a <xref:System.Speech.Recognition.SemanticResultKey>, this can be used to retrieve the semantic information in a recognition result that is associated with the key. See the example for <xref:System.Speech.Recognition.GrammarBuilder.Append%28System.Speech.Recognition.SemanticResultKey%29>, and also see <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>.  
+ 
 > [!IMPORTANT]
 >  When you construct <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *colorChoice*" and "Set background to *colorChoice*", where *colorChoice* is selected from a set of colors. The grammar lets a user speak any of several color names, and returns semantic information about the recognized color name to the application.  
-  
- The example uses a single <xref:System.Speech.Recognition.SemanticResultKey> with which you can retrieve the <xref:System.Speech.Recognition.SemanticValue> that is associated with the color spoken by the user. For example, if the input contains the phrase, "Set background to red", the recognition result contains the semantic value of "#FF0000", which you can retrieve using a handler for the `SpeechRecognized` event.  
-  
- The example uses <xref:System.String>, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and <xref:System.Speech.Recognition.GrammarBuilder> objects to build the constraints that are all contained in the last <xref:System.Speech.Recognition.GrammarBuilder> object, `bothPhrases`. Finally, the example constructs a <xref:System.Speech.Recognition.Grammar> object from the completed <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
+The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *colorChoice*" and "Set background to *colorChoice*", where *colorChoice* is selected from a set of colors. The grammar lets a user speak any of several color names, and returns semantic information about the recognized color name to the application.  
+ 
+The example uses a single <xref:System.Speech.Recognition.SemanticResultKey> with which you can retrieve the <xref:System.Speech.Recognition.SemanticValue> that is associated with the color spoken by the user. For example, if the input contains the phrase, "Set background to red", the recognition result contains the semantic value of "#FF0000", which you can retrieve using a handler for the `SpeechRecognized` event.  
+ 
+The example uses <xref:System.String>, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and <xref:System.Speech.Recognition.GrammarBuilder> objects to build the constraints that are all contained in the last <xref:System.Speech.Recognition.GrammarBuilder> object, `bothPhrases`. Finally, the example constructs a <xref:System.Speech.Recognition.Grammar> object from the completed <xref:System.Speech.Recognition.GrammarBuilder>.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  // Include semantic information about each of the colors.  
-  Choices colorChoice = new Choices();  
-  
-  GrammarBuilder colorBuilder = new GrammarBuilder("red");  
-  SemanticResultValue colorValue =  
-    new SemanticResultValue(colorBuilder, "#FF0000");  
-  colorChoice.Add(new GrammarBuilder(colorValue));  
-  
-  colorBuilder = new GrammarBuilder("green");  
-  colorValue = new SemanticResultValue(colorBuilder, "#00FF00");  
-  colorChoice.Add(new GrammarBuilder(colorValue));  
-  
-  colorBuilder = new GrammarBuilder("blue");  
-  colorValue = new SemanticResultValue(colorBuilder, "#0000FF");  
-  colorChoice.Add(new GrammarBuilder(colorValue));  
-  
-  GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
-  makePhrase.Append(colorElement);  
-  GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
-  setPhrase.Append(colorElement);  
-  
-  // Create a Choices for the two alternative phrases.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
-  
-  // Create the semantic key for referencing the color information.  
-  SemanticResultKey colorKey =  
-    new SemanticResultKey("ColorCode", bothPhrases);  
-  bothPhrases = new GrammarBuilder(colorKey);  
-  
-  // Construct the grammar from the grammar builder.  
-  Grammar grammar = new Grammar(bothPhrases);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ // Include semantic information about each of the colors.  
+ Choices colorChoice = new Choices();  
+ 
+ GrammarBuilder colorBuilder = new GrammarBuilder("red");  
+ SemanticResultValue colorValue =  
+   new SemanticResultValue(colorBuilder, "#FF0000");  
+ colorChoice.Add(new GrammarBuilder(colorValue));  
+ 
+ colorBuilder = new GrammarBuilder("green");  
+ colorValue = new SemanticResultValue(colorBuilder, "#00FF00");  
+ colorChoice.Add(new GrammarBuilder(colorValue));  
+ 
+ colorBuilder = new GrammarBuilder("blue");  
+ colorValue = new SemanticResultValue(colorBuilder, "#0000FF");  
+ colorChoice.Add(new GrammarBuilder(colorValue));  
+ 
+ GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
+ makePhrase.Append(colorElement);  
+ GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
+ setPhrase.Append(colorElement);  
+ 
+ // Create a Choices for the two alternative phrases.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
+ 
+ // Create the semantic key for referencing the color information.  
+ SemanticResultKey colorKey =  
+   new SemanticResultKey("ColorCode", bothPhrases);  
+ bothPhrases = new GrammarBuilder(colorKey);  
+ 
+ // Construct the grammar from the grammar builder.  
+ Grammar grammar = new Grammar(bothPhrases);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -387,44 +387,44 @@ private Grammar CreateColorGrammar()
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class from a sequence of words.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The phrase represents an exact spoken phrase that the speech recognition grammar can recognize. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+The phrase represents an exact spoken phrase that the speech recognition grammar can recognize. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  
-  
- After creating a list of acceptable values for *colorChoice* using a <xref:System.Speech.Recognition.Choices> object, the example initializes two <xref:System.Speech.Recognition.GrammarBuilder> objects, `makePhrase` and `setPhrase`, using a string as an argument.  
-  
- The example finally creates a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.Choices> object cast to a <xref:System.Speech.Recognition.GrammarBuilder> object.  
-  
+The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  
+ 
+After creating a list of acceptable values for *colorChoice* using a <xref:System.Speech.Recognition.Choices> object, the example initializes two <xref:System.Speech.Recognition.GrammarBuilder> objects, `makePhrase` and `setPhrase`, using a string as an argument.  
+ 
+The example finally creates a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.Choices> object cast to a <xref:System.Speech.Recognition.GrammarBuilder> object.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
-  GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
-  makePhrase.Append(colorElement);  
-  GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
-  setPhrase.Append(colorElement);  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the Grammar object from the result.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  Grammar grammar = new Grammar((GrammarBuilder)bothChoices);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+ GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
+ makePhrase.Append(colorElement);  
+ GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
+ setPhrase.Append(colorElement);  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the Grammar object from the result.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ Grammar grammar = new Grammar((GrammarBuilder)bothChoices);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,70 +448,70 @@ private Grammar CreateColorGrammar()
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class for a subset of a sequence of words.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `phrase` parameter represents the phrase that the speech recognition grammar can recognize. The `subsetMatchingMode` parameter specifies a subset of the phrase that can be spoken to achieve successful recognition of the entire phrase. You can use this to create a grammar with a list of entries that have long names, without requiring users to speak an entire name to match an item.  
+The `phrase` parameter represents the phrase that the speech recognition grammar can recognize. The `subsetMatchingMode` parameter specifies a subset of the phrase that can be spoken to achieve successful recognition of the entire phrase. You can use this to create a grammar with a list of entries that have long names, without requiring users to speak an entire name to match an item.  
+ 
+For more information about the matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode>. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ 
   
- For more information about the matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode>. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for each <xref:System.Speech.Recognition.SubsetMatchingMode> value and a grammar for choosing between the matching mode grammars. If the value of `phrase` is "one two three four five six seven", then the Subsequence grammar recognizes the input "two three four", but not the input "one three five". However, the Ordered Subset grammar recognizes both of these inputs.  
-  
+The following example creates a speech recognition grammar for each <xref:System.Speech.Recognition.SubsetMatchingMode> value and a grammar for choosing between the matching mode grammars. If the value of `phrase` is "one two three four five six seven", then the Subsequence grammar recognizes the input "two three four", but not the input "one three five". However, the Ordered Subset grammar recognizes both of these inputs.  
+ 
 ```csharp  
-  
+ 
 private static IEnumerable<Grammar>  
-  CreateMatchingModeGrammars(string phrase)  
+ CreateMatchingModeGrammars(string phrase)  
 {  
-  List<Grammar> grammars = new List<Grammar>(5);  
-  
-  Choices modeChoice = new Choices();  
-  Type enumType = typeof(SubsetMatchingMode);  
-  foreach (SubsetMatchingMode mode in Enum.GetValues(enumType))  
-  {  
-    string modeName = Enum.GetName(enumType, mode);  
-    modeName = BreakAtCaps(modeName);  
-  
-    GrammarBuilder builder = new GrammarBuilder(phrase, mode);  
-    Grammar modeGrammar = new Grammar(builder);  
-    modeGrammar.Name = modeName;  
-    modeGrammar.Enabled = false;  
-    grammars.Add(modeGrammar);  
-  
-    modeChoice.Add(modeName);  
-  }  
-  
-  Grammar choiceGrammar = new Grammar(modeChoice);  
-  choiceGrammar.Name = "choice";  
-  grammars.Add(choiceGrammar);  
-  
-  return grammars;  
+ List<Grammar> grammars = new List<Grammar>(5);  
+ 
+ Choices modeChoice = new Choices();  
+ Type enumType = typeof(SubsetMatchingMode);  
+ foreach (SubsetMatchingMode mode in Enum.GetValues(enumType))  
+ {  
+   string modeName = Enum.GetName(enumType, mode);  
+   modeName = BreakAtCaps(modeName);  
+ 
+   GrammarBuilder builder = new GrammarBuilder(phrase, mode);  
+   Grammar modeGrammar = new Grammar(builder);  
+   modeGrammar.Name = modeName;  
+   modeGrammar.Enabled = false;  
+   grammars.Add(modeGrammar);  
+ 
+   modeChoice.Add(modeName);  
+ }  
+ 
+ Grammar choiceGrammar = new Grammar(modeChoice);  
+ choiceGrammar.Name = "choice";  
+ grammars.Add(choiceGrammar);  
+ 
+ return grammars;  
 }  
-  
+ 
 // Insert spaces preceding each uppercase letter in a string.   
 private static string BreakAtCaps(string item)  
 {  
-  if (item == null || item.Length == 0)  
-  {  
-    return item;  
-  }  
-  
-  StringBuilder sb = new StringBuilder(item[0].ToString());  
-  for (int i = 1; i < item.Length; i++)  
-  {  
-    char c = item[i];  
-    if (char.IsUpper(c))  
-    {  
-      sb.Append(" ");  
-    }  
-    sb.Append(c);  
-  }  
-  
-  return sb.ToString();  
+ if (item == null || item.Length == 0)  
+ {  
+   return item;  
+ }  
+ 
+ StringBuilder sb = new StringBuilder(item[0].ToString());  
+ for (int i = 1; i < item.Length; i++)  
+ {  
+   char c = item[i];  
+   if (char.IsUpper(c))  
+   {  
+     sb.Append(" ");  
+   }  
+   sb.Append(c);  
+ }  
+ 
+ return sb.ToString();  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,48 +537,48 @@ private static string BreakAtCaps(string item)
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class from a repeated element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of `minRepeat` is 0, then the new <xref:System.Speech.Recognition.GrammarBuilder> represents an optional element.  
-  
- The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`.  
-  
+If the value of `minRepeat` is 0, then the new <xref:System.Speech.Recognition.GrammarBuilder> represents an optional element.  
+ 
+The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`.  
+ 
 > [!IMPORTANT]
 >  When you specify repeats for <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for ordering a pizza. It starts with an optional, opening phrase, followed by one to four toppings, and closes with the word "pizza".  
-  
+The following example creates a speech recognition grammar for ordering a pizza. It starts with an optional, opening phrase, followed by one to four toppings, and closes with the word "pizza".  
+ 
 ```csharp  
-  
+ 
 private static Grammar CreatePizzaGrammar()  
 {  
-  
-  // Create a Choices object from a string array of alternative toppings.  
-  Choices toppings = new Choices(new string[] {  
-    "cheese", "mushroom", "tomato", "onion",  
-    "anchovy", "chicken", "pepperoni"});  
-  
-  // Create a GrammarBuilder and append the Choices object.  
-  GrammarBuilder andToppings = new GrammarBuilder("and", 0, 1);  
-  andToppings.Append(toppings);  
-  
-  // Construct the phrase.  
-  GrammarBuilder gb = new GrammarBuilder("I would like a", 0, 1);  
-  gb.Append(toppings);  
-  gb.Append(new GrammarBuilder(andToppings, 0, 3));  
-  gb.Append("pizza");  
-  
-  // Create the Grammar from the GrammarBuilder.  
-  Grammar grammar = new Grammar(gb);  
-  grammar.Name = "Pizza Order";  
-  
-  return grammar;  
+ 
+ // Create a Choices object from a string array of alternative toppings.  
+ Choices toppings = new Choices(new string[] {  
+   "cheese", "mushroom", "tomato", "onion",  
+   "anchovy", "chicken", "pepperoni"});  
+ 
+ // Create a GrammarBuilder and append the Choices object.  
+ GrammarBuilder andToppings = new GrammarBuilder("and", 0, 1);  
+ andToppings.Append(toppings);  
+ 
+ // Construct the phrase.  
+ GrammarBuilder gb = new GrammarBuilder("I would like a", 0, 1);  
+ gb.Append(toppings);  
+ gb.Append(new GrammarBuilder(andToppings, 0, 3));  
+ gb.Append("pizza");  
+ 
+ // Create the Grammar from the GrammarBuilder.  
+ Grammar grammar = new Grammar(gb);  
+ grammar.Name = "Pizza Order";  
+ 
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,45 +604,45 @@ private static Grammar CreatePizzaGrammar()
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class from the sequence of words in a <see cref="T:System.String" /> and specifies how many times the <see cref="T:System.String" /> can be repeated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of `minRepeat` is 0, then the new <xref:System.Speech.Recognition.GrammarBuilder> represents an optional element.  
+If the value of `minRepeat` is 0, then the new <xref:System.Speech.Recognition.GrammarBuilder> represents an optional element.  
+ 
+The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ 
   
- The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for ordering a pizza. It starts with an optional, opening phrase, followed by one to four toppings, and closes with the word "pizza".  
-  
+The following example creates a speech recognition grammar for ordering a pizza. It starts with an optional, opening phrase, followed by one to four toppings, and closes with the word "pizza".  
+ 
 ```csharp  
-  
+ 
 private static Grammar CreatePizzaGrammar()  
 {  
-  
-  // Create a Choices object with alternatives for toppings.  
-  Choices toppings = new Choices(new string[] {  
-    "cheese", "mushroom", "tomato", "onion",  
-    "anchovy", "chicken", "pepperoni"});  
-  
-  // Create a GrammarBuilder and append the Choices object.  
-  GrammarBuilder andToppings = new GrammarBuilder("and", 0, 1);  
-  andToppings.Append(toppings);  
-  
-  // Construct the phrase.  
-  GrammarBuilder gb = new GrammarBuilder("I would like a", 0, 1);  
-  gb.Append(toppings);  
-  gb.Append(new GrammarBuilder(andToppings, 0, 3));  
-  gb.Append("pizza");  
-  
-  // Create the Grammar from the GrammarBuilder.  
-  Grammar grammar = new Grammar(gb);  
-  grammar.Name = "Pizza Order";  
-  
-  return grammar;  
+ 
+ // Create a Choices object with alternatives for toppings.  
+ Choices toppings = new Choices(new string[] {  
+   "cheese", "mushroom", "tomato", "onion",  
+   "anchovy", "chicken", "pepperoni"});  
+ 
+ // Create a GrammarBuilder and append the Choices object.  
+ GrammarBuilder andToppings = new GrammarBuilder("and", 0, 1);  
+ andToppings.Append(toppings);  
+ 
+ // Construct the phrase.  
+ GrammarBuilder gb = new GrammarBuilder("I would like a", 0, 1);  
+ gb.Append(toppings);  
+ gb.Append(new GrammarBuilder(andToppings, 0, 3));  
+ gb.Append("pizza");  
+ 
+ // Create the Grammar from the GrammarBuilder.  
+ Grammar grammar = new Grammar(gb);  
+ grammar.Name = "Pizza Order";  
+ 
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,25 +670,25 @@ private static Grammar CreatePizzaGrammar()
         <returns>A <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="choices" /> element followed by the <paramref name="builder" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
-  
- This method accepts the objects listed above for the `builder` parameter.  
-  
- For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
-  
+ 
+This method accepts the objects listed above for the `builder` parameter.  
+ 
+For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
+ 
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Add Semantics to a GrammarBuilder Grammar](https://msdn.microsoft.com/library/hh361581.aspx).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,55 +716,55 @@ private static Grammar CreatePizzaGrammar()
         <returns>A <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="builder" /> element followed by the <paramref name="choices" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
-  
- This method accepts the objects listed above for the `builder` parameter.  
-  
- For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
-  
+ 
+This method accepts the objects listed above for the `builder` parameter.  
+ 
+For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
+ 
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
-  
+The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase =  
-    GrammarBuilder.Add((GrammarBuilder)"Make background", colorChoice);  
-  GrammarBuilder setPhrase =  
-    GrammarBuilder.Add("Set background to", (GrammarBuilder)colorChoice);  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the grammar from the result.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
-  
-  Grammar grammar = new Grammar(bothPhrases);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase =  
+   GrammarBuilder.Add((GrammarBuilder)"Make background", colorChoice);  
+ GrammarBuilder setPhrase =  
+   GrammarBuilder.Add("Set background to", (GrammarBuilder)colorChoice);  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the grammar from the result.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
+ 
+ Grammar grammar = new Grammar(bothPhrases);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -792,55 +792,55 @@ private Grammar CreateColorGrammar()
         <returns>A <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="builder1" /> element followed by the <paramref name="builder2" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
-  
- This method accepts the objects listed above for the `builder1` or `builder2` parameter.  
-  
- For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
-  
+ 
+This method accepts the objects listed above for the `builder1` or `builder2` parameter.  
+ 
+For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
+ 
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
-  
+The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase =  
-    GrammarBuilder.Add((GrammarBuilder)"Make background", colorChoice);  
-  GrammarBuilder setPhrase =  
-    GrammarBuilder.Add("Set background to", (GrammarBuilder)colorChoice);  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the grammar from the result.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
-  
-  Grammar grammar = new Grammar(bothPhrases);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase =  
+   GrammarBuilder.Add((GrammarBuilder)"Make background", colorChoice);  
+ GrammarBuilder setPhrase =  
+   GrammarBuilder.Add("Set background to", (GrammarBuilder)colorChoice);  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the grammar from the result.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
+ 
+ Grammar grammar = new Grammar(bothPhrases);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -868,52 +868,52 @@ private Grammar CreateColorGrammar()
         <returns>A <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="builder" /> element followed by the <paramref name="phrase" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
+ 
+This method accepts the objects listed above for the `builder` parameter.  
+ 
+For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
+ 
   
- This method accepts the objects listed above for the `builder` parameter.  
-  
- For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
-  
+The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase =  
-    GrammarBuilder.Add((GrammarBuilder)"Make background", colorChoice);  
-  GrammarBuilder setPhrase =  
-    GrammarBuilder.Add("Set background to", (GrammarBuilder)colorChoice);  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the grammar from the result.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
-  
-  Grammar grammar = new Grammar(bothPhrases);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase =  
+   GrammarBuilder.Add((GrammarBuilder)"Make background", colorChoice);  
+ GrammarBuilder setPhrase =  
+   GrammarBuilder.Add("Set background to", (GrammarBuilder)colorChoice);  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the grammar from the result.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
+ 
+ Grammar grammar = new Grammar(bothPhrases);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -941,52 +941,52 @@ private Grammar CreateColorGrammar()
         <returns>A <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="phrase" /> element followed by the <paramref name="builder" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversions from the following classes:  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
+ 
+This method accepts the objects listed above for the `builder` parameter.  
+ 
+For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
+ 
   
- This method accepts the objects listed above for the `builder` parameter.  
-  
- For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
-  
+The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase =  
-    GrammarBuilder.Add((GrammarBuilder)"Make background", colorChoice);  
-  GrammarBuilder setPhrase =  
-    GrammarBuilder.Add("Set background to", (GrammarBuilder)colorChoice);  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the grammar from the result.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
-  GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
-  
-  Grammar grammar = new Grammar(bothPhrases);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase =  
+   GrammarBuilder.Add((GrammarBuilder)"Make background", colorChoice);  
+ GrammarBuilder setPhrase =  
+   GrammarBuilder.Add("Set background to", (GrammarBuilder)colorChoice);  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the grammar from the result.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+ GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
+ 
+ Grammar grammar = new Grammar(bothPhrases);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1011,55 +1011,55 @@ private Grammar CreateColorGrammar()
         <summary>Appends a set of alternatives to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `alternateChoices` is added to the end of the current sequence of elements.  
-  
+`alternateChoices` is added to the end of the current sequence of elements.  
+ 
 > [!IMPORTANT]
 >  When you append <xref:System.Speech.Recognition.Choices> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for phrases such as "Call James at work" and "Call Anne on her cell phone", where the word "phone" is optional. The example highlights the use of the <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> method.  
-  
+The following example creates a speech recognition grammar for phrases such as "Call James at work" and "Call Anne on her cell phone", where the word "phone" is optional. The example highlights the use of the <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> method.  
+ 
 ```csharp  
-  
+ 
 public static Grammar CreatePhonePhrase()  
 {  
-  // Create alternatives for person names, locations, devices, and pronouns.  
-  Choices personChoice = new Choices(new string[] {"Anne", "James", "Mary", "Sam"});  
-  Choices locationChoice = new Choices(new string[] {"home", "work"});  
-  Choices deviceChoice = new Choices(new string[] {"home", "work", "cell"});  
-  Choices pronounChoice = new Choices(new string[] {"his", "her"});  
-  
-  // Create a phrase for the receiving device, which optionally contains the word "phone".  
-  GrammarBuilder devicePhrase = new GrammarBuilder(pronounChoice);  
-  devicePhrase.Append(deviceChoice);  
-  devicePhrase.Append("phone", 0, 1);  
-  
-  // Create alternatives for phrases specifying a device or a location.  
-  GrammarBuilder atLocation = new GrammarBuilder("at");  
-  atLocation.Append(locationChoice);  
-  
-  GrammarBuilder onDevice = new GrammarBuilder("on");  
-  onDevice.Append(devicePhrase);  
-  
-  Choices howChoice = new Choices(new GrammarBuilder[] {atLocation, onDevice});  
-  
-  // Build the final phrase.  
-  GrammarBuilder callWho = new GrammarBuilder("Call");  
-  callWho.Append(personChoice);  
-  callWho.Append(howChoice);  
-  
-  // Create the Grammar object.  
-  Grammar callGrammar = new Grammar(callWho);  
-  callGrammar.Name = "Call Grammar";  
-  
-  return callGrammar;  
+ // Create alternatives for person names, locations, devices, and pronouns.  
+ Choices personChoice = new Choices(new string[] {"Anne", "James", "Mary", "Sam"});  
+ Choices locationChoice = new Choices(new string[] {"home", "work"});  
+ Choices deviceChoice = new Choices(new string[] {"home", "work", "cell"});  
+ Choices pronounChoice = new Choices(new string[] {"his", "her"});  
+ 
+ // Create a phrase for the receiving device, which optionally contains the word "phone".  
+ GrammarBuilder devicePhrase = new GrammarBuilder(pronounChoice);  
+ devicePhrase.Append(deviceChoice);  
+ devicePhrase.Append("phone", 0, 1);  
+ 
+ // Create alternatives for phrases specifying a device or a location.  
+ GrammarBuilder atLocation = new GrammarBuilder("at");  
+ atLocation.Append(locationChoice);  
+ 
+ GrammarBuilder onDevice = new GrammarBuilder("on");  
+ onDevice.Append(devicePhrase);  
+ 
+ Choices howChoice = new Choices(new GrammarBuilder[] {atLocation, onDevice});  
+ 
+ // Build the final phrase.  
+ GrammarBuilder callWho = new GrammarBuilder("Call");  
+ callWho.Append(personChoice);  
+ callWho.Append(howChoice);  
+ 
+ // Create the Grammar object.  
+ Grammar callGrammar = new Grammar(callWho);  
+ callGrammar.Name = "Call Grammar";  
+ 
+ return callGrammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1084,55 +1084,55 @@ public static Grammar CreatePhonePhrase()
         <summary>Appends a grammar element to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `builder` is added to the end of the current sequence of grammar elements.  
-  
+`builder` is added to the end of the current sequence of grammar elements.  
+ 
 > [!NOTE]
 >  When you append <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for phrases such as "Call James at work" and "Call Anne on her cell phone", where the word "phone" is optional. <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects are used to construct the grammar. The example highlights the use of the <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> method.  
-  
+The following example creates a speech recognition grammar for phrases such as "Call James at work" and "Call Anne on her cell phone", where the word "phone" is optional. <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects are used to construct the grammar. The example highlights the use of the <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> method.  
+ 
 ```csharp  
-  
+ 
 public static Grammar CreatePhonePhrase()  
 {  
-  // Create alternatives for person names, locations, devices, and pronouns.  
-  Choices personChoice = new Choices(new string[] {"Anne", "James", "Mary", "Sam"});  
-  Choices locationChoice = new Choices(new string[] {"home", "work"});  
-  Choices deviceChoice = new Choices(new string[] {"home", "work", "cell"});  
-  Choices pronounChoice = new Choices(new string[] {"his", "her"});  
-  
-  // Create a phrase for the receiving device, which optionally contains the word "phone".  
-  GrammarBuilder devicePhrase = new GrammarBuilder(pronounChoice);  
-  devicePhrase.Append(deviceChoice);  
-  devicePhrase.Append("phone", 0, 1);  
-  
-  // Create alternatives for phrases specifying a device or a location.  
-  GrammarBuilder atLocation = new GrammarBuilder("at");  
-  atLocation.Append(locationChoice);  
-  
-  GrammarBuilder onDevice = new GrammarBuilder("on");  
-  onDevice.Append(devicePhrase);  
-  
-  Choices howChoice = new Choices(new GrammarBuilder[] {atLocation, onDevice});  
-  
-  // Build the final phrase.  
-  GrammarBuilder callWho = new GrammarBuilder("Call");  
-  callWho.Append(personChoice);  
-  callWho.Append(howChoice);  
-  
-  // Create the Grammar object.  
-  Grammar callGrammar = new Grammar(callWho);  
-  callGrammar.Name = "Call Grammar";  
-  
-  return callGrammar;  
+ // Create alternatives for person names, locations, devices, and pronouns.  
+ Choices personChoice = new Choices(new string[] {"Anne", "James", "Mary", "Sam"});  
+ Choices locationChoice = new Choices(new string[] {"home", "work"});  
+ Choices deviceChoice = new Choices(new string[] {"home", "work", "cell"});  
+ Choices pronounChoice = new Choices(new string[] {"his", "her"});  
+ 
+ // Create a phrase for the receiving device, which optionally contains the word "phone".  
+ GrammarBuilder devicePhrase = new GrammarBuilder(pronounChoice);  
+ devicePhrase.Append(deviceChoice);  
+ devicePhrase.Append("phone", 0, 1);  
+ 
+ // Create alternatives for phrases specifying a device or a location.  
+ GrammarBuilder atLocation = new GrammarBuilder("at");  
+ atLocation.Append(locationChoice);  
+ 
+ GrammarBuilder onDevice = new GrammarBuilder("on");  
+ onDevice.Append(devicePhrase);  
+ 
+ Choices howChoice = new Choices(new GrammarBuilder[] {atLocation, onDevice});  
+ 
+ // Build the final phrase.  
+ GrammarBuilder callWho = new GrammarBuilder("Call");  
+ callWho.Append(personChoice);  
+ callWho.Append(howChoice);  
+ 
+ // Create the Grammar object.  
+ Grammar callGrammar = new Grammar(callWho);  
+ callGrammar.Name = "Call Grammar";  
+ 
+ return callGrammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1157,94 +1157,94 @@ public static Grammar CreatePhonePhrase()
         <summary>Appends a semantic key to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `key` is added to the end of the current sequence of elements.  
-  
+`key` is added to the end of the current sequence of elements.  
+ 
 > [!IMPORTANT]
 >  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey>instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue>object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is part of a console application for choosing origin and destination cities for a flight. The application recognizes phrases such as "I want to fly from Miami to Chicago." The handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event uses the <xref:System.Speech.Recognition.SemanticResultKey> to extract the airport code specified in the <xref:System.Speech.Recognition.SemanticResultValue> for the origin and destination cities.  
-  
+The following example is part of a console application for choosing origin and destination cities for a flight. The application recognizes phrases such as "I want to fly from Miami to Chicago." The handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event uses the <xref:System.Speech.Recognition.SemanticResultKey> to extract the airport code specified in the <xref:System.Speech.Recognition.SemanticResultValue> for the origin and destination cities.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Recognition;  
-  
+ 
 namespace SampleRecognition  
 {  
-  class Program  
-  {  
-    static void Main(string[] args)  
-  
-    // Initialize an in-process speech recognition engine.  
-    {  
-      using (SpeechRecognitionEngine recognizer =  
-         new SpeechRecognitionEngine())  
-      {  
-  
-        // Create a Choices object and add  cities and airport codes  
-        // using SemanticResultValue objects.  
-        Choices cities = new Choices();  
-        cities.Add(new SemanticResultValue("Chicago", "ORD"));  
-        cities.Add(new SemanticResultValue("Boston", "BOS"));  
-        cities.Add(new SemanticResultValue("Miami", "MIA"));  
-        cities.Add(new SemanticResultValue("Dallas", "DFW"));  
-  
-        // Build the phrase and add SemanticResultKeys.  
-        GrammarBuilder chooseCities = new GrammarBuilder();  
-        chooseCities.Append("I want to fly from");  
-        chooseCities.Append(new SemanticResultKey("origin", cities));  
-        chooseCities.Append("to");  
-        chooseCities.Append(new SemanticResultKey("destination", cities));  
-  
-        // Build a Grammar object from the GrammarBuilder.  
-        Grammar bookFlight = new Grammar(chooseCities);  
-        bookFlight.Name = "Book Flight";  
-  
-        // Add a handler for the LoadGrammarCompleted event.  
-        recognizer.LoadGrammarCompleted +=   
-          new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
-  
-        // Add a handler for the SpeechRecognized event.  
-        recognizer.SpeechRecognized +=   
-          new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
-  
-        // Configure the input to the recognizer.  
-        recognizer.SetInputToDefaultAudioDevice();  
-  
-        // Load the grammar object and start recognition.  
-        recognizer.LoadGrammarAsync(bookFlight);  
-        recognizer.RecognizeAsync();  
-  
-        // Keep the console window open.  
-        Console.ReadLine();  
-      }  
-    }  
-  
-    // Handle the LoadGrammarCompleted event.  
-    static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
-    {  
-      Console.WriteLine("Grammar loaded: " + e.Grammar.Name);  
-      Console.WriteLine();  
-    }  
-  
-    // Handle the SpeechRecognized event.  
-    static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
-    {  
-      Console.WriteLine("Speech recognized:  " + e.Result.Text);  
-      Console.WriteLine();  
-      Console.WriteLine("Semantic results:");  
-      Console.WriteLine("  The flight origin is " + e.Result.Semantics["origin"].Value);  
-      Console.WriteLine("  The flight destination is " + e.Result.Semantics["destination"].Value);  
-    }  
-  }  
+ class Program  
+ {  
+   static void Main(string[] args)  
+ 
+   // Initialize an in-process speech recognition engine.  
+   {  
+     using (SpeechRecognitionEngine recognizer =  
+        new SpeechRecognitionEngine())  
+     {  
+ 
+       // Create a Choices object and add  cities and airport codes  
+       // using SemanticResultValue objects.  
+       Choices cities = new Choices();  
+       cities.Add(new SemanticResultValue("Chicago", "ORD"));  
+       cities.Add(new SemanticResultValue("Boston", "BOS"));  
+       cities.Add(new SemanticResultValue("Miami", "MIA"));  
+       cities.Add(new SemanticResultValue("Dallas", "DFW"));  
+ 
+       // Build the phrase and add SemanticResultKeys.  
+       GrammarBuilder chooseCities = new GrammarBuilder();  
+       chooseCities.Append("I want to fly from");  
+       chooseCities.Append(new SemanticResultKey("origin", cities));  
+       chooseCities.Append("to");  
+       chooseCities.Append(new SemanticResultKey("destination", cities));  
+ 
+       // Build a Grammar object from the GrammarBuilder.  
+       Grammar bookFlight = new Grammar(chooseCities);  
+       bookFlight.Name = "Book Flight";  
+ 
+       // Add a handler for the LoadGrammarCompleted event.  
+       recognizer.LoadGrammarCompleted +=   
+         new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+ 
+       // Add a handler for the SpeechRecognized event.  
+       recognizer.SpeechRecognized +=   
+         new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+ 
+       // Configure the input to the recognizer.  
+       recognizer.SetInputToDefaultAudioDevice();  
+ 
+       // Load the grammar object and start recognition.  
+       recognizer.LoadGrammarAsync(bookFlight);  
+       recognizer.RecognizeAsync();  
+ 
+       // Keep the console window open.  
+       Console.ReadLine();  
+     }  
+   }  
+ 
+   // Handle the LoadGrammarCompleted event.  
+   static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+   {  
+     Console.WriteLine("Grammar loaded: " + e.Grammar.Name);  
+     Console.WriteLine();  
+   }  
+ 
+   // Handle the SpeechRecognized event.  
+   static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+   {  
+     Console.WriteLine("Speech recognized:  " + e.Result.Text);  
+     Console.WriteLine();  
+     Console.WriteLine("Semantic results:");  
+     Console.WriteLine("  The flight origin is " + e.Result.Semantics["origin"].Value);  
+     Console.WriteLine("  The flight destination is " + e.Result.Semantics["destination"].Value);  
+   }  
+ }  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1269,106 +1269,106 @@ namespace SampleRecognition
         <summary>Appends a semantic value to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `value` is added to the end of the current sequence of elements.  
-  
+`value` is added to the end of the current sequence of elements.  
+ 
 > [!IMPORTANT]
 >  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey>instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue>object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is part of a console application for choosing origin and destination cities for a flight. The application recognizes phrases such as "I want to fly from Miami to Chicago." The handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event uses the <xref:System.Speech.Recognition.SemanticResultKey> to extract the airport code specified in the <xref:System.Speech.Recognition.SemanticResultValue> for the origin and destination cities.  
-  
+The following example is part of a console application for choosing origin and destination cities for a flight. The application recognizes phrases such as "I want to fly from Miami to Chicago." The handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event uses the <xref:System.Speech.Recognition.SemanticResultKey> to extract the airport code specified in the <xref:System.Speech.Recognition.SemanticResultValue> for the origin and destination cities.  
+ 
 ```csharp  
-  
+ 
 using System;  
 using System.Speech.Recognition;  
-  
+ 
 namespace SampleRecognition  
 {  
-  class Program  
-  {  
-    static void Main(string[] args)  
-  
-    // Initialize an in-process speech recognition engine.  
-    {  
-      using (SpeechRecognitionEngine recognizer =  
-         new SpeechRecognitionEngine())  
-      {  
-  
-        // Create GrammarBuilder objects and append SemanticResultValue objects   
-        // that contain cities and airport codes.  
-  
-        GrammarBuilder chicago = new GrammarBuilder();  
-        chicago.Append(new SemanticResultValue("Chicago", "ORD"));  
-  
-        GrammarBuilder boston = new GrammarBuilder();  
-        boston.Append(new SemanticResultValue("Boston", "BOS"));  
-  
-        GrammarBuilder miami = new GrammarBuilder();  
-        miami.Append(new SemanticResultValue("Miami", "MIA"));  
-  
-        GrammarBuilder dallas = new GrammarBuilder();  
-        dallas.Append(new SemanticResultValue("Dallas", "DFW"));  
-  
-        // Create a Choices object and add the cities using implicit conversion from   
-        // SemanticResultValue to GrammarBuilder.  
-        Choices cities = new Choices();  
-        cities.Add(new Choices(new GrammarBuilder[] { chicago, boston, miami, dallas }));  
-  
-        // Build the phrase and add SemanticResultKeys.  
-        GrammarBuilder chooseCities = new GrammarBuilder();  
-        chooseCities.Append("I want to fly from");  
-        chooseCities.Append(new SemanticResultKey("origin", cities));  
-        chooseCities.Append("to");  
-        chooseCities.Append(new SemanticResultKey("destination", cities));  
-  
-        // Build a Grammar object from the GrammarBuilder.  
-        Grammar bookFlight = new Grammar(chooseCities);  
-        bookFlight.Name = "Book Flight";  
-  
-        // Add a handler for the LoadGrammarCompleted event.  
-        recognizer.LoadGrammarCompleted +=   
-          new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
-  
-        // Add a handler for the SpeechRecognized event.  
-        recognizer.SpeechRecognized +=   
-          new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
-  
-        // Configure the input to the recognizer.  
-        recognizer.SetInputToDefaultAudioDevice();  
-  
-        // Load the grammar object and start recognition.  
-        recognizer.LoadGrammarAsync(bookFlight);  
-        recognizer.RecognizeAsync();  
-  
-        // Keep the console window open.  
-        Console.ReadLine();  
-      }  
-    }  
-    // Handle the LoadGrammarCompleted event.  
-    static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
-    {  
-      Console.WriteLine("Grammar loaded: " + e.Grammar.Name);  
-      Console.WriteLine();  
-    }  
-  
-    // Handle the SpeechRecognized event.  
-    static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
-    {  
-      Console.WriteLine("Speech recognized:  " + e.Result.Text);  
-      Console.WriteLine();  
-      Console.WriteLine("Semantic results:");  
-      Console.WriteLine("  The flight origin is " + e.Result.Semantics["origin"].Value);  
-      Console.WriteLine("  The flight destination is " + e.Result.Semantics["destination"].Value);  
-    }  
-  }  
+ class Program  
+ {  
+   static void Main(string[] args)  
+ 
+   // Initialize an in-process speech recognition engine.  
+   {  
+     using (SpeechRecognitionEngine recognizer =  
+        new SpeechRecognitionEngine())  
+     {  
+ 
+       // Create GrammarBuilder objects and append SemanticResultValue objects   
+       // that contain cities and airport codes.  
+ 
+       GrammarBuilder chicago = new GrammarBuilder();  
+       chicago.Append(new SemanticResultValue("Chicago", "ORD"));  
+ 
+       GrammarBuilder boston = new GrammarBuilder();  
+       boston.Append(new SemanticResultValue("Boston", "BOS"));  
+ 
+       GrammarBuilder miami = new GrammarBuilder();  
+       miami.Append(new SemanticResultValue("Miami", "MIA"));  
+ 
+       GrammarBuilder dallas = new GrammarBuilder();  
+       dallas.Append(new SemanticResultValue("Dallas", "DFW"));  
+ 
+       // Create a Choices object and add the cities using implicit conversion from   
+       // SemanticResultValue to GrammarBuilder.  
+       Choices cities = new Choices();  
+       cities.Add(new Choices(new GrammarBuilder[] { chicago, boston, miami, dallas }));  
+ 
+       // Build the phrase and add SemanticResultKeys.  
+       GrammarBuilder chooseCities = new GrammarBuilder();  
+       chooseCities.Append("I want to fly from");  
+       chooseCities.Append(new SemanticResultKey("origin", cities));  
+       chooseCities.Append("to");  
+       chooseCities.Append(new SemanticResultKey("destination", cities));  
+ 
+       // Build a Grammar object from the GrammarBuilder.  
+       Grammar bookFlight = new Grammar(chooseCities);  
+       bookFlight.Name = "Book Flight";  
+ 
+       // Add a handler for the LoadGrammarCompleted event.  
+       recognizer.LoadGrammarCompleted +=   
+         new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+ 
+       // Add a handler for the SpeechRecognized event.  
+       recognizer.SpeechRecognized +=   
+         new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+ 
+       // Configure the input to the recognizer.  
+       recognizer.SetInputToDefaultAudioDevice();  
+ 
+       // Load the grammar object and start recognition.  
+       recognizer.LoadGrammarAsync(bookFlight);  
+       recognizer.RecognizeAsync();  
+ 
+       // Keep the console window open.  
+       Console.ReadLine();  
+     }  
+   }  
+   // Handle the LoadGrammarCompleted event.  
+   static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+   {  
+     Console.WriteLine("Grammar loaded: " + e.Grammar.Name);  
+     Console.WriteLine();  
+   }  
+ 
+   // Handle the SpeechRecognized event.  
+   static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+   {  
+     Console.WriteLine("Speech recognized:  " + e.Result.Text);  
+     Console.WriteLine();  
+     Console.WriteLine("Semantic results:");  
+     Console.WriteLine("  The flight origin is " + e.Result.Semantics["origin"].Value);  
+     Console.WriteLine("  The flight destination is " + e.Result.Semantics["destination"].Value);  
+   }  
+ }  
 }  
-  
+ 
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1393,10 +1393,10 @@ namespace SampleRecognition
         <summary>Appends a phrase to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `phrase` is added to the end of the current sequence of elements.  
-  
+`phrase` is added to the end of the current sequence of elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1423,39 +1423,39 @@ namespace SampleRecognition
         <summary>Appends an element for a subset of a phrase to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The subset element is added to the end of the current sequence of elements. For more information about building a speech recognition grammar using strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+The subset element is added to the end of the current sequence of elements. For more information about building a speech recognition grammar using strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ 
+For detailed information on the use of subset matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode?displayProperty=fullName>.  
+ 
   
- For detailed information on the use of subset matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for each <xref:System.Speech.Recognition.SubsetMatchingMode> value. For example, the generated grammar `OrderedSubset` recognizes the phrases, "three four five" and "one three five", and the grammar `Subsequence` recognizes the phrase "three four five", but not the phrase, "one three five".  
-  
+The following example creates a speech recognition grammar for each <xref:System.Speech.Recognition.SubsetMatchingMode> value. For example, the generated grammar `OrderedSubset` recognizes the phrases, "three four five" and "one three five", and the grammar `Subsequence` recognizes the phrase "three four five", but not the phrase, "one three five".  
+ 
 ```csharp  
-  
+ 
 private Grammar[] CreateSubsetMatchTest()  
 {  
-  List<Grammar> grammars = new List<Grammar>(4);  
-  
-  string phrase = "one two three four five six";  
-  foreach (SubsetMatchingMode mode in  
-    Enum.GetValues(typeof(SubsetMatchingMode)))  
-  {  
-    GrammarBuilder gb = new GrammarBuilder();  
-    gb.Append(phrase, mode);  
-  
-    Grammar grammar = new Grammar(gb);  
-    grammar.Name = mode.ToString();  
-    grammars.Add(grammar);  
-  }  
-  
-  return grammars.ToArray();  
+ List<Grammar> grammars = new List<Grammar>(4);  
+ 
+ string phrase = "one two three four five six";  
+ foreach (SubsetMatchingMode mode in  
+   Enum.GetValues(typeof(SubsetMatchingMode)))  
+ {  
+   GrammarBuilder gb = new GrammarBuilder();  
+   gb.Append(phrase, mode);  
+ 
+   Grammar grammar = new Grammar(gb);  
+   grammar.Name = mode.ToString();  
+   grammars.Add(grammar);  
+ }  
+ 
+ return grammars.ToArray();  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1484,55 +1484,55 @@ private Grammar[] CreateSubsetMatchTest()
         <summary>Appends a repeated grammar element to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`.  
-  
+The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`.  
+ 
 > [!IMPORTANT]
 >  When you append <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey>instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue>object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for phrases such as "Call James at work" and "Call Anne on her cell phone", where the word "phone" is optional. <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects are used to construct the grammar. The example highlights the use of the <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> method.  
-  
+The following example creates a speech recognition grammar for phrases such as "Call James at work" and "Call Anne on her cell phone", where the word "phone" is optional. <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects are used to construct the grammar. The example highlights the use of the <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> method.  
+ 
 ```csharp  
-  
+ 
 public static Grammar CreatePhonePhrase()  
 {  
-  // Create alternatives for person names, locations, devices, and pronouns.  
-  Choices personChoice = new Choices(new string[] {"Anne", "James", "Mary", "Sam"});  
-  Choices locationChoice = new Choices(new string[] {"home", "work"});  
-  Choices deviceChoice = new Choices(new string[] {"home", "work", "cell"});  
-  Choices pronounChoice = new Choices(new string[] {"his", "her"});  
-  
-  // Create a phrase for the receiving device, which optionally contains the word "phone".  
-  GrammarBuilder devicePhrase = new GrammarBuilder(pronounChoice);  
-  devicePhrase.Append(deviceChoice);  
-  devicePhrase.Append("phone", 0, 1);  
-  
-  // Create alternatives for phrases specifying a device or a location.  
-  GrammarBuilder atLocation = new GrammarBuilder("at");  
-  atLocation.Append(locationChoice);  
-  
-  GrammarBuilder onDevice = new GrammarBuilder("on");  
-  onDevice.Append(devicePhrase);  
-  
-  Choices howChoice = new Choices(new GrammarBuilder[] {atLocation, onDevice});  
-  
-  // Build the final phrase.  
-  GrammarBuilder callWho = new GrammarBuilder("Call");  
-  callWho.Append(personChoice);  
-  callWho.Append(howChoice);  
-  
-  // Create the Grammar object.  
-  Grammar callGrammar = new Grammar(callWho);  
-  callGrammar.Name = "Call Grammar";  
-  
-  return callGrammar;  
+ // Create alternatives for person names, locations, devices, and pronouns.  
+ Choices personChoice = new Choices(new string[] {"Anne", "James", "Mary", "Sam"});  
+ Choices locationChoice = new Choices(new string[] {"home", "work"});  
+ Choices deviceChoice = new Choices(new string[] {"home", "work", "cell"});  
+ Choices pronounChoice = new Choices(new string[] {"his", "her"});  
+ 
+ // Create a phrase for the receiving device, which optionally contains the word "phone".  
+ GrammarBuilder devicePhrase = new GrammarBuilder(pronounChoice);  
+ devicePhrase.Append(deviceChoice);  
+ devicePhrase.Append("phone", 0, 1);  
+ 
+ // Create alternatives for phrases specifying a device or a location.  
+ GrammarBuilder atLocation = new GrammarBuilder("at");  
+ atLocation.Append(locationChoice);  
+ 
+ GrammarBuilder onDevice = new GrammarBuilder("on");  
+ onDevice.Append(devicePhrase);  
+ 
+ Choices howChoice = new Choices(new GrammarBuilder[] {atLocation, onDevice});  
+ 
+ // Build the final phrase.  
+ GrammarBuilder callWho = new GrammarBuilder("Call");  
+ callWho.Append(personChoice);  
+ callWho.Append(howChoice);  
+ 
+ // Create the Grammar object.  
+ Grammar callGrammar = new Grammar(callWho);  
+ callGrammar.Name = "Call Grammar";  
+ 
+ return callGrammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1561,52 +1561,52 @@ public static Grammar CreatePhonePhrase()
         <summary>Appends a repeated phrase to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`.  
+The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for phrases such as "Call James at work" and "Call Anne on her cell phone", where the word "phone" is optional. <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects are used to construct the grammar. The example highlights the use of the <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> method.  
-  
+The following example creates a speech recognition grammar for phrases such as "Call James at work" and "Call Anne on her cell phone", where the word "phone" is optional. <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects are used to construct the grammar. The example highlights the use of the <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> method.  
+ 
 ```csharp  
-  
+ 
 public static Grammar CreatePhonePhrase()  
 {  
-  // Create alternatives for person names, locations, devices, and pronouns.  
-  Choices personChoice = new Choices(new string[] {"Anne", "James", "Mary", "Sam"});  
-  Choices locationChoice = new Choices(new string[] {"home", "work"});  
-  Choices deviceChoice = new Choices(new string[] {"home", "work", "cell"});  
-  Choices pronounChoice = new Choices(new string[] {"his", "her"});  
-  
-  // Create a phrase for the receiving device, which optionally contains the word "phone".  
-  GrammarBuilder devicePhrase = new GrammarBuilder(pronounChoice);  
-  devicePhrase.Append(deviceChoice);  
-  devicePhrase.Append("phone", 0, 1);  
-  
-  // Create alternatives for phrases specifying a device or a location.  
-  GrammarBuilder atLocation = new GrammarBuilder("at");  
-  atLocation.Append(locationChoice);  
-  
-  GrammarBuilder onDevice = new GrammarBuilder("on");  
-  onDevice.Append(devicePhrase);  
-  
-  Choices howChoice = new Choices(new GrammarBuilder[] {atLocation, onDevice});  
-  
-  // Build the final phrase.  
-  GrammarBuilder callWho = new GrammarBuilder("Call");  
-  callWho.Append(personChoice);  
-  callWho.Append(howChoice);  
-  
-  // Create the Grammar object.  
-  Grammar callGrammar = new Grammar(callWho);  
-  callGrammar.Name = "Call Grammar";  
-  
-  return callGrammar;  
+ // Create alternatives for person names, locations, devices, and pronouns.  
+ Choices personChoice = new Choices(new string[] {"Anne", "James", "Mary", "Sam"});  
+ Choices locationChoice = new Choices(new string[] {"home", "work"});  
+ Choices deviceChoice = new Choices(new string[] {"home", "work", "cell"});  
+ Choices pronounChoice = new Choices(new string[] {"his", "her"});  
+ 
+ // Create a phrase for the receiving device, which optionally contains the word "phone".  
+ GrammarBuilder devicePhrase = new GrammarBuilder(pronounChoice);  
+ devicePhrase.Append(deviceChoice);  
+ devicePhrase.Append("phone", 0, 1);  
+ 
+ // Create alternatives for phrases specifying a device or a location.  
+ GrammarBuilder atLocation = new GrammarBuilder("at");  
+ atLocation.Append(locationChoice);  
+ 
+ GrammarBuilder onDevice = new GrammarBuilder("on");  
+ onDevice.Append(devicePhrase);  
+ 
+ Choices howChoice = new Choices(new GrammarBuilder[] {atLocation, onDevice});  
+ 
+ // Build the final phrase.  
+ GrammarBuilder callWho = new GrammarBuilder("Call");  
+ callWho.Append(personChoice);  
+ callWho.Append(howChoice);  
+ 
+ // Create the Grammar object.  
+ Grammar callGrammar = new Grammar(callWho);  
+ callGrammar.Name = "Call Grammar";  
+ 
+ return callGrammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1628,17 +1628,17 @@ public static Grammar CreatePhonePhrase()
         <summary>Appends the default dictation grammar to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on dictation grammars, see <xref:System.Speech.Recognition.DictationGrammar>.  
+For more information on dictation grammars, see <xref:System.Speech.Recognition.DictationGrammar>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that incorporates dictation.  
-  
+The following example creates a speech recognition grammar that incorporates dictation.  
+ 
 ```csharp  
-  
+ 
 GrammarBuilder builder = new GrammarBuilder();  
 builder.Append("begin");  
 builder.AppendDictation();  
@@ -1646,7 +1646,7 @@ builder.Append("end");
 Grammar grammarWithDictation = new Grammar(builder);  
 grammarWithDictation.Name = "Grammar with Dictation";  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1671,19 +1671,19 @@ grammarWithDictation.Name = "Grammar with Dictation";
         <summary>Appends the specified dictation grammar to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use the spelling dictation grammar, set `category` to `spelling`.  
+To use the spelling dictation grammar, set `category` to `spelling`.  
+ 
+For more information on dictation grammars, see <xref:System.Speech.Recognition.DictationGrammar>.  
+ 
   
- For more information on dictation grammars, see <xref:System.Speech.Recognition.DictationGrammar>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that incorporates the spelling dictation grammar rules.  
-  
+The following example creates a speech recognition grammar that incorporates the spelling dictation grammar rules.  
+ 
 ```csharp  
-  
+ 
 GrammarBuilder builder = new GrammarBuilder();  
 builder.Append("begin");  
 builder.AppendDictation("spelling");  
@@ -1691,7 +1691,7 @@ builder.Append("end");
 Grammar grammarWithDictation = new Grammar(builder);  
 grammarWithDictation.Name = "Grammar with Dictation";  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1716,60 +1716,60 @@ grammarWithDictation.Name = "Grammar with Dictation";
         <summary>Appends a grammar definition file to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The URI provided by the `path` argument may be local or remote. The application must have read access to the location of specified grammar files.  
+The URI provided by the `path` argument may be local or remote. The application must have read access to the location of specified grammar files.  
+ 
+A W3C Speech Recognition Grammar Specification (SRGS) representation can define a root rule. This method appends the grammar, beginning with its root rule, to the current sequence of grammar elements. To append a specific grammar rule, use the <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A> method.  
+ 
   
- A W3C Speech Recognition Grammar Specification (SRGS) representation can define a root rule. This method appends the grammar, beginning with its root rule, to the current sequence of grammar elements. To append a specific grammar rule, use the <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following C# example creates a speech recognition grammar that uses the rule named `Cities` in a local SRGS file, cities.grxml. The content of the cities.grxml file appears below the C# code example.  
-  
+The following C# example creates a speech recognition grammar that uses the rule named `Cities` in a local SRGS file, cities.grxml. The content of the cities.grxml file appears below the C# code example.  
+ 
 ```csharp  
-  
+ 
 private static Grammar CreateCitiesGrammar1()  
 {  
-  GrammarBuilder builder = new GrammarBuilder();  
-  builder.AppendRuleReference("file://c:/temp/cities.grxml");  
-  
-  Grammar citiesGrammar = new Grammar(builder);  
-  citiesGrammar.Name = "Cities Grammar 1";  
-  return citiesGrammar;  
+ GrammarBuilder builder = new GrammarBuilder();  
+ builder.AppendRuleReference("file://c:/temp/cities.grxml");  
+ 
+ Grammar citiesGrammar = new Grammar(builder);  
+ citiesGrammar.Name = "Cities Grammar 1";  
+ return citiesGrammar;  
 }  
 ```  
-  
+ 
 ```xml  
-  
+ 
 <?xml version="1.0" encoding="UTF-16" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-         xmlns="http://www.w3.org/2001/06/grammar"  
-         tag-format="semantics/1.0" root="Main">  
-  
-  <!-- cities.grxml:   
-    Defines an SRGS grammar for requesting a flight. This grammar includes  
-    a Cities rule that lists the cities that can be used for departures  
-    and destinations. -->  
-  
-  <rule id="Main">  
-    <item>  
-      I would like to fly from <ruleref uri="#Cities"/>  
-      to <ruleref uri="#Cities"/>  
-    </item>  
-  </rule>  
-  
-  <rule id="Cities" scope="public">  
-    <one-of>  
-      <item> Seattle </item>  
-      <item> Los Angeles </item>  
-      <item> New York </item>  
-      <item> Miami </item>  
-    </one-of>  
-  </rule>  
+        xmlns="http://www.w3.org/2001/06/grammar"  
+        tag-format="semantics/1.0" root="Main">  
+ 
+ <!-- cities.grxml:   
+   Defines an SRGS grammar for requesting a flight. This grammar includes  
+   a Cities rule that lists the cities that can be used for departures  
+   and destinations. -->  
+ 
+ <rule id="Main">  
+   <item>  
+     I would like to fly from <ruleref uri="#Cities"/>  
+     to <ruleref uri="#Cities"/>  
+   </item>  
+ </rule>  
+ 
+ <rule id="Cities" scope="public">  
+   <one-of>  
+     <item> Seattle </item>  
+     <item> Los Angeles </item>  
+     <item> New York </item>  
+     <item> Miami </item>  
+   </one-of>  
+ </rule>  
 </grammar>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1796,62 +1796,62 @@ private static Grammar CreateCitiesGrammar1()
         <summary>Appends the specified rule of a grammar definition file to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The URI provided by the `path` argument may be local or remote. The application must have read access to the location of specified grammar files.  
+The URI provided by the `path` argument may be local or remote. The application must have read access to the location of specified grammar files.  
+ 
+You can use the use the <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A> method to append a grammar file beginning with its root rule.  
+ 
   
- You can use the use the <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A> method to append a grammar file beginning with its root rule.  
-  
-   
-  
+ 
 ## Examples  
- The following C# example creates a speech recognition grammar that uses the rule named `Cities` in a local SRGS file, cities.grxml. The content of the cities.grxml file appears below the C# code example.  
-  
+The following C# example creates a speech recognition grammar that uses the rule named `Cities` in a local SRGS file, cities.grxml. The content of the cities.grxml file appears below the C# code example.  
+ 
 ```csharp  
-  
+ 
 private static Grammar CreateCitiesGrammar2()  
 {  
-  GrammarBuilder builder = new GrammarBuilder();  
-  builder.Append("Does");  
-  builder.AppendRuleReference(@"c:\temp\cities.grxml", "Cities");  
-  builder.Append("have a shuttle");  
-  
-  Grammar citiesGrammar = new Grammar(builder);  
-  citiesGrammar.Name = "Cities Grammar 2";  
-  return citiesGrammar;  
+ GrammarBuilder builder = new GrammarBuilder();  
+ builder.Append("Does");  
+ builder.AppendRuleReference(@"c:\temp\cities.grxml", "Cities");  
+ builder.Append("have a shuttle");  
+ 
+ Grammar citiesGrammar = new Grammar(builder);  
+ citiesGrammar.Name = "Cities Grammar 2";  
+ return citiesGrammar;  
 }  
 ```  
-  
+ 
 ```xml  
-  
+ 
 <?xml version="1.0" encoding="UTF-8" ?>  
 <grammar version="1.0" xml:lang="en-US"  
-         xmlns="http://www.w3.org/2001/06/grammar"  
-         tag-format="semantics/1.0" root="Main">  
-  
-  <!-- cities.grxml:   
-    Defines an SRGS grammar for requesting a flight. This grammar includes  
-    a Cities rule that lists the cities that can be used for departures  
-    and destinations. -->  
-  
-  <rule id="Main">  
-    <item>  
-      I would like to fly from <ruleref uri="#Cities"/>  
-      to <ruleref uri="#Cities"/>  
-    </item>  
-  </rule>  
-  
-  <rule id="Cities" scope="public">  
-    <one-of>  
-      <item> Seattle </item>  
-      <item> Los Angeles </item>  
-      <item> New York </item>  
-      <item> Miami </item>  
-    </one-of>  
-  </rule>  
+        xmlns="http://www.w3.org/2001/06/grammar"  
+        tag-format="semantics/1.0" root="Main">  
+ 
+ <!-- cities.grxml:   
+   Defines an SRGS grammar for requesting a flight. This grammar includes  
+   a Cities rule that lists the cities that can be used for departures  
+   and destinations. -->  
+ 
+ <rule id="Main">  
+   <item>  
+     I would like to fly from <ruleref uri="#Cities"/>  
+     to <ruleref uri="#Cities"/>  
+   </item>  
+ </rule>  
+ 
+ <rule id="Cities" scope="public">  
+   <one-of>  
+     <item> Seattle </item>  
+     <item> Los Angeles </item>  
+     <item> New York </item>  
+     <item> Miami </item>  
+   </one-of>  
+ </rule>  
 </grammar>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1873,79 +1873,79 @@ private static Grammar CreateCitiesGrammar2()
         <summary>Appends a recognition grammar element that matches any input to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The wildcard element is added to the end of the current sequence of elements.  
+The wildcard element is added to the end of the current sequence of elements.  
+ 
+The wildcard element matches any spoken word. It does not match background noise or silence.  
+ 
   
- The wildcard element matches any spoken word. It does not match background noise or silence.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a grammar that accepts password input as a wildcard. The example attaches a <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=fullName> event handler to the grammar that validates the password input.  
-  
+The following example creates a grammar that accepts password input as a wildcard. The example attaches a <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=fullName> event handler to the grammar that validates the password input.  
+ 
 ```csharp  
 private Grammar CreatePasswordGrammar()  
 {  
-  GrammarBuilder wildcardBuilder = new GrammarBuilder();  
-  wildcardBuilder.AppendWildcard();  
-  SemanticResultKey passwordKey =  
-    new SemanticResultKey("Password", wildcardBuilder);  
-  
-  GrammarBuilder passwordBuilder =  
-    new GrammarBuilder("My Password is");  
-  passwordBuilder.Append(passwordKey);  
-  
-  Grammar passwordGrammar = new Grammar(passwordBuilder);  
-  passwordGrammar.Name = "Password input";  
-  
-  passwordGrammar.SpeechRecognized +=  
-    new EventHandler<SpeechRecognizedEventArgs>(  
-      PasswordInputHandler);  
-  
-  return passwordGrammar;  
+ GrammarBuilder wildcardBuilder = new GrammarBuilder();  
+ wildcardBuilder.AppendWildcard();  
+ SemanticResultKey passwordKey =  
+   new SemanticResultKey("Password", wildcardBuilder);  
+ 
+ GrammarBuilder passwordBuilder =  
+   new GrammarBuilder("My Password is");  
+ passwordBuilder.Append(passwordKey);  
+ 
+ Grammar passwordGrammar = new Grammar(passwordBuilder);  
+ passwordGrammar.Name = "Password input";  
+ 
+ passwordGrammar.SpeechRecognized +=  
+   new EventHandler<SpeechRecognizedEventArgs>(  
+     PasswordInputHandler);  
+ 
+ return passwordGrammar;  
 }  
-  
+ 
 // Handle the SpeechRecognized event for the password grammar.  
 private void PasswordInputHandler(object sender, SpeechRecognizedEventArgs e)  
 {  
-  if (e.Result == null) return;  
-  
-  RecognitionResult result = e.Result;  
-  SemanticValue semantics = e.Result.Semantics;  
-  
-  if (semantics.ContainsKey("Password"))  
-  {  
-    RecognizedAudio passwordAudio =  
-      result.GetAudioForWordRange(  
-        result.Words[3], result.Words[result.Words.Count - 1]);  
-  
-    if (IsValidPassword(passwordAudio))  
-    {  
-      Console.WriteLine("Password accepted.");  
-  
-      // Add code to handle a valid password here.  
-    }  
-    else  
-    {  
-      Console.WriteLine("Invalid password.");  
-  
-      // Add code to handle an invalid password here.  
-    }  
-  }  
+ if (e.Result == null) return;  
+ 
+ RecognitionResult result = e.Result;  
+ SemanticValue semantics = e.Result.Semantics;  
+ 
+ if (semantics.ContainsKey("Password"))  
+ {  
+   RecognizedAudio passwordAudio =  
+     result.GetAudioForWordRange(  
+       result.Words[3], result.Words[result.Words.Count - 1]);  
+ 
+   if (IsValidPassword(passwordAudio))  
+   {  
+     Console.WriteLine("Password accepted.");  
+ 
+     // Add code to handle a valid password here.  
+   }  
+   else  
+   {  
+     Console.WriteLine("Invalid password.");  
+ 
+     // Add code to handle an invalid password here.  
+   }  
+ }  
 }  
-  
+ 
 // Validate the password input.   
 private bool IsValidPassword(RecognizedAudio passwordAudio)  
 {  
-  Console.WriteLine("Validating password.");  
-  
-  // Add password validation code here.  
-  
-  return false;  
+ Console.WriteLine("Validating password.");  
+ 
+ // Add password validation code here.  
+ 
+ return false;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1967,63 +1967,63 @@ private bool IsValidPassword(RecognizedAudio passwordAudio)
         <value>The culture of the <see cref="T:System.Speech.Recognition.GrammarBuilder" />. The default is the executing thread's <see cref="P:System.Threading.Thread.CurrentUICulture" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.Grammar.%23ctor%2A> constructor creates a <xref:System.Speech.Recognition.Grammar> object that can be used by a speech recognizer of the corresponding culture. Only the <xref:System.Speech.Recognition.GrammarBuilder.Culture%2A> property of the <xref:System.Speech.Recognition.GrammarBuilder> that is provided as the parameter to the Grammar constructor is used to set the culture of the resulting speech recognition grammar.  
-  
- Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform speech recognition using the language specified in the `Culture` property, a speech recognition engine that supports that language-country code must be installed. The speech recognition engines that shipped with Microsoft Windows 7 work with the following language-country codes.  
-  
+The <xref:System.Speech.Recognition.Grammar.%23ctor%2A> constructor creates a <xref:System.Speech.Recognition.Grammar> object that can be used by a speech recognizer of the corresponding culture. Only the <xref:System.Speech.Recognition.GrammarBuilder.Culture%2A> property of the <xref:System.Speech.Recognition.GrammarBuilder> that is provided as the parameter to the Grammar constructor is used to set the culture of the resulting speech recognition grammar.  
+ 
+Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform speech recognition using the language specified in the `Culture` property, a speech recognition engine that supports that language-country code must be installed. The speech recognition engines that shipped with Microsoft Windows 7 work with the following language-country codes.  
+ 
 -   en-GB. English (United Kingdom)  
-  
+ 
 -   en-US. English (United States)  
-  
+ 
 -   de-DE. German (Germany)  
-  
+ 
 -   es-ES. Spanish (Spain)  
-  
+ 
 -   fr-FR. French (France)  
-  
+ 
 -   ja-JP. Japanese (Japan)  
-  
+ 
 -   zh-CN. Chinese (China)  
-  
+ 
 -   zh-TW. Chinese (Taiwan)  
+ 
+Two-letter language codes such as "en", "fr", or "es" are also permitted.  
+ 
   
- Two-letter language codes such as "en", "fr", or "es" are also permitted.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for ordering a pizza with up to four toppings. It specifically sets the <xref:System.Speech.Recognition.GrammarBuilder> object's culture to English (United States).  
-  
+The following example creates a speech recognition grammar for ordering a pizza with up to four toppings. It specifically sets the <xref:System.Speech.Recognition.GrammarBuilder> object's culture to English (United States).  
+ 
 ```csharp  
-  
+ 
 private static Grammar CreatePizzaGrammar()  
 {  
-  
-  // Create a Choices object with alternatives for toppings.  
-  Choices toppings = new Choices(new string[] {  
-    "cheese", "mushroom", "tomato", "onion",  
-    "anchovy", "chicken", "pepperoni"});  
-  
-  // Create a GrammarBuilder and append the Choices object.  
-  GrammarBuilder andToppings = new GrammarBuilder("and", 0, 1);  
-  andToppings.Append(toppings);  
-  
-  // Construct the phrase.  
-  GrammarBuilder gb = new GrammarBuilder("I would like a", 0, 1);  
-  gb.Append(toppings);  
-  gb.Append(new GrammarBuilder(andToppings, 0, 3));  
-  gb.Append("pizza");  
-  
-  // Create the Grammar from the GrammarBuilder.  
-  Grammar grammar = new Grammar(gb);  
-  grammar.Name = "Pizza Order";  
-  
-  return grammar;  
+ 
+ // Create a Choices object with alternatives for toppings.  
+ Choices toppings = new Choices(new string[] {  
+   "cheese", "mushroom", "tomato", "onion",  
+   "anchovy", "chicken", "pepperoni"});  
+ 
+ // Create a GrammarBuilder and append the Choices object.  
+ GrammarBuilder andToppings = new GrammarBuilder("and", 0, 1);  
+ andToppings.Append(toppings);  
+ 
+ // Construct the phrase.  
+ GrammarBuilder gb = new GrammarBuilder("I would like a", 0, 1);  
+ gb.Append(toppings);  
+ gb.Append(new GrammarBuilder(andToppings, 0, 3));  
+ gb.Append("pizza");  
+ 
+ // Create the Grammar from the GrammarBuilder.  
+ Grammar grammar = new Grammar(gb);  
+ grammar.Name = "Pizza Order";  
+ 
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2045,43 +2045,43 @@ private static Grammar CreatePizzaGrammar()
         <value>The current content and structure of the <see cref="T:System.Speech.Recognition.GrammarBuilder" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for ordering a pizza with up to four toppings. It writes the status of the <xref:System.Speech.Recognition.GrammarBuilder> to the console before creating the grammar. This method generates the following output:  
-  
+The following example creates a speech recognition grammar for ordering a pizza with up to four toppings. It writes the status of the <xref:System.Speech.Recognition.GrammarBuilder> to the console before creating the grammar. This method generates the following output:  
+ 
 -   `GrammarBuilder status: I would like a [cheese,mushroom,tomato,onion,anchovy,chic ken,pepperoni] and [cheese,mushroom,tomato,onion,anchovy,chicken,pepperoni] pizza`  
-  
+ 
 ```csharp  
-  
+ 
 private static Grammar CreatePizzaGrammar()  
 {  
-  
-  // Create a Choices object with alternatives for toppings.  
-  Choices toppings = new Choices(new string[] {  
-    "cheese", "mushroom", "tomato", "onion",  
-    "anchovy", "chicken", "pepperoni"});  
-  
-  // Create a GrammarBuilder and append the Choices object.  
-  GrammarBuilder andToppings = new GrammarBuilder("and", 0, 1);  
-  andToppings.Append(toppings);  
-  
-  // Construct the phrase.  
-  GrammarBuilder gb = new GrammarBuilder("I would like a", 0, 1);  
-  gb.Append(toppings);  
-  gb.Append(new GrammarBuilder(andToppings, 0, 3));  
-  gb.Append("pizza");  
-  
-  // Write the contents and structure of the GrammarBuilder to the console.  
-  Console.WriteLine("Grammar content and structure: {0}", gb.DebugShowPhrases);  
-  
-  // Create the Grammar from the GrammarBuilder.  
-  Grammar grammar = new Grammar(gb);  
-  grammar.Name = "Pizza Order";  
-  
-  return grammar;  
+ 
+ // Create a Choices object with alternatives for toppings.  
+ Choices toppings = new Choices(new string[] {  
+   "cheese", "mushroom", "tomato", "onion",  
+   "anchovy", "chicken", "pepperoni"});  
+ 
+ // Create a GrammarBuilder and append the Choices object.  
+ GrammarBuilder andToppings = new GrammarBuilder("and", 0, 1);  
+ andToppings.Append(toppings);  
+ 
+ // Construct the phrase.  
+ GrammarBuilder gb = new GrammarBuilder("I would like a", 0, 1);  
+ gb.Append(toppings);  
+ gb.Append(new GrammarBuilder(andToppings, 0, 3));  
+ gb.Append("pizza");  
+ 
+ // Write the contents and structure of the GrammarBuilder to the console.  
+ Console.WriteLine("Grammar content and structure: {0}", gb.DebugShowPhrases);  
+ 
+ // Create the Grammar from the GrammarBuilder.  
+ Grammar grammar = new Grammar(gb);  
+ grammar.Name = "Pizza Order";  
+ 
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2109,23 +2109,23 @@ private static Grammar CreatePizzaGrammar()
         <returns>Returns a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="choices" /> parameter followed by the <paramref name="builder" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes.  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes.  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
-  
- This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
-  
+ 
+This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
+ 
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
+ 
  The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.Choices%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -2153,53 +2153,53 @@ private static Grammar CreatePizzaGrammar()
         <returns>Returns a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="builder" /> parameter followed by the <paramref name="choices" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes:  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes:  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
-  
- This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
-  
+ 
+This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
+ 
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.Choices%29?displayProperty=fullName>  
-  
+ 
+The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.Choices%29?displayProperty=fullName>  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
-  
+The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] { "red", "green", "blue" });  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase =  
-    (GrammarBuilder)"Make background" + colorChoice;  
-  GrammarBuilder setPhrase =  
-    "Set background to" + (GrammarBuilder)colorChoice;  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the grammar from the result.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] { makePhrase, setPhrase });  
-  GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
-  
-  Grammar grammar = new Grammar(bothPhrases);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] { "red", "green", "blue" });  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase =  
+   (GrammarBuilder)"Make background" + colorChoice;  
+ GrammarBuilder setPhrase =  
+   "Set background to" + (GrammarBuilder)colorChoice;  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the grammar from the result.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] { makePhrase, setPhrase });  
+ GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
+ 
+ Grammar grammar = new Grammar(bothPhrases);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2227,23 +2227,23 @@ private Grammar CreateColorGrammar()
         <returns>Returns a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="builder1" /> parameter followed by the <paramref name="builder2" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes.  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes.  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
-  
- This method accepts the objects listed above for the `builder1` and `builder2` parameters. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
-  
+ 
+This method accepts the objects listed above for the `builder1` and `builder2` parameters. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
+ 
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
+ 
  The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -2271,20 +2271,20 @@ private Grammar CreateColorGrammar()
         <returns>Returns a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="builder" /> parameter followed by the <paramref name="phrase" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes.  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes.  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
-  
- This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
-  
+ 
+This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
+ 
  The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.String%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -2312,50 +2312,50 @@ private Grammar CreateColorGrammar()
         <returns>Returns a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> for the sequence of the <paramref name="phrase" /> parameter followed by the <paramref name="builder" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes.  
-  
+<xref:System.Speech.Recognition.GrammarBuilder> supports conversions from the following classes.  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
-  
- This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
-  
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.String%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>  
-  
+ 
+This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
+ 
+The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.String%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>  
+ 
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
-  
+The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
+ 
 ```csharp  
-  
+ 
 private Grammar CreateColorGrammar()  
 {  
-  
-  // Create a set of color choices.  
-  Choices colorChoice = new Choices(new string[] { "red", "green", "blue" });  
-  
-  // Create grammar builders for the two versions of the phrase.  
-  GrammarBuilder makePhrase =  
-    (GrammarBuilder)"Make background" + colorChoice;  
-  GrammarBuilder setPhrase =  
-    "Set background to" + (GrammarBuilder)colorChoice;  
-  
-  // Create a Choices for the two alternative phrases, convert the Choices  
-  // to a GrammarBuilder, and construct the Grammar object from the result.  
-  Choices bothChoices = new Choices(new GrammarBuilder[] { makePhrase, setPhrase });  
-  GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
-  
-  Grammar grammar = new Grammar(bothPhrases);  
-  grammar.Name = "backgroundColor";  
-  return grammar;  
+ 
+ // Create a set of color choices.  
+ Choices colorChoice = new Choices(new string[] { "red", "green", "blue" });  
+ 
+ // Create grammar builders for the two versions of the phrase.  
+ GrammarBuilder makePhrase =  
+   (GrammarBuilder)"Make background" + colorChoice;  
+ GrammarBuilder setPhrase =  
+   "Set background to" + (GrammarBuilder)colorChoice;  
+ 
+ // Create a Choices for the two alternative phrases, convert the Choices  
+ // to a GrammarBuilder, and construct the Grammar object from the result.  
+ Choices bothChoices = new Choices(new GrammarBuilder[] { makePhrase, setPhrase });  
+ GrammarBuilder bothPhrases = new GrammarBuilder(bothChoices);  
+ 
+ Grammar grammar = new Grammar(bothPhrases);  
+ grammar.Name = "backgroundColor";  
+ return grammar;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2457,20 +2457,20 @@ private Grammar CreateColorGrammar()
         <summary>Converts another type to a <see cref="T:System.Speech.Recognition.GrammarBuilder" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. You can cast each of the following classes to a <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
+Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. You can cast each of the following classes to a <xref:System.Speech.Recognition.GrammarBuilder>.  
+ 
 -   <xref:System.Speech.Recognition.Choices>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
+ 
 -   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
+ 
 -   <xref:System.String>  
-  
- Each of the implicit casts is equivalent to calling the constructor.  
-  
+ 
+Each of the implicit casts is equivalent to calling the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2484,17 +2484,17 @@ private Grammar CreateColorGrammar()
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class can also be obtained by implicit conversions from other classes or by combining a <xref:System.Speech.Recognition.GrammarBuilder> object with a second object to from a new <xref:System.Speech.Recognition.GrammarBuilder>. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> methods.  
-  
- To add constraints to an existing <xref:System.Speech.Recognition.GrammarBuilder>, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods, and the <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operator.  
-  
+Instances of this class can also be obtained by implicit conversions from other classes or by combining a <xref:System.Speech.Recognition.GrammarBuilder> object with a second object to from a new <xref:System.Speech.Recognition.GrammarBuilder>. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> methods.  
+ 
+To add constraints to an existing <xref:System.Speech.Recognition.GrammarBuilder>, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods, and the <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operator.  
+ 
 > [!IMPORTANT]
 >  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
-  
+ 
+For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2508,17 +2508,17 @@ private Grammar CreateColorGrammar()
         <summary>Appends a grammar element to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use these methods to append grammar elements to an existing <xref:System.Speech.Recognition.GrammarBuilder>. As you create grammar elements, you can append them to the existing builder to progressively develop the constraints for a speech recognition grammar. Each element is added to the end of the current sequence of elements.  
-  
- This method has overloads for appending <xref:System.Speech.Recognition.GrammarBuilder>, <xref:System.String>, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, and <xref:System.Speech.Recognition.SemanticResultValue> objects.  
-  
+Use these methods to append grammar elements to an existing <xref:System.Speech.Recognition.GrammarBuilder>. As you create grammar elements, you can append them to the existing builder to progressively develop the constraints for a speech recognition grammar. Each element is added to the end of the current sequence of elements.  
+ 
+This method has overloads for appending <xref:System.Speech.Recognition.GrammarBuilder>, <xref:System.String>, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, and <xref:System.Speech.Recognition.SemanticResultValue> objects.  
+ 
 > [!IMPORTANT]
 >  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
-  
+ 
+For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2532,17 +2532,17 @@ private Grammar CreateColorGrammar()
         <summary>Creates a new <see cref="T:System.Speech.Recognition.GrammarBuilder" /> that contains a sequence of two grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The static <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods provide another mechanism by which you can combine various types to create diversity and flexibility in grammars built with <xref:System.Speech.Recognition.GrammarBuilder>. These methods correspond to the static <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> methods, which are also defined on the <xref:System.Speech.Recognition.GrammarBuilder> class. The order of the parameters determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
- A <xref:System.Speech.Recognition.GrammarBuilder> can also be obtained from <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and [String](http://go.microsoft.com/fwlink/?LinkId=159733) objects. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
-  
+The static <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods provide another mechanism by which you can combine various types to create diversity and flexibility in grammars built with <xref:System.Speech.Recognition.GrammarBuilder>. These methods correspond to the static <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> methods, which are also defined on the <xref:System.Speech.Recognition.GrammarBuilder> class. The order of the parameters determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
+ 
+A <xref:System.Speech.Recognition.GrammarBuilder> can also be obtained from <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and [String](http://go.microsoft.com/fwlink/?LinkId=159733) objects. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
+ 
 > [!IMPORTANT]
 >  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
-  
+ 
+For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2556,15 +2556,15 @@ private Grammar CreateColorGrammar()
         <summary>Creates a new <see cref="T:System.Speech.Recognition.GrammarBuilder" /> that corresponds to a sequence of two grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order of the operands determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
+The order of the operands determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
+ 
 > [!IMPORTANT]
 >  Caution is recommended when combining <xref:System.Speech.Recognition.Choices> or <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements. The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
-  
+ 
+For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2578,12 +2578,12 @@ private Grammar CreateColorGrammar()
         <summary>Appends a dictation grammar to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A> methods allow you to append a dictation grammar as a rule to a <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
- For more information on dictation grammars, see <xref:System.Speech.Recognition.DictationGrammar>.  
-  
+The <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A> methods allow you to append a dictation grammar as a rule to a <xref:System.Speech.Recognition.GrammarBuilder>.  
+ 
+For more information on dictation grammars, see <xref:System.Speech.Recognition.DictationGrammar>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2597,18 +2597,18 @@ private Grammar CreateColorGrammar()
         <summary>Appends a grammar file or a grammar rule to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A> methods can append a grammar file or a grammar rule from a file. These methods allow applications to make use of pre-deployed or publicly available grammar rules. The application must have read access to the location of specified grammar files.  
-  
- These methods can read a speech recognition grammar from the following formats.  
-  
+The <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A> methods can append a grammar file or a grammar rule from a file. These methods allow applications to make use of pre-deployed or publicly available grammar rules. The application must have read access to the location of specified grammar files.  
+ 
+These methods can read a speech recognition grammar from the following formats.  
+ 
 -   XML-format files that conform to the W3C [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761)  
-  
+ 
 -   Binary files that conform to the Microsoft Speech Recognition Grammar Binary Format (.cfg file extension)  
-  
- Compiling an XML-format SRGS grammar file to a binary grammar file with the .cfg extension can reduce the time consumed by searches for a match, especially if the grammar requires recognition of a large number of words and phrases. For information about compiling SRGS grammars to the CFG binary format, see <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler>.  
-  
+ 
+Compiling an XML-format SRGS grammar file to a binary grammar file with the .cfg extension can reduce the time consumed by searches for a match, especially if the grammar requires recognition of a large number of words and phrases. For information about compiling SRGS grammars to the CFG binary format, see <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

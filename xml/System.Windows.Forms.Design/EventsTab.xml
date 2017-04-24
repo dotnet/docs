@@ -14,13 +14,13 @@
     <summary>Provides a <see cref="T:System.Windows.Forms.Design.PropertyTab" /> that can display events for selection and linking.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example provides an example <xref:System.Windows.Forms.Design.EventsTab>. When selected, the <xref:System.Windows.Forms.Design.EventsTab> lists any events on a component in order of delegate type.  
-  
- [!code-cpp[EventsTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/EventsTabExample/CPP/class1.cpp#1)]
- [!code-csharp[EventsTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/EventsTabExample/CS/class1.cs#1)]  
-  
+The following code example provides an example <xref:System.Windows.Forms.Design.EventsTab>. When selected, the <xref:System.Windows.Forms.Design.EventsTab> lists any events on a component in order of delegate type.  
+ 
+[!code-cpp[EventsTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/EventsTabExample/CPP/class1.cpp#1)]
+[!code-csharp[EventsTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/EventsTabExample/CS/class1.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -111,10 +111,10 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties. This will be an empty <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> if the component does not implement an event service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event tab properties are determined from the event properties returned from a component's event service.  
-  
+The event tab properties are determined from the event properties returned from a component's event service.  
+ 
  ]]></format>
         </remarks>
       </Docs>

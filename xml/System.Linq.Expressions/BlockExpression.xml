@@ -30,18 +30,18 @@
     <summary>Represents a block that contains a sequence of expressions where variables can be defined.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.Expressions.Expression.Block%2A> methods can be used to create a <xref:System.Linq.Expressions.BlockExpression>.  
+The <xref:System.Linq.Expressions.Expression.Block%2A> methods can be used to create a <xref:System.Linq.Expressions.BlockExpression>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to create a block expression. The block expression consists of two <xref:System.Linq.Expressions.MethodCallExpression> objects and one <xref:System.Linq.Expressions.ConstantExpression> object.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#13)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#13)]  
-  
+The following code example shows how to create a block expression. The block expression consists of two <xref:System.Linq.Expressions.MethodCallExpression> objects and one <xref:System.Linq.Expressions.ConstantExpression> object.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#13)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#13)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <returns>The result of visiting this node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
-  
+This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

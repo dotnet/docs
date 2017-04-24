@@ -20,10 +20,10 @@
     <summary>An <see langword="interface" /> that defines the contract that an Xml dictionary must implement to be used by <see cref="T:System.Xml.XmlDictionaryReader" /> and <see cref="T:System.Xml.XmlDictionaryWriter" /> implementations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This `interface` is implemented by <xref:System.Xml.XmlDictionary>, which is used in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to optimize the performance of serialization and deserialization of XML messages. Implement this interface to provide custom <xref:System.Xml.XmlDictionaryString> management.  
-  
+This `interface` is implemented by <xref:System.Xml.XmlDictionary>, which is used in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to optimize the performance of serialization and deserialization of XML messages. Implement this interface to provide custom <xref:System.Xml.XmlDictionaryString> management.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -139,10 +139,10 @@
         <summary>Attempts to look up an entry in the dictionary.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method avoids throwing an exception if the entry is not currently in the dictionary.  
-  
+This method avoids throwing an exception if the entry is not currently in the dictionary.  
+ 
  ]]></format>
         </remarks>
       </Docs>

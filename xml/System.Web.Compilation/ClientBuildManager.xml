@@ -18,12 +18,12 @@
     <summary>Provides compilation services for ASP.NET applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.ClientBuildManager> class offers methods and properties for compiling ASP.NET Web applications, and retrieving the generated assemblies or generated source code. Instances of the class are established in the client's application domain and provide access to the ASP.NET build system outside of Microsoft Internet Information Services (IIS). The class can be used to develop customized tools for compiling Web applications.  
-  
- The command-line tool `aspnet_compiler` uses the <xref:System.Web.Compilation.ClientBuildManager> class.  
-  
+The <xref:System.Web.Compilation.ClientBuildManager> class offers methods and properties for compiling ASP.NET Web applications, and retrieving the generated assemblies or generated source code. Instances of the class are established in the client's application domain and provide access to the ASP.NET build system outside of Microsoft Internet Information Services (IIS). The class can be used to develop customized tools for compiling Web applications.  
+ 
+The command-line tool `aspnet_compiler` uses the <xref:System.Web.Compilation.ClientBuildManager> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,10 +69,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class with the specified target directory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This form of the constructor is typically used with precompilation, as it specifies a precompilation target directory.  
-  
+This form of the constructor is typically used with precompilation, as it specifies a precompilation target directory.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,10 +100,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class with the specified target directory and compilation parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This form of the constructor is typically used with precompilation, as it specifies a precompilation target directory and precompilation flags.  
-  
+This form of the constructor is typically used with precompilation, as it specifies a precompilation target directory and precompilation flags.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <value>A <see cref="T:System.String" /> containing the directory path used for code generation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The directory for code generation is typically in the temporary ASP.NET files directory.  
-  
+The directory for code generation is typically in the temporary ASP.NET files directory.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,10 +227,10 @@
         <summary>Compiles application-dependent files, such as files in the App_Code directory, the Global.asax file, resource files, and Web references.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.ClientBuildManager.CompileApplicationDependencies%2A> method ensures that resources, Web references, files in the App_Code directory, .browser files in the App_Browsers directory, and the Global.asax file are compiled.  
-  
+The <xref:System.Web.Compilation.ClientBuildManager.CompileApplicationDependencies%2A> method ensures that resources, Web references, files in the App_Code directory, .browser files in the App_Browsers directory, and the Global.asax file are compiled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,10 +364,10 @@
         <returns>A <see cref="T:System.CodeDom.CodeCompileUnit" /> for the given file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit%2A> method retrieves information needed to compile a file. In addition to a <xref:System.CodeDom.CodeCompileUnit> object as a return value, it returns three `out` parameters. The `codeDomProviderType` parameter returns the provider type for generating and compiling the file. The `compilerParameters` parameter contains properties that determine compilation behavior. The `linePragmasTable` parameter contains a dictionary of line pragmas.  
-  
+The <xref:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit%2A> method retrieves information needed to compile a file. In addition to a <xref:System.CodeDom.CodeCompileUnit> object as a return value, it returns three `out` parameters. The `codeDomProviderType` parameter returns the provider type for generating and compiling the file. The `compilerParameters` parameter contains properties that determine compilation behavior. The `linePragmasTable` parameter contains a dictionary of line pragmas.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,10 +401,10 @@
         <returns>A <see cref="T:System.CodeDom.CodeCompileUnit" /> for the given file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit%2A> method retrieves information needed to compile a file. In addition to a <xref:System.CodeDom.CodeCompileUnit> object as a return value, it returns three `out` parameters. The `codeDomProviderType` parameter returns the provider type for generating and compiling the file. The `compilerParameters` parameter contains properties that determine compilation behavior. The `linePragmasTable` parameter contains a dictionary of line pragmas.  
-  
+The <xref:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit%2A> method retrieves information needed to compile a file. In addition to a <xref:System.CodeDom.CodeCompileUnit> object as a return value, it returns three `out` parameters. The `codeDomProviderType` parameter returns the provider type for generating and compiling the file. The `compilerParameters` parameter contains properties that determine compilation behavior. The `linePragmasTable` parameter contains a dictionary of line pragmas.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -429,10 +429,10 @@
         <returns>A <see cref="T:System.String" /> array containing the top-level directory names.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Changes to files in specific top-level directories cause the application domain to shut down. Files within the Bin, App_Code, Global_Resources, Web References, and App_Browsers directories are monitored to detect any changes. When changes are detected, the application domain is shut down.  
-  
+Changes to files in specific top-level directories cause the application domain to shut down. Files within the Bin, App_Code, Global_Resources, Web References, and App_Browsers directories are monitored to detect any changes. When changes are detected, the application domain is shut down.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,10 +455,10 @@
         <returns>An <see cref="T:System.Collections.IDictionary" /> containing browser elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.IDictionary> object contains browser names for the keys and <xref:System.Web.UI.Triplet> objects for the values. The <xref:System.Web.UI.Triplet> objects each contain the name of the parent browser element, a description, and the depth of the browser element in the tree.  
-  
+The <xref:System.Collections.IDictionary> object contains browser names for the keys and <xref:System.Web.UI.Triplet> objects for the values. The <xref:System.Web.UI.Triplet> objects each contain the name of the parent browser element, a description, and the depth of the browser element in the tree.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,10 +489,10 @@
         <summary>Gets information about the compiler type, compiler parameters, and the directory in which to store code files generated from non-code files such as .wsdl files.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.ClientBuildManager.GetCodeDirectoryInformation%2A> method retrieves information needed to build a code directory. It returns this information through three `out` parameters. The `codeDomProviderType` parameter returns the provider type for generating and compiling the files in the code directory. The `compilerParameters` parameter contains properties that determine compilation behavior. The `generatedFilesDir` parameter stores the directory path containing all the code files generated from non-code files in the code directory, such as .wsdl files.  
-  
+The <xref:System.Web.Compilation.ClientBuildManager.GetCodeDirectoryInformation%2A> method retrieves information needed to build a code directory. It returns this information through three `out` parameters. The `codeDomProviderType` parameter returns the provider type for generating and compiling the files in the code directory. The `compilerParameters` parameter contains properties that determine compilation behavior. The `generatedFilesDir` parameter stores the directory path containing all the code files generated from non-code files in the code directory, such as .wsdl files.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -659,10 +659,10 @@
         <returns>Always <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method in its base class. It always returns `null` and thereby prevents a lease from being created that would limit the application domain's lifetime.  
-  
+This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method in its base class. It always returns `null` and thereby prevents a lease from being created that would limit the application domain's lifetime.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -728,16 +728,16 @@
         <summary>Precompiles an ASP.NET application.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled.  
-  
- The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
-  
- The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
-  
- A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
-  
+ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled.  
+ 
+The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
+ 
+The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
+ 
+A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -762,16 +762,16 @@
         <summary>Precompiles an ASP.NET application and provides a callback method to receive status information about the build.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled. The `callback` parameter contains the method to call when reporting the result of compilation.  
-  
- The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
-  
- The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
-  
- A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
-  
+ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled. The `callback` parameter contains the method to call when reporting the result of compilation.  
+ 
+The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
+ 
+The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
+ 
+A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -799,16 +799,16 @@
         <summary>Precompiles an ASP.NET application, provides a callback method to receive status information about the build, and indicates whether to create a clean build.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled. The `callback` parameter contains the method to call when reporting the result of compilation.  
-  
- The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
-  
- The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
-  
- A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
-  
+ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled. The `callback` parameter contains the method to call when reporting the result of compilation.  
+ 
+The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
+ 
+The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
+ 
+A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -860,16 +860,16 @@
         <summary>Precompiles an ASP.NET application.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled.  
-  
- The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
-  
- The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
-  
- A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
-  
+ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled.  
+ 
+The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
+ 
+The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
+ 
+A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

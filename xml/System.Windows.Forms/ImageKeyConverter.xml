@@ -14,13 +14,13 @@
     <summary>Provides a type converter to convert data for an image key to and from another data type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ImageKeyConverter> class is used to convert key values of an <xref:System.Windows.Forms.ImageList> to and from other data types. For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
+The <xref:System.Windows.Forms.ImageKeyConverter> class is used to convert key values of an <xref:System.Windows.Forms.ImageList> to and from other data types. For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
 > [!NOTE]
 >  Typically, you do not directly create an instance of an <xref:System.Windows.Forms.ImageKeyConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -144,10 +144,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that contains the standard set of image key values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no image list is found, and the <xref:System.Windows.Forms.ImageKeyConverter> supports `null` as a standard value, the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValues%2A> method returns a collection containing a single empty string. If no image list is found, and `null` is not supported as a standard value, <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValues%2A> returns an empty collection.  
-  
+If no image list is found, and the <xref:System.Windows.Forms.ImageKeyConverter> supports `null` as a standard value, the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValues%2A> method returns a collection containing a single empty string. If no image list is found, and `null` is not supported as a standard value, <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValues%2A> returns an empty collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,14 +174,14 @@
           <see langword="true" /> to indicate the list does not allow additional values; otherwise, <see langword="false" />. Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the list returned by the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValues%2A> method is exclusive, no other values are valid. This is typical of an enumerated data type. If the list is not exclusive, there are other valid values besides the list of standard values that <xref:System.Windows.Forms.ImageIndexConverter.GetStandardValues%2A> provides.  
-  
- As implemented in this type converter, this method always returns `true`.  
-  
- Typically, you should call the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValuesSupported%2A> method before you attempt to use the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValues%2A> and <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValuesExclusive%2A> methods.  
-  
+If the list returned by the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValues%2A> method is exclusive, no other values are valid. This is typical of an enumerated data type. If the list is not exclusive, there are other valid values besides the list of standard values that <xref:System.Windows.Forms.ImageIndexConverter.GetStandardValues%2A> provides.  
+ 
+As implemented in this type converter, this method always returns `true`.  
+ 
+Typically, you should call the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValuesSupported%2A> method before you attempt to use the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValues%2A> and <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValuesExclusive%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
           <see langword="true" /> to indicate a list of standard values is supported; otherwise, <see langword="false" />. Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As implemented in the <xref:System.Windows.Forms.ImageKeyConverter> class, the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValuesSupported%2A> method always returns `true` since <xref:System.Windows.Forms.ImageKeyConverter> supports a standard set of index values for images that can be picked from a list.  
-  
+As implemented in the <xref:System.Windows.Forms.ImageKeyConverter> class, the <xref:System.Windows.Forms.ImageKeyConverter.GetStandardValuesSupported%2A> method always returns `true` since <xref:System.Windows.Forms.ImageKeyConverter> supports a standard set of index values for images that can be picked from a list.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -22,21 +22,21 @@
     <summary>Represents a standard Windows vertical scroll bar.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Most controls that need scroll bars already provide them and do not require this control. This is true of a multiline <xref:System.Windows.Forms.TextBox> control, a <xref:System.Windows.Forms.ListBox>, and a <xref:System.Windows.Forms.ComboBox>, for example.  
+Most controls that need scroll bars already provide them and do not require this control. This is true of a multiline <xref:System.Windows.Forms.TextBox> control, a <xref:System.Windows.Forms.ListBox>, and a <xref:System.Windows.Forms.ComboBox>, for example.  
+ 
+You can use this control to implement scrolling in containers that do not provide their own scroll bars such as a <xref:System.Windows.Forms.PictureBox> or for user input of numeric data. The numeric data can be displayed in a control or used in code. The <xref:System.Windows.Forms.ScrollBar.Minimum%2A> and <xref:System.Windows.Forms.ScrollBar.Maximum%2A> properties determine the range of values the user can select. The <xref:System.Windows.Forms.ScrollBar.LargeChange%2A> property determines the effect of clicking within the scroll bar but outside the scroll box. The <xref:System.Windows.Forms.ScrollBar.SmallChange%2A> property determines the effect of clicking the scroll arrows at each end of the control.  
+ 
   
- You can use this control to implement scrolling in containers that do not provide their own scroll bars such as a <xref:System.Windows.Forms.PictureBox> or for user input of numeric data. The numeric data can be displayed in a control or used in code. The <xref:System.Windows.Forms.ScrollBar.Minimum%2A> and <xref:System.Windows.Forms.ScrollBar.Maximum%2A> properties determine the range of values the user can select. The <xref:System.Windows.Forms.ScrollBar.LargeChange%2A> property determines the effect of clicking within the scroll bar but outside the scroll box. The <xref:System.Windows.Forms.ScrollBar.SmallChange%2A> property determines the effect of clicking the scroll arrows at each end of the control.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates and initializes a <xref:System.Windows.Forms.VScrollBar> and adds it to a <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[Classic VScrollBar Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic VScrollBar Example/CPP/source.cpp#1)]
- [!code-csharp[Classic VScrollBar Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic VScrollBar Example/CS/source.cs#1)]
- [!code-vb[Classic VScrollBar Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic VScrollBar Example/VB/source.vb#1)]  
-  
+The following example creates and initializes a <xref:System.Windows.Forms.VScrollBar> and adds it to a <xref:System.Windows.Forms.Form>.  
+ 
+[!code-cpp[Classic VScrollBar Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic VScrollBar Example/CPP/source.cpp#1)]
+[!code-csharp[Classic VScrollBar Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic VScrollBar Example/CS/source.cs#1)]
+[!code-vb[Classic VScrollBar Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic VScrollBar Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -117,10 +117,10 @@
         <value>The <see cref="F:System.Windows.Forms.RightToLeft.No" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.VScrollBar.RightToLeft%2A> property of the <xref:System.Windows.Forms.VScrollBar> control cannot be set.  
-  
+The <xref:System.Windows.Forms.VScrollBar.RightToLeft%2A> property of the <xref:System.Windows.Forms.VScrollBar> control cannot be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.VScrollBar.RightToLeft" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.VScrollBar.RightToLeft%2A> property of the <xref:System.Windows.Forms.VScrollBar> control cannot be set, so the <xref:System.Windows.Forms.VScrollBar> never raises the <xref:System.Windows.Forms.VScrollBar.RightToLeftChanged> event.  
-  
+The <xref:System.Windows.Forms.VScrollBar.RightToLeft%2A> property of the <xref:System.Windows.Forms.VScrollBar> control cannot be set, so the <xref:System.Windows.Forms.VScrollBar> never raises the <xref:System.Windows.Forms.VScrollBar.RightToLeftChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

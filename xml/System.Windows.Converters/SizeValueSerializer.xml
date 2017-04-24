@@ -14,10 +14,10 @@
     <summary>Converts instances of <see cref="T:System.String" /> to and from instances of <see cref="T:System.Windows.Size" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is typically only utilized by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
-  
+This class is typically only utilized by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+ 
 <a name="xamlTextUsage_Int32RectValueSerializer"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -111,10 +111,10 @@
         <returns>A new instance of <see cref="T:System.Windows.Size" /> based on the supplied <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The implementation uses <xref:System.Windows.Size.Parse%2A?displayProperty=fullName> internally.  
-  
+The implementation uses <xref:System.Windows.Size.Parse%2A?displayProperty=fullName> internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>

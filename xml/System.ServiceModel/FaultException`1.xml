@@ -19,35 +19,35 @@
     <summary>Used in a client application to catch contractually-specified SOAP faults.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Catch the <xref:System.ServiceModel.FaultException%601> object in a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client application to handle a SOAP fault that has been contractually specified in an operation contract.  
-  
- Typical deployed services use the <xref:System.ServiceModel.FaultContractAttribute> to formally specify all SOAP faults that a client can expect to receive in the normal course of an operation. Error information in a <xref:System.ServiceModel.FaultContractAttribute> appears as a <xref:System.ServiceModel.FaultException%601> (where the typeparameter is the serializable error object specified in the operation's <xref:System.ServiceModel.FaultContractAttribute>) when it arrives at a client application. The <xref:System.ServiceModel.FaultContractAttribute> can be used to specify SOAP faults for both two-way service methods and for asynchronous method pairs.  
-  
- Because <xref:System.ServiceModel.FaultException%601> is both a <xref:System.ServiceModel.FaultException> and therefore a <xref:System.ServiceModel.CommunicationException>, to catch specified SOAP faults make sure you catch the <xref:System.ServiceModel.FaultException%601> types prior to the <xref:System.ServiceModel.FaultException> and <xref:System.ServiceModel.CommunicationException> types or handle the specified exceptions in one of those exception handlers.  
-  
+Catch the <xref:System.ServiceModel.FaultException%601> object in a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client application to handle a SOAP fault that has been contractually specified in an operation contract.  
+ 
+Typical deployed services use the <xref:System.ServiceModel.FaultContractAttribute> to formally specify all SOAP faults that a client can expect to receive in the normal course of an operation. Error information in a <xref:System.ServiceModel.FaultContractAttribute> appears as a <xref:System.ServiceModel.FaultException%601> (where the typeparameter is the serializable error object specified in the operation's <xref:System.ServiceModel.FaultContractAttribute>) when it arrives at a client application. The <xref:System.ServiceModel.FaultContractAttribute> can be used to specify SOAP faults for both two-way service methods and for asynchronous method pairs.  
+ 
+Because <xref:System.ServiceModel.FaultException%601> is both a <xref:System.ServiceModel.FaultException> and therefore a <xref:System.ServiceModel.CommunicationException>, to catch specified SOAP faults make sure you catch the <xref:System.ServiceModel.FaultException%601> types prior to the <xref:System.ServiceModel.FaultException> and <xref:System.ServiceModel.CommunicationException> types or handle the specified exceptions in one of those exception handlers.  
+ 
 > [!NOTE]
 >  If you use <xref:System.ServiceModel.FaultContractAttribute?displayProperty=fullName> to specify a <xref:System.ServiceModel.FaultException%601> where the type parameter is a <xref:System.String?displayProperty=fullName>, the string value is assigned to the <xref:System.ServiceModel.FaultException%601.Detail%2A> property in the client application; clients cannot retrieve that string by calling the <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=fullName> method. To have the string value returned when the client application calls <xref:System.Exception.ToString%2A?displayProperty=fullName>, throw a <xref:System.ServiceModel.FaultException?displayProperty=fullName> exception inside the operation and pass the string to the constructor.   
 > In general, it is recommended that detail types be custom serializable types appropriate to the fault and not a <xref:System.String?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how a service uses the <xref:System.ServiceModel.FaultException%601> type to throw a managed exception that gets converted into the SOAP fault specified by the <xref:System.ServiceModel.FaultContractAttribute>.  
-  
- [!code-csharp[FaultContractAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/services.cs#1)]
- [!code-vb[FaultContractAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/services.vb#1)]  
-  
- The following code example shows how the client code looks when imported by the client using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
-  
-  
-  
- The following code example shows how a client can catch the <xref:System.ServiceModel.FaultException%601> type that represents the custom SOAP fault specified in the operation contract.  
-  
- [!code-csharp[FaultContractAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/client.cs#3)]
- [!code-vb[FaultContractAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/client.vb#3)]  
-  
+The following code example shows how a service uses the <xref:System.ServiceModel.FaultException%601> type to throw a managed exception that gets converted into the SOAP fault specified by the <xref:System.ServiceModel.FaultContractAttribute>.  
+ 
+[!code-csharp[FaultContractAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/services.cs#1)]
+[!code-vb[FaultContractAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/services.vb#1)]  
+ 
+The following code example shows how the client code looks when imported by the client using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
+ 
+ 
+ 
+The following code example shows how a client can catch the <xref:System.ServiceModel.FaultException%601> type that represents the custom SOAP fault specified in the operation contract.  
+ 
+[!code-csharp[FaultContractAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/client.cs#3)]
+[!code-vb[FaultContractAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/client.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,18 +70,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException`1" /> class that uses the specified detail object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The detail object must be serializable or an exception is thrown when the <xref:System.ServiceModel.FaultException%601> is serialized.  
+The detail object must be serializable or an exception is thrown when the <xref:System.ServiceModel.FaultException%601> is serialized.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how a service uses the <xref:System.ServiceModel.FaultException%601> type to throw a managed exception that gets converted into the SOAP fault specified by the <xref:System.ServiceModel.FaultContractAttribute>.  
-  
- [!code-csharp[FaultContractAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/services.cs#1)]
- [!code-vb[FaultContractAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/services.vb#1)]  
-  
+The following code example shows how a service uses the <xref:System.ServiceModel.FaultException%601> type to throw a managed exception that gets converted into the SOAP fault specified by the <xref:System.ServiceModel.FaultContractAttribute>.  
+ 
+[!code-csharp[FaultContractAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/services.cs#1)]
+[!code-vb[FaultContractAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/services.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

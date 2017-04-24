@@ -171,10 +171,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Web.UI.Design.WebControls.RepeaterDesigner" /> object and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the disposing parameter is `true`, the `Dispose` method releases all the resources held by the managed objects that this <xref:System.Web.UI.Design.WebControls.RepeaterDesigner> object references.  
-  
+When the disposing parameter is `true`, the `Dispose` method releases all the resources held by the managed objects that this <xref:System.Web.UI.Design.WebControls.RepeaterDesigner> object references.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -200,10 +200,10 @@
         <summary>Called by a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] after a user selects a data source at design time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is available for derived classes that require additional processing after a user selects a data source at design time.  
-  
+This method is available for derived classes that require additional processing after a user selects a data source at design time.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -338,10 +338,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerable" /> that contains a collection of values used to supply design-time data. The default value is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetResolvedSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetSelectedDataSource%2A> method to construct a data source from the object that is specified by the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataSource%2A> and <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataMember%2A> properties.  
-  
+The <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetResolvedSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetSelectedDataSource%2A> method to construct a data source from the object that is specified by the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataSource%2A> and <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataMember%2A> properties.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -365,10 +365,10 @@
         <returns>The selected data source; <see langword="null" /> if a data source is not found or if a data source with the selected name does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=fullName> method to construct a data source from the object that is specified by the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataSource%2A> property.  
-  
+The <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=fullName> method to construct a data source from the object that is specified by the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataSource%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

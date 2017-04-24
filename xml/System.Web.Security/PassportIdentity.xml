@@ -26,18 +26,18 @@
     <summary>Provides a class to be used by <see cref="T:System.Web.Security.PassportAuthenticationModule" />. It provides a way for an application to access the <see cref="M:System.Web.Security.PassportIdentity.Ticket(System.String)" /> method. This class cannot be inherited. This class is deprecated.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
 <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#3)]  -->
 <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#3)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Security.PassportIdentity" /> class. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <value>The string "Passport".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,16 +107,16 @@
         <returns>The Login server URL for a member, as well as optional information sent to the Login server in the query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.AuthUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.AuthUrl/CS/passportidentity_authurl.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.AuthUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.AuthUrl/VB/passportidentity_authurl.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.AuthUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.AuthUrl/CS/passportidentity_authurl.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.AuthUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.AuthUrl/VB/passportidentity_authurl.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
         <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,10 +228,10 @@
         <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,16 +254,16 @@
         <returns>The Login server URL for a member, as well as optional information sent to the Login server in the query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.AuthUrl2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.AuthUrl2/CS/passportidentity_authurl2.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.AuthUrl2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.AuthUrl2/VB/passportidentity_authurl2.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.AuthUrl2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.AuthUrl2/CS/passportidentity_authurl2.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.AuthUrl2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.AuthUrl2/VB/passportidentity_authurl2.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,10 +289,10 @@
         <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,10 +332,10 @@
         <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,10 +375,10 @@
         <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -404,10 +404,10 @@
         <returns>The compressed data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -431,10 +431,10 @@
           <see langword="true" /> if the key used for encryption and decryption is valid and if the Passport Manager is in a valid state for encryption; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@
         <returns>An integer result code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,10 +489,10 @@
         <returns>An integer result code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -518,10 +518,10 @@
         <returns>The decompressed data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -547,10 +547,10 @@
         <returns>Data decrypted using the Passport participant key for the current site.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,10 +576,10 @@
         <returns>Data encrypted using the Passport participant key for the current site.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -601,10 +601,10 @@
         <value>A 32-bit signed integer indicating the current error state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -648,10 +648,10 @@
         <returns>The contents of the registry key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -681,10 +681,10 @@
         <returns>A string representing the requested attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -710,16 +710,16 @@
         <returns>The Passport domain for the specified member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.GetDomainFromMemberName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.GetDomainFromMemberName/CS/passportidentity_getdomainfrommembername.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.GetDomainFromMemberName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.GetDomainFromMemberName/VB/passportidentity_getdomainfrommembername.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.GetDomainFromMemberName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.GetDomainFromMemberName/CS/passportidentity_getdomainfrommembername.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.GetDomainFromMemberName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.GetDomainFromMemberName/VB/passportidentity_getdomainfrommembername.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -742,10 +742,10 @@
           <see langword="true" /> if a connection is coming back from the Passport server (logon, update, or registration) and if the Passport data contained on the query string is valid; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -776,10 +776,10 @@
           <see langword="true" /> if the user is authenticated by a Passport authority; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -814,20 +814,20 @@
           <see langword="true" /> if the user is authenticated by a central site responsible for Passport authentication; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
 <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#2)]  -->
 <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#2)]  -->  
 [!code-csharp[PassportIdentityExample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#4)]
 [!code-vb[PassportIdentityExample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#4)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -850,10 +850,10 @@
         <returns>A string representing the Passport Login Challenge.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -879,10 +879,10 @@
         <returns>A string representing the Passport Login Challenge.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -924,10 +924,10 @@
         <returns>A string representing the Passport Login Challenge.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -953,10 +953,10 @@
         <returns>The Passport logon option <paramref name="strOpt" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -982,10 +982,10 @@
         <returns>The value of the Passport profile attribute specified by the <paramref name="strProfileName" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1012,10 +1012,10 @@
           <see langword="true" /> if the Passport profile flag <paramref name="iFlagMask" /> is set in this user's profile; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1042,20 +1042,20 @@
           <see langword="true" /> if the profile attribute <paramref name="strProfile" /> exists in this user's profile; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
 <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#2)]  -->
 <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#2)]  -->  
 [!code-csharp[PassportIdentityExample#5](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#5)]
 [!code-vb[PassportIdentityExample#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#5)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1078,16 +1078,16 @@
           <see langword="true" /> if the Passport member's ticket indicates that the password was saved on the Passport logon page the last time the ticket was refreshed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.HasSavedPassword#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.HasSavedPassword/CS/passportidentity_hassavedpassword.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.HasSavedPassword#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.HasSavedPassword/VB/passportidentity_hassavedpassword.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.HasSavedPassword#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.HasSavedPassword/CS/passportidentity_hassavedpassword.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.HasSavedPassword#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.HasSavedPassword/VB/passportidentity_hassavedpassword.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1110,18 +1110,18 @@
           <see langword="true" /> if the query string includes a Passport ticket as a cookie; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
 <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#3)]  -->
 <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#3)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1152,10 +1152,10 @@
           <see langword="true" /> if full consent is granted in this user's profile.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1177,10 +1177,10 @@
         <value>The PUID for the currently authenticated user, in hexadecimal form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1203,16 +1203,16 @@
           <see langword="true" /> if the user is authenticated against a central site responsible for Passport authentication; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.IsAuthenticated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.IsAuthenticated/CS/passportidentity_isauthenticated.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.IsAuthenticated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.IsAuthenticated/VB/passportidentity_isauthenticated.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.IsAuthenticated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.IsAuthenticated/CS/passportidentity_isauthenticated.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.IsAuthenticated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.IsAuthenticated/VB/passportidentity_isauthenticated.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1238,10 +1238,10 @@
         <value>The Passport profile attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1264,10 +1264,10 @@
         <returns>An integer result code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1293,10 +1293,10 @@
         <returns>An integer result code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1339,18 +1339,18 @@
         <returns>An integer result code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#1)]  -->  
 <!-- TODO: review snippet reference [!code-csharp[PassportIdentityExample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/PassportIdentityExample/CS/passportidentitycs.aspx#3)]  -->
 <!-- TODO: review snippet reference [!code-vb[PassportIdentityExample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PassportIdentityExample/VB/passportidentityvb.aspx#3)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1392,10 +1392,10 @@
         <returns>An integer result code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1418,16 +1418,16 @@
         <returns>An HTML fragment containing an image tag for a Passport link.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.LogoTag#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.LogoTag/CS/passportidentity_logotag.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.LogoTag#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.LogoTag/VB/passportidentity_logotag.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.LogoTag#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.LogoTag/CS/passportidentity_logotag.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.LogoTag#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.LogoTag/VB/passportidentity_logotag.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1453,10 +1453,10 @@
         <returns>An HTML fragment containing an image tag for a Passport link.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1498,10 +1498,10 @@
         <returns>An HTML fragment containing an image tag for a Passport link.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1543,10 +1543,10 @@
         <returns>An HTML fragment containing an image tag for a Passport link.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1569,16 +1569,16 @@
         <returns>An HTML fragment containing an image tag for a Passport link.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.LogoTag2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.LogoTag2/CS/passportidentity_logotag2.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.LogoTag2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.LogoTag2/VB/passportidentity_logotag2.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.LogoTag2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.LogoTag2/CS/passportidentity_logotag2.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.LogoTag2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.LogoTag2/VB/passportidentity_logotag2.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1604,10 +1604,10 @@
         <returns>An HTML fragment containing an image tag for a Passport link.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1649,10 +1649,10 @@
         <returns>An HTML fragment containing an image tag for a Passport link.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1694,10 +1694,10 @@
         <returns>An HTML fragment containing an image tag for a Passport link.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1720,10 +1720,10 @@
         <returns>The Passport logout URL string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1757,10 +1757,10 @@
         <returns>The Passport logout URL string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1782,16 +1782,16 @@
         <value>The name of the current user, which is the Passport Unique Identifier (PUID).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.Name#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.Name/CS/passportidentity_name.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.Name#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.Name/VB/passportidentity_name.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.Name#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.Name/CS/passportidentity_name.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.Name#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.Name/VB/passportidentity_name.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1818,10 +1818,10 @@
         <summary>Sets a specific Passport logon option. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1846,16 +1846,16 @@
         <summary>Logs off the given Passport member from the current session. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.SignOut#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.SignOut/CS/passportidentity_signout.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.SignOut#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.SignOut/VB/passportidentity_signout.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.SignOut#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.SignOut/CS/passportidentity_signout.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.SignOut#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.SignOut/VB/passportidentity_signout.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1877,10 +1877,10 @@
         <summary>Releases all resources used by the <see cref="T:System.Web.Security.PassportIdentity" /> class. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1906,10 +1906,10 @@
         <returns>An object representing an attribute of the Passport authentication ticket.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1931,16 +1931,16 @@
         <value>The time, in seconds, since the last ticket was issued or refreshed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.TicketAge#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.TicketAge/CS/passportidentity_ticketage.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.TicketAge#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.TicketAge/VB/passportidentity_ticketage.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.TicketAge#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.TicketAge/CS/passportidentity_ticketage.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.TicketAge#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.TicketAge/VB/passportidentity_ticketage.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1962,16 +1962,16 @@
         <value>The time, in seconds, since a member's logon to the Passport logon server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.Security.PassportIdentity.TimeSinceSignIn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.TimeSinceSignIn/CS/passportidentity_timesincesignin.cs#1)]
- [!code-vb[System.Web.Security.PassportIdentity.TimeSinceSignIn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.TimeSinceSignIn/VB/passportidentity_timesincesignin.vb#1)]  
-  
+[!code-csharp[System.Web.Security.PassportIdentity.TimeSinceSignIn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.TimeSinceSignIn/CS/passportidentity_timesincesignin.cs#1)]
+[!code-vb[System.Web.Security.PassportIdentity.TimeSinceSignIn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.PassportIdentity.TimeSinceSignIn/VB/passportidentity_timesincesignin.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1985,10 +1985,10 @@
         <summary>Indicates whether the user is authenticated by a Passport authority. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2002,10 +2002,10 @@
         <summary>Returns an HTML fragment containing an HTML &lt;img&gt; tag for a Passport link. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2019,10 +2019,10 @@
         <summary>Logs the user on, either by generating a 302 redirect URL or by initiating a Passport-aware client authentication exchange. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2036,10 +2036,10 @@
         <summary>Returns the Passport logout URL string. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2053,10 +2053,10 @@
         <summary>Returns an HTML fragment containing an HTML &lt;img&gt; tag for a Passport link. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
-  
+This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+ 
  ]]></format>
         </remarks>
       </Docs>

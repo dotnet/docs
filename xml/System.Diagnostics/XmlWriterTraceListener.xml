@@ -14,44 +14,44 @@
     <summary>Directs tracing or debugging output as XML-encoded data to a <see cref="T:System.IO.TextWriter" /> or to a <see cref="T:System.IO.Stream" />, such as a <see cref="T:System.IO.FileStream" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  You must have unmanaged code permission to create an instance of the <xref:System.Diagnostics.XmlWriterTraceListener> class.  
-  
- The <xref:System.Diagnostics.XmlWriterTraceListener> class converts tracing and debugging information into an XML-encoded text stream. The description of the XML output is shown in the tables that follow. You can use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](http://go.microsoft.com/fwlink/p/?LinkId=240129) to display the XML output.  
-  
- You can enable or disable an <xref:System.Diagnostics.XmlWriterTraceListener> through the application configuration file and then use the configured <xref:System.Diagnostics.XmlWriterTraceListener> in your application. Alternately, you can create an <xref:System.Diagnostics.XmlWriterTraceListener> in your code.  
-  
- To configure an <xref:System.Diagnostics.XmlWriterTraceListener>, edit the configuration file that corresponds to the name of your application. In this file, you can add or remove a listener, set the properties for a listener, or remove listeners. The configuration file should be formatted like the following example.  
-  
+ 
+The <xref:System.Diagnostics.XmlWriterTraceListener> class converts tracing and debugging information into an XML-encoded text stream. The description of the XML output is shown in the tables that follow. You can use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](http://go.microsoft.com/fwlink/p/?LinkId=240129) to display the XML output.  
+ 
+You can enable or disable an <xref:System.Diagnostics.XmlWriterTraceListener> through the application configuration file and then use the configured <xref:System.Diagnostics.XmlWriterTraceListener> in your application. Alternately, you can create an <xref:System.Diagnostics.XmlWriterTraceListener> in your code.  
+ 
+To configure an <xref:System.Diagnostics.XmlWriterTraceListener>, edit the configuration file that corresponds to the name of your application. In this file, you can add or remove a listener, set the properties for a listener, or remove listeners. The configuration file should be formatted like the following example.  
+ 
 ```  
 <configuration>  
-  <system.diagnostics>  
-    <trace autoflush="false" indentsize="4">  
-      <listeners>  
-        <add name="xmlListener"   
-          type="System.Diagnostics.XmlWriterTraceListener"   
-          initializeData="xmlOutput.xml"   
-          traceOutputOptions="ProcessId, DateTime" />  
-        <remove name="Default" />  
-      </listeners>  
-    </trace>  
-  </system.diagnostics>  
+ <system.diagnostics>  
+   <trace autoflush="false" indentsize="4">  
+     <listeners>  
+       <add name="xmlListener"   
+         type="System.Diagnostics.XmlWriterTraceListener"   
+         initializeData="xmlOutput.xml"   
+         traceOutputOptions="ProcessId, DateTime" />  
+       <remove name="Default" />  
+     </listeners>  
+   </trace>  
+ </system.diagnostics>  
 </configuration>  
 ```  
-  
- The <xref:System.Diagnostics.XmlWriterTraceListener> class inherits the <xref:System.Diagnostics.TraceListener.Filter%2A> property from the base class <xref:System.Diagnostics.TraceListener>.  The <xref:System.Diagnostics.TraceListener.Filter%2A> property allows an additional level of trace output filtering at the listener.  If there is a filter present, the `Trace` methods of the trace listener call the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method of the filter to determine whether to emit the trace.  
-  
+ 
+The <xref:System.Diagnostics.XmlWriterTraceListener> class inherits the <xref:System.Diagnostics.TraceListener.Filter%2A> property from the base class <xref:System.Diagnostics.TraceListener>.  The <xref:System.Diagnostics.TraceListener.Filter%2A> property allows an additional level of trace output filtering at the listener.  If there is a filter present, the `Trace` methods of the trace listener call the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method of the filter to determine whether to emit the trace.  
+ 
 > [!NOTE]
 >  If an attempt is made to write to a file that is in use or unavailable, the file name is automatically prefixed by a GUID.  
-  
+ 
 > [!NOTE]
 >  Listener methods are intended to be called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes.  The listener methods are not intended to be called directly from application code. The <xref:System.Diagnostics.XmlWriterTraceListener> listener is primarily intended for use by the <xref:System.Diagnostics.TraceSource> class. The <xref:System.Diagnostics.XmlWriterTraceListener.Write%2A> and <xref:System.Diagnostics.XmlWriterTraceListener.WriteLine%2A> methods can be called by the <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes, and default values are provided for the XML elements that <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> do not supply values for.  
-  
- The following table describes the elements and attributes of the XML output.  
-  
+ 
+The following table describes the elements and attributes of the XML output.  
+ 
 |Element|Attributes|Output|Notes|  
 |-------------|----------------|------------|-----------|  
 |`CallStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|Special characters such as > or < are replaced with escape sequences. See the escaped character translation table that follows.|  
@@ -71,9 +71,9 @@
 |`TimeCreated`|`SystemTime`|Always present.|If not present in the <xref:System.Diagnostics.TraceEventCache>, the default is the current time.|  
 |`TimeStamp`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|From the <xref:System.Diagnostics.TraceEventCache>.|  
 |`Type`|None|Always present.|Always the value 3.|  
-  
- The following table shows the characters that are escaped in the XML output. Escaping occurs in all the elements and attributes with the exception of the `DataItem` element, which is not escaped if the object passed to the `data` parameter of the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method is an <xref:System.Xml.XPath.XPathNavigator> object. If an <xref:System.Xml.XPath.XPathNavigator> is used for the data object, the <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> method is called and the entire root node is traced as unescaped data.  
-  
+ 
+The following table shows the characters that are escaped in the XML output. Escaping occurs in all the elements and attributes with the exception of the `DataItem` element, which is not escaped if the object passed to the `data` parameter of the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method is an <xref:System.Xml.XPath.XPathNavigator> object. If an <xref:System.Xml.XPath.XPathNavigator> is used for the data object, the <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> method is called and the entire root node is traced as unescaped data.  
+ 
 |Escaped character|Value|  
 |-----------------------|-----------|  
 |&|&amp;|  
@@ -83,15 +83,15 @@
 |\|&apos;|  
 |0xD|&\#xD;|  
 |0xA|&\#xA;|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Diagnostics.XmlWriterTraceListener> class to write both escaped and non-escaped data to file logs.  
-  
- [!code-csharp[System.Diagnostics.XmlWriterTraceListener#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.XmlWriterTraceListener/CS/program.cs#1)]
- [!code-vb[System.Diagnostics.XmlWriterTraceListener#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.XmlWriterTraceListener/VB/module1.vb#1)]  
-  
+The following code example shows the use of the <xref:System.Diagnostics.XmlWriterTraceListener> class to write both escaped and non-escaped data to file logs.  
+ 
+[!code-csharp[System.Diagnostics.XmlWriterTraceListener#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.XmlWriterTraceListener/CS/program.cs#1)]
+[!code-vb[System.Diagnostics.XmlWriterTraceListener#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.XmlWriterTraceListener/VB/module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
@@ -114,10 +114,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class, using the specified stream as the recipient of the debugging and tracing output.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
-  
+The <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -142,10 +142,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class using the specified writer as the recipient of the debugging and tracing output.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
-  
+The <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -170,15 +170,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class, using the specified file as the recipient of the debugging and tracing output.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new instance of the <xref:System.IO.StreamWriter> class for the specified file on the specified path, using <xref:System.Text.Encoding.UTF8%2A> encoding. If the file exists, it is appended to. If the file does not exist, a new file is created.  
-  
+This constructor initializes a new instance of the <xref:System.IO.StreamWriter> class for the specified file on the specified path, using <xref:System.Text.Encoding.UTF8%2A> encoding. If the file exists, it is appended to. If the file does not exist, a new file is created.  
+ 
 > [!NOTE]
 >  To reduce the chance of an exception, any character that might invalidate the output is replaced with a "?" character.  
-  
- The <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
-  
+ 
+The <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -205,15 +205,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class with the specified name, using the specified stream as the recipient of the debugging and tracing output.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
-  
+This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
+ 
 ```  
 ((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =   
-    TraceOptions.Timestamp  
+   TraceOptions.Timestamp  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -240,15 +240,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class with the specified name, using the specified writer as the recipient of the debugging and tracing output.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
-  
+This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
+ 
 ```  
 ((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =   
-    TraceOptions.Timestamp.  
+   TraceOptions.Timestamp.  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -275,20 +275,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class with the specified name, using the specified file as the recipient of the debugging and tracing output.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new instance of the <xref:System.IO.StreamWriter> class for the specified file on the specified path, using <xref:System.Text.Encoding.UTF8%2A> encoding. If the file exists, it is appended to. If the file does not exist, a new file is created.  
-  
+This constructor initializes a new instance of the <xref:System.IO.StreamWriter> class for the specified file on the specified path, using <xref:System.Text.Encoding.UTF8%2A> encoding. If the file exists, it is appended to. If the file does not exist, a new file is created.  
+ 
 > [!NOTE]
 >  To reduce the chance of an exception, any character that might invalidate the output is replaced with a "?" character.  
-  
- The <xref:System.Diagnostics.TraceListener.Name%2A> property is set to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
-  
+ 
+The <xref:System.Diagnostics.TraceListener.Name%2A> property is set to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
+ 
 ```  
 ((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =  
-    TraceOptions.Timestamp.  
+   TraceOptions.Timestamp.  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -336,10 +336,10 @@
         <summary>Writes trace information including an error message and a detailed error message to the file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior is to display the message and detailed message in a message box when the application is running in user-interface mode, and to the <xref:System.Diagnostics.TraceListener> instances in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection. By default, the collection contains an instance of <xref:System.Diagnostics.DefaultTraceListener>. You can customize this behavior by adding or removing a <xref:System.Diagnostics.TraceListener> from the collection.  
-  
+The default behavior is to display the message and detailed message in a message box when the application is running in user-interface mode, and to the <xref:System.Diagnostics.TraceListener> instances in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection. By default, the collection contains an instance of <xref:System.Diagnostics.DefaultTraceListener>. You can customize this behavior by adding or removing a <xref:System.Diagnostics.TraceListener> from the collection.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
@@ -373,13 +373,13 @@
         <summary>Writes trace information, a data object, and event information to the file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `data` parameter is written as a `DataItem` node in the `TraceData` element. The `ToString` method of the data object is used to convert the object to a string.  
-  
+The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `data` parameter is written as a `DataItem` node in the `TraceData` element. The `ToString` method of the data object is used to convert the object to a string.  
+ 
 > [!IMPORTANT]
 >  This method is not intended to be called directly by application code.  It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
@@ -419,13 +419,13 @@
         <summary>Writes trace information, data objects, and event information to the file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The objects in the `data` parameter array are written as `DataItem` nodes in the `TraceData` element. The `ToString` method of each data object is used to convert the object to a string.  
-  
+The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The objects in the `data` parameter array are written as `DataItem` nodes in the `TraceData` element. The `ToString` method of each data object is used to convert the object to a string.  
+ 
 > [!IMPORTANT]
 >  This method is not intended to be called directly by application code.  It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
@@ -459,13 +459,13 @@
         <summary>Writes trace information, a message, and event information to the file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element.  
-  
+The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element.  
+ 
 > [!IMPORTANT]
 >  This method is not intended to be called directly by application code.  It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
@@ -507,13 +507,13 @@
         <summary>Writes trace information, a formatted message, and event information to the file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method is called, passing in the `format` string and `args` array as parameters, to format the `args` object array as the `Message` element.  
-  
+The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method is called, passing in the `format` string and `args` array as parameters, to format the `args` object array as the `Message` element.  
+ 
 > [!IMPORTANT]
 >  This method is not intended to be called directly by application code.  It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
@@ -547,13 +547,13 @@
         <summary>Writes trace information including the identity of a related activity, a message, and event information to the file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is used for the correlation of related traces. The `eventCache`, `source`, `id`, and `relatedActivityId` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element. The <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method is called to convert the `relatedActivityId`value to a "B" formatted string, which appears in the header. The `SubTypeName` element in the footer identifies the trace event type as a <xref:System.Diagnostics.TraceEventType>.  
-  
+The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is used for the correlation of related traces. The `eventCache`, `source`, `id`, and `relatedActivityId` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element. The <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method is called to convert the `relatedActivityId`value to a "B" formatted string, which appears in the header. The `SubTypeName` element in the footer identifies the trace event type as a <xref:System.Diagnostics.TraceEventType>.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is not intended to be called by application code.  It is intended to be called by a <xref:System.Diagnostics.TraceSource> object to emit the trace information for its <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> method.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
@@ -579,10 +579,10 @@
         <summary>Writes a verbatim message without any additional context information to the file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method to include context information in the log output.  
-  
+Use the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method to include context information in the log output.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
@@ -608,10 +608,10 @@
         <summary>Writes a verbatim message without any additional context information followed by the current line terminator to the file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method to include context information in the log output.  
-  
+Use the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method to include context information in the log output.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>

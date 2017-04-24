@@ -31,18 +31,18 @@
     <summary>Contains a generic column mapping for an object that inherits from <see cref="T:System.Data.Common.DataAdapter" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Data.Common.DataColumnMapping> enables you to use column names in a <xref:System.Data.DataTable> that are different from those in the data source. The `DataAdapter` uses the mapping to match the columns when the tables in the <xref:System.Data.DataSet> or data source are updated. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
+A <xref:System.Data.Common.DataColumnMapping> enables you to use column names in a <xref:System.Data.DataTable> that are different from those in the data source. The `DataAdapter` uses the mapping to match the columns when the tables in the <xref:System.Data.DataSet> or data source are updated. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object and adds it to a <xref:System.Data.Common.DataColumnMappingCollection>. It then tells the user that the mapping was added to the collection and shows the Parent for the mapping.  
-  
- [!code-csharp[Classic WebData DataColumnMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataColumnMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.Common.DataColumnMapping> object and adds it to a <xref:System.Data.Common.DataColumnMappingCollection>. It then tells the user that the mapping was added to the collection and shows the Parent for the mapping.  
+ 
+[!code-csharp[Classic WebData DataColumnMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataColumnMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,13 +66,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DataColumnMapping" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object, sets its properties, and clones it.  
-  
- [!code-csharp[Classic WebData DataColumnMapping.DataColumnMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataColumnMapping Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataColumnMapping.DataColumnMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataColumnMapping Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.Common.DataColumnMapping> object, sets its properties, and clones it.  
+ 
+[!code-csharp[Classic WebData DataColumnMapping.DataColumnMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataColumnMapping Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataColumnMapping.DataColumnMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataColumnMapping Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,13 +101,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DataColumnMapping" /> class with the specified source column name and <see cref="T:System.Data.DataSet" /> column name to map to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object, sets its properties, and clones it.  
-  
- [!code-csharp[Classic WebData DataColumnMapping.DataColumnMapping1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataColumnMapping1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataColumnMapping.DataColumnMapping1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataColumnMapping1 Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.Common.DataColumnMapping> object, sets its properties, and clones it.  
+ 
+[!code-csharp[Classic WebData DataColumnMapping.DataColumnMapping1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataColumnMapping1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataColumnMapping.DataColumnMapping1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataColumnMapping1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,13 +139,13 @@
         <value>The name of the column within the <see cref="T:System.Data.DataSet" /> to map to. The name is not case sensitive.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object, and sets its properties.  
-  
- [!code-csharp[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.Common.DataColumnMapping> object, and sets its properties.  
+ 
+[!code-csharp[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -253,13 +253,13 @@
         <value>The case-sensitive name of the column in the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object, and sets its properties.  
-  
- [!code-csharp[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.Common.DataColumnMapping> object, and sets its properties.  
+ 
+[!code-csharp[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,12 +287,12 @@
         <returns>A copy of the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlCommand> instance is cast to an <xref:System.ICloneable> interface.  
-  
- For more information, see <xref:System.ICloneable.Clone%2A>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlCommand> instance is cast to an <xref:System.ICloneable> interface.  
+ 
+For more information, see <xref:System.ICloneable.Clone%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,13 +320,13 @@
         <returns>The current <see cref="P:System.Data.Common.DataColumnMapping.SourceColumn" /> name as a string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object and adds it to a <xref:System.Data.Common.DataColumnMappingCollection> collection. It then tells the user that the mapping was added to the collection and shows the parent of mapping.  
-  
- [!code-csharp[Classic WebData DataColumnMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataColumnMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.Common.DataColumnMapping> object and adds it to a <xref:System.Data.Common.DataColumnMappingCollection> collection. It then tells the user that the mapping was added to the collection and shows the parent of mapping.  
+ 
+[!code-csharp[Classic WebData DataColumnMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataColumnMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

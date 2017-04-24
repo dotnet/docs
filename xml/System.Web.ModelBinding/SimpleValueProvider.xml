@@ -18,10 +18,10 @@
     <summary>Represents a value provider for single key/value lookups.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class does not contain the actual look-up mechanism; it delegates that to derived classes using the <xref:System.Web.ModelBinding.SimpleValueProvider.FetchValue%2A> method. Examples of simple value providers are the <xref:System.Web.ModelBinding.ViewStateValueProvider> class and the <xref:System.Web.ModelBinding.ControlValueProvider> class.  
-  
+This class does not contain the actual look-up mechanism; it delegates that to derived classes using the <xref:System.Web.ModelBinding.SimpleValueProvider.FetchValue%2A> method. Examples of simple value providers are the <xref:System.Web.ModelBinding.ViewStateValueProvider> class and the <xref:System.Web.ModelBinding.ControlValueProvider> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>

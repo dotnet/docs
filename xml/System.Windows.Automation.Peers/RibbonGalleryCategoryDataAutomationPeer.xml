@@ -116,10 +116,10 @@
         <summary>Scrolls the <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> into the visible region of the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonGalleryCategoryDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonGalleryCategoryDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

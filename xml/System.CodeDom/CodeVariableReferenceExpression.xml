@@ -22,23 +22,23 @@
     <summary>Represents a reference to a local variable.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeVariableReferenceExpression> can be used to represent a reference to a local variable.  
+<xref:System.CodeDom.CodeVariableReferenceExpression> can be used to represent a reference to a local variable.  
+ 
+The <xref:System.CodeDom.CodeVariableReferenceExpression.VariableName%2A> property specifies the name of the local variable to reference.  
+ 
+Use <xref:System.CodeDom.CodeFieldReferenceExpression> to reference a field. Use <xref:System.CodeDom.CodePropertyReferenceExpression> to reference a property. Use <xref:System.CodeDom.CodeEventReferenceExpression> to reference an event.  
+ 
   
- The <xref:System.CodeDom.CodeVariableReferenceExpression.VariableName%2A> property specifies the name of the local variable to reference.  
-  
- Use <xref:System.CodeDom.CodeFieldReferenceExpression> to reference a field. Use <xref:System.CodeDom.CodePropertyReferenceExpression> to reference a property. Use <xref:System.CodeDom.CodeEventReferenceExpression> to reference an event.  
-  
-   
-  
+ 
 ## Examples  
- The following example code demonstrates use of a <xref:System.CodeDom.CodeVariableReferenceExpression> to refer to a local variable.  
-  
- [!code-cpp[CodeReferenceExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeReferenceExample/CPP/codereferenceexample.cpp#4)]
- [!code-csharp[CodeReferenceExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeReferenceExample/CS/codereferenceexample.cs#4)]
- [!code-vb[CodeReferenceExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeReferenceExample/VB/codereferenceexample.vb#4)]  
-  
+The following example code demonstrates use of a <xref:System.CodeDom.CodeVariableReferenceExpression> to refer to a local variable.  
+ 
+[!code-cpp[CodeReferenceExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeReferenceExample/CPP/codereferenceexample.cpp#4)]
+[!code-csharp[CodeReferenceExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeReferenceExample/CS/codereferenceexample.cs#4)]
+[!code-vb[CodeReferenceExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeReferenceExample/VB/codereferenceexample.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

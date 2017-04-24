@@ -15,12 +15,12 @@
     <summary>Represents the parameters for a secure conversation security token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is a collection of token properties and methods, and is used in creating security binding elements and tokens.  
-  
- Secure conversations involve the exchange of multiple messages, and use a security context to ensure security. A security context is shared among the communicating parties for the lifetime of a communications session.  
-  
+This class is a collection of token properties and methods, and is used in creating security binding elements and tokens.  
+ 
+Secure conversations involve the exchange of multiple messages, and use a security context to ensure security. A security context is shared among the communicating parties for the lifetime of a communications session.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,16 +40,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new instance property values are set to their defaults:  
-  
+The new instance property values are set to their defaults:  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>.  
-  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.ReferenceStyle%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>.  
-  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.RequireDerivedKeys%2A> is set to `true`.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" /> class from the properties of a specified <see cref="T:System.ServiceModel.Channels.SecurityBindingElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `bootstrapSecurityBindingElement` specifies the security binding element to use when securing the messages exchanged as part of the secure conversation token issuance.  
-  
+`bootstrapSecurityBindingElement` specifies the security binding element to use when securing the messages exchanged as part of the secure conversation token issuance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" /> class from another instance of this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor clones a new instance from an existing one.  
-  
+This constructor clones a new instance from an existing one.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" /> class from the properties of a specified <see cref="T:System.ServiceModel.Channels.SecurityBindingElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `bootstrapSecurityBindingElement` specifies the security binding element to use when securing the messages exchanged as part of the secure conversation token issuance. If `requireCancellation` is `true`, a session-based security context token is issued; otherwise, a cookie-based security context token is issued.  
-  
+`bootstrapSecurityBindingElement` specifies the security binding element to use when securing the messages exchanged as part of the secure conversation token issuance. If `requireCancellation` is `true`, a session-based security context token is issued; otherwise, a cookie-based security context token is issued.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,12 +181,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" /> class from the properties of a specified <see cref="T:System.ServiceModel.Channels.SecurityBindingElement" /> with specified <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `bootstrapSecurityBindingElement` specifies the security binding element to use when securing the messages exchanged as part of the secure conversation token issuance. If `requireCancellation` is `true`, a session-based security context token is issued; otherwise, a cookie-based security context token is issued.  
-  
- `bootstrapProtectionRequirements` indicates the protection requirements of the messages exchanged as part of the secure conversation token issuance.  
-  
+`bootstrapSecurityBindingElement` specifies the security binding element to use when securing the messages exchanged as part of the secure conversation token issuance. If `requireCancellation` is `true`, a session-based security context token is issued; otherwise, a cookie-based security context token is issued.  
+ 
+`bootstrapProtectionRequirements` indicates the protection requirements of the messages exchanged as part of the secure conversation token issuance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,14 +292,14 @@
         <returns>A <see cref="T:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" /> instance that represents the copy.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.Clone%2A> and <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> methods follow the Core design pattern.  
-  
- <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> is an `abstract` class which is overridden by <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.CloneCore%2A>.  
-  
- The <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.CloneCore%2A> method calls the <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.%23ctor%2A> constructor.  
-  
+The <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.Clone%2A> and <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> methods follow the Core design pattern.  
+ 
+<xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> is an `abstract` class which is overridden by <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.CloneCore%2A>.  
+ 
+The <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.CloneCore%2A> method calls the <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,10 +327,10 @@
         <returns>The key identifier clause for a token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a key identifier clause using the <xref:System.IdentityModel.Tokens.SecurityToken.CreateKeyIdentifierClause%2A> method, with `referenceStyle` as a generic parameter.  
-  
+This method creates a key identifier clause using the <xref:System.IdentityModel.Tokens.SecurityToken.CreateKeyIdentifierClause%2A> method, with `referenceStyle` as a generic parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -357,10 +357,10 @@
         <value>This property always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Asymmetric keys are used in public-key cryptography, which uses two keys, a public key and a private key, which are related mathematically. The public key is distributed widely, but the private key is kept secret. In public-key cryptography, there is no need to exchange a common key.  
-  
+Asymmetric keys are used in public-key cryptography, which uses two keys, a public key and a private key, which are related mathematically. The public key is distributed widely, but the private key is kept secret. In public-key cryptography, there is no need to exchange a common key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,22 +385,22 @@
         <summary>Initializes a security token requirement.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following properties of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> are initialized:  
-  
+The following properties of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> are initialized:  
+ 
 -   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType%2A> = <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.SecureConversation%2A>.  
-  
+ 
 -   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken%2A> = `true`.  
-  
+ 
 -   The <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportSecurityContextCancellationProperty%2A> property in <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.RequireCancellation%2A>.  
-  
+ 
 -   The <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecureConversationSecurityBindingElement%2A> property in <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.BootstrapSecurityBindingElement%2A>.  
-  
+ 
 -   The <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters> property in <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> is set to a clone of the current instance.  
-  
+ 
 -   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType%2A> = <xref:System.IdentityModel.Tokens.SecurityKeyType>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,28 +424,28 @@
           <see langword="true" /> if cancellation is required; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When Windows authentication is used in combination with a security context token, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not populate the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property with the actual caller's identity, but instead sets the property to anonymous. Because [!INCLUDE[indigo2](~/includes/indigo2-md.md)] security must re-create the content of the service security context for every request from the incoming security context token, the server does not keep track of the security session in the memory. Because it is impossible to serialize the <xref:System.Security.Principal.WindowsIdentity> instance into the security context token, the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property returns an anonymous identity.  
-  
- The following configuration exhibits this behavior.  
-  
+When Windows authentication is used in combination with a security context token, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not populate the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property with the actual caller's identity, but instead sets the property to anonymous. Because [!INCLUDE[indigo2](~/includes/indigo2-md.md)] security must re-create the content of the service security context for every request from the incoming security context token, the server does not keep track of the security session in the memory. Because it is impossible to serialize the <xref:System.Security.Principal.WindowsIdentity> instance into the security context token, the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property returns an anonymous identity.  
+ 
+The following configuration exhibits this behavior.  
+ 
 ```  
 <customBinding>  
-  <binding name="Cancellation">  
-       <textMessageEncoding />  
-        <security   
-            requireSecurityContextCancellation="false">  
-              <secureConversationBootstrap   
-                 requireSecurityContextCancellation="true" />  
-      </security>  
-    <httpTransport />  
-  </binding>  
+ <binding name="Cancellation">  
+      <textMessageEncoding />  
+       <security   
+           requireSecurityContextCancellation="false">  
+             <secureConversationBootstrap   
+                requireSecurityContextCancellation="true" />  
+     </security>  
+   <httpTransport />  
+ </binding>  
 </customBinding>  
 ```  
-  
- For more information about security context tokens, see [How to: Create a Security Context Token for a Secure Session](~/docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
-  
+ 
+For more information about security context tokens, see [How to: Create a Security Context Token for a Secure Session](~/docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -529,10 +529,10 @@
         <returns>A text representation of this instance of the class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method displays the following data: the result of performing this method on the base class, <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.RequireCancellation%2A>, and, if non-null, <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.BootstrapSecurityBindingElement%2A>.  
-  
+This method displays the following data: the result of performing this method on the base class, <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.RequireCancellation%2A>, and, if non-null, <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.BootstrapSecurityBindingElement%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

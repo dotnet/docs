@@ -23,19 +23,19 @@
     <summary>Encapsulates the collection of <see cref="T:System.Drawing.Image" /> objects in an <see cref="T:System.Windows.Forms.ImageList" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is used to manage the images in the <xref:System.Windows.Forms.ImageList> programmatically, providing methods to add and remove image objects.  
+This is used to manage the images in the <xref:System.Windows.Forms.ImageList> programmatically, providing methods to add and remove image objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to select, remove, and display images, from the <xref:System.Windows.Forms.ImageList.Images%2A> property of the <xref:System.Windows.Forms.ImageList> class, which is an <xref:System.Windows.Forms.ImageList.ImageCollection> type.  
-  
- [!code-cpp[Classic ImageList Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ImageList Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ImageList Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ImageList Example/CS/source.cs#1)]
- [!code-vb[Classic ImageList Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ImageList Example/VB/source.vb#1)]  
-  
+The following code example shows how to select, remove, and display images, from the <xref:System.Windows.Forms.ImageList.Images%2A> property of the <xref:System.Windows.Forms.ImageList> class, which is an <xref:System.Windows.Forms.ImageList.ImageCollection> type.  
+ 
+[!code-cpp[Classic ImageList Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ImageList Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ImageList Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ImageList Example/CS/source.cs#1)]
+[!code-vb[Classic ImageList Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ImageList Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,19 +60,19 @@
         <summary>Adds the specified icon to the <see cref="T:System.Windows.Forms.ImageList" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Icon> is converted to a <xref:System.Drawing.Bitmap> before it is added to the list.  
+The <xref:System.Drawing.Icon> is converted to a <xref:System.Drawing.Bitmap> before it is added to the list.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates constructing an <xref:System.Windows.Forms.ImageList.%23ctor%2A>, adding images to the <xref:System.Windows.Forms.ImageList.Images%2A> property, setting the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property, and using the <xref:System.Windows.Forms.ImageList.Draw%2A> method. To run this example, place it in a form that contains a button named `Button1`. The example assumes the existence of FeatherTexture.bmp and Gone Fishing.bmp at c:\Windows\\. Change the example accordingly if the bitmaps do not exist on your system or exist at another location.  
-  
- [!code-cpp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CPP/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/VB/form1.vb#2)]  
-  
+The following code example demonstrates constructing an <xref:System.Windows.Forms.ImageList.%23ctor%2A>, adding images to the <xref:System.Windows.Forms.ImageList.Images%2A> property, setting the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property, and using the <xref:System.Windows.Forms.ImageList.Draw%2A> method. To run this example, place it in a form that contains a button named `Button1`. The example assumes the existence of FeatherTexture.bmp and Gone Fishing.bmp at c:\Windows\\. Change the example accordingly if the bitmaps do not exist on your system or exist at another location.  
+ 
+[!code-cpp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CPP/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -154,10 +154,10 @@
         <summary>Adds an icon with the specified key to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. An image key is not case-sensitive.  
-  
+The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. An image key is not case-sensitive.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -186,10 +186,10 @@
         <summary>Adds an image with the specified key to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. An image key is not case-sensitive.  
-  
+The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. An image key is not case-sensitive.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -216,10 +216,10 @@
         <summary>Adds an array of images to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Windows.Forms.ImageList.ImageCollection> to add several images to the collection. To add a single item, use one of the <xref:System.Windows.Forms.ImageList.ImageCollection.Add%2A> methods.  
-  
+Use <xref:System.Windows.Forms.ImageList.ImageCollection> to add several images to the collection. To add a single item, use one of the <xref:System.Windows.Forms.ImageList.ImageCollection.Add%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -247,20 +247,20 @@
         <returns>The index of the newly added image, or -1 if the image cannot be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The number of images to add is inferred from the width of the given image.  
+The number of images to add is inferred from the width of the given image.  
+ 
+A strip is a single image that is treated as multiple images arranged side-by-side.  
+ 
   
- A strip is a single image that is treated as multiple images arranged side-by-side.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use <xref:System.Windows.Forms.ImageList.ImageCollection.AddStrip%2A>. To run this example, paste the following code into a Windows Form that contains an <xref:System.Windows.Forms.ImageList> named `imageList1` and a button and call the `AddStripToCollection` method in this example when handling the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-csharp[System.Windows.Forms.MiscBugDriven#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.MiscBugDriven#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#1)]  
-  
+The following example demonstrates how to use <xref:System.Windows.Forms.ImageList.ImageCollection.AddStrip%2A>. To run this example, paste the following code into a Windows Form that contains an <xref:System.Windows.Forms.ImageList> named `imageList1` and a button and call the `AddStripToCollection` method in this example when handling the button's <xref:System.Windows.Forms.Control.Click> event.  
+ 
+[!code-csharp[System.Windows.Forms.MiscBugDriven#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#1)]
+[!code-vb[System.Windows.Forms.MiscBugDriven#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The image being added is <see langword="null" />.  
@@ -324,10 +324,10 @@
           <see langword="true" /> if the image is found in the list; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of the <xref:System.Windows.Forms.ImageList.ImageCollection.Contains%2A> method throws a <xref:System.NotSupportedException> exception.  
-  
+This implementation of the <xref:System.Windows.Forms.ImageList.ImageCollection.Contains%2A> method throws a <xref:System.NotSupportedException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -355,10 +355,10 @@
           <see langword="true" /> to indicate an image with the specified key is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of an image corresponds to its key. The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, the <xref:System.Windows.Forms.ImageList.ImageCollection.ContainsKey%2A> method returns `false`.  
-  
+The name of an image corresponds to its key. The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, the <xref:System.Windows.Forms.ImageList.ImageCollection.ContainsKey%2A> method returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,10 +385,10 @@
         <value>The number of images in the list. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Counting the images forces the <xref:System.Windows.Forms.ImageList.Handle%2A> to be created.  
-  
+Counting the images forces the <xref:System.Windows.Forms.ImageList.Handle%2A> to be created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -411,10 +411,10 @@
           <see langword="true" /> if there are no images in the list; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can check this property without forcing the creation of a <xref:System.Windows.Forms.ImageList.Handle%2A>.  
-  
+You can check this property without forcing the creation of a <xref:System.Windows.Forms.ImageList.Handle%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -464,10 +464,10 @@
         <returns>The index of the image in the list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of <xref:System.Windows.Forms.ImageList.ImageCollection.IndexOf%2A> throws a <xref:System.NotSupportedException> exception.  
-  
+This implementation of <xref:System.Windows.Forms.ImageList.ImageCollection.IndexOf%2A> throws a <xref:System.NotSupportedException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -494,12 +494,12 @@
         <returns>The zero-based index of the first occurrence of an image with the specified key in the collection, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Forms.ImageList.ImageCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
- The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, the <xref:System.Windows.Forms.ImageList.ImageCollection.IndexOfKey%2A> method returns -1.  
-  
+If <xref:System.Windows.Forms.ImageList.ImageCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
+ 
+The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, the <xref:System.Windows.Forms.ImageList.ImageCollection.IndexOfKey%2A> method returns -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -551,10 +551,10 @@
         <value>The image in the list specified by <paramref name="index" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned bitmap is a copy of the original image and should be disposed of using the <xref:System.Drawing.Image.Dispose%2A?displayProperty=fullName> method.  
-  
+The returned bitmap is a copy of the original image and should be disposed of using the <xref:System.Drawing.Image.Dispose%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The index is less than 0 or greater than or equal to <see cref="P:System.Windows.Forms.ImageList.ImageCollection.Count" />.</exception>
@@ -585,12 +585,12 @@
         <value>The <see cref="T:System.Drawing.Image" /> with the specified key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. The key comparison is not case-sensitive.  
-  
- If an image with the specified key is not found, the value of the <xref:System.Windows.Forms.ImageList.ImageCollection.Item%2A> property is `null`.  
-  
+The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. The key comparison is not case-sensitive.  
+ 
+If an image with the specified key is not found, the value of the <xref:System.Windows.Forms.ImageList.ImageCollection.Item%2A> property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -612,12 +612,12 @@
         <value>A <see cref="T:System.Collections.Specialized.StringCollection" /> containing the names of the images in the <see cref="T:System.Windows.Forms.ImageList.ImageCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of an image corresponds to its key, and an image key is not case-sensitive.  
-  
- If none of the images contained in the <xref:System.Windows.Forms.ImageList.ImageCollection> have keys, <xref:System.Windows.Forms.ImageList.ImageCollection.Keys%2A> returns an empty <xref:System.Collections.Specialized.StringCollection>.  
-  
+The name of an image corresponds to its key, and an image key is not case-sensitive.  
+ 
+If none of the images contained in the <xref:System.Windows.Forms.ImageList.ImageCollection> have keys, <xref:System.Windows.Forms.ImageList.ImageCollection.Keys%2A> returns an empty <xref:System.Collections.Specialized.StringCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,10 +647,10 @@
         <summary>Not supported. The <see cref="M:System.Collections.IList.Remove(System.Object)" /> method removes a specified object from the list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of <xref:System.Windows.Forms.ImageList.ImageCollection.Remove%2A> throws a <xref:System.NotSupportedException> exception.  
-  
+This implementation of <xref:System.Windows.Forms.ImageList.ImageCollection.Remove%2A> throws a <xref:System.NotSupportedException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -703,10 +703,10 @@
         <summary>Removes the image with the specified key from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The key comparison is not case-sensitive. The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>.  
-  
+The key comparison is not case-sensitive. The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -733,10 +733,10 @@
         <summary>Sets the key for an image in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. An image key is not case-sensitive.  
-  
+The name of an image corresponds to its key in the <xref:System.Windows.Forms.ImageList.ImageCollection>. An image key is not case-sensitive.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The specified index is less than 0 or greater than or equal to <see cref="P:System.Windows.Forms.ImageList.ImageCollection.Count" />.</exception>
@@ -907,10 +907,10 @@
         <summary>Implements the <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" /> method. Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To add an item to the <xref:System.Windows.Forms.ImageList.ImageCollection>, use the <xref:System.Windows.Forms.ImageList.ImageCollection.Add%2A> method.  
-  
+To add an item to the <xref:System.Windows.Forms.ImageList.ImageCollection>, use the <xref:System.Windows.Forms.ImageList.ImageCollection.Add%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -980,10 +980,10 @@
         <summary>Implements the <see cref="M:System.Collections.IList.Remove(System.Object)" />. Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ImageList.ImageCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ImageList.ImageCollection>, use the <xref:System.Windows.Forms.ImageList.ImageCollection.RemoveAt%2A> method.  
-  
+You cannot change the <xref:System.Windows.Forms.ImageList.ImageCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ImageList.ImageCollection>, use the <xref:System.Windows.Forms.ImageList.ImageCollection.RemoveAt%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">In all cases.</exception>

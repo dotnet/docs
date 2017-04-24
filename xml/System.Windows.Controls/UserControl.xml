@@ -14,30 +14,30 @@
     <summary>Provides a simple way to create a control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Controls in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] support rich content, styles, triggers, and templates. In many cases, these features allow you to create custom and consistent experiences without having to create a new control. For more information, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
+Controls in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] support rich content, styles, triggers, and templates. In many cases, these features allow you to create custom and consistent experiences without having to create a new control. For more information, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
+ 
+If you do need to create a new control, the simplest way is to create a class that derives from <xref:System.Windows.Controls.UserControl>. Before you do so, consider that your control will not support templates and therefore will not support complex customization. However, deriving from <xref:System.Windows.Controls.UserControl> is a suitable model if you want to build your control by adding existing elements to it, similar to how you build an application, and if you do not need to support complex customization. (If you want to use templates with your control, derive from <xref:System.Windows.Controls.Control> instead.) For more information about the different models for authoring controls, see [Control Authoring Overview](~/docs/framework/wpf/controls/control-authoring-overview.md).  
+ 
+A <xref:System.Windows.Controls.UserControl> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+ 
+Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
   
- If you do need to create a new control, the simplest way is to create a class that derives from <xref:System.Windows.Controls.UserControl>. Before you do so, consider that your control will not support templates and therefore will not support complex customization. However, deriving from <xref:System.Windows.Controls.UserControl> is a suitable model if you want to build your control by adding existing elements to it, similar to how you build an application, and if you do not need to support complex customization. (If you want to use templates with your control, derive from <xref:System.Windows.Controls.Control> instead.) For more information about the different models for authoring controls, see [Control Authoring Overview](~/docs/framework/wpf/controls/control-authoring-overview.md).  
-  
- A <xref:System.Windows.Controls.UserControl> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to create a simple `NumericUpDown`<xref:System.Windows.Controls.UserControl>.  
-  
- [!code-xml[UserControlNumericUpDown#Markup](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#markup)]  
-  
- The following shows the logic of this <xref:System.Windows.Controls.UserControl>:  
-  
- [!code-csharp[UserControlNumericUpDown#CodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml.cs#codebehind)]
- [!code-vb[UserControlNumericUpDown#CodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UserControlNumericUpDown/visualbasic/numericupdown.xaml.vb#codebehind)]  
-  
- For more information, see [Control Authoring Overview](~/docs/framework/wpf/controls/control-authoring-overview.md).  
-  
+The following example shows how to create a simple `NumericUpDown`<xref:System.Windows.Controls.UserControl>.  
+ 
+[!code-xml[UserControlNumericUpDown#Markup](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#markup)]  
+ 
+The following shows the logic of this <xref:System.Windows.Controls.UserControl>:  
+ 
+[!code-csharp[UserControlNumericUpDown#CodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml.cs#codebehind)]
+[!code-vb[UserControlNumericUpDown#CodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UserControlNumericUpDown/visualbasic/numericupdown.xaml.vb#codebehind)]  
+ 
+For more information, see [Control Authoring Overview](~/docs/framework/wpf/controls/control-authoring-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>

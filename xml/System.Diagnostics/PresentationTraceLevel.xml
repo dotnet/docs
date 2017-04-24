@@ -13,19 +13,19 @@
     <summary>Describes the level of detail to trace about a particular object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Diagnostics.PresentationTraceLevel> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+<xref:System.Diagnostics.PresentationTraceLevel> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- If you run the application that contains the following [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] under a debugger, the output window provides lines of information describing the status and evaluation of the binding:  
-  
- [!code-xml[Debugging#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Debugging/CSharp/Page1.xaml#1)]  
+If you run the application that contains the following [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] under a debugger, the output window provides lines of information describing the status and evaluation of the binding:  
+ 
+[!code-xml[Debugging#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Debugging/CSharp/Page1.xaml#1)]  
 [!code-xml[Debugging#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Debugging/CSharp/Page1.xaml#2)]  
 [!code-xml[Debugging#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Debugging/CSharp/Page1.xaml#3)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

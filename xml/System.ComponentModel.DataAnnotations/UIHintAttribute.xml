@@ -24,24 +24,24 @@
     <summary>Specifies the template or user control that Dynamic Data uses to display a data field.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Visual Studio project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?linkid=158686).  
+A Visual Studio project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?linkid=158686).  
+ 
+MVC uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> class to associate a model with a data field. Dynamic Data uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> class to associate a user control with a data field. Dynamic Data uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A>property to determine which user control to use in order to display a data field.  
+ 
+For more information about how to use attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- MVC uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> class to associate a model with a data field. Dynamic Data uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> class to associate a user control with a data field. Dynamic Data uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A>property to determine which user control to use in order to display a data field.  
-  
- For more information about how to use attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute to specify the name of a custom field template that will handle the display and editing of a data field.  
-  
- For a complete example, see [How to: Customize Data Field Display in the Data Model](http://msdn.microsoft.com/library/33c2e908-bb52-4656-ba7a-ba55fb04beb2).  
-  
- [!code-csharp[DynamicData.CustomFieldTemplate#5](~/samples/snippets/csharp/VS_Snippets_WebNet/DynamicData.CustomFieldTemplate/CS/Product.cs#5)]
- [!code-vb[DynamicData.CustomFieldTemplate#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DynamicData.CustomFieldTemplate/VB/Products.vb#5)]  
-  
+The following example shows how to use the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute to specify the name of a custom field template that will handle the display and editing of a data field.  
+ 
+For a complete example, see [How to: Customize Data Field Display in the Data Model](http://msdn.microsoft.com/library/33c2e908-bb52-4656-ba7a-ba55fb04beb2).  
+ 
+[!code-csharp[DynamicData.CustomFieldTemplate#5](~/samples/snippets/csharp/VS_Snippets_WebNet/DynamicData.CustomFieldTemplate/CS/Product.cs#5)]
+[!code-vb[DynamicData.CustomFieldTemplate#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DynamicData.CustomFieldTemplate/VB/Products.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,12 +68,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" /> class by using a specified user control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> object that is created with this constructor is initialized using the specified `uiHint`, which specifies the user control (field template) to use in order to display the data field.  
-  
- ASP.NET Dynamic Data provides field templates, page templates, and data controls to render data fields in a data model. You can modify these templates and controls to customize them, or you can create a custom user control. If you create a custom user control, you use the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property to specify the user control to use to display a data field.  
-  
+A <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> object that is created with this constructor is initialized using the specified `uiHint`, which specifies the user control (field template) to use in order to display the data field.  
+ 
+ASP.NET Dynamic Data provides field templates, page templates, and data controls to render data fields in a data model. You can modify these templates and controls to customize them, or you can create a custom user control. If you create a custom user control, you use the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property to specify the user control to use to display a data field.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <value>A collection of key/value pairs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.ControlParameters%2A> property lets you retrieve data from a data model, tracks updates to the data model, and notifies the model of any changes.  
-  
+The <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.ControlParameters%2A> property lets you retrieve data from a data model, tracks updates to the data model, and notifies the model of any changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,10 +246,10 @@
         <value>The presentation layer that is used by this class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the presentation layer that uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> class. This property can be set to "HTML", "Silverlight", "WPF", or "WinForms".  
-  
+This property represents the presentation layer that uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> class. This property can be set to "HTML", "Silverlight", "WPF", or "WinForms".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,15 +295,15 @@
         <value>The name of the field template that displays the data field.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET Dynamic Data provides field templates and page templates for rendering data fields in a data model. Field templates are user controls (.ascx files) that are mapped to data fields in the model. You can modify the default user controls that Dynamic Data provides, or you can create a custom user controls to use as field template. If you create a custom user control, you use the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property on a property so that the property is rendered using the custom user control. The <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property specifies which field template to use when a specific column is rendered. The <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property can point to one of the templates provided in Dynamic Data or to a custom template. For example, you can create a custom field template named RedText_Edit.ascx, and then use the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property to specify that the RedText_Edit.ascx control should be used to render a specified data field instead of the default Text_Edit.ascx template that is provided in Dynamic Data.  
-  
- The following example shows how to specify that the UnitsInStock column in a database will be rendered by using the specified custom field template.  
-  
- [!code-csharp[DynamicData.CustomFieldTemplate#5](~/samples/snippets/csharp/VS_Snippets_WebNet/DynamicData.CustomFieldTemplate/CS/Product.cs#5)]
- [!code-vb[DynamicData.CustomFieldTemplate#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DynamicData.CustomFieldTemplate/VB/Products.vb#5)]  
-  
+ASP.NET Dynamic Data provides field templates and page templates for rendering data fields in a data model. Field templates are user controls (.ascx files) that are mapped to data fields in the model. You can modify the default user controls that Dynamic Data provides, or you can create a custom user controls to use as field template. If you create a custom user control, you use the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property on a property so that the property is rendered using the custom user control. The <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property specifies which field template to use when a specific column is rendered. The <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property can point to one of the templates provided in Dynamic Data or to a custom template. For example, you can create a custom field template named RedText_Edit.ascx, and then use the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property to specify that the RedText_Edit.ascx control should be used to render a specified data field instead of the default Text_Edit.ascx template that is provided in Dynamic Data.  
+ 
+The following example shows how to specify that the UnitsInStock column in a database will be rendered by using the specified custom field template.  
+ 
+[!code-csharp[DynamicData.CustomFieldTemplate#5](~/samples/snippets/csharp/VS_Snippets_WebNet/DynamicData.CustomFieldTemplate/CS/Product.cs#5)]
+[!code-vb[DynamicData.CustomFieldTemplate#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DynamicData.CustomFieldTemplate/VB/Products.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

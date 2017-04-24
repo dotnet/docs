@@ -27,26 +27,26 @@
     <summary>Represents a memory-mapped file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A memory-mapped file maps the contents of a file to an application’s logical address space. Memory-mapped files enable programmers to work with extremely large files because memory can be managed concurrently, and they allow complete, random access to a file without the need for seeking. Memory-mapped files can also be shared across multiple processes.  
+A memory-mapped file maps the contents of a file to an application’s logical address space. Memory-mapped files enable programmers to work with extremely large files because memory can be managed concurrently, and they allow complete, random access to a file without the need for seeking. Memory-mapped files can also be shared across multiple processes.  
+ 
+The <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A> methods create a memory-mapped file from a specified path or a <xref:System.IO.FileStream> of an existing file on disk. Changes are automatically propagated to disk when the file is unmapped.  
+ 
+The <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> methods create a memory-mapped file that is not mapped to an existing file on disk; and are suitable for creating shared memory for interprocess communication (IPC).  
+ 
+A memory-mapped file is associated with a name.  
+ 
+You can create multiple views of the memory-mapped file, including views of parts of the file. You can map the same part of a file to more than one address to create concurrent memory. For two views to remain concurrent, they have to be created from the same memory-mapped file. Creating two file mappings of the same file with two views does not provide concurrency.  
+ 
   
- The <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A> methods create a memory-mapped file from a specified path or a <xref:System.IO.FileStream> of an existing file on disk. Changes are automatically propagated to disk when the file is unmapped.  
-  
- The <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> methods create a memory-mapped file that is not mapped to an existing file on disk; and are suitable for creating shared memory for interprocess communication (IPC).  
-  
- A memory-mapped file is associated with a name.  
-  
- You can create multiple views of the memory-mapped file, including views of parts of the file. You can map the same part of a file to more than one address to create concurrent memory. For two views to remain concurrent, they have to be created from the same memory-mapped file. Creating two file mappings of the same file with two views does not provide concurrency.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a memory-mapped view of a part of an extremely large file and manipulates a portion of it.  
-  
- [!code-csharp[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](~/samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/cs/program.cs#1)]
- [!code-vb[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/vb/program.vb#1)]  
-  
+The following example creates a memory-mapped view of a part of an extremely large file and manipulates a portion of it.  
+ 
+[!code-csharp[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](~/samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/cs/program.cs#1)]
+[!code-vb[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,13 +81,13 @@
         <returns>A memory-mapped file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A> method to create a memory-mapped file, and then creates a memory-mapped view to a portion of an extremely large file.  
-  
- [!code-csharp[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](~/samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/cs/program.cs#1)]
- [!code-vb[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/vb/program.vb#1)]  
-  
+The following example uses the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A> method to create a memory-mapped file, and then creates a memory-mapped view to a portion of an extremely large file.  
+ 
+[!code-csharp[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](~/samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/cs/program.cs#1)]
+[!code-vb[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -136,10 +136,10 @@
         <returns>A memory-mapped file that has the specified access mode.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode> enumeration value to create the memory-mapped file from the source file on disk.  
-  
+The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode> enumeration value to create the memory-mapped file from the source file on disk.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -203,10 +203,10 @@
         <returns>A memory-mapped file that has the specified name and access mode.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode> enumeration value to create the memory-mapped file from the source file on disk.  
-  
+The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode> enumeration value to create the memory-mapped file from the source file on disk.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -276,12 +276,12 @@
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `mode` parameter pertains to the source file on disk.  
-  
- If `capacity` is larger than the size of the file on disk, the file on disk is increased to match the specified capacity even if no data is written to the memory-mapped file. To prevent this from occurring, specify 0 (zero) for the default capacity, which will internally set `capacity` to the size of the file on disk.  
-  
+The `mode` parameter pertains to the source file on disk.  
+ 
+If `capacity` is larger than the size of the file on disk, the file on disk is increased to match the specified capacity even if no data is written to the memory-mapped file. To prevent this from occurring, specify 0 (zero) for the default capacity, which will internally set `capacity` to the size of the file on disk.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -358,12 +358,12 @@
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `mode` parameter pertains to the source file on disk.  
-  
- If `capacity` is larger than the size of the file on disk, the file on disk is increased to match the specified capacity even if no data is written to the memory-mapped file. To prevent this from occurring, specify 0 (zero) for the default capacity, which will internally set `capacity` to the size of the file on disk.  
-  
+The `mode` parameter pertains to the source file on disk.  
+ 
+If `capacity` is larger than the size of the file on disk, the file on disk is increased to match the specified capacity even if no data is written to the memory-mapped file. To prevent this from occurring, specify 0 (zero) for the default capacity, which will internally set `capacity` to the size of the file on disk.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -529,10 +529,10 @@
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `capacity` is larger than the size of the file on disk, the file on disk is increased to match the specified capacity even if no data is written to the memory-mapped file. To prevent this from occurring, specify 0 (zero) for the default capacity, which will internally set `capacity` to the size of the file on disk.  
-  
+If `capacity` is larger than the size of the file on disk, the file on disk is increased to match the specified capacity even if no data is written to the memory-mapped file. To prevent this from occurring, specify 0 (zero) for the default capacity, which will internally set `capacity` to the size of the file on disk.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -602,41 +602,41 @@
         <returns>A memory-mapped file that has the specified name and capacity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to create a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
+Use this method to create a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is composed of three separate processes (console applications) that write `Boolean` values to a memory-mapped file. The following sequence of actions occur:  
-  
+The following example is composed of three separate processes (console applications) that write `Boolean` values to a memory-mapped file. The following sequence of actions occur:  
+ 
 1.  Process A creates the memory-mapped file and writes a value to it.  
-  
+ 
 2.  Process B opens the memory-mapped file and writes a value to it.  
-  
+ 
 3.  Process C opens the memory-mapped file and writes a value to it.  
-  
+ 
 4.  Process A reads and displays the values from the memory-mapped file.  
-  
+ 
 5.  After Process A is finished with the memory-mapped file, the file is immediately reclaimed by garbage collection.  
-  
- To run this example, do the following:  
-  
+ 
+To run this example, do the following:  
+ 
 1.  Compile the applications and open three Command windows.  
-  
+ 
 2.  In the first Command window, run Process A.  
-  
+ 
 3.  In the second Command window, run Process B.  
-  
+ 
 4.  Return to Process A and press ENTER.  
-  
+ 
 5.  In the third Command window, run Process C.  
-  
+ 
 6.  Return to Process A and press ENTER.  
-  
- The output of Process A is as follows:  
-  
+ 
+The output of Process A is as follows:  
+ 
 ```  
 Start Process B and press ENTER to continue.  
 Start Process C and press ENTER to continue.  
@@ -644,22 +644,22 @@ Process A says: True
 Process B says: False  
 Process C says: True  
 ```  
-  
- **Process A**  
-  
- [!code-csharp[System.IO.MemoryMappedFiles_IPC_X#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_x/cs/program.cs#1)]
- [!code-vb[System.IO.MemoryMappedFiles_IPC_X#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_x/vb/program.vb#1)]  
-  
- **Process B**  
-  
- [!code-csharp[System.IO.MemoryMappedFiles_IPC_A#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_a/cs/program.cs#1)]
- [!code-vb[System.IO.MemoryMappedFiles_IPC_A#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_a/vb/program.vb#1)]  
-  
- **Process C**  
-  
- [!code-csharp[System.IO.MemoryMappedFiles_IPC_B#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/cs/program.cs#1)]
- [!code-vb[System.IO.MemoryMappedFiles_IPC_B#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/vb/program.vb#1)]  
-  
+ 
+**Process A**  
+ 
+[!code-csharp[System.IO.MemoryMappedFiles_IPC_X#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_x/cs/program.cs#1)]
+[!code-vb[System.IO.MemoryMappedFiles_IPC_X#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_x/vb/program.vb#1)]  
+ 
+**Process B**  
+ 
+[!code-csharp[System.IO.MemoryMappedFiles_IPC_A#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_a/cs/program.cs#1)]
+[!code-vb[System.IO.MemoryMappedFiles_IPC_A#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_a/vb/program.vb#1)]  
+ 
+**Process C**  
+ 
+[!code-csharp[System.IO.MemoryMappedFiles_IPC_B#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/cs/program.cs#1)]
+[!code-vb[System.IO.MemoryMappedFiles_IPC_B#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -704,10 +704,10 @@ Process C says: True
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to create a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
-  
+Use this method to create a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -817,10 +817,10 @@ Process C says: True
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to create a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
-  
+Use this method to create a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -876,10 +876,10 @@ Process C says: True
         <returns>A memory-mapped file that has the specified name and size.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to create or open a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
-  
+Use this method to create or open a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -928,10 +928,10 @@ Process C says: True
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to create or open a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
-  
+Use this method to create or open a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1051,10 +1051,10 @@ Process C says: True
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to create or open a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
-  
+Use this method to create or open a memory-mapped file that is not persisted (that is, not associated with a file on disk), which you can use to share data between processes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1110,10 +1110,10 @@ Process C says: True
         <returns>A randomly accessible block of memory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the view returned by this method for random access to a memory-mapped file.  
-  
+You can use the view returned by this method for random access to a memory-mapped file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">Access to the memory-mapped file is unauthorized.</exception>
@@ -1151,20 +1151,20 @@ Process C says: True
         <returns>A randomly accessible block of memory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the view returned by this method for random access to a memory-mapped file.  
+You can use the view returned by this method for random access to a memory-mapped file.  
+ 
+To create a complete view of the memory-mapped file, specify 0 (zero) for the `size` parameter. If you do this, the size of the view might be smaller or larger than the size of the source file on disk. This is because views are provided in units of system pages, and the size of the view is rounded up to the next system page size.  
+ 
   
- To create a complete view of the memory-mapped file, specify 0 (zero) for the `size` parameter. If you do this, the size of the view might be smaller or larger than the size of the source file on disk. This is because views are provided in units of system pages, and the size of the view is rounded up to the next system page size.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a view of a memory-mapped file and edits it. This code example is part of a larger example provided for the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.  
-  
- [!code-csharp[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#2](~/samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/cs/program.cs#2)]
- [!code-vb[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/vb/program.vb#2)]  
-  
+The following example creates a view of a memory-mapped file and edits it. This code example is part of a larger example provided for the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.  
+ 
+[!code-csharp[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#2](~/samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/cs/program.cs#2)]
+[!code-vb[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/vb/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1211,12 +1211,12 @@ Process C says: True
         <returns>A randomly accessible block of memory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the view returned by this method for random access to a memory-mapped file.  
-  
- To create a complete view of the memory-mapped file, specify 0 (zero) for the `size` parameter. If you do this, the size of the view might be smaller or larger than the size of the source file on disk. This is because views are provided in units of system pages, and the size of the view is rounded up to the next system page size.  
-  
+You can use the view returned by this method for random access to a memory-mapped file.  
+ 
+To create a complete view of the memory-mapped file, specify 0 (zero) for the `size` parameter. If you do this, the size of the view might be smaller or larger than the size of the source file on disk. This is because views are provided in units of system pages, and the size of the view is rounded up to the next system page size.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1258,18 +1258,18 @@ Process C says: True
         <returns>A stream of memory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the stream returned by this method for sequential access to a memory-mapped file, such as for inter-process communications.  
+You can use the stream returned by this method for sequential access to a memory-mapped file, such as for inter-process communications.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a stream and writes a value to it. This code example is part of a larger example provided for the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> method.  
-  
- [!code-csharp[System.IO.MemoryMappedFiles_IPC_X#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_x/cs/program.cs#2)]
- [!code-vb[System.IO.MemoryMappedFiles_IPC_X#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_x/vb/program.vb#2)]  
-  
+The following example creates a stream and writes a value to it. This code example is part of a larger example provided for the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> method.  
+ 
+[!code-csharp[System.IO.MemoryMappedFiles_IPC_X#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_x/cs/program.cs#2)]
+[!code-vb[System.IO.MemoryMappedFiles_IPC_X#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_x/vb/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">Access to the memory-mapped file is unauthorized.</exception>
@@ -1307,12 +1307,12 @@ Process C says: True
         <returns>A stream of memory that has the specified offset and size.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the stream returned by this method for sequential access to a memory-mapped file, such as for inter-process communications.  
-  
- To create a complete view of the memory-mapped file, specify 0 (zero) for the `size` parameter. If you do this, the size of the view might be smaller or larger than the size of the source file on disk. This is because views are provided in units of system pages, and the size of the view is rounded up to the next system page size.  
-  
+You can use the stream returned by this method for sequential access to a memory-mapped file, such as for inter-process communications.  
+ 
+To create a complete view of the memory-mapped file, specify 0 (zero) for the `size` parameter. If you do this, the size of the view might be smaller or larger than the size of the source file on disk. This is because views are provided in units of system pages, and the size of the view is rounded up to the next system page size.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1360,12 +1360,12 @@ Process C says: True
         <returns>A stream of memory that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the stream returned by this method for sequential access to a memory-mapped file, such as for inter-process communications.  
-  
- To create a complete view of the memory-mapped file, specify 0 (zero) for the `size` parameter. If you do this, the size of the view might be smaller or larger than the size of the source file on disk. This is because views are provided in units of system pages, and the size of the view is rounded up to the next system page size.  
-  
+You can use the stream returned by this method for sequential access to a memory-mapped file, such as for inter-process communications.  
+ 
+To create a complete view of the memory-mapped file, specify 0 (zero) for the `size` parameter. If you do this, the size of the view might be smaller or larger than the size of the source file on disk. This is because views are provided in units of system pages, and the size of the view is rounded up to the next system page size.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1506,24 +1506,24 @@ Process C says: True
         <returns>A memory-mapped file that has the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The memory-mapped file can be either a persisted memory-mapped file (associated with a file on disk) or non persisted.  
+The memory-mapped file can be either a persisted memory-mapped file (associated with a file on disk) or non persisted.  
+ 
   
-   
-  
+ 
 ## Examples  
- **Opening a Persisted Memory-Mapped File**  
-  
- The following example opens a memory-mapped file named `ImgA` that has already been created from a file on disk (as shown in the example for the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%28System.String%29> method).  
-  
- [!code-csharp[memorymappedfiles.memorymappedfile.openexisting#1](~/samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.openexisting/cs/program.cs#1)]
- [!code-vb[memorymappedfiles.memorymappedfile.openexisting#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.openexisting/vb/program.vb#1)]  
-  
- **Opening a Non-Persisted Memory-Mapped File**  
-  
- The following example opens a memory-mapped file used for inter-process communication. This code example is part of a larger example provided for the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%28System.String%2CSystem.Int64%29> method.  
-  
+**Opening a Persisted Memory-Mapped File**  
+ 
+The following example opens a memory-mapped file named `ImgA` that has already been created from a file on disk (as shown in the example for the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%28System.String%29> method).  
+ 
+[!code-csharp[memorymappedfiles.memorymappedfile.openexisting#1](~/samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.openexisting/cs/program.cs#1)]
+[!code-vb[memorymappedfiles.memorymappedfile.openexisting#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.openexisting/vb/program.vb#1)]  
+ 
+**Opening a Non-Persisted Memory-Mapped File**  
+ 
+The following example opens a memory-mapped file used for inter-process communication. This code example is part of a larger example provided for the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%28System.String%2CSystem.Int64%29> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

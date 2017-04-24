@@ -30,30 +30,30 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Media.GradientStop" /> objects that can be individually accessed by index.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.GradientStopCollection> is used by the <xref:System.Windows.Media.GradientBrush> classes to store <xref:System.Windows.Media.GradientStop> information.  
-  
- Except as noted, members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation.  
-  
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.GradientStopCollection> class provides several special features: <xref:System.Windows.Media.GradientStopCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+<xref:System.Windows.Media.GradientStopCollection> is used by the <xref:System.Windows.Media.GradientBrush> classes to store <xref:System.Windows.Media.GradientStop> information.  
+ 
+Except as noted, members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation.  
+ 
+**Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.GradientStopCollection> class provides several special features: <xref:System.Windows.Media.GradientStopCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
 <a name="xamlImplicitCollectionUsage_GradientStopCollection"></a>   
 ## XAML Implicit Collection Usage  
-  
+ 
 ```  
 <object>  
-  <object.property>  
-    oneOrMoreGradientStopObjectElements  
-  </object.property>  
+ <object.property>  
+   oneOrMoreGradientStopObjectElements  
+ </object.property>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_GradientStopCollection"></a>   
 ## XAML Values  
- *oneOrMoreGradientStopObjectElements*  
- One or more <xref:System.Windows.Media.GradientStop> objects, declared using object element syntax.  
-  
+*oneOrMoreGradientStopObjectElements*  
+One or more <xref:System.Windows.Media.GradientStop> objects, declared using object element syntax.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -131,10 +131,10 @@
         <summary>Adds a <see cref="T:System.Windows.Media.GradientStop" /> to the gradient stop collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
-  
+Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -163,10 +163,10 @@
         <summary>Removes all items from the gradient stop list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not change the capacity of the <xref:System.Windows.Media.GradientStopCollection>.  
-  
+This method does not change the capacity of the <xref:System.Windows.Media.GradientStopCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GradientStopCollection" /> is read-only.</exception>
@@ -190,12 +190,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,12 +239,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,10 +343,10 @@
         <value>The number of items in a <see cref="T:System.Windows.Media.GradientStopCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method implements the <xref:System.Collections.ICollection.Count%2A> method from the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)].  
-  
+This method implements the <xref:System.Collections.ICollection.Count%2A> method from the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -452,20 +452,20 @@
         <returns>An <see cref="T:System.Windows.Media.GradientStopCollection.Enumerator" /> that can iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first item in the collection. also brings the enumerator back to this position. At this position, calling <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> to advance the enumerator to the first item of the collection before reading the value of <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A>.  
-  
- <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> returns the same object until either <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> or <xref:System.Windows.Media.GradientStopCollection.Enumerator.Reset%2A> is called. <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> sets <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> to the next item.  
-  
- After the end of the collection is passed, the enumerator is positioned after the last item in the collection, and calling <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> returns `false`. If the last call to <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> returned `false`, calling <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> throws an exception. To set <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> to the first item of the collection again, you can call <xref:System.Windows.Media.GradientStopCollection.Enumerator.Reset%2A> followed by <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting items, the enumerator is irrecoverably invalidated and the next call to <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> or <xref:System.Windows.Media.GradientStopCollection.Enumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> and <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A>, <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> will return the item that it is set to, even if the enumerator is already invalidated.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
+Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first item in the collection. also brings the enumerator back to this position. At this position, calling <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> to advance the enumerator to the first item of the collection before reading the value of <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A>.  
+ 
+<xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> returns the same object until either <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> or <xref:System.Windows.Media.GradientStopCollection.Enumerator.Reset%2A> is called. <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> sets <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> to the next item.  
+ 
+After the end of the collection is passed, the enumerator is positioned after the last item in the collection, and calling <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> returns `false`. If the last call to <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> returned `false`, calling <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> throws an exception. To set <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> to the first item of the collection again, you can call <xref:System.Windows.Media.GradientStopCollection.Enumerator.Reset%2A> followed by <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting items, the enumerator is irrecoverably invalidated and the next call to <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> or <xref:System.Windows.Media.GradientStopCollection.Enumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Windows.Media.GradientStopCollection.Enumerator.MoveNext%2A> and <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A>, <xref:System.Windows.Media.GradientStopCollection.Enumerator.Current%2A> will return the item that it is set to, even if the enumerator is already invalidated.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -514,10 +514,10 @@
         <summary>Inserts a <see cref="T:System.Windows.Media.GradientStop" /> at the specified position in the gradient stop list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
-  
+Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -552,10 +552,10 @@
         <value>The <see cref="T:System.Windows.Media.GradientStop" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
-  
+Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -658,10 +658,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Windows.Media.GradientStopCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,10 +684,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -714,10 +714,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -740,10 +740,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Windows.Media.GradientStopCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -765,12 +765,12 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Media.GradientStopCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- Example  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
+Example  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -793,12 +793,12 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- Example  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
+Example  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -824,10 +824,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -854,10 +854,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Media.GradientStopCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -883,10 +883,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -913,10 +913,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -939,10 +939,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.GradientStopCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -965,10 +965,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.GradientStopCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -994,10 +994,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1022,10 +1022,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1061,10 +1061,10 @@
         <returns>A <see cref="T:System.String" /> containing the value of the current instance in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.IFormattable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.GradientStopCollection> instance is cast to an <xref:System.IFormattable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

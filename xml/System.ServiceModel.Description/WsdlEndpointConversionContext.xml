@@ -14,34 +14,34 @@
     <summary>Passed to custom WSDL exporters and importers to enable customization of the metadata export and import processes for a WSDL endpoint.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext> class represents the context in which the custom WSDL for an endpoint is either exported using <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=fullName> or imported using <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName>. The following properties enable you to retrieve the WSDL document object model for the current WSDL:  
-  
+The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext> class represents the context in which the custom WSDL for an endpoint is either exported using <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=fullName> or imported using <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName>. The following properties enable you to retrieve the WSDL document object model for the current WSDL:  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.ContractConversionContext%2A> property gets the <xref:System.ServiceModel.Description.WsdlContractConversionContext?displayProperty=fullName> for the endpoint contract.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.Endpoint%2A> property gets the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName> for the current endpoint.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.WsdlBinding%2A> property gets the binding for the current endpoint.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.WsdlPort%2A> property gets the port for the current endpoint.  
-  
+ 
 -  
-  
+ 
 -   The following methods enable you to add or remove custom WSDL elements to the appropriate scopes in the exported or imported WSDL:  
-  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetFaultBinding%2A> method returns the fault binding for the specified fault.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetFaultDescription%2A> method returns the fault for the specified fault binding.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetMessageBinding%2A> method returns the message binding for the specified message.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetMessageDescription%2A> method returns the message for the specified message binding.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetOperationBinding%2A> method returns the operation binding for the specified operation.  
-  
+ 
 -   The <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetOperationDescription%2A> method returns the operation for the specified operation binding.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.WsdlContractConversionContext" /> being exported or imported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.ContractConversionContext%2A> to obtain the conversion context of the contract for the endpoint.  
-  
+Use the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.ContractConversionContext%2A> to obtain the conversion context of the contract for the endpoint.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> being exported or imported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.Endpoint%2A> property to obtain the service endpoint description on export or import.  
-  
+Use the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.Endpoint%2A> property to obtain the service endpoint description on export or import.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,10 +117,10 @@
         <returns>The WSDL <see cref="T:System.Web.Services.Description.FaultBinding" /> associated with the fault.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetFaultDescription%2A> method.  
-  
+This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetFaultDescription%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <returns>The <see cref="T:System.ServiceModel.Description.FaultDescription" /> for the fault associated with the WSDL binding.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetFaultBinding%2A> method.  
-  
+This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetFaultBinding%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <returns>The <see cref="T:System.Web.Services.Description.MessageBinding" /> for the message specified by the description.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetMessageDescription%2A> method.  
-  
+This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetMessageDescription%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <returns>The <see cref="T:System.ServiceModel.Description.MessageDescription" /> for the message specified by the binding.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetMessageBinding%2A> method.  
-  
+This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetMessageBinding%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <returns>The <see cref="T:System.Web.Services.Description.OperationBinding" /> for the operation specified by the description.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetOperationDescription%2A> method.  
-  
+This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetOperationDescription%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,10 +262,10 @@
         <returns>The <see cref="T:System.ServiceModel.Description.OperationDescription" /> of the operation associated with the binding.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetOperationBinding%2A> method.  
-  
+This method is the inverse of the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext.GetOperationBinding%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

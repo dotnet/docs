@@ -175,10 +175,10 @@
         <returns>A <see cref="P:System.ServiceModel.Security.WSTrustChannel.Contract" /> object that represents the new channel.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object returned is an instance of the <xref:System.ServiceModel.Security.WSTrustChannel> class.  
-  
+The object returned is an instance of the <xref:System.ServiceModel.Security.WSTrustChannel> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,12 +201,12 @@
         <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> initialized with the properties of the trust client.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenResolver%2A> property is set to `null`, the ClientCertificate set on the factory Endpoint's ClientCredentials behavior will be used to create a resolver. If no such certificate is found, an empty resolver is used.  
-  
- If <xref:System.ServiceModel.Security.WSTrustChannelFactory.UseKeyTokenResolver%2A> is set to `null`, an empty resolver will be used.  
-  
+If the <xref:System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenResolver%2A> property is set to `null`, the ClientCertificate set on the factory Endpoint's ClientCredentials behavior will be used to create a resolver. If no such certificate is found, an empty resolver is used.  
+ 
+If <xref:System.ServiceModel.Security.WSTrustChannelFactory.UseKeyTokenResolver%2A> is set to `null`, an empty resolver will be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <value>The <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the value of this property after a channel has been created.  
-  
+You cannot change the value of this property after a channel has been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,12 +283,12 @@
         <value>The <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set, channels created by this factory will use the ClientCertificate set on the factory Endpoint's ClientCredentials behavior to create a resolver. If no such certificate is found, an empty resolver is used.  
-  
- You cannot change the value of this property after a channel has been created.  
-  
+If this property is not set, channels created by this factory will use the ClientCertificate set on the factory Endpoint's ClientCredentials behavior to create a resolver. If no such certificate is found, an empty resolver is used.  
+ 
+You cannot change the value of this property after a channel has been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,12 +310,12 @@
         <value>The version of WS-Trust that channels created by this factory use for serializing messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set, channels created by this factory will use the <xref:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion%2A> set on any <xref:System.ServiceModel.Channels.SecurityBindingElement> found on the channel factory's Endpoint object if one exists.  
-  
- You cannot change the value of this property after a channel has been created.  
-  
+If this property is not set, channels created by this factory will use the <xref:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion%2A> set on any <xref:System.ServiceModel.Channels.SecurityBindingElement> found on the channel factory's Endpoint object if one exists.  
+ 
+You cannot change the value of this property after a channel has been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,12 +337,12 @@
         <value>The <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set an empty resolver is used.  
-  
- You cannot change the value of this property after a channel has been created.  
-  
+If this property is not set an empty resolver is used.  
+ 
+You cannot change the value of this property after a channel has been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,12 +364,12 @@
         <value>The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set, either a <xref:System.IdentityModel.Protocols.WSTrust.WSTrust13RequestSerializer> object or a <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005RequestSerializer> object will be used. The serializer that is used will correspond to the version of WS-Trust indicated by the <xref:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion%2A> property.  
-  
- You cannot change the value of this property after a channel has been created.  
-  
+If this property is not set, either a <xref:System.IdentityModel.Protocols.WSTrust.WSTrust13RequestSerializer> object or a <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005RequestSerializer> object will be used. The serializer that is used will correspond to the version of WS-Trust indicated by the <xref:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion%2A> property.  
+ 
+You cannot change the value of this property after a channel has been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,12 +391,12 @@
         <value>The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set, either a <xref:System.IdentityModel.Protocols.WSTrust.WSTrust13ResponseSerializer> object or a <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer> object will be used. The serializer that is used will correspond to the version of WS-Trust indicated by the <xref:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion%2A> property.  
-  
- You cannot change the value of this property after a channel has been created.  
-  
+If this property is not set, either a <xref:System.IdentityModel.Protocols.WSTrust.WSTrust13ResponseSerializer> object or a <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer> object will be used. The serializer that is used will correspond to the version of WS-Trust indicated by the <xref:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion%2A> property.  
+ 
+You cannot change the value of this property after a channel has been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>

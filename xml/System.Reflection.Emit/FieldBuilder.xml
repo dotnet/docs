@@ -34,22 +34,22 @@
     <summary>Defines and represents a field. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Get an instance of `FieldBuilder` by calling <xref:System.Reflection.Emit.TypeBuilder.DefineField%2A>, <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A>, or <xref:System.Reflection.Emit.ModuleBuilder.DefineUninitializedData%2A>.  
-  
+Get an instance of `FieldBuilder` by calling <xref:System.Reflection.Emit.TypeBuilder.DefineField%2A>, <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A>, or <xref:System.Reflection.Emit.ModuleBuilder.DefineUninitializedData%2A>.  
+ 
 > [!NOTE]
 >  The <xref:System.Reflection.Emit.FieldBuilder.SetValue%2A> method is currently not supported. As a workaround, retrieve the <xref:System.Reflection.FieldInfo> by reflecting on the finished type and call <xref:System.Reflection.FieldInfo.SetValue%2A> to set the value of the field.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `FieldBuilder`.  
-  
- [!code-cpp[FieldBuilder_Class_Name#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_Class_Name/CPP/fieldbuilder_name.cpp#1)]
- [!code-csharp[FieldBuilder_Class_Name#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_Class_Name/CS/fieldbuilder_name.cs#1)]
- [!code-vb[FieldBuilder_Class_Name#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_Class_Name/VB/fieldbuilder_name.vb#1)]  
-  
+The following code sample illustrates the use of `FieldBuilder`.  
+ 
+[!code-cpp[FieldBuilder_Class_Name#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_Class_Name/CPP/fieldbuilder_name.cpp#1)]
+[!code-csharp[FieldBuilder_Class_Name#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_Class_Name/CS/fieldbuilder_name.cs#1)]
+[!code-vb[FieldBuilder_Class_Name#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_Class_Name/VB/fieldbuilder_name.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,14 +91,14 @@
         <value>The attributes of this field.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following code sample illustrates the use of `Attributes`.  
-  
- [!code-cpp[FieldBuilder_ReflectedType#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_ReflectedType/CPP/fieldbuilder_reflectedtype.cpp#1)]
- [!code-csharp[FieldBuilder_ReflectedType#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_ReflectedType/CS/fieldbuilder_reflectedtype.cs#1)]
- [!code-vb[FieldBuilder_ReflectedType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_ReflectedType/VB/fieldbuilder_reflectedtype.vb#1)]  
-  
+The following code sample illustrates the use of `Attributes`.  
+ 
+[!code-cpp[FieldBuilder_ReflectedType#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_ReflectedType/CPP/fieldbuilder_reflectedtype.cpp#1)]
+[!code-csharp[FieldBuilder_ReflectedType#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_ReflectedType/CS/fieldbuilder_reflectedtype.cs#1)]
+[!code-vb[FieldBuilder_ReflectedType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_ReflectedType/VB/fieldbuilder_reflectedtype.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,14 +265,14 @@
         <returns>An <see cref="T:System.Object" /> containing the value of the field reflected by this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the field is `static`, the `obj` parameter is ignored. For non-static fields, `obj` should be an instance of a class that inherits or declares the field.  
-  
- The return type of <xref:System.Reflection.Emit.FieldBuilder.GetValue%2A> is <xref:System.Object>. For example, if the field holds a Boolean primitive value, an instance of <xref:System.Object> with the appropriate Boolean value is returned. Before returning the value, <xref:System.Reflection.Emit.FieldBuilder.GetValue%2A> checks to see if the user has access permission.  
-  
- Access restrictions are ignored for fully-trusted code. `Private` constructors, methods, fields, and properties can be accessed and invoked using Reflection whenever the code is fully-trusted.  
-  
+If the field is `static`, the `obj` parameter is ignored. For non-static fields, `obj` should be an instance of a class that inherits or declares the field.  
+ 
+The return type of <xref:System.Reflection.Emit.FieldBuilder.GetValue%2A> is <xref:System.Object>. For example, if the field holds a Boolean primitive value, an instance of <xref:System.Object> with the appropriate Boolean value is returned. Before returning the value, <xref:System.Reflection.Emit.FieldBuilder.GetValue%2A> checks to see if the user has access permission.  
+ 
+Access restrictions are ignored for fully-trusted code. `Private` constructors, methods, fields, and properties can be accessed and invoked using Reflection whenever the code is fully-trusted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -346,14 +346,14 @@
         <value>A <see cref="T:System.String" /> containing the name of this field.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following code sample illustrates the use of `Name`.  
-  
- [!code-cpp[FieldBuilder_Class_Name#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_Class_Name/CPP/fieldbuilder_name.cpp#1)]
- [!code-csharp[FieldBuilder_Class_Name#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_Class_Name/CS/fieldbuilder_name.cs#1)]
- [!code-vb[FieldBuilder_Class_Name#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_Class_Name/VB/fieldbuilder_name.vb#1)]  
-  
+The following code sample illustrates the use of `Name`.  
+ 
+[!code-cpp[FieldBuilder_Class_Name#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_Class_Name/CPP/fieldbuilder_name.cpp#1)]
+[!code-csharp[FieldBuilder_Class_Name#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_Class_Name/CS/fieldbuilder_name.cs#1)]
+[!code-vb[FieldBuilder_Class_Name#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_Class_Name/VB/fieldbuilder_name.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -376,16 +376,16 @@
         <value>A reference to the <see cref="T:System.Type" /> object from which this instance was obtained.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Reflection.Emit.FieldBuilder> object represents a field of a particular class. In order to obtain a <xref:System.Reflection.Emit.FieldBuilder> object, the <xref:System.Type> object that represents the class that supports the field is queried. This property holds a reference to that <xref:System.Type> object.  
-  
- The following code sample illustrates the use of `ReflectedType`.  
-  
- [!code-cpp[FieldBuilder_ReflectedType#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_ReflectedType/CPP/fieldbuilder_reflectedtype.cpp#1)]
- [!code-csharp[FieldBuilder_ReflectedType#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_ReflectedType/CS/fieldbuilder_reflectedtype.cs#1)]
- [!code-vb[FieldBuilder_ReflectedType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_ReflectedType/VB/fieldbuilder_reflectedtype.vb#1)]  
-  
+A <xref:System.Reflection.Emit.FieldBuilder> object represents a field of a particular class. In order to obtain a <xref:System.Reflection.Emit.FieldBuilder> object, the <xref:System.Type> object that represents the class that supports the field is queried. This property holds a reference to that <xref:System.Type> object.  
+ 
+The following code sample illustrates the use of `ReflectedType`.  
+ 
+[!code-cpp[FieldBuilder_ReflectedType#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_ReflectedType/CPP/fieldbuilder_reflectedtype.cpp#1)]
+[!code-csharp[FieldBuilder_ReflectedType#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_ReflectedType/CS/fieldbuilder_reflectedtype.cs#1)]
+[!code-vb[FieldBuilder_ReflectedType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_ReflectedType/VB/fieldbuilder_reflectedtype.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,10 +415,10 @@
         <summary>Sets the default value of this field.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `defaultValue` is restricted to the following types: `Boolean`, `SByte`, `Int16`, `Int32`, `Int64`, `Byte`, `UInt16`, `UInt32`, `UInt64`, `Single`, `Double`, `DateTime`, `Char`, `String`, and `Enum`. If the field type is a reference type, CLS compliance requires `defaultValue` to be `null`. However, starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], `defaultValue` can be non-null for a reference type as long as the value can be assigned to that reference type. For example, an `Int32` value can be assigned to a field of type <xref:System.Object>. This is not CLS-compliant, but it can be useful in interop scenarios.  
-  
+`defaultValue` is restricted to the following types: `Boolean`, `SByte`, `Int16`, `Int32`, `Int64`, `Byte`, `UInt16`, `UInt32`, `UInt64`, `Single`, `Double`, `DateTime`, `Char`, `String`, and `Enum`. If the field type is a reference type, CLS compliance requires `defaultValue` to be `null`. However, starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], `defaultValue` can be non-null for a reference type as long as the value can be assigned to that reference type. For example, an `Int32` value can be assigned to a field of type <xref:System.Object>. This is not CLS-compliant, but it can be useful in interop scenarios.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The containing type has been created using <see cref="M:System.Reflection.Emit.TypeBuilder.CreateType" />.</exception>
@@ -458,14 +458,14 @@
         <summary>Sets a custom attribute using a custom attribute builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.FieldBuilder>, using a <xref:System.Reflection.Emit.CustomAttributeBuilder>.  
-  
- [!code-cpp[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/CPP/fieldbuilder_setcustomattributes.cpp#1)]
- [!code-csharp[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/CS/fieldbuilder_setcustomattributes.cs#1)]
- [!code-vb[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/VB/fieldbuilder_setcustomattributes.vb#1)]  
-  
+The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.FieldBuilder>, using a <xref:System.Reflection.Emit.CustomAttributeBuilder>.  
+ 
+[!code-cpp[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/CPP/fieldbuilder_setcustomattributes.cpp#1)]
+[!code-csharp[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/CS/fieldbuilder_setcustomattributes.cs#1)]
+[!code-vb[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/VB/fieldbuilder_setcustomattributes.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -505,19 +505,19 @@
         <summary>Sets a custom attribute using a specified custom attribute blob.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.FieldBuilder>, using a byte blob.  
-  
- [!code-cpp[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/CPP/fieldbuilder_setcustomattributes.cpp#1)]
- [!code-csharp[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/CS/fieldbuilder_setcustomattributes.cs#1)]
- [!code-vb[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/VB/fieldbuilder_setcustomattributes.vb#1)]  
-  
+The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.FieldBuilder>, using a byte blob.  
+ 
+[!code-cpp[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/CPP/fieldbuilder_setcustomattributes.cpp#1)]
+[!code-csharp[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/CS/fieldbuilder_setcustomattributes.cs#1)]
+[!code-vb[FieldBuilder_SetCustomAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_SetCustomAttributes/VB/fieldbuilder_setcustomattributes.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -551,14 +551,14 @@
         <summary>Describes the native marshaling of the field.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following code sample illustrates the use of `SetMarshal`.  
-  
- [!code-cpp[FieldBuilder_SetOffset#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_SetOffset/CPP/fieldbuilder_setoffset.cpp#1)]
- [!code-csharp[FieldBuilder_SetOffset#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_SetOffset/CS/fieldbuilder_setoffset.cs#1)]
- [!code-vb[FieldBuilder_SetOffset#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_SetOffset/VB/fieldbuilder_setoffset.vb#1)]  
-  
+The following code sample illustrates the use of `SetMarshal`.  
+ 
+[!code-cpp[FieldBuilder_SetOffset#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_SetOffset/CPP/fieldbuilder_setoffset.cpp#1)]
+[!code-csharp[FieldBuilder_SetOffset#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_SetOffset/CS/fieldbuilder_setoffset.cs#1)]
+[!code-vb[FieldBuilder_SetOffset#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_SetOffset/VB/fieldbuilder_setoffset.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -591,14 +591,14 @@
         <summary>Specifies the field layout.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following code sample illustrates the use of `SetOffset`.  
-  
- [!code-cpp[FieldBuilder_SetOffset#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_SetOffset/CPP/fieldbuilder_setoffset.cpp#1)]
- [!code-csharp[FieldBuilder_SetOffset#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_SetOffset/CS/fieldbuilder_setoffset.cs#1)]
- [!code-vb[FieldBuilder_SetOffset#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_SetOffset/VB/fieldbuilder_setoffset.vb#1)]  
-  
+The following code sample illustrates the use of `SetOffset`.  
+ 
+[!code-cpp[FieldBuilder_SetOffset#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldBuilder_SetOffset/CPP/fieldbuilder_setoffset.cpp#1)]
+[!code-csharp[FieldBuilder_SetOffset#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldBuilder_SetOffset/CS/fieldbuilder_setoffset.cs#1)]
+[!code-vb[FieldBuilder_SetOffset#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_SetOffset/VB/fieldbuilder_setoffset.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The containing type has been created using <see cref="M:System.Reflection.Emit.TypeBuilder.CreateType" />.</exception>
@@ -635,17 +635,17 @@
         <summary>Sets the value of the field supported by the given object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will assign the `val` parameter to the field reflected by this instance on <xref:System.Object>`obj`. If the field is static, `obj` will be ignored. For non-static fields, `obj` should be an instance of a class that inherits or declares the field.  
-  
- The new value is passed as an <xref:System.Object>. For example, if the field's type is Boolean, an instance of <xref:System.Object> with the appropriate Boolean value is passed. Before setting the value, <xref:System.Reflection.Emit.FieldBuilder.SetValue%2A> checks to see if the user has access permission.  
-  
- Access restrictions are ignored for fully-trusted code. `Private` constructors, methods, fields, and properties can be accessed and invoked using Reflection whenever the code is fully-trusted.  
-  
+This method will assign the `val` parameter to the field reflected by this instance on <xref:System.Object>`obj`. If the field is static, `obj` will be ignored. For non-static fields, `obj` should be an instance of a class that inherits or declares the field.  
+ 
+The new value is passed as an <xref:System.Object>. For example, if the field's type is Boolean, an instance of <xref:System.Object> with the appropriate Boolean value is passed. Before setting the value, <xref:System.Reflection.Emit.FieldBuilder.SetValue%2A> checks to see if the user has access permission.  
+ 
+Access restrictions are ignored for fully-trusted code. `Private` constructors, methods, fields, and properties can be accessed and invoked using Reflection whenever the code is fully-trusted.  
+ 
 > [!NOTE]
 >  This method is currently not supported. As a workaround, retrieve the <xref:System.Reflection.FieldInfo> by reflecting on the finished type and call <xref:System.Reflection.FieldInfo.SetValue%2A> to set the value of the field.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -680,10 +680,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -714,10 +714,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -744,10 +744,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -788,10 +788,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>

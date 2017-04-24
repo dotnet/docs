@@ -19,18 +19,18 @@
     <summary>Represents the access control and audit security for a pipe.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity> class specifies the access rights for a pipe and how access attempts are audited.  This class represents access and audit rights as a set of rules. Each access rule is represented by a <xref:System.IO.Pipes.PipeAccessRule> object, while each audit rule is represented by a <xref:System.IO.Pipes.PipeAuditRule> object.  
-  
- The <xref:System.IO.Pipes.PipeSecurity> class is an abstraction of the underlying Microsoft Windows file security system. In this system, each pipe has a discretionary access control list (DACL), which controls access to the pipe, and a system access control list (SACL), which specifies the access control attempts that are audited.  The <xref:System.IO.Pipes.PipeAccessRule> and <xref:System.IO.Pipes.PipeAuditRule> classes are abstractions of the access control entries (ACEs) that comprise DACLs and SACLs.  
-  
- The <xref:System.IO.Pipes.PipeSecurity> class hides many of the details of DACLs and SACLs; you do not have to worry about ACE ordering or null DACLS.  
-  
- Use the <xref:System.IO.Pipes.PipeSecurity> class to retrieve, add, or change the access rules that represent the DACL and SACL of a pipe.  
-  
- To persist new or changed access or audit rules to a pipe, use the <xref:System.IO.Pipes.PipeStream.SetAccessControl%2A> method. To retrieve access or audit rules from an existing file, use the <xref:System.IO.Pipes.PipeStream.GetAccessControl%2A> method.  
-  
+The <xref:System.IO.Pipes.PipeSecurity> class specifies the access rights for a pipe and how access attempts are audited.  This class represents access and audit rights as a set of rules. Each access rule is represented by a <xref:System.IO.Pipes.PipeAccessRule> object, while each audit rule is represented by a <xref:System.IO.Pipes.PipeAuditRule> object.  
+ 
+The <xref:System.IO.Pipes.PipeSecurity> class is an abstraction of the underlying Microsoft Windows file security system. In this system, each pipe has a discretionary access control list (DACL), which controls access to the pipe, and a system access control list (SACL), which specifies the access control attempts that are audited.  The <xref:System.IO.Pipes.PipeAccessRule> and <xref:System.IO.Pipes.PipeAuditRule> classes are abstractions of the access control entries (ACEs) that comprise DACLs and SACLs.  
+ 
+The <xref:System.IO.Pipes.PipeSecurity> class hides many of the details of DACLs and SACLs; you do not have to worry about ACE ordering or null DACLS.  
+ 
+Use the <xref:System.IO.Pipes.PipeSecurity> class to retrieve, add, or change the access rules that represent the DACL and SACL of a pipe.  
+ 
+To persist new or changed access or audit rules to a pipe, use the <xref:System.IO.Pipes.PipeStream.SetAccessControl%2A> method. To retrieve access or audit rules from an existing file, use the <xref:System.IO.Pipes.PipeStream.GetAccessControl%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,14 +54,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.PipeSecurity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an empty <xref:System.IO.Pipes.PipeSecurity> object that is not based on an existing pipe. You can then populate the object with access control information and apply it to a pipe.  
-  
- You can add access or audit rules to the <xref:System.IO.Pipes.PipeSecurity> object using the <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method. You can remove access or audit rules using the <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method.  
-  
- To persist new or changed access or audit rules to a pipe, use the <xref:System.IO.Pipes.PipeStream.SetAccessControl%2A> method. To retrieve access or audit rules from an existing file, use the <xref:System.IO.Pipes.PipeStream.GetAccessControl%2A> method.  
-  
+This constructor creates an empty <xref:System.IO.Pipes.PipeSecurity> object that is not based on an existing pipe. You can then populate the object with access control information and apply it to a pipe.  
+ 
+You can add access or audit rules to the <xref:System.IO.Pipes.PipeSecurity> object using the <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method. You can remove access or audit rules using the <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method.  
+ 
+To persist new or changed access or audit rules to a pipe, use the <xref:System.IO.Pipes.PipeStream.SetAccessControl%2A> method. To retrieve access or audit rules from an existing file, use the <xref:System.IO.Pipes.PipeStream.GetAccessControl%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>The type of the securable object that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRightType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
-  
+Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRightType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,10 +133,10 @@
         <returns>The <see cref="T:System.Security.AccessControl.AccessRule" /> object that this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The recommended way to create access control rules is to use the constructors of the <xref:System.IO.Pipes.PipeAccessRule> class.  
-  
+The recommended way to create access control rules is to use the constructors of the <xref:System.IO.Pipes.PipeAccessRule> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -173,10 +173,10 @@
         <value>The type of the object that is associated with the access rules of the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRuleType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
-  
+Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRuleType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <summary>Adds an access rule to the Discretionary Access Control List (DACL) that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method adds a new rule to the list of rules that a <xref:System.IO.Pipes.PipeSecurity> object contains.If an access control list (ACL) already exists for the specified rule, the <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method will still add the rule, with one exception: a <xref:System.IO.Pipes.PipeAccessRule> object that is created using the <xref:System.Security.AccessControl.AccessControlType> value supersedes an object that is created using the <xref:System.Security.AccessControl.AccessControlType> value.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method adds a new rule to the list of rules that a <xref:System.IO.Pipes.PipeSecurity> object contains.If an access control list (ACL) already exists for the specified rule, the <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method will still add the rule, with one exception: a <xref:System.IO.Pipes.PipeAccessRule> object that is created using the <xref:System.Security.AccessControl.AccessControlType> value supersedes an object that is created using the <xref:System.Security.AccessControl.AccessControlType> value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
@@ -240,12 +240,12 @@
         <summary>Adds an audit rule to the System Access Control List (SACL)that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.AddAuditRule%2A> method adds a new audit rule to the list of rules that a <xref:System.IO.Pipes.PipeSecurity> object contains.  
-  
- If an audit rule already exists for the specified rule, the <xref:System.IO.Pipes.PipeSecurity.AddAuditRule%2A> method will still add the rule.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.AddAuditRule%2A> method adds a new audit rule to the list of rules that a <xref:System.IO.Pipes.PipeSecurity> object contains.  
+ 
+If an audit rule already exists for the specified rule, the <xref:System.IO.Pipes.PipeSecurity.AddAuditRule%2A> method will still add the rule.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
@@ -288,10 +288,10 @@
         <returns>The <see cref="T:System.Security.AccessControl.AuditRule" /> object that this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The recommended way to create audit rules is to use the constructors of the <xref:System.IO.Pipes.PipeAuditRule> class.  
-  
+The recommended way to create audit rules is to use the constructors of the <xref:System.IO.Pipes.PipeAuditRule> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="accessMask" />, <paramref name="inheritanceFlags" />, <paramref name="propagationFlags" />, or <paramref name="flags" /> properties specify an invalid value.</exception>
@@ -325,10 +325,10 @@
         <value>The type of the object that is associated with the audit rules of the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AuditRuleType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
-  
+Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AuditRuleType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -412,10 +412,10 @@
           <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> access rules or all matching <xref:System.Security.AccessControl.AccessControlType> access rules from the current <xref:System.IO.Pipes.PipeSecurity> object. For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> access rules for a user by passing a <xref:System.IO.Pipes.PipeAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.IO.Pipes.PipeAccessRights> value, and a user account. The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.IO.Pipes.PipeAccessRights> value or the <xref:System.IO.Pipes.PipeAccessRights> value.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> access rules or all matching <xref:System.Security.AccessControl.AccessControlType> access rules from the current <xref:System.IO.Pipes.PipeSecurity> object. For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> access rules for a user by passing a <xref:System.IO.Pipes.PipeAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.IO.Pipes.PipeAccessRights> value, and a user account. The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.IO.Pipes.PipeAccessRights> value or the <xref:System.IO.Pipes.PipeAccessRights> value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
@@ -446,10 +446,10 @@
         <summary>Removes the specified access rule from the Discretionary Access Control List (DACL) that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> access rules or all matching <xref:System.Security.AccessControl.AccessControlType> access rules from the current <xref:System.IO.Pipes.PipeSecurity> object. For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> access rules for a user by passing a <xref:System.IO.Pipes.PipeAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.IO.Pipes.PipeAccessRights> value, and a user account. The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.IO.Pipes.PipeAccessRights> value or the <xref:System.IO.Pipes.PipeAccessRights> value.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> access rules or all matching <xref:System.Security.AccessControl.AccessControlType> access rules from the current <xref:System.IO.Pipes.PipeSecurity> object. For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> access rules for a user by passing a <xref:System.IO.Pipes.PipeAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.IO.Pipes.PipeAccessRights> value, and a user account. The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.IO.Pipes.PipeAccessRights> value or the <xref:System.IO.Pipes.PipeAccessRights> value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
@@ -482,10 +482,10 @@
           <see langword="true" /> if the audit rule was removed; otherwise, <see langword="false" /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> audit rules or all matching <xref:System.Security.AccessControl.AccessControlType> audit rules from the current <xref:System.IO.Pipes.PipeSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> audit rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value or the <xref:System.Security.AccessControl.AuditFlags> value.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> audit rules or all matching <xref:System.Security.AccessControl.AccessControlType> audit rules from the current <xref:System.IO.Pipes.PipeSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> audit rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value or the <xref:System.Security.AccessControl.AuditFlags> value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
@@ -516,10 +516,10 @@
         <summary>Removes all audit rules that have the same security identifier as the specified audit rule from the System Access Control List (SACL) that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleAll%2A> method removes all audit rules for the specified user.  It ignores all values in the <xref:System.IO.Pipes.PipeAuditRule> object except the user account.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleAll%2A> method removes all audit rules for the specified user.  It ignores all values in the <xref:System.IO.Pipes.PipeAuditRule> object except the user account.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
@@ -550,10 +550,10 @@
         <summary>Removes the specified audit rule from the System Access Control List (SACL) that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific%2A> method removes the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule or the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule from the current <xref:System.IO.Pipes.PipeSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType> audit rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific%2A> method removes only a deny rule that specifies the <xref:System.Security.AccessControl.AuditFlags> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific%2A> method removes the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule or the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule from the current <xref:System.IO.Pipes.PipeSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType> audit rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific%2A> method removes only a deny rule that specifies the <xref:System.Security.AccessControl.AuditFlags> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
@@ -584,10 +584,10 @@
         <summary>Removes all access rules in the Discretionary Access Control List (DACL) that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object and then adds the specified access rule.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights> value and the <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will also be overwritten.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights> value and the <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will also be overwritten.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
@@ -618,10 +618,10 @@
         <summary>Sets an access rule in the Discretionary Access Control List (DACL) that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the <xref:System.IO.Pipes.PipeAccessRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights> value and the <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will not be overwritten.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the <xref:System.IO.Pipes.PipeAccessRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights> value and the <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will not be overwritten.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
@@ -652,10 +652,10 @@
         <summary>Sets an audit rule in the System Access Control List (SACL) that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method adds the specified audit rule or overwrites any identical audit rules that match the <xref:System.IO.Pipes.PipeAccessRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights> value and the <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will not be overwritten.  
-  
+The <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method adds the specified audit rule or overwrites any identical audit rules that match the <xref:System.IO.Pipes.PipeAccessRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights> value and the <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will not be overwritten.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>

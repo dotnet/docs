@@ -14,10 +14,10 @@
     <summary>Generates types and attribute declarations from internal type mapping information for SOAP-encoded message parts defined in a WSDL document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapCodeExporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/en-us/b9210348-8bc2-4367-8c91-d1a04b403e88) and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using <xref:System.Xml.Serialization.SoapCodeExporter> directly, use Wsdl.exe.  
-  
+The <xref:System.Xml.Serialization.SoapCodeExporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/en-us/b9210348-8bc2-4367-8c91-d1a04b403e88) and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using <xref:System.Xml.Serialization.SoapCodeExporter> directly, use Wsdl.exe.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapCodeExporter" /> class, assuming no code compile unit.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instead of directly creating an instance of the <xref:System.Xml.Serialization.SoapCodeExporter> class, use the Wsdl.exe tool.  
-  
+Instead of directly creating an instance of the <xref:System.Xml.Serialization.SoapCodeExporter> class, use the Wsdl.exe tool.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -68,10 +68,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapCodeExporter" /> class, specifying a code compile unit parameter in addition to a namespace parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instead of directly creating an instance of the <xref:System.Xml.Serialization.SoapCodeExporter> class, use the Wsdl.exe tool.  
-  
+Instead of directly creating an instance of the <xref:System.Xml.Serialization.SoapCodeExporter> class, use the Wsdl.exe tool.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -98,10 +98,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapCodeExporter" /> class, specifying a code namespace, a code compile unit, and code generation options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instead of directly creating an instance of the <xref:System.Xml.Serialization.SoapCodeExporter> class, use the Wsdl.exe tool.  
-  
+Instead of directly creating an instance of the <xref:System.Xml.Serialization.SoapCodeExporter> class, use the Wsdl.exe tool.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -130,10 +130,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapCodeExporter" /> class, specifying a code namespace, a code compile unit, code generation options, and mappings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instead of directly creating an instance of the <xref:System.Xml.Serialization.SoapCodeExporter> class, use the Wsdl.exe tool.  
-  
+Instead of directly creating an instance of the <xref:System.Xml.Serialization.SoapCodeExporter> class, use the Wsdl.exe tool.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -188,10 +188,10 @@
         <summary>Add a <see cref="T:System.Xml.Serialization.SoapElementAttribute" /> declaration to a method parameter or return value corresponding to a part element of a SOAP message definition in a WSDL document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by the Wsdl.exe tool when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
-  
+This method is used by the Wsdl.exe tool when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -222,10 +222,10 @@
         <summary>Adds a <see cref="T:System.Xml.Serialization.SoapElementAttribute" /> declaration to a method parameter or return value that corresponds to a part element of a SOAP message definition in a WSDL document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by the Wsdl.exe tool when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
-  
+This method is used by the Wsdl.exe tool when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -251,10 +251,10 @@
         <summary>Generates a .NET Framework type, plus attribute declarations, for each of the parts that belong to a SOAP message definition in a WSDL document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by the Wsdl.exe tool when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
-  
+This method is used by the Wsdl.exe tool when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -280,10 +280,10 @@
         <summary>Generates a .NET Framework type, plus attribute declarations, for a SOAP header.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by the Wsdl.exe tool.  
-  
+This method is used by the Wsdl.exe tool.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

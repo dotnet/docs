@@ -27,12 +27,12 @@
     <summary>Indicates that information was lost about a class or interface when it was imported from a type library to an assembly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) applies this attribute to classes or interfaces.  
-  
- Methods that use `void` pointer arguments cause this attribute to be applied to the containing class or interface.  
-  
+The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) applies this attribute to classes or interfaces.  
+ 
+Methods that use `void` pointer arguments cause this attribute to be applied to the containing class or interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>

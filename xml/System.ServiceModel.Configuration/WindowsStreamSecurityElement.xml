@@ -170,10 +170,10 @@
         <value>A <see cref="T:System.Net.Security.ProtectionLevel" /> that specifies the message-level security used. The default value is <see cref="F:System.Net.Security.ProtectionLevel.EncryptAndSign" /> .</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies the message-level security used for signing and encryption. Signing messages mitigates the risk of a third party tampering with the message while it is being transferred. Encryption provides data-level privacy during transport.  
-  
+This property specifies the message-level security used for signing and encryption. Signing messages mitigates the risk of a third party tampering with the message while it is being transferred. Encryption provides data-level privacy during transport.  
+ 
  ]]></format>
         </remarks>
       </Docs>

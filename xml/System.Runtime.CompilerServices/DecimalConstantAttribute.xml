@@ -34,16 +34,16 @@
     <summary>Stores the value of a <see cref="T:System.Decimal" /> constant in metadata. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this attribute to specify at compile time that a decimal value is a constant value.  
-  
- You can apply this attribute to fields or parameters.  
-  
- For more information about constant attributes, see the <xref:System.Runtime.CompilerServices.CustomConstantAttribute> class.  
-  
- The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
-  
+Use this attribute to specify at compile time that a decimal value is a constant value.  
+ 
+You can apply this attribute to fields or parameters.  
+ 
+For more information about constant attributes, see the <xref:System.Runtime.CompilerServices.CustomConstantAttribute> class.  
+ 
+The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
+ 
  ]]></format>
     </remarks>
   </Docs>

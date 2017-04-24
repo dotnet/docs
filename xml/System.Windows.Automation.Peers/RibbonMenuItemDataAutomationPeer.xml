@@ -107,18 +107,18 @@
         <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If one of the following cases occurs, this method returns an object that supports the specified control pattern.  
-  
+If one of the following cases occurs, this method returns an object that supports the specified control pattern.  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonMenuItem> that is associated with this <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> has child objects.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonMenuItem> that is associated with this <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> does not have child objects.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonMenuItem> that is associated with this <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> has its checkable property set to `true`.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonMenuItem> that is associated with this <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> can be resized.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <summary>Hides all items that are in the <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> is not enabled.</exception>
@@ -172,10 +172,10 @@
         <summary>Displays all items that are in the <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> is not enabled.</exception>
@@ -204,10 +204,10 @@
         <value>The state of the <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> is virtualized.</exception>
@@ -231,10 +231,10 @@
         <summary>Sends a request to activate the <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> is not enabled.</exception>
@@ -259,10 +259,10 @@
         <summary>Cycles through the checked states of the <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> is not enabled.</exception>
@@ -291,10 +291,10 @@
         <value>The checked state of the <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> is virtualized.</exception>
@@ -319,10 +319,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITransformProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITransformProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer" /> can be resized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITransformProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITransformProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -371,10 +371,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITransformProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonMenuItemDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITransformProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

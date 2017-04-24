@@ -30,10 +30,10 @@
     <summary>Provides the default implementations of the <see cref="T:System.Runtime.Remoting.Contexts.IContextAttribute" /> and <see cref="T:System.Runtime.Remoting.Contexts.IContextProperty" /> interfaces.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Contexts.ContextAttribute> class is the root for all context attributes. Simple <xref:System.Runtime.Remoting.Contexts.Context> class properties can be derived from <xref:System.Runtime.Remoting.Contexts.ContextAttribute> with the context attribute and the context property being in the class. For more specialized or more sophisticated needs, the context attribute can derive from <xref:System.Runtime.Remoting.Contexts.ContextAttribute> and the context property can be split into a separated class. For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+The <xref:System.Runtime.Remoting.Contexts.ContextAttribute> class is the root for all context attributes. Simple <xref:System.Runtime.Remoting.Contexts.Context> class properties can be derived from <xref:System.Runtime.Remoting.Contexts.ContextAttribute> with the context attribute and the context property being in the class. For more specialized or more sophisticated needs, the context attribute can derive from <xref:System.Runtime.Remoting.Contexts.ContextAttribute> and the context property can be split into a separated class. For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -127,10 +127,10 @@
         <summary>Called when the context is frozen.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Context properties cannot be added after the context has been frozen.  
-  
+Context properties cannot be added after the context has been frozen.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -178,10 +178,10 @@
         <summary>Adds the current context property to the given message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Contexts.ContextAttribute> class is an implementation of an <xref:System.Runtime.Remoting.Contexts.IContextProperty> property. The <xref:System.Runtime.Remoting.Contexts.ContextAttribute.GetPropertiesForNewContext%2A> method adds the property to the given <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage> class so that when the message is received, the new object can be created in the required context environment.  
-  
+The <xref:System.Runtime.Remoting.Contexts.ContextAttribute> class is an implementation of an <xref:System.Runtime.Remoting.Contexts.IContextProperty> property. The <xref:System.Runtime.Remoting.Contexts.ContextAttribute.GetPropertiesForNewContext%2A> method adds the property to the given <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage> class so that when the message is received, the new object can be created in the required context environment.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="ctorMsg" /> parameter is <see langword="null" />.</exception>
@@ -239,13 +239,13 @@
           <see langword="true" /> if the context property is okay with the new context; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once all the context properties have been added to the new context, they are all queried as to whether they are okay in the new context. The context property could look at the other context properties in the <xref:System.Runtime.Remoting.Contexts.Context.ContextProperties%2A> property of the new context and determine whether it is compatible with these other context properties.  
-  
+Once all the context properties have been added to the new context, they are all queried as to whether they are okay in the new context. The context property could look at the other context properties in the <xref:System.Runtime.Remoting.Contexts.Context.ContextProperties%2A> property of the new context and determine whether it is compatible with these other context properties.  
+ 
 > [!NOTE]
 >  By default, the <xref:System.Runtime.Remoting.Contexts.ContextAttribute.IsNewContextOK%2A> method returns `true`.  
-  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -269,10 +269,10 @@
         <value>The name of the context attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default implementation of this property provides <xref:System.Runtime.Remoting.Contexts.ContextAttribute.AttributeName> as the property name.  
-  
+Default implementation of this property provides <xref:System.Runtime.Remoting.Contexts.ContextAttribute.AttributeName> as the property name.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

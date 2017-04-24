@@ -14,22 +14,22 @@
     <summary>Represents a smart tag panel item that is associated with a method in a class derived from <see cref="T:System.ComponentModel.Design.DesignerActionList" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionMethodItem> class represents individual items in a smart tag panel. An item of this type is displayed as an active user interface element, such as a hyperlink, that invokes a programmer-supplied method in a class derived from <xref:System.ComponentModel.Design.DesignerActionList>. The association between the item and the method is maintained through the value of the <xref:System.ComponentModel.Design.DesignerActionMethodItem.MemberName%2A> property. The method that this item invokes must neither take parameters nor return a value.  
+The <xref:System.ComponentModel.Design.DesignerActionMethodItem> class represents individual items in a smart tag panel. An item of this type is displayed as an active user interface element, such as a hyperlink, that invokes a programmer-supplied method in a class derived from <xref:System.ComponentModel.Design.DesignerActionList>. The association between the item and the method is maintained through the value of the <xref:System.ComponentModel.Design.DesignerActionMethodItem.MemberName%2A> property. The method that this item invokes must neither take parameters nor return a value.  
+ 
+Individual panel items are associated together to form a panel by a call to the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method of the <xref:System.ComponentModel.Design.DesignerActionList> class.  
+ 
   
- Individual panel items are associated together to form a panel by a call to the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method of the <xref:System.ComponentModel.Design.DesignerActionList> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
-  
- For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
-  
- [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
- [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
-  
+The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
+ 
+For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+ 
+[!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+[!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method and display names.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> and <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> properties to `null`, and the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property to `false`.  
-  
+The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> and <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> properties to `null`, and the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,12 +86,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method and display names, and a flag that indicates whether the item should appear in other user interface contexts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `includeAsDesignerVerb` parameter is set to `true`, then this item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], a command will also be added to the **Attributes** pane of the Properties window. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
-  
- The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> and <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> properties to `null`.  
-  
+If the `includeAsDesignerVerb` parameter is set to `true`, then this item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], a command will also be added to the **Attributes** pane of the Properties window. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+ 
+The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> and <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> properties to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,12 +119,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method, display, and category names.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null` and the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property to `false`.  
-  
- For more information about how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
-  
+The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null` and the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property to `false`.  
+ 
+For more information about how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,14 +154,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method, display, and category names, and a flag that indicates whether the item should appear in other user interface contexts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `includeAsDesignerVerb` parameter is set to `true`, then the item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
-  
- The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null`.  
-  
- For more information on how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
-  
+If the `includeAsDesignerVerb` parameter is set to `true`, then the item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+ 
+The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null`.  
+ 
+For more information on how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,12 +191,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method and category names, and display and description text.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property to `false`.  
-  
- For more information on how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
-  
+The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property to `false`.  
+ 
+For more information on how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,22 +228,22 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method and category names, display and description text, and a flag that indicates whether the item should appear in other user interface contexts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `includeAsDesignerVerb` parameter is set to `true`, then this item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+If the `includeAsDesignerVerb` parameter is set to `true`, then this item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+ 
+For more information about how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+ 
   
- For more information about how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
-  
- For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
-  
- [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
- [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
-  
+The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
+ 
+For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+ 
+[!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+[!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,12 +266,12 @@
           <see langword="true" /> if the item is to be used in shortcut menus; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property is set to `true`, then the item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
-  
- The value of the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property is set in the constructor for this class.  
-  
+If the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property is set to `true`, then the item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+ 
+The value of the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property is set in the constructor for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,10 +293,10 @@
         <summary>Programmatically executes the method associated with the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property is initialized to `true`, the associated method can also be invoked through the corresponding designer verb event.  
-  
+If the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property is initialized to `true`, the associated method can also be invoked through the corresponding designer verb event.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The method, named in <see cref="P:System.ComponentModel.Design.DesignerActionMethodItem.MemberName" /> cannot be found.</exception>
@@ -319,14 +319,14 @@
         <value>A <see cref="T:System.String" /> that contains the name of the associated method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionMethodItem.MemberName%2A> property specifies which property, in the class derived from the <xref:System.ComponentModel.Design.DesignerActionList> class, that the item should be bound to. When the programmer interacts with the panel item through the user interface (UI), this associated property will be set.  
-  
- The bound method should neither take parameters nor return a value.  
-  
- This property is set in the constructor. It is case-sensitive.  
-  
+The <xref:System.ComponentModel.Design.DesignerActionMethodItem.MemberName%2A> property specifies which property, in the class derived from the <xref:System.ComponentModel.Design.DesignerActionList> class, that the item should be bound to. When the programmer interacts with the panel item through the user interface (UI), this associated property will be set.  
+ 
+The bound method should neither take parameters nor return a value.  
+ 
+This property is set in the constructor. It is case-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,12 +348,12 @@
         <value>The contributing component, which should have an associated designer that supplies items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent%2A> property allows another component to lend its smart tag panel items to the current list. For example, a user control might aggregate the items from one of its constituent standard controls.  
-  
- This property works in conjunction with the <xref:System.ComponentModel.Design.DesignerActionItem.AllowAssociate%2A?displayProperty=fullName> property.  
-  
+The <xref:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent%2A> property allows another component to lend its smart tag panel items to the current list. For example, a user control might aggregate the items from one of its constituent standard controls.  
+ 
+This property works in conjunction with the <xref:System.ComponentModel.Design.DesignerActionItem.AllowAssociate%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

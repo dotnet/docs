@@ -11,10 +11,10 @@
     <summary>Provides module initialization and disposal events to the implementing class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example of a custom module that implements <xref:System.Web.IHttpModule>, see [Walkthrough: Creating and Registering a Custom HTTP Module](http://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453).  
-  
+For an example of a custom module that implements <xref:System.Web.IHttpModule>, see [Walkthrough: Creating and Registering a Custom HTTP Module](http://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Disposes of the resources (other than memory) used by the module that implements <see cref="T:System.Web.IHttpModule" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.IHttpModule.Dispose%2A> method performs any final cleanup work prior to removal of the module from the execution pipeline.  
-  
+The <xref:System.Web.IHttpModule.Dispose%2A> method performs any final cleanup work prior to removal of the module from the execution pipeline.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,15 +64,15 @@
         <summary>Initializes a module and prepares it to handle requests.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.IHttpModule.Init%2A> method to register event handling methods with specific events.  
+Use the <xref:System.Web.IHttpModule.Init%2A> method to register event handling methods with specific events.  
+ 
   
-   
-  
+ 
 ## Examples  
- For an example of a custom module that implements <xref:System.Web.IHttpModule>, see [Walkthrough: Creating and Registering a Custom HTTP Module](http://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453).  
-  
+For an example of a custom module that implements <xref:System.Web.IHttpModule>, see [Walkthrough: Creating and Registering a Custom HTTP Module](http://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453).  
+ 
  ]]></format>
         </remarks>
       </Docs>

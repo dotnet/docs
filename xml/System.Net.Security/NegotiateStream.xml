@@ -23,39 +23,39 @@
     <summary>Provides a stream that uses the Negotiate security protocol to authenticate the client, and optionally the server, in client-server communication.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Net.Security.NegotiateStream> class for authentication and to help secure information transmitted between a client and a server. Using <xref:System.Net.Security.NegotiateStream>, you can do the following.  
-  
+Use the <xref:System.Net.Security.NegotiateStream> class for authentication and to help secure information transmitted between a client and a server. Using <xref:System.Net.Security.NegotiateStream>, you can do the following.  
+ 
 -   Send the client's credentials to the server for Impersonation or Delegation.  
-  
+ 
 -   Request server authentication.  
-  
+ 
 -   Encrypt and/or sign data before transmitting it.  
+ 
+Authentication must be performed before transmitting information. Clients request authentication using the synchronous <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> methods, which block until the authentication completes, or the asynchronous <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods, which do not block while waiting for the authentication to complete. Servers request authentication using the synchronous <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> or asynchronous <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods. The client, and optionally the server, is authenticated using the Negotiate security protocol. On Windows 95/98 systems, Windows NT LAN Manager (NTLM) is the protocol used for authentication. On other platforms the Kerberos protocol is used for authentication if both client and server support it; otherwise NTLM is used. For detailed descriptions of these protocols, see the Platform SDK documentation on MSDN, at msdn.microsoft.com/library/. The <xref:System.Net.Security.NegotiateStream> class performs the authentication using the Security Support Provider Interface (SSPI).  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services will be used by the <xref:System.Net.Security.NegotiateStream> to help secure your data during transmission. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred. You can get information about the remote client or server using the <xref:System.Net.Security.NegotiateStream.RemoteIdentity%2A> property.  
+ 
+If the authentication fails, you will receive an <xref:System.Security.Authentication.AuthenticationException> or a <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
+You send data using the synchronous <xref:System.Net.Security.NegotiateStream.Write%2A> or asynchronous <xref:System.Net.Security.NegotiateStream.BeginWrite%2A> methods. You receive data using the synchronous <xref:System.Net.Security.NegotiateStream.Read%2A> or asynchronous <xref:System.Net.Security.NegotiateStream.BeginRead%2A> methods. If security services such as encryption or signing are enabled, these are automatically applied to your data by the <xref:System.Net.Security.NegotiateStream>.  
+ 
+The <xref:System.Net.Security.NegotiateStream> transmits data using a stream that you supply when creating the <xref:System.Net.Security.NegotiateStream>. When you supply this underlying stream, you have the option to specify whether closing the <xref:System.Net.Security.NegotiateStream> also closes the underlying stream.  
+ 
   
- Authentication must be performed before transmitting information. Clients request authentication using the synchronous <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> methods, which block until the authentication completes, or the asynchronous <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods, which do not block while waiting for the authentication to complete. Servers request authentication using the synchronous <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> or asynchronous <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods. The client, and optionally the server, is authenticated using the Negotiate security protocol. On Windows 95/98 systems, Windows NT LAN Manager (NTLM) is the protocol used for authentication. On other platforms the Kerberos protocol is used for authentication if both client and server support it; otherwise NTLM is used. For detailed descriptions of these protocols, see the Platform SDK documentation on MSDN, at msdn.microsoft.com/library/. The <xref:System.Net.Security.NegotiateStream> class performs the authentication using the Security Support Provider Interface (SSPI).  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services will be used by the <xref:System.Net.Security.NegotiateStream> to help secure your data during transmission. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred. You can get information about the remote client or server using the <xref:System.Net.Security.NegotiateStream.RemoteIdentity%2A> property.  
-  
- If the authentication fails, you will receive an <xref:System.Security.Authentication.AuthenticationException> or a <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
- You send data using the synchronous <xref:System.Net.Security.NegotiateStream.Write%2A> or asynchronous <xref:System.Net.Security.NegotiateStream.BeginWrite%2A> methods. You receive data using the synchronous <xref:System.Net.Security.NegotiateStream.Read%2A> or asynchronous <xref:System.Net.Security.NegotiateStream.BeginRead%2A> methods. If security services such as encryption or signing are enabled, these are automatically applied to your data by the <xref:System.Net.Security.NegotiateStream>.  
-  
- The <xref:System.Net.Security.NegotiateStream> transmits data using a stream that you supply when creating the <xref:System.Net.Security.NegotiateStream>. When you supply this underlying stream, you have the option to specify whether closing the <xref:System.Net.Security.NegotiateStream> also closes the underlying stream.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the client side of a client-server connection that uses the <xref:System.Net.Security.NegotiateStream>. The client authenticates and sends a message to the server asynchronously.  
-  
- [!code-cpp[NclNegoAsyncClient#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#0)]
- [!code-csharp[NclNegoAsyncClient#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#0)]  
-  
- The following code example demonstrates the server side of a client-server connection that uses the <xref:System.Net.Security.NegotiateStream> to authenticate the client and read a message sent by the client.  
-  
- [!code-cpp[NclNegoAsyncServer#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoAsyncServer/CPP/NclNegoAsyncServer.cpp#0)]
- [!code-csharp[NclNegoAsyncServer#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoAsyncServer/CS/server.cs#0)]  
-  
+The following code example demonstrates the client side of a client-server connection that uses the <xref:System.Net.Security.NegotiateStream>. The client authenticates and sends a message to the server asynchronously.  
+ 
+[!code-cpp[NclNegoAsyncClient#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#0)]
+[!code-csharp[NclNegoAsyncClient#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#0)]  
+ 
+The following code example demonstrates the server side of a client-server connection that uses the <xref:System.Net.Security.NegotiateStream> to authenticate the client and read a message sent by the client.  
+ 
+[!code-cpp[NclNegoAsyncServer#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoAsyncServer/CPP/NclNegoAsyncServer.cpp#0)]
+[!code-csharp[NclNegoAsyncServer#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoAsyncServer/CS/server.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,13 +91,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Security.NegotiateStream" /> class using the specified <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates calling this constructor.  
-  
- [!code-cpp[NclNegoSyncClient#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#3)]
- [!code-csharp[NclNegoSyncClient#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#3)]  
-  
+The following code example demonstrates calling this constructor.  
+ 
+[!code-cpp[NclNegoSyncClient#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#3)]
+[!code-csharp[NclNegoSyncClient#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,18 +136,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Security.NegotiateStream" /> class using the specified <see cref="T:System.IO.Stream" /> and stream closure behavior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you specify `true` for the `leaveStreamOpen` parameter, closing the <xref:System.Net.Security.NegotiateStream> has no effect on the `innerStream` stream; you must explicitly close `innerStream` when you no longer need it.  
+When you specify `true` for the `leaveStreamOpen` parameter, closing the <xref:System.Net.Security.NegotiateStream> has no effect on the `innerStream` stream; you must explicitly close `innerStream` when you no longer need it.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates calling this constructor. This code example is part of a larger example provided for the <xref:System.Net.Security.NegotiateStream> class.  
-  
- [!code-cpp[NclNegoAsyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#1)]
- [!code-csharp[NclNegoAsyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#1)]  
-  
+The following code example demonstrates calling this constructor. This code example is part of a larger example provided for the <xref:System.Net.Security.NegotiateStream> class.  
+ 
+[!code-cpp[NclNegoAsyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#1)]
+[!code-csharp[NclNegoAsyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -185,14 +185,14 @@
         <summary>Called by clients to authenticate the client, and optionally the server, in a client-server connection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -238,12 +238,12 @@
         <summary>Called by clients to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified client credential.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
+The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -293,14 +293,14 @@
         <summary>Called by clients to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified client credential and the channel binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
-  
- The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
+The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ 
+The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -355,12 +355,12 @@
         <summary>Called by clients to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified credentials and authentication options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -416,14 +416,14 @@
         <summary>Called by clients to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified credential, authentication options, and channel binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
-  
- The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ 
+The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -473,14 +473,14 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -528,12 +528,12 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
+The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -585,14 +585,14 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
-  
- The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
+The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ 
+The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -649,12 +649,12 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -712,14 +712,14 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
-  
- The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ 
+The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -767,16 +767,16 @@
         <summary>Called by servers to authenticate the client, and optionally the server, in a client-server connection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method overloads.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method overloads.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -816,18 +816,18 @@
         <summary>Called by servers to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified extended protection policy.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
-  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method overloads.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ 
+If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method overloads.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomChannelBinding" /> and <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomServiceNames" /> on the extended protection policy passed in the <paramref name="policy" /> parameter are both <see langword="null" />.</exception>
@@ -872,14 +872,14 @@
         <summary>Called by servers to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified server credentials and authentication options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method overloads.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method overloads.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -934,16 +934,16 @@
         <summary>Called by servers to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified server credentials, authentication options, and extended protection policy.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method overloads.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method overloads.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomChannelBinding" /> and <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomServiceNames" /> on the extended protection policy passed in the <paramref name="policy" /> parameter are both <see langword="null" />.</exception>
@@ -992,14 +992,14 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -1041,16 +1041,16 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
-  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ 
+If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomChannelBinding" /> and <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomServiceNames" /> on the extended protection policy passed in the <paramref name="policy" /> parameter are both <see langword="null" />.</exception>
@@ -1097,12 +1097,12 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1159,14 +1159,14 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomChannelBinding" /> and <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomServiceNames" /> on the extended protection policy passed in the <paramref name="policy" /> parameter are both <see langword="null" />.</exception>
@@ -1219,24 +1219,24 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ 
+This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
+ 
+The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
   
- This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
-  
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates calling this method to begin an asynchronous authentication for the client.  
-  
- [!code-cpp[NclNegoAsyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#2)]
- [!code-csharp[NclNegoAsyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#2)]  
-  
+The following code example demonstrates calling this method to begin an asynchronous authentication for the client.  
+ 
+[!code-cpp[NclNegoAsyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#2)]
+[!code-csharp[NclNegoAsyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -1287,14 +1287,14 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
-  
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
+ 
+The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1353,14 +1353,14 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
-  
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
+ 
+The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1420,16 +1420,16 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
-  
- This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
-  
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ 
+This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
+ 
+The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1492,16 +1492,16 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
-  
- This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
-  
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ 
+This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
+ 
+The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1553,16 +1553,16 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -1607,18 +1607,18 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>.  
-  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ 
+If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomChannelBinding" /> and <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomServiceNames" /> on the extended protection policy passed in the <paramref name="policy" /> parameter are both <see langword="null" />.</exception>
@@ -1668,16 +1668,16 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
-  
- This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
-  
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ 
+This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
+ 
+The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1737,18 +1737,18 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
-  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
-  
- This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
-  
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
+Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ 
+If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ 
+This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
+ 
+The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomChannelBinding" /> and <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomServiceNames" /> on the extended protection policy passed in the <paramref name="policy" /> parameter are both <see langword="null" />.</exception>
@@ -1807,26 +1807,26 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If encryption, signing, or encryption and signing are enabled, the read operation reads the data from the underlying stream, checks the integrity of the data, and decrypts it. If no security services such as data encryption or signing are in use, this method starts an asynchronous read operation on the underlying stream.  
+If encryption, signing, or encryption and signing are enabled, the read operation reads the data from the underlying stream, checks the integrity of the data, and decrypts it. If no security services such as data encryption or signing are in use, this method starts an asynchronous read operation on the underlying stream.  
+ 
+This method is asynchronous and does not block while the operation completes. To block until the operation completes, use the <xref:System.Net.Security.NegotiateStream.Read%2A> method.  
+ 
+The asynchronous read operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndRead%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ 
+The <xref:System.Net.Security.NegotiateStream> class does not support multiple simultaneous read operations. If you attempt to start a read operation while another read operation is already executing on the same stream, a <xref:System.NotSupportedException> exception will be thrown.  
+ 
+You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
+ 
   
- This method is asynchronous and does not block while the operation completes. To block until the operation completes, use the <xref:System.Net.Security.NegotiateStream.Read%2A> method.  
-  
- The asynchronous read operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndRead%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
-  
- The <xref:System.Net.Security.NegotiateStream> class does not support multiple simultaneous read operations. If you attempt to start a read operation while another read operation is already executing on the same stream, a <xref:System.NotSupportedException> exception will be thrown.  
-  
- You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates starting an asynchronous read operation. This code example is part of a larger example provided for the <xref:System.Net.Security.NegotiateStream> class.  
-  
- [!code-cpp[NclNegoAsyncServer#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoAsyncServer/CPP/NclNegoAsyncServer.cpp#1)]
- [!code-csharp[NclNegoAsyncServer#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoAsyncServer/CS/server.cs#1)]  
-  
+The following code example demonstrates starting an asynchronous read operation. This code example is part of a larger example provided for the <xref:System.Net.Security.NegotiateStream> class.  
+ 
+[!code-cpp[NclNegoAsyncServer#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoAsyncServer/CPP/NclNegoAsyncServer.cpp#1)]
+[!code-csharp[NclNegoAsyncServer#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoAsyncServer/CS/server.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1890,31 +1890,31 @@
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If encryption, signing, or encryption and signing are enabled, this method reads the data from buffer, encrypts, signs, or encrypts and signs it, and transmits it using the underlying stream. If no security services such as data encryption or signing are in use, this method starts an asynchronous write operation on the underlying stream.  
+If encryption, signing, or encryption and signing are enabled, this method reads the data from buffer, encrypts, signs, or encrypts and signs it, and transmits it using the underlying stream. If no security services such as data encryption or signing are in use, this method starts an asynchronous write operation on the underlying stream.  
+ 
+This method is asynchronous and does not block while the operation completes. To block until the operation completes, use the <xref:System.Net.Security.NegotiateStream.Read%2A> method.  
+ 
+The asynchronous read operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndWrite%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ 
+The <xref:System.Net.Security.NegotiateStream> class does not support multiple simultaneous write operations. If you attempt to start a write operation while another write operation is already executing on the same stream, a <xref:System.NotSupportedException> exception will be thrown.  
+ 
+You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
+ 
   
- This method is asynchronous and does not block while the operation completes. To block until the operation completes, use the <xref:System.Net.Security.NegotiateStream.Read%2A> method.  
-  
- The asynchronous read operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndWrite%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
-  
- The <xref:System.Net.Security.NegotiateStream> class does not support multiple simultaneous write operations. If you attempt to start a write operation while another write operation is already executing on the same stream, a <xref:System.NotSupportedException> exception will be thrown.  
-  
- You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates beginning an asynchronous write operation.  
-  
- [!code-cpp[NclNegoAsyncClient#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#3)]
- [!code-csharp[NclNegoAsyncClient#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#3)]  
-  
- The following method is called when the operation completes.  
-  
- [!code-cpp[NclNegoAsyncClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#4)]
- [!code-csharp[NclNegoAsyncClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#4)]  
-  
+The following code example demonstrates beginning an asynchronous write operation.  
+ 
+[!code-cpp[NclNegoAsyncClient#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#3)]
+[!code-csharp[NclNegoAsyncClient#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#3)]  
+ 
+The following method is called when the operation completes.  
+ 
+[!code-cpp[NclNegoAsyncClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#4)]
+[!code-csharp[NclNegoAsyncClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1966,18 +1966,18 @@
           <see langword="true" /> if authentication has occurred and the underlying stream is readable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If successful authentication has occurred, this property returns the value returned by invoking the <xref:System.IO.Stream.CanRead%2A> property on the underlying stream. The underlying stream is specified when you create an instance of the <xref:System.Net.Security.NegotiateStream> class.  
+If successful authentication has occurred, this property returns the value returned by invoking the <xref:System.IO.Stream.CanRead%2A> property on the underlying stream. The underlying stream is specified when you create an instance of the <xref:System.Net.Security.NegotiateStream> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
- [!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
+[!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2008,18 +2008,18 @@
         <value>This property always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should not attempt to set the position of the <xref:System.Net.Security.NegotiateStream> object or its underlying stream. The underlying stream is specified when you create an instance of the <xref:System.Net.Security.NegotiateStream> class.  
+You should not attempt to set the position of the <xref:System.Net.Security.NegotiateStream> object or its underlying stream. The underlying stream is specified when you create an instance of the <xref:System.Net.Security.NegotiateStream> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
- [!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
+[!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2056,18 +2056,18 @@
           <see langword="true" /> if the underlying stream supports time-outs; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the value returned by invoking the <xref:System.IO.Stream.CanTimeout%2A> property on the underlying stream. The underlying stream is specified when you create an instance of the <xref:System.Net.Security.NegotiateStream> class.  
+This property returns the value returned by invoking the <xref:System.IO.Stream.CanTimeout%2A> property on the underlying stream. The underlying stream is specified when you create an instance of the <xref:System.Net.Security.NegotiateStream> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
- [!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
+[!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2099,18 +2099,18 @@
           <see langword="true" /> if authentication has occurred and the underlying stream is writable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If successful authentication has occurred, this property returns the value returned by invoking the <xref:System.IO.Stream.CanWrite%2A> property on the underlying stream. The underlying stream is specified when you create an instance of the <xref:System.Net.Security.NegotiateStream> class.  
+If successful authentication has occurred, this property returns the value returned by invoking the <xref:System.IO.Stream.CanWrite%2A> property on the underlying stream. The underlying stream is specified when you create an instance of the <xref:System.Net.Security.NegotiateStream> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
- [!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
+[!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2146,12 +2146,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Security.NegotiateStream" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Security.NegotiateStream> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Security.NegotiateStream> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -2192,14 +2192,14 @@
         <summary>Ends a pending asynchronous client authentication operation that was started with a call to <see cref="Overload:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the operation has not completed, this method blocks until it does. When the authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
- To perform this operation synchronously, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method.  
-  
+If the operation has not completed, this method blocks until it does. When the authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
+To perform this operation synchronously, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2241,16 +2241,16 @@
         <summary>Ends a pending asynchronous client authentication operation that was started with a call to <see cref="Overload:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the operation has not completed, this method blocks until it does.  
-  
- When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
-  
- If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
-  
- To perform this operation synchronously, use the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method.  
-  
+If the operation has not completed, this method blocks until it does.  
+ 
+When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
+ 
+If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
+ 
+To perform this operation synchronously, use the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2293,22 +2293,22 @@
         <returns>A <see cref="T:System.Int32" /> value that specifies the number of bytes read from the underlying stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the operation has not completed, this method blocks until it does.  
+If the operation has not completed, this method blocks until it does.  
+ 
+To perform this operation synchronously, use the <xref:System.Net.Security.NegotiateStream.Read%2A> method.  
+ 
+You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
+ 
   
- To perform this operation synchronously, use the <xref:System.Net.Security.NegotiateStream.Read%2A> method.  
-  
- You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates ending an asynchronous read operation. For an example that demonstrates starting the operation, see <xref:System.Net.Security.NegotiateStream.BeginRead%2A>.  
-  
- [!code-cpp[NclNegoAsyncServer#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoAsyncServer/CPP/NclNegoAsyncServer.cpp#3)]
- [!code-csharp[NclNegoAsyncServer#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoAsyncServer/CS/server.cs#3)]  
-  
+The following code example demonstrates ending an asynchronous read operation. For an example that demonstrates starting the operation, see <xref:System.Net.Security.NegotiateStream.BeginRead%2A>.  
+ 
+[!code-cpp[NclNegoAsyncServer#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoAsyncServer/CPP/NclNegoAsyncServer.cpp#3)]
+[!code-csharp[NclNegoAsyncServer#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoAsyncServer/CS/server.cs#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2348,22 +2348,22 @@
         <summary>Ends an asynchronous write operation that was started with a call to <see cref="M:System.Net.Security.NegotiateStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the operation has not completed, this method blocks until it does.  
+If the operation has not completed, this method blocks until it does.  
+ 
+You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
+ 
+To perform this operation synchronously, use the <xref:System.Net.Security.NegotiateStream.Write%2A> method.  
+ 
   
- You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
-  
- To perform this operation synchronously, use the <xref:System.Net.Security.NegotiateStream.Write%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a method that is called to complete the asynchronous write operation. For an example that demonstrates starting the operation, see <xref:System.Net.Security.NegotiateStream.BeginWrite%2A>.  
-  
- [!code-cpp[NclNegoAsyncClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#4)]
- [!code-csharp[NclNegoAsyncClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#4)]  
-  
+The following code example demonstrates a method that is called to complete the asynchronous write operation. For an example that demonstrates starting the operation, see <xref:System.Net.Security.NegotiateStream.BeginWrite%2A>.  
+ 
+[!code-cpp[NclNegoAsyncClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#4)]
+[!code-csharp[NclNegoAsyncClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2404,18 +2404,18 @@
         <summary>Causes any buffered data to be written to the underlying device.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method invokes <xref:System.IO.Stream.Flush%2A> on the underlying stream.  
+This method invokes <xref:System.IO.Stream.Flush%2A> on the underlying stream.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates flushing the stream.  
-  
- [!code-cpp[NclNegoSyncClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#4)]
- [!code-csharp[NclNegoSyncClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#4)]  
-  
+The following code example demonstrates flushing the stream.  
+ 
+[!code-cpp[NclNegoSyncClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#4)]
+[!code-csharp[NclNegoSyncClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2451,18 +2451,18 @@
         <value>One of the <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must successfully authenticate before calling this method. Clients specify the impersonation level when they request authentication by calling one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods. If you authenticate without specifying a <xref:System.Security.Principal.TokenImpersonationLevel> , <xref:System.Security.Principal.TokenImpersonationLevel> is used.  
+You must successfully authenticate before calling this method. Clients specify the impersonation level when they request authentication by calling one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods. If you authenticate without specifying a <xref:System.Security.Principal.TokenImpersonationLevel> , <xref:System.Security.Principal.TokenImpersonationLevel> is used.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
- [!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
+[!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Authentication failed or has not occurred.</exception>
@@ -2500,18 +2500,18 @@
           <see langword="true" /> if successful authentication occurred; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Clients authenticate by calling the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods. Servers authenticate by calling the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
+Clients authenticate by calling the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods. Servers authenticate by calling the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
- [!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
+[!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2548,18 +2548,18 @@
           <see langword="true" /> if data is encrypted before being transmitted over the network and decrypted when it reaches the remote endpoint; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encryption helps to protect the privacy of the data; namely, it helps to ensure that while data is in transit it cannot be deciphered by third parties.  
+Encryption helps to protect the privacy of the data; namely, it helps to ensure that while data is in transit it cannot be deciphered by third parties.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
- [!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
+[!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2596,20 +2596,20 @@
           <see langword="true" /> if the server has been authenticated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Mutual authentication is specified by the client when the client wants the server to provide credentials for authentication. By default, clients request mutual authentication.  
+Mutual authentication is specified by the client when the client wants the server to provide credentials for authentication. By default, clients request mutual authentication.  
+ 
+The Negotiate protocol selects either NTLM or Kerberos depending on the security protocols supported by the client and server. NTLM does not support mutual authentication.  
+ 
   
- The Negotiate protocol selects either NTLM or Kerberos depending on the security protocols supported by the client and server. NTLM does not support mutual authentication.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
- [!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
+[!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2646,20 +2646,20 @@
           <see langword="true" /> if the local endpoint was successfully authenticated as the server side of the authenticated connection; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If authentication failed or did not occur, this property returns `false`.  
+If authentication failed or did not occur, this property returns `false`.  
+ 
+To authenticate as the server, call the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
+ 
   
- To authenticate as the server, call the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
- [!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
+[!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2696,18 +2696,18 @@
           <see langword="true" /> if the data is signed before being transmitted; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data signing helps to protect the integrity of the data; namely, it helps the recipient determine whether the data has been tampered with while in transit.  
+Data signing helps to protect the integrity of the data; namely, it helps the recipient determine whether the data has been tampered with while in transit.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
- [!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#1)]
+[!code-csharp[NclNegoSyncClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2738,18 +2738,18 @@
         <value>A <see cref="T:System.Int64" /> that specifies the length of the underlying stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the value returned by invoking the <xref:System.IO.Stream.Length%2A> property on the underlying stream. If the underlying stream is not seekable, this property will typically throw an exception. The run-time type of the underlying stream determines the run-time type of the exception that is thrown.  
+This property returns the value returned by invoking the <xref:System.IO.Stream.Length%2A> property on the underlying stream. If the underlying stream is not seekable, this property will typically throw an exception. The run-time type of the underlying stream determines the run-time type of the exception that is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
- [!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
+[!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Getting the value of this property is not supported when the underlying stream is a <see cref="T:System.Net.Sockets.NetworkStream" />.</exception>
@@ -2781,10 +2781,10 @@
         <value>A <see cref="T:System.Int64" /> that specifies the current position in the underlying stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the value returned by invoking the <xref:System.IO.Stream.Position%2A> property on the underlying stream. If the underlying stream is not seekable, this property will typically throw an exception. The run-time type of the underlying stream determines the run-time type of the exception that is thrown.  
-  
+This property returns the value returned by invoking the <xref:System.IO.Stream.Position%2A> property on the underlying stream. If the underlying stream is not seekable, this property will typically throw an exception. The run-time type of the underlying stream determines the run-time type of the exception that is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Setting this property is not supported.  
@@ -2833,22 +2833,22 @@
         <returns>A <see cref="T:System.Int32" /> value that specifies the number of bytes read from the underlying stream. When there is no more data to be read, returns 0.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method reads a maximum of `count` bytes from the current stream and stores them in `buffer` beginning at `offset`.  
+The method reads a maximum of `count` bytes from the current stream and stores them in `buffer` beginning at `offset`.  
+ 
+You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
+ 
+To perform this operation asynchronously, use the <xref:System.Net.Security.NegotiateStream.BeginRead%2A> method.  
+ 
   
- You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
-  
- To perform this operation asynchronously, use the <xref:System.Net.Security.NegotiateStream.BeginRead%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates reading from a <xref:System.Net.Security.NegotiateStream>.  
-  
- [!code-cpp[NclNegoSyncServer#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncServer/CPP/NclNegoSyncServer.cpp#1)]
- [!code-csharp[NclNegoSyncServer#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncServer/CS/server.cs#1)]  
-  
+The following code example demonstrates reading from a <xref:System.Net.Security.NegotiateStream>.  
+ 
+[!code-cpp[NclNegoSyncServer#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncServer/CPP/NclNegoSyncServer.cpp#1)]
+[!code-csharp[NclNegoSyncServer#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncServer/CS/server.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">The read operation failed.</exception>
@@ -2882,20 +2882,20 @@
         <value>A <see cref="T:System.Int32" /> that specifies the amount of time that will elapse before a read operation fails.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the value returned by invoking the <xref:System.IO.Stream.ReadTimeout%2A> property on the underlying stream. When you set this property, the <xref:System.IO.Stream.ReadTimeout%2A> value on the underlying stream is set to the specified value.  
+This property returns the value returned by invoking the <xref:System.IO.Stream.ReadTimeout%2A> property on the underlying stream. When you set this property, the <xref:System.IO.Stream.ReadTimeout%2A> value on the underlying stream is set to the specified value.  
+ 
+If the underlying stream is a <xref:System.Net.Sockets.NetworkStream>, <xref:System.Net.Security.NegotiateStream.ReadTimeout%2A> is in milliseconds and is set to <xref:System.Threading.Timeout.Infinite> by default so that read operations do not time out.  
+ 
   
- If the underlying stream is a <xref:System.Net.Sockets.NetworkStream>, <xref:System.Net.Security.NegotiateStream.ReadTimeout%2A> is in milliseconds and is set to <xref:System.Threading.Timeout.Infinite> by default so that read operations do not time out.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
- [!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
+[!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2931,18 +2931,18 @@
         <value>An <see cref="T:System.Security.Principal.IIdentity" /> object that describes the identity of the remote endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When accessed by the client, this property returns a <xref:System.Security.Principal.GenericIdentity> containing the Service Principal Name (SPN) of the server and the authentication protocol used. When accessed by the server, this property returns a <xref:System.Security.Principal.WindowsIdentity> that describes the client. If the <xref:System.Security.Principal.WindowsIdentity> is not available, client information is returned to the server in a <xref:System.Security.Principal.GenericIdentity>.  
+When accessed by the client, this property returns a <xref:System.Security.Principal.GenericIdentity> containing the Service Principal Name (SPN) of the server and the authentication protocol used. When accessed by the server, this property returns a <xref:System.Security.Principal.WindowsIdentity> that describes the client. If the <xref:System.Security.Principal.WindowsIdentity> is not available, client information is returned to the server in a <xref:System.Security.Principal.GenericIdentity>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoAsyncServer#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoAsyncServer/CPP/NclNegoAsyncServer.cpp#2)]
- [!code-csharp[NclNegoAsyncServer#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoAsyncServer/CS/server.cs#2)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoAsyncServer#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoAsyncServer/CPP/NclNegoAsyncServer.cpp#2)]
+[!code-csharp[NclNegoAsyncServer#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoAsyncServer/CS/server.cs#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Authentication failed or has not occurred.</exception>
@@ -2985,10 +2985,10 @@
         <returns>Always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not call this method. It is inherited, but is not supported by <xref:System.Net.Security.NegotiateStream>.  
-  
+Do not call this method. It is inherited, but is not supported by <xref:System.Net.Security.NegotiateStream>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Seeking is not supported on <see cref="T:System.Net.Security.NegotiateStream" />.</exception>
@@ -3067,24 +3067,24 @@
         <summary>Write the specified number of <see cref="T:System.Byte" />s to the underlying stream using the specified buffer and offset.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If encryption, signing, or encryption and signing are enabled, this method reads the data from buffer, encrypts, signs, or encrypts and signs it, and transmits it using the underlying stream. If no security services such as data encryption or signing are in use, this method invokes <xref:System.IO.Stream.Write%2A> on the underlying stream.  
+If encryption, signing, or encryption and signing are enabled, this method reads the data from buffer, encrypts, signs, or encrypts and signs it, and transmits it using the underlying stream. If no security services such as data encryption or signing are in use, this method invokes <xref:System.IO.Stream.Write%2A> on the underlying stream.  
+ 
+This method blocks while the write operation completes. To prevent blocking while the operation completes, use the <xref:System.Net.Security.NegotiateStream.Write%2A> method.  
+ 
+You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
+ 
+The <xref:System.Net.Security.NegotiateStream> class does not support multiple simultaneous write operations. If you attempt to start a write operation while another write operation is already executing on the same stream, a <xref:System.NotSupportedException> exception will be thrown.  
+ 
   
- This method blocks while the write operation completes. To prevent blocking while the operation completes, use the <xref:System.Net.Security.NegotiateStream.Write%2A> method.  
-  
- You cannot call this method until you have successfully authenticated. To authenticate, call one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A>, <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A>, or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> methods.  
-  
- The <xref:System.Net.Security.NegotiateStream> class does not support multiple simultaneous write operations. If you attempt to start a write operation while another write operation is already executing on the same stream, a <xref:System.NotSupportedException> exception will be thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates writing to a <xref:System.Net.Security.NegotiateStream>.  
-  
- [!code-cpp[NclNegoSyncClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#4)]
- [!code-csharp[NclNegoSyncClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#4)]  
-  
+The following code example demonstrates writing to a <xref:System.Net.Security.NegotiateStream>.  
+ 
+[!code-cpp[NclNegoSyncClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#4)]
+[!code-csharp[NclNegoSyncClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -3135,20 +3135,20 @@
         <value>A <see cref="T:System.Int32" /> that specifies the amount of time that will elapse before a write operation fails.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the value returned by invoking the <xref:System.IO.Stream.WriteTimeout%2A> property on the underlying stream. For set operations, the specified value sets the <xref:System.IO.Stream.WriteTimeout%2A> value on the underlying stream.  
+This property returns the value returned by invoking the <xref:System.IO.Stream.WriteTimeout%2A> property on the underlying stream. For set operations, the specified value sets the <xref:System.IO.Stream.WriteTimeout%2A> value on the underlying stream.  
+ 
+If the underlying stream is a <xref:System.Net.Sockets.NetworkStream>, <xref:System.Net.Security.NegotiateStream.WriteTimeout%2A> is in milliseconds and is set to <xref:System.Threading.Timeout.Infinite> by default so that write operations do not time out.  
+ 
   
- If the underlying stream is a <xref:System.Net.Sockets.NetworkStream>, <xref:System.Net.Security.NegotiateStream.WriteTimeout%2A> is in milliseconds and is set to <xref:System.Threading.Timeout.Infinite> by default so that write operations do not time out.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
- [!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoSyncClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#2)]
+[!code-csharp[NclNegoSyncClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3163,10 +3163,10 @@
         <summary>Handles the server side of an authentication for a client-server connection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These methods block while the authentication is in progress. To prevent the application from blocking while waiting for the authentication to complete, use the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method.  
-  
+These methods block while the authentication is in progress. To prevent the application from blocking while waiting for the authentication to complete, use the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3180,10 +3180,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Security.NegotiateStream" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To prevent the <xref:System.Net.Security.NegotiateStream> from closing the stream that you supply, use the <xref:System.Net.Security.NegotiateStream.%23ctor%28System.IO.Stream%2CSystem.Boolean%29> constructor.  
-  
+To prevent the <xref:System.Net.Security.NegotiateStream> from closing the stream that you supply, use the <xref:System.Net.Security.NegotiateStream.%23ctor%28System.IO.Stream%2CSystem.Boolean%29> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3198,10 +3198,10 @@
         <summary>Begins an asynchronous operation to authenticate the client side of a client-server connection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The overloads of this method do not block while authentication is in progress. To block while waiting for the authentication to complete, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> methods.  
-  
+The overloads of this method do not block while authentication is in progress. To block while waiting for the authentication to complete, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3216,10 +3216,10 @@
         <summary>Begins an asynchronous operation to handle the server side of authenticating a client-server connection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The overloads of this method do not block while the authentication is in progress. To block while waiting for the authentication to complete, use the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method.  
-  
+The overloads of this method do not block while the authentication is in progress. To block while waiting for the authentication to complete, use the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

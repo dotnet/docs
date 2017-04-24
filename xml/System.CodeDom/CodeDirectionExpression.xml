@@ -22,24 +22,24 @@
     <summary>Represents an expression used as a method invoke parameter along with a reference direction indicator.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeDirectionExpression> can represent a parameter passed to a method and the reference direction of the parameter.  
-  
- The <xref:System.CodeDom.CodeDirectionExpression.Expression%2A> property indicates the expression to qualify with a direction. The <xref:System.CodeDom.CodeDirectionExpression.Direction%2A> property indicates the direction of the parameter using one of the <xref:System.CodeDom.FieldDirection> enumeration values.  
-  
+<xref:System.CodeDom.CodeDirectionExpression> can represent a parameter passed to a method and the reference direction of the parameter.  
+ 
+The <xref:System.CodeDom.CodeDirectionExpression.Expression%2A> property indicates the expression to qualify with a direction. The <xref:System.CodeDom.CodeDirectionExpression.Direction%2A> property indicates the direction of the parameter using one of the <xref:System.CodeDom.FieldDirection> enumeration values.  
+ 
 > [!NOTE]
 >  <xref:System.CodeDom.CodeDirectionExpression> is intended to be used as a method invoke parameter, and should not be used when declaring methods.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of a <xref:System.CodeDom.CodeDirectionExpression> to specify a field direction modifier for an expression to pass as a method parameter.  
-  
- [!code-cpp[CodeMultiExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMultiExample/CPP/codemultiexample.cpp#4)]
- [!code-csharp[CodeMultiExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMultiExample/CS/codemultiexample.cs#4)]
- [!code-vb[CodeMultiExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMultiExample/VB/codemultiexample.vb#4)]  
-  
+The following example demonstrates use of a <xref:System.CodeDom.CodeDirectionExpression> to specify a field direction modifier for an expression to pass as a method parameter.  
+ 
+[!code-cpp[CodeMultiExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMultiExample/CPP/codemultiexample.cpp#4)]
+[!code-csharp[CodeMultiExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMultiExample/CS/codemultiexample.cs#4)]
+[!code-vb[CodeMultiExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMultiExample/VB/codemultiexample.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

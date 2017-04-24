@@ -11,12 +11,12 @@
     <summary>Provides access to a control designer to store temporary design-time data associated with a control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The property and methods defined in the <xref:System.Web.UI.IControlDesignerAccessor> interface offer a convenient way for the control designer to access a control for passing and retrieving temporary design-time data. The interface is implemented by the <xref:System.Web.UI.Control> class. Control designers use the implementation of this interface to access the control.  
-  
- Temporary design-time data is not persisted with the control itself. To persist design-time data for a control, you should retrieve the contents of the <xref:System.Web.UI.IControlDesignerAccessor.UserData%2A> property and store them in a designer-specific location.  
-  
+The property and methods defined in the <xref:System.Web.UI.IControlDesignerAccessor> interface offer a convenient way for the control designer to access a control for passing and retrieving temporary design-time data. The interface is implemented by the <xref:System.Web.UI.Control> class. Control designers use the implementation of this interface to access the control.  
+ 
+Temporary design-time data is not persisted with the control itself. To persist design-time data for a control, you should retrieve the contents of the <xref:System.Web.UI.IControlDesignerAccessor.UserData%2A> property and store them in a designer-specific location.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <returns>An <see cref="T:System.Collections.IDictionary" /> of the control state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used only by control designers.  
-  
+This method is used only by control designers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,10 +67,10 @@
         <summary>When implemented, sets control state before rendering it on the design surface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In overridden controls, this method is used to retain and set state for the control during design-time mode. This method is used only by control designers.  
-  
+In overridden controls, this method is used to retain and set state for the control during design-time mode. This method is used only by control designers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <summary>When implemented, specifies the control that acts as the owner to the control implementing this method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a composite container scenario where one control contains another control, the container is the control owner.  
-  
+In a composite container scenario where one control contains another control, the container is the control owner.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> containing information about the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control's properties and content can be persisted, so that the control maintains state in the design-time environment. This property is used only by control designers.  
-  
+A control's properties and content can be persisted, so that the control maintains state in the design-time environment. This property is used only by control designers.  
+ 
  ]]></format>
         </remarks>
       </Docs>

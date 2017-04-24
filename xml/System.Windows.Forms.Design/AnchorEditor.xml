@@ -14,19 +14,19 @@
     <summary>Provides a user interface for configuring an <see cref="P:System.Windows.Forms.Control.Anchor" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.AnchorEditor> provides a design-time user interface for configuring an <xref:System.Windows.Forms.Control.Anchor%2A> property. An <xref:System.Windows.Forms.Control.Anchor%2A> property is typically used to determine which sides of the container a control is bound to. This class provides a drop-down graphical control that allows the user to specify which sides of the container to anchor the control to.  
+The <xref:System.Windows.Forms.Design.AnchorEditor> provides a design-time user interface for configuring an <xref:System.Windows.Forms.Control.Anchor%2A> property. An <xref:System.Windows.Forms.Control.Anchor%2A> property is typically used to determine which sides of the container a control is bound to. This class provides a drop-down graphical control that allows the user to specify which sides of the container to anchor the control to.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.Windows.Forms.Design.AnchorEditor> with a property.  
-  
- [!code-cpp[EditorAttributesExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#4)]
- [!code-csharp[EditorAttributesExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#4)]
- [!code-vb[EditorAttributesExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#4)]  
-  
+The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.Windows.Forms.Design.AnchorEditor> with a property.  
+ 
+[!code-cpp[EditorAttributesExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#4)]
+[!code-csharp[EditorAttributesExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#4)]
+[!code-vb[EditorAttributesExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <returns>The new value of the object. If the value of the object hasn't changed, this should return the same object it was passed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A service provider is provided so that any required editing services can be obtained.  
-  
+A service provider is provided so that any required editing services can be obtained.  
+ 
  ]]></format>
         </remarks>
       </Docs>

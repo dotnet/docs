@@ -27,31 +27,31 @@
     <summary>Represents an action restriction enforced on a set of columns in a primary key/foreign key relationship when a value or row is either deleted or updated.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Data.ForeignKeyConstraint> restricts the action performed when a value in a column (or columns) is either deleted or updated. Such a constraint is intended to be used with primary key columns. In a parent/child relationship between two tables, deleting a value from the parent table can affect the child rows in one of the following ways.  
-  
+A <xref:System.Data.ForeignKeyConstraint> restricts the action performed when a value in a column (or columns) is either deleted or updated. Such a constraint is intended to be used with primary key columns. In a parent/child relationship between two tables, deleting a value from the parent table can affect the child rows in one of the following ways.  
+ 
 -   The child rows can also be deleted (a cascading action).  
-  
+ 
 -   The values in the child column (or columns) can be set to null values.  
-  
+ 
 -   The values in the child column (or columns) can be set to default values.  
-  
+ 
 -   An exception can be generated.  
+ 
+<xref:System.Data.ForeignKeyConstraint> objects are contained in the <xref:System.Data.ConstraintCollection> of a <xref:System.Data.DataTable>, which is accessed through the <xref:System.Data.DataTable.Constraints%2A> property.  
+ 
+Constraints are not enforced unless the <xref:System.Data.DataSet.EnforceConstraints%2A> property is set to `true`.  
+ 
+The <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A> is enforced whenever a <xref:System.Data.DataTable> object's <xref:System.Data.DataTable.AcceptChanges%2A> method is invoked.  
+ 
   
- <xref:System.Data.ForeignKeyConstraint> objects are contained in the <xref:System.Data.ConstraintCollection> of a <xref:System.Data.DataTable>, which is accessed through the <xref:System.Data.DataTable.Constraints%2A> property.  
-  
- Constraints are not enforced unless the <xref:System.Data.DataSet.EnforceConstraints%2A> property is set to `true`.  
-  
- The <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A> is enforced whenever a <xref:System.Data.DataTable> object's <xref:System.Data.DataTable.AcceptChanges%2A> method is invoked.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
+ 
+[!code-vb[Classic WebData ForeignKeyConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
@@ -81,12 +81,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> class with the specified parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.ForeignKeyConstraint Example/VB/source.vb#1)]  
-  
+The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
+ 
+[!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.ForeignKeyConstraint Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
@@ -121,12 +121,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> class with the specified arrays of parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.ForeignKeyConstraint2 Example/VB/source.vb#1)]  
-  
+The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
+ 
+[!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.ForeignKeyConstraint2 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
@@ -163,12 +163,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> class with the specified name, parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.ForeignKeyConstraint1 Example/VB/source.vb#1)]  
-  
+The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
+ 
+[!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.ForeignKeyConstraint1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
@@ -205,12 +205,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> class with the specified name, and arrays of parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.ForeignKeyConstraint3 Example/VB/source.vb#1)]  
-  
+The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
+ 
+[!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.ForeignKeyConstraint3 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
@@ -342,17 +342,17 @@
         <value>One of the <see cref="T:System.Data.AcceptRejectRule" /> values. Possible values include <see langword="None" />, and <see langword="Cascade" />. The default is <see langword="None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Changes to a <xref:System.Data.DataRow> or <xref:System.Data.DataTable> are not final until the `AcceptChanges` method is invoked. At that point, the <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A> determines the course of action on any values that have been changed or deleted.  
+Changes to a <xref:System.Data.DataRow> or <xref:System.Data.DataTable> are not final until the `AcceptChanges` method is invoked. At that point, the <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A> determines the course of action on any values that have been changed or deleted.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets its <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A>, and adds the constraint to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.DeleteRule Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.DeleteRule Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets its <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A>, and adds the constraint to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
+ 
+[!code-vb[Classic WebData ForeignKeyConstraint.DeleteRule Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.DeleteRule Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,12 +384,12 @@
         <value>An array of <see cref="T:System.Data.DataColumn" /> objects that are the child columns of the constraint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example returns an array of <xref:System.Data.DataColumn> objects through the <xref:System.Data.ForeignKeyConstraint.Columns%2A> property.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.Columns Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.Columns Example/VB/source.vb#1)]  
-  
+The following example returns an array of <xref:System.Data.DataColumn> objects through the <xref:System.Data.ForeignKeyConstraint.Columns%2A> property.  
+ 
+[!code-vb[Classic WebData ForeignKeyConstraint.Columns Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.Columns Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,21 +421,21 @@
         <value>One of the <see cref="T:System.Data.Rule" /> values. The default is <see langword="Cascade" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a row is deleted from a parent table, the <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> determines what will happen in the columns of the child table (or tables). If the rule is set to `Cascade`, child rows will be deleted.  
+When a row is deleted from a parent table, the <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> determines what will happen in the columns of the child table (or tables). If the rule is set to `Cascade`, child rows will be deleted.  
+ 
+If set to `SetNull`, a `DBnull` will be placed in the appropriate columns of the affected rows. Depending on your data source, a null value may or may not be permitted in a column. For example, SQLServer allows multiple null values to be found in a primary key column, even if they are not unique. In a <xref:System.Data.DataTable>, however, if a <xref:System.Data.DataColumn> object's <xref:System.Data.DataColumn.Unique%2A> property is set to `true`, multiple null values are not allowed in primary key columns.  
+ 
+If set to `SetDefault`, the default value for the column is assigned.  
+ 
   
- If set to `SetNull`, a `DBnull` will be placed in the appropriate columns of the affected rows. Depending on your data source, a null value may or may not be permitted in a column. For example, SQLServer allows multiple null values to be found in a primary key column, even if they are not unique. In a <xref:System.Data.DataTable>, however, if a <xref:System.Data.DataColumn> object's <xref:System.Data.DataColumn.Unique%2A> property is set to `true`, multiple null values are not allowed in primary key columns.  
-  
- If set to `SetDefault`, the default value for the column is assigned.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a ForeignKeyConstraint, sets various of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.DeleteRule Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.DeleteRule Example/VB/source.vb#1)]  
-  
+The following example creates a ForeignKeyConstraint, sets various of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
+ 
+[!code-vb[Classic WebData ForeignKeyConstraint.DeleteRule Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.DeleteRule Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,13 +467,13 @@
           <see langword="true" />, if the objects are identical; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint> and checks it against other collection members with the <xref:System.Data.ForeignKeyConstraint.Equals%2A> method before adding it to a <xref:System.Data.ConstraintCollection>.  
-  
- [!code-csharp[Classic WebData ForeignKeyConstraint.Equals Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.Equals Example/CS/source.cs#1)]
- [!code-vb[Classic WebData ForeignKeyConstraint.Equals Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.Equals Example/VB/source.vb#1)]  
-  
+The following example creates a new <xref:System.Data.ForeignKeyConstraint> and checks it against other collection members with the <xref:System.Data.ForeignKeyConstraint.Equals%2A> method before adding it to a <xref:System.Data.ConstraintCollection>.  
+ 
+[!code-csharp[Classic WebData ForeignKeyConstraint.Equals Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.Equals Example/CS/source.cs#1)]
+[!code-vb[Classic WebData ForeignKeyConstraint.Equals Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.Equals Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,10 +585,10 @@
         <value>A <see cref="T:System.Data.DataTable" /> that is the child table in the constraint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-vb[Classic WebData ForeignKeyConstraint.Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.Table Example/VB/source.vb#1)]  
-  
+[!code-vb[Classic WebData ForeignKeyConstraint.Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.Table Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -620,12 +620,12 @@
         <value>One of the <see cref="T:System.Data.Rule" /> values. The default is <see langword="Cascade" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets various of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.DeleteRule Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.DeleteRule Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets various of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
+ 
+[!code-vb[Classic WebData ForeignKeyConstraint.DeleteRule Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint.DeleteRule Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

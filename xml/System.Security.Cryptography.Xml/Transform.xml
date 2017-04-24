@@ -14,14 +14,14 @@
     <summary>Represents the abstract base class from which all <see langword="&lt;Transform&gt;" /> elements that can be used in an XML digital signature derive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When performing XML signing and verification, the <`Transform`> element describes how the signer transformed the data object that was signed.  The verifier of a document then uses the <`Transform`> element to transform the signed data in the same manner.  If the verifier cannot transform the signed data in the same manner, the document cannot be verified.  
-  
- Use a class that derives from the <xref:System.Security.Cryptography.Xml.Transform> class whenever you need to add one or more transform objects to an encrypted XML document or to a signed XML document.  
-  
- For more information about the `<Transform>` element, see the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/, or the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
-  
+When performing XML signing and verification, the <`Transform`> element describes how the signer transformed the data object that was signed.  The verifier of a document then uses the <`Transform`> element to transform the signed data in the same manner.  If the verifier cannot transform the signed data in the same manner, the document cannot be verified.  
+ 
+Use a class that derives from the <xref:System.Security.Cryptography.Xml.Transform> class whenever you need to add one or more transform objects to an encrypted XML document or to a signed XML document.  
+ 
+For more information about the `<Transform>` element, see the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/, or the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,12 +58,12 @@
         <value>The URI that identifies the algorithm performed by the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the <xref:System.Security.Cryptography.Xml.Transform.Algorithm%2A> attribute of a `<Transform>` element in an XMLDSIG signature. For example, the algorithm URI for the Base64 decoding transform is defined as http://www.w3.org/2000/09/xmldsig#base64 in the XMLDSIG specification (Section 6.6.2).  
-  
- You can conveniently set this value using one of the static fields associated with the <xref:System.Security.Cryptography.Xml.SignedXml> class.  
-  
+This property corresponds to the <xref:System.Security.Cryptography.Xml.Transform.Algorithm%2A> attribute of a `<Transform>` element in an XMLDSIG signature. For example, the algorithm URI for the Base64 decoding transform is defined as http://www.w3.org/2000/09/xmldsig#base64 in the XMLDSIG specification (Section 6.6.2).  
+ 
+You can conveniently set this value using one of the static fields associated with the <xref:System.Security.Cryptography.Xml.SignedXml> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,12 +90,12 @@
         <value>An <see cref="T:System.Xml.XmlElement" /> object that represents the document context under which the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object is running.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When signing a document, the <xref:System.Security.Cryptography.Xml.Transform.Context%2A> property represents the value passed to the <xref:System.Security.Cryptography.Xml.SignedXml> constructor.  When verifying a document, the <xref:System.Security.Cryptography.Xml.Transform.Context%2A> property represents <xref:System.Security.Cryptography.Xml.Signature> object.  
-  
- The <xref:System.Security.Cryptography.Xml.Transform.Context%2A> property is set automatically during signature computation and checking, but before transforms are invoked.  
-  
+When signing a document, the <xref:System.Security.Cryptography.Xml.Transform.Context%2A> property represents the value passed to the <xref:System.Security.Cryptography.Xml.SignedXml> constructor.  When verifying a document, the <xref:System.Security.Cryptography.Xml.Transform.Context%2A> property represents <xref:System.Security.Cryptography.Xml.Signature> object.  
+ 
+The <xref:System.Security.Cryptography.Xml.Transform.Context%2A> property is set automatically during signature computation and checking, but before transforms are invoked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,26 +145,26 @@
         <returns>A list of the XML nodes that represent the transform-specific content needed to describe the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object in an XMLDSIG <see langword="&lt;Transform&gt;" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- If a <xref:System.Security.Cryptography.Xml.Transform> object represents an XPath transform using the XPath expression `self::text()`,a call to <xref:System.Security.Cryptography.Xml.Transform.GetInnerXml%2A> results in an <xref:System.Xml.XmlNodeList> object that represents the following XML element:  
-  
+If a <xref:System.Security.Cryptography.Xml.Transform> object represents an XPath transform using the XPath expression `self::text()`,a call to <xref:System.Security.Cryptography.Xml.Transform.GetInnerXml%2A> results in an <xref:System.Xml.XmlNodeList> object that represents the following XML element:  
+ 
 ```  
 <XPath>   
-  self::text()   
+ self::text()   
 </XPath>  
 ```  
-  
- This element corresponds to the transform-specific content of the `<Transform>` element as defined in Section 4.3.3.4 of the XMLDSIG specification. For the above XPath transform, the entire `<Transform>` element is as follows:  
-  
+ 
+This element corresponds to the transform-specific content of the `<Transform>` element as defined in Section 4.3.3.4 of the XMLDSIG specification. For the above XPath transform, the entire `<Transform>` element is as follows:  
+ 
 ```  
 <Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116">   
-  <XPath>   
-    self::text()   
-  </XPath>   
+ <XPath>   
+   self::text()   
+ </XPath>   
 </Transform>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,12 +209,12 @@
         <returns>The output of the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object as an object of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Transform.GetOutput%2A> method returns the output of the current transform after it is run on the value previously set by a call to the <xref:System.Security.Cryptography.Xml.Transform.LoadInput%2A> method.  
-  
- The type of the returned object must be one of the type objects in the <xref:System.Security.Cryptography.Xml.Transform.OutputTypes%2A> property.  
-  
+The <xref:System.Security.Cryptography.Xml.Transform.GetOutput%2A> method returns the output of the current transform after it is run on the value previously set by a call to the <xref:System.Security.Cryptography.Xml.Transform.LoadInput%2A> method.  
+ 
+The type of the returned object must be one of the type objects in the <xref:System.Security.Cryptography.Xml.Transform.OutputTypes%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,10 +237,10 @@
         <returns>The XML representation of the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlElement> object returned by this method conforms to the XML Scheme for the `<Transform>` element defined in Section 4.3.3.4 of the XMLDSIG specification.  
-  
+The <xref:System.Xml.XmlElement> object returned by this method conforms to the XML Scheme for the `<Transform>` element defined in Section 4.3.3.4 of the XMLDSIG specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,12 +262,12 @@
         <value>An array of valid input types for the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object; you can pass only objects of one of these types to the <see cref="M:System.Security.Cryptography.Xml.Transform.LoadInput(System.Object)" /> method of the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array returned by the <xref:System.Security.Cryptography.Xml.Transform.InputTypes%2A> property must contain at least one element because every <xref:System.Security.Cryptography.Xml.Transform> object must accept at least one type as valid input.  
-  
- A <xref:System.Security.Cryptography.Xml.Transform> object typically accepts one or more of the following types as input: <xref:System.IO.Stream>, <xref:System.Xml.XmlDocument>, or <xref:System.Xml.XmlNodeList>.  
-  
+The array returned by the <xref:System.Security.Cryptography.Xml.Transform.InputTypes%2A> property must contain at least one element because every <xref:System.Security.Cryptography.Xml.Transform> object must accept at least one type as valid input.  
+ 
+A <xref:System.Security.Cryptography.Xml.Transform> object typically accepts one or more of the following types as input: <xref:System.IO.Stream>, <xref:System.Xml.XmlDocument>, or <xref:System.Xml.XmlNodeList>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,10 +292,10 @@
         <summary>When overridden in a derived class, parses the specified <see cref="T:System.Xml.XmlNodeList" /> object as transform-specific content of a <see langword="&lt;Transform&gt;" /> element and configures the internal state of the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object to match the <see langword="&lt;Transform&gt;" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to process subelements of a `<Transform>` element.  
-  
+This method is used to process subelements of a `<Transform>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,10 +320,10 @@
         <summary>When overridden in a derived class, loads the specified input into the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of the input object must be one of the types in the <xref:System.Security.Cryptography.Xml.Transform.InputTypes%2A> property.  
-  
+The type of the input object must be one of the types in the <xref:System.Security.Cryptography.Xml.Transform.InputTypes%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
         <value>An array of valid output types for the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object; only objects of one of these types are returned from the <see cref="M:System.Security.Cryptography.Xml.Transform.GetOutput" /> methods of the current <see cref="T:System.Security.Cryptography.Xml.Transform" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array returned by the <xref:System.Security.Cryptography.Xml.Transform.OutputTypes%2A> property must contain at least one element because every transform must generate at least one type as output.  
-  
+The array returned by the <xref:System.Security.Cryptography.Xml.Transform.OutputTypes%2A> property must contain at least one element because every transform must generate at least one type as output.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,14 +375,14 @@
         <value>A <see cref="T:System.Collections.Hashtable" /> object that contains the namespaces that are propagated into the signature.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- XML namespaces are used to distinguish different elements in a document that have the same name.  
-  
- The <xref:System.Collections.Hashtable> keys of the <xref:System.Security.Cryptography.Xml.Transform.PropagatedNamespaces%2A> property are the namespace prefixes and the <xref:System.Collections.Hashtable> values are the namespace Uniform Resource Identifiers (URIs).  
-  
- The <xref:System.Security.Cryptography.Xml.Transform.PropagatedNamespaces%2A> property is set automatically during signature computation and checking, but before transforms are invoked.  
-  
+XML namespaces are used to distinguish different elements in a document that have the same name.  
+ 
+The <xref:System.Collections.Hashtable> keys of the <xref:System.Security.Cryptography.Xml.Transform.PropagatedNamespaces%2A> property are the namespace prefixes and the <xref:System.Collections.Hashtable> values are the namespace Uniform Resource Identifiers (URIs).  
+ 
+The <xref:System.Security.Cryptography.Xml.Transform.PropagatedNamespaces%2A> property is set automatically during signature computation and checking, but before transforms are invoked.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Security.Cryptography.Xml.Transform.PropagatedNamespaces" /> property was set to <see langword="null" />.</exception>
@@ -410,10 +410,10 @@
         <value>The current <see cref="T:System.Xml.XmlResolver" /> object. This property defaults to an <see cref="T:System.Xml.XmlSecureResolver" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlResolver> class resolves external XML resources named by a Uniform Resource Identifier (URI). If you do not trust the source of the XML file, you might not want to allow the XML file to access computer resources named by the URI. The <xref:System.Security.Cryptography.Xml.Transform.Resolver%2A> property allows you to control the level of access that XML files have to computer resources by specifying different <xref:System.Xml.XmlResolver> objects. If you do not want to allow any access, you can set this property to `null` (`Nothing` in Visual Basic).  
-  
+The <xref:System.Xml.XmlResolver> class resolves external XML resources named by a Uniform Resource Identifier (URI). If you do not trust the source of the XML file, you might not want to allow the XML file to access computer resources named by the URI. The <xref:System.Security.Cryptography.Xml.Transform.Resolver%2A> property allows you to control the level of access that XML files have to computer resources by specifying different <xref:System.Xml.XmlResolver> objects. If you do not want to allow any access, you can set this property to `null` (`Nothing` in Visual Basic).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,16 +19,16 @@
     <summary>Represents a project instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class result when a project is cloned. Constructors are internal in order to require users to create project instances from existing projects.  
-  
- New project instances are immutable, except that instance items can be added to them and instance properties set on them. Project instances are useful because they can be modified and built several times without disturbing the original project.  
-  
- Neither this class nor any of its constituents is allowed to have references to <xref:Microsoft.Build.Construction> or <xref:Microsoft.Build.Evaluation> objects.  
-  
- Project instance targets, host services, and the task registry are not exposed.  
-  
+Instances of this class result when a project is cloned. Constructors are internal in order to require users to create project instances from existing projects.  
+ 
+New project instances are immutable, except that instance items can be added to them and instance properties set on them. Project instances are useful because they can be modified and built several times without disturbing the original project.  
+ 
+Neither this class nor any of its constituents is allowed to have references to <xref:Microsoft.Build.Construction> or <xref:Microsoft.Build.Evaluation> objects.  
+ 
+Project instance targets, host services, and the task registry are not exposed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>Creates a new project instance and initializes it from the given project root, using the default project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
-  
+No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
         <summary>Creates a new project instance and initializes it from the given project file, using the default project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
-  
+No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <summary>Creates a new project instance and initializes it from the given project file, using the given global properties, tools version, and the default project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
-  
+No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
         <summary>Creates a new project instance and initializes it from the given project root, using the given global properties, tools version, and project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
-  
+No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <summary>Creates a new project instance and initializes it from the given project file, using the given global properties, tools version, and project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
-  
+No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@
         <summary>Creates a new project instance and initializes it from the given project root, using the given global properties, tools version, and project collection</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
-  
+No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <summary>Creates a new project instance and initializes it from the given project file, using the given global properties, tools version, sub toolset version, and project collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
-  
+No intermediate <xref:Microsoft.Build.Evaluation.Project> object is created. This is useful if a project is going to be built, but not displayed or edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <returns>Returns the new item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- We don't take a ProjectItemInstance to make sure we don't have one that's already in use by another ProjectInstance.  
-  
+We don't take a ProjectItemInstance to make sure we don't have one that's already in use by another ProjectInstance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,10 +296,10 @@
         <returns>Return the new item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- We don't take a ProjectItemInstance to make sure we don't have one that's already in use by another ProjectInstance.  
-  
+We don't take a ProjectItemInstance to make sure we don't have one that's already in use by another ProjectInstance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,10 +344,10 @@
         <returns>Returns true if the build succeeds; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
-  
+Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,10 +375,10 @@
         <returns>Returns true if the build succeeds; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
-  
+Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,10 +406,10 @@
         <returns>Returns true if the build succeeds; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
-  
+Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@
         <returns>Returns true if the build succeeds; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
-  
+Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -470,10 +470,10 @@
         <returns>Returns true if the build succeeds; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
-  
+Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,10 +503,10 @@
         <returns>Returns true on success, false on failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If any of the loggers supplied are already attached to the logging service we were passed, throws InvalidOperationException.  
-  
+If any of the loggers supplied are already attached to the logging service we were passed, throws InvalidOperationException.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -536,10 +536,10 @@
         <returns>Returns true if the build succeeds; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
-  
+Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -571,10 +571,10 @@
         <returns>Returns true if the build succeeds; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
-  
+Throws InvalidOperationException if any of the loggers supplied are already attached to the logging service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -637,10 +637,10 @@
         <value>Returns the list of default targets for this project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default targets are built if no targets are explicitly specified.  
-  
+Default targets are built if no targets are explicitly specified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -689,12 +689,12 @@
         <returns>Returns true if the string evaluates to true; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is useful for the immediate window.  
-  
- Does not expand bare metadata expressions.  
-  
+This is useful for the immediate window.  
+ 
+Does not expand bare metadata expressions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -720,12 +720,12 @@
         <returns>Returns the expanded string value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is useful for some hosts, or for the debugger immediate window.  
-  
- Does not expand bare metadata expressions.  
-  
+This is useful for some hosts, or for the debugger immediate window.  
+ 
+Does not expand bare metadata expressions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -961,10 +961,10 @@
         <returns>Returns the value of the property with the given name. Returns an empty string if no property exists with that name. The value returned has no escaped character sequences.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not distinguish between a property with a value of empty string and no property with the given name.  
-  
+This method does not distinguish between a property with a value of empty string and no property with the given name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1013,14 +1013,14 @@
         <value>Returns the dictionary of global properties this project was evaluated with.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Read only collection.  
-  
- Traverses project references.  
-  
- This is the publicly exposed getter, that translates into a read-only dead IDictionary\<string, string>.  
-  
+Read only collection.  
+ 
+Traverses project references.  
+ 
+This is the publicly exposed getter, that translates into a read-only dead IDictionary\<string, string>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1238,10 +1238,10 @@
         <returns>Returns the new property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- We don't take a ProjectPropertyInstance to make sure we don't have one that's already in use by another ProjectPropertyInstance.  
-  
+We don't take a ProjectPropertyInstance to make sure we don't have one that's already in use by another ProjectPropertyInstance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1286,10 +1286,10 @@
         <value>Returns the tools version this project was evaluated with, if any.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The result is not necessarily the same as the tools version on the Project tag, if any; it may have been externally specified, for example with a /tv switch.  
-  
+The result is not necessarily the same as the tools version on the Project tag, if any; it may have been externally specified, for example with a /tv switch.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,18 +23,18 @@
     <summary>Provides a Cryptography Next Generation (CNG) implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class derives from the <xref:System.Security.Cryptography.ECDsa> abstract base class.  
+This class derives from the <xref:System.Security.Cryptography.ECDsa> abstract base class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Security.Cryptography.ECDsaCng> class to sign a message and how to use the signature to verify that the message has not been altered.  
-  
- [!code-csharp[ECDsaCng#1](~/samples/snippets/csharp/VS_Snippets_CLR/ecdsacng/cs/program.cs#1)]
- [!code-vb[ECDsaCng#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ecdsacng/vb/program.vb#1)]  
-  
+The following example shows how to use the <xref:System.Security.Cryptography.ECDsaCng> class to sign a message and how to use the signature to verify that the message has not been altered.  
+ 
+[!code-csharp[ECDsaCng#1](~/samples/snippets/csharp/VS_Snippets_CLR/ecdsacng/cs/program.cs#1)]
+[!code-vb[ECDsaCng#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ecdsacng/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaCng" /> class with a random key pair.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The random key pair has a public key length of 521 bits.  
-  
+The random key pair has a public key length of 521 bits.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) classes are not supported on this system.</exception>
@@ -97,10 +97,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaCng" /> class with a random key pair, using the specified key size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The random key pair will have the public key length defined by the `keySize` parameter.  
-  
+The random key pair will have the public key length defined by the `keySize` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) classes are not supported on this system.</exception>
@@ -171,10 +171,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaCng" /> class whose public/private key pair is generated over the specified curve.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method and must be either a named or explicit prime.  
-  
+`curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method and must be either a named or explicit prime.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
@@ -305,10 +305,10 @@
         <summary>This method is not implemented.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To deserialize an XML key, use the <xref:System.Security.Cryptography.ECDsaCng.FromXmlString%28System.String%2CSystem.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
-  
+To deserialize an XML key, use the <xref:System.Security.Cryptography.ECDsaCng.FromXmlString%28System.String%2CSystem.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method was not overridden for this instance.</exception>
@@ -395,16 +395,16 @@
         <value>An object that specifies the hash algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property accepts the following algorithms: <xref:System.Security.Cryptography.CngAlgorithm.MD5%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha1%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha256%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha384%2A>, and <xref:System.Security.Cryptography.CngAlgorithm.Sha512%2A>.  
-  
- Other custom hash algorithms may also be used.  
-  
- The default algorithm is <xref:System.Security.Cryptography.CngAlgorithm.Sha256%2A>.  
-  
- This property is not used if you are signing or verifying data that is already hashed.  
-  
+This property accepts the following algorithms: <xref:System.Security.Cryptography.CngAlgorithm.MD5%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha1%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha256%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha384%2A>, and <xref:System.Security.Cryptography.CngAlgorithm.Sha512%2A>.  
+ 
+Other custom hash algorithms may also be used.  
+ 
+The default algorithm is <xref:System.Security.Cryptography.CngAlgorithm.Sha256%2A>.  
+ 
+This property is not used if you are signing or verifying data that is already hashed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>
@@ -511,10 +511,10 @@
         <summary>Replaces the existing key that the current instance is working with by creating a new <see cref="T:System.Security.Cryptography.CngKey" /> for the parameters structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `parameters` contains only <xref:System.Security.Cryptography.ECParameters>, only a public key is imported. If `parameters` also contains <xref:System.Security.Cryptography.ECParameters>, a full key pair is imported. The <xref:System.Security.Cryptography.ECParameters> field specifies the type of the curve to import.  
-  
+If `parameters` contains only <xref:System.Security.Cryptography.ECParameters>, only a public key is imported. If `parameters` also contains <xref:System.Security.Cryptography.ECParameters>, a full key pair is imported. The <xref:System.Security.Cryptography.ECParameters> field specifies the type of the curve to import.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
@@ -617,12 +617,12 @@
         <returns>A digital signature for the specified data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method generates a signature for the specified data by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result.  
-  
- The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
-  
+This method generates a signature for the specified data by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result.  
+ 
+The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -657,12 +657,12 @@
         <returns>A digital signature for the specified data stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method generates a signature for the specified data stream by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result.  
-  
- The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
-  
+This method generates a signature for the specified data stream by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result.  
+ 
+The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -701,12 +701,12 @@
         <returns>A digital signature for the specified length of data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method generates a signature for the specified data by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result  
-  
- The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
-  
+This method generates a signature for the specified data by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result  
+ 
+The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -747,10 +747,10 @@
         <returns>A digital signature for the specified hash value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
-  
+The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -781,10 +781,10 @@
         <returns>Not applicable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To convert the current key to an XML representation, use the <xref:System.Security.Cryptography.ECDsaCng.ToXmlString%28System.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
-  
+To convert the current key to an XML representation, use the <xref:System.Security.Cryptography.ECDsaCng.ToXmlString%28System.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method is not implemented.</exception>
@@ -839,10 +839,10 @@
           <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method generates a signature for the given data by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result.  
-  
+This method generates a signature for the given data by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -878,10 +878,10 @@
           <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method hashes the input data by using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property before verification.  
-  
+This method hashes the input data by using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property before verification.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -921,10 +921,10 @@
           <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method hashes the input data by using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property before verification.  
-  
+This method hashes the input data by using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property before verification.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

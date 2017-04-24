@@ -116,10 +116,10 @@
         <value>Returns the value of the AssemblyFile attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The assembly may have a strong name and may be located in the GAC. Either the `AssemblyFile` or `AssemblyName` attribute must be present, but not both.  
-  
+The assembly may have a strong name and may be located in the GAC. Either the `AssemblyFile` or `AssemblyName` attribute must be present, but not both.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <value>Returns the value of the AssemblyName attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file path to the assembly, which may be either a full path or a relative path. Relative paths are relative to the directory of the project file containing this UsingTask. Either the `AssemblyFile` or `AssemblyName` attribute must be present, but not both.  
-  
+The file path to the assembly, which may be either a full path or a relative path. Relative paths are relative to the directory of the project file containing this UsingTask. Either the `AssemblyFile` or `AssemblyName` attribute must be present, but not both.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <value>Returns the inner XML content of the inline task. Returns null if no body exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The inner XML content is the source code body of the inline task, and is passed directly to the task factory as a string.  
-  
+The inner XML content is the source code body of the inline task, and is passed directly to the task factory as a string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,10 +281,10 @@
         <value>Returns the value of the TaskFactory attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Selects the task factory class name used to create instances of this task. TaskFactory is used together with either the AssemblyName or AssemblyFile attribute to locate the task factory.  
-  
+Selects the task factory class name used to create instances of this task. TaskFactory is used together with either the AssemblyName or AssemblyFile attribute to locate the task factory.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,10 +324,10 @@
         <value>Returns the value of the TaskName attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indicates the name of this precompiled or inline task.  
-  
+Indicates the name of this precompiled or inline task.  
+ 
  ]]></format>
         </remarks>
       </Docs>

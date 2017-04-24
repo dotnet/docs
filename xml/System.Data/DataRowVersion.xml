@@ -22,32 +22,32 @@
     <summary>Describes the version of a <see cref="T:System.Data.DataRow" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataRowVersion> values are used when retrieving the value found in a <xref:System.Data.DataRow> using <xref:System.Data.DataRow.Item%2A> or the <xref:System.Data.DataRow.GetChildRows%2A> of the <xref:System.Data.DataRow> object.  
-  
- The <xref:System.Data.DataRowVersion> informs you what version of a <xref:System.Data.DataRow> exists. Versions change under the following circumstances:  
-  
+The <xref:System.Data.DataRowVersion> values are used when retrieving the value found in a <xref:System.Data.DataRow> using <xref:System.Data.DataRow.Item%2A> or the <xref:System.Data.DataRow.GetChildRows%2A> of the <xref:System.Data.DataRow> object.  
+ 
+The <xref:System.Data.DataRowVersion> informs you what version of a <xref:System.Data.DataRow> exists. Versions change under the following circumstances:  
+ 
 -   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.BeginEdit%2A> method, if you change the value, the `Current` and `Proposed` values become available.  
-  
+ 
 -   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.CancelEdit%2A> method, the `Proposed` value is deleted.  
-  
+ 
 -   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.EndEdit%2A> method, the Proposed value becomes the `Current` value.  
-  
+ 
 -   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.AcceptChanges%2A> method, the `Original` value becomes identical to the `Current` value.  
-  
+ 
 -   After calling the <xref:System.Data.DataTable> object's <xref:System.Data.DataTable.AcceptChanges%2A> method, the `Original` value becomes identical to the `Current` value.  
-  
+ 
 -   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.RejectChanges%2A> method, the `Proposed` value is discarded, and the version becomes `Current`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example checks the <xref:System.Data.DataRowVersion> of a <xref:System.Data.DataRow> before invoking the <xref:System.Data.DataRow.AcceptChanges%2A> method.  
-  
- [!code-csharp[Classic WebData DataRowVersion Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRowVersion Example/cs/source.cs#1)]
- [!code-vb[Classic WebData DataRowVersion Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRowVersion Example/VB/source.vb#1)]  
-  
+The following example checks the <xref:System.Data.DataRowVersion> of a <xref:System.Data.DataRow> before invoking the <xref:System.Data.DataRow.AcceptChanges%2A> method.  
+ 
+[!code-csharp[Classic WebData DataRowVersion Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRowVersion Example/cs/source.cs#1)]
+[!code-vb[Classic WebData DataRowVersion Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRowVersion Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

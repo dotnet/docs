@@ -14,10 +14,10 @@
     <summary>Acts as a base class for deriving a validation class so that a value of an object can be verified.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationValidatorBase> class is used to create a custom validator. A custom validator can be used to verify object values.  
-  
+The <xref:System.Configuration.ConfigurationValidatorBase> class is used to create a custom validator. A custom validator can be used to verify object values.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <summary>Determines whether the value of an object is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An object derived from the <xref:System.Configuration.ConfigurationValidatorBase> class contains the criteria necessary to validate an object. The criteria are established when the derived class is instantiated. The object to validate is passed as a parameter of the <xref:System.Configuration.ConfigurationValidatorBase.Validate%2A> method.  
-  
+An object derived from the <xref:System.Configuration.ConfigurationValidatorBase> class contains the criteria necessary to validate an object. The criteria are established when the derived class is instantiated. The object to validate is passed as a parameter of the <xref:System.Configuration.ConfigurationValidatorBase.Validate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

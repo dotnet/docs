@@ -14,69 +14,69 @@
     <summary>Creates an arbitrary affine matrix transformation that is used to manipulate objects or coordinate systems in a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] plane.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.MatrixTransform> class to create custom transformations that are not provided by the <xref:System.Windows.Media.RotateTransform>, <xref:System.Windows.Media.SkewTransform>, <xref:System.Windows.Media.ScaleTransform>, or <xref:System.Windows.Media.TranslateTransform> classes.  
-  
- A 3x3 matrix is used for transformations in a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] x-y plane. You can multiply affine matrix transformations to form linear transformations, such as rotation and skew (shear) that are followed by translation.  
-  
- An affine matrix transformation has its final column equal to (0, 0, 1); therefore, you only have to specify the members in the first two columns.  
-  
- A [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Media.Matrix> has the following structure:  
-  
+Use the <xref:System.Windows.Media.MatrixTransform> class to create custom transformations that are not provided by the <xref:System.Windows.Media.RotateTransform>, <xref:System.Windows.Media.SkewTransform>, <xref:System.Windows.Media.ScaleTransform>, or <xref:System.Windows.Media.TranslateTransform> classes.  
+ 
+A 3x3 matrix is used for transformations in a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] x-y plane. You can multiply affine matrix transformations to form linear transformations, such as rotation and skew (shear) that are followed by translation.  
+ 
+An affine matrix transformation has its final column equal to (0, 0, 1); therefore, you only have to specify the members in the first two columns.  
+ 
+A [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Media.Matrix> has the following structure:  
+ 
 ||||  
 |-|-|-|  
 |<xref:System.Windows.Media.Matrix.M11%2A>|<xref:System.Windows.Media.Matrix.M12%2A>|0|  
 |<xref:System.Windows.Media.Matrix.M21%2A>|<xref:System.Windows.Media.Matrix.M22%2A>|0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A>|<xref:System.Windows.Media.Matrix.OffsetY%2A>|1|  
-  
- The members in the last row, <xref:System.Windows.Media.Matrix.OffsetX%2A> and <xref:System.Windows.Media.Matrix.OffsetY%2A>, represent translation values.  
-  
- Methods and properties usually specify the transformation matrix as a vector that has only six members; the members are as follows:  
-  
- (<xref:System.Windows.Media.Matrix.M11%2A>, <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.M22%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, <xref:System.Windows.Media.Matrix.OffsetY%2A>)  
-  
+ 
+The members in the last row, <xref:System.Windows.Media.Matrix.OffsetX%2A> and <xref:System.Windows.Media.Matrix.OffsetY%2A>, represent translation values.  
+ 
+Methods and properties usually specify the transformation matrix as a vector that has only six members; the members are as follows:  
+ 
+(<xref:System.Windows.Media.Matrix.M11%2A>, <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.M22%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, <xref:System.Windows.Media.Matrix.OffsetY%2A>)  
+ 
 <a name="xamlAttributeUsage_MatrixTransform"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="m11, m12, m21, m22, offsetX, offsetY"/>  
 - or -  
 <object property="Identity"/>  
 ```  
-  
+ 
 <a name="xamlValues_MatrixTransform"></a>   
 ## XAML Values  
- *m11*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (1, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *m12*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (1, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *m21*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (2, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *m22*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (2, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *offsetX*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (3, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *offsetY*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (3, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
+*m11*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value at position (1, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
+ 
+*m12*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value at position (1, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
+ 
+*m21*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value at position (2, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
+ 
+*m22*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value at position (2, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
+ 
+*offsetX*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value at position (3, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
+ 
+*offsetY*  
+<xref:System.Double?displayProperty=fullName>  
+ 
+The value at position (3, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -160,14 +160,14 @@
         <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object returns <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,12 +190,12 @@
         <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,17 +236,17 @@
         <value>The <see cref="T:System.Windows.Media.Matrix" /> structure that defines this transformation. The default value is an identity <see cref="T:System.Windows.Media.Matrix" />. An identity matrix has a value of <c>1</c> in coefficients <c>[1,1]</c>, <c>[2,2]</c>, and <c>[3,3]</c>; and a value of <c>0</c> in the rest of the coefficients.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Matrix"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.MatrixTransform.MatrixProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
         <value>The matrix that represents this <see cref="T:System.Windows.Media.MatrixTransform" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To modify the matrix of this transform, use its <xref:System.Windows.Media.MatrixTransform.Matrix%2A> property.  
-  
+To modify the matrix of this transform, use its <xref:System.Windows.Media.MatrixTransform.Matrix%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

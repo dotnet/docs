@@ -15,18 +15,18 @@
     <summary>Defines methods for reading the parts of a <see cref="T:System.Windows.Documents.FixedDocument" /> and also for limited types of writing to the document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to obtain a reference to an object that implements this interface.  
-  
- [!code-csharp[XpsReadWriteSign#SignatureDefinitionCommandHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDialog.xaml.cs#signaturedefinitioncommandhandler)]
- [!code-vb[XpsReadWriteSign#SignatureDefinitionCommandHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedialog.xaml.vb#signaturedefinitioncommandhandler)]  
-  
- The following example shows how to use an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> to obtain an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> collection in order to access each page in a <xref:System.Windows.Documents.FixedDocument>.  
-  
- [!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
- [!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
-  
+The following example shows how to obtain a reference to an object that implements this interface.  
+ 
+[!code-csharp[XpsReadWriteSign#SignatureDefinitionCommandHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDialog.xaml.cs#signaturedefinitioncommandhandler)]
+[!code-vb[XpsReadWriteSign#SignatureDefinitionCommandHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedialog.xaml.vb#signaturedefinitioncommandhandler)]  
+ 
+The following example shows how to use an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> to obtain an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> collection in order to access each page in a <xref:System.Windows.Documents.FixedDocument>.  
+ 
+[!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
+[!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,10 +105,10 @@
         <value>An <see cref="T:System.Windows.Xps.Packaging.XpsStructure" /> that represents the <see langword="DocumentStructure" /> element, if one exists, and its child elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document does not need to have a Document Structure part.  
-  
+An [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document does not need to have a Document Structure part.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,13 +130,13 @@
         <value>A collection of fixed page readers, one reader for each page in the <see cref="T:System.Windows.Documents.FixedDocument" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader.FixedPages%2A> property to obtain an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> collection in order to access the individual pages in a <xref:System.Windows.Documents.FixedDocument>.  
-  
- [!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
- [!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader.FixedPages%2A> property to obtain an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> collection in order to access the individual pages in a <xref:System.Windows.Documents.FixedDocument>.  
+ 
+[!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
+[!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <value>A <see cref="T:System.Printing.PrintTicket" /> that contains the default printing options for the document; or <see langword="null" /> if no print ticket exists for the document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the <xref:System.Printing.PrintTicket> part of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document, see chapter 2 in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
+For more information about the <xref:System.Printing.PrintTicket> part of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document, see chapter 2 in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,13 +262,13 @@
         <value>A <see cref="T:System.Uri" /> that represents the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader.Uri%2A> property.  
-  
- [!code-csharp[XpsReadWriteSign#IterateXpsPackageParts](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/ReadingAndWritingXps.cs#iteratexpspackageparts)]
- [!code-vb[XpsReadWriteSign#IterateXpsPackageParts](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/readingandwritingxps.vb#iteratexpspackageparts)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader.Uri%2A> property.  
+ 
+[!code-csharp[XpsReadWriteSign#IterateXpsPackageParts](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/ReadingAndWritingXps.cs#iteratexpspackageparts)]
+[!code-vb[XpsReadWriteSign#IterateXpsPackageParts](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/readingandwritingxps.vb#iteratexpspackageparts)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

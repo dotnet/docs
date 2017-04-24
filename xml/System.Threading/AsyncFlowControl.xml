@@ -23,10 +23,10 @@
     <summary>Provides the functionality to restore the migration, or flow, of the execution context between threads.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An execution context contains all execution-related information for a logical thread. The flow of the execution context to other threads can be prevented by using the <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=fullName> method, which returns an <xref:System.Threading.AsyncFlowControl> structure. The <xref:System.Threading.AsyncFlowControl.Undo%2A> method of the returned <xref:System.Threading.AsyncFlowControl> structure can be used to undo the flow suppression. The <xref:System.Threading.AsyncFlowControl> structure must be used on the same thread on which it was created.  
-  
+An execution context contains all execution-related information for a logical thread. The flow of the execution context to other threads can be prevented by using the <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=fullName> method, which returns an <xref:System.Threading.AsyncFlowControl> structure. The <xref:System.Threading.AsyncFlowControl.Undo%2A> method of the returned <xref:System.Threading.AsyncFlowControl> structure can be used to undo the flow suppression. The <xref:System.Threading.AsyncFlowControl> structure must be used on the same thread on which it was created.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,15 +53,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.AsyncFlowControl" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Threading.AsyncFlowControl>. The `Dispose` method leaves the <xref:System.Threading.AsyncFlowControl> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.AsyncFlowControl> so the garbage collector can reclaim the memory that the <xref:System.Threading.AsyncFlowControl> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Threading.AsyncFlowControl>. The `Dispose` method leaves the <xref:System.Threading.AsyncFlowControl> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.AsyncFlowControl> so the garbage collector can reclaim the memory that the <xref:System.Threading.AsyncFlowControl> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.AsyncFlowControl>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.AsyncFlowControl> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Threading.AsyncFlowControl" /> structure is not used on the thread where it was created.  
@@ -180,37 +180,37 @@
           <see langword="true" /> if the two structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%2CSystem.Threading.AsyncFlowControl%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Threading.AsyncFlowControl a, System.Threading.AsyncFlowControl b);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Threading.AsyncFlowControl a, valuetype System.Threading.AsyncFlowControl b) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.op_Inequality(System.Threading.AsyncFlowControl,System.Threading.AsyncFlowControl)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="a" Type="System.Threading.AsyncFlowControl" />
-        <Parameter Name="b" Type="System.Threading.AsyncFlowControl" />
-      </Parameters>
-      <Docs>
-        <param name="a">An <see cref="T:System.Threading.AsyncFlowControl" /> structure.</param>
-        <param name="b">An <see cref="T:System.Threading.AsyncFlowControl" /> structure.</param>
-        <summary>Compares two <see cref="T:System.Threading.AsyncFlowControl" /> structures to determine whether they are not equal.</summary>
-        <returns>
-          <see langword="true" /> if the structures are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Threading.AsyncFlowControl a, System.Threading.AsyncFlowControl b);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Threading.AsyncFlowControl a, valuetype System.Threading.AsyncFlowControl b) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.op_Inequality(System.Threading.AsyncFlowControl,System.Threading.AsyncFlowControl)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>mscorlib</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="a" Type="System.Threading.AsyncFlowControl" />
+       <Parameter Name="b" Type="System.Threading.AsyncFlowControl" />
+     </Parameters>
+     <Docs>
+       <param name="a">An <see cref="T:System.Threading.AsyncFlowControl" /> structure.</param>
+       <param name="b">An <see cref="T:System.Threading.AsyncFlowControl" /> structure.</param>
+       <summary>Compares two <see cref="T:System.Threading.AsyncFlowControl" /> structures to determine whether they are not equal.</summary>
+       <returns>
+         <see langword="true" /> if the structures are not equal; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%2CSystem.Threading.AsyncFlowControl%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -242,12 +242,12 @@
         <summary>Restores the flow of the execution context between threads.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=fullName> method returns an <xref:System.Threading.AsyncFlowControl> structure that is used to restore the flow.  
-  
- The <xref:System.Threading.AsyncFlowControl.Undo%2A> method must be called only on the <xref:System.Threading.AsyncFlowControl> structure returned by its associated <xref:System.Threading.ExecutionContext.SuppressFlow%2A> method.  
-  
+The <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=fullName> method returns an <xref:System.Threading.AsyncFlowControl> structure that is used to restore the flow.  
+ 
+The <xref:System.Threading.AsyncFlowControl.Undo%2A> method must be called only on the <xref:System.Threading.AsyncFlowControl> structure returned by its associated <xref:System.Threading.ExecutionContext.SuppressFlow%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Threading.AsyncFlowControl" /> structure is not used on the thread where it was created.  

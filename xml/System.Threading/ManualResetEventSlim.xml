@@ -36,18 +36,18 @@
     <summary>Provides a slimmed down version of <see cref="T:System.Threading.ManualResetEvent" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this class for better performance than <xref:System.Threading.ManualResetEvent> when wait times are expected to be very short, and when the event does not cross a process boundary. <xref:System.Threading.ManualResetEventSlim> uses busy spinning for a short time while it waits for the event to become signaled. When wait times are short, spinning can be much less expensive than waiting by using wait handles. However, if the event does not become signaled within a certain period of time, <xref:System.Threading.ManualResetEventSlim> resorts to a regular event handle wait.  
+You can use this class for better performance than <xref:System.Threading.ManualResetEvent> when wait times are expected to be very short, and when the event does not cross a process boundary. <xref:System.Threading.ManualResetEventSlim> uses busy spinning for a short time while it waits for the event to become signaled. When wait times are short, spinning can be much less expensive than waiting by using wait handles. However, if the event does not become signaled within a certain period of time, <xref:System.Threading.ManualResetEventSlim> resorts to a regular event handle wait.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.Threading.ManualResetEventSlim>. For more information about the use of `SpinCount` and other best practices concerning the use of this type, see [ManualResetEvent and ManualResetEventSlim](~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md).  
-  
- [!code-csharp[System.Threading.ManualResetEventSlim#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.manualreseteventslim/cs/mres.cs#01)]
- [!code-vb[System.Threading.ManualResetEventSlim#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.manualreseteventslim/vb/mres.vb#01)]  
-  
+The following example shows how to use a <xref:System.Threading.ManualResetEventSlim>. For more information about the use of `SpinCount` and other best practices concerning the use of this type, see [ManualResetEvent and ManualResetEventSlim](~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md).  
+ 
+[!code-csharp[System.Threading.ManualResetEventSlim#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.manualreseteventslim/cs/mres.cs#01)]
+[!code-vb[System.Threading.ManualResetEventSlim#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.manualreseteventslim/vb/mres.vb#01)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.ManualResetEventSlim" /> are thread-safe and may be used concurrently from multiple threads, with the exception of Dispose, which must only be used when all other operations on the <see cref="T:System.Threading.ManualResetEventSlim" /> have completed, and Reset, which should only be used when no other threads are accessing the event.</threadsafe>
@@ -165,15 +165,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Threading.ManualResetEventSlim>. The `Dispose` method leaves the <xref:System.Threading.ManualResetEventSlim> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.ManualResetEventSlim> so the garbage collector can reclaim the memory that the <xref:System.Threading.ManualResetEventSlim> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Threading.ManualResetEventSlim>. The `Dispose` method leaves the <xref:System.Threading.ManualResetEventSlim> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.ManualResetEventSlim> so the garbage collector can reclaim the memory that the <xref:System.Threading.ManualResetEventSlim> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.ManualResetEventSlim>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.ManualResetEventSlim> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Threading.ManualResetEventSlim" />, and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike most of the members of <xref:System.Threading.ManualResetEventSlim>, <xref:System.Threading.ManualResetEventSlim.Dispose%2A> is not thread-safe and may not be used concurrently with other members of this instance.  
-  
+Unlike most of the members of <xref:System.Threading.ManualResetEventSlim>, <xref:System.Threading.ManualResetEventSlim.Dispose%2A> is not thread-safe and may not be used concurrently with other members of this instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,10 +271,10 @@
         <summary>Sets the state of the event to nonsignaled, which causes threads to block.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Threading.ManualResetEventSlim.Reset%2A> can be called concurrently with all members except <xref:System.Threading.ManualResetEventSlim.WaitHandle%2A>.  
-  
+<xref:System.Threading.ManualResetEventSlim.Reset%2A> can be called concurrently with all members except <xref:System.Threading.ManualResetEventSlim.WaitHandle%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
@@ -363,10 +363,10 @@
         <summary>Blocks the current thread until the current <see cref="T:System.Threading.ManualResetEventSlim" /> is set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The caller of this method blocks indefinitely until the current instance is set. The caller will return immediately if the event is currently in a set state.  
-  
+The caller of this method blocks indefinitely until the current instance is set. The caller will return immediately if the event is currently in a set state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
@@ -440,10 +440,10 @@
         <summary>Blocks the current thread until the current <see cref="T:System.Threading.ManualResetEventSlim" /> receives a signal, while observing a <see cref="T:System.Threading.CancellationToken" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The caller of this method blocks indefinitely until the current instance is set. The caller will return immediately if the event is currently in a set state.  
-  
+The caller of this method blocks indefinitely until the current instance is set. The caller will return immediately if the event is currently in a set state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
@@ -606,10 +606,10 @@
         <value>The underlying <see cref="T:System.Threading.WaitHandle" /> event object fore this <see cref="T:System.Threading.ManualResetEventSlim" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Accessing this property forces initialization of an underlying event object if one hasn't already been created. To simply wait on this <xref:System.Threading.ManualResetEventSlim>, the public Wait methods should be preferred. It is recommended to dispose the <xref:System.Threading.ManualResetEventSlim> instance after accessing this property, in order to prevent a resource leak.  
-  
+Accessing this property forces initialization of an underlying event object if one hasn't already been created. To simply wait on this <xref:System.Threading.ManualResetEventSlim>, the public Wait methods should be preferred. It is recommended to dispose the <xref:System.Threading.ManualResetEventSlim> instance after accessing this property, in order to prevent a resource leak.  
+ 
  ]]></format>
         </remarks>
       </Docs>

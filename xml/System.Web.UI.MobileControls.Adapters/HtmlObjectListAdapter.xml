@@ -19,10 +19,10 @@
     <summary>Provides an object list adapter class for the HTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used primarily by developers of custom mobile page and control adapters.  
-  
+This class is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -59,10 +59,10 @@
         <summary>A value ("__back") that if present in the postback arguments, indicates that the browser should return to top of the list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is used primarily by developers of custom mobile page and control adapters.  
-  
+This field is used primarily by developers of custom mobile page and control adapters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
           <see langword="true" /> if the event was handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by a control when it receives a postback event notification, to check whether the event is adapter-specific. For more information, see <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.HandlePostBackEvent%2A?displayProperty=fullName>.  
-  
+This method is called by a control when it receives a postback event notification, to check whether the event is adapter-specific. For more information, see <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.HandlePostBackEvent%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The postback data is invalid. This exception can be caused by data binding the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> in the <see cref="M:System.Web.UI.MobileControls.MobileControl.OnLoad(System.EventArgs)" /> event method without first checking the <see cref="P:System.Web.UI.Page.IsPostBack" /> property.</exception>
@@ -343,15 +343,15 @@
           <see langword="true" /> if the list must be rendered as a table; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden in order to change the manner in which the list view is rendered.  
-  
+This method can be overridden in order to change the manner in which the list view is rendered.  
+ 
 > [!NOTE]
 >  Even if the <xref:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.ShouldRenderAsTable%2A> method returns `true`, the target device might not support tables, in which case the list view will not be rendered as a table.  
-  
- The <xref:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.ShouldRenderAsTable%2A> method returns a `Boolean` that indicates whether the specified table will fit on the target device screen, whereas the <xref:System.Web.Configuration.HttpCapabilitiesBase.Tables%2A> property of the <xref:System.Web.Mobile.MobileCapabilities> class returns a `Boolean` that indicates whether the device supports tables at all.  
-  
+ 
+The <xref:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.ShouldRenderAsTable%2A> method returns a `Boolean` that indicates whether the specified table will fit on the target device screen, whereas the <xref:System.Web.Configuration.HttpCapabilitiesBase.Tables%2A> property of the <xref:System.Web.Mobile.MobileCapabilities> class returns a `Boolean` that indicates whether the device supports tables at all.  
+ 
  ]]></format>
         </remarks>
       </Docs>

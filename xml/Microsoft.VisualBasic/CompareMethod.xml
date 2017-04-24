@@ -13,12 +13,12 @@
     <summary>Indicates how to compare strings when calling comparison functions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call comparison functions, you can use the `CompareMethod` enumeration in your code in place of the actual values. The `Compare` argument takes the `CompareMethod` enumeration members.  
-  
- For details on binary and text comparisons, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
-  
+When you call comparison functions, you can use the `CompareMethod` enumeration in your code in place of the actual values. The `Compare` argument takes the `CompareMethod` enumeration members.  
+ 
+For details on binary and text comparisons, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>

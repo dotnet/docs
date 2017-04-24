@@ -135,12 +135,12 @@
         <returns>An array containing the parameter names passed to the task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned array excludes the `Condition` and `ContinueOnError` parameters.  
-  
- If no parameters are passed to the task, this method returns an empty array.  
-  
+The returned array excludes the `Condition` and `ContinueOnError` parameters.  
+ 
+If no parameters are passed to the task, this method returns an empty array.  
+ 
  ]]></format>
         </remarks>
       </Docs>

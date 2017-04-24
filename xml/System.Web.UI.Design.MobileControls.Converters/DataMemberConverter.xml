@@ -19,12 +19,12 @@
     <summary>Provides a type converter for a property representing a data member in a data source. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  You typically do not access a type converter directly. This implementation of <xref:System.ComponentModel.TypeConverter> is intended for use by a data-bound control at design time, and is instantiated with a <xref:System.ComponentModel.TypeConverterAttribute> on a property.  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -45,12 +45,12 @@
         <summary>Instantiates a new instance of the <see cref="T:System.Web.UI.Design.MobileControls.Converters.DataMemberConverter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  You typically do not access a type converter directly. This implementation of <xref:System.ComponentModel.TypeConverter> is intended for use by a data-bound control at design time, and is instantiated with a <xref:System.ComponentModel.TypeConverterAttribute> on a property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,12 +79,12 @@
           <see langword="true" /> if the <paramref name="sourceType" /> is <see cref="T:System.String" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  You typically do not access a type converter directly. This implementation of <xref:System.ComponentModel.TypeConverter> is intended for use by a data bound control at design time, and instantiated with a <xref:System.ComponentModel.TypeConverterAttribute> on a property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,12 +114,12 @@
         <returns>A string containing the <paramref name="value" /> if <paramref name="value" /> is not <see langword="null" /> and contains a string; otherwise, an empty string ("").</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  You typically do not access a type converter directly. This implementation of <xref:System.ComponentModel.TypeConverter> is intended for use by a data-bound control at design time, and is instantiated with a <xref:System.ComponentModel.TypeConverterAttribute> on a property.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="M:System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)">
@@ -147,12 +147,12 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> object containing the names of available data views in the data source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  You typically do not access a type converter directly. This implementation of <xref:System.ComponentModel.TypeConverter> is intended for use by a data-bound control at design time, and is instantiated with a <xref:System.ComponentModel.TypeConverterAttribute> on a property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,13 +179,13 @@
           <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.MobileControls.Converters.DataMemberConverter.GetStandardValuesExclusive%2A> method is called by the designer host before calling <xref:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStandardValues%2A>.  
-  
+The <xref:System.Web.UI.Design.MobileControls.Converters.DataMemberConverter.GetStandardValuesExclusive%2A> method is called by the designer host before calling <xref:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStandardValues%2A>.  
+ 
 > [!NOTE]
 >  You typically do not access a type converter directly. This implementation of <xref:System.ComponentModel.TypeConverter> is intended for use by a data-bound control at design time, and is instantiated with a <xref:System.ComponentModel.TypeConverterAttribute> on a property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,12 +212,12 @@
           <see langword="true" /> if the context is not null and can be cast to an <see cref="T:System.ComponentModel.IComponent" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  You typically do not access a type converter directly. This implementation of <xref:System.ComponentModel.TypeConverter> is intended for use by a data-bound control at design time, and is instantiated with a <xref:System.ComponentModel.TypeConverterAttribute> on a property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

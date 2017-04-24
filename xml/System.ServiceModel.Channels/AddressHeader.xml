@@ -15,20 +15,20 @@
     <summary>Represents a header that encapsulates an address information item used to identify or interact with an endpoint.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.ServiceModel.Channels.AddressHeader> is characterized by a name and namespace and has a value that contains optional information used to identify or interact with an endpoint. The name can be accessed by the <xref:System.ServiceModel.Channels.AddressHeader.Name%2A> property and the namespace by the <xref:System.ServiceModel.Channels.AddressHeader.Namespace%2A> property.  
+An <xref:System.ServiceModel.Channels.AddressHeader> is characterized by a name and namespace and has a value that contains optional information used to identify or interact with an endpoint. The name can be accessed by the <xref:System.ServiceModel.Channels.AddressHeader.Name%2A> property and the namespace by the <xref:System.ServiceModel.Channels.AddressHeader.Namespace%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create address headers, access their properties, add them to a service endpoint and host the service using the endpoint.  
-  
- [!code-csharp[SL_AddressHeader#0](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#0)]
- [!code-csharp[SL_AddressHeader#0](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#0)]
- [!code-vb[SL_AddressHeader#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#0)]
- [!code-vb[SL_AddressHeader#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#0)]  
-  
+The following example shows how to create address headers, access their properties, add them to a service endpoint and host the service using the endpoint.  
+ 
+[!code-csharp[SL_AddressHeader#0](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#0)]
+[!code-csharp[SL_AddressHeader#0](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#0)]
+[!code-vb[SL_AddressHeader#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#0)]
+[!code-vb[SL_AddressHeader#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader%2A> to create new <xref:System.ServiceModel.Channels.AddressHeader> objects.  
-  
+Use the <xref:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader%2A> to create new <xref:System.ServiceModel.Channels.AddressHeader> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,15 +78,15 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the information item specified by the <paramref name="value" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-csharp[SL_AddressHeader#3](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#3)]
- [!code-csharp[SL_AddressHeader#3](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#3)]
- [!code-vb[SL_AddressHeader#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#3)]
- [!code-vb[SL_AddressHeader#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#3)]  
-  
+The following example shows how to create an address header using this method.  
+ 
+[!code-csharp[SL_AddressHeader#3](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#3)]
+[!code-csharp[SL_AddressHeader#3](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#3)]
+[!code-vb[SL_AddressHeader#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#3)]
+[!code-vb[SL_AddressHeader#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,15 +115,15 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the information item specified by the value parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-csharp[SL_AddressHeader#4](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#4)]
- [!code-csharp[SL_AddressHeader#4](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#4)]
- [!code-vb[SL_AddressHeader#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#4)]
- [!code-vb[SL_AddressHeader#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#4)]  
-  
+The following example shows how to create an address header using this method.  
+ 
+[!code-csharp[SL_AddressHeader#4](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#4)]
+[!code-csharp[SL_AddressHeader#4](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#4)]
+[!code-vb[SL_AddressHeader#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#4)]
+[!code-vb[SL_AddressHeader#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="formatter" /> is <see langword="null" />.</exception>
@@ -155,15 +155,15 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> with the specified <paramref name="name" /> and <paramref name="ns" /> that contains the information item specified by <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-csharp[SL_AddressHeader#5](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#5)]
- [!code-csharp[SL_AddressHeader#5](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#5)]
- [!code-vb[SL_AddressHeader#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#5)]
- [!code-vb[SL_AddressHeader#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#5)]  
-  
+The following example shows how to create an address header using this method.  
+ 
+[!code-csharp[SL_AddressHeader#5](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#5)]
+[!code-csharp[SL_AddressHeader#5](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#5)]
+[!code-vb[SL_AddressHeader#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#5)]
+[!code-vb[SL_AddressHeader#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> is <see langword="null" /> or <paramref name="name" />.Length == 0.</exception>
@@ -197,15 +197,15 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> with the specified <paramref name="name" /> and <paramref name="ns" /> that contains the information item specified by <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-csharp[SL_AddressHeader#6](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#6)]
- [!code-csharp[SL_AddressHeader#6](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#6)]
- [!code-vb[SL_AddressHeader#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#6)]
- [!code-vb[SL_AddressHeader#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#6)]  
-  
+The following example shows how to create an address header using this method.  
+ 
+[!code-csharp[SL_AddressHeader#6](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#6)]
+[!code-csharp[SL_AddressHeader#6](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#6)]
+[!code-vb[SL_AddressHeader#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#6)]
+[!code-vb[SL_AddressHeader#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -235,17 +235,17 @@
           <see langword="true" /> if the information item in a specified <paramref name="obj" /> is equivalent to the information item contained in the current address header; otherwise, <see langword="false" />. In particular, returns <see langword="false" /> if <paramref name="obj" /> is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Checks for equivalence of serialized canonical XML between the information items.  
+Checks for equivalence of serialized canonical XML between the information items.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
-  
-  
+The following example shows how to call this method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,12 +269,12 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can serialize the current address header object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
-  
-  
+The following example shows how to call this method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,19 +298,19 @@
         <returns>A unique hash code for the current address header.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the string-based implementation.  
+This is the string-based implementation.  
+ 
+<xref:System.ServiceModel.Channels.AddressHeader.GetHashCode%2A> is suitable for use in hashing algorithms and data structures like a hash table.  
+ 
   
- <xref:System.ServiceModel.Channels.AddressHeader.GetHashCode%2A> is suitable for use in hashing algorithms and data structures like a hash table.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
-  
-  
+The following example shows how to call this method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,22 +338,22 @@
         <returns>An instance of a class of type <paramref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using this overload, you must supply a type for the generic parameter `T`. The type of the return value is determined by the generic type parameter.  
+When using this overload, you must supply a type for the generic parameter `T`. The type of the return value is determined by the generic type parameter.  
+ 
+Use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload if you want to use a customized XML formatter.  
+ 
   
- Use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload if you want to use a customized XML formatter.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
- [!code-csharp[SL_AddressHeader#10](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#10)]
- [!code-csharp[SL_AddressHeader#10](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#10)]
- [!code-vb[SL_AddressHeader#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#10)]
- [!code-vb[SL_AddressHeader#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#10)]  
-  
+The following example shows how to call this method.  
+ 
+[!code-csharp[SL_AddressHeader#10](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#10)]
+[!code-csharp[SL_AddressHeader#10](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#10)]
+[!code-vb[SL_AddressHeader#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#10)]
+[!code-vb[SL_AddressHeader#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,19 +384,19 @@
         <returns>An instance of a class of type <paramref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using this overload, you must supply a type for the generic parameter `T`. The type of the return value is determined by the generic type parameter.  
+When using this overload, you must supply a type for the generic parameter `T`. The type of the return value is determined by the generic type parameter.  
+ 
+Use this overload only if you want to use a customized XML formatter; otherwise use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601> overload.  
+ 
   
- Use this overload only if you want to use a customized XML formatter; otherwise use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601> overload.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
-  
-  
+The following example shows how to call this method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="serializer" /> is <see langword="null" />.</exception>
@@ -420,15 +420,15 @@
         <value>The name of the address header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to access this property.  
-  
- [!code-csharp[SL_AddressHeader#1](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#1)]
- [!code-csharp[SL_AddressHeader#1](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#1)]
- [!code-vb[SL_AddressHeader#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#1)]
- [!code-vb[SL_AddressHeader#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#1)]  
-  
+The following example shows how to access this property.  
+ 
+[!code-csharp[SL_AddressHeader#1](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#1)]
+[!code-csharp[SL_AddressHeader#1](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#1)]
+[!code-vb[SL_AddressHeader#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#1)]
+[!code-vb[SL_AddressHeader#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,15 +451,15 @@
         <value>The namespace of the address header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to access this property.  
-  
- [!code-csharp[SL_AddressHeader#2](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#2)]
- [!code-csharp[SL_AddressHeader#2](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#2)]
- [!code-vb[SL_AddressHeader#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#2)]
- [!code-vb[SL_AddressHeader#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#2)]  
-  
+The following example shows how to access this property.  
+ 
+[!code-csharp[SL_AddressHeader#2](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#2)]
+[!code-csharp[SL_AddressHeader#2](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#2)]
+[!code-vb[SL_AddressHeader#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#2)]
+[!code-vb[SL_AddressHeader#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -527,12 +527,12 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.MessageHeader" /> that wraps the current address header.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
-  
-  
+The following example shows how to call this method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,19 +558,19 @@
         <summary>Writes the address header to a stream or file using a specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload calls the abstract  
+This overload calls the abstract  
+ 
+<xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method, so users must provide an implementation of that method to use this method.  
+ 
   
- <xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method, so users must provide an implementation of that method to use this method.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
-  
-  
+The following example shows how to call this method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
@@ -597,19 +597,19 @@
         <summary>Writes the address header to a stream or file using a specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload wraps <xref:System.Xml.XmlWriter> as a <xref:System.Xml.XmlDictionaryWriter> and then the calls the abstract  
+This overload wraps <xref:System.Xml.XmlWriter> as a <xref:System.Xml.XmlDictionaryWriter> and then the calls the abstract  
+ 
+<xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method. Users must provide an implementation for that abstract method to use this overload.  
+ 
   
- <xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method. Users must provide an implementation for that abstract method to use this overload.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
-  
-  
+The following example shows how to call this method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
@@ -636,12 +636,12 @@
         <summary>Writes the address header contents to a stream or file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
-  
-  
+The following example shows how to call this method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
@@ -668,12 +668,12 @@
         <summary>Starts to write the address header contents to a stream or file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to call this method.  
-  
-  
-  
+The following example shows how to call this method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
@@ -689,10 +689,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object that contains the information item is serialized into the address header by an <xref:System.Runtime.Serialization.XmlObjectSerializer> object.  
-  
+The object that contains the information item is serialized into the address header by an <xref:System.Runtime.Serialization.XmlObjectSerializer> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -707,10 +707,10 @@
         <summary>Deserializes the information item from the current address header object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload if you want to use a customized XML formatter; otherwise use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601> overload.  
-  
+Use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload if you want to use a customized XML formatter; otherwise use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601> overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -725,10 +725,10 @@
         <summary>Writes the address header to a stream or file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader%2A> and <xref:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader%28System.Xml.XmlWriter%29> overloads provide interfaces to use in writing an address header to a stream or file. Both call the abstract <xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method, so users must provide an implementation of this method to use these overloads.  
-  
+The <xref:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader%2A> and <xref:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader%28System.Xml.XmlWriter%29> overloads provide interfaces to use in writing an address header to a stream or file. Both call the abstract <xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method, so users must provide an implementation of this method to use these overloads.  
+ 
  ]]></format>
         </remarks>
       </Docs>

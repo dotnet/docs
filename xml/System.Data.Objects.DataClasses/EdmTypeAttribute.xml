@@ -14,10 +14,10 @@
     <summary>Base class for attributes that define how types in the object layer are mapped to entity types and complex types in the conceptual model.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Objects.DataClasses.EdmEntityTypeAttribute> and <xref:System.Data.Objects.DataClasses.EdmComplexTypeAttribute> are derived from <xref:System.Data.Objects.DataClasses.EdmTypeAttribute>.  
-  
+<xref:System.Data.Objects.DataClasses.EdmEntityTypeAttribute> and <xref:System.Data.Objects.DataClasses.EdmComplexTypeAttribute> are derived from <xref:System.Data.Objects.DataClasses.EdmTypeAttribute>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <value>A <see cref="T:System.String" /> that is the name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of the type must correspond to the name of the entity type or complex type in the conceptual schema.  
-  
+The name of the type must correspond to the name of the entity type or complex type in the conceptual schema.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,24 +23,24 @@
     <summary>Provides a type converter to convert Unicode character objects to and from various other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a string, with a length of 1, to and from a character.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
+This converter can only convert a string, with a length of 1, to and from a character.  
+ 
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
 > [!NOTE]
 >  You should never create an instance of a <xref:System.ComponentModel.CharConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example converts a variable of type <xref:System.Char> to a string variable, and vice versa.  
-  
- [!code-cpp[Converters#5](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#5)]
- [!code-csharp[Converters#5](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#5)]
- [!code-vb[Converters#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#5)]  
-  
+The following code example converts a variable of type <xref:System.Char> to a string variable, and vice versa.  
+ 
+[!code-cpp[Converters#5](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#5)]
+[!code-csharp[Converters#5](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#5)]
+[!code-vb[Converters#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,12 +102,12 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a string, with a length of 1, to and from a character.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+This converter can only convert a string, with a length of 1, to and from a character.  
+ 
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,12 +146,12 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can only convert a string, with a length of 1, to and from a character.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+This converter can only convert a string, with a length of 1, to and from a character.  
+ 
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">

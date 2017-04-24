@@ -23,12 +23,12 @@
     <summary>Represents the collection of checked items in a list view control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> stores the checked items in a <xref:System.Windows.Forms.ListView> control. Items can only be checked if the <xref:System.Windows.Forms.ListView.CheckBoxes%2A> property of the <xref:System.Windows.Forms.ListView> control is set to `true`. The items stored in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> are items contained in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>. The <xref:System.Windows.Forms.ListView.ListViewItemCollection> class stores all items displayed in the <xref:System.Windows.Forms.ListView> control.  
-  
- The following table shows an example of how the <xref:System.Windows.Forms.ListView.ListViewItemCollection> stores the items of the <xref:System.Windows.Forms.ListView> as well as their selection states in an example <xref:System.Windows.Forms.ListView> control.  
-  
+A <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> stores the checked items in a <xref:System.Windows.Forms.ListView> control. Items can only be checked if the <xref:System.Windows.Forms.ListView.CheckBoxes%2A> property of the <xref:System.Windows.Forms.ListView> control is set to `true`. The items stored in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> are items contained in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>. The <xref:System.Windows.Forms.ListView.ListViewItemCollection> class stores all items displayed in the <xref:System.Windows.Forms.ListView> control.  
+ 
+The following table shows an example of how the <xref:System.Windows.Forms.ListView.ListViewItemCollection> stores the items of the <xref:System.Windows.Forms.ListView> as well as their selection states in an example <xref:System.Windows.Forms.ListView> control.  
+ 
 |Index|Item|Checked state in the ListView|  
 |-----------|----------|-----------------------------------|  
 |0|Item1|Unchecked|  
@@ -36,17 +36,17 @@
 |2|Item3|Unchecked|  
 |3|Item4|Checked|  
 |4|Item5|Checked|  
-  
- Based on the <xref:System.Windows.Forms.ListView.ListViewItemCollection> example in the previous table, the following table demonstrates how the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> would appear.  
-  
+ 
+Based on the <xref:System.Windows.Forms.ListView.ListViewItemCollection> example in the previous table, the following table demonstrates how the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> would appear.  
+ 
 |Index|Checked item in ListViewItemCollection|  
 |-----------|--------------------------------------------|  
 |0|Item2|  
 |1|Item4|  
 |2|Item5|  
-  
- You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> class is a member of the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. Once you know that the item is in the collection, you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
+ 
+You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> class is a member of the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. Once you know that the item is in the collection, you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListView> control.  
-  
+You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListView> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
           <see langword="true" /> if the specified item is located in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> is a one of the checked items stored in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. Once you know that an item is in the checked item collection, you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A?displayProperty=fullName> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
+The <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> is a one of the checked items stored in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. Once you know that an item is in the checked item collection, you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A?displayProperty=fullName> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
           <see langword="true" /> if an item with the specified key is contained in the collection; otherwise, <see langword="false." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property of a <xref:System.Windows.Forms.ListViewItem> corresponds to the key for an item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
+The <xref:System.Windows.Forms.ListViewItem.Name%2A> property of a <xref:System.Windows.Forms.ListViewItem> corresponds to the key for an item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The owner <see cref="T:System.Windows.Forms.ListView" /> is in virtual mode.</exception>
@@ -159,10 +159,10 @@
         <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to combine the checked items from multiple collections into a single array.  
-  
+You can use this method to combine the checked items from multiple collections into a single array.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables you to determine the number of checked items in the <xref:System.Windows.Forms.ListView> control. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop.  
-  
+This property enables you to determine the number of checked items in the <xref:System.Windows.Forms.ListView> control. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,10 +237,10 @@
         <returns>The zero-based index of the item in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once you know that an item is located within the collection (using the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method), you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A> method to determine where a specific item within the <xref:System.Windows.Forms.ListView.ListViewItemCollection> for the <xref:System.Windows.Forms.ListView> is stored within the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
+Once you know that an item is located within the collection (using the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method), you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A> method to determine where a specific item within the <xref:System.Windows.Forms.ListView.ListViewItemCollection> for the <xref:System.Windows.Forms.ListView> is stored within the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,14 +266,14 @@
         <returns>The zero-based index for the <see cref="T:System.Windows.Forms.ListViewItem" /> with the specified name, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property of a <xref:System.Windows.Forms.ListViewItem> corresponds to the key for an item in a <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOfKey%2A> returns -1.  
-  
- If <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
+The <xref:System.Windows.Forms.ListViewItem.Name%2A> property of a <xref:System.Windows.Forms.ListViewItem> corresponds to the key for an item in a <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
+ 
+The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOfKey%2A> returns -1.  
+ 
+If <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The owner <see cref="T:System.Windows.Forms.ListView" /> is in virtual mode.</exception>
@@ -297,10 +297,10 @@
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is always `true` for this collection. The items in the collection can only be modified by the <xref:System.Windows.Forms.ListView> control.  
-  
+This property is always `true` for this collection. The items in the collection can only be modified by the <xref:System.Windows.Forms.ListView> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
         <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item located at the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This indexer enables you to get a specific item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. The item stored in this collection is an item in the <xref:System.Windows.Forms.ListView.ListViewItemCollection> of the <xref:System.Windows.Forms.ListView> that represents a checked item in the <xref:System.Windows.Forms.ListView>.  
-  
+This indexer enables you to get a specific item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. The item stored in this collection is an item in the <xref:System.Windows.Forms.ListView.ListViewItemCollection> of the <xref:System.Windows.Forms.ListView> that represents a checked item in the <xref:System.Windows.Forms.ListView>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.CheckedListViewItemCollection.Count" /> property of <see cref="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" />.</exception>
@@ -357,12 +357,12 @@
         <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item with the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Item%2A> returns `null` if the `key` parameter is `null` or empty.  
-  
- The <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Name%2A> property corresponds to the key for an item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
+<xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Item%2A> returns `null` if the `key` parameter is `null` or empty.  
+ 
+The <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Name%2A> property corresponds to the key for an item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The owner <see cref="T:System.Windows.Forms.ListView" /> is in virtual mode.</exception>
@@ -426,10 +426,10 @@
         <returns>The zero-based index where value is located in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
-  
+You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -452,10 +452,10 @@
         <summary>Removes all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To clear the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, set the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property to `false` for each <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>.  
-  
+You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To clear the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, set the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property to `false` for each <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -528,10 +528,10 @@
         <summary>Inserts an item into the collection at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
-  
+You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -599,10 +599,10 @@
         <summary>Removes the first occurrence of an item from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
-  
+You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -628,10 +628,10 @@
         <summary>Removes an item from the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
-  
+You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>

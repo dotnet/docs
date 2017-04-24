@@ -55,20 +55,20 @@
         <summary>Draws an arc to the specified point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+ 
+A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+ 
   
- A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to draw an arc using the <xref:System.Windows.Media.StreamGeometryContext.ArcTo%2A> method.  
-  
- [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryArcToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryArcToExample.cs#streamgeometryarctoexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryArcToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometryarctoexample.vb#streamgeometryarctoexamplewholepage)]  
-  
+The following example shows how to draw an arc using the <xref:System.Windows.Media.StreamGeometryContext.ArcTo%2A> method.  
+ 
+[!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryArcToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryArcToExample.cs#streamgeometryarctoexamplewholepage)]
+[!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryArcToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometryarctoexample.vb#streamgeometryarctoexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,12 +99,12 @@
         <summary>Specifies the starting point for a new figure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By calling this method multiple times, you can create multiple figures (self-contained geometric shapes) within this <xref:System.Windows.Media.StreamGeometryContext>.  
-  
- A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
-  
+By calling this method multiple times, you can create multiple figures (self-contained geometric shapes) within this <xref:System.Windows.Media.StreamGeometryContext>.  
+ 
+A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,22 +139,22 @@
         <summary>Draws a Bezier curve to the specified point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A cubic Bezier curve is defined by a start point, end point, and two control points. The first control point determines the curvature of the first half of the segment, and the second control point determines the curvature of the second half of the segment.  
+A cubic Bezier curve is defined by a start point, end point, and two control points. The first control point determines the curvature of the first half of the segment, and the second control point determines the curvature of the second half of the segment.  
+ 
+This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+ 
+A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+ 
   
- This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
-  
- A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to draw a Bezier curve using the <xref:System.Windows.Media.StreamGeometryContext.BezierTo%2A> method.  
-  
- [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryBezierToExample.cs#streamgeometrybeziertoexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrybeziertoexample.vb#streamgeometrybeziertoexamplewholepage)]  
-  
+The following example shows how to draw a Bezier curve using the <xref:System.Windows.Media.StreamGeometryContext.BezierTo%2A> method.  
+ 
+[!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryBezierToExample.cs#streamgeometrybeziertoexamplewholepage)]
+[!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrybeziertoexample.vb#streamgeometrybeziertoexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
@@ -177,10 +177,10 @@
         <summary>Closes this context and flushes its content so that it can be rendered.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once closed, the context cannot be modified. The context must be closed before its content can be rendered.  
-  
+Once closed, the context cannot be modified. The context must be closed before its content can be rendered.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This context has already been closed or disposed.</exception>
@@ -212,20 +212,20 @@
         <summary>Draws a straight line to the specified <see cref="T:System.Windows.Point" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+ 
+A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+ 
   
- A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to draw a triangle using the <xref:System.Windows.Media.StreamGeometryContext.LineTo%2A> method.  
-  
- [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryTriangleExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryTriangleExample.cs#streamgeometrytriangleexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryTriangleExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrytriangleexample.vb#streamgeometrytriangleexamplewholepage)]  
-  
+The following example shows how to draw a triangle using the <xref:System.Windows.Media.StreamGeometryContext.LineTo%2A> method.  
+ 
+[!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryTriangleExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryTriangleExample.cs#streamgeometrytriangleexamplewholepage)]
+[!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryTriangleExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrytriangleexample.vb#streamgeometrytriangleexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
@@ -257,22 +257,22 @@
         <summary>Draws one or more connected Bezier curves.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first point in `points` specifies the first control point, the next specifies the second control point, the third point specifies the end point, the next point specifies the first control point of the next curve, and so on.  
+The first point in `points` specifies the first control point, the next specifies the second control point, the third point specifies the end point, the next point specifies the first control point of the next curve, and so on.  
+ 
+This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+ 
+A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+ 
   
- This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
-  
- A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to draw multiple connected Bezier curves using the <xref:System.Windows.Media.StreamGeometryContext.PolyBezierTo%2A> method.  
-  
- [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryPolyBezierToExample.cs#streamgeometrypolybeziertoexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrypolybeziertoexample.vb#streamgeometrypolybeziertoexamplewholepage)]  
-  
+The following example shows how to draw multiple connected Bezier curves using the <xref:System.Windows.Media.StreamGeometryContext.PolyBezierTo%2A> method.  
+ 
+[!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryPolyBezierToExample.cs#streamgeometrypolybeziertoexamplewholepage)]
+[!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrypolybeziertoexample.vb#streamgeometrypolybeziertoexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
@@ -304,20 +304,20 @@
         <summary>Draws one or more connected straight lines.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+ 
+A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+ 
   
- A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to draw a triangle using the <xref:System.Windows.Media.StreamGeometryContext.PolyLineTo%2A> method.  
-  
- [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyLineToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryPolyLineToExample.cs#streamgeometrypolylinetoexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyLineToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrypolylinetoexample.vb#streamgeometrypolylinetoexamplewholepage)]  
-  
+The following example shows how to draw a triangle using the <xref:System.Windows.Media.StreamGeometryContext.PolyLineTo%2A> method.  
+ 
+[!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyLineToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryPolyLineToExample.cs#streamgeometrypolylinetoexamplewholepage)]
+[!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyLineToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrypolylinetoexample.vb#streamgeometrypolylinetoexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
@@ -349,20 +349,20 @@
         <summary>Draws one or more connected quadratic Bezier curves.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+ 
+A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+ 
   
- A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to draw multiple connected quadratic Bezier curves using the <xref:System.Windows.Media.StreamGeometryContext.PolyQuadraticBezierTo%2A> method.  
-  
- [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyQuadraticBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryPolyQuadraticBezierToExample.cs#streamgeometrypolyquadraticbeziertoexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyQuadraticBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrypolyquadraticbeziertoexample.vb#streamgeometrypolyquadraticbeziertoexamplewholepage)]  
-  
+The following example shows how to draw multiple connected quadratic Bezier curves using the <xref:System.Windows.Media.StreamGeometryContext.PolyQuadraticBezierTo%2A> method.  
+ 
+[!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyQuadraticBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryPolyQuadraticBezierToExample.cs#streamgeometrypolyquadraticbeziertoexamplewholepage)]
+[!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyQuadraticBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrypolyquadraticbeziertoexample.vb#streamgeometrypolyquadraticbeziertoexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
@@ -396,22 +396,22 @@
         <summary>Draws a quadratic Bezier curve.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike a cubic Bezier curve, which uses two control points, a quadratic cubic Bezier curve uses a single control point.  
+Unlike a cubic Bezier curve, which uses two control points, a quadratic cubic Bezier curve uses a single control point.  
+ 
+This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+ 
+A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+ 
   
- This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
-  
- A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to draw a quadratic Bezier curve using the <xref:System.Windows.Media.StreamGeometryContext.QuadraticBezierTo%2A> method.  
-  
- [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryQuadraticBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryQuadraticBezierToExample.cs#streamgeometryquadraticbeziertoexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryQuadraticBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometryquadraticbeziertoexample.vb#streamgeometryquadraticbeziertoexamplewholepage)]  
-  
+The following example shows how to draw a quadratic Bezier curve using the <xref:System.Windows.Media.StreamGeometryContext.QuadraticBezierTo%2A> method.  
+ 
+[!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryQuadraticBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryQuadraticBezierToExample.cs#streamgeometryquadraticbeziertoexamplewholepage)]
+[!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryQuadraticBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometryquadraticbeziertoexample.vb#streamgeometryquadraticbeziertoexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>

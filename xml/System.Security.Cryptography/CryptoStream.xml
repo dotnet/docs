@@ -29,23 +29,23 @@
     <summary>Defines a stream that links data streams to cryptographic transformations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The common language runtime uses a stream-oriented design for cryptography. The core of this design is <xref:System.Security.Cryptography.CryptoStream>. Any cryptographic objects that implement <xref:System.Security.Cryptography.CryptoStream> can be chained together with any objects that implement <xref:System.IO.Stream>, so the streamed output from one object can be fed into the input of another object. The intermediate result (the output from the first object) does not need to be stored separately.  
-  
+The common language runtime uses a stream-oriented design for cryptography. The core of this design is <xref:System.Security.Cryptography.CryptoStream>. Any cryptographic objects that implement <xref:System.Security.Cryptography.CryptoStream> can be chained together with any objects that implement <xref:System.IO.Stream>, so the streamed output from one object can be fed into the input of another object. The intermediate result (the output from the first object) does not need to be stored separately.  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly by calling its <xref:System.Security.Cryptography.CryptoStream.Clear%2A> method, which in turn calls its <xref:System.IDisposable> implementation. To dispose of the type directly, call its <xref:System.Security.Cryptography.CryptoStream.Clear%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+ 
+You should always explicitly close your <xref:System.Security.Cryptography.CryptoStream> object after you are done using it by calling the <xref:System.Security.Cryptography.CryptoStream.Clear%2A> method.  Doing so flushes the underlying stream and causes all remaining blocks of data to be processed by the <xref:System.Security.Cryptography.CryptoStream> object.  However, if an exception occurs before you call the <xref:System.IO.Stream.Close%2A> method, the <xref:System.Security.Cryptography.CryptoStream> object might not be closed.  To ensure that the <xref:System.IO.Stream.Close%2A> method always gets called, place your call to the <xref:System.Security.Cryptography.CryptoStream.Clear%2A> method within the `finally` block of a `try`/`catch` statement.  
+ 
   
- You should always explicitly close your <xref:System.Security.Cryptography.CryptoStream> object after you are done using it by calling the <xref:System.Security.Cryptography.CryptoStream.Clear%2A> method.  Doing so flushes the underlying stream and causes all remaining blocks of data to be processed by the <xref:System.Security.Cryptography.CryptoStream> object.  However, if an exception occurs before you call the <xref:System.IO.Stream.Close%2A> method, the <xref:System.Security.Cryptography.CryptoStream> object might not be closed.  To ensure that the <xref:System.IO.Stream.Close%2A> method always gets called, place your call to the <xref:System.Security.Cryptography.CryptoStream.Clear%2A> method within the `finally` block of a `try`/`catch` statement.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use a <xref:System.Security.Cryptography.CryptoStream> to encrypt a string. This method uses <xref:System.Security.Cryptography.RijndaelManaged> class with the specified <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> and initialization vector (<xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>).  
-  
- [!code-csharp[Cryptography.Rijndael.Create.File#1](~/samples/snippets/csharp/VS_Snippets_CLR/cryptography.rijndael.create.file/cs/fileexample.cs#1)]
- [!code-vb[Cryptography.Rijndael.Create.File#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/cryptography.rijndael.create.file/vb/fileexample.vb#1)]  
-  
+The following example demonstrates how to use a <xref:System.Security.Cryptography.CryptoStream> to encrypt a string. This method uses <xref:System.Security.Cryptography.RijndaelManaged> class with the specified <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> and initialization vector (<xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>).  
+ 
+[!code-csharp[Cryptography.Rijndael.Create.File#1](~/samples/snippets/csharp/VS_Snippets_CLR/cryptography.rijndael.create.file/cs/fileexample.cs#1)]
+[!code-vb[Cryptography.Rijndael.Create.File#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/cryptography.rijndael.create.file/vb/fileexample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptoStream" /> class with a target data stream, the transformation to use, and the mode of the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any object that derives from <xref:System.IO.Stream> can be passed into the `stream` parameter. Any object that implements <xref:System.Security.Cryptography.ICryptoTransform> (such as <xref:System.Security.Cryptography.HashAlgorithm>) can be passed into the `transform` parameter.  
-  
+Any object that derives from <xref:System.IO.Stream> can be passed into the `stream` parameter. Any object that implements <xref:System.Security.Cryptography.ICryptoTransform> (such as <xref:System.Security.Cryptography.HashAlgorithm>) can be passed into the `transform` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -144,10 +144,10 @@
         <value>Always <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Seeking is not enabled in a <xref:System.Security.Cryptography.CryptoStream>, so this method always returns `false`.  
-  
+Seeking is not enabled in a <xref:System.Security.Cryptography.CryptoStream>, so this method always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,12 +202,12 @@
         <summary>Releases all resources used by the <see cref="T:System.Security.Cryptography.CryptoStream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method wraps a call to the type's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation.  
-  
- Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoStream> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md)  
-  
+This method wraps a call to the type's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation.  
+ 
+Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoStream> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,12 +242,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.CryptoStream" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the disposing parameter set to `true`. `Finalize` invokes `Dispose` with disposing set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.CryptoStream> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the disposing parameter set to `true`. `Finalize` invokes `Dispose` with disposing set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.CryptoStream> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -284,13 +284,13 @@
         <summary>Clears all buffers for the current stream and causes any buffered data to be written to the underlying device.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.Security.Cryptography.CryptoStream.Flush%2A> or <xref:System.IO.Stream.Close%2A>. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
-  
+Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.Security.Cryptography.CryptoStream.Flush%2A> or <xref:System.IO.Stream.Close%2A>. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
+ 
 > [!NOTE]
 >  You should call either the <xref:System.IO.Stream.Close%2A> method or the <xref:System.Security.Cryptography.CryptoStream.FlushFinalBlock%2A> method to complete flushing the buffer.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,12 +325,12 @@
         <returns>A task that represents the asynchronous flush operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must preface your call to <xref:System.Security.Cryptography.CryptoStream.FlushAsync%2A> with the `await` (C#) or `Await` (Visual Basic) operator to suspend execution of the method until the task is complete. For more information, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
-  
- If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
-  
+You must preface your call to <xref:System.Security.Cryptography.CryptoStream.FlushAsync%2A> with the `await` (C#) or `Await` (Visual Basic) operator to suspend execution of the method until the task is complete. For more information, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
+ 
+If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
@@ -362,10 +362,10 @@
         <summary>Updates the underlying data source or repository with the current state of the buffer, then clears the buffer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling the <xref:System.IO.Stream.Close%2A> method will call <xref:System.Security.Cryptography.CryptoStream.FlushFinalBlock%2A>. If you do not call <xref:System.IO.Stream.Close%2A>, call <xref:System.Security.Cryptography.CryptoStream.FlushFinalBlock%2A> to complete flushing the buffer. Call <xref:System.Security.Cryptography.CryptoStream.FlushFinalBlock%2A> only when all stream activity is complete.  
-  
+Calling the <xref:System.IO.Stream.Close%2A> method will call <xref:System.Security.Cryptography.CryptoStream.FlushFinalBlock%2A>. If you do not call <xref:System.IO.Stream.Close%2A>, call <xref:System.Security.Cryptography.CryptoStream.FlushFinalBlock%2A> to complete flushing the buffer. Call <xref:System.Security.Cryptography.CryptoStream.FlushFinalBlock%2A> only when all stream activity is complete.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The key is corrupt which can cause invalid padding to the stream.</exception>
@@ -403,10 +403,10 @@
           <see langword="true" /> if the final block has been flushed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set `true` when the <xref:System.Security.Cryptography.CryptoStream.FlushFinalBlock%2A> method is called.  
-  
+This property is set `true` when the <xref:System.Security.Cryptography.CryptoStream.FlushFinalBlock%2A> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@
         <value>This property is not supported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property exists only to support inheritance from <xref:System.IO.Stream>, and cannot be used.  
-  
+This property exists only to support inheritance from <xref:System.IO.Stream>, and cannot be used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This property is not supported.</exception>
@@ -472,10 +472,10 @@
         <value>This property is not supported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property exists only to support inheritance from <xref:System.IO.Stream>, and cannot be used.  
-  
+This property exists only to support inheritance from <xref:System.IO.Stream>, and cannot be used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This property is not supported.</exception>
@@ -559,12 +559,12 @@
         <returns>A task that represents the asynchronous read operation. The value of the task object's <paramref name="TResult" /> parameter contains the total number of bytes read into the buffer. The result can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must preface your call to <xref:System.Security.Cryptography.CryptoStream.ReadAsync%2A> with the `await` (C#) or `Await` (Visual Basic) operator to suspend execution of the method until the task is complete. For more information, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
-  
- If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
-  
+You must preface your call to <xref:System.Security.Cryptography.CryptoStream.ReadAsync%2A> with the `await` (C#) or `Await` (Visual Basic) operator to suspend execution of the method until the task is complete. For more information, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
+ 
+If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -609,10 +609,10 @@
         <returns>This method is not supported.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method exists only to support inheritance from <xref:System.IO.Stream>, and cannot be used.  
-  
+This method exists only to support inheritance from <xref:System.IO.Stream>, and cannot be used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
@@ -647,10 +647,10 @@
         <summary>Sets the length of the current stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property exists only to support inheritance from <xref:System.IO.Stream>, and cannot be used.  
-  
+This property exists only to support inheritance from <xref:System.IO.Stream>, and cannot be used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This property exists only to support inheritance from <see cref="T:System.IO.Stream" />, and cannot be used.</exception>
@@ -733,12 +733,12 @@
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must preface your call to <xref:System.Security.Cryptography.CryptoStream.WriteAsync%2A> with the `await` (C#) or `Await` (Visual Basic) operator to suspend execution of the method until the task is complete. For more information, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
-  
- If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
-  
+You must preface your call to <xref:System.Security.Cryptography.CryptoStream.WriteAsync%2A> with the `await` (C#) or `Await` (Visual Basic) operator to suspend execution of the method until the task is complete. For more information, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
+ 
+If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

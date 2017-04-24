@@ -14,22 +14,22 @@
     <summary>Passed to custom WSDL exporters and importers to enable customization of the metadata export and import processes for a contract.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.WsdlContractConversionContext> object to examine and modify items that are to be converted to or from WSDL.  
+Use the <xref:System.ServiceModel.Description.WsdlContractConversionContext> object to examine and modify items that are to be converted to or from WSDL.  
+ 
+When exporting metadata a <xref:System.ServiceModel.Description.WsdlContractConversionContext> object is passed to the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> and <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> methods. Use the various methods and properties to obtain metadata objects that you can use to examine and modify to alter the published WSDL.  
+ 
+When importing metadata a <xref:System.ServiceModel.Description.WsdlContractConversionContext> object is passed to the <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A> and <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%2A> methods. Use the various methods and properties to obtain metadata objects that you can use to examine and modify the imported metadata.  
+ 
   
- When exporting metadata a <xref:System.ServiceModel.Description.WsdlContractConversionContext> object is passed to the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> and <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> methods. Use the various methods and properties to obtain metadata objects that you can use to examine and modify to alter the published WSDL.  
-  
- When importing metadata a <xref:System.ServiceModel.Description.WsdlContractConversionContext> object is passed to the <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A> and <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%2A> methods. Use the various methods and properties to obtain metadata objects that you can use to examine and modify the imported metadata.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to add custom WSDL annotations to the exported metadata using the <xref:System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType%2A> and <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> properties.  
-  
- [!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
+The following code example shows the use of the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to add custom WSDL annotations to the exported metadata using the <xref:System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType%2A> and <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> properties.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
 [!code-csharp[C_CustomWSDLExtensions#7](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#7)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,18 +51,18 @@
         <value>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> being exported or imported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> property to obtain the contract description on export or import.  
+Use the <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> property to obtain the contract description on export or import.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to add custom WSDL annotations to the exported metadata using the <xref:System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType%2A> and <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> properties.  
-  
- [!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
+The following code example shows the use of the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to add custom WSDL annotations to the exported metadata using the <xref:System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType%2A> and <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> properties.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
 [!code-csharp[C_CustomWSDLExtensions#7](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#7)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,12 +136,12 @@
         <returns>The operation for the specified operation description.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to add custom WSDL annotations to the exported metadata using the <xref:System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType%2A> and <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> properties. When exporting operations, the method iterates through the operation descriptions, and locates each associated <xref:System.Web.Services.Description.Operation?displayProperty=fullName> by calling the <xref:System.ServiceModel.Description.WsdlContractConversionContext.GetOperation%2A> method.  
-  
- [!code-csharp[C_CustomWSDLExtensions#7](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#7)]  
-  
+The following code example shows the use of the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to add custom WSDL annotations to the exported metadata using the <xref:System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType%2A> and <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> properties. When exporting operations, the method iterates through the operation descriptions, and locates each associated <xref:System.Web.Services.Description.Operation?displayProperty=fullName> by calling the <xref:System.ServiceModel.Description.WsdlContractConversionContext.GetOperation%2A> method.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#7](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The value was not found.</exception>
@@ -237,13 +237,13 @@
         <value>The <see cref="T:System.Web.Services.Description.PortType" /> that represents the contract.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to add custom WSDL annotations to the exported metadata using the <xref:System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType%2A> and <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> properties.  
-  
- [!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
+The following code example shows the use of the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to add custom WSDL annotations to the exported metadata using the <xref:System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType%2A> and <xref:System.ServiceModel.Description.WsdlContractConversionContext.Contract%2A> properties.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
 [!code-csharp[C_CustomWSDLExtensions#7](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#7)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,12 +19,12 @@
     <summary>Serves as the base class for classes that contain methods for setting cache-specific HTTP headers and for controlling the ASP.NET page output cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpCachePolicyBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpCachePolicy> class. The <xref:System.Web.HttpCachePolicyBase> class lets you create derived classes that are like the <xref:System.Web.HttpCachePolicy> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
-  
- The <xref:System.Web.HttpCachePolicyWrapper> class derives from the <xref:System.Web.HttpCachePolicyBase> class. The <xref:System.Web.HttpCachePolicyWrapper> class serves as a wrapper for the <xref:System.Web.HttpCachePolicy> class. At run time, you typically use an instance of the <xref:System.Web.HttpCachePolicyWrapper> class to call members of the <xref:System.Web.HttpCachePolicy> object.  
-  
+The <xref:System.Web.HttpCachePolicyBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpCachePolicy> class. The <xref:System.Web.HttpCachePolicyBase> class lets you create derived classes that are like the <xref:System.Web.HttpCachePolicy> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
+ 
+The <xref:System.Web.HttpCachePolicyWrapper> class derives from the <xref:System.Web.HttpCachePolicyBase> class. The <xref:System.Web.HttpCachePolicyWrapper> class serves as a wrapper for the <xref:System.Web.HttpCachePolicy> class. At run time, you typically use an instance of the <xref:System.Web.HttpCachePolicyWrapper> class to call members of the <xref:System.Web.HttpCachePolicy> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -23,12 +23,12 @@
     <summary>Provides data for events that can be handled completely in an event handler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the value of the <xref:System.ComponentModel.HandledEventArgs.Handled%2A> property is set in an event handler to indicate that the system should perform no further processing.  
-  
- This class is a base class for types such as the <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs>, <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>, <xref:System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs>, and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs> classes.  
-  
+Typically, the value of the <xref:System.ComponentModel.HandledEventArgs.Handled%2A> property is set in an event handler to indicate that the system should perform no further processing.  
+ 
+This class is a base class for types such as the <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs>, <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>, <xref:System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs>, and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs> classes.  
+ 
  ]]></format>
     </remarks>
   </Docs>

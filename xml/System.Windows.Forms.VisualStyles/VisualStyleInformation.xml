@@ -14,19 +14,19 @@
     <summary>Provides information about the current visual style of the operating system.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class exposes `static` properties that provide details about the current visual style of the operating system.  
+This class exposes `static` properties that provide details about the current visual style of the operating system.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> properties in a <xref:System.Windows.Forms.ListView> control.  
-  
- [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleInformation#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleInformation/cpp/form1.cpp#0)]
- [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleInformation#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleInformation/CS/form1.cs#0)]
- [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleInformation#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleInformation/VB/form1.vb#0)]  
-  
+The following code example displays the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> properties in a <xref:System.Windows.Forms.ListView> control.  
+ 
+[!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleInformation#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleInformation/cpp/form1.cpp#0)]
+[!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleInformation#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleInformation/CS/form1.cs#0)]
+[!code-vb[System.Windows.Forms.VisualStyles.VisualStyleInformation#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleInformation/VB/form1.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <value>A string that specifies the author of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
-  
+This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <value>A string that specifies the color scheme of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Windows XP visual style provides three color schemes. This property returns "NormalColor" if the blue color scheme is active, "HomeStead" if the olive green color scheme is active, and "Metallic" if the silver color scheme is active.  
-  
+The Windows XP visual style provides three color schemes. This property returns "NormalColor" if the blue color scheme is active, "HomeStead" if the olive green color scheme is active, and "Metallic" if the silver color scheme is active.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <value>A string that specifies the company that created the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
-  
+This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <value>If visual styles are enabled, the <see cref="T:System.Drawing.Color" /> used to paint a highlight on a control in the hot state; otherwise, <see cref="P:System.Drawing.SystemColors.ButtonHighlight" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A?displayProperty=fullName> properties internally.  
-  
+This property checks the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A?displayProperty=fullName> properties internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <value>A string that specifies the copyright of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
-  
+This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <value>A string that describes the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
-  
+This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <value>A string that specifies the display name of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
-  
+This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
           <see langword="true" /> if the user has enabled visual styles in an operating system that supports them; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Users can enable visual styles in the **Appearance** tab of the **Display** option in Control Panel. This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsSupportedByOS%2A> property internally.  
-  
+Users can enable visual styles in the **Appearance** tab of the **Display** option in Control Panel. This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsSupportedByOS%2A> property internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,10 +250,10 @@
           <see langword="true" /> if the operating system supports visual styles; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Visual styles are supported only on Windows XP Home Edition, Windows XP Professional, and Windows Server 2003.  
-  
+Visual styles are supported only on Windows XP Home Edition, Windows XP Professional, and Windows Server 2003.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,10 +275,10 @@
         <value>The minimum color depth for the current visual style if visual styles are enabled; otherwise, 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A?displayProperty=fullName> properties internally.  
-  
+This property checks the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A?displayProperty=fullName> properties internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,10 +300,10 @@
         <value>A string that describes the size of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns "NormalSize", "LargeFonts" or "ExtraLargeFonts". This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
-  
+This property returns "NormalSize", "LargeFonts" or "ExtraLargeFonts". This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
           <see langword="true" /> if visual styles are enabled and the current visual style supports flat menus; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A?displayProperty=fullName> properties internally.  
-  
+This property checks the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A?displayProperty=fullName> properties internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,10 +351,10 @@
         <value>If visual styles are enabled, the <see cref="T:System.Drawing.Color" /> that the current visual style uses to paint the borders of controls that contain text; otherwise, <see cref="P:System.Drawing.SystemColors.ControlDarkDark" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies the border color of controls such as <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ComboBox>. This property checks the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A?displayProperty=fullName> properties internally.  
-  
+This property specifies the border color of controls such as <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ComboBox>. This property checks the values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A?displayProperty=fullName> properties internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -376,10 +376,10 @@
         <value>A string that specifies a URL provided by the author of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
-  
+This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,10 +401,10 @@
         <value>A string that indicates the version of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
-  
+This property checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property internally.  
+ 
  ]]></format>
         </remarks>
       </Docs>

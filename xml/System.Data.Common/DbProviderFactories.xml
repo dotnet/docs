@@ -59,10 +59,10 @@
         <returns>An instance of a <see cref="T:System.Data.Common.DbProviderFactory" /> for a specified <see cref="T:System.Data.DataRow" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `providerRow` parameter corresponds to the <xref:System.Data.DataRow> of a table returned by <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A>.  
-  
+The `providerRow` parameter corresponds to the <xref:System.Data.DataRow> of a table returned by <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <returns>An instance of a <see cref="T:System.Data.Common.DbProviderFactory" /> for a specified provider name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `providerInvariantName` parameter corresponds to the **InvariantName** column of a table returned by <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A>.  
-  
+The `providerInvariantName` parameter corresponds to the **InvariantName** column of a table returned by <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

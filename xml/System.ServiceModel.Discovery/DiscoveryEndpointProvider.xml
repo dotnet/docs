@@ -14,10 +14,10 @@
     <summary>Provides a discovery endpoint.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class uses classes derived from <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider> to get the discovery endpoint to use.  
-  
+The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class uses classes derived from <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider> to get the discovery endpoint to use.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <returns>The discovery endpoint.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class calls the <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider.GetDiscoveryEndpoint%2A> method on the <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider> instance passed by the user to get the <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> for discovering the services. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> also calls <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider.GetDiscoveryEndpoint%2A> method whenever it must clone itself.  
-  
+The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class calls the <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider.GetDiscoveryEndpoint%2A> method on the <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider> instance passed by the user to get the <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> for discovering the services. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> also calls <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider.GetDiscoveryEndpoint%2A> method whenever it must clone itself.  
+ 
  ]]></format>
         </remarks>
       </Docs>

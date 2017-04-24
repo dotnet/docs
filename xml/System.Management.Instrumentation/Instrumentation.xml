@@ -31,13 +31,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.Instrumentation" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes any fields to their default values.  
-  
+The default constructor initializes any fields to their default values.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -62,12 +62,12 @@
         <summary>Raises a management event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,12 +94,12 @@
           <see langword="true" /> if the instrumentation schema in the specified assembly is registered with WMI; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,12 +124,12 @@
         <summary>Makes an instance visible through management instrumentation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,12 +154,12 @@
         <summary>Registers the management instance or event classes in the specified assembly with WMI. This ensures that the instrumentation schema is accessible to <see cref="N:System.Management" /> client applications.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,12 +184,12 @@
         <summary>Makes an instance that was previously published through the <see cref="M:System.Management.Instrumentation.Instrumentation.Publish(System.Object)" /> method no longer visible through management instrumentation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,12 +216,12 @@
         <summary>Specifies the maximum number of objects of the specified type to be provided at a time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,18 +18,18 @@
     <summary>Provides a <see cref="T:System.Windows.Media.Animation.Timeline" /> for media content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.MediaTimeline> is a <xref:System.Windows.Media.Animation.Timeline> object which provides control over media timing in the same way that animation timeline objects control animations. For example, a <xref:System.Windows.Media.MediaTimeline> has associated <xref:System.Windows.Media.Animation.Timeline.Duration%2A> and <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> properties can be used to specify when media begins and how long it plays. See [Animation Overview](~/docs/framework/wpf/graphics-multimedia/animation-overview.md) for more information on animation timelines.  
-  
- There are two ways to associate a <xref:System.Windows.Media.Animation.Timeline> to a <xref:System.Windows.Controls.MediaElement> using a <xref:System.Windows.Media.MediaTimeline>.  
-  
+<xref:System.Windows.Media.MediaTimeline> is a <xref:System.Windows.Media.Animation.Timeline> object which provides control over media timing in the same way that animation timeline objects control animations. For example, a <xref:System.Windows.Media.MediaTimeline> has associated <xref:System.Windows.Media.Animation.Timeline.Duration%2A> and <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> properties can be used to specify when media begins and how long it plays. See [Animation Overview](~/docs/framework/wpf/graphics-multimedia/animation-overview.md) for more information on animation timelines.  
+ 
+There are two ways to associate a <xref:System.Windows.Media.Animation.Timeline> to a <xref:System.Windows.Controls.MediaElement> using a <xref:System.Windows.Media.MediaTimeline>.  
+ 
 1.  Inside of a <xref:System.Windows.Media.Animation.Storyboard>, when a <xref:System.Windows.Media.MediaTimeline> is targets a <xref:System.Windows.Controls.MediaElement>, a <xref:System.Windows.Media.MediaClock> will be created and assigned to the <xref:System.Windows.Controls.MediaElement>’s associated player. See [How to: Control a MediaElement by Using a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-by-using-a-storyboard.md) for an example;  
-  
+ 
 2.  By explicitly creating a <xref:System.Windows.Media.MediaClock> from a <xref:System.Windows.Media.MediaTimeline> and assigning it to a <xref:System.Windows.Controls.MediaElement>.  
-  
- If the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of the <xref:System.Windows.Media.MediaTimeline> is set to `Automatic` (default), the duration of <xref:System.Windows.Media.MediaTimeline> is the natural duration of the media source.  To find the natural duration of the media source programmatically, query the <xref:System.Windows.Controls.MediaElement.NaturalDuration%2A> property of the <xref:System.Windows.Controls.MediaElement>.  
-  
+ 
+If the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of the <xref:System.Windows.Media.MediaTimeline> is set to `Automatic` (default), the duration of <xref:System.Windows.Media.MediaTimeline> is the natural duration of the media source.  To find the natural duration of the media source programmatically, query the <xref:System.Windows.Controls.MediaElement.NaturalDuration%2A> property of the <xref:System.Windows.Controls.MediaElement>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -164,12 +164,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,12 +194,12 @@
         <summary>Makes this instance a deep copy of the specified <see cref="T:System.Windows.Media.MediaTimeline" />. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,12 +222,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,12 +252,12 @@
         <summary>Makes this instance a modifiable deep copy of the specified <see cref="T:System.Windows.Media.MediaTimeline" /> using current property values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,14 +343,14 @@
         <summary>Makes this instance a clone of the specified <see cref="T:System.Windows.Media.MediaTimeline" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
-  
- This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
-  
+When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
+ 
+This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,12 +375,12 @@
         <summary>Makes this instance a frozen clone of the specified <see cref="T:System.Windows.Media.MediaTimeline" />. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
-  
- For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
+ 
+For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,17 +424,17 @@
         <value>The media source associated with the timeline. The default is **null**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.MediaTimeline.SourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

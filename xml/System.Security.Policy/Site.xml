@@ -24,12 +24,12 @@
     <summary>Provides the Web site from which a code assembly originates as evidence for policy evaluation. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The presence of <xref:System.Security.Policy.Site> evidence produces a <xref:System.Security.Permissions.SiteIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.SiteIdentityPermission>, the <xref:System.Security.Permissions.SiteIdentityPermission> that corresponds to the <xref:System.Security.Policy.Site> evidence will be compared with the demanded permission.  
-  
- Site identity is defined for code from URLs with any protocol except FILE. A site is the string between the "//" after the protocol of a URL and the following "/", if present. For example, www.fourthcoffee.com is the site identity in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
-  
+The presence of <xref:System.Security.Policy.Site> evidence produces a <xref:System.Security.Permissions.SiteIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.SiteIdentityPermission>, the <xref:System.Security.Permissions.SiteIdentityPermission> that corresponds to the <xref:System.Security.Policy.Site> evidence will be compared with the demanded permission.  
+ 
+Site identity is defined for code from URLs with any protocol except FILE. A site is the string between the "//" after the protocol of a URL and the following "/", if present. For example, www.fourthcoffee.com is the site identity in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -167,10 +167,10 @@
           <see langword="true" /> if the two instances of the <see cref="T:System.Security.Policy.Site" /> class are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Policy.Site> objects are equal if they designate the same website name.  
-  
+<xref:System.Security.Policy.Site> objects are equal if they designate the same website name.  
+ 
  ]]></format>
         </remarks>
       </Docs>

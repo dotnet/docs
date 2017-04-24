@@ -27,20 +27,20 @@
     <summary>Represents ambient data that is local to a given asynchronous control flow, such as an asynchronous method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because the task-based asynchronous programming model tends to abstract the use of threads, <xref:System.Threading.AsyncLocal%601> instances can be used to persist data across threads.  
+Because the task-based asynchronous programming model tends to abstract the use of threads, <xref:System.Threading.AsyncLocal%601> instances can be used to persist data across threads.  
+ 
+The <xref:System.Threading.AsyncLocal%601> class also provides optional notifications when the value associated with the current thread changes, either because it was explicitly changed by setting the <xref:System.Threading.AsyncLocal%601.Value%2A> property, or implicitly changed when the thread encountered an `await` or other context transition.  
+ 
   
- The <xref:System.Threading.AsyncLocal%601> class also provides optional notifications when the value associated with the current thread changes, either because it was explicitly changed by setting the <xref:System.Threading.AsyncLocal%601.Value%2A> property, or implicitly changed when the thread encountered an `await` or other context transition.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Threading.AsyncLocal%601> class to persist a string value across an asynchronous flow. It also contrasts the use of  <xref:System.Threading.AsyncLocal%601> with <xref:System.Threading.ThreadLocal%601>.  
-  
- [!code-csharp[System.Threading.AsyncLocal#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.asynclocal/cs/Example1.cs#1)]
- [!code-vb[System.Threading.AsyncLocal#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.asynclocal/vb/Example1.vb#1)]  
-  
+The following example uses the <xref:System.Threading.AsyncLocal%601> class to persist a string value across an asynchronous flow. It also contrasts the use of  <xref:System.Threading.AsyncLocal%601> with <xref:System.Threading.ThreadLocal%601>.  
+ 
+[!code-csharp[System.Threading.AsyncLocal#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.asynclocal/cs/Example1.cs#1)]
+[!code-vb[System.Threading.AsyncLocal#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.asynclocal/vb/Example1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,10 +100,10 @@
         <summary>Instantiates an <see cref="T:System.Threading.AsyncLocal`1" /> local instance that receives change notifications.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The delegate's signature is `Action<ASyncLocalValueChangedArgs<T>`.  
-  
+The delegate's signature is `Action<ASyncLocalValueChangedArgs<T>`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

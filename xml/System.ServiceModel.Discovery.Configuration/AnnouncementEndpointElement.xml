@@ -145,10 +145,10 @@
         <value>The maximum delay.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each service must wait for a random period of time to elapse before sending announcement messages. This property sets the maximum amount of time (in milliseconds) the service waits.  
-  
+Each service must wait for a random period of time to elapse before sending announcement messages. This property sets the maximum amount of time (in milliseconds) the service waits.  
+ 
  ]]></format>
         </remarks>
       </Docs>

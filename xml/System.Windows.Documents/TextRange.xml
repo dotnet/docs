@@ -14,28 +14,28 @@
     <summary>Represents a selection of content between two <see cref="T:System.Windows.Documents.TextPointer" /> positions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.TextRange> class introduces the following terminology.  
-  
+The <xref:System.Windows.Documents.TextRange> class introduces the following terminology.  
+ 
 -   **Selection** - A <xref:System.Windows.Documents.TextRange> is a selection of content between two positions indicated by **TextPointers**.  One of these positions a fixed anchor with respect to the selection, while the other position is movable.  This is similar to how a selection made by a user using the mouse or keyboard behaves.  
-  
+ 
 -   **Current Selection** - Because a <xref:System.Windows.Documents.TextRange> always indicates a selection in content, it makes sense to simply refer to the selection indicated by a <xref:System.Windows.Documents.TextRange> as the *current selection*.  
-  
+ 
 -   **Text Container** - A *text container* is the element that forms the ultimate border for the flow content at hand; the selection indicated by a <xref:System.Windows.Documents.TextRange> always falls within a text container.  Currently, a text container must be either a <xref:System.Windows.Documents.FlowDocument> or a <xref:System.Windows.Controls.TextBlock>.  
-  
+ 
 -   **Document** - The content collectively contained within a text container is referred to as a *document*.  
+ 
+For more information about other related terms like *position*, see <xref:System.Windows.Documents.TextPointer>.  
+ 
   
- For more information about other related terms like *position*, see <xref:System.Windows.Documents.TextPointer>.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates using the <xref:System.Windows.Documents.TextRange.Text%2A> property of a <xref:System.Windows.Documents.TextRange> to return the plain text representation of a specified <xref:System.Windows.Documents.FlowDocument>.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_text)]
- [!code-vb[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_text)]  
-  
+The following example demonstrates using the <xref:System.Windows.Documents.TextRange.Text%2A> property of a <xref:System.Windows.Documents.TextRange> to return the plain text representation of a specified <xref:System.Windows.Documents.FlowDocument>.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_text)]
+[!code-vb[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_text)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,20 +59,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.TextRange" /> class, taking two specified <see cref="T:System.Windows.Documents.TextPointer" /> positions as the beginning and end positions for the new range.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Documents.TextRange> is formed from a selection between two positions indicated by **TextPointers**.  One of these positions (indicated by `position1`) is fixed with respect to the selection, while the other position (indicated by `position2`) is movable.  This is similar to how a selection made by a user using the mouse or keyboard behaves.  
+A <xref:System.Windows.Documents.TextRange> is formed from a selection between two positions indicated by **TextPointers**.  One of these positions (indicated by `position1`) is fixed with respect to the selection, while the other position (indicated by `position2`) is movable.  This is similar to how a selection made by a user using the mouse or keyboard behaves.  
+ 
+The actual ends of the new <xref:System.Windows.Documents.TextRange> may be adjusted to match any selection heuristics that are applicable to the document that contains the new <xref:System.Windows.Documents.TextRange>.  
+ 
   
- The actual ends of the new <xref:System.Windows.Documents.TextRange> may be adjusted to match any selection heuristics that are applicable to the document that contains the new <xref:System.Windows.Documents.TextRange>.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange> constructor.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_text)]
- [!code-vb[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_text)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange> constructor.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_text)]
+[!code-vb[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_text)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Occurs when <paramref name="position1" /> and <paramref name="position2" /> are not positioned within the same document.</exception>
@@ -101,18 +101,18 @@
         <summary>Applies a specified formatting property and value to the current selection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method applies formatting by inserting the appropriate <xref:System.Windows.Documents.Inline> elements, such as <xref:System.Windows.Documents.Bold> and <xref:System.Windows.Documents.Italic>, into the selection indicated by this <xref:System.Windows.Documents.TextRange>.  
+This method applies formatting by inserting the appropriate <xref:System.Windows.Documents.Inline> elements, such as <xref:System.Windows.Documents.Bold> and <xref:System.Windows.Documents.Italic>, into the selection indicated by this <xref:System.Windows.Documents.TextRange>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.ApplyPropertyValue%2A> method.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
- [!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.ApplyPropertyValue%2A> method.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
+[!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Occurs when <paramref name="formattingProperty" /> does not specify a valid formatting property, or <paramref name="value" /> specifies an invalid value for <paramref name="formattingProperty" />.</exception>
@@ -141,18 +141,18 @@
           <see langword="true" /> if the current selection can be loaded with content in the specified data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the corresponding <xref:System.Windows.Documents.TextRange.Load%2A> method to actually load content into the current selection in a specified data format.  
+Use the corresponding <xref:System.Windows.Documents.TextRange.Load%2A> method to actually load content into the current selection in a specified data format.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.CanLoad%2A> method.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
- [!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.CanLoad%2A> method.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
+[!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,18 +179,18 @@
           <see langword="true" /> if the current selection can be saved as the specified data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the corresponding <xref:System.Windows.Documents.TextRange.Save%2A> method to actually save the current selection in a specified data format.  
+Use the corresponding <xref:System.Windows.Documents.TextRange.Save%2A> method to actually save the current selection in a specified data format.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.CanSave%2A> method.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
- [!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.CanSave%2A> method.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
+[!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <summary>Removes all formatting properties (represented by <see cref="T:System.Windows.Documents.Inline" /> elements) from the current selection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only affects any <xref:System.Windows.Documents.Inline> formatting elements, such as <xref:System.Windows.Documents.Bold> or <xref:System.Windows.Documents.Italic>. Properties set on paragraphs and other enclosing <xref:System.Windows.Documents.Block> elements are not changed.  
-  
+This method only affects any <xref:System.Windows.Documents.Inline> formatting elements, such as <xref:System.Windows.Documents.Bold> or <xref:System.Windows.Documents.Italic>. Properties set on paragraphs and other enclosing <xref:System.Windows.Documents.Block> elements are not changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,18 +259,18 @@
           <see langword="true" /> if the specified position is located within the current selection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Positions at either end of the current selection (indicated by <xref:System.Windows.Documents.TextRange.Start%2A> and <xref:System.Windows.Documents.TextRange.End%2A>) are considered to be part of the current selection.  
+Positions at either end of the current selection (indicated by <xref:System.Windows.Documents.TextRange.Start%2A> and <xref:System.Windows.Documents.TextRange.End%2A>) are considered to be part of the current selection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Contains%2A> method.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_startend)]
- [!code-vb[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_startend)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Contains%2A> method.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_startend)]
+[!code-vb[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_startend)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Occurs when *textPointer* is not in the same document as the current selection.</exception>
@@ -293,13 +293,13 @@
         <value>A <see cref="T:System.Windows.Documents.TextPointer" /> that points to the end of the current selection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.End%2A> property.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_startend)]
- [!code-vb[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_startend)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.End%2A> property.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_startend)]
+[!code-vb[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_startend)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@
         <returns>An object specifying the value of the specified formatting property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In order to return a property value, the entire <xref:System.Windows.Documents.TextRange> must extend over text with only one value for the `formattingProperty`. If the <xref:System.Windows.Documents.TextRange> extends over text with two or more different values for the `formattingProperty`, <xref:System.Windows.DependencyProperty.UnsetValue> is returned.  
-  
+In order to return a property value, the entire <xref:System.Windows.Documents.TextRange> must extend over text with only one value for the `formattingProperty`. If the <xref:System.Windows.Documents.TextRange> extends over text with two or more different values for the `formattingProperty`, <xref:System.Windows.DependencyProperty.UnsetValue> is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Occurs when <paramref name="formattingProperty" /> does not specify a valid formatting property, or <paramref name="value" /> specifies an invalid value for <paramref name="formattingProperty" />.</exception>
@@ -353,18 +353,18 @@
           <see langword="true" /> if the current selection is empty; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Documents.TextRange> is considered empty if the <xref:System.Windows.Documents.TextRange.Start%2A> and <xref:System.Windows.Documents.TextRange.End%2A> positions are equal.  
+A <xref:System.Windows.Documents.TextRange> is considered empty if the <xref:System.Windows.Documents.TextRange.Start%2A> and <xref:System.Windows.Documents.TextRange.End%2A> positions are equal.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.IsEmpty%2A> property.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
- [!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.IsEmpty%2A> property.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
+[!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,20 +391,20 @@
         <summary>Loads the current selection in a specified data format from a specified stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.IO.Stream.CanSeek%2A> is `true` for `stream`, content will be loaded from the beginning of the stream to the end of the stream.  Otherwise, content will be read from the current <xref:System.IO.Stream.Position%2A> to the end of the stream.  When this method returns, `stream` is left open, and the current position within `stream` is undefined.  
+If <xref:System.IO.Stream.CanSeek%2A> is `true` for `stream`, content will be loaded from the beginning of the stream to the end of the stream.  Otherwise, content will be read from the current <xref:System.IO.Stream.Position%2A> to the end of the stream.  When this method returns, `stream` is left open, and the current position within `stream` is undefined.  
+ 
+A load operation replaces the current selection with the newly loaded content.  
+ 
   
- A load operation replaces the current selection with the newly loaded content.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Load%2A> method.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
- [!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Load%2A> method.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
+[!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="stream" /> or <paramref name="dataFormat" /> is <see langword="null" />.</exception>
@@ -433,20 +433,20 @@
         <summary>Saves the current selection to a specified stream in a specified data format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this method returns, `stream` is left open, and the current position within `stream` is undefined.  
+When this method returns, `stream` is left open, and the current position within `stream` is undefined.  
+ 
+As part of the save operation, content in the current selection may be converted to the data format specified by `dataFormat`.  
+ 
   
- As part of the save operation, content in the current selection may be converted to the data format specified by `dataFormat`.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Save%2A> method.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
- [!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Save%2A> method.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_loadsave)]
+[!code-vb[TextPointer_Snippets#_TextRange_LoadSave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_loadsave)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -483,12 +483,12 @@
         <summary>Saves the current selection to a specified stream in a specified data format, with the option of preserving custom <see cref="T:System.Windows.Documents.TextElement" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When `preserveTextElements` is `false`, custom <xref:System.Windows.Documents.TextElement> objects are saved as known <xref:System.Windows.Documents.TextElement> types.  For example, suppose you create a custom <xref:System.Windows.Documents.TextElement> called `Heading1`, which inherits from <xref:System.Windows.Documents.Paragraph>. When you call this method with `preserveTextElements` set to `false`, `Heading1` is converted to a <xref:System.Windows.Documents.Paragraph> when the <xref:System.Windows.Documents.TextRange> is saved.  When you call this method with `preserveTextElements` set to `true`, `Heading1` is saved without being converted. To preserve custom text elements, `dataFormat` must be set to <xref:System.Windows.DataFormats.Xaml?displayProperty=fullName>.  
-  
- <xref:System.Windows.Documents.TextRange.Save%28System.IO.Stream%2CSystem.String%2CSystem.Boolean%29> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+When `preserveTextElements` is `false`, custom <xref:System.Windows.Documents.TextElement> objects are saved as known <xref:System.Windows.Documents.TextElement> types.  For example, suppose you create a custom <xref:System.Windows.Documents.TextElement> called `Heading1`, which inherits from <xref:System.Windows.Documents.Paragraph>. When you call this method with `preserveTextElements` set to `false`, `Heading1` is converted to a <xref:System.Windows.Documents.Paragraph> when the <xref:System.Windows.Documents.TextRange> is saved.  When you call this method with `preserveTextElements` set to `true`, `Heading1` is saved without being converted. To preserve custom text elements, `dataFormat` must be set to <xref:System.Windows.DataFormats.Xaml?displayProperty=fullName>.  
+ 
+<xref:System.Windows.Documents.TextRange.Save%28System.IO.Stream%2CSystem.String%2CSystem.Boolean%29> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="stream" /> or <paramref name="dataFormat" /> is <see langword="null" />.</exception>
@@ -517,12 +517,12 @@
         <summary>Updates the current selection, taking two <see cref="T:System.Windows.Documents.TextPointer" /> positions to indicate the updated selection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Documents.TextRange> is formed from a selection between two positions indicated by **TextPointers**.  One of these positions (indicated by `position1`) is fixed with respect to the selection, while the other position (indicated by `position2`) is movable.  This is similar to how a selection made by a user using the mouse or keyboard behaves.  
-  
- The actual ends of the new selection may be adjusted to match any selection heuristics that are applicable to the document that contains the new current selection.  
-  
+A <xref:System.Windows.Documents.TextRange> is formed from a selection between two positions indicated by **TextPointers**.  One of these positions (indicated by `position1`) is fixed with respect to the selection, while the other position (indicated by `position2`) is movable.  This is similar to how a selection made by a user using the mouse or keyboard behaves.  
+ 
+The actual ends of the new selection may be adjusted to match any selection heuristics that are applicable to the document that contains the new current selection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Occurs when <paramref name="position1" /> and <paramref name="position2" /> are not positioned within the same document.</exception>
@@ -546,13 +546,13 @@
         <value>A <see cref="T:System.Windows.Documents.TextPointer" /> that points to the beginning of the current selection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Start%2A> property.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_startend)]
- [!code-vb[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_startend)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Start%2A> property.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_startend)]
+[!code-vb[TextPointer_Snippets#_TextRange_StartEnd](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_startend)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -574,20 +574,20 @@
         <value>A string containing the plain text contents of the current selection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to extract the plain text content in the current selection, regardless of any formatting that may be present.  
+Use this property to extract the plain text content in the current selection, regardless of any formatting that may be present.  
+ 
+New line characters and paragraph breaks are treated as equivalent with respect to this property.  Any types of content breaks present in the current selection are converted to new lines when this property is read.  
+ 
   
- New line characters and paragraph breaks are treated as equivalent with respect to this property.  Any types of content breaks present in the current selection are converted to new lines when this property is read.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Text%2A> property.  
-  
- [!code-csharp[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_text)]
- [!code-vb[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_text)]  
-  
+The following example demonstrates the use of the <xref:System.Windows.Documents.TextRange.Text%2A> property.  
+ 
+[!code-csharp[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textrange_text)]
+[!code-vb[TextPointer_Snippets#_TextRange_Text](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textrange_text)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs when an attempt is made to set this property to <see langword="null" />.</exception>

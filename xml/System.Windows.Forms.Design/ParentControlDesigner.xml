@@ -14,21 +14,21 @@
     <summary>Extends the design mode behavior of a <see cref="T:System.Windows.Forms.Control" /> that supports nested controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.Design.ParentControlDesigner> provides a base class for designers of controls that can contain child controls. In addition to the methods and functionality inherited from the <xref:System.Windows.Forms.Design.ControlDesigner> and <xref:System.ComponentModel.Design.ComponentDesigner> classes, <xref:System.Windows.Forms.Design.ParentControlDesigner> enables child controls to be added to, removed from, selected within, and arranged within the control whose behavior it extends at design time.  
+<xref:System.Windows.Forms.Design.ParentControlDesigner> provides a base class for designers of controls that can contain child controls. In addition to the methods and functionality inherited from the <xref:System.Windows.Forms.Design.ControlDesigner> and <xref:System.ComponentModel.Design.ComponentDesigner> classes, <xref:System.Windows.Forms.Design.ParentControlDesigner> enables child controls to be added to, removed from, selected within, and arranged within the control whose behavior it extends at design time.  
+ 
+You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design time behavior, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+ 
   
- You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design time behavior, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to implement a custom <xref:System.Windows.Forms.Design.ParentControlDesigner>. This code example is part of a larger example provided for the <xref:System.Drawing.Design.IToolboxUser> interface.  
-  
- [!code-cpp[IToolboxUserExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#1)]
- [!code-csharp[IToolboxUserExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#1)]
- [!code-vb[IToolboxUserExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#1)]  
-  
+The following example demonstrates how to implement a custom <xref:System.Windows.Forms.Design.ParentControlDesigner>. This code example is part of a larger example provided for the <xref:System.Drawing.Design.IToolboxUser> interface.  
+ 
+[!code-cpp[IToolboxUserExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#1)]
+[!code-csharp[IToolboxUserExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#1)]
+[!code-vb[IToolboxUserExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
           <see langword="true" /> if the controls that were selected by lassoing on the designer's surface will be re-parented to this designer's control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.ParentControlDesigner.AllowControlLasso%2A> method is called after the user selects a toolbox item that has a <xref:System.Windows.Forms.Design.ParentControlDesigner> associated with it. It draws a reversible rectangle on a designer's surface.  
-  
+The <xref:System.Windows.Forms.Design.ParentControlDesigner.AllowControlLasso%2A> method is called after the user selects a toolbox item that has a <xref:System.Windows.Forms.Design.ParentControlDesigner> associated with it. It draws a reversible rectangle on a designer's surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
           <see langword="true" /> if the z-order of dragged controls should be maintained when dropped on a <see cref="T:System.Windows.Forms.Design.ParentControlDesigner" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default the z-order of dragged controls is maintained when dropped on a <xref:System.Windows.Forms.Design.ParentControlDesigner>.  
-  
+By default the z-order of dragged controls is maintained when dropped on a <xref:System.Windows.Forms.Design.ParentControlDesigner>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
           <see langword="true" /> if <paramref name="component" /> can be added; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Similar to the IsDropOK method, but allows for specific error messages. This method provides a chance to display the same error as is displayed at runtime.  
-  
+Similar to the IsDropOK method, but allows for specific error messages. This method provides a chance to display the same error as is displayed at runtime.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,10 +192,10 @@
           <see langword="true" /> if the specified control can be a child of the control managed by this designer; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method indicates whether the control managed by the designer can parent the specified <xref:System.Windows.Forms.Design.ControlDesigner>.  
-  
+This method indicates whether the control managed by the designer can parent the specified <xref:System.Windows.Forms.Design.ControlDesigner>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
           <see langword="true" /> if the control managed by the specified designer can be a child of the control managed by this designer; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method indicates whether the control managed by this designer can parent the control of the specified <xref:System.Windows.Forms.Design.ControlDesigner>.  
-  
+This method indicates whether the control managed by this designer can parent the control of the specified <xref:System.Windows.Forms.Design.ControlDesigner>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,12 +250,12 @@
         <summary>Creates a component or control from the specified tool and adds it to the current design document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new component or control is positioned at the center of the currently selected control. This method uses the default size for the tool, if the tool has a default size specified.  
-  
- To specify a location or location and size for the component or control, use one of the other overloaded <xref:System.Windows.Forms.Design.ParentControlDesigner.CreateTool%2A> methods.  
-  
+The new component or control is positioned at the center of the currently selected control. This method uses the default size for the tool, if the tool has a default size specified.  
+ 
+To specify a location or location and size for the component or control, use one of the other overloaded <xref:System.Windows.Forms.Design.ParentControlDesigner.CreateTool%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,12 +282,12 @@
         <summary>Creates a component or control from the specified tool and adds it to the current design document at the specified location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new component or control is positioned around the location specified by the `location` parameter. This method uses the default size for the tool's component, if the component has a default size.  
-  
- To specify a location and size for the component or control, use the appropriate overloaded <xref:System.Windows.Forms.Design.ParentControlDesigner.CreateTool%2A> method.  
-  
+The new component or control is positioned around the location specified by the `location` parameter. This method uses the default size for the tool's component, if the component has a default size.  
+ 
+To specify a location and size for the component or control, use the appropriate overloaded <xref:System.Windows.Forms.Design.ParentControlDesigner.CreateTool%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,10 +314,10 @@
         <summary>Creates a component or control from the specified tool and adds it to the current design document within the bounds of the specified rectangle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new component or control is positioned with its upper left corner at the location specified by the <xref:System.Drawing.Rectangle.X%2A> and <xref:System.Drawing.Rectangle.Y%2A> values of the `bounds` parameter. The size of the new component or control will be set to the values specified by the <xref:System.Drawing.Rectangle.Height%2A> and <xref:System.Drawing.Rectangle.Width%2A> properties of the `bounds` parameter.  
-  
+The new component or control is positioned with its upper left corner at the location specified by the <xref:System.Drawing.Rectangle.X%2A> and <xref:System.Drawing.Rectangle.Y%2A> values of the `bounds` parameter. The size of the new component or control will be set to the values specified by the <xref:System.Drawing.Rectangle.Height%2A> and <xref:System.Drawing.Rectangle.Width%2A> properties of the `bounds` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <returns>An array of components created from the tool.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the only <xref:System.Windows.Forms.Design.ParentControlDesigner.CreateTool%2A> method that can be overridden.  
-  
+This is the only <xref:System.Windows.Forms.Design.ParentControlDesigner.CreateTool%2A> method that can be overridden.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,10 +382,10 @@
         <value>A <see cref="T:System.Drawing.Point" /> that indicates the default location for a control added to the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default location is usually (0,0). The default location is typically changed if the container has special borders, or for other reasons.  
-  
+The default location is usually (0,0). The default location is typically changed if the container has special borders, or for other reasons.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -411,12 +411,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Design.ParentControlDesigner" />, and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Design.ParentControlDesigner> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Design.ParentControlDesigner> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -508,10 +508,10 @@
         <returns>A body glyph that represents the bounds of the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The *body glyph* is responsible for hit testing the control's designer and forwarding messages directly to the designer.  
-  
+The *body glyph* is responsible for hit testing the control's designer and forwarding messages directly to the designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,10 +537,10 @@
         <returns>A collection of <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.ParentControlDesigner.GetGlyphs%2A> method adds a container selector <xref:System.Windows.Forms.Design.Behavior.Glyph> to the selection glyphs collection.  
-  
+The <xref:System.Windows.Forms.Design.ParentControlDesigner.GetGlyphs%2A> method adds a container selector <xref:System.Windows.Forms.Design.Behavior.Glyph> to the selection glyphs collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,10 +593,10 @@
         <returns>A rectangle indicating the position of the component in design-time view screen coordinates. If no changes have been made, this method returns the original rectangle.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method aligns the specified rectangle to the grid if grid alignment is enabled.  
-  
+This method aligns the specified rectangle to the grid if grid alignment is enabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -641,10 +641,10 @@
         <summary>Initializes the designer with the specified component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called to initialize the designer with the specified primary component.  
-  
+This method is called to initialize the designer with the specified primary component.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -734,10 +734,10 @@
         <summary>Called in order to clean up a drag-and-drop operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.Design.ParentControlDesigner.OnDragComplete%2A> is used to clean up any operations that were performed at the beginning of a drag-and-drop operation.  
-  
+<xref:System.Windows.Forms.Design.ParentControlDesigner.OnDragComplete%2A> is used to clean up any operations that were performed at the beginning of a drag-and-drop operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -762,10 +762,10 @@
         <summary>Called when a drag-and-drop object is dropped onto the control designer view.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method checks any parent control for a drag-and-drop handler that can handle the operation instead. If one exists, this method passes the <xref:System.Windows.Forms.DragEventArgs> to the method and returns. If no parent drag-and-drop handler exists, this method attempts to create a tool if a toolbox item has been dropped on the designer control.  
-  
+This method checks any parent control for a drag-and-drop handler that can handle the operation instead. If one exists, this method passes the <xref:System.Windows.Forms.DragEventArgs> to the method and returns. If no parent drag-and-drop handler exists, this method attempts to create a tool if a toolbox item has been dropped on the designer control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -855,13 +855,13 @@
         <summary>Called in response to the left mouse button being pressed and held while over the component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called in response to the left mouse button being pressed on a component. The designer overrides the base form of this method to provide a "lasso" selection mechanism for components within the control.  
-  
+This method is called in response to the left mouse button being pressed on a component. The designer overrides the base form of this method to provide a "lasso" selection mechanism for components within the control.  
+ 
 > [!NOTE]
 >  You can pass a point in screen coordinates to the <xref:System.Windows.Forms.Control.PointToClient%2A> method of the <xref:System.Windows.Forms.Control> class to obtain the coordinates of the point relative to the upper-left corner of the control.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -887,10 +887,10 @@
         <summary>Called at the end of a drag-and-drop operation to complete or cancel the operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called at the end of a drag operation. This method either commits to or cancels the drag operation.  
-  
+This method is called at the end of a drag operation. This method either commits to or cancels the drag operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -917,13 +917,13 @@
         <summary>Called for each movement of the mouse during a drag-and-drop operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called at the start of a drag-and-drop operation.  
-  
+This method is called at the start of a drag-and-drop operation.  
+ 
 > [!NOTE]
 >  You can pass a point in screen coordinates to the <xref:System.Windows.Forms.Control.PointToClient%2A> method of the <xref:System.Windows.Forms.Control> class to obtain the coordinates of the point relative to the upper-left corner of the control.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -966,10 +966,10 @@
         <summary>Provides an opportunity to change the current mouse cursor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets the mouse cursor according to the following rules: If the toolbox service has a tool selected, it allows the toolbox service to set the cursor. Otherwise, the mouse cursor is set to the default mouse cursor.  
-  
+This method sets the mouse cursor according to the following rules: If the toolbox service has a tool selected, it allows the toolbox service to set the cursor. Otherwise, the mouse cursor is set to the default mouse cursor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -994,10 +994,10 @@
         <summary>Adjusts the set of properties the component will expose through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.ComponentModel.Design.IDesignerFilter> interface method override adds a set of properties to this designer's control that allow a user to set options related to the grid display and child control alignment. This method adds the following browsable properties: `DrawGrid`, `SnapToGrid`, and `GridSize`.  
-  
+This <xref:System.ComponentModel.Design.IDesignerFilter> interface method override adds a set of properties to this designer's control that allow a user to set options related to the grid display and child control alignment. This method adds the following browsable properties: `DrawGrid`, `SnapToGrid`, and `GridSize`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

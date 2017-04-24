@@ -18,21 +18,21 @@
     <summary>Specifies the status of a print queue or its printer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Like the <xref:System.Printing.PrintQueue> class, this enumeration handles the print queue and the physical printer (or device) as one unit. Some values represent the status of the physical device and others represent the status of the print queue program that is running on the print server.  
+Like the <xref:System.Printing.PrintQueue> class, this enumeration handles the print queue and the physical printer (or device) as one unit. Some values represent the status of the physical device and others represent the status of the print queue program that is running on the print server.  
+ 
+Use this enumeration to provide values for the <xref:System.Printing.PrintQueue.QueueStatus%2A> property of the <xref:System.Printing.PrintQueue> class.  
+ 
   
- Use this enumeration to provide values for the <xref:System.Printing.PrintQueue.QueueStatus%2A> property of the <xref:System.Printing.PrintQueue> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use this enumeration as part of a survey all printers for possible error status.  
-  
- [!code-cpp[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/cpp/VS_Snippets_Wpf/PrinterStatusSurvey/CPP/Program.cpp#spottroubleusingqueueattributes)]
- [!code-csharp[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/PrinterStatusSurvey/CSharp/Program.cs#spottroubleusingqueueattributes)]
- [!code-vb[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrinterStatusSurvey/visualbasic/program.vb#spottroubleusingqueueattributes)]  
-  
+The following example shows how to use this enumeration as part of a survey all printers for possible error status.  
+ 
+[!code-cpp[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/cpp/VS_Snippets_Wpf/PrinterStatusSurvey/CPP/Program.cpp#spottroubleusingqueueattributes)]
+[!code-csharp[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/PrinterStatusSurvey/CSharp/Program.cs#spottroubleusingqueueattributes)]
+[!code-vb[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrinterStatusSurvey/visualbasic/program.vb#spottroubleusingqueueattributes)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -34,19 +34,19 @@
     <summary>Defines and represents a module in a dynamic assembly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get an instance of <xref:System.Reflection.Emit.ModuleBuilder>, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A?displayProperty=fullName> method.  
+To get an instance of <xref:System.Reflection.Emit.ModuleBuilder>, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates the use of `ModuleBuilder` to create a dynamic module. Note that the ModuleBuilder is created by calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A> in <xref:System.Reflection.Emit.AssemblyBuilder>, rather than through a constructor.  
-  
- [!code-cpp[ModuleBuilder_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_Class/CPP/modulebuilder.cpp#1)]
- [!code-csharp[ModuleBuilder_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_Class/CS/modulebuilder.cs#1)]
- [!code-vb[ModuleBuilder_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_Class/VB/modulebuilder.vb#1)]  
-  
+The following code sample demonstrates the use of `ModuleBuilder` to create a dynamic module. Note that the ModuleBuilder is created by calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A> in <xref:System.Reflection.Emit.AssemblyBuilder>, rather than through a constructor.  
+ 
+[!code-cpp[ModuleBuilder_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_Class/CPP/modulebuilder.cpp#1)]
+[!code-csharp[ModuleBuilder_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_Class/CS/modulebuilder.cs#1)]
+[!code-vb[ModuleBuilder_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_Class/VB/modulebuilder.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,10 +88,10 @@
         <value>The dynamic assembly that defined the current dynamic module.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.Assembly> object that is returned is the <xref:System.Reflection.Emit.AssemblyBuilder> that defined this instance of <xref:System.Reflection.Emit.ModuleBuilder>.  
-  
+The <xref:System.Reflection.Assembly> object that is returned is the <xref:System.Reflection.Emit.AssemblyBuilder> that defined this instance of <xref:System.Reflection.Emit.ModuleBuilder>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,22 +118,22 @@
         <summary>Completes the global function definitions and global data definitions for this dynamic module.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should be called when the user is done with defining all the global functions within this dynamic module. After calling this function, no more new global functions or new global data are allowed.  
-  
+This method should be called when the user is done with defining all the global functions within this dynamic module. After calling this function, no more new global functions or new global data are allowed.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following sample illustrates the use of `CreateGlobalFunctions` to create a static global method from a <xref:System.Reflection.Emit.MethodBuilder> implemented with <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A>.  
-  
- [!code-cpp[ModuleBuilder_CreateGlobalFunctions#2](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CPP/modulebuilder_createglobalfunctions.cpp#2)]
- [!code-csharp[ModuleBuilder_CreateGlobalFunctions#2](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CS/modulebuilder_createglobalfunctions.cs#2)]
- [!code-vb[ModuleBuilder_CreateGlobalFunctions#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/VB/modulebuilder_createglobalfunctions.vb#2)]  
-  
+The following sample illustrates the use of `CreateGlobalFunctions` to create a static global method from a <xref:System.Reflection.Emit.MethodBuilder> implemented with <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A>.  
+ 
+[!code-cpp[ModuleBuilder_CreateGlobalFunctions#2](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CPP/modulebuilder_createglobalfunctions.cpp#2)]
+[!code-csharp[ModuleBuilder_CreateGlobalFunctions#2](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CS/modulebuilder_createglobalfunctions.cs#2)]
+[!code-vb[ModuleBuilder_CreateGlobalFunctions#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/VB/modulebuilder_createglobalfunctions.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This method was called previously.</exception>
@@ -167,21 +167,21 @@
         <returns>The defined document.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Earlier versions of the .NET Framework throw <xref:System.ArgumentException> instead of <xref:System.ArgumentNullException> when `url` is `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `DefineDocument` to attach an external symbol document (in this case, a raw IL file) to a dynamic module.  
-  
- [!code-cpp[ModuleBuilder_DefineDocument#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CPP/modulebuilder_definedocument.cpp#1)]
- [!code-csharp[ModuleBuilder_DefineDocument#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CS/modulebuilder_definedocument.cs#1)]
- [!code-vb[ModuleBuilder_DefineDocument#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineDocument/VB/modulebuilder_definedocument.vb#1)]  
-  
+The following code sample illustrates the use of `DefineDocument` to attach an external symbol document (in this case, a raw IL file) to a dynamic module.  
+ 
+[!code-cpp[ModuleBuilder_DefineDocument#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CPP/modulebuilder_definedocument.cpp#1)]
+[!code-csharp[ModuleBuilder_DefineDocument#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CS/modulebuilder_definedocument.cs#1)]
+[!code-vb[ModuleBuilder_DefineDocument#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineDocument/VB/modulebuilder_definedocument.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -219,30 +219,30 @@
         <returns>The defined enumeration.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The defined enum is a derived class of <xref:System.Enum>. The `value__` field has <xref:System.Reflection.FieldAttributes> and <xref:System.Reflection.FieldAttributes> attributes set.  
-  
- For more information about the built-in integer types that can be specified as the underlying types of enumerations, see [Class Library Overview](~/docs/standard/class-library-overview.md).  
-  
+The defined enum is a derived class of <xref:System.Enum>. The `value__` field has <xref:System.Reflection.FieldAttributes> and <xref:System.Reflection.FieldAttributes> attributes set.  
+ 
+For more information about the built-in integer types that can be specified as the underlying types of enumerations, see [Class Library Overview](~/docs/standard/class-library-overview.md).  
+ 
 > [!NOTE]
 >  In the .NET Framework versions 1.0 and 1.1, it is necessary to define enumerations using <xref:System.Reflection.Emit.TypeBuilder> because <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements are of type <xref:System.Int32> instead of the enumeration type. In the .NET Framework version 2.0, <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements have the correct type.  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the use of `DefineEnum` to implement an enumeration class in a dynamic module. The example defines an enumeration named `Elevation` that has an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of this assembly.  
-  
+The following example illustrates the use of `DefineEnum` to implement an enumeration class in a dynamic module. The example defines an enumeration named `Elevation` that has an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of this assembly.  
+ 
 > [!NOTE]
 >  Prior to the .NET Framework version 2.0, this code example does not produce a correct enumeration.  
-  
- [!code-cpp[ModuleBuilder_DefineEnum#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CPP/modulebuilder_defineenum.cpp#1)]
- [!code-csharp[ModuleBuilder_DefineEnum#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CS/modulebuilder_defineenum.cs#1)]
- [!code-vb[ModuleBuilder_DefineEnum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineEnum/VB/modulebuilder_defineenum.vb#1)]  
-  
+ 
+[!code-cpp[ModuleBuilder_DefineEnum#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CPP/modulebuilder_defineenum.cpp#1)]
+[!code-csharp[ModuleBuilder_DefineEnum#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CS/modulebuilder_defineenum.cs#1)]
+[!code-vb[ModuleBuilder_DefineEnum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineEnum/VB/modulebuilder_defineenum.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Attributes other than visibility attributes are provided.  
@@ -290,22 +290,22 @@
         <returns>The defined global method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The global method that this method defines is not usable until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
-  
+The global method that this method defines is not usable until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the use of `DefineGlobalMethod` to create a type-independent method tied to the current <xref:System.Reflection.Emit.ModuleBuilder>. After building the global method, <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> must be called in order to complete it.  
-  
- [!code-cpp[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CPP/modulebuilder_createglobalfunctions.cpp#1)]
- [!code-csharp[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CS/modulebuilder_createglobalfunctions.cs#1)]
- [!code-vb[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/VB/modulebuilder_createglobalfunctions.vb#1)]  
-  
+The following example illustrates the use of `DefineGlobalMethod` to create a type-independent method tied to the current <xref:System.Reflection.Emit.ModuleBuilder>. After building the global method, <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> must be called in order to complete it.  
+ 
+[!code-cpp[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CPP/modulebuilder_createglobalfunctions.cpp#1)]
+[!code-csharp[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CS/modulebuilder_createglobalfunctions.cs#1)]
+[!code-vb[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/VB/modulebuilder_createglobalfunctions.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The method is not static. That is, <paramref name="attributes" /> does not include <see cref="F:System.Reflection.MethodAttributes.Static" />.  
@@ -357,22 +357,22 @@
         <returns>The defined global method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot use the global method that this method defines until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
-  
+You cannot use the global method that this method defines until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `DefineGlobalMethod` to create a type-independent method tied to the current <xref:System.Reflection.Emit.ModuleBuilder>. After building the global method, <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> must be called in order to complete it.  
-  
- [!code-cpp[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CPP/modulebuilder_createglobalfunctions.cpp#1)]
- [!code-csharp[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CS/modulebuilder_createglobalfunctions.cs#1)]
- [!code-vb[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/VB/modulebuilder_createglobalfunctions.vb#1)]  
-  
+The following code sample illustrates the use of `DefineGlobalMethod` to create a type-independent method tied to the current <xref:System.Reflection.Emit.ModuleBuilder>. After building the global method, <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> must be called in order to complete it.  
+ 
+[!code-cpp[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CPP/modulebuilder_createglobalfunctions.cpp#1)]
+[!code-csharp[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/CS/modulebuilder_createglobalfunctions.cs#1)]
+[!code-vb[ModuleBuilder_CreateGlobalFunctions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_CreateGlobalFunctions/VB/modulebuilder_createglobalfunctions.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The method is not static. That is, <paramref name="attributes" /> does not include <see cref="F:System.Reflection.MethodAttributes.Static" />.  
@@ -428,15 +428,15 @@
         <returns>The defined global method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload is provided for designers of managed compilers.  
-  
- You cannot use the global method that this method defines until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
-  
+This overload is provided for designers of managed compilers.  
+ 
+You cannot use the global method that this method defines until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The method is not static. That is, <paramref name="attributes" /> does not include <see cref="F:System.Reflection.MethodAttributes.Static" />.  
@@ -479,24 +479,24 @@
         <returns>A field to reference the data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Reflection.FieldAttributes> is automatically included in `attributes`.  
-  
- The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
-  
+<xref:System.Reflection.FieldAttributes> is automatically included in `attributes`.  
+ 
+The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A> method to define an initialized data field in the `.sdata` section of the portable executable (PE) file.  
-  
- [!code-cpp[ModuleBuilder_DefineInitializedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineInitializedData/CPP/modulebuilder_defineinitializeddata.cpp#1)]
- [!code-csharp[ModuleBuilder_DefineInitializedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineInitializedData/CS/modulebuilder_defineinitializeddata.cs#1)]
- [!code-vb[ModuleBuilder_DefineInitializedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineInitializedData/VB/modulebuilder_defineinitializeddata.vb#1)]  
-  
+The following example uses the <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A> method to define an initialized data field in the `.sdata` section of the portable executable (PE) file.  
+ 
+[!code-cpp[ModuleBuilder_DefineInitializedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineInitializedData/CPP/modulebuilder_defineinitializeddata.cpp#1)]
+[!code-csharp[ModuleBuilder_DefineInitializedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineInitializedData/CS/modulebuilder_defineinitializeddata.cs#1)]
+[!code-vb[ModuleBuilder_DefineInitializedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineInitializedData/VB/modulebuilder_defineinitializeddata.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="name" /> is zero.  
@@ -535,35 +535,35 @@
         <summary>Defines a binary large object (BLOB) that represents a manifest resource to be embedded in the dynamic assembly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Resources that are recorded in the assembly manifest can be managed resources or manifest resource BLOBs, and each of these can be included in the assembly either by linking or by embedding. All four scenarios are supported for dynamic assemblies.  
-  
+Resources that are recorded in the assembly manifest can be managed resources or manifest resource BLOBs, and each of these can be included in the assembly either by linking or by embedding. All four scenarios are supported for dynamic assemblies.  
+ 
 -   This method allows you to embed a manifest resource BLOB into a dynamic assembly.  
-  
+ 
 -   To embed a managed resource into the manifest module of a dynamic assembly or into a satellite module, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineResource%2A?displayProperty=fullName> method to get a resource writer, and use the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=fullName> method to add the resource.  
-  
+ 
 -   To link a managed resource into a dynamic assembly, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A?displayProperty=fullName> method to get a resource writer, and use the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=fullName> method to add the linked resource.  
-  
+ 
 -   To link a manifest resource BLOB into a dynamic assembly, use the <xref:System.Reflection.Emit.AssemblyBuilder.AddResourceFile%2A?displayProperty=fullName> method to add the linked resource.  
+ 
+In addition, a single Win32 resource can be attached to an assembly by using the <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A?displayProperty=fullName> method or the <xref:System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource%2A?displayProperty=fullName> method. This resource does not appear in the assembly manifest.  
+ 
   
- In addition, a single Win32 resource can be attached to an assembly by using the <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A?displayProperty=fullName> method or the <xref:System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource%2A?displayProperty=fullName> method. This resource does not appear in the assembly manifest.  
-  
-   
-  
+ 
 ## Examples  
- The following example generates and saves a dynamic assembly named `EmittedManifestResourceAssembly.exe`, which contains an embedded unmanaged resource. The example creates the assembly, which consists of one module, and opens a memory stream to contain the unmanaged resource. The code then calls the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method to define the resource.  
-  
+The following example generates and saves a dynamic assembly named `EmittedManifestResourceAssembly.exe`, which contains an embedded unmanaged resource. The example creates the assembly, which consists of one module, and opens a memory stream to contain the unmanaged resource. The code then calls the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method to define the resource.  
+ 
 > [!NOTE]
 >  You can use any kind of stream for your resource; for example, you can read the unmanaged binary data from a file.  
-  
- The example defines a type in the dynamic module with a `Main` method, and generates MSIL for the method body. After the body for the `Main` method has been generated and the type has been created, the code example writes five bytes to the stream associated with the manifest resource. When the assembly is saved, the resource is appended to it.  
-  
- After running the example, you can run the emitted assembly. The code in the emitted assembly's `Main` method reads the embedded manifest resource and prints the byte values to the console. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to view the information in the assembly manifest.  
-  
- [!code-csharp[DefineManifestResource#1](~/samples/snippets/csharp/VS_Snippets_CLR/DefineManifestResource/cs/source.cs#1)]
- [!code-vb[DefineManifestResource#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DefineManifestResource/vb/source.vb#1)]  
-  
+ 
+The example defines a type in the dynamic module with a `Main` method, and generates MSIL for the method body. After the body for the `Main` method has been generated and the type has been created, the code example writes five bytes to the stream associated with the manifest resource. When the assembly is saved, the resource is appended to it.  
+ 
+After running the example, you can run the emitted assembly. The code in the emitted assembly's `Main` method reads the embedded manifest resource and prints the byte values to the console. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to view the information in the assembly manifest.  
+ 
+[!code-csharp[DefineManifestResource#1](~/samples/snippets/csharp/VS_Snippets_CLR/DefineManifestResource/cs/source.cs#1)]
+[!code-vb[DefineManifestResource#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DefineManifestResource/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -613,25 +613,25 @@
         <returns>The defined <see langword="PInvoke" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some DLL import attributes (see the description of System.Runtime.InteropServices.DllImportAttribute) cannot be specified as arguments to this method. Such attributes should be set by emitting a custom attribute for the method. For example, the DLL import attribute `PreserveSig` is set by emitting a custom attribute.  
-  
+Some DLL import attributes (see the description of System.Runtime.InteropServices.DllImportAttribute) cannot be specified as arguments to this method. Such attributes should be set by emitting a custom attribute for the method. For example, the DLL import attribute `PreserveSig` is set by emitting a custom attribute.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
-  
+The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
+ 
 > [!IMPORTANT]
 >  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
-  
- [!code-cpp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CPP/modulebuilder_definepinvokemethod1.cpp#1)]
- [!code-csharp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CS/modulebuilder_definepinvokemethod1.cs#1)]
- [!code-vb[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/VB/modulebuilder_definepinvokemethod1.vb#1)]  
-  
+ 
+[!code-cpp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CPP/modulebuilder_definepinvokemethod1.cpp#1)]
+[!code-csharp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CS/modulebuilder_definepinvokemethod1.cs#1)]
+[!code-vb[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/VB/modulebuilder_definepinvokemethod1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The method is not static or if the containing type is an interface.  
@@ -686,27 +686,27 @@
         <returns>The defined <see langword="PInvoke" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. Such attributes should be set by emitting a custom attribute for the method. For example, the DLL import attribute `PreserveSig` is set by emitting a custom attribute.  
-  
+Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. Such attributes should be set by emitting a custom attribute for the method. For example, the DLL import attribute `PreserveSig` is set by emitting a custom attribute.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
-  
+The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
+ 
 > [!IMPORTANT]
 >  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
-  
- This example uses a different overload of the <xref:System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod%2A> method, but the technique is the same.  
-  
- [!code-cpp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CPP/modulebuilder_definepinvokemethod1.cpp#1)]
- [!code-csharp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CS/modulebuilder_definepinvokemethod1.cs#1)]
- [!code-vb[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/VB/modulebuilder_definepinvokemethod1.vb#1)]  
-  
+ 
+This example uses a different overload of the <xref:System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod%2A> method, but the technique is the same.  
+ 
+[!code-cpp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CPP/modulebuilder_definepinvokemethod1.cpp#1)]
+[!code-csharp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CS/modulebuilder_definepinvokemethod1.cs#1)]
+[!code-vb[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/VB/modulebuilder_definepinvokemethod1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The method is not static or if the containing type is an interface or if the method is abstract of if the method was previously defined.</exception>
@@ -739,24 +739,24 @@
         <returns>A resource writer for the defined resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The caller must not call the `ResourceWriter.Generate()` and `ResourceWriter.Close()` methods, because these methods are called by `ModuleBuilder.Save` when the dynamic assembly is written to disk.  
-  
- Use this method to embed a managed resource. To embed a manifest resource blob, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method. For a summary of embedding and linking managed resources and manifest resource blobs, see the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method.  
-  
+The caller must not call the `ResourceWriter.Generate()` and `ResourceWriter.Close()` methods, because these methods are called by `ModuleBuilder.Save` when the dynamic assembly is written to disk.  
+ 
+Use this method to embed a managed resource. To embed a manifest resource blob, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method. For a summary of embedding and linking managed resources and manifest resource blobs, see the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the use of `DefineResource` to add an external resource to the current <xref:System.Reflection.Emit.ModuleBuilder>.  
-  
- [!code-cpp[ModuleBuilder_DefineResource1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineResource1/CPP/modulebuilder_defineresource1.cpp#1)]
- [!code-csharp[ModuleBuilder_DefineResource1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineResource1/CS/modulebuilder_defineresource1.cs#1)]
- [!code-vb[ModuleBuilder_DefineResource1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineResource1/VB/modulebuilder_defineresource1.vb#1)]  
-  
+The following example illustrates the use of `DefineResource` to add an external resource to the current <xref:System.Reflection.Emit.ModuleBuilder>.  
+ 
+[!code-cpp[ModuleBuilder_DefineResource1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineResource1/CPP/modulebuilder_defineresource1.cpp#1)]
+[!code-csharp[ModuleBuilder_DefineResource1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineResource1/CS/modulebuilder_defineresource1.cs#1)]
+[!code-vb[ModuleBuilder_DefineResource1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineResource1/VB/modulebuilder_defineresource1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Length of <paramref name="name" /> is zero.</exception>
@@ -795,24 +795,24 @@
         <returns>A resource writer for the defined resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The caller must not call the `ResourceWriter.Generate()` and `ResourceWriter.Close()` methods, because these methods are called by `ModuleBuilder.Save` when the dynamic assembly is written to disk.  
-  
- Use this method to embed a managed resource. To embed a manifest resource blob, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method. For a summary of embedding and linking managed resources and manifest resource blobs, see the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method.  
-  
+The caller must not call the `ResourceWriter.Generate()` and `ResourceWriter.Close()` methods, because these methods are called by `ModuleBuilder.Save` when the dynamic assembly is written to disk.  
+ 
+Use this method to embed a managed resource. To embed a manifest resource blob, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method. For a summary of embedding and linking managed resources and manifest resource blobs, see the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the use of DefineResource to add an external resource to the current <xref:System.Reflection.Emit.ModuleBuilder>.  
-  
- [!code-cpp[ModuleBuilder_DefineResource2#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineResource2/CPP/modulebuilder_defineresource2.cpp#1)]
- [!code-csharp[ModuleBuilder_DefineResource2#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineResource2/CS/modulebuilder_defineresource2.cs#1)]
- [!code-vb[ModuleBuilder_DefineResource2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineResource2/VB/modulebuilder_defineresource2.vb#1)]  
-  
+The following example illustrates the use of DefineResource to add an external resource to the current <xref:System.Reflection.Emit.ModuleBuilder>.  
+ 
+[!code-cpp[ModuleBuilder_DefineResource2#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineResource2/CPP/modulebuilder_defineresource2.cpp#1)]
+[!code-csharp[ModuleBuilder_DefineResource2#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineResource2/CS/modulebuilder_defineresource2.cs#1)]
+[!code-vb[ModuleBuilder_DefineResource2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineResource2/VB/modulebuilder_defineresource2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Length of <paramref name="name" /> is zero.</exception>
@@ -851,22 +851,22 @@
         <returns>A private type with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
+Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
+ 
+[!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
+[!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
@@ -906,22 +906,22 @@
         <returns>A <see langword="TypeBuilder" /> created with all of the requested attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
+Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
+ 
+[!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
+[!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
@@ -963,22 +963,22 @@
         <returns>A <see langword="TypeBuilder" /> created with all of the requested attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
+Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
+ 
+[!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
+[!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
@@ -1022,22 +1022,22 @@
         <returns>A <see langword="TypeBuilder" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Type names must be unique within an assembly. It is forbidden to have two types with the same name in two different modules of an assembly.  
-  
+Type names must be unique within an assembly. It is forbidden to have two types with the same name in two different modules of an assembly.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
+ 
+[!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
+[!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
@@ -1081,22 +1081,22 @@
         <returns>A <see langword="TypeBuilder" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
+Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
+ 
+[!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
+[!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
@@ -1145,22 +1145,22 @@
         <returns>A <see langword="TypeBuilder" /> created with all of the requested attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
+Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
+ 
+[!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
+[!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
@@ -1206,22 +1206,22 @@
         <returns>A <see langword="TypeBuilder" /> created with all of the requested attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
+Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
+ 
+[!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/CS/source.cs#1)]
+[!code-vb[Classic ModuleBuilder.DefineType Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ModuleBuilder.DefineType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
@@ -1263,15 +1263,15 @@
         <returns>A field to reference the data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Reflection.FieldAttributes> is automatically included in `attributes`.  
-  
- The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
-  
+<xref:System.Reflection.FieldAttributes> is automatically included in `attributes`.  
+ 
+The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="name" /> is zero.  
@@ -1306,13 +1306,13 @@
         <summary>Defines an unmanaged embedded resource given an opaque binary large object (BLOB) of bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An assembly can be associated with only one unmanaged resource. This means that calling `DefineVersionInfoResource` or `DefineUnmanagedResource` after either one of the methods was called previously throws <xref:System.ArgumentException>. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
-  
+An assembly can be associated with only one unmanaged resource. This means that calling `DefineVersionInfoResource` or `DefineUnmanagedResource` after either one of the methods was called previously throws <xref:System.ArgumentException>. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An unmanaged resource has already been defined in the module's assembly.</exception>
@@ -1341,13 +1341,13 @@
         <summary>Defines an unmanaged resource given the name of Win32 resource file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An assembly can be associated with only one unmanaged resource. This means that calling `DefineVersionInfoResource` or `DefineUnmanagedResource` after either one of the methods was called previously throws <xref:System.ArgumentException>. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
-  
+An assembly can be associated with only one unmanaged resource. This means that calling `DefineVersionInfoResource` or `DefineUnmanagedResource` after either one of the methods was called previously throws <xref:System.ArgumentException>. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An unmanaged resource has already been defined in the module's assembly.  
@@ -1415,13 +1415,13 @@
         <value>The fully qualified module name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the name without the path, use `Name`.  
-  
+To get the name without the path, use `Name`.  
+ 
 > [!NOTE]
 >  The case of a module name is platform dependent.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Accesses information in the path. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
@@ -1461,19 +1461,19 @@
         <returns>The named method on an array class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `GetArrayMethod` is useful when you have an array of a type whose definition has not been completed and you want to access methods defined on <xref:System.Array>. For example, you might define a type and want to define a method that takes an array of the type as a parameter. In order to access the elements of the array, you will need to call methods of the <xref:System.Array> class.  
+`GetArrayMethod` is useful when you have an array of a type whose definition has not been completed and you want to access methods defined on <xref:System.Array>. For example, you might define a type and want to define a method that takes an array of the type as a parameter. In order to access the elements of the array, you will need to call methods of the <xref:System.Array> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use <xref:System.Reflection.Emit.ModuleBuilder.GetArrayMethod%2A> to obtain the <xref:System.Reflection.MethodInfo> corresponding to a method that returns an array value.  
-  
- [!code-cpp[ModuleBuilder_GetArrayMethod#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/CPP/modulebuilder_getarraymethod.cpp#1)]
- [!code-csharp[ModuleBuilder_GetArrayMethod#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/CS/modulebuilder_getarraymethod.cs#1)]
- [!code-vb[ModuleBuilder_GetArrayMethod#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/VB/modulebuilder_getarraymethod.vb#1)]  
-  
+The following example demonstrates how to use <xref:System.Reflection.Emit.ModuleBuilder.GetArrayMethod%2A> to obtain the <xref:System.Reflection.MethodInfo> corresponding to a method that returns an array value.  
+ 
+[!code-cpp[ModuleBuilder_GetArrayMethod#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/CPP/modulebuilder_getarraymethod.cpp#1)]
+[!code-csharp[ModuleBuilder_GetArrayMethod#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/CS/modulebuilder_getarraymethod.cs#1)]
+[!code-vb[ModuleBuilder_GetArrayMethod#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/VB/modulebuilder_getarraymethod.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1512,19 +1512,19 @@
         <returns>The token for the named method on an array class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is similar to <xref:System.Reflection.Emit.ModuleBuilder.GetArrayMethod%2A>, except that it returns the token of the array method instead of the method itself.  
+This method is similar to <xref:System.Reflection.Emit.ModuleBuilder.GetArrayMethod%2A>, except that it returns the token of the array method instead of the method itself.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use <xref:System.Reflection.Emit.ModuleBuilder.GetArrayMethod%2A> to obtain the <xref:System.Reflection.Emit.MethodToken> corresponding to a method that returns an array value.  
-  
- [!code-cpp[ModuleBuilder_GetArrayMethod#2](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/CPP/modulebuilder_getarraymethod.cpp#2)]
- [!code-csharp[ModuleBuilder_GetArrayMethod#2](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/CS/modulebuilder_getarraymethod.cs#2)]
- [!code-vb[ModuleBuilder_GetArrayMethod#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/VB/modulebuilder_getarraymethod.vb#2)]  
-  
+The following example demonstrates how to use <xref:System.Reflection.Emit.ModuleBuilder.GetArrayMethod%2A> to obtain the <xref:System.Reflection.Emit.MethodToken> corresponding to a method that returns an array value.  
+ 
+[!code-cpp[ModuleBuilder_GetArrayMethod#2](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/CPP/modulebuilder_getarraymethod.cpp#2)]
+[!code-csharp[ModuleBuilder_GetArrayMethod#2](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/CS/modulebuilder_getarraymethod.cs#2)]
+[!code-vb[ModuleBuilder_GetArrayMethod#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_GetArrayMethod/VB/modulebuilder_getarraymethod.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1664,10 +1664,10 @@
         <returns>A generic list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the current module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
-  
+Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1696,13 +1696,13 @@
         <returns>A field that has the specified name and binding attributes, or <see langword="null" /> if the field does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you emit dynamic assemblies, fields in the .sdata region of the portable executable (PE) file are defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A> or <xref:System.Reflection.Emit.ModuleBuilder.DefineUninitializedData%2A> methods.  
-  
+When you emit dynamic assemblies, fields in the .sdata region of the portable executable (PE) file are defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A> or <xref:System.Reflection.Emit.ModuleBuilder.DefineUninitializedData%2A> methods.  
+ 
 > [!IMPORTANT]
 >  Module-level fields cannot be retrieved until after the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method has been called for the module.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -1730,13 +1730,13 @@
         <returns>An array of fields that match the specified flags; the array is empty if no such fields exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you emit dynamic assemblies, fields in the .sdata region of the portable executable (PE) file are defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A> or <xref:System.Reflection.Emit.ModuleBuilder.DefineUninitializedData%2A> methods.  
-  
+When you emit dynamic assemblies, fields in the .sdata region of the portable executable (PE) file are defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A> or <xref:System.Reflection.Emit.ModuleBuilder.DefineUninitializedData%2A> methods.  
+ 
 > [!IMPORTANT]
 >  Module-level fields cannot be retrieved until after the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method has been called for the module.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -1823,13 +1823,13 @@
         <returns>A method that is defined at the module level, and matches the specified criteria; or <see langword="null" /> if such a method does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides the implementation for all overloads of the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=fullName> method. Use the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=fullName> method to get methods that have been declared at the module level. Module-level methods are defined in emitted code by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A> method.  
-  
+This method provides the implementation for all overloads of the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=fullName> method. Use the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=fullName> method to get methods that have been declared at the module level. Module-level methods are defined in emitted code by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A> method.  
+ 
 > [!IMPORTANT]
 >  Module-level methods cannot be retrieved until after the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method has been called for the module.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1858,13 +1858,13 @@
         <returns>An array that contains all the module-level methods that match <paramref name="bindingFlags" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Module-level methods are defined in emitted code by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A> method.  
-  
+Module-level methods are defined in emitted code by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A> method.  
+ 
 > [!IMPORTANT]
 >  Module-level methods cannot be retrieved until after the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method has been called for the module.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1945,10 +1945,10 @@
         <summary>Gets a pair of values indicating the nature of the code in a module and the platform targeted by the module.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For dynamic modules, `peKind` is always <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName> and `machine` is always 0 (zero).  
-  
+For dynamic modules, `peKind` is always <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName> and `machine` is always 0 (zero).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1975,10 +1975,10 @@
         <returns>A token for the defined signature.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method defines a metadata token for the signature described by `sigHelper`.  
-  
+This method defines a metadata token for the signature described by `sigHelper`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2053,10 +2053,10 @@
         <returns>The token of the string in the constant pool.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `str` has already been defined, the existing token will be returned.  
-  
+If `str` has already been defined, the existing token will be returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2082,12 +2082,12 @@
         <returns>The symbol writer associated with this dynamic module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2119,13 +2119,13 @@
         <returns>The requested type, if the type is defined in this module; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
-  
+Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Length of <paramref name="className" /> is zero or is greater than 1023.</exception>
@@ -2165,13 +2165,13 @@
         <returns>The requested type, if the type is defined in this module; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
-  
+Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Length of <paramref name="className" /> is zero or is greater than 1023.</exception>
@@ -2213,15 +2213,15 @@
         <returns>The specified type, if the type is declared in this module; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `throwOnError` parameter only affects what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
-  
- Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
-  
+The `throwOnError` parameter only affects what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
+ 
+Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Length of <paramref name="className" /> is zero or is greater than 1023.</exception>
@@ -2252,15 +2252,15 @@
         <returns>An array that contains the types defined within the module that is reflected by this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `ReflectionTypeLoadException` is a special class load exception. The `ReflectionTypeLoadException.Types` property contains the array of classes that were defined in the module and loaded. This array can contain some null values. The `ReflectionTypeLoadException.LoaderExceptions` property is an array of exceptions that represent the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.  
-  
- For example, if the class initializers of one of the classes throws an exception while it is being loaded, a `TargetInvocationException` is stored in the corresponding element of the `LoaderExceptions` array.  
-  
+`ReflectionTypeLoadException` is a special class load exception. The `ReflectionTypeLoadException.Types` property contains the array of classes that were defined in the module and loaded. This array can contain some null values. The `ReflectionTypeLoadException.LoaderExceptions` property is an array of exceptions that represent the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.  
+ 
+For example, if the class initializers of one of the classes throws an exception while it is being loaded, a `TargetInvocationException` is stored in the corresponding element of the `LoaderExceptions` array.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.ReflectionTypeLoadException">One or more classes in a module could not be loaded.</exception>
@@ -2289,10 +2289,10 @@
         <returns>The token used to identify the type with the specified name within this module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is useful for clients of the <xref:System.Reflection.Emit.MethodRental> class who want to directly modify the body of a method.  
-  
+This method is useful for clients of the <xref:System.Reflection.Emit.MethodRental> class who want to directly modify the body of a method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2332,10 +2332,10 @@
         <returns>The token used to identify the given type within this module.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Tokens are used in Microsoft intermediate language (MSIL) instructions to identify objects. Tokens are relative to the module in which they are contained. For example, the token value for `String` is likely to be different from module to module. When `GetTypeToken` is invoked, a reference is added to the module. The reference becomes a permanent part of the module; multiple calls with the same argument have no additional effect.  
-  
+Tokens are used in Microsoft intermediate language (MSIL) instructions to identify objects. Tokens are relative to the module in which they are contained. For example, the token value for `String` is likely to be different from module to module. When `GetTypeToken` is invoked, a reference is added to the module. The reference becomes a permanent part of the module; multiple calls with the same argument have no additional effect.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2434,12 +2434,12 @@
         <value>A 32-bit integer representing the metadata stream version. The high-order two bytes represent the major version number, and the low-order two bytes represent the minor version number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For more information on the metadata header, see "Partition II: Metadata Definition and Semantics" in the Common Language Infrastructure (CLI) documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2462,13 +2462,13 @@
         <value>An integer token that identifies the current module in metadata.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
-  
+The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2491,13 +2491,13 @@
         <value>A <see cref="T:System.Guid" /> that can be used to distinguish between two versions of a module.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In unmanaged metadata, the GUID returned by the <xref:System.Reflection.Module.ModuleVersionId%2A> property is referred to as the `mvid`, and is stored in the GUID heap.  
-  
+In unmanaged metadata, the GUID returned by the <xref:System.Reflection.Module.ModuleVersionId%2A> property is referred to as the `mvid`, and is stored in the GUID heap.  
+ 
 > [!NOTE]
 >  More information about metadata can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2524,10 +2524,10 @@
         <value>Text that indicates that this is an in-memory module.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of a dynamic module cannot be obtained until the module has been saved and reloaded from disk.  
-  
+The name of a dynamic module cannot be obtained until the module has been saved and reloaded from disk.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2558,15 +2558,15 @@
         <returns>A <see cref="T:System.Reflection.FieldInfo" /> object representing the field that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
+Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
-  
+ 
+For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2605,15 +2605,15 @@
         <returns>A <see cref="T:System.Reflection.MemberInfo" /> object representing the type or member that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
+Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
-  
+ 
+For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2656,15 +2656,15 @@
         <returns>A <see cref="T:System.Reflection.MethodBase" /> object representing the method that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
+Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
-  
+ 
+For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2699,12 +2699,12 @@
         <returns>An array of bytes representing the signature blob.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Information about metadata tokens and signatures can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2735,12 +2735,12 @@
         <returns>A <see cref="T:System.String" /> containing a string value from the metadata string heap.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2775,15 +2775,15 @@
         <returns>A <see cref="T:System.Type" /> object representing the type that is identified by the specified metadata token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
+Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
-  
+ 
+For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2840,12 +2840,12 @@
         <summary>Applies a custom attribute to this module by using a custom attribute builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2884,13 +2884,13 @@
         <summary>Applies a custom attribute to this module by using a specified binary large object (BLOB) that represents the attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to format `binaryAttribute`, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+For more information about how to format `binaryAttribute`, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2920,13 +2920,13 @@
         <summary>This method does nothing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does nothing.  
-  
+This method does nothing.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2954,13 +2954,13 @@
         <summary>Sets the user entry point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The compiler might generate a startup stub before calling user main. The startup stub will be the entry point. While the user main will be the user entry point so that debugger will not step into the compiler entry point.  
-  
+The compiler might generate a startup stub before calling user main. The startup stub will be the entry point. While the user main will be the user entry point so that debugger will not step into the compiler entry point.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -3001,12 +3001,12 @@
         <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices._ModuleBuilder.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -3037,12 +3037,12 @@
         <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices._ModuleBuilder.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -3069,12 +3069,12 @@
         <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices._ModuleBuilder.GetTypeInfoCount(System.UInt32@)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -3115,12 +3115,12 @@
         <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices._ModuleBuilder.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>

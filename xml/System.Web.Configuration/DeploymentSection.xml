@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.DeploymentSection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.DeploymentSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
+This constructor is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.DeploymentSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,27 +78,27 @@
           <see langword="true" /> if Web applications are deployed in <see langword="retail" /> mode; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Web.Configuration.DeploymentSection.Retail%2A> is `true`, ASP.NET disables trace output, disables debug capabilities, and disables detailed system-generated error messages for remote users. For applications that have a `customErrors` element in the application Web.config file, the `mode` attribute is forced to `On`. These settings override any settings that are made in application Web.config files.  
-  
+When <xref:System.Web.Configuration.DeploymentSection.Retail%2A> is `true`, ASP.NET disables trace output, disables debug capabilities, and disables detailed system-generated error messages for remote users. For applications that have a `customErrors` element in the application Web.config file, the `mode` attribute is forced to `On`. These settings override any settings that are made in application Web.config files.  
+ 
 > [!NOTE]
 >  When you use the `retail` setting, you should continue to set the `debug` attribute to `false` in application Web.config files that are deployed to the server. The `debug` setting disables request execution timeout, and this is not overridden by the `retail` setting. For more information, see. [Most Common ASP.NET Support issues - Reporting from deep inside Microsoft Developer Support](http://www.hanselman.com/blog/MostCommonASPNETSupportIssuesReportingFromDeepInsideMicrosoftDeveloperSupport.aspx) on Scott Hanselman's blog.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following configuration file example shows how to set this property to `true` in the machine.config file. The machine.config file is located in this folder:  
-  
- `%windir%\Microsoft.NET\Framework\<frameworkversion>\Config`  
-  
+The following configuration file example shows how to set this property to `true` in the machine.config file. The machine.config file is located in this folder:  
+ 
+`%windir%\Microsoft.NET\Framework\<frameworkversion>\Config`  
+ 
 ```  
 <system.web>  
-  <deployment   
-    retail="true" />  
+ <deployment   
+   retail="true" />  
 </system.web>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

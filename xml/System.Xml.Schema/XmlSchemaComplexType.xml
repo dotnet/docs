@@ -19,23 +19,23 @@
     <summary>Represents the <see langword="complexType" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class defines a complex type that determines the set of attributes and content of an element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An element can be declared with a type attribute that refers to a `complexType` element that defines the structure, content, and attributes of that element.  
+An element can be declared with a type attribute that refers to a `complexType` element that defines the structure, content, and attributes of that element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a `complexType` element.  
-  
- [!code-cpp[Classic WebData XmlSchemaComplexType Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/CPP/complextype.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaComplexType Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/CS/complextype.cs#1)]
- [!code-vb[Classic WebData XmlSchemaComplexType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/VB/complextype.vb#1)]  
-  
- The following XML file is used for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaComplexType Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/XML/example.xsd#2)]  
-  
+The following example creates a `complexType` element.  
+ 
+[!code-cpp[Classic WebData XmlSchemaComplexType Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/CPP/complextype.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaComplexType Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/CS/complextype.cs#1)]
+[!code-vb[Classic WebData XmlSchemaComplexType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/VB/complextype.vb#1)]  
+ 
+The following XML file is used for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaComplexType Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaComplexType Example/XML/example.xsd#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <value>The <see cref="T:System.Xml.Schema.XmlSchemaAnyAttribute" /> component of the complex type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not null, the complex type can contain any attributes from the namespaces specified in the <xref:System.Xml.Schema.XmlSchemaAnyAttribute>.  
-  
+If this property is not null, the complex type can contain any attributes from the namespaces specified in the <xref:System.Xml.Schema.XmlSchemaAnyAttribute>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,12 +153,12 @@
         <value>The collection of all the attributes from this complex type and its base types. The post-compilation value of the <see langword="AttributeUses" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, a combination of all the attributes from the `Attributes` property from each type in the hierarchy.  
-  
- The value of this property is read-only. This property has the value after the schema has been successfully compiled to determine the complete attribute set that is allowed in an instance document.  
-  
+For example, a combination of all the attributes from the `Attributes` property from each type in the hierarchy.  
+ 
+The value of this property is read-only. This property has the value after the schema has been successfully compiled to determine the complete attribute set that is allowed in an instance document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
         <value>The post-compilation value of the <see langword="anyAttribute" /> element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is read-only. This property has values after the schema has been successfully compiled to determine the complete attribute set of the complex type. For example, it might be the `anyAttribute` element from one of the base types.  
-  
+The value of this property is read-only. This property has values after the schema has been successfully compiled to determine the complete attribute set of the complex type. For example, it might be the `anyAttribute` element from one of the base types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,21 +230,21 @@
  Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indicates the type of derivation.  
-  
- This attribute can contain the following values:  
-  
+Indicates the type of derivation.  
+ 
+This attribute can contain the following values:  
+ 
 |Enum|Description|  
 |----------|-----------------|  
 |`None`|Use the derivation restriction defined by the `BlockDefault` property of the schema, if it exists.|  
 |`Extension`|This element cannot be replaced by a type derived by Extension.|  
 |`Restriction`|This element cannot be replaced by a type derived by Restriction.|  
 |`All`|`#all`. This element cannot be replaced by any type regardless of derivation method.|  
-  
- The `Substitution`, `List`, and `Union` derivation methods are not supported by this property.  
-  
+ 
+The `Substitution`, `List`, and `Union` derivation methods are not supported by this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,21 +276,21 @@
         <value>The post-schema-validated infoset value. The default is <see langword="BlockDefault" /> value on the <see langword="schema" /> element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is taken either from the type itself or, if not defined at the type level, it is taken from the `schema` element. For example, if the value is restricted, only the specifically defined type can be used, not types derived from the specifically defined type.  
-  
- This attribute can contain the following values:  
-  
+This value is taken either from the type itself or, if not defined at the type level, it is taken from the `schema` element. For example, if the value is restricted, only the specifically defined type can be used, not types derived from the specifically defined type.  
+ 
+This attribute can contain the following values:  
+ 
 |Enum|Description|  
 |----------|-----------------|  
 |`None`|Use the derivation restriction defined by the `BlockDefault` property of the schema, if it exists.|  
 |`Extension`|This element cannot be replaced by a type derived by Extension.|  
 |`Restriction`|This element cannot be replaced by a type derived by Restriction.|  
 |`All`|`#all`. This element cannot be replaced by any type regardless of derivation method.|  
-  
- The `Substitution`, `List`, and `Union` derivation methods are not supported by this property.  
-  
+ 
+The `Substitution`, `List`, and `Union` derivation methods are not supported by this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@
         <value>The content model type that is one of the <see cref="T:System.Xml.Schema.XmlSchemaSimpleContent" /> or <see cref="T:System.Xml.Schema.XmlSchemaComplexContent" /> classes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is mutually exclusive with the <xref:System.Xml.Schema.XmlSchemaComplexType.Particle%2A> property.  
-  
+This is mutually exclusive with the <xref:System.Xml.Schema.XmlSchemaComplexType.Particle%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,25 +360,25 @@
         <value>The post-compilation value of the content model for the complex type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the content in the post-schema-validation infoset.  
-  
- If the `IsMixed` property is set to `true` on the `ContentModel` property that has the type `XmlSchemaComplexContent`, the value returned is `Mixed`.  
-  
- If the `IsMixed` property is `false`, the value is either `Empty` or `ElementOnly`.  
-  
- If the type on the `ContentModel` property has the type `XmlSchemaSimpleContent`, then this value is always `TextOnly`.  
-  
- The `ContentType` property must have one of the values shown in the following table.  
-  
+This is the content in the post-schema-validation infoset.  
+ 
+If the `IsMixed` property is set to `true` on the `ContentModel` property that has the type `XmlSchemaComplexContent`, the value returned is `Mixed`.  
+ 
+If the `IsMixed` property is `false`, the value is either `Empty` or `ElementOnly`.  
+ 
+If the type on the `ContentModel` property has the type `XmlSchemaSimpleContent`, then this value is always `TextOnly`.  
+ 
+The `ContentType` property must have one of the values shown in the following table.  
+ 
 |Enum|Description|  
 |----------|-----------------|  
 |`TextOnly`|Text-only content.|  
 |`Empty`|Empty content.|  
 |`ElementOnly`|Element-only content.|  
 |`Mixed`|Mixed content model.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -410,10 +410,10 @@
         <value>The particle for the content type. The post-compilation value of the <see cref="P:System.Xml.Schema.XmlSchemaComplexType.ContentType" /> particle.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This `ContentTypeParticle` is determined after the content models of the most derived types and the base complex type have been resolved according to the rules defined in the W3C XML Schema definition language (XSD) specification.  
-  
+This `ContentTypeParticle` is determined after the content models of the most derived types and the base complex type have been resolved according to the rules defined in the W3C XML Schema definition language (XSD) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -484,10 +484,10 @@
  Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indicates if character data can appear between the child elements of this `complexType`. If the `simpleContent` element is a child element, the `mixed` attribute is not allowed (`false`). If the `complexContent` element is a child element, the `mixed` attribute can be overridden by the `mixed` attribute on the `complexContent` element.  
-  
+Indicates if character data can appear between the child elements of this `complexType`. If the `simpleContent` element is a child element, the `mixed` attribute is not allowed (`false`). If the `complexContent` element is a child element, the `mixed` attribute can be overridden by the `mixed` attribute on the `complexContent` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,19 +528,19 @@
         <value>The compositor type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Particles must be one of the following compositors:  
-  
+Particles must be one of the following compositors:  
+ 
 |Element|Description|  
 |-------------|-----------------|  
 |`group`|The complex type contains the elements defined in the referenced group.|  
 |`sequence`|The complex type contains the elements defined in the specified sequence.|  
 |`choice`|The complex type allows one of the elements specified in the `choice` element.|  
 |`all`|The complex type allows all of the elements specified in the `all` element to appear once or not at all.|  
-  
- This is mutually exclusive with the <xref:System.Xml.Schema.XmlSchemaComplexType.ContentModel%2A> property.  
-  
+ 
+This is mutually exclusive with the <xref:System.Xml.Schema.XmlSchemaComplexType.ContentModel%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

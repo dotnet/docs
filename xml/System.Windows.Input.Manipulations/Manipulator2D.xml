@@ -36,10 +36,10 @@
         <summary>Creates a new <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object with the specified properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The x and y parameters must both be a finite number.  
-  
+The x and y parameters must both be a finite number.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="x" />-coordinate or <paramref name="y" />-coordinate are <see langword="float.NaN" />, <see langword="float.PositiveInfinity" />, or <see langword="float.NegativeInfinity" />. These values are all invalid.</exception>
@@ -129,32 +129,32 @@
           <see langword="true" /> if the two <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects have the same value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Input.Manipulations.Manipulator2D.Equals%28System.Windows.Input.Manipulations.Manipulator2D%2CSystem.Windows.Input.Manipulations.Manipulator2D%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Input.Manipulations.Manipulator2D manipulator1, System.Windows.Input.Manipulations.Manipulator2D manipulator2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Input.Manipulations.Manipulator2D manipulator1, valuetype System.Windows.Input.Manipulations.Manipulator2D manipulator2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.Manipulator2D.op_Inequality(System.Windows.Input.Manipulations.Manipulator2D,System.Windows.Input.Manipulations.Manipulator2D)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="manipulator1" Type="System.Windows.Input.Manipulations.Manipulator2D" />
-        <Parameter Name="manipulator2" Type="System.Windows.Input.Manipulations.Manipulator2D" />
-      </Parameters>
-      <Docs>
-        <param name="manipulator1">The first <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object to compare.</param>
-        <param name="manipulator2">The second <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object to compare.</param>
-        <summary>Determines whether two specified <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects have different values.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects have different values; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Input.Manipulations.Manipulator2D manipulator1, System.Windows.Input.Manipulations.Manipulator2D manipulator2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Input.Manipulations.Manipulator2D manipulator1, valuetype System.Windows.Input.Manipulations.Manipulator2D manipulator2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.Manipulator2D.op_Inequality(System.Windows.Input.Manipulations.Manipulator2D,System.Windows.Input.Manipulations.Manipulator2D)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="manipulator1" Type="System.Windows.Input.Manipulations.Manipulator2D" />
+       <Parameter Name="manipulator2" Type="System.Windows.Input.Manipulations.Manipulator2D" />
+     </Parameters>
+     <Docs>
+       <param name="manipulator1">The first <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object to compare.</param>
+       <param name="manipulator2">The second <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object to compare.</param>
+       <summary>Determines whether two specified <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects have different values.</summary>
+       <returns>
+         <see langword="true" /> if the two <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects have different values; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Input.Manipulations.Manipulator2D.Compare%28System.Windows.Input.Manipulations.Manipulator2D%2CSystem.Windows.Input.Manipulations.Manipulator2D%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -176,10 +176,10 @@
         <value>The x-coordinate of this <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When setting this property, the value must be a finite value. The default value for this property is zero (0).  
-  
+When setting this property, the value must be a finite value. The default value for this property is zero (0).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <value>The y-coordinate of this <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When setting this property, the value must be a finite value. The default value for this property is zero (0).  
-  
+When setting this property, the value must be a finite value. The default value for this property is zero (0).  
+ 
  ]]></format>
         </remarks>
       </Docs>

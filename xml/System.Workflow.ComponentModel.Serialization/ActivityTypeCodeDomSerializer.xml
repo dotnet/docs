@@ -19,14 +19,14 @@
     <summary>Serializes an <see cref="T:System.Workflow.ComponentModel.Activity" /> to a new type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer> performs the same tasks as <xref:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializer>, but if you use this class to serialize an <xref:System.Workflow.ComponentModel.Activity> it defines a new type.  
-  
+ 
+<xref:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer> performs the same tasks as <xref:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializer>, but if you use this class to serialize an <xref:System.Workflow.ComponentModel.Activity> it defines a new type.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,10 +95,10 @@
         <returns>The <see cref="T:System.CodeDom.CodeMemberMethod" /> used to emit all of the initialization code for the given member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned method is determined from a method key found in the user data associated with `typeDecl`. If there is no method key, <xref:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer.GetInitializeMethod%2A> creates a new <xref:System.CodeDom.CodeMemberMethod>.  
-  
+The returned method is determined from a method key found in the user data associated with `typeDecl`. If there is no method key, <xref:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer.GetInitializeMethod%2A> creates a new <xref:System.CodeDom.CodeMemberMethod>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

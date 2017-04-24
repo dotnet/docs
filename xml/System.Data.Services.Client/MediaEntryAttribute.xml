@@ -20,16 +20,16 @@
     <summary>Signifies that the specified class is to be treated as a media link entry.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class is treated as a media link entry, which is an AtomPub protocol for handling binary data and metadata about that binary data.  
-  
- A type marked with this attribute has altered behavior when <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called. The media property is also called a Media resource. On saving, the media property of the type denoted by the <xref:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName%2A> property, is inserted by a POST request to the URI `/<EntitySet>/$value`.  
-  
- After the `POST`, a `PUT` request with all the properties on the type other than the <xref:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName%2A> property, which is binary content, are sent to the URI `/<EntitySet>(<key>)`.  
-  
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+The class is treated as a media link entry, which is an AtomPub protocol for handling binary data and metadata about that binary data.  
+ 
+A type marked with this attribute has altered behavior when <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called. The media property is also called a Media resource. On saving, the media property of the type denoted by the <xref:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName%2A> property, is inserted by a POST request to the URI `/<EntitySet>/$value`.  
+ 
+After the `POST`, a `PUT` request with all the properties on the type other than the <xref:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName%2A> property, which is binary content, are sent to the URI `/<EntitySet>(<key>)`.  
+ 
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -22,19 +22,19 @@
     <summary>Specifies the standard keys on a console.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ConsoleKey> enumeration is typically used in the nfo structure, which is returned by the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method to indicate which key on the console has been pressed.  
+The <xref:System.ConsoleKey> enumeration is typically used in the nfo structure, which is returned by the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method to indicate which key on the console has been pressed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ConsoleKey> enumeration to indicate to the user which key the user had pressed.  
-  
- [!code-cpp[System.ConsoleKey#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ConsoleKey/cpp/consolekey.cpp#1)]
- [!code-csharp[System.ConsoleKey#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ConsoleKey/cs/ConsoleKey1.cs#1)]
- [!code-vb[System.ConsoleKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ConsoleKey/vb/ConsoleKey1.vb#1)]  
-  
+The following example uses the <xref:System.ConsoleKey> enumeration to indicate to the user which key the user had pressed.  
+ 
+[!code-cpp[System.ConsoleKey#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ConsoleKey/cpp/consolekey.cpp#1)]
+[!code-csharp[System.ConsoleKey#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ConsoleKey/cs/ConsoleKey1.cs#1)]
+[!code-vb[System.ConsoleKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ConsoleKey/vb/ConsoleKey1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,14 +14,14 @@
     <summary>Provides a managed wrapper around a High Level Shading Language (HLSL) pixel shader.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.Effects.PixelShader> class to access pre-compiled HLSL bytecode in a Windows Presentation Foundation (WPF) application. You can create a <xref:System.Windows.Media.Effects.PixelShader> from a Pack URI reference or from a <xref:System.IO.Stream>.  
-  
- Set the <xref:System.Windows.Media.Effects.PixelShader.UriSource%2A> property or call the <xref:System.Windows.Media.Effects.PixelShader.SetStreamSource%2A> method to load the shader bytecode.  
-  
- To create a custom effect, assign the <xref:System.Windows.Media.Effects.PixelShader> to the <xref:System.Windows.Media.Effects.ShaderEffect.PixelShader%2A> property of a <xref:System.Windows.Media.Effects.ShaderEffect>.  
-  
+Use the <xref:System.Windows.Media.Effects.PixelShader> class to access pre-compiled HLSL bytecode in a Windows Presentation Foundation (WPF) application. You can create a <xref:System.Windows.Media.Effects.PixelShader> from a Pack URI reference or from a <xref:System.IO.Stream>.  
+ 
+Set the <xref:System.Windows.Media.Effects.PixelShader.UriSource%2A> property or call the <xref:System.Windows.Media.Effects.PixelShader.SetStreamSource%2A> method to load the shader bytecode.  
+ 
+To create a custom effect, assign the <xref:System.Windows.Media.Effects.PixelShader> to the <xref:System.Windows.Media.Effects.ShaderEffect.PixelShader%2A> property of a <xref:System.Windows.Media.Effects.ShaderEffect>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <returns>A modifiable clone of this instance. The returned clone is effectively a deep copy of the current object. The clone's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Effects.PixelShader.Clone%2A> method can be used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited <xref:System.Windows.Freezable.Clone%2A> method to provide a strongly typed implementation.  
-  
+The <xref:System.Windows.Media.Effects.PixelShader.Clone%2A> method can be used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited <xref:System.Windows.Freezable.Clone%2A> method to provide a strongly typed implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,12 +106,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,16 +255,16 @@
         <value>A <see cref="T:System.Windows.Media.Effects.ShaderRenderMode" /> value that indicates whether to force the use of hardware or software rendering for the effect.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, a <xref:System.Windows.Media.Effects.ShaderEffect> renders in hardware when there is a capable hardware accelerator; otherwise, it renders in software. The <xref:System.Windows.Media.Effects.PixelShader.ShaderRenderMode%2A> property alters this behavior, based on its value.  
-  
- If set to <xref:System.Windows.Media.Effects.ShaderRenderMode>, and there is no capable hardware available, the entire <xref:System.Windows.Media.Effects.ShaderEffect> is ignored.  
-  
- If set to <xref:System.Windows.Media.Effects.ShaderRenderMode>, the <xref:System.Windows.Media.Effects.ShaderEffect> always renders using software rendering.  
-  
- If set to <xref:System.Windows.Media.Effects.ShaderRenderMode>, the <xref:System.Windows.Media.Effects.ShaderEffect> has the default behavior.  
-  
+By default, a <xref:System.Windows.Media.Effects.ShaderEffect> renders in hardware when there is a capable hardware accelerator; otherwise, it renders in software. The <xref:System.Windows.Media.Effects.PixelShader.ShaderRenderMode%2A> property alters this behavior, based on its value.  
+ 
+If set to <xref:System.Windows.Media.Effects.ShaderRenderMode>, and there is no capable hardware available, the entire <xref:System.Windows.Media.Effects.ShaderEffect> is ignored.  
+ 
+If set to <xref:System.Windows.Media.Effects.ShaderRenderMode>, the <xref:System.Windows.Media.Effects.ShaderEffect> always renders using software rendering.  
+ 
+If set to <xref:System.Windows.Media.Effects.ShaderRenderMode>, the <xref:System.Windows.Media.Effects.ShaderEffect> has the default behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,19 +303,19 @@
         <value>The Pack URI reference to HLSL bytecode in the assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Uri> is a Pack URI reference to a file inside the assembly.  
+The <xref:System.Uri> is a Pack URI reference to a file inside the assembly.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the Pack URI syntax to load a pixel shader named "sepiaShader.fx.ps" from the application's local executable.  
-  
+The following code example shows how to use the Pack URI syntax to load a pixel shader named "sepiaShader.fx.ps" from the application's local executable.  
+ 
 ```  
 pack://application:,,,/myEffects;component/sepiaShader.fx.ps  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

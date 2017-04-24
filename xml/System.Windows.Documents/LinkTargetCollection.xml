@@ -14,10 +14,10 @@
     <summary>Provides a collection of all of the <see cref="T:System.Windows.Documents.LinkTarget" /> elements in a <see cref="T:System.IO.Packaging.Package" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By providing all the potential <xref:System.Windows.Documents.LinkTargetCollection> elements in one collection, consuming applications can determine if a <xref:System.IO.Packaging.Package> contains a particular link without having to load the entire <xref:System.IO.Packaging.Package>.  
-  
+By providing all the potential <xref:System.Windows.Documents.LinkTargetCollection> elements in one collection, consuming applications can determine if a <xref:System.IO.Packaging.Package> contains a particular link without having to load the entire <xref:System.IO.Packaging.Package>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
           <see langword="true" /> if <paramref name="value" /> is present; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Rather than searching the entire document, the <xref:System.Windows.Documents.LinkTargetCollection.Contains%2A> method provides a quick means to test for a specified link.  
-  
+Rather than searching the entire document, the <xref:System.Windows.Documents.LinkTargetCollection.Contains%2A> method provides a quick means to test for a specified link.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@
         <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The link targets that follow the removed target move up to occupy the vacated spot. The indexes of the elements that are moved are also updated.  
-  
+The link targets that follow the removed target move up to occupy the vacated spot. The indexes of the elements that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>

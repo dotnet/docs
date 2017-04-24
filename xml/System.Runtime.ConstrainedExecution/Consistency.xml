@@ -18,18 +18,18 @@
     <summary>Specifies a reliability contract.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.ConstrainedExecution.Consistency> enumeration is used as a parameter to the <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute> attribute to specify the reliability guarantee on a given method.  
+The <xref:System.Runtime.ConstrainedExecution.Consistency> enumeration is used as a parameter to the <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute> attribute to specify the reliability guarantee on a given method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Runtime.ConstrainedExecution.Consistency> enumeration when specifying a constrained execution region for a method. This code example  is part of a larger example provided for the <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.%23ctor%2A> constructor.  
-  
- [!code-csharp[System.Runtime.ConstrainedExecution#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/cs/program.cs#3)]
- [!code-vb[System.Runtime.ConstrainedExecution#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/vb/program.vb#3)]  
-  
+The following code example demonstrates the use of the <xref:System.Runtime.ConstrainedExecution.Consistency> enumeration when specifying a constrained execution region for a method. This code example  is part of a larger example provided for the <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.%23ctor%2A> constructor.  
+ 
+[!code-csharp[System.Runtime.ConstrainedExecution#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/cs/program.cs#3)]
+[!code-vb[System.Runtime.ConstrainedExecution#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/vb/program.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -118,12 +118,12 @@
         <summary>In the face of exceptional conditions, the method is guaranteed not to corrupt state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This does not guarantee that the method will never fail; however, it does guarantee that such a failure will never corrupt state.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

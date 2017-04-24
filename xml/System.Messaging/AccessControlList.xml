@@ -14,22 +14,22 @@
     <summary>Contains a list of access control entries, specifying access rights for one or more trustees.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Messaging.AccessControlList> class to specify multiple trustees and access rights to add with a single call when setting permissions. Construct your access control list by adding an access control entry for each trustee and access rights combination.  
-  
- A <xref:System.Messaging.AccessControlList> identifies the trustees that are allowed or denied access to a securable object. When a process tries to access a securable object, the system checks the access control entries in the object's access control list to determine whether to grant access to it. If the object does not have an access control list, the system grants full access to everything. If the object's access control list has no entries, the system denies all attempts to access the object.  
-  
- The system checks the access control entries in sequence until it finds one or more that allow all the requested access rights or until any of the requested access rights are denied.  
-  
- The system examines each <xref:System.Messaging.AccessControlEntry> in sequence until one of the following events occurs:  
-  
+Use the <xref:System.Messaging.AccessControlList> class to specify multiple trustees and access rights to add with a single call when setting permissions. Construct your access control list by adding an access control entry for each trustee and access rights combination.  
+ 
+A <xref:System.Messaging.AccessControlList> identifies the trustees that are allowed or denied access to a securable object. When a process tries to access a securable object, the system checks the access control entries in the object's access control list to determine whether to grant access to it. If the object does not have an access control list, the system grants full access to everything. If the object's access control list has no entries, the system denies all attempts to access the object.  
+ 
+The system checks the access control entries in sequence until it finds one or more that allow all the requested access rights or until any of the requested access rights are denied.  
+ 
+The system examines each <xref:System.Messaging.AccessControlEntry> in sequence until one of the following events occurs:  
+ 
 -   An access-denied <xref:System.Messaging.AccessControlEntry> explicitly denies any of the requested access rights to one of the trustees listed in the thread's access token.  
-  
+ 
 -   One or more access-allowed <xref:System.Messaging.AccessControlEntry> items for trustees listed in the thread's access token explicitly grant all the requested access rights.  
-  
+ 
 -   All <xref:System.Messaging.AccessControlEntry> items have been checked and there is still at least one requested access right that has not been explicitly allowed, in which case, access is implicitly denied.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -169,10 +169,10 @@
         <summary>Inserts an access control entry into the access control list at the specified position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `index` parameter equals the number of items in the access control list, then the entry is appended to the end. Otherwise, the entries after the insertion point move down to accommodate the new item in the list.  
-  
+If the `index` parameter equals the number of items in the access control list, then the entry is appended to the end. Otherwise, the entries after the insertion point move down to accommodate the new item in the list.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is not a valid index in this access control list.</exception>
@@ -199,10 +199,10 @@
         <summary>Removes the first occurrence of a specific access control entry from the access control list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The access control entries that follow the removed item move up to occupy the vacated spot.  
-  
+The access control entries that follow the removed item move up to occupy the vacated spot.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="entry" /> parameter is <see langword="null" />.</exception>

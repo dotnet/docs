@@ -23,10 +23,10 @@
     <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.ITypeInfo" /> instead.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Retrieves the addresses of static functions or variables, such as those defined in a DLL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::AddressOfMember`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::AddressOfMember`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <summary>Creates a new instance of a type that describes a component class (coclass).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::CreateInstance`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::CreateInstance`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <summary>Retrieves the type library that contains this type description and its index within that type library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetContainingTypeLib`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetContainingTypeLib`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,10 +157,10 @@
         <summary>Retrieves a description or specification of an entry point for a function in a DLL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetDllEntry`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetDllEntry`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <summary>Retrieves the documentation string, the complete Help file name and path, and the context ID for the Help topic for a specified type description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetDocumentation`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetDocumentation`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,12 +225,12 @@
         <summary>Retrieves the <see cref="T:System.Runtime.InteropServices.FUNCDESC" /> structure that contains information about a specified function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of `ppFuncDesc` can be accessed through <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A>.  
-  
- For additional information about `ITypeInfo::GetFuncDesc`, see the MSDN Library.  
-  
+The values of `ppFuncDesc` can be accessed through <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A>.  
+ 
+For additional information about `ITypeInfo::GetFuncDesc`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,10 +260,10 @@
         <summary>Maps between member names and member IDs, and parameter names and parameter IDs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetIDsOfNames`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,10 +291,10 @@
         <summary>Retrieves the <see cref="T:System.Runtime.InteropServices.IMPLTYPEFLAGS" /> value for one implemented interface or base interface in a type description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetImplTypeFlags`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetImplTypeFlags`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,10 +322,10 @@
         <summary>Retrieves marshaling information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetMops`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetMops`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <summary>Retrieves the variable with the specified member ID (or the name of the property or method and its parameters) that correspond to the specified function ID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetNames`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@
         <summary>If a type description references other type descriptions, it retrieves the referenced type descriptions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetRefTypeInfo`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetRefTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -419,10 +419,10 @@
         <summary>If a type description describes a COM class, it retrieves the type description of the implemented interface types.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetRefTypeOfImplType`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetRefTypeOfImplType`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,12 +448,12 @@
         <summary>Retrieves a <see cref="T:System.Runtime.InteropServices.TYPEATTR" /> structure that contains the attributes of the type description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of `ppTypeAttr` can be accessed through <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A>.  
-  
- For additional information about `ITypeInfo::GetTypeAttr`, see the MSDN Library.  
-  
+The values of `ppTypeAttr` can be accessed through <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A>.  
+ 
+For additional information about `ITypeInfo::GetTypeAttr`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -479,10 +479,10 @@
         <summary>Retrieves the <see langword="ITypeComp" /> interface for the type description, which enables a client compiler to bind to the type description's members.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::GetTypeComp`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::GetTypeComp`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -510,12 +510,12 @@
         <summary>Retrieves a <see langword="VARDESC" /> structure that describes the specified variable.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of `ppVarDesc` can be accessed through <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A>.  
-  
- For additional information about `ITypeInfo::GetVarDesc`, see the MSDN Library.  
-  
+The values of `ppVarDesc` can be accessed through <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A>.  
+ 
+For additional information about `ITypeInfo::GetVarDesc`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -553,21 +553,21 @@
         <summary>Invokes a method, or accesses a property of an object, that implements the interface described by the type description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of `pDispParams` can be accessed through <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A>.  
-  
- Valid values for `wFlags` are:  
-  
+The values of `pDispParams` can be accessed through <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A>.  
+ 
+Valid values for `wFlags` are:  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |DISPATCH_METHOD|The member is accessed as a method. If there is ambiguity, both this and the `DISPATCH_PROPERTYGET` flag can be set.|  
 |DISPATCH_PROPERTYGET|The member is retrieved as a property or data member.|  
 |DISPATCH_PROPERTYPUT|The member is changed as a property or data member.|  
 |DISPATCH_PROPERTYPUTREF|The member is changed by using a reference assignment, rather than a value assignment. This value is only valid when the property accepts a reference to an object.|  
-  
- For additional information about `ITypeInfo::Invoke`, see the MSDN Library.  
-  
+ 
+For additional information about `ITypeInfo::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,10 +593,10 @@
         <summary>Releases a <see cref="T:System.Runtime.InteropServices.FUNCDESC" /> previously returned by <see cref="M:System.Runtime.InteropServices.UCOMITypeInfo.GetFuncDesc(System.Int32,System.IntPtr@)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::ReleaseFuncDesc`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::ReleaseFuncDesc`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -622,10 +622,10 @@
         <summary>Releases a <see cref="T:System.Runtime.InteropServices.TYPEATTR" /> previously returned by <see cref="M:System.Runtime.InteropServices.UCOMITypeInfo.GetTypeAttr(System.IntPtr@)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::ReleaseTypeAttr`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::ReleaseTypeAttr`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -651,10 +651,10 @@
         <summary>Releases a <see langword="VARDESC" /> previously returned by <see cref="M:System.Runtime.InteropServices.UCOMITypeInfo.GetVarDesc(System.Int32,System.IntPtr@)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ITypeInfo::ReleaseVarDesc`, see the MSDN Library.  
-  
+For additional information about `ITypeInfo::ReleaseVarDesc`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

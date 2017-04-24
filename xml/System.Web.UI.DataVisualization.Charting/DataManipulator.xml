@@ -1235,17 +1235,17 @@
         <summary>Performs a custom sort on one or more series.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a custom sort on the data points in one or more series; the sort logic is defined by the `comparer` parameter. Override and implement the <xref:System.Collections.IComparer.Compare%2A> method of the <xref:System.Collections.IComparer> interface, perform the comparison(s) and then return `true` or `false`. The sort order is determined by the return value.  
-  
- Note that if multiple series are sorted, the series must be aligned, otherwise an exception will be thrown.  
-  
- The two object parameters of the <xref:System.Collections.IComparer.Compare%2A> method must always be of type <xref:System.Web.UI.DataVisualization.Charting.DataPoint>.  
-  
+This method performs a custom sort on the data points in one or more series; the sort logic is defined by the `comparer` parameter. Override and implement the <xref:System.Collections.IComparer.Compare%2A> method of the <xref:System.Collections.IComparer> interface, perform the comparison(s) and then return `true` or `false`. The sort order is determined by the return value.  
+ 
+Note that if multiple series are sorted, the series must be aligned, otherwise an exception will be thrown.  
+ 
+The two object parameters of the <xref:System.Collections.IComparer.Compare%2A> method must always be of type <xref:System.Web.UI.DataVisualization.Charting.DataPoint>.  
+ 
 > [!IMPORTANT]
 >  All data points, regardless of the series they belong to, are sorted based on the first series; if the position of a data point in the first series changes, all corresponding points in the other series change as well.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1272,14 +1272,14 @@
         <summary>Performs a custom sort on the data points in a series.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a custom sort on the data points in a series; the sort logic is defined by the `comparer` parameter. Override and implement the <xref:System.Collections.IComparer.Compare%2A> method of the <xref:System.Collections.IComparer> interface, perform the comparison(s) and then return `true` or `false`. The sort order is determined by the return value.  
-  
- The two object parameters of the <xref:System.Collections.IComparer.Compare%2A> method must always be of type <xref:System.Web.UI.DataVisualization.Charting.DataPoint>.  
-  
- To perform a custom sort for more than one series per function call, use the <xref:System.Web.UI.DataVisualization.Charting.DataManipulator.Sort%2A> method.  
-  
+This method performs a custom sort on the data points in a series; the sort logic is defined by the `comparer` parameter. Override and implement the <xref:System.Collections.IComparer.Compare%2A> method of the <xref:System.Collections.IComparer> interface, perform the comparison(s) and then return `true` or `false`. The sort order is determined by the return value.  
+ 
+The two object parameters of the <xref:System.Collections.IComparer.Compare%2A> method must always be of type <xref:System.Web.UI.DataVisualization.Charting.DataPoint>.  
+ 
+To perform a custom sort for more than one series per function call, use the <xref:System.Web.UI.DataVisualization.Charting.DataManipulator.Sort%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1354,17 +1354,17 @@
         <summary>Sorts the data points of one or more series in the specified order. The sort can be based on any available data point value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs an ascending or descending sort on data points in a series, and is based on the value that is set in the `sortBy` parameter such as "X", "AxisLabel", "Y", "Y1", and so forth.  
-  
- Note that if multiple series are sorted, the series must be aligned, otherwise an exception will be thrown.  
-  
+This method performs an ascending or descending sort on data points in a series, and is based on the value that is set in the `sortBy` parameter such as "X", "AxisLabel", "Y", "Y1", and so forth.  
+ 
+Note that if multiple series are sorted, the series must be aligned, otherwise an exception will be thrown.  
+ 
 > [!IMPORTANT]
 >  All series will be sorted using the specified Y-value from the FIRST listed series; that is, all data points, regardless of the series they belong to, are sorted based on the first series.  
-  
- To sort points using a custom sort routine, use a different definition of this overloaded method.  
-  
+ 
+To sort points using a custom sort routine, use a different definition of this overloaded method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

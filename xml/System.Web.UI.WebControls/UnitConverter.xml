@@ -14,16 +14,16 @@
     <summary>Converts from a <see cref="T:System.Web.UI.WebControls.Unit" /> object to an object of another data type and from another type to a <see cref="T:System.Web.UI.WebControls.Unit" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.UnitConverter> class to convert a <xref:System.Web.UI.WebControls.Unit> to an object of another data type. You can also use the <xref:System.Web.UI.WebControls.UnitConverter> class to convert an object of another data type to a <xref:System.Web.UI.WebControls.Unit>.  
-  
+Use the <xref:System.Web.UI.WebControls.UnitConverter> class to convert a <xref:System.Web.UI.WebControls.Unit> to an object of another data type. You can also use the <xref:System.Web.UI.WebControls.UnitConverter> class to convert an object of another data type to a <xref:System.Web.UI.WebControls.Unit>.  
+ 
 > [!NOTE]
 >  This converter can convert only a string to <xref:System.Web.UI.WebControls.Unit> and a <xref:System.Web.UI.WebControls.Unit> to a string.  
-  
+ 
 > [!CAUTION]
 >  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=fullName> base class.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

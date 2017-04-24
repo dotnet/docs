@@ -24,10 +24,10 @@
     <summary>Represents access to generic isolated storage capabilities.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is an abstract base class. This class is never instantiated; instead, classes that extend it and represent access to a particular type of isolated storage are used.  
-  
+This class is an abstract base class. This class is never instantiated; instead, classes that extend it and represent access to a particular type of isolated storage are used.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for the right to control policy. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" /></permission>
@@ -51,10 +51,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.IsolatedStoragePermission" /> class with either restricted or unrestricted permission as specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates either fully restricted (`None`) or `Unrestricted` access to isolated storage.  
-  
+Creates either fully restricted (`None`) or `Unrestricted` access to isolated storage.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
@@ -108,10 +108,10 @@
           <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An unrestricted permission represents access to any and all resources protected by the permission.  
-  
+An unrestricted permission represents access to any and all resources protected by the permission.  
+ 
  ]]></format>
         </remarks>
       </Docs>

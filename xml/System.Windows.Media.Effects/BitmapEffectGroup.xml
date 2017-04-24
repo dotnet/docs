@@ -19,13 +19,13 @@
     <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Represents a group of <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> objects that is used to apply multiple effects to a visible object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order in which effects are added to a group affects the final visual representation of the content that the effects are applied to. The effects are chained so that the visual of the first effect is used as the source of the second. This logic is followed through all subsequent effects within the effect group. The following image shows the effect that a <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> and a <xref:System.Windows.Media.Effects.OuterGlowBitmapEffect> have when added to a <xref:System.Windows.Controls.Button>. The first button has the drop shadow applied first and the outer glow applied last. In the second button, the order is reversed.  
-  
- ![Affect of an effect's order in a BitmapEffectGroup](~/add/media/effectgrouporder.PNG "Affect of an effect's order in a BitmapEffectGroup")  
+The order in which effects are added to a group affects the final visual representation of the content that the effects are applied to. The effects are chained so that the visual of the first effect is used as the source of the second. This logic is followed through all subsequent effects within the effect group. The following image shows the effect that a <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> and a <xref:System.Windows.Media.Effects.OuterGlowBitmapEffect> have when added to a <xref:System.Windows.Controls.Button>. The first button has the drop shadow applied first and the outer glow applied last. In the second button, the order is reversed.  
+ 
+![Affect of an effect's order in a BitmapEffectGroup](~/add/media/effectgrouporder.PNG "Affect of an effect's order in a BitmapEffectGroup")  
 Effects in a BitmapEffectGroup  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,17 +62,17 @@ Effects in a BitmapEffectGroup
         <value>The children of the effects group as a <see cref="T:System.Windows.Media.Effects.BitmapEffectCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Children"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Effects.BitmapEffectGroup>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@ Effects in a BitmapEffectGroup
         <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Identifies the <see cref="P:System.Windows.Media.Effects.BitmapEffectGroup.Children" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Media.Effects.BitmapEffectGroup.Children%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Media.Effects.BitmapEffectGroup.Children%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,12 +119,12 @@ Effects in a BitmapEffectGroup
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,12 +147,12 @@ Effects in a BitmapEffectGroup
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

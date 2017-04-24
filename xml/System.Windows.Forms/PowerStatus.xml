@@ -14,21 +14,21 @@
     <summary>Indicates current system power status information.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PowerStatus> class represents information about the current AC line power status, battery charging status, and battery charge status.  
+The <xref:System.Windows.Forms.PowerStatus> class represents information about the current AC line power status, battery charging status, and battery charge status.  
+ 
+This class is used by the <xref:System.Windows.Forms.SystemInformation.PowerStatus%2A> property of the <xref:System.Windows.Forms.SystemInformation> class to indicate current system power information.  
+ 
   
- This class is used by the <xref:System.Windows.Forms.SystemInformation.PowerStatus%2A> property of the <xref:System.Windows.Forms.SystemInformation> class to indicate current system power information.  
-  
-   
-  
+ 
 ## Examples  
- The following example lists all properties of the <xref:System.Windows.Forms.PowerStatus> class in a <xref:System.Windows.Forms.ListBox> control and displays the current value of the associated property in a <xref:System.Windows.Forms.TextBox> control when a list item selected.  
-  
- [!code-cpp[PowerStatusBrowser#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PowerStatusBrowser/CPP/powerstatusbrowser.cpp#1)]
- [!code-csharp[PowerStatusBrowser#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PowerStatusBrowser/CS/powerstatusbrowser.cs#1)]
- [!code-vb[PowerStatusBrowser#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PowerStatusBrowser/VB/powerstatusbrowser.vb#1)]  
-  
+The following example lists all properties of the <xref:System.Windows.Forms.PowerStatus> class in a <xref:System.Windows.Forms.ListBox> control and displays the current value of the associated property in a <xref:System.Windows.Forms.TextBox> control when a list item selected.  
+ 
+[!code-cpp[PowerStatusBrowser#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PowerStatusBrowser/CPP/powerstatusbrowser.cpp#1)]
+[!code-csharp[PowerStatusBrowser#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PowerStatusBrowser/CS/powerstatusbrowser.cs#1)]
+[!code-vb[PowerStatusBrowser#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PowerStatusBrowser/VB/powerstatusbrowser.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.BatteryChargeStatus" /> values indicating the current battery charge level or charging status.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the current battery charge level or battery charging status.  
-  
+This property indicates the current battery charge level or battery charging status.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.PowerLineStatus" /> values indicating the current system power status.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates whether the system power is online, or that the system power status is unknown.  
-  
+This property indicates whether the system power is online, or that the system power status is unknown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

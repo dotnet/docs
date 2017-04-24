@@ -14,14 +14,14 @@
     <summary>Specifies the type of authentication used for the binding.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Values from this enumeration are used by the  
-  
- <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> property to indicate how a message must be authenticated by the MSMQ transport.  
-  
- If security is turned off by setting the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> to None, then the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> property must also be set to <xref:System.Net.Security.ProtectionLevel> for consistency.  
-  
+Values from this enumeration are used by the  
+ 
+<xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> property to indicate how a message must be authenticated by the MSMQ transport.  
+ 
+If security is turned off by setting the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> to None, then the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> property must also be set to <xref:System.Net.Security.ProtectionLevel> for consistency.  
+ 
  ]]></format>
     </remarks>
   </Docs>

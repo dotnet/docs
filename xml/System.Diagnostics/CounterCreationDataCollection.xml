@@ -14,14 +14,14 @@
     <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.CounterCreationData" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
-  
- [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
- [!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
- [!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+ 
+[!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
+[!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
+[!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,14 +58,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> class by using the specified array of <see cref="T:System.Diagnostics.CounterCreationData" /> instances.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create a <xref:System.Diagnostics.CounterCreationDataCollection> object by using a <xref:System.Diagnostics.CounterCreationData> array.  
-  
- [!code-cpp[CounterCreationDataCollection_CounterCreationData#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationData/CPP/countercreationdatacollection_ctor.cpp#1)]
- [!code-csharp[CounterCreationDataCollection_CounterCreationData#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationData/CS/countercreationdatacollection_ctor.cs#1)]
- [!code-vb[CounterCreationDataCollection_CounterCreationData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationData/VB/countercreationdatacollection_ctor.vb#1)]  
-  
+The following example demonstrates how to create a <xref:System.Diagnostics.CounterCreationDataCollection> object by using a <xref:System.Diagnostics.CounterCreationData> array.  
+ 
+[!code-cpp[CounterCreationDataCollection_CounterCreationData#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationData/CPP/countercreationdatacollection_ctor.cpp#1)]
+[!code-csharp[CounterCreationDataCollection_CounterCreationData#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationData/CS/countercreationdatacollection_ctor.cs#1)]
+[!code-vb[CounterCreationDataCollection_CounterCreationData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationData/VB/countercreationdatacollection_ctor.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -89,14 +89,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> class by using the specified collection of <see cref="T:System.Diagnostics.CounterCreationData" /> instances.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create a <xref:System.Diagnostics.CounterCreationDataCollection> object by using <xref:System.Diagnostics.CounterCreationData> objects from another <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[CounterCreationDataCollection_CounterCreationDataCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationDataCollection/CPP/countercreationdatacollection_ctor.cpp#1)]
- [!code-csharp[CounterCreationDataCollection_CounterCreationDataCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationDataCollection/CS/countercreationdatacollection_ctor_countercreationdatacollection.cs#1)]
- [!code-vb[CounterCreationDataCollection_CounterCreationDataCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationDataCollection/VB/countercreationdatacollection_ctor.vb#1)]  
-  
+The following example demonstrates how to create a <xref:System.Diagnostics.CounterCreationDataCollection> object by using <xref:System.Diagnostics.CounterCreationData> objects from another <xref:System.Diagnostics.CounterCreationDataCollection>.  
+ 
+[!code-cpp[CounterCreationDataCollection_CounterCreationDataCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationDataCollection/CPP/countercreationdatacollection_ctor.cpp#1)]
+[!code-csharp[CounterCreationDataCollection_CounterCreationDataCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationDataCollection/CS/countercreationdatacollection_ctor_countercreationdatacollection.cs#1)]
+[!code-vb[CounterCreationDataCollection_CounterCreationDataCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_CounterCreationDataCollection/VB/countercreationdatacollection_ctor.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -124,14 +124,14 @@
         <returns>The index of the new <see cref="T:System.Diagnostics.CounterCreationData" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.Add%2A> method to add a <xref:System.Diagnostics.CounterCreationData> object to a <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
- [!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
- [!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.Add%2A> method to add a <xref:System.Diagnostics.CounterCreationData> object to a <xref:System.Diagnostics.CounterCreationDataCollection>.  
+ 
+[!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
+[!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
+[!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -183,14 +183,14 @@
         <summary>Adds the specified collection of <see cref="T:System.Diagnostics.CounterCreationData" /> instances to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.AddRange%28System.Diagnostics.CounterCreationDataCollection%29> method overload to add <xref:System.Diagnostics.CounterCreationData> objects from one <xref:System.Diagnostics.CounterCreationDataCollection> to another <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[CounterCreationDataCollection_AddRange#2](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_AddRange/CPP/countercreationdatacollection_addrange.cpp#2)]
- [!code-csharp[CounterCreationDataCollection_AddRange#2](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_AddRange/CS/countercreationdatacollection_addrange.cs#2)]
- [!code-vb[CounterCreationDataCollection_AddRange#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_AddRange/VB/countercreationdatacollection_addrange.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.AddRange%28System.Diagnostics.CounterCreationDataCollection%29> method overload to add <xref:System.Diagnostics.CounterCreationData> objects from one <xref:System.Diagnostics.CounterCreationDataCollection> to another <xref:System.Diagnostics.CounterCreationDataCollection>.  
+ 
+[!code-cpp[CounterCreationDataCollection_AddRange#2](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_AddRange/CPP/countercreationdatacollection_addrange.cpp#2)]
+[!code-csharp[CounterCreationDataCollection_AddRange#2](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_AddRange/CS/countercreationdatacollection_addrange.cs#2)]
+[!code-vb[CounterCreationDataCollection_AddRange#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_AddRange/VB/countercreationdatacollection_addrange.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -219,14 +219,14 @@
           <see langword="true" /> if the specified <see cref="T:System.Diagnostics.CounterCreationData" /> object exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.Contains%2A> method to find a <xref:System.Diagnostics.CounterCreationData> object in a <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[CounterCreationDataCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_Contains/CPP/countercreationdatacollection_contains.cpp#1)]
- [!code-csharp[CounterCreationDataCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_Contains/CS/countercreationdatacollection_contains.cs#1)]
- [!code-vb[CounterCreationDataCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_Contains/VB/countercreationdatacollection_contains.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.Contains%2A> method to find a <xref:System.Diagnostics.CounterCreationData> object in a <xref:System.Diagnostics.CounterCreationDataCollection>.  
+ 
+[!code-cpp[CounterCreationDataCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_Contains/CPP/countercreationdatacollection_contains.cpp#1)]
+[!code-csharp[CounterCreationDataCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_Contains/CS/countercreationdatacollection_contains.cs#1)]
+[!code-vb[CounterCreationDataCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_Contains/VB/countercreationdatacollection_contains.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,14 +280,14 @@
         <returns>The zero-based index of the specified <see cref="T:System.Diagnostics.CounterCreationData" />, if it is found, in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example retrieves <xref:System.Diagnostics.CounterCreationData> entries from a <xref:System.Diagnostics.CounterCreationDataCollection> and uses the <xref:System.Diagnostics.CounterCreationDataCollection.IndexOf%2A> method to display their names and indexes.  
-  
- [!code-cpp[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/CPP/countercreationdatacollection_insert_indexof.cpp#1)]
- [!code-csharp[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/CS/countercreationdatacollection_insert_indexof.cs#1)]
- [!code-vb[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/VB/countercreationdatacollection_insert_indexof.vb#1)]  
-  
+The following example retrieves <xref:System.Diagnostics.CounterCreationData> entries from a <xref:System.Diagnostics.CounterCreationDataCollection> and uses the <xref:System.Diagnostics.CounterCreationDataCollection.IndexOf%2A> method to display their names and indexes.  
+ 
+[!code-cpp[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/CPP/countercreationdatacollection_insert_indexof.cpp#1)]
+[!code-csharp[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/CS/countercreationdatacollection_insert_indexof.cs#1)]
+[!code-vb[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/VB/countercreationdatacollection_insert_indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,14 +314,14 @@
         <summary>Inserts a <see cref="T:System.Diagnostics.CounterCreationData" /> object into the collection, at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.Insert%2A> method to insert a <xref:System.Diagnostics.CounterCreationData> object into a <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/CPP/countercreationdatacollection_insert_indexof.cpp#1)]
- [!code-csharp[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/CS/countercreationdatacollection_insert_indexof.cs#1)]
- [!code-vb[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/VB/countercreationdatacollection_insert_indexof.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.Insert%2A> method to insert a <xref:System.Diagnostics.CounterCreationData> object into a <xref:System.Diagnostics.CounterCreationDataCollection>.  
+ 
+[!code-cpp[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/CPP/countercreationdatacollection_insert_indexof.cpp#1)]
+[!code-csharp[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/CS/countercreationdatacollection_insert_indexof.cs#1)]
+[!code-vb[CounterCreationDataCollection_Insert_IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_Insert_IndexOf/VB/countercreationdatacollection_insert_indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -384,10 +384,10 @@
         <summary>Checks the specified object to determine whether it is a valid <see cref="T:System.Diagnostics.CounterCreationData" /> type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.CounterCreationDataCollection.OnValidate%2A> method determines whether the object specified in the `value` parameter is a <xref:System.Diagnostics.CounterCreationData> instance. If not, it throws an <xref:System.ArgumentException>.  
-  
+The <xref:System.Diagnostics.CounterCreationDataCollection.OnValidate%2A> method determines whether the object specified in the `value` parameter is a <xref:System.Diagnostics.CounterCreationData> instance. If not, it throws an <xref:System.ArgumentException>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -416,14 +416,14 @@
         <summary>Removes a <see cref="T:System.Diagnostics.CounterCreationData" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.Remove%2A> method to delete a <xref:System.Diagnostics.CounterCreationData> object from the <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[CounterCreationDataCollection_Contains#2](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_Contains/CPP/countercreationdatacollection_contains.cpp#2)]
- [!code-csharp[CounterCreationDataCollection_Contains#2](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_Contains/CS/countercreationdatacollection_contains.cs#2)]
- [!code-vb[CounterCreationDataCollection_Contains#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_Contains/VB/countercreationdatacollection_contains.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Diagnostics.CounterCreationDataCollection.Remove%2A> method to delete a <xref:System.Diagnostics.CounterCreationData> object from the <xref:System.Diagnostics.CounterCreationDataCollection>.  
+ 
+[!code-cpp[CounterCreationDataCollection_Contains#2](~/samples/snippets/cpp/VS_Snippets_CLR/CounterCreationDataCollection_Contains/CPP/countercreationdatacollection_contains.cpp#2)]
+[!code-csharp[CounterCreationDataCollection_Contains#2](~/samples/snippets/csharp/VS_Snippets_CLR/CounterCreationDataCollection_Contains/CS/countercreationdatacollection_contains.cs#2)]
+[!code-vb[CounterCreationDataCollection_Contains#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CounterCreationDataCollection_Contains/VB/countercreationdatacollection_contains.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

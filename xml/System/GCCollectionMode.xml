@@ -25,18 +25,18 @@
     <summary>Specifies the behavior for a forced garbage collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.GC.Collect%2A?displayProperty=fullName> method overload to specify the <xref:System.GCCollectionMode> value.  
+Use the <xref:System.GC.Collect%2A?displayProperty=fullName> method overload to specify the <xref:System.GCCollectionMode> value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example forces a garbage collection for generation 2 objects with the Optimized setting.  
-  
- [!code-csharp[System.GC.GCCollectionMode#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.GCCollectionMode/cs/Program.cs#1)]
- [!code-vb[System.GC.GCCollectionMode#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.GCCollectionMode/vb/program.vb#1)]  
-  
+The following example forces a garbage collection for generation 2 objects with the Optimized setting.  
+ 
+[!code-csharp[System.GC.GCCollectionMode#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.GCCollectionMode/cs/Program.cs#1)]
+[!code-vb[System.GC.GCCollectionMode#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.GCCollectionMode/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

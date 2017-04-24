@@ -14,32 +14,32 @@
     <summary>Represents the configuration section for role-service settings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.ScriptingRoleServiceSection> class enables you to programmatically access and modify the `roleService` element of the configuration section for using AJAX functionality in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)].  
+The <xref:System.Web.Configuration.ScriptingRoleServiceSection> class enables you to programmatically access and modify the `roleService` element of the configuration section for using AJAX functionality in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)].  
+ 
+The role service is typically used to retrieve role information for the user who is logged on by using an asynchronous Web service call.  
+ 
   
- The role service is typically used to retrieve role information for the user who is logged on by using an asynchronous Web service call.  
-  
-   
-  
+ 
 ## Examples  
- The following configuration file excerpt shows how to declaratively specify values for the <xref:System.Web.Configuration.ScriptingRoleServiceSection.Enabled%2A> property of the <xref:System.Web.Configuration.ScriptingRoleServiceSection> class.  
-  
+The following configuration file excerpt shows how to declaratively specify values for the <xref:System.Web.Configuration.ScriptingRoleServiceSection.Enabled%2A> property of the <xref:System.Web.Configuration.ScriptingRoleServiceSection> class.  
+ 
 ```  
 <system.web.extensions>  
-  <scripting>  
-    <webServices>  
-      <roleService enabled="true" />  
-    </webServices>  
-  </scripting>  
+ <scripting>  
+   <webServices>  
+     <roleService enabled="true" />  
+   </webServices>  
+ </scripting>  
 </system.web.extensions>  
 ```  
-  
- The following example shows how to access the <xref:System.Web.Configuration.ScriptingRoleServiceSection> element programmatically.  
-  
- [!code-csharp[System.Web.Configuration#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Configuration/CS/App_Code/ConfigSectionSample.cs#4)]
- [!code-vb[System.Web.Configuration#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Configuration/VB/App_Code/ConfigSectionSample.vb#4)]  
-  
+ 
+The following example shows how to access the <xref:System.Web.Configuration.ScriptingRoleServiceSection> element programmatically.  
+ 
+[!code-csharp[System.Web.Configuration#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Configuration/CS/App_Code/ConfigSectionSample.cs#4)]
+[!code-vb[System.Web.Configuration#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Configuration/VB/App_Code/ConfigSectionSample.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

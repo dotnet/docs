@@ -22,24 +22,24 @@
     <summary>Represents a <see langword="try" /> block with any number of <see langword="catch" /> clauses and, optionally, a <see langword="finally" /> block.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeTryCatchFinallyStatement> can be used to represent a `try/``catch` block of code.  
-  
- The <xref:System.CodeDom.CodeTryCatchFinallyStatement.TryStatements%2A> property contains the statements to execute within a `try` block. The <xref:System.CodeDom.CodeTryCatchFinallyStatement.CatchClauses%2A> property contains the `catch` clauses to handle caught exceptions. The <xref:System.CodeDom.CodeTryCatchFinallyStatement.FinallyStatements%2A> property contains the statements to execute within a `finally` block.  
-  
+<xref:System.CodeDom.CodeTryCatchFinallyStatement> can be used to represent a `try/``catch` block of code.  
+ 
+The <xref:System.CodeDom.CodeTryCatchFinallyStatement.TryStatements%2A> property contains the statements to execute within a `try` block. The <xref:System.CodeDom.CodeTryCatchFinallyStatement.CatchClauses%2A> property contains the `catch` clauses to handle caught exceptions. The <xref:System.CodeDom.CodeTryCatchFinallyStatement.FinallyStatements%2A> property contains the statements to execute within a `finally` block.  
+ 
 > [!NOTE]
 >  Not all languages support `try/catch` blocks. Call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport?displayProperty=fullName> flag to determine whether a code generator supports `try/catch` blocks.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code demonstrates use of a <xref:System.CodeDom.CodeTryCatchFinallyStatement> to define a try...catch...finally statement for exception handling.  
-  
- [!code-cpp[CodeTryCatchFinallyExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTryCatchFinallyExample/CPP/codetrycatchfinallyexample.cpp#2)]
- [!code-csharp[CodeTryCatchFinallyExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTryCatchFinallyExample/CS/codetrycatchfinallyexample.cs#2)]
- [!code-vb[CodeTryCatchFinallyExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTryCatchFinallyExample/VB/codetrycatchfinallyexample.vb#2)]  
-  
+The following example code demonstrates use of a <xref:System.CodeDom.CodeTryCatchFinallyStatement> to define a try...catch...finally statement for exception handling.  
+ 
+[!code-cpp[CodeTryCatchFinallyExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTryCatchFinallyExample/CPP/codetrycatchfinallyexample.cpp#2)]
+[!code-csharp[CodeTryCatchFinallyExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTryCatchFinallyExample/CS/codetrycatchfinallyexample.cs#2)]
+[!code-vb[CodeTryCatchFinallyExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTryCatchFinallyExample/VB/codetrycatchfinallyexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

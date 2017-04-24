@@ -19,10 +19,10 @@
     <summary>Implementation of a host service that mediates access from the build to the host.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See also <xref:Microsoft.Build.Utilities.Task.HostObject%2A>.  
-  
+See also <xref:Microsoft.Build.Utilities.Task.HostObject%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,10 +112,10 @@
         <summary>Updates the host services table when a project is named or renamed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A project is named when it is given a new full path and the old path is null.  
-  
+A project is named when it is given a new full path and the old path is null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <summary>Register a host service for the given task/target pair.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overwrites any existing host service.  
-  
+Overwrites any existing host service.  
+ 
  ]]></format>
         </remarks>
       </Docs>

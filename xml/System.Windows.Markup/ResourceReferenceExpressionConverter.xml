@@ -14,10 +14,10 @@
     <summary>Converts instances of <see langword="ResourceReferenceExpression" /> to and from other types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `ResourceReferenceExpression` is an internal class, so your code cannot obtain instances of the class to convert.  
-  
+`ResourceReferenceExpression` is an internal class, so your code cannot obtain instances of the class to convert.  
+ 
 <a name="xamlTextUsage_ResourceReferenceExpressionConverter"></a>   
 ## XAML Text Usage  
  ]]></format>

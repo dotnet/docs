@@ -19,23 +19,23 @@
     <summary>Encapsulates the font properties of text. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo> class to encapsulate the font properties of text. You can specify the font name and font size. You can also specify whether the style of the font is bold, italic, overlined, strikethrough, or underlined.  
-  
- This class is commonly used in a property for a class that requires font information, such as the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property of the <xref:System.Web.UI.WebControls.WebControl> class.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo> class to encapsulate the font properties of text. You can specify the font name and font size. You can also specify whether the style of the font is bold, italic, overlined, strikethrough, or underlined.  
+ 
+This class is commonly used in a property for a class that requires font information, such as the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property of the <xref:System.Web.UI.WebControls.WebControl> class.  
+ 
 > [!NOTE]
 >  This class does not have a public constructor. A new instance of the class cannot be created directly.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to modify the properties of a <xref:System.Web.UI.WebControls.FontInfo> object programmatically to specify the font properties for a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
-  
+The following code example demonstrates how to modify the properties of a <xref:System.Web.UI.WebControls.FontInfo> object programmatically to specify the font properties for a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,20 +66,20 @@
           <see langword="true" /> if the font is bold; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.Bold%2A> property to specify or determine whether the font is bold.  
+Use the <xref:System.Web.UI.WebControls.FontInfo.Bold%2A> property to specify or determine whether the font is bold.  
+ 
+The value of this property is stored in view state.  
+ 
   
- The value of this property is stored in view state.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Bold%2A> property to programmatically specify a bold font for the text in a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Bold%2A> property to programmatically specify a bold font for the text in a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,26 +101,26 @@
         <summary>Resets all <see cref="T:System.Web.UI.WebControls.FontInfo" /> properties to the unset state and clears the view state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.WebControls.FontInfo> properties are unset when the <xref:System.Web.UI.WebControls.FontInfo> object is created. When a property is first set, the value is added to view state. The <xref:System.Web.UI.WebControls.FontInfo.ClearDefaults%2A> method is used to set all the <xref:System.Web.UI.WebControls.FontInfo> properties to the unset state and remove any entries in view state. The following properties are reset:  
-  
+<xref:System.Web.UI.WebControls.FontInfo> properties are unset when the <xref:System.Web.UI.WebControls.FontInfo> object is created. When a property is first set, the value is added to view state. The <xref:System.Web.UI.WebControls.FontInfo.ClearDefaults%2A> method is used to set all the <xref:System.Web.UI.WebControls.FontInfo> properties to the unset state and remove any entries in view state. The following properties are reset:  
+ 
 -   <xref:System.Web.UI.WebControls.FontInfo.Names%2A>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.FontInfo.Name%2A>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.FontInfo.Size%2A>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.FontInfo.Bold%2A>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.FontInfo.Italic%2A>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.FontInfo.Underline%2A>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.FontInfo.Overline%2A>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,23 +145,23 @@
         <summary>Duplicates the font properties of the specified <see cref="T:System.Web.UI.WebControls.FontInfo" /> into the instance of the <see cref="T:System.Web.UI.WebControls.FontInfo" /> class that this method is called from.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%2A> method to duplicate the font properties of the specified <xref:System.Web.UI.WebControls.FontInfo> into the instance of the <xref:System.Web.UI.WebControls.FontInfo> class that this method is called from.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%2A> method to duplicate the font properties of the specified <xref:System.Web.UI.WebControls.FontInfo> into the instance of the <xref:System.Web.UI.WebControls.FontInfo> class that this method is called from.  
+ 
 > [!CAUTION]
 >  All properties in the current instance of the <xref:System.Web.UI.WebControls.FontInfo> class will be replaced by the associated property in the `f` parameter.  
+ 
+When a style is registered using <xref:System.Web.UI.IStyleSheet.RegisterStyle%2A>, and then copied using <xref:System.Web.UI.WebControls.Style.CopyFrom%28System.Web.UI.WebControls.Style%29?displayProperty=fullName>, only the <xref:System.Web.UI.WebControls.Style.CssClass%2A> property is copied to the destination, not all the individual properties. Therefore, if you are using <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%28System.Web.UI.WebControls.FontInfo%29?displayProperty=fullName> to copy font information from the <xref:System.Web.UI.WebControls.Style.Font%2A> property of a <xref:System.Web.UI.WebControls.Style> that is registered, you will not get the individual settings of the font from the style.  
+ 
   
- When a style is registered using <xref:System.Web.UI.IStyleSheet.RegisterStyle%2A>, and then copied using <xref:System.Web.UI.WebControls.Style.CopyFrom%28System.Web.UI.WebControls.Style%29?displayProperty=fullName>, only the <xref:System.Web.UI.WebControls.Style.CssClass%2A> property is copied to the destination, not all the individual properties. Therefore, if you are using <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%28System.Web.UI.WebControls.FontInfo%29?displayProperty=fullName> to copy font information from the <xref:System.Web.UI.WebControls.Style.Font%2A> property of a <xref:System.Web.UI.WebControls.Style> that is registered, you will not get the individual settings of the font from the style.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%2A> method to duplicate the font properties of a <xref:System.Web.UI.WebControls.FontInfo> into the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property of a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfoCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfoCopyFrom/CS/fontinfocopycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfoCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfoCopyFrom/VB/fontinfocopyvb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%2A> method to duplicate the font properties of a <xref:System.Web.UI.WebControls.FontInfo> into the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property of a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfoCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfoCopyFrom/CS/fontinfocopycs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfoCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfoCopyFrom/VB/fontinfocopyvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,20 +192,20 @@
           <see langword="true" /> if the font is italic; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.Italic%2A> property to specify or determine whether the font is italic.  
+Use the <xref:System.Web.UI.WebControls.FontInfo.Italic%2A> property to specify or determine whether the font is italic.  
+ 
+The value of this property is stored in view state.  
+ 
   
- The value of this property is stored in view state.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Italic%2A> property to programmatically specify an italic font for the text in a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Italic%2A> property to programmatically specify an italic font for the text in a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,21 +230,21 @@
         <summary>Combines the font properties of the specified <see cref="T:System.Web.UI.WebControls.FontInfo" /> with the instance of the <see cref="T:System.Web.UI.WebControls.FontInfo" /> class that this method is called from.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.MergeWith%2A> method to combine the font properties of the specified <xref:System.Web.UI.WebControls.FontInfo> with the instance of the <xref:System.Web.UI.WebControls.FontInfo> class that this method is called from.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo.MergeWith%2A> method to combine the font properties of the specified <xref:System.Web.UI.WebControls.FontInfo> with the instance of the <xref:System.Web.UI.WebControls.FontInfo> class that this method is called from.  
+ 
 > [!NOTE]
 >  This method joins the properties of the two <xref:System.Web.UI.WebControls.FontInfo> objects by setting each property that is not set in the current instance of the <xref:System.Web.UI.WebControls.FontInfo> class with the value in the corresponding property of the `f` parameter. Only properties that have not been set will be replaced. If a property in the `f` parameter is not set, it will not replace the corresponding property in the current instance of the <xref:System.Web.UI.WebControls.FontInfo> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.MergeWith%2A> method to combine the font properties of a <xref:System.Web.UI.WebControls.FontInfo> into the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property of a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfoCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfoCopyFrom/CS/fontinfocopycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfoCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfoCopyFrom/VB/fontinfocopyvb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.MergeWith%2A> method to combine the font properties of a <xref:System.Web.UI.WebControls.FontInfo> into the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property of a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfoCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfoCopyFrom/CS/fontinfocopycs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfoCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfoCopyFrom/VB/fontinfocopyvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,21 +286,21 @@
         <value>The primary font name. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property to specify or determine the primary font name. The primary font name determines the font that is used to display text in the control associated with the <xref:System.Web.UI.WebControls.FontInfo>.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property to specify or determine the primary font name. The primary font name determines the font that is used to display text in the control associated with the <xref:System.Web.UI.WebControls.FontInfo>.  
+ 
 > [!NOTE]
 >  When you set the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property, the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property is automatically updated with the first item in the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property. If you set the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property, the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property is automatically updated with a single element array containing the value of the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property to programmatically specify the font name for a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property to programmatically specify the font name for a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified font name is null.</exception>
@@ -337,17 +337,17 @@
         <value>An ordered array of font names.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property to specify or determine an ordered array of font names for a <xref:System.Web.UI.WebControls.FontInfo>. The <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property is commonly used to store a list of available font names.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property to specify or determine an ordered array of font names for a <xref:System.Web.UI.WebControls.FontInfo>. The <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property is commonly used to store a list of available font names.  
+ 
 > [!NOTE]
 >  When you set the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property, the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property is automatically updated with the first item in the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property. If you set the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property, the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property is automatically updated with a single element array containing the value of the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property.  
-  
- To specify the font name for the <xref:System.Web.UI.WebControls.FontInfo> using the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> array, set the first element in the array to the font name you want to use. Since the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property is automatically updated when the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property is set, you need to manipulate the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> array to rearrange the order of the items in the array instead of setting the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property directly.  
-  
- The value of this property is stored in view state.  
-  
+ 
+To specify the font name for the <xref:System.Web.UI.WebControls.FontInfo> using the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> array, set the first element in the array to the font name you want to use. Since the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property is automatically updated when the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property is set, you need to manipulate the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> array to rearrange the order of the items in the array instead of setting the <xref:System.Web.UI.WebControls.FontInfo.Name%2A> property directly.  
+ 
+The value of this property is stored in view state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,23 +378,23 @@
           <see langword="true" /> if the font is overlined; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.Overline%2A> property to specify or determine whether the font contains a line above the text.  
-  
- The value of this property is stored in view state.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo.Overline%2A> property to specify or determine whether the font contains a line above the text.  
+ 
+The value of this property is stored in view state.  
+ 
 > [!NOTE]
 >  The font underline behavior for links generated by the <xref:System.Web.UI.WebControls.LinkButton>, <xref:System.Web.UI.WebControls.HyperLink>, and <xref:System.Web.UI.HtmlControls.HtmlAnchor> controls is affected by setting the <xref:System.Web.UI.WebControls.FontInfo.Overline%2A> property of the <xref:System.Web.UI.WebControls.FontInfo> for the control. If the <xref:System.Web.UI.WebControls.FontInfo.Overline%2A> property is set, regardless of value its value, you must set the <xref:System.Web.UI.WebControls.FontInfo.Underline%2A> property explicitly if you want the link to be underlined.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Overline%2A> property to programmatically specify an overlined font for the text in a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Overline%2A> property to programmatically specify an overlined font for the text in a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,13 +418,13 @@
           <see langword="true" /> if the <see cref="P:System.Web.UI.WebControls.FontInfo.Names" /> property has changed from its default value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.ShouldSerializeNames%2A> method to determine whether the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property has changed from its default value. This method is commonly used if you are either creating a designer for the <xref:System.Web.UI.WebControls.FontInfo> class or creating your own control incorporating the <xref:System.Web.UI.WebControls.FontInfo> class.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo.ShouldSerializeNames%2A> method to determine whether the <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property has changed from its default value. This method is commonly used if you are either creating a designer for the <xref:System.Web.UI.WebControls.FontInfo> class or creating your own control incorporating the <xref:System.Web.UI.WebControls.FontInfo> class.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.FontInfo.Names%2A> property must have at least one entry to be serialized.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -457,20 +457,20 @@
         <value>A <see cref="T:System.Web.UI.WebControls.FontUnit" /> that represents the font size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property to specify the size of the font.  
+Use the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property to specify the size of the font.  
+ 
+The value of this property is stored in view state.  
+ 
   
- The value of this property is stored in view state.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property to programmatically change the size of the font for a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property to programmatically change the size of the font for a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified font size is negative.</exception>
@@ -502,23 +502,23 @@
           <see langword="true" /> if the font is struck through; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A> property to specify or determine whether the font contains a line through the text.  
-  
- The value of this property is stored in view state.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A> property to specify or determine whether the font contains a line through the text.  
+ 
+The value of this property is stored in view state.  
+ 
 > [!NOTE]
 >  The font underline behavior for links generated by the <xref:System.Web.UI.WebControls.LinkButton>, <xref:System.Web.UI.WebControls.HyperLink>, and <xref:System.Web.UI.HtmlControls.HtmlAnchor> controls is affected by setting the <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A> property of the <xref:System.Web.UI.WebControls.FontInfo> for the control. If the <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A> property is set, regardless of its value, you must set the <xref:System.Web.UI.WebControls.FontInfo.Underline%2A> property explicitly if you want the link to be underlined.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A> property to programmatically specify a strikethrough font for a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A> property to programmatically specify a strikethrough font for a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -541,19 +541,19 @@
         <returns>A string that contains the font name and size for an instance of the <see cref="T:System.Web.UI.WebControls.FontInfo" /> class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.ToString%2A> method to create a string that contains the font name and size, separated by a comma, for an instance of the <xref:System.Web.UI.WebControls.FontInfo> class.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo.ToString%2A> method to create a string that contains the font name and size, separated by a comma, for an instance of the <xref:System.Web.UI.WebControls.FontInfo> class.  
+ 
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property is not set, only the font name is returned.  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
-  
+<!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -584,23 +584,23 @@
           <see langword="true" /> if the font is underlined; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontInfo.Underline%2A> property to specify or determine whether the font contains a line under the text.  
-  
- The value of this property is stored in view state.  
-  
+Use the <xref:System.Web.UI.WebControls.FontInfo.Underline%2A> property to specify or determine whether the font contains a line under the text.  
+ 
+The value of this property is stored in view state.  
+ 
 > [!NOTE]
 >  The font underline behavior for links generated by the <xref:System.Web.UI.WebControls.LinkButton>, <xref:System.Web.UI.WebControls.HyperLink>, and <xref:System.Web.UI.HtmlControls.HtmlAnchor> controls is affected by setting the <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A> and the <xref:System.Web.UI.WebControls.FontInfo.Overline%2A> properties of the <xref:System.Web.UI.WebControls.FontInfo> for the control. If the <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A> or the <xref:System.Web.UI.WebControls.FontInfo.Overline%2A> properties are set, regardless of their value, you must set the <xref:System.Web.UI.WebControls.FontInfo.Underline%2A> property explicitly if you want the link to be underlined.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Underline%2A> property to programmatically specify an underlined font for a <xref:System.Web.UI.WebControls.Label> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FontInfo.Underline%2A> property to programmatically specify an underlined font for a <xref:System.Web.UI.WebControls.Label> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[FontInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FontInfo/CS/fontinfocs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[FontInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FontInfo/VB/fontinfovb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

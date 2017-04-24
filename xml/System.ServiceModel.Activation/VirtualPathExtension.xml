@@ -18,24 +18,24 @@
     <summary>Contains the service's virtual path when the service is hosted in Internet Information Services (IIS) or Windows Process Activation Service (WAS).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This extension is present only for services hosted in IIS or WAS. Services can determine whether they are hosted in IIS or WAS by retrieving this extension from their <xref:System.ServiceModel.ServiceHostBase>, as shown in the following example.  
+This extension is present only for services hosted in IIS or WAS. Services can determine whether they are hosted in IIS or WAS by retrieving this extension from their <xref:System.ServiceModel.ServiceHostBase>, as shown in the following example.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to recover the <xref:System.ServiceModel.Activation.VirtualPathExtension> from the service host and return a value that it is hosted in IIS or WAS.  
-  
+The following example shows how to recover the <xref:System.ServiceModel.Activation.VirtualPathExtension> from the service host and return a value that it is hosted in IIS or WAS.  
+ 
 ```csharp  
 bool isHosted = false;  
 ServiceHostBase host = OperationContext.Current.Host;  
 VirtualPathExtension vpe = host.Extentions.Find<VirtualPathExtension>();  
-  
+ 
 if( vpe != null )  
 Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPath);  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
         <summary>This method is provided to support the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
-  
+This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,10 +106,10 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
         <summary>This method is provided to support the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
-  
+This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
+ 
  ]]></format>
         </remarks>
       </Docs>

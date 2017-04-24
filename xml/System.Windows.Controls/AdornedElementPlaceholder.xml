@@ -23,36 +23,36 @@
     <summary>Represents the element used in a <see cref="T:System.Windows.Controls.ControlTemplate" /> to specify where a decorated control is placed relative to other elements in the <see cref="T:System.Windows.Controls.ControlTemplate" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this class only if you are creating a <xref:System.Windows.Controls.ControlTemplate> that serves as a custom validation <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> to provide visual feedback when the user input is not valid.  
-  
- For example, you might want a red exclamation point to appear next to a text box when the input is not valid, as in the following illustration.  
-  
- ![Data binding validation error](~/add/media/databindingdemo-validation.PNG "Data binding validation error")  
-  
+Use this class only if you are creating a <xref:System.Windows.Controls.ControlTemplate> that serves as a custom validation <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> to provide visual feedback when the user input is not valid.  
+ 
+For example, you might want a red exclamation point to appear next to a text box when the input is not valid, as in the following illustration.  
+ 
+![Data binding validation error](~/add/media/databindingdemo-validation.PNG "Data binding validation error")  
+ 
 <a name="xamlObjectElementUsage_AdornedElementPlaceholder"></a>   
 ## XAML Object Element Usage  
-  
+ 
 ```  
 <AdornedElementPlaceholder/>  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.Windows.Controls.ControlTemplate> with <xref:System.Windows.Controls.AdornedElementPlaceholder> to create the adorned <xref:System.Windows.Controls.TextBox> in the preceding illustration.  
-  
- [!code-xml[DataBindingLab#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#1)]  
-  
- The <xref:System.Windows.Controls.AdornedElementPlaceholder> element specifies where the control being adorned (the <xref:System.Windows.Controls.TextBox> in this case) should be placed.  
-  
- You can then specify your template as the <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> for your <xref:System.Windows.Controls.TextBox>, as in the following example.  
-  
- [!code-xml[DataBindingLab#CustomValidation](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#customvalidation)]  
-  
- For the complete sample, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703) or the Data Validation section in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+The following example shows how to use a <xref:System.Windows.Controls.ControlTemplate> with <xref:System.Windows.Controls.AdornedElementPlaceholder> to create the adorned <xref:System.Windows.Controls.TextBox> in the preceding illustration.  
+ 
+[!code-xml[DataBindingLab#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#1)]  
+ 
+The <xref:System.Windows.Controls.AdornedElementPlaceholder> element specifies where the control being adorned (the <xref:System.Windows.Controls.TextBox> in this case) should be placed.  
+ 
+You can then specify your template as the <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> for your <xref:System.Windows.Controls.TextBox>, as in the following example.  
+ 
+[!code-xml[DataBindingLab#CustomValidation](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#customvalidation)]  
+ 
+For the complete sample, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703) or the Data Validation section in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -196,10 +196,10 @@
         <returns>The desired size of this <see cref="T:System.Windows.Controls.AdornedElementPlaceholder" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method measures only the first visual child object. The returned value is also based on the size of the element for which this <xref:System.Windows.Controls.AdornedElementPlaceholder> is a placeholder for.  
-  
+This method measures only the first visual child object. The returned value is also based on the size of the element for which this <xref:System.Windows.Controls.AdornedElementPlaceholder> is a placeholder for.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.AdornedElementPlaceholder" /> object is not part of a template.</exception>

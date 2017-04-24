@@ -19,12 +19,12 @@
     <summary>Serves as the base class for classes that provide helper methods for processing Web requests.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpServerUtilityBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpServerUtility> class. The <xref:System.Web.HttpServerUtilityBase> class enables you to create derived classes that are like the <xref:System.Web.HttpServerUtility> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
-  
- The <xref:System.Web.HttpServerUtilityWrapper> class derives from the <xref:System.Web.HttpServerUtilityBase> class. The <xref:System.Web.HttpServerUtilityWrapper> class serves as a wrapper for the <xref:System.Web.HttpServerUtility> class. At run time, you typically use an instance of the <xref:System.Web.HttpServerUtilityWrapper> class to call members of the <xref:System.Web.HttpServerUtility> object.  
-  
+The <xref:System.Web.HttpServerUtilityBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpServerUtility> class. The <xref:System.Web.HttpServerUtilityBase> class enables you to create derived classes that are like the <xref:System.Web.HttpServerUtility> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
+ 
+The <xref:System.Web.HttpServerUtilityWrapper> class derives from the <xref:System.Web.HttpServerUtilityBase> class. The <xref:System.Web.HttpServerUtilityWrapper> class serves as a wrapper for the <xref:System.Web.HttpServerUtility> class. At run time, you typically use an instance of the <xref:System.Web.HttpServerUtilityWrapper> class to call members of the <xref:System.Web.HttpServerUtility> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -201,10 +201,10 @@
         <summary>When overridden in a derived class, executes the handler for the specified virtual path in the context of the current process, using a <see cref="T:System.IO.TextWriter" /> instance to capture output from the executed handler.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `writer` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.Execute%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `writer` object. For an example, see <xref:System.Web.HttpServerUtility.Execute%2A>.  
-  
+The `writer` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.Execute%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `writer` object. For an example, see <xref:System.Web.HttpServerUtility.Execute%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -235,10 +235,10 @@
         <summary>When overridden in a derived class, executes the handler for the specified virtual path in the context of the current request, using a <see cref="T:System.IO.TextWriter" /> instance to capture output from the page and a value that indicates whether to clear the <see cref="P:System.Web.HttpRequestBase.QueryString" /> and <see cref="P:System.Web.HttpRequestBase.Form" /> collections.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `writer` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.Execute%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `writer` object. For an example, see <xref:System.Web.HttpServerUtility.Execute%2A>.  
-  
+The `writer` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.Execute%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `writer` object. For an example, see <xref:System.Web.HttpServerUtility.Execute%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -269,10 +269,10 @@
         <summary>When overridden in a derived class, executes the specified handler in the context of the current process, using a <see cref="T:System.IO.TextWriter" /> instance to capture output from the executed handler and a value that specifies whether to clear the <see cref="P:System.Web.HttpRequestBase.QueryString" /> and <see cref="P:System.Web.HttpRequestBase.Form" /> collections.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `writer` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.Execute%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `writer` object. For an example, see <xref:System.Web.HttpServerUtility.Execute%2A>.  
-  
+The `writer` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.Execute%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `writer` object. For an example, see <xref:System.Web.HttpServerUtility.Execute%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -343,10 +343,10 @@
         <summary>When overridden in a derived class, decodes an HTML-encoded string and returns the results in a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.HtmlDecode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.HtmlDecode%2A>.  
-  
+The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.HtmlDecode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.HtmlDecode%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -397,10 +397,10 @@
         <summary>When overridden in a derived class, HTML-encodes a string and sends the resulting output to an output stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.HtmlEncode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.HtmlEncode%2A>.  
-  
+The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.HtmlEncode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.HtmlEncode%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -691,10 +691,10 @@
         <summary>When overridden in a derived class, decodes a URL-encoded string and sends the resulting output to a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.UrlDecode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.HtmlDecode%2A>.  
-  
+The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.UrlDecode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.HtmlDecode%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
@@ -745,10 +745,10 @@
         <summary>When overridden in a derived class, URL-encodes a string and sends the resulting output to a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.UrlEncode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.UrlEncode%2A>.  
-  
+The `output` parameter is passed by reference to the <xref:System.Web.HttpServerUtilityBase.UrlEncode%2A> method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.UrlEncode%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>

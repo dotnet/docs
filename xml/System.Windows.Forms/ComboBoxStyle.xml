@@ -13,19 +13,19 @@
     <summary>Specifies the <see cref="T:System.Windows.Forms.ComboBox" /> style.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> property specifies whether the list is always displayed or whether the list is displayed in a drop-down. The <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> property also specifies whether the text portion can be edited.  
+The <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> property specifies whether the list is always displayed or whether the list is displayed in a drop-down. The <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> property also specifies whether the text portion can be edited.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A?displayProperty=fullName> property to a <xref:System.Windows.Forms.ComboBoxStyle> value.  
-  
- [!code-cpp[System.Windows.Forms.ComboBoxFindString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.ComboBoxFindString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ComboBoxFindString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A?displayProperty=fullName> property to a <xref:System.Windows.Forms.ComboBoxStyle> value.  
+ 
+[!code-cpp[System.Windows.Forms.ComboBoxFindString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.ComboBoxFindString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ComboBoxFindString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

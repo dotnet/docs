@@ -18,17 +18,17 @@
     <summary>Provides the implementation for a client formatter sink that uses the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The function of the formatter sink is to generate the necessary headers and serialize the message to the stream. After reaching the formatter sink, the <xref:System.Runtime.Remoting.Messaging.IMessage> is forwarded to all sinks in the channel sink chain through the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> or <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A> calls. At this stage the message has already been serialized and is provided as information only. Sinks that need to create or modify the message need to be placed in the sink chain before the formatter. This can be achieved by implementing both the <xref:System.Runtime.Remoting.Messaging.IMessageSink> and <xref:System.Runtime.Remoting.Channels.IClientChannelSink> interfaces. The formatter sink can be placed in the sink chain later.  
-  
+The function of the formatter sink is to generate the necessary headers and serialize the message to the stream. After reaching the formatter sink, the <xref:System.Runtime.Remoting.Messaging.IMessage> is forwarded to all sinks in the channel sink chain through the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> or <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A> calls. At this stage the message has already been serialized and is provided as information only. Sinks that need to create or modify the message need to be placed in the sink chain before the formatter. This can be achieved by implementing both the <xref:System.Runtime.Remoting.Messaging.IMessageSink> and <xref:System.Runtime.Remoting.Channels.IClientChannelSink> interfaces. The formatter sink can be placed in the sink chain later.  
+ 
 |Property|Description|  
 |--------------|-----------------|  
 |`includeVersions`|Specifies whether the formatter will include versioning information. Values are `true` or `false`.|  
-  
+ 
 > [!IMPORTANT]
 >  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

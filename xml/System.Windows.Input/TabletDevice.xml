@@ -14,13 +14,13 @@
     <summary>Represents the digitizer device of a Tablet PC.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to get the properties that a <xref:System.Windows.Input.TabletDevice> supports.  
-  
- [!code-csharp[PacketSpy#27](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#27)]
- [!code-vb[PacketSpy#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#27)]  
-  
+The following example demonstrates how to get the properties that a <xref:System.Windows.Input.TabletDevice> supports.  
+ 
+[!code-csharp[PacketSpy#27](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#27)]
+[!code-vb[PacketSpy#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#27)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,13 +47,13 @@
         <value>The <see cref="T:System.Windows.PresentationSource" /> that reports current input for the tablet device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.ActiveSource%2A> property.  
-  
- [!code-csharp[HwCaps#4](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#4)]
- [!code-vb[HwCaps#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#4)]  
-  
+The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.ActiveSource%2A> property.  
+ 
+[!code-csharp[HwCaps#4](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#4)]
+[!code-vb[HwCaps#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">Required for applications to read this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -76,13 +76,13 @@
         <value>The unique identifier for the tablet device on the system.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.Id%2A> property.  
-  
- [!code-csharp[HwCaps#8](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#8)]
- [!code-vb[HwCaps#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#8)]  
-  
+The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.Id%2A> property.  
+ 
+[!code-csharp[HwCaps#8](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#8)]
+[!code-vb[HwCaps#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,13 +104,13 @@
         <value>The name of the tablet device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.Name%2A> property.  
-  
- [!code-csharp[HwCaps#9](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#9)]
- [!code-vb[HwCaps#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#9)]  
-  
+The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.Name%2A> property.  
+ 
+[!code-csharp[HwCaps#9](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#9)]
+[!code-vb[HwCaps#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,18 +132,18 @@
         <value>The product identifier for the tablet device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The manufacturer of the tablet device is responsible for adding this string. The return value is empty if the tablet device does not have an identifier.  
+The manufacturer of the tablet device is responsible for adding this string. The return value is empty if the tablet device does not have an identifier.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.ProductId%2A> property.  
-  
- [!code-csharp[HwCaps#10](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#10)]
- [!code-vb[HwCaps#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#10)]  
-  
+The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.ProductId%2A> property.  
+ 
+[!code-csharp[HwCaps#10](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#10)]
+[!code-vb[HwCaps#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,13 +165,13 @@
         <value>The <see cref="T:System.Windows.Input.StylusDeviceCollection" /> associated with the tablet device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.StylusDevices%2A> property.  
-  
- [!code-csharp[HwCaps#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#11)]
- [!code-vb[HwCaps#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#11)]  
-  
+The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.StylusDevices%2A> property.  
+ 
+[!code-csharp[HwCaps#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#11)]
+[!code-vb[HwCaps#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,13 +193,13 @@
         <value>A collection of <see cref="T:System.Windows.Input.StylusPointProperty" /> objects that the <see cref="T:System.Windows.Input.TabletDevice" /> supports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to get the properties that a <xref:System.Windows.Input.TabletDevice> supports.  
-  
- [!code-csharp[PacketSpy#27](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#27)]
- [!code-vb[PacketSpy#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#27)]  
-  
+The following example demonstrates how to get the properties that a <xref:System.Windows.Input.TabletDevice> supports.  
+ 
+[!code-csharp[PacketSpy#27](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#27)]
+[!code-vb[PacketSpy#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,13 +221,13 @@
         <value>The <see cref="T:System.Windows.Input.TabletHardwareCapabilities" /> for the tablet device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.TabletHardwareCapabilities%2A> property.  
-  
- [!code-csharp[HwCaps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#1)]
- [!code-vb[HwCaps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#1)]  
-  
+The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.TabletHardwareCapabilities%2A> property.  
+ 
+[!code-csharp[HwCaps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#1)]
+[!code-vb[HwCaps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,13 +249,13 @@
         <value>The <see cref="T:System.Windows.IInputElement" /> that provides basic input processing for the tablet device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.Target%2A> property.  
-  
- [!code-csharp[HwCaps#13](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#13)]
- [!code-vb[HwCaps#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#13)]  
-  
+The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.Target%2A> property.  
+ 
+[!code-csharp[HwCaps#13](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#13)]
+[!code-vb[HwCaps#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,13 +278,13 @@
         <returns>A <see cref="T:System.String" /> that contains the name of the <see cref="T:System.Windows.Input.TabletDevice" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice> method.  
-  
- [!code-csharp[HwCaps#14](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#14)]
- [!code-vb[HwCaps#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#14)]  
-  
+The following code example demonstrates the <xref:System.Windows.Input.TabletDevice> method.  
+ 
+[!code-csharp[HwCaps#14](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#14)]
+[!code-vb[HwCaps#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,13 +306,13 @@
         <value>The <see cref="T:System.Windows.Input.TabletDeviceType" /> of the tablet device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.Type%2A> property.  
-  
- [!code-csharp[HwCaps#2](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#2)]
- [!code-vb[HwCaps#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#2)]  
-  
+The following code example demonstrates the <xref:System.Windows.Input.TabletDevice.Type%2A> property.  
+ 
+[!code-csharp[HwCaps#2](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#2)]
+[!code-vb[HwCaps#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

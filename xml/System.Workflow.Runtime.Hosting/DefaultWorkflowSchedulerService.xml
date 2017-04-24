@@ -19,14 +19,14 @@
     <summary>Creates and manages the threads that run workflow instances on the workflow runtime engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService> is used by the workflow runtime engine by default. It includes default support for having multiple workflow instances queued in the runtime thread pool. If you want to control the thread that is responsible for executing the workflow, use <xref:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService>.  
-  
+ 
+<xref:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService> is used by the workflow runtime engine by default. It includes default support for having multiple workflow instances queued in the runtime thread pool. If you want to control the thread that is responsible for executing the workflow, use <xref:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,14 +63,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is invoked when the workflow runtime engine loads services from an application configuration file. The only valid parameter is `maxSimultaneousWorkflows`, which can specify the number of workflows that can be run at the same time.  
-  
- Setting `maxSimultaneousWorkflows` to a high value might cause the .NET thread pool to starve. This could cause time-outs when a persistence service tries to complete a persistence transaction because <xref:System.Transactions.Transaction> objects also use the .NET thread pool.  
-  
- If not specified in a constructor or configuration file, the default value for `maxSimultaneousWorkflows` is 5 for a single-processor machine, and (int)(5 * Environment.ProcessorCount * .8) for a multiple-processor machine. Note that (int)(5 * Environment.ProcessorCount * .8) is not always the same as (int)(4 * Environment.ProcessorCount), because of the rules of integer arithmetic.  
-  
+This constructor is invoked when the workflow runtime engine loads services from an application configuration file. The only valid parameter is `maxSimultaneousWorkflows`, which can specify the number of workflows that can be run at the same time.  
+ 
+Setting `maxSimultaneousWorkflows` to a high value might cause the .NET thread pool to starve. This could cause time-outs when a persistence service tries to complete a persistence transaction because <xref:System.Transactions.Transaction> objects also use the .NET thread pool.  
+ 
+If not specified in a constructor or configuration file, the default value for `maxSimultaneousWorkflows` is 5 for a single-processor machine, and (int)(5 * Environment.ProcessorCount * .8) for a multiple-processor machine. Note that (int)(5 * Environment.ProcessorCount * .8) is not always the same as (int)(4 * Environment.ProcessorCount), because of the rules of integer arithmetic.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -102,12 +102,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService" /> class by using the specified maximum number of workflow instances that the service can run simultaneously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting `maxSimultaneousWorkflows` to a high value might cause the .NET thread pool to starve. This could cause time-outs when a persistence service tries to complete a persistence transaction because <xref:System.Transactions.Transaction> objects also use the .NET thread pool.  
-  
- If not specified in a constructor or configuration file, the default value for `maxSimultaneousWorkflows` is 5 for a single-processor machine, and (int)(5 * Environment.ProcessorCount * .8) for a multiple-processor machine. Note that (int)(5 * Environment.ProcessorCount * .8) is not always the same as (int)(4 * Environment.ProcessorCount), because of the rules of integer arithmetic.  
-  
+Setting `maxSimultaneousWorkflows` to a high value might cause the .NET thread pool to starve. This could cause time-outs when a persistence service tries to complete a persistence transaction because <xref:System.Transactions.Transaction> objects also use the .NET thread pool.  
+ 
+If not specified in a constructor or configuration file, the default value for `maxSimultaneousWorkflows` is 5 for a single-processor machine, and (int)(5 * Environment.ProcessorCount * .8) for a multiple-processor machine. Note that (int)(5 * Environment.ProcessorCount * .8) is not always the same as (int)(4 * Environment.ProcessorCount), because of the rules of integer arithmetic.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -154,10 +154,10 @@
         <value>An integer that represents the maximum number of workflow instances that can be stored in the thread pool queue.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value for this method is 5 for a single-processor machine, and (int)(5 * Environment.ProcessorCount * .8) for a multiple-processor machine. Note that (int)(5 * Environment.ProcessorCount * .8) is not always the same as (int)(4 * Environment.ProcessorCount), because of the rules of integer arithmetic.  
-  
+The default value for this method is 5 for a single-processor machine, and (int)(5 * Environment.ProcessorCount * .8) for a multiple-processor machine. Note that (int)(5 * Environment.ProcessorCount * .8) is not always the same as (int)(4 * Environment.ProcessorCount), because of the rules of integer arithmetic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <summary>Notifies the <see cref="T:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService" /> that a workflow instance has started to run.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService.OnStarted%2A> creates a thread for the first work item in the list of items waiting to be included in the workflow instance thread pool.  
-  
+<xref:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService.OnStarted%2A> creates a thread for the first work item in the list of items waiting to be included in the workflow instance thread pool.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
         <summary>Adds a workflow instance to the pending work items queue using the specified workflow instance using the specified multicast delegate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Threading.WaitCallback> constructor to create your delegate method to run in the new thread.  
-  
+Use the <xref:System.Threading.WaitCallback> constructor to create your delegate method to run in the new thread.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -245,10 +245,10 @@
         <summary>Adds the specified workflow instance to the pending work item queue using the specified multicast delegate, <see cref="T:System.DateTime" /> and GUIDs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Threading.WaitCallback> constructor to create your delegate method to run in the new thread.  
-  
+Use the <xref:System.Threading.WaitCallback> constructor to create your delegate method to run in the new thread.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

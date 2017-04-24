@@ -22,21 +22,21 @@
     <summary>Represents a literal expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A literal expression stores the code of an expression as a literal code fragment. The CodeDOM does not translate literal code fragments. Literal code fragments are stored and output just as they are. CodeDOM objects that contain literal code are provided so developers can encapsulate code that is already in the target language.  
+A literal expression stores the code of an expression as a literal code fragment. The CodeDOM does not translate literal code fragments. Literal code fragments are stored and output just as they are. CodeDOM objects that contain literal code are provided so developers can encapsulate code that is already in the target language.  
+ 
+The <xref:System.CodeDom.CodeSnippetExpression.Value%2A> property contains the literal code for this snippet expression.  
+ 
   
- The <xref:System.CodeDom.CodeSnippetExpression.Value%2A> property contains the literal code for this snippet expression.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create an instance of the <xref:System.CodeDom.CodeSnippetExpression> class using a literal code fragment.  
-  
- [!code-cpp[CodeDomSampleBatch#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#9)]
- [!code-csharp[CodeDomSampleBatch#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#9)]
- [!code-vb[CodeDomSampleBatch#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#9)]  
-  
+The following code example demonstrates how to create an instance of the <xref:System.CodeDom.CodeSnippetExpression> class using a literal code fragment.  
+ 
+[!code-cpp[CodeDomSampleBatch#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#9)]
+[!code-csharp[CodeDomSampleBatch#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#9)]
+[!code-vb[CodeDomSampleBatch#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#9)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,14 +73,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeSnippetExpression" /> class using the specified literal expression.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates in the use of the <xref:System.CodeDom.CodeSnippetExpression.%23ctor%2A> constructor to create an instance of the <xref:System.CodeDom.CodeSnippetExpression> class.  
-  
- [!code-cpp[CodeDomSampleBatch#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#9)]
- [!code-csharp[CodeDomSampleBatch#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#9)]
- [!code-vb[CodeDomSampleBatch#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#9)]  
-  
+The following code example demonstrates in the use of the <xref:System.CodeDom.CodeSnippetExpression.%23ctor%2A> constructor to create an instance of the <xref:System.CodeDom.CodeSnippetExpression> class.  
+ 
+[!code-cpp[CodeDomSampleBatch#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#9)]
+[!code-csharp[CodeDomSampleBatch#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#9)]
+[!code-vb[CodeDomSampleBatch#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <value>The literal string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This can contain code or comments.  
-  
+This can contain code or comments.  
+ 
  ]]></format>
         </remarks>
       </Docs>

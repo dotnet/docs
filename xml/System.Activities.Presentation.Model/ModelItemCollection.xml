@@ -30,10 +30,10 @@
     <summary>Represents a collection of model items that can be individually accessed by index.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If changes are made to the item collection during an editing scope, such as within a drag and drop operation, the <xref:System.Activities.Presentation.Model.ModelItemCollection.Count%2A> property will not be updated until the editing scope completes.  
-  
+If changes are made to the item collection during an editing scope, such as within a drag and drop operation, the <xref:System.Activities.Presentation.Model.ModelItemCollection.Count%2A> property will not be updated until the editing scope completes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,10 +95,10 @@
         <returns>Returns <paramref name="value" /> wrapped in a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object will be stored as a <xref:System.Activities.Presentation.Model.ModelItem>.  
-  
+The object will be stored as a <xref:System.Activities.Presentation.Model.ModelItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <value>Returns the <see cref="T:System.Int32" /> count of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is not updated during an <xref:System.Activities.Presentation.EditingContext> session. If an object is added to the <xref:System.Activities.Presentation.Model.ModelItemCollection> during a session, the <xref:System.Activities.Presentation.Model.ModelItemCollection.Count%2A> value will not be updated until the session exits.  
-  
+This value is not updated during an <xref:System.Activities.Presentation.EditingContext> session. If an object is added to the <xref:System.Activities.Presentation.Model.ModelItemCollection> during a session, the <xref:System.Activities.Presentation.Model.ModelItemCollection.Count%2A> value will not be updated until the session exits.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,10 +346,10 @@
           <see langword="true" /> if the collection is a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns `true` if the collection is read-only.  
-  
+The default implementation returns `true` if the collection is read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -430,10 +430,10 @@
         <summary>Identifies the Item dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Item property represents all the items in the collection and is defined as type <xref:System.Activities.Presentation.Model.ModelItem>. The Item property points to the <xref:System.Activities.Presentation.Model.ModelItemCollection> itself.  
-  
+The Item property represents all the items in the collection and is defined as type <xref:System.Activities.Presentation.Model.ModelItem>. The Item property points to the <xref:System.Activities.Presentation.Model.ModelItemCollection> itself.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -839,10 +839,10 @@
         <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.IList" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table. If `value` is not found in the <xref:System.Collections.IList>, the <xref:System.Collections.IList> remains unchanged and no exception is thrown.  
-  
+In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table. If `value` is not found in the <xref:System.Collections.IList>, the <xref:System.Collections.IList> remains unchanged and no exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

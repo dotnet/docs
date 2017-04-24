@@ -14,12 +14,12 @@
     <summary>Represents the contents of a wst:Entropy or a wst:RequestedProofToken element inside the RequestSecurityToken and RequestSecurityTokenResponse.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the contents of a wst:Entropy or a wst:RequestedProofToken element inside the wst:RequestSecurityToken (<xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken>) and wst:RequestSecurityTokenResponse (<xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse>) messages.  
-  
- For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
-  
+Represents the contents of a wst:Entropy or a wst:RequestedProofToken element inside the wst:RequestSecurityToken (<xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken>) and wst:RequestSecurityTokenResponse (<xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse>) messages.  
+ 
+For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ProtectedKey" /> class with no encryption.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to send the key material in clear text. The <xref:System.IdentityModel.Protocols.WSTrust.ProtectedKey.WrappingCredentials%2A> property is set to `null` in the new <xref:System.IdentityModel.Protocols.WSTrust.ProtectedKey> instance.  
-  
+Use this constructor to send the key material in clear text. The <xref:System.IdentityModel.Protocols.WSTrust.ProtectedKey.WrappingCredentials%2A> property is set to `null` in the new <xref:System.IdentityModel.Protocols.WSTrust.ProtectedKey> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,10 +68,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ProtectedKey" /> class using the specified encrypting credentials.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to send the key material encrypted.  
-  
+Use this constructor to send the key material encrypted.  
+ 
  ]]></format>
         </remarks>
       </Docs>

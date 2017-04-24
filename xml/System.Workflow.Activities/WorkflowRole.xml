@@ -19,14 +19,14 @@
     <summary>The abstract base class from which workflow roles are derived.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- You can derive classes from the <xref:System.Workflow.Activities.WorkflowRole> class in order to implement role-based access to your workflows and their activities. The <xref:System.Workflow.Activities.WebWorkflowRole> class and the <xref:System.Workflow.Activities.ActiveDirectoryRole> class derive from the <xref:System.Workflow.Activities.WorkflowRole> class.  
-  
+ 
+You can derive classes from the <xref:System.Workflow.Activities.WorkflowRole> class in order to implement role-based access to your workflows and their activities. The <xref:System.Workflow.Activities.WebWorkflowRole> class and the <xref:System.Workflow.Activities.ActiveDirectoryRole> class derive from the <xref:System.Workflow.Activities.WorkflowRole> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>

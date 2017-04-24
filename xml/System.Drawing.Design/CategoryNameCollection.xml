@@ -14,19 +14,19 @@
     <summary>Represents a collection of category name strings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection is used to store collections of toolbox category names.  
+This collection is used to store collections of toolbox category names.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example attempts to retrieve the <xref:System.Drawing.Design.IToolboxService> when the control is sited in design mode. If the <xref:System.Drawing.Design.IToolboxService> is retrieved, the code gets the names of each toolbox category and draws each name on the surface of the control.  
-  
- [!code-cpp[CategoryNameCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CategoryNameCollectionExample/CPP/toolboxcategorynamescontrol.cpp#2)]
- [!code-csharp[CategoryNameCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CategoryNameCollectionExample/CS/toolboxcategorynamescontrol.cs#2)]
- [!code-vb[CategoryNameCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CategoryNameCollectionExample/VB/toolboxcategorynamescontrol.vb#2)]  
-  
+The following code example attempts to retrieve the <xref:System.Drawing.Design.IToolboxService> when the control is sited in design mode. If the <xref:System.Drawing.Design.IToolboxService> is retrieved, the code gets the names of each toolbox category and draws each name on the surface of the control.  
+ 
+[!code-cpp[CategoryNameCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CategoryNameCollectionExample/CPP/toolboxcategorynamescontrol.cpp#2)]
+[!code-csharp[CategoryNameCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CategoryNameCollectionExample/CS/toolboxcategorynamescontrol.cs#2)]
+[!code-vb[CategoryNameCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CategoryNameCollectionExample/VB/toolboxcategorynamescontrol.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

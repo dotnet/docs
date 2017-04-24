@@ -19,27 +19,27 @@
     <summary>Provides theme settings to <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+The <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class controls the look and feel of a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> object on a workflow design surface.  
+ 
   
- The <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class controls the look and feel of a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> object on a workflow design surface.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
- [!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
-  
- To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
-  
- [!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
- [!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
-  
+The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
+ 
+[!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
+[!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
+ 
+To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
+ 
+[!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
+[!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,18 +61,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.CompositeDesignerTheme" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
- [!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
-  
- To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
-  
- [!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
- [!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
-  
+The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
+ 
+[!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
+[!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
+ 
+To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
+ 
+[!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
+[!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,18 +102,18 @@
         <value>A <see cref="T:System.Workflow.ComponentModel.Design.LineAnchor" /> enumeration value that defines the shape that appears at the end of the connector. The default value is <see cref="F:System.Workflow.ComponentModel.Design.LineAnchor.ArrowAnchor" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
- [!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
-  
- To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
-  
- [!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
- [!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
-  
+The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
+ 
+[!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
+[!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
+ 
+To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
+ 
+[!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
+[!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,18 +169,18 @@
         <value>A <see cref="T:System.Workflow.ComponentModel.Design.LineAnchor" /> enumeration value that defines the shape that appears at the beginning of the connector. The default value is <see cref="F:System.Workflow.ComponentModel.Design.LineAnchor.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
- [!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
-  
- To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
-  
- [!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
- [!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
-  
+The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
+ 
+[!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
+[!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
+ 
+To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
+ 
+[!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
+[!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
         <returns>A <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush" /> object that uses the <paramref name="rectangle" /> parameter to define the button area in which the brush applies two colors in a linear gradient from the upper-left corner to the lower-right corner of the expand button.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the background brush for the expand button is not set to `null` (`Nothing` in Visual Basic) before <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.GetExpandButtonBackgroundBrush%2A> is called, the method disposes of the previous brush and creates a new one.  
-  
+If the background brush for the expand button is not set to `null` (`Nothing` in Visual Basic) before <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.GetExpandButtonBackgroundBrush%2A> is called, the method disposes of the previous brush and creates a new one.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
         <summary>Performs further initialization tasks beyond those provided by the <see cref="M:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" /> constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Workflow.ComponentModel.Design.AmbientTheme.UseOperatingSystemSettings%2A> property is set to `true`, the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.Initialize%2A> method obtains settings for the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> object from the operating system.  
-  
+If the <xref:System.Workflow.ComponentModel.Design.AmbientTheme.UseOperatingSystemSettings%2A> property is set to `true`, the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.Initialize%2A> method obtains settings for the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> object from the operating system.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -307,12 +307,12 @@
         <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.CompositeDesignerTheme" /> object that the ambient property settings for the designer have changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this method is called it sets the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorStart%2A> and <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorEnd%2A> properties to <xref:System.Drawing.Color.Empty>.  
-  
- The <xref:System.Workflow.ComponentModel.Design.AmbientProperty> enumeration determines where a designer theme obtains its ambient property settings. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> value is set, the designer theme class obtains its ambient settings from the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> value is set, the designer theme class obtains its ambient settings from the operating system on which the designer is installed.  
-  
+When this method is called it sets the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorStart%2A> and <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorEnd%2A> properties to <xref:System.Drawing.Color.Empty>.  
+ 
+The <xref:System.Workflow.ComponentModel.Design.AmbientProperty> enumeration determines where a designer theme obtains its ambient property settings. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> value is set, the designer theme class obtains its ambient settings from the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> value is set, the designer theme class obtains its ambient settings from the operating system on which the designer is installed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,18 +343,18 @@
           <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Design.CompositeDesignerTheme" /> displays drop shadows around the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
- [!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
-  
- To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
-  
- [!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
- [!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
-  
+The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
+ 
+[!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
+[!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
+ 
+To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
+ 
+[!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
+[!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,18 +384,18 @@
         <value>A <see cref="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" /> enumeration value that indicates where in the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> the watermark image will be placed. The default value is <see cref="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomRight" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
- [!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
-  
- To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
-  
- [!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
- [!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
-  
+The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
+ 
+[!code-csharp[WF_Samples#30](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#30)]
+[!code-vb[WF_Samples#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#30)]  
+ 
+To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
+ 
+[!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
+[!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,10 +425,10 @@
         <value>The <see cref="T:System.Drawing.Image" /> object to use as the watermark for the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkImagePath%2A> property value is `null` (`Nothing` in Visual Basic) this property will provide the image for the watermark. If the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkImagePath%2A> property is set to a valid value, this property is set to `null` (`Nothing`).  
-  
+If the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkImagePath%2A> property value is `null` (`Nothing` in Visual Basic) this property will provide the image for the watermark. If the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkImagePath%2A> property is set to a valid value, this property is set to `null` (`Nothing`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -458,18 +458,18 @@
         <value>A string value that represents the relative path to the watermark image to use on the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
- [!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
-  
- To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
-  
- [!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
- [!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
-  
+The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme> class and setting the appropriate properties for the new theme.  
+ 
+[!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
+[!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
+ 
+To use the theme on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
+ 
+[!code-csharp[WF_Samples#24](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#24)]
+[!code-vb[WF_Samples#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

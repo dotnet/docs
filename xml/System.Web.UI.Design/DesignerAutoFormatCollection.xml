@@ -18,42 +18,42 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> objects within a control designer. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.ControlDesigner> class and any derived class defines the <xref:System.Web.UI.Design.ControlDesigner.AutoFormats%2A> property as a <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object. Control developers can override the <xref:System.Web.UI.Design.ControlDesigner.AutoFormats%2A> property in a derived control designer, add custom automatic formatting styles, and return the collection of supported formats to the visual designer.  
-  
- The collection dynamically increases as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Count%2A> property to determine how many automatic style formats are in the collection.  
-  
- Additionally, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> methods and properties to provide the following functionality:  
-  
+The <xref:System.Web.UI.Design.ControlDesigner> class and any derived class defines the <xref:System.Web.UI.Design.ControlDesigner.AutoFormats%2A> property as a <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object. Control developers can override the <xref:System.Web.UI.Design.ControlDesigner.AutoFormats%2A> property in a derived control designer, add custom automatic formatting styles, and return the collection of supported formats to the visual designer.  
+ 
+The collection dynamically increases as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Count%2A> property to determine how many automatic style formats are in the collection.  
+ 
+Additionally, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> methods and properties to provide the following functionality:  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Add%2A> method to add a single format to the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Insert%2A> method to add a format at a particular index within the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method to remove a format.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.RemoveAt%2A> method to remove the format at a particular index.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Contains%2A> method to determine whether a particular format is already in the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.IndexOf%2A> method to retrieve the index of a format within the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Item%2A> property to get or set the format at a particular index, using array notation.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Clear%2A> method to remove all formats from the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Count%2A> property to determine the number of formats in the collection.  
-  
+ 
 -   The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.IndexOf%2A> method to get the position of a format within the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.Web.UI.Design.ControlDesigner.AutoFormats%2A> property in a custom control designer. The derived control designer implements the <xref:System.Web.UI.Design.ControlDesigner.AutoFormats%2A> property by adding three instances of a custom automatic format that are derived from the <xref:System.Web.UI.Design.DesignerAutoFormat> class.  
-  
- [!code-csharp[DesignerAutoFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerAutoFormat/CS/DesignerAutoFormat.cs#1)]
- [!code-vb[DesignerAutoFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerAutoFormat/VB/DesignerAutoFormat.vb#1)]  
-  
+The following code example demonstrates how to implement the <xref:System.Web.UI.Design.ControlDesigner.AutoFormats%2A> property in a custom control designer. The derived control designer implements the <xref:System.Web.UI.Design.ControlDesigner.AutoFormats%2A> property by adding three instances of a custom automatic format that are derived from the <xref:System.Web.UI.Design.DesignerAutoFormat> class.  
+ 
+[!code-csharp[DesignerAutoFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerAutoFormat/CS/DesignerAutoFormat.cs#1)]
+[!code-vb[DesignerAutoFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerAutoFormat/VB/DesignerAutoFormat.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> constructor to create an empty collection. You can add elements to the collection by using the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Add%2A> or <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Insert%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> constructor to create an empty collection. You can add elements to the collection by using the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Add%2A> or <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Insert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,18 +101,18 @@
         <returns>The index at which the format was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Add%2A> method adds the specified <xref:System.Web.UI.Design.DesignerAutoFormat> object to the end of the collection. To add a <xref:System.Web.UI.Design.DesignerAutoFormat> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Insert%2A> method.  
+The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Add%2A> method adds the specified <xref:System.Web.UI.Design.DesignerAutoFormat> object to the end of the collection. To add a <xref:System.Web.UI.Design.DesignerAutoFormat> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Insert%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to create and add <xref:System.Web.UI.Design.DesignerAutoFormat> objects to the `AutoFormats` property of a custom designer.  
-  
- [!code-csharp[DesignerAutoFormat#2](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerAutoFormat/CS/DesignerAutoFormat.cs#2)]
- [!code-vb[DesignerAutoFormat#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerAutoFormat/VB/DesignerAutoFormat.vb#2)]  
-  
+The following code example illustrates how to create and add <xref:System.Web.UI.Design.DesignerAutoFormat> objects to the `AutoFormats` property of a custom designer.  
+ 
+[!code-csharp[DesignerAutoFormat#2](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerAutoFormat/CS/DesignerAutoFormat.cs#2)]
+[!code-vb[DesignerAutoFormat#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerAutoFormat/VB/DesignerAutoFormat.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <summary>Removes all formats from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Clear%2A> method to remove all formats from the collection. To remove a specific format from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method. To remove a format at a particular index, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.RemoveAt%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Clear%2A> method to remove all formats from the collection. To remove a specific format from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method. To remove a format at a particular index, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.RemoveAt%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
           <see langword="true" />, if the specified format is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerAutoFormat> objects that are being compared.  
-  
+The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerAutoFormat> objects that are being compared.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <value>The number of <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Count%2A> property typically is used to determine the upper boundary index when iterating through objects in the collection. Because the collection indexes are zero-based, the first element is at index `0` and the last element is at index `Count-1`.  
-  
+The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Count%2A> property typically is used to determine the upper boundary index when iterating through objects in the collection. Because the collection indexes are zero-based, the first element is at index `0` and the last element is at index `Count-1`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,10 +218,10 @@
         <returns>The zero-based index of the first occurrence of <paramref name="format" /> within the collection; otherwise, -1, if the format is not in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.IndexOf%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerAutoFormat> objects that are being compared.  
-  
+The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.IndexOf%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerAutoFormat> objects that are being compared.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,13 +248,13 @@
         <summary>Inserts a <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> object into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Insert%2A> method adds a <xref:System.Web.UI.Design.DesignerAutoFormat> object to the collection at a specific index location. To add a single <xref:System.Web.UI.Design.DesignerAutoFormat> to the end of the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Add%2A> method.  
-  
+The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Insert%2A> method adds a <xref:System.Web.UI.Design.DesignerAutoFormat> object to the collection at a specific index location. To add a single <xref:System.Web.UI.Design.DesignerAutoFormat> to the end of the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Add%2A> method.  
+ 
 > [!NOTE]
 >  When you insert an item into a collection, the index values change for subsequent items in the collection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -286,12 +286,12 @@
         <value>The <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> at the specified index in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Item%2A> indexer to retrieve the <xref:System.Web.UI.Design.DesignerAutoFormat> object at the specified index within the collection or to set the format at the specified index within the collection. You can index elements in the collection by using array notation. For example, you can index an element at index `i` with the notation `AutoFormats(i)` for Microsoft VisualBasic or `AutoFormats[i]` for C#.  
-  
- When you have a reference to the <xref:System.Web.UI.Design.DesignerAutoFormat> object and need the index of the object in the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.IndexOf%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Item%2A> indexer to retrieve the <xref:System.Web.UI.Design.DesignerAutoFormat> object at the specified index within the collection or to set the format at the specified index within the collection. You can index elements in the collection by using array notation. For example, you can index an element at index `i` with the notation `AutoFormats(i)` for Microsoft VisualBasic or `AutoFormats[i]` for C#.  
+ 
+When you have a reference to the <xref:System.Web.UI.Design.DesignerAutoFormat> object and need the index of the object in the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.IndexOf%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -319,10 +319,10 @@
         <value>A <see cref="T:System.Drawing.Size" /> structure that contains the height and width of the control on the design surface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.PreviewSize%2A> property examines each format in the collection and returns the largest height and the largest width in a <xref:System.Drawing.Size> structure. A visual designer, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.PreviewSize%2A> to determine the initial size of the **AutoFormat** dialog box. The minimum size is 200-by-200 pixels.  
-  
+The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.PreviewSize%2A> property examines each format in the collection and returns the largest height and the largest width in a <xref:System.Drawing.Size> structure. A visual designer, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.PreviewSize%2A> to determine the initial size of the **AutoFormat** dialog box. The minimum size is 200-by-200 pixels.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,19 +347,19 @@
         <summary>Removes the specified <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method removes the first occurrence of `format` from the collection. If the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object does not contain `format`, the collection remains unchanged. No exception is thrown.  
-  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerAutoFormat> objects that are being compared.  
-  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Count%2A> value.  
-  
- To remove a format at a particular index from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.RemoveAt%2A> method. To remove all formats from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Clear%2A> method.  
-  
+The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method removes the first occurrence of `format` from the collection. If the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object does not contain `format`, the collection remains unchanged. No exception is thrown.  
+ 
+The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.DesignerAutoFormat> objects that are being compared.  
+ 
+The <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Count%2A> value.  
+ 
+To remove a format at a particular index from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.RemoveAt%2A> method. To remove all formats from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Clear%2A> method.  
+ 
 > [!NOTE]
 >  When you remove an item from a collection, the index values change for subsequent items in the collection.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,13 +384,13 @@
         <summary>Removes the <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> object at the specified index within the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.RemoveAt%2A> method to remove a format at a particular index from the collection. To remove a specified format from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method. To remove all formats from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Clear%2A> method.  
-  
+Use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.RemoveAt%2A> method to remove a format at a particular index from the collection. To remove a specified format from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Remove%2A> method. To remove all formats from the collection, use the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.Clear%2A> method.  
+ 
 > [!NOTE]
 >  When you remove an item from a collection, the index values change for subsequent items in the collection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -418,12 +418,12 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
-  
- Lock the collection by using the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.SyncRoot%2A> method during the entire enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName>.  
-  
+Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
+ 
+Lock the collection by using the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.SyncRoot%2A> method during the entire enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,10 +450,10 @@
         <summary>Copies the elements of the collection to an <see cref="T:System.Array" /> object, starting at a particular <see cref="T:System.Array" /> index when the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object is cast to an <see cref="T:System.Collections.ICollection" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -475,10 +475,10 @@
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -501,10 +501,10 @@
           <see langword="true" />, if the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> is synchronized; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -527,10 +527,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -556,10 +556,10 @@
         <returns>The index of the added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -586,10 +586,10 @@
           <see langword="true" />, if the object is in the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -615,10 +615,10 @@
         <returns>The index of a item in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -645,10 +645,10 @@
         <summary>Inserts an item into the collection at the specified index when the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object is cast to an <see cref="T:System.Collections.IList" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,10 +670,10 @@
         <value>Always <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -695,10 +695,10 @@
         <value>Always <see langword="true" />, which indicates that the collection cannot be replaced or deleted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -724,10 +724,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -752,10 +752,10 @@
         <summary>Removes the first occurrence of a specific object from the collection when the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object is cast to an <see cref="T:System.Collections.IList" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -780,10 +780,10 @@
         <summary>Removes the item at the specified index when the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object is cast to an <see cref="T:System.Collections.IList" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

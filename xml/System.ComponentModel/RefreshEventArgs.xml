@@ -23,19 +23,19 @@
     <summary>Provides data for the <see cref="E:System.ComponentModel.TypeDescriptor.Refreshed" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, component information does not change for the life of a process. During design time, however, you can change the component's properties or events. As a result, the component's information in <xref:System.ComponentModel.TypeDescriptor> becomes out-of-date, and a <xref:System.ComponentModel.TypeDescriptor.Refreshed> event is raised. A <xref:System.ComponentModel.TypeDescriptor.Refreshed> event is also raised when a <xref:System.Type> is changed during design time.  
+Typically, component information does not change for the life of a process. During design time, however, you can change the component's properties or events. As a result, the component's information in <xref:System.ComponentModel.TypeDescriptor> becomes out-of-date, and a <xref:System.ComponentModel.TypeDescriptor.Refreshed> event is raised. A <xref:System.ComponentModel.TypeDescriptor.Refreshed> event is also raised when a <xref:System.Type> is changed during design time.  
+ 
+A <xref:System.ComponentModel.RefreshEventArgs> object specifies the data associated with the <xref:System.ComponentModel.TypeDescriptor.Refreshed> event; that is, the component and the type of component that changed.  
+ 
+The <xref:System.ComponentModel.RefreshEventArgs> class provides <xref:System.ComponentModel.RefreshEventArgs.ComponentChanged%2A> and <xref:System.ComponentModel.RefreshEventArgs.TypeChanged%2A> properties to get the component or type that raised the event.  
+ 
   
- A <xref:System.ComponentModel.RefreshEventArgs> object specifies the data associated with the <xref:System.ComponentModel.TypeDescriptor.Refreshed> event; that is, the component and the type of component that changed.  
-  
- The <xref:System.ComponentModel.RefreshEventArgs> class provides <xref:System.ComponentModel.RefreshEventArgs.ComponentChanged%2A> and <xref:System.ComponentModel.RefreshEventArgs.TypeChanged%2A> properties to get the component or type that raised the event.  
-  
-   
-  
+ 
 ## Examples  
- For an example of the <xref:System.ComponentModel.RefreshEventArgs> class, see the sample code in the <xref:System.ComponentModel.RefreshEventHandler> delegate.  
-  
+For an example of the <xref:System.ComponentModel.RefreshEventArgs> class, see the sample code in the <xref:System.ComponentModel.RefreshEventHandler> delegate.  
+ 
  ]]></format>
     </remarks>
   </Docs>

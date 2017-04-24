@@ -25,10 +25,10 @@
     <summary>Provides the base functionality for writing resources to an output file or stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Resource writers are used to write resources to files in a particular file format. Implement this interface if you want to control the way in which a resource file is written (for example, to store resources in something other than a .txt, .resx, or binary .resources file). Otherwise, use the default <xref:System.Resources.ResourceWriter> class, which writes resources to a binary .resources file, or the <xref:System.Resources.ResXResourceWriter> class, which writes resources to an XML resource (.resx) file.  
-  
+Resource writers are used to write resources to files in a particular file format. Implement this interface if you want to control the way in which a resource file is written (for example, to store resources in something other than a .txt, .resx, or binary .resources file). Otherwise, use the default <xref:System.Resources.ResourceWriter> class, which writes resources to a binary .resources file, or the <xref:System.Resources.ResXResourceWriter> class, which writes resources to an XML resource (.resx) file.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Adds an 8-bit unsigned integer array as a named resource to the list of resources to be written.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The resources are not written until the <xref:System.Resources.IResourceWriter.Generate%2A> method is called.  
-  
+The resources are not written until the <xref:System.Resources.IResourceWriter.Generate%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -96,13 +96,13 @@
         <summary>Adds a named resource of type <see cref="T:System.Object" /> to the list of resources to be written.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The resource is not written until the <xref:System.Resources.IResourceWriter.Generate%2A> method is called.  
-  
+The resource is not written until the <xref:System.Resources.IResourceWriter.Generate%2A> method is called.  
+ 
 > [!NOTE]
 >  `value` might have to be serializable, so you might have to provide a type converter, depending on which resource writer is used.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -135,10 +135,10 @@
         <summary>Adds a named resource of type <see cref="T:System.String" /> to the list of resources to be written.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The resource is not written until the <xref:System.Resources.IResourceWriter.Generate%2A> method is called.  
-  
+The resource is not written until the <xref:System.Resources.IResourceWriter.Generate%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -166,10 +166,10 @@
         <summary>Closes the underlying resource file or stream, ensuring all the data has been written to the file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If necessary, <xref:System.Resources.IResourceWriter.Close%2A> will call the <xref:System.Resources.IResourceWriter.Generate%2A> method to output the resources to the underlying file or stream before closing it.  
-  
+If necessary, <xref:System.Resources.IResourceWriter.Close%2A> will call the <xref:System.Resources.IResourceWriter.Generate%2A> method to output the resources to the underlying file or stream before closing it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <summary>Writes all the resources added by the <see cref="M:System.Resources.IResourceWriter.AddResource(System.String,System.String)" /> method to the output file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Resources.IResourceWriter.Generate%2A> does not close the output file or output stream. Instead, consider calling the <xref:System.Resources.IResourceWriter.Close%2A> method. <xref:System.Resources.IResourceWriter.Generate%2A> is useful when you want to create a resource file, but you don't want to close the output stream. <xref:System.Resources.IResourceWriter.Generate%2A> can be called only once. After you call <xref:System.Resources.IResourceWriter.Generate%2A>, all <xref:System.Resources.IResourceWriter> methods other than <xref:System.Resources.IResourceWriter.Close%2A> will throw an exception.  
-  
+<xref:System.Resources.IResourceWriter.Generate%2A> does not close the output file or output stream. Instead, consider calling the <xref:System.Resources.IResourceWriter.Close%2A> method. <xref:System.Resources.IResourceWriter.Generate%2A> is useful when you want to create a resource file, but you don't want to close the output stream. <xref:System.Resources.IResourceWriter.Generate%2A> can be called only once. After you call <xref:System.Resources.IResourceWriter.Generate%2A>, all <xref:System.Resources.IResourceWriter> methods other than <xref:System.Resources.IResourceWriter.Close%2A> will throw an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>

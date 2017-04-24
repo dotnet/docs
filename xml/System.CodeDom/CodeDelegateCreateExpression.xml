@@ -22,23 +22,23 @@
     <summary>Represents an expression that creates a delegate.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeDelegateCreateExpression> represents code that creates a delegate. <xref:System.CodeDom.CodeDelegateCreateExpression> is often used with <xref:System.CodeDom.CodeAttachEventStatement> or <xref:System.CodeDom.CodeRemoveEventStatement> to represent an event handler to attach or remove from an event.  
+<xref:System.CodeDom.CodeDelegateCreateExpression> represents code that creates a delegate. <xref:System.CodeDom.CodeDelegateCreateExpression> is often used with <xref:System.CodeDom.CodeAttachEventStatement> or <xref:System.CodeDom.CodeRemoveEventStatement> to represent an event handler to attach or remove from an event.  
+ 
+The <xref:System.CodeDom.CodeDelegateCreateExpression.DelegateType%2A> property specifies the type of delegate to create. The <xref:System.CodeDom.CodeDelegateCreateExpression.TargetObject%2A> property indicates the object that contains the event-handler method. The <xref:System.CodeDom.CodeDelegateCreateExpression.MethodName%2A> property indicates the name of the event-handler method whose method signature matches the method signature of the delegate.  
+ 
+In C#, a delegate creation expression is typically of the following form: `new EventHandler(this.HandleEventMethod)`. In Visual Basic, a delegate creation expression is typically of the following form: `AddressOf Me.HandleEventMethod`.  
+ 
   
- The <xref:System.CodeDom.CodeDelegateCreateExpression.DelegateType%2A> property specifies the type of delegate to create. The <xref:System.CodeDom.CodeDelegateCreateExpression.TargetObject%2A> property indicates the object that contains the event-handler method. The <xref:System.CodeDom.CodeDelegateCreateExpression.MethodName%2A> property indicates the name of the event-handler method whose method signature matches the method signature of the delegate.  
-  
- In C#, a delegate creation expression is typically of the following form: `new EventHandler(this.HandleEventMethod)`. In Visual Basic, a delegate creation expression is typically of the following form: `AddressOf Me.HandleEventMethod`.  
-  
-   
-  
+ 
 ## Examples  
- The following example code uses a <xref:System.CodeDom.CodeDelegateCreateExpression> to create a delegate.  
-  
- [!code-cpp[CodeAttachEventStatementExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeAttachEventStatementExample/CPP/codeattacheventstatementexample.cpp#3)]
- [!code-csharp[CodeAttachEventStatementExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeAttachEventStatementExample/CS/codeattacheventstatementexample.cs#3)]
- [!code-vb[CodeAttachEventStatementExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeAttachEventStatementExample/VB/codeattacheventstatementexample.vb#3)]  
-  
+The following example code uses a <xref:System.CodeDom.CodeDelegateCreateExpression> to create a delegate.  
+ 
+[!code-cpp[CodeAttachEventStatementExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeAttachEventStatementExample/CPP/codeattacheventstatementexample.cpp#3)]
+[!code-csharp[CodeAttachEventStatementExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeAttachEventStatementExample/CS/codeattacheventstatementexample.cs#3)]
+[!code-vb[CodeAttachEventStatementExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeAttachEventStatementExample/VB/codeattacheventstatementexample.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

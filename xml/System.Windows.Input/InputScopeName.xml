@@ -26,10 +26,10 @@
     <summary>Defines a name for text input patterns.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The names defined by this class are used by the <xref:System.Windows.Input.InputScopePhrase> class.  
-  
+The names defined by this class are used by the <xref:System.Windows.Input.InputScopePhrase> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -126,21 +126,21 @@
         <value>The input scope name value which modifies how input from alternative input methods is interpreted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InputScopeName"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object NameValue="inputScopeNameValue"/>  
 ```  
-  
+ 
 <a name="xamlValues_InputScopeName"></a>   
 ## XAML Values  
- *inputScopeNameValue*  
- String representation of a <xref:System.Windows.Input.InputScopeNameValue> value.  
-  
+*inputScopeNameValue*  
+String representation of a <xref:System.Windows.Input.InputScopeNameValue> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

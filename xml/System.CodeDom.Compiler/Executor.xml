@@ -14,13 +14,13 @@
     <summary>Provides command execution functions for invoking compilers. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides a collection of methods that can be used to invoke a compiler, typically from an <xref:System.CodeDom.Compiler.ICodeCompiler> implementation.  
-  
+This class provides a collection of methods that can be used to invoke a compiler, typically from an <xref:System.CodeDom.Compiler.ICodeCompiler> implementation.  
+ 
 > [!NOTE]
 >  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For more information, see [Link Demands](~/docs/framework/misc/link-demands.md).  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
@@ -108,10 +108,10 @@
         <returns>The return value from the compiler.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `userToken` parameter accepts a Win32 security access token that indicates the security context for the process to be started in. For more information, consult the Windows `CreateProcessAsUser` method documentation in the Platform SDK documentation in MSDN.  
-  
+The `userToken` parameter accepts a Win32 security access token that indicates the security context for the process to be started in. For more information, consult the Windows `CreateProcessAsUser` method documentation in the Platform SDK documentation in MSDN.  
+ 
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
